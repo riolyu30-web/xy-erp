@@ -47,6 +47,13 @@
             background: #ccc;
             cursor: not-allowed;
         }
+        #healthBtn {
+            background: #28a745;
+            margin-top: 0;
+        }
+        #healthBtn:hover:not(:disabled) {
+            background: #218838;
+        }
         #response {
             margin-top: 20px;
             padding: 15px;
@@ -75,6 +82,12 @@
     <div class="container">
         <h1>🤖 ERP AI 服务测试</h1>
         
+        <!-- 健康检查区域 -->
+        <div style="margin-bottom: 20px; padding: 15px; background: #e7f3ff; border-radius: 5px;">
+            <button id="healthBtn" onclick="checkHealth()">健康检查</button>
+            <span id="healthStatus" style="margin-left: 15px; font-weight: bold;"></span>
+        </div>
+        
         <div>
             <label for="question"><strong>请输入问题：</strong></label>
             <textarea id="question" rows="4" placeholder="例如：请介绍一下自己"></textarea>
@@ -88,7 +101,59 @@
 
     <script>
         // API地址（根据实际情况修改）
-        const API_URL = 'http://localhost:8001/stream'; // 本地测试地址，部署时需替换
+        const API_URL = 'https://erp.riohome.top/stream'; // 本地测试地址，部署时需替换
+        const HEALTH_URL = 'https://erp.riohome.top/health'; // 健康检查接口地址
+
+        // 健康检查函数
+        async function checkHealth() {
+            const healthBtn = document.getElementById('healthBtn');
+            const healthStatus = document.getElementById('healthStatus');
+
+            // 禁用按钮
+            healthBtn.disabled = true;
+            healthStatus.textContent = '检查中...';
+            healthStatus.style.color = '#666';
+
+            try {
+                // 记录开始时间
+                const startTime = Date.now();
+                
+                // 发送GET请求
+                const response = await fetch(HEALTH_URL, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                // 计算响应时间
+                const responseTime = Date.now() - startTime;
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误! 状态: ${response.status}`);
+                }
+
+                // 解析JSON响应
+                const data = await response.json();
+
+                // 显示成功状态
+                if (data.status === 'ok') {
+                    healthStatus.innerHTML = `✓ 服务正常 (${responseTime}ms) - ${data.message}`;
+                    healthStatus.style.color = '#28a745';
+                } else {
+                    healthStatus.innerHTML = `⚠ 服务异常 - ${JSON.stringify(data)}`;
+                    healthStatus.style.color = '#ffc107';
+                }
+
+            } catch (error) {
+                console.error('健康检查失败:', error);
+                healthStatus.innerHTML = `✗ 连接失败: ${error.message}`;
+                healthStatus.style.color = '#dc3545';
+            } finally {
+                // 恢复按钮
+                healthBtn.disabled = false;
+            }
+        }
 
         async function sendQuestion() {
             const question = document.getElementById('question').value.trim();
@@ -158,6 +223,11 @@
             if (e.key === 'Enter' && e.ctrlKey) {
                 sendQuestion();
             }
+        });
+
+        // 页面加载时自动进行健康检查
+        window.addEventListener('load', function() {
+            checkHealth();
         });
     </script>
 </body>

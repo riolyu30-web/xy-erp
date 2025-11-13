@@ -1,6 +1,7 @@
 import os  # 导入操作系统模块
 from http import HTTPStatus  # 导入HTTP状态码
 from fastapi import FastAPI  # 导入FastAPI框架
+from fastapi.middleware.cors import CORSMiddleware  # 导入CORS中间件
 from fastapi.responses import StreamingResponse  # 导入流式响应
 from pydantic import BaseModel  # 导入数据验证模型
 import dashscope  # 导入dashscope SDK
@@ -12,6 +13,15 @@ dashscope.api_key = "sk-65c47bda48984792b84cb3f1cac3f723"
 
 # 创建FastAPI应用实例
 app = FastAPI(title="ERP AI Service", version="1.0.0")
+
+# 配置CORS中间件
+app.add_middleware(
+    CORSMiddleware,  # 添加CORS中间件
+    allow_origins=["*"],  # 允许所有源访问（生产环境建议指定具体域名）
+    allow_credentials=True,  # 允许携带凭证
+    allow_methods=["*"],  # 允许所有HTTP方法
+    allow_headers=["*"],  # 允许所有请求头
+)
 
 
 # 定义请求模型

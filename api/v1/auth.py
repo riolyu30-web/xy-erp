@@ -95,7 +95,7 @@ async def sign_out(request: SignOutRequest):
 
 
 @router.get("/auth/verify/{token}")
-async def verify_token(token: str):
+def verify_token(token: str):
     """
     验证 token 是否有效
 
@@ -112,22 +112,16 @@ async def verify_token(token: str):
         raise HTTPException(status_code=500, detail="数据库连接失败")
 
     # 验证 token
-    is_valid = manager.verify_token(token)
+    is_valid, user = manager.verify_token(token)
 
     # 如果 token 有效，获取用户信息
     if is_valid:
-        user = manager.get_user(token)
         if user:
             return {
                 "success": True,
                 "message": "Token 有效",
                 "valid": True,
-                "user": {
-                    "id": user.get("id"),
-                    "username": user.get("username"),
-                    "email": user.get("email"),
-                    "expire": user.get("expire")
-                }
+                "user": user
             }
 
     # token 无效或已过期

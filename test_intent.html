@@ -331,6 +331,11 @@
             <div class="panel">
                 <h2>📝 输入区域</h2>
                 
+                <div class="form-group"> <!-- token输入容器 -->
+                    <label for="token">Token：</label> <!-- token标签 -->
+                    <input type="text" id="token" placeholder="请输入访问 Token" value="97ed33d8d42e5356cd97980cf48062e4" /> <!-- token输入框 -->
+                </div> <!-- token输入容器结束 -->
+
                 <div class="form-group">
                     <label for="question">问题：</label>
                     <textarea id="question" rows="3" placeholder="请输入您的问题，例如：今天北京天气怎么样？"></textarea>
@@ -399,7 +404,7 @@
     <script>
         // API 地址配置
         const API_URL = 'http://127.0.0.1:8000/api/v1/chat/intent';
-        
+        //const API_URL = 'https://erp.riohome.top/api/v1/chat/intent';
         // 全局变量
         let currentMemory = null;
         let chatHistory = [];
@@ -413,11 +418,17 @@
         async function sendQuestion() {
             const question = document.getElementById('question').value.trim();
             const memoryInput = document.getElementById('memory').value.trim();
+            const token = document.getElementById('token').value.trim(); // 获取token输入
             
             if (!question) {
                 alert('请输入问题！');
                 return;
             }
+
+            if (!token) { // 校验token是否填写
+                alert('请输入token！'); // 提示用户填写token
+                return; // 终止后续流程
+            } // token校验结束
 
             // 禁用发送按钮
             const sendBtn = document.querySelector('.btn-primary');
@@ -445,7 +456,8 @@
                     },
                     body: JSON.stringify({
                         question: question,
-                        memory: memory
+                        memory: memory,
+                        token: token // 携带token给后端
                     })
                 });
 

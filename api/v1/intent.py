@@ -9,10 +9,11 @@ from datetime import datetime
 from api.v1.models import ChatIntentRequest
 from services.llm_service import dashscope_chat_block, dashscope_chat_stream, dashscope_chat_tool, dashscope_chat_intent
 from services.R import log
+from services.supabase_manager import SupabaseManager
 
 # 创建路由器实例
 router = APIRouter(tags=["意图识别"])
-
+manager = SupabaseManager()
 
 tools = {
     "订单": {
@@ -141,6 +142,11 @@ async def chat_intent(chat: ChatIntentRequest):
     """
     聊天意图识别
     """
+    # 验证 token
+    is_valid, _ = manager.verify_token(chat.token)
+    if not is_valid:
+        raise HTTPException(status_code=401, detail="Token 无效或已过期")
+
     # 是否有memory
     if chat.memory:
         # 把memory转成对象

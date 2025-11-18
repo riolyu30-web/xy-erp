@@ -17,22 +17,22 @@ load_dotenv()
 class SupabaseManager:
     """
     Supabase 数据库管理类
-    
+
     功能模块：
     - 数据库连接管理
     - CRUD 操作（增删改查）
     - 用户认证（注册、登录、登出）
     - 文件存储（上传、获取链接）
-    
+
     数据表要求：
-    
+
     1. 普通业务表（如 xunkebao）：
        必须包含以下字段用于软删除功能
        - deleted_at: TIMESTAMP NULL DEFAULT NULL
          * 软删除标记字段
          * NULL 表示数据未删除
          * 包含时间戳表示数据已删除
-       
+
        示例建表语句：
        CREATE TABLE xunkebao (
            id BIGSERIAL PRIMARY KEY,
@@ -45,7 +45,7 @@ class SupabaseManager:
            created_at TIMESTAMP DEFAULT NOW(),
            updated_at TIMESTAMP DEFAULT NOW()
        );
-    
+
     2. 用户认证表（user_table）：
        必须包含以下字段用于令牌认证
        - token: TEXT NULL
@@ -54,7 +54,7 @@ class SupabaseManager:
        - expire: TIMESTAMP NULL
          * 令牌过期时间
          * 用于验证令牌是否有效
-       
+
        示例建表语句：
        CREATE TABLE users (
            id BIGSERIAL PRIMARY KEY,
@@ -67,34 +67,35 @@ class SupabaseManager:
            created_at TIMESTAMP DEFAULT NOW(),
            updated_at TIMESTAMP DEFAULT NOW()
        );
-    
+
     环境变量配置（.env 文件）：
        SUPABASE_URL=your_supabase_url
        SUPABASE_ANON_KEY=your_anon_key
        SUPABASE_USER_TABLE=users
        TOKEN_SECRET=your_secret_key
        TOKEN_EXPIRE=86400  # 令牌有效期（秒），86400=24小时
-    
+
     使用示例：
        # 初始化
        manager = SupabaseManager()
        manager.connect()
-       
+
        # CRUD 操作
        manager.insert_data("xunkebao", [{"company": "测试公司"}])
        data = manager.read_data("xunkebao")
        manager.update_data("xunkebao", ["company"], {"company": "测试公司", "phone": "新号码"})
        manager.delete_data("xunkebao", {"company": "测试公司"})
-       
+
        # 认证操作
        manager.sign_up({"username": "user", "password": "pass"}, unique=["username"])
        token = manager.sign_in({"username": "user", "password": "pass"})
        is_valid = manager.verify_token(token)
        manager.sign_out(token)
-       
+
        # 文件操作
        url = manager.upload_file("avatars", "image.jpg")
     """
+
     def __init__(self):
         self.url = os.getenv("SUPABASE_URL")
         self.key = os.getenv("SUPABASE_ANON_KEY")
@@ -336,22 +337,22 @@ class SupabaseManager:
         except Exception as e:
             return False
 
-    def verify_token(self, token: str) -> bool:
+    def verify_token(self, token: str):
         """
         验证token是否有效
         """
         if not self.client:
             if not self.connect():
-                return False
+                return False, None
 
         try:
             user = self.get_user(token)
             if user:
-                return user["expire"] > datetime.now().isoformat()
+                return user["expire"] > datetime.now().isoformat(), user
             else:
-                return False
+                return False, None
         except Exception as e:
-            return False
+            return False, None
 
     def get_user(self, token: str) -> Dict[str, Any]:
         """
@@ -377,12 +378,12 @@ class SupabaseManager:
     def upload_file(self, bucket: str, file_path: str) -> str:
         """
         上传文件到 Supabase 存储
-        
+
         Args:
             bucket: 存储桶名称
             file_path: 本地文件路径
             remote_name: 远程文件名（可选，默认使用本地文件名）
-        
+
         Returns:
             str: 上传成功返回文件的公开访问URL，失败返回空字符串
         """
@@ -394,26 +395,27 @@ class SupabaseManager:
             if not os.path.exists(file_path):
                 print(f"文件不存在: {file_path}")
                 return ""
-            
+
             # 生成文件名：时间戳YYYYMMDDHHmmssSSS + 随机数 + 原文件后缀
             now = datetime.now()
             # 格式化时间戳：年月日时分秒毫秒
-            timestamp = now.strftime("%Y%m%d%H%M%S") + f"{now.microsecond // 10000:02d}"
+            timestamp = now.strftime("%Y%m%d%H%M%S") + \
+                f"{now.microsecond // 10000:02d}"
             # 生成4位随机数
             random_num = random.randint(1000, 9999)
             # 获取原文件后缀
             file_ext = os.path.splitext(file_path)[1]
             # 组合文件名：20251114175433021_2344.jpg
-            remote_name = f"{timestamp}_{random_num}{file_ext}"            
+            remote_name = f"{timestamp}_{random_num}{file_ext}"
             # 读取文件内容
             with open(file_path, 'rb') as file:
                 file_content = file.read()
-            
+
             # 上传到 Supabase 存储
             response = self.client.storage.from_(bucket).upload(
-                remote_name, 
+                remote_name,
                 file_content
-            )            
+            )
             # 检查上传是否成功
             if response:
                 # 获取文件的公开访问URL
@@ -423,15 +425,15 @@ class SupabaseManager:
                 return ""
         except Exception as e:
             return ""
-    
+
     def get_file_url(self, bucket: str, file_name: str) -> str:
         """
         获取文件的公开访问URL（不上传，仅获取链接）
-        
+
         Args:
             bucket: 存储桶名称
             file_name: 文件名（在存储桶中的路径）
-        
+
         Returns:
             str: 文件的公开访问URL
         """
@@ -440,10 +442,8 @@ class SupabaseManager:
                 return ""
         try:
             # 获取文件的公开访问URL
-            public_url = self.client.storage.from_(bucket).get_public_url(file_name)
+            public_url = self.client.storage.from_(
+                bucket).get_public_url(file_name)
             return public_url
         except Exception as e:
             return ""
-
-    
-

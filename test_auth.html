@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认证接口测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            min-height: 50px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: monospace;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .token-display {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔐 认证接口测试</h1>
+
+    <!-- 注册区域 -->
+    <div class="container">
+        <h2>1. 用户注册</h2>
+        <div class="form-group">
+            <label for="signup_username">用户名：</label>
+            <input type="text" id="signup_username" placeholder="输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="signup_password">密码：</label>
+            <input type="password" id="signup_password" placeholder="输入密码">
+        </div>
+        <button onclick="signUp()">注册</button>
+        <div id="signup_response" class="response"></div>
+    </div>
+
+    <!-- 登录区域 -->
+    <div class="container">
+        <h2>2. 用户登录</h2>
+        <div class="form-group">
+            <label for="signin_username">用户名：</label>
+            <input type="text" id="signin_username" placeholder="输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="signin_password">密码：</label>
+            <input type="password" id="signin_password" placeholder="输入密码">
+        </div>
+        <button onclick="signIn()">登录</button>
+        <div id="token_display" class="token-display" style="display:none;">
+            <strong>Token:</strong> <span id="token_value"></span>
+        </div>
+        <div id="signin_response" class="response"></div>
+    </div>
+
+    <!-- Token 验证区域 -->
+    <div class="container">
+        <h2>3. 验证 Token</h2>
+        <div class="form-group">
+            <label for="verify_token">Token：</label>
+            <input type="text" id="verify_token" placeholder="输入 token 或点击登录后自动填充">
+        </div>
+        <button onclick="verifyToken()">验证 Token</button>
+        <div id="verify_response" class="response"></div>
+    </div>
+
+    <!-- 注销区域 -->
+    <div class="container">
+        <h2>4. 用户注销</h2>
+        <div class="form-group">
+            <label for="signout_token">Token：</label>
+            <input type="text" id="signout_token" placeholder="输入 token 或点击登录后自动填充">
+        </div>
+        <button onclick="signOut()">注销</button>
+        <div id="signout_response" class="response"></div>
+    </div>
+
+    <script>
+        // API 地址配置
+        const API_BASE = 'http://127.0.0.1:8000/api/v1';
+        
+        // 全局存储的 token
+        let currentToken = '';
+
+        // 注册函数
+        async function signUp() {
+            const username = document.getElementById('signup_username').value.trim();
+            const password = document.getElementById('signup_password').value.trim();
+            const responseDiv = document.getElementById('signup_response');
+
+            if (!username || !password) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = '请输入用户名和密码！';
+                return;
+            }
+
+            responseDiv.className = 'response';
+            responseDiv.textContent = '注册中...';
+
+            try {
+                const response = await fetch(`${API_BASE}/auth/signup`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    responseDiv.className = 'response success';
+                    responseDiv.textContent = JSON.stringify(data, null, 2);
+                } else {
+                    responseDiv.className = 'response error';
+                    responseDiv.textContent = `错误 ${response.status}: ${data.detail || JSON.stringify(data)}`;
+                }
+            } catch (error) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = `请求失败: ${error.message}`;
+            }
+        }
+
+        // 登录函数
+        async function signIn() {
+            const username = document.getElementById('signin_username').value.trim();
+            const password = document.getElementById('signin_password').value.trim();
+            const responseDiv = document.getElementById('signin_response');
+            const tokenDisplay = document.getElementById('token_display');
+            const tokenValue = document.getElementById('token_value');
+
+            if (!username || !password) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = '请输入用户名和密码！';
+                return;
+            }
+
+            responseDiv.className = 'response';
+            responseDiv.textContent = '登录中...';
+            tokenDisplay.style.display = 'none';
+
+            try {
+                const response = await fetch(`${API_BASE}/auth/signin`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    responseDiv.className = 'response success';
+                    responseDiv.textContent = JSON.stringify(data, null, 2);
+                    
+                    // 保存 token 并显示
+                    if (data.token) {
+                        currentToken = data.token;
+                        tokenValue.textContent = currentToken;
+                        tokenDisplay.style.display = 'block';
+                        
+                        // 自动填充到验证和注销输入框
+                        document.getElementById('verify_token').value = currentToken;
+                        document.getElementById('signout_token').value = currentToken;
+                    }
+                } else {
+                    responseDiv.className = 'response error';
+                    responseDiv.textContent = `错误 ${response.status}: ${data.detail || JSON.stringify(data)}`;
+                }
+            } catch (error) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = `请求失败: ${error.message}`;
+            }
+        }
+
+        // 验证 Token 函数
+        async function verifyToken() {
+            const token = document.getElementById('verify_token').value.trim();
+            const responseDiv = document.getElementById('verify_response');
+
+            if (!token) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = '请输入 token！';
+                return;
+            }
+
+            responseDiv.className = 'response';
+            responseDiv.textContent = '验证中...';
+
+            try {
+                const response = await fetch(`${API_BASE}/auth/verify/${token}`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    if (data.valid) {
+                        responseDiv.className = 'response success';
+                    } else {
+                        responseDiv.className = 'response error';
+                    }
+                    responseDiv.textContent = JSON.stringify(data, null, 2);
+                } else {
+                    responseDiv.className = 'response error';
+                    responseDiv.textContent = `错误 ${response.status}: ${data.detail || JSON.stringify(data)}`;
+                }
+            } catch (error) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = `请求失败: ${error.message}`;
+            }
+        }
+
+        // 注销函数
+        async function signOut() {
+            const token = document.getElementById('signout_token').value.trim();
+            const responseDiv = document.getElementById('signout_response');
+
+            if (!token) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = '请输入 token！';
+                return;
+            }
+
+            responseDiv.className = 'response';
+            responseDiv.textContent = '注销中...';
+
+            try {
+                const response = await fetch(`${API_BASE}/auth/signout`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    responseDiv.className = 'response success';
+                    responseDiv.textContent = JSON.stringify(data, null, 2);
+                    
+                    // 清空 token 显示
+                    document.getElementById('token_display').style.display = 'none';
+                    document.getElementById('verify_token').value = '';
+                    document.getElementById('signout_token').value = '';
+                    currentToken = '';
+                } else {
+                    responseDiv.className = 'response error';
+                    responseDiv.textContent = `错误 ${response.status}: ${data.detail || JSON.stringify(data)}`;
+                }
+            } catch (error) {
+                responseDiv.className = 'response error';
+                responseDiv.textContent = `请求失败: ${error.message}`;
+            }
+        }
+
+        // 支持 Enter 键提交
+        document.getElementById('signup_password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') signUp();
+        });
+        document.getElementById('signin_password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') signIn();
+        });
+        document.getElementById('verify_token').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') verifyToken();
+        });
+        document.getElementById('signout_token').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') signOut();
+        });
+    </script>
+</body>
+</html>
+

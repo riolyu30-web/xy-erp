@@ -101,8 +101,10 @@
 
     <script>
         // API地址（根据实际情况修改）
-        const API_URL = 'https://erp.riohome.top/stream'; // 本地测试地址，部署时需替换
-        const HEALTH_URL = 'https://erp.riohome.top/health'; // 健康检查接口地址
+        // const API_URL = 'https://erp.riohome.top/stream'; // 本地测试地址，部署时需替换
+        // const HEALTH_URL = 'https://erp.riohome.top/health'; // 健康检查接口地址
+        const API_URL = 'http://127.0.0.1:8000/api/v1/chat/health'; // 健康检查接口地址
+        const HEALTH_URL = 'http://127.0.0.1:8000/api/v1/health'; // 健康检查接口地址
 
         // 健康检查函数
         async function checkHealth() {
@@ -135,15 +137,7 @@
 
                 // 解析JSON响应
                 const data = await response.json();
-
-                // 显示成功状态
-                if (data.status === 'ok') {
-                    healthStatus.innerHTML = `✓ 服务正常 (${responseTime}ms) - ${data.message}`;
-                    healthStatus.style.color = '#28a745';
-                } else {
-                    healthStatus.innerHTML = `⚠ 服务异常 - ${JSON.stringify(data)}`;
-                    healthStatus.style.color = '#ffc107';
-                }
+                healthStatus.innerHTML = data;
 
             } catch (error) {
                 console.error('健康检查失败:', error);

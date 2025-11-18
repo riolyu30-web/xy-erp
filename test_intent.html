@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意图识别接口测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .panel {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .panel h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-size: 1.5em;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .response-area {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            min-height: 150px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .chat-history {
+            max-height: 600px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        
+        .chat-message {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-left: 20%;
+        }
+        
+        .system-message {
+            background: #e3f2fd;
+            color: #1976d2;
+            margin-right: 20%;
+        }
+        
+        .message-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .message-content {
+            word-wrap: break-word;
+        }
+        
+        .memory-display {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .intent-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .badge-weather {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .badge-naming {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .badge-callback {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .badge-function {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .hint-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        
+        .examples {
+            margin-top: 20px;
+        }
+        
+        .example-item {
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .example-item:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+        
+        .example-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 意图识别接口测试</h1>
+        
+        <!-- 统计信息 -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="messageCount">0</div>
+                <div class="stat-label">总消息数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="intentCount">0</div>
+                <div class="stat-label">意图识别次数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="callbackCount">0</div>
+                <div class="stat-label">回调次数</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <!-- 左侧：输入面板 -->
+            <div class="panel">
+                <h2>📝 输入区域</h2>
+                
+                <div class="form-group">
+                    <label for="question">问题：</label>
+                    <textarea id="question" rows="3" placeholder="请输入您的问题，例如：今天北京天气怎么样？"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="memory">
+                        Memory（记忆）：
+                        <small style="color: #999;">可选，系统会自动管理</small>
+                    </label>
+                    <textarea id="memory" rows="6" placeholder='自动填充或手动输入 JSON 格式的 memory'></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn-primary" onclick="sendQuestion()">
+                        <span id="sendBtnText">发送问题</span>
+                        <span id="sendBtnLoading" style="display:none;" class="loading"></span>
+                    </button>
+                    <button class="btn-secondary" onclick="clearMemory()">清空 Memory</button>
+                </div>
+                
+                <div class="examples">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">💡 示例问题</h3>
+                    
+                    <div class="example-item" onclick="fillExample('今天北京的天气怎么样？', '')">
+                        <div class="example-label">🌤️ 天气查询 - 步骤1</div>
+                        <div>今天北京的天气怎么样？</div>
+                    </div>
+                    
+                    <div class="example-item" onclick="fillExample('明天下午3点', 'callback')">
+                        <div class="example-label">🌤️ 天气查询 - 步骤2（补充信息）</div>
+                        <div>明天下午3点</div>
+                    </div>
+                    
+                    <div class="example-item" onclick="fillExample('帮我给孩子起个名字', '')">
+                        <div class="example-label">👶 起名 - 步骤1</div>
+                        <div>帮我给孩子起个名字</div>
+                    </div>
+                    
+                    <div class="example-item" onclick="fillExample('姓李，男孩', 'callback')">
+                        <div class="example-label">👶 起名 - 步骤2（补充信息）</div>
+                        <div>姓李，男孩</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右侧：对话历史和响应 -->
+            <div class="panel">
+                <h2>💬 对话历史</h2>
+                
+                <div class="chat-history" id="chatHistory">
+                    <div style="text-align: center; color: #999; padding: 50px 0;">
+                        <div style="font-size: 48px; margin-bottom: 10px;">🚀</div>
+                        <div>开始您的第一个对话吧！</div>
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="clearHistory()">清空历史</button>
+                    <button class="btn-secondary" onclick="exportHistory()">导出历史</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API 地址配置
+        const API_URL = 'http://127.0.0.1:8000/api/v1/chat/intent';
+        
+        // 全局变量
+        let currentMemory = null;
+        let chatHistory = [];
+        let stats = {
+            messageCount: 0,
+            intentCount: 0,
+            callbackCount: 0
+        };
+
+        // 发送问题
+        async function sendQuestion() {
+            const question = document.getElementById('question').value.trim();
+            const memoryInput = document.getElementById('memory').value.trim();
+            
+            if (!question) {
+                alert('请输入问题！');
+                return;
+            }
+
+            // 禁用发送按钮
+            const sendBtn = document.querySelector('.btn-primary');
+            sendBtn.disabled = true;
+            document.getElementById('sendBtnText').style.display = 'none';
+            document.getElementById('sendBtnLoading').style.display = 'inline-block';
+
+            try {
+                // 准备请求数据
+                let memory = memoryInput || '';
+                
+                // 如果有 currentMemory，使用它
+                if (currentMemory) {
+                    memory = JSON.stringify(currentMemory);
+                }
+
+                // 添加用户消息到历史
+                addMessageToHistory('user', question);
+
+                // 发送请求
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        question: question,
+                        memory: memory
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // 更新统计
+                    stats.messageCount++;
+                    if (data.intent) {
+                        stats.intentCount++;
+                    }
+                    if (data.flag === '[callback]') {
+                        stats.callbackCount++;
+                    }
+                    updateStats();
+
+                    // 添加系统响应到历史
+                    addMessageToHistory('system', data);
+
+                    // 更新 memory
+                    currentMemory = data;
+                    document.getElementById('memory').value = JSON.stringify(data, null, 2);
+
+                    // 清空问题输入框
+                    document.getElementById('question').value = '';
+                } else {
+                    alert(`错误 ${response.status}: ${data.detail || JSON.stringify(data)}`);
+                }
+            } catch (error) {
+                alert(`请求失败: ${error.message}`);
+            } finally {
+                // 恢复发送按钮
+                sendBtn.disabled = false;
+                document.getElementById('sendBtnText').style.display = 'inline';
+                document.getElementById('sendBtnLoading').style.display = 'none';
+            }
+        }
+
+        // 添加消息到历史
+        function addMessageToHistory(type, content) {
+            const historyDiv = document.getElementById('chatHistory');
+            
+            // 首次添加消息时清空初始提示
+            if (chatHistory.length === 0) {
+                historyDiv.innerHTML = '';
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = type === 'user' ? 'chat-message user-message' : 'chat-message system-message';
+
+            if (type === 'user') {
+                messageDiv.innerHTML = `
+                    <div class="message-label">👤 用户</div>
+                    <div class="message-content">${escapeHtml(content)}</div>
+                `;
+            } else {
+                // 系统消息
+                let intentBadge = '';
+                if (content.intent) {
+                    const badgeClass = content.intent === '天气' ? 'badge-weather' : 'badge-naming';
+                    intentBadge = `<span class="intent-badge ${badgeClass}">意图: ${content.intent}</span>`;
+                }
+                
+                let flagBadge = '';
+                if (content.flag === '[callback]') {
+                    flagBadge = `<span class="intent-badge badge-callback">状态: 等待补充</span>`;
+                } else if (content.flag === '[function]') {
+                    flagBadge = `<span class="intent-badge badge-function">状态: 完成</span>`;
+                }
+
+                let hintBox = '';
+                if (content.hint) {
+                    hintBox = `<div class="hint-box">💡 ${content.hint}</div>`;
+                }
+
+                let answerBox = '';
+                if (content.answer && Object.keys(content.answer).length > 0) {
+                    answerBox = `<div class="memory-display"><strong>参数:</strong><br>${JSON.stringify(content.answer, null, 2)}</div>`;
+                }
+
+                messageDiv.innerHTML = `
+                    <div class="message-label">🤖 系统响应</div>
+                    <div class="message-content">
+                        ${intentBadge}
+                        ${flagBadge}
+                        ${hintBox}
+                        ${answerBox}
+                    </div>
+                `;
+            }
+
+            historyDiv.appendChild(messageDiv);
+            historyDiv.scrollTop = historyDiv.scrollHeight;
+
+            // 保存到历史记录
+            chatHistory.push({ type, content, timestamp: new Date().toISOString() });
+        }
+
+        // HTML 转义
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // 更新统计信息
+        function updateStats() {
+            document.getElementById('messageCount').textContent = stats.messageCount;
+            document.getElementById('intentCount').textContent = stats.intentCount;
+            document.getElementById('callbackCount').textContent = stats.callbackCount;
+        }
+
+        // 清空 Memory
+        function clearMemory() {
+            if (confirm('确定要清空 Memory 吗？')) {
+                currentMemory = null;
+                document.getElementById('memory').value = '';
+                alert('Memory 已清空');
+            }
+        }
+
+        // 清空历史
+        function clearHistory() {
+            if (confirm('确定要清空对话历史吗？')) {
+                chatHistory = [];
+                stats = {
+                    messageCount: 0,
+                    intentCount: 0,
+                    callbackCount: 0
+                };
+                updateStats();
+                document.getElementById('chatHistory').innerHTML = `
+                    <div style="text-align: center; color: #999; padding: 50px 0;">
+                        <div style="font-size: 48px; margin-bottom: 10px;">🚀</div>
+                        <div>开始您的第一个对话吧！</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 导出历史
+        function exportHistory() {
+            if (chatHistory.length === 0) {
+                alert('暂无对话历史');
+                return;
+            }
+
+            const dataStr = JSON.stringify(chatHistory, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `chat_history_${Date.now()}.json`;
+            link.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // 填充示例
+        function fillExample(question, memoryType) {
+            document.getElementById('question').value = question;
+            
+            if (memoryType === 'callback') {
+                // 如果是补充信息的示例，需要有 currentMemory
+                if (!currentMemory) {
+                    alert('请先发送初始问题，建立 Memory 后再补充信息');
+                    return;
+                }
+            } else {
+                // 新对话，清空 memory
+                currentMemory = null;
+                document.getElementById('memory').value = '';
+            }
+        }
+
+        // 支持 Enter 键发送（Ctrl+Enter 换行）
+        document.getElementById('question').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                sendQuestion();
+            }
+        });
+
+        // 页面加载完成
+        window.addEventListener('load', function() {
+            console.log('意图识别测试页面已加载');
+            updateStats();
+        });
+    </script>
+</body>
+</html>
+

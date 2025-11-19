@@ -20,8 +20,8 @@ def login() -> str:
     Raises:
         Exception: 当登录失败时抛出异常
     """
-    return local_login()
-    # return auth_login()
+    # return local_login()
+    return auth_login()
 
 
 def local_login() -> str:
@@ -63,6 +63,8 @@ def auth_login() -> str:
 
         # 解析JSON响应
         response_data = response.json()
+
+        print(response_data)
 
         # 检查业务逻辑是否成功
         if response_data.get("code") == 0 and response_data.get("msg") == "SUCCESS":

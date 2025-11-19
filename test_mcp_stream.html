@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Stream Test</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        #chat-container {
+            width: 80%;
+            max-width: 800px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        #response-container {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            min-height: 100px;
+        }
+        input, button {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: calc(100% - 22px);
+        }
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <h2>MCP Stream Test</h2>
+        <input type="text" id="token" placeholder="Enter your token">
+        <input type="text" id="question" placeholder="Enter your question">
+        <button onclick="sendMessage()">Send</button>
+        <h3>Response:</h3>
+        <div id="response-container"></div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const token = document.getElementById('token').value;
+            const question = document.getElementById('question').value;
+            const responseContainer = document.getElementById('response-container');
+
+            responseContainer.innerHTML = ''; // 清空之前的内容
+
+            if (!token || !question) {
+                alert('Please enter both token and question.');
+                return;
+            }
+
+            const URL = 'http://localhost:8000/api/v1/chat/mcp';
+
+            try {
+                const response = await fetch(URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token, question }),
+                });
+
+                if (!response.body) {
+                    responseContainer.textContent = 'ReadableStream not yet supported in this browser.';
+                    return;
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) {
+                        break;
+                    }
+                    const chunk = decoder.decode(value, { stream: true });
+                    // SSE返回的数据以'data: '开头，以'\n\n'结尾，需要解析
+                    const lines = chunk.split('\n\n');
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.substring(6);
+                            try {
+                                const jsonData = JSON.parse(data);
+                                // 格式化JSON并显示
+                                responseContainer.innerHTML += JSON.stringify(jsonData, null, 2) + '\n';
+                            } catch (e) {
+                                responseContainer.innerHTML += data + '\n';
+                            }
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                responseContainer.textContent = 'An error occurred: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

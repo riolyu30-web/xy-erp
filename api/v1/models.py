@@ -14,6 +14,11 @@ class ChatIntentRequest(AuthRequest):
     memory: str  # 记忆
 
 
+class ChatMCPRequest(AuthRequest):
+    """聊天模型"""
+    question: str  # 问题
+
+
 # 定义请求模型
 class QuestionRequest(AuthRequest):
     question: str  # 用户提问的问题

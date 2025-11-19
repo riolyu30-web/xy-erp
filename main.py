@@ -3,7 +3,7 @@ from fastapi import FastAPI
 # 导入CORS中间件用于处理跨域请求
 from fastapi.middleware.cors import CORSMiddleware
 # 导入认证路由器
-from api.v1 import intent, auth, health
+from api.v1 import intent, auth, health, chat
 
 import uvicorn  # 导入ASGI服务器
 
@@ -26,6 +26,8 @@ app.add_middleware(
 app.include_router(health.router, prefix="/api/v1")
 app.include_router(intent.router, prefix="/api/v1")
 app.include_router(auth.router, prefix="/api/v1")
+app.include_router(chat.router, prefix="/api/v1")
+
 
 # 主函数
 if __name__ == "__main__":

@@ -2,25 +2,29 @@
 import json
 # 导入环境变量处理库
 import os
-from dotenv import load_dotenv
+import re
 from datetime import datetime
+from http import HTTPStatus
+
+from dotenv import load_dotenv
 from fastapi import Request
 from fastapi.responses import StreamingResponse  # 导入流式响应
-from dashscope import Generation
-from http import HTTPStatus
-import dashscope  # 导入dashscope SDK
-import json
-import os
-import re
 from sse_starlette.sse import EventSourceResponse
+from starlette.concurrency import iterate_in_threadpool
+
+import dashscope  # 导入dashscope SDK
+from dashscope import Generation
+
+# 导入R模块
 from services.R import log
+# 导入qwen_agent
+from qwen_agent.agents import Assistant
 
-# 加载环境变量
 
-# 加载环境变量
+# 加载.env文件中的环境变量
 load_dotenv()
 
-# 配置API Key
+# 从环境变量中获取DASHSCOPE_API_KEY
 dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 
@@ -37,10 +41,12 @@ def dashscope_chat_json(system_prompt: str, user_prompt: str, model: str = "qwen
         str: 模型返回的JSON格式文本内容
     """
 
+    # 构建消息列表
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt+",please response in json format"}
     ]
+    # 调用生成接口
     response = Generation.call(
         model=model,
         messages=messages,
@@ -49,10 +55,12 @@ def dashscope_chat_json(system_prompt: str, user_prompt: str, model: str = "qwen
         response_format={'type': 'json_object'}
     )
     try:
+        # 尝试解析JSON字符串
         json_string = response.output.choices[0].message.content
         json_data = json.loads(json_string)
         return json_data
     except json.JSONDecodeError:
+        # 解析失败返回None
         return None
 
 
@@ -74,6 +82,7 @@ def dashscope_chat_block(system_prompt: str, user_prompt: str, model: str = "qwe
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}
     ]
+    # 记录请求日志
     log(f"dashscope_chat_block: {messages}")
     # 调用大模型API（非流式）
     response = Generation.call(
@@ -89,6 +98,7 @@ def dashscope_chat_block(system_prompt: str, user_prompt: str, model: str = "qwe
         text_content = response.output.choices[0].message.content
         return text_content
     except Exception as e:
+        # 发生异常返回空字符串
         return ""
 
 
@@ -134,7 +144,6 @@ def dashscope_chat_stream(request: Request, system_prompt: str, user_prompt: str
                         break
                     # 检查响应状态码
                     if resp.status_code == HTTPStatus.OK:
-                        print(resp)
                         # 获取AI回复内容
                         content = resp.output.choices[0].message.content
                         yield content  # 使用yield返回增量内容
@@ -161,26 +170,33 @@ def dashscope_chat_stream(request: Request, system_prompt: str, user_prompt: str
 
 def dashscope_chat_tool(tools_string: str, user_prompt: str, model: str = "tongyi-intent-detect-v3") -> dict:
 
+    # 定义系统提示
     system_prompt = f"""你是一个智能助手，你可以调用以下工具来回答用户的问题，工具的参数必须从用户的问题中提取，不能自己编造参数值：
     {tools_string}
     Response in NORMAL_MODE."""
+    # 构建消息列表
     messages = [
         {'role': 'system', 'content': system_prompt},
         {'role': 'user', 'content': user_prompt}
     ]
+    # 调用生成接口
     response = Generation.call(
         model=model,
         messages=messages,
         result_format="message"
     )
+    # 获取响应内容
     json_string = response.output.choices[0].message.content
+    # 解析文本内容
     json_data = _parse_text(json_string)
     return json_data
 
 
 def _parse_text(text):
+    # 如果文本为空，则返回None
     if text is None:
         return None
+    # 定义工具调用正则表达式
     tool_call_pattern = r'<tool_call>(.*?)</tool_call>'
     # 使用正则表达式查找匹配的内容
     tool_call_match = re.search(tool_call_pattern, text, re.DOTALL)
@@ -190,6 +206,7 @@ def _parse_text(text):
     try:
         tool_call_json = json.loads(tool_call)
     except json.JSONDecodeError:
+        # 解析失败则返回原始文本
         tool_call_json = text
     return tool_call_json
 
@@ -210,6 +227,7 @@ def dashscope_chat_intent(intent_list: list[str], user_prompt: str, model: str =
         # 使用A-Z作为键
         key = chr(ord('A') + i)
         intent_dict[key] = intent
+    # 将字典转换为JSON字符串
     intent_string = json.dumps(intent_dict, ensure_ascii=False)
     # 系统提示词
     system_prompt = f"""You are Qwen, created by Alibaba Cloud. You are a helpful assistant. 
@@ -227,7 +245,54 @@ Just reply with the chosen tag."""
         messages=messages,
         result_format="message"
     )
+    # 获取响应内容
     json_string = response.output.choices[0].message.content
+    # 如果响应内容是意图字典的键，则返回对应的值
     if json_string in intent_dict.keys():
         return intent_dict[json_string]
+    # 否则返回None
     return None
+
+
+def create_assistant(system_message, tools: list[dict], model: str = "qwen-plus-latest"):
+    # LLM 配置
+    llm_cfg = {
+        "model": model,
+        "model_server": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_key": os.getenv("DASHSCOPE_API_KEY"),
+    }
+    # 创建Assistant实例
+    assistant = Assistant(
+        llm=llm_cfg,  # 设置语言模型配置
+        system_message=system_message,  # 设置系统消息
+        function_list=tools,  # 设置功能列表
+    )
+    return assistant  # 返回Assistant实例
+
+
+async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: str) -> StreamingResponse:
+    """
+    调用大模型进行MCP流式传输
+    Args:
+        request: FastAPI请求对象
+        system_prompt: 系统提示词
+        tools: 系统工具列表
+        user_prompt: 用户提示词
+        model: 使用的模型名称
+    Returns:
+        StreamingResponse: 大模型流式传输结果
+    """
+    # 消息列表
+    messages = [{"role": "user", "content": user_prompt}]
+
+    # 流式响应
+    async def stream_generator():
+        # 运行助手
+        # 使用iterate_in_threadpool来异步迭代同步生成器
+        async for response_chunk in iterate_in_threadpool(bot.run(messages)):
+            if await request.is_disconnected():
+                break
+            yield f"data: {json.dumps(response_chunk, ensure_ascii=False)}\n\n"
+
+    # 返回StreamingResponse
+    return StreamingResponse(stream_generator(), media_type="text/event-stream")

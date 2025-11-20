@@ -289,10 +289,41 @@ async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: st
     async def stream_generator():
         # 运行助手
         # 使用iterate_in_threadpool来异步迭代同步生成器
+        bot_response = ""  # 记录已返回的响应内容
+        is_tool_call = False  # 标记是否正在进行工具调用
+        tool_call_info = {}  # 存储工具调用信息
+        
         async for response_chunk in iterate_in_threadpool(bot.run(messages)):
             if await request.is_disconnected():
                 break
-            yield f"data: {json.dumps(response_chunk, ensure_ascii=False)}\n\n"
+            
+            # 获取最新的响应
+            new_response = response_chunk[-1]
+            
+            # 检查是否有函数调用
+            if "function_call" in new_response:
+                is_tool_call = True
+                tool_call_info = new_response["function_call"]
+                # 不返回增量部分，等待完整的函数调用
+                continue
+                
+            # 如果之前有函数调用，现在没有，说明函数调用完成
+            elif "function_call" not in new_response and is_tool_call:
+                is_tool_call = False
+                # 返回完整的函数调用和结果
+                completed_data = [
+                    {"role": "assistant", "content": "", "function_call": tool_call_info},
+                    {"role": "function", "content": new_response.get("content", ""), "name": tool_call_info.get("name", "")}
+                ]
+                yield f"data: {json.dumps(completed_data, ensure_ascii=False)}\n\n"
+                
+            # 处理普通的助手响应内容
+            elif new_response.get("role") == "assistant" and "content" in new_response:
+                # 只返回新增的内容部分
+                incremental_content = new_response["content"][len(bot_response):]
+                if incremental_content:  # 只有当有新内容时才返回
+                    bot_response += incremental_content
+                    yield f"data: {json.dumps([{'role': 'assistant', 'content': incremental_content}], ensure_ascii=False)}\n\n"
 
     # 返回StreamingResponse
     return StreamingResponse(stream_generator(), media_type="text/event-stream")

@@ -64,15 +64,16 @@
                 return;
             }
 
-            //const URL = 'http://localhost:8000/api/v1/chat/mcp';
-            const URL = 'https://mcp.riohome.top/api/v1/chat/mcp';
+            const URL = 'http://localhost:8001/api/v1/chat/mcp';
+            //const URL = 'https://mcp.riohome.top/api/v1/chat/mcp';
             try {
                 const response = await fetch(URL, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
                     },
-                    body: JSON.stringify({ token, question }),
+                    body: JSON.stringify({ question }),
                 });
 
                 if (!response.body) {

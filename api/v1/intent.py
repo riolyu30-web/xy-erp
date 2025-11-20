@@ -239,7 +239,6 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
     # 步骤1: 先通过关键词检索快速匹配意图
     memory = {
         "intent": "",
-        "tool": {},
         "question": "",
         "answer": {},
         "hint": "",

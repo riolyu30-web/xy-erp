@@ -1,5 +1,5 @@
 import copy  # 导入 copy 模块，用于深度复制对象
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, HTTPException, Request, Depends
 from dashscope import Application
 from dashscope import Generation
 from http import HTTPStatus
@@ -7,6 +7,7 @@ import json
 import os
 from datetime import datetime
 from api.v1.models import ChatIntentRequest
+from api.v1.dependencies import get_current_user
 from services.llm_service import dashscope_chat_block, dashscope_chat_stream, dashscope_chat_tool, dashscope_chat_intent
 from services.R import log
 from services.supabase_manager import SupabaseManager
@@ -138,14 +139,10 @@ def search_intent_by_keywords(question: str) -> str:
 
 
 @router.post("/chat/intent")
-async def chat_intent(chat: ChatIntentRequest):
+async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_current_user)):
     """
     聊天意图识别
     """
-    # 验证 token
-    is_valid, _ = manager.verify_token(chat.token)
-    if not is_valid:
-        raise HTTPException(status_code=401, detail="Token 无效或已过期")
 
     # 是否有memory
     if chat.memory:

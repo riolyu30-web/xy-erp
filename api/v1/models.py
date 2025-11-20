@@ -3,24 +3,19 @@ from pydantic import BaseModel
 from typing import Optional, List
 
 
-class AuthRequest(BaseModel):
-    token: str
-
-
-class ChatIntentRequest(AuthRequest):
-
+class ChatIntentRequest(BaseModel):
     """聊天意图模型"""
     question: str  # 问题
     memory: str  # 记忆
 
 
-class ChatMCPRequest(AuthRequest):
+class ChatMCPRequest(BaseModel):
     """聊天模型"""
     question: str  # 问题
 
 
 # 定义请求模型
-class QuestionRequest(AuthRequest):
+class QuestionRequest(BaseModel):
     question: str  # 用户提问的问题
 
 

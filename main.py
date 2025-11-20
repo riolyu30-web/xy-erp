@@ -4,6 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 # 导入认证路由器
 from api.v1 import intent, auth, health, chat
+from dotenv import load_dotenv
+import os
 
 import uvicorn  # 导入ASGI服务器
 
@@ -31,11 +33,13 @@ app.include_router(chat.router, prefix="/api/v1")
 
 # 主函数
 if __name__ == "__main__":
+    load_dotenv()
     # 启动uvicorn服务器
+    debug = os.getenv("DEBUG_MODE", "False").lower() == "true"
     uvicorn.run(
-        "main:app",  # ✅ 使用导入字符串格式 "模块名:应用变量名"
+        "main:app",  # 使用导入字符串格式 "模块名:应用变量名"
         host="0.0.0.0",  # 监听所有网络接口
         port=8001,  # 监听端口8001
         log_level="info",  # 日志级别
-        #reload=True,  # 自动重新加载
+        reload=debug,  # 自动重新加载
     )

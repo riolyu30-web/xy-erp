@@ -333,7 +333,7 @@
                 
                 <div class="form-group"> <!-- token输入容器 -->
                     <label for="token">Token：</label> <!-- token标签 -->
-                    <input type="text" id="token" placeholder="请输入访问 Token" value="97ed33d8d42e5356cd97980cf48062e4" /> <!-- token输入框 -->
+                    <input type="text" id="token" placeholder="请输入访问 Token" value="52fe8ee1980c7139952b21222ff520d7" /> <!-- token输入框 -->
                 </div> <!-- token输入容器结束 -->
 
                 <div class="form-group">
@@ -403,7 +403,7 @@
 
     <script>
         // API 地址配置
-        const API_URL = 'http://127.0.0.1:8000/api/v1/chat/intent';
+        const API_URL = 'http://127.0.0.1:8001/api/v1/chat/intent';
         //const API_URL = 'https://erp.riohome.top/api/v1/chat/intent';
         // 全局变量
         let currentMemory = null;
@@ -453,11 +453,11 @@
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}` // 携带token给后端
                     },
                     body: JSON.stringify({
                         question: question,
                         memory: memory,
-                        token: token // 携带token给后端
                     })
                 });
 

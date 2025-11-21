@@ -152,11 +152,8 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
         flag = memory.get("flag")
 
         if intent and flag == "[callback]":  # 有memory的方法
-            reject_list = ["否定", "其他"]
-            intent_list = list(tools.keys())
-            comfirm = dashscope_chat_intent(
-                reject_list+intent_list, chat.question)
-            if comfirm == intent:
+            comfirm = search_intent_by_keywords(chat.question)
+            if comfirm == None or comfirm == intent:
                 val = tools.get(intent)
                 tool = val.get("tool")
                 #  取memory的tool 新question补充memory的question

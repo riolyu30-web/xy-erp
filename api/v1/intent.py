@@ -196,7 +196,7 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
                         memory["answer"] = response  # 覆盖答案
                         memory["question"] += "\n"+chat.question  # 累积问题
                         properties = analyze_tool_arguments(response, tool)
-                        memory["hint"] = get_hint(
+                        memory["hint"] = tool.get("description", "") +"\n"+get_hint(
                             intent, properties["has_value"], properties["missing_or_none"])
                         if properties["all_required_filled"]:
                             memory["flag"] = "[comfirm]"
@@ -229,9 +229,10 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
                         memory["answer"] = response
                         memory["question"] += "\n"+chat.question  # 累积问题
                         properties = analyze_tool_arguments(response, tool)
-                        memory["hint"] = get_hint(
+                        memory["hint"] = tool.get("description", "") +"\n"+get_hint(
                             intent, properties["has_value"], properties["missing_or_none"])
                         if properties["all_required_filled"]:
+
                             memory["flag"] = "[confirm]"
                         else:  # 有参数缺失或为空
                             memory["flag"] = "[callback]"
@@ -255,7 +256,7 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
         memory["flag"] = "[reject]"
         return memory
     if intent in talk_list:
-        memory["hint"] = "我是智能助手。"
+        memory["hint"] = "话题讨论"
         memory["flag"] = "[stream]"
         return memory
 

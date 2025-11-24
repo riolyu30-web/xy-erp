@@ -154,47 +154,61 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
         if intent and flag == "[callback]":  # 有memory的方法
             comfirm = search_intent_by_keywords(chat.question)
             if comfirm == None or comfirm == intent:
-                val = tools.get(intent)
-                tool = val.get("tool")
-                #  取memory的tool 新question补充memory的question
-                response = dashscope_chat_tool(
-                    tool, get_tool_call(chat.question, memory, intent))
-                # 判断是否有tool调用
-                if response:  # 识别到工具调用
-                    if "name" in response and "arguments" in response:  # 识别到工具调用的参数
-                        memory["answer"] = response  # 覆盖答案
-                        memory["question"] += "\n"+chat.question  # 累积问题
-                        properties = analyze_tool_arguments(
-                            memory["answer"], tool)
-                        memory["hint"] = get_hint(
-                            intent, properties["has_value"], properties["missing_or_none"])
-                        if properties["all_required_filled"]:
-                            memory["flag"] = "[comfirm]"
-                        else:  # 有参数缺失或为空
-                            memory["flag"] = "[callback]"
-                        return memory
-
+                other_list = ["其他","修改"]
+                reject_list = ["否定", "拒绝"]
+                comfirm = dashscope_chat_intent(
+                reject_list+other_list, chat.question)
+                if comfirm in reject_list:
+                    memory["hint"] = get_talk("好！我聊天点别的吧")
+                    memory["flag"] = "[reject]"
+                    return memory
+                else:
+                    val = tools.get(intent)
+                    tool = val.get("tool")
+                    #  取memory的tool 新question补充memory的question
+                    response = dashscope_chat_tool(
+                        tool, get_tool_call(chat.question, memory, intent))
+                    # 判断是否有tool调用
+                    if response:  # 识别到工具调用
+                        if "name" in response and "arguments" in response:  # 识别到具调用的参数工
+                            if not are_objects_equal(memory["answer"], response):
+                                memory["answer"] = merge_objects(memory["answer"], response)  # 覆盖答案
+                                memory["question"] += "\n修正:"+chat.question  # 累积问题
+                                properties = analyze_tool_arguments(
+                                    memory["answer"], tool)
+                                memory["hint"] =  get_hint(
+                                    tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
+                                if properties["all_required_filled"]:
+                                    memory["flag"] = "[comfirm]"
+                                else:  # 有参数缺失或为空
+                                    memory["flag"] = "[callback]"
+                                return memory
+                            else:
+                                memory["answer"] = get_talk("您是否还有要修改信息？可发送过来")
+                                memory["flag"] = "[callback]"
+                                return memory
+                            
         # 有memory，但是没有命中关键词，返回兜底意图
         if intent and flag == "[doubt]":
             val = tools.get(intent)
             tool = val.get("tool")
-            other_list = ["其他"]
+            other_list = ["其他","修改"]
             reject_list = ["否定", "拒绝"]
-            intent_list = ["确认"+tool.get("description", ""), "修改", "肯定"]
+            intent_list = ["确认",  "肯定"]
             comfirm = dashscope_chat_intent(
                 reject_list+intent_list+other_list, chat.question)
             if comfirm in intent_list:
                 #  取memory的tool 新question补充memory的question
                 response = dashscope_chat_tool(
-                    tool, get_tool_call(chat.question, memory, intent))
+                    tool, get_tool_call("", memory, intent))
                 # 判断是否有tool调用
                 if response:  # 识别到工具调用
                     if "name" in response and "arguments" in response:  # 识别到工具调用的参数
                         memory["answer"] = response  # 覆盖答案
-                        memory["question"] += "\n"+chat.question  # 累积问题
+                        memory["question"] = memory["question"] # 不要累积问题
                         properties = analyze_tool_arguments(response, tool)
-                        memory["hint"] = tool.get("description", "") +"\n"+get_hint(
-                            intent, properties["has_value"], properties["missing_or_none"])
+                        memory["hint"] =  get_hint(
+                            tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
                         if properties["all_required_filled"]:
                             memory["flag"] = "[comfirm]"
                         else:  # 有参数缺失或为空
@@ -203,37 +217,46 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
             if comfirm in reject_list:
                 memory["flag"] = "[stream]"
                 return memory
+            
 
         if intent and flag == "[comfirm]":
             val = tools.get(intent)
             tool = val.get("tool")
-            other_list = ["其他"]
-            reject_list = ["否定", "修改"]
-            comfirm_list = ["确认"+tool.get("description", "肯定")]
+            other_list = ["其他","修改"]
+            reject_list = ["否定","拒绝"]
+            comfirm_list = ["确认", "肯定"]
             comfirm = dashscope_chat_intent(
                 reject_list+comfirm_list+other_list, chat.question)
-
             if comfirm in comfirm_list:
                 memory["flag"] = "[function]"
                 return memory
             if comfirm in reject_list:
-                memory["flag"] = "[stream]"
-                response = dashscope_chat_tool(
-                    tool, get_tool_call(chat.question, memory, intent))
-                # 判断是否有tool调用
-                if response:  # 识别到工具调用
-                    if "name" in response and "arguments" in response:  # 识别到工具调用的参数
-                        memory["answer"] = response
-                        memory["question"] += "\n"+chat.question  # 累积问题
-                        properties = analyze_tool_arguments(response, tool)
-                        memory["hint"] = tool.get("description", "") +"\n"+get_hint(
-                            intent, properties["has_value"], properties["missing_or_none"])
-                        if properties["all_required_filled"]:
+                memory["flag"] = "[callback]"
+                memory["hint"] = get_talk("您是否要修改信息？可发送过来")
+                return memory
+            if comfirm in other_list:
+                comfirm = search_intent_by_keywords(chat.question)
+                if comfirm == None or comfirm == intent:
+                    val = tools.get(intent)
+                    tool = val.get("tool")
+                    #  取memory的tool 新question补充memory的question
+                    response = dashscope_chat_tool(
+                        tool, get_tool_call(chat.question, memory, intent))
+                    # 判断是否有tool调用
+                    if response:  # 识别到工具调用
+                        if "name" in response and "arguments" in response:  # 识别到工具调用的参数
+                            memory["answer"] = response  # 覆盖答案
+                            memory["question"] += "\n修正:"+chat.question  # 累积问题
+                            properties = analyze_tool_arguments(
+                                memory["answer"], tool)
+                            memory["hint"] =  get_hint(
+                                tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
+                            if properties["all_required_filled"]:
+                                memory["flag"] = "[comfirm]"
+                            else:  # 有参数缺失或为空
+                                memory["flag"] = "[callback]"
+                            return memory               
 
-                            memory["flag"] = "[confirm]"
-                        else:  # 有参数缺失或为空
-                            memory["flag"] = "[callback]"
-                        return memory
     # 步骤1: 先通过关键词检索快速匹配意图
     memory = {
         "intent": "",
@@ -249,7 +272,7 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
         reject_list+intent_list+talk_list, chat.question)  # 有识别到意图
     memory["question"] = chat.question  # 记录原始问题
     if intent in reject_list:
-        memory["answer"] = "不好意思！我好像没有理解您的意思。"
+        memory["answer"] = get_talk("不好意思！我好像没有理解您的意思。")
         memory["flag"] = "[reject]"
         return memory
     if intent in talk_list:
@@ -265,7 +288,7 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
             val = tools.get(intent)
             tool = val.get("tool")
             memory["intent"] = intent
-            memory["hint"] = "不太确定您的意思，"+tool.get("description", "")+"？"
+            memory["hint"] = get_talk("不太确定您的意思，"+tool.get("description", "")+"？")
             memory["flag"] = "[doubt]"  # 标记为怀疑
             return memory
 
@@ -352,6 +375,7 @@ def get_hint(intent: str, properties_with_value: dict, properties_missing_or_non
     system_prompt = """
     你是一个助手，请用户核对参数，用一句有礼貌提示语，说人话，有一说一，不要凭空编造。
     """
+
     if len(properties_missing_or_none) > 0:
         # 提取缺失参数的名称
         missing_params = [list(prop.keys())[0]
@@ -372,6 +396,16 @@ def get_hint(intent: str, properties_with_value: dict, properties_missing_or_non
     else:
         return ""
 
+def get_talk(answer:str) -> str:
+
+    system_prompt = """
+    你是一个客服,用一句有礼貌提示语，说人话。
+    """
+    hint = dashscope_chat_block(system_prompt, answer)
+    if hint:
+        return hint
+    else:
+        return ""
 
 def get_tool_call(question: str, memory: dict, intent: str) -> dict:
     """
@@ -382,9 +416,12 @@ def get_tool_call(question: str, memory: dict, intent: str) -> dict:
     val = tools.get(intent)
     hint = val.get("hint", "")
     answer = memory.get("question", "")
-    response = f"{answer}\n{question}\n{hint}"
-    log(f"get_tool_call: {response}")
-    return response
+    response = {
+        "上次对话": answer,
+        "更新信息": question,
+        "辅助信息": hint,
+    }
+    return json.dumps(response, ensure_ascii=False)
 
 
 def merge_objects(old_obj: dict, new_obj: dict) -> dict:

@@ -3,12 +3,17 @@ from services.auth_service import auth_mcp
 from services.order_service import order_mcp
 from services.calcu_service import calcu_mcp
 from services.csv_service import csv_mcp
+from services.chart_service import chart_mcp
+
+
 
 mcp = FastMCP("xy-erp-mcp")
 mcp.mount(auth_mcp, prefix="auth")
 mcp.mount(order_mcp, prefix="order")
 mcp.mount(calcu_mcp, prefix="calcu")
 mcp.mount(csv_mcp, prefix="csv")
+mcp.mount(chart_mcp, prefix="chart")
+
 
 
 def main():

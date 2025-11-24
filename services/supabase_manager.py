@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 # 导入uuid模块用于生成唯一标识符
 import uuid
 import random
-
+import base64  # 导入base64模块
 # 加载环境变量
 load_dotenv()
 
@@ -425,6 +425,44 @@ class SupabaseManager:
                 return ""
         except Exception as e:
             return ""
+
+
+    def upload_base64(self, bucket: str, image_content: str) -> str:
+        if not self.client:
+            if not self.connect():
+                return ""
+         # 处理图片内容
+        try:
+            if image_content.startswith('data:image/'):  # 如果是base64格式
+                # 去掉data:image/png;base64,前缀
+                base64_data = image_content.split(',')[1]  # 提取base64数据
+                image_data = base64.b64decode(base64_data)  # 解码为二进制数据
+                # 生成文件名：时间戳YYYYMMDDHHmmssSSS + 随机数 + 原文件后缀
+                now = datetime.now()
+                # 格式化时间戳：年月日时分秒毫秒
+                timestamp = now.strftime("%Y%m%d%H%M%S") + \
+                    f"{now.microsecond // 10000:02d}"
+                # 生成4位随机数
+                random_num = random.randint(1000, 9999)
+                # 组合文件名：20251114175433021_2344.jpg
+                remote_name = f"{timestamp}_{random_num}.png"
+                # 上传到 Supabase 存储
+                response = self.client.storage.from_(bucket).upload(
+                    remote_name,
+                    image_data
+                )
+                # 检查上传是否成功
+                if response:
+                    # 获取文件的公开访问URL
+                    public_url = self.get_file_url(bucket, remote_name)
+                    return public_url
+                else:
+                    return ""
+            else:
+                return ""
+        except Exception as e:
+            return ""
+
 
     def get_file_url(self, bucket: str, file_name: str) -> str:
         """

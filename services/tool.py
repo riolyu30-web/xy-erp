@@ -7,6 +7,7 @@ import uuid  # 导入UUID模块
 import os  # 导入操作系统模块
 from qiniu import Auth, put_file, put_data  # 导入七牛云SDK
 import base64  # 导入base64模块
+from services.supabase_manager import SupabaseManager  
 
 
 def get_ids(data_list, key):
@@ -817,6 +818,9 @@ def set_csv_header(csv_string, column_list):
         print(f"过滤CSV列时发生错误: {str(e)}")
         return ""
 
+def send_supubase(image_content: str,  bucket: str = None)->dict:
+    supabase_manager = SupabaseManager()
+    return supabase_manager.upload_base64(bucket, image_content)
 
 def send_qiniu(image_content: str, filename: str = None) -> dict:
     """

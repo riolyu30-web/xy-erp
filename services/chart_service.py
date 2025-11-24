@@ -31,10 +31,10 @@ def create_bar(data: str, x_axis: str, y_label: str = "数值") -> str:
         y_label=y_label
     )
     # 上传到七牛云
-    result = tool.send_qiniu(chart_data)  # 上传图片
-
-    if result["success"]:  # 上传成功
-        return result['url']  # 打印图片URL
+    # result = tool.send_qiniu(chart_data)  # 上传图片
+    result = tool.send_supubase(chart_data, bucket="xy-erp") # 上传图片
+    if result:  # 上传成功
+        return result  # 打印图片URL
     else:  # 上传失败
         return "上传失败"
 
@@ -56,10 +56,11 @@ def create_pie(data: str, x_axis: str, y_label: str = "占比") -> str:
         y_label=y_label
     )
     # 上传到七牛云
-    result = tool.send_qiniu(chart_data)  # 上传图片
+    # result = tool.send_qiniu(chart_data)  # 上传图片
 
-    if result["success"]:  # 上传成功
-        return result['url']  # 返回图片URL
+    result = tool.send_supubase(chart_data, bucket="xy-erp") # 上传图片
+    if result:  # 上传成功
+        return result  # 打印图片URL
     else:  # 上传失败
         return "上传失败"
 
@@ -85,10 +86,11 @@ def create_line(data: str, x_axis: str, line_labels: str, colors: str = "red;blu
         y_label=y_label
     )
     # 上传到七牛云
-    result = tool.send_qiniu(chart_data)  # 上传图片
+    # result = tool.send_qiniu(chart_data)  # 上传图片
 
-    if result["success"]:  # 上传成功
-        return result['url']  # 返回图片URL
+    result = tool.send_supubase(chart_data, bucket="xy-erp") # 上传图片
+    if result:  # 上传成功
+        return result  # 打印图片URL
     else:  # 上传失败
         return "上传失败"
 

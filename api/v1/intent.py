@@ -302,8 +302,8 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
                     if "name" in response and "arguments" in response:  # 识别到工具调用的参数
                         memory["answer"] = response
                         properties = analyze_tool_arguments(response, tool)
-                        memory["hint"] = get_hint(
-                            intent, properties["has_value"], properties["missing_or_none"])
+                        memory["hint"] =  get_hint(
+                                tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
                         if properties["all_required_filled"]:
                             memory["flag"] = "[comfirm]"
                         else:  # 有参数缺失或为空

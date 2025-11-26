@@ -22,7 +22,7 @@ tools = {
         "hint": "今年是" + datetime.now().strftime("%Y") + "年，"+"本月是"+datetime.now().strftime("%m")+"月",
         "tool": {
             "name": "get_order_data",
-            "description": "你想查询订单数据",
+            "description": "查询订单数据",
                 "parameters": {
                     "type": "object",
                     "properties": {
@@ -40,10 +40,10 @@ tools = {
     },
     "起名": {
         "keywords": ["起名", "取名", "名字", "命名", "叫什么", "姓名",],
-        "hint": "",
+        "hint": "年份没填的话默认" + datetime.now().strftime("%Y") + "年",
         "tool": {
             "name": "naming",
-            "description": "你想根据您的信息起名",
+            "description": "根据您的信息起名",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -70,11 +70,7 @@ tools = {
                     "字数要求": {
                         "type": "string",
                         "description": "单字/双字，默认值NONE",
-                    },
-                    "特殊要求": {
-                        "type": "string",
-                        "description": "偏好，特殊要求，默认值NONE",
-                    },
+                    }
                 },
                 "required": ["姓氏", "性别", "出生日期", "出生时间", "出生城市", "字数要求"]
             }
@@ -166,14 +162,15 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
                     val = tools.get(intent)
                     tool = val.get("tool")
                     #  取memory的tool 新question补充memory的question
+                    new_question = get_tool_call(chat.question, memory, intent)
                     response = dashscope_chat_tool(
-                        tool, get_tool_call(chat.question, memory, intent))
+                        tool, new_question)
                     # 判断是否有tool调用
                     if response:  # 识别到工具调用
                         if "name" in response and "arguments" in response:  # 识别到具调用的参数工
                             if not are_objects_equal(memory["answer"], response):
                                 memory["answer"] = merge_objects(memory["answer"], response)  # 覆盖答案
-                                memory["question"] += "\n修正:"+chat.question  # 累积问题
+                                memory["question"] = new_question
                                 properties = analyze_tool_arguments(
                                     memory["answer"], tool)
                                 memory["hint"] =  get_hint(
@@ -205,7 +202,7 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
                 if response:  # 识别到工具调用
                     if "name" in response and "arguments" in response:  # 识别到工具调用的参数
                         memory["answer"] = response  # 覆盖答案
-                        memory["question"] = memory["question"] # 不要累积问题
+                        # memory["question"] = memory["question"] # 不要累积问题
                         properties = analyze_tool_arguments(response, tool)
                         memory["hint"] =  get_hint(
                             tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
@@ -222,40 +219,49 @@ async def chat_intent(chat: ChatIntentRequest, current_user: dict = Depends(get_
         if intent and flag == "[comfirm]":
             val = tools.get(intent)
             tool = val.get("tool")
-            other_list = ["其他","修改"]
+            other_list = ["其他"]
             reject_list = ["否定","拒绝"]
-            comfirm_list = ["确认", "肯定"]
             comfirm = dashscope_chat_intent(
-                reject_list+comfirm_list+other_list, chat.question)
-            if comfirm in comfirm_list:
-                memory["flag"] = "[function]"
-                return memory
+                reject_list+other_list, chat.question)
             if comfirm in reject_list:
                 memory["flag"] = "[callback]"
                 memory["hint"] = get_talk("您是否要修改信息？可发送过来")
                 return memory
             if comfirm in other_list:
                 comfirm = search_intent_by_keywords(chat.question)
-                if comfirm == None or comfirm == intent:
+                if comfirm == None:
+                    comfirm_list = ["肯定","确认"]
+                    comfirm = dashscope_chat_intent(comfirm_list+other_list, chat.question)
+                    if comfirm in comfirm_list:
+                        memory["flag"] = "[function]"
+                        return memory
+                if comfirm == intent or comfirm == None:
                     val = tools.get(intent)
                     tool = val.get("tool")
                     #  取memory的tool 新question补充memory的question
+                    new_question= get_tool_call(chat.question, memory, intent)
                     response = dashscope_chat_tool(
-                        tool, get_tool_call(chat.question, memory, intent))
+                        tool, new_question)
                     # 判断是否有tool调用
                     if response:  # 识别到工具调用
                         if "name" in response and "arguments" in response:  # 识别到工具调用的参数
-                            memory["answer"] = response  # 覆盖答案
-                            memory["question"] += "\n修正:"+chat.question  # 累积问题
-                            properties = analyze_tool_arguments(
-                                memory["answer"], tool)
-                            memory["hint"] =  get_hint(
-                                tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
-                            if properties["all_required_filled"]:
-                                memory["flag"] = "[comfirm]"
-                            else:  # 有参数缺失或为空
+                            if not are_objects_equal(memory["answer"], response):
+                                memory["answer"] = merge_objects(memory["answer"], response)  # 覆盖答案
+                                memory["answer"] = response  # 覆盖答案
+                                memory["question"] = new_question
+                                properties = analyze_tool_arguments(
+                                    memory["answer"], tool)
+                                memory["hint"] =  get_hint(
+                                    tool.get("description", intent), properties["has_value"], properties["missing_or_none"])
+                                if properties["all_required_filled"]:
+                                    memory["flag"] = "[comfirm]"
+                                else:  # 有参数缺失或为空
+                                    memory["flag"] = "[callback]"
+                                return memory 
+                            else:
+                                memory["answer"] = get_talk("您是否还有要修改信息？可发送过来")
                                 memory["flag"] = "[callback]"
-                            return memory               
+                                return memory               
 
     # 步骤1: 先通过关键词检索快速匹配意图
     memory = {
@@ -392,7 +398,7 @@ def get_hint(intent: str, properties_with_value: dict, properties_missing_or_non
         """.format(intent=intent, properties_with_value=properties_with_value)
     hint = dashscope_chat_block(system_prompt, user_prompt)
     if hint:
-        return hint
+        return "【"+intent+"】"+ hint
     else:
         return ""
 
@@ -406,6 +412,25 @@ def get_talk(answer:str) -> str:
         return hint
     else:
         return ""
+
+
+def get_summer(qustion:str)-> str:
+    system_prompt = """
+    你用一句概况问题，说人话，不要编造新。
+    """
+    hint = dashscope_chat_block(system_prompt, qustion)
+    print(hint)
+    if hint:
+        return hint
+    else:
+        return ""
+
+
+
+
+
+
+
 
 def get_tool_call(question: str, memory: dict, intent: str) -> dict:
     """
@@ -421,7 +446,8 @@ def get_tool_call(question: str, memory: dict, intent: str) -> dict:
         "更新信息": question,
         "辅助信息": hint,
     }
-    return json.dumps(response, ensure_ascii=False)
+    return get_summer(json.dumps(response, ensure_ascii=False))
+    # return json.dumps(response, ensure_ascii=False)
 
 
 def merge_objects(old_obj: dict, new_obj: dict) -> dict:

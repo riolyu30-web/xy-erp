@@ -8,6 +8,158 @@ import os  # 导入操作系统模块
 from qiniu import Auth, put_file, put_data  # 导入七牛云SDK
 import base64  # 导入base64模块
 from services.supabase_manager import SupabaseManager  
+import requests  # 导入requests模块用于HTTP请求
+import json  # 导入json模块用于处理JSON数据
+from services.cache import cache_save  # 导入缓存服务
+from dotenv import load_dotenv  # 从dotenv模块导入load_dotenv函数用于加载环境变量
+# 加载环境变量
+load_dotenv()  # 加载.env文件中的环境变量
+
+# 从环境变量获取配置
+BASE_URL = os.getenv("BASE_URL", "http://192.168.0.156:28002")  # 获取基础URL
+
+
+
+def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_fields, params: dict = None) -> str:
+    """
+    通用工具方法：发送API请求并过滤返回数据中的指定字段
+    
+    Args:
+        name: 缓存名称
+        url: API请求地址
+        data: 请求体数据
+        filtered_fields: 需要保留的字段列表，可以是字符串列表、字典列表或字典
+        params: 请求参数（可选）
+        
+    Returns:
+        dict: 包含过滤后数据的响应对象，数据格式为CSV字符串
+    """
+    try:
+        url = f"{BASE_URL}{url}?access_token={access_token}"
+        # 发送POST请求
+        if params:
+            response = requests.post(url, params=params, json=data)
+        else:
+            response = requests.post(url, json=data)
+            
+        response.raise_for_status()  # 检查请求是否成功
+        
+        # 解析响应数据
+        result = response.json()
+        
+        # 检查响应中是否包含data字段
+        if "data" not in result:
+            return "没有权限"
+        
+        # 提取数据列表
+        data_list = result["data"]
+        
+        
+        #print(json.dumps(data_list[0], ensure_ascii=False))
+        # 仅保留指定字段
+        filtered_list = []
+        for item in data_list:
+            filtered_item = {}
+            
+            # 处理不同类型的filtered_fields
+            if isinstance(filtered_fields, dict):
+                # 如果是字典，使用键作为字段名，值可能是字符串或包含name和value映射的字典
+                for field_key, field_config in filtered_fields.items():
+                    if field_key in item:
+                        # 获取原始值
+                        raw_value = item[field_key]
+                        
+                        # 判断配置类型
+                        if isinstance(field_config, dict):
+                            # 如果是字典配置，获取显示的列名
+                            csv_header = field_config.get("name", field_key)
+                            
+                            # 检查是否有值映射配置
+                            if "value" in field_config and isinstance(field_config["value"], dict):
+                                # 尝试进行值映射，将原始值转为字符串后查找，找不到则用原始值
+                                str_val = str(raw_value).lower() # 统一转小写字符串匹配（针对true/false）
+                                # 这里为了兼容性，可以尝试直接匹配或转字符串匹配
+                                mapping = field_config["value"]
+                                # 优先尝试直接匹配，然后尝试字符串匹配
+                                if raw_value in mapping:
+                                    filtered_item[csv_header] = mapping[raw_value]
+                                elif str_val in mapping:
+                                    filtered_item[csv_header] = mapping[str_val]
+                                else:
+                                    filtered_item[csv_header] = raw_value
+                            else:
+                                # 没有映射配置，直接使用原始值
+                                filtered_item[csv_header] = raw_value
+                        else:
+                            # 如果配置只是字符串，直接作为列名
+                            filtered_item[field_config] = raw_value
+            else:
+                # 如果是列表，处理列表中的每个元素
+                for field in filtered_fields:
+                    if isinstance(field, str):
+                        # 如果是字符串，直接使用作为字段名
+                        if field in item:
+                            filtered_item[field] = item[field]
+                    elif isinstance(field, dict):
+                        # 如果是字典，提取键作为字段名，值作为CSV列名
+                        field_key = next(iter(field.keys()))
+                        csv_header = field[field_key]
+                        if field_key in item:
+                            filtered_item[csv_header] = item[field_key]
+
+             
+            
+            # 遍历原始数据的所有键
+            # 记录已处理过的ID值，避免重复添加具有相同值的ID字段
+            processed_id_values = set()
+            
+            # 先将filtered_item中已有的值加入集合，防止Id字段覆盖已有字段但值相同的情况（可选，视需求而定）
+            # 这里主要处理新增的Id字段之间的重复值
+            
+            for key in item:
+                # 判断键名是否以Id结尾，且值不为空，且值为字符串或数字，且仅包含字母和数字
+                if key.endswith("Id") and item[key] and str(item[key]).isalnum():
+                    val = item[key]
+                    # 如果该值已经在filtered_item的值中出现过，或者在本次循环中已处理过，则跳过
+                    if val in filtered_item.values() or val in processed_id_values:
+                        continue
+                        
+                    # 保留该字段到结果中
+                    filtered_item[key] = val
+                    processed_id_values.add(val)
+
+            filtered_list.append(filtered_item)
+        
+        # 将结果数组转换为DataFrame，然后使用pd_to_csv方法转换为CSV字符串
+        if not filtered_list:
+            return "没有数据"
+        
+        # 创建DataFrame
+        df = pd.DataFrame(filtered_list)
+        
+        # 使用pd_to_csv方法转换为CSV字符串
+        csv_string = pd_to_csv(df)
+        # print(csv_string)
+        
+        if csv_string:
+            print(csv_string.splitlines()[-5:])  # 打印前5行
+            key = f"{name}_{access_token}"
+            if cache_save(key, csv_string): # 缓存数据
+                return key # 返回CSV字符串的第一行
+            else:
+                return "缓存异常"
+        # 返回CSV字符串
+        return "没有数据"
+        
+    except requests.exceptions.RequestException as e:
+        # 处理请求异常
+        return "请求异常"
+    except json.JSONDecodeError as e:
+        # 处理JSON解析异常
+        return "解析异常"
+    except Exception as e:
+        # 处理其他异常
+        return "接口异常"
 
 
 def get_ids(data_list, key):
@@ -253,6 +405,8 @@ def group_and_aggregate(df, group_column, agg_column, agg_function='sum'):
     Returns:
         pd.DataFrame: 分组聚合后的新DataFrame。
     """
+    if group_column == agg_column:
+        return None
     if df is not None and group_column in df.columns and agg_column in df.columns:
         if agg_function == 'sum':
             result = df.groupby(group_column)[agg_column].sum().reset_index()
@@ -268,7 +422,7 @@ def group_and_aggregate(df, group_column, agg_column, agg_function='sum'):
             result = None
         return result
     else:
-        print("输入的DataFrame或列名无效")
+  
         return None
 
 

@@ -30,7 +30,7 @@ order_number: 订单号，默认为空字符串
         create_time_start: 创建开始时间，格式为2025-07-02 00:00:00
         create_time_end: 创建结束时间，格式为2025-07-04 23:59:59
     Returns:
-        result (str): 有效数据的列名清单，表示这些列有数据 / 没有数据
+        table_token(str): 有效数据的表令牌，表示这些列有数据 / 没有数据
     """
     return order_find_all(access_token, order_states, order_number, material_name, customer_short_name, material_classification_name, full_paper_name, create_time_start, create_time_end)
 
@@ -152,9 +152,11 @@ def order_find_all(access_token: str, order_states: str = "", order_number: str 
             csv_str = json_to_csv(data_list, grid_list)
 
             if csv_str:
-                cache_save(access_token, csv_str)
-                header = get_csv_header(csv_str)
-                return header
+                table_token = f"订单表_{access_token}"
+                cache_save(table_token, csv_str)
+                # header = get_csv_header(csv_str)
+                return table_token
+
             return "没有数据"
         else:
             error_msg = response_data.get("msg", "未知错误")

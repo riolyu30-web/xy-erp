@@ -139,14 +139,14 @@ def _convert_to_csv(data) -> str:
         output.close()
 
 
-def cache_save(token: str, data, expire_time: int = 3600) -> bool:
+def cache_save(token: str, data, expire_time: int = 600) -> bool:
     """
     将数据存储到Redis缓存中
 
     Args:
         token: 访问令牌，用作Redis的键
         data: 要缓存的数据
-        expire_time: 过期时间（秒），默认1小时
+        expire_time: 过期时间（秒），默认10分钟
 
     Returns:
         bool: 存储成功返回True，失败返回False

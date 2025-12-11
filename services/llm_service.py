@@ -2,6 +2,7 @@
 import json
 # 导入环境变量处理库
 import os
+from pickletools import read_bytes4
 import re
 from datetime import datetime
 from http import HTTPStatus
@@ -14,6 +15,7 @@ from starlette.concurrency import iterate_in_threadpool
 
 import dashscope  # 导入dashscope SDK
 from dashscope import Generation
+from dashscope import ImageSynthesis
 
 # 导入R模块
 from services.R import log
@@ -292,6 +294,7 @@ async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: st
         bot_response = ""  # 记录已返回的响应内容
         is_tool_call = False  # 标记是否正在进行工具调用
         tool_call_info = {}  # 存储工具调用信息
+
         
         async for response_chunk in iterate_in_threadpool(bot.run(messages)):
             if await request.is_disconnected():
@@ -327,3 +330,35 @@ async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: st
 
     # 返回StreamingResponse
     return StreamingResponse(stream_generator(), media_type="text/event-stream")
+
+
+def dashscope_image_synthesis(prompt: str, model: str = "wan2.5-t2i-preview",size: str = "1024*1024"):
+    """
+    调用大模型进行图片生成
+    Args:
+        prompt: 图片描述提示词
+        model: 使用的模型名称
+    Returns:
+        list: 图片URL列表
+    """
+    # 调用大模型API
+    response = ImageSynthesis.call(
+        model=model,
+        prompt=prompt,
+        negative_prompt="ugly, blurry, lowres, low quality, worst quality, jpeg artifacts, watermark, signature, text, username,bad anatomy, poorly drawn hands, poorly drawn face, extra limbs, extra fingers, missing limbs, disfigured, deformed, malformed hands, long neck, bad proportions",
+        n=1,
+        prompt_extend=True,
+        watermark=False,
+        size=size
+    )
+    # 获取响应内容
+    if response.status_code == HTTPStatus.OK:
+        # 在当前目录下保存图片
+        for result in response.output.results:
+            # API 返回的图片 URL 有 24 小时有效期。生产系统必须在获取 URL 后立即下载图片，并转存至您自己的持久化存储服务中（如阿里云对象存储 OSS）。
+            # file_name = PurePosixPath(unquote(urlparse(result.url).path)).parts[-1]
+            # with open('./%s' % file_name, 'wb+') as f:
+            #    f.write(requests.get(result.url).content)
+            return result.url
+    else:
+        raise HTTPException(status_code=response.status_code, detail="Image synthesis failed")

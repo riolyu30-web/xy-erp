@@ -10,6 +10,9 @@ from datetime import datetime, timedelta
 import uuid
 import random
 import base64  # 导入base64模块
+from urllib.parse import urlparse, unquote
+from pathlib import PurePosixPath
+import requests
 # 加载环境变量
 load_dotenv()
 
@@ -374,6 +377,39 @@ class SupabaseManager:
             return None
 
     # ==================== 文件库方法 ====================
+    def upload_url(self, bucket: str, url: str) -> str:
+        """
+        上传URL到 Supabase 存储
+
+        Args:
+            bucket: 存储桶名称
+            url: 要上传的URL
+
+        Returns:
+            str: 上传成功返回文件的公开访问URL，失败返回空字符串
+        """
+        if not self.client:
+            if not self.connect():
+                return ""
+        try:
+            # 从URL获取文件名
+            file_name = PurePosixPath(unquote(urlparse(url).path)).parts[-1]
+
+            file_content = requests.get(url).content
+            # 上传URL到Supabase存储
+            response = self.client.storage.from_(bucket).upload(
+                file_name,
+                file_content
+            )
+            # 检查上传是否成功
+            if response:
+                # 获取文件的公开访问URL
+                public_url = self.get_file_url(bucket, file_name)
+                return public_url
+            else:
+                return ""
+        except Exception as e:
+            return ""
 
     def upload_file(self, bucket: str, file_path: str) -> str:
         """

@@ -9,6 +9,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "fastapi>=0.121.1",
     "fastmcp>=2.13.1",
+    "jsonlines>=4.0.0",
     "matplotlib>=3.10.7",
     "qiniu>=7.17.0",
     "qwen-agent[mcp]>=0.0.31",

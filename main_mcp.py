@@ -5,6 +5,8 @@ from services.calcu_service import calcu_mcp
 from services.csv_service import csv_mcp
 from services.chart_service import chart_mcp
 from services.admin_service import admin_mcp
+from services.task_service import task_mcp
+from services.finance_service import finance_mcp
 
 
 
@@ -15,6 +17,8 @@ mcp.mount(calcu_mcp, prefix="calcu")
 mcp.mount(csv_mcp, prefix="csv")
 mcp.mount(chart_mcp, prefix="chart")
 mcp.mount(admin_mcp, prefix="admin")
+mcp.mount(task_mcp, prefix="task")
+mcp.mount(finance_mcp, prefix="finance")
 
 
 def main():

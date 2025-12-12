@@ -302,6 +302,7 @@ async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: st
             
             # 获取最新的响应
             new_response = response_chunk[-1]
+
             
             # 检查是否有函数调用
             if "function_call" in new_response:

@@ -172,7 +172,7 @@ def filter_data(token: str, selected_column_list: str) -> str:
         return key  # 返回成功
     return "error"  # 返回错误信息
 
-#@csv_mcp.tool()
+@csv_mcp.tool()
 def merge_data(token1: str, token2: str ) -> str:
     """
     合并两个表的数据，用于多维度交叉分析

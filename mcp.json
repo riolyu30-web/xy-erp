@@ -1,0 +1,81 @@
+{
+    "mcp": [
+        {
+            "service_name": "admin",
+            "relations": [
+                {
+                    "table_left": "员工表",
+                    "table_right": "部门表",
+                    "key_left": "部门ID",
+                    "key_right": "部门ID",
+                    "remark": "若需查询部门下员工"
+                }
+            ],
+            "tools": [
+                {
+                    "api_name": "/staff/findList",
+                    "request": {
+                        "staffClazz": "STAFF",
+                        "groupDefaultType": "TEAM"
+                    },
+                    "response": {
+                        "staffDepartmentId": {
+                            "meaning": "员工部门_id",
+                            "associated_table": "部门表",
+                            "associated_field": "groupId",
+                            "remark": "关联到部门表，表示员工所属部门",
+                            "name": "部门ID"
+                        },
+                        "staffFullName": {
+                            "meaning": "员工员工全名",
+                            "name": "名字"
+                        },
+                        "staffPostId": {
+                            "meaning": "员工岗位_id",
+                            "associated_table": "岗位表",
+                            "associated_field": "roleId",
+                            "remark": "关联到岗位表，表示员工所属岗位",
+                            "name": "岗位_id"
+                        },
+                        "staffSex": {
+                            "meaning": "员工性别",
+                            "is_dict": true,
+                            "values": {
+                                "1": "男",
+                                "2": "女",
+                                "3": "中性别"
+                            },
+                            "name": "性别"
+                        }
+                    },
+                    "name": "员工表",
+                    "function_name": "find_all_staff",
+                    "prefix": "员工",
+                    "remark": "获取所有员工信息"
+                },
+                {
+                    "api_name": "/group/findList",
+                    "request": {
+                        "groupClazz": "XY_USERCENTER_GROUP",
+                        "groupDefaultType": "DEPARTMENT"
+                    },
+                    "response": {
+                        "groupId": {
+                            "meaning": "ID",
+                            "is_primary": true,
+                            "name": "部门ID"
+                        },
+                        "groupName": {
+                            "meaning": "智能节点名",
+                            "name": "部门名字"
+                        }
+                    },
+                    "name": "部门表",
+                    "function_name": "find_department",
+                    "prefix": "部门",
+                    "remark": "获取所有部门信息"
+                }
+            ]
+        }
+    ]
+}

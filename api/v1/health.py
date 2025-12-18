@@ -4,7 +4,7 @@
 from fastapi import APIRouter, Request, Depends # 导入FastAPI模块
 from api.v1.dependencies import get_current_user,get_supabase_manager # 导入共享的认证依赖
 from api.v1.models import QuestionRequest # 导入请求模型
-from services.llm_service import dashscope_chat_stream # 导入LLM服务
+from services.llm_manager import dashscope_chat_stream # 导入LLM服务
 from services.supabase_manager import SupabaseManager # 导入Supabase管理器
 
 # 创建路由器实例

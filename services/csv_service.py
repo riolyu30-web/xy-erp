@@ -7,52 +7,46 @@ csv_mcp = FastMCP(name="csv")  # 创建计算服务MCP实例
 
 
 @csv_mcp.tool()
-def get_data(token: str) -> str:
+def get_data(token: str) -> dict:
     """
     获取所有行，仅保留有效字段，用于最终数据分析
     Args:
         token: 表令牌或结果令牌   
     Returns:
-        result(str): 当前计算的结果CSV格式。
+        success: 成功返回所有有效数据行/ error: 失败原因
     """
     data_list = cache_load(token)  # 从缓存加载数据     
     if not data_list:  # 检查数据是否存在
-        return "error"  # 返回错误信息   
-    # 过滤CSV列，只保留非英文字母和数字组成的列名
-    
-    if data_list:
-        df = tool.csv_to_pd(data_list)
-        # 筛选列名：仅保留由非英文字母和数字组成的列
-        filtered_columns = [col for col in df.columns if not (str(col).isalnum() and str(col).isascii())]
-        df = df[filtered_columns]
-        data_list = tool.pd_to_csv(df)
-    
-    return data_list  # 转换为CSV格式返回
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息   
+    else:
+        lines = data_list.splitlines()  # 按行分割数据
+        if "结果" in token:
+            count = len(lines) - 1  # 计算有效数据行            
+            if count > 0:
+                return "\n".join(lines[:30]) # 返回有效数据样本
+            else:
+                return {"error": "结果数据为空"}  # 返回错误信息
+        else:
+            return {"sample": "\n".join(lines[:5])}  # 5条有效字段数据样本
+
 
 @csv_mcp.tool()
-def get_sample(token: str) -> str:
+def get_sample(token: str) -> dict:
     """
     获取全部字段与前三条数据样本，用于确认字段是否正确
     Args:
         token: 表令牌或结果令牌   
     Returns:
-        result(str): 当前计算的结果CSV格式样本
+        success: 成功返回所有有效字段数据样本/ error: 失败原因
     """
     data_list = cache_load(token)  # 从缓存加载数据
     if not data_list:  # 检查数据是否存在
-        return "error"  # 返回错误信息   
-    # 过滤CSV列，只保留非英文字母和数字组成的列名
-    
-    if data_list:
-        lines = data_list.splitlines()
-        if len(lines) > 3:
-            lines = lines[:3]
-        data_list = "\n".join(lines)
-    
-    return data_list  # 转换为CSV格式返回
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息
+    else:
+        return {"sample": "\n".join(data_list.splitlines()[:5])}  # 5条有效字段数据样本 
 
 @csv_mcp.tool()
-def group_aggregate(token: str, group_column: str, agg_column: str, agg_function: str = "sum") -> str:
+def group_aggregate(token: str, group_column: str, agg_column: str, agg_function: str = "sum") -> dict:
     """
     按指定列分组并对另一列进行聚合计算。
     Args:
@@ -61,11 +55,11 @@ def group_aggregate(token: str, group_column: str, agg_column: str, agg_function
         agg_column (str): 聚合列名。
         agg_function (str): 聚合函数,可选值,sum, mean, count, min, max。
     Returns:
-        result_token: 成功返回分组聚合结果令牌/ error失败
+        success: 成功返回分组聚合结果令牌/ error: 失败原因
     """
     data_list = cache_load(token)  # 从缓存加载数据
     if not data_list:  # 检查数据是否存在
-        return "error"  # 返回错误信息
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息
     df = tool.csv_to_pd(data_list)  # 将CSV字符串转换为DataFrame
     result_df = tool.group_and_aggregate(
         df, group_column, agg_column, agg_function)  # 执行分组聚合
@@ -73,12 +67,12 @@ def group_aggregate(token: str, group_column: str, agg_column: str, agg_function
         csv_result = tool.pd_to_csv(result_df)  # 将DataFrame转换为CSV字符串
         key = "分组聚合结果_" + token
         cache_save(key, csv_result)  # 缓存保存结果
-        return key
-    return "error"  # 返回错误信息
+        return {"success": key}  # 返回分组聚合结果令牌
+    return {"error": "分组聚合失败"}  # 返回错误信息
 
 
 @csv_mcp.tool()
-def add_operation_column(token: str, col1: str, col2: str, operation: str = "+") -> str:
+def add_operation_column(token: str, col1: str, col2: str, operation: str = "+") -> dict:
     """
     计算两列之间的运算并添加新列。
     Args:
@@ -87,11 +81,11 @@ def add_operation_column(token: str, col1: str, col2: str, operation: str = "+")
         col2 (str): 第二列名。
         operation (str): 运算符，可选值：+, -, *, /。
     Returns:
-        result_token: 成功返回运算结果令牌/ error失败
+        success: 成功返回运算结果令牌/ error: 失败原因
     """
     data_list = cache_load(token)  # 从缓存加载数据
     if not data_list:  # 检查数据是否存在
-        return "error"  # 返回错误信息
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息
     df = tool.csv_to_pd(data_list)  # 将CSV字符串转换为DataFrame
     result_df = tool.calculate_columns_operation(
         df, col1, col2, operation)  # 执行列运算
@@ -99,35 +93,35 @@ def add_operation_column(token: str, col1: str, col2: str, operation: str = "+")
         csv_result = tool.pd_to_csv(result_df)  # 将DataFrame转换为CSV字符串
         key = "运算结果_" + token
         cache_save(key, csv_result)  # 缓存保存结果
-        return key
-    return "error"  # 返回错误信息
+        return {"success": key}  # 返回运算结果令牌
+    return {"error": "运算失败"}  # 返回错误信息
 
 
 @csv_mcp.tool()
-def add_ratio_column(token: str, target_column: str) -> str:
+def add_ratio_column(token: str, target_column: str) -> dict:
     """
     计算某列的占比并添加新列。
     Args:
         token: 表令牌
         target_column (str): 目标列名。
     Returns:
-        result_token: 成功返回占比结果令牌/ error失败
+        success: 成功返回占比结果令牌/ error: 失败原因
     """
     data_list = cache_load(token)  # 从缓存加载数据
     if not data_list:  # 检查数据是否存在
-        return "error"  # 返回错误信息
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息
     df = tool.csv_to_pd(data_list)  # 将CSV字符串转换为DataFrame
     result_df = tool.calculate_ratio(df, target_column)  # 执行比例计算
     if result_df is not None:  # 检查结果是否有效
         csv_result = tool.pd_to_csv(result_df)  # 将DataFrame转换为CSV字符串
         key = "占比结果_" + token
         cache_save(key, csv_result)  # 缓存保存结果
-        return key
-    return "error"  # 返回错误信息
+        return {"success": key}  # 返回占比结果令牌
+    return {"error": "占比计算失败"}  # 返回错误信息
 
 
 @csv_mcp.tool()
-def sort_data(token: str, column_name: str, ascending: bool = True) -> str:
+def sort_data(token: str, column_name: str, ascending: bool = True) -> dict:
     """
     按指定列对数据进行排序。
     Args:
@@ -158,89 +152,54 @@ def filter_data(token: str, selected_column_list: str) -> str:
         token: 表令牌/结果令牌
         selected_column_list (str): 选择保留的列名列表,用,隔开,例如:审核状态,订单状态,订单号
     Returns:
-        result_token: 成功返回合并后的结果令牌/ error失败
+        success: 成功返回过滤后的结果令牌/ error: 失败原因
     """
     data_csv = cache_load(token)  # 从缓存加载CSV数据             
     if not data_csv or selected_column_list == "":  # 检查数据是否存在
-        return "error"  # 返回错误信息
+        return {"error": "数据不存在或未指定列名"}  # 返回错误信息
     column_list = selected_column_list.split(",")  # 转换为列表
     # 调用工具函数过滤CSV列
     filtered_csv = tool.set_csv_header(data_csv, column_list)
     if filtered_csv:  # 检查过滤结果是否有效
         key = "过滤结果_" + token
         cache_save(key, filtered_csv)  # 缓存保存过滤后的结果
-        return key  # 返回成功
-    return "error"  # 返回错误信息
+        return {"success": key}  # 返回成功
+    return {"error":"过滤数据失败,请尝试其他接口"}  # 返回错误信息  
 
 @csv_mcp.tool()
-def merge_data(token1: str, token2: str ) -> str:
+def merge_data(token_left: str, token_right: str,key_left: str,key_right: str) -> str:
     """
     合并两个表的数据，用于多维度交叉分析
     Args:
-        token1: 第一个表令牌/结果令牌，主表
-        token2: 第二个表令牌/结果令牌，从表
+        token_left: 主表令牌/结果令牌
+        token_right: 从表令牌/结果令牌
+        key_left: 主表关联键列名
+        key_right: 从表关联键列名
     Returns:
-        result_token: 成功返回合并后的结果令牌/ error失败
+        success: 成功返回合并后的结果令牌/ error: 失败原因
     """
-    data_csv1 = cache_load(token1)  # 从缓存加载第一个表的CSV数据
-    data_csv2 = cache_load(token2)  # 从缓存加载第二个表的CSV数据
-    if not data_csv1 or not data_csv2:  # 检查数据是否存在
-        return "error"  # 返回错误信息
+    data_csv1 = cache_load(token_left) 
+    if not data_csv1:  # 检查数据是否存在
+        return {"error":"主表数据不存在，请提供其他主表令牌"}  # 返回错误信息
+    data_csv2 = cache_load(token_right)  # 从缓存加载第二个表的CSV数据
+    if not data_csv2:  # 检查数据是否存在
+        return {"error":"从表数据不存在，请提供其他从表令牌"}  # 返回错误信息
     df1 = tool.csv_to_pd(data_csv1)  # 将第一个表的CSV字符串转换为DataFrame
     df2 = tool.csv_to_pd(data_csv2)  # 将第二个表的CSV字符串转换为DataFrame
-    
-    # 自动推断关联键并合并
-    sample_size = 10
-    d1 = df1.sample(min(sample_size, len(df1))) if len(df1) > sample_size else df1 
-    d2 = df2.sample(min(sample_size, len(df2))) if len(df2) > sample_size else df2 
- 
-    # 暴力比对每一列的内容 
-    possible_matches = [] 
-    for c1 in d1.columns: 
-        # 跳过全是空的列 
-        if d1[c1].dtype == object or pd.api.types.is_numeric_dtype(d1[c1]): 
-            # 跳出不是Id结尾的列，或包含特定关键词的列
-            if not c1.endswith("Id") or "Updater" in c1 or "Creator" in c1 or "Tenant" in c1 or "Parent" in c1:
-                continue
 
-            set1 = set(d1[c1].dropna().astype(str)) 
-            if not set1: continue 
-            
-            for c2 in d2.columns: 
-                # 跳出不是Id结尾的列，或包含特定关键词的列
-                if not c2.endswith("Id") or "Updater" in c2 or "Creator" in c2 or "Tenant" in c2 or "Parent" in c2:
-                    continue
+     # 使用找到的最佳关联键进行合并，使用左连接保留主表数据
+    df = pd.merge(df1, df2, left_on=key_left, right_on=key_right, how='left')
+    df = df.dropna(axis='columns', how='all') # 删除所有值都为空的列  
+    if df.empty:
+        return {"error": "没有数据，请尝试其他接口"}
 
-                set2 = set(d2[c2].dropna().astype(str)) 
-                if not set2: continue 
-                
-                # 计算交集（重合的部分） 
-                intersection = len(set1 & set2) 
-                # 如果重合度很高（比如超过较小集合的 50%） 
-                if intersection > 0: 
-                    ratio = intersection / min(len(set1), len(set2)) 
-                    if ratio > 0.5: # 门槛可以自己调，0.5代表有一半数据是对得上的 
-                        possible_matches.append({ 
-                            "left_on": c1, 
-                            "right_on": c2, 
-                            "ratio": ratio
-                        }) 
-    
-    # 执行合并
-    if possible_matches:
-        # 按重合度排序取最佳匹配
-        best_match = sorted(possible_matches, key=lambda x: x['ratio'], reverse=True)[0]
-        print(possible_matches)
-        # 使用找到的最佳关联键进行合并，使用左连接保留主表数据
-        df = pd.merge(df1, df2, left_on=best_match['left_on'], right_on=best_match['right_on'], how='left')
-     
-        csv_string = tool.pd_to_csv(df)
+    csv_string = tool.pd_to_csv(df)
 
-        if csv_string:
-            # 构造新的 key
-            key = f"合并结果_{token1}"          
-            if cache_save(key, csv_string):
-                return key # 返回生成的 key
+    if csv_string:
+        # 构造新的 key
+        key = f"合并结果_{token_left}"          
+        if cache_save(key, csv_string):
+            return {"success": key} # 返回生成的 key
     else:
-        return "error"
+        return {"error":"合并数据失败,请尝试其他接口"}
 

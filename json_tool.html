@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 设置文档语言为中文 -->
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8 -->
+    <title>JSON 配置工具</title>
+    <!-- 设置页面标题 -->
+    <style>
+        /* 页面整体样式 */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background-color: #f4f4f9; }
+        /* 容器样式 */
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        /* 标题样式 */
+        h1, h2, h3 { color: #333; }
+        /* 表单组样式 */
+        .form-group { margin-bottom: 15px; }
+        /* 标签样式 */
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        /* 输入框和文本域样式 */
+        input[type="text"], textarea, select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        /* 按钮样式 */
+        button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        /* 按钮悬停样式 */
+        button:hover { background-color: #0056b3; }
+        /* 响应字段列表样式 */
+        .response-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .response-table th, .response-table td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 14px; }
+        .response-table th { background-color: #f2f2f2; }
+        .response-table input[type="text"] { width: 100%; border: 1px solid #eee; }
+        
+        /* 字典值弹窗样式 */
+        .dict-modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 1000; width: 400px; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; }
+
+        /* 响应项头部样式 */
+        .item-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        /* 网格布局样式 */
+        .grid-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        /* 顶部操作栏样式 */
+        .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        /* 删除按钮样式 */
+        .btn-delete { background-color: #dc3545; padding: 5px 10px; font-size: 0.9em; }
+        /* 添加按钮样式 */
+        .btn-add { background-color: #28a745; margin-top: 5px; }
+        
+        /* Tab样式 */
+        .tabs { display: flex; border-bottom: 1px solid #ddd; margin-bottom: 20px; overflow-x: auto; }
+        .tab-btn { padding: 10px 20px; cursor: pointer; background: #f1f1f1; border: 1px solid #ddd; border-bottom: none; margin-right: 5px; border-radius: 5px 5px 0 0; white-space: nowrap; display: flex; align-items: center; }
+        .tab-btn.active { background: white; border-bottom: 1px solid white; font-weight: bold; position: relative; top: 1px; }
+        .tab-btn:hover { background: #e9ecef; }
+        .tab-close { margin-left: 8px; font-size: 12px; color: #666; cursor: pointer; padding: 0 4px; }
+        .tab-close:hover { color: red; background: #ddd; border-radius: 50%; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* 字典按钮样式 */
+        .btn-dict { background-color: #6c757d; color: white; padding: 2px 5px; font-size: 12px; }
+        .btn-dict-active { background-color: #28a745; color: white; padding: 2px 5px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 主容器 -->
+        <div class="top-bar">
+            <!-- 顶部操作栏 -->
+            <h1>JSON 配置生成器</h1>
+            <!-- 页面主标题 -->
+            <button onclick="generateJson()">生成并下载 JSON</button>
+            <!-- 生成按钮 -->
+        </div>
+
+        <div class="form-group">
+            <!-- 分类名称组 -->
+            <label>Service Name (服务名称)</label>
+            <!-- 标签 -->
+            <input type="text" id="serviceName" value="test">
+            <!-- 输入框 -->
+        </div>
+
+        <div class="form-group">
+            <!-- 文件上传组 -->
+            <label>导入新文件 (支持 .txt, .json) - 每次导入会新增一个 Tab</label>
+            <!-- 标签说明 -->
+            <input type="file" id="fileInput" accept=".txt,.json" onchange="handleFileSelect(this)">
+            <!-- 文件输入框 -->
+        </div>
+
+        <hr>
+        <!-- 分割线 -->
+
+        <h3>Relations (全局关联表 - 选填)</h3>
+        <div id="globalRelationList"></div>
+        <button class="btn-add" onclick="addGlobalRelation()" style="margin-bottom: 20px;">+ 添加关联表</button>
+
+        <div class="tabs" id="tabsHeader">
+            <!-- Tab头部容器 -->
+        </div>
+
+        <div id="tabsContent">
+            <!-- Tab内容容器 -->
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="dict-modal" id="dictModal">
+        <h3>关联字典</h3>
+        <textarea id="modalDictJson" rows="10" style="width:100%;"></textarea>
+        <div style="margin-top:10px; text-align:right;">
+            <button onclick="closeDictModal()">取消</button>
+            <button onclick="saveDictModal()" style="background-color:#28a745;">保存</button>
+        </div>
+    </div>
+
+    <script>
+        let toolsData = []; // 存储所有导入的工具数据
+        let currentDictBtn = null;
+        let tabCounter = 0;
+
+        function handleFileSelect(input) {
+            // 处理文件选择
+            const file = input.files[0];
+            // 获取文件对象
+            if (!file) return;
+            // 如果没有文件则返回
+
+            const reader = new FileReader();
+            // 创建文件读取器
+            reader.onload = function(e) {
+                // 读取完成回调
+                try {
+                    // 尝试解析
+                    const jsonStr = e.target.result;
+                    let sourceData = null;
+                    // 获取文件内容
+                    try {
+                        sourceData = JSON.parse(jsonStr);
+                        // 尝试标准JSON解析
+                    } catch (e1) {
+                        console.log('标准JSON解析失败，尝试宽松解析', e1);
+                        // 如果失败，尝试使用 Function 构造函数解析（支持尾随逗号、单引号等）
+                        // 注意：这相当于 eval，但在本地工具场景下通常是可接受的
+                        sourceData = new Function('return ' + jsonStr)();
+                    }
+                    
+                    // 处理全局 Relations
+                    if (sourceData.relations && Array.isArray(sourceData.relations)) {
+                        document.getElementById('globalRelationList').innerHTML = ''; // 清空现有
+                        sourceData.relations.forEach(r => addGlobalRelation(r));
+                    }
+                    
+                    if (sourceData.service_name) {
+                        document.getElementById('serviceName').value = sourceData.service_name;
+                    }
+
+                    // 处理 Tools (Tabs)
+                    if (sourceData.tools && Array.isArray(sourceData.tools)) {
+                        sourceData.tools.forEach(tool => {
+                            addTab(tool.name || tool.alias_name || tool.function_name || 'Tool', tool);
+                        });
+                    } else {
+                        // 兼容旧模式：整个文件是一个Tool
+                        addTab(file.name, sourceData);
+                    }
+                    
+                    // 清空文件选择，以便重复选择同一文件
+                    input.value = '';
+                } catch (err) {
+                    // 捕获错误
+                    alert('JSON解析失败: ' + err.message);
+                    // 提示错误
+                }
+            };
+            reader.readAsText(file);
+            // 读取文件文本
+        }
+
+        function addTab(fileName, data) {
+            const tabId = 'tab-' + (++tabCounter);
+            
+            // 添加 Tab 按钮
+            const tabBtn = document.createElement('div');
+            tabBtn.className = 'tab-btn active';
+            tabBtn.dataset.tabId = tabId;
+            tabBtn.innerHTML = `
+                ${fileName}
+                <span class="tab-close" onclick="removeTab('${tabId}', event)">✕</span>
+            `;
+            tabBtn.onclick = (e) => {
+                if(!e.target.classList.contains('tab-close')) switchTab(tabId);
+            };
+            
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('tabsHeader').appendChild(tabBtn);
+
+            // 添加 Tab 内容
+            const tabContent = document.createElement('div');
+            tabContent.className = 'tab-content active';
+            tabContent.id = tabId;
+            
+            // 生成内容HTML
+            tabContent.innerHTML = generateTabContentHtml(tabId, data);
+            
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById('tabsContent').appendChild(tabContent);
+            
+            // 渲染该Tab的响应字段
+            renderResponseFields(tabId, data.response);
+
+            // 渲染 Filter 列表
+            if (data.filter && Array.isArray(data.filter)) {
+                data.filter.forEach(f => addFilter(tabId, f));
+            } else if (data.filter && typeof data.filter === 'object') {
+                // 兼容旧的单一对象格式
+                 addFilter(tabId, data.filter);
+            }
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.tabId === tabId);
+            });
+            document.querySelectorAll('.tab-content').forEach(c => {
+                c.classList.toggle('active', c.id === tabId);
+            });
+        }
+
+        function removeTab(tabId, event) {
+            event.stopPropagation();
+            const btn = document.querySelector(`.tab-btn[data-tab-id="${tabId}"]`);
+            const content = document.getElementById(tabId);
+            
+            if (btn.classList.contains('active')) {
+                // 如果删除的是当前激活的tab，尝试激活前一个或后一个
+                const sibling = btn.previousElementSibling || btn.nextElementSibling;
+                if (sibling) {
+                    switchTab(sibling.dataset.tabId);
+                }
+            }
+            
+            btn.remove();
+            content.remove();
+        }
+
+        function generateTabContentHtml(tabId, data) {
+            const requestJson = data.request ? JSON.stringify(data.request, null, 4) : '{}';
+            
+            return `
+                <div id="toolConfig-${tabId}">
+                    <div class="grid-row">
+                        <div class="form-group">
+                            <label>API Name (接口名称 - 必填)</label>
+                            <input type="text" class="tab-api-name" value="${data.api_name || ''}">
+                        </div>
+                        <div class="form-group">
+                            <label>Function Name (方法名称)</label>
+                            <input type="text" class="tab-function-name" value="${data.function_name || ''}">
+                        </div>
+                        <div class="form-group">
+                            <label>Name (名称)</label>
+                            <input type="text" class="tab-alias-name" value="${data.name || data.alias_name || ''}">
+                        </div>
+                    </div>
+
+                    <div class="grid-row">
+                        <div class="form-group">
+                            <label>Prefix (前缀 - 选填)</label>
+                            <input type="text" class="tab-prefix" value="${data.prefix || ''}">
+                        </div>
+                        <div class="form-group">
+                            <label>Remark (方法备注)</label>
+                            <input type="text" class="tab-remark" value="${data.remark || ''}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Request (静态请求参数 - JSON格式 - 选填)</label>
+                        <textarea class="tab-request-json" rows="5">${requestJson}</textarea>
+                    </div>
+
+                    <h3>Filter (过滤条件 - 选填)</h3>
+                    <div class="tab-filter-list" id="filterList-${tabId}"></div>
+                    <button class="btn-add" onclick="addFilter('${tabId}')">+ 添加过滤条件</button>
+
+                    <h3>OrderBys (排序条件 - 选填)</h3>
+                    <div class="tab-order-list" id="orderList-${tabId}"></div>
+                    <button class="btn-add" onclick="addOrder('${tabId}')">+ 添加排序规则</button>
+
+                    <h3>Response (响应参数配置)</h3>
+                    <table class="response-table">
+                        <thead>
+                            <tr>
+                                <th width="5%"><input type="checkbox" onchange="toggleAll(this, '${tabId}')"></th>
+                                <th width="15%">Key</th>
+                                <th width="15%">Name (显示名称-必填)</th>
+                                <th width="20%">Meaning (含义)</th>
+                                <th width="15%">Remark (备注)</th>
+                                <th width="10%">关联字典</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tab-response-list" id="responseList-${tabId}"></tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function renderResponseFields(tabId, responseData) {
+            // 为指定选项卡渲染表格中的响应字段
+            const container = document.getElementById(`responseList-${tabId}`);
+            // 获取响应列表的容器元素
+            container.innerHTML = '';
+            // 清空容器当前HTML内容
+
+            if (!responseData) return;
+            // 如果没有响应数据，则退出函数
+
+            for (const key in responseData) {
+                // 遍历响应数据对象中的每个键
+                const item = responseData[key];
+                // 获取当前键的项目对象
+                const tr = document.createElement('tr');
+                // 创建一个新的表格行元素
+                tr.dataset.key = key;
+                // 在行上使用键设置数据属性
+
+                const isPrimaryChecked = item.is_primary ? 'checked' : '';
+                // 检查项目是否为主键，并相应地设置选中状态
+                
+                const dictValues = item.values ? JSON.stringify(item.values) : '';
+                const btnClass = (item.values && Object.keys(item.values).length > 0) ? 'btn-dict-active' : 'btn-dict';
+
+                tr.innerHTML = `
+                    <td style="text-align:center;"><input type="checkbox" class="field-select" ${isPrimaryChecked}></td>
+                    <td>${key}</td>
+                    <td><input type="text" class="field-name" value="${item.name || ''}"></td>
+                    <td><input type="text" class="field-meaning" value="${item.meaning || ''}"></td>
+                    <td><input type="text" class="field-remark" value="${item.remark || ''}"></td>
+                    <td style="text-align:center;">
+                        <button class="${btnClass}" onclick="openDictModal(this)">关联字典</button>
+                        <input type="hidden" class="dict-json" value='${dictValues}'>
+                    </td>
+                `;
+                // 使用字段数据设置表格行的内部HTML
+                container.appendChild(tr);
+                // 将新行附加到容器中
+            }
+        }
+
+        function addOrder(tabId) {
+            const div = document.createElement('div');
+            div.className = 'grid-row form-group order-item';
+            div.innerHTML = `
+                <div><input type="text" placeholder="Field" class="order-field"></div>
+                <div>
+                    <select class="order-type">
+                        <option value="ASC">ASC</option>
+                        <option value="DESC">DESC</option>
+                    </select>
+                </div>
+                <div><button class="btn-delete" onclick="this.closest('.order-item').remove()">删除</button></div>
+            `;
+            document.getElementById(`orderList-${tabId}`).appendChild(div);
+        }
+
+        function addGlobalRelation(data = {}) {
+            const div = document.createElement('div');
+            div.className = 'grid-row form-group relation-item';
+            div.innerHTML = `
+                <div class="form-group"><label>Left Table</label><input type="text" class="rel-table-left" value="${data.table_left || ''}"></div>
+                <div class="form-group"><label>Right Table</label><input type="text" class="rel-table-right" value="${data.table_right || ''}"></div>
+                <div class="form-group"><label>Left Key</label><input type="text" class="rel-key-left" value="${data.key_left || ''}"></div>
+                <div class="form-group"><label>Right Key</label><input type="text" class="rel-key-right" value="${data.key_right || ''}"></div>
+                <div class="form-group"><label>Remark</label><input type="text" class="rel-remark" value="${data.remark || ''}"></div>
+                <div style="display:flex; align-items:flex-end; padding-bottom:15px;">
+                    <button class="btn-delete" onclick="this.closest('.relation-item').remove()">删除</button>
+                </div>
+            `;
+            document.getElementById('globalRelationList').appendChild(div);
+        }
+
+        function addFilter(tabId, data = {}) {
+            const div = document.createElement('div');
+            div.className = 'grid-row form-group filter-item';
+            div.innerHTML = `
+                <div class="form-group"><label>Field</label><input type="text" class="filter-field" value="${data.field || ''}"></div>
+                <div class="form-group"><label>Format</label><input type="text" class="filter-format" value="${data.format || ''}"></div>
+                <div class="form-group"><label>Remark</label><input type="text" class="filter-remark" value="${data.remark || ''}"></div>
+                <div style="display:flex; align-items:flex-end; padding-bottom:15px;">
+                    <button class="btn-delete" onclick="this.closest('.filter-item').remove()">删除</button>
+                </div>
+            `;
+            document.getElementById(`filterList-${tabId}`).appendChild(div);
+        }
+
+        function toggleAll(source, tabId) {
+            const container = document.getElementById(`responseList-${tabId}`);
+            const checkboxes = container.querySelectorAll('.field-select');
+            checkboxes.forEach(cb => cb.checked = source.checked);
+        }
+
+        function openDictModal(btn) {
+            currentDictBtn = btn;
+            const hiddenInput = btn.nextElementSibling;
+            let jsonStr = hiddenInput.value;
+            if (!jsonStr) jsonStr = '{\n    "false": "否",\n    "true": "是"\n}';
+            else {
+                try {
+                    const obj = JSON.parse(jsonStr);
+                    jsonStr = JSON.stringify(obj, null, 4);
+                } catch(e) {}
+            }
+            document.getElementById('modalDictJson').value = jsonStr;
+            document.getElementById('modalOverlay').style.display = 'block';
+            document.getElementById('dictModal').style.display = 'block';
+        }
+
+        function closeDictModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('dictModal').style.display = 'none';
+            currentDictBtn = null;
+        }
+
+        function saveDictModal() {
+            if (!currentDictBtn) return;
+            const jsonStr = document.getElementById('modalDictJson').value;
+            try {
+                const obj = JSON.parse(jsonStr);
+                const hiddenInput = currentDictBtn.nextElementSibling;
+                hiddenInput.value = jsonStr;
+                
+                // 更新按钮样式
+                if (obj && Object.keys(obj).length > 0) {
+                    currentDictBtn.className = 'btn-dict-active';
+                } else {
+                    currentDictBtn.className = 'btn-dict';
+                }
+                
+                closeDictModal();
+            } catch (e) {
+                alert('JSON格式错误: ' + e.message);
+            }
+        }
+
+        function generateJson() {
+            const tabs = document.querySelectorAll('.tab-content');
+            if (tabs.length === 0) { alert('请至少导入一个文件'); return; }
+
+            const result = {
+                service_name: document.getElementById('serviceName').value,
+                relations: [],
+                tools: []
+            };
+
+            // 收集全局 Relations
+            document.querySelectorAll('#globalRelationList .relation-item').forEach(row => {
+                const tableLeft = row.querySelector('.rel-table-left').value;
+                const tableRight = row.querySelector('.rel-table-right').value;
+                const keyLeft = row.querySelector('.rel-key-left').value;
+                const keyRight = row.querySelector('.rel-key-right').value;
+                const remark = row.querySelector('.rel-remark').value;
+
+                if (tableLeft && tableRight) {
+                    const relation = {
+                        table_left: tableLeft,
+                        table_right: tableRight,
+                        key_left: keyLeft,
+                        key_right: keyRight
+                    };
+                    if (remark) relation.remark = remark;
+                    result.relations.push(relation);
+                }
+            });
+
+            tabs.forEach(tabContent => {
+                const funcName = tabContent.querySelector('.tab-function-name').value;
+                if (!funcName) {
+                    alert('Function Name (方法名称) 是必填项');
+                    throw new Error('Missing function_name');
+                }
+
+                const tool = {
+                    function_name: funcName,
+                    name: tabContent.querySelector('.tab-alias-name').value,
+                    api_name: tabContent.querySelector('.tab-api-name').value,
+                    remark: tabContent.querySelector('.tab-remark').value,
+                    request: {},
+                    filter: [],
+                    orderBys: [],
+                    response: {}
+                };
+
+                const prefix = tabContent.querySelector('.tab-prefix').value;
+                if (prefix) tool.prefix = prefix;
+
+                try {
+                    tool.request = JSON.parse(tabContent.querySelector('.tab-request-json').value || '{}');
+                } catch (e) {
+                    alert('Request JSON 格式错误');
+                    return;
+                }
+
+                // 收集 Filter
+                tabContent.querySelectorAll('.filter-item').forEach(row => {
+                    const field = row.querySelector('.filter-field').value;
+                    if (field) {
+                        const filterItem = {
+                            field: field
+                        };
+                        const format = row.querySelector('.filter-format').value;
+                        if (format) filterItem.format = format;
+                        const remark = row.querySelector('.filter-remark').value;
+                        if (remark) filterItem.remark = remark;
+                        
+                        tool.filter.push(filterItem);
+                    }
+                });
+
+                tabContent.querySelectorAll('.order-item').forEach(row => {
+                    const field = row.querySelector('.order-field').value;
+                    if (field) {
+                        tool.orderBys.push({
+                            field: field,
+                            order: row.querySelector('.order-type').value
+                        });
+                    }
+                });
+
+                tabContent.querySelectorAll('.tab-response-list tr').forEach(item => {
+                    const checkbox = item.querySelector('.field-select');
+                    if (!checkbox.checked) return;
+
+                    const key = item.dataset.key;
+                    const fieldData = {
+                        meaning: item.querySelector('.field-meaning').value,
+                    };
+
+                    let name = item.querySelector('.field-name').value;
+                    // 获取 Name 输入框的值
+                    if (!name) {
+                        // 如果 Name 为空，自动生成
+                        const meaningVal = fieldData.meaning;
+                        // 获取 Meaning 的值
+                        if (prefix && meaningVal && meaningVal.startsWith(prefix)) {
+                            // 如果 Prefix 有值且 Meaning 以 Prefix 开头
+                            name = meaningVal.substring(prefix.length);
+                            // Name 等于 Meaning 删除 Prefix
+                        } else {
+                            // 否则
+                            name = meaningVal;
+                            // Name 等于 Meaning
+                        }
+                    }
+
+                    if (name) fieldData.name = name;
+                    // 如果 Name 有值则写入
+
+                    const remark = item.querySelector('.field-remark').value;
+                    if (remark) fieldData.remark = remark;
+                    
+                    const dictJson = item.querySelector('.dict-json').value;
+                    if (dictJson) {
+                        try {
+                            const values = JSON.parse(dictJson);
+                            // 只有当values不为空对象时才添加
+                            if (Object.keys(values).length > 0) {
+                                fieldData.values = values;
+                            }
+                        } catch (e) {
+                            console.warn('字典值JSON格式错误', key);
+                        }
+                    }
+
+                    tool.response[key] = fieldData;
+                });
+                
+                result.tools.push(tool);
+            });
+
+            const blob = new Blob([JSON.stringify(result, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'staff.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

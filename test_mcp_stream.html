@@ -5,39 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCP Stream Test</title>
     <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
+        body { /* 设置页面主体样式 */
+            font-family: sans-serif; /* 使用无衬线字体 */
+            display: flex; /* 使用flex布局 */
+            flex-direction: column; /* 垂直排列 */
+            align-items: center; /* 居中对齐 */
+            margin: 20px; /* 外边距20像素 */
         }
-        #chat-container {
-            width: 80%;
-            max-width: 800px;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 8px;
+        #chat-container { /* 设置聊天容器样式 */
+            width: 80%; /* 宽度80% */
+            max-width: 800px; /* 最大宽度800像素 */
+            border: 1px solid #ccc; /* 1像素灰色实线边框 */
+            padding: 20px; /* 内边距20像素 */
+            border-radius: 8px; /* 边框圆角8像素 */
         }
-        #response-container {
-            margin-top: 20px;
-            white-space: pre-wrap;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 4px;
-            min-height: 100px;
+        #response-container { /* 设置响应容器样式 */
+            margin-top: 20px; /* 顶部外边距20像素 */
+            white-space: pre-wrap; /* 保留空白符并自动换行 */
+            background-color: #f4f4f4; /* 浅灰色背景 */
+            padding: 10px; /* 内边距10像素 */
+            border-radius: 4px; /* 边框圆角4像素 */
+            min-height: 100px; /* 最小高度100像素 */
         }
-        input, button {
-            padding: 10px;
-            margin-bottom: 10px;
-            width: calc(100% - 22px);
+        input, button { /* 设置输入框和按钮样式 */
+            padding: 10px; /* 内边距10像素 */
+            margin-bottom: 10px; /* 底部外边距10像素 */
+            width: calc(100% - 22px); /* 宽度计算 */
         }
-        button {
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
+        button { /* 设置按钮样式 */
+            cursor: pointer; /* 鼠标指针为手型 */
+            background-color: #007bff; /* 蓝色背景 */
+            color: white; /* 白色文字 */
+            border: none; /* 无边框 */
+            border-radius: 4px; /* 边框圆角4像素 */
+        }
+        .function-call { /* 设置函数调用条样式 */
+            background-color: #eee; /* 灰色背景 */
+            border-left: 4px solid #007bff; /* 蓝色左边框 */
+            padding: 10px; /* 内边距10像素 */
+            margin: 10px 0; /* 上下外边距10像素 */
+            font-family: monospace; /* 使用等宽字体 */
+        }
+        .function-call pre { /* 设置函数调用条内pre标签样式 */
+            background-color: #f9f9f9; /* 更浅的灰色背景 */
+            padding: 5px; /* 内边距5像素 */
+            border-radius: 4px; /* 边框圆角4像素 */
+            white-space: pre-wrap; /* 保留空白符并自动换行 */
+            word-break: break-all; /* 单词在任意位置换行 */
         }
     </style>
 </head>
@@ -53,62 +67,90 @@
     </div>
 
     <script>
-        async function sendMessage() {
-            const token = document.getElementById('token').value;
-            const question = document.getElementById('question').value;
-            const responseContainer = document.getElementById('response-container');
+        async function sendMessage() { // 定义异步函数sendMessage
+            const token = document.getElementById('token').value; // 获取token输入框的值
+            const question = document.getElementById('question').value; // 获取问题输入框的值
+            const responseContainer = document.getElementById('response-container'); // 获取响应显示容器
 
             responseContainer.innerHTML = ''; // 清空之前的内容
 
-            if (!token || !question) {
-                alert('Please enter both token and question.');
-                return;
+            if (!token || !question) { // 检查token和问题是否为空
+                alert('Please enter both token and question.'); // 弹出提示
+                return; // 终止函数执行
             }
 
-            const URL = 'http://localhost:8001/api/v1/chat/mcp';
+            const URL = 'http://localhost:8001/api/v1/chat/mcp'; // 定义API地址
             //const URL = 'https://mcp.riohome.top/api/v1/chat/mcp';
-            try {
-                const response = await fetch(URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${token}`
+            try { // 捕获可能发生的错误
+                const response = await fetch(URL, { // 发送fetch请求
+                    method: 'POST', // 使用POST方法
+                    headers: { // 设置请求头
+                        'Content-Type': 'application/json', // 内容类型为JSON
+                        'Authorization': `Bearer ${token}` // 设置认证token
                     },
-                    body: JSON.stringify({ question }),
+                    body: JSON.stringify({ question }), // 设置请求体
                 });
 
-                if (!response.body) {
-                    responseContainer.textContent = 'ReadableStream not yet supported in this browser.';
-                    return;
+                if (!response.body) { // 检查响应体是否存在
+                    responseContainer.textContent = 'ReadableStream not yet supported in this browser.'; // 提示浏览器不支持ReadableStream
+                    return; // 终止函数执行
                 }
 
-                const reader = response.body.getReader();
-                const decoder = new TextDecoder();
+                const reader = response.body.getReader(); // 获取响应体的reader
+                const decoder = new TextDecoder(); // 创建文本解码器
 
-                while (true) {
-                    const { done, value } = await reader.read();
-                    if (done) {
-                        break;
+                while (true) { // 无限循环读取流
+                    const { done, value } = await reader.read(); // 读取流中的一块数据
+                    if (done) { // 如果流已结束
+                        break; // 退出循环
                     }
-                    const chunk = decoder.decode(value, { stream: true });
-                    // SSE返回的数据以'data: '开头，以'\n\n'结尾，需要解析
-                    const lines = chunk.split('\n\n');
-                    for (const line of lines) {
-                        if (line.startsWith('data: ')) {
-                            const data = line.substring(6);
-                            try {
-                                const jsonData = JSON.parse(data);
-                                // 格式化JSON并显示
-                                responseContainer.innerHTML += JSON.stringify(jsonData, null, 2) + '\n';
-                            } catch (e) {
-                                responseContainer.innerHTML += data + '\n';
+                    const chunk = decoder.decode(value, { stream: true }); // 解码数据块
+                    const lines = chunk.split('\n\n'); // 按SSE格式分割消息
+                    for (const line of lines) { // 遍历每条消息
+                        if (line.startsWith('data: ')) { // 如果消息是数据事件
+                            const data = line.substring(6).trim(); // 提取数据内容
+                            if (data === '[DONE]') { // 如果是结束信号
+                                continue; // 继续下一次循环
+                            }
+                            if (!data) { // 如果数据为空
+                                continue; // 继续下一次循环
+                            }
+                            try { // 尝试解析JSON
+                                const jsonData = JSON.parse(data); // 解析JSON字符串
+                                const message = jsonData[0]; // 获取消息主体，假设为数组的第一个元素
+                                if (message && message.function_call) { // 如果消息包含函数调用
+                                    const funcDiv = document.createElement('div'); // 创建一个div元素
+                                    funcDiv.className = 'function-call'; // 设置样式类
+                                    // 设置函数调用信息
+                                    funcDiv.innerHTML = `
+                                        <strong>Function Call:</strong> ${message.function_call.name}
+                                        <pre>${JSON.stringify(JSON.parse(message.function_call.arguments), null, 2)}</pre>
+                                    `;
+                                    responseContainer.appendChild(funcDiv); // 将函数调用条添加到响应容器
+                                } else if (message && message.role === 'tool' && message.content) { // 如果消息是工具结果
+                                    const lastFuncDiv = responseContainer.querySelector('.function-call:last-child'); // 查找最后一个函数调用div
+                                    if (lastFuncDiv) { // 如果找到
+                                        let resultDiv = lastFuncDiv.querySelector('.function-result'); // 查找结果div
+                                        if (!resultDiv) { // 如果结果div不存在
+                                            resultDiv = document.createElement('div'); // 创建一个新的div用于显示结果
+                                            resultDiv.className = 'function-result'; // 设置样式类
+                                            resultDiv.innerHTML = `<strong>Result:</strong><pre></pre>`; // 初始化结果的HTML结构
+                                            lastFuncDiv.appendChild(resultDiv); // 将结果div添加到函数调用div中
+                                        }
+                                        resultDiv.querySelector('pre').textContent += message.content; // 将结果内容追加到pre标签
+                                    }
+                                } else if (message && message.content) { // 如果消息包含内容
+                                    responseContainer.innerHTML += message.content; // 将内容追加到响应容器
+                                }
+                            } catch (e) { // 如果解析JSON失败
+                                responseContainer.innerHTML += data; // 直接将原始数据追加到响应容器
                             }
                         }
                     }
                 }
-            } catch (error) {
-                console.error('Error:', error);
-                responseContainer.textContent = 'An error occurred: ' + error.message;
+            } catch (error) { // 捕获fetch或流处理中的错误
+                console.error('Error:', error); // 在控制台打印错误
+                responseContainer.textContent = 'An error occurred: ' + error.message; // 在页面上显示错误信息
             }
         }
     </script>

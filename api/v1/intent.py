@@ -8,7 +8,7 @@ import os
 from datetime import datetime
 from api.v1.models import ChatIntentRequest
 from api.v1.dependencies import get_current_user
-from services.llm_service import dashscope_chat_block, dashscope_chat_stream, dashscope_chat_tool, dashscope_chat_intent
+from services.llm_manager import dashscope_chat_block, dashscope_chat_stream, dashscope_chat_tool, dashscope_chat_intent
 from services.R import log
 from services.supabase_manager import SupabaseManager
 

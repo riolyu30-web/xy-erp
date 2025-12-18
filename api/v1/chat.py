@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request, HTTPException, Depends
 from api.v1.models import ChatMCPRequest
-from services.llm_service import dashscope_mcp_stream, create_assistant
+from services.llm_manager import dashscope_mcp_stream, create_assistant
 from api.v1.dependencies import get_current_user
 # 创建路由器实例
 router = APIRouter(tags=["聊天"])

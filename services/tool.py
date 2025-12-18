@@ -1,3 +1,4 @@
+from jinja2.utils import F
 import pandas as pd
 from datetime import datetime
 from io import StringIO
@@ -18,17 +19,17 @@ load_dotenv()  # 加载.env文件中的环境变量
 # 从环境变量获取配置
 BASE_URL = os.getenv("BASE_URL", "http://192.168.0.156:28002")  # 获取基础URL
 
-
-
-def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_fields, params: dict = None) -> str:
+def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_fields:dict, meaning_dict: dict = None, debug_mode: bool = False, params: dict = None) -> dict:
     """
     通用工具方法：发送API请求并过滤返回数据中的指定字段
     
     Args:
-        name: 缓存名称
+        api_name: 别名
         url: API请求地址
         data: 请求体数据
+        access_token: 访问令牌
         filtered_fields: 需要保留的字段列表，可以是字符串列表、字典列表或字典
+        meaning_dict_str: 字段含义字典字符串（可选）
         params: 请求参数（可选）
         
     Returns:
@@ -36,6 +37,7 @@ def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_field
     """
     try:
         url = f"{BASE_URL}{url}?access_token={access_token}"
+
         # 发送POST请求
         if params:
             response = requests.post(url, params=params, json=data)
@@ -49,7 +51,7 @@ def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_field
         
         # 检查响应中是否包含data字段
         if "data" not in result:
-            return "没有权限"
+            return {"error": "没有权限"}
         
         # 提取数据列表
         data_list = result["data"]
@@ -75,11 +77,11 @@ def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_field
                             csv_header = field_config.get("name", field_key)
                             
                             # 检查是否有值映射配置
-                            if "value" in field_config and isinstance(field_config["value"], dict):
+                            if "values" in field_config and isinstance(field_config["values"], dict):
                                 # 尝试进行值映射，将原始值转为字符串后查找，找不到则用原始值
                                 str_val = str(raw_value).lower() # 统一转小写字符串匹配（针对true/false）
                                 # 这里为了兼容性，可以尝试直接匹配或转字符串匹配
-                                mapping = field_config["value"]
+                                mapping = field_config["values"]
                                 # 优先尝试直接匹配，然后尝试字符串匹配
                                 if raw_value in mapping:
                                     filtered_item[csv_header] = mapping[raw_value]
@@ -92,74 +94,50 @@ def fetch_data(name:str, url: str, data: dict, access_token: str, filtered_field
                                 filtered_item[csv_header] = raw_value
                         else:
                             # 如果配置只是字符串，直接作为列名
-                            filtered_item[field_config] = raw_value
-            else:
-                # 如果是列表，处理列表中的每个元素
-                for field in filtered_fields:
-                    if isinstance(field, str):
-                        # 如果是字符串，直接使用作为字段名
-                        if field in item:
-                            filtered_item[field] = item[field]
-                    elif isinstance(field, dict):
-                        # 如果是字典，提取键作为字段名，值作为CSV列名
-                        field_key = next(iter(field.keys()))
-                        csv_header = field[field_key]
-                        if field_key in item:
-                            filtered_item[csv_header] = item[field_key]
-
-             
-            
-            # 遍历原始数据的所有键
-            # 记录已处理过的ID值，避免重复添加具有相同值的ID字段
-            processed_id_values = set()
-            
-            # 先将filtered_item中已有的值加入集合，防止Id字段覆盖已有字段但值相同的情况（可选，视需求而定）
-            # 这里主要处理新增的Id字段之间的重复值
-            
-            for key in item:
-                # 判断键名是否以Id结尾，且值不为空，且值为字符串或数字，且仅包含字母和数字
-                if key.endswith("Id") and item[key] and str(item[key]).isalnum():
-                    val = item[key]
-                    # 如果该值已经在filtered_item的值中出现过，或者在本次循环中已处理过，则跳过
-                    if val in filtered_item.values() or val in processed_id_values:
-                        continue
-                        
-                    # 保留该字段到结果中
-                    filtered_item[key] = val
-                    processed_id_values.add(val)
-
+                            filtered_item[field_config] = raw_value           
             filtered_list.append(filtered_item)
         
         # 将结果数组转换为DataFrame，然后使用pd_to_csv方法转换为CSV字符串
         if not filtered_list:
-            return "没有数据"
+            return {"error": "没有数据，请尝试其他参数"}
         
         # 创建DataFrame
         df = pd.DataFrame(filtered_list)
-        
+        df = df.dropna(axis='columns', how='all') # 删除所有值都为空的列  
+
+        if df.empty:
+            return {"error": "没有数据，请尝试其他接口"}
+
         # 使用pd_to_csv方法转换为CSV字符串
         csv_string = pd_to_csv(df)
-        # print(csv_string)
-        
         if csv_string:
-            print(csv_string.splitlines()[-5:])  # 打印前5行
-            key = f"{name}_{access_token}"
-            if cache_save(key, csv_string): # 缓存数据
-                return key # 返回CSV字符串的第一行
+            meaning_dict_str = ""        # 替换列名
+            if meaning_dict:
+                meaning_dict = {k: v for k, v in meaning_dict.items() if k in df.columns} # 只保留df中存在的列                
+                meaning_dict_str = json.dumps(meaning_dict, ensure_ascii=False)
+            key = f"{api_name}_{access_token}"
+            if debug_mode:
+                print(f"测试用例: {api_name}")
+                print(f"原始数据: {filtered_list[0]}")
+                print(f"数据条数: {len(filtered_list)}")
+                print("\n".join(csv_string.splitlines()[:5]))
+                return {"table_token": key, "field_meaning": meaning_dict_str, "sample": csv_string.splitlines()[:3]} 
+            elif cache_save(key, csv_string): # 缓存数据
+                return {"table_token": key,"field_meaning": meaning_dict_str,} 
             else:
-                return "缓存异常"
+                return {"error": "缓存异常，请暂停服务告知用户"}
         # 返回CSV字符串
-        return "没有数据"
+        return {"error": "没有数据，请尝试其他接口"}
         
     except requests.exceptions.RequestException as e:
         # 处理请求异常
-        return "请求异常"
+        return {"error": "请求异常，请暂停服务告知用户"}
     except json.JSONDecodeError as e:
         # 处理JSON解析异常
-        return "解析异常"
+        return {"error": "解析异常，请尝试其他接口"}
     except Exception as e:
         # 处理其他异常
-        return "接口异常"
+        return {"error": str(e)}
 
 
 def get_ids(data_list, key):

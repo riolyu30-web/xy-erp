@@ -64,8 +64,6 @@ def auth_login() -> str:
         # 解析JSON响应
         response_data = response.json()
 
-        print(response_data)
-
         # 检查业务逻辑是否成功
         if response_data.get("code") == 0 and response_data.get("msg") == "SUCCESS":
             # 返回访问令牌

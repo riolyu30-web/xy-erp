@@ -55,7 +55,7 @@ async def restart_service():
         # 检查操作系统类型
         if platform.system() == "Linux":
             # 定义重启服务的命令列表
-            cmd = ["sudo", "systemctl", "restart", "xy-mcp"]
+            cmd = ["systemctl", "restart", "xy-mcp"]
             # 执行命令并检查是否成功
             subprocess.run(cmd, check=True)
         else:

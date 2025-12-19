@@ -51,7 +51,7 @@
                     "name": "员工表",
                     "function_name": "find_all_staff",
                     "prefix": "员工",
-                    "remark": "获取所有员工信息"
+                    "remark": "获取员工信息"
                 },
                 {
                     "api_name": "/group/findList",

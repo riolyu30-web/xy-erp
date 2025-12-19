@@ -8,7 +8,7 @@ admin_mcp = FastMCP(name="admin")  # 创建计算服务MCP实例
 @admin_mcp.tool()  # 注册工具
 def find_all_staff(access_token: str) -> str:  # 定义工具函数
     """
-    员工表，获取所有员工信息
+    员工表，获取员工信息
     
     若需查询部门下员工,要调用csv_merge合并表，左表:员工表，右表:部门表，左键:部门ID，右键:部门ID
     

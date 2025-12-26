@@ -1,0 +1,1531 @@
+ {
+        "api_name": "/daily-rep-sum-det/findList",
+        "table_name": "生产日报表",
+        "request": {
+            "dailyRepSumDetClazz": "DAILY_REP_SUM_DET",
+            "dailyRepSumDetDailyRepSumClazz": "DAILY_REP_SUM"
+        },
+        "response": {
+            "dailyRepSumDetActualTimeRequired": {
+                "meaning": "日报表实际需时(小时)"
+            },
+            "dailyRepSumDetAdjMachCount": {
+                "meaning": "日报表调机次数"
+            },
+            "dailyRepSumDetAdjMachTime": {
+                "meaning": "日报表调机时长"
+            },
+            "dailyRepSumDetAdjustmentTimeRequired": {
+                "meaning": "日报表调整需时(输入正负数来计算实际需时)(小时)"
+            },
+            "dailyRepSumDetApplicationId": {
+                "meaning": "日报表应用ID"
+            },
+            "dailyRepSumDetAuditDate": {
+                "meaning": "日报表审核时间"
+            },
+            "dailyRepSumDetAuditStatus": {
+                "meaning": "日报表审核状态"
+            },
+            "dailyRepSumDetAuditStatuses": {
+                "meaning": "日报表审核状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetAuditor": {
+                "meaning": "日报表审核人(-查询入参-)"
+            },
+            "dailyRepSumDetAvailableScheduleId": {
+                "meaning": "日报表可用日程id"
+            },
+            "dailyRepSumDetAvailableScheduleIds": {
+                "meaning": "日报表可用日程id列表(-查询入参-)"
+            },
+            "dailyRepSumDetAwaitTime": {
+                "meaning": "日报表待料时长"
+            },
+            "dailyRepSumDetBadQty": {
+                "meaning": "日报表不良品数量"
+            },
+            "dailyRepSumDetBadQuantity": {
+                "meaning": "日报表加工不良品数"
+            },
+            "dailyRepSumDetBeginTime": {
+                "meaning": "日报表开始时间"
+            },
+            "dailyRepSumDetBizVersion": {
+                "meaning": "日报表业务自定义版本号"
+            },
+            "dailyRepSumDetBriefName": {
+                "meaning": "日报表简称"
+            },
+            "dailyRepSumDetCalPlateTime": {
+                "meaning": "日报表校版时长"
+            },
+            "dailyRepSumDetClazz": {
+                "meaning": "日报表子类 类名（表和类一一对应）"
+            },
+            "dailyRepSumDetClosedReason": {
+                "meaning": "日报表结案原因"
+            },
+            "dailyRepSumDetClosedStatus": {
+                "meaning": "日报表结案状态"
+            },
+            "dailyRepSumDetClosedStatuses": {
+                "meaning": "日报表结案状态(-查询入参-)"
+            },
+            "dailyRepSumDetComment": {
+                "meaning": "日报表评论"
+            },
+            "dailyRepSumDetCompleteQuantity": {
+                "meaning": "日报表完成数量"
+            },
+            "dailyRepSumDetCompleteStatus": {
+                "meaning": "日报表完成状态"
+            },
+            "dailyRepSumDetCompleteStatuses": {
+                "meaning": "日报表完成状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetCreateTime": {
+                "meaning": "日报表创建时间"
+            },
+            "dailyRepSumDetCreator": {
+                "meaning": "日报表创建人"
+            },
+            "dailyRepSumDetCreatorId": {
+                "meaning": "日报表创建人ID"
+            },
+            "dailyRepSumDetDailyRepSumActualTimeRequired": {
+                "meaning": "日报表实际需时(小时)"
+            },
+            "dailyRepSumDetDailyRepSumAdjustmentTimeRequired": {
+                "meaning": "日报表调整需时(输入正负数来计算实际需时)(小时)"
+            },
+            "dailyRepSumDetDailyRepSumApplicationId": {
+                "meaning": "日报表应用ID"
+            },
+            "dailyRepSumDetDailyRepSumAuditDate": {
+                "meaning": "日报表审核时间"
+            },
+            "dailyRepSumDetDailyRepSumAuditStatus": {
+                "meaning": "日报表审核状态"
+            },
+            "dailyRepSumDetDailyRepSumAuditStatuses": {
+                "meaning": "日报表审核状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumAuditor": {
+                "meaning": "日报表审核人(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumAvailableScheduleId": {
+                "meaning": "日报表可用日程id"
+            },
+            "dailyRepSumDetDailyRepSumAvailableScheduleIds": {
+                "meaning": "日报表可用日程id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumBeginTime": {
+                "meaning": "日报表开始时间"
+            },
+            "dailyRepSumDetDailyRepSumBizVersion": {
+                "meaning": "日报表业务自定义版本号"
+            },
+            "dailyRepSumDetDailyRepSumBriefName": {
+                "meaning": "日报表简称"
+            },
+            "dailyRepSumDetDailyRepSumClazz": {
+                "meaning": "日报表子类 类名（表和类一一对应）"
+            },
+            "dailyRepSumDetDailyRepSumClosedReason": {
+                "meaning": "日报表结案原因"
+            },
+            "dailyRepSumDetDailyRepSumClosedStatus": {
+                "meaning": "日报表结案状态"
+            },
+            "dailyRepSumDetDailyRepSumClosedStatuses": {
+                "meaning": "日报表结案状态(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumComment": {
+                "meaning": "日报表评论"
+            },
+            "dailyRepSumDetDailyRepSumCompleteQuantity": {
+                "meaning": "日报表完成数量"
+            },
+            "dailyRepSumDetDailyRepSumCompleteStatus": {
+                "meaning": "日报表完成状态"
+            },
+            "dailyRepSumDetDailyRepSumCompleteStatuses": {
+                "meaning": "日报表完成状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumCreateTime": {
+                "meaning": "日报表创建时间"
+            },
+            "dailyRepSumDetDailyRepSumCreator": {
+                "meaning": "日报表创建人"
+            },
+            "dailyRepSumDetDailyRepSumCreatorId": {
+                "meaning": "日报表创建人ID"
+            },
+            "dailyRepSumDetDailyRepSumDateExtra1": {
+                "meaning": "日报表扩展时间1"
+            },
+            "dailyRepSumDetDailyRepSumDateExtra2": {
+                "meaning": "日报表扩展时间2"
+            },
+            "dailyRepSumDetDailyRepSumDateExtra3": {
+                "meaning": "日报表扩展时间3"
+            },
+            "dailyRepSumDetDailyRepSumDateExtra4": {
+                "meaning": "日报表扩展时间4"
+            },
+            "dailyRepSumDetDailyRepSumDateExtra5": {
+                "meaning": "日报表扩展时间5"
+            },
+            "dailyRepSumDetDailyRepSumDefaultType": {
+                "meaning": "日报表智能节点主类型 默认类型（类型的system_code字段）"
+            },
+            "dailyRepSumDetDailyRepSumDefaultTypes": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumDeliveryDate": {
+                "meaning": "日报表交货日期"
+            },
+            "dailyRepSumDetDailyRepSumDescription": {
+                "meaning": "日报表描述"
+            },
+            "dailyRepSumDetDailyRepSumEndTime": {
+                "meaning": "日报表结束时间"
+            },
+            "dailyRepSumDetDailyRepSumEndTimeRequired": {
+                "meaning": "日报表最后需时(小时)"
+            },
+            "dailyRepSumDetDailyRepSumEngName": {
+                "meaning": "日报表英文名称"
+            },
+            "dailyRepSumDetDailyRepSumEqName": {
+                "meaning": "日报表判断名称是否相同(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumEquipmentId": {
+                "meaning": "日报表设备id"
+            },
+            "dailyRepSumDetDailyRepSumEquipmentIds": {
+                "meaning": "日报表设备_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumExchangeRateId": {
+                "meaning": "日报表币种汇率id"
+            },
+            "dailyRepSumDetDailyRepSumExchangeRateIds": {
+                "meaning": "日报表币种汇率id(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumExtension": {
+                "meaning": "日报表扩展数据"
+            },
+            "dailyRepSumDetDailyRepSumExternalState": {
+                "meaning": "日报表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+            },
+            "dailyRepSumDetDailyRepSumFalseFlags": {
+                "meaning": "日报表为0的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumFilterClazz": {
+                "meaning": "日报表冗余字段用于筛选"
+            },
+            "dailyRepSumDetDailyRepSumFlags": {
+                "meaning": "日报表63位标志位"
+            },
+            "dailyRepSumDetDailyRepSumFromAuditDate": {
+                "meaning": "dailyRepSumDetDailyRepSumFromAuditDate"
+            },
+            "dailyRepSumDetDailyRepSumFromBeginTime": {
+                "meaning": "dailyRepSumDetDailyRepSumFromBeginTime"
+            },
+            "dailyRepSumDetDailyRepSumFromCreateTime": {
+                "meaning": "dailyRepSumDetDailyRepSumFromCreateTime"
+            },
+            "dailyRepSumDetDailyRepSumFromDateExtra1": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDateExtra1"
+            },
+            "dailyRepSumDetDailyRepSumFromDateExtra2": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDateExtra2"
+            },
+            "dailyRepSumDetDailyRepSumFromDateExtra3": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDateExtra3"
+            },
+            "dailyRepSumDetDailyRepSumFromDateExtra4": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDateExtra4"
+            },
+            "dailyRepSumDetDailyRepSumFromDateExtra5": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDateExtra5"
+            },
+            "dailyRepSumDetDailyRepSumFromDeliveryDate": {
+                "meaning": "dailyRepSumDetDailyRepSumFromDeliveryDate"
+            },
+            "dailyRepSumDetDailyRepSumFromEndTime": {
+                "meaning": "dailyRepSumDetDailyRepSumFromEndTime"
+            },
+            "dailyRepSumDetDailyRepSumFromReceiptDate": {
+                "meaning": "dailyRepSumDetDailyRepSumFromReceiptDate"
+            },
+            "dailyRepSumDetDailyRepSumFromUpdateTime": {
+                "meaning": "dailyRepSumDetDailyRepSumFromUpdateTime"
+            },
+            "dailyRepSumDetDailyRepSumFromUserCode": {
+                "meaning": "日报表起始单号(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumFscType": {
+                "meaning": "日报表FSC声明"
+            },
+            "dailyRepSumDetDailyRepSumGenerativePeople": {
+                "meaning": "日报表下发人"
+            },
+            "dailyRepSumDetDailyRepSumGenerativeState": {
+                "meaning": "日报表下发状态"
+            },
+            "dailyRepSumDetDailyRepSumGroovyScript": {
+                "meaning": "日报表groovy脚本"
+            },
+            "dailyRepSumDetDailyRepSumHasParent": {
+                "meaning": "日报表存在父级(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumId": {
+                "meaning": "日报表PK",
+                "is_primary": true
+            },
+            "dailyRepSumDetDailyRepSumIds": {
+                "meaning": "日报表PK列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumInUsed": {
+                "meaning": "日报表是否被使用"
+            },
+            "dailyRepSumDetDailyRepSumInvTypeTaxRateId": {
+                "meaning": "日报表发票税率id"
+            },
+            "dailyRepSumDetDailyRepSumInvTypeTaxRateIds": {
+                "meaning": "日报表发票类型税率id(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumIsAutomaticCommit": {
+                "meaning": "日报表是否自动提交(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumIsBalance": {
+                "meaning": "日报表是否结转"
+            },
+            "dailyRepSumDetDailyRepSumIsBanned": {
+                "meaning": "日报表是否被禁用"
+            },
+            "dailyRepSumDetDailyRepSumIsDeleted": {
+                "meaning": "日报表是否被删除"
+            },
+            "dailyRepSumDetDailyRepSumIsLeaf": {
+                "meaning": "日报表是否叶子节点"
+            },
+            "dailyRepSumDetDailyRepSumIsManualModificationDate": {
+                "meaning": "日报表是否手动修改计划生产时间"
+            },
+            "dailyRepSumDetDailyRepSumIsolation": {
+                "meaning": "日报表智能节点数据隔离标识"
+            },
+            "dailyRepSumDetDailyRepSumIsolations": {
+                "meaning": "日报表租户隔离列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumJsScript": {
+                "meaning": "日报表js脚本"
+            },
+            "dailyRepSumDetDailyRepSumMaterialId": {
+                "meaning": "日报表物料id"
+            },
+            "dailyRepSumDetDailyRepSumMaterialIds": {
+                "meaning": "日报表物料id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumName": {
+                "meaning": "日报表智能节点名"
+            },
+            "dailyRepSumDetDailyRepSumNameCodeKeyword": {
+                "meaning": "日报表userCode、name or模糊搜索(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumNameCodeSearch": {
+                "meaning": "日报表name、user_code模糊搜索"
+            },
+            "dailyRepSumDetDailyRepSumNames": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumNumberExtra1": {
+                "meaning": "日报表扩展数量1"
+            },
+            "dailyRepSumDetDailyRepSumNumberExtra2": {
+                "meaning": "日报表扩展数量2"
+            },
+            "dailyRepSumDetDailyRepSumNumberExtra3": {
+                "meaning": "日报表扩展数量3"
+            },
+            "dailyRepSumDetDailyRepSumNumberExtra4": {
+                "meaning": "日报表扩展数量4"
+            },
+            "dailyRepSumDetDailyRepSumNumberExtra5": {
+                "meaning": "日报表扩展数量5"
+            },
+            "dailyRepSumDetDailyRepSumParentId": {
+                "meaning": "日报表父节点ID"
+            },
+            "dailyRepSumDetDailyRepSumParentIds": {
+                "meaning": "日报表父id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumPlannedOutputQuantity": {
+                "meaning": "日报表计划产出数量"
+            },
+            "dailyRepSumDetDailyRepSumPlannedTimeRequired": {
+                "meaning": "日报表计划需时(小时)"
+            },
+            "dailyRepSumDetDailyRepSumPrintStatus": {
+                "meaning": "日报表打印状态(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumPrintTimes": {
+                "meaning": "日报表打印次数"
+            },
+            "dailyRepSumDetDailyRepSumPriority": {
+                "meaning": "日报表优先级"
+            },
+            "dailyRepSumDetDailyRepSumProcessInstanceId": {
+                "meaning": "日报表流程实例ID"
+            },
+            "dailyRepSumDetDailyRepSumProcessInstanceIds": {
+                "meaning": "日报表审核流ids(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumProductionProcessesTypeId": {
+                "meaning": "日报表工序类型ID"
+            },
+            "dailyRepSumDetDailyRepSumProductionProcessesTypeIds": {
+                "meaning": "日报表工序类型_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumProductionShiftId": {
+                "meaning": "日报表生产班次ID"
+            },
+            "dailyRepSumDetDailyRepSumProductionShiftIds": {
+                "meaning": "日报表生产班次_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumQuantity": {
+                "meaning": "日报表任务数量"
+            },
+            "dailyRepSumDetDailyRepSumReceiptDate": {
+                "meaning": "日报表单据日期"
+            },
+            "dailyRepSumDetDailyRepSumReceiptType": {
+                "meaning": "日报表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+            },
+            "dailyRepSumDetDailyRepSumReceiptTypes": {
+                "meaning": "日报表单据类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumRelatedTasksId": {
+                "meaning": "日报表关联任务id"
+            },
+            "dailyRepSumDetDailyRepSumRelatedTasksIds": {
+                "meaning": "日报表关联任务id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumRootId": {
+                "meaning": "日报表根节点id(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumRootSystemCode": {
+                "meaning": "日报表根系统编码(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumSerialNumber": {
+                "meaning": "日报表顺序号"
+            },
+            "dailyRepSumDetDailyRepSumSource": {
+                "meaning": "日报表源"
+            },
+            "dailyRepSumDetDailyRepSumSourceType": {
+                "meaning": "日报表来源类型"
+            },
+            "dailyRepSumDetDailyRepSumSourceTypes": {
+                "meaning": "日报表来源类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumSources": {
+                "meaning": "日报表来源列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumState": {
+                "meaning": "日报表通用状态"
+            },
+            "dailyRepSumDetDailyRepSumStates": {
+                "meaning": "日报表通用状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumSystemCode": {
+                "meaning": "日报表系统编码"
+            },
+            "dailyRepSumDetDailyRepSumSystemCodes": {
+                "meaning": "日报表系统编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumTarget": {
+                "meaning": "日报表目标"
+            },
+            "dailyRepSumDetDailyRepSumTargets": {
+                "meaning": "日报表目标列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumTaskNodeName": {
+                "meaning": "日报表任务节点名称"
+            },
+            "dailyRepSumDetDailyRepSumTenantId": {
+                "meaning": "日报表租户_id"
+            },
+            "dailyRepSumDetDailyRepSumTenantIds": {
+                "meaning": "日报表租户_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumThirdPartyClass": {
+                "meaning": "日报表第三方分类"
+            },
+            "dailyRepSumDetDailyRepSumThirdPartyId": {
+                "meaning": "日报表第三方系统中的唯一ID"
+            },
+            "dailyRepSumDetDailyRepSumThirdPartyName": {
+                "meaning": "日报表第三方名称"
+            },
+            "dailyRepSumDetDailyRepSumToAuditDate": {
+                "meaning": "dailyRepSumDetDailyRepSumToAuditDate"
+            },
+            "dailyRepSumDetDailyRepSumToBeginTime": {
+                "meaning": "dailyRepSumDetDailyRepSumToBeginTime"
+            },
+            "dailyRepSumDetDailyRepSumToCreateTime": {
+                "meaning": "dailyRepSumDetDailyRepSumToCreateTime"
+            },
+            "dailyRepSumDetDailyRepSumToDateExtra1": {
+                "meaning": "dailyRepSumDetDailyRepSumToDateExtra1"
+            },
+            "dailyRepSumDetDailyRepSumToDateExtra2": {
+                "meaning": "dailyRepSumDetDailyRepSumToDateExtra2"
+            },
+            "dailyRepSumDetDailyRepSumToDateExtra3": {
+                "meaning": "dailyRepSumDetDailyRepSumToDateExtra3"
+            },
+            "dailyRepSumDetDailyRepSumToDateExtra4": {
+                "meaning": "dailyRepSumDetDailyRepSumToDateExtra4"
+            },
+            "dailyRepSumDetDailyRepSumToDateExtra5": {
+                "meaning": "dailyRepSumDetDailyRepSumToDateExtra5"
+            },
+            "dailyRepSumDetDailyRepSumToDeliveryDate": {
+                "meaning": "dailyRepSumDetDailyRepSumToDeliveryDate"
+            },
+            "dailyRepSumDetDailyRepSumToEndTime": {
+                "meaning": "dailyRepSumDetDailyRepSumToEndTime"
+            },
+            "dailyRepSumDetDailyRepSumToReceiptDate": {
+                "meaning": "dailyRepSumDetDailyRepSumToReceiptDate"
+            },
+            "dailyRepSumDetDailyRepSumToUpdateTime": {
+                "meaning": "dailyRepSumDetDailyRepSumToUpdateTime"
+            },
+            "dailyRepSumDetDailyRepSumToUserCode": {
+                "meaning": "日报表终止单号(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumTrueFlags": {
+                "meaning": "日报表为1的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumTypeCode": {
+                "meaning": "日报表link类型编码(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumTypeCodes": {
+                "meaning": "日报表类型Code列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumUnitCode": {
+                "meaning": "日报表单位id"
+            },
+            "dailyRepSumDetDailyRepSumUpdateTime": {
+                "meaning": "日报表更新时间"
+            },
+            "dailyRepSumDetDailyRepSumUpdater": {
+                "meaning": "日报表更新人"
+            },
+            "dailyRepSumDetDailyRepSumUpdaterId": {
+                "meaning": "日报表更新人ID"
+            },
+            "dailyRepSumDetDailyRepSumUserCode": {
+                "meaning": "日报表智能节点的唯一编码"
+            },
+            "dailyRepSumDetDailyRepSumUserCodes": {
+                "meaning": "日报表智能节点的唯一编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetDailyRepSumVarExtra1": {
+                "meaning": "日报表扩展1"
+            },
+            "dailyRepSumDetDailyRepSumVarExtra2": {
+                "meaning": "日报表扩展2"
+            },
+            "dailyRepSumDetDailyRepSumVarExtra3": {
+                "meaning": "日报表扩展3"
+            },
+            "dailyRepSumDetDailyRepSumVarExtra4": {
+                "meaning": "日报表扩展4"
+            },
+            "dailyRepSumDetDailyRepSumVarExtra5": {
+                "meaning": "日报表扩展5"
+            },
+            "dailyRepSumDetDailyRepSumVersion": {
+                "meaning": "日报表版本号"
+            },
+            "dailyRepSumDetDateExtra1": {
+                "meaning": "日报表扩展时间1"
+            },
+            "dailyRepSumDetDateExtra2": {
+                "meaning": "日报表扩展时间2"
+            },
+            "dailyRepSumDetDateExtra3": {
+                "meaning": "日报表扩展时间3"
+            },
+            "dailyRepSumDetDateExtra4": {
+                "meaning": "日报表扩展时间4"
+            },
+            "dailyRepSumDetDateExtra5": {
+                "meaning": "日报表扩展时间5"
+            },
+            "dailyRepSumDetDefaultType": {
+                "meaning": "日报表智能节点主类型 默认类型（类型的system_code字段）"
+            },
+            "dailyRepSumDetDefaultTypes": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetDeliveryDate": {
+                "meaning": "日报表交货日期"
+            },
+            "dailyRepSumDetDescription": {
+                "meaning": "日报表描述"
+            },
+            "dailyRepSumDetEndTime": {
+                "meaning": "日报表结束时间"
+            },
+            "dailyRepSumDetEndTimeRequired": {
+                "meaning": "日报表最后需时(小时)"
+            },
+            "dailyRepSumDetEngName": {
+                "meaning": "日报表英文名称"
+            },
+            "dailyRepSumDetEqName": {
+                "meaning": "日报表判断名称是否相同(-查询入参-)"
+            },
+            "dailyRepSumDetEquipmentId": {
+                "meaning": "日报表设备id"
+            },
+            "dailyRepSumDetEquipmentIds": {
+                "meaning": "日报表设备_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetExchangeRateId": {
+                "meaning": "日报表币种汇率id"
+            },
+            "dailyRepSumDetExchangeRateIds": {
+                "meaning": "日报表币种汇率id(-查询入参-)"
+            },
+            "dailyRepSumDetExtension": {
+                "meaning": "日报表扩展数据"
+            },
+            "dailyRepSumDetExternalState": {
+                "meaning": "日报表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+            },
+            "dailyRepSumDetFalseFlags": {
+                "meaning": "日报表为0的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetFilterClazz": {
+                "meaning": "日报表冗余字段用于筛选"
+            },
+            "dailyRepSumDetFlags": {
+                "meaning": "日报表63位标志位"
+            },
+            "dailyRepSumDetFromAuditDate": {
+                "meaning": "dailyRepSumDetFromAuditDate"
+            },
+            "dailyRepSumDetFromBeginTime": {
+                "meaning": "dailyRepSumDetFromBeginTime"
+            },
+            "dailyRepSumDetFromCreateTime": {
+                "meaning": "dailyRepSumDetFromCreateTime"
+            },
+            "dailyRepSumDetFromDateExtra1": {
+                "meaning": "dailyRepSumDetFromDateExtra1"
+            },
+            "dailyRepSumDetFromDateExtra2": {
+                "meaning": "dailyRepSumDetFromDateExtra2"
+            },
+            "dailyRepSumDetFromDateExtra3": {
+                "meaning": "dailyRepSumDetFromDateExtra3"
+            },
+            "dailyRepSumDetFromDateExtra4": {
+                "meaning": "dailyRepSumDetFromDateExtra4"
+            },
+            "dailyRepSumDetFromDateExtra5": {
+                "meaning": "dailyRepSumDetFromDateExtra5"
+            },
+            "dailyRepSumDetFromDeliveryDate": {
+                "meaning": "dailyRepSumDetFromDeliveryDate"
+            },
+            "dailyRepSumDetFromEndTime": {
+                "meaning": "dailyRepSumDetFromEndTime"
+            },
+            "dailyRepSumDetFromReceiptDate": {
+                "meaning": "dailyRepSumDetFromReceiptDate"
+            },
+            "dailyRepSumDetFromUpdateTime": {
+                "meaning": "dailyRepSumDetFromUpdateTime"
+            },
+            "dailyRepSumDetFromUserCode": {
+                "meaning": "日报表起始单号(-查询入参-)"
+            },
+            "dailyRepSumDetFscType": {
+                "meaning": "日报表FSC声明"
+            },
+            "dailyRepSumDetGenerativePeople": {
+                "meaning": "日报表下发人"
+            },
+            "dailyRepSumDetGenerativeState": {
+                "meaning": "日报表下发状态"
+            },
+            "dailyRepSumDetGroovyScript": {
+                "meaning": "日报表groovy脚本"
+            },
+            "dailyRepSumDetHasParent": {
+                "meaning": "日报表存在父级(-查询入参-)"
+            },
+            "dailyRepSumDetId": {
+                "meaning": "日报表PK",
+                "is_primary": true
+            },
+            "dailyRepSumDetIds": {
+                "meaning": "日报表PK列表(-查询入参-)"
+            },
+            "dailyRepSumDetInUsed": {
+                "meaning": "日报表是否被使用"
+            },
+            "dailyRepSumDetInvTypeTaxRateId": {
+                "meaning": "日报表发票税率id"
+            },
+            "dailyRepSumDetInvTypeTaxRateIds": {
+                "meaning": "日报表发票类型税率id(-查询入参-)"
+            },
+            "dailyRepSumDetIsAutomaticCommit": {
+                "meaning": "日报表是否自动提交(-查询入参-)"
+            },
+            "dailyRepSumDetIsBanned": {
+                "meaning": "日报表是否被禁用"
+            },
+            "dailyRepSumDetIsDeleted": {
+                "meaning": "日报表是否被删除"
+            },
+            "dailyRepSumDetIsLeaf": {
+                "meaning": "日报表是否叶子节点"
+            },
+            "dailyRepSumDetIsManualModificationDate": {
+                "meaning": "日报表是否手动修改计划生产时间"
+            },
+            "dailyRepSumDetIsolation": {
+                "meaning": "日报表智能节点数据隔离标识"
+            },
+            "dailyRepSumDetIsolations": {
+                "meaning": "日报表租户隔离列表(-查询入参-)"
+            },
+            "dailyRepSumDetJsScript": {
+                "meaning": "日报表js脚本"
+            },
+            "dailyRepSumDetMaterialId": {
+                "meaning": "日报表物料id"
+            },
+            "dailyRepSumDetMaterialIds": {
+                "meaning": "日报表物料id列表(-查询入参-)"
+            },
+            "dailyRepSumDetName": {
+                "meaning": "日报表智能节点名"
+            },
+            "dailyRepSumDetNameCodeKeyword": {
+                "meaning": "日报表userCode、name or模糊搜索(-查询入参-)"
+            },
+            "dailyRepSumDetNameCodeSearch": {
+                "meaning": "日报表name、user_code模糊搜索"
+            },
+            "dailyRepSumDetNames": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetNumberExtra1": {
+                "meaning": "日报表扩展数量1"
+            },
+            "dailyRepSumDetNumberExtra2": {
+                "meaning": "日报表扩展数量2"
+            },
+            "dailyRepSumDetNumberExtra3": {
+                "meaning": "日报表扩展数量3"
+            },
+            "dailyRepSumDetNumberExtra4": {
+                "meaning": "日报表扩展数量4"
+            },
+            "dailyRepSumDetNumberExtra5": {
+                "meaning": "日报表扩展数量5"
+            },
+            "dailyRepSumDetOtherTime": {
+                "meaning": "日报表其他时长"
+            },
+            "dailyRepSumDetOutQty": {
+                "meaning": "日报表产出数量"
+            },
+            "dailyRepSumDetParentId": {
+                "meaning": "日报表父节点ID"
+            },
+            "dailyRepSumDetParentIds": {
+                "meaning": "日报表父id列表(-查询入参-)"
+            },
+            "dailyRepSumDetPauseCount": {
+                "meaning": "日报表暂停次数"
+            },
+            "dailyRepSumDetPauseTime": {
+                "meaning": "日报表暂停时长"
+            },
+            "dailyRepSumDetPieceworkSchemeId": {
+                "meaning": "日报表计件方案_id"
+            },
+            "dailyRepSumDetPieceworkSchemeIds": {
+                "meaning": "日报表计件方案_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetPlannedOutputQuantity": {
+                "meaning": "日报表计划产出数量"
+            },
+            "dailyRepSumDetPlannedTimeRequired": {
+                "meaning": "日报表计划需时(小时)"
+            },
+            "dailyRepSumDetPrcesTypeId": {
+                "meaning": "日报表工序类型_id"
+            },
+            "dailyRepSumDetPrcesTypeIds": {
+                "meaning": "日报表工序类型_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetPrintStatus": {
+                "meaning": "日报表打印状态(-查询入参-)"
+            },
+            "dailyRepSumDetPrintTimes": {
+                "meaning": "日报表打印次数"
+            },
+            "dailyRepSumDetPriority": {
+                "meaning": "日报表优先级"
+            },
+            "dailyRepSumDetProcessInstanceId": {
+                "meaning": "日报表流程实例ID"
+            },
+            "dailyRepSumDetProcessInstanceIds": {
+                "meaning": "日报表审核流ids(-查询入参-)"
+            },
+            "dailyRepSumDetProductionProcessesTypeId": {
+                "meaning": "日报表工序类型ID"
+            },
+            "dailyRepSumDetProductionProcessesTypeIds": {
+                "meaning": "日报表工序类型_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetProductionShiftId": {
+                "meaning": "日报表生产班次ID"
+            },
+            "dailyRepSumDetProductionShiftIds": {
+                "meaning": "日报表生产班次_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetProductionTime": {
+                "meaning": "日报表生产时长"
+            },
+            "dailyRepSumDetQuantity": {
+                "meaning": "日报表任务数量"
+            },
+            "dailyRepSumDetReceiptDate": {
+                "meaning": "日报表单据日期"
+            },
+            "dailyRepSumDetReceiptType": {
+                "meaning": "日报表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+            },
+            "dailyRepSumDetReceiptTypes": {
+                "meaning": "日报表单据类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetRelatedTasksId": {
+                "meaning": "日报表关联任务id"
+            },
+            "dailyRepSumDetRelatedTasksIds": {
+                "meaning": "日报表关联任务id列表(-查询入参-)"
+            },
+            "dailyRepSumDetRootId": {
+                "meaning": "日报表根节点id(-查询入参-)"
+            },
+            "dailyRepSumDetRootSystemCode": {
+                "meaning": "日报表根系统编码(-查询入参-)"
+            },
+            "dailyRepSumDetSerialNumber": {
+                "meaning": "日报表顺序号"
+            },
+            "dailyRepSumDetShiftId": {
+                "meaning": "日报表班次_id"
+            },
+            "dailyRepSumDetShiftIds": {
+                "meaning": "日报表班次_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetSource": {
+                "meaning": "日报表源"
+            },
+            "dailyRepSumDetSourceType": {
+                "meaning": "日报表来源类型"
+            },
+            "dailyRepSumDetSourceTypes": {
+                "meaning": "日报表来源类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetSources": {
+                "meaning": "日报表来源列表(-查询入参-)"
+            },
+            "dailyRepSumDetState": {
+                "meaning": "日报表通用状态"
+            },
+            "dailyRepSumDetStates": {
+                "meaning": "日报表通用状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetSystemCode": {
+                "meaning": "日报表系统编码"
+            },
+            "dailyRepSumDetSystemCodes": {
+                "meaning": "日报表系统编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetTarget": {
+                "meaning": "日报表目标"
+            },
+            "dailyRepSumDetTargets": {
+                "meaning": "日报表目标列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskActualTimeRequired": {
+                "meaning": "日报表实际需时(小时)"
+            },
+            "dailyRepSumDetTaskAdjustmentTimeRequired": {
+                "meaning": "日报表调整需时(输入正负数来计算实际需时)(小时)"
+            },
+            "dailyRepSumDetTaskApplicationId": {
+                "meaning": "日报表应用ID"
+            },
+            "dailyRepSumDetTaskAssetRelatId": {
+                "meaning": "日报表关联资产id"
+            },
+            "dailyRepSumDetTaskAssetRelatIds": {
+                "meaning": "日报表关联资产ids(-查询入参-)"
+            },
+            "dailyRepSumDetTaskAuditDate": {
+                "meaning": "日报表审核时间"
+            },
+            "dailyRepSumDetTaskAuditStatus": {
+                "meaning": "日报表审核状态"
+            },
+            "dailyRepSumDetTaskAuditStatuses": {
+                "meaning": "日报表审核状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskAuditor": {
+                "meaning": "日报表审核人(-查询入参-)"
+            },
+            "dailyRepSumDetTaskAvailableScheduleId": {
+                "meaning": "日报表可用日程id"
+            },
+            "dailyRepSumDetTaskAvailableScheduleIds": {
+                "meaning": "日报表可用日程id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskBeginTime": {
+                "meaning": "日报表开始时间"
+            },
+            "dailyRepSumDetTaskBizVersion": {
+                "meaning": "日报表业务自定义版本号"
+            },
+            "dailyRepSumDetTaskBriefName": {
+                "meaning": "日报表简称"
+            },
+            "dailyRepSumDetTaskClazz": {
+                "meaning": "日报表子类 类名（表和类一一对应）"
+            },
+            "dailyRepSumDetTaskClosedReason": {
+                "meaning": "日报表结案原因"
+            },
+            "dailyRepSumDetTaskClosedStatus": {
+                "meaning": "日报表结案状态"
+            },
+            "dailyRepSumDetTaskClosedStatuses": {
+                "meaning": "日报表结案状态(-查询入参-)"
+            },
+            "dailyRepSumDetTaskComment": {
+                "meaning": "日报表评论"
+            },
+            "dailyRepSumDetTaskCompleteQuantity": {
+                "meaning": "日报表完成数量"
+            },
+            "dailyRepSumDetTaskCompleteStatus": {
+                "meaning": "日报表完成状态"
+            },
+            "dailyRepSumDetTaskCompleteStatuses": {
+                "meaning": "日报表完成状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskCreateTime": {
+                "meaning": "日报表创建时间"
+            },
+            "dailyRepSumDetTaskCreator": {
+                "meaning": "日报表创建人"
+            },
+            "dailyRepSumDetTaskCreatorId": {
+                "meaning": "日报表创建人ID"
+            },
+            "dailyRepSumDetTaskCumIpqcQuantity": {
+                "meaning": "日报表累计质检数量"
+            },
+            "dailyRepSumDetTaskCumIpqcStatus": {
+                "meaning": "日报表累计质检状态"
+            },
+            "dailyRepSumDetTaskCumIpqcStatuses": {
+                "meaning": "日报表质检状态(-查询入参-)"
+            },
+            "dailyRepSumDetTaskCumulHndovrQuantity": {
+                "meaning": "日报表累计交出数量"
+            },
+            "dailyRepSumDetTaskDailyRepQuantity": {
+                "meaning": "日报表日报表已开数量"
+            },
+            "dailyRepSumDetTaskDailyRepStatus": {
+                "meaning": "日报表日报表已开状态"
+            },
+            "dailyRepSumDetTaskDateExtra1": {
+                "meaning": "日报表扩展时间1"
+            },
+            "dailyRepSumDetTaskDateExtra2": {
+                "meaning": "日报表扩展时间2"
+            },
+            "dailyRepSumDetTaskDateExtra3": {
+                "meaning": "日报表扩展时间3"
+            },
+            "dailyRepSumDetTaskDateExtra4": {
+                "meaning": "日报表扩展时间4"
+            },
+            "dailyRepSumDetTaskDateExtra5": {
+                "meaning": "日报表扩展时间5"
+            },
+            "dailyRepSumDetTaskDefaultType": {
+                "meaning": "日报表智能节点主类型 默认类型（类型的system_code字段）"
+            },
+            "dailyRepSumDetTaskDefaultTypes": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetTaskDeliveryDate": {
+                "meaning": "日报表交货日期"
+            },
+            "dailyRepSumDetTaskDescription": {
+                "meaning": "日报表描述"
+            },
+            "dailyRepSumDetTaskEndTime": {
+                "meaning": "日报表结束时间"
+            },
+            "dailyRepSumDetTaskEndTimeRequired": {
+                "meaning": "日报表最后需时(小时)"
+            },
+            "dailyRepSumDetTaskEngName": {
+                "meaning": "日报表英文名称"
+            },
+            "dailyRepSumDetTaskEqName": {
+                "meaning": "日报表判断名称是否相同(-查询入参-)"
+            },
+            "dailyRepSumDetTaskEquipmentId": {
+                "meaning": "日报表设备id"
+            },
+            "dailyRepSumDetTaskEquipmentIds": {
+                "meaning": "日报表设备_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskExchangeRateId": {
+                "meaning": "日报表币种汇率id"
+            },
+            "dailyRepSumDetTaskExchangeRateIds": {
+                "meaning": "日报表币种汇率id(-查询入参-)"
+            },
+            "dailyRepSumDetTaskExtension": {
+                "meaning": "日报表扩展数据"
+            },
+            "dailyRepSumDetTaskExternalState": {
+                "meaning": "日报表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+            },
+            "dailyRepSumDetTaskFalseFlags": {
+                "meaning": "日报表为0的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetTaskFilterClazz": {
+                "meaning": "日报表冗余字段用于筛选"
+            },
+            "dailyRepSumDetTaskFindParent": {
+                "meaning": "日报表获取父任务(-查询入参-)"
+            },
+            "dailyRepSumDetTaskFlags": {
+                "meaning": "日报表63位标志位"
+            },
+            "dailyRepSumDetTaskFromAuditDate": {
+                "meaning": "dailyRepSumDetTaskFromAuditDate"
+            },
+            "dailyRepSumDetTaskFromBeginTime": {
+                "meaning": "dailyRepSumDetTaskFromBeginTime"
+            },
+            "dailyRepSumDetTaskFromCreateTime": {
+                "meaning": "dailyRepSumDetTaskFromCreateTime"
+            },
+            "dailyRepSumDetTaskFromDateExtra1": {
+                "meaning": "dailyRepSumDetTaskFromDateExtra1"
+            },
+            "dailyRepSumDetTaskFromDateExtra2": {
+                "meaning": "dailyRepSumDetTaskFromDateExtra2"
+            },
+            "dailyRepSumDetTaskFromDateExtra3": {
+                "meaning": "dailyRepSumDetTaskFromDateExtra3"
+            },
+            "dailyRepSumDetTaskFromDateExtra4": {
+                "meaning": "dailyRepSumDetTaskFromDateExtra4"
+            },
+            "dailyRepSumDetTaskFromDateExtra5": {
+                "meaning": "dailyRepSumDetTaskFromDateExtra5"
+            },
+            "dailyRepSumDetTaskFromDeliveryDate": {
+                "meaning": "dailyRepSumDetTaskFromDeliveryDate"
+            },
+            "dailyRepSumDetTaskFromEndTime": {
+                "meaning": "dailyRepSumDetTaskFromEndTime"
+            },
+            "dailyRepSumDetTaskFromGenerativeTime": {
+                "meaning": "dailyRepSumDetTaskFromGenerativeTime"
+            },
+            "dailyRepSumDetTaskFromPlanEndTime": {
+                "meaning": "dailyRepSumDetTaskFromPlanEndTime"
+            },
+            "dailyRepSumDetTaskFromPlanStartTime": {
+                "meaning": "dailyRepSumDetTaskFromPlanStartTime"
+            },
+            "dailyRepSumDetTaskFromPretEndTime": {
+                "meaning": "dailyRepSumDetTaskFromPretEndTime"
+            },
+            "dailyRepSumDetTaskFromPretStartTime": {
+                "meaning": "dailyRepSumDetTaskFromPretStartTime"
+            },
+            "dailyRepSumDetTaskFromReceiptDate": {
+                "meaning": "dailyRepSumDetTaskFromReceiptDate"
+            },
+            "dailyRepSumDetTaskFromUpdateTime": {
+                "meaning": "dailyRepSumDetTaskFromUpdateTime"
+            },
+            "dailyRepSumDetTaskFromUserCode": {
+                "meaning": "日报表起始单号(-查询入参-)"
+            },
+            "dailyRepSumDetTaskFscType": {
+                "meaning": "日报表FSC声明"
+            },
+            "dailyRepSumDetTaskGenerativePeople": {
+                "meaning": "日报表下发人"
+            },
+            "dailyRepSumDetTaskGenerativeState": {
+                "meaning": "日报表下发状态"
+            },
+            "dailyRepSumDetTaskGenerativeTime": {
+                "meaning": "日报表下发时间"
+            },
+            "dailyRepSumDetTaskGroovyScript": {
+                "meaning": "日报表groovy脚本"
+            },
+            "dailyRepSumDetTaskHasParent": {
+                "meaning": "日报表存在父级(-查询入参-)"
+            },
+            "dailyRepSumDetTaskId": {
+                "meaning": "日报表任务_id",
+                "is_primary": true
+            },
+            "dailyRepSumDetTaskIds": {
+                "meaning": "日报表任务_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskInUsed": {
+                "meaning": "日报表是否被使用"
+            },
+            "dailyRepSumDetTaskInvTypeTaxRateId": {
+                "meaning": "日报表发票税率id"
+            },
+            "dailyRepSumDetTaskInvTypeTaxRateIds": {
+                "meaning": "日报表发票类型税率id(-查询入参-)"
+            },
+            "dailyRepSumDetTaskIsAutomaticCommit": {
+                "meaning": "日报表是否自动提交(-查询入参-)"
+            },
+            "dailyRepSumDetTaskIsBanned": {
+                "meaning": "日报表是否被禁用"
+            },
+            "dailyRepSumDetTaskIsDeleted": {
+                "meaning": "日报表是否被删除"
+            },
+            "dailyRepSumDetTaskIsLeaf": {
+                "meaning": "日报表是否叶子节点"
+            },
+            "dailyRepSumDetTaskIsManualModificationDate": {
+                "meaning": "日报表是否手动修改计划生产时间"
+            },
+            "dailyRepSumDetTaskIsolation": {
+                "meaning": "日报表智能节点数据隔离标识"
+            },
+            "dailyRepSumDetTaskIsolations": {
+                "meaning": "日报表租户隔离列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskJsScript": {
+                "meaning": "日报表js脚本"
+            },
+            "dailyRepSumDetTaskMaterialId": {
+                "meaning": "日报表物料id"
+            },
+            "dailyRepSumDetTaskMaterialIds": {
+                "meaning": "日报表物料id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskName": {
+                "meaning": "日报表智能节点名"
+            },
+            "dailyRepSumDetTaskNameCodeKeyword": {
+                "meaning": "日报表userCode、name or模糊搜索(-查询入参-)"
+            },
+            "dailyRepSumDetTaskNameCodeSearch": {
+                "meaning": "日报表name、user_code模糊搜索"
+            },
+            "dailyRepSumDetTaskNames": {
+                "meaning": "日报表默认类型列表（多选）(-查询入参-)"
+            },
+            "dailyRepSumDetTaskNodeName": {
+                "meaning": "日报表任务节点名称"
+            },
+            "dailyRepSumDetTaskNumberExtra1": {
+                "meaning": "日报表扩展数量1"
+            },
+            "dailyRepSumDetTaskNumberExtra2": {
+                "meaning": "日报表扩展数量2"
+            },
+            "dailyRepSumDetTaskNumberExtra3": {
+                "meaning": "日报表扩展数量3"
+            },
+            "dailyRepSumDetTaskNumberExtra4": {
+                "meaning": "日报表扩展数量4"
+            },
+            "dailyRepSumDetTaskNumberExtra5": {
+                "meaning": "日报表扩展数量5"
+            },
+            "dailyRepSumDetTaskParentId": {
+                "meaning": "日报表父节点ID"
+            },
+            "dailyRepSumDetTaskParentIds": {
+                "meaning": "日报表父id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskPlanEndTime": {
+                "meaning": "日报表计划开始时间"
+            },
+            "dailyRepSumDetTaskPlanStartTime": {
+                "meaning": "日报表计划开始时间"
+            },
+            "dailyRepSumDetTaskPlannedOutputQuantity": {
+                "meaning": "日报表计划产出数量"
+            },
+            "dailyRepSumDetTaskPlannedTimeRequired": {
+                "meaning": "日报表计划需时(小时)"
+            },
+            "dailyRepSumDetTaskPretEndTime": {
+                "meaning": "日报表预估结束时间"
+            },
+            "dailyRepSumDetTaskPretStartTime": {
+                "meaning": "日报表预估开始时间"
+            },
+            "dailyRepSumDetTaskPrintStatus": {
+                "meaning": "日报表打印状态(-查询入参-)"
+            },
+            "dailyRepSumDetTaskPrintTimes": {
+                "meaning": "日报表打印次数"
+            },
+            "dailyRepSumDetTaskPriority": {
+                "meaning": "日报表优先级"
+            },
+            "dailyRepSumDetTaskProcessInstanceId": {
+                "meaning": "日报表流程实例ID"
+            },
+            "dailyRepSumDetTaskProcessInstanceIds": {
+                "meaning": "日报表审核流ids(-查询入参-)"
+            },
+            "dailyRepSumDetTaskProductionProcessesTypeId": {
+                "meaning": "日报表工序类型ID"
+            },
+            "dailyRepSumDetTaskProductionProcessesTypeIds": {
+                "meaning": "日报表工序类型_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskProductionShiftId": {
+                "meaning": "日报表生产班次ID"
+            },
+            "dailyRepSumDetTaskProductionShiftIds": {
+                "meaning": "日报表生产班次_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskQuantity": {
+                "meaning": "日报表任务数量"
+            },
+            "dailyRepSumDetTaskReceiptDate": {
+                "meaning": "日报表单据日期"
+            },
+            "dailyRepSumDetTaskReceiptType": {
+                "meaning": "日报表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+            },
+            "dailyRepSumDetTaskReceiptTypes": {
+                "meaning": "日报表单据类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskRelatedTasksId": {
+                "meaning": "日报表关联任务id"
+            },
+            "dailyRepSumDetTaskRelatedTasksIds": {
+                "meaning": "日报表关联任务id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskRootId": {
+                "meaning": "日报表根节点id(-查询入参-)"
+            },
+            "dailyRepSumDetTaskRootSystemCode": {
+                "meaning": "日报表根系统编码(-查询入参-)"
+            },
+            "dailyRepSumDetTaskSerialNumber": {
+                "meaning": "日报表顺序号"
+            },
+            "dailyRepSumDetTaskSource": {
+                "meaning": "日报表源"
+            },
+            "dailyRepSumDetTaskSourceType": {
+                "meaning": "日报表来源类型"
+            },
+            "dailyRepSumDetTaskSourceTypes": {
+                "meaning": "日报表来源类型列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskSources": {
+                "meaning": "日报表来源列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskState": {
+                "meaning": "日报表通用状态"
+            },
+            "dailyRepSumDetTaskStates": {
+                "meaning": "日报表通用状态列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskStatus": {
+                "meaning": "日报表任务状态"
+            },
+            "dailyRepSumDetTaskStatuses": {
+                "meaning": "日报表任务状态(-查询入参-)"
+            },
+            "dailyRepSumDetTaskSystemCode": {
+                "meaning": "日报表系统编码"
+            },
+            "dailyRepSumDetTaskSystemCodes": {
+                "meaning": "日报表系统编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskTarget": {
+                "meaning": "日报表目标"
+            },
+            "dailyRepSumDetTaskTargets": {
+                "meaning": "日报表目标列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskTaskMesId": {
+                "meaning": "日报表数采网关自增长id"
+            },
+            "dailyRepSumDetTaskTaskNodeName": {
+                "meaning": "日报表任务节点名称"
+            },
+            "dailyRepSumDetTaskTenantId": {
+                "meaning": "日报表租户ID"
+            },
+            "dailyRepSumDetTaskTenantIds": {
+                "meaning": "日报表租户id列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskThirdPartyClass": {
+                "meaning": "日报表第三方分类"
+            },
+            "dailyRepSumDetTaskThirdPartyId": {
+                "meaning": "日报表第三方系统中的唯一ID"
+            },
+            "dailyRepSumDetTaskThirdPartyName": {
+                "meaning": "日报表第三方名称"
+            },
+            "dailyRepSumDetTaskToAuditDate": {
+                "meaning": "dailyRepSumDetTaskToAuditDate"
+            },
+            "dailyRepSumDetTaskToBeginTime": {
+                "meaning": "dailyRepSumDetTaskToBeginTime"
+            },
+            "dailyRepSumDetTaskToCreateTime": {
+                "meaning": "dailyRepSumDetTaskToCreateTime"
+            },
+            "dailyRepSumDetTaskToDateExtra1": {
+                "meaning": "dailyRepSumDetTaskToDateExtra1"
+            },
+            "dailyRepSumDetTaskToDateExtra2": {
+                "meaning": "dailyRepSumDetTaskToDateExtra2"
+            },
+            "dailyRepSumDetTaskToDateExtra3": {
+                "meaning": "dailyRepSumDetTaskToDateExtra3"
+            },
+            "dailyRepSumDetTaskToDateExtra4": {
+                "meaning": "dailyRepSumDetTaskToDateExtra4"
+            },
+            "dailyRepSumDetTaskToDateExtra5": {
+                "meaning": "dailyRepSumDetTaskToDateExtra5"
+            },
+            "dailyRepSumDetTaskToDeliveryDate": {
+                "meaning": "dailyRepSumDetTaskToDeliveryDate"
+            },
+            "dailyRepSumDetTaskToEndTime": {
+                "meaning": "dailyRepSumDetTaskToEndTime"
+            },
+            "dailyRepSumDetTaskToGenerativeTime": {
+                "meaning": "dailyRepSumDetTaskToGenerativeTime"
+            },
+            "dailyRepSumDetTaskToPlanEndTime": {
+                "meaning": "dailyRepSumDetTaskToPlanEndTime"
+            },
+            "dailyRepSumDetTaskToPlanStartTime": {
+                "meaning": "dailyRepSumDetTaskToPlanStartTime"
+            },
+            "dailyRepSumDetTaskToPretEndTime": {
+                "meaning": "dailyRepSumDetTaskToPretEndTime"
+            },
+            "dailyRepSumDetTaskToPretStartTime": {
+                "meaning": "dailyRepSumDetTaskToPretStartTime"
+            },
+            "dailyRepSumDetTaskToReceiptDate": {
+                "meaning": "dailyRepSumDetTaskToReceiptDate"
+            },
+            "dailyRepSumDetTaskToUpdateTime": {
+                "meaning": "dailyRepSumDetTaskToUpdateTime"
+            },
+            "dailyRepSumDetTaskToUserCode": {
+                "meaning": "日报表终止单号(-查询入参-)"
+            },
+            "dailyRepSumDetTaskTrueFlags": {
+                "meaning": "日报表为1的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetTaskTypeCode": {
+                "meaning": "日报表link类型编码(-查询入参-)"
+            },
+            "dailyRepSumDetTaskTypeCodes": {
+                "meaning": "日报表类型Code列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskUnitCode": {
+                "meaning": "日报表单位id"
+            },
+            "dailyRepSumDetTaskUpdateTime": {
+                "meaning": "日报表更新时间"
+            },
+            "dailyRepSumDetTaskUpdater": {
+                "meaning": "日报表更新人"
+            },
+            "dailyRepSumDetTaskUpdaterId": {
+                "meaning": "日报表更新人ID"
+            },
+            "dailyRepSumDetTaskUserCode": {
+                "meaning": "日报表智能节点的唯一编码"
+            },
+            "dailyRepSumDetTaskUserCodes": {
+                "meaning": "日报表智能节点的唯一编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetTaskVarExtra1": {
+                "meaning": "日报表扩展1"
+            },
+            "dailyRepSumDetTaskVarExtra2": {
+                "meaning": "日报表扩展2"
+            },
+            "dailyRepSumDetTaskVarExtra3": {
+                "meaning": "日报表扩展3"
+            },
+            "dailyRepSumDetTaskVarExtra4": {
+                "meaning": "日报表扩展4"
+            },
+            "dailyRepSumDetTaskVarExtra5": {
+                "meaning": "日报表扩展5"
+            },
+            "dailyRepSumDetTaskVersion": {
+                "meaning": "日报表版本号"
+            },
+            "dailyRepSumDetTenantId": {
+                "meaning": "日报表租户_id"
+            },
+            "dailyRepSumDetTenantIds": {
+                "meaning": "日报表租户_id列表(-查询入参-)"
+            },
+            "dailyRepSumDetThirdPartyClass": {
+                "meaning": "日报表第三方分类"
+            },
+            "dailyRepSumDetThirdPartyId": {
+                "meaning": "日报表第三方系统中的唯一ID"
+            },
+            "dailyRepSumDetThirdPartyName": {
+                "meaning": "日报表第三方名称"
+            },
+            "dailyRepSumDetToAuditDate": {
+                "meaning": "dailyRepSumDetToAuditDate"
+            },
+            "dailyRepSumDetToBeginTime": {
+                "meaning": "dailyRepSumDetToBeginTime"
+            },
+            "dailyRepSumDetToCreateTime": {
+                "meaning": "dailyRepSumDetToCreateTime"
+            },
+            "dailyRepSumDetToDateExtra1": {
+                "meaning": "dailyRepSumDetToDateExtra1"
+            },
+            "dailyRepSumDetToDateExtra2": {
+                "meaning": "dailyRepSumDetToDateExtra2"
+            },
+            "dailyRepSumDetToDateExtra3": {
+                "meaning": "dailyRepSumDetToDateExtra3"
+            },
+            "dailyRepSumDetToDateExtra4": {
+                "meaning": "dailyRepSumDetToDateExtra4"
+            },
+            "dailyRepSumDetToDateExtra5": {
+                "meaning": "dailyRepSumDetToDateExtra5"
+            },
+            "dailyRepSumDetToDeliveryDate": {
+                "meaning": "dailyRepSumDetToDeliveryDate"
+            },
+            "dailyRepSumDetToEndTime": {
+                "meaning": "dailyRepSumDetToEndTime"
+            },
+            "dailyRepSumDetToReceiptDate": {
+                "meaning": "dailyRepSumDetToReceiptDate"
+            },
+            "dailyRepSumDetToUpdateTime": {
+                "meaning": "dailyRepSumDetToUpdateTime"
+            },
+            "dailyRepSumDetToUserCode": {
+                "meaning": "日报表终止单号(-查询入参-)"
+            },
+            "dailyRepSumDetTrueFlags": {
+                "meaning": "日报表为1的标志位（可以多个）(-查询入参-)"
+            },
+            "dailyRepSumDetTypeCode": {
+                "meaning": "日报表link类型编码(-查询入参-)"
+            },
+            "dailyRepSumDetTypeCodes": {
+                "meaning": "日报表类型Code列表(-查询入参-)"
+            },
+            "dailyRepSumDetUnitCode": {
+                "meaning": "日报表单位id"
+            },
+            "dailyRepSumDetUpdateTime": {
+                "meaning": "日报表更新时间"
+            },
+            "dailyRepSumDetUpdater": {
+                "meaning": "日报表更新人"
+            },
+            "dailyRepSumDetUpdaterId": {
+                "meaning": "日报表更新人ID"
+            },
+            "dailyRepSumDetUserCode": {
+                "meaning": "日报表智能节点的唯一编码"
+            },
+            "dailyRepSumDetUserCodes": {
+                "meaning": "日报表智能节点的唯一编码列表(-查询入参-)"
+            },
+            "dailyRepSumDetVarExtra1": {
+                "meaning": "日报表扩展1"
+            },
+            "dailyRepSumDetVarExtra2": {
+                "meaning": "日报表扩展2"
+            },
+            "dailyRepSumDetVarExtra3": {
+                "meaning": "日报表扩展3"
+            },
+            "dailyRepSumDetVarExtra4": {
+                "meaning": "日报表扩展4"
+            },
+            "dailyRepSumDetVarExtra5": {
+                "meaning": "日报表扩展5"
+            },
+            "dailyRepSumDetVersion": {
+                "meaning": "日报表版本号"
+            },
+            "dailyRepSumDetWarehouseSpaceId": {
+                "meaning": "日报表仓位id"
+            },
+            "dailyRepSumDetWarehouseSpaceIds": {
+                "meaning": "日报表仓位id列表(-查询入参-)"
+            }
+        }
+    }

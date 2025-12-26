@@ -1,0 +1,499 @@
+ {
+    "api_name": "/client/findList",
+    "table_name": "客户表",
+    "request": {
+      "customerClazz": "XY_USERCENTER_ORGANIZATION"
+    },
+    "response": {
+      "customerAccountPeriod": {
+        "meaning": "客户表账期"
+      },
+      "customerApplicationId": {
+        "meaning": "客户表应用ID"
+      },
+      "customerAuditDate": {
+        "meaning": "客户表审核时间"
+      },
+      "customerAuditStatus": {
+        "meaning": "客户表审核状态"
+      },
+      "customerAuditStatuses": {
+        "meaning": "客户表审核状态列表(-查询入参-)"
+      },
+      "customerAuditor": {
+        "meaning": "客户表审核人(-查询入参-)"
+      },
+      "customerAvatarUrl": {
+        "meaning": "客户表头像URL"
+      },
+      "customerBankAccountId": {
+        "meaning": "客户表默认银行账户ID"
+      },
+      "customerBankAccountIds": {
+        "meaning": "客户表默认银行账户ID列表(-查询入参-)"
+      },
+      "customerBizVersion": {
+        "meaning": "客户表业务自定义版本号"
+      },
+      "customerBriefName": {
+        "meaning": "客户表简称"
+      },
+      "customerBusinessScope": {
+        "meaning": "客户表经营范围"
+      },
+      "customerCiphertext": {
+        "meaning": "客户表密文"
+      },
+      "customerClassificationId": {
+        "meaning": "客户表客户分类"
+      },
+      "customerClassificationIds": {
+        "meaning": "客户表客户分类(-查询入参-)"
+      },
+      "customerClazz": {
+        "meaning": "客户表子类 类名（表和类一一对应）"
+      },
+      "customerComment": {
+        "meaning": "客户表评论"
+      },
+      "customerCreateTime": {
+        "meaning": "客户表创建时间"
+      },
+      "customerCreator": {
+        "meaning": "客户表创建人"
+      },
+      "customerCreatorId": {
+        "meaning": "客户表创建人ID"
+      },
+      "customerCreditLimit": {
+        "meaning": "客户表信用限额"
+      },
+      "customerCurrencyId": {
+        "meaning": "客户表默认币种ID"
+      },
+      "customerCurrencyIds": {
+        "meaning": "客户表默认币种ID列表(-查询入参-)"
+      },
+      "customerDateExtra1": {
+        "meaning": "客户表扩展时间1"
+      },
+      "customerDateExtra2": {
+        "meaning": "客户表扩展时间2"
+      },
+      "customerDateExtra3": {
+        "meaning": "客户表扩展时间3"
+      },
+      "customerDateExtra4": {
+        "meaning": "客户表扩展时间4"
+      },
+      "customerDateExtra5": {
+        "meaning": "客户表扩展时间5"
+      },
+      "customerDefaultDeliveryType": {
+        "meaning": "客户表默认送货类型"
+      },
+      "customerDefaultInvoiceTypeTaxRateId": {
+        "meaning": "客户表默认发票类型税率"
+      },
+      "customerDefaultSettlementType": {
+        "meaning": "客户表默认结算类型"
+      },
+      "customerDefaultType": {
+        "meaning": "客户表智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "customerDefaultTypes": {
+        "meaning": "客户表默认类型列表（多选）(-查询入参-)"
+      },
+      "customerDeliveryUnitPriceAcquisitionMethod": {
+        "meaning": "客户表销货单价获取方式（1、按订单产品单价，2、按最新产品报价)"
+      },
+      "customerDescription": {
+        "meaning": "客户表描述"
+      },
+      "customerEmail": {
+        "meaning": "客户表邮箱"
+      },
+      "customerEngName": {
+        "meaning": "客户表英文名称"
+      },
+      "customerEnglishName": {
+        "meaning": "客户表英文名称"
+      },
+      "customerEnterpriseTaxIdentificationNumber": {
+        "meaning": "客户表企业税号"
+      },
+      "customerEqName": {
+        "meaning": "客户表判断名称是否相同(-查询入参-)"
+      },
+      "customerExceedSettleAccountsDays": {
+        "meaning": "客户表超结账天数"
+      },
+      "customerExtension": {
+        "meaning": "客户表扩展数据"
+      },
+      "customerExternalState": {
+        "meaning": "客户表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "customerFalseFlags": {
+        "meaning": "客户表为0的标志位（可以多个）(-查询入参-)"
+      },
+      "customerFaxNo": {
+        "meaning": "客户表传真号"
+      },
+      "customerFlags": {
+        "meaning": "客户表63位标志位"
+      },
+      "customerFromAuditDate": {
+        "meaning": "customerFromAuditDate"
+      },
+      "customerFromCreateTime": {
+        "meaning": "customerFromCreateTime"
+      },
+      "customerFromDateExtra1": {
+        "meaning": "customerFromDateExtra1"
+      },
+      "customerFromDateExtra2": {
+        "meaning": "customerFromDateExtra2"
+      },
+      "customerFromDateExtra3": {
+        "meaning": "customerFromDateExtra3"
+      },
+      "customerFromDateExtra4": {
+        "meaning": "customerFromDateExtra4"
+      },
+      "customerFromDateExtra5": {
+        "meaning": "customerFromDateExtra5"
+      },
+      "customerFromLastLoginTime": {
+        "meaning": "customerFromLastLoginTime"
+      },
+      "customerFromRegistrationDate": {
+        "meaning": "customerFromRegistrationDate"
+      },
+      "customerFromUpdateTime": {
+        "meaning": "customerFromUpdateTime"
+      },
+      "customerFromUserCode": {
+        "meaning": "客户表起始单号(-查询入参-)"
+      },
+      "customerGroovyScript": {
+        "meaning": "客户表groovy脚本"
+      },
+      "customerGropeCode": {
+        "meaning": "客户表搜索码"
+      },
+      "customerHasParent": {
+        "meaning": "客户表存在父级(-查询入参-)"
+      },
+      "customerId": {
+        "meaning": "客户表Pk",
+        "is_primary": true
+      },
+      "customerIdentification": {
+        "meaning": "客户表身份识别"
+      },
+      "customerIds": {
+        "meaning": "客户表Pk列表(-查询入参-)"
+      },
+      "customerInUsed": {
+        "meaning": "客户表是否被使用"
+      },
+      "customerIsAutomaticCommit": {
+        "meaning": "客户表是否自动提交(-查询入参-)"
+      },
+      "customerIsBanned": {
+        "meaning": "客户表是否被禁用"
+      },
+      "customerIsDeleted": {
+        "meaning": "客户表是否被删除"
+      },
+      "customerIsMainFlow": {
+        "meaning": "客户表是否是主流程"
+      },
+      "customerIsolation": {
+        "meaning": "客户表智能节点数据隔离标识"
+      },
+      "customerIsolations": {
+        "meaning": "客户表租户隔离列表(-查询入参-)"
+      },
+      "customerJsScript": {
+        "meaning": "客户表js脚本"
+      },
+      "customerLastLoginLogId": {
+        "meaning": "客户表最后登录日志ID"
+      },
+      "customerLastLoginTime": {
+        "meaning": "客户表最后登录时间"
+      },
+      "customerLegalId": {
+        "meaning": "客户表法人ID"
+      },
+      "customerLegalIds": {
+        "meaning": "客户表法人ID列表(-查询入参-)"
+      },
+      "customerLegalName": {
+        "meaning": "客户表法人名称"
+      },
+      "customerLevel": {
+        "meaning": "客户表客户级别"
+      },
+      "customerLevels": {
+        "meaning": "客户表客户级别(-查询入参-)"
+      },
+      "customerLocationAddress": {
+        "meaning": "客户表所在地址"
+      },
+      "customerLocationCity": {
+        "meaning": "客户表所在市"
+      },
+      "customerLocationDistrict": {
+        "meaning": "客户表所在区域"
+      },
+      "customerLocationProvince": {
+        "meaning": "客户表所在省"
+      },
+      "customerLoginCount": {
+        "meaning": "客户表登录次数"
+      },
+      "customerMobile": {
+        "meaning": "客户表手机号"
+      },
+      "customerName": {
+        "meaning": "客户表全称名称"
+      },
+      "customerNameCodeKeyword": {
+        "meaning": "客户表userCode、name or模糊搜索(-查询入参-)"
+      },
+      "customerNameCodeSearch": {
+        "meaning": "客户表name、user_code模糊搜索"
+      },
+      "customerNames": {
+        "meaning": "客户表默认类型列表（多选）(-查询入参-)"
+      },
+      "customerNationality": {
+        "meaning": "客户表国家"
+      },
+      "customerNumberExtra1": {
+        "meaning": "客户表扩展数量1"
+      },
+      "customerNumberExtra2": {
+        "meaning": "客户表扩展数量2"
+      },
+      "customerNumberExtra3": {
+        "meaning": "客户表扩展数量3"
+      },
+      "customerNumberExtra4": {
+        "meaning": "客户表扩展数量4"
+      },
+      "customerNumberExtra5": {
+        "meaning": "客户表扩展数量5"
+      },
+      "customerOrSomeoneList": {
+        "items": {
+          "type": "object"
+        },
+        "meaning": "客户表or查询Someone列表(-查询入参-)"
+      },
+      "customerParentId": {
+        "meaning": "客户表父节点ID"
+      },
+      "customerParentIds": {
+        "meaning": "客户表父id列表(-查询入参-)"
+      },
+      "customerPostcode": {
+        "meaning": "客户表邮政编码"
+      },
+      "customerProcessInstanceId": {
+        "meaning": "客户表流程实例ID"
+      },
+      "customerProcessInstanceIds": {
+        "meaning": "客户表审核流ids(-查询入参-)"
+      },
+      "customerReconciliationDate": {
+        "meaning": "客户表结账日"
+      },
+      "customerRegistrantId": {
+        "meaning": "客户表注册人ID"
+      },
+      "customerRegistrantIds": {
+        "meaning": "客户表注册人ID列表(-查询入参-)"
+      },
+      "customerRegistrantName": {
+        "meaning": "客户表注册人名称"
+      },
+      "customerRegistrationAddress": {
+        "meaning": "客户表注册地址"
+      },
+      "customerRegistrationCapital": {
+        "meaning": "客户表注册资金"
+      },
+      "customerRegistrationCity": {
+        "meaning": "客户表注册所在市"
+      },
+      "customerRegistrationDate": {
+        "meaning": "客户表注册日期"
+      },
+      "customerRegistrationDistrict": {
+        "meaning": "客户表注册所在区域"
+      },
+      "customerRegistrationProvince": {
+        "meaning": "客户表注册所在省"
+      },
+      "customerRootId": {
+        "meaning": "客户表根节点id(-查询入参-)"
+      },
+      "customerRootSystemCode": {
+        "meaning": "客户表根系统编码(-查询入参-)"
+      },
+      "customerSequenceNumber": {
+        "meaning": "customerSequenceNumber"
+      },
+      "customerSerialNumber": {
+        "meaning": "客户表顺序号"
+      },
+      "customerShortName": {
+        "meaning": "客户表简称名称"
+      },
+      "customerSomeoneAddressId": {
+        "meaning": "客户表默认地址ID"
+      },
+      "customerSomeoneAddressIds": {
+        "meaning": "客户表默认地址ID列表(-查询入参-)"
+      },
+      "customerSomeoneCertificateId": {
+        "meaning": "客户表默认证书ID"
+      },
+      "customerSomeoneCertificateIds": {
+        "meaning": "客户表默认证书ID列表(-查询入参-)"
+      },
+      "customerSomeoneContactId": {
+        "meaning": "客户表默认联系人ID"
+      },
+      "customerSomeoneContactIds": {
+        "meaning": "客户表默认联系人ID列表(-查询入参-)"
+      },
+      "customerSource": {
+        "meaning": "客户表源节点id(-查询入参-)"
+      },
+      "customerSourceTenantId": {
+        "meaning": "客户表来源租户ID"
+      },
+      "customerSourceTenantIds": {
+        "meaning": "客户表来源租户ID列表(-查询入参-)"
+      },
+      "customerState": {
+        "meaning": "客户表通用状态"
+      },
+      "customerStates": {
+        "meaning": "客户表通用状态列表(-查询入参-)"
+      },
+      "customerSystemCode": {
+        "meaning": "客户表系统编码"
+      },
+      "customerSystemCodes": {
+        "meaning": "客户表系统编码列表(-查询入参-)"
+      },
+      "customerTarget": {
+        "meaning": "客户表目标节点id(-查询入参-)"
+      },
+      "customerTaskNodeName": {
+        "meaning": "客户表任务节点名称"
+      },
+      "customerTelephone": {
+        "meaning": "客户表电话"
+      },
+      "customerTenantId": {
+        "meaning": "客户表租户ID"
+      },
+      "customerTenantIds": {
+        "meaning": "客户表租户ID列表(-查询入参-)"
+      },
+      "customerThirdPartyClass": {
+        "meaning": "客户表第三方分类"
+      },
+      "customerThirdPartyId": {
+        "meaning": "客户表第三方系统中的唯一ID"
+      },
+      "customerThirdPartyName": {
+        "meaning": "客户表第三方名称"
+      },
+      "customerToAuditDate": {
+        "meaning": "customerToAuditDate"
+      },
+      "customerToCreateTime": {
+        "meaning": "customerToCreateTime"
+      },
+      "customerToDateExtra1": {
+        "meaning": "customerToDateExtra1"
+      },
+      "customerToDateExtra2": {
+        "meaning": "customerToDateExtra2"
+      },
+      "customerToDateExtra3": {
+        "meaning": "customerToDateExtra3"
+      },
+      "customerToDateExtra4": {
+        "meaning": "customerToDateExtra4"
+      },
+      "customerToDateExtra5": {
+        "meaning": "customerToDateExtra5"
+      },
+      "customerToLastLoginTime": {
+        "meaning": "customerToLastLoginTime"
+      },
+      "customerToRegistrationDate": {
+        "meaning": "customerToRegistrationDate"
+      },
+      "customerToUpdateTime": {
+        "meaning": "customerToUpdateTime"
+      },
+      "customerToUserCode": {
+        "meaning": "客户表终止单号(-查询入参-)"
+      },
+      "customerTrueFlags": {
+        "meaning": "客户表为1的标志位（可以多个）(-查询入参-)"
+      },
+      "customerTypeCode": {
+        "meaning": "客户表link类型编码(-查询入参-)"
+      },
+      "customerTypeCodes": {
+        "meaning": "客户表类型Code列表(-查询入参-)"
+      },
+      "customerUpdateTime": {
+        "meaning": "客户表更新时间"
+      },
+      "customerUpdater": {
+        "meaning": "客户表更新人"
+      },
+      "customerUpdaterId": {
+        "meaning": "客户表更新人ID"
+      },
+      "customerUserCode": {
+        "meaning": "客户表智能节点的唯一编码"
+      },
+      "customerUserCodes": {
+        "meaning": "客户表智能节点的唯一编码列表(-查询入参-)"
+      },
+      "customerVarExtra1": {
+        "meaning": "客户表扩展1"
+      },
+      "customerVarExtra2": {
+        "meaning": "客户表扩展2"
+      },
+      "customerVarExtra3": {
+        "meaning": "客户表扩展3"
+      },
+      "customerVarExtra4": {
+        "meaning": "客户表扩展4"
+      },
+      "customerVarExtra5": {
+        "meaning": "客户表扩展5"
+      },
+      "customerVersion": {
+        "meaning": "客户表版本号"
+      },
+      "customerWebsite": {
+        "meaning": "客户表网址"
+      }
+    }
+  }

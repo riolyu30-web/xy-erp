@@ -1,0 +1,351 @@
+ {
+    "api_name": "/group/findList",
+    "table_name": "部门表",
+    "request": {
+      "groupClazz": "XY_USERCENTER_GROUP",
+      "groupDefaultType": "DEPARTMENT"
+    },
+    "response": {
+      "groupApplicationId": {
+        "meaning": "部门表应用ID"
+      },
+      "groupAuditDate": {
+        "meaning": "部门表审核时间"
+      },
+      "groupAuditStatus": {
+        "meaning": "部门表审核状态"
+      },
+      "groupAuditStatuses": {
+        "meaning": "部门表审核状态列表(-查询入参-)"
+      },
+      "groupAuditor": {
+        "meaning": "部门表审核人(-查询入参-)"
+      },
+      "groupBizVersion": {
+        "meaning": "部门表业务自定义版本号"
+      },
+      "groupBriefName": {
+        "meaning": "部门表简称"
+      },
+      "groupByTimeFormat": {
+        "type": "object",
+        "meaning": "部门表自定义时间格式聚合(key是字段名,value是时间格式)(-查询入参-)"
+      },
+      "groupBys": {
+        "meaning": "部门表分组字段(-查询入参-)"
+      },
+      "groupClazz": {
+        "meaning": "部门表子类 类名（表和类一一对应）"
+      },
+      "groupComment": {
+        "meaning": "部门表评论"
+      },
+      "groupContactName": {
+        "meaning": "部门表联系人名称"
+      },
+      "groupCreateTime": {
+        "meaning": "部门表创建时间"
+      },
+      "groupCreator": {
+        "meaning": "部门表创建人"
+      },
+      "groupCreatorId": {
+        "meaning": "部门表创建人ID"
+      },
+      "groupDateExtra1": {
+        "meaning": "部门表扩展时间1"
+      },
+      "groupDateExtra2": {
+        "meaning": "部门表扩展时间2"
+      },
+      "groupDateExtra3": {
+        "meaning": "部门表扩展时间3"
+      },
+      "groupDateExtra4": {
+        "meaning": "部门表扩展时间4"
+      },
+      "groupDateExtra5": {
+        "meaning": "部门表扩展时间5"
+      },
+      "groupDefaultFlag": {
+        "meaning": "部门表默认标识"
+      },
+      "groupDefaultType": {
+        "meaning": "部门表智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "groupDefaultTypes": {
+        "meaning": "部门表默认类型列表（多选）(-查询入参-)"
+      },
+      "groupDescription": {
+        "meaning": "部门表描述"
+      },
+      "groupEmail": {
+        "meaning": "部门表邮箱"
+      },
+      "groupEngName": {
+        "meaning": "部门表英文名称"
+      },
+      "groupEqName": {
+        "meaning": "部门表判断名称是否相同(-查询入参-)"
+      },
+      "groupExtension": {
+        "meaning": "部门表扩展数据"
+      },
+      "groupExternalState": {
+        "meaning": "部门表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "groupFalseFlags": {
+        "meaning": "部门表为0的标志位（可以多个）(-查询入参-)"
+      },
+      "groupFaxNo": {
+        "meaning": "部门表传真号"
+      },
+      "groupFlags": {
+        "meaning": "部门表63位标志位"
+      },
+      "groupFromAuditDate": {
+        "meaning": "groupFromAuditDate"
+      },
+      "groupFromCreateTime": {
+        "meaning": "groupFromCreateTime"
+      },
+      "groupFromDateExtra1": {
+        "meaning": "groupFromDateExtra1"
+      },
+      "groupFromDateExtra2": {
+        "meaning": "groupFromDateExtra2"
+      },
+      "groupFromDateExtra3": {
+        "meaning": "groupFromDateExtra3"
+      },
+      "groupFromDateExtra4": {
+        "meaning": "groupFromDateExtra4"
+      },
+      "groupFromDateExtra5": {
+        "meaning": "groupFromDateExtra5"
+      },
+      "groupFromUpdateTime": {
+        "meaning": "groupFromUpdateTime"
+      },
+      "groupFromUserCode": {
+        "meaning": "部门表起始单号(-查询入参-)"
+      },
+      "groupGroovyScript": {
+        "meaning": "部门表groovy脚本"
+      },
+      "groupGropeCode": {
+        "meaning": "部门表搜索码"
+      },
+      "groupHasParent": {
+        "meaning": "部门表存在父级(-查询入参-)"
+      },
+      "groupId": {
+        "meaning": "部门表ID",
+        "is_primary": true
+      },
+      "groupIds": {
+        "meaning": "部门表ID列表(-查询入参-)"
+      },
+      "groupInUsed": {
+        "meaning": "部门表是否被使用"
+      },
+      "groupIsAutomaticCommit": {
+        "meaning": "部门表是否自动提交(-查询入参-)"
+      },
+      "groupIsBanned": {
+        "meaning": "部门表是否被禁用"
+      },
+      "groupIsDeleted": {
+        "meaning": "部门表是否被删除"
+      },
+      "groupIsMainFlow": {
+        "meaning": "部门表是否是主流程"
+      },
+      "groupIsolation": {
+        "meaning": "部门表智能节点数据隔离标识"
+      },
+      "groupIsolations": {
+        "meaning": "部门表租户隔离列表(-查询入参-)"
+      },
+      "groupJsScript": {
+        "meaning": "部门表js脚本"
+      },
+      "groupLocationAddress": {
+        "meaning": "部门表所在地址"
+      },
+      "groupMobile": {
+        "meaning": "部门表手机号"
+      },
+      "groupName": {
+        "meaning": "部门表智能节点名"
+      },
+      "groupNameCodeKeyword": {
+        "meaning": "部门表userCode、name or模糊搜索(-查询入参-)"
+      },
+      "groupNameCodeSearch": {
+        "meaning": "部门表name、user_code模糊搜索"
+      },
+      "groupNames": {
+        "meaning": "部门表默认类型列表（多选）(-查询入参-)"
+      },
+      "groupNumberExtra1": {
+        "meaning": "部门表扩展数量1"
+      },
+      "groupNumberExtra2": {
+        "meaning": "部门表扩展数量2"
+      },
+      "groupNumberExtra3": {
+        "meaning": "部门表扩展数量3"
+      },
+      "groupNumberExtra4": {
+        "meaning": "部门表扩展数量4"
+      },
+      "groupNumberExtra5": {
+        "meaning": "部门表扩展数量5"
+      },
+      "groupParentId": {
+        "meaning": "部门表父节点ID"
+      },
+      "groupParentIds": {
+        "meaning": "部门表父id列表(-查询入参-)"
+      },
+      "groupPostcode": {
+        "meaning": "部门表邮政编码"
+      },
+      "groupProcessInstanceId": {
+        "meaning": "部门表流程实例ID"
+      },
+      "groupProcessInstanceIds": {
+        "meaning": "部门表审核流ids(-查询入参-)"
+      },
+      "groupQq": {
+        "meaning": "部门表QQ"
+      },
+      "groupRootId": {
+        "meaning": "部门表根节点id(-查询入参-)"
+      },
+      "groupRootSystemCode": {
+        "meaning": "部门表根系统编码(-查询入参-)"
+      },
+      "groupSerialNumber": {
+        "meaning": "部门表顺序号"
+      },
+      "groupShortName": {
+        "meaning": "部门表简称名称"
+      },
+      "groupSource": {
+        "meaning": "部门表源节点id(-查询入参-)"
+      },
+      "groupState": {
+        "meaning": "部门表通用状态"
+      },
+      "groupStates": {
+        "meaning": "部门表通用状态列表(-查询入参-)"
+      },
+      "groupSystemCode": {
+        "meaning": "部门表系统编码"
+      },
+      "groupSystemCodes": {
+        "meaning": "部门表系统编码列表(-查询入参-)"
+      },
+      "groupTarget": {
+        "meaning": "部门表目标节点id(-查询入参-)"
+      },
+      "groupTaskNodeName": {
+        "meaning": "部门表任务节点名称"
+      },
+      "groupTelephone": {
+        "meaning": "部门表电话"
+      },
+      "groupTenantId": {
+        "meaning": "部门表租户ID"
+      },
+      "groupTenantIds": {
+        "meaning": "部门表列表(-查询入参-)"
+      },
+      "groupThirdPartyClass": {
+        "meaning": "部门表第三方分类"
+      },
+      "groupThirdPartyId": {
+        "meaning": "部门表第三方系统中的唯一ID"
+      },
+      "groupThirdPartyName": {
+        "meaning": "部门表第三方名称"
+      },
+      "groupToAuditDate": {
+        "meaning": "groupToAuditDate"
+      },
+      "groupToCreateTime": {
+        "meaning": "groupToCreateTime"
+      },
+      "groupToDateExtra1": {
+        "meaning": "groupToDateExtra1"
+      },
+      "groupToDateExtra2": {
+        "meaning": "groupToDateExtra2"
+      },
+      "groupToDateExtra3": {
+        "meaning": "groupToDateExtra3"
+      },
+      "groupToDateExtra4": {
+        "meaning": "groupToDateExtra4"
+      },
+      "groupToDateExtra5": {
+        "meaning": "groupToDateExtra5"
+      },
+      "groupToUpdateTime": {
+        "meaning": "groupToUpdateTime"
+      },
+      "groupToUserCode": {
+        "meaning": "部门表终止单号(-查询入参-)"
+      },
+      "groupTrueFlags": {
+        "meaning": "部门表为1的标志位（可以多个）(-查询入参-)"
+      },
+      "groupTypeCode": {
+        "meaning": "部门表link类型编码(-查询入参-)"
+      },
+      "groupTypeCodes": {
+        "meaning": "部门表类型Code列表(-查询入参-)"
+      },
+      "groupUpdateTime": {
+        "meaning": "部门表更新时间"
+      },
+      "groupUpdater": {
+        "meaning": "部门表更新人"
+      },
+      "groupUpdaterId": {
+        "meaning": "部门表更新人ID"
+      },
+      "groupUserCode": {
+        "meaning": "部门表智能节点的唯一编码"
+      },
+      "groupUserCodes": {
+        "meaning": "部门表智能节点的唯一编码列表(-查询入参-)"
+      },
+      "groupVarExtra1": {
+        "meaning": "部门表扩展1"
+      },
+      "groupVarExtra2": {
+        "meaning": "部门表扩展2"
+      },
+      "groupVarExtra3": {
+        "meaning": "部门表扩展3"
+      },
+      "groupVarExtra4": {
+        "meaning": "部门表扩展4"
+      },
+      "groupVarExtra5": {
+        "meaning": "部门表扩展5"
+      },
+      "groupVersion": {
+        "meaning": "部门表版本号"
+      },
+      "groupWebAddress": {
+        "meaning": "部门表网址"
+      },
+      "groupWechatNumber": {
+        "meaning": "部门表微信号"
+      }
+    }
+  }

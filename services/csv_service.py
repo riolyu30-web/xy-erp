@@ -22,12 +22,14 @@ def get_data(token: str) -> dict:
         lines = data_list.splitlines()  # 按行分割数据
         if "结果" in token:
             count = len(lines) - 1  # 计算有效数据行            
-            if count > 0:
-                return "\n".join(lines[:30]) # 返回有效数据样本
-            else:
+            if count > 30:
+                return {"sample": "\n".join(lines[:30]),"tips":f"仅返回前30条数据做参考，共{count}条有效数据"}  # 返回有效数据样本
+            elif count == 0:
                 return {"error": "结果数据为空"}  # 返回错误信息
+            else:
+                return "\n".join(lines)  # 返回有效数据样本
         else:
-            return {"sample": "\n".join(lines[:5])}  # 5条有效字段数据样本
+            return {"sample": "\n".join(lines[:5]),"tips":"仅返回前5条数据做参考,请执行数据运算后查看"}  # 5条有效字段数据样本
 
 
 @csv_mcp.tool()

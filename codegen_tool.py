@@ -57,11 +57,13 @@ def {{ tool.function_name }}({{ tool.args_str }}) -> str:  # 定义工具函数
         {% for filter in tool.filters %}
         "{{ filter.field }}": {{ filter.field }},  # 动态参数
         {% endfor %}
+        {% if tool.order_bys %}
         "orderBys": [  # 排序规则
             {% for order in tool.order_bys %}
             {{ order }}{{ "," if not loop.last else "" }}  # 排序项
             {% endfor %}
         ]  # 排序结束
+        {% endif %}
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -114,11 +116,13 @@ def {{ tool.function_name }}_test(access_token: str):  # 定义测试函数
         {% for filter in tool.filters %}
         "{{ filter.field }}": {{ filter.field }},  # 动态参数
         {% endfor %}
+        {% if tool.order_bys %}
         "orderBys": [  # 排序规则
             {% for order in tool.order_bys %}
             {{ order }}{{ "," if not loop.last else "" }}  # 排序项
             {% endfor %}
         ]  # 排序结束
+        {% endif %}
     }  # 数据字典结束
 
     # 定义需要保留的字段列表
@@ -135,7 +139,7 @@ def {{ tool.function_name }}_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    print(fetch_data("{{ tool.alias_name }}", url, data, access_token, filtered_fields, meaning_list, debug_mode=True))
+    fetch_data("{{ tool.alias_name }}", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 {% endfor %}
 
 if __name__ == "__main__":

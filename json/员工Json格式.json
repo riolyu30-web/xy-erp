@@ -1,0 +1,479 @@
+{
+    "api_name" : "/staff/findList",
+    "table_name" : "员工接口",
+    "request" : {
+      "staffClazz":"STAFF"
+    },
+    "response" : {
+      "staffApplicationId" : {
+        "meaning" : "员工表应用ID"
+      },
+      "staffAuditDate" : {
+        "meaning" : "员工表审核时间"
+      },
+      "staffAuditStatus" : {
+        "meaning" : "员工表审核状态"
+      },
+      "staffAuditStatuses" : {
+        "meaning" : "员工表审核状态列表(-查询入参-)"
+      },
+      "staffAuditor" : {
+        "meaning" : "员工表审核人(-查询入参-)"
+      },
+      "staffBankAccount" : {
+        "meaning" : "员工表银行帐号"
+      },
+      "staffBaseSalary" : {
+        "meaning" : "员工表基本工资"
+      },
+      "staffBirthAddress" : {
+        "meaning" : "员工表出生地详细地址"
+      },
+      "staffBirthAreaId" : {
+        "meaning" : "员工表出生地详细地址行政区域_id"
+      },
+      "staffBirthAreaIds" : {
+        "meaning" : "员工表出生地详细地址行政区域_id列表(-查询入参-)"
+      },
+      "staffBirthDate" : {
+        "type" : "object",
+        "meaning" : "员工表出生日期"
+      },
+      "staffBirthplace" : {
+        "meaning" : "员工表籍贯"
+      },
+      "staffBizVersion" : {
+        "meaning" : "员工表业务自定义版本号"
+      },
+      "staffBriefName" : {
+        "meaning" : "员工表简称"
+      },
+      "staffClazz" : {
+        "meaning" : "员工表子类 类名（表和类一一对应）"
+      },
+      "staffComment" : {
+        "meaning" : "员工表评论"
+      },
+      "staffContactRelation" : {
+        "meaning" : "员工表紧急联系人关系(父子，母子，亲戚等)"
+      },
+      "staffContactRelationPhone" : {
+        "meaning" : "员工表紧急联系电话"
+      },
+      "staffCreateTime" : {
+        "meaning" : "员工表创建时间"
+      },
+      "staffCreator" : {
+        "meaning" : "员工表创建人"
+      },
+      "staffCreatorId" : {
+        "meaning" : "员工表创建人ID"
+      },
+      "staffDateExtra1" : {
+        "meaning" : "员工表扩展时间1"
+      },
+      "staffDateExtra2" : {
+        "meaning" : "员工表扩展时间2"
+      },
+      "staffDateExtra3" : {
+        "meaning" : "员工表扩展时间3"
+      },
+      "staffDateExtra4" : {
+        "meaning" : "员工表扩展时间4"
+      },
+      "staffDateExtra5" : {
+        "meaning" : "员工表扩展时间5"
+      },
+      "staffDefaultType" : {
+        "meaning" : "员工表智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "staffDefaultTypes" : {
+        "meaning" : "员工表默认类型列表（多选）(-查询入参-)"
+      },
+      "staffDepartmentId" : {
+        "meaning" : "员工表部门_id"
+      },
+      "staffDepartmentIds" : {
+        "meaning" : "员工表部门_id列表(-查询入参-)"
+      },
+      "staffDescription" : {
+        "meaning" : "员工表描述"
+      },
+      "staffEducationLevel" : {
+        "meaning" : "员工表学历(小学，初中，高中，大专，本科，硕士，博士)"
+      },
+      "staffEmail" : {
+        "meaning" : "员工表邮件"
+      },
+      "staffEmergencyContact" : {
+        "meaning" : "员工表紧急联系人"
+      },
+      "staffEngName" : {
+        "meaning" : "员工表英文名称"
+      },
+      "staffEqName" : {
+        "meaning" : "员工表判断名称是否相同(-查询入参-)"
+      },
+      "staffEthnicity" : {
+        "meaning" : "员工表民族"
+      },
+      "staffExtension" : {
+        "meaning" : "员工表扩展数据"
+      },
+      "staffExternalState" : {
+        "meaning" : "员工表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "staffFalseFlags" : {
+        "meaning" : "员工表为0的标志位（可以多个）(-查询入参-)"
+      },
+      "staffFlags" : {
+        "meaning" : "员工表63位标志位"
+      },
+      "staffFromAuditDate" : {
+        "meaning" : "staffFromAuditDate"
+      },
+      "staffFromBirthDate" : {
+        "type" : "object",
+        "meaning" : "staffFromBirthDate"
+      },
+      "staffFromCreateTime" : {
+        "meaning" : "staffFromCreateTime"
+      },
+      "staffFromDateExtra1" : {
+        "meaning" : "staffFromDateExtra1"
+      },
+      "staffFromDateExtra2" : {
+        "meaning" : "staffFromDateExtra2"
+      },
+      "staffFromDateExtra3" : {
+        "meaning" : "staffFromDateExtra3"
+      },
+      "staffFromDateExtra4" : {
+        "meaning" : "staffFromDateExtra4"
+      },
+      "staffFromDateExtra5" : {
+        "meaning" : "staffFromDateExtra5"
+      },
+      "staffFromGradDate" : {
+        "type" : "object",
+        "meaning" : "staffFromGradDate"
+      },
+      "staffFromHireDate" : {
+        "type" : "object",
+        "meaning" : "staffFromHireDate"
+      },
+      "staffFromLeaveDate" : {
+        "type" : "object",
+        "meaning" : "staffFromLeaveDate"
+      },
+      "staffFromUpdateTime" : {
+        "meaning" : "staffFromUpdateTime"
+      },
+      "staffFromUserCode" : {
+        "meaning" : "员工表起始单号(-查询入参-)"
+      },
+      "staffFullName" : {
+        "meaning" : "员工表员工全名"
+      },
+      "staffGradDate" : {
+        "type" : "object",
+        "meaning" : "员工表毕业日期"
+      },
+      "staffGraduationSchool" : {
+        "meaning" : "员工表毕业院校"
+      },
+      "staffGroovyScript" : {
+        "meaning" : "员工表groovy脚本"
+      },
+      "staffGropeCode" : {
+        "meaning" : "员工表搜索码"
+      },
+      "staffHasParent" : {
+        "meaning" : "员工表存在父级(-查询入参-)"
+      },
+      "staffHeight" : {
+        "meaning" : "员工表身高"
+      },
+      "staffHireDate" : {
+        "type" : "object",
+        "meaning" : "员工表入职日期"
+      },
+      "staffHkRegion" : {
+        "meaning" : "员工表户籍区域"
+      },
+      "staffHourSalary" : {
+        "meaning" : "员工表时薪"
+      },
+      "staffHouseRegiNature" : {
+        "meaning" : "员工表户口性质"
+      },
+      "staffHouseRegiNatures" : {
+        "meaning" : "员工表户口性质(-查询入参-)"
+      },
+      "staffId" : {
+        "meaning" : "员工表PK",
+        "is_primary" : true
+      },
+      "staffIdcard" : {
+        "meaning" : "员工表身份证"
+      },
+      "staffIds" : {
+        "meaning" : "员工表PK列表(-查询入参-)"
+      },
+      "staffInUsed" : {
+        "meaning" : "员工表是否被使用"
+      },
+      "staffIsAutomaticCommit" : {
+        "meaning" : "员工表是否自动提交(-查询入参-)"
+      },
+      "staffIsBanned" : {
+        "meaning" : "员工表是否被禁用"
+      },
+      "staffIsDeleted" : {
+        "meaning" : "员工表是否被删除"
+      },
+      "staffIsMainFlow" : {
+        "meaning" : "员工表是否是主流程"
+      },
+      "staffIsTemporary" : {
+        "meaning" : "员工表是否临时工(0否，1是)"
+      },
+      "staffIsolation" : {
+        "meaning" : "员工表智能节点数据隔离标识"
+      },
+      "staffIsolations" : {
+        "meaning" : "员工表租户隔离列表(-查询入参-)"
+      },
+      "staffJobStatus" : {
+        "meaning" : "员工表在职情况(true在职，false离职)"
+      },
+      "staffJsScript" : {
+        "meaning" : "员工表js脚本"
+      },
+      "staffLeaveDate" : {
+        "type" : "object",
+        "meaning" : "员工表离职日期"
+      },
+      "staffMaritalStatus" : {
+        "meaning" : "员工表婚姻状况(0未婚，1已婚)"
+      },
+      "staffName" : {
+        "meaning" : "员工表智能节点名"
+      },
+      "staffNameCodeKeyword" : {
+        "meaning" : "员工表userCode、name or模糊搜索(-查询入参-)"
+      },
+      "staffNameCodeSearch" : {
+        "meaning" : "员工表name、user_code模糊搜索"
+      },
+      "staffNames" : {
+        "meaning" : "员工表默认类型列表（多选）(-查询入参-)"
+      },
+      "staffNumberExtra1" : {
+        "meaning" : "员工表扩展数量1"
+      },
+      "staffNumberExtra2" : {
+        "meaning" : "员工表扩展数量2"
+      },
+      "staffNumberExtra3" : {
+        "meaning" : "员工表扩展数量3"
+      },
+      "staffNumberExtra4" : {
+        "meaning" : "员工表扩展数量4"
+      },
+      "staffNumberExtra5" : {
+        "meaning" : "员工表扩展数量5"
+      },
+      "staffOpenBank" : {
+        "meaning" : "员工表开户银行"
+      },
+      "staffParentId" : {
+        "meaning" : "员工表父节点ID"
+      },
+      "staffParentIds" : {
+        "meaning" : "员工表父id列表(-查询入参-)"
+      },
+      "staffPhone" : {
+        "meaning" : "员工表手机"
+      },
+      "staffPoliticalStatus" : {
+        "meaning" : "员工表政治面貌(群众，党员)"
+      },
+      "staffPostId" : {
+        "meaning" : "员工表岗位_id"
+      },
+      "staffPostIds" : {
+        "meaning" : "员工表岗位_id列表(-查询入参-)"
+      },
+      "staffProcessInstanceId" : {
+        "meaning" : "员工表流程实例ID"
+      },
+      "staffProcessInstanceIds" : {
+        "meaning" : "员工表审核流ids(-查询入参-)"
+      },
+      "staffProfessional" : {
+        "meaning" : "员工表专业"
+      },
+      "staffQqNumber" : {
+        "meaning" : "员工表QQ号码"
+      },
+      "staffRank" : {
+        "meaning" : "员工表职级"
+      },
+      "staffResidentialAddress" : {
+        "meaning" : "员工表居住地详细地址"
+      },
+      "staffResidentialAreaId" : {
+        "meaning" : "员工表居住地地址行政区域_id"
+      },
+      "staffResidentialAreaIds" : {
+        "meaning" : "员工表居住地地址行政区域_id列表(-查询入参-)"
+      },
+      "staffRootId" : {
+        "meaning" : "员工表根节点id(-查询入参-)"
+      },
+      "staffRootSystemCode" : {
+        "meaning" : "员工表根系统编码(-查询入参-)"
+      },
+      "staffSerialNumber" : {
+        "meaning" : "员工表顺序号"
+      },
+      "staffSex" : {
+        "meaning" : "员工表性别(1男，2女，3中性别)"
+      },
+      "staffShortName" : {
+        "meaning" : "员工表员工名字(简称)"
+      },
+      "staffSource" : {
+        "meaning" : "员工表源节点id(-查询入参-)"
+      },
+      "staffState" : {
+        "meaning" : "员工表通用状态"
+      },
+      "staffStates" : {
+        "meaning" : "员工表通用状态列表(-查询入参-)"
+      },
+      "staffSystemCode" : {
+        "meaning" : "员工表系统编码"
+      },
+      "staffSystemCodes" : {
+        "meaning" : "员工表系统编码列表(-查询入参-)"
+      },
+      "staffTarget" : {
+        "meaning" : "员工表目标节点id(-查询入参-)"
+      },
+      "staffTaskNodeName" : {
+        "meaning" : "员工表任务节点名称"
+      },
+      "staffTelephone" : {
+        "meaning" : "员工表电话"
+      },
+      "staffTenantId" : {
+        "meaning" : "员工表租户_id"
+      },
+      "staffTenantIds" : {
+        "meaning" : "员工表租户_id列表(-查询入参-)"
+      },
+      "staffThirdPartyClass" : {
+        "meaning" : "员工表第三方分类"
+      },
+      "staffThirdPartyId" : {
+        "meaning" : "员工表第三方系统中的唯一ID"
+      },
+      "staffThirdPartyName" : {
+        "meaning" : "员工表第三方名称"
+      },
+      "staffToAuditDate" : {
+        "meaning" : "staffToAuditDate"
+      },
+      "staffToBirthDate" : {
+        "type" : "object",
+        "meaning" : "staffToBirthDate"
+      },
+      "staffToCreateTime" : {
+        "meaning" : "staffToCreateTime"
+      },
+      "staffToDateExtra1" : {
+        "meaning" : "staffToDateExtra1"
+      },
+      "staffToDateExtra2" : {
+        "meaning" : "staffToDateExtra2"
+      },
+      "staffToDateExtra3" : {
+        "meaning" : "staffToDateExtra3"
+      },
+      "staffToDateExtra4" : {
+        "meaning" : "staffToDateExtra4"
+      },
+      "staffToDateExtra5" : {
+        "meaning" : "staffToDateExtra5"
+      },
+      "staffToGradDate" : {
+        "type" : "object",
+        "meaning" : "staffToGradDate"
+      },
+      "staffToHireDate" : {
+        "type" : "object",
+        "meaning" : "staffToHireDate"
+      },
+      "staffToLeaveDate" : {
+        "type" : "object",
+        "meaning" : "staffToLeaveDate"
+      },
+      "staffToUpdateTime" : {
+        "meaning" : "staffToUpdateTime"
+      },
+      "staffToUserCode" : {
+        "meaning" : "员工表终止单号(-查询入参-)"
+      },
+      "staffTrueFlags" : {
+        "meaning" : "员工表为1的标志位（可以多个）(-查询入参-)"
+      },
+      "staffTypeCode" : {
+        "meaning" : "员工表link类型编码(-查询入参-)"
+      },
+      "staffTypeCodes" : {
+        "meaning" : "员工表类型Code列表(-查询入参-)"
+      },
+      "staffUpdateTime" : {
+        "meaning" : "员工表更新时间"
+      },
+      "staffUpdater" : {
+        "meaning" : "员工表更新人"
+      },
+      "staffUpdaterId" : {
+        "meaning" : "员工表更新人ID"
+      },
+      "staffUserId" : {
+        "meaning" : "员工表用户id",
+        "is_primary" : true
+      },
+      "staffVarExtra1" : {
+        "meaning" : "员工表扩展1"
+      },
+      "staffVarExtra2" : {
+        "meaning" : "员工表扩展2"
+      },
+      "staffVarExtra3" : {
+        "meaning" : "员工表扩展3"
+      },
+      "staffVarExtra4" : {
+        "meaning" : "员工表扩展4"
+      },
+      "staffVarExtra5" : {
+        "meaning" : "员工表扩展5"
+      },
+      "staffVersion" : {
+        "meaning" : "员工表版本号"
+      },
+      "staffWechatId" : {
+        "meaning" : "员工表微信号码"
+      },
+      "staffWechatIds" : {
+        "meaning" : "员工表微信号码列表(-查询入参-)"
+      },
+      "staffWeight" : {
+        "meaning" : "员工表体重"
+      }
+    }
+  }

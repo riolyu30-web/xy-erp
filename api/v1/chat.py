@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request, HTTPException, Depends
 from api.v1.models import ChatMCPRequest
-from services.llm_manager import dashscope_mcp_stream, create_assistant
+from services.llm_manager import dashscope_mcp_stream, create_assistant,dashscope_chat_json
 from api.v1.dependencies import get_current_user
 # 创建路由器实例
 router = APIRouter(tags=["聊天"])
@@ -85,3 +85,115 @@ async def chat_mcp(chat: ChatMCPRequest, request: Request, current_user: dict = 
     )
 
     return await dashscope_mcp_stream(request, assistant_instance, chat.question)
+
+@router.post("/chat/mcp/json")
+async def chat_make_json(chat: ChatMCPRequest, request: Request, current_user: dict = Depends(get_current_user)):
+  """
+  聊天模型
+  Args:
+        chat: ChatMCPRequest 聊天模型
+  Returns:
+  response: 聊天响应
+  """
+  system_prompt = """
+用户输入接口文档，按以下规范输出配置JSON：
+
+# JSON 结构注解
+
+本文档使用 JSON 格式定义数据表结构，以下是 JSON 对象中各键 (key) 的作用说明：
+
+-   `table_name`: (字符串) - 数据标识
+-   `host_name`: (字符串) - 接口的域名包含协议头（如 https://），默认值为 ``。
+-   `api_name`: (字符串) - 接口的名称，用于在 API 中标识该接口。
+-   `remark`: (字符串, 可选) - 对数据表或接口的额外备注或约束说明。
+-   `request`: (对象, 可选) - 请求数据中的固定参数，每个字段都是一个键值对。
+-   `filter`: (数组, 可选) - 请求数据中的参数变量，每个字段都是一个键值对，键为字段名，值为字段的详细定义，包含如下：
+    -   `field`: (字符串) - 请求数据中输入参数变量名。
+    -   `format`: (字符串) - 请求数据中输入格式。
+    -   `remark`: (字符串) - 对字段值额外备注或约束说明。
+-   `orderBys`: (数组, 可选) - 请求数据中的排序定义，每个字段都是一个键值对，键为字段名，值为字段的详细定义，包含如下：
+    -   `field`: (字符串) - 响应数据中字段值。
+    -   `type`: (字符串) - ASC 或 DESC。
+-   `data_label`: (字符串) - 响应数据中的具体业务数组标签（非状态字段），默认值为 ``。
+-   `order_label`: (字符串) - 请求数据中的排序标签，默认值为 ``。
+-   `token`: (字符串) - 请求数据中的 header Authorization 标签的值，默认值为 ``。
+-   `response`: (数组，非状态属性) - 响应数据中的具体业务数组内每个对象，键为字段名，值为字段的详细定义，包含如下。
+    -   `meaning`: (字符串) - 字段的中文业务含义。
+    -   `is_primary`: (布尔值) - 当字段为主键时，此键设为 `true`。
+    -   `values`: (对象, 可选) - 当字段为枚举类型时，此键用于列出所有可选值及其对应的文本说明。
+
+# JSON 参考
+{
+    "table_name": "员工表",
+    "api_name": "/staff/findList",
+    "remark": "存储公司所有员工的基本信息",
+    "data_label": "data",
+    "order_label": "orderBys",
+    "token": "token",
+    "request": {
+      "staffClazz": "STAFF",
+      "groupDefaultType": "TEAM"
+    },
+    "filter": [
+        {
+            "field": "customerId",
+            "format": "YYYYHHMM",
+            "remark": "ID"
+        }
+    ],
+    "orderBys": [
+        {
+            "field": "customerId",
+            "type": "ASC"
+        }
+    ],
+    "response": {
+        "user_id": {
+            "meaning": "员工唯一标识",
+            "is_primary": true
+        },
+        "name": {
+            "meaning": "员工姓名"
+        },
+        "department_id": {
+            "meaning": "所属部门ID",
+            "remark": "关联到部门表，表示员工所属部门"
+        },
+        "group_id": {
+            "meaning": "班组ID",
+            "remark": "关联到班组表，表示员工所属班组"
+        },
+        "email": {
+            "meaning": "电子邮箱",
+            "remark": "用于登录和接收通知，必须唯一"
+        },
+        "phone_number": {
+            "meaning": "手机号码"
+        },
+        "hire_date": {
+            "meaning": "入职日期",
+        },
+        "status": {
+            "meaning": "员工状态",
+            "values": {
+                "1": "在职",
+                "0": "离职"
+            }
+        },
+        "created_at": {
+            "meaning": "创建时间",
+            "remark": "记录创建时的时间戳"
+        },
+        "updated_at": {
+            "meaning": "最后更新时间",
+            "remark": "记录每次更新时的时间戳"
+        }
+    }
+}
+  """
+
+
+
+    # 调用同步方法获取JSON响应
+  return dashscope_chat_json(system_prompt, chat.question)
+

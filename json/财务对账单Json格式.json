@@ -1,0 +1,804 @@
+{
+    "api_name" : "/cust-statement-det/findList",
+    "table_name" : "财务管理/客户对账单明细",
+    "request" : {
+      "custStatementDetCustStatementClazz" : "CUST_STATEMENT",
+      "custStatementDetClazz" : "CUST_STATEMENT_DET"
+    },
+    "mainTabClazz" : "CUST_STATEMENT_DET",
+    "response" : {
+      "custStatementDetActualTimeRequired" : {
+        "meaning" : "客户对账单明细实际需时(小时)"
+      },
+      "custStatementDetAdjustmentTimeRequired" : {
+        "meaning" : "客户对账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "custStatementDetAmount" : {
+        "meaning" : "客户对账单明细金额"
+      },
+      "custStatementDetApplicationId" : {
+        "meaning" : "客户对账单明细应用ID"
+      },
+      "custStatementDetAuditDate" : {
+        "meaning" : "客户对账单明细审核时间"
+      },
+      "custStatementDetAuditStatus" : {
+        "meaning" : "客户对账单明细审核状态"
+      },
+      "custStatementDetAvailableScheduleId" : {
+        "meaning" : "客户对账单明细可用日程id"
+      },
+      "custStatementDetBeginTime" : {
+        "meaning" : "客户对账单明细开始时间"
+      },
+      "custStatementDetBizVersion" : {
+        "meaning" : "客户对账单明细业务自定义版本号"
+      },
+      "custStatementDetBriefName" : {
+        "meaning" : "客户对账单明细简称"
+      },
+      "custStatementDetBusDivisId" : {
+        "meaning" : "客户对账单明细事业部id"
+      },
+      "custStatementDetClazz" : {
+        "meaning" : "客户对账单明细子类 类名（表和类一一对应）"
+      },
+      "custStatementDetClosedReason" : {
+        "meaning" : "客户对账单明细结案原因"
+      },
+      "custStatementDetClosedStatus" : {
+        "meaning" : "客户对账单明细结案状态"
+      },
+      "custStatementDetComment" : {
+        "meaning" : "客户对账单明细评论"
+      },
+      "custStatementDetCompleteQuantity" : {
+        "meaning" : "客户对账单明细完成数量"
+      },
+      "custStatementDetCompleteStatus" : {
+        "meaning" : "客户对账单明细完成状态"
+      },
+      "custStatementDetCreateTime" : {
+        "meaning" : "客户对账单明细创建时间"
+      },
+      "custStatementDetCreator" : {
+        "meaning" : "客户对账单明细创建人"
+      },
+      "custStatementDetCreatorId" : {
+        "meaning" : "客户对账单明细创建人ID"
+      },
+      "custStatementDetCustStatementActualTimeRequired" : {
+        "meaning" : "客户对账单明细实际需时(小时)"
+      },
+      "custStatementDetCustStatementAdjustmentTimeRequired" : {
+        "meaning" : "客户对账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "custStatementDetCustStatementApplicationId" : {
+        "meaning" : "客户对账单明细应用ID"
+      },
+      "custStatementDetCustStatementAuditDate" : {
+        "meaning" : "客户对账单明细审核时间"
+      },
+      "custStatementDetCustStatementAuditStatus" : {
+        "meaning" : "客户对账单明细审核状态"
+      },
+      "custStatementDetCustStatementAvailableScheduleId" : {
+        "meaning" : "客户对账单明细可用日程id"
+      },
+      "custStatementDetCustStatementBeginTime" : {
+        "meaning" : "客户对账单明细开始时间"
+      },
+      "custStatementDetCustStatementBizVersion" : {
+        "meaning" : "客户对账单明细业务自定义版本号"
+      },
+      "custStatementDetCustStatementBriefName" : {
+        "meaning" : "客户对账单明细简称"
+      },
+      "custStatementDetCustStatementBusDivisId" : {
+        "meaning" : "客户对账单明细事业部id"
+      },
+      "custStatementDetCustStatementClazz" : {
+        "meaning" : "客户对账单明细子类 类名（表和类一一对应）"
+      },
+      "custStatementDetCustStatementClosedReason" : {
+        "meaning" : "客户对账单明细结案原因"
+      },
+      "custStatementDetCustStatementClosedStatus" : {
+        "meaning" : "客户对账单明细结案状态"
+      },
+      "custStatementDetCustStatementComment" : {
+        "meaning" : "客户对账单明细评论"
+      },
+      "custStatementDetCustStatementCompleteQuantity" : {
+        "meaning" : "客户对账单明细完成数量"
+      },
+      "custStatementDetCustStatementCompleteStatus" : {
+        "meaning" : "客户对账单明细完成状态"
+      },
+      "custStatementDetCustStatementCreateTime" : {
+        "meaning" : "客户对账单明细创建时间"
+      },
+      "custStatementDetCustStatementCreator" : {
+        "meaning" : "客户对账单明细创建人"
+      },
+      "custStatementDetCustStatementCreatorId" : {
+        "meaning" : "客户对账单明细创建人ID"
+      },
+      "custStatementDetCustStatementCurrency" : {
+        "meaning" : "客户对账单明细币种"
+      },
+      "custStatementDetCustStatementCustomerId" : {
+        "meaning" : "客户对账单明细客户_id"
+      },
+      "custStatementDetCustStatementDateExtra1" : {
+        "meaning" : "客户对账单明细扩展时间1"
+      },
+      "custStatementDetCustStatementDateExtra2" : {
+        "meaning" : "客户对账单明细扩展时间2"
+      },
+      "custStatementDetCustStatementDateExtra3" : {
+        "meaning" : "客户对账单明细扩展时间3"
+      },
+      "custStatementDetCustStatementDateExtra4" : {
+        "meaning" : "客户对账单明细扩展时间4"
+      },
+      "custStatementDetCustStatementDateExtra5" : {
+        "meaning" : "客户对账单明细扩展时间5"
+      },
+      "custStatementDetCustStatementDefaultType" : {
+        "meaning" : "客户对账单明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "custStatementDetCustStatementDeliveryDate" : {
+        "meaning" : "客户对账单明细交货日期"
+      },
+      "custStatementDetCustStatementDescription" : {
+        "meaning" : "客户对账单明细描述"
+      },
+      "custStatementDetCustStatementEndTime" : {
+        "meaning" : "客户对账单明细结束时间"
+      },
+      "custStatementDetCustStatementEndTimeRequired" : {
+        "meaning" : "客户对账单明细最后需时(小时)"
+      },
+      "custStatementDetCustStatementEngName" : {
+        "meaning" : "客户对账单明细英文名称"
+      },
+      "custStatementDetCustStatementEquipmentId" : {
+        "meaning" : "客户对账单明细设备id"
+      },
+      "custStatementDetCustStatementExchangeRateId" : {
+        "meaning" : "客户对账单明细币种汇率id"
+      },
+      "custStatementDetCustStatementExtension" : {
+        "meaning" : "客户对账单明细扩展数据"
+      },
+      "custStatementDetCustStatementExternalState" : {
+        "meaning" : "客户对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "custStatementDetCustStatementFilterClazz" : {
+        "meaning" : "客户对账单明细冗余字段用于筛选"
+      },
+      "custStatementDetCustStatementFlags" : {
+        "meaning" : "客户对账单明细63位标志位"
+      },
+      "custStatementDetCustStatementFromAuditDate" : {
+        "meaning" : "custStatementDetCustStatementFromAuditDate"
+      },
+      "custStatementDetCustStatementFromBeginTime" : {
+        "meaning" : "custStatementDetCustStatementFromBeginTime"
+      },
+      "custStatementDetCustStatementFromCreateTime" : {
+        "meaning" : "custStatementDetCustStatementFromCreateTime"
+      },
+      "custStatementDetCustStatementFromDateExtra1" : {
+        "meaning" : "custStatementDetCustStatementFromDateExtra1"
+      },
+      "custStatementDetCustStatementFromDateExtra2" : {
+        "meaning" : "custStatementDetCustStatementFromDateExtra2"
+      },
+      "custStatementDetCustStatementFromDateExtra3" : {
+        "meaning" : "custStatementDetCustStatementFromDateExtra3"
+      },
+      "custStatementDetCustStatementFromDateExtra4" : {
+        "meaning" : "custStatementDetCustStatementFromDateExtra4"
+      },
+      "custStatementDetCustStatementFromDateExtra5" : {
+        "meaning" : "custStatementDetCustStatementFromDateExtra5"
+      },
+      "custStatementDetCustStatementFromDeliveryDate" : {
+        "meaning" : "custStatementDetCustStatementFromDeliveryDate"
+      },
+      "custStatementDetCustStatementFromEndTime" : {
+        "meaning" : "custStatementDetCustStatementFromEndTime"
+      },
+      "custStatementDetCustStatementFromReceiptDate" : {
+        "meaning" : "custStatementDetCustStatementFromReceiptDate"
+      },
+      "custStatementDetCustStatementFromUpdateTime" : {
+        "meaning" : "custStatementDetCustStatementFromUpdateTime"
+      },
+      "custStatementDetCustStatementFscType" : {
+        "meaning" : "客户对账单明细FSC声明"
+      },
+      "custStatementDetCustStatementGenerativePeople" : {
+        "meaning" : "客户对账单明细下发人"
+      },
+      "custStatementDetCustStatementGenerativeState" : {
+        "meaning" : "客户对账单明细下发状态"
+      },
+      "custStatementDetCustStatementGroovyScript" : {
+        "meaning" : "客户对账单明细groovy脚本"
+      },
+      "custStatementDetCustStatementGropeCode" : {
+        "meaning" : "客户对账单明细搜索码"
+      },
+      "custStatementDetCustStatementId" : {
+        "meaning" : "客户对账单明细PK"
+      },
+      "custStatementDetCustStatementInUsed" : {
+        "meaning" : "客户对账单明细是否被使用"
+      },
+      "custStatementDetCustStatementInvTypeTaxRateId" : {
+        "meaning" : "客户对账单明细发票税率id"
+      },
+      "custStatementDetCustStatementIsBanned" : {
+        "meaning" : "客户对账单明细是否被禁用"
+      },
+      "custStatementDetCustStatementIsDeleted" : {
+        "meaning" : "客户对账单明细是否被删除"
+      },
+      "custStatementDetCustStatementIsLeaf" : {
+        "meaning" : "客户对账单明细是否叶子节点"
+      },
+      "custStatementDetCustStatementIsMainFlow" : {
+        "meaning" : "客户对账单明细是否是主流程"
+      },
+      "custStatementDetCustStatementIsManualModificationDate" : {
+        "meaning" : "客户对账单明细是否手动修改计划生产时间"
+      },
+      "custStatementDetCustStatementIsolation" : {
+        "meaning" : "客户对账单明细智能节点数据隔离标识"
+      },
+      "custStatementDetCustStatementJsScript" : {
+        "meaning" : "客户对账单明细js脚本"
+      },
+      "custStatementDetCustStatementLocCompleteQuantity" : {
+        "meaning" : "客户对账单明细本币完成数量"
+      },
+      "custStatementDetCustStatementLocTotalAmount" : {
+        "meaning" : "客户对账单明细本币总金额"
+      },
+      "custStatementDetCustStatementLocTotalInvoicedAmount" : {
+        "meaning" : "客户对账单明细本币总已开票金额"
+      },
+      "custStatementDetCustStatementLocTotalOtherExpense" : {
+        "meaning" : "客户对账单明细本币总其他费用"
+      },
+      "custStatementDetCustStatementLocTotalSettleAmount" : {
+        "meaning" : "客户对账单明细本币总结算金额（本币总金额+本币总其他费用）"
+      },
+      "custStatementDetCustStatementLocTotalSettledAmount" : {
+        "meaning" : "客户对账单明细本币总已结算金额"
+      },
+      "custStatementDetCustStatementMaterialId" : {
+        "meaning" : "客户对账单明细物料id"
+      },
+      "custStatementDetCustStatementName" : {
+        "meaning" : "客户对账单明细智能节点名"
+      },
+      "custStatementDetCustStatementNameCodeSearch" : {
+        "meaning" : "客户对账单明细name、user_code模糊搜索"
+      },
+      "custStatementDetCustStatementNumberExtra1" : {
+        "meaning" : "客户对账单明细扩展数量1"
+      },
+      "custStatementDetCustStatementNumberExtra2" : {
+        "meaning" : "客户对账单明细扩展数量2"
+      },
+      "custStatementDetCustStatementNumberExtra3" : {
+        "meaning" : "客户对账单明细扩展数量3"
+      },
+      "custStatementDetCustStatementNumberExtra4" : {
+        "meaning" : "客户对账单明细扩展数量4"
+      },
+      "custStatementDetCustStatementNumberExtra5" : {
+        "meaning" : "客户对账单明细扩展数量5"
+      },
+      "custStatementDetCustStatementParentId" : {
+        "meaning" : "客户对账单明细父节点ID"
+      },
+      "custStatementDetCustStatementPlannedOutputQuantity" : {
+        "meaning" : "客户对账单明细计划产出数量"
+      },
+      "custStatementDetCustStatementPlannedTimeRequired" : {
+        "meaning" : "客户对账单明细计划需时(小时)"
+      },
+      "custStatementDetCustStatementPrintTimes" : {
+        "meaning" : "客户对账单明细打印次数"
+      },
+      "custStatementDetCustStatementPriority" : {
+        "meaning" : "客户对账单明细优先级"
+      },
+      "custStatementDetCustStatementProcessInstanceId" : {
+        "meaning" : "客户对账单明细流程实例ID"
+      },
+      "custStatementDetCustStatementProductionProcessesTypeId" : {
+        "meaning" : "客户对账单明细工序类型ID"
+      },
+      "custStatementDetCustStatementProductionShiftId" : {
+        "meaning" : "客户对账单明细生产班次ID"
+      },
+      "custStatementDetCustStatementQuantity" : {
+        "meaning" : "客户对账单明细任务数量"
+      },
+      "custStatementDetCustStatementReceiptDate" : {
+        "meaning" : "客户对账单明细单据日期"
+      },
+      "custStatementDetCustStatementReceiptType" : {
+        "meaning" : "客户对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "custStatementDetCustStatementRelatedTasksId" : {
+        "meaning" : "客户对账单明细关联任务id"
+      },
+      "custStatementDetCustStatementSerialNumber" : {
+        "meaning" : "客户对账单明细顺序号"
+      },
+      "custStatementDetCustStatementSource" : {
+        "meaning" : "客户对账单明细源"
+      },
+      "custStatementDetCustStatementSourceType" : {
+        "meaning" : "客户对账单明细来源类型"
+      },
+      "custStatementDetCustStatementState" : {
+        "meaning" : "客户对账单明细通用状态"
+      },
+      "custStatementDetCustStatementSystemCode" : {
+        "meaning" : "客户对账单明细系统编码"
+      },
+      "custStatementDetCustStatementTarget" : {
+        "meaning" : "客户对账单明细目标"
+      },
+      "custStatementDetCustStatementTaskNodeName" : {
+        "meaning" : "客户对账单明细任务节点名称"
+      },
+      "custStatementDetCustStatementTenantId" : {
+        "meaning" : "客户对账单明细租户_id"
+      },
+      "custStatementDetCustStatementThirdPartyClass" : {
+        "meaning" : "客户对账单明细第三方分类"
+      },
+      "custStatementDetCustStatementThirdPartyId" : {
+        "meaning" : "客户对账单明细第三方系统中的唯一ID"
+      },
+      "custStatementDetCustStatementThirdPartyName" : {
+        "meaning" : "客户对账单明细第三方名称"
+      },
+      "custStatementDetCustStatementToAuditDate" : {
+        "meaning" : "custStatementDetCustStatementToAuditDate"
+      },
+      "custStatementDetCustStatementToBeginTime" : {
+        "meaning" : "custStatementDetCustStatementToBeginTime"
+      },
+      "custStatementDetCustStatementToCreateTime" : {
+        "meaning" : "custStatementDetCustStatementToCreateTime"
+      },
+      "custStatementDetCustStatementToDateExtra1" : {
+        "meaning" : "custStatementDetCustStatementToDateExtra1"
+      },
+      "custStatementDetCustStatementToDateExtra2" : {
+        "meaning" : "custStatementDetCustStatementToDateExtra2"
+      },
+      "custStatementDetCustStatementToDateExtra3" : {
+        "meaning" : "custStatementDetCustStatementToDateExtra3"
+      },
+      "custStatementDetCustStatementToDateExtra4" : {
+        "meaning" : "custStatementDetCustStatementToDateExtra4"
+      },
+      "custStatementDetCustStatementToDateExtra5" : {
+        "meaning" : "custStatementDetCustStatementToDateExtra5"
+      },
+      "custStatementDetCustStatementToDeliveryDate" : {
+        "meaning" : "custStatementDetCustStatementToDeliveryDate"
+      },
+      "custStatementDetCustStatementToEndTime" : {
+        "meaning" : "custStatementDetCustStatementToEndTime"
+      },
+      "custStatementDetCustStatementToReceiptDate" : {
+        "meaning" : "custStatementDetCustStatementToReceiptDate"
+      },
+      "custStatementDetCustStatementToUpdateTime" : {
+        "meaning" : "custStatementDetCustStatementToUpdateTime"
+      },
+      "custStatementDetCustStatementTotalAmount" : {
+        "meaning" : "客户对账单明细总金额"
+      },
+      "custStatementDetCustStatementTotalInvoicedAmount" : {
+        "meaning" : "客户对账单明细总已开票金额"
+      },
+      "custStatementDetCustStatementTotalOtherExpense" : {
+        "meaning" : "客户对账单明细总其他费用"
+      },
+      "custStatementDetCustStatementTotalSettleAmount" : {
+        "meaning" : "客户对账单明细总结算金额（总金额+总其他费用）"
+      },
+      "custStatementDetCustStatementTotalSettledAmount" : {
+        "meaning" : "客户对账单明细总已结算金额"
+      },
+      "custStatementDetCustStatementUnitCode" : {
+        "meaning" : "客户对账单明细单位id"
+      },
+      "custStatementDetCustStatementUpdateTime" : {
+        "meaning" : "客户对账单明细更新时间"
+      },
+      "custStatementDetCustStatementUpdater" : {
+        "meaning" : "客户对账单明细更新人"
+      },
+      "custStatementDetCustStatementUpdaterId" : {
+        "meaning" : "客户对账单明细更新人ID"
+      },
+      "custStatementDetCustStatementUserCode" : {
+        "meaning" : "客户对账单明细智能节点的唯一编码"
+      },
+      "custStatementDetCustStatementVarExtra1" : {
+        "meaning" : "客户对账单明细扩展1"
+      },
+      "custStatementDetCustStatementVarExtra2" : {
+        "meaning" : "客户对账单明细扩展2"
+      },
+      "custStatementDetCustStatementVarExtra3" : {
+        "meaning" : "客户对账单明细扩展3"
+      },
+      "custStatementDetCustStatementVarExtra4" : {
+        "meaning" : "客户对账单明细扩展4"
+      },
+      "custStatementDetCustStatementVarExtra5" : {
+        "meaning" : "客户对账单明细扩展5"
+      },
+      "custStatementDetCustStatementVersion" : {
+        "meaning" : "客户对账单明细版本号"
+      },
+      "custStatementDetDateExtra1" : {
+        "meaning" : "客户对账单明细扩展时间1"
+      },
+      "custStatementDetDateExtra2" : {
+        "meaning" : "客户对账单明细扩展时间2"
+      },
+      "custStatementDetDateExtra3" : {
+        "meaning" : "客户对账单明细扩展时间3"
+      },
+      "custStatementDetDateExtra4" : {
+        "meaning" : "客户对账单明细扩展时间4"
+      },
+      "custStatementDetDateExtra5" : {
+        "meaning" : "客户对账单明细扩展时间5"
+      },
+      "custStatementDetDefaultType" : {
+        "meaning" : "客户对账单明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "custStatementDetDeliveryDate" : {
+        "meaning" : "客户对账单明细交货日期"
+      },
+      "custStatementDetDescription" : {
+        "meaning" : "客户对账单明细描述"
+      },
+      "custStatementDetEndTime" : {
+        "meaning" : "客户对账单明细结束时间"
+      },
+      "custStatementDetEndTimeRequired" : {
+        "meaning" : "客户对账单明细最后需时(小时)"
+      },
+      "custStatementDetEngName" : {
+        "meaning" : "客户对账单明细英文名称"
+      },
+      "custStatementDetEquipmentId" : {
+        "meaning" : "客户对账单明细设备id"
+      },
+      "custStatementDetExchangeRate" : {
+        "meaning" : "客户对账单明细汇率"
+      },
+      "custStatementDetExchangeRateId" : {
+        "meaning" : "客户对账单明细币种汇率id"
+      },
+      "custStatementDetExtension" : {
+        "meaning" : "客户对账单明细扩展数据"
+      },
+      "custStatementDetExternalState" : {
+        "meaning" : "客户对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "custStatementDetFilterClazz" : {
+        "meaning" : "客户对账单明细冗余字段用于筛选"
+      },
+      "custStatementDetFlags" : {
+        "meaning" : "客户对账单明细63位标志位"
+      },
+      "custStatementDetFromAuditDate" : {
+        "meaning" : "custStatementDetFromAuditDate"
+      },
+      "custStatementDetFromBeginTime" : {
+        "meaning" : "custStatementDetFromBeginTime"
+      },
+      "custStatementDetFromCreateTime" : {
+        "meaning" : "custStatementDetFromCreateTime"
+      },
+      "custStatementDetFromDateExtra1" : {
+        "meaning" : "custStatementDetFromDateExtra1"
+      },
+      "custStatementDetFromDateExtra2" : {
+        "meaning" : "custStatementDetFromDateExtra2"
+      },
+      "custStatementDetFromDateExtra3" : {
+        "meaning" : "custStatementDetFromDateExtra3"
+      },
+      "custStatementDetFromDateExtra4" : {
+        "meaning" : "custStatementDetFromDateExtra4"
+      },
+      "custStatementDetFromDateExtra5" : {
+        "meaning" : "custStatementDetFromDateExtra5"
+      },
+      "custStatementDetFromDeliveryDate" : {
+        "meaning" : "custStatementDetFromDeliveryDate"
+      },
+      "custStatementDetFromEndTime" : {
+        "meaning" : "custStatementDetFromEndTime"
+      },
+      "custStatementDetFromReceiptDate" : {
+        "meaning" : "custStatementDetFromReceiptDate"
+      },
+      "custStatementDetFromUpdateTime" : {
+        "meaning" : "custStatementDetFromUpdateTime"
+      },
+      "custStatementDetFscType" : {
+        "meaning" : "客户对账单明细FSC声明"
+      },
+      "custStatementDetGenerativePeople" : {
+        "meaning" : "客户对账单明细下发人"
+      },
+      "custStatementDetGenerativeState" : {
+        "meaning" : "客户对账单明细下发状态"
+      },
+      "custStatementDetGroovyScript" : {
+        "meaning" : "客户对账单明细groovy脚本"
+      },
+      "custStatementDetGropeCode" : {
+        "meaning" : "客户对账单明细搜索码"
+      },
+      "custStatementDetId" : {
+        "meaning" : "客户对账单明细PK",
+          "is_primary": true
+      },
+      "custStatementDetInUsed" : {
+        "meaning" : "客户对账单明细是否被使用"
+      },
+      "custStatementDetInvTypeTaxRateId" : {
+        "meaning" : "客户对账单明细发票税率id"
+      },
+      "custStatementDetInvoicedAmount" : {
+        "meaning" : "客户对账单明细已开票金额"
+      },
+      "custStatementDetInvoicedState" : {
+        "meaning" : "客户对账单明细开票状态（0未开票；1部分开票；2全部开票；3终止开票）"
+      },
+      "custStatementDetIsBanned" : {
+        "meaning" : "客户对账单明细是否被禁用"
+      },
+      "custStatementDetIsDeleted" : {
+        "meaning" : "客户对账单明细是否被删除"
+      },
+      "custStatementDetIsLeaf" : {
+        "meaning" : "客户对账单明细是否叶子节点"
+      },
+      "custStatementDetIsMainFlow" : {
+        "meaning" : "客户对账单明细是否是主流程"
+      },
+      "custStatementDetIsManualModificationDate" : {
+        "meaning" : "客户对账单明细是否手动修改计划生产时间"
+      },
+      "custStatementDetIsolation" : {
+        "meaning" : "客户对账单明细智能节点数据隔离标识"
+      },
+      "custStatementDetJsScript" : {
+        "meaning" : "客户对账单明细js脚本"
+      },
+      "custStatementDetLocAmount" : {
+        "meaning" : "客户对账单明细本币金额"
+      },
+      "custStatementDetLocCompleteQuantity" : {
+        "meaning" : "客户对账单明细本币完成数量"
+      },
+      "custStatementDetLocInvoicedAmount" : {
+        "meaning" : "客户对账单明细本币已开票金额"
+      },
+      "custStatementDetLocOtherExpense" : {
+        "meaning" : "客户对账单明细本币其他费用"
+      },
+      "custStatementDetLocSettleAmount" : {
+        "meaning" : "客户对账单明细本币结算金额（本币金额+本币其他费用）"
+      },
+      "custStatementDetLocSettledAmount" : {
+        "meaning" : "客户对账单明细本币已结算金额"
+      },
+      "custStatementDetMaterialId" : {
+        "meaning" : "客户对账单明细物料id"
+      },
+      "custStatementDetName" : {
+        "meaning" : "客户对账单明细智能节点名"
+      },
+      "custStatementDetNameCodeSearch" : {
+        "meaning" : "客户对账单明细name、user_code模糊搜索"
+      },
+      "custStatementDetNumberExtra1" : {
+        "meaning" : "客户对账单明细扩展数量1"
+      },
+      "custStatementDetNumberExtra2" : {
+        "meaning" : "客户对账单明细扩展数量2"
+      },
+      "custStatementDetNumberExtra3" : {
+        "meaning" : "客户对账单明细扩展数量3"
+      },
+      "custStatementDetNumberExtra4" : {
+        "meaning" : "客户对账单明细扩展数量4"
+      },
+      "custStatementDetNumberExtra5" : {
+        "meaning" : "客户对账单明细扩展数量5"
+      },
+      "custStatementDetOrderId" : {
+        "meaning" : "客户对账单明细订单_id"
+      },
+      "custStatementDetOtherExpense" : {
+        "meaning" : "客户对账单明细其他费用"
+      },
+      "custStatementDetParentId" : {
+        "meaning" : "客户对账单明细父节点ID"
+      },
+      "custStatementDetPlannedOutputQuantity" : {
+        "meaning" : "客户对账单明细计划产出数量"
+      },
+      "custStatementDetPlannedTimeRequired" : {
+        "meaning" : "客户对账单明细计划需时(小时)"
+      },
+      "custStatementDetPrintTimes" : {
+        "meaning" : "客户对账单明细打印次数"
+      },
+      "custStatementDetPriority" : {
+        "meaning" : "客户对账单明细优先级"
+      },
+      "custStatementDetProcessInstanceId" : {
+        "meaning" : "客户对账单明细流程实例ID"
+      },
+      "custStatementDetProductionProcessesTypeId" : {
+        "meaning" : "客户对账单明细工序类型ID"
+      },
+      "custStatementDetProductionShiftId" : {
+        "meaning" : "客户对账单明细生产班次ID"
+      },
+      "custStatementDetQuantity" : {
+        "meaning" : "客户对账单明细任务数量"
+      },
+      "custStatementDetReceiptDate" : {
+        "meaning" : "客户对账单明细单据日期"
+      },
+      "custStatementDetReceiptType" : {
+        "meaning" : "客户对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "custStatementDetRelatedTasksId" : {
+        "meaning" : "客户对账单明细关联任务id"
+      },
+      "custStatementDetSerialNumber" : {
+        "meaning" : "客户对账单明细顺序号"
+      },
+      "custStatementDetSettleAmount" : {
+        "meaning" : "客户对账单明细结算金额（金额+其他费用）"
+      },
+      "custStatementDetSettledAmount" : {
+        "meaning" : "客户对账单明细已结算金额"
+      },
+      "custStatementDetSettledState" : {
+        "meaning" : "客户对账单明细结算状态（0未结算；1部分结算；2全部结算；3终止结算）"
+      },
+      "custStatementDetSource" : {
+        "meaning" : "客户对账单明细源"
+      },
+      "custStatementDetSourceType" : {
+        "meaning" : "客户对账单明细来源类型"
+      },
+      "custStatementDetState" : {
+        "meaning" : "客户对账单明细通用状态"
+      },
+      "custStatementDetSystemCode" : {
+        "meaning" : "客户对账单明细系统编码"
+      },
+      "custStatementDetTarget" : {
+        "meaning" : "客户对账单明细目标"
+      },
+      "custStatementDetTaskNodeName" : {
+        "meaning" : "客户对账单明细任务节点名称"
+      },
+      "custStatementDetTenantId" : {
+        "meaning" : "客户对账单明细租户_id"
+      },
+      "custStatementDetThirdPartyClass" : {
+        "meaning" : "客户对账单明细第三方分类"
+      },
+      "custStatementDetThirdPartyId" : {
+        "meaning" : "客户对账单明细第三方系统中的唯一ID"
+      },
+      "custStatementDetThirdPartyName" : {
+        "meaning" : "客户对账单明细第三方名称"
+      },
+      "custStatementDetToAuditDate" : {
+        "meaning" : "custStatementDetToAuditDate"
+      },
+      "custStatementDetToBeginTime" : {
+        "meaning" : "custStatementDetToBeginTime"
+      },
+      "custStatementDetToCreateTime" : {
+        "meaning" : "custStatementDetToCreateTime"
+      },
+      "custStatementDetToDateExtra1" : {
+        "meaning" : "custStatementDetToDateExtra1"
+      },
+      "custStatementDetToDateExtra2" : {
+        "meaning" : "custStatementDetToDateExtra2"
+      },
+      "custStatementDetToDateExtra3" : {
+        "meaning" : "custStatementDetToDateExtra3"
+      },
+      "custStatementDetToDateExtra4" : {
+        "meaning" : "custStatementDetToDateExtra4"
+      },
+      "custStatementDetToDateExtra5" : {
+        "meaning" : "custStatementDetToDateExtra5"
+      },
+      "custStatementDetToDeliveryDate" : {
+        "meaning" : "custStatementDetToDeliveryDate"
+      },
+      "custStatementDetToEndTime" : {
+        "meaning" : "custStatementDetToEndTime"
+      },
+      "custStatementDetToReceiptDate" : {
+        "meaning" : "custStatementDetToReceiptDate"
+      },
+      "custStatementDetToUpdateTime" : {
+        "meaning" : "custStatementDetToUpdateTime"
+      },
+      "custStatementDetUnitCode" : {
+        "meaning" : "客户对账单明细单位id"
+      },
+      "custStatementDetUnitPrice" : {
+        "meaning" : "客户对账单明细单价"
+      },
+      "custStatementDetUpdateTime" : {
+        "meaning" : "客户对账单明细更新时间"
+      },
+      "custStatementDetUpdater" : {
+        "meaning" : "客户对账单明细更新人"
+      },
+      "custStatementDetUpdaterId" : {
+        "meaning" : "客户对账单明细更新人ID"
+      },
+      "custStatementDetUserCode" : {
+        "meaning" : "客户对账单明细智能节点的唯一编码"
+      },
+      "custStatementDetVarExtra1" : {
+        "meaning" : "客户对账单明细扩展1"
+      },
+      "custStatementDetVarExtra2" : {
+        "meaning" : "客户对账单明细扩展2"
+      },
+      "custStatementDetVarExtra3" : {
+        "meaning" : "客户对账单明细扩展3"
+      },
+      "custStatementDetVarExtra4" : {
+        "meaning" : "客户对账单明细扩展4"
+      },
+      "custStatementDetVarExtra5" : {
+        "meaning" : "客户对账单明细扩展5"
+      },
+      "custStatementDetVersion" : {
+        "meaning" : "客户对账单明细版本号"
+      },
+      "custStatementDetWorkOrderId" : {
+        "meaning" : "客户对账单明细工单_id"
+      }
+    }
+  }

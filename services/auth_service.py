@@ -42,16 +42,17 @@ def auth_login() -> str:
     load_dotenv()
 
     # 从环境变量获取配置
-    BASE_URL = os.getenv("BASE_URL", "http://localhost:8080")
+    BASE_URL = os.getenv("BASE_URL", "http://192.168.0.156:28002")
 
     # 构建OAuth2令牌请求URL
     url = f"{BASE_URL}/oauth2/token"
+    print(url)
 
     # 设置请求参数
     params = {
         "grant_type": "password",  # OAuth2密码授权类型
         "client_id": "2caf3cb6216111eea71b49e0880a97d9",  # 客户端ID
-        "username": "admin",  # 用户名
+        "username": "lutao",  # 用户名
         "password": "123456"   # 密码
     }
 

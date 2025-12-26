@@ -51,7 +51,8 @@
                     "name": "员工表",
                     "function_name": "find_all_staff",
                     "prefix": "员工",
-                    "remark": "获取员工信息"
+                    "remark": "获取员工信息",
+                    "data_label": "item"
                 },
                 {
                     "api_name": "/group/findList",
@@ -74,6 +75,217 @@
                     "function_name": "find_department",
                     "prefix": "部门",
                     "remark": "获取所有部门信息"
+                },
+                {
+                    "api_name": "/role/findList",
+                    "request": {
+                        "roleClazz": "XY_USERCENTER_ROLE",
+                        "roleDefaultType": "POST"
+                    },
+                    "response": {
+                        "roleId": {
+                            "meaning": "岗位表ID",
+                            "is_primary": true,
+                            "name": "表ID"
+                        },
+                        "roleName": {
+                            "meaning": "岗位表智能节点名",
+                            "name": "岗位名称"
+                        }
+                    },
+                    "name": "岗位表",
+                    "function_name": "find_role",
+                    "prefix": "岗位",
+                    "remark": "获取岗位信息"
+                }
+            ]
+        },
+        {
+            "service_name": "business",
+            "relations": [],
+            "tools": [
+                {
+                    "api_name": "/client/findList",
+                    "request": {
+                        "customerClazz": "XY_USERCENTER_ORGANIZATION"
+                    },
+                    "response": {
+                        "customerId": {
+                            "meaning": "客户表Pk",
+                            "is_primary": true,
+                            "name": "客户ID"
+                        },
+                        "customerLocationCity": {
+                            "meaning": "客户表所在市",
+                            "name": "所在市"
+                        },
+                        "customerLocationDistrict": {
+                            "meaning": "客户表所在区域",
+                            "name": "所在区域"
+                        },
+                        "customerLocationProvince": {
+                            "meaning": "客户表所在省",
+                            "name": "所在省"
+                        },
+                        "customerName": {
+                            "meaning": "客户表全称名称",
+                            "name": "客户名称"
+                        }
+                    },
+                    "name": "客户表",
+                    "function_name": "find_client",
+                    "prefix": "客户表",
+                    "remark": "获取所有客户",
+                    "filter": [
+                        {
+                            "field": "customerId",
+                            "format": "YYYYHHMM",
+                            "remark": "ID"
+                        }
+                    ],
+                    "orderBys": [
+                        {
+                            "field": "customerId",
+                            "type": "ASC"
+                        }
+                    ]
+                },
+                {
+                    "api_name": "/contract-detail/findList",
+                    "request": {
+                        "contractDetailClazz": "CONTRACT_DETAIL",
+                        "contractDetailContractClazz": "CONTRACT"
+                    },
+                    "response": {
+                        "contractDetailContractId": {
+                            "meaning": "合同明细PK",
+                            "is_primary": true,
+                            "name": "合同ID"
+                        },
+                        "contractDetailContractTotalAmountIncludingTax": {
+                            "meaning": "合同明细含税总金额",
+                            "name": "含税总金额"
+                        },
+                        "contractDetailId": {
+                            "meaning": "合同明细主键ID",
+                            "is_primary": true,
+                            "name": "主键ID"
+                        },
+                        "contractDetailPlannedOutputQuantity": {
+                            "meaning": "合同明细计划产出数量",
+                            "name": "计划产出数量"
+                        },
+                        "contractDetailPlannedTimeRequired": {
+                            "meaning": "合同明细计划需时(小时)",
+                            "name": "计划需时(小时)"
+                        },
+                        "contractDetailQuotationUnitPriceIncludingTax": {
+                            "meaning": "合同明细含税报价单价",
+                            "name": "含税报价单价"
+                        }
+                    },
+                    "name": "合同表",
+                    "function_name": "find_contract",
+                    "prefix": "合同明细",
+                    "remark": "获取所有合同信息"
+                },
+                {
+                    "api_name": "/biz-order-detail/findList",
+                    "request": {
+                        "bizOrderDetailBizOrderClazz": "BUSINESS_ORDER",
+                        "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL"
+                    },
+                    "response": {
+                        "bizOrderDetailBizOrderDeliveryDate": {
+                            "meaning": "业务订单明细交货日期",
+                            "name": "交货日期"
+                        },
+                        "bizOrderDetailBizOrderExternalState": {
+                            "meaning": "业务订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+                            "values": {
+                                "0": "未开始",
+                                "1": "进行中",
+                                "2": "异常",
+                                "3": "结束",
+                                "4": "中止",
+                                "5": "关闭"
+                            },
+                            "name": "上流程状态"
+                        },
+                        "bizOrderDetailBizOrderId": {
+                            "meaning": "业务订单明细PK",
+                            "is_primary": true,
+                            "name": "业务订单ID"
+                        },
+                        "bizOrderDetailBizOrderIsUrgent": {
+                            "meaning": "业务订单明细是否加急",
+                            "values": {
+                                "true": "是",
+                                "false": "否"
+                            },
+                            "name": "是否加急"
+                        },
+                        "bizOrderDetailBizOrderProductionShiftId": {
+                            "meaning": "业务订单明细生产班次ID",
+                            "name": "生产班次ID"
+                        },
+                        "bizOrderDetailBizOrderReceiptDate": {
+                            "meaning": "业务订单明细单据日期",
+                            "name": "单据日期"
+                        },
+                        "bizOrderDetailBizOrderSettleCustId": {
+                            "meaning": "业务订单明细结算客户ID",
+                            "name": "结算客户ID"
+                        },
+                        "bizOrderDetailBizOrderTotalWt": {
+                            "meaning": "业务订单明细总重量",
+                            "name": "总重量"
+                        },
+                        "bizOrderDetailId": {
+                            "meaning": "业务订单明细主键ID",
+                            "is_primary": true,
+                            "name": "主键ID"
+                        }
+                    },
+                    "name": "订单表",
+                    "prefix": "业务订单明细",
+                    "function_name": "find_biz_order",
+                    "remark": "获取所有订单"
+                },
+                {
+                    "api_name": "/proof/linkFindList",
+                    "request": {
+                        "linkSource": "",
+                        "linkTarget": "",
+                        "linkTypeCode": "source",
+                        "linkClazz": "CONTRACT_DETAIL-BUSINESS_ORDER_DETAIL"
+                    },
+                    "response": {
+                        "linkId": {
+                            "meaning": "主键ID",
+                            "is_primary": true,
+                            "name": "主键ID"
+                        },
+                        "linkSource": {
+                            "meaning": "源节点id(-查询入参-)",
+                            "name": "源节点id"
+                        },
+                        "linkSourceIds": {
+                            "meaning": "源节点ids(-查询入参-)",
+                            "name": "源节点ids"
+                        },
+                        "linkTarget": {
+                            "meaning": "目标节点id(-查询入参-)",
+                            "name": "目标节点id"
+                        },
+                        "linkTargetIds": {
+                            "meaning": "目标节点ids(-查询入参-)",
+                            "name": "目标节点ids"
+                        }
+                    },
+                    "name": "关联表",
+                    "function_name": "get_source",
+                    "remark": "通过订单找合同信息"
                 }
             ]
         }

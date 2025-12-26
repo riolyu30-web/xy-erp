@@ -1,0 +1,319 @@
+ {
+    "api_name" : "/proof/linkFindList",
+    "table_name" : "proof",
+    "request" : {
+      "linkSource": "",
+      "linkTarget": "",
+      "linkTypeCode": "source",
+      "linkClazz":"CONTRACT_DETAIL-BUSINESS_ORDER_DETAIL"
+    },
+    "response" : {
+      "linkApplicationId" : {
+        "meaning" : "应用ID"
+      },
+      "linkAuditDate" : {
+        "meaning" : "审核时间"
+      },
+      "linkAuditStatus" : {
+        "meaning" : "审核状态"
+      },
+      "linkAuditStatuses" : {
+        "meaning" : "审核状态列表(-查询入参-)"
+      },
+      "linkAuditor" : {
+        "meaning" : "审核人(-查询入参-)"
+      },
+      "linkBizVersion" : {
+        "meaning" : "业务自定义版本号"
+      },
+      "linkBriefName" : {
+        "meaning" : "简称"
+      },
+      "linkClazz" : {
+        "meaning" : "子类 类名（表和类一一对应）"
+      },
+      "linkComment" : {
+        "meaning" : "评论"
+      },
+      "linkCreateTime" : {
+        "meaning" : "创建时间"
+      },
+      "linkCreator" : {
+        "meaning" : "创建人"
+      },
+      "linkCreatorId" : {
+        "meaning" : "创建人ID"
+      },
+      "linkDateExtra1" : {
+        "meaning" : "扩展时间1"
+      },
+      "linkDateExtra2" : {
+        "meaning" : "扩展时间2"
+      },
+      "linkDateExtra3" : {
+        "meaning" : "扩展时间3"
+      },
+      "linkDateExtra4" : {
+        "meaning" : "扩展时间4"
+      },
+      "linkDateExtra5" : {
+        "meaning" : "扩展时间5"
+      },
+      "linkDefaultType" : {
+        "meaning" : "智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "linkDefaultTypes" : {
+        "meaning" : "默认类型列表（多选）(-查询入参-)"
+      },
+      "linkDescription" : {
+        "meaning" : "描述"
+      },
+      "linkEngName" : {
+        "meaning" : "英文名称"
+      },
+      "linkEqName" : {
+        "meaning" : "判断名称是否相同(-查询入参-)"
+      },
+      "linkExtension" : {
+        "meaning" : "扩展数据"
+      },
+      "linkExternalState" : {
+        "meaning" : "上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "linkFalseFlags" : {
+        "meaning" : "为0的标志位（可以多个）(-查询入参-)"
+      },
+      "linkFilterClazz" : {
+        "meaning" : "过滤用不对前端开放"
+      },
+      "linkFlags" : {
+        "meaning" : "63位标志位"
+      },
+      "linkFromAuditDate" : {
+        "meaning" : "linkFromAuditDate"
+      },
+      "linkFromCreateTime" : {
+        "meaning" : "linkFromCreateTime"
+      },
+      "linkFromDateExtra1" : {
+        "meaning" : "linkFromDateExtra1"
+      },
+      "linkFromDateExtra2" : {
+        "meaning" : "linkFromDateExtra2"
+      },
+      "linkFromDateExtra3" : {
+        "meaning" : "linkFromDateExtra3"
+      },
+      "linkFromDateExtra4" : {
+        "meaning" : "linkFromDateExtra4"
+      },
+      "linkFromDateExtra5" : {
+        "meaning" : "linkFromDateExtra5"
+      },
+      "linkFromUpdateTime" : {
+        "meaning" : "linkFromUpdateTime"
+      },
+      "linkFromUserCode" : {
+        "meaning" : "起始单号(-查询入参-)"
+      },
+      "linkGroovyScript" : {
+        "meaning" : "groovy脚本"
+      },
+      "linkGropeCode" : {
+        "meaning" : "搜索码"
+      },
+      "linkHasParent" : {
+        "meaning" : "存在父级(-查询入参-)"
+      },
+      "linkId" : {
+        "meaning" : "主键ID",
+        "is_primary" : true
+      },
+      "linkIds" : {
+        "meaning" : "pk列表(-查询入参-)"
+      },
+      "linkInUsed" : {
+        "meaning" : "是否被使用"
+      },
+      "linkIsAutomaticCommit" : {
+        "meaning" : "是否自动提交(-查询入参-)"
+      },
+      "linkIsBanned" : {
+        "meaning" : "是否被禁用"
+      },
+      "linkIsDeleted" : {
+        "meaning" : "是否被删除"
+      },
+      "linkIsolation" : {
+        "meaning" : "智能节点数据隔离标识"
+      },
+      "linkIsolations" : {
+        "meaning" : "租户隔离列表(-查询入参-)"
+      },
+      "linkJsScript" : {
+        "meaning" : "js脚本"
+      },
+      "linkName" : {
+        "meaning" : "智能节点名"
+      },
+      "linkNameCodeKeyword" : {
+        "meaning" : "userCode、name or模糊搜索(-查询入参-)"
+      },
+      "linkNameCodeSearch" : {
+        "meaning" : "name、user_code模糊搜索"
+      },
+      "linkNames" : {
+        "meaning" : "默认类型列表（多选）(-查询入参-)"
+      },
+      "linkNumberExtra1" : {
+        "meaning" : "扩展数量1"
+      },
+      "linkNumberExtra2" : {
+        "meaning" : "扩展数量2"
+      },
+      "linkNumberExtra3" : {
+        "meaning" : "扩展数量3"
+      },
+      "linkNumberExtra4" : {
+        "meaning" : "扩展数量4"
+      },
+      "linkNumberExtra5" : {
+        "meaning" : "扩展数量5"
+      },
+      "linkParentId" : {
+        "meaning" : "父节点ID"
+      },
+      "linkParentIds" : {
+        "meaning" : "父id列表(-查询入参-)"
+      },
+      "linkProcessInstanceId" : {
+        "meaning" : "流程实例ID"
+      },
+      "linkProcessInstanceIds" : {
+        "meaning" : "审核流ids(-查询入参-)"
+      },
+      "linkRootId" : {
+        "meaning" : "根节点id(-查询入参-)"
+      },
+      "linkRootSystemCode" : {
+        "meaning" : "根系统编码(-查询入参-)"
+      },
+      "linkSerialNumber" : {
+        "meaning" : "顺序号"
+      },
+      "linkSource" : {
+        "meaning" : "源节点id(-查询入参-)"
+      },
+      "linkSourceIds" : {
+        "meaning" : "源节点ids(-查询入参-)"
+      },
+      "linkSourceVersion" : {
+        "meaning" : "源节点版本"
+      },
+      "linkState" : {
+        "meaning" : "通用状态"
+      },
+      "linkStates" : {
+        "meaning" : "通用状态列表(-查询入参-)"
+      },
+      "linkSystemCode" : {
+        "meaning" : "系统编码"
+      },
+      "linkSystemCodes" : {
+        "meaning" : "系统编码列表(-查询入参-)"
+      },
+      "linkTarget" : {
+        "meaning" : "目标节点id(-查询入参-)"
+      },
+      "linkTargetIds" : {
+        "meaning" : "目标节点ids(-查询入参-)"
+      },
+      "linkTargetVersion" : {
+        "meaning" : "目标节点版本"
+      },
+      "linkTaskNodeName" : {
+        "meaning" : "任务节点名称"
+      },
+      "linkThirdPartyClass" : {
+        "meaning" : "第三方分类"
+      },
+      "linkThirdPartyId" : {
+        "meaning" : "第三方系统中的唯一ID"
+      },
+      "linkThirdPartyName" : {
+        "meaning" : "第三方名称"
+      },
+      "linkToAuditDate" : {
+        "meaning" : "linkToAuditDate"
+      },
+      "linkToCreateTime" : {
+        "meaning" : "linkToCreateTime"
+      },
+      "linkToDateExtra1" : {
+        "meaning" : "linkToDateExtra1"
+      },
+      "linkToDateExtra2" : {
+        "meaning" : "linkToDateExtra2"
+      },
+      "linkToDateExtra3" : {
+        "meaning" : "linkToDateExtra3"
+      },
+      "linkToDateExtra4" : {
+        "meaning" : "linkToDateExtra4"
+      },
+      "linkToDateExtra5" : {
+        "meaning" : "linkToDateExtra5"
+      },
+      "linkToUpdateTime" : {
+        "meaning" : "linkToUpdateTime"
+      },
+      "linkToUserCode" : {
+        "meaning" : "终止单号(-查询入参-)"
+      },
+      "linkTrueFlags" : {
+        "meaning" : "为1的标志位（可以多个）(-查询入参-)"
+      },
+      "linkTypeCode" : {
+        "meaning" : "link类型编码(-查询入参-)"
+      },
+      "linkTypeCodes" : {
+        "meaning" : "类型Code列表(-查询入参-)"
+      },
+      "linkUpdateTime" : {
+        "meaning" : "更新时间"
+      },
+      "linkUpdater" : {
+        "meaning" : "更新人"
+      },
+      "linkUpdaterId" : {
+        "meaning" : "更新人ID"
+      },
+      "linkUserCode" : {
+        "meaning" : "智能节点的唯一编码"
+      },
+      "linkUserCodes" : {
+        "meaning" : "智能节点的唯一编码列表(-查询入参-)"
+      },
+      "linkValue" : {
+        "meaning" : "连接权值"
+      },
+      "linkVarExtra1" : {
+        "meaning" : "扩展1"
+      },
+      "linkVarExtra2" : {
+        "meaning" : "扩展2"
+      },
+      "linkVarExtra3" : {
+        "meaning" : "扩展3"
+      },
+      "linkVarExtra4" : {
+        "meaning" : "扩展4"
+      },
+      "linkVarExtra5" : {
+        "meaning" : "扩展5"
+      },
+      "linkVersion" : {
+        "meaning" : "版本号"
+      }
+    }
+  }

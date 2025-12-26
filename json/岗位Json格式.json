@@ -1,0 +1,308 @@
+ {
+    "api_name": "/role/findList",
+    "table_name": "岗位表",
+    "request": {
+      "roleClazz": "XY_USERCENTER_ROLE",
+      "roleDefaultType": "POST"
+    },
+    "response": {
+      "roleApplicationId": {
+        "meaning": "岗位表应用ID"
+      },
+      "roleAuditDate": {
+        "meaning": "岗位表审核时间"
+      },
+      "roleAuditStatus": {
+        "meaning": "岗位表审核状态"
+      },
+      "roleAuditStatuses": {
+        "meaning": "岗位表审核状态列表(-查询入参-)"
+      },
+      "roleAuditor": {
+        "meaning": "岗位表审核人(-查询入参-)"
+      },
+      "roleBizVersion": {
+        "meaning": "岗位表业务自定义版本号"
+      },
+      "roleBriefName": {
+        "meaning": "岗位表简称"
+      },
+      "roleClazz": {
+        "meaning": "岗位表子类 类名（表和类一一对应）"
+      },
+      "roleComment": {
+        "meaning": "岗位表评论"
+      },
+      "roleCreateTime": {
+        "meaning": "岗位表创建时间"
+      },
+      "roleCreator": {
+        "meaning": "岗位表创建人"
+      },
+      "roleCreatorId": {
+        "meaning": "岗位表创建人ID"
+      },
+      "roleDateExtra1": {
+        "meaning": "岗位表扩展时间1"
+      },
+      "roleDateExtra2": {
+        "meaning": "岗位表扩展时间2"
+      },
+      "roleDateExtra3": {
+        "meaning": "岗位表扩展时间3"
+      },
+      "roleDateExtra4": {
+        "meaning": "岗位表扩展时间4"
+      },
+      "roleDateExtra5": {
+        "meaning": "岗位表扩展时间5"
+      },
+      "roleDefaultType": {
+        "meaning": "岗位表智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "roleDefaultTypes": {
+        "meaning": "岗位表默认类型列表（多选）(-查询入参-)"
+      },
+      "roleDescription": {
+        "meaning": "岗位表描述"
+      },
+      "roleEngName": {
+        "meaning": "岗位表英文名称"
+      },
+      "roleEqName": {
+        "meaning": "岗位表判断名称是否相同(-查询入参-)"
+      },
+      "roleExtension": {
+        "meaning": "岗位表扩展数据"
+      },
+      "roleExternalState": {
+        "meaning": "岗位表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "roleFalseFlags": {
+        "meaning": "岗位表为0的标志位（可以多个）(-查询入参-)"
+      },
+      "roleFlags": {
+        "meaning": "岗位表63位标志位"
+      },
+      "roleFromAuditDate": {
+        "meaning": "roleFromAuditDate"
+      },
+      "roleFromCreateTime": {
+        "meaning": "roleFromCreateTime"
+      },
+      "roleFromDateExtra1": {
+        "meaning": "roleFromDateExtra1"
+      },
+      "roleFromDateExtra2": {
+        "meaning": "roleFromDateExtra2"
+      },
+      "roleFromDateExtra3": {
+        "meaning": "roleFromDateExtra3"
+      },
+      "roleFromDateExtra4": {
+        "meaning": "roleFromDateExtra4"
+      },
+      "roleFromDateExtra5": {
+        "meaning": "roleFromDateExtra5"
+      },
+      "roleFromUpdateTime": {
+        "meaning": "roleFromUpdateTime"
+      },
+      "roleFromUserCode": {
+        "meaning": "岗位表起始单号(-查询入参-)"
+      },
+      "roleGroovyScript": {
+        "meaning": "岗位表groovy脚本"
+      },
+      "roleGropeCode": {
+        "meaning": "岗位表搜索码"
+      },
+      "roleHasParent": {
+        "meaning": "岗位表存在父级(-查询入参-)"
+      },
+      "roleId": {
+        "meaning": "岗位表ID",
+        "is_primary": true
+      },
+      "roleIds": {
+        "meaning": "岗位表ID列表(-查询入参-)"
+      },
+      "roleInUsed": {
+        "meaning": "岗位表是否被使用"
+      },
+      "roleIsAutomaticCommit": {
+        "meaning": "岗位表是否自动提交(-查询入参-)"
+      },
+      "roleIsBanned": {
+        "meaning": "岗位表是否被禁用"
+      },
+      "roleIsDeleted": {
+        "meaning": "岗位表是否被删除"
+      },
+      "roleIsMainFlow": {
+        "meaning": "岗位表是否是主流程"
+      },
+      "roleIsolation": {
+        "meaning": "岗位表智能节点数据隔离标识"
+      },
+      "roleIsolations": {
+        "meaning": "岗位表租户隔离列表(-查询入参-)"
+      },
+      "roleJsScript": {
+        "meaning": "岗位表js脚本"
+      },
+      "roleName": {
+        "meaning": "岗位表智能节点名"
+      },
+      "roleNameCodeKeyword": {
+        "meaning": "岗位表userCode、name or模糊搜索(-查询入参-)"
+      },
+      "roleNameCodeSearch": {
+        "meaning": "岗位表name、user_code模糊搜索"
+      },
+      "roleNames": {
+        "meaning": "岗位表默认类型列表（多选）(-查询入参-)"
+      },
+      "roleNumberExtra1": {
+        "meaning": "岗位表扩展数量1"
+      },
+      "roleNumberExtra2": {
+        "meaning": "岗位表扩展数量2"
+      },
+      "roleNumberExtra3": {
+        "meaning": "岗位表扩展数量3"
+      },
+      "roleNumberExtra4": {
+        "meaning": "岗位表扩展数量4"
+      },
+      "roleNumberExtra5": {
+        "meaning": "岗位表扩展数量5"
+      },
+      "roleParentId": {
+        "meaning": "岗位表父节点ID"
+      },
+      "roleParentIds": {
+        "meaning": "岗位表父id列表(-查询入参-)"
+      },
+      "roleProcessInstanceId": {
+        "meaning": "岗位表流程实例ID"
+      },
+      "roleProcessInstanceIds": {
+        "meaning": "岗位表审核流ids(-查询入参-)"
+      },
+      "roleRootId": {
+        "meaning": "岗位表根节点id(-查询入参-)"
+      },
+      "roleRootSystemCode": {
+        "meaning": "岗位表根系统编码(-查询入参-)"
+      },
+      "roleSerialNumber": {
+        "meaning": "岗位表顺序号"
+      },
+      "roleSource": {
+        "meaning": "岗位表源节点id(-查询入参-)"
+      },
+      "roleState": {
+        "meaning": "岗位表通用状态"
+      },
+      "roleStates": {
+        "meaning": "岗位表通用状态列表(-查询入参-)"
+      },
+      "roleSystemCode": {
+        "meaning": "岗位表系统编码"
+      },
+      "roleSystemCodes": {
+        "meaning": "岗位表系统编码列表(-查询入参-)"
+      },
+      "roleTarget": {
+        "meaning": "岗位表目标节点id(-查询入参-)"
+      },
+      "roleTaskNodeName": {
+        "meaning": "岗位表任务节点名称"
+      },
+      "roleTenantId": {
+        "meaning": "岗位表租户ID"
+      },
+      "roleTenantIds": {
+        "meaning": "岗位表租户ID列表(-查询入参-)"
+      },
+      "roleThirdPartyClass": {
+        "meaning": "岗位表第三方分类"
+      },
+      "roleThirdPartyId": {
+        "meaning": "岗位表第三方系统中的唯一ID"
+      },
+      "roleThirdPartyName": {
+        "meaning": "岗位表第三方名称"
+      },
+      "roleToAuditDate": {
+        "meaning": "roleToAuditDate"
+      },
+      "roleToCreateTime": {
+        "meaning": "roleToCreateTime"
+      },
+      "roleToDateExtra1": {
+        "meaning": "roleToDateExtra1"
+      },
+      "roleToDateExtra2": {
+        "meaning": "roleToDateExtra2"
+      },
+      "roleToDateExtra3": {
+        "meaning": "roleToDateExtra3"
+      },
+      "roleToDateExtra4": {
+        "meaning": "roleToDateExtra4"
+      },
+      "roleToDateExtra5": {
+        "meaning": "roleToDateExtra5"
+      },
+      "roleToUpdateTime": {
+        "meaning": "roleToUpdateTime"
+      },
+      "roleToUserCode": {
+        "meaning": "岗位表终止单号(-查询入参-)"
+      },
+      "roleTrueFlags": {
+        "meaning": "岗位表为1的标志位（可以多个）(-查询入参-)"
+      },
+      "roleTypeCode": {
+        "meaning": "岗位表link类型编码(-查询入参-)"
+      },
+      "roleTypeCodes": {
+        "meaning": "岗位表类型Code列表(-查询入参-)"
+      },
+      "roleUpdateTime": {
+        "meaning": "岗位表更新时间"
+      },
+      "roleUpdater": {
+        "meaning": "岗位表更新人"
+      },
+      "roleUpdaterId": {
+        "meaning": "岗位表更新人ID"
+      },
+      "roleUserCode": {
+        "meaning": "岗位表智能节点的唯一编码"
+      },
+      "roleUserCodes": {
+        "meaning": "岗位表智能节点的唯一编码列表(-查询入参-)"
+      },
+      "roleVarExtra1": {
+        "meaning": "岗位表扩展1"
+      },
+      "roleVarExtra2": {
+        "meaning": "岗位表扩展2"
+      },
+      "roleVarExtra3": {
+        "meaning": "岗位表扩展3"
+      },
+      "roleVarExtra4": {
+        "meaning": "岗位表扩展4"
+      },
+      "roleVarExtra5": {
+        "meaning": "岗位表扩展5"
+      },
+      "roleVersion": {
+        "meaning": "岗位表版本号"
+      }
+    }
+  }

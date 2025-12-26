@@ -121,7 +121,7 @@ def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_f
                 print(f"原始数据: {filtered_list[0]}")
                 print(f"数据条数: {len(filtered_list)}")
                 print("\n".join(csv_string.splitlines()[:5]))
-                return {"table_token": key, "field_meaning": meaning_dict_str, "sample": csv_string.splitlines()[:3]} 
+                return {"table_token": key, "field_meaning": meaning_dict_str, "data": filtered_list} 
             elif cache_save(key, csv_string): # 缓存数据
                 return {"table_token": key,"field_meaning": meaning_dict_str,} 
             else:

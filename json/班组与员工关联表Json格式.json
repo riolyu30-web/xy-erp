@@ -1,0 +1,803 @@
+ {
+    "api_name" : "/group-someone/findList",
+    "table_name" : "班组与员工关联表",
+    "request" : { "groupClazz":"XY_USERCENTER_GROUP",
+        "groupDefaultType": "TEAM" },
+    "response" : {
+      "groupApplicationId" : {
+        "meaning" : "用户组应用ID"
+      },
+      "groupAuditDate" : {
+        "meaning" : "用户组审核时间"
+      },
+      "groupAuditStatus" : {
+        "meaning" : "用户组审核状态"
+      },
+      "groupAuditStatuses" : {
+        "meaning" : "用户组审核状态列表(-查询入参-)"
+      },
+      "groupAuditor" : {
+        "meaning" : "用户组审核人(-查询入参-)"
+      },
+      "groupBizVersion" : {
+        "meaning" : "用户组业务自定义版本号"
+      },
+      "groupBriefName" : {
+        "meaning" : "用户组简称"
+      },
+      "groupByTimeFormat" : {
+        "type" : "object",
+        "meaning" : "用户自定义时间格式聚合(key是字段名,value是时间格式)(-查询入参-)"
+      },
+      "groupClazz" : {
+        "meaning" : "用户组子类 类名（表和类一一对应）"
+      },
+      "groupComment" : {
+        "meaning" : "用户组评论"
+      },
+      "groupContactName" : {
+        "meaning" : "用户组联系人名称"
+      },
+      "groupCreateTime" : {
+        "meaning" : "用户组创建时间"
+      },
+      "groupCreator" : {
+        "meaning" : "用户组创建人"
+      },
+      "groupCreatorId" : {
+        "meaning" : "用户组创建人ID"
+      },
+      "groupDateExtra1" : {
+        "meaning" : "用户组扩展时间1"
+      },
+      "groupDateExtra2" : {
+        "meaning" : "用户组扩展时间2"
+      },
+      "groupDateExtra3" : {
+        "meaning" : "用户组扩展时间3"
+      },
+      "groupDateExtra4" : {
+        "meaning" : "用户组扩展时间4"
+      },
+      "groupDateExtra5" : {
+        "meaning" : "用户组扩展时间5"
+      },
+      "groupDefaultFlag" : {
+        "meaning" : "用户组默认标识"
+      },
+      "groupDefaultType" : {
+        "meaning" : "用户组智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "groupDefaultTypes" : {
+        "meaning" : "用户组默认类型列表（多选）(-查询入参-)"
+      },
+      "groupDescription" : {
+        "meaning" : "用户组描述"
+      },
+      "groupEmail" : {
+        "meaning" : "用户组邮箱"
+      },
+      "groupEngName" : {
+        "meaning" : "用户组英文名称"
+      },
+      "groupEqName" : {
+        "meaning" : "用户组判断名称是否相同(-查询入参-)"
+      },
+      "groupExtension" : {
+        "meaning" : "用户组扩展数据"
+      },
+      "groupExternalState" : {
+        "meaning" : "用户组上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "groupFalseFlags" : {
+        "meaning" : "用户组为0的标志位（可以多个）(-查询入参-)"
+      },
+      "groupFaxNo" : {
+        "meaning" : "用户组传真号"
+      },
+      "groupFlags" : {
+        "meaning" : "用户组63位标志位"
+      },
+      "groupFromAuditDate" : {
+        "meaning" : "groupFromAuditDate"
+      },
+      "groupFromCreateTime" : {
+        "meaning" : "groupFromCreateTime"
+      },
+      "groupFromDateExtra1" : {
+        "meaning" : "groupFromDateExtra1"
+      },
+      "groupFromDateExtra2" : {
+        "meaning" : "groupFromDateExtra2"
+      },
+      "groupFromDateExtra3" : {
+        "meaning" : "groupFromDateExtra3"
+      },
+      "groupFromDateExtra4" : {
+        "meaning" : "groupFromDateExtra4"
+      },
+      "groupFromDateExtra5" : {
+        "meaning" : "groupFromDateExtra5"
+      },
+      "groupFromUpdateTime" : {
+        "meaning" : "groupFromUpdateTime"
+      },
+      "groupFromUserCode" : {
+        "meaning" : "用户组起始单号(-查询入参-)"
+      },
+      "groupGroovyScript" : {
+        "meaning" : "用户组groovy脚本"
+      },
+      "groupGropeCode" : {
+        "meaning" : "用户组搜索码"
+      },
+      "groupHasParent" : {
+        "meaning" : "用户组存在父级(-查询入参-)"
+      },
+      "groupId" : {
+        "meaning" : "用户组ID",
+        "is_primary" : true
+      },
+      "groupIds" : {
+        "meaning" : "用户组ID列表(-查询入参-)"
+      },
+      "groupInUsed" : {
+        "meaning" : "用户组是否被使用"
+      },
+      "groupIsAutomaticCommit" : {
+        "meaning" : "用户组是否自动提交(-查询入参-)"
+      },
+      "groupIsBanned" : {
+        "meaning" : "用户组是否被禁用"
+      },
+      "groupIsDeleted" : {
+        "meaning" : "用户组是否被删除"
+      },
+      "groupIsolation" : {
+        "meaning" : "用户组智能节点数据隔离标识"
+      },
+      "groupIsolations" : {
+        "meaning" : "用户组租户隔离列表(-查询入参-)"
+      },
+      "groupJsScript" : {
+        "meaning" : "用户组js脚本"
+      },
+      "groupLocationAddress" : {
+        "meaning" : "用户组所在地址"
+      },
+      "groupMobile" : {
+        "meaning" : "用户组手机号"
+      },
+      "groupName" : {
+        "meaning" : "用户组智能节点名"
+      },
+      "groupNameCodeKeyword" : {
+        "meaning" : "用户组userCode、name or模糊搜索(-查询入参-)"
+      },
+      "groupNameCodeSearch" : {
+        "meaning" : "用户组name、user_code模糊搜索"
+      },
+      "groupNames" : {
+        "meaning" : "用户组默认类型列表（多选）(-查询入参-)"
+      },
+      "groupNumberExtra1" : {
+        "meaning" : "用户组扩展数量1"
+      },
+      "groupNumberExtra2" : {
+        "meaning" : "用户组扩展数量2"
+      },
+      "groupNumberExtra3" : {
+        "meaning" : "用户组扩展数量3"
+      },
+      "groupNumberExtra4" : {
+        "meaning" : "用户组扩展数量4"
+      },
+      "groupNumberExtra5" : {
+        "meaning" : "用户组扩展数量5"
+      },
+      "groupParentId" : {
+        "meaning" : "用户组父节点ID"
+      },
+      "groupParentIds" : {
+        "meaning" : "用户组父id列表(-查询入参-)"
+      },
+      "groupPostcode" : {
+        "meaning" : "用户组邮政编码"
+      },
+      "groupProcessInstanceId" : {
+        "meaning" : "用户组流程实例ID"
+      },
+      "groupProcessInstanceIds" : {
+        "meaning" : "用户组审核流ids(-查询入参-)"
+      },
+      "groupQq" : {
+        "meaning" : "用户组QQ"
+      },
+      "groupRootId" : {
+        "meaning" : "用户组根节点id(-查询入参-)"
+      },
+      "groupRootSystemCode" : {
+        "meaning" : "用户组根系统编码(-查询入参-)"
+      },
+      "groupSerialNumber" : {
+        "meaning" : "用户组顺序号"
+      },
+      "groupShortName" : {
+        "meaning" : "用户组简称名称"
+      },
+      "groupSomeoneAlias" : {
+        "meaning" : "用户组与用户关联别名"
+      },
+      "groupSomeoneCreateTime" : {
+        "meaning" : "用户组与用户关联创建时间"
+      },
+      "groupSomeoneCreator" : {
+        "meaning" : "用户组与用户关联创建人"
+      },
+      "groupSomeoneCreatorId" : {
+        "meaning" : "用户组与用户关联创建人ID"
+      },
+      "groupSomeoneCreatorIds" : {
+        "meaning" : "用户组与用户关联创建人ID列表(-查询入参-)"
+      },
+      "groupSomeoneExtension" : {
+        "meaning" : "用户组与用户关联扩展数据"
+      },
+      "groupSomeoneFromCreateTime" : {
+        "meaning" : "groupSomeoneFromCreateTime"
+      },
+      "groupSomeoneFromUpdateTime" : {
+        "meaning" : "groupSomeoneFromUpdateTime"
+      },
+      "groupSomeoneGroupId" : {
+        "meaning" : "用户组与用户关联用户组ID",
+        "is_primary" : true
+      },
+      "groupSomeoneGroupIds" : {
+        "meaning" : "用户组与用户关联用户组ID列表(-查询入参-)"
+      },
+      "groupSomeoneId" : {
+        "meaning" : "用户组与用户关联ID",
+        "is_primary" : true
+      },
+      "groupSomeoneIds" : {
+        "meaning" : "用户组与用户关联ID列表(-查询入参-)"
+      },
+      "groupSomeoneRemark" : {
+        "meaning" : "用户组与用户关联备注"
+      },
+      "groupSomeoneSomeoneId" : {
+        "meaning" : "用户组与用户关联用户ID",
+        "is_primary" : true
+      },
+      "groupSomeoneSomeoneIds" : {
+        "meaning" : "用户组与用户关联用户ID列表(-查询入参-)"
+      },
+      "groupSomeoneTenantId" : {
+        "meaning" : "用户组与用户关联租户ID"
+      },
+      "groupSomeoneTenantIds" : {
+        "meaning" : "用户组与用户关联租户ID列表(-查询入参-)"
+      },
+      "groupSomeoneToCreateTime" : {
+        "meaning" : "groupSomeoneToCreateTime"
+      },
+      "groupSomeoneToUpdateTime" : {
+        "meaning" : "groupSomeoneToUpdateTime"
+      },
+      "groupSomeoneUpdateTime" : {
+        "meaning" : "用户组与用户关联更新时间"
+      },
+      "groupSomeoneUpdater" : {
+        "meaning" : "用户组与用户关联更新人"
+      },
+      "groupSomeoneUpdaterId" : {
+        "meaning" : "用户组与用户关联更新人ID"
+      },
+      "groupSomeoneUpdaterIds" : {
+        "meaning" : "用户组与用户关联更新人ID列表(-查询入参-)"
+      },
+      "groupSomeoneWeight" : {
+        "meaning" : "用户组与用户关联权重值"
+      },
+      "groupSource" : {
+        "meaning" : "用户组源节点id(-查询入参-)"
+      },
+      "groupState" : {
+        "meaning" : "用户组通用状态"
+      },
+      "groupStates" : {
+        "meaning" : "用户组通用状态列表(-查询入参-)"
+      },
+      "groupSystemCode" : {
+        "meaning" : "用户组系统编码"
+      },
+      "groupSystemCodes" : {
+        "meaning" : "用户组系统编码列表(-查询入参-)"
+      },
+      "groupTarget" : {
+        "meaning" : "用户组目标节点id(-查询入参-)"
+      },
+      "groupTaskNodeName" : {
+        "meaning" : "用户组任务节点名称"
+      },
+      "groupTelephone" : {
+        "meaning" : "用户组电话"
+      },
+      "groupTenantId" : {
+        "meaning" : "用户组租户ID"
+      },
+      "groupTenantIds" : {
+        "meaning" : "用户组列表(-查询入参-)"
+      },
+      "groupThirdPartyClass" : {
+        "meaning" : "用户组第三方分类"
+      },
+      "groupThirdPartyId" : {
+        "meaning" : "用户组第三方系统中的唯一ID"
+      },
+      "groupThirdPartyName" : {
+        "meaning" : "用户组第三方名称"
+      },
+      "groupToAuditDate" : {
+        "meaning" : "groupToAuditDate"
+      },
+      "groupToCreateTime" : {
+        "meaning" : "groupToCreateTime"
+      },
+      "groupToDateExtra1" : {
+        "meaning" : "groupToDateExtra1"
+      },
+      "groupToDateExtra2" : {
+        "meaning" : "groupToDateExtra2"
+      },
+      "groupToDateExtra3" : {
+        "meaning" : "groupToDateExtra3"
+      },
+      "groupToDateExtra4" : {
+        "meaning" : "groupToDateExtra4"
+      },
+      "groupToDateExtra5" : {
+        "meaning" : "groupToDateExtra5"
+      },
+      "groupToUpdateTime" : {
+        "meaning" : "groupToUpdateTime"
+      },
+      "groupToUserCode" : {
+        "meaning" : "用户组终止单号(-查询入参-)"
+      },
+      "groupTrueFlags" : {
+        "meaning" : "用户组为1的标志位（可以多个）(-查询入参-)"
+      },
+      "groupTypeCode" : {
+        "meaning" : "用户组link类型编码(-查询入参-)"
+      },
+      "groupTypeCodes" : {
+        "meaning" : "用户组类型Code列表(-查询入参-)"
+      },
+      "groupUpdateTime" : {
+        "meaning" : "用户组更新时间"
+      },
+      "groupUpdater" : {
+        "meaning" : "用户组更新人"
+      },
+      "groupUpdaterId" : {
+        "meaning" : "用户组更新人ID"
+      },
+      "groupUserCode" : {
+        "meaning" : "用户组智能节点的唯一编码"
+      },
+      "groupUserCodes" : {
+        "meaning" : "用户组智能节点的唯一编码列表(-查询入参-)"
+      },
+      "groupVarExtra1" : {
+        "meaning" : "用户组扩展1"
+      },
+      "groupVarExtra2" : {
+        "meaning" : "用户组扩展2"
+      },
+      "groupVarExtra3" : {
+        "meaning" : "用户组扩展3"
+      },
+      "groupVarExtra4" : {
+        "meaning" : "用户组扩展4"
+      },
+      "groupVarExtra5" : {
+        "meaning" : "用户组扩展5"
+      },
+      "groupVersion" : {
+        "meaning" : "用户组版本号"
+      },
+      "groupWebAddress" : {
+        "meaning" : "用户组网址"
+      },
+      "groupWechatNumber" : {
+        "meaning" : "用户组微信号"
+      },
+      "someoneApplicationId" : {
+        "meaning" : "用户应用ID"
+      },
+      "someoneAuditDate" : {
+        "meaning" : "用户审核时间"
+      },
+      "someoneAuditStatus" : {
+        "meaning" : "用户审核状态"
+      },
+      "someoneAuditStatuses" : {
+        "meaning" : "用户审核状态列表(-查询入参-)"
+      },
+      "someoneAuditor" : {
+        "meaning" : "用户审核人(-查询入参-)"
+      },
+      "someoneAvatarUrl" : {
+        "meaning" : "用户头像URL"
+      },
+      "someoneBankAccountId" : {
+        "meaning" : "用户默认银行账户ID"
+      },
+      "someoneBankAccountIds" : {
+        "meaning" : "用户默认银行账户ID列表(-查询入参-)"
+      },
+      "someoneBizVersion" : {
+        "meaning" : "用户业务自定义版本号"
+      },
+      "someoneBriefName" : {
+        "meaning" : "用户简称"
+      },
+      "someoneClazz" : {
+        "meaning" : "用户子类 类名（表和类一一对应）"
+      },
+      "someoneComment" : {
+        "meaning" : "用户评论"
+      },
+      "someoneCreateTime" : {
+        "meaning" : "用户创建时间"
+      },
+      "someoneCreator" : {
+        "meaning" : "用户创建人"
+      },
+      "someoneCreatorId" : {
+        "meaning" : "用户创建人ID"
+      },
+      "someoneCurrencyId" : {
+        "meaning" : "用户默认币种ID"
+      },
+      "someoneCurrencyIds" : {
+        "meaning" : "用户默认币种ID列表(-查询入参-)"
+      },
+      "someoneDateExtra1" : {
+        "meaning" : "用户扩展时间1"
+      },
+      "someoneDateExtra2" : {
+        "meaning" : "用户扩展时间2"
+      },
+      "someoneDateExtra3" : {
+        "meaning" : "用户扩展时间3"
+      },
+      "someoneDateExtra4" : {
+        "meaning" : "用户扩展时间4"
+      },
+      "someoneDateExtra5" : {
+        "meaning" : "用户扩展时间5"
+      },
+      "someoneDefaultType" : {
+        "meaning" : "用户智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "someoneDefaultTypes" : {
+        "meaning" : "用户默认类型列表（多选）(-查询入参-)"
+      },
+      "someoneDescription" : {
+        "meaning" : "用户描述"
+      },
+      "someoneEmail" : {
+        "meaning" : "用户邮箱"
+      },
+      "someoneEngName" : {
+        "meaning" : "用户英文名称"
+      },
+      "someoneEqName" : {
+        "meaning" : "用户判断名称是否相同(-查询入参-)"
+      },
+      "someoneExtension" : {
+        "meaning" : "用户扩展数据"
+      },
+      "someoneExternalState" : {
+        "meaning" : "用户上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "someoneFalseFlags" : {
+        "meaning" : "用户为0的标志位（可以多个）(-查询入参-)"
+      },
+      "someoneFaxNo" : {
+        "meaning" : "用户传真号"
+      },
+      "someoneFlags" : {
+        "meaning" : "用户63位标志位"
+      },
+      "someoneFromAuditDate" : {
+        "meaning" : "someoneFromAuditDate"
+      },
+      "someoneFromCreateTime" : {
+        "meaning" : "someoneFromCreateTime"
+      },
+      "someoneFromDateExtra1" : {
+        "meaning" : "someoneFromDateExtra1"
+      },
+      "someoneFromDateExtra2" : {
+        "meaning" : "someoneFromDateExtra2"
+      },
+      "someoneFromDateExtra3" : {
+        "meaning" : "someoneFromDateExtra3"
+      },
+      "someoneFromDateExtra4" : {
+        "meaning" : "someoneFromDateExtra4"
+      },
+      "someoneFromDateExtra5" : {
+        "meaning" : "someoneFromDateExtra5"
+      },
+      "someoneFromLastLoginTime" : {
+        "meaning" : "someoneFromLastLoginTime"
+      },
+      "someoneFromUpdateTime" : {
+        "meaning" : "someoneFromUpdateTime"
+      },
+      "someoneFromUserCode" : {
+        "meaning" : "用户起始单号(-查询入参-)"
+      },
+      "someoneGroovyScript" : {
+        "meaning" : "用户groovy脚本"
+      },
+      "someoneGropeCode" : {
+        "meaning" : "用户搜索码"
+      },
+      "someoneHasParent" : {
+        "meaning" : "用户存在父级(-查询入参-)"
+      },
+      "someoneId" : {
+        "meaning" : "用户ID",
+        "is_primary" : true
+      },
+      "someoneIdentification" : {
+        "meaning" : "用户身份识别"
+      },
+      "someoneIds" : {
+        "meaning" : "用户ID列表(-查询入参-)"
+      },
+      "someoneInUsed" : {
+        "meaning" : "用户是否被使用"
+      },
+      "someoneIsAutomaticCommit" : {
+        "meaning" : "用户是否自动提交(-查询入参-)"
+      },
+      "someoneIsBanned" : {
+        "meaning" : "用户是否被禁用"
+      },
+      "someoneIsDeleted" : {
+        "meaning" : "用户是否被删除"
+      },
+      "someoneIsolation" : {
+        "meaning" : "用户智能节点数据隔离标识"
+      },
+      "someoneIsolations" : {
+        "meaning" : "用户租户隔离列表(-查询入参-)"
+      },
+      "someoneJsScript" : {
+        "meaning" : "用户js脚本"
+      },
+      "someoneLastLoginLogId" : {
+        "meaning" : "用户最后登录日志ID"
+      },
+      "someoneLastLoginTime" : {
+        "meaning" : "用户最后登录时间"
+      },
+      "someoneLocationAddress" : {
+        "meaning" : "用户所在地址"
+      },
+      "someoneLocationCity" : {
+        "meaning" : "用户所在市"
+      },
+      "someoneLocationDistrict" : {
+        "meaning" : "用户所在区域"
+      },
+      "someoneLocationProvince" : {
+        "meaning" : "用户所在省"
+      },
+      "someoneLoginCount" : {
+        "meaning" : "用户登录次数"
+      },
+      "someoneMobile" : {
+        "meaning" : "用户手机号"
+      },
+      "someoneName" : {
+        "meaning" : "用户全称名称"
+      },
+      "someoneNameCodeKeyword" : {
+        "meaning" : "用户userCode、name or模糊搜索(-查询入参-)"
+      },
+      "someoneNameCodeSearch" : {
+        "meaning" : "用户name、user_code模糊搜索"
+      },
+      "someoneNames" : {
+        "meaning" : "用户默认类型列表（多选）(-查询入参-)"
+      },
+      "someoneNationality" : {
+        "meaning" : "用户国家"
+      },
+      "someoneNumberExtra1" : {
+        "meaning" : "用户扩展数量1"
+      },
+      "someoneNumberExtra2" : {
+        "meaning" : "用户扩展数量2"
+      },
+      "someoneNumberExtra3" : {
+        "meaning" : "用户扩展数量3"
+      },
+      "someoneNumberExtra4" : {
+        "meaning" : "用户扩展数量4"
+      },
+      "someoneNumberExtra5" : {
+        "meaning" : "用户扩展数量5"
+      },
+      "someoneOrSomeoneList" : {
+        "items" : {
+          "type" : "object"
+        },
+        "meaning" : "用户or查询Someone列表(-查询入参-)"
+      },
+      "someoneParentId" : {
+        "meaning" : "用户父节点ID"
+      },
+      "someoneParentIds" : {
+        "meaning" : "用户父id列表(-查询入参-)"
+      },
+      "someonePostcode" : {
+        "meaning" : "用户邮政编码"
+      },
+      "someoneProcessInstanceId" : {
+        "meaning" : "用户流程实例ID"
+      },
+      "someoneProcessInstanceIds" : {
+        "meaning" : "用户审核流ids(-查询入参-)"
+      },
+      "someoneRootId" : {
+        "meaning" : "用户根节点id(-查询入参-)"
+      },
+      "someoneRootSystemCode" : {
+        "meaning" : "用户根系统编码(-查询入参-)"
+      },
+      "someoneSerialNumber" : {
+        "meaning" : "用户顺序号"
+      },
+      "someoneShortName" : {
+        "meaning" : "用户简称名称"
+      },
+      "someoneSomeoneAddressId" : {
+        "meaning" : "用户默认地址ID"
+      },
+      "someoneSomeoneAddressIds" : {
+        "meaning" : "用户默认地址ID列表(-查询入参-)"
+      },
+      "someoneSomeoneCertificateId" : {
+        "meaning" : "用户默认证书ID"
+      },
+      "someoneSomeoneCertificateIds" : {
+        "meaning" : "用户默认证书ID列表(-查询入参-)"
+      },
+      "someoneSomeoneContactId" : {
+        "meaning" : "用户默认联系人ID"
+      },
+      "someoneSomeoneContactIds" : {
+        "meaning" : "用户默认联系人ID列表(-查询入参-)"
+      },
+      "someoneSource" : {
+        "meaning" : "用户源节点id(-查询入参-)"
+      },
+      "someoneState" : {
+        "meaning" : "用户通用状态"
+      },
+      "someoneStates" : {
+        "meaning" : "用户通用状态列表(-查询入参-)"
+      },
+      "someoneSystemCode" : {
+        "meaning" : "用户系统编码"
+      },
+      "someoneSystemCodes" : {
+        "meaning" : "用户系统编码列表(-查询入参-)"
+      },
+      "someoneTarget" : {
+        "meaning" : "用户目标节点id(-查询入参-)"
+      },
+      "someoneTaskNodeName" : {
+        "meaning" : "用户任务节点名称"
+      },
+      "someoneTelephone" : {
+        "meaning" : "用户电话"
+      },
+      "someoneTenantId" : {
+        "meaning" : "用户租户ID"
+      },
+      "someoneTenantIds" : {
+        "meaning" : "用户租户ID列表(-查询入参-)"
+      },
+      "someoneThirdPartyClass" : {
+        "meaning" : "用户第三方分类"
+      },
+      "someoneThirdPartyId" : {
+        "meaning" : "用户第三方系统中的唯一ID"
+      },
+      "someoneThirdPartyName" : {
+        "meaning" : "用户第三方名称"
+      },
+      "someoneToAuditDate" : {
+        "meaning" : "someoneToAuditDate"
+      },
+      "someoneToCreateTime" : {
+        "meaning" : "someoneToCreateTime"
+      },
+      "someoneToDateExtra1" : {
+        "meaning" : "someoneToDateExtra1"
+      },
+      "someoneToDateExtra2" : {
+        "meaning" : "someoneToDateExtra2"
+      },
+      "someoneToDateExtra3" : {
+        "meaning" : "someoneToDateExtra3"
+      },
+      "someoneToDateExtra4" : {
+        "meaning" : "someoneToDateExtra4"
+      },
+      "someoneToDateExtra5" : {
+        "meaning" : "someoneToDateExtra5"
+      },
+      "someoneToLastLoginTime" : {
+        "meaning" : "someoneToLastLoginTime"
+      },
+      "someoneToUpdateTime" : {
+        "meaning" : "someoneToUpdateTime"
+      },
+      "someoneToUserCode" : {
+        "meaning" : "用户终止单号(-查询入参-)"
+      },
+      "someoneTrueFlags" : {
+        "meaning" : "用户为1的标志位（可以多个）(-查询入参-)"
+      },
+      "someoneTypeCode" : {
+        "meaning" : "用户link类型编码(-查询入参-)"
+      },
+      "someoneTypeCodes" : {
+        "meaning" : "用户类型Code列表(-查询入参-)"
+      },
+      "someoneUpdateTime" : {
+        "meaning" : "用户更新时间"
+      },
+      "someoneUpdater" : {
+        "meaning" : "用户更新人"
+      },
+      "someoneUpdaterId" : {
+        "meaning" : "用户更新人ID"
+      },
+      "someoneUserCode" : {
+        "meaning" : "用户智能节点的唯一编码"
+      },
+      "someoneUserCodes" : {
+        "meaning" : "用户智能节点的唯一编码列表(-查询入参-)"
+      },
+      "someoneVarExtra1" : {
+        "meaning" : "用户扩展1"
+      },
+      "someoneVarExtra2" : {
+        "meaning" : "用户扩展2"
+      },
+      "someoneVarExtra3" : {
+        "meaning" : "用户扩展3"
+      },
+      "someoneVarExtra4" : {
+        "meaning" : "用户扩展4"
+      },
+      "someoneVarExtra5" : {
+        "meaning" : "用户扩展5"
+      },
+      "someoneVersion" : {
+        "meaning" : "用户版本号"
+      }
+    }
+  }

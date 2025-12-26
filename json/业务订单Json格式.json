@@ -1,0 +1,1260 @@
+{
+    "api_name": "/biz-order-detail/findList",
+    "table_name": "业务订单明细",
+    "request": {
+      "bizOrderDetailBizOrderClazz": "BUSINESS_ORDER",
+      "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL"
+    },
+    "response": {
+      "bizOrderDetailActualTimeRequired": {
+        "meaning": "业务订单明细实际需时(小时)"
+      },
+      "bizOrderDetailAddress": {
+        "meaning": "业务订单明细详细地址"
+      },
+      "bizOrderDetailAdjustmentTimeRequired": {
+        "meaning": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "bizOrderDetailApplicationId": {
+        "meaning": "业务订单明细应用ID"
+      },
+      "bizOrderDetailAreaId": {
+        "meaning": "业务订单明细行政区域id"
+      },
+      "bizOrderDetailAreaIds": {
+        "meaning": "业务订单明细行政区域id(-查询入参-)"
+      },
+      "bizOrderDetailAssignStatus": {
+        "meaning": "业务订单明细指派状态"
+      },
+      "bizOrderDetailAssignStatuses": {
+        "meaning": "业务订单明细指派状态（多选）(-查询入参-)"
+      },
+      "bizOrderDetailAuditDate": {
+        "meaning": "业务订单明细审核时间"
+      },
+      "bizOrderDetailAuditStatus": {
+        "meaning": "业务订单明细审核状态"
+      },
+      "bizOrderDetailAuditStatuses": {
+        "meaning": "业务订单明细审核状态列表(-查询入参-)"
+      },
+      "bizOrderDetailAuditor": {
+        "meaning": "业务订单明细审核人(-查询入参-)"
+      },
+      "bizOrderDetailAvailableScheduleId": {
+        "meaning": "业务订单明细可用日程id"
+      },
+      "bizOrderDetailAvailableScheduleIds": {
+        "meaning": "业务订单明细可用日程id列表(-查询入参-)"
+      },
+      "bizOrderDetailBeginTime": {
+        "meaning": "业务订单明细开始时间"
+      },
+      "bizOrderDetailBizOrderActualTimeRequired": {
+        "meaning": "业务订单明细实际需时(小时)"
+      },
+      "bizOrderDetailBizOrderAdjustmentTimeRequired": {
+        "meaning": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "bizOrderDetailBizOrderApplicationId": {
+        "meaning": "业务订单明细应用ID"
+      },
+      "bizOrderDetailBizOrderAuditDate": {
+        "meaning": "业务订单明细审核时间"
+      },
+      "bizOrderDetailBizOrderAuditStatus": {
+        "meaning": "业务订单明细审核状态"
+      },
+      "bizOrderDetailBizOrderAuditStatuses": {
+        "meaning": "业务订单明细审核状态列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderAuditor": {
+        "meaning": "业务订单明细审核人(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderAvailableScheduleId": {
+        "meaning": "业务订单明细可用日程id"
+      },
+      "bizOrderDetailBizOrderAvailableScheduleIds": {
+        "meaning": "业务订单明细可用日程id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderBeginTime": {
+        "meaning": "业务订单明细开始时间"
+      },
+      "bizOrderDetailBizOrderBizVersion": {
+        "meaning": "业务订单明细业务自定义版本号"
+      },
+      "bizOrderDetailBizOrderBriefName": {
+        "meaning": "业务订单明细简称"
+      },
+      "bizOrderDetailBizOrderBusDivIdBatch": {
+        "meaning": "业务订单明细事业部id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderClazz": {
+        "meaning": "业务订单明细子类 类名（表和类一一对应）"
+      },
+      "bizOrderDetailBizOrderClosedReason": {
+        "meaning": "业务订单明细结案原因"
+      },
+      "bizOrderDetailBizOrderClosedStatus": {
+        "meaning": "业务订单明细结案状态"
+      },
+      "bizOrderDetailBizOrderClosedStatuses": {
+        "meaning": "业务订单明细结案状态(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderComment": {
+        "meaning": "业务订单明细评论"
+      },
+      "bizOrderDetailBizOrderCompleteQuantity": {
+        "meaning": "业务订单明细完成数量"
+      },
+      "bizOrderDetailBizOrderCompleteStatus": {
+        "meaning": "业务订单明细完成状态"
+      },
+      "bizOrderDetailBizOrderCompleteStatuses": {
+        "meaning": "业务订单明细完成状态列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderContName": {
+        "meaning": "业务订单明细联系人姓名"
+      },
+      "bizOrderDetailBizOrderCreateTime": {
+        "meaning": "业务订单明细创建时间"
+      },
+      "bizOrderDetailBizOrderCreator": {
+        "meaning": "业务订单明细创建人"
+      },
+      "bizOrderDetailBizOrderCreatorId": {
+        "meaning": "业务订单明细创建人ID"
+      },
+      "bizOrderDetailBizOrderCur": {
+        "meaning": "业务订单明细币种"
+      },
+      "bizOrderDetailBizOrderCurRate": {
+        "meaning": "业务订单明细汇率"
+      },
+      "bizOrderDetailBizOrderCustId": {
+        "meaning": "业务订单明细客户id"
+      },
+      "bizOrderDetailBizOrderCustIds": {
+        "meaning": "业务订单明细客户id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderDateExtra1": {
+        "meaning": "业务订单明细扩展时间1"
+      },
+      "bizOrderDetailBizOrderDateExtra2": {
+        "meaning": "业务订单明细扩展时间2"
+      },
+      "bizOrderDetailBizOrderDateExtra3": {
+        "meaning": "业务订单明细扩展时间3"
+      },
+      "bizOrderDetailBizOrderDateExtra4": {
+        "meaning": "业务订单明细扩展时间4"
+      },
+      "bizOrderDetailBizOrderDateExtra5": {
+        "meaning": "业务订单明细扩展时间5"
+      },
+      "bizOrderDetailBizOrderDefaultType": {
+        "meaning": "业务订单明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "bizOrderDetailBizOrderDefaultTypes": {
+        "meaning": "业务订单明细默认类型列表（多选）(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderDelMethod": {
+        "meaning": "业务订单明细配送方式"
+      },
+      "bizOrderDetailBizOrderDeliveryDate": {
+        "meaning": "业务订单明细交货日期"
+      },
+      "bizOrderDetailBizOrderDelvCust": {
+        "meaning": "业务订单明细送货客户"
+      },
+      "bizOrderDetailBizOrderDescription": {
+        "meaning": "业务订单明细描述"
+      },
+      "bizOrderDetailBizOrderEndTime": {
+        "meaning": "业务订单明细结束时间"
+      },
+      "bizOrderDetailBizOrderEndTimeRequired": {
+        "meaning": "业务订单明细最后需时(小时)"
+      },
+      "bizOrderDetailBizOrderEngName": {
+        "meaning": "业务订单明细英文名称"
+      },
+      "bizOrderDetailBizOrderEqName": {
+        "meaning": "业务订单明细判断名称是否相同(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderEquipmentId": {
+        "meaning": "业务订单明细设备id"
+      },
+      "bizOrderDetailBizOrderEquipmentIds": {
+        "meaning": "业务订单明细设备_id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderExchangeRateId": {
+        "meaning": "业务订单明细币种汇率id"
+      },
+      "bizOrderDetailBizOrderExchangeRateIds": {
+        "meaning": "业务订单明细币种汇率id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderExtension": {
+        "meaning": "业务订单明细扩展数据"
+      },
+      "bizOrderDetailBizOrderExternalState": {
+        "meaning": "业务订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "bizOrderDetailBizOrderFalseFlags": {
+        "meaning": "业务订单明细为0的标志位（可以多个）(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderFilterClazz": {
+        "meaning": "业务订单明细冗余字段用于筛选"
+      },
+      "bizOrderDetailBizOrderFlags": {
+        "meaning": "业务订单明细63位标志位"
+      },
+      "bizOrderDetailBizOrderFmtDec": {
+        "meaning": "业务订单明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+      },
+      "bizOrderDetailBizOrderFromAuditDate": {
+        "meaning": "bizOrderDetailBizOrderFromAuditDate"
+      },
+      "bizOrderDetailBizOrderFromBeginTime": {
+        "meaning": "bizOrderDetailBizOrderFromBeginTime"
+      },
+      "bizOrderDetailBizOrderFromCreateTime": {
+        "meaning": "bizOrderDetailBizOrderFromCreateTime"
+      },
+      "bizOrderDetailBizOrderFromDateExtra1": {
+        "meaning": "bizOrderDetailBizOrderFromDateExtra1"
+      },
+      "bizOrderDetailBizOrderFromDateExtra2": {
+        "meaning": "bizOrderDetailBizOrderFromDateExtra2"
+      },
+      "bizOrderDetailBizOrderFromDateExtra3": {
+        "meaning": "bizOrderDetailBizOrderFromDateExtra3"
+      },
+      "bizOrderDetailBizOrderFromDateExtra4": {
+        "meaning": "bizOrderDetailBizOrderFromDateExtra4"
+      },
+      "bizOrderDetailBizOrderFromDateExtra5": {
+        "meaning": "bizOrderDetailBizOrderFromDateExtra5"
+      },
+      "bizOrderDetailBizOrderFromDeliveryDate": {
+        "meaning": "bizOrderDetailBizOrderFromDeliveryDate"
+      },
+      "bizOrderDetailBizOrderFromEndTime": {
+        "meaning": "bizOrderDetailBizOrderFromEndTime"
+      },
+      "bizOrderDetailBizOrderFromReceiptDate": {
+        "meaning": "bizOrderDetailBizOrderFromReceiptDate"
+      },
+      "bizOrderDetailBizOrderFromUpdateTime": {
+        "meaning": "bizOrderDetailBizOrderFromUpdateTime"
+      },
+      "bizOrderDetailBizOrderFromUserCode": {
+        "meaning": "业务订单明细起始单号(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderFscType": {
+        "meaning": "业务订单明细FSC声明"
+      },
+      "bizOrderDetailBizOrderGenerativePeople": {
+        "meaning": "业务订单明细下发人"
+      },
+      "bizOrderDetailBizOrderGenerativeState": {
+        "meaning": "业务订单明细下发状态"
+      },
+      "bizOrderDetailBizOrderGroovyScript": {
+        "meaning": "业务订单明细groovy脚本"
+      },
+      "bizOrderDetailBizOrderGropeCode": {
+        "meaning": "业务订单明细搜索码"
+      },
+      "bizOrderDetailBizOrderHasParent": {
+        "meaning": "业务订单明细存在父级(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderId": {
+        "meaning": "业务订单明细PK",
+        "is_primary": true
+      },
+      "bizOrderDetailBizOrderIds": {
+        "meaning": "业务订单明细列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderInUsed": {
+        "meaning": "业务订单明细是否被使用"
+      },
+      "bizOrderDetailBizOrderInvType": {
+        "meaning": "业务订单明细发票类型id"
+      },
+      "bizOrderDetailBizOrderInvTypeTaxRateId": {
+        "meaning": "业务订单明细发票税率id"
+      },
+      "bizOrderDetailBizOrderInvTypeTaxRateIds": {
+        "meaning": "业务订单明细发票类型税率id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderIsAutomaticCommit": {
+        "meaning": "业务订单明细是否自动提交(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderIsBanned": {
+        "meaning": "业务订单明细是否被禁用"
+      },
+      "bizOrderDetailBizOrderIsDeleted": {
+        "meaning": "业务订单明细是否被删除"
+      },
+      "bizOrderDetailBizOrderIsLeaf": {
+        "meaning": "业务订单明细是否叶子节点"
+      },
+      "bizOrderDetailBizOrderIsMainFlow": {
+        "meaning": "业务订单明细是否是主流程"
+      },
+      "bizOrderDetailBizOrderIsManualModificationDate": {
+        "meaning": "业务订单明细是否手动修改计划生产时间"
+      },
+      "bizOrderDetailBizOrderIsUrgent": {
+        "meaning": "业务订单明细是否加急"
+      },
+      "bizOrderDetailBizOrderIsolation": {
+        "meaning": "业务订单明细智能节点数据隔离标识"
+      },
+      "bizOrderDetailBizOrderIsolations": {
+        "meaning": "业务订单明细租户隔离列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderJsScript": {
+        "meaning": "业务订单明细js脚本"
+      },
+      "bizOrderDetailBizOrderLcTotalAmt": {
+        "meaning": "业务订单明细本币总费用(根据币种，外币才显示)，外币不含税"
+      },
+      "bizOrderDetailBizOrderMaterialId": {
+        "meaning": "业务订单明细物料id"
+      },
+      "bizOrderDetailBizOrderMaterialIds": {
+        "meaning": "业务订单明细物料id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderName": {
+        "meaning": "业务订单明细智能节点名"
+      },
+      "bizOrderDetailBizOrderNameCodeKeyword": {
+        "meaning": "业务订单明细userCode、name or模糊搜索(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderNameCodeSearch": {
+        "meaning": "业务订单明细name、user_code模糊搜索"
+      },
+      "bizOrderDetailBizOrderNames": {
+        "meaning": "业务订单明细默认类型列表（多选）(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderNumberExtra1": {
+        "meaning": "业务订单明细扩展数量1"
+      },
+      "bizOrderDetailBizOrderNumberExtra2": {
+        "meaning": "业务订单明细扩展数量2"
+      },
+      "bizOrderDetailBizOrderNumberExtra3": {
+        "meaning": "业务订单明细扩展数量3"
+      },
+      "bizOrderDetailBizOrderNumberExtra4": {
+        "meaning": "业务订单明细扩展数量4"
+      },
+      "bizOrderDetailBizOrderNumberExtra5": {
+        "meaning": "业务订单明细扩展数量5"
+      },
+      "bizOrderDetailBizOrderPCount": {
+        "meaning": "业务订单明细打印次数"
+      },
+      "bizOrderDetailBizOrderParentId": {
+        "meaning": "业务订单明细父节点ID"
+      },
+      "bizOrderDetailBizOrderParentIds": {
+        "meaning": "业务订单明细父id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderPhone": {
+        "meaning": "业务订单明细手机"
+      },
+      "bizOrderDetailBizOrderPlannedOutputQuantity": {
+        "meaning": "业务订单明细计划产出数量"
+      },
+      "bizOrderDetailBizOrderPlannedTimeRequired": {
+        "meaning": "业务订单明细计划需时(小时)"
+      },
+      "bizOrderDetailBizOrderPrintStatus": {
+        "meaning": "业务订单明细打印状态(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderPrintTimes": {
+        "meaning": "业务订单明细打印次数"
+      },
+      "bizOrderDetailBizOrderPriority": {
+        "meaning": "业务订单明细优先级"
+      },
+      "bizOrderDetailBizOrderProcessInstanceId": {
+        "meaning": "业务订单明细流程实例ID"
+      },
+      "bizOrderDetailBizOrderProcessInstanceIds": {
+        "meaning": "业务订单明细审核流ids(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderProductionProcessesTypeId": {
+        "meaning": "业务订单明细工序类型ID"
+      },
+      "bizOrderDetailBizOrderProductionProcessesTypeIds": {
+        "meaning": "业务订单明细工序类型_id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderProductionShiftId": {
+        "meaning": "业务订单明细生产班次ID"
+      },
+      "bizOrderDetailBizOrderProductionShiftIds": {
+        "meaning": "业务订单明细生产班次_id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderQuantity": {
+        "meaning": "业务订单明细任务数量"
+      },
+      "bizOrderDetailBizOrderReceiptDate": {
+        "meaning": "业务订单明细单据日期"
+      },
+      "bizOrderDetailBizOrderReceiptType": {
+        "meaning": "业务订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "bizOrderDetailBizOrderReceiptTypes": {
+        "meaning": "业务订单明细单据类型列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderRelatedTasksId": {
+        "meaning": "业务订单明细关联任务id"
+      },
+      "bizOrderDetailBizOrderRelatedTasksIds": {
+        "meaning": "业务订单明细关联任务id列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderRootId": {
+        "meaning": "业务订单明细根节点id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderRootSystemCode": {
+        "meaning": "业务订单明细根系统编码(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderSerialNumber": {
+        "meaning": "业务订单明细顺序号"
+      },
+      "bizOrderDetailBizOrderSettleCustId": {
+        "meaning": "业务订单明细结算客户ID"
+      },
+      "bizOrderDetailBizOrderSettleCustIds": {
+        "meaning": "业务订单明细结算客户ID列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderSource": {
+        "meaning": "业务订单明细源节点id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderSourceType": {
+        "meaning": "业务订单明细来源类型"
+      },
+      "bizOrderDetailBizOrderSourceTypes": {
+        "meaning": "业务订单明细来源类型列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderSources": {
+        "meaning": "业务订单明细来源列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderState": {
+        "meaning": "业务订单明细通用状态"
+      },
+      "bizOrderDetailBizOrderStates": {
+        "meaning": "业务订单明细通用状态列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderStlAmtFmt": {
+        "meaning": "业务订单明细结算金额保留小数位(默认2位，可手动变更)"
+      },
+      "bizOrderDetailBizOrderStlFee": {
+        "meaning": "业务订单明细结算费用（默认与含税总金额相等)"
+      },
+      "bizOrderDetailBizOrderStlPriceFmt": {
+        "meaning": "业务订单明细结算单价保留小数位(默认9位，可手动变更)"
+      },
+      "bizOrderDetailBizOrderStlType": {
+        "meaning": "业务订单明细结算类型 SettlementType_id"
+      },
+      "bizOrderDetailBizOrderStlTypes": {
+        "meaning": "业务订单明细结算类型(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderSystemCode": {
+        "meaning": "业务订单明细系统编码"
+      },
+      "bizOrderDetailBizOrderSystemCodes": {
+        "meaning": "业务订单明细系统编码列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTarget": {
+        "meaning": "业务订单明细目标节点id(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTargets": {
+        "meaning": "业务订单明细目标列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTaskNodeName": {
+        "meaning": "业务订单明细任务节点名称"
+      },
+      "bizOrderDetailBizOrderTaxRt": {
+        "meaning": "业务订单明细税率"
+      },
+      "bizOrderDetailBizOrderTenantId": {
+        "meaning": "业务订单明细租户_guid"
+      },
+      "bizOrderDetailBizOrderTenantIds": {
+        "meaning": "业务订单明细租户_guid列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderThirdPartyClass": {
+        "meaning": "业务订单明细第三方分类"
+      },
+      "bizOrderDetailBizOrderThirdPartyId": {
+        "meaning": "业务订单明细第三方系统中的唯一ID"
+      },
+      "bizOrderDetailBizOrderThirdPartyName": {
+        "meaning": "业务订单明细第三方名称"
+      },
+      "bizOrderDetailBizOrderToAuditDate": {
+        "meaning": "bizOrderDetailBizOrderToAuditDate"
+      },
+      "bizOrderDetailBizOrderToBeginTime": {
+        "meaning": "bizOrderDetailBizOrderToBeginTime"
+      },
+      "bizOrderDetailBizOrderToCreateTime": {
+        "meaning": "bizOrderDetailBizOrderToCreateTime"
+      },
+      "bizOrderDetailBizOrderToDateExtra1": {
+        "meaning": "bizOrderDetailBizOrderToDateExtra1"
+      },
+      "bizOrderDetailBizOrderToDateExtra2": {
+        "meaning": "bizOrderDetailBizOrderToDateExtra2"
+      },
+      "bizOrderDetailBizOrderToDateExtra3": {
+        "meaning": "bizOrderDetailBizOrderToDateExtra3"
+      },
+      "bizOrderDetailBizOrderToDateExtra4": {
+        "meaning": "bizOrderDetailBizOrderToDateExtra4"
+      },
+      "bizOrderDetailBizOrderToDateExtra5": {
+        "meaning": "bizOrderDetailBizOrderToDateExtra5"
+      },
+      "bizOrderDetailBizOrderToDeliveryDate": {
+        "meaning": "bizOrderDetailBizOrderToDeliveryDate"
+      },
+      "bizOrderDetailBizOrderToEndTime": {
+        "meaning": "bizOrderDetailBizOrderToEndTime"
+      },
+      "bizOrderDetailBizOrderToReceiptDate": {
+        "meaning": "bizOrderDetailBizOrderToReceiptDate"
+      },
+      "bizOrderDetailBizOrderToUpdateTime": {
+        "meaning": "bizOrderDetailBizOrderToUpdateTime"
+      },
+      "bizOrderDetailBizOrderToUserCode": {
+        "meaning": "业务订单明细终止单号(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTotalFeeNt": {
+        "meaning": "业务订单明细总费用(不含税)"
+      },
+      "bizOrderDetailBizOrderTotalVol": {
+        "meaning": "业务订单明细总体积"
+      },
+      "bizOrderDetailBizOrderTotalWithTax": {
+        "meaning": "业务订单明细总费用(含税)"
+      },
+      "bizOrderDetailBizOrderTotalWt": {
+        "meaning": "业务订单明细总重量"
+      },
+      "bizOrderDetailBizOrderTrueFlags": {
+        "meaning": "业务订单明细为1的标志位（可以多个）(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTypeCode": {
+        "meaning": "业务订单明细link类型编码(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderTypeCodes": {
+        "meaning": "业务订单明细类型Code列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderUnitCode": {
+        "meaning": "业务订单明细单位id"
+      },
+      "bizOrderDetailBizOrderUpdateTime": {
+        "meaning": "业务订单明细更新时间"
+      },
+      "bizOrderDetailBizOrderUpdater": {
+        "meaning": "业务订单明细更新人"
+      },
+      "bizOrderDetailBizOrderUpdaterId": {
+        "meaning": "业务订单明细更新人ID"
+      },
+      "bizOrderDetailBizOrderUserCode": {
+        "meaning": "业务订单明细智能节点的唯一编码"
+      },
+      "bizOrderDetailBizOrderUserCodes": {
+        "meaning": "业务订单明细智能节点的唯一编码列表(-查询入参-)"
+      },
+      "bizOrderDetailBizOrderVarExtra1": {
+        "meaning": "业务订单明细扩展1"
+      },
+      "bizOrderDetailBizOrderVarExtra2": {
+        "meaning": "业务订单明细扩展2"
+      },
+      "bizOrderDetailBizOrderVarExtra3": {
+        "meaning": "业务订单明细扩展3"
+      },
+      "bizOrderDetailBizOrderVarExtra4": {
+        "meaning": "业务订单明细扩展4"
+      },
+      "bizOrderDetailBizOrderVarExtra5": {
+        "meaning": "业务订单明细扩展5"
+      },
+      "bizOrderDetailBizOrderVersion": {
+        "meaning": "业务订单明细版本号"
+      },
+      "bizOrderDetailBizVersion": {
+        "meaning": "业务订单明细业务自定义版本号"
+      },
+      "bizOrderDetailBriefName": {
+        "meaning": "业务订单明细简称"
+      },
+      "bizOrderDetailBusDivIdBatch": {
+        "meaning": "业务订单明细事业部id(-查询入参-)"
+      },
+      "bizOrderDetailClazz": {
+        "meaning": "业务订单明细子类 类名（表和类一一对应）"
+      },
+      "bizOrderDetailClosedReason": {
+        "meaning": "业务订单明细结案原因"
+      },
+      "bizOrderDetailClosedStatus": {
+        "meaning": "业务订单明细结案状态"
+      },
+      "bizOrderDetailClosedStatuses": {
+        "meaning": "业务订单明细结案状态(-查询入参-)"
+      },
+      "bizOrderDetailComment": {
+        "meaning": "业务订单明细评论"
+      },
+      "bizOrderDetailCompleteQuantity": {
+        "meaning": "业务订单明细完成数量"
+      },
+      "bizOrderDetailCompleteStatus": {
+        "meaning": "业务订单明细完成状态"
+      },
+      "bizOrderDetailCompleteStatuses": {
+        "meaning": "业务订单明细完成状态列表(-查询入参-)"
+      },
+      "bizOrderDetailCostSchemeId": {
+        "meaning": "bizOrderDetailCostSchemeId"
+      },
+      "bizOrderDetailCostSchemeIds": {
+        "meaning": "业务订单明细列表(-查询入参-)"
+      },
+      "bizOrderDetailCreateTime": {
+        "meaning": "业务订单明细创建时间"
+      },
+      "bizOrderDetailCreator": {
+        "meaning": "业务订单明细创建人"
+      },
+      "bizOrderDetailCreatorId": {
+        "meaning": "业务订单明细创建人ID"
+      },
+      "bizOrderDetailDateExtra1": {
+        "meaning": "业务订单明细扩展时间1"
+      },
+      "bizOrderDetailDateExtra2": {
+        "meaning": "业务订单明细扩展时间2"
+      },
+      "bizOrderDetailDateExtra3": {
+        "meaning": "业务订单明细扩展时间3"
+      },
+      "bizOrderDetailDateExtra4": {
+        "meaning": "业务订单明细扩展时间4"
+      },
+      "bizOrderDetailDateExtra5": {
+        "meaning": "业务订单明细扩展时间5"
+      },
+      "bizOrderDetailDds": {
+        "meaning": "业务订单明细欧盟零毁林法案-dds编号"
+      },
+      "bizOrderDetailDdsCodes": {
+        "meaning": "业务订单明细dds列表(-查询入参-)"
+      },
+      "bizOrderDetailDefaultType": {
+        "meaning": "业务订单明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "bizOrderDetailDefaultTypes": {
+        "meaning": "业务订单明细默认类型列表（多选）(-查询入参-)"
+      },
+      "bizOrderDetailDeliveryDate": {
+        "meaning": "业务订单明细交货日期"
+      },
+      "bizOrderDetailDeliveryTypeId": {
+        "meaning": "业务订单明细送货类型"
+      },
+      "bizOrderDetailDeliveryTypeIds": {
+        "meaning": "业务订单明细送货类型列表(-查询入参-)"
+      },
+      "bizOrderDetailDescription": {
+        "meaning": "业务订单明细描述"
+      },
+      "bizOrderDetailEndTime": {
+        "meaning": "业务订单明细结束时间"
+      },
+      "bizOrderDetailEndTimeRequired": {
+        "meaning": "业务订单明细最后需时(小时)"
+      },
+      "bizOrderDetailEngName": {
+        "meaning": "业务订单明细英文名称"
+      },
+      "bizOrderDetailEqName": {
+        "meaning": "业务订单明细判断名称是否相同(-查询入参-)"
+      },
+      "bizOrderDetailEquipmentId": {
+        "meaning": "业务订单明细设备id"
+      },
+      "bizOrderDetailEquipmentIds": {
+        "meaning": "业务订单明细设备_id列表(-查询入参-)"
+      },
+      "bizOrderDetailExchangeRateId": {
+        "meaning": "业务订单明细币种汇率id"
+      },
+      "bizOrderDetailExchangeRateIds": {
+        "meaning": "业务订单明细币种汇率id(-查询入参-)"
+      },
+      "bizOrderDetailExpProcessId": {
+        "meaning": "业务订单明细经验工序id"
+      },
+      "bizOrderDetailExpProcessIds": {
+        "meaning": "业务订单明细经验工序id列表(-查询入参-)"
+      },
+      "bizOrderDetailExpectedDate": {
+        "type": "object",
+        "meaning": "业务订单明细预计交期"
+      },
+      "bizOrderDetailExtMatBarcode": {
+        "meaning": "业务订单明细外部物料条码(BarCode)"
+      },
+      "bizOrderDetailExtMatCode": {
+        "meaning": "业务订单明细外部物料编码(例客户产品编码)"
+      },
+      "bizOrderDetailExtMatName": {
+        "meaning": "业务订单明细外部物料名称(例客户产品名称)"
+      },
+      "bizOrderDetailExtension": {
+        "meaning": "业务订单明细扩展数据"
+      },
+      "bizOrderDetailExternalNo": {
+        "meaning": "业务订单明细外部单号(例客户PO，采购送货单号)"
+      },
+      "bizOrderDetailExternalState": {
+        "meaning": "业务订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "bizOrderDetailFalseFlags": {
+        "meaning": "业务订单明细为0的标志位（可以多个）(-查询入参-)"
+      },
+      "bizOrderDetailFilterClazz": {
+        "meaning": "业务订单明细冗余字段用于筛选"
+      },
+      "bizOrderDetailFlags": {
+        "meaning": "业务订单明细63位标志位"
+      },
+      "bizOrderDetailFromAuditDate": {
+        "meaning": "bizOrderDetailFromAuditDate"
+      },
+      "bizOrderDetailFromBeginTime": {
+        "meaning": "bizOrderDetailFromBeginTime"
+      },
+      "bizOrderDetailFromCreateTime": {
+        "meaning": "bizOrderDetailFromCreateTime"
+      },
+      "bizOrderDetailFromDateExtra1": {
+        "meaning": "bizOrderDetailFromDateExtra1"
+      },
+      "bizOrderDetailFromDateExtra2": {
+        "meaning": "bizOrderDetailFromDateExtra2"
+      },
+      "bizOrderDetailFromDateExtra3": {
+        "meaning": "bizOrderDetailFromDateExtra3"
+      },
+      "bizOrderDetailFromDateExtra4": {
+        "meaning": "bizOrderDetailFromDateExtra4"
+      },
+      "bizOrderDetailFromDateExtra5": {
+        "meaning": "bizOrderDetailFromDateExtra5"
+      },
+      "bizOrderDetailFromDeliveryDate": {
+        "meaning": "bizOrderDetailFromDeliveryDate"
+      },
+      "bizOrderDetailFromEndTime": {
+        "meaning": "bizOrderDetailFromEndTime"
+      },
+      "bizOrderDetailFromExpectedDate": {
+        "type": "object",
+        "meaning": "bizOrderDetailFromExpectedDate"
+      },
+      "bizOrderDetailFromReceiptDate": {
+        "meaning": "bizOrderDetailFromReceiptDate"
+      },
+      "bizOrderDetailFromUpdateTime": {
+        "meaning": "bizOrderDetailFromUpdateTime"
+      },
+      "bizOrderDetailFromUserCode": {
+        "meaning": "业务订单明细起始单号(-查询入参-)"
+      },
+      "bizOrderDetailFscType": {
+        "meaning": "业务订单明细FSC声明"
+      },
+      "bizOrderDetailGenerativePeople": {
+        "meaning": "业务订单明细下发人"
+      },
+      "bizOrderDetailGenerativeState": {
+        "meaning": "业务订单明细下发状态"
+      },
+      "bizOrderDetailGiftQty": {
+        "meaning": "业务订单明细赠品数量"
+      },
+      "bizOrderDetailGroovyScript": {
+        "meaning": "业务订单明细groovy脚本"
+      },
+      "bizOrderDetailGropeCode": {
+        "meaning": "业务订单明细搜索码"
+      },
+      "bizOrderDetailHasParent": {
+        "meaning": "业务订单明细存在父级(-查询入参-)"
+      },
+      "bizOrderDetailId": {
+        "meaning": "业务订单明细主键ID",
+        "is_primary": true
+      },
+      "bizOrderDetailIds": {
+        "meaning": "业务订单明细pk列表(-查询入参-)"
+      },
+      "bizOrderDetailInUsed": {
+        "meaning": "业务订单明细是否被使用"
+      },
+      "bizOrderDetailInvTypeTaxRateId": {
+        "meaning": "业务订单明细发票税率id"
+      },
+      "bizOrderDetailInvTypeTaxRateIds": {
+        "meaning": "业务订单明细发票类型税率id(-查询入参-)"
+      },
+      "bizOrderDetailInvoRecIssQuantity": {
+        "meaning": "业务订单明细开/收票数量"
+      },
+      "bizOrderDetailInvoRecIssStatus": {
+        "meaning": "业务订单明细开/收票状态"
+      },
+      "bizOrderDetailInvoRecIssStatuss": {
+        "meaning": "业务订单明细开/收票状态(-查询入参-)"
+      },
+      "bizOrderDetailIsAutomaticCommit": {
+        "meaning": "业务订单明细是否自动提交(-查询入参-)"
+      },
+      "bizOrderDetailIsBanned": {
+        "meaning": "业务订单明细是否被禁用"
+      },
+      "bizOrderDetailIsDeleted": {
+        "meaning": "业务订单明细是否被删除"
+      },
+      "bizOrderDetailIsLeaf": {
+        "meaning": "业务订单明细是否叶子节点"
+      },
+      "bizOrderDetailIsMainFlow": {
+        "meaning": "业务订单明细是否是主流程"
+      },
+      "bizOrderDetailIsManualModificationDate": {
+        "meaning": "业务订单明细是否手动修改计划生产时间"
+      },
+      "bizOrderDetailIsolation": {
+        "meaning": "业务订单明细智能节点数据隔离标识"
+      },
+      "bizOrderDetailIsolations": {
+        "meaning": "业务订单明细租户隔离列表(-查询入参-)"
+      },
+      "bizOrderDetailJsScript": {
+        "meaning": "业务订单明细js脚本"
+      },
+      "bizOrderDetailLastWorkCode": {
+        "meaning": "业务订单明细产品最新工单号"
+      },
+      "bizOrderDetailLocUnitPrice": {
+        "meaning": "业务订单明细本币单价(根据币种，外币才显示)，外币不含税"
+      },
+      "bizOrderDetailLocalAmount": {
+        "meaning": "业务订单明细本币金额(根据币种，外币才显示)，外币不含税"
+      },
+      "bizOrderDetailLossQty": {
+        "meaning": "业务订单明细损耗"
+      },
+      "bizOrderDetailMatCat": {
+        "meaning": "业务订单明细物料分类ID"
+      },
+      "bizOrderDetailMaterialId": {
+        "meaning": "业务订单明细物料id"
+      },
+      "bizOrderDetailMaterialIds": {
+        "meaning": "业务订单明细物料id列表(-查询入参-)"
+      },
+      "bizOrderDetailName": {
+        "meaning": "业务订单明细智能节点名"
+      },
+      "bizOrderDetailNameCodeKeyword": {
+        "meaning": "业务订单明细userCode、name or模糊搜索(-查询入参-)"
+      },
+      "bizOrderDetailNameCodeSearch": {
+        "meaning": "业务订单明细name、user_code模糊搜索"
+      },
+      "bizOrderDetailNames": {
+        "meaning": "业务订单明细默认类型列表（多选）(-查询入参-)"
+      },
+      "bizOrderDetailNumberExtra1": {
+        "meaning": "业务订单明细扩展数量1"
+      },
+      "bizOrderDetailNumberExtra2": {
+        "meaning": "业务订单明细扩展数量2"
+      },
+      "bizOrderDetailNumberExtra3": {
+        "meaning": "业务订单明细扩展数量3"
+      },
+      "bizOrderDetailNumberExtra4": {
+        "meaning": "业务订单明细扩展数量4"
+      },
+      "bizOrderDetailNumberExtra5": {
+        "meaning": "业务订单明细扩展数量5"
+      },
+      "bizOrderDetailParentId": {
+        "meaning": "业务订单明细父节点ID"
+      },
+      "bizOrderDetailParentIds": {
+        "meaning": "业务订单明细父id列表(-查询入参-)"
+      },
+      "bizOrderDetailPlannedOutputQuantity": {
+        "meaning": "业务订单明细计划产出数量"
+      },
+      "bizOrderDetailPlannedTimeRequired": {
+        "meaning": "业务订单明细计划需时(小时)"
+      },
+      "bizOrderDetailPrdOApyGiftQuantity": {
+        "meaning": "业务订单明细成品出库申请赠品完成数量"
+      },
+      "bizOrderDetailPrdOApyGiftStatus": {
+        "meaning": "业务订单明细成品出库申请赠品完成状态"
+      },
+      "bizOrderDetailPrdOApyGiftStatuss": {
+        "meaning": "业务订单明细成品出库申请赠品完成状态(-查询入参-)"
+      },
+      "bizOrderDetailPrdOApyQuantity": {
+        "meaning": "业务订单明细成品出库申请数量"
+      },
+      "bizOrderDetailPrdOApySpareQuantity": {
+        "meaning": "业务订单明细成品出库申请备品完成数量"
+      },
+      "bizOrderDetailPrdOApySpareStatus": {
+        "meaning": "业务订单明细成品出库申请备品完成状态"
+      },
+      "bizOrderDetailPrdOApySpareStatuss": {
+        "meaning": "业务订单明细成品出库申请备品完成状态(-查询入参-)"
+      },
+      "bizOrderDetailPrdOApyStatus": {
+        "meaning": "业务订单明细成品出库申请完成状态"
+      },
+      "bizOrderDetailPrdOApyStatuss": {
+        "meaning": "业务订单明细成品出库申请完成状态(-查询入参-)"
+      },
+      "bizOrderDetailPrdRetQuantity": {
+        "meaning": "业务订单明细成品退货数量"
+      },
+      "bizOrderDetailPrdRetSpareQuantity": {
+        "meaning": "业务订单明细成品备品退货数量"
+      },
+      "bizOrderDetailPrdRetSpareStatus": {
+        "meaning": "业务订单明细成品退货备品完成状态"
+      },
+      "bizOrderDetailPrdRetSpareStatuss": {
+        "meaning": "业务订单明细成品退货备品状态(-查询入参-)"
+      },
+      "bizOrderDetailPrdRetStatus": {
+        "meaning": "业务订单明细成品退货完成状态"
+      },
+      "bizOrderDetailPrdRetStatuss": {
+        "meaning": "业务订单明细成品退货状态(-查询入参-)"
+      },
+      "bizOrderDetailPrintStatus": {
+        "meaning": "业务订单明细打印状态(-查询入参-)"
+      },
+      "bizOrderDetailPrintTimes": {
+        "meaning": "业务订单明细打印次数"
+      },
+      "bizOrderDetailPriority": {
+        "meaning": "业务订单明细优先级"
+      },
+      "bizOrderDetailProCode": {
+        "meaning": "业务订单明细项目编码"
+      },
+      "bizOrderDetailProName": {
+        "meaning": "业务订单明细项目名称"
+      },
+      "bizOrderDetailProcessInstanceId": {
+        "meaning": "业务订单明细流程实例ID"
+      },
+      "bizOrderDetailProcessInstanceIds": {
+        "meaning": "业务订单明细审核流ids(-查询入参-)"
+      },
+      "bizOrderDetailProdCntrId": {
+        "meaning": "业务订单明细生产中心id"
+      },
+      "bizOrderDetailProdCntrIds": {
+        "meaning": "业务订单明细生产中心id列表(-查询入参-)"
+      },
+      "bizOrderDetailProductionProcessesTypeId": {
+        "meaning": "业务订单明细工序类型ID"
+      },
+      "bizOrderDetailProductionProcessesTypeIds": {
+        "meaning": "业务订单明细工序类型_id列表(-查询入参-)"
+      },
+      "bizOrderDetailProductionShiftId": {
+        "meaning": "业务订单明细生产班次ID"
+      },
+      "bizOrderDetailProductionShiftIds": {
+        "meaning": "业务订单明细生产班次_id列表(-查询入参-)"
+      },
+      "bizOrderDetailProp": {
+        "meaning": "业务订单明细比例"
+      },
+      "bizOrderDetailPurchasedQuantity": {
+        "meaning": "业务订单明细已采购数量（采购申请反写）"
+      },
+      "bizOrderDetailPurchasedStatus": {
+        "meaning": "业务订单明细已采购状态（采购申请反写）"
+      },
+      "bizOrderDetailPurchasedStatuses": {
+        "meaning": "业务订单明细已采购状态（多选）(-查询入参-)"
+      },
+      "bizOrderDetailQuantity": {
+        "meaning": "业务订单明细任务数量"
+      },
+      "bizOrderDetailQuoteQty": {
+        "meaning": "业务订单明细报价数量"
+      },
+      "bizOrderDetailRecPaySettleQuantity": {
+        "meaning": "业务订单明细应收/付结算数量"
+      },
+      "bizOrderDetailRecPaySettleStatus": {
+        "meaning": "业务订单明细应收/付结算状态"
+      },
+      "bizOrderDetailRecPaySettleStatuss": {
+        "meaning": "业务订单明细应收/付结算状态(-查询入参-)"
+      },
+      "bizOrderDetailReceiptDate": {
+        "meaning": "业务订单明细单据日期"
+      },
+      "bizOrderDetailReceiptType": {
+        "meaning": "业务订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "bizOrderDetailReceiptTypes": {
+        "meaning": "业务订单明细单据类型列表(-查询入参-)"
+      },
+      "bizOrderDetailRelatedTasksId": {
+        "meaning": "业务订单明细关联任务id"
+      },
+      "bizOrderDetailRelatedTasksIds": {
+        "meaning": "业务订单明细关联任务id列表(-查询入参-)"
+      },
+      "bizOrderDetailReorderCode": {
+        "meaning": "业务订单明细翻单订单号"
+      },
+      "bizOrderDetailRootId": {
+        "meaning": "业务订单明细根节点id(-查询入参-)"
+      },
+      "bizOrderDetailRootSystemCode": {
+        "meaning": "业务订单明细根系统编码(-查询入参-)"
+      },
+      "bizOrderDetailSerialNumber": {
+        "meaning": "业务订单明细顺序号"
+      },
+      "bizOrderDetailSettleAmount": {
+        "meaning": "业务订单明细结算金额（默认与含税总金额相等），写入库存价格字段"
+      },
+      "bizOrderDetailSettlePrice": {
+        "meaning": "业务订单明细结算单价（默认与含税单价相等），写入库存价格字段"
+      },
+      "bizOrderDetailSettleTotalAmount": {
+        "meaning": "业务订单明细结算金额（默认与含税总金额相等），写入库存价格字段"
+      },
+      "bizOrderDetailSource": {
+        "meaning": "业务订单明细源节点id(-查询入参-)"
+      },
+      "bizOrderDetailSourceType": {
+        "meaning": "业务订单明细来源类型"
+      },
+      "bizOrderDetailSourceTypes": {
+        "meaning": "业务订单明细来源类型列表(-查询入参-)"
+      },
+      "bizOrderDetailSources": {
+        "meaning": "业务订单明细来源列表(-查询入参-)"
+      },
+      "bizOrderDetailSpareQty": {
+        "meaning": "业务订单明细备用数量"
+      },
+      "bizOrderDetailState": {
+        "meaning": "业务订单明细通用状态"
+      },
+      "bizOrderDetailStates": {
+        "meaning": "业务订单明细通用状态列表(-查询入参-)"
+      },
+      "bizOrderDetailStatesInboundOrders": {
+        "meaning": "业务订单明细订单入库状态"
+      },
+      "bizOrderDetailStockQty": {
+        "meaning": "业务订单明细备库存数量"
+      },
+      "bizOrderDetailSumQty": {
+        "meaning": "业务订单明细总数量"
+      },
+      "bizOrderDetailSystemCode": {
+        "meaning": "业务订单明细系统编码"
+      },
+      "bizOrderDetailSystemCodes": {
+        "meaning": "业务订单明细系统编码列表(-查询入参-)"
+      },
+      "bizOrderDetailTarget": {
+        "meaning": "业务订单明细目标节点id(-查询入参-)"
+      },
+      "bizOrderDetailTargets": {
+        "meaning": "业务订单明细目标列表(-查询入参-)"
+      },
+      "bizOrderDetailTaskNodeName": {
+        "meaning": "业务订单明细任务节点名称"
+      },
+      "bizOrderDetailTaxExclPrice": {
+        "meaning": "业务订单明细不含税报价单价(吨价，平方价，千平方英寸)"
+      },
+      "bizOrderDetailTaxExclTotal": {
+        "meaning": "业务订单明细不含税总金额"
+      },
+      "bizOrderDetailTaxExclUnitPrice": {
+        "meaning": "业务订单明细不含税单价(默认隐藏，根据计费方案转换计算得出)"
+      },
+      "bizOrderDetailTaxInclPrice": {
+        "meaning": "业务订单明细含税报价单价(吨价，平方价，千平方英寸)"
+      },
+      "bizOrderDetailTaxInclTotal": {
+        "meaning": "业务订单明细含税总金额"
+      },
+      "bizOrderDetailTenantId": {
+        "meaning": "业务订单明细租户ID"
+      },
+      "bizOrderDetailTenantIds": {
+        "meaning": "业务订单明细租户id列表(-查询入参-)"
+      },
+      "bizOrderDetailTerminalCode": {
+        "meaning": "业务订单明细终端编码"
+      },
+      "bizOrderDetailTerminalCustId": {
+        "meaning": "业务订单明细终端客户id"
+      },
+      "bizOrderDetailTerminalCustIds": {
+        "meaning": "业务订单明细终端客户id(-查询入参-)"
+      },
+      "bizOrderDetailThirdPartyClass": {
+        "meaning": "业务订单明细第三方分类"
+      },
+      "bizOrderDetailThirdPartyId": {
+        "meaning": "业务订单明细第三方系统中的唯一ID"
+      },
+      "bizOrderDetailThirdPartyName": {
+        "meaning": "业务订单明细第三方名称"
+      },
+      "bizOrderDetailToAuditDate": {
+        "meaning": "bizOrderDetailToAuditDate"
+      },
+      "bizOrderDetailToBeginTime": {
+        "meaning": "bizOrderDetailToBeginTime"
+      },
+      "bizOrderDetailToCreateTime": {
+        "meaning": "bizOrderDetailToCreateTime"
+      },
+      "bizOrderDetailToDateExtra1": {
+        "meaning": "bizOrderDetailToDateExtra1"
+      },
+      "bizOrderDetailToDateExtra2": {
+        "meaning": "bizOrderDetailToDateExtra2"
+      },
+      "bizOrderDetailToDateExtra3": {
+        "meaning": "bizOrderDetailToDateExtra3"
+      },
+      "bizOrderDetailToDateExtra4": {
+        "meaning": "bizOrderDetailToDateExtra4"
+      },
+      "bizOrderDetailToDateExtra5": {
+        "meaning": "bizOrderDetailToDateExtra5"
+      },
+      "bizOrderDetailToDeliveryDate": {
+        "meaning": "bizOrderDetailToDeliveryDate"
+      },
+      "bizOrderDetailToEndTime": {
+        "meaning": "bizOrderDetailToEndTime"
+      },
+      "bizOrderDetailToExpectedDate": {
+        "type": "object",
+        "meaning": "bizOrderDetailToExpectedDate"
+      },
+      "bizOrderDetailToReceiptDate": {
+        "meaning": "bizOrderDetailToReceiptDate"
+      },
+      "bizOrderDetailToUpdateTime": {
+        "meaning": "bizOrderDetailToUpdateTime"
+      },
+      "bizOrderDetailToUserCode": {
+        "meaning": "业务订单明细终止单号(-查询入参-)"
+      },
+      "bizOrderDetailTotalInboundOrders": {
+        "meaning": "业务订单明细订单累计入库数量"
+      },
+      "bizOrderDetailTrueFlags": {
+        "meaning": "业务订单明细为1的标志位（可以多个）(-查询入参-)"
+      },
+      "bizOrderDetailTypeCode": {
+        "meaning": "业务订单明细link类型编码(-查询入参-)"
+      },
+      "bizOrderDetailTypeCodes": {
+        "meaning": "业务订单明细类型Code列表(-查询入参-)"
+      },
+      "bizOrderDetailUnitCode": {
+        "meaning": "业务订单明细单位id"
+      },
+      "bizOrderDetailUnitPriceTax": {
+        "meaning": "业务订单明细含税单价(默认隐藏，根据计费方案转换计算得出)"
+      },
+      "bizOrderDetailUpdateTime": {
+        "meaning": "业务订单明细更新时间"
+      },
+      "bizOrderDetailUpdater": {
+        "meaning": "业务订单明细更新人"
+      },
+      "bizOrderDetailUpdaterId": {
+        "meaning": "业务订单明细更新人ID"
+      },
+      "bizOrderDetailUsedQty": {
+        "meaning": "业务订单明细使用库存数量"
+      },
+      "bizOrderDetailUserCode": {
+        "meaning": "业务订单明细智能节点的唯一编码"
+      },
+      "bizOrderDetailUserCodes": {
+        "meaning": "业务订单明细智能节点的唯一编码列表(-查询入参-)"
+      },
+      "bizOrderDetailVarExtra1": {
+        "meaning": "业务订单明细扩展1"
+      },
+      "bizOrderDetailVarExtra2": {
+        "meaning": "业务订单明细扩展2"
+      },
+      "bizOrderDetailVarExtra3": {
+        "meaning": "业务订单明细扩展3"
+      },
+      "bizOrderDetailVarExtra4": {
+        "meaning": "业务订单明细扩展4"
+      },
+      "bizOrderDetailVarExtra5": {
+        "meaning": "业务订单明细扩展5"
+      },
+      "bizOrderDetailVersion": {
+        "meaning": "业务订单明细版本号"
+      },
+      "bizOrderDetailWorkOrderQuantity": {
+        "meaning": "业务订单明细已开单数量"
+      },
+      "bizOrderDetailWorkOrderStatus": {
+        "meaning": "业务订单明细已开单状态"
+      },
+      "bizOrderDetailWorkOrderStatuses": {
+        "meaning": "业务订单明细已开单状态（多选）(-查询入参-)"
+      }
+    }
+  }

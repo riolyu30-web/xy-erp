@@ -6,9 +6,10 @@ from pickletools import read_bytes4
 import re
 from datetime import datetime
 from http import HTTPStatus
-
+import requests  # 导入requests库
+import json  # 导入json库
 from dotenv import load_dotenv
-from fastapi import Request
+from fastapi import Request, HTTPException
 from fastapi.responses import StreamingResponse  # 导入流式响应
 from sse_starlette.sse import EventSourceResponse
 from starlette.concurrency import iterate_in_threadpool
@@ -347,33 +348,283 @@ async def dashscope_mcp_stream(request: Request, bot: Assistant, user_prompt: st
     return StreamingResponse(stream_generator(), media_type="text/event-stream")
 
 
-def dashscope_image_synthesis(prompt: str, model: str = "wan2.5-t2i-preview",size: str = "1024*1024"):
+def dashscope_text2image(prompt: str, model: str = "wan2.6-t2i",size: str = "1920*1080"):
     """
     调用大模型进行图片生成
     Args:
         prompt: 图片描述提示词
         model: 使用的模型名称
+        size: 图片尺寸 1920*1080 是观看电影的黄金标准，3840*2160 (4K) 能提供最佳体验
     Returns:
         list: 图片URL列表
     """
-    # 调用大模型API
-    response = ImageSynthesis.call(
-        model=model,
-        prompt=prompt,
-        negative_prompt="ugly, blurry, lowres, low quality, worst quality, jpeg artifacts, watermark, signature, text, username,bad anatomy, poorly drawn hands, poorly drawn face, extra limbs, extra fingers, missing limbs, disfigured, deformed, malformed hands, long neck, bad proportions",
-        n=1,
-        prompt_extend=True,
-        watermark=False,
-        size=size
-    )
+    api_key = os.getenv("DASHSCOPE_API_KEY")  # 获取DASHSCOPE_API_KEY
+    # 构建请求数据
+    url = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"  # 设置请求URL
+    headers = {
+        "Content-Type": "application/json",  # 设置Content-Type
+        "Authorization": f"Bearer {api_key}"  # 设置Authorization
+    }
+    payload = {
+        "model": model,  # 设置模型
+        "input": {
+            "messages": [
+                {
+                    "role": "user",  # 设置角色
+                    "content": [
+                        {
+                            "text": prompt.strip()  # 设置提示词
+                        }
+                    ]
+                }
+            ]
+        },
+        "parameters": {
+            "prompt_extend": True,  # 开启提示词扩展
+            "watermark": False,  # 关闭水印
+            "n": 1,  # 生成数量
+            "negative_prompt": "",  # 负面提示词
+            "size": size  # 图片尺寸
+        }
+    }
+
+    # 发送请求
+    response = requests.post(url, headers=headers, json=payload)  # 发送POST请求
+
     # 获取响应内容
-    if response.status_code == HTTPStatus.OK:
-        # 在当前目录下保存图片
-        for result in response.output.results:
-            # API 返回的图片 URL 有 24 小时有效期。生产系统必须在获取 URL 后立即下载图片，并转存至您自己的持久化存储服务中（如阿里云对象存储 OSS）。
-            # file_name = PurePosixPath(unquote(urlparse(result.url).path)).parts[-1]
-            # with open('./%s' % file_name, 'wb+') as f:
-            #    f.write(requests.get(result.url).content)
-            return result.url
+    if response.status_code == HTTPStatus.OK:  # 检查响应状态码
+        try:  # 尝试解析响应数据
+            response_json = response.json()  # 解析JSON响应
+            output = response_json.get("output", {})  # 获取output对象
+            choices = output.get("choices", [])  # 获取choices列表
+            if choices:  # 如果choices不为空
+                message = choices[0].get("message", {})  # 获取message对象
+                content = message.get("content", [])  # 获取content列表
+                if content:  # 如果content不为空
+                    return content[0].get("image")  # 返回图片URL
+        except Exception as e:  # 捕获异常
+            log(f"解析图片响应失败: {e}")  # 记录错误日志
+            return None  # 返回None
     else:
         raise HTTPException(status_code=response.status_code, detail="Image synthesis failed")
+
+
+def dashscope_image2image(prompt: str, images: list[str], model: str = "wan2.6-image", size: str = "1280*1280"):
+    """
+    调用大模型进行图生图
+    Args:
+        prompt: 图片描述提示词
+        images: 参考图片URL列表
+        model: 使用的模型名称
+        size: 生成图片尺寸
+    Returns:
+        str: 图片URL
+    """
+    api_key = os.getenv("DASHSCOPE_API_KEY")  # 获取DASHSCOPE_API_KEY
+    # 构建请求数据
+    url = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"  # 设置请求URL
+    headers = {
+        "Content-Type": "application/json",  # 设置Content-Type
+        "Authorization": f"Bearer {api_key}"  # 设置Authorization
+    }
+
+    # 构建消息内容
+    content_list = [{"text": prompt}]  # 添加文本提示词
+    for image_url in images:
+        content_list.append({"image": image_url})  # 添加参考图片URL
+
+    payload = {
+        "model": model,  # 设置模型
+        "input": {
+            "messages": [
+                {
+                    "role": "user",  # 设置角色
+                    "content": content_list
+                }
+            ]
+        },
+        "parameters": {
+            "prompt_extend": True,  # 开启提示词扩展
+            "watermark": False,  # 关闭水印
+            "n": 1,  # 生成数量
+            "enable_interleave": False,  # 关闭图文混排
+            "size": size  # 图片尺寸
+        }
+    }
+
+    # 发送请求
+    response = requests.post(url, headers=headers, json=payload)  # 发送POST请求
+
+    # 获取响应内容
+    if response.status_code == HTTPStatus.OK:  # 检查响应状态码
+        try:  # 尝试解析响应数据
+            response_json = response.json()  # 解析JSON响应
+            output = response_json.get("output", {})  # 获取output对象
+            choices = output.get("choices", [])  # 获取choices列表
+            if choices:  # 如果choices不为空
+                message = choices[0].get("message", {})  # 获取message对象
+                content = message.get("content", [])  # 获取content列表
+                if content:  # 如果content不为空
+                    return content[0].get("image")  # 返回图片URL
+        except Exception as e:  # 捕获异常
+            log(f"解析图生图响应失败: {e}")  # 记录错误日志
+            return None  # 返回None
+    else:
+        raise HTTPException(status_code=response.status_code, detail="Image synthesis failed")
+
+def dashscope_image2video(prompt: str, img_url: str, audio_url: str = None, model: str = "wan2.6-i2v", resolution: str = "720P", duration: int = 10):
+    """
+    调用大模型进行图生视频
+    Args:
+        prompt: 视频描述提示词
+        img_url: 参考图片URL
+        audio_url: 音频URL (可选)
+        model: 使用的模型名称
+        resolution: 视频分辨率
+        duration: 视频时长 (秒)
+    Returns:
+        str: 任务ID (task_id)
+    """
+    api_key = os.getenv("DASHSCOPE_API_KEY")  # 获取DASHSCOPE_API_KEY
+    # 构建请求数据
+    url = "https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis"  # 设置请求URL
+    headers = {
+        "Content-Type": "application/json",  # 设置Content-Type
+        "Authorization": f"Bearer {api_key}",  # 设置Authorization
+        "X-DashScope-Async": "enable"  # 开启异步处理
+    }
+
+    input_data = {
+        "prompt": prompt,  # 设置提示词
+        "img_url": img_url  # 设置参考图片URL
+    }
+    if audio_url:
+        input_data["audio_url"] = audio_url  # 如果有音频URL，则设置音频URL
+
+    payload = {
+        "model": model,  # 设置模型
+        "input": input_data,
+        "parameters": {
+            "resolution": resolution,  # 设置分辨率
+            "prompt_extend": True,  # 开启提示词扩展
+            "duration": duration,  # 设置时长
+            "audio": True if audio_url else False,  # 如果有音频URL，则开启音频生成
+            "shot_type": "multi"  # 设置镜头类型
+        }
+    }
+
+    # 发送请求
+    response = requests.post(url, headers=headers, json=payload)  # 发送POST请求
+
+    # 获取响应内容
+    if response.status_code == HTTPStatus.OK:  # 检查响应状态码
+        try:  # 尝试解析响应数据
+            response_json = response.json()  # 解析JSON响应
+            output = response_json.get("output", {})  # 获取output对象
+            task_id = output.get("task_id")  # 获取task_id
+            if task_id:  # 如果task_id不为空
+                return task_id  # 返回task_id
+        except Exception as e:  # 捕获异常
+            log(f"解析图生视频响应失败: {e}")  # 记录错误日志
+            return None  # 返回None
+    else:
+        log(f"图生视频请求失败: {response.text}")  # 记录错误日志
+        raise HTTPException(status_code=response.status_code, detail="Video synthesis failed")
+
+def dashscope_video2video(prompt: str, reference_video_urls: list[str], model: str = "wan2.6-r2v", size: str = "1280*720", duration: int = 10):
+    """
+    调用大模型进行视频生视频
+    Args:
+        prompt: 视频描述提示词
+        reference_video_urls: 参考视频URL列表
+        model: 使用的模型名称
+        size: 视频分辨率
+        duration: 视频时长 (秒)
+    Returns:
+        str: 任务ID (task_id)
+    """
+    api_key = os.getenv("DASHSCOPE_API_KEY")  # 获取DASHSCOPE_API_KEY
+    # 构建请求数据
+    url = "https://dashscope.aliyuncs.com/api/v1/services/aigc/video-generation/video-synthesis"  # 设置请求URL
+    headers = {
+        "Content-Type": "application/json",  # 设置Content-Type
+        "Authorization": f"Bearer {api_key}",  # 设置Authorization
+        "X-DashScope-Async": "enable"  # 开启异步处理
+    }
+
+    input_data = {
+        "prompt": prompt,  # 设置提示词
+        "reference_video_urls": reference_video_urls  # 设置参考视频URL列表
+    }
+
+    payload = {
+        "model": model,  # 设置模型
+        "input": input_data,
+        "parameters": {
+            "size": size,  # 设置分辨率
+            "duration": duration,  # 设置时长
+            "audio": True,  # 开启音频生成
+            "shot_type": "multi"  # 设置镜头类型
+        }
+    }
+
+    # 发送请求
+    response = requests.post(url, headers=headers, json=payload)  # 发送POST请求
+
+    # 获取响应内容
+    if response.status_code == HTTPStatus.OK:  # 检查响应状态码
+        try:  # 尝试解析响应数据
+            response_json = response.json()  # 解析JSON响应
+            output = response_json.get("output", {})  # 获取output对象
+            task_id = output.get("task_id")  # 获取task_id
+            if task_id:  # 如果task_id不为空
+                return task_id  # 返回task_id
+        except Exception as e:  # 捕获异常
+            log(f"解析视频生视频响应失败: {e}")  # 记录错误日志
+            return None  # 返回None
+    else:
+        log(f"视频生视频请求失败: {response.text}")  # 记录错误日志
+        raise HTTPException(status_code=response.status_code, detail="Video synthesis failed")
+
+def dashscope_task_status(task_id: str):
+    """
+    查询DashScope异步任务状态
+    Args:
+        task_id: 任务ID
+    Returns:
+        dict: 包含任务状态和结果的字典，如果任务成功完成，返回视频URL
+    """
+    api_key = os.getenv("DASHSCOPE_API_KEY")  # 获取DASHSCOPE_API_KEY
+    # 构建请求数据
+    url = f"https://dashscope.aliyuncs.com/api/v1/tasks/{task_id}"  # 设置请求URL
+    headers = {
+        "Authorization": f"Bearer {api_key}"  # 设置Authorization
+    }
+
+    # 发送请求
+    response = requests.get(url, headers=headers)  # 发送GET请求
+
+    # 获取响应内容
+    if response.status_code == HTTPStatus.OK:  # 检查响应状态码
+        try:  # 尝试解析响应数据
+            response_json = response.json()  # 解析JSON响应
+            output = response_json.get("output", {})  # 获取output对象
+            task_status = output.get("task_status")  # 获取任务状态
+            
+            if task_status == "SUCCEEDED":  # 如果任务成功
+                video_url = output.get("video_url")  # 获取视频URL
+                if video_url:  # 如果视频URL存在
+                    return video_url  # 返回视频URL
+            elif task_status == "FAILED":  # 如果任务失败
+                 log(f"任务失败: {output}") # 记录失败信息
+                 return None # 返回None
+            
+            # 如果任务仍在进行中（PENDING或RUNNING），返回状态
+            return None
+            
+        except Exception as e:  # 捕获异常
+            log(f"解析任务状态响应失败: {e}")  # 记录错误日志
+            return None  # 返回None
+    else:
+        log(f"查询任务状态失败: {response.text}")  # 记录错误日志
+        raise HTTPException(status_code=response.status_code, detail="Query task status failed")

@@ -1,0 +1,1155 @@
+ {
+    "api_name": "/contract-detail/findList",
+    "table_name": "合同明细",
+    "request": {
+      "contractDetailClazz": "CONTRACT_DETAIL",
+      "contractDetailContractClazz": "CONTRACT"
+    },
+    "response": {
+      "contractDetailActualTimeRequired": {
+        "meaning": "合同明细实际需时(小时)"
+      },
+      "contractDetailAdjustmentTimeRequired": {
+        "meaning": "合同明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "contractDetailApplicationId": {
+        "meaning": "合同明细应用ID"
+      },
+      "contractDetailAuditDate": {
+        "meaning": "contractDetailAuditDate"
+      },
+      "contractDetailAuditStatus": {
+        "meaning": "合同明细审核状态"
+      },
+      "contractDetailAuditStatuses": {
+        "meaning": "合同明细审核状态列表(-查询入参-)"
+      },
+      "contractDetailAuditor": {
+        "meaning": "合同明细审核人(-查询入参-)"
+      },
+      "contractDetailAvailableScheduleId": {
+        "meaning": "合同明细可用日程id"
+      },
+      "contractDetailAvailableScheduleIds": {
+        "meaning": "合同明细可用日程id列表(-查询入参-)"
+      },
+      "contractDetailBeginTime": {
+        "meaning": "contractDetailBeginTime"
+      },
+      "contractDetailBizOrderDetSpareQuantity": {
+        "meaning": "合同明细已开业务订单备品数量（业务订单反写）"
+      },
+      "contractDetailBizOrderDetSpareStatus": {
+        "meaning": "合同明细已开业务订单备品状态（业务订单反写）"
+      },
+      "contractDetailBizOrderDetSpareStatuses": {
+        "meaning": "合同明细已开业务订单备品状态(-查询入参-)"
+      },
+      "contractDetailBizOrderQuantity": {
+        "meaning": "合同明细订单完成数量"
+      },
+      "contractDetailBizOrderStatus": {
+        "meaning": "合同明细订单完成状态"
+      },
+      "contractDetailBizOrderStatuses": {
+        "meaning": "合同明细订单完成状态(-查询入参-)"
+      },
+      "contractDetailBizVersion": {
+        "meaning": "合同明细业务自定义版本号"
+      },
+      "contractDetailBriefName": {
+        "meaning": "合同明细简称"
+      },
+      "contractDetailBusDivIdBatch": {
+        "meaning": "合同明细事业部id(-查询入参-)"
+      },
+      "contractDetailClazz": {
+        "meaning": "合同明细子类 类名（表和类一一对应）"
+      },
+      "contractDetailClosedReason": {
+        "meaning": "合同明细结案原因"
+      },
+      "contractDetailClosedStatus": {
+        "meaning": "合同明细结案状态"
+      },
+      "contractDetailClosedStatuses": {
+        "meaning": "合同明细结案状态(-查询入参-)"
+      },
+      "contractDetailComment": {
+        "meaning": "合同明细评论"
+      },
+      "contractDetailCompleteQuantity": {
+        "meaning": "合同明细完成数量"
+      },
+      "contractDetailCompleteStatus": {
+        "meaning": "合同明细完成状态"
+      },
+      "contractDetailCompleteStatuses": {
+        "meaning": "合同明细完成状态列表(-查询入参-)"
+      },
+      "contractDetailContractActualTimeRequired": {
+        "meaning": "合同明细实际需时(小时)"
+      },
+      "contractDetailContractAdjustmentTimeRequired": {
+        "meaning": "合同明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "contractDetailContractApplicationId": {
+        "meaning": "合同明细应用ID"
+      },
+      "contractDetailContractAuditDate": {
+        "meaning": "contractDetailContractAuditDate"
+      },
+      "contractDetailContractAuditStatus": {
+        "meaning": "合同明细审核状态"
+      },
+      "contractDetailContractAuditStatuses": {
+        "meaning": "合同明细审核状态列表(-查询入参-)"
+      },
+      "contractDetailContractAuditor": {
+        "meaning": "合同明细审核人(-查询入参-)"
+      },
+      "contractDetailContractAvailableScheduleId": {
+        "meaning": "合同明细可用日程id"
+      },
+      "contractDetailContractAvailableScheduleIds": {
+        "meaning": "合同明细可用日程id列表(-查询入参-)"
+      },
+      "contractDetailContractBeginTime": {
+        "meaning": "contractDetailContractBeginTime"
+      },
+      "contractDetailContractBizVersion": {
+        "meaning": "合同明细业务自定义版本号"
+      },
+      "contractDetailContractBriefName": {
+        "meaning": "合同明细简称"
+      },
+      "contractDetailContractBusDivIdBatch": {
+        "meaning": "合同明细事业部id(-查询入参-)"
+      },
+      "contractDetailContractClazz": {
+        "meaning": "合同明细子类 类名（表和类一一对应）"
+      },
+      "contractDetailContractClosedReason": {
+        "meaning": "合同明细结案原因"
+      },
+      "contractDetailContractClosedStatus": {
+        "meaning": "合同明细结案状态"
+      },
+      "contractDetailContractClosedStatuses": {
+        "meaning": "合同明细结案状态(-查询入参-)"
+      },
+      "contractDetailContractComment": {
+        "meaning": "合同明细评论"
+      },
+      "contractDetailContractCompleteQuantity": {
+        "meaning": "合同明细完成数量"
+      },
+      "contractDetailContractCompleteStatus": {
+        "meaning": "合同明细完成状态"
+      },
+      "contractDetailContractCompleteStatuses": {
+        "meaning": "合同明细完成状态列表(-查询入参-)"
+      },
+      "contractDetailContractContractTemplateId": {
+        "meaning": "合同明细合同模板id"
+      },
+      "contractDetailContractContractTemplateIds": {
+        "meaning": "合同明细合同模板id列表(-查询入参-)"
+      },
+      "contractDetailContractCreateTime": {
+        "meaning": "contractDetailContractCreateTime"
+      },
+      "contractDetailContractCreator": {
+        "meaning": "合同明细创建人"
+      },
+      "contractDetailContractCreatorId": {
+        "meaning": "合同明细创建人ID"
+      },
+      "contractDetailContractCurrencyExchangeRateId": {
+        "meaning": "contractDetailContractCurrencyExchangeRateId"
+      },
+      "contractDetailContractCurrencyExchangeRateIds": {
+        "meaning": "合同明细列表(-查询入参-)"
+      },
+      "contractDetailContractDateExtra1": {
+        "meaning": "contractDetailContractDateExtra1"
+      },
+      "contractDetailContractDateExtra2": {
+        "meaning": "contractDetailContractDateExtra2"
+      },
+      "contractDetailContractDateExtra3": {
+        "meaning": "contractDetailContractDateExtra3"
+      },
+      "contractDetailContractDateExtra4": {
+        "meaning": "contractDetailContractDateExtra4"
+      },
+      "contractDetailContractDateExtra5": {
+        "meaning": "contractDetailContractDateExtra5"
+      },
+      "contractDetailContractDecimalMethod": {
+        "meaning": "合同明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+      },
+      "contractDetailContractDefaultType": {
+        "meaning": "合同明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "contractDetailContractDefaultTypes": {
+        "meaning": "合同明细默认类型列表（多选）(-查询入参-)"
+      },
+      "contractDetailContractDeliveryDate": {
+        "meaning": "contractDetailContractDeliveryDate"
+      },
+      "contractDetailContractDeliveryMethod": {
+        "meaning": "合同明细配送方式"
+      },
+      "contractDetailContractDescription": {
+        "meaning": "合同明细描述"
+      },
+      "contractDetailContractEndTime": {
+        "meaning": "contractDetailContractEndTime"
+      },
+      "contractDetailContractEndTimeRequired": {
+        "meaning": "合同明细最后需时(小时)"
+      },
+      "contractDetailContractEngName": {
+        "meaning": "合同明细英文名称"
+      },
+      "contractDetailContractEqName": {
+        "meaning": "合同明细判断名称是否相同(-查询入参-)"
+      },
+      "contractDetailContractEquipmentId": {
+        "meaning": "合同明细设备id"
+      },
+      "contractDetailContractEquipmentIds": {
+        "meaning": "合同明细设备_id列表(-查询入参-)"
+      },
+      "contractDetailContractExchangeRateId": {
+        "meaning": "合同明细币种汇率id"
+      },
+      "contractDetailContractExchangeRateIds": {
+        "meaning": "合同明细币种汇率id(-查询入参-)"
+      },
+      "contractDetailContractExtension": {
+        "meaning": "合同明细扩展数据"
+      },
+      "contractDetailContractExternalState": {
+        "meaning": "合同明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "contractDetailContractFalseFlags": {
+        "meaning": "合同明细为0的标志位（可以多个）(-查询入参-)"
+      },
+      "contractDetailContractFilterClazz": {
+        "meaning": "合同明细冗余字段用于筛选"
+      },
+      "contractDetailContractFlags": {
+        "meaning": "合同明细63位标志位"
+      },
+      "contractDetailContractFromAuditDate": {
+        "meaning": "contractDetailContractFromAuditDate"
+      },
+      "contractDetailContractFromBeginTime": {
+        "meaning": "contractDetailContractFromBeginTime"
+      },
+      "contractDetailContractFromCreateTime": {
+        "meaning": "contractDetailContractFromCreateTime"
+      },
+      "contractDetailContractFromDateExtra1": {
+        "meaning": "contractDetailContractFromDateExtra1"
+      },
+      "contractDetailContractFromDateExtra2": {
+        "meaning": "contractDetailContractFromDateExtra2"
+      },
+      "contractDetailContractFromDateExtra3": {
+        "meaning": "contractDetailContractFromDateExtra3"
+      },
+      "contractDetailContractFromDateExtra4": {
+        "meaning": "contractDetailContractFromDateExtra4"
+      },
+      "contractDetailContractFromDateExtra5": {
+        "meaning": "contractDetailContractFromDateExtra5"
+      },
+      "contractDetailContractFromDeliveryDate": {
+        "meaning": "contractDetailContractFromDeliveryDate"
+      },
+      "contractDetailContractFromEndTime": {
+        "meaning": "contractDetailContractFromEndTime"
+      },
+      "contractDetailContractFromReceiptDate": {
+        "meaning": "contractDetailContractFromReceiptDate"
+      },
+      "contractDetailContractFromUpdateTime": {
+        "meaning": "contractDetailContractFromUpdateTime"
+      },
+      "contractDetailContractFromUserCode": {
+        "meaning": "合同明细起始单号(-查询入参-)"
+      },
+      "contractDetailContractFscType": {
+        "meaning": "合同明细FSC声明"
+      },
+      "contractDetailContractGenerativePeople": {
+        "meaning": "合同明细下发人"
+      },
+      "contractDetailContractGenerativeState": {
+        "meaning": "合同明细下发状态"
+      },
+      "contractDetailContractGroovyScript": {
+        "meaning": "合同明细groovy脚本"
+      },
+      "contractDetailContractGropeCode": {
+        "meaning": "合同明细搜索码"
+      },
+      "contractDetailContractHasParent": {
+        "meaning": "合同明细存在父级(-查询入参-)"
+      },
+      "contractDetailContractId": {
+        "meaning": "合同明细PK",
+        "is_primary": true
+      },
+      "contractDetailContractIds": {
+        "meaning": "合同明细PK列表(-查询入参-)"
+      },
+      "contractDetailContractInUsed": {
+        "meaning": "合同明细是否被使用"
+      },
+      "contractDetailContractInvTypeTaxRateId": {
+        "meaning": "合同明细发票税率id"
+      },
+      "contractDetailContractInvTypeTaxRateIds": {
+        "meaning": "合同明细发票类型税率id(-查询入参-)"
+      },
+      "contractDetailContractInvoiceTypeTaxRateId": {
+        "meaning": "合同明细税率"
+      },
+      "contractDetailContractInvoiceTypeTaxRateIds": {
+        "meaning": "合同明细税率列表(-查询入参-)"
+      },
+      "contractDetailContractIsAutomaticCommit": {
+        "meaning": "合同明细是否自动提交(-查询入参-)"
+      },
+      "contractDetailContractIsBanned": {
+        "meaning": "合同明细是否被禁用"
+      },
+      "contractDetailContractIsDeleted": {
+        "meaning": "合同明细是否被删除"
+      },
+      "contractDetailContractIsLeaf": {
+        "meaning": "合同明细是否叶子节点"
+      },
+      "contractDetailContractIsMainFlow": {
+        "meaning": "合同明细是否是主流程"
+      },
+      "contractDetailContractIsManualModificationDate": {
+        "meaning": "合同明细是否手动修改计划生产时间"
+      },
+      "contractDetailContractIsolation": {
+        "meaning": "合同明细智能节点数据隔离标识"
+      },
+      "contractDetailContractIsolations": {
+        "meaning": "合同明细租户隔离列表(-查询入参-)"
+      },
+      "contractDetailContractJsScript": {
+        "meaning": "合同明细js脚本"
+      },
+      "contractDetailContractLocalCurrencyTotalAmount": {
+        "meaning": "合同明细本币不含税金额(根据币种，外币才显示)，外币不含税"
+      },
+      "contractDetailContractMaterialId": {
+        "meaning": "合同明细物料id"
+      },
+      "contractDetailContractMaterialIds": {
+        "meaning": "合同明细物料id列表(-查询入参-)"
+      },
+      "contractDetailContractName": {
+        "meaning": "合同明细智能节点名"
+      },
+      "contractDetailContractNameCodeKeyword": {
+        "meaning": "合同明细userCode、name or模糊搜索(-查询入参-)"
+      },
+      "contractDetailContractNameCodeSearch": {
+        "meaning": "合同明细name、user_code模糊搜索"
+      },
+      "contractDetailContractNames": {
+        "meaning": "合同明细默认类型列表（多选）(-查询入参-)"
+      },
+      "contractDetailContractNumberExtra1": {
+        "meaning": "合同明细扩展数量1"
+      },
+      "contractDetailContractNumberExtra2": {
+        "meaning": "合同明细扩展数量2"
+      },
+      "contractDetailContractNumberExtra3": {
+        "meaning": "合同明细扩展数量3"
+      },
+      "contractDetailContractNumberExtra4": {
+        "meaning": "合同明细扩展数量4"
+      },
+      "contractDetailContractNumberExtra5": {
+        "meaning": "合同明细扩展数量5"
+      },
+      "contractDetailContractParentId": {
+        "meaning": "合同明细父节点ID"
+      },
+      "contractDetailContractParentIds": {
+        "meaning": "合同明细父id列表(-查询入参-)"
+      },
+      "contractDetailContractPartyAAddress": {
+        "meaning": "合同明细甲方详细地址"
+      },
+      "contractDetailContractPartyAAdministrativeAreaId": {
+        "meaning": "合同明细甲方行政区域id"
+      },
+      "contractDetailContractPartyAAdministrativeAreaIds": {
+        "meaning": "合同明细甲方行政区域id列表(-查询入参-)"
+      },
+      "contractDetailContractPartyABankAccount": {
+        "meaning": "合同明细甲方银行账户"
+      },
+      "contractDetailContractPartyAContact": {
+        "meaning": "合同明细甲方联系方式"
+      },
+      "contractDetailContractPartyAHead": {
+        "meaning": "合同明细甲方负责人"
+      },
+      "contractDetailContractPartyAId": {
+        "meaning": "合同明细甲方id"
+      },
+      "contractDetailContractPartyAIdentificationNumber": {
+        "meaning": "合同明细甲方标识号(如企业税号、身份证号)"
+      },
+      "contractDetailContractPartyAIds": {
+        "meaning": "合同明细甲方id列表(-查询入参-)"
+      },
+      "contractDetailContractPartyAOpeningBank": {
+        "meaning": "合同明细甲方开户行"
+      },
+      "contractDetailContractPartyBAddress": {
+        "meaning": "合同明细乙方详细地址"
+      },
+      "contractDetailContractPartyBAdministrativeAreaId": {
+        "meaning": "合同明细乙方行政区域id"
+      },
+      "contractDetailContractPartyBAdministrativeAreaIds": {
+        "meaning": "合同明细乙方行政区域id列表(-查询入参-)"
+      },
+      "contractDetailContractPartyBBankAccount": {
+        "meaning": "合同明细乙方银行账户"
+      },
+      "contractDetailContractPartyBContact": {
+        "meaning": "合同明细乙方联系方式"
+      },
+      "contractDetailContractPartyBHead": {
+        "meaning": "合同明细乙方负责人"
+      },
+      "contractDetailContractPartyBId": {
+        "meaning": "合同明细乙方id"
+      },
+      "contractDetailContractPartyBIdentificationNumber": {
+        "meaning": "合同明细乙方标识号(如企业税号、身份证号)"
+      },
+      "contractDetailContractPartyBIds": {
+        "meaning": "合同明细乙方id列表(-查询入参-)"
+      },
+      "contractDetailContractPartyBOpeningBank": {
+        "meaning": "合同明细乙方开户行"
+      },
+      "contractDetailContractPlannedOutputQuantity": {
+        "meaning": "合同明细计划产出数量"
+      },
+      "contractDetailContractPlannedTimeRequired": {
+        "meaning": "合同明细计划需时(小时)"
+      },
+      "contractDetailContractPrintStatus": {
+        "meaning": "合同明细打印状态(-查询入参-)"
+      },
+      "contractDetailContractPrintTimes": {
+        "meaning": "合同明细打印次数"
+      },
+      "contractDetailContractPriority": {
+        "meaning": "合同明细优先级"
+      },
+      "contractDetailContractProcessInstanceId": {
+        "meaning": "合同明细流程实例ID"
+      },
+      "contractDetailContractProcessInstanceIds": {
+        "meaning": "合同明细审核流ids(-查询入参-)"
+      },
+      "contractDetailContractProductionProcessesTypeId": {
+        "meaning": "合同明细工序类型ID"
+      },
+      "contractDetailContractProductionProcessesTypeIds": {
+        "meaning": "合同明细工序类型_id列表(-查询入参-)"
+      },
+      "contractDetailContractProductionShiftId": {
+        "meaning": "合同明细生产班次ID"
+      },
+      "contractDetailContractProductionShiftIds": {
+        "meaning": "合同明细生产班次_id列表(-查询入参-)"
+      },
+      "contractDetailContractQuantity": {
+        "meaning": "合同明细任务数量"
+      },
+      "contractDetailContractReceiptDate": {
+        "meaning": "contractDetailContractReceiptDate"
+      },
+      "contractDetailContractReceiptType": {
+        "meaning": "合同明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "contractDetailContractReceiptTypes": {
+        "meaning": "合同明细单据类型列表(-查询入参-)"
+      },
+      "contractDetailContractRelatedTasksId": {
+        "meaning": "合同明细关联任务id"
+      },
+      "contractDetailContractRelatedTasksIds": {
+        "meaning": "合同明细关联任务id列表(-查询入参-)"
+      },
+      "contractDetailContractRootId": {
+        "meaning": "合同明细根节点id(-查询入参-)"
+      },
+      "contractDetailContractRootSystemCode": {
+        "meaning": "合同明细根系统编码(-查询入参-)"
+      },
+      "contractDetailContractSerialNumber": {
+        "meaning": "合同明细顺序号"
+      },
+      "contractDetailContractSettlementTotalAmount": {
+        "meaning": "合同明细含税已结算金额（默认与含税总金额相等），写入库存价格字段"
+      },
+      "contractDetailContractSettlementTotalAmountKeepDecimalPlace": {
+        "meaning": "合同明细结算金额保留小数位(默认2位，可手动变更)"
+      },
+      "contractDetailContractSettlementTypeId": {
+        "meaning": "合同明细结算方式"
+      },
+      "contractDetailContractSettlementTypeIds": {
+        "meaning": "合同明细结算方式列表(-查询入参-)"
+      },
+      "contractDetailContractSettlementUnitPriceKeepDecimalPlace": {
+        "meaning": "合同明细结算单价保留小数位(默认9位，可手动变更)"
+      },
+      "contractDetailContractSource": {
+        "meaning": "合同明细源"
+      },
+      "contractDetailContractSourceType": {
+        "meaning": "合同明细来源类型"
+      },
+      "contractDetailContractSourceTypes": {
+        "meaning": "合同明细来源类型列表(-查询入参-)"
+      },
+      "contractDetailContractSources": {
+        "meaning": "合同明细来源列表(-查询入参-)"
+      },
+      "contractDetailContractState": {
+        "meaning": "合同明细通用状态"
+      },
+      "contractDetailContractStatementMode": {
+        "meaning": "合同明细对账方式"
+      },
+      "contractDetailContractStates": {
+        "meaning": "合同明细通用状态列表(-查询入参-)"
+      },
+      "contractDetailContractSystemCode": {
+        "meaning": "合同明细系统编码"
+      },
+      "contractDetailContractSystemCodes": {
+        "meaning": "合同明细系统编码列表(-查询入参-)"
+      },
+      "contractDetailContractTarget": {
+        "meaning": "合同明细目标"
+      },
+      "contractDetailContractTargets": {
+        "meaning": "合同明细目标列表(-查询入参-)"
+      },
+      "contractDetailContractTaskNodeName": {
+        "meaning": "合同明细任务节点名称"
+      },
+      "contractDetailContractTenantId": {
+        "meaning": "合同明细租户id"
+      },
+      "contractDetailContractTenantIds": {
+        "meaning": "合同明细租户id列表(-查询入参-)"
+      },
+      "contractDetailContractThirdPartyClass": {
+        "meaning": "合同明细第三方分类"
+      },
+      "contractDetailContractThirdPartyId": {
+        "meaning": "合同明细第三方系统中的唯一ID"
+      },
+      "contractDetailContractThirdPartyName": {
+        "meaning": "合同明细第三方名称"
+      },
+      "contractDetailContractToAuditDate": {
+        "meaning": "contractDetailContractToAuditDate"
+      },
+      "contractDetailContractToBeginTime": {
+        "meaning": "contractDetailContractToBeginTime"
+      },
+      "contractDetailContractToCreateTime": {
+        "meaning": "contractDetailContractToCreateTime"
+      },
+      "contractDetailContractToDateExtra1": {
+        "meaning": "contractDetailContractToDateExtra1"
+      },
+      "contractDetailContractToDateExtra2": {
+        "meaning": "contractDetailContractToDateExtra2"
+      },
+      "contractDetailContractToDateExtra3": {
+        "meaning": "contractDetailContractToDateExtra3"
+      },
+      "contractDetailContractToDateExtra4": {
+        "meaning": "contractDetailContractToDateExtra4"
+      },
+      "contractDetailContractToDateExtra5": {
+        "meaning": "contractDetailContractToDateExtra5"
+      },
+      "contractDetailContractToDeliveryDate": {
+        "meaning": "contractDetailContractToDeliveryDate"
+      },
+      "contractDetailContractToEndTime": {
+        "meaning": "contractDetailContractToEndTime"
+      },
+      "contractDetailContractToReceiptDate": {
+        "meaning": "contractDetailContractToReceiptDate"
+      },
+      "contractDetailContractToUpdateTime": {
+        "meaning": "contractDetailContractToUpdateTime"
+      },
+      "contractDetailContractToUserCode": {
+        "meaning": "合同明细终止单号(-查询入参-)"
+      },
+      "contractDetailContractTotalAmountIncludingTax": {
+        "meaning": "合同明细含税总金额"
+      },
+      "contractDetailContractTotalAmountWithoutTax": {
+        "meaning": "合同明细不含税总金额"
+      },
+      "contractDetailContractTrueFlags": {
+        "meaning": "合同明细为1的标志位（可以多个）(-查询入参-)"
+      },
+      "contractDetailContractTypeCode": {
+        "meaning": "合同明细link类型编码(-查询入参-)"
+      },
+      "contractDetailContractTypeCodes": {
+        "meaning": "合同明细类型Code列表(-查询入参-)"
+      },
+      "contractDetailContractUnitCode": {
+        "meaning": "合同明细单位id"
+      },
+      "contractDetailContractUpdateTime": {
+        "meaning": "contractDetailContractUpdateTime"
+      },
+      "contractDetailContractUpdater": {
+        "meaning": "合同明细更新人"
+      },
+      "contractDetailContractUpdaterId": {
+        "meaning": "合同明细更新人ID"
+      },
+      "contractDetailContractUserCode": {
+        "meaning": "合同明细智能节点的唯一编码"
+      },
+      "contractDetailContractUserCodes": {
+        "meaning": "合同明细智能节点的唯一编码列表(-查询入参-)"
+      },
+      "contractDetailContractVarExtra1": {
+        "meaning": "合同明细扩展1"
+      },
+      "contractDetailContractVarExtra2": {
+        "meaning": "合同明细扩展2"
+      },
+      "contractDetailContractVarExtra3": {
+        "meaning": "合同明细扩展3"
+      },
+      "contractDetailContractVarExtra4": {
+        "meaning": "合同明细扩展4"
+      },
+      "contractDetailContractVarExtra5": {
+        "meaning": "合同明细扩展5"
+      },
+      "contractDetailContractVersion": {
+        "meaning": "合同明细版本号"
+      },
+      "contractDetailCostSchemeId": {
+        "meaning": "合同明细计费方案id"
+      },
+      "contractDetailCreateTime": {
+        "meaning": "contractDetailCreateTime"
+      },
+      "contractDetailCreator": {
+        "meaning": "合同明细创建人"
+      },
+      "contractDetailCreatorId": {
+        "meaning": "合同明细创建人ID"
+      },
+      "contractDetailDateExtra1": {
+        "meaning": "contractDetailDateExtra1"
+      },
+      "contractDetailDateExtra2": {
+        "meaning": "contractDetailDateExtra2"
+      },
+      "contractDetailDateExtra3": {
+        "meaning": "contractDetailDateExtra3"
+      },
+      "contractDetailDateExtra4": {
+        "meaning": "contractDetailDateExtra4"
+      },
+      "contractDetailDateExtra5": {
+        "meaning": "contractDetailDateExtra5"
+      },
+      "contractDetailDefaultType": {
+        "meaning": "合同明细智能节点主类型 默认类型（类型的system_code字段）"
+      },
+      "contractDetailDefaultTypes": {
+        "meaning": "合同明细默认类型列表（多选）(-查询入参-)"
+      },
+      "contractDetailDeliveryDate": {
+        "meaning": "contractDetailDeliveryDate"
+      },
+      "contractDetailDescription": {
+        "meaning": "合同明细描述"
+      },
+      "contractDetailEndTime": {
+        "meaning": "contractDetailEndTime"
+      },
+      "contractDetailEndTimeRequired": {
+        "meaning": "合同明细最后需时(小时)"
+      },
+      "contractDetailEngName": {
+        "meaning": "合同明细英文名称"
+      },
+      "contractDetailEqName": {
+        "meaning": "合同明细判断名称是否相同(-查询入参-)"
+      },
+      "contractDetailEquipmentId": {
+        "meaning": "合同明细设备id"
+      },
+      "contractDetailEquipmentIds": {
+        "meaning": "合同明细设备_id列表(-查询入参-)"
+      },
+      "contractDetailExchangeRateId": {
+        "meaning": "合同明细币种汇率id"
+      },
+      "contractDetailExchangeRateIds": {
+        "meaning": "合同明细币种汇率id(-查询入参-)"
+      },
+      "contractDetailExtMatBarcode": {
+        "meaning": "合同明细外部物料条码(BarCode)"
+      },
+      "contractDetailExtMatCode": {
+        "meaning": "合同明细外部物料编码(例客户产品编码)"
+      },
+      "contractDetailExtMatName": {
+        "meaning": "合同明细外部物料名称(例客户产品名称)"
+      },
+      "contractDetailExtension": {
+        "meaning": "合同明细扩展数据"
+      },
+      "contractDetailExternalState": {
+        "meaning": "合同明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "contractDetailFalseFlags": {
+        "meaning": "合同明细为0的标志位（可以多个）(-查询入参-)"
+      },
+      "contractDetailFilterClazz": {
+        "meaning": "合同明细冗余字段用于筛选"
+      },
+      "contractDetailFlags": {
+        "meaning": "合同明细63位标志位"
+      },
+      "contractDetailFromAuditDate": {
+        "meaning": "contractDetailFromAuditDate"
+      },
+      "contractDetailFromBeginTime": {
+        "meaning": "contractDetailFromBeginTime"
+      },
+      "contractDetailFromCreateTime": {
+        "meaning": "contractDetailFromCreateTime"
+      },
+      "contractDetailFromDateExtra1": {
+        "meaning": "contractDetailFromDateExtra1"
+      },
+      "contractDetailFromDateExtra2": {
+        "meaning": "contractDetailFromDateExtra2"
+      },
+      "contractDetailFromDateExtra3": {
+        "meaning": "contractDetailFromDateExtra3"
+      },
+      "contractDetailFromDateExtra4": {
+        "meaning": "contractDetailFromDateExtra4"
+      },
+      "contractDetailFromDateExtra5": {
+        "meaning": "contractDetailFromDateExtra5"
+      },
+      "contractDetailFromDeliveryDate": {
+        "meaning": "contractDetailFromDeliveryDate"
+      },
+      "contractDetailFromEndTime": {
+        "meaning": "contractDetailFromEndTime"
+      },
+      "contractDetailFromReceiptDate": {
+        "meaning": "contractDetailFromReceiptDate"
+      },
+      "contractDetailFromUpdateTime": {
+        "meaning": "contractDetailFromUpdateTime"
+      },
+      "contractDetailFromUserCode": {
+        "meaning": "合同明细起始单号(-查询入参-)"
+      },
+      "contractDetailFscType": {
+        "meaning": "合同明细FSC声明"
+      },
+      "contractDetailGenerativePeople": {
+        "meaning": "合同明细下发人"
+      },
+      "contractDetailGenerativeState": {
+        "meaning": "合同明细下发状态"
+      },
+      "contractDetailGiftQuantity": {
+        "meaning": "合同明细赠品数量"
+      },
+      "contractDetailGroovyScript": {
+        "meaning": "合同明细groovy脚本"
+      },
+      "contractDetailGropeCode": {
+        "meaning": "合同明细搜索码"
+      },
+      "contractDetailHasParent": {
+        "meaning": "合同明细存在父级(-查询入参-)"
+      },
+      "contractDetailId": {
+        "meaning": "合同明细主键ID",
+        "is_primary": true
+      },
+      "contractDetailIds": {
+        "meaning": "合同明细PK列表(-查询入参-)"
+      },
+      "contractDetailInUsed": {
+        "meaning": "合同明细是否被使用"
+      },
+      "contractDetailInvTypeTaxRateId": {
+        "meaning": "合同明细发票税率id"
+      },
+      "contractDetailInvTypeTaxRateIds": {
+        "meaning": "合同明细发票类型税率id(-查询入参-)"
+      },
+      "contractDetailIsAutomaticCommit": {
+        "meaning": "合同明细是否自动提交(-查询入参-)"
+      },
+      "contractDetailIsBanned": {
+        "meaning": "合同明细是否被禁用"
+      },
+      "contractDetailIsDeleted": {
+        "meaning": "合同明细是否被删除"
+      },
+      "contractDetailIsLeaf": {
+        "meaning": "合同明细是否叶子节点"
+      },
+      "contractDetailIsMainFlow": {
+        "meaning": "合同明细是否是主流程"
+      },
+      "contractDetailIsManualModificationDate": {
+        "meaning": "合同明细是否手动修改计划生产时间"
+      },
+      "contractDetailIsolation": {
+        "meaning": "合同明细智能节点数据隔离标识"
+      },
+      "contractDetailIsolations": {
+        "meaning": "合同明细租户隔离列表(-查询入参-)"
+      },
+      "contractDetailJsScript": {
+        "meaning": "合同明细js脚本"
+      },
+      "contractDetailLocalCurrencyTotalAmount": {
+        "meaning": "合同明细本币金额(根据币种，外币才显示)，外币不含税"
+      },
+      "contractDetailLocalCurrencyUnitPrice": {
+        "meaning": "合同明细本币单价(根据币种，外币才显示)，外币不含税"
+      },
+      "contractDetailMaterialId": {
+        "meaning": "合同明细物料id"
+      },
+      "contractDetailMaterialIds": {
+        "meaning": "合同明细物料id列表(-查询入参-)"
+      },
+      "contractDetailName": {
+        "meaning": "合同明细智能节点名"
+      },
+      "contractDetailNameCodeKeyword": {
+        "meaning": "合同明细userCode、name or模糊搜索(-查询入参-)"
+      },
+      "contractDetailNameCodeSearch": {
+        "meaning": "合同明细name、user_code模糊搜索"
+      },
+      "contractDetailNames": {
+        "meaning": "合同明细默认类型列表（多选）(-查询入参-)"
+      },
+      "contractDetailNumberExtra1": {
+        "meaning": "合同明细扩展数量1"
+      },
+      "contractDetailNumberExtra2": {
+        "meaning": "合同明细扩展数量2"
+      },
+      "contractDetailNumberExtra3": {
+        "meaning": "合同明细扩展数量3"
+      },
+      "contractDetailNumberExtra4": {
+        "meaning": "合同明细扩展数量4"
+      },
+      "contractDetailNumberExtra5": {
+        "meaning": "合同明细扩展数量5"
+      },
+      "contractDetailOrderNoticeQuantity": {
+        "meaning": "合同明细订单通知单数量"
+      },
+      "contractDetailOrderNoticeSpareQuantity": {
+        "meaning": "合同明细订单通知单备品完成数量"
+      },
+      "contractDetailOrderNoticeSpareStatus": {
+        "meaning": "合同明细订单通知单备品完成状态"
+      },
+      "contractDetailOrderNoticeSpareStatuss": {
+        "meaning": "合同明细订单通知单备品完成状态(-查询入参-)"
+      },
+      "contractDetailOrderNoticeStatus": {
+        "meaning": "合同明细订单通知单完成状态"
+      },
+      "contractDetailOrderNoticeStatuss": {
+        "meaning": "合同明细订单通知单完成状态(-查询入参-)"
+      },
+      "contractDetailParentId": {
+        "meaning": "合同明细父节点ID"
+      },
+      "contractDetailParentIds": {
+        "meaning": "合同明细父id列表(-查询入参-)"
+      },
+      "contractDetailPlannedOutputQuantity": {
+        "meaning": "合同明细计划产出数量"
+      },
+      "contractDetailPlannedTimeRequired": {
+        "meaning": "合同明细计划需时(小时)"
+      },
+      "contractDetailPrintStatus": {
+        "meaning": "合同明细打印状态(-查询入参-)"
+      },
+      "contractDetailPrintTimes": {
+        "meaning": "合同明细打印次数"
+      },
+      "contractDetailPriority": {
+        "meaning": "合同明细优先级"
+      },
+      "contractDetailProcessInstanceId": {
+        "meaning": "合同明细流程实例ID"
+      },
+      "contractDetailProcessInstanceIds": {
+        "meaning": "合同明细审核流ids(-查询入参-)"
+      },
+      "contractDetailProductionProcessesTypeId": {
+        "meaning": "合同明细工序类型ID"
+      },
+      "contractDetailProductionProcessesTypeIds": {
+        "meaning": "合同明细工序类型_id列表(-查询入参-)"
+      },
+      "contractDetailProductionShiftId": {
+        "meaning": "合同明细生产班次ID"
+      },
+      "contractDetailProductionShiftIds": {
+        "meaning": "合同明细生产班次_id列表(-查询入参-)"
+      },
+      "contractDetailQuantity": {
+        "meaning": "合同明细任务数量"
+      },
+      "contractDetailQuotationUnitPriceIncludingTax": {
+        "meaning": "合同明细含税报价单价"
+      },
+      "contractDetailQuotationUnitPriceWithoutTax": {
+        "meaning": "合同明细不含税报价单价"
+      },
+      "contractDetailReceiptDate": {
+        "meaning": "contractDetailReceiptDate"
+      },
+      "contractDetailReceiptType": {
+        "meaning": "合同明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "contractDetailReceiptTypes": {
+        "meaning": "合同明细单据类型列表(-查询入参-)"
+      },
+      "contractDetailRelatedTasksId": {
+        "meaning": "合同明细关联任务id"
+      },
+      "contractDetailRelatedTasksIds": {
+        "meaning": "合同明细关联任务id列表(-查询入参-)"
+      },
+      "contractDetailRootId": {
+        "meaning": "合同明细根节点id(-查询入参-)"
+      },
+      "contractDetailRootSystemCode": {
+        "meaning": "合同明细根系统编码(-查询入参-)"
+      },
+      "contractDetailSerialNumber": {
+        "meaning": "合同明细顺序号"
+      },
+      "contractDetailSettlementTotalAmount": {
+        "meaning": "合同明细结算金额（默认与含税总金额相等），写入库存价格字段"
+      },
+      "contractDetailSettlementUnitPrice": {
+        "meaning": "合同明细结算单价（默认与含税单价相等），写入库存价格字段"
+      },
+      "contractDetailSource": {
+        "meaning": "合同明细源"
+      },
+      "contractDetailSourceType": {
+        "meaning": "合同明细来源类型"
+      },
+      "contractDetailSourceTypes": {
+        "meaning": "合同明细来源类型列表(-查询入参-)"
+      },
+      "contractDetailSources": {
+        "meaning": "合同明细来源列表(-查询入参-)"
+      },
+      "contractDetailSpareQuantity": {
+        "meaning": "合同明细备用数量"
+      },
+      "contractDetailState": {
+        "meaning": "合同明细通用状态"
+      },
+      "contractDetailStates": {
+        "meaning": "合同明细通用状态列表(-查询入参-)"
+      },
+      "contractDetailSystemCode": {
+        "meaning": "合同明细系统编码"
+      },
+      "contractDetailSystemCodes": {
+        "meaning": "合同明细系统编码列表(-查询入参-)"
+      },
+      "contractDetailTarget": {
+        "meaning": "合同明细目标"
+      },
+      "contractDetailTargets": {
+        "meaning": "合同明细目标列表(-查询入参-)"
+      },
+      "contractDetailTaskNodeName": {
+        "meaning": "合同明细任务节点名称"
+      },
+      "contractDetailTenantId": {
+        "meaning": "合同明细租户ID"
+      },
+      "contractDetailTenantIds": {
+        "meaning": "合同明细租户id列表(-查询入参-)"
+      },
+      "contractDetailTerminalCode": {
+        "meaning": "合同明细终端编码"
+      },
+      "contractDetailTerminalCustId": {
+        "meaning": "合同明细终端客户id"
+      },
+      "contractDetailTerminalCustIds": {
+        "meaning": "合同明细终端客户id(-查询入参-)"
+      },
+      "contractDetailThirdPartyClass": {
+        "meaning": "合同明细第三方分类"
+      },
+      "contractDetailThirdPartyId": {
+        "meaning": "合同明细第三方系统中的唯一ID"
+      },
+      "contractDetailThirdPartyName": {
+        "meaning": "合同明细第三方名称"
+      },
+      "contractDetailToAuditDate": {
+        "meaning": "contractDetailToAuditDate"
+      },
+      "contractDetailToBeginTime": {
+        "meaning": "contractDetailToBeginTime"
+      },
+      "contractDetailToCreateTime": {
+        "meaning": "contractDetailToCreateTime"
+      },
+      "contractDetailToDateExtra1": {
+        "meaning": "contractDetailToDateExtra1"
+      },
+      "contractDetailToDateExtra2": {
+        "meaning": "contractDetailToDateExtra2"
+      },
+      "contractDetailToDateExtra3": {
+        "meaning": "contractDetailToDateExtra3"
+      },
+      "contractDetailToDateExtra4": {
+        "meaning": "contractDetailToDateExtra4"
+      },
+      "contractDetailToDateExtra5": {
+        "meaning": "contractDetailToDateExtra5"
+      },
+      "contractDetailToDeliveryDate": {
+        "meaning": "contractDetailToDeliveryDate"
+      },
+      "contractDetailToEndTime": {
+        "meaning": "contractDetailToEndTime"
+      },
+      "contractDetailToReceiptDate": {
+        "meaning": "contractDetailToReceiptDate"
+      },
+      "contractDetailToUpdateTime": {
+        "meaning": "contractDetailToUpdateTime"
+      },
+      "contractDetailToUserCode": {
+        "meaning": "合同明细终止单号(-查询入参-)"
+      },
+      "contractDetailTotalAmountIncludingTax": {
+        "meaning": "合同明细含税总金额"
+      },
+      "contractDetailTotalAmountWithoutTax": {
+        "meaning": "合同明细不含税总金额"
+      },
+      "contractDetailTotalQuantity": {
+        "meaning": "合同明细总数量"
+      },
+      "contractDetailTrueFlags": {
+        "meaning": "合同明细为1的标志位（可以多个）(-查询入参-)"
+      },
+      "contractDetailTypeCode": {
+        "meaning": "合同明细link类型编码(-查询入参-)"
+      },
+      "contractDetailTypeCodes": {
+        "meaning": "合同明细类型Code列表(-查询入参-)"
+      },
+      "contractDetailUnitCode": {
+        "meaning": "合同明细单位id"
+      },
+      "contractDetailUnitPriceIncludingTax": {
+        "meaning": "合同明细含税单价(默认隐藏，根据计费方案转换计算得出)"
+      },
+      "contractDetailUnitPriceWithoutTax": {
+        "meaning": "合同明细不含税单价(默认隐藏，根据计费方案转换计算得出)"
+      },
+      "contractDetailUpdateTime": {
+        "meaning": "contractDetailUpdateTime"
+      },
+      "contractDetailUpdater": {
+        "meaning": "合同明细更新人"
+      },
+      "contractDetailUpdaterId": {
+        "meaning": "合同明细更新人ID"
+      },
+      "contractDetailUserCode": {
+        "meaning": "合同明细智能节点的唯一编码"
+      },
+      "contractDetailUserCodes": {
+        "meaning": "合同明细智能节点的唯一编码列表(-查询入参-)"
+      },
+      "contractDetailVarExtra1": {
+        "meaning": "合同明细扩展1"
+      },
+      "contractDetailVarExtra2": {
+        "meaning": "合同明细扩展2"
+      },
+      "contractDetailVarExtra3": {
+        "meaning": "合同明细扩展3"
+      },
+      "contractDetailVarExtra4": {
+        "meaning": "合同明细扩展4"
+      },
+      "contractDetailVarExtra5": {
+        "meaning": "合同明细扩展5"
+      },
+      "contractDetailVersion": {
+        "meaning": "合同明细版本号"
+      }
+    }
+  }

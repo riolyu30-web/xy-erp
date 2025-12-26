@@ -54,7 +54,7 @@ def find_all_staff_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    print(fetch_data("员工表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True))
+    fetch_data("员工表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def find_department_test(access_token: str):  # 定义测试函数
     """
@@ -94,7 +94,47 @@ def find_department_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    print(fetch_data("部门表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True))
+    fetch_data("部门表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+
+def find_role_test(access_token: str):  # 定义测试函数
+    """
+    测试 /role/findList
+    """
+    # 构建请求URL
+    url = "/role/findList"  # API地址
+
+    # 构建请求体数据
+    data = {
+        
+        "roleClazz": "XY_USERCENTER_ROLE",  # 固定参数
+        
+        "roleDefaultType": "POST",  # 固定参数
+        
+        
+        "orderBys": [  # 排序规则
+            
+        ]  # 排序结束
+    }  # 数据字典结束
+
+    # 定义需要保留的字段列表
+    filtered_fields = {
+        
+        "roleId": {"name": "表ID"},  # 字段映射
+        
+        "roleName": {"name": "岗位名称"}  # 字段映射
+        
+    }  # 过滤字段字典结束
+
+    meaning_list = {
+        
+        "表ID": "岗位表ID",  # 字段含义
+        
+        "岗位名称": "岗位表智能节点名"  # 字段含义
+        
+    }  # 含义字典结束
+
+    # 调用通用工具方法获取并过滤数据
+    fetch_data("岗位表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":
@@ -103,4 +143,6 @@ if __name__ == "__main__":
     find_all_staff_test(access_token)  # 调用测试函数
     
     find_department_test(access_token)  # 调用测试函数
+    
+    find_role_test(access_token)  # 调用测试函数
     

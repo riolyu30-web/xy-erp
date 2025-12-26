@@ -104,3 +104,47 @@ def find_department(access_token: str) -> str:  # 定义工具函数
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
     return fetch_data("部门表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+
+@admin_mcp.tool()  # 注册工具
+def find_role(access_token: str) -> str:  # 定义工具函数
+    """
+    岗位表，获取岗位信息
+    
+    Args:
+        access_token: 访问令牌
+             
+    Returns:
+        成功返回：表访问令牌，有效字段说明，样本数据
+        失败返回：错误原因
+    """
+    # 构建请求URL
+    url = "/role/findList"  # API地址
+    # 构建请求体数据
+    data = {
+        
+        "roleClazz": "XY_USERCENTER_ROLE",  # 固定参数
+        
+        "roleDefaultType": "POST",  # 固定参数
+        
+        
+        "orderBys": [  # 排序规则
+            
+        ]  # 排序结束
+    }  # 数据字典结束
+    # 定义需要保留的字段列表
+    filtered_fields = {
+        
+        "roleId": {"name": "表ID"},  # 字段映射
+        
+        "roleName": {"name": "岗位名称"}  # 字段映射
+        
+    }  # 过滤字段字典结束
+    meaning_list = {
+        
+        "表ID": "岗位表ID",  # 字段含义
+        
+        "岗位名称": "岗位表智能节点名"  # 字段含义
+        
+    }  # 含义字典结束
+    # 调用通用工具方法获取并过滤数据
+    return fetch_data("岗位表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  

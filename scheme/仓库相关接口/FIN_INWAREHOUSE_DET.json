@@ -1,0 +1,1267 @@
+{
+    "api_name": "/fin-inwarehouse-det/findList",
+    "table_name": "成品入仓明细表",
+    "request": {
+        "finInwarehouseDetFinInwarehouseClazz": "FIN_INWAREHOUSE",
+        "finInwarehouseDetClazz": "FIN_INWAREHOUSE_DET"
+    },
+    "mainTabClazz": "FIN_INWAREHOUSE_DET",
+    "response": {
+        "finInwarehouseDetActualTimeRequired": {
+            "meaning": "成品入仓明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表实际需时"
+        },
+        "finInwarehouseDetAdjustmentTimeRequired": {
+            "meaning": "成品入仓明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表调整需时"
+        },
+        "finInwarehouseDetApplicationId": {
+            "meaning": "成品入仓明细表应用ID",
+            "reachable": true,
+            "name": "成品入仓明细表应用ID"
+        },
+        "finInwarehouseDetAuditDate": {
+            "meaning": "成品入仓明细表审核时间",
+            "reachable": true,
+            "name": "成品入仓明细表审核时间"
+        },
+        "finInwarehouseDetAuditStatus": {
+            "meaning": "成品入仓明细表审核状态",
+            "reachable": true,
+            "name": "成品入仓明细表审核状态"
+        },
+        "finInwarehouseDetAvailableScheduleId": {
+            "meaning": "成品入仓明细表可用日程id",
+            "reachable": true,
+            "name": "成品入仓明细表可用日程id"
+        },
+        "finInwarehouseDetBeginTime": {
+            "meaning": "成品入仓明细表开始时间",
+            "reachable": true,
+            "name": "成品入仓明细表开始时间"
+        },
+        "finInwarehouseDetBizVersion": {
+            "meaning": "成品入仓明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品入仓明细表业务自定义版本号"
+        },
+        "finInwarehouseDetBriefName": {
+            "meaning": "成品入仓明细表简称",
+            "reachable": true,
+            "name": "成品入仓明细表简称"
+        },
+        "finInwarehouseDetBusDivisId": {
+            "meaning": "成品入仓明细表事业部id",
+            "reachable": true,
+            "name": "成品入仓明细表事业部id"
+        },
+        "finInwarehouseDetClazz": {
+            "meaning": "成品入仓明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品入仓明细表子类"
+        },
+        "finInwarehouseDetClosedReason": {
+            "meaning": "成品入仓明细表结案原因",
+            "reachable": true,
+            "name": "成品入仓明细表结案原因"
+        },
+        "finInwarehouseDetClosedStatus": {
+            "meaning": "成品入仓明细表结案状态",
+            "reachable": true,
+            "name": "成品入仓明细表结案状态"
+        },
+        "finInwarehouseDetComment": {
+            "meaning": "成品入仓明细表评论",
+            "reachable": true,
+            "name": "成品入仓明细表评论"
+        },
+        "finInwarehouseDetCompleteQuantity": {
+            "meaning": "成品入仓明细表完成数量",
+            "reachable": true,
+            "name": "成品入仓明细表完成数量"
+        },
+        "finInwarehouseDetCompleteStatus": {
+            "meaning": "成品入仓明细表完成状态",
+            "reachable": true,
+            "name": "成品入仓明细表完成状态"
+        },
+        "finInwarehouseDetCreateTime": {
+            "meaning": "成品入仓明细表创建时间",
+            "reachable": true,
+            "name": "成品入仓明细表创建时间"
+        },
+        "finInwarehouseDetCreator": {
+            "meaning": "成品入仓明细表创建人",
+            "reachable": true,
+            "name": "成品入仓明细表创建人"
+        },
+        "finInwarehouseDetCreatorId": {
+            "meaning": "成品入仓明细表创建人ID",
+            "reachable": true,
+            "name": "成品入仓明细表创建人ID"
+        },
+        "finInwarehouseDetDateExtra1": {
+            "meaning": "成品入仓明细表扩展时间1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间1"
+        },
+        "finInwarehouseDetDateExtra2": {
+            "meaning": "成品入仓明细表扩展时间2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间2"
+        },
+        "finInwarehouseDetDateExtra3": {
+            "meaning": "成品入仓明细表扩展时间3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间3"
+        },
+        "finInwarehouseDetDateExtra4": {
+            "meaning": "成品入仓明细表扩展时间4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间4"
+        },
+        "finInwarehouseDetDateExtra5": {
+            "meaning": "成品入仓明细表扩展时间5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间5"
+        },
+        "finInwarehouseDetDefaultType": {
+            "meaning": "成品入仓明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点主类型"
+        },
+        "finInwarehouseDetDeliveryDate": {
+            "meaning": "成品入仓明细表交货日期",
+            "reachable": true,
+            "name": "成品入仓明细表交货日期"
+        },
+        "finInwarehouseDetDescription": {
+            "meaning": "成品入仓明细表描述",
+            "reachable": true,
+            "name": "成品入仓明细表描述"
+        },
+        "finInwarehouseDetEndTime": {
+            "meaning": "成品入仓明细表结束时间",
+            "reachable": true,
+            "name": "成品入仓明细表结束时间"
+        },
+        "finInwarehouseDetEndTimeRequired": {
+            "meaning": "成品入仓明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表最后需时"
+        },
+        "finInwarehouseDetEngName": {
+            "meaning": "成品入仓明细表英文名称",
+            "reachable": true,
+            "name": "成品入仓明细表英文名称"
+        },
+        "finInwarehouseDetEquipmentId": {
+            "meaning": "成品入仓明细表设备id",
+            "reachable": true,
+            "name": "成品入仓明细表设备id"
+        },
+        "finInwarehouseDetExchangeRateId": {
+            "meaning": "成品入仓明细表币种汇率id",
+            "reachable": true,
+            "name": "成品入仓明细表币种汇率id"
+        },
+        "finInwarehouseDetExtension": {
+            "meaning": "成品入仓明细表扩展数据",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数据"
+        },
+        "finInwarehouseDetExternalState": {
+            "meaning": "成品入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品入仓明细表上流程状态位"
+        },
+        "finInwarehouseDetFilterClazz": {
+            "meaning": "成品入仓明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品入仓明细表冗余字段用于筛选"
+        },
+        "finInwarehouseDetFinInwarehouseActualTimeRequired": {
+            "meaning": "成品入仓明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表实际需时"
+        },
+        "finInwarehouseDetFinInwarehouseAdjustmentTimeRequired": {
+            "meaning": "成品入仓明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表调整需时"
+        },
+        "finInwarehouseDetFinInwarehouseApplicationId": {
+            "meaning": "成品入仓明细表应用ID",
+            "reachable": true,
+            "name": "成品入仓明细表应用ID"
+        },
+        "finInwarehouseDetFinInwarehouseAuditDate": {
+            "meaning": "成品入仓明细表审核时间",
+            "reachable": true,
+            "name": "成品入仓明细表审核时间"
+        },
+        "finInwarehouseDetFinInwarehouseAuditStatus": {
+            "meaning": "成品入仓明细表审核状态",
+            "reachable": true,
+            "name": "成品入仓明细表审核状态"
+        },
+        "finInwarehouseDetFinInwarehouseAvailableScheduleId": {
+            "meaning": "成品入仓明细表可用日程id",
+            "reachable": true,
+            "name": "成品入仓明细表可用日程id"
+        },
+        "finInwarehouseDetFinInwarehouseBeginTime": {
+            "meaning": "成品入仓明细表开始时间",
+            "reachable": true,
+            "name": "成品入仓明细表开始时间"
+        },
+        "finInwarehouseDetFinInwarehouseBizVersion": {
+            "meaning": "成品入仓明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品入仓明细表业务自定义版本号"
+        },
+        "finInwarehouseDetFinInwarehouseBriefName": {
+            "meaning": "成品入仓明细表简称",
+            "reachable": true,
+            "name": "成品入仓明细表简称"
+        },
+        "finInwarehouseDetFinInwarehouseBusDivisId": {
+            "meaning": "成品入仓明细表事业部id",
+            "reachable": true,
+            "name": "成品入仓明细表事业部id"
+        },
+        "finInwarehouseDetFinInwarehouseClazz": {
+            "meaning": "成品入仓明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品入仓明细表子类"
+        },
+        "finInwarehouseDetFinInwarehouseClosedReason": {
+            "meaning": "成品入仓明细表结案原因",
+            "reachable": true,
+            "name": "成品入仓明细表结案原因"
+        },
+        "finInwarehouseDetFinInwarehouseClosedStatus": {
+            "meaning": "成品入仓明细表结案状态",
+            "reachable": true,
+            "name": "成品入仓明细表结案状态"
+        },
+        "finInwarehouseDetFinInwarehouseComment": {
+            "meaning": "成品入仓明细表评论",
+            "reachable": true,
+            "name": "成品入仓明细表评论"
+        },
+        "finInwarehouseDetFinInwarehouseCompleteQuantity": {
+            "meaning": "成品入仓明细表完成数量",
+            "reachable": true,
+            "name": "成品入仓明细表完成数量"
+        },
+        "finInwarehouseDetFinInwarehouseCompleteStatus": {
+            "meaning": "成品入仓明细表完成状态",
+            "reachable": true,
+            "name": "成品入仓明细表完成状态"
+        },
+        "finInwarehouseDetFinInwarehouseCreateTime": {
+            "meaning": "成品入仓明细表创建时间",
+            "reachable": true,
+            "name": "成品入仓明细表创建时间"
+        },
+        "finInwarehouseDetFinInwarehouseCreator": {
+            "meaning": "成品入仓明细表创建人",
+            "reachable": true,
+            "name": "成品入仓明细表创建人"
+        },
+        "finInwarehouseDetFinInwarehouseCreatorId": {
+            "meaning": "成品入仓明细表创建人ID",
+            "reachable": true,
+            "name": "成品入仓明细表创建人ID"
+        },
+        "finInwarehouseDetFinInwarehouseDateExtra1": {
+            "meaning": "成品入仓明细表扩展时间1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间1"
+        },
+        "finInwarehouseDetFinInwarehouseDateExtra2": {
+            "meaning": "成品入仓明细表扩展时间2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间2"
+        },
+        "finInwarehouseDetFinInwarehouseDateExtra3": {
+            "meaning": "成品入仓明细表扩展时间3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间3"
+        },
+        "finInwarehouseDetFinInwarehouseDateExtra4": {
+            "meaning": "成品入仓明细表扩展时间4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间4"
+        },
+        "finInwarehouseDetFinInwarehouseDateExtra5": {
+            "meaning": "成品入仓明细表扩展时间5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展时间5"
+        },
+        "finInwarehouseDetFinInwarehouseDefaultType": {
+            "meaning": "成品入仓明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点主类型"
+        },
+        "finInwarehouseDetFinInwarehouseDeliveryDate": {
+            "meaning": "成品入仓明细表交货日期",
+            "reachable": true,
+            "name": "成品入仓明细表交货日期"
+        },
+        "finInwarehouseDetFinInwarehouseDescription": {
+            "meaning": "成品入仓明细表描述",
+            "reachable": true,
+            "name": "成品入仓明细表描述"
+        },
+        "finInwarehouseDetFinInwarehouseEndTime": {
+            "meaning": "成品入仓明细表结束时间",
+            "reachable": true,
+            "name": "成品入仓明细表结束时间"
+        },
+        "finInwarehouseDetFinInwarehouseEndTimeRequired": {
+            "meaning": "成品入仓明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表最后需时"
+        },
+        "finInwarehouseDetFinInwarehouseEngName": {
+            "meaning": "成品入仓明细表英文名称",
+            "reachable": true,
+            "name": "成品入仓明细表英文名称"
+        },
+        "finInwarehouseDetFinInwarehouseEquipmentId": {
+            "meaning": "成品入仓明细表设备id",
+            "reachable": true,
+            "name": "成品入仓明细表设备id"
+        },
+        "finInwarehouseDetFinInwarehouseExchangeRateId": {
+            "meaning": "成品入仓明细表币种汇率id",
+            "reachable": true,
+            "name": "成品入仓明细表币种汇率id"
+        },
+        "finInwarehouseDetFinInwarehouseExtension": {
+            "meaning": "成品入仓明细表扩展数据",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数据"
+        },
+        "finInwarehouseDetFinInwarehouseExternalState": {
+            "meaning": "成品入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品入仓明细表上流程状态位"
+        },
+        "finInwarehouseDetFinInwarehouseFilterClazz": {
+            "meaning": "成品入仓明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品入仓明细表冗余字段用于筛选"
+        },
+        "finInwarehouseDetFinInwarehouseFlags": {
+            "meaning": "成品入仓明细表63位标志位",
+            "reachable": true,
+            "name": "成品入仓明细表63位标志位"
+        },
+        "finInwarehouseDetFinInwarehouseFromAuditDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromBeginTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromCreateTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDateExtra1": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDateExtra2": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDateExtra3": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDateExtra4": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDateExtra5": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromDeliveryDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromEndTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromReceiptDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFromUpdateTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseFscType": {
+            "meaning": "成品入仓明细表FSC声明",
+            "reachable": true,
+            "name": "成品入仓明细表FSC声明"
+        },
+        "finInwarehouseDetFinInwarehouseGenerativePeople": {
+            "meaning": "成品入仓明细表下发人",
+            "reachable": true,
+            "name": "成品入仓明细表下发人"
+        },
+        "finInwarehouseDetFinInwarehouseGenerativeState": {
+            "meaning": "成品入仓明细表下发状态",
+            "reachable": true,
+            "name": "成品入仓明细表下发状态"
+        },
+        "finInwarehouseDetFinInwarehouseGroovyScript": {
+            "meaning": "成品入仓明细表groovy脚本",
+            "reachable": true,
+            "name": "成品入仓明细表groovy脚本"
+        },
+        "finInwarehouseDetFinInwarehouseGropeCode": {
+            "meaning": "成品入仓明细表搜索码",
+            "reachable": true,
+            "name": "成品入仓明细表搜索码"
+        },
+        "finInwarehouseDetFinInwarehouseId": {
+            "meaning": "成品入仓明细表PK",
+            "reachable": true,
+            "name": "成品入仓明细表PK"
+        },
+        "finInwarehouseDetFinInwarehouseInUsed": {
+            "meaning": "成品入仓明细表是否被使用",
+            "reachable": true,
+            "name": "成品入仓明细表是否被使用"
+        },
+        "finInwarehouseDetFinInwarehouseInvTypeTaxRateId": {
+            "meaning": "成品入仓明细表发票税率id",
+            "reachable": true,
+            "name": "成品入仓明细表发票税率id"
+        },
+        "finInwarehouseDetFinInwarehouseIsBanned": {
+            "meaning": "成品入仓明细表是否被禁用",
+            "reachable": true,
+            "name": "成品入仓明细表是否被禁用"
+        },
+        "finInwarehouseDetFinInwarehouseIsDeleted": {
+            "meaning": "成品入仓明细表是否被删除",
+            "reachable": true,
+            "name": "成品入仓明细表是否被删除"
+        },
+        "finInwarehouseDetFinInwarehouseIsLeaf": {
+            "meaning": "成品入仓明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品入仓明细表是否叶子节点"
+        },
+        "finInwarehouseDetFinInwarehouseIsMainFlow": {
+            "meaning": "成品入仓明细表是否是主流程",
+            "reachable": true,
+            "name": "成品入仓明细表是否是主流程"
+        },
+        "finInwarehouseDetFinInwarehouseIsManualModificationDate": {
+            "meaning": "成品入仓明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品入仓明细表是否手动修改计划生产时间"
+        },
+        "finInwarehouseDetFinInwarehouseIsolation": {
+            "meaning": "成品入仓明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点数据隔离标识"
+        },
+        "finInwarehouseDetFinInwarehouseJsScript": {
+            "meaning": "成品入仓明细表js脚本",
+            "reachable": true,
+            "name": "成品入仓明细表js脚本"
+        },
+        "finInwarehouseDetFinInwarehouseMaterialId": {
+            "meaning": "成品入仓明细表物料id",
+            "reachable": true,
+            "name": "成品入仓明细表物料id"
+        },
+        "finInwarehouseDetFinInwarehouseName": {
+            "meaning": "成品入仓明细表智能节点名",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点名"
+        },
+        "finInwarehouseDetFinInwarehouseNameCodeSearch": {
+            "meaning": "成品入仓明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品入仓明细表name、user_code模糊搜索"
+        },
+        "finInwarehouseDetFinInwarehouseNumberExtra1": {
+            "meaning": "成品入仓明细表扩展数量1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量1"
+        },
+        "finInwarehouseDetFinInwarehouseNumberExtra2": {
+            "meaning": "成品入仓明细表扩展数量2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量2"
+        },
+        "finInwarehouseDetFinInwarehouseNumberExtra3": {
+            "meaning": "成品入仓明细表扩展数量3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量3"
+        },
+        "finInwarehouseDetFinInwarehouseNumberExtra4": {
+            "meaning": "成品入仓明细表扩展数量4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量4"
+        },
+        "finInwarehouseDetFinInwarehouseNumberExtra5": {
+            "meaning": "成品入仓明细表扩展数量5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量5"
+        },
+        "finInwarehouseDetFinInwarehouseParentId": {
+            "meaning": "成品入仓明细表父节点ID",
+            "reachable": true,
+            "name": "成品入仓明细表父节点ID"
+        },
+        "finInwarehouseDetFinInwarehousePlannedOutputQuantity": {
+            "meaning": "成品入仓明细表计划产出数量",
+            "reachable": true,
+            "name": "成品入仓明细表计划产出数量"
+        },
+        "finInwarehouseDetFinInwarehousePlannedTimeRequired": {
+            "meaning": "成品入仓明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表计划需时"
+        },
+        "finInwarehouseDetFinInwarehousePrintTimes": {
+            "meaning": "成品入仓明细表打印次数",
+            "reachable": true,
+            "name": "成品入仓明细表打印次数"
+        },
+        "finInwarehouseDetFinInwarehousePriority": {
+            "meaning": "成品入仓明细表优先级",
+            "reachable": true,
+            "name": "成品入仓明细表优先级"
+        },
+        "finInwarehouseDetFinInwarehouseProcessInstanceId": {
+            "meaning": "成品入仓明细表流程实例ID",
+            "reachable": true,
+            "name": "成品入仓明细表流程实例ID"
+        },
+        "finInwarehouseDetFinInwarehouseProductionProcessesTypeId": {
+            "meaning": "成品入仓明细表工序类型ID",
+            "reachable": true,
+            "name": "成品入仓明细表工序类型ID"
+        },
+        "finInwarehouseDetFinInwarehouseProductionShiftId": {
+            "meaning": "成品入仓明细表生产班次ID",
+            "reachable": true,
+            "name": "成品入仓明细表生产班次ID"
+        },
+        "finInwarehouseDetFinInwarehouseQuantity": {
+            "meaning": "成品入仓明细表任务数量",
+            "reachable": true,
+            "name": "成品入仓明细表任务数量"
+        },
+        "finInwarehouseDetFinInwarehouseReceiptDate": {
+            "meaning": "成品入仓明细表单据日期",
+            "reachable": true,
+            "name": "成品入仓明细表单据日期"
+        },
+        "finInwarehouseDetFinInwarehouseReceiptType": {
+            "meaning": "成品入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品入仓明细表单据类型"
+        },
+        "finInwarehouseDetFinInwarehouseRelatedTasksId": {
+            "meaning": "成品入仓明细表关联任务id",
+            "reachable": true,
+            "name": "成品入仓明细表关联任务id"
+        },
+        "finInwarehouseDetFinInwarehouseSerialNumber": {
+            "meaning": "成品入仓明细表顺序号",
+            "reachable": true,
+            "name": "成品入仓明细表顺序号"
+        },
+        "finInwarehouseDetFinInwarehouseSource": {
+            "meaning": "成品入仓明细表源",
+            "reachable": true,
+            "name": "成品入仓明细表源"
+        },
+        "finInwarehouseDetFinInwarehouseSourceType": {
+            "meaning": "成品入仓明细表来源类型",
+            "reachable": true,
+            "name": "成品入仓明细表来源类型"
+        },
+        "finInwarehouseDetFinInwarehouseState": {
+            "meaning": "成品入仓明细表通用状态",
+            "reachable": true,
+            "name": "成品入仓明细表通用状态"
+        },
+        "finInwarehouseDetFinInwarehouseSystemCode": {
+            "meaning": "成品入仓明细表系统编码",
+            "reachable": true,
+            "name": "成品入仓明细表系统编码"
+        },
+        "finInwarehouseDetFinInwarehouseTarget": {
+            "meaning": "成品入仓明细表目标",
+            "reachable": true,
+            "name": "成品入仓明细表目标"
+        },
+        "finInwarehouseDetFinInwarehouseTaskNodeName": {
+            "meaning": "成品入仓明细表任务节点名称",
+            "reachable": true,
+            "name": "成品入仓明细表任务节点名称"
+        },
+        "finInwarehouseDetFinInwarehouseTaskNodeType": {
+            "meaning": "成品入仓明细表任务节点类型",
+            "reachable": true,
+            "name": "成品入仓明细表任务节点类型"
+        },
+        "finInwarehouseDetFinInwarehouseTenantId": {
+            "meaning": "成品入仓明细表租户id",
+            "reachable": true,
+            "name": "成品入仓明细表租户id"
+        },
+        "finInwarehouseDetFinInwarehouseThirdPartyClass": {
+            "meaning": "成品入仓明细表第三方分类",
+            "reachable": true,
+            "name": "成品入仓明细表第三方分类"
+        },
+        "finInwarehouseDetFinInwarehouseThirdPartyId": {
+            "meaning": "成品入仓明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品入仓明细表第三方系统中的唯一ID"
+        },
+        "finInwarehouseDetFinInwarehouseThirdPartyName": {
+            "meaning": "成品入仓明细表第三方名称",
+            "reachable": true,
+            "name": "成品入仓明细表第三方名称"
+        },
+        "finInwarehouseDetFinInwarehouseToAuditDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToBeginTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToCreateTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDateExtra1": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDateExtra2": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDateExtra3": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDateExtra4": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDateExtra5": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToDeliveryDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToEndTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToReceiptDate": {
+            "meaning": "finInwarehouseDetFinInwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseToUpdateTime": {
+            "meaning": "finInwarehouseDetFinInwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFinInwarehouseUnitCode": {
+            "meaning": "成品入仓明细表单位id",
+            "reachable": true,
+            "name": "成品入仓明细表单位id"
+        },
+        "finInwarehouseDetFinInwarehouseUpdateTime": {
+            "meaning": "成品入仓明细表更新时间",
+            "reachable": true,
+            "name": "成品入仓明细表更新时间"
+        },
+        "finInwarehouseDetFinInwarehouseUpdater": {
+            "meaning": "成品入仓明细表更新人",
+            "reachable": true,
+            "name": "成品入仓明细表更新人"
+        },
+        "finInwarehouseDetFinInwarehouseUpdaterId": {
+            "meaning": "成品入仓明细表更新人ID",
+            "reachable": true,
+            "name": "成品入仓明细表更新人ID"
+        },
+        "finInwarehouseDetFinInwarehouseUserCode": {
+            "meaning": "成品入仓明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点的唯一编码"
+        },
+        "finInwarehouseDetFinInwarehouseVarExtra1": {
+            "meaning": "成品入仓明细表扩展1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展1"
+        },
+        "finInwarehouseDetFinInwarehouseVarExtra2": {
+            "meaning": "成品入仓明细表扩展2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展2"
+        },
+        "finInwarehouseDetFinInwarehouseVarExtra3": {
+            "meaning": "成品入仓明细表扩展3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展3"
+        },
+        "finInwarehouseDetFinInwarehouseVarExtra4": {
+            "meaning": "成品入仓明细表扩展4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展4"
+        },
+        "finInwarehouseDetFinInwarehouseVarExtra5": {
+            "meaning": "成品入仓明细表扩展5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展5"
+        },
+        "finInwarehouseDetFinInwarehouseVersion": {
+            "meaning": "成品入仓明细表版本号",
+            "reachable": true,
+            "name": "成品入仓明细表版本号"
+        },
+        "finInwarehouseDetFlags": {
+            "meaning": "成品入仓明细表63位标志位",
+            "reachable": true,
+            "name": "成品入仓明细表63位标志位"
+        },
+        "finInwarehouseDetFromAuditDate": {
+            "meaning": "finInwarehouseDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromBeginTime": {
+            "meaning": "finInwarehouseDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromCreateTime": {
+            "meaning": "finInwarehouseDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDateExtra1": {
+            "meaning": "finInwarehouseDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDateExtra2": {
+            "meaning": "finInwarehouseDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDateExtra3": {
+            "meaning": "finInwarehouseDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDateExtra4": {
+            "meaning": "finInwarehouseDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDateExtra5": {
+            "meaning": "finInwarehouseDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromDeliveryDate": {
+            "meaning": "finInwarehouseDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromEndTime": {
+            "meaning": "finInwarehouseDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromReceiptDate": {
+            "meaning": "finInwarehouseDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFromUpdateTime": {
+            "meaning": "finInwarehouseDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetFscType": {
+            "meaning": "成品入仓明细表FSC声明",
+            "reachable": true,
+            "name": "成品入仓明细表FSC声明"
+        },
+        "finInwarehouseDetGenerativePeople": {
+            "meaning": "成品入仓明细表下发人",
+            "reachable": true,
+            "name": "成品入仓明细表下发人"
+        },
+        "finInwarehouseDetGenerativeState": {
+            "meaning": "成品入仓明细表下发状态",
+            "reachable": true,
+            "name": "成品入仓明细表下发状态"
+        },
+        "finInwarehouseDetGoodsId": {
+            "meaning": "成品入仓明细表货（包）id",
+            "reachable": true,
+            "name": "成品入仓明细表货"
+        },
+        "finInwarehouseDetGroovyScript": {
+            "meaning": "成品入仓明细表groovy脚本",
+            "reachable": true,
+            "name": "成品入仓明细表groovy脚本"
+        },
+        "finInwarehouseDetGropeCode": {
+            "meaning": "成品入仓明细表搜索码",
+            "reachable": true,
+            "name": "成品入仓明细表搜索码"
+        },
+        "finInwarehouseDetId": {
+            "meaning": "成品入仓明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品入仓明细表PK"
+        },
+        "finInwarehouseDetInUsed": {
+            "meaning": "成品入仓明细表是否被使用",
+            "reachable": true,
+            "name": "成品入仓明细表是否被使用"
+        },
+        "finInwarehouseDetInvTypeTaxRateId": {
+            "meaning": "成品入仓明细表发票税率id",
+            "reachable": true,
+            "name": "成品入仓明细表发票税率id"
+        },
+        "finInwarehouseDetIsBanned": {
+            "meaning": "成品入仓明细表是否被禁用",
+            "reachable": true,
+            "name": "成品入仓明细表是否被禁用"
+        },
+        "finInwarehouseDetIsDeleted": {
+            "meaning": "成品入仓明细表是否被删除",
+            "reachable": true,
+            "name": "成品入仓明细表是否被删除"
+        },
+        "finInwarehouseDetIsLeaf": {
+            "meaning": "成品入仓明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品入仓明细表是否叶子节点"
+        },
+        "finInwarehouseDetIsMainFlow": {
+            "meaning": "成品入仓明细表是否是主流程",
+            "reachable": true,
+            "name": "成品入仓明细表是否是主流程"
+        },
+        "finInwarehouseDetIsManualModificationDate": {
+            "meaning": "成品入仓明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品入仓明细表是否手动修改计划生产时间"
+        },
+        "finInwarehouseDetIsolation": {
+            "meaning": "成品入仓明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点数据隔离标识"
+        },
+        "finInwarehouseDetJsScript": {
+            "meaning": "成品入仓明细表js脚本",
+            "reachable": true,
+            "name": "成品入仓明细表js脚本"
+        },
+        "finInwarehouseDetLocalCurrencyTotalAmount": {
+            "meaning": "成品入仓明细表本币总金额",
+            "reachable": true,
+            "name": "成品入仓明细表本币总金额"
+        },
+        "finInwarehouseDetLocalCurrencyUnitPrice": {
+            "meaning": "成品入仓明细表本币单价",
+            "reachable": true,
+            "name": "成品入仓明细表本币单价"
+        },
+        "finInwarehouseDetMatBatchId": {
+            "meaning": "成品入仓明细表物料批次id",
+            "reachable": true,
+            "name": "成品入仓明细表物料批次id"
+        },
+        "finInwarehouseDetMaterialId": {
+            "meaning": "成品入仓明细表物料id",
+            "reachable": true,
+            "name": "成品入仓明细表物料id"
+        },
+        "finInwarehouseDetName": {
+            "meaning": "成品入仓明细表智能节点名",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点名"
+        },
+        "finInwarehouseDetNameCodeSearch": {
+            "meaning": "成品入仓明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品入仓明细表name、user_code模糊搜索"
+        },
+        "finInwarehouseDetNumberExtra1": {
+            "meaning": "成品入仓明细表扩展数量1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量1"
+        },
+        "finInwarehouseDetNumberExtra2": {
+            "meaning": "成品入仓明细表扩展数量2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量2"
+        },
+        "finInwarehouseDetNumberExtra3": {
+            "meaning": "成品入仓明细表扩展数量3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量3"
+        },
+        "finInwarehouseDetNumberExtra4": {
+            "meaning": "成品入仓明细表扩展数量4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量4"
+        },
+        "finInwarehouseDetNumberExtra5": {
+            "meaning": "成品入仓明细表扩展数量5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展数量5"
+        },
+        "finInwarehouseDetParentId": {
+            "meaning": "成品入仓明细表父节点ID",
+            "reachable": true,
+            "name": "成品入仓明细表父节点ID"
+        },
+        "finInwarehouseDetPlannedOutputQuantity": {
+            "meaning": "成品入仓明细表计划产出数量",
+            "reachable": true,
+            "name": "成品入仓明细表计划产出数量"
+        },
+        "finInwarehouseDetPlannedTimeRequired": {
+            "meaning": "成品入仓明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品入仓明细表计划需时"
+        },
+        "finInwarehouseDetPrintTimes": {
+            "meaning": "成品入仓明细表打印次数",
+            "reachable": true,
+            "name": "成品入仓明细表打印次数"
+        },
+        "finInwarehouseDetPriority": {
+            "meaning": "成品入仓明细表优先级",
+            "reachable": true,
+            "name": "成品入仓明细表优先级"
+        },
+        "finInwarehouseDetProcessInstanceId": {
+            "meaning": "成品入仓明细表流程实例ID",
+            "reachable": true,
+            "name": "成品入仓明细表流程实例ID"
+        },
+        "finInwarehouseDetProductionProcessesTypeId": {
+            "meaning": "成品入仓明细表工序类型ID",
+            "reachable": true,
+            "name": "成品入仓明细表工序类型ID"
+        },
+        "finInwarehouseDetProductionShiftId": {
+            "meaning": "成品入仓明细表生产班次ID",
+            "reachable": true,
+            "name": "成品入仓明细表生产班次ID"
+        },
+        "finInwarehouseDetQuantity": {
+            "meaning": "成品入仓明细表任务数量",
+            "reachable": true,
+            "name": "成品入仓明细表任务数量"
+        },
+        "finInwarehouseDetQuotationUnitPriceIncludingTax": {
+            "meaning": "成品入仓明细表报价单价（含税）",
+            "reachable": true,
+            "name": "成品入仓明细表报价单价"
+        },
+        "finInwarehouseDetQuotationUnitPriceWithoutTax": {
+            "meaning": "成品入仓明细表报价单价（不含税）",
+            "reachable": true,
+            "name": "成品入仓明细表报价单价"
+        },
+        "finInwarehouseDetReceiptDate": {
+            "meaning": "成品入仓明细表单据日期",
+            "reachable": true,
+            "name": "成品入仓明细表单据日期"
+        },
+        "finInwarehouseDetReceiptType": {
+            "meaning": "成品入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品入仓明细表单据类型"
+        },
+        "finInwarehouseDetRelatedTasksId": {
+            "meaning": "成品入仓明细表关联任务id",
+            "reachable": true,
+            "name": "成品入仓明细表关联任务id"
+        },
+        "finInwarehouseDetSerialNumber": {
+            "meaning": "成品入仓明细表顺序号",
+            "reachable": true,
+            "name": "成品入仓明细表顺序号"
+        },
+        "finInwarehouseDetSettlementTotalAmount": {
+            "meaning": "成品入仓明细表结算总金额",
+            "reachable": true,
+            "name": "成品入仓明细表结算总金额"
+        },
+        "finInwarehouseDetSettlementUnitPrice": {
+            "meaning": "成品入仓明细表结算单价",
+            "reachable": true,
+            "name": "成品入仓明细表结算单价"
+        },
+        "finInwarehouseDetSource": {
+            "meaning": "成品入仓明细表源",
+            "reachable": true,
+            "name": "成品入仓明细表源"
+        },
+        "finInwarehouseDetSourceType": {
+            "meaning": "成品入仓明细表来源类型",
+            "reachable": true,
+            "name": "成品入仓明细表来源类型"
+        },
+        "finInwarehouseDetState": {
+            "meaning": "成品入仓明细表通用状态",
+            "reachable": true,
+            "name": "成品入仓明细表通用状态"
+        },
+        "finInwarehouseDetSystemCode": {
+            "meaning": "成品入仓明细表系统编码",
+            "reachable": true,
+            "name": "成品入仓明细表系统编码"
+        },
+        "finInwarehouseDetTarget": {
+            "meaning": "成品入仓明细表目标",
+            "reachable": true,
+            "name": "成品入仓明细表目标"
+        },
+        "finInwarehouseDetTaskNodeName": {
+            "meaning": "成品入仓明细表任务节点名称",
+            "reachable": true,
+            "name": "成品入仓明细表任务节点名称"
+        },
+        "finInwarehouseDetTaskNodeType": {
+            "meaning": "成品入仓明细表任务节点类型",
+            "reachable": true,
+            "name": "成品入仓明细表任务节点类型"
+        },
+        "finInwarehouseDetTenantId": {
+            "meaning": "成品入仓明细表租户id",
+            "reachable": true,
+            "name": "成品入仓明细表租户id"
+        },
+        "finInwarehouseDetThirdPartyClass": {
+            "meaning": "成品入仓明细表第三方分类",
+            "reachable": true,
+            "name": "成品入仓明细表第三方分类"
+        },
+        "finInwarehouseDetThirdPartyId": {
+            "meaning": "成品入仓明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品入仓明细表第三方系统中的唯一ID"
+        },
+        "finInwarehouseDetThirdPartyName": {
+            "meaning": "成品入仓明细表第三方名称",
+            "reachable": true,
+            "name": "成品入仓明细表第三方名称"
+        },
+        "finInwarehouseDetToAuditDate": {
+            "meaning": "finInwarehouseDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToBeginTime": {
+            "meaning": "finInwarehouseDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToCreateTime": {
+            "meaning": "finInwarehouseDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDateExtra1": {
+            "meaning": "finInwarehouseDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDateExtra2": {
+            "meaning": "finInwarehouseDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDateExtra3": {
+            "meaning": "finInwarehouseDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDateExtra4": {
+            "meaning": "finInwarehouseDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDateExtra5": {
+            "meaning": "finInwarehouseDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToDeliveryDate": {
+            "meaning": "finInwarehouseDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToEndTime": {
+            "meaning": "finInwarehouseDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToReceiptDate": {
+            "meaning": "finInwarehouseDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetToUpdateTime": {
+            "meaning": "finInwarehouseDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInwarehouseDetTotalAmount": {
+            "meaning": "成品入仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化",
+            "reachable": true,
+            "name": "成品入仓明细表总金额"
+        },
+        "finInwarehouseDetTotalAmountIncludingTax": {
+            "meaning": "成品入仓明细表总金额（含税）",
+            "reachable": true,
+            "name": "成品入仓明细表总金额"
+        },
+        "finInwarehouseDetTotalAmountWithoutTax": {
+            "meaning": "成品入仓明细表总金额（不含税）",
+            "reachable": true,
+            "name": "成品入仓明细表总金额"
+        },
+        "finInwarehouseDetUnitCode": {
+            "meaning": "成品入仓明细表单位id",
+            "reachable": true,
+            "name": "成品入仓明细表单位id"
+        },
+        "finInwarehouseDetUnitPriceIncludingTax": {
+            "meaning": "成品入仓明细表单价（含税）",
+            "reachable": true,
+            "name": "成品入仓明细表单价"
+        },
+        "finInwarehouseDetUnitPriceWithoutTax": {
+            "meaning": "成品入仓明细表单价（不含税）",
+            "reachable": true,
+            "name": "成品入仓明细表单价"
+        },
+        "finInwarehouseDetUpdateTime": {
+            "meaning": "成品入仓明细表更新时间",
+            "reachable": true,
+            "name": "成品入仓明细表更新时间"
+        },
+        "finInwarehouseDetUpdater": {
+            "meaning": "成品入仓明细表更新人",
+            "reachable": true,
+            "name": "成品入仓明细表更新人"
+        },
+        "finInwarehouseDetUpdaterId": {
+            "meaning": "成品入仓明细表更新人ID",
+            "reachable": true,
+            "name": "成品入仓明细表更新人ID"
+        },
+        "finInwarehouseDetUserCode": {
+            "meaning": "成品入仓明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品入仓明细表智能节点的唯一编码"
+        },
+        "finInwarehouseDetVarExtra1": {
+            "meaning": "成品入仓明细表扩展1",
+            "reachable": true,
+            "name": "成品入仓明细表扩展1"
+        },
+        "finInwarehouseDetVarExtra2": {
+            "meaning": "成品入仓明细表扩展2",
+            "reachable": true,
+            "name": "成品入仓明细表扩展2"
+        },
+        "finInwarehouseDetVarExtra3": {
+            "meaning": "成品入仓明细表扩展3",
+            "reachable": true,
+            "name": "成品入仓明细表扩展3"
+        },
+        "finInwarehouseDetVarExtra4": {
+            "meaning": "成品入仓明细表扩展4",
+            "reachable": true,
+            "name": "成品入仓明细表扩展4"
+        },
+        "finInwarehouseDetVarExtra5": {
+            "meaning": "成品入仓明细表扩展5",
+            "reachable": true,
+            "name": "成品入仓明细表扩展5"
+        },
+        "finInwarehouseDetVersion": {
+            "meaning": "成品入仓明细表版本号",
+            "reachable": true,
+            "name": "成品入仓明细表版本号"
+        },
+        "finInwarehouseDetWarehouseSpaceId": {
+            "meaning": "成品入仓明细表仓空间id",
+            "reachable": true,
+            "name": "成品入仓明细表仓空间id"
+        },
+        "inInwarehouseDetFinInwarehouseProductionProcessesTypeId": {
+            "meaning": "成品入仓明细表工序类型ID",
+            "reachable": false,
+            "name": "成品入仓明细表工序类型ID"
+        }
+    }
+}

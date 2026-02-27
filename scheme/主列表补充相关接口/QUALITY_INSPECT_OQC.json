@@ -1,0 +1,596 @@
+{
+    "api_name": "/quality-inspect-oqc/findList",
+    "table_name": "OQC",
+    "request": {
+        "qualityInspectOqcClazz": "QUALITY_INSPECT_OQC"
+    },
+    "mainTabClazz": "QUALITY_INSPECT_OQC",
+    "response": {
+        "qualityInspectOqcActualTimeRequired": {
+            "meaning": "OQC实际需时(小时)",
+            "reachable": false,
+            "name": "OQC实际需时"
+        },
+        "qualityInspectOqcAdjustmentTimeRequired": {
+            "meaning": "OQC调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "OQC调整需时"
+        },
+        "qualityInspectOqcApplicationId": {
+            "meaning": "OQC应用ID",
+            "reachable": false,
+            "name": "OQC应用ID"
+        },
+        "qualityInspectOqcAuditDate": {
+            "meaning": "OQC审核时间",
+            "reachable": false,
+            "name": "OQC审核时间"
+        },
+        "qualityInspectOqcAuditStatus": {
+            "meaning": "OQC审核状态",
+            "reachable": false,
+            "name": "OQC审核状态"
+        },
+        "qualityInspectOqcAvailableScheduleId": {
+            "meaning": "OQC可用日程id",
+            "reachable": false,
+            "name": "OQC可用日程id"
+        },
+        "qualityInspectOqcBeginTime": {
+            "meaning": "OQC开始时间",
+            "reachable": false,
+            "name": "OQC开始时间"
+        },
+        "qualityInspectOqcBizVersion": {
+            "meaning": "OQC业务自定义版本号",
+            "reachable": false,
+            "name": "OQC业务自定义版本号"
+        },
+        "qualityInspectOqcBriefName": {
+            "meaning": "OQC简称",
+            "reachable": false,
+            "name": "OQC简称"
+        },
+        "qualityInspectOqcBusDivisId": {
+            "meaning": "OQC事业部id",
+            "reachable": false,
+            "name": "OQC事业部id"
+        },
+        "qualityInspectOqcClazz": {
+            "meaning": "OQC子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "OQC子类"
+        },
+        "qualityInspectOqcClosedReason": {
+            "meaning": "OQC结案原因",
+            "reachable": false,
+            "name": "OQC结案原因"
+        },
+        "qualityInspectOqcClosedStatus": {
+            "meaning": "OQC结案状态",
+            "reachable": false,
+            "name": "OQC结案状态"
+        },
+        "qualityInspectOqcComment": {
+            "meaning": "OQC评论",
+            "reachable": false,
+            "name": "OQC评论"
+        },
+        "qualityInspectOqcCompleteQuantity": {
+            "meaning": "OQC完成数量",
+            "reachable": false,
+            "name": "OQC完成数量"
+        },
+        "qualityInspectOqcCompleteStatus": {
+            "meaning": "OQC完成状态",
+            "reachable": false,
+            "name": "OQC完成状态"
+        },
+        "qualityInspectOqcCreateTime": {
+            "meaning": "OQC创建时间",
+            "reachable": false,
+            "name": "OQC创建时间"
+        },
+        "qualityInspectOqcCreator": {
+            "meaning": "OQC创建人",
+            "reachable": false,
+            "name": "OQC创建人"
+        },
+        "qualityInspectOqcCreatorId": {
+            "meaning": "OQC创建人ID",
+            "reachable": false,
+            "name": "OQC创建人ID"
+        },
+        "qualityInspectOqcDateExtra1": {
+            "meaning": "OQC扩展时间1",
+            "reachable": false,
+            "name": "OQC扩展时间1"
+        },
+        "qualityInspectOqcDateExtra2": {
+            "meaning": "OQC扩展时间2",
+            "reachable": false,
+            "name": "OQC扩展时间2"
+        },
+        "qualityInspectOqcDateExtra3": {
+            "meaning": "OQC扩展时间3",
+            "reachable": false,
+            "name": "OQC扩展时间3"
+        },
+        "qualityInspectOqcDateExtra4": {
+            "meaning": "OQC扩展时间4",
+            "reachable": false,
+            "name": "OQC扩展时间4"
+        },
+        "qualityInspectOqcDateExtra5": {
+            "meaning": "OQC扩展时间5",
+            "reachable": false,
+            "name": "OQC扩展时间5"
+        },
+        "qualityInspectOqcDefaultType": {
+            "meaning": "OQC智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "OQC智能节点主类型"
+        },
+        "qualityInspectOqcDeliveryDate": {
+            "meaning": "OQC交货日期",
+            "reachable": false,
+            "name": "OQC交货日期"
+        },
+        "qualityInspectOqcDescription": {
+            "meaning": "OQC描述",
+            "reachable": false,
+            "name": "OQC描述"
+        },
+        "qualityInspectOqcEndTime": {
+            "meaning": "OQC结束时间",
+            "reachable": false,
+            "name": "OQC结束时间"
+        },
+        "qualityInspectOqcEndTimeRequired": {
+            "meaning": "OQC最后需时(小时)",
+            "reachable": false,
+            "name": "OQC最后需时"
+        },
+        "qualityInspectOqcEngName": {
+            "meaning": "OQC英文名称",
+            "reachable": false,
+            "name": "OQC英文名称"
+        },
+        "qualityInspectOqcEquipmentId": {
+            "meaning": "OQC设备id",
+            "reachable": false,
+            "name": "OQC设备id"
+        },
+        "qualityInspectOqcExchangeRateId": {
+            "meaning": "OQC币种汇率id",
+            "reachable": false,
+            "name": "OQC币种汇率id"
+        },
+        "qualityInspectOqcExtension": {
+            "meaning": "OQC扩展数据",
+            "reachable": false,
+            "name": "OQC扩展数据"
+        },
+        "qualityInspectOqcExternalState": {
+            "meaning": "OQC上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "OQC上流程状态位"
+        },
+        "qualityInspectOqcFilterClazz": {
+            "meaning": "OQC冗余字段用于筛选",
+            "reachable": false,
+            "name": "OQC冗余字段用于筛选"
+        },
+        "qualityInspectOqcFlags": {
+            "meaning": "OQC63位标志位",
+            "reachable": false,
+            "name": "OQC63位标志位"
+        },
+        "qualityInspectOqcFromAuditDate": {
+            "meaning": "qualityInspectOqcFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromBeginTime": {
+            "meaning": "qualityInspectOqcFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromCreateTime": {
+            "meaning": "qualityInspectOqcFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDateExtra1": {
+            "meaning": "qualityInspectOqcFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDateExtra2": {
+            "meaning": "qualityInspectOqcFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDateExtra3": {
+            "meaning": "qualityInspectOqcFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDateExtra4": {
+            "meaning": "qualityInspectOqcFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDateExtra5": {
+            "meaning": "qualityInspectOqcFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromDeliveryDate": {
+            "meaning": "qualityInspectOqcFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromEndTime": {
+            "meaning": "qualityInspectOqcFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromReceiptDate": {
+            "meaning": "qualityInspectOqcFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFromUpdateTime": {
+            "meaning": "qualityInspectOqcFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcFscType": {
+            "meaning": "OQCFSC声明",
+            "reachable": false,
+            "name": "OQCFSC声明"
+        },
+        "qualityInspectOqcGenerativePeople": {
+            "meaning": "OQC下发人",
+            "reachable": false,
+            "name": "OQC下发人"
+        },
+        "qualityInspectOqcGenerativeState": {
+            "meaning": "OQC下发状态",
+            "reachable": false,
+            "name": "OQC下发状态"
+        },
+        "qualityInspectOqcGroovyScript": {
+            "meaning": "OQCgroovy脚本",
+            "reachable": false,
+            "name": "OQCgroovy脚本"
+        },
+        "qualityInspectOqcGropeCode": {
+            "meaning": "OQC搜索码",
+            "reachable": false,
+            "name": "OQC搜索码"
+        },
+        "qualityInspectOqcId": {
+            "meaning": "OQCPK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "OQCPK"
+        },
+        "qualityInspectOqcInUsed": {
+            "meaning": "OQC是否被使用",
+            "reachable": false,
+            "name": "OQC是否被使用"
+        },
+        "qualityInspectOqcInvTypeTaxRateId": {
+            "meaning": "OQC发票税率id",
+            "reachable": false,
+            "name": "OQC发票税率id"
+        },
+        "qualityInspectOqcIsBanned": {
+            "meaning": "OQC是否被禁用",
+            "reachable": false,
+            "name": "OQC是否被禁用"
+        },
+        "qualityInspectOqcIsDeleted": {
+            "meaning": "OQC是否被删除",
+            "reachable": false,
+            "name": "OQC是否被删除"
+        },
+        "qualityInspectOqcIsLeaf": {
+            "meaning": "OQC是否叶子节点",
+            "reachable": false,
+            "name": "OQC是否叶子节点"
+        },
+        "qualityInspectOqcIsMainFlow": {
+            "meaning": "OQC是否是主流程",
+            "reachable": false,
+            "name": "OQC是否是主流程"
+        },
+        "qualityInspectOqcIsManualModificationDate": {
+            "meaning": "OQC是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "OQC是否手动修改计划生产时间"
+        },
+        "qualityInspectOqcIsolation": {
+            "meaning": "OQC智能节点数据隔离标识",
+            "reachable": false,
+            "name": "OQC智能节点数据隔离标识"
+        },
+        "qualityInspectOqcJsScript": {
+            "meaning": "OQCjs脚本",
+            "reachable": false,
+            "name": "OQCjs脚本"
+        },
+        "qualityInspectOqcMaterialId": {
+            "meaning": "OQC物料id",
+            "reachable": false,
+            "name": "OQC物料id"
+        },
+        "qualityInspectOqcName": {
+            "meaning": "OQC智能节点名",
+            "reachable": false,
+            "name": "OQC智能节点名"
+        },
+        "qualityInspectOqcNameCodeSearch": {
+            "meaning": "OQCname、user_code模糊搜索",
+            "reachable": false,
+            "name": "OQCname、user_code模糊搜索"
+        },
+        "qualityInspectOqcNumberExtra1": {
+            "meaning": "OQC扩展数量1",
+            "reachable": false,
+            "name": "OQC扩展数量1"
+        },
+        "qualityInspectOqcNumberExtra2": {
+            "meaning": "OQC扩展数量2",
+            "reachable": false,
+            "name": "OQC扩展数量2"
+        },
+        "qualityInspectOqcNumberExtra3": {
+            "meaning": "OQC扩展数量3",
+            "reachable": false,
+            "name": "OQC扩展数量3"
+        },
+        "qualityInspectOqcNumberExtra4": {
+            "meaning": "OQC扩展数量4",
+            "reachable": false,
+            "name": "OQC扩展数量4"
+        },
+        "qualityInspectOqcNumberExtra5": {
+            "meaning": "OQC扩展数量5",
+            "reachable": false,
+            "name": "OQC扩展数量5"
+        },
+        "qualityInspectOqcParentId": {
+            "meaning": "OQC父节点ID",
+            "reachable": false,
+            "name": "OQC父节点ID"
+        },
+        "qualityInspectOqcPlannedOutputQuantity": {
+            "meaning": "OQC计划产出数量",
+            "reachable": false,
+            "name": "OQC计划产出数量"
+        },
+        "qualityInspectOqcPlannedTimeRequired": {
+            "meaning": "OQC计划需时(小时)",
+            "reachable": false,
+            "name": "OQC计划需时"
+        },
+        "qualityInspectOqcPrintTimes": {
+            "meaning": "OQC打印次数",
+            "reachable": false,
+            "name": "OQC打印次数"
+        },
+        "qualityInspectOqcPriority": {
+            "meaning": "OQC优先级",
+            "reachable": false,
+            "name": "OQC优先级"
+        },
+        "qualityInspectOqcProcessInstanceId": {
+            "meaning": "OQC流程实例ID",
+            "reachable": false,
+            "name": "OQC流程实例ID"
+        },
+        "qualityInspectOqcProductionProcessesTypeId": {
+            "meaning": "OQC工序类型ID",
+            "reachable": false,
+            "name": "OQC工序类型ID"
+        },
+        "qualityInspectOqcProductionShiftId": {
+            "meaning": "OQC生产班次ID",
+            "reachable": false,
+            "name": "OQC生产班次ID"
+        },
+        "qualityInspectOqcQuantity": {
+            "meaning": "OQC任务数量",
+            "reachable": false,
+            "name": "OQC任务数量"
+        },
+        "qualityInspectOqcReceiptDate": {
+            "meaning": "OQC单据日期",
+            "reachable": false,
+            "name": "OQC单据日期"
+        },
+        "qualityInspectOqcReceiptType": {
+            "meaning": "OQC单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "OQC单据类型"
+        },
+        "qualityInspectOqcRelatedTasksId": {
+            "meaning": "OQC关联任务id",
+            "reachable": false,
+            "name": "OQC关联任务id"
+        },
+        "qualityInspectOqcSerialNumber": {
+            "meaning": "OQC顺序号",
+            "reachable": false,
+            "name": "OQC顺序号"
+        },
+        "qualityInspectOqcSource": {
+            "meaning": "OQC源",
+            "reachable": false,
+            "name": "OQC源"
+        },
+        "qualityInspectOqcSourceType": {
+            "meaning": "OQC来源类型",
+            "reachable": false,
+            "name": "OQC来源类型"
+        },
+        "qualityInspectOqcState": {
+            "meaning": "OQC通用状态",
+            "reachable": false,
+            "name": "OQC通用状态"
+        },
+        "qualityInspectOqcSystemCode": {
+            "meaning": "OQC系统编码",
+            "reachable": false,
+            "name": "OQC系统编码"
+        },
+        "qualityInspectOqcTarget": {
+            "meaning": "OQC目标",
+            "reachable": false,
+            "name": "OQC目标"
+        },
+        "qualityInspectOqcTaskNodeName": {
+            "meaning": "OQC任务节点名称",
+            "reachable": false,
+            "name": "OQC任务节点名称"
+        },
+        "qualityInspectOqcTenantId": {
+            "meaning": "OQC租户_id",
+            "reachable": false,
+            "name": "OQC租户_id"
+        },
+        "qualityInspectOqcThirdPartyClass": {
+            "meaning": "OQC第三方分类",
+            "reachable": false,
+            "name": "OQC第三方分类"
+        },
+        "qualityInspectOqcThirdPartyId": {
+            "meaning": "OQC第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "OQC第三方系统中的唯一ID"
+        },
+        "qualityInspectOqcThirdPartyName": {
+            "meaning": "OQC第三方名称",
+            "reachable": false,
+            "name": "OQC第三方名称"
+        },
+        "qualityInspectOqcToAuditDate": {
+            "meaning": "qualityInspectOqcToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToBeginTime": {
+            "meaning": "qualityInspectOqcToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToCreateTime": {
+            "meaning": "qualityInspectOqcToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDateExtra1": {
+            "meaning": "qualityInspectOqcToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDateExtra2": {
+            "meaning": "qualityInspectOqcToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDateExtra3": {
+            "meaning": "qualityInspectOqcToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDateExtra4": {
+            "meaning": "qualityInspectOqcToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDateExtra5": {
+            "meaning": "qualityInspectOqcToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToDeliveryDate": {
+            "meaning": "qualityInspectOqcToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToEndTime": {
+            "meaning": "qualityInspectOqcToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToReceiptDate": {
+            "meaning": "qualityInspectOqcToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcToUpdateTime": {
+            "meaning": "qualityInspectOqcToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectOqcUnitCode": {
+            "meaning": "OQC单位id",
+            "reachable": false,
+            "name": "OQC单位id"
+        },
+        "qualityInspectOqcUpdateTime": {
+            "meaning": "OQC更新时间",
+            "reachable": false,
+            "name": "OQC更新时间"
+        },
+        "qualityInspectOqcUpdater": {
+            "meaning": "OQC更新人",
+            "reachable": false,
+            "name": "OQC更新人"
+        },
+        "qualityInspectOqcUpdaterId": {
+            "meaning": "OQC更新人ID",
+            "reachable": false,
+            "name": "OQC更新人ID"
+        },
+        "qualityInspectOqcUserCode": {
+            "meaning": "OQC智能节点的唯一编码",
+            "reachable": false,
+            "name": "OQC智能节点的唯一编码"
+        },
+        "qualityInspectOqcVarExtra1": {
+            "meaning": "OQC扩展1",
+            "reachable": false,
+            "name": "OQC扩展1"
+        },
+        "qualityInspectOqcVarExtra2": {
+            "meaning": "OQC扩展2",
+            "reachable": false,
+            "name": "OQC扩展2"
+        },
+        "qualityInspectOqcVarExtra3": {
+            "meaning": "OQC扩展3",
+            "reachable": false,
+            "name": "OQC扩展3"
+        },
+        "qualityInspectOqcVarExtra4": {
+            "meaning": "OQC扩展4",
+            "reachable": false,
+            "name": "OQC扩展4"
+        },
+        "qualityInspectOqcVarExtra5": {
+            "meaning": "OQC扩展5",
+            "reachable": false,
+            "name": "OQC扩展5"
+        },
+        "qualityInspectOqcVersion": {
+            "meaning": "OQC版本号",
+            "reachable": false,
+            "name": "OQC版本号"
+        }
+    }
+}

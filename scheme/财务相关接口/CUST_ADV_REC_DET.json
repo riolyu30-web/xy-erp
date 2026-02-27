@@ -1,0 +1,1257 @@
+{
+    "api_name": "/cust-adv-rec-det/findList",
+    "table_name": "客户预收款明细",
+    "request": {
+        "custAdvRecDetCustAdvRecClazz": "CUST_ADV_REC",
+        "custAdvRecDetClazz": "CUST_ADV_REC_DET"
+    },
+    "mainTabClazz": "CUST_ADV_REC_DET",
+    "response": {
+        "custAdvRecDetActualTimeRequired": {
+            "meaning": "客户预收款明细实际需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细实际需时"
+        },
+        "custAdvRecDetAdjustmentTimeRequired": {
+            "meaning": "客户预收款明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "客户预收款明细调整需时"
+        },
+        "custAdvRecDetApplicationId": {
+            "meaning": "客户预收款明细应用ID",
+            "reachable": false,
+            "name": "客户预收款明细应用ID"
+        },
+        "custAdvRecDetAuditDate": {
+            "meaning": "客户预收款明细审核时间",
+            "reachable": false,
+            "name": "客户预收款明细审核时间"
+        },
+        "custAdvRecDetAuditStatus": {
+            "meaning": "客户预收款明细审核状态",
+            "reachable": false,
+            "name": "客户预收款明细审核状态"
+        },
+        "custAdvRecDetAvailableScheduleId": {
+            "meaning": "客户预收款明细可用日程id",
+            "reachable": false,
+            "name": "客户预收款明细可用日程id"
+        },
+        "custAdvRecDetBeginTime": {
+            "meaning": "客户预收款明细开始时间",
+            "reachable": false,
+            "name": "客户预收款明细开始时间"
+        },
+        "custAdvRecDetBizVersion": {
+            "meaning": "客户预收款明细业务自定义版本号",
+            "reachable": false,
+            "name": "客户预收款明细业务自定义版本号"
+        },
+        "custAdvRecDetBriefName": {
+            "meaning": "客户预收款明细简称",
+            "reachable": false,
+            "name": "客户预收款明细简称"
+        },
+        "custAdvRecDetBusDivisId": {
+            "meaning": "客户预收款明细事业部id",
+            "reachable": false,
+            "name": "客户预收款明细事业部id"
+        },
+        "custAdvRecDetClazz": {
+            "meaning": "客户预收款明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "客户预收款明细子类"
+        },
+        "custAdvRecDetClosedReason": {
+            "meaning": "客户预收款明细结案原因",
+            "reachable": false,
+            "name": "客户预收款明细结案原因"
+        },
+        "custAdvRecDetClosedStatus": {
+            "meaning": "客户预收款明细结案状态",
+            "reachable": false,
+            "name": "客户预收款明细结案状态"
+        },
+        "custAdvRecDetComment": {
+            "meaning": "客户预收款明细评论",
+            "reachable": false,
+            "name": "客户预收款明细评论"
+        },
+        "custAdvRecDetCompleteQuantity": {
+            "meaning": "客户预收款明细完成数量",
+            "reachable": false,
+            "name": "客户预收款明细完成数量"
+        },
+        "custAdvRecDetCompleteStatus": {
+            "meaning": "客户预收款明细完成状态",
+            "reachable": false,
+            "name": "客户预收款明细完成状态"
+        },
+        "custAdvRecDetCreateTime": {
+            "meaning": "客户预收款明细创建时间",
+            "reachable": false,
+            "name": "客户预收款明细创建时间"
+        },
+        "custAdvRecDetCreator": {
+            "meaning": "客户预收款明细创建人",
+            "reachable": false,
+            "name": "客户预收款明细创建人"
+        },
+        "custAdvRecDetCreatorId": {
+            "meaning": "客户预收款明细创建人ID",
+            "reachable": false,
+            "name": "客户预收款明细创建人ID"
+        },
+        "custAdvRecDetCustAdvRecAcctHolderName": {
+            "meaning": "客户预收款明细账号持有人",
+            "reachable": false,
+            "name": "客户预收款明细账号持有人"
+        },
+        "custAdvRecDetCustAdvRecActualTimeRequired": {
+            "meaning": "客户预收款明细实际需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细实际需时"
+        },
+        "custAdvRecDetCustAdvRecAdjustmentTimeRequired": {
+            "meaning": "客户预收款明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "客户预收款明细调整需时"
+        },
+        "custAdvRecDetCustAdvRecApplicationId": {
+            "meaning": "客户预收款明细应用ID",
+            "reachable": false,
+            "name": "客户预收款明细应用ID"
+        },
+        "custAdvRecDetCustAdvRecAuditDate": {
+            "meaning": "客户预收款明细审核时间",
+            "reachable": false,
+            "name": "客户预收款明细审核时间"
+        },
+        "custAdvRecDetCustAdvRecAuditStatus": {
+            "meaning": "客户预收款明细审核状态",
+            "reachable": false,
+            "name": "客户预收款明细审核状态"
+        },
+        "custAdvRecDetCustAdvRecAvailableScheduleId": {
+            "meaning": "客户预收款明细可用日程id",
+            "reachable": false,
+            "name": "客户预收款明细可用日程id"
+        },
+        "custAdvRecDetCustAdvRecBankAcctNum": {
+            "meaning": "客户预收款明细银行账号",
+            "reachable": false,
+            "name": "客户预收款明细银行账号"
+        },
+        "custAdvRecDetCustAdvRecBankBranchInfo": {
+            "meaning": "客户预收款明细开户支行信息",
+            "reachable": false,
+            "name": "客户预收款明细开户支行信息"
+        },
+        "custAdvRecDetCustAdvRecBankName": {
+            "meaning": "客户预收款明细银行名称",
+            "reachable": false,
+            "name": "客户预收款明细银行名称"
+        },
+        "custAdvRecDetCustAdvRecBeginTime": {
+            "meaning": "客户预收款明细开始时间",
+            "reachable": false,
+            "name": "客户预收款明细开始时间"
+        },
+        "custAdvRecDetCustAdvRecBizVersion": {
+            "meaning": "客户预收款明细业务自定义版本号",
+            "reachable": false,
+            "name": "客户预收款明细业务自定义版本号"
+        },
+        "custAdvRecDetCustAdvRecBriefName": {
+            "meaning": "客户预收款明细简称",
+            "reachable": false,
+            "name": "客户预收款明细简称"
+        },
+        "custAdvRecDetCustAdvRecBusDivisId": {
+            "meaning": "客户预收款明细事业部id",
+            "reachable": false,
+            "name": "客户预收款明细事业部id"
+        },
+        "custAdvRecDetCustAdvRecClazz": {
+            "meaning": "客户预收款明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "客户预收款明细子类"
+        },
+        "custAdvRecDetCustAdvRecClosedReason": {
+            "meaning": "客户预收款明细结案原因",
+            "reachable": false,
+            "name": "客户预收款明细结案原因"
+        },
+        "custAdvRecDetCustAdvRecClosedStatus": {
+            "meaning": "客户预收款明细结案状态",
+            "reachable": false,
+            "name": "客户预收款明细结案状态"
+        },
+        "custAdvRecDetCustAdvRecComment": {
+            "meaning": "客户预收款明细评论",
+            "reachable": false,
+            "name": "客户预收款明细评论"
+        },
+        "custAdvRecDetCustAdvRecCompleteQuantity": {
+            "meaning": "客户预收款明细完成数量",
+            "reachable": false,
+            "name": "客户预收款明细完成数量"
+        },
+        "custAdvRecDetCustAdvRecCompleteStatus": {
+            "meaning": "客户预收款明细完成状态",
+            "reachable": false,
+            "name": "客户预收款明细完成状态"
+        },
+        "custAdvRecDetCustAdvRecCreateTime": {
+            "meaning": "客户预收款明细创建时间",
+            "reachable": false,
+            "name": "客户预收款明细创建时间"
+        },
+        "custAdvRecDetCustAdvRecCreator": {
+            "meaning": "客户预收款明细创建人",
+            "reachable": false,
+            "name": "客户预收款明细创建人"
+        },
+        "custAdvRecDetCustAdvRecCreatorId": {
+            "meaning": "客户预收款明细创建人ID",
+            "reachable": false,
+            "name": "客户预收款明细创建人ID"
+        },
+        "custAdvRecDetCustAdvRecCurrency": {
+            "meaning": "客户预收款明细币种",
+            "reachable": false,
+            "name": "客户预收款明细币种"
+        },
+        "custAdvRecDetCustAdvRecCustomerId": {
+            "meaning": "客户预收款明细客户ID",
+            "reachable": false,
+            "name": "客户预收款明细客户ID"
+        },
+        "custAdvRecDetCustAdvRecDateExtra1": {
+            "meaning": "客户预收款明细扩展时间1",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间1"
+        },
+        "custAdvRecDetCustAdvRecDateExtra2": {
+            "meaning": "客户预收款明细扩展时间2",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间2"
+        },
+        "custAdvRecDetCustAdvRecDateExtra3": {
+            "meaning": "客户预收款明细扩展时间3",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间3"
+        },
+        "custAdvRecDetCustAdvRecDateExtra4": {
+            "meaning": "客户预收款明细扩展时间4",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间4"
+        },
+        "custAdvRecDetCustAdvRecDateExtra5": {
+            "meaning": "客户预收款明细扩展时间5",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间5"
+        },
+        "custAdvRecDetCustAdvRecDefaultType": {
+            "meaning": "客户预收款明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "客户预收款明细智能节点主类型"
+        },
+        "custAdvRecDetCustAdvRecDeliveryDate": {
+            "meaning": "客户预收款明细交货日期",
+            "reachable": false,
+            "name": "客户预收款明细交货日期"
+        },
+        "custAdvRecDetCustAdvRecDescription": {
+            "meaning": "客户预收款明细描述",
+            "reachable": false,
+            "name": "客户预收款明细描述"
+        },
+        "custAdvRecDetCustAdvRecEndTime": {
+            "meaning": "客户预收款明细结束时间",
+            "reachable": false,
+            "name": "客户预收款明细结束时间"
+        },
+        "custAdvRecDetCustAdvRecEndTimeRequired": {
+            "meaning": "客户预收款明细最后需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细最后需时"
+        },
+        "custAdvRecDetCustAdvRecEngName": {
+            "meaning": "客户预收款明细英文名称",
+            "reachable": false,
+            "name": "客户预收款明细英文名称"
+        },
+        "custAdvRecDetCustAdvRecEquipmentId": {
+            "meaning": "客户预收款明细设备id",
+            "reachable": false,
+            "name": "客户预收款明细设备id"
+        },
+        "custAdvRecDetCustAdvRecExchangeRateId": {
+            "meaning": "客户预收款明细币种汇率id",
+            "reachable": false,
+            "name": "客户预收款明细币种汇率id"
+        },
+        "custAdvRecDetCustAdvRecExtension": {
+            "meaning": "客户预收款明细扩展数据",
+            "reachable": false,
+            "name": "客户预收款明细扩展数据"
+        },
+        "custAdvRecDetCustAdvRecExternalState": {
+            "meaning": "客户预收款明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "客户预收款明细上流程状态位"
+        },
+        "custAdvRecDetCustAdvRecFilterClazz": {
+            "meaning": "客户预收款明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户预收款明细冗余字段用于筛选"
+        },
+        "custAdvRecDetCustAdvRecFlags": {
+            "meaning": "客户预收款明细63位标志位",
+            "reachable": false,
+            "name": "客户预收款明细63位标志位"
+        },
+        "custAdvRecDetCustAdvRecFromAuditDate": {
+            "meaning": "custAdvRecDetCustAdvRecFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromBeginTime": {
+            "meaning": "custAdvRecDetCustAdvRecFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromCreateTime": {
+            "meaning": "custAdvRecDetCustAdvRecFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDateExtra1": {
+            "meaning": "custAdvRecDetCustAdvRecFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDateExtra2": {
+            "meaning": "custAdvRecDetCustAdvRecFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDateExtra3": {
+            "meaning": "custAdvRecDetCustAdvRecFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDateExtra4": {
+            "meaning": "custAdvRecDetCustAdvRecFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDateExtra5": {
+            "meaning": "custAdvRecDetCustAdvRecFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromDeliveryDate": {
+            "meaning": "custAdvRecDetCustAdvRecFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromEndTime": {
+            "meaning": "custAdvRecDetCustAdvRecFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromReceiptDate": {
+            "meaning": "custAdvRecDetCustAdvRecFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFromUpdateTime": {
+            "meaning": "custAdvRecDetCustAdvRecFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecFscType": {
+            "meaning": "客户预收款明细FSC声明",
+            "reachable": false,
+            "name": "客户预收款明细FSC声明"
+        },
+        "custAdvRecDetCustAdvRecGenerativePeople": {
+            "meaning": "客户预收款明细下发人",
+            "reachable": false,
+            "name": "客户预收款明细下发人"
+        },
+        "custAdvRecDetCustAdvRecGenerativeState": {
+            "meaning": "客户预收款明细下发状态",
+            "reachable": false,
+            "name": "客户预收款明细下发状态"
+        },
+        "custAdvRecDetCustAdvRecGroovyScript": {
+            "meaning": "客户预收款明细groovy脚本",
+            "reachable": false,
+            "name": "客户预收款明细groovy脚本"
+        },
+        "custAdvRecDetCustAdvRecGropeCode": {
+            "meaning": "客户预收款明细搜索码",
+            "reachable": false,
+            "name": "客户预收款明细搜索码"
+        },
+        "custAdvRecDetCustAdvRecId": {
+            "meaning": "客户预收款明细PK",
+            "reachable": false,
+            "name": "客户预收款明细PK"
+        },
+        "custAdvRecDetCustAdvRecInUsed": {
+            "meaning": "客户预收款明细是否被使用",
+            "reachable": false,
+            "name": "客户预收款明细是否被使用"
+        },
+        "custAdvRecDetCustAdvRecInvTypeTaxRateId": {
+            "meaning": "客户预收款明细发票税率id",
+            "reachable": false,
+            "name": "客户预收款明细发票税率id"
+        },
+        "custAdvRecDetCustAdvRecIsBanned": {
+            "meaning": "客户预收款明细是否被禁用",
+            "reachable": false,
+            "name": "客户预收款明细是否被禁用"
+        },
+        "custAdvRecDetCustAdvRecIsDeleted": {
+            "meaning": "客户预收款明细是否被删除",
+            "reachable": false,
+            "name": "客户预收款明细是否被删除"
+        },
+        "custAdvRecDetCustAdvRecIsLeaf": {
+            "meaning": "客户预收款明细是否叶子节点",
+            "reachable": false,
+            "name": "客户预收款明细是否叶子节点"
+        },
+        "custAdvRecDetCustAdvRecIsMainFlow": {
+            "meaning": "客户预收款明细是否是主流程",
+            "reachable": false,
+            "name": "客户预收款明细是否是主流程"
+        },
+        "custAdvRecDetCustAdvRecIsManualModificationDate": {
+            "meaning": "客户预收款明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "客户预收款明细是否手动修改计划生产时间"
+        },
+        "custAdvRecDetCustAdvRecIsolation": {
+            "meaning": "客户预收款明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "客户预收款明细智能节点数据隔离标识"
+        },
+        "custAdvRecDetCustAdvRecJsScript": {
+            "meaning": "客户预收款明细js脚本",
+            "reachable": false,
+            "name": "客户预收款明细js脚本"
+        },
+        "custAdvRecDetCustAdvRecLocCompleteQuantity": {
+            "meaning": "客户预收款明细本币完成数量（本币总已转应收/付金额）",
+            "reachable": false,
+            "name": "客户预收款明细本币完成数量"
+        },
+        "custAdvRecDetCustAdvRecLocTotalAmount": {
+            "meaning": "客户预收款明细本币总预收/付金额",
+            "reachable": false,
+            "name": "客户预收款明细本币总预收/付金额"
+        },
+        "custAdvRecDetCustAdvRecMaterialId": {
+            "meaning": "客户预收款明细物料id",
+            "reachable": false,
+            "name": "客户预收款明细物料id"
+        },
+        "custAdvRecDetCustAdvRecName": {
+            "meaning": "客户预收款明细智能节点名",
+            "reachable": false,
+            "name": "客户预收款明细智能节点名"
+        },
+        "custAdvRecDetCustAdvRecNameCodeSearch": {
+            "meaning": "客户预收款明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "客户预收款明细name、user"
+        },
+        "custAdvRecDetCustAdvRecNumberExtra1": {
+            "meaning": "客户预收款明细扩展数量1",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量1"
+        },
+        "custAdvRecDetCustAdvRecNumberExtra2": {
+            "meaning": "客户预收款明细扩展数量2",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量2"
+        },
+        "custAdvRecDetCustAdvRecNumberExtra3": {
+            "meaning": "客户预收款明细扩展数量3",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量3"
+        },
+        "custAdvRecDetCustAdvRecNumberExtra4": {
+            "meaning": "客户预收款明细扩展数量4",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量4"
+        },
+        "custAdvRecDetCustAdvRecNumberExtra5": {
+            "meaning": "客户预收款明细扩展数量5",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量5"
+        },
+        "custAdvRecDetCustAdvRecParentId": {
+            "meaning": "客户预收款明细父节点ID",
+            "reachable": false,
+            "name": "客户预收款明细父节点ID"
+        },
+        "custAdvRecDetCustAdvRecPlannedOutputQuantity": {
+            "meaning": "客户预收款明细计划产出数量",
+            "reachable": false,
+            "name": "客户预收款明细计划产出数量"
+        },
+        "custAdvRecDetCustAdvRecPlannedTimeRequired": {
+            "meaning": "客户预收款明细计划需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细计划需时"
+        },
+        "custAdvRecDetCustAdvRecPrintTimes": {
+            "meaning": "客户预收款明细打印次数",
+            "reachable": false,
+            "name": "客户预收款明细打印次数"
+        },
+        "custAdvRecDetCustAdvRecPriority": {
+            "meaning": "客户预收款明细优先级",
+            "reachable": false,
+            "name": "客户预收款明细优先级"
+        },
+        "custAdvRecDetCustAdvRecProcessInstanceId": {
+            "meaning": "客户预收款明细流程实例ID",
+            "reachable": false,
+            "name": "客户预收款明细流程实例ID"
+        },
+        "custAdvRecDetCustAdvRecProductionProcessesTypeId": {
+            "meaning": "客户预收款明细工序类型ID",
+            "reachable": false,
+            "name": "客户预收款明细工序类型ID"
+        },
+        "custAdvRecDetCustAdvRecProductionShiftId": {
+            "meaning": "客户预收款明细生产班次ID",
+            "reachable": false,
+            "name": "客户预收款明细生产班次ID"
+        },
+        "custAdvRecDetCustAdvRecQuantity": {
+            "meaning": "客户预收款明细任务数量",
+            "reachable": false,
+            "name": "客户预收款明细任务数量"
+        },
+        "custAdvRecDetCustAdvRecReceiptDate": {
+            "meaning": "客户预收款明细单据日期",
+            "reachable": false,
+            "name": "客户预收款明细单据日期"
+        },
+        "custAdvRecDetCustAdvRecReceiptType": {
+            "meaning": "客户预收款明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "客户预收款明细单据类型"
+        },
+        "custAdvRecDetCustAdvRecRelatedTasksId": {
+            "meaning": "客户预收款明细关联任务id",
+            "reachable": false,
+            "name": "客户预收款明细关联任务id"
+        },
+        "custAdvRecDetCustAdvRecSerialNumber": {
+            "meaning": "客户预收款明细顺序号",
+            "reachable": false,
+            "name": "客户预收款明细顺序号"
+        },
+        "custAdvRecDetCustAdvRecSource": {
+            "meaning": "客户预收款明细源",
+            "reachable": false,
+            "name": "客户预收款明细源"
+        },
+        "custAdvRecDetCustAdvRecSourceType": {
+            "meaning": "客户预收款明细来源类型",
+            "reachable": false,
+            "name": "客户预收款明细来源类型"
+        },
+        "custAdvRecDetCustAdvRecStaffId": {
+            "meaning": "客户预收款明细经手人（员工id）",
+            "reachable": false,
+            "name": "客户预收款明细经手人"
+        },
+        "custAdvRecDetCustAdvRecState": {
+            "meaning": "客户预收款明细通用状态",
+            "reachable": false,
+            "name": "客户预收款明细通用状态"
+        },
+        "custAdvRecDetCustAdvRecSystemCode": {
+            "meaning": "客户预收款明细系统编码",
+            "reachable": false,
+            "name": "客户预收款明细系统编码"
+        },
+        "custAdvRecDetCustAdvRecTarget": {
+            "meaning": "客户预收款明细目标",
+            "reachable": false,
+            "name": "客户预收款明细目标"
+        },
+        "custAdvRecDetCustAdvRecTaskNodeName": {
+            "meaning": "客户预收款明细任务节点名称",
+            "reachable": false,
+            "name": "客户预收款明细任务节点名称"
+        },
+        "custAdvRecDetCustAdvRecTenantId": {
+            "meaning": "客户预收款明细租户ID",
+            "reachable": false,
+            "name": "客户预收款明细租户ID"
+        },
+        "custAdvRecDetCustAdvRecThirdPartyClass": {
+            "meaning": "客户预收款明细第三方分类",
+            "reachable": false,
+            "name": "客户预收款明细第三方分类"
+        },
+        "custAdvRecDetCustAdvRecThirdPartyId": {
+            "meaning": "客户预收款明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "客户预收款明细第三方系统中的唯一ID"
+        },
+        "custAdvRecDetCustAdvRecThirdPartyName": {
+            "meaning": "客户预收款明细第三方名称",
+            "reachable": false,
+            "name": "客户预收款明细第三方名称"
+        },
+        "custAdvRecDetCustAdvRecToAuditDate": {
+            "meaning": "custAdvRecDetCustAdvRecToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToBeginTime": {
+            "meaning": "custAdvRecDetCustAdvRecToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToCreateTime": {
+            "meaning": "custAdvRecDetCustAdvRecToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDateExtra1": {
+            "meaning": "custAdvRecDetCustAdvRecToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDateExtra2": {
+            "meaning": "custAdvRecDetCustAdvRecToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDateExtra3": {
+            "meaning": "custAdvRecDetCustAdvRecToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDateExtra4": {
+            "meaning": "custAdvRecDetCustAdvRecToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDateExtra5": {
+            "meaning": "custAdvRecDetCustAdvRecToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToDeliveryDate": {
+            "meaning": "custAdvRecDetCustAdvRecToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToEndTime": {
+            "meaning": "custAdvRecDetCustAdvRecToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToReceiptDate": {
+            "meaning": "custAdvRecDetCustAdvRecToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecToUpdateTime": {
+            "meaning": "custAdvRecDetCustAdvRecToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetCustAdvRecTotalAmount": {
+            "meaning": "客户预收款明细总预收/付金额",
+            "reachable": false,
+            "name": "客户预收款明细总预收/付金额"
+        },
+        "custAdvRecDetCustAdvRecUnitCode": {
+            "meaning": "客户预收款明细单位id",
+            "reachable": false,
+            "name": "客户预收款明细单位id"
+        },
+        "custAdvRecDetCustAdvRecUpdateTime": {
+            "meaning": "客户预收款明细更新时间",
+            "reachable": false,
+            "name": "客户预收款明细更新时间"
+        },
+        "custAdvRecDetCustAdvRecUpdater": {
+            "meaning": "客户预收款明细更新人",
+            "reachable": false,
+            "name": "客户预收款明细更新人"
+        },
+        "custAdvRecDetCustAdvRecUpdaterId": {
+            "meaning": "客户预收款明细更新人ID",
+            "reachable": false,
+            "name": "客户预收款明细更新人ID"
+        },
+        "custAdvRecDetCustAdvRecUserCode": {
+            "meaning": "客户预收款明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "客户预收款明细智能节点的唯一编码"
+        },
+        "custAdvRecDetCustAdvRecVarExtra1": {
+            "meaning": "客户预收款明细扩展1",
+            "reachable": false,
+            "name": "客户预收款明细扩展1"
+        },
+        "custAdvRecDetCustAdvRecVarExtra2": {
+            "meaning": "客户预收款明细扩展2",
+            "reachable": false,
+            "name": "客户预收款明细扩展2"
+        },
+        "custAdvRecDetCustAdvRecVarExtra3": {
+            "meaning": "客户预收款明细扩展3",
+            "reachable": false,
+            "name": "客户预收款明细扩展3"
+        },
+        "custAdvRecDetCustAdvRecVarExtra4": {
+            "meaning": "客户预收款明细扩展4",
+            "reachable": false,
+            "name": "客户预收款明细扩展4"
+        },
+        "custAdvRecDetCustAdvRecVarExtra5": {
+            "meaning": "客户预收款明细扩展5",
+            "reachable": false,
+            "name": "客户预收款明细扩展5"
+        },
+        "custAdvRecDetCustAdvRecVersion": {
+            "meaning": "客户预收款明细版本号",
+            "reachable": false,
+            "name": "客户预收款明细版本号"
+        },
+        "custAdvRecDetDateExtra1": {
+            "meaning": "客户预收款明细扩展时间1",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间1"
+        },
+        "custAdvRecDetDateExtra2": {
+            "meaning": "客户预收款明细扩展时间2",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间2"
+        },
+        "custAdvRecDetDateExtra3": {
+            "meaning": "客户预收款明细扩展时间3",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间3"
+        },
+        "custAdvRecDetDateExtra4": {
+            "meaning": "客户预收款明细扩展时间4",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间4"
+        },
+        "custAdvRecDetDateExtra5": {
+            "meaning": "客户预收款明细扩展时间5",
+            "reachable": false,
+            "name": "客户预收款明细扩展时间5"
+        },
+        "custAdvRecDetDefaultType": {
+            "meaning": "客户预收款明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "客户预收款明细智能节点主类型"
+        },
+        "custAdvRecDetDeliveryDate": {
+            "meaning": "客户预收款明细交货日期",
+            "reachable": false,
+            "name": "客户预收款明细交货日期"
+        },
+        "custAdvRecDetDescription": {
+            "meaning": "客户预收款明细描述",
+            "reachable": false,
+            "name": "客户预收款明细描述"
+        },
+        "custAdvRecDetEndTime": {
+            "meaning": "客户预收款明细结束时间",
+            "reachable": false,
+            "name": "客户预收款明细结束时间"
+        },
+        "custAdvRecDetEndTimeRequired": {
+            "meaning": "客户预收款明细最后需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细最后需时"
+        },
+        "custAdvRecDetEngName": {
+            "meaning": "客户预收款明细英文名称",
+            "reachable": false,
+            "name": "客户预收款明细英文名称"
+        },
+        "custAdvRecDetEquipmentId": {
+            "meaning": "客户预收款明细设备id",
+            "reachable": false,
+            "name": "客户预收款明细设备id"
+        },
+        "custAdvRecDetExchangeRate": {
+            "meaning": "客户预收款明细汇率",
+            "reachable": false,
+            "name": "客户预收款明细汇率"
+        },
+        "custAdvRecDetExchangeRateId": {
+            "meaning": "客户预收款明细币种汇率id",
+            "reachable": false,
+            "name": "客户预收款明细币种汇率id"
+        },
+        "custAdvRecDetExtension": {
+            "meaning": "客户预收款明细扩展数据",
+            "reachable": false,
+            "name": "客户预收款明细扩展数据"
+        },
+        "custAdvRecDetExternalState": {
+            "meaning": "客户预收款明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "客户预收款明细上流程状态位"
+        },
+        "custAdvRecDetFilterClazz": {
+            "meaning": "客户预收款明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户预收款明细冗余字段用于筛选"
+        },
+        "custAdvRecDetFlags": {
+            "meaning": "客户预收款明细63位标志位",
+            "reachable": false,
+            "name": "客户预收款明细63位标志位"
+        },
+        "custAdvRecDetFromAuditDate": {
+            "meaning": "custAdvRecDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromBeginTime": {
+            "meaning": "custAdvRecDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromCreateTime": {
+            "meaning": "custAdvRecDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDateExtra1": {
+            "meaning": "custAdvRecDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDateExtra2": {
+            "meaning": "custAdvRecDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDateExtra3": {
+            "meaning": "custAdvRecDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDateExtra4": {
+            "meaning": "custAdvRecDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDateExtra5": {
+            "meaning": "custAdvRecDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromDeliveryDate": {
+            "meaning": "custAdvRecDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromEndTime": {
+            "meaning": "custAdvRecDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromReceiptDate": {
+            "meaning": "custAdvRecDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFromUpdateTime": {
+            "meaning": "custAdvRecDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetFscType": {
+            "meaning": "客户预收款明细FSC声明",
+            "reachable": false,
+            "name": "客户预收款明细FSC声明"
+        },
+        "custAdvRecDetGenerativePeople": {
+            "meaning": "客户预收款明细下发人",
+            "reachable": false,
+            "name": "客户预收款明细下发人"
+        },
+        "custAdvRecDetGenerativeState": {
+            "meaning": "客户预收款明细下发状态",
+            "reachable": false,
+            "name": "客户预收款明细下发状态"
+        },
+        "custAdvRecDetGroovyScript": {
+            "meaning": "客户预收款明细groovy脚本",
+            "reachable": false,
+            "name": "客户预收款明细groovy脚本"
+        },
+        "custAdvRecDetGropeCode": {
+            "meaning": "客户预收款明细搜索码",
+            "reachable": false,
+            "name": "客户预收款明细搜索码"
+        },
+        "custAdvRecDetId": {
+            "meaning": "客户预收款明细PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "客户预收款明细PK"
+        },
+        "custAdvRecDetInUsed": {
+            "meaning": "客户预收款明细是否被使用",
+            "reachable": false,
+            "name": "客户预收款明细是否被使用"
+        },
+        "custAdvRecDetInvTypeTaxRateId": {
+            "meaning": "客户预收款明细发票税率id",
+            "reachable": false,
+            "name": "客户预收款明细发票税率id"
+        },
+        "custAdvRecDetIsBanned": {
+            "meaning": "客户预收款明细是否被禁用",
+            "reachable": false,
+            "name": "客户预收款明细是否被禁用"
+        },
+        "custAdvRecDetIsDeleted": {
+            "meaning": "客户预收款明细是否被删除",
+            "reachable": false,
+            "name": "客户预收款明细是否被删除"
+        },
+        "custAdvRecDetIsLeaf": {
+            "meaning": "客户预收款明细是否叶子节点",
+            "reachable": false,
+            "name": "客户预收款明细是否叶子节点"
+        },
+        "custAdvRecDetIsMainFlow": {
+            "meaning": "客户预收款明细是否是主流程",
+            "reachable": false,
+            "name": "客户预收款明细是否是主流程"
+        },
+        "custAdvRecDetIsManualModificationDate": {
+            "meaning": "客户预收款明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "客户预收款明细是否手动修改计划生产时间"
+        },
+        "custAdvRecDetIsolation": {
+            "meaning": "客户预收款明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "客户预收款明细智能节点数据隔离标识"
+        },
+        "custAdvRecDetJsScript": {
+            "meaning": "客户预收款明细js脚本",
+            "reachable": false,
+            "name": "客户预收款明细js脚本"
+        },
+        "custAdvRecDetLocAmount": {
+            "meaning": "客户预收款明细本币预收/付金额",
+            "reachable": false,
+            "name": "客户预收款明细本币预收/付金额"
+        },
+        "custAdvRecDetLocCompleteQuantity": {
+            "meaning": "客户预收款明细本币完成数量（本币已转应收/付金额）",
+            "reachable": false,
+            "name": "客户预收款明细本币完成数量"
+        },
+        "custAdvRecDetMaterialId": {
+            "meaning": "客户预收款明细物料id",
+            "reachable": false,
+            "name": "客户预收款明细物料id"
+        },
+        "custAdvRecDetName": {
+            "meaning": "客户预收款明细智能节点名",
+            "reachable": false,
+            "name": "客户预收款明细智能节点名"
+        },
+        "custAdvRecDetNameCodeSearch": {
+            "meaning": "客户预收款明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "客户预收款明细name、user"
+        },
+        "custAdvRecDetNumberExtra1": {
+            "meaning": "客户预收款明细扩展数量1",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量1"
+        },
+        "custAdvRecDetNumberExtra2": {
+            "meaning": "客户预收款明细扩展数量2",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量2"
+        },
+        "custAdvRecDetNumberExtra3": {
+            "meaning": "客户预收款明细扩展数量3",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量3"
+        },
+        "custAdvRecDetNumberExtra4": {
+            "meaning": "客户预收款明细扩展数量4",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量4"
+        },
+        "custAdvRecDetNumberExtra5": {
+            "meaning": "客户预收款明细扩展数量5",
+            "reachable": false,
+            "name": "客户预收款明细扩展数量5"
+        },
+        "custAdvRecDetOrderId": {
+            "meaning": "客户预收款明细订单ID",
+            "reachable": false,
+            "name": "客户预收款明细订单ID"
+        },
+        "custAdvRecDetParentId": {
+            "meaning": "客户预收款明细父节点ID",
+            "reachable": false,
+            "name": "客户预收款明细父节点ID"
+        },
+        "custAdvRecDetPlannedOutputQuantity": {
+            "meaning": "客户预收款明细计划产出数量",
+            "reachable": false,
+            "name": "客户预收款明细计划产出数量"
+        },
+        "custAdvRecDetPlannedTimeRequired": {
+            "meaning": "客户预收款明细计划需时(小时)",
+            "reachable": false,
+            "name": "客户预收款明细计划需时"
+        },
+        "custAdvRecDetPrintTimes": {
+            "meaning": "客户预收款明细打印次数",
+            "reachable": false,
+            "name": "客户预收款明细打印次数"
+        },
+        "custAdvRecDetPriority": {
+            "meaning": "客户预收款明细优先级",
+            "reachable": false,
+            "name": "客户预收款明细优先级"
+        },
+        "custAdvRecDetProcessInstanceId": {
+            "meaning": "客户预收款明细流程实例ID",
+            "reachable": false,
+            "name": "客户预收款明细流程实例ID"
+        },
+        "custAdvRecDetProductionProcessesTypeId": {
+            "meaning": "客户预收款明细工序类型ID",
+            "reachable": false,
+            "name": "客户预收款明细工序类型ID"
+        },
+        "custAdvRecDetProductionShiftId": {
+            "meaning": "客户预收款明细生产班次ID",
+            "reachable": false,
+            "name": "客户预收款明细生产班次ID"
+        },
+        "custAdvRecDetQuantity": {
+            "meaning": "客户预收款明细任务数量",
+            "reachable": false,
+            "name": "客户预收款明细任务数量"
+        },
+        "custAdvRecDetReceiptDate": {
+            "meaning": "客户预收款明细单据日期",
+            "reachable": false,
+            "name": "客户预收款明细单据日期"
+        },
+        "custAdvRecDetReceiptType": {
+            "meaning": "客户预收款明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "客户预收款明细单据类型"
+        },
+        "custAdvRecDetRelatedTasksId": {
+            "meaning": "客户预收款明细关联任务id",
+            "reachable": false,
+            "name": "客户预收款明细关联任务id"
+        },
+        "custAdvRecDetSerialNumber": {
+            "meaning": "客户预收款明细顺序号",
+            "reachable": false,
+            "name": "客户预收款明细顺序号"
+        },
+        "custAdvRecDetSource": {
+            "meaning": "客户预收款明细源",
+            "reachable": false,
+            "name": "客户预收款明细源"
+        },
+        "custAdvRecDetSourceType": {
+            "meaning": "客户预收款明细来源类型",
+            "reachable": false,
+            "name": "客户预收款明细来源类型"
+        },
+        "custAdvRecDetState": {
+            "meaning": "客户预收款明细通用状态",
+            "reachable": false,
+            "name": "客户预收款明细通用状态"
+        },
+        "custAdvRecDetSystemCode": {
+            "meaning": "客户预收款明细系统编码",
+            "reachable": false,
+            "name": "客户预收款明细系统编码"
+        },
+        "custAdvRecDetTarget": {
+            "meaning": "客户预收款明细目标",
+            "reachable": false,
+            "name": "客户预收款明细目标"
+        },
+        "custAdvRecDetTaskNodeName": {
+            "meaning": "客户预收款明细任务节点名称",
+            "reachable": false,
+            "name": "客户预收款明细任务节点名称"
+        },
+        "custAdvRecDetTenantId": {
+            "meaning": "客户预收款明细租户ID",
+            "reachable": false,
+            "name": "客户预收款明细租户ID"
+        },
+        "custAdvRecDetThirdPartyClass": {
+            "meaning": "客户预收款明细第三方分类",
+            "reachable": false,
+            "name": "客户预收款明细第三方分类"
+        },
+        "custAdvRecDetThirdPartyId": {
+            "meaning": "客户预收款明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "客户预收款明细第三方系统中的唯一ID"
+        },
+        "custAdvRecDetThirdPartyName": {
+            "meaning": "客户预收款明细第三方名称",
+            "reachable": false,
+            "name": "客户预收款明细第三方名称"
+        },
+        "custAdvRecDetToAuditDate": {
+            "meaning": "custAdvRecDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToBeginTime": {
+            "meaning": "custAdvRecDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToCreateTime": {
+            "meaning": "custAdvRecDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDateExtra1": {
+            "meaning": "custAdvRecDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDateExtra2": {
+            "meaning": "custAdvRecDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDateExtra3": {
+            "meaning": "custAdvRecDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDateExtra4": {
+            "meaning": "custAdvRecDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDateExtra5": {
+            "meaning": "custAdvRecDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToDeliveryDate": {
+            "meaning": "custAdvRecDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToEndTime": {
+            "meaning": "custAdvRecDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToReceiptDate": {
+            "meaning": "custAdvRecDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetToUpdateTime": {
+            "meaning": "custAdvRecDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custAdvRecDetUnitCode": {
+            "meaning": "客户预收款明细单位id",
+            "reachable": false,
+            "name": "客户预收款明细单位id"
+        },
+        "custAdvRecDetUpdateTime": {
+            "meaning": "客户预收款明细更新时间",
+            "reachable": false,
+            "name": "客户预收款明细更新时间"
+        },
+        "custAdvRecDetUpdater": {
+            "meaning": "客户预收款明细更新人",
+            "reachable": false,
+            "name": "客户预收款明细更新人"
+        },
+        "custAdvRecDetUpdaterId": {
+            "meaning": "客户预收款明细更新人ID",
+            "reachable": false,
+            "name": "客户预收款明细更新人ID"
+        },
+        "custAdvRecDetUserCode": {
+            "meaning": "客户预收款明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "客户预收款明细智能节点的唯一编码"
+        },
+        "custAdvRecDetVarExtra1": {
+            "meaning": "客户预收款明细扩展1",
+            "reachable": false,
+            "name": "客户预收款明细扩展1"
+        },
+        "custAdvRecDetVarExtra2": {
+            "meaning": "客户预收款明细扩展2",
+            "reachable": false,
+            "name": "客户预收款明细扩展2"
+        },
+        "custAdvRecDetVarExtra3": {
+            "meaning": "客户预收款明细扩展3",
+            "reachable": false,
+            "name": "客户预收款明细扩展3"
+        },
+        "custAdvRecDetVarExtra4": {
+            "meaning": "客户预收款明细扩展4",
+            "reachable": false,
+            "name": "客户预收款明细扩展4"
+        },
+        "custAdvRecDetVarExtra5": {
+            "meaning": "客户预收款明细扩展5",
+            "reachable": false,
+            "name": "客户预收款明细扩展5"
+        },
+        "custAdvRecDetVersion": {
+            "meaning": "客户预收款明细版本号",
+            "reachable": false,
+            "name": "客户预收款明细版本号"
+        },
+        "custAdvRecDetWorkOrderId": {
+            "meaning": "客户预收款明细工单ID",
+            "reachable": false,
+            "name": "客户预收款明细工单ID"
+        }
+    }
+}

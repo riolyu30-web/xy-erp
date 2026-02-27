@@ -1,0 +1,1156 @@
+{
+    "api_name": "/processes-type-value/findList",
+    "table_name": "工序类型参数值",
+    "request": {
+        "prcesTypeValueClazz": "PROCESSES_TYPE_VALUE"
+    },
+    "mainTabClazz": "PROCESSES_TYPE_VALUE",
+    "response": {
+        "prcesTypeValueATPrcesTypeApplicationId": {
+            "meaning": "工序类型参数值应用ID",
+            "reachable": true,
+            "name": "工序类型参数值应用ID"
+        },
+        "prcesTypeValueATPrcesTypeAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeAuditStatus": {
+            "meaning": "工序类型参数值审核状态",
+            "reachable": true,
+            "name": "工序类型参数值审核状态"
+        },
+        "prcesTypeValueATPrcesTypeBizVersion": {
+            "meaning": "工序类型参数值业务自定义版本号",
+            "reachable": true,
+            "name": "工序类型参数值业务自定义版本号"
+        },
+        "prcesTypeValueATPrcesTypeBriefName": {
+            "meaning": "工序类型参数值简称",
+            "reachable": true,
+            "name": "工序类型参数值简称"
+        },
+        "prcesTypeValueATPrcesTypeBusDivisId": {
+            "meaning": "工序类型参数值事业部id",
+            "reachable": true,
+            "name": "工序类型参数值事业部id"
+        },
+        "prcesTypeValueATPrcesTypeClazz": {
+            "meaning": "工序类型参数值子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "工序类型参数值子类"
+        },
+        "prcesTypeValueATPrcesTypeComment": {
+            "meaning": "工序类型参数值评论",
+            "reachable": true,
+            "name": "工序类型参数值评论"
+        },
+        "prcesTypeValueATPrcesTypeCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeCreator": {
+            "meaning": "工序类型参数值创建人",
+            "reachable": true,
+            "name": "工序类型参数值创建人"
+        },
+        "prcesTypeValueATPrcesTypeCreatorId": {
+            "meaning": "工序类型参数值创建人ID",
+            "reachable": true,
+            "name": "工序类型参数值创建人ID"
+        },
+        "prcesTypeValueATPrcesTypeDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeDefaultType": {
+            "meaning": "工序类型参数值智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "工序类型参数值智能节点主类型"
+        },
+        "prcesTypeValueATPrcesTypeDescription": {
+            "meaning": "工序类型参数值描述",
+            "reachable": true,
+            "name": "工序类型参数值描述"
+        },
+        "prcesTypeValueATPrcesTypeEngName": {
+            "meaning": "工序类型参数值英文名称",
+            "reachable": true,
+            "name": "工序类型参数值英文名称"
+        },
+        "prcesTypeValueATPrcesTypeExtension": {
+            "meaning": "工序类型参数值扩展数据",
+            "reachable": true,
+            "name": "工序类型参数值扩展数据"
+        },
+        "prcesTypeValueATPrcesTypeExternalState": {
+            "meaning": "工序类型参数值上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "工序类型参数值上流程状态位"
+        },
+        "prcesTypeValueATPrcesTypeFlags": {
+            "meaning": "工序类型参数值63位标志位",
+            "reachable": true,
+            "name": "工序类型参数值63位标志位"
+        },
+        "prcesTypeValueATPrcesTypeFromAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeFromUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeGroovyScript": {
+            "meaning": "工序类型参数值groovy脚本",
+            "reachable": true,
+            "name": "工序类型参数值groovy脚本"
+        },
+        "prcesTypeValueATPrcesTypeGropeCode": {
+            "meaning": "工序类型参数值搜索码",
+            "reachable": true,
+            "name": "工序类型参数值搜索码"
+        },
+        "prcesTypeValueATPrcesTypeId": {
+            "meaning": "工序类型参数值主键ID",
+            "reachable": true,
+            "name": "工序类型参数值主键ID"
+        },
+        "prcesTypeValueATPrcesTypeInUsed": {
+            "meaning": "工序类型参数值是否被使用",
+            "reachable": true,
+            "name": "工序类型参数值是否被使用"
+        },
+        "prcesTypeValueATPrcesTypeIsBanned": {
+            "meaning": "工序类型参数值是否被禁用",
+            "reachable": true,
+            "name": "工序类型参数值是否被禁用"
+        },
+        "prcesTypeValueATPrcesTypeIsDeleted": {
+            "meaning": "工序类型参数值是否被删除",
+            "reachable": true,
+            "name": "工序类型参数值是否被删除"
+        },
+        "prcesTypeValueATPrcesTypeIsMainFlow": {
+            "meaning": "工序类型参数值是否是主流程",
+            "reachable": true,
+            "name": "工序类型参数值是否是主流程"
+        },
+        "prcesTypeValueATPrcesTypeIsolation": {
+            "meaning": "工序类型参数值智能节点数据隔离标识",
+            "reachable": true,
+            "name": "工序类型参数值智能节点数据隔离标识"
+        },
+        "prcesTypeValueATPrcesTypeItemsApplicationId": {
+            "meaning": "工序类型参数值应用ID",
+            "reachable": true,
+            "name": "工序类型参数值应用ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsAuditStatus": {
+            "meaning": "工序类型参数值审核状态",
+            "reachable": true,
+            "name": "工序类型参数值审核状态"
+        },
+        "prcesTypeValueATPrcesTypeItemsBizVersion": {
+            "meaning": "工序类型参数值业务自定义版本号",
+            "reachable": true,
+            "name": "工序类型参数值业务自定义版本号"
+        },
+        "prcesTypeValueATPrcesTypeItemsBriefName": {
+            "meaning": "工序类型参数值简称",
+            "reachable": true,
+            "name": "工序类型参数值简称"
+        },
+        "prcesTypeValueATPrcesTypeItemsBusDivisId": {
+            "meaning": "工序类型参数值事业部id",
+            "reachable": true,
+            "name": "工序类型参数值事业部id"
+        },
+        "prcesTypeValueATPrcesTypeItemsClazz": {
+            "meaning": "工序类型参数值子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "工序类型参数值子类"
+        },
+        "prcesTypeValueATPrcesTypeItemsComment": {
+            "meaning": "工序类型参数值评论",
+            "reachable": true,
+            "name": "工序类型参数值评论"
+        },
+        "prcesTypeValueATPrcesTypeItemsCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsCreator": {
+            "meaning": "工序类型参数值创建人",
+            "reachable": true,
+            "name": "工序类型参数值创建人"
+        },
+        "prcesTypeValueATPrcesTypeItemsCreatorId": {
+            "meaning": "工序类型参数值创建人ID",
+            "reachable": true,
+            "name": "工序类型参数值创建人ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsDefaultType": {
+            "meaning": "工序类型参数值智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "工序类型参数值智能节点主类型"
+        },
+        "prcesTypeValueATPrcesTypeItemsDescription": {
+            "meaning": "工序类型参数值描述",
+            "reachable": true,
+            "name": "工序类型参数值描述"
+        },
+        "prcesTypeValueATPrcesTypeItemsDictionaryCode": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsDictionaryCode",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsEngName": {
+            "meaning": "工序类型参数值英文名称",
+            "reachable": true,
+            "name": "工序类型参数值英文名称"
+        },
+        "prcesTypeValueATPrcesTypeItemsExtension": {
+            "meaning": "工序类型参数值扩展数据",
+            "reachable": true,
+            "name": "工序类型参数值扩展数据"
+        },
+        "prcesTypeValueATPrcesTypeItemsExternalState": {
+            "meaning": "工序类型参数值上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "工序类型参数值上流程状态位"
+        },
+        "prcesTypeValueATPrcesTypeItemsFlags": {
+            "meaning": "工序类型参数值63位标志位",
+            "reachable": true,
+            "name": "工序类型参数值63位标志位"
+        },
+        "prcesTypeValueATPrcesTypeItemsFromAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsFromUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsGroovyScript": {
+            "meaning": "工序类型参数值groovy脚本",
+            "reachable": true,
+            "name": "工序类型参数值groovy脚本"
+        },
+        "prcesTypeValueATPrcesTypeItemsGropeCode": {
+            "meaning": "工序类型参数值搜索码",
+            "reachable": true,
+            "name": "工序类型参数值搜索码"
+        },
+        "prcesTypeValueATPrcesTypeItemsId": {
+            "meaning": "工序类型参数值主键ID",
+            "reachable": true,
+            "name": "工序类型参数值主键ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsInUsed": {
+            "meaning": "工序类型参数值是否被使用",
+            "reachable": true,
+            "name": "工序类型参数值是否被使用"
+        },
+        "prcesTypeValueATPrcesTypeItemsIsBanned": {
+            "meaning": "工序类型参数值是否被禁用",
+            "reachable": true,
+            "name": "工序类型参数值是否被禁用"
+        },
+        "prcesTypeValueATPrcesTypeItemsIsDeleted": {
+            "meaning": "工序类型参数值是否被删除",
+            "reachable": true,
+            "name": "工序类型参数值是否被删除"
+        },
+        "prcesTypeValueATPrcesTypeItemsIsMainFlow": {
+            "meaning": "工序类型参数值是否是主流程",
+            "reachable": true,
+            "name": "工序类型参数值是否是主流程"
+        },
+        "prcesTypeValueATPrcesTypeItemsIsolation": {
+            "meaning": "工序类型参数值智能节点数据隔离标识",
+            "reachable": true,
+            "name": "工序类型参数值智能节点数据隔离标识"
+        },
+        "prcesTypeValueATPrcesTypeItemsJsScript": {
+            "meaning": "工序类型参数值js脚本",
+            "reachable": true,
+            "name": "工序类型参数值js脚本"
+        },
+        "prcesTypeValueATPrcesTypeItemsName": {
+            "meaning": "工序类型参数值智能节点名",
+            "reachable": true,
+            "name": "工序类型参数值智能节点名"
+        },
+        "prcesTypeValueATPrcesTypeItemsNameCodeSearch": {
+            "meaning": "工序类型参数值name、user_code模糊搜索",
+            "reachable": true,
+            "name": "工序类型参数值name、user_code模糊搜索"
+        },
+        "prcesTypeValueATPrcesTypeItemsNumberExtra1": {
+            "meaning": "工序类型参数值扩展数量1",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量1"
+        },
+        "prcesTypeValueATPrcesTypeItemsNumberExtra2": {
+            "meaning": "工序类型参数值扩展数量2",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量2"
+        },
+        "prcesTypeValueATPrcesTypeItemsNumberExtra3": {
+            "meaning": "工序类型参数值扩展数量3",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量3"
+        },
+        "prcesTypeValueATPrcesTypeItemsNumberExtra4": {
+            "meaning": "工序类型参数值扩展数量4",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量4"
+        },
+        "prcesTypeValueATPrcesTypeItemsNumberExtra5": {
+            "meaning": "工序类型参数值扩展数量5",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量5"
+        },
+        "prcesTypeValueATPrcesTypeItemsParentId": {
+            "meaning": "工序类型参数值父节点ID",
+            "reachable": true,
+            "name": "工序类型参数值父节点ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsProcessInstanceId": {
+            "meaning": "工序类型参数值流程实例ID",
+            "reachable": true,
+            "name": "工序类型参数值流程实例ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsSerialNumber": {
+            "meaning": "工序类型参数值顺序号",
+            "reachable": true,
+            "name": "工序类型参数值顺序号"
+        },
+        "prcesTypeValueATPrcesTypeItemsState": {
+            "meaning": "工序类型参数值通用状态",
+            "reachable": true,
+            "name": "工序类型参数值通用状态"
+        },
+        "prcesTypeValueATPrcesTypeItemsSystemCode": {
+            "meaning": "工序类型参数值系统编码",
+            "reachable": true,
+            "name": "工序类型参数值系统编码"
+        },
+        "prcesTypeValueATPrcesTypeItemsTaskNodeName": {
+            "meaning": "工序类型参数值任务节点名称",
+            "reachable": true,
+            "name": "工序类型参数值任务节点名称"
+        },
+        "prcesTypeValueATPrcesTypeItemsTenantId": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsThirdPartyClass": {
+            "meaning": "工序类型参数值第三方分类",
+            "reachable": true,
+            "name": "工序类型参数值第三方分类"
+        },
+        "prcesTypeValueATPrcesTypeItemsThirdPartyId": {
+            "meaning": "工序类型参数值第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "工序类型参数值第三方系统中的唯一ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsThirdPartyName": {
+            "meaning": "工序类型参数值第三方名称",
+            "reachable": true,
+            "name": "工序类型参数值第三方名称"
+        },
+        "prcesTypeValueATPrcesTypeItemsToAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsToUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsUpdater": {
+            "meaning": "工序类型参数值更新人",
+            "reachable": true,
+            "name": "工序类型参数值更新人"
+        },
+        "prcesTypeValueATPrcesTypeItemsUpdaterId": {
+            "meaning": "工序类型参数值更新人ID",
+            "reachable": true,
+            "name": "工序类型参数值更新人ID"
+        },
+        "prcesTypeValueATPrcesTypeItemsUserCode": {
+            "meaning": "工序类型参数值智能节点的唯一编码",
+            "reachable": true,
+            "name": "工序类型参数值智能节点的唯一编码"
+        },
+        "prcesTypeValueATPrcesTypeItemsValueType": {
+            "meaning": "prcesTypeValueATPrcesTypeItemsValueType",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeItemsVarExtra1": {
+            "meaning": "工序类型参数值扩展1",
+            "reachable": true,
+            "name": "工序类型参数值扩展1"
+        },
+        "prcesTypeValueATPrcesTypeItemsVarExtra2": {
+            "meaning": "工序类型参数值扩展2",
+            "reachable": true,
+            "name": "工序类型参数值扩展2"
+        },
+        "prcesTypeValueATPrcesTypeItemsVarExtra3": {
+            "meaning": "工序类型参数值扩展3",
+            "reachable": true,
+            "name": "工序类型参数值扩展3"
+        },
+        "prcesTypeValueATPrcesTypeItemsVarExtra4": {
+            "meaning": "工序类型参数值扩展4",
+            "reachable": true,
+            "name": "工序类型参数值扩展4"
+        },
+        "prcesTypeValueATPrcesTypeItemsVarExtra5": {
+            "meaning": "工序类型参数值扩展5",
+            "reachable": true,
+            "name": "工序类型参数值扩展5"
+        },
+        "prcesTypeValueATPrcesTypeItemsVersion": {
+            "meaning": "工序类型参数值版本号",
+            "reachable": true,
+            "name": "工序类型参数值版本号"
+        },
+        "prcesTypeValueATPrcesTypeJsScript": {
+            "meaning": "工序类型参数值js脚本",
+            "reachable": true,
+            "name": "工序类型参数值js脚本"
+        },
+        "prcesTypeValueATPrcesTypeName": {
+            "meaning": "工序类型参数值智能节点名",
+            "reachable": true,
+            "name": "工序类型参数值智能节点名"
+        },
+        "prcesTypeValueATPrcesTypeNameCodeSearch": {
+            "meaning": "工序类型参数值name、user_code模糊搜索",
+            "reachable": true,
+            "name": "工序类型参数值name、user_code模糊搜索"
+        },
+        "prcesTypeValueATPrcesTypeNumberExtra1": {
+            "meaning": "工序类型参数值扩展数量1",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量1"
+        },
+        "prcesTypeValueATPrcesTypeNumberExtra2": {
+            "meaning": "工序类型参数值扩展数量2",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量2"
+        },
+        "prcesTypeValueATPrcesTypeNumberExtra3": {
+            "meaning": "工序类型参数值扩展数量3",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量3"
+        },
+        "prcesTypeValueATPrcesTypeNumberExtra4": {
+            "meaning": "工序类型参数值扩展数量4",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量4"
+        },
+        "prcesTypeValueATPrcesTypeNumberExtra5": {
+            "meaning": "工序类型参数值扩展数量5",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量5"
+        },
+        "prcesTypeValueATPrcesTypeParentId": {
+            "meaning": "工序类型参数值父节点ID",
+            "reachable": true,
+            "name": "工序类型参数值父节点ID"
+        },
+        "prcesTypeValueATPrcesTypeProcessInstanceId": {
+            "meaning": "工序类型参数值流程实例ID",
+            "reachable": true,
+            "name": "工序类型参数值流程实例ID"
+        },
+        "prcesTypeValueATPrcesTypeSerialNumber": {
+            "meaning": "工序类型参数值顺序号",
+            "reachable": true,
+            "name": "工序类型参数值顺序号"
+        },
+        "prcesTypeValueATPrcesTypeStandardCost": {
+            "meaning": "prcesTypeValueATPrcesTypeStandardCost",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeState": {
+            "meaning": "工序类型参数值通用状态",
+            "reachable": true,
+            "name": "工序类型参数值通用状态"
+        },
+        "prcesTypeValueATPrcesTypeSystemCode": {
+            "meaning": "工序类型参数值系统编码",
+            "reachable": true,
+            "name": "工序类型参数值系统编码"
+        },
+        "prcesTypeValueATPrcesTypeTaskNodeName": {
+            "meaning": "工序类型参数值任务节点名称",
+            "reachable": true,
+            "name": "工序类型参数值任务节点名称"
+        },
+        "prcesTypeValueATPrcesTypeTenantId": {
+            "meaning": "prcesTypeValueATPrcesTypeTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeThirdPartyClass": {
+            "meaning": "工序类型参数值第三方分类",
+            "reachable": true,
+            "name": "工序类型参数值第三方分类"
+        },
+        "prcesTypeValueATPrcesTypeThirdPartyId": {
+            "meaning": "工序类型参数值第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "工序类型参数值第三方系统中的唯一ID"
+        },
+        "prcesTypeValueATPrcesTypeThirdPartyName": {
+            "meaning": "工序类型参数值第三方名称",
+            "reachable": true,
+            "name": "工序类型参数值第三方名称"
+        },
+        "prcesTypeValueATPrcesTypeToAuditDate": {
+            "meaning": "prcesTypeValueATPrcesTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToCreateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToDateExtra1": {
+            "meaning": "prcesTypeValueATPrcesTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToDateExtra2": {
+            "meaning": "prcesTypeValueATPrcesTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToDateExtra3": {
+            "meaning": "prcesTypeValueATPrcesTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToDateExtra4": {
+            "meaning": "prcesTypeValueATPrcesTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToDateExtra5": {
+            "meaning": "prcesTypeValueATPrcesTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeToUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeUpdateTime": {
+            "meaning": "prcesTypeValueATPrcesTypeUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueATPrcesTypeUpdater": {
+            "meaning": "工序类型参数值更新人",
+            "reachable": true,
+            "name": "工序类型参数值更新人"
+        },
+        "prcesTypeValueATPrcesTypeUpdaterId": {
+            "meaning": "工序类型参数值更新人ID",
+            "reachable": true,
+            "name": "工序类型参数值更新人ID"
+        },
+        "prcesTypeValueATPrcesTypeUserCode": {
+            "meaning": "工序类型参数值智能节点的唯一编码",
+            "reachable": true,
+            "name": "工序类型参数值智能节点的唯一编码"
+        },
+        "prcesTypeValueATPrcesTypeVarExtra1": {
+            "meaning": "工序类型参数值扩展1",
+            "reachable": true,
+            "name": "工序类型参数值扩展1"
+        },
+        "prcesTypeValueATPrcesTypeVarExtra2": {
+            "meaning": "工序类型参数值扩展2",
+            "reachable": true,
+            "name": "工序类型参数值扩展2"
+        },
+        "prcesTypeValueATPrcesTypeVarExtra3": {
+            "meaning": "工序类型参数值扩展3",
+            "reachable": true,
+            "name": "工序类型参数值扩展3"
+        },
+        "prcesTypeValueATPrcesTypeVarExtra4": {
+            "meaning": "工序类型参数值扩展4",
+            "reachable": true,
+            "name": "工序类型参数值扩展4"
+        },
+        "prcesTypeValueATPrcesTypeVarExtra5": {
+            "meaning": "工序类型参数值扩展5",
+            "reachable": true,
+            "name": "工序类型参数值扩展5"
+        },
+        "prcesTypeValueATPrcesTypeVersion": {
+            "meaning": "工序类型参数值版本号",
+            "reachable": true,
+            "name": "工序类型参数值版本号"
+        },
+        "prcesTypeValueApplicationId": {
+            "meaning": "工序类型参数值应用ID",
+            "reachable": true,
+            "name": "工序类型参数值应用ID"
+        },
+        "prcesTypeValueAuditDate": {
+            "meaning": "工序类型参数值审核时间",
+            "reachable": true,
+            "name": "工序类型参数值审核时间"
+        },
+        "prcesTypeValueAuditStatus": {
+            "meaning": "工序类型参数值审核状态",
+            "reachable": true,
+            "name": "工序类型参数值审核状态"
+        },
+        "prcesTypeValueBizVersion": {
+            "meaning": "工序类型参数值业务自定义版本号",
+            "reachable": true,
+            "name": "工序类型参数值业务自定义版本号"
+        },
+        "prcesTypeValueBriefName": {
+            "meaning": "工序类型参数值简称",
+            "reachable": true,
+            "name": "工序类型参数值简称"
+        },
+        "prcesTypeValueBusDivisId": {
+            "meaning": "工序类型参数值事业部id",
+            "reachable": true,
+            "name": "工序类型参数值事业部id"
+        },
+        "prcesTypeValueClazz": {
+            "meaning": "工序类型参数值子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "工序类型参数值子类"
+        },
+        "prcesTypeValueComment": {
+            "meaning": "工序类型参数值评论",
+            "reachable": true,
+            "name": "工序类型参数值评论"
+        },
+        "prcesTypeValueCreateTime": {
+            "meaning": "工序类型参数值创建时间",
+            "reachable": true,
+            "name": "工序类型参数值创建时间"
+        },
+        "prcesTypeValueCreator": {
+            "meaning": "工序类型参数值创建人",
+            "reachable": true,
+            "name": "工序类型参数值创建人"
+        },
+        "prcesTypeValueCreatorId": {
+            "meaning": "工序类型参数值创建人ID",
+            "reachable": true,
+            "name": "工序类型参数值创建人ID"
+        },
+        "prcesTypeValueDateExtra1": {
+            "meaning": "工序类型参数值扩展时间1",
+            "reachable": true,
+            "name": "工序类型参数值扩展时间1"
+        },
+        "prcesTypeValueDateExtra2": {
+            "meaning": "工序类型参数值扩展时间2",
+            "reachable": true,
+            "name": "工序类型参数值扩展时间2"
+        },
+        "prcesTypeValueDateExtra3": {
+            "meaning": "工序类型参数值扩展时间3",
+            "reachable": true,
+            "name": "工序类型参数值扩展时间3"
+        },
+        "prcesTypeValueDateExtra4": {
+            "meaning": "工序类型参数值扩展时间4",
+            "reachable": true,
+            "name": "工序类型参数值扩展时间4"
+        },
+        "prcesTypeValueDateExtra5": {
+            "meaning": "工序类型参数值扩展时间5",
+            "reachable": true,
+            "name": "工序类型参数值扩展时间5"
+        },
+        "prcesTypeValueDefaultType": {
+            "meaning": "工序类型参数值智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "工序类型参数值智能节点主类型"
+        },
+        "prcesTypeValueDescription": {
+            "meaning": "工序类型参数值描述",
+            "reachable": true,
+            "name": "工序类型参数值描述"
+        },
+        "prcesTypeValueEngName": {
+            "meaning": "工序类型参数值英文名称",
+            "reachable": true,
+            "name": "工序类型参数值英文名称"
+        },
+        "prcesTypeValueExtension": {
+            "meaning": "工序类型参数值扩展数据",
+            "reachable": true,
+            "name": "工序类型参数值扩展数据"
+        },
+        "prcesTypeValueExternalState": {
+            "meaning": "工序类型参数值上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "工序类型参数值上流程状态位"
+        },
+        "prcesTypeValueFlags": {
+            "meaning": "工序类型参数值63位标志位",
+            "reachable": true,
+            "name": "工序类型参数值63位标志位"
+        },
+        "prcesTypeValueFromAuditDate": {
+            "meaning": "prcesTypeValueFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromCreateTime": {
+            "meaning": "prcesTypeValueFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromDateExtra1": {
+            "meaning": "prcesTypeValueFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromDateExtra2": {
+            "meaning": "prcesTypeValueFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromDateExtra3": {
+            "meaning": "prcesTypeValueFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromDateExtra4": {
+            "meaning": "prcesTypeValueFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromDateExtra5": {
+            "meaning": "prcesTypeValueFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueFromUpdateTime": {
+            "meaning": "prcesTypeValueFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueGroovyScript": {
+            "meaning": "工序类型参数值groovy脚本",
+            "reachable": true,
+            "name": "工序类型参数值groovy脚本"
+        },
+        "prcesTypeValueGropeCode": {
+            "meaning": "工序类型参数值搜索码",
+            "reachable": true,
+            "name": "工序类型参数值搜索码"
+        },
+        "prcesTypeValueId": {
+            "meaning": "工序类型参数值主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "工序类型参数值主键ID"
+        },
+        "prcesTypeValueInUsed": {
+            "meaning": "工序类型参数值是否被使用",
+            "reachable": true,
+            "name": "工序类型参数值是否被使用"
+        },
+        "prcesTypeValueIsBanned": {
+            "meaning": "工序类型参数值是否被禁用",
+            "reachable": true,
+            "name": "工序类型参数值是否被禁用"
+        },
+        "prcesTypeValueIsDeleted": {
+            "meaning": "工序类型参数值是否被删除",
+            "reachable": true,
+            "name": "工序类型参数值是否被删除"
+        },
+        "prcesTypeValueIsMainFlow": {
+            "meaning": "工序类型参数值是否是主流程",
+            "reachable": true,
+            "name": "工序类型参数值是否是主流程"
+        },
+        "prcesTypeValueIsolation": {
+            "meaning": "工序类型参数值智能节点数据隔离标识",
+            "reachable": true,
+            "name": "工序类型参数值智能节点数据隔离标识"
+        },
+        "prcesTypeValueJsScript": {
+            "meaning": "工序类型参数值js脚本",
+            "reachable": true,
+            "name": "工序类型参数值js脚本"
+        },
+        "prcesTypeValueName": {
+            "meaning": "工序类型参数值智能节点名",
+            "reachable": true,
+            "name": "工序类型参数值智能节点名"
+        },
+        "prcesTypeValueNameCodeSearch": {
+            "meaning": "工序类型参数值name、user_code模糊搜索",
+            "reachable": true,
+            "name": "工序类型参数值name、user_code模糊搜索"
+        },
+        "prcesTypeValueNumberExtra1": {
+            "meaning": "工序类型参数值扩展数量1",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量1"
+        },
+        "prcesTypeValueNumberExtra2": {
+            "meaning": "工序类型参数值扩展数量2",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量2"
+        },
+        "prcesTypeValueNumberExtra3": {
+            "meaning": "工序类型参数值扩展数量3",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量3"
+        },
+        "prcesTypeValueNumberExtra4": {
+            "meaning": "工序类型参数值扩展数量4",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量4"
+        },
+        "prcesTypeValueNumberExtra5": {
+            "meaning": "工序类型参数值扩展数量5",
+            "reachable": true,
+            "name": "工序类型参数值扩展数量5"
+        },
+        "prcesTypeValueParentId": {
+            "meaning": "工序类型参数值父节点ID",
+            "reachable": true,
+            "name": "工序类型参数值父节点ID"
+        },
+        "prcesTypeValueProcessInstanceId": {
+            "meaning": "工序类型参数值流程实例ID",
+            "reachable": true,
+            "name": "工序类型参数值流程实例ID"
+        },
+        "prcesTypeValueProcessesTypeId": {
+            "meaning": "prcesTypeValueProcessesTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueProcessesTypeItemsId": {
+            "meaning": "prcesTypeValueProcessesTypeItemsId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueSerialNumber": {
+            "meaning": "工序类型参数值顺序号",
+            "reachable": true,
+            "name": "工序类型参数值顺序号"
+        },
+        "prcesTypeValueSourceId": {
+            "meaning": "prcesTypeValueSourceId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueState": {
+            "meaning": "工序类型参数值通用状态",
+            "reachable": true,
+            "name": "工序类型参数值通用状态"
+        },
+        "prcesTypeValueSystemCode": {
+            "meaning": "工序类型参数值系统编码",
+            "reachable": true,
+            "name": "工序类型参数值系统编码"
+        },
+        "prcesTypeValueTaskNodeName": {
+            "meaning": "工序类型参数值任务节点名称",
+            "reachable": true,
+            "name": "工序类型参数值任务节点名称"
+        },
+        "prcesTypeValueTenantId": {
+            "meaning": "prcesTypeValueTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueThirdPartyClass": {
+            "meaning": "工序类型参数值第三方分类",
+            "reachable": true,
+            "name": "工序类型参数值第三方分类"
+        },
+        "prcesTypeValueThirdPartyId": {
+            "meaning": "工序类型参数值第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "工序类型参数值第三方系统中的唯一ID"
+        },
+        "prcesTypeValueThirdPartyName": {
+            "meaning": "工序类型参数值第三方名称",
+            "reachable": true,
+            "name": "工序类型参数值第三方名称"
+        },
+        "prcesTypeValueToAuditDate": {
+            "meaning": "prcesTypeValueToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToCreateTime": {
+            "meaning": "prcesTypeValueToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToDateExtra1": {
+            "meaning": "prcesTypeValueToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToDateExtra2": {
+            "meaning": "prcesTypeValueToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToDateExtra3": {
+            "meaning": "prcesTypeValueToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToDateExtra4": {
+            "meaning": "prcesTypeValueToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToDateExtra5": {
+            "meaning": "prcesTypeValueToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueToUpdateTime": {
+            "meaning": "prcesTypeValueToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prcesTypeValueUpdateTime": {
+            "meaning": "工序类型参数值更新时间",
+            "reachable": true,
+            "name": "工序类型参数值更新时间"
+        },
+        "prcesTypeValueUpdater": {
+            "meaning": "工序类型参数值更新人",
+            "reachable": true,
+            "name": "工序类型参数值更新人"
+        },
+        "prcesTypeValueUpdaterId": {
+            "meaning": "工序类型参数值更新人ID",
+            "reachable": true,
+            "name": "工序类型参数值更新人ID"
+        },
+        "prcesTypeValueUserCode": {
+            "meaning": "工序类型参数值智能节点的唯一编码",
+            "reachable": true,
+            "name": "工序类型参数值智能节点的唯一编码"
+        },
+        "prcesTypeValueValue": {
+            "meaning": "prcesTypeValueValue",
+            "reachable": true,
+            "name": ""
+        },
+        "prcesTypeValueVarExtra1": {
+            "meaning": "工序类型参数值扩展1",
+            "reachable": true,
+            "name": "工序类型参数值扩展1"
+        },
+        "prcesTypeValueVarExtra2": {
+            "meaning": "工序类型参数值扩展2",
+            "reachable": true,
+            "name": "工序类型参数值扩展2"
+        },
+        "prcesTypeValueVarExtra3": {
+            "meaning": "工序类型参数值扩展3",
+            "reachable": true,
+            "name": "工序类型参数值扩展3"
+        },
+        "prcesTypeValueVarExtra4": {
+            "meaning": "工序类型参数值扩展4",
+            "reachable": true,
+            "name": "工序类型参数值扩展4"
+        },
+        "prcesTypeValueVarExtra5": {
+            "meaning": "工序类型参数值扩展5",
+            "reachable": true,
+            "name": "工序类型参数值扩展5"
+        },
+        "prcesTypeValueVersion": {
+            "meaning": "工序类型参数值版本号",
+            "reachable": true,
+            "name": "工序类型参数值版本号"
+        }
+    }
+}

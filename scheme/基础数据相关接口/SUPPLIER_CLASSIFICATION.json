@@ -1,0 +1,381 @@
+{
+    "api_name": "/supplier-classification/findList",
+    "table_name": "供应商分类",
+    "request": {
+        "supplierClassificationClazz": "SUPPLIER_CLASSIFICATION"
+    },
+    "mainTabClazz": "SUPPLIER_CLASSIFICATION",
+    "response": {
+        "supplierClassificationApplicationId": {
+            "meaning": "供应商分类应用ID",
+            "reachable": true,
+            "name": "供应商分类应用ID"
+        },
+        "supplierClassificationAuditDate": {
+            "meaning": "供应商分类审核时间",
+            "reachable": true,
+            "name": "供应商分类审核时间"
+        },
+        "supplierClassificationAuditStatus": {
+            "meaning": "供应商分类审核状态",
+            "reachable": true,
+            "name": "供应商分类审核状态"
+        },
+        "supplierClassificationBizVersion": {
+            "meaning": "供应商分类业务自定义版本号",
+            "reachable": true,
+            "name": "供应商分类业务自定义版本号"
+        },
+        "supplierClassificationBriefName": {
+            "meaning": "供应商分类简称",
+            "reachable": true,
+            "name": "供应商分类简称"
+        },
+        "supplierClassificationBusDivisId": {
+            "meaning": "供应商分类事业部id",
+            "reachable": true,
+            "name": "供应商分类事业部id"
+        },
+        "supplierClassificationClazz": {
+            "meaning": "供应商分类子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "供应商分类子类"
+        },
+        "supplierClassificationComment": {
+            "meaning": "供应商分类评论",
+            "reachable": true,
+            "name": "供应商分类评论"
+        },
+        "supplierClassificationCreateTime": {
+            "meaning": "供应商分类创建时间",
+            "reachable": true,
+            "name": "供应商分类创建时间"
+        },
+        "supplierClassificationCreator": {
+            "meaning": "供应商分类创建人",
+            "reachable": true,
+            "name": "供应商分类创建人"
+        },
+        "supplierClassificationCreatorId": {
+            "meaning": "供应商分类创建人ID",
+            "reachable": true,
+            "name": "供应商分类创建人ID"
+        },
+        "supplierClassificationDateExtra1": {
+            "meaning": "供应商分类扩展时间1",
+            "reachable": true,
+            "name": "供应商分类扩展时间1"
+        },
+        "supplierClassificationDateExtra2": {
+            "meaning": "供应商分类扩展时间2",
+            "reachable": true,
+            "name": "供应商分类扩展时间2"
+        },
+        "supplierClassificationDateExtra3": {
+            "meaning": "供应商分类扩展时间3",
+            "reachable": true,
+            "name": "供应商分类扩展时间3"
+        },
+        "supplierClassificationDateExtra4": {
+            "meaning": "供应商分类扩展时间4",
+            "reachable": true,
+            "name": "供应商分类扩展时间4"
+        },
+        "supplierClassificationDateExtra5": {
+            "meaning": "供应商分类扩展时间5",
+            "reachable": true,
+            "name": "供应商分类扩展时间5"
+        },
+        "supplierClassificationDefaultType": {
+            "meaning": "供应商分类智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "供应商分类智能节点主类型"
+        },
+        "supplierClassificationDescription": {
+            "meaning": "供应商分类描述",
+            "reachable": true,
+            "name": "供应商分类描述"
+        },
+        "supplierClassificationEngName": {
+            "meaning": "供应商分类英文名称",
+            "reachable": true,
+            "name": "供应商分类英文名称"
+        },
+        "supplierClassificationExtension": {
+            "meaning": "供应商分类扩展数据",
+            "reachable": true,
+            "name": "供应商分类扩展数据"
+        },
+        "supplierClassificationExternalState": {
+            "meaning": "供应商分类上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "供应商分类上流程状态位"
+        },
+        "supplierClassificationFlags": {
+            "meaning": "供应商分类63位标志位",
+            "reachable": true,
+            "name": "供应商分类63位标志位"
+        },
+        "supplierClassificationFromAuditDate": {
+            "meaning": "supplierClassificationFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromCreateTime": {
+            "meaning": "supplierClassificationFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromDateExtra1": {
+            "meaning": "supplierClassificationFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromDateExtra2": {
+            "meaning": "supplierClassificationFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromDateExtra3": {
+            "meaning": "supplierClassificationFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromDateExtra4": {
+            "meaning": "supplierClassificationFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromDateExtra5": {
+            "meaning": "supplierClassificationFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationFromUpdateTime": {
+            "meaning": "supplierClassificationFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationGroovyScript": {
+            "meaning": "供应商分类groovy脚本",
+            "reachable": true,
+            "name": "供应商分类groovy脚本"
+        },
+        "supplierClassificationGropeCode": {
+            "meaning": "供应商分类搜索码",
+            "reachable": true,
+            "name": "供应商分类搜索码"
+        },
+        "supplierClassificationId": {
+            "meaning": "供应商分类主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "供应商分类主键ID"
+        },
+        "supplierClassificationInUsed": {
+            "meaning": "供应商分类是否被使用",
+            "reachable": true,
+            "name": "供应商分类是否被使用"
+        },
+        "supplierClassificationIsBanned": {
+            "meaning": "供应商分类是否被禁用",
+            "reachable": true,
+            "name": "供应商分类是否被禁用"
+        },
+        "supplierClassificationIsDeleted": {
+            "meaning": "供应商分类是否被删除",
+            "reachable": true,
+            "name": "供应商分类是否被删除"
+        },
+        "supplierClassificationIsMainFlow": {
+            "meaning": "供应商分类是否是主流程",
+            "reachable": true,
+            "name": "供应商分类是否是主流程"
+        },
+        "supplierClassificationIsolation": {
+            "meaning": "供应商分类智能节点数据隔离标识",
+            "reachable": true,
+            "name": "供应商分类智能节点数据隔离标识"
+        },
+        "supplierClassificationJsScript": {
+            "meaning": "供应商分类js脚本",
+            "reachable": true,
+            "name": "供应商分类js脚本"
+        },
+        "supplierClassificationName": {
+            "meaning": "供应商分类智能节点名",
+            "reachable": true,
+            "name": "供应商分类智能节点名"
+        },
+        "supplierClassificationNameCodeSearch": {
+            "meaning": "供应商分类name、user_code模糊搜索",
+            "reachable": true,
+            "name": "供应商分类name、user_code模糊搜索"
+        },
+        "supplierClassificationNumberExtra1": {
+            "meaning": "供应商分类扩展数量1",
+            "reachable": true,
+            "name": "供应商分类扩展数量1"
+        },
+        "supplierClassificationNumberExtra2": {
+            "meaning": "供应商分类扩展数量2",
+            "reachable": true,
+            "name": "供应商分类扩展数量2"
+        },
+        "supplierClassificationNumberExtra3": {
+            "meaning": "供应商分类扩展数量3",
+            "reachable": true,
+            "name": "供应商分类扩展数量3"
+        },
+        "supplierClassificationNumberExtra4": {
+            "meaning": "供应商分类扩展数量4",
+            "reachable": true,
+            "name": "供应商分类扩展数量4"
+        },
+        "supplierClassificationNumberExtra5": {
+            "meaning": "供应商分类扩展数量5",
+            "reachable": true,
+            "name": "供应商分类扩展数量5"
+        },
+        "supplierClassificationParentId": {
+            "meaning": "供应商分类父节点ID",
+            "reachable": true,
+            "name": "供应商分类父节点ID"
+        },
+        "supplierClassificationProcessInstanceId": {
+            "meaning": "供应商分类流程实例ID",
+            "reachable": true,
+            "name": "供应商分类流程实例ID"
+        },
+        "supplierClassificationSerialNumber": {
+            "meaning": "供应商分类顺序号",
+            "reachable": true,
+            "name": "供应商分类顺序号"
+        },
+        "supplierClassificationState": {
+            "meaning": "供应商分类通用状态",
+            "reachable": true,
+            "name": "供应商分类通用状态"
+        },
+        "supplierClassificationSupplierClassificationAttributeValue": {
+            "meaning": "供应商分类属性值（来源字典表）",
+            "reachable": true,
+            "name": "供应商分类属性值"
+        },
+        "supplierClassificationSystemCode": {
+            "meaning": "供应商分类系统编码",
+            "reachable": true,
+            "name": "供应商分类系统编码"
+        },
+        "supplierClassificationTaskNodeName": {
+            "meaning": "供应商分类任务节点名称",
+            "reachable": true,
+            "name": "供应商分类任务节点名称"
+        },
+        "supplierClassificationThirdPartyClass": {
+            "meaning": "供应商分类第三方分类",
+            "reachable": true,
+            "name": "供应商分类第三方分类"
+        },
+        "supplierClassificationThirdPartyId": {
+            "meaning": "供应商分类第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "供应商分类第三方系统中的唯一ID"
+        },
+        "supplierClassificationThirdPartyName": {
+            "meaning": "供应商分类第三方名称",
+            "reachable": true,
+            "name": "供应商分类第三方名称"
+        },
+        "supplierClassificationToAuditDate": {
+            "meaning": "supplierClassificationToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToCreateTime": {
+            "meaning": "supplierClassificationToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToDateExtra1": {
+            "meaning": "supplierClassificationToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToDateExtra2": {
+            "meaning": "supplierClassificationToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToDateExtra3": {
+            "meaning": "supplierClassificationToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToDateExtra4": {
+            "meaning": "supplierClassificationToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToDateExtra5": {
+            "meaning": "supplierClassificationToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationToUpdateTime": {
+            "meaning": "supplierClassificationToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierClassificationUpdateTime": {
+            "meaning": "供应商分类更新时间",
+            "reachable": true,
+            "name": "供应商分类更新时间"
+        },
+        "supplierClassificationUpdater": {
+            "meaning": "供应商分类更新人",
+            "reachable": true,
+            "name": "供应商分类更新人"
+        },
+        "supplierClassificationUpdaterId": {
+            "meaning": "供应商分类更新人ID",
+            "reachable": true,
+            "name": "供应商分类更新人ID"
+        },
+        "supplierClassificationUserCode": {
+            "meaning": "供应商分类智能节点的唯一编码",
+            "reachable": true,
+            "name": "供应商分类智能节点的唯一编码"
+        },
+        "supplierClassificationVarExtra1": {
+            "meaning": "供应商分类扩展1",
+            "reachable": true,
+            "name": "供应商分类扩展1"
+        },
+        "supplierClassificationVarExtra2": {
+            "meaning": "供应商分类扩展2",
+            "reachable": true,
+            "name": "供应商分类扩展2"
+        },
+        "supplierClassificationVarExtra3": {
+            "meaning": "供应商分类扩展3",
+            "reachable": true,
+            "name": "供应商分类扩展3"
+        },
+        "supplierClassificationVarExtra4": {
+            "meaning": "供应商分类扩展4",
+            "reachable": true,
+            "name": "供应商分类扩展4"
+        },
+        "supplierClassificationVarExtra5": {
+            "meaning": "供应商分类扩展5",
+            "reachable": true,
+            "name": "供应商分类扩展5"
+        },
+        "supplierClassificationVersion": {
+            "meaning": "供应商分类版本号",
+            "reachable": true,
+            "name": "供应商分类版本号"
+        }
+    }
+}

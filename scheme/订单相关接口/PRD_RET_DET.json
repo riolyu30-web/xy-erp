@@ -1,0 +1,1352 @@
+{
+    "api_name": "/prd-ret-det/findList",
+    "table_name": "成品退货明细表",
+    "request": {
+        "prdRetDetPrdRetClazz": "PRD_RET",
+        "prdRetDetClazz": "PRD_RET_DET"
+    },
+    "mainTabClazz": "PRD_RET_DET",
+    "response": {
+        "prdRetDetActualTimeRequired": {
+            "meaning": "成品退货明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表实际需时"
+        },
+        "prdRetDetAdjustmentTimeRequired": {
+            "meaning": "成品退货明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品退货明细表调整需时"
+        },
+        "prdRetDetApplicationId": {
+            "meaning": "成品退货明细表应用ID",
+            "reachable": true,
+            "name": "成品退货明细表应用ID"
+        },
+        "prdRetDetArea": {
+            "meaning": "成品退货明细表面积",
+            "reachable": true,
+            "name": "成品退货明细表面积"
+        },
+        "prdRetDetAuditDate": {
+            "meaning": "成品退货明细表审核时间",
+            "reachable": true,
+            "name": "成品退货明细表审核时间"
+        },
+        "prdRetDetAuditStatus": {
+            "meaning": "成品退货明细表审核状态",
+            "reachable": true,
+            "name": "成品退货明细表审核状态"
+        },
+        "prdRetDetAvailableScheduleId": {
+            "meaning": "成品退货明细表可用日程id",
+            "reachable": true,
+            "name": "成品退货明细表可用日程id"
+        },
+        "prdRetDetBeginTime": {
+            "meaning": "成品退货明细表开始时间",
+            "reachable": true,
+            "name": "成品退货明细表开始时间"
+        },
+        "prdRetDetBizVersion": {
+            "meaning": "成品退货明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品退货明细表业务自定义版本号"
+        },
+        "prdRetDetBomNodeId": {
+            "meaning": "成品退货明细表工单id",
+            "reachable": true,
+            "name": "成品退货明细表工单id"
+        },
+        "prdRetDetBriefName": {
+            "meaning": "成品退货明细表简称",
+            "reachable": true,
+            "name": "成品退货明细表简称"
+        },
+        "prdRetDetBusDivisId": {
+            "meaning": "成品退货明细表事业部id",
+            "reachable": true,
+            "name": "成品退货明细表事业部id"
+        },
+        "prdRetDetClazz": {
+            "meaning": "成品退货明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品退货明细表子类"
+        },
+        "prdRetDetClosedReason": {
+            "meaning": "成品退货明细表结案原因",
+            "reachable": true,
+            "name": "成品退货明细表结案原因"
+        },
+        "prdRetDetClosedStatus": {
+            "meaning": "成品退货明细表结案状态",
+            "reachable": true,
+            "name": "成品退货明细表结案状态"
+        },
+        "prdRetDetComment": {
+            "meaning": "成品退货明细表评论",
+            "reachable": true,
+            "name": "成品退货明细表评论"
+        },
+        "prdRetDetCompleteQuantity": {
+            "meaning": "成品退货明细表完成数量",
+            "reachable": true,
+            "name": "成品退货明细表完成数量"
+        },
+        "prdRetDetCompleteStatus": {
+            "meaning": "成品退货明细表完成状态",
+            "reachable": true,
+            "name": "成品退货明细表完成状态"
+        },
+        "prdRetDetCreateTime": {
+            "meaning": "成品退货明细表创建时间",
+            "reachable": true,
+            "name": "成品退货明细表创建时间"
+        },
+        "prdRetDetCreator": {
+            "meaning": "成品退货明细表创建人",
+            "reachable": true,
+            "name": "成品退货明细表创建人"
+        },
+        "prdRetDetCreatorId": {
+            "meaning": "成品退货明细表创建人ID",
+            "reachable": true,
+            "name": "成品退货明细表创建人ID"
+        },
+        "prdRetDetCurrencyExchangeRate": {
+            "meaning": "成品退货明细表汇率",
+            "reachable": true,
+            "name": "成品退货明细表汇率"
+        },
+        "prdRetDetCurrencyId": {
+            "meaning": "成品退货明细表汇率id",
+            "reachable": true,
+            "name": "成品退货明细表汇率id"
+        },
+        "prdRetDetDateExtra1": {
+            "meaning": "成品退货明细表扩展时间1",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间1"
+        },
+        "prdRetDetDateExtra2": {
+            "meaning": "成品退货明细表扩展时间2",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间2"
+        },
+        "prdRetDetDateExtra3": {
+            "meaning": "成品退货明细表扩展时间3",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间3"
+        },
+        "prdRetDetDateExtra4": {
+            "meaning": "成品退货明细表扩展时间4",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间4"
+        },
+        "prdRetDetDateExtra5": {
+            "meaning": "成品退货明细表扩展时间5",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间5"
+        },
+        "prdRetDetDefaultType": {
+            "meaning": "成品退货明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品退货明细表智能节点主类型"
+        },
+        "prdRetDetDeliveryDate": {
+            "meaning": "成品退货明细表交货日期",
+            "reachable": true,
+            "name": "成品退货明细表交货日期"
+        },
+        "prdRetDetDescription": {
+            "meaning": "成品退货明细表描述",
+            "reachable": true,
+            "name": "成品退货明细表描述"
+        },
+        "prdRetDetEndTime": {
+            "meaning": "成品退货明细表结束时间",
+            "reachable": true,
+            "name": "成品退货明细表结束时间"
+        },
+        "prdRetDetEndTimeRequired": {
+            "meaning": "成品退货明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表最后需时"
+        },
+        "prdRetDetEngName": {
+            "meaning": "成品退货明细表英文名称",
+            "reachable": true,
+            "name": "成品退货明细表英文名称"
+        },
+        "prdRetDetEquipmentId": {
+            "meaning": "成品退货明细表设备id",
+            "reachable": true,
+            "name": "成品退货明细表设备id"
+        },
+        "prdRetDetExchangeRateId": {
+            "meaning": "成品退货明细表币种汇率id",
+            "reachable": true,
+            "name": "成品退货明细表币种汇率id"
+        },
+        "prdRetDetExtension": {
+            "meaning": "成品退货明细表扩展数据",
+            "reachable": true,
+            "name": "成品退货明细表扩展数据"
+        },
+        "prdRetDetExternalState": {
+            "meaning": "成品退货明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品退货明细表上流程状态位"
+        },
+        "prdRetDetFilterClazz": {
+            "meaning": "成品退货明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品退货明细表冗余字段用于筛选"
+        },
+        "prdRetDetFlags": {
+            "meaning": "成品退货明细表63位标志位",
+            "reachable": true,
+            "name": "成品退货明细表63位标志位"
+        },
+        "prdRetDetFromAuditDate": {
+            "meaning": "prdRetDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromBeginTime": {
+            "meaning": "prdRetDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromCreateTime": {
+            "meaning": "prdRetDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDateExtra1": {
+            "meaning": "prdRetDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDateExtra2": {
+            "meaning": "prdRetDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDateExtra3": {
+            "meaning": "prdRetDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDateExtra4": {
+            "meaning": "prdRetDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDateExtra5": {
+            "meaning": "prdRetDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromDeliveryDate": {
+            "meaning": "prdRetDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromEndTime": {
+            "meaning": "prdRetDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromReceiptDate": {
+            "meaning": "prdRetDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFromUpdateTime": {
+            "meaning": "prdRetDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetFscType": {
+            "meaning": "成品退货明细表FSC声明",
+            "reachable": true,
+            "name": "成品退货明细表FSC声明"
+        },
+        "prdRetDetGenerativePeople": {
+            "meaning": "成品退货明细表下发人",
+            "reachable": true,
+            "name": "成品退货明细表下发人"
+        },
+        "prdRetDetGenerativeState": {
+            "meaning": "成品退货明细表下发状态",
+            "reachable": true,
+            "name": "成品退货明细表下发状态"
+        },
+        "prdRetDetGoodsId": {
+            "meaning": "成品退货明细表货（包）id",
+            "reachable": true,
+            "name": "成品退货明细表货"
+        },
+        "prdRetDetGroovyScript": {
+            "meaning": "成品退货明细表groovy脚本",
+            "reachable": true,
+            "name": "成品退货明细表groovy脚本"
+        },
+        "prdRetDetGropeCode": {
+            "meaning": "成品退货明细表搜索码",
+            "reachable": true,
+            "name": "成品退货明细表搜索码"
+        },
+        "prdRetDetHandlingMethod": {
+            "meaning": "成品退货明细表处理方式(字典：1物料入库/2成品入库/3半成品入库等)",
+            "reachable": true,
+            "name": "成品退货明细表处理方式"
+        },
+        "prdRetDetId": {
+            "meaning": "成品退货明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品退货明细表PK"
+        },
+        "prdRetDetInUsed": {
+            "meaning": "成品退货明细表是否被使用",
+            "reachable": true,
+            "name": "成品退货明细表是否被使用"
+        },
+        "prdRetDetInvTypeTaxRateId": {
+            "meaning": "成品退货明细表发票税率id",
+            "reachable": true,
+            "name": "成品退货明细表发票税率id"
+        },
+        "prdRetDetInvoiceTypeTaxRate": {
+            "meaning": "成品退货明细表税率",
+            "reachable": true,
+            "name": "成品退货明细表税率"
+        },
+        "prdRetDetIsBanned": {
+            "meaning": "成品退货明细表是否被禁用",
+            "reachable": true,
+            "name": "成品退货明细表是否被禁用"
+        },
+        "prdRetDetIsDeleted": {
+            "meaning": "成品退货明细表是否被删除",
+            "reachable": true,
+            "name": "成品退货明细表是否被删除"
+        },
+        "prdRetDetIsLeaf": {
+            "meaning": "成品退货明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品退货明细表是否叶子节点"
+        },
+        "prdRetDetIsMainFlow": {
+            "meaning": "成品退货明细表是否是主流程",
+            "reachable": true,
+            "name": "成品退货明细表是否是主流程"
+        },
+        "prdRetDetIsManualModificationDate": {
+            "meaning": "成品退货明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品退货明细表是否手动修改计划生产时间"
+        },
+        "prdRetDetIsolation": {
+            "meaning": "成品退货明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品退货明细表智能节点数据隔离标识"
+        },
+        "prdRetDetJsScript": {
+            "meaning": "成品退货明细表js脚本",
+            "reachable": true,
+            "name": "成品退货明细表js脚本"
+        },
+        "prdRetDetLocalCurrencyTotalAmount": {
+            "meaning": "成品退货明细表本币金额",
+            "reachable": true,
+            "name": "成品退货明细表本币金额"
+        },
+        "prdRetDetLocalCurrencyUnitPrice": {
+            "meaning": "成品退货明细表本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "成品退货明细表本币单价"
+        },
+        "prdRetDetMatBatchId": {
+            "meaning": "成品退货明细表物料批次id",
+            "reachable": true,
+            "name": "成品退货明细表物料批次id"
+        },
+        "prdRetDetMaterialId": {
+            "meaning": "成品退货明细表物料id",
+            "reachable": true,
+            "name": "成品退货明细表物料id"
+        },
+        "prdRetDetName": {
+            "meaning": "成品退货明细表智能节点名",
+            "reachable": true,
+            "name": "成品退货明细表智能节点名"
+        },
+        "prdRetDetNameCodeSearch": {
+            "meaning": "成品退货明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品退货明细表name、user_code模糊搜索"
+        },
+        "prdRetDetNumberExtra1": {
+            "meaning": "成品退货明细表扩展数量1",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量1"
+        },
+        "prdRetDetNumberExtra2": {
+            "meaning": "成品退货明细表扩展数量2",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量2"
+        },
+        "prdRetDetNumberExtra3": {
+            "meaning": "成品退货明细表扩展数量3",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量3"
+        },
+        "prdRetDetNumberExtra4": {
+            "meaning": "成品退货明细表扩展数量4",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量4"
+        },
+        "prdRetDetNumberExtra5": {
+            "meaning": "成品退货明细表扩展数量5",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量5"
+        },
+        "prdRetDetOrderDetailId": {
+            "meaning": "成品退货明细表订单明细id",
+            "reachable": true,
+            "name": "成品退货明细表订单明细id"
+        },
+        "prdRetDetParentId": {
+            "meaning": "成品退货明细表父节点ID",
+            "reachable": true,
+            "name": "成品退货明细表父节点ID"
+        },
+        "prdRetDetPlannedOutputQuantity": {
+            "meaning": "成品退货明细表计划产出数量",
+            "reachable": true,
+            "name": "成品退货明细表计划产出数量"
+        },
+        "prdRetDetPlannedTimeRequired": {
+            "meaning": "成品退货明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表计划需时"
+        },
+        "prdRetDetPrdRetActualTimeRequired": {
+            "meaning": "成品退货明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表实际需时"
+        },
+        "prdRetDetPrdRetAdjustmentTimeRequired": {
+            "meaning": "成品退货明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品退货明细表调整需时"
+        },
+        "prdRetDetPrdRetApplicationId": {
+            "meaning": "成品退货明细表应用ID",
+            "reachable": true,
+            "name": "成品退货明细表应用ID"
+        },
+        "prdRetDetPrdRetAuditDate": {
+            "meaning": "成品退货明细表审核时间",
+            "reachable": true,
+            "name": "成品退货明细表审核时间"
+        },
+        "prdRetDetPrdRetAuditStatus": {
+            "meaning": "成品退货明细表审核状态",
+            "reachable": true,
+            "name": "成品退货明细表审核状态"
+        },
+        "prdRetDetPrdRetAvailableScheduleId": {
+            "meaning": "成品退货明细表可用日程id",
+            "reachable": true,
+            "name": "成品退货明细表可用日程id"
+        },
+        "prdRetDetPrdRetBeginTime": {
+            "meaning": "成品退货明细表开始时间",
+            "reachable": true,
+            "name": "成品退货明细表开始时间"
+        },
+        "prdRetDetPrdRetBizVersion": {
+            "meaning": "成品退货明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品退货明细表业务自定义版本号"
+        },
+        "prdRetDetPrdRetBriefName": {
+            "meaning": "成品退货明细表简称",
+            "reachable": true,
+            "name": "成品退货明细表简称"
+        },
+        "prdRetDetPrdRetBusDivisId": {
+            "meaning": "成品退货明细表事业部id",
+            "reachable": true,
+            "name": "成品退货明细表事业部id"
+        },
+        "prdRetDetPrdRetClazz": {
+            "meaning": "成品退货明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品退货明细表子类"
+        },
+        "prdRetDetPrdRetClosedReason": {
+            "meaning": "成品退货明细表结案原因",
+            "reachable": true,
+            "name": "成品退货明细表结案原因"
+        },
+        "prdRetDetPrdRetClosedStatus": {
+            "meaning": "成品退货明细表结案状态",
+            "reachable": true,
+            "name": "成品退货明细表结案状态"
+        },
+        "prdRetDetPrdRetComment": {
+            "meaning": "成品退货明细表评论",
+            "reachable": true,
+            "name": "成品退货明细表评论"
+        },
+        "prdRetDetPrdRetCompleteQuantity": {
+            "meaning": "成品退货明细表完成数量",
+            "reachable": true,
+            "name": "成品退货明细表完成数量"
+        },
+        "prdRetDetPrdRetCompleteStatus": {
+            "meaning": "成品退货明细表完成状态",
+            "reachable": true,
+            "name": "成品退货明细表完成状态"
+        },
+        "prdRetDetPrdRetConsignee": {
+            "meaning": "成品退货明细表收货人",
+            "reachable": true,
+            "name": "成品退货明细表收货人"
+        },
+        "prdRetDetPrdRetConsigneeCellPhone": {
+            "meaning": "成品退货明细表收货人手机",
+            "reachable": true,
+            "name": "成品退货明细表收货人手机"
+        },
+        "prdRetDetPrdRetConsigneePhone": {
+            "meaning": "成品退货明细表收货人电话",
+            "reachable": true,
+            "name": "成品退货明细表收货人电话"
+        },
+        "prdRetDetPrdRetCreateTime": {
+            "meaning": "成品退货明细表创建时间",
+            "reachable": true,
+            "name": "成品退货明细表创建时间"
+        },
+        "prdRetDetPrdRetCreator": {
+            "meaning": "成品退货明细表创建人",
+            "reachable": true,
+            "name": "成品退货明细表创建人"
+        },
+        "prdRetDetPrdRetCreatorId": {
+            "meaning": "成品退货明细表创建人ID",
+            "reachable": true,
+            "name": "成品退货明细表创建人ID"
+        },
+        "prdRetDetPrdRetCustomerId": {
+            "meaning": "成品退货明细表客户id",
+            "reachable": true,
+            "name": "成品退货明细表客户id"
+        },
+        "prdRetDetPrdRetDateExtra1": {
+            "meaning": "成品退货明细表扩展时间1",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间1"
+        },
+        "prdRetDetPrdRetDateExtra2": {
+            "meaning": "成品退货明细表扩展时间2",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间2"
+        },
+        "prdRetDetPrdRetDateExtra3": {
+            "meaning": "成品退货明细表扩展时间3",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间3"
+        },
+        "prdRetDetPrdRetDateExtra4": {
+            "meaning": "成品退货明细表扩展时间4",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间4"
+        },
+        "prdRetDetPrdRetDateExtra5": {
+            "meaning": "成品退货明细表扩展时间5",
+            "reachable": true,
+            "name": "成品退货明细表扩展时间5"
+        },
+        "prdRetDetPrdRetDecimalMethod": {
+            "meaning": "成品退货明细表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "成品退货明细表保留小数位方法"
+        },
+        "prdRetDetPrdRetDefaultType": {
+            "meaning": "成品退货明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品退货明细表智能节点主类型"
+        },
+        "prdRetDetPrdRetDeliveryAddress": {
+            "meaning": "成品退货明细表送货地址",
+            "reachable": true,
+            "name": "成品退货明细表送货地址"
+        },
+        "prdRetDetPrdRetDeliveryDate": {
+            "meaning": "成品退货明细表交货日期",
+            "reachable": true,
+            "name": "成品退货明细表交货日期"
+        },
+        "prdRetDetPrdRetDescription": {
+            "meaning": "成品退货明细表描述",
+            "reachable": true,
+            "name": "成品退货明细表描述"
+        },
+        "prdRetDetPrdRetEndTime": {
+            "meaning": "成品退货明细表结束时间",
+            "reachable": true,
+            "name": "成品退货明细表结束时间"
+        },
+        "prdRetDetPrdRetEndTimeRequired": {
+            "meaning": "成品退货明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表最后需时"
+        },
+        "prdRetDetPrdRetEngName": {
+            "meaning": "成品退货明细表英文名称",
+            "reachable": true,
+            "name": "成品退货明细表英文名称"
+        },
+        "prdRetDetPrdRetEquipmentId": {
+            "meaning": "成品退货明细表设备id",
+            "reachable": true,
+            "name": "成品退货明细表设备id"
+        },
+        "prdRetDetPrdRetExchangeRateId": {
+            "meaning": "成品退货明细表币种汇率id",
+            "reachable": true,
+            "name": "成品退货明细表币种汇率id"
+        },
+        "prdRetDetPrdRetExtension": {
+            "meaning": "成品退货明细表扩展数据",
+            "reachable": true,
+            "name": "成品退货明细表扩展数据"
+        },
+        "prdRetDetPrdRetExternalState": {
+            "meaning": "成品退货明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品退货明细表上流程状态位"
+        },
+        "prdRetDetPrdRetFilterClazz": {
+            "meaning": "成品退货明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品退货明细表冗余字段用于筛选"
+        },
+        "prdRetDetPrdRetFlags": {
+            "meaning": "成品退货明细表63位标志位",
+            "reachable": true,
+            "name": "成品退货明细表63位标志位"
+        },
+        "prdRetDetPrdRetFromAuditDate": {
+            "meaning": "prdRetDetPrdRetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromBeginTime": {
+            "meaning": "prdRetDetPrdRetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromCreateTime": {
+            "meaning": "prdRetDetPrdRetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDateExtra1": {
+            "meaning": "prdRetDetPrdRetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDateExtra2": {
+            "meaning": "prdRetDetPrdRetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDateExtra3": {
+            "meaning": "prdRetDetPrdRetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDateExtra4": {
+            "meaning": "prdRetDetPrdRetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDateExtra5": {
+            "meaning": "prdRetDetPrdRetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromDeliveryDate": {
+            "meaning": "prdRetDetPrdRetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromEndTime": {
+            "meaning": "prdRetDetPrdRetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromReceiptDate": {
+            "meaning": "prdRetDetPrdRetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFromUpdateTime": {
+            "meaning": "prdRetDetPrdRetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetFscType": {
+            "meaning": "成品退货明细表FSC声明",
+            "reachable": true,
+            "name": "成品退货明细表FSC声明"
+        },
+        "prdRetDetPrdRetGenerativePeople": {
+            "meaning": "成品退货明细表下发人",
+            "reachable": true,
+            "name": "成品退货明细表下发人"
+        },
+        "prdRetDetPrdRetGenerativeState": {
+            "meaning": "成品退货明细表下发状态",
+            "reachable": true,
+            "name": "成品退货明细表下发状态"
+        },
+        "prdRetDetPrdRetGroovyScript": {
+            "meaning": "成品退货明细表groovy脚本",
+            "reachable": true,
+            "name": "成品退货明细表groovy脚本"
+        },
+        "prdRetDetPrdRetGropeCode": {
+            "meaning": "成品退货明细表搜索码",
+            "reachable": true,
+            "name": "成品退货明细表搜索码"
+        },
+        "prdRetDetPrdRetHandlerStaffId": {
+            "meaning": "成品退货明细表经手人id",
+            "reachable": true,
+            "name": "成品退货明细表经手人id"
+        },
+        "prdRetDetPrdRetId": {
+            "meaning": "成品退货明细表PK",
+            "reachable": true,
+            "name": "成品退货明细表PK"
+        },
+        "prdRetDetPrdRetInUsed": {
+            "meaning": "成品退货明细表是否被使用",
+            "reachable": true,
+            "name": "成品退货明细表是否被使用"
+        },
+        "prdRetDetPrdRetInvTypeTaxRateId": {
+            "meaning": "成品退货明细表发票税率id",
+            "reachable": true,
+            "name": "成品退货明细表发票税率id"
+        },
+        "prdRetDetPrdRetIsBanned": {
+            "meaning": "成品退货明细表是否被禁用",
+            "reachable": true,
+            "name": "成品退货明细表是否被禁用"
+        },
+        "prdRetDetPrdRetIsDeleted": {
+            "meaning": "成品退货明细表是否被删除",
+            "reachable": true,
+            "name": "成品退货明细表是否被删除"
+        },
+        "prdRetDetPrdRetIsLeaf": {
+            "meaning": "成品退货明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品退货明细表是否叶子节点"
+        },
+        "prdRetDetPrdRetIsMainFlow": {
+            "meaning": "成品退货明细表是否是主流程",
+            "reachable": true,
+            "name": "成品退货明细表是否是主流程"
+        },
+        "prdRetDetPrdRetIsManualModificationDate": {
+            "meaning": "成品退货明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品退货明细表是否手动修改计划生产时间"
+        },
+        "prdRetDetPrdRetIsolation": {
+            "meaning": "成品退货明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品退货明细表智能节点数据隔离标识"
+        },
+        "prdRetDetPrdRetJsScript": {
+            "meaning": "成品退货明细表js脚本",
+            "reachable": true,
+            "name": "成品退货明细表js脚本"
+        },
+        "prdRetDetPrdRetMaterialId": {
+            "meaning": "成品退货明细表物料id",
+            "reachable": true,
+            "name": "成品退货明细表物料id"
+        },
+        "prdRetDetPrdRetName": {
+            "meaning": "成品退货明细表智能节点名",
+            "reachable": true,
+            "name": "成品退货明细表智能节点名"
+        },
+        "prdRetDetPrdRetNameCodeSearch": {
+            "meaning": "成品退货明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品退货明细表name、user_code模糊搜索"
+        },
+        "prdRetDetPrdRetNumberExtra1": {
+            "meaning": "成品退货明细表扩展数量1",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量1"
+        },
+        "prdRetDetPrdRetNumberExtra2": {
+            "meaning": "成品退货明细表扩展数量2",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量2"
+        },
+        "prdRetDetPrdRetNumberExtra3": {
+            "meaning": "成品退货明细表扩展数量3",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量3"
+        },
+        "prdRetDetPrdRetNumberExtra4": {
+            "meaning": "成品退货明细表扩展数量4",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量4"
+        },
+        "prdRetDetPrdRetNumberExtra5": {
+            "meaning": "成品退货明细表扩展数量5",
+            "reachable": true,
+            "name": "成品退货明细表扩展数量5"
+        },
+        "prdRetDetPrdRetParentId": {
+            "meaning": "成品退货明细表父节点ID",
+            "reachable": true,
+            "name": "成品退货明细表父节点ID"
+        },
+        "prdRetDetPrdRetPlannedOutputQuantity": {
+            "meaning": "成品退货明细表计划产出数量",
+            "reachable": true,
+            "name": "成品退货明细表计划产出数量"
+        },
+        "prdRetDetPrdRetPlannedTimeRequired": {
+            "meaning": "成品退货明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品退货明细表计划需时"
+        },
+        "prdRetDetPrdRetPrintTimes": {
+            "meaning": "成品退货明细表打印次数",
+            "reachable": true,
+            "name": "成品退货明细表打印次数"
+        },
+        "prdRetDetPrdRetPriority": {
+            "meaning": "成品退货明细表优先级",
+            "reachable": true,
+            "name": "成品退货明细表优先级"
+        },
+        "prdRetDetPrdRetProcessInstanceId": {
+            "meaning": "成品退货明细表流程实例ID",
+            "reachable": true,
+            "name": "成品退货明细表流程实例ID"
+        },
+        "prdRetDetPrdRetProductionProcessesTypeId": {
+            "meaning": "成品退货明细表工序类型ID",
+            "reachable": true,
+            "name": "成品退货明细表工序类型ID"
+        },
+        "prdRetDetPrdRetProductionShiftId": {
+            "meaning": "成品退货明细表生产班次ID",
+            "reachable": true,
+            "name": "成品退货明细表生产班次ID"
+        },
+        "prdRetDetPrdRetQuantity": {
+            "meaning": "成品退货明细表任务数量",
+            "reachable": true,
+            "name": "成品退货明细表任务数量"
+        },
+        "prdRetDetPrdRetReason": {
+            "meaning": "成品退货明细表原因",
+            "reachable": true,
+            "name": "成品退货明细表原因"
+        },
+        "prdRetDetPrdRetReceiptDate": {
+            "meaning": "成品退货明细表单据日期",
+            "reachable": true,
+            "name": "成品退货明细表单据日期"
+        },
+        "prdRetDetPrdRetReceiptType": {
+            "meaning": "成品退货明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品退货明细表单据类型"
+        },
+        "prdRetDetPrdRetRelatedTasksId": {
+            "meaning": "成品退货明细表关联任务id",
+            "reachable": true,
+            "name": "成品退货明细表关联任务id"
+        },
+        "prdRetDetPrdRetSerialNumber": {
+            "meaning": "成品退货明细表顺序号",
+            "reachable": true,
+            "name": "成品退货明细表顺序号"
+        },
+        "prdRetDetPrdRetSettlementTotalAmountKeepDecimalPlace": {
+            "meaning": "成品退货明细表结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "成品退货明细表结算金额保留小数位"
+        },
+        "prdRetDetPrdRetSettlementUnitPriceKeepDecimalPlace": {
+            "meaning": "成品退货明细表结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "成品退货明细表结算单价保留小数位"
+        },
+        "prdRetDetPrdRetSource": {
+            "meaning": "成品退货明细表源",
+            "reachable": true,
+            "name": "成品退货明细表源"
+        },
+        "prdRetDetPrdRetSourceType": {
+            "meaning": "成品退货明细表来源类型",
+            "reachable": true,
+            "name": "成品退货明细表来源类型"
+        },
+        "prdRetDetPrdRetState": {
+            "meaning": "成品退货明细表通用状态",
+            "reachable": true,
+            "name": "成品退货明细表通用状态"
+        },
+        "prdRetDetPrdRetSystemCode": {
+            "meaning": "成品退货明细表系统编码",
+            "reachable": true,
+            "name": "成品退货明细表系统编码"
+        },
+        "prdRetDetPrdRetTarget": {
+            "meaning": "成品退货明细表目标",
+            "reachable": true,
+            "name": "成品退货明细表目标"
+        },
+        "prdRetDetPrdRetTaskNodeName": {
+            "meaning": "成品退货明细表任务节点名称",
+            "reachable": true,
+            "name": "成品退货明细表任务节点名称"
+        },
+        "prdRetDetPrdRetTenantId": {
+            "meaning": "成品退货明细表租户_id",
+            "reachable": true,
+            "name": "成品退货明细表租户_id"
+        },
+        "prdRetDetPrdRetThirdPartyClass": {
+            "meaning": "成品退货明细表第三方分类",
+            "reachable": true,
+            "name": "成品退货明细表第三方分类"
+        },
+        "prdRetDetPrdRetThirdPartyId": {
+            "meaning": "成品退货明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品退货明细表第三方系统中的唯一ID"
+        },
+        "prdRetDetPrdRetThirdPartyName": {
+            "meaning": "成品退货明细表第三方名称",
+            "reachable": true,
+            "name": "成品退货明细表第三方名称"
+        },
+        "prdRetDetPrdRetToAuditDate": {
+            "meaning": "prdRetDetPrdRetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToBeginTime": {
+            "meaning": "prdRetDetPrdRetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToCreateTime": {
+            "meaning": "prdRetDetPrdRetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDateExtra1": {
+            "meaning": "prdRetDetPrdRetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDateExtra2": {
+            "meaning": "prdRetDetPrdRetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDateExtra3": {
+            "meaning": "prdRetDetPrdRetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDateExtra4": {
+            "meaning": "prdRetDetPrdRetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDateExtra5": {
+            "meaning": "prdRetDetPrdRetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToDeliveryDate": {
+            "meaning": "prdRetDetPrdRetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToEndTime": {
+            "meaning": "prdRetDetPrdRetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToReceiptDate": {
+            "meaning": "prdRetDetPrdRetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetToUpdateTime": {
+            "meaning": "prdRetDetPrdRetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetPrdRetTransCompany": {
+            "meaning": "成品退货明细表运输公司",
+            "reachable": true,
+            "name": "成品退货明细表运输公司"
+        },
+        "prdRetDetPrdRetUnitCode": {
+            "meaning": "成品退货明细表单位id",
+            "reachable": true,
+            "name": "成品退货明细表单位id"
+        },
+        "prdRetDetPrdRetUpdateTime": {
+            "meaning": "成品退货明细表更新时间",
+            "reachable": true,
+            "name": "成品退货明细表更新时间"
+        },
+        "prdRetDetPrdRetUpdater": {
+            "meaning": "成品退货明细表更新人",
+            "reachable": true,
+            "name": "成品退货明细表更新人"
+        },
+        "prdRetDetPrdRetUpdaterId": {
+            "meaning": "成品退货明细表更新人ID",
+            "reachable": true,
+            "name": "成品退货明细表更新人ID"
+        },
+        "prdRetDetPrdRetUserCode": {
+            "meaning": "成品退货明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品退货明细表智能节点的唯一编码"
+        },
+        "prdRetDetPrdRetVarExtra1": {
+            "meaning": "成品退货明细表扩展1",
+            "reachable": true,
+            "name": "成品退货明细表扩展1"
+        },
+        "prdRetDetPrdRetVarExtra2": {
+            "meaning": "成品退货明细表扩展2",
+            "reachable": true,
+            "name": "成品退货明细表扩展2"
+        },
+        "prdRetDetPrdRetVarExtra3": {
+            "meaning": "成品退货明细表扩展3",
+            "reachable": true,
+            "name": "成品退货明细表扩展3"
+        },
+        "prdRetDetPrdRetVarExtra4": {
+            "meaning": "成品退货明细表扩展4",
+            "reachable": true,
+            "name": "成品退货明细表扩展4"
+        },
+        "prdRetDetPrdRetVarExtra5": {
+            "meaning": "成品退货明细表扩展5",
+            "reachable": true,
+            "name": "成品退货明细表扩展5"
+        },
+        "prdRetDetPrdRetVersion": {
+            "meaning": "成品退货明细表版本号",
+            "reachable": true,
+            "name": "成品退货明细表版本号"
+        },
+        "prdRetDetPrintTimes": {
+            "meaning": "成品退货明细表打印次数",
+            "reachable": true,
+            "name": "成品退货明细表打印次数"
+        },
+        "prdRetDetPriority": {
+            "meaning": "成品退货明细表优先级",
+            "reachable": true,
+            "name": "成品退货明细表优先级"
+        },
+        "prdRetDetProcessInstanceId": {
+            "meaning": "成品退货明细表流程实例ID",
+            "reachable": true,
+            "name": "成品退货明细表流程实例ID"
+        },
+        "prdRetDetProductionProcessesTypeId": {
+            "meaning": "成品退货明细表工序类型ID",
+            "reachable": true,
+            "name": "成品退货明细表工序类型ID"
+        },
+        "prdRetDetProductionShiftId": {
+            "meaning": "成品退货明细表生产班次ID",
+            "reachable": true,
+            "name": "成品退货明细表生产班次ID"
+        },
+        "prdRetDetQuantity": {
+            "meaning": "成品退货明细表任务数量",
+            "reachable": true,
+            "name": "成品退货明细表任务数量"
+        },
+        "prdRetDetQuotationUnitPriceIncludingTax": {
+            "meaning": "成品退货明细表含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "成品退货明细表含税报价单价"
+        },
+        "prdRetDetQuotationUnitPriceWithoutTax": {
+            "meaning": "成品退货明细表不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "成品退货明细表不含税报价单价"
+        },
+        "prdRetDetReceiptDate": {
+            "meaning": "成品退货明细表单据日期",
+            "reachable": true,
+            "name": "成品退货明细表单据日期"
+        },
+        "prdRetDetReceiptType": {
+            "meaning": "成品退货明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品退货明细表单据类型"
+        },
+        "prdRetDetRelatedTasksId": {
+            "meaning": "成品退货明细表关联任务id",
+            "reachable": true,
+            "name": "成品退货明细表关联任务id"
+        },
+        "prdRetDetReturnedPartsQuantity": {
+            "meaning": "成品退货明细表退料备品",
+            "reachable": true,
+            "name": "成品退货明细表退料备品"
+        },
+        "prdRetDetSerialNumber": {
+            "meaning": "成品退货明细表顺序号",
+            "reachable": true,
+            "name": "成品退货明细表顺序号"
+        },
+        "prdRetDetSettlementTotalAmount": {
+            "meaning": "成品退货明细表结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "成品退货明细表结算金额"
+        },
+        "prdRetDetSettlementUnitPrice": {
+            "meaning": "成品退货明细表结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "成品退货明细表结算单价"
+        },
+        "prdRetDetSource": {
+            "meaning": "成品退货明细表源",
+            "reachable": true,
+            "name": "成品退货明细表源"
+        },
+        "prdRetDetSourceType": {
+            "meaning": "成品退货明细表来源类型",
+            "reachable": true,
+            "name": "成品退货明细表来源类型"
+        },
+        "prdRetDetState": {
+            "meaning": "成品退货明细表通用状态",
+            "reachable": true,
+            "name": "成品退货明细表通用状态"
+        },
+        "prdRetDetStatedQuantity": {
+            "meaning": "成品退货明细表已对账数量",
+            "reachable": true,
+            "name": "成品退货明细表已对账数量"
+        },
+        "prdRetDetStatedStatus": {
+            "meaning": "成品退货明细表已对账状态",
+            "reachable": true,
+            "name": "成品退货明细表已对账状态"
+        },
+        "prdRetDetSystemCode": {
+            "meaning": "成品退货明细表系统编码",
+            "reachable": true,
+            "name": "成品退货明细表系统编码"
+        },
+        "prdRetDetTarget": {
+            "meaning": "成品退货明细表目标",
+            "reachable": true,
+            "name": "成品退货明细表目标"
+        },
+        "prdRetDetTaskNodeName": {
+            "meaning": "成品退货明细表任务节点名称",
+            "reachable": true,
+            "name": "成品退货明细表任务节点名称"
+        },
+        "prdRetDetTenantId": {
+            "meaning": "成品退货明细表租户_id",
+            "reachable": true,
+            "name": "成品退货明细表租户_id"
+        },
+        "prdRetDetThirdPartyClass": {
+            "meaning": "成品退货明细表第三方分类",
+            "reachable": true,
+            "name": "成品退货明细表第三方分类"
+        },
+        "prdRetDetThirdPartyId": {
+            "meaning": "成品退货明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品退货明细表第三方系统中的唯一ID"
+        },
+        "prdRetDetThirdPartyName": {
+            "meaning": "成品退货明细表第三方名称",
+            "reachable": true,
+            "name": "成品退货明细表第三方名称"
+        },
+        "prdRetDetToAuditDate": {
+            "meaning": "prdRetDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToBeginTime": {
+            "meaning": "prdRetDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToCreateTime": {
+            "meaning": "prdRetDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDateExtra1": {
+            "meaning": "prdRetDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDateExtra2": {
+            "meaning": "prdRetDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDateExtra3": {
+            "meaning": "prdRetDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDateExtra4": {
+            "meaning": "prdRetDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDateExtra5": {
+            "meaning": "prdRetDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToDeliveryDate": {
+            "meaning": "prdRetDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToEndTime": {
+            "meaning": "prdRetDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToReceiptDate": {
+            "meaning": "prdRetDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetToUpdateTime": {
+            "meaning": "prdRetDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdRetDetTotalAmountIncludingTax": {
+            "meaning": "成品退货明细表含税总金额",
+            "reachable": true,
+            "name": "成品退货明细表含税总金额"
+        },
+        "prdRetDetTotalAmountWithoutTax": {
+            "meaning": "成品退货明细表不含税总金额",
+            "reachable": true,
+            "name": "成品退货明细表不含税总金额"
+        },
+        "prdRetDetTotalQuantity": {
+            "meaning": "成品退货明细表退货总数",
+            "reachable": true,
+            "name": "成品退货明细表退货总数"
+        },
+        "prdRetDetUnitCode": {
+            "meaning": "成品退货明细表单位id",
+            "reachable": true,
+            "name": "成品退货明细表单位id"
+        },
+        "prdRetDetUnitPriceIncludingTax": {
+            "meaning": "成品退货明细表含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品退货明细表含税单价"
+        },
+        "prdRetDetUnitPriceWithoutTax": {
+            "meaning": "成品退货明细表不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品退货明细表不含税单价"
+        },
+        "prdRetDetUpdateTime": {
+            "meaning": "成品退货明细表更新时间",
+            "reachable": true,
+            "name": "成品退货明细表更新时间"
+        },
+        "prdRetDetUpdater": {
+            "meaning": "成品退货明细表更新人",
+            "reachable": true,
+            "name": "成品退货明细表更新人"
+        },
+        "prdRetDetUpdaterId": {
+            "meaning": "成品退货明细表更新人ID",
+            "reachable": true,
+            "name": "成品退货明细表更新人ID"
+        },
+        "prdRetDetUserCode": {
+            "meaning": "成品退货明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品退货明细表智能节点的唯一编码"
+        },
+        "prdRetDetVarExtra1": {
+            "meaning": "成品退货明细表扩展1",
+            "reachable": true,
+            "name": "成品退货明细表扩展1"
+        },
+        "prdRetDetVarExtra2": {
+            "meaning": "成品退货明细表扩展2",
+            "reachable": true,
+            "name": "成品退货明细表扩展2"
+        },
+        "prdRetDetVarExtra3": {
+            "meaning": "成品退货明细表扩展3",
+            "reachable": true,
+            "name": "成品退货明细表扩展3"
+        },
+        "prdRetDetVarExtra4": {
+            "meaning": "成品退货明细表扩展4",
+            "reachable": true,
+            "name": "成品退货明细表扩展4"
+        },
+        "prdRetDetVarExtra5": {
+            "meaning": "成品退货明细表扩展5",
+            "reachable": true,
+            "name": "成品退货明细表扩展5"
+        },
+        "prdRetDetVersion": {
+            "meaning": "成品退货明细表版本号",
+            "reachable": true,
+            "name": "成品退货明细表版本号"
+        }
+    }
+}

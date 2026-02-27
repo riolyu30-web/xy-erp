@@ -1,0 +1,376 @@
+{
+    "api_name": "/settlement-type/findList",
+    "table_name": "结算类型",
+    "request": {
+        "settlementTypeClazz": "SETTLEMENT_TYPE"
+    },
+    "mainTabClazz": "SETTLEMENT_TYPE",
+    "response": {
+        "settlementTypeApplicationId": {
+            "meaning": "结算类型应用ID",
+            "reachable": true,
+            "name": "结算类型应用ID"
+        },
+        "settlementTypeAuditDate": {
+            "meaning": "结算类型审核时间",
+            "reachable": true,
+            "name": "结算类型审核时间"
+        },
+        "settlementTypeAuditStatus": {
+            "meaning": "结算类型审核状态",
+            "reachable": true,
+            "name": "结算类型审核状态"
+        },
+        "settlementTypeBizVersion": {
+            "meaning": "结算类型业务自定义版本号",
+            "reachable": true,
+            "name": "结算类型业务自定义版本号"
+        },
+        "settlementTypeBriefName": {
+            "meaning": "结算类型简称",
+            "reachable": true,
+            "name": "结算类型简称"
+        },
+        "settlementTypeBusDivisId": {
+            "meaning": "结算类型事业部id",
+            "reachable": true,
+            "name": "结算类型事业部id"
+        },
+        "settlementTypeClazz": {
+            "meaning": "结算类型子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "结算类型子类"
+        },
+        "settlementTypeComment": {
+            "meaning": "结算类型评论",
+            "reachable": true,
+            "name": "结算类型评论"
+        },
+        "settlementTypeCreateTime": {
+            "meaning": "结算类型创建时间",
+            "reachable": true,
+            "name": "结算类型创建时间"
+        },
+        "settlementTypeCreator": {
+            "meaning": "结算类型创建人",
+            "reachable": true,
+            "name": "结算类型创建人"
+        },
+        "settlementTypeCreatorId": {
+            "meaning": "结算类型创建人ID",
+            "reachable": true,
+            "name": "结算类型创建人ID"
+        },
+        "settlementTypeDateExtra1": {
+            "meaning": "结算类型扩展时间1",
+            "reachable": true,
+            "name": "结算类型扩展时间1"
+        },
+        "settlementTypeDateExtra2": {
+            "meaning": "结算类型扩展时间2",
+            "reachable": true,
+            "name": "结算类型扩展时间2"
+        },
+        "settlementTypeDateExtra3": {
+            "meaning": "结算类型扩展时间3",
+            "reachable": true,
+            "name": "结算类型扩展时间3"
+        },
+        "settlementTypeDateExtra4": {
+            "meaning": "结算类型扩展时间4",
+            "reachable": true,
+            "name": "结算类型扩展时间4"
+        },
+        "settlementTypeDateExtra5": {
+            "meaning": "结算类型扩展时间5",
+            "reachable": true,
+            "name": "结算类型扩展时间5"
+        },
+        "settlementTypeDefaultType": {
+            "meaning": "结算类型智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "结算类型智能节点主类型"
+        },
+        "settlementTypeDescription": {
+            "meaning": "结算类型描述",
+            "reachable": true,
+            "name": "结算类型描述"
+        },
+        "settlementTypeEngName": {
+            "meaning": "结算类型英文名称",
+            "reachable": true,
+            "name": "结算类型英文名称"
+        },
+        "settlementTypeExtension": {
+            "meaning": "结算类型扩展数据",
+            "reachable": true,
+            "name": "结算类型扩展数据"
+        },
+        "settlementTypeExternalState": {
+            "meaning": "结算类型上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "结算类型上流程状态位"
+        },
+        "settlementTypeFlags": {
+            "meaning": "结算类型63位标志位",
+            "reachable": true,
+            "name": "结算类型63位标志位"
+        },
+        "settlementTypeFromAuditDate": {
+            "meaning": "settlementTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromCreateTime": {
+            "meaning": "settlementTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromDateExtra1": {
+            "meaning": "settlementTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromDateExtra2": {
+            "meaning": "settlementTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromDateExtra3": {
+            "meaning": "settlementTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromDateExtra4": {
+            "meaning": "settlementTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromDateExtra5": {
+            "meaning": "settlementTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeFromUpdateTime": {
+            "meaning": "settlementTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeGroovyScript": {
+            "meaning": "结算类型groovy脚本",
+            "reachable": true,
+            "name": "结算类型groovy脚本"
+        },
+        "settlementTypeGropeCode": {
+            "meaning": "结算类型搜索码",
+            "reachable": true,
+            "name": "结算类型搜索码"
+        },
+        "settlementTypeId": {
+            "meaning": "结算类型主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "结算类型主键ID"
+        },
+        "settlementTypeInUsed": {
+            "meaning": "结算类型是否被使用",
+            "reachable": true,
+            "name": "结算类型是否被使用"
+        },
+        "settlementTypeIsBanned": {
+            "meaning": "结算类型是否被禁用",
+            "reachable": true,
+            "name": "结算类型是否被禁用"
+        },
+        "settlementTypeIsDeleted": {
+            "meaning": "结算类型是否被删除",
+            "reachable": true,
+            "name": "结算类型是否被删除"
+        },
+        "settlementTypeIsMainFlow": {
+            "meaning": "结算类型是否是主流程",
+            "reachable": true,
+            "name": "结算类型是否是主流程"
+        },
+        "settlementTypeIsolation": {
+            "meaning": "结算类型智能节点数据隔离标识",
+            "reachable": true,
+            "name": "结算类型智能节点数据隔离标识"
+        },
+        "settlementTypeJsScript": {
+            "meaning": "结算类型js脚本",
+            "reachable": true,
+            "name": "结算类型js脚本"
+        },
+        "settlementTypeName": {
+            "meaning": "结算类型智能节点名",
+            "reachable": true,
+            "name": "结算类型智能节点名"
+        },
+        "settlementTypeNameCodeSearch": {
+            "meaning": "结算类型name、user_code模糊搜索",
+            "reachable": true,
+            "name": "结算类型name、user_code模糊搜索"
+        },
+        "settlementTypeNumberExtra1": {
+            "meaning": "结算类型扩展数量1",
+            "reachable": true,
+            "name": "结算类型扩展数量1"
+        },
+        "settlementTypeNumberExtra2": {
+            "meaning": "结算类型扩展数量2",
+            "reachable": true,
+            "name": "结算类型扩展数量2"
+        },
+        "settlementTypeNumberExtra3": {
+            "meaning": "结算类型扩展数量3",
+            "reachable": true,
+            "name": "结算类型扩展数量3"
+        },
+        "settlementTypeNumberExtra4": {
+            "meaning": "结算类型扩展数量4",
+            "reachable": true,
+            "name": "结算类型扩展数量4"
+        },
+        "settlementTypeNumberExtra5": {
+            "meaning": "结算类型扩展数量5",
+            "reachable": true,
+            "name": "结算类型扩展数量5"
+        },
+        "settlementTypeParentId": {
+            "meaning": "结算类型父节点ID",
+            "reachable": true,
+            "name": "结算类型父节点ID"
+        },
+        "settlementTypeProcessInstanceId": {
+            "meaning": "结算类型流程实例ID",
+            "reachable": true,
+            "name": "结算类型流程实例ID"
+        },
+        "settlementTypeSerialNumber": {
+            "meaning": "结算类型顺序号",
+            "reachable": true,
+            "name": "结算类型顺序号"
+        },
+        "settlementTypeState": {
+            "meaning": "结算类型通用状态",
+            "reachable": true,
+            "name": "结算类型通用状态"
+        },
+        "settlementTypeSystemCode": {
+            "meaning": "结算类型系统编码",
+            "reachable": true,
+            "name": "结算类型系统编码"
+        },
+        "settlementTypeTaskNodeName": {
+            "meaning": "结算类型任务节点名称",
+            "reachable": true,
+            "name": "结算类型任务节点名称"
+        },
+        "settlementTypeThirdPartyClass": {
+            "meaning": "结算类型第三方分类",
+            "reachable": true,
+            "name": "结算类型第三方分类"
+        },
+        "settlementTypeThirdPartyId": {
+            "meaning": "结算类型第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "结算类型第三方系统中的唯一ID"
+        },
+        "settlementTypeThirdPartyName": {
+            "meaning": "结算类型第三方名称",
+            "reachable": true,
+            "name": "结算类型第三方名称"
+        },
+        "settlementTypeToAuditDate": {
+            "meaning": "settlementTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToCreateTime": {
+            "meaning": "settlementTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToDateExtra1": {
+            "meaning": "settlementTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToDateExtra2": {
+            "meaning": "settlementTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToDateExtra3": {
+            "meaning": "settlementTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToDateExtra4": {
+            "meaning": "settlementTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToDateExtra5": {
+            "meaning": "settlementTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeToUpdateTime": {
+            "meaning": "settlementTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "settlementTypeUpdateTime": {
+            "meaning": "结算类型更新时间",
+            "reachable": true,
+            "name": "结算类型更新时间"
+        },
+        "settlementTypeUpdater": {
+            "meaning": "结算类型更新人",
+            "reachable": true,
+            "name": "结算类型更新人"
+        },
+        "settlementTypeUpdaterId": {
+            "meaning": "结算类型更新人ID",
+            "reachable": true,
+            "name": "结算类型更新人ID"
+        },
+        "settlementTypeUserCode": {
+            "meaning": "结算类型智能节点的唯一编码",
+            "reachable": true,
+            "name": "结算类型智能节点的唯一编码"
+        },
+        "settlementTypeVarExtra1": {
+            "meaning": "结算类型扩展1",
+            "reachable": true,
+            "name": "结算类型扩展1"
+        },
+        "settlementTypeVarExtra2": {
+            "meaning": "结算类型扩展2",
+            "reachable": true,
+            "name": "结算类型扩展2"
+        },
+        "settlementTypeVarExtra3": {
+            "meaning": "结算类型扩展3",
+            "reachable": true,
+            "name": "结算类型扩展3"
+        },
+        "settlementTypeVarExtra4": {
+            "meaning": "结算类型扩展4",
+            "reachable": true,
+            "name": "结算类型扩展4"
+        },
+        "settlementTypeVarExtra5": {
+            "meaning": "结算类型扩展5",
+            "reachable": true,
+            "name": "结算类型扩展5"
+        },
+        "settlementTypeVersion": {
+            "meaning": "结算类型版本号",
+            "reachable": true,
+            "name": "结算类型版本号"
+        }
+    }
+}

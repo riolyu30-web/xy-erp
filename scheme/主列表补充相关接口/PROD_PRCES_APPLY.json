@@ -1,0 +1,601 @@
+{
+    "api_name": "/prod-prces-apply/findList",
+    "table_name": "生产加工申请",
+    "request": {
+        "prodPrcesApplyClazz": "PROD_PRCES_APPLY"
+    },
+    "mainTabClazz": "PROD_PRCES_APPLY",
+    "response": {
+        "prodPrcesApplyActualTimeRequired": {
+            "meaning": "生产加工申请实际需时(小时)",
+            "reachable": true,
+            "name": "生产加工申请实际需时"
+        },
+        "prodPrcesApplyAdjustmentTimeRequired": {
+            "meaning": "生产加工申请调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "生产加工申请调整需时"
+        },
+        "prodPrcesApplyApplicationId": {
+            "meaning": "生产加工申请应用ID",
+            "reachable": true,
+            "name": "生产加工申请应用ID"
+        },
+        "prodPrcesApplyAuditDate": {
+            "meaning": "生产加工申请审核时间",
+            "reachable": true,
+            "name": "生产加工申请审核时间"
+        },
+        "prodPrcesApplyAuditStatus": {
+            "meaning": "生产加工申请审核状态",
+            "reachable": true,
+            "name": "生产加工申请审核状态"
+        },
+        "prodPrcesApplyAvailableScheduleId": {
+            "meaning": "生产加工申请可用日程id",
+            "reachable": true,
+            "name": "生产加工申请可用日程id"
+        },
+        "prodPrcesApplyBeginTime": {
+            "meaning": "生产加工申请开始时间",
+            "reachable": true,
+            "name": "生产加工申请开始时间"
+        },
+        "prodPrcesApplyBizVersion": {
+            "meaning": "生产加工申请业务自定义版本号",
+            "reachable": true,
+            "name": "生产加工申请业务自定义版本号"
+        },
+        "prodPrcesApplyBriefName": {
+            "meaning": "生产加工申请简称",
+            "reachable": true,
+            "name": "生产加工申请简称"
+        },
+        "prodPrcesApplyBusDivisId": {
+            "meaning": "生产加工申请事业部id",
+            "reachable": true,
+            "name": "生产加工申请事业部id"
+        },
+        "prodPrcesApplyClazz": {
+            "meaning": "生产加工申请子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "生产加工申请子类"
+        },
+        "prodPrcesApplyClosedReason": {
+            "meaning": "生产加工申请结案原因",
+            "reachable": true,
+            "name": "生产加工申请结案原因"
+        },
+        "prodPrcesApplyClosedStatus": {
+            "meaning": "生产加工申请结案状态",
+            "reachable": true,
+            "name": "生产加工申请结案状态"
+        },
+        "prodPrcesApplyComment": {
+            "meaning": "生产加工申请评论",
+            "reachable": true,
+            "name": "生产加工申请评论"
+        },
+        "prodPrcesApplyCompleteQuantity": {
+            "meaning": "生产加工申请完成数量",
+            "reachable": true,
+            "name": "生产加工申请完成数量"
+        },
+        "prodPrcesApplyCompleteStatus": {
+            "meaning": "生产加工申请完成状态",
+            "reachable": true,
+            "name": "生产加工申请完成状态"
+        },
+        "prodPrcesApplyCreateTime": {
+            "meaning": "生产加工申请创建时间",
+            "reachable": true,
+            "name": "生产加工申请创建时间"
+        },
+        "prodPrcesApplyCreator": {
+            "meaning": "生产加工申请创建人",
+            "reachable": true,
+            "name": "生产加工申请创建人"
+        },
+        "prodPrcesApplyCreatorId": {
+            "meaning": "生产加工申请创建人ID",
+            "reachable": true,
+            "name": "生产加工申请创建人ID"
+        },
+        "prodPrcesApplyDateExtra1": {
+            "meaning": "生产加工申请扩展时间1",
+            "reachable": true,
+            "name": "生产加工申请扩展时间1"
+        },
+        "prodPrcesApplyDateExtra2": {
+            "meaning": "生产加工申请扩展时间2",
+            "reachable": true,
+            "name": "生产加工申请扩展时间2"
+        },
+        "prodPrcesApplyDateExtra3": {
+            "meaning": "生产加工申请扩展时间3",
+            "reachable": true,
+            "name": "生产加工申请扩展时间3"
+        },
+        "prodPrcesApplyDateExtra4": {
+            "meaning": "生产加工申请扩展时间4",
+            "reachable": true,
+            "name": "生产加工申请扩展时间4"
+        },
+        "prodPrcesApplyDateExtra5": {
+            "meaning": "生产加工申请扩展时间5",
+            "reachable": true,
+            "name": "生产加工申请扩展时间5"
+        },
+        "prodPrcesApplyDefaultType": {
+            "meaning": "生产加工申请智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "生产加工申请智能节点主类型"
+        },
+        "prodPrcesApplyDeliveryDate": {
+            "meaning": "生产加工申请交货日期",
+            "reachable": true,
+            "name": "生产加工申请交货日期"
+        },
+        "prodPrcesApplyDescription": {
+            "meaning": "生产加工申请描述",
+            "reachable": true,
+            "name": "生产加工申请描述"
+        },
+        "prodPrcesApplyEndTime": {
+            "meaning": "生产加工申请结束时间",
+            "reachable": true,
+            "name": "生产加工申请结束时间"
+        },
+        "prodPrcesApplyEndTimeRequired": {
+            "meaning": "生产加工申请最后需时(小时)",
+            "reachable": true,
+            "name": "生产加工申请最后需时"
+        },
+        "prodPrcesApplyEngName": {
+            "meaning": "生产加工申请英文名称",
+            "reachable": true,
+            "name": "生产加工申请英文名称"
+        },
+        "prodPrcesApplyEquipmentId": {
+            "meaning": "生产加工申请设备id",
+            "reachable": true,
+            "name": "生产加工申请设备id"
+        },
+        "prodPrcesApplyExchangeRateId": {
+            "meaning": "生产加工申请币种汇率id",
+            "reachable": true,
+            "name": "生产加工申请币种汇率id"
+        },
+        "prodPrcesApplyExtension": {
+            "meaning": "生产加工申请扩展数据",
+            "reachable": true,
+            "name": "生产加工申请扩展数据"
+        },
+        "prodPrcesApplyExternalState": {
+            "meaning": "生产加工申请上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "生产加工申请上流程状态位"
+        },
+        "prodPrcesApplyFilterClazz": {
+            "meaning": "生产加工申请冗余字段用于筛选",
+            "reachable": false,
+            "name": "生产加工申请冗余字段用于筛选"
+        },
+        "prodPrcesApplyFlags": {
+            "meaning": "生产加工申请63位标志位",
+            "reachable": true,
+            "name": "生产加工申请63位标志位"
+        },
+        "prodPrcesApplyFromAuditDate": {
+            "meaning": "prodPrcesApplyFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromBeginTime": {
+            "meaning": "prodPrcesApplyFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromCreateTime": {
+            "meaning": "prodPrcesApplyFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDateExtra1": {
+            "meaning": "prodPrcesApplyFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDateExtra2": {
+            "meaning": "prodPrcesApplyFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDateExtra3": {
+            "meaning": "prodPrcesApplyFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDateExtra4": {
+            "meaning": "prodPrcesApplyFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDateExtra5": {
+            "meaning": "prodPrcesApplyFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromDeliveryDate": {
+            "meaning": "prodPrcesApplyFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromEndTime": {
+            "meaning": "prodPrcesApplyFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromReceiptDate": {
+            "meaning": "prodPrcesApplyFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFromUpdateTime": {
+            "meaning": "prodPrcesApplyFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyFscType": {
+            "meaning": "生产加工申请FSC声明",
+            "reachable": true,
+            "name": "生产加工申请FSC声明"
+        },
+        "prodPrcesApplyGenerativePeople": {
+            "meaning": "生产加工申请下发人",
+            "reachable": true,
+            "name": "生产加工申请下发人"
+        },
+        "prodPrcesApplyGenerativeState": {
+            "meaning": "生产加工申请下发状态",
+            "reachable": true,
+            "name": "生产加工申请下发状态"
+        },
+        "prodPrcesApplyGroovyScript": {
+            "meaning": "生产加工申请groovy脚本",
+            "reachable": true,
+            "name": "生产加工申请groovy脚本"
+        },
+        "prodPrcesApplyGropeCode": {
+            "meaning": "生产加工申请搜索码",
+            "reachable": true,
+            "name": "生产加工申请搜索码"
+        },
+        "prodPrcesApplyId": {
+            "meaning": "生产加工申请PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "生产加工申请PK"
+        },
+        "prodPrcesApplyInUsed": {
+            "meaning": "生产加工申请是否被使用",
+            "reachable": true,
+            "name": "生产加工申请是否被使用"
+        },
+        "prodPrcesApplyInvTypeTaxRateId": {
+            "meaning": "生产加工申请发票税率id",
+            "reachable": true,
+            "name": "生产加工申请发票税率id"
+        },
+        "prodPrcesApplyIsBanned": {
+            "meaning": "生产加工申请是否被禁用",
+            "reachable": true,
+            "name": "生产加工申请是否被禁用"
+        },
+        "prodPrcesApplyIsDeleted": {
+            "meaning": "生产加工申请是否被删除",
+            "reachable": true,
+            "name": "生产加工申请是否被删除"
+        },
+        "prodPrcesApplyIsLeaf": {
+            "meaning": "生产加工申请是否叶子节点",
+            "reachable": true,
+            "name": "生产加工申请是否叶子节点"
+        },
+        "prodPrcesApplyIsMainFlow": {
+            "meaning": "生产加工申请是否是主流程",
+            "reachable": true,
+            "name": "生产加工申请是否是主流程"
+        },
+        "prodPrcesApplyIsManualModificationDate": {
+            "meaning": "生产加工申请是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "生产加工申请是否手动修改计划生产时间"
+        },
+        "prodPrcesApplyIsolation": {
+            "meaning": "生产加工申请智能节点数据隔离标识",
+            "reachable": true,
+            "name": "生产加工申请智能节点数据隔离标识"
+        },
+        "prodPrcesApplyJsScript": {
+            "meaning": "生产加工申请js脚本",
+            "reachable": true,
+            "name": "生产加工申请js脚本"
+        },
+        "prodPrcesApplyMaterialId": {
+            "meaning": "生产加工申请物料id",
+            "reachable": true,
+            "name": "生产加工申请物料id"
+        },
+        "prodPrcesApplyName": {
+            "meaning": "生产加工申请智能节点名",
+            "reachable": true,
+            "name": "生产加工申请智能节点名"
+        },
+        "prodPrcesApplyNameCodeSearch": {
+            "meaning": "生产加工申请name、user_code模糊搜索",
+            "reachable": true,
+            "name": "生产加工申请name、user_code模糊搜索"
+        },
+        "prodPrcesApplyNumberExtra1": {
+            "meaning": "生产加工申请扩展数量1",
+            "reachable": true,
+            "name": "生产加工申请扩展数量1"
+        },
+        "prodPrcesApplyNumberExtra2": {
+            "meaning": "生产加工申请扩展数量2",
+            "reachable": true,
+            "name": "生产加工申请扩展数量2"
+        },
+        "prodPrcesApplyNumberExtra3": {
+            "meaning": "生产加工申请扩展数量3",
+            "reachable": true,
+            "name": "生产加工申请扩展数量3"
+        },
+        "prodPrcesApplyNumberExtra4": {
+            "meaning": "生产加工申请扩展数量4",
+            "reachable": true,
+            "name": "生产加工申请扩展数量4"
+        },
+        "prodPrcesApplyNumberExtra5": {
+            "meaning": "生产加工申请扩展数量5",
+            "reachable": true,
+            "name": "生产加工申请扩展数量5"
+        },
+        "prodPrcesApplyParentId": {
+            "meaning": "生产加工申请父节点ID",
+            "reachable": true,
+            "name": "生产加工申请父节点ID"
+        },
+        "prodPrcesApplyPlannedOutputQuantity": {
+            "meaning": "生产加工申请计划产出数量",
+            "reachable": true,
+            "name": "生产加工申请计划产出数量"
+        },
+        "prodPrcesApplyPlannedTimeRequired": {
+            "meaning": "生产加工申请计划需时(小时)",
+            "reachable": true,
+            "name": "生产加工申请计划需时"
+        },
+        "prodPrcesApplyPrintTimes": {
+            "meaning": "生产加工申请打印次数",
+            "reachable": true,
+            "name": "生产加工申请打印次数"
+        },
+        "prodPrcesApplyPriority": {
+            "meaning": "生产加工申请优先级",
+            "reachable": true,
+            "name": "生产加工申请优先级"
+        },
+        "prodPrcesApplyProcessInstanceId": {
+            "meaning": "生产加工申请流程实例ID",
+            "reachable": true,
+            "name": "生产加工申请流程实例ID"
+        },
+        "prodPrcesApplyProductionProcessesTypeId": {
+            "meaning": "生产加工申请工序类型ID",
+            "reachable": true,
+            "name": "生产加工申请工序类型ID"
+        },
+        "prodPrcesApplyProductionShiftId": {
+            "meaning": "生产加工申请生产班次ID",
+            "reachable": true,
+            "name": "生产加工申请生产班次ID"
+        },
+        "prodPrcesApplyQuantity": {
+            "meaning": "生产加工申请任务数量",
+            "reachable": true,
+            "name": "生产加工申请任务数量"
+        },
+        "prodPrcesApplyReason": {
+            "meaning": "生产加工申请申请原因",
+            "reachable": true,
+            "name": "生产加工申请申请原因"
+        },
+        "prodPrcesApplyReceiptDate": {
+            "meaning": "生产加工申请单据日期",
+            "reachable": true,
+            "name": "生产加工申请单据日期"
+        },
+        "prodPrcesApplyReceiptType": {
+            "meaning": "生产加工申请单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "生产加工申请单据类型"
+        },
+        "prodPrcesApplyRelatedTasksId": {
+            "meaning": "生产加工申请关联任务id",
+            "reachable": true,
+            "name": "生产加工申请关联任务id"
+        },
+        "prodPrcesApplySerialNumber": {
+            "meaning": "生产加工申请顺序号",
+            "reachable": true,
+            "name": "生产加工申请顺序号"
+        },
+        "prodPrcesApplySource": {
+            "meaning": "生产加工申请源",
+            "reachable": true,
+            "name": "生产加工申请源"
+        },
+        "prodPrcesApplySourceType": {
+            "meaning": "生产加工申请来源类型",
+            "reachable": true,
+            "name": "生产加工申请来源类型"
+        },
+        "prodPrcesApplyState": {
+            "meaning": "生产加工申请通用状态",
+            "reachable": true,
+            "name": "生产加工申请通用状态"
+        },
+        "prodPrcesApplySystemCode": {
+            "meaning": "生产加工申请系统编码",
+            "reachable": true,
+            "name": "生产加工申请系统编码"
+        },
+        "prodPrcesApplyTarget": {
+            "meaning": "生产加工申请目标",
+            "reachable": true,
+            "name": "生产加工申请目标"
+        },
+        "prodPrcesApplyTaskNodeName": {
+            "meaning": "生产加工申请任务节点名称",
+            "reachable": true,
+            "name": "生产加工申请任务节点名称"
+        },
+        "prodPrcesApplyTenantId": {
+            "meaning": "生产加工申请租户_id",
+            "reachable": true,
+            "name": "生产加工申请租户_id"
+        },
+        "prodPrcesApplyThirdPartyClass": {
+            "meaning": "生产加工申请第三方分类",
+            "reachable": true,
+            "name": "生产加工申请第三方分类"
+        },
+        "prodPrcesApplyThirdPartyId": {
+            "meaning": "生产加工申请第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "生产加工申请第三方系统中的唯一ID"
+        },
+        "prodPrcesApplyThirdPartyName": {
+            "meaning": "生产加工申请第三方名称",
+            "reachable": true,
+            "name": "生产加工申请第三方名称"
+        },
+        "prodPrcesApplyToAuditDate": {
+            "meaning": "prodPrcesApplyToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToBeginTime": {
+            "meaning": "prodPrcesApplyToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToCreateTime": {
+            "meaning": "prodPrcesApplyToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDateExtra1": {
+            "meaning": "prodPrcesApplyToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDateExtra2": {
+            "meaning": "prodPrcesApplyToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDateExtra3": {
+            "meaning": "prodPrcesApplyToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDateExtra4": {
+            "meaning": "prodPrcesApplyToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDateExtra5": {
+            "meaning": "prodPrcesApplyToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToDeliveryDate": {
+            "meaning": "prodPrcesApplyToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToEndTime": {
+            "meaning": "prodPrcesApplyToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToReceiptDate": {
+            "meaning": "prodPrcesApplyToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyToUpdateTime": {
+            "meaning": "prodPrcesApplyToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodPrcesApplyUnitCode": {
+            "meaning": "生产加工申请单位id",
+            "reachable": true,
+            "name": "生产加工申请单位id"
+        },
+        "prodPrcesApplyUpdateTime": {
+            "meaning": "生产加工申请更新时间",
+            "reachable": true,
+            "name": "生产加工申请更新时间"
+        },
+        "prodPrcesApplyUpdater": {
+            "meaning": "生产加工申请更新人",
+            "reachable": true,
+            "name": "生产加工申请更新人"
+        },
+        "prodPrcesApplyUpdaterId": {
+            "meaning": "生产加工申请更新人ID",
+            "reachable": true,
+            "name": "生产加工申请更新人ID"
+        },
+        "prodPrcesApplyUserCode": {
+            "meaning": "生产加工申请智能节点的唯一编码",
+            "reachable": true,
+            "name": "生产加工申请智能节点的唯一编码"
+        },
+        "prodPrcesApplyVarExtra1": {
+            "meaning": "生产加工申请扩展1",
+            "reachable": true,
+            "name": "生产加工申请扩展1"
+        },
+        "prodPrcesApplyVarExtra2": {
+            "meaning": "生产加工申请扩展2",
+            "reachable": true,
+            "name": "生产加工申请扩展2"
+        },
+        "prodPrcesApplyVarExtra3": {
+            "meaning": "生产加工申请扩展3",
+            "reachable": true,
+            "name": "生产加工申请扩展3"
+        },
+        "prodPrcesApplyVarExtra4": {
+            "meaning": "生产加工申请扩展4",
+            "reachable": true,
+            "name": "生产加工申请扩展4"
+        },
+        "prodPrcesApplyVarExtra5": {
+            "meaning": "生产加工申请扩展5",
+            "reachable": true,
+            "name": "生产加工申请扩展5"
+        },
+        "prodPrcesApplyVersion": {
+            "meaning": "生产加工申请版本号",
+            "reachable": true,
+            "name": "生产加工申请版本号"
+        }
+    }
+}

@@ -1,0 +1,1212 @@
+{
+    "api_name": "/mat-out-apy-det/findList",
+    "table_name": "物料出库申请明细",
+    "request": {
+        "matOutApyDetMatOutApyClazz": "MAT_OUT_APY",
+        "matOutApyDetClazz": "MAT_OUT_APY_DET"
+    },
+    "mainTabClazz": "MAT_OUT_APY_DET",
+    "response": {
+        "matOutApyDetActualTimeRequired": {
+            "meaning": "物料出库申请明细实际需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细实际需时"
+        },
+        "matOutApyDetAdjustmentTimeRequired": {
+            "meaning": "物料出库申请明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细调整需时"
+        },
+        "matOutApyDetApplicationId": {
+            "meaning": "物料出库申请明细应用ID",
+            "reachable": true,
+            "name": "物料出库申请明细应用ID"
+        },
+        "matOutApyDetAuditDate": {
+            "meaning": "物料出库申请明细审核时间",
+            "reachable": true,
+            "name": "物料出库申请明细审核时间"
+        },
+        "matOutApyDetAuditStatus": {
+            "meaning": "物料出库申请明细审核状态",
+            "reachable": true,
+            "name": "物料出库申请明细审核状态"
+        },
+        "matOutApyDetAvailableScheduleId": {
+            "meaning": "物料出库申请明细可用日程id",
+            "reachable": true,
+            "name": "物料出库申请明细可用日程id"
+        },
+        "matOutApyDetBeginTime": {
+            "meaning": "物料出库申请明细开始时间",
+            "reachable": true,
+            "name": "物料出库申请明细开始时间"
+        },
+        "matOutApyDetBizVersion": {
+            "meaning": "物料出库申请明细业务自定义版本号",
+            "reachable": true,
+            "name": "物料出库申请明细业务自定义版本号"
+        },
+        "matOutApyDetBriefName": {
+            "meaning": "物料出库申请明细简称",
+            "reachable": true,
+            "name": "物料出库申请明细简称"
+        },
+        "matOutApyDetBusDivisId": {
+            "meaning": "物料出库申请明细事业部id",
+            "reachable": true,
+            "name": "物料出库申请明细事业部id"
+        },
+        "matOutApyDetClazz": {
+            "meaning": "物料出库申请明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料出库申请明细子类"
+        },
+        "matOutApyDetClosedReason": {
+            "meaning": "物料出库申请明细结案原因",
+            "reachable": true,
+            "name": "物料出库申请明细结案原因"
+        },
+        "matOutApyDetClosedStatus": {
+            "meaning": "物料出库申请明细结案状态",
+            "reachable": true,
+            "name": "物料出库申请明细结案状态"
+        },
+        "matOutApyDetComment": {
+            "meaning": "物料出库申请明细评论",
+            "reachable": true,
+            "name": "物料出库申请明细评论"
+        },
+        "matOutApyDetCompleteQuantity": {
+            "meaning": "物料出库申请明细完成数量",
+            "reachable": true,
+            "name": "物料出库申请明细完成数量"
+        },
+        "matOutApyDetCompleteStatus": {
+            "meaning": "物料出库申请明细完成状态",
+            "reachable": true,
+            "name": "物料出库申请明细完成状态"
+        },
+        "matOutApyDetCreateTime": {
+            "meaning": "物料出库申请明细创建时间",
+            "reachable": true,
+            "name": "物料出库申请明细创建时间"
+        },
+        "matOutApyDetCreator": {
+            "meaning": "物料出库申请明细创建人",
+            "reachable": true,
+            "name": "物料出库申请明细创建人"
+        },
+        "matOutApyDetCreatorId": {
+            "meaning": "物料出库申请明细创建人ID",
+            "reachable": true,
+            "name": "物料出库申请明细创建人ID"
+        },
+        "matOutApyDetDateExtra1": {
+            "meaning": "物料出库申请明细扩展时间1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间1"
+        },
+        "matOutApyDetDateExtra2": {
+            "meaning": "物料出库申请明细扩展时间2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间2"
+        },
+        "matOutApyDetDateExtra3": {
+            "meaning": "物料出库申请明细扩展时间3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间3"
+        },
+        "matOutApyDetDateExtra4": {
+            "meaning": "物料出库申请明细扩展时间4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间4"
+        },
+        "matOutApyDetDateExtra5": {
+            "meaning": "物料出库申请明细扩展时间5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间5"
+        },
+        "matOutApyDetDefaultType": {
+            "meaning": "物料出库申请明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点主类型"
+        },
+        "matOutApyDetDeliveryDate": {
+            "meaning": "物料出库申请明细交货日期",
+            "reachable": true,
+            "name": "物料出库申请明细交货日期"
+        },
+        "matOutApyDetDescription": {
+            "meaning": "物料出库申请明细描述",
+            "reachable": true,
+            "name": "物料出库申请明细描述"
+        },
+        "matOutApyDetEndTime": {
+            "meaning": "物料出库申请明细结束时间",
+            "reachable": true,
+            "name": "物料出库申请明细结束时间"
+        },
+        "matOutApyDetEndTimeRequired": {
+            "meaning": "物料出库申请明细最后需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细最后需时"
+        },
+        "matOutApyDetEngName": {
+            "meaning": "物料出库申请明细英文名称",
+            "reachable": true,
+            "name": "物料出库申请明细英文名称"
+        },
+        "matOutApyDetEquipmentId": {
+            "meaning": "物料出库申请明细设备id",
+            "reachable": true,
+            "name": "物料出库申请明细设备id"
+        },
+        "matOutApyDetExchangeRateId": {
+            "meaning": "物料出库申请明细币种汇率id",
+            "reachable": true,
+            "name": "物料出库申请明细币种汇率id"
+        },
+        "matOutApyDetExtension": {
+            "meaning": "物料出库申请明细扩展数据",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数据"
+        },
+        "matOutApyDetExternalState": {
+            "meaning": "物料出库申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料出库申请明细上流程状态位"
+        },
+        "matOutApyDetFilterClazz": {
+            "meaning": "物料出库申请明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料出库申请明细冗余字段用于筛选"
+        },
+        "matOutApyDetFlags": {
+            "meaning": "物料出库申请明细63位标志位",
+            "reachable": true,
+            "name": "物料出库申请明细63位标志位"
+        },
+        "matOutApyDetFromAuditDate": {
+            "meaning": "matOutApyDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromBeginTime": {
+            "meaning": "matOutApyDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromCreateTime": {
+            "meaning": "matOutApyDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDateExtra1": {
+            "meaning": "matOutApyDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDateExtra2": {
+            "meaning": "matOutApyDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDateExtra3": {
+            "meaning": "matOutApyDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDateExtra4": {
+            "meaning": "matOutApyDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDateExtra5": {
+            "meaning": "matOutApyDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromDeliveryDate": {
+            "meaning": "matOutApyDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromEndTime": {
+            "meaning": "matOutApyDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromReceiptDate": {
+            "meaning": "matOutApyDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFromUpdateTime": {
+            "meaning": "matOutApyDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetFscType": {
+            "meaning": "物料出库申请明细FSC声明",
+            "reachable": true,
+            "name": "物料出库申请明细FSC声明"
+        },
+        "matOutApyDetGenerativePeople": {
+            "meaning": "物料出库申请明细下发人",
+            "reachable": true,
+            "name": "物料出库申请明细下发人"
+        },
+        "matOutApyDetGenerativeState": {
+            "meaning": "物料出库申请明细下发状态",
+            "reachable": true,
+            "name": "物料出库申请明细下发状态"
+        },
+        "matOutApyDetGroovyScript": {
+            "meaning": "物料出库申请明细groovy脚本",
+            "reachable": true,
+            "name": "物料出库申请明细groovy脚本"
+        },
+        "matOutApyDetGropeCode": {
+            "meaning": "物料出库申请明细搜索码",
+            "reachable": true,
+            "name": "物料出库申请明细搜索码"
+        },
+        "matOutApyDetId": {
+            "meaning": "物料出库申请明细主键id",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料出库申请明细主键id"
+        },
+        "matOutApyDetInUsed": {
+            "meaning": "物料出库申请明细是否被使用",
+            "reachable": true,
+            "name": "物料出库申请明细是否被使用"
+        },
+        "matOutApyDetInvTypeTaxRateId": {
+            "meaning": "物料出库申请明细发票税率id",
+            "reachable": true,
+            "name": "物料出库申请明细发票税率id"
+        },
+        "matOutApyDetIsBanned": {
+            "meaning": "物料出库申请明细是否被禁用",
+            "reachable": true,
+            "name": "物料出库申请明细是否被禁用"
+        },
+        "matOutApyDetIsDeleted": {
+            "meaning": "物料出库申请明细是否被删除",
+            "reachable": true,
+            "name": "物料出库申请明细是否被删除"
+        },
+        "matOutApyDetIsLeaf": {
+            "meaning": "物料出库申请明细是否叶子节点",
+            "reachable": true,
+            "name": "物料出库申请明细是否叶子节点"
+        },
+        "matOutApyDetIsMainFlow": {
+            "meaning": "物料出库申请明细是否是主流程",
+            "reachable": true,
+            "name": "物料出库申请明细是否是主流程"
+        },
+        "matOutApyDetIsManualModificationDate": {
+            "meaning": "物料出库申请明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料出库申请明细是否手动修改计划生产时间"
+        },
+        "matOutApyDetIsolation": {
+            "meaning": "物料出库申请明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点数据隔离标识"
+        },
+        "matOutApyDetJsScript": {
+            "meaning": "物料出库申请明细js脚本",
+            "reachable": true,
+            "name": "物料出库申请明细js脚本"
+        },
+        "matOutApyDetLevel": {
+            "meaning": "物料出库申请明细层级",
+            "reachable": true,
+            "name": "物料出库申请明细层级"
+        },
+        "matOutApyDetMatOutApyActualTimeRequired": {
+            "meaning": "物料出库申请明细实际需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细实际需时"
+        },
+        "matOutApyDetMatOutApyAdjustmentTimeRequired": {
+            "meaning": "物料出库申请明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细调整需时"
+        },
+        "matOutApyDetMatOutApyApplicationId": {
+            "meaning": "物料出库申请明细应用ID",
+            "reachable": true,
+            "name": "物料出库申请明细应用ID"
+        },
+        "matOutApyDetMatOutApyApplyReason": {
+            "meaning": "物料出库申请明细申请原因",
+            "reachable": true,
+            "name": "物料出库申请明细申请原因"
+        },
+        "matOutApyDetMatOutApyAuditDate": {
+            "meaning": "物料出库申请明细审核时间",
+            "reachable": true,
+            "name": "物料出库申请明细审核时间"
+        },
+        "matOutApyDetMatOutApyAuditStatus": {
+            "meaning": "物料出库申请明细审核状态",
+            "reachable": true,
+            "name": "物料出库申请明细审核状态"
+        },
+        "matOutApyDetMatOutApyAvailableScheduleId": {
+            "meaning": "物料出库申请明细可用日程id",
+            "reachable": true,
+            "name": "物料出库申请明细可用日程id"
+        },
+        "matOutApyDetMatOutApyBeginTime": {
+            "meaning": "物料出库申请明细开始时间",
+            "reachable": true,
+            "name": "物料出库申请明细开始时间"
+        },
+        "matOutApyDetMatOutApyBizVersion": {
+            "meaning": "物料出库申请明细业务自定义版本号",
+            "reachable": true,
+            "name": "物料出库申请明细业务自定义版本号"
+        },
+        "matOutApyDetMatOutApyBriefName": {
+            "meaning": "物料出库申请明细简称",
+            "reachable": true,
+            "name": "物料出库申请明细简称"
+        },
+        "matOutApyDetMatOutApyBusDivisId": {
+            "meaning": "物料出库申请明细事业部id",
+            "reachable": true,
+            "name": "物料出库申请明细事业部id"
+        },
+        "matOutApyDetMatOutApyClazz": {
+            "meaning": "物料出库申请明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料出库申请明细子类"
+        },
+        "matOutApyDetMatOutApyClosedReason": {
+            "meaning": "物料出库申请明细结案原因",
+            "reachable": true,
+            "name": "物料出库申请明细结案原因"
+        },
+        "matOutApyDetMatOutApyClosedStatus": {
+            "meaning": "物料出库申请明细结案状态",
+            "reachable": true,
+            "name": "物料出库申请明细结案状态"
+        },
+        "matOutApyDetMatOutApyComment": {
+            "meaning": "物料出库申请明细评论",
+            "reachable": true,
+            "name": "物料出库申请明细评论"
+        },
+        "matOutApyDetMatOutApyCompleteQuantity": {
+            "meaning": "物料出库申请明细完成数量",
+            "reachable": true,
+            "name": "物料出库申请明细完成数量"
+        },
+        "matOutApyDetMatOutApyCompleteStatus": {
+            "meaning": "物料出库申请明细完成状态",
+            "reachable": true,
+            "name": "物料出库申请明细完成状态"
+        },
+        "matOutApyDetMatOutApyCreateTime": {
+            "meaning": "物料出库申请明细创建时间",
+            "reachable": true,
+            "name": "物料出库申请明细创建时间"
+        },
+        "matOutApyDetMatOutApyCreator": {
+            "meaning": "物料出库申请明细创建人",
+            "reachable": true,
+            "name": "物料出库申请明细创建人"
+        },
+        "matOutApyDetMatOutApyCreatorId": {
+            "meaning": "物料出库申请明细创建人ID",
+            "reachable": true,
+            "name": "物料出库申请明细创建人ID"
+        },
+        "matOutApyDetMatOutApyDateExtra1": {
+            "meaning": "物料出库申请明细扩展时间1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间1"
+        },
+        "matOutApyDetMatOutApyDateExtra2": {
+            "meaning": "物料出库申请明细扩展时间2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间2"
+        },
+        "matOutApyDetMatOutApyDateExtra3": {
+            "meaning": "物料出库申请明细扩展时间3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间3"
+        },
+        "matOutApyDetMatOutApyDateExtra4": {
+            "meaning": "物料出库申请明细扩展时间4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间4"
+        },
+        "matOutApyDetMatOutApyDateExtra5": {
+            "meaning": "物料出库申请明细扩展时间5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展时间5"
+        },
+        "matOutApyDetMatOutApyDefaultType": {
+            "meaning": "物料出库申请明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点主类型"
+        },
+        "matOutApyDetMatOutApyDeliveryDate": {
+            "meaning": "物料出库申请明细交货日期",
+            "reachable": true,
+            "name": "物料出库申请明细交货日期"
+        },
+        "matOutApyDetMatOutApyDescription": {
+            "meaning": "物料出库申请明细描述",
+            "reachable": true,
+            "name": "物料出库申请明细描述"
+        },
+        "matOutApyDetMatOutApyEndTime": {
+            "meaning": "物料出库申请明细结束时间",
+            "reachable": true,
+            "name": "物料出库申请明细结束时间"
+        },
+        "matOutApyDetMatOutApyEndTimeRequired": {
+            "meaning": "物料出库申请明细最后需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细最后需时"
+        },
+        "matOutApyDetMatOutApyEngName": {
+            "meaning": "物料出库申请明细英文名称",
+            "reachable": true,
+            "name": "物料出库申请明细英文名称"
+        },
+        "matOutApyDetMatOutApyEquipmentId": {
+            "meaning": "物料出库申请明细设备id",
+            "reachable": true,
+            "name": "物料出库申请明细设备id"
+        },
+        "matOutApyDetMatOutApyExchangeRateId": {
+            "meaning": "物料出库申请明细币种汇率id",
+            "reachable": true,
+            "name": "物料出库申请明细币种汇率id"
+        },
+        "matOutApyDetMatOutApyExtension": {
+            "meaning": "物料出库申请明细扩展数据",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数据"
+        },
+        "matOutApyDetMatOutApyExternalState": {
+            "meaning": "物料出库申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料出库申请明细上流程状态位"
+        },
+        "matOutApyDetMatOutApyFilterClazz": {
+            "meaning": "物料出库申请明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料出库申请明细冗余字段用于筛选"
+        },
+        "matOutApyDetMatOutApyFlags": {
+            "meaning": "物料出库申请明细63位标志位",
+            "reachable": true,
+            "name": "物料出库申请明细63位标志位"
+        },
+        "matOutApyDetMatOutApyFromAuditDate": {
+            "meaning": "matOutApyDetMatOutApyFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromBeginTime": {
+            "meaning": "matOutApyDetMatOutApyFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromCreateTime": {
+            "meaning": "matOutApyDetMatOutApyFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDateExtra1": {
+            "meaning": "matOutApyDetMatOutApyFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDateExtra2": {
+            "meaning": "matOutApyDetMatOutApyFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDateExtra3": {
+            "meaning": "matOutApyDetMatOutApyFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDateExtra4": {
+            "meaning": "matOutApyDetMatOutApyFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDateExtra5": {
+            "meaning": "matOutApyDetMatOutApyFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromDeliveryDate": {
+            "meaning": "matOutApyDetMatOutApyFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromEndTime": {
+            "meaning": "matOutApyDetMatOutApyFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromReceiptDate": {
+            "meaning": "matOutApyDetMatOutApyFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFromUpdateTime": {
+            "meaning": "matOutApyDetMatOutApyFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyFscType": {
+            "meaning": "物料出库申请明细FSC声明",
+            "reachable": true,
+            "name": "物料出库申请明细FSC声明"
+        },
+        "matOutApyDetMatOutApyGenerativePeople": {
+            "meaning": "物料出库申请明细下发人",
+            "reachable": true,
+            "name": "物料出库申请明细下发人"
+        },
+        "matOutApyDetMatOutApyGenerativeState": {
+            "meaning": "物料出库申请明细下发状态",
+            "reachable": true,
+            "name": "物料出库申请明细下发状态"
+        },
+        "matOutApyDetMatOutApyGroovyScript": {
+            "meaning": "物料出库申请明细groovy脚本",
+            "reachable": true,
+            "name": "物料出库申请明细groovy脚本"
+        },
+        "matOutApyDetMatOutApyGropeCode": {
+            "meaning": "物料出库申请明细搜索码",
+            "reachable": true,
+            "name": "物料出库申请明细搜索码"
+        },
+        "matOutApyDetMatOutApyId": {
+            "meaning": "物料出库申请明细主键id",
+            "reachable": true,
+            "name": "物料出库申请明细主键id"
+        },
+        "matOutApyDetMatOutApyInUsed": {
+            "meaning": "物料出库申请明细是否被使用",
+            "reachable": true,
+            "name": "物料出库申请明细是否被使用"
+        },
+        "matOutApyDetMatOutApyInvTypeTaxRateId": {
+            "meaning": "物料出库申请明细发票税率id",
+            "reachable": true,
+            "name": "物料出库申请明细发票税率id"
+        },
+        "matOutApyDetMatOutApyIsBanned": {
+            "meaning": "物料出库申请明细是否被禁用",
+            "reachable": true,
+            "name": "物料出库申请明细是否被禁用"
+        },
+        "matOutApyDetMatOutApyIsDeleted": {
+            "meaning": "物料出库申请明细是否被删除",
+            "reachable": true,
+            "name": "物料出库申请明细是否被删除"
+        },
+        "matOutApyDetMatOutApyIsLeaf": {
+            "meaning": "物料出库申请明细是否叶子节点",
+            "reachable": true,
+            "name": "物料出库申请明细是否叶子节点"
+        },
+        "matOutApyDetMatOutApyIsMainFlow": {
+            "meaning": "物料出库申请明细是否是主流程",
+            "reachable": true,
+            "name": "物料出库申请明细是否是主流程"
+        },
+        "matOutApyDetMatOutApyIsManualModificationDate": {
+            "meaning": "物料出库申请明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料出库申请明细是否手动修改计划生产时间"
+        },
+        "matOutApyDetMatOutApyIsolation": {
+            "meaning": "物料出库申请明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点数据隔离标识"
+        },
+        "matOutApyDetMatOutApyJsScript": {
+            "meaning": "物料出库申请明细js脚本",
+            "reachable": true,
+            "name": "物料出库申请明细js脚本"
+        },
+        "matOutApyDetMatOutApyMaterialId": {
+            "meaning": "物料出库申请明细物料id",
+            "reachable": true,
+            "name": "物料出库申请明细物料id"
+        },
+        "matOutApyDetMatOutApyName": {
+            "meaning": "物料出库申请明细智能节点名",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点名"
+        },
+        "matOutApyDetMatOutApyNameCodeSearch": {
+            "meaning": "物料出库申请明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料出库申请明细name、user_code模糊搜索"
+        },
+        "matOutApyDetMatOutApyNumberExtra1": {
+            "meaning": "物料出库申请明细扩展数量1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量1"
+        },
+        "matOutApyDetMatOutApyNumberExtra2": {
+            "meaning": "物料出库申请明细扩展数量2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量2"
+        },
+        "matOutApyDetMatOutApyNumberExtra3": {
+            "meaning": "物料出库申请明细扩展数量3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量3"
+        },
+        "matOutApyDetMatOutApyNumberExtra4": {
+            "meaning": "物料出库申请明细扩展数量4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量4"
+        },
+        "matOutApyDetMatOutApyNumberExtra5": {
+            "meaning": "物料出库申请明细扩展数量5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量5"
+        },
+        "matOutApyDetMatOutApyParentId": {
+            "meaning": "物料出库申请明细父节点ID",
+            "reachable": true,
+            "name": "物料出库申请明细父节点ID"
+        },
+        "matOutApyDetMatOutApyPlannedOutputQuantity": {
+            "meaning": "物料出库申请明细计划产出数量",
+            "reachable": true,
+            "name": "物料出库申请明细计划产出数量"
+        },
+        "matOutApyDetMatOutApyPlannedTimeRequired": {
+            "meaning": "物料出库申请明细计划需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细计划需时"
+        },
+        "matOutApyDetMatOutApyPrintTimes": {
+            "meaning": "物料出库申请明细打印次数",
+            "reachable": true,
+            "name": "物料出库申请明细打印次数"
+        },
+        "matOutApyDetMatOutApyPriority": {
+            "meaning": "物料出库申请明细优先级",
+            "reachable": true,
+            "name": "物料出库申请明细优先级"
+        },
+        "matOutApyDetMatOutApyProcessInstanceId": {
+            "meaning": "物料出库申请明细流程实例ID",
+            "reachable": true,
+            "name": "物料出库申请明细流程实例ID"
+        },
+        "matOutApyDetMatOutApyProductionProcessesTypeId": {
+            "meaning": "物料出库申请明细工序类型ID",
+            "reachable": true,
+            "name": "物料出库申请明细工序类型ID"
+        },
+        "matOutApyDetMatOutApyProductionShiftId": {
+            "meaning": "物料出库申请明细生产班次ID",
+            "reachable": true,
+            "name": "物料出库申请明细生产班次ID"
+        },
+        "matOutApyDetMatOutApyQuantity": {
+            "meaning": "物料出库申请明细任务数量",
+            "reachable": true,
+            "name": "物料出库申请明细任务数量"
+        },
+        "matOutApyDetMatOutApyReceiptDate": {
+            "meaning": "物料出库申请明细单据日期",
+            "reachable": true,
+            "name": "物料出库申请明细单据日期"
+        },
+        "matOutApyDetMatOutApyReceiptType": {
+            "meaning": "物料出库申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料出库申请明细单据类型"
+        },
+        "matOutApyDetMatOutApyRelatedTasksId": {
+            "meaning": "物料出库申请明细关联任务id",
+            "reachable": true,
+            "name": "物料出库申请明细关联任务id"
+        },
+        "matOutApyDetMatOutApyRequisitionDepartId": {
+            "meaning": "物料出库申请明细领料部门id",
+            "reachable": true,
+            "name": "物料出库申请明细领料部门id"
+        },
+        "matOutApyDetMatOutApyRequisitionStaffId": {
+            "meaning": "物料出库申请明细领料人id",
+            "reachable": true,
+            "name": "物料出库申请明细领料人id"
+        },
+        "matOutApyDetMatOutApySerialNumber": {
+            "meaning": "物料出库申请明细顺序号",
+            "reachable": true,
+            "name": "物料出库申请明细顺序号"
+        },
+        "matOutApyDetMatOutApySource": {
+            "meaning": "物料出库申请明细源",
+            "reachable": true,
+            "name": "物料出库申请明细源"
+        },
+        "matOutApyDetMatOutApySourceType": {
+            "meaning": "物料出库申请明细来源类型",
+            "reachable": true,
+            "name": "物料出库申请明细来源类型"
+        },
+        "matOutApyDetMatOutApyState": {
+            "meaning": "物料出库申请明细通用状态",
+            "reachable": true,
+            "name": "物料出库申请明细通用状态"
+        },
+        "matOutApyDetMatOutApySystemCode": {
+            "meaning": "物料出库申请明细系统编码",
+            "reachable": true,
+            "name": "物料出库申请明细系统编码"
+        },
+        "matOutApyDetMatOutApyTarget": {
+            "meaning": "物料出库申请明细目标",
+            "reachable": true,
+            "name": "物料出库申请明细目标"
+        },
+        "matOutApyDetMatOutApyTaskNodeName": {
+            "meaning": "物料出库申请明细任务节点名称",
+            "reachable": true,
+            "name": "物料出库申请明细任务节点名称"
+        },
+        "matOutApyDetMatOutApyTeamId": {
+            "meaning": "物料出库申请明细班组id",
+            "reachable": true,
+            "name": "物料出库申请明细班组id"
+        },
+        "matOutApyDetMatOutApyTenantId": {
+            "meaning": "物料出库申请明细租户id",
+            "reachable": true,
+            "name": "物料出库申请明细租户id"
+        },
+        "matOutApyDetMatOutApyThirdPartyClass": {
+            "meaning": "物料出库申请明细第三方分类",
+            "reachable": true,
+            "name": "物料出库申请明细第三方分类"
+        },
+        "matOutApyDetMatOutApyThirdPartyId": {
+            "meaning": "物料出库申请明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料出库申请明细第三方系统中的唯一ID"
+        },
+        "matOutApyDetMatOutApyThirdPartyName": {
+            "meaning": "物料出库申请明细第三方名称",
+            "reachable": true,
+            "name": "物料出库申请明细第三方名称"
+        },
+        "matOutApyDetMatOutApyToAuditDate": {
+            "meaning": "matOutApyDetMatOutApyToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToBeginTime": {
+            "meaning": "matOutApyDetMatOutApyToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToCreateTime": {
+            "meaning": "matOutApyDetMatOutApyToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDateExtra1": {
+            "meaning": "matOutApyDetMatOutApyToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDateExtra2": {
+            "meaning": "matOutApyDetMatOutApyToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDateExtra3": {
+            "meaning": "matOutApyDetMatOutApyToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDateExtra4": {
+            "meaning": "matOutApyDetMatOutApyToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDateExtra5": {
+            "meaning": "matOutApyDetMatOutApyToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToDeliveryDate": {
+            "meaning": "matOutApyDetMatOutApyToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToEndTime": {
+            "meaning": "matOutApyDetMatOutApyToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToReceiptDate": {
+            "meaning": "matOutApyDetMatOutApyToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyToUpdateTime": {
+            "meaning": "matOutApyDetMatOutApyToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetMatOutApyUnitCode": {
+            "meaning": "物料出库申请明细单位id",
+            "reachable": true,
+            "name": "物料出库申请明细单位id"
+        },
+        "matOutApyDetMatOutApyUpdateTime": {
+            "meaning": "物料出库申请明细更新时间",
+            "reachable": true,
+            "name": "物料出库申请明细更新时间"
+        },
+        "matOutApyDetMatOutApyUpdater": {
+            "meaning": "物料出库申请明细更新人",
+            "reachable": true,
+            "name": "物料出库申请明细更新人"
+        },
+        "matOutApyDetMatOutApyUpdaterId": {
+            "meaning": "物料出库申请明细更新人ID",
+            "reachable": true,
+            "name": "物料出库申请明细更新人ID"
+        },
+        "matOutApyDetMatOutApyUserCode": {
+            "meaning": "物料出库申请明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点的唯一编码"
+        },
+        "matOutApyDetMatOutApyVarExtra1": {
+            "meaning": "物料出库申请明细扩展1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展1"
+        },
+        "matOutApyDetMatOutApyVarExtra2": {
+            "meaning": "物料出库申请明细扩展2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展2"
+        },
+        "matOutApyDetMatOutApyVarExtra3": {
+            "meaning": "物料出库申请明细扩展3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展3"
+        },
+        "matOutApyDetMatOutApyVarExtra4": {
+            "meaning": "物料出库申请明细扩展4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展4"
+        },
+        "matOutApyDetMatOutApyVarExtra5": {
+            "meaning": "物料出库申请明细扩展5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展5"
+        },
+        "matOutApyDetMatOutApyVersion": {
+            "meaning": "物料出库申请明细版本号",
+            "reachable": true,
+            "name": "物料出库申请明细版本号"
+        },
+        "matOutApyDetMaterialId": {
+            "meaning": "物料出库申请明细物料id",
+            "reachable": true,
+            "name": "物料出库申请明细物料id"
+        },
+        "matOutApyDetName": {
+            "meaning": "物料出库申请明细智能节点名",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点名"
+        },
+        "matOutApyDetNameCodeSearch": {
+            "meaning": "物料出库申请明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料出库申请明细name、user_code模糊搜索"
+        },
+        "matOutApyDetNumberExtra1": {
+            "meaning": "物料出库申请明细扩展数量1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量1"
+        },
+        "matOutApyDetNumberExtra2": {
+            "meaning": "物料出库申请明细扩展数量2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量2"
+        },
+        "matOutApyDetNumberExtra3": {
+            "meaning": "物料出库申请明细扩展数量3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量3"
+        },
+        "matOutApyDetNumberExtra4": {
+            "meaning": "物料出库申请明细扩展数量4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量4"
+        },
+        "matOutApyDetNumberExtra5": {
+            "meaning": "物料出库申请明细扩展数量5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展数量5"
+        },
+        "matOutApyDetParentId": {
+            "meaning": "物料出库申请明细父节点ID",
+            "reachable": true,
+            "name": "物料出库申请明细父节点ID"
+        },
+        "matOutApyDetPlanNumber": {
+            "meaning": "物料出库申请明细排度单号",
+            "reachable": true,
+            "name": "物料出库申请明细排度单号"
+        },
+        "matOutApyDetPlannedOutputQuantity": {
+            "meaning": "物料出库申请明细计划产出数量",
+            "reachable": true,
+            "name": "物料出库申请明细计划产出数量"
+        },
+        "matOutApyDetPlannedTimeRequired": {
+            "meaning": "物料出库申请明细计划需时(小时)",
+            "reachable": true,
+            "name": "物料出库申请明细计划需时"
+        },
+        "matOutApyDetPrintTimes": {
+            "meaning": "物料出库申请明细打印次数",
+            "reachable": true,
+            "name": "物料出库申请明细打印次数"
+        },
+        "matOutApyDetPriority": {
+            "meaning": "物料出库申请明细优先级",
+            "reachable": true,
+            "name": "物料出库申请明细优先级"
+        },
+        "matOutApyDetProcessInstanceId": {
+            "meaning": "物料出库申请明细流程实例ID",
+            "reachable": true,
+            "name": "物料出库申请明细流程实例ID"
+        },
+        "matOutApyDetProductionProcessesTypeId": {
+            "meaning": "物料出库申请明细工序类型ID",
+            "reachable": true,
+            "name": "物料出库申请明细工序类型ID"
+        },
+        "matOutApyDetProductionShiftId": {
+            "meaning": "物料出库申请明细生产班次ID",
+            "reachable": true,
+            "name": "物料出库申请明细生产班次ID"
+        },
+        "matOutApyDetQuantity": {
+            "meaning": "物料出库申请明细任务数量",
+            "reachable": true,
+            "name": "物料出库申请明细任务数量"
+        },
+        "matOutApyDetReceiptDate": {
+            "meaning": "物料出库申请明细单据日期",
+            "reachable": true,
+            "name": "物料出库申请明细单据日期"
+        },
+        "matOutApyDetReceiptType": {
+            "meaning": "物料出库申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料出库申请明细单据类型"
+        },
+        "matOutApyDetRelatedTasksId": {
+            "meaning": "物料出库申请明细关联任务id",
+            "reachable": true,
+            "name": "物料出库申请明细关联任务id"
+        },
+        "matOutApyDetSerialNumber": {
+            "meaning": "物料出库申请明细顺序号",
+            "reachable": true,
+            "name": "物料出库申请明细顺序号"
+        },
+        "matOutApyDetSource": {
+            "meaning": "物料出库申请明细源",
+            "reachable": true,
+            "name": "物料出库申请明细源"
+        },
+        "matOutApyDetSourceType": {
+            "meaning": "物料出库申请明细来源类型",
+            "reachable": true,
+            "name": "物料出库申请明细来源类型"
+        },
+        "matOutApyDetState": {
+            "meaning": "物料出库申请明细通用状态",
+            "reachable": true,
+            "name": "物料出库申请明细通用状态"
+        },
+        "matOutApyDetSystemCode": {
+            "meaning": "物料出库申请明细系统编码",
+            "reachable": true,
+            "name": "物料出库申请明细系统编码"
+        },
+        "matOutApyDetTarget": {
+            "meaning": "物料出库申请明细目标",
+            "reachable": true,
+            "name": "物料出库申请明细目标"
+        },
+        "matOutApyDetTaskNodeName": {
+            "meaning": "物料出库申请明细任务节点名称",
+            "reachable": true,
+            "name": "物料出库申请明细任务节点名称"
+        },
+        "matOutApyDetTenantId": {
+            "meaning": "物料出库申请明细租户id",
+            "reachable": true,
+            "name": "物料出库申请明细租户id"
+        },
+        "matOutApyDetThirdPartyClass": {
+            "meaning": "物料出库申请明细第三方分类",
+            "reachable": true,
+            "name": "物料出库申请明细第三方分类"
+        },
+        "matOutApyDetThirdPartyId": {
+            "meaning": "物料出库申请明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料出库申请明细第三方系统中的唯一ID"
+        },
+        "matOutApyDetThirdPartyName": {
+            "meaning": "物料出库申请明细第三方名称",
+            "reachable": true,
+            "name": "物料出库申请明细第三方名称"
+        },
+        "matOutApyDetToAuditDate": {
+            "meaning": "matOutApyDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToBeginTime": {
+            "meaning": "matOutApyDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToCreateTime": {
+            "meaning": "matOutApyDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDateExtra1": {
+            "meaning": "matOutApyDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDateExtra2": {
+            "meaning": "matOutApyDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDateExtra3": {
+            "meaning": "matOutApyDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDateExtra4": {
+            "meaning": "matOutApyDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDateExtra5": {
+            "meaning": "matOutApyDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToDeliveryDate": {
+            "meaning": "matOutApyDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToEndTime": {
+            "meaning": "matOutApyDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToReceiptDate": {
+            "meaning": "matOutApyDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetToUpdateTime": {
+            "meaning": "matOutApyDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutApyDetUnitCode": {
+            "meaning": "物料出库申请明细单位id",
+            "reachable": true,
+            "name": "物料出库申请明细单位id"
+        },
+        "matOutApyDetUpdateTime": {
+            "meaning": "物料出库申请明细更新时间",
+            "reachable": true,
+            "name": "物料出库申请明细更新时间"
+        },
+        "matOutApyDetUpdater": {
+            "meaning": "物料出库申请明细更新人",
+            "reachable": true,
+            "name": "物料出库申请明细更新人"
+        },
+        "matOutApyDetUpdaterId": {
+            "meaning": "物料出库申请明细更新人ID",
+            "reachable": true,
+            "name": "物料出库申请明细更新人ID"
+        },
+        "matOutApyDetUserCode": {
+            "meaning": "物料出库申请明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料出库申请明细智能节点的唯一编码"
+        },
+        "matOutApyDetVarExtra1": {
+            "meaning": "物料出库申请明细扩展1",
+            "reachable": true,
+            "name": "物料出库申请明细扩展1"
+        },
+        "matOutApyDetVarExtra2": {
+            "meaning": "物料出库申请明细扩展2",
+            "reachable": true,
+            "name": "物料出库申请明细扩展2"
+        },
+        "matOutApyDetVarExtra3": {
+            "meaning": "物料出库申请明细扩展3",
+            "reachable": true,
+            "name": "物料出库申请明细扩展3"
+        },
+        "matOutApyDetVarExtra4": {
+            "meaning": "物料出库申请明细扩展4",
+            "reachable": true,
+            "name": "物料出库申请明细扩展4"
+        },
+        "matOutApyDetVarExtra5": {
+            "meaning": "物料出库申请明细扩展5",
+            "reachable": true,
+            "name": "物料出库申请明细扩展5"
+        },
+        "matOutApyDetVersion": {
+            "meaning": "物料出库申请明细版本号",
+            "reachable": true,
+            "name": "物料出库申请明细版本号"
+        }
+    }
+}

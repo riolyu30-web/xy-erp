@@ -1,0 +1,726 @@
+{
+    "api_name": "/equ-maint/findList",
+    "table_name": "设备保养计划表",
+    "request": {
+        "equMaintClazz": "EQU_MAINT"
+    },
+    "mainTabClazz": "EQU_MAINT",
+    "response": {
+        "equMaintActualTimeRequired": {
+            "meaning": "设备保养计划表实际需时(小时)",
+            "reachable": false,
+            "name": "设备保养计划表实际需时"
+        },
+        "equMaintAdjustmentTimeRequired": {
+            "meaning": "设备保养计划表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "设备保养计划表调整需时"
+        },
+        "equMaintApplicationId": {
+            "meaning": "设备保养计划表应用ID",
+            "reachable": false,
+            "name": "设备保养计划表应用ID"
+        },
+        "equMaintAssetRelatId": {
+            "meaning": "设备保养计划表关联资产id",
+            "reachable": false,
+            "name": "设备保养计划表关联资产id"
+        },
+        "equMaintAuditDate": {
+            "meaning": "设备保养计划表审核时间",
+            "reachable": false,
+            "name": "设备保养计划表审核时间"
+        },
+        "equMaintAuditStatus": {
+            "meaning": "设备保养计划表审核状态",
+            "reachable": false,
+            "name": "设备保养计划表审核状态"
+        },
+        "equMaintAvailableScheduleId": {
+            "meaning": "设备保养计划表可用日程id",
+            "reachable": false,
+            "name": "设备保养计划表可用日程id"
+        },
+        "equMaintBeginTime": {
+            "meaning": "设备保养计划表开始时间",
+            "reachable": false,
+            "name": "设备保养计划表开始时间"
+        },
+        "equMaintBizVersion": {
+            "meaning": "设备保养计划表业务自定义版本号",
+            "reachable": false,
+            "name": "设备保养计划表业务自定义版本号"
+        },
+        "equMaintBriefName": {
+            "meaning": "设备保养计划表简称",
+            "reachable": false,
+            "name": "设备保养计划表简称"
+        },
+        "equMaintBusDivisId": {
+            "meaning": "设备保养计划表事业部id",
+            "reachable": false,
+            "name": "设备保养计划表事业部id"
+        },
+        "equMaintClazz": {
+            "meaning": "设备保养计划表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "设备保养计划表子类"
+        },
+        "equMaintClosedReason": {
+            "meaning": "设备保养计划表结案原因",
+            "reachable": false,
+            "name": "设备保养计划表结案原因"
+        },
+        "equMaintClosedStatus": {
+            "meaning": "设备保养计划表结案状态",
+            "reachable": false,
+            "name": "设备保养计划表结案状态"
+        },
+        "equMaintComment": {
+            "meaning": "设备保养计划表评论",
+            "reachable": false,
+            "name": "设备保养计划表评论"
+        },
+        "equMaintCompleteQuantity": {
+            "meaning": "设备保养计划表完成数量",
+            "reachable": false,
+            "name": "设备保养计划表完成数量"
+        },
+        "equMaintCompleteStatus": {
+            "meaning": "设备保养计划表完成状态",
+            "reachable": false,
+            "name": "设备保养计划表完成状态"
+        },
+        "equMaintCreateTime": {
+            "meaning": "设备保养计划表创建时间",
+            "reachable": false,
+            "name": "设备保养计划表创建时间"
+        },
+        "equMaintCreator": {
+            "meaning": "设备保养计划表创建人",
+            "reachable": false,
+            "name": "设备保养计划表创建人"
+        },
+        "equMaintCreatorId": {
+            "meaning": "设备保养计划表创建人ID",
+            "reachable": false,
+            "name": "设备保养计划表创建人ID"
+        },
+        "equMaintCumIpqcQuantity": {
+            "meaning": "设备保养计划表累计质检数量",
+            "reachable": false,
+            "name": "设备保养计划表累计质检数量"
+        },
+        "equMaintCumIpqcStatus": {
+            "meaning": "设备保养计划表累计质检状态",
+            "reachable": false,
+            "name": "设备保养计划表累计质检状态"
+        },
+        "equMaintCumulHndovrQuantity": {
+            "meaning": "设备保养计划表累计交出数量",
+            "reachable": false,
+            "name": "设备保养计划表累计交出数量"
+        },
+        "equMaintDailyRepQuantity": {
+            "meaning": "设备保养计划表日报表已开数量",
+            "reachable": false,
+            "name": "设备保养计划表日报表已开数量"
+        },
+        "equMaintDailyRepStatus": {
+            "meaning": "设备保养计划表日报表已开状态",
+            "reachable": false,
+            "name": "设备保养计划表日报表已开状态"
+        },
+        "equMaintDateExtra1": {
+            "meaning": "设备保养计划表扩展时间1",
+            "reachable": false,
+            "name": "设备保养计划表扩展时间1"
+        },
+        "equMaintDateExtra2": {
+            "meaning": "设备保养计划表扩展时间2",
+            "reachable": false,
+            "name": "设备保养计划表扩展时间2"
+        },
+        "equMaintDateExtra3": {
+            "meaning": "设备保养计划表扩展时间3",
+            "reachable": false,
+            "name": "设备保养计划表扩展时间3"
+        },
+        "equMaintDateExtra4": {
+            "meaning": "设备保养计划表扩展时间4",
+            "reachable": false,
+            "name": "设备保养计划表扩展时间4"
+        },
+        "equMaintDateExtra5": {
+            "meaning": "设备保养计划表扩展时间5",
+            "reachable": false,
+            "name": "设备保养计划表扩展时间5"
+        },
+        "equMaintDefaultType": {
+            "meaning": "设备保养计划表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "设备保养计划表智能节点主类型"
+        },
+        "equMaintDeliveryDate": {
+            "meaning": "设备保养计划表交货日期",
+            "reachable": false,
+            "name": "设备保养计划表交货日期"
+        },
+        "equMaintDescription": {
+            "meaning": "设备保养计划表描述",
+            "reachable": false,
+            "name": "设备保养计划表描述"
+        },
+        "equMaintEndTime": {
+            "meaning": "设备保养计划表结束时间",
+            "reachable": false,
+            "name": "设备保养计划表结束时间"
+        },
+        "equMaintEndTimeRequired": {
+            "meaning": "设备保养计划表最后需时(小时)",
+            "reachable": false,
+            "name": "设备保养计划表最后需时"
+        },
+        "equMaintEngName": {
+            "meaning": "设备保养计划表英文名称",
+            "reachable": false,
+            "name": "设备保养计划表英文名称"
+        },
+        "equMaintEquipmentId": {
+            "meaning": "设备保养计划表设备id",
+            "reachable": false,
+            "name": "设备保养计划表设备id"
+        },
+        "equMaintExchangeRateId": {
+            "meaning": "设备保养计划表币种汇率id",
+            "reachable": false,
+            "name": "设备保养计划表币种汇率id"
+        },
+        "equMaintExtension": {
+            "meaning": "设备保养计划表扩展数据",
+            "reachable": false,
+            "name": "设备保养计划表扩展数据"
+        },
+        "equMaintExternalState": {
+            "meaning": "设备保养计划表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "设备保养计划表上流程状态位"
+        },
+        "equMaintFilterClazz": {
+            "meaning": "设备保养计划表冗余字段用于筛选",
+            "reachable": false,
+            "name": "设备保养计划表冗余字段用于筛选"
+        },
+        "equMaintFlags": {
+            "meaning": "设备保养计划表63位标志位",
+            "reachable": false,
+            "name": "设备保养计划表63位标志位"
+        },
+        "equMaintFromAuditDate": {
+            "meaning": "equMaintFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromBeginTime": {
+            "meaning": "equMaintFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromCreateTime": {
+            "meaning": "equMaintFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDateExtra1": {
+            "meaning": "equMaintFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDateExtra2": {
+            "meaning": "equMaintFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDateExtra3": {
+            "meaning": "equMaintFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDateExtra4": {
+            "meaning": "equMaintFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDateExtra5": {
+            "meaning": "equMaintFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromDeliveryDate": {
+            "meaning": "equMaintFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromEndTime": {
+            "meaning": "equMaintFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromGenerativeTime": {
+            "meaning": "equMaintFromGenerativeTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromPlanEndTime": {
+            "meaning": "equMaintFromPlanEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromPlanStartTime": {
+            "meaning": "equMaintFromPlanStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromPretEndTime": {
+            "meaning": "equMaintFromPretEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromPretStartTime": {
+            "meaning": "equMaintFromPretStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromReceiptDate": {
+            "meaning": "equMaintFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFromUpdateTime": {
+            "meaning": "equMaintFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintFscType": {
+            "meaning": "设备保养计划表FSC声明",
+            "reachable": false,
+            "name": "设备保养计划表FSC声明"
+        },
+        "equMaintGenerativePeople": {
+            "meaning": "设备保养计划表下发人",
+            "reachable": false,
+            "name": "设备保养计划表下发人"
+        },
+        "equMaintGenerativeState": {
+            "meaning": "设备保养计划表下发状态",
+            "reachable": false,
+            "name": "设备保养计划表下发状态"
+        },
+        "equMaintGenerativeTime": {
+            "meaning": "设备保养计划表下发时间",
+            "reachable": false,
+            "name": "设备保养计划表下发时间"
+        },
+        "equMaintGroovyScript": {
+            "meaning": "设备保养计划表groovy脚本",
+            "reachable": false,
+            "name": "设备保养计划表groovy脚本"
+        },
+        "equMaintGropeCode": {
+            "meaning": "设备保养计划表搜索码",
+            "reachable": false,
+            "name": "设备保养计划表搜索码"
+        },
+        "equMaintId": {
+            "meaning": "设备保养计划表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "设备保养计划表PK"
+        },
+        "equMaintInUsed": {
+            "meaning": "设备保养计划表是否被使用",
+            "reachable": false,
+            "name": "设备保养计划表是否被使用"
+        },
+        "equMaintInterval": {
+            "meaning": "设备保养计划表保养周期(日，周，月，年)",
+            "reachable": false,
+            "name": "设备保养计划表保养周期"
+        },
+        "equMaintIntervalContent": {
+            "meaning": "设备保养计划表保养周期内容(1天，2周，2月，1年)，用于推算出下次保养时间",
+            "reachable": false,
+            "name": "设备保养计划表保养周期内容"
+        },
+        "equMaintInvTypeTaxRateId": {
+            "meaning": "设备保养计划表发票税率id",
+            "reachable": false,
+            "name": "设备保养计划表发票税率id"
+        },
+        "equMaintIsBanned": {
+            "meaning": "设备保养计划表是否被禁用",
+            "reachable": false,
+            "name": "设备保养计划表是否被禁用"
+        },
+        "equMaintIsDeleted": {
+            "meaning": "设备保养计划表是否被删除",
+            "reachable": false,
+            "name": "设备保养计划表是否被删除"
+        },
+        "equMaintIsLeaf": {
+            "meaning": "设备保养计划表是否叶子节点",
+            "reachable": false,
+            "name": "设备保养计划表是否叶子节点"
+        },
+        "equMaintIsMainFlow": {
+            "meaning": "设备保养计划表是否是主流程",
+            "reachable": false,
+            "name": "设备保养计划表是否是主流程"
+        },
+        "equMaintIsManualModificationDate": {
+            "meaning": "设备保养计划表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "设备保养计划表是否手动修改计划生产时间"
+        },
+        "equMaintIsolation": {
+            "meaning": "设备保养计划表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "设备保养计划表智能节点数据隔离标识"
+        },
+        "equMaintJsScript": {
+            "meaning": "设备保养计划表js脚本",
+            "reachable": false,
+            "name": "设备保养计划表js脚本"
+        },
+        "equMaintMaterialId": {
+            "meaning": "设备保养计划表物料id",
+            "reachable": false,
+            "name": "设备保养计划表物料id"
+        },
+        "equMaintName": {
+            "meaning": "设备保养计划表智能节点名",
+            "reachable": false,
+            "name": "设备保养计划表智能节点名"
+        },
+        "equMaintNameCodeSearch": {
+            "meaning": "设备保养计划表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "设备保养计划表name、user_code模糊搜索"
+        },
+        "equMaintNumberExtra1": {
+            "meaning": "设备保养计划表扩展数量1",
+            "reachable": false,
+            "name": "设备保养计划表扩展数量1"
+        },
+        "equMaintNumberExtra2": {
+            "meaning": "设备保养计划表扩展数量2",
+            "reachable": false,
+            "name": "设备保养计划表扩展数量2"
+        },
+        "equMaintNumberExtra3": {
+            "meaning": "设备保养计划表扩展数量3",
+            "reachable": false,
+            "name": "设备保养计划表扩展数量3"
+        },
+        "equMaintNumberExtra4": {
+            "meaning": "设备保养计划表扩展数量4",
+            "reachable": false,
+            "name": "设备保养计划表扩展数量4"
+        },
+        "equMaintNumberExtra5": {
+            "meaning": "设备保养计划表扩展数量5",
+            "reachable": false,
+            "name": "设备保养计划表扩展数量5"
+        },
+        "equMaintParentId": {
+            "meaning": "设备保养计划表父节点ID",
+            "reachable": false,
+            "name": "设备保养计划表父节点ID"
+        },
+        "equMaintPlanEndTime": {
+            "meaning": "设备保养计划表计划开始时间",
+            "reachable": false,
+            "name": "设备保养计划表计划开始时间"
+        },
+        "equMaintPlanStartTime": {
+            "meaning": "设备保养计划表计划开始时间",
+            "reachable": false,
+            "name": "设备保养计划表计划开始时间"
+        },
+        "equMaintPlannedOutputQuantity": {
+            "meaning": "设备保养计划表计划产出数量",
+            "reachable": false,
+            "name": "设备保养计划表计划产出数量"
+        },
+        "equMaintPlannedTimeRequired": {
+            "meaning": "设备保养计划表计划需时(小时)",
+            "reachable": false,
+            "name": "设备保养计划表计划需时"
+        },
+        "equMaintPretEndTime": {
+            "meaning": "设备保养计划表预估结束时间",
+            "reachable": false,
+            "name": "设备保养计划表预估结束时间"
+        },
+        "equMaintPretStartTime": {
+            "meaning": "设备保养计划表预估开始时间",
+            "reachable": false,
+            "name": "设备保养计划表预估开始时间"
+        },
+        "equMaintPrintTimes": {
+            "meaning": "设备保养计划表打印次数",
+            "reachable": false,
+            "name": "设备保养计划表打印次数"
+        },
+        "equMaintPriority": {
+            "meaning": "设备保养计划表优先级",
+            "reachable": false,
+            "name": "设备保养计划表优先级"
+        },
+        "equMaintProcessInstanceId": {
+            "meaning": "设备保养计划表流程实例ID",
+            "reachable": false,
+            "name": "设备保养计划表流程实例ID"
+        },
+        "equMaintProductionProcessesTypeId": {
+            "meaning": "设备保养计划表工序类型ID",
+            "reachable": false,
+            "name": "设备保养计划表工序类型ID"
+        },
+        "equMaintProductionShiftId": {
+            "meaning": "设备保养计划表生产班次ID",
+            "reachable": false,
+            "name": "设备保养计划表生产班次ID"
+        },
+        "equMaintQuantity": {
+            "meaning": "设备保养计划表任务数量",
+            "reachable": false,
+            "name": "设备保养计划表任务数量"
+        },
+        "equMaintReason": {
+            "meaning": "设备保养计划表保养原因",
+            "reachable": false,
+            "name": "设备保养计划表保养原因"
+        },
+        "equMaintReceiptDate": {
+            "meaning": "设备保养计划表单据日期",
+            "reachable": false,
+            "name": "设备保养计划表单据日期"
+        },
+        "equMaintReceiptType": {
+            "meaning": "设备保养计划表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "设备保养计划表单据类型"
+        },
+        "equMaintRelatedTasksId": {
+            "meaning": "设备保养计划表关联任务id",
+            "reachable": false,
+            "name": "设备保养计划表关联任务id"
+        },
+        "equMaintSerialNumber": {
+            "meaning": "设备保养计划表顺序号",
+            "reachable": false,
+            "name": "设备保养计划表顺序号"
+        },
+        "equMaintSource": {
+            "meaning": "设备保养计划表源",
+            "reachable": false,
+            "name": "设备保养计划表源"
+        },
+        "equMaintSourceType": {
+            "meaning": "设备保养计划表来源类型",
+            "reachable": false,
+            "name": "设备保养计划表来源类型"
+        },
+        "equMaintState": {
+            "meaning": "设备保养计划表通用状态",
+            "reachable": false,
+            "name": "设备保养计划表通用状态"
+        },
+        "equMaintStatus": {
+            "meaning": "设备保养计划表任务状态",
+            "reachable": false,
+            "name": "设备保养计划表任务状态"
+        },
+        "equMaintSystemCode": {
+            "meaning": "设备保养计划表系统编码",
+            "reachable": false,
+            "name": "设备保养计划表系统编码"
+        },
+        "equMaintTarget": {
+            "meaning": "设备保养计划表目标",
+            "reachable": false,
+            "name": "设备保养计划表目标"
+        },
+        "equMaintTaskMesId": {
+            "meaning": "设备保养计划表数采网关自增长id",
+            "reachable": false,
+            "name": "设备保养计划表数采网关自增长id"
+        },
+        "equMaintTaskNodeName": {
+            "meaning": "设备保养计划表任务节点名称",
+            "reachable": false,
+            "name": "设备保养计划表任务节点名称"
+        },
+        "equMaintTenantId": {
+            "meaning": "设备保养计划表租户_id",
+            "reachable": false,
+            "name": "设备保养计划表租户_id"
+        },
+        "equMaintThirdPartyClass": {
+            "meaning": "设备保养计划表第三方分类",
+            "reachable": false,
+            "name": "设备保养计划表第三方分类"
+        },
+        "equMaintThirdPartyId": {
+            "meaning": "设备保养计划表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "设备保养计划表第三方系统中的唯一ID"
+        },
+        "equMaintThirdPartyName": {
+            "meaning": "设备保养计划表第三方名称",
+            "reachable": false,
+            "name": "设备保养计划表第三方名称"
+        },
+        "equMaintToAuditDate": {
+            "meaning": "equMaintToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToBeginTime": {
+            "meaning": "equMaintToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToCreateTime": {
+            "meaning": "equMaintToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDateExtra1": {
+            "meaning": "equMaintToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDateExtra2": {
+            "meaning": "equMaintToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDateExtra3": {
+            "meaning": "equMaintToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDateExtra4": {
+            "meaning": "equMaintToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDateExtra5": {
+            "meaning": "equMaintToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToDeliveryDate": {
+            "meaning": "equMaintToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToEndTime": {
+            "meaning": "equMaintToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToGenerativeTime": {
+            "meaning": "equMaintToGenerativeTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToPlanEndTime": {
+            "meaning": "equMaintToPlanEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToPlanStartTime": {
+            "meaning": "equMaintToPlanStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToPretEndTime": {
+            "meaning": "equMaintToPretEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToPretStartTime": {
+            "meaning": "equMaintToPretStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToReceiptDate": {
+            "meaning": "equMaintToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintToUpdateTime": {
+            "meaning": "equMaintToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equMaintUnitCode": {
+            "meaning": "设备保养计划表单位id",
+            "reachable": false,
+            "name": "设备保养计划表单位id"
+        },
+        "equMaintUpdateTime": {
+            "meaning": "设备保养计划表更新时间",
+            "reachable": false,
+            "name": "设备保养计划表更新时间"
+        },
+        "equMaintUpdater": {
+            "meaning": "设备保养计划表更新人",
+            "reachable": false,
+            "name": "设备保养计划表更新人"
+        },
+        "equMaintUpdaterId": {
+            "meaning": "设备保养计划表更新人ID",
+            "reachable": false,
+            "name": "设备保养计划表更新人ID"
+        },
+        "equMaintUserCode": {
+            "meaning": "设备保养计划表智能节点的唯一编码",
+            "reachable": false,
+            "name": "设备保养计划表智能节点的唯一编码"
+        },
+        "equMaintVarExtra1": {
+            "meaning": "设备保养计划表扩展1",
+            "reachable": false,
+            "name": "设备保养计划表扩展1"
+        },
+        "equMaintVarExtra2": {
+            "meaning": "设备保养计划表扩展2",
+            "reachable": false,
+            "name": "设备保养计划表扩展2"
+        },
+        "equMaintVarExtra3": {
+            "meaning": "设备保养计划表扩展3",
+            "reachable": false,
+            "name": "设备保养计划表扩展3"
+        },
+        "equMaintVarExtra4": {
+            "meaning": "设备保养计划表扩展4",
+            "reachable": false,
+            "name": "设备保养计划表扩展4"
+        },
+        "equMaintVarExtra5": {
+            "meaning": "设备保养计划表扩展5",
+            "reachable": false,
+            "name": "设备保养计划表扩展5"
+        },
+        "equMaintVersion": {
+            "meaning": "设备保养计划表版本号",
+            "reachable": false,
+            "name": "设备保养计划表版本号"
+        }
+    }
+}

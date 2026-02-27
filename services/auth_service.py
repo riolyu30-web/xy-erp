@@ -46,7 +46,7 @@ def auth_login() -> str:
 
     # 构建OAuth2令牌请求URL
     url = f"{BASE_URL}/oauth2/token"
-    print(url)
+
 
     # 设置请求参数
     params = {
@@ -84,3 +84,8 @@ def auth_login() -> str:
     except KeyError as e:
         # 数据结构异常
         raise Exception(f"响应数据结构异常: {str(e)}")
+
+
+if __name__ == "__main__":
+    access_token = auth_login()
+    print(access_token)

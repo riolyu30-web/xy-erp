@@ -1,0 +1,396 @@
+{
+    "api_name": "/msg-read/findList",
+    "table_name": "已读记录",
+    "request": {
+        "msgReadClazz": "MSG_READ"
+    },
+    "mainTabClazz": "MSG_READ",
+    "response": {
+        "msgReadApplicationId": {
+            "meaning": "已读记录应用ID",
+            "reachable": false,
+            "name": "已读记录应用ID"
+        },
+        "msgReadAuditDate": {
+            "meaning": "已读记录审核时间",
+            "reachable": false,
+            "name": "已读记录审核时间"
+        },
+        "msgReadAuditStatus": {
+            "meaning": "已读记录审核状态",
+            "reachable": false,
+            "name": "已读记录审核状态"
+        },
+        "msgReadBizVersion": {
+            "meaning": "已读记录业务自定义版本号",
+            "reachable": false,
+            "name": "已读记录业务自定义版本号"
+        },
+        "msgReadBriefName": {
+            "meaning": "已读记录简称",
+            "reachable": false,
+            "name": "已读记录简称"
+        },
+        "msgReadBusDivisId": {
+            "meaning": "已读记录事业部id",
+            "reachable": false,
+            "name": "已读记录事业部id"
+        },
+        "msgReadClazz": {
+            "meaning": "已读记录子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "已读记录子类"
+        },
+        "msgReadComment": {
+            "meaning": "已读记录评论",
+            "reachable": false,
+            "name": "已读记录评论"
+        },
+        "msgReadCreateTime": {
+            "meaning": "已读记录创建时间",
+            "reachable": false,
+            "name": "已读记录创建时间"
+        },
+        "msgReadCreator": {
+            "meaning": "已读记录创建人",
+            "reachable": false,
+            "name": "已读记录创建人"
+        },
+        "msgReadCreatorId": {
+            "meaning": "已读记录创建人ID",
+            "reachable": false,
+            "name": "已读记录创建人ID"
+        },
+        "msgReadDateExtra1": {
+            "meaning": "已读记录扩展时间1",
+            "reachable": false,
+            "name": "已读记录扩展时间1"
+        },
+        "msgReadDateExtra2": {
+            "meaning": "已读记录扩展时间2",
+            "reachable": false,
+            "name": "已读记录扩展时间2"
+        },
+        "msgReadDateExtra3": {
+            "meaning": "已读记录扩展时间3",
+            "reachable": false,
+            "name": "已读记录扩展时间3"
+        },
+        "msgReadDateExtra4": {
+            "meaning": "已读记录扩展时间4",
+            "reachable": false,
+            "name": "已读记录扩展时间4"
+        },
+        "msgReadDateExtra5": {
+            "meaning": "已读记录扩展时间5",
+            "reachable": false,
+            "name": "已读记录扩展时间5"
+        },
+        "msgReadDefaultType": {
+            "meaning": "已读记录智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "已读记录智能节点主类型"
+        },
+        "msgReadDescription": {
+            "meaning": "已读记录描述",
+            "reachable": false,
+            "name": "已读记录描述"
+        },
+        "msgReadEngName": {
+            "meaning": "已读记录英文名称",
+            "reachable": false,
+            "name": "已读记录英文名称"
+        },
+        "msgReadExtension": {
+            "meaning": "已读记录扩展数据",
+            "reachable": false,
+            "name": "已读记录扩展数据"
+        },
+        "msgReadExternalState": {
+            "meaning": "已读记录上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "已读记录上流程状态位"
+        },
+        "msgReadFlags": {
+            "meaning": "已读记录63位标志位",
+            "reachable": false,
+            "name": "已读记录63位标志位"
+        },
+        "msgReadFromAuditDate": {
+            "meaning": "msgReadFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromCreateTime": {
+            "meaning": "msgReadFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromDateExtra1": {
+            "meaning": "msgReadFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromDateExtra2": {
+            "meaning": "msgReadFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromDateExtra3": {
+            "meaning": "msgReadFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromDateExtra4": {
+            "meaning": "msgReadFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromDateExtra5": {
+            "meaning": "msgReadFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadFromUpdateTime": {
+            "meaning": "msgReadFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadGroovyScript": {
+            "meaning": "已读记录groovy脚本",
+            "reachable": false,
+            "name": "已读记录groovy脚本"
+        },
+        "msgReadGropeCode": {
+            "meaning": "已读记录搜索码",
+            "reachable": false,
+            "name": "已读记录搜索码"
+        },
+        "msgReadId": {
+            "meaning": "已读记录pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "已读记录pk"
+        },
+        "msgReadInUsed": {
+            "meaning": "已读记录是否被使用",
+            "reachable": false,
+            "name": "已读记录是否被使用"
+        },
+        "msgReadIsBanned": {
+            "meaning": "已读记录是否被禁用",
+            "reachable": false,
+            "name": "已读记录是否被禁用"
+        },
+        "msgReadIsDeleted": {
+            "meaning": "已读记录是否被删除",
+            "reachable": false,
+            "name": "已读记录是否被删除"
+        },
+        "msgReadIsMainFlow": {
+            "meaning": "已读记录是否是主流程",
+            "reachable": false,
+            "name": "已读记录是否是主流程"
+        },
+        "msgReadIsolation": {
+            "meaning": "已读记录智能节点数据隔离标识",
+            "reachable": false,
+            "name": "已读记录智能节点数据隔离标识"
+        },
+        "msgReadJsScript": {
+            "meaning": "已读记录js脚本",
+            "reachable": false,
+            "name": "已读记录js脚本"
+        },
+        "msgReadName": {
+            "meaning": "已读记录智能节点名",
+            "reachable": false,
+            "name": "已读记录智能节点名"
+        },
+        "msgReadNameCodeSearch": {
+            "meaning": "已读记录name、user_code模糊搜索",
+            "reachable": false,
+            "name": "已读记录name、user_code模糊搜索"
+        },
+        "msgReadNumberExtra1": {
+            "meaning": "已读记录扩展数量1",
+            "reachable": false,
+            "name": "已读记录扩展数量1"
+        },
+        "msgReadNumberExtra2": {
+            "meaning": "已读记录扩展数量2",
+            "reachable": false,
+            "name": "已读记录扩展数量2"
+        },
+        "msgReadNumberExtra3": {
+            "meaning": "已读记录扩展数量3",
+            "reachable": false,
+            "name": "已读记录扩展数量3"
+        },
+        "msgReadNumberExtra4": {
+            "meaning": "已读记录扩展数量4",
+            "reachable": false,
+            "name": "已读记录扩展数量4"
+        },
+        "msgReadNumberExtra5": {
+            "meaning": "已读记录扩展数量5",
+            "reachable": false,
+            "name": "已读记录扩展数量5"
+        },
+        "msgReadParentId": {
+            "meaning": "已读记录父节点ID",
+            "reachable": false,
+            "name": "已读记录父节点ID"
+        },
+        "msgReadProcessInstanceId": {
+            "meaning": "已读记录流程实例ID",
+            "reachable": false,
+            "name": "已读记录流程实例ID"
+        },
+        "msgReadReadTime": {
+            "meaning": "已读记录已读时间",
+            "reachable": false,
+            "name": "已读记录已读时间"
+        },
+        "msgReadSerialNumber": {
+            "meaning": "已读记录顺序号",
+            "reachable": false,
+            "name": "已读记录顺序号"
+        },
+        "msgReadSessionId": {
+            "meaning": "已读记录关联会话",
+            "reachable": false,
+            "name": "已读记录关联会话"
+        },
+        "msgReadSomeoneId": {
+            "meaning": "已读记录已读人id",
+            "reachable": false,
+            "name": "已读记录已读人id"
+        },
+        "msgReadState": {
+            "meaning": "已读记录通用状态",
+            "reachable": false,
+            "name": "已读记录通用状态"
+        },
+        "msgReadSystemCode": {
+            "meaning": "已读记录系统编码",
+            "reachable": false,
+            "name": "已读记录系统编码"
+        },
+        "msgReadTaskNodeName": {
+            "meaning": "已读记录任务节点名称",
+            "reachable": false,
+            "name": "已读记录任务节点名称"
+        },
+        "msgReadTenantId": {
+            "meaning": "已读记录租户_id",
+            "reachable": false,
+            "name": "已读记录租户_id"
+        },
+        "msgReadThirdPartyClass": {
+            "meaning": "已读记录第三方分类",
+            "reachable": false,
+            "name": "已读记录第三方分类"
+        },
+        "msgReadThirdPartyId": {
+            "meaning": "已读记录第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "已读记录第三方系统中的唯一ID"
+        },
+        "msgReadThirdPartyName": {
+            "meaning": "已读记录第三方名称",
+            "reachable": false,
+            "name": "已读记录第三方名称"
+        },
+        "msgReadToAuditDate": {
+            "meaning": "msgReadToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToCreateTime": {
+            "meaning": "msgReadToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToDateExtra1": {
+            "meaning": "msgReadToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToDateExtra2": {
+            "meaning": "msgReadToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToDateExtra3": {
+            "meaning": "msgReadToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToDateExtra4": {
+            "meaning": "msgReadToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToDateExtra5": {
+            "meaning": "msgReadToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadToUpdateTime": {
+            "meaning": "msgReadToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgReadUpdateTime": {
+            "meaning": "已读记录更新时间",
+            "reachable": false,
+            "name": "已读记录更新时间"
+        },
+        "msgReadUpdater": {
+            "meaning": "已读记录更新人",
+            "reachable": false,
+            "name": "已读记录更新人"
+        },
+        "msgReadUpdaterId": {
+            "meaning": "已读记录更新人ID",
+            "reachable": false,
+            "name": "已读记录更新人ID"
+        },
+        "msgReadUserCode": {
+            "meaning": "已读记录智能节点的唯一编码",
+            "reachable": false,
+            "name": "已读记录智能节点的唯一编码"
+        },
+        "msgReadVarExtra1": {
+            "meaning": "已读记录扩展1",
+            "reachable": false,
+            "name": "已读记录扩展1"
+        },
+        "msgReadVarExtra2": {
+            "meaning": "已读记录扩展2",
+            "reachable": false,
+            "name": "已读记录扩展2"
+        },
+        "msgReadVarExtra3": {
+            "meaning": "已读记录扩展3",
+            "reachable": false,
+            "name": "已读记录扩展3"
+        },
+        "msgReadVarExtra4": {
+            "meaning": "已读记录扩展4",
+            "reachable": false,
+            "name": "已读记录扩展4"
+        },
+        "msgReadVarExtra5": {
+            "meaning": "已读记录扩展5",
+            "reachable": false,
+            "name": "已读记录扩展5"
+        },
+        "msgReadVersion": {
+            "meaning": "已读记录版本号",
+            "reachable": false,
+            "name": "已读记录版本号"
+        }
+    }
+}

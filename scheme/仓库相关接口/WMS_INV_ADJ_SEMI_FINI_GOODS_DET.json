@@ -1,0 +1,1847 @@
+{
+    "api_name": "/wms-inv-adj-semi-fini-goods-det/findList",
+    "table_name": "半成品盘点调整明细表",
+    "request": {
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClazz": "WMS_INV_ADJ_SEMI_FINI_GOODS",
+        "wmsInvAdjSemiFiniGoodsDetClazz": "WMS_INV_ADJ_SEMI_FINI_GOODS_DET"
+    },
+    "mainTabClazz": "WMS_INV_ADJ_SEMI_FINI_GOODS_DET",
+    "response": {
+        "IFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDeliveryDate": {
+            "meaning": "IFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "IGoodsDetWmsInvAdjSemiFiniGoodsPlannedOutputQuantity": {
+            "meaning": "半成品盘点调整明细表计划产出数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划产出数量"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClosedReason": {
+            "meaning": "半成品盘点调整明细表结案原因",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案原因"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClosedStatus": {
+            "meaning": "半成品盘点调整明细表结案状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案状态"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDeliveryDate": {
+            "meaning": "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromEndTime": {
+            "meaning": "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGroovyScript": {
+            "meaning": "半成品盘点调整明细表groovy脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表groovy脚本"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra1": {
+            "meaning": "半成品盘点调整明细表扩展数量1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量1"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra2": {
+            "meaning": "半成品盘点调整明细表扩展数量2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量2"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra3": {
+            "meaning": "半成品盘点调整明细表扩展数量3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量3"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra4": {
+            "meaning": "半成品盘点调整明细表扩展数量4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量4"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra5": {
+            "meaning": "半成品盘点调整明细表扩展数量5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量5"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSerialNumber": {
+            "meaning": "半成品盘点调整明细表顺序号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表顺序号"
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToAuditDate": {
+            "meaning": "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToBeginTime": {
+            "meaning": "JSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "SInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClazz": {
+            "meaning": "半成品盘点调整明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表子类"
+        },
+        "SInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFlags": {
+            "meaning": "半成品盘点调整明细表63位标志位",
+            "reachable": false,
+            "name": "半成品盘点调整明细表63位标志位"
+        },
+        "SInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsState": {
+            "meaning": "半成品盘点调整明细表通用状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表通用状态"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsExtension": {
+            "meaning": "半成品盘点调整明细表扩展数据",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数据"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsBanned": {
+            "meaning": "半成品盘点调整明细表是否被禁用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被禁用"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsolation": {
+            "meaning": "半成品盘点调整明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点数据隔离标识"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsJsScript": {
+            "meaning": "半成品盘点调整明细表js脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表js脚本"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsParentId": {
+            "meaning": "半成品盘点调整明细表父节点ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表父节点ID"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTenantId": {
+            "meaning": "半成品盘点调整明细表租户ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表租户ID"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUnitCode": {
+            "meaning": "半成品盘点调整明细表单位id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单位id"
+        },
+        "VAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUserCode": {
+            "meaning": "半成品盘点调整明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点的唯一编码"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAuditDate": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBeginTime": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBizVersion": {
+            "meaning": "半成品盘点调整明细表业务自定义版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表业务自定义版本号"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBriefName": {
+            "meaning": "半成品盘点调整明细表简称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表简称"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreateTime": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreatorId": {
+            "meaning": "半成品盘点调整明细表创建人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人ID"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra1": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra2": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra3": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra4": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra5": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDescription": {
+            "meaning": "半成品盘点调整明细表描述",
+            "reachable": false,
+            "name": "半成品盘点调整明细表描述"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGropeCode": {
+            "meaning": "半成品盘点调整明细表搜索码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表搜索码"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsDeleted": {
+            "meaning": "半成品盘点调整明细表是否被删除",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被删除"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsMaterialId": {
+            "meaning": "半成品盘点调整明细表物料id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表物料id"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPrintTimes": {
+            "meaning": "半成品盘点调整明细表打印次数",
+            "reachable": false,
+            "name": "半成品盘点调整明细表打印次数"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSourceType": {
+            "meaning": "半成品盘点调整明细表来源类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表来源类型"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSystemCode": {
+            "meaning": "半成品盘点调整明细表系统编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表系统编码"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToEndTime": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdateTime": {
+            "meaning": "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdaterId": {
+            "meaning": "半成品盘点调整明细表更新人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人ID"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra1": {
+            "meaning": "半成品盘点调整明细表扩展1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展1"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra2": {
+            "meaning": "半成品盘点调整明细表扩展2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展2"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra3": {
+            "meaning": "半成品盘点调整明细表扩展3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展3"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra4": {
+            "meaning": "半成品盘点调整明细表扩展4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展4"
+        },
+        "adjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra5": {
+            "meaning": "半成品盘点调整明细表扩展5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展5"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAuditStatus": {
+            "meaning": "半成品盘点调整明细表审核状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表审核状态"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBusDivisId": {
+            "meaning": "半成品盘点调整明细表事业部id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表事业部id"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDefaultType": {
+            "meaning": "半成品盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点主类型"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEquipmentId": {
+            "meaning": "半成品盘点调整明细表设备id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表设备id"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFilterClazz": {
+            "meaning": "半成品盘点调整明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "半成品盘点调整明细表冗余字段用于筛选"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsMainFlow": {
+            "meaning": "半成品盘点调整明细表是否是主流程",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否是主流程"
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsReceiptDate": {
+            "meaning": "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "djSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsReceiptType": {
+            "meaning": "半成品盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单据类型"
+        },
+        "dsDetWmsInvAdjSemiFiniGoodsProductionProcessesTypeId": {
+            "meaning": "半成品盘点调整明细表工序类型ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表工序类型ID"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsExchangeRateId": {
+            "meaning": "半成品盘点调整明细表币种汇率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表币种汇率id"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromCreateTime": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra1": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra2": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra3": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra4": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra5": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromUpdateTime": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsGenerativeState": {
+            "meaning": "半成品盘点调整明细表下发状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发状态"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsNameCodeSearch": {
+            "meaning": "半成品盘点调整明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "半成品盘点调整明细表name、user_code模糊搜索"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsRelatedTasksId": {
+            "meaning": "半成品盘点调整明细表关联任务id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表关联任务id"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyName": {
+            "meaning": "半成品盘点调整明细表第三方名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方名称"
+        },
+        "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDeliveryDate": {
+            "meaning": "emiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finiGoodsDetWmsInvAdjSemiFiniGoodsActualTimeRequired": {
+            "meaning": "半成品盘点调整明细表实际需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表实际需时"
+        },
+        "finiGoodsDetWmsInvAdjSemiFiniGoodsInvTypeTaxRateId": {
+            "meaning": "半成品盘点调整明细表发票税率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表发票税率id"
+        },
+        "finiGoodsDetWmsInvAdjSemiFiniGoodsProcessInstanceId": {
+            "meaning": "半成品盘点调整明细表流程实例ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表流程实例ID"
+        },
+        "finiGoodsDetWmsInvAdjSemiFiniGoodsProductionShiftId": {
+            "meaning": "半成品盘点调整明细表生产班次ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表生产班次ID"
+        },
+        "goodsDetWmsInvAdjSemiFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "半成品盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表调整需时"
+        },
+        "iniGoodsDetWmsInvAdjSemiFiniGoodsAvailableScheduleId": {
+            "meaning": "半成品盘点调整明细表可用日程id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表可用日程id"
+        },
+        "iniGoodsDetWmsInvAdjSemiFiniGoodsPlannedTimeRequired": {
+            "meaning": "半成品盘点调整明细表计划需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划需时"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsComment": {
+            "meaning": "半成品盘点调整明细表评论",
+            "reachable": false,
+            "name": "半成品盘点调整明细表评论"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreator": {
+            "meaning": "半成品盘点调整明细表创建人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsInUsed": {
+            "meaning": "半成品盘点调整明细表是否被使用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被使用"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsLeaf": {
+            "meaning": "半成品盘点调整明细表是否叶子节点",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否叶子节点"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSource": {
+            "meaning": "半成品盘点调整明细表源",
+            "reachable": false,
+            "name": "半成品盘点调整明细表源"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTarget": {
+            "meaning": "半成品盘点调整明细表目标",
+            "reachable": false,
+            "name": "半成品盘点调整明细表目标"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdater": {
+            "meaning": "半成品盘点调整明细表更新人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人"
+        },
+        "invAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVersion": {
+            "meaning": "半成品盘点调整明细表版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表版本号"
+        },
+        "miFiniGoodsDetWmsInvAdjSemiFiniGoodsCompleteQuantity": {
+            "meaning": "半成品盘点调整明细表完成数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成数量"
+        },
+        "miFiniGoodsDetWmsInvAdjSemiFiniGoodsEndTimeRequired": {
+            "meaning": "半成品盘点调整明细表最后需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表最后需时"
+        },
+        "miFiniGoodsDetWmsInvAdjSemiFiniGoodsFromReceiptDate": {
+            "meaning": "miFiniGoodsDetWmsInvAdjSemiFiniGoodsFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "miFiniGoodsDetWmsInvAdjSemiFiniGoodsGenerativePeople": {
+            "meaning": "半成品盘点调整明细表下发人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发人"
+        },
+        "miFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyClass": {
+            "meaning": "半成品盘点调整明细表第三方分类",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方分类"
+        },
+        "msInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsName": {
+            "meaning": "半成品盘点调整明细表智能节点名",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点名"
+        },
+        "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEndTime": {
+            "meaning": "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEngName": {
+            "meaning": "半成品盘点调整明细表英文名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表英文名称"
+        },
+        "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFscType": {
+            "meaning": "半成品盘点调整明细表FSC声明",
+            "reachable": false,
+            "name": "半成品盘点调整明细表FSC声明"
+        },
+        "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPriority": {
+            "meaning": "半成品盘点调整明细表优先级",
+            "reachable": false,
+            "name": "半成品盘点调整明细表优先级"
+        },
+        "nvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsQuantity": {
+            "meaning": "半成品盘点调整明细表任务数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务数量"
+        },
+        "odsDetWmsInvAdjSemiFiniGoodsIsManualModificationDate": {
+            "meaning": "半成品盘点调整明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否手动修改计划生产时间"
+        },
+        "oodsDetWmsInvAdjSemiFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "半成品盘点调整明细表总盘点不含税金额",
+            "reachable": false,
+            "name": "半成品盘点调整明细表总盘点不含税金额"
+        },
+        "oodsDetWmsInvAdjSemiFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "半成品盘点调整明细表总盘点含税金额",
+            "reachable": false,
+            "name": "半成品盘点调整明细表总盘点含税金额"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsApplicationId": {
+            "meaning": "半成品盘点调整明细表应用ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表应用ID"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsCompleteStatus": {
+            "meaning": "半成品盘点调整明细表完成状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成状态"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsExternalState": {
+            "meaning": "半成品盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "半成品盘点调整明细表上流程状态位"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromAuditDate": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromBeginTime": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsTaskNodeName": {
+            "meaning": "半成品盘点调整明细表任务节点名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点名称"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsTaskNodeType": {
+            "meaning": "半成品盘点调整明细表任务节点类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点类型"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyId": {
+            "meaning": "半成品盘点调整明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方系统中的唯一ID"
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToCreateTime": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra1": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra2": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra3": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra4": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra5": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToReceiptDate": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToUpdateTime": {
+            "meaning": "semiFiniGoodsDetWmsInvAdjSemiFiniGoodsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetActualTimeRequired": {
+            "meaning": "半成品盘点调整明细表实际需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表实际需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAdjAmountExcludingTax": {
+            "meaning": "半成品盘点调整明细表不含税金额（数量*不含税单价）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表不含税金额"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAdjAmountIncludingTax": {
+            "meaning": "半成品盘点调整明细表含税金额（盘点数量*含税单价）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表含税金额"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAdjSource": {
+            "meaning": "半成品盘点调整明细表调整来源",
+            "reachable": false,
+            "name": "半成品盘点调整明细表调整来源"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAdjustmentTimeRequired": {
+            "meaning": "半成品盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表调整需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetApplicationId": {
+            "meaning": "半成品盘点调整明细表应用ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表应用ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAuditDate": {
+            "meaning": "半成品盘点调整明细表审核时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表审核时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAuditStatus": {
+            "meaning": "半成品盘点调整明细表审核状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表审核状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetAvailableScheduleId": {
+            "meaning": "半成品盘点调整明细表可用日程id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表可用日程id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetBeginTime": {
+            "meaning": "半成品盘点调整明细表开始时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表开始时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetBizOrderId": {
+            "meaning": "半成品盘点调整明细表订单id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表订单id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetBizVersion": {
+            "meaning": "半成品盘点调整明细表业务自定义版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表业务自定义版本号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetBriefName": {
+            "meaning": "半成品盘点调整明细表简称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表简称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetBusDivisId": {
+            "meaning": "半成品盘点调整明细表事业部id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表事业部id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetClazz": {
+            "meaning": "半成品盘点调整明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表子类"
+        },
+        "wmsInvAdjSemiFiniGoodsDetClosedReason": {
+            "meaning": "半成品盘点调整明细表结案原因",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案原因"
+        },
+        "wmsInvAdjSemiFiniGoodsDetClosedStatus": {
+            "meaning": "半成品盘点调整明细表结案状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetComment": {
+            "meaning": "半成品盘点调整明细表评论",
+            "reachable": false,
+            "name": "半成品盘点调整明细表评论"
+        },
+        "wmsInvAdjSemiFiniGoodsDetCompleteQuantity": {
+            "meaning": "半成品盘点调整明细表完成数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetCompleteStatus": {
+            "meaning": "半成品盘点调整明细表完成状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetCreateTime": {
+            "meaning": "半成品盘点调整明细表创建时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetCreator": {
+            "meaning": "半成品盘点调整明细表创建人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetCreatorId": {
+            "meaning": "半成品盘点调整明细表创建人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDateExtra1": {
+            "meaning": "半成品盘点调整明细表扩展时间1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDateExtra2": {
+            "meaning": "半成品盘点调整明细表扩展时间2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDateExtra3": {
+            "meaning": "半成品盘点调整明细表扩展时间3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDateExtra4": {
+            "meaning": "半成品盘点调整明细表扩展时间4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDateExtra5": {
+            "meaning": "半成品盘点调整明细表扩展时间5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDefaultType": {
+            "meaning": "半成品盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点主类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDeliveryDate": {
+            "meaning": "半成品盘点调整明细表交货日期",
+            "reachable": false,
+            "name": "半成品盘点调整明细表交货日期"
+        },
+        "wmsInvAdjSemiFiniGoodsDetDescription": {
+            "meaning": "半成品盘点调整明细表描述",
+            "reachable": false,
+            "name": "半成品盘点调整明细表描述"
+        },
+        "wmsInvAdjSemiFiniGoodsDetEndTime": {
+            "meaning": "半成品盘点调整明细表结束时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结束时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetEndTimeRequired": {
+            "meaning": "半成品盘点调整明细表最后需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表最后需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetEngName": {
+            "meaning": "半成品盘点调整明细表英文名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表英文名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetEquipmentId": {
+            "meaning": "半成品盘点调整明细表设备id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表设备id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetExchangeRateId": {
+            "meaning": "半成品盘点调整明细表币种汇率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表币种汇率id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetExtension": {
+            "meaning": "半成品盘点调整明细表扩展数据",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数据"
+        },
+        "wmsInvAdjSemiFiniGoodsDetExternalState": {
+            "meaning": "半成品盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "半成品盘点调整明细表上流程状态位"
+        },
+        "wmsInvAdjSemiFiniGoodsDetFilterClazz": {
+            "meaning": "半成品盘点调整明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "半成品盘点调整明细表冗余字段用于筛选"
+        },
+        "wmsInvAdjSemiFiniGoodsDetFlags": {
+            "meaning": "半成品盘点调整明细表63位标志位",
+            "reachable": false,
+            "name": "半成品盘点调整明细表63位标志位"
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromAuditDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromBeginTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromCreateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDateExtra1": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDateExtra2": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDateExtra3": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDateExtra4": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDateExtra5": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromDeliveryDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromEndTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromReceiptDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFromUpdateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetFscType": {
+            "meaning": "半成品盘点调整明细表FSC声明",
+            "reachable": false,
+            "name": "半成品盘点调整明细表FSC声明"
+        },
+        "wmsInvAdjSemiFiniGoodsDetGenerativePeople": {
+            "meaning": "半成品盘点调整明细表下发人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetGenerativeState": {
+            "meaning": "半成品盘点调整明细表下发状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetGoodsId": {
+            "meaning": "半成品盘点调整明细表货（包）id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表货"
+        },
+        "wmsInvAdjSemiFiniGoodsDetGroovyScript": {
+            "meaning": "半成品盘点调整明细表groovy脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表groovy脚本"
+        },
+        "wmsInvAdjSemiFiniGoodsDetGropeCode": {
+            "meaning": "半成品盘点调整明细表搜索码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表搜索码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetId": {
+            "meaning": "半成品盘点调整明细表Pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "半成品盘点调整明细表Pk"
+        },
+        "wmsInvAdjSemiFiniGoodsDetInUsed": {
+            "meaning": "半成品盘点调整明细表是否被使用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被使用"
+        },
+        "wmsInvAdjSemiFiniGoodsDetInvTypeTaxRateId": {
+            "meaning": "半成品盘点调整明细表发票税率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表发票税率id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsBanned": {
+            "meaning": "半成品盘点调整明细表是否被禁用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被禁用"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsDeleted": {
+            "meaning": "半成品盘点调整明细表是否被删除",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被删除"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsLeaf": {
+            "meaning": "半成品盘点调整明细表是否叶子节点",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否叶子节点"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsMainFlow": {
+            "meaning": "半成品盘点调整明细表是否是主流程",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否是主流程"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsManualModificationDate": {
+            "meaning": "半成品盘点调整明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否手动修改计划生产时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetIsolation": {
+            "meaning": "半成品盘点调整明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点数据隔离标识"
+        },
+        "wmsInvAdjSemiFiniGoodsDetJsScript": {
+            "meaning": "半成品盘点调整明细表js脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表js脚本"
+        },
+        "wmsInvAdjSemiFiniGoodsDetMatBatchId": {
+            "meaning": "半成品盘点调整明细表物料批次id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表物料批次id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetMaterialId": {
+            "meaning": "半成品盘点调整明细表物料id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表物料id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetName": {
+            "meaning": "半成品盘点调整明细表智能节点名",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点名"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNameCodeSearch": {
+            "meaning": "半成品盘点调整明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "半成品盘点调整明细表name、user_code模糊搜索"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNumberExtra1": {
+            "meaning": "半成品盘点调整明细表扩展数量1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNumberExtra2": {
+            "meaning": "半成品盘点调整明细表扩展数量2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNumberExtra3": {
+            "meaning": "半成品盘点调整明细表扩展数量3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNumberExtra4": {
+            "meaning": "半成品盘点调整明细表扩展数量4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetNumberExtra5": {
+            "meaning": "半成品盘点调整明细表扩展数量5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetParentId": {
+            "meaning": "半成品盘点调整明细表父节点ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表父节点ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetPlannedOutputQuantity": {
+            "meaning": "半成品盘点调整明细表计划产出数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划产出数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetPlannedTimeRequired": {
+            "meaning": "半成品盘点调整明细表计划需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetPosition": {
+            "meaning": "半成品盘点调整明细表仓位",
+            "reachable": false,
+            "name": "半成品盘点调整明细表仓位"
+        },
+        "wmsInvAdjSemiFiniGoodsDetPrintTimes": {
+            "meaning": "半成品盘点调整明细表打印次数",
+            "reachable": false,
+            "name": "半成品盘点调整明细表打印次数"
+        },
+        "wmsInvAdjSemiFiniGoodsDetPriority": {
+            "meaning": "半成品盘点调整明细表优先级",
+            "reachable": false,
+            "name": "半成品盘点调整明细表优先级"
+        },
+        "wmsInvAdjSemiFiniGoodsDetProcessInstanceId": {
+            "meaning": "半成品盘点调整明细表流程实例ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表流程实例ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetProductionProcessesTypeId": {
+            "meaning": "半成品盘点调整明细表工序类型ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表工序类型ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetProductionShiftId": {
+            "meaning": "半成品盘点调整明细表生产班次ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表生产班次ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetQuantity": {
+            "meaning": "半成品盘点调整明细表任务数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetReceiptDate": {
+            "meaning": "半成品盘点调整明细表单据日期",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单据日期"
+        },
+        "wmsInvAdjSemiFiniGoodsDetReceiptType": {
+            "meaning": "半成品盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单据类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetRelatedTasksId": {
+            "meaning": "半成品盘点调整明细表关联任务id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表关联任务id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetSerialNumber": {
+            "meaning": "半成品盘点调整明细表顺序号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表顺序号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetSource": {
+            "meaning": "半成品盘点调整明细表源",
+            "reachable": false,
+            "name": "半成品盘点调整明细表源"
+        },
+        "wmsInvAdjSemiFiniGoodsDetSourceType": {
+            "meaning": "半成品盘点调整明细表来源类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表来源类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetState": {
+            "meaning": "半成品盘点调整明细表通用状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表通用状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetSystemCode": {
+            "meaning": "半成品盘点调整明细表系统编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表系统编码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetTarget": {
+            "meaning": "半成品盘点调整明细表目标",
+            "reachable": false,
+            "name": "半成品盘点调整明细表目标"
+        },
+        "wmsInvAdjSemiFiniGoodsDetTaskNodeName": {
+            "meaning": "半成品盘点调整明细表任务节点名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetTaskNodeType": {
+            "meaning": "半成品盘点调整明细表任务节点类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetTenantId": {
+            "meaning": "半成品盘点调整明细表租户ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表租户ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetThirdPartyClass": {
+            "meaning": "半成品盘点调整明细表第三方分类",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方分类"
+        },
+        "wmsInvAdjSemiFiniGoodsDetThirdPartyId": {
+            "meaning": "半成品盘点调整明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方系统中的唯一ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetThirdPartyName": {
+            "meaning": "半成品盘点调整明细表第三方名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetToAuditDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToBeginTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToCreateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDateExtra1": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDateExtra2": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDateExtra3": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDateExtra4": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDateExtra5": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToDeliveryDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToEndTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToReceiptDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetToUpdateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetUnitCode": {
+            "meaning": "半成品盘点调整明细表单位id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单位id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUnitPriceExcludingTax": {
+            "meaning": "半成品盘点调整明细表不含税单价",
+            "reachable": false,
+            "name": "半成品盘点调整明细表不含税单价"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUnitPriceIncludingTax": {
+            "meaning": "半成品盘点调整明细表含税单价",
+            "reachable": false,
+            "name": "半成品盘点调整明细表含税单价"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUpdateTime": {
+            "meaning": "半成品盘点调整明细表更新时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUpdater": {
+            "meaning": "半成品盘点调整明细表更新人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUpdaterId": {
+            "meaning": "半成品盘点调整明细表更新人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetUserCode": {
+            "meaning": "半成品盘点调整明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点的唯一编码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVarExtra1": {
+            "meaning": "半成品盘点调整明细表扩展1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVarExtra2": {
+            "meaning": "半成品盘点调整明细表扩展2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVarExtra3": {
+            "meaning": "半成品盘点调整明细表扩展3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVarExtra4": {
+            "meaning": "半成品盘点调整明细表扩展4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVarExtra5": {
+            "meaning": "半成品盘点调整明细表扩展5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetVersion": {
+            "meaning": "半成品盘点调整明细表版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表版本号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsActualTimeRequired": {
+            "meaning": "半成品盘点调整明细表实际需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表实际需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "半成品盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表调整需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsApplicationId": {
+            "meaning": "半成品盘点调整明细表应用ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表应用ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAuditDate": {
+            "meaning": "半成品盘点调整明细表审核时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表审核时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAuditStatus": {
+            "meaning": "半成品盘点调整明细表审核状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表审核状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsAvailableScheduleId": {
+            "meaning": "半成品盘点调整明细表可用日程id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表可用日程id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBeginTime": {
+            "meaning": "半成品盘点调整明细表开始时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表开始时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBizVersion": {
+            "meaning": "半成品盘点调整明细表业务自定义版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表业务自定义版本号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBriefName": {
+            "meaning": "半成品盘点调整明细表简称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表简称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsBusDivisId": {
+            "meaning": "半成品盘点调整明细表事业部id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表事业部id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClazz": {
+            "meaning": "半成品盘点调整明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表子类"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClosedReason": {
+            "meaning": "半成品盘点调整明细表结案原因",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案原因"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsClosedStatus": {
+            "meaning": "半成品盘点调整明细表结案状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结案状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsComment": {
+            "meaning": "半成品盘点调整明细表评论",
+            "reachable": false,
+            "name": "半成品盘点调整明细表评论"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCompleteQuantity": {
+            "meaning": "半成品盘点调整明细表完成数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCompleteStatus": {
+            "meaning": "半成品盘点调整明细表完成状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表完成状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreateTime": {
+            "meaning": "半成品盘点调整明细表创建时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreator": {
+            "meaning": "半成品盘点调整明细表创建人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsCreatorId": {
+            "meaning": "半成品盘点调整明细表创建人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表创建人ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra1": {
+            "meaning": "半成品盘点调整明细表扩展时间1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra2": {
+            "meaning": "半成品盘点调整明细表扩展时间2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra3": {
+            "meaning": "半成品盘点调整明细表扩展时间3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra4": {
+            "meaning": "半成品盘点调整明细表扩展时间4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDateExtra5": {
+            "meaning": "半成品盘点调整明细表扩展时间5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展时间5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDefaultType": {
+            "meaning": "半成品盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点主类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDeliveryDate": {
+            "meaning": "半成品盘点调整明细表交货日期",
+            "reachable": false,
+            "name": "半成品盘点调整明细表交货日期"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsDescription": {
+            "meaning": "半成品盘点调整明细表描述",
+            "reachable": false,
+            "name": "半成品盘点调整明细表描述"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEndTime": {
+            "meaning": "半成品盘点调整明细表结束时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表结束时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEndTimeRequired": {
+            "meaning": "半成品盘点调整明细表最后需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表最后需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEngName": {
+            "meaning": "半成品盘点调整明细表英文名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表英文名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsEquipmentId": {
+            "meaning": "半成品盘点调整明细表设备id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表设备id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsExchangeRateId": {
+            "meaning": "半成品盘点调整明细表币种汇率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表币种汇率id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsExtension": {
+            "meaning": "半成品盘点调整明细表扩展数据",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数据"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsExternalState": {
+            "meaning": "半成品盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "半成品盘点调整明细表上流程状态位"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFilterClazz": {
+            "meaning": "半成品盘点调整明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "半成品盘点调整明细表冗余字段用于筛选"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFlags": {
+            "meaning": "半成品盘点调整明细表63位标志位",
+            "reachable": false,
+            "name": "半成品盘点调整明细表63位标志位"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromAuditDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromBeginTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromCreateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra1": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra2": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra3": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra4": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra5": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDeliveryDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromEndTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromReceiptDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromUpdateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsFscType": {
+            "meaning": "半成品盘点调整明细表FSC声明",
+            "reachable": false,
+            "name": "半成品盘点调整明细表FSC声明"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGenerativePeople": {
+            "meaning": "半成品盘点调整明细表下发人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGenerativeState": {
+            "meaning": "半成品盘点调整明细表下发状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表下发状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGroovyScript": {
+            "meaning": "半成品盘点调整明细表groovy脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表groovy脚本"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsGropeCode": {
+            "meaning": "半成品盘点调整明细表搜索码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表搜索码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsId": {
+            "meaning": "半成品盘点调整明细表Pk",
+            "reachable": false,
+            "name": "半成品盘点调整明细表Pk"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsInUsed": {
+            "meaning": "半成品盘点调整明细表是否被使用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被使用"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsInvTypeTaxRateId": {
+            "meaning": "半成品盘点调整明细表发票税率id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表发票税率id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsBanned": {
+            "meaning": "半成品盘点调整明细表是否被禁用",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被禁用"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsDeleted": {
+            "meaning": "半成品盘点调整明细表是否被删除",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否被删除"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsLeaf": {
+            "meaning": "半成品盘点调整明细表是否叶子节点",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否叶子节点"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsMainFlow": {
+            "meaning": "半成品盘点调整明细表是否是主流程",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否是主流程"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsManualModificationDate": {
+            "meaning": "半成品盘点调整明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表是否手动修改计划生产时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsIsolation": {
+            "meaning": "半成品盘点调整明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点数据隔离标识"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsJsScript": {
+            "meaning": "半成品盘点调整明细表js脚本",
+            "reachable": false,
+            "name": "半成品盘点调整明细表js脚本"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsMaterialId": {
+            "meaning": "半成品盘点调整明细表物料id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表物料id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsName": {
+            "meaning": "半成品盘点调整明细表智能节点名",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点名"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNameCodeSearch": {
+            "meaning": "半成品盘点调整明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "半成品盘点调整明细表name、user_code模糊搜索"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra1": {
+            "meaning": "半成品盘点调整明细表扩展数量1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra2": {
+            "meaning": "半成品盘点调整明细表扩展数量2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra3": {
+            "meaning": "半成品盘点调整明细表扩展数量3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra4": {
+            "meaning": "半成品盘点调整明细表扩展数量4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsNumberExtra5": {
+            "meaning": "半成品盘点调整明细表扩展数量5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展数量5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsParentId": {
+            "meaning": "半成品盘点调整明细表父节点ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表父节点ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPlannedOutputQuantity": {
+            "meaning": "半成品盘点调整明细表计划产出数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划产出数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPlannedTimeRequired": {
+            "meaning": "半成品盘点调整明细表计划需时(小时)",
+            "reachable": false,
+            "name": "半成品盘点调整明细表计划需时"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPrintTimes": {
+            "meaning": "半成品盘点调整明细表打印次数",
+            "reachable": false,
+            "name": "半成品盘点调整明细表打印次数"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsPriority": {
+            "meaning": "半成品盘点调整明细表优先级",
+            "reachable": false,
+            "name": "半成品盘点调整明细表优先级"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsProcessInstanceId": {
+            "meaning": "半成品盘点调整明细表流程实例ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表流程实例ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsProductionProcessesTypeId": {
+            "meaning": "半成品盘点调整明细表工序类型ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表工序类型ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsProductionShiftId": {
+            "meaning": "半成品盘点调整明细表生产班次ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表生产班次ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsQuantity": {
+            "meaning": "半成品盘点调整明细表任务数量",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务数量"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsReceiptDate": {
+            "meaning": "半成品盘点调整明细表单据日期",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单据日期"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsReceiptType": {
+            "meaning": "半成品盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单据类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsRelatedTasksId": {
+            "meaning": "半成品盘点调整明细表关联任务id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表关联任务id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSerialNumber": {
+            "meaning": "半成品盘点调整明细表顺序号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表顺序号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSource": {
+            "meaning": "半成品盘点调整明细表源",
+            "reachable": false,
+            "name": "半成品盘点调整明细表源"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSourceType": {
+            "meaning": "半成品盘点调整明细表来源类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表来源类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsState": {
+            "meaning": "半成品盘点调整明细表通用状态",
+            "reachable": false,
+            "name": "半成品盘点调整明细表通用状态"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsSystemCode": {
+            "meaning": "半成品盘点调整明细表系统编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表系统编码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTarget": {
+            "meaning": "半成品盘点调整明细表目标",
+            "reachable": false,
+            "name": "半成品盘点调整明细表目标"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTaskNodeName": {
+            "meaning": "半成品盘点调整明细表任务节点名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTaskNodeType": {
+            "meaning": "半成品盘点调整明细表任务节点类型",
+            "reachable": false,
+            "name": "半成品盘点调整明细表任务节点类型"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTenantId": {
+            "meaning": "半成品盘点调整明细表租户ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表租户ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyClass": {
+            "meaning": "半成品盘点调整明细表第三方分类",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方分类"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyId": {
+            "meaning": "半成品盘点调整明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方系统中的唯一ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsThirdPartyName": {
+            "meaning": "半成品盘点调整明细表第三方名称",
+            "reachable": false,
+            "name": "半成品盘点调整明细表第三方名称"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToAuditDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToBeginTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToCreateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra1": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra2": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra3": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra4": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra5": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDeliveryDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToEndTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToReceiptDate": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToUpdateTime": {
+            "meaning": "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "半成品盘点调整明细表总盘点不含税金额",
+            "reachable": false,
+            "name": "半成品盘点调整明细表总盘点不含税金额"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "半成品盘点调整明细表总盘点含税金额",
+            "reachable": false,
+            "name": "半成品盘点调整明细表总盘点含税金额"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUnitCode": {
+            "meaning": "半成品盘点调整明细表单位id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表单位id"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdateTime": {
+            "meaning": "半成品盘点调整明细表更新时间",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新时间"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdater": {
+            "meaning": "半成品盘点调整明细表更新人",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUpdaterId": {
+            "meaning": "半成品盘点调整明细表更新人ID",
+            "reachable": false,
+            "name": "半成品盘点调整明细表更新人ID"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsUserCode": {
+            "meaning": "半成品盘点调整明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "半成品盘点调整明细表智能节点的唯一编码"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra1": {
+            "meaning": "半成品盘点调整明细表扩展1",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展1"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra2": {
+            "meaning": "半成品盘点调整明细表扩展2",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展2"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra3": {
+            "meaning": "半成品盘点调整明细表扩展3",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展3"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra4": {
+            "meaning": "半成品盘点调整明细表扩展4",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展4"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVarExtra5": {
+            "meaning": "半成品盘点调整明细表扩展5",
+            "reachable": false,
+            "name": "半成品盘点调整明细表扩展5"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWmsInvAdjSemiFiniGoodsVersion": {
+            "meaning": "半成品盘点调整明细表版本号",
+            "reachable": false,
+            "name": "半成品盘点调整明细表版本号"
+        },
+        "wmsInvAdjSemiFiniGoodsDetWorkOrderId": {
+            "meaning": "半成品盘点调整明细表工单id",
+            "reachable": false,
+            "name": "半成品盘点调整明细表工单id"
+        }
+    }
+}

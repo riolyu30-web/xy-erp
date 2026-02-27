@@ -1,0 +1,706 @@
+{
+    "api_name": "/mat-arr/findList",
+    "table_name": "物料到货主表",
+    "request": {
+        "matArrClazz": "MAT_ARR"
+    },
+    "mainTabClazz": "MAT_ARR",
+    "response": {
+        "matArrActualTimeRequired": {
+            "meaning": "物料到货主表实际需时(小时)",
+            "reachable": true,
+            "name": "物料到货主表实际需时"
+        },
+        "matArrAdjustmentTimeRequired": {
+            "meaning": "物料到货主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料到货主表调整需时"
+        },
+        "matArrApplicationId": {
+            "meaning": "物料到货主表应用ID",
+            "reachable": true,
+            "name": "物料到货主表应用ID"
+        },
+        "matArrAuditDate": {
+            "meaning": "物料到货主表审核时间",
+            "reachable": true,
+            "name": "物料到货主表审核时间"
+        },
+        "matArrAuditStatus": {
+            "meaning": "物料到货主表审核状态",
+            "reachable": true,
+            "name": "物料到货主表审核状态"
+        },
+        "matArrAvailableScheduleId": {
+            "meaning": "物料到货主表可用日程id",
+            "reachable": true,
+            "name": "物料到货主表可用日程id"
+        },
+        "matArrBeginTime": {
+            "meaning": "物料到货主表开始时间",
+            "reachable": true,
+            "name": "物料到货主表开始时间"
+        },
+        "matArrBizVersion": {
+            "meaning": "物料到货主表业务自定义版本号",
+            "reachable": true,
+            "name": "物料到货主表业务自定义版本号"
+        },
+        "matArrBriefName": {
+            "meaning": "物料到货主表简称",
+            "reachable": true,
+            "name": "物料到货主表简称"
+        },
+        "matArrBusDivisId": {
+            "meaning": "物料到货主表事业部id",
+            "reachable": true,
+            "name": "物料到货主表事业部id"
+        },
+        "matArrClazz": {
+            "meaning": "物料到货主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料到货主表子类"
+        },
+        "matArrClosedReason": {
+            "meaning": "物料到货主表结案原因",
+            "reachable": true,
+            "name": "物料到货主表结案原因"
+        },
+        "matArrClosedStatus": {
+            "meaning": "物料到货主表结案状态",
+            "reachable": true,
+            "name": "物料到货主表结案状态"
+        },
+        "matArrCneeAddr": {
+            "meaning": "物料到货主表收货地址",
+            "reachable": true,
+            "name": "物料到货主表收货地址"
+        },
+        "matArrCneeDate": {
+            "meaning": "物料到货主表收货日期",
+            "reachable": true,
+            "name": "物料到货主表收货日期"
+        },
+        "matArrCneeName": {
+            "meaning": "物料到货主表收货人",
+            "reachable": true,
+            "name": "物料到货主表收货人"
+        },
+        "matArrComment": {
+            "meaning": "物料到货主表评论",
+            "reachable": true,
+            "name": "物料到货主表评论"
+        },
+        "matArrCompleteQuantity": {
+            "meaning": "物料到货主表完成数量",
+            "reachable": true,
+            "name": "物料到货主表完成数量"
+        },
+        "matArrCompleteStatus": {
+            "meaning": "物料到货主表完成状态",
+            "reachable": true,
+            "name": "物料到货主表完成状态"
+        },
+        "matArrCreateTime": {
+            "meaning": "物料到货主表创建时间",
+            "reachable": true,
+            "name": "物料到货主表创建时间"
+        },
+        "matArrCreator": {
+            "meaning": "物料到货主表创建人",
+            "reachable": true,
+            "name": "物料到货主表创建人"
+        },
+        "matArrCreatorId": {
+            "meaning": "物料到货主表创建人ID",
+            "reachable": true,
+            "name": "物料到货主表创建人ID"
+        },
+        "matArrCurrency": {
+            "meaning": "物料到货主表币种",
+            "reachable": true,
+            "name": "物料到货主表币种"
+        },
+        "matArrCurrencyExchangeRate": {
+            "meaning": "物料到货主表汇率",
+            "reachable": true,
+            "name": "物料到货主表汇率"
+        },
+        "matArrCurrencyExchangeRateId": {
+            "meaning": "物料到货主表汇率id",
+            "reachable": true,
+            "name": "物料到货主表汇率id"
+        },
+        "matArrCurrencyId": {
+            "meaning": "物料到货主表币种id",
+            "reachable": true,
+            "name": "物料到货主表币种id"
+        },
+        "matArrDateExtra1": {
+            "meaning": "物料到货主表扩展时间1",
+            "reachable": true,
+            "name": "物料到货主表扩展时间1"
+        },
+        "matArrDateExtra2": {
+            "meaning": "物料到货主表扩展时间2",
+            "reachable": true,
+            "name": "物料到货主表扩展时间2"
+        },
+        "matArrDateExtra3": {
+            "meaning": "物料到货主表扩展时间3",
+            "reachable": true,
+            "name": "物料到货主表扩展时间3"
+        },
+        "matArrDateExtra4": {
+            "meaning": "物料到货主表扩展时间4",
+            "reachable": true,
+            "name": "物料到货主表扩展时间4"
+        },
+        "matArrDateExtra5": {
+            "meaning": "物料到货主表扩展时间5",
+            "reachable": true,
+            "name": "物料到货主表扩展时间5"
+        },
+        "matArrDecimalMethod": {
+            "meaning": "物料到货主表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "物料到货主表保留小数位方法"
+        },
+        "matArrDefaultType": {
+            "meaning": "物料到货主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料到货主表智能节点主类型"
+        },
+        "matArrDelOrdNum": {
+            "meaning": "物料到货主表送货单号",
+            "reachable": true,
+            "name": "物料到货主表送货单号"
+        },
+        "matArrDeliveryDate": {
+            "meaning": "物料到货主表交货日期",
+            "reachable": true,
+            "name": "物料到货主表交货日期"
+        },
+        "matArrDescription": {
+            "meaning": "物料到货主表描述",
+            "reachable": true,
+            "name": "物料到货主表描述"
+        },
+        "matArrEndTime": {
+            "meaning": "物料到货主表结束时间",
+            "reachable": true,
+            "name": "物料到货主表结束时间"
+        },
+        "matArrEndTimeRequired": {
+            "meaning": "物料到货主表最后需时(小时)",
+            "reachable": true,
+            "name": "物料到货主表最后需时"
+        },
+        "matArrEngName": {
+            "meaning": "物料到货主表英文名称",
+            "reachable": true,
+            "name": "物料到货主表英文名称"
+        },
+        "matArrEquipmentId": {
+            "meaning": "物料到货主表设备id",
+            "reachable": true,
+            "name": "物料到货主表设备id"
+        },
+        "matArrExchangeRateId": {
+            "meaning": "物料到货主表币种汇率id",
+            "reachable": true,
+            "name": "物料到货主表币种汇率id"
+        },
+        "matArrExtension": {
+            "meaning": "物料到货主表扩展数据",
+            "reachable": true,
+            "name": "物料到货主表扩展数据"
+        },
+        "matArrExternalState": {
+            "meaning": "物料到货主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料到货主表上流程状态位"
+        },
+        "matArrFilterClazz": {
+            "meaning": "物料到货主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料到货主表冗余字段用于筛选"
+        },
+        "matArrFlags": {
+            "meaning": "物料到货主表63位标志位",
+            "reachable": true,
+            "name": "物料到货主表63位标志位"
+        },
+        "matArrFromAuditDate": {
+            "meaning": "matArrFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromBeginTime": {
+            "meaning": "matArrFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromCneeDate": {
+            "meaning": "matArrFromCneeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromCreateTime": {
+            "meaning": "matArrFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDateExtra1": {
+            "meaning": "matArrFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDateExtra2": {
+            "meaning": "matArrFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDateExtra3": {
+            "meaning": "matArrFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDateExtra4": {
+            "meaning": "matArrFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDateExtra5": {
+            "meaning": "matArrFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromDeliveryDate": {
+            "meaning": "matArrFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromEndTime": {
+            "meaning": "matArrFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromReceiptDate": {
+            "meaning": "matArrFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFromUpdateTime": {
+            "meaning": "matArrFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrFscType": {
+            "meaning": "物料到货主表FSC声明",
+            "reachable": true,
+            "name": "物料到货主表FSC声明"
+        },
+        "matArrGenerativePeople": {
+            "meaning": "物料到货主表下发人",
+            "reachable": true,
+            "name": "物料到货主表下发人"
+        },
+        "matArrGenerativeState": {
+            "meaning": "物料到货主表下发状态",
+            "reachable": true,
+            "name": "物料到货主表下发状态"
+        },
+        "matArrGroovyScript": {
+            "meaning": "物料到货主表groovy脚本",
+            "reachable": true,
+            "name": "物料到货主表groovy脚本"
+        },
+        "matArrGropeCode": {
+            "meaning": "物料到货主表搜索码",
+            "reachable": true,
+            "name": "物料到货主表搜索码"
+        },
+        "matArrId": {
+            "meaning": "物料到货主表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料到货主表PK"
+        },
+        "matArrInUsed": {
+            "meaning": "物料到货主表是否被使用",
+            "reachable": true,
+            "name": "物料到货主表是否被使用"
+        },
+        "matArrInvTypeTaxRateId": {
+            "meaning": "物料到货主表发票税率id",
+            "reachable": true,
+            "name": "物料到货主表发票税率id"
+        },
+        "matArrInvoiceTypeTaxRate": {
+            "meaning": "物料到货主表税率",
+            "reachable": true,
+            "name": "物料到货主表税率"
+        },
+        "matArrInvoiceTypeTaxRateId": {
+            "meaning": "物料到货主表税率id",
+            "reachable": true,
+            "name": "物料到货主表税率id"
+        },
+        "matArrIsBanned": {
+            "meaning": "物料到货主表是否被禁用",
+            "reachable": true,
+            "name": "物料到货主表是否被禁用"
+        },
+        "matArrIsDeleted": {
+            "meaning": "物料到货主表是否被删除",
+            "reachable": true,
+            "name": "物料到货主表是否被删除"
+        },
+        "matArrIsLeaf": {
+            "meaning": "物料到货主表是否叶子节点",
+            "reachable": true,
+            "name": "物料到货主表是否叶子节点"
+        },
+        "matArrIsMainFlow": {
+            "meaning": "物料到货主表是否是主流程",
+            "reachable": true,
+            "name": "物料到货主表是否是主流程"
+        },
+        "matArrIsManualModificationDate": {
+            "meaning": "物料到货主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料到货主表是否手动修改计划生产时间"
+        },
+        "matArrIsolation": {
+            "meaning": "物料到货主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料到货主表智能节点数据隔离标识"
+        },
+        "matArrJsScript": {
+            "meaning": "物料到货主表js脚本",
+            "reachable": true,
+            "name": "物料到货主表js脚本"
+        },
+        "matArrMaterialId": {
+            "meaning": "物料到货主表物料id",
+            "reachable": true,
+            "name": "物料到货主表物料id"
+        },
+        "matArrName": {
+            "meaning": "物料到货主表智能节点名",
+            "reachable": true,
+            "name": "物料到货主表智能节点名"
+        },
+        "matArrNameCodeSearch": {
+            "meaning": "物料到货主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料到货主表name、user_code模糊搜索"
+        },
+        "matArrNumberExtra1": {
+            "meaning": "物料到货主表扩展数量1",
+            "reachable": true,
+            "name": "物料到货主表扩展数量1"
+        },
+        "matArrNumberExtra2": {
+            "meaning": "物料到货主表扩展数量2",
+            "reachable": true,
+            "name": "物料到货主表扩展数量2"
+        },
+        "matArrNumberExtra3": {
+            "meaning": "物料到货主表扩展数量3",
+            "reachable": true,
+            "name": "物料到货主表扩展数量3"
+        },
+        "matArrNumberExtra4": {
+            "meaning": "物料到货主表扩展数量4",
+            "reachable": true,
+            "name": "物料到货主表扩展数量4"
+        },
+        "matArrNumberExtra5": {
+            "meaning": "物料到货主表扩展数量5",
+            "reachable": true,
+            "name": "物料到货主表扩展数量5"
+        },
+        "matArrParentId": {
+            "meaning": "物料到货主表父节点ID",
+            "reachable": true,
+            "name": "物料到货主表父节点ID"
+        },
+        "matArrPlannedOutputQuantity": {
+            "meaning": "物料到货主表计划产出数量",
+            "reachable": true,
+            "name": "物料到货主表计划产出数量"
+        },
+        "matArrPlannedTimeRequired": {
+            "meaning": "物料到货主表计划需时(小时)",
+            "reachable": true,
+            "name": "物料到货主表计划需时"
+        },
+        "matArrPrintTimes": {
+            "meaning": "物料到货主表打印次数",
+            "reachable": true,
+            "name": "物料到货主表打印次数"
+        },
+        "matArrPriority": {
+            "meaning": "物料到货主表优先级",
+            "reachable": true,
+            "name": "物料到货主表优先级"
+        },
+        "matArrProcessInstanceId": {
+            "meaning": "物料到货主表流程实例ID",
+            "reachable": true,
+            "name": "物料到货主表流程实例ID"
+        },
+        "matArrProductionProcessesTypeId": {
+            "meaning": "物料到货主表工序类型ID",
+            "reachable": true,
+            "name": "物料到货主表工序类型ID"
+        },
+        "matArrProductionShiftId": {
+            "meaning": "物料到货主表生产班次ID",
+            "reachable": true,
+            "name": "物料到货主表生产班次ID"
+        },
+        "matArrQuantity": {
+            "meaning": "物料到货主表任务数量",
+            "reachable": true,
+            "name": "物料到货主表任务数量"
+        },
+        "matArrReceiptDate": {
+            "meaning": "物料到货主表单据日期",
+            "reachable": true,
+            "name": "物料到货主表单据日期"
+        },
+        "matArrReceiptSupplierId": {
+            "meaning": "物料到货主表收货供应商id",
+            "reachable": true,
+            "name": "物料到货主表收货供应商id"
+        },
+        "matArrReceiptType": {
+            "meaning": "物料到货主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料到货主表单据类型"
+        },
+        "matArrRelatedTasksId": {
+            "meaning": "物料到货主表关联任务id",
+            "reachable": true,
+            "name": "物料到货主表关联任务id"
+        },
+        "matArrSerialNumber": {
+            "meaning": "物料到货主表顺序号",
+            "reachable": true,
+            "name": "物料到货主表顺序号"
+        },
+        "matArrSetInvTyp": {
+            "meaning": "物料到货主表结算发票类型",
+            "reachable": true,
+            "name": "物料到货主表结算发票类型"
+        },
+        "matArrSetMethod": {
+            "meaning": "物料到货主表结算方式",
+            "reachable": true,
+            "name": "物料到货主表结算方式"
+        },
+        "matArrSettlementSupplierId": {
+            "meaning": "物料到货主表结算供应商",
+            "reachable": true,
+            "name": "物料到货主表结算供应商"
+        },
+        "matArrSettlementTotalAmountKeepDecimalPlace": {
+            "meaning": "物料到货主表结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "物料到货主表结算金额保留小数位"
+        },
+        "matArrSettlementUnitPriceKeepDecimalPlace": {
+            "meaning": "物料到货主表结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "物料到货主表结算单价保留小数位"
+        },
+        "matArrSource": {
+            "meaning": "物料到货主表源",
+            "reachable": true,
+            "name": "物料到货主表源"
+        },
+        "matArrSourceType": {
+            "meaning": "物料到货主表来源类型",
+            "reachable": true,
+            "name": "物料到货主表来源类型"
+        },
+        "matArrState": {
+            "meaning": "物料到货主表通用状态",
+            "reachable": true,
+            "name": "物料到货主表通用状态"
+        },
+        "matArrSupCntPer": {
+            "meaning": "物料到货主表供应商联系人",
+            "reachable": true,
+            "name": "物料到货主表供应商联系人"
+        },
+        "matArrSupTel": {
+            "meaning": "物料到货主表供应商电话",
+            "reachable": true,
+            "name": "物料到货主表供应商电话"
+        },
+        "matArrSupplierId": {
+            "meaning": "物料到货主表供应商id",
+            "reachable": true,
+            "name": "物料到货主表供应商id"
+        },
+        "matArrSystemCode": {
+            "meaning": "物料到货主表系统编码",
+            "reachable": true,
+            "name": "物料到货主表系统编码"
+        },
+        "matArrTarget": {
+            "meaning": "物料到货主表目标",
+            "reachable": true,
+            "name": "物料到货主表目标"
+        },
+        "matArrTaskNodeName": {
+            "meaning": "物料到货主表任务节点名称",
+            "reachable": true,
+            "name": "物料到货主表任务节点名称"
+        },
+        "matArrTenantId": {
+            "meaning": "物料到货主表租户_id",
+            "reachable": true,
+            "name": "物料到货主表租户_id"
+        },
+        "matArrThirdPartyClass": {
+            "meaning": "物料到货主表第三方分类",
+            "reachable": true,
+            "name": "物料到货主表第三方分类"
+        },
+        "matArrThirdPartyId": {
+            "meaning": "物料到货主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料到货主表第三方系统中的唯一ID"
+        },
+        "matArrThirdPartyName": {
+            "meaning": "物料到货主表第三方名称",
+            "reachable": true,
+            "name": "物料到货主表第三方名称"
+        },
+        "matArrToAuditDate": {
+            "meaning": "matArrToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToBeginTime": {
+            "meaning": "matArrToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToCneeDate": {
+            "meaning": "matArrToCneeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToCreateTime": {
+            "meaning": "matArrToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDateExtra1": {
+            "meaning": "matArrToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDateExtra2": {
+            "meaning": "matArrToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDateExtra3": {
+            "meaning": "matArrToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDateExtra4": {
+            "meaning": "matArrToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDateExtra5": {
+            "meaning": "matArrToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToDeliveryDate": {
+            "meaning": "matArrToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToEndTime": {
+            "meaning": "matArrToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToReceiptDate": {
+            "meaning": "matArrToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrToUpdateTime": {
+            "meaning": "matArrToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matArrUnitCode": {
+            "meaning": "物料到货主表单位id",
+            "reachable": true,
+            "name": "物料到货主表单位id"
+        },
+        "matArrUpdateTime": {
+            "meaning": "物料到货主表更新时间",
+            "reachable": true,
+            "name": "物料到货主表更新时间"
+        },
+        "matArrUpdater": {
+            "meaning": "物料到货主表更新人",
+            "reachable": true,
+            "name": "物料到货主表更新人"
+        },
+        "matArrUpdaterId": {
+            "meaning": "物料到货主表更新人ID",
+            "reachable": true,
+            "name": "物料到货主表更新人ID"
+        },
+        "matArrUserCode": {
+            "meaning": "物料到货主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料到货主表智能节点的唯一编码"
+        },
+        "matArrVarExtra1": {
+            "meaning": "物料到货主表扩展1",
+            "reachable": true,
+            "name": "物料到货主表扩展1"
+        },
+        "matArrVarExtra2": {
+            "meaning": "物料到货主表扩展2",
+            "reachable": true,
+            "name": "物料到货主表扩展2"
+        },
+        "matArrVarExtra3": {
+            "meaning": "物料到货主表扩展3",
+            "reachable": true,
+            "name": "物料到货主表扩展3"
+        },
+        "matArrVarExtra4": {
+            "meaning": "物料到货主表扩展4",
+            "reachable": true,
+            "name": "物料到货主表扩展4"
+        },
+        "matArrVarExtra5": {
+            "meaning": "物料到货主表扩展5",
+            "reachable": true,
+            "name": "物料到货主表扩展5"
+        },
+        "matArrVersion": {
+            "meaning": "物料到货主表版本号",
+            "reachable": true,
+            "name": "物料到货主表版本号"
+        }
+    }
+}

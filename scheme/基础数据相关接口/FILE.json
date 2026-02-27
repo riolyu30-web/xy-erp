@@ -1,0 +1,386 @@
+{
+    "api_name": "/file/findList",
+    "table_name": "文件管理表",
+    "request": {
+        "fileClazz": "FILE"
+    },
+    "mainTabClazz": "FILE",
+    "response": {
+        "fileApplicationId": {
+            "meaning": "文件管理表应用ID",
+            "reachable": true,
+            "name": "文件管理表应用ID"
+        },
+        "fileAuditDate": {
+            "meaning": "文件管理表审核时间",
+            "reachable": true,
+            "name": "文件管理表审核时间"
+        },
+        "fileAuditStatus": {
+            "meaning": "文件管理表审核状态",
+            "reachable": true,
+            "name": "文件管理表审核状态"
+        },
+        "fileBizVersion": {
+            "meaning": "文件管理表业务自定义版本号",
+            "reachable": true,
+            "name": "文件管理表业务自定义版本号"
+        },
+        "fileBriefName": {
+            "meaning": "文件管理表简称",
+            "reachable": true,
+            "name": "文件管理表简称"
+        },
+        "fileBusDivisId": {
+            "meaning": "文件管理表事业部id",
+            "reachable": true,
+            "name": "文件管理表事业部id"
+        },
+        "fileClazz": {
+            "meaning": "文件管理表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "文件管理表子类"
+        },
+        "fileComment": {
+            "meaning": "文件管理表评论",
+            "reachable": true,
+            "name": "文件管理表评论"
+        },
+        "fileCreateTime": {
+            "meaning": "文件管理表创建时间",
+            "reachable": true,
+            "name": "文件管理表创建时间"
+        },
+        "fileCreator": {
+            "meaning": "文件管理表创建人",
+            "reachable": true,
+            "name": "文件管理表创建人"
+        },
+        "fileCreatorId": {
+            "meaning": "文件管理表创建人ID",
+            "reachable": true,
+            "name": "文件管理表创建人ID"
+        },
+        "fileDateExtra1": {
+            "meaning": "文件管理表扩展时间1",
+            "reachable": true,
+            "name": "文件管理表扩展时间1"
+        },
+        "fileDateExtra2": {
+            "meaning": "文件管理表扩展时间2",
+            "reachable": true,
+            "name": "文件管理表扩展时间2"
+        },
+        "fileDateExtra3": {
+            "meaning": "文件管理表扩展时间3",
+            "reachable": true,
+            "name": "文件管理表扩展时间3"
+        },
+        "fileDateExtra4": {
+            "meaning": "文件管理表扩展时间4",
+            "reachable": true,
+            "name": "文件管理表扩展时间4"
+        },
+        "fileDateExtra5": {
+            "meaning": "文件管理表扩展时间5",
+            "reachable": true,
+            "name": "文件管理表扩展时间5"
+        },
+        "fileDefaultType": {
+            "meaning": "文件管理表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "文件管理表智能节点主类型"
+        },
+        "fileDescription": {
+            "meaning": "文件管理表描述",
+            "reachable": true,
+            "name": "文件管理表描述"
+        },
+        "fileEngName": {
+            "meaning": "文件管理表英文名称",
+            "reachable": true,
+            "name": "文件管理表英文名称"
+        },
+        "fileExtension": {
+            "meaning": "文件管理表扩展数据",
+            "reachable": true,
+            "name": "文件管理表扩展数据"
+        },
+        "fileExternalState": {
+            "meaning": "文件管理表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "文件管理表上流程状态位"
+        },
+        "fileFlags": {
+            "meaning": "文件管理表63位标志位",
+            "reachable": true,
+            "name": "文件管理表63位标志位"
+        },
+        "fileFromAuditDate": {
+            "meaning": "fileFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromCreateTime": {
+            "meaning": "fileFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromDateExtra1": {
+            "meaning": "fileFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromDateExtra2": {
+            "meaning": "fileFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromDateExtra3": {
+            "meaning": "fileFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromDateExtra4": {
+            "meaning": "fileFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromDateExtra5": {
+            "meaning": "fileFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fileFromUpdateTime": {
+            "meaning": "fileFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fileGroovyScript": {
+            "meaning": "文件管理表groovy脚本",
+            "reachable": true,
+            "name": "文件管理表groovy脚本"
+        },
+        "fileGropeCode": {
+            "meaning": "文件管理表搜索码",
+            "reachable": true,
+            "name": "文件管理表搜索码"
+        },
+        "fileId": {
+            "meaning": "文件管理表pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "文件管理表pk"
+        },
+        "fileInUsed": {
+            "meaning": "文件管理表是否被使用",
+            "reachable": true,
+            "name": "文件管理表是否被使用"
+        },
+        "fileIsBanned": {
+            "meaning": "文件管理表是否被禁用",
+            "reachable": true,
+            "name": "文件管理表是否被禁用"
+        },
+        "fileIsDeleted": {
+            "meaning": "文件管理表是否被删除",
+            "reachable": true,
+            "name": "文件管理表是否被删除"
+        },
+        "fileIsMainFlow": {
+            "meaning": "文件管理表是否是主流程",
+            "reachable": true,
+            "name": "文件管理表是否是主流程"
+        },
+        "fileIsolation": {
+            "meaning": "文件管理表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "文件管理表智能节点数据隔离标识"
+        },
+        "fileJsScript": {
+            "meaning": "文件管理表js脚本",
+            "reachable": true,
+            "name": "文件管理表js脚本"
+        },
+        "fileName": {
+            "meaning": "文件管理表智能节点名",
+            "reachable": true,
+            "name": "文件管理表智能节点名"
+        },
+        "fileNameCodeSearch": {
+            "meaning": "文件管理表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "文件管理表name、user_code模糊搜索"
+        },
+        "fileNumberExtra1": {
+            "meaning": "文件管理表扩展数量1",
+            "reachable": true,
+            "name": "文件管理表扩展数量1"
+        },
+        "fileNumberExtra2": {
+            "meaning": "文件管理表扩展数量2",
+            "reachable": true,
+            "name": "文件管理表扩展数量2"
+        },
+        "fileNumberExtra3": {
+            "meaning": "文件管理表扩展数量3",
+            "reachable": true,
+            "name": "文件管理表扩展数量3"
+        },
+        "fileNumberExtra4": {
+            "meaning": "文件管理表扩展数量4",
+            "reachable": true,
+            "name": "文件管理表扩展数量4"
+        },
+        "fileNumberExtra5": {
+            "meaning": "文件管理表扩展数量5",
+            "reachable": true,
+            "name": "文件管理表扩展数量5"
+        },
+        "fileParentId": {
+            "meaning": "文件管理表父节点ID",
+            "reachable": true,
+            "name": "文件管理表父节点ID"
+        },
+        "filePath": {
+            "meaning": "文件管理表文件路径",
+            "reachable": true,
+            "name": "文件管理表文件路径"
+        },
+        "fileProcessInstanceId": {
+            "meaning": "文件管理表流程实例ID",
+            "reachable": true,
+            "name": "文件管理表流程实例ID"
+        },
+        "fileSerialNumber": {
+            "meaning": "文件管理表顺序号",
+            "reachable": true,
+            "name": "文件管理表顺序号"
+        },
+        "fileState": {
+            "meaning": "文件管理表通用状态",
+            "reachable": true,
+            "name": "文件管理表通用状态"
+        },
+        "fileSystemCode": {
+            "meaning": "文件管理表系统编码",
+            "reachable": true,
+            "name": "文件管理表系统编码"
+        },
+        "fileTaskNodeName": {
+            "meaning": "文件管理表任务节点名称",
+            "reachable": true,
+            "name": "文件管理表任务节点名称"
+        },
+        "fileTenantId": {
+            "meaning": "文件管理表租户id",
+            "reachable": true,
+            "name": "文件管理表租户id"
+        },
+        "fileThirdPartyClass": {
+            "meaning": "文件管理表第三方分类",
+            "reachable": true,
+            "name": "文件管理表第三方分类"
+        },
+        "fileThirdPartyId": {
+            "meaning": "文件管理表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "文件管理表第三方系统中的唯一ID"
+        },
+        "fileThirdPartyName": {
+            "meaning": "文件管理表第三方名称",
+            "reachable": true,
+            "name": "文件管理表第三方名称"
+        },
+        "fileToAuditDate": {
+            "meaning": "fileToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToCreateTime": {
+            "meaning": "fileToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToDateExtra1": {
+            "meaning": "fileToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToDateExtra2": {
+            "meaning": "fileToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToDateExtra3": {
+            "meaning": "fileToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToDateExtra4": {
+            "meaning": "fileToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToDateExtra5": {
+            "meaning": "fileToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fileToUpdateTime": {
+            "meaning": "fileToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fileUpdateTime": {
+            "meaning": "文件管理表更新时间",
+            "reachable": true,
+            "name": "文件管理表更新时间"
+        },
+        "fileUpdater": {
+            "meaning": "文件管理表更新人",
+            "reachable": true,
+            "name": "文件管理表更新人"
+        },
+        "fileUpdaterId": {
+            "meaning": "文件管理表更新人ID",
+            "reachable": true,
+            "name": "文件管理表更新人ID"
+        },
+        "fileUserCode": {
+            "meaning": "文件管理表智能节点的唯一编码",
+            "reachable": true,
+            "name": "文件管理表智能节点的唯一编码"
+        },
+        "fileVarExtra1": {
+            "meaning": "文件管理表扩展1",
+            "reachable": true,
+            "name": "文件管理表扩展1"
+        },
+        "fileVarExtra2": {
+            "meaning": "文件管理表扩展2",
+            "reachable": true,
+            "name": "文件管理表扩展2"
+        },
+        "fileVarExtra3": {
+            "meaning": "文件管理表扩展3",
+            "reachable": true,
+            "name": "文件管理表扩展3"
+        },
+        "fileVarExtra4": {
+            "meaning": "文件管理表扩展4",
+            "reachable": true,
+            "name": "文件管理表扩展4"
+        },
+        "fileVarExtra5": {
+            "meaning": "文件管理表扩展5",
+            "reachable": true,
+            "name": "文件管理表扩展5"
+        },
+        "fileVersion": {
+            "meaning": "文件管理表版本号",
+            "reachable": true,
+            "name": "文件管理表版本号"
+        }
+    }
+}

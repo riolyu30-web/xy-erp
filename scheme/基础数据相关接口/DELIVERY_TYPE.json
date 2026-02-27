@@ -1,0 +1,381 @@
+{
+    "api_name": "/delivery-type/findList",
+    "table_name": "送货类型",
+    "request": {
+        "deliveryTypeClazz": "DELIVERY_TYPE"
+    },
+    "mainTabClazz": "DELIVERY_TYPE",
+    "response": {
+        "deliveryTypeApplicationId": {
+            "meaning": "送货类型应用ID",
+            "reachable": true,
+            "name": "送货类型应用ID"
+        },
+        "deliveryTypeAuditDate": {
+            "meaning": "送货类型审核时间",
+            "reachable": true,
+            "name": "送货类型审核时间"
+        },
+        "deliveryTypeAuditStatus": {
+            "meaning": "送货类型审核状态",
+            "reachable": true,
+            "name": "送货类型审核状态"
+        },
+        "deliveryTypeBizVersion": {
+            "meaning": "送货类型业务自定义版本号",
+            "reachable": true,
+            "name": "送货类型业务自定义版本号"
+        },
+        "deliveryTypeBriefName": {
+            "meaning": "送货类型简称",
+            "reachable": true,
+            "name": "送货类型简称"
+        },
+        "deliveryTypeBusDivisId": {
+            "meaning": "送货类型事业部id",
+            "reachable": true,
+            "name": "送货类型事业部id"
+        },
+        "deliveryTypeClazz": {
+            "meaning": "送货类型子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "送货类型子类"
+        },
+        "deliveryTypeComment": {
+            "meaning": "送货类型评论",
+            "reachable": true,
+            "name": "送货类型评论"
+        },
+        "deliveryTypeCreateTime": {
+            "meaning": "送货类型创建时间",
+            "reachable": true,
+            "name": "送货类型创建时间"
+        },
+        "deliveryTypeCreator": {
+            "meaning": "送货类型创建人",
+            "reachable": true,
+            "name": "送货类型创建人"
+        },
+        "deliveryTypeCreatorId": {
+            "meaning": "送货类型创建人ID",
+            "reachable": true,
+            "name": "送货类型创建人ID"
+        },
+        "deliveryTypeDateExtra1": {
+            "meaning": "送货类型扩展时间1",
+            "reachable": true,
+            "name": "送货类型扩展时间1"
+        },
+        "deliveryTypeDateExtra2": {
+            "meaning": "送货类型扩展时间2",
+            "reachable": true,
+            "name": "送货类型扩展时间2"
+        },
+        "deliveryTypeDateExtra3": {
+            "meaning": "送货类型扩展时间3",
+            "reachable": true,
+            "name": "送货类型扩展时间3"
+        },
+        "deliveryTypeDateExtra4": {
+            "meaning": "送货类型扩展时间4",
+            "reachable": true,
+            "name": "送货类型扩展时间4"
+        },
+        "deliveryTypeDateExtra5": {
+            "meaning": "送货类型扩展时间5",
+            "reachable": true,
+            "name": "送货类型扩展时间5"
+        },
+        "deliveryTypeDefaultType": {
+            "meaning": "送货类型智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "送货类型智能节点主类型"
+        },
+        "deliveryTypeDescription": {
+            "meaning": "送货类型描述",
+            "reachable": true,
+            "name": "送货类型描述"
+        },
+        "deliveryTypeEngName": {
+            "meaning": "送货类型英文名称",
+            "reachable": true,
+            "name": "送货类型英文名称"
+        },
+        "deliveryTypeExtension": {
+            "meaning": "送货类型扩展数据",
+            "reachable": true,
+            "name": "送货类型扩展数据"
+        },
+        "deliveryTypeExternalState": {
+            "meaning": "送货类型上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "送货类型上流程状态位"
+        },
+        "deliveryTypeFlags": {
+            "meaning": "送货类型63位标志位",
+            "reachable": true,
+            "name": "送货类型63位标志位"
+        },
+        "deliveryTypeFromAuditDate": {
+            "meaning": "deliveryTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromCreateTime": {
+            "meaning": "deliveryTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromDateExtra1": {
+            "meaning": "deliveryTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromDateExtra2": {
+            "meaning": "deliveryTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromDateExtra3": {
+            "meaning": "deliveryTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromDateExtra4": {
+            "meaning": "deliveryTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromDateExtra5": {
+            "meaning": "deliveryTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeFromUpdateTime": {
+            "meaning": "deliveryTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeGroovyScript": {
+            "meaning": "送货类型groovy脚本",
+            "reachable": true,
+            "name": "送货类型groovy脚本"
+        },
+        "deliveryTypeGropeCode": {
+            "meaning": "送货类型搜索码",
+            "reachable": true,
+            "name": "送货类型搜索码"
+        },
+        "deliveryTypeId": {
+            "meaning": "送货类型主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "送货类型主键ID"
+        },
+        "deliveryTypeInUsed": {
+            "meaning": "送货类型是否被使用",
+            "reachable": true,
+            "name": "送货类型是否被使用"
+        },
+        "deliveryTypeIsBanned": {
+            "meaning": "送货类型是否被禁用",
+            "reachable": true,
+            "name": "送货类型是否被禁用"
+        },
+        "deliveryTypeIsDeleted": {
+            "meaning": "送货类型是否被删除",
+            "reachable": true,
+            "name": "送货类型是否被删除"
+        },
+        "deliveryTypeIsMainFlow": {
+            "meaning": "送货类型是否是主流程",
+            "reachable": true,
+            "name": "送货类型是否是主流程"
+        },
+        "deliveryTypeIsolation": {
+            "meaning": "送货类型智能节点数据隔离标识",
+            "reachable": true,
+            "name": "送货类型智能节点数据隔离标识"
+        },
+        "deliveryTypeJsScript": {
+            "meaning": "送货类型js脚本",
+            "reachable": true,
+            "name": "送货类型js脚本"
+        },
+        "deliveryTypeName": {
+            "meaning": "送货类型智能节点名",
+            "reachable": true,
+            "name": "送货类型智能节点名"
+        },
+        "deliveryTypeNameCodeSearch": {
+            "meaning": "送货类型name、user_code模糊搜索",
+            "reachable": true,
+            "name": "送货类型name、user_code模糊搜索"
+        },
+        "deliveryTypeNumberExtra1": {
+            "meaning": "送货类型扩展数量1",
+            "reachable": true,
+            "name": "送货类型扩展数量1"
+        },
+        "deliveryTypeNumberExtra2": {
+            "meaning": "送货类型扩展数量2",
+            "reachable": true,
+            "name": "送货类型扩展数量2"
+        },
+        "deliveryTypeNumberExtra3": {
+            "meaning": "送货类型扩展数量3",
+            "reachable": true,
+            "name": "送货类型扩展数量3"
+        },
+        "deliveryTypeNumberExtra4": {
+            "meaning": "送货类型扩展数量4",
+            "reachable": true,
+            "name": "送货类型扩展数量4"
+        },
+        "deliveryTypeNumberExtra5": {
+            "meaning": "送货类型扩展数量5",
+            "reachable": true,
+            "name": "送货类型扩展数量5"
+        },
+        "deliveryTypeParentId": {
+            "meaning": "送货类型父节点ID",
+            "reachable": true,
+            "name": "送货类型父节点ID"
+        },
+        "deliveryTypeProcessInstanceId": {
+            "meaning": "送货类型流程实例ID",
+            "reachable": true,
+            "name": "送货类型流程实例ID"
+        },
+        "deliveryTypeSerialNumber": {
+            "meaning": "送货类型顺序号",
+            "reachable": true,
+            "name": "送货类型顺序号"
+        },
+        "deliveryTypeState": {
+            "meaning": "送货类型通用状态",
+            "reachable": true,
+            "name": "送货类型通用状态"
+        },
+        "deliveryTypeSystemCode": {
+            "meaning": "送货类型系统编码",
+            "reachable": true,
+            "name": "送货类型系统编码"
+        },
+        "deliveryTypeTaskNodeName": {
+            "meaning": "送货类型任务节点名称",
+            "reachable": true,
+            "name": "送货类型任务节点名称"
+        },
+        "deliveryTypeTenantId": {
+            "meaning": "送货类型租户id",
+            "reachable": true,
+            "name": "送货类型租户id"
+        },
+        "deliveryTypeThirdPartyClass": {
+            "meaning": "送货类型第三方分类",
+            "reachable": true,
+            "name": "送货类型第三方分类"
+        },
+        "deliveryTypeThirdPartyId": {
+            "meaning": "送货类型第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "送货类型第三方系统中的唯一ID"
+        },
+        "deliveryTypeThirdPartyName": {
+            "meaning": "送货类型第三方名称",
+            "reachable": true,
+            "name": "送货类型第三方名称"
+        },
+        "deliveryTypeToAuditDate": {
+            "meaning": "deliveryTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToCreateTime": {
+            "meaning": "deliveryTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToDateExtra1": {
+            "meaning": "deliveryTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToDateExtra2": {
+            "meaning": "deliveryTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToDateExtra3": {
+            "meaning": "deliveryTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToDateExtra4": {
+            "meaning": "deliveryTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToDateExtra5": {
+            "meaning": "deliveryTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeToUpdateTime": {
+            "meaning": "deliveryTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "deliveryTypeUpdateTime": {
+            "meaning": "送货类型更新时间",
+            "reachable": true,
+            "name": "送货类型更新时间"
+        },
+        "deliveryTypeUpdater": {
+            "meaning": "送货类型更新人",
+            "reachable": true,
+            "name": "送货类型更新人"
+        },
+        "deliveryTypeUpdaterId": {
+            "meaning": "送货类型更新人ID",
+            "reachable": true,
+            "name": "送货类型更新人ID"
+        },
+        "deliveryTypeUserCode": {
+            "meaning": "送货类型智能节点的唯一编码",
+            "reachable": true,
+            "name": "送货类型智能节点的唯一编码"
+        },
+        "deliveryTypeVarExtra1": {
+            "meaning": "送货类型扩展1",
+            "reachable": true,
+            "name": "送货类型扩展1"
+        },
+        "deliveryTypeVarExtra2": {
+            "meaning": "送货类型扩展2",
+            "reachable": true,
+            "name": "送货类型扩展2"
+        },
+        "deliveryTypeVarExtra3": {
+            "meaning": "送货类型扩展3",
+            "reachable": true,
+            "name": "送货类型扩展3"
+        },
+        "deliveryTypeVarExtra4": {
+            "meaning": "送货类型扩展4",
+            "reachable": true,
+            "name": "送货类型扩展4"
+        },
+        "deliveryTypeVarExtra5": {
+            "meaning": "送货类型扩展5",
+            "reachable": true,
+            "name": "送货类型扩展5"
+        },
+        "deliveryTypeVersion": {
+            "meaning": "送货类型版本号",
+            "reachable": true,
+            "name": "送货类型版本号"
+        }
+    }
+}

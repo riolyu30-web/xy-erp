@@ -1,0 +1,810 @@
+{
+    "parent": [
+        {
+            "s": "QUALITY_INSPECT_FQC",
+            "t": "QUALITY_INSPECT_FQC_DET"
+        },
+        {
+            "s": "DAILY_REP_SUM",
+            "t": "DAILY_REP_SUM_DET"
+        },
+        {
+            "s": "BUSINESS_ORDER",
+            "t": "BUSINESS_ORDER_DETAIL"
+        },
+        {
+            "s": "QUALITY_INSPECT_IQC",
+            "t": "QUALITY_INSPECT_IQC_DET"
+        },
+        {
+            "s": "SEM_OUTWAREHOUSE",
+            "t": "SEM_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "PROCUREMENT_ORDER",
+            "t": "PROCUREMENT_ORDER_DETAIL"
+        },
+        {
+            "s": "WMS_INV_ADJ_FINI_GOODS",
+            "t": "WMS_INV_ADJ_FINI_GOODS_DET"
+        },
+        {
+            "s": "PAYABLE",
+            "t": "PAYABLE_DET"
+        },
+        {
+            "s": "SUPP_QUOTE",
+            "t": "SUPP_QUOTE_DET"
+        },
+        {
+            "s": "CONTRACT",
+            "t": "CONTRACT_DETAIL"
+        },
+        {
+            "s": "WAREHOUSE_PROOF_TRF",
+            "t": "WAREHOUSE_PROOF_TRF_DET"
+        },
+        {
+            "s": "PAY_SETTLE",
+            "t": "PAY_SETTLE_DET"
+        },
+        {
+            "s": "FIN_INWAREHOUSE",
+            "t": "FIN_INWAREHOUSE_DET"
+        },
+        {
+            "s": "MOD_INWAREHOUSE",
+            "t": "MOD_INWAREHOUSE_DET"
+        },
+        {
+            "s": "PRD_O_APY",
+            "t": "PRD_O_APY_DET"
+        },
+        {
+            "s": "QUALITY_CHECK_STAN",
+            "t": "QUALITY_CHECK_STAN_DET"
+        },
+        {
+            "s": "MAT_OUTSTORAGE",
+            "t": "MAT_OUTSTORAGE_DET"
+        },
+        {
+            "s": "SEM_INSTORAGE",
+            "t": "SEM_INSTORAGE_DET"
+        },
+        {
+            "s": "DELIVERY_TYPE",
+            "t": "DELIVERY_TYPE"
+        },
+        {
+            "s": "FCST_PROC_LOG",
+            "t": "FCST_PROC_LOG_DET"
+        },
+        {
+            "s": "RECEIVABLE",
+            "t": "RECEIVABLE_DET"
+        },
+        {
+            "s": "MAT_ARR",
+            "t": "MAT_ARR_DET"
+        },
+        {
+            "s": "CUST_STATEMENT",
+            "t": "CUST_STATEMENT_DET"
+        },
+        {
+            "s": "EQUIPMENT_MODEL",
+            "t": "EQUIPMENT_MODEL"
+        },
+        {
+            "s": "AREA",
+            "t": "AREA"
+        },
+        {
+            "s": "SUPP_STATEMENT",
+            "t": "SUPP_STATEMENT_DET"
+        },
+        {
+            "s": "PRD_SAL",
+            "t": "PRD_SAL_DET"
+        },
+        {
+            "s": "OUT_APPLY",
+            "t": "OUT_APPLY_DET"
+        },
+        {
+            "s": "PROCESSES_TYPE",
+            "t": "PROCESSES_TYPE"
+        },
+        {
+            "s": "MAT_OUT_APY",
+            "t": "MAT_OUT_APY_DET"
+        },
+        {
+            "s": "FIN_OUTSTORAGE",
+            "t": "FIN_OUTSTORAGE_DET"
+        },
+        {
+            "s": "INVENTORY_CHECK_FINI_GOODS",
+            "t": "INVENTORY_CHECK_FINI_GOODS_DET"
+        },
+        {
+            "s": "PRD_MAT_RET",
+            "t": "PRD_MAT_RET_DET"
+        },
+        {
+            "s": "WMS_INV_ADJ_MAT",
+            "t": "WMS_INV_ADJ_MAT_DET"
+        },
+        {
+            "s": "PRD_I_APY",
+            "t": "PRD_I_APY_DET"
+        },
+        {
+            "s": "PROC_QUOTE",
+            "t": "PROC_QUOTE_DET"
+        },
+        {
+            "s": "QUALITY_INSPECT_IPQC",
+            "t": "QUALITY_INSPECT_IPQC_DET"
+        },
+        {
+            "s": "OUT_ARR",
+            "t": "OUT_ARR_DET"
+        },
+        {
+            "s": "REC_SETTLE",
+            "t": "REC_SETTLE_DET"
+        },
+        {
+            "s": "FIN_OUTWAREHOUSE",
+            "t": "FIN_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "XY_USERCENTER_PERMISSION",
+            "t": "XY_USERCENTER_PERMISSION"
+        },
+        {
+            "s": "REC_SETTLE",
+            "t": "REC_SETTLE"
+        },
+        {
+            "s": "BOM_NODE",
+            "t": "TASK"
+        },
+        {
+            "s": "ORDER_NOTICE",
+            "t": "ORDER_NOTICE_DET"
+        },
+        {
+            "s": "OUTGOING_ORDER",
+            "t": "OUTGOING_ORDER_DETAIL"
+        },
+        {
+            "s": "MAT_INWAREHOUSE",
+            "t": "MAT_INWAREHOUSE_DET"
+        },
+        {
+            "s": "CUST_QUOTE",
+            "t": "CUST_QUOTE_DET"
+        },
+        {
+            "s": "XY_USERCENTER_GROUP",
+            "t": "XY_USERCENTER_GROUP"
+        },
+        {
+            "s": "SUBJECT",
+            "t": "SUBJECT"
+        },
+        {
+            "s": "MOD_OUTSTORAGE",
+            "t": "MOD_OUTSTORAGE_DET"
+        },
+        {
+            "s": "PROCUREMENT_ORDER",
+            "t": "PROCUREMENT_ORDER_DETAIL"
+        },
+        {
+            "s": "MAT_OUTWAREHOUSE",
+            "t": "MAT_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "FCST_ORD_LOG",
+            "t": "FCST_ORD_LOG_DET"
+        },
+        {
+            "s": "MAT_RET",
+            "t": "MAT_RET_DET"
+        },
+        {
+            "s": "FIN_INSTORAGE",
+            "t": "FIN_INSTORAGE_DET"
+        },
+        {
+            "s": "WAREHOUSE_SPACE",
+            "t": "WAREHOUSE_SPACE"
+        },
+        {
+            "s": "INVENTORY_CHECK_MAT",
+            "t": "INVENTORY_CHECK_MAT_DET"
+        },
+        {
+            "s": "FCST_ORD_LOG",
+            "t": "FCST_ORD_LOG_CMP"
+        },
+        {
+            "s": "XY_USERCENTER_ORGANIZATION",
+            "t": "XY_USERCENTER_ORGANIZATION"
+        },
+        {
+            "s": "MAT_INSTORAGE",
+            "t": "MAT_INSTORAGE_DET"
+        },
+        {
+            "s": "MOD_INSTORAGE",
+            "t": "MOD_INSTORAGE_DET"
+        },
+        {
+            "s": "MOD_OUTWAREHOUSE",
+            "t": "MOD_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "FCST_PO",
+            "t": "FCST_PO_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "PROD_PRCES_APPLY",
+            "t": "PROD_PRCES_APPLY_DET"
+        },
+        {
+            "s": "TRANS_PLAN",
+            "t": "TRANS_PLAN_DET"
+        },
+        {
+            "s": "PRD_RET",
+            "t": "PRD_RET_DET"
+        },
+        {
+            "s": "SEM_INWAREHOUSE",
+            "t": "SEM_INWAREHOUSE_DET"
+        },
+        {
+            "s": "SEM_OUTSTORAGE",
+            "t": "SEM_OUTSTORAGE_DET"
+        },
+        {
+            "s": "PURCHASE_REQUISITION",
+            "t": "PURCHASE_REQUISITION_DETAIL"
+        },
+        {
+            "s": "MAT_OUTSTORAGE",
+            "t": "MAT_OUTSTORAGE_DET"
+        }
+    ],
+    "link": [
+        {
+            "s": "QUALITY_INSPECT_IPQC",
+            "t": "FILE"
+        },
+        {
+            "s": "WORK_ORDER",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "PRD_O_APY_DET",
+            "t": "PRD_SAL_DET"
+        },
+        {
+            "s": "WORK_ORDER",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "XY_USERCENTER_ORGANIZATION",
+            "t": "BOM"
+        },
+        {
+            "s": "WMS_INV_ADJ_FINI_GOODS_DET",
+            "t": "FIN_INWAREHOUSE_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "BOM_PRODUCTION",
+            "t": "QUALITY_INSPECT_FQC_DET"
+        },
+        {
+            "s": "XY_USERCENTER_GROUP",
+            "t": "BILLING_SOLUTION"
+        },
+        {
+            "s": "MAT_ARR_DET",
+            "t": "MAT_RET_DET"
+        },
+        {
+            "s": "PROCUREMENT_ORDER_DETAIL",
+            "t": "MAT_ARR_DET"
+        },
+        {
+            "s": "MAT_ARR_DET",
+            "t": "MAT_INSTORAGE_DET"
+        },
+        {
+            "s": "PRD_RET_DET",
+            "t": "CUST_STATEMENT_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "SEM_INSTORAGE_DET",
+            "t": "SEM_INWAREHOUSE_DET"
+        },
+        {
+            "s": "MAT_OUTWAREHOUSE",
+            "t": "FILE"
+        },
+        {
+            "s": "MAT_OUTSTORAGE",
+            "t": "FILE"
+        },
+        {
+            "s": "MOD_OUTSTORAGE_DET",
+            "t": "MOD_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "PROD_PRCES_APPLY_DET",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "BOM_PRODUCT",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "JOB_TICKET",
+            "t": "SEM_INSTORAGE_DET"
+        },
+        {
+            "s": "PROD_PRCES_APPLY",
+            "t": "FILE"
+        },
+        {
+            "s": "CUST_STATEMENT_DET",
+            "t": "RECEIVABLE_DET"
+        },
+        {
+            "s": "PRD_MAT_RET_DET",
+            "t": "MAT_INSTORAGE_DET"
+        },
+        {
+            "s": "SUPP_STATEMENT_DET",
+            "t": "PAYABLE_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "BOM"
+        },
+        {
+            "s": "STAFF",
+            "t": "FILE"
+        },
+        {
+            "s": "WAREHOUSE_PROOF_TRF_DET",
+            "t": "MOD_INWAREHOUSE_DET"
+        },
+        {
+            "s": "MARKET_FORECASTING_DET",
+            "t": "PURCHASE_FORECASTING_DET"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "",
+            "t": "BILLING_SOLUTION"
+        },
+        {
+            "s": "BOM_PRODUCTION",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "BOM_PRODUCT_ITEM"
+        },
+        {
+            "s": "TASK",
+            "t": "TASK"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "OUT_ARR_DET",
+            "t": "FIN_INSTORAGE_DET"
+        },
+        {
+            "s": "FIN_INSTORAGE_DET",
+            "t": "FIN_INWAREHOUSE_DET"
+        },
+        {
+            "s": "SUIT_ORDER_DETAIL",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "QUALITY_INSPECT_IQC",
+            "t": "FILE"
+        },
+        {
+            "s": "QUALITY_INSPECT_IQC_DET",
+            "t": "MAT_INSTORAGE_DET"
+        },
+        {
+            "s": "TASK",
+            "t": "QUALITY_INSPECT_IPQC_DET"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "BOM_PRODUCT_ITEM"
+        },
+        {
+            "s": "MOD_OUTSTORAGE",
+            "t": "FILE"
+        },
+        {
+            "s": "PROC_QUOTE",
+            "t": "FILE"
+        },
+        {
+            "s": "STANDARDMATERIAL",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "PROCUREMENT_ORDER_DETAIL",
+            "t": "DEL_PLAN"
+        },
+        {
+            "s": "MAT_ARR_DET",
+            "t": "QUALITY_INSPECT_IQC_DET"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "PURCHASE_REQUISITION_DETAIL"
+        },
+        {
+            "s": "QUALITY_INSPECT_FQC",
+            "t": "FILE"
+        },
+        {
+            "s": "BOM_PROCESS",
+            "t": "TASK"
+        },
+        {
+            "s": "PRD_I_APY_DET",
+            "t": "QUALITY_INSPECT_FQC_DET"
+        },
+        {
+            "s": "PROCUREMENT_ORDER",
+            "t": "FILE"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "WORK_ORDER"
+        },
+        {
+            "s": "TRANS_PLAN_DET",
+            "t": "PRD_SAL_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "FILE"
+        },
+        {
+            "s": "OUTGOING_ORDER_DETAIL",
+            "t": "OUT_ARR_DET"
+        },
+        {
+            "s": "MAT_OUTSTORAGE_DET",
+            "t": "PRD_MAT_RET_DET"
+        },
+        {
+            "s": "WAREHOUSE_PROOF_TRF_DET",
+            "t": "MOD_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "EQUIPMENT_MODEL",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "MAT_ARR_DET",
+            "t": "SUPP_STATEMENT_DET"
+        },
+        {
+            "s": "BOM_PRODUCT",
+            "t": "PROD_PRCES_APPLY_DET"
+        },
+        {
+            "s": "QUALITY_INSPECT_FQC_DET",
+            "t": "FIN_INSTORAGE_DET"
+        },
+        {
+            "s": "BOM_PROCESS",
+            "t": "OUT_APPLY_DET"
+        },
+        {
+            "s": "SUIT",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "MAT_RET_DET",
+            "t": "MAT_OUTSTORAGE_DET"
+        },
+        {
+            "s": "SEM_OUTSTORAGE_DET",
+            "t": "SEM_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "JOB_TICKET",
+            "t": "DAILY_REP_SUM_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "BILLING_SOLUTION"
+        },
+        {
+            "s": "BUSINESS_ORDER",
+            "t": "FILE"
+        },
+        {
+            "s": "CUST_QUOTE",
+            "t": "FILE"
+        },
+        {
+            "s": "WMS_INV_ADJ_MAT_DET",
+            "t": "MAT_INWAREHOUSE_DET"
+        },
+        {
+            "s": "OUT_ARR_DET",
+            "t": "SEM_INSTORAGE_DET"
+        },
+        {
+            "s": "BOM_PROCESS",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "WMS_INV_ADJ_FINI_GOODS_DET",
+            "t": "FIN_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "PAYABLE_DET",
+            "t": "PAY_SETTLE_DET"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "TASK",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "PROD_PRCES_APPLY_DET",
+            "t": "BOM_PRODUCT_ITEM"
+        },
+        {
+            "s": "SUPPLIER",
+            "t": "FILE"
+        },
+        {
+            "s": "BOM_PROCESS",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "INVENTORY_CHECK_FINI_GOODS_DET",
+            "t": "WMS_INV_ADJ_FINI_GOODS_DET"
+        },
+        {
+            "s": "MOULD",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "BOM_SUIT",
+            "t": "BOM"
+        },
+        {
+            "s": "BUSINESS_ORDER_DETAIL",
+            "t": "PRD_O_APY_DET"
+        },
+        {
+            "s": "PRD_I_APY_DET",
+            "t": "FIN_INSTORAGE_DET"
+        },
+        {
+            "s": "WORK_ORDER",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "PRD_SAL_DET",
+            "t": "CUST_STATEMENT_DET"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "FATHER_WORK_ORDER"
+        },
+        {
+            "s": "MAT_OUTSTORAGE_DET",
+            "t": "MAT_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "EQUIPMENT",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "PRD_SAL_DET",
+            "t": "FIN_OUTSTORAGE_DET"
+        },
+        {
+            "s": "BOM_PRODUCTION",
+            "t": "MATERIAL"
+        },
+        {
+            "s": "PURCHASE_REQUISITION_DETAIL",
+            "t": "PROCUREMENT_ORDER_DETAIL"
+        },
+        {
+            "s": "BOM_PRODUCT",
+            "t": "BOM_PRODUCT_ITEM"
+        },
+        {
+            "s": "MAT_INSTORAGE_DET",
+            "t": "MAT_INWAREHOUSE_DET"
+        },
+        {
+            "s": "ORDER_NOTICE_DET",
+            "t": "BUSINESS_ORDER_DETAIL"
+        },
+        {
+            "s": "XY_USERCENTER_ORGANIZATION",
+            "t": "FILE"
+        },
+        {
+            "s": "PROD_PRCES_APPLY_DET",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "PRD_SAL_DET",
+            "t": "PRD_RET_DET"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "BOM_PROCESS"
+        },
+        {
+            "s": "CONTRACT_DETAIL",
+            "t": "ORDER_NOTICE_DET"
+        },
+        {
+            "s": "FIN_OUTSTORAGE_DET",
+            "t": "FIN_OUTWAREHOUSE_DET"
+        },
+        {
+            "s": "MAT_OUT_APY_DET",
+            "t": "MAT_OUTSTORAGE_DET"
+        },
+        {
+            "s": "OUT_APPLY_DET",
+            "t": "OUTGOING_ORDER_DETAIL"
+        },
+        {
+            "s": "BOM_PRODUCTION",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "FIN_IN",
+            "t": "FILE"
+        },
+        {
+            "s": "DEL_PLAN",
+            "t": "MAT_ARR_DET"
+        },
+        {
+            "s": "EQUIPMENT",
+            "t": "BILLING_SOLUTION"
+        },
+        {
+            "s": "PRD_O_APY",
+            "t": "FILE"
+        },
+        {
+            "s": "FCST_PO_DET",
+            "t": "PROCUREMENT_ORDER_DETAIL"
+        },
+        {
+            "s": "PRD_RET_DET",
+            "t": "FIN_INSTORAGE_DET"
+        },
+        {
+            "s": "MOD_INSTORAGE_DET",
+            "t": "MOD_INWAREHOUSE_DET"
+        },
+        {
+            "s": "FCST_PROC_LOG",
+            "t": "PROCUREMENT_ORDER_DETAIL"
+        },
+        {
+            "s": "PRD_O_APY_DET",
+            "t": "TRANS_PLAN_DET"
+        },
+        {
+            "s": "SUPP_QUOTE",
+            "t": "FILE"
+        },
+        {
+            "s": "CONTRACT_DETAIL",
+            "t": "BUSINESS_ORDER_DETAIL"
+        },
+        {
+            "s": "PROCESSES_TYPE",
+            "t": "AUXILIARY_PROCESSES"
+        },
+        {
+            "s": "MAT_ARR_DET",
+            "t": "MOD_INSTORAGE_DET"
+        },
+        {
+            "s": "TASK",
+            "t": "SEM_OUTSTORAGE_DET"
+        },
+        {
+            "s": "BOM_PRODUCT_ITEM",
+            "t": "BOM"
+        },
+        {
+            "s": "PROD_PRCES_APPLY_DET",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "FILE",
+            "t": "BOM_PRODUCT"
+        },
+        {
+            "s": "MAT_RET_DET",
+            "t": "SUPP_STATEMENT_DET"
+        },
+        {
+            "s": "PROCUREMENT_ORDER_DETAIL",
+            "t": "QUALITY_INSPECT_IQC_DET"
+        },
+        {
+            "s": "MATERIAL",
+            "t": "TASK"
+        },
+        {
+            "s": "RECEIVABLE_DET",
+            "t": "REC_SETTLE_DET"
+        },
+        {
+            "s": "PROCESSES_TYPE",
+            "t": "BILLING_SOLUTION"
+        },
+        {
+            "s": "FATHER_WORK_ORDER",
+            "t": "BOM_PRODUCTION"
+        },
+        {
+            "s": "BOM_PRODUCT_ITEM",
+            "t": "MATERIAL"
+        }
+    ]
+}

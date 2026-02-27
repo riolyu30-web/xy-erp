@@ -1,170 +1,466 @@
 from fastmcp import FastMCP  # 导入FastMCP框架
-from dotenv import load_dotenv  # 导入环境变量加载器
-import os  # 导入操作系统模块
-import requests  # 导入HTTP请求库
-from services.tool import json_to_csv, get_csv_header  # 导入JSON转换CSV函数
-from services.cache import cache_save
-
-# 加载环境变量
-load_dotenv()  # 加载.env文件中的环境变量
-
-# 从环境变量获取配置
-BASE_URL = os.getenv("BASE_URL", "http://localhost:8080")  # 获取基础URL
-
-order_mcp = FastMCP(name="order")  # 创建订单服务MCP实例
+from services.tool import fetch_data  # 导入工具函数
+from datetime import datetime, timedelta # 导入日期时间模块
+import json  # 导入JSON库
+order_mcp = FastMCP(name="order")  # 创建计算服务MCP实例
 
 
-@order_mcp.tool()
-def find_all(access_token: str, order_states: str = "", order_number: str = "", material_name: str = "", customer_short_name: str = "", material_classification_name: str = "", full_paper_name: str = "", create_time_start: str = "", create_time_end: str = "") -> str:
+@order_mcp.tool()  # 注册工具
+def biz_order_detail(access_token: str,bizOrderDetailFromCreateTime:str=None,bizOrderDetailToCreateTime:str=None) -> str:  # 定义工具函数
     """
-    获取订单数据保存CSV格式字符串到缓存。
-    数据列：审核状态,订单状态,订单号,创建时间,客方货号,产品编码,版本号,客户简称,产品名称,盒型,数量,入库数量,工单数,出库数量,备注（生产）,客户PO,长,宽,高,订单类型,含税报价单价,含税总金额,纸质,客户编码,库存数,创建人,盒型编码,货期,含税单价,跟单员,业务员,产品规格,不含税单价,不含税总金额,详细地址,后修改日期,是否生产,是否采购,预计交期,不含税报价单价,本币单价,本币金额,最后修改人,打印次数,订单状态,客户产品名称,结算单价,结算金额,单据日期,完成状态
+    业务订单明细，获取销售订单
+    
     Args:
         access_token: 访问令牌
-        order_states: 订单状态可多选用逗号连接，选项：正常、送货完成、生成完成、取消、完成，默认为所有状态
-order_number: 订单号，默认为空字符串
-        material_name: 产品名称，默认为空字符串
-        customer_short_name: 客户简称，默认为空字符串
-        material_classification_name: 盒型名称，默认为空字符串
-        full_paper_name: 纸质名称，默认为空字符串
-        create_time_start: 创建开始时间，格式为2025-07-02 00:00:00
-        create_time_end: 创建结束时间，格式为2025-07-04 23:59:59
+        
+        bizOrderDetailFromCreateTime: 开始时间，格式为YYYY-%m-DD %H:%M:%S
+        
+        bizOrderDetailToCreateTime: 结束时间，格式为YYYY-%m-DD %H:%M:%S
+             
     Returns:
-        table_token(str): 有效数据的表令牌，表示这些列有数据 / 没有数据
+        成功返回：表访问令牌，有效字段说明，样本数据
+        失败返回：错误原因
     """
-    return order_find_all(access_token, order_states, order_number, material_name, customer_short_name, material_classification_name, full_paper_name, create_time_start, create_time_end)
-
-
-def order_find_all(access_token: str, order_states: str = "", order_number: str = "", material_name: str = "", customer_short_name: str = "", material_classification_name: str = "", full_paper_name: str = "", create_time_start: str = "", create_time_end: str = "") -> str:
-
-    # 状态映射字典：中文状态到数字状态的转换
-    state_mapping = {
-        "正常": "0",
-        "送货完成": "1",
-        "生成完成": "2",
-        "取消": "3",
-        "完成": "4"
-    }
-
-    # 转换中文状态为数字状态
-    if order_states:
-        # 将中文状态转换为对应的数字状态
-        numeric_states = [state_mapping.get(
-            state, state) for state in order_states if state in state_mapping]
-    else:
-        # 默认使用所有状态
-        numeric_states = ["0"]
     # 构建请求URL
-    # 构建完整请求URL
-    url = f"{BASE_URL}/market/erp_business_mgt_order_notice/es/getExperienceData?access_token={access_token}"
-    print(url)
-    # 构建请求体
-    payload = {  # 构建POST请求的数据体
-        "model": {
-            "createTimeStart": create_time_start,  # 设置开始时间
-            "createTimeEnd": create_time_end,  # 设置结束时间
-            "orderDataState": numeric_states,  # 设置订单状态过滤条件（使用转换后的数字状态）
-            "orderNumber": order_number,  # 设置订单号过滤条件
-            "materialName": material_name,  # 设置物料名称过滤条件
-            "customerShortName": customer_short_name,  # 设置客户简称过滤条件
-            "materialClassificationName": material_classification_name,  # 设置物料分类名称过滤条件
-            "fullPaperName": full_paper_name  # 设置全纸名称过滤条件
-        },
-        "size": 10000000,  # 设置返回数据大小
-        "current": 1,  # 设置当前页码
-        "total": 0,  # 设置总数
-        "loading": True,  # 设置加载状态
-        "small": False,  # 设置小尺寸标志
-        "pages": 20  # 设置总页数
-    }
+    url = "/biz-order-detail/findList"  # API地址
+    # 构建请求体数据
+    data = {
+        
+        "bizOrderDetailBizOrderClazz": "BUSINESS_ORDER",  # 固定参数
+        
+        "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL",  # 固定参数
+        
+        
+        "bizOrderDetailFromCreateTime": bizOrderDetailFromCreateTime,  # 动态参数
+        
+        "bizOrderDetailToCreateTime": bizOrderDetailToCreateTime,  # 动态参数
+        
+        
+    }  # 数据字典结束
+    # 定义需要保留的字段列表
+    filtered_fields = {
+        
+        "bizOrderDetailActualTimeRequired": {"name": "业务订单明细实际需时"},  # 字段映射
+        
+        "bizOrderDetailAddress": {"name": "业务订单明细详细地址"},  # 字段映射
+        
+        "bizOrderDetailAdjustmentTimeRequired": {"name": "业务订单明细调整需时"},  # 字段映射
+        
+        "bizOrderDetailAssignStatus": {"name": "业务订单明细指派状态"},  # 字段映射
+        
+        "bizOrderDetailAuditDate": {"name": "业务订单明细审核时间"},  # 字段映射
+        
+        "bizOrderDetailAuditStatus": {"name": "业务订单明细审核状态"},  # 字段映射
+        
+        "bizOrderDetailBizOrderBeginTime": {"name": "业务订单明细开始时间"},  # 字段映射
+        
+        "bizOrderDetailBizOrderBriefName": {"name": "业务订单明细简称"},  # 字段映射
+        
+        "bizOrderDetailBizOrderClosedReason": {"name": "业务订单明细结案原因"},  # 字段映射
+        
+        "bizOrderDetailBizOrderClosedStatus": {"name": "业务订单明细结案状态"},  # 字段映射
+        
+        "bizOrderDetailBizOrderCompleteQuantity": {"name": "业务订单明细完成数量"},  # 字段映射
+        
+        "bizOrderDetailBizOrderCompleteStatus": {"name": "业务订单明细完成状态"},  # 字段映射
+        
+        "bizOrderDetailBizOrderContName": {"name": "业务订单明细联系人姓名"},  # 字段映射
+        
+        "bizOrderDetailBizOrderCur": {"name": "业务订单明细币种"},  # 字段映射
+        
+        "bizOrderDetailBizOrderCurRate": {"name": "业务订单明细汇率"},  # 字段映射
+        
+        "bizOrderDetailBizOrderDeliveryDate": {"name": "业务订单明细交货日期"},  # 字段映射
+        
+        "bizOrderDetailBizOrderDelvCust": {"name": "业务订单明细送货客户"},  # 字段映射
+        
+        "bizOrderDetailBizOrderIsUrgent": {"name": "业务订单明细是否加急"},  # 字段映射
+        
+        "bizOrderDetailBizOrderMaterialId": {"name": "业务订单明细物料id"},  # 字段映射
+        
+        "bizOrderDetailBizOrderPlannedTimeRequired": {"name": "业务订单明细计划需时"},  # 字段映射
+        
+        "bizOrderDetailBizOrderPrintTimes": {"name": "业务订单明细打印次数"},  # 字段映射
+        
+        "bizOrderDetailBizOrderPriority": {"name": "业务订单明细优先级"},  # 字段映射
+        
+        "bizOrderDetailBizOrderStlAmtFmt": {"name": "业务订单明细结算金额保留小数位"},  # 字段映射
+        
+        "bizOrderDetailBizOrderStlFee": {"name": "业务订单明细结算费用"},  # 字段映射
+        
+        "bizOrderDetailBizOrderTaxRt": {"name": "业务订单明细税率"},  # 字段映射
+        
+        "bizOrderDetailBizOrderTotalFeeNt": {"name": "业务订单明细总费用"},  # 字段映射
+        
+        "bizOrderDetailBizOrderTotalVol": {"name": "业务订单明细总体积"},  # 字段映射
+        
+        "bizOrderDetailBizOrderTotalWithTax": {"name": "业务订单明细总费用"},  # 字段映射
+        
+        "bizOrderDetailBizOrderTotalWt": {"name": "业务订单明细总重量"},  # 字段映射
+        
+        "bizOrderDetailCompleteStatus": {"name": "业务订单明细完成状态"},  # 字段映射
+        
+        "bizOrderDetailDeliveryDate": {"name": "业务订单明细交货日期"},  # 字段映射
+        
+        "bizOrderDetailDeliveryTypeId": {"name": "业务订单明细送货类型"},  # 字段映射
+        
+        "bizOrderDetailEndTimeRequired": {"name": "业务订单明细最后需时"},  # 字段映射
+        
+        "bizOrderDetailEngName": {"name": "业务订单明细英文名称"},  # 字段映射
+        
+        "bizOrderDetailExpectedDate": {"name": "业务订单明细预计交期"},  # 字段映射
+        
+        "bizOrderDetailExtMatBarcode": {"name": "业务订单明细外部物料条码"},  # 字段映射
+        
+        "bizOrderDetailExtMatCode": {"name": "业务订单明细外部物料编码"},  # 字段映射
+        
+        "bizOrderDetailExtMatName": {"name": "业务订单明细外部物料名称"},  # 字段映射
+        
+        "bizOrderDetailId": {"name": "业务订单明细主键ID"},  # 字段映射
+        
+        "bizOrderDetailInvoRecIssQuantity": {"name": "业务订单明细开/收票数量"},  # 字段映射
+        
+        "bizOrderDetailLocUnitPrice": {"name": "业务订单明细本币单价"},  # 字段映射
+        
+        "bizOrderDetailLocalAmount": {"name": "业务订单明细本币金额"},  # 字段映射
+        
+        "bizOrderDetailLossQty": {"name": "业务订单明细损耗"},  # 字段映射
+        
+        "bizOrderDetailMatCat": {"name": "业务订单明细物料分类ID"}  # 字段映射
+        
+    }  # 过滤字段字典结束
+    meaning_list = {
+        
+        "业务订单明细实际需时": "业务订单明细实际需时(小时)",  # 字段含义
+        
+        "业务订单明细详细地址": "业务订单明细详细地址",  # 字段含义
+        
+        "业务订单明细调整需时": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)",  # 字段含义
+        
+        "业务订单明细指派状态": "业务订单明细指派状态",  # 字段含义
+        
+        "业务订单明细审核时间": "业务订单明细审核时间",  # 字段含义
+        
+        "业务订单明细审核状态": "业务订单明细审核状态",  # 字段含义
+        
+        "业务订单明细开始时间": "业务订单明细开始时间",  # 字段含义
+        
+        "业务订单明细简称": "业务订单明细简称",  # 字段含义
+        
+        "业务订单明细结案原因": "业务订单明细结案原因",  # 字段含义
+        
+        "业务订单明细结案状态": "业务订单明细结案状态",  # 字段含义
+        
+        "业务订单明细完成数量": "业务订单明细完成数量",  # 字段含义
+        
+        "业务订单明细完成状态": "业务订单明细完成状态",  # 字段含义
+        
+        "业务订单明细联系人姓名": "业务订单明细联系人姓名",  # 字段含义
+        
+        "业务订单明细币种": "业务订单明细币种",  # 字段含义
+        
+        "业务订单明细汇率": "业务订单明细汇率",  # 字段含义
+        
+        "业务订单明细交货日期": "业务订单明细交货日期",  # 字段含义
+        
+        "业务订单明细送货客户": "业务订单明细送货客户",  # 字段含义
+        
+        "业务订单明细是否加急": "业务订单明细是否加急",  # 字段含义
+        
+        "业务订单明细物料id": "业务订单明细物料id",  # 字段含义
+        
+        "业务订单明细计划需时": "业务订单明细计划需时(小时)",  # 字段含义
+        
+        "业务订单明细打印次数": "业务订单明细打印次数",  # 字段含义
+        
+        "业务订单明细优先级": "业务订单明细优先级",  # 字段含义
+        
+        "业务订单明细结算金额保留小数位": "业务订单明细结算金额保留小数位(默认2位，可手动变更)",  # 字段含义
+        
+        "业务订单明细结算费用": "业务订单明细结算费用（默认与含税总金额相等)",  # 字段含义
+        
+        "业务订单明细税率": "业务订单明细税率",  # 字段含义
+        
+        "业务订单明细总费用": "业务订单明细总费用(不含税)",  # 字段含义
+        
+        "业务订单明细总体积": "业务订单明细总体积",  # 字段含义
+        
+        "业务订单明细总费用": "业务订单明细总费用(含税)",  # 字段含义
+        
+        "业务订单明细总重量": "业务订单明细总重量",  # 字段含义
+        
+        "业务订单明细完成状态": "业务订单明细完成状态",  # 字段含义
+        
+        "业务订单明细交货日期": "业务订单明细交货日期",  # 字段含义
+        
+        "业务订单明细送货类型": "业务订单明细送货类型",  # 字段含义
+        
+        "业务订单明细最后需时": "业务订单明细最后需时(小时)",  # 字段含义
+        
+        "业务订单明细英文名称": "业务订单明细英文名称",  # 字段含义
+        
+        "业务订单明细预计交期": "业务订单明细预计交期",  # 字段含义
+        
+        "业务订单明细外部物料条码": "业务订单明细外部物料条码(BarCode)",  # 字段含义
+        
+        "业务订单明细外部物料编码": "业务订单明细外部物料编码(例客户产品编码)",  # 字段含义
+        
+        "业务订单明细外部物料名称": "业务订单明细外部物料名称(例客户产品名称)",  # 字段含义
+        
+        "业务订单明细主键ID": "业务订单明细主键ID",  # 字段含义
+        
+        "业务订单明细开/收票数量": "业务订单明细开/收票数量",  # 字段含义
+        
+        "业务订单明细本币单价": "业务订单明细本币单价(根据币种，外币才显示)，外币不含税",  # 字段含义
+        
+        "业务订单明细本币金额": "业务订单明细本币金额(根据币种，外币才显示)，外币不含税",  # 字段含义
+        
+        "业务订单明细损耗": "业务订单明细损耗",  # 字段含义
+        
+        "业务订单明细物料分类ID": "业务订单明细物料分类ID"  # 字段含义
+        
+    }  # 含义字典结束
+    # 调用通用工具方法获取并过滤数据
+    return fetch_data("业务订单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
-    try:
-        # 构建请求头
-        headers = {  # 构建HTTP请求头
-            "Authorization": f"bearer {access_token}",  # 设置Bearer认证头
-            "Content-Type": "application/json"  # 设置内容类型
-        }
-
-        # 发送HTTP POST请求
-        response = requests.post(
-            url, json=payload, headers=headers, timeout=30)  # 发送POST请求并设置超时时间和请求头
-        response.raise_for_status()  # 检查HTTP响应状态
-
-        # 解析响应数据
-        response_data = response.json()  # 解析JSON响应
-        # print(response_data)
-
-        # 检查业务逻辑是否成功
-        if response_data.get("code") == 0 and response_data.get("msg") == "SUCCESS":
-            data_list = response_data["data"]["list"]
-            grid_list = {
-                "auditStatus": "审核状态",
-                "orderDataStateName": "订单状态",
-                "orderNumber": "订单号",
-                "createDate": "创建时间",
-                "externalMaterialCode": "客方货号",
-                "materialCode": "产品编码",
-                "boxVersion": "版本号",
-                "customerShortName": "客户简称",
-                "materialName": "产品名称",
-                "materialClassificationName": "盒型",
-                "quantity": "数量",
-                "inventoryQuantity": "入库数量",
-                "workQuantity": "工单数",
-                "outQuantity": "出库数量",
-                "description": "备注（生产）",
-                "externalTrackingNumber": "客户PO",
-                "length": "长",
-                "width": "宽",
-                "height": "高",
-                "orderType": "订单类型",
-                "quotationUnitPriceIncludingTax": "含税报价单价",
-                "totalAmountIncludingTax": "含税总金额",
-                "fullPaperName": "纸质",
-                "customerCode": "客户编码",
-                "inventoryQuantitys": "库存数",
-                "creator": "创建人",
-                "searchCode": "盒型编码",
-                "deliveryDate": "货期",
-                "unitPriceIncludingTax": "含税单价",
-                "merchandiserName": "跟单员",
-                "salesmanName": "业务员",
-                "materialSpecification": "产品规格",
-                "unitPriceWithoutTax": "不含税单价",
-                "totalAmountWithoutTax": "不含税总金额",
-                "deliveryAddress": "详细地址",
-                "lastUpdateDate": "后修改日期",
-                "isProduction": "是否生产",
-                "isPurchase": "是否采购",
-                "expectedReceiptDate": "预计交期",
-                "quotationUnitPriceWithoutTax": "不含税报价单价",
-                "localCurrencyUnitPrice": "本币单价",
-                "localCurrencyTotalAmount": "本币金额",
-                "lastUpdater": "最后修改人",
-                "printTimes": "打印次数",
-                "orderDateStateName": "订单状态",
-                "externalMaterialName": "客户产品名称",
-                "settlementUnitPrice": "结算单价",
-                "settlementTotalAmount": "结算金额",
-                "receiptDate": "单据日期",
-                "farmatCompletionStatus": "完成状态"
-            }
-            csv_str = json_to_csv(data_list, grid_list)
-
-            if csv_str:
-                table_token = f"订单表_{access_token}"
-                cache_save(table_token, csv_str)
-                # header = get_csv_header(csv_str)
-                return table_token
-
-            return "没有数据"
-        else:
-            error_msg = response_data.get("msg", "未知错误")
-            return error_msg
-
-    except requests.exceptions.RequestException as e:  # 捕获请求异常
-        print(f"HTTP请求失败: {str(e)}")  # 打印错误信息
-        return f"请求失败: {str(e)}"  # 返回错误信息
-    except Exception as e:  # 捕获其他异常
-        print(f"处理失败: {str(e)}")  # 打印错误信息
-        return f"处理失败: {str(e)}"  # 返回错误信息
+@order_mcp.tool()  # 注册工具
+def prd_oapy_det(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetToCreateTime:str=None) -> str:  # 定义工具函数
+    """
+    成品出库申请明细，获取送货通知
+    
+    Args:
+        access_token: 访问令牌
+        
+        prdOApyDetFromCreateTime: 开始时间，格式为YYYY-%m-DD %H:%M:%S
+        
+        prdOApyDetToCreateTime: 结束时间，格式为YYYY-%m-DD %H:%M:%S
+             
+    Returns:
+        成功返回：表访问令牌，有效字段说明，样本数据
+        失败返回：错误原因
+    """
+    # 构建请求URL
+    url = "/prd-oapy-det/findList"  # API地址
+    # 构建请求体数据
+    data = {
+        
+        "prdOApyDetPrdOApyClazz": "PRD_O_APY",  # 固定参数
+        
+        "prdOApyDetClazz": "PRD_O_APY_DET",  # 固定参数
+        
+        
+        "prdOApyDetFromCreateTime": prdOApyDetFromCreateTime,  # 动态参数
+        
+        "prdOApyDetToCreateTime": prdOApyDetToCreateTime,  # 动态参数
+        
+        
+    }  # 数据字典结束
+    # 定义需要保留的字段列表
+    filtered_fields = {
+        
+        "prdOApyDetActualTimeRequired": {"name": "成品出库申请明细实际需时"},  # 字段映射
+        
+        "prdOApyDetAdjustmentTimeRequired": {"name": "成品出库申请明细调整需时"},  # 字段映射
+        
+        "prdOApyDetAuditDate": {"name": "成品出库申请明细审核时间"},  # 字段映射
+        
+        "prdOApyDetAuditStatus": {"name": "成品出库申请明细审核状态"},  # 字段映射
+        
+        "prdOApyDetBeginTime": {"name": "成品出库申请明细开始时间"},  # 字段映射
+        
+        "prdOApyDetBriefName": {"name": "成品出库申请明细简称"},  # 字段映射
+        
+        "prdOApyDetCompleteQuantity": {"name": "成品出库申请明细完成数量"},  # 字段映射
+        
+        "prdOApyDetCompleteStatus": {"name": "成品出库申请明细完成状态"},  # 字段映射
+        
+        "prdOApyDetConsigneeName": {"name": "成品出库申请明细收货单位名称"},  # 字段映射
+        
+        "prdOApyDetCreateTime": {"name": "成品出库申请明细创建时间"},  # 字段映射
+        
+        "prdOApyDetCustContact": {"name": "成品出库申请明细收货人"},  # 字段映射
+        
+        "prdOApyDetCustContactCellPhone": {"name": "成品出库申请明细手机号"},  # 字段映射
+        
+        "prdOApyDetCustContactPhone": {"name": "成品出库申请明细电话"},  # 字段映射
+        
+        "prdOApyDetCustDeliverAddress": {"name": "成品出库申请明细送货地址"},  # 字段映射
+        
+        "prdOApyDetDeliveryDate": {"name": "成品出库申请明细交货日期"},  # 字段映射
+        
+        "prdOApyDetDescription": {"name": "成品出库申请明细描述"},  # 字段映射
+        
+        "prdOApyDetEndTime": {"name": "成品出库申请明细结束时间"},  # 字段映射
+        
+        "prdOApyDetEndTimeRequired": {"name": "成品出库申请明细最后需时"},  # 字段映射
+        
+        "prdOApyDetEngName": {"name": "成品出库申请明细英文名称"},  # 字段映射
+        
+        "prdOApyDetExchangeRateId": {"name": "成品出库申请明细币种汇率id"},  # 字段映射
+        
+        "prdOApyDetGiftQuantity": {"name": "成品出库申请明细赠品数量"},  # 字段映射
+        
+        "prdOApyDetId": {"name": "成品出库申请明细PK"},  # 字段映射
+        
+        "prdOApyDetInvTypeTaxRateId": {"name": "成品出库申请明细发票税率id"},  # 字段映射
+        
+        "prdOApyDetPlannedTimeRequired": {"name": "成品出库申请明细计划需时"},  # 字段映射
+        
+        "prdOApyDetPrdOApyActualTimeRequired": {"name": "成品出库申请明细实际需时"},  # 字段映射
+        
+        "prdOApyDetPrdOApyAdjustmentTimeRequired": {"name": "成品出库申请明细调整需时"},  # 字段映射
+        
+        "prdOApyDetPrdOApyBeginTime": {"name": "成品出库申请明细开始时间"},  # 字段映射
+        
+        "prdOApyDetPrdOApyBriefName": {"name": "成品出库申请明细简称"},  # 字段映射
+        
+        "prdOApyDetPrdOApyClosedReason": {"name": "成品出库申请明细结案原因"},  # 字段映射
+        
+        "prdOApyDetPrdOApyClosedStatus": {"name": "成品出库申请明细结案状态"},  # 字段映射
+        
+        "prdOApyDetPrdOApyComment": {"name": "成品出库申请明细评论"},  # 字段映射
+        
+        "prdOApyDetPrdOApyCompleteQuantity": {"name": "成品出库申请明细完成数量"},  # 字段映射
+        
+        "prdOApyDetPrdOApyCompleteStatus": {"name": "成品出库申请明细完成状态"},  # 字段映射
+        
+        "prdOApyDetPrdOApyCreateTime": {"name": "成品出库申请明细创建时间"},  # 字段映射
+        
+        "prdOApyDetPrdOApyDeliveryDate": {"name": "成品出库申请明细交货日期"},  # 字段映射
+        
+        "prdOApyDetPrdOApyEngName": {"name": "成品出库申请明细英文名称"},  # 字段映射
+        
+        "prdOApyDetPrdOApyGropeCode": {"name": "成品出库申请明细搜索码"},  # 字段映射
+        
+        "prdOApyDetPrdOApyPlannedTimeRequired": {"name": "成品出库申请明细计划需时"},  # 字段映射
+        
+        "prdOApyDetPrdOApyProductionShiftId": {"name": "成品出库申请明细生产班次ID"},  # 字段映射
+        
+        "prdOApyDetPrdOApyQuantity": {"name": "成品出库申请明细任务数量"},  # 字段映射
+        
+        "prdOApyDetPrdSalGiftQuantity": {"name": "成品出库申请明细成品销货赠品完成数量"},  # 字段映射
+        
+        "prdOApyDetPrdSalGiftStatus": {"name": "成品出库申请明细成品销货赠品完成状态"},  # 字段映射
+        
+        "prdOApyDetPrdSalQuantity": {"name": "成品出库申请明细成品销货完成数量"},  # 字段映射
+        
+        "prdOApyDetPrdSalSpareQuantity": {"name": "成品出库申请明细成品销货备品完成数量"},  # 字段映射
+        
+        "prdOApyDetPrdSalSpareStatus": {"name": "成品出库申请明细成品销货备品完成状态"},  # 字段映射
+        
+        "prdOApyDetPrdSalStatus": {"name": "成品出库申请明细成品销货完成状态"},  # 字段映射
+        
+        "prdOApyDetTotalAmountInTax": {"name": "成品出库申请明细含税金额"},  # 字段映射
+        
+        "prdOApyDetTotalAmountWitTax": {"name": "成品出库申请明细不含税金额"},  # 字段映射
+        
+        "prdOApyDetTransPlanQuantity": {"name": "成品出库申请明细运输计划完成数量"},  # 字段映射
+        
+        "prdOApyDetTransPlanStatus": {"name": "成品出库申请明细运输计划完成状态"}  # 字段映射
+        
+    }  # 过滤字段字典结束
+    meaning_list = {
+        
+        "成品出库申请明细实际需时": "成品出库申请明细实际需时(小时)",  # 字段含义
+        
+        "成品出库申请明细调整需时": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)",  # 字段含义
+        
+        "成品出库申请明细审核时间": "成品出库申请明细审核时间",  # 字段含义
+        
+        "成品出库申请明细审核状态": "成品出库申请明细审核状态",  # 字段含义
+        
+        "成品出库申请明细开始时间": "成品出库申请明细开始时间",  # 字段含义
+        
+        "成品出库申请明细简称": "成品出库申请明细简称",  # 字段含义
+        
+        "成品出库申请明细完成数量": "成品出库申请明细完成数量",  # 字段含义
+        
+        "成品出库申请明细完成状态": "成品出库申请明细完成状态",  # 字段含义
+        
+        "成品出库申请明细收货单位名称": "成品出库申请明细收货单位名称",  # 字段含义
+        
+        "成品出库申请明细创建时间": "成品出库申请明细创建时间",  # 字段含义
+        
+        "成品出库申请明细收货人": "成品出库申请明细收货人(客户联系人)",  # 字段含义
+        
+        "成品出库申请明细手机号": "成品出库申请明细手机号(客户联系人手机号)",  # 字段含义
+        
+        "成品出库申请明细电话": "成品出库申请明细电话(客户联系人电话)",  # 字段含义
+        
+        "成品出库申请明细送货地址": "成品出库申请明细送货地址(客户送货地址)",  # 字段含义
+        
+        "成品出库申请明细交货日期": "成品出库申请明细交货日期",  # 字段含义
+        
+        "成品出库申请明细描述": "成品出库申请明细描述",  # 字段含义
+        
+        "成品出库申请明细结束时间": "成品出库申请明细结束时间",  # 字段含义
+        
+        "成品出库申请明细最后需时": "成品出库申请明细最后需时(小时)",  # 字段含义
+        
+        "成品出库申请明细英文名称": "成品出库申请明细英文名称",  # 字段含义
+        
+        "成品出库申请明细币种汇率id": "成品出库申请明细币种汇率id",  # 字段含义
+        
+        "成品出库申请明细赠品数量": "成品出库申请明细赠品数量",  # 字段含义
+        
+        "成品出库申请明细PK": "成品出库申请明细PK",  # 字段含义
+        
+        "成品出库申请明细发票税率id": "成品出库申请明细发票税率id",  # 字段含义
+        
+        "成品出库申请明细计划需时": "成品出库申请明细计划需时(小时)",  # 字段含义
+        
+        "成品出库申请明细实际需时": "成品出库申请明细实际需时(小时)",  # 字段含义
+        
+        "成品出库申请明细调整需时": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)",  # 字段含义
+        
+        "成品出库申请明细开始时间": "成品出库申请明细开始时间",  # 字段含义
+        
+        "成品出库申请明细简称": "成品出库申请明细简称",  # 字段含义
+        
+        "成品出库申请明细结案原因": "成品出库申请明细结案原因",  # 字段含义
+        
+        "成品出库申请明细结案状态": "成品出库申请明细结案状态",  # 字段含义
+        
+        "成品出库申请明细评论": "成品出库申请明细评论",  # 字段含义
+        
+        "成品出库申请明细完成数量": "成品出库申请明细完成数量",  # 字段含义
+        
+        "成品出库申请明细完成状态": "成品出库申请明细完成状态",  # 字段含义
+        
+        "成品出库申请明细创建时间": "成品出库申请明细创建时间",  # 字段含义
+        
+        "成品出库申请明细交货日期": "成品出库申请明细交货日期",  # 字段含义
+        
+        "成品出库申请明细英文名称": "成品出库申请明细英文名称",  # 字段含义
+        
+        "成品出库申请明细搜索码": "成品出库申请明细搜索码",  # 字段含义
+        
+        "成品出库申请明细计划需时": "成品出库申请明细计划需时(小时)",  # 字段含义
+        
+        "成品出库申请明细生产班次ID": "成品出库申请明细生产班次ID",  # 字段含义
+        
+        "成品出库申请明细任务数量": "成品出库申请明细任务数量",  # 字段含义
+        
+        "成品出库申请明细成品销货赠品完成数量": "成品出库申请明细成品销货赠品完成数量",  # 字段含义
+        
+        "成品出库申请明细成品销货赠品完成状态": "成品出库申请明细成品销货赠品完成状态",  # 字段含义
+        
+        "成品出库申请明细成品销货完成数量": "成品出库申请明细成品销货完成数量",  # 字段含义
+        
+        "成品出库申请明细成品销货备品完成数量": "成品出库申请明细成品销货备品完成数量",  # 字段含义
+        
+        "成品出库申请明细成品销货备品完成状态": "成品出库申请明细成品销货备品完成状态",  # 字段含义
+        
+        "成品出库申请明细成品销货完成状态": "成品出库申请明细成品销货完成状态",  # 字段含义
+        
+        "成品出库申请明细含税金额": "成品出库申请明细含税金额",  # 字段含义
+        
+        "成品出库申请明细不含税金额": "成品出库申请明细不含税金额",  # 字段含义
+        
+        "成品出库申请明细运输计划完成数量": "成品出库申请明细运输计划完成数量",  # 字段含义
+        
+        "成品出库申请明细运输计划完成状态": "成品出库申请明细运输计划完成状态"  # 字段含义
+        
+    }  # 含义字典结束
+    # 调用通用工具方法获取并过滤数据
+    return fetch_data("成品出库申请明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  

@@ -1,0 +1,1332 @@
+{
+    "api_name": "/manu-statement-det/findList",
+    "table_name": "加工商对账单明细",
+    "request": {
+        "manuStatementDetManuStatementClazz": "MANU_STATEMENT ",
+        "manuStatementDetClazz": "MANU_STATEMENT_DET "
+    },
+    "mainTabClazz": "MANU_STATEMENT_DET ",
+    "response": {
+        "manuStatementDetActualTimeRequired": {
+            "meaning": "加工商对账单明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细实际需时"
+        },
+        "manuStatementDetAdjustmentTimeRequired": {
+            "meaning": "加工商对账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细调整需时"
+        },
+        "manuStatementDetAmount": {
+            "meaning": "加工商对账单明细金额",
+            "reachable": false,
+            "name": "加工商对账单明细金额"
+        },
+        "manuStatementDetApplicationId": {
+            "meaning": "加工商对账单明细应用ID",
+            "reachable": false,
+            "name": "加工商对账单明细应用ID"
+        },
+        "manuStatementDetAuditDate": {
+            "meaning": "加工商对账单明细审核时间",
+            "reachable": false,
+            "name": "加工商对账单明细审核时间"
+        },
+        "manuStatementDetAuditStatus": {
+            "meaning": "加工商对账单明细审核状态",
+            "reachable": false,
+            "name": "加工商对账单明细审核状态"
+        },
+        "manuStatementDetAvailableScheduleId": {
+            "meaning": "加工商对账单明细可用日程id",
+            "reachable": false,
+            "name": "加工商对账单明细可用日程id"
+        },
+        "manuStatementDetBeginTime": {
+            "meaning": "加工商对账单明细开始时间",
+            "reachable": false,
+            "name": "加工商对账单明细开始时间"
+        },
+        "manuStatementDetBizVersion": {
+            "meaning": "加工商对账单明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商对账单明细业务自定义版本号"
+        },
+        "manuStatementDetBriefName": {
+            "meaning": "加工商对账单明细简称",
+            "reachable": false,
+            "name": "加工商对账单明细简称"
+        },
+        "manuStatementDetBusDivisId": {
+            "meaning": "加工商对账单明细事业部id",
+            "reachable": false,
+            "name": "加工商对账单明细事业部id"
+        },
+        "manuStatementDetClazz": {
+            "meaning": "加工商对账单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商对账单明细子类"
+        },
+        "manuStatementDetClosedReason": {
+            "meaning": "加工商对账单明细结案原因",
+            "reachable": false,
+            "name": "加工商对账单明细结案原因"
+        },
+        "manuStatementDetClosedStatus": {
+            "meaning": "加工商对账单明细结案状态",
+            "reachable": false,
+            "name": "加工商对账单明细结案状态"
+        },
+        "manuStatementDetComment": {
+            "meaning": "加工商对账单明细评论",
+            "reachable": false,
+            "name": "加工商对账单明细评论"
+        },
+        "manuStatementDetCompleteQuantity": {
+            "meaning": "加工商对账单明细完成数量",
+            "reachable": false,
+            "name": "加工商对账单明细完成数量"
+        },
+        "manuStatementDetCompleteStatus": {
+            "meaning": "加工商对账单明细完成状态",
+            "reachable": false,
+            "name": "加工商对账单明细完成状态"
+        },
+        "manuStatementDetCreateTime": {
+            "meaning": "加工商对账单明细创建时间",
+            "reachable": false,
+            "name": "加工商对账单明细创建时间"
+        },
+        "manuStatementDetCreator": {
+            "meaning": "加工商对账单明细创建人",
+            "reachable": false,
+            "name": "加工商对账单明细创建人"
+        },
+        "manuStatementDetCreatorId": {
+            "meaning": "加工商对账单明细创建人ID",
+            "reachable": false,
+            "name": "加工商对账单明细创建人ID"
+        },
+        "manuStatementDetDateExtra1": {
+            "meaning": "加工商对账单明细扩展时间1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间1"
+        },
+        "manuStatementDetDateExtra2": {
+            "meaning": "加工商对账单明细扩展时间2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间2"
+        },
+        "manuStatementDetDateExtra3": {
+            "meaning": "加工商对账单明细扩展时间3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间3"
+        },
+        "manuStatementDetDateExtra4": {
+            "meaning": "加工商对账单明细扩展时间4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间4"
+        },
+        "manuStatementDetDateExtra5": {
+            "meaning": "加工商对账单明细扩展时间5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间5"
+        },
+        "manuStatementDetDefaultType": {
+            "meaning": "加工商对账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点主类型"
+        },
+        "manuStatementDetDeliveryDate": {
+            "meaning": "加工商对账单明细交货日期",
+            "reachable": false,
+            "name": "加工商对账单明细交货日期"
+        },
+        "manuStatementDetDescription": {
+            "meaning": "加工商对账单明细描述",
+            "reachable": false,
+            "name": "加工商对账单明细描述"
+        },
+        "manuStatementDetEndTime": {
+            "meaning": "加工商对账单明细结束时间",
+            "reachable": false,
+            "name": "加工商对账单明细结束时间"
+        },
+        "manuStatementDetEndTimeRequired": {
+            "meaning": "加工商对账单明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细最后需时"
+        },
+        "manuStatementDetEngName": {
+            "meaning": "加工商对账单明细英文名称",
+            "reachable": false,
+            "name": "加工商对账单明细英文名称"
+        },
+        "manuStatementDetEquipmentId": {
+            "meaning": "加工商对账单明细设备id",
+            "reachable": false,
+            "name": "加工商对账单明细设备id"
+        },
+        "manuStatementDetExchangeRate": {
+            "meaning": "加工商对账单明细汇率",
+            "reachable": false,
+            "name": "加工商对账单明细汇率"
+        },
+        "manuStatementDetExchangeRateId": {
+            "meaning": "加工商对账单明细币种汇率id",
+            "reachable": false,
+            "name": "加工商对账单明细币种汇率id"
+        },
+        "manuStatementDetExtension": {
+            "meaning": "加工商对账单明细扩展数据",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数据"
+        },
+        "manuStatementDetExternalState": {
+            "meaning": "加工商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商对账单明细上流程状态位"
+        },
+        "manuStatementDetFilterClazz": {
+            "meaning": "加工商对账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商对账单明细冗余字段用于筛选"
+        },
+        "manuStatementDetFlags": {
+            "meaning": "加工商对账单明细63位标志位",
+            "reachable": false,
+            "name": "加工商对账单明细63位标志位"
+        },
+        "manuStatementDetFromAuditDate": {
+            "meaning": "manuStatementDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromBeginTime": {
+            "meaning": "manuStatementDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromCreateTime": {
+            "meaning": "manuStatementDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDateExtra1": {
+            "meaning": "manuStatementDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDateExtra2": {
+            "meaning": "manuStatementDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDateExtra3": {
+            "meaning": "manuStatementDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDateExtra4": {
+            "meaning": "manuStatementDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDateExtra5": {
+            "meaning": "manuStatementDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromDeliveryDate": {
+            "meaning": "manuStatementDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromEndTime": {
+            "meaning": "manuStatementDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromReceiptDate": {
+            "meaning": "manuStatementDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFromUpdateTime": {
+            "meaning": "manuStatementDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetFscType": {
+            "meaning": "加工商对账单明细FSC声明",
+            "reachable": false,
+            "name": "加工商对账单明细FSC声明"
+        },
+        "manuStatementDetGenerativePeople": {
+            "meaning": "加工商对账单明细下发人",
+            "reachable": false,
+            "name": "加工商对账单明细下发人"
+        },
+        "manuStatementDetGenerativeState": {
+            "meaning": "加工商对账单明细下发状态",
+            "reachable": false,
+            "name": "加工商对账单明细下发状态"
+        },
+        "manuStatementDetGroovyScript": {
+            "meaning": "加工商对账单明细groovy脚本",
+            "reachable": false,
+            "name": "加工商对账单明细groovy脚本"
+        },
+        "manuStatementDetGropeCode": {
+            "meaning": "加工商对账单明细搜索码",
+            "reachable": false,
+            "name": "加工商对账单明细搜索码"
+        },
+        "manuStatementDetId": {
+            "meaning": "加工商对账单明细PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "加工商对账单明细PK"
+        },
+        "manuStatementDetInUsed": {
+            "meaning": "加工商对账单明细是否被使用",
+            "reachable": false,
+            "name": "加工商对账单明细是否被使用"
+        },
+        "manuStatementDetInvTypeTaxRateId": {
+            "meaning": "加工商对账单明细发票税率id",
+            "reachable": false,
+            "name": "加工商对账单明细发票税率id"
+        },
+        "manuStatementDetInvoicedAmount": {
+            "meaning": "加工商对账单明细已开票金额",
+            "reachable": false,
+            "name": "加工商对账单明细已开票金额"
+        },
+        "manuStatementDetInvoicedState": {
+            "meaning": "加工商对账单明细开票状态（0未开票；1部分开票；2全部开票；3终止开票）",
+            "reachable": false,
+            "name": "加工商对账单明细开票状态"
+        },
+        "manuStatementDetIsBanned": {
+            "meaning": "加工商对账单明细是否被禁用",
+            "reachable": false,
+            "name": "加工商对账单明细是否被禁用"
+        },
+        "manuStatementDetIsDeleted": {
+            "meaning": "加工商对账单明细是否被删除",
+            "reachable": false,
+            "name": "加工商对账单明细是否被删除"
+        },
+        "manuStatementDetIsLeaf": {
+            "meaning": "加工商对账单明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商对账单明细是否叶子节点"
+        },
+        "manuStatementDetIsMainFlow": {
+            "meaning": "加工商对账单明细是否是主流程",
+            "reachable": false,
+            "name": "加工商对账单明细是否是主流程"
+        },
+        "manuStatementDetIsManualModificationDate": {
+            "meaning": "加工商对账单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商对账单明细是否手动修改计划生产时间"
+        },
+        "manuStatementDetIsolation": {
+            "meaning": "加工商对账单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点数据隔离标识"
+        },
+        "manuStatementDetJsScript": {
+            "meaning": "加工商对账单明细js脚本",
+            "reachable": false,
+            "name": "加工商对账单明细js脚本"
+        },
+        "manuStatementDetLocAmount": {
+            "meaning": "加工商对账单明细本币金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币金额"
+        },
+        "manuStatementDetLocCompleteQuantity": {
+            "meaning": "加工商对账单明细本币完成数量",
+            "reachable": false,
+            "name": "加工商对账单明细本币完成数量"
+        },
+        "manuStatementDetLocInvoicedAmount": {
+            "meaning": "加工商对账单明细本币已开票金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币已开票金额"
+        },
+        "manuStatementDetLocOtherExpense": {
+            "meaning": "加工商对账单明细本币其他费用",
+            "reachable": false,
+            "name": "加工商对账单明细本币其他费用"
+        },
+        "manuStatementDetLocSettleAmount": {
+            "meaning": "加工商对账单明细本币结算金额（本币金额+本币其他费用）",
+            "reachable": false,
+            "name": "加工商对账单明细本币结算金额"
+        },
+        "manuStatementDetLocSettledAmount": {
+            "meaning": "加工商对账单明细本币已结算金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币已结算金额"
+        },
+        "manuStatementDetManuStatementActualTimeRequired": {
+            "meaning": "加工商对账单明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细实际需时"
+        },
+        "manuStatementDetManuStatementAdjustmentTimeRequired": {
+            "meaning": "加工商对账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细调整需时"
+        },
+        "manuStatementDetManuStatementApplicationId": {
+            "meaning": "加工商对账单明细应用ID",
+            "reachable": false,
+            "name": "加工商对账单明细应用ID"
+        },
+        "manuStatementDetManuStatementAuditDate": {
+            "meaning": "加工商对账单明细审核时间",
+            "reachable": false,
+            "name": "加工商对账单明细审核时间"
+        },
+        "manuStatementDetManuStatementAuditStatus": {
+            "meaning": "加工商对账单明细审核状态",
+            "reachable": false,
+            "name": "加工商对账单明细审核状态"
+        },
+        "manuStatementDetManuStatementAvailableScheduleId": {
+            "meaning": "加工商对账单明细可用日程id",
+            "reachable": false,
+            "name": "加工商对账单明细可用日程id"
+        },
+        "manuStatementDetManuStatementBeginTime": {
+            "meaning": "加工商对账单明细开始时间",
+            "reachable": false,
+            "name": "加工商对账单明细开始时间"
+        },
+        "manuStatementDetManuStatementBizVersion": {
+            "meaning": "加工商对账单明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商对账单明细业务自定义版本号"
+        },
+        "manuStatementDetManuStatementBriefName": {
+            "meaning": "加工商对账单明细简称",
+            "reachable": false,
+            "name": "加工商对账单明细简称"
+        },
+        "manuStatementDetManuStatementBusDivisId": {
+            "meaning": "加工商对账单明细事业部id",
+            "reachable": false,
+            "name": "加工商对账单明细事业部id"
+        },
+        "manuStatementDetManuStatementClazz": {
+            "meaning": "加工商对账单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商对账单明细子类"
+        },
+        "manuStatementDetManuStatementClosedReason": {
+            "meaning": "加工商对账单明细结案原因",
+            "reachable": false,
+            "name": "加工商对账单明细结案原因"
+        },
+        "manuStatementDetManuStatementClosedStatus": {
+            "meaning": "加工商对账单明细结案状态",
+            "reachable": false,
+            "name": "加工商对账单明细结案状态"
+        },
+        "manuStatementDetManuStatementComment": {
+            "meaning": "加工商对账单明细评论",
+            "reachable": false,
+            "name": "加工商对账单明细评论"
+        },
+        "manuStatementDetManuStatementCompleteQuantity": {
+            "meaning": "加工商对账单明细完成数量",
+            "reachable": false,
+            "name": "加工商对账单明细完成数量"
+        },
+        "manuStatementDetManuStatementCompleteStatus": {
+            "meaning": "加工商对账单明细完成状态",
+            "reachable": false,
+            "name": "加工商对账单明细完成状态"
+        },
+        "manuStatementDetManuStatementCreateTime": {
+            "meaning": "加工商对账单明细创建时间",
+            "reachable": false,
+            "name": "加工商对账单明细创建时间"
+        },
+        "manuStatementDetManuStatementCreator": {
+            "meaning": "加工商对账单明细创建人",
+            "reachable": false,
+            "name": "加工商对账单明细创建人"
+        },
+        "manuStatementDetManuStatementCreatorId": {
+            "meaning": "加工商对账单明细创建人ID",
+            "reachable": false,
+            "name": "加工商对账单明细创建人ID"
+        },
+        "manuStatementDetManuStatementCurrency": {
+            "meaning": "加工商对账单明细币种",
+            "reachable": false,
+            "name": "加工商对账单明细币种"
+        },
+        "manuStatementDetManuStatementDateExtra1": {
+            "meaning": "加工商对账单明细扩展时间1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间1"
+        },
+        "manuStatementDetManuStatementDateExtra2": {
+            "meaning": "加工商对账单明细扩展时间2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间2"
+        },
+        "manuStatementDetManuStatementDateExtra3": {
+            "meaning": "加工商对账单明细扩展时间3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间3"
+        },
+        "manuStatementDetManuStatementDateExtra4": {
+            "meaning": "加工商对账单明细扩展时间4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间4"
+        },
+        "manuStatementDetManuStatementDateExtra5": {
+            "meaning": "加工商对账单明细扩展时间5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展时间5"
+        },
+        "manuStatementDetManuStatementDefaultType": {
+            "meaning": "加工商对账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点主类型"
+        },
+        "manuStatementDetManuStatementDeliveryDate": {
+            "meaning": "加工商对账单明细交货日期",
+            "reachable": false,
+            "name": "加工商对账单明细交货日期"
+        },
+        "manuStatementDetManuStatementDescription": {
+            "meaning": "加工商对账单明细描述",
+            "reachable": false,
+            "name": "加工商对账单明细描述"
+        },
+        "manuStatementDetManuStatementEndTime": {
+            "meaning": "加工商对账单明细结束时间",
+            "reachable": false,
+            "name": "加工商对账单明细结束时间"
+        },
+        "manuStatementDetManuStatementEndTimeRequired": {
+            "meaning": "加工商对账单明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细最后需时"
+        },
+        "manuStatementDetManuStatementEngName": {
+            "meaning": "加工商对账单明细英文名称",
+            "reachable": false,
+            "name": "加工商对账单明细英文名称"
+        },
+        "manuStatementDetManuStatementEquipmentId": {
+            "meaning": "加工商对账单明细设备id",
+            "reachable": false,
+            "name": "加工商对账单明细设备id"
+        },
+        "manuStatementDetManuStatementExchangeRateId": {
+            "meaning": "加工商对账单明细币种汇率id",
+            "reachable": false,
+            "name": "加工商对账单明细币种汇率id"
+        },
+        "manuStatementDetManuStatementExtension": {
+            "meaning": "加工商对账单明细扩展数据",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数据"
+        },
+        "manuStatementDetManuStatementExternalState": {
+            "meaning": "加工商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商对账单明细上流程状态位"
+        },
+        "manuStatementDetManuStatementFilterClazz": {
+            "meaning": "加工商对账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商对账单明细冗余字段用于筛选"
+        },
+        "manuStatementDetManuStatementFlags": {
+            "meaning": "加工商对账单明细63位标志位",
+            "reachable": false,
+            "name": "加工商对账单明细63位标志位"
+        },
+        "manuStatementDetManuStatementFromAuditDate": {
+            "meaning": "manuStatementDetManuStatementFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromBeginTime": {
+            "meaning": "manuStatementDetManuStatementFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromCreateTime": {
+            "meaning": "manuStatementDetManuStatementFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDateExtra1": {
+            "meaning": "manuStatementDetManuStatementFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDateExtra2": {
+            "meaning": "manuStatementDetManuStatementFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDateExtra3": {
+            "meaning": "manuStatementDetManuStatementFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDateExtra4": {
+            "meaning": "manuStatementDetManuStatementFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDateExtra5": {
+            "meaning": "manuStatementDetManuStatementFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromDeliveryDate": {
+            "meaning": "manuStatementDetManuStatementFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromEndTime": {
+            "meaning": "manuStatementDetManuStatementFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromReceiptDate": {
+            "meaning": "manuStatementDetManuStatementFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFromUpdateTime": {
+            "meaning": "manuStatementDetManuStatementFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementFscType": {
+            "meaning": "加工商对账单明细FSC声明",
+            "reachable": false,
+            "name": "加工商对账单明细FSC声明"
+        },
+        "manuStatementDetManuStatementGenerativePeople": {
+            "meaning": "加工商对账单明细下发人",
+            "reachable": false,
+            "name": "加工商对账单明细下发人"
+        },
+        "manuStatementDetManuStatementGenerativeState": {
+            "meaning": "加工商对账单明细下发状态",
+            "reachable": false,
+            "name": "加工商对账单明细下发状态"
+        },
+        "manuStatementDetManuStatementGroovyScript": {
+            "meaning": "加工商对账单明细groovy脚本",
+            "reachable": false,
+            "name": "加工商对账单明细groovy脚本"
+        },
+        "manuStatementDetManuStatementGropeCode": {
+            "meaning": "加工商对账单明细搜索码",
+            "reachable": false,
+            "name": "加工商对账单明细搜索码"
+        },
+        "manuStatementDetManuStatementId": {
+            "meaning": "加工商对账单明细PK",
+            "reachable": false,
+            "name": "加工商对账单明细PK"
+        },
+        "manuStatementDetManuStatementInUsed": {
+            "meaning": "加工商对账单明细是否被使用",
+            "reachable": false,
+            "name": "加工商对账单明细是否被使用"
+        },
+        "manuStatementDetManuStatementInvTypeTaxRateId": {
+            "meaning": "加工商对账单明细发票税率id",
+            "reachable": false,
+            "name": "加工商对账单明细发票税率id"
+        },
+        "manuStatementDetManuStatementIsBanned": {
+            "meaning": "加工商对账单明细是否被禁用",
+            "reachable": false,
+            "name": "加工商对账单明细是否被禁用"
+        },
+        "manuStatementDetManuStatementIsDeleted": {
+            "meaning": "加工商对账单明细是否被删除",
+            "reachable": false,
+            "name": "加工商对账单明细是否被删除"
+        },
+        "manuStatementDetManuStatementIsLeaf": {
+            "meaning": "加工商对账单明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商对账单明细是否叶子节点"
+        },
+        "manuStatementDetManuStatementIsMainFlow": {
+            "meaning": "加工商对账单明细是否是主流程",
+            "reachable": false,
+            "name": "加工商对账单明细是否是主流程"
+        },
+        "manuStatementDetManuStatementIsManualModificationDate": {
+            "meaning": "加工商对账单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商对账单明细是否手动修改计划生产时间"
+        },
+        "manuStatementDetManuStatementIsolation": {
+            "meaning": "加工商对账单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点数据隔离标识"
+        },
+        "manuStatementDetManuStatementJsScript": {
+            "meaning": "加工商对账单明细js脚本",
+            "reachable": false,
+            "name": "加工商对账单明细js脚本"
+        },
+        "manuStatementDetManuStatementLocCompleteQuantity": {
+            "meaning": "加工商对账单明细本币完成数量",
+            "reachable": false,
+            "name": "加工商对账单明细本币完成数量"
+        },
+        "manuStatementDetManuStatementLocTotalAmount": {
+            "meaning": "加工商对账单明细本币总金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币总金额"
+        },
+        "manuStatementDetManuStatementLocTotalInvoicedAmount": {
+            "meaning": "加工商对账单明细本币总已开票金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币总已开票金额"
+        },
+        "manuStatementDetManuStatementLocTotalOtherExpense": {
+            "meaning": "加工商对账单明细本币总其他费用",
+            "reachable": false,
+            "name": "加工商对账单明细本币总其他费用"
+        },
+        "manuStatementDetManuStatementLocTotalSettleAmount": {
+            "meaning": "加工商对账单明细本币总结算金额（本币总金额+本币总其他费用）",
+            "reachable": false,
+            "name": "加工商对账单明细本币总结算金额"
+        },
+        "manuStatementDetManuStatementLocTotalSettledAmount": {
+            "meaning": "加工商对账单明细本币总已结算金额",
+            "reachable": false,
+            "name": "加工商对账单明细本币总已结算金额"
+        },
+        "manuStatementDetManuStatementMaterialId": {
+            "meaning": "加工商对账单明细物料id",
+            "reachable": false,
+            "name": "加工商对账单明细物料id"
+        },
+        "manuStatementDetManuStatementName": {
+            "meaning": "加工商对账单明细智能节点名",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点名"
+        },
+        "manuStatementDetManuStatementNameCodeSearch": {
+            "meaning": "加工商对账单明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商对账单明细name、user"
+        },
+        "manuStatementDetManuStatementNumberExtra1": {
+            "meaning": "加工商对账单明细扩展数量1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量1"
+        },
+        "manuStatementDetManuStatementNumberExtra2": {
+            "meaning": "加工商对账单明细扩展数量2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量2"
+        },
+        "manuStatementDetManuStatementNumberExtra3": {
+            "meaning": "加工商对账单明细扩展数量3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量3"
+        },
+        "manuStatementDetManuStatementNumberExtra4": {
+            "meaning": "加工商对账单明细扩展数量4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量4"
+        },
+        "manuStatementDetManuStatementNumberExtra5": {
+            "meaning": "加工商对账单明细扩展数量5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量5"
+        },
+        "manuStatementDetManuStatementParentId": {
+            "meaning": "加工商对账单明细父节点ID",
+            "reachable": false,
+            "name": "加工商对账单明细父节点ID"
+        },
+        "manuStatementDetManuStatementPlannedOutputQuantity": {
+            "meaning": "加工商对账单明细计划产出数量",
+            "reachable": false,
+            "name": "加工商对账单明细计划产出数量"
+        },
+        "manuStatementDetManuStatementPlannedTimeRequired": {
+            "meaning": "加工商对账单明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细计划需时"
+        },
+        "manuStatementDetManuStatementPrintTimes": {
+            "meaning": "加工商对账单明细打印次数",
+            "reachable": false,
+            "name": "加工商对账单明细打印次数"
+        },
+        "manuStatementDetManuStatementPriority": {
+            "meaning": "加工商对账单明细优先级",
+            "reachable": false,
+            "name": "加工商对账单明细优先级"
+        },
+        "manuStatementDetManuStatementProcessInstanceId": {
+            "meaning": "加工商对账单明细流程实例ID",
+            "reachable": false,
+            "name": "加工商对账单明细流程实例ID"
+        },
+        "manuStatementDetManuStatementProductionProcessesTypeId": {
+            "meaning": "加工商对账单明细工序类型ID",
+            "reachable": false,
+            "name": "加工商对账单明细工序类型ID"
+        },
+        "manuStatementDetManuStatementProductionShiftId": {
+            "meaning": "加工商对账单明细生产班次ID",
+            "reachable": false,
+            "name": "加工商对账单明细生产班次ID"
+        },
+        "manuStatementDetManuStatementQuantity": {
+            "meaning": "加工商对账单明细任务数量",
+            "reachable": false,
+            "name": "加工商对账单明细任务数量"
+        },
+        "manuStatementDetManuStatementReceiptDate": {
+            "meaning": "加工商对账单明细单据日期",
+            "reachable": false,
+            "name": "加工商对账单明细单据日期"
+        },
+        "manuStatementDetManuStatementReceiptType": {
+            "meaning": "加工商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商对账单明细单据类型"
+        },
+        "manuStatementDetManuStatementRelatedTasksId": {
+            "meaning": "加工商对账单明细关联任务id",
+            "reachable": false,
+            "name": "加工商对账单明细关联任务id"
+        },
+        "manuStatementDetManuStatementSerialNumber": {
+            "meaning": "加工商对账单明细顺序号",
+            "reachable": false,
+            "name": "加工商对账单明细顺序号"
+        },
+        "manuStatementDetManuStatementSource": {
+            "meaning": "加工商对账单明细源",
+            "reachable": false,
+            "name": "加工商对账单明细源"
+        },
+        "manuStatementDetManuStatementSourceType": {
+            "meaning": "加工商对账单明细来源类型",
+            "reachable": false,
+            "name": "加工商对账单明细来源类型"
+        },
+        "manuStatementDetManuStatementState": {
+            "meaning": "加工商对账单明细通用状态",
+            "reachable": false,
+            "name": "加工商对账单明细通用状态"
+        },
+        "manuStatementDetManuStatementSupplierId": {
+            "meaning": "加工商对账单明细供应商_id",
+            "reachable": false,
+            "name": "加工商对账单明细供应商_id"
+        },
+        "manuStatementDetManuStatementSystemCode": {
+            "meaning": "加工商对账单明细系统编码",
+            "reachable": false,
+            "name": "加工商对账单明细系统编码"
+        },
+        "manuStatementDetManuStatementTarget": {
+            "meaning": "加工商对账单明细目标",
+            "reachable": false,
+            "name": "加工商对账单明细目标"
+        },
+        "manuStatementDetManuStatementTaskNodeName": {
+            "meaning": "加工商对账单明细任务节点名称",
+            "reachable": false,
+            "name": "加工商对账单明细任务节点名称"
+        },
+        "manuStatementDetManuStatementTenantId": {
+            "meaning": "加工商对账单明细租户_id",
+            "reachable": false,
+            "name": "加工商对账单明细租户_id"
+        },
+        "manuStatementDetManuStatementThirdPartyClass": {
+            "meaning": "加工商对账单明细第三方分类",
+            "reachable": false,
+            "name": "加工商对账单明细第三方分类"
+        },
+        "manuStatementDetManuStatementThirdPartyId": {
+            "meaning": "加工商对账单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商对账单明细第三方系统中的唯一ID"
+        },
+        "manuStatementDetManuStatementThirdPartyName": {
+            "meaning": "加工商对账单明细第三方名称",
+            "reachable": false,
+            "name": "加工商对账单明细第三方名称"
+        },
+        "manuStatementDetManuStatementToAuditDate": {
+            "meaning": "manuStatementDetManuStatementToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToBeginTime": {
+            "meaning": "manuStatementDetManuStatementToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToCreateTime": {
+            "meaning": "manuStatementDetManuStatementToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDateExtra1": {
+            "meaning": "manuStatementDetManuStatementToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDateExtra2": {
+            "meaning": "manuStatementDetManuStatementToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDateExtra3": {
+            "meaning": "manuStatementDetManuStatementToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDateExtra4": {
+            "meaning": "manuStatementDetManuStatementToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDateExtra5": {
+            "meaning": "manuStatementDetManuStatementToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToDeliveryDate": {
+            "meaning": "manuStatementDetManuStatementToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToEndTime": {
+            "meaning": "manuStatementDetManuStatementToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToReceiptDate": {
+            "meaning": "manuStatementDetManuStatementToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementToUpdateTime": {
+            "meaning": "manuStatementDetManuStatementToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetManuStatementTotalAmount": {
+            "meaning": "加工商对账单明细总金额",
+            "reachable": false,
+            "name": "加工商对账单明细总金额"
+        },
+        "manuStatementDetManuStatementTotalInvoicedAmount": {
+            "meaning": "加工商对账单明细总已开票金额",
+            "reachable": false,
+            "name": "加工商对账单明细总已开票金额"
+        },
+        "manuStatementDetManuStatementTotalOtherExpense": {
+            "meaning": "加工商对账单明细总其他费用",
+            "reachable": false,
+            "name": "加工商对账单明细总其他费用"
+        },
+        "manuStatementDetManuStatementTotalSettleAmount": {
+            "meaning": "加工商对账单明细总结算金额（总金额+总其他费用）",
+            "reachable": false,
+            "name": "加工商对账单明细总结算金额"
+        },
+        "manuStatementDetManuStatementTotalSettledAmount": {
+            "meaning": "加工商对账单明细总已结算金额",
+            "reachable": false,
+            "name": "加工商对账单明细总已结算金额"
+        },
+        "manuStatementDetManuStatementUnitCode": {
+            "meaning": "加工商对账单明细单位id",
+            "reachable": false,
+            "name": "加工商对账单明细单位id"
+        },
+        "manuStatementDetManuStatementUpdateTime": {
+            "meaning": "加工商对账单明细更新时间",
+            "reachable": false,
+            "name": "加工商对账单明细更新时间"
+        },
+        "manuStatementDetManuStatementUpdater": {
+            "meaning": "加工商对账单明细更新人",
+            "reachable": false,
+            "name": "加工商对账单明细更新人"
+        },
+        "manuStatementDetManuStatementUpdaterId": {
+            "meaning": "加工商对账单明细更新人ID",
+            "reachable": false,
+            "name": "加工商对账单明细更新人ID"
+        },
+        "manuStatementDetManuStatementUserCode": {
+            "meaning": "加工商对账单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点的唯一编码"
+        },
+        "manuStatementDetManuStatementVarExtra1": {
+            "meaning": "加工商对账单明细扩展1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展1"
+        },
+        "manuStatementDetManuStatementVarExtra2": {
+            "meaning": "加工商对账单明细扩展2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展2"
+        },
+        "manuStatementDetManuStatementVarExtra3": {
+            "meaning": "加工商对账单明细扩展3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展3"
+        },
+        "manuStatementDetManuStatementVarExtra4": {
+            "meaning": "加工商对账单明细扩展4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展4"
+        },
+        "manuStatementDetManuStatementVarExtra5": {
+            "meaning": "加工商对账单明细扩展5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展5"
+        },
+        "manuStatementDetManuStatementVersion": {
+            "meaning": "加工商对账单明细版本号",
+            "reachable": false,
+            "name": "加工商对账单明细版本号"
+        },
+        "manuStatementDetMaterialId": {
+            "meaning": "加工商对账单明细物料id",
+            "reachable": false,
+            "name": "加工商对账单明细物料id"
+        },
+        "manuStatementDetName": {
+            "meaning": "加工商对账单明细智能节点名",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点名"
+        },
+        "manuStatementDetNameCodeSearch": {
+            "meaning": "加工商对账单明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商对账单明细name、user"
+        },
+        "manuStatementDetNumberExtra1": {
+            "meaning": "加工商对账单明细扩展数量1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量1"
+        },
+        "manuStatementDetNumberExtra2": {
+            "meaning": "加工商对账单明细扩展数量2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量2"
+        },
+        "manuStatementDetNumberExtra3": {
+            "meaning": "加工商对账单明细扩展数量3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量3"
+        },
+        "manuStatementDetNumberExtra4": {
+            "meaning": "加工商对账单明细扩展数量4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量4"
+        },
+        "manuStatementDetNumberExtra5": {
+            "meaning": "加工商对账单明细扩展数量5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展数量5"
+        },
+        "manuStatementDetOrderId": {
+            "meaning": "加工商对账单明细订单_id",
+            "reachable": false,
+            "name": "加工商对账单明细订单_id"
+        },
+        "manuStatementDetOtherExpense": {
+            "meaning": "加工商对账单明细其他费用",
+            "reachable": false,
+            "name": "加工商对账单明细其他费用"
+        },
+        "manuStatementDetParentId": {
+            "meaning": "加工商对账单明细父节点ID",
+            "reachable": false,
+            "name": "加工商对账单明细父节点ID"
+        },
+        "manuStatementDetPlannedOutputQuantity": {
+            "meaning": "加工商对账单明细计划产出数量",
+            "reachable": false,
+            "name": "加工商对账单明细计划产出数量"
+        },
+        "manuStatementDetPlannedTimeRequired": {
+            "meaning": "加工商对账单明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商对账单明细计划需时"
+        },
+        "manuStatementDetPrintTimes": {
+            "meaning": "加工商对账单明细打印次数",
+            "reachable": false,
+            "name": "加工商对账单明细打印次数"
+        },
+        "manuStatementDetPriority": {
+            "meaning": "加工商对账单明细优先级",
+            "reachable": false,
+            "name": "加工商对账单明细优先级"
+        },
+        "manuStatementDetProcessInstanceId": {
+            "meaning": "加工商对账单明细流程实例ID",
+            "reachable": false,
+            "name": "加工商对账单明细流程实例ID"
+        },
+        "manuStatementDetProductionProcessesTypeId": {
+            "meaning": "加工商对账单明细工序类型ID",
+            "reachable": false,
+            "name": "加工商对账单明细工序类型ID"
+        },
+        "manuStatementDetProductionShiftId": {
+            "meaning": "加工商对账单明细生产班次ID",
+            "reachable": false,
+            "name": "加工商对账单明细生产班次ID"
+        },
+        "manuStatementDetQuantity": {
+            "meaning": "加工商对账单明细任务数量",
+            "reachable": false,
+            "name": "加工商对账单明细任务数量"
+        },
+        "manuStatementDetReceiptDate": {
+            "meaning": "加工商对账单明细单据日期",
+            "reachable": false,
+            "name": "加工商对账单明细单据日期"
+        },
+        "manuStatementDetReceiptType": {
+            "meaning": "加工商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商对账单明细单据类型"
+        },
+        "manuStatementDetRelatedTasksId": {
+            "meaning": "加工商对账单明细关联任务id",
+            "reachable": false,
+            "name": "加工商对账单明细关联任务id"
+        },
+        "manuStatementDetSerialNumber": {
+            "meaning": "加工商对账单明细顺序号",
+            "reachable": false,
+            "name": "加工商对账单明细顺序号"
+        },
+        "manuStatementDetSettleAmount": {
+            "meaning": "加工商对账单明细结算金额（金额+其他费用）",
+            "reachable": false,
+            "name": "加工商对账单明细结算金额"
+        },
+        "manuStatementDetSettledAmount": {
+            "meaning": "加工商对账单明细已结算金额",
+            "reachable": false,
+            "name": "加工商对账单明细已结算金额"
+        },
+        "manuStatementDetSettledState": {
+            "meaning": "加工商对账单明细结算状态（0未结算；1部分结算；2全部结算；3终止结算）",
+            "reachable": false,
+            "name": "加工商对账单明细结算状态"
+        },
+        "manuStatementDetSource": {
+            "meaning": "加工商对账单明细源",
+            "reachable": false,
+            "name": "加工商对账单明细源"
+        },
+        "manuStatementDetSourceType": {
+            "meaning": "加工商对账单明细来源类型",
+            "reachable": false,
+            "name": "加工商对账单明细来源类型"
+        },
+        "manuStatementDetState": {
+            "meaning": "加工商对账单明细通用状态",
+            "reachable": false,
+            "name": "加工商对账单明细通用状态"
+        },
+        "manuStatementDetSystemCode": {
+            "meaning": "加工商对账单明细系统编码",
+            "reachable": false,
+            "name": "加工商对账单明细系统编码"
+        },
+        "manuStatementDetTarget": {
+            "meaning": "加工商对账单明细目标",
+            "reachable": false,
+            "name": "加工商对账单明细目标"
+        },
+        "manuStatementDetTaskNodeName": {
+            "meaning": "加工商对账单明细任务节点名称",
+            "reachable": false,
+            "name": "加工商对账单明细任务节点名称"
+        },
+        "manuStatementDetTenantId": {
+            "meaning": "加工商对账单明细租户_id",
+            "reachable": false,
+            "name": "加工商对账单明细租户_id"
+        },
+        "manuStatementDetThirdPartyClass": {
+            "meaning": "加工商对账单明细第三方分类",
+            "reachable": false,
+            "name": "加工商对账单明细第三方分类"
+        },
+        "manuStatementDetThirdPartyId": {
+            "meaning": "加工商对账单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商对账单明细第三方系统中的唯一ID"
+        },
+        "manuStatementDetThirdPartyName": {
+            "meaning": "加工商对账单明细第三方名称",
+            "reachable": false,
+            "name": "加工商对账单明细第三方名称"
+        },
+        "manuStatementDetToAuditDate": {
+            "meaning": "manuStatementDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToBeginTime": {
+            "meaning": "manuStatementDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToCreateTime": {
+            "meaning": "manuStatementDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDateExtra1": {
+            "meaning": "manuStatementDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDateExtra2": {
+            "meaning": "manuStatementDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDateExtra3": {
+            "meaning": "manuStatementDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDateExtra4": {
+            "meaning": "manuStatementDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDateExtra5": {
+            "meaning": "manuStatementDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToDeliveryDate": {
+            "meaning": "manuStatementDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToEndTime": {
+            "meaning": "manuStatementDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToReceiptDate": {
+            "meaning": "manuStatementDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetToUpdateTime": {
+            "meaning": "manuStatementDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuStatementDetUnitCode": {
+            "meaning": "加工商对账单明细单位id",
+            "reachable": false,
+            "name": "加工商对账单明细单位id"
+        },
+        "manuStatementDetUnitPrice": {
+            "meaning": "加工商对账单明细单价",
+            "reachable": false,
+            "name": "加工商对账单明细单价"
+        },
+        "manuStatementDetUpdateTime": {
+            "meaning": "加工商对账单明细更新时间",
+            "reachable": false,
+            "name": "加工商对账单明细更新时间"
+        },
+        "manuStatementDetUpdater": {
+            "meaning": "加工商对账单明细更新人",
+            "reachable": false,
+            "name": "加工商对账单明细更新人"
+        },
+        "manuStatementDetUpdaterId": {
+            "meaning": "加工商对账单明细更新人ID",
+            "reachable": false,
+            "name": "加工商对账单明细更新人ID"
+        },
+        "manuStatementDetUserCode": {
+            "meaning": "加工商对账单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商对账单明细智能节点的唯一编码"
+        },
+        "manuStatementDetVarExtra1": {
+            "meaning": "加工商对账单明细扩展1",
+            "reachable": false,
+            "name": "加工商对账单明细扩展1"
+        },
+        "manuStatementDetVarExtra2": {
+            "meaning": "加工商对账单明细扩展2",
+            "reachable": false,
+            "name": "加工商对账单明细扩展2"
+        },
+        "manuStatementDetVarExtra3": {
+            "meaning": "加工商对账单明细扩展3",
+            "reachable": false,
+            "name": "加工商对账单明细扩展3"
+        },
+        "manuStatementDetVarExtra4": {
+            "meaning": "加工商对账单明细扩展4",
+            "reachable": false,
+            "name": "加工商对账单明细扩展4"
+        },
+        "manuStatementDetVarExtra5": {
+            "meaning": "加工商对账单明细扩展5",
+            "reachable": false,
+            "name": "加工商对账单明细扩展5"
+        },
+        "manuStatementDetVersion": {
+            "meaning": "加工商对账单明细版本号",
+            "reachable": false,
+            "name": "加工商对账单明细版本号"
+        },
+        "manuStatementDetWorkOrderId": {
+            "meaning": "加工商对账单明细工单_id",
+            "reachable": false,
+            "name": "加工商对账单明细工单_id"
+        }
+    }
+}

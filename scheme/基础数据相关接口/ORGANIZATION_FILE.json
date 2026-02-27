@@ -1,0 +1,396 @@
+{
+    "api_name": "/organization-file/findList",
+    "table_name": "机构文件",
+    "request": {
+        "organizationFileClazz": "ORGANIZATION_FILE"
+    },
+    "mainTabClazz": "ORGANIZATION_FILE",
+    "response": {
+        "organizationFileApplicationId": {
+            "meaning": "机构文件应用ID",
+            "reachable": true,
+            "name": "机构文件应用ID"
+        },
+        "organizationFileAuditDate": {
+            "meaning": "机构文件审核时间",
+            "reachable": true,
+            "name": "机构文件审核时间"
+        },
+        "organizationFileAuditStatus": {
+            "meaning": "机构文件审核状态",
+            "reachable": true,
+            "name": "机构文件审核状态"
+        },
+        "organizationFileBizVersion": {
+            "meaning": "机构文件业务自定义版本号",
+            "reachable": true,
+            "name": "机构文件业务自定义版本号"
+        },
+        "organizationFileBriefName": {
+            "meaning": "机构文件简称",
+            "reachable": true,
+            "name": "机构文件简称"
+        },
+        "organizationFileBusDivisId": {
+            "meaning": "机构文件事业部id",
+            "reachable": true,
+            "name": "机构文件事业部id"
+        },
+        "organizationFileClazz": {
+            "meaning": "机构文件子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "机构文件子类"
+        },
+        "organizationFileComment": {
+            "meaning": "机构文件评论",
+            "reachable": true,
+            "name": "机构文件评论"
+        },
+        "organizationFileCreateTime": {
+            "meaning": "机构文件创建时间",
+            "reachable": true,
+            "name": "机构文件创建时间"
+        },
+        "organizationFileCreator": {
+            "meaning": "机构文件创建人",
+            "reachable": true,
+            "name": "机构文件创建人"
+        },
+        "organizationFileCreatorId": {
+            "meaning": "机构文件创建人ID",
+            "reachable": true,
+            "name": "机构文件创建人ID"
+        },
+        "organizationFileDateExtra1": {
+            "meaning": "机构文件扩展时间1",
+            "reachable": true,
+            "name": "机构文件扩展时间1"
+        },
+        "organizationFileDateExtra2": {
+            "meaning": "机构文件扩展时间2",
+            "reachable": true,
+            "name": "机构文件扩展时间2"
+        },
+        "organizationFileDateExtra3": {
+            "meaning": "机构文件扩展时间3",
+            "reachable": true,
+            "name": "机构文件扩展时间3"
+        },
+        "organizationFileDateExtra4": {
+            "meaning": "机构文件扩展时间4",
+            "reachable": true,
+            "name": "机构文件扩展时间4"
+        },
+        "organizationFileDateExtra5": {
+            "meaning": "机构文件扩展时间5",
+            "reachable": true,
+            "name": "机构文件扩展时间5"
+        },
+        "organizationFileDefaultType": {
+            "meaning": "机构文件智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "机构文件智能节点主类型"
+        },
+        "organizationFileDescription": {
+            "meaning": "机构文件描述",
+            "reachable": true,
+            "name": "机构文件描述"
+        },
+        "organizationFileEngName": {
+            "meaning": "机构文件英文名称",
+            "reachable": true,
+            "name": "机构文件英文名称"
+        },
+        "organizationFileExtension": {
+            "meaning": "机构文件扩展数据",
+            "reachable": true,
+            "name": "机构文件扩展数据"
+        },
+        "organizationFileExternalState": {
+            "meaning": "机构文件上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "机构文件上流程状态位"
+        },
+        "organizationFileFileId": {
+            "meaning": "机构文件文件_id",
+            "reachable": true,
+            "name": "机构文件文件_id"
+        },
+        "organizationFileFileType": {
+            "meaning": "机构文件文件类型1图片，2文件",
+            "reachable": true,
+            "name": "机构文件文件类型1图片，2文件"
+        },
+        "organizationFileFlags": {
+            "meaning": "机构文件63位标志位",
+            "reachable": true,
+            "name": "机构文件63位标志位"
+        },
+        "organizationFileFromAuditDate": {
+            "meaning": "organizationFileFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromCreateTime": {
+            "meaning": "organizationFileFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromDateExtra1": {
+            "meaning": "organizationFileFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromDateExtra2": {
+            "meaning": "organizationFileFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromDateExtra3": {
+            "meaning": "organizationFileFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromDateExtra4": {
+            "meaning": "organizationFileFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromDateExtra5": {
+            "meaning": "organizationFileFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileFromUpdateTime": {
+            "meaning": "organizationFileFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileGroovyScript": {
+            "meaning": "机构文件groovy脚本",
+            "reachable": true,
+            "name": "机构文件groovy脚本"
+        },
+        "organizationFileGropeCode": {
+            "meaning": "机构文件搜索码",
+            "reachable": true,
+            "name": "机构文件搜索码"
+        },
+        "organizationFileId": {
+            "meaning": "机构文件PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "机构文件PK"
+        },
+        "organizationFileInUsed": {
+            "meaning": "机构文件是否被使用",
+            "reachable": true,
+            "name": "机构文件是否被使用"
+        },
+        "organizationFileIsBanned": {
+            "meaning": "机构文件是否被禁用",
+            "reachable": true,
+            "name": "机构文件是否被禁用"
+        },
+        "organizationFileIsDeleted": {
+            "meaning": "机构文件是否被删除",
+            "reachable": true,
+            "name": "机构文件是否被删除"
+        },
+        "organizationFileIsMainFlow": {
+            "meaning": "机构文件是否是主流程",
+            "reachable": true,
+            "name": "机构文件是否是主流程"
+        },
+        "organizationFileIsolation": {
+            "meaning": "机构文件智能节点数据隔离标识",
+            "reachable": true,
+            "name": "机构文件智能节点数据隔离标识"
+        },
+        "organizationFileJsScript": {
+            "meaning": "机构文件js脚本",
+            "reachable": true,
+            "name": "机构文件js脚本"
+        },
+        "organizationFileName": {
+            "meaning": "机构文件智能节点名",
+            "reachable": true,
+            "name": "机构文件智能节点名"
+        },
+        "organizationFileNameCodeSearch": {
+            "meaning": "机构文件name、user_code模糊搜索",
+            "reachable": true,
+            "name": "机构文件name、user_code模糊搜索"
+        },
+        "organizationFileNumberExtra1": {
+            "meaning": "机构文件扩展数量1",
+            "reachable": true,
+            "name": "机构文件扩展数量1"
+        },
+        "organizationFileNumberExtra2": {
+            "meaning": "机构文件扩展数量2",
+            "reachable": true,
+            "name": "机构文件扩展数量2"
+        },
+        "organizationFileNumberExtra3": {
+            "meaning": "机构文件扩展数量3",
+            "reachable": true,
+            "name": "机构文件扩展数量3"
+        },
+        "organizationFileNumberExtra4": {
+            "meaning": "机构文件扩展数量4",
+            "reachable": true,
+            "name": "机构文件扩展数量4"
+        },
+        "organizationFileNumberExtra5": {
+            "meaning": "机构文件扩展数量5",
+            "reachable": true,
+            "name": "机构文件扩展数量5"
+        },
+        "organizationFileOrganizationId": {
+            "meaning": "机构文件机构_id",
+            "reachable": true,
+            "name": "机构文件机构_id"
+        },
+        "organizationFileParentId": {
+            "meaning": "机构文件父节点ID",
+            "reachable": true,
+            "name": "机构文件父节点ID"
+        },
+        "organizationFileProcessInstanceId": {
+            "meaning": "机构文件流程实例ID",
+            "reachable": true,
+            "name": "机构文件流程实例ID"
+        },
+        "organizationFileSerialNumber": {
+            "meaning": "机构文件顺序号",
+            "reachable": true,
+            "name": "机构文件顺序号"
+        },
+        "organizationFileState": {
+            "meaning": "机构文件通用状态",
+            "reachable": true,
+            "name": "机构文件通用状态"
+        },
+        "organizationFileSystemCode": {
+            "meaning": "机构文件系统编码",
+            "reachable": true,
+            "name": "机构文件系统编码"
+        },
+        "organizationFileTaskNodeName": {
+            "meaning": "机构文件任务节点名称",
+            "reachable": true,
+            "name": "机构文件任务节点名称"
+        },
+        "organizationFileTenantId": {
+            "meaning": "机构文件租户_id",
+            "reachable": true,
+            "name": "机构文件租户_id"
+        },
+        "organizationFileThirdPartyClass": {
+            "meaning": "机构文件第三方分类",
+            "reachable": true,
+            "name": "机构文件第三方分类"
+        },
+        "organizationFileThirdPartyId": {
+            "meaning": "机构文件第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "机构文件第三方系统中的唯一ID"
+        },
+        "organizationFileThirdPartyName": {
+            "meaning": "机构文件第三方名称",
+            "reachable": true,
+            "name": "机构文件第三方名称"
+        },
+        "organizationFileToAuditDate": {
+            "meaning": "organizationFileToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToCreateTime": {
+            "meaning": "organizationFileToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToDateExtra1": {
+            "meaning": "organizationFileToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToDateExtra2": {
+            "meaning": "organizationFileToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToDateExtra3": {
+            "meaning": "organizationFileToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToDateExtra4": {
+            "meaning": "organizationFileToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToDateExtra5": {
+            "meaning": "organizationFileToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileToUpdateTime": {
+            "meaning": "organizationFileToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationFileUpdateTime": {
+            "meaning": "机构文件更新时间",
+            "reachable": true,
+            "name": "机构文件更新时间"
+        },
+        "organizationFileUpdater": {
+            "meaning": "机构文件更新人",
+            "reachable": true,
+            "name": "机构文件更新人"
+        },
+        "organizationFileUpdaterId": {
+            "meaning": "机构文件更新人ID",
+            "reachable": true,
+            "name": "机构文件更新人ID"
+        },
+        "organizationFileUserCode": {
+            "meaning": "机构文件智能节点的唯一编码",
+            "reachable": true,
+            "name": "机构文件智能节点的唯一编码"
+        },
+        "organizationFileVarExtra1": {
+            "meaning": "机构文件扩展1",
+            "reachable": true,
+            "name": "机构文件扩展1"
+        },
+        "organizationFileVarExtra2": {
+            "meaning": "机构文件扩展2",
+            "reachable": true,
+            "name": "机构文件扩展2"
+        },
+        "organizationFileVarExtra3": {
+            "meaning": "机构文件扩展3",
+            "reachable": true,
+            "name": "机构文件扩展3"
+        },
+        "organizationFileVarExtra4": {
+            "meaning": "机构文件扩展4",
+            "reachable": true,
+            "name": "机构文件扩展4"
+        },
+        "organizationFileVarExtra5": {
+            "meaning": "机构文件扩展5",
+            "reachable": true,
+            "name": "机构文件扩展5"
+        },
+        "organizationFileVersion": {
+            "meaning": "机构文件版本号",
+            "reachable": true,
+            "name": "机构文件版本号"
+        }
+    }
+}

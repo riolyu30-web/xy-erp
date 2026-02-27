@@ -1,0 +1,756 @@
+{
+    "api_name": "/material-unit/findList",
+    "table_name": "计量单位",
+    "request": {
+        "matUnitClazz": "MATERIAL_UNIT"
+    },
+    "mainTabClazz": "MATERIAL_UNIT",
+    "response": {
+        "matUnitATMatUnitTypeApplicationId": {
+            "meaning": "计量单位应用ID",
+            "reachable": true,
+            "name": "计量单位应用ID"
+        },
+        "matUnitATMatUnitTypeAuditDate": {
+            "meaning": "matUnitATMatUnitTypeAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeAuditStatus": {
+            "meaning": "计量单位审核状态",
+            "reachable": true,
+            "name": "计量单位审核状态"
+        },
+        "matUnitATMatUnitTypeBizVersion": {
+            "meaning": "计量单位业务自定义版本号",
+            "reachable": true,
+            "name": "计量单位业务自定义版本号"
+        },
+        "matUnitATMatUnitTypeBriefName": {
+            "meaning": "计量单位简称",
+            "reachable": true,
+            "name": "计量单位简称"
+        },
+        "matUnitATMatUnitTypeBusDivisId": {
+            "meaning": "计量单位事业部id",
+            "reachable": true,
+            "name": "计量单位事业部id"
+        },
+        "matUnitATMatUnitTypeClazz": {
+            "meaning": "计量单位子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "计量单位子类"
+        },
+        "matUnitATMatUnitTypeComment": {
+            "meaning": "计量单位评论",
+            "reachable": true,
+            "name": "计量单位评论"
+        },
+        "matUnitATMatUnitTypeCreateTime": {
+            "meaning": "matUnitATMatUnitTypeCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeCreator": {
+            "meaning": "计量单位创建人",
+            "reachable": true,
+            "name": "计量单位创建人"
+        },
+        "matUnitATMatUnitTypeCreatorId": {
+            "meaning": "计量单位创建人ID",
+            "reachable": true,
+            "name": "计量单位创建人ID"
+        },
+        "matUnitATMatUnitTypeDateExtra1": {
+            "meaning": "matUnitATMatUnitTypeDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDateExtra2": {
+            "meaning": "matUnitATMatUnitTypeDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDateExtra3": {
+            "meaning": "matUnitATMatUnitTypeDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDateExtra4": {
+            "meaning": "matUnitATMatUnitTypeDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDateExtra5": {
+            "meaning": "matUnitATMatUnitTypeDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDefaultType": {
+            "meaning": "计量单位智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "计量单位智能节点主类型"
+        },
+        "matUnitATMatUnitTypeDefaultUnitId": {
+            "meaning": "matUnitATMatUnitTypeDefaultUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeDescription": {
+            "meaning": "计量单位描述",
+            "reachable": true,
+            "name": "计量单位描述"
+        },
+        "matUnitATMatUnitTypeEngName": {
+            "meaning": "计量单位英文名称",
+            "reachable": true,
+            "name": "计量单位英文名称"
+        },
+        "matUnitATMatUnitTypeExtension": {
+            "meaning": "计量单位扩展数据",
+            "reachable": true,
+            "name": "计量单位扩展数据"
+        },
+        "matUnitATMatUnitTypeExternalState": {
+            "meaning": "计量单位上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "计量单位上流程状态位"
+        },
+        "matUnitATMatUnitTypeFlags": {
+            "meaning": "计量单位63位标志位",
+            "reachable": true,
+            "name": "计量单位63位标志位"
+        },
+        "matUnitATMatUnitTypeFromAuditDate": {
+            "meaning": "matUnitATMatUnitTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromCreateTime": {
+            "meaning": "matUnitATMatUnitTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromDateExtra1": {
+            "meaning": "matUnitATMatUnitTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromDateExtra2": {
+            "meaning": "matUnitATMatUnitTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromDateExtra3": {
+            "meaning": "matUnitATMatUnitTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromDateExtra4": {
+            "meaning": "matUnitATMatUnitTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromDateExtra5": {
+            "meaning": "matUnitATMatUnitTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeFromUpdateTime": {
+            "meaning": "matUnitATMatUnitTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeGroovyScript": {
+            "meaning": "计量单位groovy脚本",
+            "reachable": true,
+            "name": "计量单位groovy脚本"
+        },
+        "matUnitATMatUnitTypeGropeCode": {
+            "meaning": "计量单位搜索码",
+            "reachable": true,
+            "name": "计量单位搜索码"
+        },
+        "matUnitATMatUnitTypeId": {
+            "meaning": "matUnitATMatUnitTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeInUsed": {
+            "meaning": "计量单位是否被使用",
+            "reachable": true,
+            "name": "计量单位是否被使用"
+        },
+        "matUnitATMatUnitTypeIsBanned": {
+            "meaning": "计量单位是否被禁用",
+            "reachable": true,
+            "name": "计量单位是否被禁用"
+        },
+        "matUnitATMatUnitTypeIsDeleted": {
+            "meaning": "计量单位是否被删除",
+            "reachable": true,
+            "name": "计量单位是否被删除"
+        },
+        "matUnitATMatUnitTypeIsMainFlow": {
+            "meaning": "计量单位是否是主流程",
+            "reachable": true,
+            "name": "计量单位是否是主流程"
+        },
+        "matUnitATMatUnitTypeIsolation": {
+            "meaning": "计量单位智能节点数据隔离标识",
+            "reachable": true,
+            "name": "计量单位智能节点数据隔离标识"
+        },
+        "matUnitATMatUnitTypeJsScript": {
+            "meaning": "计量单位js脚本",
+            "reachable": true,
+            "name": "计量单位js脚本"
+        },
+        "matUnitATMatUnitTypeName": {
+            "meaning": "计量单位智能节点名",
+            "reachable": true,
+            "name": "计量单位智能节点名"
+        },
+        "matUnitATMatUnitTypeNameCodeSearch": {
+            "meaning": "计量单位name、user_code模糊搜索",
+            "reachable": true,
+            "name": "计量单位name、user_code模糊搜索"
+        },
+        "matUnitATMatUnitTypeNumberExtra1": {
+            "meaning": "计量单位扩展数量1",
+            "reachable": true,
+            "name": "计量单位扩展数量1"
+        },
+        "matUnitATMatUnitTypeNumberExtra2": {
+            "meaning": "计量单位扩展数量2",
+            "reachable": true,
+            "name": "计量单位扩展数量2"
+        },
+        "matUnitATMatUnitTypeNumberExtra3": {
+            "meaning": "计量单位扩展数量3",
+            "reachable": true,
+            "name": "计量单位扩展数量3"
+        },
+        "matUnitATMatUnitTypeNumberExtra4": {
+            "meaning": "计量单位扩展数量4",
+            "reachable": true,
+            "name": "计量单位扩展数量4"
+        },
+        "matUnitATMatUnitTypeNumberExtra5": {
+            "meaning": "计量单位扩展数量5",
+            "reachable": true,
+            "name": "计量单位扩展数量5"
+        },
+        "matUnitATMatUnitTypeParentId": {
+            "meaning": "计量单位父节点ID",
+            "reachable": true,
+            "name": "计量单位父节点ID"
+        },
+        "matUnitATMatUnitTypeProcessInstanceId": {
+            "meaning": "计量单位流程实例ID",
+            "reachable": true,
+            "name": "计量单位流程实例ID"
+        },
+        "matUnitATMatUnitTypeSerialNumber": {
+            "meaning": "计量单位顺序号",
+            "reachable": true,
+            "name": "计量单位顺序号"
+        },
+        "matUnitATMatUnitTypeState": {
+            "meaning": "计量单位通用状态",
+            "reachable": true,
+            "name": "计量单位通用状态"
+        },
+        "matUnitATMatUnitTypeSystemCode": {
+            "meaning": "计量单位系统编码",
+            "reachable": true,
+            "name": "计量单位系统编码"
+        },
+        "matUnitATMatUnitTypeTaskNodeName": {
+            "meaning": "计量单位任务节点名称",
+            "reachable": true,
+            "name": "计量单位任务节点名称"
+        },
+        "matUnitATMatUnitTypeTenantId": {
+            "meaning": "matUnitATMatUnitTypeTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeThirdPartyClass": {
+            "meaning": "计量单位第三方分类",
+            "reachable": true,
+            "name": "计量单位第三方分类"
+        },
+        "matUnitATMatUnitTypeThirdPartyId": {
+            "meaning": "计量单位第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "计量单位第三方系统中的唯一ID"
+        },
+        "matUnitATMatUnitTypeThirdPartyName": {
+            "meaning": "计量单位第三方名称",
+            "reachable": true,
+            "name": "计量单位第三方名称"
+        },
+        "matUnitATMatUnitTypeToAuditDate": {
+            "meaning": "matUnitATMatUnitTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToCreateTime": {
+            "meaning": "matUnitATMatUnitTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToDateExtra1": {
+            "meaning": "matUnitATMatUnitTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToDateExtra2": {
+            "meaning": "matUnitATMatUnitTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToDateExtra3": {
+            "meaning": "matUnitATMatUnitTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToDateExtra4": {
+            "meaning": "matUnitATMatUnitTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToDateExtra5": {
+            "meaning": "matUnitATMatUnitTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeToUpdateTime": {
+            "meaning": "matUnitATMatUnitTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeUpdateTime": {
+            "meaning": "matUnitATMatUnitTypeUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitATMatUnitTypeUpdater": {
+            "meaning": "计量单位更新人",
+            "reachable": true,
+            "name": "计量单位更新人"
+        },
+        "matUnitATMatUnitTypeUpdaterId": {
+            "meaning": "计量单位更新人ID",
+            "reachable": true,
+            "name": "计量单位更新人ID"
+        },
+        "matUnitATMatUnitTypeUserCode": {
+            "meaning": "计量单位智能节点的唯一编码",
+            "reachable": true,
+            "name": "计量单位智能节点的唯一编码"
+        },
+        "matUnitATMatUnitTypeVarExtra1": {
+            "meaning": "计量单位扩展1",
+            "reachable": true,
+            "name": "计量单位扩展1"
+        },
+        "matUnitATMatUnitTypeVarExtra2": {
+            "meaning": "计量单位扩展2",
+            "reachable": true,
+            "name": "计量单位扩展2"
+        },
+        "matUnitATMatUnitTypeVarExtra3": {
+            "meaning": "计量单位扩展3",
+            "reachable": true,
+            "name": "计量单位扩展3"
+        },
+        "matUnitATMatUnitTypeVarExtra4": {
+            "meaning": "计量单位扩展4",
+            "reachable": true,
+            "name": "计量单位扩展4"
+        },
+        "matUnitATMatUnitTypeVarExtra5": {
+            "meaning": "计量单位扩展5",
+            "reachable": true,
+            "name": "计量单位扩展5"
+        },
+        "matUnitATMatUnitTypeVersion": {
+            "meaning": "计量单位版本号",
+            "reachable": true,
+            "name": "计量单位版本号"
+        },
+        "matUnitApplicationId": {
+            "meaning": "计量单位应用ID",
+            "reachable": true,
+            "name": "计量单位应用ID"
+        },
+        "matUnitAuditDate": {
+            "meaning": "计量单位审核时间",
+            "reachable": true,
+            "name": "计量单位审核时间"
+        },
+        "matUnitAuditStatus": {
+            "meaning": "计量单位审核状态",
+            "reachable": true,
+            "name": "计量单位审核状态"
+        },
+        "matUnitBizVersion": {
+            "meaning": "计量单位业务自定义版本号",
+            "reachable": true,
+            "name": "计量单位业务自定义版本号"
+        },
+        "matUnitBriefName": {
+            "meaning": "计量单位简称",
+            "reachable": true,
+            "name": "计量单位简称"
+        },
+        "matUnitBusDivisId": {
+            "meaning": "计量单位事业部id",
+            "reachable": true,
+            "name": "计量单位事业部id"
+        },
+        "matUnitClazz": {
+            "meaning": "计量单位子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "计量单位子类"
+        },
+        "matUnitComment": {
+            "meaning": "计量单位评论",
+            "reachable": true,
+            "name": "计量单位评论"
+        },
+        "matUnitCreateTime": {
+            "meaning": "计量单位创建时间",
+            "reachable": true,
+            "name": "计量单位创建时间"
+        },
+        "matUnitCreator": {
+            "meaning": "计量单位创建人",
+            "reachable": true,
+            "name": "计量单位创建人"
+        },
+        "matUnitCreatorId": {
+            "meaning": "计量单位创建人ID",
+            "reachable": true,
+            "name": "计量单位创建人ID"
+        },
+        "matUnitDateExtra1": {
+            "meaning": "计量单位扩展时间1",
+            "reachable": true,
+            "name": "计量单位扩展时间1"
+        },
+        "matUnitDateExtra2": {
+            "meaning": "计量单位扩展时间2",
+            "reachable": true,
+            "name": "计量单位扩展时间2"
+        },
+        "matUnitDateExtra3": {
+            "meaning": "计量单位扩展时间3",
+            "reachable": true,
+            "name": "计量单位扩展时间3"
+        },
+        "matUnitDateExtra4": {
+            "meaning": "计量单位扩展时间4",
+            "reachable": true,
+            "name": "计量单位扩展时间4"
+        },
+        "matUnitDateExtra5": {
+            "meaning": "计量单位扩展时间5",
+            "reachable": true,
+            "name": "计量单位扩展时间5"
+        },
+        "matUnitDefaultType": {
+            "meaning": "计量单位智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "计量单位智能节点主类型"
+        },
+        "matUnitDescription": {
+            "meaning": "计量单位描述",
+            "reachable": true,
+            "name": "计量单位描述"
+        },
+        "matUnitEngName": {
+            "meaning": "计量单位英文名称",
+            "reachable": true,
+            "name": "计量单位英文名称"
+        },
+        "matUnitExtension": {
+            "meaning": "计量单位扩展数据",
+            "reachable": true,
+            "name": "计量单位扩展数据"
+        },
+        "matUnitExternalState": {
+            "meaning": "计量单位上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "计量单位上流程状态位"
+        },
+        "matUnitFlags": {
+            "meaning": "计量单位63位标志位",
+            "reachable": true,
+            "name": "计量单位63位标志位"
+        },
+        "matUnitFromAuditDate": {
+            "meaning": "matUnitFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromCreateTime": {
+            "meaning": "matUnitFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromDateExtra1": {
+            "meaning": "matUnitFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromDateExtra2": {
+            "meaning": "matUnitFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromDateExtra3": {
+            "meaning": "matUnitFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromDateExtra4": {
+            "meaning": "matUnitFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromDateExtra5": {
+            "meaning": "matUnitFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitFromUpdateTime": {
+            "meaning": "matUnitFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitGroovyScript": {
+            "meaning": "计量单位groovy脚本",
+            "reachable": true,
+            "name": "计量单位groovy脚本"
+        },
+        "matUnitGropeCode": {
+            "meaning": "计量单位搜索码",
+            "reachable": true,
+            "name": "计量单位搜索码"
+        },
+        "matUnitId": {
+            "meaning": "计量单位主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "计量单位主键ID"
+        },
+        "matUnitInUsed": {
+            "meaning": "计量单位是否被使用",
+            "reachable": true,
+            "name": "计量单位是否被使用"
+        },
+        "matUnitIsBanned": {
+            "meaning": "计量单位是否被禁用",
+            "reachable": true,
+            "name": "计量单位是否被禁用"
+        },
+        "matUnitIsDeleted": {
+            "meaning": "计量单位是否被删除",
+            "reachable": true,
+            "name": "计量单位是否被删除"
+        },
+        "matUnitIsMainFlow": {
+            "meaning": "计量单位是否是主流程",
+            "reachable": true,
+            "name": "计量单位是否是主流程"
+        },
+        "matUnitIsolation": {
+            "meaning": "计量单位智能节点数据隔离标识",
+            "reachable": true,
+            "name": "计量单位智能节点数据隔离标识"
+        },
+        "matUnitJsScript": {
+            "meaning": "计量单位js脚本",
+            "reachable": true,
+            "name": "计量单位js脚本"
+        },
+        "matUnitName": {
+            "meaning": "计量单位智能节点名",
+            "reachable": true,
+            "name": "计量单位智能节点名"
+        },
+        "matUnitNameCodeSearch": {
+            "meaning": "计量单位name、user_code模糊搜索",
+            "reachable": true,
+            "name": "计量单位name、user_code模糊搜索"
+        },
+        "matUnitNumberExtra1": {
+            "meaning": "计量单位扩展数量1",
+            "reachable": true,
+            "name": "计量单位扩展数量1"
+        },
+        "matUnitNumberExtra2": {
+            "meaning": "计量单位扩展数量2",
+            "reachable": true,
+            "name": "计量单位扩展数量2"
+        },
+        "matUnitNumberExtra3": {
+            "meaning": "计量单位扩展数量3",
+            "reachable": true,
+            "name": "计量单位扩展数量3"
+        },
+        "matUnitNumberExtra4": {
+            "meaning": "计量单位扩展数量4",
+            "reachable": true,
+            "name": "计量单位扩展数量4"
+        },
+        "matUnitNumberExtra5": {
+            "meaning": "计量单位扩展数量5",
+            "reachable": true,
+            "name": "计量单位扩展数量5"
+        },
+        "matUnitParentId": {
+            "meaning": "计量单位父节点ID",
+            "reachable": true,
+            "name": "计量单位父节点ID"
+        },
+        "matUnitProcessInstanceId": {
+            "meaning": "计量单位流程实例ID",
+            "reachable": true,
+            "name": "计量单位流程实例ID"
+        },
+        "matUnitSerialNumber": {
+            "meaning": "计量单位顺序号",
+            "reachable": true,
+            "name": "计量单位顺序号"
+        },
+        "matUnitState": {
+            "meaning": "计量单位通用状态",
+            "reachable": true,
+            "name": "计量单位通用状态"
+        },
+        "matUnitSystemCode": {
+            "meaning": "计量单位系统编码",
+            "reachable": true,
+            "name": "计量单位系统编码"
+        },
+        "matUnitTaskNodeName": {
+            "meaning": "计量单位任务节点名称",
+            "reachable": true,
+            "name": "计量单位任务节点名称"
+        },
+        "matUnitTenantId": {
+            "meaning": "matUnitTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matUnitThirdPartyClass": {
+            "meaning": "计量单位第三方分类",
+            "reachable": true,
+            "name": "计量单位第三方分类"
+        },
+        "matUnitThirdPartyId": {
+            "meaning": "计量单位第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "计量单位第三方系统中的唯一ID"
+        },
+        "matUnitThirdPartyName": {
+            "meaning": "计量单位第三方名称",
+            "reachable": true,
+            "name": "计量单位第三方名称"
+        },
+        "matUnitToAuditDate": {
+            "meaning": "matUnitToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToCreateTime": {
+            "meaning": "matUnitToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToDateExtra1": {
+            "meaning": "matUnitToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToDateExtra2": {
+            "meaning": "matUnitToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToDateExtra3": {
+            "meaning": "matUnitToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToDateExtra4": {
+            "meaning": "matUnitToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToDateExtra5": {
+            "meaning": "matUnitToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitToUpdateTime": {
+            "meaning": "matUnitToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUnitUpdateTime": {
+            "meaning": "计量单位更新时间",
+            "reachable": true,
+            "name": "计量单位更新时间"
+        },
+        "matUnitUpdater": {
+            "meaning": "计量单位更新人",
+            "reachable": true,
+            "name": "计量单位更新人"
+        },
+        "matUnitUpdaterId": {
+            "meaning": "计量单位更新人ID",
+            "reachable": true,
+            "name": "计量单位更新人ID"
+        },
+        "matUnitUserCode": {
+            "meaning": "计量单位智能节点的唯一编码",
+            "reachable": true,
+            "name": "计量单位智能节点的唯一编码"
+        },
+        "matUnitVarExtra1": {
+            "meaning": "计量单位扩展1",
+            "reachable": true,
+            "name": "计量单位扩展1"
+        },
+        "matUnitVarExtra2": {
+            "meaning": "计量单位扩展2",
+            "reachable": true,
+            "name": "计量单位扩展2"
+        },
+        "matUnitVarExtra3": {
+            "meaning": "计量单位扩展3",
+            "reachable": true,
+            "name": "计量单位扩展3"
+        },
+        "matUnitVarExtra4": {
+            "meaning": "计量单位扩展4",
+            "reachable": true,
+            "name": "计量单位扩展4"
+        },
+        "matUnitVarExtra5": {
+            "meaning": "计量单位扩展5",
+            "reachable": true,
+            "name": "计量单位扩展5"
+        },
+        "matUnitVersion": {
+            "meaning": "计量单位版本号",
+            "reachable": true,
+            "name": "计量单位版本号"
+        }
+    }
+}

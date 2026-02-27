@@ -1,0 +1,631 @@
+{
+    "api_name": "/fcst-po/findList",
+    "table_name": "fcst po主表",
+    "request": {
+        "fcstPoClazz": "FCST_PO"
+    },
+    "mainTabClazz": "FCST_PO",
+    "response": {
+        "fcstPoActualTimeRequired": {
+            "meaning": "fcst po主表实际需时(小时)",
+            "reachable": true,
+            "name": "fcst po主表实际需时"
+        },
+        "fcstPoAdjustmentTimeRequired": {
+            "meaning": "fcst po主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "fcst po主表调整需时"
+        },
+        "fcstPoApplicationId": {
+            "meaning": "fcst po主表应用ID",
+            "reachable": true,
+            "name": "fcst po主表应用ID"
+        },
+        "fcstPoAuditDate": {
+            "meaning": "fcst po主表审核时间",
+            "reachable": true,
+            "name": "fcst po主表审核时间"
+        },
+        "fcstPoAuditStatus": {
+            "meaning": "fcst po主表审核状态",
+            "reachable": true,
+            "name": "fcst po主表审核状态"
+        },
+        "fcstPoAvailableScheduleId": {
+            "meaning": "fcst po主表可用日程id",
+            "reachable": true,
+            "name": "fcst po主表可用日程id"
+        },
+        "fcstPoBeginTime": {
+            "meaning": "fcst po主表开始时间",
+            "reachable": true,
+            "name": "fcst po主表开始时间"
+        },
+        "fcstPoBizVersion": {
+            "meaning": "fcst po主表业务自定义版本号",
+            "reachable": true,
+            "name": "fcst po主表业务自定义版本号"
+        },
+        "fcstPoBriefName": {
+            "meaning": "fcst po主表简称",
+            "reachable": true,
+            "name": "fcst po主表简称"
+        },
+        "fcstPoBusDivisId": {
+            "meaning": "fcst po主表事业部id",
+            "reachable": true,
+            "name": "fcst po主表事业部id"
+        },
+        "fcstPoClazz": {
+            "meaning": "fcst po主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "fcst po主表子类"
+        },
+        "fcstPoClosedReason": {
+            "meaning": "fcst po主表结案原因",
+            "reachable": true,
+            "name": "fcst po主表结案原因"
+        },
+        "fcstPoClosedStatus": {
+            "meaning": "fcst po主表结案状态",
+            "reachable": true,
+            "name": "fcst po主表结案状态"
+        },
+        "fcstPoComment": {
+            "meaning": "fcst po主表评论",
+            "reachable": true,
+            "name": "fcst po主表评论"
+        },
+        "fcstPoCompleteQuantity": {
+            "meaning": "fcst po主表完成数量",
+            "reachable": true,
+            "name": "fcst po主表完成数量"
+        },
+        "fcstPoCompleteStatus": {
+            "meaning": "fcst po主表完成状态",
+            "reachable": true,
+            "name": "fcst po主表完成状态"
+        },
+        "fcstPoCreateTime": {
+            "meaning": "fcst po主表创建时间",
+            "reachable": true,
+            "name": "fcst po主表创建时间"
+        },
+        "fcstPoCreator": {
+            "meaning": "fcst po主表创建人",
+            "reachable": true,
+            "name": "fcst po主表创建人"
+        },
+        "fcstPoCreatorId": {
+            "meaning": "fcst po主表创建人ID",
+            "reachable": true,
+            "name": "fcst po主表创建人ID"
+        },
+        "fcstPoCusId": {
+            "meaning": "fcst po主表客户id",
+            "reachable": true,
+            "name": "fcst po主表客户id"
+        },
+        "fcstPoCusName": {
+            "meaning": "fcst po主表客户名称",
+            "reachable": true,
+            "name": "fcst po主表客户名称"
+        },
+        "fcstPoDateExtra1": {
+            "meaning": "fcst po主表扩展时间1",
+            "reachable": true,
+            "name": "fcst po主表扩展时间1"
+        },
+        "fcstPoDateExtra2": {
+            "meaning": "fcst po主表扩展时间2",
+            "reachable": true,
+            "name": "fcst po主表扩展时间2"
+        },
+        "fcstPoDateExtra3": {
+            "meaning": "fcst po主表扩展时间3",
+            "reachable": true,
+            "name": "fcst po主表扩展时间3"
+        },
+        "fcstPoDateExtra4": {
+            "meaning": "fcst po主表扩展时间4",
+            "reachable": true,
+            "name": "fcst po主表扩展时间4"
+        },
+        "fcstPoDateExtra5": {
+            "meaning": "fcst po主表扩展时间5",
+            "reachable": true,
+            "name": "fcst po主表扩展时间5"
+        },
+        "fcstPoDefaultType": {
+            "meaning": "fcst po主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "fcst po主表智能节点主类型"
+        },
+        "fcstPoDeliveryDate": {
+            "meaning": "fcst po主表交货日期",
+            "reachable": true,
+            "name": "fcst po主表交货日期"
+        },
+        "fcstPoDescription": {
+            "meaning": "fcst po主表描述",
+            "reachable": true,
+            "name": "fcst po主表描述"
+        },
+        "fcstPoEndTime": {
+            "meaning": "fcst po主表结束时间",
+            "reachable": true,
+            "name": "fcst po主表结束时间"
+        },
+        "fcstPoEndTimeRequired": {
+            "meaning": "fcst po主表最后需时(小时)",
+            "reachable": true,
+            "name": "fcst po主表最后需时"
+        },
+        "fcstPoEngName": {
+            "meaning": "fcst po主表英文名称",
+            "reachable": true,
+            "name": "fcst po主表英文名称"
+        },
+        "fcstPoEquipmentId": {
+            "meaning": "fcst po主表设备id",
+            "reachable": true,
+            "name": "fcst po主表设备id"
+        },
+        "fcstPoExchangeRateId": {
+            "meaning": "fcst po主表币种汇率id",
+            "reachable": true,
+            "name": "fcst po主表币种汇率id"
+        },
+        "fcstPoExtension": {
+            "meaning": "fcst po主表扩展数据",
+            "reachable": true,
+            "name": "fcst po主表扩展数据"
+        },
+        "fcstPoExternalState": {
+            "meaning": "fcst po主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "fcst po主表上流程状态位"
+        },
+        "fcstPoFilterClazz": {
+            "meaning": "fcst po主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "fcst po主表冗余字段用于筛选"
+        },
+        "fcstPoFlags": {
+            "meaning": "fcst po主表63位标志位",
+            "reachable": true,
+            "name": "fcst po主表63位标志位"
+        },
+        "fcstPoFromAuditDate": {
+            "meaning": "fcstPoFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromBeginTime": {
+            "meaning": "fcstPoFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromCreateTime": {
+            "meaning": "fcstPoFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDateExtra1": {
+            "meaning": "fcstPoFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDateExtra2": {
+            "meaning": "fcstPoFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDateExtra3": {
+            "meaning": "fcstPoFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDateExtra4": {
+            "meaning": "fcstPoFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDateExtra5": {
+            "meaning": "fcstPoFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromDeliveryDate": {
+            "meaning": "fcstPoFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromEndTime": {
+            "meaning": "fcstPoFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromReceiptDate": {
+            "meaning": "fcstPoFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFromUpdateTime": {
+            "meaning": "fcstPoFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoFscType": {
+            "meaning": "fcst po主表FSC声明",
+            "reachable": true,
+            "name": "fcst po主表FSC声明"
+        },
+        "fcstPoGenerativePeople": {
+            "meaning": "fcst po主表下发人",
+            "reachable": true,
+            "name": "fcst po主表下发人"
+        },
+        "fcstPoGenerativeState": {
+            "meaning": "fcst po主表下发状态",
+            "reachable": true,
+            "name": "fcst po主表下发状态"
+        },
+        "fcstPoGroovyScript": {
+            "meaning": "fcst po主表groovy脚本",
+            "reachable": true,
+            "name": "fcst po主表groovy脚本"
+        },
+        "fcstPoGropeCode": {
+            "meaning": "fcst po主表搜索码",
+            "reachable": true,
+            "name": "fcst po主表搜索码"
+        },
+        "fcstPoId": {
+            "meaning": "fcst po主表pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "fcst po主表pk"
+        },
+        "fcstPoInUsed": {
+            "meaning": "fcst po主表是否被使用",
+            "reachable": true,
+            "name": "fcst po主表是否被使用"
+        },
+        "fcstPoInvTypeTaxRateId": {
+            "meaning": "fcst po主表发票税率id",
+            "reachable": true,
+            "name": "fcst po主表发票税率id"
+        },
+        "fcstPoIsBanned": {
+            "meaning": "fcst po主表是否被禁用",
+            "reachable": true,
+            "name": "fcst po主表是否被禁用"
+        },
+        "fcstPoIsDeleted": {
+            "meaning": "fcst po主表是否被删除",
+            "reachable": true,
+            "name": "fcst po主表是否被删除"
+        },
+        "fcstPoIsLeaf": {
+            "meaning": "fcst po主表是否叶子节点",
+            "reachable": true,
+            "name": "fcst po主表是否叶子节点"
+        },
+        "fcstPoIsMainFlow": {
+            "meaning": "fcst po主表是否是主流程",
+            "reachable": true,
+            "name": "fcst po主表是否是主流程"
+        },
+        "fcstPoIsManualModificationDate": {
+            "meaning": "fcst po主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "fcst po主表是否手动修改计划生产时间"
+        },
+        "fcstPoIsolation": {
+            "meaning": "fcst po主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "fcst po主表智能节点数据隔离标识"
+        },
+        "fcstPoJsScript": {
+            "meaning": "fcst po主表js脚本",
+            "reachable": true,
+            "name": "fcst po主表js脚本"
+        },
+        "fcstPoMaterialId": {
+            "meaning": "fcst po主表物料id",
+            "reachable": true,
+            "name": "fcst po主表物料id"
+        },
+        "fcstPoName": {
+            "meaning": "fcst po主表智能节点名",
+            "reachable": true,
+            "name": "fcst po主表智能节点名"
+        },
+        "fcstPoNameCodeSearch": {
+            "meaning": "fcst po主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "fcst po主表name、user_code模糊搜索"
+        },
+        "fcstPoNumberExtra1": {
+            "meaning": "fcst po主表扩展数量1",
+            "reachable": true,
+            "name": "fcst po主表扩展数量1"
+        },
+        "fcstPoNumberExtra2": {
+            "meaning": "fcst po主表扩展数量2",
+            "reachable": true,
+            "name": "fcst po主表扩展数量2"
+        },
+        "fcstPoNumberExtra3": {
+            "meaning": "fcst po主表扩展数量3",
+            "reachable": true,
+            "name": "fcst po主表扩展数量3"
+        },
+        "fcstPoNumberExtra4": {
+            "meaning": "fcst po主表扩展数量4",
+            "reachable": true,
+            "name": "fcst po主表扩展数量4"
+        },
+        "fcstPoNumberExtra5": {
+            "meaning": "fcst po主表扩展数量5",
+            "reachable": true,
+            "name": "fcst po主表扩展数量5"
+        },
+        "fcstPoParentId": {
+            "meaning": "fcst po主表父节点ID",
+            "reachable": true,
+            "name": "fcst po主表父节点ID"
+        },
+        "fcstPoPlannedOutputQuantity": {
+            "meaning": "fcst po主表计划产出数量",
+            "reachable": true,
+            "name": "fcst po主表计划产出数量"
+        },
+        "fcstPoPlannedTimeRequired": {
+            "meaning": "fcst po主表计划需时(小时)",
+            "reachable": true,
+            "name": "fcst po主表计划需时"
+        },
+        "fcstPoPoVersion": {
+            "meaning": "fcst po主表版本",
+            "reachable": true,
+            "name": "fcst po主表版本"
+        },
+        "fcstPoPrdCat": {
+            "meaning": "fcst po主表产品分类",
+            "reachable": true,
+            "name": "fcst po主表产品分类"
+        },
+        "fcstPoPrdCode": {
+            "meaning": "fcst po主表产品编码",
+            "reachable": true,
+            "name": "fcst po主表产品编码"
+        },
+        "fcstPoPrdName": {
+            "meaning": "fcst po主表产品名称",
+            "reachable": true,
+            "name": "fcst po主表产品名称"
+        },
+        "fcstPoPrintTimes": {
+            "meaning": "fcst po主表打印次数",
+            "reachable": true,
+            "name": "fcst po主表打印次数"
+        },
+        "fcstPoPriority": {
+            "meaning": "fcst po主表优先级",
+            "reachable": true,
+            "name": "fcst po主表优先级"
+        },
+        "fcstPoProcessInstanceId": {
+            "meaning": "fcst po主表流程实例ID",
+            "reachable": true,
+            "name": "fcst po主表流程实例ID"
+        },
+        "fcstPoProductionProcessesTypeId": {
+            "meaning": "fcst po主表工序类型ID",
+            "reachable": true,
+            "name": "fcst po主表工序类型ID"
+        },
+        "fcstPoProductionShiftId": {
+            "meaning": "fcst po主表生产班次ID",
+            "reachable": true,
+            "name": "fcst po主表生产班次ID"
+        },
+        "fcstPoQuantity": {
+            "meaning": "fcst po主表任务数量",
+            "reachable": true,
+            "name": "fcst po主表任务数量"
+        },
+        "fcstPoReceiptDate": {
+            "meaning": "fcst po主表单据日期",
+            "reachable": true,
+            "name": "fcst po主表单据日期"
+        },
+        "fcstPoReceiptType": {
+            "meaning": "fcst po主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "fcst po主表单据类型"
+        },
+        "fcstPoRelatedTasksId": {
+            "meaning": "fcst po主表关联任务id",
+            "reachable": true,
+            "name": "fcst po主表关联任务id"
+        },
+        "fcstPoSerialNumber": {
+            "meaning": "fcst po主表顺序号",
+            "reachable": true,
+            "name": "fcst po主表顺序号"
+        },
+        "fcstPoSource": {
+            "meaning": "fcst po主表源",
+            "reachable": true,
+            "name": "fcst po主表源"
+        },
+        "fcstPoSourceType": {
+            "meaning": "fcst po主表来源类型",
+            "reachable": true,
+            "name": "fcst po主表来源类型"
+        },
+        "fcstPoState": {
+            "meaning": "fcst po主表通用状态",
+            "reachable": true,
+            "name": "fcst po主表通用状态"
+        },
+        "fcstPoSystemCode": {
+            "meaning": "fcst po主表系统编码",
+            "reachable": true,
+            "name": "fcst po主表系统编码"
+        },
+        "fcstPoTarget": {
+            "meaning": "fcst po主表目标",
+            "reachable": true,
+            "name": "fcst po主表目标"
+        },
+        "fcstPoTaskNodeName": {
+            "meaning": "fcst po主表任务节点名称",
+            "reachable": true,
+            "name": "fcst po主表任务节点名称"
+        },
+        "fcstPoTenantId": {
+            "meaning": "fcst po主表租户ID",
+            "reachable": true,
+            "name": "fcst po主表租户ID"
+        },
+        "fcstPoThirdPartyClass": {
+            "meaning": "fcst po主表第三方分类",
+            "reachable": true,
+            "name": "fcst po主表第三方分类"
+        },
+        "fcstPoThirdPartyId": {
+            "meaning": "fcst po主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "fcst po主表第三方系统中的唯一ID"
+        },
+        "fcstPoThirdPartyName": {
+            "meaning": "fcst po主表第三方名称",
+            "reachable": true,
+            "name": "fcst po主表第三方名称"
+        },
+        "fcstPoToAuditDate": {
+            "meaning": "fcstPoToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToBeginTime": {
+            "meaning": "fcstPoToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToCreateTime": {
+            "meaning": "fcstPoToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDateExtra1": {
+            "meaning": "fcstPoToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDateExtra2": {
+            "meaning": "fcstPoToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDateExtra3": {
+            "meaning": "fcstPoToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDateExtra4": {
+            "meaning": "fcstPoToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDateExtra5": {
+            "meaning": "fcstPoToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToDeliveryDate": {
+            "meaning": "fcstPoToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToEndTime": {
+            "meaning": "fcstPoToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToReceiptDate": {
+            "meaning": "fcstPoToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoToUpdateTime": {
+            "meaning": "fcstPoToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstPoUnitCode": {
+            "meaning": "fcst po主表单位id",
+            "reachable": true,
+            "name": "fcst po主表单位id"
+        },
+        "fcstPoUpdateTime": {
+            "meaning": "fcst po主表更新时间",
+            "reachable": true,
+            "name": "fcst po主表更新时间"
+        },
+        "fcstPoUpdater": {
+            "meaning": "fcst po主表更新人",
+            "reachable": true,
+            "name": "fcst po主表更新人"
+        },
+        "fcstPoUpdaterId": {
+            "meaning": "fcst po主表更新人ID",
+            "reachable": true,
+            "name": "fcst po主表更新人ID"
+        },
+        "fcstPoUserCode": {
+            "meaning": "fcst po主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "fcst po主表智能节点的唯一编码"
+        },
+        "fcstPoVarExtra1": {
+            "meaning": "fcst po主表扩展1",
+            "reachable": true,
+            "name": "fcst po主表扩展1"
+        },
+        "fcstPoVarExtra2": {
+            "meaning": "fcst po主表扩展2",
+            "reachable": true,
+            "name": "fcst po主表扩展2"
+        },
+        "fcstPoVarExtra3": {
+            "meaning": "fcst po主表扩展3",
+            "reachable": true,
+            "name": "fcst po主表扩展3"
+        },
+        "fcstPoVarExtra4": {
+            "meaning": "fcst po主表扩展4",
+            "reachable": true,
+            "name": "fcst po主表扩展4"
+        },
+        "fcstPoVarExtra5": {
+            "meaning": "fcst po主表扩展5",
+            "reachable": true,
+            "name": "fcst po主表扩展5"
+        },
+        "fcstPoVersion": {
+            "meaning": "fcst po主表版本号",
+            "reachable": true,
+            "name": "fcst po主表版本号"
+        },
+        "fcstPoYear": {
+            "meaning": "fcst po主表年份",
+            "reachable": true,
+            "name": "fcst po主表年份"
+        }
+    }
+}

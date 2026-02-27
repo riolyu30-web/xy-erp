@@ -1,0 +1,1257 @@
+{
+    "api_name": "/wms-inv-adj-mat-det/findList",
+    "table_name": "物料盘点调整明细表",
+    "request": {
+        "wmsInvAdjMatDetWmsInvAdjMatClazz": "WMS_INV_ADJ_MAT",
+        "wmsInvAdjMatDetClazz": "WMS_INV_ADJ_MAT_DET"
+    },
+    "mainTabClazz": "WMS_INV_ADJ_MAT_DET",
+    "response": {
+        "msInvAdjMatDetWmsInvAdjMatProductionProcessesTypeId": {
+            "meaning": "物料盘点调整明细表工序类型ID",
+            "reachable": false,
+            "name": "物料盘点调整明细表工序类型ID"
+        },
+        "wmsInvAdjMatDetActualTimeRequired": {
+            "meaning": "物料盘点调整明细表实际需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表实际需时"
+        },
+        "wmsInvAdjMatDetAdjAmountExcludingTax": {
+            "meaning": "物料盘点调整明细表不含税金额（数量*不含税单价）",
+            "reachable": true,
+            "name": "物料盘点调整明细表不含税金额"
+        },
+        "wmsInvAdjMatDetAdjAmountIncludingTax": {
+            "meaning": "物料盘点调整明细表含税金额（盘点数量*含税单价）",
+            "reachable": true,
+            "name": "物料盘点调整明细表含税金额"
+        },
+        "wmsInvAdjMatDetAdjSource": {
+            "meaning": "物料盘点调整明细表调整来源",
+            "reachable": true,
+            "name": "物料盘点调整明细表调整来源"
+        },
+        "wmsInvAdjMatDetAdjustmentTimeRequired": {
+            "meaning": "物料盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表调整需时"
+        },
+        "wmsInvAdjMatDetApplicationId": {
+            "meaning": "物料盘点调整明细表应用ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表应用ID"
+        },
+        "wmsInvAdjMatDetAuditDate": {
+            "meaning": "物料盘点调整明细表审核时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表审核时间"
+        },
+        "wmsInvAdjMatDetAuditStatus": {
+            "meaning": "物料盘点调整明细表审核状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表审核状态"
+        },
+        "wmsInvAdjMatDetAvailableScheduleId": {
+            "meaning": "物料盘点调整明细表可用日程id",
+            "reachable": true,
+            "name": "物料盘点调整明细表可用日程id"
+        },
+        "wmsInvAdjMatDetBeginTime": {
+            "meaning": "物料盘点调整明细表开始时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表开始时间"
+        },
+        "wmsInvAdjMatDetBizOrderId": {
+            "meaning": "物料盘点调整明细表订单id",
+            "reachable": true,
+            "name": "物料盘点调整明细表订单id"
+        },
+        "wmsInvAdjMatDetBizVersion": {
+            "meaning": "物料盘点调整明细表业务自定义版本号",
+            "reachable": true,
+            "name": "物料盘点调整明细表业务自定义版本号"
+        },
+        "wmsInvAdjMatDetBriefName": {
+            "meaning": "物料盘点调整明细表简称",
+            "reachable": true,
+            "name": "物料盘点调整明细表简称"
+        },
+        "wmsInvAdjMatDetBusDivisId": {
+            "meaning": "物料盘点调整明细表事业部id",
+            "reachable": true,
+            "name": "物料盘点调整明细表事业部id"
+        },
+        "wmsInvAdjMatDetClazz": {
+            "meaning": "物料盘点调整明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料盘点调整明细表子类"
+        },
+        "wmsInvAdjMatDetClosedReason": {
+            "meaning": "物料盘点调整明细表结案原因",
+            "reachable": true,
+            "name": "物料盘点调整明细表结案原因"
+        },
+        "wmsInvAdjMatDetClosedStatus": {
+            "meaning": "物料盘点调整明细表结案状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表结案状态"
+        },
+        "wmsInvAdjMatDetComment": {
+            "meaning": "物料盘点调整明细表评论",
+            "reachable": true,
+            "name": "物料盘点调整明细表评论"
+        },
+        "wmsInvAdjMatDetCompleteQuantity": {
+            "meaning": "物料盘点调整明细表完成数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表完成数量"
+        },
+        "wmsInvAdjMatDetCompleteStatus": {
+            "meaning": "物料盘点调整明细表完成状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表完成状态"
+        },
+        "wmsInvAdjMatDetCreateTime": {
+            "meaning": "物料盘点调整明细表创建时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建时间"
+        },
+        "wmsInvAdjMatDetCreator": {
+            "meaning": "物料盘点调整明细表创建人",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建人"
+        },
+        "wmsInvAdjMatDetCreatorId": {
+            "meaning": "物料盘点调整明细表创建人ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建人ID"
+        },
+        "wmsInvAdjMatDetDateExtra1": {
+            "meaning": "物料盘点调整明细表扩展时间1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间1"
+        },
+        "wmsInvAdjMatDetDateExtra2": {
+            "meaning": "物料盘点调整明细表扩展时间2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间2"
+        },
+        "wmsInvAdjMatDetDateExtra3": {
+            "meaning": "物料盘点调整明细表扩展时间3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间3"
+        },
+        "wmsInvAdjMatDetDateExtra4": {
+            "meaning": "物料盘点调整明细表扩展时间4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间4"
+        },
+        "wmsInvAdjMatDetDateExtra5": {
+            "meaning": "物料盘点调整明细表扩展时间5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间5"
+        },
+        "wmsInvAdjMatDetDefaultType": {
+            "meaning": "物料盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点主类型"
+        },
+        "wmsInvAdjMatDetDeliveryDate": {
+            "meaning": "物料盘点调整明细表交货日期",
+            "reachable": true,
+            "name": "物料盘点调整明细表交货日期"
+        },
+        "wmsInvAdjMatDetDescription": {
+            "meaning": "物料盘点调整明细表描述",
+            "reachable": true,
+            "name": "物料盘点调整明细表描述"
+        },
+        "wmsInvAdjMatDetEndTime": {
+            "meaning": "物料盘点调整明细表结束时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表结束时间"
+        },
+        "wmsInvAdjMatDetEndTimeRequired": {
+            "meaning": "物料盘点调整明细表最后需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表最后需时"
+        },
+        "wmsInvAdjMatDetEngName": {
+            "meaning": "物料盘点调整明细表英文名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表英文名称"
+        },
+        "wmsInvAdjMatDetEquipmentId": {
+            "meaning": "物料盘点调整明细表设备id",
+            "reachable": true,
+            "name": "物料盘点调整明细表设备id"
+        },
+        "wmsInvAdjMatDetExchangeRateId": {
+            "meaning": "物料盘点调整明细表币种汇率id",
+            "reachable": true,
+            "name": "物料盘点调整明细表币种汇率id"
+        },
+        "wmsInvAdjMatDetExtension": {
+            "meaning": "物料盘点调整明细表扩展数据",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数据"
+        },
+        "wmsInvAdjMatDetExternalState": {
+            "meaning": "物料盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料盘点调整明细表上流程状态位"
+        },
+        "wmsInvAdjMatDetFilterClazz": {
+            "meaning": "物料盘点调整明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料盘点调整明细表冗余字段用于筛选"
+        },
+        "wmsInvAdjMatDetFlags": {
+            "meaning": "物料盘点调整明细表63位标志位",
+            "reachable": true,
+            "name": "物料盘点调整明细表63位标志位"
+        },
+        "wmsInvAdjMatDetFromAuditDate": {
+            "meaning": "wmsInvAdjMatDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromBeginTime": {
+            "meaning": "wmsInvAdjMatDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromCreateTime": {
+            "meaning": "wmsInvAdjMatDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDateExtra1": {
+            "meaning": "wmsInvAdjMatDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDateExtra2": {
+            "meaning": "wmsInvAdjMatDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDateExtra3": {
+            "meaning": "wmsInvAdjMatDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDateExtra4": {
+            "meaning": "wmsInvAdjMatDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDateExtra5": {
+            "meaning": "wmsInvAdjMatDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromDeliveryDate": {
+            "meaning": "wmsInvAdjMatDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromEndTime": {
+            "meaning": "wmsInvAdjMatDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromReceiptDate": {
+            "meaning": "wmsInvAdjMatDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFromUpdateTime": {
+            "meaning": "wmsInvAdjMatDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetFscType": {
+            "meaning": "物料盘点调整明细表FSC声明",
+            "reachable": true,
+            "name": "物料盘点调整明细表FSC声明"
+        },
+        "wmsInvAdjMatDetGenerativePeople": {
+            "meaning": "物料盘点调整明细表下发人",
+            "reachable": true,
+            "name": "物料盘点调整明细表下发人"
+        },
+        "wmsInvAdjMatDetGenerativeState": {
+            "meaning": "物料盘点调整明细表下发状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表下发状态"
+        },
+        "wmsInvAdjMatDetGoodsId": {
+            "meaning": "物料盘点调整明细表货（包）id",
+            "reachable": true,
+            "name": "物料盘点调整明细表货"
+        },
+        "wmsInvAdjMatDetGroovyScript": {
+            "meaning": "物料盘点调整明细表groovy脚本",
+            "reachable": true,
+            "name": "物料盘点调整明细表groovy脚本"
+        },
+        "wmsInvAdjMatDetGropeCode": {
+            "meaning": "物料盘点调整明细表搜索码",
+            "reachable": true,
+            "name": "物料盘点调整明细表搜索码"
+        },
+        "wmsInvAdjMatDetId": {
+            "meaning": "物料盘点调整明细表Pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料盘点调整明细表Pk"
+        },
+        "wmsInvAdjMatDetInUsed": {
+            "meaning": "物料盘点调整明细表是否被使用",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被使用"
+        },
+        "wmsInvAdjMatDetInvTypeTaxRateId": {
+            "meaning": "物料盘点调整明细表发票税率id",
+            "reachable": true,
+            "name": "物料盘点调整明细表发票税率id"
+        },
+        "wmsInvAdjMatDetIsBanned": {
+            "meaning": "物料盘点调整明细表是否被禁用",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被禁用"
+        },
+        "wmsInvAdjMatDetIsDeleted": {
+            "meaning": "物料盘点调整明细表是否被删除",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被删除"
+        },
+        "wmsInvAdjMatDetIsLeaf": {
+            "meaning": "物料盘点调整明细表是否叶子节点",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否叶子节点"
+        },
+        "wmsInvAdjMatDetIsMainFlow": {
+            "meaning": "物料盘点调整明细表是否是主流程",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否是主流程"
+        },
+        "wmsInvAdjMatDetIsManualModificationDate": {
+            "meaning": "物料盘点调整明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否手动修改计划生产时间"
+        },
+        "wmsInvAdjMatDetIsolation": {
+            "meaning": "物料盘点调整明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点数据隔离标识"
+        },
+        "wmsInvAdjMatDetJsScript": {
+            "meaning": "物料盘点调整明细表js脚本",
+            "reachable": true,
+            "name": "物料盘点调整明细表js脚本"
+        },
+        "wmsInvAdjMatDetMatBatchId": {
+            "meaning": "物料盘点调整明细表物料批次id",
+            "reachable": true,
+            "name": "物料盘点调整明细表物料批次id"
+        },
+        "wmsInvAdjMatDetMaterialId": {
+            "meaning": "物料盘点调整明细表物料id",
+            "reachable": true,
+            "name": "物料盘点调整明细表物料id"
+        },
+        "wmsInvAdjMatDetName": {
+            "meaning": "物料盘点调整明细表智能节点名",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点名"
+        },
+        "wmsInvAdjMatDetNameCodeSearch": {
+            "meaning": "物料盘点调整明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料盘点调整明细表name、user_code模糊搜索"
+        },
+        "wmsInvAdjMatDetNumberExtra1": {
+            "meaning": "物料盘点调整明细表扩展数量1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量1"
+        },
+        "wmsInvAdjMatDetNumberExtra2": {
+            "meaning": "物料盘点调整明细表扩展数量2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量2"
+        },
+        "wmsInvAdjMatDetNumberExtra3": {
+            "meaning": "物料盘点调整明细表扩展数量3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量3"
+        },
+        "wmsInvAdjMatDetNumberExtra4": {
+            "meaning": "物料盘点调整明细表扩展数量4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量4"
+        },
+        "wmsInvAdjMatDetNumberExtra5": {
+            "meaning": "物料盘点调整明细表扩展数量5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量5"
+        },
+        "wmsInvAdjMatDetParentId": {
+            "meaning": "物料盘点调整明细表父节点ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表父节点ID"
+        },
+        "wmsInvAdjMatDetPlannedOutputQuantity": {
+            "meaning": "物料盘点调整明细表计划产出数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表计划产出数量"
+        },
+        "wmsInvAdjMatDetPlannedTimeRequired": {
+            "meaning": "物料盘点调整明细表计划需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表计划需时"
+        },
+        "wmsInvAdjMatDetPosition": {
+            "meaning": "物料盘点调整明细表仓位",
+            "reachable": true,
+            "name": "物料盘点调整明细表仓位"
+        },
+        "wmsInvAdjMatDetPrintTimes": {
+            "meaning": "物料盘点调整明细表打印次数",
+            "reachable": true,
+            "name": "物料盘点调整明细表打印次数"
+        },
+        "wmsInvAdjMatDetPriority": {
+            "meaning": "物料盘点调整明细表优先级",
+            "reachable": true,
+            "name": "物料盘点调整明细表优先级"
+        },
+        "wmsInvAdjMatDetProcessInstanceId": {
+            "meaning": "物料盘点调整明细表流程实例ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表流程实例ID"
+        },
+        "wmsInvAdjMatDetProductionProcessesTypeId": {
+            "meaning": "物料盘点调整明细表工序类型ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表工序类型ID"
+        },
+        "wmsInvAdjMatDetProductionShiftId": {
+            "meaning": "物料盘点调整明细表生产班次ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表生产班次ID"
+        },
+        "wmsInvAdjMatDetQuantity": {
+            "meaning": "物料盘点调整明细表任务数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务数量"
+        },
+        "wmsInvAdjMatDetReceiptDate": {
+            "meaning": "物料盘点调整明细表单据日期",
+            "reachable": true,
+            "name": "物料盘点调整明细表单据日期"
+        },
+        "wmsInvAdjMatDetReceiptType": {
+            "meaning": "物料盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料盘点调整明细表单据类型"
+        },
+        "wmsInvAdjMatDetRelatedTasksId": {
+            "meaning": "物料盘点调整明细表关联任务id",
+            "reachable": true,
+            "name": "物料盘点调整明细表关联任务id"
+        },
+        "wmsInvAdjMatDetSerialNumber": {
+            "meaning": "物料盘点调整明细表顺序号",
+            "reachable": true,
+            "name": "物料盘点调整明细表顺序号"
+        },
+        "wmsInvAdjMatDetSource": {
+            "meaning": "物料盘点调整明细表源",
+            "reachable": true,
+            "name": "物料盘点调整明细表源"
+        },
+        "wmsInvAdjMatDetSourceType": {
+            "meaning": "物料盘点调整明细表来源类型",
+            "reachable": true,
+            "name": "物料盘点调整明细表来源类型"
+        },
+        "wmsInvAdjMatDetState": {
+            "meaning": "物料盘点调整明细表通用状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表通用状态"
+        },
+        "wmsInvAdjMatDetSystemCode": {
+            "meaning": "物料盘点调整明细表系统编码",
+            "reachable": true,
+            "name": "物料盘点调整明细表系统编码"
+        },
+        "wmsInvAdjMatDetTarget": {
+            "meaning": "物料盘点调整明细表目标",
+            "reachable": true,
+            "name": "物料盘点调整明细表目标"
+        },
+        "wmsInvAdjMatDetTaskNodeName": {
+            "meaning": "物料盘点调整明细表任务节点名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务节点名称"
+        },
+        "wmsInvAdjMatDetTaskNodeType": {
+            "meaning": "物料盘点调整明细表任务节点类型",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务节点类型"
+        },
+        "wmsInvAdjMatDetTenantId": {
+            "meaning": "物料盘点调整明细表租户ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表租户ID"
+        },
+        "wmsInvAdjMatDetThirdPartyClass": {
+            "meaning": "物料盘点调整明细表第三方分类",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方分类"
+        },
+        "wmsInvAdjMatDetThirdPartyId": {
+            "meaning": "物料盘点调整明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方系统中的唯一ID"
+        },
+        "wmsInvAdjMatDetThirdPartyName": {
+            "meaning": "物料盘点调整明细表第三方名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方名称"
+        },
+        "wmsInvAdjMatDetToAuditDate": {
+            "meaning": "wmsInvAdjMatDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToBeginTime": {
+            "meaning": "wmsInvAdjMatDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToCreateTime": {
+            "meaning": "wmsInvAdjMatDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDateExtra1": {
+            "meaning": "wmsInvAdjMatDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDateExtra2": {
+            "meaning": "wmsInvAdjMatDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDateExtra3": {
+            "meaning": "wmsInvAdjMatDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDateExtra4": {
+            "meaning": "wmsInvAdjMatDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDateExtra5": {
+            "meaning": "wmsInvAdjMatDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToDeliveryDate": {
+            "meaning": "wmsInvAdjMatDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToEndTime": {
+            "meaning": "wmsInvAdjMatDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToReceiptDate": {
+            "meaning": "wmsInvAdjMatDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetToUpdateTime": {
+            "meaning": "wmsInvAdjMatDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetUnitCode": {
+            "meaning": "物料盘点调整明细表单位id",
+            "reachable": true,
+            "name": "物料盘点调整明细表单位id"
+        },
+        "wmsInvAdjMatDetUnitPriceExcludingTax": {
+            "meaning": "物料盘点调整明细表不含税单价",
+            "reachable": true,
+            "name": "物料盘点调整明细表不含税单价"
+        },
+        "wmsInvAdjMatDetUnitPriceIncludingTax": {
+            "meaning": "物料盘点调整明细表含税单价",
+            "reachable": true,
+            "name": "物料盘点调整明细表含税单价"
+        },
+        "wmsInvAdjMatDetUpdateTime": {
+            "meaning": "物料盘点调整明细表更新时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新时间"
+        },
+        "wmsInvAdjMatDetUpdater": {
+            "meaning": "物料盘点调整明细表更新人",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新人"
+        },
+        "wmsInvAdjMatDetUpdaterId": {
+            "meaning": "物料盘点调整明细表更新人ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新人ID"
+        },
+        "wmsInvAdjMatDetUserCode": {
+            "meaning": "物料盘点调整明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点的唯一编码"
+        },
+        "wmsInvAdjMatDetVarExtra1": {
+            "meaning": "物料盘点调整明细表扩展1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展1"
+        },
+        "wmsInvAdjMatDetVarExtra2": {
+            "meaning": "物料盘点调整明细表扩展2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展2"
+        },
+        "wmsInvAdjMatDetVarExtra3": {
+            "meaning": "物料盘点调整明细表扩展3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展3"
+        },
+        "wmsInvAdjMatDetVarExtra4": {
+            "meaning": "物料盘点调整明细表扩展4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展4"
+        },
+        "wmsInvAdjMatDetVarExtra5": {
+            "meaning": "物料盘点调整明细表扩展5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展5"
+        },
+        "wmsInvAdjMatDetVersion": {
+            "meaning": "物料盘点调整明细表版本号",
+            "reachable": true,
+            "name": "物料盘点调整明细表版本号"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatActualTimeRequired": {
+            "meaning": "物料盘点调整明细表实际需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表实际需时"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatAdjustmentTimeRequired": {
+            "meaning": "物料盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表调整需时"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatApplicationId": {
+            "meaning": "物料盘点调整明细表应用ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表应用ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatAuditDate": {
+            "meaning": "物料盘点调整明细表审核时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表审核时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatAuditStatus": {
+            "meaning": "物料盘点调整明细表审核状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表审核状态"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatAvailableScheduleId": {
+            "meaning": "物料盘点调整明细表可用日程id",
+            "reachable": true,
+            "name": "物料盘点调整明细表可用日程id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatBeginTime": {
+            "meaning": "物料盘点调整明细表开始时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表开始时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatBizVersion": {
+            "meaning": "物料盘点调整明细表业务自定义版本号",
+            "reachable": true,
+            "name": "物料盘点调整明细表业务自定义版本号"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatBriefName": {
+            "meaning": "物料盘点调整明细表简称",
+            "reachable": true,
+            "name": "物料盘点调整明细表简称"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatBusDivisId": {
+            "meaning": "物料盘点调整明细表事业部id",
+            "reachable": true,
+            "name": "物料盘点调整明细表事业部id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatClazz": {
+            "meaning": "物料盘点调整明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料盘点调整明细表子类"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatClosedReason": {
+            "meaning": "物料盘点调整明细表结案原因",
+            "reachable": true,
+            "name": "物料盘点调整明细表结案原因"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatClosedStatus": {
+            "meaning": "物料盘点调整明细表结案状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表结案状态"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatComment": {
+            "meaning": "物料盘点调整明细表评论",
+            "reachable": true,
+            "name": "物料盘点调整明细表评论"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatCompleteQuantity": {
+            "meaning": "物料盘点调整明细表完成数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表完成数量"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatCompleteStatus": {
+            "meaning": "物料盘点调整明细表完成状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表完成状态"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatCreateTime": {
+            "meaning": "物料盘点调整明细表创建时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatCreator": {
+            "meaning": "物料盘点调整明细表创建人",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建人"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatCreatorId": {
+            "meaning": "物料盘点调整明细表创建人ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表创建人ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDateExtra1": {
+            "meaning": "物料盘点调整明细表扩展时间1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间1"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDateExtra2": {
+            "meaning": "物料盘点调整明细表扩展时间2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间2"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDateExtra3": {
+            "meaning": "物料盘点调整明细表扩展时间3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间3"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDateExtra4": {
+            "meaning": "物料盘点调整明细表扩展时间4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间4"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDateExtra5": {
+            "meaning": "物料盘点调整明细表扩展时间5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展时间5"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDefaultType": {
+            "meaning": "物料盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点主类型"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDeliveryDate": {
+            "meaning": "物料盘点调整明细表交货日期",
+            "reachable": true,
+            "name": "物料盘点调整明细表交货日期"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatDescription": {
+            "meaning": "物料盘点调整明细表描述",
+            "reachable": true,
+            "name": "物料盘点调整明细表描述"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatEndTime": {
+            "meaning": "物料盘点调整明细表结束时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表结束时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatEndTimeRequired": {
+            "meaning": "物料盘点调整明细表最后需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表最后需时"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatEngName": {
+            "meaning": "物料盘点调整明细表英文名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表英文名称"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatEquipmentId": {
+            "meaning": "物料盘点调整明细表设备id",
+            "reachable": true,
+            "name": "物料盘点调整明细表设备id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatExchangeRateId": {
+            "meaning": "物料盘点调整明细表币种汇率id",
+            "reachable": true,
+            "name": "物料盘点调整明细表币种汇率id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatExtension": {
+            "meaning": "物料盘点调整明细表扩展数据",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数据"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatExternalState": {
+            "meaning": "物料盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料盘点调整明细表上流程状态位"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFilterClazz": {
+            "meaning": "物料盘点调整明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料盘点调整明细表冗余字段用于筛选"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFlags": {
+            "meaning": "物料盘点调整明细表63位标志位",
+            "reachable": true,
+            "name": "物料盘点调整明细表63位标志位"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromAuditDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromBeginTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromCreateTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra1": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra2": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra3": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra4": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra5": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromDeliveryDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromEndTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromReceiptDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFromUpdateTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatFscType": {
+            "meaning": "物料盘点调整明细表FSC声明",
+            "reachable": true,
+            "name": "物料盘点调整明细表FSC声明"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatGenerativePeople": {
+            "meaning": "物料盘点调整明细表下发人",
+            "reachable": true,
+            "name": "物料盘点调整明细表下发人"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatGenerativeState": {
+            "meaning": "物料盘点调整明细表下发状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表下发状态"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatGroovyScript": {
+            "meaning": "物料盘点调整明细表groovy脚本",
+            "reachable": true,
+            "name": "物料盘点调整明细表groovy脚本"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatGropeCode": {
+            "meaning": "物料盘点调整明细表搜索码",
+            "reachable": true,
+            "name": "物料盘点调整明细表搜索码"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatId": {
+            "meaning": "物料盘点调整明细表Pk",
+            "reachable": true,
+            "name": "物料盘点调整明细表Pk"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatInUsed": {
+            "meaning": "物料盘点调整明细表是否被使用",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被使用"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatInvTypeTaxRateId": {
+            "meaning": "物料盘点调整明细表发票税率id",
+            "reachable": true,
+            "name": "物料盘点调整明细表发票税率id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsBanned": {
+            "meaning": "物料盘点调整明细表是否被禁用",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被禁用"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsDeleted": {
+            "meaning": "物料盘点调整明细表是否被删除",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否被删除"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsLeaf": {
+            "meaning": "物料盘点调整明细表是否叶子节点",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否叶子节点"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsMainFlow": {
+            "meaning": "物料盘点调整明细表是否是主流程",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否是主流程"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsManualModificationDate": {
+            "meaning": "物料盘点调整明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表是否手动修改计划生产时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatIsolation": {
+            "meaning": "物料盘点调整明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点数据隔离标识"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatJsScript": {
+            "meaning": "物料盘点调整明细表js脚本",
+            "reachable": true,
+            "name": "物料盘点调整明细表js脚本"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatMaterialId": {
+            "meaning": "物料盘点调整明细表物料id",
+            "reachable": true,
+            "name": "物料盘点调整明细表物料id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatName": {
+            "meaning": "物料盘点调整明细表智能节点名",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点名"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNameCodeSearch": {
+            "meaning": "物料盘点调整明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料盘点调整明细表name、user_code模糊搜索"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNumberExtra1": {
+            "meaning": "物料盘点调整明细表扩展数量1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量1"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNumberExtra2": {
+            "meaning": "物料盘点调整明细表扩展数量2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量2"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNumberExtra3": {
+            "meaning": "物料盘点调整明细表扩展数量3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量3"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNumberExtra4": {
+            "meaning": "物料盘点调整明细表扩展数量4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量4"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatNumberExtra5": {
+            "meaning": "物料盘点调整明细表扩展数量5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展数量5"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatParentId": {
+            "meaning": "物料盘点调整明细表父节点ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表父节点ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatPlannedOutputQuantity": {
+            "meaning": "物料盘点调整明细表计划产出数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表计划产出数量"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatPlannedTimeRequired": {
+            "meaning": "物料盘点调整明细表计划需时(小时)",
+            "reachable": true,
+            "name": "物料盘点调整明细表计划需时"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatPrintTimes": {
+            "meaning": "物料盘点调整明细表打印次数",
+            "reachable": true,
+            "name": "物料盘点调整明细表打印次数"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatPriority": {
+            "meaning": "物料盘点调整明细表优先级",
+            "reachable": true,
+            "name": "物料盘点调整明细表优先级"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatProcessInstanceId": {
+            "meaning": "物料盘点调整明细表流程实例ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表流程实例ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatProductionProcessesTypeId": {
+            "meaning": "物料盘点调整明细表工序类型ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表工序类型ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatProductionShiftId": {
+            "meaning": "物料盘点调整明细表生产班次ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表生产班次ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatQuantity": {
+            "meaning": "物料盘点调整明细表任务数量",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务数量"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatReceiptDate": {
+            "meaning": "物料盘点调整明细表单据日期",
+            "reachable": true,
+            "name": "物料盘点调整明细表单据日期"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatReceiptType": {
+            "meaning": "物料盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料盘点调整明细表单据类型"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatRelatedTasksId": {
+            "meaning": "物料盘点调整明细表关联任务id",
+            "reachable": true,
+            "name": "物料盘点调整明细表关联任务id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatSerialNumber": {
+            "meaning": "物料盘点调整明细表顺序号",
+            "reachable": true,
+            "name": "物料盘点调整明细表顺序号"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatSource": {
+            "meaning": "物料盘点调整明细表源",
+            "reachable": true,
+            "name": "物料盘点调整明细表源"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatSourceType": {
+            "meaning": "物料盘点调整明细表来源类型",
+            "reachable": true,
+            "name": "物料盘点调整明细表来源类型"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatState": {
+            "meaning": "物料盘点调整明细表通用状态",
+            "reachable": true,
+            "name": "物料盘点调整明细表通用状态"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatSystemCode": {
+            "meaning": "物料盘点调整明细表系统编码",
+            "reachable": true,
+            "name": "物料盘点调整明细表系统编码"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTarget": {
+            "meaning": "物料盘点调整明细表目标",
+            "reachable": true,
+            "name": "物料盘点调整明细表目标"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTaskNodeName": {
+            "meaning": "物料盘点调整明细表任务节点名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务节点名称"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTaskNodeType": {
+            "meaning": "物料盘点调整明细表任务节点类型",
+            "reachable": true,
+            "name": "物料盘点调整明细表任务节点类型"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTenantId": {
+            "meaning": "物料盘点调整明细表租户ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表租户ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatThirdPartyClass": {
+            "meaning": "物料盘点调整明细表第三方分类",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方分类"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatThirdPartyId": {
+            "meaning": "物料盘点调整明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方系统中的唯一ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatThirdPartyName": {
+            "meaning": "物料盘点调整明细表第三方名称",
+            "reachable": true,
+            "name": "物料盘点调整明细表第三方名称"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToAuditDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToBeginTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToCreateTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDateExtra1": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDateExtra2": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDateExtra3": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDateExtra4": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDateExtra5": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToDeliveryDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToEndTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToReceiptDate": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatToUpdateTime": {
+            "meaning": "wmsInvAdjMatDetWmsInvAdjMatToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTotalAmountExcludingTax": {
+            "meaning": "物料盘点调整明细表总盘点不含税金额",
+            "reachable": true,
+            "name": "物料盘点调整明细表总盘点不含税金额"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatTotalAmountIncludingTax": {
+            "meaning": "物料盘点调整明细表总盘点含税金额",
+            "reachable": true,
+            "name": "物料盘点调整明细表总盘点含税金额"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatUnitCode": {
+            "meaning": "物料盘点调整明细表单位id",
+            "reachable": true,
+            "name": "物料盘点调整明细表单位id"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatUpdateTime": {
+            "meaning": "物料盘点调整明细表更新时间",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新时间"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatUpdater": {
+            "meaning": "物料盘点调整明细表更新人",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新人"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatUpdaterId": {
+            "meaning": "物料盘点调整明细表更新人ID",
+            "reachable": true,
+            "name": "物料盘点调整明细表更新人ID"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatUserCode": {
+            "meaning": "物料盘点调整明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料盘点调整明细表智能节点的唯一编码"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVarExtra1": {
+            "meaning": "物料盘点调整明细表扩展1",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展1"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVarExtra2": {
+            "meaning": "物料盘点调整明细表扩展2",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展2"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVarExtra3": {
+            "meaning": "物料盘点调整明细表扩展3",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展3"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVarExtra4": {
+            "meaning": "物料盘点调整明细表扩展4",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展4"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVarExtra5": {
+            "meaning": "物料盘点调整明细表扩展5",
+            "reachable": true,
+            "name": "物料盘点调整明细表扩展5"
+        },
+        "wmsInvAdjMatDetWmsInvAdjMatVersion": {
+            "meaning": "物料盘点调整明细表版本号",
+            "reachable": true,
+            "name": "物料盘点调整明细表版本号"
+        },
+        "wmsInvAdjMatDetWorkOrderId": {
+            "meaning": "物料盘点调整明细表工单id",
+            "reachable": true,
+            "name": "物料盘点调整明细表工单id"
+        }
+    }
+}

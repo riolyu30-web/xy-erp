@@ -1,0 +1,411 @@
+{
+    "api_name": "/container/findList",
+    "table_name": "集装箱管理",
+    "request": {
+        "containerClazz": "CONTAINER"
+    },
+    "mainTabClazz": "CONTAINER",
+    "response": {
+        "containerApplicationId": {
+            "meaning": "集装箱管理应用ID",
+            "reachable": true,
+            "name": "集装箱管理应用ID"
+        },
+        "containerAuditDate": {
+            "meaning": "集装箱管理审核时间",
+            "reachable": true,
+            "name": "集装箱管理审核时间"
+        },
+        "containerAuditStatus": {
+            "meaning": "集装箱管理审核状态",
+            "reachable": true,
+            "name": "集装箱管理审核状态"
+        },
+        "containerBizVersion": {
+            "meaning": "集装箱管理业务自定义版本号",
+            "reachable": true,
+            "name": "集装箱管理业务自定义版本号"
+        },
+        "containerBriefName": {
+            "meaning": "集装箱管理简称",
+            "reachable": true,
+            "name": "集装箱管理简称"
+        },
+        "containerBusDivisId": {
+            "meaning": "集装箱管理事业部id",
+            "reachable": true,
+            "name": "集装箱管理事业部id"
+        },
+        "containerClazz": {
+            "meaning": "集装箱管理子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "集装箱管理子类"
+        },
+        "containerComment": {
+            "meaning": "集装箱管理评论",
+            "reachable": true,
+            "name": "集装箱管理评论"
+        },
+        "containerCreateTime": {
+            "meaning": "集装箱管理创建时间",
+            "reachable": true,
+            "name": "集装箱管理创建时间"
+        },
+        "containerCreator": {
+            "meaning": "集装箱管理创建人",
+            "reachable": true,
+            "name": "集装箱管理创建人"
+        },
+        "containerCreatorId": {
+            "meaning": "集装箱管理创建人ID",
+            "reachable": true,
+            "name": "集装箱管理创建人ID"
+        },
+        "containerDateExtra1": {
+            "meaning": "集装箱管理扩展时间1",
+            "reachable": true,
+            "name": "集装箱管理扩展时间1"
+        },
+        "containerDateExtra2": {
+            "meaning": "集装箱管理扩展时间2",
+            "reachable": true,
+            "name": "集装箱管理扩展时间2"
+        },
+        "containerDateExtra3": {
+            "meaning": "集装箱管理扩展时间3",
+            "reachable": true,
+            "name": "集装箱管理扩展时间3"
+        },
+        "containerDateExtra4": {
+            "meaning": "集装箱管理扩展时间4",
+            "reachable": true,
+            "name": "集装箱管理扩展时间4"
+        },
+        "containerDateExtra5": {
+            "meaning": "集装箱管理扩展时间5",
+            "reachable": true,
+            "name": "集装箱管理扩展时间5"
+        },
+        "containerDefaultType": {
+            "meaning": "集装箱管理智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "集装箱管理智能节点主类型"
+        },
+        "containerDescription": {
+            "meaning": "集装箱管理描述",
+            "reachable": true,
+            "name": "集装箱管理描述"
+        },
+        "containerDoorHeight": {
+            "meaning": "集装箱管理门高(m)",
+            "reachable": true,
+            "name": "集装箱管理门高"
+        },
+        "containerDoorWidth": {
+            "meaning": "集装箱管理门宽(m)",
+            "reachable": true,
+            "name": "集装箱管理门宽"
+        },
+        "containerEngName": {
+            "meaning": "集装箱管理英文名称",
+            "reachable": true,
+            "name": "集装箱管理英文名称"
+        },
+        "containerExtension": {
+            "meaning": "集装箱管理扩展数据",
+            "reachable": true,
+            "name": "集装箱管理扩展数据"
+        },
+        "containerExternalState": {
+            "meaning": "集装箱管理上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "集装箱管理上流程状态位"
+        },
+        "containerFlags": {
+            "meaning": "集装箱管理63位标志位",
+            "reachable": true,
+            "name": "集装箱管理63位标志位"
+        },
+        "containerFromAuditDate": {
+            "meaning": "containerFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromCreateTime": {
+            "meaning": "containerFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromDateExtra1": {
+            "meaning": "containerFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromDateExtra2": {
+            "meaning": "containerFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromDateExtra3": {
+            "meaning": "containerFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromDateExtra4": {
+            "meaning": "containerFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromDateExtra5": {
+            "meaning": "containerFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "containerFromUpdateTime": {
+            "meaning": "containerFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "containerGroovyScript": {
+            "meaning": "集装箱管理groovy脚本",
+            "reachable": true,
+            "name": "集装箱管理groovy脚本"
+        },
+        "containerGropeCode": {
+            "meaning": "集装箱管理搜索码",
+            "reachable": true,
+            "name": "集装箱管理搜索码"
+        },
+        "containerId": {
+            "meaning": "集装箱管理PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "集装箱管理PK"
+        },
+        "containerInUsed": {
+            "meaning": "集装箱管理是否被使用",
+            "reachable": true,
+            "name": "集装箱管理是否被使用"
+        },
+        "containerInternalHeight": {
+            "meaning": "集装箱管理内高(m)",
+            "reachable": true,
+            "name": "集装箱管理内高"
+        },
+        "containerInternalLength": {
+            "meaning": "集装箱管理内长(m)",
+            "reachable": true,
+            "name": "集装箱管理内长"
+        },
+        "containerInternalWidth": {
+            "meaning": "集装箱管理内宽(m)",
+            "reachable": true,
+            "name": "集装箱管理内宽"
+        },
+        "containerIsBanned": {
+            "meaning": "集装箱管理是否被禁用",
+            "reachable": true,
+            "name": "集装箱管理是否被禁用"
+        },
+        "containerIsDeleted": {
+            "meaning": "集装箱管理是否被删除",
+            "reachable": true,
+            "name": "集装箱管理是否被删除"
+        },
+        "containerIsMainFlow": {
+            "meaning": "集装箱管理是否是主流程",
+            "reachable": true,
+            "name": "集装箱管理是否是主流程"
+        },
+        "containerIsolation": {
+            "meaning": "集装箱管理智能节点数据隔离标识",
+            "reachable": true,
+            "name": "集装箱管理智能节点数据隔离标识"
+        },
+        "containerJsScript": {
+            "meaning": "集装箱管理js脚本",
+            "reachable": true,
+            "name": "集装箱管理js脚本"
+        },
+        "containerName": {
+            "meaning": "集装箱管理智能节点名",
+            "reachable": true,
+            "name": "集装箱管理智能节点名"
+        },
+        "containerNameCodeSearch": {
+            "meaning": "集装箱管理name、user_code模糊搜索",
+            "reachable": true,
+            "name": "集装箱管理name、user_code模糊搜索"
+        },
+        "containerNumberExtra1": {
+            "meaning": "集装箱管理扩展数量1",
+            "reachable": true,
+            "name": "集装箱管理扩展数量1"
+        },
+        "containerNumberExtra2": {
+            "meaning": "集装箱管理扩展数量2",
+            "reachable": true,
+            "name": "集装箱管理扩展数量2"
+        },
+        "containerNumberExtra3": {
+            "meaning": "集装箱管理扩展数量3",
+            "reachable": true,
+            "name": "集装箱管理扩展数量3"
+        },
+        "containerNumberExtra4": {
+            "meaning": "集装箱管理扩展数量4",
+            "reachable": true,
+            "name": "集装箱管理扩展数量4"
+        },
+        "containerNumberExtra5": {
+            "meaning": "集装箱管理扩展数量5",
+            "reachable": true,
+            "name": "集装箱管理扩展数量5"
+        },
+        "containerParentId": {
+            "meaning": "集装箱管理父节点ID",
+            "reachable": true,
+            "name": "集装箱管理父节点ID"
+        },
+        "containerProcessInstanceId": {
+            "meaning": "集装箱管理流程实例ID",
+            "reachable": true,
+            "name": "集装箱管理流程实例ID"
+        },
+        "containerSerialNumber": {
+            "meaning": "集装箱管理顺序号",
+            "reachable": true,
+            "name": "集装箱管理顺序号"
+        },
+        "containerState": {
+            "meaning": "集装箱管理通用状态",
+            "reachable": true,
+            "name": "集装箱管理通用状态"
+        },
+        "containerSystemCode": {
+            "meaning": "集装箱管理系统编码",
+            "reachable": true,
+            "name": "集装箱管理系统编码"
+        },
+        "containerTaskNodeName": {
+            "meaning": "集装箱管理任务节点名称",
+            "reachable": true,
+            "name": "集装箱管理任务节点名称"
+        },
+        "containerTenantId": {
+            "meaning": "集装箱管理租户_id",
+            "reachable": true,
+            "name": "集装箱管理租户_id"
+        },
+        "containerThirdPartyClass": {
+            "meaning": "集装箱管理第三方分类",
+            "reachable": true,
+            "name": "集装箱管理第三方分类"
+        },
+        "containerThirdPartyId": {
+            "meaning": "集装箱管理第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "集装箱管理第三方系统中的唯一ID"
+        },
+        "containerThirdPartyName": {
+            "meaning": "集装箱管理第三方名称",
+            "reachable": true,
+            "name": "集装箱管理第三方名称"
+        },
+        "containerToAuditDate": {
+            "meaning": "containerToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToCreateTime": {
+            "meaning": "containerToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToDateExtra1": {
+            "meaning": "containerToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToDateExtra2": {
+            "meaning": "containerToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToDateExtra3": {
+            "meaning": "containerToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToDateExtra4": {
+            "meaning": "containerToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToDateExtra5": {
+            "meaning": "containerToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "containerToUpdateTime": {
+            "meaning": "containerToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "containerTotalVolume": {
+            "meaning": "集装箱管理总体积",
+            "reachable": true,
+            "name": "集装箱管理总体积"
+        },
+        "containerUpdateTime": {
+            "meaning": "集装箱管理更新时间",
+            "reachable": true,
+            "name": "集装箱管理更新时间"
+        },
+        "containerUpdater": {
+            "meaning": "集装箱管理更新人",
+            "reachable": true,
+            "name": "集装箱管理更新人"
+        },
+        "containerUpdaterId": {
+            "meaning": "集装箱管理更新人ID",
+            "reachable": true,
+            "name": "集装箱管理更新人ID"
+        },
+        "containerUserCode": {
+            "meaning": "集装箱管理智能节点的唯一编码",
+            "reachable": true,
+            "name": "集装箱管理智能节点的唯一编码"
+        },
+        "containerVarExtra1": {
+            "meaning": "集装箱管理扩展1",
+            "reachable": true,
+            "name": "集装箱管理扩展1"
+        },
+        "containerVarExtra2": {
+            "meaning": "集装箱管理扩展2",
+            "reachable": true,
+            "name": "集装箱管理扩展2"
+        },
+        "containerVarExtra3": {
+            "meaning": "集装箱管理扩展3",
+            "reachable": true,
+            "name": "集装箱管理扩展3"
+        },
+        "containerVarExtra4": {
+            "meaning": "集装箱管理扩展4",
+            "reachable": true,
+            "name": "集装箱管理扩展4"
+        },
+        "containerVarExtra5": {
+            "meaning": "集装箱管理扩展5",
+            "reachable": true,
+            "name": "集装箱管理扩展5"
+        },
+        "containerVersion": {
+            "meaning": "集装箱管理版本号",
+            "reachable": true,
+            "name": "集装箱管理版本号"
+        }
+    }
+}

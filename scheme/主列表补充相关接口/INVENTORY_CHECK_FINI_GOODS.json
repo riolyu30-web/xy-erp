@@ -1,0 +1,606 @@
+{
+    "api_name": "/inv-check-fini-goods/findList",
+    "table_name": "成品盘点主表",
+    "request": {
+        "invCheckFiniGoodsClazz": "INVENTORY_CHECK_FINI_GOODS"
+    },
+    "mainTabClazz": "INVENTORY_CHECK_FINI_GOODS",
+    "response": {
+        "invCheckFiniGoodsActualTimeRequired": {
+            "meaning": "成品盘点主表实际需时(小时)",
+            "reachable": true,
+            "name": "成品盘点主表实际需时"
+        },
+        "invCheckFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "成品盘点主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品盘点主表调整需时"
+        },
+        "invCheckFiniGoodsApplicationId": {
+            "meaning": "成品盘点主表应用ID",
+            "reachable": true,
+            "name": "成品盘点主表应用ID"
+        },
+        "invCheckFiniGoodsAuditDate": {
+            "meaning": "成品盘点主表审核时间",
+            "reachable": true,
+            "name": "成品盘点主表审核时间"
+        },
+        "invCheckFiniGoodsAuditStatus": {
+            "meaning": "成品盘点主表审核状态",
+            "reachable": true,
+            "name": "成品盘点主表审核状态"
+        },
+        "invCheckFiniGoodsAvailableScheduleId": {
+            "meaning": "成品盘点主表可用日程id",
+            "reachable": true,
+            "name": "成品盘点主表可用日程id"
+        },
+        "invCheckFiniGoodsBeginTime": {
+            "meaning": "成品盘点主表开始时间",
+            "reachable": true,
+            "name": "成品盘点主表开始时间"
+        },
+        "invCheckFiniGoodsBizVersion": {
+            "meaning": "成品盘点主表业务自定义版本号",
+            "reachable": true,
+            "name": "成品盘点主表业务自定义版本号"
+        },
+        "invCheckFiniGoodsBriefName": {
+            "meaning": "成品盘点主表简称",
+            "reachable": true,
+            "name": "成品盘点主表简称"
+        },
+        "invCheckFiniGoodsBusDivisId": {
+            "meaning": "成品盘点主表事业部id",
+            "reachable": true,
+            "name": "成品盘点主表事业部id"
+        },
+        "invCheckFiniGoodsClazz": {
+            "meaning": "成品盘点主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品盘点主表子类"
+        },
+        "invCheckFiniGoodsClosedReason": {
+            "meaning": "成品盘点主表结案原因",
+            "reachable": true,
+            "name": "成品盘点主表结案原因"
+        },
+        "invCheckFiniGoodsClosedStatus": {
+            "meaning": "成品盘点主表结案状态",
+            "reachable": true,
+            "name": "成品盘点主表结案状态"
+        },
+        "invCheckFiniGoodsComment": {
+            "meaning": "成品盘点主表评论",
+            "reachable": true,
+            "name": "成品盘点主表评论"
+        },
+        "invCheckFiniGoodsCompleteQuantity": {
+            "meaning": "成品盘点主表完成数量",
+            "reachable": true,
+            "name": "成品盘点主表完成数量"
+        },
+        "invCheckFiniGoodsCompleteStatus": {
+            "meaning": "成品盘点主表完成状态",
+            "reachable": true,
+            "name": "成品盘点主表完成状态"
+        },
+        "invCheckFiniGoodsCreateTime": {
+            "meaning": "成品盘点主表创建时间",
+            "reachable": true,
+            "name": "成品盘点主表创建时间"
+        },
+        "invCheckFiniGoodsCreator": {
+            "meaning": "成品盘点主表创建人",
+            "reachable": true,
+            "name": "成品盘点主表创建人"
+        },
+        "invCheckFiniGoodsCreatorId": {
+            "meaning": "成品盘点主表创建人ID",
+            "reachable": true,
+            "name": "成品盘点主表创建人ID"
+        },
+        "invCheckFiniGoodsDateExtra1": {
+            "meaning": "成品盘点主表扩展时间1",
+            "reachable": true,
+            "name": "成品盘点主表扩展时间1"
+        },
+        "invCheckFiniGoodsDateExtra2": {
+            "meaning": "成品盘点主表扩展时间2",
+            "reachable": true,
+            "name": "成品盘点主表扩展时间2"
+        },
+        "invCheckFiniGoodsDateExtra3": {
+            "meaning": "成品盘点主表扩展时间3",
+            "reachable": true,
+            "name": "成品盘点主表扩展时间3"
+        },
+        "invCheckFiniGoodsDateExtra4": {
+            "meaning": "成品盘点主表扩展时间4",
+            "reachable": true,
+            "name": "成品盘点主表扩展时间4"
+        },
+        "invCheckFiniGoodsDateExtra5": {
+            "meaning": "成品盘点主表扩展时间5",
+            "reachable": true,
+            "name": "成品盘点主表扩展时间5"
+        },
+        "invCheckFiniGoodsDefaultType": {
+            "meaning": "成品盘点主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品盘点主表智能节点主类型"
+        },
+        "invCheckFiniGoodsDeliveryDate": {
+            "meaning": "成品盘点主表交货日期",
+            "reachable": true,
+            "name": "成品盘点主表交货日期"
+        },
+        "invCheckFiniGoodsDescription": {
+            "meaning": "成品盘点主表描述",
+            "reachable": true,
+            "name": "成品盘点主表描述"
+        },
+        "invCheckFiniGoodsEndTime": {
+            "meaning": "成品盘点主表结束时间",
+            "reachable": true,
+            "name": "成品盘点主表结束时间"
+        },
+        "invCheckFiniGoodsEndTimeRequired": {
+            "meaning": "成品盘点主表最后需时(小时)",
+            "reachable": true,
+            "name": "成品盘点主表最后需时"
+        },
+        "invCheckFiniGoodsEngName": {
+            "meaning": "成品盘点主表英文名称",
+            "reachable": true,
+            "name": "成品盘点主表英文名称"
+        },
+        "invCheckFiniGoodsEquipmentId": {
+            "meaning": "成品盘点主表设备id",
+            "reachable": true,
+            "name": "成品盘点主表设备id"
+        },
+        "invCheckFiniGoodsExchangeRateId": {
+            "meaning": "成品盘点主表币种汇率id",
+            "reachable": true,
+            "name": "成品盘点主表币种汇率id"
+        },
+        "invCheckFiniGoodsExtension": {
+            "meaning": "成品盘点主表扩展数据",
+            "reachable": true,
+            "name": "成品盘点主表扩展数据"
+        },
+        "invCheckFiniGoodsExternalState": {
+            "meaning": "成品盘点主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品盘点主表上流程状态位"
+        },
+        "invCheckFiniGoodsFilterClazz": {
+            "meaning": "成品盘点主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品盘点主表冗余字段用于筛选"
+        },
+        "invCheckFiniGoodsFlags": {
+            "meaning": "成品盘点主表63位标志位",
+            "reachable": true,
+            "name": "成品盘点主表63位标志位"
+        },
+        "invCheckFiniGoodsFromAuditDate": {
+            "meaning": "invCheckFiniGoodsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromBeginTime": {
+            "meaning": "invCheckFiniGoodsFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromCreateTime": {
+            "meaning": "invCheckFiniGoodsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDateExtra1": {
+            "meaning": "invCheckFiniGoodsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDateExtra2": {
+            "meaning": "invCheckFiniGoodsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDateExtra3": {
+            "meaning": "invCheckFiniGoodsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDateExtra4": {
+            "meaning": "invCheckFiniGoodsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDateExtra5": {
+            "meaning": "invCheckFiniGoodsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromDeliveryDate": {
+            "meaning": "invCheckFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromEndTime": {
+            "meaning": "invCheckFiniGoodsFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromReceiptDate": {
+            "meaning": "invCheckFiniGoodsFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFromUpdateTime": {
+            "meaning": "invCheckFiniGoodsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsFscType": {
+            "meaning": "成品盘点主表FSC声明",
+            "reachable": true,
+            "name": "成品盘点主表FSC声明"
+        },
+        "invCheckFiniGoodsGenerativePeople": {
+            "meaning": "成品盘点主表下发人",
+            "reachable": true,
+            "name": "成品盘点主表下发人"
+        },
+        "invCheckFiniGoodsGenerativeState": {
+            "meaning": "成品盘点主表下发状态",
+            "reachable": true,
+            "name": "成品盘点主表下发状态"
+        },
+        "invCheckFiniGoodsGroovyScript": {
+            "meaning": "成品盘点主表groovy脚本",
+            "reachable": true,
+            "name": "成品盘点主表groovy脚本"
+        },
+        "invCheckFiniGoodsGropeCode": {
+            "meaning": "成品盘点主表搜索码",
+            "reachable": true,
+            "name": "成品盘点主表搜索码"
+        },
+        "invCheckFiniGoodsId": {
+            "meaning": "成品盘点主表pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品盘点主表pk"
+        },
+        "invCheckFiniGoodsInUsed": {
+            "meaning": "成品盘点主表是否被使用",
+            "reachable": true,
+            "name": "成品盘点主表是否被使用"
+        },
+        "invCheckFiniGoodsInvTypeTaxRateId": {
+            "meaning": "成品盘点主表发票税率id",
+            "reachable": true,
+            "name": "成品盘点主表发票税率id"
+        },
+        "invCheckFiniGoodsIsBanned": {
+            "meaning": "成品盘点主表是否被禁用",
+            "reachable": true,
+            "name": "成品盘点主表是否被禁用"
+        },
+        "invCheckFiniGoodsIsDeleted": {
+            "meaning": "成品盘点主表是否被删除",
+            "reachable": true,
+            "name": "成品盘点主表是否被删除"
+        },
+        "invCheckFiniGoodsIsLeaf": {
+            "meaning": "成品盘点主表是否叶子节点",
+            "reachable": true,
+            "name": "成品盘点主表是否叶子节点"
+        },
+        "invCheckFiniGoodsIsMainFlow": {
+            "meaning": "成品盘点主表是否是主流程",
+            "reachable": true,
+            "name": "成品盘点主表是否是主流程"
+        },
+        "invCheckFiniGoodsIsManualModificationDate": {
+            "meaning": "成品盘点主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品盘点主表是否手动修改计划生产时间"
+        },
+        "invCheckFiniGoodsIsolation": {
+            "meaning": "成品盘点主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品盘点主表智能节点数据隔离标识"
+        },
+        "invCheckFiniGoodsJsScript": {
+            "meaning": "成品盘点主表js脚本",
+            "reachable": true,
+            "name": "成品盘点主表js脚本"
+        },
+        "invCheckFiniGoodsMaterialId": {
+            "meaning": "成品盘点主表物料id",
+            "reachable": true,
+            "name": "成品盘点主表物料id"
+        },
+        "invCheckFiniGoodsName": {
+            "meaning": "成品盘点主表智能节点名",
+            "reachable": true,
+            "name": "成品盘点主表智能节点名"
+        },
+        "invCheckFiniGoodsNameCodeSearch": {
+            "meaning": "成品盘点主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品盘点主表name、user_code模糊搜索"
+        },
+        "invCheckFiniGoodsNumberExtra1": {
+            "meaning": "成品盘点主表扩展数量1",
+            "reachable": true,
+            "name": "成品盘点主表扩展数量1"
+        },
+        "invCheckFiniGoodsNumberExtra2": {
+            "meaning": "成品盘点主表扩展数量2",
+            "reachable": true,
+            "name": "成品盘点主表扩展数量2"
+        },
+        "invCheckFiniGoodsNumberExtra3": {
+            "meaning": "成品盘点主表扩展数量3",
+            "reachable": true,
+            "name": "成品盘点主表扩展数量3"
+        },
+        "invCheckFiniGoodsNumberExtra4": {
+            "meaning": "成品盘点主表扩展数量4",
+            "reachable": true,
+            "name": "成品盘点主表扩展数量4"
+        },
+        "invCheckFiniGoodsNumberExtra5": {
+            "meaning": "成品盘点主表扩展数量5",
+            "reachable": true,
+            "name": "成品盘点主表扩展数量5"
+        },
+        "invCheckFiniGoodsParentId": {
+            "meaning": "成品盘点主表父节点ID",
+            "reachable": true,
+            "name": "成品盘点主表父节点ID"
+        },
+        "invCheckFiniGoodsPlannedOutputQuantity": {
+            "meaning": "成品盘点主表计划产出数量",
+            "reachable": true,
+            "name": "成品盘点主表计划产出数量"
+        },
+        "invCheckFiniGoodsPlannedTimeRequired": {
+            "meaning": "成品盘点主表计划需时(小时)",
+            "reachable": true,
+            "name": "成品盘点主表计划需时"
+        },
+        "invCheckFiniGoodsPrintTimes": {
+            "meaning": "成品盘点主表打印次数",
+            "reachable": true,
+            "name": "成品盘点主表打印次数"
+        },
+        "invCheckFiniGoodsPriority": {
+            "meaning": "成品盘点主表优先级",
+            "reachable": true,
+            "name": "成品盘点主表优先级"
+        },
+        "invCheckFiniGoodsProcessInstanceId": {
+            "meaning": "成品盘点主表流程实例ID",
+            "reachable": true,
+            "name": "成品盘点主表流程实例ID"
+        },
+        "invCheckFiniGoodsProductionProcessesTypeId": {
+            "meaning": "成品盘点主表工序类型ID",
+            "reachable": true,
+            "name": "成品盘点主表工序类型ID"
+        },
+        "invCheckFiniGoodsProductionShiftId": {
+            "meaning": "成品盘点主表生产班次ID",
+            "reachable": true,
+            "name": "成品盘点主表生产班次ID"
+        },
+        "invCheckFiniGoodsQuantity": {
+            "meaning": "成品盘点主表任务数量",
+            "reachable": true,
+            "name": "成品盘点主表任务数量"
+        },
+        "invCheckFiniGoodsReceiptDate": {
+            "meaning": "成品盘点主表单据日期",
+            "reachable": true,
+            "name": "成品盘点主表单据日期"
+        },
+        "invCheckFiniGoodsReceiptType": {
+            "meaning": "成品盘点主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品盘点主表单据类型"
+        },
+        "invCheckFiniGoodsRelatedTasksId": {
+            "meaning": "成品盘点主表关联任务id",
+            "reachable": true,
+            "name": "成品盘点主表关联任务id"
+        },
+        "invCheckFiniGoodsSerialNumber": {
+            "meaning": "成品盘点主表顺序号",
+            "reachable": true,
+            "name": "成品盘点主表顺序号"
+        },
+        "invCheckFiniGoodsSource": {
+            "meaning": "成品盘点主表源",
+            "reachable": true,
+            "name": "成品盘点主表源"
+        },
+        "invCheckFiniGoodsSourceType": {
+            "meaning": "成品盘点主表来源类型",
+            "reachable": true,
+            "name": "成品盘点主表来源类型"
+        },
+        "invCheckFiniGoodsState": {
+            "meaning": "成品盘点主表通用状态",
+            "reachable": true,
+            "name": "成品盘点主表通用状态"
+        },
+        "invCheckFiniGoodsSystemCode": {
+            "meaning": "成品盘点主表系统编码",
+            "reachable": true,
+            "name": "成品盘点主表系统编码"
+        },
+        "invCheckFiniGoodsTarget": {
+            "meaning": "成品盘点主表目标",
+            "reachable": true,
+            "name": "成品盘点主表目标"
+        },
+        "invCheckFiniGoodsTaskNodeName": {
+            "meaning": "成品盘点主表任务节点名称",
+            "reachable": true,
+            "name": "成品盘点主表任务节点名称"
+        },
+        "invCheckFiniGoodsTenantId": {
+            "meaning": "成品盘点主表租户id",
+            "reachable": true,
+            "name": "成品盘点主表租户id"
+        },
+        "invCheckFiniGoodsThirdPartyClass": {
+            "meaning": "成品盘点主表第三方分类",
+            "reachable": true,
+            "name": "成品盘点主表第三方分类"
+        },
+        "invCheckFiniGoodsThirdPartyId": {
+            "meaning": "成品盘点主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品盘点主表第三方系统中的唯一ID"
+        },
+        "invCheckFiniGoodsThirdPartyName": {
+            "meaning": "成品盘点主表第三方名称",
+            "reachable": true,
+            "name": "成品盘点主表第三方名称"
+        },
+        "invCheckFiniGoodsToAuditDate": {
+            "meaning": "invCheckFiniGoodsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToBeginTime": {
+            "meaning": "invCheckFiniGoodsToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToCreateTime": {
+            "meaning": "invCheckFiniGoodsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDateExtra1": {
+            "meaning": "invCheckFiniGoodsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDateExtra2": {
+            "meaning": "invCheckFiniGoodsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDateExtra3": {
+            "meaning": "invCheckFiniGoodsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDateExtra4": {
+            "meaning": "invCheckFiniGoodsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDateExtra5": {
+            "meaning": "invCheckFiniGoodsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToDeliveryDate": {
+            "meaning": "invCheckFiniGoodsToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToEndTime": {
+            "meaning": "invCheckFiniGoodsToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToReceiptDate": {
+            "meaning": "invCheckFiniGoodsToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsToUpdateTime": {
+            "meaning": "invCheckFiniGoodsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "成品盘点主表总盘点不含税金额",
+            "reachable": true,
+            "name": "成品盘点主表总盘点不含税金额"
+        },
+        "invCheckFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "成品盘点主表总盘点含税金额",
+            "reachable": true,
+            "name": "成品盘点主表总盘点含税金额"
+        },
+        "invCheckFiniGoodsUnitCode": {
+            "meaning": "成品盘点主表单位id",
+            "reachable": true,
+            "name": "成品盘点主表单位id"
+        },
+        "invCheckFiniGoodsUpdateTime": {
+            "meaning": "成品盘点主表更新时间",
+            "reachable": true,
+            "name": "成品盘点主表更新时间"
+        },
+        "invCheckFiniGoodsUpdater": {
+            "meaning": "成品盘点主表更新人",
+            "reachable": true,
+            "name": "成品盘点主表更新人"
+        },
+        "invCheckFiniGoodsUpdaterId": {
+            "meaning": "成品盘点主表更新人ID",
+            "reachable": true,
+            "name": "成品盘点主表更新人ID"
+        },
+        "invCheckFiniGoodsUserCode": {
+            "meaning": "成品盘点主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品盘点主表智能节点的唯一编码"
+        },
+        "invCheckFiniGoodsVarExtra1": {
+            "meaning": "成品盘点主表扩展1",
+            "reachable": true,
+            "name": "成品盘点主表扩展1"
+        },
+        "invCheckFiniGoodsVarExtra2": {
+            "meaning": "成品盘点主表扩展2",
+            "reachable": true,
+            "name": "成品盘点主表扩展2"
+        },
+        "invCheckFiniGoodsVarExtra3": {
+            "meaning": "成品盘点主表扩展3",
+            "reachable": true,
+            "name": "成品盘点主表扩展3"
+        },
+        "invCheckFiniGoodsVarExtra4": {
+            "meaning": "成品盘点主表扩展4",
+            "reachable": true,
+            "name": "成品盘点主表扩展4"
+        },
+        "invCheckFiniGoodsVarExtra5": {
+            "meaning": "成品盘点主表扩展5",
+            "reachable": true,
+            "name": "成品盘点主表扩展5"
+        },
+        "invCheckFiniGoodsVersion": {
+            "meaning": "成品盘点主表版本号",
+            "reachable": true,
+            "name": "成品盘点主表版本号"
+        }
+    }
+}

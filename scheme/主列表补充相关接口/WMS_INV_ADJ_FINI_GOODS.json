@@ -1,0 +1,606 @@
+{
+    "api_name": "/wms-inv-adj-fini-goods/findList",
+    "table_name": "成品盘点调整主表",
+    "request": {
+        "wmsInvAdjFiniGoodsClazz": "WMS_INV_ADJ_FINI_GOODS"
+    },
+    "mainTabClazz": "WMS_INV_ADJ_FINI_GOODS",
+    "response": {
+        "wmsInvAdjFiniGoodsActualTimeRequired": {
+            "meaning": "成品盘点调整主表实际需时(小时)",
+            "reachable": true,
+            "name": "成品盘点调整主表实际需时"
+        },
+        "wmsInvAdjFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "成品盘点调整主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品盘点调整主表调整需时"
+        },
+        "wmsInvAdjFiniGoodsApplicationId": {
+            "meaning": "成品盘点调整主表应用ID",
+            "reachable": true,
+            "name": "成品盘点调整主表应用ID"
+        },
+        "wmsInvAdjFiniGoodsAuditDate": {
+            "meaning": "成品盘点调整主表审核时间",
+            "reachable": true,
+            "name": "成品盘点调整主表审核时间"
+        },
+        "wmsInvAdjFiniGoodsAuditStatus": {
+            "meaning": "成品盘点调整主表审核状态",
+            "reachable": true,
+            "name": "成品盘点调整主表审核状态"
+        },
+        "wmsInvAdjFiniGoodsAvailableScheduleId": {
+            "meaning": "成品盘点调整主表可用日程id",
+            "reachable": true,
+            "name": "成品盘点调整主表可用日程id"
+        },
+        "wmsInvAdjFiniGoodsBeginTime": {
+            "meaning": "成品盘点调整主表开始时间",
+            "reachable": true,
+            "name": "成品盘点调整主表开始时间"
+        },
+        "wmsInvAdjFiniGoodsBizVersion": {
+            "meaning": "成品盘点调整主表业务自定义版本号",
+            "reachable": true,
+            "name": "成品盘点调整主表业务自定义版本号"
+        },
+        "wmsInvAdjFiniGoodsBriefName": {
+            "meaning": "成品盘点调整主表简称",
+            "reachable": true,
+            "name": "成品盘点调整主表简称"
+        },
+        "wmsInvAdjFiniGoodsBusDivisId": {
+            "meaning": "成品盘点调整主表事业部id",
+            "reachable": true,
+            "name": "成品盘点调整主表事业部id"
+        },
+        "wmsInvAdjFiniGoodsClazz": {
+            "meaning": "成品盘点调整主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品盘点调整主表子类"
+        },
+        "wmsInvAdjFiniGoodsClosedReason": {
+            "meaning": "成品盘点调整主表结案原因",
+            "reachable": true,
+            "name": "成品盘点调整主表结案原因"
+        },
+        "wmsInvAdjFiniGoodsClosedStatus": {
+            "meaning": "成品盘点调整主表结案状态",
+            "reachable": true,
+            "name": "成品盘点调整主表结案状态"
+        },
+        "wmsInvAdjFiniGoodsComment": {
+            "meaning": "成品盘点调整主表评论",
+            "reachable": true,
+            "name": "成品盘点调整主表评论"
+        },
+        "wmsInvAdjFiniGoodsCompleteQuantity": {
+            "meaning": "成品盘点调整主表完成数量",
+            "reachable": true,
+            "name": "成品盘点调整主表完成数量"
+        },
+        "wmsInvAdjFiniGoodsCompleteStatus": {
+            "meaning": "成品盘点调整主表完成状态",
+            "reachable": true,
+            "name": "成品盘点调整主表完成状态"
+        },
+        "wmsInvAdjFiniGoodsCreateTime": {
+            "meaning": "成品盘点调整主表创建时间",
+            "reachable": true,
+            "name": "成品盘点调整主表创建时间"
+        },
+        "wmsInvAdjFiniGoodsCreator": {
+            "meaning": "成品盘点调整主表创建人",
+            "reachable": true,
+            "name": "成品盘点调整主表创建人"
+        },
+        "wmsInvAdjFiniGoodsCreatorId": {
+            "meaning": "成品盘点调整主表创建人ID",
+            "reachable": true,
+            "name": "成品盘点调整主表创建人ID"
+        },
+        "wmsInvAdjFiniGoodsDateExtra1": {
+            "meaning": "成品盘点调整主表扩展时间1",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展时间1"
+        },
+        "wmsInvAdjFiniGoodsDateExtra2": {
+            "meaning": "成品盘点调整主表扩展时间2",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展时间2"
+        },
+        "wmsInvAdjFiniGoodsDateExtra3": {
+            "meaning": "成品盘点调整主表扩展时间3",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展时间3"
+        },
+        "wmsInvAdjFiniGoodsDateExtra4": {
+            "meaning": "成品盘点调整主表扩展时间4",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展时间4"
+        },
+        "wmsInvAdjFiniGoodsDateExtra5": {
+            "meaning": "成品盘点调整主表扩展时间5",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展时间5"
+        },
+        "wmsInvAdjFiniGoodsDefaultType": {
+            "meaning": "成品盘点调整主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品盘点调整主表智能节点主类型"
+        },
+        "wmsInvAdjFiniGoodsDeliveryDate": {
+            "meaning": "成品盘点调整主表交货日期",
+            "reachable": true,
+            "name": "成品盘点调整主表交货日期"
+        },
+        "wmsInvAdjFiniGoodsDescription": {
+            "meaning": "成品盘点调整主表描述",
+            "reachable": true,
+            "name": "成品盘点调整主表描述"
+        },
+        "wmsInvAdjFiniGoodsEndTime": {
+            "meaning": "成品盘点调整主表结束时间",
+            "reachable": true,
+            "name": "成品盘点调整主表结束时间"
+        },
+        "wmsInvAdjFiniGoodsEndTimeRequired": {
+            "meaning": "成品盘点调整主表最后需时(小时)",
+            "reachable": true,
+            "name": "成品盘点调整主表最后需时"
+        },
+        "wmsInvAdjFiniGoodsEngName": {
+            "meaning": "成品盘点调整主表英文名称",
+            "reachable": true,
+            "name": "成品盘点调整主表英文名称"
+        },
+        "wmsInvAdjFiniGoodsEquipmentId": {
+            "meaning": "成品盘点调整主表设备id",
+            "reachable": true,
+            "name": "成品盘点调整主表设备id"
+        },
+        "wmsInvAdjFiniGoodsExchangeRateId": {
+            "meaning": "成品盘点调整主表币种汇率id",
+            "reachable": true,
+            "name": "成品盘点调整主表币种汇率id"
+        },
+        "wmsInvAdjFiniGoodsExtension": {
+            "meaning": "成品盘点调整主表扩展数据",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数据"
+        },
+        "wmsInvAdjFiniGoodsExternalState": {
+            "meaning": "成品盘点调整主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品盘点调整主表上流程状态位"
+        },
+        "wmsInvAdjFiniGoodsFilterClazz": {
+            "meaning": "成品盘点调整主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品盘点调整主表冗余字段用于筛选"
+        },
+        "wmsInvAdjFiniGoodsFlags": {
+            "meaning": "成品盘点调整主表63位标志位",
+            "reachable": true,
+            "name": "成品盘点调整主表63位标志位"
+        },
+        "wmsInvAdjFiniGoodsFromAuditDate": {
+            "meaning": "wmsInvAdjFiniGoodsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromBeginTime": {
+            "meaning": "wmsInvAdjFiniGoodsFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromCreateTime": {
+            "meaning": "wmsInvAdjFiniGoodsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDateExtra1": {
+            "meaning": "wmsInvAdjFiniGoodsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDateExtra2": {
+            "meaning": "wmsInvAdjFiniGoodsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDateExtra3": {
+            "meaning": "wmsInvAdjFiniGoodsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDateExtra4": {
+            "meaning": "wmsInvAdjFiniGoodsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDateExtra5": {
+            "meaning": "wmsInvAdjFiniGoodsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromDeliveryDate": {
+            "meaning": "wmsInvAdjFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromEndTime": {
+            "meaning": "wmsInvAdjFiniGoodsFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromReceiptDate": {
+            "meaning": "wmsInvAdjFiniGoodsFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFromUpdateTime": {
+            "meaning": "wmsInvAdjFiniGoodsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsFscType": {
+            "meaning": "成品盘点调整主表FSC声明",
+            "reachable": true,
+            "name": "成品盘点调整主表FSC声明"
+        },
+        "wmsInvAdjFiniGoodsGenerativePeople": {
+            "meaning": "成品盘点调整主表下发人",
+            "reachable": true,
+            "name": "成品盘点调整主表下发人"
+        },
+        "wmsInvAdjFiniGoodsGenerativeState": {
+            "meaning": "成品盘点调整主表下发状态",
+            "reachable": true,
+            "name": "成品盘点调整主表下发状态"
+        },
+        "wmsInvAdjFiniGoodsGroovyScript": {
+            "meaning": "成品盘点调整主表groovy脚本",
+            "reachable": true,
+            "name": "成品盘点调整主表groovy脚本"
+        },
+        "wmsInvAdjFiniGoodsGropeCode": {
+            "meaning": "成品盘点调整主表搜索码",
+            "reachable": true,
+            "name": "成品盘点调整主表搜索码"
+        },
+        "wmsInvAdjFiniGoodsId": {
+            "meaning": "成品盘点调整主表Pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品盘点调整主表Pk"
+        },
+        "wmsInvAdjFiniGoodsInUsed": {
+            "meaning": "成品盘点调整主表是否被使用",
+            "reachable": true,
+            "name": "成品盘点调整主表是否被使用"
+        },
+        "wmsInvAdjFiniGoodsInvTypeTaxRateId": {
+            "meaning": "成品盘点调整主表发票税率id",
+            "reachable": true,
+            "name": "成品盘点调整主表发票税率id"
+        },
+        "wmsInvAdjFiniGoodsIsBanned": {
+            "meaning": "成品盘点调整主表是否被禁用",
+            "reachable": true,
+            "name": "成品盘点调整主表是否被禁用"
+        },
+        "wmsInvAdjFiniGoodsIsDeleted": {
+            "meaning": "成品盘点调整主表是否被删除",
+            "reachable": true,
+            "name": "成品盘点调整主表是否被删除"
+        },
+        "wmsInvAdjFiniGoodsIsLeaf": {
+            "meaning": "成品盘点调整主表是否叶子节点",
+            "reachable": true,
+            "name": "成品盘点调整主表是否叶子节点"
+        },
+        "wmsInvAdjFiniGoodsIsMainFlow": {
+            "meaning": "成品盘点调整主表是否是主流程",
+            "reachable": true,
+            "name": "成品盘点调整主表是否是主流程"
+        },
+        "wmsInvAdjFiniGoodsIsManualModificationDate": {
+            "meaning": "成品盘点调整主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品盘点调整主表是否手动修改计划生产时间"
+        },
+        "wmsInvAdjFiniGoodsIsolation": {
+            "meaning": "成品盘点调整主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品盘点调整主表智能节点数据隔离标识"
+        },
+        "wmsInvAdjFiniGoodsJsScript": {
+            "meaning": "成品盘点调整主表js脚本",
+            "reachable": true,
+            "name": "成品盘点调整主表js脚本"
+        },
+        "wmsInvAdjFiniGoodsMaterialId": {
+            "meaning": "成品盘点调整主表物料id",
+            "reachable": true,
+            "name": "成品盘点调整主表物料id"
+        },
+        "wmsInvAdjFiniGoodsName": {
+            "meaning": "成品盘点调整主表智能节点名",
+            "reachable": true,
+            "name": "成品盘点调整主表智能节点名"
+        },
+        "wmsInvAdjFiniGoodsNameCodeSearch": {
+            "meaning": "成品盘点调整主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品盘点调整主表name、user_code模糊搜索"
+        },
+        "wmsInvAdjFiniGoodsNumberExtra1": {
+            "meaning": "成品盘点调整主表扩展数量1",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数量1"
+        },
+        "wmsInvAdjFiniGoodsNumberExtra2": {
+            "meaning": "成品盘点调整主表扩展数量2",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数量2"
+        },
+        "wmsInvAdjFiniGoodsNumberExtra3": {
+            "meaning": "成品盘点调整主表扩展数量3",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数量3"
+        },
+        "wmsInvAdjFiniGoodsNumberExtra4": {
+            "meaning": "成品盘点调整主表扩展数量4",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数量4"
+        },
+        "wmsInvAdjFiniGoodsNumberExtra5": {
+            "meaning": "成品盘点调整主表扩展数量5",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展数量5"
+        },
+        "wmsInvAdjFiniGoodsParentId": {
+            "meaning": "成品盘点调整主表父节点ID",
+            "reachable": true,
+            "name": "成品盘点调整主表父节点ID"
+        },
+        "wmsInvAdjFiniGoodsPlannedOutputQuantity": {
+            "meaning": "成品盘点调整主表计划产出数量",
+            "reachable": true,
+            "name": "成品盘点调整主表计划产出数量"
+        },
+        "wmsInvAdjFiniGoodsPlannedTimeRequired": {
+            "meaning": "成品盘点调整主表计划需时(小时)",
+            "reachable": true,
+            "name": "成品盘点调整主表计划需时"
+        },
+        "wmsInvAdjFiniGoodsPrintTimes": {
+            "meaning": "成品盘点调整主表打印次数",
+            "reachable": true,
+            "name": "成品盘点调整主表打印次数"
+        },
+        "wmsInvAdjFiniGoodsPriority": {
+            "meaning": "成品盘点调整主表优先级",
+            "reachable": true,
+            "name": "成品盘点调整主表优先级"
+        },
+        "wmsInvAdjFiniGoodsProcessInstanceId": {
+            "meaning": "成品盘点调整主表流程实例ID",
+            "reachable": true,
+            "name": "成品盘点调整主表流程实例ID"
+        },
+        "wmsInvAdjFiniGoodsProductionProcessesTypeId": {
+            "meaning": "成品盘点调整主表工序类型ID",
+            "reachable": true,
+            "name": "成品盘点调整主表工序类型ID"
+        },
+        "wmsInvAdjFiniGoodsProductionShiftId": {
+            "meaning": "成品盘点调整主表生产班次ID",
+            "reachable": true,
+            "name": "成品盘点调整主表生产班次ID"
+        },
+        "wmsInvAdjFiniGoodsQuantity": {
+            "meaning": "成品盘点调整主表任务数量",
+            "reachable": true,
+            "name": "成品盘点调整主表任务数量"
+        },
+        "wmsInvAdjFiniGoodsReceiptDate": {
+            "meaning": "成品盘点调整主表单据日期",
+            "reachable": true,
+            "name": "成品盘点调整主表单据日期"
+        },
+        "wmsInvAdjFiniGoodsReceiptType": {
+            "meaning": "成品盘点调整主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品盘点调整主表单据类型"
+        },
+        "wmsInvAdjFiniGoodsRelatedTasksId": {
+            "meaning": "成品盘点调整主表关联任务id",
+            "reachable": true,
+            "name": "成品盘点调整主表关联任务id"
+        },
+        "wmsInvAdjFiniGoodsSerialNumber": {
+            "meaning": "成品盘点调整主表顺序号",
+            "reachable": true,
+            "name": "成品盘点调整主表顺序号"
+        },
+        "wmsInvAdjFiniGoodsSource": {
+            "meaning": "成品盘点调整主表源",
+            "reachable": true,
+            "name": "成品盘点调整主表源"
+        },
+        "wmsInvAdjFiniGoodsSourceType": {
+            "meaning": "成品盘点调整主表来源类型",
+            "reachable": true,
+            "name": "成品盘点调整主表来源类型"
+        },
+        "wmsInvAdjFiniGoodsState": {
+            "meaning": "成品盘点调整主表通用状态",
+            "reachable": true,
+            "name": "成品盘点调整主表通用状态"
+        },
+        "wmsInvAdjFiniGoodsSystemCode": {
+            "meaning": "成品盘点调整主表系统编码",
+            "reachable": true,
+            "name": "成品盘点调整主表系统编码"
+        },
+        "wmsInvAdjFiniGoodsTarget": {
+            "meaning": "成品盘点调整主表目标",
+            "reachable": true,
+            "name": "成品盘点调整主表目标"
+        },
+        "wmsInvAdjFiniGoodsTaskNodeName": {
+            "meaning": "成品盘点调整主表任务节点名称",
+            "reachable": true,
+            "name": "成品盘点调整主表任务节点名称"
+        },
+        "wmsInvAdjFiniGoodsTenantId": {
+            "meaning": "成品盘点调整主表租户ID",
+            "reachable": true,
+            "name": "成品盘点调整主表租户ID"
+        },
+        "wmsInvAdjFiniGoodsThirdPartyClass": {
+            "meaning": "成品盘点调整主表第三方分类",
+            "reachable": true,
+            "name": "成品盘点调整主表第三方分类"
+        },
+        "wmsInvAdjFiniGoodsThirdPartyId": {
+            "meaning": "成品盘点调整主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品盘点调整主表第三方系统中的唯一ID"
+        },
+        "wmsInvAdjFiniGoodsThirdPartyName": {
+            "meaning": "成品盘点调整主表第三方名称",
+            "reachable": true,
+            "name": "成品盘点调整主表第三方名称"
+        },
+        "wmsInvAdjFiniGoodsToAuditDate": {
+            "meaning": "wmsInvAdjFiniGoodsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToBeginTime": {
+            "meaning": "wmsInvAdjFiniGoodsToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToCreateTime": {
+            "meaning": "wmsInvAdjFiniGoodsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDateExtra1": {
+            "meaning": "wmsInvAdjFiniGoodsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDateExtra2": {
+            "meaning": "wmsInvAdjFiniGoodsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDateExtra3": {
+            "meaning": "wmsInvAdjFiniGoodsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDateExtra4": {
+            "meaning": "wmsInvAdjFiniGoodsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDateExtra5": {
+            "meaning": "wmsInvAdjFiniGoodsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToDeliveryDate": {
+            "meaning": "wmsInvAdjFiniGoodsToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToEndTime": {
+            "meaning": "wmsInvAdjFiniGoodsToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToReceiptDate": {
+            "meaning": "wmsInvAdjFiniGoodsToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsToUpdateTime": {
+            "meaning": "wmsInvAdjFiniGoodsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "wmsInvAdjFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "成品盘点调整主表总盘点不含税金额",
+            "reachable": true,
+            "name": "成品盘点调整主表总盘点不含税金额"
+        },
+        "wmsInvAdjFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "成品盘点调整主表总盘点含税金额",
+            "reachable": true,
+            "name": "成品盘点调整主表总盘点含税金额"
+        },
+        "wmsInvAdjFiniGoodsUnitCode": {
+            "meaning": "成品盘点调整主表单位id",
+            "reachable": true,
+            "name": "成品盘点调整主表单位id"
+        },
+        "wmsInvAdjFiniGoodsUpdateTime": {
+            "meaning": "成品盘点调整主表更新时间",
+            "reachable": true,
+            "name": "成品盘点调整主表更新时间"
+        },
+        "wmsInvAdjFiniGoodsUpdater": {
+            "meaning": "成品盘点调整主表更新人",
+            "reachable": true,
+            "name": "成品盘点调整主表更新人"
+        },
+        "wmsInvAdjFiniGoodsUpdaterId": {
+            "meaning": "成品盘点调整主表更新人ID",
+            "reachable": true,
+            "name": "成品盘点调整主表更新人ID"
+        },
+        "wmsInvAdjFiniGoodsUserCode": {
+            "meaning": "成品盘点调整主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品盘点调整主表智能节点的唯一编码"
+        },
+        "wmsInvAdjFiniGoodsVarExtra1": {
+            "meaning": "成品盘点调整主表扩展1",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展1"
+        },
+        "wmsInvAdjFiniGoodsVarExtra2": {
+            "meaning": "成品盘点调整主表扩展2",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展2"
+        },
+        "wmsInvAdjFiniGoodsVarExtra3": {
+            "meaning": "成品盘点调整主表扩展3",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展3"
+        },
+        "wmsInvAdjFiniGoodsVarExtra4": {
+            "meaning": "成品盘点调整主表扩展4",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展4"
+        },
+        "wmsInvAdjFiniGoodsVarExtra5": {
+            "meaning": "成品盘点调整主表扩展5",
+            "reachable": true,
+            "name": "成品盘点调整主表扩展5"
+        },
+        "wmsInvAdjFiniGoodsVersion": {
+            "meaning": "成品盘点调整主表版本号",
+            "reachable": true,
+            "name": "成品盘点调整主表版本号"
+        }
+    }
+}

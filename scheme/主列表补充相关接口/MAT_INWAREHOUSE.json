@@ -1,0 +1,596 @@
+{
+    "api_name": "/mat-inwarehouse/findList",
+    "table_name": "物料入仓表",
+    "request": {
+        "matInwarehouseClazz": "MAT_INWAREHOUSE"
+    },
+    "mainTabClazz": "MAT_INWAREHOUSE",
+    "response": {
+        "matInwarehouseActualTimeRequired": {
+            "meaning": "物料入仓表实际需时(小时)",
+            "reachable": true,
+            "name": "物料入仓表实际需时"
+        },
+        "matInwarehouseAdjustmentTimeRequired": {
+            "meaning": "物料入仓表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料入仓表调整需时"
+        },
+        "matInwarehouseApplicationId": {
+            "meaning": "物料入仓表应用ID",
+            "reachable": true,
+            "name": "物料入仓表应用ID"
+        },
+        "matInwarehouseAuditDate": {
+            "meaning": "物料入仓表审核时间",
+            "reachable": true,
+            "name": "物料入仓表审核时间"
+        },
+        "matInwarehouseAuditStatus": {
+            "meaning": "物料入仓表审核状态",
+            "reachable": true,
+            "name": "物料入仓表审核状态"
+        },
+        "matInwarehouseAvailableScheduleId": {
+            "meaning": "物料入仓表可用日程id",
+            "reachable": true,
+            "name": "物料入仓表可用日程id"
+        },
+        "matInwarehouseBeginTime": {
+            "meaning": "物料入仓表开始时间",
+            "reachable": true,
+            "name": "物料入仓表开始时间"
+        },
+        "matInwarehouseBizVersion": {
+            "meaning": "物料入仓表业务自定义版本号",
+            "reachable": true,
+            "name": "物料入仓表业务自定义版本号"
+        },
+        "matInwarehouseBriefName": {
+            "meaning": "物料入仓表简称",
+            "reachable": true,
+            "name": "物料入仓表简称"
+        },
+        "matInwarehouseBusDivisId": {
+            "meaning": "物料入仓表事业部id",
+            "reachable": true,
+            "name": "物料入仓表事业部id"
+        },
+        "matInwarehouseClazz": {
+            "meaning": "物料入仓表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料入仓表子类"
+        },
+        "matInwarehouseClosedReason": {
+            "meaning": "物料入仓表结案原因",
+            "reachable": true,
+            "name": "物料入仓表结案原因"
+        },
+        "matInwarehouseClosedStatus": {
+            "meaning": "物料入仓表结案状态",
+            "reachable": true,
+            "name": "物料入仓表结案状态"
+        },
+        "matInwarehouseComment": {
+            "meaning": "物料入仓表评论",
+            "reachable": true,
+            "name": "物料入仓表评论"
+        },
+        "matInwarehouseCompleteQuantity": {
+            "meaning": "物料入仓表完成数量",
+            "reachable": true,
+            "name": "物料入仓表完成数量"
+        },
+        "matInwarehouseCompleteStatus": {
+            "meaning": "物料入仓表完成状态",
+            "reachable": true,
+            "name": "物料入仓表完成状态"
+        },
+        "matInwarehouseCreateTime": {
+            "meaning": "物料入仓表创建时间",
+            "reachable": true,
+            "name": "物料入仓表创建时间"
+        },
+        "matInwarehouseCreator": {
+            "meaning": "物料入仓表创建人",
+            "reachable": true,
+            "name": "物料入仓表创建人"
+        },
+        "matInwarehouseCreatorId": {
+            "meaning": "物料入仓表创建人ID",
+            "reachable": true,
+            "name": "物料入仓表创建人ID"
+        },
+        "matInwarehouseDateExtra1": {
+            "meaning": "物料入仓表扩展时间1",
+            "reachable": true,
+            "name": "物料入仓表扩展时间1"
+        },
+        "matInwarehouseDateExtra2": {
+            "meaning": "物料入仓表扩展时间2",
+            "reachable": true,
+            "name": "物料入仓表扩展时间2"
+        },
+        "matInwarehouseDateExtra3": {
+            "meaning": "物料入仓表扩展时间3",
+            "reachable": true,
+            "name": "物料入仓表扩展时间3"
+        },
+        "matInwarehouseDateExtra4": {
+            "meaning": "物料入仓表扩展时间4",
+            "reachable": true,
+            "name": "物料入仓表扩展时间4"
+        },
+        "matInwarehouseDateExtra5": {
+            "meaning": "物料入仓表扩展时间5",
+            "reachable": true,
+            "name": "物料入仓表扩展时间5"
+        },
+        "matInwarehouseDefaultType": {
+            "meaning": "物料入仓表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料入仓表智能节点主类型"
+        },
+        "matInwarehouseDeliveryDate": {
+            "meaning": "物料入仓表交货日期",
+            "reachable": true,
+            "name": "物料入仓表交货日期"
+        },
+        "matInwarehouseDescription": {
+            "meaning": "物料入仓表描述",
+            "reachable": true,
+            "name": "物料入仓表描述"
+        },
+        "matInwarehouseEndTime": {
+            "meaning": "物料入仓表结束时间",
+            "reachable": true,
+            "name": "物料入仓表结束时间"
+        },
+        "matInwarehouseEndTimeRequired": {
+            "meaning": "物料入仓表最后需时(小时)",
+            "reachable": true,
+            "name": "物料入仓表最后需时"
+        },
+        "matInwarehouseEngName": {
+            "meaning": "物料入仓表英文名称",
+            "reachable": true,
+            "name": "物料入仓表英文名称"
+        },
+        "matInwarehouseEquipmentId": {
+            "meaning": "物料入仓表设备id",
+            "reachable": true,
+            "name": "物料入仓表设备id"
+        },
+        "matInwarehouseExchangeRateId": {
+            "meaning": "物料入仓表币种汇率id",
+            "reachable": true,
+            "name": "物料入仓表币种汇率id"
+        },
+        "matInwarehouseExtension": {
+            "meaning": "物料入仓表扩展数据",
+            "reachable": true,
+            "name": "物料入仓表扩展数据"
+        },
+        "matInwarehouseExternalState": {
+            "meaning": "物料入仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料入仓表上流程状态位"
+        },
+        "matInwarehouseFilterClazz": {
+            "meaning": "物料入仓表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料入仓表冗余字段用于筛选"
+        },
+        "matInwarehouseFlags": {
+            "meaning": "物料入仓表63位标志位",
+            "reachable": true,
+            "name": "物料入仓表63位标志位"
+        },
+        "matInwarehouseFromAuditDate": {
+            "meaning": "matInwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromBeginTime": {
+            "meaning": "matInwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromCreateTime": {
+            "meaning": "matInwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDateExtra1": {
+            "meaning": "matInwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDateExtra2": {
+            "meaning": "matInwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDateExtra3": {
+            "meaning": "matInwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDateExtra4": {
+            "meaning": "matInwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDateExtra5": {
+            "meaning": "matInwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromDeliveryDate": {
+            "meaning": "matInwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromEndTime": {
+            "meaning": "matInwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromReceiptDate": {
+            "meaning": "matInwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFromUpdateTime": {
+            "meaning": "matInwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseFscType": {
+            "meaning": "物料入仓表FSC声明",
+            "reachable": true,
+            "name": "物料入仓表FSC声明"
+        },
+        "matInwarehouseGenerativePeople": {
+            "meaning": "物料入仓表下发人",
+            "reachable": true,
+            "name": "物料入仓表下发人"
+        },
+        "matInwarehouseGenerativeState": {
+            "meaning": "物料入仓表下发状态",
+            "reachable": true,
+            "name": "物料入仓表下发状态"
+        },
+        "matInwarehouseGroovyScript": {
+            "meaning": "物料入仓表groovy脚本",
+            "reachable": true,
+            "name": "物料入仓表groovy脚本"
+        },
+        "matInwarehouseGropeCode": {
+            "meaning": "物料入仓表搜索码",
+            "reachable": true,
+            "name": "物料入仓表搜索码"
+        },
+        "matInwarehouseId": {
+            "meaning": "物料入仓表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料入仓表PK"
+        },
+        "matInwarehouseInUsed": {
+            "meaning": "物料入仓表是否被使用",
+            "reachable": true,
+            "name": "物料入仓表是否被使用"
+        },
+        "matInwarehouseInvTypeTaxRateId": {
+            "meaning": "物料入仓表发票税率id",
+            "reachable": true,
+            "name": "物料入仓表发票税率id"
+        },
+        "matInwarehouseIsBanned": {
+            "meaning": "物料入仓表是否被禁用",
+            "reachable": true,
+            "name": "物料入仓表是否被禁用"
+        },
+        "matInwarehouseIsDeleted": {
+            "meaning": "物料入仓表是否被删除",
+            "reachable": true,
+            "name": "物料入仓表是否被删除"
+        },
+        "matInwarehouseIsLeaf": {
+            "meaning": "物料入仓表是否叶子节点",
+            "reachable": true,
+            "name": "物料入仓表是否叶子节点"
+        },
+        "matInwarehouseIsMainFlow": {
+            "meaning": "物料入仓表是否是主流程",
+            "reachable": true,
+            "name": "物料入仓表是否是主流程"
+        },
+        "matInwarehouseIsManualModificationDate": {
+            "meaning": "物料入仓表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料入仓表是否手动修改计划生产时间"
+        },
+        "matInwarehouseIsolation": {
+            "meaning": "物料入仓表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料入仓表智能节点数据隔离标识"
+        },
+        "matInwarehouseJsScript": {
+            "meaning": "物料入仓表js脚本",
+            "reachable": true,
+            "name": "物料入仓表js脚本"
+        },
+        "matInwarehouseMaterialId": {
+            "meaning": "物料入仓表物料id",
+            "reachable": true,
+            "name": "物料入仓表物料id"
+        },
+        "matInwarehouseName": {
+            "meaning": "物料入仓表智能节点名",
+            "reachable": true,
+            "name": "物料入仓表智能节点名"
+        },
+        "matInwarehouseNameCodeSearch": {
+            "meaning": "物料入仓表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料入仓表name、user_code模糊搜索"
+        },
+        "matInwarehouseNumberExtra1": {
+            "meaning": "物料入仓表扩展数量1",
+            "reachable": true,
+            "name": "物料入仓表扩展数量1"
+        },
+        "matInwarehouseNumberExtra2": {
+            "meaning": "物料入仓表扩展数量2",
+            "reachable": true,
+            "name": "物料入仓表扩展数量2"
+        },
+        "matInwarehouseNumberExtra3": {
+            "meaning": "物料入仓表扩展数量3",
+            "reachable": true,
+            "name": "物料入仓表扩展数量3"
+        },
+        "matInwarehouseNumberExtra4": {
+            "meaning": "物料入仓表扩展数量4",
+            "reachable": true,
+            "name": "物料入仓表扩展数量4"
+        },
+        "matInwarehouseNumberExtra5": {
+            "meaning": "物料入仓表扩展数量5",
+            "reachable": true,
+            "name": "物料入仓表扩展数量5"
+        },
+        "matInwarehouseParentId": {
+            "meaning": "物料入仓表父节点ID",
+            "reachable": true,
+            "name": "物料入仓表父节点ID"
+        },
+        "matInwarehousePlannedOutputQuantity": {
+            "meaning": "物料入仓表计划产出数量",
+            "reachable": true,
+            "name": "物料入仓表计划产出数量"
+        },
+        "matInwarehousePlannedTimeRequired": {
+            "meaning": "物料入仓表计划需时(小时)",
+            "reachable": true,
+            "name": "物料入仓表计划需时"
+        },
+        "matInwarehousePrintTimes": {
+            "meaning": "物料入仓表打印次数",
+            "reachable": true,
+            "name": "物料入仓表打印次数"
+        },
+        "matInwarehousePriority": {
+            "meaning": "物料入仓表优先级",
+            "reachable": true,
+            "name": "物料入仓表优先级"
+        },
+        "matInwarehouseProcessInstanceId": {
+            "meaning": "物料入仓表流程实例ID",
+            "reachable": true,
+            "name": "物料入仓表流程实例ID"
+        },
+        "matInwarehouseProductionProcessesTypeId": {
+            "meaning": "物料入仓表工序类型ID",
+            "reachable": true,
+            "name": "物料入仓表工序类型ID"
+        },
+        "matInwarehouseProductionShiftId": {
+            "meaning": "物料入仓表生产班次ID",
+            "reachable": true,
+            "name": "物料入仓表生产班次ID"
+        },
+        "matInwarehouseQuantity": {
+            "meaning": "物料入仓表任务数量",
+            "reachable": true,
+            "name": "物料入仓表任务数量"
+        },
+        "matInwarehouseReceiptDate": {
+            "meaning": "物料入仓表单据日期",
+            "reachable": true,
+            "name": "物料入仓表单据日期"
+        },
+        "matInwarehouseReceiptType": {
+            "meaning": "物料入仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料入仓表单据类型"
+        },
+        "matInwarehouseRelatedTasksId": {
+            "meaning": "物料入仓表关联任务id",
+            "reachable": true,
+            "name": "物料入仓表关联任务id"
+        },
+        "matInwarehouseSerialNumber": {
+            "meaning": "物料入仓表顺序号",
+            "reachable": true,
+            "name": "物料入仓表顺序号"
+        },
+        "matInwarehouseSource": {
+            "meaning": "物料入仓表源",
+            "reachable": true,
+            "name": "物料入仓表源"
+        },
+        "matInwarehouseSourceType": {
+            "meaning": "物料入仓表来源类型",
+            "reachable": true,
+            "name": "物料入仓表来源类型"
+        },
+        "matInwarehouseState": {
+            "meaning": "物料入仓表通用状态",
+            "reachable": true,
+            "name": "物料入仓表通用状态"
+        },
+        "matInwarehouseSystemCode": {
+            "meaning": "物料入仓表系统编码",
+            "reachable": true,
+            "name": "物料入仓表系统编码"
+        },
+        "matInwarehouseTarget": {
+            "meaning": "物料入仓表目标",
+            "reachable": true,
+            "name": "物料入仓表目标"
+        },
+        "matInwarehouseTaskNodeName": {
+            "meaning": "物料入仓表任务节点名称",
+            "reachable": true,
+            "name": "物料入仓表任务节点名称"
+        },
+        "matInwarehouseTenantId": {
+            "meaning": "物料入仓表租户id",
+            "reachable": true,
+            "name": "物料入仓表租户id"
+        },
+        "matInwarehouseThirdPartyClass": {
+            "meaning": "物料入仓表第三方分类",
+            "reachable": true,
+            "name": "物料入仓表第三方分类"
+        },
+        "matInwarehouseThirdPartyId": {
+            "meaning": "物料入仓表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料入仓表第三方系统中的唯一ID"
+        },
+        "matInwarehouseThirdPartyName": {
+            "meaning": "物料入仓表第三方名称",
+            "reachable": true,
+            "name": "物料入仓表第三方名称"
+        },
+        "matInwarehouseToAuditDate": {
+            "meaning": "matInwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToBeginTime": {
+            "meaning": "matInwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToCreateTime": {
+            "meaning": "matInwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDateExtra1": {
+            "meaning": "matInwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDateExtra2": {
+            "meaning": "matInwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDateExtra3": {
+            "meaning": "matInwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDateExtra4": {
+            "meaning": "matInwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDateExtra5": {
+            "meaning": "matInwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToDeliveryDate": {
+            "meaning": "matInwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToEndTime": {
+            "meaning": "matInwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToReceiptDate": {
+            "meaning": "matInwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseToUpdateTime": {
+            "meaning": "matInwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matInwarehouseUnitCode": {
+            "meaning": "物料入仓表单位id",
+            "reachable": true,
+            "name": "物料入仓表单位id"
+        },
+        "matInwarehouseUpdateTime": {
+            "meaning": "物料入仓表更新时间",
+            "reachable": true,
+            "name": "物料入仓表更新时间"
+        },
+        "matInwarehouseUpdater": {
+            "meaning": "物料入仓表更新人",
+            "reachable": true,
+            "name": "物料入仓表更新人"
+        },
+        "matInwarehouseUpdaterId": {
+            "meaning": "物料入仓表更新人ID",
+            "reachable": true,
+            "name": "物料入仓表更新人ID"
+        },
+        "matInwarehouseUserCode": {
+            "meaning": "物料入仓表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料入仓表智能节点的唯一编码"
+        },
+        "matInwarehouseVarExtra1": {
+            "meaning": "物料入仓表扩展1",
+            "reachable": true,
+            "name": "物料入仓表扩展1"
+        },
+        "matInwarehouseVarExtra2": {
+            "meaning": "物料入仓表扩展2",
+            "reachable": true,
+            "name": "物料入仓表扩展2"
+        },
+        "matInwarehouseVarExtra3": {
+            "meaning": "物料入仓表扩展3",
+            "reachable": true,
+            "name": "物料入仓表扩展3"
+        },
+        "matInwarehouseVarExtra4": {
+            "meaning": "物料入仓表扩展4",
+            "reachable": true,
+            "name": "物料入仓表扩展4"
+        },
+        "matInwarehouseVarExtra5": {
+            "meaning": "物料入仓表扩展5",
+            "reachable": true,
+            "name": "物料入仓表扩展5"
+        },
+        "matInwarehouseVersion": {
+            "meaning": "物料入仓表版本号",
+            "reachable": true,
+            "name": "物料入仓表版本号"
+        }
+    }
+}

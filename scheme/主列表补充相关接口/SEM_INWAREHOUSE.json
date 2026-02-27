@@ -1,0 +1,596 @@
+{
+    "api_name": "/sem-inwarehouse/findList",
+    "table_name": "半成品入仓表",
+    "request": {
+        "semInwarehouseClazz": "SEM_INWAREHOUSE"
+    },
+    "mainTabClazz": "SEM_INWAREHOUSE",
+    "response": {
+        "semInwarehouseActualTimeRequired": {
+            "meaning": "半成品入仓表实际需时(小时)",
+            "reachable": true,
+            "name": "半成品入仓表实际需时"
+        },
+        "semInwarehouseAdjustmentTimeRequired": {
+            "meaning": "半成品入仓表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "半成品入仓表调整需时"
+        },
+        "semInwarehouseApplicationId": {
+            "meaning": "半成品入仓表应用ID",
+            "reachable": true,
+            "name": "半成品入仓表应用ID"
+        },
+        "semInwarehouseAuditDate": {
+            "meaning": "半成品入仓表审核时间",
+            "reachable": true,
+            "name": "半成品入仓表审核时间"
+        },
+        "semInwarehouseAuditStatus": {
+            "meaning": "半成品入仓表审核状态",
+            "reachable": true,
+            "name": "半成品入仓表审核状态"
+        },
+        "semInwarehouseAvailableScheduleId": {
+            "meaning": "半成品入仓表可用日程id",
+            "reachable": true,
+            "name": "半成品入仓表可用日程id"
+        },
+        "semInwarehouseBeginTime": {
+            "meaning": "半成品入仓表开始时间",
+            "reachable": true,
+            "name": "半成品入仓表开始时间"
+        },
+        "semInwarehouseBizVersion": {
+            "meaning": "半成品入仓表业务自定义版本号",
+            "reachable": true,
+            "name": "半成品入仓表业务自定义版本号"
+        },
+        "semInwarehouseBriefName": {
+            "meaning": "半成品入仓表简称",
+            "reachable": true,
+            "name": "半成品入仓表简称"
+        },
+        "semInwarehouseBusDivisId": {
+            "meaning": "半成品入仓表事业部id",
+            "reachable": true,
+            "name": "半成品入仓表事业部id"
+        },
+        "semInwarehouseClazz": {
+            "meaning": "半成品入仓表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "半成品入仓表子类"
+        },
+        "semInwarehouseClosedReason": {
+            "meaning": "半成品入仓表结案原因",
+            "reachable": true,
+            "name": "半成品入仓表结案原因"
+        },
+        "semInwarehouseClosedStatus": {
+            "meaning": "半成品入仓表结案状态",
+            "reachable": true,
+            "name": "半成品入仓表结案状态"
+        },
+        "semInwarehouseComment": {
+            "meaning": "半成品入仓表评论",
+            "reachable": true,
+            "name": "半成品入仓表评论"
+        },
+        "semInwarehouseCompleteQuantity": {
+            "meaning": "半成品入仓表完成数量",
+            "reachable": true,
+            "name": "半成品入仓表完成数量"
+        },
+        "semInwarehouseCompleteStatus": {
+            "meaning": "半成品入仓表完成状态",
+            "reachable": true,
+            "name": "半成品入仓表完成状态"
+        },
+        "semInwarehouseCreateTime": {
+            "meaning": "半成品入仓表创建时间",
+            "reachable": true,
+            "name": "半成品入仓表创建时间"
+        },
+        "semInwarehouseCreator": {
+            "meaning": "半成品入仓表创建人",
+            "reachable": true,
+            "name": "半成品入仓表创建人"
+        },
+        "semInwarehouseCreatorId": {
+            "meaning": "半成品入仓表创建人ID",
+            "reachable": true,
+            "name": "半成品入仓表创建人ID"
+        },
+        "semInwarehouseDateExtra1": {
+            "meaning": "半成品入仓表扩展时间1",
+            "reachable": true,
+            "name": "半成品入仓表扩展时间1"
+        },
+        "semInwarehouseDateExtra2": {
+            "meaning": "半成品入仓表扩展时间2",
+            "reachable": true,
+            "name": "半成品入仓表扩展时间2"
+        },
+        "semInwarehouseDateExtra3": {
+            "meaning": "半成品入仓表扩展时间3",
+            "reachable": true,
+            "name": "半成品入仓表扩展时间3"
+        },
+        "semInwarehouseDateExtra4": {
+            "meaning": "半成品入仓表扩展时间4",
+            "reachable": true,
+            "name": "半成品入仓表扩展时间4"
+        },
+        "semInwarehouseDateExtra5": {
+            "meaning": "半成品入仓表扩展时间5",
+            "reachable": true,
+            "name": "半成品入仓表扩展时间5"
+        },
+        "semInwarehouseDefaultType": {
+            "meaning": "半成品入仓表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "半成品入仓表智能节点主类型"
+        },
+        "semInwarehouseDeliveryDate": {
+            "meaning": "半成品入仓表交货日期",
+            "reachable": true,
+            "name": "半成品入仓表交货日期"
+        },
+        "semInwarehouseDescription": {
+            "meaning": "半成品入仓表描述",
+            "reachable": true,
+            "name": "半成品入仓表描述"
+        },
+        "semInwarehouseEndTime": {
+            "meaning": "半成品入仓表结束时间",
+            "reachable": true,
+            "name": "半成品入仓表结束时间"
+        },
+        "semInwarehouseEndTimeRequired": {
+            "meaning": "半成品入仓表最后需时(小时)",
+            "reachable": true,
+            "name": "半成品入仓表最后需时"
+        },
+        "semInwarehouseEngName": {
+            "meaning": "半成品入仓表英文名称",
+            "reachable": true,
+            "name": "半成品入仓表英文名称"
+        },
+        "semInwarehouseEquipmentId": {
+            "meaning": "半成品入仓表设备id",
+            "reachable": true,
+            "name": "半成品入仓表设备id"
+        },
+        "semInwarehouseExchangeRateId": {
+            "meaning": "半成品入仓表币种汇率id",
+            "reachable": true,
+            "name": "半成品入仓表币种汇率id"
+        },
+        "semInwarehouseExtension": {
+            "meaning": "半成品入仓表扩展数据",
+            "reachable": true,
+            "name": "半成品入仓表扩展数据"
+        },
+        "semInwarehouseExternalState": {
+            "meaning": "半成品入仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "半成品入仓表上流程状态位"
+        },
+        "semInwarehouseFilterClazz": {
+            "meaning": "半成品入仓表冗余字段用于筛选",
+            "reachable": false,
+            "name": "半成品入仓表冗余字段用于筛选"
+        },
+        "semInwarehouseFlags": {
+            "meaning": "半成品入仓表63位标志位",
+            "reachable": true,
+            "name": "半成品入仓表63位标志位"
+        },
+        "semInwarehouseFromAuditDate": {
+            "meaning": "semInwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromBeginTime": {
+            "meaning": "semInwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromCreateTime": {
+            "meaning": "semInwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDateExtra1": {
+            "meaning": "semInwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDateExtra2": {
+            "meaning": "semInwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDateExtra3": {
+            "meaning": "semInwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDateExtra4": {
+            "meaning": "semInwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDateExtra5": {
+            "meaning": "semInwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromDeliveryDate": {
+            "meaning": "semInwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromEndTime": {
+            "meaning": "semInwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromReceiptDate": {
+            "meaning": "semInwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFromUpdateTime": {
+            "meaning": "semInwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseFscType": {
+            "meaning": "半成品入仓表FSC声明",
+            "reachable": true,
+            "name": "半成品入仓表FSC声明"
+        },
+        "semInwarehouseGenerativePeople": {
+            "meaning": "半成品入仓表下发人",
+            "reachable": true,
+            "name": "半成品入仓表下发人"
+        },
+        "semInwarehouseGenerativeState": {
+            "meaning": "半成品入仓表下发状态",
+            "reachable": true,
+            "name": "半成品入仓表下发状态"
+        },
+        "semInwarehouseGroovyScript": {
+            "meaning": "半成品入仓表groovy脚本",
+            "reachable": true,
+            "name": "半成品入仓表groovy脚本"
+        },
+        "semInwarehouseGropeCode": {
+            "meaning": "半成品入仓表搜索码",
+            "reachable": true,
+            "name": "半成品入仓表搜索码"
+        },
+        "semInwarehouseId": {
+            "meaning": "半成品入仓表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "半成品入仓表PK"
+        },
+        "semInwarehouseInUsed": {
+            "meaning": "半成品入仓表是否被使用",
+            "reachable": true,
+            "name": "半成品入仓表是否被使用"
+        },
+        "semInwarehouseInvTypeTaxRateId": {
+            "meaning": "半成品入仓表发票税率id",
+            "reachable": true,
+            "name": "半成品入仓表发票税率id"
+        },
+        "semInwarehouseIsBanned": {
+            "meaning": "半成品入仓表是否被禁用",
+            "reachable": true,
+            "name": "半成品入仓表是否被禁用"
+        },
+        "semInwarehouseIsDeleted": {
+            "meaning": "半成品入仓表是否被删除",
+            "reachable": true,
+            "name": "半成品入仓表是否被删除"
+        },
+        "semInwarehouseIsLeaf": {
+            "meaning": "半成品入仓表是否叶子节点",
+            "reachable": true,
+            "name": "半成品入仓表是否叶子节点"
+        },
+        "semInwarehouseIsMainFlow": {
+            "meaning": "半成品入仓表是否是主流程",
+            "reachable": true,
+            "name": "半成品入仓表是否是主流程"
+        },
+        "semInwarehouseIsManualModificationDate": {
+            "meaning": "半成品入仓表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "半成品入仓表是否手动修改计划生产时间"
+        },
+        "semInwarehouseIsolation": {
+            "meaning": "半成品入仓表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "半成品入仓表智能节点数据隔离标识"
+        },
+        "semInwarehouseJsScript": {
+            "meaning": "半成品入仓表js脚本",
+            "reachable": true,
+            "name": "半成品入仓表js脚本"
+        },
+        "semInwarehouseMaterialId": {
+            "meaning": "半成品入仓表物料id",
+            "reachable": true,
+            "name": "半成品入仓表物料id"
+        },
+        "semInwarehouseName": {
+            "meaning": "半成品入仓表智能节点名",
+            "reachable": true,
+            "name": "半成品入仓表智能节点名"
+        },
+        "semInwarehouseNameCodeSearch": {
+            "meaning": "半成品入仓表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "半成品入仓表name、user_code模糊搜索"
+        },
+        "semInwarehouseNumberExtra1": {
+            "meaning": "半成品入仓表扩展数量1",
+            "reachable": true,
+            "name": "半成品入仓表扩展数量1"
+        },
+        "semInwarehouseNumberExtra2": {
+            "meaning": "半成品入仓表扩展数量2",
+            "reachable": true,
+            "name": "半成品入仓表扩展数量2"
+        },
+        "semInwarehouseNumberExtra3": {
+            "meaning": "半成品入仓表扩展数量3",
+            "reachable": true,
+            "name": "半成品入仓表扩展数量3"
+        },
+        "semInwarehouseNumberExtra4": {
+            "meaning": "半成品入仓表扩展数量4",
+            "reachable": true,
+            "name": "半成品入仓表扩展数量4"
+        },
+        "semInwarehouseNumberExtra5": {
+            "meaning": "半成品入仓表扩展数量5",
+            "reachable": true,
+            "name": "半成品入仓表扩展数量5"
+        },
+        "semInwarehouseParentId": {
+            "meaning": "半成品入仓表父节点ID",
+            "reachable": true,
+            "name": "半成品入仓表父节点ID"
+        },
+        "semInwarehousePlannedOutputQuantity": {
+            "meaning": "半成品入仓表计划产出数量",
+            "reachable": true,
+            "name": "半成品入仓表计划产出数量"
+        },
+        "semInwarehousePlannedTimeRequired": {
+            "meaning": "半成品入仓表计划需时(小时)",
+            "reachable": true,
+            "name": "半成品入仓表计划需时"
+        },
+        "semInwarehousePrintTimes": {
+            "meaning": "半成品入仓表打印次数",
+            "reachable": true,
+            "name": "半成品入仓表打印次数"
+        },
+        "semInwarehousePriority": {
+            "meaning": "半成品入仓表优先级",
+            "reachable": true,
+            "name": "半成品入仓表优先级"
+        },
+        "semInwarehouseProcessInstanceId": {
+            "meaning": "半成品入仓表流程实例ID",
+            "reachable": true,
+            "name": "半成品入仓表流程实例ID"
+        },
+        "semInwarehouseProductionProcessesTypeId": {
+            "meaning": "半成品入仓表工序类型ID",
+            "reachable": true,
+            "name": "半成品入仓表工序类型ID"
+        },
+        "semInwarehouseProductionShiftId": {
+            "meaning": "半成品入仓表生产班次ID",
+            "reachable": true,
+            "name": "半成品入仓表生产班次ID"
+        },
+        "semInwarehouseQuantity": {
+            "meaning": "半成品入仓表任务数量",
+            "reachable": true,
+            "name": "半成品入仓表任务数量"
+        },
+        "semInwarehouseReceiptDate": {
+            "meaning": "半成品入仓表单据日期",
+            "reachable": true,
+            "name": "半成品入仓表单据日期"
+        },
+        "semInwarehouseReceiptType": {
+            "meaning": "半成品入仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "半成品入仓表单据类型"
+        },
+        "semInwarehouseRelatedTasksId": {
+            "meaning": "半成品入仓表关联任务id",
+            "reachable": true,
+            "name": "半成品入仓表关联任务id"
+        },
+        "semInwarehouseSerialNumber": {
+            "meaning": "半成品入仓表顺序号",
+            "reachable": true,
+            "name": "半成品入仓表顺序号"
+        },
+        "semInwarehouseSource": {
+            "meaning": "半成品入仓表源",
+            "reachable": true,
+            "name": "半成品入仓表源"
+        },
+        "semInwarehouseSourceType": {
+            "meaning": "半成品入仓表来源类型",
+            "reachable": true,
+            "name": "半成品入仓表来源类型"
+        },
+        "semInwarehouseState": {
+            "meaning": "半成品入仓表通用状态",
+            "reachable": true,
+            "name": "半成品入仓表通用状态"
+        },
+        "semInwarehouseSystemCode": {
+            "meaning": "半成品入仓表系统编码",
+            "reachable": true,
+            "name": "半成品入仓表系统编码"
+        },
+        "semInwarehouseTarget": {
+            "meaning": "半成品入仓表目标",
+            "reachable": true,
+            "name": "半成品入仓表目标"
+        },
+        "semInwarehouseTaskNodeName": {
+            "meaning": "半成品入仓表任务节点名称",
+            "reachable": true,
+            "name": "半成品入仓表任务节点名称"
+        },
+        "semInwarehouseTenantId": {
+            "meaning": "半成品入仓表租户id",
+            "reachable": true,
+            "name": "半成品入仓表租户id"
+        },
+        "semInwarehouseThirdPartyClass": {
+            "meaning": "半成品入仓表第三方分类",
+            "reachable": true,
+            "name": "半成品入仓表第三方分类"
+        },
+        "semInwarehouseThirdPartyId": {
+            "meaning": "半成品入仓表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "半成品入仓表第三方系统中的唯一ID"
+        },
+        "semInwarehouseThirdPartyName": {
+            "meaning": "半成品入仓表第三方名称",
+            "reachable": true,
+            "name": "半成品入仓表第三方名称"
+        },
+        "semInwarehouseToAuditDate": {
+            "meaning": "semInwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToBeginTime": {
+            "meaning": "semInwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToCreateTime": {
+            "meaning": "semInwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDateExtra1": {
+            "meaning": "semInwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDateExtra2": {
+            "meaning": "semInwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDateExtra3": {
+            "meaning": "semInwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDateExtra4": {
+            "meaning": "semInwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDateExtra5": {
+            "meaning": "semInwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToDeliveryDate": {
+            "meaning": "semInwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToEndTime": {
+            "meaning": "semInwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToReceiptDate": {
+            "meaning": "semInwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseToUpdateTime": {
+            "meaning": "semInwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semInwarehouseUnitCode": {
+            "meaning": "半成品入仓表单位id",
+            "reachable": true,
+            "name": "半成品入仓表单位id"
+        },
+        "semInwarehouseUpdateTime": {
+            "meaning": "半成品入仓表更新时间",
+            "reachable": true,
+            "name": "半成品入仓表更新时间"
+        },
+        "semInwarehouseUpdater": {
+            "meaning": "半成品入仓表更新人",
+            "reachable": true,
+            "name": "半成品入仓表更新人"
+        },
+        "semInwarehouseUpdaterId": {
+            "meaning": "半成品入仓表更新人ID",
+            "reachable": true,
+            "name": "半成品入仓表更新人ID"
+        },
+        "semInwarehouseUserCode": {
+            "meaning": "半成品入仓表智能节点的唯一编码",
+            "reachable": true,
+            "name": "半成品入仓表智能节点的唯一编码"
+        },
+        "semInwarehouseVarExtra1": {
+            "meaning": "半成品入仓表扩展1",
+            "reachable": true,
+            "name": "半成品入仓表扩展1"
+        },
+        "semInwarehouseVarExtra2": {
+            "meaning": "半成品入仓表扩展2",
+            "reachable": true,
+            "name": "半成品入仓表扩展2"
+        },
+        "semInwarehouseVarExtra3": {
+            "meaning": "半成品入仓表扩展3",
+            "reachable": true,
+            "name": "半成品入仓表扩展3"
+        },
+        "semInwarehouseVarExtra4": {
+            "meaning": "半成品入仓表扩展4",
+            "reachable": true,
+            "name": "半成品入仓表扩展4"
+        },
+        "semInwarehouseVarExtra5": {
+            "meaning": "半成品入仓表扩展5",
+            "reachable": true,
+            "name": "半成品入仓表扩展5"
+        },
+        "semInwarehouseVersion": {
+            "meaning": "半成品入仓表版本号",
+            "reachable": true,
+            "name": "半成品入仓表版本号"
+        }
+    }
+}

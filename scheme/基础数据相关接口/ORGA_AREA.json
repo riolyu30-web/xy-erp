@@ -1,0 +1,401 @@
+{
+    "api_name": "/orga-area/findList",
+    "table_name": "物流区域设定",
+    "request": {
+        "orgaAreaClazz": "ORGA_AREA"
+    },
+    "mainTabClazz": "ORGA_AREA",
+    "response": {
+        "orgaAreaApplicationId": {
+            "meaning": "物流区域设定应用ID",
+            "reachable": false,
+            "name": "物流区域设定应用ID"
+        },
+        "orgaAreaAreaCost": {
+            "meaning": "物流区域设定区域费用",
+            "reachable": false,
+            "name": "物流区域设定区域费用"
+        },
+        "orgaAreaAreaId": {
+            "meaning": "物流区域设定区域id",
+            "reachable": false,
+            "name": "物流区域设定区域id"
+        },
+        "orgaAreaAuditDate": {
+            "meaning": "物流区域设定审核时间",
+            "reachable": false,
+            "name": "物流区域设定审核时间"
+        },
+        "orgaAreaAuditStatus": {
+            "meaning": "物流区域设定审核状态",
+            "reachable": false,
+            "name": "物流区域设定审核状态"
+        },
+        "orgaAreaBizVersion": {
+            "meaning": "物流区域设定业务自定义版本号",
+            "reachable": false,
+            "name": "物流区域设定业务自定义版本号"
+        },
+        "orgaAreaBriefName": {
+            "meaning": "物流区域设定简称",
+            "reachable": false,
+            "name": "物流区域设定简称"
+        },
+        "orgaAreaBusDivisId": {
+            "meaning": "物流区域设定事业部id",
+            "reachable": false,
+            "name": "物流区域设定事业部id"
+        },
+        "orgaAreaClazz": {
+            "meaning": "物流区域设定子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "物流区域设定子类"
+        },
+        "orgaAreaComment": {
+            "meaning": "物流区域设定评论",
+            "reachable": false,
+            "name": "物流区域设定评论"
+        },
+        "orgaAreaCreateTime": {
+            "meaning": "物流区域设定创建时间",
+            "reachable": false,
+            "name": "物流区域设定创建时间"
+        },
+        "orgaAreaCreator": {
+            "meaning": "物流区域设定创建人",
+            "reachable": false,
+            "name": "物流区域设定创建人"
+        },
+        "orgaAreaCreatorId": {
+            "meaning": "物流区域设定创建人ID",
+            "reachable": false,
+            "name": "物流区域设定创建人ID"
+        },
+        "orgaAreaDateExtra1": {
+            "meaning": "物流区域设定扩展时间1",
+            "reachable": false,
+            "name": "物流区域设定扩展时间1"
+        },
+        "orgaAreaDateExtra2": {
+            "meaning": "物流区域设定扩展时间2",
+            "reachable": false,
+            "name": "物流区域设定扩展时间2"
+        },
+        "orgaAreaDateExtra3": {
+            "meaning": "物流区域设定扩展时间3",
+            "reachable": false,
+            "name": "物流区域设定扩展时间3"
+        },
+        "orgaAreaDateExtra4": {
+            "meaning": "物流区域设定扩展时间4",
+            "reachable": false,
+            "name": "物流区域设定扩展时间4"
+        },
+        "orgaAreaDateExtra5": {
+            "meaning": "物流区域设定扩展时间5",
+            "reachable": false,
+            "name": "物流区域设定扩展时间5"
+        },
+        "orgaAreaDefaultType": {
+            "meaning": "物流区域设定智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "物流区域设定智能节点主类型"
+        },
+        "orgaAreaDescription": {
+            "meaning": "物流区域设定描述",
+            "reachable": false,
+            "name": "物流区域设定描述"
+        },
+        "orgaAreaEngName": {
+            "meaning": "物流区域设定英文名称",
+            "reachable": false,
+            "name": "物流区域设定英文名称"
+        },
+        "orgaAreaExtension": {
+            "meaning": "物流区域设定扩展数据",
+            "reachable": false,
+            "name": "物流区域设定扩展数据"
+        },
+        "orgaAreaExternalState": {
+            "meaning": "物流区域设定上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "物流区域设定上流程状态位"
+        },
+        "orgaAreaFlags": {
+            "meaning": "物流区域设定63位标志位",
+            "reachable": false,
+            "name": "物流区域设定63位标志位"
+        },
+        "orgaAreaFromAuditDate": {
+            "meaning": "orgaAreaFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromCreateTime": {
+            "meaning": "orgaAreaFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromDateExtra1": {
+            "meaning": "orgaAreaFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromDateExtra2": {
+            "meaning": "orgaAreaFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromDateExtra3": {
+            "meaning": "orgaAreaFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromDateExtra4": {
+            "meaning": "orgaAreaFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromDateExtra5": {
+            "meaning": "orgaAreaFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaFromUpdateTime": {
+            "meaning": "orgaAreaFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaGroovyScript": {
+            "meaning": "物流区域设定groovy脚本",
+            "reachable": false,
+            "name": "物流区域设定groovy脚本"
+        },
+        "orgaAreaGropeCode": {
+            "meaning": "物流区域设定搜索码",
+            "reachable": false,
+            "name": "物流区域设定搜索码"
+        },
+        "orgaAreaId": {
+            "meaning": "物流区域设定PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "物流区域设定PK"
+        },
+        "orgaAreaInUsed": {
+            "meaning": "物流区域设定是否被使用",
+            "reachable": false,
+            "name": "物流区域设定是否被使用"
+        },
+        "orgaAreaIsBanned": {
+            "meaning": "物流区域设定是否被禁用",
+            "reachable": false,
+            "name": "物流区域设定是否被禁用"
+        },
+        "orgaAreaIsDeleted": {
+            "meaning": "物流区域设定是否被删除",
+            "reachable": false,
+            "name": "物流区域设定是否被删除"
+        },
+        "orgaAreaIsMainFlow": {
+            "meaning": "物流区域设定是否是主流程",
+            "reachable": false,
+            "name": "物流区域设定是否是主流程"
+        },
+        "orgaAreaIsolation": {
+            "meaning": "物流区域设定智能节点数据隔离标识",
+            "reachable": false,
+            "name": "物流区域设定智能节点数据隔离标识"
+        },
+        "orgaAreaJsScript": {
+            "meaning": "物流区域设定js脚本",
+            "reachable": false,
+            "name": "物流区域设定js脚本"
+        },
+        "orgaAreaMileage": {
+            "meaning": "物流区域设定里程",
+            "reachable": false,
+            "name": "物流区域设定里程"
+        },
+        "orgaAreaName": {
+            "meaning": "物流区域设定智能节点名",
+            "reachable": false,
+            "name": "物流区域设定智能节点名"
+        },
+        "orgaAreaNameCodeSearch": {
+            "meaning": "物流区域设定name、user_code模糊搜索",
+            "reachable": false,
+            "name": "物流区域设定name、user_code模糊搜索"
+        },
+        "orgaAreaNumberExtra1": {
+            "meaning": "物流区域设定扩展数量1",
+            "reachable": false,
+            "name": "物流区域设定扩展数量1"
+        },
+        "orgaAreaNumberExtra2": {
+            "meaning": "物流区域设定扩展数量2",
+            "reachable": false,
+            "name": "物流区域设定扩展数量2"
+        },
+        "orgaAreaNumberExtra3": {
+            "meaning": "物流区域设定扩展数量3",
+            "reachable": false,
+            "name": "物流区域设定扩展数量3"
+        },
+        "orgaAreaNumberExtra4": {
+            "meaning": "物流区域设定扩展数量4",
+            "reachable": false,
+            "name": "物流区域设定扩展数量4"
+        },
+        "orgaAreaNumberExtra5": {
+            "meaning": "物流区域设定扩展数量5",
+            "reachable": false,
+            "name": "物流区域设定扩展数量5"
+        },
+        "orgaAreaOrganizationId": {
+            "meaning": "物流区域设定机构id",
+            "reachable": false,
+            "name": "物流区域设定机构id"
+        },
+        "orgaAreaParentId": {
+            "meaning": "物流区域设定父节点ID",
+            "reachable": false,
+            "name": "物流区域设定父节点ID"
+        },
+        "orgaAreaProcessInstanceId": {
+            "meaning": "物流区域设定流程实例ID",
+            "reachable": false,
+            "name": "物流区域设定流程实例ID"
+        },
+        "orgaAreaSerialNumber": {
+            "meaning": "物流区域设定顺序号",
+            "reachable": false,
+            "name": "物流区域设定顺序号"
+        },
+        "orgaAreaState": {
+            "meaning": "物流区域设定通用状态",
+            "reachable": false,
+            "name": "物流区域设定通用状态"
+        },
+        "orgaAreaSystemCode": {
+            "meaning": "物流区域设定系统编码",
+            "reachable": false,
+            "name": "物流区域设定系统编码"
+        },
+        "orgaAreaTaskNodeName": {
+            "meaning": "物流区域设定任务节点名称",
+            "reachable": false,
+            "name": "物流区域设定任务节点名称"
+        },
+        "orgaAreaTenantId": {
+            "meaning": "物流区域设定租户id",
+            "reachable": false,
+            "name": "物流区域设定租户id"
+        },
+        "orgaAreaThirdPartyClass": {
+            "meaning": "物流区域设定第三方分类",
+            "reachable": false,
+            "name": "物流区域设定第三方分类"
+        },
+        "orgaAreaThirdPartyId": {
+            "meaning": "物流区域设定第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "物流区域设定第三方系统中的唯一ID"
+        },
+        "orgaAreaThirdPartyName": {
+            "meaning": "物流区域设定第三方名称",
+            "reachable": false,
+            "name": "物流区域设定第三方名称"
+        },
+        "orgaAreaToAuditDate": {
+            "meaning": "orgaAreaToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToCreateTime": {
+            "meaning": "orgaAreaToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToDateExtra1": {
+            "meaning": "orgaAreaToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToDateExtra2": {
+            "meaning": "orgaAreaToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToDateExtra3": {
+            "meaning": "orgaAreaToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToDateExtra4": {
+            "meaning": "orgaAreaToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToDateExtra5": {
+            "meaning": "orgaAreaToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaToUpdateTime": {
+            "meaning": "orgaAreaToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orgaAreaUpdateTime": {
+            "meaning": "物流区域设定更新时间",
+            "reachable": false,
+            "name": "物流区域设定更新时间"
+        },
+        "orgaAreaUpdater": {
+            "meaning": "物流区域设定更新人",
+            "reachable": false,
+            "name": "物流区域设定更新人"
+        },
+        "orgaAreaUpdaterId": {
+            "meaning": "物流区域设定更新人ID",
+            "reachable": false,
+            "name": "物流区域设定更新人ID"
+        },
+        "orgaAreaUserCode": {
+            "meaning": "物流区域设定智能节点的唯一编码",
+            "reachable": false,
+            "name": "物流区域设定智能节点的唯一编码"
+        },
+        "orgaAreaVarExtra1": {
+            "meaning": "物流区域设定扩展1",
+            "reachable": false,
+            "name": "物流区域设定扩展1"
+        },
+        "orgaAreaVarExtra2": {
+            "meaning": "物流区域设定扩展2",
+            "reachable": false,
+            "name": "物流区域设定扩展2"
+        },
+        "orgaAreaVarExtra3": {
+            "meaning": "物流区域设定扩展3",
+            "reachable": false,
+            "name": "物流区域设定扩展3"
+        },
+        "orgaAreaVarExtra4": {
+            "meaning": "物流区域设定扩展4",
+            "reachable": false,
+            "name": "物流区域设定扩展4"
+        },
+        "orgaAreaVarExtra5": {
+            "meaning": "物流区域设定扩展5",
+            "reachable": false,
+            "name": "物流区域设定扩展5"
+        },
+        "orgaAreaVersion": {
+            "meaning": "物流区域设定版本号",
+            "reachable": false,
+            "name": "物流区域设定版本号"
+        }
+    }
+}

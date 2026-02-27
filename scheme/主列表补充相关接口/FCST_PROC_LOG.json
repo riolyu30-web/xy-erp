@@ -1,0 +1,681 @@
+{
+    "api_name": "/fcst-proc-log/findList",
+    "table_name": "采购预测记录表，用于记录采购预测的相关信息",
+    "request": {
+        "fcstProcLogClazz": "FCST_PROC_LOG"
+    },
+    "mainTabClazz": "FCST_PROC_LOG",
+    "response": {
+        "fcstProcLogActualTimeRequired": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息实际需时(小时)",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息实际需时"
+        },
+        "fcstProcLogAdjustmentTimeRequired": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息调整需时"
+        },
+        "fcstProcLogApplicationId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息应用ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息应用ID"
+        },
+        "fcstProcLogAuditDate": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息审核时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息审核时间"
+        },
+        "fcstProcLogAuditStatus": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息审核状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息审核状态"
+        },
+        "fcstProcLogAvailableScheduleId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息可用日程id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息可用日程id"
+        },
+        "fcstProcLogBeginTime": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息开始时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息开始时间"
+        },
+        "fcstProcLogBizVersion": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息业务自定义版本号",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息业务自定义版本号"
+        },
+        "fcstProcLogBriefName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息简称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息简称"
+        },
+        "fcstProcLogBusDivisId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息事业部id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息事业部id"
+        },
+        "fcstProcLogClazz": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息子类"
+        },
+        "fcstProcLogClosedReason": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息结案原因",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息结案原因"
+        },
+        "fcstProcLogClosedStatus": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息结案状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息结案状态"
+        },
+        "fcstProcLogComment": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息评论",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息评论"
+        },
+        "fcstProcLogCompleteQuantity": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息完成数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息完成数量"
+        },
+        "fcstProcLogCompleteStatus": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息完成状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息完成状态"
+        },
+        "fcstProcLogCplQty": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息已完成数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息已完成数量"
+        },
+        "fcstProcLogCreateTime": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息创建时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息创建时间"
+        },
+        "fcstProcLogCreator": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息创建人",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息创建人"
+        },
+        "fcstProcLogCreatorId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息创建人ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息创建人ID"
+        },
+        "fcstProcLogCurrInv": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息当前库存",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息当前库存"
+        },
+        "fcstProcLogDateExtra1": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展时间1",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展时间1"
+        },
+        "fcstProcLogDateExtra2": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展时间2",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展时间2"
+        },
+        "fcstProcLogDateExtra3": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展时间3",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展时间3"
+        },
+        "fcstProcLogDateExtra4": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展时间4",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展时间4"
+        },
+        "fcstProcLogDateExtra5": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展时间5",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展时间5"
+        },
+        "fcstProcLogDefaultType": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息智能节点主类型"
+        },
+        "fcstProcLogDeliveryDate": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息交货日期",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息交货日期"
+        },
+        "fcstProcLogDescription": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息描述",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息描述"
+        },
+        "fcstProcLogEndTime": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息结束时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息结束时间"
+        },
+        "fcstProcLogEndTimeRequired": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息最后需时(小时)",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息最后需时"
+        },
+        "fcstProcLogEngName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息英文名称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息英文名称"
+        },
+        "fcstProcLogEquipmentId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息设备id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息设备id"
+        },
+        "fcstProcLogExchangeRateId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息币种汇率id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息币种汇率id"
+        },
+        "fcstProcLogExtension": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数据",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数据"
+        },
+        "fcstProcLogExternalState": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息上流程状态位"
+        },
+        "fcstProcLogFilterClazz": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息冗余字段用于筛选",
+            "reachable": false,
+            "name": "采购预测记录表，用于记录采购预测的相关信息冗余字段用于筛选"
+        },
+        "fcstProcLogFlags": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息63位标志位",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息63位标志位"
+        },
+        "fcstProcLogFromAuditDate": {
+            "meaning": "fcstProcLogFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromBeginTime": {
+            "meaning": "fcstProcLogFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromCreateTime": {
+            "meaning": "fcstProcLogFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDateExtra1": {
+            "meaning": "fcstProcLogFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDateExtra2": {
+            "meaning": "fcstProcLogFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDateExtra3": {
+            "meaning": "fcstProcLogFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDateExtra4": {
+            "meaning": "fcstProcLogFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDateExtra5": {
+            "meaning": "fcstProcLogFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromDeliveryDate": {
+            "meaning": "fcstProcLogFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromEndTime": {
+            "meaning": "fcstProcLogFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromReceiptDate": {
+            "meaning": "fcstProcLogFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFromUpdateTime": {
+            "meaning": "fcstProcLogFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogFscType": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息FSC声明",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息FSC声明"
+        },
+        "fcstProcLogGapSum": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息缺口汇总",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息缺口汇总"
+        },
+        "fcstProcLogGenerativePeople": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息下发人",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息下发人"
+        },
+        "fcstProcLogGenerativeState": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息下发状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息下发状态"
+        },
+        "fcstProcLogGroovyScript": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息groovy脚本",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息groovy脚本"
+        },
+        "fcstProcLogGropeCode": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息搜索码",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息搜索码"
+        },
+        "fcstProcLogId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息主键，唯一标识每条采购预测记录",
+            "is_primary": true,
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息主键，唯一标识每条采购预测记录"
+        },
+        "fcstProcLogInProcQty": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息采购中数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息采购中数量"
+        },
+        "fcstProcLogInUsed": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否被使用",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否被使用"
+        },
+        "fcstProcLogInvTypeTaxRateId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息发票税率id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息发票税率id"
+        },
+        "fcstProcLogIsBanned": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否被禁用",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否被禁用"
+        },
+        "fcstProcLogIsDeleted": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否被删除",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否被删除"
+        },
+        "fcstProcLogIsLeaf": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否叶子节点",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否叶子节点"
+        },
+        "fcstProcLogIsMainFlow": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否是主流程",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否是主流程"
+        },
+        "fcstProcLogIsManualModificationDate": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息是否手动修改计划生产时间"
+        },
+        "fcstProcLogIsolation": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息智能节点数据隔离标识",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息智能节点数据隔离标识"
+        },
+        "fcstProcLogJsScript": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息js脚本",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息js脚本"
+        },
+        "fcstProcLogMatCat": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息物料类型",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息物料类型"
+        },
+        "fcstProcLogMatCode": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息物料编码",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息物料编码"
+        },
+        "fcstProcLogMatName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息物料名称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息物料名称"
+        },
+        "fcstProcLogMaterialId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息物料id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息物料id"
+        },
+        "fcstProcLogName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息智能节点名",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息智能节点名"
+        },
+        "fcstProcLogNameCodeSearch": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息name、user_code模糊搜索",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息name、user_code模糊搜索"
+        },
+        "fcstProcLogNumberExtra1": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数量1",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数量1"
+        },
+        "fcstProcLogNumberExtra2": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数量2",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数量2"
+        },
+        "fcstProcLogNumberExtra3": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数量3",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数量3"
+        },
+        "fcstProcLogNumberExtra4": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数量4",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数量4"
+        },
+        "fcstProcLogNumberExtra5": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展数量5",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展数量5"
+        },
+        "fcstProcLogParentId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息父节点ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息父节点ID"
+        },
+        "fcstProcLogPlannedOutputQuantity": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息计划产出数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息计划产出数量"
+        },
+        "fcstProcLogPlannedTimeRequired": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息计划需时(小时)",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息计划需时"
+        },
+        "fcstProcLogPoSumQty": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息PO总数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息PO总数量"
+        },
+        "fcstProcLogPrintTimes": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息打印次数",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息打印次数"
+        },
+        "fcstProcLogPriority": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息优先级",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息优先级"
+        },
+        "fcstProcLogProcCplQty": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息采购完成数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息采购完成数量"
+        },
+        "fcstProcLogProcCplStatus": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息采购完成状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息采购完成状态"
+        },
+        "fcstProcLogProcGap": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息采购缺口",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息采购缺口"
+        },
+        "fcstProcLogProcWay": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息采购方式",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息采购方式"
+        },
+        "fcstProcLogProcessInstanceId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息流程实例ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息流程实例ID"
+        },
+        "fcstProcLogProductionProcessesTypeId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息工序类型ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息工序类型ID"
+        },
+        "fcstProcLogProductionShiftId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息生产班次ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息生产班次ID"
+        },
+        "fcstProcLogQuantity": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息任务数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息任务数量"
+        },
+        "fcstProcLogRawMatCat": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息原材料类型",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息原材料类型"
+        },
+        "fcstProcLogReceiptDate": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息单据日期",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息单据日期"
+        },
+        "fcstProcLogReceiptType": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息单据类型"
+        },
+        "fcstProcLogRelatedTasksId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息关联任务id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息关联任务id"
+        },
+        "fcstProcLogSerialNumber": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息顺序号",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息顺序号"
+        },
+        "fcstProcLogSource": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息源",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息源"
+        },
+        "fcstProcLogSourceType": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息来源类型",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息来源类型"
+        },
+        "fcstProcLogState": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息通用状态",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息通用状态"
+        },
+        "fcstProcLogSystemCode": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息系统编码",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息系统编码"
+        },
+        "fcstProcLogTarget": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息目标",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息目标"
+        },
+        "fcstProcLogTaskNodeName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息任务节点名称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息任务节点名称"
+        },
+        "fcstProcLogTenantId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息租户ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息租户ID"
+        },
+        "fcstProcLogThirdPartyClass": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息第三方分类",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息第三方分类"
+        },
+        "fcstProcLogThirdPartyId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息第三方系统中的唯一ID"
+        },
+        "fcstProcLogThirdPartyName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息第三方名称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息第三方名称"
+        },
+        "fcstProcLogToAuditDate": {
+            "meaning": "fcstProcLogToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToBeginTime": {
+            "meaning": "fcstProcLogToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToCreateTime": {
+            "meaning": "fcstProcLogToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDateExtra1": {
+            "meaning": "fcstProcLogToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDateExtra2": {
+            "meaning": "fcstProcLogToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDateExtra3": {
+            "meaning": "fcstProcLogToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDateExtra4": {
+            "meaning": "fcstProcLogToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDateExtra5": {
+            "meaning": "fcstProcLogToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToDeliveryDate": {
+            "meaning": "fcstProcLogToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToEndTime": {
+            "meaning": "fcstProcLogToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToReceiptDate": {
+            "meaning": "fcstProcLogToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogToShipQty": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息待出库数量",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息待出库数量"
+        },
+        "fcstProcLogToUpdateTime": {
+            "meaning": "fcstProcLogToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstProcLogUnitCode": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息单位id",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息单位id"
+        },
+        "fcstProcLogUnitName": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息单位名称",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息单位名称"
+        },
+        "fcstProcLogUpdateTime": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息更新时间",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息更新时间"
+        },
+        "fcstProcLogUpdater": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息更新人",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息更新人"
+        },
+        "fcstProcLogUpdaterId": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息更新人ID",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息更新人ID"
+        },
+        "fcstProcLogUserCode": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息智能节点的唯一编码",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息智能节点的唯一编码"
+        },
+        "fcstProcLogVarExtra1": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展1",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展1"
+        },
+        "fcstProcLogVarExtra2": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展2",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展2"
+        },
+        "fcstProcLogVarExtra3": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展3",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展3"
+        },
+        "fcstProcLogVarExtra4": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展4",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展4"
+        },
+        "fcstProcLogVarExtra5": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息扩展5",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息扩展5"
+        },
+        "fcstProcLogVersion": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息版本号",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息版本号"
+        },
+        "fcstProcLogWeek": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息周期",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息周期"
+        },
+        "fcstProcLogYear": {
+            "meaning": "采购预测记录表，用于记录采购预测的相关信息年份",
+            "reachable": true,
+            "name": "采购预测记录表，用于记录采购预测的相关信息年份"
+        }
+    }
+}

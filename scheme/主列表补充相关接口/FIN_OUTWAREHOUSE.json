@@ -1,0 +1,596 @@
+{
+    "api_name": "/fin-outwarehouse/findList",
+    "table_name": "成品出仓表",
+    "request": {
+        "finOutwarehouseClazz": "FIN_OUTWAREHOUSE"
+    },
+    "mainTabClazz": "FIN_OUTWAREHOUSE",
+    "response": {
+        "finOutwarehouseActualTimeRequired": {
+            "meaning": "成品出仓表实际需时(小时)",
+            "reachable": true,
+            "name": "成品出仓表实际需时"
+        },
+        "finOutwarehouseAdjustmentTimeRequired": {
+            "meaning": "成品出仓表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品出仓表调整需时"
+        },
+        "finOutwarehouseApplicationId": {
+            "meaning": "成品出仓表应用ID",
+            "reachable": true,
+            "name": "成品出仓表应用ID"
+        },
+        "finOutwarehouseAuditDate": {
+            "meaning": "成品出仓表审核时间",
+            "reachable": true,
+            "name": "成品出仓表审核时间"
+        },
+        "finOutwarehouseAuditStatus": {
+            "meaning": "成品出仓表审核状态",
+            "reachable": true,
+            "name": "成品出仓表审核状态"
+        },
+        "finOutwarehouseAvailableScheduleId": {
+            "meaning": "成品出仓表可用日程id",
+            "reachable": true,
+            "name": "成品出仓表可用日程id"
+        },
+        "finOutwarehouseBeginTime": {
+            "meaning": "成品出仓表开始时间",
+            "reachable": true,
+            "name": "成品出仓表开始时间"
+        },
+        "finOutwarehouseBizVersion": {
+            "meaning": "成品出仓表业务自定义版本号",
+            "reachable": true,
+            "name": "成品出仓表业务自定义版本号"
+        },
+        "finOutwarehouseBriefName": {
+            "meaning": "成品出仓表简称",
+            "reachable": true,
+            "name": "成品出仓表简称"
+        },
+        "finOutwarehouseBusDivisId": {
+            "meaning": "成品出仓表事业部id",
+            "reachable": true,
+            "name": "成品出仓表事业部id"
+        },
+        "finOutwarehouseClazz": {
+            "meaning": "成品出仓表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品出仓表子类"
+        },
+        "finOutwarehouseClosedReason": {
+            "meaning": "成品出仓表结案原因",
+            "reachable": true,
+            "name": "成品出仓表结案原因"
+        },
+        "finOutwarehouseClosedStatus": {
+            "meaning": "成品出仓表结案状态",
+            "reachable": true,
+            "name": "成品出仓表结案状态"
+        },
+        "finOutwarehouseComment": {
+            "meaning": "成品出仓表评论",
+            "reachable": true,
+            "name": "成品出仓表评论"
+        },
+        "finOutwarehouseCompleteQuantity": {
+            "meaning": "成品出仓表完成数量",
+            "reachable": true,
+            "name": "成品出仓表完成数量"
+        },
+        "finOutwarehouseCompleteStatus": {
+            "meaning": "成品出仓表完成状态",
+            "reachable": true,
+            "name": "成品出仓表完成状态"
+        },
+        "finOutwarehouseCreateTime": {
+            "meaning": "成品出仓表创建时间",
+            "reachable": true,
+            "name": "成品出仓表创建时间"
+        },
+        "finOutwarehouseCreator": {
+            "meaning": "成品出仓表创建人",
+            "reachable": true,
+            "name": "成品出仓表创建人"
+        },
+        "finOutwarehouseCreatorId": {
+            "meaning": "成品出仓表创建人ID",
+            "reachable": true,
+            "name": "成品出仓表创建人ID"
+        },
+        "finOutwarehouseDateExtra1": {
+            "meaning": "成品出仓表扩展时间1",
+            "reachable": true,
+            "name": "成品出仓表扩展时间1"
+        },
+        "finOutwarehouseDateExtra2": {
+            "meaning": "成品出仓表扩展时间2",
+            "reachable": true,
+            "name": "成品出仓表扩展时间2"
+        },
+        "finOutwarehouseDateExtra3": {
+            "meaning": "成品出仓表扩展时间3",
+            "reachable": true,
+            "name": "成品出仓表扩展时间3"
+        },
+        "finOutwarehouseDateExtra4": {
+            "meaning": "成品出仓表扩展时间4",
+            "reachable": true,
+            "name": "成品出仓表扩展时间4"
+        },
+        "finOutwarehouseDateExtra5": {
+            "meaning": "成品出仓表扩展时间5",
+            "reachable": true,
+            "name": "成品出仓表扩展时间5"
+        },
+        "finOutwarehouseDefaultType": {
+            "meaning": "成品出仓表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品出仓表智能节点主类型"
+        },
+        "finOutwarehouseDeliveryDate": {
+            "meaning": "成品出仓表交货日期",
+            "reachable": true,
+            "name": "成品出仓表交货日期"
+        },
+        "finOutwarehouseDescription": {
+            "meaning": "成品出仓表描述",
+            "reachable": true,
+            "name": "成品出仓表描述"
+        },
+        "finOutwarehouseEndTime": {
+            "meaning": "成品出仓表结束时间",
+            "reachable": true,
+            "name": "成品出仓表结束时间"
+        },
+        "finOutwarehouseEndTimeRequired": {
+            "meaning": "成品出仓表最后需时(小时)",
+            "reachable": true,
+            "name": "成品出仓表最后需时"
+        },
+        "finOutwarehouseEngName": {
+            "meaning": "成品出仓表英文名称",
+            "reachable": true,
+            "name": "成品出仓表英文名称"
+        },
+        "finOutwarehouseEquipmentId": {
+            "meaning": "成品出仓表设备id",
+            "reachable": true,
+            "name": "成品出仓表设备id"
+        },
+        "finOutwarehouseExchangeRateId": {
+            "meaning": "成品出仓表币种汇率id",
+            "reachable": true,
+            "name": "成品出仓表币种汇率id"
+        },
+        "finOutwarehouseExtension": {
+            "meaning": "成品出仓表扩展数据",
+            "reachable": true,
+            "name": "成品出仓表扩展数据"
+        },
+        "finOutwarehouseExternalState": {
+            "meaning": "成品出仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品出仓表上流程状态位"
+        },
+        "finOutwarehouseFilterClazz": {
+            "meaning": "成品出仓表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品出仓表冗余字段用于筛选"
+        },
+        "finOutwarehouseFlags": {
+            "meaning": "成品出仓表63位标志位",
+            "reachable": true,
+            "name": "成品出仓表63位标志位"
+        },
+        "finOutwarehouseFromAuditDate": {
+            "meaning": "finOutwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromBeginTime": {
+            "meaning": "finOutwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromCreateTime": {
+            "meaning": "finOutwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDateExtra1": {
+            "meaning": "finOutwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDateExtra2": {
+            "meaning": "finOutwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDateExtra3": {
+            "meaning": "finOutwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDateExtra4": {
+            "meaning": "finOutwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDateExtra5": {
+            "meaning": "finOutwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromDeliveryDate": {
+            "meaning": "finOutwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromEndTime": {
+            "meaning": "finOutwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromReceiptDate": {
+            "meaning": "finOutwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFromUpdateTime": {
+            "meaning": "finOutwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseFscType": {
+            "meaning": "成品出仓表FSC声明",
+            "reachable": true,
+            "name": "成品出仓表FSC声明"
+        },
+        "finOutwarehouseGenerativePeople": {
+            "meaning": "成品出仓表下发人",
+            "reachable": true,
+            "name": "成品出仓表下发人"
+        },
+        "finOutwarehouseGenerativeState": {
+            "meaning": "成品出仓表下发状态",
+            "reachable": true,
+            "name": "成品出仓表下发状态"
+        },
+        "finOutwarehouseGroovyScript": {
+            "meaning": "成品出仓表groovy脚本",
+            "reachable": true,
+            "name": "成品出仓表groovy脚本"
+        },
+        "finOutwarehouseGropeCode": {
+            "meaning": "成品出仓表搜索码",
+            "reachable": true,
+            "name": "成品出仓表搜索码"
+        },
+        "finOutwarehouseId": {
+            "meaning": "成品出仓表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品出仓表PK"
+        },
+        "finOutwarehouseInUsed": {
+            "meaning": "成品出仓表是否被使用",
+            "reachable": true,
+            "name": "成品出仓表是否被使用"
+        },
+        "finOutwarehouseInvTypeTaxRateId": {
+            "meaning": "成品出仓表发票税率id",
+            "reachable": true,
+            "name": "成品出仓表发票税率id"
+        },
+        "finOutwarehouseIsBanned": {
+            "meaning": "成品出仓表是否被禁用",
+            "reachable": true,
+            "name": "成品出仓表是否被禁用"
+        },
+        "finOutwarehouseIsDeleted": {
+            "meaning": "成品出仓表是否被删除",
+            "reachable": true,
+            "name": "成品出仓表是否被删除"
+        },
+        "finOutwarehouseIsLeaf": {
+            "meaning": "成品出仓表是否叶子节点",
+            "reachable": true,
+            "name": "成品出仓表是否叶子节点"
+        },
+        "finOutwarehouseIsMainFlow": {
+            "meaning": "成品出仓表是否是主流程",
+            "reachable": true,
+            "name": "成品出仓表是否是主流程"
+        },
+        "finOutwarehouseIsManualModificationDate": {
+            "meaning": "成品出仓表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品出仓表是否手动修改计划生产时间"
+        },
+        "finOutwarehouseIsolation": {
+            "meaning": "成品出仓表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品出仓表智能节点数据隔离标识"
+        },
+        "finOutwarehouseJsScript": {
+            "meaning": "成品出仓表js脚本",
+            "reachable": true,
+            "name": "成品出仓表js脚本"
+        },
+        "finOutwarehouseMaterialId": {
+            "meaning": "成品出仓表物料id",
+            "reachable": true,
+            "name": "成品出仓表物料id"
+        },
+        "finOutwarehouseName": {
+            "meaning": "成品出仓表智能节点名",
+            "reachable": true,
+            "name": "成品出仓表智能节点名"
+        },
+        "finOutwarehouseNameCodeSearch": {
+            "meaning": "成品出仓表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品出仓表name、user_code模糊搜索"
+        },
+        "finOutwarehouseNumberExtra1": {
+            "meaning": "成品出仓表扩展数量1",
+            "reachable": true,
+            "name": "成品出仓表扩展数量1"
+        },
+        "finOutwarehouseNumberExtra2": {
+            "meaning": "成品出仓表扩展数量2",
+            "reachable": true,
+            "name": "成品出仓表扩展数量2"
+        },
+        "finOutwarehouseNumberExtra3": {
+            "meaning": "成品出仓表扩展数量3",
+            "reachable": true,
+            "name": "成品出仓表扩展数量3"
+        },
+        "finOutwarehouseNumberExtra4": {
+            "meaning": "成品出仓表扩展数量4",
+            "reachable": true,
+            "name": "成品出仓表扩展数量4"
+        },
+        "finOutwarehouseNumberExtra5": {
+            "meaning": "成品出仓表扩展数量5",
+            "reachable": true,
+            "name": "成品出仓表扩展数量5"
+        },
+        "finOutwarehouseParentId": {
+            "meaning": "成品出仓表父节点ID",
+            "reachable": true,
+            "name": "成品出仓表父节点ID"
+        },
+        "finOutwarehousePlannedOutputQuantity": {
+            "meaning": "成品出仓表计划产出数量",
+            "reachable": true,
+            "name": "成品出仓表计划产出数量"
+        },
+        "finOutwarehousePlannedTimeRequired": {
+            "meaning": "成品出仓表计划需时(小时)",
+            "reachable": true,
+            "name": "成品出仓表计划需时"
+        },
+        "finOutwarehousePrintTimes": {
+            "meaning": "成品出仓表打印次数",
+            "reachable": true,
+            "name": "成品出仓表打印次数"
+        },
+        "finOutwarehousePriority": {
+            "meaning": "成品出仓表优先级",
+            "reachable": true,
+            "name": "成品出仓表优先级"
+        },
+        "finOutwarehouseProcessInstanceId": {
+            "meaning": "成品出仓表流程实例ID",
+            "reachable": true,
+            "name": "成品出仓表流程实例ID"
+        },
+        "finOutwarehouseProductionProcessesTypeId": {
+            "meaning": "成品出仓表工序类型ID",
+            "reachable": true,
+            "name": "成品出仓表工序类型ID"
+        },
+        "finOutwarehouseProductionShiftId": {
+            "meaning": "成品出仓表生产班次ID",
+            "reachable": true,
+            "name": "成品出仓表生产班次ID"
+        },
+        "finOutwarehouseQuantity": {
+            "meaning": "成品出仓表任务数量",
+            "reachable": true,
+            "name": "成品出仓表任务数量"
+        },
+        "finOutwarehouseReceiptDate": {
+            "meaning": "成品出仓表单据日期",
+            "reachable": true,
+            "name": "成品出仓表单据日期"
+        },
+        "finOutwarehouseReceiptType": {
+            "meaning": "成品出仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品出仓表单据类型"
+        },
+        "finOutwarehouseRelatedTasksId": {
+            "meaning": "成品出仓表关联任务id",
+            "reachable": true,
+            "name": "成品出仓表关联任务id"
+        },
+        "finOutwarehouseSerialNumber": {
+            "meaning": "成品出仓表顺序号",
+            "reachable": true,
+            "name": "成品出仓表顺序号"
+        },
+        "finOutwarehouseSource": {
+            "meaning": "成品出仓表源",
+            "reachable": true,
+            "name": "成品出仓表源"
+        },
+        "finOutwarehouseSourceType": {
+            "meaning": "成品出仓表来源类型",
+            "reachable": true,
+            "name": "成品出仓表来源类型"
+        },
+        "finOutwarehouseState": {
+            "meaning": "成品出仓表通用状态",
+            "reachable": true,
+            "name": "成品出仓表通用状态"
+        },
+        "finOutwarehouseSystemCode": {
+            "meaning": "成品出仓表系统编码",
+            "reachable": true,
+            "name": "成品出仓表系统编码"
+        },
+        "finOutwarehouseTarget": {
+            "meaning": "成品出仓表目标",
+            "reachable": true,
+            "name": "成品出仓表目标"
+        },
+        "finOutwarehouseTaskNodeName": {
+            "meaning": "成品出仓表任务节点名称",
+            "reachable": true,
+            "name": "成品出仓表任务节点名称"
+        },
+        "finOutwarehouseTenantId": {
+            "meaning": "成品出仓表租户id",
+            "reachable": true,
+            "name": "成品出仓表租户id"
+        },
+        "finOutwarehouseThirdPartyClass": {
+            "meaning": "成品出仓表第三方分类",
+            "reachable": true,
+            "name": "成品出仓表第三方分类"
+        },
+        "finOutwarehouseThirdPartyId": {
+            "meaning": "成品出仓表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品出仓表第三方系统中的唯一ID"
+        },
+        "finOutwarehouseThirdPartyName": {
+            "meaning": "成品出仓表第三方名称",
+            "reachable": true,
+            "name": "成品出仓表第三方名称"
+        },
+        "finOutwarehouseToAuditDate": {
+            "meaning": "finOutwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToBeginTime": {
+            "meaning": "finOutwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToCreateTime": {
+            "meaning": "finOutwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDateExtra1": {
+            "meaning": "finOutwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDateExtra2": {
+            "meaning": "finOutwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDateExtra3": {
+            "meaning": "finOutwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDateExtra4": {
+            "meaning": "finOutwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDateExtra5": {
+            "meaning": "finOutwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToDeliveryDate": {
+            "meaning": "finOutwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToEndTime": {
+            "meaning": "finOutwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToReceiptDate": {
+            "meaning": "finOutwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseToUpdateTime": {
+            "meaning": "finOutwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutwarehouseUnitCode": {
+            "meaning": "成品出仓表单位id",
+            "reachable": true,
+            "name": "成品出仓表单位id"
+        },
+        "finOutwarehouseUpdateTime": {
+            "meaning": "成品出仓表更新时间",
+            "reachable": true,
+            "name": "成品出仓表更新时间"
+        },
+        "finOutwarehouseUpdater": {
+            "meaning": "成品出仓表更新人",
+            "reachable": true,
+            "name": "成品出仓表更新人"
+        },
+        "finOutwarehouseUpdaterId": {
+            "meaning": "成品出仓表更新人ID",
+            "reachable": true,
+            "name": "成品出仓表更新人ID"
+        },
+        "finOutwarehouseUserCode": {
+            "meaning": "成品出仓表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品出仓表智能节点的唯一编码"
+        },
+        "finOutwarehouseVarExtra1": {
+            "meaning": "成品出仓表扩展1",
+            "reachable": true,
+            "name": "成品出仓表扩展1"
+        },
+        "finOutwarehouseVarExtra2": {
+            "meaning": "成品出仓表扩展2",
+            "reachable": true,
+            "name": "成品出仓表扩展2"
+        },
+        "finOutwarehouseVarExtra3": {
+            "meaning": "成品出仓表扩展3",
+            "reachable": true,
+            "name": "成品出仓表扩展3"
+        },
+        "finOutwarehouseVarExtra4": {
+            "meaning": "成品出仓表扩展4",
+            "reachable": true,
+            "name": "成品出仓表扩展4"
+        },
+        "finOutwarehouseVarExtra5": {
+            "meaning": "成品出仓表扩展5",
+            "reachable": true,
+            "name": "成品出仓表扩展5"
+        },
+        "finOutwarehouseVersion": {
+            "meaning": "成品出仓表版本号",
+            "reachable": true,
+            "name": "成品出仓表版本号"
+        }
+    }
+}

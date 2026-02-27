@@ -1,0 +1,1252 @@
+{
+    "api_name": "/warehouse-proof-trf-det/findList",
+    "table_name": "仓凭证移仓明细表（仓单移仓明细表）",
+    "request": {
+        "warehouseProofTrfDetWarehouseProofTrfClazz": "WAREHOUSE_PROOF_TRF",
+        "warehouseProofTrfDetClazz": "WAREHOUSE_PROOF_TRF_DET"
+    },
+    "mainTabClazz": "WAREHOUSE_PROOF_TRF_DET",
+    "response": {
+        "EProofTrfDetWarehouseProofTrfIsManualModificationDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间"
+        },
+        "arehouseProofTrfDetWarehouseProofTrfActualTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）实际需时(小时)",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）实际需时"
+        },
+        "arehouseProofTrfDetWarehouseProofTrfInvTypeTaxRateId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）发票税率id",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）发票税率id"
+        },
+        "houseProofTrfDetWarehouseProofTrfPlannedOutputQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量"
+        },
+        "ouseProofTrfDetWarehouseProofTrfAdjustmentTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）调整需时"
+        },
+        "proofTrfDetWarehouseProofTrfProductionProcessesTypeId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID"
+        },
+        "rehouseProofTrfDetWarehouseProofTrfAvailableScheduleId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）可用日程id",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）可用日程id"
+        },
+        "rehouseProofTrfDetWarehouseProofTrfPlannedTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划需时(小时)",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划需时"
+        },
+        "warehouseProofTrfDetActualTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）实际需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）实际需时"
+        },
+        "warehouseProofTrfDetAdjustmentTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）调整需时"
+        },
+        "warehouseProofTrfDetApplicationId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）应用ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）应用ID"
+        },
+        "warehouseProofTrfDetAuditDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）审核时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）审核时间"
+        },
+        "warehouseProofTrfDetAuditStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）审核状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）审核状态"
+        },
+        "warehouseProofTrfDetAvailableScheduleId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）可用日程id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）可用日程id"
+        },
+        "warehouseProofTrfDetBeginTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）开始时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）开始时间"
+        },
+        "warehouseProofTrfDetBizVersion": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）业务自定义版本号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）业务自定义版本号"
+        },
+        "warehouseProofTrfDetBriefName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）简称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）简称"
+        },
+        "warehouseProofTrfDetBusDivisId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）事业部id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）事业部id"
+        },
+        "warehouseProofTrfDetClazz": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）子类"
+        },
+        "warehouseProofTrfDetClosedReason": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结案原因",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结案原因"
+        },
+        "warehouseProofTrfDetClosedStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结案状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结案状态"
+        },
+        "warehouseProofTrfDetComment": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）评论",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）评论"
+        },
+        "warehouseProofTrfDetCompleteQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）完成数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）完成数量"
+        },
+        "warehouseProofTrfDetCompleteStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）完成状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）完成状态"
+        },
+        "warehouseProofTrfDetCreateTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建时间"
+        },
+        "warehouseProofTrfDetCreator": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建人"
+        },
+        "warehouseProofTrfDetCreatorId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建人ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建人ID"
+        },
+        "warehouseProofTrfDetDateExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间1"
+        },
+        "warehouseProofTrfDetDateExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间2"
+        },
+        "warehouseProofTrfDetDateExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间3"
+        },
+        "warehouseProofTrfDetDateExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间4"
+        },
+        "warehouseProofTrfDetDateExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间5"
+        },
+        "warehouseProofTrfDetDefaultType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点主类型"
+        },
+        "warehouseProofTrfDetDeliveryDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）交货日期",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）交货日期"
+        },
+        "warehouseProofTrfDetDescription": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）描述",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）描述"
+        },
+        "warehouseProofTrfDetEndTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结束时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结束时间"
+        },
+        "warehouseProofTrfDetEndTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）最后需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）最后需时"
+        },
+        "warehouseProofTrfDetEngName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）英文名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）英文名称"
+        },
+        "warehouseProofTrfDetEquipmentId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）设备id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）设备id"
+        },
+        "warehouseProofTrfDetExchangeRateId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）币种汇率id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）币种汇率id"
+        },
+        "warehouseProofTrfDetExtension": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数据",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数据"
+        },
+        "warehouseProofTrfDetExternalState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）上流程状态位"
+        },
+        "warehouseProofTrfDetFilterClazz": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）冗余字段用于筛选",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）冗余字段用于筛选"
+        },
+        "warehouseProofTrfDetFlags": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）63位标志位",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）63位标志位"
+        },
+        "warehouseProofTrfDetFromAuditDate": {
+            "meaning": "warehouseProofTrfDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromBeginTime": {
+            "meaning": "warehouseProofTrfDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromCreateTime": {
+            "meaning": "warehouseProofTrfDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDateExtra1": {
+            "meaning": "warehouseProofTrfDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDateExtra2": {
+            "meaning": "warehouseProofTrfDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDateExtra3": {
+            "meaning": "warehouseProofTrfDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDateExtra4": {
+            "meaning": "warehouseProofTrfDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDateExtra5": {
+            "meaning": "warehouseProofTrfDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromDeliveryDate": {
+            "meaning": "warehouseProofTrfDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromEndTime": {
+            "meaning": "warehouseProofTrfDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromReceiptDate": {
+            "meaning": "warehouseProofTrfDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFromUpdateTime": {
+            "meaning": "warehouseProofTrfDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetFscType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）FSC声明",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）FSC声明"
+        },
+        "warehouseProofTrfDetGenerativePeople": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）下发人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）下发人"
+        },
+        "warehouseProofTrfDetGenerativeState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）下发状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）下发状态"
+        },
+        "warehouseProofTrfDetGroovyScript": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）groovy脚本",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）groovy脚本"
+        },
+        "warehouseProofTrfDetGropeCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）搜索码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）搜索码"
+        },
+        "warehouseProofTrfDetId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）pk"
+        },
+        "warehouseProofTrfDetInUsed": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被使用",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被使用"
+        },
+        "warehouseProofTrfDetInvTypeTaxRateId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）发票税率id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）发票税率id"
+        },
+        "warehouseProofTrfDetIsBanned": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被禁用",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被禁用"
+        },
+        "warehouseProofTrfDetIsDeleted": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被删除",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被删除"
+        },
+        "warehouseProofTrfDetIsLeaf": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否叶子节点",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否叶子节点"
+        },
+        "warehouseProofTrfDetIsMainFlow": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否是主流程",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否是主流程"
+        },
+        "warehouseProofTrfDetIsManualModificationDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间"
+        },
+        "warehouseProofTrfDetIsolation": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点数据隔离标识",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点数据隔离标识"
+        },
+        "warehouseProofTrfDetJsScript": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）js脚本",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）js脚本"
+        },
+        "warehouseProofTrfDetMaterialId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）物料id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）物料id"
+        },
+        "warehouseProofTrfDetName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点名",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点名"
+        },
+        "warehouseProofTrfDetNameCodeSearch": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）name、user_code模糊搜索",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）name、user_code模糊搜索"
+        },
+        "warehouseProofTrfDetNumberExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量1"
+        },
+        "warehouseProofTrfDetNumberExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量2"
+        },
+        "warehouseProofTrfDetNumberExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量3"
+        },
+        "warehouseProofTrfDetNumberExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量4"
+        },
+        "warehouseProofTrfDetNumberExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量5"
+        },
+        "warehouseProofTrfDetParentId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）父节点ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）父节点ID"
+        },
+        "warehouseProofTrfDetPlannedOutputQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量"
+        },
+        "warehouseProofTrfDetPlannedTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划需时"
+        },
+        "warehouseProofTrfDetPrintTimes": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）打印次数",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）打印次数"
+        },
+        "warehouseProofTrfDetPriority": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）优先级",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）优先级"
+        },
+        "warehouseProofTrfDetProcessInstanceId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）流程实例ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）流程实例ID"
+        },
+        "warehouseProofTrfDetProductionProcessesTypeId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID"
+        },
+        "warehouseProofTrfDetProductionShiftId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）生产班次ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）生产班次ID"
+        },
+        "warehouseProofTrfDetQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务数量"
+        },
+        "warehouseProofTrfDetReceiptDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单据日期",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单据日期"
+        },
+        "warehouseProofTrfDetReceiptType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单据类型"
+        },
+        "warehouseProofTrfDetRelatedTasksId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）关联任务id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）关联任务id"
+        },
+        "warehouseProofTrfDetSerialNumber": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）顺序号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）顺序号"
+        },
+        "warehouseProofTrfDetSource": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）源",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）源"
+        },
+        "warehouseProofTrfDetSourceSpaceId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）原空间id（移仓专用）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）原空间id"
+        },
+        "warehouseProofTrfDetSourceType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）来源类型",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）来源类型"
+        },
+        "warehouseProofTrfDetState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）通用状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）通用状态"
+        },
+        "warehouseProofTrfDetSystemCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）系统编码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）系统编码"
+        },
+        "warehouseProofTrfDetTarget": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）目标",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）目标"
+        },
+        "warehouseProofTrfDetTargetSpaceId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）目标空间id（移仓专用）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）目标空间id"
+        },
+        "warehouseProofTrfDetTaskNodeName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务节点名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务节点名称"
+        },
+        "warehouseProofTrfDetTaskNodeType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务节点类型",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务节点类型"
+        },
+        "warehouseProofTrfDetTenantId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）租户id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）租户id"
+        },
+        "warehouseProofTrfDetThirdPartyClass": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方分类",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方分类"
+        },
+        "warehouseProofTrfDetThirdPartyId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方系统中的唯一ID"
+        },
+        "warehouseProofTrfDetThirdPartyName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方名称"
+        },
+        "warehouseProofTrfDetToAuditDate": {
+            "meaning": "warehouseProofTrfDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToBeginTime": {
+            "meaning": "warehouseProofTrfDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToCreateTime": {
+            "meaning": "warehouseProofTrfDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDateExtra1": {
+            "meaning": "warehouseProofTrfDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDateExtra2": {
+            "meaning": "warehouseProofTrfDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDateExtra3": {
+            "meaning": "warehouseProofTrfDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDateExtra4": {
+            "meaning": "warehouseProofTrfDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDateExtra5": {
+            "meaning": "warehouseProofTrfDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToDeliveryDate": {
+            "meaning": "warehouseProofTrfDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToEndTime": {
+            "meaning": "warehouseProofTrfDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToReceiptDate": {
+            "meaning": "warehouseProofTrfDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetToUpdateTime": {
+            "meaning": "warehouseProofTrfDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetUnitCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单位id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单位id"
+        },
+        "warehouseProofTrfDetUpdateTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新时间"
+        },
+        "warehouseProofTrfDetUpdater": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新人"
+        },
+        "warehouseProofTrfDetUpdaterId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新人ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新人ID"
+        },
+        "warehouseProofTrfDetUserCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点的唯一编码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点的唯一编码"
+        },
+        "warehouseProofTrfDetVarExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展1"
+        },
+        "warehouseProofTrfDetVarExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展2"
+        },
+        "warehouseProofTrfDetVarExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展3"
+        },
+        "warehouseProofTrfDetVarExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展4"
+        },
+        "warehouseProofTrfDetVarExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展5"
+        },
+        "warehouseProofTrfDetVersion": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）版本号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）版本号"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfActualTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）实际需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）实际需时"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfAdjustmentTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）调整需时"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfApplicationId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）应用ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）应用ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfAuditDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）审核时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）审核时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfAuditStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）审核状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）审核状态"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfAvailableScheduleId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）可用日程id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）可用日程id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfBeginTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）开始时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）开始时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfBizVersion": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）业务自定义版本号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）业务自定义版本号"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfBriefName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）简称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）简称"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfBusDivisId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）事业部id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）事业部id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfClazz": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）子类"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfClosedReason": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结案原因",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结案原因"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfClosedStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结案状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结案状态"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfComment": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）评论",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）评论"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfCompleteQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）完成数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）完成数量"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfCompleteStatus": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）完成状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）完成状态"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfCreateTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfCreator": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建人"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfCreatorId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）创建人ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）创建人ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDateExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间1"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDateExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间2"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDateExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间3"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDateExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间4"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDateExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展时间5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展时间5"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDefaultType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点主类型"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDeliveryDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）交货日期",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）交货日期"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDepartId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）移仓部门id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）移仓部门id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfDescription": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）描述",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）描述"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfEndTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）结束时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）结束时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfEndTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）最后需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）最后需时"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfEngName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）英文名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）英文名称"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfEquipmentId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）设备id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）设备id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfExchangeRateId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）币种汇率id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）币种汇率id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfExtension": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数据",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数据"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfExternalState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）上流程状态位"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFilterClazz": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）冗余字段用于筛选",
+            "reachable": false,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）冗余字段用于筛选"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFlags": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）63位标志位",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）63位标志位"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromAuditDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromBeginTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromCreateTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDateExtra1": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDateExtra2": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDateExtra3": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDateExtra4": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDateExtra5": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromDeliveryDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromEndTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromReceiptDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFromUpdateTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfFscType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）FSC声明",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）FSC声明"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfGenerativePeople": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）下发人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）下发人"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfGenerativeState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）下发状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）下发状态"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfGroovyScript": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）groovy脚本",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）groovy脚本"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfGropeCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）搜索码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）搜索码"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）主键id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）主键id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfInUsed": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被使用",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被使用"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfInvTypeTaxRateId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）发票税率id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）发票税率id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsBanned": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被禁用",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被禁用"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsDeleted": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否被删除",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否被删除"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsLeaf": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否叶子节点",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否叶子节点"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsMainFlow": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否是主流程",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否是主流程"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsManualModificationDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）是否手动修改计划生产时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfIsolation": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点数据隔离标识",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点数据隔离标识"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfJsScript": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）js脚本",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）js脚本"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfMaterialId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）物料id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）物料id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点名",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点名"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNameCodeSearch": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）name、user_code模糊搜索",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）name、user_code模糊搜索"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNumberExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量1"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNumberExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量2"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNumberExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量3"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNumberExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量4"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfNumberExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展数量5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展数量5"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfParentId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）父节点ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）父节点ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfPlannedOutputQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划产出数量"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfPlannedTimeRequired": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）计划需时(小时)",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）计划需时"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfPrintTimes": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）打印次数",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）打印次数"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfPriority": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）优先级",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）优先级"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfProcessInstanceId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）流程实例ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）流程实例ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfProductionProcessesTypeId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）工序类型ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfProductionShiftId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）生产班次ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）生产班次ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfQuantity": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务数量",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务数量"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfReceiptDate": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单据日期",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单据日期"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfReceiptType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单据类型"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfRelatedTasksId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）关联任务id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）关联任务id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfSerialNumber": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）顺序号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）顺序号"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfSource": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）源",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）源"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfSourceType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）来源类型",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）来源类型"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfStaffId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）移仓人id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）移仓人id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfState": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）通用状态",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）通用状态"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfSystemCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）系统编码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）系统编码"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfTarget": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）目标",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）目标"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfTaskNodeName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务节点名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务节点名称"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfTaskNodeType": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）任务节点类型",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）任务节点类型"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfTenantId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）租户id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）租户id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfThirdPartyClass": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方分类",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方分类"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfThirdPartyId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方系统中的唯一ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfThirdPartyName": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）第三方名称",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）第三方名称"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToAuditDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToBeginTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToCreateTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDateExtra1": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDateExtra2": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDateExtra3": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDateExtra4": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDateExtra5": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToDeliveryDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToEndTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToReceiptDate": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfToUpdateTime": {
+            "meaning": "warehouseProofTrfDetWarehouseProofTrfToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfDetWarehouseProofTrfUnitCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）单位id",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）单位id"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfUpdateTime": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新时间",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新时间"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfUpdater": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新人",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新人"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfUpdaterId": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）更新人ID",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）更新人ID"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfUserCode": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）智能节点的唯一编码",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）智能节点的唯一编码"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVarExtra1": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展1",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展1"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVarExtra2": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展2",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展2"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVarExtra3": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展3",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展3"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVarExtra4": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展4",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展4"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVarExtra5": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）扩展5",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）扩展5"
+        },
+        "warehouseProofTrfDetWarehouseProofTrfVersion": {
+            "meaning": "仓凭证移仓明细表（仓单移仓明细表）版本号",
+            "reachable": true,
+            "name": "仓凭证移仓明细表（仓单移仓明细表）版本号"
+        }
+    }
+}

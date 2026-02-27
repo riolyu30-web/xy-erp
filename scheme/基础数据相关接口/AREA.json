@@ -1,0 +1,396 @@
+{
+    "api_name": "/area/findList",
+    "table_name": "行政区域",
+    "request": {
+        "areaClazz": "AREA"
+    },
+    "mainTabClazz": "AREA",
+    "response": {
+        "areaApplicationId": {
+            "meaning": "行政区域应用ID",
+            "reachable": true,
+            "name": "行政区域应用ID"
+        },
+        "areaAuditDate": {
+            "meaning": "行政区域审核时间",
+            "reachable": true,
+            "name": "行政区域审核时间"
+        },
+        "areaAuditStatus": {
+            "meaning": "行政区域审核状态",
+            "reachable": true,
+            "name": "行政区域审核状态"
+        },
+        "areaBizVersion": {
+            "meaning": "行政区域业务自定义版本号",
+            "reachable": true,
+            "name": "行政区域业务自定义版本号"
+        },
+        "areaBriefName": {
+            "meaning": "行政区域简称",
+            "reachable": true,
+            "name": "行政区域简称"
+        },
+        "areaBusDivisId": {
+            "meaning": "行政区域事业部id",
+            "reachable": true,
+            "name": "行政区域事业部id"
+        },
+        "areaClazz": {
+            "meaning": "行政区域子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "行政区域子类"
+        },
+        "areaComment": {
+            "meaning": "行政区域评论",
+            "reachable": true,
+            "name": "行政区域评论"
+        },
+        "areaCreateTime": {
+            "meaning": "行政区域创建时间",
+            "reachable": true,
+            "name": "行政区域创建时间"
+        },
+        "areaCreator": {
+            "meaning": "行政区域创建人",
+            "reachable": true,
+            "name": "行政区域创建人"
+        },
+        "areaCreatorId": {
+            "meaning": "行政区域创建人ID",
+            "reachable": true,
+            "name": "行政区域创建人ID"
+        },
+        "areaDateExtra1": {
+            "meaning": "行政区域扩展时间1",
+            "reachable": true,
+            "name": "行政区域扩展时间1"
+        },
+        "areaDateExtra2": {
+            "meaning": "行政区域扩展时间2",
+            "reachable": true,
+            "name": "行政区域扩展时间2"
+        },
+        "areaDateExtra3": {
+            "meaning": "行政区域扩展时间3",
+            "reachable": true,
+            "name": "行政区域扩展时间3"
+        },
+        "areaDateExtra4": {
+            "meaning": "行政区域扩展时间4",
+            "reachable": true,
+            "name": "行政区域扩展时间4"
+        },
+        "areaDateExtra5": {
+            "meaning": "行政区域扩展时间5",
+            "reachable": true,
+            "name": "行政区域扩展时间5"
+        },
+        "areaDefaultType": {
+            "meaning": "行政区域智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "行政区域智能节点主类型"
+        },
+        "areaDescription": {
+            "meaning": "行政区域描述",
+            "reachable": true,
+            "name": "行政区域描述"
+        },
+        "areaEngName": {
+            "meaning": "行政区域英文名称",
+            "reachable": true,
+            "name": "行政区域英文名称"
+        },
+        "areaExtension": {
+            "meaning": "行政区域扩展数据",
+            "reachable": true,
+            "name": "行政区域扩展数据"
+        },
+        "areaExternalState": {
+            "meaning": "行政区域上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "行政区域上流程状态位"
+        },
+        "areaFlags": {
+            "meaning": "行政区域63位标志位",
+            "reachable": true,
+            "name": "行政区域63位标志位"
+        },
+        "areaFromAuditDate": {
+            "meaning": "areaFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromCreateTime": {
+            "meaning": "areaFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromDateExtra1": {
+            "meaning": "areaFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromDateExtra2": {
+            "meaning": "areaFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromDateExtra3": {
+            "meaning": "areaFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromDateExtra4": {
+            "meaning": "areaFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromDateExtra5": {
+            "meaning": "areaFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "areaFromUpdateTime": {
+            "meaning": "areaFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "areaGroovyScript": {
+            "meaning": "行政区域groovy脚本",
+            "reachable": true,
+            "name": "行政区域groovy脚本"
+        },
+        "areaGropeCode": {
+            "meaning": "行政区域搜索码",
+            "reachable": true,
+            "name": "行政区域搜索码"
+        },
+        "areaId": {
+            "meaning": "行政区域主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "行政区域主键ID"
+        },
+        "areaInUsed": {
+            "meaning": "行政区域是否被使用",
+            "reachable": true,
+            "name": "行政区域是否被使用"
+        },
+        "areaIsBanned": {
+            "meaning": "行政区域是否被禁用",
+            "reachable": true,
+            "name": "行政区域是否被禁用"
+        },
+        "areaIsDeleted": {
+            "meaning": "行政区域是否被删除",
+            "reachable": true,
+            "name": "行政区域是否被删除"
+        },
+        "areaIsMainFlow": {
+            "meaning": "行政区域是否是主流程",
+            "reachable": true,
+            "name": "行政区域是否是主流程"
+        },
+        "areaIsUsed": {
+            "meaning": "行政区域已被使用(0未使用，1已使用)",
+            "reachable": true,
+            "name": "行政区域已被使用"
+        },
+        "areaIsolation": {
+            "meaning": "行政区域智能节点数据隔离标识",
+            "reachable": true,
+            "name": "行政区域智能节点数据隔离标识"
+        },
+        "areaJsScript": {
+            "meaning": "行政区域js脚本",
+            "reachable": true,
+            "name": "行政区域js脚本"
+        },
+        "areaLevel": {
+            "meaning": "行政区域层级",
+            "reachable": true,
+            "name": "行政区域层级"
+        },
+        "areaName": {
+            "meaning": "行政区域智能节点名",
+            "reachable": true,
+            "name": "行政区域智能节点名"
+        },
+        "areaNameCodeSearch": {
+            "meaning": "行政区域name、user_code模糊搜索",
+            "reachable": true,
+            "name": "行政区域name、user_code模糊搜索"
+        },
+        "areaNumberExtra1": {
+            "meaning": "行政区域扩展数量1",
+            "reachable": true,
+            "name": "行政区域扩展数量1"
+        },
+        "areaNumberExtra2": {
+            "meaning": "行政区域扩展数量2",
+            "reachable": true,
+            "name": "行政区域扩展数量2"
+        },
+        "areaNumberExtra3": {
+            "meaning": "行政区域扩展数量3",
+            "reachable": true,
+            "name": "行政区域扩展数量3"
+        },
+        "areaNumberExtra4": {
+            "meaning": "行政区域扩展数量4",
+            "reachable": true,
+            "name": "行政区域扩展数量4"
+        },
+        "areaNumberExtra5": {
+            "meaning": "行政区域扩展数量5",
+            "reachable": true,
+            "name": "行政区域扩展数量5"
+        },
+        "areaParentId": {
+            "meaning": "行政区域父节点ID",
+            "reachable": true,
+            "name": "行政区域父节点ID"
+        },
+        "areaPostCode": {
+            "meaning": "行政区域邮政编码",
+            "reachable": true,
+            "name": "行政区域邮政编码"
+        },
+        "areaProcessInstanceId": {
+            "meaning": "行政区域流程实例ID",
+            "reachable": true,
+            "name": "行政区域流程实例ID"
+        },
+        "areaSerialNumber": {
+            "meaning": "行政区域顺序号",
+            "reachable": true,
+            "name": "行政区域顺序号"
+        },
+        "areaState": {
+            "meaning": "行政区域通用状态",
+            "reachable": true,
+            "name": "行政区域通用状态"
+        },
+        "areaSystemCode": {
+            "meaning": "行政区域系统编码",
+            "reachable": true,
+            "name": "行政区域系统编码"
+        },
+        "areaTaskNodeName": {
+            "meaning": "行政区域任务节点名称",
+            "reachable": true,
+            "name": "行政区域任务节点名称"
+        },
+        "areaTenantId": {
+            "meaning": "行政区域租户ID",
+            "reachable": true,
+            "name": "行政区域租户ID"
+        },
+        "areaThirdPartyClass": {
+            "meaning": "行政区域第三方分类",
+            "reachable": true,
+            "name": "行政区域第三方分类"
+        },
+        "areaThirdPartyId": {
+            "meaning": "行政区域第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "行政区域第三方系统中的唯一ID"
+        },
+        "areaThirdPartyName": {
+            "meaning": "行政区域第三方名称",
+            "reachable": true,
+            "name": "行政区域第三方名称"
+        },
+        "areaToAuditDate": {
+            "meaning": "areaToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToCreateTime": {
+            "meaning": "areaToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToDateExtra1": {
+            "meaning": "areaToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToDateExtra2": {
+            "meaning": "areaToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToDateExtra3": {
+            "meaning": "areaToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToDateExtra4": {
+            "meaning": "areaToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToDateExtra5": {
+            "meaning": "areaToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "areaToUpdateTime": {
+            "meaning": "areaToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "areaUpdateTime": {
+            "meaning": "行政区域更新时间",
+            "reachable": true,
+            "name": "行政区域更新时间"
+        },
+        "areaUpdater": {
+            "meaning": "行政区域更新人",
+            "reachable": true,
+            "name": "行政区域更新人"
+        },
+        "areaUpdaterId": {
+            "meaning": "行政区域更新人ID",
+            "reachable": true,
+            "name": "行政区域更新人ID"
+        },
+        "areaUserCode": {
+            "meaning": "行政区域智能节点的唯一编码",
+            "reachable": true,
+            "name": "行政区域智能节点的唯一编码"
+        },
+        "areaVarExtra1": {
+            "meaning": "行政区域扩展1",
+            "reachable": true,
+            "name": "行政区域扩展1"
+        },
+        "areaVarExtra2": {
+            "meaning": "行政区域扩展2",
+            "reachable": true,
+            "name": "行政区域扩展2"
+        },
+        "areaVarExtra3": {
+            "meaning": "行政区域扩展3",
+            "reachable": true,
+            "name": "行政区域扩展3"
+        },
+        "areaVarExtra4": {
+            "meaning": "行政区域扩展4",
+            "reachable": true,
+            "name": "行政区域扩展4"
+        },
+        "areaVarExtra5": {
+            "meaning": "行政区域扩展5",
+            "reachable": true,
+            "name": "行政区域扩展5"
+        },
+        "areaVersion": {
+            "meaning": "行政区域版本号",
+            "reachable": true,
+            "name": "行政区域版本号"
+        }
+    }
+}

@@ -1,0 +1,621 @@
+{
+    "api_name": "/fin-instorage/findList",
+    "table_name": "成品入库表",
+    "request": {
+        "finInstorageClazz": "FIN_INSTORAGE"
+    },
+    "mainTabClazz": "FIN_INSTORAGE",
+    "response": {
+        "finInstorageActualTimeRequired": {
+            "meaning": "成品入库表实际需时(小时)",
+            "reachable": true,
+            "name": "成品入库表实际需时"
+        },
+        "finInstorageAdjustmentTimeRequired": {
+            "meaning": "成品入库表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品入库表调整需时"
+        },
+        "finInstorageApplicationId": {
+            "meaning": "成品入库表应用ID",
+            "reachable": true,
+            "name": "成品入库表应用ID"
+        },
+        "finInstorageAuditDate": {
+            "meaning": "成品入库表审核时间",
+            "reachable": true,
+            "name": "成品入库表审核时间"
+        },
+        "finInstorageAuditStatus": {
+            "meaning": "成品入库表审核状态",
+            "reachable": true,
+            "name": "成品入库表审核状态"
+        },
+        "finInstorageAvailableScheduleId": {
+            "meaning": "成品入库表可用日程id",
+            "reachable": true,
+            "name": "成品入库表可用日程id"
+        },
+        "finInstorageBeginTime": {
+            "meaning": "成品入库表开始时间",
+            "reachable": true,
+            "name": "成品入库表开始时间"
+        },
+        "finInstorageBizVersion": {
+            "meaning": "成品入库表业务自定义版本号",
+            "reachable": true,
+            "name": "成品入库表业务自定义版本号"
+        },
+        "finInstorageBriefName": {
+            "meaning": "成品入库表简称",
+            "reachable": true,
+            "name": "成品入库表简称"
+        },
+        "finInstorageBusDivisId": {
+            "meaning": "成品入库表事业部id",
+            "reachable": true,
+            "name": "成品入库表事业部id"
+        },
+        "finInstorageClazz": {
+            "meaning": "成品入库表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品入库表子类"
+        },
+        "finInstorageClosedReason": {
+            "meaning": "成品入库表结案原因",
+            "reachable": true,
+            "name": "成品入库表结案原因"
+        },
+        "finInstorageClosedStatus": {
+            "meaning": "成品入库表结案状态",
+            "reachable": true,
+            "name": "成品入库表结案状态"
+        },
+        "finInstorageComment": {
+            "meaning": "成品入库表评论",
+            "reachable": true,
+            "name": "成品入库表评论"
+        },
+        "finInstorageCompleteQuantity": {
+            "meaning": "成品入库表完成数量",
+            "reachable": true,
+            "name": "成品入库表完成数量"
+        },
+        "finInstorageCompleteStatus": {
+            "meaning": "成品入库表完成状态",
+            "reachable": true,
+            "name": "成品入库表完成状态"
+        },
+        "finInstorageCreateTime": {
+            "meaning": "成品入库表创建时间",
+            "reachable": true,
+            "name": "成品入库表创建时间"
+        },
+        "finInstorageCreator": {
+            "meaning": "成品入库表创建人",
+            "reachable": true,
+            "name": "成品入库表创建人"
+        },
+        "finInstorageCreatorId": {
+            "meaning": "成品入库表创建人ID",
+            "reachable": true,
+            "name": "成品入库表创建人ID"
+        },
+        "finInstorageDateExtra1": {
+            "meaning": "成品入库表扩展时间1",
+            "reachable": true,
+            "name": "成品入库表扩展时间1"
+        },
+        "finInstorageDateExtra2": {
+            "meaning": "成品入库表扩展时间2",
+            "reachable": true,
+            "name": "成品入库表扩展时间2"
+        },
+        "finInstorageDateExtra3": {
+            "meaning": "成品入库表扩展时间3",
+            "reachable": true,
+            "name": "成品入库表扩展时间3"
+        },
+        "finInstorageDateExtra4": {
+            "meaning": "成品入库表扩展时间4",
+            "reachable": true,
+            "name": "成品入库表扩展时间4"
+        },
+        "finInstorageDateExtra5": {
+            "meaning": "成品入库表扩展时间5",
+            "reachable": true,
+            "name": "成品入库表扩展时间5"
+        },
+        "finInstorageDefaultType": {
+            "meaning": "成品入库表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品入库表智能节点主类型"
+        },
+        "finInstorageDeliveryDate": {
+            "meaning": "成品入库表交货日期",
+            "reachable": true,
+            "name": "成品入库表交货日期"
+        },
+        "finInstorageDepId": {
+            "meaning": "成品入库表部门id",
+            "reachable": true,
+            "name": "成品入库表部门id"
+        },
+        "finInstorageDescription": {
+            "meaning": "成品入库表描述",
+            "reachable": true,
+            "name": "成品入库表描述"
+        },
+        "finInstorageEndTime": {
+            "meaning": "成品入库表结束时间",
+            "reachable": true,
+            "name": "成品入库表结束时间"
+        },
+        "finInstorageEndTimeRequired": {
+            "meaning": "成品入库表最后需时(小时)",
+            "reachable": true,
+            "name": "成品入库表最后需时"
+        },
+        "finInstorageEngName": {
+            "meaning": "成品入库表英文名称",
+            "reachable": true,
+            "name": "成品入库表英文名称"
+        },
+        "finInstorageEquipmentId": {
+            "meaning": "成品入库表设备id",
+            "reachable": true,
+            "name": "成品入库表设备id"
+        },
+        "finInstorageExchangeRateId": {
+            "meaning": "成品入库表币种汇率id",
+            "reachable": true,
+            "name": "成品入库表币种汇率id"
+        },
+        "finInstorageExtension": {
+            "meaning": "成品入库表扩展数据",
+            "reachable": true,
+            "name": "成品入库表扩展数据"
+        },
+        "finInstorageExternalState": {
+            "meaning": "成品入库表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品入库表上流程状态位"
+        },
+        "finInstorageFilterClazz": {
+            "meaning": "成品入库表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品入库表冗余字段用于筛选"
+        },
+        "finInstorageFlags": {
+            "meaning": "成品入库表63位标志位",
+            "reachable": true,
+            "name": "成品入库表63位标志位"
+        },
+        "finInstorageFromAuditDate": {
+            "meaning": "finInstorageFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromBeginTime": {
+            "meaning": "finInstorageFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromCreateTime": {
+            "meaning": "finInstorageFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDateExtra1": {
+            "meaning": "finInstorageFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDateExtra2": {
+            "meaning": "finInstorageFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDateExtra3": {
+            "meaning": "finInstorageFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDateExtra4": {
+            "meaning": "finInstorageFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDateExtra5": {
+            "meaning": "finInstorageFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromDeliveryDate": {
+            "meaning": "finInstorageFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromEndTime": {
+            "meaning": "finInstorageFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromReceiptDate": {
+            "meaning": "finInstorageFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFromUpdateTime": {
+            "meaning": "finInstorageFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageFscType": {
+            "meaning": "成品入库表FSC声明",
+            "reachable": true,
+            "name": "成品入库表FSC声明"
+        },
+        "finInstorageGenerativePeople": {
+            "meaning": "成品入库表下发人",
+            "reachable": true,
+            "name": "成品入库表下发人"
+        },
+        "finInstorageGenerativeState": {
+            "meaning": "成品入库表下发状态",
+            "reachable": true,
+            "name": "成品入库表下发状态"
+        },
+        "finInstorageGroovyScript": {
+            "meaning": "成品入库表groovy脚本",
+            "reachable": true,
+            "name": "成品入库表groovy脚本"
+        },
+        "finInstorageGropeCode": {
+            "meaning": "成品入库表搜索码",
+            "reachable": true,
+            "name": "成品入库表搜索码"
+        },
+        "finInstorageId": {
+            "meaning": "成品入库表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品入库表PK"
+        },
+        "finInstorageInUsed": {
+            "meaning": "成品入库表是否被使用",
+            "reachable": true,
+            "name": "成品入库表是否被使用"
+        },
+        "finInstorageInvTypeTaxRateId": {
+            "meaning": "成品入库表发票税率id",
+            "reachable": true,
+            "name": "成品入库表发票税率id"
+        },
+        "finInstorageIsBanned": {
+            "meaning": "成品入库表是否被禁用",
+            "reachable": true,
+            "name": "成品入库表是否被禁用"
+        },
+        "finInstorageIsDeleted": {
+            "meaning": "成品入库表是否被删除",
+            "reachable": true,
+            "name": "成品入库表是否被删除"
+        },
+        "finInstorageIsLeaf": {
+            "meaning": "成品入库表是否叶子节点",
+            "reachable": true,
+            "name": "成品入库表是否叶子节点"
+        },
+        "finInstorageIsMainFlow": {
+            "meaning": "成品入库表是否是主流程",
+            "reachable": true,
+            "name": "成品入库表是否是主流程"
+        },
+        "finInstorageIsManualModificationDate": {
+            "meaning": "成品入库表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品入库表是否手动修改计划生产时间"
+        },
+        "finInstorageIsolation": {
+            "meaning": "成品入库表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品入库表智能节点数据隔离标识"
+        },
+        "finInstorageJsScript": {
+            "meaning": "成品入库表js脚本",
+            "reachable": true,
+            "name": "成品入库表js脚本"
+        },
+        "finInstorageMaterialId": {
+            "meaning": "成品入库表物料id",
+            "reachable": true,
+            "name": "成品入库表物料id"
+        },
+        "finInstorageName": {
+            "meaning": "成品入库表智能节点名",
+            "reachable": true,
+            "name": "成品入库表智能节点名"
+        },
+        "finInstorageNameCodeSearch": {
+            "meaning": "成品入库表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品入库表name、user_code模糊搜索"
+        },
+        "finInstorageNumberExtra1": {
+            "meaning": "成品入库表扩展数量1",
+            "reachable": true,
+            "name": "成品入库表扩展数量1"
+        },
+        "finInstorageNumberExtra2": {
+            "meaning": "成品入库表扩展数量2",
+            "reachable": true,
+            "name": "成品入库表扩展数量2"
+        },
+        "finInstorageNumberExtra3": {
+            "meaning": "成品入库表扩展数量3",
+            "reachable": true,
+            "name": "成品入库表扩展数量3"
+        },
+        "finInstorageNumberExtra4": {
+            "meaning": "成品入库表扩展数量4",
+            "reachable": true,
+            "name": "成品入库表扩展数量4"
+        },
+        "finInstorageNumberExtra5": {
+            "meaning": "成品入库表扩展数量5",
+            "reachable": true,
+            "name": "成品入库表扩展数量5"
+        },
+        "finInstorageOrgId": {
+            "meaning": "成品入库表机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品入库表机构id"
+        },
+        "finInstorageParentId": {
+            "meaning": "成品入库表父节点ID",
+            "reachable": true,
+            "name": "成品入库表父节点ID"
+        },
+        "finInstoragePlannedOutputQuantity": {
+            "meaning": "成品入库表计划产出数量",
+            "reachable": true,
+            "name": "成品入库表计划产出数量"
+        },
+        "finInstoragePlannedTimeRequired": {
+            "meaning": "成品入库表计划需时(小时)",
+            "reachable": true,
+            "name": "成品入库表计划需时"
+        },
+        "finInstoragePrintTimes": {
+            "meaning": "成品入库表打印次数",
+            "reachable": true,
+            "name": "成品入库表打印次数"
+        },
+        "finInstoragePriority": {
+            "meaning": "成品入库表优先级",
+            "reachable": true,
+            "name": "成品入库表优先级"
+        },
+        "finInstorageProcessInstanceId": {
+            "meaning": "成品入库表流程实例ID",
+            "reachable": true,
+            "name": "成品入库表流程实例ID"
+        },
+        "finInstorageProductionProcessesTypeId": {
+            "meaning": "成品入库表工序类型ID",
+            "reachable": true,
+            "name": "成品入库表工序类型ID"
+        },
+        "finInstorageProductionShiftId": {
+            "meaning": "成品入库表生产班次ID",
+            "reachable": true,
+            "name": "成品入库表生产班次ID"
+        },
+        "finInstorageQuantity": {
+            "meaning": "成品入库表任务数量",
+            "reachable": true,
+            "name": "成品入库表任务数量"
+        },
+        "finInstorageReceiptDate": {
+            "meaning": "成品入库表单据日期",
+            "reachable": true,
+            "name": "成品入库表单据日期"
+        },
+        "finInstorageReceiptType": {
+            "meaning": "成品入库表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品入库表单据类型"
+        },
+        "finInstorageRelatedTasksId": {
+            "meaning": "成品入库表关联任务id",
+            "reachable": true,
+            "name": "成品入库表关联任务id"
+        },
+        "finInstorageSerialNumber": {
+            "meaning": "成品入库表顺序号",
+            "reachable": true,
+            "name": "成品入库表顺序号"
+        },
+        "finInstorageSettMethod": {
+            "meaning": "成品入库表结算方式",
+            "reachable": true,
+            "name": "成品入库表结算方式"
+        },
+        "finInstorageSettOrgId": {
+            "meaning": "成品入库表结算机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品入库表结算机构id"
+        },
+        "finInstorageSource": {
+            "meaning": "成品入库表源",
+            "reachable": true,
+            "name": "成品入库表源"
+        },
+        "finInstorageSourceType": {
+            "meaning": "成品入库表来源类型",
+            "reachable": true,
+            "name": "成品入库表来源类型"
+        },
+        "finInstorageStaffId": {
+            "meaning": "成品入库表员工id(入/出库员工)",
+            "reachable": true,
+            "name": "成品入库表员工id"
+        },
+        "finInstorageState": {
+            "meaning": "成品入库表通用状态",
+            "reachable": true,
+            "name": "成品入库表通用状态"
+        },
+        "finInstorageSystemCode": {
+            "meaning": "成品入库表系统编码",
+            "reachable": true,
+            "name": "成品入库表系统编码"
+        },
+        "finInstorageTarget": {
+            "meaning": "成品入库表目标",
+            "reachable": true,
+            "name": "成品入库表目标"
+        },
+        "finInstorageTaskNodeName": {
+            "meaning": "成品入库表任务节点名称",
+            "reachable": true,
+            "name": "成品入库表任务节点名称"
+        },
+        "finInstorageTenantId": {
+            "meaning": "成品入库表租户id",
+            "reachable": true,
+            "name": "成品入库表租户id"
+        },
+        "finInstorageThirdPartyClass": {
+            "meaning": "成品入库表第三方分类",
+            "reachable": true,
+            "name": "成品入库表第三方分类"
+        },
+        "finInstorageThirdPartyId": {
+            "meaning": "成品入库表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品入库表第三方系统中的唯一ID"
+        },
+        "finInstorageThirdPartyName": {
+            "meaning": "成品入库表第三方名称",
+            "reachable": true,
+            "name": "成品入库表第三方名称"
+        },
+        "finInstorageToAuditDate": {
+            "meaning": "finInstorageToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToBeginTime": {
+            "meaning": "finInstorageToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToCreateTime": {
+            "meaning": "finInstorageToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDateExtra1": {
+            "meaning": "finInstorageToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDateExtra2": {
+            "meaning": "finInstorageToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDateExtra3": {
+            "meaning": "finInstorageToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDateExtra4": {
+            "meaning": "finInstorageToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDateExtra5": {
+            "meaning": "finInstorageToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToDeliveryDate": {
+            "meaning": "finInstorageToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToEndTime": {
+            "meaning": "finInstorageToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToReceiptDate": {
+            "meaning": "finInstorageToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageToUpdateTime": {
+            "meaning": "finInstorageToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finInstorageUnitCode": {
+            "meaning": "成品入库表单位id",
+            "reachable": true,
+            "name": "成品入库表单位id"
+        },
+        "finInstorageUpdateTime": {
+            "meaning": "成品入库表更新时间",
+            "reachable": true,
+            "name": "成品入库表更新时间"
+        },
+        "finInstorageUpdater": {
+            "meaning": "成品入库表更新人",
+            "reachable": true,
+            "name": "成品入库表更新人"
+        },
+        "finInstorageUpdaterId": {
+            "meaning": "成品入库表更新人ID",
+            "reachable": true,
+            "name": "成品入库表更新人ID"
+        },
+        "finInstorageUserCode": {
+            "meaning": "成品入库表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品入库表智能节点的唯一编码"
+        },
+        "finInstorageVarExtra1": {
+            "meaning": "成品入库表扩展1",
+            "reachable": true,
+            "name": "成品入库表扩展1"
+        },
+        "finInstorageVarExtra2": {
+            "meaning": "成品入库表扩展2",
+            "reachable": true,
+            "name": "成品入库表扩展2"
+        },
+        "finInstorageVarExtra3": {
+            "meaning": "成品入库表扩展3",
+            "reachable": true,
+            "name": "成品入库表扩展3"
+        },
+        "finInstorageVarExtra4": {
+            "meaning": "成品入库表扩展4",
+            "reachable": true,
+            "name": "成品入库表扩展4"
+        },
+        "finInstorageVarExtra5": {
+            "meaning": "成品入库表扩展5",
+            "reachable": true,
+            "name": "成品入库表扩展5"
+        },
+        "finInstorageVersion": {
+            "meaning": "成品入库表版本号",
+            "reachable": true,
+            "name": "成品入库表版本号"
+        }
+    }
+}

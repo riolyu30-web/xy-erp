@@ -1,0 +1,1055 @@
+{
+    "api_name": "/material-batch/findList",
+    "table_name": "物料批次",
+    "request": {
+        "matBatchClazz": "MATERIAL_BATCH"
+    },
+    "mainTabClazz": "MATERIAL_BATCH",
+    "response": {
+        "matBatchATMatApplicationId": {
+            "meaning": "物料批次应用ID",
+            "reachable": true,
+            "name": "物料批次应用ID"
+        },
+        "matBatchATMatAuditDate": {
+            "meaning": "matBatchATMatAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatAuditStatus": {
+            "meaning": "物料批次审核状态",
+            "reachable": true,
+            "name": "物料批次审核状态"
+        },
+        "matBatchATMatBizVersion": {
+            "meaning": "物料批次业务自定义版本号",
+            "reachable": true,
+            "name": "物料批次业务自定义版本号"
+        },
+        "matBatchATMatBriefName": {
+            "meaning": "物料批次简称",
+            "reachable": true,
+            "name": "物料批次简称"
+        },
+        "matBatchATMatBusDivId": {
+            "meaning": "matBatchATMatBusDivId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatBusDivisId": {
+            "meaning": "物料批次事业部id",
+            "reachable": true,
+            "name": "物料批次事业部id"
+        },
+        "matBatchATMatClazz": {
+            "meaning": "物料批次子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料批次子类"
+        },
+        "matBatchATMatComment": {
+            "meaning": "物料批次评论",
+            "reachable": true,
+            "name": "物料批次评论"
+        },
+        "matBatchATMatCreateTime": {
+            "meaning": "matBatchATMatCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatCreator": {
+            "meaning": "物料批次创建人",
+            "reachable": true,
+            "name": "物料批次创建人"
+        },
+        "matBatchATMatCreatorId": {
+            "meaning": "物料批次创建人ID",
+            "reachable": true,
+            "name": "物料批次创建人ID"
+        },
+        "matBatchATMatDateExtra1": {
+            "meaning": "matBatchATMatDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDateExtra2": {
+            "meaning": "matBatchATMatDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDateExtra3": {
+            "meaning": "matBatchATMatDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDateExtra4": {
+            "meaning": "matBatchATMatDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDateExtra5": {
+            "meaning": "matBatchATMatDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDeclType": {
+            "meaning": "matBatchATMatDeclType",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDefaultStatisticsSpecificationTypeId": {
+            "meaning": "matBatchATMatDefaultStatisticsSpecificationTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatDefaultType": {
+            "meaning": "物料批次智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料批次智能节点主类型"
+        },
+        "matBatchATMatDescription": {
+            "meaning": "物料批次描述",
+            "reachable": true,
+            "name": "物料批次描述"
+        },
+        "matBatchATMatEngName": {
+            "meaning": "物料批次英文名称",
+            "reachable": true,
+            "name": "物料批次英文名称"
+        },
+        "matBatchATMatExtension": {
+            "meaning": "物料批次扩展数据",
+            "reachable": true,
+            "name": "物料批次扩展数据"
+        },
+        "matBatchATMatExternalState": {
+            "meaning": "物料批次上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料批次上流程状态位"
+        },
+        "matBatchATMatFinClass": {
+            "meaning": "matBatchATMatFinClass",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatFinGenLedClass": {
+            "meaning": "matBatchATMatFinGenLedClass",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatFinGenLedCode": {
+            "meaning": "matBatchATMatFinGenLedCode",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatFinancialAccount": {
+            "meaning": "matBatchATMatFinancialAccount",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatFlags": {
+            "meaning": "物料批次63位标志位",
+            "reachable": true,
+            "name": "物料批次63位标志位"
+        },
+        "matBatchATMatFromAuditDate": {
+            "meaning": "matBatchATMatFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromCreateTime": {
+            "meaning": "matBatchATMatFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromDateExtra1": {
+            "meaning": "matBatchATMatFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromDateExtra2": {
+            "meaning": "matBatchATMatFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromDateExtra3": {
+            "meaning": "matBatchATMatFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromDateExtra4": {
+            "meaning": "matBatchATMatFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromDateExtra5": {
+            "meaning": "matBatchATMatFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFromUpdateTime": {
+            "meaning": "matBatchATMatFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatFscDeclarationId": {
+            "meaning": "matBatchATMatFscDeclarationId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatFscId": {
+            "meaning": "matBatchATMatFscId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatGroovyScript": {
+            "meaning": "物料批次groovy脚本",
+            "reachable": true,
+            "name": "物料批次groovy脚本"
+        },
+        "matBatchATMatGropeCode": {
+            "meaning": "物料批次搜索码",
+            "reachable": true,
+            "name": "物料批次搜索码"
+        },
+        "matBatchATMatId": {
+            "meaning": "matBatchATMatId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatInUsed": {
+            "meaning": "物料批次是否被使用",
+            "reachable": true,
+            "name": "物料批次是否被使用"
+        },
+        "matBatchATMatInactiveCallDays": {
+            "meaning": "matBatchATMatInactiveCallDays",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatInactiveDays": {
+            "meaning": "matBatchATMatInactiveDays",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatIsBanned": {
+            "meaning": "物料批次是否被禁用",
+            "reachable": true,
+            "name": "物料批次是否被禁用"
+        },
+        "matBatchATMatIsDeleted": {
+            "meaning": "物料批次是否被删除",
+            "reachable": true,
+            "name": "物料批次是否被删除"
+        },
+        "matBatchATMatIsMainFlow": {
+            "meaning": "物料批次是否是主流程",
+            "reachable": true,
+            "name": "物料批次是否是主流程"
+        },
+        "matBatchATMatIsMatClassification": {
+            "meaning": "matBatchATMatIsMatClassification",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatIsolation": {
+            "meaning": "物料批次智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料批次智能节点数据隔离标识"
+        },
+        "matBatchATMatJsScript": {
+            "meaning": "物料批次js脚本",
+            "reachable": true,
+            "name": "物料批次js脚本"
+        },
+        "matBatchATMatMaxInventory": {
+            "meaning": "matBatchATMatMaxInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatMinInventory": {
+            "meaning": "matBatchATMatMinInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatName": {
+            "meaning": "物料批次智能节点名",
+            "reachable": true,
+            "name": "物料批次智能节点名"
+        },
+        "matBatchATMatNameCodeSearch": {
+            "meaning": "物料批次name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料批次name、user_code模糊搜索"
+        },
+        "matBatchATMatNumberExtra1": {
+            "meaning": "物料批次扩展数量1",
+            "reachable": true,
+            "name": "物料批次扩展数量1"
+        },
+        "matBatchATMatNumberExtra2": {
+            "meaning": "物料批次扩展数量2",
+            "reachable": true,
+            "name": "物料批次扩展数量2"
+        },
+        "matBatchATMatNumberExtra3": {
+            "meaning": "物料批次扩展数量3",
+            "reachable": true,
+            "name": "物料批次扩展数量3"
+        },
+        "matBatchATMatNumberExtra4": {
+            "meaning": "物料批次扩展数量4",
+            "reachable": true,
+            "name": "物料批次扩展数量4"
+        },
+        "matBatchATMatNumberExtra5": {
+            "meaning": "物料批次扩展数量5",
+            "reachable": true,
+            "name": "物料批次扩展数量5"
+        },
+        "matBatchATMatOrigin": {
+            "meaning": "matBatchATMatOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatOverPurchasePercent": {
+            "meaning": "matBatchATMatOverPurchasePercent",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatParentId": {
+            "meaning": "物料批次父节点ID",
+            "reachable": true,
+            "name": "物料批次父节点ID"
+        },
+        "matBatchATMatPlaceOfOrigin": {
+            "meaning": "matBatchATMatPlaceOfOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatProcessInstanceId": {
+            "meaning": "物料批次流程实例ID",
+            "reachable": true,
+            "name": "物料批次流程实例ID"
+        },
+        "matBatchATMatProductGroup": {
+            "meaning": "matBatchATMatProductGroup",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatPurCycle": {
+            "meaning": "matBatchATMatPurCycle",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatPurMatCont": {
+            "meaning": "matBatchATMatPurMatCont",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatSearchCode": {
+            "meaning": "matBatchATMatSearchCode",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatSerialNumber": {
+            "meaning": "物料批次顺序号",
+            "reachable": true,
+            "name": "物料批次顺序号"
+        },
+        "matBatchATMatShelfLife": {
+            "meaning": "matBatchATMatShelfLife",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatStandardCostsIncludingTax": {
+            "meaning": "matBatchATMatStandardCostsIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatStandardCostsWithoutTax": {
+            "meaning": "matBatchATMatStandardCostsWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatState": {
+            "meaning": "物料批次通用状态",
+            "reachable": true,
+            "name": "物料批次通用状态"
+        },
+        "matBatchATMatSystemCode": {
+            "meaning": "物料批次系统编码",
+            "reachable": true,
+            "name": "物料批次系统编码"
+        },
+        "matBatchATMatTaskNodeName": {
+            "meaning": "物料批次任务节点名称",
+            "reachable": true,
+            "name": "物料批次任务节点名称"
+        },
+        "matBatchATMatTenantId": {
+            "meaning": "matBatchATMatTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatThirdPartyClass": {
+            "meaning": "物料批次第三方分类",
+            "reachable": true,
+            "name": "物料批次第三方分类"
+        },
+        "matBatchATMatThirdPartyId": {
+            "meaning": "物料批次第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料批次第三方系统中的唯一ID"
+        },
+        "matBatchATMatThirdPartyName": {
+            "meaning": "物料批次第三方名称",
+            "reachable": true,
+            "name": "物料批次第三方名称"
+        },
+        "matBatchATMatToAuditDate": {
+            "meaning": "matBatchATMatToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToCreateTime": {
+            "meaning": "matBatchATMatToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToDateExtra1": {
+            "meaning": "matBatchATMatToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToDateExtra2": {
+            "meaning": "matBatchATMatToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToDateExtra3": {
+            "meaning": "matBatchATMatToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToDateExtra4": {
+            "meaning": "matBatchATMatToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToDateExtra5": {
+            "meaning": "matBatchATMatToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatToUpdateTime": {
+            "meaning": "matBatchATMatToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchATMatUpdateTime": {
+            "meaning": "matBatchATMatUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchATMatUpdater": {
+            "meaning": "物料批次更新人",
+            "reachable": true,
+            "name": "物料批次更新人"
+        },
+        "matBatchATMatUpdaterId": {
+            "meaning": "物料批次更新人ID",
+            "reachable": true,
+            "name": "物料批次更新人ID"
+        },
+        "matBatchATMatUserCode": {
+            "meaning": "物料批次智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料批次智能节点的唯一编码"
+        },
+        "matBatchATMatVarExtra1": {
+            "meaning": "物料批次扩展1",
+            "reachable": true,
+            "name": "物料批次扩展1"
+        },
+        "matBatchATMatVarExtra2": {
+            "meaning": "物料批次扩展2",
+            "reachable": true,
+            "name": "物料批次扩展2"
+        },
+        "matBatchATMatVarExtra3": {
+            "meaning": "物料批次扩展3",
+            "reachable": true,
+            "name": "物料批次扩展3"
+        },
+        "matBatchATMatVarExtra4": {
+            "meaning": "物料批次扩展4",
+            "reachable": true,
+            "name": "物料批次扩展4"
+        },
+        "matBatchATMatVarExtra5": {
+            "meaning": "物料批次扩展5",
+            "reachable": true,
+            "name": "物料批次扩展5"
+        },
+        "matBatchATMatVersion": {
+            "meaning": "物料批次版本号",
+            "reachable": true,
+            "name": "物料批次版本号"
+        },
+        "matBatchATMatWarehouseSpaceId": {
+            "meaning": "matBatchATMatWarehouseSpaceId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchApplicationId": {
+            "meaning": "物料批次应用ID",
+            "reachable": true,
+            "name": "物料批次应用ID"
+        },
+        "matBatchArrivalDate": {
+            "type": "object",
+            "meaning": "matBatchArrivalDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchAuditDate": {
+            "meaning": "物料批次审核时间",
+            "reachable": true,
+            "name": "物料批次审核时间"
+        },
+        "matBatchAuditStatus": {
+            "meaning": "物料批次审核状态",
+            "reachable": true,
+            "name": "物料批次审核状态"
+        },
+        "matBatchBatchQuantity": {
+            "meaning": "matBatchBatchQuantity",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchBizVersion": {
+            "meaning": "物料批次业务自定义版本号",
+            "reachable": true,
+            "name": "物料批次业务自定义版本号"
+        },
+        "matBatchBriefName": {
+            "meaning": "物料批次简称",
+            "reachable": true,
+            "name": "物料批次简称"
+        },
+        "matBatchBusDivisId": {
+            "meaning": "物料批次事业部id",
+            "reachable": true,
+            "name": "物料批次事业部id"
+        },
+        "matBatchClazz": {
+            "meaning": "物料批次子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料批次子类"
+        },
+        "matBatchComment": {
+            "meaning": "物料批次评论",
+            "reachable": true,
+            "name": "物料批次评论"
+        },
+        "matBatchCreateTime": {
+            "meaning": "物料批次创建时间",
+            "reachable": true,
+            "name": "物料批次创建时间"
+        },
+        "matBatchCreator": {
+            "meaning": "物料批次创建人",
+            "reachable": true,
+            "name": "物料批次创建人"
+        },
+        "matBatchCreatorId": {
+            "meaning": "物料批次创建人ID",
+            "reachable": true,
+            "name": "物料批次创建人ID"
+        },
+        "matBatchCustBatchNo": {
+            "meaning": "matBatchCustBatchNo",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchDateExtra1": {
+            "meaning": "物料批次扩展时间1",
+            "reachable": true,
+            "name": "物料批次扩展时间1"
+        },
+        "matBatchDateExtra2": {
+            "meaning": "物料批次扩展时间2",
+            "reachable": true,
+            "name": "物料批次扩展时间2"
+        },
+        "matBatchDateExtra3": {
+            "meaning": "物料批次扩展时间3",
+            "reachable": true,
+            "name": "物料批次扩展时间3"
+        },
+        "matBatchDateExtra4": {
+            "meaning": "物料批次扩展时间4",
+            "reachable": true,
+            "name": "物料批次扩展时间4"
+        },
+        "matBatchDateExtra5": {
+            "meaning": "物料批次扩展时间5",
+            "reachable": true,
+            "name": "物料批次扩展时间5"
+        },
+        "matBatchDefaultType": {
+            "meaning": "物料批次智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料批次智能节点主类型"
+        },
+        "matBatchDescription": {
+            "meaning": "物料批次描述",
+            "reachable": true,
+            "name": "物料批次描述"
+        },
+        "matBatchEngName": {
+            "meaning": "物料批次英文名称",
+            "reachable": true,
+            "name": "物料批次英文名称"
+        },
+        "matBatchExtension": {
+            "meaning": "物料批次扩展数据",
+            "reachable": true,
+            "name": "物料批次扩展数据"
+        },
+        "matBatchExternalState": {
+            "meaning": "物料批次上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料批次上流程状态位"
+        },
+        "matBatchFlags": {
+            "meaning": "物料批次63位标志位",
+            "reachable": true,
+            "name": "物料批次63位标志位"
+        },
+        "matBatchFromArrivalDate": {
+            "type": "object",
+            "meaning": "matBatchFromArrivalDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromAuditDate": {
+            "meaning": "matBatchFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromCreateTime": {
+            "meaning": "matBatchFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromDateExtra1": {
+            "meaning": "matBatchFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromDateExtra2": {
+            "meaning": "matBatchFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromDateExtra3": {
+            "meaning": "matBatchFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromDateExtra4": {
+            "meaning": "matBatchFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromDateExtra5": {
+            "meaning": "matBatchFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromMaterialDateOfManufacture": {
+            "type": "object",
+            "meaning": "matBatchFromMaterialDateOfManufacture",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromMaterialPeriodOfValidity": {
+            "type": "object",
+            "meaning": "matBatchFromMaterialPeriodOfValidity",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchFromUpdateTime": {
+            "meaning": "matBatchFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchGroovyScript": {
+            "meaning": "物料批次groovy脚本",
+            "reachable": true,
+            "name": "物料批次groovy脚本"
+        },
+        "matBatchGropeCode": {
+            "meaning": "物料批次搜索码",
+            "reachable": true,
+            "name": "物料批次搜索码"
+        },
+        "matBatchId": {
+            "meaning": "物料批次主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料批次主键ID"
+        },
+        "matBatchInUsed": {
+            "meaning": "物料批次是否被使用",
+            "reachable": true,
+            "name": "物料批次是否被使用"
+        },
+        "matBatchInternalBarcode": {
+            "meaning": "物料批次内部条码",
+            "reachable": true,
+            "name": "物料批次内部条码"
+        },
+        "matBatchIsBanned": {
+            "meaning": "物料批次是否被禁用",
+            "reachable": true,
+            "name": "物料批次是否被禁用"
+        },
+        "matBatchIsDeleted": {
+            "meaning": "物料批次是否被删除",
+            "reachable": true,
+            "name": "物料批次是否被删除"
+        },
+        "matBatchIsMainFlow": {
+            "meaning": "物料批次是否是主流程",
+            "reachable": true,
+            "name": "物料批次是否是主流程"
+        },
+        "matBatchIsolation": {
+            "meaning": "物料批次智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料批次智能节点数据隔离标识"
+        },
+        "matBatchJsScript": {
+            "meaning": "物料批次js脚本",
+            "reachable": true,
+            "name": "物料批次js脚本"
+        },
+        "matBatchMaterialDateOfManufacture": {
+            "type": "object",
+            "meaning": "matBatchMaterialDateOfManufacture",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchMaterialId": {
+            "meaning": "matBatchMaterialId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchMaterialPeriodOfValidity": {
+            "type": "object",
+            "meaning": "matBatchMaterialPeriodOfValidity",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchMaxUsageCount": {
+            "meaning": "物料批次最大使用次数",
+            "reachable": true,
+            "name": "物料批次最大使用次数"
+        },
+        "matBatchName": {
+            "meaning": "物料批次智能节点名",
+            "reachable": true,
+            "name": "物料批次智能节点名"
+        },
+        "matBatchNameCodeSearch": {
+            "meaning": "物料批次name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料批次name、user_code模糊搜索"
+        },
+        "matBatchNumberExtra1": {
+            "meaning": "物料批次扩展数量1",
+            "reachable": true,
+            "name": "物料批次扩展数量1"
+        },
+        "matBatchNumberExtra2": {
+            "meaning": "物料批次扩展数量2",
+            "reachable": true,
+            "name": "物料批次扩展数量2"
+        },
+        "matBatchNumberExtra3": {
+            "meaning": "物料批次扩展数量3",
+            "reachable": true,
+            "name": "物料批次扩展数量3"
+        },
+        "matBatchNumberExtra4": {
+            "meaning": "物料批次扩展数量4",
+            "reachable": true,
+            "name": "物料批次扩展数量4"
+        },
+        "matBatchNumberExtra5": {
+            "meaning": "物料批次扩展数量5",
+            "reachable": true,
+            "name": "物料批次扩展数量5"
+        },
+        "matBatchOrderCostIncludingTax": {
+            "meaning": "matBatchOrderCostIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchOrderCostWithoutTax": {
+            "meaning": "matBatchOrderCostWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchOrganizationId": {
+            "meaning": "matBatchOrganizationId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchOtherExternalCostsTax": {
+            "meaning": "matBatchOtherExternalCostsTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchParentId": {
+            "meaning": "物料批次父节点ID",
+            "reachable": true,
+            "name": "物料批次父节点ID"
+        },
+        "matBatchProcessInstanceId": {
+            "meaning": "物料批次流程实例ID",
+            "reachable": true,
+            "name": "物料批次流程实例ID"
+        },
+        "matBatchProdBatchNo": {
+            "meaning": "matBatchProdBatchNo",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchProductionCost": {
+            "meaning": "matBatchProductionCost",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchPurchaseCostIncludingTax": {
+            "meaning": "matBatchPurchaseCostIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchPurchaseCostWithoutTax": {
+            "meaning": "matBatchPurchaseCostWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchPurchasePriceIncludingTax": {
+            "meaning": "matBatchPurchasePriceIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchPurchasePriceWithoutTax": {
+            "meaning": "matBatchPurchasePriceWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchSerialNumber": {
+            "meaning": "物料批次顺序号",
+            "reachable": true,
+            "name": "物料批次顺序号"
+        },
+        "matBatchSettlementCostIncludingTax": {
+            "meaning": "matBatchSettlementCostIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchSettlementCostWithoutTax": {
+            "meaning": "matBatchSettlementCostWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchShelfLifeDays": {
+            "meaning": "物料批次保质期(天)",
+            "reachable": true,
+            "name": "物料批次保质期"
+        },
+        "matBatchState": {
+            "meaning": "物料批次通用状态",
+            "reachable": true,
+            "name": "物料批次通用状态"
+        },
+        "matBatchStorageCost": {
+            "meaning": "matBatchStorageCost",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchSupBatBarcode": {
+            "meaning": "物料批次供应商批次条码",
+            "reachable": true,
+            "name": "物料批次供应商批次条码"
+        },
+        "matBatchSystemCode": {
+            "meaning": "物料批次系统编码",
+            "reachable": true,
+            "name": "物料批次系统编码"
+        },
+        "matBatchTaskNodeName": {
+            "meaning": "物料批次任务节点名称",
+            "reachable": true,
+            "name": "物料批次任务节点名称"
+        },
+        "matBatchTenantId": {
+            "meaning": "matBatchTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchThirdPartyClass": {
+            "meaning": "物料批次第三方分类",
+            "reachable": true,
+            "name": "物料批次第三方分类"
+        },
+        "matBatchThirdPartyId": {
+            "meaning": "物料批次第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料批次第三方系统中的唯一ID"
+        },
+        "matBatchThirdPartyName": {
+            "meaning": "物料批次第三方名称",
+            "reachable": true,
+            "name": "物料批次第三方名称"
+        },
+        "matBatchToArrivalDate": {
+            "type": "object",
+            "meaning": "matBatchToArrivalDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToAuditDate": {
+            "meaning": "matBatchToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToCreateTime": {
+            "meaning": "matBatchToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToDateExtra1": {
+            "meaning": "matBatchToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToDateExtra2": {
+            "meaning": "matBatchToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToDateExtra3": {
+            "meaning": "matBatchToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToDateExtra4": {
+            "meaning": "matBatchToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToDateExtra5": {
+            "meaning": "matBatchToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToMaterialDateOfManufacture": {
+            "type": "object",
+            "meaning": "matBatchToMaterialDateOfManufacture",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToMaterialPeriodOfValidity": {
+            "type": "object",
+            "meaning": "matBatchToMaterialPeriodOfValidity",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchToUpdateTime": {
+            "meaning": "matBatchToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matBatchTransportCostIncludingTax": {
+            "meaning": "matBatchTransportCostIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchTransportCostWithoutTax": {
+            "meaning": "matBatchTransportCostWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchUpdateTime": {
+            "meaning": "物料批次更新时间",
+            "reachable": true,
+            "name": "物料批次更新时间"
+        },
+        "matBatchUpdater": {
+            "meaning": "物料批次更新人",
+            "reachable": true,
+            "name": "物料批次更新人"
+        },
+        "matBatchUpdaterId": {
+            "meaning": "物料批次更新人ID",
+            "reachable": true,
+            "name": "物料批次更新人ID"
+        },
+        "matBatchUsageCount": {
+            "meaning": "物料批次已使用次数",
+            "reachable": true,
+            "name": "物料批次已使用次数"
+        },
+        "matBatchUserCode": {
+            "meaning": "物料批次智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料批次智能节点的唯一编码"
+        },
+        "matBatchVarExtra1": {
+            "meaning": "物料批次扩展1",
+            "reachable": true,
+            "name": "物料批次扩展1"
+        },
+        "matBatchVarExtra2": {
+            "meaning": "物料批次扩展2",
+            "reachable": true,
+            "name": "物料批次扩展2"
+        },
+        "matBatchVarExtra3": {
+            "meaning": "物料批次扩展3",
+            "reachable": true,
+            "name": "物料批次扩展3"
+        },
+        "matBatchVarExtra4": {
+            "meaning": "物料批次扩展4",
+            "reachable": true,
+            "name": "物料批次扩展4"
+        },
+        "matBatchVarExtra5": {
+            "meaning": "物料批次扩展5",
+            "reachable": true,
+            "name": "物料批次扩展5"
+        },
+        "matBatchVersion": {
+            "meaning": "物料批次版本号",
+            "reachable": true,
+            "name": "物料批次版本号"
+        },
+        "matBatchWealthSharingCostTax": {
+            "meaning": "matBatchWealthSharingCostTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matBatchWoBatchNo": {
+            "meaning": "matBatchWoBatchNo",
+            "reachable": true,
+            "name": ""
+        }
+    }
+}

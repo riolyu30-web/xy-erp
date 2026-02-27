@@ -1,0 +1,1352 @@
+{
+    "api_name": "/fin-outstorage-det/findList",
+    "table_name": "成品出库明细表",
+    "request": {
+        "finOutstorageDetFinOutstorageClazz": "FIN_OUTSTORAGE",
+        "finOutstorageDetClazz": "FIN_OUTSTORAGE_DET"
+    },
+    "mainTabClazz": "FIN_OUTSTORAGE_DET",
+    "response": {
+        "finOutstorageDetActualTimeRequired": {
+            "meaning": "成品出库明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表实际需时"
+        },
+        "finOutstorageDetAdditionalWeight": {
+            "meaning": "成品出库明细表附加重量",
+            "reachable": true,
+            "name": "成品出库明细表附加重量"
+        },
+        "finOutstorageDetAdjustmentTimeRequired": {
+            "meaning": "成品出库明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品出库明细表调整需时"
+        },
+        "finOutstorageDetApplicationId": {
+            "meaning": "成品出库明细表应用ID",
+            "reachable": true,
+            "name": "成品出库明细表应用ID"
+        },
+        "finOutstorageDetAuditDate": {
+            "meaning": "成品出库明细表审核时间",
+            "reachable": true,
+            "name": "成品出库明细表审核时间"
+        },
+        "finOutstorageDetAuditStatus": {
+            "meaning": "成品出库明细表审核状态",
+            "reachable": true,
+            "name": "成品出库明细表审核状态"
+        },
+        "finOutstorageDetAvailableScheduleId": {
+            "meaning": "成品出库明细表可用日程id",
+            "reachable": true,
+            "name": "成品出库明细表可用日程id"
+        },
+        "finOutstorageDetBeginTime": {
+            "meaning": "成品出库明细表开始时间",
+            "reachable": true,
+            "name": "成品出库明细表开始时间"
+        },
+        "finOutstorageDetBizVersion": {
+            "meaning": "成品出库明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品出库明细表业务自定义版本号"
+        },
+        "finOutstorageDetBriefName": {
+            "meaning": "成品出库明细表简称",
+            "reachable": true,
+            "name": "成品出库明细表简称"
+        },
+        "finOutstorageDetBusDivisId": {
+            "meaning": "成品出库明细表事业部id",
+            "reachable": true,
+            "name": "成品出库明细表事业部id"
+        },
+        "finOutstorageDetClazz": {
+            "meaning": "成品出库明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品出库明细表子类"
+        },
+        "finOutstorageDetClosedReason": {
+            "meaning": "成品出库明细表结案原因",
+            "reachable": true,
+            "name": "成品出库明细表结案原因"
+        },
+        "finOutstorageDetClosedStatus": {
+            "meaning": "成品出库明细表结案状态",
+            "reachable": true,
+            "name": "成品出库明细表结案状态"
+        },
+        "finOutstorageDetComment": {
+            "meaning": "成品出库明细表评论",
+            "reachable": true,
+            "name": "成品出库明细表评论"
+        },
+        "finOutstorageDetCompleteQuantity": {
+            "meaning": "成品出库明细表完成数量",
+            "reachable": true,
+            "name": "成品出库明细表完成数量"
+        },
+        "finOutstorageDetCompleteStatus": {
+            "meaning": "成品出库明细表完成状态",
+            "reachable": true,
+            "name": "成品出库明细表完成状态"
+        },
+        "finOutstorageDetCreateTime": {
+            "meaning": "成品出库明细表创建时间",
+            "reachable": true,
+            "name": "成品出库明细表创建时间"
+        },
+        "finOutstorageDetCreator": {
+            "meaning": "成品出库明细表创建人",
+            "reachable": true,
+            "name": "成品出库明细表创建人"
+        },
+        "finOutstorageDetCreatorId": {
+            "meaning": "成品出库明细表创建人ID",
+            "reachable": true,
+            "name": "成品出库明细表创建人ID"
+        },
+        "finOutstorageDetDateExtra1": {
+            "meaning": "成品出库明细表扩展时间1",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间1"
+        },
+        "finOutstorageDetDateExtra2": {
+            "meaning": "成品出库明细表扩展时间2",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间2"
+        },
+        "finOutstorageDetDateExtra3": {
+            "meaning": "成品出库明细表扩展时间3",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间3"
+        },
+        "finOutstorageDetDateExtra4": {
+            "meaning": "成品出库明细表扩展时间4",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间4"
+        },
+        "finOutstorageDetDateExtra5": {
+            "meaning": "成品出库明细表扩展时间5",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间5"
+        },
+        "finOutstorageDetDefaultType": {
+            "meaning": "成品出库明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品出库明细表智能节点主类型"
+        },
+        "finOutstorageDetDeliveryDate": {
+            "meaning": "成品出库明细表交货日期",
+            "reachable": true,
+            "name": "成品出库明细表交货日期"
+        },
+        "finOutstorageDetDescription": {
+            "meaning": "成品出库明细表描述",
+            "reachable": true,
+            "name": "成品出库明细表描述"
+        },
+        "finOutstorageDetEndTime": {
+            "meaning": "成品出库明细表结束时间",
+            "reachable": true,
+            "name": "成品出库明细表结束时间"
+        },
+        "finOutstorageDetEndTimeRequired": {
+            "meaning": "成品出库明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表最后需时"
+        },
+        "finOutstorageDetEngName": {
+            "meaning": "成品出库明细表英文名称",
+            "reachable": true,
+            "name": "成品出库明细表英文名称"
+        },
+        "finOutstorageDetEquipmentId": {
+            "meaning": "成品出库明细表设备id",
+            "reachable": true,
+            "name": "成品出库明细表设备id"
+        },
+        "finOutstorageDetExchangeRateId": {
+            "meaning": "成品出库明细表币种汇率id",
+            "reachable": true,
+            "name": "成品出库明细表币种汇率id"
+        },
+        "finOutstorageDetExtension": {
+            "meaning": "成品出库明细表扩展数据",
+            "reachable": true,
+            "name": "成品出库明细表扩展数据"
+        },
+        "finOutstorageDetExternalState": {
+            "meaning": "成品出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品出库明细表上流程状态位"
+        },
+        "finOutstorageDetFilterClazz": {
+            "meaning": "成品出库明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品出库明细表冗余字段用于筛选"
+        },
+        "finOutstorageDetFinOutstorageActualTimeRequired": {
+            "meaning": "成品出库明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表实际需时"
+        },
+        "finOutstorageDetFinOutstorageAdjustmentTimeRequired": {
+            "meaning": "成品出库明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品出库明细表调整需时"
+        },
+        "finOutstorageDetFinOutstorageApplicationId": {
+            "meaning": "成品出库明细表应用ID",
+            "reachable": true,
+            "name": "成品出库明细表应用ID"
+        },
+        "finOutstorageDetFinOutstorageAuditDate": {
+            "meaning": "成品出库明细表审核时间",
+            "reachable": true,
+            "name": "成品出库明细表审核时间"
+        },
+        "finOutstorageDetFinOutstorageAuditStatus": {
+            "meaning": "成品出库明细表审核状态",
+            "reachable": true,
+            "name": "成品出库明细表审核状态"
+        },
+        "finOutstorageDetFinOutstorageAvailableScheduleId": {
+            "meaning": "成品出库明细表可用日程id",
+            "reachable": true,
+            "name": "成品出库明细表可用日程id"
+        },
+        "finOutstorageDetFinOutstorageBeginTime": {
+            "meaning": "成品出库明细表开始时间",
+            "reachable": true,
+            "name": "成品出库明细表开始时间"
+        },
+        "finOutstorageDetFinOutstorageBizVersion": {
+            "meaning": "成品出库明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品出库明细表业务自定义版本号"
+        },
+        "finOutstorageDetFinOutstorageBriefName": {
+            "meaning": "成品出库明细表简称",
+            "reachable": true,
+            "name": "成品出库明细表简称"
+        },
+        "finOutstorageDetFinOutstorageBusDivisId": {
+            "meaning": "成品出库明细表事业部id",
+            "reachable": true,
+            "name": "成品出库明细表事业部id"
+        },
+        "finOutstorageDetFinOutstorageClazz": {
+            "meaning": "成品出库明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品出库明细表子类"
+        },
+        "finOutstorageDetFinOutstorageClosedReason": {
+            "meaning": "成品出库明细表结案原因",
+            "reachable": true,
+            "name": "成品出库明细表结案原因"
+        },
+        "finOutstorageDetFinOutstorageClosedStatus": {
+            "meaning": "成品出库明细表结案状态",
+            "reachable": true,
+            "name": "成品出库明细表结案状态"
+        },
+        "finOutstorageDetFinOutstorageComment": {
+            "meaning": "成品出库明细表评论",
+            "reachable": true,
+            "name": "成品出库明细表评论"
+        },
+        "finOutstorageDetFinOutstorageCompleteQuantity": {
+            "meaning": "成品出库明细表完成数量",
+            "reachable": true,
+            "name": "成品出库明细表完成数量"
+        },
+        "finOutstorageDetFinOutstorageCompleteStatus": {
+            "meaning": "成品出库明细表完成状态",
+            "reachable": true,
+            "name": "成品出库明细表完成状态"
+        },
+        "finOutstorageDetFinOutstorageCreateTime": {
+            "meaning": "成品出库明细表创建时间",
+            "reachable": true,
+            "name": "成品出库明细表创建时间"
+        },
+        "finOutstorageDetFinOutstorageCreator": {
+            "meaning": "成品出库明细表创建人",
+            "reachable": true,
+            "name": "成品出库明细表创建人"
+        },
+        "finOutstorageDetFinOutstorageCreatorId": {
+            "meaning": "成品出库明细表创建人ID",
+            "reachable": true,
+            "name": "成品出库明细表创建人ID"
+        },
+        "finOutstorageDetFinOutstorageDateExtra1": {
+            "meaning": "成品出库明细表扩展时间1",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间1"
+        },
+        "finOutstorageDetFinOutstorageDateExtra2": {
+            "meaning": "成品出库明细表扩展时间2",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间2"
+        },
+        "finOutstorageDetFinOutstorageDateExtra3": {
+            "meaning": "成品出库明细表扩展时间3",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间3"
+        },
+        "finOutstorageDetFinOutstorageDateExtra4": {
+            "meaning": "成品出库明细表扩展时间4",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间4"
+        },
+        "finOutstorageDetFinOutstorageDateExtra5": {
+            "meaning": "成品出库明细表扩展时间5",
+            "reachable": true,
+            "name": "成品出库明细表扩展时间5"
+        },
+        "finOutstorageDetFinOutstorageDefaultType": {
+            "meaning": "成品出库明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品出库明细表智能节点主类型"
+        },
+        "finOutstorageDetFinOutstorageDeliveryDate": {
+            "meaning": "成品出库明细表交货日期",
+            "reachable": true,
+            "name": "成品出库明细表交货日期"
+        },
+        "finOutstorageDetFinOutstorageDepId": {
+            "meaning": "成品出库明细表部门id",
+            "reachable": true,
+            "name": "成品出库明细表部门id"
+        },
+        "finOutstorageDetFinOutstorageDescription": {
+            "meaning": "成品出库明细表描述",
+            "reachable": true,
+            "name": "成品出库明细表描述"
+        },
+        "finOutstorageDetFinOutstorageEndTime": {
+            "meaning": "成品出库明细表结束时间",
+            "reachable": true,
+            "name": "成品出库明细表结束时间"
+        },
+        "finOutstorageDetFinOutstorageEndTimeRequired": {
+            "meaning": "成品出库明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表最后需时"
+        },
+        "finOutstorageDetFinOutstorageEngName": {
+            "meaning": "成品出库明细表英文名称",
+            "reachable": true,
+            "name": "成品出库明细表英文名称"
+        },
+        "finOutstorageDetFinOutstorageEquipmentId": {
+            "meaning": "成品出库明细表设备id",
+            "reachable": true,
+            "name": "成品出库明细表设备id"
+        },
+        "finOutstorageDetFinOutstorageExchangeRateId": {
+            "meaning": "成品出库明细表币种汇率id",
+            "reachable": true,
+            "name": "成品出库明细表币种汇率id"
+        },
+        "finOutstorageDetFinOutstorageExtension": {
+            "meaning": "成品出库明细表扩展数据",
+            "reachable": true,
+            "name": "成品出库明细表扩展数据"
+        },
+        "finOutstorageDetFinOutstorageExternalState": {
+            "meaning": "成品出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品出库明细表上流程状态位"
+        },
+        "finOutstorageDetFinOutstorageFilterClazz": {
+            "meaning": "成品出库明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品出库明细表冗余字段用于筛选"
+        },
+        "finOutstorageDetFinOutstorageFlags": {
+            "meaning": "成品出库明细表63位标志位",
+            "reachable": true,
+            "name": "成品出库明细表63位标志位"
+        },
+        "finOutstorageDetFinOutstorageFromAuditDate": {
+            "meaning": "finOutstorageDetFinOutstorageFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromBeginTime": {
+            "meaning": "finOutstorageDetFinOutstorageFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromCreateTime": {
+            "meaning": "finOutstorageDetFinOutstorageFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDateExtra1": {
+            "meaning": "finOutstorageDetFinOutstorageFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDateExtra2": {
+            "meaning": "finOutstorageDetFinOutstorageFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDateExtra3": {
+            "meaning": "finOutstorageDetFinOutstorageFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDateExtra4": {
+            "meaning": "finOutstorageDetFinOutstorageFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDateExtra5": {
+            "meaning": "finOutstorageDetFinOutstorageFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromDeliveryDate": {
+            "meaning": "finOutstorageDetFinOutstorageFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromEndTime": {
+            "meaning": "finOutstorageDetFinOutstorageFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromReceiptDate": {
+            "meaning": "finOutstorageDetFinOutstorageFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFromUpdateTime": {
+            "meaning": "finOutstorageDetFinOutstorageFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageFscType": {
+            "meaning": "成品出库明细表FSC声明",
+            "reachable": true,
+            "name": "成品出库明细表FSC声明"
+        },
+        "finOutstorageDetFinOutstorageGenerativePeople": {
+            "meaning": "成品出库明细表下发人",
+            "reachable": true,
+            "name": "成品出库明细表下发人"
+        },
+        "finOutstorageDetFinOutstorageGenerativeState": {
+            "meaning": "成品出库明细表下发状态",
+            "reachable": true,
+            "name": "成品出库明细表下发状态"
+        },
+        "finOutstorageDetFinOutstorageGroovyScript": {
+            "meaning": "成品出库明细表groovy脚本",
+            "reachable": true,
+            "name": "成品出库明细表groovy脚本"
+        },
+        "finOutstorageDetFinOutstorageGropeCode": {
+            "meaning": "成品出库明细表搜索码",
+            "reachable": true,
+            "name": "成品出库明细表搜索码"
+        },
+        "finOutstorageDetFinOutstorageId": {
+            "meaning": "成品出库明细表PK",
+            "reachable": true,
+            "name": "成品出库明细表PK"
+        },
+        "finOutstorageDetFinOutstorageInUsed": {
+            "meaning": "成品出库明细表是否被使用",
+            "reachable": true,
+            "name": "成品出库明细表是否被使用"
+        },
+        "finOutstorageDetFinOutstorageInvTypeTaxRateId": {
+            "meaning": "成品出库明细表发票税率id",
+            "reachable": true,
+            "name": "成品出库明细表发票税率id"
+        },
+        "finOutstorageDetFinOutstorageIsBanned": {
+            "meaning": "成品出库明细表是否被禁用",
+            "reachable": true,
+            "name": "成品出库明细表是否被禁用"
+        },
+        "finOutstorageDetFinOutstorageIsDeleted": {
+            "meaning": "成品出库明细表是否被删除",
+            "reachable": true,
+            "name": "成品出库明细表是否被删除"
+        },
+        "finOutstorageDetFinOutstorageIsLeaf": {
+            "meaning": "成品出库明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品出库明细表是否叶子节点"
+        },
+        "finOutstorageDetFinOutstorageIsMainFlow": {
+            "meaning": "成品出库明细表是否是主流程",
+            "reachable": true,
+            "name": "成品出库明细表是否是主流程"
+        },
+        "finOutstorageDetFinOutstorageIsManualModificationDate": {
+            "meaning": "成品出库明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品出库明细表是否手动修改计划生产时间"
+        },
+        "finOutstorageDetFinOutstorageIsolation": {
+            "meaning": "成品出库明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品出库明细表智能节点数据隔离标识"
+        },
+        "finOutstorageDetFinOutstorageJsScript": {
+            "meaning": "成品出库明细表js脚本",
+            "reachable": true,
+            "name": "成品出库明细表js脚本"
+        },
+        "finOutstorageDetFinOutstorageMaterialId": {
+            "meaning": "成品出库明细表物料id",
+            "reachable": true,
+            "name": "成品出库明细表物料id"
+        },
+        "finOutstorageDetFinOutstorageName": {
+            "meaning": "成品出库明细表智能节点名",
+            "reachable": true,
+            "name": "成品出库明细表智能节点名"
+        },
+        "finOutstorageDetFinOutstorageNameCodeSearch": {
+            "meaning": "成品出库明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品出库明细表name、user_code模糊搜索"
+        },
+        "finOutstorageDetFinOutstorageNumberExtra1": {
+            "meaning": "成品出库明细表扩展数量1",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量1"
+        },
+        "finOutstorageDetFinOutstorageNumberExtra2": {
+            "meaning": "成品出库明细表扩展数量2",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量2"
+        },
+        "finOutstorageDetFinOutstorageNumberExtra3": {
+            "meaning": "成品出库明细表扩展数量3",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量3"
+        },
+        "finOutstorageDetFinOutstorageNumberExtra4": {
+            "meaning": "成品出库明细表扩展数量4",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量4"
+        },
+        "finOutstorageDetFinOutstorageNumberExtra5": {
+            "meaning": "成品出库明细表扩展数量5",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量5"
+        },
+        "finOutstorageDetFinOutstorageOrgId": {
+            "meaning": "成品出库明细表机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品出库明细表机构id"
+        },
+        "finOutstorageDetFinOutstorageParentId": {
+            "meaning": "成品出库明细表父节点ID",
+            "reachable": true,
+            "name": "成品出库明细表父节点ID"
+        },
+        "finOutstorageDetFinOutstoragePlannedOutputQuantity": {
+            "meaning": "成品出库明细表计划产出数量",
+            "reachable": true,
+            "name": "成品出库明细表计划产出数量"
+        },
+        "finOutstorageDetFinOutstoragePlannedTimeRequired": {
+            "meaning": "成品出库明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表计划需时"
+        },
+        "finOutstorageDetFinOutstoragePrintTimes": {
+            "meaning": "成品出库明细表打印次数",
+            "reachable": true,
+            "name": "成品出库明细表打印次数"
+        },
+        "finOutstorageDetFinOutstoragePriority": {
+            "meaning": "成品出库明细表优先级",
+            "reachable": true,
+            "name": "成品出库明细表优先级"
+        },
+        "finOutstorageDetFinOutstorageProcessInstanceId": {
+            "meaning": "成品出库明细表流程实例ID",
+            "reachable": true,
+            "name": "成品出库明细表流程实例ID"
+        },
+        "finOutstorageDetFinOutstorageProductionProcessesTypeId": {
+            "meaning": "成品出库明细表工序类型ID",
+            "reachable": true,
+            "name": "成品出库明细表工序类型ID"
+        },
+        "finOutstorageDetFinOutstorageProductionShiftId": {
+            "meaning": "成品出库明细表生产班次ID",
+            "reachable": true,
+            "name": "成品出库明细表生产班次ID"
+        },
+        "finOutstorageDetFinOutstorageQuantity": {
+            "meaning": "成品出库明细表任务数量",
+            "reachable": true,
+            "name": "成品出库明细表任务数量"
+        },
+        "finOutstorageDetFinOutstorageReceiptDate": {
+            "meaning": "成品出库明细表单据日期",
+            "reachable": true,
+            "name": "成品出库明细表单据日期"
+        },
+        "finOutstorageDetFinOutstorageReceiptType": {
+            "meaning": "成品出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品出库明细表单据类型"
+        },
+        "finOutstorageDetFinOutstorageRelatedTasksId": {
+            "meaning": "成品出库明细表关联任务id",
+            "reachable": true,
+            "name": "成品出库明细表关联任务id"
+        },
+        "finOutstorageDetFinOutstorageSerialNumber": {
+            "meaning": "成品出库明细表顺序号",
+            "reachable": true,
+            "name": "成品出库明细表顺序号"
+        },
+        "finOutstorageDetFinOutstorageSettMethod": {
+            "meaning": "成品出库明细表结算方式",
+            "reachable": true,
+            "name": "成品出库明细表结算方式"
+        },
+        "finOutstorageDetFinOutstorageSettOrgId": {
+            "meaning": "成品出库明细表结算机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品出库明细表结算机构id"
+        },
+        "finOutstorageDetFinOutstorageSource": {
+            "meaning": "成品出库明细表源",
+            "reachable": true,
+            "name": "成品出库明细表源"
+        },
+        "finOutstorageDetFinOutstorageSourceType": {
+            "meaning": "成品出库明细表来源类型",
+            "reachable": true,
+            "name": "成品出库明细表来源类型"
+        },
+        "finOutstorageDetFinOutstorageStaffId": {
+            "meaning": "成品出库明细表员工id(入/出库员工)",
+            "reachable": true,
+            "name": "成品出库明细表员工id"
+        },
+        "finOutstorageDetFinOutstorageState": {
+            "meaning": "成品出库明细表通用状态",
+            "reachable": true,
+            "name": "成品出库明细表通用状态"
+        },
+        "finOutstorageDetFinOutstorageSystemCode": {
+            "meaning": "成品出库明细表系统编码",
+            "reachable": true,
+            "name": "成品出库明细表系统编码"
+        },
+        "finOutstorageDetFinOutstorageTarget": {
+            "meaning": "成品出库明细表目标",
+            "reachable": true,
+            "name": "成品出库明细表目标"
+        },
+        "finOutstorageDetFinOutstorageTaskNodeName": {
+            "meaning": "成品出库明细表任务节点名称",
+            "reachable": true,
+            "name": "成品出库明细表任务节点名称"
+        },
+        "finOutstorageDetFinOutstorageTaskNodeType": {
+            "meaning": "成品出库明细表任务节点类型",
+            "reachable": true,
+            "name": "成品出库明细表任务节点类型"
+        },
+        "finOutstorageDetFinOutstorageTenantId": {
+            "meaning": "成品出库明细表租户id",
+            "reachable": true,
+            "name": "成品出库明细表租户id"
+        },
+        "finOutstorageDetFinOutstorageThirdPartyClass": {
+            "meaning": "成品出库明细表第三方分类",
+            "reachable": true,
+            "name": "成品出库明细表第三方分类"
+        },
+        "finOutstorageDetFinOutstorageThirdPartyId": {
+            "meaning": "成品出库明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品出库明细表第三方系统中的唯一ID"
+        },
+        "finOutstorageDetFinOutstorageThirdPartyName": {
+            "meaning": "成品出库明细表第三方名称",
+            "reachable": true,
+            "name": "成品出库明细表第三方名称"
+        },
+        "finOutstorageDetFinOutstorageToAuditDate": {
+            "meaning": "finOutstorageDetFinOutstorageToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToBeginTime": {
+            "meaning": "finOutstorageDetFinOutstorageToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToCreateTime": {
+            "meaning": "finOutstorageDetFinOutstorageToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDateExtra1": {
+            "meaning": "finOutstorageDetFinOutstorageToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDateExtra2": {
+            "meaning": "finOutstorageDetFinOutstorageToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDateExtra3": {
+            "meaning": "finOutstorageDetFinOutstorageToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDateExtra4": {
+            "meaning": "finOutstorageDetFinOutstorageToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDateExtra5": {
+            "meaning": "finOutstorageDetFinOutstorageToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToDeliveryDate": {
+            "meaning": "finOutstorageDetFinOutstorageToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToEndTime": {
+            "meaning": "finOutstorageDetFinOutstorageToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToReceiptDate": {
+            "meaning": "finOutstorageDetFinOutstorageToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageToUpdateTime": {
+            "meaning": "finOutstorageDetFinOutstorageToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFinOutstorageUnitCode": {
+            "meaning": "成品出库明细表单位id",
+            "reachable": true,
+            "name": "成品出库明细表单位id"
+        },
+        "finOutstorageDetFinOutstorageUpdateTime": {
+            "meaning": "成品出库明细表更新时间",
+            "reachable": true,
+            "name": "成品出库明细表更新时间"
+        },
+        "finOutstorageDetFinOutstorageUpdater": {
+            "meaning": "成品出库明细表更新人",
+            "reachable": true,
+            "name": "成品出库明细表更新人"
+        },
+        "finOutstorageDetFinOutstorageUpdaterId": {
+            "meaning": "成品出库明细表更新人ID",
+            "reachable": true,
+            "name": "成品出库明细表更新人ID"
+        },
+        "finOutstorageDetFinOutstorageUserCode": {
+            "meaning": "成品出库明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品出库明细表智能节点的唯一编码"
+        },
+        "finOutstorageDetFinOutstorageVarExtra1": {
+            "meaning": "成品出库明细表扩展1",
+            "reachable": true,
+            "name": "成品出库明细表扩展1"
+        },
+        "finOutstorageDetFinOutstorageVarExtra2": {
+            "meaning": "成品出库明细表扩展2",
+            "reachable": true,
+            "name": "成品出库明细表扩展2"
+        },
+        "finOutstorageDetFinOutstorageVarExtra3": {
+            "meaning": "成品出库明细表扩展3",
+            "reachable": true,
+            "name": "成品出库明细表扩展3"
+        },
+        "finOutstorageDetFinOutstorageVarExtra4": {
+            "meaning": "成品出库明细表扩展4",
+            "reachable": true,
+            "name": "成品出库明细表扩展4"
+        },
+        "finOutstorageDetFinOutstorageVarExtra5": {
+            "meaning": "成品出库明细表扩展5",
+            "reachable": true,
+            "name": "成品出库明细表扩展5"
+        },
+        "finOutstorageDetFinOutstorageVersion": {
+            "meaning": "成品出库明细表版本号",
+            "reachable": true,
+            "name": "成品出库明细表版本号"
+        },
+        "finOutstorageDetFlags": {
+            "meaning": "成品出库明细表63位标志位",
+            "reachable": true,
+            "name": "成品出库明细表63位标志位"
+        },
+        "finOutstorageDetFromAuditDate": {
+            "meaning": "finOutstorageDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromBeginTime": {
+            "meaning": "finOutstorageDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromCreateTime": {
+            "meaning": "finOutstorageDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDateExtra1": {
+            "meaning": "finOutstorageDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDateExtra2": {
+            "meaning": "finOutstorageDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDateExtra3": {
+            "meaning": "finOutstorageDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDateExtra4": {
+            "meaning": "finOutstorageDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDateExtra5": {
+            "meaning": "finOutstorageDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromDeliveryDate": {
+            "meaning": "finOutstorageDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromEndTime": {
+            "meaning": "finOutstorageDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromReceiptDate": {
+            "meaning": "finOutstorageDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFromUpdateTime": {
+            "meaning": "finOutstorageDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetFscType": {
+            "meaning": "成品出库明细表FSC声明",
+            "reachable": true,
+            "name": "成品出库明细表FSC声明"
+        },
+        "finOutstorageDetGenerativePeople": {
+            "meaning": "成品出库明细表下发人",
+            "reachable": true,
+            "name": "成品出库明细表下发人"
+        },
+        "finOutstorageDetGenerativeState": {
+            "meaning": "成品出库明细表下发状态",
+            "reachable": true,
+            "name": "成品出库明细表下发状态"
+        },
+        "finOutstorageDetGoodsId": {
+            "meaning": "成品出库明细表货（包）id",
+            "reachable": true,
+            "name": "成品出库明细表货"
+        },
+        "finOutstorageDetGroovyScript": {
+            "meaning": "成品出库明细表groovy脚本",
+            "reachable": true,
+            "name": "成品出库明细表groovy脚本"
+        },
+        "finOutstorageDetGropeCode": {
+            "meaning": "成品出库明细表搜索码",
+            "reachable": true,
+            "name": "成品出库明细表搜索码"
+        },
+        "finOutstorageDetGrossWeightPerBox": {
+            "meaning": "成品出库明细表每箱毛重",
+            "reachable": true,
+            "name": "成品出库明细表每箱毛重"
+        },
+        "finOutstorageDetId": {
+            "meaning": "成品出库明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品出库明细表PK"
+        },
+        "finOutstorageDetInUsed": {
+            "meaning": "成品出库明细表是否被使用",
+            "reachable": true,
+            "name": "成品出库明细表是否被使用"
+        },
+        "finOutstorageDetInvTypeTaxRateId": {
+            "meaning": "成品出库明细表发票税率id",
+            "reachable": true,
+            "name": "成品出库明细表发票税率id"
+        },
+        "finOutstorageDetInventoryQuantity": {
+            "meaning": "成品出库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)",
+            "reachable": true,
+            "name": "成品出库明细表库存数量"
+        },
+        "finOutstorageDetIsBanned": {
+            "meaning": "成品出库明细表是否被禁用",
+            "reachable": true,
+            "name": "成品出库明细表是否被禁用"
+        },
+        "finOutstorageDetIsDeleted": {
+            "meaning": "成品出库明细表是否被删除",
+            "reachable": true,
+            "name": "成品出库明细表是否被删除"
+        },
+        "finOutstorageDetIsLeaf": {
+            "meaning": "成品出库明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品出库明细表是否叶子节点"
+        },
+        "finOutstorageDetIsMainFlow": {
+            "meaning": "成品出库明细表是否是主流程",
+            "reachable": true,
+            "name": "成品出库明细表是否是主流程"
+        },
+        "finOutstorageDetIsManualModificationDate": {
+            "meaning": "成品出库明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品出库明细表是否手动修改计划生产时间"
+        },
+        "finOutstorageDetIsolation": {
+            "meaning": "成品出库明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品出库明细表智能节点数据隔离标识"
+        },
+        "finOutstorageDetJsScript": {
+            "meaning": "成品出库明细表js脚本",
+            "reachable": true,
+            "name": "成品出库明细表js脚本"
+        },
+        "finOutstorageDetLocalCurrencyTotalAmount": {
+            "meaning": "成品出库明细表本币总金额",
+            "reachable": true,
+            "name": "成品出库明细表本币总金额"
+        },
+        "finOutstorageDetLocalCurrencyUnitPrice": {
+            "meaning": "成品出库明细表本币单价",
+            "reachable": true,
+            "name": "成品出库明细表本币单价"
+        },
+        "finOutstorageDetMatBatchId": {
+            "meaning": "成品出库明细表物料批次id",
+            "reachable": true,
+            "name": "成品出库明细表物料批次id"
+        },
+        "finOutstorageDetMaterialId": {
+            "meaning": "成品出库明细表物料id",
+            "reachable": true,
+            "name": "成品出库明细表物料id"
+        },
+        "finOutstorageDetName": {
+            "meaning": "成品出库明细表智能节点名",
+            "reachable": true,
+            "name": "成品出库明细表智能节点名"
+        },
+        "finOutstorageDetNameCodeSearch": {
+            "meaning": "成品出库明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品出库明细表name、user_code模糊搜索"
+        },
+        "finOutstorageDetNetWeightPerBox": {
+            "meaning": "成品出库明细表每箱净重",
+            "reachable": true,
+            "name": "成品出库明细表每箱净重"
+        },
+        "finOutstorageDetNumberExtra1": {
+            "meaning": "成品出库明细表扩展数量1",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量1"
+        },
+        "finOutstorageDetNumberExtra2": {
+            "meaning": "成品出库明细表扩展数量2",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量2"
+        },
+        "finOutstorageDetNumberExtra3": {
+            "meaning": "成品出库明细表扩展数量3",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量3"
+        },
+        "finOutstorageDetNumberExtra4": {
+            "meaning": "成品出库明细表扩展数量4",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量4"
+        },
+        "finOutstorageDetNumberExtra5": {
+            "meaning": "成品出库明细表扩展数量5",
+            "reachable": true,
+            "name": "成品出库明细表扩展数量5"
+        },
+        "finOutstorageDetOrgId": {
+            "meaning": "成品出库明细表机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品出库明细表机构id"
+        },
+        "finOutstorageDetPackageMatId": {
+            "meaning": "成品出库明细表包装物料id",
+            "reachable": true,
+            "name": "成品出库明细表包装物料id"
+        },
+        "finOutstorageDetParentId": {
+            "meaning": "成品出库明细表父节点ID",
+            "reachable": true,
+            "name": "成品出库明细表父节点ID"
+        },
+        "finOutstorageDetPlannedOutputQuantity": {
+            "meaning": "成品出库明细表计划产出数量",
+            "reachable": true,
+            "name": "成品出库明细表计划产出数量"
+        },
+        "finOutstorageDetPlannedTimeRequired": {
+            "meaning": "成品出库明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品出库明细表计划需时"
+        },
+        "finOutstorageDetPrintTimes": {
+            "meaning": "成品出库明细表打印次数",
+            "reachable": true,
+            "name": "成品出库明细表打印次数"
+        },
+        "finOutstorageDetPriority": {
+            "meaning": "成品出库明细表优先级",
+            "reachable": true,
+            "name": "成品出库明细表优先级"
+        },
+        "finOutstorageDetProcessInstanceId": {
+            "meaning": "成品出库明细表流程实例ID",
+            "reachable": true,
+            "name": "成品出库明细表流程实例ID"
+        },
+        "finOutstorageDetProductionProcessesTypeId": {
+            "meaning": "成品出库明细表工序类型ID",
+            "reachable": true,
+            "name": "成品出库明细表工序类型ID"
+        },
+        "finOutstorageDetProductionShiftId": {
+            "meaning": "成品出库明细表生产班次ID",
+            "reachable": true,
+            "name": "成品出库明细表生产班次ID"
+        },
+        "finOutstorageDetQuantity": {
+            "meaning": "成品出库明细表任务数量",
+            "reachable": true,
+            "name": "成品出库明细表任务数量"
+        },
+        "finOutstorageDetQuotationUnitPriceIncludingTax": {
+            "meaning": "成品出库明细表报价单价（含税）",
+            "reachable": true,
+            "name": "成品出库明细表报价单价"
+        },
+        "finOutstorageDetQuotationUnitPriceWithoutTax": {
+            "meaning": "成品出库明细表报价单价（不含税）",
+            "reachable": true,
+            "name": "成品出库明细表报价单价"
+        },
+        "finOutstorageDetReceiptDate": {
+            "meaning": "成品出库明细表单据日期",
+            "reachable": true,
+            "name": "成品出库明细表单据日期"
+        },
+        "finOutstorageDetReceiptType": {
+            "meaning": "成品出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品出库明细表单据类型"
+        },
+        "finOutstorageDetRelatedTasksId": {
+            "meaning": "成品出库明细表关联任务id",
+            "reachable": true,
+            "name": "成品出库明细表关联任务id"
+        },
+        "finOutstorageDetSerialNumber": {
+            "meaning": "成品出库明细表顺序号",
+            "reachable": true,
+            "name": "成品出库明细表顺序号"
+        },
+        "finOutstorageDetSettMethod": {
+            "meaning": "成品出库明细表结算方式",
+            "reachable": true,
+            "name": "成品出库明细表结算方式"
+        },
+        "finOutstorageDetSettOrgId": {
+            "meaning": "成品出库明细表结算机构id(客户/供应商)",
+            "reachable": true,
+            "name": "成品出库明细表结算机构id"
+        },
+        "finOutstorageDetSettlementTotalAmount": {
+            "meaning": "成品出库明细表结算总金额",
+            "reachable": true,
+            "name": "成品出库明细表结算总金额"
+        },
+        "finOutstorageDetSettlementUnitPrice": {
+            "meaning": "成品出库明细表结算单价",
+            "reachable": true,
+            "name": "成品出库明细表结算单价"
+        },
+        "finOutstorageDetSingleWeight": {
+            "meaning": "成品出库明细表单重kg",
+            "reachable": true,
+            "name": "成品出库明细表单重kg"
+        },
+        "finOutstorageDetSource": {
+            "meaning": "成品出库明细表源",
+            "reachable": true,
+            "name": "成品出库明细表源"
+        },
+        "finOutstorageDetSourceType": {
+            "meaning": "成品出库明细表来源类型",
+            "reachable": true,
+            "name": "成品出库明细表来源类型"
+        },
+        "finOutstorageDetState": {
+            "meaning": "成品出库明细表通用状态",
+            "reachable": true,
+            "name": "成品出库明细表通用状态"
+        },
+        "finOutstorageDetStorageSpaceId": {
+            "meaning": "成品出库明细表库空间id",
+            "reachable": true,
+            "name": "成品出库明细表库空间id"
+        },
+        "finOutstorageDetSystemCode": {
+            "meaning": "成品出库明细表系统编码",
+            "reachable": true,
+            "name": "成品出库明细表系统编码"
+        },
+        "finOutstorageDetTarget": {
+            "meaning": "成品出库明细表目标",
+            "reachable": true,
+            "name": "成品出库明细表目标"
+        },
+        "finOutstorageDetTaskNodeName": {
+            "meaning": "成品出库明细表任务节点名称",
+            "reachable": true,
+            "name": "成品出库明细表任务节点名称"
+        },
+        "finOutstorageDetTaskNodeType": {
+            "meaning": "成品出库明细表任务节点类型",
+            "reachable": true,
+            "name": "成品出库明细表任务节点类型"
+        },
+        "finOutstorageDetTenantId": {
+            "meaning": "成品出库明细表租户id",
+            "reachable": true,
+            "name": "成品出库明细表租户id"
+        },
+        "finOutstorageDetThirdPartyClass": {
+            "meaning": "成品出库明细表第三方分类",
+            "reachable": true,
+            "name": "成品出库明细表第三方分类"
+        },
+        "finOutstorageDetThirdPartyId": {
+            "meaning": "成品出库明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品出库明细表第三方系统中的唯一ID"
+        },
+        "finOutstorageDetThirdPartyName": {
+            "meaning": "成品出库明细表第三方名称",
+            "reachable": true,
+            "name": "成品出库明细表第三方名称"
+        },
+        "finOutstorageDetToAuditDate": {
+            "meaning": "finOutstorageDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToBeginTime": {
+            "meaning": "finOutstorageDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToCreateTime": {
+            "meaning": "finOutstorageDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDateExtra1": {
+            "meaning": "finOutstorageDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDateExtra2": {
+            "meaning": "finOutstorageDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDateExtra3": {
+            "meaning": "finOutstorageDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDateExtra4": {
+            "meaning": "finOutstorageDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDateExtra5": {
+            "meaning": "finOutstorageDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToDeliveryDate": {
+            "meaning": "finOutstorageDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToEndTime": {
+            "meaning": "finOutstorageDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToReceiptDate": {
+            "meaning": "finOutstorageDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetToUpdateTime": {
+            "meaning": "finOutstorageDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "finOutstorageDetTotalAmount": {
+            "meaning": "成品出库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化",
+            "reachable": true,
+            "name": "成品出库明细表总金额"
+        },
+        "finOutstorageDetTotalAmountIncludingTax": {
+            "meaning": "成品出库明细表总金额（含税）",
+            "reachable": true,
+            "name": "成品出库明细表总金额"
+        },
+        "finOutstorageDetTotalAmountWithoutTax": {
+            "meaning": "成品出库明细表总金额（不含税）",
+            "reachable": true,
+            "name": "成品出库明细表总金额"
+        },
+        "finOutstorageDetTotalWeightLot": {
+            "meaning": "成品出库明细表合计总重kg",
+            "reachable": true,
+            "name": "成品出库明细表合计总重kg"
+        },
+        "finOutstorageDetTransManageQuantity": {
+            "meaning": "成品出库明细表运输管理完成数量",
+            "reachable": true,
+            "name": "成品出库明细表运输管理完成数量"
+        },
+        "finOutstorageDetTransManageStatus": {
+            "meaning": "成品出库明细表运输管理完成状态",
+            "reachable": true,
+            "name": "成品出库明细表运输管理完成状态"
+        },
+        "finOutstorageDetTrayMatId": {
+            "meaning": "成品出库明细表托盘物料id",
+            "reachable": true,
+            "name": "成品出库明细表托盘物料id"
+        },
+        "finOutstorageDetUnitCode": {
+            "meaning": "成品出库明细表单位id",
+            "reachable": true,
+            "name": "成品出库明细表单位id"
+        },
+        "finOutstorageDetUnitPriceIncludingTax": {
+            "meaning": "成品出库明细表单价（含税）",
+            "reachable": true,
+            "name": "成品出库明细表单价"
+        },
+        "finOutstorageDetUnitPriceWithoutTax": {
+            "meaning": "成品出库明细表单价（不含税）",
+            "reachable": true,
+            "name": "成品出库明细表单价"
+        },
+        "finOutstorageDetUpdateTime": {
+            "meaning": "成品出库明细表更新时间",
+            "reachable": true,
+            "name": "成品出库明细表更新时间"
+        },
+        "finOutstorageDetUpdater": {
+            "meaning": "成品出库明细表更新人",
+            "reachable": true,
+            "name": "成品出库明细表更新人"
+        },
+        "finOutstorageDetUpdaterId": {
+            "meaning": "成品出库明细表更新人ID",
+            "reachable": true,
+            "name": "成品出库明细表更新人ID"
+        },
+        "finOutstorageDetUserCode": {
+            "meaning": "成品出库明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品出库明细表智能节点的唯一编码"
+        },
+        "finOutstorageDetVarExtra1": {
+            "meaning": "成品出库明细表扩展1",
+            "reachable": true,
+            "name": "成品出库明细表扩展1"
+        },
+        "finOutstorageDetVarExtra2": {
+            "meaning": "成品出库明细表扩展2",
+            "reachable": true,
+            "name": "成品出库明细表扩展2"
+        },
+        "finOutstorageDetVarExtra3": {
+            "meaning": "成品出库明细表扩展3",
+            "reachable": true,
+            "name": "成品出库明细表扩展3"
+        },
+        "finOutstorageDetVarExtra4": {
+            "meaning": "成品出库明细表扩展4",
+            "reachable": true,
+            "name": "成品出库明细表扩展4"
+        },
+        "finOutstorageDetVarExtra5": {
+            "meaning": "成品出库明细表扩展5",
+            "reachable": true,
+            "name": "成品出库明细表扩展5"
+        },
+        "finOutstorageDetVersion": {
+            "meaning": "成品出库明细表版本号",
+            "reachable": true,
+            "name": "成品出库明细表版本号"
+        }
+    }
+}

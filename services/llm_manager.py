@@ -31,7 +31,7 @@ load_dotenv()
 dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 
 
-def dashscope_chat_json(system_prompt: str, user_prompt: str, model: str = "qwen-flash", enable_thinking: bool = False) -> str:
+def dashscope_chat_json(system_prompt: str, user_prompt: str, model: str = "qwen-flash", enable_thinking: bool = False) -> dict:
     """
     大语言模型请求方法，返回JSON格式的响应
 

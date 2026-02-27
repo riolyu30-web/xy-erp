@@ -1,0 +1,1327 @@
+{
+    "api_name": "/quality-inspect-ipqc-det/findList",
+    "table_name": "IPQC明细",
+    "request": {
+        "qualityInspectIpqcDetQualityInspectIpqcClazz": "QUALITY_INSPECT_IPQC",
+        "qualityInspectIpqcDetClazz": "QUALITY_INSPECT_IPQC_DET"
+    },
+    "mainTabClazz": "QUALITY_INSPECT_IPQC_DET",
+    "response": {
+        "YInspectIpqcDetQualityInspectIpqcPlannedOutputQuantity": {
+            "meaning": "IPQC明细计划产出数量",
+            "reachable": false,
+            "name": "IPQC明细计划产出数量"
+        },
+        "alityInspectIpqcDetQualityInspectIpqcProcessInstanceId": {
+            "meaning": "IPQC明细流程实例ID",
+            "reachable": false,
+            "name": "IPQC明细流程实例ID"
+        },
+        "alityInspectIpqcDetQualityInspectIpqcProductionShiftId": {
+            "meaning": "IPQC明细生产班次ID",
+            "reachable": false,
+            "name": "IPQC明细生产班次ID"
+        },
+        "inspectIpqcDetQualityInspectIpqcAdjustmentTimeRequired": {
+            "meaning": "IPQC明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "IPQC明细调整需时"
+        },
+        "ityInspectIpqcDetQualityInspectIpqcAvailableScheduleId": {
+            "meaning": "IPQC明细可用日程id",
+            "reachable": false,
+            "name": "IPQC明细可用日程id"
+        },
+        "ityInspectIpqcDetQualityInspectIpqcPlannedTimeRequired": {
+            "meaning": "IPQC明细计划需时(小时)",
+            "reachable": false,
+            "name": "IPQC明细计划需时"
+        },
+        "lityInspectIpqcDetQualityInspectIpqcActualTimeRequired": {
+            "meaning": "IPQC明细实际需时(小时)",
+            "reachable": false,
+            "name": "IPQC明细实际需时"
+        },
+        "lityInspectIpqcDetQualityInspectIpqcInvTypeTaxRateId": {
+            "meaning": "IPQC明细发票税率id",
+            "reachable": false,
+            "name": "IPQC明细发票税率id"
+        },
+        "pectIpqcDetQualityInspectIpqcProductionProcessesTypeId": {
+            "meaning": "IPQC明细工序类型ID",
+            "reachable": false,
+            "name": "IPQC明细工序类型ID"
+        },
+        "qualityInspectIpqcDetAcceptQty": {
+            "meaning": "IPQC明细接受数量",
+            "reachable": true,
+            "name": "IPQC明细接受数量"
+        },
+        "qualityInspectIpqcDetActualTimeRequired": {
+            "meaning": "IPQC明细实际需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细实际需时"
+        },
+        "qualityInspectIpqcDetAdjustmentTimeRequired": {
+            "meaning": "IPQC明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "IPQC明细调整需时"
+        },
+        "qualityInspectIpqcDetApplicationId": {
+            "meaning": "IPQC明细应用ID",
+            "reachable": true,
+            "name": "IPQC明细应用ID"
+        },
+        "qualityInspectIpqcDetAqlLevelId": {
+            "meaning": "IPQC明细AQL检查等级id",
+            "reachable": true,
+            "name": "IPQC明细AQL检查等级id"
+        },
+        "qualityInspectIpqcDetAuditDate": {
+            "meaning": "IPQC明细审核时间",
+            "reachable": true,
+            "name": "IPQC明细审核时间"
+        },
+        "qualityInspectIpqcDetAuditStatus": {
+            "meaning": "IPQC明细审核状态",
+            "reachable": true,
+            "name": "IPQC明细审核状态"
+        },
+        "qualityInspectIpqcDetAvailableScheduleId": {
+            "meaning": "IPQC明细可用日程id",
+            "reachable": true,
+            "name": "IPQC明细可用日程id"
+        },
+        "qualityInspectIpqcDetBasis": {
+            "meaning": "IPQC明细质检依据",
+            "reachable": true,
+            "name": "IPQC明细质检依据"
+        },
+        "qualityInspectIpqcDetBeginTime": {
+            "meaning": "IPQC明细开始时间",
+            "reachable": true,
+            "name": "IPQC明细开始时间"
+        },
+        "qualityInspectIpqcDetBizVersion": {
+            "meaning": "IPQC明细业务自定义版本号",
+            "reachable": true,
+            "name": "IPQC明细业务自定义版本号"
+        },
+        "qualityInspectIpqcDetBriefName": {
+            "meaning": "IPQC明细简称",
+            "reachable": true,
+            "name": "IPQC明细简称"
+        },
+        "qualityInspectIpqcDetBusDivisId": {
+            "meaning": "IPQC明细事业部id",
+            "reachable": true,
+            "name": "IPQC明细事业部id"
+        },
+        "qualityInspectIpqcDetCheckQuantity": {
+            "meaning": "IPQC明细检验数量",
+            "reachable": true,
+            "name": "IPQC明细检验数量"
+        },
+        "qualityInspectIpqcDetCheckStanId": {
+            "meaning": "IPQC明细质量检验标准id",
+            "reachable": true,
+            "name": "IPQC明细质量检验标准id"
+        },
+        "qualityInspectIpqcDetClazz": {
+            "meaning": "IPQC明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "IPQC明细子类"
+        },
+        "qualityInspectIpqcDetClosedReason": {
+            "meaning": "IPQC明细结案原因",
+            "reachable": true,
+            "name": "IPQC明细结案原因"
+        },
+        "qualityInspectIpqcDetClosedStatus": {
+            "meaning": "IPQC明细结案状态",
+            "reachable": true,
+            "name": "IPQC明细结案状态"
+        },
+        "qualityInspectIpqcDetComment": {
+            "meaning": "IPQC明细评论",
+            "reachable": true,
+            "name": "IPQC明细评论"
+        },
+        "qualityInspectIpqcDetCompleteQuantity": {
+            "meaning": "IPQC明细完成数量",
+            "reachable": true,
+            "name": "IPQC明细完成数量"
+        },
+        "qualityInspectIpqcDetCompleteStatus": {
+            "meaning": "IPQC明细完成状态",
+            "reachable": true,
+            "name": "IPQC明细完成状态"
+        },
+        "qualityInspectIpqcDetCreateTime": {
+            "meaning": "IPQC明细创建时间",
+            "reachable": true,
+            "name": "IPQC明细创建时间"
+        },
+        "qualityInspectIpqcDetCreator": {
+            "meaning": "IPQC明细创建人",
+            "reachable": true,
+            "name": "IPQC明细创建人"
+        },
+        "qualityInspectIpqcDetCreatorId": {
+            "meaning": "IPQC明细创建人ID",
+            "reachable": true,
+            "name": "IPQC明细创建人ID"
+        },
+        "qualityInspectIpqcDetDateExtra1": {
+            "meaning": "IPQC明细扩展时间1",
+            "reachable": true,
+            "name": "IPQC明细扩展时间1"
+        },
+        "qualityInspectIpqcDetDateExtra2": {
+            "meaning": "IPQC明细扩展时间2",
+            "reachable": true,
+            "name": "IPQC明细扩展时间2"
+        },
+        "qualityInspectIpqcDetDateExtra3": {
+            "meaning": "IPQC明细扩展时间3",
+            "reachable": true,
+            "name": "IPQC明细扩展时间3"
+        },
+        "qualityInspectIpqcDetDateExtra4": {
+            "meaning": "IPQC明细扩展时间4",
+            "reachable": true,
+            "name": "IPQC明细扩展时间4"
+        },
+        "qualityInspectIpqcDetDateExtra5": {
+            "meaning": "IPQC明细扩展时间5",
+            "reachable": true,
+            "name": "IPQC明细扩展时间5"
+        },
+        "qualityInspectIpqcDetDefaultType": {
+            "meaning": "IPQC明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "IPQC明细智能节点主类型"
+        },
+        "qualityInspectIpqcDetDefectTotalQty": {
+            "meaning": "IPQC明细缺陷总数",
+            "reachable": true,
+            "name": "IPQC明细缺陷总数"
+        },
+        "qualityInspectIpqcDetDeliveryDate": {
+            "meaning": "IPQC明细交货日期",
+            "reachable": true,
+            "name": "IPQC明细交货日期"
+        },
+        "qualityInspectIpqcDetDescription": {
+            "meaning": "IPQC明细描述",
+            "reachable": true,
+            "name": "IPQC明细描述"
+        },
+        "qualityInspectIpqcDetDutyDept": {
+            "meaning": "IPQC明细责任部门",
+            "reachable": true,
+            "name": "IPQC明细责任部门"
+        },
+        "qualityInspectIpqcDetDutyDeptId": {
+            "meaning": "IPQC明细责任部门id",
+            "reachable": true,
+            "name": "IPQC明细责任部门id"
+        },
+        "qualityInspectIpqcDetDutyUser": {
+            "meaning": "IPQC明细责任人",
+            "reachable": true,
+            "name": "IPQC明细责任人"
+        },
+        "qualityInspectIpqcDetEndTime": {
+            "meaning": "IPQC明细结束时间",
+            "reachable": true,
+            "name": "IPQC明细结束时间"
+        },
+        "qualityInspectIpqcDetEndTimeRequired": {
+            "meaning": "IPQC明细最后需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细最后需时"
+        },
+        "qualityInspectIpqcDetEngName": {
+            "meaning": "IPQC明细英文名称",
+            "reachable": true,
+            "name": "IPQC明细英文名称"
+        },
+        "qualityInspectIpqcDetEquipmentId": {
+            "meaning": "IPQC明细设备id",
+            "reachable": true,
+            "name": "IPQC明细设备id"
+        },
+        "qualityInspectIpqcDetExchangeRateId": {
+            "meaning": "IPQC明细币种汇率id",
+            "reachable": true,
+            "name": "IPQC明细币种汇率id"
+        },
+        "qualityInspectIpqcDetExtension": {
+            "meaning": "IPQC明细扩展数据",
+            "reachable": true,
+            "name": "IPQC明细扩展数据"
+        },
+        "qualityInspectIpqcDetExternalState": {
+            "meaning": "IPQC明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "IPQC明细上流程状态位"
+        },
+        "qualityInspectIpqcDetFilterClazz": {
+            "meaning": "IPQC明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "IPQC明细冗余字段用于筛选"
+        },
+        "qualityInspectIpqcDetFinishTime": {
+            "meaning": "IPQC明细来源值",
+            "reachable": true,
+            "name": "IPQC明细来源值"
+        },
+        "qualityInspectIpqcDetFlags": {
+            "meaning": "IPQC明细63位标志位",
+            "reachable": true,
+            "name": "IPQC明细63位标志位"
+        },
+        "qualityInspectIpqcDetFromAuditDate": {
+            "meaning": "qualityInspectIpqcDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromBeginTime": {
+            "meaning": "qualityInspectIpqcDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromCreateTime": {
+            "meaning": "qualityInspectIpqcDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDateExtra1": {
+            "meaning": "qualityInspectIpqcDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDateExtra2": {
+            "meaning": "qualityInspectIpqcDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDateExtra3": {
+            "meaning": "qualityInspectIpqcDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDateExtra4": {
+            "meaning": "qualityInspectIpqcDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDateExtra5": {
+            "meaning": "qualityInspectIpqcDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromDeliveryDate": {
+            "meaning": "qualityInspectIpqcDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromEndTime": {
+            "meaning": "qualityInspectIpqcDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromFinishTime": {
+            "meaning": "qualityInspectIpqcDetFromFinishTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromReceiptDate": {
+            "meaning": "qualityInspectIpqcDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFromUpdateTime": {
+            "meaning": "qualityInspectIpqcDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetFscType": {
+            "meaning": "IPQC明细FSC声明",
+            "reachable": true,
+            "name": "IPQC明细FSC声明"
+        },
+        "qualityInspectIpqcDetGenerativePeople": {
+            "meaning": "IPQC明细下发人",
+            "reachable": true,
+            "name": "IPQC明细下发人"
+        },
+        "qualityInspectIpqcDetGenerativeState": {
+            "meaning": "IPQC明细下发状态",
+            "reachable": true,
+            "name": "IPQC明细下发状态"
+        },
+        "qualityInspectIpqcDetGroovyScript": {
+            "meaning": "IPQC明细groovy脚本",
+            "reachable": true,
+            "name": "IPQC明细groovy脚本"
+        },
+        "qualityInspectIpqcDetGropeCode": {
+            "meaning": "IPQC明细搜索码",
+            "reachable": true,
+            "name": "IPQC明细搜索码"
+        },
+        "qualityInspectIpqcDetHandlingMethod": {
+            "meaning": "IPQC明细处理方式",
+            "reachable": true,
+            "name": "IPQC明细处理方式"
+        },
+        "qualityInspectIpqcDetId": {
+            "meaning": "IPQC明细PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "IPQC明细PK"
+        },
+        "qualityInspectIpqcDetInUsed": {
+            "meaning": "IPQC明细是否被使用",
+            "reachable": true,
+            "name": "IPQC明细是否被使用"
+        },
+        "qualityInspectIpqcDetInspectorId": {
+            "meaning": "IPQC明细质检员id",
+            "reachable": true,
+            "name": "IPQC明细质检员id"
+        },
+        "qualityInspectIpqcDetInvTypeTaxRateId": {
+            "meaning": "IPQC明细发票税率id",
+            "reachable": true,
+            "name": "IPQC明细发票税率id"
+        },
+        "qualityInspectIpqcDetIsBanned": {
+            "meaning": "IPQC明细是否被禁用",
+            "reachable": true,
+            "name": "IPQC明细是否被禁用"
+        },
+        "qualityInspectIpqcDetIsDeleted": {
+            "meaning": "IPQC明细是否被删除",
+            "reachable": true,
+            "name": "IPQC明细是否被删除"
+        },
+        "qualityInspectIpqcDetIsLeaf": {
+            "meaning": "IPQC明细是否叶子节点",
+            "reachable": true,
+            "name": "IPQC明细是否叶子节点"
+        },
+        "qualityInspectIpqcDetIsMainFlow": {
+            "meaning": "IPQC明细是否是主流程",
+            "reachable": true,
+            "name": "IPQC明细是否是主流程"
+        },
+        "qualityInspectIpqcDetIsManualModificationDate": {
+            "meaning": "IPQC明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "IPQC明细是否手动修改计划生产时间"
+        },
+        "qualityInspectIpqcDetIsolation": {
+            "meaning": "IPQC明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "IPQC明细智能节点数据隔离标识"
+        },
+        "qualityInspectIpqcDetJsScript": {
+            "meaning": "IPQC明细js脚本",
+            "reachable": true,
+            "name": "IPQC明细js脚本"
+        },
+        "qualityInspectIpqcDetMaterialId": {
+            "meaning": "IPQC明细物料id",
+            "reachable": true,
+            "name": "IPQC明细物料id"
+        },
+        "qualityInspectIpqcDetName": {
+            "meaning": "IPQC明细智能节点名",
+            "reachable": true,
+            "name": "IPQC明细智能节点名"
+        },
+        "qualityInspectIpqcDetNameCodeSearch": {
+            "meaning": "IPQC明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "IPQC明细name、user_code模糊搜索"
+        },
+        "qualityInspectIpqcDetNumberExtra1": {
+            "meaning": "IPQC明细扩展数量1",
+            "reachable": true,
+            "name": "IPQC明细扩展数量1"
+        },
+        "qualityInspectIpqcDetNumberExtra2": {
+            "meaning": "IPQC明细扩展数量2",
+            "reachable": true,
+            "name": "IPQC明细扩展数量2"
+        },
+        "qualityInspectIpqcDetNumberExtra3": {
+            "meaning": "IPQC明细扩展数量3",
+            "reachable": true,
+            "name": "IPQC明细扩展数量3"
+        },
+        "qualityInspectIpqcDetNumberExtra4": {
+            "meaning": "IPQC明细扩展数量4",
+            "reachable": true,
+            "name": "IPQC明细扩展数量4"
+        },
+        "qualityInspectIpqcDetNumberExtra5": {
+            "meaning": "IPQC明细扩展数量5",
+            "reachable": true,
+            "name": "IPQC明细扩展数量5"
+        },
+        "qualityInspectIpqcDetParentId": {
+            "meaning": "IPQC明细父节点ID",
+            "reachable": true,
+            "name": "IPQC明细父节点ID"
+        },
+        "qualityInspectIpqcDetPlannedOutputQuantity": {
+            "meaning": "IPQC明细计划产出数量",
+            "reachable": true,
+            "name": "IPQC明细计划产出数量"
+        },
+        "qualityInspectIpqcDetPlannedTimeRequired": {
+            "meaning": "IPQC明细计划需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细计划需时"
+        },
+        "qualityInspectIpqcDetPrintTimes": {
+            "meaning": "IPQC明细打印次数",
+            "reachable": true,
+            "name": "IPQC明细打印次数"
+        },
+        "qualityInspectIpqcDetPriority": {
+            "meaning": "IPQC明细优先级",
+            "reachable": true,
+            "name": "IPQC明细优先级"
+        },
+        "qualityInspectIpqcDetProcessInstanceId": {
+            "meaning": "IPQC明细流程实例ID",
+            "reachable": true,
+            "name": "IPQC明细流程实例ID"
+        },
+        "qualityInspectIpqcDetProductionProcessesTypeId": {
+            "meaning": "IPQC明细工序类型ID",
+            "reachable": true,
+            "name": "IPQC明细工序类型ID"
+        },
+        "qualityInspectIpqcDetProductionShiftId": {
+            "meaning": "IPQC明细生产班次ID",
+            "reachable": true,
+            "name": "IPQC明细生产班次ID"
+        },
+        "qualityInspectIpqcDetQualifiedQuantity": {
+            "meaning": "IPQC明细合格数量",
+            "reachable": true,
+            "name": "IPQC明细合格数量"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcActualTimeRequired": {
+            "meaning": "IPQC明细实际需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细实际需时"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcAdjustmentTimeRequired": {
+            "meaning": "IPQC明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "IPQC明细调整需时"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcApplicationId": {
+            "meaning": "IPQC明细应用ID",
+            "reachable": true,
+            "name": "IPQC明细应用ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcAuditDate": {
+            "meaning": "IPQC明细审核时间",
+            "reachable": true,
+            "name": "IPQC明细审核时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcAuditStatus": {
+            "meaning": "IPQC明细审核状态",
+            "reachable": true,
+            "name": "IPQC明细审核状态"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcAvailableScheduleId": {
+            "meaning": "IPQC明细可用日程id",
+            "reachable": true,
+            "name": "IPQC明细可用日程id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcBeginTime": {
+            "meaning": "IPQC明细开始时间",
+            "reachable": true,
+            "name": "IPQC明细开始时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcBizVersion": {
+            "meaning": "IPQC明细业务自定义版本号",
+            "reachable": true,
+            "name": "IPQC明细业务自定义版本号"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcBriefName": {
+            "meaning": "IPQC明细简称",
+            "reachable": true,
+            "name": "IPQC明细简称"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcBusDivisId": {
+            "meaning": "IPQC明细事业部id",
+            "reachable": true,
+            "name": "IPQC明细事业部id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcClazz": {
+            "meaning": "IPQC明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "IPQC明细子类"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcClosedReason": {
+            "meaning": "IPQC明细结案原因",
+            "reachable": true,
+            "name": "IPQC明细结案原因"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcClosedStatus": {
+            "meaning": "IPQC明细结案状态",
+            "reachable": true,
+            "name": "IPQC明细结案状态"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcComment": {
+            "meaning": "IPQC明细评论",
+            "reachable": true,
+            "name": "IPQC明细评论"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcCompleteQuantity": {
+            "meaning": "IPQC明细完成数量",
+            "reachable": true,
+            "name": "IPQC明细完成数量"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcCompleteStatus": {
+            "meaning": "IPQC明细完成状态",
+            "reachable": true,
+            "name": "IPQC明细完成状态"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcCreateTime": {
+            "meaning": "IPQC明细创建时间",
+            "reachable": true,
+            "name": "IPQC明细创建时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcCreator": {
+            "meaning": "IPQC明细创建人",
+            "reachable": true,
+            "name": "IPQC明细创建人"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcCreatorId": {
+            "meaning": "IPQC明细创建人ID",
+            "reachable": true,
+            "name": "IPQC明细创建人ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDateExtra1": {
+            "meaning": "IPQC明细扩展时间1",
+            "reachable": true,
+            "name": "IPQC明细扩展时间1"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDateExtra2": {
+            "meaning": "IPQC明细扩展时间2",
+            "reachable": true,
+            "name": "IPQC明细扩展时间2"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDateExtra3": {
+            "meaning": "IPQC明细扩展时间3",
+            "reachable": true,
+            "name": "IPQC明细扩展时间3"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDateExtra4": {
+            "meaning": "IPQC明细扩展时间4",
+            "reachable": true,
+            "name": "IPQC明细扩展时间4"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDateExtra5": {
+            "meaning": "IPQC明细扩展时间5",
+            "reachable": true,
+            "name": "IPQC明细扩展时间5"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDefaultType": {
+            "meaning": "IPQC明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "IPQC明细智能节点主类型"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDeliveryDate": {
+            "meaning": "IPQC明细交货日期",
+            "reachable": true,
+            "name": "IPQC明细交货日期"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcDescription": {
+            "meaning": "IPQC明细描述",
+            "reachable": true,
+            "name": "IPQC明细描述"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcEndTime": {
+            "meaning": "IPQC明细结束时间",
+            "reachable": true,
+            "name": "IPQC明细结束时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcEndTimeRequired": {
+            "meaning": "IPQC明细最后需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细最后需时"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcEngName": {
+            "meaning": "IPQC明细英文名称",
+            "reachable": true,
+            "name": "IPQC明细英文名称"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcEquipmentId": {
+            "meaning": "IPQC明细设备id",
+            "reachable": true,
+            "name": "IPQC明细设备id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcExchangeRateId": {
+            "meaning": "IPQC明细币种汇率id",
+            "reachable": true,
+            "name": "IPQC明细币种汇率id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcExtension": {
+            "meaning": "IPQC明细扩展数据",
+            "reachable": true,
+            "name": "IPQC明细扩展数据"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcExternalState": {
+            "meaning": "IPQC明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "IPQC明细上流程状态位"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFilterClazz": {
+            "meaning": "IPQC明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "IPQC明细冗余字段用于筛选"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFlags": {
+            "meaning": "IPQC明细63位标志位",
+            "reachable": true,
+            "name": "IPQC明细63位标志位"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromAuditDate": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromBeginTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromCreateTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra1": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra2": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra3": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra4": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra5": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromDeliveryDate": {
+            "meaning": "ualityInspectIpqcDetQualityInspectIpqcFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromEndTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromReceiptDate": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFromUpdateTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcFscType": {
+            "meaning": "IPQC明细FSC声明",
+            "reachable": true,
+            "name": "IPQC明细FSC声明"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcGenerativePeople": {
+            "meaning": "IPQC明细下发人",
+            "reachable": true,
+            "name": "IPQC明细下发人"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcGenerativeState": {
+            "meaning": "IPQC明细下发状态",
+            "reachable": true,
+            "name": "IPQC明细下发状态"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcGroovyScript": {
+            "meaning": "IPQC明细groovy脚本",
+            "reachable": true,
+            "name": "IPQC明细groovy脚本"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcGropeCode": {
+            "meaning": "IPQC明细搜索码",
+            "reachable": true,
+            "name": "IPQC明细搜索码"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcId": {
+            "meaning": "IPQC明细PK",
+            "reachable": true,
+            "name": "IPQC明细PK"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcInUsed": {
+            "meaning": "IPQC明细是否被使用",
+            "reachable": true,
+            "name": "IPQC明细是否被使用"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcInvTypeTaxRateId": {
+            "meaning": "IPQC明细发票税率id",
+            "reachable": true,
+            "name": "IPQC明细发票税率id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsBanned": {
+            "meaning": "IPQC明细是否被禁用",
+            "reachable": true,
+            "name": "IPQC明细是否被禁用"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsDeleted": {
+            "meaning": "IPQC明细是否被删除",
+            "reachable": true,
+            "name": "IPQC明细是否被删除"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsLeaf": {
+            "meaning": "IPQC明细是否叶子节点",
+            "reachable": true,
+            "name": "IPQC明细是否叶子节点"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsMainFlow": {
+            "meaning": "IPQC明细是否是主流程",
+            "reachable": true,
+            "name": "IPQC明细是否是主流程"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsManualModificationDate": {
+            "meaning": "IPQC明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "IPQC明细是否手动修改计划生产时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcIsolation": {
+            "meaning": "IPQC明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "IPQC明细智能节点数据隔离标识"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcJsScript": {
+            "meaning": "IPQC明细js脚本",
+            "reachable": true,
+            "name": "IPQC明细js脚本"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcMaterialId": {
+            "meaning": "IPQC明细物料id",
+            "reachable": true,
+            "name": "IPQC明细物料id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcName": {
+            "meaning": "IPQC明细智能节点名",
+            "reachable": true,
+            "name": "IPQC明细智能节点名"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNameCodeSearch": {
+            "meaning": "IPQC明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "IPQC明细name、user_code模糊搜索"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNumberExtra1": {
+            "meaning": "IPQC明细扩展数量1",
+            "reachable": true,
+            "name": "IPQC明细扩展数量1"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNumberExtra2": {
+            "meaning": "IPQC明细扩展数量2",
+            "reachable": true,
+            "name": "IPQC明细扩展数量2"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNumberExtra3": {
+            "meaning": "IPQC明细扩展数量3",
+            "reachable": true,
+            "name": "IPQC明细扩展数量3"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNumberExtra4": {
+            "meaning": "IPQC明细扩展数量4",
+            "reachable": true,
+            "name": "IPQC明细扩展数量4"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcNumberExtra5": {
+            "meaning": "IPQC明细扩展数量5",
+            "reachable": true,
+            "name": "IPQC明细扩展数量5"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcParentId": {
+            "meaning": "IPQC明细父节点ID",
+            "reachable": true,
+            "name": "IPQC明细父节点ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcPlannedOutputQuantity": {
+            "meaning": "IPQC明细计划产出数量",
+            "reachable": true,
+            "name": "IPQC明细计划产出数量"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcPlannedTimeRequired": {
+            "meaning": "IPQC明细计划需时(小时)",
+            "reachable": true,
+            "name": "IPQC明细计划需时"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcPrcesTypeId": {
+            "meaning": "IPQC明细工序id",
+            "reachable": true,
+            "name": "IPQC明细工序id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcPrintTimes": {
+            "meaning": "IPQC明细打印次数",
+            "reachable": true,
+            "name": "IPQC明细打印次数"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcPriority": {
+            "meaning": "IPQC明细优先级",
+            "reachable": true,
+            "name": "IPQC明细优先级"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcProcessInstanceId": {
+            "meaning": "IPQC明细流程实例ID",
+            "reachable": true,
+            "name": "IPQC明细流程实例ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcProductionProcessesTypeId": {
+            "meaning": "IPQC明细工序类型ID",
+            "reachable": true,
+            "name": "IPQC明细工序类型ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcProductionShiftId": {
+            "meaning": "IPQC明细生产班次ID",
+            "reachable": true,
+            "name": "IPQC明细生产班次ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcQuantity": {
+            "meaning": "IPQC明细任务数量",
+            "reachable": true,
+            "name": "IPQC明细任务数量"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcReceiptDate": {
+            "meaning": "IPQC明细单据日期",
+            "reachable": true,
+            "name": "IPQC明细单据日期"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcReceiptType": {
+            "meaning": "IPQC明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "IPQC明细单据类型"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcRelatedTasksId": {
+            "meaning": "IPQC明细关联任务id",
+            "reachable": true,
+            "name": "IPQC明细关联任务id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcSerialNumber": {
+            "meaning": "IPQC明细顺序号",
+            "reachable": true,
+            "name": "IPQC明细顺序号"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcSource": {
+            "meaning": "IPQC明细源",
+            "reachable": true,
+            "name": "IPQC明细源"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcSourceType": {
+            "meaning": "IPQC明细来源类型",
+            "reachable": true,
+            "name": "IPQC明细来源类型"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcState": {
+            "meaning": "IPQC明细通用状态",
+            "reachable": true,
+            "name": "IPQC明细通用状态"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcSystemCode": {
+            "meaning": "IPQC明细系统编码",
+            "reachable": true,
+            "name": "IPQC明细系统编码"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcTarget": {
+            "meaning": "IPQC明细目标",
+            "reachable": true,
+            "name": "IPQC明细目标"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcTaskNodeName": {
+            "meaning": "IPQC明细任务节点名称",
+            "reachable": true,
+            "name": "IPQC明细任务节点名称"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcTenantId": {
+            "meaning": "IPQC明细租户_id",
+            "reachable": true,
+            "name": "IPQC明细租户_id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcThirdPartyClass": {
+            "meaning": "IPQC明细第三方分类",
+            "reachable": true,
+            "name": "IPQC明细第三方分类"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcThirdPartyId": {
+            "meaning": "IPQC明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "IPQC明细第三方系统中的唯一ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcThirdPartyName": {
+            "meaning": "IPQC明细第三方名称",
+            "reachable": true,
+            "name": "IPQC明细第三方名称"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToAuditDate": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToBeginTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToCreateTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDateExtra1": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDateExtra2": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDateExtra3": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDateExtra4": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDateExtra5": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToDeliveryDate": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToEndTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToReceiptDate": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcToUpdateTime": {
+            "meaning": "qualityInspectIpqcDetQualityInspectIpqcToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcUnitCode": {
+            "meaning": "IPQC明细单位id",
+            "reachable": true,
+            "name": "IPQC明细单位id"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcUpdateTime": {
+            "meaning": "IPQC明细更新时间",
+            "reachable": true,
+            "name": "IPQC明细更新时间"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcUpdater": {
+            "meaning": "IPQC明细更新人",
+            "reachable": true,
+            "name": "IPQC明细更新人"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcUpdaterId": {
+            "meaning": "IPQC明细更新人ID",
+            "reachable": true,
+            "name": "IPQC明细更新人ID"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcUserCode": {
+            "meaning": "IPQC明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "IPQC明细智能节点的唯一编码"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVarExtra1": {
+            "meaning": "IPQC明细扩展1",
+            "reachable": true,
+            "name": "IPQC明细扩展1"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVarExtra2": {
+            "meaning": "IPQC明细扩展2",
+            "reachable": true,
+            "name": "IPQC明细扩展2"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVarExtra3": {
+            "meaning": "IPQC明细扩展3",
+            "reachable": true,
+            "name": "IPQC明细扩展3"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVarExtra4": {
+            "meaning": "IPQC明细扩展4",
+            "reachable": true,
+            "name": "IPQC明细扩展4"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVarExtra5": {
+            "meaning": "IPQC明细扩展5",
+            "reachable": true,
+            "name": "IPQC明细扩展5"
+        },
+        "qualityInspectIpqcDetQualityInspectIpqcVersion": {
+            "meaning": "IPQC明细版本号",
+            "reachable": true,
+            "name": "IPQC明细版本号"
+        },
+        "qualityInspectIpqcDetQuantity": {
+            "meaning": "IPQC明细任务数量",
+            "reachable": true,
+            "name": "IPQC明细任务数量"
+        },
+        "qualityInspectIpqcDetReceiptDate": {
+            "meaning": "IPQC明细单据日期",
+            "reachable": true,
+            "name": "IPQC明细单据日期"
+        },
+        "qualityInspectIpqcDetReceiptType": {
+            "meaning": "IPQC明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "IPQC明细单据类型"
+        },
+        "qualityInspectIpqcDetRelatedTasksId": {
+            "meaning": "IPQC明细关联任务id",
+            "reachable": true,
+            "name": "IPQC明细关联任务id"
+        },
+        "qualityInspectIpqcDetResults": {
+            "meaning": "IPQC明细质检检验结果(1合格，2不合格)",
+            "reachable": true,
+            "name": "IPQC明细质检检验结果"
+        },
+        "qualityInspectIpqcDetSerialNumber": {
+            "meaning": "IPQC明细顺序号",
+            "reachable": true,
+            "name": "IPQC明细顺序号"
+        },
+        "qualityInspectIpqcDetSource": {
+            "meaning": "IPQC明细源",
+            "reachable": true,
+            "name": "IPQC明细源"
+        },
+        "qualityInspectIpqcDetSourceType": {
+            "meaning": "IPQC明细来源类型",
+            "reachable": true,
+            "name": "IPQC明细来源类型"
+        },
+        "qualityInspectIpqcDetState": {
+            "meaning": "IPQC明细通用状态",
+            "reachable": true,
+            "name": "IPQC明细通用状态"
+        },
+        "qualityInspectIpqcDetSupervisorEmployee": {
+            "meaning": "IPQC明细主管员工",
+            "reachable": true,
+            "name": "IPQC明细主管员工"
+        },
+        "qualityInspectIpqcDetSystemCode": {
+            "meaning": "IPQC明细系统编码",
+            "reachable": true,
+            "name": "IPQC明细系统编码"
+        },
+        "qualityInspectIpqcDetTarget": {
+            "meaning": "IPQC明细目标",
+            "reachable": true,
+            "name": "IPQC明细目标"
+        },
+        "qualityInspectIpqcDetTaskNodeName": {
+            "meaning": "IPQC明细任务节点名称",
+            "reachable": true,
+            "name": "IPQC明细任务节点名称"
+        },
+        "qualityInspectIpqcDetTenantId": {
+            "meaning": "IPQC明细租户_id",
+            "reachable": true,
+            "name": "IPQC明细租户_id"
+        },
+        "qualityInspectIpqcDetThirdPartyClass": {
+            "meaning": "IPQC明细第三方分类",
+            "reachable": true,
+            "name": "IPQC明细第三方分类"
+        },
+        "qualityInspectIpqcDetThirdPartyId": {
+            "meaning": "IPQC明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "IPQC明细第三方系统中的唯一ID"
+        },
+        "qualityInspectIpqcDetThirdPartyName": {
+            "meaning": "IPQC明细第三方名称",
+            "reachable": true,
+            "name": "IPQC明细第三方名称"
+        },
+        "qualityInspectIpqcDetToAuditDate": {
+            "meaning": "qualityInspectIpqcDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToBeginTime": {
+            "meaning": "qualityInspectIpqcDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToCreateTime": {
+            "meaning": "qualityInspectIpqcDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDateExtra1": {
+            "meaning": "qualityInspectIpqcDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDateExtra2": {
+            "meaning": "qualityInspectIpqcDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDateExtra3": {
+            "meaning": "qualityInspectIpqcDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDateExtra4": {
+            "meaning": "qualityInspectIpqcDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDateExtra5": {
+            "meaning": "qualityInspectIpqcDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToDeliveryDate": {
+            "meaning": "qualityInspectIpqcDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToEndTime": {
+            "meaning": "qualityInspectIpqcDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToFinishTime": {
+            "meaning": "qualityInspectIpqcDetToFinishTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToReceiptDate": {
+            "meaning": "qualityInspectIpqcDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetToUpdateTime": {
+            "meaning": "qualityInspectIpqcDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityInspectIpqcDetUnitCode": {
+            "meaning": "IPQC明细单位id",
+            "reachable": true,
+            "name": "IPQC明细单位id"
+        },
+        "qualityInspectIpqcDetUnitId": {
+            "meaning": "IPQC明细物料质检单位id",
+            "reachable": true,
+            "name": "IPQC明细物料质检单位id"
+        },
+        "qualityInspectIpqcDetUnqualifiedQuantity": {
+            "meaning": "IPQC明细不合格数量",
+            "reachable": true,
+            "name": "IPQC明细不合格数量"
+        },
+        "qualityInspectIpqcDetUpdateTime": {
+            "meaning": "IPQC明细更新时间",
+            "reachable": true,
+            "name": "IPQC明细更新时间"
+        },
+        "qualityInspectIpqcDetUpdater": {
+            "meaning": "IPQC明细更新人",
+            "reachable": true,
+            "name": "IPQC明细更新人"
+        },
+        "qualityInspectIpqcDetUpdaterId": {
+            "meaning": "IPQC明细更新人ID",
+            "reachable": true,
+            "name": "IPQC明细更新人ID"
+        },
+        "qualityInspectIpqcDetUserCode": {
+            "meaning": "IPQC明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "IPQC明细智能节点的唯一编码"
+        },
+        "qualityInspectIpqcDetVarExtra1": {
+            "meaning": "IPQC明细扩展1",
+            "reachable": true,
+            "name": "IPQC明细扩展1"
+        },
+        "qualityInspectIpqcDetVarExtra2": {
+            "meaning": "IPQC明细扩展2",
+            "reachable": true,
+            "name": "IPQC明细扩展2"
+        },
+        "qualityInspectIpqcDetVarExtra3": {
+            "meaning": "IPQC明细扩展3",
+            "reachable": true,
+            "name": "IPQC明细扩展3"
+        },
+        "qualityInspectIpqcDetVarExtra4": {
+            "meaning": "IPQC明细扩展4",
+            "reachable": true,
+            "name": "IPQC明细扩展4"
+        },
+        "qualityInspectIpqcDetVarExtra5": {
+            "meaning": "IPQC明细扩展5",
+            "reachable": true,
+            "name": "IPQC明细扩展5"
+        },
+        "qualityInspectIpqcDetVersion": {
+            "meaning": "IPQC明细版本号",
+            "reachable": true,
+            "name": "IPQC明细版本号"
+        }
+    }
+}

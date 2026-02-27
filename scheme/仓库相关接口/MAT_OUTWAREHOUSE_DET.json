@@ -1,0 +1,1272 @@
+{
+    "api_name": "/mat-outwarehouse-det/findList",
+    "table_name": "物料出仓明细表",
+    "request": {
+        "matOutwarehouseDetMatOutwarehouseClazz": "MAT_OUTWAREHOUSE",
+        "matOutwarehouseDetClazz": "MAT_OUTWAREHOUSE_DET"
+    },
+    "mainTabClazz": "MAT_OUTWAREHOUSE_DET",
+    "response": {
+        "TOutwarehouseDetMatOutwarehouseIsManualModificationDate": {
+            "meaning": "物料出仓明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "物料出仓明细表是否手动修改计划生产时间"
+        },
+        "matOutwarehouseDetActualTimeRequired": {
+            "meaning": "物料出仓明细表实际需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表实际需时"
+        },
+        "matOutwarehouseDetAdjustmentTimeRequired": {
+            "meaning": "物料出仓明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表调整需时"
+        },
+        "matOutwarehouseDetApplicationId": {
+            "meaning": "物料出仓明细表应用ID",
+            "reachable": true,
+            "name": "物料出仓明细表应用ID"
+        },
+        "matOutwarehouseDetAuditDate": {
+            "meaning": "物料出仓明细表审核时间",
+            "reachable": true,
+            "name": "物料出仓明细表审核时间"
+        },
+        "matOutwarehouseDetAuditStatus": {
+            "meaning": "物料出仓明细表审核状态",
+            "reachable": true,
+            "name": "物料出仓明细表审核状态"
+        },
+        "matOutwarehouseDetAvailableScheduleId": {
+            "meaning": "物料出仓明细表可用日程id",
+            "reachable": true,
+            "name": "物料出仓明细表可用日程id"
+        },
+        "matOutwarehouseDetBeginTime": {
+            "meaning": "物料出仓明细表开始时间",
+            "reachable": true,
+            "name": "物料出仓明细表开始时间"
+        },
+        "matOutwarehouseDetBizVersion": {
+            "meaning": "物料出仓明细表业务自定义版本号",
+            "reachable": true,
+            "name": "物料出仓明细表业务自定义版本号"
+        },
+        "matOutwarehouseDetBriefName": {
+            "meaning": "物料出仓明细表简称",
+            "reachable": true,
+            "name": "物料出仓明细表简称"
+        },
+        "matOutwarehouseDetBusDivisId": {
+            "meaning": "物料出仓明细表事业部id",
+            "reachable": true,
+            "name": "物料出仓明细表事业部id"
+        },
+        "matOutwarehouseDetClazz": {
+            "meaning": "物料出仓明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料出仓明细表子类"
+        },
+        "matOutwarehouseDetClosedReason": {
+            "meaning": "物料出仓明细表结案原因",
+            "reachable": true,
+            "name": "物料出仓明细表结案原因"
+        },
+        "matOutwarehouseDetClosedStatus": {
+            "meaning": "物料出仓明细表结案状态",
+            "reachable": true,
+            "name": "物料出仓明细表结案状态"
+        },
+        "matOutwarehouseDetComment": {
+            "meaning": "物料出仓明细表评论",
+            "reachable": true,
+            "name": "物料出仓明细表评论"
+        },
+        "matOutwarehouseDetCompleteQuantity": {
+            "meaning": "物料出仓明细表完成数量",
+            "reachable": true,
+            "name": "物料出仓明细表完成数量"
+        },
+        "matOutwarehouseDetCompleteStatus": {
+            "meaning": "物料出仓明细表完成状态",
+            "reachable": true,
+            "name": "物料出仓明细表完成状态"
+        },
+        "matOutwarehouseDetCreateTime": {
+            "meaning": "物料出仓明细表创建时间",
+            "reachable": true,
+            "name": "物料出仓明细表创建时间"
+        },
+        "matOutwarehouseDetCreator": {
+            "meaning": "物料出仓明细表创建人",
+            "reachable": true,
+            "name": "物料出仓明细表创建人"
+        },
+        "matOutwarehouseDetCreatorId": {
+            "meaning": "物料出仓明细表创建人ID",
+            "reachable": true,
+            "name": "物料出仓明细表创建人ID"
+        },
+        "matOutwarehouseDetDateExtra1": {
+            "meaning": "物料出仓明细表扩展时间1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间1"
+        },
+        "matOutwarehouseDetDateExtra2": {
+            "meaning": "物料出仓明细表扩展时间2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间2"
+        },
+        "matOutwarehouseDetDateExtra3": {
+            "meaning": "物料出仓明细表扩展时间3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间3"
+        },
+        "matOutwarehouseDetDateExtra4": {
+            "meaning": "物料出仓明细表扩展时间4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间4"
+        },
+        "matOutwarehouseDetDateExtra5": {
+            "meaning": "物料出仓明细表扩展时间5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间5"
+        },
+        "matOutwarehouseDetDefaultType": {
+            "meaning": "物料出仓明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点主类型"
+        },
+        "matOutwarehouseDetDeliveryDate": {
+            "meaning": "物料出仓明细表交货日期",
+            "reachable": true,
+            "name": "物料出仓明细表交货日期"
+        },
+        "matOutwarehouseDetDescription": {
+            "meaning": "物料出仓明细表描述",
+            "reachable": true,
+            "name": "物料出仓明细表描述"
+        },
+        "matOutwarehouseDetEndTime": {
+            "meaning": "物料出仓明细表结束时间",
+            "reachable": true,
+            "name": "物料出仓明细表结束时间"
+        },
+        "matOutwarehouseDetEndTimeRequired": {
+            "meaning": "物料出仓明细表最后需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表最后需时"
+        },
+        "matOutwarehouseDetEngName": {
+            "meaning": "物料出仓明细表英文名称",
+            "reachable": true,
+            "name": "物料出仓明细表英文名称"
+        },
+        "matOutwarehouseDetEquipmentId": {
+            "meaning": "物料出仓明细表设备id",
+            "reachable": true,
+            "name": "物料出仓明细表设备id"
+        },
+        "matOutwarehouseDetExchangeRateId": {
+            "meaning": "物料出仓明细表币种汇率id",
+            "reachable": true,
+            "name": "物料出仓明细表币种汇率id"
+        },
+        "matOutwarehouseDetExtension": {
+            "meaning": "物料出仓明细表扩展数据",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数据"
+        },
+        "matOutwarehouseDetExternalState": {
+            "meaning": "物料出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料出仓明细表上流程状态位"
+        },
+        "matOutwarehouseDetFilterClazz": {
+            "meaning": "物料出仓明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料出仓明细表冗余字段用于筛选"
+        },
+        "matOutwarehouseDetFlags": {
+            "meaning": "物料出仓明细表63位标志位",
+            "reachable": true,
+            "name": "物料出仓明细表63位标志位"
+        },
+        "matOutwarehouseDetFromAuditDate": {
+            "meaning": "matOutwarehouseDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromBeginTime": {
+            "meaning": "matOutwarehouseDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromCreateTime": {
+            "meaning": "matOutwarehouseDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDateExtra1": {
+            "meaning": "matOutwarehouseDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDateExtra2": {
+            "meaning": "matOutwarehouseDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDateExtra3": {
+            "meaning": "matOutwarehouseDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDateExtra4": {
+            "meaning": "matOutwarehouseDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDateExtra5": {
+            "meaning": "matOutwarehouseDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromDeliveryDate": {
+            "meaning": "matOutwarehouseDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromEndTime": {
+            "meaning": "matOutwarehouseDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromReceiptDate": {
+            "meaning": "matOutwarehouseDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFromUpdateTime": {
+            "meaning": "matOutwarehouseDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetFscType": {
+            "meaning": "物料出仓明细表FSC声明",
+            "reachable": true,
+            "name": "物料出仓明细表FSC声明"
+        },
+        "matOutwarehouseDetGenerativePeople": {
+            "meaning": "物料出仓明细表下发人",
+            "reachable": true,
+            "name": "物料出仓明细表下发人"
+        },
+        "matOutwarehouseDetGenerativeState": {
+            "meaning": "物料出仓明细表下发状态",
+            "reachable": true,
+            "name": "物料出仓明细表下发状态"
+        },
+        "matOutwarehouseDetGoodsId": {
+            "meaning": "物料出仓明细表货（包）id",
+            "reachable": true,
+            "name": "物料出仓明细表货"
+        },
+        "matOutwarehouseDetGroovyScript": {
+            "meaning": "物料出仓明细表groovy脚本",
+            "reachable": true,
+            "name": "物料出仓明细表groovy脚本"
+        },
+        "matOutwarehouseDetGropeCode": {
+            "meaning": "物料出仓明细表搜索码",
+            "reachable": true,
+            "name": "物料出仓明细表搜索码"
+        },
+        "matOutwarehouseDetId": {
+            "meaning": "物料出仓明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料出仓明细表PK"
+        },
+        "matOutwarehouseDetInUsed": {
+            "meaning": "物料出仓明细表是否被使用",
+            "reachable": true,
+            "name": "物料出仓明细表是否被使用"
+        },
+        "matOutwarehouseDetInvTypeTaxRateId": {
+            "meaning": "物料出仓明细表发票税率id",
+            "reachable": true,
+            "name": "物料出仓明细表发票税率id"
+        },
+        "matOutwarehouseDetIsBanned": {
+            "meaning": "物料出仓明细表是否被禁用",
+            "reachable": true,
+            "name": "物料出仓明细表是否被禁用"
+        },
+        "matOutwarehouseDetIsDeleted": {
+            "meaning": "物料出仓明细表是否被删除",
+            "reachable": true,
+            "name": "物料出仓明细表是否被删除"
+        },
+        "matOutwarehouseDetIsLeaf": {
+            "meaning": "物料出仓明细表是否叶子节点",
+            "reachable": true,
+            "name": "物料出仓明细表是否叶子节点"
+        },
+        "matOutwarehouseDetIsMainFlow": {
+            "meaning": "物料出仓明细表是否是主流程",
+            "reachable": true,
+            "name": "物料出仓明细表是否是主流程"
+        },
+        "matOutwarehouseDetIsManualModificationDate": {
+            "meaning": "物料出仓明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料出仓明细表是否手动修改计划生产时间"
+        },
+        "matOutwarehouseDetIsolation": {
+            "meaning": "物料出仓明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点数据隔离标识"
+        },
+        "matOutwarehouseDetJsScript": {
+            "meaning": "物料出仓明细表js脚本",
+            "reachable": true,
+            "name": "物料出仓明细表js脚本"
+        },
+        "matOutwarehouseDetLocalCurrencyTotalAmount": {
+            "meaning": "物料出仓明细表本币总金额",
+            "reachable": true,
+            "name": "物料出仓明细表本币总金额"
+        },
+        "matOutwarehouseDetLocalCurrencyUnitPrice": {
+            "meaning": "物料出仓明细表本币单价",
+            "reachable": true,
+            "name": "物料出仓明细表本币单价"
+        },
+        "matOutwarehouseDetMatBatchId": {
+            "meaning": "物料出仓明细表物料批次id",
+            "reachable": true,
+            "name": "物料出仓明细表物料批次id"
+        },
+        "matOutwarehouseDetMatOutwarehouseActualTimeRequired": {
+            "meaning": "物料出仓明细表实际需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表实际需时"
+        },
+        "matOutwarehouseDetMatOutwarehouseAdjustmentTimeRequired": {
+            "meaning": "物料出仓明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表调整需时"
+        },
+        "matOutwarehouseDetMatOutwarehouseApplicationId": {
+            "meaning": "物料出仓明细表应用ID",
+            "reachable": true,
+            "name": "物料出仓明细表应用ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseAuditDate": {
+            "meaning": "物料出仓明细表审核时间",
+            "reachable": true,
+            "name": "物料出仓明细表审核时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseAuditStatus": {
+            "meaning": "物料出仓明细表审核状态",
+            "reachable": true,
+            "name": "物料出仓明细表审核状态"
+        },
+        "matOutwarehouseDetMatOutwarehouseAvailableScheduleId": {
+            "meaning": "物料出仓明细表可用日程id",
+            "reachable": true,
+            "name": "物料出仓明细表可用日程id"
+        },
+        "matOutwarehouseDetMatOutwarehouseBeginTime": {
+            "meaning": "物料出仓明细表开始时间",
+            "reachable": true,
+            "name": "物料出仓明细表开始时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseBizVersion": {
+            "meaning": "物料出仓明细表业务自定义版本号",
+            "reachable": true,
+            "name": "物料出仓明细表业务自定义版本号"
+        },
+        "matOutwarehouseDetMatOutwarehouseBriefName": {
+            "meaning": "物料出仓明细表简称",
+            "reachable": true,
+            "name": "物料出仓明细表简称"
+        },
+        "matOutwarehouseDetMatOutwarehouseBusDivisId": {
+            "meaning": "物料出仓明细表事业部id",
+            "reachable": true,
+            "name": "物料出仓明细表事业部id"
+        },
+        "matOutwarehouseDetMatOutwarehouseClazz": {
+            "meaning": "物料出仓明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料出仓明细表子类"
+        },
+        "matOutwarehouseDetMatOutwarehouseClosedReason": {
+            "meaning": "物料出仓明细表结案原因",
+            "reachable": true,
+            "name": "物料出仓明细表结案原因"
+        },
+        "matOutwarehouseDetMatOutwarehouseClosedStatus": {
+            "meaning": "物料出仓明细表结案状态",
+            "reachable": true,
+            "name": "物料出仓明细表结案状态"
+        },
+        "matOutwarehouseDetMatOutwarehouseComment": {
+            "meaning": "物料出仓明细表评论",
+            "reachable": true,
+            "name": "物料出仓明细表评论"
+        },
+        "matOutwarehouseDetMatOutwarehouseCompleteQuantity": {
+            "meaning": "物料出仓明细表完成数量",
+            "reachable": true,
+            "name": "物料出仓明细表完成数量"
+        },
+        "matOutwarehouseDetMatOutwarehouseCompleteStatus": {
+            "meaning": "物料出仓明细表完成状态",
+            "reachable": true,
+            "name": "物料出仓明细表完成状态"
+        },
+        "matOutwarehouseDetMatOutwarehouseCreateTime": {
+            "meaning": "物料出仓明细表创建时间",
+            "reachable": true,
+            "name": "物料出仓明细表创建时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseCreator": {
+            "meaning": "物料出仓明细表创建人",
+            "reachable": true,
+            "name": "物料出仓明细表创建人"
+        },
+        "matOutwarehouseDetMatOutwarehouseCreatorId": {
+            "meaning": "物料出仓明细表创建人ID",
+            "reachable": true,
+            "name": "物料出仓明细表创建人ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseDateExtra1": {
+            "meaning": "物料出仓明细表扩展时间1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间1"
+        },
+        "matOutwarehouseDetMatOutwarehouseDateExtra2": {
+            "meaning": "物料出仓明细表扩展时间2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间2"
+        },
+        "matOutwarehouseDetMatOutwarehouseDateExtra3": {
+            "meaning": "物料出仓明细表扩展时间3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间3"
+        },
+        "matOutwarehouseDetMatOutwarehouseDateExtra4": {
+            "meaning": "物料出仓明细表扩展时间4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间4"
+        },
+        "matOutwarehouseDetMatOutwarehouseDateExtra5": {
+            "meaning": "物料出仓明细表扩展时间5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展时间5"
+        },
+        "matOutwarehouseDetMatOutwarehouseDefaultType": {
+            "meaning": "物料出仓明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点主类型"
+        },
+        "matOutwarehouseDetMatOutwarehouseDeliveryDate": {
+            "meaning": "物料出仓明细表交货日期",
+            "reachable": true,
+            "name": "物料出仓明细表交货日期"
+        },
+        "matOutwarehouseDetMatOutwarehouseDescription": {
+            "meaning": "物料出仓明细表描述",
+            "reachable": true,
+            "name": "物料出仓明细表描述"
+        },
+        "matOutwarehouseDetMatOutwarehouseEndTime": {
+            "meaning": "物料出仓明细表结束时间",
+            "reachable": true,
+            "name": "物料出仓明细表结束时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseEndTimeRequired": {
+            "meaning": "物料出仓明细表最后需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表最后需时"
+        },
+        "matOutwarehouseDetMatOutwarehouseEngName": {
+            "meaning": "物料出仓明细表英文名称",
+            "reachable": true,
+            "name": "物料出仓明细表英文名称"
+        },
+        "matOutwarehouseDetMatOutwarehouseEquipmentId": {
+            "meaning": "物料出仓明细表设备id",
+            "reachable": true,
+            "name": "物料出仓明细表设备id"
+        },
+        "matOutwarehouseDetMatOutwarehouseExchangeRateId": {
+            "meaning": "物料出仓明细表币种汇率id",
+            "reachable": true,
+            "name": "物料出仓明细表币种汇率id"
+        },
+        "matOutwarehouseDetMatOutwarehouseExtension": {
+            "meaning": "物料出仓明细表扩展数据",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数据"
+        },
+        "matOutwarehouseDetMatOutwarehouseExternalState": {
+            "meaning": "物料出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料出仓明细表上流程状态位"
+        },
+        "matOutwarehouseDetMatOutwarehouseFilterClazz": {
+            "meaning": "物料出仓明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "物料出仓明细表冗余字段用于筛选"
+        },
+        "matOutwarehouseDetMatOutwarehouseFlags": {
+            "meaning": "物料出仓明细表63位标志位",
+            "reachable": true,
+            "name": "物料出仓明细表63位标志位"
+        },
+        "matOutwarehouseDetMatOutwarehouseFromAuditDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromBeginTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromCreateTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDateExtra1": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDateExtra2": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDateExtra3": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDateExtra4": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDateExtra5": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromDeliveryDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromEndTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromReceiptDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFromUpdateTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseFscType": {
+            "meaning": "物料出仓明细表FSC声明",
+            "reachable": true,
+            "name": "物料出仓明细表FSC声明"
+        },
+        "matOutwarehouseDetMatOutwarehouseGenerativePeople": {
+            "meaning": "物料出仓明细表下发人",
+            "reachable": true,
+            "name": "物料出仓明细表下发人"
+        },
+        "matOutwarehouseDetMatOutwarehouseGenerativeState": {
+            "meaning": "物料出仓明细表下发状态",
+            "reachable": true,
+            "name": "物料出仓明细表下发状态"
+        },
+        "matOutwarehouseDetMatOutwarehouseGroovyScript": {
+            "meaning": "物料出仓明细表groovy脚本",
+            "reachable": true,
+            "name": "物料出仓明细表groovy脚本"
+        },
+        "matOutwarehouseDetMatOutwarehouseGropeCode": {
+            "meaning": "物料出仓明细表搜索码",
+            "reachable": true,
+            "name": "物料出仓明细表搜索码"
+        },
+        "matOutwarehouseDetMatOutwarehouseId": {
+            "meaning": "物料出仓明细表PK",
+            "reachable": true,
+            "name": "物料出仓明细表PK"
+        },
+        "matOutwarehouseDetMatOutwarehouseInUsed": {
+            "meaning": "物料出仓明细表是否被使用",
+            "reachable": true,
+            "name": "物料出仓明细表是否被使用"
+        },
+        "matOutwarehouseDetMatOutwarehouseInvTypeTaxRateId": {
+            "meaning": "物料出仓明细表发票税率id",
+            "reachable": true,
+            "name": "物料出仓明细表发票税率id"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsBanned": {
+            "meaning": "物料出仓明细表是否被禁用",
+            "reachable": true,
+            "name": "物料出仓明细表是否被禁用"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsDeleted": {
+            "meaning": "物料出仓明细表是否被删除",
+            "reachable": true,
+            "name": "物料出仓明细表是否被删除"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsLeaf": {
+            "meaning": "物料出仓明细表是否叶子节点",
+            "reachable": true,
+            "name": "物料出仓明细表是否叶子节点"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsMainFlow": {
+            "meaning": "物料出仓明细表是否是主流程",
+            "reachable": true,
+            "name": "物料出仓明细表是否是主流程"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsManualModificationDate": {
+            "meaning": "物料出仓明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "物料出仓明细表是否手动修改计划生产时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseIsolation": {
+            "meaning": "物料出仓明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点数据隔离标识"
+        },
+        "matOutwarehouseDetMatOutwarehouseJsScript": {
+            "meaning": "物料出仓明细表js脚本",
+            "reachable": true,
+            "name": "物料出仓明细表js脚本"
+        },
+        "matOutwarehouseDetMatOutwarehouseMaterialId": {
+            "meaning": "物料出仓明细表物料id",
+            "reachable": true,
+            "name": "物料出仓明细表物料id"
+        },
+        "matOutwarehouseDetMatOutwarehouseName": {
+            "meaning": "物料出仓明细表智能节点名",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点名"
+        },
+        "matOutwarehouseDetMatOutwarehouseNameCodeSearch": {
+            "meaning": "物料出仓明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料出仓明细表name、user_code模糊搜索"
+        },
+        "matOutwarehouseDetMatOutwarehouseNumberExtra1": {
+            "meaning": "物料出仓明细表扩展数量1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量1"
+        },
+        "matOutwarehouseDetMatOutwarehouseNumberExtra2": {
+            "meaning": "物料出仓明细表扩展数量2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量2"
+        },
+        "matOutwarehouseDetMatOutwarehouseNumberExtra3": {
+            "meaning": "物料出仓明细表扩展数量3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量3"
+        },
+        "matOutwarehouseDetMatOutwarehouseNumberExtra4": {
+            "meaning": "物料出仓明细表扩展数量4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量4"
+        },
+        "matOutwarehouseDetMatOutwarehouseNumberExtra5": {
+            "meaning": "物料出仓明细表扩展数量5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量5"
+        },
+        "matOutwarehouseDetMatOutwarehouseParentId": {
+            "meaning": "物料出仓明细表父节点ID",
+            "reachable": true,
+            "name": "物料出仓明细表父节点ID"
+        },
+        "matOutwarehouseDetMatOutwarehousePlannedOutputQuantity": {
+            "meaning": "物料出仓明细表计划产出数量",
+            "reachable": true,
+            "name": "物料出仓明细表计划产出数量"
+        },
+        "matOutwarehouseDetMatOutwarehousePlannedTimeRequired": {
+            "meaning": "物料出仓明细表计划需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表计划需时"
+        },
+        "matOutwarehouseDetMatOutwarehousePrintTimes": {
+            "meaning": "物料出仓明细表打印次数",
+            "reachable": true,
+            "name": "物料出仓明细表打印次数"
+        },
+        "matOutwarehouseDetMatOutwarehousePriority": {
+            "meaning": "物料出仓明细表优先级",
+            "reachable": true,
+            "name": "物料出仓明细表优先级"
+        },
+        "matOutwarehouseDetMatOutwarehouseProcessInstanceId": {
+            "meaning": "物料出仓明细表流程实例ID",
+            "reachable": true,
+            "name": "物料出仓明细表流程实例ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseProductionProcessesTypeId": {
+            "meaning": "物料出仓明细表工序类型ID",
+            "reachable": true,
+            "name": "物料出仓明细表工序类型ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseProductionShiftId": {
+            "meaning": "物料出仓明细表生产班次ID",
+            "reachable": true,
+            "name": "物料出仓明细表生产班次ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseQuantity": {
+            "meaning": "物料出仓明细表任务数量",
+            "reachable": true,
+            "name": "物料出仓明细表任务数量"
+        },
+        "matOutwarehouseDetMatOutwarehouseReceiptDate": {
+            "meaning": "物料出仓明细表单据日期",
+            "reachable": true,
+            "name": "物料出仓明细表单据日期"
+        },
+        "matOutwarehouseDetMatOutwarehouseReceiptType": {
+            "meaning": "物料出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料出仓明细表单据类型"
+        },
+        "matOutwarehouseDetMatOutwarehouseRelatedTasksId": {
+            "meaning": "物料出仓明细表关联任务id",
+            "reachable": true,
+            "name": "物料出仓明细表关联任务id"
+        },
+        "matOutwarehouseDetMatOutwarehouseSerialNumber": {
+            "meaning": "物料出仓明细表顺序号",
+            "reachable": true,
+            "name": "物料出仓明细表顺序号"
+        },
+        "matOutwarehouseDetMatOutwarehouseSource": {
+            "meaning": "物料出仓明细表源",
+            "reachable": true,
+            "name": "物料出仓明细表源"
+        },
+        "matOutwarehouseDetMatOutwarehouseSourceType": {
+            "meaning": "物料出仓明细表来源类型",
+            "reachable": true,
+            "name": "物料出仓明细表来源类型"
+        },
+        "matOutwarehouseDetMatOutwarehouseState": {
+            "meaning": "物料出仓明细表通用状态",
+            "reachable": true,
+            "name": "物料出仓明细表通用状态"
+        },
+        "matOutwarehouseDetMatOutwarehouseSystemCode": {
+            "meaning": "物料出仓明细表系统编码",
+            "reachable": true,
+            "name": "物料出仓明细表系统编码"
+        },
+        "matOutwarehouseDetMatOutwarehouseTarget": {
+            "meaning": "物料出仓明细表目标",
+            "reachable": true,
+            "name": "物料出仓明细表目标"
+        },
+        "matOutwarehouseDetMatOutwarehouseTaskNodeName": {
+            "meaning": "物料出仓明细表任务节点名称",
+            "reachable": true,
+            "name": "物料出仓明细表任务节点名称"
+        },
+        "matOutwarehouseDetMatOutwarehouseTaskNodeType": {
+            "meaning": "物料出仓明细表任务节点类型",
+            "reachable": true,
+            "name": "物料出仓明细表任务节点类型"
+        },
+        "matOutwarehouseDetMatOutwarehouseTenantId": {
+            "meaning": "物料出仓明细表租户id",
+            "reachable": true,
+            "name": "物料出仓明细表租户id"
+        },
+        "matOutwarehouseDetMatOutwarehouseThirdPartyClass": {
+            "meaning": "物料出仓明细表第三方分类",
+            "reachable": true,
+            "name": "物料出仓明细表第三方分类"
+        },
+        "matOutwarehouseDetMatOutwarehouseThirdPartyId": {
+            "meaning": "物料出仓明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料出仓明细表第三方系统中的唯一ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseThirdPartyName": {
+            "meaning": "物料出仓明细表第三方名称",
+            "reachable": true,
+            "name": "物料出仓明细表第三方名称"
+        },
+        "matOutwarehouseDetMatOutwarehouseToAuditDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToBeginTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToCreateTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDateExtra1": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDateExtra2": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDateExtra3": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDateExtra4": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDateExtra5": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToDeliveryDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToEndTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToReceiptDate": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseToUpdateTime": {
+            "meaning": "matOutwarehouseDetMatOutwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetMatOutwarehouseUnitCode": {
+            "meaning": "物料出仓明细表单位id",
+            "reachable": true,
+            "name": "物料出仓明细表单位id"
+        },
+        "matOutwarehouseDetMatOutwarehouseUpdateTime": {
+            "meaning": "物料出仓明细表更新时间",
+            "reachable": true,
+            "name": "物料出仓明细表更新时间"
+        },
+        "matOutwarehouseDetMatOutwarehouseUpdater": {
+            "meaning": "物料出仓明细表更新人",
+            "reachable": true,
+            "name": "物料出仓明细表更新人"
+        },
+        "matOutwarehouseDetMatOutwarehouseUpdaterId": {
+            "meaning": "物料出仓明细表更新人ID",
+            "reachable": true,
+            "name": "物料出仓明细表更新人ID"
+        },
+        "matOutwarehouseDetMatOutwarehouseUserCode": {
+            "meaning": "物料出仓明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点的唯一编码"
+        },
+        "matOutwarehouseDetMatOutwarehouseVarExtra1": {
+            "meaning": "物料出仓明细表扩展1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展1"
+        },
+        "matOutwarehouseDetMatOutwarehouseVarExtra2": {
+            "meaning": "物料出仓明细表扩展2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展2"
+        },
+        "matOutwarehouseDetMatOutwarehouseVarExtra3": {
+            "meaning": "物料出仓明细表扩展3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展3"
+        },
+        "matOutwarehouseDetMatOutwarehouseVarExtra4": {
+            "meaning": "物料出仓明细表扩展4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展4"
+        },
+        "matOutwarehouseDetMatOutwarehouseVarExtra5": {
+            "meaning": "物料出仓明细表扩展5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展5"
+        },
+        "matOutwarehouseDetMatOutwarehouseVersion": {
+            "meaning": "物料出仓明细表版本号",
+            "reachable": true,
+            "name": "物料出仓明细表版本号"
+        },
+        "matOutwarehouseDetMaterialId": {
+            "meaning": "物料出仓明细表物料id",
+            "reachable": true,
+            "name": "物料出仓明细表物料id"
+        },
+        "matOutwarehouseDetName": {
+            "meaning": "物料出仓明细表智能节点名",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点名"
+        },
+        "matOutwarehouseDetNameCodeSearch": {
+            "meaning": "物料出仓明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料出仓明细表name、user_code模糊搜索"
+        },
+        "matOutwarehouseDetNumberExtra1": {
+            "meaning": "物料出仓明细表扩展数量1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量1"
+        },
+        "matOutwarehouseDetNumberExtra2": {
+            "meaning": "物料出仓明细表扩展数量2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量2"
+        },
+        "matOutwarehouseDetNumberExtra3": {
+            "meaning": "物料出仓明细表扩展数量3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量3"
+        },
+        "matOutwarehouseDetNumberExtra4": {
+            "meaning": "物料出仓明细表扩展数量4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量4"
+        },
+        "matOutwarehouseDetNumberExtra5": {
+            "meaning": "物料出仓明细表扩展数量5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展数量5"
+        },
+        "matOutwarehouseDetParentId": {
+            "meaning": "物料出仓明细表父节点ID",
+            "reachable": true,
+            "name": "物料出仓明细表父节点ID"
+        },
+        "matOutwarehouseDetPlannedOutputQuantity": {
+            "meaning": "物料出仓明细表计划产出数量",
+            "reachable": true,
+            "name": "物料出仓明细表计划产出数量"
+        },
+        "matOutwarehouseDetPlannedTimeRequired": {
+            "meaning": "物料出仓明细表计划需时(小时)",
+            "reachable": true,
+            "name": "物料出仓明细表计划需时"
+        },
+        "matOutwarehouseDetPrintTimes": {
+            "meaning": "物料出仓明细表打印次数",
+            "reachable": true,
+            "name": "物料出仓明细表打印次数"
+        },
+        "matOutwarehouseDetPriority": {
+            "meaning": "物料出仓明细表优先级",
+            "reachable": true,
+            "name": "物料出仓明细表优先级"
+        },
+        "matOutwarehouseDetProcessInstanceId": {
+            "meaning": "物料出仓明细表流程实例ID",
+            "reachable": true,
+            "name": "物料出仓明细表流程实例ID"
+        },
+        "matOutwarehouseDetProductionProcessesTypeId": {
+            "meaning": "物料出仓明细表工序类型ID",
+            "reachable": true,
+            "name": "物料出仓明细表工序类型ID"
+        },
+        "matOutwarehouseDetProductionShiftId": {
+            "meaning": "物料出仓明细表生产班次ID",
+            "reachable": true,
+            "name": "物料出仓明细表生产班次ID"
+        },
+        "matOutwarehouseDetQuantity": {
+            "meaning": "物料出仓明细表任务数量",
+            "reachable": true,
+            "name": "物料出仓明细表任务数量"
+        },
+        "matOutwarehouseDetQuotationUnitPriceIncludingTax": {
+            "meaning": "物料出仓明细表报价单价（含税）",
+            "reachable": true,
+            "name": "物料出仓明细表报价单价"
+        },
+        "matOutwarehouseDetQuotationUnitPriceWithoutTax": {
+            "meaning": "物料出仓明细表报价单价（不含税）",
+            "reachable": true,
+            "name": "物料出仓明细表报价单价"
+        },
+        "matOutwarehouseDetReceiptDate": {
+            "meaning": "物料出仓明细表单据日期",
+            "reachable": true,
+            "name": "物料出仓明细表单据日期"
+        },
+        "matOutwarehouseDetReceiptType": {
+            "meaning": "物料出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "物料出仓明细表单据类型"
+        },
+        "matOutwarehouseDetRelatedTasksId": {
+            "meaning": "物料出仓明细表关联任务id",
+            "reachable": true,
+            "name": "物料出仓明细表关联任务id"
+        },
+        "matOutwarehouseDetSerialNumber": {
+            "meaning": "物料出仓明细表顺序号",
+            "reachable": true,
+            "name": "物料出仓明细表顺序号"
+        },
+        "matOutwarehouseDetSettlementTotalAmount": {
+            "meaning": "物料出仓明细表结算总金额",
+            "reachable": true,
+            "name": "物料出仓明细表结算总金额"
+        },
+        "matOutwarehouseDetSettlementUnitPrice": {
+            "meaning": "物料出仓明细表结算单价",
+            "reachable": true,
+            "name": "物料出仓明细表结算单价"
+        },
+        "matOutwarehouseDetSource": {
+            "meaning": "物料出仓明细表源",
+            "reachable": true,
+            "name": "物料出仓明细表源"
+        },
+        "matOutwarehouseDetSourceType": {
+            "meaning": "物料出仓明细表来源类型",
+            "reachable": true,
+            "name": "物料出仓明细表来源类型"
+        },
+        "matOutwarehouseDetState": {
+            "meaning": "物料出仓明细表通用状态",
+            "reachable": true,
+            "name": "物料出仓明细表通用状态"
+        },
+        "matOutwarehouseDetSystemCode": {
+            "meaning": "物料出仓明细表系统编码",
+            "reachable": true,
+            "name": "物料出仓明细表系统编码"
+        },
+        "matOutwarehouseDetTarget": {
+            "meaning": "物料出仓明细表目标",
+            "reachable": true,
+            "name": "物料出仓明细表目标"
+        },
+        "matOutwarehouseDetTaskNodeName": {
+            "meaning": "物料出仓明细表任务节点名称",
+            "reachable": true,
+            "name": "物料出仓明细表任务节点名称"
+        },
+        "matOutwarehouseDetTaskNodeType": {
+            "meaning": "物料出仓明细表任务节点类型",
+            "reachable": true,
+            "name": "物料出仓明细表任务节点类型"
+        },
+        "matOutwarehouseDetTenantId": {
+            "meaning": "物料出仓明细表租户id",
+            "reachable": true,
+            "name": "物料出仓明细表租户id"
+        },
+        "matOutwarehouseDetThirdPartyClass": {
+            "meaning": "物料出仓明细表第三方分类",
+            "reachable": true,
+            "name": "物料出仓明细表第三方分类"
+        },
+        "matOutwarehouseDetThirdPartyId": {
+            "meaning": "物料出仓明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料出仓明细表第三方系统中的唯一ID"
+        },
+        "matOutwarehouseDetThirdPartyName": {
+            "meaning": "物料出仓明细表第三方名称",
+            "reachable": true,
+            "name": "物料出仓明细表第三方名称"
+        },
+        "matOutwarehouseDetToAuditDate": {
+            "meaning": "matOutwarehouseDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToBeginTime": {
+            "meaning": "matOutwarehouseDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToCreateTime": {
+            "meaning": "matOutwarehouseDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDateExtra1": {
+            "meaning": "matOutwarehouseDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDateExtra2": {
+            "meaning": "matOutwarehouseDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDateExtra3": {
+            "meaning": "matOutwarehouseDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDateExtra4": {
+            "meaning": "matOutwarehouseDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDateExtra5": {
+            "meaning": "matOutwarehouseDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToDeliveryDate": {
+            "meaning": "matOutwarehouseDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToEndTime": {
+            "meaning": "matOutwarehouseDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToReceiptDate": {
+            "meaning": "matOutwarehouseDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetToUpdateTime": {
+            "meaning": "matOutwarehouseDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matOutwarehouseDetTotalAmount": {
+            "meaning": "物料出仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化",
+            "reachable": true,
+            "name": "物料出仓明细表总金额"
+        },
+        "matOutwarehouseDetTotalAmountIncludingTax": {
+            "meaning": "物料出仓明细表总金额（含税）",
+            "reachable": true,
+            "name": "物料出仓明细表总金额"
+        },
+        "matOutwarehouseDetTotalAmountWithoutTax": {
+            "meaning": "物料出仓明细表总金额（不含税）",
+            "reachable": true,
+            "name": "物料出仓明细表总金额"
+        },
+        "matOutwarehouseDetUnitCode": {
+            "meaning": "物料出仓明细表单位id",
+            "reachable": true,
+            "name": "物料出仓明细表单位id"
+        },
+        "matOutwarehouseDetUnitPriceIncludingTax": {
+            "meaning": "物料出仓明细表单价（含税）",
+            "reachable": true,
+            "name": "物料出仓明细表单价"
+        },
+        "matOutwarehouseDetUnitPriceWithoutTax": {
+            "meaning": "物料出仓明细表单价（不含税）",
+            "reachable": true,
+            "name": "物料出仓明细表单价"
+        },
+        "matOutwarehouseDetUpdateTime": {
+            "meaning": "物料出仓明细表更新时间",
+            "reachable": true,
+            "name": "物料出仓明细表更新时间"
+        },
+        "matOutwarehouseDetUpdater": {
+            "meaning": "物料出仓明细表更新人",
+            "reachable": true,
+            "name": "物料出仓明细表更新人"
+        },
+        "matOutwarehouseDetUpdaterId": {
+            "meaning": "物料出仓明细表更新人ID",
+            "reachable": true,
+            "name": "物料出仓明细表更新人ID"
+        },
+        "matOutwarehouseDetUserCode": {
+            "meaning": "物料出仓明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料出仓明细表智能节点的唯一编码"
+        },
+        "matOutwarehouseDetVarExtra1": {
+            "meaning": "物料出仓明细表扩展1",
+            "reachable": true,
+            "name": "物料出仓明细表扩展1"
+        },
+        "matOutwarehouseDetVarExtra2": {
+            "meaning": "物料出仓明细表扩展2",
+            "reachable": true,
+            "name": "物料出仓明细表扩展2"
+        },
+        "matOutwarehouseDetVarExtra3": {
+            "meaning": "物料出仓明细表扩展3",
+            "reachable": true,
+            "name": "物料出仓明细表扩展3"
+        },
+        "matOutwarehouseDetVarExtra4": {
+            "meaning": "物料出仓明细表扩展4",
+            "reachable": true,
+            "name": "物料出仓明细表扩展4"
+        },
+        "matOutwarehouseDetVarExtra5": {
+            "meaning": "物料出仓明细表扩展5",
+            "reachable": true,
+            "name": "物料出仓明细表扩展5"
+        },
+        "matOutwarehouseDetVersion": {
+            "meaning": "物料出仓明细表版本号",
+            "reachable": true,
+            "name": "物料出仓明细表版本号"
+        },
+        "matOutwarehouseDetWarehouseSpaceId": {
+            "meaning": "物料出仓明细表仓空间id",
+            "reachable": true,
+            "name": "物料出仓明细表仓空间id"
+        },
+        "outwarehouseDetMatOutwarehouseProductionProcessesTypeId": {
+            "meaning": "物料出仓明细表工序类型ID",
+            "reachable": false,
+            "name": "物料出仓明细表工序类型ID"
+        }
+    }
+}

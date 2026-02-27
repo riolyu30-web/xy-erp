@@ -1,0 +1,1255 @@
+{
+    "api_name": "/out-apply-det/findList",
+    "table_name": "外发申请明细",
+    "request": {
+        "outApplyDetOutApplyClazz": "OUT_APPLY",
+        "outApplyDetClazz": "OUT_APPLY_DET"
+    },
+    "mainTabClazz": "OUT_APPLY_DET",
+    "response": {
+        "outApplyDetActualTimeRequired": {
+            "meaning": "OutApplyDetDTO对象实际需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAdjustmentTimeRequired": {
+            "meaning": "OutApplyDetDTO对象调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAnswerReceivedQat": {
+            "meaning": "OutApplyDetDTO对象应收货数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetApplicationId": {
+            "meaning": "OutApplyDetDTO对象应用ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAssemblyName": {
+            "meaning": "OutApplyDetDTO对象部件名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAuditDate": {
+            "meaning": "OutApplyDetDTO对象审核时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAuditStatus": {
+            "meaning": "OutApplyDetDTO对象审核状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetAvailableScheduleId": {
+            "meaning": "OutApplyDetDTO对象可用日程id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetBeginTime": {
+            "meaning": "OutApplyDetDTO对象开始时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetBizVersion": {
+            "meaning": "OutApplyDetDTO对象业务自定义版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetBriefName": {
+            "meaning": "OutApplyDetDTO对象简称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetBusDivisId": {
+            "meaning": "OutApplyDetDTO对象事业部id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetClazz": {
+            "meaning": "OutApplyDetDTO对象子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetClosedReason": {
+            "meaning": "OutApplyDetDTO对象结案原因",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetClosedStatus": {
+            "meaning": "OutApplyDetDTO对象结案状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetComment": {
+            "meaning": "OutApplyDetDTO对象评论",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetCompleteQuantity": {
+            "meaning": "OutApplyDetDTO对象完成数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetCompleteStatus": {
+            "meaning": "OutApplyDetDTO对象完成状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetCreateTime": {
+            "meaning": "OutApplyDetDTO对象创建时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetCreator": {
+            "meaning": "OutApplyDetDTO对象创建人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetCreatorId": {
+            "meaning": "OutApplyDetDTO对象创建人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDateExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展时间1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDateExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展时间2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDateExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展时间3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDateExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展时间4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDateExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展时间5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDefaultType": {
+            "meaning": "OutApplyDetDTO对象智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDeliveryDate": {
+            "meaning": "OutApplyDetDTO对象交货日期",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetDescription": {
+            "meaning": "OutApplyDetDTO对象描述",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetEndTime": {
+            "meaning": "OutApplyDetDTO对象结束时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetEndTimeRequired": {
+            "meaning": "OutApplyDetDTO对象最后需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetEngName": {
+            "meaning": "OutApplyDetDTO对象英文名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetEquipmentId": {
+            "meaning": "OutApplyDetDTO对象设备id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetExchangeRateId": {
+            "meaning": "OutApplyDetDTO对象币种汇率id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetExtension": {
+            "meaning": "OutApplyDetDTO对象扩展数据",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetExternalState": {
+            "meaning": "OutApplyDetDTO对象上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetFilterClazz": {
+            "meaning": "OutApplyDetDTO对象冗余字段用于筛选",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFlags": {
+            "meaning": "OutApplyDetDTO对象63位标志位",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetFromAuditDate": {
+            "meaning": "outApplyDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromBeginTime": {
+            "meaning": "outApplyDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromCreateTime": {
+            "meaning": "outApplyDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDateExtra1": {
+            "meaning": "outApplyDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDateExtra2": {
+            "meaning": "outApplyDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDateExtra3": {
+            "meaning": "outApplyDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDateExtra4": {
+            "meaning": "outApplyDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDateExtra5": {
+            "meaning": "outApplyDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromDeliveryDate": {
+            "meaning": "outApplyDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromEndTime": {
+            "meaning": "outApplyDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromReceiptDate": {
+            "meaning": "outApplyDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromReqDate": {
+            "type": "object",
+            "meaning": "outApplyDetFromReqDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFromUpdateTime": {
+            "meaning": "outApplyDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetFscType": {
+            "meaning": "OutApplyDetDTO对象FSC声明",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetGenerativePeople": {
+            "meaning": "OutApplyDetDTO对象下发人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetGenerativeState": {
+            "meaning": "OutApplyDetDTO对象下发状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetGroovyScript": {
+            "meaning": "OutApplyDetDTO对象groovy脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetGropeCode": {
+            "meaning": "OutApplyDetDTO对象搜索码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetId": {
+            "meaning": "OutApplyDetDTO对象主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetInUsed": {
+            "meaning": "OutApplyDetDTO对象是否被使用",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetInvTypeTaxRateId": {
+            "meaning": "OutApplyDetDTO对象发票税率id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsBanned": {
+            "meaning": "OutApplyDetDTO对象是否被禁用",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsDeleted": {
+            "meaning": "OutApplyDetDTO对象是否被删除",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsLeaf": {
+            "meaning": "OutApplyDetDTO对象是否叶子节点",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsMainFlow": {
+            "meaning": "OutApplyDetDTO对象是否是主流程",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsManualModificationDate": {
+            "meaning": "OutApplyDetDTO对象是否手动修改计划生产时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetIsolation": {
+            "meaning": "OutApplyDetDTO对象智能节点数据隔离标识",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetJsScript": {
+            "meaning": "OutApplyDetDTO对象js脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetLossQat": {
+            "meaning": "OutApplyDetDTO对象损耗数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetMaterialId": {
+            "meaning": "OutApplyDetDTO对象物料id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetName": {
+            "meaning": "OutApplyDetDTO对象智能节点名",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNameCodeSearch": {
+            "meaning": "OutApplyDetDTO对象name、user_code模糊搜索",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNumberExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展数量1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNumberExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展数量2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNumberExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展数量3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNumberExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展数量4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetNumberExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展数量5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyActualTimeRequired": {
+            "meaning": "OutApplyDetDTO对象实际需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyAdjustmentTimeRequired": {
+            "meaning": "OutApplyDetDTO对象调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyApplicationId": {
+            "meaning": "OutApplyDetDTO对象应用ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyAuditDate": {
+            "meaning": "OutApplyDetDTO对象审核时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyAuditStatus": {
+            "meaning": "OutApplyDetDTO对象审核状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyAvailableScheduleId": {
+            "meaning": "OutApplyDetDTO对象可用日程id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyBeginTime": {
+            "meaning": "OutApplyDetDTO对象开始时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyBizVersion": {
+            "meaning": "OutApplyDetDTO对象业务自定义版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyBriefName": {
+            "meaning": "OutApplyDetDTO对象简称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyBusDivisId": {
+            "meaning": "OutApplyDetDTO对象事业部id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyClazz": {
+            "meaning": "OutApplyDetDTO对象子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyClosedReason": {
+            "meaning": "OutApplyDetDTO对象结案原因",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyClosedStatus": {
+            "meaning": "OutApplyDetDTO对象结案状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyComment": {
+            "meaning": "OutApplyDetDTO对象评论",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyCompleteQuantity": {
+            "meaning": "OutApplyDetDTO对象完成数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyCompleteStatus": {
+            "meaning": "OutApplyDetDTO对象完成状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyCreateTime": {
+            "meaning": "OutApplyDetDTO对象创建时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyCreator": {
+            "meaning": "OutApplyDetDTO对象创建人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyCreatorId": {
+            "meaning": "OutApplyDetDTO对象创建人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDateExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展时间1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDateExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展时间2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDateExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展时间3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDateExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展时间4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDateExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展时间5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDefaultType": {
+            "meaning": "OutApplyDetDTO对象智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDeliveryDate": {
+            "meaning": "OutApplyDetDTO对象交货日期",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyDescription": {
+            "meaning": "OutApplyDetDTO对象描述",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyEndTime": {
+            "meaning": "OutApplyDetDTO对象结束时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyEndTimeRequired": {
+            "meaning": "OutApplyDetDTO对象最后需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyEngName": {
+            "meaning": "OutApplyDetDTO对象英文名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyEquipmentId": {
+            "meaning": "OutApplyDetDTO对象设备id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyExchangeRateId": {
+            "meaning": "OutApplyDetDTO对象币种汇率id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyExtension": {
+            "meaning": "OutApplyDetDTO对象扩展数据",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyExternalState": {
+            "meaning": "OutApplyDetDTO对象上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyFilterClazz": {
+            "meaning": "OutApplyDetDTO对象冗余字段用于筛选",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFlags": {
+            "meaning": "OutApplyDetDTO对象63位标志位",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromAuditDate": {
+            "meaning": "outApplyDetOutApplyFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromBeginTime": {
+            "meaning": "outApplyDetOutApplyFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromCreateTime": {
+            "meaning": "outApplyDetOutApplyFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDateExtra1": {
+            "meaning": "outApplyDetOutApplyFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDateExtra2": {
+            "meaning": "outApplyDetOutApplyFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDateExtra3": {
+            "meaning": "outApplyDetOutApplyFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDateExtra4": {
+            "meaning": "outApplyDetOutApplyFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDateExtra5": {
+            "meaning": "outApplyDetOutApplyFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromDeliveryDate": {
+            "meaning": "outApplyDetOutApplyFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromEndTime": {
+            "meaning": "outApplyDetOutApplyFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromReceiptDate": {
+            "meaning": "outApplyDetOutApplyFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFromUpdateTime": {
+            "meaning": "outApplyDetOutApplyFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyFscType": {
+            "meaning": "OutApplyDetDTO对象FSC声明",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyGenerativePeople": {
+            "meaning": "OutApplyDetDTO对象下发人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyGenerativeState": {
+            "meaning": "OutApplyDetDTO对象下发状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyGroovyScript": {
+            "meaning": "OutApplyDetDTO对象groovy脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyGropeCode": {
+            "meaning": "OutApplyDetDTO对象搜索码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyId": {
+            "meaning": "OutApplyDetDTO对象主键ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyInUsed": {
+            "meaning": "OutApplyDetDTO对象是否被使用",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyInvTypeTaxRateId": {
+            "meaning": "OutApplyDetDTO对象发票税率id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsBanned": {
+            "meaning": "OutApplyDetDTO对象是否被禁用",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsDeleted": {
+            "meaning": "OutApplyDetDTO对象是否被删除",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsLeaf": {
+            "meaning": "OutApplyDetDTO对象是否叶子节点",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsMainFlow": {
+            "meaning": "OutApplyDetDTO对象是否是主流程",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsManualModificationDate": {
+            "meaning": "OutApplyDetDTO对象是否手动修改计划生产时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyIsolation": {
+            "meaning": "OutApplyDetDTO对象智能节点数据隔离标识",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyJsScript": {
+            "meaning": "OutApplyDetDTO对象js脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyMaterialId": {
+            "meaning": "OutApplyDetDTO对象物料id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyName": {
+            "meaning": "OutApplyDetDTO对象智能节点名",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNameCodeSearch": {
+            "meaning": "OutApplyDetDTO对象name、user_code模糊搜索",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNumberExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展数量1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNumberExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展数量2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNumberExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展数量3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNumberExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展数量4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyNumberExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展数量5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyParentId": {
+            "meaning": "OutApplyDetDTO对象父节点ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyPlannedOutputQuantity": {
+            "meaning": "OutApplyDetDTO对象计划产出数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyPlannedTimeRequired": {
+            "meaning": "OutApplyDetDTO对象计划需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyPrintTimes": {
+            "meaning": "OutApplyDetDTO对象打印次数",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyPriority": {
+            "meaning": "OutApplyDetDTO对象优先级",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyProcessInstanceId": {
+            "meaning": "OutApplyDetDTO对象流程实例ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyProductionProcessesTypeId": {
+            "meaning": "OutApplyDetDTO对象工序类型ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyProductionShiftId": {
+            "meaning": "OutApplyDetDTO对象生产班次ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyQuantity": {
+            "meaning": "OutApplyDetDTO对象任务数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyReceiptDate": {
+            "meaning": "OutApplyDetDTO对象单据日期",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyReceiptType": {
+            "meaning": "OutApplyDetDTO对象单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyRelatedTasksId": {
+            "meaning": "OutApplyDetDTO对象关联任务id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplySerialNumber": {
+            "meaning": "OutApplyDetDTO对象顺序号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplySource": {
+            "meaning": "OutApplyDetDTO对象源",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplySourceType": {
+            "meaning": "OutApplyDetDTO对象来源类型",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyState": {
+            "meaning": "OutApplyDetDTO对象通用状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplySystemCode": {
+            "meaning": "OutApplyDetDTO对象系统编码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyTarget": {
+            "meaning": "OutApplyDetDTO对象目标",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyTaskNodeName": {
+            "meaning": "OutApplyDetDTO对象任务节点名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyTenantId": {
+            "meaning": "OutApplyDetDTO对象租户ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyThirdPartyClass": {
+            "meaning": "OutApplyDetDTO对象第三方分类",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyThirdPartyId": {
+            "meaning": "OutApplyDetDTO对象第三方系统中的唯一ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyThirdPartyName": {
+            "meaning": "OutApplyDetDTO对象第三方名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyToAuditDate": {
+            "meaning": "outApplyDetOutApplyToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToBeginTime": {
+            "meaning": "outApplyDetOutApplyToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToCreateTime": {
+            "meaning": "outApplyDetOutApplyToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDateExtra1": {
+            "meaning": "outApplyDetOutApplyToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDateExtra2": {
+            "meaning": "outApplyDetOutApplyToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDateExtra3": {
+            "meaning": "outApplyDetOutApplyToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDateExtra4": {
+            "meaning": "outApplyDetOutApplyToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDateExtra5": {
+            "meaning": "outApplyDetOutApplyToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToDeliveryDate": {
+            "meaning": "outApplyDetOutApplyToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToEndTime": {
+            "meaning": "outApplyDetOutApplyToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToReceiptDate": {
+            "meaning": "outApplyDetOutApplyToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyToUpdateTime": {
+            "meaning": "outApplyDetOutApplyToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetOutApplyUnitCode": {
+            "meaning": "OutApplyDetDTO对象单位id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyUpdateTime": {
+            "meaning": "OutApplyDetDTO对象更新时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyUpdater": {
+            "meaning": "OutApplyDetDTO对象更新人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyUpdaterId": {
+            "meaning": "OutApplyDetDTO对象更新人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyUserCode": {
+            "meaning": "OutApplyDetDTO对象智能节点的唯一编码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVarExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVarExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVarExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVarExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVarExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutApplyVersion": {
+            "meaning": "OutApplyDetDTO对象版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetOutRatio": {
+            "meaning": "OutApplyDetDTO对象产出比",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetParentId": {
+            "meaning": "OutApplyDetDTO对象父节点ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetPlannedOutputQuantity": {
+            "meaning": "OutApplyDetDTO对象计划产出数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetPlannedTimeRequired": {
+            "meaning": "OutApplyDetDTO对象计划需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetPrintTimes": {
+            "meaning": "OutApplyDetDTO对象打印次数",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetPriority": {
+            "meaning": "OutApplyDetDTO对象优先级",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProcessInstanceId": {
+            "meaning": "OutApplyDetDTO对象流程实例ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProcessName": {
+            "meaning": "OutApplyDetDTO对象工序名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProcessParameters": {
+            "meaning": "OutApplyDetDTO对象工序参数",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProductName": {
+            "meaning": "OutApplyDetDTO对象产品名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProductionProcDescrip": {
+            "meaning": "OutApplyDetDTO对象工艺描述",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProductionProcessesTypeId": {
+            "meaning": "OutApplyDetDTO对象工序类型ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetProductionShiftId": {
+            "meaning": "OutApplyDetDTO对象生产班次ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetQuantity": {
+            "meaning": "OutApplyDetDTO对象任务数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetReceiptDate": {
+            "meaning": "OutApplyDetDTO对象单据日期",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetReceiptType": {
+            "meaning": "OutApplyDetDTO对象单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetReceivedQat": {
+            "meaning": "OutApplyDetDTO对象收货数量",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetRelatedTasksId": {
+            "meaning": "OutApplyDetDTO对象关联任务id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetReqDate": {
+            "type": "object",
+            "meaning": "OutApplyDetDTO对象要求交期",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetSerialNumber": {
+            "meaning": "OutApplyDetDTO对象顺序号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetSource": {
+            "meaning": "OutApplyDetDTO对象源",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetSourceType": {
+            "meaning": "OutApplyDetDTO对象来源类型",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetState": {
+            "meaning": "OutApplyDetDTO对象通用状态",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetSystemCode": {
+            "meaning": "OutApplyDetDTO对象系统编码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetTarget": {
+            "meaning": "OutApplyDetDTO对象目标",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetTaskNodeName": {
+            "meaning": "OutApplyDetDTO对象任务节点名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetTenantId": {
+            "meaning": "OutApplyDetDTO对象租户ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetThirdPartyClass": {
+            "meaning": "OutApplyDetDTO对象第三方分类",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetThirdPartyId": {
+            "meaning": "OutApplyDetDTO对象第三方系统中的唯一ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetThirdPartyName": {
+            "meaning": "OutApplyDetDTO对象第三方名称",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetToAuditDate": {
+            "meaning": "outApplyDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToBeginTime": {
+            "meaning": "outApplyDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToCreateTime": {
+            "meaning": "outApplyDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDateExtra1": {
+            "meaning": "outApplyDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDateExtra2": {
+            "meaning": "outApplyDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDateExtra3": {
+            "meaning": "outApplyDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDateExtra4": {
+            "meaning": "outApplyDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDateExtra5": {
+            "meaning": "outApplyDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToDeliveryDate": {
+            "meaning": "outApplyDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToEndTime": {
+            "meaning": "outApplyDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToReceiptDate": {
+            "meaning": "outApplyDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToReqDate": {
+            "type": "object",
+            "meaning": "outApplyDetToReqDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetToUpdateTime": {
+            "meaning": "outApplyDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outApplyDetTotalQat": {
+            "meaning": "OutApplyDetDTO对象外发总数",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetUnitCode": {
+            "meaning": "OutApplyDetDTO对象单位id",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetUpdateTime": {
+            "meaning": "OutApplyDetDTO对象更新时间",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetUpdater": {
+            "meaning": "OutApplyDetDTO对象更新人",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetUpdaterId": {
+            "meaning": "OutApplyDetDTO对象更新人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetUserCode": {
+            "meaning": "OutApplyDetDTO对象智能节点的唯一编码",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVarExtra1": {
+            "meaning": "OutApplyDetDTO对象扩展1",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVarExtra2": {
+            "meaning": "OutApplyDetDTO对象扩展2",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVarExtra3": {
+            "meaning": "OutApplyDetDTO对象扩展3",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVarExtra4": {
+            "meaning": "OutApplyDetDTO对象扩展4",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVarExtra5": {
+            "meaning": "OutApplyDetDTO对象扩展5",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetVersion": {
+            "meaning": "OutApplyDetDTO对象版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "outApplyDetWorkorderCode": {
+            "meaning": "OutApplyDetDTO对象工单号",
+            "reachable": true,
+            "name": ""
+        }
+    }
+}

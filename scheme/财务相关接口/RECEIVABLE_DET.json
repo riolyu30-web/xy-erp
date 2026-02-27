@@ -1,0 +1,1407 @@
+{
+    "api_name": "/receivable-det/findList",
+    "table_name": "应收账单明细",
+    "request": {
+        "receivableDetReceivableClazz": "RECEIVABLE",
+        "receivableDetClazz": "RECEIVABLE_DET"
+    },
+    "mainTabClazz": "RECEIVABLE_DET",
+    "response": {
+        "receivableDetActAmount": {
+            "meaning": "应收账单明细实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细实收/付金额"
+        },
+        "receivableDetActDiffAmount": {
+            "meaning": "应收账单明细实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细实收/付差额"
+        },
+        "receivableDetActualTimeRequired": {
+            "meaning": "应收账单明细实际需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细实际需时"
+        },
+        "receivableDetAdjustmentTimeRequired": {
+            "meaning": "应收账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "应收账单明细调整需时"
+        },
+        "receivableDetAdvOffAmount": {
+            "meaning": "应收账单明细预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单明细预收/付冲抵金额"
+        },
+        "receivableDetAmount": {
+            "meaning": "应收账单明细应收金额",
+            "reachable": true,
+            "name": "应收账单明细应收金额"
+        },
+        "receivableDetApplicationId": {
+            "meaning": "应收账单明细应用ID",
+            "reachable": true,
+            "name": "应收账单明细应用ID"
+        },
+        "receivableDetAuditDate": {
+            "meaning": "应收账单明细审核时间",
+            "reachable": true,
+            "name": "应收账单明细审核时间"
+        },
+        "receivableDetAuditStatus": {
+            "meaning": "应收账单明细审核状态",
+            "reachable": true,
+            "name": "应收账单明细审核状态"
+        },
+        "receivableDetAvailableScheduleId": {
+            "meaning": "应收账单明细可用日程id",
+            "reachable": true,
+            "name": "应收账单明细可用日程id"
+        },
+        "receivableDetBeginTime": {
+            "meaning": "应收账单明细开始时间",
+            "reachable": true,
+            "name": "应收账单明细开始时间"
+        },
+        "receivableDetBizVersion": {
+            "meaning": "应收账单明细业务自定义版本号",
+            "reachable": true,
+            "name": "应收账单明细业务自定义版本号"
+        },
+        "receivableDetBriefName": {
+            "meaning": "应收账单明细简称",
+            "reachable": true,
+            "name": "应收账单明细简称"
+        },
+        "receivableDetBusDivisId": {
+            "meaning": "应收账单明细事业部id",
+            "reachable": true,
+            "name": "应收账单明细事业部id"
+        },
+        "receivableDetClazz": {
+            "meaning": "应收账单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "应收账单明细子类"
+        },
+        "receivableDetClosedReason": {
+            "meaning": "应收账单明细结案原因",
+            "reachable": true,
+            "name": "应收账单明细结案原因"
+        },
+        "receivableDetClosedStatus": {
+            "meaning": "应收账单明细结案状态",
+            "reachable": true,
+            "name": "应收账单明细结案状态"
+        },
+        "receivableDetComment": {
+            "meaning": "应收账单明细评论",
+            "reachable": true,
+            "name": "应收账单明细评论"
+        },
+        "receivableDetCompleteQuantity": {
+            "meaning": "应收账单明细完成数量",
+            "reachable": true,
+            "name": "应收账单明细完成数量"
+        },
+        "receivableDetCompleteStatus": {
+            "meaning": "应收账单明细完成状态",
+            "reachable": true,
+            "name": "应收账单明细完成状态"
+        },
+        "receivableDetCreateTime": {
+            "meaning": "应收账单明细创建时间",
+            "reachable": true,
+            "name": "应收账单明细创建时间"
+        },
+        "receivableDetCreator": {
+            "meaning": "应收账单明细创建人",
+            "reachable": true,
+            "name": "应收账单明细创建人"
+        },
+        "receivableDetCreatorId": {
+            "meaning": "应收账单明细创建人ID",
+            "reachable": true,
+            "name": "应收账单明细创建人ID"
+        },
+        "receivableDetDateExtra1": {
+            "meaning": "应收账单明细扩展时间1",
+            "reachable": true,
+            "name": "应收账单明细扩展时间1"
+        },
+        "receivableDetDateExtra2": {
+            "meaning": "应收账单明细扩展时间2",
+            "reachable": true,
+            "name": "应收账单明细扩展时间2"
+        },
+        "receivableDetDateExtra3": {
+            "meaning": "应收账单明细扩展时间3",
+            "reachable": true,
+            "name": "应收账单明细扩展时间3"
+        },
+        "receivableDetDateExtra4": {
+            "meaning": "应收账单明细扩展时间4",
+            "reachable": true,
+            "name": "应收账单明细扩展时间4"
+        },
+        "receivableDetDateExtra5": {
+            "meaning": "应收账单明细扩展时间5",
+            "reachable": true,
+            "name": "应收账单明细扩展时间5"
+        },
+        "receivableDetDefaultType": {
+            "meaning": "应收账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "应收账单明细智能节点主类型"
+        },
+        "receivableDetDeliveryDate": {
+            "meaning": "应收账单明细交货日期",
+            "reachable": true,
+            "name": "应收账单明细交货日期"
+        },
+        "receivableDetDescription": {
+            "meaning": "应收账单明细描述",
+            "reachable": true,
+            "name": "应收账单明细描述"
+        },
+        "receivableDetEndTime": {
+            "meaning": "应收账单明细结束时间",
+            "reachable": true,
+            "name": "应收账单明细结束时间"
+        },
+        "receivableDetEndTimeRequired": {
+            "meaning": "应收账单明细最后需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细最后需时"
+        },
+        "receivableDetEngName": {
+            "meaning": "应收账单明细英文名称",
+            "reachable": true,
+            "name": "应收账单明细英文名称"
+        },
+        "receivableDetEquipmentId": {
+            "meaning": "应收账单明细设备id",
+            "reachable": true,
+            "name": "应收账单明细设备id"
+        },
+        "receivableDetExchangeRate": {
+            "meaning": "应收账单明细汇率",
+            "reachable": true,
+            "name": "应收账单明细汇率"
+        },
+        "receivableDetExchangeRateId": {
+            "meaning": "应收账单明细币种汇率id",
+            "reachable": true,
+            "name": "应收账单明细币种汇率id"
+        },
+        "receivableDetExtension": {
+            "meaning": "应收账单明细扩展数据",
+            "reachable": true,
+            "name": "应收账单明细扩展数据"
+        },
+        "receivableDetExternalState": {
+            "meaning": "应收账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "应收账单明细上流程状态位"
+        },
+        "receivableDetFilterClazz": {
+            "meaning": "应收账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "应收账单明细冗余字段用于筛选"
+        },
+        "receivableDetFlags": {
+            "meaning": "应收账单明细63位标志位",
+            "reachable": true,
+            "name": "应收账单明细63位标志位"
+        },
+        "receivableDetFromAuditDate": {
+            "meaning": "receivableDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromBeginTime": {
+            "meaning": "receivableDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromCreateTime": {
+            "meaning": "receivableDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDateExtra1": {
+            "meaning": "receivableDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDateExtra2": {
+            "meaning": "receivableDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDateExtra3": {
+            "meaning": "receivableDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDateExtra4": {
+            "meaning": "receivableDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDateExtra5": {
+            "meaning": "receivableDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromDeliveryDate": {
+            "meaning": "receivableDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromEndTime": {
+            "meaning": "receivableDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromReceiptDate": {
+            "meaning": "receivableDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFromUpdateTime": {
+            "meaning": "receivableDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetFscType": {
+            "meaning": "应收账单明细FSC声明",
+            "reachable": true,
+            "name": "应收账单明细FSC声明"
+        },
+        "receivableDetGenerativePeople": {
+            "meaning": "应收账单明细下发人",
+            "reachable": true,
+            "name": "应收账单明细下发人"
+        },
+        "receivableDetGenerativeState": {
+            "meaning": "应收账单明细下发状态",
+            "reachable": true,
+            "name": "应收账单明细下发状态"
+        },
+        "receivableDetGroovyScript": {
+            "meaning": "应收账单明细groovy脚本",
+            "reachable": true,
+            "name": "应收账单明细groovy脚本"
+        },
+        "receivableDetGropeCode": {
+            "meaning": "应收账单明细搜索码",
+            "reachable": true,
+            "name": "应收账单明细搜索码"
+        },
+        "receivableDetId": {
+            "meaning": "应收账单明细PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "应收账单明细PK"
+        },
+        "receivableDetInUsed": {
+            "meaning": "应收账单明细是否被使用",
+            "reachable": true,
+            "name": "应收账单明细是否被使用"
+        },
+        "receivableDetInvTypeTaxRateId": {
+            "meaning": "应收账单明细发票税率id",
+            "reachable": true,
+            "name": "应收账单明细发票税率id"
+        },
+        "receivableDetInvoicedAmount": {
+            "meaning": "应收账单明细已开票金额",
+            "reachable": true,
+            "name": "应收账单明细已开票金额"
+        },
+        "receivableDetInvoicedState": {
+            "meaning": "应收账单明细开票状态",
+            "reachable": true,
+            "name": "应收账单明细开票状态"
+        },
+        "receivableDetIsBanned": {
+            "meaning": "应收账单明细是否被禁用",
+            "reachable": true,
+            "name": "应收账单明细是否被禁用"
+        },
+        "receivableDetIsDeleted": {
+            "meaning": "应收账单明细是否被删除",
+            "reachable": true,
+            "name": "应收账单明细是否被删除"
+        },
+        "receivableDetIsLeaf": {
+            "meaning": "应收账单明细是否叶子节点",
+            "reachable": true,
+            "name": "应收账单明细是否叶子节点"
+        },
+        "receivableDetIsMainFlow": {
+            "meaning": "应收账单明细是否是主流程",
+            "reachable": true,
+            "name": "应收账单明细是否是主流程"
+        },
+        "receivableDetIsManualModificationDate": {
+            "meaning": "应收账单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "应收账单明细是否手动修改计划生产时间"
+        },
+        "receivableDetIsolation": {
+            "meaning": "应收账单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "应收账单明细智能节点数据隔离标识"
+        },
+        "receivableDetJsScript": {
+            "meaning": "应收账单明细js脚本",
+            "reachable": true,
+            "name": "应收账单明细js脚本"
+        },
+        "receivableDetLocActAmount": {
+            "meaning": "应收账单明细本币实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币实收/付金额"
+        },
+        "receivableDetLocActDiffAmount": {
+            "meaning": "应收账单明细本币实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细本币实收/付差额"
+        },
+        "receivableDetLocAdvOffAmount": {
+            "meaning": "应收账单明细本币预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单明细本币预收/付冲抵金额"
+        },
+        "receivableDetLocAmount": {
+            "meaning": "应收账单明细本币应收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币应收/付金额"
+        },
+        "receivableDetLocCompleteQuantity": {
+            "meaning": "应收账单明细本币完成数量（本币已结算金额）",
+            "reachable": true,
+            "name": "应收账单明细本币完成数量"
+        },
+        "receivableDetLocInvoicedAmount": {
+            "meaning": "应收账单明细本币已开票金额",
+            "reachable": true,
+            "name": "应收账单明细本币已开票金额"
+        },
+        "receivableDetLocOffActAmount": {
+            "meaning": "应收账单明细本币冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币冲抵后实收/付金额"
+        },
+        "receivableDetLocOffActDiffAmount": {
+            "meaning": "应收账单明细本币冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细本币冲抵后实收/付差额"
+        },
+        "receivableDetLocOtherExpense": {
+            "meaning": "应收账单明细本币其他费用",
+            "reachable": true,
+            "name": "应收账单明细本币其他费用"
+        },
+        "receivableDetMaterialId": {
+            "meaning": "应收账单明细物料id",
+            "reachable": true,
+            "name": "应收账单明细物料id"
+        },
+        "receivableDetName": {
+            "meaning": "应收账单明细智能节点名",
+            "reachable": true,
+            "name": "应收账单明细智能节点名"
+        },
+        "receivableDetNameCodeSearch": {
+            "meaning": "应收账单明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "应收账单明细name、user"
+        },
+        "receivableDetNumberExtra1": {
+            "meaning": "应收账单明细扩展数量1",
+            "reachable": true,
+            "name": "应收账单明细扩展数量1"
+        },
+        "receivableDetNumberExtra2": {
+            "meaning": "应收账单明细扩展数量2",
+            "reachable": true,
+            "name": "应收账单明细扩展数量2"
+        },
+        "receivableDetNumberExtra3": {
+            "meaning": "应收账单明细扩展数量3",
+            "reachable": true,
+            "name": "应收账单明细扩展数量3"
+        },
+        "receivableDetNumberExtra4": {
+            "meaning": "应收账单明细扩展数量4",
+            "reachable": true,
+            "name": "应收账单明细扩展数量4"
+        },
+        "receivableDetNumberExtra5": {
+            "meaning": "应收账单明细扩展数量5",
+            "reachable": true,
+            "name": "应收账单明细扩展数量5"
+        },
+        "receivableDetOffActAmount": {
+            "meaning": "应收账单明细冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细冲抵后实收/付金额"
+        },
+        "receivableDetOffActDiffAmount": {
+            "meaning": "应收账单明细冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细冲抵后实收/付差额"
+        },
+        "receivableDetOrderId": {
+            "meaning": "应收账单明细订单ID",
+            "reachable": true,
+            "name": "应收账单明细订单ID"
+        },
+        "receivableDetOtherExpense": {
+            "meaning": "应收账单明细其他费用",
+            "reachable": true,
+            "name": "应收账单明细其他费用"
+        },
+        "receivableDetParentId": {
+            "meaning": "应收账单明细父节点ID",
+            "reachable": true,
+            "name": "应收账单明细父节点ID"
+        },
+        "receivableDetPlannedOutputQuantity": {
+            "meaning": "应收账单明细计划产出数量",
+            "reachable": true,
+            "name": "应收账单明细计划产出数量"
+        },
+        "receivableDetPlannedTimeRequired": {
+            "meaning": "应收账单明细计划需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细计划需时"
+        },
+        "receivableDetPrintTimes": {
+            "meaning": "应收账单明细打印次数",
+            "reachable": true,
+            "name": "应收账单明细打印次数"
+        },
+        "receivableDetPriority": {
+            "meaning": "应收账单明细优先级",
+            "reachable": true,
+            "name": "应收账单明细优先级"
+        },
+        "receivableDetProcessInstanceId": {
+            "meaning": "应收账单明细流程实例ID",
+            "reachable": true,
+            "name": "应收账单明细流程实例ID"
+        },
+        "receivableDetProductionProcessesTypeId": {
+            "meaning": "应收账单明细工序类型ID",
+            "reachable": true,
+            "name": "应收账单明细工序类型ID"
+        },
+        "receivableDetProductionShiftId": {
+            "meaning": "应收账单明细生产班次ID",
+            "reachable": true,
+            "name": "应收账单明细生产班次ID"
+        },
+        "receivableDetQuantity": {
+            "meaning": "应收账单明细任务数量",
+            "reachable": true,
+            "name": "应收账单明细任务数量"
+        },
+        "receivableDetReceiptDate": {
+            "meaning": "应收账单明细单据日期",
+            "reachable": true,
+            "name": "应收账单明细单据日期"
+        },
+        "receivableDetReceiptType": {
+            "meaning": "应收账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "应收账单明细单据类型"
+        },
+        "receivableDetReceivableActualTimeRequired": {
+            "meaning": "应收账单明细实际需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细实际需时"
+        },
+        "receivableDetReceivableAdjustmentTimeRequired": {
+            "meaning": "应收账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "应收账单明细调整需时"
+        },
+        "receivableDetReceivableApplicationId": {
+            "meaning": "应收账单明细应用ID",
+            "reachable": true,
+            "name": "应收账单明细应用ID"
+        },
+        "receivableDetReceivableAuditDate": {
+            "meaning": "应收账单明细审核时间",
+            "reachable": true,
+            "name": "应收账单明细审核时间"
+        },
+        "receivableDetReceivableAuditStatus": {
+            "meaning": "应收账单明细审核状态",
+            "reachable": true,
+            "name": "应收账单明细审核状态"
+        },
+        "receivableDetReceivableAvailableScheduleId": {
+            "meaning": "应收账单明细可用日程id",
+            "reachable": true,
+            "name": "应收账单明细可用日程id"
+        },
+        "receivableDetReceivableBank": {
+            "meaning": "应收账单明细开户行",
+            "reachable": true,
+            "name": "应收账单明细开户行"
+        },
+        "receivableDetReceivableBankAccount": {
+            "meaning": "应收账单明细银行账号",
+            "reachable": true,
+            "name": "应收账单明细银行账号"
+        },
+        "receivableDetReceivableBeginTime": {
+            "meaning": "应收账单明细开始时间",
+            "reachable": true,
+            "name": "应收账单明细开始时间"
+        },
+        "receivableDetReceivableBizVersion": {
+            "meaning": "应收账单明细业务自定义版本号",
+            "reachable": true,
+            "name": "应收账单明细业务自定义版本号"
+        },
+        "receivableDetReceivableBriefName": {
+            "meaning": "应收账单明细简称",
+            "reachable": true,
+            "name": "应收账单明细简称"
+        },
+        "receivableDetReceivableBusDivisId": {
+            "meaning": "应收账单明细事业部id",
+            "reachable": true,
+            "name": "应收账单明细事业部id"
+        },
+        "receivableDetReceivableClazz": {
+            "meaning": "应收账单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "应收账单明细子类"
+        },
+        "receivableDetReceivableClosedReason": {
+            "meaning": "应收账单明细结案原因",
+            "reachable": true,
+            "name": "应收账单明细结案原因"
+        },
+        "receivableDetReceivableClosedStatus": {
+            "meaning": "应收账单明细结案状态",
+            "reachable": true,
+            "name": "应收账单明细结案状态"
+        },
+        "receivableDetReceivableComment": {
+            "meaning": "应收账单明细评论",
+            "reachable": true,
+            "name": "应收账单明细评论"
+        },
+        "receivableDetReceivableCompleteQuantity": {
+            "meaning": "应收账单明细完成数量",
+            "reachable": true,
+            "name": "应收账单明细完成数量"
+        },
+        "receivableDetReceivableCompleteStatus": {
+            "meaning": "应收账单明细完成状态",
+            "reachable": true,
+            "name": "应收账单明细完成状态"
+        },
+        "receivableDetReceivableCorpBank": {
+            "meaning": "应收账单明细我司银行",
+            "reachable": true,
+            "name": "应收账单明细我司银行"
+        },
+        "receivableDetReceivableCorpBankAccount": {
+            "meaning": "应收账单明细我司银行账号",
+            "reachable": true,
+            "name": "应收账单明细我司银行账号"
+        },
+        "receivableDetReceivableCreateTime": {
+            "meaning": "应收账单明细创建时间",
+            "reachable": true,
+            "name": "应收账单明细创建时间"
+        },
+        "receivableDetReceivableCreator": {
+            "meaning": "应收账单明细创建人",
+            "reachable": true,
+            "name": "应收账单明细创建人"
+        },
+        "receivableDetReceivableCreatorId": {
+            "meaning": "应收账单明细创建人ID",
+            "reachable": true,
+            "name": "应收账单明细创建人ID"
+        },
+        "receivableDetReceivableCurrency": {
+            "meaning": "应收账单明细币种",
+            "reachable": true,
+            "name": "应收账单明细币种"
+        },
+        "receivableDetReceivableCustomerId": {
+            "meaning": "应收账单明细客户ID",
+            "reachable": true,
+            "name": "应收账单明细客户ID"
+        },
+        "receivableDetReceivableDateExtra1": {
+            "meaning": "应收账单明细扩展时间1",
+            "reachable": true,
+            "name": "应收账单明细扩展时间1"
+        },
+        "receivableDetReceivableDateExtra2": {
+            "meaning": "应收账单明细扩展时间2",
+            "reachable": true,
+            "name": "应收账单明细扩展时间2"
+        },
+        "receivableDetReceivableDateExtra3": {
+            "meaning": "应收账单明细扩展时间3",
+            "reachable": true,
+            "name": "应收账单明细扩展时间3"
+        },
+        "receivableDetReceivableDateExtra4": {
+            "meaning": "应收账单明细扩展时间4",
+            "reachable": true,
+            "name": "应收账单明细扩展时间4"
+        },
+        "receivableDetReceivableDateExtra5": {
+            "meaning": "应收账单明细扩展时间5",
+            "reachable": true,
+            "name": "应收账单明细扩展时间5"
+        },
+        "receivableDetReceivableDefaultType": {
+            "meaning": "应收账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "应收账单明细智能节点主类型"
+        },
+        "receivableDetReceivableDeliveryDate": {
+            "meaning": "应收账单明细交货日期",
+            "reachable": true,
+            "name": "应收账单明细交货日期"
+        },
+        "receivableDetReceivableDescription": {
+            "meaning": "应收账单明细描述",
+            "reachable": true,
+            "name": "应收账单明细描述"
+        },
+        "receivableDetReceivableEndTime": {
+            "meaning": "应收账单明细结束时间",
+            "reachable": true,
+            "name": "应收账单明细结束时间"
+        },
+        "receivableDetReceivableEndTimeRequired": {
+            "meaning": "应收账单明细最后需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细最后需时"
+        },
+        "receivableDetReceivableEngName": {
+            "meaning": "应收账单明细英文名称",
+            "reachable": true,
+            "name": "应收账单明细英文名称"
+        },
+        "receivableDetReceivableEquipmentId": {
+            "meaning": "应收账单明细设备id",
+            "reachable": true,
+            "name": "应收账单明细设备id"
+        },
+        "receivableDetReceivableExchangeRateId": {
+            "meaning": "应收账单明细币种汇率id",
+            "reachable": true,
+            "name": "应收账单明细币种汇率id"
+        },
+        "receivableDetReceivableExtension": {
+            "meaning": "应收账单明细扩展数据",
+            "reachable": true,
+            "name": "应收账单明细扩展数据"
+        },
+        "receivableDetReceivableExternalState": {
+            "meaning": "应收账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "应收账单明细上流程状态位"
+        },
+        "receivableDetReceivableFilterClazz": {
+            "meaning": "应收账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "应收账单明细冗余字段用于筛选"
+        },
+        "receivableDetReceivableFlags": {
+            "meaning": "应收账单明细63位标志位",
+            "reachable": true,
+            "name": "应收账单明细63位标志位"
+        },
+        "receivableDetReceivableFromAuditDate": {
+            "meaning": "receivableDetReceivableFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromBeginTime": {
+            "meaning": "receivableDetReceivableFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromCreateTime": {
+            "meaning": "receivableDetReceivableFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDateExtra1": {
+            "meaning": "receivableDetReceivableFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDateExtra2": {
+            "meaning": "receivableDetReceivableFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDateExtra3": {
+            "meaning": "receivableDetReceivableFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDateExtra4": {
+            "meaning": "receivableDetReceivableFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDateExtra5": {
+            "meaning": "receivableDetReceivableFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromDeliveryDate": {
+            "meaning": "receivableDetReceivableFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromEndTime": {
+            "meaning": "receivableDetReceivableFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromReceiptDate": {
+            "meaning": "receivableDetReceivableFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFromUpdateTime": {
+            "meaning": "receivableDetReceivableFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableFscType": {
+            "meaning": "应收账单明细FSC声明",
+            "reachable": true,
+            "name": "应收账单明细FSC声明"
+        },
+        "receivableDetReceivableGenerativePeople": {
+            "meaning": "应收账单明细下发人",
+            "reachable": true,
+            "name": "应收账单明细下发人"
+        },
+        "receivableDetReceivableGenerativeState": {
+            "meaning": "应收账单明细下发状态",
+            "reachable": true,
+            "name": "应收账单明细下发状态"
+        },
+        "receivableDetReceivableGroovyScript": {
+            "meaning": "应收账单明细groovy脚本",
+            "reachable": true,
+            "name": "应收账单明细groovy脚本"
+        },
+        "receivableDetReceivableGropeCode": {
+            "meaning": "应收账单明细搜索码",
+            "reachable": true,
+            "name": "应收账单明细搜索码"
+        },
+        "receivableDetReceivableId": {
+            "meaning": "应收账单明细PK",
+            "reachable": true,
+            "name": "应收账单明细PK"
+        },
+        "receivableDetReceivableInUsed": {
+            "meaning": "应收账单明细是否被使用",
+            "reachable": true,
+            "name": "应收账单明细是否被使用"
+        },
+        "receivableDetReceivableInvTypeTaxRateId": {
+            "meaning": "应收账单明细发票税率id",
+            "reachable": true,
+            "name": "应收账单明细发票税率id"
+        },
+        "receivableDetReceivableIsBanned": {
+            "meaning": "应收账单明细是否被禁用",
+            "reachable": true,
+            "name": "应收账单明细是否被禁用"
+        },
+        "receivableDetReceivableIsDeleted": {
+            "meaning": "应收账单明细是否被删除",
+            "reachable": true,
+            "name": "应收账单明细是否被删除"
+        },
+        "receivableDetReceivableIsLeaf": {
+            "meaning": "应收账单明细是否叶子节点",
+            "reachable": true,
+            "name": "应收账单明细是否叶子节点"
+        },
+        "receivableDetReceivableIsMainFlow": {
+            "meaning": "应收账单明细是否是主流程",
+            "reachable": true,
+            "name": "应收账单明细是否是主流程"
+        },
+        "receivableDetReceivableIsManualModificationDate": {
+            "meaning": "应收账单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "应收账单明细是否手动修改计划生产时间"
+        },
+        "receivableDetReceivableIsolation": {
+            "meaning": "应收账单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "应收账单明细智能节点数据隔离标识"
+        },
+        "receivableDetReceivableJsScript": {
+            "meaning": "应收账单明细js脚本",
+            "reachable": true,
+            "name": "应收账单明细js脚本"
+        },
+        "receivableDetReceivableLocCompleteQuantity": {
+            "meaning": "应收账单明细本币完成数量（本币已结算金额）",
+            "reachable": true,
+            "name": "应收账单明细本币完成数量"
+        },
+        "receivableDetReceivableLocTotalActAmount": {
+            "meaning": "应收账单明细本币总实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币总实收/付金额"
+        },
+        "receivableDetReceivableLocTotalActDiffAmount": {
+            "meaning": "应收账单明细本币总实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细本币总实收/付差额"
+        },
+        "receivableDetReceivableLocTotalAdvOffAmount": {
+            "meaning": "应收账单明细本币总预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单明细本币总预收/付冲抵金额"
+        },
+        "receivableDetReceivableLocTotalAmount": {
+            "meaning": "应收账单明细本币总应收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币总应收/付金额"
+        },
+        "receivableDetReceivableLocTotalInvoicedAmount": {
+            "meaning": "应收账单明细本币总开票金额",
+            "reachable": true,
+            "name": "应收账单明细本币总开票金额"
+        },
+        "receivableDetReceivableLocTotalOffActAmount": {
+            "meaning": "应收账单明细本币总冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细本币总冲抵后实收/付金额"
+        },
+        "receivableDetReceivableLocTotalOffActDiffAmount": {
+            "meaning": "应收账单明细本币总冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细本币总冲抵后实收/付差额"
+        },
+        "receivableDetReceivableLocTotalOtherExpense": {
+            "meaning": "应收账单明细本币总其他费用",
+            "reachable": true,
+            "name": "应收账单明细本币总其他费用"
+        },
+        "receivableDetReceivableMaterialId": {
+            "meaning": "应收账单明细物料id",
+            "reachable": true,
+            "name": "应收账单明细物料id"
+        },
+        "receivableDetReceivableName": {
+            "meaning": "应收账单明细智能节点名",
+            "reachable": true,
+            "name": "应收账单明细智能节点名"
+        },
+        "receivableDetReceivableNameCodeSearch": {
+            "meaning": "应收账单明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "应收账单明细name、user"
+        },
+        "receivableDetReceivableNumberExtra1": {
+            "meaning": "应收账单明细扩展数量1",
+            "reachable": true,
+            "name": "应收账单明细扩展数量1"
+        },
+        "receivableDetReceivableNumberExtra2": {
+            "meaning": "应收账单明细扩展数量2",
+            "reachable": true,
+            "name": "应收账单明细扩展数量2"
+        },
+        "receivableDetReceivableNumberExtra3": {
+            "meaning": "应收账单明细扩展数量3",
+            "reachable": true,
+            "name": "应收账单明细扩展数量3"
+        },
+        "receivableDetReceivableNumberExtra4": {
+            "meaning": "应收账单明细扩展数量4",
+            "reachable": true,
+            "name": "应收账单明细扩展数量4"
+        },
+        "receivableDetReceivableNumberExtra5": {
+            "meaning": "应收账单明细扩展数量5",
+            "reachable": true,
+            "name": "应收账单明细扩展数量5"
+        },
+        "receivableDetReceivableParentId": {
+            "meaning": "应收账单明细父节点ID",
+            "reachable": true,
+            "name": "应收账单明细父节点ID"
+        },
+        "receivableDetReceivablePlannedOutputQuantity": {
+            "meaning": "应收账单明细计划产出数量",
+            "reachable": true,
+            "name": "应收账单明细计划产出数量"
+        },
+        "receivableDetReceivablePlannedTimeRequired": {
+            "meaning": "应收账单明细计划需时(小时)",
+            "reachable": true,
+            "name": "应收账单明细计划需时"
+        },
+        "receivableDetReceivablePrintTimes": {
+            "meaning": "应收账单明细打印次数",
+            "reachable": true,
+            "name": "应收账单明细打印次数"
+        },
+        "receivableDetReceivablePriority": {
+            "meaning": "应收账单明细优先级",
+            "reachable": true,
+            "name": "应收账单明细优先级"
+        },
+        "receivableDetReceivableProcessInstanceId": {
+            "meaning": "应收账单明细流程实例ID",
+            "reachable": true,
+            "name": "应收账单明细流程实例ID"
+        },
+        "receivableDetReceivableProductionProcessesTypeId": {
+            "meaning": "应收账单明细工序类型ID",
+            "reachable": true,
+            "name": "应收账单明细工序类型ID"
+        },
+        "receivableDetReceivableProductionShiftId": {
+            "meaning": "应收账单明细生产班次ID",
+            "reachable": true,
+            "name": "应收账单明细生产班次ID"
+        },
+        "receivableDetReceivableQuantity": {
+            "meaning": "应收账单明细任务数量",
+            "reachable": true,
+            "name": "应收账单明细任务数量"
+        },
+        "receivableDetReceivableReceiptDate": {
+            "meaning": "应收账单明细单据日期",
+            "reachable": true,
+            "name": "应收账单明细单据日期"
+        },
+        "receivableDetReceivableReceiptType": {
+            "meaning": "应收账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "应收账单明细单据类型"
+        },
+        "receivableDetReceivableRelatedTasksId": {
+            "meaning": "应收账单明细关联任务id",
+            "reachable": true,
+            "name": "应收账单明细关联任务id"
+        },
+        "receivableDetReceivableSerialNumber": {
+            "meaning": "应收账单明细顺序号",
+            "reachable": true,
+            "name": "应收账单明细顺序号"
+        },
+        "receivableDetReceivableSource": {
+            "meaning": "应收账单明细源",
+            "reachable": true,
+            "name": "应收账单明细源"
+        },
+        "receivableDetReceivableSourceType": {
+            "meaning": "应收账单明细来源类型",
+            "reachable": true,
+            "name": "应收账单明细来源类型"
+        },
+        "receivableDetReceivableState": {
+            "meaning": "应收账单明细通用状态",
+            "reachable": true,
+            "name": "应收账单明细通用状态"
+        },
+        "receivableDetReceivableSystemCode": {
+            "meaning": "应收账单明细系统编码",
+            "reachable": true,
+            "name": "应收账单明细系统编码"
+        },
+        "receivableDetReceivableTarget": {
+            "meaning": "应收账单明细目标",
+            "reachable": true,
+            "name": "应收账单明细目标"
+        },
+        "receivableDetReceivableTaskNodeName": {
+            "meaning": "应收账单明细任务节点名称",
+            "reachable": true,
+            "name": "应收账单明细任务节点名称"
+        },
+        "receivableDetReceivableTenantId": {
+            "meaning": "应收账单明细租户ID",
+            "reachable": true,
+            "name": "应收账单明细租户ID"
+        },
+        "receivableDetReceivableThirdPartyClass": {
+            "meaning": "应收账单明细第三方分类",
+            "reachable": true,
+            "name": "应收账单明细第三方分类"
+        },
+        "receivableDetReceivableThirdPartyId": {
+            "meaning": "应收账单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "应收账单明细第三方系统中的唯一ID"
+        },
+        "receivableDetReceivableThirdPartyName": {
+            "meaning": "应收账单明细第三方名称",
+            "reachable": true,
+            "name": "应收账单明细第三方名称"
+        },
+        "receivableDetReceivableToAuditDate": {
+            "meaning": "receivableDetReceivableToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToBeginTime": {
+            "meaning": "receivableDetReceivableToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToCreateTime": {
+            "meaning": "receivableDetReceivableToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDateExtra1": {
+            "meaning": "receivableDetReceivableToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDateExtra2": {
+            "meaning": "receivableDetReceivableToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDateExtra3": {
+            "meaning": "receivableDetReceivableToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDateExtra4": {
+            "meaning": "receivableDetReceivableToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDateExtra5": {
+            "meaning": "receivableDetReceivableToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToDeliveryDate": {
+            "meaning": "receivableDetReceivableToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToEndTime": {
+            "meaning": "receivableDetReceivableToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToReceiptDate": {
+            "meaning": "receivableDetReceivableToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableToUpdateTime": {
+            "meaning": "receivableDetReceivableToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetReceivableTotalActAmount": {
+            "meaning": "应收账单明细总实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细总实收/付金额"
+        },
+        "receivableDetReceivableTotalActDiffAmount": {
+            "meaning": "应收账单明细总实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细总实收/付差额"
+        },
+        "receivableDetReceivableTotalAdvOffAmount": {
+            "meaning": "应收账单明细总预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单明细总预收/付冲抵金额"
+        },
+        "receivableDetReceivableTotalAmount": {
+            "meaning": "应收账单明细总应收/付金额",
+            "reachable": true,
+            "name": "应收账单明细总应收/付金额"
+        },
+        "receivableDetReceivableTotalInvoicedAmount": {
+            "meaning": "应收账单明细总开票金额",
+            "reachable": true,
+            "name": "应收账单明细总开票金额"
+        },
+        "receivableDetReceivableTotalOffActAmount": {
+            "meaning": "应收账单明细总冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单明细总冲抵后实收/付金额"
+        },
+        "receivableDetReceivableTotalOffActDiffAmount": {
+            "meaning": "应收账单明细总冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单明细总冲抵后实收/付差额"
+        },
+        "receivableDetReceivableTotalOtherExpense": {
+            "meaning": "应收账单明细总其他费用",
+            "reachable": true,
+            "name": "应收账单明细总其他费用"
+        },
+        "receivableDetReceivableUnitCode": {
+            "meaning": "应收账单明细单位id",
+            "reachable": true,
+            "name": "应收账单明细单位id"
+        },
+        "receivableDetReceivableUpdateTime": {
+            "meaning": "应收账单明细更新时间",
+            "reachable": true,
+            "name": "应收账单明细更新时间"
+        },
+        "receivableDetReceivableUpdater": {
+            "meaning": "应收账单明细更新人",
+            "reachable": true,
+            "name": "应收账单明细更新人"
+        },
+        "receivableDetReceivableUpdaterId": {
+            "meaning": "应收账单明细更新人ID",
+            "reachable": true,
+            "name": "应收账单明细更新人ID"
+        },
+        "receivableDetReceivableUserCode": {
+            "meaning": "应收账单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "应收账单明细智能节点的唯一编码"
+        },
+        "receivableDetReceivableVarExtra1": {
+            "meaning": "应收账单明细扩展1",
+            "reachable": true,
+            "name": "应收账单明细扩展1"
+        },
+        "receivableDetReceivableVarExtra2": {
+            "meaning": "应收账单明细扩展2",
+            "reachable": true,
+            "name": "应收账单明细扩展2"
+        },
+        "receivableDetReceivableVarExtra3": {
+            "meaning": "应收账单明细扩展3",
+            "reachable": true,
+            "name": "应收账单明细扩展3"
+        },
+        "receivableDetReceivableVarExtra4": {
+            "meaning": "应收账单明细扩展4",
+            "reachable": true,
+            "name": "应收账单明细扩展4"
+        },
+        "receivableDetReceivableVarExtra5": {
+            "meaning": "应收账单明细扩展5",
+            "reachable": true,
+            "name": "应收账单明细扩展5"
+        },
+        "receivableDetReceivableVersion": {
+            "meaning": "应收账单明细版本号",
+            "reachable": true,
+            "name": "应收账单明细版本号"
+        },
+        "receivableDetRelatedTasksId": {
+            "meaning": "应收账单明细关联任务id",
+            "reachable": true,
+            "name": "应收账单明细关联任务id"
+        },
+        "receivableDetSerialNumber": {
+            "meaning": "应收账单明细顺序号",
+            "reachable": true,
+            "name": "应收账单明细顺序号"
+        },
+        "receivableDetSettleAmount": {
+            "meaning": "应收账单明细结算金额",
+            "reachable": true,
+            "name": "应收账单明细结算金额"
+        },
+        "receivableDetSource": {
+            "meaning": "应收账单明细源",
+            "reachable": true,
+            "name": "应收账单明细源"
+        },
+        "receivableDetSourceType": {
+            "meaning": "应收账单明细来源类型",
+            "reachable": true,
+            "name": "应收账单明细来源类型"
+        },
+        "receivableDetState": {
+            "meaning": "应收账单明细通用状态",
+            "reachable": true,
+            "name": "应收账单明细通用状态"
+        },
+        "receivableDetSystemCode": {
+            "meaning": "应收账单明细系统编码",
+            "reachable": true,
+            "name": "应收账单明细系统编码"
+        },
+        "receivableDetTarget": {
+            "meaning": "应收账单明细目标",
+            "reachable": true,
+            "name": "应收账单明细目标"
+        },
+        "receivableDetTaskNodeName": {
+            "meaning": "应收账单明细任务节点名称",
+            "reachable": true,
+            "name": "应收账单明细任务节点名称"
+        },
+        "receivableDetTenantId": {
+            "meaning": "应收账单明细租户ID",
+            "reachable": true,
+            "name": "应收账单明细租户ID"
+        },
+        "receivableDetThirdPartyClass": {
+            "meaning": "应收账单明细第三方分类",
+            "reachable": true,
+            "name": "应收账单明细第三方分类"
+        },
+        "receivableDetThirdPartyId": {
+            "meaning": "应收账单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "应收账单明细第三方系统中的唯一ID"
+        },
+        "receivableDetThirdPartyName": {
+            "meaning": "应收账单明细第三方名称",
+            "reachable": true,
+            "name": "应收账单明细第三方名称"
+        },
+        "receivableDetToAuditDate": {
+            "meaning": "receivableDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToBeginTime": {
+            "meaning": "receivableDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToCreateTime": {
+            "meaning": "receivableDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDateExtra1": {
+            "meaning": "receivableDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDateExtra2": {
+            "meaning": "receivableDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDateExtra3": {
+            "meaning": "receivableDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDateExtra4": {
+            "meaning": "receivableDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDateExtra5": {
+            "meaning": "receivableDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToDeliveryDate": {
+            "meaning": "receivableDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToEndTime": {
+            "meaning": "receivableDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToReceiptDate": {
+            "meaning": "receivableDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetToUpdateTime": {
+            "meaning": "receivableDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableDetUnitCode": {
+            "meaning": "应收账单明细单位id",
+            "reachable": true,
+            "name": "应收账单明细单位id"
+        },
+        "receivableDetUpdateTime": {
+            "meaning": "应收账单明细更新时间",
+            "reachable": true,
+            "name": "应收账单明细更新时间"
+        },
+        "receivableDetUpdater": {
+            "meaning": "应收账单明细更新人",
+            "reachable": true,
+            "name": "应收账单明细更新人"
+        },
+        "receivableDetUpdaterId": {
+            "meaning": "应收账单明细更新人ID",
+            "reachable": true,
+            "name": "应收账单明细更新人ID"
+        },
+        "receivableDetUserCode": {
+            "meaning": "应收账单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "应收账单明细智能节点的唯一编码"
+        },
+        "receivableDetVarExtra1": {
+            "meaning": "应收账单明细扩展1",
+            "reachable": true,
+            "name": "应收账单明细扩展1"
+        },
+        "receivableDetVarExtra2": {
+            "meaning": "应收账单明细扩展2",
+            "reachable": true,
+            "name": "应收账单明细扩展2"
+        },
+        "receivableDetVarExtra3": {
+            "meaning": "应收账单明细扩展3",
+            "reachable": true,
+            "name": "应收账单明细扩展3"
+        },
+        "receivableDetVarExtra4": {
+            "meaning": "应收账单明细扩展4",
+            "reachable": true,
+            "name": "应收账单明细扩展4"
+        },
+        "receivableDetVarExtra5": {
+            "meaning": "应收账单明细扩展5",
+            "reachable": true,
+            "name": "应收账单明细扩展5"
+        },
+        "receivableDetVersion": {
+            "meaning": "应收账单明细版本号",
+            "reachable": true,
+            "name": "应收账单明细版本号"
+        },
+        "receivableDetWorkOrderId": {
+            "meaning": "应收账单明细工单ID",
+            "reachable": true,
+            "name": "应收账单明细工单ID"
+        }
+    }
+}

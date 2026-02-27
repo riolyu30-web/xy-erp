@@ -1,0 +1,451 @@
+{
+    "api_name": "/organization-contact/findList",
+    "table_name": "机构联系人",
+    "request": {
+        "organizationContactClazz": "ORGANIZATION_CONTACT"
+    },
+    "mainTabClazz": "ORGANIZATION_CONTACT",
+    "response": {
+        "organizationContactAddress": {
+            "meaning": "机构联系人详细地址",
+            "reachable": true,
+            "name": "机构联系人详细地址"
+        },
+        "organizationContactApplicationId": {
+            "meaning": "机构联系人应用ID",
+            "reachable": true,
+            "name": "机构联系人应用ID"
+        },
+        "organizationContactAreaId": {
+            "meaning": "机构联系人区域id",
+            "reachable": true,
+            "name": "机构联系人区域id"
+        },
+        "organizationContactAuditDate": {
+            "meaning": "机构联系人审核时间",
+            "reachable": true,
+            "name": "机构联系人审核时间"
+        },
+        "organizationContactAuditStatus": {
+            "meaning": "机构联系人审核状态",
+            "reachable": true,
+            "name": "机构联系人审核状态"
+        },
+        "organizationContactBizVersion": {
+            "meaning": "机构联系人业务自定义版本号",
+            "reachable": true,
+            "name": "机构联系人业务自定义版本号"
+        },
+        "organizationContactBriefName": {
+            "meaning": "机构联系人简称",
+            "reachable": true,
+            "name": "机构联系人简称"
+        },
+        "organizationContactBusDivisId": {
+            "meaning": "机构联系人事业部id",
+            "reachable": true,
+            "name": "机构联系人事业部id"
+        },
+        "organizationContactClazz": {
+            "meaning": "机构联系人子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "机构联系人子类"
+        },
+        "organizationContactComment": {
+            "meaning": "机构联系人评论",
+            "reachable": true,
+            "name": "机构联系人评论"
+        },
+        "organizationContactCompanyArea": {
+            "meaning": "机构联系人公司地区",
+            "reachable": true,
+            "name": "机构联系人公司地区"
+        },
+        "organizationContactCreateTime": {
+            "meaning": "机构联系人创建时间",
+            "reachable": true,
+            "name": "机构联系人创建时间"
+        },
+        "organizationContactCreator": {
+            "meaning": "机构联系人创建人",
+            "reachable": true,
+            "name": "机构联系人创建人"
+        },
+        "organizationContactCreatorId": {
+            "meaning": "机构联系人创建人ID",
+            "reachable": true,
+            "name": "机构联系人创建人ID"
+        },
+        "organizationContactDateExtra1": {
+            "meaning": "机构联系人扩展时间1",
+            "reachable": true,
+            "name": "机构联系人扩展时间1"
+        },
+        "organizationContactDateExtra2": {
+            "meaning": "机构联系人扩展时间2",
+            "reachable": true,
+            "name": "机构联系人扩展时间2"
+        },
+        "organizationContactDateExtra3": {
+            "meaning": "机构联系人扩展时间3",
+            "reachable": true,
+            "name": "机构联系人扩展时间3"
+        },
+        "organizationContactDateExtra4": {
+            "meaning": "机构联系人扩展时间4",
+            "reachable": true,
+            "name": "机构联系人扩展时间4"
+        },
+        "organizationContactDateExtra5": {
+            "meaning": "机构联系人扩展时间5",
+            "reachable": true,
+            "name": "机构联系人扩展时间5"
+        },
+        "organizationContactDefaultType": {
+            "meaning": "机构联系人智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "机构联系人智能节点主类型"
+        },
+        "organizationContactDeliveryArea": {
+            "meaning": "机构联系人送货区域",
+            "reachable": true,
+            "name": "机构联系人送货区域"
+        },
+        "organizationContactDescription": {
+            "meaning": "机构联系人描述",
+            "reachable": true,
+            "name": "机构联系人描述"
+        },
+        "organizationContactEmail": {
+            "meaning": "机构联系人邮件",
+            "reachable": true,
+            "name": "机构联系人邮件"
+        },
+        "organizationContactEngName": {
+            "meaning": "机构联系人英文名称",
+            "reachable": true,
+            "name": "机构联系人英文名称"
+        },
+        "organizationContactExtension": {
+            "meaning": "机构联系人扩展数据",
+            "reachable": true,
+            "name": "机构联系人扩展数据"
+        },
+        "organizationContactExternalState": {
+            "meaning": "机构联系人上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "机构联系人上流程状态位"
+        },
+        "organizationContactFax": {
+            "meaning": "机构联系人传真",
+            "reachable": true,
+            "name": "机构联系人传真"
+        },
+        "organizationContactFlags": {
+            "meaning": "机构联系人63位标志位",
+            "reachable": true,
+            "name": "机构联系人63位标志位"
+        },
+        "organizationContactFromAuditDate": {
+            "meaning": "organizationContactFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromCreateTime": {
+            "meaning": "organizationContactFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromDateExtra1": {
+            "meaning": "organizationContactFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromDateExtra2": {
+            "meaning": "organizationContactFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromDateExtra3": {
+            "meaning": "organizationContactFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromDateExtra4": {
+            "meaning": "organizationContactFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromDateExtra5": {
+            "meaning": "organizationContactFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactFromUpdateTime": {
+            "meaning": "organizationContactFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactGroovyScript": {
+            "meaning": "机构联系人groovy脚本",
+            "reachable": true,
+            "name": "机构联系人groovy脚本"
+        },
+        "organizationContactGropeCode": {
+            "meaning": "机构联系人搜索码",
+            "reachable": true,
+            "name": "机构联系人搜索码"
+        },
+        "organizationContactId": {
+            "meaning": "机构联系人PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "机构联系人PK"
+        },
+        "organizationContactInUsed": {
+            "meaning": "机构联系人是否被使用",
+            "reachable": true,
+            "name": "机构联系人是否被使用"
+        },
+        "organizationContactIsBanned": {
+            "meaning": "机构联系人是否被禁用",
+            "reachable": true,
+            "name": "机构联系人是否被禁用"
+        },
+        "organizationContactIsDefault": {
+            "meaning": "机构联系人是否默认默认是false",
+            "reachable": true,
+            "name": "机构联系人是否默认默认是false"
+        },
+        "organizationContactIsDeleted": {
+            "meaning": "机构联系人是否被删除",
+            "reachable": true,
+            "name": "机构联系人是否被删除"
+        },
+        "organizationContactIsMainFlow": {
+            "meaning": "机构联系人是否是主流程",
+            "reachable": true,
+            "name": "机构联系人是否是主流程"
+        },
+        "organizationContactIsolation": {
+            "meaning": "机构联系人智能节点数据隔离标识",
+            "reachable": true,
+            "name": "机构联系人智能节点数据隔离标识"
+        },
+        "organizationContactJsScript": {
+            "meaning": "机构联系人js脚本",
+            "reachable": true,
+            "name": "机构联系人js脚本"
+        },
+        "organizationContactMileage": {
+            "meaning": "机构联系人里程",
+            "reachable": true,
+            "name": "机构联系人里程"
+        },
+        "organizationContactMobilePhone": {
+            "meaning": "机构联系人手机",
+            "reachable": true,
+            "name": "机构联系人手机"
+        },
+        "organizationContactName": {
+            "meaning": "机构联系人智能节点名",
+            "reachable": true,
+            "name": "机构联系人智能节点名"
+        },
+        "organizationContactNameCodeSearch": {
+            "meaning": "机构联系人name、user_code模糊搜索",
+            "reachable": true,
+            "name": "机构联系人name、user_code模糊搜索"
+        },
+        "organizationContactNumberExtra1": {
+            "meaning": "机构联系人扩展数量1",
+            "reachable": true,
+            "name": "机构联系人扩展数量1"
+        },
+        "organizationContactNumberExtra2": {
+            "meaning": "机构联系人扩展数量2",
+            "reachable": true,
+            "name": "机构联系人扩展数量2"
+        },
+        "organizationContactNumberExtra3": {
+            "meaning": "机构联系人扩展数量3",
+            "reachable": true,
+            "name": "机构联系人扩展数量3"
+        },
+        "organizationContactNumberExtra4": {
+            "meaning": "机构联系人扩展数量4",
+            "reachable": true,
+            "name": "机构联系人扩展数量4"
+        },
+        "organizationContactNumberExtra5": {
+            "meaning": "机构联系人扩展数量5",
+            "reachable": true,
+            "name": "机构联系人扩展数量5"
+        },
+        "organizationContactOrganizationId": {
+            "meaning": "机构联系人机构_id",
+            "reachable": true,
+            "name": "机构联系人机构_id"
+        },
+        "organizationContactParentId": {
+            "meaning": "机构联系人父节点ID",
+            "reachable": true,
+            "name": "机构联系人父节点ID"
+        },
+        "organizationContactPosition": {
+            "meaning": "机构联系人职位",
+            "reachable": true,
+            "name": "机构联系人职位"
+        },
+        "organizationContactProcessInstanceId": {
+            "meaning": "机构联系人流程实例ID",
+            "reachable": true,
+            "name": "机构联系人流程实例ID"
+        },
+        "organizationContactQqNumber": {
+            "meaning": "机构联系人QQ号码",
+            "reachable": true,
+            "name": "机构联系人QQ号码"
+        },
+        "organizationContactSerialNumber": {
+            "meaning": "机构联系人顺序号",
+            "reachable": true,
+            "name": "机构联系人顺序号"
+        },
+        "organizationContactState": {
+            "meaning": "机构联系人通用状态",
+            "reachable": true,
+            "name": "机构联系人通用状态"
+        },
+        "organizationContactSystemCode": {
+            "meaning": "机构联系人系统编码",
+            "reachable": true,
+            "name": "机构联系人系统编码"
+        },
+        "organizationContactTaskNodeName": {
+            "meaning": "机构联系人任务节点名称",
+            "reachable": true,
+            "name": "机构联系人任务节点名称"
+        },
+        "organizationContactTelephone": {
+            "meaning": "机构联系人电话",
+            "reachable": true,
+            "name": "机构联系人电话"
+        },
+        "organizationContactTenantId": {
+            "meaning": "机构联系人租户_id",
+            "reachable": true,
+            "name": "机构联系人租户_id"
+        },
+        "organizationContactThirdPartyClass": {
+            "meaning": "机构联系人第三方分类",
+            "reachable": true,
+            "name": "机构联系人第三方分类"
+        },
+        "organizationContactThirdPartyId": {
+            "meaning": "机构联系人第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "机构联系人第三方系统中的唯一ID"
+        },
+        "organizationContactThirdPartyName": {
+            "meaning": "机构联系人第三方名称",
+            "reachable": true,
+            "name": "机构联系人第三方名称"
+        },
+        "organizationContactToAuditDate": {
+            "meaning": "organizationContactToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToCreateTime": {
+            "meaning": "organizationContactToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToDateExtra1": {
+            "meaning": "organizationContactToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToDateExtra2": {
+            "meaning": "organizationContactToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToDateExtra3": {
+            "meaning": "organizationContactToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToDateExtra4": {
+            "meaning": "organizationContactToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToDateExtra5": {
+            "meaning": "organizationContactToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactToUpdateTime": {
+            "meaning": "organizationContactToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "organizationContactUpdateTime": {
+            "meaning": "机构联系人更新时间",
+            "reachable": true,
+            "name": "机构联系人更新时间"
+        },
+        "organizationContactUpdater": {
+            "meaning": "机构联系人更新人",
+            "reachable": true,
+            "name": "机构联系人更新人"
+        },
+        "organizationContactUpdaterId": {
+            "meaning": "机构联系人更新人ID",
+            "reachable": true,
+            "name": "机构联系人更新人ID"
+        },
+        "organizationContactUserCode": {
+            "meaning": "机构联系人智能节点的唯一编码",
+            "reachable": true,
+            "name": "机构联系人智能节点的唯一编码"
+        },
+        "organizationContactVarExtra1": {
+            "meaning": "机构联系人扩展1",
+            "reachable": true,
+            "name": "机构联系人扩展1"
+        },
+        "organizationContactVarExtra2": {
+            "meaning": "机构联系人扩展2",
+            "reachable": true,
+            "name": "机构联系人扩展2"
+        },
+        "organizationContactVarExtra3": {
+            "meaning": "机构联系人扩展3",
+            "reachable": true,
+            "name": "机构联系人扩展3"
+        },
+        "organizationContactVarExtra4": {
+            "meaning": "机构联系人扩展4",
+            "reachable": true,
+            "name": "机构联系人扩展4"
+        },
+        "organizationContactVarExtra5": {
+            "meaning": "机构联系人扩展5",
+            "reachable": true,
+            "name": "机构联系人扩展5"
+        },
+        "organizationContactVersion": {
+            "meaning": "机构联系人版本号",
+            "reachable": true,
+            "name": "机构联系人版本号"
+        },
+        "organizationContactWechatNumber": {
+            "meaning": "机构联系人微信号码",
+            "reachable": true,
+            "name": "机构联系人微信号码"
+        }
+    }
+}

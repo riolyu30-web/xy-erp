@@ -1,0 +1,1332 @@
+{
+    "api_name": "/supp-statement-det/findList",
+    "table_name": "供应商对账单明细",
+    "request": {
+        "suppStatementDetSuppStatementClazz": "SUPP_STATEMENT",
+        "suppStatementDetClazz": "SUPP_STATEMENT_DET"
+    },
+    "mainTabClazz": "SUPP_STATEMENT_DET",
+    "response": {
+        "suppStatementDetActualTimeRequired": {
+            "meaning": "供应商对账单明细实际需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细实际需时"
+        },
+        "suppStatementDetAdjustmentTimeRequired": {
+            "meaning": "供应商对账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细调整需时"
+        },
+        "suppStatementDetAmount": {
+            "meaning": "供应商对账单明细金额",
+            "reachable": true,
+            "name": "供应商对账单明细金额"
+        },
+        "suppStatementDetApplicationId": {
+            "meaning": "供应商对账单明细应用ID",
+            "reachable": true,
+            "name": "供应商对账单明细应用ID"
+        },
+        "suppStatementDetAuditDate": {
+            "meaning": "供应商对账单明细审核时间",
+            "reachable": true,
+            "name": "供应商对账单明细审核时间"
+        },
+        "suppStatementDetAuditStatus": {
+            "meaning": "供应商对账单明细审核状态",
+            "reachable": true,
+            "name": "供应商对账单明细审核状态"
+        },
+        "suppStatementDetAvailableScheduleId": {
+            "meaning": "供应商对账单明细可用日程id",
+            "reachable": true,
+            "name": "供应商对账单明细可用日程id"
+        },
+        "suppStatementDetBeginTime": {
+            "meaning": "供应商对账单明细开始时间",
+            "reachable": true,
+            "name": "供应商对账单明细开始时间"
+        },
+        "suppStatementDetBizVersion": {
+            "meaning": "供应商对账单明细业务自定义版本号",
+            "reachable": true,
+            "name": "供应商对账单明细业务自定义版本号"
+        },
+        "suppStatementDetBriefName": {
+            "meaning": "供应商对账单明细简称",
+            "reachable": true,
+            "name": "供应商对账单明细简称"
+        },
+        "suppStatementDetBusDivisId": {
+            "meaning": "供应商对账单明细事业部id",
+            "reachable": true,
+            "name": "供应商对账单明细事业部id"
+        },
+        "suppStatementDetClazz": {
+            "meaning": "供应商对账单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "供应商对账单明细子类"
+        },
+        "suppStatementDetClosedReason": {
+            "meaning": "供应商对账单明细结案原因",
+            "reachable": true,
+            "name": "供应商对账单明细结案原因"
+        },
+        "suppStatementDetClosedStatus": {
+            "meaning": "供应商对账单明细结案状态",
+            "reachable": true,
+            "name": "供应商对账单明细结案状态"
+        },
+        "suppStatementDetComment": {
+            "meaning": "供应商对账单明细评论",
+            "reachable": true,
+            "name": "供应商对账单明细评论"
+        },
+        "suppStatementDetCompleteQuantity": {
+            "meaning": "供应商对账单明细完成数量",
+            "reachable": true,
+            "name": "供应商对账单明细完成数量"
+        },
+        "suppStatementDetCompleteStatus": {
+            "meaning": "供应商对账单明细完成状态",
+            "reachable": true,
+            "name": "供应商对账单明细完成状态"
+        },
+        "suppStatementDetCreateTime": {
+            "meaning": "供应商对账单明细创建时间",
+            "reachable": true,
+            "name": "供应商对账单明细创建时间"
+        },
+        "suppStatementDetCreator": {
+            "meaning": "供应商对账单明细创建人",
+            "reachable": true,
+            "name": "供应商对账单明细创建人"
+        },
+        "suppStatementDetCreatorId": {
+            "meaning": "供应商对账单明细创建人ID",
+            "reachable": true,
+            "name": "供应商对账单明细创建人ID"
+        },
+        "suppStatementDetDateExtra1": {
+            "meaning": "供应商对账单明细扩展时间1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间1"
+        },
+        "suppStatementDetDateExtra2": {
+            "meaning": "供应商对账单明细扩展时间2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间2"
+        },
+        "suppStatementDetDateExtra3": {
+            "meaning": "供应商对账单明细扩展时间3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间3"
+        },
+        "suppStatementDetDateExtra4": {
+            "meaning": "供应商对账单明细扩展时间4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间4"
+        },
+        "suppStatementDetDateExtra5": {
+            "meaning": "供应商对账单明细扩展时间5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间5"
+        },
+        "suppStatementDetDefaultType": {
+            "meaning": "供应商对账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点主类型"
+        },
+        "suppStatementDetDeliveryDate": {
+            "meaning": "供应商对账单明细交货日期",
+            "reachable": true,
+            "name": "供应商对账单明细交货日期"
+        },
+        "suppStatementDetDescription": {
+            "meaning": "供应商对账单明细描述",
+            "reachable": true,
+            "name": "供应商对账单明细描述"
+        },
+        "suppStatementDetEndTime": {
+            "meaning": "供应商对账单明细结束时间",
+            "reachable": true,
+            "name": "供应商对账单明细结束时间"
+        },
+        "suppStatementDetEndTimeRequired": {
+            "meaning": "供应商对账单明细最后需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细最后需时"
+        },
+        "suppStatementDetEngName": {
+            "meaning": "供应商对账单明细英文名称",
+            "reachable": true,
+            "name": "供应商对账单明细英文名称"
+        },
+        "suppStatementDetEquipmentId": {
+            "meaning": "供应商对账单明细设备id",
+            "reachable": true,
+            "name": "供应商对账单明细设备id"
+        },
+        "suppStatementDetExchangeRate": {
+            "meaning": "供应商对账单明细汇率",
+            "reachable": true,
+            "name": "供应商对账单明细汇率"
+        },
+        "suppStatementDetExchangeRateId": {
+            "meaning": "供应商对账单明细币种汇率id",
+            "reachable": true,
+            "name": "供应商对账单明细币种汇率id"
+        },
+        "suppStatementDetExtension": {
+            "meaning": "供应商对账单明细扩展数据",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数据"
+        },
+        "suppStatementDetExternalState": {
+            "meaning": "供应商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "供应商对账单明细上流程状态位"
+        },
+        "suppStatementDetFilterClazz": {
+            "meaning": "供应商对账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "供应商对账单明细冗余字段用于筛选"
+        },
+        "suppStatementDetFlags": {
+            "meaning": "供应商对账单明细63位标志位",
+            "reachable": true,
+            "name": "供应商对账单明细63位标志位"
+        },
+        "suppStatementDetFromAuditDate": {
+            "meaning": "suppStatementDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromBeginTime": {
+            "meaning": "suppStatementDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromCreateTime": {
+            "meaning": "suppStatementDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDateExtra1": {
+            "meaning": "suppStatementDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDateExtra2": {
+            "meaning": "suppStatementDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDateExtra3": {
+            "meaning": "suppStatementDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDateExtra4": {
+            "meaning": "suppStatementDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDateExtra5": {
+            "meaning": "suppStatementDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromDeliveryDate": {
+            "meaning": "suppStatementDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromEndTime": {
+            "meaning": "suppStatementDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromReceiptDate": {
+            "meaning": "suppStatementDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFromUpdateTime": {
+            "meaning": "suppStatementDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetFscType": {
+            "meaning": "供应商对账单明细FSC声明",
+            "reachable": true,
+            "name": "供应商对账单明细FSC声明"
+        },
+        "suppStatementDetGenerativePeople": {
+            "meaning": "供应商对账单明细下发人",
+            "reachable": true,
+            "name": "供应商对账单明细下发人"
+        },
+        "suppStatementDetGenerativeState": {
+            "meaning": "供应商对账单明细下发状态",
+            "reachable": true,
+            "name": "供应商对账单明细下发状态"
+        },
+        "suppStatementDetGroovyScript": {
+            "meaning": "供应商对账单明细groovy脚本",
+            "reachable": true,
+            "name": "供应商对账单明细groovy脚本"
+        },
+        "suppStatementDetGropeCode": {
+            "meaning": "供应商对账单明细搜索码",
+            "reachable": true,
+            "name": "供应商对账单明细搜索码"
+        },
+        "suppStatementDetId": {
+            "meaning": "供应商对账单明细PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "供应商对账单明细PK"
+        },
+        "suppStatementDetInUsed": {
+            "meaning": "供应商对账单明细是否被使用",
+            "reachable": true,
+            "name": "供应商对账单明细是否被使用"
+        },
+        "suppStatementDetInvTypeTaxRateId": {
+            "meaning": "供应商对账单明细发票税率id",
+            "reachable": true,
+            "name": "供应商对账单明细发票税率id"
+        },
+        "suppStatementDetInvoicedAmount": {
+            "meaning": "供应商对账单明细已开票金额",
+            "reachable": true,
+            "name": "供应商对账单明细已开票金额"
+        },
+        "suppStatementDetInvoicedState": {
+            "meaning": "供应商对账单明细开票状态（0未开票；1部分开票；2全部开票；3终止开票）",
+            "reachable": true,
+            "name": "供应商对账单明细开票状态"
+        },
+        "suppStatementDetIsBanned": {
+            "meaning": "供应商对账单明细是否被禁用",
+            "reachable": true,
+            "name": "供应商对账单明细是否被禁用"
+        },
+        "suppStatementDetIsDeleted": {
+            "meaning": "供应商对账单明细是否被删除",
+            "reachable": true,
+            "name": "供应商对账单明细是否被删除"
+        },
+        "suppStatementDetIsLeaf": {
+            "meaning": "供应商对账单明细是否叶子节点",
+            "reachable": true,
+            "name": "供应商对账单明细是否叶子节点"
+        },
+        "suppStatementDetIsMainFlow": {
+            "meaning": "供应商对账单明细是否是主流程",
+            "reachable": true,
+            "name": "供应商对账单明细是否是主流程"
+        },
+        "suppStatementDetIsManualModificationDate": {
+            "meaning": "供应商对账单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "供应商对账单明细是否手动修改计划生产时间"
+        },
+        "suppStatementDetIsolation": {
+            "meaning": "供应商对账单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点数据隔离标识"
+        },
+        "suppStatementDetJsScript": {
+            "meaning": "供应商对账单明细js脚本",
+            "reachable": true,
+            "name": "供应商对账单明细js脚本"
+        },
+        "suppStatementDetLocAmount": {
+            "meaning": "供应商对账单明细本币金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币金额"
+        },
+        "suppStatementDetLocCompleteQuantity": {
+            "meaning": "供应商对账单明细本币完成数量",
+            "reachable": true,
+            "name": "供应商对账单明细本币完成数量"
+        },
+        "suppStatementDetLocInvoicedAmount": {
+            "meaning": "供应商对账单明细本币已开票金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币已开票金额"
+        },
+        "suppStatementDetLocOtherExpense": {
+            "meaning": "供应商对账单明细本币其他费用",
+            "reachable": true,
+            "name": "供应商对账单明细本币其他费用"
+        },
+        "suppStatementDetLocSettleAmount": {
+            "meaning": "供应商对账单明细本币结算金额（本币金额+本币其他费用）",
+            "reachable": true,
+            "name": "供应商对账单明细本币结算金额"
+        },
+        "suppStatementDetLocSettledAmount": {
+            "meaning": "供应商对账单明细本币已结算金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币已结算金额"
+        },
+        "suppStatementDetMaterialId": {
+            "meaning": "供应商对账单明细物料id",
+            "reachable": true,
+            "name": "供应商对账单明细物料id"
+        },
+        "suppStatementDetName": {
+            "meaning": "供应商对账单明细智能节点名",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点名"
+        },
+        "suppStatementDetNameCodeSearch": {
+            "meaning": "供应商对账单明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "供应商对账单明细name、user"
+        },
+        "suppStatementDetNumberExtra1": {
+            "meaning": "供应商对账单明细扩展数量1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量1"
+        },
+        "suppStatementDetNumberExtra2": {
+            "meaning": "供应商对账单明细扩展数量2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量2"
+        },
+        "suppStatementDetNumberExtra3": {
+            "meaning": "供应商对账单明细扩展数量3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量3"
+        },
+        "suppStatementDetNumberExtra4": {
+            "meaning": "供应商对账单明细扩展数量4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量4"
+        },
+        "suppStatementDetNumberExtra5": {
+            "meaning": "供应商对账单明细扩展数量5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量5"
+        },
+        "suppStatementDetOrderId": {
+            "meaning": "供应商对账单明细订单_id",
+            "reachable": true,
+            "name": "供应商对账单明细订单_id"
+        },
+        "suppStatementDetOtherExpense": {
+            "meaning": "供应商对账单明细其他费用",
+            "reachable": true,
+            "name": "供应商对账单明细其他费用"
+        },
+        "suppStatementDetParentId": {
+            "meaning": "供应商对账单明细父节点ID",
+            "reachable": true,
+            "name": "供应商对账单明细父节点ID"
+        },
+        "suppStatementDetPlannedOutputQuantity": {
+            "meaning": "供应商对账单明细计划产出数量",
+            "reachable": true,
+            "name": "供应商对账单明细计划产出数量"
+        },
+        "suppStatementDetPlannedTimeRequired": {
+            "meaning": "供应商对账单明细计划需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细计划需时"
+        },
+        "suppStatementDetPrintTimes": {
+            "meaning": "供应商对账单明细打印次数",
+            "reachable": true,
+            "name": "供应商对账单明细打印次数"
+        },
+        "suppStatementDetPriority": {
+            "meaning": "供应商对账单明细优先级",
+            "reachable": true,
+            "name": "供应商对账单明细优先级"
+        },
+        "suppStatementDetProcessInstanceId": {
+            "meaning": "供应商对账单明细流程实例ID",
+            "reachable": true,
+            "name": "供应商对账单明细流程实例ID"
+        },
+        "suppStatementDetProductionProcessesTypeId": {
+            "meaning": "供应商对账单明细工序类型ID",
+            "reachable": true,
+            "name": "供应商对账单明细工序类型ID"
+        },
+        "suppStatementDetProductionShiftId": {
+            "meaning": "供应商对账单明细生产班次ID",
+            "reachable": true,
+            "name": "供应商对账单明细生产班次ID"
+        },
+        "suppStatementDetQuantity": {
+            "meaning": "供应商对账单明细任务数量",
+            "reachable": true,
+            "name": "供应商对账单明细任务数量"
+        },
+        "suppStatementDetReceiptDate": {
+            "meaning": "供应商对账单明细单据日期",
+            "reachable": true,
+            "name": "供应商对账单明细单据日期"
+        },
+        "suppStatementDetReceiptType": {
+            "meaning": "供应商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "供应商对账单明细单据类型"
+        },
+        "suppStatementDetRelatedTasksId": {
+            "meaning": "供应商对账单明细关联任务id",
+            "reachable": true,
+            "name": "供应商对账单明细关联任务id"
+        },
+        "suppStatementDetSerialNumber": {
+            "meaning": "供应商对账单明细顺序号",
+            "reachable": true,
+            "name": "供应商对账单明细顺序号"
+        },
+        "suppStatementDetSettleAmount": {
+            "meaning": "供应商对账单明细结算金额（金额+其他费用）",
+            "reachable": true,
+            "name": "供应商对账单明细结算金额"
+        },
+        "suppStatementDetSettledAmount": {
+            "meaning": "供应商对账单明细已结算金额",
+            "reachable": true,
+            "name": "供应商对账单明细已结算金额"
+        },
+        "suppStatementDetSettledState": {
+            "meaning": "供应商对账单明细结算状态（0未结算；1部分结算；2全部结算；3终止结算）",
+            "reachable": true,
+            "name": "供应商对账单明细结算状态"
+        },
+        "suppStatementDetSource": {
+            "meaning": "供应商对账单明细源",
+            "reachable": true,
+            "name": "供应商对账单明细源"
+        },
+        "suppStatementDetSourceType": {
+            "meaning": "供应商对账单明细来源类型",
+            "reachable": true,
+            "name": "供应商对账单明细来源类型"
+        },
+        "suppStatementDetState": {
+            "meaning": "供应商对账单明细通用状态",
+            "reachable": true,
+            "name": "供应商对账单明细通用状态"
+        },
+        "suppStatementDetSuppStatementActualTimeRequired": {
+            "meaning": "供应商对账单明细实际需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细实际需时"
+        },
+        "suppStatementDetSuppStatementAdjustmentTimeRequired": {
+            "meaning": "供应商对账单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细调整需时"
+        },
+        "suppStatementDetSuppStatementApplicationId": {
+            "meaning": "供应商对账单明细应用ID",
+            "reachable": true,
+            "name": "供应商对账单明细应用ID"
+        },
+        "suppStatementDetSuppStatementAuditDate": {
+            "meaning": "供应商对账单明细审核时间",
+            "reachable": true,
+            "name": "供应商对账单明细审核时间"
+        },
+        "suppStatementDetSuppStatementAuditStatus": {
+            "meaning": "供应商对账单明细审核状态",
+            "reachable": true,
+            "name": "供应商对账单明细审核状态"
+        },
+        "suppStatementDetSuppStatementAvailableScheduleId": {
+            "meaning": "供应商对账单明细可用日程id",
+            "reachable": true,
+            "name": "供应商对账单明细可用日程id"
+        },
+        "suppStatementDetSuppStatementBeginTime": {
+            "meaning": "供应商对账单明细开始时间",
+            "reachable": true,
+            "name": "供应商对账单明细开始时间"
+        },
+        "suppStatementDetSuppStatementBizVersion": {
+            "meaning": "供应商对账单明细业务自定义版本号",
+            "reachable": true,
+            "name": "供应商对账单明细业务自定义版本号"
+        },
+        "suppStatementDetSuppStatementBriefName": {
+            "meaning": "供应商对账单明细简称",
+            "reachable": true,
+            "name": "供应商对账单明细简称"
+        },
+        "suppStatementDetSuppStatementBusDivisId": {
+            "meaning": "供应商对账单明细事业部id",
+            "reachable": true,
+            "name": "供应商对账单明细事业部id"
+        },
+        "suppStatementDetSuppStatementClazz": {
+            "meaning": "供应商对账单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "供应商对账单明细子类"
+        },
+        "suppStatementDetSuppStatementClosedReason": {
+            "meaning": "供应商对账单明细结案原因",
+            "reachable": true,
+            "name": "供应商对账单明细结案原因"
+        },
+        "suppStatementDetSuppStatementClosedStatus": {
+            "meaning": "供应商对账单明细结案状态",
+            "reachable": true,
+            "name": "供应商对账单明细结案状态"
+        },
+        "suppStatementDetSuppStatementComment": {
+            "meaning": "供应商对账单明细评论",
+            "reachable": true,
+            "name": "供应商对账单明细评论"
+        },
+        "suppStatementDetSuppStatementCompleteQuantity": {
+            "meaning": "供应商对账单明细完成数量",
+            "reachable": true,
+            "name": "供应商对账单明细完成数量"
+        },
+        "suppStatementDetSuppStatementCompleteStatus": {
+            "meaning": "供应商对账单明细完成状态",
+            "reachable": true,
+            "name": "供应商对账单明细完成状态"
+        },
+        "suppStatementDetSuppStatementCreateTime": {
+            "meaning": "供应商对账单明细创建时间",
+            "reachable": true,
+            "name": "供应商对账单明细创建时间"
+        },
+        "suppStatementDetSuppStatementCreator": {
+            "meaning": "供应商对账单明细创建人",
+            "reachable": true,
+            "name": "供应商对账单明细创建人"
+        },
+        "suppStatementDetSuppStatementCreatorId": {
+            "meaning": "供应商对账单明细创建人ID",
+            "reachable": true,
+            "name": "供应商对账单明细创建人ID"
+        },
+        "suppStatementDetSuppStatementCurrency": {
+            "meaning": "供应商对账单明细币种",
+            "reachable": true,
+            "name": "供应商对账单明细币种"
+        },
+        "suppStatementDetSuppStatementDateExtra1": {
+            "meaning": "供应商对账单明细扩展时间1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间1"
+        },
+        "suppStatementDetSuppStatementDateExtra2": {
+            "meaning": "供应商对账单明细扩展时间2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间2"
+        },
+        "suppStatementDetSuppStatementDateExtra3": {
+            "meaning": "供应商对账单明细扩展时间3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间3"
+        },
+        "suppStatementDetSuppStatementDateExtra4": {
+            "meaning": "供应商对账单明细扩展时间4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间4"
+        },
+        "suppStatementDetSuppStatementDateExtra5": {
+            "meaning": "供应商对账单明细扩展时间5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展时间5"
+        },
+        "suppStatementDetSuppStatementDefaultType": {
+            "meaning": "供应商对账单明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点主类型"
+        },
+        "suppStatementDetSuppStatementDeliveryDate": {
+            "meaning": "供应商对账单明细交货日期",
+            "reachable": true,
+            "name": "供应商对账单明细交货日期"
+        },
+        "suppStatementDetSuppStatementDescription": {
+            "meaning": "供应商对账单明细描述",
+            "reachable": true,
+            "name": "供应商对账单明细描述"
+        },
+        "suppStatementDetSuppStatementEndTime": {
+            "meaning": "供应商对账单明细结束时间",
+            "reachable": true,
+            "name": "供应商对账单明细结束时间"
+        },
+        "suppStatementDetSuppStatementEndTimeRequired": {
+            "meaning": "供应商对账单明细最后需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细最后需时"
+        },
+        "suppStatementDetSuppStatementEngName": {
+            "meaning": "供应商对账单明细英文名称",
+            "reachable": true,
+            "name": "供应商对账单明细英文名称"
+        },
+        "suppStatementDetSuppStatementEquipmentId": {
+            "meaning": "供应商对账单明细设备id",
+            "reachable": true,
+            "name": "供应商对账单明细设备id"
+        },
+        "suppStatementDetSuppStatementExchangeRateId": {
+            "meaning": "供应商对账单明细币种汇率id",
+            "reachable": true,
+            "name": "供应商对账单明细币种汇率id"
+        },
+        "suppStatementDetSuppStatementExtension": {
+            "meaning": "供应商对账单明细扩展数据",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数据"
+        },
+        "suppStatementDetSuppStatementExternalState": {
+            "meaning": "供应商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "供应商对账单明细上流程状态位"
+        },
+        "suppStatementDetSuppStatementFilterClazz": {
+            "meaning": "供应商对账单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "供应商对账单明细冗余字段用于筛选"
+        },
+        "suppStatementDetSuppStatementFlags": {
+            "meaning": "供应商对账单明细63位标志位",
+            "reachable": true,
+            "name": "供应商对账单明细63位标志位"
+        },
+        "suppStatementDetSuppStatementFromAuditDate": {
+            "meaning": "suppStatementDetSuppStatementFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromBeginTime": {
+            "meaning": "suppStatementDetSuppStatementFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromCreateTime": {
+            "meaning": "suppStatementDetSuppStatementFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDateExtra1": {
+            "meaning": "suppStatementDetSuppStatementFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDateExtra2": {
+            "meaning": "suppStatementDetSuppStatementFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDateExtra3": {
+            "meaning": "suppStatementDetSuppStatementFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDateExtra4": {
+            "meaning": "suppStatementDetSuppStatementFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDateExtra5": {
+            "meaning": "suppStatementDetSuppStatementFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromDeliveryDate": {
+            "meaning": "suppStatementDetSuppStatementFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromEndTime": {
+            "meaning": "suppStatementDetSuppStatementFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromReceiptDate": {
+            "meaning": "suppStatementDetSuppStatementFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFromUpdateTime": {
+            "meaning": "suppStatementDetSuppStatementFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementFscType": {
+            "meaning": "供应商对账单明细FSC声明",
+            "reachable": true,
+            "name": "供应商对账单明细FSC声明"
+        },
+        "suppStatementDetSuppStatementGenerativePeople": {
+            "meaning": "供应商对账单明细下发人",
+            "reachable": true,
+            "name": "供应商对账单明细下发人"
+        },
+        "suppStatementDetSuppStatementGenerativeState": {
+            "meaning": "供应商对账单明细下发状态",
+            "reachable": true,
+            "name": "供应商对账单明细下发状态"
+        },
+        "suppStatementDetSuppStatementGroovyScript": {
+            "meaning": "供应商对账单明细groovy脚本",
+            "reachable": true,
+            "name": "供应商对账单明细groovy脚本"
+        },
+        "suppStatementDetSuppStatementGropeCode": {
+            "meaning": "供应商对账单明细搜索码",
+            "reachable": true,
+            "name": "供应商对账单明细搜索码"
+        },
+        "suppStatementDetSuppStatementId": {
+            "meaning": "供应商对账单明细PK",
+            "reachable": true,
+            "name": "供应商对账单明细PK"
+        },
+        "suppStatementDetSuppStatementInUsed": {
+            "meaning": "供应商对账单明细是否被使用",
+            "reachable": true,
+            "name": "供应商对账单明细是否被使用"
+        },
+        "suppStatementDetSuppStatementInvTypeTaxRateId": {
+            "meaning": "供应商对账单明细发票税率id",
+            "reachable": true,
+            "name": "供应商对账单明细发票税率id"
+        },
+        "suppStatementDetSuppStatementIsBanned": {
+            "meaning": "供应商对账单明细是否被禁用",
+            "reachable": true,
+            "name": "供应商对账单明细是否被禁用"
+        },
+        "suppStatementDetSuppStatementIsDeleted": {
+            "meaning": "供应商对账单明细是否被删除",
+            "reachable": true,
+            "name": "供应商对账单明细是否被删除"
+        },
+        "suppStatementDetSuppStatementIsLeaf": {
+            "meaning": "供应商对账单明细是否叶子节点",
+            "reachable": true,
+            "name": "供应商对账单明细是否叶子节点"
+        },
+        "suppStatementDetSuppStatementIsMainFlow": {
+            "meaning": "供应商对账单明细是否是主流程",
+            "reachable": true,
+            "name": "供应商对账单明细是否是主流程"
+        },
+        "suppStatementDetSuppStatementIsManualModificationDate": {
+            "meaning": "供应商对账单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "供应商对账单明细是否手动修改计划生产时间"
+        },
+        "suppStatementDetSuppStatementIsolation": {
+            "meaning": "供应商对账单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点数据隔离标识"
+        },
+        "suppStatementDetSuppStatementJsScript": {
+            "meaning": "供应商对账单明细js脚本",
+            "reachable": true,
+            "name": "供应商对账单明细js脚本"
+        },
+        "suppStatementDetSuppStatementLocCompleteQuantity": {
+            "meaning": "供应商对账单明细本币完成数量",
+            "reachable": true,
+            "name": "供应商对账单明细本币完成数量"
+        },
+        "suppStatementDetSuppStatementLocTotalAmount": {
+            "meaning": "供应商对账单明细本币总金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币总金额"
+        },
+        "suppStatementDetSuppStatementLocTotalInvoicedAmount": {
+            "meaning": "供应商对账单明细本币总已开票金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币总已开票金额"
+        },
+        "suppStatementDetSuppStatementLocTotalOtherExpense": {
+            "meaning": "供应商对账单明细本币总其他费用",
+            "reachable": true,
+            "name": "供应商对账单明细本币总其他费用"
+        },
+        "suppStatementDetSuppStatementLocTotalSettleAmount": {
+            "meaning": "供应商对账单明细本币总结算金额（本币总金额+本币总其他费用）",
+            "reachable": true,
+            "name": "供应商对账单明细本币总结算金额"
+        },
+        "suppStatementDetSuppStatementLocTotalSettledAmount": {
+            "meaning": "供应商对账单明细本币总已结算金额",
+            "reachable": true,
+            "name": "供应商对账单明细本币总已结算金额"
+        },
+        "suppStatementDetSuppStatementMaterialId": {
+            "meaning": "供应商对账单明细物料id",
+            "reachable": true,
+            "name": "供应商对账单明细物料id"
+        },
+        "suppStatementDetSuppStatementName": {
+            "meaning": "供应商对账单明细智能节点名",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点名"
+        },
+        "suppStatementDetSuppStatementNameCodeSearch": {
+            "meaning": "供应商对账单明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "供应商对账单明细name、user"
+        },
+        "suppStatementDetSuppStatementNumberExtra1": {
+            "meaning": "供应商对账单明细扩展数量1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量1"
+        },
+        "suppStatementDetSuppStatementNumberExtra2": {
+            "meaning": "供应商对账单明细扩展数量2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量2"
+        },
+        "suppStatementDetSuppStatementNumberExtra3": {
+            "meaning": "供应商对账单明细扩展数量3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量3"
+        },
+        "suppStatementDetSuppStatementNumberExtra4": {
+            "meaning": "供应商对账单明细扩展数量4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量4"
+        },
+        "suppStatementDetSuppStatementNumberExtra5": {
+            "meaning": "供应商对账单明细扩展数量5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展数量5"
+        },
+        "suppStatementDetSuppStatementParentId": {
+            "meaning": "供应商对账单明细父节点ID",
+            "reachable": true,
+            "name": "供应商对账单明细父节点ID"
+        },
+        "suppStatementDetSuppStatementPlannedOutputQuantity": {
+            "meaning": "供应商对账单明细计划产出数量",
+            "reachable": true,
+            "name": "供应商对账单明细计划产出数量"
+        },
+        "suppStatementDetSuppStatementPlannedTimeRequired": {
+            "meaning": "供应商对账单明细计划需时(小时)",
+            "reachable": true,
+            "name": "供应商对账单明细计划需时"
+        },
+        "suppStatementDetSuppStatementPrintTimes": {
+            "meaning": "供应商对账单明细打印次数",
+            "reachable": true,
+            "name": "供应商对账单明细打印次数"
+        },
+        "suppStatementDetSuppStatementPriority": {
+            "meaning": "供应商对账单明细优先级",
+            "reachable": true,
+            "name": "供应商对账单明细优先级"
+        },
+        "suppStatementDetSuppStatementProcessInstanceId": {
+            "meaning": "供应商对账单明细流程实例ID",
+            "reachable": true,
+            "name": "供应商对账单明细流程实例ID"
+        },
+        "suppStatementDetSuppStatementProductionProcessesTypeId": {
+            "meaning": "供应商对账单明细工序类型ID",
+            "reachable": true,
+            "name": "供应商对账单明细工序类型ID"
+        },
+        "suppStatementDetSuppStatementProductionShiftId": {
+            "meaning": "供应商对账单明细生产班次ID",
+            "reachable": true,
+            "name": "供应商对账单明细生产班次ID"
+        },
+        "suppStatementDetSuppStatementQuantity": {
+            "meaning": "供应商对账单明细任务数量",
+            "reachable": true,
+            "name": "供应商对账单明细任务数量"
+        },
+        "suppStatementDetSuppStatementReceiptDate": {
+            "meaning": "供应商对账单明细单据日期",
+            "reachable": true,
+            "name": "供应商对账单明细单据日期"
+        },
+        "suppStatementDetSuppStatementReceiptType": {
+            "meaning": "供应商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "供应商对账单明细单据类型"
+        },
+        "suppStatementDetSuppStatementRelatedTasksId": {
+            "meaning": "供应商对账单明细关联任务id",
+            "reachable": true,
+            "name": "供应商对账单明细关联任务id"
+        },
+        "suppStatementDetSuppStatementSerialNumber": {
+            "meaning": "供应商对账单明细顺序号",
+            "reachable": true,
+            "name": "供应商对账单明细顺序号"
+        },
+        "suppStatementDetSuppStatementSource": {
+            "meaning": "供应商对账单明细源",
+            "reachable": true,
+            "name": "供应商对账单明细源"
+        },
+        "suppStatementDetSuppStatementSourceType": {
+            "meaning": "供应商对账单明细来源类型",
+            "reachable": true,
+            "name": "供应商对账单明细来源类型"
+        },
+        "suppStatementDetSuppStatementState": {
+            "meaning": "供应商对账单明细通用状态",
+            "reachable": true,
+            "name": "供应商对账单明细通用状态"
+        },
+        "suppStatementDetSuppStatementSupplierId": {
+            "meaning": "供应商对账单明细供应商_id",
+            "reachable": true,
+            "name": "供应商对账单明细供应商_id"
+        },
+        "suppStatementDetSuppStatementSystemCode": {
+            "meaning": "供应商对账单明细系统编码",
+            "reachable": true,
+            "name": "供应商对账单明细系统编码"
+        },
+        "suppStatementDetSuppStatementTarget": {
+            "meaning": "供应商对账单明细目标",
+            "reachable": true,
+            "name": "供应商对账单明细目标"
+        },
+        "suppStatementDetSuppStatementTaskNodeName": {
+            "meaning": "供应商对账单明细任务节点名称",
+            "reachable": true,
+            "name": "供应商对账单明细任务节点名称"
+        },
+        "suppStatementDetSuppStatementTenantId": {
+            "meaning": "供应商对账单明细租户_id",
+            "reachable": true,
+            "name": "供应商对账单明细租户_id"
+        },
+        "suppStatementDetSuppStatementThirdPartyClass": {
+            "meaning": "供应商对账单明细第三方分类",
+            "reachable": true,
+            "name": "供应商对账单明细第三方分类"
+        },
+        "suppStatementDetSuppStatementThirdPartyId": {
+            "meaning": "供应商对账单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "供应商对账单明细第三方系统中的唯一ID"
+        },
+        "suppStatementDetSuppStatementThirdPartyName": {
+            "meaning": "供应商对账单明细第三方名称",
+            "reachable": true,
+            "name": "供应商对账单明细第三方名称"
+        },
+        "suppStatementDetSuppStatementToAuditDate": {
+            "meaning": "suppStatementDetSuppStatementToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToBeginTime": {
+            "meaning": "suppStatementDetSuppStatementToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToCreateTime": {
+            "meaning": "suppStatementDetSuppStatementToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDateExtra1": {
+            "meaning": "suppStatementDetSuppStatementToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDateExtra2": {
+            "meaning": "suppStatementDetSuppStatementToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDateExtra3": {
+            "meaning": "suppStatementDetSuppStatementToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDateExtra4": {
+            "meaning": "suppStatementDetSuppStatementToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDateExtra5": {
+            "meaning": "suppStatementDetSuppStatementToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToDeliveryDate": {
+            "meaning": "suppStatementDetSuppStatementToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToEndTime": {
+            "meaning": "suppStatementDetSuppStatementToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToReceiptDate": {
+            "meaning": "suppStatementDetSuppStatementToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementToUpdateTime": {
+            "meaning": "suppStatementDetSuppStatementToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetSuppStatementTotalAmount": {
+            "meaning": "供应商对账单明细总金额",
+            "reachable": true,
+            "name": "供应商对账单明细总金额"
+        },
+        "suppStatementDetSuppStatementTotalInvoicedAmount": {
+            "meaning": "供应商对账单明细总已开票金额",
+            "reachable": true,
+            "name": "供应商对账单明细总已开票金额"
+        },
+        "suppStatementDetSuppStatementTotalOtherExpense": {
+            "meaning": "供应商对账单明细总其他费用",
+            "reachable": true,
+            "name": "供应商对账单明细总其他费用"
+        },
+        "suppStatementDetSuppStatementTotalSettleAmount": {
+            "meaning": "供应商对账单明细总结算金额（总金额+总其他费用）",
+            "reachable": true,
+            "name": "供应商对账单明细总结算金额"
+        },
+        "suppStatementDetSuppStatementTotalSettledAmount": {
+            "meaning": "供应商对账单明细总已结算金额",
+            "reachable": true,
+            "name": "供应商对账单明细总已结算金额"
+        },
+        "suppStatementDetSuppStatementUnitCode": {
+            "meaning": "供应商对账单明细单位id",
+            "reachable": true,
+            "name": "供应商对账单明细单位id"
+        },
+        "suppStatementDetSuppStatementUpdateTime": {
+            "meaning": "供应商对账单明细更新时间",
+            "reachable": true,
+            "name": "供应商对账单明细更新时间"
+        },
+        "suppStatementDetSuppStatementUpdater": {
+            "meaning": "供应商对账单明细更新人",
+            "reachable": true,
+            "name": "供应商对账单明细更新人"
+        },
+        "suppStatementDetSuppStatementUpdaterId": {
+            "meaning": "供应商对账单明细更新人ID",
+            "reachable": true,
+            "name": "供应商对账单明细更新人ID"
+        },
+        "suppStatementDetSuppStatementUserCode": {
+            "meaning": "供应商对账单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点的唯一编码"
+        },
+        "suppStatementDetSuppStatementVarExtra1": {
+            "meaning": "供应商对账单明细扩展1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展1"
+        },
+        "suppStatementDetSuppStatementVarExtra2": {
+            "meaning": "供应商对账单明细扩展2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展2"
+        },
+        "suppStatementDetSuppStatementVarExtra3": {
+            "meaning": "供应商对账单明细扩展3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展3"
+        },
+        "suppStatementDetSuppStatementVarExtra4": {
+            "meaning": "供应商对账单明细扩展4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展4"
+        },
+        "suppStatementDetSuppStatementVarExtra5": {
+            "meaning": "供应商对账单明细扩展5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展5"
+        },
+        "suppStatementDetSuppStatementVersion": {
+            "meaning": "供应商对账单明细版本号",
+            "reachable": true,
+            "name": "供应商对账单明细版本号"
+        },
+        "suppStatementDetSystemCode": {
+            "meaning": "供应商对账单明细系统编码",
+            "reachable": true,
+            "name": "供应商对账单明细系统编码"
+        },
+        "suppStatementDetTarget": {
+            "meaning": "供应商对账单明细目标",
+            "reachable": true,
+            "name": "供应商对账单明细目标"
+        },
+        "suppStatementDetTaskNodeName": {
+            "meaning": "供应商对账单明细任务节点名称",
+            "reachable": true,
+            "name": "供应商对账单明细任务节点名称"
+        },
+        "suppStatementDetTenantId": {
+            "meaning": "供应商对账单明细租户_id",
+            "reachable": true,
+            "name": "供应商对账单明细租户_id"
+        },
+        "suppStatementDetThirdPartyClass": {
+            "meaning": "供应商对账单明细第三方分类",
+            "reachable": true,
+            "name": "供应商对账单明细第三方分类"
+        },
+        "suppStatementDetThirdPartyId": {
+            "meaning": "供应商对账单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "供应商对账单明细第三方系统中的唯一ID"
+        },
+        "suppStatementDetThirdPartyName": {
+            "meaning": "供应商对账单明细第三方名称",
+            "reachable": true,
+            "name": "供应商对账单明细第三方名称"
+        },
+        "suppStatementDetToAuditDate": {
+            "meaning": "suppStatementDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToBeginTime": {
+            "meaning": "suppStatementDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToCreateTime": {
+            "meaning": "suppStatementDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDateExtra1": {
+            "meaning": "suppStatementDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDateExtra2": {
+            "meaning": "suppStatementDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDateExtra3": {
+            "meaning": "suppStatementDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDateExtra4": {
+            "meaning": "suppStatementDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDateExtra5": {
+            "meaning": "suppStatementDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToDeliveryDate": {
+            "meaning": "suppStatementDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToEndTime": {
+            "meaning": "suppStatementDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToReceiptDate": {
+            "meaning": "suppStatementDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetToUpdateTime": {
+            "meaning": "suppStatementDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "suppStatementDetUnitCode": {
+            "meaning": "供应商对账单明细单位id",
+            "reachable": true,
+            "name": "供应商对账单明细单位id"
+        },
+        "suppStatementDetUnitPrice": {
+            "meaning": "供应商对账单明细单价",
+            "reachable": true,
+            "name": "供应商对账单明细单价"
+        },
+        "suppStatementDetUpdateTime": {
+            "meaning": "供应商对账单明细更新时间",
+            "reachable": true,
+            "name": "供应商对账单明细更新时间"
+        },
+        "suppStatementDetUpdater": {
+            "meaning": "供应商对账单明细更新人",
+            "reachable": true,
+            "name": "供应商对账单明细更新人"
+        },
+        "suppStatementDetUpdaterId": {
+            "meaning": "供应商对账单明细更新人ID",
+            "reachable": true,
+            "name": "供应商对账单明细更新人ID"
+        },
+        "suppStatementDetUserCode": {
+            "meaning": "供应商对账单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "供应商对账单明细智能节点的唯一编码"
+        },
+        "suppStatementDetVarExtra1": {
+            "meaning": "供应商对账单明细扩展1",
+            "reachable": true,
+            "name": "供应商对账单明细扩展1"
+        },
+        "suppStatementDetVarExtra2": {
+            "meaning": "供应商对账单明细扩展2",
+            "reachable": true,
+            "name": "供应商对账单明细扩展2"
+        },
+        "suppStatementDetVarExtra3": {
+            "meaning": "供应商对账单明细扩展3",
+            "reachable": true,
+            "name": "供应商对账单明细扩展3"
+        },
+        "suppStatementDetVarExtra4": {
+            "meaning": "供应商对账单明细扩展4",
+            "reachable": true,
+            "name": "供应商对账单明细扩展4"
+        },
+        "suppStatementDetVarExtra5": {
+            "meaning": "供应商对账单明细扩展5",
+            "reachable": true,
+            "name": "供应商对账单明细扩展5"
+        },
+        "suppStatementDetVersion": {
+            "meaning": "供应商对账单明细版本号",
+            "reachable": true,
+            "name": "供应商对账单明细版本号"
+        },
+        "suppStatementDetWorkOrderId": {
+            "meaning": "供应商对账单明细工单_id",
+            "reachable": true,
+            "name": "供应商对账单明细工单_id"
+        }
+    }
+}

@@ -1,0 +1,1287 @@
+{
+    "api_name": "/inv-check-mat-det/findList",
+    "table_name": "物料盘点明细表",
+    "request": {
+        "invCheckMatDetInvCheckMatClazz": "INVENTORY_CHECK_MAT",
+        "invCheckMatDetClazz": "INVENTORY_CHECK_MAT_DET"
+    },
+    "mainTabClazz": "INVENTORY_CHECK_MAT_DET",
+    "response": {
+        "invCheckMatDetActualTimeRequired": {
+            "meaning": "物料盘点明细实际需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAdjustmentTimeRequired": {
+            "meaning": "物料盘点明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAmountExcTax": {
+            "meaning": "物料盘点明细盘点不含税金额（盘点数量*不含税单价）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAmountIncTax": {
+            "meaning": "物料盘点明细盘点含税金额（盘点数量*含税单价）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetApplicationId": {
+            "meaning": "物料盘点明细应用ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAuditDate": {
+            "meaning": "物料盘点明细审核时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAuditStatus": {
+            "meaning": "物料盘点明细审核状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetAvailableScheduleId": {
+            "meaning": "物料盘点明细可用日程id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetBeginTime": {
+            "meaning": "物料盘点明细开始时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetBizOrderId": {
+            "meaning": "物料盘点明细订单id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetBizVersion": {
+            "meaning": "物料盘点明细业务自定义版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetBriefName": {
+            "meaning": "物料盘点明细简称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetBusDivisId": {
+            "meaning": "物料盘点明细事业部id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetClazz": {
+            "meaning": "物料盘点明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetClosedReason": {
+            "meaning": "物料盘点明细结案原因",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetClosedStatus": {
+            "meaning": "物料盘点明细结案状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetComment": {
+            "meaning": "物料盘点明细评论",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetCompleteQuantity": {
+            "meaning": "物料盘点明细完成数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetCompleteStatus": {
+            "meaning": "物料盘点明细完成状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetCreateTime": {
+            "meaning": "物料盘点明细创建时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetCreator": {
+            "meaning": "物料盘点明细创建人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetCreatorId": {
+            "meaning": "物料盘点明细创建人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDateExtra1": {
+            "meaning": "物料盘点明细扩展时间1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDateExtra2": {
+            "meaning": "物料盘点明细扩展时间2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDateExtra3": {
+            "meaning": "物料盘点明细扩展时间3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDateExtra4": {
+            "meaning": "物料盘点明细扩展时间4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDateExtra5": {
+            "meaning": "物料盘点明细扩展时间5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDefaultType": {
+            "meaning": "物料盘点明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDeliveryDate": {
+            "meaning": "物料盘点明细交货日期",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetDescription": {
+            "meaning": "物料盘点明细描述",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetEndTime": {
+            "meaning": "物料盘点明细结束时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetEndTimeRequired": {
+            "meaning": "物料盘点明细最后需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetEngName": {
+            "meaning": "物料盘点明细英文名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetEquipmentId": {
+            "meaning": "物料盘点明细设备id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetExchangeRateId": {
+            "meaning": "物料盘点明细币种汇率id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetExtension": {
+            "meaning": "物料盘点明细扩展数据",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetExternalState": {
+            "meaning": "物料盘点明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetFilterClazz": {
+            "meaning": "物料盘点明细冗余字段用于筛选",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFlags": {
+            "meaning": "物料盘点明细63位标志位",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetFromAuditDate": {
+            "meaning": "invCheckMatDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromBeginTime": {
+            "meaning": "invCheckMatDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromCreateTime": {
+            "meaning": "invCheckMatDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDateExtra1": {
+            "meaning": "invCheckMatDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDateExtra2": {
+            "meaning": "invCheckMatDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDateExtra3": {
+            "meaning": "invCheckMatDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDateExtra4": {
+            "meaning": "invCheckMatDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDateExtra5": {
+            "meaning": "invCheckMatDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromDeliveryDate": {
+            "meaning": "invCheckMatDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromEndTime": {
+            "meaning": "invCheckMatDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromReceiptDate": {
+            "meaning": "invCheckMatDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFromUpdateTime": {
+            "meaning": "invCheckMatDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetFscType": {
+            "meaning": "物料盘点明细FSC声明",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetGenerativePeople": {
+            "meaning": "物料盘点明细下发人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetGenerativeState": {
+            "meaning": "物料盘点明细下发状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetGoodsId": {
+            "meaning": "物料盘点明细货（包）id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetGroovyScript": {
+            "meaning": "物料盘点明细groovy脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetGropeCode": {
+            "meaning": "物料盘点明细搜索码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetId": {
+            "meaning": "物料盘点明细主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInUsed": {
+            "meaning": "物料盘点明细是否被使用",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatActualTimeRequired": {
+            "meaning": "物料盘点明细实际需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatAdjustmentTimeRequired": {
+            "meaning": "物料盘点明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatApplicationId": {
+            "meaning": "物料盘点明细应用ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatAuditDate": {
+            "meaning": "物料盘点明细审核时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatAuditStatus": {
+            "meaning": "物料盘点明细审核状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatAvailableScheduleId": {
+            "meaning": "物料盘点明细可用日程id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatBeginTime": {
+            "meaning": "物料盘点明细开始时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatBizVersion": {
+            "meaning": "物料盘点明细业务自定义版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatBriefName": {
+            "meaning": "物料盘点明细简称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatBusDivisId": {
+            "meaning": "物料盘点明细事业部id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatClazz": {
+            "meaning": "物料盘点明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatClosedReason": {
+            "meaning": "物料盘点明细结案原因",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatClosedStatus": {
+            "meaning": "物料盘点明细结案状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatComment": {
+            "meaning": "物料盘点明细评论",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatCompleteQuantity": {
+            "meaning": "物料盘点明细完成数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatCompleteStatus": {
+            "meaning": "物料盘点明细完成状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatCreateTime": {
+            "meaning": "物料盘点明细创建时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatCreator": {
+            "meaning": "物料盘点明细创建人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatCreatorId": {
+            "meaning": "物料盘点明细创建人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDateExtra1": {
+            "meaning": "物料盘点明细扩展时间1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDateExtra2": {
+            "meaning": "物料盘点明细扩展时间2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDateExtra3": {
+            "meaning": "物料盘点明细扩展时间3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDateExtra4": {
+            "meaning": "物料盘点明细扩展时间4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDateExtra5": {
+            "meaning": "物料盘点明细扩展时间5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDefaultType": {
+            "meaning": "物料盘点明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDeliveryDate": {
+            "meaning": "物料盘点明细交货日期",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatDescription": {
+            "meaning": "物料盘点明细描述",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatEndTime": {
+            "meaning": "物料盘点明细结束时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatEndTimeRequired": {
+            "meaning": "物料盘点明细最后需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatEngName": {
+            "meaning": "物料盘点明细英文名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatEquipmentId": {
+            "meaning": "物料盘点明细设备id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatExchangeRateId": {
+            "meaning": "物料盘点明细币种汇率id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatExtension": {
+            "meaning": "物料盘点明细扩展数据",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatExternalState": {
+            "meaning": "物料盘点明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFilterClazz": {
+            "meaning": "物料盘点明细冗余字段用于筛选",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFlags": {
+            "meaning": "物料盘点明细63位标志位",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromAuditDate": {
+            "meaning": "invCheckMatDetInvCheckMatFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromBeginTime": {
+            "meaning": "invCheckMatDetInvCheckMatFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromCreateTime": {
+            "meaning": "invCheckMatDetInvCheckMatFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDateExtra1": {
+            "meaning": "invCheckMatDetInvCheckMatFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDateExtra2": {
+            "meaning": "invCheckMatDetInvCheckMatFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDateExtra3": {
+            "meaning": "invCheckMatDetInvCheckMatFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDateExtra4": {
+            "meaning": "invCheckMatDetInvCheckMatFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDateExtra5": {
+            "meaning": "invCheckMatDetInvCheckMatFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromDeliveryDate": {
+            "meaning": "invCheckMatDetInvCheckMatFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromEndTime": {
+            "meaning": "invCheckMatDetInvCheckMatFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromReceiptDate": {
+            "meaning": "invCheckMatDetInvCheckMatFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFromUpdateTime": {
+            "meaning": "invCheckMatDetInvCheckMatFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatFscType": {
+            "meaning": "物料盘点明细FSC声明",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatGenerativePeople": {
+            "meaning": "物料盘点明细下发人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatGenerativeState": {
+            "meaning": "物料盘点明细下发状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatGroovyScript": {
+            "meaning": "物料盘点明细groovy脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatGropeCode": {
+            "meaning": "物料盘点明细搜索码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatId": {
+            "meaning": "物料盘点明细pk",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatInUsed": {
+            "meaning": "物料盘点明细是否被使用",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatInvTypeTaxRateId": {
+            "meaning": "物料盘点明细发票税率id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsBanned": {
+            "meaning": "物料盘点明细是否被禁用",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsDeleted": {
+            "meaning": "物料盘点明细是否被删除",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsLeaf": {
+            "meaning": "物料盘点明细是否叶子节点",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsMainFlow": {
+            "meaning": "物料盘点明细是否是主流程",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsManualModificationDate": {
+            "meaning": "物料盘点明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatIsolation": {
+            "meaning": "物料盘点明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatJsScript": {
+            "meaning": "物料盘点明细js脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatMaterialId": {
+            "meaning": "物料盘点明细物料id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatName": {
+            "meaning": "物料盘点明细智能节点名",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNameCodeSearch": {
+            "meaning": "物料盘点明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNumberExtra1": {
+            "meaning": "物料盘点明细扩展数量1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNumberExtra2": {
+            "meaning": "物料盘点明细扩展数量2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNumberExtra3": {
+            "meaning": "物料盘点明细扩展数量3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNumberExtra4": {
+            "meaning": "物料盘点明细扩展数量4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatNumberExtra5": {
+            "meaning": "物料盘点明细扩展数量5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatParentId": {
+            "meaning": "物料盘点明细父节点ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatPlannedOutputQuantity": {
+            "meaning": "物料盘点明细计划产出数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatPlannedTimeRequired": {
+            "meaning": "物料盘点明细计划需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatPrintTimes": {
+            "meaning": "物料盘点明细打印次数",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatPriority": {
+            "meaning": "物料盘点明细优先级",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatProcessInstanceId": {
+            "meaning": "物料盘点明细流程实例ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatProductionProcessesTypeId": {
+            "meaning": "物料盘点明细工序类型ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatProductionShiftId": {
+            "meaning": "物料盘点明细生产班次ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatQuantity": {
+            "meaning": "物料盘点明细任务数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatReceiptDate": {
+            "meaning": "物料盘点明细单据日期",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatReceiptType": {
+            "meaning": "物料盘点明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatRelatedTasksId": {
+            "meaning": "物料盘点明细关联任务id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatSerialNumber": {
+            "meaning": "物料盘点明细顺序号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatSource": {
+            "meaning": "物料盘点明细源",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatSourceType": {
+            "meaning": "物料盘点明细来源类型",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatState": {
+            "meaning": "物料盘点明细通用状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatSystemCode": {
+            "meaning": "物料盘点明细系统编码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTarget": {
+            "meaning": "物料盘点明细目标",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTaskNodeName": {
+            "meaning": "物料盘点明细任务节点名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTaskNodeType": {
+            "meaning": "物料盘点明细任务节点类型",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTenantId": {
+            "meaning": "物料盘点明细租户id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatThirdPartyClass": {
+            "meaning": "物料盘点明细第三方分类",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatThirdPartyId": {
+            "meaning": "物料盘点明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatThirdPartyName": {
+            "meaning": "物料盘点明细第三方名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToAuditDate": {
+            "meaning": "invCheckMatDetInvCheckMatToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToBeginTime": {
+            "meaning": "invCheckMatDetInvCheckMatToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToCreateTime": {
+            "meaning": "invCheckMatDetInvCheckMatToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDateExtra1": {
+            "meaning": "invCheckMatDetInvCheckMatToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDateExtra2": {
+            "meaning": "invCheckMatDetInvCheckMatToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDateExtra3": {
+            "meaning": "invCheckMatDetInvCheckMatToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDateExtra4": {
+            "meaning": "invCheckMatDetInvCheckMatToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDateExtra5": {
+            "meaning": "invCheckMatDetInvCheckMatToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToDeliveryDate": {
+            "meaning": "invCheckMatDetInvCheckMatToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToEndTime": {
+            "meaning": "invCheckMatDetInvCheckMatToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToReceiptDate": {
+            "meaning": "invCheckMatDetInvCheckMatToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatToUpdateTime": {
+            "meaning": "invCheckMatDetInvCheckMatToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTotalAmountExcludingTax": {
+            "meaning": "物料盘点明细总盘点不含税金额",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatTotalAmountIncludingTax": {
+            "meaning": "物料盘点明细总盘点含税金额",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatUnitCode": {
+            "meaning": "物料盘点明细单位id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatUpdateTime": {
+            "meaning": "物料盘点明细更新时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatUpdater": {
+            "meaning": "物料盘点明细更新人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatUpdaterId": {
+            "meaning": "物料盘点明细更新人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatUserCode": {
+            "meaning": "物料盘点明细智能节点的唯一编码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVarExtra1": {
+            "meaning": "物料盘点明细扩展1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVarExtra2": {
+            "meaning": "物料盘点明细扩展2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVarExtra3": {
+            "meaning": "物料盘点明细扩展3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVarExtra4": {
+            "meaning": "物料盘点明细扩展4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVarExtra5": {
+            "meaning": "物料盘点明细扩展5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvCheckMatVersion": {
+            "meaning": "物料盘点明细版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInvTypeTaxRateId": {
+            "meaning": "物料盘点明细发票税率id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetInventoryQuantity": {
+            "meaning": "物料盘点明细库存数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsBanned": {
+            "meaning": "物料盘点明细是否被禁用",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsDeleted": {
+            "meaning": "物料盘点明细是否被删除",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsLeaf": {
+            "meaning": "物料盘点明细是否叶子节点",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsMainFlow": {
+            "meaning": "物料盘点明细是否是主流程",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsManualModificationDate": {
+            "meaning": "物料盘点明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetIsolation": {
+            "meaning": "物料盘点明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetJsScript": {
+            "meaning": "物料盘点明细js脚本",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetMatBatchId": {
+            "meaning": "物料盘点明细物料批次id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetMaterialId": {
+            "meaning": "物料盘点明细物料id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetName": {
+            "meaning": "物料盘点明细智能节点名",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNameCodeSearch": {
+            "meaning": "物料盘点明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNumberExtra1": {
+            "meaning": "物料盘点明细扩展数量1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNumberExtra2": {
+            "meaning": "物料盘点明细扩展数量2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNumberExtra3": {
+            "meaning": "物料盘点明细扩展数量3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNumberExtra4": {
+            "meaning": "物料盘点明细扩展数量4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetNumberExtra5": {
+            "meaning": "物料盘点明细扩展数量5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetParentId": {
+            "meaning": "物料盘点明细父节点ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetPlannedOutputQuantity": {
+            "meaning": "物料盘点明细计划产出数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetPlannedTimeRequired": {
+            "meaning": "物料盘点明细计划需时(小时)",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetPrintTimes": {
+            "meaning": "物料盘点明细打印次数",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetPriority": {
+            "meaning": "物料盘点明细优先级",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetProcessInstanceId": {
+            "meaning": "物料盘点明细流程实例ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetProductionProcessesTypeId": {
+            "meaning": "物料盘点明细工序类型ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetProductionShiftId": {
+            "meaning": "物料盘点明细生产班次ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetQuantity": {
+            "meaning": "物料盘点明细任务数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetQuantityShortage": {
+            "meaning": "物料盘点明细盘亏数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetQuantitySurplus": {
+            "meaning": "物料盘点明细盘盈数量",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetReceiptDate": {
+            "meaning": "物料盘点明细单据日期",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetReceiptType": {
+            "meaning": "物料盘点明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetRelatedTasksId": {
+            "meaning": "物料盘点明细关联任务id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSerialNumber": {
+            "meaning": "物料盘点明细顺序号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetShortageNumber": {
+            "meaning": "物料盘点明细盘亏调整单号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetShortageSituation": {
+            "meaning": "物料盘点明细盘亏情况（已开、未开）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSource": {
+            "meaning": "物料盘点明细源",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSourceType": {
+            "meaning": "物料盘点明细来源类型",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetState": {
+            "meaning": "物料盘点明细通用状态",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSurplusNumber": {
+            "meaning": "物料盘点明细盘盈调整单号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSurplusSituation": {
+            "meaning": "物料盘点明细盘盈情况（已开、未开）",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetSystemCode": {
+            "meaning": "物料盘点明细系统编码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetTarget": {
+            "meaning": "物料盘点明细目标",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetTaskNodeName": {
+            "meaning": "物料盘点明细任务节点名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetTaskNodeType": {
+            "meaning": "物料盘点明细任务节点类型",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetTenantId": {
+            "meaning": "物料盘点明细租户id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetThirdPartyClass": {
+            "meaning": "物料盘点明细第三方分类",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetThirdPartyId": {
+            "meaning": "物料盘点明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetThirdPartyName": {
+            "meaning": "物料盘点明细第三方名称",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetToAuditDate": {
+            "meaning": "invCheckMatDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToBeginTime": {
+            "meaning": "invCheckMatDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToCreateTime": {
+            "meaning": "invCheckMatDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDateExtra1": {
+            "meaning": "invCheckMatDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDateExtra2": {
+            "meaning": "invCheckMatDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDateExtra3": {
+            "meaning": "invCheckMatDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDateExtra4": {
+            "meaning": "invCheckMatDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDateExtra5": {
+            "meaning": "invCheckMatDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToDeliveryDate": {
+            "meaning": "invCheckMatDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToEndTime": {
+            "meaning": "invCheckMatDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToReceiptDate": {
+            "meaning": "invCheckMatDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetToUpdateTime": {
+            "meaning": "invCheckMatDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckMatDetUnitCode": {
+            "meaning": "物料盘点明细单位id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUnitPriceExcTax": {
+            "meaning": "物料盘点明细不含税单价",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUnitPriceIncTax": {
+            "meaning": "物料盘点明细含税单价",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUpdateTime": {
+            "meaning": "物料盘点明细更新时间",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUpdater": {
+            "meaning": "物料盘点明细更新人",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUpdaterId": {
+            "meaning": "物料盘点明细更新人ID",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetUserCode": {
+            "meaning": "物料盘点明细智能节点的唯一编码",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVarExtra1": {
+            "meaning": "物料盘点明细扩展1",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVarExtra2": {
+            "meaning": "物料盘点明细扩展2",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVarExtra3": {
+            "meaning": "物料盘点明细扩展3",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVarExtra4": {
+            "meaning": "物料盘点明细扩展4",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVarExtra5": {
+            "meaning": "物料盘点明细扩展5",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetVersion": {
+            "meaning": "物料盘点明细版本号",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetWarehousePosition": {
+            "meaning": "物料盘点明细仓位",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetWarehouseSpaceId": {
+            "meaning": "物料盘点明细仓空间id",
+            "reachable": true,
+            "name": ""
+        },
+        "invCheckMatDetWorkOrderId": {
+            "meaning": "物料盘点明细工单id",
+            "reachable": true,
+            "name": ""
+        }
+    }
+}

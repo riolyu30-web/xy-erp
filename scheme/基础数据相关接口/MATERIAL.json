@@ -1,0 +1,506 @@
+{
+    "api_name": "/material/findList",
+    "table_name": "物料表",
+    "request": {
+        "matClazz": "MATERIAL"
+    },
+    "mainTabClazz": "MATERIAL",
+    "response": {
+        "matApplicationId": {
+            "meaning": "物料表应用ID",
+            "reachable": true,
+            "name": "物料表应用ID"
+        },
+        "matAuditDate": {
+            "meaning": "物料表审核时间",
+            "reachable": true,
+            "name": "物料表审核时间"
+        },
+        "matAuditStatus": {
+            "meaning": "物料表审核状态",
+            "reachable": true,
+            "name": "物料表审核状态"
+        },
+        "matBizVersion": {
+            "meaning": "物料表业务自定义版本号",
+            "reachable": true,
+            "name": "物料表业务自定义版本号"
+        },
+        "matBriefName": {
+            "meaning": "物料表简称",
+            "reachable": true,
+            "name": "物料表简称"
+        },
+        "matBusDivId": {
+            "meaning": "matBusDivId",
+            "reachable": true,
+            "name": ""
+        },
+        "matBusDivisId": {
+            "meaning": "物料表事业部id",
+            "reachable": true,
+            "name": "物料表事业部id"
+        },
+        "matClazz": {
+            "meaning": "物料表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料表子类"
+        },
+        "matComment": {
+            "meaning": "物料表评论",
+            "reachable": true,
+            "name": "物料表评论"
+        },
+        "matCreateTime": {
+            "meaning": "物料表创建时间",
+            "reachable": true,
+            "name": "物料表创建时间"
+        },
+        "matCreator": {
+            "meaning": "物料表创建人",
+            "reachable": true,
+            "name": "物料表创建人"
+        },
+        "matCreatorId": {
+            "meaning": "物料表创建人ID",
+            "reachable": true,
+            "name": "物料表创建人ID"
+        },
+        "matDateExtra1": {
+            "meaning": "物料表扩展时间1",
+            "reachable": true,
+            "name": "物料表扩展时间1"
+        },
+        "matDateExtra2": {
+            "meaning": "物料表扩展时间2",
+            "reachable": true,
+            "name": "物料表扩展时间2"
+        },
+        "matDateExtra3": {
+            "meaning": "物料表扩展时间3",
+            "reachable": true,
+            "name": "物料表扩展时间3"
+        },
+        "matDateExtra4": {
+            "meaning": "物料表扩展时间4",
+            "reachable": true,
+            "name": "物料表扩展时间4"
+        },
+        "matDateExtra5": {
+            "meaning": "物料表扩展时间5",
+            "reachable": true,
+            "name": "物料表扩展时间5"
+        },
+        "matDeclType": {
+            "meaning": "matDeclType",
+            "reachable": true,
+            "name": ""
+        },
+        "matDefaultStatisticsSpecificationTypeId": {
+            "meaning": "matDefaultStatisticsSpecificationTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matDefaultType": {
+            "meaning": "物料表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料表智能节点主类型"
+        },
+        "matDescription": {
+            "meaning": "物料表描述",
+            "reachable": true,
+            "name": "物料表描述"
+        },
+        "matEngName": {
+            "meaning": "物料表英文名称",
+            "reachable": true,
+            "name": "物料表英文名称"
+        },
+        "matExtension": {
+            "meaning": "物料表扩展数据",
+            "reachable": true,
+            "name": "物料表扩展数据"
+        },
+        "matExternalState": {
+            "meaning": "物料表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料表上流程状态位"
+        },
+        "matFinClass": {
+            "meaning": "matFinClass",
+            "reachable": true,
+            "name": ""
+        },
+        "matFinGenLedClass": {
+            "meaning": "matFinGenLedClass",
+            "reachable": true,
+            "name": ""
+        },
+        "matFinGenLedCode": {
+            "meaning": "matFinGenLedCode",
+            "reachable": true,
+            "name": ""
+        },
+        "matFinancialAccount": {
+            "meaning": "matFinancialAccount",
+            "reachable": true,
+            "name": ""
+        },
+        "matFlags": {
+            "meaning": "物料表63位标志位",
+            "reachable": true,
+            "name": "物料表63位标志位"
+        },
+        "matFromAuditDate": {
+            "meaning": "matFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromCreateTime": {
+            "meaning": "matFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromDateExtra1": {
+            "meaning": "matFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromDateExtra2": {
+            "meaning": "matFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromDateExtra3": {
+            "meaning": "matFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromDateExtra4": {
+            "meaning": "matFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromDateExtra5": {
+            "meaning": "matFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matFromUpdateTime": {
+            "meaning": "matFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matFscDeclarationId": {
+            "meaning": "matFscDeclarationId",
+            "reachable": true,
+            "name": ""
+        },
+        "matFscId": {
+            "meaning": "matFscId",
+            "reachable": true,
+            "name": ""
+        },
+        "matGroovyScript": {
+            "meaning": "物料表groovy脚本",
+            "reachable": true,
+            "name": "物料表groovy脚本"
+        },
+        "matGropeCode": {
+            "meaning": "物料表搜索码",
+            "reachable": true,
+            "name": "物料表搜索码"
+        },
+        "matId": {
+            "meaning": "物料表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料表主键ID"
+        },
+        "matInUsed": {
+            "meaning": "物料表是否被使用",
+            "reachable": true,
+            "name": "物料表是否被使用"
+        },
+        "matInactiveCallDays": {
+            "meaning": "matInactiveCallDays",
+            "reachable": true,
+            "name": ""
+        },
+        "matInactiveDays": {
+            "meaning": "matInactiveDays",
+            "reachable": true,
+            "name": ""
+        },
+        "matIsBanned": {
+            "meaning": "物料表是否被禁用",
+            "reachable": true,
+            "name": "物料表是否被禁用"
+        },
+        "matIsDeleted": {
+            "meaning": "物料表是否被删除",
+            "reachable": true,
+            "name": "物料表是否被删除"
+        },
+        "matIsMainFlow": {
+            "meaning": "物料表是否是主流程",
+            "reachable": true,
+            "name": "物料表是否是主流程"
+        },
+        "matIsMatClassification": {
+            "meaning": "matIsMatClassification",
+            "reachable": true,
+            "name": ""
+        },
+        "matIsolation": {
+            "meaning": "物料表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料表智能节点数据隔离标识"
+        },
+        "matJsScript": {
+            "meaning": "物料表js脚本",
+            "reachable": true,
+            "name": "物料表js脚本"
+        },
+        "matMaxInventory": {
+            "meaning": "matMaxInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "matMinInventory": {
+            "meaning": "matMinInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "matName": {
+            "meaning": "物料表智能节点名",
+            "reachable": true,
+            "name": "物料表智能节点名"
+        },
+        "matNameCodeSearch": {
+            "meaning": "物料表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料表name、user_code模糊搜索"
+        },
+        "matNumberExtra1": {
+            "meaning": "物料表扩展数量1",
+            "reachable": true,
+            "name": "物料表扩展数量1"
+        },
+        "matNumberExtra2": {
+            "meaning": "物料表扩展数量2",
+            "reachable": true,
+            "name": "物料表扩展数量2"
+        },
+        "matNumberExtra3": {
+            "meaning": "物料表扩展数量3",
+            "reachable": true,
+            "name": "物料表扩展数量3"
+        },
+        "matNumberExtra4": {
+            "meaning": "物料表扩展数量4",
+            "reachable": true,
+            "name": "物料表扩展数量4"
+        },
+        "matNumberExtra5": {
+            "meaning": "物料表扩展数量5",
+            "reachable": true,
+            "name": "物料表扩展数量5"
+        },
+        "matOrigin": {
+            "meaning": "matOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "matOverPurchasePercent": {
+            "meaning": "matOverPurchasePercent",
+            "reachable": true,
+            "name": ""
+        },
+        "matParentId": {
+            "meaning": "物料表父节点ID",
+            "reachable": true,
+            "name": "物料表父节点ID"
+        },
+        "matPlaceOfOrigin": {
+            "meaning": "matPlaceOfOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "matProcessInstanceId": {
+            "meaning": "物料表流程实例ID",
+            "reachable": true,
+            "name": "物料表流程实例ID"
+        },
+        "matProductGroup": {
+            "meaning": "matProductGroup",
+            "reachable": true,
+            "name": ""
+        },
+        "matPurCycle": {
+            "meaning": "matPurCycle",
+            "reachable": true,
+            "name": ""
+        },
+        "matPurMatCont": {
+            "meaning": "matPurMatCont",
+            "reachable": true,
+            "name": ""
+        },
+        "matSearchCode": {
+            "meaning": "matSearchCode",
+            "reachable": true,
+            "name": ""
+        },
+        "matSerialNumber": {
+            "meaning": "物料表顺序号",
+            "reachable": true,
+            "name": "物料表顺序号"
+        },
+        "matShelfLife": {
+            "meaning": "matShelfLife",
+            "reachable": true,
+            "name": ""
+        },
+        "matStandardCostsIncludingTax": {
+            "meaning": "matStandardCostsIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matStandardCostsWithoutTax": {
+            "meaning": "matStandardCostsWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "matState": {
+            "meaning": "物料表通用状态",
+            "reachable": true,
+            "name": "物料表通用状态"
+        },
+        "matSystemCode": {
+            "meaning": "物料表系统编码",
+            "reachable": true,
+            "name": "物料表系统编码"
+        },
+        "matTaskNodeName": {
+            "meaning": "物料表任务节点名称",
+            "reachable": true,
+            "name": "物料表任务节点名称"
+        },
+        "matTenantId": {
+            "meaning": "matTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matThirdPartyClass": {
+            "meaning": "物料表第三方分类",
+            "reachable": true,
+            "name": "物料表第三方分类"
+        },
+        "matThirdPartyId": {
+            "meaning": "物料表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料表第三方系统中的唯一ID"
+        },
+        "matThirdPartyName": {
+            "meaning": "物料表第三方名称",
+            "reachable": true,
+            "name": "物料表第三方名称"
+        },
+        "matToAuditDate": {
+            "meaning": "matToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matToCreateTime": {
+            "meaning": "matToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matToDateExtra1": {
+            "meaning": "matToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matToDateExtra2": {
+            "meaning": "matToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matToDateExtra3": {
+            "meaning": "matToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matToDateExtra4": {
+            "meaning": "matToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matToDateExtra5": {
+            "meaning": "matToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matToUpdateTime": {
+            "meaning": "matToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matUpdateTime": {
+            "meaning": "物料表更新时间",
+            "reachable": true,
+            "name": "物料表更新时间"
+        },
+        "matUpdater": {
+            "meaning": "物料表更新人",
+            "reachable": true,
+            "name": "物料表更新人"
+        },
+        "matUpdaterId": {
+            "meaning": "物料表更新人ID",
+            "reachable": true,
+            "name": "物料表更新人ID"
+        },
+        "matUserCode": {
+            "meaning": "物料表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料表智能节点的唯一编码"
+        },
+        "matVarExtra1": {
+            "meaning": "物料表扩展1",
+            "reachable": true,
+            "name": "物料表扩展1"
+        },
+        "matVarExtra2": {
+            "meaning": "物料表扩展2",
+            "reachable": true,
+            "name": "物料表扩展2"
+        },
+        "matVarExtra3": {
+            "meaning": "物料表扩展3",
+            "reachable": true,
+            "name": "物料表扩展3"
+        },
+        "matVarExtra4": {
+            "meaning": "物料表扩展4",
+            "reachable": true,
+            "name": "物料表扩展4"
+        },
+        "matVarExtra5": {
+            "meaning": "物料表扩展5",
+            "reachable": true,
+            "name": "物料表扩展5"
+        },
+        "matVersion": {
+            "meaning": "物料表版本号",
+            "reachable": true,
+            "name": "物料表版本号"
+        },
+        "matWarehouseSpaceId": {
+            "meaning": "matWarehouseSpaceId",
+            "reachable": true,
+            "name": ""
+        }
+    }
+}

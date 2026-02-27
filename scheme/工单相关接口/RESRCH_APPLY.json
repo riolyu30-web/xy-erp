@@ -1,0 +1,641 @@
+{
+    "api_name": "/resrch-apply/findList",
+    "table_name": "研发申请表",
+    "request": {
+        "resrchApplyClazz": "RESRCH_APPLY"
+    },
+    "mainTabClazz": "RESRCH_APPLY",
+    "response": {
+        "resrchApplyActualTimeRequired": {
+            "meaning": "研发申请表实际需时(小时)",
+            "reachable": false,
+            "name": "研发申请表实际需时"
+        },
+        "resrchApplyAdjustmentTimeRequired": {
+            "meaning": "研发申请表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "研发申请表调整需时"
+        },
+        "resrchApplyApplicationId": {
+            "meaning": "研发申请表应用ID",
+            "reachable": false,
+            "name": "研发申请表应用ID"
+        },
+        "resrchApplyAuditDate": {
+            "meaning": "研发申请表审核时间",
+            "reachable": false,
+            "name": "研发申请表审核时间"
+        },
+        "resrchApplyAuditStatus": {
+            "meaning": "研发申请表审核状态",
+            "reachable": false,
+            "name": "研发申请表审核状态"
+        },
+        "resrchApplyAvailableScheduleId": {
+            "meaning": "研发申请表可用日程id",
+            "reachable": false,
+            "name": "研发申请表可用日程id"
+        },
+        "resrchApplyBeginTime": {
+            "meaning": "研发申请表开始时间",
+            "reachable": false,
+            "name": "研发申请表开始时间"
+        },
+        "resrchApplyBizVersion": {
+            "meaning": "研发申请表业务自定义版本号",
+            "reachable": false,
+            "name": "研发申请表业务自定义版本号"
+        },
+        "resrchApplyBriefName": {
+            "meaning": "研发申请表简称",
+            "reachable": false,
+            "name": "研发申请表简称"
+        },
+        "resrchApplyBusDivisId": {
+            "meaning": "研发申请表事业部id",
+            "reachable": false,
+            "name": "研发申请表事业部id"
+        },
+        "resrchApplyClazz": {
+            "meaning": "研发申请表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "研发申请表子类"
+        },
+        "resrchApplyClosedReason": {
+            "meaning": "研发申请表结案原因",
+            "reachable": false,
+            "name": "研发申请表结案原因"
+        },
+        "resrchApplyClosedStatus": {
+            "meaning": "研发申请表结案状态",
+            "reachable": false,
+            "name": "研发申请表结案状态"
+        },
+        "resrchApplyComment": {
+            "meaning": "研发申请表评论",
+            "reachable": false,
+            "name": "研发申请表评论"
+        },
+        "resrchApplyCompleteQuantity": {
+            "meaning": "研发申请表完成数量",
+            "reachable": false,
+            "name": "研发申请表完成数量"
+        },
+        "resrchApplyCompleteStatus": {
+            "meaning": "研发申请表完成状态",
+            "reachable": false,
+            "name": "研发申请表完成状态"
+        },
+        "resrchApplyCreateTime": {
+            "meaning": "研发申请表创建时间",
+            "reachable": false,
+            "name": "研发申请表创建时间"
+        },
+        "resrchApplyCreator": {
+            "meaning": "研发申请表创建人",
+            "reachable": false,
+            "name": "研发申请表创建人"
+        },
+        "resrchApplyCreatorId": {
+            "meaning": "研发申请表创建人ID",
+            "reachable": false,
+            "name": "研发申请表创建人ID"
+        },
+        "resrchApplyDateExtra1": {
+            "meaning": "研发申请表扩展时间1",
+            "reachable": false,
+            "name": "研发申请表扩展时间1"
+        },
+        "resrchApplyDateExtra2": {
+            "meaning": "研发申请表扩展时间2",
+            "reachable": false,
+            "name": "研发申请表扩展时间2"
+        },
+        "resrchApplyDateExtra3": {
+            "meaning": "研发申请表扩展时间3",
+            "reachable": false,
+            "name": "研发申请表扩展时间3"
+        },
+        "resrchApplyDateExtra4": {
+            "meaning": "研发申请表扩展时间4",
+            "reachable": false,
+            "name": "研发申请表扩展时间4"
+        },
+        "resrchApplyDateExtra5": {
+            "meaning": "研发申请表扩展时间5",
+            "reachable": false,
+            "name": "研发申请表扩展时间5"
+        },
+        "resrchApplyDefaultType": {
+            "meaning": "研发申请表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "研发申请表智能节点主类型"
+        },
+        "resrchApplyDeliveryDate": {
+            "meaning": "研发申请表交货日期",
+            "reachable": false,
+            "name": "研发申请表交货日期"
+        },
+        "resrchApplyDescription": {
+            "meaning": "研发申请表描述",
+            "reachable": false,
+            "name": "研发申请表描述"
+        },
+        "resrchApplyEndTime": {
+            "meaning": "研发申请表结束时间",
+            "reachable": false,
+            "name": "研发申请表结束时间"
+        },
+        "resrchApplyEndTimeRequired": {
+            "meaning": "研发申请表最后需时(小时)",
+            "reachable": false,
+            "name": "研发申请表最后需时"
+        },
+        "resrchApplyEngName": {
+            "meaning": "研发申请表英文名称",
+            "reachable": false,
+            "name": "研发申请表英文名称"
+        },
+        "resrchApplyEquipmentId": {
+            "meaning": "研发申请表设备id",
+            "reachable": false,
+            "name": "研发申请表设备id"
+        },
+        "resrchApplyExchangeRateId": {
+            "meaning": "研发申请表币种汇率id",
+            "reachable": false,
+            "name": "研发申请表币种汇率id"
+        },
+        "resrchApplyExtension": {
+            "meaning": "研发申请表扩展数据",
+            "reachable": false,
+            "name": "研发申请表扩展数据"
+        },
+        "resrchApplyExternalState": {
+            "meaning": "研发申请表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "研发申请表上流程状态位"
+        },
+        "resrchApplyFilterClazz": {
+            "meaning": "研发申请表冗余字段用于筛选",
+            "reachable": false,
+            "name": "研发申请表冗余字段用于筛选"
+        },
+        "resrchApplyFlags": {
+            "meaning": "研发申请表63位标志位",
+            "reachable": false,
+            "name": "研发申请表63位标志位"
+        },
+        "resrchApplyFromAuditDate": {
+            "meaning": "resrchApplyFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromBeginTime": {
+            "meaning": "resrchApplyFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromCreateTime": {
+            "meaning": "resrchApplyFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDateExtra1": {
+            "meaning": "resrchApplyFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDateExtra2": {
+            "meaning": "resrchApplyFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDateExtra3": {
+            "meaning": "resrchApplyFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDateExtra4": {
+            "meaning": "resrchApplyFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDateExtra5": {
+            "meaning": "resrchApplyFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromDeliveryDate": {
+            "meaning": "resrchApplyFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromEndTime": {
+            "meaning": "resrchApplyFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromReceiptDate": {
+            "meaning": "resrchApplyFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFromUpdateTime": {
+            "meaning": "resrchApplyFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyFscType": {
+            "meaning": "研发申请表FSC声明",
+            "reachable": false,
+            "name": "研发申请表FSC声明"
+        },
+        "resrchApplyGenerativePeople": {
+            "meaning": "研发申请表下发人",
+            "reachable": false,
+            "name": "研发申请表下发人"
+        },
+        "resrchApplyGenerativeState": {
+            "meaning": "研发申请表下发状态",
+            "reachable": false,
+            "name": "研发申请表下发状态"
+        },
+        "resrchApplyGroovyScript": {
+            "meaning": "研发申请表groovy脚本",
+            "reachable": false,
+            "name": "研发申请表groovy脚本"
+        },
+        "resrchApplyGropeCode": {
+            "meaning": "研发申请表搜索码",
+            "reachable": false,
+            "name": "研发申请表搜索码"
+        },
+        "resrchApplyId": {
+            "meaning": "研发申请表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "研发申请表PK"
+        },
+        "resrchApplyInUsed": {
+            "meaning": "研发申请表是否被使用",
+            "reachable": false,
+            "name": "研发申请表是否被使用"
+        },
+        "resrchApplyInvTypeTaxRateId": {
+            "meaning": "研发申请表发票税率id",
+            "reachable": false,
+            "name": "研发申请表发票税率id"
+        },
+        "resrchApplyIsBanned": {
+            "meaning": "研发申请表是否被禁用",
+            "reachable": false,
+            "name": "研发申请表是否被禁用"
+        },
+        "resrchApplyIsDeleted": {
+            "meaning": "研发申请表是否被删除",
+            "reachable": false,
+            "name": "研发申请表是否被删除"
+        },
+        "resrchApplyIsLeaf": {
+            "meaning": "研发申请表是否叶子节点",
+            "reachable": false,
+            "name": "研发申请表是否叶子节点"
+        },
+        "resrchApplyIsMainFlow": {
+            "meaning": "研发申请表是否是主流程",
+            "reachable": false,
+            "name": "研发申请表是否是主流程"
+        },
+        "resrchApplyIsManualModificationDate": {
+            "meaning": "研发申请表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "研发申请表是否手动修改计划生产时间"
+        },
+        "resrchApplyIsPurchase": {
+            "meaning": "研发申请表是否采购",
+            "reachable": false,
+            "name": "研发申请表是否采购"
+        },
+        "resrchApplyIsResearchDevelopment": {
+            "meaning": "研发申请表是否研发",
+            "reachable": false,
+            "name": "研发申请表是否研发"
+        },
+        "resrchApplyIsolation": {
+            "meaning": "研发申请表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "研发申请表智能节点数据隔离标识"
+        },
+        "resrchApplyJsScript": {
+            "meaning": "研发申请表js脚本",
+            "reachable": false,
+            "name": "研发申请表js脚本"
+        },
+        "resrchApplyKeyParametersAndTechnicalIndicators": {
+            "meaning": "研发申请表产品关键参数与技术指标",
+            "reachable": false,
+            "name": "研发申请表产品关键参数与技术指标"
+        },
+        "resrchApplyMaterialId": {
+            "meaning": "研发申请表物料id",
+            "reachable": false,
+            "name": "研发申请表物料id"
+        },
+        "resrchApplyName": {
+            "meaning": "研发申请表智能节点名",
+            "reachable": false,
+            "name": "研发申请表智能节点名"
+        },
+        "resrchApplyNameCodeSearch": {
+            "meaning": "研发申请表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "研发申请表name、user_code模糊搜索"
+        },
+        "resrchApplyNumberExtra1": {
+            "meaning": "研发申请表扩展数量1",
+            "reachable": false,
+            "name": "研发申请表扩展数量1"
+        },
+        "resrchApplyNumberExtra2": {
+            "meaning": "研发申请表扩展数量2",
+            "reachable": false,
+            "name": "研发申请表扩展数量2"
+        },
+        "resrchApplyNumberExtra3": {
+            "meaning": "研发申请表扩展数量3",
+            "reachable": false,
+            "name": "研发申请表扩展数量3"
+        },
+        "resrchApplyNumberExtra4": {
+            "meaning": "研发申请表扩展数量4",
+            "reachable": false,
+            "name": "研发申请表扩展数量4"
+        },
+        "resrchApplyNumberExtra5": {
+            "meaning": "研发申请表扩展数量5",
+            "reachable": false,
+            "name": "研发申请表扩展数量5"
+        },
+        "resrchApplyParentId": {
+            "meaning": "研发申请表父节点ID",
+            "reachable": false,
+            "name": "研发申请表父节点ID"
+        },
+        "resrchApplyPlannedOutputQuantity": {
+            "meaning": "研发申请表计划产出数量",
+            "reachable": false,
+            "name": "研发申请表计划产出数量"
+        },
+        "resrchApplyPlannedTimeRequired": {
+            "meaning": "研发申请表计划需时(小时)",
+            "reachable": false,
+            "name": "研发申请表计划需时"
+        },
+        "resrchApplyPrintTimes": {
+            "meaning": "研发申请表打印次数",
+            "reachable": false,
+            "name": "研发申请表打印次数"
+        },
+        "resrchApplyPriority": {
+            "meaning": "研发申请表优先级",
+            "reachable": false,
+            "name": "研发申请表优先级"
+        },
+        "resrchApplyProcessInstanceId": {
+            "meaning": "研发申请表流程实例ID",
+            "reachable": false,
+            "name": "研发申请表流程实例ID"
+        },
+        "resrchApplyProductionProcessesTypeId": {
+            "meaning": "研发申请表工序类型ID",
+            "reachable": false,
+            "name": "研发申请表工序类型ID"
+        },
+        "resrchApplyProductionShiftId": {
+            "meaning": "研发申请表生产班次ID",
+            "reachable": false,
+            "name": "研发申请表生产班次ID"
+        },
+        "resrchApplyProjectCode": {
+            "meaning": "研发申请表项目编码",
+            "reachable": false,
+            "name": "研发申请表项目编码"
+        },
+        "resrchApplyProjectId": {
+            "meaning": "resrchApplyProjectId",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyProjectName": {
+            "meaning": "研发申请表项目id",
+            "reachable": false,
+            "name": "研发申请表项目id"
+        },
+        "resrchApplyQuantity": {
+            "meaning": "研发申请表任务数量",
+            "reachable": false,
+            "name": "研发申请表任务数量"
+        },
+        "resrchApplyReasons": {
+            "meaning": "研发申请表研发原因(字典加载)，用于统计",
+            "reachable": false,
+            "name": "研发申请表研发原因"
+        },
+        "resrchApplyReasonsDescription": {
+            "meaning": "研发申请表研发原因描述",
+            "reachable": false,
+            "name": "研发申请表研发原因描述"
+        },
+        "resrchApplyReceiptDate": {
+            "meaning": "研发申请表单据日期",
+            "reachable": false,
+            "name": "研发申请表单据日期"
+        },
+        "resrchApplyReceiptType": {
+            "meaning": "研发申请表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "研发申请表单据类型"
+        },
+        "resrchApplyRelatedTasksId": {
+            "meaning": "研发申请表关联任务id",
+            "reachable": false,
+            "name": "研发申请表关联任务id"
+        },
+        "resrchApplySerialNumber": {
+            "meaning": "研发申请表顺序号",
+            "reachable": false,
+            "name": "研发申请表顺序号"
+        },
+        "resrchApplySource": {
+            "meaning": "研发申请表源",
+            "reachable": false,
+            "name": "研发申请表源"
+        },
+        "resrchApplySourceType": {
+            "meaning": "研发申请表来源类型",
+            "reachable": false,
+            "name": "研发申请表来源类型"
+        },
+        "resrchApplyState": {
+            "meaning": "研发申请表通用状态",
+            "reachable": false,
+            "name": "研发申请表通用状态"
+        },
+        "resrchApplyStructureAndAppearanceRequirements": {
+            "meaning": "研发申请表产品结构与外观要求",
+            "reachable": false,
+            "name": "研发申请表产品结构与外观要求"
+        },
+        "resrchApplySystemCode": {
+            "meaning": "研发申请表系统编码",
+            "reachable": false,
+            "name": "研发申请表系统编码"
+        },
+        "resrchApplyTarget": {
+            "meaning": "研发申请表目标",
+            "reachable": false,
+            "name": "研发申请表目标"
+        },
+        "resrchApplyTaskNodeName": {
+            "meaning": "研发申请表任务节点名称",
+            "reachable": false,
+            "name": "研发申请表任务节点名称"
+        },
+        "resrchApplyTenantId": {
+            "meaning": "研发申请表租户_guid",
+            "reachable": false,
+            "name": "研发申请表租户_guid"
+        },
+        "resrchApplyThirdPartyClass": {
+            "meaning": "研发申请表第三方分类",
+            "reachable": false,
+            "name": "研发申请表第三方分类"
+        },
+        "resrchApplyThirdPartyId": {
+            "meaning": "研发申请表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "研发申请表第三方系统中的唯一ID"
+        },
+        "resrchApplyThirdPartyName": {
+            "meaning": "研发申请表第三方名称",
+            "reachable": false,
+            "name": "研发申请表第三方名称"
+        },
+        "resrchApplyToAuditDate": {
+            "meaning": "resrchApplyToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToBeginTime": {
+            "meaning": "resrchApplyToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToCreateTime": {
+            "meaning": "resrchApplyToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDateExtra1": {
+            "meaning": "resrchApplyToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDateExtra2": {
+            "meaning": "resrchApplyToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDateExtra3": {
+            "meaning": "resrchApplyToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDateExtra4": {
+            "meaning": "resrchApplyToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDateExtra5": {
+            "meaning": "resrchApplyToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToDeliveryDate": {
+            "meaning": "resrchApplyToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToEndTime": {
+            "meaning": "resrchApplyToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToReceiptDate": {
+            "meaning": "resrchApplyToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyToUpdateTime": {
+            "meaning": "resrchApplyToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "resrchApplyUnitCode": {
+            "meaning": "研发申请表单位id",
+            "reachable": false,
+            "name": "研发申请表单位id"
+        },
+        "resrchApplyUpdateTime": {
+            "meaning": "研发申请表更新时间",
+            "reachable": false,
+            "name": "研发申请表更新时间"
+        },
+        "resrchApplyUpdater": {
+            "meaning": "研发申请表更新人",
+            "reachable": false,
+            "name": "研发申请表更新人"
+        },
+        "resrchApplyUpdaterId": {
+            "meaning": "研发申请表更新人ID",
+            "reachable": false,
+            "name": "研发申请表更新人ID"
+        },
+        "resrchApplyUserCode": {
+            "meaning": "研发申请表智能节点的唯一编码",
+            "reachable": false,
+            "name": "研发申请表智能节点的唯一编码"
+        },
+        "resrchApplyVarExtra1": {
+            "meaning": "研发申请表扩展1",
+            "reachable": false,
+            "name": "研发申请表扩展1"
+        },
+        "resrchApplyVarExtra2": {
+            "meaning": "研发申请表扩展2",
+            "reachable": false,
+            "name": "研发申请表扩展2"
+        },
+        "resrchApplyVarExtra3": {
+            "meaning": "研发申请表扩展3",
+            "reachable": false,
+            "name": "研发申请表扩展3"
+        },
+        "resrchApplyVarExtra4": {
+            "meaning": "研发申请表扩展4",
+            "reachable": false,
+            "name": "研发申请表扩展4"
+        },
+        "resrchApplyVarExtra5": {
+            "meaning": "研发申请表扩展5",
+            "reachable": false,
+            "name": "研发申请表扩展5"
+        },
+        "resrchApplyVersion": {
+            "meaning": "研发申请表版本号",
+            "reachable": false,
+            "name": "研发申请表版本号"
+        }
+    }
+}

@@ -1,0 +1,1225 @@
+{
+    "api_name": "/fee-proc-det/findList",
+    "table_name": "加工商调费明细",
+    "request": {
+        "feeProcDetFeeProcClazz": "FEE_PROC",
+        "feeProcDetClazz": "FEE_PROC_DET"
+    },
+    "mainTabClazz": "FEE_PROC_DET",
+    "response": {
+        "feeProcDetActualTimeRequired": {
+            "meaning": "加工商调费明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细实际需时"
+        },
+        "feeProcDetAdjustmentTimeRequired": {
+            "meaning": "加工商调费明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商调费明细调整需时"
+        },
+        "feeProcDetAmount": {
+            "meaning": "加工商调费明细费用金额",
+            "reachable": false,
+            "name": "加工商调费明细费用金额"
+        },
+        "feeProcDetApplicationId": {
+            "meaning": "加工商调费明细应用ID",
+            "reachable": false,
+            "name": "加工商调费明细应用ID"
+        },
+        "feeProcDetAuditDate": {
+            "meaning": "加工商调费明细审核时间",
+            "reachable": false,
+            "name": "加工商调费明细审核时间"
+        },
+        "feeProcDetAuditStatus": {
+            "meaning": "加工商调费明细审核状态",
+            "reachable": false,
+            "name": "加工商调费明细审核状态"
+        },
+        "feeProcDetAvailableScheduleId": {
+            "meaning": "加工商调费明细可用日程id",
+            "reachable": false,
+            "name": "加工商调费明细可用日程id"
+        },
+        "feeProcDetBeginTime": {
+            "meaning": "加工商调费明细开始时间",
+            "reachable": false,
+            "name": "加工商调费明细开始时间"
+        },
+        "feeProcDetBizVersion": {
+            "meaning": "加工商调费明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商调费明细业务自定义版本号"
+        },
+        "feeProcDetBriefName": {
+            "meaning": "加工商调费明细简称",
+            "reachable": false,
+            "name": "加工商调费明细简称"
+        },
+        "feeProcDetBusDivisId": {
+            "meaning": "加工商调费明细事业部id",
+            "reachable": false,
+            "name": "加工商调费明细事业部id"
+        },
+        "feeProcDetClazz": {
+            "meaning": "加工商调费明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商调费明细子类"
+        },
+        "feeProcDetClosedReason": {
+            "meaning": "加工商调费明细结案原因",
+            "reachable": false,
+            "name": "加工商调费明细结案原因"
+        },
+        "feeProcDetClosedStatus": {
+            "meaning": "加工商调费明细结案状态",
+            "reachable": false,
+            "name": "加工商调费明细结案状态"
+        },
+        "feeProcDetComment": {
+            "meaning": "加工商调费明细评论",
+            "reachable": false,
+            "name": "加工商调费明细评论"
+        },
+        "feeProcDetCompleteQuantity": {
+            "meaning": "加工商调费明细完成数量",
+            "reachable": false,
+            "name": "加工商调费明细完成数量"
+        },
+        "feeProcDetCompleteStatus": {
+            "meaning": "加工商调费明细完成状态",
+            "reachable": false,
+            "name": "加工商调费明细完成状态"
+        },
+        "feeProcDetCreateTime": {
+            "meaning": "加工商调费明细创建时间",
+            "reachable": false,
+            "name": "加工商调费明细创建时间"
+        },
+        "feeProcDetCreator": {
+            "meaning": "加工商调费明细创建人",
+            "reachable": false,
+            "name": "加工商调费明细创建人"
+        },
+        "feeProcDetCreatorId": {
+            "meaning": "加工商调费明细创建人ID",
+            "reachable": false,
+            "name": "加工商调费明细创建人ID"
+        },
+        "feeProcDetDateExtra1": {
+            "meaning": "加工商调费明细扩展时间1",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间1"
+        },
+        "feeProcDetDateExtra2": {
+            "meaning": "加工商调费明细扩展时间2",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间2"
+        },
+        "feeProcDetDateExtra3": {
+            "meaning": "加工商调费明细扩展时间3",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间3"
+        },
+        "feeProcDetDateExtra4": {
+            "meaning": "加工商调费明细扩展时间4",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间4"
+        },
+        "feeProcDetDateExtra5": {
+            "meaning": "加工商调费明细扩展时间5",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间5"
+        },
+        "feeProcDetDefaultType": {
+            "meaning": "加工商调费明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商调费明细智能节点主类型"
+        },
+        "feeProcDetDeliveryDate": {
+            "meaning": "加工商调费明细交货日期",
+            "reachable": false,
+            "name": "加工商调费明细交货日期"
+        },
+        "feeProcDetDescription": {
+            "meaning": "加工商调费明细描述",
+            "reachable": false,
+            "name": "加工商调费明细描述"
+        },
+        "feeProcDetEndTime": {
+            "meaning": "加工商调费明细结束时间",
+            "reachable": false,
+            "name": "加工商调费明细结束时间"
+        },
+        "feeProcDetEndTimeRequired": {
+            "meaning": "加工商调费明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细最后需时"
+        },
+        "feeProcDetEngName": {
+            "meaning": "加工商调费明细英文名称",
+            "reachable": false,
+            "name": "加工商调费明细英文名称"
+        },
+        "feeProcDetEquipmentId": {
+            "meaning": "加工商调费明细设备id",
+            "reachable": false,
+            "name": "加工商调费明细设备id"
+        },
+        "feeProcDetExchangeRateId": {
+            "meaning": "加工商调费明细币种汇率id",
+            "reachable": false,
+            "name": "加工商调费明细币种汇率id"
+        },
+        "feeProcDetExtension": {
+            "meaning": "加工商调费明细扩展数据",
+            "reachable": false,
+            "name": "加工商调费明细扩展数据"
+        },
+        "feeProcDetExternalState": {
+            "meaning": "加工商调费明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商调费明细上流程状态位"
+        },
+        "feeProcDetFeeProcActualTimeRequired": {
+            "meaning": "加工商调费明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细实际需时"
+        },
+        "feeProcDetFeeProcAdjustmentTimeRequired": {
+            "meaning": "加工商调费明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商调费明细调整需时"
+        },
+        "feeProcDetFeeProcApplicationId": {
+            "meaning": "加工商调费明细应用ID",
+            "reachable": false,
+            "name": "加工商调费明细应用ID"
+        },
+        "feeProcDetFeeProcAuditDate": {
+            "meaning": "加工商调费明细审核时间",
+            "reachable": false,
+            "name": "加工商调费明细审核时间"
+        },
+        "feeProcDetFeeProcAuditStatus": {
+            "meaning": "加工商调费明细审核状态",
+            "reachable": false,
+            "name": "加工商调费明细审核状态"
+        },
+        "feeProcDetFeeProcAvailableScheduleId": {
+            "meaning": "加工商调费明细可用日程id",
+            "reachable": false,
+            "name": "加工商调费明细可用日程id"
+        },
+        "feeProcDetFeeProcBeginTime": {
+            "meaning": "加工商调费明细开始时间",
+            "reachable": false,
+            "name": "加工商调费明细开始时间"
+        },
+        "feeProcDetFeeProcBizVersion": {
+            "meaning": "加工商调费明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商调费明细业务自定义版本号"
+        },
+        "feeProcDetFeeProcBriefName": {
+            "meaning": "加工商调费明细简称",
+            "reachable": false,
+            "name": "加工商调费明细简称"
+        },
+        "feeProcDetFeeProcBusDivisId": {
+            "meaning": "加工商调费明细事业部id",
+            "reachable": false,
+            "name": "加工商调费明细事业部id"
+        },
+        "feeProcDetFeeProcChangeAmount": {
+            "meaning": "加工商调费明细调费金额",
+            "reachable": false,
+            "name": "加工商调费明细调费金额"
+        },
+        "feeProcDetFeeProcChangeDate": {
+            "type": "object",
+            "meaning": "加工商调费明细调费日期",
+            "reachable": false,
+            "name": "加工商调费明细调费日期"
+        },
+        "feeProcDetFeeProcClazz": {
+            "meaning": "加工商调费明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商调费明细子类"
+        },
+        "feeProcDetFeeProcClosedReason": {
+            "meaning": "加工商调费明细结案原因",
+            "reachable": false,
+            "name": "加工商调费明细结案原因"
+        },
+        "feeProcDetFeeProcClosedStatus": {
+            "meaning": "加工商调费明细结案状态",
+            "reachable": false,
+            "name": "加工商调费明细结案状态"
+        },
+        "feeProcDetFeeProcComment": {
+            "meaning": "加工商调费明细评论",
+            "reachable": false,
+            "name": "加工商调费明细评论"
+        },
+        "feeProcDetFeeProcCompleteQuantity": {
+            "meaning": "加工商调费明细完成数量",
+            "reachable": false,
+            "name": "加工商调费明细完成数量"
+        },
+        "feeProcDetFeeProcCompleteStatus": {
+            "meaning": "加工商调费明细完成状态",
+            "reachable": false,
+            "name": "加工商调费明细完成状态"
+        },
+        "feeProcDetFeeProcCreateTime": {
+            "meaning": "加工商调费明细创建时间",
+            "reachable": false,
+            "name": "加工商调费明细创建时间"
+        },
+        "feeProcDetFeeProcCreator": {
+            "meaning": "加工商调费明细创建人",
+            "reachable": false,
+            "name": "加工商调费明细创建人"
+        },
+        "feeProcDetFeeProcCreatorId": {
+            "meaning": "加工商调费明细创建人ID",
+            "reachable": false,
+            "name": "加工商调费明细创建人ID"
+        },
+        "feeProcDetFeeProcDateExtra1": {
+            "meaning": "加工商调费明细扩展时间1",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间1"
+        },
+        "feeProcDetFeeProcDateExtra2": {
+            "meaning": "加工商调费明细扩展时间2",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间2"
+        },
+        "feeProcDetFeeProcDateExtra3": {
+            "meaning": "加工商调费明细扩展时间3",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间3"
+        },
+        "feeProcDetFeeProcDateExtra4": {
+            "meaning": "加工商调费明细扩展时间4",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间4"
+        },
+        "feeProcDetFeeProcDateExtra5": {
+            "meaning": "加工商调费明细扩展时间5",
+            "reachable": false,
+            "name": "加工商调费明细扩展时间5"
+        },
+        "feeProcDetFeeProcDefaultType": {
+            "meaning": "加工商调费明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商调费明细智能节点主类型"
+        },
+        "feeProcDetFeeProcDeliveryDate": {
+            "meaning": "加工商调费明细交货日期",
+            "reachable": false,
+            "name": "加工商调费明细交货日期"
+        },
+        "feeProcDetFeeProcDescription": {
+            "meaning": "加工商调费明细描述",
+            "reachable": false,
+            "name": "加工商调费明细描述"
+        },
+        "feeProcDetFeeProcEndTime": {
+            "meaning": "加工商调费明细结束时间",
+            "reachable": false,
+            "name": "加工商调费明细结束时间"
+        },
+        "feeProcDetFeeProcEndTimeRequired": {
+            "meaning": "加工商调费明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细最后需时"
+        },
+        "feeProcDetFeeProcEngName": {
+            "meaning": "加工商调费明细英文名称",
+            "reachable": false,
+            "name": "加工商调费明细英文名称"
+        },
+        "feeProcDetFeeProcEquipmentId": {
+            "meaning": "加工商调费明细设备id",
+            "reachable": false,
+            "name": "加工商调费明细设备id"
+        },
+        "feeProcDetFeeProcExchangeRateId": {
+            "meaning": "加工商调费明细币种汇率id",
+            "reachable": false,
+            "name": "加工商调费明细币种汇率id"
+        },
+        "feeProcDetFeeProcExtension": {
+            "meaning": "加工商调费明细扩展数据",
+            "reachable": false,
+            "name": "加工商调费明细扩展数据"
+        },
+        "feeProcDetFeeProcExternalState": {
+            "meaning": "加工商调费明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商调费明细上流程状态位"
+        },
+        "feeProcDetFeeProcFilterClazz": {
+            "meaning": "加工商调费明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商调费明细冗余字段用于筛选"
+        },
+        "feeProcDetFeeProcFlags": {
+            "meaning": "加工商调费明细63位标志位",
+            "reachable": false,
+            "name": "加工商调费明细63位标志位"
+        },
+        "feeProcDetFeeProcFromAuditDate": {
+            "meaning": "feeProcDetFeeProcFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromBeginTime": {
+            "meaning": "feeProcDetFeeProcFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromChangeDate": {
+            "type": "object",
+            "meaning": "feeProcDetFeeProcFromChangeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromCreateTime": {
+            "meaning": "feeProcDetFeeProcFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDateExtra1": {
+            "meaning": "feeProcDetFeeProcFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDateExtra2": {
+            "meaning": "feeProcDetFeeProcFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDateExtra3": {
+            "meaning": "feeProcDetFeeProcFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDateExtra4": {
+            "meaning": "feeProcDetFeeProcFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDateExtra5": {
+            "meaning": "feeProcDetFeeProcFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromDeliveryDate": {
+            "meaning": "feeProcDetFeeProcFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromEndTime": {
+            "meaning": "feeProcDetFeeProcFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromReceiptDate": {
+            "meaning": "feeProcDetFeeProcFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFromUpdateTime": {
+            "meaning": "feeProcDetFeeProcFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcFscType": {
+            "meaning": "加工商调费明细FSC声明",
+            "reachable": false,
+            "name": "加工商调费明细FSC声明"
+        },
+        "feeProcDetFeeProcGenerativePeople": {
+            "meaning": "加工商调费明细下发人",
+            "reachable": false,
+            "name": "加工商调费明细下发人"
+        },
+        "feeProcDetFeeProcGenerativeState": {
+            "meaning": "加工商调费明细下发状态",
+            "reachable": false,
+            "name": "加工商调费明细下发状态"
+        },
+        "feeProcDetFeeProcGroovyScript": {
+            "meaning": "加工商调费明细groovy脚本",
+            "reachable": false,
+            "name": "加工商调费明细groovy脚本"
+        },
+        "feeProcDetFeeProcGropeCode": {
+            "meaning": "加工商调费明细搜索码",
+            "reachable": false,
+            "name": "加工商调费明细搜索码"
+        },
+        "feeProcDetFeeProcId": {
+            "meaning": "加工商调费明细pk",
+            "reachable": false,
+            "name": "加工商调费明细pk"
+        },
+        "feeProcDetFeeProcInUsed": {
+            "meaning": "加工商调费明细是否被使用",
+            "reachable": false,
+            "name": "加工商调费明细是否被使用"
+        },
+        "feeProcDetFeeProcInvTypeTaxRateId": {
+            "meaning": "加工商调费明细发票税率id",
+            "reachable": false,
+            "name": "加工商调费明细发票税率id"
+        },
+        "feeProcDetFeeProcIsBanned": {
+            "meaning": "加工商调费明细是否被禁用",
+            "reachable": false,
+            "name": "加工商调费明细是否被禁用"
+        },
+        "feeProcDetFeeProcIsDeleted": {
+            "meaning": "加工商调费明细是否被删除",
+            "reachable": false,
+            "name": "加工商调费明细是否被删除"
+        },
+        "feeProcDetFeeProcIsLeaf": {
+            "meaning": "加工商调费明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商调费明细是否叶子节点"
+        },
+        "feeProcDetFeeProcIsMainFlow": {
+            "meaning": "加工商调费明细是否是主流程",
+            "reachable": false,
+            "name": "加工商调费明细是否是主流程"
+        },
+        "feeProcDetFeeProcIsManualModificationDate": {
+            "meaning": "加工商调费明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商调费明细是否手动修改计划生产时间"
+        },
+        "feeProcDetFeeProcIsolation": {
+            "meaning": "加工商调费明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商调费明细智能节点数据隔离标识"
+        },
+        "feeProcDetFeeProcJsScript": {
+            "meaning": "加工商调费明细js脚本",
+            "reachable": false,
+            "name": "加工商调费明细js脚本"
+        },
+        "feeProcDetFeeProcMaterialId": {
+            "meaning": "加工商调费明细物料id",
+            "reachable": false,
+            "name": "加工商调费明细物料id"
+        },
+        "feeProcDetFeeProcName": {
+            "meaning": "加工商调费明细智能节点名",
+            "reachable": false,
+            "name": "加工商调费明细智能节点名"
+        },
+        "feeProcDetFeeProcNameCodeSearch": {
+            "meaning": "加工商调费明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商调费明细name、user"
+        },
+        "feeProcDetFeeProcNumberExtra1": {
+            "meaning": "加工商调费明细扩展数量1",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量1"
+        },
+        "feeProcDetFeeProcNumberExtra2": {
+            "meaning": "加工商调费明细扩展数量2",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量2"
+        },
+        "feeProcDetFeeProcNumberExtra3": {
+            "meaning": "加工商调费明细扩展数量3",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量3"
+        },
+        "feeProcDetFeeProcNumberExtra4": {
+            "meaning": "加工商调费明细扩展数量4",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量4"
+        },
+        "feeProcDetFeeProcNumberExtra5": {
+            "meaning": "加工商调费明细扩展数量5",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量5"
+        },
+        "feeProcDetFeeProcParentId": {
+            "meaning": "加工商调费明细父节点ID",
+            "reachable": false,
+            "name": "加工商调费明细父节点ID"
+        },
+        "feeProcDetFeeProcPlannedOutputQuantity": {
+            "meaning": "加工商调费明细计划产出数量",
+            "reachable": false,
+            "name": "加工商调费明细计划产出数量"
+        },
+        "feeProcDetFeeProcPlannedTimeRequired": {
+            "meaning": "加工商调费明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细计划需时"
+        },
+        "feeProcDetFeeProcPrintTimes": {
+            "meaning": "加工商调费明细打印次数",
+            "reachable": false,
+            "name": "加工商调费明细打印次数"
+        },
+        "feeProcDetFeeProcPriority": {
+            "meaning": "加工商调费明细优先级",
+            "reachable": false,
+            "name": "加工商调费明细优先级"
+        },
+        "feeProcDetFeeProcProcessInstanceId": {
+            "meaning": "加工商调费明细流程实例ID",
+            "reachable": false,
+            "name": "加工商调费明细流程实例ID"
+        },
+        "feeProcDetFeeProcProductionProcessesTypeId": {
+            "meaning": "加工商调费明细工序类型ID",
+            "reachable": false,
+            "name": "加工商调费明细工序类型ID"
+        },
+        "feeProcDetFeeProcProductionShiftId": {
+            "meaning": "加工商调费明细生产班次ID",
+            "reachable": false,
+            "name": "加工商调费明细生产班次ID"
+        },
+        "feeProcDetFeeProcQuantity": {
+            "meaning": "加工商调费明细任务数量",
+            "reachable": false,
+            "name": "加工商调费明细任务数量"
+        },
+        "feeProcDetFeeProcReceiptDate": {
+            "meaning": "加工商调费明细单据日期",
+            "reachable": false,
+            "name": "加工商调费明细单据日期"
+        },
+        "feeProcDetFeeProcReceiptType": {
+            "meaning": "加工商调费明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商调费明细单据类型"
+        },
+        "feeProcDetFeeProcRelatedTasksId": {
+            "meaning": "加工商调费明细关联任务id",
+            "reachable": false,
+            "name": "加工商调费明细关联任务id"
+        },
+        "feeProcDetFeeProcSerialNumber": {
+            "meaning": "加工商调费明细顺序号",
+            "reachable": false,
+            "name": "加工商调费明细顺序号"
+        },
+        "feeProcDetFeeProcSettStatus": {
+            "meaning": "加工商调费明细对账类型",
+            "reachable": false,
+            "name": "加工商调费明细对账类型"
+        },
+        "feeProcDetFeeProcSource": {
+            "meaning": "加工商调费明细源",
+            "reachable": false,
+            "name": "加工商调费明细源"
+        },
+        "feeProcDetFeeProcSourceType": {
+            "meaning": "加工商调费明细来源类型",
+            "reachable": false,
+            "name": "加工商调费明细来源类型"
+        },
+        "feeProcDetFeeProcState": {
+            "meaning": "加工商调费明细通用状态",
+            "reachable": false,
+            "name": "加工商调费明细通用状态"
+        },
+        "feeProcDetFeeProcSupplierId": {
+            "meaning": "加工商调费明细加工商_id",
+            "reachable": false,
+            "name": "加工商调费明细加工商_id"
+        },
+        "feeProcDetFeeProcSystemCode": {
+            "meaning": "加工商调费明细系统编码",
+            "reachable": false,
+            "name": "加工商调费明细系统编码"
+        },
+        "feeProcDetFeeProcTarget": {
+            "meaning": "加工商调费明细目标",
+            "reachable": false,
+            "name": "加工商调费明细目标"
+        },
+        "feeProcDetFeeProcTaskNodeName": {
+            "meaning": "加工商调费明细任务节点名称",
+            "reachable": false,
+            "name": "加工商调费明细任务节点名称"
+        },
+        "feeProcDetFeeProcTenantId": {
+            "meaning": "加工商调费明细租户_id",
+            "reachable": false,
+            "name": "加工商调费明细租户_id"
+        },
+        "feeProcDetFeeProcThirdPartyClass": {
+            "meaning": "加工商调费明细第三方分类",
+            "reachable": false,
+            "name": "加工商调费明细第三方分类"
+        },
+        "feeProcDetFeeProcThirdPartyId": {
+            "meaning": "加工商调费明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商调费明细第三方系统中的唯一ID"
+        },
+        "feeProcDetFeeProcThirdPartyName": {
+            "meaning": "加工商调费明细第三方名称",
+            "reachable": false,
+            "name": "加工商调费明细第三方名称"
+        },
+        "feeProcDetFeeProcToAuditDate": {
+            "meaning": "feeProcDetFeeProcToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToBeginTime": {
+            "meaning": "feeProcDetFeeProcToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToChangeDate": {
+            "type": "object",
+            "meaning": "feeProcDetFeeProcToChangeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToCreateTime": {
+            "meaning": "feeProcDetFeeProcToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDateExtra1": {
+            "meaning": "feeProcDetFeeProcToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDateExtra2": {
+            "meaning": "feeProcDetFeeProcToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDateExtra3": {
+            "meaning": "feeProcDetFeeProcToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDateExtra4": {
+            "meaning": "feeProcDetFeeProcToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDateExtra5": {
+            "meaning": "feeProcDetFeeProcToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToDeliveryDate": {
+            "meaning": "feeProcDetFeeProcToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToEndTime": {
+            "meaning": "feeProcDetFeeProcToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToReceiptDate": {
+            "meaning": "feeProcDetFeeProcToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcToUpdateTime": {
+            "meaning": "feeProcDetFeeProcToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFeeProcUnitCode": {
+            "meaning": "加工商调费明细单位id",
+            "reachable": false,
+            "name": "加工商调费明细单位id"
+        },
+        "feeProcDetFeeProcUpdateTime": {
+            "meaning": "加工商调费明细更新时间",
+            "reachable": false,
+            "name": "加工商调费明细更新时间"
+        },
+        "feeProcDetFeeProcUpdater": {
+            "meaning": "加工商调费明细更新人",
+            "reachable": false,
+            "name": "加工商调费明细更新人"
+        },
+        "feeProcDetFeeProcUpdaterId": {
+            "meaning": "加工商调费明细更新人ID",
+            "reachable": false,
+            "name": "加工商调费明细更新人ID"
+        },
+        "feeProcDetFeeProcUserCode": {
+            "meaning": "加工商调费明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商调费明细智能节点的唯一编码"
+        },
+        "feeProcDetFeeProcVarExtra1": {
+            "meaning": "加工商调费明细扩展1",
+            "reachable": false,
+            "name": "加工商调费明细扩展1"
+        },
+        "feeProcDetFeeProcVarExtra2": {
+            "meaning": "加工商调费明细扩展2",
+            "reachable": false,
+            "name": "加工商调费明细扩展2"
+        },
+        "feeProcDetFeeProcVarExtra3": {
+            "meaning": "加工商调费明细扩展3",
+            "reachable": false,
+            "name": "加工商调费明细扩展3"
+        },
+        "feeProcDetFeeProcVarExtra4": {
+            "meaning": "加工商调费明细扩展4",
+            "reachable": false,
+            "name": "加工商调费明细扩展4"
+        },
+        "feeProcDetFeeProcVarExtra5": {
+            "meaning": "加工商调费明细扩展5",
+            "reachable": false,
+            "name": "加工商调费明细扩展5"
+        },
+        "feeProcDetFeeProcVersion": {
+            "meaning": "加工商调费明细版本号",
+            "reachable": false,
+            "name": "加工商调费明细版本号"
+        },
+        "feeProcDetFilterClazz": {
+            "meaning": "加工商调费明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商调费明细冗余字段用于筛选"
+        },
+        "feeProcDetFlags": {
+            "meaning": "加工商调费明细63位标志位",
+            "reachable": false,
+            "name": "加工商调费明细63位标志位"
+        },
+        "feeProcDetFromAuditDate": {
+            "meaning": "feeProcDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromBeginTime": {
+            "meaning": "feeProcDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromCreateTime": {
+            "meaning": "feeProcDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDateExtra1": {
+            "meaning": "feeProcDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDateExtra2": {
+            "meaning": "feeProcDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDateExtra3": {
+            "meaning": "feeProcDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDateExtra4": {
+            "meaning": "feeProcDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDateExtra5": {
+            "meaning": "feeProcDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromDeliveryDate": {
+            "meaning": "feeProcDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromEndTime": {
+            "meaning": "feeProcDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromReceiptDate": {
+            "meaning": "feeProcDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFromUpdateTime": {
+            "meaning": "feeProcDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetFscType": {
+            "meaning": "加工商调费明细FSC声明",
+            "reachable": false,
+            "name": "加工商调费明细FSC声明"
+        },
+        "feeProcDetGenerativePeople": {
+            "meaning": "加工商调费明细下发人",
+            "reachable": false,
+            "name": "加工商调费明细下发人"
+        },
+        "feeProcDetGenerativeState": {
+            "meaning": "加工商调费明细下发状态",
+            "reachable": false,
+            "name": "加工商调费明细下发状态"
+        },
+        "feeProcDetGroovyScript": {
+            "meaning": "加工商调费明细groovy脚本",
+            "reachable": false,
+            "name": "加工商调费明细groovy脚本"
+        },
+        "feeProcDetGropeCode": {
+            "meaning": "加工商调费明细搜索码",
+            "reachable": false,
+            "name": "加工商调费明细搜索码"
+        },
+        "feeProcDetId": {
+            "meaning": "加工商调费明细pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "加工商调费明细pk"
+        },
+        "feeProcDetInUsed": {
+            "meaning": "加工商调费明细是否被使用",
+            "reachable": false,
+            "name": "加工商调费明细是否被使用"
+        },
+        "feeProcDetInvTypeTaxRateId": {
+            "meaning": "加工商调费明细发票税率id",
+            "reachable": false,
+            "name": "加工商调费明细发票税率id"
+        },
+        "feeProcDetIsBanned": {
+            "meaning": "加工商调费明细是否被禁用",
+            "reachable": false,
+            "name": "加工商调费明细是否被禁用"
+        },
+        "feeProcDetIsDeleted": {
+            "meaning": "加工商调费明细是否被删除",
+            "reachable": false,
+            "name": "加工商调费明细是否被删除"
+        },
+        "feeProcDetIsLeaf": {
+            "meaning": "加工商调费明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商调费明细是否叶子节点"
+        },
+        "feeProcDetIsMainFlow": {
+            "meaning": "加工商调费明细是否是主流程",
+            "reachable": false,
+            "name": "加工商调费明细是否是主流程"
+        },
+        "feeProcDetIsManualModificationDate": {
+            "meaning": "加工商调费明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商调费明细是否手动修改计划生产时间"
+        },
+        "feeProcDetIsolation": {
+            "meaning": "加工商调费明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商调费明细智能节点数据隔离标识"
+        },
+        "feeProcDetJsScript": {
+            "meaning": "加工商调费明细js脚本",
+            "reachable": false,
+            "name": "加工商调费明细js脚本"
+        },
+        "feeProcDetMaterialId": {
+            "meaning": "加工商调费明细物料id",
+            "reachable": false,
+            "name": "加工商调费明细物料id"
+        },
+        "feeProcDetName": {
+            "meaning": "加工商调费明细智能节点名",
+            "reachable": false,
+            "name": "加工商调费明细智能节点名"
+        },
+        "feeProcDetNameCodeSearch": {
+            "meaning": "加工商调费明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商调费明细name、user"
+        },
+        "feeProcDetNumberExtra1": {
+            "meaning": "加工商调费明细扩展数量1",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量1"
+        },
+        "feeProcDetNumberExtra2": {
+            "meaning": "加工商调费明细扩展数量2",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量2"
+        },
+        "feeProcDetNumberExtra3": {
+            "meaning": "加工商调费明细扩展数量3",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量3"
+        },
+        "feeProcDetNumberExtra4": {
+            "meaning": "加工商调费明细扩展数量4",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量4"
+        },
+        "feeProcDetNumberExtra5": {
+            "meaning": "加工商调费明细扩展数量5",
+            "reachable": false,
+            "name": "加工商调费明细扩展数量5"
+        },
+        "feeProcDetParentId": {
+            "meaning": "加工商调费明细父节点ID",
+            "reachable": false,
+            "name": "加工商调费明细父节点ID"
+        },
+        "feeProcDetPlannedOutputQuantity": {
+            "meaning": "加工商调费明细计划产出数量",
+            "reachable": false,
+            "name": "加工商调费明细计划产出数量"
+        },
+        "feeProcDetPlannedTimeRequired": {
+            "meaning": "加工商调费明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商调费明细计划需时"
+        },
+        "feeProcDetPrintTimes": {
+            "meaning": "加工商调费明细打印次数",
+            "reachable": false,
+            "name": "加工商调费明细打印次数"
+        },
+        "feeProcDetPriority": {
+            "meaning": "加工商调费明细优先级",
+            "reachable": false,
+            "name": "加工商调费明细优先级"
+        },
+        "feeProcDetProcessInstanceId": {
+            "meaning": "加工商调费明细流程实例ID",
+            "reachable": false,
+            "name": "加工商调费明细流程实例ID"
+        },
+        "feeProcDetProductionProcessesTypeId": {
+            "meaning": "加工商调费明细工序类型ID",
+            "reachable": false,
+            "name": "加工商调费明细工序类型ID"
+        },
+        "feeProcDetProductionShiftId": {
+            "meaning": "加工商调费明细生产班次ID",
+            "reachable": false,
+            "name": "加工商调费明细生产班次ID"
+        },
+        "feeProcDetQuantity": {
+            "meaning": "加工商调费明细任务数量",
+            "reachable": false,
+            "name": "加工商调费明细任务数量"
+        },
+        "feeProcDetReason": {
+            "meaning": "加工商调费明细调费原因",
+            "reachable": false,
+            "name": "加工商调费明细调费原因"
+        },
+        "feeProcDetReceiptDate": {
+            "meaning": "加工商调费明细单据日期",
+            "reachable": false,
+            "name": "加工商调费明细单据日期"
+        },
+        "feeProcDetReceiptType": {
+            "meaning": "加工商调费明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商调费明细单据类型"
+        },
+        "feeProcDetRelatedTasksId": {
+            "meaning": "加工商调费明细关联任务id",
+            "reachable": false,
+            "name": "加工商调费明细关联任务id"
+        },
+        "feeProcDetSerialNumber": {
+            "meaning": "加工商调费明细顺序号",
+            "reachable": false,
+            "name": "加工商调费明细顺序号"
+        },
+        "feeProcDetSource": {
+            "meaning": "加工商调费明细源",
+            "reachable": false,
+            "name": "加工商调费明细源"
+        },
+        "feeProcDetSourceType": {
+            "meaning": "加工商调费明细来源类型",
+            "reachable": false,
+            "name": "加工商调费明细来源类型"
+        },
+        "feeProcDetState": {
+            "meaning": "加工商调费明细通用状态",
+            "reachable": false,
+            "name": "加工商调费明细通用状态"
+        },
+        "feeProcDetSystemCode": {
+            "meaning": "加工商调费明细系统编码",
+            "reachable": false,
+            "name": "加工商调费明细系统编码"
+        },
+        "feeProcDetTarget": {
+            "meaning": "加工商调费明细目标",
+            "reachable": false,
+            "name": "加工商调费明细目标"
+        },
+        "feeProcDetTaskNodeName": {
+            "meaning": "加工商调费明细任务节点名称",
+            "reachable": false,
+            "name": "加工商调费明细任务节点名称"
+        },
+        "feeProcDetTenantId": {
+            "meaning": "加工商调费明细租户id",
+            "reachable": false,
+            "name": "加工商调费明细租户id"
+        },
+        "feeProcDetThirdPartyClass": {
+            "meaning": "加工商调费明细第三方分类",
+            "reachable": false,
+            "name": "加工商调费明细第三方分类"
+        },
+        "feeProcDetThirdPartyId": {
+            "meaning": "加工商调费明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商调费明细第三方系统中的唯一ID"
+        },
+        "feeProcDetThirdPartyName": {
+            "meaning": "加工商调费明细第三方名称",
+            "reachable": false,
+            "name": "加工商调费明细第三方名称"
+        },
+        "feeProcDetToAuditDate": {
+            "meaning": "feeProcDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToBeginTime": {
+            "meaning": "feeProcDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToCreateTime": {
+            "meaning": "feeProcDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDateExtra1": {
+            "meaning": "feeProcDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDateExtra2": {
+            "meaning": "feeProcDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDateExtra3": {
+            "meaning": "feeProcDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDateExtra4": {
+            "meaning": "feeProcDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDateExtra5": {
+            "meaning": "feeProcDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToDeliveryDate": {
+            "meaning": "feeProcDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToEndTime": {
+            "meaning": "feeProcDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToReceiptDate": {
+            "meaning": "feeProcDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetToUpdateTime": {
+            "meaning": "feeProcDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeProcDetUnitCode": {
+            "meaning": "加工商调费明细单位id",
+            "reachable": false,
+            "name": "加工商调费明细单位id"
+        },
+        "feeProcDetUpdateTime": {
+            "meaning": "加工商调费明细更新时间",
+            "reachable": false,
+            "name": "加工商调费明细更新时间"
+        },
+        "feeProcDetUpdater": {
+            "meaning": "加工商调费明细更新人",
+            "reachable": false,
+            "name": "加工商调费明细更新人"
+        },
+        "feeProcDetUpdaterId": {
+            "meaning": "加工商调费明细更新人ID",
+            "reachable": false,
+            "name": "加工商调费明细更新人ID"
+        },
+        "feeProcDetUserCode": {
+            "meaning": "加工商调费明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商调费明细智能节点的唯一编码"
+        },
+        "feeProcDetVarExtra1": {
+            "meaning": "加工商调费明细扩展1",
+            "reachable": false,
+            "name": "加工商调费明细扩展1"
+        },
+        "feeProcDetVarExtra2": {
+            "meaning": "加工商调费明细扩展2",
+            "reachable": false,
+            "name": "加工商调费明细扩展2"
+        },
+        "feeProcDetVarExtra3": {
+            "meaning": "加工商调费明细扩展3",
+            "reachable": false,
+            "name": "加工商调费明细扩展3"
+        },
+        "feeProcDetVarExtra4": {
+            "meaning": "加工商调费明细扩展4",
+            "reachable": false,
+            "name": "加工商调费明细扩展4"
+        },
+        "feeProcDetVarExtra5": {
+            "meaning": "加工商调费明细扩展5",
+            "reachable": false,
+            "name": "加工商调费明细扩展5"
+        },
+        "feeProcDetVersion": {
+            "meaning": "加工商调费明细版本号",
+            "reachable": false,
+            "name": "加工商调费明细版本号"
+        }
+    }
+}

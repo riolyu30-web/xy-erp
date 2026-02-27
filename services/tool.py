@@ -19,7 +19,30 @@ load_dotenv()  # 加载.env文件中的环境变量
 # 从环境变量获取配置
 BASE_URL = os.getenv("BASE_URL", "http://192.168.0.156:28002")  # 获取基础URL
 
-def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_fields:dict, meaning_dict: dict = None, debug_mode: bool = False, params: dict = None) -> dict:
+def get_data(url: str, data: dict, access_token: str, params: dict = None,host_name:str = BASE_URL,data_label:str = "data") -> dict:
+        url = f"{host_name}{url}?access_token={access_token}"
+        print(url)
+        # 发送POST请求
+        if params:
+            response = requests.post(url, params=params, json=data)
+        else:
+            response = requests.post(url, json=data)
+            
+        response.raise_for_status()  # 检查请求是否成功
+        
+        # 解析响应数据
+        result = response.json()
+        
+        # 检查响应中是否包含data字段
+        if data_label not in result:
+            return None
+        
+        # 提取数据列表
+        data_list = result[data_label]
+        return data_list
+
+
+def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_fields:dict, meaning_dict: dict = None, debug_mode: bool = False, params: dict = None,host_name:str = BASE_URL,data_label:str = "data") -> dict:
     """
     通用工具方法：发送API请求并过滤返回数据中的指定字段
     
@@ -36,27 +59,10 @@ def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_f
         dict: 包含过滤后数据的响应对象，数据格式为CSV字符串
     """
     try:
-        url = f"{BASE_URL}{url}?access_token={access_token}"
 
-        # 发送POST请求
-        if params:
-            response = requests.post(url, params=params, json=data)
-        else:
-            response = requests.post(url, json=data)
-            
-        response.raise_for_status()  # 检查请求是否成功
-        
-        # 解析响应数据
-        result = response.json()
-        
-        # 检查响应中是否包含data字段
-        if "data" not in result:
-            return {"error": "没有权限"}
-        
-        # 提取数据列表
-        data_list = result["data"]
-        
-        
+        data_list = get_data(url, data, access_token, params,host_name,data_label)
+        if not data_list:
+            return {"error": "没有数据"}
         #print(json.dumps(data_list[0], ensure_ascii=False))
         # 仅保留指定字段
         filtered_list = []
@@ -232,7 +238,7 @@ def clear_data(data_list, mapping):
     result = []
     for item in data_list:
         if not isinstance(item, dict):
-            result.append(item)
+            #result.append(item)
             continue
 
         new_item = {}

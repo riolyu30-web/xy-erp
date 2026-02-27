@@ -1,0 +1,606 @@
+{
+    "api_name": "/vch/findList",
+    "table_name": "凭证单主表",
+    "request": {
+        "vchClazz": "VCH"
+    },
+    "mainTabClazz": "VCH",
+    "response": {
+        "vchActualTimeRequired": {
+            "meaning": "凭证单主表实际需时(小时)",
+            "reachable": false,
+            "name": "凭证单主表实际需时"
+        },
+        "vchAdjustmentTimeRequired": {
+            "meaning": "凭证单主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "凭证单主表调整需时"
+        },
+        "vchApplicationId": {
+            "meaning": "凭证单主表应用ID",
+            "reachable": false,
+            "name": "凭证单主表应用ID"
+        },
+        "vchAuditDate": {
+            "meaning": "凭证单主表审核时间",
+            "reachable": false,
+            "name": "凭证单主表审核时间"
+        },
+        "vchAuditStatus": {
+            "meaning": "凭证单主表审核状态",
+            "reachable": false,
+            "name": "凭证单主表审核状态"
+        },
+        "vchAvailableScheduleId": {
+            "meaning": "凭证单主表可用日程id",
+            "reachable": false,
+            "name": "凭证单主表可用日程id"
+        },
+        "vchBeginTime": {
+            "meaning": "凭证单主表开始时间",
+            "reachable": false,
+            "name": "凭证单主表开始时间"
+        },
+        "vchBizVersion": {
+            "meaning": "凭证单主表业务自定义版本号",
+            "reachable": false,
+            "name": "凭证单主表业务自定义版本号"
+        },
+        "vchBriefName": {
+            "meaning": "凭证单主表简称",
+            "reachable": false,
+            "name": "凭证单主表简称"
+        },
+        "vchBusDivisId": {
+            "meaning": "凭证单主表事业部id",
+            "reachable": false,
+            "name": "凭证单主表事业部id"
+        },
+        "vchClazz": {
+            "meaning": "凭证单主表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "凭证单主表子类"
+        },
+        "vchClosedReason": {
+            "meaning": "凭证单主表结案原因",
+            "reachable": false,
+            "name": "凭证单主表结案原因"
+        },
+        "vchClosedStatus": {
+            "meaning": "凭证单主表结案状态",
+            "reachable": false,
+            "name": "凭证单主表结案状态"
+        },
+        "vchComment": {
+            "meaning": "凭证单主表评论",
+            "reachable": false,
+            "name": "凭证单主表评论"
+        },
+        "vchCompleteQuantity": {
+            "meaning": "凭证单主表完成数量",
+            "reachable": false,
+            "name": "凭证单主表完成数量"
+        },
+        "vchCompleteStatus": {
+            "meaning": "凭证单主表完成状态",
+            "reachable": false,
+            "name": "凭证单主表完成状态"
+        },
+        "vchCreateTime": {
+            "meaning": "凭证单主表创建时间",
+            "reachable": false,
+            "name": "凭证单主表创建时间"
+        },
+        "vchCreator": {
+            "meaning": "凭证单主表创建人",
+            "reachable": false,
+            "name": "凭证单主表创建人"
+        },
+        "vchCreatorId": {
+            "meaning": "凭证单主表创建人ID",
+            "reachable": false,
+            "name": "凭证单主表创建人ID"
+        },
+        "vchDateExtra1": {
+            "meaning": "凭证单主表扩展时间1",
+            "reachable": false,
+            "name": "凭证单主表扩展时间1"
+        },
+        "vchDateExtra2": {
+            "meaning": "凭证单主表扩展时间2",
+            "reachable": false,
+            "name": "凭证单主表扩展时间2"
+        },
+        "vchDateExtra3": {
+            "meaning": "凭证单主表扩展时间3",
+            "reachable": false,
+            "name": "凭证单主表扩展时间3"
+        },
+        "vchDateExtra4": {
+            "meaning": "凭证单主表扩展时间4",
+            "reachable": false,
+            "name": "凭证单主表扩展时间4"
+        },
+        "vchDateExtra5": {
+            "meaning": "凭证单主表扩展时间5",
+            "reachable": false,
+            "name": "凭证单主表扩展时间5"
+        },
+        "vchDefaultType": {
+            "meaning": "凭证单主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "凭证单主表智能节点主类型"
+        },
+        "vchDeliveryDate": {
+            "meaning": "凭证单主表交货日期",
+            "reachable": false,
+            "name": "凭证单主表交货日期"
+        },
+        "vchDescription": {
+            "meaning": "凭证单主表描述",
+            "reachable": false,
+            "name": "凭证单主表描述"
+        },
+        "vchEndTime": {
+            "meaning": "凭证单主表结束时间",
+            "reachable": false,
+            "name": "凭证单主表结束时间"
+        },
+        "vchEndTimeRequired": {
+            "meaning": "凭证单主表最后需时(小时)",
+            "reachable": false,
+            "name": "凭证单主表最后需时"
+        },
+        "vchEngName": {
+            "meaning": "凭证单主表英文名称",
+            "reachable": false,
+            "name": "凭证单主表英文名称"
+        },
+        "vchEquipmentId": {
+            "meaning": "凭证单主表设备id",
+            "reachable": false,
+            "name": "凭证单主表设备id"
+        },
+        "vchExchangeRateId": {
+            "meaning": "凭证单主表币种汇率id",
+            "reachable": false,
+            "name": "凭证单主表币种汇率id"
+        },
+        "vchExtension": {
+            "meaning": "凭证单主表扩展数据",
+            "reachable": false,
+            "name": "凭证单主表扩展数据"
+        },
+        "vchExternalState": {
+            "meaning": "凭证单主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "凭证单主表上流程状态位"
+        },
+        "vchFilterClazz": {
+            "meaning": "凭证单主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "凭证单主表冗余字段用于筛选"
+        },
+        "vchFlags": {
+            "meaning": "凭证单主表63位标志位",
+            "reachable": false,
+            "name": "凭证单主表63位标志位"
+        },
+        "vchFromAuditDate": {
+            "meaning": "vchFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromBeginTime": {
+            "meaning": "vchFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromCreateTime": {
+            "meaning": "vchFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDateExtra1": {
+            "meaning": "vchFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDateExtra2": {
+            "meaning": "vchFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDateExtra3": {
+            "meaning": "vchFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDateExtra4": {
+            "meaning": "vchFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDateExtra5": {
+            "meaning": "vchFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromDeliveryDate": {
+            "meaning": "vchFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromEndTime": {
+            "meaning": "vchFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromReceiptDate": {
+            "meaning": "vchFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFromUpdateTime": {
+            "meaning": "vchFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchFscType": {
+            "meaning": "凭证单主表FSC声明",
+            "reachable": false,
+            "name": "凭证单主表FSC声明"
+        },
+        "vchGenerativePeople": {
+            "meaning": "凭证单主表下发人",
+            "reachable": false,
+            "name": "凭证单主表下发人"
+        },
+        "vchGenerativeState": {
+            "meaning": "凭证单主表下发状态",
+            "reachable": false,
+            "name": "凭证单主表下发状态"
+        },
+        "vchGroovyScript": {
+            "meaning": "凭证单主表groovy脚本",
+            "reachable": false,
+            "name": "凭证单主表groovy脚本"
+        },
+        "vchGropeCode": {
+            "meaning": "凭证单主表搜索码",
+            "reachable": false,
+            "name": "凭证单主表搜索码"
+        },
+        "vchId": {
+            "meaning": "凭证单主表凭证单号",
+            "is_primary": true,
+            "reachable": false,
+            "name": "凭证单主表凭证单号"
+        },
+        "vchInUsed": {
+            "meaning": "凭证单主表是否被使用",
+            "reachable": false,
+            "name": "凭证单主表是否被使用"
+        },
+        "vchInvTypeTaxRateId": {
+            "meaning": "凭证单主表发票税率id",
+            "reachable": false,
+            "name": "凭证单主表发票税率id"
+        },
+        "vchIsBanned": {
+            "meaning": "凭证单主表是否被禁用",
+            "reachable": false,
+            "name": "凭证单主表是否被禁用"
+        },
+        "vchIsDeleted": {
+            "meaning": "凭证单主表是否被删除",
+            "reachable": false,
+            "name": "凭证单主表是否被删除"
+        },
+        "vchIsLeaf": {
+            "meaning": "凭证单主表是否叶子节点",
+            "reachable": false,
+            "name": "凭证单主表是否叶子节点"
+        },
+        "vchIsMainFlow": {
+            "meaning": "凭证单主表是否是主流程",
+            "reachable": false,
+            "name": "凭证单主表是否是主流程"
+        },
+        "vchIsManualModificationDate": {
+            "meaning": "凭证单主表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "凭证单主表是否手动修改计划生产时间"
+        },
+        "vchIsolation": {
+            "meaning": "凭证单主表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "凭证单主表智能节点数据隔离标识"
+        },
+        "vchJsScript": {
+            "meaning": "凭证单主表js脚本",
+            "reachable": false,
+            "name": "凭证单主表js脚本"
+        },
+        "vchMaterialId": {
+            "meaning": "凭证单主表物料id",
+            "reachable": false,
+            "name": "凭证单主表物料id"
+        },
+        "vchName": {
+            "meaning": "凭证单主表智能节点名",
+            "reachable": false,
+            "name": "凭证单主表智能节点名"
+        },
+        "vchNameCodeSearch": {
+            "meaning": "凭证单主表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "凭证单主表name、user_code模糊搜索"
+        },
+        "vchNumberExtra1": {
+            "meaning": "凭证单主表扩展数量1",
+            "reachable": false,
+            "name": "凭证单主表扩展数量1"
+        },
+        "vchNumberExtra2": {
+            "meaning": "凭证单主表扩展数量2",
+            "reachable": false,
+            "name": "凭证单主表扩展数量2"
+        },
+        "vchNumberExtra3": {
+            "meaning": "凭证单主表扩展数量3",
+            "reachable": false,
+            "name": "凭证单主表扩展数量3"
+        },
+        "vchNumberExtra4": {
+            "meaning": "凭证单主表扩展数量4",
+            "reachable": false,
+            "name": "凭证单主表扩展数量4"
+        },
+        "vchNumberExtra5": {
+            "meaning": "凭证单主表扩展数量5",
+            "reachable": false,
+            "name": "凭证单主表扩展数量5"
+        },
+        "vchParentId": {
+            "meaning": "凭证单主表父节点ID",
+            "reachable": false,
+            "name": "凭证单主表父节点ID"
+        },
+        "vchPlannedOutputQuantity": {
+            "meaning": "凭证单主表计划产出数量",
+            "reachable": false,
+            "name": "凭证单主表计划产出数量"
+        },
+        "vchPlannedTimeRequired": {
+            "meaning": "凭证单主表计划需时(小时)",
+            "reachable": false,
+            "name": "凭证单主表计划需时"
+        },
+        "vchPrintTimes": {
+            "meaning": "凭证单主表打印次数",
+            "reachable": false,
+            "name": "凭证单主表打印次数"
+        },
+        "vchPriority": {
+            "meaning": "凭证单主表优先级",
+            "reachable": false,
+            "name": "凭证单主表优先级"
+        },
+        "vchProcessInstanceId": {
+            "meaning": "凭证单主表流程实例ID",
+            "reachable": false,
+            "name": "凭证单主表流程实例ID"
+        },
+        "vchProductionProcessesTypeId": {
+            "meaning": "凭证单主表工序类型ID",
+            "reachable": false,
+            "name": "凭证单主表工序类型ID"
+        },
+        "vchProductionShiftId": {
+            "meaning": "凭证单主表生产班次ID",
+            "reachable": false,
+            "name": "凭证单主表生产班次ID"
+        },
+        "vchQuantity": {
+            "meaning": "凭证单主表任务数量",
+            "reachable": false,
+            "name": "凭证单主表任务数量"
+        },
+        "vchReceiptDate": {
+            "meaning": "凭证单主表单据日期",
+            "reachable": false,
+            "name": "凭证单主表单据日期"
+        },
+        "vchReceiptType": {
+            "meaning": "凭证单主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "凭证单主表单据类型"
+        },
+        "vchRelatedTasksId": {
+            "meaning": "凭证单主表关联任务id",
+            "reachable": false,
+            "name": "凭证单主表关联任务id"
+        },
+        "vchSerialNumber": {
+            "meaning": "凭证单主表顺序号",
+            "reachable": false,
+            "name": "凭证单主表顺序号"
+        },
+        "vchSource": {
+            "meaning": "凭证单主表源",
+            "reachable": false,
+            "name": "凭证单主表源"
+        },
+        "vchSourceType": {
+            "meaning": "凭证单主表来源类型",
+            "reachable": false,
+            "name": "凭证单主表来源类型"
+        },
+        "vchState": {
+            "meaning": "凭证单主表通用状态",
+            "reachable": false,
+            "name": "凭证单主表通用状态"
+        },
+        "vchSystemCode": {
+            "meaning": "凭证单主表系统编码",
+            "reachable": false,
+            "name": "凭证单主表系统编码"
+        },
+        "vchTarget": {
+            "meaning": "凭证单主表目标",
+            "reachable": false,
+            "name": "凭证单主表目标"
+        },
+        "vchTaskNodeName": {
+            "meaning": "凭证单主表任务节点名称",
+            "reachable": false,
+            "name": "凭证单主表任务节点名称"
+        },
+        "vchTenantId": {
+            "meaning": "凭证单主表租户ID",
+            "reachable": false,
+            "name": "凭证单主表租户ID"
+        },
+        "vchThirdPartyClass": {
+            "meaning": "凭证单主表第三方分类",
+            "reachable": false,
+            "name": "凭证单主表第三方分类"
+        },
+        "vchThirdPartyId": {
+            "meaning": "凭证单主表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "凭证单主表第三方系统中的唯一ID"
+        },
+        "vchThirdPartyName": {
+            "meaning": "凭证单主表第三方名称",
+            "reachable": false,
+            "name": "凭证单主表第三方名称"
+        },
+        "vchTmpId": {
+            "meaning": "凭证单主表凭证模板ID",
+            "reachable": false,
+            "name": "凭证单主表凭证模板ID"
+        },
+        "vchToAuditDate": {
+            "meaning": "vchToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToBeginTime": {
+            "meaning": "vchToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToCreateTime": {
+            "meaning": "vchToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDateExtra1": {
+            "meaning": "vchToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDateExtra2": {
+            "meaning": "vchToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDateExtra3": {
+            "meaning": "vchToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDateExtra4": {
+            "meaning": "vchToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDateExtra5": {
+            "meaning": "vchToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToDeliveryDate": {
+            "meaning": "vchToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToEndTime": {
+            "meaning": "vchToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToReceiptDate": {
+            "meaning": "vchToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchToUpdateTime": {
+            "meaning": "vchToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchUnitCode": {
+            "meaning": "凭证单主表单位id",
+            "reachable": false,
+            "name": "凭证单主表单位id"
+        },
+        "vchUpdateTime": {
+            "meaning": "凭证单主表更新时间",
+            "reachable": false,
+            "name": "凭证单主表更新时间"
+        },
+        "vchUpdater": {
+            "meaning": "凭证单主表更新人",
+            "reachable": false,
+            "name": "凭证单主表更新人"
+        },
+        "vchUpdaterId": {
+            "meaning": "凭证单主表更新人ID",
+            "reachable": false,
+            "name": "凭证单主表更新人ID"
+        },
+        "vchUserCode": {
+            "meaning": "凭证单主表智能节点的唯一编码",
+            "reachable": false,
+            "name": "凭证单主表智能节点的唯一编码"
+        },
+        "vchVarExtra1": {
+            "meaning": "凭证单主表扩展1",
+            "reachable": false,
+            "name": "凭证单主表扩展1"
+        },
+        "vchVarExtra2": {
+            "meaning": "凭证单主表扩展2",
+            "reachable": false,
+            "name": "凭证单主表扩展2"
+        },
+        "vchVarExtra3": {
+            "meaning": "凭证单主表扩展3",
+            "reachable": false,
+            "name": "凭证单主表扩展3"
+        },
+        "vchVarExtra4": {
+            "meaning": "凭证单主表扩展4",
+            "reachable": false,
+            "name": "凭证单主表扩展4"
+        },
+        "vchVarExtra5": {
+            "meaning": "凭证单主表扩展5",
+            "reachable": false,
+            "name": "凭证单主表扩展5"
+        },
+        "vchVchWordId": {
+            "meaning": "凭证单主表凭证字",
+            "reachable": false,
+            "name": "凭证单主表凭证字"
+        },
+        "vchVersion": {
+            "meaning": "凭证单主表版本号",
+            "reachable": false,
+            "name": "凭证单主表版本号"
+        }
+    }
+}

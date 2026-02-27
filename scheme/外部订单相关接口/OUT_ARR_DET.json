@@ -1,0 +1,1332 @@
+{
+    "api_name": "/out-arr-det/findList",
+    "table_name": "外发到货明细",
+    "request": {
+        "outArrDetOutArrClazz": "OUT_ARR",
+        "outArrDetClazz": "OUT_ARR_DET"
+    },
+    "mainTabClazz": "OUT_ARR_DET",
+    "response": {
+        "outArrDetActMaterialId": {
+            "meaning": "外发到货明细实际到货物料",
+            "reachable": true,
+            "name": "外发到货明细实际到货物料"
+        },
+        "outArrDetActQuantity": {
+            "meaning": "外发到货明细实际到货数量",
+            "reachable": true,
+            "name": "外发到货明细实际到货数量"
+        },
+        "outArrDetActualTimeRequired": {
+            "meaning": "外发到货明细实际需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细实际需时"
+        },
+        "outArrDetAdjustmentTimeRequired": {
+            "meaning": "外发到货明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "外发到货明细调整需时"
+        },
+        "outArrDetApplicationId": {
+            "meaning": "外发到货明细应用ID",
+            "reachable": true,
+            "name": "外发到货明细应用ID"
+        },
+        "outArrDetArrLossQuantity": {
+            "meaning": "外发到货明细到货损耗数量",
+            "reachable": true,
+            "name": "外发到货明细到货损耗数量"
+        },
+        "outArrDetAuditDate": {
+            "meaning": "外发到货明细审核时间",
+            "reachable": true,
+            "name": "外发到货明细审核时间"
+        },
+        "outArrDetAuditStatus": {
+            "meaning": "外发到货明细审核状态",
+            "reachable": true,
+            "name": "外发到货明细审核状态"
+        },
+        "outArrDetAvailableScheduleId": {
+            "meaning": "外发到货明细可用日程id",
+            "reachable": true,
+            "name": "外发到货明细可用日程id"
+        },
+        "outArrDetBeginTime": {
+            "meaning": "外发到货明细开始时间",
+            "reachable": true,
+            "name": "外发到货明细开始时间"
+        },
+        "outArrDetBizVersion": {
+            "meaning": "外发到货明细业务自定义版本号",
+            "reachable": true,
+            "name": "外发到货明细业务自定义版本号"
+        },
+        "outArrDetBriefName": {
+            "meaning": "外发到货明细简称",
+            "reachable": true,
+            "name": "外发到货明细简称"
+        },
+        "outArrDetBusDivisId": {
+            "meaning": "外发到货明细事业部id",
+            "reachable": true,
+            "name": "外发到货明细事业部id"
+        },
+        "outArrDetClazz": {
+            "meaning": "外发到货明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "外发到货明细子类"
+        },
+        "outArrDetClosedReason": {
+            "meaning": "外发到货明细结案原因",
+            "reachable": true,
+            "name": "外发到货明细结案原因"
+        },
+        "outArrDetClosedStatus": {
+            "meaning": "外发到货明细结案状态",
+            "reachable": true,
+            "name": "外发到货明细结案状态"
+        },
+        "outArrDetComment": {
+            "meaning": "外发到货明细评论",
+            "reachable": true,
+            "name": "外发到货明细评论"
+        },
+        "outArrDetCompleteQuantity": {
+            "meaning": "外发到货明细完成数量",
+            "reachable": true,
+            "name": "外发到货明细完成数量"
+        },
+        "outArrDetCompleteStatus": {
+            "meaning": "外发到货明细完成状态",
+            "reachable": true,
+            "name": "外发到货明细完成状态"
+        },
+        "outArrDetCostSchemeId": {
+            "meaning": "外发到货明细计费方案id",
+            "reachable": true,
+            "name": "外发到货明细计费方案id"
+        },
+        "outArrDetCreateTime": {
+            "meaning": "外发到货明细创建时间",
+            "reachable": true,
+            "name": "外发到货明细创建时间"
+        },
+        "outArrDetCreator": {
+            "meaning": "外发到货明细创建人",
+            "reachable": true,
+            "name": "外发到货明细创建人"
+        },
+        "outArrDetCreatorId": {
+            "meaning": "外发到货明细创建人ID",
+            "reachable": true,
+            "name": "外发到货明细创建人ID"
+        },
+        "outArrDetDateExtra1": {
+            "meaning": "外发到货明细扩展时间1",
+            "reachable": true,
+            "name": "外发到货明细扩展时间1"
+        },
+        "outArrDetDateExtra2": {
+            "meaning": "外发到货明细扩展时间2",
+            "reachable": true,
+            "name": "外发到货明细扩展时间2"
+        },
+        "outArrDetDateExtra3": {
+            "meaning": "外发到货明细扩展时间3",
+            "reachable": true,
+            "name": "外发到货明细扩展时间3"
+        },
+        "outArrDetDateExtra4": {
+            "meaning": "外发到货明细扩展时间4",
+            "reachable": true,
+            "name": "外发到货明细扩展时间4"
+        },
+        "outArrDetDateExtra5": {
+            "meaning": "外发到货明细扩展时间5",
+            "reachable": true,
+            "name": "外发到货明细扩展时间5"
+        },
+        "outArrDetDefaultType": {
+            "meaning": "外发到货明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "外发到货明细智能节点主类型"
+        },
+        "outArrDetDeliveryDate": {
+            "meaning": "外发到货明细交货日期",
+            "reachable": true,
+            "name": "外发到货明细交货日期"
+        },
+        "outArrDetDescription": {
+            "meaning": "外发到货明细描述",
+            "reachable": true,
+            "name": "外发到货明细描述"
+        },
+        "outArrDetEndTime": {
+            "meaning": "外发到货明细结束时间",
+            "reachable": true,
+            "name": "外发到货明细结束时间"
+        },
+        "outArrDetEndTimeRequired": {
+            "meaning": "外发到货明细最后需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细最后需时"
+        },
+        "outArrDetEngName": {
+            "meaning": "外发到货明细英文名称",
+            "reachable": true,
+            "name": "外发到货明细英文名称"
+        },
+        "outArrDetEquipmentId": {
+            "meaning": "外发到货明细设备id",
+            "reachable": true,
+            "name": "外发到货明细设备id"
+        },
+        "outArrDetExchangeRateId": {
+            "meaning": "外发到货明细币种汇率id",
+            "reachable": true,
+            "name": "外发到货明细币种汇率id"
+        },
+        "outArrDetExtension": {
+            "meaning": "外发到货明细扩展数据",
+            "reachable": true,
+            "name": "外发到货明细扩展数据"
+        },
+        "outArrDetExternalState": {
+            "meaning": "外发到货明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "外发到货明细上流程状态位"
+        },
+        "outArrDetFilterClazz": {
+            "meaning": "外发到货明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "外发到货明细冗余字段用于筛选"
+        },
+        "outArrDetFlags": {
+            "meaning": "外发到货明细63位标志位",
+            "reachable": true,
+            "name": "外发到货明细63位标志位"
+        },
+        "outArrDetFromAuditDate": {
+            "meaning": "outArrDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromBeginTime": {
+            "meaning": "outArrDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromCreateTime": {
+            "meaning": "outArrDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDateExtra1": {
+            "meaning": "outArrDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDateExtra2": {
+            "meaning": "outArrDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDateExtra3": {
+            "meaning": "outArrDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDateExtra4": {
+            "meaning": "outArrDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDateExtra5": {
+            "meaning": "outArrDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromDeliveryDate": {
+            "meaning": "outArrDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromEndTime": {
+            "meaning": "outArrDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromReceiptDate": {
+            "meaning": "outArrDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFromUpdateTime": {
+            "meaning": "outArrDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetFscType": {
+            "meaning": "外发到货明细FSC声明",
+            "reachable": true,
+            "name": "外发到货明细FSC声明"
+        },
+        "outArrDetGenerativePeople": {
+            "meaning": "外发到货明细下发人",
+            "reachable": true,
+            "name": "外发到货明细下发人"
+        },
+        "outArrDetGenerativeState": {
+            "meaning": "外发到货明细下发状态",
+            "reachable": true,
+            "name": "外发到货明细下发状态"
+        },
+        "outArrDetGroovyScript": {
+            "meaning": "外发到货明细groovy脚本",
+            "reachable": true,
+            "name": "外发到货明细groovy脚本"
+        },
+        "outArrDetGropeCode": {
+            "meaning": "外发到货明细搜索码",
+            "reachable": true,
+            "name": "外发到货明细搜索码"
+        },
+        "outArrDetHandlingMethod": {
+            "meaning": "外发到货明细处理方式(字典：1物料入库/2成品入库/3半成品入库等)",
+            "reachable": true,
+            "name": "外发到货明细处理方式"
+        },
+        "outArrDetId": {
+            "meaning": "外发到货明细PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "外发到货明细PK"
+        },
+        "outArrDetInUsed": {
+            "meaning": "外发到货明细是否被使用",
+            "reachable": true,
+            "name": "外发到货明细是否被使用"
+        },
+        "outArrDetInvTypeTaxRateId": {
+            "meaning": "外发到货明细发票税率id",
+            "reachable": true,
+            "name": "外发到货明细发票税率id"
+        },
+        "outArrDetIpqcQuantity": {
+            "meaning": "外发到货明细已开IPQC的数量",
+            "reachable": true,
+            "name": "外发到货明细已开IPQC的数量"
+        },
+        "outArrDetIpqcStatus": {
+            "meaning": "外发到货明细已开IPQC的状态",
+            "reachable": true,
+            "name": "外发到货明细已开IPQC的状态"
+        },
+        "outArrDetIsBanned": {
+            "meaning": "外发到货明细是否被禁用",
+            "reachable": true,
+            "name": "外发到货明细是否被禁用"
+        },
+        "outArrDetIsDeleted": {
+            "meaning": "外发到货明细是否被删除",
+            "reachable": true,
+            "name": "外发到货明细是否被删除"
+        },
+        "outArrDetIsLeaf": {
+            "meaning": "外发到货明细是否叶子节点",
+            "reachable": true,
+            "name": "外发到货明细是否叶子节点"
+        },
+        "outArrDetIsMainFlow": {
+            "meaning": "外发到货明细是否是主流程",
+            "reachable": true,
+            "name": "外发到货明细是否是主流程"
+        },
+        "outArrDetIsManualModificationDate": {
+            "meaning": "外发到货明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "外发到货明细是否手动修改计划生产时间"
+        },
+        "outArrDetIsolation": {
+            "meaning": "外发到货明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "外发到货明细智能节点数据隔离标识"
+        },
+        "outArrDetJsScript": {
+            "meaning": "外发到货明细js脚本",
+            "reachable": true,
+            "name": "外发到货明细js脚本"
+        },
+        "outArrDetLocalCurrencyTotalAmount": {
+            "meaning": "外发到货明细本币金额",
+            "reachable": true,
+            "name": "外发到货明细本币金额"
+        },
+        "outArrDetLocalCurrencyUnitPrice": {
+            "meaning": "外发到货明细本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "外发到货明细本币单价"
+        },
+        "outArrDetMatBatchId": {
+            "meaning": "外发到货明细物料批次id",
+            "reachable": true,
+            "name": "外发到货明细物料批次id"
+        },
+        "outArrDetMaterialId": {
+            "meaning": "外发到货明细物料id",
+            "reachable": true,
+            "name": "外发到货明细物料id"
+        },
+        "outArrDetName": {
+            "meaning": "外发到货明细智能节点名",
+            "reachable": true,
+            "name": "外发到货明细智能节点名"
+        },
+        "outArrDetNameCodeSearch": {
+            "meaning": "外发到货明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "外发到货明细name、user_code模糊搜索"
+        },
+        "outArrDetNumberExtra1": {
+            "meaning": "外发到货明细扩展数量1",
+            "reachable": true,
+            "name": "外发到货明细扩展数量1"
+        },
+        "outArrDetNumberExtra2": {
+            "meaning": "外发到货明细扩展数量2",
+            "reachable": true,
+            "name": "外发到货明细扩展数量2"
+        },
+        "outArrDetNumberExtra3": {
+            "meaning": "外发到货明细扩展数量3",
+            "reachable": true,
+            "name": "外发到货明细扩展数量3"
+        },
+        "outArrDetNumberExtra4": {
+            "meaning": "外发到货明细扩展数量4",
+            "reachable": true,
+            "name": "外发到货明细扩展数量4"
+        },
+        "outArrDetNumberExtra5": {
+            "meaning": "外发到货明细扩展数量5",
+            "reachable": true,
+            "name": "外发到货明细扩展数量5"
+        },
+        "outArrDetOutArrActualTimeRequired": {
+            "meaning": "外发到货明细实际需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细实际需时"
+        },
+        "outArrDetOutArrAdjustmentTimeRequired": {
+            "meaning": "外发到货明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "外发到货明细调整需时"
+        },
+        "outArrDetOutArrApplicationId": {
+            "meaning": "外发到货明细应用ID",
+            "reachable": true,
+            "name": "外发到货明细应用ID"
+        },
+        "outArrDetOutArrAuditDate": {
+            "meaning": "外发到货明细审核时间",
+            "reachable": true,
+            "name": "外发到货明细审核时间"
+        },
+        "outArrDetOutArrAuditStatus": {
+            "meaning": "外发到货明细审核状态",
+            "reachable": true,
+            "name": "外发到货明细审核状态"
+        },
+        "outArrDetOutArrAvailableScheduleId": {
+            "meaning": "外发到货明细可用日程id",
+            "reachable": true,
+            "name": "外发到货明细可用日程id"
+        },
+        "outArrDetOutArrBeginTime": {
+            "meaning": "外发到货明细开始时间",
+            "reachable": true,
+            "name": "外发到货明细开始时间"
+        },
+        "outArrDetOutArrBizVersion": {
+            "meaning": "外发到货明细业务自定义版本号",
+            "reachable": true,
+            "name": "外发到货明细业务自定义版本号"
+        },
+        "outArrDetOutArrBriefName": {
+            "meaning": "外发到货明细简称",
+            "reachable": true,
+            "name": "外发到货明细简称"
+        },
+        "outArrDetOutArrBusDivisId": {
+            "meaning": "外发到货明细事业部id",
+            "reachable": true,
+            "name": "外发到货明细事业部id"
+        },
+        "outArrDetOutArrClazz": {
+            "meaning": "外发到货明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "外发到货明细子类"
+        },
+        "outArrDetOutArrClosedReason": {
+            "meaning": "外发到货明细结案原因",
+            "reachable": true,
+            "name": "外发到货明细结案原因"
+        },
+        "outArrDetOutArrClosedStatus": {
+            "meaning": "外发到货明细结案状态",
+            "reachable": true,
+            "name": "外发到货明细结案状态"
+        },
+        "outArrDetOutArrComment": {
+            "meaning": "外发到货明细评论",
+            "reachable": true,
+            "name": "外发到货明细评论"
+        },
+        "outArrDetOutArrCompleteQuantity": {
+            "meaning": "外发到货明细完成数量",
+            "reachable": true,
+            "name": "外发到货明细完成数量"
+        },
+        "outArrDetOutArrCompleteStatus": {
+            "meaning": "外发到货明细完成状态",
+            "reachable": true,
+            "name": "外发到货明细完成状态"
+        },
+        "outArrDetOutArrCreateTime": {
+            "meaning": "外发到货明细创建时间",
+            "reachable": true,
+            "name": "外发到货明细创建时间"
+        },
+        "outArrDetOutArrCreator": {
+            "meaning": "外发到货明细创建人",
+            "reachable": true,
+            "name": "外发到货明细创建人"
+        },
+        "outArrDetOutArrCreatorId": {
+            "meaning": "外发到货明细创建人ID",
+            "reachable": true,
+            "name": "外发到货明细创建人ID"
+        },
+        "outArrDetOutArrCurrencyExchangeRateId": {
+            "meaning": "外发到货明细汇率id",
+            "reachable": true,
+            "name": "外发到货明细汇率id"
+        },
+        "outArrDetOutArrCurrencyId": {
+            "meaning": "外发到货明细币种id",
+            "reachable": true,
+            "name": "外发到货明细币种id"
+        },
+        "outArrDetOutArrDateExtra1": {
+            "meaning": "外发到货明细扩展时间1",
+            "reachable": true,
+            "name": "外发到货明细扩展时间1"
+        },
+        "outArrDetOutArrDateExtra2": {
+            "meaning": "外发到货明细扩展时间2",
+            "reachable": true,
+            "name": "外发到货明细扩展时间2"
+        },
+        "outArrDetOutArrDateExtra3": {
+            "meaning": "外发到货明细扩展时间3",
+            "reachable": true,
+            "name": "外发到货明细扩展时间3"
+        },
+        "outArrDetOutArrDateExtra4": {
+            "meaning": "外发到货明细扩展时间4",
+            "reachable": true,
+            "name": "外发到货明细扩展时间4"
+        },
+        "outArrDetOutArrDateExtra5": {
+            "meaning": "外发到货明细扩展时间5",
+            "reachable": true,
+            "name": "外发到货明细扩展时间5"
+        },
+        "outArrDetOutArrDecimalMethod": {
+            "meaning": "外发到货明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "外发到货明细保留小数位方法"
+        },
+        "outArrDetOutArrDefaultType": {
+            "meaning": "外发到货明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "外发到货明细智能节点主类型"
+        },
+        "outArrDetOutArrDeliveryDate": {
+            "meaning": "外发到货明细交货日期",
+            "reachable": true,
+            "name": "外发到货明细交货日期"
+        },
+        "outArrDetOutArrDescription": {
+            "meaning": "外发到货明细描述",
+            "reachable": true,
+            "name": "外发到货明细描述"
+        },
+        "outArrDetOutArrEndTime": {
+            "meaning": "外发到货明细结束时间",
+            "reachable": true,
+            "name": "外发到货明细结束时间"
+        },
+        "outArrDetOutArrEndTimeRequired": {
+            "meaning": "外发到货明细最后需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细最后需时"
+        },
+        "outArrDetOutArrEngName": {
+            "meaning": "外发到货明细英文名称",
+            "reachable": true,
+            "name": "外发到货明细英文名称"
+        },
+        "outArrDetOutArrEquipmentId": {
+            "meaning": "外发到货明细设备id",
+            "reachable": true,
+            "name": "外发到货明细设备id"
+        },
+        "outArrDetOutArrExchangeRateId": {
+            "meaning": "外发到货明细币种汇率id",
+            "reachable": true,
+            "name": "外发到货明细币种汇率id"
+        },
+        "outArrDetOutArrExtension": {
+            "meaning": "外发到货明细扩展数据",
+            "reachable": true,
+            "name": "外发到货明细扩展数据"
+        },
+        "outArrDetOutArrExternalState": {
+            "meaning": "外发到货明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "外发到货明细上流程状态位"
+        },
+        "outArrDetOutArrFilterClazz": {
+            "meaning": "外发到货明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "外发到货明细冗余字段用于筛选"
+        },
+        "outArrDetOutArrFlags": {
+            "meaning": "外发到货明细63位标志位",
+            "reachable": true,
+            "name": "外发到货明细63位标志位"
+        },
+        "outArrDetOutArrFromAuditDate": {
+            "meaning": "outArrDetOutArrFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromBeginTime": {
+            "meaning": "outArrDetOutArrFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromCreateTime": {
+            "meaning": "outArrDetOutArrFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDateExtra1": {
+            "meaning": "outArrDetOutArrFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDateExtra2": {
+            "meaning": "outArrDetOutArrFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDateExtra3": {
+            "meaning": "outArrDetOutArrFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDateExtra4": {
+            "meaning": "outArrDetOutArrFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDateExtra5": {
+            "meaning": "outArrDetOutArrFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromDeliveryDate": {
+            "meaning": "outArrDetOutArrFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromEndTime": {
+            "meaning": "outArrDetOutArrFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromReceiptDate": {
+            "meaning": "outArrDetOutArrFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFromUpdateTime": {
+            "meaning": "outArrDetOutArrFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrFscType": {
+            "meaning": "外发到货明细FSC声明",
+            "reachable": true,
+            "name": "外发到货明细FSC声明"
+        },
+        "outArrDetOutArrGenerativePeople": {
+            "meaning": "外发到货明细下发人",
+            "reachable": true,
+            "name": "外发到货明细下发人"
+        },
+        "outArrDetOutArrGenerativeState": {
+            "meaning": "外发到货明细下发状态",
+            "reachable": true,
+            "name": "外发到货明细下发状态"
+        },
+        "outArrDetOutArrGroovyScript": {
+            "meaning": "外发到货明细groovy脚本",
+            "reachable": true,
+            "name": "外发到货明细groovy脚本"
+        },
+        "outArrDetOutArrGropeCode": {
+            "meaning": "外发到货明细搜索码",
+            "reachable": true,
+            "name": "外发到货明细搜索码"
+        },
+        "outArrDetOutArrId": {
+            "meaning": "外发到货明细PK",
+            "reachable": true,
+            "name": "外发到货明细PK"
+        },
+        "outArrDetOutArrInUsed": {
+            "meaning": "外发到货明细是否被使用",
+            "reachable": true,
+            "name": "外发到货明细是否被使用"
+        },
+        "outArrDetOutArrInvTypeTaxRateId": {
+            "meaning": "外发到货明细发票税率id",
+            "reachable": true,
+            "name": "外发到货明细发票税率id"
+        },
+        "outArrDetOutArrInvoiceTypeTaxRateId": {
+            "meaning": "外发到货明细税率id",
+            "reachable": true,
+            "name": "外发到货明细税率id"
+        },
+        "outArrDetOutArrIsBanned": {
+            "meaning": "外发到货明细是否被禁用",
+            "reachable": true,
+            "name": "外发到货明细是否被禁用"
+        },
+        "outArrDetOutArrIsDeleted": {
+            "meaning": "外发到货明细是否被删除",
+            "reachable": true,
+            "name": "外发到货明细是否被删除"
+        },
+        "outArrDetOutArrIsLeaf": {
+            "meaning": "外发到货明细是否叶子节点",
+            "reachable": true,
+            "name": "外发到货明细是否叶子节点"
+        },
+        "outArrDetOutArrIsMainFlow": {
+            "meaning": "外发到货明细是否是主流程",
+            "reachable": true,
+            "name": "外发到货明细是否是主流程"
+        },
+        "outArrDetOutArrIsManualModificationDate": {
+            "meaning": "外发到货明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "外发到货明细是否手动修改计划生产时间"
+        },
+        "outArrDetOutArrIsolation": {
+            "meaning": "外发到货明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "外发到货明细智能节点数据隔离标识"
+        },
+        "outArrDetOutArrJsScript": {
+            "meaning": "外发到货明细js脚本",
+            "reachable": true,
+            "name": "外发到货明细js脚本"
+        },
+        "outArrDetOutArrMaterialId": {
+            "meaning": "外发到货明细物料id",
+            "reachable": true,
+            "name": "外发到货明细物料id"
+        },
+        "outArrDetOutArrName": {
+            "meaning": "外发到货明细智能节点名",
+            "reachable": true,
+            "name": "外发到货明细智能节点名"
+        },
+        "outArrDetOutArrNameCodeSearch": {
+            "meaning": "外发到货明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "外发到货明细name、user_code模糊搜索"
+        },
+        "outArrDetOutArrNumberExtra1": {
+            "meaning": "外发到货明细扩展数量1",
+            "reachable": true,
+            "name": "外发到货明细扩展数量1"
+        },
+        "outArrDetOutArrNumberExtra2": {
+            "meaning": "外发到货明细扩展数量2",
+            "reachable": true,
+            "name": "外发到货明细扩展数量2"
+        },
+        "outArrDetOutArrNumberExtra3": {
+            "meaning": "外发到货明细扩展数量3",
+            "reachable": true,
+            "name": "外发到货明细扩展数量3"
+        },
+        "outArrDetOutArrNumberExtra4": {
+            "meaning": "外发到货明细扩展数量4",
+            "reachable": true,
+            "name": "外发到货明细扩展数量4"
+        },
+        "outArrDetOutArrNumberExtra5": {
+            "meaning": "外发到货明细扩展数量5",
+            "reachable": true,
+            "name": "外发到货明细扩展数量5"
+        },
+        "outArrDetOutArrParentId": {
+            "meaning": "外发到货明细父节点ID",
+            "reachable": true,
+            "name": "外发到货明细父节点ID"
+        },
+        "outArrDetOutArrPlannedOutputQuantity": {
+            "meaning": "外发到货明细计划产出数量",
+            "reachable": true,
+            "name": "外发到货明细计划产出数量"
+        },
+        "outArrDetOutArrPlannedTimeRequired": {
+            "meaning": "外发到货明细计划需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细计划需时"
+        },
+        "outArrDetOutArrPrintTimes": {
+            "meaning": "外发到货明细打印次数",
+            "reachable": true,
+            "name": "外发到货明细打印次数"
+        },
+        "outArrDetOutArrPriority": {
+            "meaning": "外发到货明细优先级",
+            "reachable": true,
+            "name": "外发到货明细优先级"
+        },
+        "outArrDetOutArrProcessInstanceId": {
+            "meaning": "外发到货明细流程实例ID",
+            "reachable": true,
+            "name": "外发到货明细流程实例ID"
+        },
+        "outArrDetOutArrProductionProcessesTypeId": {
+            "meaning": "外发到货明细工序类型ID",
+            "reachable": true,
+            "name": "外发到货明细工序类型ID"
+        },
+        "outArrDetOutArrProductionShiftId": {
+            "meaning": "外发到货明细生产班次ID",
+            "reachable": true,
+            "name": "外发到货明细生产班次ID"
+        },
+        "outArrDetOutArrQuantity": {
+            "meaning": "外发到货明细任务数量",
+            "reachable": true,
+            "name": "外发到货明细任务数量"
+        },
+        "outArrDetOutArrReceiptDate": {
+            "meaning": "外发到货明细单据日期",
+            "reachable": true,
+            "name": "外发到货明细单据日期"
+        },
+        "outArrDetOutArrReceiptSupplierId": {
+            "meaning": "外发到货明细收货供应商id",
+            "reachable": true,
+            "name": "外发到货明细收货供应商id"
+        },
+        "outArrDetOutArrReceiptType": {
+            "meaning": "外发到货明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "外发到货明细单据类型"
+        },
+        "outArrDetOutArrRelatedTasksId": {
+            "meaning": "外发到货明细关联任务id",
+            "reachable": true,
+            "name": "外发到货明细关联任务id"
+        },
+        "outArrDetOutArrSerialNumber": {
+            "meaning": "外发到货明细顺序号",
+            "reachable": true,
+            "name": "外发到货明细顺序号"
+        },
+        "outArrDetOutArrSettlementSupplierId": {
+            "meaning": "外发到货明细结算供应商/客户",
+            "reachable": true,
+            "name": "外发到货明细结算供应商/客户"
+        },
+        "outArrDetOutArrSettlementTotalAmountKeepDecimalPlace": {
+            "meaning": "外发到货明细结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "外发到货明细结算金额保留小数位"
+        },
+        "outArrDetOutArrSettlementUnitPriceKeepDecimalPlace": {
+            "meaning": "外发到货明细结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "外发到货明细结算单价保留小数位"
+        },
+        "outArrDetOutArrSource": {
+            "meaning": "外发到货明细源",
+            "reachable": true,
+            "name": "外发到货明细源"
+        },
+        "outArrDetOutArrSourceType": {
+            "meaning": "外发到货明细来源类型",
+            "reachable": true,
+            "name": "外发到货明细来源类型"
+        },
+        "outArrDetOutArrState": {
+            "meaning": "外发到货明细通用状态",
+            "reachable": true,
+            "name": "外发到货明细通用状态"
+        },
+        "outArrDetOutArrSupplierId": {
+            "meaning": "外发到货明细供应商id",
+            "reachable": true,
+            "name": "外发到货明细供应商id"
+        },
+        "outArrDetOutArrSystemCode": {
+            "meaning": "外发到货明细系统编码",
+            "reachable": true,
+            "name": "外发到货明细系统编码"
+        },
+        "outArrDetOutArrTarget": {
+            "meaning": "外发到货明细目标",
+            "reachable": true,
+            "name": "外发到货明细目标"
+        },
+        "outArrDetOutArrTaskNodeName": {
+            "meaning": "外发到货明细任务节点名称",
+            "reachable": true,
+            "name": "外发到货明细任务节点名称"
+        },
+        "outArrDetOutArrTenantId": {
+            "meaning": "外发到货明细租户_id",
+            "reachable": true,
+            "name": "外发到货明细租户_id"
+        },
+        "outArrDetOutArrThirdPartyClass": {
+            "meaning": "外发到货明细第三方分类",
+            "reachable": true,
+            "name": "外发到货明细第三方分类"
+        },
+        "outArrDetOutArrThirdPartyId": {
+            "meaning": "外发到货明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "外发到货明细第三方系统中的唯一ID"
+        },
+        "outArrDetOutArrThirdPartyName": {
+            "meaning": "外发到货明细第三方名称",
+            "reachable": true,
+            "name": "外发到货明细第三方名称"
+        },
+        "outArrDetOutArrToAuditDate": {
+            "meaning": "outArrDetOutArrToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToBeginTime": {
+            "meaning": "outArrDetOutArrToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToCreateTime": {
+            "meaning": "outArrDetOutArrToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDateExtra1": {
+            "meaning": "outArrDetOutArrToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDateExtra2": {
+            "meaning": "outArrDetOutArrToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDateExtra3": {
+            "meaning": "outArrDetOutArrToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDateExtra4": {
+            "meaning": "outArrDetOutArrToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDateExtra5": {
+            "meaning": "outArrDetOutArrToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToDeliveryDate": {
+            "meaning": "outArrDetOutArrToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToEndTime": {
+            "meaning": "outArrDetOutArrToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToReceiptDate": {
+            "meaning": "outArrDetOutArrToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrToUpdateTime": {
+            "meaning": "outArrDetOutArrToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetOutArrUnitCode": {
+            "meaning": "外发到货明细单位id",
+            "reachable": true,
+            "name": "外发到货明细单位id"
+        },
+        "outArrDetOutArrUpdateTime": {
+            "meaning": "外发到货明细更新时间",
+            "reachable": true,
+            "name": "外发到货明细更新时间"
+        },
+        "outArrDetOutArrUpdater": {
+            "meaning": "外发到货明细更新人",
+            "reachable": true,
+            "name": "外发到货明细更新人"
+        },
+        "outArrDetOutArrUpdaterId": {
+            "meaning": "外发到货明细更新人ID",
+            "reachable": true,
+            "name": "外发到货明细更新人ID"
+        },
+        "outArrDetOutArrUserCode": {
+            "meaning": "外发到货明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "外发到货明细智能节点的唯一编码"
+        },
+        "outArrDetOutArrVarExtra1": {
+            "meaning": "外发到货明细扩展1",
+            "reachable": true,
+            "name": "外发到货明细扩展1"
+        },
+        "outArrDetOutArrVarExtra2": {
+            "meaning": "外发到货明细扩展2",
+            "reachable": true,
+            "name": "外发到货明细扩展2"
+        },
+        "outArrDetOutArrVarExtra3": {
+            "meaning": "外发到货明细扩展3",
+            "reachable": true,
+            "name": "外发到货明细扩展3"
+        },
+        "outArrDetOutArrVarExtra4": {
+            "meaning": "外发到货明细扩展4",
+            "reachable": true,
+            "name": "外发到货明细扩展4"
+        },
+        "outArrDetOutArrVarExtra5": {
+            "meaning": "外发到货明细扩展5",
+            "reachable": true,
+            "name": "外发到货明细扩展5"
+        },
+        "outArrDetOutArrVersion": {
+            "meaning": "外发到货明细版本号",
+            "reachable": true,
+            "name": "外发到货明细版本号"
+        },
+        "outArrDetParentId": {
+            "meaning": "外发到货明细父节点ID",
+            "reachable": true,
+            "name": "外发到货明细父节点ID"
+        },
+        "outArrDetPlannedOutputQuantity": {
+            "meaning": "外发到货明细计划产出数量",
+            "reachable": true,
+            "name": "外发到货明细计划产出数量"
+        },
+        "outArrDetPlannedTimeRequired": {
+            "meaning": "外发到货明细计划需时(小时)",
+            "reachable": true,
+            "name": "外发到货明细计划需时"
+        },
+        "outArrDetPrintTimes": {
+            "meaning": "外发到货明细打印次数",
+            "reachable": true,
+            "name": "外发到货明细打印次数"
+        },
+        "outArrDetPriority": {
+            "meaning": "外发到货明细优先级",
+            "reachable": true,
+            "name": "外发到货明细优先级"
+        },
+        "outArrDetProcessInstanceId": {
+            "meaning": "外发到货明细流程实例ID",
+            "reachable": true,
+            "name": "外发到货明细流程实例ID"
+        },
+        "outArrDetProductionProcessesTypeId": {
+            "meaning": "外发到货明细工序类型ID",
+            "reachable": true,
+            "name": "外发到货明细工序类型ID"
+        },
+        "outArrDetProductionShiftId": {
+            "meaning": "外发到货明细生产班次ID",
+            "reachable": true,
+            "name": "外发到货明细生产班次ID"
+        },
+        "outArrDetQuantity": {
+            "meaning": "外发到货明细任务数量",
+            "reachable": true,
+            "name": "外发到货明细任务数量"
+        },
+        "outArrDetQuoQuantity": {
+            "meaning": "外发到货明细报价数量",
+            "reachable": true,
+            "name": "外发到货明细报价数量"
+        },
+        "outArrDetQuotationUnitPriceIncludingTax": {
+            "meaning": "外发到货明细含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "外发到货明细含税报价单价"
+        },
+        "outArrDetQuotationUnitPriceWithoutTax": {
+            "meaning": "外发到货明细不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "外发到货明细不含税报价单价"
+        },
+        "outArrDetReceiptDate": {
+            "meaning": "外发到货明细单据日期",
+            "reachable": true,
+            "name": "外发到货明细单据日期"
+        },
+        "outArrDetReceiptType": {
+            "meaning": "外发到货明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "外发到货明细单据类型"
+        },
+        "outArrDetRelatedTasksId": {
+            "meaning": "外发到货明细关联任务id",
+            "reachable": true,
+            "name": "外发到货明细关联任务id"
+        },
+        "outArrDetSerialNumber": {
+            "meaning": "外发到货明细顺序号",
+            "reachable": true,
+            "name": "外发到货明细顺序号"
+        },
+        "outArrDetSettlementTotalAmount": {
+            "meaning": "外发到货明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "外发到货明细结算金额"
+        },
+        "outArrDetSettlementUnitPrice": {
+            "meaning": "外发到货明细结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "外发到货明细结算单价"
+        },
+        "outArrDetSource": {
+            "meaning": "外发到货明细源",
+            "reachable": true,
+            "name": "外发到货明细源"
+        },
+        "outArrDetSourceType": {
+            "meaning": "外发到货明细来源类型",
+            "reachable": true,
+            "name": "外发到货明细来源类型"
+        },
+        "outArrDetState": {
+            "meaning": "外发到货明细通用状态",
+            "reachable": true,
+            "name": "外发到货明细通用状态"
+        },
+        "outArrDetStatedQuantity": {
+            "meaning": "外发到货明细已对账数量",
+            "reachable": true,
+            "name": "外发到货明细已对账数量"
+        },
+        "outArrDetStatedStatus": {
+            "meaning": "外发到货明细已对账状态",
+            "reachable": true,
+            "name": "外发到货明细已对账状态"
+        },
+        "outArrDetSystemCode": {
+            "meaning": "外发到货明细系统编码",
+            "reachable": true,
+            "name": "外发到货明细系统编码"
+        },
+        "outArrDetTarget": {
+            "meaning": "外发到货明细目标",
+            "reachable": true,
+            "name": "外发到货明细目标"
+        },
+        "outArrDetTaskNodeName": {
+            "meaning": "外发到货明细任务节点名称",
+            "reachable": true,
+            "name": "外发到货明细任务节点名称"
+        },
+        "outArrDetTenantId": {
+            "meaning": "外发到货明细租户_id",
+            "reachable": true,
+            "name": "外发到货明细租户_id"
+        },
+        "outArrDetThirdPartyClass": {
+            "meaning": "外发到货明细第三方分类",
+            "reachable": true,
+            "name": "外发到货明细第三方分类"
+        },
+        "outArrDetThirdPartyId": {
+            "meaning": "外发到货明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "外发到货明细第三方系统中的唯一ID"
+        },
+        "outArrDetThirdPartyName": {
+            "meaning": "外发到货明细第三方名称",
+            "reachable": true,
+            "name": "外发到货明细第三方名称"
+        },
+        "outArrDetToAuditDate": {
+            "meaning": "outArrDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToBeginTime": {
+            "meaning": "outArrDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToCreateTime": {
+            "meaning": "outArrDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDateExtra1": {
+            "meaning": "outArrDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDateExtra2": {
+            "meaning": "outArrDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDateExtra3": {
+            "meaning": "outArrDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDateExtra4": {
+            "meaning": "outArrDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDateExtra5": {
+            "meaning": "outArrDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToDeliveryDate": {
+            "meaning": "outArrDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToEndTime": {
+            "meaning": "outArrDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToReceiptDate": {
+            "meaning": "outArrDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetToUpdateTime": {
+            "meaning": "outArrDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outArrDetTotalAmountIncludingTax": {
+            "meaning": "外发到货明细含税总金额",
+            "reachable": true,
+            "name": "外发到货明细含税总金额"
+        },
+        "outArrDetTotalAmountWithoutTax": {
+            "meaning": "外发到货明细不含税总金额",
+            "reachable": true,
+            "name": "外发到货明细不含税总金额"
+        },
+        "outArrDetUnitCode": {
+            "meaning": "外发到货明细单位id",
+            "reachable": true,
+            "name": "外发到货明细单位id"
+        },
+        "outArrDetUnitPriceIncludingTax": {
+            "meaning": "外发到货明细含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "外发到货明细含税单价"
+        },
+        "outArrDetUnitPriceWithoutTax": {
+            "meaning": "外发到货明细不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "外发到货明细不含税单价"
+        },
+        "outArrDetUpdateTime": {
+            "meaning": "外发到货明细更新时间",
+            "reachable": true,
+            "name": "外发到货明细更新时间"
+        },
+        "outArrDetUpdater": {
+            "meaning": "外发到货明细更新人",
+            "reachable": true,
+            "name": "外发到货明细更新人"
+        },
+        "outArrDetUpdaterId": {
+            "meaning": "外发到货明细更新人ID",
+            "reachable": true,
+            "name": "外发到货明细更新人ID"
+        },
+        "outArrDetUserCode": {
+            "meaning": "外发到货明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "外发到货明细智能节点的唯一编码"
+        },
+        "outArrDetVarExtra1": {
+            "meaning": "外发到货明细扩展1",
+            "reachable": true,
+            "name": "外发到货明细扩展1"
+        },
+        "outArrDetVarExtra2": {
+            "meaning": "外发到货明细扩展2",
+            "reachable": true,
+            "name": "外发到货明细扩展2"
+        },
+        "outArrDetVarExtra3": {
+            "meaning": "外发到货明细扩展3",
+            "reachable": true,
+            "name": "外发到货明细扩展3"
+        },
+        "outArrDetVarExtra4": {
+            "meaning": "外发到货明细扩展4",
+            "reachable": true,
+            "name": "外发到货明细扩展4"
+        },
+        "outArrDetVarExtra5": {
+            "meaning": "外发到货明细扩展5",
+            "reachable": true,
+            "name": "外发到货明细扩展5"
+        },
+        "outArrDetVersion": {
+            "meaning": "外发到货明细版本号",
+            "reachable": true,
+            "name": "外发到货明细版本号"
+        }
+    }
+}

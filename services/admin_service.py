@@ -29,9 +29,7 @@ def find_all_staff(access_token: str) -> str:  # 定义工具函数
         "groupDefaultType": "TEAM",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -83,9 +81,7 @@ def find_department(access_token: str) -> str:  # 定义工具函数
         "groupDefaultType": "DEPARTMENT",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -127,9 +123,7 @@ def find_role(access_token: str) -> str:  # 定义工具函数
         "roleDefaultType": "POST",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {

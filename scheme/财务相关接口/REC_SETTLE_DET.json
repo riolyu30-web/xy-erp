@@ -1,0 +1,1332 @@
+{
+    "api_name": "/rec-settle-det/findList",
+    "table_name": "应收结算明细",
+    "request": {
+        "recSettleDetRecSettleClazz": "REC_SETTLE",
+        "recSettleDetClazz": "REC_SETTLE_DET"
+    },
+    "mainTabClazz": "REC_SETTLE_DET",
+    "response": {
+        "recSettleDetActAmount": {
+            "meaning": "应收结算明细实际结算金额",
+            "reachable": true,
+            "name": "应收结算明细实际结算金额"
+        },
+        "recSettleDetActDiffAmount": {
+            "meaning": "应收结算明细实际结算差额",
+            "reachable": true,
+            "name": "应收结算明细实际结算差额"
+        },
+        "recSettleDetActualTimeRequired": {
+            "meaning": "应收结算明细实际需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细实际需时"
+        },
+        "recSettleDetAdjustmentTimeRequired": {
+            "meaning": "应收结算明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "应收结算明细调整需时"
+        },
+        "recSettleDetAmount": {
+            "meaning": "应收结算明细结算金额",
+            "reachable": true,
+            "name": "应收结算明细结算金额"
+        },
+        "recSettleDetApplicationId": {
+            "meaning": "应收结算明细应用ID",
+            "reachable": true,
+            "name": "应收结算明细应用ID"
+        },
+        "recSettleDetAuditDate": {
+            "meaning": "应收结算明细审核时间",
+            "reachable": true,
+            "name": "应收结算明细审核时间"
+        },
+        "recSettleDetAuditStatus": {
+            "meaning": "应收结算明细审核状态",
+            "reachable": true,
+            "name": "应收结算明细审核状态"
+        },
+        "recSettleDetAvailableScheduleId": {
+            "meaning": "应收结算明细可用日程id",
+            "reachable": true,
+            "name": "应收结算明细可用日程id"
+        },
+        "recSettleDetBeginTime": {
+            "meaning": "应收结算明细开始时间",
+            "reachable": true,
+            "name": "应收结算明细开始时间"
+        },
+        "recSettleDetBizVersion": {
+            "meaning": "应收结算明细业务自定义版本号",
+            "reachable": true,
+            "name": "应收结算明细业务自定义版本号"
+        },
+        "recSettleDetBriefName": {
+            "meaning": "应收结算明细简称",
+            "reachable": true,
+            "name": "应收结算明细简称"
+        },
+        "recSettleDetBusDivisId": {
+            "meaning": "应收结算明细事业部id",
+            "reachable": true,
+            "name": "应收结算明细事业部id"
+        },
+        "recSettleDetClazz": {
+            "meaning": "应收结算明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "应收结算明细子类"
+        },
+        "recSettleDetClosedReason": {
+            "meaning": "应收结算明细结案原因",
+            "reachable": true,
+            "name": "应收结算明细结案原因"
+        },
+        "recSettleDetClosedStatus": {
+            "meaning": "应收结算明细结案状态",
+            "reachable": true,
+            "name": "应收结算明细结案状态"
+        },
+        "recSettleDetComment": {
+            "meaning": "应收结算明细评论",
+            "reachable": true,
+            "name": "应收结算明细评论"
+        },
+        "recSettleDetCompleteQuantity": {
+            "meaning": "应收结算明细完成数量",
+            "reachable": true,
+            "name": "应收结算明细完成数量"
+        },
+        "recSettleDetCompleteStatus": {
+            "meaning": "应收结算明细完成状态",
+            "reachable": true,
+            "name": "应收结算明细完成状态"
+        },
+        "recSettleDetCreateTime": {
+            "meaning": "应收结算明细创建时间",
+            "reachable": true,
+            "name": "应收结算明细创建时间"
+        },
+        "recSettleDetCreator": {
+            "meaning": "应收结算明细创建人",
+            "reachable": true,
+            "name": "应收结算明细创建人"
+        },
+        "recSettleDetCreatorId": {
+            "meaning": "应收结算明细创建人ID",
+            "reachable": true,
+            "name": "应收结算明细创建人ID"
+        },
+        "recSettleDetDateExtra1": {
+            "meaning": "应收结算明细扩展时间1",
+            "reachable": true,
+            "name": "应收结算明细扩展时间1"
+        },
+        "recSettleDetDateExtra2": {
+            "meaning": "应收结算明细扩展时间2",
+            "reachable": true,
+            "name": "应收结算明细扩展时间2"
+        },
+        "recSettleDetDateExtra3": {
+            "meaning": "应收结算明细扩展时间3",
+            "reachable": true,
+            "name": "应收结算明细扩展时间3"
+        },
+        "recSettleDetDateExtra4": {
+            "meaning": "应收结算明细扩展时间4",
+            "reachable": true,
+            "name": "应收结算明细扩展时间4"
+        },
+        "recSettleDetDateExtra5": {
+            "meaning": "应收结算明细扩展时间5",
+            "reachable": true,
+            "name": "应收结算明细扩展时间5"
+        },
+        "recSettleDetDefaultType": {
+            "meaning": "应收结算明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "应收结算明细智能节点主类型"
+        },
+        "recSettleDetDeliveryDate": {
+            "meaning": "应收结算明细交货日期",
+            "reachable": true,
+            "name": "应收结算明细交货日期"
+        },
+        "recSettleDetDescription": {
+            "meaning": "应收结算明细描述",
+            "reachable": true,
+            "name": "应收结算明细描述"
+        },
+        "recSettleDetEndTime": {
+            "meaning": "应收结算明细结束时间",
+            "reachable": true,
+            "name": "应收结算明细结束时间"
+        },
+        "recSettleDetEndTimeRequired": {
+            "meaning": "应收结算明细最后需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细最后需时"
+        },
+        "recSettleDetEngName": {
+            "meaning": "应收结算明细英文名称",
+            "reachable": true,
+            "name": "应收结算明细英文名称"
+        },
+        "recSettleDetEquipmentId": {
+            "meaning": "应收结算明细设备id",
+            "reachable": true,
+            "name": "应收结算明细设备id"
+        },
+        "recSettleDetExchangeRate": {
+            "meaning": "应收结算明细汇率",
+            "reachable": true,
+            "name": "应收结算明细汇率"
+        },
+        "recSettleDetExchangeRateId": {
+            "meaning": "应收结算明细币种汇率id",
+            "reachable": true,
+            "name": "应收结算明细币种汇率id"
+        },
+        "recSettleDetExtension": {
+            "meaning": "应收结算明细扩展数据",
+            "reachable": true,
+            "name": "应收结算明细扩展数据"
+        },
+        "recSettleDetExternalState": {
+            "meaning": "应收结算明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "应收结算明细上流程状态位"
+        },
+        "recSettleDetFilterClazz": {
+            "meaning": "应收结算明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "应收结算明细冗余字段用于筛选"
+        },
+        "recSettleDetFlags": {
+            "meaning": "应收结算明细63位标志位",
+            "reachable": true,
+            "name": "应收结算明细63位标志位"
+        },
+        "recSettleDetFromAuditDate": {
+            "meaning": "recSettleDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromBeginTime": {
+            "meaning": "recSettleDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromCreateTime": {
+            "meaning": "recSettleDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDateExtra1": {
+            "meaning": "recSettleDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDateExtra2": {
+            "meaning": "recSettleDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDateExtra3": {
+            "meaning": "recSettleDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDateExtra4": {
+            "meaning": "recSettleDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDateExtra5": {
+            "meaning": "recSettleDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromDeliveryDate": {
+            "meaning": "recSettleDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromEndTime": {
+            "meaning": "recSettleDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromReceiptDate": {
+            "meaning": "recSettleDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFromUpdateTime": {
+            "meaning": "recSettleDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetFscType": {
+            "meaning": "应收结算明细FSC声明",
+            "reachable": true,
+            "name": "应收结算明细FSC声明"
+        },
+        "recSettleDetGenerativePeople": {
+            "meaning": "应收结算明细下发人",
+            "reachable": true,
+            "name": "应收结算明细下发人"
+        },
+        "recSettleDetGenerativeState": {
+            "meaning": "应收结算明细下发状态",
+            "reachable": true,
+            "name": "应收结算明细下发状态"
+        },
+        "recSettleDetGroovyScript": {
+            "meaning": "应收结算明细groovy脚本",
+            "reachable": true,
+            "name": "应收结算明细groovy脚本"
+        },
+        "recSettleDetGropeCode": {
+            "meaning": "应收结算明细搜索码",
+            "reachable": true,
+            "name": "应收结算明细搜索码"
+        },
+        "recSettleDetId": {
+            "meaning": "应收结算明细PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "应收结算明细PK"
+        },
+        "recSettleDetInUsed": {
+            "meaning": "应收结算明细是否被使用",
+            "reachable": true,
+            "name": "应收结算明细是否被使用"
+        },
+        "recSettleDetInvTypeTaxRateId": {
+            "meaning": "应收结算明细发票税率id",
+            "reachable": true,
+            "name": "应收结算明细发票税率id"
+        },
+        "recSettleDetIsBanned": {
+            "meaning": "应收结算明细是否被禁用",
+            "reachable": true,
+            "name": "应收结算明细是否被禁用"
+        },
+        "recSettleDetIsDeleted": {
+            "meaning": "应收结算明细是否被删除",
+            "reachable": true,
+            "name": "应收结算明细是否被删除"
+        },
+        "recSettleDetIsLeaf": {
+            "meaning": "应收结算明细是否叶子节点",
+            "reachable": true,
+            "name": "应收结算明细是否叶子节点"
+        },
+        "recSettleDetIsMainFlow": {
+            "meaning": "应收结算明细是否是主流程",
+            "reachable": true,
+            "name": "应收结算明细是否是主流程"
+        },
+        "recSettleDetIsManualModificationDate": {
+            "meaning": "应收结算明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "应收结算明细是否手动修改计划生产时间"
+        },
+        "recSettleDetIsolation": {
+            "meaning": "应收结算明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "应收结算明细智能节点数据隔离标识"
+        },
+        "recSettleDetJsScript": {
+            "meaning": "应收结算明细js脚本",
+            "reachable": true,
+            "name": "应收结算明细js脚本"
+        },
+        "recSettleDetLocActAmount": {
+            "meaning": "应收结算明细本币实际结算金额",
+            "reachable": true,
+            "name": "应收结算明细本币实际结算金额"
+        },
+        "recSettleDetLocActDiffAmount": {
+            "meaning": "应收结算明细本币实际结算",
+            "reachable": true,
+            "name": "应收结算明细本币实际结算"
+        },
+        "recSettleDetLocAmount": {
+            "meaning": "应收结算明细本币结算金额",
+            "reachable": true,
+            "name": "应收结算明细本币结算金额"
+        },
+        "recSettleDetLocOtherExpense": {
+            "meaning": "应收结算明细本币其他费用",
+            "reachable": true,
+            "name": "应收结算明细本币其他费用"
+        },
+        "recSettleDetLocTotalInvoicedAmount": {
+            "meaning": "应收结算明细本币总开票金额",
+            "reachable": true,
+            "name": "应收结算明细本币总开票金额"
+        },
+        "recSettleDetMaterialId": {
+            "meaning": "应收结算明细物料id",
+            "reachable": true,
+            "name": "应收结算明细物料id"
+        },
+        "recSettleDetName": {
+            "meaning": "应收结算明细智能节点名",
+            "reachable": true,
+            "name": "应收结算明细智能节点名"
+        },
+        "recSettleDetNameCodeSearch": {
+            "meaning": "应收结算明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "应收结算明细name、user"
+        },
+        "recSettleDetNumberExtra1": {
+            "meaning": "应收结算明细扩展数量1",
+            "reachable": true,
+            "name": "应收结算明细扩展数量1"
+        },
+        "recSettleDetNumberExtra2": {
+            "meaning": "应收结算明细扩展数量2",
+            "reachable": true,
+            "name": "应收结算明细扩展数量2"
+        },
+        "recSettleDetNumberExtra3": {
+            "meaning": "应收结算明细扩展数量3",
+            "reachable": true,
+            "name": "应收结算明细扩展数量3"
+        },
+        "recSettleDetNumberExtra4": {
+            "meaning": "应收结算明细扩展数量4",
+            "reachable": true,
+            "name": "应收结算明细扩展数量4"
+        },
+        "recSettleDetNumberExtra5": {
+            "meaning": "应收结算明细扩展数量5",
+            "reachable": true,
+            "name": "应收结算明细扩展数量5"
+        },
+        "recSettleDetOrderId": {
+            "meaning": "应收结算明细订单ID",
+            "reachable": true,
+            "name": "应收结算明细订单ID"
+        },
+        "recSettleDetOtherExpense": {
+            "meaning": "应收结算明细其他费用",
+            "reachable": true,
+            "name": "应收结算明细其他费用"
+        },
+        "recSettleDetParentId": {
+            "meaning": "应收结算明细父节点ID",
+            "reachable": true,
+            "name": "应收结算明细父节点ID"
+        },
+        "recSettleDetPlannedOutputQuantity": {
+            "meaning": "应收结算明细计划产出数量",
+            "reachable": true,
+            "name": "应收结算明细计划产出数量"
+        },
+        "recSettleDetPlannedTimeRequired": {
+            "meaning": "应收结算明细计划需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细计划需时"
+        },
+        "recSettleDetPrintTimes": {
+            "meaning": "应收结算明细打印次数",
+            "reachable": true,
+            "name": "应收结算明细打印次数"
+        },
+        "recSettleDetPriority": {
+            "meaning": "应收结算明细优先级",
+            "reachable": true,
+            "name": "应收结算明细优先级"
+        },
+        "recSettleDetProcessInstanceId": {
+            "meaning": "应收结算明细流程实例ID",
+            "reachable": true,
+            "name": "应收结算明细流程实例ID"
+        },
+        "recSettleDetProductionProcessesTypeId": {
+            "meaning": "应收结算明细工序类型ID",
+            "reachable": true,
+            "name": "应收结算明细工序类型ID"
+        },
+        "recSettleDetProductionShiftId": {
+            "meaning": "应收结算明细生产班次ID",
+            "reachable": true,
+            "name": "应收结算明细生产班次ID"
+        },
+        "recSettleDetQuantity": {
+            "meaning": "应收结算明细任务数量",
+            "reachable": true,
+            "name": "应收结算明细任务数量"
+        },
+        "recSettleDetRecSettleAcctHolderName": {
+            "meaning": "应收结算明细账号持有人",
+            "reachable": true,
+            "name": "应收结算明细账号持有人"
+        },
+        "recSettleDetRecSettleActualTimeRequired": {
+            "meaning": "应收结算明细实际需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细实际需时"
+        },
+        "recSettleDetRecSettleAdjustmentTimeRequired": {
+            "meaning": "应收结算明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "应收结算明细调整需时"
+        },
+        "recSettleDetRecSettleApplicationId": {
+            "meaning": "应收结算明细应用ID",
+            "reachable": true,
+            "name": "应收结算明细应用ID"
+        },
+        "recSettleDetRecSettleAuditDate": {
+            "meaning": "应收结算明细审核时间",
+            "reachable": true,
+            "name": "应收结算明细审核时间"
+        },
+        "recSettleDetRecSettleAuditStatus": {
+            "meaning": "应收结算明细审核状态",
+            "reachable": true,
+            "name": "应收结算明细审核状态"
+        },
+        "recSettleDetRecSettleAvailableScheduleId": {
+            "meaning": "应收结算明细可用日程id",
+            "reachable": true,
+            "name": "应收结算明细可用日程id"
+        },
+        "recSettleDetRecSettleBankAcctNum": {
+            "meaning": "应收结算明细银行账号",
+            "reachable": true,
+            "name": "应收结算明细银行账号"
+        },
+        "recSettleDetRecSettleBankBranchInfo": {
+            "meaning": "应收结算明细开户支行信息",
+            "reachable": true,
+            "name": "应收结算明细开户支行信息"
+        },
+        "recSettleDetRecSettleBankName": {
+            "meaning": "应收结算明细银行名称",
+            "reachable": true,
+            "name": "应收结算明细银行名称"
+        },
+        "recSettleDetRecSettleBeginTime": {
+            "meaning": "应收结算明细开始时间",
+            "reachable": true,
+            "name": "应收结算明细开始时间"
+        },
+        "recSettleDetRecSettleBizVersion": {
+            "meaning": "应收结算明细业务自定义版本号",
+            "reachable": true,
+            "name": "应收结算明细业务自定义版本号"
+        },
+        "recSettleDetRecSettleBriefName": {
+            "meaning": "应收结算明细简称",
+            "reachable": true,
+            "name": "应收结算明细简称"
+        },
+        "recSettleDetRecSettleBusDivisId": {
+            "meaning": "应收结算明细事业部id",
+            "reachable": true,
+            "name": "应收结算明细事业部id"
+        },
+        "recSettleDetRecSettleClazz": {
+            "meaning": "应收结算明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "应收结算明细子类"
+        },
+        "recSettleDetRecSettleClosedReason": {
+            "meaning": "应收结算明细结案原因",
+            "reachable": true,
+            "name": "应收结算明细结案原因"
+        },
+        "recSettleDetRecSettleClosedStatus": {
+            "meaning": "应收结算明细结案状态",
+            "reachable": true,
+            "name": "应收结算明细结案状态"
+        },
+        "recSettleDetRecSettleComment": {
+            "meaning": "应收结算明细评论",
+            "reachable": true,
+            "name": "应收结算明细评论"
+        },
+        "recSettleDetRecSettleCompleteQuantity": {
+            "meaning": "应收结算明细完成数量",
+            "reachable": true,
+            "name": "应收结算明细完成数量"
+        },
+        "recSettleDetRecSettleCompleteStatus": {
+            "meaning": "应收结算明细完成状态",
+            "reachable": true,
+            "name": "应收结算明细完成状态"
+        },
+        "recSettleDetRecSettleCreateTime": {
+            "meaning": "应收结算明细创建时间",
+            "reachable": true,
+            "name": "应收结算明细创建时间"
+        },
+        "recSettleDetRecSettleCreator": {
+            "meaning": "应收结算明细创建人",
+            "reachable": true,
+            "name": "应收结算明细创建人"
+        },
+        "recSettleDetRecSettleCreatorId": {
+            "meaning": "应收结算明细创建人ID",
+            "reachable": true,
+            "name": "应收结算明细创建人ID"
+        },
+        "recSettleDetRecSettleCurrency": {
+            "meaning": "应收结算明细币种",
+            "reachable": true,
+            "name": "应收结算明细币种"
+        },
+        "recSettleDetRecSettleCustomerId": {
+            "meaning": "应收结算明细客户ID",
+            "reachable": true,
+            "name": "应收结算明细客户ID"
+        },
+        "recSettleDetRecSettleDateExtra1": {
+            "meaning": "应收结算明细扩展时间1",
+            "reachable": true,
+            "name": "应收结算明细扩展时间1"
+        },
+        "recSettleDetRecSettleDateExtra2": {
+            "meaning": "应收结算明细扩展时间2",
+            "reachable": true,
+            "name": "应收结算明细扩展时间2"
+        },
+        "recSettleDetRecSettleDateExtra3": {
+            "meaning": "应收结算明细扩展时间3",
+            "reachable": true,
+            "name": "应收结算明细扩展时间3"
+        },
+        "recSettleDetRecSettleDateExtra4": {
+            "meaning": "应收结算明细扩展时间4",
+            "reachable": true,
+            "name": "应收结算明细扩展时间4"
+        },
+        "recSettleDetRecSettleDateExtra5": {
+            "meaning": "应收结算明细扩展时间5",
+            "reachable": true,
+            "name": "应收结算明细扩展时间5"
+        },
+        "recSettleDetRecSettleDefaultType": {
+            "meaning": "应收结算明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": true,
+            "name": "应收结算明细智能节点主类型"
+        },
+        "recSettleDetRecSettleDeliveryDate": {
+            "meaning": "应收结算明细交货日期",
+            "reachable": true,
+            "name": "应收结算明细交货日期"
+        },
+        "recSettleDetRecSettleDescription": {
+            "meaning": "应收结算明细描述",
+            "reachable": true,
+            "name": "应收结算明细描述"
+        },
+        "recSettleDetRecSettleEndTime": {
+            "meaning": "应收结算明细结束时间",
+            "reachable": true,
+            "name": "应收结算明细结束时间"
+        },
+        "recSettleDetRecSettleEndTimeRequired": {
+            "meaning": "应收结算明细最后需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细最后需时"
+        },
+        "recSettleDetRecSettleEngName": {
+            "meaning": "应收结算明细英文名称",
+            "reachable": true,
+            "name": "应收结算明细英文名称"
+        },
+        "recSettleDetRecSettleEquipmentId": {
+            "meaning": "应收结算明细设备id",
+            "reachable": true,
+            "name": "应收结算明细设备id"
+        },
+        "recSettleDetRecSettleExchangeRateId": {
+            "meaning": "应收结算明细币种汇率id",
+            "reachable": true,
+            "name": "应收结算明细币种汇率id"
+        },
+        "recSettleDetRecSettleExtension": {
+            "meaning": "应收结算明细扩展数据",
+            "reachable": true,
+            "name": "应收结算明细扩展数据"
+        },
+        "recSettleDetRecSettleExternalState": {
+            "meaning": "应收结算明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "应收结算明细上流程状态位"
+        },
+        "recSettleDetRecSettleFilterClazz": {
+            "meaning": "应收结算明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "应收结算明细冗余字段用于筛选"
+        },
+        "recSettleDetRecSettleFlags": {
+            "meaning": "应收结算明细63位标志位",
+            "reachable": true,
+            "name": "应收结算明细63位标志位"
+        },
+        "recSettleDetRecSettleFromAuditDate": {
+            "meaning": "recSettleDetRecSettleFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromBeginTime": {
+            "meaning": "recSettleDetRecSettleFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromCreateTime": {
+            "meaning": "recSettleDetRecSettleFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDateExtra1": {
+            "meaning": "recSettleDetRecSettleFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDateExtra2": {
+            "meaning": "recSettleDetRecSettleFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDateExtra3": {
+            "meaning": "recSettleDetRecSettleFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDateExtra4": {
+            "meaning": "recSettleDetRecSettleFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDateExtra5": {
+            "meaning": "recSettleDetRecSettleFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromDeliveryDate": {
+            "meaning": "recSettleDetRecSettleFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromEndTime": {
+            "meaning": "recSettleDetRecSettleFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromReceiptDate": {
+            "meaning": "recSettleDetRecSettleFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFromUpdateTime": {
+            "meaning": "recSettleDetRecSettleFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleFscType": {
+            "meaning": "应收结算明细FSC声明",
+            "reachable": true,
+            "name": "应收结算明细FSC声明"
+        },
+        "recSettleDetRecSettleGenerativePeople": {
+            "meaning": "应收结算明细下发人",
+            "reachable": true,
+            "name": "应收结算明细下发人"
+        },
+        "recSettleDetRecSettleGenerativeState": {
+            "meaning": "应收结算明细下发状态",
+            "reachable": true,
+            "name": "应收结算明细下发状态"
+        },
+        "recSettleDetRecSettleGroovyScript": {
+            "meaning": "应收结算明细groovy脚本",
+            "reachable": true,
+            "name": "应收结算明细groovy脚本"
+        },
+        "recSettleDetRecSettleGropeCode": {
+            "meaning": "应收结算明细搜索码",
+            "reachable": true,
+            "name": "应收结算明细搜索码"
+        },
+        "recSettleDetRecSettleId": {
+            "meaning": "应收结算明细PK",
+            "reachable": true,
+            "name": "应收结算明细PK"
+        },
+        "recSettleDetRecSettleInUsed": {
+            "meaning": "应收结算明细是否被使用",
+            "reachable": true,
+            "name": "应收结算明细是否被使用"
+        },
+        "recSettleDetRecSettleInvTypeTaxRateId": {
+            "meaning": "应收结算明细发票税率id",
+            "reachable": true,
+            "name": "应收结算明细发票税率id"
+        },
+        "recSettleDetRecSettleIsBanned": {
+            "meaning": "应收结算明细是否被禁用",
+            "reachable": true,
+            "name": "应收结算明细是否被禁用"
+        },
+        "recSettleDetRecSettleIsDeleted": {
+            "meaning": "应收结算明细是否被删除",
+            "reachable": true,
+            "name": "应收结算明细是否被删除"
+        },
+        "recSettleDetRecSettleIsLeaf": {
+            "meaning": "应收结算明细是否叶子节点",
+            "reachable": true,
+            "name": "应收结算明细是否叶子节点"
+        },
+        "recSettleDetRecSettleIsMainFlow": {
+            "meaning": "应收结算明细是否是主流程",
+            "reachable": true,
+            "name": "应收结算明细是否是主流程"
+        },
+        "recSettleDetRecSettleIsManualModificationDate": {
+            "meaning": "应收结算明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "应收结算明细是否手动修改计划生产时间"
+        },
+        "recSettleDetRecSettleIsolation": {
+            "meaning": "应收结算明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "应收结算明细智能节点数据隔离标识"
+        },
+        "recSettleDetRecSettleJsScript": {
+            "meaning": "应收结算明细js脚本",
+            "reachable": true,
+            "name": "应收结算明细js脚本"
+        },
+        "recSettleDetRecSettleLocTotalActAmount": {
+            "meaning": "应收结算明细本币总实际结算金额",
+            "reachable": true,
+            "name": "应收结算明细本币总实际结算金额"
+        },
+        "recSettleDetRecSettleLocTotalActDiffAmount": {
+            "meaning": "应收结算明细本币总实际结算差额",
+            "reachable": true,
+            "name": "应收结算明细本币总实际结算差额"
+        },
+        "recSettleDetRecSettleLocTotalAmount": {
+            "meaning": "应收结算明细本币总结算金额",
+            "reachable": true,
+            "name": "应收结算明细本币总结算金额"
+        },
+        "recSettleDetRecSettleLocTotalInvoicedAmount": {
+            "meaning": "应收结算明细本币总开票金额",
+            "reachable": true,
+            "name": "应收结算明细本币总开票金额"
+        },
+        "recSettleDetRecSettleLocTotalOtherExpense": {
+            "meaning": "应收结算明细本币总其他费用",
+            "reachable": true,
+            "name": "应收结算明细本币总其他费用"
+        },
+        "recSettleDetRecSettleMaterialId": {
+            "meaning": "应收结算明细物料id",
+            "reachable": true,
+            "name": "应收结算明细物料id"
+        },
+        "recSettleDetRecSettleName": {
+            "meaning": "应收结算明细智能节点名",
+            "reachable": true,
+            "name": "应收结算明细智能节点名"
+        },
+        "recSettleDetRecSettleNameCodeSearch": {
+            "meaning": "应收结算明细name、user de模糊搜索",
+            "reachable": true,
+            "name": "应收结算明细name、user"
+        },
+        "recSettleDetRecSettleNumberExtra1": {
+            "meaning": "应收结算明细扩展数量1",
+            "reachable": true,
+            "name": "应收结算明细扩展数量1"
+        },
+        "recSettleDetRecSettleNumberExtra2": {
+            "meaning": "应收结算明细扩展数量2",
+            "reachable": true,
+            "name": "应收结算明细扩展数量2"
+        },
+        "recSettleDetRecSettleNumberExtra3": {
+            "meaning": "应收结算明细扩展数量3",
+            "reachable": true,
+            "name": "应收结算明细扩展数量3"
+        },
+        "recSettleDetRecSettleNumberExtra4": {
+            "meaning": "应收结算明细扩展数量4",
+            "reachable": true,
+            "name": "应收结算明细扩展数量4"
+        },
+        "recSettleDetRecSettleNumberExtra5": {
+            "meaning": "应收结算明细扩展数量5",
+            "reachable": true,
+            "name": "应收结算明细扩展数量5"
+        },
+        "recSettleDetRecSettleParentId": {
+            "meaning": "应收结算明细父节点ID",
+            "reachable": true,
+            "name": "应收结算明细父节点ID"
+        },
+        "recSettleDetRecSettlePlannedOutputQuantity": {
+            "meaning": "应收结算明细计划产出数量",
+            "reachable": true,
+            "name": "应收结算明细计划产出数量"
+        },
+        "recSettleDetRecSettlePlannedTimeRequired": {
+            "meaning": "应收结算明细计划需时(小时)",
+            "reachable": true,
+            "name": "应收结算明细计划需时"
+        },
+        "recSettleDetRecSettlePrintTimes": {
+            "meaning": "应收结算明细打印次数",
+            "reachable": true,
+            "name": "应收结算明细打印次数"
+        },
+        "recSettleDetRecSettlePriority": {
+            "meaning": "应收结算明细优先级",
+            "reachable": true,
+            "name": "应收结算明细优先级"
+        },
+        "recSettleDetRecSettleProcessInstanceId": {
+            "meaning": "应收结算明细流程实例ID",
+            "reachable": true,
+            "name": "应收结算明细流程实例ID"
+        },
+        "recSettleDetRecSettleProductionProcessesTypeId": {
+            "meaning": "应收结算明细工序类型ID",
+            "reachable": true,
+            "name": "应收结算明细工序类型ID"
+        },
+        "recSettleDetRecSettleProductionShiftId": {
+            "meaning": "应收结算明细生产班次ID",
+            "reachable": true,
+            "name": "应收结算明细生产班次ID"
+        },
+        "recSettleDetRecSettleQuantity": {
+            "meaning": "应收结算明细任务数量",
+            "reachable": true,
+            "name": "应收结算明细任务数量"
+        },
+        "recSettleDetRecSettleReceiptDate": {
+            "meaning": "应收结算明细单据日期",
+            "reachable": true,
+            "name": "应收结算明细单据日期"
+        },
+        "recSettleDetRecSettleReceiptType": {
+            "meaning": "应收结算明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "应收结算明细单据类型"
+        },
+        "recSettleDetRecSettleRelatedTasksId": {
+            "meaning": "应收结算明细关联任务id",
+            "reachable": true,
+            "name": "应收结算明细关联任务id"
+        },
+        "recSettleDetRecSettleSerialNumber": {
+            "meaning": "应收结算明细顺序号",
+            "reachable": true,
+            "name": "应收结算明细顺序号"
+        },
+        "recSettleDetRecSettleSettleAmount": {
+            "meaning": "应收结算明细结算金额",
+            "reachable": true,
+            "name": "应收结算明细结算金额"
+        },
+        "recSettleDetRecSettleSource": {
+            "meaning": "应收结算明细源",
+            "reachable": true,
+            "name": "应收结算明细源"
+        },
+        "recSettleDetRecSettleSourceType": {
+            "meaning": "应收结算明细来源类型",
+            "reachable": true,
+            "name": "应收结算明细来源类型"
+        },
+        "recSettleDetRecSettleState": {
+            "meaning": "应收结算明细通用状态",
+            "reachable": true,
+            "name": "应收结算明细通用状态"
+        },
+        "recSettleDetRecSettleSystemCode": {
+            "meaning": "应收结算明细系统编码",
+            "reachable": true,
+            "name": "应收结算明细系统编码"
+        },
+        "recSettleDetRecSettleTarget": {
+            "meaning": "应收结算明细目标",
+            "reachable": true,
+            "name": "应收结算明细目标"
+        },
+        "recSettleDetRecSettleTaskNodeName": {
+            "meaning": "应收结算明细任务节点名称",
+            "reachable": true,
+            "name": "应收结算明细任务节点名称"
+        },
+        "recSettleDetRecSettleTenantId": {
+            "meaning": "应收结算明细租户ID",
+            "reachable": true,
+            "name": "应收结算明细租户ID"
+        },
+        "recSettleDetRecSettleThirdPartyClass": {
+            "meaning": "应收结算明细第三方分类",
+            "reachable": true,
+            "name": "应收结算明细第三方分类"
+        },
+        "recSettleDetRecSettleThirdPartyId": {
+            "meaning": "应收结算明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "应收结算明细第三方系统中的唯一ID"
+        },
+        "recSettleDetRecSettleThirdPartyName": {
+            "meaning": "应收结算明细第三方名称",
+            "reachable": true,
+            "name": "应收结算明细第三方名称"
+        },
+        "recSettleDetRecSettleToAuditDate": {
+            "meaning": "recSettleDetRecSettleToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToBeginTime": {
+            "meaning": "recSettleDetRecSettleToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToCreateTime": {
+            "meaning": "recSettleDetRecSettleToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDateExtra1": {
+            "meaning": "recSettleDetRecSettleToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDateExtra2": {
+            "meaning": "recSettleDetRecSettleToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDateExtra3": {
+            "meaning": "recSettleDetRecSettleToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDateExtra4": {
+            "meaning": "recSettleDetRecSettleToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDateExtra5": {
+            "meaning": "recSettleDetRecSettleToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToDeliveryDate": {
+            "meaning": "recSettleDetRecSettleToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToEndTime": {
+            "meaning": "recSettleDetRecSettleToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToReceiptDate": {
+            "meaning": "recSettleDetRecSettleToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleToUpdateTime": {
+            "meaning": "recSettleDetRecSettleToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetRecSettleTotalActAmount": {
+            "meaning": "应收结算明细实际结算金额",
+            "reachable": true,
+            "name": "应收结算明细实际结算金额"
+        },
+        "recSettleDetRecSettleTotalActDiffAmount": {
+            "meaning": "应收结算明细总实际结算差额",
+            "reachable": true,
+            "name": "应收结算明细总实际结算差额"
+        },
+        "recSettleDetRecSettleTotalAmount": {
+            "meaning": "应收结算明细总结算金额",
+            "reachable": true,
+            "name": "应收结算明细总结算金额"
+        },
+        "recSettleDetRecSettleTotalInvoicedAmount": {
+            "meaning": "应收结算明细总开票金额",
+            "reachable": true,
+            "name": "应收结算明细总开票金额"
+        },
+        "recSettleDetRecSettleTotalOtherExpense": {
+            "meaning": "应收结算明细总其他费用",
+            "reachable": true,
+            "name": "应收结算明细总其他费用"
+        },
+        "recSettleDetRecSettleUnitCode": {
+            "meaning": "应收结算明细单位id",
+            "reachable": true,
+            "name": "应收结算明细单位id"
+        },
+        "recSettleDetRecSettleUpdateTime": {
+            "meaning": "应收结算明细更新时间",
+            "reachable": true,
+            "name": "应收结算明细更新时间"
+        },
+        "recSettleDetRecSettleUpdater": {
+            "meaning": "应收结算明细更新人",
+            "reachable": true,
+            "name": "应收结算明细更新人"
+        },
+        "recSettleDetRecSettleUpdaterId": {
+            "meaning": "应收结算明细更新人ID",
+            "reachable": true,
+            "name": "应收结算明细更新人ID"
+        },
+        "recSettleDetRecSettleUserCode": {
+            "meaning": "应收结算明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "应收结算明细智能节点的唯一编码"
+        },
+        "recSettleDetRecSettleVarExtra1": {
+            "meaning": "应收结算明细扩展1",
+            "reachable": true,
+            "name": "应收结算明细扩展1"
+        },
+        "recSettleDetRecSettleVarExtra2": {
+            "meaning": "应收结算明细扩展2",
+            "reachable": true,
+            "name": "应收结算明细扩展2"
+        },
+        "recSettleDetRecSettleVarExtra3": {
+            "meaning": "应收结算明细扩展3",
+            "reachable": true,
+            "name": "应收结算明细扩展3"
+        },
+        "recSettleDetRecSettleVarExtra4": {
+            "meaning": "应收结算明细扩展4",
+            "reachable": true,
+            "name": "应收结算明细扩展4"
+        },
+        "recSettleDetRecSettleVarExtra5": {
+            "meaning": "应收结算明细扩展5",
+            "reachable": true,
+            "name": "应收结算明细扩展5"
+        },
+        "recSettleDetRecSettleVersion": {
+            "meaning": "应收结算明细版本号",
+            "reachable": true,
+            "name": "应收结算明细版本号"
+        },
+        "recSettleDetReceiptDate": {
+            "meaning": "应收结算明细单据日期",
+            "reachable": true,
+            "name": "应收结算明细单据日期"
+        },
+        "recSettleDetReceiptType": {
+            "meaning": "应收结算明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "应收结算明细单据类型"
+        },
+        "recSettleDetRelatedTasksId": {
+            "meaning": "应收结算明细关联任务id",
+            "reachable": true,
+            "name": "应收结算明细关联任务id"
+        },
+        "recSettleDetSerialNumber": {
+            "meaning": "应收结算明细顺序号",
+            "reachable": true,
+            "name": "应收结算明细顺序号"
+        },
+        "recSettleDetSource": {
+            "meaning": "应收结算明细源",
+            "reachable": true,
+            "name": "应收结算明细源"
+        },
+        "recSettleDetSourceType": {
+            "meaning": "应收结算明细来源类型",
+            "reachable": true,
+            "name": "应收结算明细来源类型"
+        },
+        "recSettleDetState": {
+            "meaning": "应收结算明细通用状态",
+            "reachable": true,
+            "name": "应收结算明细通用状态"
+        },
+        "recSettleDetSystemCode": {
+            "meaning": "应收结算明细系统编码",
+            "reachable": true,
+            "name": "应收结算明细系统编码"
+        },
+        "recSettleDetTarget": {
+            "meaning": "应收结算明细目标",
+            "reachable": true,
+            "name": "应收结算明细目标"
+        },
+        "recSettleDetTaskNodeName": {
+            "meaning": "应收结算明细任务节点名称",
+            "reachable": true,
+            "name": "应收结算明细任务节点名称"
+        },
+        "recSettleDetTenantId": {
+            "meaning": "应收结算明细租户ID",
+            "reachable": true,
+            "name": "应收结算明细租户ID"
+        },
+        "recSettleDetThirdPartyClass": {
+            "meaning": "应收结算明细第三方分类",
+            "reachable": true,
+            "name": "应收结算明细第三方分类"
+        },
+        "recSettleDetThirdPartyId": {
+            "meaning": "应收结算明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "应收结算明细第三方系统中的唯一ID"
+        },
+        "recSettleDetThirdPartyName": {
+            "meaning": "应收结算明细第三方名称",
+            "reachable": true,
+            "name": "应收结算明细第三方名称"
+        },
+        "recSettleDetToAuditDate": {
+            "meaning": "recSettleDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToBeginTime": {
+            "meaning": "recSettleDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToCreateTime": {
+            "meaning": "recSettleDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDateExtra1": {
+            "meaning": "recSettleDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDateExtra2": {
+            "meaning": "recSettleDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDateExtra3": {
+            "meaning": "recSettleDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDateExtra4": {
+            "meaning": "recSettleDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDateExtra5": {
+            "meaning": "recSettleDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToDeliveryDate": {
+            "meaning": "recSettleDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToEndTime": {
+            "meaning": "recSettleDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToReceiptDate": {
+            "meaning": "recSettleDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetToUpdateTime": {
+            "meaning": "recSettleDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "recSettleDetTotalInvoicedAmount": {
+            "meaning": "应收结算明细总开票金额",
+            "reachable": true,
+            "name": "应收结算明细总开票金额"
+        },
+        "recSettleDetUnitCode": {
+            "meaning": "应收结算明细单位id",
+            "reachable": true,
+            "name": "应收结算明细单位id"
+        },
+        "recSettleDetUpdateTime": {
+            "meaning": "应收结算明细更新时间",
+            "reachable": true,
+            "name": "应收结算明细更新时间"
+        },
+        "recSettleDetUpdater": {
+            "meaning": "应收结算明细更新人",
+            "reachable": true,
+            "name": "应收结算明细更新人"
+        },
+        "recSettleDetUpdaterId": {
+            "meaning": "应收结算明细更新人ID",
+            "reachable": true,
+            "name": "应收结算明细更新人ID"
+        },
+        "recSettleDetUserCode": {
+            "meaning": "应收结算明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "应收结算明细智能节点的唯一编码"
+        },
+        "recSettleDetVarExtra1": {
+            "meaning": "应收结算明细扩展1",
+            "reachable": true,
+            "name": "应收结算明细扩展1"
+        },
+        "recSettleDetVarExtra2": {
+            "meaning": "应收结算明细扩展2",
+            "reachable": true,
+            "name": "应收结算明细扩展2"
+        },
+        "recSettleDetVarExtra3": {
+            "meaning": "应收结算明细扩展3",
+            "reachable": true,
+            "name": "应收结算明细扩展3"
+        },
+        "recSettleDetVarExtra4": {
+            "meaning": "应收结算明细扩展4",
+            "reachable": true,
+            "name": "应收结算明细扩展4"
+        },
+        "recSettleDetVarExtra5": {
+            "meaning": "应收结算明细扩展5",
+            "reachable": true,
+            "name": "应收结算明细扩展5"
+        },
+        "recSettleDetVersion": {
+            "meaning": "应收结算明细版本号",
+            "reachable": true,
+            "name": "应收结算明细版本号"
+        },
+        "recSettleDetWorkOrderId": {
+            "meaning": "应收结算明细工单ID",
+            "reachable": true,
+            "name": "应收结算明细工单ID"
+        }
+    }
+}

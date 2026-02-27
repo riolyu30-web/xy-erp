@@ -51,8 +51,7 @@
                     "name": "员工表",
                     "function_name": "find_all_staff",
                     "prefix": "员工",
-                    "remark": "获取员工信息",
-                    "data_label": "item"
+                    "remark": "获取员工信息"
                 },
                 {
                     "api_name": "/group/findList",
@@ -286,6 +285,537 @@
                     "name": "关联表",
                     "function_name": "get_source",
                     "remark": "通过订单找合同信息"
+                }
+            ]
+        },
+        {
+            "service_name": "order",
+            "relations": [],
+            "tools": [
+                {
+                    "api_name": "/biz-order-detail/findList",
+                    "request": {
+                        "bizOrderDetailBizOrderClazz": "BUSINESS_ORDER",
+                        "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL"
+                    },
+                    "mainTabClazz": "BUSINESS_ORDER_DETAIL",
+                    "response": {
+                        "bizOrderDetailActualTimeRequired": {
+                            "meaning": "业务订单明细实际需时(小时)",
+                            "reachable": true,
+                            "name": "业务订单明细实际需时"
+                        },
+                        "bizOrderDetailAddress": {
+                            "meaning": "业务订单明细详细地址",
+                            "reachable": true,
+                            "name": "业务订单明细详细地址"
+                        },
+                        "bizOrderDetailAdjustmentTimeRequired": {
+                            "meaning": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)",
+                            "reachable": true,
+                            "name": "业务订单明细调整需时"
+                        },
+                        "bizOrderDetailAssignStatus": {
+                            "meaning": "业务订单明细指派状态",
+                            "reachable": true,
+                            "name": "业务订单明细指派状态"
+                        },
+                        "bizOrderDetailAuditDate": {
+                            "meaning": "业务订单明细审核时间",
+                            "reachable": true,
+                            "name": "业务订单明细审核时间"
+                        },
+                        "bizOrderDetailAuditStatus": {
+                            "meaning": "业务订单明细审核状态",
+                            "reachable": true,
+                            "name": "业务订单明细审核状态"
+                        },
+                        "bizOrderDetailBizOrderBeginTime": {
+                            "meaning": "业务订单明细开始时间",
+                            "reachable": true,
+                            "name": "业务订单明细开始时间"
+                        },
+                        "bizOrderDetailBizOrderBriefName": {
+                            "meaning": "业务订单明细简称",
+                            "reachable": true,
+                            "name": "业务订单明细简称"
+                        },
+                        "bizOrderDetailBizOrderClosedReason": {
+                            "meaning": "业务订单明细结案原因",
+                            "reachable": true,
+                            "name": "业务订单明细结案原因"
+                        },
+                        "bizOrderDetailBizOrderClosedStatus": {
+                            "meaning": "业务订单明细结案状态",
+                            "reachable": true,
+                            "name": "业务订单明细结案状态"
+                        },
+                        "bizOrderDetailBizOrderCompleteQuantity": {
+                            "meaning": "业务订单明细完成数量",
+                            "reachable": true,
+                            "name": "业务订单明细完成数量"
+                        },
+                        "bizOrderDetailBizOrderCompleteStatus": {
+                            "meaning": "业务订单明细完成状态",
+                            "reachable": true,
+                            "name": "业务订单明细完成状态"
+                        },
+                        "bizOrderDetailBizOrderContName": {
+                            "meaning": "业务订单明细联系人姓名",
+                            "reachable": true,
+                            "name": "业务订单明细联系人姓名"
+                        },
+                        "bizOrderDetailBizOrderCur": {
+                            "meaning": "业务订单明细币种",
+                            "reachable": true,
+                            "name": "业务订单明细币种"
+                        },
+                        "bizOrderDetailBizOrderCurRate": {
+                            "meaning": "业务订单明细汇率",
+                            "reachable": true,
+                            "name": "业务订单明细汇率"
+                        },
+                        "bizOrderDetailBizOrderDeliveryDate": {
+                            "meaning": "业务订单明细交货日期",
+                            "reachable": true,
+                            "name": "业务订单明细交货日期"
+                        },
+                        "bizOrderDetailBizOrderDelvCust": {
+                            "meaning": "业务订单明细送货客户",
+                            "reachable": true,
+                            "name": "业务订单明细送货客户"
+                        },
+                        "bizOrderDetailBizOrderIsUrgent": {
+                            "meaning": "业务订单明细是否加急",
+                            "reachable": true,
+                            "name": "业务订单明细是否加急"
+                        },
+                        "bizOrderDetailBizOrderMaterialId": {
+                            "meaning": "业务订单明细物料id",
+                            "reachable": true,
+                            "name": "业务订单明细物料id"
+                        },
+                        "bizOrderDetailBizOrderPlannedTimeRequired": {
+                            "meaning": "业务订单明细计划需时(小时)",
+                            "reachable": true,
+                            "name": "业务订单明细计划需时"
+                        },
+                        "bizOrderDetailBizOrderPrintTimes": {
+                            "meaning": "业务订单明细打印次数",
+                            "reachable": true,
+                            "name": "业务订单明细打印次数"
+                        },
+                        "bizOrderDetailBizOrderPriority": {
+                            "meaning": "业务订单明细优先级",
+                            "reachable": true,
+                            "name": "业务订单明细优先级"
+                        },
+                        "bizOrderDetailBizOrderStlAmtFmt": {
+                            "meaning": "业务订单明细结算金额保留小数位(默认2位，可手动变更)",
+                            "reachable": true,
+                            "name": "业务订单明细结算金额保留小数位"
+                        },
+                        "bizOrderDetailBizOrderStlFee": {
+                            "meaning": "业务订单明细结算费用（默认与含税总金额相等)",
+                            "reachable": true,
+                            "name": "业务订单明细结算费用"
+                        },
+                        "bizOrderDetailBizOrderTaxRt": {
+                            "meaning": "业务订单明细税率",
+                            "reachable": true,
+                            "name": "业务订单明细税率"
+                        },
+                        "bizOrderDetailBizOrderTotalFeeNt": {
+                            "meaning": "业务订单明细总费用(不含税)",
+                            "reachable": true,
+                            "name": "业务订单明细总费用"
+                        },
+                        "bizOrderDetailBizOrderTotalVol": {
+                            "meaning": "业务订单明细总体积",
+                            "reachable": true,
+                            "name": "业务订单明细总体积"
+                        },
+                        "bizOrderDetailBizOrderTotalWithTax": {
+                            "meaning": "业务订单明细总费用(含税)",
+                            "reachable": true,
+                            "name": "业务订单明细总费用"
+                        },
+                        "bizOrderDetailBizOrderTotalWt": {
+                            "meaning": "业务订单明细总重量",
+                            "reachable": true,
+                            "name": "业务订单明细总重量"
+                        },
+                        "bizOrderDetailCompleteStatus": {
+                            "meaning": "业务订单明细完成状态",
+                            "reachable": true,
+                            "name": "业务订单明细完成状态"
+                        },
+                        "bizOrderDetailDeliveryDate": {
+                            "meaning": "业务订单明细交货日期",
+                            "reachable": true,
+                            "name": "业务订单明细交货日期"
+                        },
+                        "bizOrderDetailDeliveryTypeId": {
+                            "meaning": "业务订单明细送货类型",
+                            "reachable": true,
+                            "name": "业务订单明细送货类型"
+                        },
+                        "bizOrderDetailEndTimeRequired": {
+                            "meaning": "业务订单明细最后需时(小时)",
+                            "reachable": true,
+                            "name": "业务订单明细最后需时"
+                        },
+                        "bizOrderDetailEngName": {
+                            "meaning": "业务订单明细英文名称",
+                            "reachable": true,
+                            "name": "业务订单明细英文名称"
+                        },
+                        "bizOrderDetailExpectedDate": {
+                            "type": "object",
+                            "meaning": "业务订单明细预计交期",
+                            "reachable": true,
+                            "name": "业务订单明细预计交期"
+                        },
+                        "bizOrderDetailExtMatBarcode": {
+                            "meaning": "业务订单明细外部物料条码(BarCode)",
+                            "reachable": true,
+                            "name": "业务订单明细外部物料条码"
+                        },
+                        "bizOrderDetailExtMatCode": {
+                            "meaning": "业务订单明细外部物料编码(例客户产品编码)",
+                            "reachable": true,
+                            "name": "业务订单明细外部物料编码"
+                        },
+                        "bizOrderDetailExtMatName": {
+                            "meaning": "业务订单明细外部物料名称(例客户产品名称)",
+                            "reachable": true,
+                            "name": "业务订单明细外部物料名称"
+                        },
+                        "bizOrderDetailId": {
+                            "meaning": "业务订单明细主键ID",
+                            "is_primary": true,
+                            "reachable": true,
+                            "name": "业务订单明细主键ID"
+                        },
+                        "bizOrderDetailInvoRecIssQuantity": {
+                            "meaning": "业务订单明细开/收票数量",
+                            "reachable": true,
+                            "name": "业务订单明细开/收票数量"
+                        },
+                        "bizOrderDetailLocUnitPrice": {
+                            "meaning": "业务订单明细本币单价(根据币种，外币才显示)，外币不含税",
+                            "reachable": true,
+                            "name": "业务订单明细本币单价"
+                        },
+                        "bizOrderDetailLocalAmount": {
+                            "meaning": "业务订单明细本币金额(根据币种，外币才显示)，外币不含税",
+                            "reachable": true,
+                            "name": "业务订单明细本币金额"
+                        },
+                        "bizOrderDetailLossQty": {
+                            "meaning": "业务订单明细损耗",
+                            "reachable": true,
+                            "name": "业务订单明细损耗"
+                        },
+                        "bizOrderDetailMatCat": {
+                            "meaning": "业务订单明细物料分类ID",
+                            "reachable": true,
+                            "name": "业务订单明细物料分类ID"
+                        }
+                    },
+                    "name": "业务订单明细",
+                    "function_name": "biz_order_detail",
+                    "prefix": "业务订单明细",
+                    "remark": "获取销售订单",
+                    "filter": [
+                        {
+                            "field": "bizOrderDetailFromCreateTime",
+                            "format": "YYYY-MM-DD HH:mm:ss",
+                            "remark": "开始时间"
+                        },
+                        {
+                            "field": "bizOrderDetailToCreateTime",
+                            "format": "YYYY-MM-DD HH:mm:ss",
+                            "remark": "结束时间"
+                        }
+                    ]
+                },
+                {
+                    "api_name": "/prd-oapy-det/findList",
+                    "request": {
+                        "prdOApyDetPrdOApyClazz": "PRD_O_APY",
+                        "prdOApyDetClazz": "PRD_O_APY_DET"
+                    },
+                    "mainTabClazz": "PRD_O_APY_DET",
+                    "response": {
+                        "prdOApyDetActualTimeRequired": {
+                            "meaning": "成品出库申请明细实际需时(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细实际需时"
+                        },
+                        "prdOApyDetAdjustmentTimeRequired": {
+                            "meaning": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细调整需时"
+                        },
+                        "prdOApyDetAuditDate": {
+                            "meaning": "成品出库申请明细审核时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细审核时间"
+                        },
+                        "prdOApyDetAuditStatus": {
+                            "meaning": "成品出库申请明细审核状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细审核状态"
+                        },
+                        "prdOApyDetBeginTime": {
+                            "meaning": "成品出库申请明细开始时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细开始时间"
+                        },
+                        "prdOApyDetBriefName": {
+                            "meaning": "成品出库申请明细简称",
+                            "reachable": true,
+                            "name": "成品出库申请明细简称"
+                        },
+                        "prdOApyDetCompleteQuantity": {
+                            "meaning": "成品出库申请明细完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细完成数量"
+                        },
+                        "prdOApyDetCompleteStatus": {
+                            "meaning": "成品出库申请明细完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细完成状态"
+                        },
+                        "prdOApyDetConsigneeName": {
+                            "meaning": "成品出库申请明细收货单位名称",
+                            "reachable": true,
+                            "name": "成品出库申请明细收货单位名称"
+                        },
+                        "prdOApyDetCreateTime": {
+                            "meaning": "成品出库申请明细创建时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细创建时间"
+                        },
+                        "prdOApyDetCustContact": {
+                            "meaning": "成品出库申请明细收货人(客户联系人)",
+                            "reachable": true,
+                            "name": "成品出库申请明细收货人"
+                        },
+                        "prdOApyDetCustContactCellPhone": {
+                            "meaning": "成品出库申请明细手机号(客户联系人手机号)",
+                            "reachable": true,
+                            "name": "成品出库申请明细手机号"
+                        },
+                        "prdOApyDetCustContactPhone": {
+                            "meaning": "成品出库申请明细电话(客户联系人电话)",
+                            "reachable": true,
+                            "name": "成品出库申请明细电话"
+                        },
+                        "prdOApyDetCustDeliverAddress": {
+                            "meaning": "成品出库申请明细送货地址(客户送货地址)",
+                            "reachable": true,
+                            "name": "成品出库申请明细送货地址"
+                        },
+                        "prdOApyDetDeliveryDate": {
+                            "meaning": "成品出库申请明细交货日期",
+                            "reachable": true,
+                            "name": "成品出库申请明细交货日期"
+                        },
+                        "prdOApyDetDescription": {
+                            "meaning": "成品出库申请明细描述",
+                            "reachable": true,
+                            "name": "成品出库申请明细描述"
+                        },
+                        "prdOApyDetEndTime": {
+                            "meaning": "成品出库申请明细结束时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细结束时间"
+                        },
+                        "prdOApyDetEndTimeRequired": {
+                            "meaning": "成品出库申请明细最后需时(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细最后需时"
+                        },
+                        "prdOApyDetEngName": {
+                            "meaning": "成品出库申请明细英文名称",
+                            "reachable": true,
+                            "name": "成品出库申请明细英文名称"
+                        },
+                        "prdOApyDetExchangeRateId": {
+                            "meaning": "成品出库申请明细币种汇率id",
+                            "reachable": true,
+                            "name": "成品出库申请明细币种汇率id"
+                        },
+                        "prdOApyDetGiftQuantity": {
+                            "meaning": "成品出库申请明细赠品数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细赠品数量"
+                        },
+                        "prdOApyDetId": {
+                            "meaning": "成品出库申请明细PK",
+                            "is_primary": true,
+                            "reachable": true,
+                            "name": "成品出库申请明细PK"
+                        },
+                        "prdOApyDetInvTypeTaxRateId": {
+                            "meaning": "成品出库申请明细发票税率id",
+                            "reachable": true,
+                            "name": "成品出库申请明细发票税率id"
+                        },
+                        "prdOApyDetPlannedTimeRequired": {
+                            "meaning": "成品出库申请明细计划需时(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细计划需时"
+                        },
+                        "prdOApyDetPrdOApyActualTimeRequired": {
+                            "meaning": "成品出库申请明细实际需时(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细实际需时"
+                        },
+                        "prdOApyDetPrdOApyAdjustmentTimeRequired": {
+                            "meaning": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细调整需时"
+                        },
+                        "prdOApyDetPrdOApyBeginTime": {
+                            "meaning": "成品出库申请明细开始时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细开始时间"
+                        },
+                        "prdOApyDetPrdOApyBriefName": {
+                            "meaning": "成品出库申请明细简称",
+                            "reachable": true,
+                            "name": "成品出库申请明细简称"
+                        },
+                        "prdOApyDetPrdOApyClosedReason": {
+                            "meaning": "成品出库申请明细结案原因",
+                            "reachable": true,
+                            "name": "成品出库申请明细结案原因"
+                        },
+                        "prdOApyDetPrdOApyClosedStatus": {
+                            "meaning": "成品出库申请明细结案状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细结案状态"
+                        },
+                        "prdOApyDetPrdOApyComment": {
+                            "meaning": "成品出库申请明细评论",
+                            "reachable": true,
+                            "name": "成品出库申请明细评论"
+                        },
+                        "prdOApyDetPrdOApyCompleteQuantity": {
+                            "meaning": "成品出库申请明细完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细完成数量"
+                        },
+                        "prdOApyDetPrdOApyCompleteStatus": {
+                            "meaning": "成品出库申请明细完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细完成状态"
+                        },
+                        "prdOApyDetPrdOApyCreateTime": {
+                            "meaning": "成品出库申请明细创建时间",
+                            "reachable": true,
+                            "name": "成品出库申请明细创建时间"
+                        },
+                        "prdOApyDetPrdOApyDeliveryDate": {
+                            "meaning": "成品出库申请明细交货日期",
+                            "reachable": true,
+                            "name": "成品出库申请明细交货日期"
+                        },
+                        "prdOApyDetPrdOApyEngName": {
+                            "meaning": "成品出库申请明细英文名称",
+                            "reachable": true,
+                            "name": "成品出库申请明细英文名称"
+                        },
+                        "prdOApyDetPrdOApyGropeCode": {
+                            "meaning": "成品出库申请明细搜索码",
+                            "reachable": true,
+                            "name": "成品出库申请明细搜索码"
+                        },
+                        "prdOApyDetPrdOApyPlannedTimeRequired": {
+                            "meaning": "成品出库申请明细计划需时(小时)",
+                            "reachable": true,
+                            "name": "成品出库申请明细计划需时"
+                        },
+                        "prdOApyDetPrdOApyProductionShiftId": {
+                            "meaning": "成品出库申请明细生产班次ID",
+                            "reachable": true,
+                            "name": "成品出库申请明细生产班次ID"
+                        },
+                        "prdOApyDetPrdOApyQuantity": {
+                            "meaning": "成品出库申请明细任务数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细任务数量"
+                        },
+                        "prdOApyDetPrdSalGiftQuantity": {
+                            "meaning": "成品出库申请明细成品销货赠品完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货赠品完成数量"
+                        },
+                        "prdOApyDetPrdSalGiftStatus": {
+                            "meaning": "成品出库申请明细成品销货赠品完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货赠品完成状态"
+                        },
+                        "prdOApyDetPrdSalQuantity": {
+                            "meaning": "成品出库申请明细成品销货完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货完成数量"
+                        },
+                        "prdOApyDetPrdSalSpareQuantity": {
+                            "meaning": "成品出库申请明细成品销货备品完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货备品完成数量"
+                        },
+                        "prdOApyDetPrdSalSpareStatus": {
+                            "meaning": "成品出库申请明细成品销货备品完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货备品完成状态"
+                        },
+                        "prdOApyDetPrdSalStatus": {
+                            "meaning": "成品出库申请明细成品销货完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细成品销货完成状态"
+                        },
+                        "prdOApyDetTotalAmountInTax": {
+                            "meaning": "成品出库申请明细含税金额",
+                            "reachable": true,
+                            "name": "成品出库申请明细含税金额"
+                        },
+                        "prdOApyDetTotalAmountWitTax": {
+                            "meaning": "成品出库申请明细不含税金额",
+                            "reachable": true,
+                            "name": "成品出库申请明细不含税金额"
+                        },
+                        "prdOApyDetTransPlanQuantity": {
+                            "meaning": "成品出库申请明细运输计划完成数量",
+                            "reachable": true,
+                            "name": "成品出库申请明细运输计划完成数量"
+                        },
+                        "prdOApyDetTransPlanStatus": {
+                            "meaning": "成品出库申请明细运输计划完成状态",
+                            "reachable": true,
+                            "name": "成品出库申请明细运输计划完成状态"
+                        }
+                    },
+                    "name": "成品出库申请明细",
+                    "function_name": "prd_oapy_det",
+                    "remark": "获取送货通知",
+                    "prefix": "成品出库申请明细",
+                    "filter": [
+                        {
+                            "field": "prdOApyDetFromCreateTime",
+                            "format": "YYYY-MM-DD HH:mm:ss",
+                            "remark": "开始时间"
+                        },
+                        {
+                            "field": "prdOApyDetToCreateTime",
+                            "format": "YYYY-MM-DD HH:mm:ss",
+                            "remark": "结束时间"
+                        }
+                    ]
                 }
             ]
         }

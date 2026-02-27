@@ -1,0 +1,1540 @@
+{
+    "api_name": "/order-notice-det/findList",
+    "table_name": "订单通知单明细",
+    "request": {
+        "orderNoticeDetOrderNoticeClazz": "ORDER_NOTICE",
+        "orderNoticeDetClazz": "ORDER_NOTICE_DET"
+    },
+    "mainTabClazz": "ORDER_NOTICE_DET",
+    "response": {
+        "orderNoticeDetActualTimeRequired": {
+            "meaning": "订单通知单明细实际需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细实际需时"
+        },
+        "orderNoticeDetAddress": {
+            "meaning": "订单通知单明细详细地址",
+            "reachable": true,
+            "name": "订单通知单明细详细地址"
+        },
+        "orderNoticeDetAdjustmentTimeRequired": {
+            "meaning": "订单通知单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "订单通知单明细调整需时"
+        },
+        "orderNoticeDetApplicationId": {
+            "meaning": "订单通知单明细应用ID",
+            "reachable": true,
+            "name": "订单通知单明细应用ID"
+        },
+        "orderNoticeDetAreaId": {
+            "meaning": "订单通知单明细行政区域id",
+            "reachable": true,
+            "name": "订单通知单明细行政区域id"
+        },
+        "orderNoticeDetAuditDate": {
+            "meaning": "订单通知单明细审核时间",
+            "reachable": true,
+            "name": "订单通知单明细审核时间"
+        },
+        "orderNoticeDetAuditStatus": {
+            "meaning": "订单通知单明细审核状态",
+            "reachable": true,
+            "name": "订单通知单明细审核状态"
+        },
+        "orderNoticeDetAvailableScheduleId": {
+            "meaning": "订单通知单明细可用日程id",
+            "reachable": true,
+            "name": "订单通知单明细可用日程id"
+        },
+        "orderNoticeDetBeginTime": {
+            "meaning": "订单通知单明细开始时间",
+            "reachable": true,
+            "name": "订单通知单明细开始时间"
+        },
+        "orderNoticeDetBizOrderDetQuantity": {
+            "meaning": "订单通知单明细已开订单通知单数量（订单通知单反写）",
+            "reachable": true,
+            "name": "订单通知单明细已开订单通知单数量"
+        },
+        "orderNoticeDetBizOrderDetSpareQuantity": {
+            "meaning": "订单通知单明细已开订单通知单备品数量（订单通知单反写）",
+            "reachable": true,
+            "name": "订单通知单明细已开订单通知单备品数量"
+        },
+        "orderNoticeDetBizOrderDetSpareStatus": {
+            "meaning": "订单通知单明细已开订单通知单备品状态（订单通知单反写）",
+            "reachable": true,
+            "name": "订单通知单明细已开订单通知单备品状态"
+        },
+        "orderNoticeDetBizOrderDetStatus": {
+            "meaning": "订单通知单明细已开订单通知单状态（订单通知单反写）",
+            "reachable": true,
+            "name": "订单通知单明细已开订单通知单状态"
+        },
+        "orderNoticeDetBizVersion": {
+            "meaning": "订单通知单明细业务自定义版本号",
+            "reachable": true,
+            "name": "订单通知单明细业务自定义版本号"
+        },
+        "orderNoticeDetBriefName": {
+            "meaning": "订单通知单明细简称",
+            "reachable": true,
+            "name": "订单通知单明细简称"
+        },
+        "orderNoticeDetBusDivisId": {
+            "meaning": "订单通知单明细事业部id",
+            "reachable": true,
+            "name": "订单通知单明细事业部id"
+        },
+        "orderNoticeDetClazz": {
+            "meaning": "订单通知单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "订单通知单明细子类"
+        },
+        "orderNoticeDetClosedReason": {
+            "meaning": "订单通知单明细结案原因",
+            "reachable": true,
+            "name": "订单通知单明细结案原因"
+        },
+        "orderNoticeDetClosedStatus": {
+            "meaning": "订单通知单明细结案状态",
+            "reachable": true,
+            "name": "订单通知单明细结案状态"
+        },
+        "orderNoticeDetComment": {
+            "meaning": "订单通知单明细评论",
+            "reachable": true,
+            "name": "订单通知单明细评论"
+        },
+        "orderNoticeDetCompleteQuantity": {
+            "meaning": "订单通知单明细完成数量",
+            "reachable": true,
+            "name": "订单通知单明细完成数量"
+        },
+        "orderNoticeDetCompleteStatus": {
+            "meaning": "订单通知单明细完成状态",
+            "reachable": true,
+            "name": "订单通知单明细完成状态"
+        },
+        "orderNoticeDetCostSchemeId": {
+            "meaning": "orderNoticeDetCostSchemeId",
+            "reachable": true,
+            "name": ""
+        },
+        "orderNoticeDetCreateTime": {
+            "meaning": "订单通知单明细创建时间",
+            "reachable": true,
+            "name": "订单通知单明细创建时间"
+        },
+        "orderNoticeDetCreator": {
+            "meaning": "订单通知单明细创建人",
+            "reachable": true,
+            "name": "订单通知单明细创建人"
+        },
+        "orderNoticeDetCreatorId": {
+            "meaning": "订单通知单明细创建人ID",
+            "reachable": true,
+            "name": "订单通知单明细创建人ID"
+        },
+        "orderNoticeDetDateExtra1": {
+            "meaning": "订单通知单明细扩展时间1",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间1"
+        },
+        "orderNoticeDetDateExtra2": {
+            "meaning": "订单通知单明细扩展时间2",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间2"
+        },
+        "orderNoticeDetDateExtra3": {
+            "meaning": "订单通知单明细扩展时间3",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间3"
+        },
+        "orderNoticeDetDateExtra4": {
+            "meaning": "订单通知单明细扩展时间4",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间4"
+        },
+        "orderNoticeDetDateExtra5": {
+            "meaning": "订单通知单明细扩展时间5",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间5"
+        },
+        "orderNoticeDetDds": {
+            "meaning": "订单通知单明细欧盟零毁林法案-dds编号",
+            "reachable": true,
+            "name": "订单通知单明细欧盟零毁林法案-dds编号"
+        },
+        "orderNoticeDetDefaultType": {
+            "meaning": "订单通知单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "订单通知单明细智能节点主类型"
+        },
+        "orderNoticeDetDeliveryDate": {
+            "meaning": "订单通知单明细交货日期",
+            "reachable": true,
+            "name": "订单通知单明细交货日期"
+        },
+        "orderNoticeDetDeliveryTypeId": {
+            "meaning": "订单通知单明细送货类型",
+            "reachable": true,
+            "name": "订单通知单明细送货类型"
+        },
+        "orderNoticeDetDescription": {
+            "meaning": "订单通知单明细描述",
+            "reachable": true,
+            "name": "订单通知单明细描述"
+        },
+        "orderNoticeDetEndTime": {
+            "meaning": "订单通知单明细结束时间",
+            "reachable": true,
+            "name": "订单通知单明细结束时间"
+        },
+        "orderNoticeDetEndTimeRequired": {
+            "meaning": "订单通知单明细最后需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细最后需时"
+        },
+        "orderNoticeDetEngName": {
+            "meaning": "订单通知单明细英文名称",
+            "reachable": true,
+            "name": "订单通知单明细英文名称"
+        },
+        "orderNoticeDetEquipmentId": {
+            "meaning": "订单通知单明细设备id",
+            "reachable": true,
+            "name": "订单通知单明细设备id"
+        },
+        "orderNoticeDetExchangeRateId": {
+            "meaning": "订单通知单明细币种汇率id",
+            "reachable": true,
+            "name": "订单通知单明细币种汇率id"
+        },
+        "orderNoticeDetExpProcessId": {
+            "meaning": "订单通知单明细经验工序id",
+            "reachable": true,
+            "name": "订单通知单明细经验工序id"
+        },
+        "orderNoticeDetExpectedDate": {
+            "type": "object",
+            "meaning": "订单通知单明细预计交期",
+            "reachable": true,
+            "name": "订单通知单明细预计交期"
+        },
+        "orderNoticeDetExtMatBarcode": {
+            "meaning": "订单通知单明细外部物料条码(BarCode)",
+            "reachable": true,
+            "name": "订单通知单明细外部物料条码"
+        },
+        "orderNoticeDetExtMatCode": {
+            "meaning": "订单通知单明细外部物料编码(例客户产品编码)",
+            "reachable": true,
+            "name": "订单通知单明细外部物料编码"
+        },
+        "orderNoticeDetExtMatName": {
+            "meaning": "订单通知单明细外部物料名称(例客户产品名称)",
+            "reachable": true,
+            "name": "订单通知单明细外部物料名称"
+        },
+        "orderNoticeDetExtension": {
+            "meaning": "订单通知单明细扩展数据",
+            "reachable": true,
+            "name": "订单通知单明细扩展数据"
+        },
+        "orderNoticeDetExternalNo": {
+            "meaning": "订单通知单明细外部单号(例客户PO，采购送货单号)",
+            "reachable": true,
+            "name": "订单通知单明细外部单号"
+        },
+        "orderNoticeDetExternalState": {
+            "meaning": "订单通知单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "订单通知单明细上流程状态位"
+        },
+        "orderNoticeDetFilterClazz": {
+            "meaning": "订单通知单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "订单通知单明细冗余字段用于筛选"
+        },
+        "orderNoticeDetFlags": {
+            "meaning": "订单通知单明细63位标志位",
+            "reachable": true,
+            "name": "订单通知单明细63位标志位"
+        },
+        "orderNoticeDetFromAuditDate": {
+            "meaning": "orderNoticeDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromBeginTime": {
+            "meaning": "orderNoticeDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromCreateTime": {
+            "meaning": "orderNoticeDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDateExtra1": {
+            "meaning": "orderNoticeDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDateExtra2": {
+            "meaning": "orderNoticeDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDateExtra3": {
+            "meaning": "orderNoticeDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDateExtra4": {
+            "meaning": "orderNoticeDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDateExtra5": {
+            "meaning": "orderNoticeDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromDeliveryDate": {
+            "meaning": "orderNoticeDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromEndTime": {
+            "meaning": "orderNoticeDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromExpectedDate": {
+            "type": "object",
+            "meaning": "orderNoticeDetFromExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromReceiptDate": {
+            "meaning": "orderNoticeDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFromUpdateTime": {
+            "meaning": "orderNoticeDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetFscType": {
+            "meaning": "订单通知单明细FSC声明",
+            "reachable": true,
+            "name": "订单通知单明细FSC声明"
+        },
+        "orderNoticeDetGenerativePeople": {
+            "meaning": "订单通知单明细下发人",
+            "reachable": true,
+            "name": "订单通知单明细下发人"
+        },
+        "orderNoticeDetGenerativeState": {
+            "meaning": "订单通知单明细下发状态",
+            "reachable": true,
+            "name": "订单通知单明细下发状态"
+        },
+        "orderNoticeDetGiftQty": {
+            "meaning": "订单通知单明细赠品数量",
+            "reachable": true,
+            "name": "订单通知单明细赠品数量"
+        },
+        "orderNoticeDetGroovyScript": {
+            "meaning": "订单通知单明细groovy脚本",
+            "reachable": true,
+            "name": "订单通知单明细groovy脚本"
+        },
+        "orderNoticeDetGropeCode": {
+            "meaning": "订单通知单明细搜索码",
+            "reachable": true,
+            "name": "订单通知单明细搜索码"
+        },
+        "orderNoticeDetId": {
+            "meaning": "订单通知单明细pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "订单通知单明细pk"
+        },
+        "orderNoticeDetInUsed": {
+            "meaning": "订单通知单明细是否被使用",
+            "reachable": true,
+            "name": "订单通知单明细是否被使用"
+        },
+        "orderNoticeDetInvTypeTaxRateId": {
+            "meaning": "订单通知单明细发票税率id",
+            "reachable": true,
+            "name": "订单通知单明细发票税率id"
+        },
+        "orderNoticeDetIsBanned": {
+            "meaning": "订单通知单明细是否被禁用",
+            "reachable": true,
+            "name": "订单通知单明细是否被禁用"
+        },
+        "orderNoticeDetIsDeleted": {
+            "meaning": "订单通知单明细是否被删除",
+            "reachable": true,
+            "name": "订单通知单明细是否被删除"
+        },
+        "orderNoticeDetIsLeaf": {
+            "meaning": "订单通知单明细是否叶子节点",
+            "reachable": true,
+            "name": "订单通知单明细是否叶子节点"
+        },
+        "orderNoticeDetIsMainFlow": {
+            "meaning": "订单通知单明细是否是主流程",
+            "reachable": true,
+            "name": "订单通知单明细是否是主流程"
+        },
+        "orderNoticeDetIsManualModificationDate": {
+            "meaning": "订单通知单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "订单通知单明细是否手动修改计划生产时间"
+        },
+        "orderNoticeDetIsolation": {
+            "meaning": "订单通知单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "订单通知单明细智能节点数据隔离标识"
+        },
+        "orderNoticeDetJsScript": {
+            "meaning": "订单通知单明细js脚本",
+            "reachable": true,
+            "name": "订单通知单明细js脚本"
+        },
+        "orderNoticeDetLastWorkCode": {
+            "meaning": "订单通知单明细产品最新工单号",
+            "reachable": true,
+            "name": "订单通知单明细产品最新工单号"
+        },
+        "orderNoticeDetLocUnitPrice": {
+            "meaning": "订单通知单明细本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "订单通知单明细本币单价"
+        },
+        "orderNoticeDetLocalAmount": {
+            "meaning": "订单通知单明细本币金额(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "订单通知单明细本币金额"
+        },
+        "orderNoticeDetLossQty": {
+            "meaning": "订单通知单明细损耗",
+            "reachable": true,
+            "name": "订单通知单明细损耗"
+        },
+        "orderNoticeDetMatCat": {
+            "meaning": "订单通知单明细物料分类ID",
+            "reachable": true,
+            "name": "订单通知单明细物料分类ID"
+        },
+        "orderNoticeDetMaterialId": {
+            "meaning": "订单通知单明细物料id",
+            "reachable": true,
+            "name": "订单通知单明细物料id"
+        },
+        "orderNoticeDetName": {
+            "meaning": "订单通知单明细智能节点名",
+            "reachable": true,
+            "name": "订单通知单明细智能节点名"
+        },
+        "orderNoticeDetNameCodeSearch": {
+            "meaning": "订单通知单明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "订单通知单明细name、user_code模糊搜索"
+        },
+        "orderNoticeDetNumberExtra1": {
+            "meaning": "订单通知单明细扩展数量1",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量1"
+        },
+        "orderNoticeDetNumberExtra2": {
+            "meaning": "订单通知单明细扩展数量2",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量2"
+        },
+        "orderNoticeDetNumberExtra3": {
+            "meaning": "订单通知单明细扩展数量3",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量3"
+        },
+        "orderNoticeDetNumberExtra4": {
+            "meaning": "订单通知单明细扩展数量4",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量4"
+        },
+        "orderNoticeDetNumberExtra5": {
+            "meaning": "订单通知单明细扩展数量5",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量5"
+        },
+        "orderNoticeDetOrderNoticeActualTimeRequired": {
+            "meaning": "订单通知单明细实际需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细实际需时"
+        },
+        "orderNoticeDetOrderNoticeAdjustmentTimeRequired": {
+            "meaning": "订单通知单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "订单通知单明细调整需时"
+        },
+        "orderNoticeDetOrderNoticeAppearRequ": {
+            "meaning": "订单通知单明细产品结构下外观要求",
+            "reachable": true,
+            "name": "订单通知单明细产品结构下外观要求"
+        },
+        "orderNoticeDetOrderNoticeApplicationId": {
+            "meaning": "订单通知单明细应用ID",
+            "reachable": true,
+            "name": "订单通知单明细应用ID"
+        },
+        "orderNoticeDetOrderNoticeAuditDate": {
+            "meaning": "订单通知单明细审核时间",
+            "reachable": true,
+            "name": "订单通知单明细审核时间"
+        },
+        "orderNoticeDetOrderNoticeAuditStatus": {
+            "meaning": "订单通知单明细审核状态",
+            "reachable": true,
+            "name": "订单通知单明细审核状态"
+        },
+        "orderNoticeDetOrderNoticeAvailableScheduleId": {
+            "meaning": "订单通知单明细可用日程id",
+            "reachable": true,
+            "name": "订单通知单明细可用日程id"
+        },
+        "orderNoticeDetOrderNoticeBeginTime": {
+            "meaning": "订单通知单明细开始时间",
+            "reachable": true,
+            "name": "订单通知单明细开始时间"
+        },
+        "orderNoticeDetOrderNoticeBizVersion": {
+            "meaning": "订单通知单明细业务自定义版本号",
+            "reachable": true,
+            "name": "订单通知单明细业务自定义版本号"
+        },
+        "orderNoticeDetOrderNoticeBriefName": {
+            "meaning": "订单通知单明细简称",
+            "reachable": true,
+            "name": "订单通知单明细简称"
+        },
+        "orderNoticeDetOrderNoticeBusDivisId": {
+            "meaning": "订单通知单明细事业部id",
+            "reachable": true,
+            "name": "订单通知单明细事业部id"
+        },
+        "orderNoticeDetOrderNoticeClazz": {
+            "meaning": "订单通知单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "订单通知单明细子类"
+        },
+        "orderNoticeDetOrderNoticeClosedReason": {
+            "meaning": "订单通知单明细结案原因",
+            "reachable": true,
+            "name": "订单通知单明细结案原因"
+        },
+        "orderNoticeDetOrderNoticeClosedStatus": {
+            "meaning": "订单通知单明细结案状态",
+            "reachable": true,
+            "name": "订单通知单明细结案状态"
+        },
+        "orderNoticeDetOrderNoticeComment": {
+            "meaning": "订单通知单明细评论",
+            "reachable": true,
+            "name": "订单通知单明细评论"
+        },
+        "orderNoticeDetOrderNoticeCompleteQuantity": {
+            "meaning": "订单通知单明细完成数量",
+            "reachable": true,
+            "name": "订单通知单明细完成数量"
+        },
+        "orderNoticeDetOrderNoticeCompleteStatus": {
+            "meaning": "订单通知单明细完成状态",
+            "reachable": true,
+            "name": "订单通知单明细完成状态"
+        },
+        "orderNoticeDetOrderNoticeContName": {
+            "meaning": "订单通知单明细联系人姓名",
+            "reachable": true,
+            "name": "订单通知单明细联系人姓名"
+        },
+        "orderNoticeDetOrderNoticeCreateTime": {
+            "meaning": "订单通知单明细创建时间",
+            "reachable": true,
+            "name": "订单通知单明细创建时间"
+        },
+        "orderNoticeDetOrderNoticeCreator": {
+            "meaning": "订单通知单明细创建人",
+            "reachable": true,
+            "name": "订单通知单明细创建人"
+        },
+        "orderNoticeDetOrderNoticeCreatorId": {
+            "meaning": "订单通知单明细创建人ID",
+            "reachable": true,
+            "name": "订单通知单明细创建人ID"
+        },
+        "orderNoticeDetOrderNoticeCur": {
+            "meaning": "订单通知单明细币种",
+            "reachable": true,
+            "name": "订单通知单明细币种"
+        },
+        "orderNoticeDetOrderNoticeCurRate": {
+            "meaning": "订单通知单明细汇率",
+            "reachable": true,
+            "name": "订单通知单明细汇率"
+        },
+        "orderNoticeDetOrderNoticeCustId": {
+            "meaning": "订单通知单明细客户id",
+            "reachable": true,
+            "name": "订单通知单明细客户id"
+        },
+        "orderNoticeDetOrderNoticeDateExtra1": {
+            "meaning": "订单通知单明细扩展时间1",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间1"
+        },
+        "orderNoticeDetOrderNoticeDateExtra2": {
+            "meaning": "订单通知单明细扩展时间2",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间2"
+        },
+        "orderNoticeDetOrderNoticeDateExtra3": {
+            "meaning": "订单通知单明细扩展时间3",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间3"
+        },
+        "orderNoticeDetOrderNoticeDateExtra4": {
+            "meaning": "订单通知单明细扩展时间4",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间4"
+        },
+        "orderNoticeDetOrderNoticeDateExtra5": {
+            "meaning": "订单通知单明细扩展时间5",
+            "reachable": true,
+            "name": "订单通知单明细扩展时间5"
+        },
+        "orderNoticeDetOrderNoticeDefaultType": {
+            "meaning": "订单通知单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "订单通知单明细智能节点主类型"
+        },
+        "orderNoticeDetOrderNoticeDelMethod": {
+            "meaning": "订单通知单明细配送方式",
+            "reachable": true,
+            "name": "订单通知单明细配送方式"
+        },
+        "orderNoticeDetOrderNoticeDeliveryDate": {
+            "meaning": "订单通知单明细交货日期",
+            "reachable": true,
+            "name": "订单通知单明细交货日期"
+        },
+        "orderNoticeDetOrderNoticeDescription": {
+            "meaning": "订单通知单明细描述",
+            "reachable": true,
+            "name": "订单通知单明细描述"
+        },
+        "orderNoticeDetOrderNoticeEndTime": {
+            "meaning": "订单通知单明细结束时间",
+            "reachable": true,
+            "name": "订单通知单明细结束时间"
+        },
+        "orderNoticeDetOrderNoticeEndTimeRequired": {
+            "meaning": "订单通知单明细最后需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细最后需时"
+        },
+        "orderNoticeDetOrderNoticeEngName": {
+            "meaning": "订单通知单明细英文名称",
+            "reachable": true,
+            "name": "订单通知单明细英文名称"
+        },
+        "orderNoticeDetOrderNoticeEquipmentId": {
+            "meaning": "订单通知单明细设备id",
+            "reachable": true,
+            "name": "订单通知单明细设备id"
+        },
+        "orderNoticeDetOrderNoticeExchangeRateId": {
+            "meaning": "订单通知单明细币种汇率id",
+            "reachable": true,
+            "name": "订单通知单明细币种汇率id"
+        },
+        "orderNoticeDetOrderNoticeExtension": {
+            "meaning": "订单通知单明细扩展数据",
+            "reachable": true,
+            "name": "订单通知单明细扩展数据"
+        },
+        "orderNoticeDetOrderNoticeExternalState": {
+            "meaning": "订单通知单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "订单通知单明细上流程状态位"
+        },
+        "orderNoticeDetOrderNoticeFilterClazz": {
+            "meaning": "订单通知单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "订单通知单明细冗余字段用于筛选"
+        },
+        "orderNoticeDetOrderNoticeFlags": {
+            "meaning": "订单通知单明细63位标志位",
+            "reachable": true,
+            "name": "订单通知单明细63位标志位"
+        },
+        "orderNoticeDetOrderNoticeFmtDec": {
+            "meaning": "订单通知单明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "订单通知单明细保留小数位方法"
+        },
+        "orderNoticeDetOrderNoticeFromAuditDate": {
+            "meaning": "orderNoticeDetOrderNoticeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromBeginTime": {
+            "meaning": "orderNoticeDetOrderNoticeFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromCreateTime": {
+            "meaning": "orderNoticeDetOrderNoticeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDateExtra1": {
+            "meaning": "orderNoticeDetOrderNoticeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDateExtra2": {
+            "meaning": "orderNoticeDetOrderNoticeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDateExtra3": {
+            "meaning": "orderNoticeDetOrderNoticeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDateExtra4": {
+            "meaning": "orderNoticeDetOrderNoticeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDateExtra5": {
+            "meaning": "orderNoticeDetOrderNoticeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromDeliveryDate": {
+            "meaning": "orderNoticeDetOrderNoticeFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromEndTime": {
+            "meaning": "orderNoticeDetOrderNoticeFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromReceiptDate": {
+            "meaning": "orderNoticeDetOrderNoticeFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFromUpdateTime": {
+            "meaning": "orderNoticeDetOrderNoticeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeFscType": {
+            "meaning": "订单通知单明细FSC声明",
+            "reachable": true,
+            "name": "订单通知单明细FSC声明"
+        },
+        "orderNoticeDetOrderNoticeGenerativePeople": {
+            "meaning": "订单通知单明细下发人",
+            "reachable": true,
+            "name": "订单通知单明细下发人"
+        },
+        "orderNoticeDetOrderNoticeGenerativeState": {
+            "meaning": "订单通知单明细下发状态",
+            "reachable": true,
+            "name": "订单通知单明细下发状态"
+        },
+        "orderNoticeDetOrderNoticeGroovyScript": {
+            "meaning": "订单通知单明细groovy脚本",
+            "reachable": true,
+            "name": "订单通知单明细groovy脚本"
+        },
+        "orderNoticeDetOrderNoticeGropeCode": {
+            "meaning": "订单通知单明细搜索码",
+            "reachable": true,
+            "name": "订单通知单明细搜索码"
+        },
+        "orderNoticeDetOrderNoticeHandleMethod": {
+            "meaning": "订单通知单明细处理方式",
+            "reachable": true,
+            "name": "订单通知单明细处理方式"
+        },
+        "orderNoticeDetOrderNoticeId": {
+            "meaning": "订单通知单明细PK",
+            "reachable": true,
+            "name": "订单通知单明细PK"
+        },
+        "orderNoticeDetOrderNoticeInUsed": {
+            "meaning": "订单通知单明细是否被使用",
+            "reachable": true,
+            "name": "订单通知单明细是否被使用"
+        },
+        "orderNoticeDetOrderNoticeInvType": {
+            "meaning": "订单通知单明细发票类型id",
+            "reachable": true,
+            "name": "订单通知单明细发票类型id"
+        },
+        "orderNoticeDetOrderNoticeInvTypeTaxRateId": {
+            "meaning": "订单通知单明细发票税率id",
+            "reachable": true,
+            "name": "订单通知单明细发票税率id"
+        },
+        "orderNoticeDetOrderNoticeIsBanned": {
+            "meaning": "订单通知单明细是否被禁用",
+            "reachable": true,
+            "name": "订单通知单明细是否被禁用"
+        },
+        "orderNoticeDetOrderNoticeIsDeleted": {
+            "meaning": "订单通知单明细是否被删除",
+            "reachable": true,
+            "name": "订单通知单明细是否被删除"
+        },
+        "orderNoticeDetOrderNoticeIsLeaf": {
+            "meaning": "订单通知单明细是否叶子节点",
+            "reachable": true,
+            "name": "订单通知单明细是否叶子节点"
+        },
+        "orderNoticeDetOrderNoticeIsMainFlow": {
+            "meaning": "订单通知单明细是否是主流程",
+            "reachable": true,
+            "name": "订单通知单明细是否是主流程"
+        },
+        "orderNoticeDetOrderNoticeIsManualModificationDate": {
+            "meaning": "订单通知单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "订单通知单明细是否手动修改计划生产时间"
+        },
+        "orderNoticeDetOrderNoticeIsUrgent": {
+            "meaning": "订单通知单明细是否加急",
+            "reachable": true,
+            "name": "订单通知单明细是否加急"
+        },
+        "orderNoticeDetOrderNoticeIsolation": {
+            "meaning": "订单通知单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "订单通知单明细智能节点数据隔离标识"
+        },
+        "orderNoticeDetOrderNoticeJsScript": {
+            "meaning": "订单通知单明细js脚本",
+            "reachable": true,
+            "name": "订单通知单明细js脚本"
+        },
+        "orderNoticeDetOrderNoticeLcTotalAmt": {
+            "meaning": "订单通知单明细本币总费用(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "订单通知单明细本币总费用"
+        },
+        "orderNoticeDetOrderNoticeMaterialId": {
+            "meaning": "订单通知单明细物料id",
+            "reachable": true,
+            "name": "订单通知单明细物料id"
+        },
+        "orderNoticeDetOrderNoticeName": {
+            "meaning": "订单通知单明细智能节点名",
+            "reachable": true,
+            "name": "订单通知单明细智能节点名"
+        },
+        "orderNoticeDetOrderNoticeNameCodeSearch": {
+            "meaning": "订单通知单明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "订单通知单明细name、user_code模糊搜索"
+        },
+        "orderNoticeDetOrderNoticeNumberExtra1": {
+            "meaning": "订单通知单明细扩展数量1",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量1"
+        },
+        "orderNoticeDetOrderNoticeNumberExtra2": {
+            "meaning": "订单通知单明细扩展数量2",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量2"
+        },
+        "orderNoticeDetOrderNoticeNumberExtra3": {
+            "meaning": "订单通知单明细扩展数量3",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量3"
+        },
+        "orderNoticeDetOrderNoticeNumberExtra4": {
+            "meaning": "订单通知单明细扩展数量4",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量4"
+        },
+        "orderNoticeDetOrderNoticeNumberExtra5": {
+            "meaning": "订单通知单明细扩展数量5",
+            "reachable": true,
+            "name": "订单通知单明细扩展数量5"
+        },
+        "orderNoticeDetOrderNoticePCount": {
+            "meaning": "订单通知单明细打印次数",
+            "reachable": true,
+            "name": "订单通知单明细打印次数"
+        },
+        "orderNoticeDetOrderNoticeParentId": {
+            "meaning": "订单通知单明细父节点ID",
+            "reachable": true,
+            "name": "订单通知单明细父节点ID"
+        },
+        "orderNoticeDetOrderNoticePhone": {
+            "meaning": "订单通知单明细手机",
+            "reachable": true,
+            "name": "订单通知单明细手机"
+        },
+        "orderNoticeDetOrderNoticePlannedOutputQuantity": {
+            "meaning": "订单通知单明细计划产出数量",
+            "reachable": true,
+            "name": "订单通知单明细计划产出数量"
+        },
+        "orderNoticeDetOrderNoticePlannedTimeRequired": {
+            "meaning": "订单通知单明细计划需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细计划需时"
+        },
+        "orderNoticeDetOrderNoticePrintTimes": {
+            "meaning": "订单通知单明细打印次数",
+            "reachable": true,
+            "name": "订单通知单明细打印次数"
+        },
+        "orderNoticeDetOrderNoticePriority": {
+            "meaning": "订单通知单明细优先级",
+            "reachable": true,
+            "name": "订单通知单明细优先级"
+        },
+        "orderNoticeDetOrderNoticeProCode": {
+            "meaning": "订单通知单明细项目编码",
+            "reachable": true,
+            "name": "订单通知单明细项目编码"
+        },
+        "orderNoticeDetOrderNoticeProName": {
+            "meaning": "订单通知单明细项目名称",
+            "reachable": true,
+            "name": "订单通知单明细项目名称"
+        },
+        "orderNoticeDetOrderNoticeProcessInstanceId": {
+            "meaning": "订单通知单明细流程实例ID",
+            "reachable": true,
+            "name": "订单通知单明细流程实例ID"
+        },
+        "orderNoticeDetOrderNoticeProductionProcessesTypeId": {
+            "meaning": "订单通知单明细工序类型ID",
+            "reachable": true,
+            "name": "订单通知单明细工序类型ID"
+        },
+        "orderNoticeDetOrderNoticeProductionShiftId": {
+            "meaning": "订单通知单明细生产班次ID",
+            "reachable": true,
+            "name": "订单通知单明细生产班次ID"
+        },
+        "orderNoticeDetOrderNoticeQuantity": {
+            "meaning": "订单通知单明细任务数量",
+            "reachable": true,
+            "name": "订单通知单明细任务数量"
+        },
+        "orderNoticeDetOrderNoticeReason": {
+            "meaning": "订单通知单明细打样原因",
+            "reachable": true,
+            "name": "订单通知单明细打样原因"
+        },
+        "orderNoticeDetOrderNoticeReasonDesc": {
+            "meaning": "订单通知单明细研发原因描述",
+            "reachable": true,
+            "name": "订单通知单明细研发原因描述"
+        },
+        "orderNoticeDetOrderNoticeReceiptDate": {
+            "meaning": "订单通知单明细单据日期",
+            "reachable": true,
+            "name": "订单通知单明细单据日期"
+        },
+        "orderNoticeDetOrderNoticeReceiptType": {
+            "meaning": "订单通知单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "订单通知单明细单据类型"
+        },
+        "orderNoticeDetOrderNoticeRelatedTasksId": {
+            "meaning": "订单通知单明细关联任务id",
+            "reachable": true,
+            "name": "订单通知单明细关联任务id"
+        },
+        "orderNoticeDetOrderNoticeSerialNumber": {
+            "meaning": "订单通知单明细顺序号",
+            "reachable": true,
+            "name": "订单通知单明细顺序号"
+        },
+        "orderNoticeDetOrderNoticeSource": {
+            "meaning": "订单通知单明细源",
+            "reachable": true,
+            "name": "订单通知单明细源"
+        },
+        "orderNoticeDetOrderNoticeSourceType": {
+            "meaning": "订单通知单明细来源类型",
+            "reachable": true,
+            "name": "订单通知单明细来源类型"
+        },
+        "orderNoticeDetOrderNoticeState": {
+            "meaning": "订单通知单明细通用状态",
+            "reachable": true,
+            "name": "订单通知单明细通用状态"
+        },
+        "orderNoticeDetOrderNoticeStlAmtFmt": {
+            "meaning": "订单通知单明细结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "订单通知单明细结算金额保留小数位"
+        },
+        "orderNoticeDetOrderNoticeStlFee": {
+            "meaning": "订单通知单明细结算费用（默认与含税总金额相等)",
+            "reachable": true,
+            "name": "订单通知单明细结算费用"
+        },
+        "orderNoticeDetOrderNoticeStlPriceFmt": {
+            "meaning": "订单通知单明细结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "订单通知单明细结算单价保留小数位"
+        },
+        "orderNoticeDetOrderNoticeStlType": {
+            "meaning": "订单通知单明细结算类型 SettlementType_id",
+            "reachable": true,
+            "name": "订单通知单明细结算类型"
+        },
+        "orderNoticeDetOrderNoticeSystemCode": {
+            "meaning": "订单通知单明细系统编码",
+            "reachable": true,
+            "name": "订单通知单明细系统编码"
+        },
+        "orderNoticeDetOrderNoticeTarget": {
+            "meaning": "订单通知单明细目标",
+            "reachable": true,
+            "name": "订单通知单明细目标"
+        },
+        "orderNoticeDetOrderNoticeTaskNodeName": {
+            "meaning": "订单通知单明细任务节点名称",
+            "reachable": true,
+            "name": "订单通知单明细任务节点名称"
+        },
+        "orderNoticeDetOrderNoticeTaxRt": {
+            "meaning": "订单通知单明细税率",
+            "reachable": true,
+            "name": "订单通知单明细税率"
+        },
+        "orderNoticeDetOrderNoticeTechParam": {
+            "meaning": "订单通知单明细产品关键参数与技术指标",
+            "reachable": true,
+            "name": "订单通知单明细产品关键参数与技术指标"
+        },
+        "orderNoticeDetOrderNoticeTenantId": {
+            "meaning": "订单通知单明细租户_guid",
+            "reachable": true,
+            "name": "订单通知单明细租户_guid"
+        },
+        "orderNoticeDetOrderNoticeThirdPartyClass": {
+            "meaning": "订单通知单明细第三方分类",
+            "reachable": true,
+            "name": "订单通知单明细第三方分类"
+        },
+        "orderNoticeDetOrderNoticeThirdPartyId": {
+            "meaning": "订单通知单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "订单通知单明细第三方系统中的唯一ID"
+        },
+        "orderNoticeDetOrderNoticeThirdPartyName": {
+            "meaning": "订单通知单明细第三方名称",
+            "reachable": true,
+            "name": "订单通知单明细第三方名称"
+        },
+        "orderNoticeDetOrderNoticeToAuditDate": {
+            "meaning": "orderNoticeDetOrderNoticeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToBeginTime": {
+            "meaning": "orderNoticeDetOrderNoticeToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToCreateTime": {
+            "meaning": "orderNoticeDetOrderNoticeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDateExtra1": {
+            "meaning": "orderNoticeDetOrderNoticeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDateExtra2": {
+            "meaning": "orderNoticeDetOrderNoticeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDateExtra3": {
+            "meaning": "orderNoticeDetOrderNoticeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDateExtra4": {
+            "meaning": "orderNoticeDetOrderNoticeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDateExtra5": {
+            "meaning": "orderNoticeDetOrderNoticeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToDeliveryDate": {
+            "meaning": "orderNoticeDetOrderNoticeToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToEndTime": {
+            "meaning": "orderNoticeDetOrderNoticeToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToReceiptDate": {
+            "meaning": "orderNoticeDetOrderNoticeToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeToUpdateTime": {
+            "meaning": "orderNoticeDetOrderNoticeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetOrderNoticeTotalFeeNt": {
+            "meaning": "订单通知单明细总费用(不含税)",
+            "reachable": true,
+            "name": "订单通知单明细总费用"
+        },
+        "orderNoticeDetOrderNoticeTotalVol": {
+            "meaning": "订单通知单明细总体积",
+            "reachable": true,
+            "name": "订单通知单明细总体积"
+        },
+        "orderNoticeDetOrderNoticeTotalWithTax": {
+            "meaning": "订单通知单明细总费用(含税)",
+            "reachable": true,
+            "name": "订单通知单明细总费用"
+        },
+        "orderNoticeDetOrderNoticeTotalWt": {
+            "meaning": "订单通知单明细总重量",
+            "reachable": true,
+            "name": "订单通知单明细总重量"
+        },
+        "orderNoticeDetOrderNoticeUnitCode": {
+            "meaning": "订单通知单明细单位id",
+            "reachable": true,
+            "name": "订单通知单明细单位id"
+        },
+        "orderNoticeDetOrderNoticeUpdateTime": {
+            "meaning": "订单通知单明细更新时间",
+            "reachable": true,
+            "name": "订单通知单明细更新时间"
+        },
+        "orderNoticeDetOrderNoticeUpdater": {
+            "meaning": "订单通知单明细更新人",
+            "reachable": true,
+            "name": "订单通知单明细更新人"
+        },
+        "orderNoticeDetOrderNoticeUpdaterId": {
+            "meaning": "订单通知单明细更新人ID",
+            "reachable": true,
+            "name": "订单通知单明细更新人ID"
+        },
+        "orderNoticeDetOrderNoticeUserCode": {
+            "meaning": "订单通知单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "订单通知单明细智能节点的唯一编码"
+        },
+        "orderNoticeDetOrderNoticeVarExtra1": {
+            "meaning": "订单通知单明细扩展1",
+            "reachable": true,
+            "name": "订单通知单明细扩展1"
+        },
+        "orderNoticeDetOrderNoticeVarExtra2": {
+            "meaning": "订单通知单明细扩展2",
+            "reachable": true,
+            "name": "订单通知单明细扩展2"
+        },
+        "orderNoticeDetOrderNoticeVarExtra3": {
+            "meaning": "订单通知单明细扩展3",
+            "reachable": true,
+            "name": "订单通知单明细扩展3"
+        },
+        "orderNoticeDetOrderNoticeVarExtra4": {
+            "meaning": "订单通知单明细扩展4",
+            "reachable": true,
+            "name": "订单通知单明细扩展4"
+        },
+        "orderNoticeDetOrderNoticeVarExtra5": {
+            "meaning": "订单通知单明细扩展5",
+            "reachable": true,
+            "name": "订单通知单明细扩展5"
+        },
+        "orderNoticeDetOrderNoticeVersion": {
+            "meaning": "订单通知单明细版本号",
+            "reachable": true,
+            "name": "订单通知单明细版本号"
+        },
+        "orderNoticeDetParentId": {
+            "meaning": "订单通知单明细父节点ID",
+            "reachable": true,
+            "name": "订单通知单明细父节点ID"
+        },
+        "orderNoticeDetPlannedOutputQuantity": {
+            "meaning": "订单通知单明细计划产出数量",
+            "reachable": true,
+            "name": "订单通知单明细计划产出数量"
+        },
+        "orderNoticeDetPlannedTimeRequired": {
+            "meaning": "订单通知单明细计划需时(小时)",
+            "reachable": true,
+            "name": "订单通知单明细计划需时"
+        },
+        "orderNoticeDetPrintTimes": {
+            "meaning": "订单通知单明细打印次数",
+            "reachable": true,
+            "name": "订单通知单明细打印次数"
+        },
+        "orderNoticeDetPriority": {
+            "meaning": "订单通知单明细优先级",
+            "reachable": true,
+            "name": "订单通知单明细优先级"
+        },
+        "orderNoticeDetProCode": {
+            "meaning": "订单通知单明细项目编码",
+            "reachable": true,
+            "name": "订单通知单明细项目编码"
+        },
+        "orderNoticeDetProName": {
+            "meaning": "订单通知单明细项目名称",
+            "reachable": true,
+            "name": "订单通知单明细项目名称"
+        },
+        "orderNoticeDetProcessInstanceId": {
+            "meaning": "订单通知单明细流程实例ID",
+            "reachable": true,
+            "name": "订单通知单明细流程实例ID"
+        },
+        "orderNoticeDetProductionProcessesTypeId": {
+            "meaning": "订单通知单明细工序类型ID",
+            "reachable": true,
+            "name": "订单通知单明细工序类型ID"
+        },
+        "orderNoticeDetProductionShiftId": {
+            "meaning": "订单通知单明细生产班次ID",
+            "reachable": true,
+            "name": "订单通知单明细生产班次ID"
+        },
+        "orderNoticeDetProp": {
+            "meaning": "订单通知单明细比例",
+            "reachable": true,
+            "name": "订单通知单明细比例"
+        },
+        "orderNoticeDetQuantity": {
+            "meaning": "订单通知单明细任务数量",
+            "reachable": true,
+            "name": "订单通知单明细任务数量"
+        },
+        "orderNoticeDetQuoteQty": {
+            "meaning": "订单通知单明细报价数量",
+            "reachable": true,
+            "name": "订单通知单明细报价数量"
+        },
+        "orderNoticeDetReceiptDate": {
+            "meaning": "订单通知单明细单据日期",
+            "reachable": true,
+            "name": "订单通知单明细单据日期"
+        },
+        "orderNoticeDetReceiptType": {
+            "meaning": "订单通知单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "订单通知单明细单据类型"
+        },
+        "orderNoticeDetRelatedTasksId": {
+            "meaning": "订单通知单明细关联任务id",
+            "reachable": true,
+            "name": "订单通知单明细关联任务id"
+        },
+        "orderNoticeDetReorderCode": {
+            "meaning": "订单通知单明细翻单订单号",
+            "reachable": true,
+            "name": "订单通知单明细翻单订单号"
+        },
+        "orderNoticeDetSerialNumber": {
+            "meaning": "订单通知单明细顺序号",
+            "reachable": true,
+            "name": "订单通知单明细顺序号"
+        },
+        "orderNoticeDetSettleAmount": {
+            "meaning": "订单通知单明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "订单通知单明细结算金额"
+        },
+        "orderNoticeDetSettlePrice": {
+            "meaning": "订单通知单明细结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "订单通知单明细结算单价"
+        },
+        "orderNoticeDetSettleTotalAmount": {
+            "meaning": "订单通知单明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "订单通知单明细结算金额"
+        },
+        "orderNoticeDetSource": {
+            "meaning": "订单通知单明细源",
+            "reachable": true,
+            "name": "订单通知单明细源"
+        },
+        "orderNoticeDetSourceType": {
+            "meaning": "订单通知单明细来源类型",
+            "reachable": true,
+            "name": "订单通知单明细来源类型"
+        },
+        "orderNoticeDetSpareQty": {
+            "meaning": "订单通知单明细备用数量",
+            "reachable": true,
+            "name": "订单通知单明细备用数量"
+        },
+        "orderNoticeDetSpecType": {
+            "meaning": "订单通知单明细规格类型",
+            "reachable": true,
+            "name": "订单通知单明细规格类型"
+        },
+        "orderNoticeDetState": {
+            "meaning": "订单通知单明细通用状态",
+            "reachable": true,
+            "name": "订单通知单明细通用状态"
+        },
+        "orderNoticeDetStockQty": {
+            "meaning": "订单通知单明细备库存数量",
+            "reachable": true,
+            "name": "订单通知单明细备库存数量"
+        },
+        "orderNoticeDetSumQty": {
+            "meaning": "订单通知单明细总数量",
+            "reachable": true,
+            "name": "订单通知单明细总数量"
+        },
+        "orderNoticeDetSystemCode": {
+            "meaning": "订单通知单明细系统编码",
+            "reachable": true,
+            "name": "订单通知单明细系统编码"
+        },
+        "orderNoticeDetTarget": {
+            "meaning": "订单通知单明细目标",
+            "reachable": true,
+            "name": "订单通知单明细目标"
+        },
+        "orderNoticeDetTaskNodeName": {
+            "meaning": "订单通知单明细任务节点名称",
+            "reachable": true,
+            "name": "订单通知单明细任务节点名称"
+        },
+        "orderNoticeDetTaxExclPrice": {
+            "meaning": "订单通知单明细不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "订单通知单明细不含税报价单价"
+        },
+        "orderNoticeDetTaxExclTotal": {
+            "meaning": "订单通知单明细不含税总金额",
+            "reachable": true,
+            "name": "订单通知单明细不含税总金额"
+        },
+        "orderNoticeDetTaxExclUnitPrice": {
+            "meaning": "订单通知单明细不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "订单通知单明细不含税单价"
+        },
+        "orderNoticeDetTaxInclPrice": {
+            "meaning": "订单通知单明细含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "订单通知单明细含税报价单价"
+        },
+        "orderNoticeDetTaxInclTotal": {
+            "meaning": "订单通知单明细含税总金额",
+            "reachable": true,
+            "name": "订单通知单明细含税总金额"
+        },
+        "orderNoticeDetTenantId": {
+            "meaning": "订单通知单明细租户id",
+            "reachable": true,
+            "name": "订单通知单明细租户id"
+        },
+        "orderNoticeDetTerminalCode": {
+            "meaning": "订单通知单明细终端编码",
+            "reachable": true,
+            "name": "订单通知单明细终端编码"
+        },
+        "orderNoticeDetTerminalCustId": {
+            "meaning": "订单通知单明细终端客户id",
+            "reachable": true,
+            "name": "订单通知单明细终端客户id"
+        },
+        "orderNoticeDetThirdPartyClass": {
+            "meaning": "订单通知单明细第三方分类",
+            "reachable": true,
+            "name": "订单通知单明细第三方分类"
+        },
+        "orderNoticeDetThirdPartyId": {
+            "meaning": "订单通知单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "订单通知单明细第三方系统中的唯一ID"
+        },
+        "orderNoticeDetThirdPartyName": {
+            "meaning": "订单通知单明细第三方名称",
+            "reachable": true,
+            "name": "订单通知单明细第三方名称"
+        },
+        "orderNoticeDetToAuditDate": {
+            "meaning": "orderNoticeDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToBeginTime": {
+            "meaning": "orderNoticeDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToCreateTime": {
+            "meaning": "orderNoticeDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDateExtra1": {
+            "meaning": "orderNoticeDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDateExtra2": {
+            "meaning": "orderNoticeDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDateExtra3": {
+            "meaning": "orderNoticeDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDateExtra4": {
+            "meaning": "orderNoticeDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDateExtra5": {
+            "meaning": "orderNoticeDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToDeliveryDate": {
+            "meaning": "orderNoticeDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToEndTime": {
+            "meaning": "orderNoticeDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToExpectedDate": {
+            "type": "object",
+            "meaning": "orderNoticeDetToExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToReceiptDate": {
+            "meaning": "orderNoticeDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetToUpdateTime": {
+            "meaning": "orderNoticeDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "orderNoticeDetUnitCode": {
+            "meaning": "订单通知单明细单位id",
+            "reachable": true,
+            "name": "订单通知单明细单位id"
+        },
+        "orderNoticeDetUnitPriceTax": {
+            "meaning": "订单通知单明细含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "订单通知单明细含税单价"
+        },
+        "orderNoticeDetUpdateTime": {
+            "meaning": "订单通知单明细更新时间",
+            "reachable": true,
+            "name": "订单通知单明细更新时间"
+        },
+        "orderNoticeDetUpdater": {
+            "meaning": "订单通知单明细更新人",
+            "reachable": true,
+            "name": "订单通知单明细更新人"
+        },
+        "orderNoticeDetUpdaterId": {
+            "meaning": "订单通知单明细更新人ID",
+            "reachable": true,
+            "name": "订单通知单明细更新人ID"
+        },
+        "orderNoticeDetUsedQty": {
+            "meaning": "订单通知单明细使用库存数量",
+            "reachable": true,
+            "name": "订单通知单明细使用库存数量"
+        },
+        "orderNoticeDetUserCode": {
+            "meaning": "订单通知单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "订单通知单明细智能节点的唯一编码"
+        },
+        "orderNoticeDetVarExtra1": {
+            "meaning": "订单通知单明细扩展1",
+            "reachable": true,
+            "name": "订单通知单明细扩展1"
+        },
+        "orderNoticeDetVarExtra2": {
+            "meaning": "订单通知单明细扩展2",
+            "reachable": true,
+            "name": "订单通知单明细扩展2"
+        },
+        "orderNoticeDetVarExtra3": {
+            "meaning": "订单通知单明细扩展3",
+            "reachable": true,
+            "name": "订单通知单明细扩展3"
+        },
+        "orderNoticeDetVarExtra4": {
+            "meaning": "订单通知单明细扩展4",
+            "reachable": true,
+            "name": "订单通知单明细扩展4"
+        },
+        "orderNoticeDetVarExtra5": {
+            "meaning": "订单通知单明细扩展5",
+            "reachable": true,
+            "name": "订单通知单明细扩展5"
+        },
+        "orderNoticeDetVersion": {
+            "meaning": "订单通知单明细版本号",
+            "reachable": true,
+            "name": "订单通知单明细版本号"
+        }
+    }
+}

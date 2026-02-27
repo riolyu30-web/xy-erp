@@ -89,7 +89,7 @@ async def chat_mcp(chat: ChatMCPRequest, request: Request, current_user: dict = 
 @router.post("/chat/mcp/json")
 async def chat_make_json(chat: ChatMCPRequest, request: Request, current_user: dict = Depends(get_current_user)):
   """
-  聊天模型
+  生成MCP接口配置
   Args:
         chat: ChatMCPRequest 聊天模型
   Returns:

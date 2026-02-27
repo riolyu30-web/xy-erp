@@ -1,0 +1,1217 @@
+{
+    "api_name": "/vch-det/findList",
+    "table_name": "凭证单明细",
+    "request": {
+        "vchDetVchClazz": "VCH",
+        "vchDetClazz": "VCH_DET"
+    },
+    "mainTabClazz": "VCH_DET",
+    "response": {
+        "vchDetActualTimeRequired": {
+            "meaning": "凭证单明细实际需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细实际需时"
+        },
+        "vchDetAdjustmentTimeRequired": {
+            "meaning": "凭证单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "凭证单明细调整需时"
+        },
+        "vchDetApplicationId": {
+            "meaning": "凭证单明细应用ID",
+            "reachable": false,
+            "name": "凭证单明细应用ID"
+        },
+        "vchDetAuditDate": {
+            "meaning": "凭证单明细审核时间",
+            "reachable": false,
+            "name": "凭证单明细审核时间"
+        },
+        "vchDetAuditStatus": {
+            "meaning": "凭证单明细审核状态",
+            "reachable": false,
+            "name": "凭证单明细审核状态"
+        },
+        "vchDetAvailableScheduleId": {
+            "meaning": "凭证单明细可用日程id",
+            "reachable": false,
+            "name": "凭证单明细可用日程id"
+        },
+        "vchDetBeginTime": {
+            "meaning": "凭证单明细开始时间",
+            "reachable": false,
+            "name": "凭证单明细开始时间"
+        },
+        "vchDetBizVersion": {
+            "meaning": "凭证单明细业务自定义版本号",
+            "reachable": false,
+            "name": "凭证单明细业务自定义版本号"
+        },
+        "vchDetBriefName": {
+            "meaning": "凭证单明细简称",
+            "reachable": false,
+            "name": "凭证单明细简称"
+        },
+        "vchDetBusDivisId": {
+            "meaning": "凭证单明细事业部id",
+            "reachable": false,
+            "name": "凭证单明细事业部id"
+        },
+        "vchDetClazz": {
+            "meaning": "凭证单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "凭证单明细子类"
+        },
+        "vchDetClosedReason": {
+            "meaning": "凭证单明细结案原因",
+            "reachable": false,
+            "name": "凭证单明细结案原因"
+        },
+        "vchDetClosedStatus": {
+            "meaning": "凭证单明细结案状态",
+            "reachable": false,
+            "name": "凭证单明细结案状态"
+        },
+        "vchDetComment": {
+            "meaning": "凭证单明细评论",
+            "reachable": false,
+            "name": "凭证单明细评论"
+        },
+        "vchDetCompleteQuantity": {
+            "meaning": "凭证单明细完成数量",
+            "reachable": false,
+            "name": "凭证单明细完成数量"
+        },
+        "vchDetCompleteStatus": {
+            "meaning": "凭证单明细完成状态",
+            "reachable": false,
+            "name": "凭证单明细完成状态"
+        },
+        "vchDetCreateTime": {
+            "meaning": "凭证单明细创建时间",
+            "reachable": false,
+            "name": "凭证单明细创建时间"
+        },
+        "vchDetCreator": {
+            "meaning": "凭证单明细创建人",
+            "reachable": false,
+            "name": "凭证单明细创建人"
+        },
+        "vchDetCreatorId": {
+            "meaning": "凭证单明细创建人ID",
+            "reachable": false,
+            "name": "凭证单明细创建人ID"
+        },
+        "vchDetCreditAmount": {
+            "meaning": "凭证单明细贷方金额",
+            "reachable": false,
+            "name": "凭证单明细贷方金额"
+        },
+        "vchDetDateExtra1": {
+            "meaning": "凭证单明细扩展时间1",
+            "reachable": false,
+            "name": "凭证单明细扩展时间1"
+        },
+        "vchDetDateExtra2": {
+            "meaning": "凭证单明细扩展时间2",
+            "reachable": false,
+            "name": "凭证单明细扩展时间2"
+        },
+        "vchDetDateExtra3": {
+            "meaning": "凭证单明细扩展时间3",
+            "reachable": false,
+            "name": "凭证单明细扩展时间3"
+        },
+        "vchDetDateExtra4": {
+            "meaning": "凭证单明细扩展时间4",
+            "reachable": false,
+            "name": "凭证单明细扩展时间4"
+        },
+        "vchDetDateExtra5": {
+            "meaning": "凭证单明细扩展时间5",
+            "reachable": false,
+            "name": "凭证单明细扩展时间5"
+        },
+        "vchDetDebitAmount": {
+            "meaning": "凭证单明细借方金额",
+            "reachable": false,
+            "name": "凭证单明细借方金额"
+        },
+        "vchDetDefaultType": {
+            "meaning": "凭证单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "凭证单明细智能节点主类型"
+        },
+        "vchDetDeliveryDate": {
+            "meaning": "凭证单明细交货日期",
+            "reachable": false,
+            "name": "凭证单明细交货日期"
+        },
+        "vchDetDescription": {
+            "meaning": "凭证单明细描述",
+            "reachable": false,
+            "name": "凭证单明细描述"
+        },
+        "vchDetEndTime": {
+            "meaning": "凭证单明细结束时间",
+            "reachable": false,
+            "name": "凭证单明细结束时间"
+        },
+        "vchDetEndTimeRequired": {
+            "meaning": "凭证单明细最后需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细最后需时"
+        },
+        "vchDetEngName": {
+            "meaning": "凭证单明细英文名称",
+            "reachable": false,
+            "name": "凭证单明细英文名称"
+        },
+        "vchDetEquipmentId": {
+            "meaning": "凭证单明细设备id",
+            "reachable": false,
+            "name": "凭证单明细设备id"
+        },
+        "vchDetExchangeRateId": {
+            "meaning": "凭证单明细币种汇率id",
+            "reachable": false,
+            "name": "凭证单明细币种汇率id"
+        },
+        "vchDetExtension": {
+            "meaning": "凭证单明细扩展数据",
+            "reachable": false,
+            "name": "凭证单明细扩展数据"
+        },
+        "vchDetExternalState": {
+            "meaning": "凭证单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "凭证单明细上流程状态位"
+        },
+        "vchDetFilterClazz": {
+            "meaning": "凭证单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "凭证单明细冗余字段用于筛选"
+        },
+        "vchDetFlags": {
+            "meaning": "凭证单明细63位标志位",
+            "reachable": false,
+            "name": "凭证单明细63位标志位"
+        },
+        "vchDetFromAuditDate": {
+            "meaning": "vchDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromBeginTime": {
+            "meaning": "vchDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromCreateTime": {
+            "meaning": "vchDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDateExtra1": {
+            "meaning": "vchDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDateExtra2": {
+            "meaning": "vchDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDateExtra3": {
+            "meaning": "vchDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDateExtra4": {
+            "meaning": "vchDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDateExtra5": {
+            "meaning": "vchDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromDeliveryDate": {
+            "meaning": "vchDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromEndTime": {
+            "meaning": "vchDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromReceiptDate": {
+            "meaning": "vchDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFromUpdateTime": {
+            "meaning": "vchDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetFscType": {
+            "meaning": "凭证单明细FSC声明",
+            "reachable": false,
+            "name": "凭证单明细FSC声明"
+        },
+        "vchDetGenerativePeople": {
+            "meaning": "凭证单明细下发人",
+            "reachable": false,
+            "name": "凭证单明细下发人"
+        },
+        "vchDetGenerativeState": {
+            "meaning": "凭证单明细下发状态",
+            "reachable": false,
+            "name": "凭证单明细下发状态"
+        },
+        "vchDetGroovyScript": {
+            "meaning": "凭证单明细groovy脚本",
+            "reachable": false,
+            "name": "凭证单明细groovy脚本"
+        },
+        "vchDetGropeCode": {
+            "meaning": "凭证单明细搜索码",
+            "reachable": false,
+            "name": "凭证单明细搜索码"
+        },
+        "vchDetId": {
+            "meaning": "凭证单明细明细ID（自增主键）",
+            "reachable": false,
+            "name": "凭证单明细明细ID"
+        },
+        "vchDetInUsed": {
+            "meaning": "凭证单明细是否被使用",
+            "reachable": false,
+            "name": "凭证单明细是否被使用"
+        },
+        "vchDetInvTypeTaxRateId": {
+            "meaning": "凭证单明细发票税率id",
+            "reachable": false,
+            "name": "凭证单明细发票税率id"
+        },
+        "vchDetIsBanned": {
+            "meaning": "凭证单明细是否被禁用",
+            "reachable": false,
+            "name": "凭证单明细是否被禁用"
+        },
+        "vchDetIsDeleted": {
+            "meaning": "凭证单明细是否被删除",
+            "reachable": false,
+            "name": "凭证单明细是否被删除"
+        },
+        "vchDetIsLeaf": {
+            "meaning": "凭证单明细是否叶子节点",
+            "reachable": false,
+            "name": "凭证单明细是否叶子节点"
+        },
+        "vchDetIsMainFlow": {
+            "meaning": "凭证单明细是否是主流程",
+            "reachable": false,
+            "name": "凭证单明细是否是主流程"
+        },
+        "vchDetIsManualModificationDate": {
+            "meaning": "凭证单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "凭证单明细是否手动修改计划生产时间"
+        },
+        "vchDetIsolation": {
+            "meaning": "凭证单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "凭证单明细智能节点数据隔离标识"
+        },
+        "vchDetJsScript": {
+            "meaning": "凭证单明细js脚本",
+            "reachable": false,
+            "name": "凭证单明细js脚本"
+        },
+        "vchDetMaterialId": {
+            "meaning": "凭证单明细物料id",
+            "reachable": false,
+            "name": "凭证单明细物料id"
+        },
+        "vchDetName": {
+            "meaning": "凭证单明细智能节点名",
+            "reachable": false,
+            "name": "凭证单明细智能节点名"
+        },
+        "vchDetNameCodeSearch": {
+            "meaning": "凭证单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "凭证单明细name、user_code模糊搜索"
+        },
+        "vchDetNumberExtra1": {
+            "meaning": "凭证单明细扩展数量1",
+            "reachable": false,
+            "name": "凭证单明细扩展数量1"
+        },
+        "vchDetNumberExtra2": {
+            "meaning": "凭证单明细扩展数量2",
+            "reachable": false,
+            "name": "凭证单明细扩展数量2"
+        },
+        "vchDetNumberExtra3": {
+            "meaning": "凭证单明细扩展数量3",
+            "reachable": false,
+            "name": "凭证单明细扩展数量3"
+        },
+        "vchDetNumberExtra4": {
+            "meaning": "凭证单明细扩展数量4",
+            "reachable": false,
+            "name": "凭证单明细扩展数量4"
+        },
+        "vchDetNumberExtra5": {
+            "meaning": "凭证单明细扩展数量5",
+            "reachable": false,
+            "name": "凭证单明细扩展数量5"
+        },
+        "vchDetParentId": {
+            "meaning": "凭证单明细父节点ID",
+            "reachable": false,
+            "name": "凭证单明细父节点ID"
+        },
+        "vchDetPlannedOutputQuantity": {
+            "meaning": "凭证单明细计划产出数量",
+            "reachable": false,
+            "name": "凭证单明细计划产出数量"
+        },
+        "vchDetPlannedTimeRequired": {
+            "meaning": "凭证单明细计划需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细计划需时"
+        },
+        "vchDetPrintTimes": {
+            "meaning": "凭证单明细打印次数",
+            "reachable": false,
+            "name": "凭证单明细打印次数"
+        },
+        "vchDetPriority": {
+            "meaning": "凭证单明细优先级",
+            "reachable": false,
+            "name": "凭证单明细优先级"
+        },
+        "vchDetProcessInstanceId": {
+            "meaning": "凭证单明细流程实例ID",
+            "reachable": false,
+            "name": "凭证单明细流程实例ID"
+        },
+        "vchDetProductionProcessesTypeId": {
+            "meaning": "凭证单明细工序类型ID",
+            "reachable": false,
+            "name": "凭证单明细工序类型ID"
+        },
+        "vchDetProductionShiftId": {
+            "meaning": "凭证单明细生产班次ID",
+            "reachable": false,
+            "name": "凭证单明细生产班次ID"
+        },
+        "vchDetQuantity": {
+            "meaning": "凭证单明细任务数量",
+            "reachable": false,
+            "name": "凭证单明细任务数量"
+        },
+        "vchDetReceiptDate": {
+            "meaning": "凭证单明细单据日期",
+            "reachable": false,
+            "name": "凭证单明细单据日期"
+        },
+        "vchDetReceiptType": {
+            "meaning": "凭证单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "凭证单明细单据类型"
+        },
+        "vchDetRelatedTasksId": {
+            "meaning": "凭证单明细关联任务id",
+            "reachable": false,
+            "name": "凭证单明细关联任务id"
+        },
+        "vchDetSerialNumber": {
+            "meaning": "凭证单明细顺序号",
+            "reachable": false,
+            "name": "凭证单明细顺序号"
+        },
+        "vchDetSource": {
+            "meaning": "凭证单明细源",
+            "reachable": false,
+            "name": "凭证单明细源"
+        },
+        "vchDetSourceType": {
+            "meaning": "凭证单明细来源类型",
+            "reachable": false,
+            "name": "凭证单明细来源类型"
+        },
+        "vchDetState": {
+            "meaning": "凭证单明细通用状态",
+            "reachable": false,
+            "name": "凭证单明细通用状态"
+        },
+        "vchDetSubjectCode": {
+            "meaning": "凭证单明细科目编码",
+            "reachable": false,
+            "name": "凭证单明细科目编码"
+        },
+        "vchDetSubjectName": {
+            "meaning": "凭证单明细科目名称",
+            "reachable": false,
+            "name": "凭证单明细科目名称"
+        },
+        "vchDetSummary": {
+            "meaning": "凭证单明细摘要",
+            "reachable": false,
+            "name": "凭证单明细摘要"
+        },
+        "vchDetSystemCode": {
+            "meaning": "凭证单明细系统编码",
+            "reachable": false,
+            "name": "凭证单明细系统编码"
+        },
+        "vchDetTarget": {
+            "meaning": "凭证单明细目标",
+            "reachable": false,
+            "name": "凭证单明细目标"
+        },
+        "vchDetTaskNodeName": {
+            "meaning": "凭证单明细任务节点名称",
+            "reachable": false,
+            "name": "凭证单明细任务节点名称"
+        },
+        "vchDetTenantId": {
+            "meaning": "凭证单明细租户ID",
+            "reachable": false,
+            "name": "凭证单明细租户ID"
+        },
+        "vchDetThirdPartyClass": {
+            "meaning": "凭证单明细第三方分类",
+            "reachable": false,
+            "name": "凭证单明细第三方分类"
+        },
+        "vchDetThirdPartyId": {
+            "meaning": "凭证单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "凭证单明细第三方系统中的唯一ID"
+        },
+        "vchDetThirdPartyName": {
+            "meaning": "凭证单明细第三方名称",
+            "reachable": false,
+            "name": "凭证单明细第三方名称"
+        },
+        "vchDetToAuditDate": {
+            "meaning": "vchDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToBeginTime": {
+            "meaning": "vchDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToCreateTime": {
+            "meaning": "vchDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDateExtra1": {
+            "meaning": "vchDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDateExtra2": {
+            "meaning": "vchDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDateExtra3": {
+            "meaning": "vchDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDateExtra4": {
+            "meaning": "vchDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDateExtra5": {
+            "meaning": "vchDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToDeliveryDate": {
+            "meaning": "vchDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToEndTime": {
+            "meaning": "vchDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToReceiptDate": {
+            "meaning": "vchDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetToUpdateTime": {
+            "meaning": "vchDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetUnitCode": {
+            "meaning": "凭证单明细单位id",
+            "reachable": false,
+            "name": "凭证单明细单位id"
+        },
+        "vchDetUpdateTime": {
+            "meaning": "凭证单明细更新时间",
+            "reachable": false,
+            "name": "凭证单明细更新时间"
+        },
+        "vchDetUpdater": {
+            "meaning": "凭证单明细更新人",
+            "reachable": false,
+            "name": "凭证单明细更新人"
+        },
+        "vchDetUpdaterId": {
+            "meaning": "凭证单明细更新人ID",
+            "reachable": false,
+            "name": "凭证单明细更新人ID"
+        },
+        "vchDetUserCode": {
+            "meaning": "凭证单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "凭证单明细智能节点的唯一编码"
+        },
+        "vchDetVarExtra1": {
+            "meaning": "凭证单明细扩展1",
+            "reachable": false,
+            "name": "凭证单明细扩展1"
+        },
+        "vchDetVarExtra2": {
+            "meaning": "凭证单明细扩展2",
+            "reachable": false,
+            "name": "凭证单明细扩展2"
+        },
+        "vchDetVarExtra3": {
+            "meaning": "凭证单明细扩展3",
+            "reachable": false,
+            "name": "凭证单明细扩展3"
+        },
+        "vchDetVarExtra4": {
+            "meaning": "凭证单明细扩展4",
+            "reachable": false,
+            "name": "凭证单明细扩展4"
+        },
+        "vchDetVarExtra5": {
+            "meaning": "凭证单明细扩展5",
+            "reachable": false,
+            "name": "凭证单明细扩展5"
+        },
+        "vchDetVchActualTimeRequired": {
+            "meaning": "凭证单明细实际需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细实际需时"
+        },
+        "vchDetVchAdjustmentTimeRequired": {
+            "meaning": "凭证单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "凭证单明细调整需时"
+        },
+        "vchDetVchApplicationId": {
+            "meaning": "凭证单明细应用ID",
+            "reachable": false,
+            "name": "凭证单明细应用ID"
+        },
+        "vchDetVchAuditDate": {
+            "meaning": "凭证单明细审核时间",
+            "reachable": false,
+            "name": "凭证单明细审核时间"
+        },
+        "vchDetVchAuditStatus": {
+            "meaning": "凭证单明细审核状态",
+            "reachable": false,
+            "name": "凭证单明细审核状态"
+        },
+        "vchDetVchAvailableScheduleId": {
+            "meaning": "凭证单明细可用日程id",
+            "reachable": false,
+            "name": "凭证单明细可用日程id"
+        },
+        "vchDetVchBeginTime": {
+            "meaning": "凭证单明细开始时间",
+            "reachable": false,
+            "name": "凭证单明细开始时间"
+        },
+        "vchDetVchBizVersion": {
+            "meaning": "凭证单明细业务自定义版本号",
+            "reachable": false,
+            "name": "凭证单明细业务自定义版本号"
+        },
+        "vchDetVchBriefName": {
+            "meaning": "凭证单明细简称",
+            "reachable": false,
+            "name": "凭证单明细简称"
+        },
+        "vchDetVchBusDivisId": {
+            "meaning": "凭证单明细事业部id",
+            "reachable": false,
+            "name": "凭证单明细事业部id"
+        },
+        "vchDetVchClazz": {
+            "meaning": "凭证单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "凭证单明细子类"
+        },
+        "vchDetVchClosedReason": {
+            "meaning": "凭证单明细结案原因",
+            "reachable": false,
+            "name": "凭证单明细结案原因"
+        },
+        "vchDetVchClosedStatus": {
+            "meaning": "凭证单明细结案状态",
+            "reachable": false,
+            "name": "凭证单明细结案状态"
+        },
+        "vchDetVchComment": {
+            "meaning": "凭证单明细评论",
+            "reachable": false,
+            "name": "凭证单明细评论"
+        },
+        "vchDetVchCompleteQuantity": {
+            "meaning": "凭证单明细完成数量",
+            "reachable": false,
+            "name": "凭证单明细完成数量"
+        },
+        "vchDetVchCompleteStatus": {
+            "meaning": "凭证单明细完成状态",
+            "reachable": false,
+            "name": "凭证单明细完成状态"
+        },
+        "vchDetVchCreateTime": {
+            "meaning": "凭证单明细创建时间",
+            "reachable": false,
+            "name": "凭证单明细创建时间"
+        },
+        "vchDetVchCreator": {
+            "meaning": "凭证单明细创建人",
+            "reachable": false,
+            "name": "凭证单明细创建人"
+        },
+        "vchDetVchCreatorId": {
+            "meaning": "凭证单明细创建人ID",
+            "reachable": false,
+            "name": "凭证单明细创建人ID"
+        },
+        "vchDetVchDateExtra1": {
+            "meaning": "凭证单明细扩展时间1",
+            "reachable": false,
+            "name": "凭证单明细扩展时间1"
+        },
+        "vchDetVchDateExtra2": {
+            "meaning": "凭证单明细扩展时间2",
+            "reachable": false,
+            "name": "凭证单明细扩展时间2"
+        },
+        "vchDetVchDateExtra3": {
+            "meaning": "凭证单明细扩展时间3",
+            "reachable": false,
+            "name": "凭证单明细扩展时间3"
+        },
+        "vchDetVchDateExtra4": {
+            "meaning": "凭证单明细扩展时间4",
+            "reachable": false,
+            "name": "凭证单明细扩展时间4"
+        },
+        "vchDetVchDateExtra5": {
+            "meaning": "凭证单明细扩展时间5",
+            "reachable": false,
+            "name": "凭证单明细扩展时间5"
+        },
+        "vchDetVchDefaultType": {
+            "meaning": "凭证单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "凭证单明细智能节点主类型"
+        },
+        "vchDetVchDeliveryDate": {
+            "meaning": "凭证单明细交货日期",
+            "reachable": false,
+            "name": "凭证单明细交货日期"
+        },
+        "vchDetVchDescription": {
+            "meaning": "凭证单明细描述",
+            "reachable": false,
+            "name": "凭证单明细描述"
+        },
+        "vchDetVchEndTime": {
+            "meaning": "凭证单明细结束时间",
+            "reachable": false,
+            "name": "凭证单明细结束时间"
+        },
+        "vchDetVchEndTimeRequired": {
+            "meaning": "凭证单明细最后需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细最后需时"
+        },
+        "vchDetVchEngName": {
+            "meaning": "凭证单明细英文名称",
+            "reachable": false,
+            "name": "凭证单明细英文名称"
+        },
+        "vchDetVchEquipmentId": {
+            "meaning": "凭证单明细设备id",
+            "reachable": false,
+            "name": "凭证单明细设备id"
+        },
+        "vchDetVchExchangeRateId": {
+            "meaning": "凭证单明细币种汇率id",
+            "reachable": false,
+            "name": "凭证单明细币种汇率id"
+        },
+        "vchDetVchExtension": {
+            "meaning": "凭证单明细扩展数据",
+            "reachable": false,
+            "name": "凭证单明细扩展数据"
+        },
+        "vchDetVchExternalState": {
+            "meaning": "凭证单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "凭证单明细上流程状态位"
+        },
+        "vchDetVchFilterClazz": {
+            "meaning": "凭证单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "凭证单明细冗余字段用于筛选"
+        },
+        "vchDetVchFlags": {
+            "meaning": "凭证单明细63位标志位",
+            "reachable": false,
+            "name": "凭证单明细63位标志位"
+        },
+        "vchDetVchFromAuditDate": {
+            "meaning": "vchDetVchFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromBeginTime": {
+            "meaning": "vchDetVchFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromCreateTime": {
+            "meaning": "vchDetVchFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDateExtra1": {
+            "meaning": "vchDetVchFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDateExtra2": {
+            "meaning": "vchDetVchFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDateExtra3": {
+            "meaning": "vchDetVchFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDateExtra4": {
+            "meaning": "vchDetVchFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDateExtra5": {
+            "meaning": "vchDetVchFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromDeliveryDate": {
+            "meaning": "vchDetVchFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromEndTime": {
+            "meaning": "vchDetVchFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromReceiptDate": {
+            "meaning": "vchDetVchFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFromUpdateTime": {
+            "meaning": "vchDetVchFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchFscType": {
+            "meaning": "凭证单明细FSC声明",
+            "reachable": false,
+            "name": "凭证单明细FSC声明"
+        },
+        "vchDetVchGenerativePeople": {
+            "meaning": "凭证单明细下发人",
+            "reachable": false,
+            "name": "凭证单明细下发人"
+        },
+        "vchDetVchGenerativeState": {
+            "meaning": "凭证单明细下发状态",
+            "reachable": false,
+            "name": "凭证单明细下发状态"
+        },
+        "vchDetVchGroovyScript": {
+            "meaning": "凭证单明细groovy脚本",
+            "reachable": false,
+            "name": "凭证单明细groovy脚本"
+        },
+        "vchDetVchGropeCode": {
+            "meaning": "凭证单明细搜索码",
+            "reachable": false,
+            "name": "凭证单明细搜索码"
+        },
+        "vchDetVchId": {
+            "meaning": "凭证单明细凭证单号",
+            "is_primary": true,
+            "reachable": false,
+            "name": "凭证单明细凭证单号"
+        },
+        "vchDetVchInUsed": {
+            "meaning": "凭证单明细是否被使用",
+            "reachable": false,
+            "name": "凭证单明细是否被使用"
+        },
+        "vchDetVchInvTypeTaxRateId": {
+            "meaning": "凭证单明细发票税率id",
+            "reachable": false,
+            "name": "凭证单明细发票税率id"
+        },
+        "vchDetVchIsBanned": {
+            "meaning": "凭证单明细是否被禁用",
+            "reachable": false,
+            "name": "凭证单明细是否被禁用"
+        },
+        "vchDetVchIsDeleted": {
+            "meaning": "凭证单明细是否被删除",
+            "reachable": false,
+            "name": "凭证单明细是否被删除"
+        },
+        "vchDetVchIsLeaf": {
+            "meaning": "凭证单明细是否叶子节点",
+            "reachable": false,
+            "name": "凭证单明细是否叶子节点"
+        },
+        "vchDetVchIsMainFlow": {
+            "meaning": "凭证单明细是否是主流程",
+            "reachable": false,
+            "name": "凭证单明细是否是主流程"
+        },
+        "vchDetVchIsManualModificationDate": {
+            "meaning": "凭证单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "凭证单明细是否手动修改计划生产时间"
+        },
+        "vchDetVchIsolation": {
+            "meaning": "凭证单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "凭证单明细智能节点数据隔离标识"
+        },
+        "vchDetVchJsScript": {
+            "meaning": "凭证单明细js脚本",
+            "reachable": false,
+            "name": "凭证单明细js脚本"
+        },
+        "vchDetVchMaterialId": {
+            "meaning": "凭证单明细物料id",
+            "reachable": false,
+            "name": "凭证单明细物料id"
+        },
+        "vchDetVchName": {
+            "meaning": "凭证单明细智能节点名",
+            "reachable": false,
+            "name": "凭证单明细智能节点名"
+        },
+        "vchDetVchNameCodeSearch": {
+            "meaning": "凭证单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "凭证单明细name、user_code模糊搜索"
+        },
+        "vchDetVchNumberExtra1": {
+            "meaning": "凭证单明细扩展数量1",
+            "reachable": false,
+            "name": "凭证单明细扩展数量1"
+        },
+        "vchDetVchNumberExtra2": {
+            "meaning": "凭证单明细扩展数量2",
+            "reachable": false,
+            "name": "凭证单明细扩展数量2"
+        },
+        "vchDetVchNumberExtra3": {
+            "meaning": "凭证单明细扩展数量3",
+            "reachable": false,
+            "name": "凭证单明细扩展数量3"
+        },
+        "vchDetVchNumberExtra4": {
+            "meaning": "凭证单明细扩展数量4",
+            "reachable": false,
+            "name": "凭证单明细扩展数量4"
+        },
+        "vchDetVchNumberExtra5": {
+            "meaning": "凭证单明细扩展数量5",
+            "reachable": false,
+            "name": "凭证单明细扩展数量5"
+        },
+        "vchDetVchParentId": {
+            "meaning": "凭证单明细父节点ID",
+            "reachable": false,
+            "name": "凭证单明细父节点ID"
+        },
+        "vchDetVchPlannedOutputQuantity": {
+            "meaning": "凭证单明细计划产出数量",
+            "reachable": false,
+            "name": "凭证单明细计划产出数量"
+        },
+        "vchDetVchPlannedTimeRequired": {
+            "meaning": "凭证单明细计划需时(小时)",
+            "reachable": false,
+            "name": "凭证单明细计划需时"
+        },
+        "vchDetVchPrintTimes": {
+            "meaning": "凭证单明细打印次数",
+            "reachable": false,
+            "name": "凭证单明细打印次数"
+        },
+        "vchDetVchPriority": {
+            "meaning": "凭证单明细优先级",
+            "reachable": false,
+            "name": "凭证单明细优先级"
+        },
+        "vchDetVchProcessInstanceId": {
+            "meaning": "凭证单明细流程实例ID",
+            "reachable": false,
+            "name": "凭证单明细流程实例ID"
+        },
+        "vchDetVchProductionProcessesTypeId": {
+            "meaning": "凭证单明细工序类型ID",
+            "reachable": false,
+            "name": "凭证单明细工序类型ID"
+        },
+        "vchDetVchProductionShiftId": {
+            "meaning": "凭证单明细生产班次ID",
+            "reachable": false,
+            "name": "凭证单明细生产班次ID"
+        },
+        "vchDetVchQuantity": {
+            "meaning": "凭证单明细任务数量",
+            "reachable": false,
+            "name": "凭证单明细任务数量"
+        },
+        "vchDetVchReceiptDate": {
+            "meaning": "凭证单明细单据日期",
+            "reachable": false,
+            "name": "凭证单明细单据日期"
+        },
+        "vchDetVchReceiptType": {
+            "meaning": "凭证单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "凭证单明细单据类型"
+        },
+        "vchDetVchRelatedTasksId": {
+            "meaning": "凭证单明细关联任务id",
+            "reachable": false,
+            "name": "凭证单明细关联任务id"
+        },
+        "vchDetVchSerialNumber": {
+            "meaning": "凭证单明细顺序号",
+            "reachable": false,
+            "name": "凭证单明细顺序号"
+        },
+        "vchDetVchSource": {
+            "meaning": "凭证单明细源",
+            "reachable": false,
+            "name": "凭证单明细源"
+        },
+        "vchDetVchSourceType": {
+            "meaning": "凭证单明细来源类型",
+            "reachable": false,
+            "name": "凭证单明细来源类型"
+        },
+        "vchDetVchState": {
+            "meaning": "凭证单明细通用状态",
+            "reachable": false,
+            "name": "凭证单明细通用状态"
+        },
+        "vchDetVchSystemCode": {
+            "meaning": "凭证单明细系统编码",
+            "reachable": false,
+            "name": "凭证单明细系统编码"
+        },
+        "vchDetVchTarget": {
+            "meaning": "凭证单明细目标",
+            "reachable": false,
+            "name": "凭证单明细目标"
+        },
+        "vchDetVchTaskNodeName": {
+            "meaning": "凭证单明细任务节点名称",
+            "reachable": false,
+            "name": "凭证单明细任务节点名称"
+        },
+        "vchDetVchTenantId": {
+            "meaning": "凭证单明细租户ID",
+            "reachable": false,
+            "name": "凭证单明细租户ID"
+        },
+        "vchDetVchThirdPartyClass": {
+            "meaning": "凭证单明细第三方分类",
+            "reachable": false,
+            "name": "凭证单明细第三方分类"
+        },
+        "vchDetVchThirdPartyId": {
+            "meaning": "凭证单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "凭证单明细第三方系统中的唯一ID"
+        },
+        "vchDetVchThirdPartyName": {
+            "meaning": "凭证单明细第三方名称",
+            "reachable": false,
+            "name": "凭证单明细第三方名称"
+        },
+        "vchDetVchTmpId": {
+            "meaning": "凭证单明细凭证模板ID",
+            "reachable": false,
+            "name": "凭证单明细凭证模板ID"
+        },
+        "vchDetVchToAuditDate": {
+            "meaning": "vchDetVchToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToBeginTime": {
+            "meaning": "vchDetVchToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToCreateTime": {
+            "meaning": "vchDetVchToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDateExtra1": {
+            "meaning": "vchDetVchToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDateExtra2": {
+            "meaning": "vchDetVchToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDateExtra3": {
+            "meaning": "vchDetVchToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDateExtra4": {
+            "meaning": "vchDetVchToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDateExtra5": {
+            "meaning": "vchDetVchToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToDeliveryDate": {
+            "meaning": "vchDetVchToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToEndTime": {
+            "meaning": "vchDetVchToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToReceiptDate": {
+            "meaning": "vchDetVchToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchToUpdateTime": {
+            "meaning": "vchDetVchToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "vchDetVchUnitCode": {
+            "meaning": "凭证单明细单位id",
+            "reachable": false,
+            "name": "凭证单明细单位id"
+        },
+        "vchDetVchUpdateTime": {
+            "meaning": "凭证单明细更新时间",
+            "reachable": false,
+            "name": "凭证单明细更新时间"
+        },
+        "vchDetVchUpdater": {
+            "meaning": "凭证单明细更新人",
+            "reachable": false,
+            "name": "凭证单明细更新人"
+        },
+        "vchDetVchUpdaterId": {
+            "meaning": "凭证单明细更新人ID",
+            "reachable": false,
+            "name": "凭证单明细更新人ID"
+        },
+        "vchDetVchUserCode": {
+            "meaning": "凭证单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "凭证单明细智能节点的唯一编码"
+        },
+        "vchDetVchVarExtra1": {
+            "meaning": "凭证单明细扩展1",
+            "reachable": false,
+            "name": "凭证单明细扩展1"
+        },
+        "vchDetVchVarExtra2": {
+            "meaning": "凭证单明细扩展2",
+            "reachable": false,
+            "name": "凭证单明细扩展2"
+        },
+        "vchDetVchVarExtra3": {
+            "meaning": "凭证单明细扩展3",
+            "reachable": false,
+            "name": "凭证单明细扩展3"
+        },
+        "vchDetVchVarExtra4": {
+            "meaning": "凭证单明细扩展4",
+            "reachable": false,
+            "name": "凭证单明细扩展4"
+        },
+        "vchDetVchVarExtra5": {
+            "meaning": "凭证单明细扩展5",
+            "reachable": false,
+            "name": "凭证单明细扩展5"
+        },
+        "vchDetVchVchWordId": {
+            "meaning": "凭证单明细凭证字",
+            "reachable": false,
+            "name": "凭证单明细凭证字"
+        },
+        "vchDetVchVersion": {
+            "meaning": "凭证单明细版本号",
+            "reachable": false,
+            "name": "凭证单明细版本号"
+        },
+        "vchDetVersion": {
+            "meaning": "凭证单明细版本号",
+            "reachable": false,
+            "name": "凭证单明细版本号"
+        }
+    }
+}

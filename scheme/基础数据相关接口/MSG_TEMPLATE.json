@@ -1,0 +1,386 @@
+{
+    "api_name": "/msg-template/findList",
+    "table_name": "消息模板",
+    "request": {
+        "msgTemplateClazz": "MSG_TEMPLATE"
+    },
+    "mainTabClazz": "MSG_TEMPLATE",
+    "response": {
+        "msgTemplateApplicationId": {
+            "meaning": "消息模板应用ID",
+            "reachable": false,
+            "name": "消息模板应用ID"
+        },
+        "msgTemplateAuditDate": {
+            "meaning": "消息模板审核时间",
+            "reachable": false,
+            "name": "消息模板审核时间"
+        },
+        "msgTemplateAuditStatus": {
+            "meaning": "消息模板审核状态",
+            "reachable": false,
+            "name": "消息模板审核状态"
+        },
+        "msgTemplateBizVersion": {
+            "meaning": "消息模板业务自定义版本号",
+            "reachable": false,
+            "name": "消息模板业务自定义版本号"
+        },
+        "msgTemplateBriefName": {
+            "meaning": "消息模板简称",
+            "reachable": false,
+            "name": "消息模板简称"
+        },
+        "msgTemplateBusDivisId": {
+            "meaning": "消息模板事业部id",
+            "reachable": false,
+            "name": "消息模板事业部id"
+        },
+        "msgTemplateClazz": {
+            "meaning": "消息模板子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "消息模板子类"
+        },
+        "msgTemplateComment": {
+            "meaning": "消息模板评论",
+            "reachable": false,
+            "name": "消息模板评论"
+        },
+        "msgTemplateCover": {
+            "meaning": "消息模板消息封面",
+            "reachable": false,
+            "name": "消息模板消息封面"
+        },
+        "msgTemplateCreateTime": {
+            "meaning": "消息模板创建时间",
+            "reachable": false,
+            "name": "消息模板创建时间"
+        },
+        "msgTemplateCreator": {
+            "meaning": "消息模板创建人",
+            "reachable": false,
+            "name": "消息模板创建人"
+        },
+        "msgTemplateCreatorId": {
+            "meaning": "消息模板创建人ID",
+            "reachable": false,
+            "name": "消息模板创建人ID"
+        },
+        "msgTemplateDateExtra1": {
+            "meaning": "消息模板扩展时间1",
+            "reachable": false,
+            "name": "消息模板扩展时间1"
+        },
+        "msgTemplateDateExtra2": {
+            "meaning": "消息模板扩展时间2",
+            "reachable": false,
+            "name": "消息模板扩展时间2"
+        },
+        "msgTemplateDateExtra3": {
+            "meaning": "消息模板扩展时间3",
+            "reachable": false,
+            "name": "消息模板扩展时间3"
+        },
+        "msgTemplateDateExtra4": {
+            "meaning": "消息模板扩展时间4",
+            "reachable": false,
+            "name": "消息模板扩展时间4"
+        },
+        "msgTemplateDateExtra5": {
+            "meaning": "消息模板扩展时间5",
+            "reachable": false,
+            "name": "消息模板扩展时间5"
+        },
+        "msgTemplateDefaultType": {
+            "meaning": "消息模板智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "消息模板智能节点主类型"
+        },
+        "msgTemplateDescription": {
+            "meaning": "消息模板描述",
+            "reachable": false,
+            "name": "消息模板描述"
+        },
+        "msgTemplateEngName": {
+            "meaning": "消息模板英文名称",
+            "reachable": false,
+            "name": "消息模板英文名称"
+        },
+        "msgTemplateExtension": {
+            "meaning": "消息模板扩展数据",
+            "reachable": false,
+            "name": "消息模板扩展数据"
+        },
+        "msgTemplateExternalState": {
+            "meaning": "消息模板上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "消息模板上流程状态位"
+        },
+        "msgTemplateFlags": {
+            "meaning": "消息模板63位标志位",
+            "reachable": false,
+            "name": "消息模板63位标志位"
+        },
+        "msgTemplateFromAuditDate": {
+            "meaning": "msgTemplateFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromCreateTime": {
+            "meaning": "msgTemplateFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromDateExtra1": {
+            "meaning": "msgTemplateFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromDateExtra2": {
+            "meaning": "msgTemplateFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromDateExtra3": {
+            "meaning": "msgTemplateFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromDateExtra4": {
+            "meaning": "msgTemplateFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromDateExtra5": {
+            "meaning": "msgTemplateFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateFromUpdateTime": {
+            "meaning": "msgTemplateFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateGroovyScript": {
+            "meaning": "消息模板groovy脚本",
+            "reachable": false,
+            "name": "消息模板groovy脚本"
+        },
+        "msgTemplateGropeCode": {
+            "meaning": "消息模板搜索码",
+            "reachable": false,
+            "name": "消息模板搜索码"
+        },
+        "msgTemplateId": {
+            "meaning": "消息模板pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "消息模板pk"
+        },
+        "msgTemplateInUsed": {
+            "meaning": "消息模板是否被使用",
+            "reachable": false,
+            "name": "消息模板是否被使用"
+        },
+        "msgTemplateIsBanned": {
+            "meaning": "消息模板是否被禁用",
+            "reachable": false,
+            "name": "消息模板是否被禁用"
+        },
+        "msgTemplateIsDeleted": {
+            "meaning": "消息模板是否被删除",
+            "reachable": false,
+            "name": "消息模板是否被删除"
+        },
+        "msgTemplateIsMainFlow": {
+            "meaning": "消息模板是否是主流程",
+            "reachable": false,
+            "name": "消息模板是否是主流程"
+        },
+        "msgTemplateIsolation": {
+            "meaning": "消息模板智能节点数据隔离标识",
+            "reachable": false,
+            "name": "消息模板智能节点数据隔离标识"
+        },
+        "msgTemplateJsScript": {
+            "meaning": "消息模板js脚本",
+            "reachable": false,
+            "name": "消息模板js脚本"
+        },
+        "msgTemplateName": {
+            "meaning": "消息模板智能节点名",
+            "reachable": false,
+            "name": "消息模板智能节点名"
+        },
+        "msgTemplateNameCodeSearch": {
+            "meaning": "消息模板name、user_code模糊搜索",
+            "reachable": false,
+            "name": "消息模板name、user_code模糊搜索"
+        },
+        "msgTemplateNumberExtra1": {
+            "meaning": "消息模板扩展数量1",
+            "reachable": false,
+            "name": "消息模板扩展数量1"
+        },
+        "msgTemplateNumberExtra2": {
+            "meaning": "消息模板扩展数量2",
+            "reachable": false,
+            "name": "消息模板扩展数量2"
+        },
+        "msgTemplateNumberExtra3": {
+            "meaning": "消息模板扩展数量3",
+            "reachable": false,
+            "name": "消息模板扩展数量3"
+        },
+        "msgTemplateNumberExtra4": {
+            "meaning": "消息模板扩展数量4",
+            "reachable": false,
+            "name": "消息模板扩展数量4"
+        },
+        "msgTemplateNumberExtra5": {
+            "meaning": "消息模板扩展数量5",
+            "reachable": false,
+            "name": "消息模板扩展数量5"
+        },
+        "msgTemplateParentId": {
+            "meaning": "消息模板父节点ID",
+            "reachable": false,
+            "name": "消息模板父节点ID"
+        },
+        "msgTemplateProcessInstanceId": {
+            "meaning": "消息模板流程实例ID",
+            "reachable": false,
+            "name": "消息模板流程实例ID"
+        },
+        "msgTemplateSerialNumber": {
+            "meaning": "消息模板顺序号",
+            "reachable": false,
+            "name": "消息模板顺序号"
+        },
+        "msgTemplateState": {
+            "meaning": "消息模板通用状态",
+            "reachable": false,
+            "name": "消息模板通用状态"
+        },
+        "msgTemplateSystemCode": {
+            "meaning": "消息模板系统编码",
+            "reachable": false,
+            "name": "消息模板系统编码"
+        },
+        "msgTemplateTaskNodeName": {
+            "meaning": "消息模板任务节点名称",
+            "reachable": false,
+            "name": "消息模板任务节点名称"
+        },
+        "msgTemplateTenantId": {
+            "meaning": "消息模板租户_id",
+            "reachable": false,
+            "name": "消息模板租户_id"
+        },
+        "msgTemplateThirdPartyClass": {
+            "meaning": "消息模板第三方分类",
+            "reachable": false,
+            "name": "消息模板第三方分类"
+        },
+        "msgTemplateThirdPartyId": {
+            "meaning": "消息模板第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "消息模板第三方系统中的唯一ID"
+        },
+        "msgTemplateThirdPartyName": {
+            "meaning": "消息模板第三方名称",
+            "reachable": false,
+            "name": "消息模板第三方名称"
+        },
+        "msgTemplateToAuditDate": {
+            "meaning": "msgTemplateToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToCreateTime": {
+            "meaning": "msgTemplateToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToDateExtra1": {
+            "meaning": "msgTemplateToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToDateExtra2": {
+            "meaning": "msgTemplateToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToDateExtra3": {
+            "meaning": "msgTemplateToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToDateExtra4": {
+            "meaning": "msgTemplateToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToDateExtra5": {
+            "meaning": "msgTemplateToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateToUpdateTime": {
+            "meaning": "msgTemplateToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgTemplateUpdateTime": {
+            "meaning": "消息模板更新时间",
+            "reachable": false,
+            "name": "消息模板更新时间"
+        },
+        "msgTemplateUpdater": {
+            "meaning": "消息模板更新人",
+            "reachable": false,
+            "name": "消息模板更新人"
+        },
+        "msgTemplateUpdaterId": {
+            "meaning": "消息模板更新人ID",
+            "reachable": false,
+            "name": "消息模板更新人ID"
+        },
+        "msgTemplateUserCode": {
+            "meaning": "消息模板智能节点的唯一编码",
+            "reachable": false,
+            "name": "消息模板智能节点的唯一编码"
+        },
+        "msgTemplateVarExtra1": {
+            "meaning": "消息模板扩展1",
+            "reachable": false,
+            "name": "消息模板扩展1"
+        },
+        "msgTemplateVarExtra2": {
+            "meaning": "消息模板扩展2",
+            "reachable": false,
+            "name": "消息模板扩展2"
+        },
+        "msgTemplateVarExtra3": {
+            "meaning": "消息模板扩展3",
+            "reachable": false,
+            "name": "消息模板扩展3"
+        },
+        "msgTemplateVarExtra4": {
+            "meaning": "消息模板扩展4",
+            "reachable": false,
+            "name": "消息模板扩展4"
+        },
+        "msgTemplateVarExtra5": {
+            "meaning": "消息模板扩展5",
+            "reachable": false,
+            "name": "消息模板扩展5"
+        },
+        "msgTemplateVersion": {
+            "meaning": "消息模板版本号",
+            "reachable": false,
+            "name": "消息模板版本号"
+        }
+    }
+}

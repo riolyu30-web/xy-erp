@@ -1,0 +1,1510 @@
+{
+    "api_name": "/outgoing-order-detail/findList",
+    "table_name": "外发订单明细表",
+    "request": {
+        "outgoingOrderDetailOutgoingOrderClazz": "OUTGOING_ORDER",
+        "outgoingOrderDetailClazz": "OUTGOING_ORDER_DETAIL"
+    },
+    "mainTabClazz": "OUTGOING_ORDER_DETAIL",
+    "response": {
+        "outgoingOrderDetailActualTimeRequired": {
+            "meaning": "外发订单明细表实际需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表实际需时"
+        },
+        "outgoingOrderDetailAddress": {
+            "meaning": "外发订单明细表详细地址",
+            "reachable": true,
+            "name": "外发订单明细表详细地址"
+        },
+        "outgoingOrderDetailAdjustmentTimeRequired": {
+            "meaning": "外发订单明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "外发订单明细表调整需时"
+        },
+        "outgoingOrderDetailApplicationId": {
+            "meaning": "外发订单明细表应用ID",
+            "reachable": true,
+            "name": "外发订单明细表应用ID"
+        },
+        "outgoingOrderDetailAreaId": {
+            "meaning": "外发订单明细表行政区域id",
+            "reachable": true,
+            "name": "外发订单明细表行政区域id"
+        },
+        "outgoingOrderDetailAuditDate": {
+            "meaning": "外发订单明细表审核时间",
+            "reachable": true,
+            "name": "外发订单明细表审核时间"
+        },
+        "outgoingOrderDetailAuditStatus": {
+            "meaning": "外发订单明细表审核状态",
+            "reachable": true,
+            "name": "外发订单明细表审核状态"
+        },
+        "outgoingOrderDetailAvailableScheduleId": {
+            "meaning": "外发订单明细表可用日程id",
+            "reachable": true,
+            "name": "外发订单明细表可用日程id"
+        },
+        "outgoingOrderDetailBeginTime": {
+            "meaning": "外发订单明细表开始时间",
+            "reachable": true,
+            "name": "外发订单明细表开始时间"
+        },
+        "outgoingOrderDetailBizVersion": {
+            "meaning": "外发订单明细表业务自定义版本号",
+            "reachable": true,
+            "name": "外发订单明细表业务自定义版本号"
+        },
+        "outgoingOrderDetailBriefName": {
+            "meaning": "外发订单明细表简称",
+            "reachable": true,
+            "name": "外发订单明细表简称"
+        },
+        "outgoingOrderDetailBusDivisId": {
+            "meaning": "外发订单明细表事业部id",
+            "reachable": true,
+            "name": "外发订单明细表事业部id"
+        },
+        "outgoingOrderDetailClazz": {
+            "meaning": "外发订单明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "外发订单明细表子类"
+        },
+        "outgoingOrderDetailClosedReason": {
+            "meaning": "外发订单明细表结案原因",
+            "reachable": true,
+            "name": "外发订单明细表结案原因"
+        },
+        "outgoingOrderDetailClosedStatus": {
+            "meaning": "外发订单明细表结案状态",
+            "reachable": true,
+            "name": "外发订单明细表结案状态"
+        },
+        "outgoingOrderDetailComment": {
+            "meaning": "外发订单明细表评论",
+            "reachable": true,
+            "name": "外发订单明细表评论"
+        },
+        "outgoingOrderDetailCompleteQuantity": {
+            "meaning": "外发订单明细表完成数量",
+            "reachable": true,
+            "name": "外发订单明细表完成数量"
+        },
+        "outgoingOrderDetailCompleteStatus": {
+            "meaning": "外发订单明细表完成状态",
+            "reachable": true,
+            "name": "外发订单明细表完成状态"
+        },
+        "outgoingOrderDetailCostSchemeId": {
+            "meaning": "outgoingOrderDetailCostSchemeId",
+            "reachable": true,
+            "name": ""
+        },
+        "outgoingOrderDetailCreateTime": {
+            "meaning": "外发订单明细表创建时间",
+            "reachable": true,
+            "name": "外发订单明细表创建时间"
+        },
+        "outgoingOrderDetailCreator": {
+            "meaning": "外发订单明细表创建人",
+            "reachable": true,
+            "name": "外发订单明细表创建人"
+        },
+        "outgoingOrderDetailCreatorId": {
+            "meaning": "外发订单明细表创建人ID",
+            "reachable": true,
+            "name": "外发订单明细表创建人ID"
+        },
+        "outgoingOrderDetailDateExtra1": {
+            "meaning": "外发订单明细表扩展时间1",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间1"
+        },
+        "outgoingOrderDetailDateExtra2": {
+            "meaning": "外发订单明细表扩展时间2",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间2"
+        },
+        "outgoingOrderDetailDateExtra3": {
+            "meaning": "外发订单明细表扩展时间3",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间3"
+        },
+        "outgoingOrderDetailDateExtra4": {
+            "meaning": "外发订单明细表扩展时间4",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间4"
+        },
+        "outgoingOrderDetailDateExtra5": {
+            "meaning": "外发订单明细表扩展时间5",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间5"
+        },
+        "outgoingOrderDetailDds": {
+            "meaning": "外发订单明细表欧盟零毁林法案-dds编号",
+            "reachable": true,
+            "name": "外发订单明细表欧盟零毁林法案-dds编号"
+        },
+        "outgoingOrderDetailDefaultType": {
+            "meaning": "外发订单明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "外发订单明细表智能节点主类型"
+        },
+        "outgoingOrderDetailDeliveryDate": {
+            "meaning": "外发订单明细表交货日期",
+            "reachable": true,
+            "name": "外发订单明细表交货日期"
+        },
+        "outgoingOrderDetailDeliveryTypeId": {
+            "meaning": "外发订单明细表送货类型",
+            "reachable": true,
+            "name": "外发订单明细表送货类型"
+        },
+        "outgoingOrderDetailDescription": {
+            "meaning": "外发订单明细表描述",
+            "reachable": true,
+            "name": "外发订单明细表描述"
+        },
+        "outgoingOrderDetailEndTime": {
+            "meaning": "外发订单明细表结束时间",
+            "reachable": true,
+            "name": "外发订单明细表结束时间"
+        },
+        "outgoingOrderDetailEndTimeRequired": {
+            "meaning": "外发订单明细表最后需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表最后需时"
+        },
+        "outgoingOrderDetailEngName": {
+            "meaning": "外发订单明细表英文名称",
+            "reachable": true,
+            "name": "外发订单明细表英文名称"
+        },
+        "outgoingOrderDetailEquipmentId": {
+            "meaning": "外发订单明细表设备id",
+            "reachable": true,
+            "name": "外发订单明细表设备id"
+        },
+        "outgoingOrderDetailExchangeRateId": {
+            "meaning": "外发订单明细表币种汇率id",
+            "reachable": true,
+            "name": "外发订单明细表币种汇率id"
+        },
+        "outgoingOrderDetailExpProcessId": {
+            "meaning": "外发订单明细表经验工序id",
+            "reachable": true,
+            "name": "外发订单明细表经验工序id"
+        },
+        "outgoingOrderDetailExpectedDate": {
+            "type": "object",
+            "meaning": "外发订单明细表预计交期",
+            "reachable": true,
+            "name": "外发订单明细表预计交期"
+        },
+        "outgoingOrderDetailExtMatBarcode": {
+            "meaning": "外发订单明细表外部物料条码(BarCode)",
+            "reachable": true,
+            "name": "外发订单明细表外部物料条码"
+        },
+        "outgoingOrderDetailExtMatCode": {
+            "meaning": "外发订单明细表外部物料编码(例客户产品编码)",
+            "reachable": true,
+            "name": "外发订单明细表外部物料编码"
+        },
+        "outgoingOrderDetailExtMatName": {
+            "meaning": "外发订单明细表外部物料名称(例客户产品名称)",
+            "reachable": true,
+            "name": "外发订单明细表外部物料名称"
+        },
+        "outgoingOrderDetailExtension": {
+            "meaning": "外发订单明细表扩展数据",
+            "reachable": true,
+            "name": "外发订单明细表扩展数据"
+        },
+        "outgoingOrderDetailExternalNo": {
+            "meaning": "外发订单明细表外部单号(例客户PO，采购送货单号)",
+            "reachable": true,
+            "name": "外发订单明细表外部单号"
+        },
+        "outgoingOrderDetailExternalState": {
+            "meaning": "外发订单明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "外发订单明细表上流程状态位"
+        },
+        "outgoingOrderDetailFilterClazz": {
+            "meaning": "外发订单明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "外发订单明细表冗余字段用于筛选"
+        },
+        "outgoingOrderDetailFlags": {
+            "meaning": "外发订单明细表63位标志位",
+            "reachable": true,
+            "name": "外发订单明细表63位标志位"
+        },
+        "outgoingOrderDetailFromAuditDate": {
+            "meaning": "outgoingOrderDetailFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromBeginTime": {
+            "meaning": "outgoingOrderDetailFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromCreateTime": {
+            "meaning": "outgoingOrderDetailFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDateExtra1": {
+            "meaning": "outgoingOrderDetailFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDateExtra2": {
+            "meaning": "outgoingOrderDetailFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDateExtra3": {
+            "meaning": "outgoingOrderDetailFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDateExtra4": {
+            "meaning": "outgoingOrderDetailFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDateExtra5": {
+            "meaning": "outgoingOrderDetailFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromDeliveryDate": {
+            "meaning": "outgoingOrderDetailFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromEndTime": {
+            "meaning": "outgoingOrderDetailFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromExpectedDate": {
+            "type": "object",
+            "meaning": "outgoingOrderDetailFromExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromReceiptDate": {
+            "meaning": "outgoingOrderDetailFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFromUpdateTime": {
+            "meaning": "outgoingOrderDetailFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailFscType": {
+            "meaning": "外发订单明细表FSC声明",
+            "reachable": true,
+            "name": "外发订单明细表FSC声明"
+        },
+        "outgoingOrderDetailGenerativePeople": {
+            "meaning": "外发订单明细表下发人",
+            "reachable": true,
+            "name": "外发订单明细表下发人"
+        },
+        "outgoingOrderDetailGenerativeState": {
+            "meaning": "外发订单明细表下发状态",
+            "reachable": true,
+            "name": "外发订单明细表下发状态"
+        },
+        "outgoingOrderDetailGiftQty": {
+            "meaning": "外发订单明细表赠品数量",
+            "reachable": true,
+            "name": "外发订单明细表赠品数量"
+        },
+        "outgoingOrderDetailGroovyScript": {
+            "meaning": "外发订单明细表groovy脚本",
+            "reachable": true,
+            "name": "外发订单明细表groovy脚本"
+        },
+        "outgoingOrderDetailGropeCode": {
+            "meaning": "外发订单明细表搜索码",
+            "reachable": true,
+            "name": "外发订单明细表搜索码"
+        },
+        "outgoingOrderDetailId": {
+            "meaning": "外发订单明细表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "外发订单明细表主键ID"
+        },
+        "outgoingOrderDetailInUsed": {
+            "meaning": "外发订单明细表是否被使用",
+            "reachable": true,
+            "name": "外发订单明细表是否被使用"
+        },
+        "outgoingOrderDetailInvTypeTaxRateId": {
+            "meaning": "外发订单明细表发票税率id",
+            "reachable": true,
+            "name": "外发订单明细表发票税率id"
+        },
+        "outgoingOrderDetailIsBanned": {
+            "meaning": "外发订单明细表是否被禁用",
+            "reachable": true,
+            "name": "外发订单明细表是否被禁用"
+        },
+        "outgoingOrderDetailIsDeleted": {
+            "meaning": "外发订单明细表是否被删除",
+            "reachable": true,
+            "name": "外发订单明细表是否被删除"
+        },
+        "outgoingOrderDetailIsLeaf": {
+            "meaning": "外发订单明细表是否叶子节点",
+            "reachable": true,
+            "name": "外发订单明细表是否叶子节点"
+        },
+        "outgoingOrderDetailIsMainFlow": {
+            "meaning": "外发订单明细表是否是主流程",
+            "reachable": true,
+            "name": "外发订单明细表是否是主流程"
+        },
+        "outgoingOrderDetailIsManualModificationDate": {
+            "meaning": "外发订单明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "外发订单明细表是否手动修改计划生产时间"
+        },
+        "outgoingOrderDetailIsolation": {
+            "meaning": "外发订单明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "外发订单明细表智能节点数据隔离标识"
+        },
+        "outgoingOrderDetailJsScript": {
+            "meaning": "外发订单明细表js脚本",
+            "reachable": true,
+            "name": "外发订单明细表js脚本"
+        },
+        "outgoingOrderDetailLastWorkCode": {
+            "meaning": "外发订单明细表产品最新工单号",
+            "reachable": true,
+            "name": "外发订单明细表产品最新工单号"
+        },
+        "outgoingOrderDetailLocUnitPrice": {
+            "meaning": "外发订单明细表本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "外发订单明细表本币单价"
+        },
+        "outgoingOrderDetailLocalAmount": {
+            "meaning": "外发订单明细表本币金额(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "外发订单明细表本币金额"
+        },
+        "outgoingOrderDetailLossQty": {
+            "meaning": "外发订单明细表损耗",
+            "reachable": true,
+            "name": "外发订单明细表损耗"
+        },
+        "outgoingOrderDetailMatCat": {
+            "meaning": "外发订单明细表物料分类ID",
+            "reachable": true,
+            "name": "外发订单明细表物料分类ID"
+        },
+        "outgoingOrderDetailMaterialId": {
+            "meaning": "外发订单明细表物料id",
+            "reachable": true,
+            "name": "外发订单明细表物料id"
+        },
+        "outgoingOrderDetailName": {
+            "meaning": "外发订单明细表智能节点名",
+            "reachable": true,
+            "name": "外发订单明细表智能节点名"
+        },
+        "outgoingOrderDetailNameCodeSearch": {
+            "meaning": "外发订单明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "外发订单明细表name、user_code模糊搜索"
+        },
+        "outgoingOrderDetailNumberExtra1": {
+            "meaning": "外发订单明细表扩展数量1",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量1"
+        },
+        "outgoingOrderDetailNumberExtra2": {
+            "meaning": "外发订单明细表扩展数量2",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量2"
+        },
+        "outgoingOrderDetailNumberExtra3": {
+            "meaning": "外发订单明细表扩展数量3",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量3"
+        },
+        "outgoingOrderDetailNumberExtra4": {
+            "meaning": "外发订单明细表扩展数量4",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量4"
+        },
+        "outgoingOrderDetailNumberExtra5": {
+            "meaning": "外发订单明细表扩展数量5",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量5"
+        },
+        "outgoingOrderDetailOutgoingOrderActualTimeRequired": {
+            "meaning": "外发订单明细表实际需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表实际需时"
+        },
+        "outgoingOrderDetailOutgoingOrderAdjustmentTimeRequired": {
+            "meaning": "外发订单明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "外发订单明细表调整需时"
+        },
+        "outgoingOrderDetailOutgoingOrderApplicationId": {
+            "meaning": "外发订单明细表应用ID",
+            "reachable": true,
+            "name": "外发订单明细表应用ID"
+        },
+        "outgoingOrderDetailOutgoingOrderAuditDate": {
+            "meaning": "外发订单明细表审核时间",
+            "reachable": true,
+            "name": "外发订单明细表审核时间"
+        },
+        "outgoingOrderDetailOutgoingOrderAuditStatus": {
+            "meaning": "外发订单明细表审核状态",
+            "reachable": true,
+            "name": "外发订单明细表审核状态"
+        },
+        "outgoingOrderDetailOutgoingOrderAvailableScheduleId": {
+            "meaning": "外发订单明细表可用日程id",
+            "reachable": true,
+            "name": "外发订单明细表可用日程id"
+        },
+        "outgoingOrderDetailOutgoingOrderBeginTime": {
+            "meaning": "外发订单明细表开始时间",
+            "reachable": true,
+            "name": "外发订单明细表开始时间"
+        },
+        "outgoingOrderDetailOutgoingOrderBizVersion": {
+            "meaning": "外发订单明细表业务自定义版本号",
+            "reachable": true,
+            "name": "外发订单明细表业务自定义版本号"
+        },
+        "outgoingOrderDetailOutgoingOrderBriefName": {
+            "meaning": "外发订单明细表简称",
+            "reachable": true,
+            "name": "外发订单明细表简称"
+        },
+        "outgoingOrderDetailOutgoingOrderBusDivisId": {
+            "meaning": "外发订单明细表事业部id",
+            "reachable": true,
+            "name": "外发订单明细表事业部id"
+        },
+        "outgoingOrderDetailOutgoingOrderClazz": {
+            "meaning": "外发订单明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "外发订单明细表子类"
+        },
+        "outgoingOrderDetailOutgoingOrderClosedReason": {
+            "meaning": "外发订单明细表结案原因",
+            "reachable": true,
+            "name": "外发订单明细表结案原因"
+        },
+        "outgoingOrderDetailOutgoingOrderClosedStatus": {
+            "meaning": "外发订单明细表结案状态",
+            "reachable": true,
+            "name": "外发订单明细表结案状态"
+        },
+        "outgoingOrderDetailOutgoingOrderComment": {
+            "meaning": "外发订单明细表评论",
+            "reachable": true,
+            "name": "外发订单明细表评论"
+        },
+        "outgoingOrderDetailOutgoingOrderCompleteQuantity": {
+            "meaning": "外发订单明细表完成数量",
+            "reachable": true,
+            "name": "外发订单明细表完成数量"
+        },
+        "outgoingOrderDetailOutgoingOrderCompleteStatus": {
+            "meaning": "外发订单明细表完成状态",
+            "reachable": true,
+            "name": "外发订单明细表完成状态"
+        },
+        "outgoingOrderDetailOutgoingOrderContName": {
+            "meaning": "外发订单明细表联系人姓名",
+            "reachable": true,
+            "name": "外发订单明细表联系人姓名"
+        },
+        "outgoingOrderDetailOutgoingOrderCreateTime": {
+            "meaning": "外发订单明细表创建时间",
+            "reachable": true,
+            "name": "外发订单明细表创建时间"
+        },
+        "outgoingOrderDetailOutgoingOrderCreator": {
+            "meaning": "外发订单明细表创建人",
+            "reachable": true,
+            "name": "外发订单明细表创建人"
+        },
+        "outgoingOrderDetailOutgoingOrderCreatorId": {
+            "meaning": "外发订单明细表创建人ID",
+            "reachable": true,
+            "name": "外发订单明细表创建人ID"
+        },
+        "outgoingOrderDetailOutgoingOrderCur": {
+            "meaning": "外发订单明细表币种",
+            "reachable": true,
+            "name": "外发订单明细表币种"
+        },
+        "outgoingOrderDetailOutgoingOrderCurRate": {
+            "meaning": "外发订单明细表汇率",
+            "reachable": true,
+            "name": "外发订单明细表汇率"
+        },
+        "outgoingOrderDetailOutgoingOrderDateExtra1": {
+            "meaning": "外发订单明细表扩展时间1",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间1"
+        },
+        "outgoingOrderDetailOutgoingOrderDateExtra2": {
+            "meaning": "外发订单明细表扩展时间2",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间2"
+        },
+        "outgoingOrderDetailOutgoingOrderDateExtra3": {
+            "meaning": "外发订单明细表扩展时间3",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间3"
+        },
+        "outgoingOrderDetailOutgoingOrderDateExtra4": {
+            "meaning": "外发订单明细表扩展时间4",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间4"
+        },
+        "outgoingOrderDetailOutgoingOrderDateExtra5": {
+            "meaning": "外发订单明细表扩展时间5",
+            "reachable": true,
+            "name": "外发订单明细表扩展时间5"
+        },
+        "outgoingOrderDetailOutgoingOrderDefaultType": {
+            "meaning": "外发订单明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "外发订单明细表智能节点主类型"
+        },
+        "outgoingOrderDetailOutgoingOrderDelMethod": {
+            "meaning": "外发订单明细表配送方式",
+            "reachable": true,
+            "name": "外发订单明细表配送方式"
+        },
+        "outgoingOrderDetailOutgoingOrderDeliveryDate": {
+            "meaning": "外发订单明细表交货日期",
+            "reachable": true,
+            "name": "外发订单明细表交货日期"
+        },
+        "outgoingOrderDetailOutgoingOrderDelvSup": {
+            "meaning": "外发订单明细表送货供应商",
+            "reachable": true,
+            "name": "外发订单明细表送货供应商"
+        },
+        "outgoingOrderDetailOutgoingOrderDescription": {
+            "meaning": "外发订单明细表描述",
+            "reachable": true,
+            "name": "外发订单明细表描述"
+        },
+        "outgoingOrderDetailOutgoingOrderEndTime": {
+            "meaning": "外发订单明细表结束时间",
+            "reachable": true,
+            "name": "外发订单明细表结束时间"
+        },
+        "outgoingOrderDetailOutgoingOrderEndTimeRequired": {
+            "meaning": "外发订单明细表最后需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表最后需时"
+        },
+        "outgoingOrderDetailOutgoingOrderEngName": {
+            "meaning": "外发订单明细表英文名称",
+            "reachable": true,
+            "name": "外发订单明细表英文名称"
+        },
+        "outgoingOrderDetailOutgoingOrderEquipmentId": {
+            "meaning": "外发订单明细表设备id",
+            "reachable": true,
+            "name": "外发订单明细表设备id"
+        },
+        "outgoingOrderDetailOutgoingOrderExchangeRateId": {
+            "meaning": "外发订单明细表币种汇率id",
+            "reachable": true,
+            "name": "外发订单明细表币种汇率id"
+        },
+        "outgoingOrderDetailOutgoingOrderExtension": {
+            "meaning": "外发订单明细表扩展数据",
+            "reachable": true,
+            "name": "外发订单明细表扩展数据"
+        },
+        "outgoingOrderDetailOutgoingOrderExternalState": {
+            "meaning": "外发订单明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "外发订单明细表上流程状态位"
+        },
+        "outgoingOrderDetailOutgoingOrderFilterClazz": {
+            "meaning": "外发订单明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "外发订单明细表冗余字段用于筛选"
+        },
+        "outgoingOrderDetailOutgoingOrderFlags": {
+            "meaning": "外发订单明细表63位标志位",
+            "reachable": true,
+            "name": "外发订单明细表63位标志位"
+        },
+        "outgoingOrderDetailOutgoingOrderFmtDec": {
+            "meaning": "外发订单明细表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "外发订单明细表保留小数位方法"
+        },
+        "outgoingOrderDetailOutgoingOrderFromAuditDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromBeginTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromCreateTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDateExtra1": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDateExtra2": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDateExtra3": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDateExtra4": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDateExtra5": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromDeliveryDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromEndTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromReceiptDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFromUpdateTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderFscType": {
+            "meaning": "外发订单明细表FSC声明",
+            "reachable": true,
+            "name": "外发订单明细表FSC声明"
+        },
+        "outgoingOrderDetailOutgoingOrderGenerativePeople": {
+            "meaning": "外发订单明细表下发人",
+            "reachable": true,
+            "name": "外发订单明细表下发人"
+        },
+        "outgoingOrderDetailOutgoingOrderGenerativeState": {
+            "meaning": "外发订单明细表下发状态",
+            "reachable": true,
+            "name": "外发订单明细表下发状态"
+        },
+        "outgoingOrderDetailOutgoingOrderGroovyScript": {
+            "meaning": "外发订单明细表groovy脚本",
+            "reachable": true,
+            "name": "外发订单明细表groovy脚本"
+        },
+        "outgoingOrderDetailOutgoingOrderGropeCode": {
+            "meaning": "外发订单明细表搜索码",
+            "reachable": true,
+            "name": "外发订单明细表搜索码"
+        },
+        "outgoingOrderDetailOutgoingOrderId": {
+            "meaning": "外发订单明细表id",
+            "reachable": true,
+            "name": "外发订单明细表id"
+        },
+        "outgoingOrderDetailOutgoingOrderInUsed": {
+            "meaning": "外发订单明细表是否被使用",
+            "reachable": true,
+            "name": "外发订单明细表是否被使用"
+        },
+        "outgoingOrderDetailOutgoingOrderInvType": {
+            "meaning": "外发订单明细表发票类型id",
+            "reachable": true,
+            "name": "外发订单明细表发票类型id"
+        },
+        "outgoingOrderDetailOutgoingOrderInvTypeTaxRateId": {
+            "meaning": "外发订单明细表发票税率id",
+            "reachable": true,
+            "name": "外发订单明细表发票税率id"
+        },
+        "outgoingOrderDetailOutgoingOrderIsBanned": {
+            "meaning": "外发订单明细表是否被禁用",
+            "reachable": true,
+            "name": "外发订单明细表是否被禁用"
+        },
+        "outgoingOrderDetailOutgoingOrderIsDeleted": {
+            "meaning": "外发订单明细表是否被删除",
+            "reachable": true,
+            "name": "外发订单明细表是否被删除"
+        },
+        "outgoingOrderDetailOutgoingOrderIsLeaf": {
+            "meaning": "外发订单明细表是否叶子节点",
+            "reachable": true,
+            "name": "外发订单明细表是否叶子节点"
+        },
+        "outgoingOrderDetailOutgoingOrderIsMainFlow": {
+            "meaning": "外发订单明细表是否是主流程",
+            "reachable": true,
+            "name": "外发订单明细表是否是主流程"
+        },
+        "outgoingOrderDetailOutgoingOrderIsManualModificationDate": {
+            "meaning": "外发订单明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "外发订单明细表是否手动修改计划生产时间"
+        },
+        "outgoingOrderDetailOutgoingOrderIsUrgent": {
+            "meaning": "外发订单明细表是否加急",
+            "reachable": true,
+            "name": "外发订单明细表是否加急"
+        },
+        "outgoingOrderDetailOutgoingOrderIsolation": {
+            "meaning": "外发订单明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "外发订单明细表智能节点数据隔离标识"
+        },
+        "outgoingOrderDetailOutgoingOrderJsScript": {
+            "meaning": "外发订单明细表js脚本",
+            "reachable": true,
+            "name": "外发订单明细表js脚本"
+        },
+        "outgoingOrderDetailOutgoingOrderLcTotalAmt": {
+            "meaning": "外发订单明细表本币总费用(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "外发订单明细表本币总费用"
+        },
+        "outgoingOrderDetailOutgoingOrderMaterialId": {
+            "meaning": "外发订单明细表物料id",
+            "reachable": true,
+            "name": "外发订单明细表物料id"
+        },
+        "outgoingOrderDetailOutgoingOrderName": {
+            "meaning": "外发订单明细表智能节点名",
+            "reachable": true,
+            "name": "外发订单明细表智能节点名"
+        },
+        "outgoingOrderDetailOutgoingOrderNameCodeSearch": {
+            "meaning": "外发订单明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "外发订单明细表name、user_code模糊搜索"
+        },
+        "outgoingOrderDetailOutgoingOrderNumberExtra1": {
+            "meaning": "外发订单明细表扩展数量1",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量1"
+        },
+        "outgoingOrderDetailOutgoingOrderNumberExtra2": {
+            "meaning": "外发订单明细表扩展数量2",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量2"
+        },
+        "outgoingOrderDetailOutgoingOrderNumberExtra3": {
+            "meaning": "外发订单明细表扩展数量3",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量3"
+        },
+        "outgoingOrderDetailOutgoingOrderNumberExtra4": {
+            "meaning": "外发订单明细表扩展数量4",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量4"
+        },
+        "outgoingOrderDetailOutgoingOrderNumberExtra5": {
+            "meaning": "外发订单明细表扩展数量5",
+            "reachable": true,
+            "name": "外发订单明细表扩展数量5"
+        },
+        "outgoingOrderDetailOutgoingOrderPCount": {
+            "meaning": "外发订单明细表打印次数",
+            "reachable": true,
+            "name": "外发订单明细表打印次数"
+        },
+        "outgoingOrderDetailOutgoingOrderParentId": {
+            "meaning": "外发订单明细表父节点ID",
+            "reachable": true,
+            "name": "外发订单明细表父节点ID"
+        },
+        "outgoingOrderDetailOutgoingOrderPhone": {
+            "meaning": "外发订单明细表手机",
+            "reachable": true,
+            "name": "外发订单明细表手机"
+        },
+        "outgoingOrderDetailOutgoingOrderPlannedOutputQuantity": {
+            "meaning": "外发订单明细表计划产出数量",
+            "reachable": true,
+            "name": "外发订单明细表计划产出数量"
+        },
+        "outgoingOrderDetailOutgoingOrderPlannedTimeRequired": {
+            "meaning": "外发订单明细表计划需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表计划需时"
+        },
+        "outgoingOrderDetailOutgoingOrderPrintTimes": {
+            "meaning": "外发订单明细表打印次数",
+            "reachable": true,
+            "name": "外发订单明细表打印次数"
+        },
+        "outgoingOrderDetailOutgoingOrderPriority": {
+            "meaning": "外发订单明细表优先级",
+            "reachable": true,
+            "name": "外发订单明细表优先级"
+        },
+        "outgoingOrderDetailOutgoingOrderProcessInstanceId": {
+            "meaning": "外发订单明细表流程实例ID",
+            "reachable": true,
+            "name": "外发订单明细表流程实例ID"
+        },
+        "outgoingOrderDetailOutgoingOrderProductionProcessesTypeId": {
+            "meaning": "外发订单明细表工序类型ID",
+            "reachable": true,
+            "name": "外发订单明细表工序类型ID"
+        },
+        "outgoingOrderDetailOutgoingOrderProductionShiftId": {
+            "meaning": "外发订单明细表生产班次ID",
+            "reachable": true,
+            "name": "外发订单明细表生产班次ID"
+        },
+        "outgoingOrderDetailOutgoingOrderQuantity": {
+            "meaning": "外发订单明细表任务数量",
+            "reachable": true,
+            "name": "外发订单明细表任务数量"
+        },
+        "outgoingOrderDetailOutgoingOrderReceiptDate": {
+            "meaning": "外发订单明细表单据日期",
+            "reachable": true,
+            "name": "外发订单明细表单据日期"
+        },
+        "outgoingOrderDetailOutgoingOrderReceiptType": {
+            "meaning": "外发订单明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "外发订单明细表单据类型"
+        },
+        "outgoingOrderDetailOutgoingOrderRelatedTasksId": {
+            "meaning": "外发订单明细表关联任务id",
+            "reachable": true,
+            "name": "外发订单明细表关联任务id"
+        },
+        "outgoingOrderDetailOutgoingOrderSerialNumber": {
+            "meaning": "外发订单明细表顺序号",
+            "reachable": true,
+            "name": "外发订单明细表顺序号"
+        },
+        "outgoingOrderDetailOutgoingOrderSettleSupId": {
+            "meaning": "外发订单明细表结算供应商ID",
+            "reachable": true,
+            "name": "外发订单明细表结算供应商ID"
+        },
+        "outgoingOrderDetailOutgoingOrderSource": {
+            "meaning": "外发订单明细表源节点id(-查询入参-)",
+            "reachable": true,
+            "name": "外发订单明细表源节点id"
+        },
+        "outgoingOrderDetailOutgoingOrderSourceType": {
+            "meaning": "外发订单明细表来源类型",
+            "reachable": true,
+            "name": "外发订单明细表来源类型"
+        },
+        "outgoingOrderDetailOutgoingOrderState": {
+            "meaning": "外发订单明细表通用状态",
+            "reachable": true,
+            "name": "外发订单明细表通用状态"
+        },
+        "outgoingOrderDetailOutgoingOrderStlAmtFmt": {
+            "meaning": "外发订单明细表结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "外发订单明细表结算金额保留小数位"
+        },
+        "outgoingOrderDetailOutgoingOrderStlFee": {
+            "meaning": "外发订单明细表结算费用（默认与含税总金额相等)",
+            "reachable": true,
+            "name": "外发订单明细表结算费用"
+        },
+        "outgoingOrderDetailOutgoingOrderStlPriceFmt": {
+            "meaning": "外发订单明细表结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "外发订单明细表结算单价保留小数位"
+        },
+        "outgoingOrderDetailOutgoingOrderStlType": {
+            "meaning": "外发订单明细表结算类型 SettlementType_id",
+            "reachable": true,
+            "name": "外发订单明细表结算类型"
+        },
+        "outgoingOrderDetailOutgoingOrderSupId": {
+            "meaning": "外发订单明细表供应商id",
+            "reachable": true,
+            "name": "外发订单明细表供应商id"
+        },
+        "outgoingOrderDetailOutgoingOrderSystemCode": {
+            "meaning": "外发订单明细表系统编码",
+            "reachable": true,
+            "name": "外发订单明细表系统编码"
+        },
+        "outgoingOrderDetailOutgoingOrderTarget": {
+            "meaning": "外发订单明细表目标节点id(-查询入参-)",
+            "reachable": true,
+            "name": "外发订单明细表目标节点id"
+        },
+        "outgoingOrderDetailOutgoingOrderTaskNodeName": {
+            "meaning": "外发订单明细表任务节点名称",
+            "reachable": true,
+            "name": "外发订单明细表任务节点名称"
+        },
+        "outgoingOrderDetailOutgoingOrderTaxRt": {
+            "meaning": "外发订单明细表税率",
+            "reachable": true,
+            "name": "外发订单明细表税率"
+        },
+        "outgoingOrderDetailOutgoingOrderTenantId": {
+            "meaning": "外发订单明细表租户ID",
+            "reachable": true,
+            "name": "外发订单明细表租户ID"
+        },
+        "outgoingOrderDetailOutgoingOrderThirdPartyClass": {
+            "meaning": "外发订单明细表第三方分类",
+            "reachable": true,
+            "name": "外发订单明细表第三方分类"
+        },
+        "outgoingOrderDetailOutgoingOrderThirdPartyId": {
+            "meaning": "外发订单明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "外发订单明细表第三方系统中的唯一ID"
+        },
+        "outgoingOrderDetailOutgoingOrderThirdPartyName": {
+            "meaning": "外发订单明细表第三方名称",
+            "reachable": true,
+            "name": "外发订单明细表第三方名称"
+        },
+        "outgoingOrderDetailOutgoingOrderToAuditDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToBeginTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToCreateTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDateExtra1": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDateExtra2": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDateExtra3": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDateExtra4": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDateExtra5": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToDeliveryDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToEndTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToReceiptDate": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderToUpdateTime": {
+            "meaning": "outgoingOrderDetailOutgoingOrderToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailOutgoingOrderTotalFeeNt": {
+            "meaning": "外发订单明细表总费用(不含税)",
+            "reachable": true,
+            "name": "外发订单明细表总费用"
+        },
+        "outgoingOrderDetailOutgoingOrderTotalVol": {
+            "meaning": "外发订单明细表总体积",
+            "reachable": true,
+            "name": "外发订单明细表总体积"
+        },
+        "outgoingOrderDetailOutgoingOrderTotalWithTax": {
+            "meaning": "外发订单明细表总费用(含税)",
+            "reachable": true,
+            "name": "外发订单明细表总费用"
+        },
+        "outgoingOrderDetailOutgoingOrderTotalWt": {
+            "meaning": "外发订单明细表总重量",
+            "reachable": true,
+            "name": "外发订单明细表总重量"
+        },
+        "outgoingOrderDetailOutgoingOrderUnitCode": {
+            "meaning": "外发订单明细表单位id",
+            "reachable": true,
+            "name": "外发订单明细表单位id"
+        },
+        "outgoingOrderDetailOutgoingOrderUpdateTime": {
+            "meaning": "外发订单明细表更新时间",
+            "reachable": true,
+            "name": "外发订单明细表更新时间"
+        },
+        "outgoingOrderDetailOutgoingOrderUpdater": {
+            "meaning": "外发订单明细表更新人",
+            "reachable": true,
+            "name": "外发订单明细表更新人"
+        },
+        "outgoingOrderDetailOutgoingOrderUpdaterId": {
+            "meaning": "外发订单明细表更新人ID",
+            "reachable": true,
+            "name": "外发订单明细表更新人ID"
+        },
+        "outgoingOrderDetailOutgoingOrderUserCode": {
+            "meaning": "外发订单明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "外发订单明细表智能节点的唯一编码"
+        },
+        "outgoingOrderDetailOutgoingOrderVarExtra1": {
+            "meaning": "外发订单明细表扩展1",
+            "reachable": true,
+            "name": "外发订单明细表扩展1"
+        },
+        "outgoingOrderDetailOutgoingOrderVarExtra2": {
+            "meaning": "外发订单明细表扩展2",
+            "reachable": true,
+            "name": "外发订单明细表扩展2"
+        },
+        "outgoingOrderDetailOutgoingOrderVarExtra3": {
+            "meaning": "外发订单明细表扩展3",
+            "reachable": true,
+            "name": "外发订单明细表扩展3"
+        },
+        "outgoingOrderDetailOutgoingOrderVarExtra4": {
+            "meaning": "外发订单明细表扩展4",
+            "reachable": true,
+            "name": "外发订单明细表扩展4"
+        },
+        "outgoingOrderDetailOutgoingOrderVarExtra5": {
+            "meaning": "外发订单明细表扩展5",
+            "reachable": true,
+            "name": "外发订单明细表扩展5"
+        },
+        "outgoingOrderDetailOutgoingOrderVersion": {
+            "meaning": "外发订单明细表版本号",
+            "reachable": true,
+            "name": "外发订单明细表版本号"
+        },
+        "outgoingOrderDetailParentId": {
+            "meaning": "外发订单明细表父节点ID",
+            "reachable": true,
+            "name": "外发订单明细表父节点ID"
+        },
+        "outgoingOrderDetailPlannedOutputQuantity": {
+            "meaning": "外发订单明细表计划产出数量",
+            "reachable": true,
+            "name": "外发订单明细表计划产出数量"
+        },
+        "outgoingOrderDetailPlannedTimeRequired": {
+            "meaning": "外发订单明细表计划需时(小时)",
+            "reachable": true,
+            "name": "外发订单明细表计划需时"
+        },
+        "outgoingOrderDetailPrintTimes": {
+            "meaning": "外发订单明细表打印次数",
+            "reachable": true,
+            "name": "外发订单明细表打印次数"
+        },
+        "outgoingOrderDetailPriority": {
+            "meaning": "外发订单明细表优先级",
+            "reachable": true,
+            "name": "外发订单明细表优先级"
+        },
+        "outgoingOrderDetailProCode": {
+            "meaning": "外发订单明细表项目编码",
+            "reachable": true,
+            "name": "外发订单明细表项目编码"
+        },
+        "outgoingOrderDetailProName": {
+            "meaning": "外发订单明细表项目名称",
+            "reachable": true,
+            "name": "外发订单明细表项目名称"
+        },
+        "outgoingOrderDetailProcessInstanceId": {
+            "meaning": "外发订单明细表流程实例ID",
+            "reachable": true,
+            "name": "外发订单明细表流程实例ID"
+        },
+        "outgoingOrderDetailProductionProcessesTypeId": {
+            "meaning": "外发订单明细表工序类型ID",
+            "reachable": true,
+            "name": "外发订单明细表工序类型ID"
+        },
+        "outgoingOrderDetailProductionShiftId": {
+            "meaning": "外发订单明细表生产班次ID",
+            "reachable": true,
+            "name": "外发订单明细表生产班次ID"
+        },
+        "outgoingOrderDetailProp": {
+            "meaning": "外发订单明细表比例",
+            "reachable": true,
+            "name": "外发订单明细表比例"
+        },
+        "outgoingOrderDetailQuantity": {
+            "meaning": "外发订单明细表任务数量",
+            "reachable": true,
+            "name": "外发订单明细表任务数量"
+        },
+        "outgoingOrderDetailQuoteQty": {
+            "meaning": "外发订单明细表报价数量",
+            "reachable": true,
+            "name": "外发订单明细表报价数量"
+        },
+        "outgoingOrderDetailReceiptDate": {
+            "meaning": "外发订单明细表单据日期",
+            "reachable": true,
+            "name": "外发订单明细表单据日期"
+        },
+        "outgoingOrderDetailReceiptType": {
+            "meaning": "外发订单明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "外发订单明细表单据类型"
+        },
+        "outgoingOrderDetailRelatedTasksId": {
+            "meaning": "外发订单明细表关联任务id",
+            "reachable": true,
+            "name": "外发订单明细表关联任务id"
+        },
+        "outgoingOrderDetailReorderCode": {
+            "meaning": "外发订单明细表翻单订单号",
+            "reachable": true,
+            "name": "外发订单明细表翻单订单号"
+        },
+        "outgoingOrderDetailSemOutstorageQuantity": {
+            "meaning": "外发订单明细表半成品出库数量",
+            "reachable": true,
+            "name": "外发订单明细表半成品出库数量"
+        },
+        "outgoingOrderDetailSemOutstorageStatus": {
+            "meaning": "外发订单明细表半成品出库状态",
+            "reachable": true,
+            "name": "外发订单明细表半成品出库状态"
+        },
+        "outgoingOrderDetailSerialNumber": {
+            "meaning": "外发订单明细表顺序号",
+            "reachable": true,
+            "name": "外发订单明细表顺序号"
+        },
+        "outgoingOrderDetailSettleAmount": {
+            "meaning": "外发订单明细表结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "外发订单明细表结算金额"
+        },
+        "outgoingOrderDetailSettlePrice": {
+            "meaning": "外发订单明细表结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "外发订单明细表结算单价"
+        },
+        "outgoingOrderDetailSettleTotalAmount": {
+            "meaning": "外发订单明细表结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "外发订单明细表结算金额"
+        },
+        "outgoingOrderDetailSource": {
+            "meaning": "外发订单明细表源节点id(-查询入参-)",
+            "reachable": true,
+            "name": "外发订单明细表源节点id"
+        },
+        "outgoingOrderDetailSourceType": {
+            "meaning": "外发订单明细表来源类型",
+            "reachable": true,
+            "name": "外发订单明细表来源类型"
+        },
+        "outgoingOrderDetailSpareQty": {
+            "meaning": "外发订单明细表备用数量",
+            "reachable": true,
+            "name": "外发订单明细表备用数量"
+        },
+        "outgoingOrderDetailState": {
+            "meaning": "外发订单明细表通用状态",
+            "reachable": true,
+            "name": "外发订单明细表通用状态"
+        },
+        "outgoingOrderDetailStockQty": {
+            "meaning": "外发订单明细表备库存数量",
+            "reachable": true,
+            "name": "外发订单明细表备库存数量"
+        },
+        "outgoingOrderDetailSumQty": {
+            "meaning": "外发订单明细表总数量",
+            "reachable": true,
+            "name": "外发订单明细表总数量"
+        },
+        "outgoingOrderDetailSystemCode": {
+            "meaning": "外发订单明细表系统编码",
+            "reachable": true,
+            "name": "外发订单明细表系统编码"
+        },
+        "outgoingOrderDetailTarget": {
+            "meaning": "外发订单明细表目标节点id(-查询入参-)",
+            "reachable": true,
+            "name": "外发订单明细表目标节点id"
+        },
+        "outgoingOrderDetailTaskNodeName": {
+            "meaning": "外发订单明细表任务节点名称",
+            "reachable": true,
+            "name": "外发订单明细表任务节点名称"
+        },
+        "outgoingOrderDetailTaxExclPrice": {
+            "meaning": "外发订单明细表不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "外发订单明细表不含税报价单价"
+        },
+        "outgoingOrderDetailTaxExclTotal": {
+            "meaning": "外发订单明细表不含税总金额",
+            "reachable": true,
+            "name": "外发订单明细表不含税总金额"
+        },
+        "outgoingOrderDetailTaxExclUnitPrice": {
+            "meaning": "外发订单明细表不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "外发订单明细表不含税单价"
+        },
+        "outgoingOrderDetailTaxInclPrice": {
+            "meaning": "外发订单明细表含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "外发订单明细表含税报价单价"
+        },
+        "outgoingOrderDetailTaxInclTotal": {
+            "meaning": "外发订单明细表含税总金额",
+            "reachable": true,
+            "name": "外发订单明细表含税总金额"
+        },
+        "outgoingOrderDetailTenantId": {
+            "meaning": "外发订单明细表租户ID",
+            "reachable": true,
+            "name": "外发订单明细表租户ID"
+        },
+        "outgoingOrderDetailTerminalCode": {
+            "meaning": "外发订单明细表终端编码",
+            "reachable": true,
+            "name": "外发订单明细表终端编码"
+        },
+        "outgoingOrderDetailTerminalCustId": {
+            "meaning": "外发订单明细表终端客户id",
+            "reachable": true,
+            "name": "外发订单明细表终端客户id"
+        },
+        "outgoingOrderDetailThirdPartyClass": {
+            "meaning": "外发订单明细表第三方分类",
+            "reachable": true,
+            "name": "外发订单明细表第三方分类"
+        },
+        "outgoingOrderDetailThirdPartyId": {
+            "meaning": "外发订单明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "外发订单明细表第三方系统中的唯一ID"
+        },
+        "outgoingOrderDetailThirdPartyName": {
+            "meaning": "外发订单明细表第三方名称",
+            "reachable": true,
+            "name": "外发订单明细表第三方名称"
+        },
+        "outgoingOrderDetailToAuditDate": {
+            "meaning": "outgoingOrderDetailToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToBeginTime": {
+            "meaning": "outgoingOrderDetailToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToCreateTime": {
+            "meaning": "outgoingOrderDetailToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDateExtra1": {
+            "meaning": "outgoingOrderDetailToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDateExtra2": {
+            "meaning": "outgoingOrderDetailToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDateExtra3": {
+            "meaning": "outgoingOrderDetailToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDateExtra4": {
+            "meaning": "outgoingOrderDetailToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDateExtra5": {
+            "meaning": "outgoingOrderDetailToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToDeliveryDate": {
+            "meaning": "outgoingOrderDetailToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToEndTime": {
+            "meaning": "outgoingOrderDetailToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToExpectedDate": {
+            "type": "object",
+            "meaning": "outgoingOrderDetailToExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToReceiptDate": {
+            "meaning": "outgoingOrderDetailToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailToUpdateTime": {
+            "meaning": "outgoingOrderDetailToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "outgoingOrderDetailUnitCode": {
+            "meaning": "外发订单明细表单位id",
+            "reachable": true,
+            "name": "外发订单明细表单位id"
+        },
+        "outgoingOrderDetailUnitPriceTax": {
+            "meaning": "外发订单明细表含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "外发订单明细表含税单价"
+        },
+        "outgoingOrderDetailUpdateTime": {
+            "meaning": "外发订单明细表更新时间",
+            "reachable": true,
+            "name": "外发订单明细表更新时间"
+        },
+        "outgoingOrderDetailUpdater": {
+            "meaning": "外发订单明细表更新人",
+            "reachable": true,
+            "name": "外发订单明细表更新人"
+        },
+        "outgoingOrderDetailUpdaterId": {
+            "meaning": "外发订单明细表更新人ID",
+            "reachable": true,
+            "name": "外发订单明细表更新人ID"
+        },
+        "outgoingOrderDetailUsedQty": {
+            "meaning": "外发订单明细表使用库存数量",
+            "reachable": true,
+            "name": "外发订单明细表使用库存数量"
+        },
+        "outgoingOrderDetailUserCode": {
+            "meaning": "外发订单明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "外发订单明细表智能节点的唯一编码"
+        },
+        "outgoingOrderDetailVarExtra1": {
+            "meaning": "外发订单明细表扩展1",
+            "reachable": true,
+            "name": "外发订单明细表扩展1"
+        },
+        "outgoingOrderDetailVarExtra2": {
+            "meaning": "外发订单明细表扩展2",
+            "reachable": true,
+            "name": "外发订单明细表扩展2"
+        },
+        "outgoingOrderDetailVarExtra3": {
+            "meaning": "外发订单明细表扩展3",
+            "reachable": true,
+            "name": "外发订单明细表扩展3"
+        },
+        "outgoingOrderDetailVarExtra4": {
+            "meaning": "外发订单明细表扩展4",
+            "reachable": true,
+            "name": "外发订单明细表扩展4"
+        },
+        "outgoingOrderDetailVarExtra5": {
+            "meaning": "外发订单明细表扩展5",
+            "reachable": true,
+            "name": "外发订单明细表扩展5"
+        },
+        "outgoingOrderDetailVersion": {
+            "meaning": "外发订单明细表版本号",
+            "reachable": true,
+            "name": "外发订单明细表版本号"
+        },
+        "tgoingOrderDetailOutgoingOrderProductionProcessesTypeId": {
+            "meaning": "外发订单明细表工序类型ID",
+            "reachable": false,
+            "name": "外发订单明细表工序类型ID"
+        },
+        "utgoingOrderDetailOutgoingOrderIsManualModificationDate": {
+            "meaning": "外发订单明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "外发订单明细表是否手动修改计划生产时间"
+        }
+    }
+}

@@ -1,0 +1,1240 @@
+{
+    "api_name": "/self-inspect-det/findList",
+    "table_name": "自检单明细表",
+    "request": {
+        "selfInspectDetSelfInspectClazz": "SELF_INSPECT",
+        "selfInspectDetClazz": "SELF_INSPECT_DET"
+    },
+    "mainTabClazz": "SELF_INSPECT_DET",
+    "response": {
+        "selfInspectDetAckContent": {
+            "meaning": "自检单明细表确认内容",
+            "reachable": false,
+            "name": "自检单明细表确认内容"
+        },
+        "selfInspectDetAckStaffId": {
+            "meaning": "自检单明细表确认人员id",
+            "reachable": false,
+            "name": "自检单明细表确认人员id"
+        },
+        "selfInspectDetAckTime": {
+            "type": "object",
+            "meaning": "自检单明细表确认时间",
+            "reachable": false,
+            "name": "自检单明细表确认时间"
+        },
+        "selfInspectDetActualTimeRequired": {
+            "meaning": "自检单明细表实际需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表实际需时"
+        },
+        "selfInspectDetAdjustmentTimeRequired": {
+            "meaning": "自检单明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "自检单明细表调整需时"
+        },
+        "selfInspectDetApplicationId": {
+            "meaning": "自检单明细表应用ID",
+            "reachable": false,
+            "name": "自检单明细表应用ID"
+        },
+        "selfInspectDetAuditDate": {
+            "meaning": "自检单明细表审核时间",
+            "reachable": false,
+            "name": "自检单明细表审核时间"
+        },
+        "selfInspectDetAuditStatus": {
+            "meaning": "自检单明细表审核状态",
+            "reachable": false,
+            "name": "自检单明细表审核状态"
+        },
+        "selfInspectDetAvailableScheduleId": {
+            "meaning": "自检单明细表可用日程id",
+            "reachable": false,
+            "name": "自检单明细表可用日程id"
+        },
+        "selfInspectDetBeginTime": {
+            "meaning": "自检单明细表开始时间",
+            "reachable": false,
+            "name": "自检单明细表开始时间"
+        },
+        "selfInspectDetBizVersion": {
+            "meaning": "自检单明细表业务自定义版本号",
+            "reachable": false,
+            "name": "自检单明细表业务自定义版本号"
+        },
+        "selfInspectDetBriefName": {
+            "meaning": "自检单明细表简称",
+            "reachable": false,
+            "name": "自检单明细表简称"
+        },
+        "selfInspectDetBusDivisId": {
+            "meaning": "自检单明细表事业部id",
+            "reachable": false,
+            "name": "自检单明细表事业部id"
+        },
+        "selfInspectDetClazz": {
+            "meaning": "自检单明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "自检单明细表子类"
+        },
+        "selfInspectDetClosedReason": {
+            "meaning": "自检单明细表结案原因",
+            "reachable": false,
+            "name": "自检单明细表结案原因"
+        },
+        "selfInspectDetClosedStatus": {
+            "meaning": "自检单明细表结案状态",
+            "reachable": false,
+            "name": "自检单明细表结案状态"
+        },
+        "selfInspectDetComment": {
+            "meaning": "自检单明细表评论",
+            "reachable": false,
+            "name": "自检单明细表评论"
+        },
+        "selfInspectDetCompleteQuantity": {
+            "meaning": "自检单明细表完成数量",
+            "reachable": false,
+            "name": "自检单明细表完成数量"
+        },
+        "selfInspectDetCompleteStatus": {
+            "meaning": "自检单明细表完成状态",
+            "reachable": false,
+            "name": "自检单明细表完成状态"
+        },
+        "selfInspectDetCreateTime": {
+            "meaning": "自检单明细表创建时间",
+            "reachable": false,
+            "name": "自检单明细表创建时间"
+        },
+        "selfInspectDetCreator": {
+            "meaning": "自检单明细表创建人",
+            "reachable": false,
+            "name": "自检单明细表创建人"
+        },
+        "selfInspectDetCreatorId": {
+            "meaning": "自检单明细表创建人ID",
+            "reachable": false,
+            "name": "自检单明细表创建人ID"
+        },
+        "selfInspectDetDateExtra1": {
+            "meaning": "自检单明细表扩展时间1",
+            "reachable": false,
+            "name": "自检单明细表扩展时间1"
+        },
+        "selfInspectDetDateExtra2": {
+            "meaning": "自检单明细表扩展时间2",
+            "reachable": false,
+            "name": "自检单明细表扩展时间2"
+        },
+        "selfInspectDetDateExtra3": {
+            "meaning": "自检单明细表扩展时间3",
+            "reachable": false,
+            "name": "自检单明细表扩展时间3"
+        },
+        "selfInspectDetDateExtra4": {
+            "meaning": "自检单明细表扩展时间4",
+            "reachable": false,
+            "name": "自检单明细表扩展时间4"
+        },
+        "selfInspectDetDateExtra5": {
+            "meaning": "自检单明细表扩展时间5",
+            "reachable": false,
+            "name": "自检单明细表扩展时间5"
+        },
+        "selfInspectDetDefaultType": {
+            "meaning": "自检单明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "自检单明细表智能节点主类型"
+        },
+        "selfInspectDetDeliveryDate": {
+            "meaning": "自检单明细表交货日期",
+            "reachable": false,
+            "name": "自检单明细表交货日期"
+        },
+        "selfInspectDetDepartId": {
+            "meaning": "自检单明细表部门id",
+            "reachable": false,
+            "name": "自检单明细表部门id"
+        },
+        "selfInspectDetDescription": {
+            "meaning": "自检单明细表描述",
+            "reachable": false,
+            "name": "自检单明细表描述"
+        },
+        "selfInspectDetDutyContent": {
+            "meaning": "自检单明细表责任内容",
+            "reachable": false,
+            "name": "自检单明细表责任内容"
+        },
+        "selfInspectDetEndTime": {
+            "meaning": "自检单明细表结束时间",
+            "reachable": false,
+            "name": "自检单明细表结束时间"
+        },
+        "selfInspectDetEndTimeRequired": {
+            "meaning": "自检单明细表最后需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表最后需时"
+        },
+        "selfInspectDetEngName": {
+            "meaning": "自检单明细表英文名称",
+            "reachable": false,
+            "name": "自检单明细表英文名称"
+        },
+        "selfInspectDetEquipmentId": {
+            "meaning": "自检单明细表设备id",
+            "reachable": false,
+            "name": "自检单明细表设备id"
+        },
+        "selfInspectDetExchangeRateId": {
+            "meaning": "自检单明细表币种汇率id",
+            "reachable": false,
+            "name": "自检单明细表币种汇率id"
+        },
+        "selfInspectDetExtension": {
+            "meaning": "自检单明细表扩展数据",
+            "reachable": false,
+            "name": "自检单明细表扩展数据"
+        },
+        "selfInspectDetExternalState": {
+            "meaning": "自检单明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "自检单明细表上流程状态位"
+        },
+        "selfInspectDetFilterClazz": {
+            "meaning": "自检单明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "自检单明细表冗余字段用于筛选"
+        },
+        "selfInspectDetFlags": {
+            "meaning": "自检单明细表63位标志位",
+            "reachable": false,
+            "name": "自检单明细表63位标志位"
+        },
+        "selfInspectDetFromAckTime": {
+            "type": "object",
+            "meaning": "selfInspectDetFromAckTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromAuditDate": {
+            "meaning": "selfInspectDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromBeginTime": {
+            "meaning": "selfInspectDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromCreateTime": {
+            "meaning": "selfInspectDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDateExtra1": {
+            "meaning": "selfInspectDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDateExtra2": {
+            "meaning": "selfInspectDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDateExtra3": {
+            "meaning": "selfInspectDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDateExtra4": {
+            "meaning": "selfInspectDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDateExtra5": {
+            "meaning": "selfInspectDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromDeliveryDate": {
+            "meaning": "selfInspectDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromEndTime": {
+            "meaning": "selfInspectDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromReceiptDate": {
+            "meaning": "selfInspectDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFromUpdateTime": {
+            "meaning": "selfInspectDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetFscType": {
+            "meaning": "自检单明细表FSC声明",
+            "reachable": false,
+            "name": "自检单明细表FSC声明"
+        },
+        "selfInspectDetGenerativePeople": {
+            "meaning": "自检单明细表下发人",
+            "reachable": false,
+            "name": "自检单明细表下发人"
+        },
+        "selfInspectDetGenerativeState": {
+            "meaning": "自检单明细表下发状态",
+            "reachable": false,
+            "name": "自检单明细表下发状态"
+        },
+        "selfInspectDetGroovyScript": {
+            "meaning": "自检单明细表groovy脚本",
+            "reachable": false,
+            "name": "自检单明细表groovy脚本"
+        },
+        "selfInspectDetGropeCode": {
+            "meaning": "自检单明细表搜索码",
+            "reachable": false,
+            "name": "自检单明细表搜索码"
+        },
+        "selfInspectDetId": {
+            "meaning": "自检单明细表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "自检单明细表PK"
+        },
+        "selfInspectDetInUsed": {
+            "meaning": "自检单明细表是否被使用",
+            "reachable": false,
+            "name": "自检单明细表是否被使用"
+        },
+        "selfInspectDetInvTypeTaxRateId": {
+            "meaning": "自检单明细表发票税率id",
+            "reachable": false,
+            "name": "自检单明细表发票税率id"
+        },
+        "selfInspectDetIsBanned": {
+            "meaning": "自检单明细表是否被禁用",
+            "reachable": false,
+            "name": "自检单明细表是否被禁用"
+        },
+        "selfInspectDetIsDeleted": {
+            "meaning": "自检单明细表是否被删除",
+            "reachable": false,
+            "name": "自检单明细表是否被删除"
+        },
+        "selfInspectDetIsLeaf": {
+            "meaning": "自检单明细表是否叶子节点",
+            "reachable": false,
+            "name": "自检单明细表是否叶子节点"
+        },
+        "selfInspectDetIsMainFlow": {
+            "meaning": "自检单明细表是否是主流程",
+            "reachable": false,
+            "name": "自检单明细表是否是主流程"
+        },
+        "selfInspectDetIsManualModificationDate": {
+            "meaning": "自检单明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "自检单明细表是否手动修改计划生产时间"
+        },
+        "selfInspectDetIsolation": {
+            "meaning": "自检单明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "自检单明细表智能节点数据隔离标识"
+        },
+        "selfInspectDetJsScript": {
+            "meaning": "自检单明细表js脚本",
+            "reachable": false,
+            "name": "自检单明细表js脚本"
+        },
+        "selfInspectDetMaterialId": {
+            "meaning": "自检单明细表物料id",
+            "reachable": false,
+            "name": "自检单明细表物料id"
+        },
+        "selfInspectDetName": {
+            "meaning": "自检单明细表智能节点名",
+            "reachable": false,
+            "name": "自检单明细表智能节点名"
+        },
+        "selfInspectDetNameCodeSearch": {
+            "meaning": "自检单明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "自检单明细表name、user_code模糊搜索"
+        },
+        "selfInspectDetNumberExtra1": {
+            "meaning": "自检单明细表扩展数量1",
+            "reachable": false,
+            "name": "自检单明细表扩展数量1"
+        },
+        "selfInspectDetNumberExtra2": {
+            "meaning": "自检单明细表扩展数量2",
+            "reachable": false,
+            "name": "自检单明细表扩展数量2"
+        },
+        "selfInspectDetNumberExtra3": {
+            "meaning": "自检单明细表扩展数量3",
+            "reachable": false,
+            "name": "自检单明细表扩展数量3"
+        },
+        "selfInspectDetNumberExtra4": {
+            "meaning": "自检单明细表扩展数量4",
+            "reachable": false,
+            "name": "自检单明细表扩展数量4"
+        },
+        "selfInspectDetNumberExtra5": {
+            "meaning": "自检单明细表扩展数量5",
+            "reachable": false,
+            "name": "自检单明细表扩展数量5"
+        },
+        "selfInspectDetParentId": {
+            "meaning": "自检单明细表父节点ID",
+            "reachable": false,
+            "name": "自检单明细表父节点ID"
+        },
+        "selfInspectDetPlannedOutputQuantity": {
+            "meaning": "自检单明细表计划产出数量",
+            "reachable": false,
+            "name": "自检单明细表计划产出数量"
+        },
+        "selfInspectDetPlannedTimeRequired": {
+            "meaning": "自检单明细表计划需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表计划需时"
+        },
+        "selfInspectDetPrintTimes": {
+            "meaning": "自检单明细表打印次数",
+            "reachable": false,
+            "name": "自检单明细表打印次数"
+        },
+        "selfInspectDetPriority": {
+            "meaning": "自检单明细表优先级",
+            "reachable": false,
+            "name": "自检单明细表优先级"
+        },
+        "selfInspectDetProcessInstanceId": {
+            "meaning": "自检单明细表流程实例ID",
+            "reachable": false,
+            "name": "自检单明细表流程实例ID"
+        },
+        "selfInspectDetProductionProcessesTypeId": {
+            "meaning": "自检单明细表工序类型ID",
+            "reachable": false,
+            "name": "自检单明细表工序类型ID"
+        },
+        "selfInspectDetProductionShiftId": {
+            "meaning": "自检单明细表生产班次ID",
+            "reachable": false,
+            "name": "自检单明细表生产班次ID"
+        },
+        "selfInspectDetQuantity": {
+            "meaning": "自检单明细表任务数量",
+            "reachable": false,
+            "name": "自检单明细表任务数量"
+        },
+        "selfInspectDetReceiptDate": {
+            "meaning": "自检单明细表单据日期",
+            "reachable": false,
+            "name": "自检单明细表单据日期"
+        },
+        "selfInspectDetReceiptType": {
+            "meaning": "自检单明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "自检单明细表单据类型"
+        },
+        "selfInspectDetRelatedTasksId": {
+            "meaning": "自检单明细表关联任务id",
+            "reachable": false,
+            "name": "自检单明细表关联任务id"
+        },
+        "selfInspectDetSelfInspectActualTimeRequired": {
+            "meaning": "自检单明细表实际需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表实际需时"
+        },
+        "selfInspectDetSelfInspectAdjustmentTimeRequired": {
+            "meaning": "自检单明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "自检单明细表调整需时"
+        },
+        "selfInspectDetSelfInspectAlterContent": {
+            "meaning": "自检单明细表变更内容",
+            "reachable": false,
+            "name": "自检单明细表变更内容"
+        },
+        "selfInspectDetSelfInspectAlterWorkNumber": {
+            "meaning": "自检单明细表变更工单编号",
+            "reachable": false,
+            "name": "自检单明细表变更工单编号"
+        },
+        "selfInspectDetSelfInspectApplicationId": {
+            "meaning": "自检单明细表应用ID",
+            "reachable": false,
+            "name": "自检单明细表应用ID"
+        },
+        "selfInspectDetSelfInspectAuditDate": {
+            "meaning": "自检单明细表审核时间",
+            "reachable": false,
+            "name": "自检单明细表审核时间"
+        },
+        "selfInspectDetSelfInspectAuditStatus": {
+            "meaning": "自检单明细表审核状态",
+            "reachable": false,
+            "name": "自检单明细表审核状态"
+        },
+        "selfInspectDetSelfInspectAvailableScheduleId": {
+            "meaning": "自检单明细表可用日程id",
+            "reachable": false,
+            "name": "自检单明细表可用日程id"
+        },
+        "selfInspectDetSelfInspectBeginTime": {
+            "meaning": "自检单明细表开始时间",
+            "reachable": false,
+            "name": "自检单明细表开始时间"
+        },
+        "selfInspectDetSelfInspectBizVersion": {
+            "meaning": "自检单明细表业务自定义版本号",
+            "reachable": false,
+            "name": "自检单明细表业务自定义版本号"
+        },
+        "selfInspectDetSelfInspectBriefName": {
+            "meaning": "自检单明细表简称",
+            "reachable": false,
+            "name": "自检单明细表简称"
+        },
+        "selfInspectDetSelfInspectBusDivisId": {
+            "meaning": "自检单明细表事业部id",
+            "reachable": false,
+            "name": "自检单明细表事业部id"
+        },
+        "selfInspectDetSelfInspectClazz": {
+            "meaning": "自检单明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "自检单明细表子类"
+        },
+        "selfInspectDetSelfInspectClosedReason": {
+            "meaning": "自检单明细表结案原因",
+            "reachable": false,
+            "name": "自检单明细表结案原因"
+        },
+        "selfInspectDetSelfInspectClosedStatus": {
+            "meaning": "自检单明细表结案状态",
+            "reachable": false,
+            "name": "自检单明细表结案状态"
+        },
+        "selfInspectDetSelfInspectComment": {
+            "meaning": "自检单明细表评论",
+            "reachable": false,
+            "name": "自检单明细表评论"
+        },
+        "selfInspectDetSelfInspectCompleteQuantity": {
+            "meaning": "自检单明细表完成数量",
+            "reachable": false,
+            "name": "自检单明细表完成数量"
+        },
+        "selfInspectDetSelfInspectCompleteStatus": {
+            "meaning": "自检单明细表完成状态",
+            "reachable": false,
+            "name": "自检单明细表完成状态"
+        },
+        "selfInspectDetSelfInspectCreateTime": {
+            "meaning": "自检单明细表创建时间",
+            "reachable": false,
+            "name": "自检单明细表创建时间"
+        },
+        "selfInspectDetSelfInspectCreator": {
+            "meaning": "自检单明细表创建人",
+            "reachable": false,
+            "name": "自检单明细表创建人"
+        },
+        "selfInspectDetSelfInspectCreatorId": {
+            "meaning": "自检单明细表创建人ID",
+            "reachable": false,
+            "name": "自检单明细表创建人ID"
+        },
+        "selfInspectDetSelfInspectCustId": {
+            "meaning": "自检单明细表客户id",
+            "reachable": false,
+            "name": "自检单明细表客户id"
+        },
+        "selfInspectDetSelfInspectDateExtra1": {
+            "meaning": "自检单明细表扩展时间1",
+            "reachable": false,
+            "name": "自检单明细表扩展时间1"
+        },
+        "selfInspectDetSelfInspectDateExtra2": {
+            "meaning": "自检单明细表扩展时间2",
+            "reachable": false,
+            "name": "自检单明细表扩展时间2"
+        },
+        "selfInspectDetSelfInspectDateExtra3": {
+            "meaning": "自检单明细表扩展时间3",
+            "reachable": false,
+            "name": "自检单明细表扩展时间3"
+        },
+        "selfInspectDetSelfInspectDateExtra4": {
+            "meaning": "自检单明细表扩展时间4",
+            "reachable": false,
+            "name": "自检单明细表扩展时间4"
+        },
+        "selfInspectDetSelfInspectDateExtra5": {
+            "meaning": "自检单明细表扩展时间5",
+            "reachable": false,
+            "name": "自检单明细表扩展时间5"
+        },
+        "selfInspectDetSelfInspectDefaultType": {
+            "meaning": "自检单明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "自检单明细表智能节点主类型"
+        },
+        "selfInspectDetSelfInspectDeliveryDate": {
+            "meaning": "自检单明细表交货日期",
+            "reachable": false,
+            "name": "自检单明细表交货日期"
+        },
+        "selfInspectDetSelfInspectDescription": {
+            "meaning": "自检单明细表描述",
+            "reachable": false,
+            "name": "自检单明细表描述"
+        },
+        "selfInspectDetSelfInspectEdition": {
+            "meaning": "自检单明细表版次",
+            "reachable": false,
+            "name": "自检单明细表版次"
+        },
+        "selfInspectDetSelfInspectEndTime": {
+            "meaning": "自检单明细表结束时间",
+            "reachable": false,
+            "name": "自检单明细表结束时间"
+        },
+        "selfInspectDetSelfInspectEndTimeRequired": {
+            "meaning": "自检单明细表最后需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表最后需时"
+        },
+        "selfInspectDetSelfInspectEngName": {
+            "meaning": "自检单明细表英文名称",
+            "reachable": false,
+            "name": "自检单明细表英文名称"
+        },
+        "selfInspectDetSelfInspectEquipmentId": {
+            "meaning": "自检单明细表设备id",
+            "reachable": false,
+            "name": "自检单明细表设备id"
+        },
+        "selfInspectDetSelfInspectExchangeRateId": {
+            "meaning": "自检单明细表币种汇率id",
+            "reachable": false,
+            "name": "自检单明细表币种汇率id"
+        },
+        "selfInspectDetSelfInspectExtension": {
+            "meaning": "自检单明细表扩展数据",
+            "reachable": false,
+            "name": "自检单明细表扩展数据"
+        },
+        "selfInspectDetSelfInspectExternalState": {
+            "meaning": "自检单明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "自检单明细表上流程状态位"
+        },
+        "selfInspectDetSelfInspectFilterClazz": {
+            "meaning": "自检单明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "自检单明细表冗余字段用于筛选"
+        },
+        "selfInspectDetSelfInspectFlags": {
+            "meaning": "自检单明细表63位标志位",
+            "reachable": false,
+            "name": "自检单明细表63位标志位"
+        },
+        "selfInspectDetSelfInspectFromAuditDate": {
+            "meaning": "selfInspectDetSelfInspectFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromBeginTime": {
+            "meaning": "selfInspectDetSelfInspectFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromCreateTime": {
+            "meaning": "selfInspectDetSelfInspectFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDateExtra1": {
+            "meaning": "selfInspectDetSelfInspectFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDateExtra2": {
+            "meaning": "selfInspectDetSelfInspectFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDateExtra3": {
+            "meaning": "selfInspectDetSelfInspectFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDateExtra4": {
+            "meaning": "selfInspectDetSelfInspectFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDateExtra5": {
+            "meaning": "selfInspectDetSelfInspectFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromDeliveryDate": {
+            "meaning": "selfInspectDetSelfInspectFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromEndTime": {
+            "meaning": "selfInspectDetSelfInspectFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromReceiptDate": {
+            "meaning": "selfInspectDetSelfInspectFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFromUpdateTime": {
+            "meaning": "selfInspectDetSelfInspectFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectFscType": {
+            "meaning": "自检单明细表FSC声明",
+            "reachable": false,
+            "name": "自检单明细表FSC声明"
+        },
+        "selfInspectDetSelfInspectGenerativePeople": {
+            "meaning": "自检单明细表下发人",
+            "reachable": false,
+            "name": "自检单明细表下发人"
+        },
+        "selfInspectDetSelfInspectGenerativeState": {
+            "meaning": "自检单明细表下发状态",
+            "reachable": false,
+            "name": "自检单明细表下发状态"
+        },
+        "selfInspectDetSelfInspectGroovyScript": {
+            "meaning": "自检单明细表groovy脚本",
+            "reachable": false,
+            "name": "自检单明细表groovy脚本"
+        },
+        "selfInspectDetSelfInspectGropeCode": {
+            "meaning": "自检单明细表搜索码",
+            "reachable": false,
+            "name": "自检单明细表搜索码"
+        },
+        "selfInspectDetSelfInspectId": {
+            "meaning": "自检单明细表PK",
+            "reachable": false,
+            "name": "自检单明细表PK"
+        },
+        "selfInspectDetSelfInspectInUsed": {
+            "meaning": "自检单明细表是否被使用",
+            "reachable": false,
+            "name": "自检单明细表是否被使用"
+        },
+        "selfInspectDetSelfInspectInvTypeTaxRateId": {
+            "meaning": "自检单明细表发票税率id",
+            "reachable": false,
+            "name": "自检单明细表发票税率id"
+        },
+        "selfInspectDetSelfInspectIsBanned": {
+            "meaning": "自检单明细表是否被禁用",
+            "reachable": false,
+            "name": "自检单明细表是否被禁用"
+        },
+        "selfInspectDetSelfInspectIsDeleted": {
+            "meaning": "自检单明细表是否被删除",
+            "reachable": false,
+            "name": "自检单明细表是否被删除"
+        },
+        "selfInspectDetSelfInspectIsLeaf": {
+            "meaning": "自检单明细表是否叶子节点",
+            "reachable": false,
+            "name": "自检单明细表是否叶子节点"
+        },
+        "selfInspectDetSelfInspectIsMainFlow": {
+            "meaning": "自检单明细表是否是主流程",
+            "reachable": false,
+            "name": "自检单明细表是否是主流程"
+        },
+        "selfInspectDetSelfInspectIsManualModificationDate": {
+            "meaning": "自检单明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "自检单明细表是否手动修改计划生产时间"
+        },
+        "selfInspectDetSelfInspectIsolation": {
+            "meaning": "自检单明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "自检单明细表智能节点数据隔离标识"
+        },
+        "selfInspectDetSelfInspectJsScript": {
+            "meaning": "自检单明细表js脚本",
+            "reachable": false,
+            "name": "自检单明细表js脚本"
+        },
+        "selfInspectDetSelfInspectMaterialId": {
+            "meaning": "自检单明细表物料id",
+            "reachable": false,
+            "name": "自检单明细表物料id"
+        },
+        "selfInspectDetSelfInspectName": {
+            "meaning": "自检单明细表智能节点名",
+            "reachable": false,
+            "name": "自检单明细表智能节点名"
+        },
+        "selfInspectDetSelfInspectNameCodeSearch": {
+            "meaning": "自检单明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "自检单明细表name、user_code模糊搜索"
+        },
+        "selfInspectDetSelfInspectNumberExtra1": {
+            "meaning": "自检单明细表扩展数量1",
+            "reachable": false,
+            "name": "自检单明细表扩展数量1"
+        },
+        "selfInspectDetSelfInspectNumberExtra2": {
+            "meaning": "自检单明细表扩展数量2",
+            "reachable": false,
+            "name": "自检单明细表扩展数量2"
+        },
+        "selfInspectDetSelfInspectNumberExtra3": {
+            "meaning": "自检单明细表扩展数量3",
+            "reachable": false,
+            "name": "自检单明细表扩展数量3"
+        },
+        "selfInspectDetSelfInspectNumberExtra4": {
+            "meaning": "自检单明细表扩展数量4",
+            "reachable": false,
+            "name": "自检单明细表扩展数量4"
+        },
+        "selfInspectDetSelfInspectNumberExtra5": {
+            "meaning": "自检单明细表扩展数量5",
+            "reachable": false,
+            "name": "自检单明细表扩展数量5"
+        },
+        "selfInspectDetSelfInspectParentId": {
+            "meaning": "自检单明细表父节点ID",
+            "reachable": false,
+            "name": "自检单明细表父节点ID"
+        },
+        "selfInspectDetSelfInspectPlannedOutputQuantity": {
+            "meaning": "自检单明细表计划产出数量",
+            "reachable": false,
+            "name": "自检单明细表计划产出数量"
+        },
+        "selfInspectDetSelfInspectPlannedTimeRequired": {
+            "meaning": "自检单明细表计划需时(小时)",
+            "reachable": false,
+            "name": "自检单明细表计划需时"
+        },
+        "selfInspectDetSelfInspectPrintTimes": {
+            "meaning": "自检单明细表打印次数",
+            "reachable": false,
+            "name": "自检单明细表打印次数"
+        },
+        "selfInspectDetSelfInspectPriority": {
+            "meaning": "自检单明细表优先级",
+            "reachable": false,
+            "name": "自检单明细表优先级"
+        },
+        "selfInspectDetSelfInspectProcessInstanceId": {
+            "meaning": "自检单明细表流程实例ID",
+            "reachable": false,
+            "name": "自检单明细表流程实例ID"
+        },
+        "selfInspectDetSelfInspectProductionProcessesTypeId": {
+            "meaning": "自检单明细表工序类型ID",
+            "reachable": false,
+            "name": "自检单明细表工序类型ID"
+        },
+        "selfInspectDetSelfInspectProductionShiftId": {
+            "meaning": "自检单明细表生产班次ID",
+            "reachable": false,
+            "name": "自检单明细表生产班次ID"
+        },
+        "selfInspectDetSelfInspectQuantity": {
+            "meaning": "自检单明细表任务数量",
+            "reachable": false,
+            "name": "自检单明细表任务数量"
+        },
+        "selfInspectDetSelfInspectReceiptDate": {
+            "meaning": "自检单明细表单据日期",
+            "reachable": false,
+            "name": "自检单明细表单据日期"
+        },
+        "selfInspectDetSelfInspectReceiptType": {
+            "meaning": "自检单明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "自检单明细表单据类型"
+        },
+        "selfInspectDetSelfInspectRelatedTasksId": {
+            "meaning": "自检单明细表关联任务id",
+            "reachable": false,
+            "name": "自检单明细表关联任务id"
+        },
+        "selfInspectDetSelfInspectSerialNumber": {
+            "meaning": "自检单明细表顺序号",
+            "reachable": false,
+            "name": "自检单明细表顺序号"
+        },
+        "selfInspectDetSelfInspectSource": {
+            "meaning": "自检单明细表源",
+            "reachable": false,
+            "name": "自检单明细表源"
+        },
+        "selfInspectDetSelfInspectSourceType": {
+            "meaning": "自检单明细表来源类型",
+            "reachable": false,
+            "name": "自检单明细表来源类型"
+        },
+        "selfInspectDetSelfInspectState": {
+            "meaning": "自检单明细表通用状态",
+            "reachable": false,
+            "name": "自检单明细表通用状态"
+        },
+        "selfInspectDetSelfInspectSystemCode": {
+            "meaning": "自检单明细表系统编码",
+            "reachable": false,
+            "name": "自检单明细表系统编码"
+        },
+        "selfInspectDetSelfInspectTarget": {
+            "meaning": "自检单明细表目标",
+            "reachable": false,
+            "name": "自检单明细表目标"
+        },
+        "selfInspectDetSelfInspectTaskNodeName": {
+            "meaning": "自检单明细表任务节点名称",
+            "reachable": false,
+            "name": "自检单明细表任务节点名称"
+        },
+        "selfInspectDetSelfInspectTenantId": {
+            "meaning": "自检单明细表租户_id",
+            "reachable": false,
+            "name": "自检单明细表租户_id"
+        },
+        "selfInspectDetSelfInspectThirdPartyClass": {
+            "meaning": "自检单明细表第三方分类",
+            "reachable": false,
+            "name": "自检单明细表第三方分类"
+        },
+        "selfInspectDetSelfInspectThirdPartyId": {
+            "meaning": "自检单明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "自检单明细表第三方系统中的唯一ID"
+        },
+        "selfInspectDetSelfInspectThirdPartyName": {
+            "meaning": "自检单明细表第三方名称",
+            "reachable": false,
+            "name": "自检单明细表第三方名称"
+        },
+        "selfInspectDetSelfInspectToAuditDate": {
+            "meaning": "selfInspectDetSelfInspectToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToBeginTime": {
+            "meaning": "selfInspectDetSelfInspectToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToCreateTime": {
+            "meaning": "selfInspectDetSelfInspectToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDateExtra1": {
+            "meaning": "selfInspectDetSelfInspectToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDateExtra2": {
+            "meaning": "selfInspectDetSelfInspectToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDateExtra3": {
+            "meaning": "selfInspectDetSelfInspectToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDateExtra4": {
+            "meaning": "selfInspectDetSelfInspectToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDateExtra5": {
+            "meaning": "selfInspectDetSelfInspectToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToDeliveryDate": {
+            "meaning": "selfInspectDetSelfInspectToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToEndTime": {
+            "meaning": "selfInspectDetSelfInspectToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToReceiptDate": {
+            "meaning": "selfInspectDetSelfInspectToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectToUpdateTime": {
+            "meaning": "selfInspectDetSelfInspectToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetSelfInspectUnitCode": {
+            "meaning": "自检单明细表单位id",
+            "reachable": false,
+            "name": "自检单明细表单位id"
+        },
+        "selfInspectDetSelfInspectUpdateTime": {
+            "meaning": "自检单明细表更新时间",
+            "reachable": false,
+            "name": "自检单明细表更新时间"
+        },
+        "selfInspectDetSelfInspectUpdater": {
+            "meaning": "自检单明细表更新人",
+            "reachable": false,
+            "name": "自检单明细表更新人"
+        },
+        "selfInspectDetSelfInspectUpdaterId": {
+            "meaning": "自检单明细表更新人ID",
+            "reachable": false,
+            "name": "自检单明细表更新人ID"
+        },
+        "selfInspectDetSelfInspectUserCode": {
+            "meaning": "自检单明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "自检单明细表智能节点的唯一编码"
+        },
+        "selfInspectDetSelfInspectVarExtra1": {
+            "meaning": "自检单明细表扩展1",
+            "reachable": false,
+            "name": "自检单明细表扩展1"
+        },
+        "selfInspectDetSelfInspectVarExtra2": {
+            "meaning": "自检单明细表扩展2",
+            "reachable": false,
+            "name": "自检单明细表扩展2"
+        },
+        "selfInspectDetSelfInspectVarExtra3": {
+            "meaning": "自检单明细表扩展3",
+            "reachable": false,
+            "name": "自检单明细表扩展3"
+        },
+        "selfInspectDetSelfInspectVarExtra4": {
+            "meaning": "自检单明细表扩展4",
+            "reachable": false,
+            "name": "自检单明细表扩展4"
+        },
+        "selfInspectDetSelfInspectVarExtra5": {
+            "meaning": "自检单明细表扩展5",
+            "reachable": false,
+            "name": "自检单明细表扩展5"
+        },
+        "selfInspectDetSelfInspectVersion": {
+            "meaning": "自检单明细表版本号",
+            "reachable": false,
+            "name": "自检单明细表版本号"
+        },
+        "selfInspectDetSerialNumber": {
+            "meaning": "自检单明细表顺序号",
+            "reachable": false,
+            "name": "自检单明细表顺序号"
+        },
+        "selfInspectDetSource": {
+            "meaning": "自检单明细表源",
+            "reachable": false,
+            "name": "自检单明细表源"
+        },
+        "selfInspectDetSourceType": {
+            "meaning": "自检单明细表来源类型",
+            "reachable": false,
+            "name": "自检单明细表来源类型"
+        },
+        "selfInspectDetState": {
+            "meaning": "自检单明细表通用状态",
+            "reachable": false,
+            "name": "自检单明细表通用状态"
+        },
+        "selfInspectDetSystemCode": {
+            "meaning": "自检单明细表系统编码",
+            "reachable": false,
+            "name": "自检单明细表系统编码"
+        },
+        "selfInspectDetTarget": {
+            "meaning": "自检单明细表目标",
+            "reachable": false,
+            "name": "自检单明细表目标"
+        },
+        "selfInspectDetTaskNodeName": {
+            "meaning": "自检单明细表任务节点名称",
+            "reachable": false,
+            "name": "自检单明细表任务节点名称"
+        },
+        "selfInspectDetTenantId": {
+            "meaning": "自检单明细表租户_id",
+            "reachable": false,
+            "name": "自检单明细表租户_id"
+        },
+        "selfInspectDetThirdPartyClass": {
+            "meaning": "自检单明细表第三方分类",
+            "reachable": false,
+            "name": "自检单明细表第三方分类"
+        },
+        "selfInspectDetThirdPartyId": {
+            "meaning": "自检单明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "自检单明细表第三方系统中的唯一ID"
+        },
+        "selfInspectDetThirdPartyName": {
+            "meaning": "自检单明细表第三方名称",
+            "reachable": false,
+            "name": "自检单明细表第三方名称"
+        },
+        "selfInspectDetToAckTime": {
+            "type": "object",
+            "meaning": "selfInspectDetToAckTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToAuditDate": {
+            "meaning": "selfInspectDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToBeginTime": {
+            "meaning": "selfInspectDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToCreateTime": {
+            "meaning": "selfInspectDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDateExtra1": {
+            "meaning": "selfInspectDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDateExtra2": {
+            "meaning": "selfInspectDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDateExtra3": {
+            "meaning": "selfInspectDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDateExtra4": {
+            "meaning": "selfInspectDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDateExtra5": {
+            "meaning": "selfInspectDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToDeliveryDate": {
+            "meaning": "selfInspectDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToEndTime": {
+            "meaning": "selfInspectDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToReceiptDate": {
+            "meaning": "selfInspectDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetToUpdateTime": {
+            "meaning": "selfInspectDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "selfInspectDetUnitCode": {
+            "meaning": "自检单明细表单位id",
+            "reachable": false,
+            "name": "自检单明细表单位id"
+        },
+        "selfInspectDetUpdateTime": {
+            "meaning": "自检单明细表更新时间",
+            "reachable": false,
+            "name": "自检单明细表更新时间"
+        },
+        "selfInspectDetUpdater": {
+            "meaning": "自检单明细表更新人",
+            "reachable": false,
+            "name": "自检单明细表更新人"
+        },
+        "selfInspectDetUpdaterId": {
+            "meaning": "自检单明细表更新人ID",
+            "reachable": false,
+            "name": "自检单明细表更新人ID"
+        },
+        "selfInspectDetUserCode": {
+            "meaning": "自检单明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "自检单明细表智能节点的唯一编码"
+        },
+        "selfInspectDetVarExtra1": {
+            "meaning": "自检单明细表扩展1",
+            "reachable": false,
+            "name": "自检单明细表扩展1"
+        },
+        "selfInspectDetVarExtra2": {
+            "meaning": "自检单明细表扩展2",
+            "reachable": false,
+            "name": "自检单明细表扩展2"
+        },
+        "selfInspectDetVarExtra3": {
+            "meaning": "自检单明细表扩展3",
+            "reachable": false,
+            "name": "自检单明细表扩展3"
+        },
+        "selfInspectDetVarExtra4": {
+            "meaning": "自检单明细表扩展4",
+            "reachable": false,
+            "name": "自检单明细表扩展4"
+        },
+        "selfInspectDetVarExtra5": {
+            "meaning": "自检单明细表扩展5",
+            "reachable": false,
+            "name": "自检单明细表扩展5"
+        },
+        "selfInspectDetVersion": {
+            "meaning": "自检单明细表版本号",
+            "reachable": false,
+            "name": "自检单明细表版本号"
+        }
+    }
+}

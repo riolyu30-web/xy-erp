@@ -1,0 +1,686 @@
+{
+    "api_name": "/fcst-ord-log/findList",
+    "table_name": "备货单记录表，用于存储备货单的基本信息",
+    "request": {
+        "fcstOrdLogClazz": "FCST_ORD_LOG"
+    },
+    "mainTabClazz": "FCST_ORD_LOG",
+    "response": {
+        "fcstOrdLogActualTimeRequired": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息实际需时(小时)",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息实际需时"
+        },
+        "fcstOrdLogAdjustmentTimeRequired": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息调整需时"
+        },
+        "fcstOrdLogApplicationId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息应用ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息应用ID"
+        },
+        "fcstOrdLogAuditDate": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息审核时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息审核时间"
+        },
+        "fcstOrdLogAuditStatus": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息审核状态",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息审核状态"
+        },
+        "fcstOrdLogAvailableScheduleId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息可用日程id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息可用日程id"
+        },
+        "fcstOrdLogBeginTime": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息开始时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息开始时间"
+        },
+        "fcstOrdLogBizVersion": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息业务自定义版本号",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息业务自定义版本号"
+        },
+        "fcstOrdLogBriefName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息简称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息简称"
+        },
+        "fcstOrdLogBusDivisId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息事业部id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息事业部id"
+        },
+        "fcstOrdLogClazz": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息子类"
+        },
+        "fcstOrdLogClosedReason": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息结案原因",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息结案原因"
+        },
+        "fcstOrdLogClosedStatus": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息结案状态",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息结案状态"
+        },
+        "fcstOrdLogComment": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息评论",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息评论"
+        },
+        "fcstOrdLogCompleteQuantity": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息完成数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息完成数量"
+        },
+        "fcstOrdLogCompleteStatus": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息完成状态",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息完成状态"
+        },
+        "fcstOrdLogCreateTime": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息创建时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息创建时间"
+        },
+        "fcstOrdLogCreator": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息创建人",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息创建人"
+        },
+        "fcstOrdLogCreatorId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息创建人ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息创建人ID"
+        },
+        "fcstOrdLogCurrInv": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息当前库存数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息当前库存数量"
+        },
+        "fcstOrdLogCusName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息客户名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息客户名称"
+        },
+        "fcstOrdLogDateExtra1": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展时间1",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展时间1"
+        },
+        "fcstOrdLogDateExtra2": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展时间2",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展时间2"
+        },
+        "fcstOrdLogDateExtra3": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展时间3",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展时间3"
+        },
+        "fcstOrdLogDateExtra4": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展时间4",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展时间4"
+        },
+        "fcstOrdLogDateExtra5": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展时间5",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展时间5"
+        },
+        "fcstOrdLogDefaultType": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息智能节点主类型"
+        },
+        "fcstOrdLogDeliveryDate": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息交货日期",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息交货日期"
+        },
+        "fcstOrdLogDescription": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息描述",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息描述"
+        },
+        "fcstOrdLogEndTime": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息结束时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息结束时间"
+        },
+        "fcstOrdLogEndTimeRequired": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息最后需时(小时)",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息最后需时"
+        },
+        "fcstOrdLogEngName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息英文名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息英文名称"
+        },
+        "fcstOrdLogEquipmentId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息设备id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息设备id"
+        },
+        "fcstOrdLogExchangeRateId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息币种汇率id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息币种汇率id"
+        },
+        "fcstOrdLogExtension": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数据",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数据"
+        },
+        "fcstOrdLogExternalState": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息上流程状态位"
+        },
+        "fcstOrdLogFilterClazz": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息冗余字段用于筛选",
+            "reachable": false,
+            "name": "备货单记录表，用于存储备货单的基本信息冗余字段用于筛选"
+        },
+        "fcstOrdLogFlags": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息63位标志位",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息63位标志位"
+        },
+        "fcstOrdLogFromAuditDate": {
+            "meaning": "fcstOrdLogFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromBeginTime": {
+            "meaning": "fcstOrdLogFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromCreateTime": {
+            "meaning": "fcstOrdLogFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDateExtra1": {
+            "meaning": "fcstOrdLogFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDateExtra2": {
+            "meaning": "fcstOrdLogFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDateExtra3": {
+            "meaning": "fcstOrdLogFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDateExtra4": {
+            "meaning": "fcstOrdLogFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDateExtra5": {
+            "meaning": "fcstOrdLogFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromDeliveryDate": {
+            "meaning": "fcstOrdLogFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromEndTime": {
+            "meaning": "fcstOrdLogFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromReceiptDate": {
+            "meaning": "fcstOrdLogFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFromUpdateTime": {
+            "meaning": "fcstOrdLogFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogFscType": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息FSC声明",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息FSC声明"
+        },
+        "fcstOrdLogGapSum": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息当月备货缺口汇总",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息当月备货缺口汇总"
+        },
+        "fcstOrdLogGenerativePeople": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息下发人",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息下发人"
+        },
+        "fcstOrdLogGenerativeState": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息下发状态",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息下发状态"
+        },
+        "fcstOrdLogGroovyScript": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息groovy脚本",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息groovy脚本"
+        },
+        "fcstOrdLogGropeCode": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息搜索码",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息搜索码"
+        },
+        "fcstOrdLogId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息主键，唯一标识每条备货单记录",
+            "is_primary": true,
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息主键，唯一标识每条备货单记录"
+        },
+        "fcstOrdLogInPrdQty": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息生产中数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息生产中数量"
+        },
+        "fcstOrdLogInUsed": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否被使用",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否被使用"
+        },
+        "fcstOrdLogInvTypeTaxRateId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息发票税率id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息发票税率id"
+        },
+        "fcstOrdLogIsBanned": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否被禁用",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否被禁用"
+        },
+        "fcstOrdLogIsDeleted": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否被删除",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否被删除"
+        },
+        "fcstOrdLogIsLeaf": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否叶子节点",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否叶子节点"
+        },
+        "fcstOrdLogIsMainFlow": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否是主流程",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否是主流程"
+        },
+        "fcstOrdLogIsManualModificationDate": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息是否手动修改计划生产时间"
+        },
+        "fcstOrdLogIsolation": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息智能节点数据隔离标识",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息智能节点数据隔离标识"
+        },
+        "fcstOrdLogJsScript": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息js脚本",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息js脚本"
+        },
+        "fcstOrdLogMaterialId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息物料id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息物料id"
+        },
+        "fcstOrdLogMonPoCmpNum": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息当月已完成的PO单数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息当月已完成的PO单数量"
+        },
+        "fcstOrdLogMonPoNum": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息当月PO单总数",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息当月PO单总数"
+        },
+        "fcstOrdLogName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息智能节点名",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息智能节点名"
+        },
+        "fcstOrdLogNameCodeSearch": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息name、user_code模糊搜索",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息name、user_code模糊搜索"
+        },
+        "fcstOrdLogNumberExtra1": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数量1",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数量1"
+        },
+        "fcstOrdLogNumberExtra2": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数量2",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数量2"
+        },
+        "fcstOrdLogNumberExtra3": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数量3",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数量3"
+        },
+        "fcstOrdLogNumberExtra4": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数量4",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数量4"
+        },
+        "fcstOrdLogNumberExtra5": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展数量5",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展数量5"
+        },
+        "fcstOrdLogOrdQty": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息已下单数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息已下单数量"
+        },
+        "fcstOrdLogParentId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息父节点ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息父节点ID"
+        },
+        "fcstOrdLogPlannedOutputQuantity": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息计划产出数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息计划产出数量"
+        },
+        "fcstOrdLogPlannedTimeRequired": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息计划需时(小时)",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息计划需时"
+        },
+        "fcstOrdLogPoNum": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息采购订单号（PO单号）",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息采购订单号"
+        },
+        "fcstOrdLogPoVer": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息采购订单版本",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息采购订单版本"
+        },
+        "fcstOrdLogPrdCat": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息产品分类",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息产品分类"
+        },
+        "fcstOrdLogPrdCode": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息产品编码",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息产品编码"
+        },
+        "fcstOrdLogPrdName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息产品名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息产品名称"
+        },
+        "fcstOrdLogPrintTimes": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息打印次数",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息打印次数"
+        },
+        "fcstOrdLogPriority": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息优先级",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息优先级"
+        },
+        "fcstOrdLogProcessInstanceId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息流程实例ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息流程实例ID"
+        },
+        "fcstOrdLogProductionProcessesTypeId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息工序类型ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息工序类型ID"
+        },
+        "fcstOrdLogProductionShiftId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息生产班次ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息生产班次ID"
+        },
+        "fcstOrdLogQuantity": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息任务数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息任务数量"
+        },
+        "fcstOrdLogReceiptDate": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息单据日期",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息单据日期"
+        },
+        "fcstOrdLogReceiptType": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息单据类型"
+        },
+        "fcstOrdLogRelatedTasksId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息关联任务id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息关联任务id"
+        },
+        "fcstOrdLogSerialNumber": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息顺序号",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息顺序号"
+        },
+        "fcstOrdLogSource": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息源",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息源"
+        },
+        "fcstOrdLogSourceType": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息来源类型",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息来源类型"
+        },
+        "fcstOrdLogState": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息通用状态",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息通用状态"
+        },
+        "fcstOrdLogStkGap": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息备货缺口数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息备货缺口数量"
+        },
+        "fcstOrdLogSystemCode": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息系统编码",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息系统编码"
+        },
+        "fcstOrdLogTarget": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息目标",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息目标"
+        },
+        "fcstOrdLogTaskNodeName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息任务节点名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息任务节点名称"
+        },
+        "fcstOrdLogTaskNodeType": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息任务节点类型",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息任务节点类型"
+        },
+        "fcstOrdLogTenantId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息租户ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息租户ID"
+        },
+        "fcstOrdLogThirdPartyClass": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息第三方分类",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息第三方分类"
+        },
+        "fcstOrdLogThirdPartyId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息第三方系统中的唯一ID"
+        },
+        "fcstOrdLogThirdPartyName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息第三方名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息第三方名称"
+        },
+        "fcstOrdLogToAuditDate": {
+            "meaning": "fcstOrdLogToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToBeginTime": {
+            "meaning": "fcstOrdLogToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToCreateTime": {
+            "meaning": "fcstOrdLogToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDateExtra1": {
+            "meaning": "fcstOrdLogToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDateExtra2": {
+            "meaning": "fcstOrdLogToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDateExtra3": {
+            "meaning": "fcstOrdLogToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDateExtra4": {
+            "meaning": "fcstOrdLogToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDateExtra5": {
+            "meaning": "fcstOrdLogToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToDeliveryDate": {
+            "meaning": "fcstOrdLogToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToEndTime": {
+            "meaning": "fcstOrdLogToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToReceiptDate": {
+            "meaning": "fcstOrdLogToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogToShipQty": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息待出库数量",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息待出库数量"
+        },
+        "fcstOrdLogToUpdateTime": {
+            "meaning": "fcstOrdLogToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogUnitCode": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息单位id",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息单位id"
+        },
+        "fcstOrdLogUnitName": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息计量单位名称",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息计量单位名称"
+        },
+        "fcstOrdLogUpdateTime": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息更新时间",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息更新时间"
+        },
+        "fcstOrdLogUpdater": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息更新人",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息更新人"
+        },
+        "fcstOrdLogUpdaterId": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息更新人ID",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息更新人ID"
+        },
+        "fcstOrdLogUserCode": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息智能节点的唯一编码",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息智能节点的唯一编码"
+        },
+        "fcstOrdLogVarExtra1": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展1",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展1"
+        },
+        "fcstOrdLogVarExtra2": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展2",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展2"
+        },
+        "fcstOrdLogVarExtra3": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展3",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展3"
+        },
+        "fcstOrdLogVarExtra4": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展4",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展4"
+        },
+        "fcstOrdLogVarExtra5": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息扩展5",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息扩展5"
+        },
+        "fcstOrdLogVersion": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息版本号",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息版本号"
+        },
+        "fcstOrdLogWeek": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息备货周期（周）",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息备货周期"
+        },
+        "fcstOrdLogYear": {
+            "meaning": "备货单记录表，用于存储备货单的基本信息年份",
+            "reachable": true,
+            "name": "备货单记录表，用于存储备货单的基本信息年份"
+        }
+    }
+}

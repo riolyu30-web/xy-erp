@@ -1,0 +1,1812 @@
+{
+    "api_name": "/allocation-det/findList",
+    "table_name": "财务分摊明细",
+    "request": {
+        "allocationDetAllocationClazz": "ALLOCATION",
+        "allocationDetClazz": "ALLOCATION_DET"
+    },
+    "mainTabClazz": "ALLOCATION_DET",
+    "response": {
+        "allocationDetActualTimeRequired": {
+            "meaning": "财务分摊明细实际需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细实际需时"
+        },
+        "allocationDetAdjustmentTimeRequired": {
+            "meaning": "财务分摊明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "财务分摊明细调整需时"
+        },
+        "allocationDetAllocationActualTimeRequired": {
+            "meaning": "财务分摊明细实际需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细实际需时"
+        },
+        "allocationDetAllocationAdjustmentTimeRequired": {
+            "meaning": "财务分摊明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "财务分摊明细调整需时"
+        },
+        "allocationDetAllocationApplicationId": {
+            "meaning": "财务分摊明细应用ID",
+            "reachable": false,
+            "name": "财务分摊明细应用ID"
+        },
+        "allocationDetAllocationAuditDate": {
+            "meaning": "财务分摊明细审核时间",
+            "reachable": false,
+            "name": "财务分摊明细审核时间"
+        },
+        "allocationDetAllocationAuditStatus": {
+            "meaning": "财务分摊明细审核状态",
+            "reachable": false,
+            "name": "财务分摊明细审核状态"
+        },
+        "allocationDetAllocationAvailableScheduleId": {
+            "meaning": "财务分摊明细可用日程id",
+            "reachable": false,
+            "name": "财务分摊明细可用日程id"
+        },
+        "allocationDetAllocationBeginTime": {
+            "meaning": "财务分摊明细开始时间",
+            "reachable": false,
+            "name": "财务分摊明细开始时间"
+        },
+        "allocationDetAllocationBizVersion": {
+            "meaning": "财务分摊明细业务自定义版本号",
+            "reachable": false,
+            "name": "财务分摊明细业务自定义版本号"
+        },
+        "allocationDetAllocationBriefName": {
+            "meaning": "财务分摊明细简称",
+            "reachable": false,
+            "name": "财务分摊明细简称"
+        },
+        "allocationDetAllocationBusDivisId": {
+            "meaning": "财务分摊明细事业部id",
+            "reachable": false,
+            "name": "财务分摊明细事业部id"
+        },
+        "allocationDetAllocationClazz": {
+            "meaning": "财务分摊明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "财务分摊明细子类"
+        },
+        "allocationDetAllocationClosedReason": {
+            "meaning": "财务分摊明细结案原因",
+            "reachable": false,
+            "name": "财务分摊明细结案原因"
+        },
+        "allocationDetAllocationClosedStatus": {
+            "meaning": "财务分摊明细结案状态",
+            "reachable": false,
+            "name": "财务分摊明细结案状态"
+        },
+        "allocationDetAllocationComment": {
+            "meaning": "财务分摊明细评论",
+            "reachable": false,
+            "name": "财务分摊明细评论"
+        },
+        "allocationDetAllocationCompleteQuantity": {
+            "meaning": "财务分摊明细完成数量",
+            "reachable": false,
+            "name": "财务分摊明细完成数量"
+        },
+        "allocationDetAllocationCompleteStatus": {
+            "meaning": "财务分摊明细完成状态",
+            "reachable": false,
+            "name": "财务分摊明细完成状态"
+        },
+        "allocationDetAllocationCreateTime": {
+            "meaning": "财务分摊明细创建时间",
+            "reachable": false,
+            "name": "财务分摊明细创建时间"
+        },
+        "allocationDetAllocationCreator": {
+            "meaning": "财务分摊明细创建人",
+            "reachable": false,
+            "name": "财务分摊明细创建人"
+        },
+        "allocationDetAllocationCreatorId": {
+            "meaning": "财务分摊明细创建人ID",
+            "reachable": false,
+            "name": "财务分摊明细创建人ID"
+        },
+        "allocationDetAllocationDateExtra1": {
+            "meaning": "财务分摊明细扩展时间1",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间1"
+        },
+        "allocationDetAllocationDateExtra2": {
+            "meaning": "财务分摊明细扩展时间2",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间2"
+        },
+        "allocationDetAllocationDateExtra3": {
+            "meaning": "财务分摊明细扩展时间3",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间3"
+        },
+        "allocationDetAllocationDateExtra4": {
+            "meaning": "财务分摊明细扩展时间4",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间4"
+        },
+        "allocationDetAllocationDateExtra5": {
+            "meaning": "财务分摊明细扩展时间5",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间5"
+        },
+        "allocationDetAllocationDefaultType": {
+            "meaning": "财务分摊明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "财务分摊明细智能节点主类型"
+        },
+        "allocationDetAllocationDeliveryDate": {
+            "meaning": "财务分摊明细交货日期",
+            "reachable": false,
+            "name": "财务分摊明细交货日期"
+        },
+        "allocationDetAllocationDescription": {
+            "meaning": "财务分摊明细描述",
+            "reachable": false,
+            "name": "财务分摊明细描述"
+        },
+        "allocationDetAllocationDetSourceActualTimeRequired": {
+            "meaning": "财务分摊明细实际需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细实际需时"
+        },
+        "allocationDetAllocationDetSourceAdjustmentTimeRequired": {
+            "meaning": "财务分摊明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "财务分摊明细调整需时"
+        },
+        "allocationDetAllocationDetSourceAmount": {
+            "meaning": "财务分摊明细分摊金额",
+            "reachable": false,
+            "name": "财务分摊明细分摊金额"
+        },
+        "allocationDetAllocationDetSourceApplicationId": {
+            "meaning": "财务分摊明细应用ID",
+            "reachable": false,
+            "name": "财务分摊明细应用ID"
+        },
+        "allocationDetAllocationDetSourceAuditDate": {
+            "meaning": "财务分摊明细审核时间",
+            "reachable": false,
+            "name": "财务分摊明细审核时间"
+        },
+        "allocationDetAllocationDetSourceAuditStatus": {
+            "meaning": "财务分摊明细审核状态",
+            "reachable": false,
+            "name": "财务分摊明细审核状态"
+        },
+        "allocationDetAllocationDetSourceAvailableScheduleId": {
+            "meaning": "财务分摊明细可用日程id",
+            "reachable": false,
+            "name": "财务分摊明细可用日程id"
+        },
+        "allocationDetAllocationDetSourceBalanceId": {
+            "meaning": "财务分摊明细结转guid",
+            "reachable": false,
+            "name": "财务分摊明细结转guid"
+        },
+        "allocationDetAllocationDetSourceBeginTime": {
+            "meaning": "财务分摊明细开始时间",
+            "reachable": false,
+            "name": "财务分摊明细开始时间"
+        },
+        "allocationDetAllocationDetSourceBizVersion": {
+            "meaning": "财务分摊明细业务自定义版本号",
+            "reachable": false,
+            "name": "财务分摊明细业务自定义版本号"
+        },
+        "allocationDetAllocationDetSourceBriefName": {
+            "meaning": "财务分摊明细简称",
+            "reachable": false,
+            "name": "财务分摊明细简称"
+        },
+        "allocationDetAllocationDetSourceBusDivisId": {
+            "meaning": "财务分摊明细事业部id",
+            "reachable": false,
+            "name": "财务分摊明细事业部id"
+        },
+        "allocationDetAllocationDetSourceClazz": {
+            "meaning": "财务分摊明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "财务分摊明细子类"
+        },
+        "allocationDetAllocationDetSourceClosedReason": {
+            "meaning": "财务分摊明细结案原因",
+            "reachable": false,
+            "name": "财务分摊明细结案原因"
+        },
+        "allocationDetAllocationDetSourceClosedStatus": {
+            "meaning": "财务分摊明细结案状态",
+            "reachable": false,
+            "name": "财务分摊明细结案状态"
+        },
+        "allocationDetAllocationDetSourceComment": {
+            "meaning": "财务分摊明细评论",
+            "reachable": false,
+            "name": "财务分摊明细评论"
+        },
+        "allocationDetAllocationDetSourceCompleteQuantity": {
+            "meaning": "财务分摊明细完成数量",
+            "reachable": false,
+            "name": "财务分摊明细完成数量"
+        },
+        "allocationDetAllocationDetSourceCompleteStatus": {
+            "meaning": "财务分摊明细完成状态",
+            "reachable": false,
+            "name": "财务分摊明细完成状态"
+        },
+        "allocationDetAllocationDetSourceCreateTime": {
+            "meaning": "财务分摊明细创建时间",
+            "reachable": false,
+            "name": "财务分摊明细创建时间"
+        },
+        "allocationDetAllocationDetSourceCreator": {
+            "meaning": "财务分摊明细创建人",
+            "reachable": false,
+            "name": "财务分摊明细创建人"
+        },
+        "allocationDetAllocationDetSourceCreatorId": {
+            "meaning": "财务分摊明细创建人ID",
+            "reachable": false,
+            "name": "财务分摊明细创建人ID"
+        },
+        "allocationDetAllocationDetSourceDateExtra1": {
+            "meaning": "财务分摊明细扩展时间1",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间1"
+        },
+        "allocationDetAllocationDetSourceDateExtra2": {
+            "meaning": "财务分摊明细扩展时间2",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间2"
+        },
+        "allocationDetAllocationDetSourceDateExtra3": {
+            "meaning": "财务分摊明细扩展时间3",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间3"
+        },
+        "allocationDetAllocationDetSourceDateExtra4": {
+            "meaning": "财务分摊明细扩展时间4",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间4"
+        },
+        "allocationDetAllocationDetSourceDateExtra5": {
+            "meaning": "财务分摊明细扩展时间5",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间5"
+        },
+        "allocationDetAllocationDetSourceDefaultType": {
+            "meaning": "财务分摊明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "财务分摊明细智能节点主类型"
+        },
+        "allocationDetAllocationDetSourceDeliveryDate": {
+            "meaning": "财务分摊明细交货日期",
+            "reachable": false,
+            "name": "财务分摊明细交货日期"
+        },
+        "allocationDetAllocationDetSourceDescription": {
+            "meaning": "财务分摊明细描述",
+            "reachable": false,
+            "name": "财务分摊明细描述"
+        },
+        "allocationDetAllocationDetSourceEndTime": {
+            "meaning": "财务分摊明细结束时间",
+            "reachable": false,
+            "name": "财务分摊明细结束时间"
+        },
+        "allocationDetAllocationDetSourceEndTimeRequired": {
+            "meaning": "财务分摊明细最后需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细最后需时"
+        },
+        "allocationDetAllocationDetSourceEngName": {
+            "meaning": "财务分摊明细英文名称",
+            "reachable": false,
+            "name": "财务分摊明细英文名称"
+        },
+        "allocationDetAllocationDetSourceEquipmentId": {
+            "meaning": "财务分摊明细设备id",
+            "reachable": false,
+            "name": "财务分摊明细设备id"
+        },
+        "allocationDetAllocationDetSourceExchangeRateId": {
+            "meaning": "财务分摊明细币种汇率id",
+            "reachable": false,
+            "name": "财务分摊明细币种汇率id"
+        },
+        "allocationDetAllocationDetSourceExtension": {
+            "meaning": "财务分摊明细扩展数据",
+            "reachable": false,
+            "name": "财务分摊明细扩展数据"
+        },
+        "allocationDetAllocationDetSourceExternalState": {
+            "meaning": "财务分摊明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "财务分摊明细上流程状态位"
+        },
+        "allocationDetAllocationDetSourceFilterClazz": {
+            "meaning": "财务分摊明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "财务分摊明细冗余字段用于筛选"
+        },
+        "allocationDetAllocationDetSourceFlags": {
+            "meaning": "财务分摊明细63位标志位",
+            "reachable": false,
+            "name": "财务分摊明细63位标志位"
+        },
+        "allocationDetAllocationDetSourceFromAuditDate": {
+            "meaning": "allocationDetAllocationDetSourceFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromBeginTime": {
+            "meaning": "allocationDetAllocationDetSourceFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromCreateTime": {
+            "meaning": "allocationDetAllocationDetSourceFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDateExtra1": {
+            "meaning": "allocationDetAllocationDetSourceFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDateExtra2": {
+            "meaning": "allocationDetAllocationDetSourceFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDateExtra3": {
+            "meaning": "allocationDetAllocationDetSourceFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDateExtra4": {
+            "meaning": "allocationDetAllocationDetSourceFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDateExtra5": {
+            "meaning": "allocationDetAllocationDetSourceFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromDeliveryDate": {
+            "meaning": "allocationDetAllocationDetSourceFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromEndTime": {
+            "meaning": "allocationDetAllocationDetSourceFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromReceiptDate": {
+            "meaning": "allocationDetAllocationDetSourceFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFromUpdateTime": {
+            "meaning": "allocationDetAllocationDetSourceFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceFscType": {
+            "meaning": "财务分摊明细FSC声明",
+            "reachable": false,
+            "name": "财务分摊明细FSC声明"
+        },
+        "allocationDetAllocationDetSourceGenerativePeople": {
+            "meaning": "财务分摊明细下发人",
+            "reachable": false,
+            "name": "财务分摊明细下发人"
+        },
+        "allocationDetAllocationDetSourceGenerativeState": {
+            "meaning": "财务分摊明细下发状态",
+            "reachable": false,
+            "name": "财务分摊明细下发状态"
+        },
+        "allocationDetAllocationDetSourceGroovyScript": {
+            "meaning": "财务分摊明细groovy脚本",
+            "reachable": false,
+            "name": "财务分摊明细groovy脚本"
+        },
+        "allocationDetAllocationDetSourceGropeCode": {
+            "meaning": "财务分摊明细搜索码",
+            "reachable": false,
+            "name": "财务分摊明细搜索码"
+        },
+        "allocationDetAllocationDetSourceId": {
+            "meaning": "财务分摊明细PK",
+            "reachable": false,
+            "name": "财务分摊明细PK"
+        },
+        "allocationDetAllocationDetSourceInUsed": {
+            "meaning": "财务分摊明细是否被使用",
+            "reachable": false,
+            "name": "财务分摊明细是否被使用"
+        },
+        "allocationDetAllocationDetSourceInvTypeTaxRateId": {
+            "meaning": "财务分摊明细发票税率id",
+            "reachable": false,
+            "name": "财务分摊明细发票税率id"
+        },
+        "allocationDetAllocationDetSourceIsBanned": {
+            "meaning": "财务分摊明细是否被禁用",
+            "reachable": false,
+            "name": "财务分摊明细是否被禁用"
+        },
+        "allocationDetAllocationDetSourceIsDeleted": {
+            "meaning": "财务分摊明细是否被删除",
+            "reachable": false,
+            "name": "财务分摊明细是否被删除"
+        },
+        "allocationDetAllocationDetSourceIsLeaf": {
+            "meaning": "财务分摊明细是否叶子节点",
+            "reachable": false,
+            "name": "财务分摊明细是否叶子节点"
+        },
+        "allocationDetAllocationDetSourceIsMainFlow": {
+            "meaning": "财务分摊明细是否是主流程",
+            "reachable": false,
+            "name": "财务分摊明细是否是主流程"
+        },
+        "allocationDetAllocationDetSourceIsManualModificationDate": {
+            "meaning": "财务分摊明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "财务分摊明细是否手动修改计划生产时间"
+        },
+        "allocationDetAllocationDetSourceIsolation": {
+            "meaning": "财务分摊明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "财务分摊明细智能节点数据隔离标识"
+        },
+        "allocationDetAllocationDetSourceJsScript": {
+            "meaning": "财务分摊明细js脚本",
+            "reachable": false,
+            "name": "财务分摊明细js脚本"
+        },
+        "allocationDetAllocationDetSourceMaterialId": {
+            "meaning": "财务分摊明细物料id",
+            "reachable": false,
+            "name": "财务分摊明细物料id"
+        },
+        "allocationDetAllocationDetSourceName": {
+            "meaning": "财务分摊明细智能节点名",
+            "reachable": false,
+            "name": "财务分摊明细智能节点名"
+        },
+        "allocationDetAllocationDetSourceNameCodeSearch": {
+            "meaning": "财务分摊明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "财务分摊明细name、user"
+        },
+        "allocationDetAllocationDetSourceNumberExtra1": {
+            "meaning": "财务分摊明细扩展数量1",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量1"
+        },
+        "allocationDetAllocationDetSourceNumberExtra2": {
+            "meaning": "财务分摊明细扩展数量2",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量2"
+        },
+        "allocationDetAllocationDetSourceNumberExtra3": {
+            "meaning": "财务分摊明细扩展数量3",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量3"
+        },
+        "allocationDetAllocationDetSourceNumberExtra4": {
+            "meaning": "财务分摊明细扩展数量4",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量4"
+        },
+        "allocationDetAllocationDetSourceNumberExtra5": {
+            "meaning": "财务分摊明细扩展数量5",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量5"
+        },
+        "allocationDetAllocationDetSourceParentId": {
+            "meaning": "财务分摊明细父节点ID",
+            "reachable": false,
+            "name": "财务分摊明细父节点ID"
+        },
+        "allocationDetAllocationDetSourcePlannedOutputQuantity": {
+            "meaning": "财务分摊明细计划产出数量",
+            "reachable": false,
+            "name": "财务分摊明细计划产出数量"
+        },
+        "allocationDetAllocationDetSourcePlannedTimeRequired": {
+            "meaning": "财务分摊明细计划需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细计划需时"
+        },
+        "allocationDetAllocationDetSourcePrintTimes": {
+            "meaning": "财务分摊明细打印次数",
+            "reachable": false,
+            "name": "财务分摊明细打印次数"
+        },
+        "allocationDetAllocationDetSourcePriority": {
+            "meaning": "财务分摊明细优先级",
+            "reachable": false,
+            "name": "财务分摊明细优先级"
+        },
+        "allocationDetAllocationDetSourceProcessInstanceId": {
+            "meaning": "财务分摊明细流程实例ID",
+            "reachable": false,
+            "name": "财务分摊明细流程实例ID"
+        },
+        "allocationDetAllocationDetSourceProductionProcessesTypeId": {
+            "meaning": "财务分摊明细工序类型ID",
+            "reachable": false,
+            "name": "财务分摊明细工序类型ID"
+        },
+        "allocationDetAllocationDetSourceProductionShiftId": {
+            "meaning": "财务分摊明细生产班次ID",
+            "reachable": false,
+            "name": "财务分摊明细生产班次ID"
+        },
+        "allocationDetAllocationDetSourceProportion": {
+            "meaning": "财务分摊明细分摊比例",
+            "reachable": false,
+            "name": "财务分摊明细分摊比例"
+        },
+        "allocationDetAllocationDetSourceQuantity": {
+            "meaning": "财务分摊明细任务数量",
+            "reachable": false,
+            "name": "财务分摊明细任务数量"
+        },
+        "allocationDetAllocationDetSourceReceiptDate": {
+            "meaning": "财务分摊明细单据日期",
+            "reachable": false,
+            "name": "财务分摊明细单据日期"
+        },
+        "allocationDetAllocationDetSourceReceiptType": {
+            "meaning": "财务分摊明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "财务分摊明细单据类型"
+        },
+        "allocationDetAllocationDetSourceRelatedTasksId": {
+            "meaning": "财务分摊明细关联任务id",
+            "reachable": false,
+            "name": "财务分摊明细关联任务id"
+        },
+        "allocationDetAllocationDetSourceSerialNumber": {
+            "meaning": "财务分摊明细顺序号",
+            "reachable": false,
+            "name": "财务分摊明细顺序号"
+        },
+        "allocationDetAllocationDetSourceSource": {
+            "meaning": "财务分摊明细源",
+            "reachable": false,
+            "name": "财务分摊明细源"
+        },
+        "allocationDetAllocationDetSourceSourceType": {
+            "meaning": "财务分摊明细来源类型",
+            "reachable": false,
+            "name": "财务分摊明细来源类型"
+        },
+        "allocationDetAllocationDetSourceState": {
+            "meaning": "财务分摊明细通用状态",
+            "reachable": false,
+            "name": "财务分摊明细通用状态"
+        },
+        "allocationDetAllocationDetSourceSystemCode": {
+            "meaning": "财务分摊明细系统编码",
+            "reachable": false,
+            "name": "财务分摊明细系统编码"
+        },
+        "allocationDetAllocationDetSourceTarget": {
+            "meaning": "财务分摊明细目标",
+            "reachable": false,
+            "name": "财务分摊明细目标"
+        },
+        "allocationDetAllocationDetSourceTaskNodeName": {
+            "meaning": "财务分摊明细任务节点名称",
+            "reachable": false,
+            "name": "财务分摊明细任务节点名称"
+        },
+        "allocationDetAllocationDetSourceTenantId": {
+            "meaning": "财务分摊明细租户_id",
+            "reachable": false,
+            "name": "财务分摊明细租户_id"
+        },
+        "allocationDetAllocationDetSourceThirdPartyClass": {
+            "meaning": "财务分摊明细第三方分类",
+            "reachable": false,
+            "name": "财务分摊明细第三方分类"
+        },
+        "allocationDetAllocationDetSourceThirdPartyId": {
+            "meaning": "财务分摊明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "财务分摊明细第三方系统中的唯一ID"
+        },
+        "allocationDetAllocationDetSourceThirdPartyName": {
+            "meaning": "财务分摊明细第三方名称",
+            "reachable": false,
+            "name": "财务分摊明细第三方名称"
+        },
+        "allocationDetAllocationDetSourceToAuditDate": {
+            "meaning": "allocationDetAllocationDetSourceToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToBeginTime": {
+            "meaning": "allocationDetAllocationDetSourceToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToCreateTime": {
+            "meaning": "allocationDetAllocationDetSourceToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDateExtra1": {
+            "meaning": "allocationDetAllocationDetSourceToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDateExtra2": {
+            "meaning": "allocationDetAllocationDetSourceToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDateExtra3": {
+            "meaning": "allocationDetAllocationDetSourceToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDateExtra4": {
+            "meaning": "allocationDetAllocationDetSourceToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDateExtra5": {
+            "meaning": "allocationDetAllocationDetSourceToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToDeliveryDate": {
+            "meaning": "allocationDetAllocationDetSourceToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToEndTime": {
+            "meaning": "allocationDetAllocationDetSourceToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToReceiptDate": {
+            "meaning": "allocationDetAllocationDetSourceToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceToUpdateTime": {
+            "meaning": "allocationDetAllocationDetSourceToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationDetSourceUnitCode": {
+            "meaning": "财务分摊明细单位id",
+            "reachable": false,
+            "name": "财务分摊明细单位id"
+        },
+        "allocationDetAllocationDetSourceUpdateTime": {
+            "meaning": "财务分摊明细更新时间",
+            "reachable": false,
+            "name": "财务分摊明细更新时间"
+        },
+        "allocationDetAllocationDetSourceUpdater": {
+            "meaning": "财务分摊明细更新人",
+            "reachable": false,
+            "name": "财务分摊明细更新人"
+        },
+        "allocationDetAllocationDetSourceUpdaterId": {
+            "meaning": "财务分摊明细更新人ID",
+            "reachable": false,
+            "name": "财务分摊明细更新人ID"
+        },
+        "allocationDetAllocationDetSourceUserCode": {
+            "meaning": "财务分摊明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "财务分摊明细智能节点的唯一编码"
+        },
+        "allocationDetAllocationDetSourceVarExtra1": {
+            "meaning": "财务分摊明细扩展1",
+            "reachable": false,
+            "name": "财务分摊明细扩展1"
+        },
+        "allocationDetAllocationDetSourceVarExtra2": {
+            "meaning": "财务分摊明细扩展2",
+            "reachable": false,
+            "name": "财务分摊明细扩展2"
+        },
+        "allocationDetAllocationDetSourceVarExtra3": {
+            "meaning": "财务分摊明细扩展3",
+            "reachable": false,
+            "name": "财务分摊明细扩展3"
+        },
+        "allocationDetAllocationDetSourceVarExtra4": {
+            "meaning": "财务分摊明细扩展4",
+            "reachable": false,
+            "name": "财务分摊明细扩展4"
+        },
+        "allocationDetAllocationDetSourceVarExtra5": {
+            "meaning": "财务分摊明细扩展5",
+            "reachable": false,
+            "name": "财务分摊明细扩展5"
+        },
+        "allocationDetAllocationDetSourceVersion": {
+            "meaning": "财务分摊明细版本号",
+            "reachable": false,
+            "name": "财务分摊明细版本号"
+        },
+        "allocationDetAllocationEndTime": {
+            "meaning": "财务分摊明细结束时间",
+            "reachable": false,
+            "name": "财务分摊明细结束时间"
+        },
+        "allocationDetAllocationEndTimeRequired": {
+            "meaning": "财务分摊明细最后需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细最后需时"
+        },
+        "allocationDetAllocationEngName": {
+            "meaning": "财务分摊明细英文名称",
+            "reachable": false,
+            "name": "财务分摊明细英文名称"
+        },
+        "allocationDetAllocationEquipmentId": {
+            "meaning": "财务分摊明细设备id",
+            "reachable": false,
+            "name": "财务分摊明细设备id"
+        },
+        "allocationDetAllocationExchangeRateId": {
+            "meaning": "财务分摊明细币种汇率id",
+            "reachable": false,
+            "name": "财务分摊明细币种汇率id"
+        },
+        "allocationDetAllocationExtension": {
+            "meaning": "财务分摊明细扩展数据",
+            "reachable": false,
+            "name": "财务分摊明细扩展数据"
+        },
+        "allocationDetAllocationExternalState": {
+            "meaning": "财务分摊明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "财务分摊明细上流程状态位"
+        },
+        "allocationDetAllocationFilterClazz": {
+            "meaning": "财务分摊明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "财务分摊明细冗余字段用于筛选"
+        },
+        "allocationDetAllocationFlags": {
+            "meaning": "财务分摊明细63位标志位",
+            "reachable": false,
+            "name": "财务分摊明细63位标志位"
+        },
+        "allocationDetAllocationFromAuditDate": {
+            "meaning": "allocationDetAllocationFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromBeginTime": {
+            "meaning": "allocationDetAllocationFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromCreateTime": {
+            "meaning": "allocationDetAllocationFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDateExtra1": {
+            "meaning": "allocationDetAllocationFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDateExtra2": {
+            "meaning": "allocationDetAllocationFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDateExtra3": {
+            "meaning": "allocationDetAllocationFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDateExtra4": {
+            "meaning": "allocationDetAllocationFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDateExtra5": {
+            "meaning": "allocationDetAllocationFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromDeliveryDate": {
+            "meaning": "allocationDetAllocationFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromEndTime": {
+            "meaning": "allocationDetAllocationFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromReceiptDate": {
+            "meaning": "allocationDetAllocationFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFromUpdateTime": {
+            "meaning": "allocationDetAllocationFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationFscType": {
+            "meaning": "财务分摊明细FSC声明",
+            "reachable": false,
+            "name": "财务分摊明细FSC声明"
+        },
+        "allocationDetAllocationGenerativePeople": {
+            "meaning": "财务分摊明细下发人",
+            "reachable": false,
+            "name": "财务分摊明细下发人"
+        },
+        "allocationDetAllocationGenerativeState": {
+            "meaning": "财务分摊明细下发状态",
+            "reachable": false,
+            "name": "财务分摊明细下发状态"
+        },
+        "allocationDetAllocationGroovyScript": {
+            "meaning": "财务分摊明细groovy脚本",
+            "reachable": false,
+            "name": "财务分摊明细groovy脚本"
+        },
+        "allocationDetAllocationGropeCode": {
+            "meaning": "财务分摊明细搜索码",
+            "reachable": false,
+            "name": "财务分摊明细搜索码"
+        },
+        "allocationDetAllocationId": {
+            "meaning": "财务分摊明细主键ID",
+            "reachable": false,
+            "name": "财务分摊明细主键ID"
+        },
+        "allocationDetAllocationInUsed": {
+            "meaning": "财务分摊明细是否被使用",
+            "reachable": false,
+            "name": "财务分摊明细是否被使用"
+        },
+        "allocationDetAllocationInvTypeTaxRateId": {
+            "meaning": "财务分摊明细发票税率id",
+            "reachable": false,
+            "name": "财务分摊明细发票税率id"
+        },
+        "allocationDetAllocationIsBanned": {
+            "meaning": "财务分摊明细是否被禁用",
+            "reachable": false,
+            "name": "财务分摊明细是否被禁用"
+        },
+        "allocationDetAllocationIsDeleted": {
+            "meaning": "财务分摊明细是否被删除",
+            "reachable": false,
+            "name": "财务分摊明细是否被删除"
+        },
+        "allocationDetAllocationIsLeaf": {
+            "meaning": "财务分摊明细是否叶子节点",
+            "reachable": false,
+            "name": "财务分摊明细是否叶子节点"
+        },
+        "allocationDetAllocationIsMainFlow": {
+            "meaning": "财务分摊明细是否是主流程",
+            "reachable": false,
+            "name": "财务分摊明细是否是主流程"
+        },
+        "allocationDetAllocationIsManualModificationDate": {
+            "meaning": "财务分摊明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "财务分摊明细是否手动修改计划生产时间"
+        },
+        "allocationDetAllocationIsolation": {
+            "meaning": "财务分摊明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "财务分摊明细智能节点数据隔离标识"
+        },
+        "allocationDetAllocationJsScript": {
+            "meaning": "财务分摊明细js脚本",
+            "reachable": false,
+            "name": "财务分摊明细js脚本"
+        },
+        "allocationDetAllocationMaterialId": {
+            "meaning": "财务分摊明细物料id",
+            "reachable": false,
+            "name": "财务分摊明细物料id"
+        },
+        "allocationDetAllocationName": {
+            "meaning": "财务分摊明细智能节点名",
+            "reachable": false,
+            "name": "财务分摊明细智能节点名"
+        },
+        "allocationDetAllocationNameCodeSearch": {
+            "meaning": "财务分摊明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "财务分摊明细name、user"
+        },
+        "allocationDetAllocationNumberExtra1": {
+            "meaning": "财务分摊明细扩展数量1",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量1"
+        },
+        "allocationDetAllocationNumberExtra2": {
+            "meaning": "财务分摊明细扩展数量2",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量2"
+        },
+        "allocationDetAllocationNumberExtra3": {
+            "meaning": "财务分摊明细扩展数量3",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量3"
+        },
+        "allocationDetAllocationNumberExtra4": {
+            "meaning": "财务分摊明细扩展数量4",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量4"
+        },
+        "allocationDetAllocationNumberExtra5": {
+            "meaning": "财务分摊明细扩展数量5",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量5"
+        },
+        "allocationDetAllocationParentId": {
+            "meaning": "财务分摊明细父节点ID",
+            "reachable": false,
+            "name": "财务分摊明细父节点ID"
+        },
+        "allocationDetAllocationPlannedOutputQuantity": {
+            "meaning": "财务分摊明细计划产出数量",
+            "reachable": false,
+            "name": "财务分摊明细计划产出数量"
+        },
+        "allocationDetAllocationPlannedTimeRequired": {
+            "meaning": "财务分摊明细计划需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细计划需时"
+        },
+        "allocationDetAllocationPrintTimes": {
+            "meaning": "财务分摊明细打印次数",
+            "reachable": false,
+            "name": "财务分摊明细打印次数"
+        },
+        "allocationDetAllocationPriority": {
+            "meaning": "财务分摊明细优先级",
+            "reachable": false,
+            "name": "财务分摊明细优先级"
+        },
+        "allocationDetAllocationProcessInstanceId": {
+            "meaning": "财务分摊明细流程实例ID",
+            "reachable": false,
+            "name": "财务分摊明细流程实例ID"
+        },
+        "allocationDetAllocationProductionProcessesTypeId": {
+            "meaning": "财务分摊明细工序类型ID",
+            "reachable": false,
+            "name": "财务分摊明细工序类型ID"
+        },
+        "allocationDetAllocationProductionShiftId": {
+            "meaning": "财务分摊明细生产班次ID",
+            "reachable": false,
+            "name": "财务分摊明细生产班次ID"
+        },
+        "allocationDetAllocationQuantity": {
+            "meaning": "财务分摊明细任务数量",
+            "reachable": false,
+            "name": "财务分摊明细任务数量"
+        },
+        "allocationDetAllocationReceiptDate": {
+            "meaning": "财务分摊明细单据日期",
+            "reachable": false,
+            "name": "财务分摊明细单据日期"
+        },
+        "allocationDetAllocationReceiptType": {
+            "meaning": "财务分摊明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "财务分摊明细单据类型"
+        },
+        "allocationDetAllocationRelatedTasksId": {
+            "meaning": "财务分摊明细关联任务id",
+            "reachable": false,
+            "name": "财务分摊明细关联任务id"
+        },
+        "allocationDetAllocationSerialNumber": {
+            "meaning": "财务分摊明细顺序号",
+            "reachable": false,
+            "name": "财务分摊明细顺序号"
+        },
+        "allocationDetAllocationSource": {
+            "meaning": "财务分摊明细源",
+            "reachable": false,
+            "name": "财务分摊明细源"
+        },
+        "allocationDetAllocationSourceType": {
+            "meaning": "财务分摊明细来源类型",
+            "reachable": false,
+            "name": "财务分摊明细来源类型"
+        },
+        "allocationDetAllocationState": {
+            "meaning": "财务分摊明细通用状态",
+            "reachable": false,
+            "name": "财务分摊明细通用状态"
+        },
+        "allocationDetAllocationSystemCode": {
+            "meaning": "财务分摊明细系统编码",
+            "reachable": false,
+            "name": "财务分摊明细系统编码"
+        },
+        "allocationDetAllocationTarget": {
+            "meaning": "财务分摊明细目标",
+            "reachable": false,
+            "name": "财务分摊明细目标"
+        },
+        "allocationDetAllocationTaskNodeName": {
+            "meaning": "财务分摊明细任务节点名称",
+            "reachable": false,
+            "name": "财务分摊明细任务节点名称"
+        },
+        "allocationDetAllocationTenantId": {
+            "meaning": "财务分摊明细租户_id",
+            "reachable": false,
+            "name": "财务分摊明细租户_id"
+        },
+        "allocationDetAllocationThirdPartyClass": {
+            "meaning": "财务分摊明细第三方分类",
+            "reachable": false,
+            "name": "财务分摊明细第三方分类"
+        },
+        "allocationDetAllocationThirdPartyId": {
+            "meaning": "财务分摊明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "财务分摊明细第三方系统中的唯一ID"
+        },
+        "allocationDetAllocationThirdPartyName": {
+            "meaning": "财务分摊明细第三方名称",
+            "reachable": false,
+            "name": "财务分摊明细第三方名称"
+        },
+        "allocationDetAllocationToAuditDate": {
+            "meaning": "allocationDetAllocationToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToBeginTime": {
+            "meaning": "allocationDetAllocationToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToCreateTime": {
+            "meaning": "allocationDetAllocationToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDateExtra1": {
+            "meaning": "allocationDetAllocationToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDateExtra2": {
+            "meaning": "allocationDetAllocationToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDateExtra3": {
+            "meaning": "allocationDetAllocationToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDateExtra4": {
+            "meaning": "allocationDetAllocationToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDateExtra5": {
+            "meaning": "allocationDetAllocationToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToDeliveryDate": {
+            "meaning": "allocationDetAllocationToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToEndTime": {
+            "meaning": "allocationDetAllocationToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToReceiptDate": {
+            "meaning": "allocationDetAllocationToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationToUpdateTime": {
+            "meaning": "allocationDetAllocationToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetAllocationTotalAmount": {
+            "meaning": "财务分摊明细总分摊金额",
+            "reachable": false,
+            "name": "财务分摊明细总分摊金额"
+        },
+        "allocationDetAllocationUnitCode": {
+            "meaning": "财务分摊明细单位id",
+            "reachable": false,
+            "name": "财务分摊明细单位id"
+        },
+        "allocationDetAllocationUpdateTime": {
+            "meaning": "财务分摊明细更新时间",
+            "reachable": false,
+            "name": "财务分摊明细更新时间"
+        },
+        "allocationDetAllocationUpdater": {
+            "meaning": "财务分摊明细更新人",
+            "reachable": false,
+            "name": "财务分摊明细更新人"
+        },
+        "allocationDetAllocationUpdaterId": {
+            "meaning": "财务分摊明细更新人ID",
+            "reachable": false,
+            "name": "财务分摊明细更新人ID"
+        },
+        "allocationDetAllocationUserCode": {
+            "meaning": "财务分摊明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "财务分摊明细智能节点的唯一编码"
+        },
+        "allocationDetAllocationVarExtra1": {
+            "meaning": "财务分摊明细扩展1",
+            "reachable": false,
+            "name": "财务分摊明细扩展1"
+        },
+        "allocationDetAllocationVarExtra2": {
+            "meaning": "财务分摊明细扩展2",
+            "reachable": false,
+            "name": "财务分摊明细扩展2"
+        },
+        "allocationDetAllocationVarExtra3": {
+            "meaning": "财务分摊明细扩展3",
+            "reachable": false,
+            "name": "财务分摊明细扩展3"
+        },
+        "allocationDetAllocationVarExtra4": {
+            "meaning": "财务分摊明细扩展4",
+            "reachable": false,
+            "name": "财务分摊明细扩展4"
+        },
+        "allocationDetAllocationVarExtra5": {
+            "meaning": "财务分摊明细扩展5",
+            "reachable": false,
+            "name": "财务分摊明细扩展5"
+        },
+        "allocationDetAllocationVersion": {
+            "meaning": "财务分摊明细版本号",
+            "reachable": false,
+            "name": "财务分摊明细版本号"
+        },
+        "allocationDetAmount": {
+            "meaning": "财务分摊明细分摊金额",
+            "reachable": false,
+            "name": "财务分摊明细分摊金额"
+        },
+        "allocationDetApplicationId": {
+            "meaning": "财务分摊明细应用ID",
+            "reachable": false,
+            "name": "财务分摊明细应用ID"
+        },
+        "allocationDetAuditDate": {
+            "meaning": "财务分摊明细审核时间",
+            "reachable": false,
+            "name": "财务分摊明细审核时间"
+        },
+        "allocationDetAuditStatus": {
+            "meaning": "财务分摊明细审核状态",
+            "reachable": false,
+            "name": "财务分摊明细审核状态"
+        },
+        "allocationDetAvailableScheduleId": {
+            "meaning": "财务分摊明细可用日程id",
+            "reachable": false,
+            "name": "财务分摊明细可用日程id"
+        },
+        "allocationDetBeginTime": {
+            "meaning": "财务分摊明细开始时间",
+            "reachable": false,
+            "name": "财务分摊明细开始时间"
+        },
+        "allocationDetBizVersion": {
+            "meaning": "财务分摊明细业务自定义版本号",
+            "reachable": false,
+            "name": "财务分摊明细业务自定义版本号"
+        },
+        "allocationDetBriefName": {
+            "meaning": "财务分摊明细简称",
+            "reachable": false,
+            "name": "财务分摊明细简称"
+        },
+        "allocationDetBusDivisId": {
+            "meaning": "财务分摊明细事业部id",
+            "reachable": false,
+            "name": "财务分摊明细事业部id"
+        },
+        "allocationDetClazz": {
+            "meaning": "财务分摊明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "财务分摊明细子类"
+        },
+        "allocationDetClosedReason": {
+            "meaning": "财务分摊明细结案原因",
+            "reachable": false,
+            "name": "财务分摊明细结案原因"
+        },
+        "allocationDetClosedStatus": {
+            "meaning": "财务分摊明细结案状态",
+            "reachable": false,
+            "name": "财务分摊明细结案状态"
+        },
+        "allocationDetComment": {
+            "meaning": "财务分摊明细评论",
+            "reachable": false,
+            "name": "财务分摊明细评论"
+        },
+        "allocationDetCompleteQuantity": {
+            "meaning": "财务分摊明细完成数量",
+            "reachable": false,
+            "name": "财务分摊明细完成数量"
+        },
+        "allocationDetCompleteStatus": {
+            "meaning": "财务分摊明细完成状态",
+            "reachable": false,
+            "name": "财务分摊明细完成状态"
+        },
+        "allocationDetContentAmount": {
+            "meaning": "财务分摊明细费用金额",
+            "reachable": false,
+            "name": "财务分摊明细费用金额"
+        },
+        "allocationDetCreateTime": {
+            "meaning": "财务分摊明细创建时间",
+            "reachable": false,
+            "name": "财务分摊明细创建时间"
+        },
+        "allocationDetCreator": {
+            "meaning": "财务分摊明细创建人",
+            "reachable": false,
+            "name": "财务分摊明细创建人"
+        },
+        "allocationDetCreatorId": {
+            "meaning": "财务分摊明细创建人ID",
+            "reachable": false,
+            "name": "财务分摊明细创建人ID"
+        },
+        "allocationDetDateExtra1": {
+            "meaning": "财务分摊明细扩展时间1",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间1"
+        },
+        "allocationDetDateExtra2": {
+            "meaning": "财务分摊明细扩展时间2",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间2"
+        },
+        "allocationDetDateExtra3": {
+            "meaning": "财务分摊明细扩展时间3",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间3"
+        },
+        "allocationDetDateExtra4": {
+            "meaning": "财务分摊明细扩展时间4",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间4"
+        },
+        "allocationDetDateExtra5": {
+            "meaning": "财务分摊明细扩展时间5",
+            "reachable": false,
+            "name": "财务分摊明细扩展时间5"
+        },
+        "allocationDetDefaultType": {
+            "meaning": "财务分摊明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "财务分摊明细智能节点主类型"
+        },
+        "allocationDetDeliveryDate": {
+            "meaning": "财务分摊明细交货日期",
+            "reachable": false,
+            "name": "财务分摊明细交货日期"
+        },
+        "allocationDetDescription": {
+            "meaning": "财务分摊明细描述",
+            "reachable": false,
+            "name": "财务分摊明细描述"
+        },
+        "allocationDetEndTime": {
+            "meaning": "财务分摊明细结束时间",
+            "reachable": false,
+            "name": "财务分摊明细结束时间"
+        },
+        "allocationDetEndTimeRequired": {
+            "meaning": "财务分摊明细最后需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细最后需时"
+        },
+        "allocationDetEngName": {
+            "meaning": "财务分摊明细英文名称",
+            "reachable": false,
+            "name": "财务分摊明细英文名称"
+        },
+        "allocationDetEquipmentId": {
+            "meaning": "财务分摊明细设备id",
+            "reachable": false,
+            "name": "财务分摊明细设备id"
+        },
+        "allocationDetExchangeRateId": {
+            "meaning": "财务分摊明细币种汇率id",
+            "reachable": false,
+            "name": "财务分摊明细币种汇率id"
+        },
+        "allocationDetExtension": {
+            "meaning": "财务分摊明细扩展数据",
+            "reachable": false,
+            "name": "财务分摊明细扩展数据"
+        },
+        "allocationDetExternalState": {
+            "meaning": "财务分摊明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "财务分摊明细上流程状态位"
+        },
+        "allocationDetFilterClazz": {
+            "meaning": "财务分摊明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "财务分摊明细冗余字段用于筛选"
+        },
+        "allocationDetFlags": {
+            "meaning": "财务分摊明细63位标志位",
+            "reachable": false,
+            "name": "财务分摊明细63位标志位"
+        },
+        "allocationDetFromAuditDate": {
+            "meaning": "allocationDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromBeginTime": {
+            "meaning": "allocationDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromCreateTime": {
+            "meaning": "allocationDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDateExtra1": {
+            "meaning": "allocationDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDateExtra2": {
+            "meaning": "allocationDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDateExtra3": {
+            "meaning": "allocationDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDateExtra4": {
+            "meaning": "allocationDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDateExtra5": {
+            "meaning": "allocationDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromDeliveryDate": {
+            "meaning": "allocationDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromEndTime": {
+            "meaning": "allocationDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromReceiptDate": {
+            "meaning": "allocationDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFromUpdateTime": {
+            "meaning": "allocationDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetFscType": {
+            "meaning": "财务分摊明细FSC声明",
+            "reachable": false,
+            "name": "财务分摊明细FSC声明"
+        },
+        "allocationDetGenerativePeople": {
+            "meaning": "财务分摊明细下发人",
+            "reachable": false,
+            "name": "财务分摊明细下发人"
+        },
+        "allocationDetGenerativeState": {
+            "meaning": "财务分摊明细下发状态",
+            "reachable": false,
+            "name": "财务分摊明细下发状态"
+        },
+        "allocationDetGroovyScript": {
+            "meaning": "财务分摊明细groovy脚本",
+            "reachable": false,
+            "name": "财务分摊明细groovy脚本"
+        },
+        "allocationDetGropeCode": {
+            "meaning": "财务分摊明细搜索码",
+            "reachable": false,
+            "name": "财务分摊明细搜索码"
+        },
+        "allocationDetId": {
+            "meaning": "财务分摊明细PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "财务分摊明细PK"
+        },
+        "allocationDetInUsed": {
+            "meaning": "财务分摊明细是否被使用",
+            "reachable": false,
+            "name": "财务分摊明细是否被使用"
+        },
+        "allocationDetInvTypeTaxRateId": {
+            "meaning": "财务分摊明细发票税率id",
+            "reachable": false,
+            "name": "财务分摊明细发票税率id"
+        },
+        "allocationDetIsBanned": {
+            "meaning": "财务分摊明细是否被禁用",
+            "reachable": false,
+            "name": "财务分摊明细是否被禁用"
+        },
+        "allocationDetIsDeleted": {
+            "meaning": "财务分摊明细是否被删除",
+            "reachable": false,
+            "name": "财务分摊明细是否被删除"
+        },
+        "allocationDetIsLeaf": {
+            "meaning": "财务分摊明细是否叶子节点",
+            "reachable": false,
+            "name": "财务分摊明细是否叶子节点"
+        },
+        "allocationDetIsMainFlow": {
+            "meaning": "财务分摊明细是否是主流程",
+            "reachable": false,
+            "name": "财务分摊明细是否是主流程"
+        },
+        "allocationDetIsManualModificationDate": {
+            "meaning": "财务分摊明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "财务分摊明细是否手动修改计划生产时间"
+        },
+        "allocationDetIsolation": {
+            "meaning": "财务分摊明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "财务分摊明细智能节点数据隔离标识"
+        },
+        "allocationDetJsScript": {
+            "meaning": "财务分摊明细js脚本",
+            "reachable": false,
+            "name": "财务分摊明细js脚本"
+        },
+        "allocationDetMaterialId": {
+            "meaning": "财务分摊明细物料id",
+            "reachable": false,
+            "name": "财务分摊明细物料id"
+        },
+        "allocationDetName": {
+            "meaning": "财务分摊明细智能节点名",
+            "reachable": false,
+            "name": "财务分摊明细智能节点名"
+        },
+        "allocationDetNameCodeSearch": {
+            "meaning": "财务分摊明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "财务分摊明细name、user"
+        },
+        "allocationDetNumberExtra1": {
+            "meaning": "财务分摊明细扩展数量1",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量1"
+        },
+        "allocationDetNumberExtra2": {
+            "meaning": "财务分摊明细扩展数量2",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量2"
+        },
+        "allocationDetNumberExtra3": {
+            "meaning": "财务分摊明细扩展数量3",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量3"
+        },
+        "allocationDetNumberExtra4": {
+            "meaning": "财务分摊明细扩展数量4",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量4"
+        },
+        "allocationDetNumberExtra5": {
+            "meaning": "财务分摊明细扩展数量5",
+            "reachable": false,
+            "name": "财务分摊明细扩展数量5"
+        },
+        "allocationDetParentId": {
+            "meaning": "财务分摊明细父节点ID",
+            "reachable": false,
+            "name": "财务分摊明细父节点ID"
+        },
+        "allocationDetPlannedOutputQuantity": {
+            "meaning": "财务分摊明细计划产出数量",
+            "reachable": false,
+            "name": "财务分摊明细计划产出数量"
+        },
+        "allocationDetPlannedTimeRequired": {
+            "meaning": "财务分摊明细计划需时(小时)",
+            "reachable": false,
+            "name": "财务分摊明细计划需时"
+        },
+        "allocationDetPrintTimes": {
+            "meaning": "财务分摊明细打印次数",
+            "reachable": false,
+            "name": "财务分摊明细打印次数"
+        },
+        "allocationDetPriority": {
+            "meaning": "财务分摊明细优先级",
+            "reachable": false,
+            "name": "财务分摊明细优先级"
+        },
+        "allocationDetProcessInstanceId": {
+            "meaning": "财务分摊明细流程实例ID",
+            "reachable": false,
+            "name": "财务分摊明细流程实例ID"
+        },
+        "allocationDetProductionProcessesTypeId": {
+            "meaning": "财务分摊明细工序类型ID",
+            "reachable": false,
+            "name": "财务分摊明细工序类型ID"
+        },
+        "allocationDetProductionShiftId": {
+            "meaning": "财务分摊明细生产班次ID",
+            "reachable": false,
+            "name": "财务分摊明细生产班次ID"
+        },
+        "allocationDetProportion": {
+            "meaning": "财务分摊明细分摊比例",
+            "reachable": false,
+            "name": "财务分摊明细分摊比例"
+        },
+        "allocationDetQuantity": {
+            "meaning": "财务分摊明细任务数量",
+            "reachable": false,
+            "name": "财务分摊明细任务数量"
+        },
+        "allocationDetReceiptDate": {
+            "meaning": "财务分摊明细单据日期",
+            "reachable": false,
+            "name": "财务分摊明细单据日期"
+        },
+        "allocationDetReceiptType": {
+            "meaning": "财务分摊明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "财务分摊明细单据类型"
+        },
+        "allocationDetRelatedTasksId": {
+            "meaning": "财务分摊明细关联任务id",
+            "reachable": false,
+            "name": "财务分摊明细关联任务id"
+        },
+        "allocationDetSerialNumber": {
+            "meaning": "财务分摊明细顺序号",
+            "reachable": false,
+            "name": "财务分摊明细顺序号"
+        },
+        "allocationDetSource": {
+            "meaning": "财务分摊来源源",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetSourceType": {
+            "meaning": "财务分摊明细来源类型",
+            "reachable": false,
+            "name": "财务分摊明细来源类型"
+        },
+        "allocationDetState": {
+            "meaning": "财务分摊明细通用状态",
+            "reachable": false,
+            "name": "财务分摊明细通用状态"
+        },
+        "allocationDetSystemCode": {
+            "meaning": "财务分摊明细系统编码",
+            "reachable": false,
+            "name": "财务分摊明细系统编码"
+        },
+        "allocationDetTarget": {
+            "meaning": "财务分摊明细目标",
+            "reachable": false,
+            "name": "财务分摊明细目标"
+        },
+        "allocationDetTaskNodeName": {
+            "meaning": "财务分摊明细任务节点名称",
+            "reachable": false,
+            "name": "财务分摊明细任务节点名称"
+        },
+        "allocationDetTenantId": {
+            "meaning": "财务分摊明细租户_id",
+            "reachable": false,
+            "name": "财务分摊明细租户_id"
+        },
+        "allocationDetThirdPartyClass": {
+            "meaning": "财务分摊明细第三方分类",
+            "reachable": false,
+            "name": "财务分摊明细第三方分类"
+        },
+        "allocationDetThirdPartyId": {
+            "meaning": "财务分摊明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "财务分摊明细第三方系统中的唯一ID"
+        },
+        "allocationDetThirdPartyName": {
+            "meaning": "财务分摊明细第三方名称",
+            "reachable": false,
+            "name": "财务分摊明细第三方名称"
+        },
+        "allocationDetToAuditDate": {
+            "meaning": "allocationDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToBeginTime": {
+            "meaning": "allocationDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToCreateTime": {
+            "meaning": "allocationDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDateExtra1": {
+            "meaning": "allocationDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDateExtra2": {
+            "meaning": "allocationDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDateExtra3": {
+            "meaning": "allocationDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDateExtra4": {
+            "meaning": "allocationDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDateExtra5": {
+            "meaning": "allocationDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToDeliveryDate": {
+            "meaning": "allocationDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToEndTime": {
+            "meaning": "allocationDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToReceiptDate": {
+            "meaning": "allocationDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetToUpdateTime": {
+            "meaning": "allocationDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "allocationDetUnitCode": {
+            "meaning": "财务分摊明细单位id",
+            "reachable": false,
+            "name": "财务分摊明细单位id"
+        },
+        "allocationDetUpdateTime": {
+            "meaning": "财务分摊明细更新时间",
+            "reachable": false,
+            "name": "财务分摊明细更新时间"
+        },
+        "allocationDetUpdater": {
+            "meaning": "财务分摊明细更新人",
+            "reachable": false,
+            "name": "财务分摊明细更新人"
+        },
+        "allocationDetUpdaterId": {
+            "meaning": "财务分摊明细更新人ID",
+            "reachable": false,
+            "name": "财务分摊明细更新人ID"
+        },
+        "allocationDetUserCode": {
+            "meaning": "财务分摊明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "财务分摊明细智能节点的唯一编码"
+        },
+        "allocationDetVarExtra1": {
+            "meaning": "财务分摊明细扩展1",
+            "reachable": false,
+            "name": "财务分摊明细扩展1"
+        },
+        "allocationDetVarExtra2": {
+            "meaning": "财务分摊明细扩展2",
+            "reachable": false,
+            "name": "财务分摊明细扩展2"
+        },
+        "allocationDetVarExtra3": {
+            "meaning": "财务分摊明细扩展3",
+            "reachable": false,
+            "name": "财务分摊明细扩展3"
+        },
+        "allocationDetVarExtra4": {
+            "meaning": "财务分摊明细扩展4",
+            "reachable": false,
+            "name": "财务分摊明细扩展4"
+        },
+        "allocationDetVarExtra5": {
+            "meaning": "财务分摊明细扩展5",
+            "reachable": false,
+            "name": "财务分摊明细扩展5"
+        },
+        "allocationDetVersion": {
+            "meaning": "财务分摊明细版本号",
+            "reachable": false,
+            "name": "财务分摊明细版本号"
+        },
+        "llocationDetAllocationDetSourceIsManualModificationDate": {
+            "meaning": "财务分摊明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "财务分摊明细是否手动修改计划生产时间"
+        },
+        "locationDetAllocationDetSourceProductionProcessesTypeId": {
+            "meaning": "财务分摊明细工序类型ID",
+            "reachable": false,
+            "name": "财务分摊明细工序类型ID"
+        }
+    }
+}

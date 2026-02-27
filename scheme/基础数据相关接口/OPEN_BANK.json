@@ -1,0 +1,386 @@
+{
+    "api_name": "/open-bank/findList",
+    "table_name": "开户行",
+    "request": {
+        "openBankClazz": "OPEN_BANK"
+    },
+    "mainTabClazz": "OPEN_BANK",
+    "response": {
+        "openBankAccount": {
+            "meaning": "开户行账号",
+            "reachable": false,
+            "name": "开户行账号"
+        },
+        "openBankApplicationId": {
+            "meaning": "开户行应用ID",
+            "reachable": false,
+            "name": "开户行应用ID"
+        },
+        "openBankAuditDate": {
+            "meaning": "开户行审核时间",
+            "reachable": false,
+            "name": "开户行审核时间"
+        },
+        "openBankAuditStatus": {
+            "meaning": "开户行审核状态",
+            "reachable": false,
+            "name": "开户行审核状态"
+        },
+        "openBankBizVersion": {
+            "meaning": "开户行业务自定义版本号",
+            "reachable": false,
+            "name": "开户行业务自定义版本号"
+        },
+        "openBankBriefName": {
+            "meaning": "开户行简称",
+            "reachable": false,
+            "name": "开户行简称"
+        },
+        "openBankBusDivisId": {
+            "meaning": "开户行事业部id",
+            "reachable": false,
+            "name": "开户行事业部id"
+        },
+        "openBankClazz": {
+            "meaning": "开户行子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "开户行子类"
+        },
+        "openBankComment": {
+            "meaning": "开户行评论",
+            "reachable": false,
+            "name": "开户行评论"
+        },
+        "openBankCreateTime": {
+            "meaning": "开户行创建时间",
+            "reachable": false,
+            "name": "开户行创建时间"
+        },
+        "openBankCreator": {
+            "meaning": "开户行创建人",
+            "reachable": false,
+            "name": "开户行创建人"
+        },
+        "openBankCreatorId": {
+            "meaning": "开户行创建人ID",
+            "reachable": false,
+            "name": "开户行创建人ID"
+        },
+        "openBankDateExtra1": {
+            "meaning": "开户行扩展时间1",
+            "reachable": false,
+            "name": "开户行扩展时间1"
+        },
+        "openBankDateExtra2": {
+            "meaning": "开户行扩展时间2",
+            "reachable": false,
+            "name": "开户行扩展时间2"
+        },
+        "openBankDateExtra3": {
+            "meaning": "开户行扩展时间3",
+            "reachable": false,
+            "name": "开户行扩展时间3"
+        },
+        "openBankDateExtra4": {
+            "meaning": "开户行扩展时间4",
+            "reachable": false,
+            "name": "开户行扩展时间4"
+        },
+        "openBankDateExtra5": {
+            "meaning": "开户行扩展时间5",
+            "reachable": false,
+            "name": "开户行扩展时间5"
+        },
+        "openBankDefaultType": {
+            "meaning": "开户行智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "开户行智能节点主类型"
+        },
+        "openBankDescription": {
+            "meaning": "开户行描述",
+            "reachable": false,
+            "name": "开户行描述"
+        },
+        "openBankEngName": {
+            "meaning": "开户行英文名称",
+            "reachable": false,
+            "name": "开户行英文名称"
+        },
+        "openBankExtension": {
+            "meaning": "开户行扩展数据",
+            "reachable": false,
+            "name": "开户行扩展数据"
+        },
+        "openBankExternalState": {
+            "meaning": "开户行上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "开户行上流程状态位"
+        },
+        "openBankFlags": {
+            "meaning": "开户行63位标志位",
+            "reachable": false,
+            "name": "开户行63位标志位"
+        },
+        "openBankFromAuditDate": {
+            "meaning": "openBankFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromCreateTime": {
+            "meaning": "openBankFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromDateExtra1": {
+            "meaning": "openBankFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromDateExtra2": {
+            "meaning": "openBankFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromDateExtra3": {
+            "meaning": "openBankFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromDateExtra4": {
+            "meaning": "openBankFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromDateExtra5": {
+            "meaning": "openBankFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankFromUpdateTime": {
+            "meaning": "openBankFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankGroovyScript": {
+            "meaning": "开户行groovy脚本",
+            "reachable": false,
+            "name": "开户行groovy脚本"
+        },
+        "openBankGropeCode": {
+            "meaning": "开户行搜索码",
+            "reachable": false,
+            "name": "开户行搜索码"
+        },
+        "openBankId": {
+            "meaning": "开户行主键ID",
+            "is_primary": true,
+            "reachable": false,
+            "name": "开户行主键ID"
+        },
+        "openBankIdList": {
+            "meaning": "openBankIdList",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankInUsed": {
+            "meaning": "开户行是否被使用",
+            "reachable": false,
+            "name": "开户行是否被使用"
+        },
+        "openBankIsBanned": {
+            "meaning": "开户行是否被禁用",
+            "reachable": false,
+            "name": "开户行是否被禁用"
+        },
+        "openBankIsDeleted": {
+            "meaning": "开户行是否被删除",
+            "reachable": false,
+            "name": "开户行是否被删除"
+        },
+        "openBankIsMainFlow": {
+            "meaning": "开户行是否是主流程",
+            "reachable": false,
+            "name": "开户行是否是主流程"
+        },
+        "openBankIsolation": {
+            "meaning": "开户行智能节点数据隔离标识",
+            "reachable": false,
+            "name": "开户行智能节点数据隔离标识"
+        },
+        "openBankJsScript": {
+            "meaning": "开户行js脚本",
+            "reachable": false,
+            "name": "开户行js脚本"
+        },
+        "openBankName": {
+            "meaning": "开户行智能节点名",
+            "reachable": false,
+            "name": "开户行智能节点名"
+        },
+        "openBankNameCodeSearch": {
+            "meaning": "开户行name、user_code模糊搜索",
+            "reachable": false,
+            "name": "开户行name、user_code模糊搜索"
+        },
+        "openBankNumberExtra1": {
+            "meaning": "开户行扩展数量1",
+            "reachable": false,
+            "name": "开户行扩展数量1"
+        },
+        "openBankNumberExtra2": {
+            "meaning": "开户行扩展数量2",
+            "reachable": false,
+            "name": "开户行扩展数量2"
+        },
+        "openBankNumberExtra3": {
+            "meaning": "开户行扩展数量3",
+            "reachable": false,
+            "name": "开户行扩展数量3"
+        },
+        "openBankNumberExtra4": {
+            "meaning": "开户行扩展数量4",
+            "reachable": false,
+            "name": "开户行扩展数量4"
+        },
+        "openBankNumberExtra5": {
+            "meaning": "开户行扩展数量5",
+            "reachable": false,
+            "name": "开户行扩展数量5"
+        },
+        "openBankParentId": {
+            "meaning": "开户行父节点ID",
+            "reachable": false,
+            "name": "开户行父节点ID"
+        },
+        "openBankProcessInstanceId": {
+            "meaning": "开户行流程实例ID",
+            "reachable": false,
+            "name": "开户行流程实例ID"
+        },
+        "openBankSerialNumber": {
+            "meaning": "开户行顺序号",
+            "reachable": false,
+            "name": "开户行顺序号"
+        },
+        "openBankState": {
+            "meaning": "开户行通用状态",
+            "reachable": false,
+            "name": "开户行通用状态"
+        },
+        "openBankSystemCode": {
+            "meaning": "开户行系统编码",
+            "reachable": false,
+            "name": "开户行系统编码"
+        },
+        "openBankTaskNodeName": {
+            "meaning": "开户行任务节点名称",
+            "reachable": false,
+            "name": "开户行任务节点名称"
+        },
+        "openBankThirdPartyClass": {
+            "meaning": "开户行第三方分类",
+            "reachable": false,
+            "name": "开户行第三方分类"
+        },
+        "openBankThirdPartyId": {
+            "meaning": "开户行第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "开户行第三方系统中的唯一ID"
+        },
+        "openBankThirdPartyName": {
+            "meaning": "开户行第三方名称",
+            "reachable": false,
+            "name": "开户行第三方名称"
+        },
+        "openBankToAuditDate": {
+            "meaning": "openBankToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToCreateTime": {
+            "meaning": "openBankToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToDateExtra1": {
+            "meaning": "openBankToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToDateExtra2": {
+            "meaning": "openBankToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToDateExtra3": {
+            "meaning": "openBankToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToDateExtra4": {
+            "meaning": "openBankToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToDateExtra5": {
+            "meaning": "openBankToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankToUpdateTime": {
+            "meaning": "openBankToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "openBankUpdateTime": {
+            "meaning": "开户行更新时间",
+            "reachable": false,
+            "name": "开户行更新时间"
+        },
+        "openBankUpdater": {
+            "meaning": "开户行更新人",
+            "reachable": false,
+            "name": "开户行更新人"
+        },
+        "openBankUpdaterId": {
+            "meaning": "开户行更新人ID",
+            "reachable": false,
+            "name": "开户行更新人ID"
+        },
+        "openBankUserCode": {
+            "meaning": "开户行智能节点的唯一编码",
+            "reachable": false,
+            "name": "开户行智能节点的唯一编码"
+        },
+        "openBankVarExtra1": {
+            "meaning": "开户行扩展1",
+            "reachable": false,
+            "name": "开户行扩展1"
+        },
+        "openBankVarExtra2": {
+            "meaning": "开户行扩展2",
+            "reachable": false,
+            "name": "开户行扩展2"
+        },
+        "openBankVarExtra3": {
+            "meaning": "开户行扩展3",
+            "reachable": false,
+            "name": "开户行扩展3"
+        },
+        "openBankVarExtra4": {
+            "meaning": "开户行扩展4",
+            "reachable": false,
+            "name": "开户行扩展4"
+        },
+        "openBankVarExtra5": {
+            "meaning": "开户行扩展5",
+            "reachable": false,
+            "name": "开户行扩展5"
+        },
+        "openBankVersion": {
+            "meaning": "开户行版本号",
+            "reachable": false,
+            "name": "开户行版本号"
+        }
+    }
+}

@@ -23,9 +23,7 @@ def find_all_staff_test(access_token: str):  # 定义测试函数
         "groupDefaultType": "TEAM",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
 
     # 定义需要保留的字段列表
@@ -71,9 +69,7 @@ def find_department_test(access_token: str):  # 定义测试函数
         "groupDefaultType": "DEPARTMENT",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
 
     # 定义需要保留的字段列表
@@ -111,9 +107,7 @@ def find_role_test(access_token: str):  # 定义测试函数
         "roleDefaultType": "POST",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
 
     # 定义需要保留的字段列表

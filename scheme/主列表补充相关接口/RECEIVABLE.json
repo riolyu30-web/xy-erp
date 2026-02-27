@@ -1,0 +1,711 @@
+{
+    "api_name": "/receivable/findList",
+    "table_name": "应收账单",
+    "request": {
+        "receivableClazz": "RECEIVABLE"
+    },
+    "mainTabClazz": "RECEIVABLE",
+    "response": {
+        "receivableActualTimeRequired": {
+            "meaning": "应收账单实际需时(小时)",
+            "reachable": true,
+            "name": "应收账单实际需时"
+        },
+        "receivableAdjustmentTimeRequired": {
+            "meaning": "应收账单调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "应收账单调整需时"
+        },
+        "receivableApplicationId": {
+            "meaning": "应收账单应用ID",
+            "reachable": true,
+            "name": "应收账单应用ID"
+        },
+        "receivableAuditDate": {
+            "meaning": "应收账单审核时间",
+            "reachable": true,
+            "name": "应收账单审核时间"
+        },
+        "receivableAuditStatus": {
+            "meaning": "应收账单审核状态",
+            "reachable": true,
+            "name": "应收账单审核状态"
+        },
+        "receivableAvailableScheduleId": {
+            "meaning": "应收账单可用日程id",
+            "reachable": true,
+            "name": "应收账单可用日程id"
+        },
+        "receivableBank": {
+            "meaning": "应收账单开户行",
+            "reachable": true,
+            "name": "应收账单开户行"
+        },
+        "receivableBankAccount": {
+            "meaning": "应收账单银行账号",
+            "reachable": true,
+            "name": "应收账单银行账号"
+        },
+        "receivableBeginTime": {
+            "meaning": "应收账单开始时间",
+            "reachable": true,
+            "name": "应收账单开始时间"
+        },
+        "receivableBizVersion": {
+            "meaning": "应收账单业务自定义版本号",
+            "reachable": true,
+            "name": "应收账单业务自定义版本号"
+        },
+        "receivableBriefName": {
+            "meaning": "应收账单简称",
+            "reachable": true,
+            "name": "应收账单简称"
+        },
+        "receivableBusDivisId": {
+            "meaning": "应收账单事业部id",
+            "reachable": true,
+            "name": "应收账单事业部id"
+        },
+        "receivableClazz": {
+            "meaning": "应收账单子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "应收账单子类"
+        },
+        "receivableClosedReason": {
+            "meaning": "应收账单结案原因",
+            "reachable": true,
+            "name": "应收账单结案原因"
+        },
+        "receivableClosedStatus": {
+            "meaning": "应收账单结案状态",
+            "reachable": true,
+            "name": "应收账单结案状态"
+        },
+        "receivableComment": {
+            "meaning": "应收账单评论",
+            "reachable": true,
+            "name": "应收账单评论"
+        },
+        "receivableCompleteQuantity": {
+            "meaning": "应收账单完成数量",
+            "reachable": true,
+            "name": "应收账单完成数量"
+        },
+        "receivableCompleteStatus": {
+            "meaning": "应收账单完成状态",
+            "reachable": true,
+            "name": "应收账单完成状态"
+        },
+        "receivableCorpBank": {
+            "meaning": "应收账单我司银行",
+            "reachable": true,
+            "name": "应收账单我司银行"
+        },
+        "receivableCorpBankAccount": {
+            "meaning": "应收账单我司银行账号",
+            "reachable": true,
+            "name": "应收账单我司银行账号"
+        },
+        "receivableCreateTime": {
+            "meaning": "应收账单创建时间",
+            "reachable": true,
+            "name": "应收账单创建时间"
+        },
+        "receivableCreator": {
+            "meaning": "应收账单创建人",
+            "reachable": true,
+            "name": "应收账单创建人"
+        },
+        "receivableCreatorId": {
+            "meaning": "应收账单创建人ID",
+            "reachable": true,
+            "name": "应收账单创建人ID"
+        },
+        "receivableCurrency": {
+            "meaning": "应收账单币种",
+            "reachable": true,
+            "name": "应收账单币种"
+        },
+        "receivableCustomerId": {
+            "meaning": "应收账单客户ID",
+            "reachable": true,
+            "name": "应收账单客户ID"
+        },
+        "receivableDateExtra1": {
+            "meaning": "应收账单扩展时间1",
+            "reachable": true,
+            "name": "应收账单扩展时间1"
+        },
+        "receivableDateExtra2": {
+            "meaning": "应收账单扩展时间2",
+            "reachable": true,
+            "name": "应收账单扩展时间2"
+        },
+        "receivableDateExtra3": {
+            "meaning": "应收账单扩展时间3",
+            "reachable": true,
+            "name": "应收账单扩展时间3"
+        },
+        "receivableDateExtra4": {
+            "meaning": "应收账单扩展时间4",
+            "reachable": true,
+            "name": "应收账单扩展时间4"
+        },
+        "receivableDateExtra5": {
+            "meaning": "应收账单扩展时间5",
+            "reachable": true,
+            "name": "应收账单扩展时间5"
+        },
+        "receivableDefaultType": {
+            "meaning": "应收账单智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "应收账单智能节点主类型"
+        },
+        "receivableDeliveryDate": {
+            "meaning": "应收账单交货日期",
+            "reachable": true,
+            "name": "应收账单交货日期"
+        },
+        "receivableDescription": {
+            "meaning": "应收账单描述",
+            "reachable": true,
+            "name": "应收账单描述"
+        },
+        "receivableEndTime": {
+            "meaning": "应收账单结束时间",
+            "reachable": true,
+            "name": "应收账单结束时间"
+        },
+        "receivableEndTimeRequired": {
+            "meaning": "应收账单最后需时(小时)",
+            "reachable": true,
+            "name": "应收账单最后需时"
+        },
+        "receivableEngName": {
+            "meaning": "应收账单英文名称",
+            "reachable": true,
+            "name": "应收账单英文名称"
+        },
+        "receivableEquipmentId": {
+            "meaning": "应收账单设备id",
+            "reachable": true,
+            "name": "应收账单设备id"
+        },
+        "receivableExchangeRateId": {
+            "meaning": "应收账单币种汇率id",
+            "reachable": true,
+            "name": "应收账单币种汇率id"
+        },
+        "receivableExtension": {
+            "meaning": "应收账单扩展数据",
+            "reachable": true,
+            "name": "应收账单扩展数据"
+        },
+        "receivableExternalState": {
+            "meaning": "应收账单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "应收账单上流程状态位"
+        },
+        "receivableFilterClazz": {
+            "meaning": "应收账单冗余字段用于筛选",
+            "reachable": false,
+            "name": "应收账单冗余字段用于筛选"
+        },
+        "receivableFlags": {
+            "meaning": "应收账单63位标志位",
+            "reachable": true,
+            "name": "应收账单63位标志位"
+        },
+        "receivableFromAuditDate": {
+            "meaning": "receivableFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromBeginTime": {
+            "meaning": "receivableFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromCreateTime": {
+            "meaning": "receivableFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDateExtra1": {
+            "meaning": "receivableFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDateExtra2": {
+            "meaning": "receivableFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDateExtra3": {
+            "meaning": "receivableFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDateExtra4": {
+            "meaning": "receivableFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDateExtra5": {
+            "meaning": "receivableFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromDeliveryDate": {
+            "meaning": "receivableFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromEndTime": {
+            "meaning": "receivableFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromReceiptDate": {
+            "meaning": "receivableFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFromUpdateTime": {
+            "meaning": "receivableFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableFscType": {
+            "meaning": "应收账单FSC声明",
+            "reachable": true,
+            "name": "应收账单FSC声明"
+        },
+        "receivableGenerativePeople": {
+            "meaning": "应收账单下发人",
+            "reachable": true,
+            "name": "应收账单下发人"
+        },
+        "receivableGenerativeState": {
+            "meaning": "应收账单下发状态",
+            "reachable": true,
+            "name": "应收账单下发状态"
+        },
+        "receivableGroovyScript": {
+            "meaning": "应收账单groovy脚本",
+            "reachable": true,
+            "name": "应收账单groovy脚本"
+        },
+        "receivableGropeCode": {
+            "meaning": "应收账单搜索码",
+            "reachable": true,
+            "name": "应收账单搜索码"
+        },
+        "receivableId": {
+            "meaning": "应收账单PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "应收账单PK"
+        },
+        "receivableInUsed": {
+            "meaning": "应收账单是否被使用",
+            "reachable": true,
+            "name": "应收账单是否被使用"
+        },
+        "receivableInvTypeTaxRateId": {
+            "meaning": "应收账单发票税率id",
+            "reachable": true,
+            "name": "应收账单发票税率id"
+        },
+        "receivableIsBanned": {
+            "meaning": "应收账单是否被禁用",
+            "reachable": true,
+            "name": "应收账单是否被禁用"
+        },
+        "receivableIsDeleted": {
+            "meaning": "应收账单是否被删除",
+            "reachable": true,
+            "name": "应收账单是否被删除"
+        },
+        "receivableIsLeaf": {
+            "meaning": "应收账单是否叶子节点",
+            "reachable": true,
+            "name": "应收账单是否叶子节点"
+        },
+        "receivableIsMainFlow": {
+            "meaning": "应收账单是否是主流程",
+            "reachable": true,
+            "name": "应收账单是否是主流程"
+        },
+        "receivableIsManualModificationDate": {
+            "meaning": "应收账单是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "应收账单是否手动修改计划生产时间"
+        },
+        "receivableIsolation": {
+            "meaning": "应收账单智能节点数据隔离标识",
+            "reachable": true,
+            "name": "应收账单智能节点数据隔离标识"
+        },
+        "receivableJsScript": {
+            "meaning": "应收账单js脚本",
+            "reachable": true,
+            "name": "应收账单js脚本"
+        },
+        "receivableLocCompleteQuantity": {
+            "meaning": "应收账单本币完成数量（本币已结算金额）",
+            "reachable": true,
+            "name": "应收账单本币完成数量"
+        },
+        "receivableLocTotalActAmount": {
+            "meaning": "应收账单本币总实收/付金额",
+            "reachable": true,
+            "name": "应收账单本币总实收/付金额"
+        },
+        "receivableLocTotalActDiffAmount": {
+            "meaning": "应收账单本币总实收/付差额",
+            "reachable": true,
+            "name": "应收账单本币总实收/付差额"
+        },
+        "receivableLocTotalAdvOffAmount": {
+            "meaning": "应收账单本币总预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单本币总预收/付冲抵金额"
+        },
+        "receivableLocTotalAmount": {
+            "meaning": "应收账单本币总应收/付金额",
+            "reachable": true,
+            "name": "应收账单本币总应收/付金额"
+        },
+        "receivableLocTotalInvoicedAmount": {
+            "meaning": "应收账单本币总开票金额",
+            "reachable": true,
+            "name": "应收账单本币总开票金额"
+        },
+        "receivableLocTotalOffActAmount": {
+            "meaning": "应收账单本币总冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单本币总冲抵后实收/付金额"
+        },
+        "receivableLocTotalOffActDiffAmount": {
+            "meaning": "应收账单本币总冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单本币总冲抵后实收/付差额"
+        },
+        "receivableLocTotalOtherExpense": {
+            "meaning": "应收账单本币总其他费用",
+            "reachable": true,
+            "name": "应收账单本币总其他费用"
+        },
+        "receivableMaterialId": {
+            "meaning": "应收账单物料id",
+            "reachable": true,
+            "name": "应收账单物料id"
+        },
+        "receivableName": {
+            "meaning": "应收账单智能节点名",
+            "reachable": true,
+            "name": "应收账单智能节点名"
+        },
+        "receivableNameCodeSearch": {
+            "meaning": "应收账单name、user_code模糊搜索",
+            "reachable": true,
+            "name": "应收账单name、user_code模糊搜索"
+        },
+        "receivableNumberExtra1": {
+            "meaning": "应收账单扩展数量1",
+            "reachable": true,
+            "name": "应收账单扩展数量1"
+        },
+        "receivableNumberExtra2": {
+            "meaning": "应收账单扩展数量2",
+            "reachable": true,
+            "name": "应收账单扩展数量2"
+        },
+        "receivableNumberExtra3": {
+            "meaning": "应收账单扩展数量3",
+            "reachable": true,
+            "name": "应收账单扩展数量3"
+        },
+        "receivableNumberExtra4": {
+            "meaning": "应收账单扩展数量4",
+            "reachable": true,
+            "name": "应收账单扩展数量4"
+        },
+        "receivableNumberExtra5": {
+            "meaning": "应收账单扩展数量5",
+            "reachable": true,
+            "name": "应收账单扩展数量5"
+        },
+        "receivableParentId": {
+            "meaning": "应收账单父节点ID",
+            "reachable": true,
+            "name": "应收账单父节点ID"
+        },
+        "receivablePlannedOutputQuantity": {
+            "meaning": "应收账单计划产出数量",
+            "reachable": true,
+            "name": "应收账单计划产出数量"
+        },
+        "receivablePlannedTimeRequired": {
+            "meaning": "应收账单计划需时(小时)",
+            "reachable": true,
+            "name": "应收账单计划需时"
+        },
+        "receivablePrintTimes": {
+            "meaning": "应收账单打印次数",
+            "reachable": true,
+            "name": "应收账单打印次数"
+        },
+        "receivablePriority": {
+            "meaning": "应收账单优先级",
+            "reachable": true,
+            "name": "应收账单优先级"
+        },
+        "receivableProcessInstanceId": {
+            "meaning": "应收账单流程实例ID",
+            "reachable": true,
+            "name": "应收账单流程实例ID"
+        },
+        "receivableProductionProcessesTypeId": {
+            "meaning": "应收账单工序类型ID",
+            "reachable": true,
+            "name": "应收账单工序类型ID"
+        },
+        "receivableProductionShiftId": {
+            "meaning": "应收账单生产班次ID",
+            "reachable": true,
+            "name": "应收账单生产班次ID"
+        },
+        "receivableQuantity": {
+            "meaning": "应收账单任务数量",
+            "reachable": true,
+            "name": "应收账单任务数量"
+        },
+        "receivableReceiptDate": {
+            "meaning": "应收账单单据日期",
+            "reachable": true,
+            "name": "应收账单单据日期"
+        },
+        "receivableReceiptType": {
+            "meaning": "应收账单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "应收账单单据类型"
+        },
+        "receivableRelatedTasksId": {
+            "meaning": "应收账单关联任务id",
+            "reachable": true,
+            "name": "应收账单关联任务id"
+        },
+        "receivableSerialNumber": {
+            "meaning": "应收账单顺序号",
+            "reachable": true,
+            "name": "应收账单顺序号"
+        },
+        "receivableSource": {
+            "meaning": "应收账单源",
+            "reachable": true,
+            "name": "应收账单源"
+        },
+        "receivableSourceType": {
+            "meaning": "应收账单来源类型",
+            "reachable": true,
+            "name": "应收账单来源类型"
+        },
+        "receivableState": {
+            "meaning": "应收账单通用状态",
+            "reachable": true,
+            "name": "应收账单通用状态"
+        },
+        "receivableSystemCode": {
+            "meaning": "应收账单系统编码",
+            "reachable": true,
+            "name": "应收账单系统编码"
+        },
+        "receivableTarget": {
+            "meaning": "应收账单目标",
+            "reachable": true,
+            "name": "应收账单目标"
+        },
+        "receivableTaskNodeName": {
+            "meaning": "应收账单任务节点名称",
+            "reachable": true,
+            "name": "应收账单任务节点名称"
+        },
+        "receivableTenantId": {
+            "meaning": "应收账单租户ID",
+            "reachable": true,
+            "name": "应收账单租户ID"
+        },
+        "receivableThirdPartyClass": {
+            "meaning": "应收账单第三方分类",
+            "reachable": true,
+            "name": "应收账单第三方分类"
+        },
+        "receivableThirdPartyId": {
+            "meaning": "应收账单第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "应收账单第三方系统中的唯一ID"
+        },
+        "receivableThirdPartyName": {
+            "meaning": "应收账单第三方名称",
+            "reachable": true,
+            "name": "应收账单第三方名称"
+        },
+        "receivableToAuditDate": {
+            "meaning": "receivableToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToBeginTime": {
+            "meaning": "receivableToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToCreateTime": {
+            "meaning": "receivableToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDateExtra1": {
+            "meaning": "receivableToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDateExtra2": {
+            "meaning": "receivableToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDateExtra3": {
+            "meaning": "receivableToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDateExtra4": {
+            "meaning": "receivableToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDateExtra5": {
+            "meaning": "receivableToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToDeliveryDate": {
+            "meaning": "receivableToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToEndTime": {
+            "meaning": "receivableToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToReceiptDate": {
+            "meaning": "receivableToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableToUpdateTime": {
+            "meaning": "receivableToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "receivableTotalActAmount": {
+            "meaning": "应收账单总实收/付金额",
+            "reachable": true,
+            "name": "应收账单总实收/付金额"
+        },
+        "receivableTotalActDiffAmount": {
+            "meaning": "应收账单总实收/付差额",
+            "reachable": true,
+            "name": "应收账单总实收/付差额"
+        },
+        "receivableTotalAdvOffAmount": {
+            "meaning": "应收账单总预收/付冲抵金额",
+            "reachable": true,
+            "name": "应收账单总预收/付冲抵金额"
+        },
+        "receivableTotalAmount": {
+            "meaning": "应收账单总应收/付金额",
+            "reachable": true,
+            "name": "应收账单总应收/付金额"
+        },
+        "receivableTotalInvoicedAmount": {
+            "meaning": "应收账单总开票金额",
+            "reachable": true,
+            "name": "应收账单总开票金额"
+        },
+        "receivableTotalOffActAmount": {
+            "meaning": "应收账单总冲抵后实收/付金额",
+            "reachable": true,
+            "name": "应收账单总冲抵后实收/付金额"
+        },
+        "receivableTotalOffActDiffAmount": {
+            "meaning": "应收账单总冲抵后实收/付差额",
+            "reachable": true,
+            "name": "应收账单总冲抵后实收/付差额"
+        },
+        "receivableTotalOtherExpense": {
+            "meaning": "应收账单总其他费用",
+            "reachable": true,
+            "name": "应收账单总其他费用"
+        },
+        "receivableUnitCode": {
+            "meaning": "应收账单单位id",
+            "reachable": true,
+            "name": "应收账单单位id"
+        },
+        "receivableUpdateTime": {
+            "meaning": "应收账单更新时间",
+            "reachable": true,
+            "name": "应收账单更新时间"
+        },
+        "receivableUpdater": {
+            "meaning": "应收账单更新人",
+            "reachable": true,
+            "name": "应收账单更新人"
+        },
+        "receivableUpdaterId": {
+            "meaning": "应收账单更新人ID",
+            "reachable": true,
+            "name": "应收账单更新人ID"
+        },
+        "receivableUserCode": {
+            "meaning": "应收账单智能节点的唯一编码",
+            "reachable": true,
+            "name": "应收账单智能节点的唯一编码"
+        },
+        "receivableVarExtra1": {
+            "meaning": "应收账单扩展1",
+            "reachable": true,
+            "name": "应收账单扩展1"
+        },
+        "receivableVarExtra2": {
+            "meaning": "应收账单扩展2",
+            "reachable": true,
+            "name": "应收账单扩展2"
+        },
+        "receivableVarExtra3": {
+            "meaning": "应收账单扩展3",
+            "reachable": true,
+            "name": "应收账单扩展3"
+        },
+        "receivableVarExtra4": {
+            "meaning": "应收账单扩展4",
+            "reachable": true,
+            "name": "应收账单扩展4"
+        },
+        "receivableVarExtra5": {
+            "meaning": "应收账单扩展5",
+            "reachable": true,
+            "name": "应收账单扩展5"
+        },
+        "receivableVersion": {
+            "meaning": "应收账单版本号",
+            "reachable": true,
+            "name": "应收账单版本号"
+        }
+    }
+}

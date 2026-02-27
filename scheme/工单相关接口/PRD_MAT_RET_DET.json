@@ -1,0 +1,1292 @@
+{
+    "api_name": "/prd-mat-ret-det/findList",
+    "table_name": "生产退料明细表",
+    "request": {
+        "prdMatRetDetPrdMatRetClazz": "PRD_MAT_RET",
+        "prdMatRetDetClazz": "PRD_MAT_RET_DET"
+    },
+    "mainTabClazz": "PRD_MAT_RET_DET",
+    "response": {
+        "prdMatRetDetActualTimeRequired": {
+            "meaning": "生产退料明细表实际需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表实际需时"
+        },
+        "prdMatRetDetAdjustmentTimeRequired": {
+            "meaning": "生产退料明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "生产退料明细表调整需时"
+        },
+        "prdMatRetDetApplicationId": {
+            "meaning": "生产退料明细表应用ID",
+            "reachable": true,
+            "name": "生产退料明细表应用ID"
+        },
+        "prdMatRetDetAuditDate": {
+            "meaning": "生产退料明细表审核时间",
+            "reachable": true,
+            "name": "生产退料明细表审核时间"
+        },
+        "prdMatRetDetAuditStatus": {
+            "meaning": "生产退料明细表审核状态",
+            "reachable": true,
+            "name": "生产退料明细表审核状态"
+        },
+        "prdMatRetDetAvailableScheduleId": {
+            "meaning": "生产退料明细表可用日程id",
+            "reachable": true,
+            "name": "生产退料明细表可用日程id"
+        },
+        "prdMatRetDetBeginTime": {
+            "meaning": "生产退料明细表开始时间",
+            "reachable": true,
+            "name": "生产退料明细表开始时间"
+        },
+        "prdMatRetDetBizVersion": {
+            "meaning": "生产退料明细表业务自定义版本号",
+            "reachable": true,
+            "name": "生产退料明细表业务自定义版本号"
+        },
+        "prdMatRetDetBomNodeId": {
+            "meaning": "生产退料明细表工单id",
+            "reachable": true,
+            "name": "生产退料明细表工单id"
+        },
+        "prdMatRetDetBriefName": {
+            "meaning": "生产退料明细表简称",
+            "reachable": true,
+            "name": "生产退料明细表简称"
+        },
+        "prdMatRetDetBusDivisId": {
+            "meaning": "生产退料明细表事业部id",
+            "reachable": true,
+            "name": "生产退料明细表事业部id"
+        },
+        "prdMatRetDetClazz": {
+            "meaning": "生产退料明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "生产退料明细表子类"
+        },
+        "prdMatRetDetClosedReason": {
+            "meaning": "生产退料明细表结案原因",
+            "reachable": true,
+            "name": "生产退料明细表结案原因"
+        },
+        "prdMatRetDetClosedStatus": {
+            "meaning": "生产退料明细表结案状态",
+            "reachable": true,
+            "name": "生产退料明细表结案状态"
+        },
+        "prdMatRetDetComment": {
+            "meaning": "生产退料明细表评论",
+            "reachable": true,
+            "name": "生产退料明细表评论"
+        },
+        "prdMatRetDetCompleteQuantity": {
+            "meaning": "生产退料明细表完成数量",
+            "reachable": true,
+            "name": "生产退料明细表完成数量"
+        },
+        "prdMatRetDetCompleteStatus": {
+            "meaning": "生产退料明细表完成状态",
+            "reachable": true,
+            "name": "生产退料明细表完成状态"
+        },
+        "prdMatRetDetCreateTime": {
+            "meaning": "生产退料明细表创建时间",
+            "reachable": true,
+            "name": "生产退料明细表创建时间"
+        },
+        "prdMatRetDetCreator": {
+            "meaning": "生产退料明细表创建人",
+            "reachable": true,
+            "name": "生产退料明细表创建人"
+        },
+        "prdMatRetDetCreatorId": {
+            "meaning": "生产退料明细表创建人ID",
+            "reachable": true,
+            "name": "生产退料明细表创建人ID"
+        },
+        "prdMatRetDetDateExtra1": {
+            "meaning": "生产退料明细表扩展时间1",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间1"
+        },
+        "prdMatRetDetDateExtra2": {
+            "meaning": "生产退料明细表扩展时间2",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间2"
+        },
+        "prdMatRetDetDateExtra3": {
+            "meaning": "生产退料明细表扩展时间3",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间3"
+        },
+        "prdMatRetDetDateExtra4": {
+            "meaning": "生产退料明细表扩展时间4",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间4"
+        },
+        "prdMatRetDetDateExtra5": {
+            "meaning": "生产退料明细表扩展时间5",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间5"
+        },
+        "prdMatRetDetDefaultType": {
+            "meaning": "生产退料明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "生产退料明细表智能节点主类型"
+        },
+        "prdMatRetDetDeliveryDate": {
+            "meaning": "生产退料明细表交货日期",
+            "reachable": true,
+            "name": "生产退料明细表交货日期"
+        },
+        "prdMatRetDetDescription": {
+            "meaning": "生产退料明细表描述",
+            "reachable": true,
+            "name": "生产退料明细表描述"
+        },
+        "prdMatRetDetEndTime": {
+            "meaning": "生产退料明细表结束时间",
+            "reachable": true,
+            "name": "生产退料明细表结束时间"
+        },
+        "prdMatRetDetEndTimeRequired": {
+            "meaning": "生产退料明细表最后需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表最后需时"
+        },
+        "prdMatRetDetEngName": {
+            "meaning": "生产退料明细表英文名称",
+            "reachable": true,
+            "name": "生产退料明细表英文名称"
+        },
+        "prdMatRetDetEquipmentId": {
+            "meaning": "生产退料明细表设备id",
+            "reachable": true,
+            "name": "生产退料明细表设备id"
+        },
+        "prdMatRetDetExchangeRateId": {
+            "meaning": "生产退料明细表币种汇率id",
+            "reachable": true,
+            "name": "生产退料明细表币种汇率id"
+        },
+        "prdMatRetDetExtension": {
+            "meaning": "生产退料明细表扩展数据",
+            "reachable": true,
+            "name": "生产退料明细表扩展数据"
+        },
+        "prdMatRetDetExternalState": {
+            "meaning": "生产退料明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "生产退料明细表上流程状态位"
+        },
+        "prdMatRetDetFilterClazz": {
+            "meaning": "生产退料明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "生产退料明细表冗余字段用于筛选"
+        },
+        "prdMatRetDetFlags": {
+            "meaning": "生产退料明细表63位标志位",
+            "reachable": true,
+            "name": "生产退料明细表63位标志位"
+        },
+        "prdMatRetDetFromAuditDate": {
+            "meaning": "prdMatRetDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromBeginTime": {
+            "meaning": "prdMatRetDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromCreateTime": {
+            "meaning": "prdMatRetDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDateExtra1": {
+            "meaning": "prdMatRetDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDateExtra2": {
+            "meaning": "prdMatRetDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDateExtra3": {
+            "meaning": "prdMatRetDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDateExtra4": {
+            "meaning": "prdMatRetDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDateExtra5": {
+            "meaning": "prdMatRetDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromDeliveryDate": {
+            "meaning": "prdMatRetDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromEndTime": {
+            "meaning": "prdMatRetDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromReceiptDate": {
+            "meaning": "prdMatRetDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFromUpdateTime": {
+            "meaning": "prdMatRetDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetFscType": {
+            "meaning": "生产退料明细表FSC声明",
+            "reachable": true,
+            "name": "生产退料明细表FSC声明"
+        },
+        "prdMatRetDetGenerativePeople": {
+            "meaning": "生产退料明细表下发人",
+            "reachable": true,
+            "name": "生产退料明细表下发人"
+        },
+        "prdMatRetDetGenerativeState": {
+            "meaning": "生产退料明细表下发状态",
+            "reachable": true,
+            "name": "生产退料明细表下发状态"
+        },
+        "prdMatRetDetGoodsId": {
+            "meaning": "生产退料明细表货（包）id",
+            "reachable": true,
+            "name": "生产退料明细表货"
+        },
+        "prdMatRetDetGroovyScript": {
+            "meaning": "生产退料明细表groovy脚本",
+            "reachable": true,
+            "name": "生产退料明细表groovy脚本"
+        },
+        "prdMatRetDetGropeCode": {
+            "meaning": "生产退料明细表搜索码",
+            "reachable": true,
+            "name": "生产退料明细表搜索码"
+        },
+        "prdMatRetDetHandlingMethod": {
+            "meaning": "生产退料明细表处理方式(字典：1物料入库/2成品入库/3半成品入库等)",
+            "reachable": true,
+            "name": "生产退料明细表处理方式"
+        },
+        "prdMatRetDetId": {
+            "meaning": "生产退料明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "生产退料明细表PK"
+        },
+        "prdMatRetDetInUsed": {
+            "meaning": "生产退料明细表是否被使用",
+            "reachable": true,
+            "name": "生产退料明细表是否被使用"
+        },
+        "prdMatRetDetInvTypeTaxRateId": {
+            "meaning": "生产退料明细表发票税率id",
+            "reachable": true,
+            "name": "生产退料明细表发票税率id"
+        },
+        "prdMatRetDetIsBanned": {
+            "meaning": "生产退料明细表是否被禁用",
+            "reachable": true,
+            "name": "生产退料明细表是否被禁用"
+        },
+        "prdMatRetDetIsDeleted": {
+            "meaning": "生产退料明细表是否被删除",
+            "reachable": true,
+            "name": "生产退料明细表是否被删除"
+        },
+        "prdMatRetDetIsLeaf": {
+            "meaning": "生产退料明细表是否叶子节点",
+            "reachable": true,
+            "name": "生产退料明细表是否叶子节点"
+        },
+        "prdMatRetDetIsMainFlow": {
+            "meaning": "生产退料明细表是否是主流程",
+            "reachable": true,
+            "name": "生产退料明细表是否是主流程"
+        },
+        "prdMatRetDetIsManualModificationDate": {
+            "meaning": "生产退料明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "生产退料明细表是否手动修改计划生产时间"
+        },
+        "prdMatRetDetIsolation": {
+            "meaning": "生产退料明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "生产退料明细表智能节点数据隔离标识"
+        },
+        "prdMatRetDetJsScript": {
+            "meaning": "生产退料明细表js脚本",
+            "reachable": true,
+            "name": "生产退料明细表js脚本"
+        },
+        "prdMatRetDetLevel": {
+            "meaning": "生产退料明细表层级",
+            "reachable": true,
+            "name": "生产退料明细表层级"
+        },
+        "prdMatRetDetLocalCurrencyTotalAmount": {
+            "meaning": "生产退料明细表本币金额",
+            "reachable": true,
+            "name": "生产退料明细表本币金额"
+        },
+        "prdMatRetDetLocalCurrencyUnitPrice": {
+            "meaning": "生产退料明细表本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "生产退料明细表本币单价"
+        },
+        "prdMatRetDetMatBatchId": {
+            "meaning": "生产退料明细表物料批次id",
+            "reachable": true,
+            "name": "生产退料明细表物料批次id"
+        },
+        "prdMatRetDetMatOutstorageDetId": {
+            "meaning": "生产退料明细表物料出库明细id",
+            "reachable": true,
+            "name": "生产退料明细表物料出库明细id"
+        },
+        "prdMatRetDetMaterialId": {
+            "meaning": "生产退料明细表物料id",
+            "reachable": true,
+            "name": "生产退料明细表物料id"
+        },
+        "prdMatRetDetName": {
+            "meaning": "生产退料明细表智能节点名",
+            "reachable": true,
+            "name": "生产退料明细表智能节点名"
+        },
+        "prdMatRetDetNameCodeSearch": {
+            "meaning": "生产退料明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "生产退料明细表name、user_code模糊搜索"
+        },
+        "prdMatRetDetNumberExtra1": {
+            "meaning": "生产退料明细表扩展数量1",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量1"
+        },
+        "prdMatRetDetNumberExtra2": {
+            "meaning": "生产退料明细表扩展数量2",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量2"
+        },
+        "prdMatRetDetNumberExtra3": {
+            "meaning": "生产退料明细表扩展数量3",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量3"
+        },
+        "prdMatRetDetNumberExtra4": {
+            "meaning": "生产退料明细表扩展数量4",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量4"
+        },
+        "prdMatRetDetNumberExtra5": {
+            "meaning": "生产退料明细表扩展数量5",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量5"
+        },
+        "prdMatRetDetOrderDetailId": {
+            "meaning": "生产退料明细表订单明细id",
+            "reachable": true,
+            "name": "生产退料明细表订单明细id"
+        },
+        "prdMatRetDetParentId": {
+            "meaning": "生产退料明细表父节点ID",
+            "reachable": true,
+            "name": "生产退料明细表父节点ID"
+        },
+        "prdMatRetDetPlanNumber": {
+            "meaning": "生产退料明细表排度单号",
+            "reachable": true,
+            "name": "生产退料明细表排度单号"
+        },
+        "prdMatRetDetPlannedOutputQuantity": {
+            "meaning": "生产退料明细表计划产出数量",
+            "reachable": true,
+            "name": "生产退料明细表计划产出数量"
+        },
+        "prdMatRetDetPlannedTimeRequired": {
+            "meaning": "生产退料明细表计划需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表计划需时"
+        },
+        "prdMatRetDetPrdMatRetActualTimeRequired": {
+            "meaning": "生产退料明细表实际需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表实际需时"
+        },
+        "prdMatRetDetPrdMatRetAdjustmentTimeRequired": {
+            "meaning": "生产退料明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "生产退料明细表调整需时"
+        },
+        "prdMatRetDetPrdMatRetApplicationId": {
+            "meaning": "生产退料明细表应用ID",
+            "reachable": true,
+            "name": "生产退料明细表应用ID"
+        },
+        "prdMatRetDetPrdMatRetAuditDate": {
+            "meaning": "生产退料明细表审核时间",
+            "reachable": true,
+            "name": "生产退料明细表审核时间"
+        },
+        "prdMatRetDetPrdMatRetAuditStatus": {
+            "meaning": "生产退料明细表审核状态",
+            "reachable": true,
+            "name": "生产退料明细表审核状态"
+        },
+        "prdMatRetDetPrdMatRetAvailableScheduleId": {
+            "meaning": "生产退料明细表可用日程id",
+            "reachable": true,
+            "name": "生产退料明细表可用日程id"
+        },
+        "prdMatRetDetPrdMatRetBeginTime": {
+            "meaning": "生产退料明细表开始时间",
+            "reachable": true,
+            "name": "生产退料明细表开始时间"
+        },
+        "prdMatRetDetPrdMatRetBizVersion": {
+            "meaning": "生产退料明细表业务自定义版本号",
+            "reachable": true,
+            "name": "生产退料明细表业务自定义版本号"
+        },
+        "prdMatRetDetPrdMatRetBriefName": {
+            "meaning": "生产退料明细表简称",
+            "reachable": true,
+            "name": "生产退料明细表简称"
+        },
+        "prdMatRetDetPrdMatRetBusDivisId": {
+            "meaning": "生产退料明细表事业部id",
+            "reachable": true,
+            "name": "生产退料明细表事业部id"
+        },
+        "prdMatRetDetPrdMatRetClazz": {
+            "meaning": "生产退料明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "生产退料明细表子类"
+        },
+        "prdMatRetDetPrdMatRetClosedReason": {
+            "meaning": "生产退料明细表结案原因",
+            "reachable": true,
+            "name": "生产退料明细表结案原因"
+        },
+        "prdMatRetDetPrdMatRetClosedStatus": {
+            "meaning": "生产退料明细表结案状态",
+            "reachable": true,
+            "name": "生产退料明细表结案状态"
+        },
+        "prdMatRetDetPrdMatRetComment": {
+            "meaning": "生产退料明细表评论",
+            "reachable": true,
+            "name": "生产退料明细表评论"
+        },
+        "prdMatRetDetPrdMatRetCompleteQuantity": {
+            "meaning": "生产退料明细表完成数量",
+            "reachable": true,
+            "name": "生产退料明细表完成数量"
+        },
+        "prdMatRetDetPrdMatRetCompleteStatus": {
+            "meaning": "生产退料明细表完成状态",
+            "reachable": true,
+            "name": "生产退料明细表完成状态"
+        },
+        "prdMatRetDetPrdMatRetCreateTime": {
+            "meaning": "生产退料明细表创建时间",
+            "reachable": true,
+            "name": "生产退料明细表创建时间"
+        },
+        "prdMatRetDetPrdMatRetCreator": {
+            "meaning": "生产退料明细表创建人",
+            "reachable": true,
+            "name": "生产退料明细表创建人"
+        },
+        "prdMatRetDetPrdMatRetCreatorId": {
+            "meaning": "生产退料明细表创建人ID",
+            "reachable": true,
+            "name": "生产退料明细表创建人ID"
+        },
+        "prdMatRetDetPrdMatRetDateExtra1": {
+            "meaning": "生产退料明细表扩展时间1",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间1"
+        },
+        "prdMatRetDetPrdMatRetDateExtra2": {
+            "meaning": "生产退料明细表扩展时间2",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间2"
+        },
+        "prdMatRetDetPrdMatRetDateExtra3": {
+            "meaning": "生产退料明细表扩展时间3",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间3"
+        },
+        "prdMatRetDetPrdMatRetDateExtra4": {
+            "meaning": "生产退料明细表扩展时间4",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间4"
+        },
+        "prdMatRetDetPrdMatRetDateExtra5": {
+            "meaning": "生产退料明细表扩展时间5",
+            "reachable": true,
+            "name": "生产退料明细表扩展时间5"
+        },
+        "prdMatRetDetPrdMatRetDefaultType": {
+            "meaning": "生产退料明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "生产退料明细表智能节点主类型"
+        },
+        "prdMatRetDetPrdMatRetDeliveryDate": {
+            "meaning": "生产退料明细表交货日期",
+            "reachable": true,
+            "name": "生产退料明细表交货日期"
+        },
+        "prdMatRetDetPrdMatRetDescription": {
+            "meaning": "生产退料明细表描述",
+            "reachable": true,
+            "name": "生产退料明细表描述"
+        },
+        "prdMatRetDetPrdMatRetEndTime": {
+            "meaning": "生产退料明细表结束时间",
+            "reachable": true,
+            "name": "生产退料明细表结束时间"
+        },
+        "prdMatRetDetPrdMatRetEndTimeRequired": {
+            "meaning": "生产退料明细表最后需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表最后需时"
+        },
+        "prdMatRetDetPrdMatRetEngName": {
+            "meaning": "生产退料明细表英文名称",
+            "reachable": true,
+            "name": "生产退料明细表英文名称"
+        },
+        "prdMatRetDetPrdMatRetEquipmentId": {
+            "meaning": "生产退料明细表设备id",
+            "reachable": true,
+            "name": "生产退料明细表设备id"
+        },
+        "prdMatRetDetPrdMatRetExchangeRateId": {
+            "meaning": "生产退料明细表币种汇率id",
+            "reachable": true,
+            "name": "生产退料明细表币种汇率id"
+        },
+        "prdMatRetDetPrdMatRetExtension": {
+            "meaning": "生产退料明细表扩展数据",
+            "reachable": true,
+            "name": "生产退料明细表扩展数据"
+        },
+        "prdMatRetDetPrdMatRetExternalState": {
+            "meaning": "生产退料明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "生产退料明细表上流程状态位"
+        },
+        "prdMatRetDetPrdMatRetFilterClazz": {
+            "meaning": "生产退料明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "生产退料明细表冗余字段用于筛选"
+        },
+        "prdMatRetDetPrdMatRetFlags": {
+            "meaning": "生产退料明细表63位标志位",
+            "reachable": true,
+            "name": "生产退料明细表63位标志位"
+        },
+        "prdMatRetDetPrdMatRetFromAuditDate": {
+            "meaning": "prdMatRetDetPrdMatRetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromBeginTime": {
+            "meaning": "prdMatRetDetPrdMatRetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromCreateTime": {
+            "meaning": "prdMatRetDetPrdMatRetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDateExtra1": {
+            "meaning": "prdMatRetDetPrdMatRetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDateExtra2": {
+            "meaning": "prdMatRetDetPrdMatRetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDateExtra3": {
+            "meaning": "prdMatRetDetPrdMatRetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDateExtra4": {
+            "meaning": "prdMatRetDetPrdMatRetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDateExtra5": {
+            "meaning": "prdMatRetDetPrdMatRetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromDeliveryDate": {
+            "meaning": "prdMatRetDetPrdMatRetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromEndTime": {
+            "meaning": "prdMatRetDetPrdMatRetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromReceiptDate": {
+            "meaning": "prdMatRetDetPrdMatRetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFromUpdateTime": {
+            "meaning": "prdMatRetDetPrdMatRetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetFscType": {
+            "meaning": "生产退料明细表FSC声明",
+            "reachable": true,
+            "name": "生产退料明细表FSC声明"
+        },
+        "prdMatRetDetPrdMatRetGenerativePeople": {
+            "meaning": "生产退料明细表下发人",
+            "reachable": true,
+            "name": "生产退料明细表下发人"
+        },
+        "prdMatRetDetPrdMatRetGenerativeState": {
+            "meaning": "生产退料明细表下发状态",
+            "reachable": true,
+            "name": "生产退料明细表下发状态"
+        },
+        "prdMatRetDetPrdMatRetGroovyScript": {
+            "meaning": "生产退料明细表groovy脚本",
+            "reachable": true,
+            "name": "生产退料明细表groovy脚本"
+        },
+        "prdMatRetDetPrdMatRetGropeCode": {
+            "meaning": "生产退料明细表搜索码",
+            "reachable": true,
+            "name": "生产退料明细表搜索码"
+        },
+        "prdMatRetDetPrdMatRetId": {
+            "meaning": "生产退料明细表PK",
+            "reachable": true,
+            "name": "生产退料明细表PK"
+        },
+        "prdMatRetDetPrdMatRetInUsed": {
+            "meaning": "生产退料明细表是否被使用",
+            "reachable": true,
+            "name": "生产退料明细表是否被使用"
+        },
+        "prdMatRetDetPrdMatRetInvTypeTaxRateId": {
+            "meaning": "生产退料明细表发票税率id",
+            "reachable": true,
+            "name": "生产退料明细表发票税率id"
+        },
+        "prdMatRetDetPrdMatRetIsBanned": {
+            "meaning": "生产退料明细表是否被禁用",
+            "reachable": true,
+            "name": "生产退料明细表是否被禁用"
+        },
+        "prdMatRetDetPrdMatRetIsDeleted": {
+            "meaning": "生产退料明细表是否被删除",
+            "reachable": true,
+            "name": "生产退料明细表是否被删除"
+        },
+        "prdMatRetDetPrdMatRetIsLeaf": {
+            "meaning": "生产退料明细表是否叶子节点",
+            "reachable": true,
+            "name": "生产退料明细表是否叶子节点"
+        },
+        "prdMatRetDetPrdMatRetIsMainFlow": {
+            "meaning": "生产退料明细表是否是主流程",
+            "reachable": true,
+            "name": "生产退料明细表是否是主流程"
+        },
+        "prdMatRetDetPrdMatRetIsManualModificationDate": {
+            "meaning": "生产退料明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "生产退料明细表是否手动修改计划生产时间"
+        },
+        "prdMatRetDetPrdMatRetIsolation": {
+            "meaning": "生产退料明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "生产退料明细表智能节点数据隔离标识"
+        },
+        "prdMatRetDetPrdMatRetJsScript": {
+            "meaning": "生产退料明细表js脚本",
+            "reachable": true,
+            "name": "生产退料明细表js脚本"
+        },
+        "prdMatRetDetPrdMatRetMaterialId": {
+            "meaning": "生产退料明细表物料id",
+            "reachable": true,
+            "name": "生产退料明细表物料id"
+        },
+        "prdMatRetDetPrdMatRetName": {
+            "meaning": "生产退料明细表智能节点名",
+            "reachable": true,
+            "name": "生产退料明细表智能节点名"
+        },
+        "prdMatRetDetPrdMatRetNameCodeSearch": {
+            "meaning": "生产退料明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "生产退料明细表name、user_code模糊搜索"
+        },
+        "prdMatRetDetPrdMatRetNumberExtra1": {
+            "meaning": "生产退料明细表扩展数量1",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量1"
+        },
+        "prdMatRetDetPrdMatRetNumberExtra2": {
+            "meaning": "生产退料明细表扩展数量2",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量2"
+        },
+        "prdMatRetDetPrdMatRetNumberExtra3": {
+            "meaning": "生产退料明细表扩展数量3",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量3"
+        },
+        "prdMatRetDetPrdMatRetNumberExtra4": {
+            "meaning": "生产退料明细表扩展数量4",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量4"
+        },
+        "prdMatRetDetPrdMatRetNumberExtra5": {
+            "meaning": "生产退料明细表扩展数量5",
+            "reachable": true,
+            "name": "生产退料明细表扩展数量5"
+        },
+        "prdMatRetDetPrdMatRetParentId": {
+            "meaning": "生产退料明细表父节点ID",
+            "reachable": true,
+            "name": "生产退料明细表父节点ID"
+        },
+        "prdMatRetDetPrdMatRetPlannedOutputQuantity": {
+            "meaning": "生产退料明细表计划产出数量",
+            "reachable": true,
+            "name": "生产退料明细表计划产出数量"
+        },
+        "prdMatRetDetPrdMatRetPlannedTimeRequired": {
+            "meaning": "生产退料明细表计划需时(小时)",
+            "reachable": true,
+            "name": "生产退料明细表计划需时"
+        },
+        "prdMatRetDetPrdMatRetPrintTimes": {
+            "meaning": "生产退料明细表打印次数",
+            "reachable": true,
+            "name": "生产退料明细表打印次数"
+        },
+        "prdMatRetDetPrdMatRetPriority": {
+            "meaning": "生产退料明细表优先级",
+            "reachable": true,
+            "name": "生产退料明细表优先级"
+        },
+        "prdMatRetDetPrdMatRetProcessInstanceId": {
+            "meaning": "生产退料明细表流程实例ID",
+            "reachable": true,
+            "name": "生产退料明细表流程实例ID"
+        },
+        "prdMatRetDetPrdMatRetProductionProcessesTypeId": {
+            "meaning": "生产退料明细表工序类型ID",
+            "reachable": true,
+            "name": "生产退料明细表工序类型ID"
+        },
+        "prdMatRetDetPrdMatRetProductionShiftId": {
+            "meaning": "生产退料明细表生产班次ID",
+            "reachable": true,
+            "name": "生产退料明细表生产班次ID"
+        },
+        "prdMatRetDetPrdMatRetQuantity": {
+            "meaning": "生产退料明细表任务数量",
+            "reachable": true,
+            "name": "生产退料明细表任务数量"
+        },
+        "prdMatRetDetPrdMatRetReceiptDate": {
+            "meaning": "生产退料明细表单据日期",
+            "reachable": true,
+            "name": "生产退料明细表单据日期"
+        },
+        "prdMatRetDetPrdMatRetReceiptType": {
+            "meaning": "生产退料明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "生产退料明细表单据类型"
+        },
+        "prdMatRetDetPrdMatRetRelatedTasksId": {
+            "meaning": "生产退料明细表关联任务id",
+            "reachable": true,
+            "name": "生产退料明细表关联任务id"
+        },
+        "prdMatRetDetPrdMatRetReturnDepartId": {
+            "meaning": "生产退料明细表退料部门id",
+            "reachable": true,
+            "name": "生产退料明细表退料部门id"
+        },
+        "prdMatRetDetPrdMatRetReturnReason": {
+            "meaning": "生产退料明细表退料原因",
+            "reachable": true,
+            "name": "生产退料明细表退料原因"
+        },
+        "prdMatRetDetPrdMatRetReturnStaffId": {
+            "meaning": "生产退料明细表退料人id",
+            "reachable": true,
+            "name": "生产退料明细表退料人id"
+        },
+        "prdMatRetDetPrdMatRetSerialNumber": {
+            "meaning": "生产退料明细表顺序号",
+            "reachable": true,
+            "name": "生产退料明细表顺序号"
+        },
+        "prdMatRetDetPrdMatRetSource": {
+            "meaning": "生产退料明细表源",
+            "reachable": true,
+            "name": "生产退料明细表源"
+        },
+        "prdMatRetDetPrdMatRetSourceType": {
+            "meaning": "生产退料明细表来源类型",
+            "reachable": true,
+            "name": "生产退料明细表来源类型"
+        },
+        "prdMatRetDetPrdMatRetState": {
+            "meaning": "生产退料明细表通用状态",
+            "reachable": true,
+            "name": "生产退料明细表通用状态"
+        },
+        "prdMatRetDetPrdMatRetSystemCode": {
+            "meaning": "生产退料明细表系统编码",
+            "reachable": true,
+            "name": "生产退料明细表系统编码"
+        },
+        "prdMatRetDetPrdMatRetTarget": {
+            "meaning": "生产退料明细表目标",
+            "reachable": true,
+            "name": "生产退料明细表目标"
+        },
+        "prdMatRetDetPrdMatRetTaskNodeName": {
+            "meaning": "生产退料明细表任务节点名称",
+            "reachable": true,
+            "name": "生产退料明细表任务节点名称"
+        },
+        "prdMatRetDetPrdMatRetTeamId": {
+            "meaning": "生产退料明细表班组id",
+            "reachable": true,
+            "name": "生产退料明细表班组id"
+        },
+        "prdMatRetDetPrdMatRetTenantId": {
+            "meaning": "生产退料明细表租户_id",
+            "reachable": true,
+            "name": "生产退料明细表租户_id"
+        },
+        "prdMatRetDetPrdMatRetThirdPartyClass": {
+            "meaning": "生产退料明细表第三方分类",
+            "reachable": true,
+            "name": "生产退料明细表第三方分类"
+        },
+        "prdMatRetDetPrdMatRetThirdPartyId": {
+            "meaning": "生产退料明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "生产退料明细表第三方系统中的唯一ID"
+        },
+        "prdMatRetDetPrdMatRetThirdPartyName": {
+            "meaning": "生产退料明细表第三方名称",
+            "reachable": true,
+            "name": "生产退料明细表第三方名称"
+        },
+        "prdMatRetDetPrdMatRetToAuditDate": {
+            "meaning": "prdMatRetDetPrdMatRetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToBeginTime": {
+            "meaning": "prdMatRetDetPrdMatRetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToCreateTime": {
+            "meaning": "prdMatRetDetPrdMatRetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDateExtra1": {
+            "meaning": "prdMatRetDetPrdMatRetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDateExtra2": {
+            "meaning": "prdMatRetDetPrdMatRetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDateExtra3": {
+            "meaning": "prdMatRetDetPrdMatRetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDateExtra4": {
+            "meaning": "prdMatRetDetPrdMatRetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDateExtra5": {
+            "meaning": "prdMatRetDetPrdMatRetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToDeliveryDate": {
+            "meaning": "prdMatRetDetPrdMatRetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToEndTime": {
+            "meaning": "prdMatRetDetPrdMatRetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToReceiptDate": {
+            "meaning": "prdMatRetDetPrdMatRetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetToUpdateTime": {
+            "meaning": "prdMatRetDetPrdMatRetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetPrdMatRetUnitCode": {
+            "meaning": "生产退料明细表单位id",
+            "reachable": true,
+            "name": "生产退料明细表单位id"
+        },
+        "prdMatRetDetPrdMatRetUpdateTime": {
+            "meaning": "生产退料明细表更新时间",
+            "reachable": true,
+            "name": "生产退料明细表更新时间"
+        },
+        "prdMatRetDetPrdMatRetUpdater": {
+            "meaning": "生产退料明细表更新人",
+            "reachable": true,
+            "name": "生产退料明细表更新人"
+        },
+        "prdMatRetDetPrdMatRetUpdaterId": {
+            "meaning": "生产退料明细表更新人ID",
+            "reachable": true,
+            "name": "生产退料明细表更新人ID"
+        },
+        "prdMatRetDetPrdMatRetUserCode": {
+            "meaning": "生产退料明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "生产退料明细表智能节点的唯一编码"
+        },
+        "prdMatRetDetPrdMatRetVarExtra1": {
+            "meaning": "生产退料明细表扩展1",
+            "reachable": true,
+            "name": "生产退料明细表扩展1"
+        },
+        "prdMatRetDetPrdMatRetVarExtra2": {
+            "meaning": "生产退料明细表扩展2",
+            "reachable": true,
+            "name": "生产退料明细表扩展2"
+        },
+        "prdMatRetDetPrdMatRetVarExtra3": {
+            "meaning": "生产退料明细表扩展3",
+            "reachable": true,
+            "name": "生产退料明细表扩展3"
+        },
+        "prdMatRetDetPrdMatRetVarExtra4": {
+            "meaning": "生产退料明细表扩展4",
+            "reachable": true,
+            "name": "生产退料明细表扩展4"
+        },
+        "prdMatRetDetPrdMatRetVarExtra5": {
+            "meaning": "生产退料明细表扩展5",
+            "reachable": true,
+            "name": "生产退料明细表扩展5"
+        },
+        "prdMatRetDetPrdMatRetVersion": {
+            "meaning": "生产退料明细表版本号",
+            "reachable": true,
+            "name": "生产退料明细表版本号"
+        },
+        "prdMatRetDetPrintTimes": {
+            "meaning": "生产退料明细表打印次数",
+            "reachable": true,
+            "name": "生产退料明细表打印次数"
+        },
+        "prdMatRetDetPriority": {
+            "meaning": "生产退料明细表优先级",
+            "reachable": true,
+            "name": "生产退料明细表优先级"
+        },
+        "prdMatRetDetProcessInstanceId": {
+            "meaning": "生产退料明细表流程实例ID",
+            "reachable": true,
+            "name": "生产退料明细表流程实例ID"
+        },
+        "prdMatRetDetProductionProcessesTypeId": {
+            "meaning": "生产退料明细表工序类型ID",
+            "reachable": true,
+            "name": "生产退料明细表工序类型ID"
+        },
+        "prdMatRetDetProductionShiftId": {
+            "meaning": "生产退料明细表生产班次ID",
+            "reachable": true,
+            "name": "生产退料明细表生产班次ID"
+        },
+        "prdMatRetDetQuantity": {
+            "meaning": "生产退料明细表任务数量",
+            "reachable": true,
+            "name": "生产退料明细表任务数量"
+        },
+        "prdMatRetDetQuotationUnitPriceIncludingTax": {
+            "meaning": "生产退料明细表含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "生产退料明细表含税报价单价"
+        },
+        "prdMatRetDetQuotationUnitPriceWithoutTax": {
+            "meaning": "生产退料明细表不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "生产退料明细表不含税报价单价"
+        },
+        "prdMatRetDetReceiptDate": {
+            "meaning": "生产退料明细表单据日期",
+            "reachable": true,
+            "name": "生产退料明细表单据日期"
+        },
+        "prdMatRetDetReceiptType": {
+            "meaning": "生产退料明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "生产退料明细表单据类型"
+        },
+        "prdMatRetDetRelatedTasksId": {
+            "meaning": "生产退料明细表关联任务id",
+            "reachable": true,
+            "name": "生产退料明细表关联任务id"
+        },
+        "prdMatRetDetSerialNumber": {
+            "meaning": "生产退料明细表顺序号",
+            "reachable": true,
+            "name": "生产退料明细表顺序号"
+        },
+        "prdMatRetDetSettlementTotalAmount": {
+            "meaning": "生产退料明细表结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "生产退料明细表结算金额"
+        },
+        "prdMatRetDetSettlementUnitPrice": {
+            "meaning": "生产退料明细表结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "生产退料明细表结算单价"
+        },
+        "prdMatRetDetSource": {
+            "meaning": "生产退料明细表源",
+            "reachable": true,
+            "name": "生产退料明细表源"
+        },
+        "prdMatRetDetSourceType": {
+            "meaning": "生产退料明细表来源类型",
+            "reachable": true,
+            "name": "生产退料明细表来源类型"
+        },
+        "prdMatRetDetState": {
+            "meaning": "生产退料明细表通用状态",
+            "reachable": true,
+            "name": "生产退料明细表通用状态"
+        },
+        "prdMatRetDetSystemCode": {
+            "meaning": "生产退料明细表系统编码",
+            "reachable": true,
+            "name": "生产退料明细表系统编码"
+        },
+        "prdMatRetDetTarget": {
+            "meaning": "生产退料明细表目标",
+            "reachable": true,
+            "name": "生产退料明细表目标"
+        },
+        "prdMatRetDetTaskNodeName": {
+            "meaning": "生产退料明细表任务节点名称",
+            "reachable": true,
+            "name": "生产退料明细表任务节点名称"
+        },
+        "prdMatRetDetTenantId": {
+            "meaning": "生产退料明细表租户_id",
+            "reachable": true,
+            "name": "生产退料明细表租户_id"
+        },
+        "prdMatRetDetThirdPartyClass": {
+            "meaning": "生产退料明细表第三方分类",
+            "reachable": true,
+            "name": "生产退料明细表第三方分类"
+        },
+        "prdMatRetDetThirdPartyId": {
+            "meaning": "生产退料明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "生产退料明细表第三方系统中的唯一ID"
+        },
+        "prdMatRetDetThirdPartyName": {
+            "meaning": "生产退料明细表第三方名称",
+            "reachable": true,
+            "name": "生产退料明细表第三方名称"
+        },
+        "prdMatRetDetToAuditDate": {
+            "meaning": "prdMatRetDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToBeginTime": {
+            "meaning": "prdMatRetDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToCreateTime": {
+            "meaning": "prdMatRetDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDateExtra1": {
+            "meaning": "prdMatRetDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDateExtra2": {
+            "meaning": "prdMatRetDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDateExtra3": {
+            "meaning": "prdMatRetDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDateExtra4": {
+            "meaning": "prdMatRetDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDateExtra5": {
+            "meaning": "prdMatRetDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToDeliveryDate": {
+            "meaning": "prdMatRetDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToEndTime": {
+            "meaning": "prdMatRetDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToReceiptDate": {
+            "meaning": "prdMatRetDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetToUpdateTime": {
+            "meaning": "prdMatRetDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdMatRetDetTotalAmountIncludingTax": {
+            "meaning": "生产退料明细表含税总金额",
+            "reachable": true,
+            "name": "生产退料明细表含税总金额"
+        },
+        "prdMatRetDetTotalAmountWithoutTax": {
+            "meaning": "生产退料明细表不含税总金额",
+            "reachable": true,
+            "name": "生产退料明细表不含税总金额"
+        },
+        "prdMatRetDetUnitCode": {
+            "meaning": "生产退料明细表单位id",
+            "reachable": true,
+            "name": "生产退料明细表单位id"
+        },
+        "prdMatRetDetUnitPriceIncludingTax": {
+            "meaning": "生产退料明细表含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "生产退料明细表含税单价"
+        },
+        "prdMatRetDetUnitPriceWithoutTax": {
+            "meaning": "生产退料明细表不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "生产退料明细表不含税单价"
+        },
+        "prdMatRetDetUpdateTime": {
+            "meaning": "生产退料明细表更新时间",
+            "reachable": true,
+            "name": "生产退料明细表更新时间"
+        },
+        "prdMatRetDetUpdater": {
+            "meaning": "生产退料明细表更新人",
+            "reachable": true,
+            "name": "生产退料明细表更新人"
+        },
+        "prdMatRetDetUpdaterId": {
+            "meaning": "生产退料明细表更新人ID",
+            "reachable": true,
+            "name": "生产退料明细表更新人ID"
+        },
+        "prdMatRetDetUserCode": {
+            "meaning": "生产退料明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "生产退料明细表智能节点的唯一编码"
+        },
+        "prdMatRetDetVarExtra1": {
+            "meaning": "生产退料明细表扩展1",
+            "reachable": true,
+            "name": "生产退料明细表扩展1"
+        },
+        "prdMatRetDetVarExtra2": {
+            "meaning": "生产退料明细表扩展2",
+            "reachable": true,
+            "name": "生产退料明细表扩展2"
+        },
+        "prdMatRetDetVarExtra3": {
+            "meaning": "生产退料明细表扩展3",
+            "reachable": true,
+            "name": "生产退料明细表扩展3"
+        },
+        "prdMatRetDetVarExtra4": {
+            "meaning": "生产退料明细表扩展4",
+            "reachable": true,
+            "name": "生产退料明细表扩展4"
+        },
+        "prdMatRetDetVarExtra5": {
+            "meaning": "生产退料明细表扩展5",
+            "reachable": true,
+            "name": "生产退料明细表扩展5"
+        },
+        "prdMatRetDetVersion": {
+            "meaning": "生产退料明细表版本号",
+            "reachable": true,
+            "name": "生产退料明细表版本号"
+        }
+    }
+}

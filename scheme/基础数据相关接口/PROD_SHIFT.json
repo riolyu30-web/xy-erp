@@ -1,0 +1,411 @@
+{
+    "api_name": "/prod-shift/findList",
+    "table_name": "生产班次",
+    "request": {
+        "prodShiftClazz": "PROD_SHIFT"
+    },
+    "mainTabClazz": "PROD_SHIFT",
+    "response": {
+        "prodShiftApplicationId": {
+            "meaning": "生产班次应用ID",
+            "reachable": false,
+            "name": "生产班次应用ID"
+        },
+        "prodShiftAuditDate": {
+            "meaning": "生产班次审核时间",
+            "reachable": false,
+            "name": "生产班次审核时间"
+        },
+        "prodShiftAuditStatus": {
+            "meaning": "生产班次审核状态",
+            "reachable": false,
+            "name": "生产班次审核状态"
+        },
+        "prodShiftBizVersion": {
+            "meaning": "生产班次业务自定义版本号",
+            "reachable": false,
+            "name": "生产班次业务自定义版本号"
+        },
+        "prodShiftBriefName": {
+            "meaning": "生产班次简称",
+            "reachable": false,
+            "name": "生产班次简称"
+        },
+        "prodShiftBusDivisId": {
+            "meaning": "生产班次事业部id",
+            "reachable": false,
+            "name": "生产班次事业部id"
+        },
+        "prodShiftClazz": {
+            "meaning": "生产班次子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "生产班次子类"
+        },
+        "prodShiftComment": {
+            "meaning": "生产班次评论",
+            "reachable": false,
+            "name": "生产班次评论"
+        },
+        "prodShiftCreateTime": {
+            "meaning": "生产班次创建时间",
+            "reachable": false,
+            "name": "生产班次创建时间"
+        },
+        "prodShiftCreator": {
+            "meaning": "生产班次创建人",
+            "reachable": false,
+            "name": "生产班次创建人"
+        },
+        "prodShiftCreatorId": {
+            "meaning": "生产班次创建人ID",
+            "reachable": false,
+            "name": "生产班次创建人ID"
+        },
+        "prodShiftDateExtra1": {
+            "meaning": "生产班次扩展时间1",
+            "reachable": false,
+            "name": "生产班次扩展时间1"
+        },
+        "prodShiftDateExtra2": {
+            "meaning": "生产班次扩展时间2",
+            "reachable": false,
+            "name": "生产班次扩展时间2"
+        },
+        "prodShiftDateExtra3": {
+            "meaning": "生产班次扩展时间3",
+            "reachable": false,
+            "name": "生产班次扩展时间3"
+        },
+        "prodShiftDateExtra4": {
+            "meaning": "生产班次扩展时间4",
+            "reachable": false,
+            "name": "生产班次扩展时间4"
+        },
+        "prodShiftDateExtra5": {
+            "meaning": "生产班次扩展时间5",
+            "reachable": false,
+            "name": "生产班次扩展时间5"
+        },
+        "prodShiftDefaultType": {
+            "meaning": "生产班次智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "生产班次智能节点主类型"
+        },
+        "prodShiftDescription": {
+            "meaning": "生产班次描述",
+            "reachable": false,
+            "name": "生产班次描述"
+        },
+        "prodShiftEndTime": {
+            "meaning": "生产班次结束时间",
+            "reachable": false,
+            "name": "生产班次结束时间"
+        },
+        "prodShiftEngName": {
+            "meaning": "生产班次英文名称",
+            "reachable": false,
+            "name": "生产班次英文名称"
+        },
+        "prodShiftExtension": {
+            "meaning": "生产班次扩展数据",
+            "reachable": false,
+            "name": "生产班次扩展数据"
+        },
+        "prodShiftExternalState": {
+            "meaning": "生产班次上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "生产班次上流程状态位"
+        },
+        "prodShiftFlags": {
+            "meaning": "生产班次63位标志位",
+            "reachable": false,
+            "name": "生产班次63位标志位"
+        },
+        "prodShiftFromAuditDate": {
+            "meaning": "prodShiftFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromCreateTime": {
+            "meaning": "prodShiftFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromDateExtra1": {
+            "meaning": "prodShiftFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromDateExtra2": {
+            "meaning": "prodShiftFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromDateExtra3": {
+            "meaning": "prodShiftFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromDateExtra4": {
+            "meaning": "prodShiftFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromDateExtra5": {
+            "meaning": "prodShiftFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromEndTime": {
+            "meaning": "prodShiftFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromStartTime": {
+            "meaning": "prodShiftFromStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftFromUpdateTime": {
+            "meaning": "prodShiftFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftGroovyScript": {
+            "meaning": "生产班次groovy脚本",
+            "reachable": false,
+            "name": "生产班次groovy脚本"
+        },
+        "prodShiftGropeCode": {
+            "meaning": "生产班次搜索码",
+            "reachable": false,
+            "name": "生产班次搜索码"
+        },
+        "prodShiftId": {
+            "meaning": "生产班次PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "生产班次PK"
+        },
+        "prodShiftInUsed": {
+            "meaning": "生产班次是否被使用",
+            "reachable": false,
+            "name": "生产班次是否被使用"
+        },
+        "prodShiftIsBanned": {
+            "meaning": "生产班次是否被禁用",
+            "reachable": false,
+            "name": "生产班次是否被禁用"
+        },
+        "prodShiftIsDeleted": {
+            "meaning": "生产班次是否被删除",
+            "reachable": false,
+            "name": "生产班次是否被删除"
+        },
+        "prodShiftIsMainFlow": {
+            "meaning": "生产班次是否是主流程",
+            "reachable": false,
+            "name": "生产班次是否是主流程"
+        },
+        "prodShiftIsolation": {
+            "meaning": "生产班次智能节点数据隔离标识",
+            "reachable": false,
+            "name": "生产班次智能节点数据隔离标识"
+        },
+        "prodShiftJsScript": {
+            "meaning": "生产班次js脚本",
+            "reachable": false,
+            "name": "生产班次js脚本"
+        },
+        "prodShiftName": {
+            "meaning": "生产班次智能节点名",
+            "reachable": false,
+            "name": "生产班次智能节点名"
+        },
+        "prodShiftNameCodeSearch": {
+            "meaning": "生产班次name、user_code模糊搜索",
+            "reachable": false,
+            "name": "生产班次name、user_code模糊搜索"
+        },
+        "prodShiftNumberExtra1": {
+            "meaning": "生产班次扩展数量1",
+            "reachable": false,
+            "name": "生产班次扩展数量1"
+        },
+        "prodShiftNumberExtra2": {
+            "meaning": "生产班次扩展数量2",
+            "reachable": false,
+            "name": "生产班次扩展数量2"
+        },
+        "prodShiftNumberExtra3": {
+            "meaning": "生产班次扩展数量3",
+            "reachable": false,
+            "name": "生产班次扩展数量3"
+        },
+        "prodShiftNumberExtra4": {
+            "meaning": "生产班次扩展数量4",
+            "reachable": false,
+            "name": "生产班次扩展数量4"
+        },
+        "prodShiftNumberExtra5": {
+            "meaning": "生产班次扩展数量5",
+            "reachable": false,
+            "name": "生产班次扩展数量5"
+        },
+        "prodShiftParentId": {
+            "meaning": "生产班次父节点ID",
+            "reachable": false,
+            "name": "生产班次父节点ID"
+        },
+        "prodShiftProcessInstanceId": {
+            "meaning": "生产班次流程实例ID",
+            "reachable": false,
+            "name": "生产班次流程实例ID"
+        },
+        "prodShiftSerialNumber": {
+            "meaning": "生产班次顺序号",
+            "reachable": false,
+            "name": "生产班次顺序号"
+        },
+        "prodShiftStartTime": {
+            "meaning": "生产班次开始时间",
+            "reachable": false,
+            "name": "生产班次开始时间"
+        },
+        "prodShiftState": {
+            "meaning": "生产班次通用状态",
+            "reachable": false,
+            "name": "生产班次通用状态"
+        },
+        "prodShiftSystemCode": {
+            "meaning": "生产班次系统编码",
+            "reachable": false,
+            "name": "生产班次系统编码"
+        },
+        "prodShiftTaskNodeName": {
+            "meaning": "生产班次任务节点名称",
+            "reachable": false,
+            "name": "生产班次任务节点名称"
+        },
+        "prodShiftTenantId": {
+            "meaning": "生产班次租户id",
+            "reachable": false,
+            "name": "生产班次租户id"
+        },
+        "prodShiftThirdPartyClass": {
+            "meaning": "生产班次第三方分类",
+            "reachable": false,
+            "name": "生产班次第三方分类"
+        },
+        "prodShiftThirdPartyId": {
+            "meaning": "生产班次第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "生产班次第三方系统中的唯一ID"
+        },
+        "prodShiftThirdPartyName": {
+            "meaning": "生产班次第三方名称",
+            "reachable": false,
+            "name": "生产班次第三方名称"
+        },
+        "prodShiftToAuditDate": {
+            "meaning": "prodShiftToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToCreateTime": {
+            "meaning": "prodShiftToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToDateExtra1": {
+            "meaning": "prodShiftToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToDateExtra2": {
+            "meaning": "prodShiftToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToDateExtra3": {
+            "meaning": "prodShiftToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToDateExtra4": {
+            "meaning": "prodShiftToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToDateExtra5": {
+            "meaning": "prodShiftToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToEndTime": {
+            "meaning": "prodShiftToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToStartTime": {
+            "meaning": "prodShiftToStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftToUpdateTime": {
+            "meaning": "prodShiftToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prodShiftUpdateTime": {
+            "meaning": "生产班次更新时间",
+            "reachable": false,
+            "name": "生产班次更新时间"
+        },
+        "prodShiftUpdater": {
+            "meaning": "生产班次更新人",
+            "reachable": false,
+            "name": "生产班次更新人"
+        },
+        "prodShiftUpdaterId": {
+            "meaning": "生产班次更新人ID",
+            "reachable": false,
+            "name": "生产班次更新人ID"
+        },
+        "prodShiftUserCode": {
+            "meaning": "生产班次智能节点的唯一编码",
+            "reachable": false,
+            "name": "生产班次智能节点的唯一编码"
+        },
+        "prodShiftVarExtra1": {
+            "meaning": "生产班次扩展1",
+            "reachable": false,
+            "name": "生产班次扩展1"
+        },
+        "prodShiftVarExtra2": {
+            "meaning": "生产班次扩展2",
+            "reachable": false,
+            "name": "生产班次扩展2"
+        },
+        "prodShiftVarExtra3": {
+            "meaning": "生产班次扩展3",
+            "reachable": false,
+            "name": "生产班次扩展3"
+        },
+        "prodShiftVarExtra4": {
+            "meaning": "生产班次扩展4",
+            "reachable": false,
+            "name": "生产班次扩展4"
+        },
+        "prodShiftVarExtra5": {
+            "meaning": "生产班次扩展5",
+            "reachable": false,
+            "name": "生产班次扩展5"
+        },
+        "prodShiftVersion": {
+            "meaning": "生产班次版本号",
+            "reachable": false,
+            "name": "生产班次版本号"
+        }
+    }
+}

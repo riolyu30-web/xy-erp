@@ -1,0 +1,791 @@
+{
+    "api_name": "/prd-sal/findList",
+    "table_name": "成品销货主表",
+    "request": {
+        "prdSalClazz": "PRD_SAL"
+    },
+    "mainTabClazz": "PRD_SAL",
+    "response": {
+        "prdSalActualTimeRequired": {
+            "meaning": "成品销货主表实际需时(小时)",
+            "reachable": true,
+            "name": "成品销货主表实际需时"
+        },
+        "prdSalAdjustmentTimeRequired": {
+            "meaning": "成品销货主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品销货主表调整需时"
+        },
+        "prdSalApplicationId": {
+            "meaning": "成品销货主表应用ID",
+            "reachable": true,
+            "name": "成品销货主表应用ID"
+        },
+        "prdSalAuditDate": {
+            "meaning": "成品销货主表审核时间",
+            "reachable": true,
+            "name": "成品销货主表审核时间"
+        },
+        "prdSalAuditStatus": {
+            "meaning": "成品销货主表审核状态",
+            "reachable": true,
+            "name": "成品销货主表审核状态"
+        },
+        "prdSalAvailableScheduleId": {
+            "meaning": "成品销货主表可用日程id",
+            "reachable": true,
+            "name": "成品销货主表可用日程id"
+        },
+        "prdSalBeginTime": {
+            "meaning": "成品销货主表开始时间",
+            "reachable": true,
+            "name": "成品销货主表开始时间"
+        },
+        "prdSalBizVersion": {
+            "meaning": "成品销货主表业务自定义版本号",
+            "reachable": true,
+            "name": "成品销货主表业务自定义版本号"
+        },
+        "prdSalBriefName": {
+            "meaning": "成品销货主表简称",
+            "reachable": true,
+            "name": "成品销货主表简称"
+        },
+        "prdSalBusDivisId": {
+            "meaning": "成品销货主表事业部id",
+            "reachable": true,
+            "name": "成品销货主表事业部id"
+        },
+        "prdSalClazz": {
+            "meaning": "成品销货主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品销货主表子类"
+        },
+        "prdSalClosedReason": {
+            "meaning": "成品销货主表结案原因",
+            "reachable": true,
+            "name": "成品销货主表结案原因"
+        },
+        "prdSalClosedStatus": {
+            "meaning": "成品销货主表结案状态",
+            "reachable": true,
+            "name": "成品销货主表结案状态"
+        },
+        "prdSalComment": {
+            "meaning": "成品销货主表评论",
+            "reachable": true,
+            "name": "成品销货主表评论"
+        },
+        "prdSalCompleteQuantity": {
+            "meaning": "成品销货主表完成数量",
+            "reachable": true,
+            "name": "成品销货主表完成数量"
+        },
+        "prdSalCompleteStatus": {
+            "meaning": "成品销货主表完成状态",
+            "reachable": true,
+            "name": "成品销货主表完成状态"
+        },
+        "prdSalConsigneeName": {
+            "meaning": "成品销货主表收货单位名称",
+            "reachable": true,
+            "name": "成品销货主表收货单位名称"
+        },
+        "prdSalCreateTime": {
+            "meaning": "成品销货主表创建时间",
+            "reachable": true,
+            "name": "成品销货主表创建时间"
+        },
+        "prdSalCreator": {
+            "meaning": "成品销货主表创建人",
+            "reachable": true,
+            "name": "成品销货主表创建人"
+        },
+        "prdSalCreatorId": {
+            "meaning": "成品销货主表创建人ID",
+            "reachable": true,
+            "name": "成品销货主表创建人ID"
+        },
+        "prdSalCustContact": {
+            "meaning": "成品销货主表收货人(客户联系人)",
+            "reachable": true,
+            "name": "成品销货主表收货人"
+        },
+        "prdSalCustContactCellPhone": {
+            "meaning": "成品销货主表手机号(客户联系人手机号)",
+            "reachable": true,
+            "name": "成品销货主表手机号"
+        },
+        "prdSalCustContactPhone": {
+            "meaning": "成品销货主表电话(客户联系人电话)",
+            "reachable": true,
+            "name": "成品销货主表电话"
+        },
+        "prdSalCustDeclarationNumber": {
+            "meaning": "成品销货主表报关号",
+            "reachable": true,
+            "name": "成品销货主表报关号"
+        },
+        "prdSalCustDeliverAddress": {
+            "meaning": "成品销货主表送货地址(客户送货地址)",
+            "reachable": true,
+            "name": "成品销货主表送货地址"
+        },
+        "prdSalCustServiceDepartmentSignTime": {
+            "type": "object",
+            "meaning": "成品销货主表客服部签收时间",
+            "reachable": true,
+            "name": "成品销货主表客服部签收时间"
+        },
+        "prdSalCustomerOrSupplierId": {
+            "meaning": "成品销货主表供应商/客户",
+            "reachable": true,
+            "name": "成品销货主表供应商/客户"
+        },
+        "prdSalDateExtra1": {
+            "meaning": "成品销货主表扩展时间1",
+            "reachable": true,
+            "name": "成品销货主表扩展时间1"
+        },
+        "prdSalDateExtra2": {
+            "meaning": "成品销货主表扩展时间2",
+            "reachable": true,
+            "name": "成品销货主表扩展时间2"
+        },
+        "prdSalDateExtra3": {
+            "meaning": "成品销货主表扩展时间3",
+            "reachable": true,
+            "name": "成品销货主表扩展时间3"
+        },
+        "prdSalDateExtra4": {
+            "meaning": "成品销货主表扩展时间4",
+            "reachable": true,
+            "name": "成品销货主表扩展时间4"
+        },
+        "prdSalDateExtra5": {
+            "meaning": "成品销货主表扩展时间5",
+            "reachable": true,
+            "name": "成品销货主表扩展时间5"
+        },
+        "prdSalDefaultType": {
+            "meaning": "成品销货主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品销货主表智能节点主类型"
+        },
+        "prdSalDeliveryDate": {
+            "meaning": "成品销货主表交货日期",
+            "reachable": true,
+            "name": "成品销货主表交货日期"
+        },
+        "prdSalDescription": {
+            "meaning": "成品销货主表描述",
+            "reachable": true,
+            "name": "成品销货主表描述"
+        },
+        "prdSalDocMar": {
+            "meaning": "成品销货主表单据标示",
+            "reachable": true,
+            "name": "成品销货主表单据标示"
+        },
+        "prdSalDriverName": {
+            "meaning": "成品销货主表司机",
+            "reachable": true,
+            "name": "成品销货主表司机"
+        },
+        "prdSalDriverPhone": {
+            "meaning": "成品销货主表电话(司机电话)",
+            "reachable": true,
+            "name": "成品销货主表电话"
+        },
+        "prdSalEndTime": {
+            "meaning": "成品销货主表结束时间",
+            "reachable": true,
+            "name": "成品销货主表结束时间"
+        },
+        "prdSalEndTimeRequired": {
+            "meaning": "成品销货主表最后需时(小时)",
+            "reachable": true,
+            "name": "成品销货主表最后需时"
+        },
+        "prdSalEngName": {
+            "meaning": "成品销货主表英文名称",
+            "reachable": true,
+            "name": "成品销货主表英文名称"
+        },
+        "prdSalEquipmentId": {
+            "meaning": "成品销货主表设备id",
+            "reachable": true,
+            "name": "成品销货主表设备id"
+        },
+        "prdSalExchangeRateId": {
+            "meaning": "成品销货主表币种汇率id",
+            "reachable": true,
+            "name": "成品销货主表币种汇率id"
+        },
+        "prdSalExtension": {
+            "meaning": "成品销货主表扩展数据",
+            "reachable": true,
+            "name": "成品销货主表扩展数据"
+        },
+        "prdSalExternalState": {
+            "meaning": "成品销货主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品销货主表上流程状态位"
+        },
+        "prdSalFilterClazz": {
+            "meaning": "成品销货主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品销货主表冗余字段用于筛选"
+        },
+        "prdSalFirstOddNumber": {
+            "meaning": "成品销货主表首单号",
+            "reachable": true,
+            "name": "成品销货主表首单号"
+        },
+        "prdSalFlags": {
+            "meaning": "成品销货主表63位标志位",
+            "reachable": true,
+            "name": "成品销货主表63位标志位"
+        },
+        "prdSalFromAuditDate": {
+            "meaning": "prdSalFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromBeginTime": {
+            "meaning": "prdSalFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromCreateTime": {
+            "meaning": "prdSalFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromCustServiceDepartmentSignTime": {
+            "type": "object",
+            "meaning": "prdSalFromCustServiceDepartmentSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDateExtra1": {
+            "meaning": "prdSalFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDateExtra2": {
+            "meaning": "prdSalFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDateExtra3": {
+            "meaning": "prdSalFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDateExtra4": {
+            "meaning": "prdSalFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDateExtra5": {
+            "meaning": "prdSalFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromDeliveryDate": {
+            "meaning": "prdSalFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromEndTime": {
+            "meaning": "prdSalFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromLoadCompletionTime": {
+            "type": "object",
+            "meaning": "prdSalFromLoadCompletionTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromLoadStartTime": {
+            "type": "object",
+            "meaning": "prdSalFromLoadStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromMainlandFinanceSignTime": {
+            "type": "object",
+            "meaning": "prdSalFromMainlandFinanceSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromMinistryOfTransportSignTime": {
+            "type": "object",
+            "meaning": "prdSalFromMinistryOfTransportSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromReceiptDate": {
+            "meaning": "prdSalFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFromUpdateTime": {
+            "meaning": "prdSalFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalFscType": {
+            "meaning": "成品销货主表FSC声明",
+            "reachable": true,
+            "name": "成品销货主表FSC声明"
+        },
+        "prdSalGenerativePeople": {
+            "meaning": "成品销货主表下发人",
+            "reachable": true,
+            "name": "成品销货主表下发人"
+        },
+        "prdSalGenerativeState": {
+            "meaning": "成品销货主表下发状态",
+            "reachable": true,
+            "name": "成品销货主表下发状态"
+        },
+        "prdSalGroovyScript": {
+            "meaning": "成品销货主表groovy脚本",
+            "reachable": true,
+            "name": "成品销货主表groovy脚本"
+        },
+        "prdSalGropeCode": {
+            "meaning": "成品销货主表搜索码",
+            "reachable": true,
+            "name": "成品销货主表搜索码"
+        },
+        "prdSalId": {
+            "meaning": "成品销货主表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品销货主表PK"
+        },
+        "prdSalInUsed": {
+            "meaning": "成品销货主表是否被使用",
+            "reachable": true,
+            "name": "成品销货主表是否被使用"
+        },
+        "prdSalInvTypeTaxRateId": {
+            "meaning": "成品销货主表发票税率id",
+            "reachable": true,
+            "name": "成品销货主表发票税率id"
+        },
+        "prdSalIsBanned": {
+            "meaning": "成品销货主表是否被禁用",
+            "reachable": true,
+            "name": "成品销货主表是否被禁用"
+        },
+        "prdSalIsDeleted": {
+            "meaning": "成品销货主表是否被删除",
+            "reachable": true,
+            "name": "成品销货主表是否被删除"
+        },
+        "prdSalIsLeaf": {
+            "meaning": "成品销货主表是否叶子节点",
+            "reachable": true,
+            "name": "成品销货主表是否叶子节点"
+        },
+        "prdSalIsMainFlow": {
+            "meaning": "成品销货主表是否是主流程",
+            "reachable": true,
+            "name": "成品销货主表是否是主流程"
+        },
+        "prdSalIsManualModificationDate": {
+            "meaning": "成品销货主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品销货主表是否手动修改计划生产时间"
+        },
+        "prdSalIsolation": {
+            "meaning": "成品销货主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品销货主表智能节点数据隔离标识"
+        },
+        "prdSalJsScript": {
+            "meaning": "成品销货主表js脚本",
+            "reachable": true,
+            "name": "成品销货主表js脚本"
+        },
+        "prdSalLicensePlate": {
+            "meaning": "成品销货主表车牌",
+            "reachable": true,
+            "name": "成品销货主表车牌"
+        },
+        "prdSalLoadCompletionTime": {
+            "type": "object",
+            "meaning": "成品销货主表装车完成时间",
+            "reachable": true,
+            "name": "成品销货主表装车完成时间"
+        },
+        "prdSalLoadStartTime": {
+            "type": "object",
+            "meaning": "成品销货主表装车开始时间",
+            "reachable": true,
+            "name": "成品销货主表装车开始时间"
+        },
+        "prdSalLoadSupervisor": {
+            "meaning": "成品销货主表装车负责人_id",
+            "reachable": true,
+            "name": "成品销货主表装车负责人_id"
+        },
+        "prdSalMainlandFinanceSignTime": {
+            "type": "object",
+            "meaning": "成品销货主表大陆财务签收时间",
+            "reachable": true,
+            "name": "成品销货主表大陆财务签收时间"
+        },
+        "prdSalMaterialId": {
+            "meaning": "成品销货主表物料id",
+            "reachable": true,
+            "name": "成品销货主表物料id"
+        },
+        "prdSalMinistryOfTransportSignTime": {
+            "type": "object",
+            "meaning": "成品销货主表运输部签收时间",
+            "reachable": true,
+            "name": "成品销货主表运输部签收时间"
+        },
+        "prdSalName": {
+            "meaning": "成品销货主表智能节点名",
+            "reachable": true,
+            "name": "成品销货主表智能节点名"
+        },
+        "prdSalNameCodeSearch": {
+            "meaning": "成品销货主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品销货主表name、user_code模糊搜索"
+        },
+        "prdSalNumberExtra1": {
+            "meaning": "成品销货主表扩展数量1",
+            "reachable": true,
+            "name": "成品销货主表扩展数量1"
+        },
+        "prdSalNumberExtra2": {
+            "meaning": "成品销货主表扩展数量2",
+            "reachable": true,
+            "name": "成品销货主表扩展数量2"
+        },
+        "prdSalNumberExtra3": {
+            "meaning": "成品销货主表扩展数量3",
+            "reachable": true,
+            "name": "成品销货主表扩展数量3"
+        },
+        "prdSalNumberExtra4": {
+            "meaning": "成品销货主表扩展数量4",
+            "reachable": true,
+            "name": "成品销货主表扩展数量4"
+        },
+        "prdSalNumberExtra5": {
+            "meaning": "成品销货主表扩展数量5",
+            "reachable": true,
+            "name": "成品销货主表扩展数量5"
+        },
+        "prdSalParentId": {
+            "meaning": "成品销货主表父节点ID",
+            "reachable": true,
+            "name": "成品销货主表父节点ID"
+        },
+        "prdSalPersonHandlingTransactionId": {
+            "meaning": "成品销货主表经手人(员工)id",
+            "reachable": true,
+            "name": "成品销货主表经手人"
+        },
+        "prdSalPlannedOutputQuantity": {
+            "meaning": "成品销货主表计划产出数量",
+            "reachable": true,
+            "name": "成品销货主表计划产出数量"
+        },
+        "prdSalPlannedTimeRequired": {
+            "meaning": "成品销货主表计划需时(小时)",
+            "reachable": true,
+            "name": "成品销货主表计划需时"
+        },
+        "prdSalPrintTimes": {
+            "meaning": "成品销货主表打印次数",
+            "reachable": true,
+            "name": "成品销货主表打印次数"
+        },
+        "prdSalPriority": {
+            "meaning": "成品销货主表优先级",
+            "reachable": true,
+            "name": "成品销货主表优先级"
+        },
+        "prdSalProcessInstanceId": {
+            "meaning": "成品销货主表流程实例ID",
+            "reachable": true,
+            "name": "成品销货主表流程实例ID"
+        },
+        "prdSalProductionProcessesTypeId": {
+            "meaning": "成品销货主表工序类型ID",
+            "reachable": true,
+            "name": "成品销货主表工序类型ID"
+        },
+        "prdSalProductionShiftId": {
+            "meaning": "成品销货主表生产班次ID",
+            "reachable": true,
+            "name": "成品销货主表生产班次ID"
+        },
+        "prdSalQuantity": {
+            "meaning": "成品销货主表任务数量",
+            "reachable": true,
+            "name": "成品销货主表任务数量"
+        },
+        "prdSalReceiptCustomerOrSupplierId": {
+            "meaning": "成品销货主表收货客户/供应商id",
+            "reachable": true,
+            "name": "成品销货主表收货客户/供应商id"
+        },
+        "prdSalReceiptDate": {
+            "meaning": "成品销货主表单据日期",
+            "reachable": true,
+            "name": "成品销货主表单据日期"
+        },
+        "prdSalReceiptType": {
+            "meaning": "成品销货主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品销货主表单据类型"
+        },
+        "prdSalRelatedTasksId": {
+            "meaning": "成品销货主表关联任务id",
+            "reachable": true,
+            "name": "成品销货主表关联任务id"
+        },
+        "prdSalSerialNumber": {
+            "meaning": "成品销货主表顺序号",
+            "reachable": true,
+            "name": "成品销货主表顺序号"
+        },
+        "prdSalSettleAccountId": {
+            "meaning": "成品销货主表结算客户_id",
+            "reachable": true,
+            "name": "成品销货主表结算客户_id"
+        },
+        "prdSalSettleAccountMode": {
+            "meaning": "成品销货主表结算方式",
+            "reachable": true,
+            "name": "成品销货主表结算方式"
+        },
+        "prdSalSettlementCustomerOrSupplierId": {
+            "meaning": "成品销货主表结算供应商/客户",
+            "reachable": true,
+            "name": "成品销货主表结算供应商/客户"
+        },
+        "prdSalSource": {
+            "meaning": "成品销货主表源",
+            "reachable": true,
+            "name": "成品销货主表源"
+        },
+        "prdSalSourceOddNumber": {
+            "meaning": "成品销货主表源单号",
+            "reachable": true,
+            "name": "成品销货主表源单号"
+        },
+        "prdSalSourceType": {
+            "meaning": "成品销货主表来源类型",
+            "reachable": true,
+            "name": "成品销货主表来源类型"
+        },
+        "prdSalState": {
+            "meaning": "成品销货主表通用状态",
+            "reachable": true,
+            "name": "成品销货主表通用状态"
+        },
+        "prdSalSystemCode": {
+            "meaning": "成品销货主表系统编码",
+            "reachable": true,
+            "name": "成品销货主表系统编码"
+        },
+        "prdSalTarget": {
+            "meaning": "成品销货主表目标",
+            "reachable": true,
+            "name": "成品销货主表目标"
+        },
+        "prdSalTaskNodeName": {
+            "meaning": "成品销货主表任务节点名称",
+            "reachable": true,
+            "name": "成品销货主表任务节点名称"
+        },
+        "prdSalTenantId": {
+            "meaning": "成品销货主表租户_id",
+            "reachable": true,
+            "name": "成品销货主表租户_id"
+        },
+        "prdSalThirdPartyClass": {
+            "meaning": "成品销货主表第三方分类",
+            "reachable": true,
+            "name": "成品销货主表第三方分类"
+        },
+        "prdSalThirdPartyId": {
+            "meaning": "成品销货主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品销货主表第三方系统中的唯一ID"
+        },
+        "prdSalThirdPartyName": {
+            "meaning": "成品销货主表第三方名称",
+            "reachable": true,
+            "name": "成品销货主表第三方名称"
+        },
+        "prdSalToAuditDate": {
+            "meaning": "prdSalToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToBeginTime": {
+            "meaning": "prdSalToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToCreateTime": {
+            "meaning": "prdSalToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToCustServiceDepartmentSignTime": {
+            "type": "object",
+            "meaning": "prdSalToCustServiceDepartmentSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDateExtra1": {
+            "meaning": "prdSalToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDateExtra2": {
+            "meaning": "prdSalToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDateExtra3": {
+            "meaning": "prdSalToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDateExtra4": {
+            "meaning": "prdSalToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDateExtra5": {
+            "meaning": "prdSalToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToDeliveryDate": {
+            "meaning": "prdSalToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToEndTime": {
+            "meaning": "prdSalToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToLoadCompletionTime": {
+            "type": "object",
+            "meaning": "prdSalToLoadCompletionTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToLoadStartTime": {
+            "type": "object",
+            "meaning": "prdSalToLoadStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToMainlandFinanceSignTime": {
+            "type": "object",
+            "meaning": "prdSalToMainlandFinanceSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToMinistryOfTransportSignTime": {
+            "type": "object",
+            "meaning": "prdSalToMinistryOfTransportSignTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToReceiptDate": {
+            "meaning": "prdSalToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalToUpdateTime": {
+            "meaning": "prdSalToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdSalType": {
+            "meaning": "成品销货主表类型",
+            "reachable": true,
+            "name": "成品销货主表类型"
+        },
+        "prdSalUnderBond": {
+            "meaning": "成品销货主表保税",
+            "reachable": true,
+            "name": "成品销货主表保税"
+        },
+        "prdSalUnitCode": {
+            "meaning": "成品销货主表单位id",
+            "reachable": true,
+            "name": "成品销货主表单位id"
+        },
+        "prdSalUpdateTime": {
+            "meaning": "成品销货主表更新时间",
+            "reachable": true,
+            "name": "成品销货主表更新时间"
+        },
+        "prdSalUpdater": {
+            "meaning": "成品销货主表更新人",
+            "reachable": true,
+            "name": "成品销货主表更新人"
+        },
+        "prdSalUpdaterId": {
+            "meaning": "成品销货主表更新人ID",
+            "reachable": true,
+            "name": "成品销货主表更新人ID"
+        },
+        "prdSalUserCode": {
+            "meaning": "成品销货主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品销货主表智能节点的唯一编码"
+        },
+        "prdSalVarExtra1": {
+            "meaning": "成品销货主表扩展1",
+            "reachable": true,
+            "name": "成品销货主表扩展1"
+        },
+        "prdSalVarExtra2": {
+            "meaning": "成品销货主表扩展2",
+            "reachable": true,
+            "name": "成品销货主表扩展2"
+        },
+        "prdSalVarExtra3": {
+            "meaning": "成品销货主表扩展3",
+            "reachable": true,
+            "name": "成品销货主表扩展3"
+        },
+        "prdSalVarExtra4": {
+            "meaning": "成品销货主表扩展4",
+            "reachable": true,
+            "name": "成品销货主表扩展4"
+        },
+        "prdSalVarExtra5": {
+            "meaning": "成品销货主表扩展5",
+            "reachable": true,
+            "name": "成品销货主表扩展5"
+        },
+        "prdSalVersion": {
+            "meaning": "成品销货主表版本号",
+            "reachable": true,
+            "name": "成品销货主表版本号"
+        }
+    }
+}

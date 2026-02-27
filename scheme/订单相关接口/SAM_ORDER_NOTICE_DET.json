@@ -1,0 +1,1257 @@
+{
+    "api_name": "/sam-order-notice-det/findList",
+    "table_name": "打样通知单明细",
+    "request": {
+        "samOrderNoticeDetSamOrderNoticeClazz": "SAM_ORDER_NOTICE",
+        "samOrderNoticeDetClazz": "SAM_ORDER_NOTICE_DET"
+    },
+    "mainTabClazz": "SAM_ORDER_NOTICE_DET",
+    "response": {
+        "MOrderNoticeDetSamOrderNoticeIsManualModificationDate": {
+            "meaning": "打样通知单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "打样通知单明细是否手动修改计划生产时间"
+        },
+        "orderNoticeDetSamOrderNoticeProductionProcessesTypeId": {
+            "meaning": "打样通知单明细工序类型ID",
+            "reachable": false,
+            "name": "打样通知单明细工序类型ID"
+        },
+        "samOrderNoticeDetActualTimeRequired": {
+            "meaning": "打样通知单明细实际需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细实际需时"
+        },
+        "samOrderNoticeDetAdjustmentTimeRequired": {
+            "meaning": "打样通知单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "打样通知单明细调整需时"
+        },
+        "samOrderNoticeDetApplicationId": {
+            "meaning": "打样通知单明细应用ID",
+            "reachable": false,
+            "name": "打样通知单明细应用ID"
+        },
+        "samOrderNoticeDetAuditDate": {
+            "meaning": "打样通知单明细审核时间",
+            "reachable": false,
+            "name": "打样通知单明细审核时间"
+        },
+        "samOrderNoticeDetAuditStatus": {
+            "meaning": "打样通知单明细审核状态",
+            "reachable": false,
+            "name": "打样通知单明细审核状态"
+        },
+        "samOrderNoticeDetAvailableScheduleId": {
+            "meaning": "打样通知单明细可用日程id",
+            "reachable": false,
+            "name": "打样通知单明细可用日程id"
+        },
+        "samOrderNoticeDetBeginTime": {
+            "meaning": "打样通知单明细开始时间",
+            "reachable": false,
+            "name": "打样通知单明细开始时间"
+        },
+        "samOrderNoticeDetBizOrderDetQuantity": {
+            "meaning": "打样通知单明细已开业务订单数量（业务订单反写）",
+            "reachable": false,
+            "name": "打样通知单明细已开业务订单数量"
+        },
+        "samOrderNoticeDetBizOrderDetSpareQuantity": {
+            "meaning": "打样通知单明细已开业务订单备品数量（业务订单反写）",
+            "reachable": false,
+            "name": "打样通知单明细已开业务订单备品数量"
+        },
+        "samOrderNoticeDetBizOrderDetSpareStatus": {
+            "meaning": "打样通知单明细已开业务订单备品状态（业务订单反写）",
+            "reachable": false,
+            "name": "打样通知单明细已开业务订单备品状态"
+        },
+        "samOrderNoticeDetBizOrderDetStatus": {
+            "meaning": "打样通知单明细已开业务订单状态（业务订单反写）",
+            "reachable": false,
+            "name": "打样通知单明细已开业务订单状态"
+        },
+        "samOrderNoticeDetBizVersion": {
+            "meaning": "打样通知单明细业务自定义版本号",
+            "reachable": false,
+            "name": "打样通知单明细业务自定义版本号"
+        },
+        "samOrderNoticeDetBriefName": {
+            "meaning": "打样通知单明细简称",
+            "reachable": false,
+            "name": "打样通知单明细简称"
+        },
+        "samOrderNoticeDetBusDivisId": {
+            "meaning": "打样通知单明细事业部id",
+            "reachable": false,
+            "name": "打样通知单明细事业部id"
+        },
+        "samOrderNoticeDetClazz": {
+            "meaning": "打样通知单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "打样通知单明细子类"
+        },
+        "samOrderNoticeDetClosedReason": {
+            "meaning": "打样通知单明细结案原因",
+            "reachable": false,
+            "name": "打样通知单明细结案原因"
+        },
+        "samOrderNoticeDetClosedStatus": {
+            "meaning": "打样通知单明细结案状态",
+            "reachable": false,
+            "name": "打样通知单明细结案状态"
+        },
+        "samOrderNoticeDetComment": {
+            "meaning": "打样通知单明细评论",
+            "reachable": false,
+            "name": "打样通知单明细评论"
+        },
+        "samOrderNoticeDetCompleteQuantity": {
+            "meaning": "打样通知单明细完成数量",
+            "reachable": false,
+            "name": "打样通知单明细完成数量"
+        },
+        "samOrderNoticeDetCompleteStatus": {
+            "meaning": "打样通知单明细完成状态",
+            "reachable": false,
+            "name": "打样通知单明细完成状态"
+        },
+        "samOrderNoticeDetCreateTime": {
+            "meaning": "打样通知单明细创建时间",
+            "reachable": false,
+            "name": "打样通知单明细创建时间"
+        },
+        "samOrderNoticeDetCreator": {
+            "meaning": "打样通知单明细创建人",
+            "reachable": false,
+            "name": "打样通知单明细创建人"
+        },
+        "samOrderNoticeDetCreatorId": {
+            "meaning": "打样通知单明细创建人ID",
+            "reachable": false,
+            "name": "打样通知单明细创建人ID"
+        },
+        "samOrderNoticeDetDateExtra1": {
+            "meaning": "打样通知单明细扩展时间1",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间1"
+        },
+        "samOrderNoticeDetDateExtra2": {
+            "meaning": "打样通知单明细扩展时间2",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间2"
+        },
+        "samOrderNoticeDetDateExtra3": {
+            "meaning": "打样通知单明细扩展时间3",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间3"
+        },
+        "samOrderNoticeDetDateExtra4": {
+            "meaning": "打样通知单明细扩展时间4",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间4"
+        },
+        "samOrderNoticeDetDateExtra5": {
+            "meaning": "打样通知单明细扩展时间5",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间5"
+        },
+        "samOrderNoticeDetDefaultType": {
+            "meaning": "打样通知单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "打样通知单明细智能节点主类型"
+        },
+        "samOrderNoticeDetDeliveryDate": {
+            "meaning": "打样通知单明细交货日期",
+            "reachable": false,
+            "name": "打样通知单明细交货日期"
+        },
+        "samOrderNoticeDetDescription": {
+            "meaning": "打样通知单明细描述",
+            "reachable": false,
+            "name": "打样通知单明细描述"
+        },
+        "samOrderNoticeDetEndTime": {
+            "meaning": "打样通知单明细结束时间",
+            "reachable": false,
+            "name": "打样通知单明细结束时间"
+        },
+        "samOrderNoticeDetEndTimeRequired": {
+            "meaning": "打样通知单明细最后需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细最后需时"
+        },
+        "samOrderNoticeDetEngName": {
+            "meaning": "打样通知单明细英文名称",
+            "reachable": false,
+            "name": "打样通知单明细英文名称"
+        },
+        "samOrderNoticeDetEquipmentId": {
+            "meaning": "打样通知单明细设备id",
+            "reachable": false,
+            "name": "打样通知单明细设备id"
+        },
+        "samOrderNoticeDetExchangeRateId": {
+            "meaning": "打样通知单明细币种汇率id",
+            "reachable": false,
+            "name": "打样通知单明细币种汇率id"
+        },
+        "samOrderNoticeDetExtension": {
+            "meaning": "打样通知单明细扩展数据",
+            "reachable": false,
+            "name": "打样通知单明细扩展数据"
+        },
+        "samOrderNoticeDetExternalState": {
+            "meaning": "打样通知单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "打样通知单明细上流程状态位"
+        },
+        "samOrderNoticeDetFilterClazz": {
+            "meaning": "打样通知单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "打样通知单明细冗余字段用于筛选"
+        },
+        "samOrderNoticeDetFlags": {
+            "meaning": "打样通知单明细63位标志位",
+            "reachable": false,
+            "name": "打样通知单明细63位标志位"
+        },
+        "samOrderNoticeDetFromAuditDate": {
+            "meaning": "samOrderNoticeDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromBeginTime": {
+            "meaning": "samOrderNoticeDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromCreateTime": {
+            "meaning": "samOrderNoticeDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDateExtra1": {
+            "meaning": "samOrderNoticeDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDateExtra2": {
+            "meaning": "samOrderNoticeDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDateExtra3": {
+            "meaning": "samOrderNoticeDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDateExtra4": {
+            "meaning": "samOrderNoticeDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDateExtra5": {
+            "meaning": "samOrderNoticeDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromDeliveryDate": {
+            "meaning": "samOrderNoticeDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromEndTime": {
+            "meaning": "samOrderNoticeDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromReceiptDate": {
+            "meaning": "samOrderNoticeDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFromUpdateTime": {
+            "meaning": "samOrderNoticeDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetFscType": {
+            "meaning": "打样通知单明细FSC声明",
+            "reachable": false,
+            "name": "打样通知单明细FSC声明"
+        },
+        "samOrderNoticeDetGenerativePeople": {
+            "meaning": "打样通知单明细下发人",
+            "reachable": false,
+            "name": "打样通知单明细下发人"
+        },
+        "samOrderNoticeDetGenerativeState": {
+            "meaning": "打样通知单明细下发状态",
+            "reachable": false,
+            "name": "打样通知单明细下发状态"
+        },
+        "samOrderNoticeDetGroovyScript": {
+            "meaning": "打样通知单明细groovy脚本",
+            "reachable": false,
+            "name": "打样通知单明细groovy脚本"
+        },
+        "samOrderNoticeDetGropeCode": {
+            "meaning": "打样通知单明细搜索码",
+            "reachable": false,
+            "name": "打样通知单明细搜索码"
+        },
+        "samOrderNoticeDetId": {
+            "meaning": "打样通知单明细pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "打样通知单明细pk"
+        },
+        "samOrderNoticeDetInUsed": {
+            "meaning": "打样通知单明细是否被使用",
+            "reachable": false,
+            "name": "打样通知单明细是否被使用"
+        },
+        "samOrderNoticeDetInvTypeTaxRateId": {
+            "meaning": "打样通知单明细发票税率id",
+            "reachable": false,
+            "name": "打样通知单明细发票税率id"
+        },
+        "samOrderNoticeDetIsBanned": {
+            "meaning": "打样通知单明细是否被禁用",
+            "reachable": false,
+            "name": "打样通知单明细是否被禁用"
+        },
+        "samOrderNoticeDetIsDeleted": {
+            "meaning": "打样通知单明细是否被删除",
+            "reachable": false,
+            "name": "打样通知单明细是否被删除"
+        },
+        "samOrderNoticeDetIsLeaf": {
+            "meaning": "打样通知单明细是否叶子节点",
+            "reachable": false,
+            "name": "打样通知单明细是否叶子节点"
+        },
+        "samOrderNoticeDetIsMainFlow": {
+            "meaning": "打样通知单明细是否是主流程",
+            "reachable": false,
+            "name": "打样通知单明细是否是主流程"
+        },
+        "samOrderNoticeDetIsManualModificationDate": {
+            "meaning": "打样通知单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "打样通知单明细是否手动修改计划生产时间"
+        },
+        "samOrderNoticeDetIsolation": {
+            "meaning": "打样通知单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "打样通知单明细智能节点数据隔离标识"
+        },
+        "samOrderNoticeDetJsScript": {
+            "meaning": "打样通知单明细js脚本",
+            "reachable": false,
+            "name": "打样通知单明细js脚本"
+        },
+        "samOrderNoticeDetMaterialId": {
+            "meaning": "打样通知单明细物料id",
+            "reachable": false,
+            "name": "打样通知单明细物料id"
+        },
+        "samOrderNoticeDetName": {
+            "meaning": "打样通知单明细智能节点名",
+            "reachable": false,
+            "name": "打样通知单明细智能节点名"
+        },
+        "samOrderNoticeDetNameCodeSearch": {
+            "meaning": "打样通知单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "打样通知单明细name、user_code模糊搜索"
+        },
+        "samOrderNoticeDetNumberExtra1": {
+            "meaning": "打样通知单明细扩展数量1",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量1"
+        },
+        "samOrderNoticeDetNumberExtra2": {
+            "meaning": "打样通知单明细扩展数量2",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量2"
+        },
+        "samOrderNoticeDetNumberExtra3": {
+            "meaning": "打样通知单明细扩展数量3",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量3"
+        },
+        "samOrderNoticeDetNumberExtra4": {
+            "meaning": "打样通知单明细扩展数量4",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量4"
+        },
+        "samOrderNoticeDetNumberExtra5": {
+            "meaning": "打样通知单明细扩展数量5",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量5"
+        },
+        "samOrderNoticeDetParentId": {
+            "meaning": "打样通知单明细父节点ID",
+            "reachable": false,
+            "name": "打样通知单明细父节点ID"
+        },
+        "samOrderNoticeDetPlannedOutputQuantity": {
+            "meaning": "打样通知单明细计划产出数量",
+            "reachable": false,
+            "name": "打样通知单明细计划产出数量"
+        },
+        "samOrderNoticeDetPlannedTimeRequired": {
+            "meaning": "打样通知单明细计划需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细计划需时"
+        },
+        "samOrderNoticeDetPrintTimes": {
+            "meaning": "打样通知单明细打印次数",
+            "reachable": false,
+            "name": "打样通知单明细打印次数"
+        },
+        "samOrderNoticeDetPriority": {
+            "meaning": "打样通知单明细优先级",
+            "reachable": false,
+            "name": "打样通知单明细优先级"
+        },
+        "samOrderNoticeDetProcessInstanceId": {
+            "meaning": "打样通知单明细流程实例ID",
+            "reachable": false,
+            "name": "打样通知单明细流程实例ID"
+        },
+        "samOrderNoticeDetProductionProcessesTypeId": {
+            "meaning": "打样通知单明细工序类型ID",
+            "reachable": false,
+            "name": "打样通知单明细工序类型ID"
+        },
+        "samOrderNoticeDetProductionShiftId": {
+            "meaning": "打样通知单明细生产班次ID",
+            "reachable": false,
+            "name": "打样通知单明细生产班次ID"
+        },
+        "samOrderNoticeDetQuantity": {
+            "meaning": "打样通知单明细任务数量",
+            "reachable": false,
+            "name": "打样通知单明细任务数量"
+        },
+        "samOrderNoticeDetReceiptDate": {
+            "meaning": "打样通知单明细单据日期",
+            "reachable": false,
+            "name": "打样通知单明细单据日期"
+        },
+        "samOrderNoticeDetReceiptType": {
+            "meaning": "打样通知单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "打样通知单明细单据类型"
+        },
+        "samOrderNoticeDetRelatedTasksId": {
+            "meaning": "打样通知单明细关联任务id",
+            "reachable": false,
+            "name": "打样通知单明细关联任务id"
+        },
+        "samOrderNoticeDetSamOrderNoticeActualTimeRequired": {
+            "meaning": "打样通知单明细实际需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细实际需时"
+        },
+        "samOrderNoticeDetSamOrderNoticeAdjustmentTimeRequired": {
+            "meaning": "打样通知单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "打样通知单明细调整需时"
+        },
+        "samOrderNoticeDetSamOrderNoticeAppearRequ": {
+            "meaning": "打样通知单明细产品结构下外观要求",
+            "reachable": false,
+            "name": "打样通知单明细产品结构下外观要求"
+        },
+        "samOrderNoticeDetSamOrderNoticeApplicationId": {
+            "meaning": "打样通知单明细应用ID",
+            "reachable": false,
+            "name": "打样通知单明细应用ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeAuditDate": {
+            "meaning": "打样通知单明细审核时间",
+            "reachable": false,
+            "name": "打样通知单明细审核时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeAuditStatus": {
+            "meaning": "打样通知单明细审核状态",
+            "reachable": false,
+            "name": "打样通知单明细审核状态"
+        },
+        "samOrderNoticeDetSamOrderNoticeAvailableScheduleId": {
+            "meaning": "打样通知单明细可用日程id",
+            "reachable": false,
+            "name": "打样通知单明细可用日程id"
+        },
+        "samOrderNoticeDetSamOrderNoticeBeginTime": {
+            "meaning": "打样通知单明细开始时间",
+            "reachable": false,
+            "name": "打样通知单明细开始时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeBizVersion": {
+            "meaning": "打样通知单明细业务自定义版本号",
+            "reachable": false,
+            "name": "打样通知单明细业务自定义版本号"
+        },
+        "samOrderNoticeDetSamOrderNoticeBriefName": {
+            "meaning": "打样通知单明细简称",
+            "reachable": false,
+            "name": "打样通知单明细简称"
+        },
+        "samOrderNoticeDetSamOrderNoticeBusDivisId": {
+            "meaning": "打样通知单明细事业部id",
+            "reachable": false,
+            "name": "打样通知单明细事业部id"
+        },
+        "samOrderNoticeDetSamOrderNoticeClazz": {
+            "meaning": "打样通知单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "打样通知单明细子类"
+        },
+        "samOrderNoticeDetSamOrderNoticeClosedReason": {
+            "meaning": "打样通知单明细结案原因",
+            "reachable": false,
+            "name": "打样通知单明细结案原因"
+        },
+        "samOrderNoticeDetSamOrderNoticeClosedStatus": {
+            "meaning": "打样通知单明细结案状态",
+            "reachable": false,
+            "name": "打样通知单明细结案状态"
+        },
+        "samOrderNoticeDetSamOrderNoticeComment": {
+            "meaning": "打样通知单明细评论",
+            "reachable": false,
+            "name": "打样通知单明细评论"
+        },
+        "samOrderNoticeDetSamOrderNoticeCompleteQuantity": {
+            "meaning": "打样通知单明细完成数量",
+            "reachable": false,
+            "name": "打样通知单明细完成数量"
+        },
+        "samOrderNoticeDetSamOrderNoticeCompleteStatus": {
+            "meaning": "打样通知单明细完成状态",
+            "reachable": false,
+            "name": "打样通知单明细完成状态"
+        },
+        "samOrderNoticeDetSamOrderNoticeCreateTime": {
+            "meaning": "打样通知单明细创建时间",
+            "reachable": false,
+            "name": "打样通知单明细创建时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeCreator": {
+            "meaning": "打样通知单明细创建人",
+            "reachable": false,
+            "name": "打样通知单明细创建人"
+        },
+        "samOrderNoticeDetSamOrderNoticeCreatorId": {
+            "meaning": "打样通知单明细创建人ID",
+            "reachable": false,
+            "name": "打样通知单明细创建人ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeCustId": {
+            "meaning": "打样通知单明细客户id",
+            "reachable": false,
+            "name": "打样通知单明细客户id"
+        },
+        "samOrderNoticeDetSamOrderNoticeDateExtra1": {
+            "meaning": "打样通知单明细扩展时间1",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间1"
+        },
+        "samOrderNoticeDetSamOrderNoticeDateExtra2": {
+            "meaning": "打样通知单明细扩展时间2",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间2"
+        },
+        "samOrderNoticeDetSamOrderNoticeDateExtra3": {
+            "meaning": "打样通知单明细扩展时间3",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间3"
+        },
+        "samOrderNoticeDetSamOrderNoticeDateExtra4": {
+            "meaning": "打样通知单明细扩展时间4",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间4"
+        },
+        "samOrderNoticeDetSamOrderNoticeDateExtra5": {
+            "meaning": "打样通知单明细扩展时间5",
+            "reachable": false,
+            "name": "打样通知单明细扩展时间5"
+        },
+        "samOrderNoticeDetSamOrderNoticeDefaultType": {
+            "meaning": "打样通知单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "打样通知单明细智能节点主类型"
+        },
+        "samOrderNoticeDetSamOrderNoticeDeliveryDate": {
+            "meaning": "打样通知单明细交货日期",
+            "reachable": false,
+            "name": "打样通知单明细交货日期"
+        },
+        "samOrderNoticeDetSamOrderNoticeDescription": {
+            "meaning": "打样通知单明细描述",
+            "reachable": false,
+            "name": "打样通知单明细描述"
+        },
+        "samOrderNoticeDetSamOrderNoticeEndTime": {
+            "meaning": "打样通知单明细结束时间",
+            "reachable": false,
+            "name": "打样通知单明细结束时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeEndTimeRequired": {
+            "meaning": "打样通知单明细最后需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细最后需时"
+        },
+        "samOrderNoticeDetSamOrderNoticeEngName": {
+            "meaning": "打样通知单明细英文名称",
+            "reachable": false,
+            "name": "打样通知单明细英文名称"
+        },
+        "samOrderNoticeDetSamOrderNoticeEquipmentId": {
+            "meaning": "打样通知单明细设备id",
+            "reachable": false,
+            "name": "打样通知单明细设备id"
+        },
+        "samOrderNoticeDetSamOrderNoticeExchangeRateId": {
+            "meaning": "打样通知单明细币种汇率id",
+            "reachable": false,
+            "name": "打样通知单明细币种汇率id"
+        },
+        "samOrderNoticeDetSamOrderNoticeExtension": {
+            "meaning": "打样通知单明细扩展数据",
+            "reachable": false,
+            "name": "打样通知单明细扩展数据"
+        },
+        "samOrderNoticeDetSamOrderNoticeExternalState": {
+            "meaning": "打样通知单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "打样通知单明细上流程状态位"
+        },
+        "samOrderNoticeDetSamOrderNoticeFilterClazz": {
+            "meaning": "打样通知单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "打样通知单明细冗余字段用于筛选"
+        },
+        "samOrderNoticeDetSamOrderNoticeFlags": {
+            "meaning": "打样通知单明细63位标志位",
+            "reachable": false,
+            "name": "打样通知单明细63位标志位"
+        },
+        "samOrderNoticeDetSamOrderNoticeFromAuditDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromBeginTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromCreateTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDateExtra1": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDateExtra2": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDateExtra3": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDateExtra4": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDateExtra5": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromDeliveryDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromEndTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromReceiptDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFromUpdateTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeFscType": {
+            "meaning": "打样通知单明细FSC声明",
+            "reachable": false,
+            "name": "打样通知单明细FSC声明"
+        },
+        "samOrderNoticeDetSamOrderNoticeGenerativePeople": {
+            "meaning": "打样通知单明细下发人",
+            "reachable": false,
+            "name": "打样通知单明细下发人"
+        },
+        "samOrderNoticeDetSamOrderNoticeGenerativeState": {
+            "meaning": "打样通知单明细下发状态",
+            "reachable": false,
+            "name": "打样通知单明细下发状态"
+        },
+        "samOrderNoticeDetSamOrderNoticeGroovyScript": {
+            "meaning": "打样通知单明细groovy脚本",
+            "reachable": false,
+            "name": "打样通知单明细groovy脚本"
+        },
+        "samOrderNoticeDetSamOrderNoticeGropeCode": {
+            "meaning": "打样通知单明细搜索码",
+            "reachable": false,
+            "name": "打样通知单明细搜索码"
+        },
+        "samOrderNoticeDetSamOrderNoticeHandleMethod": {
+            "meaning": "打样通知单明细处理方式",
+            "reachable": false,
+            "name": "打样通知单明细处理方式"
+        },
+        "samOrderNoticeDetSamOrderNoticeId": {
+            "meaning": "打样通知单明细pk",
+            "reachable": false,
+            "name": "打样通知单明细pk"
+        },
+        "samOrderNoticeDetSamOrderNoticeInUsed": {
+            "meaning": "打样通知单明细是否被使用",
+            "reachable": false,
+            "name": "打样通知单明细是否被使用"
+        },
+        "samOrderNoticeDetSamOrderNoticeInvTypeTaxRateId": {
+            "meaning": "打样通知单明细发票税率id",
+            "reachable": false,
+            "name": "打样通知单明细发票税率id"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsBanned": {
+            "meaning": "打样通知单明细是否被禁用",
+            "reachable": false,
+            "name": "打样通知单明细是否被禁用"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsDeleted": {
+            "meaning": "打样通知单明细是否被删除",
+            "reachable": false,
+            "name": "打样通知单明细是否被删除"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsLeaf": {
+            "meaning": "打样通知单明细是否叶子节点",
+            "reachable": false,
+            "name": "打样通知单明细是否叶子节点"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsMainFlow": {
+            "meaning": "打样通知单明细是否是主流程",
+            "reachable": false,
+            "name": "打样通知单明细是否是主流程"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsManualModificationDate": {
+            "meaning": "打样通知单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "打样通知单明细是否手动修改计划生产时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeIsolation": {
+            "meaning": "打样通知单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "打样通知单明细智能节点数据隔离标识"
+        },
+        "samOrderNoticeDetSamOrderNoticeJsScript": {
+            "meaning": "打样通知单明细js脚本",
+            "reachable": false,
+            "name": "打样通知单明细js脚本"
+        },
+        "samOrderNoticeDetSamOrderNoticeMaterialId": {
+            "meaning": "打样通知单明细物料id",
+            "reachable": false,
+            "name": "打样通知单明细物料id"
+        },
+        "samOrderNoticeDetSamOrderNoticeName": {
+            "meaning": "打样通知单明细智能节点名",
+            "reachable": false,
+            "name": "打样通知单明细智能节点名"
+        },
+        "samOrderNoticeDetSamOrderNoticeNameCodeSearch": {
+            "meaning": "打样通知单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "打样通知单明细name、user_code模糊搜索"
+        },
+        "samOrderNoticeDetSamOrderNoticeNumberExtra1": {
+            "meaning": "打样通知单明细扩展数量1",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量1"
+        },
+        "samOrderNoticeDetSamOrderNoticeNumberExtra2": {
+            "meaning": "打样通知单明细扩展数量2",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量2"
+        },
+        "samOrderNoticeDetSamOrderNoticeNumberExtra3": {
+            "meaning": "打样通知单明细扩展数量3",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量3"
+        },
+        "samOrderNoticeDetSamOrderNoticeNumberExtra4": {
+            "meaning": "打样通知单明细扩展数量4",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量4"
+        },
+        "samOrderNoticeDetSamOrderNoticeNumberExtra5": {
+            "meaning": "打样通知单明细扩展数量5",
+            "reachable": false,
+            "name": "打样通知单明细扩展数量5"
+        },
+        "samOrderNoticeDetSamOrderNoticeParentId": {
+            "meaning": "打样通知单明细父节点ID",
+            "reachable": false,
+            "name": "打样通知单明细父节点ID"
+        },
+        "samOrderNoticeDetSamOrderNoticePlannedOutputQuantity": {
+            "meaning": "打样通知单明细计划产出数量",
+            "reachable": false,
+            "name": "打样通知单明细计划产出数量"
+        },
+        "samOrderNoticeDetSamOrderNoticePlannedTimeRequired": {
+            "meaning": "打样通知单明细计划需时(小时)",
+            "reachable": false,
+            "name": "打样通知单明细计划需时"
+        },
+        "samOrderNoticeDetSamOrderNoticePrintTimes": {
+            "meaning": "打样通知单明细打印次数",
+            "reachable": false,
+            "name": "打样通知单明细打印次数"
+        },
+        "samOrderNoticeDetSamOrderNoticePriority": {
+            "meaning": "打样通知单明细优先级",
+            "reachable": false,
+            "name": "打样通知单明细优先级"
+        },
+        "samOrderNoticeDetSamOrderNoticeProCode": {
+            "meaning": "打样通知单明细项目编码",
+            "reachable": false,
+            "name": "打样通知单明细项目编码"
+        },
+        "samOrderNoticeDetSamOrderNoticeProName": {
+            "meaning": "打样通知单明细项目名称",
+            "reachable": false,
+            "name": "打样通知单明细项目名称"
+        },
+        "samOrderNoticeDetSamOrderNoticeProcessInstanceId": {
+            "meaning": "打样通知单明细流程实例ID",
+            "reachable": false,
+            "name": "打样通知单明细流程实例ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeProductionProcessesTypeId": {
+            "meaning": "打样通知单明细工序类型ID",
+            "reachable": false,
+            "name": "打样通知单明细工序类型ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeProductionShiftId": {
+            "meaning": "打样通知单明细生产班次ID",
+            "reachable": false,
+            "name": "打样通知单明细生产班次ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeQuantity": {
+            "meaning": "打样通知单明细任务数量",
+            "reachable": false,
+            "name": "打样通知单明细任务数量"
+        },
+        "samOrderNoticeDetSamOrderNoticeReason": {
+            "meaning": "打样通知单明细打样原因",
+            "reachable": false,
+            "name": "打样通知单明细打样原因"
+        },
+        "samOrderNoticeDetSamOrderNoticeReasonDesc": {
+            "meaning": "打样通知单明细研发原因描述",
+            "reachable": false,
+            "name": "打样通知单明细研发原因描述"
+        },
+        "samOrderNoticeDetSamOrderNoticeReceiptDate": {
+            "meaning": "打样通知单明细单据日期",
+            "reachable": false,
+            "name": "打样通知单明细单据日期"
+        },
+        "samOrderNoticeDetSamOrderNoticeReceiptType": {
+            "meaning": "打样通知单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "打样通知单明细单据类型"
+        },
+        "samOrderNoticeDetSamOrderNoticeRelatedTasksId": {
+            "meaning": "打样通知单明细关联任务id",
+            "reachable": false,
+            "name": "打样通知单明细关联任务id"
+        },
+        "samOrderNoticeDetSamOrderNoticeSerialNumber": {
+            "meaning": "打样通知单明细顺序号",
+            "reachable": false,
+            "name": "打样通知单明细顺序号"
+        },
+        "samOrderNoticeDetSamOrderNoticeSource": {
+            "meaning": "打样通知单明细源",
+            "reachable": false,
+            "name": "打样通知单明细源"
+        },
+        "samOrderNoticeDetSamOrderNoticeSourceType": {
+            "meaning": "打样通知单明细来源类型",
+            "reachable": false,
+            "name": "打样通知单明细来源类型"
+        },
+        "samOrderNoticeDetSamOrderNoticeState": {
+            "meaning": "打样通知单明细通用状态",
+            "reachable": false,
+            "name": "打样通知单明细通用状态"
+        },
+        "samOrderNoticeDetSamOrderNoticeSystemCode": {
+            "meaning": "打样通知单明细系统编码",
+            "reachable": false,
+            "name": "打样通知单明细系统编码"
+        },
+        "samOrderNoticeDetSamOrderNoticeTarget": {
+            "meaning": "打样通知单明细目标",
+            "reachable": false,
+            "name": "打样通知单明细目标"
+        },
+        "samOrderNoticeDetSamOrderNoticeTaskNodeName": {
+            "meaning": "打样通知单明细任务节点名称",
+            "reachable": false,
+            "name": "打样通知单明细任务节点名称"
+        },
+        "samOrderNoticeDetSamOrderNoticeTechParam": {
+            "meaning": "打样通知单明细产品关键参数与技术指标",
+            "reachable": false,
+            "name": "打样通知单明细产品关键参数与技术指标"
+        },
+        "samOrderNoticeDetSamOrderNoticeTenantId": {
+            "meaning": "打样通知单明细租户ID",
+            "reachable": false,
+            "name": "打样通知单明细租户ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeThirdPartyClass": {
+            "meaning": "打样通知单明细第三方分类",
+            "reachable": false,
+            "name": "打样通知单明细第三方分类"
+        },
+        "samOrderNoticeDetSamOrderNoticeThirdPartyId": {
+            "meaning": "打样通知单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "打样通知单明细第三方系统中的唯一ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeThirdPartyName": {
+            "meaning": "打样通知单明细第三方名称",
+            "reachable": false,
+            "name": "打样通知单明细第三方名称"
+        },
+        "samOrderNoticeDetSamOrderNoticeToAuditDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToBeginTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToCreateTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDateExtra1": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDateExtra2": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDateExtra3": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDateExtra4": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDateExtra5": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToDeliveryDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToEndTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToReceiptDate": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeToUpdateTime": {
+            "meaning": "samOrderNoticeDetSamOrderNoticeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetSamOrderNoticeUnitCode": {
+            "meaning": "打样通知单明细单位id",
+            "reachable": false,
+            "name": "打样通知单明细单位id"
+        },
+        "samOrderNoticeDetSamOrderNoticeUpdateTime": {
+            "meaning": "打样通知单明细更新时间",
+            "reachable": false,
+            "name": "打样通知单明细更新时间"
+        },
+        "samOrderNoticeDetSamOrderNoticeUpdater": {
+            "meaning": "打样通知单明细更新人",
+            "reachable": false,
+            "name": "打样通知单明细更新人"
+        },
+        "samOrderNoticeDetSamOrderNoticeUpdaterId": {
+            "meaning": "打样通知单明细更新人ID",
+            "reachable": false,
+            "name": "打样通知单明细更新人ID"
+        },
+        "samOrderNoticeDetSamOrderNoticeUserCode": {
+            "meaning": "打样通知单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "打样通知单明细智能节点的唯一编码"
+        },
+        "samOrderNoticeDetSamOrderNoticeVarExtra1": {
+            "meaning": "打样通知单明细扩展1",
+            "reachable": false,
+            "name": "打样通知单明细扩展1"
+        },
+        "samOrderNoticeDetSamOrderNoticeVarExtra2": {
+            "meaning": "打样通知单明细扩展2",
+            "reachable": false,
+            "name": "打样通知单明细扩展2"
+        },
+        "samOrderNoticeDetSamOrderNoticeVarExtra3": {
+            "meaning": "打样通知单明细扩展3",
+            "reachable": false,
+            "name": "打样通知单明细扩展3"
+        },
+        "samOrderNoticeDetSamOrderNoticeVarExtra4": {
+            "meaning": "打样通知单明细扩展4",
+            "reachable": false,
+            "name": "打样通知单明细扩展4"
+        },
+        "samOrderNoticeDetSamOrderNoticeVarExtra5": {
+            "meaning": "打样通知单明细扩展5",
+            "reachable": false,
+            "name": "打样通知单明细扩展5"
+        },
+        "samOrderNoticeDetSamOrderNoticeVersion": {
+            "meaning": "打样通知单明细版本号",
+            "reachable": false,
+            "name": "打样通知单明细版本号"
+        },
+        "samOrderNoticeDetSerialNumber": {
+            "meaning": "打样通知单明细顺序号",
+            "reachable": false,
+            "name": "打样通知单明细顺序号"
+        },
+        "samOrderNoticeDetSource": {
+            "meaning": "打样通知单明细源",
+            "reachable": false,
+            "name": "打样通知单明细源"
+        },
+        "samOrderNoticeDetSourceType": {
+            "meaning": "打样通知单明细来源类型",
+            "reachable": false,
+            "name": "打样通知单明细来源类型"
+        },
+        "samOrderNoticeDetSpecType": {
+            "meaning": "打样通知单明细规格类型",
+            "reachable": false,
+            "name": "打样通知单明细规格类型"
+        },
+        "samOrderNoticeDetState": {
+            "meaning": "打样通知单明细通用状态",
+            "reachable": false,
+            "name": "打样通知单明细通用状态"
+        },
+        "samOrderNoticeDetSystemCode": {
+            "meaning": "打样通知单明细系统编码",
+            "reachable": false,
+            "name": "打样通知单明细系统编码"
+        },
+        "samOrderNoticeDetTarget": {
+            "meaning": "打样通知单明细目标",
+            "reachable": false,
+            "name": "打样通知单明细目标"
+        },
+        "samOrderNoticeDetTaskNodeName": {
+            "meaning": "打样通知单明细任务节点名称",
+            "reachable": false,
+            "name": "打样通知单明细任务节点名称"
+        },
+        "samOrderNoticeDetTenantId": {
+            "meaning": "打样通知单明细租户ID",
+            "reachable": false,
+            "name": "打样通知单明细租户ID"
+        },
+        "samOrderNoticeDetThirdPartyClass": {
+            "meaning": "打样通知单明细第三方分类",
+            "reachable": false,
+            "name": "打样通知单明细第三方分类"
+        },
+        "samOrderNoticeDetThirdPartyId": {
+            "meaning": "打样通知单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "打样通知单明细第三方系统中的唯一ID"
+        },
+        "samOrderNoticeDetThirdPartyName": {
+            "meaning": "打样通知单明细第三方名称",
+            "reachable": false,
+            "name": "打样通知单明细第三方名称"
+        },
+        "samOrderNoticeDetToAuditDate": {
+            "meaning": "samOrderNoticeDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToBeginTime": {
+            "meaning": "samOrderNoticeDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToCreateTime": {
+            "meaning": "samOrderNoticeDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDateExtra1": {
+            "meaning": "samOrderNoticeDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDateExtra2": {
+            "meaning": "samOrderNoticeDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDateExtra3": {
+            "meaning": "samOrderNoticeDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDateExtra4": {
+            "meaning": "samOrderNoticeDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDateExtra5": {
+            "meaning": "samOrderNoticeDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToDeliveryDate": {
+            "meaning": "samOrderNoticeDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToEndTime": {
+            "meaning": "samOrderNoticeDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToReceiptDate": {
+            "meaning": "samOrderNoticeDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetToUpdateTime": {
+            "meaning": "samOrderNoticeDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "samOrderNoticeDetUnitCode": {
+            "meaning": "打样通知单明细单位id",
+            "reachable": false,
+            "name": "打样通知单明细单位id"
+        },
+        "samOrderNoticeDetUpdateTime": {
+            "meaning": "打样通知单明细更新时间",
+            "reachable": false,
+            "name": "打样通知单明细更新时间"
+        },
+        "samOrderNoticeDetUpdater": {
+            "meaning": "打样通知单明细更新人",
+            "reachable": false,
+            "name": "打样通知单明细更新人"
+        },
+        "samOrderNoticeDetUpdaterId": {
+            "meaning": "打样通知单明细更新人ID",
+            "reachable": false,
+            "name": "打样通知单明细更新人ID"
+        },
+        "samOrderNoticeDetUserCode": {
+            "meaning": "打样通知单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "打样通知单明细智能节点的唯一编码"
+        },
+        "samOrderNoticeDetVarExtra1": {
+            "meaning": "打样通知单明细扩展1",
+            "reachable": false,
+            "name": "打样通知单明细扩展1"
+        },
+        "samOrderNoticeDetVarExtra2": {
+            "meaning": "打样通知单明细扩展2",
+            "reachable": false,
+            "name": "打样通知单明细扩展2"
+        },
+        "samOrderNoticeDetVarExtra3": {
+            "meaning": "打样通知单明细扩展3",
+            "reachable": false,
+            "name": "打样通知单明细扩展3"
+        },
+        "samOrderNoticeDetVarExtra4": {
+            "meaning": "打样通知单明细扩展4",
+            "reachable": false,
+            "name": "打样通知单明细扩展4"
+        },
+        "samOrderNoticeDetVarExtra5": {
+            "meaning": "打样通知单明细扩展5",
+            "reachable": false,
+            "name": "打样通知单明细扩展5"
+        },
+        "samOrderNoticeDetVersion": {
+            "meaning": "打样通知单明细版本号",
+            "reachable": false,
+            "name": "打样通知单明细版本号"
+        }
+    }
+}

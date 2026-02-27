@@ -1,0 +1,1157 @@
+{
+    "api_name": "/material-specification-type/findList",
+    "table_name": "物料规格类型表",
+    "request": {
+        "matSpecTypeATMatUnitClazz": "MATERIAL_UNIT",
+        "matSpecTypeClazz": "MATERIAL_SPECIFICATION_TYPE"
+    },
+    "mainTabClazz": "MATERIAL_SPECIFICATION_TYPE",
+    "response": {
+        "matSpecTypeATMatUnitApplicationId": {
+            "meaning": "物料规格类型表应用ID",
+            "reachable": true,
+            "name": "物料规格类型表应用ID"
+        },
+        "matSpecTypeATMatUnitAuditDate": {
+            "meaning": "matSpecTypeATMatUnitAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitAuditStatus": {
+            "meaning": "物料规格类型表审核状态",
+            "reachable": true,
+            "name": "物料规格类型表审核状态"
+        },
+        "matSpecTypeATMatUnitBizVersion": {
+            "meaning": "物料规格类型表业务自定义版本号",
+            "reachable": true,
+            "name": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeATMatUnitBriefName": {
+            "meaning": "物料规格类型表简称",
+            "reachable": true,
+            "name": "物料规格类型表简称"
+        },
+        "matSpecTypeATMatUnitBusDivisId": {
+            "meaning": "物料规格类型表事业部id",
+            "reachable": true,
+            "name": "物料规格类型表事业部id"
+        },
+        "matSpecTypeATMatUnitClazz": {
+            "meaning": "物料规格类型表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料规格类型表子类"
+        },
+        "matSpecTypeATMatUnitComment": {
+            "meaning": "物料规格类型表评论",
+            "reachable": true,
+            "name": "物料规格类型表评论"
+        },
+        "matSpecTypeATMatUnitCreateTime": {
+            "meaning": "matSpecTypeATMatUnitCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitCreator": {
+            "meaning": "物料规格类型表创建人",
+            "reachable": true,
+            "name": "物料规格类型表创建人"
+        },
+        "matSpecTypeATMatUnitCreatorId": {
+            "meaning": "物料规格类型表创建人ID",
+            "reachable": true,
+            "name": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeATMatUnitDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitDefaultType": {
+            "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料规格类型表智能节点主类型"
+        },
+        "matSpecTypeATMatUnitDescription": {
+            "meaning": "物料规格类型表描述",
+            "reachable": true,
+            "name": "物料规格类型表描述"
+        },
+        "matSpecTypeATMatUnitEngName": {
+            "meaning": "物料规格类型表英文名称",
+            "reachable": true,
+            "name": "物料规格类型表英文名称"
+        },
+        "matSpecTypeATMatUnitExtension": {
+            "meaning": "物料规格类型表扩展数据",
+            "reachable": true,
+            "name": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeATMatUnitExternalState": {
+            "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料规格类型表上流程状态位"
+        },
+        "matSpecTypeATMatUnitFlags": {
+            "meaning": "物料规格类型表63位标志位",
+            "reachable": true,
+            "name": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeATMatUnitFromAuditDate": {
+            "meaning": "matSpecTypeATMatUnitFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromCreateTime": {
+            "meaning": "matSpecTypeATMatUnitFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitFromUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitGroovyScript": {
+            "meaning": "物料规格类型表groovy脚本",
+            "reachable": true,
+            "name": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeATMatUnitGropeCode": {
+            "meaning": "物料规格类型表搜索码",
+            "reachable": true,
+            "name": "物料规格类型表搜索码"
+        },
+        "matSpecTypeATMatUnitId": {
+            "meaning": "matSpecTypeATMatUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitInUsed": {
+            "meaning": "物料规格类型表是否被使用",
+            "reachable": true,
+            "name": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeATMatUnitIsBanned": {
+            "meaning": "物料规格类型表是否被禁用",
+            "reachable": true,
+            "name": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeATMatUnitIsDeleted": {
+            "meaning": "物料规格类型表是否被删除",
+            "reachable": true,
+            "name": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeATMatUnitIsMainFlow": {
+            "meaning": "物料规格类型表是否是主流程",
+            "reachable": true,
+            "name": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeATMatUnitIsolation": {
+            "meaning": "物料规格类型表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeATMatUnitJsScript": {
+            "meaning": "物料规格类型表js脚本",
+            "reachable": true,
+            "name": "物料规格类型表js脚本"
+        },
+        "matSpecTypeATMatUnitName": {
+            "meaning": "物料规格类型表智能节点名",
+            "reachable": true,
+            "name": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeATMatUnitNameCodeSearch": {
+            "meaning": "物料规格类型表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeATMatUnitNumberExtra1": {
+            "meaning": "物料规格类型表扩展数量1",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeATMatUnitNumberExtra2": {
+            "meaning": "物料规格类型表扩展数量2",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeATMatUnitNumberExtra3": {
+            "meaning": "物料规格类型表扩展数量3",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeATMatUnitNumberExtra4": {
+            "meaning": "物料规格类型表扩展数量4",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeATMatUnitNumberExtra5": {
+            "meaning": "物料规格类型表扩展数量5",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeATMatUnitParentId": {
+            "meaning": "物料规格类型表父节点ID",
+            "reachable": true,
+            "name": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeATMatUnitProcessInstanceId": {
+            "meaning": "物料规格类型表流程实例ID",
+            "reachable": true,
+            "name": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeATMatUnitSerialNumber": {
+            "meaning": "物料规格类型表顺序号",
+            "reachable": true,
+            "name": "物料规格类型表顺序号"
+        },
+        "matSpecTypeATMatUnitState": {
+            "meaning": "物料规格类型表通用状态",
+            "reachable": true,
+            "name": "物料规格类型表通用状态"
+        },
+        "matSpecTypeATMatUnitSystemCode": {
+            "meaning": "物料规格类型表系统编码",
+            "reachable": true,
+            "name": "物料规格类型表系统编码"
+        },
+        "matSpecTypeATMatUnitTaskNodeName": {
+            "meaning": "物料规格类型表任务节点名称",
+            "reachable": true,
+            "name": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeATMatUnitTenantId": {
+            "meaning": "matSpecTypeATMatUnitTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitThirdPartyClass": {
+            "meaning": "物料规格类型表第三方分类",
+            "reachable": true,
+            "name": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeATMatUnitThirdPartyId": {
+            "meaning": "物料规格类型表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeATMatUnitThirdPartyName": {
+            "meaning": "物料规格类型表第三方名称",
+            "reachable": true,
+            "name": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeATMatUnitToAuditDate": {
+            "meaning": "matSpecTypeATMatUnitToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToCreateTime": {
+            "meaning": "matSpecTypeATMatUnitToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitToUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeApplicationId": {
+            "meaning": "物料规格类型表应用ID",
+            "reachable": true,
+            "name": "物料规格类型表应用ID"
+        },
+        "matSpecTypeATMatUnitTypeAuditDate": {
+            "meaning": "matSpecTypeATMatUnitTypeAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeAuditStatus": {
+            "meaning": "物料规格类型表审核状态",
+            "reachable": true,
+            "name": "物料规格类型表审核状态"
+        },
+        "matSpecTypeATMatUnitTypeBizVersion": {
+            "meaning": "物料规格类型表业务自定义版本号",
+            "reachable": true,
+            "name": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeATMatUnitTypeBriefName": {
+            "meaning": "物料规格类型表简称",
+            "reachable": true,
+            "name": "物料规格类型表简称"
+        },
+        "matSpecTypeATMatUnitTypeBusDivisId": {
+            "meaning": "物料规格类型表事业部id",
+            "reachable": true,
+            "name": "物料规格类型表事业部id"
+        },
+        "matSpecTypeATMatUnitTypeClazz": {
+            "meaning": "物料规格类型表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料规格类型表子类"
+        },
+        "matSpecTypeATMatUnitTypeCode": {
+            "meaning": "物料规格类型表link类型编码(-查询入参-)",
+            "reachable": true,
+            "name": "物料规格类型表link类型编码"
+        },
+        "matSpecTypeATMatUnitTypeCodes": {
+            "meaning": "物料规格类型表类型Code列表(-查询入参-)",
+            "reachable": true,
+            "name": "物料规格类型表类型Code列表"
+        },
+        "matSpecTypeATMatUnitTypeComment": {
+            "meaning": "物料规格类型表评论",
+            "reachable": true,
+            "name": "物料规格类型表评论"
+        },
+        "matSpecTypeATMatUnitTypeCreateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeCreator": {
+            "meaning": "物料规格类型表创建人",
+            "reachable": true,
+            "name": "物料规格类型表创建人"
+        },
+        "matSpecTypeATMatUnitTypeCreatorId": {
+            "meaning": "物料规格类型表创建人ID",
+            "reachable": true,
+            "name": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitTypeDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitTypeDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitTypeDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitTypeDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitTypeDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDefaultType": {
+            "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料规格类型表智能节点主类型"
+        },
+        "matSpecTypeATMatUnitTypeDefaultUnitId": {
+            "meaning": "matSpecTypeATMatUnitTypeDefaultUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeDescription": {
+            "meaning": "物料规格类型表描述",
+            "reachable": true,
+            "name": "物料规格类型表描述"
+        },
+        "matSpecTypeATMatUnitTypeEngName": {
+            "meaning": "物料规格类型表英文名称",
+            "reachable": true,
+            "name": "物料规格类型表英文名称"
+        },
+        "matSpecTypeATMatUnitTypeExtension": {
+            "meaning": "物料规格类型表扩展数据",
+            "reachable": true,
+            "name": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeATMatUnitTypeExternalState": {
+            "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料规格类型表上流程状态位"
+        },
+        "matSpecTypeATMatUnitTypeFlags": {
+            "meaning": "物料规格类型表63位标志位",
+            "reachable": true,
+            "name": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeATMatUnitTypeFromAuditDate": {
+            "meaning": "matSpecTypeATMatUnitTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromCreateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeFromUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeGroovyScript": {
+            "meaning": "物料规格类型表groovy脚本",
+            "reachable": true,
+            "name": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeATMatUnitTypeGropeCode": {
+            "meaning": "物料规格类型表搜索码",
+            "reachable": true,
+            "name": "物料规格类型表搜索码"
+        },
+        "matSpecTypeATMatUnitTypeId": {
+            "meaning": "matSpecTypeATMatUnitTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeInUsed": {
+            "meaning": "物料规格类型表是否被使用",
+            "reachable": true,
+            "name": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeATMatUnitTypeIsBanned": {
+            "meaning": "物料规格类型表是否被禁用",
+            "reachable": true,
+            "name": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeATMatUnitTypeIsDeleted": {
+            "meaning": "物料规格类型表是否被删除",
+            "reachable": true,
+            "name": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeATMatUnitTypeIsMainFlow": {
+            "meaning": "物料规格类型表是否是主流程",
+            "reachable": true,
+            "name": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeATMatUnitTypeIsolation": {
+            "meaning": "物料规格类型表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeATMatUnitTypeJsScript": {
+            "meaning": "物料规格类型表js脚本",
+            "reachable": true,
+            "name": "物料规格类型表js脚本"
+        },
+        "matSpecTypeATMatUnitTypeName": {
+            "meaning": "物料规格类型表智能节点名",
+            "reachable": true,
+            "name": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeATMatUnitTypeNameCodeSearch": {
+            "meaning": "物料规格类型表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra1": {
+            "meaning": "物料规格类型表扩展数量1",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra2": {
+            "meaning": "物料规格类型表扩展数量2",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra3": {
+            "meaning": "物料规格类型表扩展数量3",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra4": {
+            "meaning": "物料规格类型表扩展数量4",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra5": {
+            "meaning": "物料规格类型表扩展数量5",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeATMatUnitTypeParentId": {
+            "meaning": "物料规格类型表父节点ID",
+            "reachable": true,
+            "name": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeATMatUnitTypeProcessInstanceId": {
+            "meaning": "物料规格类型表流程实例ID",
+            "reachable": true,
+            "name": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeATMatUnitTypeSerialNumber": {
+            "meaning": "物料规格类型表顺序号",
+            "reachable": true,
+            "name": "物料规格类型表顺序号"
+        },
+        "matSpecTypeATMatUnitTypeState": {
+            "meaning": "物料规格类型表通用状态",
+            "reachable": true,
+            "name": "物料规格类型表通用状态"
+        },
+        "matSpecTypeATMatUnitTypeSystemCode": {
+            "meaning": "物料规格类型表系统编码",
+            "reachable": true,
+            "name": "物料规格类型表系统编码"
+        },
+        "matSpecTypeATMatUnitTypeTaskNodeName": {
+            "meaning": "物料规格类型表任务节点名称",
+            "reachable": true,
+            "name": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeATMatUnitTypeTenantId": {
+            "meaning": "matSpecTypeATMatUnitTypeTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyClass": {
+            "meaning": "物料规格类型表第三方分类",
+            "reachable": true,
+            "name": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyId": {
+            "meaning": "物料规格类型表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyName": {
+            "meaning": "物料规格类型表第三方名称",
+            "reachable": true,
+            "name": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeATMatUnitTypeToAuditDate": {
+            "meaning": "matSpecTypeATMatUnitTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToCreateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra1": {
+            "meaning": "matSpecTypeATMatUnitTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra2": {
+            "meaning": "matSpecTypeATMatUnitTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra3": {
+            "meaning": "matSpecTypeATMatUnitTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra4": {
+            "meaning": "matSpecTypeATMatUnitTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra5": {
+            "meaning": "matSpecTypeATMatUnitTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeToUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitTypeUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitTypeUpdater": {
+            "meaning": "物料规格类型表更新人",
+            "reachable": true,
+            "name": "物料规格类型表更新人"
+        },
+        "matSpecTypeATMatUnitTypeUpdaterId": {
+            "meaning": "物料规格类型表更新人ID",
+            "reachable": true,
+            "name": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeATMatUnitTypeUserCode": {
+            "meaning": "物料规格类型表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra1": {
+            "meaning": "物料规格类型表扩展1",
+            "reachable": true,
+            "name": "物料规格类型表扩展1"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra2": {
+            "meaning": "物料规格类型表扩展2",
+            "reachable": true,
+            "name": "物料规格类型表扩展2"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra3": {
+            "meaning": "物料规格类型表扩展3",
+            "reachable": true,
+            "name": "物料规格类型表扩展3"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra4": {
+            "meaning": "物料规格类型表扩展4",
+            "reachable": true,
+            "name": "物料规格类型表扩展4"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra5": {
+            "meaning": "物料规格类型表扩展5",
+            "reachable": true,
+            "name": "物料规格类型表扩展5"
+        },
+        "matSpecTypeATMatUnitTypeVersion": {
+            "meaning": "物料规格类型表版本号",
+            "reachable": true,
+            "name": "物料规格类型表版本号"
+        },
+        "matSpecTypeATMatUnitUpdateTime": {
+            "meaning": "matSpecTypeATMatUnitUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeATMatUnitUpdater": {
+            "meaning": "物料规格类型表更新人",
+            "reachable": true,
+            "name": "物料规格类型表更新人"
+        },
+        "matSpecTypeATMatUnitUpdaterId": {
+            "meaning": "物料规格类型表更新人ID",
+            "reachable": true,
+            "name": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeATMatUnitUserCode": {
+            "meaning": "物料规格类型表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeATMatUnitVarExtra1": {
+            "meaning": "物料规格类型表扩展1",
+            "reachable": true,
+            "name": "物料规格类型表扩展1"
+        },
+        "matSpecTypeATMatUnitVarExtra2": {
+            "meaning": "物料规格类型表扩展2",
+            "reachable": true,
+            "name": "物料规格类型表扩展2"
+        },
+        "matSpecTypeATMatUnitVarExtra3": {
+            "meaning": "物料规格类型表扩展3",
+            "reachable": true,
+            "name": "物料规格类型表扩展3"
+        },
+        "matSpecTypeATMatUnitVarExtra4": {
+            "meaning": "物料规格类型表扩展4",
+            "reachable": true,
+            "name": "物料规格类型表扩展4"
+        },
+        "matSpecTypeATMatUnitVarExtra5": {
+            "meaning": "物料规格类型表扩展5",
+            "reachable": true,
+            "name": "物料规格类型表扩展5"
+        },
+        "matSpecTypeATMatUnitVersion": {
+            "meaning": "物料规格类型表版本号",
+            "reachable": true,
+            "name": "物料规格类型表版本号"
+        },
+        "matSpecTypeApplicationId": {
+            "meaning": "物料规格类型表应用ID",
+            "reachable": true,
+            "name": "物料规格类型表应用ID"
+        },
+        "matSpecTypeAuditDate": {
+            "meaning": "物料规格类型表审核时间",
+            "reachable": true,
+            "name": "物料规格类型表审核时间"
+        },
+        "matSpecTypeAuditStatus": {
+            "meaning": "物料规格类型表审核状态",
+            "reachable": true,
+            "name": "物料规格类型表审核状态"
+        },
+        "matSpecTypeBizVersion": {
+            "meaning": "物料规格类型表业务自定义版本号",
+            "reachable": true,
+            "name": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeBriefName": {
+            "meaning": "物料规格类型表简称",
+            "reachable": true,
+            "name": "物料规格类型表简称"
+        },
+        "matSpecTypeBusDivisId": {
+            "meaning": "物料规格类型表事业部id",
+            "reachable": true,
+            "name": "物料规格类型表事业部id"
+        },
+        "matSpecTypeClazz": {
+            "meaning": "物料规格类型表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "物料规格类型表子类"
+        },
+        "matSpecTypeComment": {
+            "meaning": "物料规格类型表评论",
+            "reachable": true,
+            "name": "物料规格类型表评论"
+        },
+        "matSpecTypeCreateTime": {
+            "meaning": "物料规格类型表创建时间",
+            "reachable": true,
+            "name": "物料规格类型表创建时间"
+        },
+        "matSpecTypeCreator": {
+            "meaning": "物料规格类型表创建人",
+            "reachable": true,
+            "name": "物料规格类型表创建人"
+        },
+        "matSpecTypeCreatorId": {
+            "meaning": "物料规格类型表创建人ID",
+            "reachable": true,
+            "name": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeDateExtra1": {
+            "meaning": "物料规格类型表扩展时间1",
+            "reachable": true,
+            "name": "物料规格类型表扩展时间1"
+        },
+        "matSpecTypeDateExtra2": {
+            "meaning": "物料规格类型表扩展时间2",
+            "reachable": true,
+            "name": "物料规格类型表扩展时间2"
+        },
+        "matSpecTypeDateExtra3": {
+            "meaning": "物料规格类型表扩展时间3",
+            "reachable": true,
+            "name": "物料规格类型表扩展时间3"
+        },
+        "matSpecTypeDateExtra4": {
+            "meaning": "物料规格类型表扩展时间4",
+            "reachable": true,
+            "name": "物料规格类型表扩展时间4"
+        },
+        "matSpecTypeDateExtra5": {
+            "meaning": "物料规格类型表扩展时间5",
+            "reachable": true,
+            "name": "物料规格类型表扩展时间5"
+        },
+        "matSpecTypeDefaultType": {
+            "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "物料规格类型表智能节点主类型"
+        },
+        "matSpecTypeDefaultUnitId": {
+            "meaning": "matSpecTypeDefaultUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeDefaultValue": {
+            "meaning": "matSpecTypeDefaultValue",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeDescription": {
+            "meaning": "物料规格类型表描述",
+            "reachable": true,
+            "name": "物料规格类型表描述"
+        },
+        "matSpecTypeEngName": {
+            "meaning": "物料规格类型表英文名称",
+            "reachable": true,
+            "name": "物料规格类型表英文名称"
+        },
+        "matSpecTypeExtension": {
+            "meaning": "物料规格类型表扩展数据",
+            "reachable": true,
+            "name": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeExternalState": {
+            "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "物料规格类型表上流程状态位"
+        },
+        "matSpecTypeFlags": {
+            "meaning": "物料规格类型表63位标志位",
+            "reachable": true,
+            "name": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeFromAuditDate": {
+            "meaning": "matSpecTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromCreateTime": {
+            "meaning": "matSpecTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromDateExtra1": {
+            "meaning": "matSpecTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromDateExtra2": {
+            "meaning": "matSpecTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromDateExtra3": {
+            "meaning": "matSpecTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromDateExtra4": {
+            "meaning": "matSpecTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromDateExtra5": {
+            "meaning": "matSpecTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeFromUpdateTime": {
+            "meaning": "matSpecTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeGroovyScript": {
+            "meaning": "物料规格类型表groovy脚本",
+            "reachable": true,
+            "name": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeGropeCode": {
+            "meaning": "物料规格类型表搜索码",
+            "reachable": true,
+            "name": "物料规格类型表搜索码"
+        },
+        "matSpecTypeId": {
+            "meaning": "物料规格类型表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "物料规格类型表主键ID"
+        },
+        "matSpecTypeInUsed": {
+            "meaning": "物料规格类型表是否被使用",
+            "reachable": true,
+            "name": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeIsBanned": {
+            "meaning": "物料规格类型表是否被禁用",
+            "reachable": true,
+            "name": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeIsDeleted": {
+            "meaning": "物料规格类型表是否被删除",
+            "reachable": true,
+            "name": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeIsMainFlow": {
+            "meaning": "物料规格类型表是否是主流程",
+            "reachable": true,
+            "name": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeIsolation": {
+            "meaning": "物料规格类型表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeJsScript": {
+            "meaning": "物料规格类型表js脚本",
+            "reachable": true,
+            "name": "物料规格类型表js脚本"
+        },
+        "matSpecTypeName": {
+            "meaning": "物料规格类型表智能节点名",
+            "reachable": true,
+            "name": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeNameCodeSearch": {
+            "meaning": "物料规格类型表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeNumberExtra1": {
+            "meaning": "物料规格类型表扩展数量1",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeNumberExtra2": {
+            "meaning": "物料规格类型表扩展数量2",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeNumberExtra3": {
+            "meaning": "物料规格类型表扩展数量3",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeNumberExtra4": {
+            "meaning": "物料规格类型表扩展数量4",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeNumberExtra5": {
+            "meaning": "物料规格类型表扩展数量5",
+            "reachable": true,
+            "name": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeParentId": {
+            "meaning": "物料规格类型表父节点ID",
+            "reachable": true,
+            "name": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeProcessInstanceId": {
+            "meaning": "物料规格类型表流程实例ID",
+            "reachable": true,
+            "name": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeSerialNumber": {
+            "meaning": "物料规格类型表顺序号",
+            "reachable": true,
+            "name": "物料规格类型表顺序号"
+        },
+        "matSpecTypeState": {
+            "meaning": "物料规格类型表通用状态",
+            "reachable": true,
+            "name": "物料规格类型表通用状态"
+        },
+        "matSpecTypeSystemCode": {
+            "meaning": "物料规格类型表系统编码",
+            "reachable": true,
+            "name": "物料规格类型表系统编码"
+        },
+        "matSpecTypeTaskNodeName": {
+            "meaning": "物料规格类型表任务节点名称",
+            "reachable": true,
+            "name": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeTenantId": {
+            "meaning": "matSpecTypeTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeThirdPartyClass": {
+            "meaning": "物料规格类型表第三方分类",
+            "reachable": true,
+            "name": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeThirdPartyId": {
+            "meaning": "物料规格类型表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeThirdPartyName": {
+            "meaning": "物料规格类型表第三方名称",
+            "reachable": true,
+            "name": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeToAuditDate": {
+            "meaning": "matSpecTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToCreateTime": {
+            "meaning": "matSpecTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToDateExtra1": {
+            "meaning": "matSpecTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToDateExtra2": {
+            "meaning": "matSpecTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToDateExtra3": {
+            "meaning": "matSpecTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToDateExtra4": {
+            "meaning": "matSpecTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToDateExtra5": {
+            "meaning": "matSpecTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeToUpdateTime": {
+            "meaning": "matSpecTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecTypeUnitTypeId": {
+            "meaning": "matSpecTypeUnitTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeUpdateTime": {
+            "meaning": "物料规格类型表更新时间",
+            "reachable": true,
+            "name": "物料规格类型表更新时间"
+        },
+        "matSpecTypeUpdater": {
+            "meaning": "物料规格类型表更新人",
+            "reachable": true,
+            "name": "物料规格类型表更新人"
+        },
+        "matSpecTypeUpdaterId": {
+            "meaning": "物料规格类型表更新人ID",
+            "reachable": true,
+            "name": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeUserCode": {
+            "meaning": "物料规格类型表智能节点的唯一编码",
+            "reachable": true,
+            "name": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeValueType": {
+            "meaning": "matSpecTypeValueType",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecTypeVarExtra1": {
+            "meaning": "物料规格类型表扩展1",
+            "reachable": true,
+            "name": "物料规格类型表扩展1"
+        },
+        "matSpecTypeVarExtra2": {
+            "meaning": "物料规格类型表扩展2",
+            "reachable": true,
+            "name": "物料规格类型表扩展2"
+        },
+        "matSpecTypeVarExtra3": {
+            "meaning": "物料规格类型表扩展3",
+            "reachable": true,
+            "name": "物料规格类型表扩展3"
+        },
+        "matSpecTypeVarExtra4": {
+            "meaning": "物料规格类型表扩展4",
+            "reachable": true,
+            "name": "物料规格类型表扩展4"
+        },
+        "matSpecTypeVarExtra5": {
+            "meaning": "物料规格类型表扩展5",
+            "reachable": true,
+            "name": "物料规格类型表扩展5"
+        },
+        "matSpecTypeVersion": {
+            "meaning": "物料规格类型表版本号",
+            "reachable": true,
+            "name": "物料规格类型表版本号"
+        }
+    }
+}

@@ -1,0 +1,1167 @@
+{
+    "api_name": "/material-specification-value/findList",
+    "table_name": "规格表",
+    "request": {
+        "matSpecValueATMatUnitClazz": "MATERIAL_UNIT",
+        "matSpecValueClazz": "MATERIAL_SPECIFICATION_VALUE"
+    },
+    "mainTabClazz": "MATERIAL_SPECIFICATION_VALUE",
+    "response": {
+        "matSpecValueATMatSpecTypeApplicationId": {
+            "meaning": "规格表应用ID",
+            "reachable": true,
+            "name": "规格表应用ID"
+        },
+        "matSpecValueATMatSpecTypeAuditDate": {
+            "meaning": "matSpecValueATMatSpecTypeAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeAuditStatus": {
+            "meaning": "规格表审核状态",
+            "reachable": true,
+            "name": "规格表审核状态"
+        },
+        "matSpecValueATMatSpecTypeBizVersion": {
+            "meaning": "规格表业务自定义版本号",
+            "reachable": true,
+            "name": "规格表业务自定义版本号"
+        },
+        "matSpecValueATMatSpecTypeBriefName": {
+            "meaning": "规格表简称",
+            "reachable": true,
+            "name": "规格表简称"
+        },
+        "matSpecValueATMatSpecTypeBusDivisId": {
+            "meaning": "规格表事业部id",
+            "reachable": true,
+            "name": "规格表事业部id"
+        },
+        "matSpecValueATMatSpecTypeClazz": {
+            "meaning": "规格表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "规格表子类"
+        },
+        "matSpecValueATMatSpecTypeComment": {
+            "meaning": "规格表评论",
+            "reachable": true,
+            "name": "规格表评论"
+        },
+        "matSpecValueATMatSpecTypeCreateTime": {
+            "meaning": "matSpecValueATMatSpecTypeCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeCreator": {
+            "meaning": "规格表创建人",
+            "reachable": true,
+            "name": "规格表创建人"
+        },
+        "matSpecValueATMatSpecTypeCreatorId": {
+            "meaning": "规格表创建人ID",
+            "reachable": true,
+            "name": "规格表创建人ID"
+        },
+        "matSpecValueATMatSpecTypeDateExtra1": {
+            "meaning": "matSpecValueATMatSpecTypeDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDateExtra2": {
+            "meaning": "matSpecValueATMatSpecTypeDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDateExtra3": {
+            "meaning": "matSpecValueATMatSpecTypeDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDateExtra4": {
+            "meaning": "matSpecValueATMatSpecTypeDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDateExtra5": {
+            "meaning": "matSpecValueATMatSpecTypeDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDefaultType": {
+            "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "规格表智能节点主类型"
+        },
+        "matSpecValueATMatSpecTypeDefaultUnitId": {
+            "meaning": "matSpecValueATMatSpecTypeDefaultUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDefaultValue": {
+            "meaning": "matSpecValueATMatSpecTypeDefaultValue",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeDescription": {
+            "meaning": "规格表描述",
+            "reachable": true,
+            "name": "规格表描述"
+        },
+        "matSpecValueATMatSpecTypeEngName": {
+            "meaning": "规格表英文名称",
+            "reachable": true,
+            "name": "规格表英文名称"
+        },
+        "matSpecValueATMatSpecTypeExtension": {
+            "meaning": "规格表扩展数据",
+            "reachable": true,
+            "name": "规格表扩展数据"
+        },
+        "matSpecValueATMatSpecTypeExternalState": {
+            "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "规格表上流程状态位"
+        },
+        "matSpecValueATMatSpecTypeFlags": {
+            "meaning": "规格表63位标志位",
+            "reachable": true,
+            "name": "规格表63位标志位"
+        },
+        "matSpecValueATMatSpecTypeFromAuditDate": {
+            "meaning": "matSpecValueATMatSpecTypeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromCreateTime": {
+            "meaning": "matSpecValueATMatSpecTypeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra1": {
+            "meaning": "matSpecValueATMatSpecTypeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra2": {
+            "meaning": "matSpecValueATMatSpecTypeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra3": {
+            "meaning": "matSpecValueATMatSpecTypeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra4": {
+            "meaning": "matSpecValueATMatSpecTypeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra5": {
+            "meaning": "matSpecValueATMatSpecTypeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeFromUpdateTime": {
+            "meaning": "matSpecValueATMatSpecTypeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeGroovyScript": {
+            "meaning": "规格表groovy脚本",
+            "reachable": true,
+            "name": "规格表groovy脚本"
+        },
+        "matSpecValueATMatSpecTypeGropeCode": {
+            "meaning": "规格表搜索码",
+            "reachable": true,
+            "name": "规格表搜索码"
+        },
+        "matSpecValueATMatSpecTypeId": {
+            "meaning": "matSpecValueATMatSpecTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeInUsed": {
+            "meaning": "规格表是否被使用",
+            "reachable": true,
+            "name": "规格表是否被使用"
+        },
+        "matSpecValueATMatSpecTypeIsBanned": {
+            "meaning": "规格表是否被禁用",
+            "reachable": true,
+            "name": "规格表是否被禁用"
+        },
+        "matSpecValueATMatSpecTypeIsDeleted": {
+            "meaning": "规格表是否被删除",
+            "reachable": true,
+            "name": "规格表是否被删除"
+        },
+        "matSpecValueATMatSpecTypeIsMainFlow": {
+            "meaning": "规格表是否是主流程",
+            "reachable": true,
+            "name": "规格表是否是主流程"
+        },
+        "matSpecValueATMatSpecTypeIsolation": {
+            "meaning": "规格表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueATMatSpecTypeJsScript": {
+            "meaning": "规格表js脚本",
+            "reachable": true,
+            "name": "规格表js脚本"
+        },
+        "matSpecValueATMatSpecTypeName": {
+            "meaning": "规格表智能节点名",
+            "reachable": true,
+            "name": "规格表智能节点名"
+        },
+        "matSpecValueATMatSpecTypeNameCodeSearch": {
+            "meaning": "规格表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra1": {
+            "meaning": "规格表扩展数量1",
+            "reachable": true,
+            "name": "规格表扩展数量1"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra2": {
+            "meaning": "规格表扩展数量2",
+            "reachable": true,
+            "name": "规格表扩展数量2"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra3": {
+            "meaning": "规格表扩展数量3",
+            "reachable": true,
+            "name": "规格表扩展数量3"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra4": {
+            "meaning": "规格表扩展数量4",
+            "reachable": true,
+            "name": "规格表扩展数量4"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra5": {
+            "meaning": "规格表扩展数量5",
+            "reachable": true,
+            "name": "规格表扩展数量5"
+        },
+        "matSpecValueATMatSpecTypeParentId": {
+            "meaning": "规格表父节点ID",
+            "reachable": true,
+            "name": "规格表父节点ID"
+        },
+        "matSpecValueATMatSpecTypeProcessInstanceId": {
+            "meaning": "规格表流程实例ID",
+            "reachable": true,
+            "name": "规格表流程实例ID"
+        },
+        "matSpecValueATMatSpecTypeSerialNumber": {
+            "meaning": "规格表顺序号",
+            "reachable": true,
+            "name": "规格表顺序号"
+        },
+        "matSpecValueATMatSpecTypeState": {
+            "meaning": "规格表通用状态",
+            "reachable": true,
+            "name": "规格表通用状态"
+        },
+        "matSpecValueATMatSpecTypeSystemCode": {
+            "meaning": "规格表系统编码",
+            "reachable": true,
+            "name": "规格表系统编码"
+        },
+        "matSpecValueATMatSpecTypeTaskNodeName": {
+            "meaning": "规格表任务节点名称",
+            "reachable": true,
+            "name": "规格表任务节点名称"
+        },
+        "matSpecValueATMatSpecTypeTenantId": {
+            "meaning": "matSpecValueATMatSpecTypeTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeThirdPartyClass": {
+            "meaning": "规格表第三方分类",
+            "reachable": true,
+            "name": "规格表第三方分类"
+        },
+        "matSpecValueATMatSpecTypeThirdPartyId": {
+            "meaning": "规格表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueATMatSpecTypeThirdPartyName": {
+            "meaning": "规格表第三方名称",
+            "reachable": true,
+            "name": "规格表第三方名称"
+        },
+        "matSpecValueATMatSpecTypeToAuditDate": {
+            "meaning": "matSpecValueATMatSpecTypeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToCreateTime": {
+            "meaning": "matSpecValueATMatSpecTypeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToDateExtra1": {
+            "meaning": "matSpecValueATMatSpecTypeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToDateExtra2": {
+            "meaning": "matSpecValueATMatSpecTypeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToDateExtra3": {
+            "meaning": "matSpecValueATMatSpecTypeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToDateExtra4": {
+            "meaning": "matSpecValueATMatSpecTypeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToDateExtra5": {
+            "meaning": "matSpecValueATMatSpecTypeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeToUpdateTime": {
+            "meaning": "matSpecValueATMatSpecTypeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeUnitTypeId": {
+            "meaning": "matSpecValueATMatSpecTypeUnitTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeUpdateTime": {
+            "meaning": "matSpecValueATMatSpecTypeUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeUpdater": {
+            "meaning": "规格表更新人",
+            "reachable": true,
+            "name": "规格表更新人"
+        },
+        "matSpecValueATMatSpecTypeUpdaterId": {
+            "meaning": "规格表更新人ID",
+            "reachable": true,
+            "name": "规格表更新人ID"
+        },
+        "matSpecValueATMatSpecTypeUserCode": {
+            "meaning": "规格表智能节点的唯一编码",
+            "reachable": true,
+            "name": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueATMatSpecTypeValueType": {
+            "meaning": "matSpecValueATMatSpecTypeValueType",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatSpecTypeVarExtra1": {
+            "meaning": "规格表扩展1",
+            "reachable": true,
+            "name": "规格表扩展1"
+        },
+        "matSpecValueATMatSpecTypeVarExtra2": {
+            "meaning": "规格表扩展2",
+            "reachable": true,
+            "name": "规格表扩展2"
+        },
+        "matSpecValueATMatSpecTypeVarExtra3": {
+            "meaning": "规格表扩展3",
+            "reachable": true,
+            "name": "规格表扩展3"
+        },
+        "matSpecValueATMatSpecTypeVarExtra4": {
+            "meaning": "规格表扩展4",
+            "reachable": true,
+            "name": "规格表扩展4"
+        },
+        "matSpecValueATMatSpecTypeVarExtra5": {
+            "meaning": "规格表扩展5",
+            "reachable": true,
+            "name": "规格表扩展5"
+        },
+        "matSpecValueATMatSpecTypeVersion": {
+            "meaning": "规格表版本号",
+            "reachable": true,
+            "name": "规格表版本号"
+        },
+        "matSpecValueATMatUnitApplicationId": {
+            "meaning": "规格表应用ID",
+            "reachable": true,
+            "name": "规格表应用ID"
+        },
+        "matSpecValueATMatUnitAuditDate": {
+            "meaning": "matSpecValueATMatUnitAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitAuditStatus": {
+            "meaning": "规格表审核状态",
+            "reachable": true,
+            "name": "规格表审核状态"
+        },
+        "matSpecValueATMatUnitBizVersion": {
+            "meaning": "规格表业务自定义版本号",
+            "reachable": true,
+            "name": "规格表业务自定义版本号"
+        },
+        "matSpecValueATMatUnitBriefName": {
+            "meaning": "规格表简称",
+            "reachable": true,
+            "name": "规格表简称"
+        },
+        "matSpecValueATMatUnitBusDivisId": {
+            "meaning": "规格表事业部id",
+            "reachable": true,
+            "name": "规格表事业部id"
+        },
+        "matSpecValueATMatUnitClazz": {
+            "meaning": "规格表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "规格表子类"
+        },
+        "matSpecValueATMatUnitComment": {
+            "meaning": "规格表评论",
+            "reachable": true,
+            "name": "规格表评论"
+        },
+        "matSpecValueATMatUnitCreateTime": {
+            "meaning": "matSpecValueATMatUnitCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitCreator": {
+            "meaning": "规格表创建人",
+            "reachable": true,
+            "name": "规格表创建人"
+        },
+        "matSpecValueATMatUnitCreatorId": {
+            "meaning": "规格表创建人ID",
+            "reachable": true,
+            "name": "规格表创建人ID"
+        },
+        "matSpecValueATMatUnitDateExtra1": {
+            "meaning": "matSpecValueATMatUnitDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitDateExtra2": {
+            "meaning": "matSpecValueATMatUnitDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitDateExtra3": {
+            "meaning": "matSpecValueATMatUnitDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitDateExtra4": {
+            "meaning": "matSpecValueATMatUnitDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitDateExtra5": {
+            "meaning": "matSpecValueATMatUnitDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitDefaultType": {
+            "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "规格表智能节点主类型"
+        },
+        "matSpecValueATMatUnitDescription": {
+            "meaning": "规格表描述",
+            "reachable": true,
+            "name": "规格表描述"
+        },
+        "matSpecValueATMatUnitEngName": {
+            "meaning": "规格表英文名称",
+            "reachable": true,
+            "name": "规格表英文名称"
+        },
+        "matSpecValueATMatUnitExtension": {
+            "meaning": "规格表扩展数据",
+            "reachable": true,
+            "name": "规格表扩展数据"
+        },
+        "matSpecValueATMatUnitExternalState": {
+            "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "规格表上流程状态位"
+        },
+        "matSpecValueATMatUnitFlags": {
+            "meaning": "规格表63位标志位",
+            "reachable": true,
+            "name": "规格表63位标志位"
+        },
+        "matSpecValueATMatUnitFromAuditDate": {
+            "meaning": "matSpecValueATMatUnitFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromCreateTime": {
+            "meaning": "matSpecValueATMatUnitFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromDateExtra1": {
+            "meaning": "matSpecValueATMatUnitFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromDateExtra2": {
+            "meaning": "matSpecValueATMatUnitFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromDateExtra3": {
+            "meaning": "matSpecValueATMatUnitFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromDateExtra4": {
+            "meaning": "matSpecValueATMatUnitFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromDateExtra5": {
+            "meaning": "matSpecValueATMatUnitFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitFromUpdateTime": {
+            "meaning": "matSpecValueATMatUnitFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitGroovyScript": {
+            "meaning": "规格表groovy脚本",
+            "reachable": true,
+            "name": "规格表groovy脚本"
+        },
+        "matSpecValueATMatUnitGropeCode": {
+            "meaning": "规格表搜索码",
+            "reachable": true,
+            "name": "规格表搜索码"
+        },
+        "matSpecValueATMatUnitId": {
+            "meaning": "matSpecValueATMatUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitInUsed": {
+            "meaning": "规格表是否被使用",
+            "reachable": true,
+            "name": "规格表是否被使用"
+        },
+        "matSpecValueATMatUnitIsBanned": {
+            "meaning": "规格表是否被禁用",
+            "reachable": true,
+            "name": "规格表是否被禁用"
+        },
+        "matSpecValueATMatUnitIsDeleted": {
+            "meaning": "规格表是否被删除",
+            "reachable": true,
+            "name": "规格表是否被删除"
+        },
+        "matSpecValueATMatUnitIsMainFlow": {
+            "meaning": "规格表是否是主流程",
+            "reachable": true,
+            "name": "规格表是否是主流程"
+        },
+        "matSpecValueATMatUnitIsolation": {
+            "meaning": "规格表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueATMatUnitJsScript": {
+            "meaning": "规格表js脚本",
+            "reachable": true,
+            "name": "规格表js脚本"
+        },
+        "matSpecValueATMatUnitName": {
+            "meaning": "规格表智能节点名",
+            "reachable": true,
+            "name": "规格表智能节点名"
+        },
+        "matSpecValueATMatUnitNameCodeSearch": {
+            "meaning": "规格表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueATMatUnitNumberExtra1": {
+            "meaning": "规格表扩展数量1",
+            "reachable": true,
+            "name": "规格表扩展数量1"
+        },
+        "matSpecValueATMatUnitNumberExtra2": {
+            "meaning": "规格表扩展数量2",
+            "reachable": true,
+            "name": "规格表扩展数量2"
+        },
+        "matSpecValueATMatUnitNumberExtra3": {
+            "meaning": "规格表扩展数量3",
+            "reachable": true,
+            "name": "规格表扩展数量3"
+        },
+        "matSpecValueATMatUnitNumberExtra4": {
+            "meaning": "规格表扩展数量4",
+            "reachable": true,
+            "name": "规格表扩展数量4"
+        },
+        "matSpecValueATMatUnitNumberExtra5": {
+            "meaning": "规格表扩展数量5",
+            "reachable": true,
+            "name": "规格表扩展数量5"
+        },
+        "matSpecValueATMatUnitParentId": {
+            "meaning": "规格表父节点ID",
+            "reachable": true,
+            "name": "规格表父节点ID"
+        },
+        "matSpecValueATMatUnitProcessInstanceId": {
+            "meaning": "规格表流程实例ID",
+            "reachable": true,
+            "name": "规格表流程实例ID"
+        },
+        "matSpecValueATMatUnitSerialNumber": {
+            "meaning": "规格表顺序号",
+            "reachable": true,
+            "name": "规格表顺序号"
+        },
+        "matSpecValueATMatUnitState": {
+            "meaning": "规格表通用状态",
+            "reachable": true,
+            "name": "规格表通用状态"
+        },
+        "matSpecValueATMatUnitSystemCode": {
+            "meaning": "规格表系统编码",
+            "reachable": true,
+            "name": "规格表系统编码"
+        },
+        "matSpecValueATMatUnitTaskNodeName": {
+            "meaning": "规格表任务节点名称",
+            "reachable": true,
+            "name": "规格表任务节点名称"
+        },
+        "matSpecValueATMatUnitTenantId": {
+            "meaning": "matSpecValueATMatUnitTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitThirdPartyClass": {
+            "meaning": "规格表第三方分类",
+            "reachable": true,
+            "name": "规格表第三方分类"
+        },
+        "matSpecValueATMatUnitThirdPartyId": {
+            "meaning": "规格表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueATMatUnitThirdPartyName": {
+            "meaning": "规格表第三方名称",
+            "reachable": true,
+            "name": "规格表第三方名称"
+        },
+        "matSpecValueATMatUnitToAuditDate": {
+            "meaning": "matSpecValueATMatUnitToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToCreateTime": {
+            "meaning": "matSpecValueATMatUnitToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToDateExtra1": {
+            "meaning": "matSpecValueATMatUnitToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToDateExtra2": {
+            "meaning": "matSpecValueATMatUnitToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToDateExtra3": {
+            "meaning": "matSpecValueATMatUnitToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToDateExtra4": {
+            "meaning": "matSpecValueATMatUnitToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToDateExtra5": {
+            "meaning": "matSpecValueATMatUnitToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitToUpdateTime": {
+            "meaning": "matSpecValueATMatUnitToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueATMatUnitUpdateTime": {
+            "meaning": "matSpecValueATMatUnitUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueATMatUnitUpdater": {
+            "meaning": "规格表更新人",
+            "reachable": true,
+            "name": "规格表更新人"
+        },
+        "matSpecValueATMatUnitUpdaterId": {
+            "meaning": "规格表更新人ID",
+            "reachable": true,
+            "name": "规格表更新人ID"
+        },
+        "matSpecValueATMatUnitUserCode": {
+            "meaning": "规格表智能节点的唯一编码",
+            "reachable": true,
+            "name": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueATMatUnitVarExtra1": {
+            "meaning": "规格表扩展1",
+            "reachable": true,
+            "name": "规格表扩展1"
+        },
+        "matSpecValueATMatUnitVarExtra2": {
+            "meaning": "规格表扩展2",
+            "reachable": true,
+            "name": "规格表扩展2"
+        },
+        "matSpecValueATMatUnitVarExtra3": {
+            "meaning": "规格表扩展3",
+            "reachable": true,
+            "name": "规格表扩展3"
+        },
+        "matSpecValueATMatUnitVarExtra4": {
+            "meaning": "规格表扩展4",
+            "reachable": true,
+            "name": "规格表扩展4"
+        },
+        "matSpecValueATMatUnitVarExtra5": {
+            "meaning": "规格表扩展5",
+            "reachable": true,
+            "name": "规格表扩展5"
+        },
+        "matSpecValueATMatUnitVersion": {
+            "meaning": "规格表版本号",
+            "reachable": true,
+            "name": "规格表版本号"
+        },
+        "matSpecValueApplicationId": {
+            "meaning": "规格表应用ID",
+            "reachable": true,
+            "name": "规格表应用ID"
+        },
+        "matSpecValueAuditDate": {
+            "meaning": "规格表审核时间",
+            "reachable": true,
+            "name": "规格表审核时间"
+        },
+        "matSpecValueAuditStatus": {
+            "meaning": "规格表审核状态",
+            "reachable": true,
+            "name": "规格表审核状态"
+        },
+        "matSpecValueBizVersion": {
+            "meaning": "规格表业务自定义版本号",
+            "reachable": true,
+            "name": "规格表业务自定义版本号"
+        },
+        "matSpecValueBriefName": {
+            "meaning": "规格表简称",
+            "reachable": true,
+            "name": "规格表简称"
+        },
+        "matSpecValueBusDivisId": {
+            "meaning": "规格表事业部id",
+            "reachable": true,
+            "name": "规格表事业部id"
+        },
+        "matSpecValueClazz": {
+            "meaning": "规格表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "规格表子类"
+        },
+        "matSpecValueComment": {
+            "meaning": "规格表评论",
+            "reachable": true,
+            "name": "规格表评论"
+        },
+        "matSpecValueCreateTime": {
+            "meaning": "规格表创建时间",
+            "reachable": true,
+            "name": "规格表创建时间"
+        },
+        "matSpecValueCreator": {
+            "meaning": "规格表创建人",
+            "reachable": true,
+            "name": "规格表创建人"
+        },
+        "matSpecValueCreatorId": {
+            "meaning": "规格表创建人ID",
+            "reachable": true,
+            "name": "规格表创建人ID"
+        },
+        "matSpecValueDateExtra1": {
+            "meaning": "规格表扩展时间1",
+            "reachable": true,
+            "name": "规格表扩展时间1"
+        },
+        "matSpecValueDateExtra2": {
+            "meaning": "规格表扩展时间2",
+            "reachable": true,
+            "name": "规格表扩展时间2"
+        },
+        "matSpecValueDateExtra3": {
+            "meaning": "规格表扩展时间3",
+            "reachable": true,
+            "name": "规格表扩展时间3"
+        },
+        "matSpecValueDateExtra4": {
+            "meaning": "规格表扩展时间4",
+            "reachable": true,
+            "name": "规格表扩展时间4"
+        },
+        "matSpecValueDateExtra5": {
+            "meaning": "规格表扩展时间5",
+            "reachable": true,
+            "name": "规格表扩展时间5"
+        },
+        "matSpecValueDefaultType": {
+            "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "规格表智能节点主类型"
+        },
+        "matSpecValueDescription": {
+            "meaning": "规格表描述",
+            "reachable": true,
+            "name": "规格表描述"
+        },
+        "matSpecValueEngName": {
+            "meaning": "规格表英文名称",
+            "reachable": true,
+            "name": "规格表英文名称"
+        },
+        "matSpecValueExtension": {
+            "meaning": "规格表扩展数据",
+            "reachable": true,
+            "name": "规格表扩展数据"
+        },
+        "matSpecValueExternalState": {
+            "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "规格表上流程状态位"
+        },
+        "matSpecValueFlags": {
+            "meaning": "规格表63位标志位",
+            "reachable": true,
+            "name": "规格表63位标志位"
+        },
+        "matSpecValueFromAuditDate": {
+            "meaning": "matSpecValueFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromCreateTime": {
+            "meaning": "matSpecValueFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromDateExtra1": {
+            "meaning": "matSpecValueFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromDateExtra2": {
+            "meaning": "matSpecValueFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromDateExtra3": {
+            "meaning": "matSpecValueFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromDateExtra4": {
+            "meaning": "matSpecValueFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromDateExtra5": {
+            "meaning": "matSpecValueFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueFromUpdateTime": {
+            "meaning": "matSpecValueFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueGroovyScript": {
+            "meaning": "规格表groovy脚本",
+            "reachable": true,
+            "name": "规格表groovy脚本"
+        },
+        "matSpecValueGropeCode": {
+            "meaning": "规格表搜索码",
+            "reachable": true,
+            "name": "规格表搜索码"
+        },
+        "matSpecValueId": {
+            "meaning": "规格表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "规格表主键ID"
+        },
+        "matSpecValueInUsed": {
+            "meaning": "规格表是否被使用",
+            "reachable": true,
+            "name": "规格表是否被使用"
+        },
+        "matSpecValueIsBanned": {
+            "meaning": "规格表是否被禁用",
+            "reachable": true,
+            "name": "规格表是否被禁用"
+        },
+        "matSpecValueIsDeleted": {
+            "meaning": "规格表是否被删除",
+            "reachable": true,
+            "name": "规格表是否被删除"
+        },
+        "matSpecValueIsMainFlow": {
+            "meaning": "规格表是否是主流程",
+            "reachable": true,
+            "name": "规格表是否是主流程"
+        },
+        "matSpecValueIsParent": {
+            "meaning": "matSpecValueIsParent",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueIsStatisticsSpecificationType": {
+            "meaning": "matSpecValueIsStatisticsSpecificationType",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueIsolation": {
+            "meaning": "规格表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueJsScript": {
+            "meaning": "规格表js脚本",
+            "reachable": true,
+            "name": "规格表js脚本"
+        },
+        "matSpecValueMaterialId": {
+            "meaning": "matSpecValueMaterialId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueName": {
+            "meaning": "规格表智能节点名",
+            "reachable": true,
+            "name": "规格表智能节点名"
+        },
+        "matSpecValueNameCodeSearch": {
+            "meaning": "规格表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueNumberExtra1": {
+            "meaning": "规格表扩展数量1",
+            "reachable": true,
+            "name": "规格表扩展数量1"
+        },
+        "matSpecValueNumberExtra2": {
+            "meaning": "规格表扩展数量2",
+            "reachable": true,
+            "name": "规格表扩展数量2"
+        },
+        "matSpecValueNumberExtra3": {
+            "meaning": "规格表扩展数量3",
+            "reachable": true,
+            "name": "规格表扩展数量3"
+        },
+        "matSpecValueNumberExtra4": {
+            "meaning": "规格表扩展数量4",
+            "reachable": true,
+            "name": "规格表扩展数量4"
+        },
+        "matSpecValueNumberExtra5": {
+            "meaning": "规格表扩展数量5",
+            "reachable": true,
+            "name": "规格表扩展数量5"
+        },
+        "matSpecValueParentId": {
+            "meaning": "规格表父节点ID",
+            "reachable": true,
+            "name": "规格表父节点ID"
+        },
+        "matSpecValueProcessInstanceId": {
+            "meaning": "规格表流程实例ID",
+            "reachable": true,
+            "name": "规格表流程实例ID"
+        },
+        "matSpecValueSerialNumber": {
+            "meaning": "规格表顺序号",
+            "reachable": true,
+            "name": "规格表顺序号"
+        },
+        "matSpecValueSpecificationTypeId": {
+            "meaning": "matSpecValueSpecificationTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueState": {
+            "meaning": "规格表通用状态",
+            "reachable": true,
+            "name": "规格表通用状态"
+        },
+        "matSpecValueSystemCode": {
+            "meaning": "规格表系统编码",
+            "reachable": true,
+            "name": "规格表系统编码"
+        },
+        "matSpecValueTaskNodeName": {
+            "meaning": "规格表任务节点名称",
+            "reachable": true,
+            "name": "规格表任务节点名称"
+        },
+        "matSpecValueTenantId": {
+            "meaning": "matSpecValueTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueThirdPartyClass": {
+            "meaning": "规格表第三方分类",
+            "reachable": true,
+            "name": "规格表第三方分类"
+        },
+        "matSpecValueThirdPartyId": {
+            "meaning": "规格表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueThirdPartyName": {
+            "meaning": "规格表第三方名称",
+            "reachable": true,
+            "name": "规格表第三方名称"
+        },
+        "matSpecValueToAuditDate": {
+            "meaning": "matSpecValueToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToCreateTime": {
+            "meaning": "matSpecValueToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToDateExtra1": {
+            "meaning": "matSpecValueToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToDateExtra2": {
+            "meaning": "matSpecValueToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToDateExtra3": {
+            "meaning": "matSpecValueToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToDateExtra4": {
+            "meaning": "matSpecValueToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToDateExtra5": {
+            "meaning": "matSpecValueToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueToUpdateTime": {
+            "meaning": "matSpecValueToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "matSpecValueUnitId": {
+            "meaning": "matSpecValueUnitId",
+            "reachable": true,
+            "name": ""
+        },
+        "matSpecValueUpdateTime": {
+            "meaning": "规格表更新时间",
+            "reachable": true,
+            "name": "规格表更新时间"
+        },
+        "matSpecValueUpdater": {
+            "meaning": "规格表更新人",
+            "reachable": true,
+            "name": "规格表更新人"
+        },
+        "matSpecValueUpdaterId": {
+            "meaning": "规格表更新人ID",
+            "reachable": true,
+            "name": "规格表更新人ID"
+        },
+        "matSpecValueUserCode": {
+            "meaning": "规格表智能节点的唯一编码",
+            "reachable": true,
+            "name": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueVarExtra1": {
+            "meaning": "规格表扩展1",
+            "reachable": true,
+            "name": "规格表扩展1"
+        },
+        "matSpecValueVarExtra2": {
+            "meaning": "规格表扩展2",
+            "reachable": true,
+            "name": "规格表扩展2"
+        },
+        "matSpecValueVarExtra3": {
+            "meaning": "规格表扩展3",
+            "reachable": true,
+            "name": "规格表扩展3"
+        },
+        "matSpecValueVarExtra4": {
+            "meaning": "规格表扩展4",
+            "reachable": true,
+            "name": "规格表扩展4"
+        },
+        "matSpecValueVarExtra5": {
+            "meaning": "规格表扩展5",
+            "reachable": true,
+            "name": "规格表扩展5"
+        },
+        "matSpecValueVersion": {
+            "meaning": "规格表版本号",
+            "reachable": true,
+            "name": "规格表版本号"
+        }
+    }
+}

@@ -1,0 +1,1327 @@
+{
+    "api_name": "/prd-iapy-det/findList",
+    "table_name": "成品入库通知明细",
+    "request": {
+        "prdIApyDetPrdIApyClazz": "PRD_I_APY",
+        "prdIApyDetClazz": "PRD_I_APY_DET"
+    },
+    "mainTabClazz": "PRD_I_APY_DET",
+    "response": {
+        "prdIApyDetActualTimeRequired": {
+            "meaning": "成品入库通知明细实际需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细实际需时"
+        },
+        "prdIApyDetAdditionalWeight": {
+            "meaning": "成品入库通知明细附加重量",
+            "reachable": true,
+            "name": "成品入库通知明细附加重量"
+        },
+        "prdIApyDetAdjustmentTimeRequired": {
+            "meaning": "成品入库通知明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细调整需时"
+        },
+        "prdIApyDetApplicationId": {
+            "meaning": "成品入库通知明细应用ID",
+            "reachable": true,
+            "name": "成品入库通知明细应用ID"
+        },
+        "prdIApyDetAuditDate": {
+            "meaning": "成品入库通知明细审核时间",
+            "reachable": true,
+            "name": "成品入库通知明细审核时间"
+        },
+        "prdIApyDetAuditStatus": {
+            "meaning": "成品入库通知明细审核状态",
+            "reachable": true,
+            "name": "成品入库通知明细审核状态"
+        },
+        "prdIApyDetAvailableScheduleId": {
+            "meaning": "成品入库通知明细可用日程id",
+            "reachable": true,
+            "name": "成品入库通知明细可用日程id"
+        },
+        "prdIApyDetBeginTime": {
+            "meaning": "成品入库通知明细开始时间",
+            "reachable": true,
+            "name": "成品入库通知明细开始时间"
+        },
+        "prdIApyDetBizVersion": {
+            "meaning": "成品入库通知明细业务自定义版本号",
+            "reachable": true,
+            "name": "成品入库通知明细业务自定义版本号"
+        },
+        "prdIApyDetBriefName": {
+            "meaning": "成品入库通知明细简称",
+            "reachable": true,
+            "name": "成品入库通知明细简称"
+        },
+        "prdIApyDetBusDivisId": {
+            "meaning": "成品入库通知明细事业部id",
+            "reachable": true,
+            "name": "成品入库通知明细事业部id"
+        },
+        "prdIApyDetClazz": {
+            "meaning": "成品入库通知明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品入库通知明细子类"
+        },
+        "prdIApyDetClosedReason": {
+            "meaning": "成品入库通知明细结案原因",
+            "reachable": true,
+            "name": "成品入库通知明细结案原因"
+        },
+        "prdIApyDetClosedStatus": {
+            "meaning": "成品入库通知明细结案状态",
+            "reachable": true,
+            "name": "成品入库通知明细结案状态"
+        },
+        "prdIApyDetComment": {
+            "meaning": "成品入库通知明细评论",
+            "reachable": true,
+            "name": "成品入库通知明细评论"
+        },
+        "prdIApyDetCompleteQuantity": {
+            "meaning": "成品入库通知明细完成数量",
+            "reachable": true,
+            "name": "成品入库通知明细完成数量"
+        },
+        "prdIApyDetCompleteStatus": {
+            "meaning": "成品入库通知明细完成状态",
+            "reachable": true,
+            "name": "成品入库通知明细完成状态"
+        },
+        "prdIApyDetCreateTime": {
+            "meaning": "成品入库通知明细创建时间",
+            "reachable": true,
+            "name": "成品入库通知明细创建时间"
+        },
+        "prdIApyDetCreator": {
+            "meaning": "成品入库通知明细创建人",
+            "reachable": true,
+            "name": "成品入库通知明细创建人"
+        },
+        "prdIApyDetCreatorId": {
+            "meaning": "成品入库通知明细创建人ID",
+            "reachable": true,
+            "name": "成品入库通知明细创建人ID"
+        },
+        "prdIApyDetCustomerId": {
+            "meaning": "成品入库通知明细客户id",
+            "reachable": true,
+            "name": "成品入库通知明细客户id"
+        },
+        "prdIApyDetDateExtra1": {
+            "meaning": "成品入库通知明细扩展时间1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间1"
+        },
+        "prdIApyDetDateExtra2": {
+            "meaning": "成品入库通知明细扩展时间2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间2"
+        },
+        "prdIApyDetDateExtra3": {
+            "meaning": "成品入库通知明细扩展时间3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间3"
+        },
+        "prdIApyDetDateExtra4": {
+            "meaning": "成品入库通知明细扩展时间4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间4"
+        },
+        "prdIApyDetDateExtra5": {
+            "meaning": "成品入库通知明细扩展时间5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间5"
+        },
+        "prdIApyDetDefaultType": {
+            "meaning": "成品入库通知明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点主类型"
+        },
+        "prdIApyDetDeliveryDate": {
+            "meaning": "成品入库通知明细交货日期",
+            "reachable": true,
+            "name": "成品入库通知明细交货日期"
+        },
+        "prdIApyDetDescription": {
+            "meaning": "成品入库通知明细描述",
+            "reachable": true,
+            "name": "成品入库通知明细描述"
+        },
+        "prdIApyDetEndTime": {
+            "meaning": "成品入库通知明细结束时间",
+            "reachable": true,
+            "name": "成品入库通知明细结束时间"
+        },
+        "prdIApyDetEndTimeRequired": {
+            "meaning": "成品入库通知明细最后需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细最后需时"
+        },
+        "prdIApyDetEngName": {
+            "meaning": "成品入库通知明细英文名称",
+            "reachable": true,
+            "name": "成品入库通知明细英文名称"
+        },
+        "prdIApyDetEquipmentId": {
+            "meaning": "成品入库通知明细设备id",
+            "reachable": true,
+            "name": "成品入库通知明细设备id"
+        },
+        "prdIApyDetExchangeRateId": {
+            "meaning": "成品入库通知明细币种汇率id",
+            "reachable": true,
+            "name": "成品入库通知明细币种汇率id"
+        },
+        "prdIApyDetExtension": {
+            "meaning": "成品入库通知明细扩展数据",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数据"
+        },
+        "prdIApyDetExternalState": {
+            "meaning": "成品入库通知明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品入库通知明细上流程状态位"
+        },
+        "prdIApyDetFilterClazz": {
+            "meaning": "成品入库通知明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品入库通知明细冗余字段用于筛选"
+        },
+        "prdIApyDetFlags": {
+            "meaning": "成品入库通知明细63位标志位",
+            "reachable": true,
+            "name": "成品入库通知明细63位标志位"
+        },
+        "prdIApyDetFqcQuantity": {
+            "meaning": "成品入库通知明细已开FQC的数量",
+            "reachable": true,
+            "name": "成品入库通知明细已开FQC的数量"
+        },
+        "prdIApyDetFqcStatus": {
+            "meaning": "成品入库通知明细已开FQC的状态",
+            "reachable": true,
+            "name": "成品入库通知明细已开FQC的状态"
+        },
+        "prdIApyDetFromAuditDate": {
+            "meaning": "prdIApyDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromBeginTime": {
+            "meaning": "prdIApyDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromCreateTime": {
+            "meaning": "prdIApyDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDateExtra1": {
+            "meaning": "prdIApyDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDateExtra2": {
+            "meaning": "prdIApyDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDateExtra3": {
+            "meaning": "prdIApyDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDateExtra4": {
+            "meaning": "prdIApyDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDateExtra5": {
+            "meaning": "prdIApyDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromDeliveryDate": {
+            "meaning": "prdIApyDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromEndTime": {
+            "meaning": "prdIApyDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromReceiptDate": {
+            "meaning": "prdIApyDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFromUpdateTime": {
+            "meaning": "prdIApyDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetFscType": {
+            "meaning": "成品入库通知明细FSC声明",
+            "reachable": true,
+            "name": "成品入库通知明细FSC声明"
+        },
+        "prdIApyDetGenerativePeople": {
+            "meaning": "成品入库通知明细下发人",
+            "reachable": true,
+            "name": "成品入库通知明细下发人"
+        },
+        "prdIApyDetGenerativeState": {
+            "meaning": "成品入库通知明细下发状态",
+            "reachable": true,
+            "name": "成品入库通知明细下发状态"
+        },
+        "prdIApyDetGoodsId": {
+            "meaning": "成品入库通知明细货（包）id",
+            "reachable": true,
+            "name": "成品入库通知明细货"
+        },
+        "prdIApyDetGroovyScript": {
+            "meaning": "成品入库通知明细groovy脚本",
+            "reachable": true,
+            "name": "成品入库通知明细groovy脚本"
+        },
+        "prdIApyDetGropeCode": {
+            "meaning": "成品入库通知明细搜索码",
+            "reachable": true,
+            "name": "成品入库通知明细搜索码"
+        },
+        "prdIApyDetGrossWeightPerBox": {
+            "meaning": "成品入库通知明细每箱毛重",
+            "reachable": true,
+            "name": "成品入库通知明细每箱毛重"
+        },
+        "prdIApyDetId": {
+            "meaning": "成品入库通知明细主键id",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品入库通知明细主键id"
+        },
+        "prdIApyDetInUsed": {
+            "meaning": "成品入库通知明细是否被使用",
+            "reachable": true,
+            "name": "成品入库通知明细是否被使用"
+        },
+        "prdIApyDetInvTypeTaxRateId": {
+            "meaning": "成品入库通知明细发票税率id",
+            "reachable": true,
+            "name": "成品入库通知明细发票税率id"
+        },
+        "prdIApyDetIsBanned": {
+            "meaning": "成品入库通知明细是否被禁用",
+            "reachable": true,
+            "name": "成品入库通知明细是否被禁用"
+        },
+        "prdIApyDetIsDeleted": {
+            "meaning": "成品入库通知明细是否被删除",
+            "reachable": true,
+            "name": "成品入库通知明细是否被删除"
+        },
+        "prdIApyDetIsLeaf": {
+            "meaning": "成品入库通知明细是否叶子节点",
+            "reachable": true,
+            "name": "成品入库通知明细是否叶子节点"
+        },
+        "prdIApyDetIsMainFlow": {
+            "meaning": "成品入库通知明细是否是主流程",
+            "reachable": true,
+            "name": "成品入库通知明细是否是主流程"
+        },
+        "prdIApyDetIsManualModificationDate": {
+            "meaning": "成品入库通知明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品入库通知明细是否手动修改计划生产时间"
+        },
+        "prdIApyDetIsolation": {
+            "meaning": "成品入库通知明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点数据隔离标识"
+        },
+        "prdIApyDetJsScript": {
+            "meaning": "成品入库通知明细js脚本",
+            "reachable": true,
+            "name": "成品入库通知明细js脚本"
+        },
+        "prdIApyDetLocalCurrencyTotalAmount": {
+            "meaning": "成品入库通知明细本币总金额",
+            "reachable": true,
+            "name": "成品入库通知明细本币总金额"
+        },
+        "prdIApyDetLocalCurrencyUnitPrice": {
+            "meaning": "成品入库通知明细本币含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品入库通知明细本币含税单价"
+        },
+        "prdIApyDetMatBatchId": {
+            "meaning": "成品入库通知明细物料批次id",
+            "reachable": true,
+            "name": "成品入库通知明细物料批次id"
+        },
+        "prdIApyDetMaterialId": {
+            "meaning": "成品入库通知明细物料id",
+            "reachable": true,
+            "name": "成品入库通知明细物料id"
+        },
+        "prdIApyDetName": {
+            "meaning": "成品入库通知明细智能节点名",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点名"
+        },
+        "prdIApyDetNameCodeSearch": {
+            "meaning": "成品入库通知明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品入库通知明细name、user_code模糊搜索"
+        },
+        "prdIApyDetNetWeightPerBox": {
+            "meaning": "成品入库通知明细每箱净重",
+            "reachable": true,
+            "name": "成品入库通知明细每箱净重"
+        },
+        "prdIApyDetNumberExtra1": {
+            "meaning": "成品入库通知明细扩展数量1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量1"
+        },
+        "prdIApyDetNumberExtra2": {
+            "meaning": "成品入库通知明细扩展数量2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量2"
+        },
+        "prdIApyDetNumberExtra3": {
+            "meaning": "成品入库通知明细扩展数量3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量3"
+        },
+        "prdIApyDetNumberExtra4": {
+            "meaning": "成品入库通知明细扩展数量4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量4"
+        },
+        "prdIApyDetNumberExtra5": {
+            "meaning": "成品入库通知明细扩展数量5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量5"
+        },
+        "prdIApyDetOrderId": {
+            "meaning": "成品入库通知明细订单id",
+            "reachable": true,
+            "name": "成品入库通知明细订单id"
+        },
+        "prdIApyDetPackageMatId": {
+            "meaning": "成品入库通知明细包装物料id",
+            "reachable": true,
+            "name": "成品入库通知明细包装物料id"
+        },
+        "prdIApyDetParentId": {
+            "meaning": "成品入库通知明细父节点ID",
+            "reachable": true,
+            "name": "成品入库通知明细父节点ID"
+        },
+        "prdIApyDetPlannedOutputQuantity": {
+            "meaning": "成品入库通知明细计划产出数量",
+            "reachable": true,
+            "name": "成品入库通知明细计划产出数量"
+        },
+        "prdIApyDetPlannedTimeRequired": {
+            "meaning": "成品入库通知明细计划需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细计划需时"
+        },
+        "prdIApyDetPrdIApyActualTimeRequired": {
+            "meaning": "成品入库通知明细实际需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细实际需时"
+        },
+        "prdIApyDetPrdIApyAdjustmentTimeRequired": {
+            "meaning": "成品入库通知明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细调整需时"
+        },
+        "prdIApyDetPrdIApyApplicationId": {
+            "meaning": "成品入库通知明细应用ID",
+            "reachable": true,
+            "name": "成品入库通知明细应用ID"
+        },
+        "prdIApyDetPrdIApyAuditDate": {
+            "meaning": "成品入库通知明细审核时间",
+            "reachable": true,
+            "name": "成品入库通知明细审核时间"
+        },
+        "prdIApyDetPrdIApyAuditStatus": {
+            "meaning": "成品入库通知明细审核状态",
+            "reachable": true,
+            "name": "成品入库通知明细审核状态"
+        },
+        "prdIApyDetPrdIApyAvailableScheduleId": {
+            "meaning": "成品入库通知明细可用日程id",
+            "reachable": true,
+            "name": "成品入库通知明细可用日程id"
+        },
+        "prdIApyDetPrdIApyBeginTime": {
+            "meaning": "成品入库通知明细开始时间",
+            "reachable": true,
+            "name": "成品入库通知明细开始时间"
+        },
+        "prdIApyDetPrdIApyBizVersion": {
+            "meaning": "成品入库通知明细业务自定义版本号",
+            "reachable": true,
+            "name": "成品入库通知明细业务自定义版本号"
+        },
+        "prdIApyDetPrdIApyBriefName": {
+            "meaning": "成品入库通知明细简称",
+            "reachable": true,
+            "name": "成品入库通知明细简称"
+        },
+        "prdIApyDetPrdIApyBusDivisId": {
+            "meaning": "成品入库通知明细事业部id",
+            "reachable": true,
+            "name": "成品入库通知明细事业部id"
+        },
+        "prdIApyDetPrdIApyClazz": {
+            "meaning": "成品入库通知明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品入库通知明细子类"
+        },
+        "prdIApyDetPrdIApyClosedReason": {
+            "meaning": "成品入库通知明细结案原因",
+            "reachable": true,
+            "name": "成品入库通知明细结案原因"
+        },
+        "prdIApyDetPrdIApyClosedStatus": {
+            "meaning": "成品入库通知明细结案状态",
+            "reachable": true,
+            "name": "成品入库通知明细结案状态"
+        },
+        "prdIApyDetPrdIApyComment": {
+            "meaning": "成品入库通知明细评论",
+            "reachable": true,
+            "name": "成品入库通知明细评论"
+        },
+        "prdIApyDetPrdIApyCompleteQuantity": {
+            "meaning": "成品入库通知明细完成数量",
+            "reachable": true,
+            "name": "成品入库通知明细完成数量"
+        },
+        "prdIApyDetPrdIApyCompleteStatus": {
+            "meaning": "成品入库通知明细完成状态",
+            "reachable": true,
+            "name": "成品入库通知明细完成状态"
+        },
+        "prdIApyDetPrdIApyCreateTime": {
+            "meaning": "成品入库通知明细创建时间",
+            "reachable": true,
+            "name": "成品入库通知明细创建时间"
+        },
+        "prdIApyDetPrdIApyCreator": {
+            "meaning": "成品入库通知明细创建人",
+            "reachable": true,
+            "name": "成品入库通知明细创建人"
+        },
+        "prdIApyDetPrdIApyCreatorId": {
+            "meaning": "成品入库通知明细创建人ID",
+            "reachable": true,
+            "name": "成品入库通知明细创建人ID"
+        },
+        "prdIApyDetPrdIApyDateExtra1": {
+            "meaning": "成品入库通知明细扩展时间1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间1"
+        },
+        "prdIApyDetPrdIApyDateExtra2": {
+            "meaning": "成品入库通知明细扩展时间2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间2"
+        },
+        "prdIApyDetPrdIApyDateExtra3": {
+            "meaning": "成品入库通知明细扩展时间3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间3"
+        },
+        "prdIApyDetPrdIApyDateExtra4": {
+            "meaning": "成品入库通知明细扩展时间4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间4"
+        },
+        "prdIApyDetPrdIApyDateExtra5": {
+            "meaning": "成品入库通知明细扩展时间5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展时间5"
+        },
+        "prdIApyDetPrdIApyDefaultType": {
+            "meaning": "成品入库通知明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点主类型"
+        },
+        "prdIApyDetPrdIApyDeliveryDate": {
+            "meaning": "成品入库通知明细交货日期",
+            "reachable": true,
+            "name": "成品入库通知明细交货日期"
+        },
+        "prdIApyDetPrdIApyDescription": {
+            "meaning": "成品入库通知明细描述",
+            "reachable": true,
+            "name": "成品入库通知明细描述"
+        },
+        "prdIApyDetPrdIApyEndTime": {
+            "meaning": "成品入库通知明细结束时间",
+            "reachable": true,
+            "name": "成品入库通知明细结束时间"
+        },
+        "prdIApyDetPrdIApyEndTimeRequired": {
+            "meaning": "成品入库通知明细最后需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细最后需时"
+        },
+        "prdIApyDetPrdIApyEngName": {
+            "meaning": "成品入库通知明细英文名称",
+            "reachable": true,
+            "name": "成品入库通知明细英文名称"
+        },
+        "prdIApyDetPrdIApyEquipmentId": {
+            "meaning": "成品入库通知明细设备id",
+            "reachable": true,
+            "name": "成品入库通知明细设备id"
+        },
+        "prdIApyDetPrdIApyExchangeRateId": {
+            "meaning": "成品入库通知明细币种汇率id",
+            "reachable": true,
+            "name": "成品入库通知明细币种汇率id"
+        },
+        "prdIApyDetPrdIApyExtension": {
+            "meaning": "成品入库通知明细扩展数据",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数据"
+        },
+        "prdIApyDetPrdIApyExternalState": {
+            "meaning": "成品入库通知明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品入库通知明细上流程状态位"
+        },
+        "prdIApyDetPrdIApyFilterClazz": {
+            "meaning": "成品入库通知明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品入库通知明细冗余字段用于筛选"
+        },
+        "prdIApyDetPrdIApyFlags": {
+            "meaning": "成品入库通知明细63位标志位",
+            "reachable": true,
+            "name": "成品入库通知明细63位标志位"
+        },
+        "prdIApyDetPrdIApyFromAuditDate": {
+            "meaning": "prdIApyDetPrdIApyFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromBeginTime": {
+            "meaning": "prdIApyDetPrdIApyFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromCreateTime": {
+            "meaning": "prdIApyDetPrdIApyFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDateExtra1": {
+            "meaning": "prdIApyDetPrdIApyFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDateExtra2": {
+            "meaning": "prdIApyDetPrdIApyFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDateExtra3": {
+            "meaning": "prdIApyDetPrdIApyFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDateExtra4": {
+            "meaning": "prdIApyDetPrdIApyFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDateExtra5": {
+            "meaning": "prdIApyDetPrdIApyFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromDeliveryDate": {
+            "meaning": "prdIApyDetPrdIApyFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromEndTime": {
+            "meaning": "prdIApyDetPrdIApyFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromReceiptDate": {
+            "meaning": "prdIApyDetPrdIApyFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFromUpdateTime": {
+            "meaning": "prdIApyDetPrdIApyFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyFscType": {
+            "meaning": "成品入库通知明细FSC声明",
+            "reachable": true,
+            "name": "成品入库通知明细FSC声明"
+        },
+        "prdIApyDetPrdIApyGenerativePeople": {
+            "meaning": "成品入库通知明细下发人",
+            "reachable": true,
+            "name": "成品入库通知明细下发人"
+        },
+        "prdIApyDetPrdIApyGenerativeState": {
+            "meaning": "成品入库通知明细下发状态",
+            "reachable": true,
+            "name": "成品入库通知明细下发状态"
+        },
+        "prdIApyDetPrdIApyGroovyScript": {
+            "meaning": "成品入库通知明细groovy脚本",
+            "reachable": true,
+            "name": "成品入库通知明细groovy脚本"
+        },
+        "prdIApyDetPrdIApyGropeCode": {
+            "meaning": "成品入库通知明细搜索码",
+            "reachable": true,
+            "name": "成品入库通知明细搜索码"
+        },
+        "prdIApyDetPrdIApyId": {
+            "meaning": "成品入库通知明细主键id",
+            "reachable": true,
+            "name": "成品入库通知明细主键id"
+        },
+        "prdIApyDetPrdIApyInUsed": {
+            "meaning": "成品入库通知明细是否被使用",
+            "reachable": true,
+            "name": "成品入库通知明细是否被使用"
+        },
+        "prdIApyDetPrdIApyIncomingDepartment": {
+            "meaning": "成品入库通知明细来货部门id",
+            "reachable": true,
+            "name": "成品入库通知明细来货部门id"
+        },
+        "prdIApyDetPrdIApyInvTypeTaxRateId": {
+            "meaning": "成品入库通知明细发票税率id",
+            "reachable": true,
+            "name": "成品入库通知明细发票税率id"
+        },
+        "prdIApyDetPrdIApyIsBanned": {
+            "meaning": "成品入库通知明细是否被禁用",
+            "reachable": true,
+            "name": "成品入库通知明细是否被禁用"
+        },
+        "prdIApyDetPrdIApyIsDeleted": {
+            "meaning": "成品入库通知明细是否被删除",
+            "reachable": true,
+            "name": "成品入库通知明细是否被删除"
+        },
+        "prdIApyDetPrdIApyIsLeaf": {
+            "meaning": "成品入库通知明细是否叶子节点",
+            "reachable": true,
+            "name": "成品入库通知明细是否叶子节点"
+        },
+        "prdIApyDetPrdIApyIsMainFlow": {
+            "meaning": "成品入库通知明细是否是主流程",
+            "reachable": true,
+            "name": "成品入库通知明细是否是主流程"
+        },
+        "prdIApyDetPrdIApyIsManualModificationDate": {
+            "meaning": "成品入库通知明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品入库通知明细是否手动修改计划生产时间"
+        },
+        "prdIApyDetPrdIApyIsolation": {
+            "meaning": "成品入库通知明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点数据隔离标识"
+        },
+        "prdIApyDetPrdIApyJsScript": {
+            "meaning": "成品入库通知明细js脚本",
+            "reachable": true,
+            "name": "成品入库通知明细js脚本"
+        },
+        "prdIApyDetPrdIApyMaterialId": {
+            "meaning": "成品入库通知明细物料id",
+            "reachable": true,
+            "name": "成品入库通知明细物料id"
+        },
+        "prdIApyDetPrdIApyName": {
+            "meaning": "成品入库通知明细智能节点名",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点名"
+        },
+        "prdIApyDetPrdIApyNameCodeSearch": {
+            "meaning": "成品入库通知明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品入库通知明细name、user_code模糊搜索"
+        },
+        "prdIApyDetPrdIApyNumberExtra1": {
+            "meaning": "成品入库通知明细扩展数量1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量1"
+        },
+        "prdIApyDetPrdIApyNumberExtra2": {
+            "meaning": "成品入库通知明细扩展数量2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量2"
+        },
+        "prdIApyDetPrdIApyNumberExtra3": {
+            "meaning": "成品入库通知明细扩展数量3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量3"
+        },
+        "prdIApyDetPrdIApyNumberExtra4": {
+            "meaning": "成品入库通知明细扩展数量4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量4"
+        },
+        "prdIApyDetPrdIApyNumberExtra5": {
+            "meaning": "成品入库通知明细扩展数量5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展数量5"
+        },
+        "prdIApyDetPrdIApyParentId": {
+            "meaning": "成品入库通知明细父节点ID",
+            "reachable": true,
+            "name": "成品入库通知明细父节点ID"
+        },
+        "prdIApyDetPrdIApyPlannedOutputQuantity": {
+            "meaning": "成品入库通知明细计划产出数量",
+            "reachable": true,
+            "name": "成品入库通知明细计划产出数量"
+        },
+        "prdIApyDetPrdIApyPlannedTimeRequired": {
+            "meaning": "成品入库通知明细计划需时(小时)",
+            "reachable": true,
+            "name": "成品入库通知明细计划需时"
+        },
+        "prdIApyDetPrdIApyPrintTimes": {
+            "meaning": "成品入库通知明细打印次数",
+            "reachable": true,
+            "name": "成品入库通知明细打印次数"
+        },
+        "prdIApyDetPrdIApyPriority": {
+            "meaning": "成品入库通知明细优先级",
+            "reachable": true,
+            "name": "成品入库通知明细优先级"
+        },
+        "prdIApyDetPrdIApyProcessInstanceId": {
+            "meaning": "成品入库通知明细流程实例ID",
+            "reachable": true,
+            "name": "成品入库通知明细流程实例ID"
+        },
+        "prdIApyDetPrdIApyProductionProcessesTypeId": {
+            "meaning": "成品入库通知明细工序类型ID",
+            "reachable": true,
+            "name": "成品入库通知明细工序类型ID"
+        },
+        "prdIApyDetPrdIApyProductionShiftId": {
+            "meaning": "成品入库通知明细生产班次ID",
+            "reachable": true,
+            "name": "成品入库通知明细生产班次ID"
+        },
+        "prdIApyDetPrdIApyQuantity": {
+            "meaning": "成品入库通知明细任务数量",
+            "reachable": true,
+            "name": "成品入库通知明细任务数量"
+        },
+        "prdIApyDetPrdIApyReceiptDate": {
+            "meaning": "成品入库通知明细单据日期",
+            "reachable": true,
+            "name": "成品入库通知明细单据日期"
+        },
+        "prdIApyDetPrdIApyReceiptType": {
+            "meaning": "成品入库通知明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品入库通知明细单据类型"
+        },
+        "prdIApyDetPrdIApyRelatedTasksId": {
+            "meaning": "成品入库通知明细关联任务id",
+            "reachable": true,
+            "name": "成品入库通知明细关联任务id"
+        },
+        "prdIApyDetPrdIApySerialNumber": {
+            "meaning": "成品入库通知明细顺序号",
+            "reachable": true,
+            "name": "成品入库通知明细顺序号"
+        },
+        "prdIApyDetPrdIApySource": {
+            "meaning": "成品入库通知明细源",
+            "reachable": true,
+            "name": "成品入库通知明细源"
+        },
+        "prdIApyDetPrdIApySourceType": {
+            "meaning": "成品入库通知明细来源类型",
+            "reachable": true,
+            "name": "成品入库通知明细来源类型"
+        },
+        "prdIApyDetPrdIApyState": {
+            "meaning": "成品入库通知明细通用状态",
+            "reachable": true,
+            "name": "成品入库通知明细通用状态"
+        },
+        "prdIApyDetPrdIApySystemCode": {
+            "meaning": "成品入库通知明细系统编码",
+            "reachable": true,
+            "name": "成品入库通知明细系统编码"
+        },
+        "prdIApyDetPrdIApyTarget": {
+            "meaning": "成品入库通知明细目标",
+            "reachable": true,
+            "name": "成品入库通知明细目标"
+        },
+        "prdIApyDetPrdIApyTaskNodeName": {
+            "meaning": "成品入库通知明细任务节点名称",
+            "reachable": true,
+            "name": "成品入库通知明细任务节点名称"
+        },
+        "prdIApyDetPrdIApyTenantId": {
+            "meaning": "成品入库通知明细租户id",
+            "reachable": true,
+            "name": "成品入库通知明细租户id"
+        },
+        "prdIApyDetPrdIApyThirdPartyClass": {
+            "meaning": "成品入库通知明细第三方分类",
+            "reachable": true,
+            "name": "成品入库通知明细第三方分类"
+        },
+        "prdIApyDetPrdIApyThirdPartyId": {
+            "meaning": "成品入库通知明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品入库通知明细第三方系统中的唯一ID"
+        },
+        "prdIApyDetPrdIApyThirdPartyName": {
+            "meaning": "成品入库通知明细第三方名称",
+            "reachable": true,
+            "name": "成品入库通知明细第三方名称"
+        },
+        "prdIApyDetPrdIApyToAuditDate": {
+            "meaning": "prdIApyDetPrdIApyToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToBeginTime": {
+            "meaning": "prdIApyDetPrdIApyToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToCreateTime": {
+            "meaning": "prdIApyDetPrdIApyToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDateExtra1": {
+            "meaning": "prdIApyDetPrdIApyToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDateExtra2": {
+            "meaning": "prdIApyDetPrdIApyToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDateExtra3": {
+            "meaning": "prdIApyDetPrdIApyToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDateExtra4": {
+            "meaning": "prdIApyDetPrdIApyToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDateExtra5": {
+            "meaning": "prdIApyDetPrdIApyToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToDeliveryDate": {
+            "meaning": "prdIApyDetPrdIApyToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToEndTime": {
+            "meaning": "prdIApyDetPrdIApyToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToReceiptDate": {
+            "meaning": "prdIApyDetPrdIApyToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyToUpdateTime": {
+            "meaning": "prdIApyDetPrdIApyToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetPrdIApyUnitCode": {
+            "meaning": "成品入库通知明细单位id",
+            "reachable": true,
+            "name": "成品入库通知明细单位id"
+        },
+        "prdIApyDetPrdIApyUpdateTime": {
+            "meaning": "成品入库通知明细更新时间",
+            "reachable": true,
+            "name": "成品入库通知明细更新时间"
+        },
+        "prdIApyDetPrdIApyUpdater": {
+            "meaning": "成品入库通知明细更新人",
+            "reachable": true,
+            "name": "成品入库通知明细更新人"
+        },
+        "prdIApyDetPrdIApyUpdaterId": {
+            "meaning": "成品入库通知明细更新人ID",
+            "reachable": true,
+            "name": "成品入库通知明细更新人ID"
+        },
+        "prdIApyDetPrdIApyUserCode": {
+            "meaning": "成品入库通知明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点的唯一编码"
+        },
+        "prdIApyDetPrdIApyVarExtra1": {
+            "meaning": "成品入库通知明细扩展1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展1"
+        },
+        "prdIApyDetPrdIApyVarExtra2": {
+            "meaning": "成品入库通知明细扩展2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展2"
+        },
+        "prdIApyDetPrdIApyVarExtra3": {
+            "meaning": "成品入库通知明细扩展3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展3"
+        },
+        "prdIApyDetPrdIApyVarExtra4": {
+            "meaning": "成品入库通知明细扩展4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展4"
+        },
+        "prdIApyDetPrdIApyVarExtra5": {
+            "meaning": "成品入库通知明细扩展5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展5"
+        },
+        "prdIApyDetPrdIApyVersion": {
+            "meaning": "成品入库通知明细版本号",
+            "reachable": true,
+            "name": "成品入库通知明细版本号"
+        },
+        "prdIApyDetPrintTimes": {
+            "meaning": "成品入库通知明细打印次数",
+            "reachable": true,
+            "name": "成品入库通知明细打印次数"
+        },
+        "prdIApyDetPriority": {
+            "meaning": "成品入库通知明细优先级",
+            "reachable": true,
+            "name": "成品入库通知明细优先级"
+        },
+        "prdIApyDetProcessInstanceId": {
+            "meaning": "成品入库通知明细流程实例ID",
+            "reachable": true,
+            "name": "成品入库通知明细流程实例ID"
+        },
+        "prdIApyDetProductionProcessesTypeId": {
+            "meaning": "成品入库通知明细工序类型ID",
+            "reachable": true,
+            "name": "成品入库通知明细工序类型ID"
+        },
+        "prdIApyDetProductionShiftId": {
+            "meaning": "成品入库通知明细生产班次ID",
+            "reachable": true,
+            "name": "成品入库通知明细生产班次ID"
+        },
+        "prdIApyDetQuantity": {
+            "meaning": "成品入库通知明细任务数量",
+            "reachable": true,
+            "name": "成品入库通知明细任务数量"
+        },
+        "prdIApyDetQuotationUnitPriceIncludingTax": {
+            "meaning": "成品入库通知明细含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "成品入库通知明细含税报价单价"
+        },
+        "prdIApyDetQuotationUnitPriceWithoutTax": {
+            "meaning": "成品入库通知明细不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "成品入库通知明细不含税报价单价"
+        },
+        "prdIApyDetReceiptDate": {
+            "meaning": "成品入库通知明细单据日期",
+            "reachable": true,
+            "name": "成品入库通知明细单据日期"
+        },
+        "prdIApyDetReceiptType": {
+            "meaning": "成品入库通知明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品入库通知明细单据类型"
+        },
+        "prdIApyDetRelatedTasksId": {
+            "meaning": "成品入库通知明细关联任务id",
+            "reachable": true,
+            "name": "成品入库通知明细关联任务id"
+        },
+        "prdIApyDetSerialNumber": {
+            "meaning": "成品入库通知明细顺序号",
+            "reachable": true,
+            "name": "成品入库通知明细顺序号"
+        },
+        "prdIApyDetSettlementTotalAmount": {
+            "meaning": "成品入库通知明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "成品入库通知明细结算金额"
+        },
+        "prdIApyDetSettlementUnitPrice": {
+            "meaning": "成品入库通知明细结算单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品入库通知明细结算单价"
+        },
+        "prdIApyDetSingleWeight": {
+            "meaning": "成品入库通知明细单重kg",
+            "reachable": true,
+            "name": "成品入库通知明细单重kg"
+        },
+        "prdIApyDetSource": {
+            "meaning": "成品入库通知明细源",
+            "reachable": true,
+            "name": "成品入库通知明细源"
+        },
+        "prdIApyDetSourceType": {
+            "meaning": "成品入库通知明细来源类型",
+            "reachable": true,
+            "name": "成品入库通知明细来源类型"
+        },
+        "prdIApyDetState": {
+            "meaning": "成品入库通知明细通用状态",
+            "reachable": true,
+            "name": "成品入库通知明细通用状态"
+        },
+        "prdIApyDetSystemCode": {
+            "meaning": "成品入库通知明细系统编码",
+            "reachable": true,
+            "name": "成品入库通知明细系统编码"
+        },
+        "prdIApyDetTarget": {
+            "meaning": "成品入库通知明细目标",
+            "reachable": true,
+            "name": "成品入库通知明细目标"
+        },
+        "prdIApyDetTaskNodeName": {
+            "meaning": "成品入库通知明细任务节点名称",
+            "reachable": true,
+            "name": "成品入库通知明细任务节点名称"
+        },
+        "prdIApyDetTaxRate": {
+            "meaning": "成品入库通知明细税率",
+            "reachable": true,
+            "name": "成品入库通知明细税率"
+        },
+        "prdIApyDetTenantId": {
+            "meaning": "成品入库通知明细租户id",
+            "reachable": true,
+            "name": "成品入库通知明细租户id"
+        },
+        "prdIApyDetThirdPartyClass": {
+            "meaning": "成品入库通知明细第三方分类",
+            "reachable": true,
+            "name": "成品入库通知明细第三方分类"
+        },
+        "prdIApyDetThirdPartyId": {
+            "meaning": "成品入库通知明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品入库通知明细第三方系统中的唯一ID"
+        },
+        "prdIApyDetThirdPartyName": {
+            "meaning": "成品入库通知明细第三方名称",
+            "reachable": true,
+            "name": "成品入库通知明细第三方名称"
+        },
+        "prdIApyDetToAuditDate": {
+            "meaning": "prdIApyDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToBeginTime": {
+            "meaning": "prdIApyDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToCreateTime": {
+            "meaning": "prdIApyDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDateExtra1": {
+            "meaning": "prdIApyDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDateExtra2": {
+            "meaning": "prdIApyDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDateExtra3": {
+            "meaning": "prdIApyDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDateExtra4": {
+            "meaning": "prdIApyDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDateExtra5": {
+            "meaning": "prdIApyDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToDeliveryDate": {
+            "meaning": "prdIApyDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToEndTime": {
+            "meaning": "prdIApyDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToReceiptDate": {
+            "meaning": "prdIApyDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetToUpdateTime": {
+            "meaning": "prdIApyDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "prdIApyDetTotalAmountIncludingTax": {
+            "meaning": "成品入库通知明细含税总金额",
+            "reachable": true,
+            "name": "成品入库通知明细含税总金额"
+        },
+        "prdIApyDetTotalAmountWithoutTax": {
+            "meaning": "成品入库通知明细不含税总金额",
+            "reachable": true,
+            "name": "成品入库通知明细不含税总金额"
+        },
+        "prdIApyDetTotalGrossWeight": {
+            "meaning": "成品入库通知明细总毛重kg",
+            "reachable": true,
+            "name": "成品入库通知明细总毛重kg"
+        },
+        "prdIApyDetTotalNetWeight": {
+            "meaning": "成品入库通知明细总净重kg",
+            "reachable": true,
+            "name": "成品入库通知明细总净重kg"
+        },
+        "prdIApyDetTotalVolume": {
+            "meaning": "成品入库通知明细总体积",
+            "reachable": true,
+            "name": "成品入库通知明细总体积"
+        },
+        "prdIApyDetTotalWeightLot": {
+            "meaning": "成品入库通知明细合计总重kg",
+            "reachable": true,
+            "name": "成品入库通知明细合计总重kg"
+        },
+        "prdIApyDetTrayMatId": {
+            "meaning": "成品入库通知明细托盘物料id",
+            "reachable": true,
+            "name": "成品入库通知明细托盘物料id"
+        },
+        "prdIApyDetUnitCode": {
+            "meaning": "成品入库通知明细单位id",
+            "reachable": true,
+            "name": "成品入库通知明细单位id"
+        },
+        "prdIApyDetUnitPriceIncludingTax": {
+            "meaning": "成品入库通知明细含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品入库通知明细含税单价"
+        },
+        "prdIApyDetUnitpricewithouttax": {
+            "meaning": "成品入库通知明细不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "成品入库通知明细不含税单价"
+        },
+        "prdIApyDetUpdateTime": {
+            "meaning": "成品入库通知明细更新时间",
+            "reachable": true,
+            "name": "成品入库通知明细更新时间"
+        },
+        "prdIApyDetUpdater": {
+            "meaning": "成品入库通知明细更新人",
+            "reachable": true,
+            "name": "成品入库通知明细更新人"
+        },
+        "prdIApyDetUpdaterId": {
+            "meaning": "成品入库通知明细更新人ID",
+            "reachable": true,
+            "name": "成品入库通知明细更新人ID"
+        },
+        "prdIApyDetUserCode": {
+            "meaning": "成品入库通知明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品入库通知明细智能节点的唯一编码"
+        },
+        "prdIApyDetVarExtra1": {
+            "meaning": "成品入库通知明细扩展1",
+            "reachable": true,
+            "name": "成品入库通知明细扩展1"
+        },
+        "prdIApyDetVarExtra2": {
+            "meaning": "成品入库通知明细扩展2",
+            "reachable": true,
+            "name": "成品入库通知明细扩展2"
+        },
+        "prdIApyDetVarExtra3": {
+            "meaning": "成品入库通知明细扩展3",
+            "reachable": true,
+            "name": "成品入库通知明细扩展3"
+        },
+        "prdIApyDetVarExtra4": {
+            "meaning": "成品入库通知明细扩展4",
+            "reachable": true,
+            "name": "成品入库通知明细扩展4"
+        },
+        "prdIApyDetVarExtra5": {
+            "meaning": "成品入库通知明细扩展5",
+            "reachable": true,
+            "name": "成品入库通知明细扩展5"
+        },
+        "prdIApyDetVersion": {
+            "meaning": "成品入库通知明细版本号",
+            "reachable": true,
+            "name": "成品入库通知明细版本号"
+        },
+        "prdIApyDetWorkorderId": {
+            "meaning": "成品入库通知明细工单id",
+            "reachable": true,
+            "name": "成品入库通知明细工单id"
+        }
+    }
+}

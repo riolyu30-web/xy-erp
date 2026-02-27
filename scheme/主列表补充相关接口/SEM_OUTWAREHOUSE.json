@@ -1,0 +1,596 @@
+{
+    "api_name": "/sem-outwarehouse/findList",
+    "table_name": "半成品出仓表",
+    "request": {
+        "semOutwarehouseClazz": "SEM_OUTWAREHOUSE"
+    },
+    "mainTabClazz": "SEM_OUTWAREHOUSE",
+    "response": {
+        "semOutwarehouseActualTimeRequired": {
+            "meaning": "半成品出仓表实际需时(小时)",
+            "reachable": true,
+            "name": "半成品出仓表实际需时"
+        },
+        "semOutwarehouseAdjustmentTimeRequired": {
+            "meaning": "半成品出仓表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "半成品出仓表调整需时"
+        },
+        "semOutwarehouseApplicationId": {
+            "meaning": "半成品出仓表应用ID",
+            "reachable": true,
+            "name": "半成品出仓表应用ID"
+        },
+        "semOutwarehouseAuditDate": {
+            "meaning": "半成品出仓表审核时间",
+            "reachable": true,
+            "name": "半成品出仓表审核时间"
+        },
+        "semOutwarehouseAuditStatus": {
+            "meaning": "半成品出仓表审核状态",
+            "reachable": true,
+            "name": "半成品出仓表审核状态"
+        },
+        "semOutwarehouseAvailableScheduleId": {
+            "meaning": "半成品出仓表可用日程id",
+            "reachable": true,
+            "name": "半成品出仓表可用日程id"
+        },
+        "semOutwarehouseBeginTime": {
+            "meaning": "半成品出仓表开始时间",
+            "reachable": true,
+            "name": "半成品出仓表开始时间"
+        },
+        "semOutwarehouseBizVersion": {
+            "meaning": "半成品出仓表业务自定义版本号",
+            "reachable": true,
+            "name": "半成品出仓表业务自定义版本号"
+        },
+        "semOutwarehouseBriefName": {
+            "meaning": "半成品出仓表简称",
+            "reachable": true,
+            "name": "半成品出仓表简称"
+        },
+        "semOutwarehouseBusDivisId": {
+            "meaning": "半成品出仓表事业部id",
+            "reachable": true,
+            "name": "半成品出仓表事业部id"
+        },
+        "semOutwarehouseClazz": {
+            "meaning": "半成品出仓表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "半成品出仓表子类"
+        },
+        "semOutwarehouseClosedReason": {
+            "meaning": "半成品出仓表结案原因",
+            "reachable": true,
+            "name": "半成品出仓表结案原因"
+        },
+        "semOutwarehouseClosedStatus": {
+            "meaning": "半成品出仓表结案状态",
+            "reachable": true,
+            "name": "半成品出仓表结案状态"
+        },
+        "semOutwarehouseComment": {
+            "meaning": "半成品出仓表评论",
+            "reachable": true,
+            "name": "半成品出仓表评论"
+        },
+        "semOutwarehouseCompleteQuantity": {
+            "meaning": "半成品出仓表完成数量",
+            "reachable": true,
+            "name": "半成品出仓表完成数量"
+        },
+        "semOutwarehouseCompleteStatus": {
+            "meaning": "半成品出仓表完成状态",
+            "reachable": true,
+            "name": "半成品出仓表完成状态"
+        },
+        "semOutwarehouseCreateTime": {
+            "meaning": "半成品出仓表创建时间",
+            "reachable": true,
+            "name": "半成品出仓表创建时间"
+        },
+        "semOutwarehouseCreator": {
+            "meaning": "半成品出仓表创建人",
+            "reachable": true,
+            "name": "半成品出仓表创建人"
+        },
+        "semOutwarehouseCreatorId": {
+            "meaning": "半成品出仓表创建人ID",
+            "reachable": true,
+            "name": "半成品出仓表创建人ID"
+        },
+        "semOutwarehouseDateExtra1": {
+            "meaning": "半成品出仓表扩展时间1",
+            "reachable": true,
+            "name": "半成品出仓表扩展时间1"
+        },
+        "semOutwarehouseDateExtra2": {
+            "meaning": "半成品出仓表扩展时间2",
+            "reachable": true,
+            "name": "半成品出仓表扩展时间2"
+        },
+        "semOutwarehouseDateExtra3": {
+            "meaning": "半成品出仓表扩展时间3",
+            "reachable": true,
+            "name": "半成品出仓表扩展时间3"
+        },
+        "semOutwarehouseDateExtra4": {
+            "meaning": "半成品出仓表扩展时间4",
+            "reachable": true,
+            "name": "半成品出仓表扩展时间4"
+        },
+        "semOutwarehouseDateExtra5": {
+            "meaning": "半成品出仓表扩展时间5",
+            "reachable": true,
+            "name": "半成品出仓表扩展时间5"
+        },
+        "semOutwarehouseDefaultType": {
+            "meaning": "半成品出仓表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "半成品出仓表智能节点主类型"
+        },
+        "semOutwarehouseDeliveryDate": {
+            "meaning": "半成品出仓表交货日期",
+            "reachable": true,
+            "name": "半成品出仓表交货日期"
+        },
+        "semOutwarehouseDescription": {
+            "meaning": "半成品出仓表描述",
+            "reachable": true,
+            "name": "半成品出仓表描述"
+        },
+        "semOutwarehouseEndTime": {
+            "meaning": "半成品出仓表结束时间",
+            "reachable": true,
+            "name": "半成品出仓表结束时间"
+        },
+        "semOutwarehouseEndTimeRequired": {
+            "meaning": "半成品出仓表最后需时(小时)",
+            "reachable": true,
+            "name": "半成品出仓表最后需时"
+        },
+        "semOutwarehouseEngName": {
+            "meaning": "半成品出仓表英文名称",
+            "reachable": true,
+            "name": "半成品出仓表英文名称"
+        },
+        "semOutwarehouseEquipmentId": {
+            "meaning": "半成品出仓表设备id",
+            "reachable": true,
+            "name": "半成品出仓表设备id"
+        },
+        "semOutwarehouseExchangeRateId": {
+            "meaning": "半成品出仓表币种汇率id",
+            "reachable": true,
+            "name": "半成品出仓表币种汇率id"
+        },
+        "semOutwarehouseExtension": {
+            "meaning": "半成品出仓表扩展数据",
+            "reachable": true,
+            "name": "半成品出仓表扩展数据"
+        },
+        "semOutwarehouseExternalState": {
+            "meaning": "半成品出仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "半成品出仓表上流程状态位"
+        },
+        "semOutwarehouseFilterClazz": {
+            "meaning": "半成品出仓表冗余字段用于筛选",
+            "reachable": false,
+            "name": "半成品出仓表冗余字段用于筛选"
+        },
+        "semOutwarehouseFlags": {
+            "meaning": "半成品出仓表63位标志位",
+            "reachable": true,
+            "name": "半成品出仓表63位标志位"
+        },
+        "semOutwarehouseFromAuditDate": {
+            "meaning": "semOutwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromBeginTime": {
+            "meaning": "semOutwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromCreateTime": {
+            "meaning": "semOutwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDateExtra1": {
+            "meaning": "semOutwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDateExtra2": {
+            "meaning": "semOutwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDateExtra3": {
+            "meaning": "semOutwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDateExtra4": {
+            "meaning": "semOutwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDateExtra5": {
+            "meaning": "semOutwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromDeliveryDate": {
+            "meaning": "semOutwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromEndTime": {
+            "meaning": "semOutwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromReceiptDate": {
+            "meaning": "semOutwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFromUpdateTime": {
+            "meaning": "semOutwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseFscType": {
+            "meaning": "半成品出仓表FSC声明",
+            "reachable": true,
+            "name": "半成品出仓表FSC声明"
+        },
+        "semOutwarehouseGenerativePeople": {
+            "meaning": "半成品出仓表下发人",
+            "reachable": true,
+            "name": "半成品出仓表下发人"
+        },
+        "semOutwarehouseGenerativeState": {
+            "meaning": "半成品出仓表下发状态",
+            "reachable": true,
+            "name": "半成品出仓表下发状态"
+        },
+        "semOutwarehouseGroovyScript": {
+            "meaning": "半成品出仓表groovy脚本",
+            "reachable": true,
+            "name": "半成品出仓表groovy脚本"
+        },
+        "semOutwarehouseGropeCode": {
+            "meaning": "半成品出仓表搜索码",
+            "reachable": true,
+            "name": "半成品出仓表搜索码"
+        },
+        "semOutwarehouseId": {
+            "meaning": "半成品出仓表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "半成品出仓表PK"
+        },
+        "semOutwarehouseInUsed": {
+            "meaning": "半成品出仓表是否被使用",
+            "reachable": true,
+            "name": "半成品出仓表是否被使用"
+        },
+        "semOutwarehouseInvTypeTaxRateId": {
+            "meaning": "半成品出仓表发票税率id",
+            "reachable": true,
+            "name": "半成品出仓表发票税率id"
+        },
+        "semOutwarehouseIsBanned": {
+            "meaning": "半成品出仓表是否被禁用",
+            "reachable": true,
+            "name": "半成品出仓表是否被禁用"
+        },
+        "semOutwarehouseIsDeleted": {
+            "meaning": "半成品出仓表是否被删除",
+            "reachable": true,
+            "name": "半成品出仓表是否被删除"
+        },
+        "semOutwarehouseIsLeaf": {
+            "meaning": "半成品出仓表是否叶子节点",
+            "reachable": true,
+            "name": "半成品出仓表是否叶子节点"
+        },
+        "semOutwarehouseIsMainFlow": {
+            "meaning": "半成品出仓表是否是主流程",
+            "reachable": true,
+            "name": "半成品出仓表是否是主流程"
+        },
+        "semOutwarehouseIsManualModificationDate": {
+            "meaning": "半成品出仓表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "半成品出仓表是否手动修改计划生产时间"
+        },
+        "semOutwarehouseIsolation": {
+            "meaning": "半成品出仓表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "半成品出仓表智能节点数据隔离标识"
+        },
+        "semOutwarehouseJsScript": {
+            "meaning": "半成品出仓表js脚本",
+            "reachable": true,
+            "name": "半成品出仓表js脚本"
+        },
+        "semOutwarehouseMaterialId": {
+            "meaning": "半成品出仓表物料id",
+            "reachable": true,
+            "name": "半成品出仓表物料id"
+        },
+        "semOutwarehouseName": {
+            "meaning": "半成品出仓表智能节点名",
+            "reachable": true,
+            "name": "半成品出仓表智能节点名"
+        },
+        "semOutwarehouseNameCodeSearch": {
+            "meaning": "半成品出仓表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "半成品出仓表name、user_code模糊搜索"
+        },
+        "semOutwarehouseNumberExtra1": {
+            "meaning": "半成品出仓表扩展数量1",
+            "reachable": true,
+            "name": "半成品出仓表扩展数量1"
+        },
+        "semOutwarehouseNumberExtra2": {
+            "meaning": "半成品出仓表扩展数量2",
+            "reachable": true,
+            "name": "半成品出仓表扩展数量2"
+        },
+        "semOutwarehouseNumberExtra3": {
+            "meaning": "半成品出仓表扩展数量3",
+            "reachable": true,
+            "name": "半成品出仓表扩展数量3"
+        },
+        "semOutwarehouseNumberExtra4": {
+            "meaning": "半成品出仓表扩展数量4",
+            "reachable": true,
+            "name": "半成品出仓表扩展数量4"
+        },
+        "semOutwarehouseNumberExtra5": {
+            "meaning": "半成品出仓表扩展数量5",
+            "reachable": true,
+            "name": "半成品出仓表扩展数量5"
+        },
+        "semOutwarehouseParentId": {
+            "meaning": "半成品出仓表父节点ID",
+            "reachable": true,
+            "name": "半成品出仓表父节点ID"
+        },
+        "semOutwarehousePlannedOutputQuantity": {
+            "meaning": "半成品出仓表计划产出数量",
+            "reachable": true,
+            "name": "半成品出仓表计划产出数量"
+        },
+        "semOutwarehousePlannedTimeRequired": {
+            "meaning": "半成品出仓表计划需时(小时)",
+            "reachable": true,
+            "name": "半成品出仓表计划需时"
+        },
+        "semOutwarehousePrintTimes": {
+            "meaning": "半成品出仓表打印次数",
+            "reachable": true,
+            "name": "半成品出仓表打印次数"
+        },
+        "semOutwarehousePriority": {
+            "meaning": "半成品出仓表优先级",
+            "reachable": true,
+            "name": "半成品出仓表优先级"
+        },
+        "semOutwarehouseProcessInstanceId": {
+            "meaning": "半成品出仓表流程实例ID",
+            "reachable": true,
+            "name": "半成品出仓表流程实例ID"
+        },
+        "semOutwarehouseProductionProcessesTypeId": {
+            "meaning": "半成品出仓表工序类型ID",
+            "reachable": true,
+            "name": "半成品出仓表工序类型ID"
+        },
+        "semOutwarehouseProductionShiftId": {
+            "meaning": "半成品出仓表生产班次ID",
+            "reachable": true,
+            "name": "半成品出仓表生产班次ID"
+        },
+        "semOutwarehouseQuantity": {
+            "meaning": "半成品出仓表任务数量",
+            "reachable": true,
+            "name": "半成品出仓表任务数量"
+        },
+        "semOutwarehouseReceiptDate": {
+            "meaning": "半成品出仓表单据日期",
+            "reachable": true,
+            "name": "半成品出仓表单据日期"
+        },
+        "semOutwarehouseReceiptType": {
+            "meaning": "半成品出仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "半成品出仓表单据类型"
+        },
+        "semOutwarehouseRelatedTasksId": {
+            "meaning": "半成品出仓表关联任务id",
+            "reachable": true,
+            "name": "半成品出仓表关联任务id"
+        },
+        "semOutwarehouseSerialNumber": {
+            "meaning": "半成品出仓表顺序号",
+            "reachable": true,
+            "name": "半成品出仓表顺序号"
+        },
+        "semOutwarehouseSource": {
+            "meaning": "半成品出仓表源",
+            "reachable": true,
+            "name": "半成品出仓表源"
+        },
+        "semOutwarehouseSourceType": {
+            "meaning": "半成品出仓表来源类型",
+            "reachable": true,
+            "name": "半成品出仓表来源类型"
+        },
+        "semOutwarehouseState": {
+            "meaning": "半成品出仓表通用状态",
+            "reachable": true,
+            "name": "半成品出仓表通用状态"
+        },
+        "semOutwarehouseSystemCode": {
+            "meaning": "半成品出仓表系统编码",
+            "reachable": true,
+            "name": "半成品出仓表系统编码"
+        },
+        "semOutwarehouseTarget": {
+            "meaning": "半成品出仓表目标",
+            "reachable": true,
+            "name": "半成品出仓表目标"
+        },
+        "semOutwarehouseTaskNodeName": {
+            "meaning": "半成品出仓表任务节点名称",
+            "reachable": true,
+            "name": "半成品出仓表任务节点名称"
+        },
+        "semOutwarehouseTenantId": {
+            "meaning": "半成品出仓表租户id",
+            "reachable": true,
+            "name": "半成品出仓表租户id"
+        },
+        "semOutwarehouseThirdPartyClass": {
+            "meaning": "半成品出仓表第三方分类",
+            "reachable": true,
+            "name": "半成品出仓表第三方分类"
+        },
+        "semOutwarehouseThirdPartyId": {
+            "meaning": "半成品出仓表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "半成品出仓表第三方系统中的唯一ID"
+        },
+        "semOutwarehouseThirdPartyName": {
+            "meaning": "半成品出仓表第三方名称",
+            "reachable": true,
+            "name": "半成品出仓表第三方名称"
+        },
+        "semOutwarehouseToAuditDate": {
+            "meaning": "semOutwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToBeginTime": {
+            "meaning": "semOutwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToCreateTime": {
+            "meaning": "semOutwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDateExtra1": {
+            "meaning": "semOutwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDateExtra2": {
+            "meaning": "semOutwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDateExtra3": {
+            "meaning": "semOutwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDateExtra4": {
+            "meaning": "semOutwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDateExtra5": {
+            "meaning": "semOutwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToDeliveryDate": {
+            "meaning": "semOutwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToEndTime": {
+            "meaning": "semOutwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToReceiptDate": {
+            "meaning": "semOutwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseToUpdateTime": {
+            "meaning": "semOutwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "semOutwarehouseUnitCode": {
+            "meaning": "半成品出仓表单位id",
+            "reachable": true,
+            "name": "半成品出仓表单位id"
+        },
+        "semOutwarehouseUpdateTime": {
+            "meaning": "半成品出仓表更新时间",
+            "reachable": true,
+            "name": "半成品出仓表更新时间"
+        },
+        "semOutwarehouseUpdater": {
+            "meaning": "半成品出仓表更新人",
+            "reachable": true,
+            "name": "半成品出仓表更新人"
+        },
+        "semOutwarehouseUpdaterId": {
+            "meaning": "半成品出仓表更新人ID",
+            "reachable": true,
+            "name": "半成品出仓表更新人ID"
+        },
+        "semOutwarehouseUserCode": {
+            "meaning": "半成品出仓表智能节点的唯一编码",
+            "reachable": true,
+            "name": "半成品出仓表智能节点的唯一编码"
+        },
+        "semOutwarehouseVarExtra1": {
+            "meaning": "半成品出仓表扩展1",
+            "reachable": true,
+            "name": "半成品出仓表扩展1"
+        },
+        "semOutwarehouseVarExtra2": {
+            "meaning": "半成品出仓表扩展2",
+            "reachable": true,
+            "name": "半成品出仓表扩展2"
+        },
+        "semOutwarehouseVarExtra3": {
+            "meaning": "半成品出仓表扩展3",
+            "reachable": true,
+            "name": "半成品出仓表扩展3"
+        },
+        "semOutwarehouseVarExtra4": {
+            "meaning": "半成品出仓表扩展4",
+            "reachable": true,
+            "name": "半成品出仓表扩展4"
+        },
+        "semOutwarehouseVarExtra5": {
+            "meaning": "半成品出仓表扩展5",
+            "reachable": true,
+            "name": "半成品出仓表扩展5"
+        },
+        "semOutwarehouseVersion": {
+            "meaning": "半成品出仓表版本号",
+            "reachable": true,
+            "name": "半成品出仓表版本号"
+        }
+    }
+}

@@ -1,0 +1,411 @@
+{
+    "api_name": "/msg/findList",
+    "table_name": "消息记录表",
+    "request": {
+        "msgClazz": "MSG"
+    },
+    "mainTabClazz": "MSG",
+    "response": {
+        "msgApplicationId": {
+            "meaning": "消息记录表应用ID",
+            "reachable": false,
+            "name": "消息记录表应用ID"
+        },
+        "msgAuditDate": {
+            "meaning": "消息记录表审核时间",
+            "reachable": false,
+            "name": "消息记录表审核时间"
+        },
+        "msgAuditStatus": {
+            "meaning": "消息记录表审核状态",
+            "reachable": false,
+            "name": "消息记录表审核状态"
+        },
+        "msgBizVersion": {
+            "meaning": "消息记录表业务自定义版本号",
+            "reachable": false,
+            "name": "消息记录表业务自定义版本号"
+        },
+        "msgBriefName": {
+            "meaning": "消息记录表简称",
+            "reachable": false,
+            "name": "消息记录表简称"
+        },
+        "msgBusDivisId": {
+            "meaning": "消息记录表事业部id",
+            "reachable": false,
+            "name": "消息记录表事业部id"
+        },
+        "msgClazz": {
+            "meaning": "消息记录表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "消息记录表子类"
+        },
+        "msgComment": {
+            "meaning": "消息记录表评论",
+            "reachable": false,
+            "name": "消息记录表评论"
+        },
+        "msgContent": {
+            "meaning": "消息记录表消息内容（模版参数）",
+            "reachable": false,
+            "name": "消息记录表消息内容"
+        },
+        "msgCreateTime": {
+            "meaning": "消息记录表创建时间",
+            "reachable": false,
+            "name": "消息记录表创建时间"
+        },
+        "msgCreator": {
+            "meaning": "消息记录表创建人",
+            "reachable": false,
+            "name": "消息记录表创建人"
+        },
+        "msgCreatorId": {
+            "meaning": "消息记录表创建人ID",
+            "reachable": false,
+            "name": "消息记录表创建人ID"
+        },
+        "msgDateExtra1": {
+            "meaning": "消息记录表扩展时间1",
+            "reachable": false,
+            "name": "消息记录表扩展时间1"
+        },
+        "msgDateExtra2": {
+            "meaning": "消息记录表扩展时间2",
+            "reachable": false,
+            "name": "消息记录表扩展时间2"
+        },
+        "msgDateExtra3": {
+            "meaning": "消息记录表扩展时间3",
+            "reachable": false,
+            "name": "消息记录表扩展时间3"
+        },
+        "msgDateExtra4": {
+            "meaning": "消息记录表扩展时间4",
+            "reachable": false,
+            "name": "消息记录表扩展时间4"
+        },
+        "msgDateExtra5": {
+            "meaning": "消息记录表扩展时间5",
+            "reachable": false,
+            "name": "消息记录表扩展时间5"
+        },
+        "msgDefaultType": {
+            "meaning": "消息记录表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "消息记录表智能节点主类型"
+        },
+        "msgDescription": {
+            "meaning": "消息记录表描述",
+            "reachable": false,
+            "name": "消息记录表描述"
+        },
+        "msgEngName": {
+            "meaning": "消息记录表英文名称",
+            "reachable": false,
+            "name": "消息记录表英文名称"
+        },
+        "msgExtension": {
+            "meaning": "消息记录表扩展数据",
+            "reachable": false,
+            "name": "消息记录表扩展数据"
+        },
+        "msgExternalState": {
+            "meaning": "消息记录表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "消息记录表上流程状态位"
+        },
+        "msgFlags": {
+            "meaning": "消息记录表63位标志位",
+            "reachable": false,
+            "name": "消息记录表63位标志位"
+        },
+        "msgFromAuditDate": {
+            "meaning": "msgFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromCreateTime": {
+            "meaning": "msgFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromDateExtra1": {
+            "meaning": "msgFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromDateExtra2": {
+            "meaning": "msgFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromDateExtra3": {
+            "meaning": "msgFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromDateExtra4": {
+            "meaning": "msgFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromDateExtra5": {
+            "meaning": "msgFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgFromUpdateTime": {
+            "meaning": "msgFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgGroovyScript": {
+            "meaning": "消息记录表groovy脚本",
+            "reachable": false,
+            "name": "消息记录表groovy脚本"
+        },
+        "msgGropeCode": {
+            "meaning": "消息记录表搜索码",
+            "reachable": false,
+            "name": "消息记录表搜索码"
+        },
+        "msgId": {
+            "meaning": "消息记录表pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "消息记录表pk"
+        },
+        "msgInUsed": {
+            "meaning": "消息记录表是否被使用",
+            "reachable": false,
+            "name": "消息记录表是否被使用"
+        },
+        "msgIsBanned": {
+            "meaning": "消息记录表是否被禁用",
+            "reachable": false,
+            "name": "消息记录表是否被禁用"
+        },
+        "msgIsDeleted": {
+            "meaning": "消息记录表是否被删除",
+            "reachable": false,
+            "name": "消息记录表是否被删除"
+        },
+        "msgIsMainFlow": {
+            "meaning": "消息记录表是否是主流程",
+            "reachable": false,
+            "name": "消息记录表是否是主流程"
+        },
+        "msgIsWithdraw": {
+            "meaning": "消息记录表是否撤回",
+            "reachable": false,
+            "name": "消息记录表是否撤回"
+        },
+        "msgIsolation": {
+            "meaning": "消息记录表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "消息记录表智能节点数据隔离标识"
+        },
+        "msgJsScript": {
+            "meaning": "消息记录表js脚本",
+            "reachable": false,
+            "name": "消息记录表js脚本"
+        },
+        "msgName": {
+            "meaning": "消息记录表智能节点名",
+            "reachable": false,
+            "name": "消息记录表智能节点名"
+        },
+        "msgNameCodeSearch": {
+            "meaning": "消息记录表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "消息记录表name、user_code模糊搜索"
+        },
+        "msgNumberExtra1": {
+            "meaning": "消息记录表扩展数量1",
+            "reachable": false,
+            "name": "消息记录表扩展数量1"
+        },
+        "msgNumberExtra2": {
+            "meaning": "消息记录表扩展数量2",
+            "reachable": false,
+            "name": "消息记录表扩展数量2"
+        },
+        "msgNumberExtra3": {
+            "meaning": "消息记录表扩展数量3",
+            "reachable": false,
+            "name": "消息记录表扩展数量3"
+        },
+        "msgNumberExtra4": {
+            "meaning": "消息记录表扩展数量4",
+            "reachable": false,
+            "name": "消息记录表扩展数量4"
+        },
+        "msgNumberExtra5": {
+            "meaning": "消息记录表扩展数量5",
+            "reachable": false,
+            "name": "消息记录表扩展数量5"
+        },
+        "msgParentId": {
+            "meaning": "消息记录表父节点ID",
+            "reachable": false,
+            "name": "消息记录表父节点ID"
+        },
+        "msgProcessInstanceId": {
+            "meaning": "消息记录表流程实例ID",
+            "reachable": false,
+            "name": "消息记录表流程实例ID"
+        },
+        "msgSerialNumber": {
+            "meaning": "消息记录表顺序号",
+            "reachable": false,
+            "name": "消息记录表顺序号"
+        },
+        "msgSessionId": {
+            "meaning": "消息记录表关联会话",
+            "reachable": false,
+            "name": "消息记录表关联会话"
+        },
+        "msgSomeoneId": {
+            "meaning": "消息记录表发送人id",
+            "reachable": false,
+            "name": "消息记录表发送人id"
+        },
+        "msgState": {
+            "meaning": "消息记录表通用状态",
+            "reachable": false,
+            "name": "消息记录表通用状态"
+        },
+        "msgSystemCode": {
+            "meaning": "消息记录表系统编码",
+            "reachable": false,
+            "name": "消息记录表系统编码"
+        },
+        "msgTaskNodeName": {
+            "meaning": "消息记录表任务节点名称",
+            "reachable": false,
+            "name": "消息记录表任务节点名称"
+        },
+        "msgTemplateId": {
+            "meaning": "消息记录表关联模板id",
+            "reachable": false,
+            "name": "消息记录表关联模板id"
+        },
+        "msgTenantId": {
+            "meaning": "消息记录表租户_id",
+            "reachable": false,
+            "name": "消息记录表租户_id"
+        },
+        "msgThirdPartyClass": {
+            "meaning": "消息记录表第三方分类",
+            "reachable": false,
+            "name": "消息记录表第三方分类"
+        },
+        "msgThirdPartyId": {
+            "meaning": "消息记录表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "消息记录表第三方系统中的唯一ID"
+        },
+        "msgThirdPartyName": {
+            "meaning": "消息记录表第三方名称",
+            "reachable": false,
+            "name": "消息记录表第三方名称"
+        },
+        "msgToAuditDate": {
+            "meaning": "msgToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToCreateTime": {
+            "meaning": "msgToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToDateExtra1": {
+            "meaning": "msgToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToDateExtra2": {
+            "meaning": "msgToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToDateExtra3": {
+            "meaning": "msgToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToDateExtra4": {
+            "meaning": "msgToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToDateExtra5": {
+            "meaning": "msgToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "msgToUpdateTime": {
+            "meaning": "msgToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "msgType": {
+            "meaning": "消息记录表消息类型（文字、语音）",
+            "reachable": false,
+            "name": "消息记录表消息类型"
+        },
+        "msgUpdateTime": {
+            "meaning": "消息记录表更新时间",
+            "reachable": false,
+            "name": "消息记录表更新时间"
+        },
+        "msgUpdater": {
+            "meaning": "消息记录表更新人",
+            "reachable": false,
+            "name": "消息记录表更新人"
+        },
+        "msgUpdaterId": {
+            "meaning": "消息记录表更新人ID",
+            "reachable": false,
+            "name": "消息记录表更新人ID"
+        },
+        "msgUserCode": {
+            "meaning": "消息记录表智能节点的唯一编码",
+            "reachable": false,
+            "name": "消息记录表智能节点的唯一编码"
+        },
+        "msgVarExtra1": {
+            "meaning": "消息记录表扩展1",
+            "reachable": false,
+            "name": "消息记录表扩展1"
+        },
+        "msgVarExtra2": {
+            "meaning": "消息记录表扩展2",
+            "reachable": false,
+            "name": "消息记录表扩展2"
+        },
+        "msgVarExtra3": {
+            "meaning": "消息记录表扩展3",
+            "reachable": false,
+            "name": "消息记录表扩展3"
+        },
+        "msgVarExtra4": {
+            "meaning": "消息记录表扩展4",
+            "reachable": false,
+            "name": "消息记录表扩展4"
+        },
+        "msgVarExtra5": {
+            "meaning": "消息记录表扩展5",
+            "reachable": false,
+            "name": "消息记录表扩展5"
+        },
+        "msgVersion": {
+            "meaning": "消息记录表版本号",
+            "reachable": false,
+            "name": "消息记录表版本号"
+        }
+    }
+}

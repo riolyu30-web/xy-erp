@@ -1,0 +1,1202 @@
+{
+    "api_name": "/pur-frt/findList",
+    "table_name": "采购预测表",
+    "request": {
+        "purFrtDetPurFrtClazz": "PURCHASE_FORECASTING",
+        "purFrtDetClazz": "PURCHASE_FORECASTING_DET"
+    },
+    "mainTabClazz": "PURCHASE_FORECASTING_DET",
+    "response": {
+        "purFrtDetActualTimeRequired": {
+            "meaning": "采购预测表实际需时(小时)",
+            "reachable": true,
+            "name": "采购预测表实际需时"
+        },
+        "purFrtDetAdjustmentTimeRequired": {
+            "meaning": "采购预测表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "采购预测表调整需时"
+        },
+        "purFrtDetApplicationId": {
+            "meaning": "采购预测表应用ID",
+            "reachable": true,
+            "name": "采购预测表应用ID"
+        },
+        "purFrtDetAuditDate": {
+            "meaning": "purFrtDetAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetAuditStatus": {
+            "meaning": "采购预测表审核状态",
+            "reachable": true,
+            "name": "采购预测表审核状态"
+        },
+        "purFrtDetAvailableScheduleId": {
+            "meaning": "采购预测表可用日程id",
+            "reachable": true,
+            "name": "采购预测表可用日程id"
+        },
+        "purFrtDetBeginTime": {
+            "meaning": "purFrtDetBeginTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetBizVersion": {
+            "meaning": "采购预测表业务自定义版本号",
+            "reachable": true,
+            "name": "采购预测表业务自定义版本号"
+        },
+        "purFrtDetBriefName": {
+            "meaning": "采购预测表简称",
+            "reachable": true,
+            "name": "采购预测表简称"
+        },
+        "purFrtDetBusDivisId": {
+            "meaning": "采购预测表事业部id",
+            "reachable": true,
+            "name": "采购预测表事业部id"
+        },
+        "purFrtDetClazz": {
+            "meaning": "采购预测表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "采购预测表子类"
+        },
+        "purFrtDetClosedReason": {
+            "meaning": "采购预测表结案原因",
+            "reachable": true,
+            "name": "采购预测表结案原因"
+        },
+        "purFrtDetClosedStatus": {
+            "meaning": "采购预测表结案状态",
+            "reachable": true,
+            "name": "采购预测表结案状态"
+        },
+        "purFrtDetComment": {
+            "meaning": "采购预测表评论",
+            "reachable": true,
+            "name": "采购预测表评论"
+        },
+        "purFrtDetCompleteQuantity": {
+            "meaning": "采购预测表完成数量",
+            "reachable": true,
+            "name": "采购预测表完成数量"
+        },
+        "purFrtDetCompleteStatus": {
+            "meaning": "采购预测表完成状态",
+            "reachable": true,
+            "name": "采购预测表完成状态"
+        },
+        "purFrtDetCreateTime": {
+            "meaning": "purFrtDetCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetCreator": {
+            "meaning": "采购预测表创建人",
+            "reachable": true,
+            "name": "采购预测表创建人"
+        },
+        "purFrtDetCreatorId": {
+            "meaning": "采购预测表创建人ID",
+            "reachable": true,
+            "name": "采购预测表创建人ID"
+        },
+        "purFrtDetDateExtra1": {
+            "meaning": "purFrtDetDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDateExtra2": {
+            "meaning": "purFrtDetDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDateExtra3": {
+            "meaning": "purFrtDetDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDateExtra4": {
+            "meaning": "purFrtDetDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDateExtra5": {
+            "meaning": "purFrtDetDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDefaultType": {
+            "meaning": "采购预测表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "采购预测表智能节点主类型"
+        },
+        "purFrtDetDeliveryDate": {
+            "meaning": "purFrtDetDeliveryDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetDescription": {
+            "meaning": "采购预测表描述",
+            "reachable": true,
+            "name": "采购预测表描述"
+        },
+        "purFrtDetEndTime": {
+            "meaning": "purFrtDetEndTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetEndTimeRequired": {
+            "meaning": "采购预测表最后需时(小时)",
+            "reachable": true,
+            "name": "采购预测表最后需时"
+        },
+        "purFrtDetEngName": {
+            "meaning": "采购预测表英文名称",
+            "reachable": true,
+            "name": "采购预测表英文名称"
+        },
+        "purFrtDetEquipmentId": {
+            "meaning": "采购预测表设备id",
+            "reachable": true,
+            "name": "采购预测表设备id"
+        },
+        "purFrtDetExchangeRateId": {
+            "meaning": "采购预测表币种汇率id",
+            "reachable": true,
+            "name": "采购预测表币种汇率id"
+        },
+        "purFrtDetExtension": {
+            "meaning": "采购预测表扩展数据",
+            "reachable": true,
+            "name": "采购预测表扩展数据"
+        },
+        "purFrtDetExternalState": {
+            "meaning": "采购预测表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "采购预测表上流程状态位"
+        },
+        "purFrtDetFilterClazz": {
+            "meaning": "采购预测表冗余字段用于筛选",
+            "reachable": false,
+            "name": "采购预测表冗余字段用于筛选"
+        },
+        "purFrtDetFlags": {
+            "meaning": "采购预测表63位标志位",
+            "reachable": true,
+            "name": "采购预测表63位标志位"
+        },
+        "purFrtDetFromAuditDate": {
+            "meaning": "purFrtDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromBeginTime": {
+            "meaning": "purFrtDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromCreateTime": {
+            "meaning": "purFrtDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDateExtra1": {
+            "meaning": "purFrtDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDateExtra2": {
+            "meaning": "purFrtDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDateExtra3": {
+            "meaning": "purFrtDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDateExtra4": {
+            "meaning": "purFrtDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDateExtra5": {
+            "meaning": "purFrtDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromDeliveryDate": {
+            "meaning": "purFrtDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromEndTime": {
+            "meaning": "purFrtDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromReceiptDate": {
+            "meaning": "purFrtDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFromUpdateTime": {
+            "meaning": "purFrtDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetFscType": {
+            "meaning": "采购预测表FSC声明",
+            "reachable": true,
+            "name": "采购预测表FSC声明"
+        },
+        "purFrtDetGenerativePeople": {
+            "meaning": "采购预测表下发人",
+            "reachable": true,
+            "name": "采购预测表下发人"
+        },
+        "purFrtDetGenerativeState": {
+            "meaning": "采购预测表下发状态",
+            "reachable": true,
+            "name": "采购预测表下发状态"
+        },
+        "purFrtDetGroovyScript": {
+            "meaning": "采购预测表groovy脚本",
+            "reachable": true,
+            "name": "采购预测表groovy脚本"
+        },
+        "purFrtDetGropeCode": {
+            "meaning": "采购预测表搜索码",
+            "reachable": true,
+            "name": "采购预测表搜索码"
+        },
+        "purFrtDetId": {
+            "meaning": "采购预测表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "采购预测表PK"
+        },
+        "purFrtDetInUsed": {
+            "meaning": "采购预测表是否被使用",
+            "reachable": true,
+            "name": "采购预测表是否被使用"
+        },
+        "purFrtDetInvTypeTaxRateId": {
+            "meaning": "采购预测表发票税率id",
+            "reachable": true,
+            "name": "采购预测表发票税率id"
+        },
+        "purFrtDetIsBanned": {
+            "meaning": "采购预测表是否被禁用",
+            "reachable": true,
+            "name": "采购预测表是否被禁用"
+        },
+        "purFrtDetIsDeleted": {
+            "meaning": "采购预测表是否被删除",
+            "reachable": true,
+            "name": "采购预测表是否被删除"
+        },
+        "purFrtDetIsLeaf": {
+            "meaning": "采购预测表是否叶子节点",
+            "reachable": true,
+            "name": "采购预测表是否叶子节点"
+        },
+        "purFrtDetIsMainFlow": {
+            "meaning": "采购预测表是否是主流程",
+            "reachable": true,
+            "name": "采购预测表是否是主流程"
+        },
+        "purFrtDetIsManualModificationDate": {
+            "meaning": "采购预测表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "采购预测表是否手动修改计划生产时间"
+        },
+        "purFrtDetIsolation": {
+            "meaning": "采购预测表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "采购预测表智能节点数据隔离标识"
+        },
+        "purFrtDetJsScript": {
+            "meaning": "采购预测表js脚本",
+            "reachable": true,
+            "name": "采购预测表js脚本"
+        },
+        "purFrtDetMaterialId": {
+            "meaning": "采购预测表物料id",
+            "reachable": true,
+            "name": "采购预测表物料id"
+        },
+        "purFrtDetName": {
+            "meaning": "采购预测表智能节点名",
+            "reachable": true,
+            "name": "采购预测表智能节点名"
+        },
+        "purFrtDetNameCodeSearch": {
+            "meaning": "采购预测表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "采购预测表name、user_code模糊搜索"
+        },
+        "purFrtDetNumberExtra1": {
+            "meaning": "采购预测表扩展数量1",
+            "reachable": true,
+            "name": "采购预测表扩展数量1"
+        },
+        "purFrtDetNumberExtra2": {
+            "meaning": "采购预测表扩展数量2",
+            "reachable": true,
+            "name": "采购预测表扩展数量2"
+        },
+        "purFrtDetNumberExtra3": {
+            "meaning": "采购预测表扩展数量3",
+            "reachable": true,
+            "name": "采购预测表扩展数量3"
+        },
+        "purFrtDetNumberExtra4": {
+            "meaning": "采购预测表扩展数量4",
+            "reachable": true,
+            "name": "采购预测表扩展数量4"
+        },
+        "purFrtDetNumberExtra5": {
+            "meaning": "采购预测表扩展数量5",
+            "reachable": true,
+            "name": "采购预测表扩展数量5"
+        },
+        "purFrtDetParentId": {
+            "meaning": "采购预测表父节点ID",
+            "reachable": true,
+            "name": "采购预测表父节点ID"
+        },
+        "purFrtDetPlannedOutputQuantity": {
+            "meaning": "采购预测表计划产出数量",
+            "reachable": true,
+            "name": "采购预测表计划产出数量"
+        },
+        "purFrtDetPlannedTimeRequired": {
+            "meaning": "采购预测表计划需时(小时)",
+            "reachable": true,
+            "name": "采购预测表计划需时"
+        },
+        "purFrtDetPrintTimes": {
+            "meaning": "采购预测表打印次数",
+            "reachable": true,
+            "name": "采购预测表打印次数"
+        },
+        "purFrtDetPriority": {
+            "meaning": "采购预测表优先级",
+            "reachable": true,
+            "name": "采购预测表优先级"
+        },
+        "purFrtDetProcessInstanceId": {
+            "meaning": "采购预测表流程实例ID",
+            "reachable": true,
+            "name": "采购预测表流程实例ID"
+        },
+        "purFrtDetProductionProcessesTypeId": {
+            "meaning": "采购预测表工序类型ID",
+            "reachable": true,
+            "name": "采购预测表工序类型ID"
+        },
+        "purFrtDetProductionShiftId": {
+            "meaning": "采购预测表生产班次ID",
+            "reachable": true,
+            "name": "采购预测表生产班次ID"
+        },
+        "purFrtDetPurFrtActualTimeRequired": {
+            "meaning": "采购预测表实际需时(小时)",
+            "reachable": true,
+            "name": "采购预测表实际需时"
+        },
+        "purFrtDetPurFrtAdjustmentTimeRequired": {
+            "meaning": "采购预测表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "采购预测表调整需时"
+        },
+        "purFrtDetPurFrtApplicationId": {
+            "meaning": "采购预测表应用ID",
+            "reachable": true,
+            "name": "采购预测表应用ID"
+        },
+        "purFrtDetPurFrtAuditDate": {
+            "meaning": "purFrtDetPurFrtAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtAuditStatus": {
+            "meaning": "采购预测表审核状态",
+            "reachable": true,
+            "name": "采购预测表审核状态"
+        },
+        "purFrtDetPurFrtAvailableScheduleId": {
+            "meaning": "采购预测表可用日程id",
+            "reachable": true,
+            "name": "采购预测表可用日程id"
+        },
+        "purFrtDetPurFrtBeginTime": {
+            "meaning": "purFrtDetPurFrtBeginTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtBizVersion": {
+            "meaning": "采购预测表业务自定义版本号",
+            "reachable": true,
+            "name": "采购预测表业务自定义版本号"
+        },
+        "purFrtDetPurFrtBriefName": {
+            "meaning": "采购预测表简称",
+            "reachable": true,
+            "name": "采购预测表简称"
+        },
+        "purFrtDetPurFrtBusDivisId": {
+            "meaning": "采购预测表事业部id",
+            "reachable": true,
+            "name": "采购预测表事业部id"
+        },
+        "purFrtDetPurFrtClazz": {
+            "meaning": "采购预测表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "采购预测表子类"
+        },
+        "purFrtDetPurFrtClosedReason": {
+            "meaning": "采购预测表结案原因",
+            "reachable": true,
+            "name": "采购预测表结案原因"
+        },
+        "purFrtDetPurFrtClosedStatus": {
+            "meaning": "采购预测表结案状态",
+            "reachable": true,
+            "name": "采购预测表结案状态"
+        },
+        "purFrtDetPurFrtComment": {
+            "meaning": "采购预测表评论",
+            "reachable": true,
+            "name": "采购预测表评论"
+        },
+        "purFrtDetPurFrtCompleteQuantity": {
+            "meaning": "采购预测表完成数量",
+            "reachable": true,
+            "name": "采购预测表完成数量"
+        },
+        "purFrtDetPurFrtCompleteStatus": {
+            "meaning": "采购预测表完成状态",
+            "reachable": true,
+            "name": "采购预测表完成状态"
+        },
+        "purFrtDetPurFrtCreateTime": {
+            "meaning": "purFrtDetPurFrtCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtCreator": {
+            "meaning": "采购预测表创建人",
+            "reachable": true,
+            "name": "采购预测表创建人"
+        },
+        "purFrtDetPurFrtCreatorId": {
+            "meaning": "采购预测表创建人ID",
+            "reachable": true,
+            "name": "采购预测表创建人ID"
+        },
+        "purFrtDetPurFrtDateExtra1": {
+            "meaning": "purFrtDetPurFrtDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDateExtra2": {
+            "meaning": "purFrtDetPurFrtDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDateExtra3": {
+            "meaning": "purFrtDetPurFrtDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDateExtra4": {
+            "meaning": "purFrtDetPurFrtDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDateExtra5": {
+            "meaning": "purFrtDetPurFrtDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDefaultType": {
+            "meaning": "采购预测表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "采购预测表智能节点主类型"
+        },
+        "purFrtDetPurFrtDeliveryDate": {
+            "meaning": "purFrtDetPurFrtDeliveryDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtDescription": {
+            "meaning": "采购预测表描述",
+            "reachable": true,
+            "name": "采购预测表描述"
+        },
+        "purFrtDetPurFrtEndTime": {
+            "meaning": "purFrtDetPurFrtEndTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtEndTimeRequired": {
+            "meaning": "采购预测表最后需时(小时)",
+            "reachable": true,
+            "name": "采购预测表最后需时"
+        },
+        "purFrtDetPurFrtEngName": {
+            "meaning": "采购预测表英文名称",
+            "reachable": true,
+            "name": "采购预测表英文名称"
+        },
+        "purFrtDetPurFrtEquipmentId": {
+            "meaning": "采购预测表设备id",
+            "reachable": true,
+            "name": "采购预测表设备id"
+        },
+        "purFrtDetPurFrtExchangeRateId": {
+            "meaning": "采购预测表币种汇率id",
+            "reachable": true,
+            "name": "采购预测表币种汇率id"
+        },
+        "purFrtDetPurFrtExtension": {
+            "meaning": "采购预测表扩展数据",
+            "reachable": true,
+            "name": "采购预测表扩展数据"
+        },
+        "purFrtDetPurFrtExternalState": {
+            "meaning": "采购预测表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "采购预测表上流程状态位"
+        },
+        "purFrtDetPurFrtFilterClazz": {
+            "meaning": "采购预测表冗余字段用于筛选",
+            "reachable": false,
+            "name": "采购预测表冗余字段用于筛选"
+        },
+        "purFrtDetPurFrtFlags": {
+            "meaning": "采购预测表63位标志位",
+            "reachable": true,
+            "name": "采购预测表63位标志位"
+        },
+        "purFrtDetPurFrtFromAuditDate": {
+            "meaning": "purFrtDetPurFrtFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromBeginTime": {
+            "meaning": "purFrtDetPurFrtFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromCreateTime": {
+            "meaning": "purFrtDetPurFrtFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDateExtra1": {
+            "meaning": "purFrtDetPurFrtFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDateExtra2": {
+            "meaning": "purFrtDetPurFrtFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDateExtra3": {
+            "meaning": "purFrtDetPurFrtFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDateExtra4": {
+            "meaning": "purFrtDetPurFrtFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDateExtra5": {
+            "meaning": "purFrtDetPurFrtFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromDeliveryDate": {
+            "meaning": "purFrtDetPurFrtFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromEndTime": {
+            "meaning": "purFrtDetPurFrtFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromReceiptDate": {
+            "meaning": "purFrtDetPurFrtFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFromUpdateTime": {
+            "meaning": "purFrtDetPurFrtFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtFscType": {
+            "meaning": "采购预测表FSC声明",
+            "reachable": true,
+            "name": "采购预测表FSC声明"
+        },
+        "purFrtDetPurFrtGenerativePeople": {
+            "meaning": "采购预测表下发人",
+            "reachable": true,
+            "name": "采购预测表下发人"
+        },
+        "purFrtDetPurFrtGenerativeState": {
+            "meaning": "采购预测表下发状态",
+            "reachable": true,
+            "name": "采购预测表下发状态"
+        },
+        "purFrtDetPurFrtGroovyScript": {
+            "meaning": "采购预测表groovy脚本",
+            "reachable": true,
+            "name": "采购预测表groovy脚本"
+        },
+        "purFrtDetPurFrtGropeCode": {
+            "meaning": "采购预测表搜索码",
+            "reachable": true,
+            "name": "采购预测表搜索码"
+        },
+        "purFrtDetPurFrtId": {
+            "meaning": "采购预测表PK",
+            "reachable": true,
+            "name": "采购预测表PK"
+        },
+        "purFrtDetPurFrtInUsed": {
+            "meaning": "采购预测表是否被使用",
+            "reachable": true,
+            "name": "采购预测表是否被使用"
+        },
+        "purFrtDetPurFrtInvTypeTaxRateId": {
+            "meaning": "采购预测表发票税率id",
+            "reachable": true,
+            "name": "采购预测表发票税率id"
+        },
+        "purFrtDetPurFrtIsBanned": {
+            "meaning": "采购预测表是否被禁用",
+            "reachable": true,
+            "name": "采购预测表是否被禁用"
+        },
+        "purFrtDetPurFrtIsDeleted": {
+            "meaning": "采购预测表是否被删除",
+            "reachable": true,
+            "name": "采购预测表是否被删除"
+        },
+        "purFrtDetPurFrtIsLeaf": {
+            "meaning": "采购预测表是否叶子节点",
+            "reachable": true,
+            "name": "采购预测表是否叶子节点"
+        },
+        "purFrtDetPurFrtIsMainFlow": {
+            "meaning": "采购预测表是否是主流程",
+            "reachable": true,
+            "name": "采购预测表是否是主流程"
+        },
+        "purFrtDetPurFrtIsManualModificationDate": {
+            "meaning": "采购预测表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "采购预测表是否手动修改计划生产时间"
+        },
+        "purFrtDetPurFrtIsolation": {
+            "meaning": "采购预测表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "采购预测表智能节点数据隔离标识"
+        },
+        "purFrtDetPurFrtJsScript": {
+            "meaning": "采购预测表js脚本",
+            "reachable": true,
+            "name": "采购预测表js脚本"
+        },
+        "purFrtDetPurFrtMaterialId": {
+            "meaning": "采购预测表物料id",
+            "reachable": true,
+            "name": "采购预测表物料id"
+        },
+        "purFrtDetPurFrtName": {
+            "meaning": "采购预测表智能节点名",
+            "reachable": true,
+            "name": "采购预测表智能节点名"
+        },
+        "purFrtDetPurFrtNameCodeSearch": {
+            "meaning": "采购预测表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "采购预测表name、user_code模糊搜索"
+        },
+        "purFrtDetPurFrtNumberExtra1": {
+            "meaning": "采购预测表扩展数量1",
+            "reachable": true,
+            "name": "采购预测表扩展数量1"
+        },
+        "purFrtDetPurFrtNumberExtra2": {
+            "meaning": "采购预测表扩展数量2",
+            "reachable": true,
+            "name": "采购预测表扩展数量2"
+        },
+        "purFrtDetPurFrtNumberExtra3": {
+            "meaning": "采购预测表扩展数量3",
+            "reachable": true,
+            "name": "采购预测表扩展数量3"
+        },
+        "purFrtDetPurFrtNumberExtra4": {
+            "meaning": "采购预测表扩展数量4",
+            "reachable": true,
+            "name": "采购预测表扩展数量4"
+        },
+        "purFrtDetPurFrtNumberExtra5": {
+            "meaning": "采购预测表扩展数量5",
+            "reachable": true,
+            "name": "采购预测表扩展数量5"
+        },
+        "purFrtDetPurFrtParentId": {
+            "meaning": "采购预测表父节点ID",
+            "reachable": true,
+            "name": "采购预测表父节点ID"
+        },
+        "purFrtDetPurFrtPlannedOutputQuantity": {
+            "meaning": "采购预测表计划产出数量",
+            "reachable": true,
+            "name": "采购预测表计划产出数量"
+        },
+        "purFrtDetPurFrtPlannedTimeRequired": {
+            "meaning": "采购预测表计划需时(小时)",
+            "reachable": true,
+            "name": "采购预测表计划需时"
+        },
+        "purFrtDetPurFrtPrintTimes": {
+            "meaning": "采购预测表打印次数",
+            "reachable": true,
+            "name": "采购预测表打印次数"
+        },
+        "purFrtDetPurFrtPriority": {
+            "meaning": "采购预测表优先级",
+            "reachable": true,
+            "name": "采购预测表优先级"
+        },
+        "purFrtDetPurFrtProcessInstanceId": {
+            "meaning": "采购预测表流程实例ID",
+            "reachable": true,
+            "name": "采购预测表流程实例ID"
+        },
+        "purFrtDetPurFrtProductionProcessesTypeId": {
+            "meaning": "采购预测表工序类型ID",
+            "reachable": true,
+            "name": "采购预测表工序类型ID"
+        },
+        "purFrtDetPurFrtProductionShiftId": {
+            "meaning": "采购预测表生产班次ID",
+            "reachable": true,
+            "name": "采购预测表生产班次ID"
+        },
+        "purFrtDetPurFrtPurchaseRequisitionQuantity": {
+            "meaning": "采购预测表已开采购申请数量",
+            "reachable": true,
+            "name": "采购预测表已开采购申请数量"
+        },
+        "purFrtDetPurFrtPurchaseRequisitionState": {
+            "meaning": "采购预测表已开采购申请状态",
+            "reachable": true,
+            "name": "采购预测表已开采购申请状态"
+        },
+        "purFrtDetPurFrtQuantity": {
+            "meaning": "采购预测表任务数量",
+            "reachable": true,
+            "name": "采购预测表任务数量"
+        },
+        "purFrtDetPurFrtReceiptDate": {
+            "meaning": "purFrtDetPurFrtReceiptDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtReceiptType": {
+            "meaning": "采购预测表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "采购预测表单据类型"
+        },
+        "purFrtDetPurFrtRelatedTasksId": {
+            "meaning": "采购预测表关联任务id",
+            "reachable": true,
+            "name": "采购预测表关联任务id"
+        },
+        "purFrtDetPurFrtSerialNumber": {
+            "meaning": "采购预测表顺序号",
+            "reachable": true,
+            "name": "采购预测表顺序号"
+        },
+        "purFrtDetPurFrtSource": {
+            "meaning": "采购预测表源",
+            "reachable": true,
+            "name": "采购预测表源"
+        },
+        "purFrtDetPurFrtSourceType": {
+            "meaning": "采购预测表来源类型",
+            "reachable": true,
+            "name": "采购预测表来源类型"
+        },
+        "purFrtDetPurFrtState": {
+            "meaning": "采购预测表通用状态",
+            "reachable": true,
+            "name": "采购预测表通用状态"
+        },
+        "purFrtDetPurFrtSystemCode": {
+            "meaning": "采购预测表系统编码",
+            "reachable": true,
+            "name": "采购预测表系统编码"
+        },
+        "purFrtDetPurFrtTarget": {
+            "meaning": "采购预测表目标",
+            "reachable": true,
+            "name": "采购预测表目标"
+        },
+        "purFrtDetPurFrtTaskNodeName": {
+            "meaning": "采购预测表任务节点名称",
+            "reachable": true,
+            "name": "采购预测表任务节点名称"
+        },
+        "purFrtDetPurFrtTenantId": {
+            "meaning": "采购预测表租户id",
+            "reachable": true,
+            "name": "采购预测表租户id"
+        },
+        "purFrtDetPurFrtThirdPartyClass": {
+            "meaning": "采购预测表第三方分类",
+            "reachable": true,
+            "name": "采购预测表第三方分类"
+        },
+        "purFrtDetPurFrtThirdPartyId": {
+            "meaning": "采购预测表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "采购预测表第三方系统中的唯一ID"
+        },
+        "purFrtDetPurFrtThirdPartyName": {
+            "meaning": "采购预测表第三方名称",
+            "reachable": true,
+            "name": "采购预测表第三方名称"
+        },
+        "purFrtDetPurFrtToAuditDate": {
+            "meaning": "purFrtDetPurFrtToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToBeginTime": {
+            "meaning": "purFrtDetPurFrtToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToCreateTime": {
+            "meaning": "purFrtDetPurFrtToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDateExtra1": {
+            "meaning": "purFrtDetPurFrtToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDateExtra2": {
+            "meaning": "purFrtDetPurFrtToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDateExtra3": {
+            "meaning": "purFrtDetPurFrtToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDateExtra4": {
+            "meaning": "purFrtDetPurFrtToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDateExtra5": {
+            "meaning": "purFrtDetPurFrtToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToDeliveryDate": {
+            "meaning": "purFrtDetPurFrtToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToEndTime": {
+            "meaning": "purFrtDetPurFrtToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToReceiptDate": {
+            "meaning": "purFrtDetPurFrtToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtToUpdateTime": {
+            "meaning": "purFrtDetPurFrtToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetPurFrtUnitCode": {
+            "meaning": "采购预测表单位id",
+            "reachable": true,
+            "name": "采购预测表单位id"
+        },
+        "purFrtDetPurFrtUpdateTime": {
+            "meaning": "purFrtDetPurFrtUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetPurFrtUpdater": {
+            "meaning": "采购预测表更新人",
+            "reachable": true,
+            "name": "采购预测表更新人"
+        },
+        "purFrtDetPurFrtUpdaterId": {
+            "meaning": "采购预测表更新人ID",
+            "reachable": true,
+            "name": "采购预测表更新人ID"
+        },
+        "purFrtDetPurFrtUserCode": {
+            "meaning": "采购预测表智能节点的唯一编码",
+            "reachable": true,
+            "name": "采购预测表智能节点的唯一编码"
+        },
+        "purFrtDetPurFrtVarExtra1": {
+            "meaning": "采购预测表扩展1",
+            "reachable": true,
+            "name": "采购预测表扩展1"
+        },
+        "purFrtDetPurFrtVarExtra2": {
+            "meaning": "采购预测表扩展2",
+            "reachable": true,
+            "name": "采购预测表扩展2"
+        },
+        "purFrtDetPurFrtVarExtra3": {
+            "meaning": "采购预测表扩展3",
+            "reachable": true,
+            "name": "采购预测表扩展3"
+        },
+        "purFrtDetPurFrtVarExtra4": {
+            "meaning": "采购预测表扩展4",
+            "reachable": true,
+            "name": "采购预测表扩展4"
+        },
+        "purFrtDetPurFrtVarExtra5": {
+            "meaning": "采购预测表扩展5",
+            "reachable": true,
+            "name": "采购预测表扩展5"
+        },
+        "purFrtDetPurFrtVersion": {
+            "meaning": "采购预测表版本号",
+            "reachable": true,
+            "name": "采购预测表版本号"
+        },
+        "purFrtDetPurchaseRequisitionQuantity": {
+            "meaning": "采购预测表已开采购申请数量",
+            "reachable": true,
+            "name": "采购预测表已开采购申请数量"
+        },
+        "purFrtDetPurchaseRequisitionState": {
+            "meaning": "采购预测表已开采购申请状态",
+            "reachable": true,
+            "name": "采购预测表已开采购申请状态"
+        },
+        "purFrtDetQuantity": {
+            "meaning": "采购预测表任务数量",
+            "reachable": true,
+            "name": "采购预测表任务数量"
+        },
+        "purFrtDetReceiptDate": {
+            "meaning": "purFrtDetReceiptDate",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetReceiptType": {
+            "meaning": "采购预测表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "采购预测表单据类型"
+        },
+        "purFrtDetRelatedTasksId": {
+            "meaning": "采购预测表关联任务id",
+            "reachable": true,
+            "name": "采购预测表关联任务id"
+        },
+        "purFrtDetSerialNumber": {
+            "meaning": "采购预测表顺序号",
+            "reachable": true,
+            "name": "采购预测表顺序号"
+        },
+        "purFrtDetSource": {
+            "meaning": "采购预测表源",
+            "reachable": true,
+            "name": "采购预测表源"
+        },
+        "purFrtDetSourceType": {
+            "meaning": "采购预测表来源类型",
+            "reachable": true,
+            "name": "采购预测表来源类型"
+        },
+        "purFrtDetState": {
+            "meaning": "采购预测表通用状态",
+            "reachable": true,
+            "name": "采购预测表通用状态"
+        },
+        "purFrtDetSystemCode": {
+            "meaning": "采购预测表系统编码",
+            "reachable": true,
+            "name": "采购预测表系统编码"
+        },
+        "purFrtDetTarget": {
+            "meaning": "采购预测表目标",
+            "reachable": true,
+            "name": "采购预测表目标"
+        },
+        "purFrtDetTaskNodeName": {
+            "meaning": "采购预测表任务节点名称",
+            "reachable": true,
+            "name": "采购预测表任务节点名称"
+        },
+        "purFrtDetTenantId": {
+            "meaning": "采购预测表租户id",
+            "reachable": true,
+            "name": "采购预测表租户id"
+        },
+        "purFrtDetThirdPartyClass": {
+            "meaning": "采购预测表第三方分类",
+            "reachable": true,
+            "name": "采购预测表第三方分类"
+        },
+        "purFrtDetThirdPartyId": {
+            "meaning": "采购预测表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "采购预测表第三方系统中的唯一ID"
+        },
+        "purFrtDetThirdPartyName": {
+            "meaning": "采购预测表第三方名称",
+            "reachable": true,
+            "name": "采购预测表第三方名称"
+        },
+        "purFrtDetToAuditDate": {
+            "meaning": "purFrtDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToBeginTime": {
+            "meaning": "purFrtDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToCreateTime": {
+            "meaning": "purFrtDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDateExtra1": {
+            "meaning": "purFrtDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDateExtra2": {
+            "meaning": "purFrtDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDateExtra3": {
+            "meaning": "purFrtDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDateExtra4": {
+            "meaning": "purFrtDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDateExtra5": {
+            "meaning": "purFrtDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToDeliveryDate": {
+            "meaning": "purFrtDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToEndTime": {
+            "meaning": "purFrtDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToReceiptDate": {
+            "meaning": "purFrtDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetToUpdateTime": {
+            "meaning": "purFrtDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purFrtDetUnitCode": {
+            "meaning": "采购预测表单位id",
+            "reachable": true,
+            "name": "采购预测表单位id"
+        },
+        "purFrtDetUpdateTime": {
+            "meaning": "purFrtDetUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "purFrtDetUpdater": {
+            "meaning": "采购预测表更新人",
+            "reachable": true,
+            "name": "采购预测表更新人"
+        },
+        "purFrtDetUpdaterId": {
+            "meaning": "采购预测表更新人ID",
+            "reachable": true,
+            "name": "采购预测表更新人ID"
+        },
+        "purFrtDetUserCode": {
+            "meaning": "采购预测表智能节点的唯一编码",
+            "reachable": true,
+            "name": "采购预测表智能节点的唯一编码"
+        },
+        "purFrtDetVarExtra1": {
+            "meaning": "采购预测表扩展1",
+            "reachable": true,
+            "name": "采购预测表扩展1"
+        },
+        "purFrtDetVarExtra2": {
+            "meaning": "采购预测表扩展2",
+            "reachable": true,
+            "name": "采购预测表扩展2"
+        },
+        "purFrtDetVarExtra3": {
+            "meaning": "采购预测表扩展3",
+            "reachable": true,
+            "name": "采购预测表扩展3"
+        },
+        "purFrtDetVarExtra4": {
+            "meaning": "采购预测表扩展4",
+            "reachable": true,
+            "name": "采购预测表扩展4"
+        },
+        "purFrtDetVarExtra5": {
+            "meaning": "采购预测表扩展5",
+            "reachable": true,
+            "name": "采购预测表扩展5"
+        },
+        "purFrtDetVersion": {
+            "meaning": "采购预测表版本号",
+            "reachable": true,
+            "name": "采购预测表版本号"
+        }
+    }
+}

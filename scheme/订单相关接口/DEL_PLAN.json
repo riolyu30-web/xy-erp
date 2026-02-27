@@ -1,0 +1,611 @@
+{
+    "api_name": "/del-plan/findList",
+    "table_name": "配送计划表",
+    "request": {
+        "delPlanClazz": "DEL_PLAN"
+    },
+    "mainTabClazz": "DEL_PLAN",
+    "response": {
+        "delPlanActualTimeRequired": {
+            "meaning": "配送计划表实际需时(小时)",
+            "reachable": true,
+            "name": "配送计划表实际需时"
+        },
+        "delPlanAddress": {
+            "meaning": "配送计划表详细地址",
+            "reachable": true,
+            "name": "配送计划表详细地址"
+        },
+        "delPlanAdjustmentTimeRequired": {
+            "meaning": "配送计划表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "配送计划表调整需时"
+        },
+        "delPlanApplicationId": {
+            "meaning": "配送计划表应用ID",
+            "reachable": true,
+            "name": "配送计划表应用ID"
+        },
+        "delPlanAreaId": {
+            "meaning": "配送计划表行政区域id",
+            "reachable": true,
+            "name": "配送计划表行政区域id"
+        },
+        "delPlanAuditDate": {
+            "meaning": "配送计划表审核时间",
+            "reachable": true,
+            "name": "配送计划表审核时间"
+        },
+        "delPlanAuditStatus": {
+            "meaning": "配送计划表审核状态",
+            "reachable": true,
+            "name": "配送计划表审核状态"
+        },
+        "delPlanAvailableScheduleId": {
+            "meaning": "配送计划表可用日程id",
+            "reachable": true,
+            "name": "配送计划表可用日程id"
+        },
+        "delPlanBeginTime": {
+            "meaning": "配送计划表开始时间",
+            "reachable": true,
+            "name": "配送计划表开始时间"
+        },
+        "delPlanBizVersion": {
+            "meaning": "配送计划表业务自定义版本号",
+            "reachable": true,
+            "name": "配送计划表业务自定义版本号"
+        },
+        "delPlanBriefName": {
+            "meaning": "配送计划表简称",
+            "reachable": true,
+            "name": "配送计划表简称"
+        },
+        "delPlanBusDivisId": {
+            "meaning": "配送计划表事业部id",
+            "reachable": true,
+            "name": "配送计划表事业部id"
+        },
+        "delPlanClazz": {
+            "meaning": "配送计划表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "配送计划表子类"
+        },
+        "delPlanClosedReason": {
+            "meaning": "配送计划表结案原因",
+            "reachable": true,
+            "name": "配送计划表结案原因"
+        },
+        "delPlanClosedStatus": {
+            "meaning": "配送计划表结案状态",
+            "reachable": true,
+            "name": "配送计划表结案状态"
+        },
+        "delPlanComment": {
+            "meaning": "配送计划表评论",
+            "reachable": true,
+            "name": "配送计划表评论"
+        },
+        "delPlanCompleteQuantity": {
+            "meaning": "配送计划表完成数量",
+            "reachable": true,
+            "name": "配送计划表完成数量"
+        },
+        "delPlanCompleteStatus": {
+            "meaning": "配送计划表完成状态",
+            "reachable": true,
+            "name": "配送计划表完成状态"
+        },
+        "delPlanCreateTime": {
+            "meaning": "配送计划表创建时间",
+            "reachable": true,
+            "name": "配送计划表创建时间"
+        },
+        "delPlanCreator": {
+            "meaning": "配送计划表创建人",
+            "reachable": true,
+            "name": "配送计划表创建人"
+        },
+        "delPlanCreatorId": {
+            "meaning": "配送计划表创建人ID",
+            "reachable": true,
+            "name": "配送计划表创建人ID"
+        },
+        "delPlanDateExtra1": {
+            "meaning": "配送计划表扩展时间1",
+            "reachable": true,
+            "name": "配送计划表扩展时间1"
+        },
+        "delPlanDateExtra2": {
+            "meaning": "配送计划表扩展时间2",
+            "reachable": true,
+            "name": "配送计划表扩展时间2"
+        },
+        "delPlanDateExtra3": {
+            "meaning": "配送计划表扩展时间3",
+            "reachable": true,
+            "name": "配送计划表扩展时间3"
+        },
+        "delPlanDateExtra4": {
+            "meaning": "配送计划表扩展时间4",
+            "reachable": true,
+            "name": "配送计划表扩展时间4"
+        },
+        "delPlanDateExtra5": {
+            "meaning": "配送计划表扩展时间5",
+            "reachable": true,
+            "name": "配送计划表扩展时间5"
+        },
+        "delPlanDefaultType": {
+            "meaning": "配送计划表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "配送计划表智能节点主类型"
+        },
+        "delPlanDeliveryDate": {
+            "meaning": "配送计划表交货日期",
+            "reachable": true,
+            "name": "配送计划表交货日期"
+        },
+        "delPlanDescription": {
+            "meaning": "配送计划表描述",
+            "reachable": true,
+            "name": "配送计划表描述"
+        },
+        "delPlanEndTime": {
+            "meaning": "配送计划表结束时间",
+            "reachable": true,
+            "name": "配送计划表结束时间"
+        },
+        "delPlanEndTimeRequired": {
+            "meaning": "配送计划表最后需时(小时)",
+            "reachable": true,
+            "name": "配送计划表最后需时"
+        },
+        "delPlanEngName": {
+            "meaning": "配送计划表英文名称",
+            "reachable": true,
+            "name": "配送计划表英文名称"
+        },
+        "delPlanEquipmentId": {
+            "meaning": "配送计划表设备id",
+            "reachable": true,
+            "name": "配送计划表设备id"
+        },
+        "delPlanExchangeRateId": {
+            "meaning": "配送计划表币种汇率id",
+            "reachable": true,
+            "name": "配送计划表币种汇率id"
+        },
+        "delPlanExtension": {
+            "meaning": "配送计划表扩展数据",
+            "reachable": true,
+            "name": "配送计划表扩展数据"
+        },
+        "delPlanExternalState": {
+            "meaning": "配送计划表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "配送计划表上流程状态位"
+        },
+        "delPlanFilterClazz": {
+            "meaning": "配送计划表冗余字段用于筛选",
+            "reachable": false,
+            "name": "配送计划表冗余字段用于筛选"
+        },
+        "delPlanFlags": {
+            "meaning": "配送计划表63位标志位",
+            "reachable": true,
+            "name": "配送计划表63位标志位"
+        },
+        "delPlanFromAuditDate": {
+            "meaning": "delPlanFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromBeginTime": {
+            "meaning": "delPlanFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromCreateTime": {
+            "meaning": "delPlanFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDateExtra1": {
+            "meaning": "delPlanFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDateExtra2": {
+            "meaning": "delPlanFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDateExtra3": {
+            "meaning": "delPlanFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDateExtra4": {
+            "meaning": "delPlanFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDateExtra5": {
+            "meaning": "delPlanFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromDeliveryDate": {
+            "meaning": "delPlanFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromEndTime": {
+            "meaning": "delPlanFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromReceiptDate": {
+            "meaning": "delPlanFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFromUpdateTime": {
+            "meaning": "delPlanFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanFscType": {
+            "meaning": "配送计划表FSC声明",
+            "reachable": true,
+            "name": "配送计划表FSC声明"
+        },
+        "delPlanGenerativePeople": {
+            "meaning": "配送计划表下发人",
+            "reachable": true,
+            "name": "配送计划表下发人"
+        },
+        "delPlanGenerativeState": {
+            "meaning": "配送计划表下发状态",
+            "reachable": true,
+            "name": "配送计划表下发状态"
+        },
+        "delPlanGroovyScript": {
+            "meaning": "配送计划表groovy脚本",
+            "reachable": true,
+            "name": "配送计划表groovy脚本"
+        },
+        "delPlanGropeCode": {
+            "meaning": "配送计划表搜索码",
+            "reachable": true,
+            "name": "配送计划表搜索码"
+        },
+        "delPlanId": {
+            "meaning": "配送计划表pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "配送计划表pk"
+        },
+        "delPlanInUsed": {
+            "meaning": "配送计划表是否被使用",
+            "reachable": true,
+            "name": "配送计划表是否被使用"
+        },
+        "delPlanInvTypeTaxRateId": {
+            "meaning": "配送计划表发票税率id",
+            "reachable": true,
+            "name": "配送计划表发票税率id"
+        },
+        "delPlanIsBanned": {
+            "meaning": "配送计划表是否被禁用",
+            "reachable": true,
+            "name": "配送计划表是否被禁用"
+        },
+        "delPlanIsDeleted": {
+            "meaning": "配送计划表是否被删除",
+            "reachable": true,
+            "name": "配送计划表是否被删除"
+        },
+        "delPlanIsLeaf": {
+            "meaning": "配送计划表是否叶子节点",
+            "reachable": true,
+            "name": "配送计划表是否叶子节点"
+        },
+        "delPlanIsMainFlow": {
+            "meaning": "配送计划表是否是主流程",
+            "reachable": true,
+            "name": "配送计划表是否是主流程"
+        },
+        "delPlanIsManualModificationDate": {
+            "meaning": "配送计划表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "配送计划表是否手动修改计划生产时间"
+        },
+        "delPlanIsolation": {
+            "meaning": "配送计划表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "配送计划表智能节点数据隔离标识"
+        },
+        "delPlanJsScript": {
+            "meaning": "配送计划表js脚本",
+            "reachable": true,
+            "name": "配送计划表js脚本"
+        },
+        "delPlanMaterialId": {
+            "meaning": "配送计划表物料id",
+            "reachable": true,
+            "name": "配送计划表物料id"
+        },
+        "delPlanName": {
+            "meaning": "配送计划表智能节点名",
+            "reachable": true,
+            "name": "配送计划表智能节点名"
+        },
+        "delPlanNameCodeSearch": {
+            "meaning": "配送计划表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "配送计划表name、user_code模糊搜索"
+        },
+        "delPlanNumberExtra1": {
+            "meaning": "配送计划表扩展数量1",
+            "reachable": true,
+            "name": "配送计划表扩展数量1"
+        },
+        "delPlanNumberExtra2": {
+            "meaning": "配送计划表扩展数量2",
+            "reachable": true,
+            "name": "配送计划表扩展数量2"
+        },
+        "delPlanNumberExtra3": {
+            "meaning": "配送计划表扩展数量3",
+            "reachable": true,
+            "name": "配送计划表扩展数量3"
+        },
+        "delPlanNumberExtra4": {
+            "meaning": "配送计划表扩展数量4",
+            "reachable": true,
+            "name": "配送计划表扩展数量4"
+        },
+        "delPlanNumberExtra5": {
+            "meaning": "配送计划表扩展数量5",
+            "reachable": true,
+            "name": "配送计划表扩展数量5"
+        },
+        "delPlanParentId": {
+            "meaning": "配送计划表父节点ID",
+            "reachable": true,
+            "name": "配送计划表父节点ID"
+        },
+        "delPlanPlannedOutputQuantity": {
+            "meaning": "配送计划表计划产出数量",
+            "reachable": true,
+            "name": "配送计划表计划产出数量"
+        },
+        "delPlanPlannedTimeRequired": {
+            "meaning": "配送计划表计划需时(小时)",
+            "reachable": true,
+            "name": "配送计划表计划需时"
+        },
+        "delPlanPrintTimes": {
+            "meaning": "配送计划表打印次数",
+            "reachable": true,
+            "name": "配送计划表打印次数"
+        },
+        "delPlanPriority": {
+            "meaning": "配送计划表优先级",
+            "reachable": true,
+            "name": "配送计划表优先级"
+        },
+        "delPlanProcessInstanceId": {
+            "meaning": "配送计划表流程实例ID",
+            "reachable": true,
+            "name": "配送计划表流程实例ID"
+        },
+        "delPlanProductionProcessesTypeId": {
+            "meaning": "配送计划表工序类型ID",
+            "reachable": true,
+            "name": "配送计划表工序类型ID"
+        },
+        "delPlanProductionShiftId": {
+            "meaning": "配送计划表生产班次ID",
+            "reachable": true,
+            "name": "配送计划表生产班次ID"
+        },
+        "delPlanQuantity": {
+            "meaning": "配送计划表任务数量",
+            "reachable": true,
+            "name": "配送计划表任务数量"
+        },
+        "delPlanReceiptDate": {
+            "meaning": "配送计划表单据日期",
+            "reachable": true,
+            "name": "配送计划表单据日期"
+        },
+        "delPlanReceiptType": {
+            "meaning": "配送计划表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "配送计划表单据类型"
+        },
+        "delPlanRelatedTasksId": {
+            "meaning": "配送计划表关联任务id",
+            "reachable": true,
+            "name": "配送计划表关联任务id"
+        },
+        "delPlanSerialNumber": {
+            "meaning": "配送计划表顺序号",
+            "reachable": true,
+            "name": "配送计划表顺序号"
+        },
+        "delPlanSonTenantId": {
+            "meaning": "配送计划表子租户id",
+            "reachable": true,
+            "name": "配送计划表子租户id"
+        },
+        "delPlanSource": {
+            "meaning": "配送计划表源",
+            "reachable": true,
+            "name": "配送计划表源"
+        },
+        "delPlanSourceType": {
+            "meaning": "配送计划表来源类型",
+            "reachable": true,
+            "name": "配送计划表来源类型"
+        },
+        "delPlanState": {
+            "meaning": "配送计划表通用状态",
+            "reachable": true,
+            "name": "配送计划表通用状态"
+        },
+        "delPlanSystemCode": {
+            "meaning": "配送计划表系统编码",
+            "reachable": true,
+            "name": "配送计划表系统编码"
+        },
+        "delPlanTarget": {
+            "meaning": "配送计划表目标",
+            "reachable": true,
+            "name": "配送计划表目标"
+        },
+        "delPlanTaskNodeName": {
+            "meaning": "配送计划表任务节点名称",
+            "reachable": true,
+            "name": "配送计划表任务节点名称"
+        },
+        "delPlanTenantId": {
+            "meaning": "配送计划表租户id",
+            "reachable": true,
+            "name": "配送计划表租户id"
+        },
+        "delPlanThirdPartyClass": {
+            "meaning": "配送计划表第三方分类",
+            "reachable": true,
+            "name": "配送计划表第三方分类"
+        },
+        "delPlanThirdPartyId": {
+            "meaning": "配送计划表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "配送计划表第三方系统中的唯一ID"
+        },
+        "delPlanThirdPartyName": {
+            "meaning": "配送计划表第三方名称",
+            "reachable": true,
+            "name": "配送计划表第三方名称"
+        },
+        "delPlanToAuditDate": {
+            "meaning": "delPlanToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToBeginTime": {
+            "meaning": "delPlanToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToCreateTime": {
+            "meaning": "delPlanToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDateExtra1": {
+            "meaning": "delPlanToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDateExtra2": {
+            "meaning": "delPlanToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDateExtra3": {
+            "meaning": "delPlanToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDateExtra4": {
+            "meaning": "delPlanToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDateExtra5": {
+            "meaning": "delPlanToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToDeliveryDate": {
+            "meaning": "delPlanToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToEndTime": {
+            "meaning": "delPlanToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToReceiptDate": {
+            "meaning": "delPlanToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanToUpdateTime": {
+            "meaning": "delPlanToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "delPlanUnitCode": {
+            "meaning": "配送计划表单位id",
+            "reachable": true,
+            "name": "配送计划表单位id"
+        },
+        "delPlanUpdateTime": {
+            "meaning": "配送计划表更新时间",
+            "reachable": true,
+            "name": "配送计划表更新时间"
+        },
+        "delPlanUpdater": {
+            "meaning": "配送计划表更新人",
+            "reachable": true,
+            "name": "配送计划表更新人"
+        },
+        "delPlanUpdaterId": {
+            "meaning": "配送计划表更新人ID",
+            "reachable": true,
+            "name": "配送计划表更新人ID"
+        },
+        "delPlanUserCode": {
+            "meaning": "配送计划表智能节点的唯一编码",
+            "reachable": true,
+            "name": "配送计划表智能节点的唯一编码"
+        },
+        "delPlanVarExtra1": {
+            "meaning": "配送计划表扩展1",
+            "reachable": true,
+            "name": "配送计划表扩展1"
+        },
+        "delPlanVarExtra2": {
+            "meaning": "配送计划表扩展2",
+            "reachable": true,
+            "name": "配送计划表扩展2"
+        },
+        "delPlanVarExtra3": {
+            "meaning": "配送计划表扩展3",
+            "reachable": true,
+            "name": "配送计划表扩展3"
+        },
+        "delPlanVarExtra4": {
+            "meaning": "配送计划表扩展4",
+            "reachable": true,
+            "name": "配送计划表扩展4"
+        },
+        "delPlanVarExtra5": {
+            "meaning": "配送计划表扩展5",
+            "reachable": true,
+            "name": "配送计划表扩展5"
+        },
+        "delPlanVersion": {
+            "meaning": "配送计划表版本号",
+            "reachable": true,
+            "name": "配送计划表版本号"
+        }
+    }
+}

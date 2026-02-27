@@ -1,0 +1,807 @@
+{
+    "api_name": "/quality-check-stan-det/findList",
+    "table_name": "质量检验/测试标准明细表",
+    "request": {
+        "qualityCheckStanDetQualityCheckStanClazz": "QUALITY_CHECK_STAN",
+        "qualityCheckStanDetClazz": "QUALITY_CHECK_STAN_DET"
+    },
+    "mainTabClazz": "QUALITY_CHECK_STAN_DET",
+    "response": {
+        "qualityCheckStanDetAllowMaxValue": {
+            "meaning": "质量检验/测试标准明细表允许最大值",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表允许最大值"
+        },
+        "qualityCheckStanDetAllowMinValue": {
+            "meaning": "质量检验/测试标准明细表允许最小值",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表允许最小值"
+        },
+        "qualityCheckStanDetApplicationId": {
+            "meaning": "质量检验/测试标准明细表应用ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表应用ID"
+        },
+        "qualityCheckStanDetAuditDate": {
+            "meaning": "质量检验/测试标准明细表审核时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表审核时间"
+        },
+        "qualityCheckStanDetAuditStatus": {
+            "meaning": "质量检验/测试标准明细表审核状态",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表审核状态"
+        },
+        "qualityCheckStanDetBizVersion": {
+            "meaning": "质量检验/测试标准明细表业务自定义版本号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表业务自定义版本号"
+        },
+        "qualityCheckStanDetBriefName": {
+            "meaning": "质量检验/测试标准明细表简称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表简称"
+        },
+        "qualityCheckStanDetBusDivisId": {
+            "meaning": "质量检验/测试标准明细表事业部id",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表事业部id"
+        },
+        "qualityCheckStanDetClazz": {
+            "meaning": "质量检验/测试标准明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表子类"
+        },
+        "qualityCheckStanDetComment": {
+            "meaning": "质量检验/测试标准明细表评论",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表评论"
+        },
+        "qualityCheckStanDetCreateTime": {
+            "meaning": "质量检验/测试标准明细表创建时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建时间"
+        },
+        "qualityCheckStanDetCreator": {
+            "meaning": "质量检验/测试标准明细表创建人",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建人"
+        },
+        "qualityCheckStanDetCreatorId": {
+            "meaning": "质量检验/测试标准明细表创建人ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建人ID"
+        },
+        "qualityCheckStanDetDateExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展时间1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间1"
+        },
+        "qualityCheckStanDetDateExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展时间2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间2"
+        },
+        "qualityCheckStanDetDateExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展时间3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间3"
+        },
+        "qualityCheckStanDetDateExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展时间4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间4"
+        },
+        "qualityCheckStanDetDateExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展时间5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间5"
+        },
+        "qualityCheckStanDetDefaultType": {
+            "meaning": "质量检验/测试标准明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点主类型"
+        },
+        "qualityCheckStanDetDescription": {
+            "meaning": "质量检验/测试标准明细表描述",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表描述"
+        },
+        "qualityCheckStanDetEngName": {
+            "meaning": "质量检验/测试标准明细表英文名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表英文名称"
+        },
+        "qualityCheckStanDetExtension": {
+            "meaning": "质量检验/测试标准明细表扩展数据",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数据"
+        },
+        "qualityCheckStanDetExternalState": {
+            "meaning": "质量检验/测试标准明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表上流程状态位"
+        },
+        "qualityCheckStanDetFlags": {
+            "meaning": "质量检验/测试标准明细表63位标志位",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表63位标志位"
+        },
+        "qualityCheckStanDetFromAuditDate": {
+            "meaning": "qualityCheckStanDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromCreateTime": {
+            "meaning": "qualityCheckStanDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromDateExtra1": {
+            "meaning": "qualityCheckStanDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromDateExtra2": {
+            "meaning": "qualityCheckStanDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromDateExtra3": {
+            "meaning": "qualityCheckStanDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromDateExtra4": {
+            "meaning": "qualityCheckStanDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromDateExtra5": {
+            "meaning": "qualityCheckStanDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetFromUpdateTime": {
+            "meaning": "qualityCheckStanDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetGroovyScript": {
+            "meaning": "质量检验/测试标准明细表groovy脚本",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表groovy脚本"
+        },
+        "qualityCheckStanDetGropeCode": {
+            "meaning": "质量检验/测试标准明细表搜索码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表搜索码"
+        },
+        "qualityCheckStanDetId": {
+            "meaning": "质量检验/测试标准明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "质量检验/测试标准明细表PK"
+        },
+        "qualityCheckStanDetInUsed": {
+            "meaning": "质量检验/测试标准明细表是否被使用",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被使用"
+        },
+        "qualityCheckStanDetIsBanned": {
+            "meaning": "质量检验/测试标准明细表是否被禁用",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被禁用"
+        },
+        "qualityCheckStanDetIsDeleted": {
+            "meaning": "质量检验/测试标准明细表是否被删除",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被删除"
+        },
+        "qualityCheckStanDetIsMainFlow": {
+            "meaning": "质量检验/测试标准明细表是否是主流程",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否是主流程"
+        },
+        "qualityCheckStanDetIsolation": {
+            "meaning": "质量检验/测试标准明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点数据隔离标识"
+        },
+        "qualityCheckStanDetJsScript": {
+            "meaning": "质量检验/测试标准明细表js脚本",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表js脚本"
+        },
+        "qualityCheckStanDetName": {
+            "meaning": "质量检验/测试标准明细表智能节点名",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点名"
+        },
+        "qualityCheckStanDetNameCodeSearch": {
+            "meaning": "质量检验/测试标准明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表name、user_code模糊搜索"
+        },
+        "qualityCheckStanDetNumberExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展数量1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量1"
+        },
+        "qualityCheckStanDetNumberExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展数量2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量2"
+        },
+        "qualityCheckStanDetNumberExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展数量3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量3"
+        },
+        "qualityCheckStanDetNumberExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展数量4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量4"
+        },
+        "qualityCheckStanDetNumberExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展数量5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量5"
+        },
+        "qualityCheckStanDetParentId": {
+            "meaning": "质量检验/测试标准明细表父节点ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表父节点ID"
+        },
+        "qualityCheckStanDetProcessInstanceId": {
+            "meaning": "质量检验/测试标准明细表流程实例ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表流程实例ID"
+        },
+        "qualityCheckStanDetProperty": {
+            "meaning": "质量检验/测试标准明细表检验属性",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表检验属性"
+        },
+        "qualityCheckStanDetQualityCheckStanApplicationId": {
+            "meaning": "质量检验/测试标准明细表应用ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表应用ID"
+        },
+        "qualityCheckStanDetQualityCheckStanAuditDate": {
+            "meaning": "质量检验/测试标准明细表审核时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表审核时间"
+        },
+        "qualityCheckStanDetQualityCheckStanAuditStatus": {
+            "meaning": "质量检验/测试标准明细表审核状态",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表审核状态"
+        },
+        "qualityCheckStanDetQualityCheckStanBizVersion": {
+            "meaning": "质量检验/测试标准明细表业务自定义版本号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表业务自定义版本号"
+        },
+        "qualityCheckStanDetQualityCheckStanBriefName": {
+            "meaning": "质量检验/测试标准明细表简称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表简称"
+        },
+        "qualityCheckStanDetQualityCheckStanBusDivisId": {
+            "meaning": "质量检验/测试标准明细表事业部id",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表事业部id"
+        },
+        "qualityCheckStanDetQualityCheckStanClazz": {
+            "meaning": "质量检验/测试标准明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表子类"
+        },
+        "qualityCheckStanDetQualityCheckStanComment": {
+            "meaning": "质量检验/测试标准明细表评论",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表评论"
+        },
+        "qualityCheckStanDetQualityCheckStanCreateTime": {
+            "meaning": "质量检验/测试标准明细表创建时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建时间"
+        },
+        "qualityCheckStanDetQualityCheckStanCreator": {
+            "meaning": "质量检验/测试标准明细表创建人",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建人"
+        },
+        "qualityCheckStanDetQualityCheckStanCreatorId": {
+            "meaning": "质量检验/测试标准明细表创建人ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表创建人ID"
+        },
+        "qualityCheckStanDetQualityCheckStanDateExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展时间1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间1"
+        },
+        "qualityCheckStanDetQualityCheckStanDateExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展时间2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间2"
+        },
+        "qualityCheckStanDetQualityCheckStanDateExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展时间3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间3"
+        },
+        "qualityCheckStanDetQualityCheckStanDateExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展时间4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间4"
+        },
+        "qualityCheckStanDetQualityCheckStanDateExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展时间5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展时间5"
+        },
+        "qualityCheckStanDetQualityCheckStanDefaultType": {
+            "meaning": "质量检验/测试标准明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点主类型"
+        },
+        "qualityCheckStanDetQualityCheckStanDescription": {
+            "meaning": "质量检验/测试标准明细表描述",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表描述"
+        },
+        "qualityCheckStanDetQualityCheckStanEngName": {
+            "meaning": "质量检验/测试标准明细表英文名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表英文名称"
+        },
+        "qualityCheckStanDetQualityCheckStanExtension": {
+            "meaning": "质量检验/测试标准明细表扩展数据",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数据"
+        },
+        "qualityCheckStanDetQualityCheckStanExternalState": {
+            "meaning": "质量检验/测试标准明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表上流程状态位"
+        },
+        "qualityCheckStanDetQualityCheckStanFlags": {
+            "meaning": "质量检验/测试标准明细表63位标志位",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表63位标志位"
+        },
+        "qualityCheckStanDetQualityCheckStanFromAuditDate": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromCreateTime": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromDateExtra1": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromDateExtra2": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromDateExtra3": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromDateExtra4": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromDateExtra5": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanFromUpdateTime": {
+            "meaning": "qualityCheckStanDetQualityCheckStanFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanGroovyScript": {
+            "meaning": "质量检验/测试标准明细表groovy脚本",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表groovy脚本"
+        },
+        "qualityCheckStanDetQualityCheckStanGropeCode": {
+            "meaning": "质量检验/测试标准明细表搜索码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表搜索码"
+        },
+        "qualityCheckStanDetQualityCheckStanId": {
+            "meaning": "质量检验/测试标准明细表PK",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表PK"
+        },
+        "qualityCheckStanDetQualityCheckStanInUsed": {
+            "meaning": "质量检验/测试标准明细表是否被使用",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被使用"
+        },
+        "qualityCheckStanDetQualityCheckStanIsBanned": {
+            "meaning": "质量检验/测试标准明细表是否被禁用",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被禁用"
+        },
+        "qualityCheckStanDetQualityCheckStanIsDeleted": {
+            "meaning": "质量检验/测试标准明细表是否被删除",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否被删除"
+        },
+        "qualityCheckStanDetQualityCheckStanIsMainFlow": {
+            "meaning": "质量检验/测试标准明细表是否是主流程",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表是否是主流程"
+        },
+        "qualityCheckStanDetQualityCheckStanIsolation": {
+            "meaning": "质量检验/测试标准明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点数据隔离标识"
+        },
+        "qualityCheckStanDetQualityCheckStanJsScript": {
+            "meaning": "质量检验/测试标准明细表js脚本",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表js脚本"
+        },
+        "qualityCheckStanDetQualityCheckStanName": {
+            "meaning": "质量检验/测试标准明细表智能节点名",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点名"
+        },
+        "qualityCheckStanDetQualityCheckStanNameCodeSearch": {
+            "meaning": "质量检验/测试标准明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表name、user_code模糊搜索"
+        },
+        "qualityCheckStanDetQualityCheckStanNumberExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展数量1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量1"
+        },
+        "qualityCheckStanDetQualityCheckStanNumberExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展数量2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量2"
+        },
+        "qualityCheckStanDetQualityCheckStanNumberExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展数量3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量3"
+        },
+        "qualityCheckStanDetQualityCheckStanNumberExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展数量4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量4"
+        },
+        "qualityCheckStanDetQualityCheckStanNumberExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展数量5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展数量5"
+        },
+        "qualityCheckStanDetQualityCheckStanParentId": {
+            "meaning": "质量检验/测试标准明细表父节点ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表父节点ID"
+        },
+        "qualityCheckStanDetQualityCheckStanPrcesTypeId": {
+            "meaning": "质量检验/测试标准明细表工艺类型id",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表工艺类型id"
+        },
+        "qualityCheckStanDetQualityCheckStanProcessInstanceId": {
+            "meaning": "质量检验/测试标准明细表流程实例ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表流程实例ID"
+        },
+        "qualityCheckStanDetQualityCheckStanSerialNumber": {
+            "meaning": "质量检验/测试标准明细表顺序号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表顺序号"
+        },
+        "qualityCheckStanDetQualityCheckStanState": {
+            "meaning": "质量检验/测试标准明细表通用状态",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表通用状态"
+        },
+        "qualityCheckStanDetQualityCheckStanSystemCode": {
+            "meaning": "质量检验/测试标准明细表系统编码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表系统编码"
+        },
+        "qualityCheckStanDetQualityCheckStanTaskNodeName": {
+            "meaning": "质量检验/测试标准明细表任务节点名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表任务节点名称"
+        },
+        "qualityCheckStanDetQualityCheckStanTaskNodeType": {
+            "meaning": "质量检验/测试标准明细表任务节点类型",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表任务节点类型"
+        },
+        "qualityCheckStanDetQualityCheckStanTenantId": {
+            "meaning": "质量检验/测试标准明细表租户_id",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表租户_id"
+        },
+        "qualityCheckStanDetQualityCheckStanThirdPartyClass": {
+            "meaning": "质量检验/测试标准明细表第三方分类",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方分类"
+        },
+        "qualityCheckStanDetQualityCheckStanThirdPartyId": {
+            "meaning": "质量检验/测试标准明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方系统中的唯一ID"
+        },
+        "qualityCheckStanDetQualityCheckStanThirdPartyName": {
+            "meaning": "质量检验/测试标准明细表第三方名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方名称"
+        },
+        "qualityCheckStanDetQualityCheckStanToAuditDate": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToCreateTime": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToDateExtra1": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToDateExtra2": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToDateExtra3": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToDateExtra4": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToDateExtra5": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanToUpdateTime": {
+            "meaning": "qualityCheckStanDetQualityCheckStanToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetQualityCheckStanType": {
+            "meaning": "质量检验/测试标准明细表质检检验类型(1IPQC,2FQC,3OQC,4IQC)",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表质检检验类型"
+        },
+        "qualityCheckStanDetQualityCheckStanUpdateTime": {
+            "meaning": "质量检验/测试标准明细表更新时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新时间"
+        },
+        "qualityCheckStanDetQualityCheckStanUpdater": {
+            "meaning": "质量检验/测试标准明细表更新人",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新人"
+        },
+        "qualityCheckStanDetQualityCheckStanUpdaterId": {
+            "meaning": "质量检验/测试标准明细表更新人ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新人ID"
+        },
+        "qualityCheckStanDetQualityCheckStanUserCode": {
+            "meaning": "质量检验/测试标准明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点的唯一编码"
+        },
+        "qualityCheckStanDetQualityCheckStanVarExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展1"
+        },
+        "qualityCheckStanDetQualityCheckStanVarExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展2"
+        },
+        "qualityCheckStanDetQualityCheckStanVarExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展3"
+        },
+        "qualityCheckStanDetQualityCheckStanVarExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展4"
+        },
+        "qualityCheckStanDetQualityCheckStanVarExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展5"
+        },
+        "qualityCheckStanDetQualityCheckStanVersion": {
+            "meaning": "质量检验/测试标准明细表版本号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表版本号"
+        },
+        "qualityCheckStanDetSerialNumber": {
+            "meaning": "质量检验/测试标准明细表顺序号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表顺序号"
+        },
+        "qualityCheckStanDetStandard": {
+            "meaning": "质量检验/测试标准明细表项目检测标准",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表项目检测标准"
+        },
+        "qualityCheckStanDetStandardValue": {
+            "meaning": "质量检验/测试标准明细表标准值",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表标准值"
+        },
+        "qualityCheckStanDetState": {
+            "meaning": "质量检验/测试标准明细表通用状态",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表通用状态"
+        },
+        "qualityCheckStanDetSystemCode": {
+            "meaning": "质量检验/测试标准明细表系统编码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表系统编码"
+        },
+        "qualityCheckStanDetTaskNodeName": {
+            "meaning": "质量检验/测试标准明细表任务节点名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表任务节点名称"
+        },
+        "qualityCheckStanDetTaskNodeType": {
+            "meaning": "质量检验/测试标准明细表任务节点类型",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表任务节点类型"
+        },
+        "qualityCheckStanDetTenantId": {
+            "meaning": "质量检验/测试标准明细表租户_id",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表租户_id"
+        },
+        "qualityCheckStanDetTestMethod": {
+            "meaning": "质量检验/测试标准明细表检测方法",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表检测方法"
+        },
+        "qualityCheckStanDetTestingTools": {
+            "meaning": "质量检验/测试标准明细表检测工具",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表检测工具"
+        },
+        "qualityCheckStanDetThirdPartyClass": {
+            "meaning": "质量检验/测试标准明细表第三方分类",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方分类"
+        },
+        "qualityCheckStanDetThirdPartyId": {
+            "meaning": "质量检验/测试标准明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方系统中的唯一ID"
+        },
+        "qualityCheckStanDetThirdPartyName": {
+            "meaning": "质量检验/测试标准明细表第三方名称",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表第三方名称"
+        },
+        "qualityCheckStanDetToAuditDate": {
+            "meaning": "qualityCheckStanDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToCreateTime": {
+            "meaning": "qualityCheckStanDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToDateExtra1": {
+            "meaning": "qualityCheckStanDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToDateExtra2": {
+            "meaning": "qualityCheckStanDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToDateExtra3": {
+            "meaning": "qualityCheckStanDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToDateExtra4": {
+            "meaning": "qualityCheckStanDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToDateExtra5": {
+            "meaning": "qualityCheckStanDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetToUpdateTime": {
+            "meaning": "qualityCheckStanDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "qualityCheckStanDetUpdateTime": {
+            "meaning": "质量检验/测试标准明细表更新时间",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新时间"
+        },
+        "qualityCheckStanDetUpdater": {
+            "meaning": "质量检验/测试标准明细表更新人",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新人"
+        },
+        "qualityCheckStanDetUpdaterId": {
+            "meaning": "质量检验/测试标准明细表更新人ID",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表更新人ID"
+        },
+        "qualityCheckStanDetUserCode": {
+            "meaning": "质量检验/测试标准明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表智能节点的唯一编码"
+        },
+        "qualityCheckStanDetVarExtra1": {
+            "meaning": "质量检验/测试标准明细表扩展1",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展1"
+        },
+        "qualityCheckStanDetVarExtra2": {
+            "meaning": "质量检验/测试标准明细表扩展2",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展2"
+        },
+        "qualityCheckStanDetVarExtra3": {
+            "meaning": "质量检验/测试标准明细表扩展3",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展3"
+        },
+        "qualityCheckStanDetVarExtra4": {
+            "meaning": "质量检验/测试标准明细表扩展4",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展4"
+        },
+        "qualityCheckStanDetVarExtra5": {
+            "meaning": "质量检验/测试标准明细表扩展5",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表扩展5"
+        },
+        "qualityCheckStanDetVersion": {
+            "meaning": "质量检验/测试标准明细表版本号",
+            "reachable": true,
+            "name": "质量检验/测试标准明细表版本号"
+        }
+    }
+}

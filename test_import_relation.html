@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>关系导入测试</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #result { margin-top: 20px; padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9; white-space: pre-wrap; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>关系导入接口测试</h1>
+    
+    <div class="form-group">
+        <label for="apiUrl">API URL:</label>
+        <input type="text" id="apiUrl" value="http://localhost:8001/api/v1/mcp/relation/import">
+    </div>
+
+    <div class="form-group">
+        <label for="token">Access Token (Bearer):</label>
+        <input type="text" id="token" placeholder="输入你的 Access Token (如果在开发环境已禁用认证可忽略)">
+    </div>
+
+    <div class="form-group">
+        <label for="filePath">文件路径 (绝对路径):</label>
+        <input type="text" id="filePath" value="e:/tx-erp/erp-service/datawork/relation.txt">
+    </div>
+
+    <div class="form-group">
+        <label for="relationType">关系类型 (Key):</label>
+        <input type="text" id="relationType" value="AAA">
+    </div>
+
+    <button onclick="submitForm()">导入关系</button>
+
+    <div id="result"></div>
+
+    <script>
+        async function submitForm() {
+            const apiUrl = document.getElementById('apiUrl').value;
+            const token = document.getElementById('token').value;
+            const filePath = document.getElementById('filePath').value;
+            const relationType = document.getElementById('relationType').value;
+            const resultDiv = document.getElementById('result');
+
+            resultDiv.innerHTML = '正在提交...';
+            resultDiv.className = '';
+
+            const headers = {
+                'Content-Type': 'application/json'
+            };
+
+            if (token) {
+                headers['Authorization'] = `Bearer ${token}`;
+            }
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify({
+                        file_path: filePath,
+                        relation_type: relationType
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.innerHTML = '操作成功:\n' + JSON.stringify(data, null, 4);
+                    resultDiv.className = 'success';
+                } else {
+                    resultDiv.innerHTML = '操作失败:\n' + JSON.stringify(data, null, 4);
+                    resultDiv.className = 'error';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '请求出错:\n' + error.message;
+                resultDiv.className = 'error';
+            }
+        }
+    </script>
+</body>
+</html>

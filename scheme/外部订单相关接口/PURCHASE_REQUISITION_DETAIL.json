@@ -1,0 +1,1212 @@
+{
+    "api_name": "/pur-requ-det/findList",
+    "table_name": "采购申请明细表",
+    "request": {
+        "purRequDetPurRequClazz": "PURCHASE_REQUISITION_DETAIL",
+        "purRequDetClazz": "PURCHASE_REQUISITION"
+    },
+    "mainTabClazz": "PURCHASE_REQUISITION_DETAIL",
+    "response": {
+        "purRequDetActualTimeRequired": {
+            "meaning": "采购申请明细表实际需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表实际需时"
+        },
+        "purRequDetAdjustmentTimeRequired": {
+            "meaning": "采购申请明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "采购申请明细表调整需时"
+        },
+        "purRequDetApplicationId": {
+            "meaning": "采购申请明细表应用ID",
+            "reachable": true,
+            "name": "采购申请明细表应用ID"
+        },
+        "purRequDetAuditDate": {
+            "meaning": "采购申请明细表审核时间",
+            "reachable": true,
+            "name": "采购申请明细表审核时间"
+        },
+        "purRequDetAuditStatus": {
+            "meaning": "采购申请明细表审核状态",
+            "reachable": true,
+            "name": "采购申请明细表审核状态"
+        },
+        "purRequDetAvailableScheduleId": {
+            "meaning": "采购申请明细表可用日程id",
+            "reachable": true,
+            "name": "采购申请明细表可用日程id"
+        },
+        "purRequDetBeginTime": {
+            "meaning": "采购申请明细表开始时间",
+            "reachable": true,
+            "name": "采购申请明细表开始时间"
+        },
+        "purRequDetBizVersion": {
+            "meaning": "采购申请明细表业务自定义版本号",
+            "reachable": true,
+            "name": "采购申请明细表业务自定义版本号"
+        },
+        "purRequDetBriefName": {
+            "meaning": "采购申请明细表简称",
+            "reachable": true,
+            "name": "采购申请明细表简称"
+        },
+        "purRequDetBusDivisId": {
+            "meaning": "采购申请明细表事业部id",
+            "reachable": true,
+            "name": "采购申请明细表事业部id"
+        },
+        "purRequDetClazz": {
+            "meaning": "采购申请明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "采购申请明细表子类"
+        },
+        "purRequDetClosedReason": {
+            "meaning": "采购申请明细表结案原因",
+            "reachable": true,
+            "name": "采购申请明细表结案原因"
+        },
+        "purRequDetClosedStatus": {
+            "meaning": "采购申请明细表结案状态",
+            "reachable": true,
+            "name": "采购申请明细表结案状态"
+        },
+        "purRequDetComment": {
+            "meaning": "采购申请明细表评论",
+            "reachable": true,
+            "name": "采购申请明细表评论"
+        },
+        "purRequDetCompleteQuantity": {
+            "meaning": "采购申请明细表完成数量",
+            "reachable": true,
+            "name": "采购申请明细表完成数量"
+        },
+        "purRequDetCompleteStatus": {
+            "meaning": "采购申请明细表完成状态",
+            "reachable": true,
+            "name": "采购申请明细表完成状态"
+        },
+        "purRequDetCreateTime": {
+            "meaning": "采购申请明细表创建时间",
+            "reachable": true,
+            "name": "采购申请明细表创建时间"
+        },
+        "purRequDetCreator": {
+            "meaning": "采购申请明细表创建人",
+            "reachable": true,
+            "name": "采购申请明细表创建人"
+        },
+        "purRequDetCreatorId": {
+            "meaning": "采购申请明细表创建人ID",
+            "reachable": true,
+            "name": "采购申请明细表创建人ID"
+        },
+        "purRequDetDateExtra1": {
+            "meaning": "采购申请明细表扩展时间1",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间1"
+        },
+        "purRequDetDateExtra2": {
+            "meaning": "采购申请明细表扩展时间2",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间2"
+        },
+        "purRequDetDateExtra3": {
+            "meaning": "采购申请明细表扩展时间3",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间3"
+        },
+        "purRequDetDateExtra4": {
+            "meaning": "采购申请明细表扩展时间4",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间4"
+        },
+        "purRequDetDateExtra5": {
+            "meaning": "采购申请明细表扩展时间5",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间5"
+        },
+        "purRequDetDefaultType": {
+            "meaning": "采购申请明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "采购申请明细表智能节点主类型"
+        },
+        "purRequDetDeliveryDate": {
+            "meaning": "采购申请明细表交货日期",
+            "reachable": true,
+            "name": "采购申请明细表交货日期"
+        },
+        "purRequDetDescription": {
+            "meaning": "采购申请明细表描述",
+            "reachable": true,
+            "name": "采购申请明细表描述"
+        },
+        "purRequDetEndTime": {
+            "meaning": "采购申请明细表结束时间",
+            "reachable": true,
+            "name": "采购申请明细表结束时间"
+        },
+        "purRequDetEndTimeRequired": {
+            "meaning": "采购申请明细表最后需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表最后需时"
+        },
+        "purRequDetEngName": {
+            "meaning": "采购申请明细表英文名称",
+            "reachable": true,
+            "name": "采购申请明细表英文名称"
+        },
+        "purRequDetEquipmentId": {
+            "meaning": "采购申请明细表设备id",
+            "reachable": true,
+            "name": "采购申请明细表设备id"
+        },
+        "purRequDetExchangeRateId": {
+            "meaning": "采购申请明细表币种汇率id",
+            "reachable": true,
+            "name": "采购申请明细表币种汇率id"
+        },
+        "purRequDetExtension": {
+            "meaning": "采购申请明细表扩展数据",
+            "reachable": true,
+            "name": "采购申请明细表扩展数据"
+        },
+        "purRequDetExternalState": {
+            "meaning": "采购申请明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "采购申请明细表上流程状态位"
+        },
+        "purRequDetFilterClazz": {
+            "meaning": "采购申请明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "采购申请明细表冗余字段用于筛选"
+        },
+        "purRequDetFlags": {
+            "meaning": "采购申请明细表63位标志位",
+            "reachable": true,
+            "name": "采购申请明细表63位标志位"
+        },
+        "purRequDetFromAuditDate": {
+            "meaning": "purRequDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromBeginTime": {
+            "meaning": "purRequDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromCreateTime": {
+            "meaning": "purRequDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDateExtra1": {
+            "meaning": "purRequDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDateExtra2": {
+            "meaning": "purRequDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDateExtra3": {
+            "meaning": "purRequDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDateExtra4": {
+            "meaning": "purRequDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDateExtra5": {
+            "meaning": "purRequDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromDeliveryDate": {
+            "meaning": "purRequDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromEndTime": {
+            "meaning": "purRequDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromReceiptDate": {
+            "meaning": "purRequDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFromUpdateTime": {
+            "meaning": "purRequDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetFscType": {
+            "meaning": "采购申请明细表FSC声明",
+            "reachable": true,
+            "name": "采购申请明细表FSC声明"
+        },
+        "purRequDetGenerativePeople": {
+            "meaning": "采购申请明细表下发人",
+            "reachable": true,
+            "name": "采购申请明细表下发人"
+        },
+        "purRequDetGenerativeState": {
+            "meaning": "采购申请明细表下发状态",
+            "reachable": true,
+            "name": "采购申请明细表下发状态"
+        },
+        "purRequDetGroovyScript": {
+            "meaning": "采购申请明细表groovy脚本",
+            "reachable": true,
+            "name": "采购申请明细表groovy脚本"
+        },
+        "purRequDetGropeCode": {
+            "meaning": "采购申请明细表搜索码",
+            "reachable": true,
+            "name": "采购申请明细表搜索码"
+        },
+        "purRequDetId": {
+            "meaning": "采购申请明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "采购申请明细表PK"
+        },
+        "purRequDetInUsed": {
+            "meaning": "采购申请明细表是否被使用",
+            "reachable": true,
+            "name": "采购申请明细表是否被使用"
+        },
+        "purRequDetInvTypeTaxRateId": {
+            "meaning": "采购申请明细表发票税率id",
+            "reachable": true,
+            "name": "采购申请明细表发票税率id"
+        },
+        "purRequDetIsBanned": {
+            "meaning": "采购申请明细表是否被禁用",
+            "reachable": true,
+            "name": "采购申请明细表是否被禁用"
+        },
+        "purRequDetIsDeleted": {
+            "meaning": "采购申请明细表是否被删除",
+            "reachable": true,
+            "name": "采购申请明细表是否被删除"
+        },
+        "purRequDetIsLeaf": {
+            "meaning": "采购申请明细表是否叶子节点",
+            "reachable": true,
+            "name": "采购申请明细表是否叶子节点"
+        },
+        "purRequDetIsMainFlow": {
+            "meaning": "采购申请明细表是否是主流程",
+            "reachable": true,
+            "name": "采购申请明细表是否是主流程"
+        },
+        "purRequDetIsManualModificationDate": {
+            "meaning": "采购申请明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "采购申请明细表是否手动修改计划生产时间"
+        },
+        "purRequDetIsolation": {
+            "meaning": "采购申请明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "采购申请明细表智能节点数据隔离标识"
+        },
+        "purRequDetJsScript": {
+            "meaning": "采购申请明细表js脚本",
+            "reachable": true,
+            "name": "采购申请明细表js脚本"
+        },
+        "purRequDetMaterialId": {
+            "meaning": "采购申请明细表物料id",
+            "reachable": true,
+            "name": "采购申请明细表物料id"
+        },
+        "purRequDetName": {
+            "meaning": "采购申请明细表智能节点名",
+            "reachable": true,
+            "name": "采购申请明细表智能节点名"
+        },
+        "purRequDetNameCodeSearch": {
+            "meaning": "采购申请明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "采购申请明细表name、user_code模糊搜索"
+        },
+        "purRequDetNumberExtra1": {
+            "meaning": "采购申请明细表扩展数量1",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量1"
+        },
+        "purRequDetNumberExtra2": {
+            "meaning": "采购申请明细表扩展数量2",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量2"
+        },
+        "purRequDetNumberExtra3": {
+            "meaning": "采购申请明细表扩展数量3",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量3"
+        },
+        "purRequDetNumberExtra4": {
+            "meaning": "采购申请明细表扩展数量4",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量4"
+        },
+        "purRequDetNumberExtra5": {
+            "meaning": "采购申请明细表扩展数量5",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量5"
+        },
+        "purRequDetParentId": {
+            "meaning": "采购申请明细表父节点ID",
+            "reachable": true,
+            "name": "采购申请明细表父节点ID"
+        },
+        "purRequDetPlannedOutputQuantity": {
+            "meaning": "采购申请明细表计划产出数量",
+            "reachable": true,
+            "name": "采购申请明细表计划产出数量"
+        },
+        "purRequDetPlannedTimeRequired": {
+            "meaning": "采购申请明细表计划需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表计划需时"
+        },
+        "purRequDetPrintTimes": {
+            "meaning": "采购申请明细表打印次数",
+            "reachable": true,
+            "name": "采购申请明细表打印次数"
+        },
+        "purRequDetPriority": {
+            "meaning": "采购申请明细表优先级",
+            "reachable": true,
+            "name": "采购申请明细表优先级"
+        },
+        "purRequDetProcessInstanceId": {
+            "meaning": "采购申请明细表流程实例ID",
+            "reachable": true,
+            "name": "采购申请明细表流程实例ID"
+        },
+        "purRequDetProductionProcessesTypeId": {
+            "meaning": "采购申请明细表工序类型ID",
+            "reachable": true,
+            "name": "采购申请明细表工序类型ID"
+        },
+        "purRequDetProductionShiftId": {
+            "meaning": "采购申请明细表生产班次ID",
+            "reachable": true,
+            "name": "采购申请明细表生产班次ID"
+        },
+        "purRequDetPurRequActualTimeRequired": {
+            "meaning": "采购申请明细表实际需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表实际需时"
+        },
+        "purRequDetPurRequAdjustmentTimeRequired": {
+            "meaning": "采购申请明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "采购申请明细表调整需时"
+        },
+        "purRequDetPurRequApplicationId": {
+            "meaning": "采购申请明细表应用ID",
+            "reachable": true,
+            "name": "采购申请明细表应用ID"
+        },
+        "purRequDetPurRequAuditDate": {
+            "meaning": "采购申请明细表审核时间",
+            "reachable": true,
+            "name": "采购申请明细表审核时间"
+        },
+        "purRequDetPurRequAuditStatus": {
+            "meaning": "采购申请明细表审核状态",
+            "reachable": true,
+            "name": "采购申请明细表审核状态"
+        },
+        "purRequDetPurRequAvailableScheduleId": {
+            "meaning": "采购申请明细表可用日程id",
+            "reachable": true,
+            "name": "采购申请明细表可用日程id"
+        },
+        "purRequDetPurRequBeginTime": {
+            "meaning": "采购申请明细表开始时间",
+            "reachable": true,
+            "name": "采购申请明细表开始时间"
+        },
+        "purRequDetPurRequBizVersion": {
+            "meaning": "采购申请明细表业务自定义版本号",
+            "reachable": true,
+            "name": "采购申请明细表业务自定义版本号"
+        },
+        "purRequDetPurRequBriefName": {
+            "meaning": "采购申请明细表简称",
+            "reachable": true,
+            "name": "采购申请明细表简称"
+        },
+        "purRequDetPurRequBusDivisId": {
+            "meaning": "采购申请明细表事业部id",
+            "reachable": true,
+            "name": "采购申请明细表事业部id"
+        },
+        "purRequDetPurRequClazz": {
+            "meaning": "采购申请明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "采购申请明细表子类"
+        },
+        "purRequDetPurRequClosedReason": {
+            "meaning": "采购申请明细表结案原因",
+            "reachable": true,
+            "name": "采购申请明细表结案原因"
+        },
+        "purRequDetPurRequClosedStatus": {
+            "meaning": "采购申请明细表结案状态",
+            "reachable": true,
+            "name": "采购申请明细表结案状态"
+        },
+        "purRequDetPurRequComment": {
+            "meaning": "采购申请明细表评论",
+            "reachable": true,
+            "name": "采购申请明细表评论"
+        },
+        "purRequDetPurRequCompleteQuantity": {
+            "meaning": "采购申请明细表完成数量",
+            "reachable": true,
+            "name": "采购申请明细表完成数量"
+        },
+        "purRequDetPurRequCompleteStatus": {
+            "meaning": "采购申请明细表完成状态",
+            "reachable": true,
+            "name": "采购申请明细表完成状态"
+        },
+        "purRequDetPurRequCreateTime": {
+            "meaning": "采购申请明细表创建时间",
+            "reachable": true,
+            "name": "采购申请明细表创建时间"
+        },
+        "purRequDetPurRequCreator": {
+            "meaning": "采购申请明细表创建人",
+            "reachable": true,
+            "name": "采购申请明细表创建人"
+        },
+        "purRequDetPurRequCreatorId": {
+            "meaning": "采购申请明细表创建人ID",
+            "reachable": true,
+            "name": "采购申请明细表创建人ID"
+        },
+        "purRequDetPurRequDateExtra1": {
+            "meaning": "采购申请明细表扩展时间1",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间1"
+        },
+        "purRequDetPurRequDateExtra2": {
+            "meaning": "采购申请明细表扩展时间2",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间2"
+        },
+        "purRequDetPurRequDateExtra3": {
+            "meaning": "采购申请明细表扩展时间3",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间3"
+        },
+        "purRequDetPurRequDateExtra4": {
+            "meaning": "采购申请明细表扩展时间4",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间4"
+        },
+        "purRequDetPurRequDateExtra5": {
+            "meaning": "采购申请明细表扩展时间5",
+            "reachable": true,
+            "name": "采购申请明细表扩展时间5"
+        },
+        "purRequDetPurRequDefaultType": {
+            "meaning": "采购申请明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "采购申请明细表智能节点主类型"
+        },
+        "purRequDetPurRequDeliveryDate": {
+            "meaning": "采购申请明细表交货日期",
+            "reachable": true,
+            "name": "采购申请明细表交货日期"
+        },
+        "purRequDetPurRequDescription": {
+            "meaning": "采购申请明细表描述",
+            "reachable": true,
+            "name": "采购申请明细表描述"
+        },
+        "purRequDetPurRequEndTime": {
+            "meaning": "采购申请明细表结束时间",
+            "reachable": true,
+            "name": "采购申请明细表结束时间"
+        },
+        "purRequDetPurRequEndTimeRequired": {
+            "meaning": "采购申请明细表最后需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表最后需时"
+        },
+        "purRequDetPurRequEngName": {
+            "meaning": "采购申请明细表英文名称",
+            "reachable": true,
+            "name": "采购申请明细表英文名称"
+        },
+        "purRequDetPurRequEquipmentId": {
+            "meaning": "采购申请明细表设备id",
+            "reachable": true,
+            "name": "采购申请明细表设备id"
+        },
+        "purRequDetPurRequExchangeRateId": {
+            "meaning": "采购申请明细表币种汇率id",
+            "reachable": true,
+            "name": "采购申请明细表币种汇率id"
+        },
+        "purRequDetPurRequExtension": {
+            "meaning": "采购申请明细表扩展数据",
+            "reachable": true,
+            "name": "采购申请明细表扩展数据"
+        },
+        "purRequDetPurRequExternalState": {
+            "meaning": "采购申请明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "采购申请明细表上流程状态位"
+        },
+        "purRequDetPurRequFilterClazz": {
+            "meaning": "采购申请明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "采购申请明细表冗余字段用于筛选"
+        },
+        "purRequDetPurRequFlags": {
+            "meaning": "采购申请明细表63位标志位",
+            "reachable": true,
+            "name": "采购申请明细表63位标志位"
+        },
+        "purRequDetPurRequFromAuditDate": {
+            "meaning": "purRequDetPurRequFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromBeginTime": {
+            "meaning": "purRequDetPurRequFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromCreateTime": {
+            "meaning": "purRequDetPurRequFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDateExtra1": {
+            "meaning": "purRequDetPurRequFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDateExtra2": {
+            "meaning": "purRequDetPurRequFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDateExtra3": {
+            "meaning": "purRequDetPurRequFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDateExtra4": {
+            "meaning": "purRequDetPurRequFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDateExtra5": {
+            "meaning": "purRequDetPurRequFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromDeliveryDate": {
+            "meaning": "purRequDetPurRequFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromEndTime": {
+            "meaning": "purRequDetPurRequFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromReceiptDate": {
+            "meaning": "purRequDetPurRequFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFromUpdateTime": {
+            "meaning": "purRequDetPurRequFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequFscType": {
+            "meaning": "采购申请明细表FSC声明",
+            "reachable": true,
+            "name": "采购申请明细表FSC声明"
+        },
+        "purRequDetPurRequGenerativePeople": {
+            "meaning": "采购申请明细表下发人",
+            "reachable": true,
+            "name": "采购申请明细表下发人"
+        },
+        "purRequDetPurRequGenerativeState": {
+            "meaning": "采购申请明细表下发状态",
+            "reachable": true,
+            "name": "采购申请明细表下发状态"
+        },
+        "purRequDetPurRequGroovyScript": {
+            "meaning": "采购申请明细表groovy脚本",
+            "reachable": true,
+            "name": "采购申请明细表groovy脚本"
+        },
+        "purRequDetPurRequGropeCode": {
+            "meaning": "采购申请明细表搜索码",
+            "reachable": true,
+            "name": "采购申请明细表搜索码"
+        },
+        "purRequDetPurRequId": {
+            "meaning": "采购申请明细表PK",
+            "reachable": true,
+            "name": "采购申请明细表PK"
+        },
+        "purRequDetPurRequInUsed": {
+            "meaning": "采购申请明细表是否被使用",
+            "reachable": true,
+            "name": "采购申请明细表是否被使用"
+        },
+        "purRequDetPurRequInvTypeTaxRateId": {
+            "meaning": "采购申请明细表发票税率id",
+            "reachable": true,
+            "name": "采购申请明细表发票税率id"
+        },
+        "purRequDetPurRequIsBanned": {
+            "meaning": "采购申请明细表是否被禁用",
+            "reachable": true,
+            "name": "采购申请明细表是否被禁用"
+        },
+        "purRequDetPurRequIsDeleted": {
+            "meaning": "采购申请明细表是否被删除",
+            "reachable": true,
+            "name": "采购申请明细表是否被删除"
+        },
+        "purRequDetPurRequIsLeaf": {
+            "meaning": "采购申请明细表是否叶子节点",
+            "reachable": true,
+            "name": "采购申请明细表是否叶子节点"
+        },
+        "purRequDetPurRequIsMainFlow": {
+            "meaning": "采购申请明细表是否是主流程",
+            "reachable": true,
+            "name": "采购申请明细表是否是主流程"
+        },
+        "purRequDetPurRequIsManualModificationDate": {
+            "meaning": "采购申请明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "采购申请明细表是否手动修改计划生产时间"
+        },
+        "purRequDetPurRequIsolation": {
+            "meaning": "采购申请明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "采购申请明细表智能节点数据隔离标识"
+        },
+        "purRequDetPurRequJsScript": {
+            "meaning": "采购申请明细表js脚本",
+            "reachable": true,
+            "name": "采购申请明细表js脚本"
+        },
+        "purRequDetPurRequMaterialId": {
+            "meaning": "采购申请明细表物料id",
+            "reachable": true,
+            "name": "采购申请明细表物料id"
+        },
+        "purRequDetPurRequName": {
+            "meaning": "采购申请明细表智能节点名",
+            "reachable": true,
+            "name": "采购申请明细表智能节点名"
+        },
+        "purRequDetPurRequNameCodeSearch": {
+            "meaning": "采购申请明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "采购申请明细表name、user_code模糊搜索"
+        },
+        "purRequDetPurRequNumberExtra1": {
+            "meaning": "采购申请明细表扩展数量1",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量1"
+        },
+        "purRequDetPurRequNumberExtra2": {
+            "meaning": "采购申请明细表扩展数量2",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量2"
+        },
+        "purRequDetPurRequNumberExtra3": {
+            "meaning": "采购申请明细表扩展数量3",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量3"
+        },
+        "purRequDetPurRequNumberExtra4": {
+            "meaning": "采购申请明细表扩展数量4",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量4"
+        },
+        "purRequDetPurRequNumberExtra5": {
+            "meaning": "采购申请明细表扩展数量5",
+            "reachable": true,
+            "name": "采购申请明细表扩展数量5"
+        },
+        "purRequDetPurRequParentId": {
+            "meaning": "采购申请明细表父节点ID",
+            "reachable": true,
+            "name": "采购申请明细表父节点ID"
+        },
+        "purRequDetPurRequPlannedOutputQuantity": {
+            "meaning": "采购申请明细表计划产出数量",
+            "reachable": true,
+            "name": "采购申请明细表计划产出数量"
+        },
+        "purRequDetPurRequPlannedTimeRequired": {
+            "meaning": "采购申请明细表计划需时(小时)",
+            "reachable": true,
+            "name": "采购申请明细表计划需时"
+        },
+        "purRequDetPurRequPrintTimes": {
+            "meaning": "采购申请明细表打印次数",
+            "reachable": true,
+            "name": "采购申请明细表打印次数"
+        },
+        "purRequDetPurRequPriority": {
+            "meaning": "采购申请明细表优先级",
+            "reachable": true,
+            "name": "采购申请明细表优先级"
+        },
+        "purRequDetPurRequProcessInstanceId": {
+            "meaning": "采购申请明细表流程实例ID",
+            "reachable": true,
+            "name": "采购申请明细表流程实例ID"
+        },
+        "purRequDetPurRequProductionProcessesTypeId": {
+            "meaning": "采购申请明细表工序类型ID",
+            "reachable": true,
+            "name": "采购申请明细表工序类型ID"
+        },
+        "purRequDetPurRequProductionShiftId": {
+            "meaning": "采购申请明细表生产班次ID",
+            "reachable": true,
+            "name": "采购申请明细表生产班次ID"
+        },
+        "purRequDetPurRequPurchaseOrderQuantity": {
+            "meaning": "采购申请明细表已开采购订单数量",
+            "reachable": true,
+            "name": "采购申请明细表已开采购订单数量"
+        },
+        "purRequDetPurRequPurchaseOrderState": {
+            "meaning": "采购申请明细表已开采购订单状态",
+            "reachable": true,
+            "name": "采购申请明细表已开采购订单状态"
+        },
+        "purRequDetPurRequQuantity": {
+            "meaning": "采购申请明细表任务数量",
+            "reachable": true,
+            "name": "采购申请明细表任务数量"
+        },
+        "purRequDetPurRequReceiptDate": {
+            "meaning": "采购申请明细表单据日期",
+            "reachable": true,
+            "name": "采购申请明细表单据日期"
+        },
+        "purRequDetPurRequReceiptType": {
+            "meaning": "采购申请明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "采购申请明细表单据类型"
+        },
+        "purRequDetPurRequRelatedTasksId": {
+            "meaning": "采购申请明细表关联任务id",
+            "reachable": true,
+            "name": "采购申请明细表关联任务id"
+        },
+        "purRequDetPurRequSerialNumber": {
+            "meaning": "采购申请明细表顺序号",
+            "reachable": true,
+            "name": "采购申请明细表顺序号"
+        },
+        "purRequDetPurRequSource": {
+            "meaning": "采购申请明细表源",
+            "reachable": true,
+            "name": "采购申请明细表源"
+        },
+        "purRequDetPurRequSourceType": {
+            "meaning": "采购申请明细表来源类型",
+            "reachable": true,
+            "name": "采购申请明细表来源类型"
+        },
+        "purRequDetPurRequState": {
+            "meaning": "采购申请明细表通用状态",
+            "reachable": true,
+            "name": "采购申请明细表通用状态"
+        },
+        "purRequDetPurRequSystemCode": {
+            "meaning": "采购申请明细表系统编码",
+            "reachable": true,
+            "name": "采购申请明细表系统编码"
+        },
+        "purRequDetPurRequTarget": {
+            "meaning": "采购申请明细表目标",
+            "reachable": true,
+            "name": "采购申请明细表目标"
+        },
+        "purRequDetPurRequTaskNodeName": {
+            "meaning": "采购申请明细表任务节点名称",
+            "reachable": true,
+            "name": "采购申请明细表任务节点名称"
+        },
+        "purRequDetPurRequTenantId": {
+            "meaning": "采购申请明细表租户id",
+            "reachable": true,
+            "name": "采购申请明细表租户id"
+        },
+        "purRequDetPurRequThirdPartyClass": {
+            "meaning": "采购申请明细表第三方分类",
+            "reachable": true,
+            "name": "采购申请明细表第三方分类"
+        },
+        "purRequDetPurRequThirdPartyId": {
+            "meaning": "采购申请明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "采购申请明细表第三方系统中的唯一ID"
+        },
+        "purRequDetPurRequThirdPartyName": {
+            "meaning": "采购申请明细表第三方名称",
+            "reachable": true,
+            "name": "采购申请明细表第三方名称"
+        },
+        "purRequDetPurRequToAuditDate": {
+            "meaning": "purRequDetPurRequToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToBeginTime": {
+            "meaning": "purRequDetPurRequToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToCreateTime": {
+            "meaning": "purRequDetPurRequToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDateExtra1": {
+            "meaning": "purRequDetPurRequToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDateExtra2": {
+            "meaning": "purRequDetPurRequToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDateExtra3": {
+            "meaning": "purRequDetPurRequToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDateExtra4": {
+            "meaning": "purRequDetPurRequToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDateExtra5": {
+            "meaning": "purRequDetPurRequToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToDeliveryDate": {
+            "meaning": "purRequDetPurRequToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToEndTime": {
+            "meaning": "purRequDetPurRequToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToReceiptDate": {
+            "meaning": "purRequDetPurRequToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequToUpdateTime": {
+            "meaning": "purRequDetPurRequToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetPurRequUnitCode": {
+            "meaning": "采购申请明细表单位id",
+            "reachable": true,
+            "name": "采购申请明细表单位id"
+        },
+        "purRequDetPurRequUpdateTime": {
+            "meaning": "采购申请明细表更新时间",
+            "reachable": true,
+            "name": "采购申请明细表更新时间"
+        },
+        "purRequDetPurRequUpdater": {
+            "meaning": "采购申请明细表更新人",
+            "reachable": true,
+            "name": "采购申请明细表更新人"
+        },
+        "purRequDetPurRequUpdaterId": {
+            "meaning": "采购申请明细表更新人ID",
+            "reachable": true,
+            "name": "采购申请明细表更新人ID"
+        },
+        "purRequDetPurRequUserCode": {
+            "meaning": "采购申请明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "采购申请明细表智能节点的唯一编码"
+        },
+        "purRequDetPurRequVarExtra1": {
+            "meaning": "采购申请明细表扩展1",
+            "reachable": true,
+            "name": "采购申请明细表扩展1"
+        },
+        "purRequDetPurRequVarExtra2": {
+            "meaning": "采购申请明细表扩展2",
+            "reachable": true,
+            "name": "采购申请明细表扩展2"
+        },
+        "purRequDetPurRequVarExtra3": {
+            "meaning": "采购申请明细表扩展3",
+            "reachable": true,
+            "name": "采购申请明细表扩展3"
+        },
+        "purRequDetPurRequVarExtra4": {
+            "meaning": "采购申请明细表扩展4",
+            "reachable": true,
+            "name": "采购申请明细表扩展4"
+        },
+        "purRequDetPurRequVarExtra5": {
+            "meaning": "采购申请明细表扩展5",
+            "reachable": true,
+            "name": "采购申请明细表扩展5"
+        },
+        "purRequDetPurRequVersion": {
+            "meaning": "采购申请明细表版本号",
+            "reachable": true,
+            "name": "采购申请明细表版本号"
+        },
+        "purRequDetPurchaseOrderQuantity": {
+            "meaning": "采购申请明细表已开采购订单数量",
+            "reachable": true,
+            "name": "采购申请明细表已开采购订单数量"
+        },
+        "purRequDetPurchaseOrderState": {
+            "meaning": "采购申请明细表已开采购订单状态",
+            "reachable": true,
+            "name": "采购申请明细表已开采购订单状态"
+        },
+        "purRequDetQuantity": {
+            "meaning": "采购申请明细表任务数量",
+            "reachable": true,
+            "name": "采购申请明细表任务数量"
+        },
+        "purRequDetReceiptDate": {
+            "meaning": "采购申请明细表单据日期",
+            "reachable": true,
+            "name": "采购申请明细表单据日期"
+        },
+        "purRequDetReceiptType": {
+            "meaning": "采购申请明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "采购申请明细表单据类型"
+        },
+        "purRequDetRelatedTasksId": {
+            "meaning": "采购申请明细表关联任务id",
+            "reachable": true,
+            "name": "采购申请明细表关联任务id"
+        },
+        "purRequDetRequDept": {
+            "meaning": "采购申请明细表申购部门",
+            "reachable": true,
+            "name": "采购申请明细表申购部门"
+        },
+        "purRequDetRequUser": {
+            "meaning": "采购申请明细表申购人",
+            "reachable": true,
+            "name": "采购申请明细表申购人"
+        },
+        "purRequDetSerialNumber": {
+            "meaning": "采购申请明细表顺序号",
+            "reachable": true,
+            "name": "采购申请明细表顺序号"
+        },
+        "purRequDetSource": {
+            "meaning": "采购申请明细表源",
+            "reachable": true,
+            "name": "采购申请明细表源"
+        },
+        "purRequDetSourceType": {
+            "meaning": "采购申请明细表来源类型",
+            "reachable": true,
+            "name": "采购申请明细表来源类型"
+        },
+        "purRequDetState": {
+            "meaning": "采购申请明细表通用状态",
+            "reachable": true,
+            "name": "采购申请明细表通用状态"
+        },
+        "purRequDetSystemCode": {
+            "meaning": "采购申请明细表系统编码",
+            "reachable": true,
+            "name": "采购申请明细表系统编码"
+        },
+        "purRequDetTarget": {
+            "meaning": "采购申请明细表目标",
+            "reachable": true,
+            "name": "采购申请明细表目标"
+        },
+        "purRequDetTaskNodeName": {
+            "meaning": "采购申请明细表任务节点名称",
+            "reachable": true,
+            "name": "采购申请明细表任务节点名称"
+        },
+        "purRequDetTenantId": {
+            "meaning": "采购申请明细表租户id",
+            "reachable": true,
+            "name": "采购申请明细表租户id"
+        },
+        "purRequDetThirdPartyClass": {
+            "meaning": "采购申请明细表第三方分类",
+            "reachable": true,
+            "name": "采购申请明细表第三方分类"
+        },
+        "purRequDetThirdPartyId": {
+            "meaning": "采购申请明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "采购申请明细表第三方系统中的唯一ID"
+        },
+        "purRequDetThirdPartyName": {
+            "meaning": "采购申请明细表第三方名称",
+            "reachable": true,
+            "name": "采购申请明细表第三方名称"
+        },
+        "purRequDetToAuditDate": {
+            "meaning": "purRequDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToBeginTime": {
+            "meaning": "purRequDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToCreateTime": {
+            "meaning": "purRequDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDateExtra1": {
+            "meaning": "purRequDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDateExtra2": {
+            "meaning": "purRequDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDateExtra3": {
+            "meaning": "purRequDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDateExtra4": {
+            "meaning": "purRequDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDateExtra5": {
+            "meaning": "purRequDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToDeliveryDate": {
+            "meaning": "purRequDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToEndTime": {
+            "meaning": "purRequDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToReceiptDate": {
+            "meaning": "purRequDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetToUpdateTime": {
+            "meaning": "purRequDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "purRequDetUnitCode": {
+            "meaning": "采购申请明细表单位id",
+            "reachable": true,
+            "name": "采购申请明细表单位id"
+        },
+        "purRequDetUpdateTime": {
+            "meaning": "采购申请明细表更新时间",
+            "reachable": true,
+            "name": "采购申请明细表更新时间"
+        },
+        "purRequDetUpdater": {
+            "meaning": "采购申请明细表更新人",
+            "reachable": true,
+            "name": "采购申请明细表更新人"
+        },
+        "purRequDetUpdaterId": {
+            "meaning": "采购申请明细表更新人ID",
+            "reachable": true,
+            "name": "采购申请明细表更新人ID"
+        },
+        "purRequDetUserCode": {
+            "meaning": "采购申请明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "采购申请明细表智能节点的唯一编码"
+        },
+        "purRequDetVarExtra1": {
+            "meaning": "采购申请明细表扩展1",
+            "reachable": true,
+            "name": "采购申请明细表扩展1"
+        },
+        "purRequDetVarExtra2": {
+            "meaning": "采购申请明细表扩展2",
+            "reachable": true,
+            "name": "采购申请明细表扩展2"
+        },
+        "purRequDetVarExtra3": {
+            "meaning": "采购申请明细表扩展3",
+            "reachable": true,
+            "name": "采购申请明细表扩展3"
+        },
+        "purRequDetVarExtra4": {
+            "meaning": "采购申请明细表扩展4",
+            "reachable": true,
+            "name": "采购申请明细表扩展4"
+        },
+        "purRequDetVarExtra5": {
+            "meaning": "采购申请明细表扩展5",
+            "reachable": true,
+            "name": "采购申请明细表扩展5"
+        },
+        "purRequDetVersion": {
+            "meaning": "采购申请明细表版本号",
+            "reachable": true,
+            "name": "采购申请明细表版本号"
+        }
+    }
+}

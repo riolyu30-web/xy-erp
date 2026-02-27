@@ -5,6 +5,8 @@ import os
 import sys
 from fastapi import Depends
 from api.v1.dependencies import get_current_user
+import services.tool as tool
+import services.auth_service as auth_service 
 
 # 添加项目根目录到 sys.path，以便导入 codegen_tool
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -13,13 +15,56 @@ if BASE_DIR not in sys.path:
 
 import codegen_tool
 
+
 router = APIRouter()
 
 # 指向 erp-service/mcp.json (当前项目根目录下的 mcp.json)
 MCP_JSON_PATH = os.path.join(BASE_DIR, "mcp.json")
+MCP_RELATION_PATH = os.path.join(BASE_DIR, "mcp_relation.json")
+
+class McpVerify(BaseModel):
+    api_name: str
+    request: dict
+    response: dict
+
 
 class McpData(BaseModel):
     mcp: list
+
+
+
+@router.post("/verify")
+async def verify_mcp_response(item: McpVerify, current_user: dict = Depends(get_current_user)):
+    try:
+        # 1. 调用 auth_login 获取 access_token
+        access_token = auth_service.auth_login()
+
+        # 2. 调用 tool.get_data 获取数据
+        data = tool.get_data(item.api_name, item.request, access_token)
+
+        # 3. 检查返回的数据
+        if not data:
+            raise HTTPException(status_code=404, detail="No data returned from the API.")
+
+        first_item = data[0]
+        print(first_item)
+        response_keys = item.response.keys()
+
+        # 4. 校验字段
+        missing_fields = [key for key in response_keys if key not in first_item]
+
+        if missing_fields:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Missing fields in API response: {', '.join(missing_fields)}"
+            )
+
+        return {"result": True}
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 @router.get("/")
 async def get_mcp():
@@ -32,6 +77,7 @@ async def get_mcp():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 @router.post("/save")
 async def save_mcp(data: McpData, current_user: dict = Depends(get_current_user)):
     try:
@@ -43,6 +89,7 @@ async def save_mcp(data: McpData, current_user: dict = Depends(get_current_user)
         return {"message": "Saved successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @router.post("/restart")
 async def restart_service(current_user: dict = Depends(get_current_user)):
@@ -70,3 +117,5 @@ async def restart_service(current_user: dict = Depends(get_current_user)):
         return {"message": "Service script generated and main mcp rebuilt successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+

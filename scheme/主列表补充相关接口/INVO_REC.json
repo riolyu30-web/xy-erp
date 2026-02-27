@@ -1,0 +1,647 @@
+{
+    "api_name": "/invo-rec/findList",
+    "table_name": "收票登记表",
+    "request": {
+        "invoRecClazz": "INVO_REC"
+    },
+    "mainTabClazz": "INVO_REC",
+    "response": {
+        "invoRecActualTimeRequired": {
+            "meaning": "收票登记表实际需时(小时)",
+            "reachable": false,
+            "name": "收票登记表实际需时"
+        },
+        "invoRecAdjustmentTimeRequired": {
+            "meaning": "收票登记表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "收票登记表调整需时"
+        },
+        "invoRecAmountIncludingTax": {
+            "meaning": "收票登记表收款/付款金额(含税)",
+            "reachable": false,
+            "name": "收票登记表收款/付款金额"
+        },
+        "invoRecApplicationId": {
+            "meaning": "收票登记表应用ID",
+            "reachable": false,
+            "name": "收票登记表应用ID"
+        },
+        "invoRecAuditDate": {
+            "meaning": "收票登记表审核时间",
+            "reachable": false,
+            "name": "收票登记表审核时间"
+        },
+        "invoRecAuditStatus": {
+            "meaning": "收票登记表审核状态",
+            "reachable": false,
+            "name": "收票登记表审核状态"
+        },
+        "invoRecAvailableScheduleId": {
+            "meaning": "收票登记表可用日程id",
+            "reachable": false,
+            "name": "收票登记表可用日程id"
+        },
+        "invoRecBeginTime": {
+            "meaning": "收票登记表开始时间",
+            "reachable": false,
+            "name": "收票登记表开始时间"
+        },
+        "invoRecBizVersion": {
+            "meaning": "收票登记表业务自定义版本号",
+            "reachable": false,
+            "name": "收票登记表业务自定义版本号"
+        },
+        "invoRecBriefName": {
+            "meaning": "收票登记表简称",
+            "reachable": false,
+            "name": "收票登记表简称"
+        },
+        "invoRecBusDivisId": {
+            "meaning": "收票登记表事业部id",
+            "reachable": false,
+            "name": "收票登记表事业部id"
+        },
+        "invoRecClazz": {
+            "meaning": "收票登记表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "收票登记表子类"
+        },
+        "invoRecClosedReason": {
+            "meaning": "收票登记表结案原因",
+            "reachable": false,
+            "name": "收票登记表结案原因"
+        },
+        "invoRecClosedStatus": {
+            "meaning": "收票登记表结案状态",
+            "reachable": false,
+            "name": "收票登记表结案状态"
+        },
+        "invoRecComment": {
+            "meaning": "收票登记表评论",
+            "reachable": false,
+            "name": "收票登记表评论"
+        },
+        "invoRecCompleteQuantity": {
+            "meaning": "收票登记表完成数量",
+            "reachable": false,
+            "name": "收票登记表完成数量"
+        },
+        "invoRecCompleteStatus": {
+            "meaning": "收票登记表完成状态",
+            "reachable": false,
+            "name": "收票登记表完成状态"
+        },
+        "invoRecCreateTime": {
+            "meaning": "收票登记表创建时间",
+            "reachable": false,
+            "name": "收票登记表创建时间"
+        },
+        "invoRecCreator": {
+            "meaning": "收票登记表创建人",
+            "reachable": false,
+            "name": "收票登记表创建人"
+        },
+        "invoRecCreatorId": {
+            "meaning": "收票登记表创建人ID",
+            "reachable": false,
+            "name": "收票登记表创建人ID"
+        },
+        "invoRecDateExtra1": {
+            "meaning": "收票登记表扩展时间1",
+            "reachable": false,
+            "name": "收票登记表扩展时间1"
+        },
+        "invoRecDateExtra2": {
+            "meaning": "收票登记表扩展时间2",
+            "reachable": false,
+            "name": "收票登记表扩展时间2"
+        },
+        "invoRecDateExtra3": {
+            "meaning": "收票登记表扩展时间3",
+            "reachable": false,
+            "name": "收票登记表扩展时间3"
+        },
+        "invoRecDateExtra4": {
+            "meaning": "收票登记表扩展时间4",
+            "reachable": false,
+            "name": "收票登记表扩展时间4"
+        },
+        "invoRecDateExtra5": {
+            "meaning": "收票登记表扩展时间5",
+            "reachable": false,
+            "name": "收票登记表扩展时间5"
+        },
+        "invoRecDefaultType": {
+            "meaning": "收票登记表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "收票登记表智能节点主类型"
+        },
+        "invoRecDeliveryDate": {
+            "meaning": "收票登记表交货日期",
+            "reachable": false,
+            "name": "收票登记表交货日期"
+        },
+        "invoRecDescription": {
+            "meaning": "收票登记表描述",
+            "reachable": false,
+            "name": "收票登记表描述"
+        },
+        "invoRecEndTime": {
+            "meaning": "收票登记表结束时间",
+            "reachable": false,
+            "name": "收票登记表结束时间"
+        },
+        "invoRecEndTimeRequired": {
+            "meaning": "收票登记表最后需时(小时)",
+            "reachable": false,
+            "name": "收票登记表最后需时"
+        },
+        "invoRecEngName": {
+            "meaning": "收票登记表英文名称",
+            "reachable": false,
+            "name": "收票登记表英文名称"
+        },
+        "invoRecEquipmentId": {
+            "meaning": "收票登记表设备id",
+            "reachable": false,
+            "name": "收票登记表设备id"
+        },
+        "invoRecExchangeRateId": {
+            "meaning": "收票登记表币种汇率id",
+            "reachable": false,
+            "name": "收票登记表币种汇率id"
+        },
+        "invoRecExtension": {
+            "meaning": "收票登记表扩展数据",
+            "reachable": false,
+            "name": "收票登记表扩展数据"
+        },
+        "invoRecExternalState": {
+            "meaning": "收票登记表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "收票登记表上流程状态位"
+        },
+        "invoRecFilterClazz": {
+            "meaning": "收票登记表冗余字段用于筛选",
+            "reachable": false,
+            "name": "收票登记表冗余字段用于筛选"
+        },
+        "invoRecFlags": {
+            "meaning": "收票登记表63位标志位",
+            "reachable": false,
+            "name": "收票登记表63位标志位"
+        },
+        "invoRecFromAuditDate": {
+            "meaning": "invoRecFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromBeginTime": {
+            "meaning": "invoRecFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromCreateTime": {
+            "meaning": "invoRecFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDateExtra1": {
+            "meaning": "invoRecFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDateExtra2": {
+            "meaning": "invoRecFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDateExtra3": {
+            "meaning": "invoRecFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDateExtra4": {
+            "meaning": "invoRecFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDateExtra5": {
+            "meaning": "invoRecFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromDeliveryDate": {
+            "meaning": "invoRecFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromEndTime": {
+            "meaning": "invoRecFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromInvoiceBillDate": {
+            "type": "object",
+            "meaning": "invoRecFromInvoiceBillDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromPaymentDate": {
+            "type": "object",
+            "meaning": "invoRecFromPaymentDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromReceiptDate": {
+            "meaning": "invoRecFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFromUpdateTime": {
+            "meaning": "invoRecFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecFscType": {
+            "meaning": "收票登记表FSC声明",
+            "reachable": false,
+            "name": "收票登记表FSC声明"
+        },
+        "invoRecGenerativePeople": {
+            "meaning": "收票登记表下发人",
+            "reachable": false,
+            "name": "收票登记表下发人"
+        },
+        "invoRecGenerativeState": {
+            "meaning": "收票登记表下发状态",
+            "reachable": false,
+            "name": "收票登记表下发状态"
+        },
+        "invoRecGroovyScript": {
+            "meaning": "收票登记表groovy脚本",
+            "reachable": false,
+            "name": "收票登记表groovy脚本"
+        },
+        "invoRecGropeCode": {
+            "meaning": "收票登记表搜索码",
+            "reachable": false,
+            "name": "收票登记表搜索码"
+        },
+        "invoRecId": {
+            "meaning": "收票登记表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "收票登记表PK"
+        },
+        "invoRecInUsed": {
+            "meaning": "收票登记表是否被使用",
+            "reachable": false,
+            "name": "收票登记表是否被使用"
+        },
+        "invoRecInvTypeTaxRateId": {
+            "meaning": "收票登记表发票税率id",
+            "reachable": false,
+            "name": "收票登记表发票税率id"
+        },
+        "invoRecInvoiceBillDate": {
+            "type": "object",
+            "meaning": "收票登记表收票日期",
+            "reachable": false,
+            "name": "收票登记表收票日期"
+        },
+        "invoRecInvoiceNo": {
+            "meaning": "收票登记表发票号码(手填)",
+            "reachable": false,
+            "name": "收票登记表发票号码"
+        },
+        "invoRecIsBanned": {
+            "meaning": "收票登记表是否被禁用",
+            "reachable": false,
+            "name": "收票登记表是否被禁用"
+        },
+        "invoRecIsDeleted": {
+            "meaning": "收票登记表是否被删除",
+            "reachable": false,
+            "name": "收票登记表是否被删除"
+        },
+        "invoRecIsLeaf": {
+            "meaning": "收票登记表是否叶子节点",
+            "reachable": false,
+            "name": "收票登记表是否叶子节点"
+        },
+        "invoRecIsMainFlow": {
+            "meaning": "收票登记表是否是主流程",
+            "reachable": false,
+            "name": "收票登记表是否是主流程"
+        },
+        "invoRecIsManualModificationDate": {
+            "meaning": "收票登记表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "收票登记表是否手动修改计划生产时间"
+        },
+        "invoRecIsolation": {
+            "meaning": "收票登记表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "收票登记表智能节点数据隔离标识"
+        },
+        "invoRecJsScript": {
+            "meaning": "收票登记表js脚本",
+            "reachable": false,
+            "name": "收票登记表js脚本"
+        },
+        "invoRecMaterialId": {
+            "meaning": "收票登记表物料id",
+            "reachable": false,
+            "name": "收票登记表物料id"
+        },
+        "invoRecName": {
+            "meaning": "收票登记表智能节点名",
+            "reachable": false,
+            "name": "收票登记表智能节点名"
+        },
+        "invoRecNameCodeSearch": {
+            "meaning": "收票登记表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "收票登记表name、user_code模糊搜索"
+        },
+        "invoRecNumberExtra1": {
+            "meaning": "收票登记表扩展数量1",
+            "reachable": false,
+            "name": "收票登记表扩展数量1"
+        },
+        "invoRecNumberExtra2": {
+            "meaning": "收票登记表扩展数量2",
+            "reachable": false,
+            "name": "收票登记表扩展数量2"
+        },
+        "invoRecNumberExtra3": {
+            "meaning": "收票登记表扩展数量3",
+            "reachable": false,
+            "name": "收票登记表扩展数量3"
+        },
+        "invoRecNumberExtra4": {
+            "meaning": "收票登记表扩展数量4",
+            "reachable": false,
+            "name": "收票登记表扩展数量4"
+        },
+        "invoRecNumberExtra5": {
+            "meaning": "收票登记表扩展数量5",
+            "reachable": false,
+            "name": "收票登记表扩展数量5"
+        },
+        "invoRecParentId": {
+            "meaning": "收票登记表父节点ID",
+            "reachable": false,
+            "name": "收票登记表父节点ID"
+        },
+        "invoRecPaymentDate": {
+            "type": "object",
+            "meaning": "收票登记表付款日期(交易日期)",
+            "reachable": false,
+            "name": "收票登记表付款日期"
+        },
+        "invoRecPlannedOutputQuantity": {
+            "meaning": "收票登记表计划产出数量",
+            "reachable": false,
+            "name": "收票登记表计划产出数量"
+        },
+        "invoRecPlannedTimeRequired": {
+            "meaning": "收票登记表计划需时(小时)",
+            "reachable": false,
+            "name": "收票登记表计划需时"
+        },
+        "invoRecPrintTimes": {
+            "meaning": "收票登记表打印次数",
+            "reachable": false,
+            "name": "收票登记表打印次数"
+        },
+        "invoRecPriority": {
+            "meaning": "收票登记表优先级",
+            "reachable": false,
+            "name": "收票登记表优先级"
+        },
+        "invoRecProcessInstanceId": {
+            "meaning": "收票登记表流程实例ID",
+            "reachable": false,
+            "name": "收票登记表流程实例ID"
+        },
+        "invoRecProductionProcessesTypeId": {
+            "meaning": "收票登记表工序类型ID",
+            "reachable": false,
+            "name": "收票登记表工序类型ID"
+        },
+        "invoRecProductionShiftId": {
+            "meaning": "收票登记表生产班次ID",
+            "reachable": false,
+            "name": "收票登记表生产班次ID"
+        },
+        "invoRecQuantity": {
+            "meaning": "收票登记表任务数量",
+            "reachable": false,
+            "name": "收票登记表任务数量"
+        },
+        "invoRecReceiptDate": {
+            "meaning": "收票登记表单据日期",
+            "reachable": false,
+            "name": "收票登记表单据日期"
+        },
+        "invoRecReceiptType": {
+            "meaning": "收票登记表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "收票登记表单据类型"
+        },
+        "invoRecRelatedTasksId": {
+            "meaning": "收票登记表关联任务id",
+            "reachable": false,
+            "name": "收票登记表关联任务id"
+        },
+        "invoRecSerialNumber": {
+            "meaning": "收票登记表顺序号",
+            "reachable": false,
+            "name": "收票登记表顺序号"
+        },
+        "invoRecSource": {
+            "meaning": "收票登记表源",
+            "reachable": false,
+            "name": "收票登记表源"
+        },
+        "invoRecSourceType": {
+            "meaning": "收票登记表来源类型",
+            "reachable": false,
+            "name": "收票登记表来源类型"
+        },
+        "invoRecState": {
+            "meaning": "收票登记表通用状态",
+            "reachable": false,
+            "name": "收票登记表通用状态"
+        },
+        "invoRecSystemCode": {
+            "meaning": "收票登记表系统编码",
+            "reachable": false,
+            "name": "收票登记表系统编码"
+        },
+        "invoRecTarget": {
+            "meaning": "收票登记表目标",
+            "reachable": false,
+            "name": "收票登记表目标"
+        },
+        "invoRecTaskNodeName": {
+            "meaning": "收票登记表任务节点名称",
+            "reachable": false,
+            "name": "收票登记表任务节点名称"
+        },
+        "invoRecTaxRate": {
+            "meaning": "收票登记表税率",
+            "reachable": false,
+            "name": "收票登记表税率"
+        },
+        "invoRecTenantId": {
+            "meaning": "收票登记表租户_id",
+            "reachable": false,
+            "name": "收票登记表租户_id"
+        },
+        "invoRecThirdPartyClass": {
+            "meaning": "收票登记表第三方分类",
+            "reachable": false,
+            "name": "收票登记表第三方分类"
+        },
+        "invoRecThirdPartyId": {
+            "meaning": "收票登记表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "收票登记表第三方系统中的唯一ID"
+        },
+        "invoRecThirdPartyName": {
+            "meaning": "收票登记表第三方名称",
+            "reachable": false,
+            "name": "收票登记表第三方名称"
+        },
+        "invoRecToAuditDate": {
+            "meaning": "invoRecToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToBeginTime": {
+            "meaning": "invoRecToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToCreateTime": {
+            "meaning": "invoRecToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDateExtra1": {
+            "meaning": "invoRecToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDateExtra2": {
+            "meaning": "invoRecToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDateExtra3": {
+            "meaning": "invoRecToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDateExtra4": {
+            "meaning": "invoRecToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDateExtra5": {
+            "meaning": "invoRecToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToDeliveryDate": {
+            "meaning": "invoRecToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToEndTime": {
+            "meaning": "invoRecToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToInvoiceBillDate": {
+            "type": "object",
+            "meaning": "invoRecToInvoiceBillDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToPaymentDate": {
+            "type": "object",
+            "meaning": "invoRecToPaymentDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToReceiptDate": {
+            "meaning": "invoRecToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecToUpdateTime": {
+            "meaning": "invoRecToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invoRecUnitCode": {
+            "meaning": "收票登记表单位id",
+            "reachable": false,
+            "name": "收票登记表单位id"
+        },
+        "invoRecUpdateTime": {
+            "meaning": "收票登记表更新时间",
+            "reachable": false,
+            "name": "收票登记表更新时间"
+        },
+        "invoRecUpdater": {
+            "meaning": "收票登记表更新人",
+            "reachable": false,
+            "name": "收票登记表更新人"
+        },
+        "invoRecUpdaterId": {
+            "meaning": "收票登记表更新人ID",
+            "reachable": false,
+            "name": "收票登记表更新人ID"
+        },
+        "invoRecUserCode": {
+            "meaning": "收票登记表智能节点的唯一编码",
+            "reachable": false,
+            "name": "收票登记表智能节点的唯一编码"
+        },
+        "invoRecVarExtra1": {
+            "meaning": "收票登记表扩展1",
+            "reachable": false,
+            "name": "收票登记表扩展1"
+        },
+        "invoRecVarExtra2": {
+            "meaning": "收票登记表扩展2",
+            "reachable": false,
+            "name": "收票登记表扩展2"
+        },
+        "invoRecVarExtra3": {
+            "meaning": "收票登记表扩展3",
+            "reachable": false,
+            "name": "收票登记表扩展3"
+        },
+        "invoRecVarExtra4": {
+            "meaning": "收票登记表扩展4",
+            "reachable": false,
+            "name": "收票登记表扩展4"
+        },
+        "invoRecVarExtra5": {
+            "meaning": "收票登记表扩展5",
+            "reachable": false,
+            "name": "收票登记表扩展5"
+        },
+        "invoRecVersion": {
+            "meaning": "收票登记表版本号",
+            "reachable": false,
+            "name": "收票登记表版本号"
+        }
+    }
+}

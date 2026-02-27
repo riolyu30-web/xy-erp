@@ -1,0 +1,1322 @@
+{
+    "api_name": "/trans-pack-list-det/findList",
+    "table_name": "装舱单明细",
+    "request": {
+        "transPackListDetTransPackListClazz": "TRANS_PACK_LIST",
+        "transPackListDetClazz": "TRANS_PACK_LIST_DET"
+    },
+    "mainTabClazz": "TRANS_PACK_LIST_DET",
+    "response": {
+        "ransPackListDetTransPackListProductionProcessesTypeId": {
+            "meaning": "装舱单明细工序类型ID",
+            "reachable": false,
+            "name": "装舱单明细工序类型ID"
+        },
+        "transPackListDetActualTimeRequired": {
+            "meaning": "装舱单明细实际需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细实际需时"
+        },
+        "transPackListDetAdjustmentTimeRequired": {
+            "meaning": "装舱单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "装舱单明细调整需时"
+        },
+        "transPackListDetApplicationId": {
+            "meaning": "装舱单明细应用ID",
+            "reachable": false,
+            "name": "装舱单明细应用ID"
+        },
+        "transPackListDetAuditDate": {
+            "meaning": "装舱单明细审核时间",
+            "reachable": false,
+            "name": "装舱单明细审核时间"
+        },
+        "transPackListDetAuditStatus": {
+            "meaning": "装舱单明细审核状态",
+            "reachable": false,
+            "name": "装舱单明细审核状态"
+        },
+        "transPackListDetAvailableScheduleId": {
+            "meaning": "装舱单明细可用日程id",
+            "reachable": false,
+            "name": "装舱单明细可用日程id"
+        },
+        "transPackListDetBeginTime": {
+            "meaning": "装舱单明细开始时间",
+            "reachable": false,
+            "name": "装舱单明细开始时间"
+        },
+        "transPackListDetBizVersion": {
+            "meaning": "装舱单明细业务自定义版本号",
+            "reachable": false,
+            "name": "装舱单明细业务自定义版本号"
+        },
+        "transPackListDetBookingNumber": {
+            "meaning": "装舱单明细订舱号码",
+            "reachable": false,
+            "name": "装舱单明细订舱号码"
+        },
+        "transPackListDetBriefName": {
+            "meaning": "装舱单明细简称",
+            "reachable": false,
+            "name": "装舱单明细简称"
+        },
+        "transPackListDetBusDivisId": {
+            "meaning": "装舱单明细事业部id",
+            "reachable": false,
+            "name": "装舱单明细事业部id"
+        },
+        "transPackListDetCartonHeight": {
+            "meaning": "装舱单明细高(箱)mm",
+            "reachable": false,
+            "name": "装舱单明细高"
+        },
+        "transPackListDetCartonLength": {
+            "meaning": "装舱单明细长(箱)mm",
+            "reachable": false,
+            "name": "装舱单明细长"
+        },
+        "transPackListDetCartonMantissa": {
+            "meaning": "装舱单明细尾数(箱)",
+            "reachable": false,
+            "name": "装舱单明细尾数"
+        },
+        "transPackListDetCartonMark": {
+            "meaning": "装舱单明细箱唛",
+            "reachable": false,
+            "name": "装舱单明细箱唛"
+        },
+        "transPackListDetCartonWidth": {
+            "meaning": "装舱单明细宽(箱)mm",
+            "reachable": false,
+            "name": "装舱单明细宽"
+        },
+        "transPackListDetCartonsQuantity": {
+            "meaning": "装舱单明细箱数",
+            "reachable": false,
+            "name": "装舱单明细箱数"
+        },
+        "transPackListDetClazz": {
+            "meaning": "装舱单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "装舱单明细子类"
+        },
+        "transPackListDetClosedReason": {
+            "meaning": "装舱单明细结案原因",
+            "reachable": false,
+            "name": "装舱单明细结案原因"
+        },
+        "transPackListDetClosedStatus": {
+            "meaning": "装舱单明细结案状态",
+            "reachable": false,
+            "name": "装舱单明细结案状态"
+        },
+        "transPackListDetComment": {
+            "meaning": "装舱单明细评论",
+            "reachable": false,
+            "name": "装舱单明细评论"
+        },
+        "transPackListDetCompleteQuantity": {
+            "meaning": "装舱单明细完成数量",
+            "reachable": false,
+            "name": "装舱单明细完成数量"
+        },
+        "transPackListDetCompleteStatus": {
+            "meaning": "装舱单明细完成状态",
+            "reachable": false,
+            "name": "装舱单明细完成状态"
+        },
+        "transPackListDetContainerId": {
+            "meaning": "装舱单明细集装箱guid",
+            "reachable": false,
+            "name": "装舱单明细集装箱guid"
+        },
+        "transPackListDetContainerNumber": {
+            "meaning": "装舱单明细集装箱柜号",
+            "reachable": false,
+            "name": "装舱单明细集装箱柜号"
+        },
+        "transPackListDetCreateTime": {
+            "meaning": "装舱单明细创建时间",
+            "reachable": false,
+            "name": "装舱单明细创建时间"
+        },
+        "transPackListDetCreator": {
+            "meaning": "装舱单明细创建人",
+            "reachable": false,
+            "name": "装舱单明细创建人"
+        },
+        "transPackListDetCreatorId": {
+            "meaning": "装舱单明细创建人ID",
+            "reachable": false,
+            "name": "装舱单明细创建人ID"
+        },
+        "transPackListDetDateExtra1": {
+            "meaning": "装舱单明细扩展时间1",
+            "reachable": false,
+            "name": "装舱单明细扩展时间1"
+        },
+        "transPackListDetDateExtra2": {
+            "meaning": "装舱单明细扩展时间2",
+            "reachable": false,
+            "name": "装舱单明细扩展时间2"
+        },
+        "transPackListDetDateExtra3": {
+            "meaning": "装舱单明细扩展时间3",
+            "reachable": false,
+            "name": "装舱单明细扩展时间3"
+        },
+        "transPackListDetDateExtra4": {
+            "meaning": "装舱单明细扩展时间4",
+            "reachable": false,
+            "name": "装舱单明细扩展时间4"
+        },
+        "transPackListDetDateExtra5": {
+            "meaning": "装舱单明细扩展时间5",
+            "reachable": false,
+            "name": "装舱单明细扩展时间5"
+        },
+        "transPackListDetDefaultType": {
+            "meaning": "装舱单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "装舱单明细智能节点主类型"
+        },
+        "transPackListDetDeliveryDate": {
+            "meaning": "装舱单明细交货日期",
+            "reachable": false,
+            "name": "装舱单明细交货日期"
+        },
+        "transPackListDetDescription": {
+            "meaning": "装舱单明细描述",
+            "reachable": false,
+            "name": "装舱单明细描述"
+        },
+        "transPackListDetEndTime": {
+            "meaning": "装舱单明细结束时间",
+            "reachable": false,
+            "name": "装舱单明细结束时间"
+        },
+        "transPackListDetEndTimeRequired": {
+            "meaning": "装舱单明细最后需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细最后需时"
+        },
+        "transPackListDetEngName": {
+            "meaning": "装舱单明细英文名称",
+            "reachable": false,
+            "name": "装舱单明细英文名称"
+        },
+        "transPackListDetEquipmentId": {
+            "meaning": "装舱单明细设备id",
+            "reachable": false,
+            "name": "装舱单明细设备id"
+        },
+        "transPackListDetExchangeRateId": {
+            "meaning": "装舱单明细币种汇率id",
+            "reachable": false,
+            "name": "装舱单明细币种汇率id"
+        },
+        "transPackListDetExtension": {
+            "meaning": "装舱单明细扩展数据",
+            "reachable": false,
+            "name": "装舱单明细扩展数据"
+        },
+        "transPackListDetExternalState": {
+            "meaning": "装舱单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "装舱单明细上流程状态位"
+        },
+        "transPackListDetFilterClazz": {
+            "meaning": "装舱单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "装舱单明细冗余字段用于筛选"
+        },
+        "transPackListDetFlags": {
+            "meaning": "装舱单明细63位标志位",
+            "reachable": false,
+            "name": "装舱单明细63位标志位"
+        },
+        "transPackListDetFromAuditDate": {
+            "meaning": "transPackListDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromBeginTime": {
+            "meaning": "transPackListDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromCreateTime": {
+            "meaning": "transPackListDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDateExtra1": {
+            "meaning": "transPackListDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDateExtra2": {
+            "meaning": "transPackListDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDateExtra3": {
+            "meaning": "transPackListDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDateExtra4": {
+            "meaning": "transPackListDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDateExtra5": {
+            "meaning": "transPackListDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromDeliveryDate": {
+            "meaning": "transPackListDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromEndTime": {
+            "meaning": "transPackListDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromReceiptDate": {
+            "meaning": "transPackListDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFromUpdateTime": {
+            "meaning": "transPackListDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetFscType": {
+            "meaning": "装舱单明细FSC声明",
+            "reachable": false,
+            "name": "装舱单明细FSC声明"
+        },
+        "transPackListDetGenerativePeople": {
+            "meaning": "装舱单明细下发人",
+            "reachable": false,
+            "name": "装舱单明细下发人"
+        },
+        "transPackListDetGenerativeState": {
+            "meaning": "装舱单明细下发状态",
+            "reachable": false,
+            "name": "装舱单明细下发状态"
+        },
+        "transPackListDetGroovyScript": {
+            "meaning": "装舱单明细groovy脚本",
+            "reachable": false,
+            "name": "装舱单明细groovy脚本"
+        },
+        "transPackListDetGropeCode": {
+            "meaning": "装舱单明细搜索码",
+            "reachable": false,
+            "name": "装舱单明细搜索码"
+        },
+        "transPackListDetGrossWeight": {
+            "meaning": "装舱单明细毛重(kg)（皮重+净重）",
+            "reachable": false,
+            "name": "装舱单明细毛重"
+        },
+        "transPackListDetId": {
+            "meaning": "装舱单明细PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "装舱单明细PK"
+        },
+        "transPackListDetInUsed": {
+            "meaning": "装舱单明细是否被使用",
+            "reachable": false,
+            "name": "装舱单明细是否被使用"
+        },
+        "transPackListDetInvTypeTaxRateId": {
+            "meaning": "装舱单明细发票税率id",
+            "reachable": false,
+            "name": "装舱单明细发票税率id"
+        },
+        "transPackListDetIsBanned": {
+            "meaning": "装舱单明细是否被禁用",
+            "reachable": false,
+            "name": "装舱单明细是否被禁用"
+        },
+        "transPackListDetIsDeleted": {
+            "meaning": "装舱单明细是否被删除",
+            "reachable": false,
+            "name": "装舱单明细是否被删除"
+        },
+        "transPackListDetIsLeaf": {
+            "meaning": "装舱单明细是否叶子节点",
+            "reachable": false,
+            "name": "装舱单明细是否叶子节点"
+        },
+        "transPackListDetIsMainFlow": {
+            "meaning": "装舱单明细是否是主流程",
+            "reachable": false,
+            "name": "装舱单明细是否是主流程"
+        },
+        "transPackListDetIsManualModificationDate": {
+            "meaning": "装舱单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "装舱单明细是否手动修改计划生产时间"
+        },
+        "transPackListDetIsolation": {
+            "meaning": "装舱单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "装舱单明细智能节点数据隔离标识"
+        },
+        "transPackListDetJsScript": {
+            "meaning": "装舱单明细js脚本",
+            "reachable": false,
+            "name": "装舱单明细js脚本"
+        },
+        "transPackListDetLayerMantissa": {
+            "meaning": "装舱单明细尾数(层)",
+            "reachable": false,
+            "name": "装舱单明细尾数"
+        },
+        "transPackListDetLayersQuantity": {
+            "meaning": "装舱单明细层数",
+            "reachable": false,
+            "name": "装舱单明细层数"
+        },
+        "transPackListDetMaterialId": {
+            "meaning": "装舱单明细物料id",
+            "reachable": false,
+            "name": "装舱单明细物料id"
+        },
+        "transPackListDetName": {
+            "meaning": "装舱单明细智能节点名",
+            "reachable": false,
+            "name": "装舱单明细智能节点名"
+        },
+        "transPackListDetNameCodeSearch": {
+            "meaning": "装舱单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "装舱单明细name、user_code模糊搜索"
+        },
+        "transPackListDetNetWeight": {
+            "meaning": "装舱单明细净重(kg)（单个产品重量）",
+            "reachable": false,
+            "name": "装舱单明细净重"
+        },
+        "transPackListDetNumberExtra1": {
+            "meaning": "装舱单明细扩展数量1",
+            "reachable": false,
+            "name": "装舱单明细扩展数量1"
+        },
+        "transPackListDetNumberExtra2": {
+            "meaning": "装舱单明细扩展数量2",
+            "reachable": false,
+            "name": "装舱单明细扩展数量2"
+        },
+        "transPackListDetNumberExtra3": {
+            "meaning": "装舱单明细扩展数量3",
+            "reachable": false,
+            "name": "装舱单明细扩展数量3"
+        },
+        "transPackListDetNumberExtra4": {
+            "meaning": "装舱单明细扩展数量4",
+            "reachable": false,
+            "name": "装舱单明细扩展数量4"
+        },
+        "transPackListDetNumberExtra5": {
+            "meaning": "装舱单明细扩展数量5",
+            "reachable": false,
+            "name": "装舱单明细扩展数量5"
+        },
+        "transPackListDetOtherHeight": {
+            "meaning": "装舱单明细高(其他)mm如栈板上面再放一个模板，如果没有就为零",
+            "reachable": false,
+            "name": "装舱单明细高"
+        },
+        "transPackListDetPalletHeight": {
+            "meaning": "装舱单明细高(栈板)mm",
+            "reachable": false,
+            "name": "装舱单明细高"
+        },
+        "transPackListDetPalletLength": {
+            "meaning": "装舱单明细长(栈板)mm",
+            "reachable": false,
+            "name": "装舱单明细长"
+        },
+        "transPackListDetPalletWidth": {
+            "meaning": "装舱单明细宽(栈板)mm",
+            "reachable": false,
+            "name": "装舱单明细宽"
+        },
+        "transPackListDetParentId": {
+            "meaning": "装舱单明细父节点ID",
+            "reachable": false,
+            "name": "装舱单明细父节点ID"
+        },
+        "transPackListDetPlannedOutputQuantity": {
+            "meaning": "装舱单明细计划产出数量",
+            "reachable": false,
+            "name": "装舱单明细计划产出数量"
+        },
+        "transPackListDetPlannedTimeRequired": {
+            "meaning": "装舱单明细计划需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细计划需时"
+        },
+        "transPackListDetPrintTimes": {
+            "meaning": "装舱单明细打印次数",
+            "reachable": false,
+            "name": "装舱单明细打印次数"
+        },
+        "transPackListDetPriority": {
+            "meaning": "装舱单明细优先级",
+            "reachable": false,
+            "name": "装舱单明细优先级"
+        },
+        "transPackListDetProcessInstanceId": {
+            "meaning": "装舱单明细流程实例ID",
+            "reachable": false,
+            "name": "装舱单明细流程实例ID"
+        },
+        "transPackListDetProductionProcessesTypeId": {
+            "meaning": "装舱单明细工序类型ID",
+            "reachable": false,
+            "name": "装舱单明细工序类型ID"
+        },
+        "transPackListDetProductionShiftId": {
+            "meaning": "装舱单明细生产班次ID",
+            "reachable": false,
+            "name": "装舱单明细生产班次ID"
+        },
+        "transPackListDetQuantity": {
+            "meaning": "装舱单明细任务数量",
+            "reachable": false,
+            "name": "装舱单明细任务数量"
+        },
+        "transPackListDetQuantityPerCarton": {
+            "meaning": "装舱单明细每箱数量",
+            "reachable": false,
+            "name": "装舱单明细每箱数量"
+        },
+        "transPackListDetQuantityPerLayer": {
+            "meaning": "装舱单明细每层数量",
+            "reachable": false,
+            "name": "装舱单明细每层数量"
+        },
+        "transPackListDetReceiptDate": {
+            "meaning": "装舱单明细单据日期",
+            "reachable": false,
+            "name": "装舱单明细单据日期"
+        },
+        "transPackListDetReceiptType": {
+            "meaning": "装舱单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "装舱单明细单据类型"
+        },
+        "transPackListDetRelatedTasksId": {
+            "meaning": "装舱单明细关联任务id",
+            "reachable": false,
+            "name": "装舱单明细关联任务id"
+        },
+        "transPackListDetSealNumber": {
+            "meaning": "装舱单明细封条号码",
+            "reachable": false,
+            "name": "装舱单明细封条号码"
+        },
+        "transPackListDetSerialNumber": {
+            "meaning": "装舱单明细顺序号",
+            "reachable": false,
+            "name": "装舱单明细顺序号"
+        },
+        "transPackListDetSource": {
+            "meaning": "装舱单明细源",
+            "reachable": false,
+            "name": "装舱单明细源"
+        },
+        "transPackListDetSourceType": {
+            "meaning": "装舱单明细来源类型",
+            "reachable": false,
+            "name": "装舱单明细来源类型"
+        },
+        "transPackListDetState": {
+            "meaning": "装舱单明细通用状态",
+            "reachable": false,
+            "name": "装舱单明细通用状态"
+        },
+        "transPackListDetSystemCode": {
+            "meaning": "装舱单明细系统编码",
+            "reachable": false,
+            "name": "装舱单明细系统编码"
+        },
+        "transPackListDetTareWeight": {
+            "meaning": "装舱单明细皮重(kg) （单个外包装物重量）",
+            "reachable": false,
+            "name": "装舱单明细皮重"
+        },
+        "transPackListDetTarget": {
+            "meaning": "装舱单明细目标",
+            "reachable": false,
+            "name": "装舱单明细目标"
+        },
+        "transPackListDetTaskNodeName": {
+            "meaning": "装舱单明细任务节点名称",
+            "reachable": false,
+            "name": "装舱单明细任务节点名称"
+        },
+        "transPackListDetTenantId": {
+            "meaning": "装舱单明细租户ID",
+            "reachable": false,
+            "name": "装舱单明细租户ID"
+        },
+        "transPackListDetThirdPartyClass": {
+            "meaning": "装舱单明细第三方分类",
+            "reachable": false,
+            "name": "装舱单明细第三方分类"
+        },
+        "transPackListDetThirdPartyId": {
+            "meaning": "装舱单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "装舱单明细第三方系统中的唯一ID"
+        },
+        "transPackListDetThirdPartyName": {
+            "meaning": "装舱单明细第三方名称",
+            "reachable": false,
+            "name": "装舱单明细第三方名称"
+        },
+        "transPackListDetToAuditDate": {
+            "meaning": "transPackListDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToBeginTime": {
+            "meaning": "transPackListDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToCreateTime": {
+            "meaning": "transPackListDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDateExtra1": {
+            "meaning": "transPackListDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDateExtra2": {
+            "meaning": "transPackListDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDateExtra3": {
+            "meaning": "transPackListDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDateExtra4": {
+            "meaning": "transPackListDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDateExtra5": {
+            "meaning": "transPackListDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToDeliveryDate": {
+            "meaning": "transPackListDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToEndTime": {
+            "meaning": "transPackListDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToReceiptDate": {
+            "meaning": "transPackListDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetToUpdateTime": {
+            "meaning": "transPackListDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTotalGrossWeight": {
+            "meaning": "装舱单明细总净重(kg)",
+            "reachable": false,
+            "name": "装舱单明细总净重"
+        },
+        "transPackListDetTotalNetWeight": {
+            "meaning": "装舱单明细总毛重(kg)",
+            "reachable": false,
+            "name": "装舱单明细总毛重"
+        },
+        "transPackListDetTotalTareWeight": {
+            "meaning": "装舱单明细总皮重(kg)",
+            "reachable": false,
+            "name": "装舱单明细总皮重"
+        },
+        "transPackListDetTotalVolume": {
+            "meaning": "装舱单明细总体积(立方米)",
+            "reachable": false,
+            "name": "装舱单明细总体积"
+        },
+        "transPackListDetTransPackListActualTimeRequired": {
+            "meaning": "装舱单明细实际需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细实际需时"
+        },
+        "transPackListDetTransPackListAdjustmentTimeRequired": {
+            "meaning": "装舱单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "装舱单明细调整需时"
+        },
+        "transPackListDetTransPackListApplicationId": {
+            "meaning": "装舱单明细应用ID",
+            "reachable": false,
+            "name": "装舱单明细应用ID"
+        },
+        "transPackListDetTransPackListAuditDate": {
+            "meaning": "装舱单明细审核时间",
+            "reachable": false,
+            "name": "装舱单明细审核时间"
+        },
+        "transPackListDetTransPackListAuditStatus": {
+            "meaning": "装舱单明细审核状态",
+            "reachable": false,
+            "name": "装舱单明细审核状态"
+        },
+        "transPackListDetTransPackListAvailableScheduleId": {
+            "meaning": "装舱单明细可用日程id",
+            "reachable": false,
+            "name": "装舱单明细可用日程id"
+        },
+        "transPackListDetTransPackListBeginTime": {
+            "meaning": "装舱单明细开始时间",
+            "reachable": false,
+            "name": "装舱单明细开始时间"
+        },
+        "transPackListDetTransPackListBizVersion": {
+            "meaning": "装舱单明细业务自定义版本号",
+            "reachable": false,
+            "name": "装舱单明细业务自定义版本号"
+        },
+        "transPackListDetTransPackListBriefName": {
+            "meaning": "装舱单明细简称",
+            "reachable": false,
+            "name": "装舱单明细简称"
+        },
+        "transPackListDetTransPackListBusDivisId": {
+            "meaning": "装舱单明细事业部id",
+            "reachable": false,
+            "name": "装舱单明细事业部id"
+        },
+        "transPackListDetTransPackListClazz": {
+            "meaning": "装舱单明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "装舱单明细子类"
+        },
+        "transPackListDetTransPackListClosedReason": {
+            "meaning": "装舱单明细结案原因",
+            "reachable": false,
+            "name": "装舱单明细结案原因"
+        },
+        "transPackListDetTransPackListClosedStatus": {
+            "meaning": "装舱单明细结案状态",
+            "reachable": false,
+            "name": "装舱单明细结案状态"
+        },
+        "transPackListDetTransPackListComment": {
+            "meaning": "装舱单明细评论",
+            "reachable": false,
+            "name": "装舱单明细评论"
+        },
+        "transPackListDetTransPackListCompleteQuantity": {
+            "meaning": "装舱单明细完成数量",
+            "reachable": false,
+            "name": "装舱单明细完成数量"
+        },
+        "transPackListDetTransPackListCompleteStatus": {
+            "meaning": "装舱单明细完成状态",
+            "reachable": false,
+            "name": "装舱单明细完成状态"
+        },
+        "transPackListDetTransPackListCreateTime": {
+            "meaning": "装舱单明细创建时间",
+            "reachable": false,
+            "name": "装舱单明细创建时间"
+        },
+        "transPackListDetTransPackListCreator": {
+            "meaning": "装舱单明细创建人",
+            "reachable": false,
+            "name": "装舱单明细创建人"
+        },
+        "transPackListDetTransPackListCreatorId": {
+            "meaning": "装舱单明细创建人ID",
+            "reachable": false,
+            "name": "装舱单明细创建人ID"
+        },
+        "transPackListDetTransPackListCusId": {
+            "meaning": "装舱单明细客户_guid",
+            "reachable": false,
+            "name": "装舱单明细客户_guid"
+        },
+        "transPackListDetTransPackListDateExtra1": {
+            "meaning": "装舱单明细扩展时间1",
+            "reachable": false,
+            "name": "装舱单明细扩展时间1"
+        },
+        "transPackListDetTransPackListDateExtra2": {
+            "meaning": "装舱单明细扩展时间2",
+            "reachable": false,
+            "name": "装舱单明细扩展时间2"
+        },
+        "transPackListDetTransPackListDateExtra3": {
+            "meaning": "装舱单明细扩展时间3",
+            "reachable": false,
+            "name": "装舱单明细扩展时间3"
+        },
+        "transPackListDetTransPackListDateExtra4": {
+            "meaning": "装舱单明细扩展时间4",
+            "reachable": false,
+            "name": "装舱单明细扩展时间4"
+        },
+        "transPackListDetTransPackListDateExtra5": {
+            "meaning": "装舱单明细扩展时间5",
+            "reachable": false,
+            "name": "装舱单明细扩展时间5"
+        },
+        "transPackListDetTransPackListDefaultType": {
+            "meaning": "装舱单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "装舱单明细智能节点主类型"
+        },
+        "transPackListDetTransPackListDeliveryDate": {
+            "meaning": "装舱单明细交货日期",
+            "reachable": false,
+            "name": "装舱单明细交货日期"
+        },
+        "transPackListDetTransPackListDescription": {
+            "meaning": "装舱单明细描述",
+            "reachable": false,
+            "name": "装舱单明细描述"
+        },
+        "transPackListDetTransPackListEndTime": {
+            "meaning": "装舱单明细结束时间",
+            "reachable": false,
+            "name": "装舱单明细结束时间"
+        },
+        "transPackListDetTransPackListEndTimeRequired": {
+            "meaning": "装舱单明细最后需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细最后需时"
+        },
+        "transPackListDetTransPackListEngName": {
+            "meaning": "装舱单明细英文名称",
+            "reachable": false,
+            "name": "装舱单明细英文名称"
+        },
+        "transPackListDetTransPackListEquipmentId": {
+            "meaning": "装舱单明细设备id",
+            "reachable": false,
+            "name": "装舱单明细设备id"
+        },
+        "transPackListDetTransPackListExchangeRateId": {
+            "meaning": "装舱单明细币种汇率id",
+            "reachable": false,
+            "name": "装舱单明细币种汇率id"
+        },
+        "transPackListDetTransPackListExtension": {
+            "meaning": "装舱单明细扩展数据",
+            "reachable": false,
+            "name": "装舱单明细扩展数据"
+        },
+        "transPackListDetTransPackListExternalState": {
+            "meaning": "装舱单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "装舱单明细上流程状态位"
+        },
+        "transPackListDetTransPackListFilterClazz": {
+            "meaning": "装舱单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "装舱单明细冗余字段用于筛选"
+        },
+        "transPackListDetTransPackListFlags": {
+            "meaning": "装舱单明细63位标志位",
+            "reachable": false,
+            "name": "装舱单明细63位标志位"
+        },
+        "transPackListDetTransPackListFromAuditDate": {
+            "meaning": "transPackListDetTransPackListFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromBeginTime": {
+            "meaning": "transPackListDetTransPackListFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromCreateTime": {
+            "meaning": "transPackListDetTransPackListFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDateExtra1": {
+            "meaning": "transPackListDetTransPackListFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDateExtra2": {
+            "meaning": "transPackListDetTransPackListFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDateExtra3": {
+            "meaning": "transPackListDetTransPackListFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDateExtra4": {
+            "meaning": "transPackListDetTransPackListFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDateExtra5": {
+            "meaning": "transPackListDetTransPackListFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromDeliveryDate": {
+            "meaning": "transPackListDetTransPackListFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromEndTime": {
+            "meaning": "transPackListDetTransPackListFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromReceiptDate": {
+            "meaning": "transPackListDetTransPackListFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFromUpdateTime": {
+            "meaning": "transPackListDetTransPackListFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListFscType": {
+            "meaning": "装舱单明细FSC声明",
+            "reachable": false,
+            "name": "装舱单明细FSC声明"
+        },
+        "transPackListDetTransPackListGenerativePeople": {
+            "meaning": "装舱单明细下发人",
+            "reachable": false,
+            "name": "装舱单明细下发人"
+        },
+        "transPackListDetTransPackListGenerativeState": {
+            "meaning": "装舱单明细下发状态",
+            "reachable": false,
+            "name": "装舱单明细下发状态"
+        },
+        "transPackListDetTransPackListGroovyScript": {
+            "meaning": "装舱单明细groovy脚本",
+            "reachable": false,
+            "name": "装舱单明细groovy脚本"
+        },
+        "transPackListDetTransPackListGropeCode": {
+            "meaning": "装舱单明细搜索码",
+            "reachable": false,
+            "name": "装舱单明细搜索码"
+        },
+        "transPackListDetTransPackListId": {
+            "meaning": "装舱单明细PK",
+            "reachable": false,
+            "name": "装舱单明细PK"
+        },
+        "transPackListDetTransPackListInUsed": {
+            "meaning": "装舱单明细是否被使用",
+            "reachable": false,
+            "name": "装舱单明细是否被使用"
+        },
+        "transPackListDetTransPackListInvTypeTaxRateId": {
+            "meaning": "装舱单明细发票税率id",
+            "reachable": false,
+            "name": "装舱单明细发票税率id"
+        },
+        "transPackListDetTransPackListIsBanned": {
+            "meaning": "装舱单明细是否被禁用",
+            "reachable": false,
+            "name": "装舱单明细是否被禁用"
+        },
+        "transPackListDetTransPackListIsDeleted": {
+            "meaning": "装舱单明细是否被删除",
+            "reachable": false,
+            "name": "装舱单明细是否被删除"
+        },
+        "transPackListDetTransPackListIsLeaf": {
+            "meaning": "装舱单明细是否叶子节点",
+            "reachable": false,
+            "name": "装舱单明细是否叶子节点"
+        },
+        "transPackListDetTransPackListIsMainFlow": {
+            "meaning": "装舱单明细是否是主流程",
+            "reachable": false,
+            "name": "装舱单明细是否是主流程"
+        },
+        "transPackListDetTransPackListIsManualModificationDate": {
+            "meaning": "装舱单明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "装舱单明细是否手动修改计划生产时间"
+        },
+        "transPackListDetTransPackListIsolation": {
+            "meaning": "装舱单明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "装舱单明细智能节点数据隔离标识"
+        },
+        "transPackListDetTransPackListJsScript": {
+            "meaning": "装舱单明细js脚本",
+            "reachable": false,
+            "name": "装舱单明细js脚本"
+        },
+        "transPackListDetTransPackListMaterialId": {
+            "meaning": "装舱单明细物料id",
+            "reachable": false,
+            "name": "装舱单明细物料id"
+        },
+        "transPackListDetTransPackListName": {
+            "meaning": "装舱单明细智能节点名",
+            "reachable": false,
+            "name": "装舱单明细智能节点名"
+        },
+        "transPackListDetTransPackListNameCodeSearch": {
+            "meaning": "装舱单明细name、user_code模糊搜索",
+            "reachable": false,
+            "name": "装舱单明细name、user_code模糊搜索"
+        },
+        "transPackListDetTransPackListNumberExtra1": {
+            "meaning": "装舱单明细扩展数量1",
+            "reachable": false,
+            "name": "装舱单明细扩展数量1"
+        },
+        "transPackListDetTransPackListNumberExtra2": {
+            "meaning": "装舱单明细扩展数量2",
+            "reachable": false,
+            "name": "装舱单明细扩展数量2"
+        },
+        "transPackListDetTransPackListNumberExtra3": {
+            "meaning": "装舱单明细扩展数量3",
+            "reachable": false,
+            "name": "装舱单明细扩展数量3"
+        },
+        "transPackListDetTransPackListNumberExtra4": {
+            "meaning": "装舱单明细扩展数量4",
+            "reachable": false,
+            "name": "装舱单明细扩展数量4"
+        },
+        "transPackListDetTransPackListNumberExtra5": {
+            "meaning": "装舱单明细扩展数量5",
+            "reachable": false,
+            "name": "装舱单明细扩展数量5"
+        },
+        "transPackListDetTransPackListParentId": {
+            "meaning": "装舱单明细父节点ID",
+            "reachable": false,
+            "name": "装舱单明细父节点ID"
+        },
+        "transPackListDetTransPackListPlannedOutputQuantity": {
+            "meaning": "装舱单明细计划产出数量",
+            "reachable": false,
+            "name": "装舱单明细计划产出数量"
+        },
+        "transPackListDetTransPackListPlannedTimeRequired": {
+            "meaning": "装舱单明细计划需时(小时)",
+            "reachable": false,
+            "name": "装舱单明细计划需时"
+        },
+        "transPackListDetTransPackListPrintTimes": {
+            "meaning": "装舱单明细打印次数",
+            "reachable": false,
+            "name": "装舱单明细打印次数"
+        },
+        "transPackListDetTransPackListPriority": {
+            "meaning": "装舱单明细优先级",
+            "reachable": false,
+            "name": "装舱单明细优先级"
+        },
+        "transPackListDetTransPackListProcessInstanceId": {
+            "meaning": "装舱单明细流程实例ID",
+            "reachable": false,
+            "name": "装舱单明细流程实例ID"
+        },
+        "transPackListDetTransPackListProductionProcessesTypeId": {
+            "meaning": "装舱单明细工序类型ID",
+            "reachable": false,
+            "name": "装舱单明细工序类型ID"
+        },
+        "transPackListDetTransPackListProductionShiftId": {
+            "meaning": "装舱单明细生产班次ID",
+            "reachable": false,
+            "name": "装舱单明细生产班次ID"
+        },
+        "transPackListDetTransPackListQuantity": {
+            "meaning": "装舱单明细任务数量",
+            "reachable": false,
+            "name": "装舱单明细任务数量"
+        },
+        "transPackListDetTransPackListReceiptDate": {
+            "meaning": "装舱单明细单据日期",
+            "reachable": false,
+            "name": "装舱单明细单据日期"
+        },
+        "transPackListDetTransPackListReceiptType": {
+            "meaning": "装舱单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "装舱单明细单据类型"
+        },
+        "transPackListDetTransPackListRelatedTasksId": {
+            "meaning": "装舱单明细关联任务id",
+            "reachable": false,
+            "name": "装舱单明细关联任务id"
+        },
+        "transPackListDetTransPackListSerialNumber": {
+            "meaning": "装舱单明细顺序号",
+            "reachable": false,
+            "name": "装舱单明细顺序号"
+        },
+        "transPackListDetTransPackListSource": {
+            "meaning": "装舱单明细源",
+            "reachable": false,
+            "name": "装舱单明细源"
+        },
+        "transPackListDetTransPackListSourceType": {
+            "meaning": "装舱单明细来源类型",
+            "reachable": false,
+            "name": "装舱单明细来源类型"
+        },
+        "transPackListDetTransPackListState": {
+            "meaning": "装舱单明细通用状态",
+            "reachable": false,
+            "name": "装舱单明细通用状态"
+        },
+        "transPackListDetTransPackListSystemCode": {
+            "meaning": "装舱单明细系统编码",
+            "reachable": false,
+            "name": "装舱单明细系统编码"
+        },
+        "transPackListDetTransPackListTarget": {
+            "meaning": "装舱单明细目标",
+            "reachable": false,
+            "name": "装舱单明细目标"
+        },
+        "transPackListDetTransPackListTaskNodeName": {
+            "meaning": "装舱单明细任务节点名称",
+            "reachable": false,
+            "name": "装舱单明细任务节点名称"
+        },
+        "transPackListDetTransPackListTenantId": {
+            "meaning": "装舱单明细租户ID",
+            "reachable": false,
+            "name": "装舱单明细租户ID"
+        },
+        "transPackListDetTransPackListThirdPartyClass": {
+            "meaning": "装舱单明细第三方分类",
+            "reachable": false,
+            "name": "装舱单明细第三方分类"
+        },
+        "transPackListDetTransPackListThirdPartyId": {
+            "meaning": "装舱单明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "装舱单明细第三方系统中的唯一ID"
+        },
+        "transPackListDetTransPackListThirdPartyName": {
+            "meaning": "装舱单明细第三方名称",
+            "reachable": false,
+            "name": "装舱单明细第三方名称"
+        },
+        "transPackListDetTransPackListToAuditDate": {
+            "meaning": "transPackListDetTransPackListToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToBeginTime": {
+            "meaning": "transPackListDetTransPackListToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToCreateTime": {
+            "meaning": "transPackListDetTransPackListToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDateExtra1": {
+            "meaning": "transPackListDetTransPackListToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDateExtra2": {
+            "meaning": "transPackListDetTransPackListToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDateExtra3": {
+            "meaning": "transPackListDetTransPackListToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDateExtra4": {
+            "meaning": "transPackListDetTransPackListToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDateExtra5": {
+            "meaning": "transPackListDetTransPackListToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToDeliveryDate": {
+            "meaning": "transPackListDetTransPackListToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToEndTime": {
+            "meaning": "transPackListDetTransPackListToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToReceiptDate": {
+            "meaning": "transPackListDetTransPackListToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListToUpdateTime": {
+            "meaning": "transPackListDetTransPackListToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transPackListDetTransPackListUnitCode": {
+            "meaning": "装舱单明细单位id",
+            "reachable": false,
+            "name": "装舱单明细单位id"
+        },
+        "transPackListDetTransPackListUpdateTime": {
+            "meaning": "装舱单明细更新时间",
+            "reachable": false,
+            "name": "装舱单明细更新时间"
+        },
+        "transPackListDetTransPackListUpdater": {
+            "meaning": "装舱单明细更新人",
+            "reachable": false,
+            "name": "装舱单明细更新人"
+        },
+        "transPackListDetTransPackListUpdaterId": {
+            "meaning": "装舱单明细更新人ID",
+            "reachable": false,
+            "name": "装舱单明细更新人ID"
+        },
+        "transPackListDetTransPackListUserCode": {
+            "meaning": "装舱单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "装舱单明细智能节点的唯一编码"
+        },
+        "transPackListDetTransPackListVarExtra1": {
+            "meaning": "装舱单明细扩展1",
+            "reachable": false,
+            "name": "装舱单明细扩展1"
+        },
+        "transPackListDetTransPackListVarExtra2": {
+            "meaning": "装舱单明细扩展2",
+            "reachable": false,
+            "name": "装舱单明细扩展2"
+        },
+        "transPackListDetTransPackListVarExtra3": {
+            "meaning": "装舱单明细扩展3",
+            "reachable": false,
+            "name": "装舱单明细扩展3"
+        },
+        "transPackListDetTransPackListVarExtra4": {
+            "meaning": "装舱单明细扩展4",
+            "reachable": false,
+            "name": "装舱单明细扩展4"
+        },
+        "transPackListDetTransPackListVarExtra5": {
+            "meaning": "装舱单明细扩展5",
+            "reachable": false,
+            "name": "装舱单明细扩展5"
+        },
+        "transPackListDetTransPackListVersion": {
+            "meaning": "装舱单明细版本号",
+            "reachable": false,
+            "name": "装舱单明细版本号"
+        },
+        "transPackListDetUnitCode": {
+            "meaning": "装舱单明细单位id",
+            "reachable": false,
+            "name": "装舱单明细单位id"
+        },
+        "transPackListDetUpdateTime": {
+            "meaning": "装舱单明细更新时间",
+            "reachable": false,
+            "name": "装舱单明细更新时间"
+        },
+        "transPackListDetUpdater": {
+            "meaning": "装舱单明细更新人",
+            "reachable": false,
+            "name": "装舱单明细更新人"
+        },
+        "transPackListDetUpdaterId": {
+            "meaning": "装舱单明细更新人ID",
+            "reachable": false,
+            "name": "装舱单明细更新人ID"
+        },
+        "transPackListDetUserCode": {
+            "meaning": "装舱单明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "装舱单明细智能节点的唯一编码"
+        },
+        "transPackListDetVarExtra1": {
+            "meaning": "装舱单明细扩展1",
+            "reachable": false,
+            "name": "装舱单明细扩展1"
+        },
+        "transPackListDetVarExtra2": {
+            "meaning": "装舱单明细扩展2",
+            "reachable": false,
+            "name": "装舱单明细扩展2"
+        },
+        "transPackListDetVarExtra3": {
+            "meaning": "装舱单明细扩展3",
+            "reachable": false,
+            "name": "装舱单明细扩展3"
+        },
+        "transPackListDetVarExtra4": {
+            "meaning": "装舱单明细扩展4",
+            "reachable": false,
+            "name": "装舱单明细扩展4"
+        },
+        "transPackListDetVarExtra5": {
+            "meaning": "装舱单明细扩展5",
+            "reachable": false,
+            "name": "装舱单明细扩展5"
+        },
+        "transPackListDetVersion": {
+            "meaning": "装舱单明细版本号",
+            "reachable": false,
+            "name": "装舱单明细版本号"
+        },
+        "transPackListDetWeighingWeight": {
+            "meaning": "装舱单明细过磅重量(kg)",
+            "reachable": false,
+            "name": "装舱单明细过磅重量"
+        }
+    }
+}

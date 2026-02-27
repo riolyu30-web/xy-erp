@@ -1,0 +1,621 @@
+{
+    "api_name": "/sup-outstorage/findList",
+    "table_name": "辅料出库表",
+    "request": {
+        "supOutstorageClazz": "SUP_OUTSTORAGE"
+    },
+    "mainTabClazz": "SUP_OUTSTORAGE",
+    "response": {
+        "supOutstorageActualTimeRequired": {
+            "meaning": "辅料出库表实际需时(小时)",
+            "reachable": false,
+            "name": "辅料出库表实际需时"
+        },
+        "supOutstorageAdjustmentTimeRequired": {
+            "meaning": "辅料出库表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "辅料出库表调整需时"
+        },
+        "supOutstorageApplicationId": {
+            "meaning": "辅料出库表应用ID",
+            "reachable": false,
+            "name": "辅料出库表应用ID"
+        },
+        "supOutstorageAuditDate": {
+            "meaning": "辅料出库表审核时间",
+            "reachable": false,
+            "name": "辅料出库表审核时间"
+        },
+        "supOutstorageAuditStatus": {
+            "meaning": "辅料出库表审核状态",
+            "reachable": false,
+            "name": "辅料出库表审核状态"
+        },
+        "supOutstorageAvailableScheduleId": {
+            "meaning": "辅料出库表可用日程id",
+            "reachable": false,
+            "name": "辅料出库表可用日程id"
+        },
+        "supOutstorageBeginTime": {
+            "meaning": "辅料出库表开始时间",
+            "reachable": false,
+            "name": "辅料出库表开始时间"
+        },
+        "supOutstorageBizVersion": {
+            "meaning": "辅料出库表业务自定义版本号",
+            "reachable": false,
+            "name": "辅料出库表业务自定义版本号"
+        },
+        "supOutstorageBriefName": {
+            "meaning": "辅料出库表简称",
+            "reachable": false,
+            "name": "辅料出库表简称"
+        },
+        "supOutstorageBusDivisId": {
+            "meaning": "辅料出库表事业部id",
+            "reachable": false,
+            "name": "辅料出库表事业部id"
+        },
+        "supOutstorageClazz": {
+            "meaning": "辅料出库表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "辅料出库表子类"
+        },
+        "supOutstorageClosedReason": {
+            "meaning": "辅料出库表结案原因",
+            "reachable": false,
+            "name": "辅料出库表结案原因"
+        },
+        "supOutstorageClosedStatus": {
+            "meaning": "辅料出库表结案状态",
+            "reachable": false,
+            "name": "辅料出库表结案状态"
+        },
+        "supOutstorageComment": {
+            "meaning": "辅料出库表评论",
+            "reachable": false,
+            "name": "辅料出库表评论"
+        },
+        "supOutstorageCompleteQuantity": {
+            "meaning": "辅料出库表完成数量",
+            "reachable": false,
+            "name": "辅料出库表完成数量"
+        },
+        "supOutstorageCompleteStatus": {
+            "meaning": "辅料出库表完成状态",
+            "reachable": false,
+            "name": "辅料出库表完成状态"
+        },
+        "supOutstorageCreateTime": {
+            "meaning": "辅料出库表创建时间",
+            "reachable": false,
+            "name": "辅料出库表创建时间"
+        },
+        "supOutstorageCreator": {
+            "meaning": "辅料出库表创建人",
+            "reachable": false,
+            "name": "辅料出库表创建人"
+        },
+        "supOutstorageCreatorId": {
+            "meaning": "辅料出库表创建人ID",
+            "reachable": false,
+            "name": "辅料出库表创建人ID"
+        },
+        "supOutstorageDateExtra1": {
+            "meaning": "辅料出库表扩展时间1",
+            "reachable": false,
+            "name": "辅料出库表扩展时间1"
+        },
+        "supOutstorageDateExtra2": {
+            "meaning": "辅料出库表扩展时间2",
+            "reachable": false,
+            "name": "辅料出库表扩展时间2"
+        },
+        "supOutstorageDateExtra3": {
+            "meaning": "辅料出库表扩展时间3",
+            "reachable": false,
+            "name": "辅料出库表扩展时间3"
+        },
+        "supOutstorageDateExtra4": {
+            "meaning": "辅料出库表扩展时间4",
+            "reachable": false,
+            "name": "辅料出库表扩展时间4"
+        },
+        "supOutstorageDateExtra5": {
+            "meaning": "辅料出库表扩展时间5",
+            "reachable": false,
+            "name": "辅料出库表扩展时间5"
+        },
+        "supOutstorageDefaultType": {
+            "meaning": "辅料出库表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "辅料出库表智能节点主类型"
+        },
+        "supOutstorageDeliveryDate": {
+            "meaning": "辅料出库表交货日期",
+            "reachable": false,
+            "name": "辅料出库表交货日期"
+        },
+        "supOutstorageDepId": {
+            "meaning": "辅料出库表部门id",
+            "reachable": false,
+            "name": "辅料出库表部门id"
+        },
+        "supOutstorageDescription": {
+            "meaning": "辅料出库表描述",
+            "reachable": false,
+            "name": "辅料出库表描述"
+        },
+        "supOutstorageEndTime": {
+            "meaning": "辅料出库表结束时间",
+            "reachable": false,
+            "name": "辅料出库表结束时间"
+        },
+        "supOutstorageEndTimeRequired": {
+            "meaning": "辅料出库表最后需时(小时)",
+            "reachable": false,
+            "name": "辅料出库表最后需时"
+        },
+        "supOutstorageEngName": {
+            "meaning": "辅料出库表英文名称",
+            "reachable": false,
+            "name": "辅料出库表英文名称"
+        },
+        "supOutstorageEquipmentId": {
+            "meaning": "辅料出库表设备id",
+            "reachable": false,
+            "name": "辅料出库表设备id"
+        },
+        "supOutstorageExchangeRateId": {
+            "meaning": "辅料出库表币种汇率id",
+            "reachable": false,
+            "name": "辅料出库表币种汇率id"
+        },
+        "supOutstorageExtension": {
+            "meaning": "辅料出库表扩展数据",
+            "reachable": false,
+            "name": "辅料出库表扩展数据"
+        },
+        "supOutstorageExternalState": {
+            "meaning": "辅料出库表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "辅料出库表上流程状态位"
+        },
+        "supOutstorageFilterClazz": {
+            "meaning": "辅料出库表冗余字段用于筛选",
+            "reachable": false,
+            "name": "辅料出库表冗余字段用于筛选"
+        },
+        "supOutstorageFlags": {
+            "meaning": "辅料出库表63位标志位",
+            "reachable": false,
+            "name": "辅料出库表63位标志位"
+        },
+        "supOutstorageFromAuditDate": {
+            "meaning": "supOutstorageFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromBeginTime": {
+            "meaning": "supOutstorageFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromCreateTime": {
+            "meaning": "supOutstorageFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDateExtra1": {
+            "meaning": "supOutstorageFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDateExtra2": {
+            "meaning": "supOutstorageFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDateExtra3": {
+            "meaning": "supOutstorageFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDateExtra4": {
+            "meaning": "supOutstorageFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDateExtra5": {
+            "meaning": "supOutstorageFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromDeliveryDate": {
+            "meaning": "supOutstorageFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromEndTime": {
+            "meaning": "supOutstorageFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromReceiptDate": {
+            "meaning": "supOutstorageFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFromUpdateTime": {
+            "meaning": "supOutstorageFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageFscType": {
+            "meaning": "辅料出库表FSC声明",
+            "reachable": false,
+            "name": "辅料出库表FSC声明"
+        },
+        "supOutstorageGenerativePeople": {
+            "meaning": "辅料出库表下发人",
+            "reachable": false,
+            "name": "辅料出库表下发人"
+        },
+        "supOutstorageGenerativeState": {
+            "meaning": "辅料出库表下发状态",
+            "reachable": false,
+            "name": "辅料出库表下发状态"
+        },
+        "supOutstorageGroovyScript": {
+            "meaning": "辅料出库表groovy脚本",
+            "reachable": false,
+            "name": "辅料出库表groovy脚本"
+        },
+        "supOutstorageGropeCode": {
+            "meaning": "辅料出库表搜索码",
+            "reachable": false,
+            "name": "辅料出库表搜索码"
+        },
+        "supOutstorageId": {
+            "meaning": "辅料出库表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "辅料出库表PK"
+        },
+        "supOutstorageInUsed": {
+            "meaning": "辅料出库表是否被使用",
+            "reachable": false,
+            "name": "辅料出库表是否被使用"
+        },
+        "supOutstorageInvTypeTaxRateId": {
+            "meaning": "辅料出库表发票税率id",
+            "reachable": false,
+            "name": "辅料出库表发票税率id"
+        },
+        "supOutstorageIsBanned": {
+            "meaning": "辅料出库表是否被禁用",
+            "reachable": false,
+            "name": "辅料出库表是否被禁用"
+        },
+        "supOutstorageIsDeleted": {
+            "meaning": "辅料出库表是否被删除",
+            "reachable": false,
+            "name": "辅料出库表是否被删除"
+        },
+        "supOutstorageIsLeaf": {
+            "meaning": "辅料出库表是否叶子节点",
+            "reachable": false,
+            "name": "辅料出库表是否叶子节点"
+        },
+        "supOutstorageIsMainFlow": {
+            "meaning": "辅料出库表是否是主流程",
+            "reachable": false,
+            "name": "辅料出库表是否是主流程"
+        },
+        "supOutstorageIsManualModificationDate": {
+            "meaning": "辅料出库表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "辅料出库表是否手动修改计划生产时间"
+        },
+        "supOutstorageIsolation": {
+            "meaning": "辅料出库表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "辅料出库表智能节点数据隔离标识"
+        },
+        "supOutstorageJsScript": {
+            "meaning": "辅料出库表js脚本",
+            "reachable": false,
+            "name": "辅料出库表js脚本"
+        },
+        "supOutstorageMaterialId": {
+            "meaning": "辅料出库表物料id",
+            "reachable": false,
+            "name": "辅料出库表物料id"
+        },
+        "supOutstorageName": {
+            "meaning": "辅料出库表智能节点名",
+            "reachable": false,
+            "name": "辅料出库表智能节点名"
+        },
+        "supOutstorageNameCodeSearch": {
+            "meaning": "辅料出库表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "辅料出库表name、user_code模糊搜索"
+        },
+        "supOutstorageNumberExtra1": {
+            "meaning": "辅料出库表扩展数量1",
+            "reachable": false,
+            "name": "辅料出库表扩展数量1"
+        },
+        "supOutstorageNumberExtra2": {
+            "meaning": "辅料出库表扩展数量2",
+            "reachable": false,
+            "name": "辅料出库表扩展数量2"
+        },
+        "supOutstorageNumberExtra3": {
+            "meaning": "辅料出库表扩展数量3",
+            "reachable": false,
+            "name": "辅料出库表扩展数量3"
+        },
+        "supOutstorageNumberExtra4": {
+            "meaning": "辅料出库表扩展数量4",
+            "reachable": false,
+            "name": "辅料出库表扩展数量4"
+        },
+        "supOutstorageNumberExtra5": {
+            "meaning": "辅料出库表扩展数量5",
+            "reachable": false,
+            "name": "辅料出库表扩展数量5"
+        },
+        "supOutstorageOrgId": {
+            "meaning": "辅料出库表机构id(客户/供应商)",
+            "reachable": false,
+            "name": "辅料出库表机构id"
+        },
+        "supOutstorageParentId": {
+            "meaning": "辅料出库表父节点ID",
+            "reachable": false,
+            "name": "辅料出库表父节点ID"
+        },
+        "supOutstoragePlannedOutputQuantity": {
+            "meaning": "辅料出库表计划产出数量",
+            "reachable": false,
+            "name": "辅料出库表计划产出数量"
+        },
+        "supOutstoragePlannedTimeRequired": {
+            "meaning": "辅料出库表计划需时(小时)",
+            "reachable": false,
+            "name": "辅料出库表计划需时"
+        },
+        "supOutstoragePrintTimes": {
+            "meaning": "辅料出库表打印次数",
+            "reachable": false,
+            "name": "辅料出库表打印次数"
+        },
+        "supOutstoragePriority": {
+            "meaning": "辅料出库表优先级",
+            "reachable": false,
+            "name": "辅料出库表优先级"
+        },
+        "supOutstorageProcessInstanceId": {
+            "meaning": "辅料出库表流程实例ID",
+            "reachable": false,
+            "name": "辅料出库表流程实例ID"
+        },
+        "supOutstorageProductionProcessesTypeId": {
+            "meaning": "辅料出库表工序类型ID",
+            "reachable": false,
+            "name": "辅料出库表工序类型ID"
+        },
+        "supOutstorageProductionShiftId": {
+            "meaning": "辅料出库表生产班次ID",
+            "reachable": false,
+            "name": "辅料出库表生产班次ID"
+        },
+        "supOutstorageQuantity": {
+            "meaning": "辅料出库表任务数量",
+            "reachable": false,
+            "name": "辅料出库表任务数量"
+        },
+        "supOutstorageReceiptDate": {
+            "meaning": "辅料出库表单据日期",
+            "reachable": false,
+            "name": "辅料出库表单据日期"
+        },
+        "supOutstorageReceiptType": {
+            "meaning": "辅料出库表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "辅料出库表单据类型"
+        },
+        "supOutstorageRelatedTasksId": {
+            "meaning": "辅料出库表关联任务id",
+            "reachable": false,
+            "name": "辅料出库表关联任务id"
+        },
+        "supOutstorageSerialNumber": {
+            "meaning": "辅料出库表顺序号",
+            "reachable": false,
+            "name": "辅料出库表顺序号"
+        },
+        "supOutstorageSettMethod": {
+            "meaning": "辅料出库表结算方式",
+            "reachable": false,
+            "name": "辅料出库表结算方式"
+        },
+        "supOutstorageSettOrgId": {
+            "meaning": "辅料出库表结算机构id(客户/供应商)",
+            "reachable": false,
+            "name": "辅料出库表结算机构id"
+        },
+        "supOutstorageSource": {
+            "meaning": "辅料出库表源",
+            "reachable": false,
+            "name": "辅料出库表源"
+        },
+        "supOutstorageSourceType": {
+            "meaning": "辅料出库表来源类型",
+            "reachable": false,
+            "name": "辅料出库表来源类型"
+        },
+        "supOutstorageStaffId": {
+            "meaning": "辅料出库表员工id(入/出库员工)",
+            "reachable": false,
+            "name": "辅料出库表员工id"
+        },
+        "supOutstorageState": {
+            "meaning": "辅料出库表通用状态",
+            "reachable": false,
+            "name": "辅料出库表通用状态"
+        },
+        "supOutstorageSystemCode": {
+            "meaning": "辅料出库表系统编码",
+            "reachable": false,
+            "name": "辅料出库表系统编码"
+        },
+        "supOutstorageTarget": {
+            "meaning": "辅料出库表目标",
+            "reachable": false,
+            "name": "辅料出库表目标"
+        },
+        "supOutstorageTaskNodeName": {
+            "meaning": "辅料出库表任务节点名称",
+            "reachable": false,
+            "name": "辅料出库表任务节点名称"
+        },
+        "supOutstorageTenantId": {
+            "meaning": "辅料出库表租户id",
+            "reachable": false,
+            "name": "辅料出库表租户id"
+        },
+        "supOutstorageThirdPartyClass": {
+            "meaning": "辅料出库表第三方分类",
+            "reachable": false,
+            "name": "辅料出库表第三方分类"
+        },
+        "supOutstorageThirdPartyId": {
+            "meaning": "辅料出库表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "辅料出库表第三方系统中的唯一ID"
+        },
+        "supOutstorageThirdPartyName": {
+            "meaning": "辅料出库表第三方名称",
+            "reachable": false,
+            "name": "辅料出库表第三方名称"
+        },
+        "supOutstorageToAuditDate": {
+            "meaning": "supOutstorageToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToBeginTime": {
+            "meaning": "supOutstorageToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToCreateTime": {
+            "meaning": "supOutstorageToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDateExtra1": {
+            "meaning": "supOutstorageToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDateExtra2": {
+            "meaning": "supOutstorageToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDateExtra3": {
+            "meaning": "supOutstorageToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDateExtra4": {
+            "meaning": "supOutstorageToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDateExtra5": {
+            "meaning": "supOutstorageToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToDeliveryDate": {
+            "meaning": "supOutstorageToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToEndTime": {
+            "meaning": "supOutstorageToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToReceiptDate": {
+            "meaning": "supOutstorageToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageToUpdateTime": {
+            "meaning": "supOutstorageToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supOutstorageUnitCode": {
+            "meaning": "辅料出库表单位id",
+            "reachable": false,
+            "name": "辅料出库表单位id"
+        },
+        "supOutstorageUpdateTime": {
+            "meaning": "辅料出库表更新时间",
+            "reachable": false,
+            "name": "辅料出库表更新时间"
+        },
+        "supOutstorageUpdater": {
+            "meaning": "辅料出库表更新人",
+            "reachable": false,
+            "name": "辅料出库表更新人"
+        },
+        "supOutstorageUpdaterId": {
+            "meaning": "辅料出库表更新人ID",
+            "reachable": false,
+            "name": "辅料出库表更新人ID"
+        },
+        "supOutstorageUserCode": {
+            "meaning": "辅料出库表智能节点的唯一编码",
+            "reachable": false,
+            "name": "辅料出库表智能节点的唯一编码"
+        },
+        "supOutstorageVarExtra1": {
+            "meaning": "辅料出库表扩展1",
+            "reachable": false,
+            "name": "辅料出库表扩展1"
+        },
+        "supOutstorageVarExtra2": {
+            "meaning": "辅料出库表扩展2",
+            "reachable": false,
+            "name": "辅料出库表扩展2"
+        },
+        "supOutstorageVarExtra3": {
+            "meaning": "辅料出库表扩展3",
+            "reachable": false,
+            "name": "辅料出库表扩展3"
+        },
+        "supOutstorageVarExtra4": {
+            "meaning": "辅料出库表扩展4",
+            "reachable": false,
+            "name": "辅料出库表扩展4"
+        },
+        "supOutstorageVarExtra5": {
+            "meaning": "辅料出库表扩展5",
+            "reachable": false,
+            "name": "辅料出库表扩展5"
+        },
+        "supOutstorageVersion": {
+            "meaning": "辅料出库表版本号",
+            "reachable": false,
+            "name": "辅料出库表版本号"
+        }
+    }
+}

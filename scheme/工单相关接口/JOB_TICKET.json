@@ -1,0 +1,816 @@
+{
+    "api_name": "/job-ticket/findList",
+    "table_name": "作业单",
+    "request": {
+        "jobTicketClazz": "JOB_TICKET"
+    },
+    "mainTabClazz": "JOB_TICKET",
+    "response": {
+        "jobTicketActOutQty": {
+            "meaning": "作业单实际产出数量",
+            "reachable": true,
+            "name": "作业单实际产出数量"
+        },
+        "jobTicketActualTimeRequired": {
+            "meaning": "作业单实际需时(小时)",
+            "reachable": true,
+            "name": "作业单实际需时"
+        },
+        "jobTicketAdjMachTime": {
+            "meaning": "作业单调机时长",
+            "reachable": true,
+            "name": "作业单调机时长"
+        },
+        "jobTicketAdjustmentTimeRequired": {
+            "meaning": "作业单调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "作业单调整需时"
+        },
+        "jobTicketApplicationId": {
+            "meaning": "作业单应用ID",
+            "reachable": true,
+            "name": "作业单应用ID"
+        },
+        "jobTicketAuditDate": {
+            "meaning": "作业单审核时间",
+            "reachable": true,
+            "name": "作业单审核时间"
+        },
+        "jobTicketAuditStatus": {
+            "meaning": "作业单审核状态",
+            "reachable": true,
+            "name": "作业单审核状态"
+        },
+        "jobTicketAutoCost": {
+            "meaning": "作业单数采成本",
+            "reachable": true,
+            "name": "作业单数采成本"
+        },
+        "jobTicketAutoQty": {
+            "meaning": "作业单数采数量",
+            "reachable": true,
+            "name": "作业单数采数量"
+        },
+        "jobTicketAvailableScheduleId": {
+            "meaning": "作业单可用日程id",
+            "reachable": true,
+            "name": "作业单可用日程id"
+        },
+        "jobTicketBackPressureQty": {
+            "meaning": "作业单反压数量",
+            "reachable": true,
+            "name": "作业单反压数量"
+        },
+        "jobTicketBadQty": {
+            "meaning": "作业单不良品数量",
+            "reachable": true,
+            "name": "作业单不良品数量"
+        },
+        "jobTicketBadQuantity": {
+            "meaning": "作业单加工不良品数",
+            "reachable": true,
+            "name": "作业单加工不良品数"
+        },
+        "jobTicketBeginTime": {
+            "meaning": "作业单开始时间",
+            "reachable": true,
+            "name": "作业单开始时间"
+        },
+        "jobTicketBizVersion": {
+            "meaning": "作业单业务自定义版本号",
+            "reachable": true,
+            "name": "作业单业务自定义版本号"
+        },
+        "jobTicketBoardPriceAdjustPaper": {
+            "meaning": "作业单纸板调价纸",
+            "reachable": true,
+            "name": "作业单纸板调价纸"
+        },
+        "jobTicketBriefName": {
+            "meaning": "作业单简称",
+            "reachable": true,
+            "name": "作业单简称"
+        },
+        "jobTicketBusDivisId": {
+            "meaning": "作业单事业部id",
+            "reachable": true,
+            "name": "作业单事业部id"
+        },
+        "jobTicketCalPlateTime": {
+            "meaning": "作业单校版时长",
+            "reachable": true,
+            "name": "作业单校版时长"
+        },
+        "jobTicketClazz": {
+            "meaning": "作业单子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "作业单子类"
+        },
+        "jobTicketClosedReason": {
+            "meaning": "作业单结案原因",
+            "reachable": true,
+            "name": "作业单结案原因"
+        },
+        "jobTicketClosedStatus": {
+            "meaning": "作业单结案状态",
+            "reachable": true,
+            "name": "作业单结案状态"
+        },
+        "jobTicketColorDiff": {
+            "meaning": "作业单色差",
+            "reachable": true,
+            "name": "作业单色差"
+        },
+        "jobTicketComment": {
+            "meaning": "作业单评论",
+            "reachable": true,
+            "name": "作业单评论"
+        },
+        "jobTicketCompleteQuantity": {
+            "meaning": "作业单完成数量",
+            "reachable": true,
+            "name": "作业单完成数量"
+        },
+        "jobTicketCompleteStatus": {
+            "meaning": "作业单完成状态",
+            "reachable": true,
+            "name": "作业单完成状态"
+        },
+        "jobTicketCompletedQty": {
+            "meaning": "作业单结束时数量",
+            "reachable": true,
+            "name": "作业单结束时数量"
+        },
+        "jobTicketCostUnitPrice": {
+            "meaning": "作业单成本单价",
+            "reachable": true,
+            "name": "作业单成本单价"
+        },
+        "jobTicketCreases": {
+            "meaning": "作业单折痕",
+            "reachable": true,
+            "name": "作业单折痕"
+        },
+        "jobTicketCreateTime": {
+            "meaning": "作业单创建时间",
+            "reachable": true,
+            "name": "作业单创建时间"
+        },
+        "jobTicketCreator": {
+            "meaning": "作业单创建人",
+            "reachable": true,
+            "name": "作业单创建人"
+        },
+        "jobTicketCreatorId": {
+            "meaning": "作业单创建人ID",
+            "reachable": true,
+            "name": "作业单创建人ID"
+        },
+        "jobTicketCurrOddQty": {
+            "meaning": "作业单本次尾数",
+            "reachable": true,
+            "name": "作业单本次尾数"
+        },
+        "jobTicketCustOddQtyOne": {
+            "meaning": "作业单客户尾数1",
+            "reachable": true,
+            "name": "作业单客户尾数1"
+        },
+        "jobTicketCustOddQtyThree": {
+            "meaning": "作业单客户尾数3",
+            "reachable": true,
+            "name": "作业单客户尾数3"
+        },
+        "jobTicketCustOddQtyTwo": {
+            "meaning": "作业单客户尾数2",
+            "reachable": true,
+            "name": "作业单客户尾数2"
+        },
+        "jobTicketDateExtra1": {
+            "meaning": "作业单扩展时间1",
+            "reachable": true,
+            "name": "作业单扩展时间1"
+        },
+        "jobTicketDateExtra2": {
+            "meaning": "作业单扩展时间2",
+            "reachable": true,
+            "name": "作业单扩展时间2"
+        },
+        "jobTicketDateExtra3": {
+            "meaning": "作业单扩展时间3",
+            "reachable": true,
+            "name": "作业单扩展时间3"
+        },
+        "jobTicketDateExtra4": {
+            "meaning": "作业单扩展时间4",
+            "reachable": true,
+            "name": "作业单扩展时间4"
+        },
+        "jobTicketDateExtra5": {
+            "meaning": "作业单扩展时间5",
+            "reachable": true,
+            "name": "作业单扩展时间5"
+        },
+        "jobTicketDefaultType": {
+            "meaning": "作业单智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "作业单智能节点主类型"
+        },
+        "jobTicketDeliveryDate": {
+            "meaning": "作业单交货日期",
+            "reachable": true,
+            "name": "作业单交货日期"
+        },
+        "jobTicketDescription": {
+            "meaning": "作业单描述",
+            "reachable": true,
+            "name": "作业单描述"
+        },
+        "jobTicketDetailOp": {
+            "meaning": "作业单详细事件字典值",
+            "reachable": true,
+            "name": "作业单详细事件字典值"
+        },
+        "jobTicketEndTime": {
+            "meaning": "作业单结束时间",
+            "reachable": true,
+            "name": "作业单结束时间"
+        },
+        "jobTicketEndTimeRequired": {
+            "meaning": "作业单最后需时(小时)",
+            "reachable": true,
+            "name": "作业单最后需时"
+        },
+        "jobTicketEngName": {
+            "meaning": "作业单英文名称",
+            "reachable": true,
+            "name": "作业单英文名称"
+        },
+        "jobTicketEquipmentId": {
+            "meaning": "作业单设备id",
+            "reachable": true,
+            "name": "作业单设备id"
+        },
+        "jobTicketExchangeRateId": {
+            "meaning": "作业单币种汇率id",
+            "reachable": true,
+            "name": "作业单币种汇率id"
+        },
+        "jobTicketExtension": {
+            "meaning": "作业单扩展数据",
+            "reachable": true,
+            "name": "作业单扩展数据"
+        },
+        "jobTicketExternalState": {
+            "meaning": "作业单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "作业单上流程状态位"
+        },
+        "jobTicketFilterClazz": {
+            "meaning": "作业单冗余字段用于筛选",
+            "reachable": false,
+            "name": "作业单冗余字段用于筛选"
+        },
+        "jobTicketFlags": {
+            "meaning": "作业单63位标志位",
+            "reachable": true,
+            "name": "作业单63位标志位"
+        },
+        "jobTicketFromAuditDate": {
+            "meaning": "jobTicketFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromBeginTime": {
+            "meaning": "jobTicketFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromCreateTime": {
+            "meaning": "jobTicketFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDateExtra1": {
+            "meaning": "jobTicketFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDateExtra2": {
+            "meaning": "jobTicketFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDateExtra3": {
+            "meaning": "jobTicketFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDateExtra4": {
+            "meaning": "jobTicketFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDateExtra5": {
+            "meaning": "jobTicketFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromDeliveryDate": {
+            "meaning": "jobTicketFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromEndTime": {
+            "meaning": "jobTicketFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromReceiptDate": {
+            "meaning": "jobTicketFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFromUpdateTime": {
+            "meaning": "jobTicketFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketFscType": {
+            "meaning": "作业单FSC声明",
+            "reachable": true,
+            "name": "作业单FSC声明"
+        },
+        "jobTicketGenerativePeople": {
+            "meaning": "作业单下发人",
+            "reachable": true,
+            "name": "作业单下发人"
+        },
+        "jobTicketGenerativeState": {
+            "meaning": "作业单下发状态",
+            "reachable": true,
+            "name": "作业单下发状态"
+        },
+        "jobTicketGroovyScript": {
+            "meaning": "作业单groovy脚本",
+            "reachable": true,
+            "name": "作业单groovy脚本"
+        },
+        "jobTicketGropeCode": {
+            "meaning": "作业单搜索码",
+            "reachable": true,
+            "name": "作业单搜索码"
+        },
+        "jobTicketId": {
+            "meaning": "作业单PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "作业单PK"
+        },
+        "jobTicketInUsed": {
+            "meaning": "作业单是否被使用",
+            "reachable": true,
+            "name": "作业单是否被使用"
+        },
+        "jobTicketInitialQty": {
+            "meaning": "作业单开始时数量",
+            "reachable": true,
+            "name": "作业单开始时数量"
+        },
+        "jobTicketInvTypeTaxRateId": {
+            "meaning": "作业单发票税率id",
+            "reachable": true,
+            "name": "作业单发票税率id"
+        },
+        "jobTicketIsBanned": {
+            "meaning": "作业单是否被禁用",
+            "reachable": true,
+            "name": "作业单是否被禁用"
+        },
+        "jobTicketIsDeleted": {
+            "meaning": "作业单是否被删除",
+            "reachable": true,
+            "name": "作业单是否被删除"
+        },
+        "jobTicketIsLeaf": {
+            "meaning": "作业单是否叶子节点",
+            "reachable": true,
+            "name": "作业单是否叶子节点"
+        },
+        "jobTicketIsMainFlow": {
+            "meaning": "作业单是否是主流程",
+            "reachable": true,
+            "name": "作业单是否是主流程"
+        },
+        "jobTicketIsManualModificationDate": {
+            "meaning": "作业单是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "作业单是否手动修改计划生产时间"
+        },
+        "jobTicketIsReset": {
+            "meaning": "作业单是否重置",
+            "reachable": true,
+            "name": "作业单是否重置"
+        },
+        "jobTicketIsolation": {
+            "meaning": "作业单智能节点数据隔离标识",
+            "reachable": true,
+            "name": "作业单智能节点数据隔离标识"
+        },
+        "jobTicketJsScript": {
+            "meaning": "作业单js脚本",
+            "reachable": true,
+            "name": "作业单js脚本"
+        },
+        "jobTicketLaborCost": {
+            "meaning": "作业单人工成本",
+            "reachable": true,
+            "name": "作业单人工成本"
+        },
+        "jobTicketManualCost": {
+            "meaning": "作业单最初成本",
+            "reachable": true,
+            "name": "作业单最初成本"
+        },
+        "jobTicketManualQty": {
+            "meaning": "作业单人工数量",
+            "reachable": true,
+            "name": "作业单人工数量"
+        },
+        "jobTicketMaterialCost": {
+            "meaning": "作业单材料成本",
+            "reachable": true,
+            "name": "作业单材料成本"
+        },
+        "jobTicketMaterialId": {
+            "meaning": "作业单物料id",
+            "reachable": true,
+            "name": "作业单物料id"
+        },
+        "jobTicketMisregistration": {
+            "meaning": "作业单套印不准",
+            "reachable": true,
+            "name": "作业单套印不准"
+        },
+        "jobTicketName": {
+            "meaning": "作业单智能节点名",
+            "reachable": true,
+            "name": "作业单智能节点名"
+        },
+        "jobTicketNameCodeSearch": {
+            "meaning": "作业单name、user_code模糊搜索",
+            "reachable": true,
+            "name": "作业单name、user_code模糊搜索"
+        },
+        "jobTicketNumberExtra1": {
+            "meaning": "作业单扩展数量1",
+            "reachable": true,
+            "name": "作业单扩展数量1"
+        },
+        "jobTicketNumberExtra2": {
+            "meaning": "作业单扩展数量2",
+            "reachable": true,
+            "name": "作业单扩展数量2"
+        },
+        "jobTicketNumberExtra3": {
+            "meaning": "作业单扩展数量3",
+            "reachable": true,
+            "name": "作业单扩展数量3"
+        },
+        "jobTicketNumberExtra4": {
+            "meaning": "作业单扩展数量4",
+            "reachable": true,
+            "name": "作业单扩展数量4"
+        },
+        "jobTicketNumberExtra5": {
+            "meaning": "作业单扩展数量5",
+            "reachable": true,
+            "name": "作业单扩展数量5"
+        },
+        "jobTicketOilRepleQty": {
+            "meaning": "作业单补油数量",
+            "reachable": true,
+            "name": "作业单补油数量"
+        },
+        "jobTicketOtherTime": {
+            "meaning": "作业单其他时长",
+            "reachable": true,
+            "name": "作业单其他时长"
+        },
+        "jobTicketOutQty": {
+            "meaning": "作业单产出数量",
+            "reachable": true,
+            "name": "作业单产出数量"
+        },
+        "jobTicketParentId": {
+            "meaning": "作业单父节点ID",
+            "reachable": true,
+            "name": "作业单父节点ID"
+        },
+        "jobTicketPauseTime": {
+            "meaning": "作业单暂停时长",
+            "reachable": true,
+            "name": "作业单暂停时长"
+        },
+        "jobTicketPlannedOutputQuantity": {
+            "meaning": "作业单计划产出数量",
+            "reachable": true,
+            "name": "作业单计划产出数量"
+        },
+        "jobTicketPlannedTimeRequired": {
+            "meaning": "作业单计划需时(小时)",
+            "reachable": true,
+            "name": "作业单计划需时"
+        },
+        "jobTicketPrintPriceAdjustPaper": {
+            "meaning": "作业单印刷调价纸",
+            "reachable": true,
+            "name": "作业单印刷调价纸"
+        },
+        "jobTicketPrintTimes": {
+            "meaning": "作业单打印次数",
+            "reachable": true,
+            "name": "作业单打印次数"
+        },
+        "jobTicketPriority": {
+            "meaning": "作业单优先级",
+            "reachable": true,
+            "name": "作业单优先级"
+        },
+        "jobTicketProcPendQty": {
+            "meaning": "作业单待处理数量",
+            "reachable": true,
+            "name": "作业单待处理数量"
+        },
+        "jobTicketProcessInstanceId": {
+            "meaning": "作业单流程实例ID",
+            "reachable": true,
+            "name": "作业单流程实例ID"
+        },
+        "jobTicketProductionProcessesTypeId": {
+            "meaning": "作业单工序类型ID",
+            "reachable": true,
+            "name": "作业单工序类型ID"
+        },
+        "jobTicketProductionShiftId": {
+            "meaning": "作业单生产班次ID",
+            "reachable": true,
+            "name": "作业单生产班次ID"
+        },
+        "jobTicketQuantity": {
+            "meaning": "作业单任务数量",
+            "reachable": true,
+            "name": "作业单任务数量"
+        },
+        "jobTicketReceiptDate": {
+            "meaning": "作业单单据日期",
+            "reachable": true,
+            "name": "作业单单据日期"
+        },
+        "jobTicketReceiptType": {
+            "meaning": "作业单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "作业单单据类型"
+        },
+        "jobTicketRelatedTasksId": {
+            "meaning": "作业单关联任务id",
+            "reachable": true,
+            "name": "作业单关联任务id"
+        },
+        "jobTicketScrapQty": {
+            "meaning": "作业单报废数量",
+            "reachable": true,
+            "name": "作业单报废数量"
+        },
+        "jobTicketScratches": {
+            "meaning": "作业单刮痕",
+            "reachable": true,
+            "name": "作业单刮痕"
+        },
+        "jobTicketSemInstorageQty": {
+            "meaning": "作业单半成品入库数量",
+            "reachable": true,
+            "name": "作业单半成品入库数量"
+        },
+        "jobTicketSemInstorageState": {
+            "meaning": "作业单半成品入库状态",
+            "reachable": true,
+            "name": "作业单半成品入库状态"
+        },
+        "jobTicketSemOutstorageQty": {
+            "meaning": "作业单半成品出库数量",
+            "reachable": true,
+            "name": "作业单半成品出库数量"
+        },
+        "jobTicketSemOutstorageState": {
+            "meaning": "作业单半成品出库状态",
+            "reachable": true,
+            "name": "作业单半成品出库状态"
+        },
+        "jobTicketSemiCost": {
+            "meaning": "作业单半成品成本",
+            "reachable": true,
+            "name": "作业单半成品成本"
+        },
+        "jobTicketSerialNumber": {
+            "meaning": "作业单顺序号",
+            "reachable": true,
+            "name": "作业单顺序号"
+        },
+        "jobTicketShiftId": {
+            "meaning": "作业单班次",
+            "reachable": true,
+            "name": "作业单班次"
+        },
+        "jobTicketSource": {
+            "meaning": "作业单源",
+            "reachable": true,
+            "name": "作业单源"
+        },
+        "jobTicketSourceType": {
+            "meaning": "作业单来源类型",
+            "reachable": true,
+            "name": "作业单来源类型"
+        },
+        "jobTicketState": {
+            "meaning": "作业单通用状态",
+            "reachable": true,
+            "name": "作业单通用状态"
+        },
+        "jobTicketSystemCode": {
+            "meaning": "作业单系统编码",
+            "reachable": true,
+            "name": "作业单系统编码"
+        },
+        "jobTicketTarget": {
+            "meaning": "作业单目标",
+            "reachable": true,
+            "name": "作业单目标"
+        },
+        "jobTicketTaskId": {
+            "meaning": "作业单任务id",
+            "reachable": true,
+            "name": "作业单任务id"
+        },
+        "jobTicketTaskMesId": {
+            "meaning": "作业单排程任务mes_id",
+            "reachable": true,
+            "name": "作业单排程任务mes_id"
+        },
+        "jobTicketTaskNodeName": {
+            "meaning": "作业单任务节点名称",
+            "reachable": true,
+            "name": "作业单任务节点名称"
+        },
+        "jobTicketTenantId": {
+            "meaning": "作业单租户_id",
+            "reachable": true,
+            "name": "作业单租户_id"
+        },
+        "jobTicketThirdPartyClass": {
+            "meaning": "作业单第三方分类",
+            "reachable": true,
+            "name": "作业单第三方分类"
+        },
+        "jobTicketThirdPartyId": {
+            "meaning": "作业单第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "作业单第三方系统中的唯一ID"
+        },
+        "jobTicketThirdPartyName": {
+            "meaning": "作业单第三方名称",
+            "reachable": true,
+            "name": "作业单第三方名称"
+        },
+        "jobTicketToAuditDate": {
+            "meaning": "jobTicketToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToBeginTime": {
+            "meaning": "jobTicketToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToCreateTime": {
+            "meaning": "jobTicketToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDateExtra1": {
+            "meaning": "jobTicketToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDateExtra2": {
+            "meaning": "jobTicketToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDateExtra3": {
+            "meaning": "jobTicketToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDateExtra4": {
+            "meaning": "jobTicketToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDateExtra5": {
+            "meaning": "jobTicketToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToDeliveryDate": {
+            "meaning": "jobTicketToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToEndTime": {
+            "meaning": "jobTicketToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToReceiptDate": {
+            "meaning": "jobTicketToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketToUpdateTime": {
+            "meaning": "jobTicketToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "jobTicketUnevenInkDist": {
+            "meaning": "作业单墨印不均",
+            "reachable": true,
+            "name": "作业单墨印不均"
+        },
+        "jobTicketUnitCode": {
+            "meaning": "作业单单位id",
+            "reachable": true,
+            "name": "作业单单位id"
+        },
+        "jobTicketUpdateTime": {
+            "meaning": "作业单更新时间",
+            "reachable": true,
+            "name": "作业单更新时间"
+        },
+        "jobTicketUpdater": {
+            "meaning": "作业单更新人",
+            "reachable": true,
+            "name": "作业单更新人"
+        },
+        "jobTicketUpdaterId": {
+            "meaning": "作业单更新人ID",
+            "reachable": true,
+            "name": "作业单更新人ID"
+        },
+        "jobTicketUserCode": {
+            "meaning": "作业单智能节点的唯一编码",
+            "reachable": true,
+            "name": "作业单智能节点的唯一编码"
+        },
+        "jobTicketUsercenterGroupId": {
+            "meaning": "作业单用户组（班组）id",
+            "reachable": true,
+            "name": "作业单用户组"
+        },
+        "jobTicketVarExtra1": {
+            "meaning": "作业单扩展1",
+            "reachable": true,
+            "name": "作业单扩展1"
+        },
+        "jobTicketVarExtra2": {
+            "meaning": "作业单扩展2",
+            "reachable": true,
+            "name": "作业单扩展2"
+        },
+        "jobTicketVarExtra3": {
+            "meaning": "作业单扩展3",
+            "reachable": true,
+            "name": "作业单扩展3"
+        },
+        "jobTicketVarExtra4": {
+            "meaning": "作业单扩展4",
+            "reachable": true,
+            "name": "作业单扩展4"
+        },
+        "jobTicketVarExtra5": {
+            "meaning": "作业单扩展5",
+            "reachable": true,
+            "name": "作业单扩展5"
+        },
+        "jobTicketVersion": {
+            "meaning": "作业单版本号",
+            "reachable": true,
+            "name": "作业单版本号"
+        },
+        "jobTicketWorkshopOddQty": {
+            "meaning": "作业单车间尾数",
+            "reachable": true,
+            "name": "作业单车间尾数"
+        }
+    }
+}

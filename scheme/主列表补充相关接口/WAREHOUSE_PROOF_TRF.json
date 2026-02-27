@@ -1,0 +1,606 @@
+{
+    "api_name": "/warehouse-proof-trf/findList",
+    "table_name": "移仓单主表",
+    "request": {
+        "warehouseProofTrfClazz": "WAREHOUSE_PROOF_TRF"
+    },
+    "mainTabClazz": "WAREHOUSE_PROOF_TRF",
+    "response": {
+        "warehouseProofTrfActualTimeRequired": {
+            "meaning": "移仓单主表实际需时(小时)",
+            "reachable": true,
+            "name": "移仓单主表实际需时"
+        },
+        "warehouseProofTrfAdjustmentTimeRequired": {
+            "meaning": "移仓单主表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "移仓单主表调整需时"
+        },
+        "warehouseProofTrfApplicationId": {
+            "meaning": "移仓单主表应用ID",
+            "reachable": true,
+            "name": "移仓单主表应用ID"
+        },
+        "warehouseProofTrfAuditDate": {
+            "meaning": "移仓单主表审核时间",
+            "reachable": true,
+            "name": "移仓单主表审核时间"
+        },
+        "warehouseProofTrfAuditStatus": {
+            "meaning": "移仓单主表审核状态",
+            "reachable": true,
+            "name": "移仓单主表审核状态"
+        },
+        "warehouseProofTrfAvailableScheduleId": {
+            "meaning": "移仓单主表可用日程id",
+            "reachable": true,
+            "name": "移仓单主表可用日程id"
+        },
+        "warehouseProofTrfBeginTime": {
+            "meaning": "移仓单主表开始时间",
+            "reachable": true,
+            "name": "移仓单主表开始时间"
+        },
+        "warehouseProofTrfBizVersion": {
+            "meaning": "移仓单主表业务自定义版本号",
+            "reachable": true,
+            "name": "移仓单主表业务自定义版本号"
+        },
+        "warehouseProofTrfBriefName": {
+            "meaning": "移仓单主表简称",
+            "reachable": true,
+            "name": "移仓单主表简称"
+        },
+        "warehouseProofTrfBusDivisId": {
+            "meaning": "移仓单主表事业部id",
+            "reachable": true,
+            "name": "移仓单主表事业部id"
+        },
+        "warehouseProofTrfClazz": {
+            "meaning": "移仓单主表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "移仓单主表子类"
+        },
+        "warehouseProofTrfClosedReason": {
+            "meaning": "移仓单主表结案原因",
+            "reachable": true,
+            "name": "移仓单主表结案原因"
+        },
+        "warehouseProofTrfClosedStatus": {
+            "meaning": "移仓单主表结案状态",
+            "reachable": true,
+            "name": "移仓单主表结案状态"
+        },
+        "warehouseProofTrfComment": {
+            "meaning": "移仓单主表评论",
+            "reachable": true,
+            "name": "移仓单主表评论"
+        },
+        "warehouseProofTrfCompleteQuantity": {
+            "meaning": "移仓单主表完成数量",
+            "reachable": true,
+            "name": "移仓单主表完成数量"
+        },
+        "warehouseProofTrfCompleteStatus": {
+            "meaning": "移仓单主表完成状态",
+            "reachable": true,
+            "name": "移仓单主表完成状态"
+        },
+        "warehouseProofTrfCreateTime": {
+            "meaning": "移仓单主表创建时间",
+            "reachable": true,
+            "name": "移仓单主表创建时间"
+        },
+        "warehouseProofTrfCreator": {
+            "meaning": "移仓单主表创建人",
+            "reachable": true,
+            "name": "移仓单主表创建人"
+        },
+        "warehouseProofTrfCreatorId": {
+            "meaning": "移仓单主表创建人ID",
+            "reachable": true,
+            "name": "移仓单主表创建人ID"
+        },
+        "warehouseProofTrfDateExtra1": {
+            "meaning": "移仓单主表扩展时间1",
+            "reachable": true,
+            "name": "移仓单主表扩展时间1"
+        },
+        "warehouseProofTrfDateExtra2": {
+            "meaning": "移仓单主表扩展时间2",
+            "reachable": true,
+            "name": "移仓单主表扩展时间2"
+        },
+        "warehouseProofTrfDateExtra3": {
+            "meaning": "移仓单主表扩展时间3",
+            "reachable": true,
+            "name": "移仓单主表扩展时间3"
+        },
+        "warehouseProofTrfDateExtra4": {
+            "meaning": "移仓单主表扩展时间4",
+            "reachable": true,
+            "name": "移仓单主表扩展时间4"
+        },
+        "warehouseProofTrfDateExtra5": {
+            "meaning": "移仓单主表扩展时间5",
+            "reachable": true,
+            "name": "移仓单主表扩展时间5"
+        },
+        "warehouseProofTrfDefaultType": {
+            "meaning": "移仓单主表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "移仓单主表智能节点主类型"
+        },
+        "warehouseProofTrfDeliveryDate": {
+            "meaning": "移仓单主表交货日期",
+            "reachable": true,
+            "name": "移仓单主表交货日期"
+        },
+        "warehouseProofTrfDepartId": {
+            "meaning": "移仓单主表移仓部门id",
+            "reachable": true,
+            "name": "移仓单主表移仓部门id"
+        },
+        "warehouseProofTrfDescription": {
+            "meaning": "移仓单主表描述",
+            "reachable": true,
+            "name": "移仓单主表描述"
+        },
+        "warehouseProofTrfEndTime": {
+            "meaning": "移仓单主表结束时间",
+            "reachable": true,
+            "name": "移仓单主表结束时间"
+        },
+        "warehouseProofTrfEndTimeRequired": {
+            "meaning": "移仓单主表最后需时(小时)",
+            "reachable": true,
+            "name": "移仓单主表最后需时"
+        },
+        "warehouseProofTrfEngName": {
+            "meaning": "移仓单主表英文名称",
+            "reachable": true,
+            "name": "移仓单主表英文名称"
+        },
+        "warehouseProofTrfEquipmentId": {
+            "meaning": "移仓单主表设备id",
+            "reachable": true,
+            "name": "移仓单主表设备id"
+        },
+        "warehouseProofTrfExchangeRateId": {
+            "meaning": "移仓单主表币种汇率id",
+            "reachable": true,
+            "name": "移仓单主表币种汇率id"
+        },
+        "warehouseProofTrfExtension": {
+            "meaning": "移仓单主表扩展数据",
+            "reachable": true,
+            "name": "移仓单主表扩展数据"
+        },
+        "warehouseProofTrfExternalState": {
+            "meaning": "移仓单主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "移仓单主表上流程状态位"
+        },
+        "warehouseProofTrfFilterClazz": {
+            "meaning": "移仓单主表冗余字段用于筛选",
+            "reachable": false,
+            "name": "移仓单主表冗余字段用于筛选"
+        },
+        "warehouseProofTrfFlags": {
+            "meaning": "移仓单主表63位标志位",
+            "reachable": true,
+            "name": "移仓单主表63位标志位"
+        },
+        "warehouseProofTrfFromAuditDate": {
+            "meaning": "warehouseProofTrfFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromBeginTime": {
+            "meaning": "warehouseProofTrfFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromCreateTime": {
+            "meaning": "warehouseProofTrfFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDateExtra1": {
+            "meaning": "warehouseProofTrfFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDateExtra2": {
+            "meaning": "warehouseProofTrfFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDateExtra3": {
+            "meaning": "warehouseProofTrfFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDateExtra4": {
+            "meaning": "warehouseProofTrfFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDateExtra5": {
+            "meaning": "warehouseProofTrfFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromDeliveryDate": {
+            "meaning": "warehouseProofTrfFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromEndTime": {
+            "meaning": "warehouseProofTrfFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromReceiptDate": {
+            "meaning": "warehouseProofTrfFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFromUpdateTime": {
+            "meaning": "warehouseProofTrfFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfFscType": {
+            "meaning": "移仓单主表FSC声明",
+            "reachable": true,
+            "name": "移仓单主表FSC声明"
+        },
+        "warehouseProofTrfGenerativePeople": {
+            "meaning": "移仓单主表下发人",
+            "reachable": true,
+            "name": "移仓单主表下发人"
+        },
+        "warehouseProofTrfGenerativeState": {
+            "meaning": "移仓单主表下发状态",
+            "reachable": true,
+            "name": "移仓单主表下发状态"
+        },
+        "warehouseProofTrfGroovyScript": {
+            "meaning": "移仓单主表groovy脚本",
+            "reachable": true,
+            "name": "移仓单主表groovy脚本"
+        },
+        "warehouseProofTrfGropeCode": {
+            "meaning": "移仓单主表搜索码",
+            "reachable": true,
+            "name": "移仓单主表搜索码"
+        },
+        "warehouseProofTrfId": {
+            "meaning": "移仓单主表主键id",
+            "is_primary": true,
+            "reachable": true,
+            "name": "移仓单主表主键id"
+        },
+        "warehouseProofTrfInUsed": {
+            "meaning": "移仓单主表是否被使用",
+            "reachable": true,
+            "name": "移仓单主表是否被使用"
+        },
+        "warehouseProofTrfInvTypeTaxRateId": {
+            "meaning": "移仓单主表发票税率id",
+            "reachable": true,
+            "name": "移仓单主表发票税率id"
+        },
+        "warehouseProofTrfIsBanned": {
+            "meaning": "移仓单主表是否被禁用",
+            "reachable": true,
+            "name": "移仓单主表是否被禁用"
+        },
+        "warehouseProofTrfIsDeleted": {
+            "meaning": "移仓单主表是否被删除",
+            "reachable": true,
+            "name": "移仓单主表是否被删除"
+        },
+        "warehouseProofTrfIsLeaf": {
+            "meaning": "移仓单主表是否叶子节点",
+            "reachable": true,
+            "name": "移仓单主表是否叶子节点"
+        },
+        "warehouseProofTrfIsMainFlow": {
+            "meaning": "移仓单主表是否是主流程",
+            "reachable": true,
+            "name": "移仓单主表是否是主流程"
+        },
+        "warehouseProofTrfIsManualModificationDate": {
+            "meaning": "移仓单主表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "移仓单主表是否手动修改计划生产时间"
+        },
+        "warehouseProofTrfIsolation": {
+            "meaning": "移仓单主表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "移仓单主表智能节点数据隔离标识"
+        },
+        "warehouseProofTrfJsScript": {
+            "meaning": "移仓单主表js脚本",
+            "reachable": true,
+            "name": "移仓单主表js脚本"
+        },
+        "warehouseProofTrfMaterialId": {
+            "meaning": "移仓单主表物料id",
+            "reachable": true,
+            "name": "移仓单主表物料id"
+        },
+        "warehouseProofTrfName": {
+            "meaning": "移仓单主表智能节点名",
+            "reachable": true,
+            "name": "移仓单主表智能节点名"
+        },
+        "warehouseProofTrfNameCodeSearch": {
+            "meaning": "移仓单主表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "移仓单主表name、user_code模糊搜索"
+        },
+        "warehouseProofTrfNumberExtra1": {
+            "meaning": "移仓单主表扩展数量1",
+            "reachable": true,
+            "name": "移仓单主表扩展数量1"
+        },
+        "warehouseProofTrfNumberExtra2": {
+            "meaning": "移仓单主表扩展数量2",
+            "reachable": true,
+            "name": "移仓单主表扩展数量2"
+        },
+        "warehouseProofTrfNumberExtra3": {
+            "meaning": "移仓单主表扩展数量3",
+            "reachable": true,
+            "name": "移仓单主表扩展数量3"
+        },
+        "warehouseProofTrfNumberExtra4": {
+            "meaning": "移仓单主表扩展数量4",
+            "reachable": true,
+            "name": "移仓单主表扩展数量4"
+        },
+        "warehouseProofTrfNumberExtra5": {
+            "meaning": "移仓单主表扩展数量5",
+            "reachable": true,
+            "name": "移仓单主表扩展数量5"
+        },
+        "warehouseProofTrfParentId": {
+            "meaning": "移仓单主表父节点ID",
+            "reachable": true,
+            "name": "移仓单主表父节点ID"
+        },
+        "warehouseProofTrfPlannedOutputQuantity": {
+            "meaning": "移仓单主表计划产出数量",
+            "reachable": true,
+            "name": "移仓单主表计划产出数量"
+        },
+        "warehouseProofTrfPlannedTimeRequired": {
+            "meaning": "移仓单主表计划需时(小时)",
+            "reachable": true,
+            "name": "移仓单主表计划需时"
+        },
+        "warehouseProofTrfPrintTimes": {
+            "meaning": "移仓单主表打印次数",
+            "reachable": true,
+            "name": "移仓单主表打印次数"
+        },
+        "warehouseProofTrfPriority": {
+            "meaning": "移仓单主表优先级",
+            "reachable": true,
+            "name": "移仓单主表优先级"
+        },
+        "warehouseProofTrfProcessInstanceId": {
+            "meaning": "移仓单主表流程实例ID",
+            "reachable": true,
+            "name": "移仓单主表流程实例ID"
+        },
+        "warehouseProofTrfProductionProcessesTypeId": {
+            "meaning": "移仓单主表工序类型ID",
+            "reachable": true,
+            "name": "移仓单主表工序类型ID"
+        },
+        "warehouseProofTrfProductionShiftId": {
+            "meaning": "移仓单主表生产班次ID",
+            "reachable": true,
+            "name": "移仓单主表生产班次ID"
+        },
+        "warehouseProofTrfQuantity": {
+            "meaning": "移仓单主表任务数量",
+            "reachable": true,
+            "name": "移仓单主表任务数量"
+        },
+        "warehouseProofTrfReceiptDate": {
+            "meaning": "移仓单主表单据日期",
+            "reachable": true,
+            "name": "移仓单主表单据日期"
+        },
+        "warehouseProofTrfReceiptType": {
+            "meaning": "移仓单主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "移仓单主表单据类型"
+        },
+        "warehouseProofTrfRelatedTasksId": {
+            "meaning": "移仓单主表关联任务id",
+            "reachable": true,
+            "name": "移仓单主表关联任务id"
+        },
+        "warehouseProofTrfSerialNumber": {
+            "meaning": "移仓单主表顺序号",
+            "reachable": true,
+            "name": "移仓单主表顺序号"
+        },
+        "warehouseProofTrfSource": {
+            "meaning": "移仓单主表源",
+            "reachable": true,
+            "name": "移仓单主表源"
+        },
+        "warehouseProofTrfSourceType": {
+            "meaning": "移仓单主表来源类型",
+            "reachable": true,
+            "name": "移仓单主表来源类型"
+        },
+        "warehouseProofTrfStaffId": {
+            "meaning": "移仓单主表移仓人id",
+            "reachable": true,
+            "name": "移仓单主表移仓人id"
+        },
+        "warehouseProofTrfState": {
+            "meaning": "移仓单主表通用状态",
+            "reachable": true,
+            "name": "移仓单主表通用状态"
+        },
+        "warehouseProofTrfSystemCode": {
+            "meaning": "移仓单主表系统编码",
+            "reachable": true,
+            "name": "移仓单主表系统编码"
+        },
+        "warehouseProofTrfTarget": {
+            "meaning": "移仓单主表目标",
+            "reachable": true,
+            "name": "移仓单主表目标"
+        },
+        "warehouseProofTrfTaskNodeName": {
+            "meaning": "移仓单主表任务节点名称",
+            "reachable": true,
+            "name": "移仓单主表任务节点名称"
+        },
+        "warehouseProofTrfTenantId": {
+            "meaning": "移仓单主表租户id",
+            "reachable": true,
+            "name": "移仓单主表租户id"
+        },
+        "warehouseProofTrfThirdPartyClass": {
+            "meaning": "移仓单主表第三方分类",
+            "reachable": true,
+            "name": "移仓单主表第三方分类"
+        },
+        "warehouseProofTrfThirdPartyId": {
+            "meaning": "移仓单主表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "移仓单主表第三方系统中的唯一ID"
+        },
+        "warehouseProofTrfThirdPartyName": {
+            "meaning": "移仓单主表第三方名称",
+            "reachable": true,
+            "name": "移仓单主表第三方名称"
+        },
+        "warehouseProofTrfToAuditDate": {
+            "meaning": "warehouseProofTrfToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToBeginTime": {
+            "meaning": "warehouseProofTrfToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToCreateTime": {
+            "meaning": "warehouseProofTrfToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDateExtra1": {
+            "meaning": "warehouseProofTrfToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDateExtra2": {
+            "meaning": "warehouseProofTrfToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDateExtra3": {
+            "meaning": "warehouseProofTrfToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDateExtra4": {
+            "meaning": "warehouseProofTrfToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDateExtra5": {
+            "meaning": "warehouseProofTrfToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToDeliveryDate": {
+            "meaning": "warehouseProofTrfToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToEndTime": {
+            "meaning": "warehouseProofTrfToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToReceiptDate": {
+            "meaning": "warehouseProofTrfToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfToUpdateTime": {
+            "meaning": "warehouseProofTrfToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "warehouseProofTrfUnitCode": {
+            "meaning": "移仓单主表单位id",
+            "reachable": true,
+            "name": "移仓单主表单位id"
+        },
+        "warehouseProofTrfUpdateTime": {
+            "meaning": "移仓单主表更新时间",
+            "reachable": true,
+            "name": "移仓单主表更新时间"
+        },
+        "warehouseProofTrfUpdater": {
+            "meaning": "移仓单主表更新人",
+            "reachable": true,
+            "name": "移仓单主表更新人"
+        },
+        "warehouseProofTrfUpdaterId": {
+            "meaning": "移仓单主表更新人ID",
+            "reachable": true,
+            "name": "移仓单主表更新人ID"
+        },
+        "warehouseProofTrfUserCode": {
+            "meaning": "移仓单主表智能节点的唯一编码",
+            "reachable": true,
+            "name": "移仓单主表智能节点的唯一编码"
+        },
+        "warehouseProofTrfVarExtra1": {
+            "meaning": "移仓单主表扩展1",
+            "reachable": true,
+            "name": "移仓单主表扩展1"
+        },
+        "warehouseProofTrfVarExtra2": {
+            "meaning": "移仓单主表扩展2",
+            "reachable": true,
+            "name": "移仓单主表扩展2"
+        },
+        "warehouseProofTrfVarExtra3": {
+            "meaning": "移仓单主表扩展3",
+            "reachable": true,
+            "name": "移仓单主表扩展3"
+        },
+        "warehouseProofTrfVarExtra4": {
+            "meaning": "移仓单主表扩展4",
+            "reachable": true,
+            "name": "移仓单主表扩展4"
+        },
+        "warehouseProofTrfVarExtra5": {
+            "meaning": "移仓单主表扩展5",
+            "reachable": true,
+            "name": "移仓单主表扩展5"
+        },
+        "warehouseProofTrfVersion": {
+            "meaning": "移仓单主表版本号",
+            "reachable": true,
+            "name": "移仓单主表版本号"
+        }
+    }
+}

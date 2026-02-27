@@ -1,0 +1,1257 @@
+{
+    "api_name": "/cust-quote-det/findList",
+    "table_name": "客户定价明细表",
+    "request": {
+        "custQuoteDetCustQuoteClazz": "CUST_QUOTE",
+        "custQuoteDetClazz": "CUST_QUOTE_DET"
+    },
+    "mainTabClazz": "CUST_QUOTE_DET",
+    "response": {
+        "custQuoteDetActualTimeRequired": {
+            "meaning": "客户定价明细表实际需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表实际需时"
+        },
+        "custQuoteDetAdjustmentTimeRequired": {
+            "meaning": "客户定价明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "客户定价明细表调整需时"
+        },
+        "custQuoteDetApplicationId": {
+            "meaning": "客户定价明细表应用ID",
+            "reachable": true,
+            "name": "客户定价明细表应用ID"
+        },
+        "custQuoteDetAuditDate": {
+            "meaning": "客户定价明细表审核时间",
+            "reachable": true,
+            "name": "客户定价明细表审核时间"
+        },
+        "custQuoteDetAuditStatus": {
+            "meaning": "客户定价明细表审核状态",
+            "reachable": true,
+            "name": "客户定价明细表审核状态"
+        },
+        "custQuoteDetAvailableScheduleId": {
+            "meaning": "客户定价明细表可用日程id",
+            "reachable": true,
+            "name": "客户定价明细表可用日程id"
+        },
+        "custQuoteDetBeginTime": {
+            "meaning": "客户定价明细表开始时间",
+            "reachable": true,
+            "name": "客户定价明细表开始时间"
+        },
+        "custQuoteDetBizVersion": {
+            "meaning": "客户定价明细表业务自定义版本号",
+            "reachable": true,
+            "name": "客户定价明细表业务自定义版本号"
+        },
+        "custQuoteDetBriefName": {
+            "meaning": "客户定价明细表简称",
+            "reachable": true,
+            "name": "客户定价明细表简称"
+        },
+        "custQuoteDetBusDivisId": {
+            "meaning": "客户定价明细表事业部id",
+            "reachable": true,
+            "name": "客户定价明细表事业部id"
+        },
+        "custQuoteDetClazz": {
+            "meaning": "客户定价明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "客户定价明细表子类"
+        },
+        "custQuoteDetClosedReason": {
+            "meaning": "客户定价明细表结案原因",
+            "reachable": true,
+            "name": "客户定价明细表结案原因"
+        },
+        "custQuoteDetClosedStatus": {
+            "meaning": "客户定价明细表结案状态",
+            "reachable": true,
+            "name": "客户定价明细表结案状态"
+        },
+        "custQuoteDetComment": {
+            "meaning": "客户定价明细表评论",
+            "reachable": true,
+            "name": "客户定价明细表评论"
+        },
+        "custQuoteDetCompleteQuantity": {
+            "meaning": "客户定价明细表完成数量",
+            "reachable": true,
+            "name": "客户定价明细表完成数量"
+        },
+        "custQuoteDetCompleteStatus": {
+            "meaning": "客户定价明细表完成状态",
+            "reachable": true,
+            "name": "客户定价明细表完成状态"
+        },
+        "custQuoteDetCreateTime": {
+            "meaning": "客户定价明细表创建时间",
+            "reachable": true,
+            "name": "客户定价明细表创建时间"
+        },
+        "custQuoteDetCreator": {
+            "meaning": "客户定价明细表创建人",
+            "reachable": true,
+            "name": "客户定价明细表创建人"
+        },
+        "custQuoteDetCreatorId": {
+            "meaning": "客户定价明细表创建人ID",
+            "reachable": true,
+            "name": "客户定价明细表创建人ID"
+        },
+        "custQuoteDetCustPartNo": {
+            "meaning": "客户定价明细表客户产品名称",
+            "reachable": true,
+            "name": "客户定价明细表客户产品名称"
+        },
+        "custQuoteDetCustPrdName": {
+            "meaning": "客户定价明细表客户产品名称",
+            "reachable": true,
+            "name": "客户定价明细表客户产品名称"
+        },
+        "custQuoteDetCustQuoteActualTimeRequired": {
+            "meaning": "客户定价明细表实际需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表实际需时"
+        },
+        "custQuoteDetCustQuoteAdjustmentTimeRequired": {
+            "meaning": "客户定价明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "客户定价明细表调整需时"
+        },
+        "custQuoteDetCustQuoteApplicationId": {
+            "meaning": "客户定价明细表应用ID",
+            "reachable": true,
+            "name": "客户定价明细表应用ID"
+        },
+        "custQuoteDetCustQuoteAuditDate": {
+            "meaning": "客户定价明细表审核时间",
+            "reachable": true,
+            "name": "客户定价明细表审核时间"
+        },
+        "custQuoteDetCustQuoteAuditStatus": {
+            "meaning": "客户定价明细表审核状态",
+            "reachable": true,
+            "name": "客户定价明细表审核状态"
+        },
+        "custQuoteDetCustQuoteAvailableScheduleId": {
+            "meaning": "客户定价明细表可用日程id",
+            "reachable": true,
+            "name": "客户定价明细表可用日程id"
+        },
+        "custQuoteDetCustQuoteBeginTime": {
+            "meaning": "客户定价明细表开始时间",
+            "reachable": true,
+            "name": "客户定价明细表开始时间"
+        },
+        "custQuoteDetCustQuoteBizVersion": {
+            "meaning": "客户定价明细表业务自定义版本号",
+            "reachable": true,
+            "name": "客户定价明细表业务自定义版本号"
+        },
+        "custQuoteDetCustQuoteBriefName": {
+            "meaning": "客户定价明细表简称",
+            "reachable": true,
+            "name": "客户定价明细表简称"
+        },
+        "custQuoteDetCustQuoteBusDivisId": {
+            "meaning": "客户定价明细表事业部id",
+            "reachable": true,
+            "name": "客户定价明细表事业部id"
+        },
+        "custQuoteDetCustQuoteClazz": {
+            "meaning": "客户定价明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "客户定价明细表子类"
+        },
+        "custQuoteDetCustQuoteClosedReason": {
+            "meaning": "客户定价明细表结案原因",
+            "reachable": true,
+            "name": "客户定价明细表结案原因"
+        },
+        "custQuoteDetCustQuoteClosedStatus": {
+            "meaning": "客户定价明细表结案状态",
+            "reachable": true,
+            "name": "客户定价明细表结案状态"
+        },
+        "custQuoteDetCustQuoteComment": {
+            "meaning": "客户定价明细表评论",
+            "reachable": true,
+            "name": "客户定价明细表评论"
+        },
+        "custQuoteDetCustQuoteCompleteQuantity": {
+            "meaning": "客户定价明细表完成数量",
+            "reachable": true,
+            "name": "客户定价明细表完成数量"
+        },
+        "custQuoteDetCustQuoteCompleteStatus": {
+            "meaning": "客户定价明细表完成状态",
+            "reachable": true,
+            "name": "客户定价明细表完成状态"
+        },
+        "custQuoteDetCustQuoteCreateTime": {
+            "meaning": "客户定价明细表创建时间",
+            "reachable": true,
+            "name": "客户定价明细表创建时间"
+        },
+        "custQuoteDetCustQuoteCreator": {
+            "meaning": "客户定价明细表创建人",
+            "reachable": true,
+            "name": "客户定价明细表创建人"
+        },
+        "custQuoteDetCustQuoteCreatorId": {
+            "meaning": "客户定价明细表创建人ID",
+            "reachable": true,
+            "name": "客户定价明细表创建人ID"
+        },
+        "custQuoteDetCustQuoteCurrencyId": {
+            "meaning": "客户定价明细表币种id",
+            "reachable": true,
+            "name": "客户定价明细表币种id"
+        },
+        "custQuoteDetCustQuoteDateExtra1": {
+            "meaning": "客户定价明细表扩展时间1",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间1"
+        },
+        "custQuoteDetCustQuoteDateExtra2": {
+            "meaning": "客户定价明细表扩展时间2",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间2"
+        },
+        "custQuoteDetCustQuoteDateExtra3": {
+            "meaning": "客户定价明细表扩展时间3",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间3"
+        },
+        "custQuoteDetCustQuoteDateExtra4": {
+            "meaning": "客户定价明细表扩展时间4",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间4"
+        },
+        "custQuoteDetCustQuoteDateExtra5": {
+            "meaning": "客户定价明细表扩展时间5",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间5"
+        },
+        "custQuoteDetCustQuoteDefaultType": {
+            "meaning": "客户定价明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "客户定价明细表智能节点主类型"
+        },
+        "custQuoteDetCustQuoteDeliveryDate": {
+            "meaning": "客户定价明细表交货日期",
+            "reachable": true,
+            "name": "客户定价明细表交货日期"
+        },
+        "custQuoteDetCustQuoteDescription": {
+            "meaning": "客户定价明细表描述",
+            "reachable": true,
+            "name": "客户定价明细表描述"
+        },
+        "custQuoteDetCustQuoteEndTime": {
+            "meaning": "客户定价明细表结束时间",
+            "reachable": true,
+            "name": "客户定价明细表结束时间"
+        },
+        "custQuoteDetCustQuoteEndTimeRequired": {
+            "meaning": "客户定价明细表最后需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表最后需时"
+        },
+        "custQuoteDetCustQuoteEngName": {
+            "meaning": "客户定价明细表英文名称",
+            "reachable": true,
+            "name": "客户定价明细表英文名称"
+        },
+        "custQuoteDetCustQuoteEquipmentId": {
+            "meaning": "客户定价明细表设备id",
+            "reachable": true,
+            "name": "客户定价明细表设备id"
+        },
+        "custQuoteDetCustQuoteExchangeRateId": {
+            "meaning": "客户定价明细表币种汇率id",
+            "reachable": true,
+            "name": "客户定价明细表币种汇率id"
+        },
+        "custQuoteDetCustQuoteExtension": {
+            "meaning": "客户定价明细表扩展数据",
+            "reachable": true,
+            "name": "客户定价明细表扩展数据"
+        },
+        "custQuoteDetCustQuoteExternalState": {
+            "meaning": "客户定价明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "客户定价明细表上流程状态位"
+        },
+        "custQuoteDetCustQuoteFilterClazz": {
+            "meaning": "客户定价明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户定价明细表冗余字段用于筛选"
+        },
+        "custQuoteDetCustQuoteFlags": {
+            "meaning": "客户定价明细表63位标志位",
+            "reachable": true,
+            "name": "客户定价明细表63位标志位"
+        },
+        "custQuoteDetCustQuoteFromAuditDate": {
+            "meaning": "custQuoteDetCustQuoteFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromBeginTime": {
+            "meaning": "custQuoteDetCustQuoteFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromCreateTime": {
+            "meaning": "custQuoteDetCustQuoteFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDateExtra1": {
+            "meaning": "custQuoteDetCustQuoteFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDateExtra2": {
+            "meaning": "custQuoteDetCustQuoteFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDateExtra3": {
+            "meaning": "custQuoteDetCustQuoteFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDateExtra4": {
+            "meaning": "custQuoteDetCustQuoteFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDateExtra5": {
+            "meaning": "custQuoteDetCustQuoteFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromDeliveryDate": {
+            "meaning": "custQuoteDetCustQuoteFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromEndTime": {
+            "meaning": "custQuoteDetCustQuoteFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromReceiptDate": {
+            "meaning": "custQuoteDetCustQuoteFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFromUpdateTime": {
+            "meaning": "custQuoteDetCustQuoteFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteFscType": {
+            "meaning": "客户定价明细表FSC声明",
+            "reachable": true,
+            "name": "客户定价明细表FSC声明"
+        },
+        "custQuoteDetCustQuoteGenerativePeople": {
+            "meaning": "客户定价明细表下发人",
+            "reachable": true,
+            "name": "客户定价明细表下发人"
+        },
+        "custQuoteDetCustQuoteGenerativeState": {
+            "meaning": "客户定价明细表下发状态",
+            "reachable": true,
+            "name": "客户定价明细表下发状态"
+        },
+        "custQuoteDetCustQuoteGroovyScript": {
+            "meaning": "客户定价明细表groovy脚本",
+            "reachable": true,
+            "name": "客户定价明细表groovy脚本"
+        },
+        "custQuoteDetCustQuoteGropeCode": {
+            "meaning": "客户定价明细表搜索码",
+            "reachable": true,
+            "name": "客户定价明细表搜索码"
+        },
+        "custQuoteDetCustQuoteId": {
+            "meaning": "客户定价明细表主键ID",
+            "reachable": true,
+            "name": "客户定价明细表主键ID"
+        },
+        "custQuoteDetCustQuoteInUsed": {
+            "meaning": "客户定价明细表是否被使用",
+            "reachable": true,
+            "name": "客户定价明细表是否被使用"
+        },
+        "custQuoteDetCustQuoteInvTypeTaxRateId": {
+            "meaning": "客户定价明细表发票税率id",
+            "reachable": true,
+            "name": "客户定价明细表发票税率id"
+        },
+        "custQuoteDetCustQuoteIsBanned": {
+            "meaning": "客户定价明细表是否被禁用",
+            "reachable": true,
+            "name": "客户定价明细表是否被禁用"
+        },
+        "custQuoteDetCustQuoteIsDeleted": {
+            "meaning": "客户定价明细表是否被删除",
+            "reachable": true,
+            "name": "客户定价明细表是否被删除"
+        },
+        "custQuoteDetCustQuoteIsLeaf": {
+            "meaning": "客户定价明细表是否叶子节点",
+            "reachable": true,
+            "name": "客户定价明细表是否叶子节点"
+        },
+        "custQuoteDetCustQuoteIsMainFlow": {
+            "meaning": "客户定价明细表是否是主流程",
+            "reachable": true,
+            "name": "客户定价明细表是否是主流程"
+        },
+        "custQuoteDetCustQuoteIsManualModificationDate": {
+            "meaning": "客户定价明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "客户定价明细表是否手动修改计划生产时间"
+        },
+        "custQuoteDetCustQuoteIsolation": {
+            "meaning": "客户定价明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "客户定价明细表智能节点数据隔离标识"
+        },
+        "custQuoteDetCustQuoteJsScript": {
+            "meaning": "客户定价明细表js脚本",
+            "reachable": true,
+            "name": "客户定价明细表js脚本"
+        },
+        "custQuoteDetCustQuoteMaterialId": {
+            "meaning": "客户定价明细表物料id",
+            "reachable": true,
+            "name": "客户定价明细表物料id"
+        },
+        "custQuoteDetCustQuoteName": {
+            "meaning": "客户定价明细表智能节点名",
+            "reachable": true,
+            "name": "客户定价明细表智能节点名"
+        },
+        "custQuoteDetCustQuoteNameCodeSearch": {
+            "meaning": "客户定价明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "客户定价明细表name、user_code模糊搜索"
+        },
+        "custQuoteDetCustQuoteNumberExtra1": {
+            "meaning": "客户定价明细表扩展数量1",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量1"
+        },
+        "custQuoteDetCustQuoteNumberExtra2": {
+            "meaning": "客户定价明细表扩展数量2",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量2"
+        },
+        "custQuoteDetCustQuoteNumberExtra3": {
+            "meaning": "客户定价明细表扩展数量3",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量3"
+        },
+        "custQuoteDetCustQuoteNumberExtra4": {
+            "meaning": "客户定价明细表扩展数量4",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量4"
+        },
+        "custQuoteDetCustQuoteNumberExtra5": {
+            "meaning": "客户定价明细表扩展数量5",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量5"
+        },
+        "custQuoteDetCustQuoteParentId": {
+            "meaning": "客户定价明细表父节点ID",
+            "reachable": true,
+            "name": "客户定价明细表父节点ID"
+        },
+        "custQuoteDetCustQuotePartnerId": {
+            "meaning": "客户定价明细表合作方id 加工商、供应商、客户",
+            "reachable": true,
+            "name": "客户定价明细表合作方id"
+        },
+        "custQuoteDetCustQuotePlannedOutputQuantity": {
+            "meaning": "客户定价明细表计划产出数量",
+            "reachable": true,
+            "name": "客户定价明细表计划产出数量"
+        },
+        "custQuoteDetCustQuotePlannedTimeRequired": {
+            "meaning": "客户定价明细表计划需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表计划需时"
+        },
+        "custQuoteDetCustQuotePrintTimes": {
+            "meaning": "客户定价明细表打印次数",
+            "reachable": true,
+            "name": "客户定价明细表打印次数"
+        },
+        "custQuoteDetCustQuotePriority": {
+            "meaning": "客户定价明细表优先级",
+            "reachable": true,
+            "name": "客户定价明细表优先级"
+        },
+        "custQuoteDetCustQuoteProcessInstanceId": {
+            "meaning": "客户定价明细表流程实例ID",
+            "reachable": true,
+            "name": "客户定价明细表流程实例ID"
+        },
+        "custQuoteDetCustQuoteProductionProcessesTypeId": {
+            "meaning": "客户定价明细表工序类型ID",
+            "reachable": true,
+            "name": "客户定价明细表工序类型ID"
+        },
+        "custQuoteDetCustQuoteProductionShiftId": {
+            "meaning": "客户定价明细表生产班次ID",
+            "reachable": true,
+            "name": "客户定价明细表生产班次ID"
+        },
+        "custQuoteDetCustQuoteQuantity": {
+            "meaning": "客户定价明细表任务数量",
+            "reachable": true,
+            "name": "客户定价明细表任务数量"
+        },
+        "custQuoteDetCustQuoteReceiptDate": {
+            "meaning": "客户定价明细表单据日期",
+            "reachable": true,
+            "name": "客户定价明细表单据日期"
+        },
+        "custQuoteDetCustQuoteReceiptType": {
+            "meaning": "客户定价明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "客户定价明细表单据类型"
+        },
+        "custQuoteDetCustQuoteRelatedTasksId": {
+            "meaning": "客户定价明细表关联任务id",
+            "reachable": true,
+            "name": "客户定价明细表关联任务id"
+        },
+        "custQuoteDetCustQuoteSerialNumber": {
+            "meaning": "客户定价明细表顺序号",
+            "reachable": true,
+            "name": "客户定价明细表顺序号"
+        },
+        "custQuoteDetCustQuoteSource": {
+            "meaning": "客户定价明细表源",
+            "reachable": true,
+            "name": "客户定价明细表源"
+        },
+        "custQuoteDetCustQuoteSourceType": {
+            "meaning": "客户定价明细表来源类型",
+            "reachable": true,
+            "name": "客户定价明细表来源类型"
+        },
+        "custQuoteDetCustQuoteState": {
+            "meaning": "客户定价明细表通用状态",
+            "reachable": true,
+            "name": "客户定价明细表通用状态"
+        },
+        "custQuoteDetCustQuoteSystemCode": {
+            "meaning": "客户定价明细表系统编码",
+            "reachable": true,
+            "name": "客户定价明细表系统编码"
+        },
+        "custQuoteDetCustQuoteTarget": {
+            "meaning": "客户定价明细表目标",
+            "reachable": true,
+            "name": "客户定价明细表目标"
+        },
+        "custQuoteDetCustQuoteTaskNodeName": {
+            "meaning": "客户定价明细表任务节点名称",
+            "reachable": true,
+            "name": "客户定价明细表任务节点名称"
+        },
+        "custQuoteDetCustQuoteTenantId": {
+            "meaning": "客户定价明细表租户ID",
+            "reachable": true,
+            "name": "客户定价明细表租户ID"
+        },
+        "custQuoteDetCustQuoteThirdPartyClass": {
+            "meaning": "客户定价明细表第三方分类",
+            "reachable": true,
+            "name": "客户定价明细表第三方分类"
+        },
+        "custQuoteDetCustQuoteThirdPartyId": {
+            "meaning": "客户定价明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "客户定价明细表第三方系统中的唯一ID"
+        },
+        "custQuoteDetCustQuoteThirdPartyName": {
+            "meaning": "客户定价明细表第三方名称",
+            "reachable": true,
+            "name": "客户定价明细表第三方名称"
+        },
+        "custQuoteDetCustQuoteToAuditDate": {
+            "meaning": "custQuoteDetCustQuoteToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToBeginTime": {
+            "meaning": "custQuoteDetCustQuoteToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToCreateTime": {
+            "meaning": "custQuoteDetCustQuoteToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDateExtra1": {
+            "meaning": "custQuoteDetCustQuoteToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDateExtra2": {
+            "meaning": "custQuoteDetCustQuoteToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDateExtra3": {
+            "meaning": "custQuoteDetCustQuoteToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDateExtra4": {
+            "meaning": "custQuoteDetCustQuoteToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDateExtra5": {
+            "meaning": "custQuoteDetCustQuoteToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToDeliveryDate": {
+            "meaning": "custQuoteDetCustQuoteToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToEndTime": {
+            "meaning": "custQuoteDetCustQuoteToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToReceiptDate": {
+            "meaning": "custQuoteDetCustQuoteToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteToUpdateTime": {
+            "meaning": "custQuoteDetCustQuoteToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetCustQuoteUnitCode": {
+            "meaning": "客户定价明细表单位id",
+            "reachable": true,
+            "name": "客户定价明细表单位id"
+        },
+        "custQuoteDetCustQuoteUpdateTime": {
+            "meaning": "客户定价明细表更新时间",
+            "reachable": true,
+            "name": "客户定价明细表更新时间"
+        },
+        "custQuoteDetCustQuoteUpdater": {
+            "meaning": "客户定价明细表更新人",
+            "reachable": true,
+            "name": "客户定价明细表更新人"
+        },
+        "custQuoteDetCustQuoteUpdaterId": {
+            "meaning": "客户定价明细表更新人ID",
+            "reachable": true,
+            "name": "客户定价明细表更新人ID"
+        },
+        "custQuoteDetCustQuoteUserCode": {
+            "meaning": "客户定价明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "客户定价明细表智能节点的唯一编码"
+        },
+        "custQuoteDetCustQuoteVarExtra1": {
+            "meaning": "客户定价明细表扩展1",
+            "reachable": true,
+            "name": "客户定价明细表扩展1"
+        },
+        "custQuoteDetCustQuoteVarExtra2": {
+            "meaning": "客户定价明细表扩展2",
+            "reachable": true,
+            "name": "客户定价明细表扩展2"
+        },
+        "custQuoteDetCustQuoteVarExtra3": {
+            "meaning": "客户定价明细表扩展3",
+            "reachable": true,
+            "name": "客户定价明细表扩展3"
+        },
+        "custQuoteDetCustQuoteVarExtra4": {
+            "meaning": "客户定价明细表扩展4",
+            "reachable": true,
+            "name": "客户定价明细表扩展4"
+        },
+        "custQuoteDetCustQuoteVarExtra5": {
+            "meaning": "客户定价明细表扩展5",
+            "reachable": true,
+            "name": "客户定价明细表扩展5"
+        },
+        "custQuoteDetCustQuoteVersion": {
+            "meaning": "客户定价明细表版本号",
+            "reachable": true,
+            "name": "客户定价明细表版本号"
+        },
+        "custQuoteDetDateExtra1": {
+            "meaning": "客户定价明细表扩展时间1",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间1"
+        },
+        "custQuoteDetDateExtra2": {
+            "meaning": "客户定价明细表扩展时间2",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间2"
+        },
+        "custQuoteDetDateExtra3": {
+            "meaning": "客户定价明细表扩展时间3",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间3"
+        },
+        "custQuoteDetDateExtra4": {
+            "meaning": "客户定价明细表扩展时间4",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间4"
+        },
+        "custQuoteDetDateExtra5": {
+            "meaning": "客户定价明细表扩展时间5",
+            "reachable": true,
+            "name": "客户定价明细表扩展时间5"
+        },
+        "custQuoteDetDefaultType": {
+            "meaning": "客户定价明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "客户定价明细表智能节点主类型"
+        },
+        "custQuoteDetDeliveryDate": {
+            "meaning": "客户定价明细表交货日期",
+            "reachable": true,
+            "name": "客户定价明细表交货日期"
+        },
+        "custQuoteDetDescription": {
+            "meaning": "客户定价明细表描述",
+            "reachable": true,
+            "name": "客户定价明细表描述"
+        },
+        "custQuoteDetDiscountRate": {
+            "meaning": "客户定价明细表下浮率",
+            "reachable": true,
+            "name": "客户定价明细表下浮率"
+        },
+        "custQuoteDetEndTime": {
+            "meaning": "客户定价明细表结束时间",
+            "reachable": true,
+            "name": "客户定价明细表结束时间"
+        },
+        "custQuoteDetEndTimeRequired": {
+            "meaning": "客户定价明细表最后需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表最后需时"
+        },
+        "custQuoteDetEngName": {
+            "meaning": "客户定价明细表英文名称",
+            "reachable": true,
+            "name": "客户定价明细表英文名称"
+        },
+        "custQuoteDetEquipmentId": {
+            "meaning": "客户定价明细表设备id",
+            "reachable": true,
+            "name": "客户定价明细表设备id"
+        },
+        "custQuoteDetExchangeRateId": {
+            "meaning": "客户定价明细表币种汇率id",
+            "reachable": true,
+            "name": "客户定价明细表币种汇率id"
+        },
+        "custQuoteDetExtension": {
+            "meaning": "客户定价明细表扩展数据",
+            "reachable": true,
+            "name": "客户定价明细表扩展数据"
+        },
+        "custQuoteDetExternalState": {
+            "meaning": "客户定价明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "客户定价明细表上流程状态位"
+        },
+        "custQuoteDetFilterClazz": {
+            "meaning": "客户定价明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户定价明细表冗余字段用于筛选"
+        },
+        "custQuoteDetFlags": {
+            "meaning": "客户定价明细表63位标志位",
+            "reachable": true,
+            "name": "客户定价明细表63位标志位"
+        },
+        "custQuoteDetFromAuditDate": {
+            "meaning": "custQuoteDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromBeginTime": {
+            "meaning": "custQuoteDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromCreateTime": {
+            "meaning": "custQuoteDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDateExtra1": {
+            "meaning": "custQuoteDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDateExtra2": {
+            "meaning": "custQuoteDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDateExtra3": {
+            "meaning": "custQuoteDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDateExtra4": {
+            "meaning": "custQuoteDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDateExtra5": {
+            "meaning": "custQuoteDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromDeliveryDate": {
+            "meaning": "custQuoteDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromEndTime": {
+            "meaning": "custQuoteDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromReceiptDate": {
+            "meaning": "custQuoteDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFromUpdateTime": {
+            "meaning": "custQuoteDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetFscType": {
+            "meaning": "客户定价明细表FSC声明",
+            "reachable": true,
+            "name": "客户定价明细表FSC声明"
+        },
+        "custQuoteDetGenerativePeople": {
+            "meaning": "客户定价明细表下发人",
+            "reachable": true,
+            "name": "客户定价明细表下发人"
+        },
+        "custQuoteDetGenerativeState": {
+            "meaning": "客户定价明细表下发状态",
+            "reachable": true,
+            "name": "客户定价明细表下发状态"
+        },
+        "custQuoteDetGroovyScript": {
+            "meaning": "客户定价明细表groovy脚本",
+            "reachable": true,
+            "name": "客户定价明细表groovy脚本"
+        },
+        "custQuoteDetGropeCode": {
+            "meaning": "客户定价明细表搜索码",
+            "reachable": true,
+            "name": "客户定价明细表搜索码"
+        },
+        "custQuoteDetHasPriceLimit": {
+            "meaning": "客户定价明细表是否限价",
+            "reachable": true,
+            "name": "客户定价明细表是否限价"
+        },
+        "custQuoteDetId": {
+            "meaning": "客户定价明细表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "客户定价明细表主键ID"
+        },
+        "custQuoteDetInUsed": {
+            "meaning": "客户定价明细表是否被使用",
+            "reachable": true,
+            "name": "客户定价明细表是否被使用"
+        },
+        "custQuoteDetInvTypeTaxRateId": {
+            "meaning": "客户定价明细表发票税率id",
+            "reachable": true,
+            "name": "客户定价明细表发票税率id"
+        },
+        "custQuoteDetIsBanned": {
+            "meaning": "客户定价明细表是否被禁用",
+            "reachable": true,
+            "name": "客户定价明细表是否被禁用"
+        },
+        "custQuoteDetIsDeleted": {
+            "meaning": "客户定价明细表是否被删除",
+            "reachable": true,
+            "name": "客户定价明细表是否被删除"
+        },
+        "custQuoteDetIsLeaf": {
+            "meaning": "客户定价明细表是否叶子节点",
+            "reachable": true,
+            "name": "客户定价明细表是否叶子节点"
+        },
+        "custQuoteDetIsMainFlow": {
+            "meaning": "客户定价明细表是否是主流程",
+            "reachable": true,
+            "name": "客户定价明细表是否是主流程"
+        },
+        "custQuoteDetIsManualModificationDate": {
+            "meaning": "客户定价明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "客户定价明细表是否手动修改计划生产时间"
+        },
+        "custQuoteDetIsolation": {
+            "meaning": "客户定价明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "客户定价明细表智能节点数据隔离标识"
+        },
+        "custQuoteDetItemId": {
+            "meaning": "客户定价明细表定价项目id。可以是工序、物料、产品。",
+            "reachable": true,
+            "name": "客户定价明细表定价项目id"
+        },
+        "custQuoteDetJsScript": {
+            "meaning": "客户定价明细表js脚本",
+            "reachable": true,
+            "name": "客户定价明细表js脚本"
+        },
+        "custQuoteDetMarkupRate": {
+            "meaning": "客户定价明细表上浮率",
+            "reachable": true,
+            "name": "客户定价明细表上浮率"
+        },
+        "custQuoteDetMaterialId": {
+            "meaning": "客户定价明细表物料id",
+            "reachable": true,
+            "name": "客户定价明细表物料id"
+        },
+        "custQuoteDetMaxQty": {
+            "meaning": "客户定价明细表最大数量",
+            "reachable": true,
+            "name": "客户定价明细表最大数量"
+        },
+        "custQuoteDetMinOrderQty": {
+            "meaning": "客户定价明细表起订量",
+            "reachable": true,
+            "name": "客户定价明细表起订量"
+        },
+        "custQuoteDetMinPrice": {
+            "meaning": "客户定价明细表起步价",
+            "reachable": true,
+            "name": "客户定价明细表起步价"
+        },
+        "custQuoteDetMinQty": {
+            "meaning": "客户定价明细表最小数量",
+            "reachable": true,
+            "name": "客户定价明细表最小数量"
+        },
+        "custQuoteDetName": {
+            "meaning": "客户定价明细表智能节点名",
+            "reachable": true,
+            "name": "客户定价明细表智能节点名"
+        },
+        "custQuoteDetNameCodeSearch": {
+            "meaning": "客户定价明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "客户定价明细表name、user_code模糊搜索"
+        },
+        "custQuoteDetNumberExtra1": {
+            "meaning": "客户定价明细表扩展数量1",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量1"
+        },
+        "custQuoteDetNumberExtra2": {
+            "meaning": "客户定价明细表扩展数量2",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量2"
+        },
+        "custQuoteDetNumberExtra3": {
+            "meaning": "客户定价明细表扩展数量3",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量3"
+        },
+        "custQuoteDetNumberExtra4": {
+            "meaning": "客户定价明细表扩展数量4",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量4"
+        },
+        "custQuoteDetNumberExtra5": {
+            "meaning": "客户定价明细表扩展数量5",
+            "reachable": true,
+            "name": "客户定价明细表扩展数量5"
+        },
+        "custQuoteDetParentId": {
+            "meaning": "客户定价明细表父节点ID",
+            "reachable": true,
+            "name": "客户定价明细表父节点ID"
+        },
+        "custQuoteDetPlannedOutputQuantity": {
+            "meaning": "客户定价明细表计划产出数量",
+            "reachable": true,
+            "name": "客户定价明细表计划产出数量"
+        },
+        "custQuoteDetPlannedTimeRequired": {
+            "meaning": "客户定价明细表计划需时(小时)",
+            "reachable": true,
+            "name": "客户定价明细表计划需时"
+        },
+        "custQuoteDetPrintTimes": {
+            "meaning": "客户定价明细表打印次数",
+            "reachable": true,
+            "name": "客户定价明细表打印次数"
+        },
+        "custQuoteDetPriority": {
+            "meaning": "客户定价明细表优先级",
+            "reachable": true,
+            "name": "客户定价明细表优先级"
+        },
+        "custQuoteDetProcessInstanceId": {
+            "meaning": "客户定价明细表流程实例ID",
+            "reachable": true,
+            "name": "客户定价明细表流程实例ID"
+        },
+        "custQuoteDetProductionProcessesTypeId": {
+            "meaning": "客户定价明细表工序类型ID",
+            "reachable": true,
+            "name": "客户定价明细表工序类型ID"
+        },
+        "custQuoteDetProductionShiftId": {
+            "meaning": "客户定价明细表生产班次ID",
+            "reachable": true,
+            "name": "客户定价明细表生产班次ID"
+        },
+        "custQuoteDetQuantity": {
+            "meaning": "客户定价明细表任务数量",
+            "reachable": true,
+            "name": "客户定价明细表任务数量"
+        },
+        "custQuoteDetQuotationUnitPriceIncludingTax": {
+            "meaning": "客户定价明细表含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "客户定价明细表含税报价单价"
+        },
+        "custQuoteDetReceiptDate": {
+            "meaning": "客户定价明细表单据日期",
+            "reachable": true,
+            "name": "客户定价明细表单据日期"
+        },
+        "custQuoteDetReceiptType": {
+            "meaning": "客户定价明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "客户定价明细表单据类型"
+        },
+        "custQuoteDetRelatedTasksId": {
+            "meaning": "客户定价明细表关联任务id",
+            "reachable": true,
+            "name": "客户定价明细表关联任务id"
+        },
+        "custQuoteDetSerialNumber": {
+            "meaning": "客户定价明细表顺序号",
+            "reachable": true,
+            "name": "客户定价明细表顺序号"
+        },
+        "custQuoteDetSource": {
+            "meaning": "客户定价明细表源",
+            "reachable": true,
+            "name": "客户定价明细表源"
+        },
+        "custQuoteDetSourceType": {
+            "meaning": "客户定价明细表来源类型",
+            "reachable": true,
+            "name": "客户定价明细表来源类型"
+        },
+        "custQuoteDetState": {
+            "meaning": "客户定价明细表通用状态",
+            "reachable": true,
+            "name": "客户定价明细表通用状态"
+        },
+        "custQuoteDetSystemCode": {
+            "meaning": "客户定价明细表系统编码",
+            "reachable": true,
+            "name": "客户定价明细表系统编码"
+        },
+        "custQuoteDetTarget": {
+            "meaning": "客户定价明细表目标",
+            "reachable": true,
+            "name": "客户定价明细表目标"
+        },
+        "custQuoteDetTaskNodeName": {
+            "meaning": "客户定价明细表任务节点名称",
+            "reachable": true,
+            "name": "客户定价明细表任务节点名称"
+        },
+        "custQuoteDetTenantId": {
+            "meaning": "客户定价明细表租户ID",
+            "reachable": true,
+            "name": "客户定价明细表租户ID"
+        },
+        "custQuoteDetThirdPartyClass": {
+            "meaning": "客户定价明细表第三方分类",
+            "reachable": true,
+            "name": "客户定价明细表第三方分类"
+        },
+        "custQuoteDetThirdPartyId": {
+            "meaning": "客户定价明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "客户定价明细表第三方系统中的唯一ID"
+        },
+        "custQuoteDetThirdPartyName": {
+            "meaning": "客户定价明细表第三方名称",
+            "reachable": true,
+            "name": "客户定价明细表第三方名称"
+        },
+        "custQuoteDetToAuditDate": {
+            "meaning": "custQuoteDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToBeginTime": {
+            "meaning": "custQuoteDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToCreateTime": {
+            "meaning": "custQuoteDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDateExtra1": {
+            "meaning": "custQuoteDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDateExtra2": {
+            "meaning": "custQuoteDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDateExtra3": {
+            "meaning": "custQuoteDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDateExtra4": {
+            "meaning": "custQuoteDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDateExtra5": {
+            "meaning": "custQuoteDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToDeliveryDate": {
+            "meaning": "custQuoteDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToEndTime": {
+            "meaning": "custQuoteDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToReceiptDate": {
+            "meaning": "custQuoteDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetToUpdateTime": {
+            "meaning": "custQuoteDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custQuoteDetUnitCode": {
+            "meaning": "客户定价明细表单位id",
+            "reachable": true,
+            "name": "客户定价明细表单位id"
+        },
+        "custQuoteDetUnitId": {
+            "meaning": "客户定价明细表计价单位id",
+            "reachable": true,
+            "name": "客户定价明细表计价单位id"
+        },
+        "custQuoteDetUnitPriceIncludingTax": {
+            "meaning": "客户定价明细表含税单价",
+            "reachable": true,
+            "name": "客户定价明细表含税单价"
+        },
+        "custQuoteDetUpdateTime": {
+            "meaning": "客户定价明细表更新时间",
+            "reachable": true,
+            "name": "客户定价明细表更新时间"
+        },
+        "custQuoteDetUpdater": {
+            "meaning": "客户定价明细表更新人",
+            "reachable": true,
+            "name": "客户定价明细表更新人"
+        },
+        "custQuoteDetUpdaterId": {
+            "meaning": "客户定价明细表更新人ID",
+            "reachable": true,
+            "name": "客户定价明细表更新人ID"
+        },
+        "custQuoteDetUserCode": {
+            "meaning": "客户定价明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "客户定价明细表智能节点的唯一编码"
+        },
+        "custQuoteDetVarExtra1": {
+            "meaning": "客户定价明细表扩展1",
+            "reachable": true,
+            "name": "客户定价明细表扩展1"
+        },
+        "custQuoteDetVarExtra2": {
+            "meaning": "客户定价明细表扩展2",
+            "reachable": true,
+            "name": "客户定价明细表扩展2"
+        },
+        "custQuoteDetVarExtra3": {
+            "meaning": "客户定价明细表扩展3",
+            "reachable": true,
+            "name": "客户定价明细表扩展3"
+        },
+        "custQuoteDetVarExtra4": {
+            "meaning": "客户定价明细表扩展4",
+            "reachable": true,
+            "name": "客户定价明细表扩展4"
+        },
+        "custQuoteDetVarExtra5": {
+            "meaning": "客户定价明细表扩展5",
+            "reachable": true,
+            "name": "客户定价明细表扩展5"
+        },
+        "custQuoteDetVersion": {
+            "meaning": "客户定价明细表版本号",
+            "reachable": true,
+            "name": "客户定价明细表版本号"
+        }
+    }
+}

@@ -1,0 +1,746 @@
+{
+    "api_name": "/bom/findList",
+    "table_name": "bom表",
+    "request": {
+        "bomClazz": "BOM"
+    },
+    "mainTabClazz": "BOM",
+    "response": {
+        "bomActualTimeRequired": {
+            "meaning": "bom表实际需时(小时)",
+            "reachable": true,
+            "name": "bom表实际需时"
+        },
+        "bomAdjustmentTimeRequired": {
+            "meaning": "bom表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "bom表调整需时"
+        },
+        "bomApplicationId": {
+            "meaning": "bom表应用ID",
+            "reachable": true,
+            "name": "bom表应用ID"
+        },
+        "bomArea": {
+            "meaning": "bom表面积",
+            "reachable": true,
+            "name": "bom表面积"
+        },
+        "bomAuditDate": {
+            "meaning": "bom表审核时间",
+            "reachable": true,
+            "name": "bom表审核时间"
+        },
+        "bomAuditStatus": {
+            "meaning": "bom表审核状态",
+            "reachable": true,
+            "name": "bom表审核状态"
+        },
+        "bomAvailableScheduleId": {
+            "meaning": "bom表可用日程id",
+            "reachable": true,
+            "name": "bom表可用日程id"
+        },
+        "bomBeginTime": {
+            "meaning": "bom表开始时间",
+            "reachable": true,
+            "name": "bom表开始时间"
+        },
+        "bomBizVersion": {
+            "meaning": "bom表业务自定义版本号",
+            "reachable": true,
+            "name": "bom表业务自定义版本号"
+        },
+        "bomBomNodeId": {
+            "meaning": "bom表bom节点_id",
+            "reachable": true,
+            "name": "bom表bom节点_id"
+        },
+        "bomBoxStructure": {
+            "meaning": "bom表盒型结构",
+            "reachable": true,
+            "name": "bom表盒型结构"
+        },
+        "bomBrand": {
+            "meaning": "bom表品牌",
+            "reachable": true,
+            "name": "bom表品牌"
+        },
+        "bomBriefName": {
+            "meaning": "bom表简称",
+            "reachable": true,
+            "name": "bom表简称"
+        },
+        "bomBusDivisId": {
+            "meaning": "bom表事业部id",
+            "reachable": true,
+            "name": "bom表事业部id"
+        },
+        "bomBusinessDepartment": {
+            "meaning": "bom表事业部",
+            "reachable": true,
+            "name": "bom表事业部"
+        },
+        "bomClazz": {
+            "meaning": "bom表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "bom表子类"
+        },
+        "bomClosedReason": {
+            "meaning": "bom表结案原因",
+            "reachable": true,
+            "name": "bom表结案原因"
+        },
+        "bomClosedStatus": {
+            "meaning": "bom表结案状态",
+            "reachable": true,
+            "name": "bom表结案状态"
+        },
+        "bomComment": {
+            "meaning": "bom表评论",
+            "reachable": true,
+            "name": "bom表评论"
+        },
+        "bomCompleteQuantity": {
+            "meaning": "bom表完成数量",
+            "reachable": true,
+            "name": "bom表完成数量"
+        },
+        "bomCompleteStatus": {
+            "meaning": "bom表完成状态",
+            "reachable": true,
+            "name": "bom表完成状态"
+        },
+        "bomCost": {
+            "meaning": "bom表bom成本",
+            "reachable": true,
+            "name": "bom表bom成本"
+        },
+        "bomCostCenter": {
+            "meaning": "bom表成本中心",
+            "reachable": true,
+            "name": "bom表成本中心"
+        },
+        "bomCreateTime": {
+            "meaning": "bom表创建时间",
+            "reachable": true,
+            "name": "bom表创建时间"
+        },
+        "bomCreator": {
+            "meaning": "bom表创建人",
+            "reachable": true,
+            "name": "bom表创建人"
+        },
+        "bomCreatorId": {
+            "meaning": "bom表创建人ID",
+            "reachable": true,
+            "name": "bom表创建人ID"
+        },
+        "bomDateExtra1": {
+            "meaning": "bom表扩展时间1",
+            "reachable": true,
+            "name": "bom表扩展时间1"
+        },
+        "bomDateExtra2": {
+            "meaning": "bom表扩展时间2",
+            "reachable": true,
+            "name": "bom表扩展时间2"
+        },
+        "bomDateExtra3": {
+            "meaning": "bom表扩展时间3",
+            "reachable": true,
+            "name": "bom表扩展时间3"
+        },
+        "bomDateExtra4": {
+            "meaning": "bom表扩展时间4",
+            "reachable": true,
+            "name": "bom表扩展时间4"
+        },
+        "bomDateExtra5": {
+            "meaning": "bom表扩展时间5",
+            "reachable": true,
+            "name": "bom表扩展时间5"
+        },
+        "bomDefaultType": {
+            "meaning": "bom表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "bom表智能节点主类型"
+        },
+        "bomDeliveryDate": {
+            "meaning": "bom表交货日期",
+            "reachable": true,
+            "name": "bom表交货日期"
+        },
+        "bomDescription": {
+            "meaning": "bom表描述",
+            "reachable": true,
+            "name": "bom表描述"
+        },
+        "bomEffecTime": {
+            "meaning": "bom表有效时间",
+            "reachable": true,
+            "name": "bom表有效时间"
+        },
+        "bomEndTime": {
+            "meaning": "bom表结束时间",
+            "reachable": true,
+            "name": "bom表结束时间"
+        },
+        "bomEndTimeRequired": {
+            "meaning": "bom表最后需时(小时)",
+            "reachable": true,
+            "name": "bom表最后需时"
+        },
+        "bomEngName": {
+            "meaning": "bom表英文名称",
+            "reachable": true,
+            "name": "bom表英文名称"
+        },
+        "bomEquipmentId": {
+            "meaning": "bom表设备id",
+            "reachable": true,
+            "name": "bom表设备id"
+        },
+        "bomExchangeRateId": {
+            "meaning": "bom表币种汇率id",
+            "reachable": true,
+            "name": "bom表币种汇率id"
+        },
+        "bomExtension": {
+            "meaning": "bom表扩展数据",
+            "reachable": true,
+            "name": "bom表扩展数据"
+        },
+        "bomExternalState": {
+            "meaning": "bom表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "bom表上流程状态位"
+        },
+        "bomFailureTime": {
+            "meaning": "bom表失效时间",
+            "reachable": true,
+            "name": "bom表失效时间"
+        },
+        "bomFilterClazz": {
+            "meaning": "bom表冗余字段用于筛选",
+            "reachable": false,
+            "name": "bom表冗余字段用于筛选"
+        },
+        "bomFlags": {
+            "meaning": "bom表63位标志位",
+            "reachable": true,
+            "name": "bom表63位标志位"
+        },
+        "bomFromAuditDate": {
+            "meaning": "bomFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromBeginTime": {
+            "meaning": "bomFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromCreateTime": {
+            "meaning": "bomFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDateExtra1": {
+            "meaning": "bomFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDateExtra2": {
+            "meaning": "bomFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDateExtra3": {
+            "meaning": "bomFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDateExtra4": {
+            "meaning": "bomFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDateExtra5": {
+            "meaning": "bomFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromDeliveryDate": {
+            "meaning": "bomFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromEffecTime": {
+            "meaning": "bom表有效期开始时间",
+            "reachable": false,
+            "name": "bom表有效期开始时间"
+        },
+        "bomFromEndTime": {
+            "meaning": "bomFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromFailureTime": {
+            "meaning": "bom表失效时间开始时间",
+            "reachable": false,
+            "name": "bom表失效时间开始时间"
+        },
+        "bomFromReceiptDate": {
+            "meaning": "bomFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFromUpdateTime": {
+            "meaning": "bomFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomFscType": {
+            "meaning": "bom表FSC声明",
+            "reachable": true,
+            "name": "bom表FSC声明"
+        },
+        "bomGenerativePeople": {
+            "meaning": "bom表下发人",
+            "reachable": true,
+            "name": "bom表下发人"
+        },
+        "bomGenerativeState": {
+            "meaning": "bom表下发状态",
+            "reachable": true,
+            "name": "bom表下发状态"
+        },
+        "bomGroovyScript": {
+            "meaning": "bom表groovy脚本",
+            "reachable": true,
+            "name": "bom表groovy脚本"
+        },
+        "bomGropeCode": {
+            "meaning": "bom表搜索码",
+            "reachable": true,
+            "name": "bom表搜索码"
+        },
+        "bomHasmoq": {
+            "meaning": "bom表isMOQ",
+            "reachable": true,
+            "name": "bom表isMOQ"
+        },
+        "bomId": {
+            "meaning": "bom表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "bom表PK"
+        },
+        "bomInUsed": {
+            "meaning": "bom表是否被使用",
+            "reachable": true,
+            "name": "bom表是否被使用"
+        },
+        "bomInformationCard": {
+            "meaning": "bom表资料卡",
+            "reachable": true,
+            "name": "bom表资料卡"
+        },
+        "bomInvTypeTaxRateId": {
+            "meaning": "bom表发票税率id",
+            "reachable": true,
+            "name": "bom表发票税率id"
+        },
+        "bomIsBanned": {
+            "meaning": "bom表是否被禁用",
+            "reachable": true,
+            "name": "bom表是否被禁用"
+        },
+        "bomIsDefault": {
+            "meaning": "bom表是否默认",
+            "reachable": true,
+            "name": "bom表是否默认"
+        },
+        "bomIsDeleted": {
+            "meaning": "bom表是否被删除",
+            "reachable": true,
+            "name": "bom表是否被删除"
+        },
+        "bomIsLeaf": {
+            "meaning": "bom表是否叶子节点",
+            "reachable": true,
+            "name": "bom表是否叶子节点"
+        },
+        "bomIsMainFlow": {
+            "meaning": "bom表是否是主流程",
+            "reachable": true,
+            "name": "bom表是否是主流程"
+        },
+        "bomIsManualModificationDate": {
+            "meaning": "bom表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "bom表是否手动修改计划生产时间"
+        },
+        "bomIsolation": {
+            "meaning": "bom表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "bom表智能节点数据隔离标识"
+        },
+        "bomJsScript": {
+            "meaning": "bom表js脚本",
+            "reachable": true,
+            "name": "bom表js脚本"
+        },
+        "bomMaterialId": {
+            "meaning": "bom表物料id",
+            "reachable": true,
+            "name": "bom表物料id"
+        },
+        "bomModelNumber": {
+            "meaning": "bom表型号",
+            "reachable": true,
+            "name": "bom表型号"
+        },
+        "bomMoq": {
+            "meaning": "bom表MOQ",
+            "reachable": true,
+            "name": "bom表MOQ"
+        },
+        "bomName": {
+            "meaning": "bom表智能节点名",
+            "reachable": true,
+            "name": "bom表智能节点名"
+        },
+        "bomNameCodeSearch": {
+            "meaning": "bom表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "bom表name、user_code模糊搜索"
+        },
+        "bomNumberExtra1": {
+            "meaning": "bom表扩展数量1",
+            "reachable": true,
+            "name": "bom表扩展数量1"
+        },
+        "bomNumberExtra2": {
+            "meaning": "bom表扩展数量2",
+            "reachable": true,
+            "name": "bom表扩展数量2"
+        },
+        "bomNumberExtra3": {
+            "meaning": "bom表扩展数量3",
+            "reachable": true,
+            "name": "bom表扩展数量3"
+        },
+        "bomNumberExtra4": {
+            "meaning": "bom表扩展数量4",
+            "reachable": true,
+            "name": "bom表扩展数量4"
+        },
+        "bomNumberExtra5": {
+            "meaning": "bom表扩展数量5",
+            "reachable": true,
+            "name": "bom表扩展数量5"
+        },
+        "bomOem": {
+            "meaning": "bom表OEM",
+            "reachable": true,
+            "name": "bom表OEM"
+        },
+        "bomParentId": {
+            "meaning": "bom表父节点ID",
+            "reachable": true,
+            "name": "bom表父节点ID"
+        },
+        "bomPerQuantity": {
+            "meaning": "bom表每件数量",
+            "reachable": true,
+            "name": "bom表每件数量"
+        },
+        "bomPlannedOutputQuantity": {
+            "meaning": "bom表计划产出数量",
+            "reachable": true,
+            "name": "bom表计划产出数量"
+        },
+        "bomPlannedTimeRequired": {
+            "meaning": "bom表计划需时(小时)",
+            "reachable": true,
+            "name": "bom表计划需时"
+        },
+        "bomPrintTimes": {
+            "meaning": "bom表打印次数",
+            "reachable": true,
+            "name": "bom表打印次数"
+        },
+        "bomPriority": {
+            "meaning": "bom表优先级",
+            "reachable": true,
+            "name": "bom表优先级"
+        },
+        "bomProcessInstanceId": {
+            "meaning": "bom表流程实例ID",
+            "reachable": true,
+            "name": "bom表流程实例ID"
+        },
+        "bomProductionProcessesTypeId": {
+            "meaning": "bom表工序类型ID",
+            "reachable": true,
+            "name": "bom表工序类型ID"
+        },
+        "bomProductionShiftId": {
+            "meaning": "bom表生产班次ID",
+            "reachable": true,
+            "name": "bom表生产班次ID"
+        },
+        "bomProjectCode": {
+            "meaning": "bom表项目编码",
+            "reachable": true,
+            "name": "bom表项目编码"
+        },
+        "bomProjectName": {
+            "meaning": "bom表项目名称",
+            "reachable": true,
+            "name": "bom表项目名称"
+        },
+        "bomPrototypeEffect": {
+            "meaning": "bom表打样效果",
+            "reachable": true,
+            "name": "bom表打样效果"
+        },
+        "bomQuantity": {
+            "meaning": "bom表任务数量",
+            "reachable": true,
+            "name": "bom表任务数量"
+        },
+        "bomReceiptDate": {
+            "meaning": "bom表单据日期",
+            "reachable": true,
+            "name": "bom表单据日期"
+        },
+        "bomReceiptType": {
+            "meaning": "bom表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "bom表单据类型"
+        },
+        "bomRelatedTasksId": {
+            "meaning": "bom表关联任务id",
+            "reachable": true,
+            "name": "bom表关联任务id"
+        },
+        "bomRss": {
+            "meaning": "bom表产品RSS",
+            "reachable": true,
+            "name": "bom表产品RSS"
+        },
+        "bomSerialNumber": {
+            "meaning": "bom表顺序号",
+            "reachable": true,
+            "name": "bom表顺序号"
+        },
+        "bomSource": {
+            "meaning": "bom表源",
+            "reachable": true,
+            "name": "bom表源"
+        },
+        "bomSourceMaterialCode": {
+            "meaning": "bom表终端料号",
+            "reachable": true,
+            "name": "bom表终端料号"
+        },
+        "bomSourceType": {
+            "meaning": "bom表来源类型",
+            "reachable": true,
+            "name": "bom表来源类型"
+        },
+        "bomState": {
+            "meaning": "bom表通用状态",
+            "reachable": true,
+            "name": "bom表通用状态"
+        },
+        "bomSystemCode": {
+            "meaning": "bom表系统编码",
+            "reachable": true,
+            "name": "bom表系统编码"
+        },
+        "bomTarget": {
+            "meaning": "bom表目标",
+            "reachable": true,
+            "name": "bom表目标"
+        },
+        "bomTaskNodeName": {
+            "meaning": "bom表任务节点名称",
+            "reachable": true,
+            "name": "bom表任务节点名称"
+        },
+        "bomTaskNodeType": {
+            "meaning": "bom表任务节点类型",
+            "reachable": true,
+            "name": "bom表任务节点类型"
+        },
+        "bomTenantId": {
+            "meaning": "bom表租户_id",
+            "reachable": true,
+            "name": "bom表租户_id"
+        },
+        "bomThirdPartyClass": {
+            "meaning": "bom表第三方分类",
+            "reachable": true,
+            "name": "bom表第三方分类"
+        },
+        "bomThirdPartyId": {
+            "meaning": "bom表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "bom表第三方系统中的唯一ID"
+        },
+        "bomThirdPartyName": {
+            "meaning": "bom表第三方名称",
+            "reachable": true,
+            "name": "bom表第三方名称"
+        },
+        "bomToAuditDate": {
+            "meaning": "bomToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToBeginTime": {
+            "meaning": "bomToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToCreateTime": {
+            "meaning": "bomToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDateExtra1": {
+            "meaning": "bomToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDateExtra2": {
+            "meaning": "bomToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDateExtra3": {
+            "meaning": "bomToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDateExtra4": {
+            "meaning": "bomToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDateExtra5": {
+            "meaning": "bomToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToDeliveryDate": {
+            "meaning": "bomToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToEffecTime": {
+            "meaning": "bom表有效期结束时间",
+            "reachable": false,
+            "name": "bom表有效期结束时间"
+        },
+        "bomToEndTime": {
+            "meaning": "bomToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToFailureTime": {
+            "meaning": "bom表失效时间结束时间",
+            "reachable": false,
+            "name": "bom表失效时间结束时间"
+        },
+        "bomToReceiptDate": {
+            "meaning": "bomToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomToUpdateTime": {
+            "meaning": "bomToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomType": {
+            "meaning": "bom表类型",
+            "reachable": true,
+            "name": "bom表类型"
+        },
+        "bomUnitCode": {
+            "meaning": "bom表单位id",
+            "reachable": true,
+            "name": "bom表单位id"
+        },
+        "bomUpdateTime": {
+            "meaning": "bom表更新时间",
+            "reachable": true,
+            "name": "bom表更新时间"
+        },
+        "bomUpdater": {
+            "meaning": "bom表更新人",
+            "reachable": true,
+            "name": "bom表更新人"
+        },
+        "bomUpdaterId": {
+            "meaning": "bom表更新人ID",
+            "reachable": true,
+            "name": "bom表更新人ID"
+        },
+        "bomUserCode": {
+            "meaning": "bom表智能节点的唯一编码",
+            "reachable": true,
+            "name": "bom表智能节点的唯一编码"
+        },
+        "bomVarExtra1": {
+            "meaning": "bom表扩展1",
+            "reachable": true,
+            "name": "bom表扩展1"
+        },
+        "bomVarExtra2": {
+            "meaning": "bom表扩展2",
+            "reachable": true,
+            "name": "bom表扩展2"
+        },
+        "bomVarExtra3": {
+            "meaning": "bom表扩展3",
+            "reachable": true,
+            "name": "bom表扩展3"
+        },
+        "bomVarExtra4": {
+            "meaning": "bom表扩展4",
+            "reachable": true,
+            "name": "bom表扩展4"
+        },
+        "bomVarExtra5": {
+            "meaning": "bom表扩展5",
+            "reachable": true,
+            "name": "bom表扩展5"
+        },
+        "bomVersion": {
+            "meaning": "bom表版本号",
+            "reachable": true,
+            "name": "bom表版本号"
+        },
+        "bomVersionNumber": {
+            "meaning": "bom表Bom版本号",
+            "reachable": true,
+            "name": "bom表Bom版本号"
+        },
+        "bomVolume": {
+            "meaning": "bom表体积",
+            "reachable": true,
+            "name": "bom表体积"
+        },
+        "bomWeight": {
+            "meaning": "bom表单重Kg",
+            "reachable": true,
+            "name": "bom表单重Kg"
+        }
+    }
+}

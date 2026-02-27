@@ -1,0 +1,391 @@
+{
+    "api_name": "/corr/findList",
+    "table_name": "楞别",
+    "request": {
+        "corrClazz": "CORR"
+    },
+    "mainTabClazz": "CORR",
+    "response": {
+        "corrApplicationId": {
+            "meaning": "楞别应用ID",
+            "reachable": true,
+            "name": "楞别应用ID"
+        },
+        "corrAuditDate": {
+            "meaning": "楞别审核时间",
+            "reachable": true,
+            "name": "楞别审核时间"
+        },
+        "corrAuditStatus": {
+            "meaning": "楞别审核状态",
+            "reachable": true,
+            "name": "楞别审核状态"
+        },
+        "corrBizVersion": {
+            "meaning": "楞别业务自定义版本号",
+            "reachable": true,
+            "name": "楞别业务自定义版本号"
+        },
+        "corrBriefName": {
+            "meaning": "楞别简称",
+            "reachable": true,
+            "name": "楞别简称"
+        },
+        "corrBusDivisId": {
+            "meaning": "楞别事业部id",
+            "reachable": true,
+            "name": "楞别事业部id"
+        },
+        "corrClazz": {
+            "meaning": "楞别子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "楞别子类"
+        },
+        "corrComment": {
+            "meaning": "楞别评论",
+            "reachable": true,
+            "name": "楞别评论"
+        },
+        "corrCreateTime": {
+            "meaning": "楞别创建时间",
+            "reachable": true,
+            "name": "楞别创建时间"
+        },
+        "corrCreator": {
+            "meaning": "楞别创建人",
+            "reachable": true,
+            "name": "楞别创建人"
+        },
+        "corrCreatorId": {
+            "meaning": "楞别创建人ID",
+            "reachable": true,
+            "name": "楞别创建人ID"
+        },
+        "corrDateExtra1": {
+            "meaning": "楞别扩展时间1",
+            "reachable": true,
+            "name": "楞别扩展时间1"
+        },
+        "corrDateExtra2": {
+            "meaning": "楞别扩展时间2",
+            "reachable": true,
+            "name": "楞别扩展时间2"
+        },
+        "corrDateExtra3": {
+            "meaning": "楞别扩展时间3",
+            "reachable": true,
+            "name": "楞别扩展时间3"
+        },
+        "corrDateExtra4": {
+            "meaning": "楞别扩展时间4",
+            "reachable": true,
+            "name": "楞别扩展时间4"
+        },
+        "corrDateExtra5": {
+            "meaning": "楞别扩展时间5",
+            "reachable": true,
+            "name": "楞别扩展时间5"
+        },
+        "corrDefaultType": {
+            "meaning": "楞别智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "楞别智能节点主类型"
+        },
+        "corrDescription": {
+            "meaning": "楞别描述",
+            "reachable": true,
+            "name": "楞别描述"
+        },
+        "corrEngName": {
+            "meaning": "楞别英文名称",
+            "reachable": true,
+            "name": "楞别英文名称"
+        },
+        "corrExtension": {
+            "meaning": "楞别扩展数据",
+            "reachable": true,
+            "name": "楞别扩展数据"
+        },
+        "corrExternalState": {
+            "meaning": "楞别上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "楞别上流程状态位"
+        },
+        "corrFlags": {
+            "meaning": "楞别63位标志位",
+            "reachable": true,
+            "name": "楞别63位标志位"
+        },
+        "corrFromAuditDate": {
+            "meaning": "corrFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromCreateTime": {
+            "meaning": "corrFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromDateExtra1": {
+            "meaning": "corrFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromDateExtra2": {
+            "meaning": "corrFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromDateExtra3": {
+            "meaning": "corrFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromDateExtra4": {
+            "meaning": "corrFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromDateExtra5": {
+            "meaning": "corrFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "corrFromUpdateTime": {
+            "meaning": "corrFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "corrGroovyScript": {
+            "meaning": "楞别groovy脚本",
+            "reachable": true,
+            "name": "楞别groovy脚本"
+        },
+        "corrGropeCode": {
+            "meaning": "楞别搜索码",
+            "reachable": true,
+            "name": "楞别搜索码"
+        },
+        "corrId": {
+            "meaning": "楞别PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "楞别PK"
+        },
+        "corrInUsed": {
+            "meaning": "楞别是否被使用",
+            "reachable": true,
+            "name": "楞别是否被使用"
+        },
+        "corrIsBanned": {
+            "meaning": "楞别是否被禁用",
+            "reachable": true,
+            "name": "楞别是否被禁用"
+        },
+        "corrIsDeleted": {
+            "meaning": "楞别是否被删除",
+            "reachable": true,
+            "name": "楞别是否被删除"
+        },
+        "corrIsMainFlow": {
+            "meaning": "楞别是否是主流程",
+            "reachable": true,
+            "name": "楞别是否是主流程"
+        },
+        "corrIsolation": {
+            "meaning": "楞别智能节点数据隔离标识",
+            "reachable": true,
+            "name": "楞别智能节点数据隔离标识"
+        },
+        "corrJsScript": {
+            "meaning": "楞别js脚本",
+            "reachable": true,
+            "name": "楞别js脚本"
+        },
+        "corrName": {
+            "meaning": "楞别智能节点名",
+            "reachable": true,
+            "name": "楞别智能节点名"
+        },
+        "corrNameCodeSearch": {
+            "meaning": "楞别name、user_code模糊搜索",
+            "reachable": true,
+            "name": "楞别name、user_code模糊搜索"
+        },
+        "corrNumberExtra1": {
+            "meaning": "楞别扩展数量1",
+            "reachable": true,
+            "name": "楞别扩展数量1"
+        },
+        "corrNumberExtra2": {
+            "meaning": "楞别扩展数量2",
+            "reachable": true,
+            "name": "楞别扩展数量2"
+        },
+        "corrNumberExtra3": {
+            "meaning": "楞别扩展数量3",
+            "reachable": true,
+            "name": "楞别扩展数量3"
+        },
+        "corrNumberExtra4": {
+            "meaning": "楞别扩展数量4",
+            "reachable": true,
+            "name": "楞别扩展数量4"
+        },
+        "corrNumberExtra5": {
+            "meaning": "楞别扩展数量5",
+            "reachable": true,
+            "name": "楞别扩展数量5"
+        },
+        "corrPaperUsageRate": {
+            "meaning": "楞别用纸率",
+            "reachable": true,
+            "name": "楞别用纸率"
+        },
+        "corrParentId": {
+            "meaning": "楞别父节点ID",
+            "reachable": true,
+            "name": "楞别父节点ID"
+        },
+        "corrProcessInstanceId": {
+            "meaning": "楞别流程实例ID",
+            "reachable": true,
+            "name": "楞别流程实例ID"
+        },
+        "corrSerialNumber": {
+            "meaning": "楞别顺序号",
+            "reachable": true,
+            "name": "楞别顺序号"
+        },
+        "corrState": {
+            "meaning": "楞别通用状态",
+            "reachable": true,
+            "name": "楞别通用状态"
+        },
+        "corrSystemCode": {
+            "meaning": "楞别系统编码",
+            "reachable": true,
+            "name": "楞别系统编码"
+        },
+        "corrTaskNodeName": {
+            "meaning": "楞别任务节点名称",
+            "reachable": true,
+            "name": "楞别任务节点名称"
+        },
+        "corrTenantId": {
+            "meaning": "楞别租户id",
+            "reachable": true,
+            "name": "楞别租户id"
+        },
+        "corrThickness": {
+            "meaning": "楞别厚度",
+            "reachable": true,
+            "name": "楞别厚度"
+        },
+        "corrThirdPartyClass": {
+            "meaning": "楞别第三方分类",
+            "reachable": true,
+            "name": "楞别第三方分类"
+        },
+        "corrThirdPartyId": {
+            "meaning": "楞别第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "楞别第三方系统中的唯一ID"
+        },
+        "corrThirdPartyName": {
+            "meaning": "楞别第三方名称",
+            "reachable": true,
+            "name": "楞别第三方名称"
+        },
+        "corrToAuditDate": {
+            "meaning": "corrToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToCreateTime": {
+            "meaning": "corrToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToDateExtra1": {
+            "meaning": "corrToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToDateExtra2": {
+            "meaning": "corrToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToDateExtra3": {
+            "meaning": "corrToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToDateExtra4": {
+            "meaning": "corrToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToDateExtra5": {
+            "meaning": "corrToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "corrToUpdateTime": {
+            "meaning": "corrToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "corrUpdateTime": {
+            "meaning": "楞别更新时间",
+            "reachable": true,
+            "name": "楞别更新时间"
+        },
+        "corrUpdater": {
+            "meaning": "楞别更新人",
+            "reachable": true,
+            "name": "楞别更新人"
+        },
+        "corrUpdaterId": {
+            "meaning": "楞别更新人ID",
+            "reachable": true,
+            "name": "楞别更新人ID"
+        },
+        "corrUserCode": {
+            "meaning": "楞别智能节点的唯一编码",
+            "reachable": true,
+            "name": "楞别智能节点的唯一编码"
+        },
+        "corrVarExtra1": {
+            "meaning": "楞别扩展1",
+            "reachable": true,
+            "name": "楞别扩展1"
+        },
+        "corrVarExtra2": {
+            "meaning": "楞别扩展2",
+            "reachable": true,
+            "name": "楞别扩展2"
+        },
+        "corrVarExtra3": {
+            "meaning": "楞别扩展3",
+            "reachable": true,
+            "name": "楞别扩展3"
+        },
+        "corrVarExtra4": {
+            "meaning": "楞别扩展4",
+            "reachable": true,
+            "name": "楞别扩展4"
+        },
+        "corrVarExtra5": {
+            "meaning": "楞别扩展5",
+            "reachable": true,
+            "name": "楞别扩展5"
+        },
+        "corrVersion": {
+            "meaning": "楞别版本号",
+            "reachable": true,
+            "name": "楞别版本号"
+        }
+    }
+}

@@ -1,0 +1,486 @@
+{
+    "api_name": "/bom-node-quantity/findList",
+    "table_name": "bomNode用量数量",
+    "request": {
+        "bomNodeQuantityClazz": "BOM_NODE_QUANTITY"
+    },
+    "mainTabClazz": "BOM_NODE_QUANTITY",
+    "response": {
+        "bomNodeQuantityApplicationId": {
+            "meaning": "bomNode用量数量应用ID",
+            "reachable": false,
+            "name": "bomNode用量数量应用ID"
+        },
+        "bomNodeQuantityAuditDate": {
+            "meaning": "bomNode用量数量审核时间",
+            "reachable": false,
+            "name": "bomNode用量数量审核时间"
+        },
+        "bomNodeQuantityAuditStatus": {
+            "meaning": "bomNode用量数量审核状态",
+            "reachable": false,
+            "name": "bomNode用量数量审核状态"
+        },
+        "bomNodeQuantityBizVersion": {
+            "meaning": "bomNode用量数量业务自定义版本号",
+            "reachable": false,
+            "name": "bomNode用量数量业务自定义版本号"
+        },
+        "bomNodeQuantityBomNodeQuantityFilterClazz": {
+            "meaning": "bomNode用量数量过滤用不对前端开放",
+            "reachable": false,
+            "name": "bomNode用量数量过滤用不对前端开放"
+        },
+        "bomNodeQuantityBriefName": {
+            "meaning": "bomNode用量数量简称",
+            "reachable": false,
+            "name": "bomNode用量数量简称"
+        },
+        "bomNodeQuantityBusDivisId": {
+            "meaning": "bomNode用量数量事业部id",
+            "reachable": false,
+            "name": "bomNode用量数量事业部id"
+        },
+        "bomNodeQuantityClazz": {
+            "meaning": "bomNode用量数量子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "bomNode用量数量子类"
+        },
+        "bomNodeQuantityComment": {
+            "meaning": "bomNode用量数量评论",
+            "reachable": false,
+            "name": "bomNode用量数量评论"
+        },
+        "bomNodeQuantityCorrPaper": {
+            "meaning": "bomNode用量数量楞别",
+            "reachable": false,
+            "name": "bomNode用量数量楞别"
+        },
+        "bomNodeQuantityCreateTime": {
+            "meaning": "bomNode用量数量创建时间",
+            "reachable": false,
+            "name": "bomNode用量数量创建时间"
+        },
+        "bomNodeQuantityCreator": {
+            "meaning": "bomNode用量数量创建人",
+            "reachable": false,
+            "name": "bomNode用量数量创建人"
+        },
+        "bomNodeQuantityCreatorId": {
+            "meaning": "bomNode用量数量创建人ID",
+            "reachable": false,
+            "name": "bomNode用量数量创建人ID"
+        },
+        "bomNodeQuantityDateExtra1": {
+            "meaning": "bomNode用量数量扩展时间1",
+            "reachable": false,
+            "name": "bomNode用量数量扩展时间1"
+        },
+        "bomNodeQuantityDateExtra2": {
+            "meaning": "bomNode用量数量扩展时间2",
+            "reachable": false,
+            "name": "bomNode用量数量扩展时间2"
+        },
+        "bomNodeQuantityDateExtra3": {
+            "meaning": "bomNode用量数量扩展时间3",
+            "reachable": false,
+            "name": "bomNode用量数量扩展时间3"
+        },
+        "bomNodeQuantityDateExtra4": {
+            "meaning": "bomNode用量数量扩展时间4",
+            "reachable": false,
+            "name": "bomNode用量数量扩展时间4"
+        },
+        "bomNodeQuantityDateExtra5": {
+            "meaning": "bomNode用量数量扩展时间5",
+            "reachable": false,
+            "name": "bomNode用量数量扩展时间5"
+        },
+        "bomNodeQuantityDefaultType": {
+            "meaning": "bomNode用量数量智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "bomNode用量数量智能节点主类型"
+        },
+        "bomNodeQuantityDescription": {
+            "meaning": "bomNode用量数量描述",
+            "reachable": false,
+            "name": "bomNode用量数量描述"
+        },
+        "bomNodeQuantityEngName": {
+            "meaning": "bomNode用量数量英文名称",
+            "reachable": false,
+            "name": "bomNode用量数量英文名称"
+        },
+        "bomNodeQuantityExtension": {
+            "meaning": "bomNode用量数量扩展数据",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数据"
+        },
+        "bomNodeQuantityExternalState": {
+            "meaning": "bomNode用量数量上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "bomNode用量数量上流程状态位"
+        },
+        "bomNodeQuantityFilterClazz": {
+            "meaning": "bomNode用量数量过滤用不对前端开放",
+            "reachable": false,
+            "name": "bomNode用量数量过滤用不对前端开放"
+        },
+        "bomNodeQuantityFlags": {
+            "meaning": "bomNode用量数量63位标志位",
+            "reachable": false,
+            "name": "bomNode用量数量63位标志位"
+        },
+        "bomNodeQuantityFromAuditDate": {
+            "meaning": "bomNodeQuantityFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromCreateTime": {
+            "meaning": "bomNodeQuantityFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromDateExtra1": {
+            "meaning": "bomNodeQuantityFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromDateExtra2": {
+            "meaning": "bomNodeQuantityFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromDateExtra3": {
+            "meaning": "bomNodeQuantityFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromDateExtra4": {
+            "meaning": "bomNodeQuantityFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromDateExtra5": {
+            "meaning": "bomNodeQuantityFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityFromUpdateTime": {
+            "meaning": "bomNodeQuantityFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityGroovyScript": {
+            "meaning": "bomNode用量数量groovy脚本",
+            "reachable": false,
+            "name": "bomNode用量数量groovy脚本"
+        },
+        "bomNodeQuantityGropeCode": {
+            "meaning": "bomNode用量数量搜索码",
+            "reachable": false,
+            "name": "bomNode用量数量搜索码"
+        },
+        "bomNodeQuantityId": {
+            "meaning": "bomNode用量数量PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "bomNode用量数量PK"
+        },
+        "bomNodeQuantityInUsed": {
+            "meaning": "bomNode用量数量是否被使用",
+            "reachable": false,
+            "name": "bomNode用量数量是否被使用"
+        },
+        "bomNodeQuantityIsBanned": {
+            "meaning": "bomNode用量数量是否被禁用",
+            "reachable": false,
+            "name": "bomNode用量数量是否被禁用"
+        },
+        "bomNodeQuantityIsDeleted": {
+            "meaning": "bomNode用量数量是否被删除",
+            "reachable": false,
+            "name": "bomNode用量数量是否被删除"
+        },
+        "bomNodeQuantityIsMainFlow": {
+            "meaning": "bomNode用量数量是否是主流程",
+            "reachable": false,
+            "name": "bomNode用量数量是否是主流程"
+        },
+        "bomNodeQuantityIsolation": {
+            "meaning": "bomNode用量数量智能节点数据隔离标识",
+            "reachable": false,
+            "name": "bomNode用量数量智能节点数据隔离标识"
+        },
+        "bomNodeQuantityJsScript": {
+            "meaning": "bomNode用量数量js脚本",
+            "reachable": false,
+            "name": "bomNode用量数量js脚本"
+        },
+        "bomNodeQuantityLevel": {
+            "meaning": "bomNode用量数量层级",
+            "reachable": false,
+            "name": "bomNode用量数量层级"
+        },
+        "bomNodeQuantityName": {
+            "meaning": "bomNode用量数量智能节点名",
+            "reachable": false,
+            "name": "bomNode用量数量智能节点名"
+        },
+        "bomNodeQuantityNameCodeSearch": {
+            "meaning": "bomNode用量数量name、user_code模糊搜索",
+            "reachable": false,
+            "name": "bomNode用量数量name、user_code模糊搜索"
+        },
+        "bomNodeQuantityNumberExtra1": {
+            "meaning": "bomNode用量数量扩展数量1",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数量1"
+        },
+        "bomNodeQuantityNumberExtra2": {
+            "meaning": "bomNode用量数量扩展数量2",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数量2"
+        },
+        "bomNodeQuantityNumberExtra3": {
+            "meaning": "bomNode用量数量扩展数量3",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数量3"
+        },
+        "bomNodeQuantityNumberExtra4": {
+            "meaning": "bomNode用量数量扩展数量4",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数量4"
+        },
+        "bomNodeQuantityNumberExtra5": {
+            "meaning": "bomNode用量数量扩展数量5",
+            "reachable": false,
+            "name": "bomNode用量数量扩展数量5"
+        },
+        "bomNodeQuantityOutputModulus": {
+            "meaning": "bomNode用量数量产出模数",
+            "reachable": false,
+            "name": "bomNode用量数量产出模数"
+        },
+        "bomNodeQuantityOutputPercent": {
+            "meaning": "bomNode用量数量产出比",
+            "reachable": false,
+            "name": "bomNode用量数量产出比"
+        },
+        "bomNodeQuantityParentId": {
+            "meaning": "bomNode用量数量父节点ID",
+            "reachable": false,
+            "name": "bomNode用量数量父节点ID"
+        },
+        "bomNodeQuantityPrdIApyQuantity": {
+            "meaning": "bomNode用量数量已开入库申请数量",
+            "reachable": false,
+            "name": "bomNode用量数量已开入库申请数量"
+        },
+        "bomNodeQuantityPrdIApyStatus": {
+            "meaning": "bomNode用量数量已开入库申请状态",
+            "reachable": false,
+            "name": "bomNode用量数量已开入库申请状态"
+        },
+        "bomNodeQuantityProcessInstanceId": {
+            "meaning": "bomNode用量数量流程实例ID",
+            "reachable": false,
+            "name": "bomNode用量数量流程实例ID"
+        },
+        "bomNodeQuantityPurOrOutQuantity": {
+            "meaning": "bomNode用量数量已采购 / 外发数量",
+            "reachable": false,
+            "name": "bomNode用量数量已采购"
+        },
+        "bomNodeQuantityPurOrOutStatus": {
+            "meaning": "bomNode用量数量已采购 / 外发状态",
+            "reachable": false,
+            "name": "bomNode用量数量已采购"
+        },
+        "bomNodeQuantityQuantity": {
+            "meaning": "bomNode用量数量数量",
+            "reachable": false,
+            "name": "bomNode用量数量数量"
+        },
+        "bomNodeQuantitySerialNumber": {
+            "meaning": "bomNode用量数量顺序号",
+            "reachable": false,
+            "name": "bomNode用量数量顺序号"
+        },
+        "bomNodeQuantityShippedQuantity": {
+            "meaning": "bomNode用量数量已出库数量",
+            "reachable": false,
+            "name": "bomNode用量数量已出库数量"
+        },
+        "bomNodeQuantityShippedStatus": {
+            "meaning": "bomNode用量数量已出库状态",
+            "reachable": false,
+            "name": "bomNode用量数量已出库状态"
+        },
+        "bomNodeQuantitySource": {
+            "meaning": "bomNode用量数量源节点id",
+            "reachable": false,
+            "name": "bomNode用量数量源节点id"
+        },
+        "bomNodeQuantitySourceVersion": {
+            "meaning": "bomNode用量数量源节点版本",
+            "reachable": false,
+            "name": "bomNode用量数量源节点版本"
+        },
+        "bomNodeQuantityState": {
+            "meaning": "bomNode用量数量通用状态",
+            "reachable": false,
+            "name": "bomNode用量数量通用状态"
+        },
+        "bomNodeQuantityStoredQuantity": {
+            "meaning": "bomNode用量数量已入库数量",
+            "reachable": false,
+            "name": "bomNode用量数量已入库数量"
+        },
+        "bomNodeQuantityStoredStatus": {
+            "meaning": "bomNode用量数量已入库状态",
+            "reachable": false,
+            "name": "bomNode用量数量已入库状态"
+        },
+        "bomNodeQuantitySystemCode": {
+            "meaning": "bomNode用量数量系统编码",
+            "reachable": false,
+            "name": "bomNode用量数量系统编码"
+        },
+        "bomNodeQuantityTarget": {
+            "meaning": "bomNode用量数量目标节点id",
+            "reachable": false,
+            "name": "bomNode用量数量目标节点id"
+        },
+        "bomNodeQuantityTargetVersion": {
+            "meaning": "bomNode用量数量目标节点版本",
+            "reachable": false,
+            "name": "bomNode用量数量目标节点版本"
+        },
+        "bomNodeQuantityTaskNodeName": {
+            "meaning": "bomNode用量数量任务节点名称",
+            "reachable": false,
+            "name": "bomNode用量数量任务节点名称"
+        },
+        "bomNodeQuantityThirdPartyClass": {
+            "meaning": "bomNode用量数量第三方分类",
+            "reachable": false,
+            "name": "bomNode用量数量第三方分类"
+        },
+        "bomNodeQuantityThirdPartyId": {
+            "meaning": "bomNode用量数量第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "bomNode用量数量第三方系统中的唯一ID"
+        },
+        "bomNodeQuantityThirdPartyName": {
+            "meaning": "bomNode用量数量第三方名称",
+            "reachable": false,
+            "name": "bomNode用量数量第三方名称"
+        },
+        "bomNodeQuantityToAuditDate": {
+            "meaning": "bomNodeQuantityToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToCreateTime": {
+            "meaning": "bomNodeQuantityToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToDateExtra1": {
+            "meaning": "bomNodeQuantityToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToDateExtra2": {
+            "meaning": "bomNodeQuantityToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToDateExtra3": {
+            "meaning": "bomNodeQuantityToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToDateExtra4": {
+            "meaning": "bomNodeQuantityToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToDateExtra5": {
+            "meaning": "bomNodeQuantityToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityToUpdateTime": {
+            "meaning": "bomNodeQuantityToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bomNodeQuantityTypeCode": {
+            "meaning": "bomNode用量数量连接类型",
+            "reachable": false,
+            "name": "bomNode用量数量连接类型"
+        },
+        "bomNodeQuantityUpdateTime": {
+            "meaning": "bomNode用量数量更新时间",
+            "reachable": false,
+            "name": "bomNode用量数量更新时间"
+        },
+        "bomNodeQuantityUpdater": {
+            "meaning": "bomNode用量数量更新人",
+            "reachable": false,
+            "name": "bomNode用量数量更新人"
+        },
+        "bomNodeQuantityUpdaterId": {
+            "meaning": "bomNode用量数量更新人ID",
+            "reachable": false,
+            "name": "bomNode用量数量更新人ID"
+        },
+        "bomNodeQuantityUseRate": {
+            "meaning": "bomNode用量数量使用率",
+            "reachable": false,
+            "name": "bomNode用量数量使用率"
+        },
+        "bomNodeQuantityUserCode": {
+            "meaning": "bomNode用量数量智能节点的唯一编码",
+            "reachable": false,
+            "name": "bomNode用量数量智能节点的唯一编码"
+        },
+        "bomNodeQuantityValue": {
+            "meaning": "bomNode用量数量连接权值",
+            "reachable": false,
+            "name": "bomNode用量数量连接权值"
+        },
+        "bomNodeQuantityVarExtra1": {
+            "meaning": "bomNode用量数量扩展1",
+            "reachable": false,
+            "name": "bomNode用量数量扩展1"
+        },
+        "bomNodeQuantityVarExtra2": {
+            "meaning": "bomNode用量数量扩展2",
+            "reachable": false,
+            "name": "bomNode用量数量扩展2"
+        },
+        "bomNodeQuantityVarExtra3": {
+            "meaning": "bomNode用量数量扩展3",
+            "reachable": false,
+            "name": "bomNode用量数量扩展3"
+        },
+        "bomNodeQuantityVarExtra4": {
+            "meaning": "bomNode用量数量扩展4",
+            "reachable": false,
+            "name": "bomNode用量数量扩展4"
+        },
+        "bomNodeQuantityVarExtra5": {
+            "meaning": "bomNode用量数量扩展5",
+            "reachable": false,
+            "name": "bomNode用量数量扩展5"
+        },
+        "bomNodeQuantityVersion": {
+            "meaning": "bomNode用量数量版本号",
+            "reachable": false,
+            "name": "bomNode用量数量版本号"
+        }
+    }
+}

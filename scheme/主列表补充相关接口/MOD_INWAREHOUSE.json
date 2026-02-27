@@ -1,0 +1,596 @@
+{
+    "api_name": "/mod-inwarehouse/findList",
+    "table_name": "模具入仓表",
+    "request": {
+        "modInwarehouseClazz": "MOD_INWAREHOUSE"
+    },
+    "mainTabClazz": "MOD_INWAREHOUSE",
+    "response": {
+        "modInwarehouseActualTimeRequired": {
+            "meaning": "模具入仓表实际需时(小时)",
+            "reachable": true,
+            "name": "模具入仓表实际需时"
+        },
+        "modInwarehouseAdjustmentTimeRequired": {
+            "meaning": "模具入仓表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "模具入仓表调整需时"
+        },
+        "modInwarehouseApplicationId": {
+            "meaning": "模具入仓表应用ID",
+            "reachable": true,
+            "name": "模具入仓表应用ID"
+        },
+        "modInwarehouseAuditDate": {
+            "meaning": "模具入仓表审核时间",
+            "reachable": true,
+            "name": "模具入仓表审核时间"
+        },
+        "modInwarehouseAuditStatus": {
+            "meaning": "模具入仓表审核状态",
+            "reachable": true,
+            "name": "模具入仓表审核状态"
+        },
+        "modInwarehouseAvailableScheduleId": {
+            "meaning": "模具入仓表可用日程id",
+            "reachable": true,
+            "name": "模具入仓表可用日程id"
+        },
+        "modInwarehouseBeginTime": {
+            "meaning": "模具入仓表开始时间",
+            "reachable": true,
+            "name": "模具入仓表开始时间"
+        },
+        "modInwarehouseBizVersion": {
+            "meaning": "模具入仓表业务自定义版本号",
+            "reachable": true,
+            "name": "模具入仓表业务自定义版本号"
+        },
+        "modInwarehouseBriefName": {
+            "meaning": "模具入仓表简称",
+            "reachable": true,
+            "name": "模具入仓表简称"
+        },
+        "modInwarehouseBusDivisId": {
+            "meaning": "模具入仓表事业部id",
+            "reachable": true,
+            "name": "模具入仓表事业部id"
+        },
+        "modInwarehouseClazz": {
+            "meaning": "模具入仓表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "模具入仓表子类"
+        },
+        "modInwarehouseClosedReason": {
+            "meaning": "模具入仓表结案原因",
+            "reachable": true,
+            "name": "模具入仓表结案原因"
+        },
+        "modInwarehouseClosedStatus": {
+            "meaning": "模具入仓表结案状态",
+            "reachable": true,
+            "name": "模具入仓表结案状态"
+        },
+        "modInwarehouseComment": {
+            "meaning": "模具入仓表评论",
+            "reachable": true,
+            "name": "模具入仓表评论"
+        },
+        "modInwarehouseCompleteQuantity": {
+            "meaning": "模具入仓表完成数量",
+            "reachable": true,
+            "name": "模具入仓表完成数量"
+        },
+        "modInwarehouseCompleteStatus": {
+            "meaning": "模具入仓表完成状态",
+            "reachable": true,
+            "name": "模具入仓表完成状态"
+        },
+        "modInwarehouseCreateTime": {
+            "meaning": "模具入仓表创建时间",
+            "reachable": true,
+            "name": "模具入仓表创建时间"
+        },
+        "modInwarehouseCreator": {
+            "meaning": "模具入仓表创建人",
+            "reachable": true,
+            "name": "模具入仓表创建人"
+        },
+        "modInwarehouseCreatorId": {
+            "meaning": "模具入仓表创建人ID",
+            "reachable": true,
+            "name": "模具入仓表创建人ID"
+        },
+        "modInwarehouseDateExtra1": {
+            "meaning": "模具入仓表扩展时间1",
+            "reachable": true,
+            "name": "模具入仓表扩展时间1"
+        },
+        "modInwarehouseDateExtra2": {
+            "meaning": "模具入仓表扩展时间2",
+            "reachable": true,
+            "name": "模具入仓表扩展时间2"
+        },
+        "modInwarehouseDateExtra3": {
+            "meaning": "模具入仓表扩展时间3",
+            "reachable": true,
+            "name": "模具入仓表扩展时间3"
+        },
+        "modInwarehouseDateExtra4": {
+            "meaning": "模具入仓表扩展时间4",
+            "reachable": true,
+            "name": "模具入仓表扩展时间4"
+        },
+        "modInwarehouseDateExtra5": {
+            "meaning": "模具入仓表扩展时间5",
+            "reachable": true,
+            "name": "模具入仓表扩展时间5"
+        },
+        "modInwarehouseDefaultType": {
+            "meaning": "模具入仓表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "模具入仓表智能节点主类型"
+        },
+        "modInwarehouseDeliveryDate": {
+            "meaning": "模具入仓表交货日期",
+            "reachable": true,
+            "name": "模具入仓表交货日期"
+        },
+        "modInwarehouseDescription": {
+            "meaning": "模具入仓表描述",
+            "reachable": true,
+            "name": "模具入仓表描述"
+        },
+        "modInwarehouseEndTime": {
+            "meaning": "模具入仓表结束时间",
+            "reachable": true,
+            "name": "模具入仓表结束时间"
+        },
+        "modInwarehouseEndTimeRequired": {
+            "meaning": "模具入仓表最后需时(小时)",
+            "reachable": true,
+            "name": "模具入仓表最后需时"
+        },
+        "modInwarehouseEngName": {
+            "meaning": "模具入仓表英文名称",
+            "reachable": true,
+            "name": "模具入仓表英文名称"
+        },
+        "modInwarehouseEquipmentId": {
+            "meaning": "模具入仓表设备id",
+            "reachable": true,
+            "name": "模具入仓表设备id"
+        },
+        "modInwarehouseExchangeRateId": {
+            "meaning": "模具入仓表币种汇率id",
+            "reachable": true,
+            "name": "模具入仓表币种汇率id"
+        },
+        "modInwarehouseExtension": {
+            "meaning": "模具入仓表扩展数据",
+            "reachable": true,
+            "name": "模具入仓表扩展数据"
+        },
+        "modInwarehouseExternalState": {
+            "meaning": "模具入仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "模具入仓表上流程状态位"
+        },
+        "modInwarehouseFilterClazz": {
+            "meaning": "模具入仓表冗余字段用于筛选",
+            "reachable": false,
+            "name": "模具入仓表冗余字段用于筛选"
+        },
+        "modInwarehouseFlags": {
+            "meaning": "模具入仓表63位标志位",
+            "reachable": true,
+            "name": "模具入仓表63位标志位"
+        },
+        "modInwarehouseFromAuditDate": {
+            "meaning": "modInwarehouseFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromBeginTime": {
+            "meaning": "modInwarehouseFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromCreateTime": {
+            "meaning": "modInwarehouseFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDateExtra1": {
+            "meaning": "modInwarehouseFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDateExtra2": {
+            "meaning": "modInwarehouseFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDateExtra3": {
+            "meaning": "modInwarehouseFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDateExtra4": {
+            "meaning": "modInwarehouseFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDateExtra5": {
+            "meaning": "modInwarehouseFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromDeliveryDate": {
+            "meaning": "modInwarehouseFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromEndTime": {
+            "meaning": "modInwarehouseFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromReceiptDate": {
+            "meaning": "modInwarehouseFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFromUpdateTime": {
+            "meaning": "modInwarehouseFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseFscType": {
+            "meaning": "模具入仓表FSC声明",
+            "reachable": true,
+            "name": "模具入仓表FSC声明"
+        },
+        "modInwarehouseGenerativePeople": {
+            "meaning": "模具入仓表下发人",
+            "reachable": true,
+            "name": "模具入仓表下发人"
+        },
+        "modInwarehouseGenerativeState": {
+            "meaning": "模具入仓表下发状态",
+            "reachable": true,
+            "name": "模具入仓表下发状态"
+        },
+        "modInwarehouseGroovyScript": {
+            "meaning": "模具入仓表groovy脚本",
+            "reachable": true,
+            "name": "模具入仓表groovy脚本"
+        },
+        "modInwarehouseGropeCode": {
+            "meaning": "模具入仓表搜索码",
+            "reachable": true,
+            "name": "模具入仓表搜索码"
+        },
+        "modInwarehouseId": {
+            "meaning": "模具入仓表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "模具入仓表PK"
+        },
+        "modInwarehouseInUsed": {
+            "meaning": "模具入仓表是否被使用",
+            "reachable": true,
+            "name": "模具入仓表是否被使用"
+        },
+        "modInwarehouseInvTypeTaxRateId": {
+            "meaning": "模具入仓表发票税率id",
+            "reachable": true,
+            "name": "模具入仓表发票税率id"
+        },
+        "modInwarehouseIsBanned": {
+            "meaning": "模具入仓表是否被禁用",
+            "reachable": true,
+            "name": "模具入仓表是否被禁用"
+        },
+        "modInwarehouseIsDeleted": {
+            "meaning": "模具入仓表是否被删除",
+            "reachable": true,
+            "name": "模具入仓表是否被删除"
+        },
+        "modInwarehouseIsLeaf": {
+            "meaning": "模具入仓表是否叶子节点",
+            "reachable": true,
+            "name": "模具入仓表是否叶子节点"
+        },
+        "modInwarehouseIsMainFlow": {
+            "meaning": "模具入仓表是否是主流程",
+            "reachable": true,
+            "name": "模具入仓表是否是主流程"
+        },
+        "modInwarehouseIsManualModificationDate": {
+            "meaning": "模具入仓表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "模具入仓表是否手动修改计划生产时间"
+        },
+        "modInwarehouseIsolation": {
+            "meaning": "模具入仓表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "模具入仓表智能节点数据隔离标识"
+        },
+        "modInwarehouseJsScript": {
+            "meaning": "模具入仓表js脚本",
+            "reachable": true,
+            "name": "模具入仓表js脚本"
+        },
+        "modInwarehouseMaterialId": {
+            "meaning": "模具入仓表物料id",
+            "reachable": true,
+            "name": "模具入仓表物料id"
+        },
+        "modInwarehouseName": {
+            "meaning": "模具入仓表智能节点名",
+            "reachable": true,
+            "name": "模具入仓表智能节点名"
+        },
+        "modInwarehouseNameCodeSearch": {
+            "meaning": "模具入仓表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "模具入仓表name、user_code模糊搜索"
+        },
+        "modInwarehouseNumberExtra1": {
+            "meaning": "模具入仓表扩展数量1",
+            "reachable": true,
+            "name": "模具入仓表扩展数量1"
+        },
+        "modInwarehouseNumberExtra2": {
+            "meaning": "模具入仓表扩展数量2",
+            "reachable": true,
+            "name": "模具入仓表扩展数量2"
+        },
+        "modInwarehouseNumberExtra3": {
+            "meaning": "模具入仓表扩展数量3",
+            "reachable": true,
+            "name": "模具入仓表扩展数量3"
+        },
+        "modInwarehouseNumberExtra4": {
+            "meaning": "模具入仓表扩展数量4",
+            "reachable": true,
+            "name": "模具入仓表扩展数量4"
+        },
+        "modInwarehouseNumberExtra5": {
+            "meaning": "模具入仓表扩展数量5",
+            "reachable": true,
+            "name": "模具入仓表扩展数量5"
+        },
+        "modInwarehouseParentId": {
+            "meaning": "模具入仓表父节点ID",
+            "reachable": true,
+            "name": "模具入仓表父节点ID"
+        },
+        "modInwarehousePlannedOutputQuantity": {
+            "meaning": "模具入仓表计划产出数量",
+            "reachable": true,
+            "name": "模具入仓表计划产出数量"
+        },
+        "modInwarehousePlannedTimeRequired": {
+            "meaning": "模具入仓表计划需时(小时)",
+            "reachable": true,
+            "name": "模具入仓表计划需时"
+        },
+        "modInwarehousePrintTimes": {
+            "meaning": "模具入仓表打印次数",
+            "reachable": true,
+            "name": "模具入仓表打印次数"
+        },
+        "modInwarehousePriority": {
+            "meaning": "模具入仓表优先级",
+            "reachable": true,
+            "name": "模具入仓表优先级"
+        },
+        "modInwarehouseProcessInstanceId": {
+            "meaning": "模具入仓表流程实例ID",
+            "reachable": true,
+            "name": "模具入仓表流程实例ID"
+        },
+        "modInwarehouseProductionProcessesTypeId": {
+            "meaning": "模具入仓表工序类型ID",
+            "reachable": true,
+            "name": "模具入仓表工序类型ID"
+        },
+        "modInwarehouseProductionShiftId": {
+            "meaning": "模具入仓表生产班次ID",
+            "reachable": true,
+            "name": "模具入仓表生产班次ID"
+        },
+        "modInwarehouseQuantity": {
+            "meaning": "模具入仓表任务数量",
+            "reachable": true,
+            "name": "模具入仓表任务数量"
+        },
+        "modInwarehouseReceiptDate": {
+            "meaning": "模具入仓表单据日期",
+            "reachable": true,
+            "name": "模具入仓表单据日期"
+        },
+        "modInwarehouseReceiptType": {
+            "meaning": "模具入仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "模具入仓表单据类型"
+        },
+        "modInwarehouseRelatedTasksId": {
+            "meaning": "模具入仓表关联任务id",
+            "reachable": true,
+            "name": "模具入仓表关联任务id"
+        },
+        "modInwarehouseSerialNumber": {
+            "meaning": "模具入仓表顺序号",
+            "reachable": true,
+            "name": "模具入仓表顺序号"
+        },
+        "modInwarehouseSource": {
+            "meaning": "模具入仓表源",
+            "reachable": true,
+            "name": "模具入仓表源"
+        },
+        "modInwarehouseSourceType": {
+            "meaning": "模具入仓表来源类型",
+            "reachable": true,
+            "name": "模具入仓表来源类型"
+        },
+        "modInwarehouseState": {
+            "meaning": "模具入仓表通用状态",
+            "reachable": true,
+            "name": "模具入仓表通用状态"
+        },
+        "modInwarehouseSystemCode": {
+            "meaning": "模具入仓表系统编码",
+            "reachable": true,
+            "name": "模具入仓表系统编码"
+        },
+        "modInwarehouseTarget": {
+            "meaning": "模具入仓表目标",
+            "reachable": true,
+            "name": "模具入仓表目标"
+        },
+        "modInwarehouseTaskNodeName": {
+            "meaning": "模具入仓表任务节点名称",
+            "reachable": true,
+            "name": "模具入仓表任务节点名称"
+        },
+        "modInwarehouseTenantId": {
+            "meaning": "模具入仓表租户id",
+            "reachable": true,
+            "name": "模具入仓表租户id"
+        },
+        "modInwarehouseThirdPartyClass": {
+            "meaning": "模具入仓表第三方分类",
+            "reachable": true,
+            "name": "模具入仓表第三方分类"
+        },
+        "modInwarehouseThirdPartyId": {
+            "meaning": "模具入仓表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "模具入仓表第三方系统中的唯一ID"
+        },
+        "modInwarehouseThirdPartyName": {
+            "meaning": "模具入仓表第三方名称",
+            "reachable": true,
+            "name": "模具入仓表第三方名称"
+        },
+        "modInwarehouseToAuditDate": {
+            "meaning": "modInwarehouseToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToBeginTime": {
+            "meaning": "modInwarehouseToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToCreateTime": {
+            "meaning": "modInwarehouseToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDateExtra1": {
+            "meaning": "modInwarehouseToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDateExtra2": {
+            "meaning": "modInwarehouseToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDateExtra3": {
+            "meaning": "modInwarehouseToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDateExtra4": {
+            "meaning": "modInwarehouseToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDateExtra5": {
+            "meaning": "modInwarehouseToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToDeliveryDate": {
+            "meaning": "modInwarehouseToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToEndTime": {
+            "meaning": "modInwarehouseToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToReceiptDate": {
+            "meaning": "modInwarehouseToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseToUpdateTime": {
+            "meaning": "modInwarehouseToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInwarehouseUnitCode": {
+            "meaning": "模具入仓表单位id",
+            "reachable": true,
+            "name": "模具入仓表单位id"
+        },
+        "modInwarehouseUpdateTime": {
+            "meaning": "模具入仓表更新时间",
+            "reachable": true,
+            "name": "模具入仓表更新时间"
+        },
+        "modInwarehouseUpdater": {
+            "meaning": "模具入仓表更新人",
+            "reachable": true,
+            "name": "模具入仓表更新人"
+        },
+        "modInwarehouseUpdaterId": {
+            "meaning": "模具入仓表更新人ID",
+            "reachable": true,
+            "name": "模具入仓表更新人ID"
+        },
+        "modInwarehouseUserCode": {
+            "meaning": "模具入仓表智能节点的唯一编码",
+            "reachable": true,
+            "name": "模具入仓表智能节点的唯一编码"
+        },
+        "modInwarehouseVarExtra1": {
+            "meaning": "模具入仓表扩展1",
+            "reachable": true,
+            "name": "模具入仓表扩展1"
+        },
+        "modInwarehouseVarExtra2": {
+            "meaning": "模具入仓表扩展2",
+            "reachable": true,
+            "name": "模具入仓表扩展2"
+        },
+        "modInwarehouseVarExtra3": {
+            "meaning": "模具入仓表扩展3",
+            "reachable": true,
+            "name": "模具入仓表扩展3"
+        },
+        "modInwarehouseVarExtra4": {
+            "meaning": "模具入仓表扩展4",
+            "reachable": true,
+            "name": "模具入仓表扩展4"
+        },
+        "modInwarehouseVarExtra5": {
+            "meaning": "模具入仓表扩展5",
+            "reachable": true,
+            "name": "模具入仓表扩展5"
+        },
+        "modInwarehouseVersion": {
+            "meaning": "模具入仓表版本号",
+            "reachable": true,
+            "name": "模具入仓表版本号"
+        }
+    }
+}

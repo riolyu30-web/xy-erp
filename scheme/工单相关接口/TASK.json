@@ -1,0 +1,711 @@
+{
+    "api_name": "/task/findList",
+    "table_name": "生产任务",
+    "request": {
+        "taskClazz": "TASK"
+    },
+    "mainTabClazz": "TASK",
+    "response": {
+        "taskActualTimeRequired": {
+            "meaning": "生产任务实际需时(小时)",
+            "reachable": true,
+            "name": "生产任务实际需时"
+        },
+        "taskAdjustmentTimeRequired": {
+            "meaning": "生产任务调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "生产任务调整需时"
+        },
+        "taskApplicationId": {
+            "meaning": "生产任务应用ID",
+            "reachable": true,
+            "name": "生产任务应用ID"
+        },
+        "taskAssetRelatId": {
+            "meaning": "生产任务关联资产id",
+            "reachable": true,
+            "name": "生产任务关联资产id"
+        },
+        "taskAuditDate": {
+            "meaning": "生产任务审核时间",
+            "reachable": true,
+            "name": "生产任务审核时间"
+        },
+        "taskAuditStatus": {
+            "meaning": "生产任务审核状态",
+            "reachable": true,
+            "name": "生产任务审核状态"
+        },
+        "taskAvailableScheduleId": {
+            "meaning": "生产任务可用日程id",
+            "reachable": true,
+            "name": "生产任务可用日程id"
+        },
+        "taskBeginTime": {
+            "meaning": "生产任务开始时间",
+            "reachable": true,
+            "name": "生产任务开始时间"
+        },
+        "taskBizVersion": {
+            "meaning": "生产任务业务自定义版本号",
+            "reachable": true,
+            "name": "生产任务业务自定义版本号"
+        },
+        "taskBriefName": {
+            "meaning": "生产任务简称",
+            "reachable": true,
+            "name": "生产任务简称"
+        },
+        "taskBusDivisId": {
+            "meaning": "生产任务事业部id",
+            "reachable": true,
+            "name": "生产任务事业部id"
+        },
+        "taskClazz": {
+            "meaning": "生产任务子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "生产任务子类"
+        },
+        "taskClosedReason": {
+            "meaning": "生产任务结案原因",
+            "reachable": true,
+            "name": "生产任务结案原因"
+        },
+        "taskClosedStatus": {
+            "meaning": "生产任务结案状态",
+            "reachable": true,
+            "name": "生产任务结案状态"
+        },
+        "taskComment": {
+            "meaning": "生产任务评论",
+            "reachable": true,
+            "name": "生产任务评论"
+        },
+        "taskCompleteQuantity": {
+            "meaning": "生产任务完成数量",
+            "reachable": true,
+            "name": "生产任务完成数量"
+        },
+        "taskCompleteStatus": {
+            "meaning": "生产任务完成状态",
+            "reachable": true,
+            "name": "生产任务完成状态"
+        },
+        "taskCreateTime": {
+            "meaning": "生产任务创建时间",
+            "reachable": true,
+            "name": "生产任务创建时间"
+        },
+        "taskCreator": {
+            "meaning": "生产任务创建人",
+            "reachable": true,
+            "name": "生产任务创建人"
+        },
+        "taskCreatorId": {
+            "meaning": "生产任务创建人ID",
+            "reachable": true,
+            "name": "生产任务创建人ID"
+        },
+        "taskCumIpqcQuantity": {
+            "meaning": "生产任务累计质检数量",
+            "reachable": true,
+            "name": "生产任务累计质检数量"
+        },
+        "taskCumIpqcStatus": {
+            "meaning": "生产任务累计质检状态",
+            "reachable": true,
+            "name": "生产任务累计质检状态"
+        },
+        "taskCumulHndovrQuantity": {
+            "meaning": "生产任务累计交出数量",
+            "reachable": true,
+            "name": "生产任务累计交出数量"
+        },
+        "taskDailyRepQuantity": {
+            "meaning": "生产任务日报表已开数量",
+            "reachable": true,
+            "name": "生产任务日报表已开数量"
+        },
+        "taskDailyRepStatus": {
+            "meaning": "生产任务日报表已开状态",
+            "reachable": true,
+            "name": "生产任务日报表已开状态"
+        },
+        "taskDateExtra1": {
+            "meaning": "生产任务扩展时间1",
+            "reachable": true,
+            "name": "生产任务扩展时间1"
+        },
+        "taskDateExtra2": {
+            "meaning": "生产任务扩展时间2",
+            "reachable": true,
+            "name": "生产任务扩展时间2"
+        },
+        "taskDateExtra3": {
+            "meaning": "生产任务扩展时间3",
+            "reachable": true,
+            "name": "生产任务扩展时间3"
+        },
+        "taskDateExtra4": {
+            "meaning": "生产任务扩展时间4",
+            "reachable": true,
+            "name": "生产任务扩展时间4"
+        },
+        "taskDateExtra5": {
+            "meaning": "生产任务扩展时间5",
+            "reachable": true,
+            "name": "生产任务扩展时间5"
+        },
+        "taskDefaultType": {
+            "meaning": "生产任务智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "生产任务智能节点主类型"
+        },
+        "taskDeliveryDate": {
+            "meaning": "生产任务交货日期",
+            "reachable": true,
+            "name": "生产任务交货日期"
+        },
+        "taskDescription": {
+            "meaning": "生产任务描述",
+            "reachable": true,
+            "name": "生产任务描述"
+        },
+        "taskEndTime": {
+            "meaning": "生产任务结束时间",
+            "reachable": true,
+            "name": "生产任务结束时间"
+        },
+        "taskEndTimeRequired": {
+            "meaning": "生产任务最后需时(小时)",
+            "reachable": true,
+            "name": "生产任务最后需时"
+        },
+        "taskEngName": {
+            "meaning": "生产任务英文名称",
+            "reachable": true,
+            "name": "生产任务英文名称"
+        },
+        "taskEquipmentId": {
+            "meaning": "生产任务设备id",
+            "reachable": true,
+            "name": "生产任务设备id"
+        },
+        "taskExchangeRateId": {
+            "meaning": "生产任务币种汇率id",
+            "reachable": true,
+            "name": "生产任务币种汇率id"
+        },
+        "taskExtension": {
+            "meaning": "生产任务扩展数据",
+            "reachable": true,
+            "name": "生产任务扩展数据"
+        },
+        "taskExternalState": {
+            "meaning": "生产任务上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "生产任务上流程状态位"
+        },
+        "taskFilterClazz": {
+            "meaning": "生产任务冗余字段用于筛选",
+            "reachable": false,
+            "name": "生产任务冗余字段用于筛选"
+        },
+        "taskFlags": {
+            "meaning": "生产任务63位标志位",
+            "reachable": true,
+            "name": "生产任务63位标志位"
+        },
+        "taskFromAuditDate": {
+            "meaning": "taskFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromBeginTime": {
+            "meaning": "taskFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromCreateTime": {
+            "meaning": "taskFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDateExtra1": {
+            "meaning": "taskFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDateExtra2": {
+            "meaning": "taskFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDateExtra3": {
+            "meaning": "taskFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDateExtra4": {
+            "meaning": "taskFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDateExtra5": {
+            "meaning": "taskFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromDeliveryDate": {
+            "meaning": "taskFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromEndTime": {
+            "meaning": "taskFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromGenerativeTime": {
+            "meaning": "taskFromGenerativeTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromPlanEndTime": {
+            "meaning": "taskFromPlanEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromPlanStartTime": {
+            "meaning": "taskFromPlanStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromPretEndTime": {
+            "meaning": "taskFromPretEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromPretStartTime": {
+            "meaning": "taskFromPretStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromReceiptDate": {
+            "meaning": "taskFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFromUpdateTime": {
+            "meaning": "taskFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskFscType": {
+            "meaning": "生产任务FSC声明",
+            "reachable": true,
+            "name": "生产任务FSC声明"
+        },
+        "taskGenerativePeople": {
+            "meaning": "生产任务下发人",
+            "reachable": true,
+            "name": "生产任务下发人"
+        },
+        "taskGenerativeState": {
+            "meaning": "生产任务下发状态",
+            "reachable": true,
+            "name": "生产任务下发状态"
+        },
+        "taskGenerativeTime": {
+            "meaning": "生产任务下发时间",
+            "reachable": true,
+            "name": "生产任务下发时间"
+        },
+        "taskGroovyScript": {
+            "meaning": "生产任务groovy脚本",
+            "reachable": true,
+            "name": "生产任务groovy脚本"
+        },
+        "taskGropeCode": {
+            "meaning": "生产任务搜索码",
+            "reachable": true,
+            "name": "生产任务搜索码"
+        },
+        "taskId": {
+            "meaning": "生产任务主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "生产任务主键ID"
+        },
+        "taskInUsed": {
+            "meaning": "生产任务是否被使用",
+            "reachable": true,
+            "name": "生产任务是否被使用"
+        },
+        "taskInvTypeTaxRateId": {
+            "meaning": "生产任务发票税率id",
+            "reachable": true,
+            "name": "生产任务发票税率id"
+        },
+        "taskIsBanned": {
+            "meaning": "生产任务是否被禁用",
+            "reachable": true,
+            "name": "生产任务是否被禁用"
+        },
+        "taskIsDeleted": {
+            "meaning": "生产任务是否被删除",
+            "reachable": true,
+            "name": "生产任务是否被删除"
+        },
+        "taskIsLeaf": {
+            "meaning": "生产任务是否叶子节点",
+            "reachable": true,
+            "name": "生产任务是否叶子节点"
+        },
+        "taskIsMainFlow": {
+            "meaning": "生产任务是否是主流程",
+            "reachable": true,
+            "name": "生产任务是否是主流程"
+        },
+        "taskIsManualModificationDate": {
+            "meaning": "生产任务是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "生产任务是否手动修改计划生产时间"
+        },
+        "taskIsolation": {
+            "meaning": "生产任务智能节点数据隔离标识",
+            "reachable": true,
+            "name": "生产任务智能节点数据隔离标识"
+        },
+        "taskJsScript": {
+            "meaning": "生产任务js脚本",
+            "reachable": true,
+            "name": "生产任务js脚本"
+        },
+        "taskMaterialId": {
+            "meaning": "生产任务物料id",
+            "reachable": true,
+            "name": "生产任务物料id"
+        },
+        "taskName": {
+            "meaning": "生产任务智能节点名",
+            "reachable": true,
+            "name": "生产任务智能节点名"
+        },
+        "taskNameCodeSearch": {
+            "meaning": "生产任务name、user_code模糊搜索",
+            "reachable": true,
+            "name": "生产任务name、user_code模糊搜索"
+        },
+        "taskNumberExtra1": {
+            "meaning": "生产任务扩展数量1",
+            "reachable": true,
+            "name": "生产任务扩展数量1"
+        },
+        "taskNumberExtra2": {
+            "meaning": "生产任务扩展数量2",
+            "reachable": true,
+            "name": "生产任务扩展数量2"
+        },
+        "taskNumberExtra3": {
+            "meaning": "生产任务扩展数量3",
+            "reachable": true,
+            "name": "生产任务扩展数量3"
+        },
+        "taskNumberExtra4": {
+            "meaning": "生产任务扩展数量4",
+            "reachable": true,
+            "name": "生产任务扩展数量4"
+        },
+        "taskNumberExtra5": {
+            "meaning": "生产任务扩展数量5",
+            "reachable": true,
+            "name": "生产任务扩展数量5"
+        },
+        "taskParentId": {
+            "meaning": "生产任务父节点ID",
+            "reachable": true,
+            "name": "生产任务父节点ID"
+        },
+        "taskPlanEndTime": {
+            "meaning": "生产任务计划开始时间",
+            "reachable": true,
+            "name": "生产任务计划开始时间"
+        },
+        "taskPlanStartTime": {
+            "meaning": "生产任务计划开始时间",
+            "reachable": true,
+            "name": "生产任务计划开始时间"
+        },
+        "taskPlannedOutputQuantity": {
+            "meaning": "生产任务计划产出数量",
+            "reachable": true,
+            "name": "生产任务计划产出数量"
+        },
+        "taskPlannedTimeRequired": {
+            "meaning": "生产任务计划需时(小时)",
+            "reachable": true,
+            "name": "生产任务计划需时"
+        },
+        "taskPretEndTime": {
+            "meaning": "生产任务预估结束时间",
+            "reachable": true,
+            "name": "生产任务预估结束时间"
+        },
+        "taskPretStartTime": {
+            "meaning": "生产任务预估开始时间",
+            "reachable": true,
+            "name": "生产任务预估开始时间"
+        },
+        "taskPrintTimes": {
+            "meaning": "生产任务打印次数",
+            "reachable": true,
+            "name": "生产任务打印次数"
+        },
+        "taskPriority": {
+            "meaning": "生产任务优先级",
+            "reachable": true,
+            "name": "生产任务优先级"
+        },
+        "taskProcessInstanceId": {
+            "meaning": "生产任务流程实例ID",
+            "reachable": true,
+            "name": "生产任务流程实例ID"
+        },
+        "taskProductionProcessesTypeId": {
+            "meaning": "生产任务工序类型ID",
+            "reachable": true,
+            "name": "生产任务工序类型ID"
+        },
+        "taskProductionShiftId": {
+            "meaning": "生产任务生产班次ID",
+            "reachable": true,
+            "name": "生产任务生产班次ID"
+        },
+        "taskQuantity": {
+            "meaning": "生产任务任务数量",
+            "reachable": true,
+            "name": "生产任务任务数量"
+        },
+        "taskReceiptDate": {
+            "meaning": "生产任务单据日期",
+            "reachable": true,
+            "name": "生产任务单据日期"
+        },
+        "taskReceiptType": {
+            "meaning": "生产任务单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "生产任务单据类型"
+        },
+        "taskRelatedTasksId": {
+            "meaning": "生产任务关联任务id",
+            "reachable": true,
+            "name": "生产任务关联任务id"
+        },
+        "taskSerialNumber": {
+            "meaning": "生产任务顺序号",
+            "reachable": true,
+            "name": "生产任务顺序号"
+        },
+        "taskSource": {
+            "meaning": "生产任务源",
+            "reachable": true,
+            "name": "生产任务源"
+        },
+        "taskSourceType": {
+            "meaning": "生产任务来源类型",
+            "reachable": true,
+            "name": "生产任务来源类型"
+        },
+        "taskState": {
+            "meaning": "生产任务通用状态",
+            "reachable": true,
+            "name": "生产任务通用状态"
+        },
+        "taskStatus": {
+            "meaning": "生产任务任务状态",
+            "reachable": true,
+            "name": "生产任务任务状态"
+        },
+        "taskSystemCode": {
+            "meaning": "生产任务系统编码",
+            "reachable": true,
+            "name": "生产任务系统编码"
+        },
+        "taskTarget": {
+            "meaning": "生产任务目标",
+            "reachable": true,
+            "name": "生产任务目标"
+        },
+        "taskTaskMesId": {
+            "meaning": "生产任务数采网关自增长id",
+            "reachable": true,
+            "name": "生产任务数采网关自增长id"
+        },
+        "taskTaskNodeName": {
+            "meaning": "生产任务任务节点名称",
+            "reachable": true,
+            "name": "生产任务任务节点名称"
+        },
+        "taskTenantId": {
+            "meaning": "生产任务租户ID",
+            "reachable": true,
+            "name": "生产任务租户ID"
+        },
+        "taskThirdPartyClass": {
+            "meaning": "生产任务第三方分类",
+            "reachable": true,
+            "name": "生产任务第三方分类"
+        },
+        "taskThirdPartyId": {
+            "meaning": "生产任务第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "生产任务第三方系统中的唯一ID"
+        },
+        "taskThirdPartyName": {
+            "meaning": "生产任务第三方名称",
+            "reachable": true,
+            "name": "生产任务第三方名称"
+        },
+        "taskToAuditDate": {
+            "meaning": "taskToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToBeginTime": {
+            "meaning": "taskToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToCreateTime": {
+            "meaning": "taskToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDateExtra1": {
+            "meaning": "taskToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDateExtra2": {
+            "meaning": "taskToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDateExtra3": {
+            "meaning": "taskToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDateExtra4": {
+            "meaning": "taskToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDateExtra5": {
+            "meaning": "taskToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToDeliveryDate": {
+            "meaning": "taskToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToEndTime": {
+            "meaning": "taskToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToGenerativeTime": {
+            "meaning": "taskToGenerativeTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToPlanEndTime": {
+            "meaning": "taskToPlanEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToPlanStartTime": {
+            "meaning": "taskToPlanStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToPretEndTime": {
+            "meaning": "taskToPretEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToPretStartTime": {
+            "meaning": "taskToPretStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToReceiptDate": {
+            "meaning": "taskToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "taskToUpdateTime": {
+            "meaning": "taskToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "taskUnitCode": {
+            "meaning": "生产任务单位id",
+            "reachable": true,
+            "name": "生产任务单位id"
+        },
+        "taskUpdateTime": {
+            "meaning": "生产任务更新时间",
+            "reachable": true,
+            "name": "生产任务更新时间"
+        },
+        "taskUpdater": {
+            "meaning": "生产任务更新人",
+            "reachable": true,
+            "name": "生产任务更新人"
+        },
+        "taskUpdaterId": {
+            "meaning": "生产任务更新人ID",
+            "reachable": true,
+            "name": "生产任务更新人ID"
+        },
+        "taskUserCode": {
+            "meaning": "生产任务智能节点的唯一编码",
+            "reachable": true,
+            "name": "生产任务智能节点的唯一编码"
+        },
+        "taskVarExtra1": {
+            "meaning": "生产任务扩展1",
+            "reachable": true,
+            "name": "生产任务扩展1"
+        },
+        "taskVarExtra2": {
+            "meaning": "生产任务扩展2",
+            "reachable": true,
+            "name": "生产任务扩展2"
+        },
+        "taskVarExtra3": {
+            "meaning": "生产任务扩展3",
+            "reachable": true,
+            "name": "生产任务扩展3"
+        },
+        "taskVarExtra4": {
+            "meaning": "生产任务扩展4",
+            "reachable": true,
+            "name": "生产任务扩展4"
+        },
+        "taskVarExtra5": {
+            "meaning": "生产任务扩展5",
+            "reachable": true,
+            "name": "生产任务扩展5"
+        },
+        "taskVersion": {
+            "meaning": "生产任务版本号",
+            "reachable": true,
+            "name": "生产任务版本号"
+        }
+    }
+}

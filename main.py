@@ -3,7 +3,7 @@ from fastapi import FastAPI
 # 导入CORS中间件用于处理跨域请求
 from fastapi.middleware.cors import CORSMiddleware
 # 导入认证路由器
-from api.v1 import intent, auth, health, chat, mcp
+from api.v1 import intent, auth, health, chat, mcp, table
 from dotenv import load_dotenv
 import os
 
@@ -30,6 +30,7 @@ app.include_router(intent.router, prefix="/api/v1")
 app.include_router(auth.router, prefix="/api/v1")
 app.include_router(chat.router, prefix="/api/v1")
 app.include_router(mcp.router, prefix="/api/v1/mcp")
+app.include_router(table.router, prefix="/api/v1/table")
 
 
 # 主函数
@@ -42,5 +43,5 @@ if __name__ == "__main__":
         host="0.0.0.0",  # 监听所有网络接口
         port=8001,  # 监听端口8001
         log_level="info",  # 日志级别
-        reload=debug,  # 自动重新加载
+        #reload=debug,  # 自动重新加载
     )

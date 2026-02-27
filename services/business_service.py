@@ -6,12 +6,14 @@ business_mcp = FastMCP(name="business")  # 创建计算服务MCP实例
 
 
 @business_mcp.tool()  # 注册工具
-def find_client(access_token: str) -> str:  # 定义工具函数
+def find_client(access_token: str,customerId:str=None) -> str:  # 定义工具函数
     """
     客户表，获取所有客户
     
     Args:
         access_token: 访问令牌
+        
+        customerId: ID，格式为YYYY%H%m
              
     Returns:
         成功返回：表访问令牌，有效字段说明，样本数据
@@ -25,9 +27,15 @@ def find_client(access_token: str) -> str:  # 定义工具函数
         "customerClazz": "XY_USERCENTER_ORGANIZATION",  # 固定参数
         
         
+        "customerId": customerId,  # 动态参数
+        
+        
         "orderBys": [  # 排序规则
             
+            {"field": "customerId", "type": "ASC"}  # 排序项
+            
         ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -81,9 +89,7 @@ def find_contract(access_token: str) -> str:  # 定义工具函数
         "contractDetailContractClazz": "CONTRACT",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -141,9 +147,7 @@ def find_biz_order(access_token: str) -> str:  # 定义工具函数
         "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {
@@ -217,9 +221,7 @@ def get_source(access_token: str) -> str:  # 定义工具函数
         "linkClazz": "CONTRACT_DETAIL-BUSINESS_ORDER_DETAIL",  # 固定参数
         
         
-        "orderBys": [  # 排序规则
-            
-        ]  # 排序结束
+        
     }  # 数据字典结束
     # 定义需要保留的字段列表
     filtered_fields = {

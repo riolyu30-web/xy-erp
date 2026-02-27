@@ -1,0 +1,1472 @@
+{
+    "api_name": "/contract-detail/findList",
+    "table_name": "合同明细",
+    "request": {
+        "contractDetailContractClazz": "CONTRACT",
+        "contractDetailClazz": "CONTRACT_DETAIL"
+    },
+    "mainTabClazz": "CONTRACT_DETAIL",
+    "response": {
+        "contractDetailActualTimeRequired": {
+            "meaning": "合同明细实际需时(小时)",
+            "reachable": true,
+            "name": "合同明细实际需时"
+        },
+        "contractDetailAdjustmentTimeRequired": {
+            "meaning": "合同明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "合同明细调整需时"
+        },
+        "contractDetailApplicationId": {
+            "meaning": "合同明细应用ID",
+            "reachable": true,
+            "name": "合同明细应用ID"
+        },
+        "contractDetailAuditDate": {
+            "meaning": "contractDetailAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailAuditStatus": {
+            "meaning": "合同明细审核状态",
+            "reachable": true,
+            "name": "合同明细审核状态"
+        },
+        "contractDetailAvailableScheduleId": {
+            "meaning": "合同明细可用日程id",
+            "reachable": true,
+            "name": "合同明细可用日程id"
+        },
+        "contractDetailBeginTime": {
+            "meaning": "contractDetailBeginTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailBizOrderDetSpareQuantity": {
+            "meaning": "合同明细已开业务订单备品数量（业务订单反写）",
+            "reachable": true,
+            "name": "合同明细已开业务订单备品数量"
+        },
+        "contractDetailBizOrderDetSpareStatus": {
+            "meaning": "合同明细已开业务订单备品状态（业务订单反写）",
+            "reachable": true,
+            "name": "合同明细已开业务订单备品状态"
+        },
+        "contractDetailBizOrderQuantity": {
+            "meaning": "合同明细订单完成数量",
+            "reachable": true,
+            "name": "合同明细订单完成数量"
+        },
+        "contractDetailBizOrderStatus": {
+            "meaning": "合同明细订单完成状态",
+            "reachable": true,
+            "name": "合同明细订单完成状态"
+        },
+        "contractDetailBizVersion": {
+            "meaning": "合同明细业务自定义版本号",
+            "reachable": true,
+            "name": "合同明细业务自定义版本号"
+        },
+        "contractDetailBriefName": {
+            "meaning": "合同明细简称",
+            "reachable": true,
+            "name": "合同明细简称"
+        },
+        "contractDetailBusDivisId": {
+            "meaning": "合同明细事业部id",
+            "reachable": true,
+            "name": "合同明细事业部id"
+        },
+        "contractDetailClazz": {
+            "meaning": "合同明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "合同明细子类"
+        },
+        "contractDetailClosedReason": {
+            "meaning": "合同明细结案原因",
+            "reachable": true,
+            "name": "合同明细结案原因"
+        },
+        "contractDetailClosedStatus": {
+            "meaning": "合同明细结案状态",
+            "reachable": true,
+            "name": "合同明细结案状态"
+        },
+        "contractDetailComment": {
+            "meaning": "合同明细评论",
+            "reachable": true,
+            "name": "合同明细评论"
+        },
+        "contractDetailCompleteQuantity": {
+            "meaning": "合同明细完成数量",
+            "reachable": true,
+            "name": "合同明细完成数量"
+        },
+        "contractDetailCompleteStatus": {
+            "meaning": "合同明细完成状态",
+            "reachable": true,
+            "name": "合同明细完成状态"
+        },
+        "contractDetailContractActualTimeRequired": {
+            "meaning": "合同明细实际需时(小时)",
+            "reachable": true,
+            "name": "合同明细实际需时"
+        },
+        "contractDetailContractAdjustmentTimeRequired": {
+            "meaning": "合同明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "合同明细调整需时"
+        },
+        "contractDetailContractApplicationId": {
+            "meaning": "合同明细应用ID",
+            "reachable": true,
+            "name": "合同明细应用ID"
+        },
+        "contractDetailContractAuditDate": {
+            "meaning": "contractDetailContractAuditDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractAuditStatus": {
+            "meaning": "合同明细审核状态",
+            "reachable": true,
+            "name": "合同明细审核状态"
+        },
+        "contractDetailContractAvailableScheduleId": {
+            "meaning": "合同明细可用日程id",
+            "reachable": true,
+            "name": "合同明细可用日程id"
+        },
+        "contractDetailContractBeginTime": {
+            "meaning": "contractDetailContractBeginTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractBizVersion": {
+            "meaning": "合同明细业务自定义版本号",
+            "reachable": true,
+            "name": "合同明细业务自定义版本号"
+        },
+        "contractDetailContractBriefName": {
+            "meaning": "合同明细简称",
+            "reachable": true,
+            "name": "合同明细简称"
+        },
+        "contractDetailContractBusDivisId": {
+            "meaning": "合同明细事业部id",
+            "reachable": true,
+            "name": "合同明细事业部id"
+        },
+        "contractDetailContractClazz": {
+            "meaning": "合同明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "合同明细子类"
+        },
+        "contractDetailContractClosedReason": {
+            "meaning": "合同明细结案原因",
+            "reachable": true,
+            "name": "合同明细结案原因"
+        },
+        "contractDetailContractClosedStatus": {
+            "meaning": "合同明细结案状态",
+            "reachable": true,
+            "name": "合同明细结案状态"
+        },
+        "contractDetailContractComment": {
+            "meaning": "合同明细评论",
+            "reachable": true,
+            "name": "合同明细评论"
+        },
+        "contractDetailContractCompleteQuantity": {
+            "meaning": "合同明细完成数量",
+            "reachable": true,
+            "name": "合同明细完成数量"
+        },
+        "contractDetailContractCompleteStatus": {
+            "meaning": "合同明细完成状态",
+            "reachable": true,
+            "name": "合同明细完成状态"
+        },
+        "contractDetailContractContractTemplateId": {
+            "meaning": "合同明细合同模板id",
+            "reachable": true,
+            "name": "合同明细合同模板id"
+        },
+        "contractDetailContractCreateTime": {
+            "meaning": "contractDetailContractCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractCreator": {
+            "meaning": "合同明细创建人",
+            "reachable": true,
+            "name": "合同明细创建人"
+        },
+        "contractDetailContractCreatorId": {
+            "meaning": "合同明细创建人ID",
+            "reachable": true,
+            "name": "合同明细创建人ID"
+        },
+        "contractDetailContractCurrencyExchangeRateId": {
+            "meaning": "contractDetailContractCurrencyExchangeRateId",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDateExtra1": {
+            "meaning": "contractDetailContractDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDateExtra2": {
+            "meaning": "contractDetailContractDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDateExtra3": {
+            "meaning": "contractDetailContractDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDateExtra4": {
+            "meaning": "contractDetailContractDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDateExtra5": {
+            "meaning": "contractDetailContractDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDecimalMethod": {
+            "meaning": "合同明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "合同明细保留小数位方法"
+        },
+        "contractDetailContractDefaultType": {
+            "meaning": "合同明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "合同明细智能节点主类型"
+        },
+        "contractDetailContractDeliveryDate": {
+            "meaning": "contractDetailContractDeliveryDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractDeliveryMethod": {
+            "meaning": "合同明细配送方式",
+            "reachable": true,
+            "name": "合同明细配送方式"
+        },
+        "contractDetailContractDescription": {
+            "meaning": "合同明细描述",
+            "reachable": true,
+            "name": "合同明细描述"
+        },
+        "contractDetailContractEndTime": {
+            "meaning": "contractDetailContractEndTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractEndTimeRequired": {
+            "meaning": "合同明细最后需时(小时)",
+            "reachable": true,
+            "name": "合同明细最后需时"
+        },
+        "contractDetailContractEngName": {
+            "meaning": "合同明细英文名称",
+            "reachable": true,
+            "name": "合同明细英文名称"
+        },
+        "contractDetailContractEquipmentId": {
+            "meaning": "合同明细设备id",
+            "reachable": true,
+            "name": "合同明细设备id"
+        },
+        "contractDetailContractExchangeRateId": {
+            "meaning": "合同明细币种汇率id",
+            "reachable": true,
+            "name": "合同明细币种汇率id"
+        },
+        "contractDetailContractExtension": {
+            "meaning": "合同明细扩展数据",
+            "reachable": true,
+            "name": "合同明细扩展数据"
+        },
+        "contractDetailContractExternalState": {
+            "meaning": "合同明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "合同明细上流程状态位"
+        },
+        "contractDetailContractFilterClazz": {
+            "meaning": "合同明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "合同明细冗余字段用于筛选"
+        },
+        "contractDetailContractFlags": {
+            "meaning": "合同明细63位标志位",
+            "reachable": true,
+            "name": "合同明细63位标志位"
+        },
+        "contractDetailContractFromAuditDate": {
+            "meaning": "contractDetailContractFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromBeginTime": {
+            "meaning": "contractDetailContractFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromCreateTime": {
+            "meaning": "contractDetailContractFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDateExtra1": {
+            "meaning": "contractDetailContractFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDateExtra2": {
+            "meaning": "contractDetailContractFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDateExtra3": {
+            "meaning": "contractDetailContractFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDateExtra4": {
+            "meaning": "contractDetailContractFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDateExtra5": {
+            "meaning": "contractDetailContractFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromDeliveryDate": {
+            "meaning": "contractDetailContractFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromEndTime": {
+            "meaning": "contractDetailContractFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromReceiptDate": {
+            "meaning": "contractDetailContractFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFromUpdateTime": {
+            "meaning": "contractDetailContractFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractFscType": {
+            "meaning": "合同明细FSC声明",
+            "reachable": true,
+            "name": "合同明细FSC声明"
+        },
+        "contractDetailContractGenerativePeople": {
+            "meaning": "合同明细下发人",
+            "reachable": true,
+            "name": "合同明细下发人"
+        },
+        "contractDetailContractGenerativeState": {
+            "meaning": "合同明细下发状态",
+            "reachable": true,
+            "name": "合同明细下发状态"
+        },
+        "contractDetailContractGroovyScript": {
+            "meaning": "合同明细groovy脚本",
+            "reachable": true,
+            "name": "合同明细groovy脚本"
+        },
+        "contractDetailContractGropeCode": {
+            "meaning": "合同明细搜索码",
+            "reachable": true,
+            "name": "合同明细搜索码"
+        },
+        "contractDetailContractId": {
+            "meaning": "合同明细PK",
+            "reachable": true,
+            "name": "合同明细PK"
+        },
+        "contractDetailContractInUsed": {
+            "meaning": "合同明细是否被使用",
+            "reachable": true,
+            "name": "合同明细是否被使用"
+        },
+        "contractDetailContractInvTypeTaxRateId": {
+            "meaning": "合同明细发票税率id",
+            "reachable": true,
+            "name": "合同明细发票税率id"
+        },
+        "contractDetailContractInvoiceTypeTaxRateId": {
+            "meaning": "合同明细税率",
+            "reachable": true,
+            "name": "合同明细税率"
+        },
+        "contractDetailContractIsBanned": {
+            "meaning": "合同明细是否被禁用",
+            "reachable": true,
+            "name": "合同明细是否被禁用"
+        },
+        "contractDetailContractIsDeleted": {
+            "meaning": "合同明细是否被删除",
+            "reachable": true,
+            "name": "合同明细是否被删除"
+        },
+        "contractDetailContractIsLeaf": {
+            "meaning": "合同明细是否叶子节点",
+            "reachable": true,
+            "name": "合同明细是否叶子节点"
+        },
+        "contractDetailContractIsMainFlow": {
+            "meaning": "合同明细是否是主流程",
+            "reachable": true,
+            "name": "合同明细是否是主流程"
+        },
+        "contractDetailContractIsManualModificationDate": {
+            "meaning": "合同明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "合同明细是否手动修改计划生产时间"
+        },
+        "contractDetailContractIsolation": {
+            "meaning": "合同明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "合同明细智能节点数据隔离标识"
+        },
+        "contractDetailContractJsScript": {
+            "meaning": "合同明细js脚本",
+            "reachable": true,
+            "name": "合同明细js脚本"
+        },
+        "contractDetailContractLocalCurrencyTotalAmount": {
+            "meaning": "合同明细本币不含税金额(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "合同明细本币不含税金额"
+        },
+        "contractDetailContractMaterialId": {
+            "meaning": "合同明细物料id",
+            "reachable": true,
+            "name": "合同明细物料id"
+        },
+        "contractDetailContractName": {
+            "meaning": "合同明细智能节点名",
+            "reachable": true,
+            "name": "合同明细智能节点名"
+        },
+        "contractDetailContractNameCodeSearch": {
+            "meaning": "合同明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "合同明细name、user_code模糊搜索"
+        },
+        "contractDetailContractNumberExtra1": {
+            "meaning": "合同明细扩展数量1",
+            "reachable": true,
+            "name": "合同明细扩展数量1"
+        },
+        "contractDetailContractNumberExtra2": {
+            "meaning": "合同明细扩展数量2",
+            "reachable": true,
+            "name": "合同明细扩展数量2"
+        },
+        "contractDetailContractNumberExtra3": {
+            "meaning": "合同明细扩展数量3",
+            "reachable": true,
+            "name": "合同明细扩展数量3"
+        },
+        "contractDetailContractNumberExtra4": {
+            "meaning": "合同明细扩展数量4",
+            "reachable": true,
+            "name": "合同明细扩展数量4"
+        },
+        "contractDetailContractNumberExtra5": {
+            "meaning": "合同明细扩展数量5",
+            "reachable": true,
+            "name": "合同明细扩展数量5"
+        },
+        "contractDetailContractParentId": {
+            "meaning": "合同明细父节点ID",
+            "reachable": true,
+            "name": "合同明细父节点ID"
+        },
+        "contractDetailContractPartyAAddress": {
+            "meaning": "合同明细甲方详细地址",
+            "reachable": true,
+            "name": "合同明细甲方详细地址"
+        },
+        "contractDetailContractPartyAAdministrativeAreaId": {
+            "meaning": "合同明细甲方行政区域id",
+            "reachable": true,
+            "name": "合同明细甲方行政区域id"
+        },
+        "contractDetailContractPartyABankAccount": {
+            "meaning": "合同明细甲方银行账户",
+            "reachable": true,
+            "name": "合同明细甲方银行账户"
+        },
+        "contractDetailContractPartyAContact": {
+            "meaning": "合同明细甲方联系方式",
+            "reachable": true,
+            "name": "合同明细甲方联系方式"
+        },
+        "contractDetailContractPartyAHead": {
+            "meaning": "合同明细甲方负责人",
+            "reachable": true,
+            "name": "合同明细甲方负责人"
+        },
+        "contractDetailContractPartyAId": {
+            "meaning": "合同明细甲方id",
+            "reachable": true,
+            "name": "合同明细甲方id"
+        },
+        "contractDetailContractPartyAIdentificationNumber": {
+            "meaning": "合同明细甲方标识号(如企业税号、身份证号)",
+            "reachable": true,
+            "name": "合同明细甲方标识号"
+        },
+        "contractDetailContractPartyAOpeningBank": {
+            "meaning": "合同明细甲方开户行",
+            "reachable": true,
+            "name": "合同明细甲方开户行"
+        },
+        "contractDetailContractPartyBAddress": {
+            "meaning": "合同明细乙方详细地址",
+            "reachable": true,
+            "name": "合同明细乙方详细地址"
+        },
+        "contractDetailContractPartyBAdministrativeAreaId": {
+            "meaning": "合同明细乙方行政区域id",
+            "reachable": true,
+            "name": "合同明细乙方行政区域id"
+        },
+        "contractDetailContractPartyBBankAccount": {
+            "meaning": "合同明细乙方银行账户",
+            "reachable": true,
+            "name": "合同明细乙方银行账户"
+        },
+        "contractDetailContractPartyBContact": {
+            "meaning": "合同明细乙方联系方式",
+            "reachable": true,
+            "name": "合同明细乙方联系方式"
+        },
+        "contractDetailContractPartyBHead": {
+            "meaning": "合同明细乙方负责人",
+            "reachable": true,
+            "name": "合同明细乙方负责人"
+        },
+        "contractDetailContractPartyBId": {
+            "meaning": "合同明细乙方id",
+            "reachable": true,
+            "name": "合同明细乙方id"
+        },
+        "contractDetailContractPartyBIdentificationNumber": {
+            "meaning": "合同明细乙方标识号(如企业税号、身份证号)",
+            "reachable": true,
+            "name": "合同明细乙方标识号"
+        },
+        "contractDetailContractPartyBOpeningBank": {
+            "meaning": "合同明细乙方开户行",
+            "reachable": true,
+            "name": "合同明细乙方开户行"
+        },
+        "contractDetailContractPlannedOutputQuantity": {
+            "meaning": "合同明细计划产出数量",
+            "reachable": true,
+            "name": "合同明细计划产出数量"
+        },
+        "contractDetailContractPlannedTimeRequired": {
+            "meaning": "合同明细计划需时(小时)",
+            "reachable": true,
+            "name": "合同明细计划需时"
+        },
+        "contractDetailContractPrintTimes": {
+            "meaning": "合同明细打印次数",
+            "reachable": true,
+            "name": "合同明细打印次数"
+        },
+        "contractDetailContractPriority": {
+            "meaning": "合同明细优先级",
+            "reachable": true,
+            "name": "合同明细优先级"
+        },
+        "contractDetailContractProcessInstanceId": {
+            "meaning": "合同明细流程实例ID",
+            "reachable": true,
+            "name": "合同明细流程实例ID"
+        },
+        "contractDetailContractProductionProcessesTypeId": {
+            "meaning": "合同明细工序类型ID",
+            "reachable": true,
+            "name": "合同明细工序类型ID"
+        },
+        "contractDetailContractProductionShiftId": {
+            "meaning": "合同明细生产班次ID",
+            "reachable": true,
+            "name": "合同明细生产班次ID"
+        },
+        "contractDetailContractQuantity": {
+            "meaning": "合同明细任务数量",
+            "reachable": true,
+            "name": "合同明细任务数量"
+        },
+        "contractDetailContractReceiptDate": {
+            "meaning": "contractDetailContractReceiptDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractReceiptType": {
+            "meaning": "合同明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "合同明细单据类型"
+        },
+        "contractDetailContractRelatedTasksId": {
+            "meaning": "合同明细关联任务id",
+            "reachable": true,
+            "name": "合同明细关联任务id"
+        },
+        "contractDetailContractSerialNumber": {
+            "meaning": "合同明细顺序号",
+            "reachable": true,
+            "name": "合同明细顺序号"
+        },
+        "contractDetailContractSettlementTotalAmount": {
+            "meaning": "合同明细含税已结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "合同明细含税已结算金额"
+        },
+        "contractDetailContractSettlementTotalAmountKeepDecimalPlace": {
+            "meaning": "合同明细结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "合同明细结算金额保留小数位"
+        },
+        "contractDetailContractSettlementTypeId": {
+            "meaning": "合同明细结算方式",
+            "reachable": true,
+            "name": "合同明细结算方式"
+        },
+        "contractDetailContractSettlementUnitPriceKeepDecimalPlace": {
+            "meaning": "合同明细结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "合同明细结算单价保留小数位"
+        },
+        "contractDetailContractSource": {
+            "meaning": "合同明细源",
+            "reachable": true,
+            "name": "合同明细源"
+        },
+        "contractDetailContractSourceType": {
+            "meaning": "合同明细来源类型",
+            "reachable": true,
+            "name": "合同明细来源类型"
+        },
+        "contractDetailContractState": {
+            "meaning": "合同明细通用状态",
+            "reachable": true,
+            "name": "合同明细通用状态"
+        },
+        "contractDetailContractStatementMode": {
+            "meaning": "合同明细对账方式",
+            "reachable": true,
+            "name": "合同明细对账方式"
+        },
+        "contractDetailContractSystemCode": {
+            "meaning": "合同明细系统编码",
+            "reachable": true,
+            "name": "合同明细系统编码"
+        },
+        "contractDetailContractTarget": {
+            "meaning": "合同明细目标",
+            "reachable": true,
+            "name": "合同明细目标"
+        },
+        "contractDetailContractTaskNodeName": {
+            "meaning": "合同明细任务节点名称",
+            "reachable": true,
+            "name": "合同明细任务节点名称"
+        },
+        "contractDetailContractTenantId": {
+            "meaning": "合同明细租户id",
+            "reachable": true,
+            "name": "合同明细租户id"
+        },
+        "contractDetailContractThirdPartyClass": {
+            "meaning": "合同明细第三方分类",
+            "reachable": true,
+            "name": "合同明细第三方分类"
+        },
+        "contractDetailContractThirdPartyId": {
+            "meaning": "合同明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "合同明细第三方系统中的唯一ID"
+        },
+        "contractDetailContractThirdPartyName": {
+            "meaning": "合同明细第三方名称",
+            "reachable": true,
+            "name": "合同明细第三方名称"
+        },
+        "contractDetailContractToAuditDate": {
+            "meaning": "contractDetailContractToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToBeginTime": {
+            "meaning": "contractDetailContractToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToCreateTime": {
+            "meaning": "contractDetailContractToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDateExtra1": {
+            "meaning": "contractDetailContractToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDateExtra2": {
+            "meaning": "contractDetailContractToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDateExtra3": {
+            "meaning": "contractDetailContractToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDateExtra4": {
+            "meaning": "contractDetailContractToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDateExtra5": {
+            "meaning": "contractDetailContractToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToDeliveryDate": {
+            "meaning": "contractDetailContractToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToEndTime": {
+            "meaning": "contractDetailContractToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToReceiptDate": {
+            "meaning": "contractDetailContractToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractToUpdateTime": {
+            "meaning": "contractDetailContractToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailContractTotalAmountIncludingTax": {
+            "meaning": "合同明细含税总金额",
+            "reachable": true,
+            "name": "合同明细含税总金额"
+        },
+        "contractDetailContractTotalAmountWithoutTax": {
+            "meaning": "合同明细不含税总金额",
+            "reachable": true,
+            "name": "合同明细不含税总金额"
+        },
+        "contractDetailContractUnitCode": {
+            "meaning": "合同明细单位id",
+            "reachable": true,
+            "name": "合同明细单位id"
+        },
+        "contractDetailContractUpdateTime": {
+            "meaning": "contractDetailContractUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailContractUpdater": {
+            "meaning": "合同明细更新人",
+            "reachable": true,
+            "name": "合同明细更新人"
+        },
+        "contractDetailContractUpdaterId": {
+            "meaning": "合同明细更新人ID",
+            "reachable": true,
+            "name": "合同明细更新人ID"
+        },
+        "contractDetailContractUserCode": {
+            "meaning": "合同明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "合同明细智能节点的唯一编码"
+        },
+        "contractDetailContractVarExtra1": {
+            "meaning": "合同明细扩展1",
+            "reachable": true,
+            "name": "合同明细扩展1"
+        },
+        "contractDetailContractVarExtra2": {
+            "meaning": "合同明细扩展2",
+            "reachable": true,
+            "name": "合同明细扩展2"
+        },
+        "contractDetailContractVarExtra3": {
+            "meaning": "合同明细扩展3",
+            "reachable": true,
+            "name": "合同明细扩展3"
+        },
+        "contractDetailContractVarExtra4": {
+            "meaning": "合同明细扩展4",
+            "reachable": true,
+            "name": "合同明细扩展4"
+        },
+        "contractDetailContractVarExtra5": {
+            "meaning": "合同明细扩展5",
+            "reachable": true,
+            "name": "合同明细扩展5"
+        },
+        "contractDetailContractVersion": {
+            "meaning": "合同明细版本号",
+            "reachable": true,
+            "name": "合同明细版本号"
+        },
+        "contractDetailCostSchemeId": {
+            "meaning": "合同明细计费方案id",
+            "reachable": true,
+            "name": "合同明细计费方案id"
+        },
+        "contractDetailCreateTime": {
+            "meaning": "contractDetailCreateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailCreator": {
+            "meaning": "合同明细创建人",
+            "reachable": true,
+            "name": "合同明细创建人"
+        },
+        "contractDetailCreatorId": {
+            "meaning": "合同明细创建人ID",
+            "reachable": true,
+            "name": "合同明细创建人ID"
+        },
+        "contractDetailDateExtra1": {
+            "meaning": "contractDetailDateExtra1",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDateExtra2": {
+            "meaning": "contractDetailDateExtra2",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDateExtra3": {
+            "meaning": "contractDetailDateExtra3",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDateExtra4": {
+            "meaning": "contractDetailDateExtra4",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDateExtra5": {
+            "meaning": "contractDetailDateExtra5",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDefaultType": {
+            "meaning": "合同明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "合同明细智能节点主类型"
+        },
+        "contractDetailDeliveryDate": {
+            "meaning": "contractDetailDeliveryDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailDescription": {
+            "meaning": "合同明细描述",
+            "reachable": true,
+            "name": "合同明细描述"
+        },
+        "contractDetailEndTime": {
+            "meaning": "contractDetailEndTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailEndTimeRequired": {
+            "meaning": "合同明细最后需时(小时)",
+            "reachable": true,
+            "name": "合同明细最后需时"
+        },
+        "contractDetailEngName": {
+            "meaning": "合同明细英文名称",
+            "reachable": true,
+            "name": "合同明细英文名称"
+        },
+        "contractDetailEquipmentId": {
+            "meaning": "合同明细设备id",
+            "reachable": true,
+            "name": "合同明细设备id"
+        },
+        "contractDetailExchangeRateId": {
+            "meaning": "合同明细币种汇率id",
+            "reachable": true,
+            "name": "合同明细币种汇率id"
+        },
+        "contractDetailExtMatBarcode": {
+            "meaning": "合同明细外部物料条码(BarCode)",
+            "reachable": true,
+            "name": "合同明细外部物料条码"
+        },
+        "contractDetailExtMatCode": {
+            "meaning": "合同明细外部物料编码(例客户产品编码)",
+            "reachable": true,
+            "name": "合同明细外部物料编码"
+        },
+        "contractDetailExtMatName": {
+            "meaning": "合同明细外部物料名称(例客户产品名称)",
+            "reachable": true,
+            "name": "合同明细外部物料名称"
+        },
+        "contractDetailExtension": {
+            "meaning": "合同明细扩展数据",
+            "reachable": true,
+            "name": "合同明细扩展数据"
+        },
+        "contractDetailExternalState": {
+            "meaning": "合同明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "合同明细上流程状态位"
+        },
+        "contractDetailFilterClazz": {
+            "meaning": "合同明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "合同明细冗余字段用于筛选"
+        },
+        "contractDetailFlags": {
+            "meaning": "合同明细63位标志位",
+            "reachable": true,
+            "name": "合同明细63位标志位"
+        },
+        "contractDetailFromAuditDate": {
+            "meaning": "contractDetailFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromBeginTime": {
+            "meaning": "contractDetailFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromCreateTime": {
+            "meaning": "contractDetailFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDateExtra1": {
+            "meaning": "contractDetailFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDateExtra2": {
+            "meaning": "contractDetailFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDateExtra3": {
+            "meaning": "contractDetailFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDateExtra4": {
+            "meaning": "contractDetailFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDateExtra5": {
+            "meaning": "contractDetailFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromDeliveryDate": {
+            "meaning": "contractDetailFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromEndTime": {
+            "meaning": "contractDetailFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromReceiptDate": {
+            "meaning": "contractDetailFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFromUpdateTime": {
+            "meaning": "contractDetailFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailFscType": {
+            "meaning": "合同明细FSC声明",
+            "reachable": true,
+            "name": "合同明细FSC声明"
+        },
+        "contractDetailGenerativePeople": {
+            "meaning": "合同明细下发人",
+            "reachable": true,
+            "name": "合同明细下发人"
+        },
+        "contractDetailGenerativeState": {
+            "meaning": "合同明细下发状态",
+            "reachable": true,
+            "name": "合同明细下发状态"
+        },
+        "contractDetailGiftQuantity": {
+            "meaning": "合同明细赠品数量",
+            "reachable": true,
+            "name": "合同明细赠品数量"
+        },
+        "contractDetailGroovyScript": {
+            "meaning": "合同明细groovy脚本",
+            "reachable": true,
+            "name": "合同明细groovy脚本"
+        },
+        "contractDetailGropeCode": {
+            "meaning": "合同明细搜索码",
+            "reachable": true,
+            "name": "合同明细搜索码"
+        },
+        "contractDetailId": {
+            "meaning": "合同明细主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "合同明细主键ID"
+        },
+        "contractDetailInUsed": {
+            "meaning": "合同明细是否被使用",
+            "reachable": true,
+            "name": "合同明细是否被使用"
+        },
+        "contractDetailInvTypeTaxRateId": {
+            "meaning": "合同明细发票税率id",
+            "reachable": true,
+            "name": "合同明细发票税率id"
+        },
+        "contractDetailIsBanned": {
+            "meaning": "合同明细是否被禁用",
+            "reachable": true,
+            "name": "合同明细是否被禁用"
+        },
+        "contractDetailIsDeleted": {
+            "meaning": "合同明细是否被删除",
+            "reachable": true,
+            "name": "合同明细是否被删除"
+        },
+        "contractDetailIsLeaf": {
+            "meaning": "合同明细是否叶子节点",
+            "reachable": true,
+            "name": "合同明细是否叶子节点"
+        },
+        "contractDetailIsMainFlow": {
+            "meaning": "合同明细是否是主流程",
+            "reachable": true,
+            "name": "合同明细是否是主流程"
+        },
+        "contractDetailIsManualModificationDate": {
+            "meaning": "合同明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "合同明细是否手动修改计划生产时间"
+        },
+        "contractDetailIsolation": {
+            "meaning": "合同明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "合同明细智能节点数据隔离标识"
+        },
+        "contractDetailJsScript": {
+            "meaning": "合同明细js脚本",
+            "reachable": true,
+            "name": "合同明细js脚本"
+        },
+        "contractDetailLocalCurrencyTotalAmount": {
+            "meaning": "合同明细本币金额(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "合同明细本币金额"
+        },
+        "contractDetailLocalCurrencyUnitPrice": {
+            "meaning": "合同明细本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "合同明细本币单价"
+        },
+        "contractDetailMaterialId": {
+            "meaning": "合同明细物料id",
+            "reachable": true,
+            "name": "合同明细物料id"
+        },
+        "contractDetailName": {
+            "meaning": "合同明细智能节点名",
+            "reachable": true,
+            "name": "合同明细智能节点名"
+        },
+        "contractDetailNameCodeSearch": {
+            "meaning": "合同明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "合同明细name、user_code模糊搜索"
+        },
+        "contractDetailNumberExtra1": {
+            "meaning": "合同明细扩展数量1",
+            "reachable": true,
+            "name": "合同明细扩展数量1"
+        },
+        "contractDetailNumberExtra2": {
+            "meaning": "合同明细扩展数量2",
+            "reachable": true,
+            "name": "合同明细扩展数量2"
+        },
+        "contractDetailNumberExtra3": {
+            "meaning": "合同明细扩展数量3",
+            "reachable": true,
+            "name": "合同明细扩展数量3"
+        },
+        "contractDetailNumberExtra4": {
+            "meaning": "合同明细扩展数量4",
+            "reachable": true,
+            "name": "合同明细扩展数量4"
+        },
+        "contractDetailNumberExtra5": {
+            "meaning": "合同明细扩展数量5",
+            "reachable": true,
+            "name": "合同明细扩展数量5"
+        },
+        "contractDetailOrderNoticeQuantity": {
+            "meaning": "合同明细订单通知单数量",
+            "reachable": true,
+            "name": "合同明细订单通知单数量"
+        },
+        "contractDetailOrderNoticeSpareQuantity": {
+            "meaning": "合同明细订单通知单备品完成数量",
+            "reachable": true,
+            "name": "合同明细订单通知单备品完成数量"
+        },
+        "contractDetailOrderNoticeSpareStatus": {
+            "meaning": "合同明细订单通知单备品完成状态",
+            "reachable": true,
+            "name": "合同明细订单通知单备品完成状态"
+        },
+        "contractDetailOrderNoticeStatus": {
+            "meaning": "合同明细订单通知单完成状态",
+            "reachable": true,
+            "name": "合同明细订单通知单完成状态"
+        },
+        "contractDetailParentId": {
+            "meaning": "合同明细父节点ID",
+            "reachable": true,
+            "name": "合同明细父节点ID"
+        },
+        "contractDetailPlannedOutputQuantity": {
+            "meaning": "合同明细计划产出数量",
+            "reachable": true,
+            "name": "合同明细计划产出数量"
+        },
+        "contractDetailPlannedTimeRequired": {
+            "meaning": "合同明细计划需时(小时)",
+            "reachable": true,
+            "name": "合同明细计划需时"
+        },
+        "contractDetailPrintTimes": {
+            "meaning": "合同明细打印次数",
+            "reachable": true,
+            "name": "合同明细打印次数"
+        },
+        "contractDetailPriority": {
+            "meaning": "合同明细优先级",
+            "reachable": true,
+            "name": "合同明细优先级"
+        },
+        "contractDetailProcessInstanceId": {
+            "meaning": "合同明细流程实例ID",
+            "reachable": true,
+            "name": "合同明细流程实例ID"
+        },
+        "contractDetailProductionProcessesTypeId": {
+            "meaning": "合同明细工序类型ID",
+            "reachable": true,
+            "name": "合同明细工序类型ID"
+        },
+        "contractDetailProductionShiftId": {
+            "meaning": "合同明细生产班次ID",
+            "reachable": true,
+            "name": "合同明细生产班次ID"
+        },
+        "contractDetailQuantity": {
+            "meaning": "合同明细任务数量",
+            "reachable": true,
+            "name": "合同明细任务数量"
+        },
+        "contractDetailQuotationUnitPriceIncludingTax": {
+            "meaning": "合同明细含税报价单价",
+            "reachable": true,
+            "name": "合同明细含税报价单价"
+        },
+        "contractDetailQuotationUnitPriceWithoutTax": {
+            "meaning": "合同明细不含税报价单价",
+            "reachable": true,
+            "name": "合同明细不含税报价单价"
+        },
+        "contractDetailReceiptDate": {
+            "meaning": "contractDetailReceiptDate",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailReceiptType": {
+            "meaning": "合同明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "合同明细单据类型"
+        },
+        "contractDetailRelatedTasksId": {
+            "meaning": "合同明细关联任务id",
+            "reachable": true,
+            "name": "合同明细关联任务id"
+        },
+        "contractDetailSerialNumber": {
+            "meaning": "合同明细顺序号",
+            "reachable": true,
+            "name": "合同明细顺序号"
+        },
+        "contractDetailSettlementTotalAmount": {
+            "meaning": "合同明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "合同明细结算金额"
+        },
+        "contractDetailSettlementUnitPrice": {
+            "meaning": "合同明细结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "合同明细结算单价"
+        },
+        "contractDetailSource": {
+            "meaning": "合同明细源",
+            "reachable": true,
+            "name": "合同明细源"
+        },
+        "contractDetailSourceType": {
+            "meaning": "合同明细来源类型",
+            "reachable": true,
+            "name": "合同明细来源类型"
+        },
+        "contractDetailSpareQuantity": {
+            "meaning": "合同明细备用数量",
+            "reachable": true,
+            "name": "合同明细备用数量"
+        },
+        "contractDetailState": {
+            "meaning": "合同明细通用状态",
+            "reachable": true,
+            "name": "合同明细通用状态"
+        },
+        "contractDetailSystemCode": {
+            "meaning": "合同明细系统编码",
+            "reachable": true,
+            "name": "合同明细系统编码"
+        },
+        "contractDetailTarget": {
+            "meaning": "合同明细目标",
+            "reachable": true,
+            "name": "合同明细目标"
+        },
+        "contractDetailTaskNodeName": {
+            "meaning": "合同明细任务节点名称",
+            "reachable": true,
+            "name": "合同明细任务节点名称"
+        },
+        "contractDetailTenantId": {
+            "meaning": "合同明细租户ID",
+            "reachable": true,
+            "name": "合同明细租户ID"
+        },
+        "contractDetailTerminalCode": {
+            "meaning": "合同明细终端编码",
+            "reachable": true,
+            "name": "合同明细终端编码"
+        },
+        "contractDetailTerminalCustId": {
+            "meaning": "合同明细终端客户id",
+            "reachable": true,
+            "name": "合同明细终端客户id"
+        },
+        "contractDetailThirdPartyClass": {
+            "meaning": "合同明细第三方分类",
+            "reachable": true,
+            "name": "合同明细第三方分类"
+        },
+        "contractDetailThirdPartyId": {
+            "meaning": "合同明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "合同明细第三方系统中的唯一ID"
+        },
+        "contractDetailThirdPartyName": {
+            "meaning": "合同明细第三方名称",
+            "reachable": true,
+            "name": "合同明细第三方名称"
+        },
+        "contractDetailToAuditDate": {
+            "meaning": "contractDetailToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToBeginTime": {
+            "meaning": "contractDetailToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToCreateTime": {
+            "meaning": "contractDetailToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDateExtra1": {
+            "meaning": "contractDetailToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDateExtra2": {
+            "meaning": "contractDetailToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDateExtra3": {
+            "meaning": "contractDetailToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDateExtra4": {
+            "meaning": "contractDetailToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDateExtra5": {
+            "meaning": "contractDetailToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToDeliveryDate": {
+            "meaning": "contractDetailToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToEndTime": {
+            "meaning": "contractDetailToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToReceiptDate": {
+            "meaning": "contractDetailToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailToUpdateTime": {
+            "meaning": "contractDetailToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "contractDetailTotalAmountIncludingTax": {
+            "meaning": "合同明细含税总金额",
+            "reachable": true,
+            "name": "合同明细含税总金额"
+        },
+        "contractDetailTotalAmountWithoutTax": {
+            "meaning": "合同明细不含税总金额",
+            "reachable": true,
+            "name": "合同明细不含税总金额"
+        },
+        "contractDetailTotalQuantity": {
+            "meaning": "合同明细总数量",
+            "reachable": true,
+            "name": "合同明细总数量"
+        },
+        "contractDetailUnitCode": {
+            "meaning": "合同明细单位id",
+            "reachable": true,
+            "name": "合同明细单位id"
+        },
+        "contractDetailUnitPriceIncludingTax": {
+            "meaning": "合同明细含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "合同明细含税单价"
+        },
+        "contractDetailUnitPriceWithoutTax": {
+            "meaning": "合同明细不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "合同明细不含税单价"
+        },
+        "contractDetailUpdateTime": {
+            "meaning": "contractDetailUpdateTime",
+            "reachable": true,
+            "name": ""
+        },
+        "contractDetailUpdater": {
+            "meaning": "合同明细更新人",
+            "reachable": true,
+            "name": "合同明细更新人"
+        },
+        "contractDetailUpdaterId": {
+            "meaning": "合同明细更新人ID",
+            "reachable": true,
+            "name": "合同明细更新人ID"
+        },
+        "contractDetailUserCode": {
+            "meaning": "合同明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "合同明细智能节点的唯一编码"
+        },
+        "contractDetailVarExtra1": {
+            "meaning": "合同明细扩展1",
+            "reachable": true,
+            "name": "合同明细扩展1"
+        },
+        "contractDetailVarExtra2": {
+            "meaning": "合同明细扩展2",
+            "reachable": true,
+            "name": "合同明细扩展2"
+        },
+        "contractDetailVarExtra3": {
+            "meaning": "合同明细扩展3",
+            "reachable": true,
+            "name": "合同明细扩展3"
+        },
+        "contractDetailVarExtra4": {
+            "meaning": "合同明细扩展4",
+            "reachable": true,
+            "name": "合同明细扩展4"
+        },
+        "contractDetailVarExtra5": {
+            "meaning": "合同明细扩展5",
+            "reachable": true,
+            "name": "合同明细扩展5"
+        },
+        "contractDetailVersion": {
+            "meaning": "合同明细版本号",
+            "reachable": true,
+            "name": "合同明细版本号"
+        },
+        "ntractDetailContractSettlementUnitPriceKeepDecimalPlace": {
+            "meaning": "合同明细结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": false,
+            "name": "合同明细结算单价保留小数位"
+        },
+        "ractDetailContractSettlementTotalAmountKeepDecimalPlace": {
+            "meaning": "合同明细结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": false,
+            "name": "合同明细结算金额保留小数位"
+        }
+    }
+}

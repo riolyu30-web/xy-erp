@@ -1,0 +1,656 @@
+{
+    "api_name": "/trans-mange/findList",
+    "table_name": "厂车运输管理",
+    "request": {
+        "transMangeClazz": "TRANS_MANGE"
+    },
+    "mainTabClazz": "TRANS_MANGE",
+    "response": {
+        "transMangeActualTimeRequired": {
+            "meaning": "厂车运输管理实际需时(小时)",
+            "reachable": true,
+            "name": "厂车运输管理实际需时"
+        },
+        "transMangeAdjustmentTimeRequired": {
+            "meaning": "厂车运输管理调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "厂车运输管理调整需时"
+        },
+        "transMangeApplicationId": {
+            "meaning": "厂车运输管理应用ID",
+            "reachable": true,
+            "name": "厂车运输管理应用ID"
+        },
+        "transMangeAuditDate": {
+            "meaning": "厂车运输管理审核时间",
+            "reachable": true,
+            "name": "厂车运输管理审核时间"
+        },
+        "transMangeAuditStatus": {
+            "meaning": "厂车运输管理审核状态",
+            "reachable": true,
+            "name": "厂车运输管理审核状态"
+        },
+        "transMangeAvailableScheduleId": {
+            "meaning": "厂车运输管理可用日程id",
+            "reachable": true,
+            "name": "厂车运输管理可用日程id"
+        },
+        "transMangeBeginTime": {
+            "meaning": "厂车运输管理开始时间",
+            "reachable": true,
+            "name": "厂车运输管理开始时间"
+        },
+        "transMangeBizVersion": {
+            "meaning": "厂车运输管理业务自定义版本号",
+            "reachable": true,
+            "name": "厂车运输管理业务自定义版本号"
+        },
+        "transMangeBriefName": {
+            "meaning": "厂车运输管理简称",
+            "reachable": true,
+            "name": "厂车运输管理简称"
+        },
+        "transMangeBusDivisId": {
+            "meaning": "厂车运输管理事业部id",
+            "reachable": true,
+            "name": "厂车运输管理事业部id"
+        },
+        "transMangeClazz": {
+            "meaning": "厂车运输管理子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "厂车运输管理子类"
+        },
+        "transMangeClosedReason": {
+            "meaning": "厂车运输管理结案原因",
+            "reachable": true,
+            "name": "厂车运输管理结案原因"
+        },
+        "transMangeClosedStatus": {
+            "meaning": "厂车运输管理结案状态",
+            "reachable": true,
+            "name": "厂车运输管理结案状态"
+        },
+        "transMangeComment": {
+            "meaning": "厂车运输管理评论",
+            "reachable": true,
+            "name": "厂车运输管理评论"
+        },
+        "transMangeCompleteQuantity": {
+            "meaning": "厂车运输管理完成数量",
+            "reachable": true,
+            "name": "厂车运输管理完成数量"
+        },
+        "transMangeCompleteStatus": {
+            "meaning": "厂车运输管理完成状态",
+            "reachable": true,
+            "name": "厂车运输管理完成状态"
+        },
+        "transMangeCreateTime": {
+            "meaning": "厂车运输管理创建时间",
+            "reachable": true,
+            "name": "厂车运输管理创建时间"
+        },
+        "transMangeCreator": {
+            "meaning": "厂车运输管理创建人",
+            "reachable": true,
+            "name": "厂车运输管理创建人"
+        },
+        "transMangeCreatorId": {
+            "meaning": "厂车运输管理创建人ID",
+            "reachable": true,
+            "name": "厂车运输管理创建人ID"
+        },
+        "transMangeDateExtra1": {
+            "meaning": "厂车运输管理扩展时间1",
+            "reachable": true,
+            "name": "厂车运输管理扩展时间1"
+        },
+        "transMangeDateExtra2": {
+            "meaning": "厂车运输管理扩展时间2",
+            "reachable": true,
+            "name": "厂车运输管理扩展时间2"
+        },
+        "transMangeDateExtra3": {
+            "meaning": "厂车运输管理扩展时间3",
+            "reachable": true,
+            "name": "厂车运输管理扩展时间3"
+        },
+        "transMangeDateExtra4": {
+            "meaning": "厂车运输管理扩展时间4",
+            "reachable": true,
+            "name": "厂车运输管理扩展时间4"
+        },
+        "transMangeDateExtra5": {
+            "meaning": "厂车运输管理扩展时间5",
+            "reachable": true,
+            "name": "厂车运输管理扩展时间5"
+        },
+        "transMangeDefaultType": {
+            "meaning": "厂车运输管理智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "厂车运输管理智能节点主类型"
+        },
+        "transMangeDeliveryDate": {
+            "meaning": "厂车运输管理交货日期",
+            "reachable": true,
+            "name": "厂车运输管理交货日期"
+        },
+        "transMangeDescription": {
+            "meaning": "厂车运输管理描述",
+            "reachable": true,
+            "name": "厂车运输管理描述"
+        },
+        "transMangeEndMileage": {
+            "meaning": "厂车运输管理结束里程数",
+            "reachable": true,
+            "name": "厂车运输管理结束里程数"
+        },
+        "transMangeEndTime": {
+            "meaning": "厂车运输管理结束时间",
+            "reachable": true,
+            "name": "厂车运输管理结束时间"
+        },
+        "transMangeEndTimeRequired": {
+            "meaning": "厂车运输管理最后需时(小时)",
+            "reachable": true,
+            "name": "厂车运输管理最后需时"
+        },
+        "transMangeEngName": {
+            "meaning": "厂车运输管理英文名称",
+            "reachable": true,
+            "name": "厂车运输管理英文名称"
+        },
+        "transMangeEquipmentId": {
+            "meaning": "厂车运输管理设备id",
+            "reachable": true,
+            "name": "厂车运输管理设备id"
+        },
+        "transMangeExchangeRateId": {
+            "meaning": "厂车运输管理币种汇率id",
+            "reachable": true,
+            "name": "厂车运输管理币种汇率id"
+        },
+        "transMangeExtension": {
+            "meaning": "厂车运输管理扩展数据",
+            "reachable": true,
+            "name": "厂车运输管理扩展数据"
+        },
+        "transMangeExternalState": {
+            "meaning": "厂车运输管理上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "厂车运输管理上流程状态位"
+        },
+        "transMangeFilterClazz": {
+            "meaning": "厂车运输管理冗余字段用于筛选",
+            "reachable": false,
+            "name": "厂车运输管理冗余字段用于筛选"
+        },
+        "transMangeFlags": {
+            "meaning": "厂车运输管理63位标志位",
+            "reachable": true,
+            "name": "厂车运输管理63位标志位"
+        },
+        "transMangeFromAuditDate": {
+            "meaning": "transMangeFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromBeginTime": {
+            "meaning": "transMangeFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromCreateTime": {
+            "meaning": "transMangeFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDateExtra1": {
+            "meaning": "transMangeFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDateExtra2": {
+            "meaning": "transMangeFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDateExtra3": {
+            "meaning": "transMangeFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDateExtra4": {
+            "meaning": "transMangeFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDateExtra5": {
+            "meaning": "transMangeFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromDeliveryDate": {
+            "meaning": "transMangeFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromEndTime": {
+            "meaning": "transMangeFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromReceiptDate": {
+            "meaning": "transMangeFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFromUpdateTime": {
+            "meaning": "transMangeFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeFscType": {
+            "meaning": "厂车运输管理FSC声明",
+            "reachable": true,
+            "name": "厂车运输管理FSC声明"
+        },
+        "transMangeGenerativePeople": {
+            "meaning": "厂车运输管理下发人",
+            "reachable": true,
+            "name": "厂车运输管理下发人"
+        },
+        "transMangeGenerativeState": {
+            "meaning": "厂车运输管理下发状态",
+            "reachable": true,
+            "name": "厂车运输管理下发状态"
+        },
+        "transMangeGroovyScript": {
+            "meaning": "厂车运输管理groovy脚本",
+            "reachable": true,
+            "name": "厂车运输管理groovy脚本"
+        },
+        "transMangeGropeCode": {
+            "meaning": "厂车运输管理搜索码",
+            "reachable": true,
+            "name": "厂车运输管理搜索码"
+        },
+        "transMangeHandlingCosts": {
+            "meaning": "厂车运输管理搬运费（手填）",
+            "reachable": true,
+            "name": "厂车运输管理搬运费"
+        },
+        "transMangeId": {
+            "meaning": "厂车运输管理PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "厂车运输管理PK"
+        },
+        "transMangeInUsed": {
+            "meaning": "厂车运输管理是否被使用",
+            "reachable": true,
+            "name": "厂车运输管理是否被使用"
+        },
+        "transMangeInvTypeTaxRateId": {
+            "meaning": "厂车运输管理发票税率id",
+            "reachable": true,
+            "name": "厂车运输管理发票税率id"
+        },
+        "transMangeIsBanned": {
+            "meaning": "厂车运输管理是否被禁用",
+            "reachable": true,
+            "name": "厂车运输管理是否被禁用"
+        },
+        "transMangeIsDeleted": {
+            "meaning": "厂车运输管理是否被删除",
+            "reachable": true,
+            "name": "厂车运输管理是否被删除"
+        },
+        "transMangeIsLeaf": {
+            "meaning": "厂车运输管理是否叶子节点",
+            "reachable": true,
+            "name": "厂车运输管理是否叶子节点"
+        },
+        "transMangeIsMainFlow": {
+            "meaning": "厂车运输管理是否是主流程",
+            "reachable": true,
+            "name": "厂车运输管理是否是主流程"
+        },
+        "transMangeIsManualModificationDate": {
+            "meaning": "厂车运输管理是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "厂车运输管理是否手动修改计划生产时间"
+        },
+        "transMangeIsNeedHandling": {
+            "meaning": "厂车运输管理是否需要搬运",
+            "reachable": true,
+            "name": "厂车运输管理是否需要搬运"
+        },
+        "transMangeIsolation": {
+            "meaning": "厂车运输管理智能节点数据隔离标识",
+            "reachable": true,
+            "name": "厂车运输管理智能节点数据隔离标识"
+        },
+        "transMangeJsScript": {
+            "meaning": "厂车运输管理js脚本",
+            "reachable": true,
+            "name": "厂车运输管理js脚本"
+        },
+        "transMangeMaterialId": {
+            "meaning": "厂车运输管理物料id",
+            "reachable": true,
+            "name": "厂车运输管理物料id"
+        },
+        "transMangeName": {
+            "meaning": "厂车运输管理智能节点名",
+            "reachable": true,
+            "name": "厂车运输管理智能节点名"
+        },
+        "transMangeNameCodeSearch": {
+            "meaning": "厂车运输管理name、user_code模糊搜索",
+            "reachable": true,
+            "name": "厂车运输管理name、user_code模糊搜索"
+        },
+        "transMangeNumberExtra1": {
+            "meaning": "厂车运输管理扩展数量1",
+            "reachable": true,
+            "name": "厂车运输管理扩展数量1"
+        },
+        "transMangeNumberExtra2": {
+            "meaning": "厂车运输管理扩展数量2",
+            "reachable": true,
+            "name": "厂车运输管理扩展数量2"
+        },
+        "transMangeNumberExtra3": {
+            "meaning": "厂车运输管理扩展数量3",
+            "reachable": true,
+            "name": "厂车运输管理扩展数量3"
+        },
+        "transMangeNumberExtra4": {
+            "meaning": "厂车运输管理扩展数量4",
+            "reachable": true,
+            "name": "厂车运输管理扩展数量4"
+        },
+        "transMangeNumberExtra5": {
+            "meaning": "厂车运输管理扩展数量5",
+            "reachable": true,
+            "name": "厂车运输管理扩展数量5"
+        },
+        "transMangeOilFee": {
+            "meaning": "厂车运输管理油费（手填）",
+            "reachable": true,
+            "name": "厂车运输管理油费"
+        },
+        "transMangeOtherCosts": {
+            "meaning": "厂车运输管理其他费用（手填）",
+            "reachable": true,
+            "name": "厂车运输管理其他费用"
+        },
+        "transMangeParentId": {
+            "meaning": "厂车运输管理父节点ID",
+            "reachable": true,
+            "name": "厂车运输管理父节点ID"
+        },
+        "transMangePlannedOutputQuantity": {
+            "meaning": "厂车运输管理计划产出数量",
+            "reachable": true,
+            "name": "厂车运输管理计划产出数量"
+        },
+        "transMangePlannedTimeRequired": {
+            "meaning": "厂车运输管理计划需时(小时)",
+            "reachable": true,
+            "name": "厂车运输管理计划需时"
+        },
+        "transMangePrintTimes": {
+            "meaning": "厂车运输管理打印次数",
+            "reachable": true,
+            "name": "厂车运输管理打印次数"
+        },
+        "transMangePriority": {
+            "meaning": "厂车运输管理优先级",
+            "reachable": true,
+            "name": "厂车运输管理优先级"
+        },
+        "transMangeProcessInstanceId": {
+            "meaning": "厂车运输管理流程实例ID",
+            "reachable": true,
+            "name": "厂车运输管理流程实例ID"
+        },
+        "transMangeProductionProcessesTypeId": {
+            "meaning": "厂车运输管理工序类型ID",
+            "reachable": true,
+            "name": "厂车运输管理工序类型ID"
+        },
+        "transMangeProductionShiftId": {
+            "meaning": "厂车运输管理生产班次ID",
+            "reachable": true,
+            "name": "厂车运输管理生产班次ID"
+        },
+        "transMangeQuantity": {
+            "meaning": "厂车运输管理任务数量",
+            "reachable": true,
+            "name": "厂车运输管理任务数量"
+        },
+        "transMangeReceiptDate": {
+            "meaning": "厂车运输管理单据日期",
+            "reachable": true,
+            "name": "厂车运输管理单据日期"
+        },
+        "transMangeReceiptType": {
+            "meaning": "厂车运输管理单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "厂车运输管理单据类型"
+        },
+        "transMangeRelatedTasksId": {
+            "meaning": "厂车运输管理关联任务id",
+            "reachable": true,
+            "name": "厂车运输管理关联任务id"
+        },
+        "transMangeSerialNumber": {
+            "meaning": "厂车运输管理顺序号",
+            "reachable": true,
+            "name": "厂车运输管理顺序号"
+        },
+        "transMangeSource": {
+            "meaning": "厂车运输管理源",
+            "reachable": true,
+            "name": "厂车运输管理源"
+        },
+        "transMangeSourceType": {
+            "meaning": "厂车运输管理来源类型",
+            "reachable": true,
+            "name": "厂车运输管理来源类型"
+        },
+        "transMangeStartMileage": {
+            "meaning": "厂车运输管理开始里程数",
+            "reachable": true,
+            "name": "厂车运输管理开始里程数"
+        },
+        "transMangeState": {
+            "meaning": "厂车运输管理通用状态",
+            "reachable": true,
+            "name": "厂车运输管理通用状态"
+        },
+        "transMangeSystemCode": {
+            "meaning": "厂车运输管理系统编码",
+            "reachable": true,
+            "name": "厂车运输管理系统编码"
+        },
+        "transMangeTarget": {
+            "meaning": "厂车运输管理目标",
+            "reachable": true,
+            "name": "厂车运输管理目标"
+        },
+        "transMangeTaskNodeName": {
+            "meaning": "厂车运输管理任务节点名称",
+            "reachable": true,
+            "name": "厂车运输管理任务节点名称"
+        },
+        "transMangeTenantId": {
+            "meaning": "厂车运输管理租户_id",
+            "reachable": true,
+            "name": "厂车运输管理租户_id"
+        },
+        "transMangeThirdPartyClass": {
+            "meaning": "厂车运输管理第三方分类",
+            "reachable": true,
+            "name": "厂车运输管理第三方分类"
+        },
+        "transMangeThirdPartyId": {
+            "meaning": "厂车运输管理第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "厂车运输管理第三方系统中的唯一ID"
+        },
+        "transMangeThirdPartyName": {
+            "meaning": "厂车运输管理第三方名称",
+            "reachable": true,
+            "name": "厂车运输管理第三方名称"
+        },
+        "transMangeToAuditDate": {
+            "meaning": "transMangeToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToBeginTime": {
+            "meaning": "transMangeToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToCreateTime": {
+            "meaning": "transMangeToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDateExtra1": {
+            "meaning": "transMangeToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDateExtra2": {
+            "meaning": "transMangeToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDateExtra3": {
+            "meaning": "transMangeToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDateExtra4": {
+            "meaning": "transMangeToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDateExtra5": {
+            "meaning": "transMangeToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToDeliveryDate": {
+            "meaning": "transMangeToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToEndTime": {
+            "meaning": "transMangeToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToReceiptDate": {
+            "meaning": "transMangeToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeToUpdateTime": {
+            "meaning": "transMangeToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "transMangeTollFee": {
+            "meaning": "厂车运输管理过路费（手填）",
+            "reachable": true,
+            "name": "厂车运输管理过路费"
+        },
+        "transMangeTotalExpensesIncludingTax": {
+            "meaning": "厂车运输管理总费用(默认是含税，不用管税率)",
+            "reachable": true,
+            "name": "厂车运输管理总费用"
+        },
+        "transMangeTotalMileage": {
+            "meaning": "厂车运输管理总里程",
+            "reachable": true,
+            "name": "厂车运输管理总里程"
+        },
+        "transMangeTotalMileageCosts": {
+            "meaning": "厂车运输管理里程总费用（系统自动汇总）",
+            "reachable": true,
+            "name": "厂车运输管理里程总费用"
+        },
+        "transMangeTransTotalFee": {
+            "meaning": "厂车运输管理运输总费用",
+            "reachable": true,
+            "name": "厂车运输管理运输总费用"
+        },
+        "transMangeUnitCode": {
+            "meaning": "厂车运输管理单位id",
+            "reachable": true,
+            "name": "厂车运输管理单位id"
+        },
+        "transMangeUpdateTime": {
+            "meaning": "厂车运输管理更新时间",
+            "reachable": true,
+            "name": "厂车运输管理更新时间"
+        },
+        "transMangeUpdater": {
+            "meaning": "厂车运输管理更新人",
+            "reachable": true,
+            "name": "厂车运输管理更新人"
+        },
+        "transMangeUpdaterId": {
+            "meaning": "厂车运输管理更新人ID",
+            "reachable": true,
+            "name": "厂车运输管理更新人ID"
+        },
+        "transMangeUserCode": {
+            "meaning": "厂车运输管理智能节点的唯一编码",
+            "reachable": true,
+            "name": "厂车运输管理智能节点的唯一编码"
+        },
+        "transMangeVarExtra1": {
+            "meaning": "厂车运输管理扩展1",
+            "reachable": true,
+            "name": "厂车运输管理扩展1"
+        },
+        "transMangeVarExtra2": {
+            "meaning": "厂车运输管理扩展2",
+            "reachable": true,
+            "name": "厂车运输管理扩展2"
+        },
+        "transMangeVarExtra3": {
+            "meaning": "厂车运输管理扩展3",
+            "reachable": true,
+            "name": "厂车运输管理扩展3"
+        },
+        "transMangeVarExtra4": {
+            "meaning": "厂车运输管理扩展4",
+            "reachable": true,
+            "name": "厂车运输管理扩展4"
+        },
+        "transMangeVarExtra5": {
+            "meaning": "厂车运输管理扩展5",
+            "reachable": true,
+            "name": "厂车运输管理扩展5"
+        },
+        "transMangeVehicleId": {
+            "meaning": "厂车运输管理车辆id(厂车、商务时需要选择)",
+            "reachable": true,
+            "name": "厂车运输管理车辆id"
+        },
+        "transMangeVersion": {
+            "meaning": "厂车运输管理版本号",
+            "reachable": true,
+            "name": "厂车运输管理版本号"
+        }
+    }
+}

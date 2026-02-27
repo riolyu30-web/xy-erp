@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html lang="zh-CN">
+<!-- 头部信息 -->
+<head>
+    <!-- 设置字符编码为 UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置视口，确保移动端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 页面标题 -->
+    <title>Excel表头提取测试</title>
+    <!-- 样式定义 -->
+    <style>
+        /* 全局样式重置 */
+        * {
+            /* 包含边框和内边距在内的盒模型 */
+            box-sizing: border-box;
+            /* 去除默认外边距 */
+            margin: 0;
+            /* 去除默认内边距 */
+            padding: 0;
+        }
+
+        /* Body 样式 */
+        body {
+            /* 设置字体 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* 设置背景为深色科技感渐变 */
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            /* 设置最小高度为视口高度 */
+            min-height: 100vh;
+            /* 使用 Flexbox 布局 */
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+            /* 字体颜色为白色 */
+            color: #ffffff;
+            /* 增加底部内边距 */
+            padding-bottom: 50px;
+        }
+
+        /* 主容器样式 - 磨砂玻璃效果 */
+        .container {
+            /* 设置宽度 */
+            width: 90%;
+            /* 设置最大宽度 */
+            max-width: 1000px;
+            /* 设置背景颜色，半透明白色 */
+            background: rgba(255, 255, 255, 0.1);
+            /* 设置背景模糊效果 (核心：磨砂玻璃) */
+            backdrop-filter: blur(15px);
+            /* Webkit 前缀兼容 */
+            -webkit-backdrop-filter: blur(15px);
+            /* 设置边框，半透明白色 */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* 设置圆角 */
+            border-radius: 20px;
+            /* 设置内边距 */
+            padding: 40px;
+            /* 设置阴影，增加层次感 */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* 标题样式 */
+        h1 {
+            /* 文字居中 */
+            text-align: center;
+            /* 底部外边距 */
+            margin-bottom: 30px;
+            /* 字体大小 */
+            font-size: 2.5rem;
+            /* 文字阴影，增加发光感 */
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            /* 字母间距 */
+            letter-spacing: 2px;
+        }
+
+        /* 表单样式 */
+        #upload-form {
+            /* Flexbox 布局 */
+            display: flex;
+            /* 垂直排列 */
+            flex-direction: column;
+            /* 垂直居中 */
+            align-items: center;
+            /* 底部外边距 */
+            margin-bottom: 30px;
+        }
+
+        /* 文件输入框容器 */
+        .file-input-wrapper {
+            /* 相对定位 */
+            position: relative;
+            /* 底部外边距 */
+            margin-bottom: 20px;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 内联块级元素 */
+            display: inline-block;
+        }
+
+        /* 文件输入框样式 */
+        input[type="file"] {
+            /* 字体大小 */
+            font-size: 1rem;
+            /* 文字颜色 */
+            color: #eee;
+            /* 背景颜色 */
+            background: rgba(255, 255, 255, 0.05);
+            /* 边框 */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            /* 圆角 */
+            border-radius: 10px;
+            /* 内边距 */
+            padding: 10px;
+            /* 宽度 */
+            width: 300px;
+            /* 鼠标样式 */
+            cursor: pointer;
+            /* 过渡效果 */
+            transition: all 0.3s ease;
+        }
+
+        /* 文件输入框悬停效果 */
+        input[type="file"]:hover {
+            /* 背景颜色变亮 */
+            background: rgba(255, 255, 255, 0.15);
+            /* 边框颜色 */
+            border-color: rgba(0, 255, 255, 0.5);
+        }
+
+        /* 按钮样式 */
+        button {
+            /* 内边距 */
+            padding: 12px 30px;
+            /* 字体大小 */
+            font-size: 1.1rem;
+            /* 背景颜色，渐变 */
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            /* 文字颜色 */
+            color: white;
+            /* 去除边框 */
+            border: none;
+            /* 圆角 */
+            border-radius: 25px;
+            /* 鼠标样式 */
+            cursor: pointer;
+            /* 阴影 */
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+            /* 过渡效果 */
+            transition: transform 0.2s, box-shadow 0.2s;
+            /* 字体加粗 */
+            font-weight: bold;
+            /* 字母间距 */
+            letter-spacing: 1px;
+        }
+
+        /* 按钮悬停效果 */
+        button:hover {
+            /* 向上移动 */
+            transform: translateY(-2px);
+            /* 阴影增强 */
+            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+        }
+
+        /* 按钮点击效果 */
+        button:active {
+            /* 向下移动 */
+            transform: translateY(1px);
+        }
+
+        /* 结果区域样式 */
+        #result-area {
+            /* 默认隐藏，有数据时显示 */
+            display: none;
+            /* 动画效果 */
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* 原始 JSON 区域样式 */
+        .json-container {
+            /* 顶部外边距 */
+            margin-top: 20px;
+        }
+
+        /* JSON 内容显示区域 */
+        #response {
+            /* 默认显示 */
+            display: block;
+            /* 内边距 */
+            padding: 15px;
+            /* 背景颜色 */
+            background: rgba(0, 0, 0, 0.3);
+            /* 圆角 */
+            border-radius: 10px;
+            /* 字体 */
+            font-family: 'Consolas', 'Monaco', monospace;
+            /* 字体大小 */
+            font-size: 0.9rem;
+            /* 文字颜色 */
+            color: #00ff99;
+            /* 溢出滚动 */
+            overflow-x: auto;
+            /* 保留空白符 */
+            white-space: pre-wrap;
+            /* 自动换行 */
+            word-wrap: break-word;
+            /* 边框 */
+            border: 1px solid rgba(0, 255, 153, 0.2);
+        }
+
+        /* 动画定义 */
+        @keyframes fadeIn {
+            /* 开始状态 */
+            from { opacity: 0; transform: translateY(20px); }
+            /* 结束状态 */
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 页面主标题 -->
+        <h1>Excel 数据提取工具</h1>
+
+        <!-- 上传表单 -->
+        <form id="upload-form">
+            <!-- 文件选择区域 -->
+            <div class="file-input-wrapper">
+                <input id="file-input" type="file" name="file" accept=".xlsx, .xls">
+            </div>
+            <!-- 提交按钮 -->
+            <button type="submit">开始分析数据</button>
+        </form>
+        <!-- 结果展示区域 -->
+        <div id="result-area">
+                        <!-- JSON 数据展示区域 -->
+            <div class="json-container">
+                <h2 style="margin-bottom: 15px; color: #00c6ff;">原始 JSON 数据</h2>
+                <!-- JSON 内容 -->
+                <pre id="response"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript 脚本 -->
+    <script>
+        // 获取表单元素
+        const form = document.getElementById('upload-form');
+        // 获取文件输入元素
+        const fileInput = document.getElementById('file-input');
+        // 获取 JSON 响应显示元素
+        const responseContainer = document.getElementById('response');
+        // 获取结果区域元素
+        const resultArea = document.getElementById('result-area');
+
+        // 为表单提交事件添加监听器
+        form.addEventListener('submit', async (event) => {
+            // 阻止表单的默认提交行为
+            event.preventDefault();
+
+            // 检查是否选择了文件
+            if (!fileInput.files[0]) {
+                alert('请先选择一个 Excel 文件！');
+                return;
+            }
+
+            // 创建 FormData 对象
+            const formData = new FormData();
+            // 添加文件到 FormData
+            formData.append('file', fileInput.files[0]);
+
+            // 设置按钮状态为处理中
+            const submitBtn = form.querySelector('button[type="submit"]');
+            // 保存原始按钮文本
+            const originalBtnText = submitBtn.textContent;
+            // 修改按钮文本
+            submitBtn.textContent = '正在处理...';
+            // 禁用按钮
+            submitBtn.disabled = true;
+
+            try {
+                // 发送 POST 请求到后端接口
+                const response = await fetch('http://localhost:8001/api/v1/table/upload_excel_header', {
+                    method: 'POST', // 请求方法
+                    body: formData, // 请求体
+                });
+
+                // 解析 JSON 响应
+                const data = await response.json();
+
+                // 检查响应状态
+                if (!response.ok) {
+                    throw new Error(data.detail || '上传失败');
+                }
+
+                // 处理成功，显示结果
+                displayResult(data);
+
+            } catch (error) {
+                // 处理错误
+                alert('发生错误: ' + error.message);
+                // 打印错误日志
+                console.error(error);
+            } finally {
+                // 恢复按钮状态
+                submitBtn.textContent = originalBtnText;
+                // 启用按钮
+                submitBtn.disabled = false;
+            }
+        });
+
+        // 显示结果函数
+        function displayResult(data) {
+            // 显示结果区域
+            resultArea.style.display = 'block';
+            
+            // 填充 JSON 数据到预格式化文本块
+            responseContainer.textContent = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+</html>

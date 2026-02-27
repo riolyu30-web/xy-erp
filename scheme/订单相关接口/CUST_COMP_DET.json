@@ -1,0 +1,1247 @@
+{
+    "api_name": "/cust-comp-det/findList",
+    "table_name": "客户投诉明细表",
+    "request": {
+        "custCompDetCustCompClazz": "CUST_COMP",
+        "custCompDetClazz": "CUST_COMP_DET"
+    },
+    "mainTabClazz": "CUST_COMP_DET",
+    "response": {
+        "custCompDetActualTimeRequired": {
+            "meaning": "客户投诉明细表实际需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表实际需时"
+        },
+        "custCompDetAdjustmentTimeRequired": {
+            "meaning": "客户投诉明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表调整需时"
+        },
+        "custCompDetApplicationId": {
+            "meaning": "客户投诉明细表应用ID",
+            "reachable": false,
+            "name": "客户投诉明细表应用ID"
+        },
+        "custCompDetAuditDate": {
+            "meaning": "客户投诉明细表审核时间",
+            "reachable": false,
+            "name": "客户投诉明细表审核时间"
+        },
+        "custCompDetAuditStatus": {
+            "meaning": "客户投诉明细表审核状态",
+            "reachable": false,
+            "name": "客户投诉明细表审核状态"
+        },
+        "custCompDetAvailableScheduleId": {
+            "meaning": "客户投诉明细表可用日程id",
+            "reachable": false,
+            "name": "客户投诉明细表可用日程id"
+        },
+        "custCompDetBeginTime": {
+            "meaning": "客户投诉明细表开始时间",
+            "reachable": false,
+            "name": "客户投诉明细表开始时间"
+        },
+        "custCompDetBizVersion": {
+            "meaning": "客户投诉明细表业务自定义版本号",
+            "reachable": false,
+            "name": "客户投诉明细表业务自定义版本号"
+        },
+        "custCompDetBriefName": {
+            "meaning": "客户投诉明细表简称",
+            "reachable": false,
+            "name": "客户投诉明细表简称"
+        },
+        "custCompDetBusDivisId": {
+            "meaning": "客户投诉明细表事业部id",
+            "reachable": false,
+            "name": "客户投诉明细表事业部id"
+        },
+        "custCompDetClazz": {
+            "meaning": "客户投诉明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "客户投诉明细表子类"
+        },
+        "custCompDetClosedReason": {
+            "meaning": "客户投诉明细表结案原因",
+            "reachable": false,
+            "name": "客户投诉明细表结案原因"
+        },
+        "custCompDetClosedStatus": {
+            "meaning": "客户投诉明细表结案状态",
+            "reachable": false,
+            "name": "客户投诉明细表结案状态"
+        },
+        "custCompDetComment": {
+            "meaning": "客户投诉明细表评论",
+            "reachable": false,
+            "name": "客户投诉明细表评论"
+        },
+        "custCompDetCompleteQuantity": {
+            "meaning": "客户投诉明细表完成数量",
+            "reachable": false,
+            "name": "客户投诉明细表完成数量"
+        },
+        "custCompDetCompleteStatus": {
+            "meaning": "客户投诉明细表完成状态",
+            "reachable": false,
+            "name": "客户投诉明细表完成状态"
+        },
+        "custCompDetCreateTime": {
+            "meaning": "客户投诉明细表创建时间",
+            "reachable": false,
+            "name": "客户投诉明细表创建时间"
+        },
+        "custCompDetCreator": {
+            "meaning": "客户投诉明细表创建人",
+            "reachable": false,
+            "name": "客户投诉明细表创建人"
+        },
+        "custCompDetCreatorId": {
+            "meaning": "客户投诉明细表创建人ID",
+            "reachable": false,
+            "name": "客户投诉明细表创建人ID"
+        },
+        "custCompDetCustCompAccountability": {
+            "meaning": "客户投诉明细表责任归属(字典：生产责任、客户责任、业助责任、供应商责任、无法判断等)",
+            "reachable": false,
+            "name": "客户投诉明细表责任归属"
+        },
+        "custCompDetCustCompActualTimeRequired": {
+            "meaning": "客户投诉明细表实际需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表实际需时"
+        },
+        "custCompDetCustCompAdjustmentTimeRequired": {
+            "meaning": "客户投诉明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表调整需时"
+        },
+        "custCompDetCustCompApplicationId": {
+            "meaning": "客户投诉明细表应用ID",
+            "reachable": false,
+            "name": "客户投诉明细表应用ID"
+        },
+        "custCompDetCustCompAuditDate": {
+            "meaning": "客户投诉明细表审核时间",
+            "reachable": false,
+            "name": "客户投诉明细表审核时间"
+        },
+        "custCompDetCustCompAuditStatus": {
+            "meaning": "客户投诉明细表审核状态",
+            "reachable": false,
+            "name": "客户投诉明细表审核状态"
+        },
+        "custCompDetCustCompAvailableScheduleId": {
+            "meaning": "客户投诉明细表可用日程id",
+            "reachable": false,
+            "name": "客户投诉明细表可用日程id"
+        },
+        "custCompDetCustCompBeginTime": {
+            "meaning": "客户投诉明细表开始时间",
+            "reachable": false,
+            "name": "客户投诉明细表开始时间"
+        },
+        "custCompDetCustCompBizVersion": {
+            "meaning": "客户投诉明细表业务自定义版本号",
+            "reachable": false,
+            "name": "客户投诉明细表业务自定义版本号"
+        },
+        "custCompDetCustCompBriefName": {
+            "meaning": "客户投诉明细表简称",
+            "reachable": false,
+            "name": "客户投诉明细表简称"
+        },
+        "custCompDetCustCompBusDivisId": {
+            "meaning": "客户投诉明细表事业部id",
+            "reachable": false,
+            "name": "客户投诉明细表事业部id"
+        },
+        "custCompDetCustCompChannelId": {
+            "meaning": "客户投诉明细表投诉渠道(字典：微信、Email，口头，电话等)，默认微信，渠道guid",
+            "reachable": false,
+            "name": "客户投诉明细表投诉渠道"
+        },
+        "custCompDetCustCompClazz": {
+            "meaning": "客户投诉明细表子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "客户投诉明细表子类"
+        },
+        "custCompDetCustCompClosedReason": {
+            "meaning": "客户投诉明细表结案原因",
+            "reachable": false,
+            "name": "客户投诉明细表结案原因"
+        },
+        "custCompDetCustCompClosedStatus": {
+            "meaning": "客户投诉明细表结案状态",
+            "reachable": false,
+            "name": "客户投诉明细表结案状态"
+        },
+        "custCompDetCustCompComment": {
+            "meaning": "客户投诉明细表评论",
+            "reachable": false,
+            "name": "客户投诉明细表评论"
+        },
+        "custCompDetCustCompComplaintsContent": {
+            "meaning": "客户投诉明细表投诉详细内容(手填)",
+            "reachable": false,
+            "name": "客户投诉明细表投诉详细内容"
+        },
+        "custCompDetCustCompComplaintsReason": {
+            "meaning": "客户投诉明细表投诉原因(字典：产品质量问题，数量不足)默认产品质量问题",
+            "reachable": false,
+            "name": "客户投诉明细表投诉原因"
+        },
+        "custCompDetCustCompCompleteQuantity": {
+            "meaning": "客户投诉明细表完成数量",
+            "reachable": false,
+            "name": "客户投诉明细表完成数量"
+        },
+        "custCompDetCustCompCompleteStatus": {
+            "meaning": "客户投诉明细表完成状态",
+            "reachable": false,
+            "name": "客户投诉明细表完成状态"
+        },
+        "custCompDetCustCompCreateTime": {
+            "meaning": "客户投诉明细表创建时间",
+            "reachable": false,
+            "name": "客户投诉明细表创建时间"
+        },
+        "custCompDetCustCompCreator": {
+            "meaning": "客户投诉明细表创建人",
+            "reachable": false,
+            "name": "客户投诉明细表创建人"
+        },
+        "custCompDetCustCompCreatorId": {
+            "meaning": "客户投诉明细表创建人ID",
+            "reachable": false,
+            "name": "客户投诉明细表创建人ID"
+        },
+        "custCompDetCustCompCustomerId": {
+            "meaning": "客户投诉明细表客户_id",
+            "reachable": false,
+            "name": "客户投诉明细表客户_id"
+        },
+        "custCompDetCustCompDateExtra1": {
+            "meaning": "客户投诉明细表扩展时间1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间1"
+        },
+        "custCompDetCustCompDateExtra2": {
+            "meaning": "客户投诉明细表扩展时间2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间2"
+        },
+        "custCompDetCustCompDateExtra3": {
+            "meaning": "客户投诉明细表扩展时间3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间3"
+        },
+        "custCompDetCustCompDateExtra4": {
+            "meaning": "客户投诉明细表扩展时间4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间4"
+        },
+        "custCompDetCustCompDateExtra5": {
+            "meaning": "客户投诉明细表扩展时间5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间5"
+        },
+        "custCompDetCustCompDefaultType": {
+            "meaning": "客户投诉明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点主类型"
+        },
+        "custCompDetCustCompDeliveryDate": {
+            "meaning": "客户投诉明细表交货日期",
+            "reachable": false,
+            "name": "客户投诉明细表交货日期"
+        },
+        "custCompDetCustCompDescription": {
+            "meaning": "客户投诉明细表描述",
+            "reachable": false,
+            "name": "客户投诉明细表描述"
+        },
+        "custCompDetCustCompEndTime": {
+            "meaning": "客户投诉明细表结束时间",
+            "reachable": false,
+            "name": "客户投诉明细表结束时间"
+        },
+        "custCompDetCustCompEndTimeRequired": {
+            "meaning": "客户投诉明细表最后需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表最后需时"
+        },
+        "custCompDetCustCompEngName": {
+            "meaning": "客户投诉明细表英文名称",
+            "reachable": false,
+            "name": "客户投诉明细表英文名称"
+        },
+        "custCompDetCustCompEquipmentId": {
+            "meaning": "客户投诉明细表设备id",
+            "reachable": false,
+            "name": "客户投诉明细表设备id"
+        },
+        "custCompDetCustCompExchangeRateId": {
+            "meaning": "客户投诉明细表币种汇率id",
+            "reachable": false,
+            "name": "客户投诉明细表币种汇率id"
+        },
+        "custCompDetCustCompExtension": {
+            "meaning": "客户投诉明细表扩展数据",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数据"
+        },
+        "custCompDetCustCompExternalState": {
+            "meaning": "客户投诉明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "客户投诉明细表上流程状态位"
+        },
+        "custCompDetCustCompFilterClazz": {
+            "meaning": "客户投诉明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户投诉明细表冗余字段用于筛选"
+        },
+        "custCompDetCustCompFlags": {
+            "meaning": "客户投诉明细表63位标志位",
+            "reachable": false,
+            "name": "客户投诉明细表63位标志位"
+        },
+        "custCompDetCustCompFromAuditDate": {
+            "meaning": "custCompDetCustCompFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromBeginTime": {
+            "meaning": "custCompDetCustCompFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromCreateTime": {
+            "meaning": "custCompDetCustCompFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDateExtra1": {
+            "meaning": "custCompDetCustCompFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDateExtra2": {
+            "meaning": "custCompDetCustCompFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDateExtra3": {
+            "meaning": "custCompDetCustCompFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDateExtra4": {
+            "meaning": "custCompDetCustCompFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDateExtra5": {
+            "meaning": "custCompDetCustCompFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromDeliveryDate": {
+            "meaning": "custCompDetCustCompFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromEndTime": {
+            "meaning": "custCompDetCustCompFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromReceiptDate": {
+            "meaning": "custCompDetCustCompFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFromUpdateTime": {
+            "meaning": "custCompDetCustCompFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompFscType": {
+            "meaning": "客户投诉明细表FSC声明",
+            "reachable": false,
+            "name": "客户投诉明细表FSC声明"
+        },
+        "custCompDetCustCompGenerativePeople": {
+            "meaning": "客户投诉明细表下发人",
+            "reachable": false,
+            "name": "客户投诉明细表下发人"
+        },
+        "custCompDetCustCompGenerativeState": {
+            "meaning": "客户投诉明细表下发状态",
+            "reachable": false,
+            "name": "客户投诉明细表下发状态"
+        },
+        "custCompDetCustCompGroovyScript": {
+            "meaning": "客户投诉明细表groovy脚本",
+            "reachable": false,
+            "name": "客户投诉明细表groovy脚本"
+        },
+        "custCompDetCustCompGropeCode": {
+            "meaning": "客户投诉明细表搜索码",
+            "reachable": false,
+            "name": "客户投诉明细表搜索码"
+        },
+        "custCompDetCustCompHandlingMethod": {
+            "meaning": "客户投诉明细表处理方式(字典：退货、退货退款，仅退款，补货等)，默认退货",
+            "reachable": false,
+            "name": "客户投诉明细表处理方式"
+        },
+        "custCompDetCustCompId": {
+            "meaning": "客户投诉明细表PK",
+            "reachable": false,
+            "name": "客户投诉明细表PK"
+        },
+        "custCompDetCustCompInUsed": {
+            "meaning": "客户投诉明细表是否被使用",
+            "reachable": false,
+            "name": "客户投诉明细表是否被使用"
+        },
+        "custCompDetCustCompInvTypeTaxRateId": {
+            "meaning": "客户投诉明细表发票税率id",
+            "reachable": false,
+            "name": "客户投诉明细表发票税率id"
+        },
+        "custCompDetCustCompIsBanned": {
+            "meaning": "客户投诉明细表是否被禁用",
+            "reachable": false,
+            "name": "客户投诉明细表是否被禁用"
+        },
+        "custCompDetCustCompIsDeleted": {
+            "meaning": "客户投诉明细表是否被删除",
+            "reachable": false,
+            "name": "客户投诉明细表是否被删除"
+        },
+        "custCompDetCustCompIsLeaf": {
+            "meaning": "客户投诉明细表是否叶子节点",
+            "reachable": false,
+            "name": "客户投诉明细表是否叶子节点"
+        },
+        "custCompDetCustCompIsMainFlow": {
+            "meaning": "客户投诉明细表是否是主流程",
+            "reachable": false,
+            "name": "客户投诉明细表是否是主流程"
+        },
+        "custCompDetCustCompIsManualModificationDate": {
+            "meaning": "客户投诉明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "客户投诉明细表是否手动修改计划生产时间"
+        },
+        "custCompDetCustCompIsolation": {
+            "meaning": "客户投诉明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点数据隔离标识"
+        },
+        "custCompDetCustCompJsScript": {
+            "meaning": "客户投诉明细表js脚本",
+            "reachable": false,
+            "name": "客户投诉明细表js脚本"
+        },
+        "custCompDetCustCompMaterialId": {
+            "meaning": "客户投诉明细表物料id",
+            "reachable": false,
+            "name": "客户投诉明细表物料id"
+        },
+        "custCompDetCustCompName": {
+            "meaning": "客户投诉明细表智能节点名",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点名"
+        },
+        "custCompDetCustCompNameCodeSearch": {
+            "meaning": "客户投诉明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "客户投诉明细表name、user_code模糊搜索"
+        },
+        "custCompDetCustCompNumberExtra1": {
+            "meaning": "客户投诉明细表扩展数量1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量1"
+        },
+        "custCompDetCustCompNumberExtra2": {
+            "meaning": "客户投诉明细表扩展数量2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量2"
+        },
+        "custCompDetCustCompNumberExtra3": {
+            "meaning": "客户投诉明细表扩展数量3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量3"
+        },
+        "custCompDetCustCompNumberExtra4": {
+            "meaning": "客户投诉明细表扩展数量4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量4"
+        },
+        "custCompDetCustCompNumberExtra5": {
+            "meaning": "客户投诉明细表扩展数量5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量5"
+        },
+        "custCompDetCustCompParentId": {
+            "meaning": "客户投诉明细表父节点ID",
+            "reachable": false,
+            "name": "客户投诉明细表父节点ID"
+        },
+        "custCompDetCustCompPlannedOutputQuantity": {
+            "meaning": "客户投诉明细表计划产出数量",
+            "reachable": false,
+            "name": "客户投诉明细表计划产出数量"
+        },
+        "custCompDetCustCompPlannedTimeRequired": {
+            "meaning": "客户投诉明细表计划需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表计划需时"
+        },
+        "custCompDetCustCompPrintTimes": {
+            "meaning": "客户投诉明细表打印次数",
+            "reachable": false,
+            "name": "客户投诉明细表打印次数"
+        },
+        "custCompDetCustCompPriority": {
+            "meaning": "客户投诉明细表优先级",
+            "reachable": false,
+            "name": "客户投诉明细表优先级"
+        },
+        "custCompDetCustCompProcessInstanceId": {
+            "meaning": "客户投诉明细表流程实例ID",
+            "reachable": false,
+            "name": "客户投诉明细表流程实例ID"
+        },
+        "custCompDetCustCompProductionProcessesTypeId": {
+            "meaning": "客户投诉明细表工序类型ID",
+            "reachable": false,
+            "name": "客户投诉明细表工序类型ID"
+        },
+        "custCompDetCustCompProductionShiftId": {
+            "meaning": "客户投诉明细表生产班次ID",
+            "reachable": false,
+            "name": "客户投诉明细表生产班次ID"
+        },
+        "custCompDetCustCompQuantity": {
+            "meaning": "客户投诉明细表任务数量",
+            "reachable": false,
+            "name": "客户投诉明细表任务数量"
+        },
+        "custCompDetCustCompReceiptDate": {
+            "meaning": "客户投诉明细表单据日期",
+            "reachable": false,
+            "name": "客户投诉明细表单据日期"
+        },
+        "custCompDetCustCompReceiptType": {
+            "meaning": "客户投诉明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "客户投诉明细表单据类型"
+        },
+        "custCompDetCustCompRelatedTasksId": {
+            "meaning": "客户投诉明细表关联任务id",
+            "reachable": false,
+            "name": "客户投诉明细表关联任务id"
+        },
+        "custCompDetCustCompReplenishmentAddress": {
+            "meaning": "客户投诉明细表补货详细地址",
+            "reachable": false,
+            "name": "客户投诉明细表补货详细地址"
+        },
+        "custCompDetCustCompReplenishmentAdministrativeAreaId": {
+            "meaning": "客户投诉明细表补货行政区域id",
+            "reachable": false,
+            "name": "客户投诉明细表补货行政区域id"
+        },
+        "custCompDetCustCompReturnAddress": {
+            "meaning": "客户投诉明细表退货详细地址",
+            "reachable": false,
+            "name": "客户投诉明细表退货详细地址"
+        },
+        "custCompDetCustCompReturnAdministrativeAreaId": {
+            "meaning": "客户投诉明细表退货行政区域id",
+            "reachable": false,
+            "name": "客户投诉明细表退货行政区域id"
+        },
+        "custCompDetCustCompSerialNumber": {
+            "meaning": "客户投诉明细表顺序号",
+            "reachable": false,
+            "name": "客户投诉明细表顺序号"
+        },
+        "custCompDetCustCompSource": {
+            "meaning": "客户投诉明细表源",
+            "reachable": false,
+            "name": "客户投诉明细表源"
+        },
+        "custCompDetCustCompSourceType": {
+            "meaning": "客户投诉明细表来源类型",
+            "reachable": false,
+            "name": "客户投诉明细表来源类型"
+        },
+        "custCompDetCustCompState": {
+            "meaning": "客户投诉明细表通用状态",
+            "reachable": false,
+            "name": "客户投诉明细表通用状态"
+        },
+        "custCompDetCustCompSystemCode": {
+            "meaning": "客户投诉明细表系统编码",
+            "reachable": false,
+            "name": "客户投诉明细表系统编码"
+        },
+        "custCompDetCustCompTarget": {
+            "meaning": "客户投诉明细表目标",
+            "reachable": false,
+            "name": "客户投诉明细表目标"
+        },
+        "custCompDetCustCompTaskNodeName": {
+            "meaning": "客户投诉明细表任务节点名称",
+            "reachable": false,
+            "name": "客户投诉明细表任务节点名称"
+        },
+        "custCompDetCustCompTenantId": {
+            "meaning": "客户投诉明细表租户_guid",
+            "reachable": false,
+            "name": "客户投诉明细表租户_guid"
+        },
+        "custCompDetCustCompThirdPartyClass": {
+            "meaning": "客户投诉明细表第三方分类",
+            "reachable": false,
+            "name": "客户投诉明细表第三方分类"
+        },
+        "custCompDetCustCompThirdPartyId": {
+            "meaning": "客户投诉明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "客户投诉明细表第三方系统中的唯一ID"
+        },
+        "custCompDetCustCompThirdPartyName": {
+            "meaning": "客户投诉明细表第三方名称",
+            "reachable": false,
+            "name": "客户投诉明细表第三方名称"
+        },
+        "custCompDetCustCompToAuditDate": {
+            "meaning": "custCompDetCustCompToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToBeginTime": {
+            "meaning": "custCompDetCustCompToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToCreateTime": {
+            "meaning": "custCompDetCustCompToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDateExtra1": {
+            "meaning": "custCompDetCustCompToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDateExtra2": {
+            "meaning": "custCompDetCustCompToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDateExtra3": {
+            "meaning": "custCompDetCustCompToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDateExtra4": {
+            "meaning": "custCompDetCustCompToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDateExtra5": {
+            "meaning": "custCompDetCustCompToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToDeliveryDate": {
+            "meaning": "custCompDetCustCompToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToEndTime": {
+            "meaning": "custCompDetCustCompToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToReceiptDate": {
+            "meaning": "custCompDetCustCompToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompToUpdateTime": {
+            "meaning": "custCompDetCustCompToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetCustCompUnitCode": {
+            "meaning": "客户投诉明细表单位id",
+            "reachable": false,
+            "name": "客户投诉明细表单位id"
+        },
+        "custCompDetCustCompUpdateTime": {
+            "meaning": "客户投诉明细表更新时间",
+            "reachable": false,
+            "name": "客户投诉明细表更新时间"
+        },
+        "custCompDetCustCompUpdater": {
+            "meaning": "客户投诉明细表更新人",
+            "reachable": false,
+            "name": "客户投诉明细表更新人"
+        },
+        "custCompDetCustCompUpdaterId": {
+            "meaning": "客户投诉明细表更新人ID",
+            "reachable": false,
+            "name": "客户投诉明细表更新人ID"
+        },
+        "custCompDetCustCompUserCode": {
+            "meaning": "客户投诉明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点的唯一编码"
+        },
+        "custCompDetCustCompVarExtra1": {
+            "meaning": "客户投诉明细表扩展1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展1"
+        },
+        "custCompDetCustCompVarExtra2": {
+            "meaning": "客户投诉明细表扩展2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展2"
+        },
+        "custCompDetCustCompVarExtra3": {
+            "meaning": "客户投诉明细表扩展3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展3"
+        },
+        "custCompDetCustCompVarExtra4": {
+            "meaning": "客户投诉明细表扩展4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展4"
+        },
+        "custCompDetCustCompVarExtra5": {
+            "meaning": "客户投诉明细表扩展5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展5"
+        },
+        "custCompDetCustCompVersion": {
+            "meaning": "客户投诉明细表版本号",
+            "reachable": false,
+            "name": "客户投诉明细表版本号"
+        },
+        "custCompDetDateExtra1": {
+            "meaning": "客户投诉明细表扩展时间1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间1"
+        },
+        "custCompDetDateExtra2": {
+            "meaning": "客户投诉明细表扩展时间2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间2"
+        },
+        "custCompDetDateExtra3": {
+            "meaning": "客户投诉明细表扩展时间3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间3"
+        },
+        "custCompDetDateExtra4": {
+            "meaning": "客户投诉明细表扩展时间4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间4"
+        },
+        "custCompDetDateExtra5": {
+            "meaning": "客户投诉明细表扩展时间5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展时间5"
+        },
+        "custCompDetDefaultType": {
+            "meaning": "客户投诉明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点主类型"
+        },
+        "custCompDetDefectsQuantity": {
+            "meaning": "客户投诉明细表不良数",
+            "reachable": false,
+            "name": "客户投诉明细表不良数"
+        },
+        "custCompDetDeliveryDate": {
+            "meaning": "客户投诉明细表交货日期",
+            "reachable": false,
+            "name": "客户投诉明细表交货日期"
+        },
+        "custCompDetDescription": {
+            "meaning": "客户投诉明细表描述",
+            "reachable": false,
+            "name": "客户投诉明细表描述"
+        },
+        "custCompDetEndTime": {
+            "meaning": "客户投诉明细表结束时间",
+            "reachable": false,
+            "name": "客户投诉明细表结束时间"
+        },
+        "custCompDetEndTimeRequired": {
+            "meaning": "客户投诉明细表最后需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表最后需时"
+        },
+        "custCompDetEngName": {
+            "meaning": "客户投诉明细表英文名称",
+            "reachable": false,
+            "name": "客户投诉明细表英文名称"
+        },
+        "custCompDetEquipmentId": {
+            "meaning": "客户投诉明细表设备id",
+            "reachable": false,
+            "name": "客户投诉明细表设备id"
+        },
+        "custCompDetExchangeRateId": {
+            "meaning": "客户投诉明细表币种汇率id",
+            "reachable": false,
+            "name": "客户投诉明细表币种汇率id"
+        },
+        "custCompDetExtension": {
+            "meaning": "客户投诉明细表扩展数据",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数据"
+        },
+        "custCompDetExternalState": {
+            "meaning": "客户投诉明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "客户投诉明细表上流程状态位"
+        },
+        "custCompDetFilterClazz": {
+            "meaning": "客户投诉明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户投诉明细表冗余字段用于筛选"
+        },
+        "custCompDetFlags": {
+            "meaning": "客户投诉明细表63位标志位",
+            "reachable": false,
+            "name": "客户投诉明细表63位标志位"
+        },
+        "custCompDetFromAuditDate": {
+            "meaning": "custCompDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromBeginTime": {
+            "meaning": "custCompDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromCreateTime": {
+            "meaning": "custCompDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDateExtra1": {
+            "meaning": "custCompDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDateExtra2": {
+            "meaning": "custCompDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDateExtra3": {
+            "meaning": "custCompDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDateExtra4": {
+            "meaning": "custCompDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDateExtra5": {
+            "meaning": "custCompDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromDeliveryDate": {
+            "meaning": "custCompDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromEndTime": {
+            "meaning": "custCompDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromReceiptDate": {
+            "meaning": "custCompDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFromUpdateTime": {
+            "meaning": "custCompDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetFscType": {
+            "meaning": "客户投诉明细表FSC声明",
+            "reachable": false,
+            "name": "客户投诉明细表FSC声明"
+        },
+        "custCompDetGenerativePeople": {
+            "meaning": "客户投诉明细表下发人",
+            "reachable": false,
+            "name": "客户投诉明细表下发人"
+        },
+        "custCompDetGenerativeState": {
+            "meaning": "客户投诉明细表下发状态",
+            "reachable": false,
+            "name": "客户投诉明细表下发状态"
+        },
+        "custCompDetGroovyScript": {
+            "meaning": "客户投诉明细表groovy脚本",
+            "reachable": false,
+            "name": "客户投诉明细表groovy脚本"
+        },
+        "custCompDetGropeCode": {
+            "meaning": "客户投诉明细表搜索码",
+            "reachable": false,
+            "name": "客户投诉明细表搜索码"
+        },
+        "custCompDetId": {
+            "meaning": "客户投诉明细表PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "客户投诉明细表PK"
+        },
+        "custCompDetInUsed": {
+            "meaning": "客户投诉明细表是否被使用",
+            "reachable": false,
+            "name": "客户投诉明细表是否被使用"
+        },
+        "custCompDetInvTypeTaxRateId": {
+            "meaning": "客户投诉明细表发票税率id",
+            "reachable": false,
+            "name": "客户投诉明细表发票税率id"
+        },
+        "custCompDetIsBanned": {
+            "meaning": "客户投诉明细表是否被禁用",
+            "reachable": false,
+            "name": "客户投诉明细表是否被禁用"
+        },
+        "custCompDetIsDeleted": {
+            "meaning": "客户投诉明细表是否被删除",
+            "reachable": false,
+            "name": "客户投诉明细表是否被删除"
+        },
+        "custCompDetIsLeaf": {
+            "meaning": "客户投诉明细表是否叶子节点",
+            "reachable": false,
+            "name": "客户投诉明细表是否叶子节点"
+        },
+        "custCompDetIsMainFlow": {
+            "meaning": "客户投诉明细表是否是主流程",
+            "reachable": false,
+            "name": "客户投诉明细表是否是主流程"
+        },
+        "custCompDetIsManualModificationDate": {
+            "meaning": "客户投诉明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "客户投诉明细表是否手动修改计划生产时间"
+        },
+        "custCompDetIsolation": {
+            "meaning": "客户投诉明细表智能节点数据隔离标识",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点数据隔离标识"
+        },
+        "custCompDetJsScript": {
+            "meaning": "客户投诉明细表js脚本",
+            "reachable": false,
+            "name": "客户投诉明细表js脚本"
+        },
+        "custCompDetMaterialId": {
+            "meaning": "客户投诉明细表物料id",
+            "reachable": false,
+            "name": "客户投诉明细表物料id"
+        },
+        "custCompDetName": {
+            "meaning": "客户投诉明细表智能节点名",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点名"
+        },
+        "custCompDetNameCodeSearch": {
+            "meaning": "客户投诉明细表name、user_code模糊搜索",
+            "reachable": false,
+            "name": "客户投诉明细表name、user_code模糊搜索"
+        },
+        "custCompDetNumberExtra1": {
+            "meaning": "客户投诉明细表扩展数量1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量1"
+        },
+        "custCompDetNumberExtra2": {
+            "meaning": "客户投诉明细表扩展数量2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量2"
+        },
+        "custCompDetNumberExtra3": {
+            "meaning": "客户投诉明细表扩展数量3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量3"
+        },
+        "custCompDetNumberExtra4": {
+            "meaning": "客户投诉明细表扩展数量4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量4"
+        },
+        "custCompDetNumberExtra5": {
+            "meaning": "客户投诉明细表扩展数量5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展数量5"
+        },
+        "custCompDetParentId": {
+            "meaning": "客户投诉明细表父节点ID",
+            "reachable": false,
+            "name": "客户投诉明细表父节点ID"
+        },
+        "custCompDetPlannedOutputQuantity": {
+            "meaning": "客户投诉明细表计划产出数量",
+            "reachable": false,
+            "name": "客户投诉明细表计划产出数量"
+        },
+        "custCompDetPlannedTimeRequired": {
+            "meaning": "客户投诉明细表计划需时(小时)",
+            "reachable": false,
+            "name": "客户投诉明细表计划需时"
+        },
+        "custCompDetPrintTimes": {
+            "meaning": "客户投诉明细表打印次数",
+            "reachable": false,
+            "name": "客户投诉明细表打印次数"
+        },
+        "custCompDetPriority": {
+            "meaning": "客户投诉明细表优先级",
+            "reachable": false,
+            "name": "客户投诉明细表优先级"
+        },
+        "custCompDetProcessInstanceId": {
+            "meaning": "客户投诉明细表流程实例ID",
+            "reachable": false,
+            "name": "客户投诉明细表流程实例ID"
+        },
+        "custCompDetProductionProcessesTypeId": {
+            "meaning": "客户投诉明细表工序类型ID",
+            "reachable": false,
+            "name": "客户投诉明细表工序类型ID"
+        },
+        "custCompDetProductionShiftId": {
+            "meaning": "客户投诉明细表生产班次ID",
+            "reachable": false,
+            "name": "客户投诉明细表生产班次ID"
+        },
+        "custCompDetQuantity": {
+            "meaning": "客户投诉明细表任务数量",
+            "reachable": false,
+            "name": "客户投诉明细表任务数量"
+        },
+        "custCompDetReceiptDate": {
+            "meaning": "客户投诉明细表单据日期",
+            "reachable": false,
+            "name": "客户投诉明细表单据日期"
+        },
+        "custCompDetReceiptType": {
+            "meaning": "客户投诉明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "客户投诉明细表单据类型"
+        },
+        "custCompDetRelatedTasksId": {
+            "meaning": "客户投诉明细表关联任务id",
+            "reachable": false,
+            "name": "客户投诉明细表关联任务id"
+        },
+        "custCompDetSerialNumber": {
+            "meaning": "客户投诉明细表顺序号",
+            "reachable": false,
+            "name": "客户投诉明细表顺序号"
+        },
+        "custCompDetSource": {
+            "meaning": "客户投诉明细表源",
+            "reachable": false,
+            "name": "客户投诉明细表源"
+        },
+        "custCompDetSourceType": {
+            "meaning": "客户投诉明细表来源类型",
+            "reachable": false,
+            "name": "客户投诉明细表来源类型"
+        },
+        "custCompDetState": {
+            "meaning": "客户投诉明细表通用状态",
+            "reachable": false,
+            "name": "客户投诉明细表通用状态"
+        },
+        "custCompDetSystemCode": {
+            "meaning": "客户投诉明细表系统编码",
+            "reachable": false,
+            "name": "客户投诉明细表系统编码"
+        },
+        "custCompDetTarget": {
+            "meaning": "客户投诉明细表目标",
+            "reachable": false,
+            "name": "客户投诉明细表目标"
+        },
+        "custCompDetTaskNodeName": {
+            "meaning": "客户投诉明细表任务节点名称",
+            "reachable": false,
+            "name": "客户投诉明细表任务节点名称"
+        },
+        "custCompDetTenantId": {
+            "meaning": "客户投诉明细表租户_id",
+            "reachable": false,
+            "name": "客户投诉明细表租户_id"
+        },
+        "custCompDetThirdPartyClass": {
+            "meaning": "客户投诉明细表第三方分类",
+            "reachable": false,
+            "name": "客户投诉明细表第三方分类"
+        },
+        "custCompDetThirdPartyId": {
+            "meaning": "客户投诉明细表第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "客户投诉明细表第三方系统中的唯一ID"
+        },
+        "custCompDetThirdPartyName": {
+            "meaning": "客户投诉明细表第三方名称",
+            "reachable": false,
+            "name": "客户投诉明细表第三方名称"
+        },
+        "custCompDetToAuditDate": {
+            "meaning": "custCompDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToBeginTime": {
+            "meaning": "custCompDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToCreateTime": {
+            "meaning": "custCompDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDateExtra1": {
+            "meaning": "custCompDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDateExtra2": {
+            "meaning": "custCompDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDateExtra3": {
+            "meaning": "custCompDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDateExtra4": {
+            "meaning": "custCompDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDateExtra5": {
+            "meaning": "custCompDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToDeliveryDate": {
+            "meaning": "custCompDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToEndTime": {
+            "meaning": "custCompDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToReceiptDate": {
+            "meaning": "custCompDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetToUpdateTime": {
+            "meaning": "custCompDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "custCompDetTotalAmount": {
+            "meaning": "客户投诉明细表金额",
+            "reachable": false,
+            "name": "客户投诉明细表金额"
+        },
+        "custCompDetUnitCode": {
+            "meaning": "客户投诉明细表单位id",
+            "reachable": false,
+            "name": "客户投诉明细表单位id"
+        },
+        "custCompDetUnitPrice": {
+            "meaning": "客户投诉明细表单价",
+            "reachable": false,
+            "name": "客户投诉明细表单价"
+        },
+        "custCompDetUpdateTime": {
+            "meaning": "客户投诉明细表更新时间",
+            "reachable": false,
+            "name": "客户投诉明细表更新时间"
+        },
+        "custCompDetUpdater": {
+            "meaning": "客户投诉明细表更新人",
+            "reachable": false,
+            "name": "客户投诉明细表更新人"
+        },
+        "custCompDetUpdaterId": {
+            "meaning": "客户投诉明细表更新人ID",
+            "reachable": false,
+            "name": "客户投诉明细表更新人ID"
+        },
+        "custCompDetUserCode": {
+            "meaning": "客户投诉明细表智能节点的唯一编码",
+            "reachable": false,
+            "name": "客户投诉明细表智能节点的唯一编码"
+        },
+        "custCompDetVarExtra1": {
+            "meaning": "客户投诉明细表扩展1",
+            "reachable": false,
+            "name": "客户投诉明细表扩展1"
+        },
+        "custCompDetVarExtra2": {
+            "meaning": "客户投诉明细表扩展2",
+            "reachable": false,
+            "name": "客户投诉明细表扩展2"
+        },
+        "custCompDetVarExtra3": {
+            "meaning": "客户投诉明细表扩展3",
+            "reachable": false,
+            "name": "客户投诉明细表扩展3"
+        },
+        "custCompDetVarExtra4": {
+            "meaning": "客户投诉明细表扩展4",
+            "reachable": false,
+            "name": "客户投诉明细表扩展4"
+        },
+        "custCompDetVarExtra5": {
+            "meaning": "客户投诉明细表扩展5",
+            "reachable": false,
+            "name": "客户投诉明细表扩展5"
+        },
+        "custCompDetVersion": {
+            "meaning": "客户投诉明细表版本号",
+            "reachable": false,
+            "name": "客户投诉明细表版本号"
+        }
+    }
+}

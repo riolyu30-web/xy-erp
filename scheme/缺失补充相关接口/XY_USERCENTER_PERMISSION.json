@@ -1,0 +1,396 @@
+{
+    "api_name": "/permission/findList",
+    "table_name": "权限",
+    "request": {
+        "permissionClazz": "XY_USERCENTER_PERMISSION"
+    },
+    "mainTabClazz": "XY_USERCENTER_PERMISSION",
+    "response": {
+        "permissionApplicationId": {
+            "meaning": "权限应用ID",
+            "reachable": true,
+            "name": "权限应用ID"
+        },
+        "permissionAuditDate": {
+            "meaning": "权限审核时间",
+            "reachable": true,
+            "name": "权限审核时间"
+        },
+        "permissionAuditStatus": {
+            "meaning": "权限审核状态",
+            "reachable": true,
+            "name": "权限审核状态"
+        },
+        "permissionBizVersion": {
+            "meaning": "权限业务自定义版本号",
+            "reachable": true,
+            "name": "权限业务自定义版本号"
+        },
+        "permissionBriefName": {
+            "meaning": "权限简称",
+            "reachable": true,
+            "name": "权限简称"
+        },
+        "permissionBusDivisId": {
+            "meaning": "权限事业部id",
+            "reachable": true,
+            "name": "权限事业部id"
+        },
+        "permissionClazz": {
+            "meaning": "权限子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "权限子类"
+        },
+        "permissionComment": {
+            "meaning": "权限评论",
+            "reachable": true,
+            "name": "权限评论"
+        },
+        "permissionCreateTime": {
+            "meaning": "权限创建时间",
+            "reachable": true,
+            "name": "权限创建时间"
+        },
+        "permissionCreator": {
+            "meaning": "权限创建人",
+            "reachable": true,
+            "name": "权限创建人"
+        },
+        "permissionCreatorId": {
+            "meaning": "权限创建人ID",
+            "reachable": true,
+            "name": "权限创建人ID"
+        },
+        "permissionDateExtra1": {
+            "meaning": "权限扩展时间1",
+            "reachable": true,
+            "name": "权限扩展时间1"
+        },
+        "permissionDateExtra2": {
+            "meaning": "权限扩展时间2",
+            "reachable": true,
+            "name": "权限扩展时间2"
+        },
+        "permissionDateExtra3": {
+            "meaning": "权限扩展时间3",
+            "reachable": true,
+            "name": "权限扩展时间3"
+        },
+        "permissionDateExtra4": {
+            "meaning": "权限扩展时间4",
+            "reachable": true,
+            "name": "权限扩展时间4"
+        },
+        "permissionDateExtra5": {
+            "meaning": "权限扩展时间5",
+            "reachable": true,
+            "name": "权限扩展时间5"
+        },
+        "permissionDefaultType": {
+            "meaning": "权限智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "权限智能节点主类型"
+        },
+        "permissionDescription": {
+            "meaning": "权限描述",
+            "reachable": true,
+            "name": "权限描述"
+        },
+        "permissionEngName": {
+            "meaning": "权限英文名称",
+            "reachable": true,
+            "name": "权限英文名称"
+        },
+        "permissionExtension": {
+            "meaning": "权限扩展数据",
+            "reachable": true,
+            "name": "权限扩展数据"
+        },
+        "permissionExternalState": {
+            "meaning": "权限上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "权限上流程状态位"
+        },
+        "permissionFlags": {
+            "meaning": "权限63位标志位",
+            "reachable": true,
+            "name": "权限63位标志位"
+        },
+        "permissionFromAuditDate": {
+            "meaning": "permissionFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromCreateTime": {
+            "meaning": "permissionFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromDateExtra1": {
+            "meaning": "permissionFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromDateExtra2": {
+            "meaning": "permissionFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromDateExtra3": {
+            "meaning": "permissionFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromDateExtra4": {
+            "meaning": "permissionFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromDateExtra5": {
+            "meaning": "permissionFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionFromUpdateTime": {
+            "meaning": "permissionFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionGroovyScript": {
+            "meaning": "权限groovy脚本",
+            "reachable": true,
+            "name": "权限groovy脚本"
+        },
+        "permissionGropeCode": {
+            "meaning": "权限搜索码",
+            "reachable": true,
+            "name": "权限搜索码"
+        },
+        "permissionId": {
+            "meaning": "权限ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "权限ID"
+        },
+        "permissionInUsed": {
+            "meaning": "权限是否被使用",
+            "reachable": true,
+            "name": "权限是否被使用"
+        },
+        "permissionIsBanned": {
+            "meaning": "权限是否被禁用",
+            "reachable": true,
+            "name": "权限是否被禁用"
+        },
+        "permissionIsDeleted": {
+            "meaning": "权限是否被删除",
+            "reachable": true,
+            "name": "权限是否被删除"
+        },
+        "permissionIsMainFlow": {
+            "meaning": "权限是否是主流程",
+            "reachable": true,
+            "name": "权限是否是主流程"
+        },
+        "permissionIsolation": {
+            "meaning": "权限智能节点数据隔离标识",
+            "reachable": true,
+            "name": "权限智能节点数据隔离标识"
+        },
+        "permissionJsScript": {
+            "meaning": "权限js脚本",
+            "reachable": true,
+            "name": "权限js脚本"
+        },
+        "permissionName": {
+            "meaning": "权限智能节点名",
+            "reachable": true,
+            "name": "权限智能节点名"
+        },
+        "permissionNameCodeSearch": {
+            "meaning": "权限name、user_code模糊搜索",
+            "reachable": true,
+            "name": "权限name、user_code模糊搜索"
+        },
+        "permissionNumberExtra1": {
+            "meaning": "权限扩展数量1",
+            "reachable": true,
+            "name": "权限扩展数量1"
+        },
+        "permissionNumberExtra2": {
+            "meaning": "权限扩展数量2",
+            "reachable": true,
+            "name": "权限扩展数量2"
+        },
+        "permissionNumberExtra3": {
+            "meaning": "权限扩展数量3",
+            "reachable": true,
+            "name": "权限扩展数量3"
+        },
+        "permissionNumberExtra4": {
+            "meaning": "权限扩展数量4",
+            "reachable": true,
+            "name": "权限扩展数量4"
+        },
+        "permissionNumberExtra5": {
+            "meaning": "权限扩展数量5",
+            "reachable": true,
+            "name": "权限扩展数量5"
+        },
+        "permissionParentId": {
+            "meaning": "权限父节点ID",
+            "reachable": true,
+            "name": "权限父节点ID"
+        },
+        "permissionPermissionState": {
+            "meaning": "权限状态(1-有效)",
+            "reachable": true,
+            "name": "权限状态"
+        },
+        "permissionProcessInstanceId": {
+            "meaning": "权限流程实例ID",
+            "reachable": true,
+            "name": "权限流程实例ID"
+        },
+        "permissionSerialNumber": {
+            "meaning": "权限顺序号",
+            "reachable": true,
+            "name": "权限顺序号"
+        },
+        "permissionState": {
+            "meaning": "权限通用状态",
+            "reachable": true,
+            "name": "权限通用状态"
+        },
+        "permissionSystemCode": {
+            "meaning": "权限系统编码",
+            "reachable": true,
+            "name": "权限系统编码"
+        },
+        "permissionTaskNodeName": {
+            "meaning": "权限任务节点名称",
+            "reachable": true,
+            "name": "权限任务节点名称"
+        },
+        "permissionTaskNodeType": {
+            "meaning": "权限任务节点类型",
+            "reachable": true,
+            "name": "权限任务节点类型"
+        },
+        "permissionTenantId": {
+            "meaning": "权限租户ID",
+            "reachable": true,
+            "name": "权限租户ID"
+        },
+        "permissionThirdPartyClass": {
+            "meaning": "权限第三方分类",
+            "reachable": true,
+            "name": "权限第三方分类"
+        },
+        "permissionThirdPartyId": {
+            "meaning": "权限第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "权限第三方系统中的唯一ID"
+        },
+        "permissionThirdPartyName": {
+            "meaning": "权限第三方名称",
+            "reachable": true,
+            "name": "权限第三方名称"
+        },
+        "permissionToAuditDate": {
+            "meaning": "permissionToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToCreateTime": {
+            "meaning": "permissionToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToDateExtra1": {
+            "meaning": "permissionToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToDateExtra2": {
+            "meaning": "permissionToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToDateExtra3": {
+            "meaning": "permissionToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToDateExtra4": {
+            "meaning": "permissionToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToDateExtra5": {
+            "meaning": "permissionToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionToUpdateTime": {
+            "meaning": "permissionToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "permissionUpdateTime": {
+            "meaning": "权限更新时间",
+            "reachable": true,
+            "name": "权限更新时间"
+        },
+        "permissionUpdater": {
+            "meaning": "权限更新人",
+            "reachable": true,
+            "name": "权限更新人"
+        },
+        "permissionUpdaterId": {
+            "meaning": "权限更新人ID",
+            "reachable": true,
+            "name": "权限更新人ID"
+        },
+        "permissionUserCode": {
+            "meaning": "权限智能节点的唯一编码",
+            "reachable": true,
+            "name": "权限智能节点的唯一编码"
+        },
+        "permissionValue": {
+            "meaning": "权限功能值",
+            "reachable": true,
+            "name": "权限功能值"
+        },
+        "permissionVarExtra1": {
+            "meaning": "权限扩展1",
+            "reachable": true,
+            "name": "权限扩展1"
+        },
+        "permissionVarExtra2": {
+            "meaning": "权限扩展2",
+            "reachable": true,
+            "name": "权限扩展2"
+        },
+        "permissionVarExtra3": {
+            "meaning": "权限扩展3",
+            "reachable": true,
+            "name": "权限扩展3"
+        },
+        "permissionVarExtra4": {
+            "meaning": "权限扩展4",
+            "reachable": true,
+            "name": "权限扩展4"
+        },
+        "permissionVarExtra5": {
+            "meaning": "权限扩展5",
+            "reachable": true,
+            "name": "权限扩展5"
+        },
+        "permissionVersion": {
+            "meaning": "权限版本号",
+            "reachable": true,
+            "name": "权限版本号"
+        }
+    }
+}

@@ -1,0 +1,1352 @@
+{
+    "api_name": "/inv-check-fini-goods-det/findList",
+    "table_name": "成品盘点明细表",
+    "request": {
+        "invCheckFiniGoodsDetInvCheckFiniGoodsClazz": "INVENTORY_CHECK_FINI_GOODS",
+        "invCheckFiniGoodsDetClazz": "INVENTORY_CHECK_FINI_GOODS_DET"
+    },
+    "mainTabClazz": "INVENTORY_CHECK_FINI_GOODS_DET",
+    "response": {
+        "VCheckFiniGoodsDetInvCheckFiniGoodsProcessInstanceId": {
+            "meaning": "成品盘点明细表流程实例ID",
+            "reachable": false,
+            "name": "成品盘点明细表流程实例ID"
+        },
+        "VCheckFiniGoodsDetInvCheckFiniGoodsProductionShiftId": {
+            "meaning": "成品盘点明细表生产班次ID",
+            "reachable": false,
+            "name": "成品盘点明细表生产班次ID"
+        },
+        "checkFiniGoodsDetInvCheckFiniGoodsActualTimeRequired": {
+            "meaning": "成品盘点明细表实际需时(小时)",
+            "reachable": false,
+            "name": "成品盘点明细表实际需时"
+        },
+        "checkFiniGoodsDetInvCheckFiniGoodsAvailableScheduleId": {
+            "meaning": "成品盘点明细表可用日程id",
+            "reachable": false,
+            "name": "成品盘点明细表可用日程id"
+        },
+        "checkFiniGoodsDetInvCheckFiniGoodsInvTypeTaxRateId": {
+            "meaning": "成品盘点明细表发票税率id",
+            "reachable": false,
+            "name": "成品盘点明细表发票税率id"
+        },
+        "checkFiniGoodsDetInvCheckFiniGoodsPlannedTimeRequired": {
+            "meaning": "成品盘点明细表计划需时(小时)",
+            "reachable": false,
+            "name": "成品盘点明细表计划需时"
+        },
+        "ckFiniGoodsDetInvCheckFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "成品盘点明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "成品盘点明细表调整需时"
+        },
+        "eckFiniGoodsDetInvCheckFiniGoodsPlannedOutputQuantity": {
+            "meaning": "成品盘点明细表计划产出数量",
+            "reachable": false,
+            "name": "成品盘点明细表计划产出数量"
+        },
+        "finiGoodsDetInvCheckFiniGoodsIsManualModificationDate": {
+            "meaning": "成品盘点明细表是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "成品盘点明细表是否手动修改计划生产时间"
+        },
+        "finiGoodsDetInvCheckFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "成品盘点明细表总盘点不含税金额",
+            "reachable": false,
+            "name": "成品盘点明细表总盘点不含税金额"
+        },
+        "finiGoodsDetInvCheckFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "成品盘点明细表总盘点含税金额",
+            "reachable": false,
+            "name": "成品盘点明细表总盘点含税金额"
+        },
+        "iniGoodsDetInvCheckFiniGoodsProductionProcessesTypeId": {
+            "meaning": "成品盘点明细表工序类型ID",
+            "reachable": false,
+            "name": "成品盘点明细表工序类型ID"
+        },
+        "invCheckFiniGoodsDetActualTimeRequired": {
+            "meaning": "成品盘点明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表实际需时"
+        },
+        "invCheckFiniGoodsDetAdjustmentTimeRequired": {
+            "meaning": "成品盘点明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表调整需时"
+        },
+        "invCheckFiniGoodsDetAmountExcTax": {
+            "meaning": "成品盘点明细表盘点不含税金额（盘点数量*不含税单价）",
+            "reachable": true,
+            "name": "成品盘点明细表盘点不含税金额"
+        },
+        "invCheckFiniGoodsDetAmountIncTax": {
+            "meaning": "成品盘点明细表盘点含税金额（盘点数量*含税单价）",
+            "reachable": true,
+            "name": "成品盘点明细表盘点含税金额"
+        },
+        "invCheckFiniGoodsDetApplicationId": {
+            "meaning": "成品盘点明细表应用ID",
+            "reachable": true,
+            "name": "成品盘点明细表应用ID"
+        },
+        "invCheckFiniGoodsDetAuditDate": {
+            "meaning": "成品盘点明细表审核时间",
+            "reachable": true,
+            "name": "成品盘点明细表审核时间"
+        },
+        "invCheckFiniGoodsDetAuditStatus": {
+            "meaning": "成品盘点明细表审核状态",
+            "reachable": true,
+            "name": "成品盘点明细表审核状态"
+        },
+        "invCheckFiniGoodsDetAvailableScheduleId": {
+            "meaning": "成品盘点明细表可用日程id",
+            "reachable": true,
+            "name": "成品盘点明细表可用日程id"
+        },
+        "invCheckFiniGoodsDetBeginTime": {
+            "meaning": "成品盘点明细表开始时间",
+            "reachable": true,
+            "name": "成品盘点明细表开始时间"
+        },
+        "invCheckFiniGoodsDetBizOrderId": {
+            "meaning": "成品盘点明细表订单id",
+            "reachable": true,
+            "name": "成品盘点明细表订单id"
+        },
+        "invCheckFiniGoodsDetBizVersion": {
+            "meaning": "成品盘点明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品盘点明细表业务自定义版本号"
+        },
+        "invCheckFiniGoodsDetBriefName": {
+            "meaning": "成品盘点明细表简称",
+            "reachable": true,
+            "name": "成品盘点明细表简称"
+        },
+        "invCheckFiniGoodsDetBusDivisId": {
+            "meaning": "成品盘点明细表事业部id",
+            "reachable": true,
+            "name": "成品盘点明细表事业部id"
+        },
+        "invCheckFiniGoodsDetClazz": {
+            "meaning": "成品盘点明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品盘点明细表子类"
+        },
+        "invCheckFiniGoodsDetClosedReason": {
+            "meaning": "成品盘点明细表结案原因",
+            "reachable": true,
+            "name": "成品盘点明细表结案原因"
+        },
+        "invCheckFiniGoodsDetClosedStatus": {
+            "meaning": "成品盘点明细表结案状态",
+            "reachable": true,
+            "name": "成品盘点明细表结案状态"
+        },
+        "invCheckFiniGoodsDetComment": {
+            "meaning": "成品盘点明细表评论",
+            "reachable": true,
+            "name": "成品盘点明细表评论"
+        },
+        "invCheckFiniGoodsDetCompleteQuantity": {
+            "meaning": "成品盘点明细表完成数量",
+            "reachable": true,
+            "name": "成品盘点明细表完成数量"
+        },
+        "invCheckFiniGoodsDetCompleteStatus": {
+            "meaning": "成品盘点明细表完成状态",
+            "reachable": true,
+            "name": "成品盘点明细表完成状态"
+        },
+        "invCheckFiniGoodsDetCreateTime": {
+            "meaning": "成品盘点明细表创建时间",
+            "reachable": true,
+            "name": "成品盘点明细表创建时间"
+        },
+        "invCheckFiniGoodsDetCreator": {
+            "meaning": "成品盘点明细表创建人",
+            "reachable": true,
+            "name": "成品盘点明细表创建人"
+        },
+        "invCheckFiniGoodsDetCreatorId": {
+            "meaning": "成品盘点明细表创建人ID",
+            "reachable": true,
+            "name": "成品盘点明细表创建人ID"
+        },
+        "invCheckFiniGoodsDetDateExtra1": {
+            "meaning": "成品盘点明细表扩展时间1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间1"
+        },
+        "invCheckFiniGoodsDetDateExtra2": {
+            "meaning": "成品盘点明细表扩展时间2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间2"
+        },
+        "invCheckFiniGoodsDetDateExtra3": {
+            "meaning": "成品盘点明细表扩展时间3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间3"
+        },
+        "invCheckFiniGoodsDetDateExtra4": {
+            "meaning": "成品盘点明细表扩展时间4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间4"
+        },
+        "invCheckFiniGoodsDetDateExtra5": {
+            "meaning": "成品盘点明细表扩展时间5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间5"
+        },
+        "invCheckFiniGoodsDetDefaultType": {
+            "meaning": "成品盘点明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点主类型"
+        },
+        "invCheckFiniGoodsDetDeliveryDate": {
+            "meaning": "成品盘点明细表交货日期",
+            "reachable": true,
+            "name": "成品盘点明细表交货日期"
+        },
+        "invCheckFiniGoodsDetDescription": {
+            "meaning": "成品盘点明细表描述",
+            "reachable": true,
+            "name": "成品盘点明细表描述"
+        },
+        "invCheckFiniGoodsDetEndTime": {
+            "meaning": "成品盘点明细表结束时间",
+            "reachable": true,
+            "name": "成品盘点明细表结束时间"
+        },
+        "invCheckFiniGoodsDetEndTimeRequired": {
+            "meaning": "成品盘点明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表最后需时"
+        },
+        "invCheckFiniGoodsDetEngName": {
+            "meaning": "成品盘点明细表英文名称",
+            "reachable": true,
+            "name": "成品盘点明细表英文名称"
+        },
+        "invCheckFiniGoodsDetEquipmentId": {
+            "meaning": "成品盘点明细表设备id",
+            "reachable": true,
+            "name": "成品盘点明细表设备id"
+        },
+        "invCheckFiniGoodsDetExchangeRateId": {
+            "meaning": "成品盘点明细表币种汇率id",
+            "reachable": true,
+            "name": "成品盘点明细表币种汇率id"
+        },
+        "invCheckFiniGoodsDetExtension": {
+            "meaning": "成品盘点明细表扩展数据",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数据"
+        },
+        "invCheckFiniGoodsDetExternalState": {
+            "meaning": "成品盘点明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品盘点明细表上流程状态位"
+        },
+        "invCheckFiniGoodsDetFilterClazz": {
+            "meaning": "成品盘点明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品盘点明细表冗余字段用于筛选"
+        },
+        "invCheckFiniGoodsDetFlags": {
+            "meaning": "成品盘点明细表63位标志位",
+            "reachable": true,
+            "name": "成品盘点明细表63位标志位"
+        },
+        "invCheckFiniGoodsDetFromAuditDate": {
+            "meaning": "invCheckFiniGoodsDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromBeginTime": {
+            "meaning": "invCheckFiniGoodsDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromCreateTime": {
+            "meaning": "invCheckFiniGoodsDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDateExtra1": {
+            "meaning": "invCheckFiniGoodsDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDateExtra2": {
+            "meaning": "invCheckFiniGoodsDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDateExtra3": {
+            "meaning": "invCheckFiniGoodsDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDateExtra4": {
+            "meaning": "invCheckFiniGoodsDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDateExtra5": {
+            "meaning": "invCheckFiniGoodsDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromDeliveryDate": {
+            "meaning": "invCheckFiniGoodsDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromEndTime": {
+            "meaning": "invCheckFiniGoodsDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromReceiptDate": {
+            "meaning": "invCheckFiniGoodsDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFromUpdateTime": {
+            "meaning": "invCheckFiniGoodsDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetFscType": {
+            "meaning": "成品盘点明细表FSC声明",
+            "reachable": true,
+            "name": "成品盘点明细表FSC声明"
+        },
+        "invCheckFiniGoodsDetGenerativePeople": {
+            "meaning": "成品盘点明细表下发人",
+            "reachable": true,
+            "name": "成品盘点明细表下发人"
+        },
+        "invCheckFiniGoodsDetGenerativeState": {
+            "meaning": "成品盘点明细表下发状态",
+            "reachable": true,
+            "name": "成品盘点明细表下发状态"
+        },
+        "invCheckFiniGoodsDetGoodsId": {
+            "meaning": "成品盘点明细表货（包）id",
+            "reachable": true,
+            "name": "成品盘点明细表货"
+        },
+        "invCheckFiniGoodsDetGroovyScript": {
+            "meaning": "成品盘点明细表groovy脚本",
+            "reachable": true,
+            "name": "成品盘点明细表groovy脚本"
+        },
+        "invCheckFiniGoodsDetGropeCode": {
+            "meaning": "成品盘点明细表搜索码",
+            "reachable": true,
+            "name": "成品盘点明细表搜索码"
+        },
+        "invCheckFiniGoodsDetId": {
+            "meaning": "成品盘点明细表主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "成品盘点明细表主键ID"
+        },
+        "invCheckFiniGoodsDetInUsed": {
+            "meaning": "成品盘点明细表是否被使用",
+            "reachable": true,
+            "name": "成品盘点明细表是否被使用"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsActualTimeRequired": {
+            "meaning": "成品盘点明细表实际需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表实际需时"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsAdjustmentTimeRequired": {
+            "meaning": "成品盘点明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表调整需时"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsApplicationId": {
+            "meaning": "成品盘点明细表应用ID",
+            "reachable": true,
+            "name": "成品盘点明细表应用ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsAuditDate": {
+            "meaning": "成品盘点明细表审核时间",
+            "reachable": true,
+            "name": "成品盘点明细表审核时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsAuditStatus": {
+            "meaning": "成品盘点明细表审核状态",
+            "reachable": true,
+            "name": "成品盘点明细表审核状态"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsAvailableScheduleId": {
+            "meaning": "成品盘点明细表可用日程id",
+            "reachable": true,
+            "name": "成品盘点明细表可用日程id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsBeginTime": {
+            "meaning": "成品盘点明细表开始时间",
+            "reachable": true,
+            "name": "成品盘点明细表开始时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsBizVersion": {
+            "meaning": "成品盘点明细表业务自定义版本号",
+            "reachable": true,
+            "name": "成品盘点明细表业务自定义版本号"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsBriefName": {
+            "meaning": "成品盘点明细表简称",
+            "reachable": true,
+            "name": "成品盘点明细表简称"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsBusDivisId": {
+            "meaning": "成品盘点明细表事业部id",
+            "reachable": true,
+            "name": "成品盘点明细表事业部id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsClazz": {
+            "meaning": "成品盘点明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "成品盘点明细表子类"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsClosedReason": {
+            "meaning": "成品盘点明细表结案原因",
+            "reachable": true,
+            "name": "成品盘点明细表结案原因"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsClosedStatus": {
+            "meaning": "成品盘点明细表结案状态",
+            "reachable": true,
+            "name": "成品盘点明细表结案状态"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsComment": {
+            "meaning": "成品盘点明细表评论",
+            "reachable": true,
+            "name": "成品盘点明细表评论"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsCompleteQuantity": {
+            "meaning": "成品盘点明细表完成数量",
+            "reachable": true,
+            "name": "成品盘点明细表完成数量"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsCompleteStatus": {
+            "meaning": "成品盘点明细表完成状态",
+            "reachable": true,
+            "name": "成品盘点明细表完成状态"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsCreateTime": {
+            "meaning": "成品盘点明细表创建时间",
+            "reachable": true,
+            "name": "成品盘点明细表创建时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsCreator": {
+            "meaning": "成品盘点明细表创建人",
+            "reachable": true,
+            "name": "成品盘点明细表创建人"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsCreatorId": {
+            "meaning": "成品盘点明细表创建人ID",
+            "reachable": true,
+            "name": "成品盘点明细表创建人ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDateExtra1": {
+            "meaning": "成品盘点明细表扩展时间1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间1"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDateExtra2": {
+            "meaning": "成品盘点明细表扩展时间2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间2"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDateExtra3": {
+            "meaning": "成品盘点明细表扩展时间3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间3"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDateExtra4": {
+            "meaning": "成品盘点明细表扩展时间4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间4"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDateExtra5": {
+            "meaning": "成品盘点明细表扩展时间5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展时间5"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDefaultType": {
+            "meaning": "成品盘点明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点主类型"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDeliveryDate": {
+            "meaning": "成品盘点明细表交货日期",
+            "reachable": true,
+            "name": "成品盘点明细表交货日期"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsDescription": {
+            "meaning": "成品盘点明细表描述",
+            "reachable": true,
+            "name": "成品盘点明细表描述"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsEndTime": {
+            "meaning": "成品盘点明细表结束时间",
+            "reachable": true,
+            "name": "成品盘点明细表结束时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsEndTimeRequired": {
+            "meaning": "成品盘点明细表最后需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表最后需时"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsEngName": {
+            "meaning": "成品盘点明细表英文名称",
+            "reachable": true,
+            "name": "成品盘点明细表英文名称"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsEquipmentId": {
+            "meaning": "成品盘点明细表设备id",
+            "reachable": true,
+            "name": "成品盘点明细表设备id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsExchangeRateId": {
+            "meaning": "成品盘点明细表币种汇率id",
+            "reachable": true,
+            "name": "成品盘点明细表币种汇率id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsExtension": {
+            "meaning": "成品盘点明细表扩展数据",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数据"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsExternalState": {
+            "meaning": "成品盘点明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "成品盘点明细表上流程状态位"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFilterClazz": {
+            "meaning": "成品盘点明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "成品盘点明细表冗余字段用于筛选"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFlags": {
+            "meaning": "成品盘点明细表63位标志位",
+            "reachable": true,
+            "name": "成品盘点明细表63位标志位"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromAuditDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromBeginTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromCreateTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra1": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra2": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra3": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra4": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra5": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromDeliveryDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromEndTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromReceiptDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFromUpdateTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsFscType": {
+            "meaning": "成品盘点明细表FSC声明",
+            "reachable": true,
+            "name": "成品盘点明细表FSC声明"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsGenerativePeople": {
+            "meaning": "成品盘点明细表下发人",
+            "reachable": true,
+            "name": "成品盘点明细表下发人"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsGenerativeState": {
+            "meaning": "成品盘点明细表下发状态",
+            "reachable": true,
+            "name": "成品盘点明细表下发状态"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsGroovyScript": {
+            "meaning": "成品盘点明细表groovy脚本",
+            "reachable": true,
+            "name": "成品盘点明细表groovy脚本"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsGropeCode": {
+            "meaning": "成品盘点明细表搜索码",
+            "reachable": true,
+            "name": "成品盘点明细表搜索码"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsId": {
+            "meaning": "成品盘点明细表pk",
+            "reachable": true,
+            "name": "成品盘点明细表pk"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsInUsed": {
+            "meaning": "成品盘点明细表是否被使用",
+            "reachable": true,
+            "name": "成品盘点明细表是否被使用"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsInvTypeTaxRateId": {
+            "meaning": "成品盘点明细表发票税率id",
+            "reachable": true,
+            "name": "成品盘点明细表发票税率id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsBanned": {
+            "meaning": "成品盘点明细表是否被禁用",
+            "reachable": true,
+            "name": "成品盘点明细表是否被禁用"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsDeleted": {
+            "meaning": "成品盘点明细表是否被删除",
+            "reachable": true,
+            "name": "成品盘点明细表是否被删除"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsLeaf": {
+            "meaning": "成品盘点明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品盘点明细表是否叶子节点"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsMainFlow": {
+            "meaning": "成品盘点明细表是否是主流程",
+            "reachable": true,
+            "name": "成品盘点明细表是否是主流程"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsManualModificationDate": {
+            "meaning": "成品盘点明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品盘点明细表是否手动修改计划生产时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsIsolation": {
+            "meaning": "成品盘点明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点数据隔离标识"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsJsScript": {
+            "meaning": "成品盘点明细表js脚本",
+            "reachable": true,
+            "name": "成品盘点明细表js脚本"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsMaterialId": {
+            "meaning": "成品盘点明细表物料id",
+            "reachable": true,
+            "name": "成品盘点明细表物料id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsName": {
+            "meaning": "成品盘点明细表智能节点名",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点名"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNameCodeSearch": {
+            "meaning": "成品盘点明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品盘点明细表name、user_code模糊搜索"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNumberExtra1": {
+            "meaning": "成品盘点明细表扩展数量1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量1"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNumberExtra2": {
+            "meaning": "成品盘点明细表扩展数量2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量2"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNumberExtra3": {
+            "meaning": "成品盘点明细表扩展数量3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量3"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNumberExtra4": {
+            "meaning": "成品盘点明细表扩展数量4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量4"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsNumberExtra5": {
+            "meaning": "成品盘点明细表扩展数量5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量5"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsParentId": {
+            "meaning": "成品盘点明细表父节点ID",
+            "reachable": true,
+            "name": "成品盘点明细表父节点ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsPlannedOutputQuantity": {
+            "meaning": "成品盘点明细表计划产出数量",
+            "reachable": true,
+            "name": "成品盘点明细表计划产出数量"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsPlannedTimeRequired": {
+            "meaning": "成品盘点明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表计划需时"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsPrintTimes": {
+            "meaning": "成品盘点明细表打印次数",
+            "reachable": true,
+            "name": "成品盘点明细表打印次数"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsPriority": {
+            "meaning": "成品盘点明细表优先级",
+            "reachable": true,
+            "name": "成品盘点明细表优先级"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsProcessInstanceId": {
+            "meaning": "成品盘点明细表流程实例ID",
+            "reachable": true,
+            "name": "成品盘点明细表流程实例ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsProductionProcessesTypeId": {
+            "meaning": "成品盘点明细表工序类型ID",
+            "reachable": true,
+            "name": "成品盘点明细表工序类型ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsProductionShiftId": {
+            "meaning": "成品盘点明细表生产班次ID",
+            "reachable": true,
+            "name": "成品盘点明细表生产班次ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsQuantity": {
+            "meaning": "成品盘点明细表任务数量",
+            "reachable": true,
+            "name": "成品盘点明细表任务数量"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsReceiptDate": {
+            "meaning": "成品盘点明细表单据日期",
+            "reachable": true,
+            "name": "成品盘点明细表单据日期"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsReceiptType": {
+            "meaning": "成品盘点明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品盘点明细表单据类型"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsRelatedTasksId": {
+            "meaning": "成品盘点明细表关联任务id",
+            "reachable": true,
+            "name": "成品盘点明细表关联任务id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsSerialNumber": {
+            "meaning": "成品盘点明细表顺序号",
+            "reachable": true,
+            "name": "成品盘点明细表顺序号"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsSource": {
+            "meaning": "成品盘点明细表源",
+            "reachable": true,
+            "name": "成品盘点明细表源"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsSourceType": {
+            "meaning": "成品盘点明细表来源类型",
+            "reachable": true,
+            "name": "成品盘点明细表来源类型"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsState": {
+            "meaning": "成品盘点明细表通用状态",
+            "reachable": true,
+            "name": "成品盘点明细表通用状态"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsSystemCode": {
+            "meaning": "成品盘点明细表系统编码",
+            "reachable": true,
+            "name": "成品盘点明细表系统编码"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTarget": {
+            "meaning": "成品盘点明细表目标",
+            "reachable": true,
+            "name": "成品盘点明细表目标"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTaskNodeName": {
+            "meaning": "成品盘点明细表任务节点名称",
+            "reachable": true,
+            "name": "成品盘点明细表任务节点名称"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTaskNodeType": {
+            "meaning": "成品盘点明细表任务节点类型",
+            "reachable": true,
+            "name": "成品盘点明细表任务节点类型"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTenantId": {
+            "meaning": "成品盘点明细表租户id",
+            "reachable": true,
+            "name": "成品盘点明细表租户id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsThirdPartyClass": {
+            "meaning": "成品盘点明细表第三方分类",
+            "reachable": true,
+            "name": "成品盘点明细表第三方分类"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsThirdPartyId": {
+            "meaning": "成品盘点明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品盘点明细表第三方系统中的唯一ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsThirdPartyName": {
+            "meaning": "成品盘点明细表第三方名称",
+            "reachable": true,
+            "name": "成品盘点明细表第三方名称"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToAuditDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToBeginTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToCreateTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra1": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra2": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra3": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra4": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra5": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToDeliveryDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToEndTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToReceiptDate": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsToUpdateTime": {
+            "meaning": "invCheckFiniGoodsDetInvCheckFiniGoodsToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTotalAmountExcludingTax": {
+            "meaning": "成品盘点明细表总盘点不含税金额",
+            "reachable": true,
+            "name": "成品盘点明细表总盘点不含税金额"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsTotalAmountIncludingTax": {
+            "meaning": "成品盘点明细表总盘点含税金额",
+            "reachable": true,
+            "name": "成品盘点明细表总盘点含税金额"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsUnitCode": {
+            "meaning": "成品盘点明细表单位id",
+            "reachable": true,
+            "name": "成品盘点明细表单位id"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsUpdateTime": {
+            "meaning": "成品盘点明细表更新时间",
+            "reachable": true,
+            "name": "成品盘点明细表更新时间"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsUpdater": {
+            "meaning": "成品盘点明细表更新人",
+            "reachable": true,
+            "name": "成品盘点明细表更新人"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsUpdaterId": {
+            "meaning": "成品盘点明细表更新人ID",
+            "reachable": true,
+            "name": "成品盘点明细表更新人ID"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsUserCode": {
+            "meaning": "成品盘点明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点的唯一编码"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVarExtra1": {
+            "meaning": "成品盘点明细表扩展1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展1"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVarExtra2": {
+            "meaning": "成品盘点明细表扩展2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展2"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVarExtra3": {
+            "meaning": "成品盘点明细表扩展3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展3"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVarExtra4": {
+            "meaning": "成品盘点明细表扩展4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展4"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVarExtra5": {
+            "meaning": "成品盘点明细表扩展5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展5"
+        },
+        "invCheckFiniGoodsDetInvCheckFiniGoodsVersion": {
+            "meaning": "成品盘点明细表版本号",
+            "reachable": true,
+            "name": "成品盘点明细表版本号"
+        },
+        "invCheckFiniGoodsDetInvTypeTaxRateId": {
+            "meaning": "成品盘点明细表发票税率id",
+            "reachable": true,
+            "name": "成品盘点明细表发票税率id"
+        },
+        "invCheckFiniGoodsDetInventoryQuantity": {
+            "meaning": "成品盘点明细表库存数量",
+            "reachable": true,
+            "name": "成品盘点明细表库存数量"
+        },
+        "invCheckFiniGoodsDetIsBanned": {
+            "meaning": "成品盘点明细表是否被禁用",
+            "reachable": true,
+            "name": "成品盘点明细表是否被禁用"
+        },
+        "invCheckFiniGoodsDetIsDeleted": {
+            "meaning": "成品盘点明细表是否被删除",
+            "reachable": true,
+            "name": "成品盘点明细表是否被删除"
+        },
+        "invCheckFiniGoodsDetIsLeaf": {
+            "meaning": "成品盘点明细表是否叶子节点",
+            "reachable": true,
+            "name": "成品盘点明细表是否叶子节点"
+        },
+        "invCheckFiniGoodsDetIsMainFlow": {
+            "meaning": "成品盘点明细表是否是主流程",
+            "reachable": true,
+            "name": "成品盘点明细表是否是主流程"
+        },
+        "invCheckFiniGoodsDetIsManualModificationDate": {
+            "meaning": "成品盘点明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "成品盘点明细表是否手动修改计划生产时间"
+        },
+        "invCheckFiniGoodsDetIsolation": {
+            "meaning": "成品盘点明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点数据隔离标识"
+        },
+        "invCheckFiniGoodsDetJsScript": {
+            "meaning": "成品盘点明细表js脚本",
+            "reachable": true,
+            "name": "成品盘点明细表js脚本"
+        },
+        "invCheckFiniGoodsDetMatBatchId": {
+            "meaning": "成品盘点明细表物料批次id",
+            "reachable": true,
+            "name": "成品盘点明细表物料批次id"
+        },
+        "invCheckFiniGoodsDetMaterialId": {
+            "meaning": "成品盘点明细表物料id",
+            "reachable": true,
+            "name": "成品盘点明细表物料id"
+        },
+        "invCheckFiniGoodsDetName": {
+            "meaning": "成品盘点明细表智能节点名",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点名"
+        },
+        "invCheckFiniGoodsDetNameCodeSearch": {
+            "meaning": "成品盘点明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "成品盘点明细表name、user_code模糊搜索"
+        },
+        "invCheckFiniGoodsDetNumberExtra1": {
+            "meaning": "成品盘点明细表扩展数量1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量1"
+        },
+        "invCheckFiniGoodsDetNumberExtra2": {
+            "meaning": "成品盘点明细表扩展数量2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量2"
+        },
+        "invCheckFiniGoodsDetNumberExtra3": {
+            "meaning": "成品盘点明细表扩展数量3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量3"
+        },
+        "invCheckFiniGoodsDetNumberExtra4": {
+            "meaning": "成品盘点明细表扩展数量4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量4"
+        },
+        "invCheckFiniGoodsDetNumberExtra5": {
+            "meaning": "成品盘点明细表扩展数量5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展数量5"
+        },
+        "invCheckFiniGoodsDetParentId": {
+            "meaning": "成品盘点明细表父节点ID",
+            "reachable": true,
+            "name": "成品盘点明细表父节点ID"
+        },
+        "invCheckFiniGoodsDetPlannedOutputQuantity": {
+            "meaning": "成品盘点明细表计划产出数量",
+            "reachable": true,
+            "name": "成品盘点明细表计划产出数量"
+        },
+        "invCheckFiniGoodsDetPlannedTimeRequired": {
+            "meaning": "成品盘点明细表计划需时(小时)",
+            "reachable": true,
+            "name": "成品盘点明细表计划需时"
+        },
+        "invCheckFiniGoodsDetPrintTimes": {
+            "meaning": "成品盘点明细表打印次数",
+            "reachable": true,
+            "name": "成品盘点明细表打印次数"
+        },
+        "invCheckFiniGoodsDetPriority": {
+            "meaning": "成品盘点明细表优先级",
+            "reachable": true,
+            "name": "成品盘点明细表优先级"
+        },
+        "invCheckFiniGoodsDetProcessInstanceId": {
+            "meaning": "成品盘点明细表流程实例ID",
+            "reachable": true,
+            "name": "成品盘点明细表流程实例ID"
+        },
+        "invCheckFiniGoodsDetProductionProcessesTypeId": {
+            "meaning": "成品盘点明细表工序类型ID",
+            "reachable": true,
+            "name": "成品盘点明细表工序类型ID"
+        },
+        "invCheckFiniGoodsDetProductionShiftId": {
+            "meaning": "成品盘点明细表生产班次ID",
+            "reachable": true,
+            "name": "成品盘点明细表生产班次ID"
+        },
+        "invCheckFiniGoodsDetQuantity": {
+            "meaning": "成品盘点明细表任务数量",
+            "reachable": true,
+            "name": "成品盘点明细表任务数量"
+        },
+        "invCheckFiniGoodsDetQuantityShortage": {
+            "meaning": "成品盘点明细表盘亏数量",
+            "reachable": true,
+            "name": "成品盘点明细表盘亏数量"
+        },
+        "invCheckFiniGoodsDetQuantitySurplus": {
+            "meaning": "成品盘点明细表盘盈数量",
+            "reachable": true,
+            "name": "成品盘点明细表盘盈数量"
+        },
+        "invCheckFiniGoodsDetReceiptDate": {
+            "meaning": "成品盘点明细表单据日期",
+            "reachable": true,
+            "name": "成品盘点明细表单据日期"
+        },
+        "invCheckFiniGoodsDetReceiptType": {
+            "meaning": "成品盘点明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "成品盘点明细表单据类型"
+        },
+        "invCheckFiniGoodsDetRelatedTasksId": {
+            "meaning": "成品盘点明细表关联任务id",
+            "reachable": true,
+            "name": "成品盘点明细表关联任务id"
+        },
+        "invCheckFiniGoodsDetSerialNumber": {
+            "meaning": "成品盘点明细表顺序号",
+            "reachable": true,
+            "name": "成品盘点明细表顺序号"
+        },
+        "invCheckFiniGoodsDetShortageNumber": {
+            "meaning": "成品盘点明细表盘亏调整单号",
+            "reachable": true,
+            "name": "成品盘点明细表盘亏调整单号"
+        },
+        "invCheckFiniGoodsDetShortageSituation": {
+            "meaning": "成品盘点明细表盘亏情况（已开、未开）",
+            "reachable": true,
+            "name": "成品盘点明细表盘亏情况"
+        },
+        "invCheckFiniGoodsDetSource": {
+            "meaning": "成品盘点明细表源",
+            "reachable": true,
+            "name": "成品盘点明细表源"
+        },
+        "invCheckFiniGoodsDetSourceType": {
+            "meaning": "成品盘点明细表来源类型",
+            "reachable": true,
+            "name": "成品盘点明细表来源类型"
+        },
+        "invCheckFiniGoodsDetState": {
+            "meaning": "成品盘点明细表通用状态",
+            "reachable": true,
+            "name": "成品盘点明细表通用状态"
+        },
+        "invCheckFiniGoodsDetSurplusNumber": {
+            "meaning": "成品盘点明细表盘盈调整单号",
+            "reachable": true,
+            "name": "成品盘点明细表盘盈调整单号"
+        },
+        "invCheckFiniGoodsDetSurplusSituation": {
+            "meaning": "成品盘点明细表盘盈情况（已开、未开）",
+            "reachable": true,
+            "name": "成品盘点明细表盘盈情况"
+        },
+        "invCheckFiniGoodsDetSystemCode": {
+            "meaning": "成品盘点明细表系统编码",
+            "reachable": true,
+            "name": "成品盘点明细表系统编码"
+        },
+        "invCheckFiniGoodsDetTarget": {
+            "meaning": "成品盘点明细表目标",
+            "reachable": true,
+            "name": "成品盘点明细表目标"
+        },
+        "invCheckFiniGoodsDetTaskNodeName": {
+            "meaning": "成品盘点明细表任务节点名称",
+            "reachable": true,
+            "name": "成品盘点明细表任务节点名称"
+        },
+        "invCheckFiniGoodsDetTaskNodeType": {
+            "meaning": "成品盘点明细表任务节点类型",
+            "reachable": true,
+            "name": "成品盘点明细表任务节点类型"
+        },
+        "invCheckFiniGoodsDetTenantId": {
+            "meaning": "成品盘点明细表租户id",
+            "reachable": true,
+            "name": "成品盘点明细表租户id"
+        },
+        "invCheckFiniGoodsDetThirdPartyClass": {
+            "meaning": "成品盘点明细表第三方分类",
+            "reachable": true,
+            "name": "成品盘点明细表第三方分类"
+        },
+        "invCheckFiniGoodsDetThirdPartyId": {
+            "meaning": "成品盘点明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "成品盘点明细表第三方系统中的唯一ID"
+        },
+        "invCheckFiniGoodsDetThirdPartyName": {
+            "meaning": "成品盘点明细表第三方名称",
+            "reachable": true,
+            "name": "成品盘点明细表第三方名称"
+        },
+        "invCheckFiniGoodsDetToAuditDate": {
+            "meaning": "invCheckFiniGoodsDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToBeginTime": {
+            "meaning": "invCheckFiniGoodsDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToCreateTime": {
+            "meaning": "invCheckFiniGoodsDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDateExtra1": {
+            "meaning": "invCheckFiniGoodsDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDateExtra2": {
+            "meaning": "invCheckFiniGoodsDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDateExtra3": {
+            "meaning": "invCheckFiniGoodsDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDateExtra4": {
+            "meaning": "invCheckFiniGoodsDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDateExtra5": {
+            "meaning": "invCheckFiniGoodsDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToDeliveryDate": {
+            "meaning": "invCheckFiniGoodsDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToEndTime": {
+            "meaning": "invCheckFiniGoodsDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToReceiptDate": {
+            "meaning": "invCheckFiniGoodsDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetToUpdateTime": {
+            "meaning": "invCheckFiniGoodsDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "invCheckFiniGoodsDetUnitCode": {
+            "meaning": "成品盘点明细表单位id",
+            "reachable": true,
+            "name": "成品盘点明细表单位id"
+        },
+        "invCheckFiniGoodsDetUnitPriceExcTax": {
+            "meaning": "成品盘点明细表不含税单价",
+            "reachable": true,
+            "name": "成品盘点明细表不含税单价"
+        },
+        "invCheckFiniGoodsDetUnitPriceIncTax": {
+            "meaning": "成品盘点明细表含税单价",
+            "reachable": true,
+            "name": "成品盘点明细表含税单价"
+        },
+        "invCheckFiniGoodsDetUpdateTime": {
+            "meaning": "成品盘点明细表更新时间",
+            "reachable": true,
+            "name": "成品盘点明细表更新时间"
+        },
+        "invCheckFiniGoodsDetUpdater": {
+            "meaning": "成品盘点明细表更新人",
+            "reachable": true,
+            "name": "成品盘点明细表更新人"
+        },
+        "invCheckFiniGoodsDetUpdaterId": {
+            "meaning": "成品盘点明细表更新人ID",
+            "reachable": true,
+            "name": "成品盘点明细表更新人ID"
+        },
+        "invCheckFiniGoodsDetUserCode": {
+            "meaning": "成品盘点明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "成品盘点明细表智能节点的唯一编码"
+        },
+        "invCheckFiniGoodsDetVarExtra1": {
+            "meaning": "成品盘点明细表扩展1",
+            "reachable": true,
+            "name": "成品盘点明细表扩展1"
+        },
+        "invCheckFiniGoodsDetVarExtra2": {
+            "meaning": "成品盘点明细表扩展2",
+            "reachable": true,
+            "name": "成品盘点明细表扩展2"
+        },
+        "invCheckFiniGoodsDetVarExtra3": {
+            "meaning": "成品盘点明细表扩展3",
+            "reachable": true,
+            "name": "成品盘点明细表扩展3"
+        },
+        "invCheckFiniGoodsDetVarExtra4": {
+            "meaning": "成品盘点明细表扩展4",
+            "reachable": true,
+            "name": "成品盘点明细表扩展4"
+        },
+        "invCheckFiniGoodsDetVarExtra5": {
+            "meaning": "成品盘点明细表扩展5",
+            "reachable": true,
+            "name": "成品盘点明细表扩展5"
+        },
+        "invCheckFiniGoodsDetVersion": {
+            "meaning": "成品盘点明细表版本号",
+            "reachable": true,
+            "name": "成品盘点明细表版本号"
+        },
+        "invCheckFiniGoodsDetWarehousePosition": {
+            "meaning": "成品盘点明细表仓位",
+            "reachable": true,
+            "name": "成品盘点明细表仓位"
+        },
+        "invCheckFiniGoodsDetWarehouseSpaceId": {
+            "meaning": "成品盘点明细表仓空间id",
+            "reachable": true,
+            "name": "成品盘点明细表仓空间id"
+        },
+        "invCheckFiniGoodsDetWorkOrderId": {
+            "meaning": "成品盘点明细表工单id",
+            "reachable": true,
+            "name": "成品盘点明细表工单id"
+        },
+        "nvCheckFiniGoodsDetInvCheckFiniGoodsFromDeliveryDate": {
+            "meaning": "nvCheckFiniGoodsDetInvCheckFiniGoodsFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        }
+    }
+}

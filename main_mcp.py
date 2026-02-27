@@ -7,6 +7,7 @@ from services.calcu_service import calcu_mcp
 from services.chart_service import chart_mcp
 from services.csv_service import csv_mcp
 from services.finance_service import finance_mcp
+from services.neo4j_service import neo4j_mcp
 from services.order_service import order_mcp
 from services.task_service import task_mcp
 
@@ -19,6 +20,7 @@ mcp.mount(calcu_mcp, prefix="calcu")
 mcp.mount(chart_mcp, prefix="chart")
 mcp.mount(csv_mcp, prefix="csv")
 mcp.mount(finance_mcp, prefix="finance")
+mcp.mount(neo4j_mcp, prefix="neo4j")
 mcp.mount(order_mcp, prefix="order")
 mcp.mount(task_mcp, prefix="task")
 

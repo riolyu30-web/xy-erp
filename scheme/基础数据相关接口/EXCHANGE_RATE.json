@@ -1,0 +1,437 @@
+{
+    "api_name": "/exchange-rate/findList",
+    "table_name": "币种汇率表",
+    "request": {
+        "exchangeRateClazz": "EXCHANGE_RATE"
+    },
+    "mainTabClazz": "EXCHANGE_RATE",
+    "response": {
+        "exchangeRateApplicationId": {
+            "meaning": "币种汇率表应用ID",
+            "reachable": true,
+            "name": "币种汇率表应用ID"
+        },
+        "exchangeRateAuditDate": {
+            "meaning": "币种汇率表审核时间",
+            "reachable": true,
+            "name": "币种汇率表审核时间"
+        },
+        "exchangeRateAuditStatus": {
+            "meaning": "币种汇率表审核状态",
+            "reachable": true,
+            "name": "币种汇率表审核状态"
+        },
+        "exchangeRateBizVersion": {
+            "meaning": "币种汇率表业务自定义版本号",
+            "reachable": true,
+            "name": "币种汇率表业务自定义版本号"
+        },
+        "exchangeRateBriefName": {
+            "meaning": "币种汇率表简称",
+            "reachable": true,
+            "name": "币种汇率表简称"
+        },
+        "exchangeRateBusDivisId": {
+            "meaning": "币种汇率表事业部id",
+            "reachable": true,
+            "name": "币种汇率表事业部id"
+        },
+        "exchangeRateClazz": {
+            "meaning": "币种汇率表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "币种汇率表子类"
+        },
+        "exchangeRateComment": {
+            "meaning": "币种汇率表评论",
+            "reachable": true,
+            "name": "币种汇率表评论"
+        },
+        "exchangeRateCreateTime": {
+            "meaning": "币种汇率表创建时间",
+            "reachable": true,
+            "name": "币种汇率表创建时间"
+        },
+        "exchangeRateCreator": {
+            "meaning": "币种汇率表创建人",
+            "reachable": true,
+            "name": "币种汇率表创建人"
+        },
+        "exchangeRateCreatorId": {
+            "meaning": "币种汇率表创建人ID",
+            "reachable": true,
+            "name": "币种汇率表创建人ID"
+        },
+        "exchangeRateCurrencyDic": {
+            "meaning": "币种汇率表币种字典值",
+            "reachable": true,
+            "name": "币种汇率表币种字典值"
+        },
+        "exchangeRateDateExtra1": {
+            "meaning": "币种汇率表扩展时间1",
+            "reachable": true,
+            "name": "币种汇率表扩展时间1"
+        },
+        "exchangeRateDateExtra2": {
+            "meaning": "币种汇率表扩展时间2",
+            "reachable": true,
+            "name": "币种汇率表扩展时间2"
+        },
+        "exchangeRateDateExtra3": {
+            "meaning": "币种汇率表扩展时间3",
+            "reachable": true,
+            "name": "币种汇率表扩展时间3"
+        },
+        "exchangeRateDateExtra4": {
+            "meaning": "币种汇率表扩展时间4",
+            "reachable": true,
+            "name": "币种汇率表扩展时间4"
+        },
+        "exchangeRateDateExtra5": {
+            "meaning": "币种汇率表扩展时间5",
+            "reachable": true,
+            "name": "币种汇率表扩展时间5"
+        },
+        "exchangeRateDefaultType": {
+            "meaning": "币种汇率表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "币种汇率表智能节点主类型"
+        },
+        "exchangeRateDescription": {
+            "meaning": "币种汇率表描述",
+            "reachable": true,
+            "name": "币种汇率表描述"
+        },
+        "exchangeRateEffectiveEndTime": {
+            "meaning": "币种汇率表有效结束时间",
+            "reachable": true,
+            "name": "币种汇率表有效结束时间"
+        },
+        "exchangeRateEffectiveStartTime": {
+            "meaning": "币种汇率表有效开始时间",
+            "reachable": true,
+            "name": "币种汇率表有效开始时间"
+        },
+        "exchangeRateEnable": {
+            "meaning": "币种汇率表状态(0停用，1启用)",
+            "reachable": true,
+            "name": "币种汇率表状态"
+        },
+        "exchangeRateEngName": {
+            "meaning": "币种汇率表英文名称",
+            "reachable": true,
+            "name": "币种汇率表英文名称"
+        },
+        "exchangeRateExchangeRate": {
+            "meaning": "币种汇率表汇率",
+            "reachable": true,
+            "name": "币种汇率表汇率"
+        },
+        "exchangeRateExtension": {
+            "meaning": "币种汇率表扩展数据",
+            "reachable": true,
+            "name": "币种汇率表扩展数据"
+        },
+        "exchangeRateExternalState": {
+            "meaning": "币种汇率表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "币种汇率表上流程状态位"
+        },
+        "exchangeRateFlags": {
+            "meaning": "币种汇率表63位标志位",
+            "reachable": true,
+            "name": "币种汇率表63位标志位"
+        },
+        "exchangeRateFromAuditDate": {
+            "meaning": "exchangeRateFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromCreateTime": {
+            "meaning": "exchangeRateFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromDateExtra1": {
+            "meaning": "exchangeRateFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromDateExtra2": {
+            "meaning": "exchangeRateFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromDateExtra3": {
+            "meaning": "exchangeRateFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromDateExtra4": {
+            "meaning": "exchangeRateFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromDateExtra5": {
+            "meaning": "exchangeRateFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromEffectiveEndTime": {
+            "meaning": "exchangeRateFromEffectiveEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromEffectiveStartTime": {
+            "meaning": "exchangeRateFromEffectiveStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateFromUpdateTime": {
+            "meaning": "exchangeRateFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateGroovyScript": {
+            "meaning": "币种汇率表groovy脚本",
+            "reachable": true,
+            "name": "币种汇率表groovy脚本"
+        },
+        "exchangeRateGropeCode": {
+            "meaning": "币种汇率表搜索码",
+            "reachable": true,
+            "name": "币种汇率表搜索码"
+        },
+        "exchangeRateId": {
+            "meaning": "币种汇率表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "币种汇率表PK"
+        },
+        "exchangeRateInUsed": {
+            "meaning": "币种汇率表是否被使用",
+            "reachable": true,
+            "name": "币种汇率表是否被使用"
+        },
+        "exchangeRateIsBanned": {
+            "meaning": "币种汇率表是否被禁用",
+            "reachable": true,
+            "name": "币种汇率表是否被禁用"
+        },
+        "exchangeRateIsDeleted": {
+            "meaning": "币种汇率表是否被删除",
+            "reachable": true,
+            "name": "币种汇率表是否被删除"
+        },
+        "exchangeRateIsMainFlow": {
+            "meaning": "币种汇率表是否是主流程",
+            "reachable": true,
+            "name": "币种汇率表是否是主流程"
+        },
+        "exchangeRateIsolation": {
+            "meaning": "币种汇率表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "币种汇率表智能节点数据隔离标识"
+        },
+        "exchangeRateJsScript": {
+            "meaning": "币种汇率表js脚本",
+            "reachable": true,
+            "name": "币种汇率表js脚本"
+        },
+        "exchangeRateName": {
+            "meaning": "币种汇率表智能节点名",
+            "reachable": true,
+            "name": "币种汇率表智能节点名"
+        },
+        "exchangeRateNameCodeSearch": {
+            "meaning": "币种汇率表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "币种汇率表name、user_code模糊搜索"
+        },
+        "exchangeRateNumberExtra1": {
+            "meaning": "币种汇率表扩展数量1",
+            "reachable": true,
+            "name": "币种汇率表扩展数量1"
+        },
+        "exchangeRateNumberExtra2": {
+            "meaning": "币种汇率表扩展数量2",
+            "reachable": true,
+            "name": "币种汇率表扩展数量2"
+        },
+        "exchangeRateNumberExtra3": {
+            "meaning": "币种汇率表扩展数量3",
+            "reachable": true,
+            "name": "币种汇率表扩展数量3"
+        },
+        "exchangeRateNumberExtra4": {
+            "meaning": "币种汇率表扩展数量4",
+            "reachable": true,
+            "name": "币种汇率表扩展数量4"
+        },
+        "exchangeRateNumberExtra5": {
+            "meaning": "币种汇率表扩展数量5",
+            "reachable": true,
+            "name": "币种汇率表扩展数量5"
+        },
+        "exchangeRateParentId": {
+            "meaning": "币种汇率表父节点ID",
+            "reachable": true,
+            "name": "币种汇率表父节点ID"
+        },
+        "exchangeRateProcessInstanceId": {
+            "meaning": "币种汇率表流程实例ID",
+            "reachable": true,
+            "name": "币种汇率表流程实例ID"
+        },
+        "exchangeRateSerialNumber": {
+            "meaning": "币种汇率表顺序号",
+            "reachable": true,
+            "name": "币种汇率表顺序号"
+        },
+        "exchangeRateState": {
+            "meaning": "币种汇率表通用状态",
+            "reachable": true,
+            "name": "币种汇率表通用状态"
+        },
+        "exchangeRateSystemCode": {
+            "meaning": "币种汇率表系统编码",
+            "reachable": true,
+            "name": "币种汇率表系统编码"
+        },
+        "exchangeRateTaskNodeName": {
+            "meaning": "币种汇率表任务节点名称",
+            "reachable": true,
+            "name": "币种汇率表任务节点名称"
+        },
+        "exchangeRateTenantId": {
+            "meaning": "币种汇率表租户GUID",
+            "reachable": true,
+            "name": "币种汇率表租户GUID"
+        },
+        "exchangeRateThirdPartyClass": {
+            "meaning": "币种汇率表第三方分类",
+            "reachable": true,
+            "name": "币种汇率表第三方分类"
+        },
+        "exchangeRateThirdPartyId": {
+            "meaning": "币种汇率表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "币种汇率表第三方系统中的唯一ID"
+        },
+        "exchangeRateThirdPartyName": {
+            "meaning": "币种汇率表第三方名称",
+            "reachable": true,
+            "name": "币种汇率表第三方名称"
+        },
+        "exchangeRateToAuditDate": {
+            "meaning": "exchangeRateToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToCreateTime": {
+            "meaning": "exchangeRateToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToDateExtra1": {
+            "meaning": "exchangeRateToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToDateExtra2": {
+            "meaning": "exchangeRateToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToDateExtra3": {
+            "meaning": "exchangeRateToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToDateExtra4": {
+            "meaning": "exchangeRateToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToDateExtra5": {
+            "meaning": "exchangeRateToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToEffectiveEndTime": {
+            "meaning": "exchangeRateToEffectiveEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToEffectiveStartTime": {
+            "meaning": "exchangeRateToEffectiveStartTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateToJson": {
+            "type": "object",
+            "meaning": "币种汇率表扩展字段",
+            "reachable": true,
+            "name": "币种汇率表扩展字段"
+        },
+        "exchangeRateToUpdateTime": {
+            "meaning": "exchangeRateToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "exchangeRateUpdateTime": {
+            "meaning": "币种汇率表更新时间",
+            "reachable": true,
+            "name": "币种汇率表更新时间"
+        },
+        "exchangeRateUpdater": {
+            "meaning": "币种汇率表更新人",
+            "reachable": true,
+            "name": "币种汇率表更新人"
+        },
+        "exchangeRateUpdaterId": {
+            "meaning": "币种汇率表更新人ID",
+            "reachable": true,
+            "name": "币种汇率表更新人ID"
+        },
+        "exchangeRateUsed": {
+            "meaning": "币种汇率表已被使用(0未使用，1已使用)",
+            "reachable": true,
+            "name": "币种汇率表已被使用"
+        },
+        "exchangeRateUserCode": {
+            "meaning": "币种汇率表智能节点的唯一编码",
+            "reachable": true,
+            "name": "币种汇率表智能节点的唯一编码"
+        },
+        "exchangeRateVarExtra1": {
+            "meaning": "币种汇率表扩展1",
+            "reachable": true,
+            "name": "币种汇率表扩展1"
+        },
+        "exchangeRateVarExtra2": {
+            "meaning": "币种汇率表扩展2",
+            "reachable": true,
+            "name": "币种汇率表扩展2"
+        },
+        "exchangeRateVarExtra3": {
+            "meaning": "币种汇率表扩展3",
+            "reachable": true,
+            "name": "币种汇率表扩展3"
+        },
+        "exchangeRateVarExtra4": {
+            "meaning": "币种汇率表扩展4",
+            "reachable": true,
+            "name": "币种汇率表扩展4"
+        },
+        "exchangeRateVarExtra5": {
+            "meaning": "币种汇率表扩展5",
+            "reachable": true,
+            "name": "币种汇率表扩展5"
+        },
+        "exchangeRateVersion": {
+            "meaning": "币种汇率表版本号",
+            "reachable": true,
+            "name": "币种汇率表版本号"
+        }
+    }
+}

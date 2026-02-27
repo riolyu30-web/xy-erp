@@ -1,0 +1,1600 @@
+{
+    "api_name": "/biz-order-detail/findList",
+    "table_name": "业务订单明细",
+    "request": {
+        "bizOrderDetailBizOrderClazz": "BUSINESS_ORDER",
+        "bizOrderDetailClazz": "BUSINESS_ORDER_DETAIL"
+    },
+    "mainTabClazz": "BUSINESS_ORDER_DETAIL",
+    "response": {
+        "bizOrderDetailActualTimeRequired": {
+            "meaning": "业务订单明细实际需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细实际需时"
+        },
+        "bizOrderDetailAddress": {
+            "meaning": "业务订单明细详细地址",
+            "reachable": true,
+            "name": "业务订单明细详细地址"
+        },
+        "bizOrderDetailAdjustmentTimeRequired": {
+            "meaning": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "业务订单明细调整需时"
+        },
+        "bizOrderDetailApplicationId": {
+            "meaning": "业务订单明细应用ID",
+            "reachable": true,
+            "name": "业务订单明细应用ID"
+        },
+        "bizOrderDetailAreaId": {
+            "meaning": "业务订单明细行政区域id",
+            "reachable": true,
+            "name": "业务订单明细行政区域id"
+        },
+        "bizOrderDetailAssignStatus": {
+            "meaning": "业务订单明细指派状态",
+            "reachable": true,
+            "name": "业务订单明细指派状态"
+        },
+        "bizOrderDetailAuditDate": {
+            "meaning": "业务订单明细审核时间",
+            "reachable": true,
+            "name": "业务订单明细审核时间"
+        },
+        "bizOrderDetailAuditStatus": {
+            "meaning": "业务订单明细审核状态",
+            "reachable": true,
+            "name": "业务订单明细审核状态"
+        },
+        "bizOrderDetailAvailableScheduleId": {
+            "meaning": "业务订单明细可用日程id",
+            "reachable": true,
+            "name": "业务订单明细可用日程id"
+        },
+        "bizOrderDetailBeginTime": {
+            "meaning": "业务订单明细开始时间",
+            "reachable": true,
+            "name": "业务订单明细开始时间"
+        },
+        "bizOrderDetailBizOrderActualTimeRequired": {
+            "meaning": "业务订单明细实际需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细实际需时"
+        },
+        "bizOrderDetailBizOrderAdjustmentTimeRequired": {
+            "meaning": "业务订单明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "业务订单明细调整需时"
+        },
+        "bizOrderDetailBizOrderApplicationId": {
+            "meaning": "业务订单明细应用ID",
+            "reachable": true,
+            "name": "业务订单明细应用ID"
+        },
+        "bizOrderDetailBizOrderAuditDate": {
+            "meaning": "订业务单明细审核时间",
+            "reachable": true,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderAuditStatus": {
+            "meaning": "业务订单明细审核状态",
+            "reachable": true,
+            "name": "业务订单明细审核状态"
+        },
+        "bizOrderDetailBizOrderAvailableScheduleId": {
+            "meaning": "业务订单明细可用日程id",
+            "reachable": true,
+            "name": "业务订单明细可用日程id"
+        },
+        "bizOrderDetailBizOrderBeginTime": {
+            "meaning": "业务订单明细开始时间",
+            "reachable": true,
+            "name": "业务订单明细开始时间"
+        },
+        "bizOrderDetailBizOrderBizVersion": {
+            "meaning": "业务订单明细业务自定义版本号",
+            "reachable": true,
+            "name": "业务订单明细业务自定义版本号"
+        },
+        "bizOrderDetailBizOrderBriefName": {
+            "meaning": "业务订单明细简称",
+            "reachable": true,
+            "name": "业务订单明细简称"
+        },
+        "bizOrderDetailBizOrderBusDivisId": {
+            "meaning": "业务订单明细事业部id",
+            "reachable": true,
+            "name": "业务订单明细事业部id"
+        },
+        "bizOrderDetailBizOrderClazz": {
+            "meaning": "业务订单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "业务订单明细子类"
+        },
+        "bizOrderDetailBizOrderClosedReason": {
+            "meaning": "业务订单明细结案原因",
+            "reachable": true,
+            "name": "业务订单明细结案原因"
+        },
+        "bizOrderDetailBizOrderClosedStatus": {
+            "meaning": "业务订单明细结案状态",
+            "reachable": true,
+            "name": "业务订单明细结案状态"
+        },
+        "bizOrderDetailBizOrderComment": {
+            "meaning": "业务订单明细评论",
+            "reachable": true,
+            "name": "业务订单明细评论"
+        },
+        "bizOrderDetailBizOrderCompleteQuantity": {
+            "meaning": "业务订单明细完成数量",
+            "reachable": true,
+            "name": "业务订单明细完成数量"
+        },
+        "bizOrderDetailBizOrderCompleteStatus": {
+            "meaning": "业务订单明细完成状态",
+            "reachable": true,
+            "name": "业务订单明细完成状态"
+        },
+        "bizOrderDetailBizOrderContName": {
+            "meaning": "业务订单明细联系人姓名",
+            "reachable": true,
+            "name": "业务订单明细联系人姓名"
+        },
+        "bizOrderDetailBizOrderCreateTime": {
+            "meaning": "业务订单明细创建时间",
+            "reachable": true,
+            "name": "业务订单明细创建时间"
+        },
+        "bizOrderDetailBizOrderCreator": {
+            "meaning": "业务订单明细创建人",
+            "reachable": true,
+            "name": "业务订单明细创建人"
+        },
+        "bizOrderDetailBizOrderCreatorId": {
+            "meaning": "业务订单明细创建人ID",
+            "reachable": true,
+            "name": "业务订单明细创建人ID"
+        },
+        "bizOrderDetailBizOrderCur": {
+            "meaning": "业务订单明细币种",
+            "reachable": true,
+            "name": "业务订单明细币种"
+        },
+        "bizOrderDetailBizOrderCurRate": {
+            "meaning": "业务订单明细汇率",
+            "reachable": true,
+            "name": "业务订单明细汇率"
+        },
+        "bizOrderDetailBizOrderCustId": {
+            "meaning": "业务订单明细客户id",
+            "reachable": true,
+            "name": "业务订单明细客户id"
+        },
+        "bizOrderDetailBizOrderDateExtra1": {
+            "meaning": "业务订单明细扩展时间1",
+            "reachable": true,
+            "name": "业务订单明细扩展时间1"
+        },
+        "bizOrderDetailBizOrderDateExtra2": {
+            "meaning": "业务订单明细扩展时间2",
+            "reachable": true,
+            "name": "业务订单明细扩展时间2"
+        },
+        "bizOrderDetailBizOrderDateExtra3": {
+            "meaning": "业务订单明细扩展时间3",
+            "reachable": true,
+            "name": "业务订单明细扩展时间3"
+        },
+        "bizOrderDetailBizOrderDateExtra4": {
+            "meaning": "业务订单明细扩展时间4",
+            "reachable": true,
+            "name": "业务订单明细扩展时间4"
+        },
+        "bizOrderDetailBizOrderDateExtra5": {
+            "meaning": "业务订单明细扩展时间5",
+            "reachable": true,
+            "name": "业务订单明细扩展时间5"
+        },
+        "bizOrderDetailBizOrderDefaultType": {
+            "meaning": "业务订单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "业务订单明细智能节点主类型"
+        },
+        "bizOrderDetailBizOrderDelMethod": {
+            "meaning": "业务订单明细配送方式",
+            "reachable": true,
+            "name": "业务订单明细配送方式"
+        },
+        "bizOrderDetailBizOrderDeliveryDate": {
+            "meaning": "业务订单明细交货日期",
+            "reachable": true,
+            "name": "业务订单明细交货日期"
+        },
+        "bizOrderDetailBizOrderDelvCust": {
+            "meaning": "业务订单明细送货客户",
+            "reachable": true,
+            "name": "业务订单明细送货客户"
+        },
+        "bizOrderDetailBizOrderDescription": {
+            "meaning": "业务订单明细描述",
+            "reachable": true,
+            "name": "业务订单明细描述"
+        },
+        "bizOrderDetailBizOrderEndTime": {
+            "meaning": "业务订单明细结束时间",
+            "reachable": true,
+            "name": "业务订单明细结束时间"
+        },
+        "bizOrderDetailBizOrderEndTimeRequired": {
+            "meaning": "业务订单明细最后需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细最后需时"
+        },
+        "bizOrderDetailBizOrderEngName": {
+            "meaning": "业务订单明细英文名称",
+            "reachable": true,
+            "name": "业务订单明细英文名称"
+        },
+        "bizOrderDetailBizOrderEquipmentId": {
+            "meaning": "业务订单明细设备id",
+            "reachable": true,
+            "name": "业务订单明细设备id"
+        },
+        "bizOrderDetailBizOrderExchangeRateId": {
+            "meaning": "业务订单明细币种汇率id",
+            "reachable": true,
+            "name": "业务订单明细币种汇率id"
+        },
+        "bizOrderDetailBizOrderExtension": {
+            "meaning": "业务订单明细扩展数据",
+            "reachable": true,
+            "name": "业务订单明细扩展数据"
+        },
+        "bizOrderDetailBizOrderExternalState": {
+            "meaning": "业务订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "业务订单明细上流程状态位"
+        },
+        "bizOrderDetailBizOrderFilterClazz": {
+            "meaning": "业务订单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "业务订单明细冗余字段用于筛选"
+        },
+        "bizOrderDetailBizOrderFlags": {
+            "meaning": "业务订单明细63位标志位",
+            "reachable": true,
+            "name": "业务订单明细63位标志位"
+        },
+        "bizOrderDetailBizOrderFmtDec": {
+            "meaning": "业务订单明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)",
+            "reachable": true,
+            "name": "业务订单明细保留小数位方法"
+        },
+        "bizOrderDetailBizOrderFromAuditDate": {
+            "meaning": "bizOrderDetailBizOrderFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromBeginTime": {
+            "meaning": "bizOrderDetailBizOrderFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromCreateTime": {
+            "meaning": "bizOrderDetailBizOrderFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDateExtra1": {
+            "meaning": "bizOrderDetailBizOrderFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDateExtra2": {
+            "meaning": "bizOrderDetailBizOrderFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDateExtra3": {
+            "meaning": "bizOrderDetailBizOrderFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDateExtra4": {
+            "meaning": "bizOrderDetailBizOrderFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDateExtra5": {
+            "meaning": "bizOrderDetailBizOrderFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromDeliveryDate": {
+            "meaning": "bizOrderDetailBizOrderFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromEndTime": {
+            "meaning": "bizOrderDetailBizOrderFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromReceiptDate": {
+            "meaning": "bizOrderDetailBizOrderFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFromUpdateTime": {
+            "meaning": "bizOrderDetailBizOrderFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderFscType": {
+            "meaning": "业务订单明细FSC声明",
+            "reachable": true,
+            "name": "业务订单明细FSC声明"
+        },
+        "bizOrderDetailBizOrderGenerativePeople": {
+            "meaning": "业务订单明细下发人",
+            "reachable": true,
+            "name": "业务订单明细下发人"
+        },
+        "bizOrderDetailBizOrderGenerativeState": {
+            "meaning": "业务订单明细下发状态",
+            "reachable": true,
+            "name": "业务订单明细下发状态"
+        },
+        "bizOrderDetailBizOrderGroovyScript": {
+            "meaning": "业务订单明细groovy脚本",
+            "reachable": true,
+            "name": "业务订单明细groovy脚本"
+        },
+        "bizOrderDetailBizOrderGropeCode": {
+            "meaning": "业务订单明细搜索码",
+            "reachable": true,
+            "name": "业务订单明细搜索码"
+        },
+        "bizOrderDetailBizOrderId": {
+            "meaning": "业务订单明细PK",
+            "reachable": true,
+            "name": "业务订单明细PK"
+        },
+        "bizOrderDetailBizOrderInUsed": {
+            "meaning": "业务订单明细是否被使用",
+            "reachable": true,
+            "name": "业务订单明细是否被使用"
+        },
+        "bizOrderDetailBizOrderInvType": {
+            "meaning": "业务订单明细发票类型id",
+            "reachable": true,
+            "name": "业务订单明细发票类型id"
+        },
+        "bizOrderDetailBizOrderInvTypeTaxRateId": {
+            "meaning": "业务订单明细发票税率id",
+            "reachable": true,
+            "name": "业务订单明细发票税率id"
+        },
+        "bizOrderDetailBizOrderIsBanned": {
+            "meaning": "业务订单明细是否被禁用",
+            "reachable": true,
+            "name": "业务订单明细是否被禁用"
+        },
+        "bizOrderDetailBizOrderIsDeleted": {
+            "meaning": "业务订单明细是否被删除",
+            "reachable": true,
+            "name": "业务订单明细是否被删除"
+        },
+        "bizOrderDetailBizOrderIsLeaf": {
+            "meaning": "业务订单明细是否叶子节点",
+            "reachable": true,
+            "name": "业务订单明细是否叶子节点"
+        },
+        "bizOrderDetailBizOrderIsMainFlow": {
+            "meaning": "业务订单明细是否是主流程",
+            "reachable": true,
+            "name": "业务订单明细是否是主流程"
+        },
+        "bizOrderDetailBizOrderIsManualModificationDate": {
+            "meaning": "业务订单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "业务订单明细是否手动修改计划生产时间"
+        },
+        "bizOrderDetailBizOrderIsUrgent": {
+            "meaning": "业务订单明细是否加急",
+            "reachable": true,
+            "name": "业务订单明细是否加急"
+        },
+        "bizOrderDetailBizOrderIsolation": {
+            "meaning": "业务订单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "业务订单明细智能节点数据隔离标识"
+        },
+        "bizOrderDetailBizOrderJsScript": {
+            "meaning": "业务订单明细js脚本",
+            "reachable": true,
+            "name": "业务订单明细js脚本"
+        },
+        "bizOrderDetailBizOrderLcTotalAmt": {
+            "meaning": "业务订单明细本币总费用(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "业务订单明细本币总费用"
+        },
+        "bizOrderDetailBizOrderMaterialId": {
+            "meaning": "业务订单明细物料id",
+            "reachable": true,
+            "name": "业务订单明细物料id"
+        },
+        "bizOrderDetailBizOrderName": {
+            "meaning": "业务订单明细智能节点名",
+            "reachable": true,
+            "name": "业务订单明细智能节点名"
+        },
+        "bizOrderDetailBizOrderNameCodeSearch": {
+            "meaning": "业务订单明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "业务订单明细name、user_code模糊搜索"
+        },
+        "bizOrderDetailBizOrderNumberExtra1": {
+            "meaning": "业务订单明细扩展数量1",
+            "reachable": true,
+            "name": "业务订单明细扩展数量1"
+        },
+        "bizOrderDetailBizOrderNumberExtra2": {
+            "meaning": "业务订单明细扩展数量2",
+            "reachable": true,
+            "name": "业务订单明细扩展数量2"
+        },
+        "bizOrderDetailBizOrderNumberExtra3": {
+            "meaning": "业务订单明细扩展数量3",
+            "reachable": true,
+            "name": "业务订单明细扩展数量3"
+        },
+        "bizOrderDetailBizOrderNumberExtra4": {
+            "meaning": "业务订单明细扩展数量4",
+            "reachable": true,
+            "name": "业务订单明细扩展数量4"
+        },
+        "bizOrderDetailBizOrderNumberExtra5": {
+            "meaning": "业务订单明细扩展数量5",
+            "reachable": true,
+            "name": "业务订单明细扩展数量5"
+        },
+        "bizOrderDetailBizOrderPCount": {
+            "meaning": "业务订单明细打印次数",
+            "reachable": true,
+            "name": "业务订单明细打印次数"
+        },
+        "bizOrderDetailBizOrderParentId": {
+            "meaning": "业务订单明细父节点ID",
+            "reachable": true,
+            "name": "业务订单明细父节点ID"
+        },
+        "bizOrderDetailBizOrderPhone": {
+            "meaning": "业务订单明细手机",
+            "reachable": true,
+            "name": "业务订单明细手机"
+        },
+        "bizOrderDetailBizOrderPlannedOutputQuantity": {
+            "meaning": "业务订单明细计划产出数量",
+            "reachable": true,
+            "name": "业务订单明细计划产出数量"
+        },
+        "bizOrderDetailBizOrderPlannedTimeRequired": {
+            "meaning": "业务订单明细计划需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细计划需时"
+        },
+        "bizOrderDetailBizOrderPrintTimes": {
+            "meaning": "业务订单明细打印次数",
+            "reachable": true,
+            "name": "业务订单明细打印次数"
+        },
+        "bizOrderDetailBizOrderPriority": {
+            "meaning": "业务订单明细优先级",
+            "reachable": true,
+            "name": "业务订单明细优先级"
+        },
+        "bizOrderDetailBizOrderProcessInstanceId": {
+            "meaning": "业务订单明细流程实例ID",
+            "reachable": true,
+            "name": "业务订单明细流程实例ID"
+        },
+        "bizOrderDetailBizOrderProductionProcessesTypeId": {
+            "meaning": "业务订单明细工序类型ID",
+            "reachable": true,
+            "name": "业务订单明细工序类型ID"
+        },
+        "bizOrderDetailBizOrderProductionShiftId": {
+            "meaning": "业务订单明细生产班次ID",
+            "reachable": true,
+            "name": "业务订单明细生产班次ID"
+        },
+        "bizOrderDetailBizOrderQuantity": {
+            "meaning": "业务订单明细任务数量",
+            "reachable": true,
+            "name": "业务订单明细任务数量"
+        },
+        "bizOrderDetailBizOrderReceiptDate": {
+            "meaning": "业务订单明细单据日期",
+            "reachable": true,
+            "name": "业务订单明细单据日期"
+        },
+        "bizOrderDetailBizOrderReceiptType": {
+            "meaning": "业务订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "业务订单明细单据类型"
+        },
+        "bizOrderDetailBizOrderRelatedTasksId": {
+            "meaning": "业务订单明细关联任务id",
+            "reachable": true,
+            "name": "业务订单明细关联任务id"
+        },
+        "bizOrderDetailBizOrderSerialNumber": {
+            "meaning": "业务订单明细顺序号",
+            "reachable": true,
+            "name": "业务订单明细顺序号"
+        },
+        "bizOrderDetailBizOrderSettleCustId": {
+            "meaning": "业务订单明细结算客户ID",
+            "reachable": true,
+            "name": "业务订单明细结算客户ID"
+        },
+        "bizOrderDetailBizOrderSource": {
+            "meaning": "业务订单明细源节点id(-查询入参-)",
+            "reachable": true,
+            "name": "业务订单明细源节点id"
+        },
+        "bizOrderDetailBizOrderSourceType": {
+            "meaning": "业务订单明细来源类型",
+            "reachable": true,
+            "name": "业务订单明细来源类型"
+        },
+        "bizOrderDetailBizOrderState": {
+            "meaning": "业务订单明细通用状态",
+            "reachable": true,
+            "name": "业务订单明细通用状态"
+        },
+        "bizOrderDetailBizOrderStlAmtFmt": {
+            "meaning": "业务订单明细结算金额保留小数位(默认2位，可手动变更)",
+            "reachable": true,
+            "name": "业务订单明细结算金额保留小数位"
+        },
+        "bizOrderDetailBizOrderStlFee": {
+            "meaning": "业务订单明细结算费用（默认与含税总金额相等)",
+            "reachable": true,
+            "name": "业务订单明细结算费用"
+        },
+        "bizOrderDetailBizOrderStlPriceFmt": {
+            "meaning": "业务订单明细结算单价保留小数位(默认9位，可手动变更)",
+            "reachable": true,
+            "name": "业务订单明细结算单价保留小数位"
+        },
+        "bizOrderDetailBizOrderStlType": {
+            "meaning": "业务订单明细结算类型 SettlementType_id",
+            "reachable": true,
+            "name": "业务订单明细结算类型"
+        },
+        "bizOrderDetailBizOrderSystemCode": {
+            "meaning": "业务订单明细系统编码",
+            "reachable": true,
+            "name": "业务订单明细系统编码"
+        },
+        "bizOrderDetailBizOrderTarget": {
+            "meaning": "业务订单明细目标节点id(-查询入参-)",
+            "reachable": true,
+            "name": "业务订单明细目标节点id"
+        },
+        "bizOrderDetailBizOrderTaskNodeName": {
+            "meaning": "业务订单明细任务节点名称",
+            "reachable": true,
+            "name": "业务订单明细任务节点名称"
+        },
+        "bizOrderDetailBizOrderTaxRt": {
+            "meaning": "业务订单明细税率",
+            "reachable": true,
+            "name": "业务订单明细税率"
+        },
+        "bizOrderDetailBizOrderTenantId": {
+            "meaning": "业务订单明细租户_guid",
+            "reachable": true,
+            "name": "业务订单明细租户_guid"
+        },
+        "bizOrderDetailBizOrderThirdPartyClass": {
+            "meaning": "业务订单明细第三方分类",
+            "reachable": true,
+            "name": "业务订单明细第三方分类"
+        },
+        "bizOrderDetailBizOrderThirdPartyId": {
+            "meaning": "业务订单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "业务订单明细第三方系统中的唯一ID"
+        },
+        "bizOrderDetailBizOrderThirdPartyName": {
+            "meaning": "业务订单明细第三方名称",
+            "reachable": true,
+            "name": "业务订单明细第三方名称"
+        },
+        "bizOrderDetailBizOrderToAuditDate": {
+            "meaning": "bizOrderDetailBizOrderToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToBeginTime": {
+            "meaning": "bizOrderDetailBizOrderToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToCreateTime": {
+            "meaning": "bizOrderDetailBizOrderToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDateExtra1": {
+            "meaning": "bizOrderDetailBizOrderToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDateExtra2": {
+            "meaning": "bizOrderDetailBizOrderToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDateExtra3": {
+            "meaning": "bizOrderDetailBizOrderToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDateExtra4": {
+            "meaning": "bizOrderDetailBizOrderToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDateExtra5": {
+            "meaning": "bizOrderDetailBizOrderToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToDeliveryDate": {
+            "meaning": "bizOrderDetailBizOrderToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToEndTime": {
+            "meaning": "bizOrderDetailBizOrderToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToReceiptDate": {
+            "meaning": "bizOrderDetailBizOrderToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderToUpdateTime": {
+            "meaning": "bizOrderDetailBizOrderToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailBizOrderTotalFeeNt": {
+            "meaning": "业务订单明细总费用(不含税)",
+            "reachable": true,
+            "name": "业务订单明细总费用"
+        },
+        "bizOrderDetailBizOrderTotalVol": {
+            "meaning": "业务订单明细总体积",
+            "reachable": true,
+            "name": "业务订单明细总体积"
+        },
+        "bizOrderDetailBizOrderTotalWithTax": {
+            "meaning": "业务订单明细总费用(含税)",
+            "reachable": true,
+            "name": "业务订单明细总费用"
+        },
+        "bizOrderDetailBizOrderTotalWt": {
+            "meaning": "业务订单明细总重量",
+            "reachable": true,
+            "name": "业务订单明细总重量"
+        },
+        "bizOrderDetailBizOrderUnitCode": {
+            "meaning": "业务订单明细单位id",
+            "reachable": true,
+            "name": "业务订单明细单位id"
+        },
+        "bizOrderDetailBizOrderUpdateTime": {
+            "meaning": "业务订单明细更新时间",
+            "reachable": true,
+            "name": "业务订单明细更新时间"
+        },
+        "bizOrderDetailBizOrderUpdater": {
+            "meaning": "业务订单明细更新人",
+            "reachable": true,
+            "name": "业务订单明细更新人"
+        },
+        "bizOrderDetailBizOrderUpdaterId": {
+            "meaning": "业务订单明细更新人ID",
+            "reachable": true,
+            "name": "业务订单明细更新人ID"
+        },
+        "bizOrderDetailBizOrderUserCode": {
+            "meaning": "业务订单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "业务订单明细智能节点的唯一编码"
+        },
+        "bizOrderDetailBizOrderVarExtra1": {
+            "meaning": "业务订单明细扩展1",
+            "reachable": true,
+            "name": "业务订单明细扩展1"
+        },
+        "bizOrderDetailBizOrderVarExtra2": {
+            "meaning": "业务订单明细扩展2",
+            "reachable": true,
+            "name": "业务订单明细扩展2"
+        },
+        "bizOrderDetailBizOrderVarExtra3": {
+            "meaning": "业务订单明细扩展3",
+            "reachable": true,
+            "name": "业务订单明细扩展3"
+        },
+        "bizOrderDetailBizOrderVarExtra4": {
+            "meaning": "业务订单明细扩展4",
+            "reachable": true,
+            "name": "业务订单明细扩展4"
+        },
+        "bizOrderDetailBizOrderVarExtra5": {
+            "meaning": "业务订单明细扩展5",
+            "reachable": true,
+            "name": "业务订单明细扩展5"
+        },
+        "bizOrderDetailBizOrderVersion": {
+            "meaning": "业务订单明细版本号",
+            "reachable": true,
+            "name": "业务订单明细版本号"
+        },
+        "bizOrderDetailBizVersion": {
+            "meaning": "业务订单明细业务自定义版本号",
+            "reachable": true,
+            "name": "业务订单明细业务自定义版本号"
+        },
+        "bizOrderDetailBriefName": {
+            "meaning": "业务订单明细简称",
+            "reachable": true,
+            "name": "业务订单明细简称"
+        },
+        "bizOrderDetailBusDivisId": {
+            "meaning": "业务订单明细事业部id",
+            "reachable": true,
+            "name": "业务订单明细事业部id"
+        },
+        "bizOrderDetailClazz": {
+            "meaning": "业务订单明细子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "业务订单明细子类"
+        },
+        "bizOrderDetailClosedReason": {
+            "meaning": "业务订单明细结案原因",
+            "reachable": true,
+            "name": "业务订单明细结案原因"
+        },
+        "bizOrderDetailClosedStatus": {
+            "meaning": "业务订单明细结案状态",
+            "reachable": true,
+            "name": "业务订单明细结案状态"
+        },
+        "bizOrderDetailComment": {
+            "meaning": "业务订单明细评论",
+            "reachable": true,
+            "name": "业务订单明细评论"
+        },
+        "bizOrderDetailCompleteQuantity": {
+            "meaning": "业务订单明细完成数量",
+            "reachable": true,
+            "name": "业务订单明细完成数量"
+        },
+        "bizOrderDetailCompleteStatus": {
+            "meaning": "业务订单明细完成状态",
+            "reachable": true,
+            "name": "业务订单明细完成状态"
+        },
+        "bizOrderDetailCostSchemeId": {
+            "meaning": "bizOrderDetailCostSchemeId",
+            "reachable": true,
+            "name": ""
+        },
+        "bizOrderDetailCreateTime": {
+            "meaning": "业务订单明细创建时间",
+            "reachable": true,
+            "name": "业务订单明细创建时间"
+        },
+        "bizOrderDetailCreator": {
+            "meaning": "业务订单明细创建人",
+            "reachable": true,
+            "name": "业务订单明细创建人"
+        },
+        "bizOrderDetailCreatorId": {
+            "meaning": "业务订单明细创建人ID",
+            "reachable": true,
+            "name": "业务订单明细创建人ID"
+        },
+        "bizOrderDetailDateExtra1": {
+            "meaning": "业务订单明细扩展时间1",
+            "reachable": true,
+            "name": "业务订单明细扩展时间1"
+        },
+        "bizOrderDetailDateExtra2": {
+            "meaning": "业务订单明细扩展时间2",
+            "reachable": true,
+            "name": "业务订单明细扩展时间2"
+        },
+        "bizOrderDetailDateExtra3": {
+            "meaning": "业务订单明细扩展时间3",
+            "reachable": true,
+            "name": "业务订单明细扩展时间3"
+        },
+        "bizOrderDetailDateExtra4": {
+            "meaning": "业务订单明细扩展时间4",
+            "reachable": true,
+            "name": "业务订单明细扩展时间4"
+        },
+        "bizOrderDetailDateExtra5": {
+            "meaning": "业务订单明细扩展时间5",
+            "reachable": true,
+            "name": "业务订单明细扩展时间5"
+        },
+        "bizOrderDetailDds": {
+            "meaning": "业务订单明细欧盟零毁林法案-dds编号",
+            "reachable": true,
+            "name": "业务订单明细欧盟零毁林法案-dds编号"
+        },
+        "bizOrderDetailDefaultType": {
+            "meaning": "业务订单明细智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "业务订单明细智能节点主类型"
+        },
+        "bizOrderDetailDeliveryDate": {
+            "meaning": "业务订单明细交货日期",
+            "reachable": true,
+            "name": "业务订单明细交货日期"
+        },
+        "bizOrderDetailDeliveryTypeId": {
+            "meaning": "业务订单明细送货类型",
+            "reachable": true,
+            "name": "业务订单明细送货类型"
+        },
+        "bizOrderDetailDescription": {
+            "meaning": "业务订单明细描述",
+            "reachable": true,
+            "name": "业务订单明细描述"
+        },
+        "bizOrderDetailEndTime": {
+            "meaning": "业务订单明细结束时间",
+            "reachable": true,
+            "name": "业务订单明细结束时间"
+        },
+        "bizOrderDetailEndTimeRequired": {
+            "meaning": "业务订单明细最后需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细最后需时"
+        },
+        "bizOrderDetailEngName": {
+            "meaning": "业务订单明细英文名称",
+            "reachable": true,
+            "name": "业务订单明细英文名称"
+        },
+        "bizOrderDetailEquipmentId": {
+            "meaning": "业务订单明细设备id",
+            "reachable": true,
+            "name": "业务订单明细设备id"
+        },
+        "bizOrderDetailExchangeRateId": {
+            "meaning": "业务订单明细币种汇率id",
+            "reachable": true,
+            "name": "业务订单明细币种汇率id"
+        },
+        "bizOrderDetailExpProcessId": {
+            "meaning": "业务订单明细经验工序id",
+            "reachable": true,
+            "name": "业务订单明细经验工序id"
+        },
+        "bizOrderDetailExpectedDate": {
+            "type": "object",
+            "meaning": "业务订单明细预计交期",
+            "reachable": true,
+            "name": "业务订单明细预计交期"
+        },
+        "bizOrderDetailExtMatBarcode": {
+            "meaning": "业务订单明细外部物料条码(BarCode)",
+            "reachable": true,
+            "name": "业务订单明细外部物料条码"
+        },
+        "bizOrderDetailExtMatCode": {
+            "meaning": "业务订单明细外部物料编码(例客户产品编码)",
+            "reachable": true,
+            "name": "业务订单明细外部物料编码"
+        },
+        "bizOrderDetailExtMatName": {
+            "meaning": "业务订单明细外部物料名称(例客户产品名称)",
+            "reachable": true,
+            "name": "业务订单明细外部物料名称"
+        },
+        "bizOrderDetailExtension": {
+            "meaning": "业务订单明细扩展数据",
+            "reachable": true,
+            "name": "业务订单明细扩展数据"
+        },
+        "bizOrderDetailExternalNo": {
+            "meaning": "业务订单明细外部单号(例客户PO，采购送货单号)",
+            "reachable": true,
+            "name": "业务订单明细外部单号"
+        },
+        "bizOrderDetailExternalState": {
+            "meaning": "业务订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "业务订单明细上流程状态位"
+        },
+        "bizOrderDetailFilterClazz": {
+            "meaning": "业务订单明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "业务订单明细冗余字段用于筛选"
+        },
+        "bizOrderDetailFlags": {
+            "meaning": "业务订单明细63位标志位",
+            "reachable": true,
+            "name": "业务订单明细63位标志位"
+        },
+        "bizOrderDetailFromAuditDate": {
+            "meaning": "bizOrderDetailFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromBeginTime": {
+            "meaning": "bizOrderDetailFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromCreateTime": {
+            "meaning": "bizOrderDetailFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDateExtra1": {
+            "meaning": "bizOrderDetailFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDateExtra2": {
+            "meaning": "bizOrderDetailFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDateExtra3": {
+            "meaning": "bizOrderDetailFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDateExtra4": {
+            "meaning": "bizOrderDetailFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDateExtra5": {
+            "meaning": "bizOrderDetailFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromDeliveryDate": {
+            "meaning": "bizOrderDetailFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromEndTime": {
+            "meaning": "bizOrderDetailFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromExpectedDate": {
+            "type": "object",
+            "meaning": "bizOrderDetailFromExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromReceiptDate": {
+            "meaning": "bizOrderDetailFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFromUpdateTime": {
+            "meaning": "bizOrderDetailFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailFscType": {
+            "meaning": "业务订单明细FSC声明",
+            "reachable": true,
+            "name": "业务订单明细FSC声明"
+        },
+        "bizOrderDetailGenerativePeople": {
+            "meaning": "业务订单明细下发人",
+            "reachable": true,
+            "name": "业务订单明细下发人"
+        },
+        "bizOrderDetailGenerativeState": {
+            "meaning": "业务订单明细下发状态",
+            "reachable": true,
+            "name": "业务订单明细下发状态"
+        },
+        "bizOrderDetailGiftQty": {
+            "meaning": "业务订单明细赠品数量",
+            "reachable": true,
+            "name": "业务订单明细赠品数量"
+        },
+        "bizOrderDetailGroovyScript": {
+            "meaning": "业务订单明细groovy脚本",
+            "reachable": true,
+            "name": "业务订单明细groovy脚本"
+        },
+        "bizOrderDetailGropeCode": {
+            "meaning": "业务订单明细搜索码",
+            "reachable": true,
+            "name": "业务订单明细搜索码"
+        },
+        "bizOrderDetailId": {
+            "meaning": "业务订单明细主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "业务订单明细主键ID"
+        },
+        "bizOrderDetailInUsed": {
+            "meaning": "业务订单明细是否被使用",
+            "reachable": true,
+            "name": "业务订单明细是否被使用"
+        },
+        "bizOrderDetailInvTypeTaxRateId": {
+            "meaning": "业务订单明细发票税率id",
+            "reachable": true,
+            "name": "业务订单明细发票税率id"
+        },
+        "bizOrderDetailInvoRecIssQuantity": {
+            "meaning": "业务订单明细开/收票数量",
+            "reachable": true,
+            "name": "业务订单明细开/收票数量"
+        },
+        "bizOrderDetailInvoRecIssStatus": {
+            "meaning": "业务订单明细开/收票状态",
+            "reachable": true,
+            "name": "业务订单明细开/收票状态"
+        },
+        "bizOrderDetailIsBanned": {
+            "meaning": "业务订单明细是否被禁用",
+            "reachable": true,
+            "name": "业务订单明细是否被禁用"
+        },
+        "bizOrderDetailIsDeleted": {
+            "meaning": "业务订单明细是否被删除",
+            "reachable": true,
+            "name": "业务订单明细是否被删除"
+        },
+        "bizOrderDetailIsLeaf": {
+            "meaning": "业务订单明细是否叶子节点",
+            "reachable": true,
+            "name": "业务订单明细是否叶子节点"
+        },
+        "bizOrderDetailIsMainFlow": {
+            "meaning": "业务订单明细是否是主流程",
+            "reachable": true,
+            "name": "业务订单明细是否是主流程"
+        },
+        "bizOrderDetailIsManualModificationDate": {
+            "meaning": "业务订单明细是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "业务订单明细是否手动修改计划生产时间"
+        },
+        "bizOrderDetailIsolation": {
+            "meaning": "业务订单明细智能节点数据隔离标识",
+            "reachable": true,
+            "name": "业务订单明细智能节点数据隔离标识"
+        },
+        "bizOrderDetailJsScript": {
+            "meaning": "业务订单明细js脚本",
+            "reachable": true,
+            "name": "业务订单明细js脚本"
+        },
+        "bizOrderDetailLastWorkCode": {
+            "meaning": "业务订单明细产品最新工单号",
+            "reachable": true,
+            "name": "业务订单明细产品最新工单号"
+        },
+        "bizOrderDetailLocUnitPrice": {
+            "meaning": "业务订单明细本币单价(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "业务订单明细本币单价"
+        },
+        "bizOrderDetailLocalAmount": {
+            "meaning": "业务订单明细本币金额(根据币种，外币才显示)，外币不含税",
+            "reachable": true,
+            "name": "业务订单明细本币金额"
+        },
+        "bizOrderDetailLossQty": {
+            "meaning": "业务订单明细损耗",
+            "reachable": true,
+            "name": "业务订单明细损耗"
+        },
+        "bizOrderDetailMatCat": {
+            "meaning": "业务订单明细物料分类ID",
+            "reachable": true,
+            "name": "业务订单明细物料分类ID"
+        },
+        "bizOrderDetailMaterialId": {
+            "meaning": "业务订单明细物料id",
+            "reachable": true,
+            "name": "业务订单明细物料id"
+        },
+        "bizOrderDetailName": {
+            "meaning": "业务订单明细智能节点名",
+            "reachable": true,
+            "name": "业务订单明细智能节点名"
+        },
+        "bizOrderDetailNameCodeSearch": {
+            "meaning": "业务订单明细name、user_code模糊搜索",
+            "reachable": true,
+            "name": "业务订单明细name、user_code模糊搜索"
+        },
+        "bizOrderDetailNumberExtra1": {
+            "meaning": "业务订单明细扩展数量1",
+            "reachable": true,
+            "name": "业务订单明细扩展数量1"
+        },
+        "bizOrderDetailNumberExtra2": {
+            "meaning": "业务订单明细扩展数量2",
+            "reachable": true,
+            "name": "业务订单明细扩展数量2"
+        },
+        "bizOrderDetailNumberExtra3": {
+            "meaning": "业务订单明细扩展数量3",
+            "reachable": true,
+            "name": "业务订单明细扩展数量3"
+        },
+        "bizOrderDetailNumberExtra4": {
+            "meaning": "业务订单明细扩展数量4",
+            "reachable": true,
+            "name": "业务订单明细扩展数量4"
+        },
+        "bizOrderDetailNumberExtra5": {
+            "meaning": "业务订单明细扩展数量5",
+            "reachable": true,
+            "name": "业务订单明细扩展数量5"
+        },
+        "bizOrderDetailParentId": {
+            "meaning": "业务订单明细父节点ID",
+            "reachable": true,
+            "name": "业务订单明细父节点ID"
+        },
+        "bizOrderDetailPlannedOutputQuantity": {
+            "meaning": "业务订单明细计划产出数量",
+            "reachable": true,
+            "name": "业务订单明细计划产出数量"
+        },
+        "bizOrderDetailPlannedTimeRequired": {
+            "meaning": "业务订单明细计划需时(小时)",
+            "reachable": true,
+            "name": "业务订单明细计划需时"
+        },
+        "bizOrderDetailPrdOApyGiftQuantity": {
+            "meaning": "业务订单明细成品出库申请赠品完成数量",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请赠品完成数量"
+        },
+        "bizOrderDetailPrdOApyGiftStatus": {
+            "meaning": "业务订单明细成品出库申请赠品完成状态",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请赠品完成状态"
+        },
+        "bizOrderDetailPrdOApyQuantity": {
+            "meaning": "业务订单明细成品出库申请数量",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请数量"
+        },
+        "bizOrderDetailPrdOApySpareQuantity": {
+            "meaning": "业务订单明细成品出库申请备品完成数量",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请备品完成数量"
+        },
+        "bizOrderDetailPrdOApySpareStatus": {
+            "meaning": "业务订单明细成品出库申请备品完成状态",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请备品完成状态"
+        },
+        "bizOrderDetailPrdOApyStatus": {
+            "meaning": "业务订单明细成品出库申请完成状态",
+            "reachable": true,
+            "name": "业务订单明细成品出库申请完成状态"
+        },
+        "bizOrderDetailPrdRetQuantity": {
+            "meaning": "业务订单明细成品退货数量",
+            "reachable": true,
+            "name": "业务订单明细成品退货数量"
+        },
+        "bizOrderDetailPrdRetSpareQuantity": {
+            "meaning": "业务订单明细成品备品退货数量",
+            "reachable": true,
+            "name": "业务订单明细成品备品退货数量"
+        },
+        "bizOrderDetailPrdRetSpareStatus": {
+            "meaning": "业务订单明细成品退货备品完成状态",
+            "reachable": true,
+            "name": "业务订单明细成品退货备品完成状态"
+        },
+        "bizOrderDetailPrdRetStatus": {
+            "meaning": "业务订单明细成品退货完成状态",
+            "reachable": true,
+            "name": "业务订单明细成品退货完成状态"
+        },
+        "bizOrderDetailPrintTimes": {
+            "meaning": "业务订单明细打印次数",
+            "reachable": true,
+            "name": "业务订单明细打印次数"
+        },
+        "bizOrderDetailPriority": {
+            "meaning": "业务订单明细优先级",
+            "reachable": true,
+            "name": "业务订单明细优先级"
+        },
+        "bizOrderDetailProCode": {
+            "meaning": "业务订单明细项目编码",
+            "reachable": true,
+            "name": "业务订单明细项目编码"
+        },
+        "bizOrderDetailProName": {
+            "meaning": "业务订单明细项目名称",
+            "reachable": true,
+            "name": "业务订单明细项目名称"
+        },
+        "bizOrderDetailProcessInstanceId": {
+            "meaning": "业务订单明细流程实例ID",
+            "reachable": true,
+            "name": "业务订单明细流程实例ID"
+        },
+        "bizOrderDetailProdCntrId": {
+            "meaning": "业务订单明细生产中心id",
+            "reachable": true,
+            "name": "业务订单明细生产中心id"
+        },
+        "bizOrderDetailProductionProcessesTypeId": {
+            "meaning": "业务订单明细工序类型ID",
+            "reachable": true,
+            "name": "业务订单明细工序类型ID"
+        },
+        "bizOrderDetailProductionShiftId": {
+            "meaning": "业务订单明细生产班次ID",
+            "reachable": true,
+            "name": "业务订单明细生产班次ID"
+        },
+        "bizOrderDetailProp": {
+            "meaning": "业务订单明细比例",
+            "reachable": true,
+            "name": "业务订单明细比例"
+        },
+        "bizOrderDetailPurchasedQuantity": {
+            "meaning": "业务订单明细已采购数量（采购申请反写）",
+            "reachable": true,
+            "name": "业务订单明细已采购数量"
+        },
+        "bizOrderDetailPurchasedStatus": {
+            "meaning": "业务订单明细已采购状态（采购申请反写）",
+            "reachable": true,
+            "name": "业务订单明细已采购状态"
+        },
+        "bizOrderDetailQuantity": {
+            "meaning": "业务订单明细任务数量",
+            "reachable": true,
+            "name": "业务订单明细任务数量"
+        },
+        "bizOrderDetailQuoteQty": {
+            "meaning": "业务订单明细报价数量",
+            "reachable": true,
+            "name": "业务订单明细报价数量"
+        },
+        "bizOrderDetailRecPaySettleQuantity": {
+            "meaning": "业务订单明细应收/付结算数量",
+            "reachable": true,
+            "name": "业务订单明细应收/付结算数量"
+        },
+        "bizOrderDetailRecPaySettleStatus": {
+            "meaning": "业务订单明细应收/付结算状态",
+            "reachable": true,
+            "name": "业务订单明细应收/付结算状态"
+        },
+        "bizOrderDetailReceiptDate": {
+            "meaning": "业务订单明细单据日期",
+            "reachable": true,
+            "name": "业务订单明细单据日期"
+        },
+        "bizOrderDetailReceiptType": {
+            "meaning": "业务订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "业务订单明细单据类型"
+        },
+        "bizOrderDetailRelatedTasksId": {
+            "meaning": "业务订单明细关联任务id",
+            "reachable": true,
+            "name": "业务订单明细关联任务id"
+        },
+        "bizOrderDetailReorderCode": {
+            "meaning": "业务订单明细翻单订单号",
+            "reachable": true,
+            "name": "业务订单明细翻单订单号"
+        },
+        "bizOrderDetailSerialNumber": {
+            "meaning": "业务订单明细顺序号",
+            "reachable": true,
+            "name": "业务订单明细顺序号"
+        },
+        "bizOrderDetailSettleAmount": {
+            "meaning": "业务订单明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "业务订单明细结算金额"
+        },
+        "bizOrderDetailSettlePrice": {
+            "meaning": "业务订单明细结算单价（默认与含税单价相等），写入库存价格字段",
+            "reachable": true,
+            "name": "业务订单明细结算单价"
+        },
+        "bizOrderDetailSettleTotalAmount": {
+            "meaning": "业务订单明细结算金额（默认与含税总金额相等），写入库存价格字段",
+            "reachable": true,
+            "name": "业务订单明细结算金额"
+        },
+        "bizOrderDetailSource": {
+            "meaning": "业务订单明细源节点id(-查询入参-)",
+            "reachable": true,
+            "name": "业务订单明细源节点id"
+        },
+        "bizOrderDetailSourceType": {
+            "meaning": "业务订单明细来源类型",
+            "reachable": true,
+            "name": "业务订单明细来源类型"
+        },
+        "bizOrderDetailSpareQty": {
+            "meaning": "业务订单明细备用数量",
+            "reachable": true,
+            "name": "业务订单明细备用数量"
+        },
+        "bizOrderDetailState": {
+            "meaning": "业务订单明细通用状态",
+            "reachable": true,
+            "name": "业务订单明细通用状态"
+        },
+        "bizOrderDetailStatesInboundOrders": {
+            "meaning": "业务订单明细订单入库状态",
+            "reachable": true,
+            "name": "业务订单明细订单入库状态"
+        },
+        "bizOrderDetailStockQty": {
+            "meaning": "业务订单明细备库存数量",
+            "reachable": true,
+            "name": "业务订单明细备库存数量"
+        },
+        "bizOrderDetailSumQty": {
+            "meaning": "业务订单明细总数量",
+            "reachable": true,
+            "name": "业务订单明细总数量"
+        },
+        "bizOrderDetailSystemCode": {
+            "meaning": "业务订单明细系统编码",
+            "reachable": true,
+            "name": "业务订单明细系统编码"
+        },
+        "bizOrderDetailTarget": {
+            "meaning": "业务订单明细目标节点id(-查询入参-)",
+            "reachable": true,
+            "name": "业务订单明细目标节点id"
+        },
+        "bizOrderDetailTaskNodeName": {
+            "meaning": "业务订单明细任务节点名称",
+            "reachable": true,
+            "name": "业务订单明细任务节点名称"
+        },
+        "bizOrderDetailTaxExclPrice": {
+            "meaning": "业务订单明细不含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "业务订单明细不含税报价单价"
+        },
+        "bizOrderDetailTaxExclTotal": {
+            "meaning": "业务订单明细不含税总金额",
+            "reachable": true,
+            "name": "业务订单明细不含税总金额"
+        },
+        "bizOrderDetailTaxExclUnitPrice": {
+            "meaning": "业务订单明细不含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "业务订单明细不含税单价"
+        },
+        "bizOrderDetailTaxInclPrice": {
+            "meaning": "业务订单明细含税报价单价(吨价，平方价，千平方英寸)",
+            "reachable": true,
+            "name": "业务订单明细含税报价单价"
+        },
+        "bizOrderDetailTaxInclTotal": {
+            "meaning": "业务订单明细含税总金额",
+            "reachable": true,
+            "name": "业务订单明细含税总金额"
+        },
+        "bizOrderDetailTenantId": {
+            "meaning": "业务订单明细租户ID",
+            "reachable": true,
+            "name": "业务订单明细租户ID"
+        },
+        "bizOrderDetailTerminalCode": {
+            "meaning": "业务订单明细终端编码",
+            "reachable": true,
+            "name": "业务订单明细终端编码"
+        },
+        "bizOrderDetailTerminalCustId": {
+            "meaning": "业务订单明细终端客户id",
+            "reachable": true,
+            "name": "业务订单明细终端客户id"
+        },
+        "bizOrderDetailThirdPartyClass": {
+            "meaning": "业务订单明细第三方分类",
+            "reachable": true,
+            "name": "业务订单明细第三方分类"
+        },
+        "bizOrderDetailThirdPartyId": {
+            "meaning": "业务订单明细第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "业务订单明细第三方系统中的唯一ID"
+        },
+        "bizOrderDetailThirdPartyName": {
+            "meaning": "业务订单明细第三方名称",
+            "reachable": true,
+            "name": "业务订单明细第三方名称"
+        },
+        "bizOrderDetailToAuditDate": {
+            "meaning": "bizOrderDetailToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToBeginTime": {
+            "meaning": "bizOrderDetailToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToCreateTime": {
+            "meaning": "bizOrderDetailToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDateExtra1": {
+            "meaning": "bizOrderDetailToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDateExtra2": {
+            "meaning": "bizOrderDetailToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDateExtra3": {
+            "meaning": "bizOrderDetailToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDateExtra4": {
+            "meaning": "bizOrderDetailToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDateExtra5": {
+            "meaning": "bizOrderDetailToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToDeliveryDate": {
+            "meaning": "bizOrderDetailToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToEndTime": {
+            "meaning": "bizOrderDetailToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToExpectedDate": {
+            "type": "object",
+            "meaning": "bizOrderDetailToExpectedDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToReceiptDate": {
+            "meaning": "bizOrderDetailToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailToUpdateTime": {
+            "meaning": "bizOrderDetailToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "bizOrderDetailTotalInboundOrders": {
+            "meaning": "业务订单明细订单累计入库数量",
+            "reachable": true,
+            "name": "业务订单明细订单累计入库数量"
+        },
+        "bizOrderDetailUnitCode": {
+            "meaning": "业务订单明细单位id",
+            "reachable": true,
+            "name": "业务订单明细单位id"
+        },
+        "bizOrderDetailUnitPriceTax": {
+            "meaning": "业务订单明细含税单价(默认隐藏，根据计费方案转换计算得出)",
+            "reachable": true,
+            "name": "业务订单明细含税单价"
+        },
+        "bizOrderDetailUpdateTime": {
+            "meaning": "业务订单明细更新时间",
+            "reachable": true,
+            "name": "业务订单明细更新时间"
+        },
+        "bizOrderDetailUpdater": {
+            "meaning": "业务订单明细更新人",
+            "reachable": true,
+            "name": "业务订单明细更新人"
+        },
+        "bizOrderDetailUpdaterId": {
+            "meaning": "业务订单明细更新人ID",
+            "reachable": true,
+            "name": "业务订单明细更新人ID"
+        },
+        "bizOrderDetailUsedQty": {
+            "meaning": "业务订单明细使用库存数量",
+            "reachable": true,
+            "name": "业务订单明细使用库存数量"
+        },
+        "bizOrderDetailUserCode": {
+            "meaning": "业务订单明细智能节点的唯一编码",
+            "reachable": true,
+            "name": "业务订单明细智能节点的唯一编码"
+        },
+        "bizOrderDetailVarExtra1": {
+            "meaning": "业务订单明细扩展1",
+            "reachable": true,
+            "name": "业务订单明细扩展1"
+        },
+        "bizOrderDetailVarExtra2": {
+            "meaning": "业务订单明细扩展2",
+            "reachable": true,
+            "name": "业务订单明细扩展2"
+        },
+        "bizOrderDetailVarExtra3": {
+            "meaning": "业务订单明细扩展3",
+            "reachable": true,
+            "name": "业务订单明细扩展3"
+        },
+        "bizOrderDetailVarExtra4": {
+            "meaning": "业务订单明细扩展4",
+            "reachable": true,
+            "name": "业务订单明细扩展4"
+        },
+        "bizOrderDetailVarExtra5": {
+            "meaning": "业务订单明细扩展5",
+            "reachable": true,
+            "name": "业务订单明细扩展5"
+        },
+        "bizOrderDetailVersion": {
+            "meaning": "业务订单明细版本号",
+            "reachable": true,
+            "name": "业务订单明细版本号"
+        },
+        "bizOrderDetailWorkOrderQuantity": {
+            "meaning": "业务订单明细已开单数量",
+            "reachable": true,
+            "name": "业务订单明细已开单数量"
+        },
+        "bizOrderDetailWorkOrderStatus": {
+            "meaning": "业务订单明细已开单状态",
+            "reachable": true,
+            "name": "业务订单明细已开单状态"
+        }
+    }
+}

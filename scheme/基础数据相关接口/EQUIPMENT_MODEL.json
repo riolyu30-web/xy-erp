@@ -1,0 +1,531 @@
+{
+    "api_name": "/equ-model/findList",
+    "table_name": "设备型号",
+    "request": {
+        "equModelClazz": "EQUIPMENT_MODEL"
+    },
+    "mainTabClazz": "EQUIPMENT_MODEL",
+    "response": {
+        "equModelApplicationId": {
+            "meaning": "设备型号应用ID",
+            "reachable": true,
+            "name": "设备型号应用ID"
+        },
+        "equModelAuditDate": {
+            "meaning": "设备型号审核时间",
+            "reachable": true,
+            "name": "设备型号审核时间"
+        },
+        "equModelAuditStatus": {
+            "meaning": "设备型号审核状态",
+            "reachable": true,
+            "name": "设备型号审核状态"
+        },
+        "equModelBizVersion": {
+            "meaning": "设备型号业务自定义版本号",
+            "reachable": true,
+            "name": "设备型号业务自定义版本号"
+        },
+        "equModelBriefName": {
+            "meaning": "设备型号简称",
+            "reachable": true,
+            "name": "设备型号简称"
+        },
+        "equModelBusDivId": {
+            "meaning": "equModelBusDivId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelBusDivisId": {
+            "meaning": "设备型号事业部id",
+            "reachable": true,
+            "name": "设备型号事业部id"
+        },
+        "equModelClazz": {
+            "meaning": "设备型号子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "设备型号子类"
+        },
+        "equModelCleaningTime": {
+            "meaning": "设备型号清理时间(分钟)",
+            "reachable": true,
+            "name": "设备型号清理时间"
+        },
+        "equModelComment": {
+            "meaning": "设备型号评论",
+            "reachable": true,
+            "name": "设备型号评论"
+        },
+        "equModelCreateTime": {
+            "meaning": "设备型号创建时间",
+            "reachable": true,
+            "name": "设备型号创建时间"
+        },
+        "equModelCreator": {
+            "meaning": "设备型号创建人",
+            "reachable": true,
+            "name": "设备型号创建人"
+        },
+        "equModelCreatorId": {
+            "meaning": "设备型号创建人ID",
+            "reachable": true,
+            "name": "设备型号创建人ID"
+        },
+        "equModelDateExtra1": {
+            "meaning": "设备型号扩展时间1",
+            "reachable": true,
+            "name": "设备型号扩展时间1"
+        },
+        "equModelDateExtra2": {
+            "meaning": "设备型号扩展时间2",
+            "reachable": true,
+            "name": "设备型号扩展时间2"
+        },
+        "equModelDateExtra3": {
+            "meaning": "设备型号扩展时间3",
+            "reachable": true,
+            "name": "设备型号扩展时间3"
+        },
+        "equModelDateExtra4": {
+            "meaning": "设备型号扩展时间4",
+            "reachable": true,
+            "name": "设备型号扩展时间4"
+        },
+        "equModelDateExtra5": {
+            "meaning": "设备型号扩展时间5",
+            "reachable": true,
+            "name": "设备型号扩展时间5"
+        },
+        "equModelDeclType": {
+            "meaning": "equModelDeclType",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelDefaultStatisticsSpecificationTypeId": {
+            "meaning": "equModelDefaultStatisticsSpecificationTypeId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelDefaultType": {
+            "meaning": "设备型号智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "设备型号智能节点主类型"
+        },
+        "equModelDescription": {
+            "meaning": "设备型号描述",
+            "reachable": true,
+            "name": "设备型号描述"
+        },
+        "equModelEngName": {
+            "meaning": "设备型号英文名称",
+            "reachable": true,
+            "name": "设备型号英文名称"
+        },
+        "equModelExtension": {
+            "meaning": "设备型号扩展数据",
+            "reachable": true,
+            "name": "设备型号扩展数据"
+        },
+        "equModelExternalState": {
+            "meaning": "设备型号上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "设备型号上流程状态位"
+        },
+        "equModelFinClass": {
+            "meaning": "equModelFinClass",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelFinGenLedClass": {
+            "meaning": "equModelFinGenLedClass",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelFinGenLedCode": {
+            "meaning": "equModelFinGenLedCode",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelFinancialAccount": {
+            "meaning": "equModelFinancialAccount",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelFlags": {
+            "meaning": "设备型号63位标志位",
+            "reachable": true,
+            "name": "设备型号63位标志位"
+        },
+        "equModelFromAuditDate": {
+            "meaning": "equModelFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromCreateTime": {
+            "meaning": "equModelFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromDateExtra1": {
+            "meaning": "equModelFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromDateExtra2": {
+            "meaning": "equModelFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromDateExtra3": {
+            "meaning": "equModelFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromDateExtra4": {
+            "meaning": "equModelFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromDateExtra5": {
+            "meaning": "equModelFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFromUpdateTime": {
+            "meaning": "equModelFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelFscDeclarationId": {
+            "meaning": "equModelFscDeclarationId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelFscId": {
+            "meaning": "equModelFscId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelGroovyScript": {
+            "meaning": "设备型号groovy脚本",
+            "reachable": true,
+            "name": "设备型号groovy脚本"
+        },
+        "equModelGropeCode": {
+            "meaning": "设备型号搜索码",
+            "reachable": true,
+            "name": "设备型号搜索码"
+        },
+        "equModelId": {
+            "meaning": "设备型号PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "设备型号PK"
+        },
+        "equModelInUsed": {
+            "meaning": "设备型号是否被使用",
+            "reachable": true,
+            "name": "设备型号是否被使用"
+        },
+        "equModelInactiveCallDays": {
+            "meaning": "equModelInactiveCallDays",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelInactiveDays": {
+            "meaning": "equModelInactiveDays",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelIsBanned": {
+            "meaning": "设备型号是否被禁用",
+            "reachable": true,
+            "name": "设备型号是否被禁用"
+        },
+        "equModelIsDeleted": {
+            "meaning": "设备型号是否被删除",
+            "reachable": true,
+            "name": "设备型号是否被删除"
+        },
+        "equModelIsMainFlow": {
+            "meaning": "设备型号是否是主流程",
+            "reachable": true,
+            "name": "设备型号是否是主流程"
+        },
+        "equModelIsMatClassification": {
+            "meaning": "equModelIsMatClassification",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelIsolation": {
+            "meaning": "设备型号智能节点数据隔离标识",
+            "reachable": true,
+            "name": "设备型号智能节点数据隔离标识"
+        },
+        "equModelJsScript": {
+            "meaning": "设备型号js脚本",
+            "reachable": true,
+            "name": "设备型号js脚本"
+        },
+        "equModelMaxInventory": {
+            "meaning": "equModelMaxInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelMinInventory": {
+            "meaning": "equModelMinInventory",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelName": {
+            "meaning": "设备型号智能节点名",
+            "reachable": true,
+            "name": "设备型号智能节点名"
+        },
+        "equModelNameCodeSearch": {
+            "meaning": "设备型号name、user_code模糊搜索",
+            "reachable": true,
+            "name": "设备型号name、user_code模糊搜索"
+        },
+        "equModelNumberExtra1": {
+            "meaning": "设备型号扩展数量1",
+            "reachable": true,
+            "name": "设备型号扩展数量1"
+        },
+        "equModelNumberExtra2": {
+            "meaning": "设备型号扩展数量2",
+            "reachable": true,
+            "name": "设备型号扩展数量2"
+        },
+        "equModelNumberExtra3": {
+            "meaning": "设备型号扩展数量3",
+            "reachable": true,
+            "name": "设备型号扩展数量3"
+        },
+        "equModelNumberExtra4": {
+            "meaning": "设备型号扩展数量4",
+            "reachable": true,
+            "name": "设备型号扩展数量4"
+        },
+        "equModelNumberExtra5": {
+            "meaning": "设备型号扩展数量5",
+            "reachable": true,
+            "name": "设备型号扩展数量5"
+        },
+        "equModelOrigin": {
+            "meaning": "equModelOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelOverPurchasePercent": {
+            "meaning": "equModelOverPurchasePercent",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelParentId": {
+            "meaning": "设备型号父节点ID",
+            "reachable": true,
+            "name": "设备型号父节点ID"
+        },
+        "equModelPlaceOfOrigin": {
+            "meaning": "equModelPlaceOfOrigin",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelPreparationTime": {
+            "meaning": "设备型号准备时间(分钟)",
+            "reachable": true,
+            "name": "设备型号准备时间"
+        },
+        "equModelProcessInstanceId": {
+            "meaning": "设备型号流程实例ID",
+            "reachable": true,
+            "name": "设备型号流程实例ID"
+        },
+        "equModelProductGroup": {
+            "meaning": "equModelProductGroup",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelPurCycle": {
+            "meaning": "equModelPurCycle",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelPurMatCont": {
+            "meaning": "equModelPurMatCont",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelSearchCode": {
+            "meaning": "equModelSearchCode",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelSerialNumber": {
+            "meaning": "设备型号顺序号",
+            "reachable": true,
+            "name": "设备型号顺序号"
+        },
+        "equModelShelfLife": {
+            "meaning": "equModelShelfLife",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelStandardCostsIncludingTax": {
+            "meaning": "equModelStandardCostsIncludingTax",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelStandardCostsWithoutTax": {
+            "meaning": "equModelStandardCostsWithoutTax",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelStartupFee": {
+            "meaning": "设备型号开机费",
+            "reachable": true,
+            "name": "设备型号开机费"
+        },
+        "equModelState": {
+            "meaning": "设备型号通用状态",
+            "reachable": true,
+            "name": "设备型号通用状态"
+        },
+        "equModelSystemCode": {
+            "meaning": "设备型号系统编码",
+            "reachable": true,
+            "name": "设备型号系统编码"
+        },
+        "equModelTaskNodeName": {
+            "meaning": "设备型号任务节点名称",
+            "reachable": true,
+            "name": "设备型号任务节点名称"
+        },
+        "equModelTenantId": {
+            "meaning": "equModelTenantId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelThirdPartyClass": {
+            "meaning": "设备型号第三方分类",
+            "reachable": true,
+            "name": "设备型号第三方分类"
+        },
+        "equModelThirdPartyId": {
+            "meaning": "设备型号第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "设备型号第三方系统中的唯一ID"
+        },
+        "equModelThirdPartyName": {
+            "meaning": "设备型号第三方名称",
+            "reachable": true,
+            "name": "设备型号第三方名称"
+        },
+        "equModelToAuditDate": {
+            "meaning": "equModelToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToCreateTime": {
+            "meaning": "equModelToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToDateExtra1": {
+            "meaning": "equModelToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToDateExtra2": {
+            "meaning": "equModelToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToDateExtra3": {
+            "meaning": "equModelToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToDateExtra4": {
+            "meaning": "equModelToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToDateExtra5": {
+            "meaning": "equModelToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelToUpdateTime": {
+            "meaning": "equModelToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "equModelUpdateTime": {
+            "meaning": "设备型号更新时间",
+            "reachable": true,
+            "name": "设备型号更新时间"
+        },
+        "equModelUpdater": {
+            "meaning": "设备型号更新人",
+            "reachable": true,
+            "name": "设备型号更新人"
+        },
+        "equModelUpdaterId": {
+            "meaning": "设备型号更新人ID",
+            "reachable": true,
+            "name": "设备型号更新人ID"
+        },
+        "equModelUserCode": {
+            "meaning": "设备型号智能节点的唯一编码",
+            "reachable": true,
+            "name": "设备型号智能节点的唯一编码"
+        },
+        "equModelVarExtra1": {
+            "meaning": "设备型号扩展1",
+            "reachable": true,
+            "name": "设备型号扩展1"
+        },
+        "equModelVarExtra2": {
+            "meaning": "设备型号扩展2",
+            "reachable": true,
+            "name": "设备型号扩展2"
+        },
+        "equModelVarExtra3": {
+            "meaning": "设备型号扩展3",
+            "reachable": true,
+            "name": "设备型号扩展3"
+        },
+        "equModelVarExtra4": {
+            "meaning": "设备型号扩展4",
+            "reachable": true,
+            "name": "设备型号扩展4"
+        },
+        "equModelVarExtra5": {
+            "meaning": "设备型号扩展5",
+            "reachable": true,
+            "name": "设备型号扩展5"
+        },
+        "equModelVersion": {
+            "meaning": "设备型号版本号",
+            "reachable": true,
+            "name": "设备型号版本号"
+        },
+        "equModelWarehouseSpaceId": {
+            "meaning": "equModelWarehouseSpaceId",
+            "reachable": true,
+            "name": ""
+        },
+        "equModelWeeklyTemplateId": {
+            "meaning": "设备型号周模板_id",
+            "reachable": true,
+            "name": "设备型号周模板_id"
+        },
+        "equModelYieldRate": {
+            "meaning": "设备型号良品率",
+            "reachable": true,
+            "name": "设备型号良品率"
+        }
+    }
+}

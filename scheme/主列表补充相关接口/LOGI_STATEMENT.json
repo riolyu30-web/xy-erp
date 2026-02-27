@@ -1,0 +1,661 @@
+{
+    "api_name": "/logi-statement/findList",
+    "table_name": "物流商对账单",
+    "request": {
+        "logiStatementClazz": "LOGI_STATEMENT"
+    },
+    "mainTabClazz": "LOGI_STATEMENT",
+    "response": {
+        "logiStatementActualTimeRequired": {
+            "meaning": "物流商对账单实际需时(小时)",
+            "reachable": false,
+            "name": "物流商对账单实际需时"
+        },
+        "logiStatementAdjustmentTimeRequired": {
+            "meaning": "物流商对账单调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "物流商对账单调整需时"
+        },
+        "logiStatementApplicationId": {
+            "meaning": "物流商对账单应用ID",
+            "reachable": false,
+            "name": "物流商对账单应用ID"
+        },
+        "logiStatementAuditDate": {
+            "meaning": "物流商对账单审核时间",
+            "reachable": false,
+            "name": "物流商对账单审核时间"
+        },
+        "logiStatementAuditStatus": {
+            "meaning": "物流商对账单审核状态",
+            "reachable": false,
+            "name": "物流商对账单审核状态"
+        },
+        "logiStatementAvailableScheduleId": {
+            "meaning": "物流商对账单可用日程id",
+            "reachable": false,
+            "name": "物流商对账单可用日程id"
+        },
+        "logiStatementBeginTime": {
+            "meaning": "物流商对账单开始时间",
+            "reachable": false,
+            "name": "物流商对账单开始时间"
+        },
+        "logiStatementBizVersion": {
+            "meaning": "物流商对账单业务自定义版本号",
+            "reachable": false,
+            "name": "物流商对账单业务自定义版本号"
+        },
+        "logiStatementBriefName": {
+            "meaning": "物流商对账单简称",
+            "reachable": false,
+            "name": "物流商对账单简称"
+        },
+        "logiStatementBusDivisId": {
+            "meaning": "物流商对账单事业部id",
+            "reachable": false,
+            "name": "物流商对账单事业部id"
+        },
+        "logiStatementClazz": {
+            "meaning": "物流商对账单子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "物流商对账单子类"
+        },
+        "logiStatementClosedReason": {
+            "meaning": "物流商对账单结案原因",
+            "reachable": false,
+            "name": "物流商对账单结案原因"
+        },
+        "logiStatementClosedStatus": {
+            "meaning": "物流商对账单结案状态",
+            "reachable": false,
+            "name": "物流商对账单结案状态"
+        },
+        "logiStatementComment": {
+            "meaning": "物流商对账单评论",
+            "reachable": false,
+            "name": "物流商对账单评论"
+        },
+        "logiStatementCompleteQuantity": {
+            "meaning": "物流商对账单完成数量",
+            "reachable": false,
+            "name": "物流商对账单完成数量"
+        },
+        "logiStatementCompleteStatus": {
+            "meaning": "物流商对账单完成状态",
+            "reachable": false,
+            "name": "物流商对账单完成状态"
+        },
+        "logiStatementCreateTime": {
+            "meaning": "物流商对账单创建时间",
+            "reachable": false,
+            "name": "物流商对账单创建时间"
+        },
+        "logiStatementCreator": {
+            "meaning": "物流商对账单创建人",
+            "reachable": false,
+            "name": "物流商对账单创建人"
+        },
+        "logiStatementCreatorId": {
+            "meaning": "物流商对账单创建人ID",
+            "reachable": false,
+            "name": "物流商对账单创建人ID"
+        },
+        "logiStatementCurrency": {
+            "meaning": "物流商对账单币种",
+            "reachable": false,
+            "name": "物流商对账单币种"
+        },
+        "logiStatementDateExtra1": {
+            "meaning": "物流商对账单扩展时间1",
+            "reachable": false,
+            "name": "物流商对账单扩展时间1"
+        },
+        "logiStatementDateExtra2": {
+            "meaning": "物流商对账单扩展时间2",
+            "reachable": false,
+            "name": "物流商对账单扩展时间2"
+        },
+        "logiStatementDateExtra3": {
+            "meaning": "物流商对账单扩展时间3",
+            "reachable": false,
+            "name": "物流商对账单扩展时间3"
+        },
+        "logiStatementDateExtra4": {
+            "meaning": "物流商对账单扩展时间4",
+            "reachable": false,
+            "name": "物流商对账单扩展时间4"
+        },
+        "logiStatementDateExtra5": {
+            "meaning": "物流商对账单扩展时间5",
+            "reachable": false,
+            "name": "物流商对账单扩展时间5"
+        },
+        "logiStatementDefaultType": {
+            "meaning": "物流商对账单智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "物流商对账单智能节点主类型"
+        },
+        "logiStatementDeliveryDate": {
+            "meaning": "物流商对账单交货日期",
+            "reachable": false,
+            "name": "物流商对账单交货日期"
+        },
+        "logiStatementDescription": {
+            "meaning": "物流商对账单描述",
+            "reachable": false,
+            "name": "物流商对账单描述"
+        },
+        "logiStatementEndTime": {
+            "meaning": "物流商对账单结束时间",
+            "reachable": false,
+            "name": "物流商对账单结束时间"
+        },
+        "logiStatementEndTimeRequired": {
+            "meaning": "物流商对账单最后需时(小时)",
+            "reachable": false,
+            "name": "物流商对账单最后需时"
+        },
+        "logiStatementEngName": {
+            "meaning": "物流商对账单英文名称",
+            "reachable": false,
+            "name": "物流商对账单英文名称"
+        },
+        "logiStatementEquipmentId": {
+            "meaning": "物流商对账单设备id",
+            "reachable": false,
+            "name": "物流商对账单设备id"
+        },
+        "logiStatementExchangeRateId": {
+            "meaning": "物流商对账单币种汇率id",
+            "reachable": false,
+            "name": "物流商对账单币种汇率id"
+        },
+        "logiStatementExtension": {
+            "meaning": "物流商对账单扩展数据",
+            "reachable": false,
+            "name": "物流商对账单扩展数据"
+        },
+        "logiStatementExternalState": {
+            "meaning": "物流商对账单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "物流商对账单上流程状态位"
+        },
+        "logiStatementFilterClazz": {
+            "meaning": "物流商对账单冗余字段用于筛选",
+            "reachable": false,
+            "name": "物流商对账单冗余字段用于筛选"
+        },
+        "logiStatementFlags": {
+            "meaning": "物流商对账单63位标志位",
+            "reachable": false,
+            "name": "物流商对账单63位标志位"
+        },
+        "logiStatementFromAuditDate": {
+            "meaning": "logiStatementFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromBeginTime": {
+            "meaning": "logiStatementFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromCreateTime": {
+            "meaning": "logiStatementFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDateExtra1": {
+            "meaning": "logiStatementFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDateExtra2": {
+            "meaning": "logiStatementFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDateExtra3": {
+            "meaning": "logiStatementFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDateExtra4": {
+            "meaning": "logiStatementFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDateExtra5": {
+            "meaning": "logiStatementFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromDeliveryDate": {
+            "meaning": "logiStatementFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromEndTime": {
+            "meaning": "logiStatementFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromReceiptDate": {
+            "meaning": "logiStatementFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFromUpdateTime": {
+            "meaning": "logiStatementFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementFscType": {
+            "meaning": "物流商对账单FSC声明",
+            "reachable": false,
+            "name": "物流商对账单FSC声明"
+        },
+        "logiStatementGenerativePeople": {
+            "meaning": "物流商对账单下发人",
+            "reachable": false,
+            "name": "物流商对账单下发人"
+        },
+        "logiStatementGenerativeState": {
+            "meaning": "物流商对账单下发状态",
+            "reachable": false,
+            "name": "物流商对账单下发状态"
+        },
+        "logiStatementGroovyScript": {
+            "meaning": "物流商对账单groovy脚本",
+            "reachable": false,
+            "name": "物流商对账单groovy脚本"
+        },
+        "logiStatementGropeCode": {
+            "meaning": "物流商对账单搜索码",
+            "reachable": false,
+            "name": "物流商对账单搜索码"
+        },
+        "logiStatementId": {
+            "meaning": "物流商对账单PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "物流商对账单PK"
+        },
+        "logiStatementInUsed": {
+            "meaning": "物流商对账单是否被使用",
+            "reachable": false,
+            "name": "物流商对账单是否被使用"
+        },
+        "logiStatementInvTypeTaxRateId": {
+            "meaning": "物流商对账单发票税率id",
+            "reachable": false,
+            "name": "物流商对账单发票税率id"
+        },
+        "logiStatementIsBanned": {
+            "meaning": "物流商对账单是否被禁用",
+            "reachable": false,
+            "name": "物流商对账单是否被禁用"
+        },
+        "logiStatementIsDeleted": {
+            "meaning": "物流商对账单是否被删除",
+            "reachable": false,
+            "name": "物流商对账单是否被删除"
+        },
+        "logiStatementIsLeaf": {
+            "meaning": "物流商对账单是否叶子节点",
+            "reachable": false,
+            "name": "物流商对账单是否叶子节点"
+        },
+        "logiStatementIsMainFlow": {
+            "meaning": "物流商对账单是否是主流程",
+            "reachable": false,
+            "name": "物流商对账单是否是主流程"
+        },
+        "logiStatementIsManualModificationDate": {
+            "meaning": "物流商对账单是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "物流商对账单是否手动修改计划生产时间"
+        },
+        "logiStatementIsolation": {
+            "meaning": "物流商对账单智能节点数据隔离标识",
+            "reachable": false,
+            "name": "物流商对账单智能节点数据隔离标识"
+        },
+        "logiStatementJsScript": {
+            "meaning": "物流商对账单js脚本",
+            "reachable": false,
+            "name": "物流商对账单js脚本"
+        },
+        "logiStatementLocCompleteQuantity": {
+            "meaning": "物流商对账单本币完成数量",
+            "reachable": false,
+            "name": "物流商对账单本币完成数量"
+        },
+        "logiStatementLocTotalAmount": {
+            "meaning": "物流商对账单本币总金额",
+            "reachable": false,
+            "name": "物流商对账单本币总金额"
+        },
+        "logiStatementLocTotalInvoicedAmount": {
+            "meaning": "物流商对账单本币总已开票金额",
+            "reachable": false,
+            "name": "物流商对账单本币总已开票金额"
+        },
+        "logiStatementLocTotalOtherExpense": {
+            "meaning": "物流商对账单本币总其他费用",
+            "reachable": false,
+            "name": "物流商对账单本币总其他费用"
+        },
+        "logiStatementLocTotalSettleAmount": {
+            "meaning": "物流商对账单本币总结算金额（本币总金额+本币总其他费用）",
+            "reachable": false,
+            "name": "物流商对账单本币总结算金额"
+        },
+        "logiStatementLocTotalSettledAmount": {
+            "meaning": "物流商对账单本币总已结算金额",
+            "reachable": false,
+            "name": "物流商对账单本币总已结算金额"
+        },
+        "logiStatementMaterialId": {
+            "meaning": "物流商对账单物料id",
+            "reachable": false,
+            "name": "物流商对账单物料id"
+        },
+        "logiStatementName": {
+            "meaning": "物流商对账单智能节点名",
+            "reachable": false,
+            "name": "物流商对账单智能节点名"
+        },
+        "logiStatementNameCodeSearch": {
+            "meaning": "物流商对账单name、user_code模糊搜索",
+            "reachable": false,
+            "name": "物流商对账单name、user_code模糊搜索"
+        },
+        "logiStatementNumberExtra1": {
+            "meaning": "物流商对账单扩展数量1",
+            "reachable": false,
+            "name": "物流商对账单扩展数量1"
+        },
+        "logiStatementNumberExtra2": {
+            "meaning": "物流商对账单扩展数量2",
+            "reachable": false,
+            "name": "物流商对账单扩展数量2"
+        },
+        "logiStatementNumberExtra3": {
+            "meaning": "物流商对账单扩展数量3",
+            "reachable": false,
+            "name": "物流商对账单扩展数量3"
+        },
+        "logiStatementNumberExtra4": {
+            "meaning": "物流商对账单扩展数量4",
+            "reachable": false,
+            "name": "物流商对账单扩展数量4"
+        },
+        "logiStatementNumberExtra5": {
+            "meaning": "物流商对账单扩展数量5",
+            "reachable": false,
+            "name": "物流商对账单扩展数量5"
+        },
+        "logiStatementParentId": {
+            "meaning": "物流商对账单父节点ID",
+            "reachable": false,
+            "name": "物流商对账单父节点ID"
+        },
+        "logiStatementPlannedOutputQuantity": {
+            "meaning": "物流商对账单计划产出数量",
+            "reachable": false,
+            "name": "物流商对账单计划产出数量"
+        },
+        "logiStatementPlannedTimeRequired": {
+            "meaning": "物流商对账单计划需时(小时)",
+            "reachable": false,
+            "name": "物流商对账单计划需时"
+        },
+        "logiStatementPrintTimes": {
+            "meaning": "物流商对账单打印次数",
+            "reachable": false,
+            "name": "物流商对账单打印次数"
+        },
+        "logiStatementPriority": {
+            "meaning": "物流商对账单优先级",
+            "reachable": false,
+            "name": "物流商对账单优先级"
+        },
+        "logiStatementProcessInstanceId": {
+            "meaning": "物流商对账单流程实例ID",
+            "reachable": false,
+            "name": "物流商对账单流程实例ID"
+        },
+        "logiStatementProductionProcessesTypeId": {
+            "meaning": "物流商对账单工序类型ID",
+            "reachable": false,
+            "name": "物流商对账单工序类型ID"
+        },
+        "logiStatementProductionShiftId": {
+            "meaning": "物流商对账单生产班次ID",
+            "reachable": false,
+            "name": "物流商对账单生产班次ID"
+        },
+        "logiStatementQuantity": {
+            "meaning": "物流商对账单任务数量",
+            "reachable": false,
+            "name": "物流商对账单任务数量"
+        },
+        "logiStatementReceiptDate": {
+            "meaning": "物流商对账单单据日期",
+            "reachable": false,
+            "name": "物流商对账单单据日期"
+        },
+        "logiStatementReceiptType": {
+            "meaning": "物流商对账单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "物流商对账单单据类型"
+        },
+        "logiStatementRelatedTasksId": {
+            "meaning": "物流商对账单关联任务id",
+            "reachable": false,
+            "name": "物流商对账单关联任务id"
+        },
+        "logiStatementSerialNumber": {
+            "meaning": "物流商对账单顺序号",
+            "reachable": false,
+            "name": "物流商对账单顺序号"
+        },
+        "logiStatementSource": {
+            "meaning": "物流商对账单源",
+            "reachable": false,
+            "name": "物流商对账单源"
+        },
+        "logiStatementSourceType": {
+            "meaning": "物流商对账单来源类型",
+            "reachable": false,
+            "name": "物流商对账单来源类型"
+        },
+        "logiStatementState": {
+            "meaning": "物流商对账单通用状态",
+            "reachable": false,
+            "name": "物流商对账单通用状态"
+        },
+        "logiStatementSupplierId": {
+            "meaning": "物流商对账单供应商_id",
+            "reachable": false,
+            "name": "物流商对账单供应商_id"
+        },
+        "logiStatementSystemCode": {
+            "meaning": "物流商对账单系统编码",
+            "reachable": false,
+            "name": "物流商对账单系统编码"
+        },
+        "logiStatementTarget": {
+            "meaning": "物流商对账单目标",
+            "reachable": false,
+            "name": "物流商对账单目标"
+        },
+        "logiStatementTaskNodeName": {
+            "meaning": "物流商对账单任务节点名称",
+            "reachable": false,
+            "name": "物流商对账单任务节点名称"
+        },
+        "logiStatementTenantId": {
+            "meaning": "物流商对账单租户_id",
+            "reachable": false,
+            "name": "物流商对账单租户_id"
+        },
+        "logiStatementThirdPartyClass": {
+            "meaning": "物流商对账单第三方分类",
+            "reachable": false,
+            "name": "物流商对账单第三方分类"
+        },
+        "logiStatementThirdPartyId": {
+            "meaning": "物流商对账单第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "物流商对账单第三方系统中的唯一ID"
+        },
+        "logiStatementThirdPartyName": {
+            "meaning": "物流商对账单第三方名称",
+            "reachable": false,
+            "name": "物流商对账单第三方名称"
+        },
+        "logiStatementToAuditDate": {
+            "meaning": "logiStatementToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToBeginTime": {
+            "meaning": "logiStatementToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToCreateTime": {
+            "meaning": "logiStatementToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDateExtra1": {
+            "meaning": "logiStatementToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDateExtra2": {
+            "meaning": "logiStatementToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDateExtra3": {
+            "meaning": "logiStatementToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDateExtra4": {
+            "meaning": "logiStatementToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDateExtra5": {
+            "meaning": "logiStatementToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToDeliveryDate": {
+            "meaning": "logiStatementToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToEndTime": {
+            "meaning": "logiStatementToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToReceiptDate": {
+            "meaning": "logiStatementToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementToUpdateTime": {
+            "meaning": "logiStatementToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "logiStatementTotalAmount": {
+            "meaning": "物流商对账单总金额",
+            "reachable": false,
+            "name": "物流商对账单总金额"
+        },
+        "logiStatementTotalInvoicedAmount": {
+            "meaning": "物流商对账单总已开票金额",
+            "reachable": false,
+            "name": "物流商对账单总已开票金额"
+        },
+        "logiStatementTotalOtherExpense": {
+            "meaning": "物流商对账单总其他费用",
+            "reachable": false,
+            "name": "物流商对账单总其他费用"
+        },
+        "logiStatementTotalSettleAmount": {
+            "meaning": "物流商对账单总结算金额（总金额+总其他费用）",
+            "reachable": false,
+            "name": "物流商对账单总结算金额"
+        },
+        "logiStatementTotalSettledAmount": {
+            "meaning": "物流商对账单总已结算金额",
+            "reachable": false,
+            "name": "物流商对账单总已结算金额"
+        },
+        "logiStatementUnitCode": {
+            "meaning": "物流商对账单单位id",
+            "reachable": false,
+            "name": "物流商对账单单位id"
+        },
+        "logiStatementUpdateTime": {
+            "meaning": "物流商对账单更新时间",
+            "reachable": false,
+            "name": "物流商对账单更新时间"
+        },
+        "logiStatementUpdater": {
+            "meaning": "物流商对账单更新人",
+            "reachable": false,
+            "name": "物流商对账单更新人"
+        },
+        "logiStatementUpdaterId": {
+            "meaning": "物流商对账单更新人ID",
+            "reachable": false,
+            "name": "物流商对账单更新人ID"
+        },
+        "logiStatementUserCode": {
+            "meaning": "物流商对账单智能节点的唯一编码",
+            "reachable": false,
+            "name": "物流商对账单智能节点的唯一编码"
+        },
+        "logiStatementVarExtra1": {
+            "meaning": "物流商对账单扩展1",
+            "reachable": false,
+            "name": "物流商对账单扩展1"
+        },
+        "logiStatementVarExtra2": {
+            "meaning": "物流商对账单扩展2",
+            "reachable": false,
+            "name": "物流商对账单扩展2"
+        },
+        "logiStatementVarExtra3": {
+            "meaning": "物流商对账单扩展3",
+            "reachable": false,
+            "name": "物流商对账单扩展3"
+        },
+        "logiStatementVarExtra4": {
+            "meaning": "物流商对账单扩展4",
+            "reachable": false,
+            "name": "物流商对账单扩展4"
+        },
+        "logiStatementVarExtra5": {
+            "meaning": "物流商对账单扩展5",
+            "reachable": false,
+            "name": "物流商对账单扩展5"
+        },
+        "logiStatementVersion": {
+            "meaning": "物流商对账单版本号",
+            "reachable": false,
+            "name": "物流商对账单版本号"
+        }
+    }
+}

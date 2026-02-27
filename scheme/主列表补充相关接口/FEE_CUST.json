@@ -1,0 +1,629 @@
+{
+    "api_name": "/fee-cust/findList",
+    "table_name": "客户调费",
+    "request": {
+        "feeCustClazz": "FEE_CUST"
+    },
+    "mainTabClazz": "FEE_CUST",
+    "response": {
+        "feeCustActualTimeRequired": {
+            "meaning": "客户调费实际需时(小时)",
+            "reachable": false,
+            "name": "客户调费实际需时"
+        },
+        "feeCustAdjustmentTimeRequired": {
+            "meaning": "客户调费调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "客户调费调整需时"
+        },
+        "feeCustApplicationId": {
+            "meaning": "客户调费应用ID",
+            "reachable": false,
+            "name": "客户调费应用ID"
+        },
+        "feeCustAuditDate": {
+            "meaning": "客户调费审核时间",
+            "reachable": false,
+            "name": "客户调费审核时间"
+        },
+        "feeCustAuditStatus": {
+            "meaning": "客户调费审核状态",
+            "reachable": false,
+            "name": "客户调费审核状态"
+        },
+        "feeCustAvailableScheduleId": {
+            "meaning": "客户调费可用日程id",
+            "reachable": false,
+            "name": "客户调费可用日程id"
+        },
+        "feeCustBeginTime": {
+            "meaning": "客户调费开始时间",
+            "reachable": false,
+            "name": "客户调费开始时间"
+        },
+        "feeCustBizVersion": {
+            "meaning": "客户调费业务自定义版本号",
+            "reachable": false,
+            "name": "客户调费业务自定义版本号"
+        },
+        "feeCustBriefName": {
+            "meaning": "客户调费简称",
+            "reachable": false,
+            "name": "客户调费简称"
+        },
+        "feeCustBusDivisId": {
+            "meaning": "客户调费事业部id",
+            "reachable": false,
+            "name": "客户调费事业部id"
+        },
+        "feeCustChangeAmount": {
+            "meaning": "客户调费调费金额",
+            "reachable": false,
+            "name": "客户调费调费金额"
+        },
+        "feeCustChangeDate": {
+            "type": "object",
+            "meaning": "客户调费调费日期",
+            "reachable": false,
+            "name": "客户调费调费日期"
+        },
+        "feeCustClazz": {
+            "meaning": "客户调费子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "客户调费子类"
+        },
+        "feeCustClosedReason": {
+            "meaning": "客户调费结案原因",
+            "reachable": false,
+            "name": "客户调费结案原因"
+        },
+        "feeCustClosedStatus": {
+            "meaning": "客户调费结案状态",
+            "reachable": false,
+            "name": "客户调费结案状态"
+        },
+        "feeCustComment": {
+            "meaning": "客户调费评论",
+            "reachable": false,
+            "name": "客户调费评论"
+        },
+        "feeCustCompleteQuantity": {
+            "meaning": "客户调费完成数量",
+            "reachable": false,
+            "name": "客户调费完成数量"
+        },
+        "feeCustCompleteStatus": {
+            "meaning": "客户调费完成状态",
+            "reachable": false,
+            "name": "客户调费完成状态"
+        },
+        "feeCustCreateTime": {
+            "meaning": "客户调费创建时间",
+            "reachable": false,
+            "name": "客户调费创建时间"
+        },
+        "feeCustCreator": {
+            "meaning": "客户调费创建人",
+            "reachable": false,
+            "name": "客户调费创建人"
+        },
+        "feeCustCreatorId": {
+            "meaning": "客户调费创建人ID",
+            "reachable": false,
+            "name": "客户调费创建人ID"
+        },
+        "feeCustCustomerId": {
+            "meaning": "客户调费客户_id",
+            "reachable": false,
+            "name": "客户调费客户_id"
+        },
+        "feeCustDateExtra1": {
+            "meaning": "客户调费扩展时间1",
+            "reachable": false,
+            "name": "客户调费扩展时间1"
+        },
+        "feeCustDateExtra2": {
+            "meaning": "客户调费扩展时间2",
+            "reachable": false,
+            "name": "客户调费扩展时间2"
+        },
+        "feeCustDateExtra3": {
+            "meaning": "客户调费扩展时间3",
+            "reachable": false,
+            "name": "客户调费扩展时间3"
+        },
+        "feeCustDateExtra4": {
+            "meaning": "客户调费扩展时间4",
+            "reachable": false,
+            "name": "客户调费扩展时间4"
+        },
+        "feeCustDateExtra5": {
+            "meaning": "客户调费扩展时间5",
+            "reachable": false,
+            "name": "客户调费扩展时间5"
+        },
+        "feeCustDefaultType": {
+            "meaning": "客户调费智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": false,
+            "name": "客户调费智能节点主类型"
+        },
+        "feeCustDeliveryDate": {
+            "meaning": "客户调费交货日期",
+            "reachable": false,
+            "name": "客户调费交货日期"
+        },
+        "feeCustDescription": {
+            "meaning": "客户调费描述",
+            "reachable": false,
+            "name": "客户调费描述"
+        },
+        "feeCustEndTime": {
+            "meaning": "客户调费结束时间",
+            "reachable": false,
+            "name": "客户调费结束时间"
+        },
+        "feeCustEndTimeRequired": {
+            "meaning": "客户调费最后需时(小时)",
+            "reachable": false,
+            "name": "客户调费最后需时"
+        },
+        "feeCustEngName": {
+            "meaning": "客户调费英文名称",
+            "reachable": false,
+            "name": "客户调费英文名称"
+        },
+        "feeCustEquipmentId": {
+            "meaning": "客户调费设备id",
+            "reachable": false,
+            "name": "客户调费设备id"
+        },
+        "feeCustExchangeRateId": {
+            "meaning": "客户调费币种汇率id",
+            "reachable": false,
+            "name": "客户调费币种汇率id"
+        },
+        "feeCustExtension": {
+            "meaning": "客户调费扩展数据",
+            "reachable": false,
+            "name": "客户调费扩展数据"
+        },
+        "feeCustExternalState": {
+            "meaning": "客户调费上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "客户调费上流程状态位"
+        },
+        "feeCustFilterClazz": {
+            "meaning": "客户调费冗余字段用于筛选",
+            "reachable": false,
+            "name": "客户调费冗余字段用于筛选"
+        },
+        "feeCustFlags": {
+            "meaning": "客户调费63位标志位",
+            "reachable": false,
+            "name": "客户调费63位标志位"
+        },
+        "feeCustFromAuditDate": {
+            "meaning": "feeCustFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromBeginTime": {
+            "meaning": "feeCustFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromChangeDate": {
+            "type": "object",
+            "meaning": "feeCustFromChangeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromCreateTime": {
+            "meaning": "feeCustFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDateExtra1": {
+            "meaning": "feeCustFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDateExtra2": {
+            "meaning": "feeCustFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDateExtra3": {
+            "meaning": "feeCustFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDateExtra4": {
+            "meaning": "feeCustFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDateExtra5": {
+            "meaning": "feeCustFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromDeliveryDate": {
+            "meaning": "feeCustFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromEndTime": {
+            "meaning": "feeCustFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromReceiptDate": {
+            "meaning": "feeCustFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFromUpdateTime": {
+            "meaning": "feeCustFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustFscType": {
+            "meaning": "客户调费FSC声明",
+            "reachable": false,
+            "name": "客户调费FSC声明"
+        },
+        "feeCustGenerativePeople": {
+            "meaning": "客户调费下发人",
+            "reachable": false,
+            "name": "客户调费下发人"
+        },
+        "feeCustGenerativeState": {
+            "meaning": "客户调费下发状态",
+            "reachable": false,
+            "name": "客户调费下发状态"
+        },
+        "feeCustGroovyScript": {
+            "meaning": "客户调费groovy脚本",
+            "reachable": false,
+            "name": "客户调费groovy脚本"
+        },
+        "feeCustGropeCode": {
+            "meaning": "客户调费搜索码",
+            "reachable": false,
+            "name": "客户调费搜索码"
+        },
+        "feeCustId": {
+            "meaning": "客户调费pk",
+            "is_primary": true,
+            "reachable": false,
+            "name": "客户调费pk"
+        },
+        "feeCustInUsed": {
+            "meaning": "客户调费是否被使用",
+            "reachable": false,
+            "name": "客户调费是否被使用"
+        },
+        "feeCustInvTypeTaxRateId": {
+            "meaning": "客户调费发票税率id",
+            "reachable": false,
+            "name": "客户调费发票税率id"
+        },
+        "feeCustIsBanned": {
+            "meaning": "客户调费是否被禁用",
+            "reachable": false,
+            "name": "客户调费是否被禁用"
+        },
+        "feeCustIsDeleted": {
+            "meaning": "客户调费是否被删除",
+            "reachable": false,
+            "name": "客户调费是否被删除"
+        },
+        "feeCustIsLeaf": {
+            "meaning": "客户调费是否叶子节点",
+            "reachable": false,
+            "name": "客户调费是否叶子节点"
+        },
+        "feeCustIsMainFlow": {
+            "meaning": "客户调费是否是主流程",
+            "reachable": false,
+            "name": "客户调费是否是主流程"
+        },
+        "feeCustIsManualModificationDate": {
+            "meaning": "客户调费是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "客户调费是否手动修改计划生产时间"
+        },
+        "feeCustIsolation": {
+            "meaning": "客户调费智能节点数据隔离标识",
+            "reachable": false,
+            "name": "客户调费智能节点数据隔离标识"
+        },
+        "feeCustJsScript": {
+            "meaning": "客户调费js脚本",
+            "reachable": false,
+            "name": "客户调费js脚本"
+        },
+        "feeCustMaterialId": {
+            "meaning": "客户调费物料id",
+            "reachable": false,
+            "name": "客户调费物料id"
+        },
+        "feeCustName": {
+            "meaning": "客户调费智能节点名",
+            "reachable": false,
+            "name": "客户调费智能节点名"
+        },
+        "feeCustNameCodeSearch": {
+            "meaning": "客户调费name、user_code模糊搜索",
+            "reachable": false,
+            "name": "客户调费name、user_code模糊搜索"
+        },
+        "feeCustNumberExtra1": {
+            "meaning": "客户调费扩展数量1",
+            "reachable": false,
+            "name": "客户调费扩展数量1"
+        },
+        "feeCustNumberExtra2": {
+            "meaning": "客户调费扩展数量2",
+            "reachable": false,
+            "name": "客户调费扩展数量2"
+        },
+        "feeCustNumberExtra3": {
+            "meaning": "客户调费扩展数量3",
+            "reachable": false,
+            "name": "客户调费扩展数量3"
+        },
+        "feeCustNumberExtra4": {
+            "meaning": "客户调费扩展数量4",
+            "reachable": false,
+            "name": "客户调费扩展数量4"
+        },
+        "feeCustNumberExtra5": {
+            "meaning": "客户调费扩展数量5",
+            "reachable": false,
+            "name": "客户调费扩展数量5"
+        },
+        "feeCustParentId": {
+            "meaning": "客户调费父节点ID",
+            "reachable": false,
+            "name": "客户调费父节点ID"
+        },
+        "feeCustPlannedOutputQuantity": {
+            "meaning": "客户调费计划产出数量",
+            "reachable": false,
+            "name": "客户调费计划产出数量"
+        },
+        "feeCustPlannedTimeRequired": {
+            "meaning": "客户调费计划需时(小时)",
+            "reachable": false,
+            "name": "客户调费计划需时"
+        },
+        "feeCustPrintTimes": {
+            "meaning": "客户调费打印次数",
+            "reachable": false,
+            "name": "客户调费打印次数"
+        },
+        "feeCustPriority": {
+            "meaning": "客户调费优先级",
+            "reachable": false,
+            "name": "客户调费优先级"
+        },
+        "feeCustProcessInstanceId": {
+            "meaning": "客户调费流程实例ID",
+            "reachable": false,
+            "name": "客户调费流程实例ID"
+        },
+        "feeCustProductionProcessesTypeId": {
+            "meaning": "客户调费工序类型ID",
+            "reachable": false,
+            "name": "客户调费工序类型ID"
+        },
+        "feeCustProductionShiftId": {
+            "meaning": "客户调费生产班次ID",
+            "reachable": false,
+            "name": "客户调费生产班次ID"
+        },
+        "feeCustQuantity": {
+            "meaning": "客户调费任务数量",
+            "reachable": false,
+            "name": "客户调费任务数量"
+        },
+        "feeCustReceiptDate": {
+            "meaning": "客户调费单据日期",
+            "reachable": false,
+            "name": "客户调费单据日期"
+        },
+        "feeCustReceiptType": {
+            "meaning": "客户调费单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "客户调费单据类型"
+        },
+        "feeCustRelatedTasksId": {
+            "meaning": "客户调费关联任务id",
+            "reachable": false,
+            "name": "客户调费关联任务id"
+        },
+        "feeCustSerialNumber": {
+            "meaning": "客户调费顺序号",
+            "reachable": false,
+            "name": "客户调费顺序号"
+        },
+        "feeCustSettStatus": {
+            "meaning": "客户调费对账类型",
+            "reachable": false,
+            "name": "客户调费对账类型"
+        },
+        "feeCustSource": {
+            "meaning": "客户调费源",
+            "reachable": false,
+            "name": "客户调费源"
+        },
+        "feeCustSourceType": {
+            "meaning": "客户调费来源类型",
+            "reachable": false,
+            "name": "客户调费来源类型"
+        },
+        "feeCustState": {
+            "meaning": "客户调费通用状态",
+            "reachable": false,
+            "name": "客户调费通用状态"
+        },
+        "feeCustSystemCode": {
+            "meaning": "客户调费系统编码",
+            "reachable": false,
+            "name": "客户调费系统编码"
+        },
+        "feeCustTarget": {
+            "meaning": "客户调费目标",
+            "reachable": false,
+            "name": "客户调费目标"
+        },
+        "feeCustTaskNodeName": {
+            "meaning": "客户调费任务节点名称",
+            "reachable": false,
+            "name": "客户调费任务节点名称"
+        },
+        "feeCustTenantId": {
+            "meaning": "客户调费租户_id",
+            "reachable": false,
+            "name": "客户调费租户_id"
+        },
+        "feeCustThirdPartyClass": {
+            "meaning": "客户调费第三方分类",
+            "reachable": false,
+            "name": "客户调费第三方分类"
+        },
+        "feeCustThirdPartyId": {
+            "meaning": "客户调费第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "客户调费第三方系统中的唯一ID"
+        },
+        "feeCustThirdPartyName": {
+            "meaning": "客户调费第三方名称",
+            "reachable": false,
+            "name": "客户调费第三方名称"
+        },
+        "feeCustToAuditDate": {
+            "meaning": "feeCustToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToBeginTime": {
+            "meaning": "feeCustToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToChangeDate": {
+            "type": "object",
+            "meaning": "feeCustToChangeDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToCreateTime": {
+            "meaning": "feeCustToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDateExtra1": {
+            "meaning": "feeCustToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDateExtra2": {
+            "meaning": "feeCustToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDateExtra3": {
+            "meaning": "feeCustToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDateExtra4": {
+            "meaning": "feeCustToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDateExtra5": {
+            "meaning": "feeCustToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToDeliveryDate": {
+            "meaning": "feeCustToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToEndTime": {
+            "meaning": "feeCustToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToReceiptDate": {
+            "meaning": "feeCustToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustToUpdateTime": {
+            "meaning": "feeCustToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "feeCustUnitCode": {
+            "meaning": "客户调费单位id",
+            "reachable": false,
+            "name": "客户调费单位id"
+        },
+        "feeCustUpdateTime": {
+            "meaning": "客户调费更新时间",
+            "reachable": false,
+            "name": "客户调费更新时间"
+        },
+        "feeCustUpdater": {
+            "meaning": "客户调费更新人",
+            "reachable": false,
+            "name": "客户调费更新人"
+        },
+        "feeCustUpdaterId": {
+            "meaning": "客户调费更新人ID",
+            "reachable": false,
+            "name": "客户调费更新人ID"
+        },
+        "feeCustUserCode": {
+            "meaning": "客户调费智能节点的唯一编码",
+            "reachable": false,
+            "name": "客户调费智能节点的唯一编码"
+        },
+        "feeCustVarExtra1": {
+            "meaning": "客户调费扩展1",
+            "reachable": false,
+            "name": "客户调费扩展1"
+        },
+        "feeCustVarExtra2": {
+            "meaning": "客户调费扩展2",
+            "reachable": false,
+            "name": "客户调费扩展2"
+        },
+        "feeCustVarExtra3": {
+            "meaning": "客户调费扩展3",
+            "reachable": false,
+            "name": "客户调费扩展3"
+        },
+        "feeCustVarExtra4": {
+            "meaning": "客户调费扩展4",
+            "reachable": false,
+            "name": "客户调费扩展4"
+        },
+        "feeCustVarExtra5": {
+            "meaning": "客户调费扩展5",
+            "reachable": false,
+            "name": "客户调费扩展5"
+        },
+        "feeCustVersion": {
+            "meaning": "客户调费版本号",
+            "reachable": false,
+            "name": "客户调费版本号"
+        }
+    }
+}

@@ -1,0 +1,673 @@
+{
+    "api_name": "/supplier/findList",
+    "table_name": "供应商表",
+    "request": {
+        "supplierClazz": "XY_USERCENTER_ORGANIZATION"
+    },
+    "mainTabClazz": "XY_USERCENTER_ORGANIZATION",
+    "response": {
+        "organization": {
+            "type": "object",
+            "meaning": "organization",
+            "reachable": true,
+            "name": ""
+        },
+        "organizationEXT": {
+            "type": "object",
+            "meaning": "organizationEXT",
+            "reachable": true,
+            "name": ""
+        },
+        "supplierAccountPeriod": {
+            "meaning": "供应商表账期",
+            "reachable": true,
+            "name": "供应商表账期"
+        },
+        "supplierApplicationId": {
+            "meaning": "供应商表应用ID",
+            "reachable": true,
+            "name": "供应商表应用ID"
+        },
+        "supplierAreaId": {
+            "meaning": "供应商表区域id",
+            "reachable": true,
+            "name": "供应商表区域id"
+        },
+        "supplierAuditDate": {
+            "meaning": "供应商表审核时间",
+            "reachable": true,
+            "name": "供应商表审核时间"
+        },
+        "supplierAuditStatus": {
+            "meaning": "供应商表审核状态",
+            "reachable": true,
+            "name": "供应商表审核状态"
+        },
+        "supplierAvatarUrl": {
+            "meaning": "供应商表头像URL",
+            "reachable": true,
+            "name": "供应商表头像URL"
+        },
+        "supplierBankAccountId": {
+            "meaning": "供应商表默认银行账户ID",
+            "reachable": true,
+            "name": "供应商表默认银行账户ID"
+        },
+        "supplierBizVersion": {
+            "meaning": "供应商表业务自定义版本号",
+            "reachable": true,
+            "name": "供应商表业务自定义版本号"
+        },
+        "supplierBriefName": {
+            "meaning": "供应商表简称",
+            "reachable": true,
+            "name": "供应商表简称"
+        },
+        "supplierBusDivisId": {
+            "meaning": "供应商表事业部id",
+            "reachable": true,
+            "name": "供应商表事业部id"
+        },
+        "supplierBusinessScope": {
+            "meaning": "供应商表经营范围",
+            "reachable": true,
+            "name": "供应商表经营范围"
+        },
+        "supplierCiphertext": {
+            "meaning": "供应商表密文",
+            "reachable": true,
+            "name": "供应商表密文"
+        },
+        "supplierClassification": {
+            "meaning": "供应商表供应商分类",
+            "reachable": true,
+            "name": "供应商表供应商分类"
+        },
+        "supplierClazz": {
+            "meaning": "供应商表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "供应商表子类"
+        },
+        "supplierComment": {
+            "meaning": "供应商表评论",
+            "reachable": true,
+            "name": "供应商表评论"
+        },
+        "supplierCreateTime": {
+            "meaning": "供应商表创建时间",
+            "reachable": true,
+            "name": "供应商表创建时间"
+        },
+        "supplierCreator": {
+            "meaning": "供应商表创建人",
+            "reachable": true,
+            "name": "供应商表创建人"
+        },
+        "supplierCreatorId": {
+            "meaning": "供应商表创建人ID",
+            "reachable": true,
+            "name": "供应商表创建人ID"
+        },
+        "supplierCreditLimit": {
+            "meaning": "供应商表信用限额",
+            "reachable": true,
+            "name": "供应商表信用限额"
+        },
+        "supplierCurrencyId": {
+            "meaning": "供应商表默认币种ID",
+            "reachable": true,
+            "name": "供应商表默认币种ID"
+        },
+        "supplierDateExtra1": {
+            "meaning": "供应商表扩展时间1",
+            "reachable": true,
+            "name": "供应商表扩展时间1"
+        },
+        "supplierDateExtra2": {
+            "meaning": "供应商表扩展时间2",
+            "reachable": true,
+            "name": "供应商表扩展时间2"
+        },
+        "supplierDateExtra3": {
+            "meaning": "供应商表扩展时间3",
+            "reachable": true,
+            "name": "供应商表扩展时间3"
+        },
+        "supplierDateExtra4": {
+            "meaning": "供应商表扩展时间4",
+            "reachable": true,
+            "name": "供应商表扩展时间4"
+        },
+        "supplierDateExtra5": {
+            "meaning": "供应商表扩展时间5",
+            "reachable": true,
+            "name": "供应商表扩展时间5"
+        },
+        "supplierDefaultDeliveryType": {
+            "meaning": "供应商表默认送货类型",
+            "reachable": true,
+            "name": "供应商表默认送货类型"
+        },
+        "supplierDefaultInvoiceTypeTaxRate": {
+            "meaning": "供应商表发票类型税率",
+            "reachable": true,
+            "name": "供应商表发票类型税率"
+        },
+        "supplierDefaultSettlementType": {
+            "meaning": "供应商表默认结算类型",
+            "reachable": true,
+            "name": "供应商表默认结算类型"
+        },
+        "supplierDefaultType": {
+            "meaning": "供应商表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "供应商表智能节点主类型"
+        },
+        "supplierDescription": {
+            "meaning": "供应商表描述",
+            "reachable": true,
+            "name": "供应商表描述"
+        },
+        "supplierEmail": {
+            "meaning": "供应商表邮箱",
+            "reachable": true,
+            "name": "供应商表邮箱"
+        },
+        "supplierEngName": {
+            "meaning": "供应商表英文名称",
+            "reachable": true,
+            "name": "供应商表英文名称"
+        },
+        "supplierEnglishName": {
+            "meaning": "供应商表英文名称",
+            "reachable": true,
+            "name": "供应商表英文名称"
+        },
+        "supplierEnterpriseTaxIdentificationNumber": {
+            "meaning": "供应商表企业税号",
+            "reachable": true,
+            "name": "供应商表企业税号"
+        },
+        "supplierExtension": {
+            "meaning": "供应商表扩展数据",
+            "reachable": true,
+            "name": "供应商表扩展数据"
+        },
+        "supplierExternalState": {
+            "meaning": "供应商表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "供应商表上流程状态位"
+        },
+        "supplierFaxNo": {
+            "meaning": "供应商表传真号",
+            "reachable": true,
+            "name": "供应商表传真号"
+        },
+        "supplierFlags": {
+            "meaning": "供应商表63位标志位",
+            "reachable": true,
+            "name": "供应商表63位标志位"
+        },
+        "supplierFromAuditDate": {
+            "meaning": "supplierFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromCreateTime": {
+            "meaning": "supplierFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromDateExtra1": {
+            "meaning": "supplierFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromDateExtra2": {
+            "meaning": "supplierFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromDateExtra3": {
+            "meaning": "supplierFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromDateExtra4": {
+            "meaning": "supplierFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromDateExtra5": {
+            "meaning": "supplierFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromLastLoginTime": {
+            "meaning": "supplierFromLastLoginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromRegistrationDate": {
+            "meaning": "supplierFromRegistrationDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFromUpdateTime": {
+            "meaning": "supplierFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierFscCode": {
+            "meaning": "供应商表FSC证号",
+            "reachable": true,
+            "name": "供应商表FSC证号"
+        },
+        "supplierFscLabel": {
+            "meaning": "供应商表FSC",
+            "reachable": true,
+            "name": "供应商表FSC"
+        },
+        "supplierGroovyScript": {
+            "meaning": "供应商表groovy脚本",
+            "reachable": true,
+            "name": "供应商表groovy脚本"
+        },
+        "supplierGropeCode": {
+            "meaning": "供应商表搜索码",
+            "reachable": true,
+            "name": "供应商表搜索码"
+        },
+        "supplierId": {
+            "meaning": "供应商表Pk",
+            "is_primary": true,
+            "reachable": true,
+            "name": "供应商表Pk"
+        },
+        "supplierIdentification": {
+            "meaning": "供应商表身份识别",
+            "reachable": true,
+            "name": "供应商表身份识别"
+        },
+        "supplierInUsed": {
+            "meaning": "供应商表是否被使用",
+            "reachable": true,
+            "name": "供应商表是否被使用"
+        },
+        "supplierIsBanned": {
+            "meaning": "供应商表是否被禁用",
+            "reachable": true,
+            "name": "供应商表是否被禁用"
+        },
+        "supplierIsDeleted": {
+            "meaning": "供应商表是否被删除",
+            "reachable": true,
+            "name": "供应商表是否被删除"
+        },
+        "supplierIsMainFlow": {
+            "meaning": "供应商表是否是主流程",
+            "reachable": true,
+            "name": "供应商表是否是主流程"
+        },
+        "supplierIsolation": {
+            "meaning": "供应商表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "供应商表智能节点数据隔离标识"
+        },
+        "supplierJsScript": {
+            "meaning": "供应商表js脚本",
+            "reachable": true,
+            "name": "供应商表js脚本"
+        },
+        "supplierLastLoginLogId": {
+            "meaning": "供应商表最后登录日志ID",
+            "reachable": true,
+            "name": "供应商表最后登录日志ID"
+        },
+        "supplierLastLoginTime": {
+            "meaning": "供应商表最后登录时间",
+            "reachable": true,
+            "name": "供应商表最后登录时间"
+        },
+        "supplierLegalId": {
+            "meaning": "供应商表法人ID",
+            "reachable": true,
+            "name": "供应商表法人ID"
+        },
+        "supplierLegalName": {
+            "meaning": "供应商表法人名称",
+            "reachable": true,
+            "name": "供应商表法人名称"
+        },
+        "supplierLevel": {
+            "meaning": "供应商表供应商级别",
+            "reachable": true,
+            "name": "供应商表供应商级别"
+        },
+        "supplierLocationAddress": {
+            "meaning": "供应商表所在地址",
+            "reachable": true,
+            "name": "供应商表所在地址"
+        },
+        "supplierLocationCity": {
+            "meaning": "供应商表所在市",
+            "reachable": true,
+            "name": "供应商表所在市"
+        },
+        "supplierLocationDistrict": {
+            "meaning": "供应商表所在区域",
+            "reachable": true,
+            "name": "供应商表所在区域"
+        },
+        "supplierLocationProvince": {
+            "meaning": "供应商表所在省",
+            "reachable": true,
+            "name": "供应商表所在省"
+        },
+        "supplierLoginCount": {
+            "meaning": "供应商表登录次数",
+            "reachable": true,
+            "name": "供应商表登录次数"
+        },
+        "supplierMileage": {
+            "meaning": "供应商表里程",
+            "reachable": true,
+            "name": "供应商表里程"
+        },
+        "supplierMobile": {
+            "meaning": "供应商表手机号",
+            "reachable": true,
+            "name": "供应商表手机号"
+        },
+        "supplierName": {
+            "meaning": "供应商表智能节点名",
+            "reachable": true,
+            "name": "供应商表智能节点名"
+        },
+        "supplierNameCodeSearch": {
+            "meaning": "供应商表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "供应商表name、user_code模糊搜索"
+        },
+        "supplierNationality": {
+            "meaning": "供应商表国家",
+            "reachable": true,
+            "name": "供应商表国家"
+        },
+        "supplierNumberExtra1": {
+            "meaning": "供应商表扩展数量1",
+            "reachable": true,
+            "name": "供应商表扩展数量1"
+        },
+        "supplierNumberExtra2": {
+            "meaning": "供应商表扩展数量2",
+            "reachable": true,
+            "name": "供应商表扩展数量2"
+        },
+        "supplierNumberExtra3": {
+            "meaning": "供应商表扩展数量3",
+            "reachable": true,
+            "name": "供应商表扩展数量3"
+        },
+        "supplierNumberExtra4": {
+            "meaning": "供应商表扩展数量4",
+            "reachable": true,
+            "name": "供应商表扩展数量4"
+        },
+        "supplierNumberExtra5": {
+            "meaning": "供应商表扩展数量5",
+            "reachable": true,
+            "name": "供应商表扩展数量5"
+        },
+        "supplierParentId": {
+            "meaning": "供应商表父节点ID",
+            "reachable": true,
+            "name": "供应商表父节点ID"
+        },
+        "supplierParentSupplierId": {
+            "meaning": "供应商表父级供应商id",
+            "reachable": true,
+            "name": "供应商表父级供应商id"
+        },
+        "supplierPostalCode": {
+            "meaning": "供应商表邮政编码",
+            "reachable": true,
+            "name": "供应商表邮政编码"
+        },
+        "supplierPostcode": {
+            "meaning": "供应商表邮政编码",
+            "reachable": true,
+            "name": "供应商表邮政编码"
+        },
+        "supplierProcessInstanceId": {
+            "meaning": "供应商表流程实例ID",
+            "reachable": true,
+            "name": "供应商表流程实例ID"
+        },
+        "supplierReconciliationDate": {
+            "meaning": "供应商表结账日",
+            "reachable": true,
+            "name": "供应商表结账日"
+        },
+        "supplierRegistrantId": {
+            "meaning": "供应商表注册人ID",
+            "reachable": true,
+            "name": "供应商表注册人ID"
+        },
+        "supplierRegistrantName": {
+            "meaning": "供应商表注册人名称",
+            "reachable": true,
+            "name": "供应商表注册人名称"
+        },
+        "supplierRegistrationAddress": {
+            "meaning": "供应商表注册地址",
+            "reachable": true,
+            "name": "供应商表注册地址"
+        },
+        "supplierRegistrationCapital": {
+            "meaning": "供应商表注册资金",
+            "reachable": true,
+            "name": "供应商表注册资金"
+        },
+        "supplierRegistrationCity": {
+            "meaning": "供应商表注册所在市",
+            "reachable": true,
+            "name": "供应商表注册所在市"
+        },
+        "supplierRegistrationDate": {
+            "meaning": "供应商表注册日期",
+            "reachable": true,
+            "name": "供应商表注册日期"
+        },
+        "supplierRegistrationDistrict": {
+            "meaning": "供应商表注册所在区域",
+            "reachable": true,
+            "name": "供应商表注册所在区域"
+        },
+        "supplierRegistrationProvince": {
+            "meaning": "供应商表注册所在省",
+            "reachable": true,
+            "name": "供应商表注册所在省"
+        },
+        "supplierSequenceNumber": {
+            "meaning": "supplierSequenceNumber",
+            "reachable": true,
+            "name": ""
+        },
+        "supplierSerialNumber": {
+            "meaning": "供应商表顺序号",
+            "reachable": true,
+            "name": "供应商表顺序号"
+        },
+        "supplierShortName": {
+            "meaning": "供应商表简称名称",
+            "reachable": true,
+            "name": "供应商表简称名称"
+        },
+        "supplierSomeoneAddressId": {
+            "meaning": "供应商表默认地址ID",
+            "reachable": true,
+            "name": "供应商表默认地址ID"
+        },
+        "supplierSomeoneCertificateId": {
+            "meaning": "供应商表默认证书ID",
+            "reachable": true,
+            "name": "供应商表默认证书ID"
+        },
+        "supplierSomeoneContactId": {
+            "meaning": "供应商表默认联系人ID",
+            "reachable": true,
+            "name": "供应商表默认联系人ID"
+        },
+        "supplierSourceTenantId": {
+            "meaning": "供应商表来源租户ID",
+            "reachable": true,
+            "name": "供应商表来源租户ID"
+        },
+        "supplierState": {
+            "meaning": "供应商表通用状态",
+            "reachable": true,
+            "name": "供应商表通用状态"
+        },
+        "supplierSystemCode": {
+            "meaning": "供应商表系统编码",
+            "reachable": true,
+            "name": "供应商表系统编码"
+        },
+        "supplierTaskNodeName": {
+            "meaning": "供应商表任务节点名称",
+            "reachable": true,
+            "name": "供应商表任务节点名称"
+        },
+        "supplierTelephone": {
+            "meaning": "供应商表电话",
+            "reachable": true,
+            "name": "供应商表电话"
+        },
+        "supplierTenantId": {
+            "meaning": "供应商表租户ID",
+            "reachable": true,
+            "name": "供应商表租户ID"
+        },
+        "supplierThirdPartyClass": {
+            "meaning": "供应商表第三方分类",
+            "reachable": true,
+            "name": "供应商表第三方分类"
+        },
+        "supplierThirdPartyId": {
+            "meaning": "供应商表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "供应商表第三方系统中的唯一ID"
+        },
+        "supplierThirdPartyName": {
+            "meaning": "供应商表第三方名称",
+            "reachable": true,
+            "name": "供应商表第三方名称"
+        },
+        "supplierToAuditDate": {
+            "meaning": "supplierToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToCreateTime": {
+            "meaning": "supplierToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToDateExtra1": {
+            "meaning": "supplierToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToDateExtra2": {
+            "meaning": "supplierToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToDateExtra3": {
+            "meaning": "supplierToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToDateExtra4": {
+            "meaning": "supplierToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToDateExtra5": {
+            "meaning": "supplierToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToLastLoginTime": {
+            "meaning": "supplierToLastLoginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToRegistrationDate": {
+            "meaning": "supplierToRegistrationDate",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierToUpdateTime": {
+            "meaning": "supplierToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "supplierUpdateTime": {
+            "meaning": "供应商表更新时间",
+            "reachable": true,
+            "name": "供应商表更新时间"
+        },
+        "supplierUpdater": {
+            "meaning": "供应商表更新人",
+            "reachable": true,
+            "name": "供应商表更新人"
+        },
+        "supplierUpdaterId": {
+            "meaning": "供应商表更新人ID",
+            "reachable": true,
+            "name": "供应商表更新人ID"
+        },
+        "supplierUserCode": {
+            "meaning": "供应商表智能节点的唯一编码",
+            "reachable": true,
+            "name": "供应商表智能节点的唯一编码"
+        },
+        "supplierVarExtra1": {
+            "meaning": "供应商表扩展1",
+            "reachable": true,
+            "name": "供应商表扩展1"
+        },
+        "supplierVarExtra2": {
+            "meaning": "供应商表扩展2",
+            "reachable": true,
+            "name": "供应商表扩展2"
+        },
+        "supplierVarExtra3": {
+            "meaning": "供应商表扩展3",
+            "reachable": true,
+            "name": "供应商表扩展3"
+        },
+        "supplierVarExtra4": {
+            "meaning": "供应商表扩展4",
+            "reachable": true,
+            "name": "供应商表扩展4"
+        },
+        "supplierVarExtra5": {
+            "meaning": "供应商表扩展5",
+            "reachable": true,
+            "name": "供应商表扩展5"
+        },
+        "supplierVersion": {
+            "meaning": "供应商表版本号",
+            "reachable": true,
+            "name": "供应商表版本号"
+        },
+        "supplierWebsite": {
+            "meaning": "供应商表网址",
+            "reachable": true,
+            "name": "供应商表网址"
+        }
+    }
+}

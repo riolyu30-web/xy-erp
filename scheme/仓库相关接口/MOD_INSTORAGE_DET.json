@@ -1,0 +1,1342 @@
+{
+    "api_name": "/mod-instorage-det/findList",
+    "table_name": "模具入库明细表",
+    "request": {
+        "modInstorageDetModInstorageClazz": "MOD_INSTORAGE",
+        "modInstorageDetClazz": "MOD_INSTORAGE_DET"
+    },
+    "mainTabClazz": "MOD_INSTORAGE_DET",
+    "response": {
+        "modInstorageDetActualTimeRequired": {
+            "meaning": "模具入库明细表实际需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表实际需时"
+        },
+        "modInstorageDetAdditionalWeight": {
+            "meaning": "模具入库明细表附加重量",
+            "reachable": true,
+            "name": "模具入库明细表附加重量"
+        },
+        "modInstorageDetAdjustmentTimeRequired": {
+            "meaning": "模具入库明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "模具入库明细表调整需时"
+        },
+        "modInstorageDetApplicationId": {
+            "meaning": "模具入库明细表应用ID",
+            "reachable": true,
+            "name": "模具入库明细表应用ID"
+        },
+        "modInstorageDetAuditDate": {
+            "meaning": "模具入库明细表审核时间",
+            "reachable": true,
+            "name": "模具入库明细表审核时间"
+        },
+        "modInstorageDetAuditStatus": {
+            "meaning": "模具入库明细表审核状态",
+            "reachable": true,
+            "name": "模具入库明细表审核状态"
+        },
+        "modInstorageDetAvailableScheduleId": {
+            "meaning": "模具入库明细表可用日程id",
+            "reachable": true,
+            "name": "模具入库明细表可用日程id"
+        },
+        "modInstorageDetBeginTime": {
+            "meaning": "模具入库明细表开始时间",
+            "reachable": true,
+            "name": "模具入库明细表开始时间"
+        },
+        "modInstorageDetBizVersion": {
+            "meaning": "模具入库明细表业务自定义版本号",
+            "reachable": true,
+            "name": "模具入库明细表业务自定义版本号"
+        },
+        "modInstorageDetBriefName": {
+            "meaning": "模具入库明细表简称",
+            "reachable": true,
+            "name": "模具入库明细表简称"
+        },
+        "modInstorageDetBusDivisId": {
+            "meaning": "模具入库明细表事业部id",
+            "reachable": true,
+            "name": "模具入库明细表事业部id"
+        },
+        "modInstorageDetClazz": {
+            "meaning": "模具入库明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "模具入库明细表子类"
+        },
+        "modInstorageDetClosedReason": {
+            "meaning": "模具入库明细表结案原因",
+            "reachable": true,
+            "name": "模具入库明细表结案原因"
+        },
+        "modInstorageDetClosedStatus": {
+            "meaning": "模具入库明细表结案状态",
+            "reachable": true,
+            "name": "模具入库明细表结案状态"
+        },
+        "modInstorageDetComment": {
+            "meaning": "模具入库明细表评论",
+            "reachable": true,
+            "name": "模具入库明细表评论"
+        },
+        "modInstorageDetCompleteQuantity": {
+            "meaning": "模具入库明细表完成数量",
+            "reachable": true,
+            "name": "模具入库明细表完成数量"
+        },
+        "modInstorageDetCompleteStatus": {
+            "meaning": "模具入库明细表完成状态",
+            "reachable": true,
+            "name": "模具入库明细表完成状态"
+        },
+        "modInstorageDetCreateTime": {
+            "meaning": "模具入库明细表创建时间",
+            "reachable": true,
+            "name": "模具入库明细表创建时间"
+        },
+        "modInstorageDetCreator": {
+            "meaning": "模具入库明细表创建人",
+            "reachable": true,
+            "name": "模具入库明细表创建人"
+        },
+        "modInstorageDetCreatorId": {
+            "meaning": "模具入库明细表创建人ID",
+            "reachable": true,
+            "name": "模具入库明细表创建人ID"
+        },
+        "modInstorageDetDateExtra1": {
+            "meaning": "模具入库明细表扩展时间1",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间1"
+        },
+        "modInstorageDetDateExtra2": {
+            "meaning": "模具入库明细表扩展时间2",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间2"
+        },
+        "modInstorageDetDateExtra3": {
+            "meaning": "模具入库明细表扩展时间3",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间3"
+        },
+        "modInstorageDetDateExtra4": {
+            "meaning": "模具入库明细表扩展时间4",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间4"
+        },
+        "modInstorageDetDateExtra5": {
+            "meaning": "模具入库明细表扩展时间5",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间5"
+        },
+        "modInstorageDetDefaultType": {
+            "meaning": "模具入库明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "模具入库明细表智能节点主类型"
+        },
+        "modInstorageDetDeliveryDate": {
+            "meaning": "模具入库明细表交货日期",
+            "reachable": true,
+            "name": "模具入库明细表交货日期"
+        },
+        "modInstorageDetDescription": {
+            "meaning": "模具入库明细表描述",
+            "reachable": true,
+            "name": "模具入库明细表描述"
+        },
+        "modInstorageDetEndTime": {
+            "meaning": "模具入库明细表结束时间",
+            "reachable": true,
+            "name": "模具入库明细表结束时间"
+        },
+        "modInstorageDetEndTimeRequired": {
+            "meaning": "模具入库明细表最后需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表最后需时"
+        },
+        "modInstorageDetEngName": {
+            "meaning": "模具入库明细表英文名称",
+            "reachable": true,
+            "name": "模具入库明细表英文名称"
+        },
+        "modInstorageDetEquipmentId": {
+            "meaning": "模具入库明细表设备id",
+            "reachable": true,
+            "name": "模具入库明细表设备id"
+        },
+        "modInstorageDetExchangeRateId": {
+            "meaning": "模具入库明细表币种汇率id",
+            "reachable": true,
+            "name": "模具入库明细表币种汇率id"
+        },
+        "modInstorageDetExtension": {
+            "meaning": "模具入库明细表扩展数据",
+            "reachable": true,
+            "name": "模具入库明细表扩展数据"
+        },
+        "modInstorageDetExternalState": {
+            "meaning": "模具入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "模具入库明细表上流程状态位"
+        },
+        "modInstorageDetFilterClazz": {
+            "meaning": "模具入库明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "模具入库明细表冗余字段用于筛选"
+        },
+        "modInstorageDetFlags": {
+            "meaning": "模具入库明细表63位标志位",
+            "reachable": true,
+            "name": "模具入库明细表63位标志位"
+        },
+        "modInstorageDetFromAuditDate": {
+            "meaning": "modInstorageDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromBeginTime": {
+            "meaning": "modInstorageDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromCreateTime": {
+            "meaning": "modInstorageDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDateExtra1": {
+            "meaning": "modInstorageDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDateExtra2": {
+            "meaning": "modInstorageDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDateExtra3": {
+            "meaning": "modInstorageDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDateExtra4": {
+            "meaning": "modInstorageDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDateExtra5": {
+            "meaning": "modInstorageDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromDeliveryDate": {
+            "meaning": "modInstorageDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromEndTime": {
+            "meaning": "modInstorageDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromReceiptDate": {
+            "meaning": "modInstorageDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFromUpdateTime": {
+            "meaning": "modInstorageDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetFscType": {
+            "meaning": "模具入库明细表FSC声明",
+            "reachable": true,
+            "name": "模具入库明细表FSC声明"
+        },
+        "modInstorageDetGenerativePeople": {
+            "meaning": "模具入库明细表下发人",
+            "reachable": true,
+            "name": "模具入库明细表下发人"
+        },
+        "modInstorageDetGenerativeState": {
+            "meaning": "模具入库明细表下发状态",
+            "reachable": true,
+            "name": "模具入库明细表下发状态"
+        },
+        "modInstorageDetGoodsId": {
+            "meaning": "模具入库明细表货（包）id",
+            "reachable": true,
+            "name": "模具入库明细表货"
+        },
+        "modInstorageDetGroovyScript": {
+            "meaning": "模具入库明细表groovy脚本",
+            "reachable": true,
+            "name": "模具入库明细表groovy脚本"
+        },
+        "modInstorageDetGropeCode": {
+            "meaning": "模具入库明细表搜索码",
+            "reachable": true,
+            "name": "模具入库明细表搜索码"
+        },
+        "modInstorageDetGrossWeightPerBox": {
+            "meaning": "模具入库明细表每箱毛重",
+            "reachable": true,
+            "name": "模具入库明细表每箱毛重"
+        },
+        "modInstorageDetId": {
+            "meaning": "模具入库明细表PK",
+            "is_primary": true,
+            "reachable": true,
+            "name": "模具入库明细表PK"
+        },
+        "modInstorageDetInUsed": {
+            "meaning": "模具入库明细表是否被使用",
+            "reachable": true,
+            "name": "模具入库明细表是否被使用"
+        },
+        "modInstorageDetInvTypeTaxRateId": {
+            "meaning": "模具入库明细表发票税率id",
+            "reachable": true,
+            "name": "模具入库明细表发票税率id"
+        },
+        "modInstorageDetInventoryQuantity": {
+            "meaning": "模具入库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)",
+            "reachable": true,
+            "name": "模具入库明细表库存数量"
+        },
+        "modInstorageDetIsBanned": {
+            "meaning": "模具入库明细表是否被禁用",
+            "reachable": true,
+            "name": "模具入库明细表是否被禁用"
+        },
+        "modInstorageDetIsDeleted": {
+            "meaning": "模具入库明细表是否被删除",
+            "reachable": true,
+            "name": "模具入库明细表是否被删除"
+        },
+        "modInstorageDetIsLeaf": {
+            "meaning": "模具入库明细表是否叶子节点",
+            "reachable": true,
+            "name": "模具入库明细表是否叶子节点"
+        },
+        "modInstorageDetIsMainFlow": {
+            "meaning": "模具入库明细表是否是主流程",
+            "reachable": true,
+            "name": "模具入库明细表是否是主流程"
+        },
+        "modInstorageDetIsManualModificationDate": {
+            "meaning": "模具入库明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "模具入库明细表是否手动修改计划生产时间"
+        },
+        "modInstorageDetIsolation": {
+            "meaning": "模具入库明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "模具入库明细表智能节点数据隔离标识"
+        },
+        "modInstorageDetJsScript": {
+            "meaning": "模具入库明细表js脚本",
+            "reachable": true,
+            "name": "模具入库明细表js脚本"
+        },
+        "modInstorageDetLocalCurrencyTotalAmount": {
+            "meaning": "模具入库明细表本币总金额",
+            "reachable": true,
+            "name": "模具入库明细表本币总金额"
+        },
+        "modInstorageDetLocalCurrencyUnitPrice": {
+            "meaning": "模具入库明细表本币单价",
+            "reachable": true,
+            "name": "模具入库明细表本币单价"
+        },
+        "modInstorageDetMatBatchId": {
+            "meaning": "模具入库明细表物料批次id",
+            "reachable": true,
+            "name": "模具入库明细表物料批次id"
+        },
+        "modInstorageDetMaterialId": {
+            "meaning": "模具入库明细表物料id",
+            "reachable": true,
+            "name": "模具入库明细表物料id"
+        },
+        "modInstorageDetModInstorageActualTimeRequired": {
+            "meaning": "模具入库明细表实际需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表实际需时"
+        },
+        "modInstorageDetModInstorageAdjustmentTimeRequired": {
+            "meaning": "模具入库明细表调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "模具入库明细表调整需时"
+        },
+        "modInstorageDetModInstorageApplicationId": {
+            "meaning": "模具入库明细表应用ID",
+            "reachable": true,
+            "name": "模具入库明细表应用ID"
+        },
+        "modInstorageDetModInstorageAuditDate": {
+            "meaning": "模具入库明细表审核时间",
+            "reachable": true,
+            "name": "模具入库明细表审核时间"
+        },
+        "modInstorageDetModInstorageAuditStatus": {
+            "meaning": "模具入库明细表审核状态",
+            "reachable": true,
+            "name": "模具入库明细表审核状态"
+        },
+        "modInstorageDetModInstorageAvailableScheduleId": {
+            "meaning": "模具入库明细表可用日程id",
+            "reachable": true,
+            "name": "模具入库明细表可用日程id"
+        },
+        "modInstorageDetModInstorageBeginTime": {
+            "meaning": "模具入库明细表开始时间",
+            "reachable": true,
+            "name": "模具入库明细表开始时间"
+        },
+        "modInstorageDetModInstorageBizVersion": {
+            "meaning": "模具入库明细表业务自定义版本号",
+            "reachable": true,
+            "name": "模具入库明细表业务自定义版本号"
+        },
+        "modInstorageDetModInstorageBriefName": {
+            "meaning": "模具入库明细表简称",
+            "reachable": true,
+            "name": "模具入库明细表简称"
+        },
+        "modInstorageDetModInstorageBusDivisId": {
+            "meaning": "模具入库明细表事业部id",
+            "reachable": true,
+            "name": "模具入库明细表事业部id"
+        },
+        "modInstorageDetModInstorageClazz": {
+            "meaning": "模具入库明细表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "模具入库明细表子类"
+        },
+        "modInstorageDetModInstorageClosedReason": {
+            "meaning": "模具入库明细表结案原因",
+            "reachable": true,
+            "name": "模具入库明细表结案原因"
+        },
+        "modInstorageDetModInstorageClosedStatus": {
+            "meaning": "模具入库明细表结案状态",
+            "reachable": true,
+            "name": "模具入库明细表结案状态"
+        },
+        "modInstorageDetModInstorageComment": {
+            "meaning": "模具入库明细表评论",
+            "reachable": true,
+            "name": "模具入库明细表评论"
+        },
+        "modInstorageDetModInstorageCompleteQuantity": {
+            "meaning": "模具入库明细表完成数量",
+            "reachable": true,
+            "name": "模具入库明细表完成数量"
+        },
+        "modInstorageDetModInstorageCompleteStatus": {
+            "meaning": "模具入库明细表完成状态",
+            "reachable": true,
+            "name": "模具入库明细表完成状态"
+        },
+        "modInstorageDetModInstorageCreateTime": {
+            "meaning": "模具入库明细表创建时间",
+            "reachable": true,
+            "name": "模具入库明细表创建时间"
+        },
+        "modInstorageDetModInstorageCreator": {
+            "meaning": "模具入库明细表创建人",
+            "reachable": true,
+            "name": "模具入库明细表创建人"
+        },
+        "modInstorageDetModInstorageCreatorId": {
+            "meaning": "模具入库明细表创建人ID",
+            "reachable": true,
+            "name": "模具入库明细表创建人ID"
+        },
+        "modInstorageDetModInstorageDateExtra1": {
+            "meaning": "模具入库明细表扩展时间1",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间1"
+        },
+        "modInstorageDetModInstorageDateExtra2": {
+            "meaning": "模具入库明细表扩展时间2",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间2"
+        },
+        "modInstorageDetModInstorageDateExtra3": {
+            "meaning": "模具入库明细表扩展时间3",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间3"
+        },
+        "modInstorageDetModInstorageDateExtra4": {
+            "meaning": "模具入库明细表扩展时间4",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间4"
+        },
+        "modInstorageDetModInstorageDateExtra5": {
+            "meaning": "模具入库明细表扩展时间5",
+            "reachable": true,
+            "name": "模具入库明细表扩展时间5"
+        },
+        "modInstorageDetModInstorageDefaultType": {
+            "meaning": "模具入库明细表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "模具入库明细表智能节点主类型"
+        },
+        "modInstorageDetModInstorageDeliveryDate": {
+            "meaning": "模具入库明细表交货日期",
+            "reachable": true,
+            "name": "模具入库明细表交货日期"
+        },
+        "modInstorageDetModInstorageDepId": {
+            "meaning": "模具入库明细表部门id",
+            "reachable": true,
+            "name": "模具入库明细表部门id"
+        },
+        "modInstorageDetModInstorageDescription": {
+            "meaning": "模具入库明细表描述",
+            "reachable": true,
+            "name": "模具入库明细表描述"
+        },
+        "modInstorageDetModInstorageEndTime": {
+            "meaning": "模具入库明细表结束时间",
+            "reachable": true,
+            "name": "模具入库明细表结束时间"
+        },
+        "modInstorageDetModInstorageEndTimeRequired": {
+            "meaning": "模具入库明细表最后需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表最后需时"
+        },
+        "modInstorageDetModInstorageEngName": {
+            "meaning": "模具入库明细表英文名称",
+            "reachable": true,
+            "name": "模具入库明细表英文名称"
+        },
+        "modInstorageDetModInstorageEquipmentId": {
+            "meaning": "模具入库明细表设备id",
+            "reachable": true,
+            "name": "模具入库明细表设备id"
+        },
+        "modInstorageDetModInstorageExchangeRateId": {
+            "meaning": "模具入库明细表币种汇率id",
+            "reachable": true,
+            "name": "模具入库明细表币种汇率id"
+        },
+        "modInstorageDetModInstorageExtension": {
+            "meaning": "模具入库明细表扩展数据",
+            "reachable": true,
+            "name": "模具入库明细表扩展数据"
+        },
+        "modInstorageDetModInstorageExternalState": {
+            "meaning": "模具入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "模具入库明细表上流程状态位"
+        },
+        "modInstorageDetModInstorageFilterClazz": {
+            "meaning": "模具入库明细表冗余字段用于筛选",
+            "reachable": false,
+            "name": "模具入库明细表冗余字段用于筛选"
+        },
+        "modInstorageDetModInstorageFlags": {
+            "meaning": "模具入库明细表63位标志位",
+            "reachable": true,
+            "name": "模具入库明细表63位标志位"
+        },
+        "modInstorageDetModInstorageFromAuditDate": {
+            "meaning": "modInstorageDetModInstorageFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromBeginTime": {
+            "meaning": "modInstorageDetModInstorageFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromCreateTime": {
+            "meaning": "modInstorageDetModInstorageFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDateExtra1": {
+            "meaning": "modInstorageDetModInstorageFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDateExtra2": {
+            "meaning": "modInstorageDetModInstorageFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDateExtra3": {
+            "meaning": "modInstorageDetModInstorageFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDateExtra4": {
+            "meaning": "modInstorageDetModInstorageFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDateExtra5": {
+            "meaning": "modInstorageDetModInstorageFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromDeliveryDate": {
+            "meaning": "modInstorageDetModInstorageFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromEndTime": {
+            "meaning": "modInstorageDetModInstorageFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromReceiptDate": {
+            "meaning": "modInstorageDetModInstorageFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFromUpdateTime": {
+            "meaning": "modInstorageDetModInstorageFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageFscType": {
+            "meaning": "模具入库明细表FSC声明",
+            "reachable": true,
+            "name": "模具入库明细表FSC声明"
+        },
+        "modInstorageDetModInstorageGenerativePeople": {
+            "meaning": "模具入库明细表下发人",
+            "reachable": true,
+            "name": "模具入库明细表下发人"
+        },
+        "modInstorageDetModInstorageGenerativeState": {
+            "meaning": "模具入库明细表下发状态",
+            "reachable": true,
+            "name": "模具入库明细表下发状态"
+        },
+        "modInstorageDetModInstorageGroovyScript": {
+            "meaning": "模具入库明细表groovy脚本",
+            "reachable": true,
+            "name": "模具入库明细表groovy脚本"
+        },
+        "modInstorageDetModInstorageGropeCode": {
+            "meaning": "模具入库明细表搜索码",
+            "reachable": true,
+            "name": "模具入库明细表搜索码"
+        },
+        "modInstorageDetModInstorageId": {
+            "meaning": "模具入库明细表PK",
+            "reachable": true,
+            "name": "模具入库明细表PK"
+        },
+        "modInstorageDetModInstorageInUsed": {
+            "meaning": "模具入库明细表是否被使用",
+            "reachable": true,
+            "name": "模具入库明细表是否被使用"
+        },
+        "modInstorageDetModInstorageInvTypeTaxRateId": {
+            "meaning": "模具入库明细表发票税率id",
+            "reachable": true,
+            "name": "模具入库明细表发票税率id"
+        },
+        "modInstorageDetModInstorageIsBanned": {
+            "meaning": "模具入库明细表是否被禁用",
+            "reachable": true,
+            "name": "模具入库明细表是否被禁用"
+        },
+        "modInstorageDetModInstorageIsDeleted": {
+            "meaning": "模具入库明细表是否被删除",
+            "reachable": true,
+            "name": "模具入库明细表是否被删除"
+        },
+        "modInstorageDetModInstorageIsLeaf": {
+            "meaning": "模具入库明细表是否叶子节点",
+            "reachable": true,
+            "name": "模具入库明细表是否叶子节点"
+        },
+        "modInstorageDetModInstorageIsMainFlow": {
+            "meaning": "模具入库明细表是否是主流程",
+            "reachable": true,
+            "name": "模具入库明细表是否是主流程"
+        },
+        "modInstorageDetModInstorageIsManualModificationDate": {
+            "meaning": "模具入库明细表是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "模具入库明细表是否手动修改计划生产时间"
+        },
+        "modInstorageDetModInstorageIsolation": {
+            "meaning": "模具入库明细表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "模具入库明细表智能节点数据隔离标识"
+        },
+        "modInstorageDetModInstorageJsScript": {
+            "meaning": "模具入库明细表js脚本",
+            "reachable": true,
+            "name": "模具入库明细表js脚本"
+        },
+        "modInstorageDetModInstorageMaterialId": {
+            "meaning": "模具入库明细表物料id",
+            "reachable": true,
+            "name": "模具入库明细表物料id"
+        },
+        "modInstorageDetModInstorageName": {
+            "meaning": "模具入库明细表智能节点名",
+            "reachable": true,
+            "name": "模具入库明细表智能节点名"
+        },
+        "modInstorageDetModInstorageNameCodeSearch": {
+            "meaning": "模具入库明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "模具入库明细表name、user_code模糊搜索"
+        },
+        "modInstorageDetModInstorageNumberExtra1": {
+            "meaning": "模具入库明细表扩展数量1",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量1"
+        },
+        "modInstorageDetModInstorageNumberExtra2": {
+            "meaning": "模具入库明细表扩展数量2",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量2"
+        },
+        "modInstorageDetModInstorageNumberExtra3": {
+            "meaning": "模具入库明细表扩展数量3",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量3"
+        },
+        "modInstorageDetModInstorageNumberExtra4": {
+            "meaning": "模具入库明细表扩展数量4",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量4"
+        },
+        "modInstorageDetModInstorageNumberExtra5": {
+            "meaning": "模具入库明细表扩展数量5",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量5"
+        },
+        "modInstorageDetModInstorageOrgId": {
+            "meaning": "模具入库明细表机构id(客户/供应商)",
+            "reachable": true,
+            "name": "模具入库明细表机构id"
+        },
+        "modInstorageDetModInstorageParentId": {
+            "meaning": "模具入库明细表父节点ID",
+            "reachable": true,
+            "name": "模具入库明细表父节点ID"
+        },
+        "modInstorageDetModInstoragePlannedOutputQuantity": {
+            "meaning": "模具入库明细表计划产出数量",
+            "reachable": true,
+            "name": "模具入库明细表计划产出数量"
+        },
+        "modInstorageDetModInstoragePlannedTimeRequired": {
+            "meaning": "模具入库明细表计划需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表计划需时"
+        },
+        "modInstorageDetModInstoragePrintTimes": {
+            "meaning": "模具入库明细表打印次数",
+            "reachable": true,
+            "name": "模具入库明细表打印次数"
+        },
+        "modInstorageDetModInstoragePriority": {
+            "meaning": "模具入库明细表优先级",
+            "reachable": true,
+            "name": "模具入库明细表优先级"
+        },
+        "modInstorageDetModInstorageProcessInstanceId": {
+            "meaning": "模具入库明细表流程实例ID",
+            "reachable": true,
+            "name": "模具入库明细表流程实例ID"
+        },
+        "modInstorageDetModInstorageProductionProcessesTypeId": {
+            "meaning": "模具入库明细表工序类型ID",
+            "reachable": true,
+            "name": "模具入库明细表工序类型ID"
+        },
+        "modInstorageDetModInstorageProductionShiftId": {
+            "meaning": "模具入库明细表生产班次ID",
+            "reachable": true,
+            "name": "模具入库明细表生产班次ID"
+        },
+        "modInstorageDetModInstorageQuantity": {
+            "meaning": "模具入库明细表任务数量",
+            "reachable": true,
+            "name": "模具入库明细表任务数量"
+        },
+        "modInstorageDetModInstorageReceiptDate": {
+            "meaning": "模具入库明细表单据日期",
+            "reachable": true,
+            "name": "模具入库明细表单据日期"
+        },
+        "modInstorageDetModInstorageReceiptType": {
+            "meaning": "模具入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "模具入库明细表单据类型"
+        },
+        "modInstorageDetModInstorageRelatedTasksId": {
+            "meaning": "模具入库明细表关联任务id",
+            "reachable": true,
+            "name": "模具入库明细表关联任务id"
+        },
+        "modInstorageDetModInstorageSerialNumber": {
+            "meaning": "模具入库明细表顺序号",
+            "reachable": true,
+            "name": "模具入库明细表顺序号"
+        },
+        "modInstorageDetModInstorageSettMethod": {
+            "meaning": "模具入库明细表结算方式",
+            "reachable": true,
+            "name": "模具入库明细表结算方式"
+        },
+        "modInstorageDetModInstorageSettOrgId": {
+            "meaning": "模具入库明细表结算机构id(客户/供应商)",
+            "reachable": true,
+            "name": "模具入库明细表结算机构id"
+        },
+        "modInstorageDetModInstorageSource": {
+            "meaning": "模具入库明细表源",
+            "reachable": true,
+            "name": "模具入库明细表源"
+        },
+        "modInstorageDetModInstorageSourceType": {
+            "meaning": "模具入库明细表来源类型",
+            "reachable": true,
+            "name": "模具入库明细表来源类型"
+        },
+        "modInstorageDetModInstorageStaffId": {
+            "meaning": "模具入库明细表员工id(入/出库员工)",
+            "reachable": true,
+            "name": "模具入库明细表员工id"
+        },
+        "modInstorageDetModInstorageState": {
+            "meaning": "模具入库明细表通用状态",
+            "reachable": true,
+            "name": "模具入库明细表通用状态"
+        },
+        "modInstorageDetModInstorageSystemCode": {
+            "meaning": "模具入库明细表系统编码",
+            "reachable": true,
+            "name": "模具入库明细表系统编码"
+        },
+        "modInstorageDetModInstorageTarget": {
+            "meaning": "模具入库明细表目标",
+            "reachable": true,
+            "name": "模具入库明细表目标"
+        },
+        "modInstorageDetModInstorageTaskNodeName": {
+            "meaning": "模具入库明细表任务节点名称",
+            "reachable": true,
+            "name": "模具入库明细表任务节点名称"
+        },
+        "modInstorageDetModInstorageTaskNodeType": {
+            "meaning": "模具入库明细表任务节点类型",
+            "reachable": true,
+            "name": "模具入库明细表任务节点类型"
+        },
+        "modInstorageDetModInstorageTenantId": {
+            "meaning": "模具入库明细表租户id",
+            "reachable": true,
+            "name": "模具入库明细表租户id"
+        },
+        "modInstorageDetModInstorageThirdPartyClass": {
+            "meaning": "模具入库明细表第三方分类",
+            "reachable": true,
+            "name": "模具入库明细表第三方分类"
+        },
+        "modInstorageDetModInstorageThirdPartyId": {
+            "meaning": "模具入库明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "模具入库明细表第三方系统中的唯一ID"
+        },
+        "modInstorageDetModInstorageThirdPartyName": {
+            "meaning": "模具入库明细表第三方名称",
+            "reachable": true,
+            "name": "模具入库明细表第三方名称"
+        },
+        "modInstorageDetModInstorageToAuditDate": {
+            "meaning": "modInstorageDetModInstorageToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToBeginTime": {
+            "meaning": "modInstorageDetModInstorageToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToCreateTime": {
+            "meaning": "modInstorageDetModInstorageToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDateExtra1": {
+            "meaning": "modInstorageDetModInstorageToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDateExtra2": {
+            "meaning": "modInstorageDetModInstorageToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDateExtra3": {
+            "meaning": "modInstorageDetModInstorageToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDateExtra4": {
+            "meaning": "modInstorageDetModInstorageToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDateExtra5": {
+            "meaning": "modInstorageDetModInstorageToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToDeliveryDate": {
+            "meaning": "modInstorageDetModInstorageToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToEndTime": {
+            "meaning": "modInstorageDetModInstorageToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToReceiptDate": {
+            "meaning": "modInstorageDetModInstorageToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageToUpdateTime": {
+            "meaning": "modInstorageDetModInstorageToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetModInstorageUnitCode": {
+            "meaning": "模具入库明细表单位id",
+            "reachable": true,
+            "name": "模具入库明细表单位id"
+        },
+        "modInstorageDetModInstorageUpdateTime": {
+            "meaning": "模具入库明细表更新时间",
+            "reachable": true,
+            "name": "模具入库明细表更新时间"
+        },
+        "modInstorageDetModInstorageUpdater": {
+            "meaning": "模具入库明细表更新人",
+            "reachable": true,
+            "name": "模具入库明细表更新人"
+        },
+        "modInstorageDetModInstorageUpdaterId": {
+            "meaning": "模具入库明细表更新人ID",
+            "reachable": true,
+            "name": "模具入库明细表更新人ID"
+        },
+        "modInstorageDetModInstorageUserCode": {
+            "meaning": "模具入库明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "模具入库明细表智能节点的唯一编码"
+        },
+        "modInstorageDetModInstorageVarExtra1": {
+            "meaning": "模具入库明细表扩展1",
+            "reachable": true,
+            "name": "模具入库明细表扩展1"
+        },
+        "modInstorageDetModInstorageVarExtra2": {
+            "meaning": "模具入库明细表扩展2",
+            "reachable": true,
+            "name": "模具入库明细表扩展2"
+        },
+        "modInstorageDetModInstorageVarExtra3": {
+            "meaning": "模具入库明细表扩展3",
+            "reachable": true,
+            "name": "模具入库明细表扩展3"
+        },
+        "modInstorageDetModInstorageVarExtra4": {
+            "meaning": "模具入库明细表扩展4",
+            "reachable": true,
+            "name": "模具入库明细表扩展4"
+        },
+        "modInstorageDetModInstorageVarExtra5": {
+            "meaning": "模具入库明细表扩展5",
+            "reachable": true,
+            "name": "模具入库明细表扩展5"
+        },
+        "modInstorageDetModInstorageVersion": {
+            "meaning": "模具入库明细表版本号",
+            "reachable": true,
+            "name": "模具入库明细表版本号"
+        },
+        "modInstorageDetName": {
+            "meaning": "模具入库明细表智能节点名",
+            "reachable": true,
+            "name": "模具入库明细表智能节点名"
+        },
+        "modInstorageDetNameCodeSearch": {
+            "meaning": "模具入库明细表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "模具入库明细表name、user_code模糊搜索"
+        },
+        "modInstorageDetNetWeightPerBox": {
+            "meaning": "模具入库明细表每箱净重",
+            "reachable": true,
+            "name": "模具入库明细表每箱净重"
+        },
+        "modInstorageDetNumberExtra1": {
+            "meaning": "模具入库明细表扩展数量1",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量1"
+        },
+        "modInstorageDetNumberExtra2": {
+            "meaning": "模具入库明细表扩展数量2",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量2"
+        },
+        "modInstorageDetNumberExtra3": {
+            "meaning": "模具入库明细表扩展数量3",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量3"
+        },
+        "modInstorageDetNumberExtra4": {
+            "meaning": "模具入库明细表扩展数量4",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量4"
+        },
+        "modInstorageDetNumberExtra5": {
+            "meaning": "模具入库明细表扩展数量5",
+            "reachable": true,
+            "name": "模具入库明细表扩展数量5"
+        },
+        "modInstorageDetOrgId": {
+            "meaning": "模具入库明细表机构id(客户/供应商)",
+            "reachable": true,
+            "name": "模具入库明细表机构id"
+        },
+        "modInstorageDetPackageMatId": {
+            "meaning": "模具入库明细表包装物料id",
+            "reachable": true,
+            "name": "模具入库明细表包装物料id"
+        },
+        "modInstorageDetParentId": {
+            "meaning": "模具入库明细表父节点ID",
+            "reachable": true,
+            "name": "模具入库明细表父节点ID"
+        },
+        "modInstorageDetPlannedOutputQuantity": {
+            "meaning": "模具入库明细表计划产出数量",
+            "reachable": true,
+            "name": "模具入库明细表计划产出数量"
+        },
+        "modInstorageDetPlannedTimeRequired": {
+            "meaning": "模具入库明细表计划需时(小时)",
+            "reachable": true,
+            "name": "模具入库明细表计划需时"
+        },
+        "modInstorageDetPrintTimes": {
+            "meaning": "模具入库明细表打印次数",
+            "reachable": true,
+            "name": "模具入库明细表打印次数"
+        },
+        "modInstorageDetPriority": {
+            "meaning": "模具入库明细表优先级",
+            "reachable": true,
+            "name": "模具入库明细表优先级"
+        },
+        "modInstorageDetProcessInstanceId": {
+            "meaning": "模具入库明细表流程实例ID",
+            "reachable": true,
+            "name": "模具入库明细表流程实例ID"
+        },
+        "modInstorageDetProductionProcessesTypeId": {
+            "meaning": "模具入库明细表工序类型ID",
+            "reachable": true,
+            "name": "模具入库明细表工序类型ID"
+        },
+        "modInstorageDetProductionShiftId": {
+            "meaning": "模具入库明细表生产班次ID",
+            "reachable": true,
+            "name": "模具入库明细表生产班次ID"
+        },
+        "modInstorageDetQuantity": {
+            "meaning": "模具入库明细表任务数量",
+            "reachable": true,
+            "name": "模具入库明细表任务数量"
+        },
+        "modInstorageDetQuotationUnitPriceIncludingTax": {
+            "meaning": "模具入库明细表报价单价（含税）",
+            "reachable": true,
+            "name": "模具入库明细表报价单价"
+        },
+        "modInstorageDetQuotationUnitPriceWithoutTax": {
+            "meaning": "模具入库明细表报价单价（不含税）",
+            "reachable": true,
+            "name": "模具入库明细表报价单价"
+        },
+        "modInstorageDetReceiptDate": {
+            "meaning": "模具入库明细表单据日期",
+            "reachable": true,
+            "name": "模具入库明细表单据日期"
+        },
+        "modInstorageDetReceiptType": {
+            "meaning": "模具入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "模具入库明细表单据类型"
+        },
+        "modInstorageDetRelatedTasksId": {
+            "meaning": "模具入库明细表关联任务id",
+            "reachable": true,
+            "name": "模具入库明细表关联任务id"
+        },
+        "modInstorageDetSerialNumber": {
+            "meaning": "模具入库明细表顺序号",
+            "reachable": true,
+            "name": "模具入库明细表顺序号"
+        },
+        "modInstorageDetSettMethod": {
+            "meaning": "模具入库明细表结算方式",
+            "reachable": true,
+            "name": "模具入库明细表结算方式"
+        },
+        "modInstorageDetSettOrgId": {
+            "meaning": "模具入库明细表结算机构id(客户/供应商)",
+            "reachable": true,
+            "name": "模具入库明细表结算机构id"
+        },
+        "modInstorageDetSettlementTotalAmount": {
+            "meaning": "模具入库明细表结算总金额",
+            "reachable": true,
+            "name": "模具入库明细表结算总金额"
+        },
+        "modInstorageDetSettlementUnitPrice": {
+            "meaning": "模具入库明细表结算单价",
+            "reachable": true,
+            "name": "模具入库明细表结算单价"
+        },
+        "modInstorageDetSingleWeight": {
+            "meaning": "模具入库明细表单重kg",
+            "reachable": true,
+            "name": "模具入库明细表单重kg"
+        },
+        "modInstorageDetSource": {
+            "meaning": "模具入库明细表源",
+            "reachable": true,
+            "name": "模具入库明细表源"
+        },
+        "modInstorageDetSourceType": {
+            "meaning": "模具入库明细表来源类型",
+            "reachable": true,
+            "name": "模具入库明细表来源类型"
+        },
+        "modInstorageDetState": {
+            "meaning": "模具入库明细表通用状态",
+            "reachable": true,
+            "name": "模具入库明细表通用状态"
+        },
+        "modInstorageDetStorageSpaceId": {
+            "meaning": "模具入库明细表库空间id",
+            "reachable": true,
+            "name": "模具入库明细表库空间id"
+        },
+        "modInstorageDetSystemCode": {
+            "meaning": "模具入库明细表系统编码",
+            "reachable": true,
+            "name": "模具入库明细表系统编码"
+        },
+        "modInstorageDetTarget": {
+            "meaning": "模具入库明细表目标",
+            "reachable": true,
+            "name": "模具入库明细表目标"
+        },
+        "modInstorageDetTaskNodeName": {
+            "meaning": "模具入库明细表任务节点名称",
+            "reachable": true,
+            "name": "模具入库明细表任务节点名称"
+        },
+        "modInstorageDetTaskNodeType": {
+            "meaning": "模具入库明细表任务节点类型",
+            "reachable": true,
+            "name": "模具入库明细表任务节点类型"
+        },
+        "modInstorageDetTenantId": {
+            "meaning": "模具入库明细表租户id",
+            "reachable": true,
+            "name": "模具入库明细表租户id"
+        },
+        "modInstorageDetThirdPartyClass": {
+            "meaning": "模具入库明细表第三方分类",
+            "reachable": true,
+            "name": "模具入库明细表第三方分类"
+        },
+        "modInstorageDetThirdPartyId": {
+            "meaning": "模具入库明细表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "模具入库明细表第三方系统中的唯一ID"
+        },
+        "modInstorageDetThirdPartyName": {
+            "meaning": "模具入库明细表第三方名称",
+            "reachable": true,
+            "name": "模具入库明细表第三方名称"
+        },
+        "modInstorageDetToAuditDate": {
+            "meaning": "modInstorageDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToBeginTime": {
+            "meaning": "modInstorageDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToCreateTime": {
+            "meaning": "modInstorageDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDateExtra1": {
+            "meaning": "modInstorageDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDateExtra2": {
+            "meaning": "modInstorageDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDateExtra3": {
+            "meaning": "modInstorageDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDateExtra4": {
+            "meaning": "modInstorageDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDateExtra5": {
+            "meaning": "modInstorageDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToDeliveryDate": {
+            "meaning": "modInstorageDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToEndTime": {
+            "meaning": "modInstorageDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToReceiptDate": {
+            "meaning": "modInstorageDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetToUpdateTime": {
+            "meaning": "modInstorageDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "modInstorageDetTotalAmount": {
+            "meaning": "模具入库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化",
+            "reachable": true,
+            "name": "模具入库明细表总金额"
+        },
+        "modInstorageDetTotalAmountIncludingTax": {
+            "meaning": "模具入库明细表总金额（含税）",
+            "reachable": true,
+            "name": "模具入库明细表总金额"
+        },
+        "modInstorageDetTotalAmountWithoutTax": {
+            "meaning": "模具入库明细表总金额（不含税）",
+            "reachable": true,
+            "name": "模具入库明细表总金额"
+        },
+        "modInstorageDetTotalWeightLot": {
+            "meaning": "模具入库明细表合计总重kg",
+            "reachable": true,
+            "name": "模具入库明细表合计总重kg"
+        },
+        "modInstorageDetTrayMatId": {
+            "meaning": "模具入库明细表托盘物料id",
+            "reachable": true,
+            "name": "模具入库明细表托盘物料id"
+        },
+        "modInstorageDetUnitCode": {
+            "meaning": "模具入库明细表单位id",
+            "reachable": true,
+            "name": "模具入库明细表单位id"
+        },
+        "modInstorageDetUnitPriceIncludingTax": {
+            "meaning": "模具入库明细表单价（含税）",
+            "reachable": true,
+            "name": "模具入库明细表单价"
+        },
+        "modInstorageDetUnitPriceWithoutTax": {
+            "meaning": "模具入库明细表单价（不含税）",
+            "reachable": true,
+            "name": "模具入库明细表单价"
+        },
+        "modInstorageDetUpdateTime": {
+            "meaning": "模具入库明细表更新时间",
+            "reachable": true,
+            "name": "模具入库明细表更新时间"
+        },
+        "modInstorageDetUpdater": {
+            "meaning": "模具入库明细表更新人",
+            "reachable": true,
+            "name": "模具入库明细表更新人"
+        },
+        "modInstorageDetUpdaterId": {
+            "meaning": "模具入库明细表更新人ID",
+            "reachable": true,
+            "name": "模具入库明细表更新人ID"
+        },
+        "modInstorageDetUserCode": {
+            "meaning": "模具入库明细表智能节点的唯一编码",
+            "reachable": true,
+            "name": "模具入库明细表智能节点的唯一编码"
+        },
+        "modInstorageDetVarExtra1": {
+            "meaning": "模具入库明细表扩展1",
+            "reachable": true,
+            "name": "模具入库明细表扩展1"
+        },
+        "modInstorageDetVarExtra2": {
+            "meaning": "模具入库明细表扩展2",
+            "reachable": true,
+            "name": "模具入库明细表扩展2"
+        },
+        "modInstorageDetVarExtra3": {
+            "meaning": "模具入库明细表扩展3",
+            "reachable": true,
+            "name": "模具入库明细表扩展3"
+        },
+        "modInstorageDetVarExtra4": {
+            "meaning": "模具入库明细表扩展4",
+            "reachable": true,
+            "name": "模具入库明细表扩展4"
+        },
+        "modInstorageDetVarExtra5": {
+            "meaning": "模具入库明细表扩展5",
+            "reachable": true,
+            "name": "模具入库明细表扩展5"
+        },
+        "modInstorageDetVersion": {
+            "meaning": "模具入库明细表版本号",
+            "reachable": true,
+            "name": "模具入库明细表版本号"
+        }
+    }
+}

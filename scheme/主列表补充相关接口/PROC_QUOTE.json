@@ -1,0 +1,606 @@
+{
+    "api_name": "/proc-quote/findList",
+    "table_name": "加工商报价",
+    "request": {
+        "procQuoteClazz": "PROC_QUOTE"
+    },
+    "mainTabClazz": "PROC_QUOTE",
+    "response": {
+        "procQuoteActualTimeRequired": {
+            "meaning": "加工商报价实际需时(小时)",
+            "reachable": true,
+            "name": "加工商报价实际需时"
+        },
+        "procQuoteAdjustmentTimeRequired": {
+            "meaning": "加工商报价调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "加工商报价调整需时"
+        },
+        "procQuoteApplicationId": {
+            "meaning": "加工商报价应用ID",
+            "reachable": true,
+            "name": "加工商报价应用ID"
+        },
+        "procQuoteAuditDate": {
+            "meaning": "加工商报价审核时间",
+            "reachable": true,
+            "name": "加工商报价审核时间"
+        },
+        "procQuoteAuditStatus": {
+            "meaning": "加工商报价审核状态",
+            "reachable": true,
+            "name": "加工商报价审核状态"
+        },
+        "procQuoteAvailableScheduleId": {
+            "meaning": "加工商报价可用日程id",
+            "reachable": true,
+            "name": "加工商报价可用日程id"
+        },
+        "procQuoteBeginTime": {
+            "meaning": "加工商报价开始时间",
+            "reachable": true,
+            "name": "加工商报价开始时间"
+        },
+        "procQuoteBizVersion": {
+            "meaning": "加工商报价业务自定义版本号",
+            "reachable": true,
+            "name": "加工商报价业务自定义版本号"
+        },
+        "procQuoteBriefName": {
+            "meaning": "加工商报价简称",
+            "reachable": true,
+            "name": "加工商报价简称"
+        },
+        "procQuoteBusDivisId": {
+            "meaning": "加工商报价事业部id",
+            "reachable": true,
+            "name": "加工商报价事业部id"
+        },
+        "procQuoteClazz": {
+            "meaning": "加工商报价子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "加工商报价子类"
+        },
+        "procQuoteClosedReason": {
+            "meaning": "加工商报价结案原因",
+            "reachable": true,
+            "name": "加工商报价结案原因"
+        },
+        "procQuoteClosedStatus": {
+            "meaning": "加工商报价结案状态",
+            "reachable": true,
+            "name": "加工商报价结案状态"
+        },
+        "procQuoteComment": {
+            "meaning": "加工商报价评论",
+            "reachable": true,
+            "name": "加工商报价评论"
+        },
+        "procQuoteCompleteQuantity": {
+            "meaning": "加工商报价完成数量",
+            "reachable": true,
+            "name": "加工商报价完成数量"
+        },
+        "procQuoteCompleteStatus": {
+            "meaning": "加工商报价完成状态",
+            "reachable": true,
+            "name": "加工商报价完成状态"
+        },
+        "procQuoteCreateTime": {
+            "meaning": "加工商报价创建时间",
+            "reachable": true,
+            "name": "加工商报价创建时间"
+        },
+        "procQuoteCreator": {
+            "meaning": "加工商报价创建人",
+            "reachable": true,
+            "name": "加工商报价创建人"
+        },
+        "procQuoteCreatorId": {
+            "meaning": "加工商报价创建人ID",
+            "reachable": true,
+            "name": "加工商报价创建人ID"
+        },
+        "procQuoteCurrencyId": {
+            "meaning": "加工商报价币种id",
+            "reachable": true,
+            "name": "加工商报价币种id"
+        },
+        "procQuoteDateExtra1": {
+            "meaning": "加工商报价扩展时间1",
+            "reachable": true,
+            "name": "加工商报价扩展时间1"
+        },
+        "procQuoteDateExtra2": {
+            "meaning": "加工商报价扩展时间2",
+            "reachable": true,
+            "name": "加工商报价扩展时间2"
+        },
+        "procQuoteDateExtra3": {
+            "meaning": "加工商报价扩展时间3",
+            "reachable": true,
+            "name": "加工商报价扩展时间3"
+        },
+        "procQuoteDateExtra4": {
+            "meaning": "加工商报价扩展时间4",
+            "reachable": true,
+            "name": "加工商报价扩展时间4"
+        },
+        "procQuoteDateExtra5": {
+            "meaning": "加工商报价扩展时间5",
+            "reachable": true,
+            "name": "加工商报价扩展时间5"
+        },
+        "procQuoteDefaultType": {
+            "meaning": "加工商报价智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "加工商报价智能节点主类型"
+        },
+        "procQuoteDeliveryDate": {
+            "meaning": "加工商报价交货日期",
+            "reachable": true,
+            "name": "加工商报价交货日期"
+        },
+        "procQuoteDescription": {
+            "meaning": "加工商报价描述",
+            "reachable": true,
+            "name": "加工商报价描述"
+        },
+        "procQuoteEndTime": {
+            "meaning": "加工商报价结束时间",
+            "reachable": true,
+            "name": "加工商报价结束时间"
+        },
+        "procQuoteEndTimeRequired": {
+            "meaning": "加工商报价最后需时(小时)",
+            "reachable": true,
+            "name": "加工商报价最后需时"
+        },
+        "procQuoteEngName": {
+            "meaning": "加工商报价英文名称",
+            "reachable": true,
+            "name": "加工商报价英文名称"
+        },
+        "procQuoteEquipmentId": {
+            "meaning": "加工商报价设备id",
+            "reachable": true,
+            "name": "加工商报价设备id"
+        },
+        "procQuoteExchangeRateId": {
+            "meaning": "加工商报价币种汇率id",
+            "reachable": true,
+            "name": "加工商报价币种汇率id"
+        },
+        "procQuoteExtension": {
+            "meaning": "加工商报价扩展数据",
+            "reachable": true,
+            "name": "加工商报价扩展数据"
+        },
+        "procQuoteExternalState": {
+            "meaning": "加工商报价上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "加工商报价上流程状态位"
+        },
+        "procQuoteFilterClazz": {
+            "meaning": "加工商报价冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商报价冗余字段用于筛选"
+        },
+        "procQuoteFlags": {
+            "meaning": "加工商报价63位标志位",
+            "reachable": true,
+            "name": "加工商报价63位标志位"
+        },
+        "procQuoteFromAuditDate": {
+            "meaning": "procQuoteFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromBeginTime": {
+            "meaning": "procQuoteFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromCreateTime": {
+            "meaning": "procQuoteFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDateExtra1": {
+            "meaning": "procQuoteFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDateExtra2": {
+            "meaning": "procQuoteFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDateExtra3": {
+            "meaning": "procQuoteFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDateExtra4": {
+            "meaning": "procQuoteFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDateExtra5": {
+            "meaning": "procQuoteFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromDeliveryDate": {
+            "meaning": "procQuoteFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromEndTime": {
+            "meaning": "procQuoteFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromReceiptDate": {
+            "meaning": "procQuoteFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFromUpdateTime": {
+            "meaning": "procQuoteFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteFscType": {
+            "meaning": "加工商报价FSC声明",
+            "reachable": true,
+            "name": "加工商报价FSC声明"
+        },
+        "procQuoteGenerativePeople": {
+            "meaning": "加工商报价下发人",
+            "reachable": true,
+            "name": "加工商报价下发人"
+        },
+        "procQuoteGenerativeState": {
+            "meaning": "加工商报价下发状态",
+            "reachable": true,
+            "name": "加工商报价下发状态"
+        },
+        "procQuoteGroovyScript": {
+            "meaning": "加工商报价groovy脚本",
+            "reachable": true,
+            "name": "加工商报价groovy脚本"
+        },
+        "procQuoteGropeCode": {
+            "meaning": "加工商报价搜索码",
+            "reachable": true,
+            "name": "加工商报价搜索码"
+        },
+        "procQuoteId": {
+            "meaning": "加工商报价主键ID",
+            "is_primary": true,
+            "reachable": true,
+            "name": "加工商报价主键ID"
+        },
+        "procQuoteInUsed": {
+            "meaning": "加工商报价是否被使用",
+            "reachable": true,
+            "name": "加工商报价是否被使用"
+        },
+        "procQuoteInvTypeTaxRateId": {
+            "meaning": "加工商报价发票税率id",
+            "reachable": true,
+            "name": "加工商报价发票税率id"
+        },
+        "procQuoteIsBanned": {
+            "meaning": "加工商报价是否被禁用",
+            "reachable": true,
+            "name": "加工商报价是否被禁用"
+        },
+        "procQuoteIsDeleted": {
+            "meaning": "加工商报价是否被删除",
+            "reachable": true,
+            "name": "加工商报价是否被删除"
+        },
+        "procQuoteIsLeaf": {
+            "meaning": "加工商报价是否叶子节点",
+            "reachable": true,
+            "name": "加工商报价是否叶子节点"
+        },
+        "procQuoteIsMainFlow": {
+            "meaning": "加工商报价是否是主流程",
+            "reachable": true,
+            "name": "加工商报价是否是主流程"
+        },
+        "procQuoteIsManualModificationDate": {
+            "meaning": "加工商报价是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "加工商报价是否手动修改计划生产时间"
+        },
+        "procQuoteIsolation": {
+            "meaning": "加工商报价智能节点数据隔离标识",
+            "reachable": true,
+            "name": "加工商报价智能节点数据隔离标识"
+        },
+        "procQuoteJsScript": {
+            "meaning": "加工商报价js脚本",
+            "reachable": true,
+            "name": "加工商报价js脚本"
+        },
+        "procQuoteMaterialId": {
+            "meaning": "加工商报价物料id",
+            "reachable": true,
+            "name": "加工商报价物料id"
+        },
+        "procQuoteName": {
+            "meaning": "加工商报价智能节点名",
+            "reachable": true,
+            "name": "加工商报价智能节点名"
+        },
+        "procQuoteNameCodeSearch": {
+            "meaning": "加工商报价name、user_code模糊搜索",
+            "reachable": true,
+            "name": "加工商报价name、user_code模糊搜索"
+        },
+        "procQuoteNumberExtra1": {
+            "meaning": "加工商报价扩展数量1",
+            "reachable": true,
+            "name": "加工商报价扩展数量1"
+        },
+        "procQuoteNumberExtra2": {
+            "meaning": "加工商报价扩展数量2",
+            "reachable": true,
+            "name": "加工商报价扩展数量2"
+        },
+        "procQuoteNumberExtra3": {
+            "meaning": "加工商报价扩展数量3",
+            "reachable": true,
+            "name": "加工商报价扩展数量3"
+        },
+        "procQuoteNumberExtra4": {
+            "meaning": "加工商报价扩展数量4",
+            "reachable": true,
+            "name": "加工商报价扩展数量4"
+        },
+        "procQuoteNumberExtra5": {
+            "meaning": "加工商报价扩展数量5",
+            "reachable": true,
+            "name": "加工商报价扩展数量5"
+        },
+        "procQuoteParentId": {
+            "meaning": "加工商报价父节点ID",
+            "reachable": true,
+            "name": "加工商报价父节点ID"
+        },
+        "procQuotePartnerId": {
+            "meaning": "加工商报价合作方id 加工商、供应商、客户",
+            "reachable": true,
+            "name": "加工商报价合作方id"
+        },
+        "procQuotePlannedOutputQuantity": {
+            "meaning": "加工商报价计划产出数量",
+            "reachable": true,
+            "name": "加工商报价计划产出数量"
+        },
+        "procQuotePlannedTimeRequired": {
+            "meaning": "加工商报价计划需时(小时)",
+            "reachable": true,
+            "name": "加工商报价计划需时"
+        },
+        "procQuotePrintTimes": {
+            "meaning": "加工商报价打印次数",
+            "reachable": true,
+            "name": "加工商报价打印次数"
+        },
+        "procQuotePriority": {
+            "meaning": "加工商报价优先级",
+            "reachable": true,
+            "name": "加工商报价优先级"
+        },
+        "procQuoteProcessInstanceId": {
+            "meaning": "加工商报价流程实例ID",
+            "reachable": true,
+            "name": "加工商报价流程实例ID"
+        },
+        "procQuoteProductionProcessesTypeId": {
+            "meaning": "加工商报价工序类型ID",
+            "reachable": true,
+            "name": "加工商报价工序类型ID"
+        },
+        "procQuoteProductionShiftId": {
+            "meaning": "加工商报价生产班次ID",
+            "reachable": true,
+            "name": "加工商报价生产班次ID"
+        },
+        "procQuoteQuantity": {
+            "meaning": "加工商报价任务数量",
+            "reachable": true,
+            "name": "加工商报价任务数量"
+        },
+        "procQuoteReceiptDate": {
+            "meaning": "加工商报价单据日期",
+            "reachable": true,
+            "name": "加工商报价单据日期"
+        },
+        "procQuoteReceiptType": {
+            "meaning": "加工商报价单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "加工商报价单据类型"
+        },
+        "procQuoteRelatedTasksId": {
+            "meaning": "加工商报价关联任务id",
+            "reachable": true,
+            "name": "加工商报价关联任务id"
+        },
+        "procQuoteSerialNumber": {
+            "meaning": "加工商报价顺序号",
+            "reachable": true,
+            "name": "加工商报价顺序号"
+        },
+        "procQuoteSource": {
+            "meaning": "加工商报价源",
+            "reachable": true,
+            "name": "加工商报价源"
+        },
+        "procQuoteSourceType": {
+            "meaning": "加工商报价来源类型",
+            "reachable": true,
+            "name": "加工商报价来源类型"
+        },
+        "procQuoteState": {
+            "meaning": "加工商报价通用状态",
+            "reachable": true,
+            "name": "加工商报价通用状态"
+        },
+        "procQuoteSystemCode": {
+            "meaning": "加工商报价系统编码",
+            "reachable": true,
+            "name": "加工商报价系统编码"
+        },
+        "procQuoteTarget": {
+            "meaning": "加工商报价目标",
+            "reachable": true,
+            "name": "加工商报价目标"
+        },
+        "procQuoteTaskNodeName": {
+            "meaning": "加工商报价任务节点名称",
+            "reachable": true,
+            "name": "加工商报价任务节点名称"
+        },
+        "procQuoteTenantId": {
+            "meaning": "加工商报价租户ID",
+            "reachable": true,
+            "name": "加工商报价租户ID"
+        },
+        "procQuoteThirdPartyClass": {
+            "meaning": "加工商报价第三方分类",
+            "reachable": true,
+            "name": "加工商报价第三方分类"
+        },
+        "procQuoteThirdPartyId": {
+            "meaning": "加工商报价第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "加工商报价第三方系统中的唯一ID"
+        },
+        "procQuoteThirdPartyName": {
+            "meaning": "加工商报价第三方名称",
+            "reachable": true,
+            "name": "加工商报价第三方名称"
+        },
+        "procQuoteToAuditDate": {
+            "meaning": "procQuoteToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToBeginTime": {
+            "meaning": "procQuoteToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToCreateTime": {
+            "meaning": "procQuoteToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDateExtra1": {
+            "meaning": "procQuoteToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDateExtra2": {
+            "meaning": "procQuoteToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDateExtra3": {
+            "meaning": "procQuoteToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDateExtra4": {
+            "meaning": "procQuoteToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDateExtra5": {
+            "meaning": "procQuoteToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToDeliveryDate": {
+            "meaning": "procQuoteToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToEndTime": {
+            "meaning": "procQuoteToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToReceiptDate": {
+            "meaning": "procQuoteToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteToUpdateTime": {
+            "meaning": "procQuoteToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "procQuoteUnitCode": {
+            "meaning": "加工商报价单位id",
+            "reachable": true,
+            "name": "加工商报价单位id"
+        },
+        "procQuoteUpdateTime": {
+            "meaning": "加工商报价更新时间",
+            "reachable": true,
+            "name": "加工商报价更新时间"
+        },
+        "procQuoteUpdater": {
+            "meaning": "加工商报价更新人",
+            "reachable": true,
+            "name": "加工商报价更新人"
+        },
+        "procQuoteUpdaterId": {
+            "meaning": "加工商报价更新人ID",
+            "reachable": true,
+            "name": "加工商报价更新人ID"
+        },
+        "procQuoteUserCode": {
+            "meaning": "加工商报价智能节点的唯一编码",
+            "reachable": true,
+            "name": "加工商报价智能节点的唯一编码"
+        },
+        "procQuoteVarExtra1": {
+            "meaning": "加工商报价扩展1",
+            "reachable": true,
+            "name": "加工商报价扩展1"
+        },
+        "procQuoteVarExtra2": {
+            "meaning": "加工商报价扩展2",
+            "reachable": true,
+            "name": "加工商报价扩展2"
+        },
+        "procQuoteVarExtra3": {
+            "meaning": "加工商报价扩展3",
+            "reachable": true,
+            "name": "加工商报价扩展3"
+        },
+        "procQuoteVarExtra4": {
+            "meaning": "加工商报价扩展4",
+            "reachable": true,
+            "name": "加工商报价扩展4"
+        },
+        "procQuoteVarExtra5": {
+            "meaning": "加工商报价扩展5",
+            "reachable": true,
+            "name": "加工商报价扩展5"
+        },
+        "procQuoteVersion": {
+            "meaning": "加工商报价版本号",
+            "reachable": true,
+            "name": "加工商报价版本号"
+        }
+    }
+}

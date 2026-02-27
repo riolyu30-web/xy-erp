@@ -1,0 +1,396 @@
+{
+    "api_name": "/oth-exp/findList",
+    "table_name": "其他费用表",
+    "request": {
+        "othExpClazz": "OTH_EXP"
+    },
+    "mainTabClazz": "OTH_EXP",
+    "response": {
+        "othExpApplicationId": {
+            "meaning": "其他费用表应用ID",
+            "reachable": true,
+            "name": "其他费用表应用ID"
+        },
+        "othExpAuditDate": {
+            "meaning": "其他费用表审核时间",
+            "reachable": true,
+            "name": "其他费用表审核时间"
+        },
+        "othExpAuditStatus": {
+            "meaning": "其他费用表审核状态",
+            "reachable": true,
+            "name": "其他费用表审核状态"
+        },
+        "othExpBizVersion": {
+            "meaning": "其他费用表业务自定义版本号",
+            "reachable": true,
+            "name": "其他费用表业务自定义版本号"
+        },
+        "othExpBriefName": {
+            "meaning": "其他费用表简称",
+            "reachable": true,
+            "name": "其他费用表简称"
+        },
+        "othExpBusDivisId": {
+            "meaning": "其他费用表事业部id",
+            "reachable": true,
+            "name": "其他费用表事业部id"
+        },
+        "othExpClazz": {
+            "meaning": "其他费用表子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "其他费用表子类"
+        },
+        "othExpComment": {
+            "meaning": "其他费用表评论",
+            "reachable": true,
+            "name": "其他费用表评论"
+        },
+        "othExpCreateTime": {
+            "meaning": "其他费用表创建时间",
+            "reachable": true,
+            "name": "其他费用表创建时间"
+        },
+        "othExpCreator": {
+            "meaning": "其他费用表创建人",
+            "reachable": true,
+            "name": "其他费用表创建人"
+        },
+        "othExpCreatorId": {
+            "meaning": "其他费用表创建人ID",
+            "reachable": true,
+            "name": "其他费用表创建人ID"
+        },
+        "othExpDateExtra1": {
+            "meaning": "其他费用表扩展时间1",
+            "reachable": true,
+            "name": "其他费用表扩展时间1"
+        },
+        "othExpDateExtra2": {
+            "meaning": "其他费用表扩展时间2",
+            "reachable": true,
+            "name": "其他费用表扩展时间2"
+        },
+        "othExpDateExtra3": {
+            "meaning": "其他费用表扩展时间3",
+            "reachable": true,
+            "name": "其他费用表扩展时间3"
+        },
+        "othExpDateExtra4": {
+            "meaning": "其他费用表扩展时间4",
+            "reachable": true,
+            "name": "其他费用表扩展时间4"
+        },
+        "othExpDateExtra5": {
+            "meaning": "其他费用表扩展时间5",
+            "reachable": true,
+            "name": "其他费用表扩展时间5"
+        },
+        "othExpDefaultType": {
+            "meaning": "其他费用表智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "其他费用表智能节点主类型"
+        },
+        "othExpDescription": {
+            "meaning": "其他费用表描述",
+            "reachable": true,
+            "name": "其他费用表描述"
+        },
+        "othExpEngName": {
+            "meaning": "其他费用表英文名称",
+            "reachable": true,
+            "name": "其他费用表英文名称"
+        },
+        "othExpExtension": {
+            "meaning": "其他费用表扩展数据",
+            "reachable": true,
+            "name": "其他费用表扩展数据"
+        },
+        "othExpExternalState": {
+            "meaning": "其他费用表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "其他费用表上流程状态位"
+        },
+        "othExpFlags": {
+            "meaning": "其他费用表63位标志位",
+            "reachable": true,
+            "name": "其他费用表63位标志位"
+        },
+        "othExpFromAuditDate": {
+            "meaning": "othExpFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromCreateTime": {
+            "meaning": "othExpFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromDateExtra1": {
+            "meaning": "othExpFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromDateExtra2": {
+            "meaning": "othExpFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromDateExtra3": {
+            "meaning": "othExpFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromDateExtra4": {
+            "meaning": "othExpFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromDateExtra5": {
+            "meaning": "othExpFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpFromUpdateTime": {
+            "meaning": "othExpFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpGroovyScript": {
+            "meaning": "其他费用表groovy脚本",
+            "reachable": true,
+            "name": "其他费用表groovy脚本"
+        },
+        "othExpGropeCode": {
+            "meaning": "其他费用表搜索码",
+            "reachable": true,
+            "name": "其他费用表搜索码"
+        },
+        "othExpId": {
+            "meaning": "其他费用表guid",
+            "is_primary": true,
+            "reachable": true,
+            "name": "其他费用表guid"
+        },
+        "othExpInUsed": {
+            "meaning": "其他费用表是否被使用",
+            "reachable": true,
+            "name": "其他费用表是否被使用"
+        },
+        "othExpIsBanned": {
+            "meaning": "其他费用表是否被禁用",
+            "reachable": true,
+            "name": "其他费用表是否被禁用"
+        },
+        "othExpIsDeleted": {
+            "meaning": "其他费用表是否被删除",
+            "reachable": true,
+            "name": "其他费用表是否被删除"
+        },
+        "othExpIsMainFlow": {
+            "meaning": "其他费用表是否是主流程",
+            "reachable": true,
+            "name": "其他费用表是否是主流程"
+        },
+        "othExpIsolation": {
+            "meaning": "其他费用表智能节点数据隔离标识",
+            "reachable": true,
+            "name": "其他费用表智能节点数据隔离标识"
+        },
+        "othExpJsScript": {
+            "meaning": "其他费用表js脚本",
+            "reachable": true,
+            "name": "其他费用表js脚本"
+        },
+        "othExpLocalCurrencyOtherExpenses": {
+            "meaning": "其他费用表其他费用本币(不含税)",
+            "reachable": true,
+            "name": "其他费用表其他费用本币"
+        },
+        "othExpName": {
+            "meaning": "其他费用表智能节点名",
+            "reachable": true,
+            "name": "其他费用表智能节点名"
+        },
+        "othExpNameCodeSearch": {
+            "meaning": "其他费用表name、user_code模糊搜索",
+            "reachable": true,
+            "name": "其他费用表name、user_code模糊搜索"
+        },
+        "othExpNumberExtra1": {
+            "meaning": "其他费用表扩展数量1",
+            "reachable": true,
+            "name": "其他费用表扩展数量1"
+        },
+        "othExpNumberExtra2": {
+            "meaning": "其他费用表扩展数量2",
+            "reachable": true,
+            "name": "其他费用表扩展数量2"
+        },
+        "othExpNumberExtra3": {
+            "meaning": "其他费用表扩展数量3",
+            "reachable": true,
+            "name": "其他费用表扩展数量3"
+        },
+        "othExpNumberExtra4": {
+            "meaning": "其他费用表扩展数量4",
+            "reachable": true,
+            "name": "其他费用表扩展数量4"
+        },
+        "othExpNumberExtra5": {
+            "meaning": "其他费用表扩展数量5",
+            "reachable": true,
+            "name": "其他费用表扩展数量5"
+        },
+        "othExpOtherExpensesIncludingTax": {
+            "meaning": "其他费用表其他费用含税",
+            "reachable": true,
+            "name": "其他费用表其他费用含税"
+        },
+        "othExpOtherExpensesWithoutTax": {
+            "meaning": "其他费用表其他费用不含税",
+            "reachable": true,
+            "name": "其他费用表其他费用不含税"
+        },
+        "othExpParentId": {
+            "meaning": "其他费用表父节点ID",
+            "reachable": true,
+            "name": "其他费用表父节点ID"
+        },
+        "othExpProcessInstanceId": {
+            "meaning": "其他费用表流程实例ID",
+            "reachable": true,
+            "name": "其他费用表流程实例ID"
+        },
+        "othExpSerialNumber": {
+            "meaning": "其他费用表顺序号",
+            "reachable": true,
+            "name": "其他费用表顺序号"
+        },
+        "othExpState": {
+            "meaning": "其他费用表通用状态",
+            "reachable": true,
+            "name": "其他费用表通用状态"
+        },
+        "othExpSystemCode": {
+            "meaning": "其他费用表系统编码",
+            "reachable": true,
+            "name": "其他费用表系统编码"
+        },
+        "othExpTaskNodeName": {
+            "meaning": "其他费用表任务节点名称",
+            "reachable": true,
+            "name": "其他费用表任务节点名称"
+        },
+        "othExpTenantId": {
+            "meaning": "其他费用表租户id",
+            "reachable": true,
+            "name": "其他费用表租户id"
+        },
+        "othExpThirdPartyClass": {
+            "meaning": "其他费用表第三方分类",
+            "reachable": true,
+            "name": "其他费用表第三方分类"
+        },
+        "othExpThirdPartyId": {
+            "meaning": "其他费用表第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "其他费用表第三方系统中的唯一ID"
+        },
+        "othExpThirdPartyName": {
+            "meaning": "其他费用表第三方名称",
+            "reachable": true,
+            "name": "其他费用表第三方名称"
+        },
+        "othExpToAuditDate": {
+            "meaning": "othExpToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToCreateTime": {
+            "meaning": "othExpToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToDateExtra1": {
+            "meaning": "othExpToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToDateExtra2": {
+            "meaning": "othExpToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToDateExtra3": {
+            "meaning": "othExpToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToDateExtra4": {
+            "meaning": "othExpToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToDateExtra5": {
+            "meaning": "othExpToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpToUpdateTime": {
+            "meaning": "othExpToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "othExpUpdateTime": {
+            "meaning": "其他费用表更新时间",
+            "reachable": true,
+            "name": "其他费用表更新时间"
+        },
+        "othExpUpdater": {
+            "meaning": "其他费用表更新人",
+            "reachable": true,
+            "name": "其他费用表更新人"
+        },
+        "othExpUpdaterId": {
+            "meaning": "其他费用表更新人ID",
+            "reachable": true,
+            "name": "其他费用表更新人ID"
+        },
+        "othExpUserCode": {
+            "meaning": "其他费用表智能节点的唯一编码",
+            "reachable": true,
+            "name": "其他费用表智能节点的唯一编码"
+        },
+        "othExpVarExtra1": {
+            "meaning": "其他费用表扩展1",
+            "reachable": true,
+            "name": "其他费用表扩展1"
+        },
+        "othExpVarExtra2": {
+            "meaning": "其他费用表扩展2",
+            "reachable": true,
+            "name": "其他费用表扩展2"
+        },
+        "othExpVarExtra3": {
+            "meaning": "其他费用表扩展3",
+            "reachable": true,
+            "name": "其他费用表扩展3"
+        },
+        "othExpVarExtra4": {
+            "meaning": "其他费用表扩展4",
+            "reachable": true,
+            "name": "其他费用表扩展4"
+        },
+        "othExpVarExtra5": {
+            "meaning": "其他费用表扩展5",
+            "reachable": true,
+            "name": "其他费用表扩展5"
+        },
+        "othExpVersion": {
+            "meaning": "其他费用表版本号",
+            "reachable": true,
+            "name": "其他费用表版本号"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+(erp-service) E:\tx-erp\erp-service>uv sync

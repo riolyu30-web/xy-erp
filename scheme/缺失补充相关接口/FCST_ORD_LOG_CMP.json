@@ -1,0 +1,646 @@
+{
+    "api_name": "/fcst-ord-log-cmp/findList",
+    "table_name": "备货单记录部件表，用于存储备货单中涉及的部件信息",
+    "request": {
+        "fcstOrdLogCmpClazz": "FCST_ORD_LOG_CMP"
+    },
+    "mainTabClazz": "FCST_ORD_LOG_CMP",
+    "response": {
+        "fcstOrdLogCmpActualTimeRequired": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息实际需时(小时)",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息实际需时"
+        },
+        "fcstOrdLogCmpAdjustmentTimeRequired": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息调整需时"
+        },
+        "fcstOrdLogCmpApplicationId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息应用ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息应用ID"
+        },
+        "fcstOrdLogCmpAuditDate": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息审核时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息审核时间"
+        },
+        "fcstOrdLogCmpAuditStatus": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息审核状态",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息审核状态"
+        },
+        "fcstOrdLogCmpAvailableScheduleId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息可用日程id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息可用日程id"
+        },
+        "fcstOrdLogCmpBeginTime": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息开始时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息开始时间"
+        },
+        "fcstOrdLogCmpBizVersion": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息业务自定义版本号",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息业务自定义版本号"
+        },
+        "fcstOrdLogCmpBriefName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息简称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息简称"
+        },
+        "fcstOrdLogCmpBusDivisId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息事业部id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息事业部id"
+        },
+        "fcstOrdLogCmpCanUseInv": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息可用库存数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息可用库存数量"
+        },
+        "fcstOrdLogCmpClazz": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息子类 类名（表和类一一对应）",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息子类"
+        },
+        "fcstOrdLogCmpClosedReason": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息结案原因",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息结案原因"
+        },
+        "fcstOrdLogCmpClosedStatus": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息结案状态",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息结案状态"
+        },
+        "fcstOrdLogCmpCmpCode": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息部件编码",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息部件编码"
+        },
+        "fcstOrdLogCmpCmpId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息部件ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息部件ID"
+        },
+        "fcstOrdLogCmpCmpName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息部件名称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息部件名称"
+        },
+        "fcstOrdLogCmpComment": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息评论",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息评论"
+        },
+        "fcstOrdLogCmpCompleteQuantity": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息完成数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息完成数量"
+        },
+        "fcstOrdLogCmpCompleteStatus": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息完成状态",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息完成状态"
+        },
+        "fcstOrdLogCmpCreateTime": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息创建时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息创建时间"
+        },
+        "fcstOrdLogCmpCreator": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息创建人",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息创建人"
+        },
+        "fcstOrdLogCmpCreatorId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息创建人ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息创建人ID"
+        },
+        "fcstOrdLogCmpDateExtra1": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间1",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间1"
+        },
+        "fcstOrdLogCmpDateExtra2": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间2",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间2"
+        },
+        "fcstOrdLogCmpDateExtra3": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间3",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间3"
+        },
+        "fcstOrdLogCmpDateExtra4": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间4",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间4"
+        },
+        "fcstOrdLogCmpDateExtra5": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间5",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展时间5"
+        },
+        "fcstOrdLogCmpDefaultType": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点主类型 默认类型（类型的system_code字段）",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点主类型"
+        },
+        "fcstOrdLogCmpDeliveryDate": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息交货日期",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息交货日期"
+        },
+        "fcstOrdLogCmpDescription": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息描述",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息描述"
+        },
+        "fcstOrdLogCmpEndTime": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息结束时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息结束时间"
+        },
+        "fcstOrdLogCmpEndTimeRequired": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息最后需时(小时)",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息最后需时"
+        },
+        "fcstOrdLogCmpEngName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息英文名称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息英文名称"
+        },
+        "fcstOrdLogCmpEquipmentId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息设备id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息设备id"
+        },
+        "fcstOrdLogCmpExchangeRateId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息币种汇率id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息币种汇率id"
+        },
+        "fcstOrdLogCmpExtension": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数据",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数据"
+        },
+        "fcstOrdLogCmpExternalState": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息上流程状态位"
+        },
+        "fcstOrdLogCmpFilterClazz": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息冗余字段用于筛选",
+            "reachable": false,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息冗余字段用于筛选"
+        },
+        "fcstOrdLogCmpFlags": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息63位标志位",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息63位标志位"
+        },
+        "fcstOrdLogCmpFromAuditDate": {
+            "meaning": "fcstOrdLogCmpFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromBeginTime": {
+            "meaning": "fcstOrdLogCmpFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromCreateTime": {
+            "meaning": "fcstOrdLogCmpFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDateExtra1": {
+            "meaning": "fcstOrdLogCmpFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDateExtra2": {
+            "meaning": "fcstOrdLogCmpFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDateExtra3": {
+            "meaning": "fcstOrdLogCmpFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDateExtra4": {
+            "meaning": "fcstOrdLogCmpFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDateExtra5": {
+            "meaning": "fcstOrdLogCmpFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromDeliveryDate": {
+            "meaning": "fcstOrdLogCmpFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromEndTime": {
+            "meaning": "fcstOrdLogCmpFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromReceiptDate": {
+            "meaning": "fcstOrdLogCmpFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFromUpdateTime": {
+            "meaning": "fcstOrdLogCmpFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpFscType": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息FSC声明",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息FSC声明"
+        },
+        "fcstOrdLogCmpGenerativePeople": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息下发人",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息下发人"
+        },
+        "fcstOrdLogCmpGenerativeState": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息下发状态",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息下发状态"
+        },
+        "fcstOrdLogCmpGroovyScript": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息groovy脚本",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息groovy脚本"
+        },
+        "fcstOrdLogCmpGropeCode": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息搜索码",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息搜索码"
+        },
+        "fcstOrdLogCmpId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息主键，唯一标识每条部件记录",
+            "is_primary": true,
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息主键，唯一标识每条部件记录"
+        },
+        "fcstOrdLogCmpInUsed": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被使用",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被使用"
+        },
+        "fcstOrdLogCmpInvTypeTaxRateId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息发票税率id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息发票税率id"
+        },
+        "fcstOrdLogCmpIsBanned": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被禁用",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被禁用"
+        },
+        "fcstOrdLogCmpIsDeleted": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被删除",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否被删除"
+        },
+        "fcstOrdLogCmpIsLeaf": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否叶子节点",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否叶子节点"
+        },
+        "fcstOrdLogCmpIsMainFlow": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否是主流程",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否是主流程"
+        },
+        "fcstOrdLogCmpIsManualModificationDate": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息是否手动修改计划生产时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息是否手动修改计划生产时间"
+        },
+        "fcstOrdLogCmpIsolation": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点数据隔离标识",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点数据隔离标识"
+        },
+        "fcstOrdLogCmpJsScript": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息js脚本",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息js脚本"
+        },
+        "fcstOrdLogCmpMaterialId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息物料id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息物料id"
+        },
+        "fcstOrdLogCmpName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点名",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点名"
+        },
+        "fcstOrdLogCmpNameCodeSearch": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息name、user_code模糊搜索",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息name、user_code模糊搜索"
+        },
+        "fcstOrdLogCmpNumberExtra1": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量1",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量1"
+        },
+        "fcstOrdLogCmpNumberExtra2": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量2",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量2"
+        },
+        "fcstOrdLogCmpNumberExtra3": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量3",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量3"
+        },
+        "fcstOrdLogCmpNumberExtra4": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量4",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量4"
+        },
+        "fcstOrdLogCmpNumberExtra5": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量5",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展数量5"
+        },
+        "fcstOrdLogCmpParentId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息父节点ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息父节点ID"
+        },
+        "fcstOrdLogCmpPlannedOutputQuantity": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息计划产出数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息计划产出数量"
+        },
+        "fcstOrdLogCmpPlannedTimeRequired": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息计划需时(小时)",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息计划需时"
+        },
+        "fcstOrdLogCmpPrintTimes": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息打印次数",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息打印次数"
+        },
+        "fcstOrdLogCmpPriority": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息优先级",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息优先级"
+        },
+        "fcstOrdLogCmpProcessInstanceId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息流程实例ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息流程实例ID"
+        },
+        "fcstOrdLogCmpProductionProcessesTypeId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息工序类型ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息工序类型ID"
+        },
+        "fcstOrdLogCmpProductionShiftId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息生产班次ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息生产班次ID"
+        },
+        "fcstOrdLogCmpQuantity": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息任务数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息任务数量"
+        },
+        "fcstOrdLogCmpRatio": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息部件与主产品的配比关系",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息部件与主产品的配比关系"
+        },
+        "fcstOrdLogCmpRawMatCanPrd": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息原材料可生产的部件数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息原材料可生产的部件数量"
+        },
+        "fcstOrdLogCmpRealInv": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息实际库存数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息实际库存数量"
+        },
+        "fcstOrdLogCmpReceiptDate": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息单据日期",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息单据日期"
+        },
+        "fcstOrdLogCmpReceiptType": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息单据类型"
+        },
+        "fcstOrdLogCmpRelatedTasksId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息关联任务id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息关联任务id"
+        },
+        "fcstOrdLogCmpSerialNumber": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息顺序号",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息顺序号"
+        },
+        "fcstOrdLogCmpSource": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息源",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息源"
+        },
+        "fcstOrdLogCmpSourceType": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息来源类型",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息来源类型"
+        },
+        "fcstOrdLogCmpState": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息通用状态",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息通用状态"
+        },
+        "fcstOrdLogCmpSystemCode": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息系统编码",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息系统编码"
+        },
+        "fcstOrdLogCmpTarget": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息目标",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息目标"
+        },
+        "fcstOrdLogCmpTaskNodeName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息任务节点名称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息任务节点名称"
+        },
+        "fcstOrdLogCmpTaskNodeType": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息任务节点类型",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息任务节点类型"
+        },
+        "fcstOrdLogCmpTenantId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息租户ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息租户ID"
+        },
+        "fcstOrdLogCmpThirdPartyClass": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方分类",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方分类"
+        },
+        "fcstOrdLogCmpThirdPartyId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方系统中的唯一ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方系统中的唯一ID"
+        },
+        "fcstOrdLogCmpThirdPartyName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方名称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息第三方名称"
+        },
+        "fcstOrdLogCmpToAuditDate": {
+            "meaning": "fcstOrdLogCmpToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToBeginTime": {
+            "meaning": "fcstOrdLogCmpToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToCreateTime": {
+            "meaning": "fcstOrdLogCmpToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDateExtra1": {
+            "meaning": "fcstOrdLogCmpToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDateExtra2": {
+            "meaning": "fcstOrdLogCmpToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDateExtra3": {
+            "meaning": "fcstOrdLogCmpToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDateExtra4": {
+            "meaning": "fcstOrdLogCmpToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDateExtra5": {
+            "meaning": "fcstOrdLogCmpToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToDeliveryDate": {
+            "meaning": "fcstOrdLogCmpToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToEndTime": {
+            "meaning": "fcstOrdLogCmpToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToReceiptDate": {
+            "meaning": "fcstOrdLogCmpToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpToUpdateTime": {
+            "meaning": "fcstOrdLogCmpToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "fcstOrdLogCmpTrsInv": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息在途库存数量",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息在途库存数量"
+        },
+        "fcstOrdLogCmpUnitCode": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息单位id",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息单位id"
+        },
+        "fcstOrdLogCmpUnitName": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息计量单位名称",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息计量单位名称"
+        },
+        "fcstOrdLogCmpUpdateTime": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息更新时间",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息更新时间"
+        },
+        "fcstOrdLogCmpUpdater": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息更新人",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息更新人"
+        },
+        "fcstOrdLogCmpUpdaterId": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息更新人ID",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息更新人ID"
+        },
+        "fcstOrdLogCmpUserCode": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点的唯一编码",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息智能节点的唯一编码"
+        },
+        "fcstOrdLogCmpVarExtra1": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展1",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展1"
+        },
+        "fcstOrdLogCmpVarExtra2": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展2",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展2"
+        },
+        "fcstOrdLogCmpVarExtra3": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展3",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展3"
+        },
+        "fcstOrdLogCmpVarExtra4": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展4",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展4"
+        },
+        "fcstOrdLogCmpVarExtra5": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展5",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息扩展5"
+        },
+        "fcstOrdLogCmpVersion": {
+            "meaning": "备货单记录部件表，用于存储备货单中涉及的部件信息版本号",
+            "reachable": true,
+            "name": "备货单记录部件表，用于存储备货单中涉及的部件信息版本号"
+        }
+    }
+}

@@ -1,0 +1,1257 @@
+{
+    "api_name": "/manu-adv-pay-det/findList",
+    "table_name": "加工商预付款明细",
+    "request": {
+        "manuAdvPayDetManuAdvPayClazz": "MANU_ADV_PAY",
+        "manuAdvPayDetClazz": "MANU_ADV_PAY_DET"
+    },
+    "mainTabClazz": "MANU_ADV_PAY_DET",
+    "response": {
+        "manuAdvPayDetActualTimeRequired": {
+            "meaning": "加工商预付款明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细实际需时"
+        },
+        "manuAdvPayDetAdjustmentTimeRequired": {
+            "meaning": "加工商预付款明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细调整需时"
+        },
+        "manuAdvPayDetApplicationId": {
+            "meaning": "加工商预付款明细应用ID",
+            "reachable": false,
+            "name": "加工商预付款明细应用ID"
+        },
+        "manuAdvPayDetAuditDate": {
+            "meaning": "加工商预付款明细审核时间",
+            "reachable": false,
+            "name": "加工商预付款明细审核时间"
+        },
+        "manuAdvPayDetAuditStatus": {
+            "meaning": "加工商预付款明细审核状态",
+            "reachable": false,
+            "name": "加工商预付款明细审核状态"
+        },
+        "manuAdvPayDetAvailableScheduleId": {
+            "meaning": "加工商预付款明细可用日程id",
+            "reachable": false,
+            "name": "加工商预付款明细可用日程id"
+        },
+        "manuAdvPayDetBeginTime": {
+            "meaning": "加工商预付款明细开始时间",
+            "reachable": false,
+            "name": "加工商预付款明细开始时间"
+        },
+        "manuAdvPayDetBizVersion": {
+            "meaning": "加工商预付款明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商预付款明细业务自定义版本号"
+        },
+        "manuAdvPayDetBriefName": {
+            "meaning": "加工商预付款明细简称",
+            "reachable": false,
+            "name": "加工商预付款明细简称"
+        },
+        "manuAdvPayDetBusDivisId": {
+            "meaning": "加工商预付款明细事业部id",
+            "reachable": false,
+            "name": "加工商预付款明细事业部id"
+        },
+        "manuAdvPayDetClazz": {
+            "meaning": "加工商预付款明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商预付款明细子类"
+        },
+        "manuAdvPayDetClosedReason": {
+            "meaning": "加工商预付款明细结案原因",
+            "reachable": false,
+            "name": "加工商预付款明细结案原因"
+        },
+        "manuAdvPayDetClosedStatus": {
+            "meaning": "加工商预付款明细结案状态",
+            "reachable": false,
+            "name": "加工商预付款明细结案状态"
+        },
+        "manuAdvPayDetComment": {
+            "meaning": "加工商预付款明细评论",
+            "reachable": false,
+            "name": "加工商预付款明细评论"
+        },
+        "manuAdvPayDetCompleteQuantity": {
+            "meaning": "加工商预付款明细完成数量",
+            "reachable": false,
+            "name": "加工商预付款明细完成数量"
+        },
+        "manuAdvPayDetCompleteStatus": {
+            "meaning": "加工商预付款明细完成状态",
+            "reachable": false,
+            "name": "加工商预付款明细完成状态"
+        },
+        "manuAdvPayDetCreateTime": {
+            "meaning": "加工商预付款明细创建时间",
+            "reachable": false,
+            "name": "加工商预付款明细创建时间"
+        },
+        "manuAdvPayDetCreator": {
+            "meaning": "加工商预付款明细创建人",
+            "reachable": false,
+            "name": "加工商预付款明细创建人"
+        },
+        "manuAdvPayDetCreatorId": {
+            "meaning": "加工商预付款明细创建人ID",
+            "reachable": false,
+            "name": "加工商预付款明细创建人ID"
+        },
+        "manuAdvPayDetDateExtra1": {
+            "meaning": "加工商预付款明细扩展时间1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间1"
+        },
+        "manuAdvPayDetDateExtra2": {
+            "meaning": "加工商预付款明细扩展时间2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间2"
+        },
+        "manuAdvPayDetDateExtra3": {
+            "meaning": "加工商预付款明细扩展时间3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间3"
+        },
+        "manuAdvPayDetDateExtra4": {
+            "meaning": "加工商预付款明细扩展时间4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间4"
+        },
+        "manuAdvPayDetDateExtra5": {
+            "meaning": "加工商预付款明细扩展时间5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间5"
+        },
+        "manuAdvPayDetDefaultType": {
+            "meaning": "加工商预付款明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点主类型"
+        },
+        "manuAdvPayDetDeliveryDate": {
+            "meaning": "加工商预付款明细交货日期",
+            "reachable": false,
+            "name": "加工商预付款明细交货日期"
+        },
+        "manuAdvPayDetDescription": {
+            "meaning": "加工商预付款明细描述",
+            "reachable": false,
+            "name": "加工商预付款明细描述"
+        },
+        "manuAdvPayDetEndTime": {
+            "meaning": "加工商预付款明细结束时间",
+            "reachable": false,
+            "name": "加工商预付款明细结束时间"
+        },
+        "manuAdvPayDetEndTimeRequired": {
+            "meaning": "加工商预付款明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细最后需时"
+        },
+        "manuAdvPayDetEngName": {
+            "meaning": "加工商预付款明细英文名称",
+            "reachable": false,
+            "name": "加工商预付款明细英文名称"
+        },
+        "manuAdvPayDetEquipmentId": {
+            "meaning": "加工商预付款明细设备id",
+            "reachable": false,
+            "name": "加工商预付款明细设备id"
+        },
+        "manuAdvPayDetExchangeRate": {
+            "meaning": "加工商预付款明细汇率",
+            "reachable": false,
+            "name": "加工商预付款明细汇率"
+        },
+        "manuAdvPayDetExchangeRateId": {
+            "meaning": "加工商预付款明细币种汇率id",
+            "reachable": false,
+            "name": "加工商预付款明细币种汇率id"
+        },
+        "manuAdvPayDetExtension": {
+            "meaning": "加工商预付款明细扩展数据",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数据"
+        },
+        "manuAdvPayDetExternalState": {
+            "meaning": "加工商预付款明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商预付款明细上流程状态位"
+        },
+        "manuAdvPayDetFilterClazz": {
+            "meaning": "加工商预付款明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商预付款明细冗余字段用于筛选"
+        },
+        "manuAdvPayDetFlags": {
+            "meaning": "加工商预付款明细63位标志位",
+            "reachable": false,
+            "name": "加工商预付款明细63位标志位"
+        },
+        "manuAdvPayDetFromAuditDate": {
+            "meaning": "manuAdvPayDetFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromBeginTime": {
+            "meaning": "manuAdvPayDetFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromCreateTime": {
+            "meaning": "manuAdvPayDetFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDateExtra1": {
+            "meaning": "manuAdvPayDetFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDateExtra2": {
+            "meaning": "manuAdvPayDetFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDateExtra3": {
+            "meaning": "manuAdvPayDetFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDateExtra4": {
+            "meaning": "manuAdvPayDetFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDateExtra5": {
+            "meaning": "manuAdvPayDetFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromDeliveryDate": {
+            "meaning": "manuAdvPayDetFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromEndTime": {
+            "meaning": "manuAdvPayDetFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromReceiptDate": {
+            "meaning": "manuAdvPayDetFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFromUpdateTime": {
+            "meaning": "manuAdvPayDetFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetFscType": {
+            "meaning": "加工商预付款明细FSC声明",
+            "reachable": false,
+            "name": "加工商预付款明细FSC声明"
+        },
+        "manuAdvPayDetGenerativePeople": {
+            "meaning": "加工商预付款明细下发人",
+            "reachable": false,
+            "name": "加工商预付款明细下发人"
+        },
+        "manuAdvPayDetGenerativeState": {
+            "meaning": "加工商预付款明细下发状态",
+            "reachable": false,
+            "name": "加工商预付款明细下发状态"
+        },
+        "manuAdvPayDetGroovyScript": {
+            "meaning": "加工商预付款明细groovy脚本",
+            "reachable": false,
+            "name": "加工商预付款明细groovy脚本"
+        },
+        "manuAdvPayDetGropeCode": {
+            "meaning": "加工商预付款明细搜索码",
+            "reachable": false,
+            "name": "加工商预付款明细搜索码"
+        },
+        "manuAdvPayDetId": {
+            "meaning": "加工商预付款明细PK",
+            "is_primary": true,
+            "reachable": false,
+            "name": "加工商预付款明细PK"
+        },
+        "manuAdvPayDetInUsed": {
+            "meaning": "加工商预付款明细是否被使用",
+            "reachable": false,
+            "name": "加工商预付款明细是否被使用"
+        },
+        "manuAdvPayDetInvTypeTaxRateId": {
+            "meaning": "加工商预付款明细发票税率id",
+            "reachable": false,
+            "name": "加工商预付款明细发票税率id"
+        },
+        "manuAdvPayDetIsBanned": {
+            "meaning": "加工商预付款明细是否被禁用",
+            "reachable": false,
+            "name": "加工商预付款明细是否被禁用"
+        },
+        "manuAdvPayDetIsDeleted": {
+            "meaning": "加工商预付款明细是否被删除",
+            "reachable": false,
+            "name": "加工商预付款明细是否被删除"
+        },
+        "manuAdvPayDetIsLeaf": {
+            "meaning": "加工商预付款明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商预付款明细是否叶子节点"
+        },
+        "manuAdvPayDetIsMainFlow": {
+            "meaning": "加工商预付款明细是否是主流程",
+            "reachable": false,
+            "name": "加工商预付款明细是否是主流程"
+        },
+        "manuAdvPayDetIsManualModificationDate": {
+            "meaning": "加工商预付款明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商预付款明细是否手动修改计划生产时间"
+        },
+        "manuAdvPayDetIsolation": {
+            "meaning": "加工商预付款明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点数据隔离标识"
+        },
+        "manuAdvPayDetJsScript": {
+            "meaning": "加工商预付款明细js脚本",
+            "reachable": false,
+            "name": "加工商预付款明细js脚本"
+        },
+        "manuAdvPayDetLocAmount": {
+            "meaning": "加工商预付款明细本币预收/付金额",
+            "reachable": false,
+            "name": "加工商预付款明细本币预收/付金额"
+        },
+        "manuAdvPayDetLocCompleteQuantity": {
+            "meaning": "加工商预付款明细本币完成数量（本币已转应收/付金额）",
+            "reachable": false,
+            "name": "加工商预付款明细本币完成数量"
+        },
+        "manuAdvPayDetManuAdvPayAcctHolderName": {
+            "meaning": "加工商预付款明细账号持有人",
+            "reachable": false,
+            "name": "加工商预付款明细账号持有人"
+        },
+        "manuAdvPayDetManuAdvPayActualTimeRequired": {
+            "meaning": "加工商预付款明细实际需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细实际需时"
+        },
+        "manuAdvPayDetManuAdvPayAdjustmentTimeRequired": {
+            "meaning": "加工商预付款明细调整需时(输入正负数来计算实际需时)(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细调整需时"
+        },
+        "manuAdvPayDetManuAdvPayApplicationId": {
+            "meaning": "加工商预付款明细应用ID",
+            "reachable": false,
+            "name": "加工商预付款明细应用ID"
+        },
+        "manuAdvPayDetManuAdvPayAuditDate": {
+            "meaning": "加工商预付款明细审核时间",
+            "reachable": false,
+            "name": "加工商预付款明细审核时间"
+        },
+        "manuAdvPayDetManuAdvPayAuditStatus": {
+            "meaning": "加工商预付款明细审核状态",
+            "reachable": false,
+            "name": "加工商预付款明细审核状态"
+        },
+        "manuAdvPayDetManuAdvPayAvailableScheduleId": {
+            "meaning": "加工商预付款明细可用日程id",
+            "reachable": false,
+            "name": "加工商预付款明细可用日程id"
+        },
+        "manuAdvPayDetManuAdvPayBankAcctNum": {
+            "meaning": "加工商预付款明细银行账号",
+            "reachable": false,
+            "name": "加工商预付款明细银行账号"
+        },
+        "manuAdvPayDetManuAdvPayBankBranchInfo": {
+            "meaning": "加工商预付款明细开户支行信息",
+            "reachable": false,
+            "name": "加工商预付款明细开户支行信息"
+        },
+        "manuAdvPayDetManuAdvPayBankName": {
+            "meaning": "加工商预付款明细银行名称",
+            "reachable": false,
+            "name": "加工商预付款明细银行名称"
+        },
+        "manuAdvPayDetManuAdvPayBeginTime": {
+            "meaning": "加工商预付款明细开始时间",
+            "reachable": false,
+            "name": "加工商预付款明细开始时间"
+        },
+        "manuAdvPayDetManuAdvPayBizVersion": {
+            "meaning": "加工商预付款明细业务自定义版本号",
+            "reachable": false,
+            "name": "加工商预付款明细业务自定义版本号"
+        },
+        "manuAdvPayDetManuAdvPayBriefName": {
+            "meaning": "加工商预付款明细简称",
+            "reachable": false,
+            "name": "加工商预付款明细简称"
+        },
+        "manuAdvPayDetManuAdvPayBusDivisId": {
+            "meaning": "加工商预付款明细事业部id",
+            "reachable": false,
+            "name": "加工商预付款明细事业部id"
+        },
+        "manuAdvPayDetManuAdvPayClazz": {
+            "meaning": "加工商预付款明细子类 类名（表和类一一对应）",
+            "reachable": false,
+            "name": "加工商预付款明细子类"
+        },
+        "manuAdvPayDetManuAdvPayClosedReason": {
+            "meaning": "加工商预付款明细结案原因",
+            "reachable": false,
+            "name": "加工商预付款明细结案原因"
+        },
+        "manuAdvPayDetManuAdvPayClosedStatus": {
+            "meaning": "加工商预付款明细结案状态",
+            "reachable": false,
+            "name": "加工商预付款明细结案状态"
+        },
+        "manuAdvPayDetManuAdvPayComment": {
+            "meaning": "加工商预付款明细评论",
+            "reachable": false,
+            "name": "加工商预付款明细评论"
+        },
+        "manuAdvPayDetManuAdvPayCompleteQuantity": {
+            "meaning": "加工商预付款明细完成数量",
+            "reachable": false,
+            "name": "加工商预付款明细完成数量"
+        },
+        "manuAdvPayDetManuAdvPayCompleteStatus": {
+            "meaning": "加工商预付款明细完成状态",
+            "reachable": false,
+            "name": "加工商预付款明细完成状态"
+        },
+        "manuAdvPayDetManuAdvPayCreateTime": {
+            "meaning": "加工商预付款明细创建时间",
+            "reachable": false,
+            "name": "加工商预付款明细创建时间"
+        },
+        "manuAdvPayDetManuAdvPayCreator": {
+            "meaning": "加工商预付款明细创建人",
+            "reachable": false,
+            "name": "加工商预付款明细创建人"
+        },
+        "manuAdvPayDetManuAdvPayCreatorId": {
+            "meaning": "加工商预付款明细创建人ID",
+            "reachable": false,
+            "name": "加工商预付款明细创建人ID"
+        },
+        "manuAdvPayDetManuAdvPayCurrency": {
+            "meaning": "加工商预付款明细币种",
+            "reachable": false,
+            "name": "加工商预付款明细币种"
+        },
+        "manuAdvPayDetManuAdvPayDateExtra1": {
+            "meaning": "加工商预付款明细扩展时间1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间1"
+        },
+        "manuAdvPayDetManuAdvPayDateExtra2": {
+            "meaning": "加工商预付款明细扩展时间2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间2"
+        },
+        "manuAdvPayDetManuAdvPayDateExtra3": {
+            "meaning": "加工商预付款明细扩展时间3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间3"
+        },
+        "manuAdvPayDetManuAdvPayDateExtra4": {
+            "meaning": "加工商预付款明细扩展时间4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间4"
+        },
+        "manuAdvPayDetManuAdvPayDateExtra5": {
+            "meaning": "加工商预付款明细扩展时间5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展时间5"
+        },
+        "manuAdvPayDetManuAdvPayDefaultType": {
+            "meaning": "加工商预付款明细智能节点主类型 默认类型（类型的system de字段）",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点主类型"
+        },
+        "manuAdvPayDetManuAdvPayDeliveryDate": {
+            "meaning": "加工商预付款明细交货日期",
+            "reachable": false,
+            "name": "加工商预付款明细交货日期"
+        },
+        "manuAdvPayDetManuAdvPayDescription": {
+            "meaning": "加工商预付款明细描述",
+            "reachable": false,
+            "name": "加工商预付款明细描述"
+        },
+        "manuAdvPayDetManuAdvPayEndTime": {
+            "meaning": "加工商预付款明细结束时间",
+            "reachable": false,
+            "name": "加工商预付款明细结束时间"
+        },
+        "manuAdvPayDetManuAdvPayEndTimeRequired": {
+            "meaning": "加工商预付款明细最后需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细最后需时"
+        },
+        "manuAdvPayDetManuAdvPayEngName": {
+            "meaning": "加工商预付款明细英文名称",
+            "reachable": false,
+            "name": "加工商预付款明细英文名称"
+        },
+        "manuAdvPayDetManuAdvPayEquipmentId": {
+            "meaning": "加工商预付款明细设备id",
+            "reachable": false,
+            "name": "加工商预付款明细设备id"
+        },
+        "manuAdvPayDetManuAdvPayExchangeRateId": {
+            "meaning": "加工商预付款明细币种汇率id",
+            "reachable": false,
+            "name": "加工商预付款明细币种汇率id"
+        },
+        "manuAdvPayDetManuAdvPayExtension": {
+            "meaning": "加工商预付款明细扩展数据",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数据"
+        },
+        "manuAdvPayDetManuAdvPayExternalState": {
+            "meaning": "加工商预付款明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭",
+            "reachable": false,
+            "name": "加工商预付款明细上流程状态位"
+        },
+        "manuAdvPayDetManuAdvPayFilterClazz": {
+            "meaning": "加工商预付款明细冗余字段用于筛选",
+            "reachable": false,
+            "name": "加工商预付款明细冗余字段用于筛选"
+        },
+        "manuAdvPayDetManuAdvPayFlags": {
+            "meaning": "加工商预付款明细63位标志位",
+            "reachable": false,
+            "name": "加工商预付款明细63位标志位"
+        },
+        "manuAdvPayDetManuAdvPayFromAuditDate": {
+            "meaning": "manuAdvPayDetManuAdvPayFromAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromBeginTime": {
+            "meaning": "manuAdvPayDetManuAdvPayFromBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromCreateTime": {
+            "meaning": "manuAdvPayDetManuAdvPayFromCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDateExtra1": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDateExtra2": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDateExtra3": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDateExtra4": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDateExtra5": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromDeliveryDate": {
+            "meaning": "manuAdvPayDetManuAdvPayFromDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromEndTime": {
+            "meaning": "manuAdvPayDetManuAdvPayFromEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromReceiptDate": {
+            "meaning": "manuAdvPayDetManuAdvPayFromReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFromUpdateTime": {
+            "meaning": "manuAdvPayDetManuAdvPayFromUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayFscType": {
+            "meaning": "加工商预付款明细FSC声明",
+            "reachable": false,
+            "name": "加工商预付款明细FSC声明"
+        },
+        "manuAdvPayDetManuAdvPayGenerativePeople": {
+            "meaning": "加工商预付款明细下发人",
+            "reachable": false,
+            "name": "加工商预付款明细下发人"
+        },
+        "manuAdvPayDetManuAdvPayGenerativeState": {
+            "meaning": "加工商预付款明细下发状态",
+            "reachable": false,
+            "name": "加工商预付款明细下发状态"
+        },
+        "manuAdvPayDetManuAdvPayGroovyScript": {
+            "meaning": "加工商预付款明细groovy脚本",
+            "reachable": false,
+            "name": "加工商预付款明细groovy脚本"
+        },
+        "manuAdvPayDetManuAdvPayGropeCode": {
+            "meaning": "加工商预付款明细搜索码",
+            "reachable": false,
+            "name": "加工商预付款明细搜索码"
+        },
+        "manuAdvPayDetManuAdvPayId": {
+            "meaning": "加工商预付款明细PK",
+            "reachable": false,
+            "name": "加工商预付款明细PK"
+        },
+        "manuAdvPayDetManuAdvPayInUsed": {
+            "meaning": "加工商预付款明细是否被使用",
+            "reachable": false,
+            "name": "加工商预付款明细是否被使用"
+        },
+        "manuAdvPayDetManuAdvPayInvTypeTaxRateId": {
+            "meaning": "加工商预付款明细发票税率id",
+            "reachable": false,
+            "name": "加工商预付款明细发票税率id"
+        },
+        "manuAdvPayDetManuAdvPayIsBanned": {
+            "meaning": "加工商预付款明细是否被禁用",
+            "reachable": false,
+            "name": "加工商预付款明细是否被禁用"
+        },
+        "manuAdvPayDetManuAdvPayIsDeleted": {
+            "meaning": "加工商预付款明细是否被删除",
+            "reachable": false,
+            "name": "加工商预付款明细是否被删除"
+        },
+        "manuAdvPayDetManuAdvPayIsLeaf": {
+            "meaning": "加工商预付款明细是否叶子节点",
+            "reachable": false,
+            "name": "加工商预付款明细是否叶子节点"
+        },
+        "manuAdvPayDetManuAdvPayIsMainFlow": {
+            "meaning": "加工商预付款明细是否是主流程",
+            "reachable": false,
+            "name": "加工商预付款明细是否是主流程"
+        },
+        "manuAdvPayDetManuAdvPayIsManualModificationDate": {
+            "meaning": "加工商预付款明细是否手动修改计划生产时间",
+            "reachable": false,
+            "name": "加工商预付款明细是否手动修改计划生产时间"
+        },
+        "manuAdvPayDetManuAdvPayIsolation": {
+            "meaning": "加工商预付款明细智能节点数据隔离标识",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点数据隔离标识"
+        },
+        "manuAdvPayDetManuAdvPayJsScript": {
+            "meaning": "加工商预付款明细js脚本",
+            "reachable": false,
+            "name": "加工商预付款明细js脚本"
+        },
+        "manuAdvPayDetManuAdvPayLocCompleteQuantity": {
+            "meaning": "加工商预付款明细本币完成数量（本币总已转应收/付金额）",
+            "reachable": false,
+            "name": "加工商预付款明细本币完成数量"
+        },
+        "manuAdvPayDetManuAdvPayLocTotalAmount": {
+            "meaning": "加工商预付款明细本币总预收/付金额",
+            "reachable": false,
+            "name": "加工商预付款明细本币总预收/付金额"
+        },
+        "manuAdvPayDetManuAdvPayMaterialId": {
+            "meaning": "加工商预付款明细物料id",
+            "reachable": false,
+            "name": "加工商预付款明细物料id"
+        },
+        "manuAdvPayDetManuAdvPayName": {
+            "meaning": "加工商预付款明细智能节点名",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点名"
+        },
+        "manuAdvPayDetManuAdvPayNameCodeSearch": {
+            "meaning": "加工商预付款明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商预付款明细name、user"
+        },
+        "manuAdvPayDetManuAdvPayNumberExtra1": {
+            "meaning": "加工商预付款明细扩展数量1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量1"
+        },
+        "manuAdvPayDetManuAdvPayNumberExtra2": {
+            "meaning": "加工商预付款明细扩展数量2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量2"
+        },
+        "manuAdvPayDetManuAdvPayNumberExtra3": {
+            "meaning": "加工商预付款明细扩展数量3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量3"
+        },
+        "manuAdvPayDetManuAdvPayNumberExtra4": {
+            "meaning": "加工商预付款明细扩展数量4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量4"
+        },
+        "manuAdvPayDetManuAdvPayNumberExtra5": {
+            "meaning": "加工商预付款明细扩展数量5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量5"
+        },
+        "manuAdvPayDetManuAdvPayParentId": {
+            "meaning": "加工商预付款明细父节点ID",
+            "reachable": false,
+            "name": "加工商预付款明细父节点ID"
+        },
+        "manuAdvPayDetManuAdvPayPlannedOutputQuantity": {
+            "meaning": "加工商预付款明细计划产出数量",
+            "reachable": false,
+            "name": "加工商预付款明细计划产出数量"
+        },
+        "manuAdvPayDetManuAdvPayPlannedTimeRequired": {
+            "meaning": "加工商预付款明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细计划需时"
+        },
+        "manuAdvPayDetManuAdvPayPrintTimes": {
+            "meaning": "加工商预付款明细打印次数",
+            "reachable": false,
+            "name": "加工商预付款明细打印次数"
+        },
+        "manuAdvPayDetManuAdvPayPriority": {
+            "meaning": "加工商预付款明细优先级",
+            "reachable": false,
+            "name": "加工商预付款明细优先级"
+        },
+        "manuAdvPayDetManuAdvPayProcessInstanceId": {
+            "meaning": "加工商预付款明细流程实例ID",
+            "reachable": false,
+            "name": "加工商预付款明细流程实例ID"
+        },
+        "manuAdvPayDetManuAdvPayProductionProcessesTypeId": {
+            "meaning": "加工商预付款明细工序类型ID",
+            "reachable": false,
+            "name": "加工商预付款明细工序类型ID"
+        },
+        "manuAdvPayDetManuAdvPayProductionShiftId": {
+            "meaning": "加工商预付款明细生产班次ID",
+            "reachable": false,
+            "name": "加工商预付款明细生产班次ID"
+        },
+        "manuAdvPayDetManuAdvPayQuantity": {
+            "meaning": "加工商预付款明细任务数量",
+            "reachable": false,
+            "name": "加工商预付款明细任务数量"
+        },
+        "manuAdvPayDetManuAdvPayReceiptDate": {
+            "meaning": "加工商预付款明细单据日期",
+            "reachable": false,
+            "name": "加工商预付款明细单据日期"
+        },
+        "manuAdvPayDetManuAdvPayReceiptType": {
+            "meaning": "加工商预付款明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商预付款明细单据类型"
+        },
+        "manuAdvPayDetManuAdvPayRelatedTasksId": {
+            "meaning": "加工商预付款明细关联任务id",
+            "reachable": false,
+            "name": "加工商预付款明细关联任务id"
+        },
+        "manuAdvPayDetManuAdvPaySerialNumber": {
+            "meaning": "加工商预付款明细顺序号",
+            "reachable": false,
+            "name": "加工商预付款明细顺序号"
+        },
+        "manuAdvPayDetManuAdvPaySource": {
+            "meaning": "加工商预付款明细源",
+            "reachable": false,
+            "name": "加工商预付款明细源"
+        },
+        "manuAdvPayDetManuAdvPaySourceType": {
+            "meaning": "加工商预付款明细来源类型",
+            "reachable": false,
+            "name": "加工商预付款明细来源类型"
+        },
+        "manuAdvPayDetManuAdvPayStaffId": {
+            "meaning": "加工商预付款明细经手人（员工id）",
+            "reachable": false,
+            "name": "加工商预付款明细经手人"
+        },
+        "manuAdvPayDetManuAdvPayState": {
+            "meaning": "加工商预付款明细通用状态",
+            "reachable": false,
+            "name": "加工商预付款明细通用状态"
+        },
+        "manuAdvPayDetManuAdvPaySupplierId": {
+            "meaning": "加工商预付款明细供应商ID",
+            "reachable": false,
+            "name": "加工商预付款明细供应商ID"
+        },
+        "manuAdvPayDetManuAdvPaySystemCode": {
+            "meaning": "加工商预付款明细系统编码",
+            "reachable": false,
+            "name": "加工商预付款明细系统编码"
+        },
+        "manuAdvPayDetManuAdvPayTarget": {
+            "meaning": "加工商预付款明细目标",
+            "reachable": false,
+            "name": "加工商预付款明细目标"
+        },
+        "manuAdvPayDetManuAdvPayTaskNodeName": {
+            "meaning": "加工商预付款明细任务节点名称",
+            "reachable": false,
+            "name": "加工商预付款明细任务节点名称"
+        },
+        "manuAdvPayDetManuAdvPayTenantId": {
+            "meaning": "加工商预付款明细租户ID",
+            "reachable": false,
+            "name": "加工商预付款明细租户ID"
+        },
+        "manuAdvPayDetManuAdvPayThirdPartyClass": {
+            "meaning": "加工商预付款明细第三方分类",
+            "reachable": false,
+            "name": "加工商预付款明细第三方分类"
+        },
+        "manuAdvPayDetManuAdvPayThirdPartyId": {
+            "meaning": "加工商预付款明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商预付款明细第三方系统中的唯一ID"
+        },
+        "manuAdvPayDetManuAdvPayThirdPartyName": {
+            "meaning": "加工商预付款明细第三方名称",
+            "reachable": false,
+            "name": "加工商预付款明细第三方名称"
+        },
+        "manuAdvPayDetManuAdvPayToAuditDate": {
+            "meaning": "manuAdvPayDetManuAdvPayToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToBeginTime": {
+            "meaning": "manuAdvPayDetManuAdvPayToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToCreateTime": {
+            "meaning": "manuAdvPayDetManuAdvPayToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDateExtra1": {
+            "meaning": "manuAdvPayDetManuAdvPayToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDateExtra2": {
+            "meaning": "manuAdvPayDetManuAdvPayToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDateExtra3": {
+            "meaning": "manuAdvPayDetManuAdvPayToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDateExtra4": {
+            "meaning": "manuAdvPayDetManuAdvPayToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDateExtra5": {
+            "meaning": "manuAdvPayDetManuAdvPayToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToDeliveryDate": {
+            "meaning": "manuAdvPayDetManuAdvPayToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToEndTime": {
+            "meaning": "manuAdvPayDetManuAdvPayToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToReceiptDate": {
+            "meaning": "manuAdvPayDetManuAdvPayToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayToUpdateTime": {
+            "meaning": "manuAdvPayDetManuAdvPayToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetManuAdvPayTotalAmount": {
+            "meaning": "加工商预付款明细总预收/付金额",
+            "reachable": false,
+            "name": "加工商预付款明细总预收/付金额"
+        },
+        "manuAdvPayDetManuAdvPayUnitCode": {
+            "meaning": "加工商预付款明细单位id",
+            "reachable": false,
+            "name": "加工商预付款明细单位id"
+        },
+        "manuAdvPayDetManuAdvPayUpdateTime": {
+            "meaning": "加工商预付款明细更新时间",
+            "reachable": false,
+            "name": "加工商预付款明细更新时间"
+        },
+        "manuAdvPayDetManuAdvPayUpdater": {
+            "meaning": "加工商预付款明细更新人",
+            "reachable": false,
+            "name": "加工商预付款明细更新人"
+        },
+        "manuAdvPayDetManuAdvPayUpdaterId": {
+            "meaning": "加工商预付款明细更新人ID",
+            "reachable": false,
+            "name": "加工商预付款明细更新人ID"
+        },
+        "manuAdvPayDetManuAdvPayUserCode": {
+            "meaning": "加工商预付款明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点的唯一编码"
+        },
+        "manuAdvPayDetManuAdvPayVarExtra1": {
+            "meaning": "加工商预付款明细扩展1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展1"
+        },
+        "manuAdvPayDetManuAdvPayVarExtra2": {
+            "meaning": "加工商预付款明细扩展2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展2"
+        },
+        "manuAdvPayDetManuAdvPayVarExtra3": {
+            "meaning": "加工商预付款明细扩展3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展3"
+        },
+        "manuAdvPayDetManuAdvPayVarExtra4": {
+            "meaning": "加工商预付款明细扩展4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展4"
+        },
+        "manuAdvPayDetManuAdvPayVarExtra5": {
+            "meaning": "加工商预付款明细扩展5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展5"
+        },
+        "manuAdvPayDetManuAdvPayVersion": {
+            "meaning": "加工商预付款明细版本号",
+            "reachable": false,
+            "name": "加工商预付款明细版本号"
+        },
+        "manuAdvPayDetMaterialId": {
+            "meaning": "加工商预付款明细物料id",
+            "reachable": false,
+            "name": "加工商预付款明细物料id"
+        },
+        "manuAdvPayDetName": {
+            "meaning": "加工商预付款明细智能节点名",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点名"
+        },
+        "manuAdvPayDetNameCodeSearch": {
+            "meaning": "加工商预付款明细name、user de模糊搜索",
+            "reachable": false,
+            "name": "加工商预付款明细name、user"
+        },
+        "manuAdvPayDetNumberExtra1": {
+            "meaning": "加工商预付款明细扩展数量1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量1"
+        },
+        "manuAdvPayDetNumberExtra2": {
+            "meaning": "加工商预付款明细扩展数量2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量2"
+        },
+        "manuAdvPayDetNumberExtra3": {
+            "meaning": "加工商预付款明细扩展数量3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量3"
+        },
+        "manuAdvPayDetNumberExtra4": {
+            "meaning": "加工商预付款明细扩展数量4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量4"
+        },
+        "manuAdvPayDetNumberExtra5": {
+            "meaning": "加工商预付款明细扩展数量5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展数量5"
+        },
+        "manuAdvPayDetOrderId": {
+            "meaning": "加工商预付款明细订单ID",
+            "reachable": false,
+            "name": "加工商预付款明细订单ID"
+        },
+        "manuAdvPayDetParentId": {
+            "meaning": "加工商预付款明细父节点ID",
+            "reachable": false,
+            "name": "加工商预付款明细父节点ID"
+        },
+        "manuAdvPayDetPlannedOutputQuantity": {
+            "meaning": "加工商预付款明细计划产出数量",
+            "reachable": false,
+            "name": "加工商预付款明细计划产出数量"
+        },
+        "manuAdvPayDetPlannedTimeRequired": {
+            "meaning": "加工商预付款明细计划需时(小时)",
+            "reachable": false,
+            "name": "加工商预付款明细计划需时"
+        },
+        "manuAdvPayDetPrintTimes": {
+            "meaning": "加工商预付款明细打印次数",
+            "reachable": false,
+            "name": "加工商预付款明细打印次数"
+        },
+        "manuAdvPayDetPriority": {
+            "meaning": "加工商预付款明细优先级",
+            "reachable": false,
+            "name": "加工商预付款明细优先级"
+        },
+        "manuAdvPayDetProcessInstanceId": {
+            "meaning": "加工商预付款明细流程实例ID",
+            "reachable": false,
+            "name": "加工商预付款明细流程实例ID"
+        },
+        "manuAdvPayDetProductionProcessesTypeId": {
+            "meaning": "加工商预付款明细工序类型ID",
+            "reachable": false,
+            "name": "加工商预付款明细工序类型ID"
+        },
+        "manuAdvPayDetProductionShiftId": {
+            "meaning": "加工商预付款明细生产班次ID",
+            "reachable": false,
+            "name": "加工商预付款明细生产班次ID"
+        },
+        "manuAdvPayDetQuantity": {
+            "meaning": "加工商预付款明细任务数量",
+            "reachable": false,
+            "name": "加工商预付款明细任务数量"
+        },
+        "manuAdvPayDetReceiptDate": {
+            "meaning": "加工商预付款明细单据日期",
+            "reachable": false,
+            "name": "加工商预付款明细单据日期"
+        },
+        "manuAdvPayDetReceiptType": {
+            "meaning": "加工商预付款明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）",
+            "reachable": false,
+            "name": "加工商预付款明细单据类型"
+        },
+        "manuAdvPayDetRelatedTasksId": {
+            "meaning": "加工商预付款明细关联任务id",
+            "reachable": false,
+            "name": "加工商预付款明细关联任务id"
+        },
+        "manuAdvPayDetSerialNumber": {
+            "meaning": "加工商预付款明细顺序号",
+            "reachable": false,
+            "name": "加工商预付款明细顺序号"
+        },
+        "manuAdvPayDetSource": {
+            "meaning": "加工商预付款明细源",
+            "reachable": false,
+            "name": "加工商预付款明细源"
+        },
+        "manuAdvPayDetSourceType": {
+            "meaning": "加工商预付款明细来源类型",
+            "reachable": false,
+            "name": "加工商预付款明细来源类型"
+        },
+        "manuAdvPayDetState": {
+            "meaning": "加工商预付款明细通用状态",
+            "reachable": false,
+            "name": "加工商预付款明细通用状态"
+        },
+        "manuAdvPayDetSystemCode": {
+            "meaning": "加工商预付款明细系统编码",
+            "reachable": false,
+            "name": "加工商预付款明细系统编码"
+        },
+        "manuAdvPayDetTarget": {
+            "meaning": "加工商预付款明细目标",
+            "reachable": false,
+            "name": "加工商预付款明细目标"
+        },
+        "manuAdvPayDetTaskNodeName": {
+            "meaning": "加工商预付款明细任务节点名称",
+            "reachable": false,
+            "name": "加工商预付款明细任务节点名称"
+        },
+        "manuAdvPayDetTenantId": {
+            "meaning": "加工商预付款明细租户ID",
+            "reachable": false,
+            "name": "加工商预付款明细租户ID"
+        },
+        "manuAdvPayDetThirdPartyClass": {
+            "meaning": "加工商预付款明细第三方分类",
+            "reachable": false,
+            "name": "加工商预付款明细第三方分类"
+        },
+        "manuAdvPayDetThirdPartyId": {
+            "meaning": "加工商预付款明细第三方系统中的唯一ID",
+            "reachable": false,
+            "name": "加工商预付款明细第三方系统中的唯一ID"
+        },
+        "manuAdvPayDetThirdPartyName": {
+            "meaning": "加工商预付款明细第三方名称",
+            "reachable": false,
+            "name": "加工商预付款明细第三方名称"
+        },
+        "manuAdvPayDetToAuditDate": {
+            "meaning": "manuAdvPayDetToAuditDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToBeginTime": {
+            "meaning": "manuAdvPayDetToBeginTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToCreateTime": {
+            "meaning": "manuAdvPayDetToCreateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDateExtra1": {
+            "meaning": "manuAdvPayDetToDateExtra1",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDateExtra2": {
+            "meaning": "manuAdvPayDetToDateExtra2",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDateExtra3": {
+            "meaning": "manuAdvPayDetToDateExtra3",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDateExtra4": {
+            "meaning": "manuAdvPayDetToDateExtra4",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDateExtra5": {
+            "meaning": "manuAdvPayDetToDateExtra5",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToDeliveryDate": {
+            "meaning": "manuAdvPayDetToDeliveryDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToEndTime": {
+            "meaning": "manuAdvPayDetToEndTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToReceiptDate": {
+            "meaning": "manuAdvPayDetToReceiptDate",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetToUpdateTime": {
+            "meaning": "manuAdvPayDetToUpdateTime",
+            "reachable": false,
+            "name": ""
+        },
+        "manuAdvPayDetUnitCode": {
+            "meaning": "加工商预付款明细单位id",
+            "reachable": false,
+            "name": "加工商预付款明细单位id"
+        },
+        "manuAdvPayDetUpdateTime": {
+            "meaning": "加工商预付款明细更新时间",
+            "reachable": false,
+            "name": "加工商预付款明细更新时间"
+        },
+        "manuAdvPayDetUpdater": {
+            "meaning": "加工商预付款明细更新人",
+            "reachable": false,
+            "name": "加工商预付款明细更新人"
+        },
+        "manuAdvPayDetUpdaterId": {
+            "meaning": "加工商预付款明细更新人ID",
+            "reachable": false,
+            "name": "加工商预付款明细更新人ID"
+        },
+        "manuAdvPayDetUserCode": {
+            "meaning": "加工商预付款明细智能节点的唯一编码",
+            "reachable": false,
+            "name": "加工商预付款明细智能节点的唯一编码"
+        },
+        "manuAdvPayDetVarExtra1": {
+            "meaning": "加工商预付款明细扩展1",
+            "reachable": false,
+            "name": "加工商预付款明细扩展1"
+        },
+        "manuAdvPayDetVarExtra2": {
+            "meaning": "加工商预付款明细扩展2",
+            "reachable": false,
+            "name": "加工商预付款明细扩展2"
+        },
+        "manuAdvPayDetVarExtra3": {
+            "meaning": "加工商预付款明细扩展3",
+            "reachable": false,
+            "name": "加工商预付款明细扩展3"
+        },
+        "manuAdvPayDetVarExtra4": {
+            "meaning": "加工商预付款明细扩展4",
+            "reachable": false,
+            "name": "加工商预付款明细扩展4"
+        },
+        "manuAdvPayDetVarExtra5": {
+            "meaning": "加工商预付款明细扩展5",
+            "reachable": false,
+            "name": "加工商预付款明细扩展5"
+        },
+        "manuAdvPayDetVersion": {
+            "meaning": "加工商预付款明细版本号",
+            "reachable": false,
+            "name": "加工商预付款明细版本号"
+        },
+        "manuAdvPayDetWorkOrderId": {
+            "meaning": "加工商预付款明细工单ID",
+            "reachable": false,
+            "name": "加工商预付款明细工单ID"
+        }
+    }
+}

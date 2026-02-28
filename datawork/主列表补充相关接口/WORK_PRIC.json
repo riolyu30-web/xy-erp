@@ -1,0 +1,362 @@
+{
+  "api_name" : "/work-pric/findList",
+  "table_name" : "工单核价单管理",
+  "request" : {
+    "workPricClazz" : "WORK_PRIC"
+  },
+  "mainTabClazz" : "WORK_PRIC",
+  "response" : {
+    "workPricActualTimeRequired" : {
+      "meaning" : "工单核价单管理实际需时(小时)"
+    },
+    "workPricAdjustmentTimeRequired" : {
+      "meaning" : "工单核价单管理调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "workPricApplicationId" : {
+      "meaning" : "工单核价单管理应用ID"
+    },
+    "workPricAuditDate" : {
+      "meaning" : "工单核价单管理审核时间"
+    },
+    "workPricAuditStatus" : {
+      "meaning" : "工单核价单管理审核状态"
+    },
+    "workPricAvailableScheduleId" : {
+      "meaning" : "工单核价单管理可用日程id"
+    },
+    "workPricBeginTime" : {
+      "meaning" : "工单核价单管理开始时间"
+    },
+    "workPricBizVersion" : {
+      "meaning" : "工单核价单管理业务自定义版本号"
+    },
+    "workPricBriefName" : {
+      "meaning" : "工单核价单管理简称"
+    },
+    "workPricBusDivisId" : {
+      "meaning" : "工单核价单管理事业部id"
+    },
+    "workPricClazz" : {
+      "meaning" : "工单核价单管理子类 类名（表和类一一对应）"
+    },
+    "workPricClosedReason" : {
+      "meaning" : "工单核价单管理结案原因"
+    },
+    "workPricClosedStatus" : {
+      "meaning" : "工单核价单管理结案状态"
+    },
+    "workPricComment" : {
+      "meaning" : "工单核价单管理评论"
+    },
+    "workPricCompleteQuantity" : {
+      "meaning" : "工单核价单管理完成数量"
+    },
+    "workPricCompleteStatus" : {
+      "meaning" : "工单核价单管理完成状态"
+    },
+    "workPricCreateTime" : {
+      "meaning" : "工单核价单管理创建时间"
+    },
+    "workPricCreator" : {
+      "meaning" : "工单核价单管理创建人"
+    },
+    "workPricCreatorId" : {
+      "meaning" : "工单核价单管理创建人ID"
+    },
+    "workPricDateExtra1" : {
+      "meaning" : "工单核价单管理扩展时间1"
+    },
+    "workPricDateExtra2" : {
+      "meaning" : "工单核价单管理扩展时间2"
+    },
+    "workPricDateExtra3" : {
+      "meaning" : "工单核价单管理扩展时间3"
+    },
+    "workPricDateExtra4" : {
+      "meaning" : "工单核价单管理扩展时间4"
+    },
+    "workPricDateExtra5" : {
+      "meaning" : "工单核价单管理扩展时间5"
+    },
+    "workPricDefaultType" : {
+      "meaning" : "工单核价单管理智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "workPricDeliveryDate" : {
+      "meaning" : "工单核价单管理交货日期"
+    },
+    "workPricDescription" : {
+      "meaning" : "工单核价单管理描述"
+    },
+    "workPricEndTime" : {
+      "meaning" : "工单核价单管理结束时间"
+    },
+    "workPricEndTimeRequired" : {
+      "meaning" : "工单核价单管理最后需时(小时)"
+    },
+    "workPricEngName" : {
+      "meaning" : "工单核价单管理英文名称"
+    },
+    "workPricEquipmentId" : {
+      "meaning" : "工单核价单管理设备id"
+    },
+    "workPricExchangeRateId" : {
+      "meaning" : "工单核价单管理币种汇率id"
+    },
+    "workPricExtension" : {
+      "meaning" : "工单核价单管理扩展数据"
+    },
+    "workPricExternalState" : {
+      "meaning" : "工单核价单管理上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "workPricFilterClazz" : {
+      "meaning" : "工单核价单管理冗余字段用于筛选"
+    },
+    "workPricFlags" : {
+      "meaning" : "工单核价单管理63位标志位"
+    },
+    "workPricFromAuditDate" : {
+      "meaning" : "workPricFromAuditDate"
+    },
+    "workPricFromBeginTime" : {
+      "meaning" : "workPricFromBeginTime"
+    },
+    "workPricFromCreateTime" : {
+      "meaning" : "workPricFromCreateTime"
+    },
+    "workPricFromDateExtra1" : {
+      "meaning" : "workPricFromDateExtra1"
+    },
+    "workPricFromDateExtra2" : {
+      "meaning" : "workPricFromDateExtra2"
+    },
+    "workPricFromDateExtra3" : {
+      "meaning" : "workPricFromDateExtra3"
+    },
+    "workPricFromDateExtra4" : {
+      "meaning" : "workPricFromDateExtra4"
+    },
+    "workPricFromDateExtra5" : {
+      "meaning" : "workPricFromDateExtra5"
+    },
+    "workPricFromDeliveryDate" : {
+      "meaning" : "workPricFromDeliveryDate"
+    },
+    "workPricFromEndTime" : {
+      "meaning" : "workPricFromEndTime"
+    },
+    "workPricFromReceiptDate" : {
+      "meaning" : "workPricFromReceiptDate"
+    },
+    "workPricFromUpdateTime" : {
+      "meaning" : "workPricFromUpdateTime"
+    },
+    "workPricFscType" : {
+      "meaning" : "工单核价单管理FSC声明"
+    },
+    "workPricGenerativePeople" : {
+      "meaning" : "工单核价单管理下发人"
+    },
+    "workPricGenerativeState" : {
+      "meaning" : "工单核价单管理下发状态"
+    },
+    "workPricGroovyScript" : {
+      "meaning" : "工单核价单管理groovy脚本"
+    },
+    "workPricGropeCode" : {
+      "meaning" : "工单核价单管理搜索码"
+    },
+    "workPricId" : {
+      "meaning" : "工单核价单管理PK",
+      "is_primary" : true
+    },
+    "workPricInUsed" : {
+      "meaning" : "工单核价单管理是否被使用"
+    },
+    "workPricInvTypeTaxRateId" : {
+      "meaning" : "工单核价单管理发票税率id"
+    },
+    "workPricIsBanned" : {
+      "meaning" : "工单核价单管理是否被禁用"
+    },
+    "workPricIsDeleted" : {
+      "meaning" : "工单核价单管理是否被删除"
+    },
+    "workPricIsLeaf" : {
+      "meaning" : "工单核价单管理是否叶子节点"
+    },
+    "workPricIsMainFlow" : {
+      "meaning" : "工单核价单管理是否是主流程"
+    },
+    "workPricIsManualModificationDate" : {
+      "meaning" : "工单核价单管理是否手动修改计划生产时间"
+    },
+    "workPricIsolation" : {
+      "meaning" : "工单核价单管理智能节点数据隔离标识"
+    },
+    "workPricJsScript" : {
+      "meaning" : "工单核价单管理js脚本"
+    },
+    "workPricMaterialId" : {
+      "meaning" : "工单核价单管理物料id"
+    },
+    "workPricName" : {
+      "meaning" : "工单核价单管理智能节点名"
+    },
+    "workPricNameCodeSearch" : {
+      "meaning" : "工单核价单管理name、user_code模糊搜索"
+    },
+    "workPricNumberExtra1" : {
+      "meaning" : "工单核价单管理扩展数量1"
+    },
+    "workPricNumberExtra2" : {
+      "meaning" : "工单核价单管理扩展数量2"
+    },
+    "workPricNumberExtra3" : {
+      "meaning" : "工单核价单管理扩展数量3"
+    },
+    "workPricNumberExtra4" : {
+      "meaning" : "工单核价单管理扩展数量4"
+    },
+    "workPricNumberExtra5" : {
+      "meaning" : "工单核价单管理扩展数量5"
+    },
+    "workPricParentId" : {
+      "meaning" : "工单核价单管理父节点ID"
+    },
+    "workPricPlannedOutputQuantity" : {
+      "meaning" : "工单核价单管理计划产出数量"
+    },
+    "workPricPlannedTimeRequired" : {
+      "meaning" : "工单核价单管理计划需时(小时)"
+    },
+    "workPricPrintTimes" : {
+      "meaning" : "工单核价单管理打印次数"
+    },
+    "workPricPriority" : {
+      "meaning" : "工单核价单管理优先级"
+    },
+    "workPricProcessInstanceId" : {
+      "meaning" : "工单核价单管理流程实例ID"
+    },
+    "workPricProductionProcessesTypeId" : {
+      "meaning" : "工单核价单管理工序类型ID"
+    },
+    "workPricProductionShiftId" : {
+      "meaning" : "工单核价单管理生产班次ID"
+    },
+    "workPricQuantity" : {
+      "meaning" : "工单核价单管理任务数量"
+    },
+    "workPricReceiptDate" : {
+      "meaning" : "工单核价单管理单据日期"
+    },
+    "workPricReceiptType" : {
+      "meaning" : "工单核价单管理单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "workPricRelatedTasksId" : {
+      "meaning" : "工单核价单管理关联任务id"
+    },
+    "workPricSerialNumber" : {
+      "meaning" : "工单核价单管理顺序号"
+    },
+    "workPricSource" : {
+      "meaning" : "工单核价单管理源"
+    },
+    "workPricSourceType" : {
+      "meaning" : "工单核价单管理来源类型"
+    },
+    "workPricState" : {
+      "meaning" : "工单核价单管理通用状态"
+    },
+    "workPricSystemCode" : {
+      "meaning" : "工单核价单管理系统编码"
+    },
+    "workPricTarget" : {
+      "meaning" : "工单核价单管理目标"
+    },
+    "workPricTaskNodeName" : {
+      "meaning" : "工单核价单管理任务节点名称"
+    },
+    "workPricTenantId" : {
+      "meaning" : "工单核价单管理租户_id"
+    },
+    "workPricThirdPartyClass" : {
+      "meaning" : "工单核价单管理第三方分类"
+    },
+    "workPricThirdPartyId" : {
+      "meaning" : "工单核价单管理第三方系统中的唯一ID"
+    },
+    "workPricThirdPartyName" : {
+      "meaning" : "工单核价单管理第三方名称"
+    },
+    "workPricToAuditDate" : {
+      "meaning" : "workPricToAuditDate"
+    },
+    "workPricToBeginTime" : {
+      "meaning" : "workPricToBeginTime"
+    },
+    "workPricToCreateTime" : {
+      "meaning" : "workPricToCreateTime"
+    },
+    "workPricToDateExtra1" : {
+      "meaning" : "workPricToDateExtra1"
+    },
+    "workPricToDateExtra2" : {
+      "meaning" : "workPricToDateExtra2"
+    },
+    "workPricToDateExtra3" : {
+      "meaning" : "workPricToDateExtra3"
+    },
+    "workPricToDateExtra4" : {
+      "meaning" : "workPricToDateExtra4"
+    },
+    "workPricToDateExtra5" : {
+      "meaning" : "workPricToDateExtra5"
+    },
+    "workPricToDeliveryDate" : {
+      "meaning" : "workPricToDeliveryDate"
+    },
+    "workPricToEndTime" : {
+      "meaning" : "workPricToEndTime"
+    },
+    "workPricToReceiptDate" : {
+      "meaning" : "workPricToReceiptDate"
+    },
+    "workPricToUpdateTime" : {
+      "meaning" : "workPricToUpdateTime"
+    },
+    "workPricUnitCode" : {
+      "meaning" : "工单核价单管理单位id"
+    },
+    "workPricUpdateTime" : {
+      "meaning" : "工单核价单管理更新时间"
+    },
+    "workPricUpdater" : {
+      "meaning" : "工单核价单管理更新人"
+    },
+    "workPricUpdaterId" : {
+      "meaning" : "工单核价单管理更新人ID"
+    },
+    "workPricUserCode" : {
+      "meaning" : "工单核价单管理智能节点的唯一编码"
+    },
+    "workPricVarExtra1" : {
+      "meaning" : "工单核价单管理扩展1"
+    },
+    "workPricVarExtra2" : {
+      "meaning" : "工单核价单管理扩展2"
+    },
+    "workPricVarExtra3" : {
+      "meaning" : "工单核价单管理扩展3"
+    },
+    "workPricVarExtra4" : {
+      "meaning" : "工单核价单管理扩展4"
+    },
+    "workPricVarExtra5" : {
+      "meaning" : "工单核价单管理扩展5"
+    },
+    "workPricVersion" : {
+      "meaning" : "工单核价单管理版本号"
+    }
+  }
+}

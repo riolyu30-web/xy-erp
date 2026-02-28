@@ -1,0 +1,365 @@
+{
+  "api_name" : "/wms-inv-bat-adj/findList",
+  "table_name" : "库存批次调整表",
+  "request" : {
+    "wmsInvBatAdjClazz" : "WMS_INV_BAT_ADJ"
+  },
+  "mainTabClazz" : "WMS_INV_BAT_ADJ",
+  "response" : {
+    "wmsInvBatAdjActualTimeRequired" : {
+      "meaning" : "库存批次调整表实际需时(小时)"
+    },
+    "wmsInvBatAdjAdjustmentTimeRequired" : {
+      "meaning" : "库存批次调整表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvBatAdjApplicationId" : {
+      "meaning" : "库存批次调整表应用ID"
+    },
+    "wmsInvBatAdjAuditDate" : {
+      "meaning" : "库存批次调整表审核时间"
+    },
+    "wmsInvBatAdjAuditStatus" : {
+      "meaning" : "库存批次调整表审核状态"
+    },
+    "wmsInvBatAdjAvailableScheduleId" : {
+      "meaning" : "库存批次调整表可用日程id"
+    },
+    "wmsInvBatAdjBeginTime" : {
+      "meaning" : "库存批次调整表开始时间"
+    },
+    "wmsInvBatAdjBizVersion" : {
+      "meaning" : "库存批次调整表业务自定义版本号"
+    },
+    "wmsInvBatAdjBriefName" : {
+      "meaning" : "库存批次调整表简称"
+    },
+    "wmsInvBatAdjBusDivisId" : {
+      "meaning" : "库存批次调整表事业部id"
+    },
+    "wmsInvBatAdjClazz" : {
+      "meaning" : "库存批次调整表子类 类名（表和类一一对应）"
+    },
+    "wmsInvBatAdjClosedReason" : {
+      "meaning" : "库存批次调整表结案原因"
+    },
+    "wmsInvBatAdjClosedStatus" : {
+      "meaning" : "库存批次调整表结案状态"
+    },
+    "wmsInvBatAdjComment" : {
+      "meaning" : "库存批次调整表评论"
+    },
+    "wmsInvBatAdjCompleteQuantity" : {
+      "meaning" : "库存批次调整表完成数量"
+    },
+    "wmsInvBatAdjCompleteStatus" : {
+      "meaning" : "库存批次调整表完成状态"
+    },
+    "wmsInvBatAdjCreateTime" : {
+      "meaning" : "库存批次调整表创建时间"
+    },
+    "wmsInvBatAdjCreator" : {
+      "meaning" : "库存批次调整表创建人"
+    },
+    "wmsInvBatAdjCreatorId" : {
+      "meaning" : "库存批次调整表创建人ID"
+    },
+    "wmsInvBatAdjDateExtra1" : {
+      "meaning" : "库存批次调整表扩展时间1"
+    },
+    "wmsInvBatAdjDateExtra2" : {
+      "meaning" : "库存批次调整表扩展时间2"
+    },
+    "wmsInvBatAdjDateExtra3" : {
+      "meaning" : "库存批次调整表扩展时间3"
+    },
+    "wmsInvBatAdjDateExtra4" : {
+      "meaning" : "库存批次调整表扩展时间4"
+    },
+    "wmsInvBatAdjDateExtra5" : {
+      "meaning" : "库存批次调整表扩展时间5"
+    },
+    "wmsInvBatAdjDefaultType" : {
+      "meaning" : "库存批次调整表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvBatAdjDeliveryDate" : {
+      "meaning" : "库存批次调整表交货日期"
+    },
+    "wmsInvBatAdjDescription" : {
+      "meaning" : "库存批次调整表描述"
+    },
+    "wmsInvBatAdjEndTime" : {
+      "meaning" : "库存批次调整表结束时间"
+    },
+    "wmsInvBatAdjEndTimeRequired" : {
+      "meaning" : "库存批次调整表最后需时(小时)"
+    },
+    "wmsInvBatAdjEngName" : {
+      "meaning" : "库存批次调整表英文名称"
+    },
+    "wmsInvBatAdjEquipmentId" : {
+      "meaning" : "库存批次调整表设备id"
+    },
+    "wmsInvBatAdjExchangeRateId" : {
+      "meaning" : "库存批次调整表币种汇率id"
+    },
+    "wmsInvBatAdjExtension" : {
+      "meaning" : "库存批次调整表扩展数据"
+    },
+    "wmsInvBatAdjExternalState" : {
+      "meaning" : "库存批次调整表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvBatAdjFilterClazz" : {
+      "meaning" : "库存批次调整表冗余字段用于筛选"
+    },
+    "wmsInvBatAdjFlags" : {
+      "meaning" : "库存批次调整表63位标志位"
+    },
+    "wmsInvBatAdjFromAuditDate" : {
+      "meaning" : "wmsInvBatAdjFromAuditDate"
+    },
+    "wmsInvBatAdjFromBeginTime" : {
+      "meaning" : "wmsInvBatAdjFromBeginTime"
+    },
+    "wmsInvBatAdjFromCreateTime" : {
+      "meaning" : "wmsInvBatAdjFromCreateTime"
+    },
+    "wmsInvBatAdjFromDateExtra1" : {
+      "meaning" : "wmsInvBatAdjFromDateExtra1"
+    },
+    "wmsInvBatAdjFromDateExtra2" : {
+      "meaning" : "wmsInvBatAdjFromDateExtra2"
+    },
+    "wmsInvBatAdjFromDateExtra3" : {
+      "meaning" : "wmsInvBatAdjFromDateExtra3"
+    },
+    "wmsInvBatAdjFromDateExtra4" : {
+      "meaning" : "wmsInvBatAdjFromDateExtra4"
+    },
+    "wmsInvBatAdjFromDateExtra5" : {
+      "meaning" : "wmsInvBatAdjFromDateExtra5"
+    },
+    "wmsInvBatAdjFromDeliveryDate" : {
+      "meaning" : "wmsInvBatAdjFromDeliveryDate"
+    },
+    "wmsInvBatAdjFromEndTime" : {
+      "meaning" : "wmsInvBatAdjFromEndTime"
+    },
+    "wmsInvBatAdjFromReceiptDate" : {
+      "meaning" : "wmsInvBatAdjFromReceiptDate"
+    },
+    "wmsInvBatAdjFromUpdateTime" : {
+      "meaning" : "wmsInvBatAdjFromUpdateTime"
+    },
+    "wmsInvBatAdjFscType" : {
+      "meaning" : "库存批次调整表FSC声明"
+    },
+    "wmsInvBatAdjGenerativePeople" : {
+      "meaning" : "库存批次调整表下发人"
+    },
+    "wmsInvBatAdjGenerativeState" : {
+      "meaning" : "库存批次调整表下发状态"
+    },
+    "wmsInvBatAdjGroovyScript" : {
+      "meaning" : "库存批次调整表groovy脚本"
+    },
+    "wmsInvBatAdjGropeCode" : {
+      "meaning" : "库存批次调整表搜索码"
+    },
+    "wmsInvBatAdjId" : {
+      "meaning" : "库存批次调整表pk",
+      "is_primary" : true
+    },
+    "wmsInvBatAdjInUsed" : {
+      "meaning" : "库存批次调整表是否被使用"
+    },
+    "wmsInvBatAdjInvTypeTaxRateId" : {
+      "meaning" : "库存批次调整表发票税率id"
+    },
+    "wmsInvBatAdjIsBanned" : {
+      "meaning" : "库存批次调整表是否被禁用"
+    },
+    "wmsInvBatAdjIsDeleted" : {
+      "meaning" : "库存批次调整表是否被删除"
+    },
+    "wmsInvBatAdjIsLeaf" : {
+      "meaning" : "库存批次调整表是否叶子节点"
+    },
+    "wmsInvBatAdjIsMainFlow" : {
+      "meaning" : "库存批次调整表是否是主流程"
+    },
+    "wmsInvBatAdjIsManualModificationDate" : {
+      "meaning" : "库存批次调整表是否手动修改计划生产时间"
+    },
+    "wmsInvBatAdjIsolation" : {
+      "meaning" : "库存批次调整表智能节点数据隔离标识"
+    },
+    "wmsInvBatAdjJsScript" : {
+      "meaning" : "库存批次调整表js脚本"
+    },
+    "wmsInvBatAdjMaterialId" : {
+      "meaning" : "库存批次调整表物料id"
+    },
+    "wmsInvBatAdjName" : {
+      "meaning" : "库存批次调整表智能节点名"
+    },
+    "wmsInvBatAdjNameCodeSearch" : {
+      "meaning" : "库存批次调整表name、user_code模糊搜索"
+    },
+    "wmsInvBatAdjNumberExtra1" : {
+      "meaning" : "库存批次调整表扩展数量1"
+    },
+    "wmsInvBatAdjNumberExtra2" : {
+      "meaning" : "库存批次调整表扩展数量2"
+    },
+    "wmsInvBatAdjNumberExtra3" : {
+      "meaning" : "库存批次调整表扩展数量3"
+    },
+    "wmsInvBatAdjNumberExtra4" : {
+      "meaning" : "库存批次调整表扩展数量4"
+    },
+    "wmsInvBatAdjNumberExtra5" : {
+      "meaning" : "库存批次调整表扩展数量5"
+    },
+    "wmsInvBatAdjParentId" : {
+      "meaning" : "库存批次调整表父节点ID"
+    },
+    "wmsInvBatAdjPlannedOutputQuantity" : {
+      "meaning" : "库存批次调整表计划产出数量"
+    },
+    "wmsInvBatAdjPlannedTimeRequired" : {
+      "meaning" : "库存批次调整表计划需时(小时)"
+    },
+    "wmsInvBatAdjPrintTimes" : {
+      "meaning" : "库存批次调整表打印次数"
+    },
+    "wmsInvBatAdjPriority" : {
+      "meaning" : "库存批次调整表优先级"
+    },
+    "wmsInvBatAdjProcessInstanceId" : {
+      "meaning" : "库存批次调整表流程实例ID"
+    },
+    "wmsInvBatAdjProductionProcessesTypeId" : {
+      "meaning" : "库存批次调整表工序类型ID"
+    },
+    "wmsInvBatAdjProductionShiftId" : {
+      "meaning" : "库存批次调整表生产班次ID"
+    },
+    "wmsInvBatAdjQuantity" : {
+      "meaning" : "库存批次调整表任务数量"
+    },
+    "wmsInvBatAdjReceiptDate" : {
+      "meaning" : "库存批次调整表单据日期"
+    },
+    "wmsInvBatAdjReceiptType" : {
+      "meaning" : "库存批次调整表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvBatAdjRelatedTasksId" : {
+      "meaning" : "库存批次调整表关联任务id"
+    },
+    "wmsInvBatAdjSerialNumber" : {
+      "meaning" : "库存批次调整表顺序号"
+    },
+    "wmsInvBatAdjSource" : {
+      "meaning" : "库存批次调整表源"
+    },
+    "wmsInvBatAdjSourceType" : {
+      "meaning" : "库存批次调整表来源类型"
+    },
+    "wmsInvBatAdjState" : {
+      "meaning" : "库存批次调整表通用状态"
+    },
+    "wmsInvBatAdjSystemCode" : {
+      "meaning" : "库存批次调整表系统编码"
+    },
+    "wmsInvBatAdjTarget" : {
+      "meaning" : "库存批次调整表目标"
+    },
+    "wmsInvBatAdjTaskNodeName" : {
+      "meaning" : "库存批次调整表任务节点名称"
+    },
+    "wmsInvBatAdjTenantId" : {
+      "meaning" : "库存批次调整表租户ID"
+    },
+    "wmsInvBatAdjThirdPartyClass" : {
+      "meaning" : "库存批次调整表第三方分类"
+    },
+    "wmsInvBatAdjThirdPartyId" : {
+      "meaning" : "库存批次调整表第三方系统中的唯一ID"
+    },
+    "wmsInvBatAdjThirdPartyName" : {
+      "meaning" : "库存批次调整表第三方名称"
+    },
+    "wmsInvBatAdjToAuditDate" : {
+      "meaning" : "wmsInvBatAdjToAuditDate"
+    },
+    "wmsInvBatAdjToBeginTime" : {
+      "meaning" : "wmsInvBatAdjToBeginTime"
+    },
+    "wmsInvBatAdjToCreateTime" : {
+      "meaning" : "wmsInvBatAdjToCreateTime"
+    },
+    "wmsInvBatAdjToDateExtra1" : {
+      "meaning" : "wmsInvBatAdjToDateExtra1"
+    },
+    "wmsInvBatAdjToDateExtra2" : {
+      "meaning" : "wmsInvBatAdjToDateExtra2"
+    },
+    "wmsInvBatAdjToDateExtra3" : {
+      "meaning" : "wmsInvBatAdjToDateExtra3"
+    },
+    "wmsInvBatAdjToDateExtra4" : {
+      "meaning" : "wmsInvBatAdjToDateExtra4"
+    },
+    "wmsInvBatAdjToDateExtra5" : {
+      "meaning" : "wmsInvBatAdjToDateExtra5"
+    },
+    "wmsInvBatAdjToDeliveryDate" : {
+      "meaning" : "wmsInvBatAdjToDeliveryDate"
+    },
+    "wmsInvBatAdjToEndTime" : {
+      "meaning" : "wmsInvBatAdjToEndTime"
+    },
+    "wmsInvBatAdjToReceiptDate" : {
+      "meaning" : "wmsInvBatAdjToReceiptDate"
+    },
+    "wmsInvBatAdjToUpdateTime" : {
+      "meaning" : "wmsInvBatAdjToUpdateTime"
+    },
+    "wmsInvBatAdjType" : {
+      "meaning" : "库存批次调整表调整类型（1-盘盈入库 2-其他入库3-盘亏出库 4-报废出库 5-其他出库）"
+    },
+    "wmsInvBatAdjUnitCode" : {
+      "meaning" : "库存批次调整表单位id"
+    },
+    "wmsInvBatAdjUpdateTime" : {
+      "meaning" : "库存批次调整表更新时间"
+    },
+    "wmsInvBatAdjUpdater" : {
+      "meaning" : "库存批次调整表更新人"
+    },
+    "wmsInvBatAdjUpdaterId" : {
+      "meaning" : "库存批次调整表更新人ID"
+    },
+    "wmsInvBatAdjUserCode" : {
+      "meaning" : "库存批次调整表智能节点的唯一编码"
+    },
+    "wmsInvBatAdjVarExtra1" : {
+      "meaning" : "库存批次调整表扩展1"
+    },
+    "wmsInvBatAdjVarExtra2" : {
+      "meaning" : "库存批次调整表扩展2"
+    },
+    "wmsInvBatAdjVarExtra3" : {
+      "meaning" : "库存批次调整表扩展3"
+    },
+    "wmsInvBatAdjVarExtra4" : {
+      "meaning" : "库存批次调整表扩展4"
+    },
+    "wmsInvBatAdjVarExtra5" : {
+      "meaning" : "库存批次调整表扩展5"
+    },
+    "wmsInvBatAdjVersion" : {
+      "meaning" : "库存批次调整表版本号"
+    }
+  }
+}

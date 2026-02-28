@@ -1,0 +1,825 @@
+{
+  "api_name" : "/mat-outstorage-det/findList",
+  "table_name" : "物料出库明细表",
+  "request" : {
+    "matOutstorageDetMatOutstorageClazz" : "MAT_OUTSTORAGE",
+    "matOutstorageDetClazz" : "MAT_OUTSTORAGE_DET"
+  },
+  "mainTabClazz" : "MAT_OUTSTORAGE_DET",
+  "response" : {
+    "matOutstorageDetActualTimeRequired" : {
+      "meaning" : "物料出库明细表实际需时(小时)"
+    },
+    "matOutstorageDetAdditionalWeight" : {
+      "meaning" : "物料出库明细表附加重量"
+    },
+    "matOutstorageDetAdjustmentTimeRequired" : {
+      "meaning" : "物料出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matOutstorageDetApplicationId" : {
+      "meaning" : "物料出库明细表应用ID"
+    },
+    "matOutstorageDetAuditDate" : {
+      "meaning" : "物料出库明细表审核时间"
+    },
+    "matOutstorageDetAuditStatus" : {
+      "meaning" : "物料出库明细表审核状态"
+    },
+    "matOutstorageDetAvailableScheduleId" : {
+      "meaning" : "物料出库明细表可用日程id"
+    },
+    "matOutstorageDetBeginTime" : {
+      "meaning" : "物料出库明细表开始时间"
+    },
+    "matOutstorageDetBizVersion" : {
+      "meaning" : "物料出库明细表业务自定义版本号"
+    },
+    "matOutstorageDetBomNodeId" : {
+      "meaning" : "物料出库明细表工单id"
+    },
+    "matOutstorageDetBriefName" : {
+      "meaning" : "物料出库明细表简称"
+    },
+    "matOutstorageDetBusDivisId" : {
+      "meaning" : "物料出库明细表事业部id"
+    },
+    "matOutstorageDetClazz" : {
+      "meaning" : "物料出库明细表子类 类名（表和类一一对应）"
+    },
+    "matOutstorageDetClosedReason" : {
+      "meaning" : "物料出库明细表结案原因"
+    },
+    "matOutstorageDetClosedStatus" : {
+      "meaning" : "物料出库明细表结案状态"
+    },
+    "matOutstorageDetComment" : {
+      "meaning" : "物料出库明细表评论"
+    },
+    "matOutstorageDetCompleteQuantity" : {
+      "meaning" : "物料出库明细表完成数量"
+    },
+    "matOutstorageDetCompleteStatus" : {
+      "meaning" : "物料出库明细表完成状态"
+    },
+    "matOutstorageDetCreateTime" : {
+      "meaning" : "物料出库明细表创建时间"
+    },
+    "matOutstorageDetCreator" : {
+      "meaning" : "物料出库明细表创建人"
+    },
+    "matOutstorageDetCreatorId" : {
+      "meaning" : "物料出库明细表创建人ID"
+    },
+    "matOutstorageDetDateExtra1" : {
+      "meaning" : "物料出库明细表扩展时间1"
+    },
+    "matOutstorageDetDateExtra2" : {
+      "meaning" : "物料出库明细表扩展时间2"
+    },
+    "matOutstorageDetDateExtra3" : {
+      "meaning" : "物料出库明细表扩展时间3"
+    },
+    "matOutstorageDetDateExtra4" : {
+      "meaning" : "物料出库明细表扩展时间4"
+    },
+    "matOutstorageDetDateExtra5" : {
+      "meaning" : "物料出库明细表扩展时间5"
+    },
+    "matOutstorageDetDefaultType" : {
+      "meaning" : "物料出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matOutstorageDetDeliveryDate" : {
+      "meaning" : "物料出库明细表交货日期"
+    },
+    "matOutstorageDetDescription" : {
+      "meaning" : "物料出库明细表描述"
+    },
+    "matOutstorageDetEndTime" : {
+      "meaning" : "物料出库明细表结束时间"
+    },
+    "matOutstorageDetEndTimeRequired" : {
+      "meaning" : "物料出库明细表最后需时(小时)"
+    },
+    "matOutstorageDetEngName" : {
+      "meaning" : "物料出库明细表英文名称"
+    },
+    "matOutstorageDetEquipmentId" : {
+      "meaning" : "物料出库明细表设备id"
+    },
+    "matOutstorageDetExchangeRateId" : {
+      "meaning" : "物料出库明细表币种汇率id"
+    },
+    "matOutstorageDetExtension" : {
+      "meaning" : "物料出库明细表扩展数据"
+    },
+    "matOutstorageDetExternalState" : {
+      "meaning" : "物料出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matOutstorageDetFilterClazz" : {
+      "meaning" : "物料出库明细表冗余字段用于筛选"
+    },
+    "matOutstorageDetFlags" : {
+      "meaning" : "物料出库明细表63位标志位"
+    },
+    "matOutstorageDetFromAuditDate" : {
+      "meaning" : "matOutstorageDetFromAuditDate"
+    },
+    "matOutstorageDetFromBeginTime" : {
+      "meaning" : "matOutstorageDetFromBeginTime"
+    },
+    "matOutstorageDetFromCreateTime" : {
+      "meaning" : "matOutstorageDetFromCreateTime"
+    },
+    "matOutstorageDetFromDateExtra1" : {
+      "meaning" : "matOutstorageDetFromDateExtra1"
+    },
+    "matOutstorageDetFromDateExtra2" : {
+      "meaning" : "matOutstorageDetFromDateExtra2"
+    },
+    "matOutstorageDetFromDateExtra3" : {
+      "meaning" : "matOutstorageDetFromDateExtra3"
+    },
+    "matOutstorageDetFromDateExtra4" : {
+      "meaning" : "matOutstorageDetFromDateExtra4"
+    },
+    "matOutstorageDetFromDateExtra5" : {
+      "meaning" : "matOutstorageDetFromDateExtra5"
+    },
+    "matOutstorageDetFromDeliveryDate" : {
+      "meaning" : "matOutstorageDetFromDeliveryDate"
+    },
+    "matOutstorageDetFromEndTime" : {
+      "meaning" : "matOutstorageDetFromEndTime"
+    },
+    "matOutstorageDetFromReceiptDate" : {
+      "meaning" : "matOutstorageDetFromReceiptDate"
+    },
+    "matOutstorageDetFromUpdateTime" : {
+      "meaning" : "matOutstorageDetFromUpdateTime"
+    },
+    "matOutstorageDetFscType" : {
+      "meaning" : "物料出库明细表FSC声明"
+    },
+    "matOutstorageDetGenerativePeople" : {
+      "meaning" : "物料出库明细表下发人"
+    },
+    "matOutstorageDetGenerativeState" : {
+      "meaning" : "物料出库明细表下发状态"
+    },
+    "matOutstorageDetGoodsId" : {
+      "meaning" : "物料出库明细表货（包）id"
+    },
+    "matOutstorageDetGroovyScript" : {
+      "meaning" : "物料出库明细表groovy脚本"
+    },
+    "matOutstorageDetGropeCode" : {
+      "meaning" : "物料出库明细表搜索码"
+    },
+    "matOutstorageDetGrossWeightPerBox" : {
+      "meaning" : "物料出库明细表每箱毛重"
+    },
+    "matOutstorageDetId" : {
+      "meaning" : "物料出库明细表PK",
+      "is_primary" : true
+    },
+    "matOutstorageDetInUsed" : {
+      "meaning" : "物料出库明细表是否被使用"
+    },
+    "matOutstorageDetInvTypeTaxRateId" : {
+      "meaning" : "物料出库明细表发票税率id"
+    },
+    "matOutstorageDetInventoryQuantity" : {
+      "meaning" : "物料出库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)"
+    },
+    "matOutstorageDetIsBanned" : {
+      "meaning" : "物料出库明细表是否被禁用"
+    },
+    "matOutstorageDetIsDeleted" : {
+      "meaning" : "物料出库明细表是否被删除"
+    },
+    "matOutstorageDetIsLeaf" : {
+      "meaning" : "物料出库明细表是否叶子节点"
+    },
+    "matOutstorageDetIsMainFlow" : {
+      "meaning" : "物料出库明细表是否是主流程"
+    },
+    "matOutstorageDetIsManualModificationDate" : {
+      "meaning" : "物料出库明细表是否手动修改计划生产时间"
+    },
+    "matOutstorageDetIsolation" : {
+      "meaning" : "物料出库明细表智能节点数据隔离标识"
+    },
+    "matOutstorageDetJsScript" : {
+      "meaning" : "物料出库明细表js脚本"
+    },
+    "matOutstorageDetLocalCurrencyTotalAmount" : {
+      "meaning" : "物料出库明细表本币总金额"
+    },
+    "matOutstorageDetLocalCurrencyUnitPrice" : {
+      "meaning" : "物料出库明细表本币单价"
+    },
+    "matOutstorageDetMatBatchId" : {
+      "meaning" : "物料出库明细表物料批次id"
+    },
+    "matOutstorageDetMatOutstorageActualTimeRequired" : {
+      "meaning" : "物料出库明细表实际需时(小时)"
+    },
+    "matOutstorageDetMatOutstorageAdjustmentTimeRequired" : {
+      "meaning" : "物料出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matOutstorageDetMatOutstorageApplicationId" : {
+      "meaning" : "物料出库明细表应用ID"
+    },
+    "matOutstorageDetMatOutstorageAuditDate" : {
+      "meaning" : "物料出库明细表审核时间"
+    },
+    "matOutstorageDetMatOutstorageAuditStatus" : {
+      "meaning" : "物料出库明细表审核状态"
+    },
+    "matOutstorageDetMatOutstorageAvailableScheduleId" : {
+      "meaning" : "物料出库明细表可用日程id"
+    },
+    "matOutstorageDetMatOutstorageBeginTime" : {
+      "meaning" : "物料出库明细表开始时间"
+    },
+    "matOutstorageDetMatOutstorageBizVersion" : {
+      "meaning" : "物料出库明细表业务自定义版本号"
+    },
+    "matOutstorageDetMatOutstorageBriefName" : {
+      "meaning" : "物料出库明细表简称"
+    },
+    "matOutstorageDetMatOutstorageBusDivisId" : {
+      "meaning" : "物料出库明细表事业部id"
+    },
+    "matOutstorageDetMatOutstorageClazz" : {
+      "meaning" : "物料出库明细表子类 类名（表和类一一对应）"
+    },
+    "matOutstorageDetMatOutstorageClosedReason" : {
+      "meaning" : "物料出库明细表结案原因"
+    },
+    "matOutstorageDetMatOutstorageClosedStatus" : {
+      "meaning" : "物料出库明细表结案状态"
+    },
+    "matOutstorageDetMatOutstorageComment" : {
+      "meaning" : "物料出库明细表评论"
+    },
+    "matOutstorageDetMatOutstorageCompleteQuantity" : {
+      "meaning" : "物料出库明细表完成数量"
+    },
+    "matOutstorageDetMatOutstorageCompleteStatus" : {
+      "meaning" : "物料出库明细表完成状态"
+    },
+    "matOutstorageDetMatOutstorageCreateTime" : {
+      "meaning" : "物料出库明细表创建时间"
+    },
+    "matOutstorageDetMatOutstorageCreator" : {
+      "meaning" : "物料出库明细表创建人"
+    },
+    "matOutstorageDetMatOutstorageCreatorId" : {
+      "meaning" : "物料出库明细表创建人ID"
+    },
+    "matOutstorageDetMatOutstorageDateExtra1" : {
+      "meaning" : "物料出库明细表扩展时间1"
+    },
+    "matOutstorageDetMatOutstorageDateExtra2" : {
+      "meaning" : "物料出库明细表扩展时间2"
+    },
+    "matOutstorageDetMatOutstorageDateExtra3" : {
+      "meaning" : "物料出库明细表扩展时间3"
+    },
+    "matOutstorageDetMatOutstorageDateExtra4" : {
+      "meaning" : "物料出库明细表扩展时间4"
+    },
+    "matOutstorageDetMatOutstorageDateExtra5" : {
+      "meaning" : "物料出库明细表扩展时间5"
+    },
+    "matOutstorageDetMatOutstorageDefaultType" : {
+      "meaning" : "物料出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matOutstorageDetMatOutstorageDeliveryDate" : {
+      "meaning" : "物料出库明细表交货日期"
+    },
+    "matOutstorageDetMatOutstorageDepId" : {
+      "meaning" : "物料出库明细表部门id"
+    },
+    "matOutstorageDetMatOutstorageDescription" : {
+      "meaning" : "物料出库明细表描述"
+    },
+    "matOutstorageDetMatOutstorageEndTime" : {
+      "meaning" : "物料出库明细表结束时间"
+    },
+    "matOutstorageDetMatOutstorageEndTimeRequired" : {
+      "meaning" : "物料出库明细表最后需时(小时)"
+    },
+    "matOutstorageDetMatOutstorageEngName" : {
+      "meaning" : "物料出库明细表英文名称"
+    },
+    "matOutstorageDetMatOutstorageEquipmentId" : {
+      "meaning" : "物料出库明细表设备id"
+    },
+    "matOutstorageDetMatOutstorageExchangeRateId" : {
+      "meaning" : "物料出库明细表币种汇率id"
+    },
+    "matOutstorageDetMatOutstorageExtension" : {
+      "meaning" : "物料出库明细表扩展数据"
+    },
+    "matOutstorageDetMatOutstorageExternalState" : {
+      "meaning" : "物料出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matOutstorageDetMatOutstorageFilterClazz" : {
+      "meaning" : "物料出库明细表冗余字段用于筛选"
+    },
+    "matOutstorageDetMatOutstorageFlags" : {
+      "meaning" : "物料出库明细表63位标志位"
+    },
+    "matOutstorageDetMatOutstorageFromAuditDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromAuditDate"
+    },
+    "matOutstorageDetMatOutstorageFromBeginTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromBeginTime"
+    },
+    "matOutstorageDetMatOutstorageFromCreateTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromCreateTime"
+    },
+    "matOutstorageDetMatOutstorageFromDateExtra1" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDateExtra1"
+    },
+    "matOutstorageDetMatOutstorageFromDateExtra2" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDateExtra2"
+    },
+    "matOutstorageDetMatOutstorageFromDateExtra3" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDateExtra3"
+    },
+    "matOutstorageDetMatOutstorageFromDateExtra4" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDateExtra4"
+    },
+    "matOutstorageDetMatOutstorageFromDateExtra5" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDateExtra5"
+    },
+    "matOutstorageDetMatOutstorageFromDeliveryDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromDeliveryDate"
+    },
+    "matOutstorageDetMatOutstorageFromEndTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromEndTime"
+    },
+    "matOutstorageDetMatOutstorageFromReceiptDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromReceiptDate"
+    },
+    "matOutstorageDetMatOutstorageFromUpdateTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageFromUpdateTime"
+    },
+    "matOutstorageDetMatOutstorageFscType" : {
+      "meaning" : "物料出库明细表FSC声明"
+    },
+    "matOutstorageDetMatOutstorageGenerativePeople" : {
+      "meaning" : "物料出库明细表下发人"
+    },
+    "matOutstorageDetMatOutstorageGenerativeState" : {
+      "meaning" : "物料出库明细表下发状态"
+    },
+    "matOutstorageDetMatOutstorageGroovyScript" : {
+      "meaning" : "物料出库明细表groovy脚本"
+    },
+    "matOutstorageDetMatOutstorageGropeCode" : {
+      "meaning" : "物料出库明细表搜索码"
+    },
+    "matOutstorageDetMatOutstorageId" : {
+      "meaning" : "物料出库明细表PK"
+    },
+    "matOutstorageDetMatOutstorageInUsed" : {
+      "meaning" : "物料出库明细表是否被使用"
+    },
+    "matOutstorageDetMatOutstorageInvTypeTaxRateId" : {
+      "meaning" : "物料出库明细表发票税率id"
+    },
+    "matOutstorageDetMatOutstorageIsBanned" : {
+      "meaning" : "物料出库明细表是否被禁用"
+    },
+    "matOutstorageDetMatOutstorageIsDeleted" : {
+      "meaning" : "物料出库明细表是否被删除"
+    },
+    "matOutstorageDetMatOutstorageIsLeaf" : {
+      "meaning" : "物料出库明细表是否叶子节点"
+    },
+    "matOutstorageDetMatOutstorageIsMainFlow" : {
+      "meaning" : "物料出库明细表是否是主流程"
+    },
+    "matOutstorageDetMatOutstorageIsManualModificationDate" : {
+      "meaning" : "物料出库明细表是否手动修改计划生产时间"
+    },
+    "matOutstorageDetMatOutstorageIsolation" : {
+      "meaning" : "物料出库明细表智能节点数据隔离标识"
+    },
+    "matOutstorageDetMatOutstorageIssuerStaffId" : {
+      "meaning" : "物料出库明细表发料人id"
+    },
+    "matOutstorageDetMatOutstorageJsScript" : {
+      "meaning" : "物料出库明细表js脚本"
+    },
+    "matOutstorageDetMatOutstorageMaterialId" : {
+      "meaning" : "物料出库明细表物料id"
+    },
+    "matOutstorageDetMatOutstorageName" : {
+      "meaning" : "物料出库明细表智能节点名"
+    },
+    "matOutstorageDetMatOutstorageNameCodeSearch" : {
+      "meaning" : "物料出库明细表name、user_code模糊搜索"
+    },
+    "matOutstorageDetMatOutstorageNumberExtra1" : {
+      "meaning" : "物料出库明细表扩展数量1"
+    },
+    "matOutstorageDetMatOutstorageNumberExtra2" : {
+      "meaning" : "物料出库明细表扩展数量2"
+    },
+    "matOutstorageDetMatOutstorageNumberExtra3" : {
+      "meaning" : "物料出库明细表扩展数量3"
+    },
+    "matOutstorageDetMatOutstorageNumberExtra4" : {
+      "meaning" : "物料出库明细表扩展数量4"
+    },
+    "matOutstorageDetMatOutstorageNumberExtra5" : {
+      "meaning" : "物料出库明细表扩展数量5"
+    },
+    "matOutstorageDetMatOutstorageOrgId" : {
+      "meaning" : "物料出库明细表机构id(客户/供应商)"
+    },
+    "matOutstorageDetMatOutstorageParentId" : {
+      "meaning" : "物料出库明细表父节点ID"
+    },
+    "matOutstorageDetMatOutstoragePlannedOutputQuantity" : {
+      "meaning" : "物料出库明细表计划产出数量"
+    },
+    "matOutstorageDetMatOutstoragePlannedTimeRequired" : {
+      "meaning" : "物料出库明细表计划需时(小时)"
+    },
+    "matOutstorageDetMatOutstoragePrintTimes" : {
+      "meaning" : "物料出库明细表打印次数"
+    },
+    "matOutstorageDetMatOutstoragePriority" : {
+      "meaning" : "物料出库明细表优先级"
+    },
+    "matOutstorageDetMatOutstorageProcessInstanceId" : {
+      "meaning" : "物料出库明细表流程实例ID"
+    },
+    "matOutstorageDetMatOutstorageProductionProcessesTypeId" : {
+      "meaning" : "物料出库明细表工序类型ID"
+    },
+    "matOutstorageDetMatOutstorageProductionShiftId" : {
+      "meaning" : "物料出库明细表生产班次ID"
+    },
+    "matOutstorageDetMatOutstorageQuantity" : {
+      "meaning" : "物料出库明细表任务数量"
+    },
+    "matOutstorageDetMatOutstorageReceiptDate" : {
+      "meaning" : "物料出库明细表单据日期"
+    },
+    "matOutstorageDetMatOutstorageReceiptType" : {
+      "meaning" : "物料出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matOutstorageDetMatOutstorageRelatedTasksId" : {
+      "meaning" : "物料出库明细表关联任务id"
+    },
+    "matOutstorageDetMatOutstorageSerialNumber" : {
+      "meaning" : "物料出库明细表顺序号"
+    },
+    "matOutstorageDetMatOutstorageSettMethod" : {
+      "meaning" : "物料出库明细表结算方式"
+    },
+    "matOutstorageDetMatOutstorageSettOrgId" : {
+      "meaning" : "物料出库明细表结算机构id(客户/供应商)"
+    },
+    "matOutstorageDetMatOutstorageSource" : {
+      "meaning" : "物料出库明细表源"
+    },
+    "matOutstorageDetMatOutstorageSourceType" : {
+      "meaning" : "物料出库明细表来源类型"
+    },
+    "matOutstorageDetMatOutstorageStaffId" : {
+      "meaning" : "物料出库明细表员工id(入/出库员工)"
+    },
+    "matOutstorageDetMatOutstorageState" : {
+      "meaning" : "物料出库明细表通用状态"
+    },
+    "matOutstorageDetMatOutstorageSystemCode" : {
+      "meaning" : "物料出库明细表系统编码"
+    },
+    "matOutstorageDetMatOutstorageTarget" : {
+      "meaning" : "物料出库明细表目标"
+    },
+    "matOutstorageDetMatOutstorageTaskNodeName" : {
+      "meaning" : "物料出库明细表任务节点名称"
+    },
+    "matOutstorageDetMatOutstorageTaskNodeType" : {
+      "meaning" : "物料出库明细表任务节点类型"
+    },
+    "matOutstorageDetMatOutstorageTenantId" : {
+      "meaning" : "物料出库明细表租户id"
+    },
+    "matOutstorageDetMatOutstorageThirdPartyClass" : {
+      "meaning" : "物料出库明细表第三方分类"
+    },
+    "matOutstorageDetMatOutstorageThirdPartyId" : {
+      "meaning" : "物料出库明细表第三方系统中的唯一ID"
+    },
+    "matOutstorageDetMatOutstorageThirdPartyName" : {
+      "meaning" : "物料出库明细表第三方名称"
+    },
+    "matOutstorageDetMatOutstorageToAuditDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageToAuditDate"
+    },
+    "matOutstorageDetMatOutstorageToBeginTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageToBeginTime"
+    },
+    "matOutstorageDetMatOutstorageToCreateTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageToCreateTime"
+    },
+    "matOutstorageDetMatOutstorageToDateExtra1" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDateExtra1"
+    },
+    "matOutstorageDetMatOutstorageToDateExtra2" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDateExtra2"
+    },
+    "matOutstorageDetMatOutstorageToDateExtra3" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDateExtra3"
+    },
+    "matOutstorageDetMatOutstorageToDateExtra4" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDateExtra4"
+    },
+    "matOutstorageDetMatOutstorageToDateExtra5" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDateExtra5"
+    },
+    "matOutstorageDetMatOutstorageToDeliveryDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageToDeliveryDate"
+    },
+    "matOutstorageDetMatOutstorageToEndTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageToEndTime"
+    },
+    "matOutstorageDetMatOutstorageToReceiptDate" : {
+      "meaning" : "matOutstorageDetMatOutstorageToReceiptDate"
+    },
+    "matOutstorageDetMatOutstorageToUpdateTime" : {
+      "meaning" : "matOutstorageDetMatOutstorageToUpdateTime"
+    },
+    "matOutstorageDetMatOutstorageUnitCode" : {
+      "meaning" : "物料出库明细表单位id"
+    },
+    "matOutstorageDetMatOutstorageUpdateTime" : {
+      "meaning" : "物料出库明细表更新时间"
+    },
+    "matOutstorageDetMatOutstorageUpdater" : {
+      "meaning" : "物料出库明细表更新人"
+    },
+    "matOutstorageDetMatOutstorageUpdaterId" : {
+      "meaning" : "物料出库明细表更新人ID"
+    },
+    "matOutstorageDetMatOutstorageUserCode" : {
+      "meaning" : "物料出库明细表智能节点的唯一编码"
+    },
+    "matOutstorageDetMatOutstorageVarExtra1" : {
+      "meaning" : "物料出库明细表扩展1"
+    },
+    "matOutstorageDetMatOutstorageVarExtra2" : {
+      "meaning" : "物料出库明细表扩展2"
+    },
+    "matOutstorageDetMatOutstorageVarExtra3" : {
+      "meaning" : "物料出库明细表扩展3"
+    },
+    "matOutstorageDetMatOutstorageVarExtra4" : {
+      "meaning" : "物料出库明细表扩展4"
+    },
+    "matOutstorageDetMatOutstorageVarExtra5" : {
+      "meaning" : "物料出库明细表扩展5"
+    },
+    "matOutstorageDetMatOutstorageVersion" : {
+      "meaning" : "物料出库明细表版本号"
+    },
+    "matOutstorageDetMaterialId" : {
+      "meaning" : "物料出库明细表物料id"
+    },
+    "matOutstorageDetName" : {
+      "meaning" : "物料出库明细表智能节点名"
+    },
+    "matOutstorageDetNameCodeSearch" : {
+      "meaning" : "物料出库明细表name、user_code模糊搜索"
+    },
+    "matOutstorageDetNetWeightPerBox" : {
+      "meaning" : "物料出库明细表每箱净重"
+    },
+    "matOutstorageDetNumberExtra1" : {
+      "meaning" : "物料出库明细表扩展数量1"
+    },
+    "matOutstorageDetNumberExtra2" : {
+      "meaning" : "物料出库明细表扩展数量2"
+    },
+    "matOutstorageDetNumberExtra3" : {
+      "meaning" : "物料出库明细表扩展数量3"
+    },
+    "matOutstorageDetNumberExtra4" : {
+      "meaning" : "物料出库明细表扩展数量4"
+    },
+    "matOutstorageDetNumberExtra5" : {
+      "meaning" : "物料出库明细表扩展数量5"
+    },
+    "matOutstorageDetOrderDetailId" : {
+      "meaning" : "物料出库明细表订单明细id"
+    },
+    "matOutstorageDetOrgId" : {
+      "meaning" : "物料出库明细表机构id(客户/供应商)"
+    },
+    "matOutstorageDetPackageMatId" : {
+      "meaning" : "物料出库明细表包装物料id"
+    },
+    "matOutstorageDetParentId" : {
+      "meaning" : "物料出库明细表父节点ID"
+    },
+    "matOutstorageDetPlannedOutputQuantity" : {
+      "meaning" : "物料出库明细表计划产出数量"
+    },
+    "matOutstorageDetPlannedTimeRequired" : {
+      "meaning" : "物料出库明细表计划需时(小时)"
+    },
+    "matOutstorageDetPrintTimes" : {
+      "meaning" : "物料出库明细表打印次数"
+    },
+    "matOutstorageDetPriority" : {
+      "meaning" : "物料出库明细表优先级"
+    },
+    "matOutstorageDetProcessInstanceId" : {
+      "meaning" : "物料出库明细表流程实例ID"
+    },
+    "matOutstorageDetProductReturnQuantity" : {
+      "meaning" : "物料出库明细表退料完成数量"
+    },
+    "matOutstorageDetProductReturnStatus" : {
+      "meaning" : "物料出库明细表退料完成状态"
+    },
+    "matOutstorageDetProductionProcessesTypeId" : {
+      "meaning" : "物料出库明细表工序类型ID"
+    },
+    "matOutstorageDetProductionShiftId" : {
+      "meaning" : "物料出库明细表生产班次ID"
+    },
+    "matOutstorageDetQuantity" : {
+      "meaning" : "物料出库明细表任务数量"
+    },
+    "matOutstorageDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "物料出库明细表报价单价（含税）"
+    },
+    "matOutstorageDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "物料出库明细表报价单价（不含税）"
+    },
+    "matOutstorageDetReceiptDate" : {
+      "meaning" : "物料出库明细表单据日期"
+    },
+    "matOutstorageDetReceiptType" : {
+      "meaning" : "物料出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matOutstorageDetRelatedTasksId" : {
+      "meaning" : "物料出库明细表关联任务id"
+    },
+    "matOutstorageDetSerialNumber" : {
+      "meaning" : "物料出库明细表顺序号"
+    },
+    "matOutstorageDetSettMethod" : {
+      "meaning" : "物料出库明细表结算方式"
+    },
+    "matOutstorageDetSettOrgId" : {
+      "meaning" : "物料出库明细表结算机构id(客户/供应商)"
+    },
+    "matOutstorageDetSettlementTotalAmount" : {
+      "meaning" : "物料出库明细表结算总金额"
+    },
+    "matOutstorageDetSettlementUnitPrice" : {
+      "meaning" : "物料出库明细表结算单价"
+    },
+    "matOutstorageDetSingleWeight" : {
+      "meaning" : "物料出库明细表单重kg"
+    },
+    "matOutstorageDetSource" : {
+      "meaning" : "物料出库明细表源"
+    },
+    "matOutstorageDetSourceType" : {
+      "meaning" : "物料出库明细表来源类型"
+    },
+    "matOutstorageDetState" : {
+      "meaning" : "物料出库明细表通用状态"
+    },
+    "matOutstorageDetStorageSpaceId" : {
+      "meaning" : "物料出库明细表库空间id"
+    },
+    "matOutstorageDetSystemCode" : {
+      "meaning" : "物料出库明细表系统编码"
+    },
+    "matOutstorageDetTarget" : {
+      "meaning" : "物料出库明细表目标"
+    },
+    "matOutstorageDetTaskNodeName" : {
+      "meaning" : "物料出库明细表任务节点名称"
+    },
+    "matOutstorageDetTaskNodeType" : {
+      "meaning" : "物料出库明细表任务节点类型"
+    },
+    "matOutstorageDetTenantId" : {
+      "meaning" : "物料出库明细表租户id"
+    },
+    "matOutstorageDetThirdPartyClass" : {
+      "meaning" : "物料出库明细表第三方分类"
+    },
+    "matOutstorageDetThirdPartyId" : {
+      "meaning" : "物料出库明细表第三方系统中的唯一ID"
+    },
+    "matOutstorageDetThirdPartyName" : {
+      "meaning" : "物料出库明细表第三方名称"
+    },
+    "matOutstorageDetToAuditDate" : {
+      "meaning" : "matOutstorageDetToAuditDate"
+    },
+    "matOutstorageDetToBeginTime" : {
+      "meaning" : "matOutstorageDetToBeginTime"
+    },
+    "matOutstorageDetToCreateTime" : {
+      "meaning" : "matOutstorageDetToCreateTime"
+    },
+    "matOutstorageDetToDateExtra1" : {
+      "meaning" : "matOutstorageDetToDateExtra1"
+    },
+    "matOutstorageDetToDateExtra2" : {
+      "meaning" : "matOutstorageDetToDateExtra2"
+    },
+    "matOutstorageDetToDateExtra3" : {
+      "meaning" : "matOutstorageDetToDateExtra3"
+    },
+    "matOutstorageDetToDateExtra4" : {
+      "meaning" : "matOutstorageDetToDateExtra4"
+    },
+    "matOutstorageDetToDateExtra5" : {
+      "meaning" : "matOutstorageDetToDateExtra5"
+    },
+    "matOutstorageDetToDeliveryDate" : {
+      "meaning" : "matOutstorageDetToDeliveryDate"
+    },
+    "matOutstorageDetToEndTime" : {
+      "meaning" : "matOutstorageDetToEndTime"
+    },
+    "matOutstorageDetToReceiptDate" : {
+      "meaning" : "matOutstorageDetToReceiptDate"
+    },
+    "matOutstorageDetToUpdateTime" : {
+      "meaning" : "matOutstorageDetToUpdateTime"
+    },
+    "matOutstorageDetTotalAmount" : {
+      "meaning" : "物料出库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "matOutstorageDetTotalAmountIncludingTax" : {
+      "meaning" : "物料出库明细表总金额（含税）"
+    },
+    "matOutstorageDetTotalAmountWithoutTax" : {
+      "meaning" : "物料出库明细表总金额（不含税）"
+    },
+    "matOutstorageDetTotalWeightLot" : {
+      "meaning" : "物料出库明细表合计总重kg"
+    },
+    "matOutstorageDetTrayMatId" : {
+      "meaning" : "物料出库明细表托盘物料id"
+    },
+    "matOutstorageDetUnitCode" : {
+      "meaning" : "物料出库明细表单位id"
+    },
+    "matOutstorageDetUnitPriceIncludingTax" : {
+      "meaning" : "物料出库明细表单价（含税）"
+    },
+    "matOutstorageDetUnitPriceWithoutTax" : {
+      "meaning" : "物料出库明细表单价（不含税）"
+    },
+    "matOutstorageDetUpdateTime" : {
+      "meaning" : "物料出库明细表更新时间"
+    },
+    "matOutstorageDetUpdater" : {
+      "meaning" : "物料出库明细表更新人"
+    },
+    "matOutstorageDetUpdaterId" : {
+      "meaning" : "物料出库明细表更新人ID"
+    },
+    "matOutstorageDetUserCode" : {
+      "meaning" : "物料出库明细表智能节点的唯一编码"
+    },
+    "matOutstorageDetVarExtra1" : {
+      "meaning" : "物料出库明细表扩展1"
+    },
+    "matOutstorageDetVarExtra2" : {
+      "meaning" : "物料出库明细表扩展2"
+    },
+    "matOutstorageDetVarExtra3" : {
+      "meaning" : "物料出库明细表扩展3"
+    },
+    "matOutstorageDetVarExtra4" : {
+      "meaning" : "物料出库明细表扩展4"
+    },
+    "matOutstorageDetVarExtra5" : {
+      "meaning" : "物料出库明细表扩展5"
+    },
+    "matOutstorageDetVersion" : {
+      "meaning" : "物料出库明细表版本号"
+    }
+  }
+}

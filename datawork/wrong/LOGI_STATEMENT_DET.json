@@ -1,0 +1,804 @@
+{
+    "api_name" : "/logi-statement-det/findList",
+    "table_name" : "物流商对账单明细",
+    "request" : {
+      "logiStatementDetLogiStatementClazz" : "LOGI_STATEMENT",
+      "logiStatementDetClazz" : "LOGI_STATEMENT_DET"
+    },
+    "mainTabClazz" : "LOGI_STATEMENT_DET",
+    "response" : {
+      "logiStatementDetActualTimeRequired" : {
+        "meaning" : "物流商对账单明细实际需时(小时)"
+      },
+      "logiStatementDetAdjustmentTimeRequired" : {
+        "meaning" : "物流商对账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "logiStatementDetAmount" : {
+        "meaning" : "物流商对账单明细金额"
+      },
+      "logiStatementDetApplicationId" : {
+        "meaning" : "物流商对账单明细应用ID"
+      },
+      "logiStatementDetAuditDate" : {
+        "meaning" : "物流商对账单明细审核时间"
+      },
+      "logiStatementDetAuditStatus" : {
+        "meaning" : "物流商对账单明细审核状态"
+      },
+      "logiStatementDetAvailableScheduleId" : {
+        "meaning" : "物流商对账单明细可用日程id"
+      },
+      "logiStatementDetBeginTime" : {
+        "meaning" : "物流商对账单明细开始时间"
+      },
+      "logiStatementDetBizVersion" : {
+        "meaning" : "物流商对账单明细业务自定义版本号"
+      },
+      "logiStatementDetBriefName" : {
+        "meaning" : "物流商对账单明细简称"
+      },
+      "logiStatementDetBusDivisId" : {
+        "meaning" : "物流商对账单明细事业部id"
+      },
+      "logiStatementDetClazz" : {
+        "meaning" : "物流商对账单明细子类 类名（表和类一一对应）"
+      },
+      "logiStatementDetClosedReason" : {
+        "meaning" : "物流商对账单明细结案原因"
+      },
+      "logiStatementDetClosedStatus" : {
+        "meaning" : "物流商对账单明细结案状态"
+      },
+      "logiStatementDetComment" : {
+        "meaning" : "物流商对账单明细评论"
+      },
+      "logiStatementDetCompleteQuantity" : {
+        "meaning" : "物流商对账单明细完成数量"
+      },
+      "logiStatementDetCompleteStatus" : {
+        "meaning" : "物流商对账单明细完成状态"
+      },
+      "logiStatementDetCreateTime" : {
+        "meaning" : "物流商对账单明细创建时间"
+      },
+      "logiStatementDetCreator" : {
+        "meaning" : "物流商对账单明细创建人"
+      },
+      "logiStatementDetCreatorId" : {
+        "meaning" : "物流商对账单明细创建人ID"
+      },
+      "logiStatementDetDateExtra1" : {
+        "meaning" : "物流商对账单明细扩展时间1"
+      },
+      "logiStatementDetDateExtra2" : {
+        "meaning" : "物流商对账单明细扩展时间2"
+      },
+      "logiStatementDetDateExtra3" : {
+        "meaning" : "物流商对账单明细扩展时间3"
+      },
+      "logiStatementDetDateExtra4" : {
+        "meaning" : "物流商对账单明细扩展时间4"
+      },
+      "logiStatementDetDateExtra5" : {
+        "meaning" : "物流商对账单明细扩展时间5"
+      },
+      "logiStatementDetDefaultType" : {
+        "meaning" : "物流商对账单明细智能节点主类型 默认类型（类型的system de字段）"
+      },
+      "logiStatementDetDeliveryDate" : {
+        "meaning" : "物流商对账单明细交货日期"
+      },
+      "logiStatementDetDescription" : {
+        "meaning" : "物流商对账单明细描述"
+      },
+      "logiStatementDetEndTime" : {
+        "meaning" : "物流商对账单明细结束时间"
+      },
+      "logiStatementDetEndTimeRequired" : {
+        "meaning" : "物流商对账单明细最后需时(小时)"
+      },
+      "logiStatementDetEngName" : {
+        "meaning" : "物流商对账单明细英文名称"
+      },
+      "logiStatementDetEquipmentId" : {
+        "meaning" : "物流商对账单明细设备id"
+      },
+      "logiStatementDetExchangeRate" : {
+        "meaning" : "物流商对账单明细汇率"
+      },
+      "logiStatementDetExchangeRateId" : {
+        "meaning" : "物流商对账单明细币种汇率id"
+      },
+      "logiStatementDetExtension" : {
+        "meaning" : "物流商对账单明细扩展数据"
+      },
+      "logiStatementDetExternalState" : {
+        "meaning" : "物流商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "logiStatementDetFilterClazz" : {
+        "meaning" : "物流商对账单明细冗余字段用于筛选"
+      },
+      "logiStatementDetFlags" : {
+        "meaning" : "物流商对账单明细63位标志位"
+      },
+      "logiStatementDetFromAuditDate" : {
+        "meaning" : "logiStatementDetFromAuditDate"
+      },
+      "logiStatementDetFromBeginTime" : {
+        "meaning" : "logiStatementDetFromBeginTime"
+      },
+      "logiStatementDetFromCreateTime" : {
+        "meaning" : "logiStatementDetFromCreateTime"
+      },
+      "logiStatementDetFromDateExtra1" : {
+        "meaning" : "logiStatementDetFromDateExtra1"
+      },
+      "logiStatementDetFromDateExtra2" : {
+        "meaning" : "logiStatementDetFromDateExtra2"
+      },
+      "logiStatementDetFromDateExtra3" : {
+        "meaning" : "logiStatementDetFromDateExtra3"
+      },
+      "logiStatementDetFromDateExtra4" : {
+        "meaning" : "logiStatementDetFromDateExtra4"
+      },
+      "logiStatementDetFromDateExtra5" : {
+        "meaning" : "logiStatementDetFromDateExtra5"
+      },
+      "logiStatementDetFromDeliveryDate" : {
+        "meaning" : "logiStatementDetFromDeliveryDate"
+      },
+      "logiStatementDetFromEndTime" : {
+        "meaning" : "logiStatementDetFromEndTime"
+      },
+      "logiStatementDetFromReceiptDate" : {
+        "meaning" : "logiStatementDetFromReceiptDate"
+      },
+      "logiStatementDetFromUpdateTime" : {
+        "meaning" : "logiStatementDetFromUpdateTime"
+      },
+      "logiStatementDetFscType" : {
+        "meaning" : "物流商对账单明细FSC声明"
+      },
+      "logiStatementDetGenerativePeople" : {
+        "meaning" : "物流商对账单明细下发人"
+      },
+      "logiStatementDetGenerativeState" : {
+        "meaning" : "物流商对账单明细下发状态"
+      },
+      "logiStatementDetGroovyScript" : {
+        "meaning" : "物流商对账单明细groovy脚本"
+      },
+      "logiStatementDetGropeCode" : {
+        "meaning" : "物流商对账单明细搜索码"
+      },
+      "logiStatementDetId" : {
+        "meaning" : "物流商对账单明细PK",
+        "is_primary" : true
+      },
+      "logiStatementDetInUsed" : {
+        "meaning" : "物流商对账单明细是否被使用"
+      },
+      "logiStatementDetInvTypeTaxRateId" : {
+        "meaning" : "物流商对账单明细发票税率id"
+      },
+      "logiStatementDetInvoicedAmount" : {
+        "meaning" : "物流商对账单明细已开票金额"
+      },
+      "logiStatementDetInvoicedState" : {
+        "meaning" : "物流商对账单明细开票状态（0未开票；1部分开票；2全部开票；3终止开票）"
+      },
+      "logiStatementDetIsBanned" : {
+        "meaning" : "物流商对账单明细是否被禁用"
+      },
+      "logiStatementDetIsDeleted" : {
+        "meaning" : "物流商对账单明细是否被删除"
+      },
+      "logiStatementDetIsLeaf" : {
+        "meaning" : "物流商对账单明细是否叶子节点"
+      },
+      "logiStatementDetIsMainFlow" : {
+        "meaning" : "物流商对账单明细是否是主流程"
+      },
+      "logiStatementDetIsManualModificationDate" : {
+        "meaning" : "物流商对账单明细是否手动修改计划生产时间"
+      },
+      "logiStatementDetIsolation" : {
+        "meaning" : "物流商对账单明细智能节点数据隔离标识"
+      },
+      "logiStatementDetJsScript" : {
+        "meaning" : "物流商对账单明细js脚本"
+      },
+      "logiStatementDetLocAmount" : {
+        "meaning" : "物流商对账单明细本币金额"
+      },
+      "logiStatementDetLocCompleteQuantity" : {
+        "meaning" : "物流商对账单明细本币完成数量"
+      },
+      "logiStatementDetLocInvoicedAmount" : {
+        "meaning" : "物流商对账单明细本币已开票金额"
+      },
+      "logiStatementDetLocOtherExpense" : {
+        "meaning" : "物流商对账单明细本币其他费用"
+      },
+      "logiStatementDetLocSettleAmount" : {
+        "meaning" : "物流商对账单明细本币结算金额（本币金额+本币其他费用）"
+      },
+      "logiStatementDetLocSettledAmount" : {
+        "meaning" : "物流商对账单明细本币已结算金额"
+      },
+      "logiStatementDetLogiStatementActualTimeRequired" : {
+        "meaning" : "物流商对账单明细实际需时(小时)"
+      },
+      "logiStatementDetLogiStatementAdjustmentTimeRequired" : {
+        "meaning" : "物流商对账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "logiStatementDetLogiStatementApplicationId" : {
+        "meaning" : "物流商对账单明细应用ID"
+      },
+      "logiStatementDetLogiStatementAuditDate" : {
+        "meaning" : "物流商对账单明细审核时间"
+      },
+      "logiStatementDetLogiStatementAuditStatus" : {
+        "meaning" : "物流商对账单明细审核状态"
+      },
+      "logiStatementDetLogiStatementAvailableScheduleId" : {
+        "meaning" : "物流商对账单明细可用日程id"
+      },
+      "logiStatementDetLogiStatementBeginTime" : {
+        "meaning" : "物流商对账单明细开始时间"
+      },
+      "logiStatementDetLogiStatementBizVersion" : {
+        "meaning" : "物流商对账单明细业务自定义版本号"
+      },
+      "logiStatementDetLogiStatementBriefName" : {
+        "meaning" : "物流商对账单明细简称"
+      },
+      "logiStatementDetLogiStatementBusDivisId" : {
+        "meaning" : "物流商对账单明细事业部id"
+      },
+      "logiStatementDetLogiStatementClazz" : {
+        "meaning" : "物流商对账单明细子类 类名（表和类一一对应）"
+      },
+      "logiStatementDetLogiStatementClosedReason" : {
+        "meaning" : "物流商对账单明细结案原因"
+      },
+      "logiStatementDetLogiStatementClosedStatus" : {
+        "meaning" : "物流商对账单明细结案状态"
+      },
+      "logiStatementDetLogiStatementComment" : {
+        "meaning" : "物流商对账单明细评论"
+      },
+      "logiStatementDetLogiStatementCompleteQuantity" : {
+        "meaning" : "物流商对账单明细完成数量"
+      },
+      "logiStatementDetLogiStatementCompleteStatus" : {
+        "meaning" : "物流商对账单明细完成状态"
+      },
+      "logiStatementDetLogiStatementCreateTime" : {
+        "meaning" : "物流商对账单明细创建时间"
+      },
+      "logiStatementDetLogiStatementCreator" : {
+        "meaning" : "物流商对账单明细创建人"
+      },
+      "logiStatementDetLogiStatementCreatorId" : {
+        "meaning" : "物流商对账单明细创建人ID"
+      },
+      "logiStatementDetLogiStatementCurrency" : {
+        "meaning" : "物流商对账单明细币种"
+      },
+      "logiStatementDetLogiStatementDateExtra1" : {
+        "meaning" : "物流商对账单明细扩展时间1"
+      },
+      "logiStatementDetLogiStatementDateExtra2" : {
+        "meaning" : "物流商对账单明细扩展时间2"
+      },
+      "logiStatementDetLogiStatementDateExtra3" : {
+        "meaning" : "物流商对账单明细扩展时间3"
+      },
+      "logiStatementDetLogiStatementDateExtra4" : {
+        "meaning" : "物流商对账单明细扩展时间4"
+      },
+      "logiStatementDetLogiStatementDateExtra5" : {
+        "meaning" : "物流商对账单明细扩展时间5"
+      },
+      "logiStatementDetLogiStatementDefaultType" : {
+        "meaning" : "物流商对账单明细智能节点主类型 默认类型（类型的system de字段）"
+      },
+      "logiStatementDetLogiStatementDeliveryDate" : {
+        "meaning" : "物流商对账单明细交货日期"
+      },
+      "logiStatementDetLogiStatementDescription" : {
+        "meaning" : "物流商对账单明细描述"
+      },
+      "logiStatementDetLogiStatementEndTime" : {
+        "meaning" : "物流商对账单明细结束时间"
+      },
+      "logiStatementDetLogiStatementEndTimeRequired" : {
+        "meaning" : "物流商对账单明细最后需时(小时)"
+      },
+      "logiStatementDetLogiStatementEngName" : {
+        "meaning" : "物流商对账单明细英文名称"
+      },
+      "logiStatementDetLogiStatementEquipmentId" : {
+        "meaning" : "物流商对账单明细设备id"
+      },
+      "logiStatementDetLogiStatementExchangeRateId" : {
+        "meaning" : "物流商对账单明细币种汇率id"
+      },
+      "logiStatementDetLogiStatementExtension" : {
+        "meaning" : "物流商对账单明细扩展数据"
+      },
+      "logiStatementDetLogiStatementExternalState" : {
+        "meaning" : "物流商对账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "logiStatementDetLogiStatementFilterClazz" : {
+        "meaning" : "物流商对账单明细冗余字段用于筛选"
+      },
+      "logiStatementDetLogiStatementFlags" : {
+        "meaning" : "物流商对账单明细63位标志位"
+      },
+      "logiStatementDetLogiStatementFromAuditDate" : {
+        "meaning" : "logiStatementDetLogiStatementFromAuditDate"
+      },
+      "logiStatementDetLogiStatementFromBeginTime" : {
+        "meaning" : "logiStatementDetLogiStatementFromBeginTime"
+      },
+      "logiStatementDetLogiStatementFromCreateTime" : {
+        "meaning" : "logiStatementDetLogiStatementFromCreateTime"
+      },
+      "logiStatementDetLogiStatementFromDateExtra1" : {
+        "meaning" : "logiStatementDetLogiStatementFromDateExtra1"
+      },
+      "logiStatementDetLogiStatementFromDateExtra2" : {
+        "meaning" : "logiStatementDetLogiStatementFromDateExtra2"
+      },
+      "logiStatementDetLogiStatementFromDateExtra3" : {
+        "meaning" : "logiStatementDetLogiStatementFromDateExtra3"
+      },
+      "logiStatementDetLogiStatementFromDateExtra4" : {
+        "meaning" : "logiStatementDetLogiStatementFromDateExtra4"
+      },
+      "logiStatementDetLogiStatementFromDateExtra5" : {
+        "meaning" : "logiStatementDetLogiStatementFromDateExtra5"
+      },
+      "logiStatementDetLogiStatementFromDeliveryDate" : {
+        "meaning" : "logiStatementDetLogiStatementFromDeliveryDate"
+      },
+      "logiStatementDetLogiStatementFromEndTime" : {
+        "meaning" : "logiStatementDetLogiStatementFromEndTime"
+      },
+      "logiStatementDetLogiStatementFromReceiptDate" : {
+        "meaning" : "logiStatementDetLogiStatementFromReceiptDate"
+      },
+      "logiStatementDetLogiStatementFromUpdateTime" : {
+        "meaning" : "logiStatementDetLogiStatementFromUpdateTime"
+      },
+      "logiStatementDetLogiStatementFscType" : {
+        "meaning" : "物流商对账单明细FSC声明"
+      },
+      "logiStatementDetLogiStatementGenerativePeople" : {
+        "meaning" : "物流商对账单明细下发人"
+      },
+      "logiStatementDetLogiStatementGenerativeState" : {
+        "meaning" : "物流商对账单明细下发状态"
+      },
+      "logiStatementDetLogiStatementGroovyScript" : {
+        "meaning" : "物流商对账单明细groovy脚本"
+      },
+      "logiStatementDetLogiStatementGropeCode" : {
+        "meaning" : "物流商对账单明细搜索码"
+      },
+      "logiStatementDetLogiStatementId" : {
+        "meaning" : "物流商对账单明细PK"
+      },
+      "logiStatementDetLogiStatementInUsed" : {
+        "meaning" : "物流商对账单明细是否被使用"
+      },
+      "logiStatementDetLogiStatementInvTypeTaxRateId" : {
+        "meaning" : "物流商对账单明细发票税率id"
+      },
+      "logiStatementDetLogiStatementIsBanned" : {
+        "meaning" : "物流商对账单明细是否被禁用"
+      },
+      "logiStatementDetLogiStatementIsDeleted" : {
+        "meaning" : "物流商对账单明细是否被删除"
+      },
+      "logiStatementDetLogiStatementIsLeaf" : {
+        "meaning" : "物流商对账单明细是否叶子节点"
+      },
+      "logiStatementDetLogiStatementIsMainFlow" : {
+        "meaning" : "物流商对账单明细是否是主流程"
+      },
+      "logiStatementDetLogiStatementIsManualModificationDate" : {
+        "meaning" : "物流商对账单明细是否手动修改计划生产时间"
+      },
+      "logiStatementDetLogiStatementIsolation" : {
+        "meaning" : "物流商对账单明细智能节点数据隔离标识"
+      },
+      "logiStatementDetLogiStatementJsScript" : {
+        "meaning" : "物流商对账单明细js脚本"
+      },
+      "logiStatementDetLogiStatementLocCompleteQuantity" : {
+        "meaning" : "物流商对账单明细本币完成数量"
+      },
+      "logiStatementDetLogiStatementLocTotalAmount" : {
+        "meaning" : "物流商对账单明细本币总金额"
+      },
+      "logiStatementDetLogiStatementLocTotalInvoicedAmount" : {
+        "meaning" : "物流商对账单明细本币总已开票金额"
+      },
+      "logiStatementDetLogiStatementLocTotalOtherExpense" : {
+        "meaning" : "物流商对账单明细本币总其他费用"
+      },
+      "logiStatementDetLogiStatementLocTotalSettleAmount" : {
+        "meaning" : "物流商对账单明细本币总结算金额（本币总金额+本币总其他费用）"
+      },
+      "logiStatementDetLogiStatementLocTotalSettledAmount" : {
+        "meaning" : "物流商对账单明细本币总已结算金额"
+      },
+      "logiStatementDetLogiStatementMaterialId" : {
+        "meaning" : "物流商对账单明细物料id"
+      },
+      "logiStatementDetLogiStatementName" : {
+        "meaning" : "物流商对账单明细智能节点名"
+      },
+      "logiStatementDetLogiStatementNameCodeSearch" : {
+        "meaning" : "物流商对账单明细name、user de模糊搜索"
+      },
+      "logiStatementDetLogiStatementNumberExtra1" : {
+        "meaning" : "物流商对账单明细扩展数量1"
+      },
+      "logiStatementDetLogiStatementNumberExtra2" : {
+        "meaning" : "物流商对账单明细扩展数量2"
+      },
+      "logiStatementDetLogiStatementNumberExtra3" : {
+        "meaning" : "物流商对账单明细扩展数量3"
+      },
+      "logiStatementDetLogiStatementNumberExtra4" : {
+        "meaning" : "物流商对账单明细扩展数量4"
+      },
+      "logiStatementDetLogiStatementNumberExtra5" : {
+        "meaning" : "物流商对账单明细扩展数量5"
+      },
+      "logiStatementDetLogiStatementParentId" : {
+        "meaning" : "物流商对账单明细父节点ID"
+      },
+      "logiStatementDetLogiStatementPlannedOutputQuantity" : {
+        "meaning" : "物流商对账单明细计划产出数量"
+      },
+      "logiStatementDetLogiStatementPlannedTimeRequired" : {
+        "meaning" : "物流商对账单明细计划需时(小时)"
+      },
+      "logiStatementDetLogiStatementPrintTimes" : {
+        "meaning" : "物流商对账单明细打印次数"
+      },
+      "logiStatementDetLogiStatementPriority" : {
+        "meaning" : "物流商对账单明细优先级"
+      },
+      "logiStatementDetLogiStatementProcessInstanceId" : {
+        "meaning" : "物流商对账单明细流程实例ID"
+      },
+      "logiStatementDetLogiStatementProductionProcessesTypeId" : {
+        "meaning" : "物流商对账单明细工序类型ID"
+      },
+      "logiStatementDetLogiStatementProductionShiftId" : {
+        "meaning" : "物流商对账单明细生产班次ID"
+      },
+      "logiStatementDetLogiStatementQuantity" : {
+        "meaning" : "物流商对账单明细任务数量"
+      },
+      "logiStatementDetLogiStatementReceiptDate" : {
+        "meaning" : "物流商对账单明细单据日期"
+      },
+      "logiStatementDetLogiStatementReceiptType" : {
+        "meaning" : "物流商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "logiStatementDetLogiStatementRelatedTasksId" : {
+        "meaning" : "物流商对账单明细关联任务id"
+      },
+      "logiStatementDetLogiStatementSerialNumber" : {
+        "meaning" : "物流商对账单明细顺序号"
+      },
+      "logiStatementDetLogiStatementSource" : {
+        "meaning" : "物流商对账单明细源"
+      },
+      "logiStatementDetLogiStatementSourceType" : {
+        "meaning" : "物流商对账单明细来源类型"
+      },
+      "logiStatementDetLogiStatementState" : {
+        "meaning" : "物流商对账单明细通用状态"
+      },
+      "logiStatementDetLogiStatementSupplierId" : {
+        "meaning" : "物流商对账单明细供应商_id"
+      },
+      "logiStatementDetLogiStatementSystemCode" : {
+        "meaning" : "物流商对账单明细系统编码"
+      },
+      "logiStatementDetLogiStatementTarget" : {
+        "meaning" : "物流商对账单明细目标"
+      },
+      "logiStatementDetLogiStatementTaskNodeName" : {
+        "meaning" : "物流商对账单明细任务节点名称"
+      },
+      "logiStatementDetLogiStatementTenantId" : {
+        "meaning" : "物流商对账单明细租户_id"
+      },
+      "logiStatementDetLogiStatementThirdPartyClass" : {
+        "meaning" : "物流商对账单明细第三方分类"
+      },
+      "logiStatementDetLogiStatementThirdPartyId" : {
+        "meaning" : "物流商对账单明细第三方系统中的唯一ID"
+      },
+      "logiStatementDetLogiStatementThirdPartyName" : {
+        "meaning" : "物流商对账单明细第三方名称"
+      },
+      "logiStatementDetLogiStatementToAuditDate" : {
+        "meaning" : "logiStatementDetLogiStatementToAuditDate"
+      },
+      "logiStatementDetLogiStatementToBeginTime" : {
+        "meaning" : "logiStatementDetLogiStatementToBeginTime"
+      },
+      "logiStatementDetLogiStatementToCreateTime" : {
+        "meaning" : "logiStatementDetLogiStatementToCreateTime"
+      },
+      "logiStatementDetLogiStatementToDateExtra1" : {
+        "meaning" : "logiStatementDetLogiStatementToDateExtra1"
+      },
+      "logiStatementDetLogiStatementToDateExtra2" : {
+        "meaning" : "logiStatementDetLogiStatementToDateExtra2"
+      },
+      "logiStatementDetLogiStatementToDateExtra3" : {
+        "meaning" : "logiStatementDetLogiStatementToDateExtra3"
+      },
+      "logiStatementDetLogiStatementToDateExtra4" : {
+        "meaning" : "logiStatementDetLogiStatementToDateExtra4"
+      },
+      "logiStatementDetLogiStatementToDateExtra5" : {
+        "meaning" : "logiStatementDetLogiStatementToDateExtra5"
+      },
+      "logiStatementDetLogiStatementToDeliveryDate" : {
+        "meaning" : "logiStatementDetLogiStatementToDeliveryDate"
+      },
+      "logiStatementDetLogiStatementToEndTime" : {
+        "meaning" : "logiStatementDetLogiStatementToEndTime"
+      },
+      "logiStatementDetLogiStatementToReceiptDate" : {
+        "meaning" : "logiStatementDetLogiStatementToReceiptDate"
+      },
+      "logiStatementDetLogiStatementToUpdateTime" : {
+        "meaning" : "logiStatementDetLogiStatementToUpdateTime"
+      },
+      "logiStatementDetLogiStatementTotalAmount" : {
+        "meaning" : "物流商对账单明细总金额"
+      },
+      "logiStatementDetLogiStatementTotalInvoicedAmount" : {
+        "meaning" : "物流商对账单明细总已开票金额"
+      },
+      "logiStatementDetLogiStatementTotalOtherExpense" : {
+        "meaning" : "物流商对账单明细总其他费用"
+      },
+      "logiStatementDetLogiStatementTotalSettleAmount" : {
+        "meaning" : "物流商对账单明细总结算金额（总金额+总其他费用）"
+      },
+      "logiStatementDetLogiStatementTotalSettledAmount" : {
+        "meaning" : "物流商对账单明细总已结算金额"
+      },
+      "logiStatementDetLogiStatementUnitCode" : {
+        "meaning" : "物流商对账单明细单位id"
+      },
+      "logiStatementDetLogiStatementUpdateTime" : {
+        "meaning" : "物流商对账单明细更新时间"
+      },
+      "logiStatementDetLogiStatementUpdater" : {
+        "meaning" : "物流商对账单明细更新人"
+      },
+      "logiStatementDetLogiStatementUpdaterId" : {
+        "meaning" : "物流商对账单明细更新人ID"
+      },
+      "logiStatementDetLogiStatementUserCode" : {
+        "meaning" : "物流商对账单明细智能节点的唯一编码"
+      },
+      "logiStatementDetLogiStatementVarExtra1" : {
+        "meaning" : "物流商对账单明细扩展1"
+      },
+      "logiStatementDetLogiStatementVarExtra2" : {
+        "meaning" : "物流商对账单明细扩展2"
+      },
+      "logiStatementDetLogiStatementVarExtra3" : {
+        "meaning" : "物流商对账单明细扩展3"
+      },
+      "logiStatementDetLogiStatementVarExtra4" : {
+        "meaning" : "物流商对账单明细扩展4"
+      },
+      "logiStatementDetLogiStatementVarExtra5" : {
+        "meaning" : "物流商对账单明细扩展5"
+      },
+      "logiStatementDetLogiStatementVersion" : {
+        "meaning" : "物流商对账单明细版本号"
+      },
+      "logiStatementDetMaterialId" : {
+        "meaning" : "物流商对账单明细物料id"
+      },
+      "logiStatementDetName" : {
+        "meaning" : "物流商对账单明细智能节点名"
+      },
+      "logiStatementDetNameCodeSearch" : {
+        "meaning" : "物流商对账单明细name、user de模糊搜索"
+      },
+      "logiStatementDetNumberExtra1" : {
+        "meaning" : "物流商对账单明细扩展数量1"
+      },
+      "logiStatementDetNumberExtra2" : {
+        "meaning" : "物流商对账单明细扩展数量2"
+      },
+      "logiStatementDetNumberExtra3" : {
+        "meaning" : "物流商对账单明细扩展数量3"
+      },
+      "logiStatementDetNumberExtra4" : {
+        "meaning" : "物流商对账单明细扩展数量4"
+      },
+      "logiStatementDetNumberExtra5" : {
+        "meaning" : "物流商对账单明细扩展数量5"
+      },
+      "logiStatementDetOrderId" : {
+        "meaning" : "物流商对账单明细订单_id"
+      },
+      "logiStatementDetOtherExpense" : {
+        "meaning" : "物流商对账单明细其他费用"
+      },
+      "logiStatementDetParentId" : {
+        "meaning" : "物流商对账单明细父节点ID"
+      },
+      "logiStatementDetPlannedOutputQuantity" : {
+        "meaning" : "物流商对账单明细计划产出数量"
+      },
+      "logiStatementDetPlannedTimeRequired" : {
+        "meaning" : "物流商对账单明细计划需时(小时)"
+      },
+      "logiStatementDetPrintTimes" : {
+        "meaning" : "物流商对账单明细打印次数"
+      },
+      "logiStatementDetPriority" : {
+        "meaning" : "物流商对账单明细优先级"
+      },
+      "logiStatementDetProcessInstanceId" : {
+        "meaning" : "物流商对账单明细流程实例ID"
+      },
+      "logiStatementDetProductionProcessesTypeId" : {
+        "meaning" : "物流商对账单明细工序类型ID"
+      },
+      "logiStatementDetProductionShiftId" : {
+        "meaning" : "物流商对账单明细生产班次ID"
+      },
+      "logiStatementDetQuantity" : {
+        "meaning" : "物流商对账单明细任务数量"
+      },
+      "logiStatementDetReceiptDate" : {
+        "meaning" : "物流商对账单明细单据日期"
+      },
+      "logiStatementDetReceiptType" : {
+        "meaning" : "物流商对账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "logiStatementDetRelatedTasksId" : {
+        "meaning" : "物流商对账单明细关联任务id"
+      },
+      "logiStatementDetSerialNumber" : {
+        "meaning" : "物流商对账单明细顺序号"
+      },
+      "logiStatementDetSettleAmount" : {
+        "meaning" : "物流商对账单明细结算金额（金额+其他费用）"
+      },
+      "logiStatementDetSettledAmount" : {
+        "meaning" : "物流商对账单明细已结算金额"
+      },
+      "logiStatementDetSettledState" : {
+        "meaning" : "物流商对账单明细结算状态（0未结算；1部分结算；2全部结算；3终止结算）"
+      },
+      "logiStatementDetSource" : {
+        "meaning" : "物流商对账单明细源"
+      },
+      "logiStatementDetSourceType" : {
+        "meaning" : "物流商对账单明细来源类型"
+      },
+      "logiStatementDetState" : {
+        "meaning" : "物流商对账单明细通用状态"
+      },
+      "logiStatementDetSystemCode" : {
+        "meaning" : "物流商对账单明细系统编码"
+      },
+      "logiStatementDetTarget" : {
+        "meaning" : "物流商对账单明细目标"
+      },
+      "logiStatementDetTaskNodeName" : {
+        "meaning" : "物流商对账单明细任务节点名称"
+      },
+      "logiStatementDetTenantId" : {
+        "meaning" : "物流商对账单明细租户_id"
+      },
+      "logiStatementDetThirdPartyClass" : {
+        "meaning" : "物流商对账单明细第三方分类"
+      },
+      "logiStatementDetThirdPartyId" : {
+        "meaning" : "物流商对账单明细第三方系统中的唯一ID"
+      },
+      "logiStatementDetThirdPartyName" : {
+        "meaning" : "物流商对账单明细第三方名称"
+      },
+      "logiStatementDetToAuditDate" : {
+        "meaning" : "logiStatementDetToAuditDate"
+      },
+      "logiStatementDetToBeginTime" : {
+        "meaning" : "logiStatementDetToBeginTime"
+      },
+      "logiStatementDetToCreateTime" : {
+        "meaning" : "logiStatementDetToCreateTime"
+      },
+      "logiStatementDetToDateExtra1" : {
+        "meaning" : "logiStatementDetToDateExtra1"
+      },
+      "logiStatementDetToDateExtra2" : {
+        "meaning" : "logiStatementDetToDateExtra2"
+      },
+      "logiStatementDetToDateExtra3" : {
+        "meaning" : "logiStatementDetToDateExtra3"
+      },
+      "logiStatementDetToDateExtra4" : {
+        "meaning" : "logiStatementDetToDateExtra4"
+      },
+      "logiStatementDetToDateExtra5" : {
+        "meaning" : "logiStatementDetToDateExtra5"
+      },
+      "logiStatementDetToDeliveryDate" : {
+        "meaning" : "logiStatementDetToDeliveryDate"
+      },
+      "logiStatementDetToEndTime" : {
+        "meaning" : "logiStatementDetToEndTime"
+      },
+      "logiStatementDetToReceiptDate" : {
+        "meaning" : "logiStatementDetToReceiptDate"
+      },
+      "logiStatementDetToUpdateTime" : {
+        "meaning" : "logiStatementDetToUpdateTime"
+      },
+      "logiStatementDetUnitCode" : {
+        "meaning" : "物流商对账单明细单位id"
+      },
+      "logiStatementDetUnitPrice" : {
+        "meaning" : "物流商对账单明细单价"
+      },
+      "logiStatementDetUpdateTime" : {
+        "meaning" : "物流商对账单明细更新时间"
+      },
+      "logiStatementDetUpdater" : {
+        "meaning" : "物流商对账单明细更新人"
+      },
+      "logiStatementDetUpdaterId" : {
+        "meaning" : "物流商对账单明细更新人ID"
+      },
+      "logiStatementDetUserCode" : {
+        "meaning" : "物流商对账单明细智能节点的唯一编码"
+      },
+      "logiStatementDetVarExtra1" : {
+        "meaning" : "物流商对账单明细扩展1"
+      },
+      "logiStatementDetVarExtra2" : {
+        "meaning" : "物流商对账单明细扩展2"
+      },
+      "logiStatementDetVarExtra3" : {
+        "meaning" : "物流商对账单明细扩展3"
+      },
+      "logiStatementDetVarExtra4" : {
+        "meaning" : "物流商对账单明细扩展4"
+      },
+      "logiStatementDetVarExtra5" : {
+        "meaning" : "物流商对账单明细扩展5"
+      },
+      "logiStatementDetVersion" : {
+        "meaning" : "物流商对账单明细版本号"
+      },
+      "logiStatementDetWorkOrderId" : {
+        "meaning" : "物流商对账单明细工单_id"
+      }
+    }
+  }

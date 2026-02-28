@@ -1,0 +1,768 @@
+{
+  "api_name" : "/sem-outwarehouse-det/findList",
+  "table_name" : "半成品出仓明细表",
+  "request" : {
+    "semOutwarehouseDetSemOutwarehouseClazz" : "SEM_OUTWAREHOUSE",
+    "semOutwarehouseDetClazz" : "SEM_OUTWAREHOUSE_DET"
+  },
+  "mainTabClazz" : "SEM_OUTWAREHOUSE_DET",
+  "response" : {
+    "MOutwarehouseDetSemOutwarehouseIsManualModificationDate" : {
+      "meaning" : "半成品出仓明细表是否手动修改计划生产时间"
+    },
+    "outwarehouseDetSemOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "半成品出仓明细表工序类型ID"
+    },
+    "semOutwarehouseDetActualTimeRequired" : {
+      "meaning" : "半成品出仓明细表实际需时(小时)"
+    },
+    "semOutwarehouseDetAdjustmentTimeRequired" : {
+      "meaning" : "半成品出仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "semOutwarehouseDetApplicationId" : {
+      "meaning" : "半成品出仓明细表应用ID"
+    },
+    "semOutwarehouseDetAuditDate" : {
+      "meaning" : "半成品出仓明细表审核时间"
+    },
+    "semOutwarehouseDetAuditStatus" : {
+      "meaning" : "半成品出仓明细表审核状态"
+    },
+    "semOutwarehouseDetAvailableScheduleId" : {
+      "meaning" : "半成品出仓明细表可用日程id"
+    },
+    "semOutwarehouseDetBeginTime" : {
+      "meaning" : "半成品出仓明细表开始时间"
+    },
+    "semOutwarehouseDetBizVersion" : {
+      "meaning" : "半成品出仓明细表业务自定义版本号"
+    },
+    "semOutwarehouseDetBriefName" : {
+      "meaning" : "半成品出仓明细表简称"
+    },
+    "semOutwarehouseDetBusDivisId" : {
+      "meaning" : "半成品出仓明细表事业部id"
+    },
+    "semOutwarehouseDetClazz" : {
+      "meaning" : "半成品出仓明细表子类 类名（表和类一一对应）"
+    },
+    "semOutwarehouseDetClosedReason" : {
+      "meaning" : "半成品出仓明细表结案原因"
+    },
+    "semOutwarehouseDetClosedStatus" : {
+      "meaning" : "半成品出仓明细表结案状态"
+    },
+    "semOutwarehouseDetComment" : {
+      "meaning" : "半成品出仓明细表评论"
+    },
+    "semOutwarehouseDetCompleteQuantity" : {
+      "meaning" : "半成品出仓明细表完成数量"
+    },
+    "semOutwarehouseDetCompleteStatus" : {
+      "meaning" : "半成品出仓明细表完成状态"
+    },
+    "semOutwarehouseDetCreateTime" : {
+      "meaning" : "半成品出仓明细表创建时间"
+    },
+    "semOutwarehouseDetCreator" : {
+      "meaning" : "半成品出仓明细表创建人"
+    },
+    "semOutwarehouseDetCreatorId" : {
+      "meaning" : "半成品出仓明细表创建人ID"
+    },
+    "semOutwarehouseDetDateExtra1" : {
+      "meaning" : "半成品出仓明细表扩展时间1"
+    },
+    "semOutwarehouseDetDateExtra2" : {
+      "meaning" : "半成品出仓明细表扩展时间2"
+    },
+    "semOutwarehouseDetDateExtra3" : {
+      "meaning" : "半成品出仓明细表扩展时间3"
+    },
+    "semOutwarehouseDetDateExtra4" : {
+      "meaning" : "半成品出仓明细表扩展时间4"
+    },
+    "semOutwarehouseDetDateExtra5" : {
+      "meaning" : "半成品出仓明细表扩展时间5"
+    },
+    "semOutwarehouseDetDefaultType" : {
+      "meaning" : "半成品出仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "semOutwarehouseDetDeliveryDate" : {
+      "meaning" : "半成品出仓明细表交货日期"
+    },
+    "semOutwarehouseDetDescription" : {
+      "meaning" : "半成品出仓明细表描述"
+    },
+    "semOutwarehouseDetEndTime" : {
+      "meaning" : "半成品出仓明细表结束时间"
+    },
+    "semOutwarehouseDetEndTimeRequired" : {
+      "meaning" : "半成品出仓明细表最后需时(小时)"
+    },
+    "semOutwarehouseDetEngName" : {
+      "meaning" : "半成品出仓明细表英文名称"
+    },
+    "semOutwarehouseDetEquipmentId" : {
+      "meaning" : "半成品出仓明细表设备id"
+    },
+    "semOutwarehouseDetExchangeRateId" : {
+      "meaning" : "半成品出仓明细表币种汇率id"
+    },
+    "semOutwarehouseDetExtension" : {
+      "meaning" : "半成品出仓明细表扩展数据"
+    },
+    "semOutwarehouseDetExternalState" : {
+      "meaning" : "半成品出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "semOutwarehouseDetFilterClazz" : {
+      "meaning" : "半成品出仓明细表冗余字段用于筛选"
+    },
+    "semOutwarehouseDetFlags" : {
+      "meaning" : "半成品出仓明细表63位标志位"
+    },
+    "semOutwarehouseDetFromAuditDate" : {
+      "meaning" : "semOutwarehouseDetFromAuditDate"
+    },
+    "semOutwarehouseDetFromBeginTime" : {
+      "meaning" : "semOutwarehouseDetFromBeginTime"
+    },
+    "semOutwarehouseDetFromCreateTime" : {
+      "meaning" : "semOutwarehouseDetFromCreateTime"
+    },
+    "semOutwarehouseDetFromDateExtra1" : {
+      "meaning" : "semOutwarehouseDetFromDateExtra1"
+    },
+    "semOutwarehouseDetFromDateExtra2" : {
+      "meaning" : "semOutwarehouseDetFromDateExtra2"
+    },
+    "semOutwarehouseDetFromDateExtra3" : {
+      "meaning" : "semOutwarehouseDetFromDateExtra3"
+    },
+    "semOutwarehouseDetFromDateExtra4" : {
+      "meaning" : "semOutwarehouseDetFromDateExtra4"
+    },
+    "semOutwarehouseDetFromDateExtra5" : {
+      "meaning" : "semOutwarehouseDetFromDateExtra5"
+    },
+    "semOutwarehouseDetFromDeliveryDate" : {
+      "meaning" : "semOutwarehouseDetFromDeliveryDate"
+    },
+    "semOutwarehouseDetFromEndTime" : {
+      "meaning" : "semOutwarehouseDetFromEndTime"
+    },
+    "semOutwarehouseDetFromReceiptDate" : {
+      "meaning" : "semOutwarehouseDetFromReceiptDate"
+    },
+    "semOutwarehouseDetFromUpdateTime" : {
+      "meaning" : "semOutwarehouseDetFromUpdateTime"
+    },
+    "semOutwarehouseDetFscType" : {
+      "meaning" : "半成品出仓明细表FSC声明"
+    },
+    "semOutwarehouseDetGenerativePeople" : {
+      "meaning" : "半成品出仓明细表下发人"
+    },
+    "semOutwarehouseDetGenerativeState" : {
+      "meaning" : "半成品出仓明细表下发状态"
+    },
+    "semOutwarehouseDetGoodsId" : {
+      "meaning" : "半成品出仓明细表货（包）id"
+    },
+    "semOutwarehouseDetGroovyScript" : {
+      "meaning" : "半成品出仓明细表groovy脚本"
+    },
+    "semOutwarehouseDetGropeCode" : {
+      "meaning" : "半成品出仓明细表搜索码"
+    },
+    "semOutwarehouseDetId" : {
+      "meaning" : "半成品出仓明细表PK",
+      "is_primary" : true
+    },
+    "semOutwarehouseDetInUsed" : {
+      "meaning" : "半成品出仓明细表是否被使用"
+    },
+    "semOutwarehouseDetInvTypeTaxRateId" : {
+      "meaning" : "半成品出仓明细表发票税率id"
+    },
+    "semOutwarehouseDetIsBanned" : {
+      "meaning" : "半成品出仓明细表是否被禁用"
+    },
+    "semOutwarehouseDetIsDeleted" : {
+      "meaning" : "半成品出仓明细表是否被删除"
+    },
+    "semOutwarehouseDetIsLeaf" : {
+      "meaning" : "半成品出仓明细表是否叶子节点"
+    },
+    "semOutwarehouseDetIsMainFlow" : {
+      "meaning" : "半成品出仓明细表是否是主流程"
+    },
+    "semOutwarehouseDetIsManualModificationDate" : {
+      "meaning" : "半成品出仓明细表是否手动修改计划生产时间"
+    },
+    "semOutwarehouseDetIsolation" : {
+      "meaning" : "半成品出仓明细表智能节点数据隔离标识"
+    },
+    "semOutwarehouseDetJsScript" : {
+      "meaning" : "半成品出仓明细表js脚本"
+    },
+    "semOutwarehouseDetLocalCurrencyTotalAmount" : {
+      "meaning" : "半成品出仓明细表本币总金额"
+    },
+    "semOutwarehouseDetLocalCurrencyUnitPrice" : {
+      "meaning" : "半成品出仓明细表本币单价"
+    },
+    "semOutwarehouseDetMatBatchId" : {
+      "meaning" : "半成品出仓明细表物料批次id"
+    },
+    "semOutwarehouseDetMaterialId" : {
+      "meaning" : "半成品出仓明细表物料id"
+    },
+    "semOutwarehouseDetName" : {
+      "meaning" : "半成品出仓明细表智能节点名"
+    },
+    "semOutwarehouseDetNameCodeSearch" : {
+      "meaning" : "半成品出仓明细表name、user_code模糊搜索"
+    },
+    "semOutwarehouseDetNumberExtra1" : {
+      "meaning" : "半成品出仓明细表扩展数量1"
+    },
+    "semOutwarehouseDetNumberExtra2" : {
+      "meaning" : "半成品出仓明细表扩展数量2"
+    },
+    "semOutwarehouseDetNumberExtra3" : {
+      "meaning" : "半成品出仓明细表扩展数量3"
+    },
+    "semOutwarehouseDetNumberExtra4" : {
+      "meaning" : "半成品出仓明细表扩展数量4"
+    },
+    "semOutwarehouseDetNumberExtra5" : {
+      "meaning" : "半成品出仓明细表扩展数量5"
+    },
+    "semOutwarehouseDetParentId" : {
+      "meaning" : "半成品出仓明细表父节点ID"
+    },
+    "semOutwarehouseDetPlannedOutputQuantity" : {
+      "meaning" : "半成品出仓明细表计划产出数量"
+    },
+    "semOutwarehouseDetPlannedTimeRequired" : {
+      "meaning" : "半成品出仓明细表计划需时(小时)"
+    },
+    "semOutwarehouseDetPrintTimes" : {
+      "meaning" : "半成品出仓明细表打印次数"
+    },
+    "semOutwarehouseDetPriority" : {
+      "meaning" : "半成品出仓明细表优先级"
+    },
+    "semOutwarehouseDetProcessInstanceId" : {
+      "meaning" : "半成品出仓明细表流程实例ID"
+    },
+    "semOutwarehouseDetProductionProcessesTypeId" : {
+      "meaning" : "半成品出仓明细表工序类型ID"
+    },
+    "semOutwarehouseDetProductionShiftId" : {
+      "meaning" : "半成品出仓明细表生产班次ID"
+    },
+    "semOutwarehouseDetQuantity" : {
+      "meaning" : "半成品出仓明细表任务数量"
+    },
+    "semOutwarehouseDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "半成品出仓明细表报价单价（含税）"
+    },
+    "semOutwarehouseDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "半成品出仓明细表报价单价（不含税）"
+    },
+    "semOutwarehouseDetReceiptDate" : {
+      "meaning" : "半成品出仓明细表单据日期"
+    },
+    "semOutwarehouseDetReceiptType" : {
+      "meaning" : "半成品出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "semOutwarehouseDetRelatedTasksId" : {
+      "meaning" : "半成品出仓明细表关联任务id"
+    },
+    "semOutwarehouseDetSemOutwarehouseActualTimeRequired" : {
+      "meaning" : "半成品出仓明细表实际需时(小时)"
+    },
+    "semOutwarehouseDetSemOutwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "半成品出仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "semOutwarehouseDetSemOutwarehouseApplicationId" : {
+      "meaning" : "半成品出仓明细表应用ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseAuditDate" : {
+      "meaning" : "半成品出仓明细表审核时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseAuditStatus" : {
+      "meaning" : "半成品出仓明细表审核状态"
+    },
+    "semOutwarehouseDetSemOutwarehouseAvailableScheduleId" : {
+      "meaning" : "半成品出仓明细表可用日程id"
+    },
+    "semOutwarehouseDetSemOutwarehouseBeginTime" : {
+      "meaning" : "半成品出仓明细表开始时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseBizVersion" : {
+      "meaning" : "半成品出仓明细表业务自定义版本号"
+    },
+    "semOutwarehouseDetSemOutwarehouseBriefName" : {
+      "meaning" : "半成品出仓明细表简称"
+    },
+    "semOutwarehouseDetSemOutwarehouseBusDivisId" : {
+      "meaning" : "半成品出仓明细表事业部id"
+    },
+    "semOutwarehouseDetSemOutwarehouseClazz" : {
+      "meaning" : "半成品出仓明细表子类 类名（表和类一一对应）"
+    },
+    "semOutwarehouseDetSemOutwarehouseClosedReason" : {
+      "meaning" : "半成品出仓明细表结案原因"
+    },
+    "semOutwarehouseDetSemOutwarehouseClosedStatus" : {
+      "meaning" : "半成品出仓明细表结案状态"
+    },
+    "semOutwarehouseDetSemOutwarehouseComment" : {
+      "meaning" : "半成品出仓明细表评论"
+    },
+    "semOutwarehouseDetSemOutwarehouseCompleteQuantity" : {
+      "meaning" : "半成品出仓明细表完成数量"
+    },
+    "semOutwarehouseDetSemOutwarehouseCompleteStatus" : {
+      "meaning" : "半成品出仓明细表完成状态"
+    },
+    "semOutwarehouseDetSemOutwarehouseCreateTime" : {
+      "meaning" : "半成品出仓明细表创建时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseCreator" : {
+      "meaning" : "半成品出仓明细表创建人"
+    },
+    "semOutwarehouseDetSemOutwarehouseCreatorId" : {
+      "meaning" : "半成品出仓明细表创建人ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseDateExtra1" : {
+      "meaning" : "半成品出仓明细表扩展时间1"
+    },
+    "semOutwarehouseDetSemOutwarehouseDateExtra2" : {
+      "meaning" : "半成品出仓明细表扩展时间2"
+    },
+    "semOutwarehouseDetSemOutwarehouseDateExtra3" : {
+      "meaning" : "半成品出仓明细表扩展时间3"
+    },
+    "semOutwarehouseDetSemOutwarehouseDateExtra4" : {
+      "meaning" : "半成品出仓明细表扩展时间4"
+    },
+    "semOutwarehouseDetSemOutwarehouseDateExtra5" : {
+      "meaning" : "半成品出仓明细表扩展时间5"
+    },
+    "semOutwarehouseDetSemOutwarehouseDefaultType" : {
+      "meaning" : "半成品出仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "semOutwarehouseDetSemOutwarehouseDeliveryDate" : {
+      "meaning" : "半成品出仓明细表交货日期"
+    },
+    "semOutwarehouseDetSemOutwarehouseDescription" : {
+      "meaning" : "半成品出仓明细表描述"
+    },
+    "semOutwarehouseDetSemOutwarehouseEndTime" : {
+      "meaning" : "半成品出仓明细表结束时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseEndTimeRequired" : {
+      "meaning" : "半成品出仓明细表最后需时(小时)"
+    },
+    "semOutwarehouseDetSemOutwarehouseEngName" : {
+      "meaning" : "半成品出仓明细表英文名称"
+    },
+    "semOutwarehouseDetSemOutwarehouseEquipmentId" : {
+      "meaning" : "半成品出仓明细表设备id"
+    },
+    "semOutwarehouseDetSemOutwarehouseExchangeRateId" : {
+      "meaning" : "半成品出仓明细表币种汇率id"
+    },
+    "semOutwarehouseDetSemOutwarehouseExtension" : {
+      "meaning" : "半成品出仓明细表扩展数据"
+    },
+    "semOutwarehouseDetSemOutwarehouseExternalState" : {
+      "meaning" : "半成品出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "semOutwarehouseDetSemOutwarehouseFilterClazz" : {
+      "meaning" : "半成品出仓明细表冗余字段用于筛选"
+    },
+    "semOutwarehouseDetSemOutwarehouseFlags" : {
+      "meaning" : "半成品出仓明细表63位标志位"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromAuditDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromAuditDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromBeginTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromBeginTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromCreateTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromCreateTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDateExtra1" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDateExtra1"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDateExtra2" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDateExtra2"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDateExtra3" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDateExtra3"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDateExtra4" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDateExtra4"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDateExtra5" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDateExtra5"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromDeliveryDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromDeliveryDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromEndTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromEndTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromReceiptDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromReceiptDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseFromUpdateTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseFromUpdateTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseFscType" : {
+      "meaning" : "半成品出仓明细表FSC声明"
+    },
+    "semOutwarehouseDetSemOutwarehouseGenerativePeople" : {
+      "meaning" : "半成品出仓明细表下发人"
+    },
+    "semOutwarehouseDetSemOutwarehouseGenerativeState" : {
+      "meaning" : "半成品出仓明细表下发状态"
+    },
+    "semOutwarehouseDetSemOutwarehouseGroovyScript" : {
+      "meaning" : "半成品出仓明细表groovy脚本"
+    },
+    "semOutwarehouseDetSemOutwarehouseGropeCode" : {
+      "meaning" : "半成品出仓明细表搜索码"
+    },
+    "semOutwarehouseDetSemOutwarehouseId" : {
+      "meaning" : "半成品出仓明细表PK"
+    },
+    "semOutwarehouseDetSemOutwarehouseInUsed" : {
+      "meaning" : "半成品出仓明细表是否被使用"
+    },
+    "semOutwarehouseDetSemOutwarehouseInvTypeTaxRateId" : {
+      "meaning" : "半成品出仓明细表发票税率id"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsBanned" : {
+      "meaning" : "半成品出仓明细表是否被禁用"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsDeleted" : {
+      "meaning" : "半成品出仓明细表是否被删除"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsLeaf" : {
+      "meaning" : "半成品出仓明细表是否叶子节点"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsMainFlow" : {
+      "meaning" : "半成品出仓明细表是否是主流程"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsManualModificationDate" : {
+      "meaning" : "半成品出仓明细表是否手动修改计划生产时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseIsolation" : {
+      "meaning" : "半成品出仓明细表智能节点数据隔离标识"
+    },
+    "semOutwarehouseDetSemOutwarehouseJsScript" : {
+      "meaning" : "半成品出仓明细表js脚本"
+    },
+    "semOutwarehouseDetSemOutwarehouseMaterialId" : {
+      "meaning" : "半成品出仓明细表物料id"
+    },
+    "semOutwarehouseDetSemOutwarehouseName" : {
+      "meaning" : "半成品出仓明细表智能节点名"
+    },
+    "semOutwarehouseDetSemOutwarehouseNameCodeSearch" : {
+      "meaning" : "半成品出仓明细表name、user_code模糊搜索"
+    },
+    "semOutwarehouseDetSemOutwarehouseNumberExtra1" : {
+      "meaning" : "半成品出仓明细表扩展数量1"
+    },
+    "semOutwarehouseDetSemOutwarehouseNumberExtra2" : {
+      "meaning" : "半成品出仓明细表扩展数量2"
+    },
+    "semOutwarehouseDetSemOutwarehouseNumberExtra3" : {
+      "meaning" : "半成品出仓明细表扩展数量3"
+    },
+    "semOutwarehouseDetSemOutwarehouseNumberExtra4" : {
+      "meaning" : "半成品出仓明细表扩展数量4"
+    },
+    "semOutwarehouseDetSemOutwarehouseNumberExtra5" : {
+      "meaning" : "半成品出仓明细表扩展数量5"
+    },
+    "semOutwarehouseDetSemOutwarehouseParentId" : {
+      "meaning" : "半成品出仓明细表父节点ID"
+    },
+    "semOutwarehouseDetSemOutwarehousePlannedOutputQuantity" : {
+      "meaning" : "半成品出仓明细表计划产出数量"
+    },
+    "semOutwarehouseDetSemOutwarehousePlannedTimeRequired" : {
+      "meaning" : "半成品出仓明细表计划需时(小时)"
+    },
+    "semOutwarehouseDetSemOutwarehousePrintTimes" : {
+      "meaning" : "半成品出仓明细表打印次数"
+    },
+    "semOutwarehouseDetSemOutwarehousePriority" : {
+      "meaning" : "半成品出仓明细表优先级"
+    },
+    "semOutwarehouseDetSemOutwarehouseProcessInstanceId" : {
+      "meaning" : "半成品出仓明细表流程实例ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "半成品出仓明细表工序类型ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseProductionShiftId" : {
+      "meaning" : "半成品出仓明细表生产班次ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseQuantity" : {
+      "meaning" : "半成品出仓明细表任务数量"
+    },
+    "semOutwarehouseDetSemOutwarehouseReceiptDate" : {
+      "meaning" : "半成品出仓明细表单据日期"
+    },
+    "semOutwarehouseDetSemOutwarehouseReceiptType" : {
+      "meaning" : "半成品出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "semOutwarehouseDetSemOutwarehouseRelatedTasksId" : {
+      "meaning" : "半成品出仓明细表关联任务id"
+    },
+    "semOutwarehouseDetSemOutwarehouseSerialNumber" : {
+      "meaning" : "半成品出仓明细表顺序号"
+    },
+    "semOutwarehouseDetSemOutwarehouseSource" : {
+      "meaning" : "半成品出仓明细表源"
+    },
+    "semOutwarehouseDetSemOutwarehouseSourceType" : {
+      "meaning" : "半成品出仓明细表来源类型"
+    },
+    "semOutwarehouseDetSemOutwarehouseState" : {
+      "meaning" : "半成品出仓明细表通用状态"
+    },
+    "semOutwarehouseDetSemOutwarehouseSystemCode" : {
+      "meaning" : "半成品出仓明细表系统编码"
+    },
+    "semOutwarehouseDetSemOutwarehouseTarget" : {
+      "meaning" : "半成品出仓明细表目标"
+    },
+    "semOutwarehouseDetSemOutwarehouseTaskNodeName" : {
+      "meaning" : "半成品出仓明细表任务节点名称"
+    },
+    "semOutwarehouseDetSemOutwarehouseTaskNodeType" : {
+      "meaning" : "半成品出仓明细表任务节点类型"
+    },
+    "semOutwarehouseDetSemOutwarehouseTenantId" : {
+      "meaning" : "半成品出仓明细表租户id"
+    },
+    "semOutwarehouseDetSemOutwarehouseThirdPartyClass" : {
+      "meaning" : "半成品出仓明细表第三方分类"
+    },
+    "semOutwarehouseDetSemOutwarehouseThirdPartyId" : {
+      "meaning" : "半成品出仓明细表第三方系统中的唯一ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseThirdPartyName" : {
+      "meaning" : "半成品出仓明细表第三方名称"
+    },
+    "semOutwarehouseDetSemOutwarehouseToAuditDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToAuditDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseToBeginTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToBeginTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseToCreateTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToCreateTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDateExtra1" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDateExtra1"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDateExtra2" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDateExtra2"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDateExtra3" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDateExtra3"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDateExtra4" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDateExtra4"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDateExtra5" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDateExtra5"
+    },
+    "semOutwarehouseDetSemOutwarehouseToDeliveryDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToDeliveryDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseToEndTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToEndTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseToReceiptDate" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToReceiptDate"
+    },
+    "semOutwarehouseDetSemOutwarehouseToUpdateTime" : {
+      "meaning" : "semOutwarehouseDetSemOutwarehouseToUpdateTime"
+    },
+    "semOutwarehouseDetSemOutwarehouseUnitCode" : {
+      "meaning" : "半成品出仓明细表单位id"
+    },
+    "semOutwarehouseDetSemOutwarehouseUpdateTime" : {
+      "meaning" : "半成品出仓明细表更新时间"
+    },
+    "semOutwarehouseDetSemOutwarehouseUpdater" : {
+      "meaning" : "半成品出仓明细表更新人"
+    },
+    "semOutwarehouseDetSemOutwarehouseUpdaterId" : {
+      "meaning" : "半成品出仓明细表更新人ID"
+    },
+    "semOutwarehouseDetSemOutwarehouseUserCode" : {
+      "meaning" : "半成品出仓明细表智能节点的唯一编码"
+    },
+    "semOutwarehouseDetSemOutwarehouseVarExtra1" : {
+      "meaning" : "半成品出仓明细表扩展1"
+    },
+    "semOutwarehouseDetSemOutwarehouseVarExtra2" : {
+      "meaning" : "半成品出仓明细表扩展2"
+    },
+    "semOutwarehouseDetSemOutwarehouseVarExtra3" : {
+      "meaning" : "半成品出仓明细表扩展3"
+    },
+    "semOutwarehouseDetSemOutwarehouseVarExtra4" : {
+      "meaning" : "半成品出仓明细表扩展4"
+    },
+    "semOutwarehouseDetSemOutwarehouseVarExtra5" : {
+      "meaning" : "半成品出仓明细表扩展5"
+    },
+    "semOutwarehouseDetSemOutwarehouseVersion" : {
+      "meaning" : "半成品出仓明细表版本号"
+    },
+    "semOutwarehouseDetSerialNumber" : {
+      "meaning" : "半成品出仓明细表顺序号"
+    },
+    "semOutwarehouseDetSettlementTotalAmount" : {
+      "meaning" : "半成品出仓明细表结算总金额"
+    },
+    "semOutwarehouseDetSettlementUnitPrice" : {
+      "meaning" : "半成品出仓明细表结算单价"
+    },
+    "semOutwarehouseDetSource" : {
+      "meaning" : "半成品出仓明细表源"
+    },
+    "semOutwarehouseDetSourceType" : {
+      "meaning" : "半成品出仓明细表来源类型"
+    },
+    "semOutwarehouseDetState" : {
+      "meaning" : "半成品出仓明细表通用状态"
+    },
+    "semOutwarehouseDetSystemCode" : {
+      "meaning" : "半成品出仓明细表系统编码"
+    },
+    "semOutwarehouseDetTarget" : {
+      "meaning" : "半成品出仓明细表目标"
+    },
+    "semOutwarehouseDetTaskNodeName" : {
+      "meaning" : "半成品出仓明细表任务节点名称"
+    },
+    "semOutwarehouseDetTaskNodeType" : {
+      "meaning" : "半成品出仓明细表任务节点类型"
+    },
+    "semOutwarehouseDetTenantId" : {
+      "meaning" : "半成品出仓明细表租户id"
+    },
+    "semOutwarehouseDetThirdPartyClass" : {
+      "meaning" : "半成品出仓明细表第三方分类"
+    },
+    "semOutwarehouseDetThirdPartyId" : {
+      "meaning" : "半成品出仓明细表第三方系统中的唯一ID"
+    },
+    "semOutwarehouseDetThirdPartyName" : {
+      "meaning" : "半成品出仓明细表第三方名称"
+    },
+    "semOutwarehouseDetToAuditDate" : {
+      "meaning" : "semOutwarehouseDetToAuditDate"
+    },
+    "semOutwarehouseDetToBeginTime" : {
+      "meaning" : "semOutwarehouseDetToBeginTime"
+    },
+    "semOutwarehouseDetToCreateTime" : {
+      "meaning" : "semOutwarehouseDetToCreateTime"
+    },
+    "semOutwarehouseDetToDateExtra1" : {
+      "meaning" : "semOutwarehouseDetToDateExtra1"
+    },
+    "semOutwarehouseDetToDateExtra2" : {
+      "meaning" : "semOutwarehouseDetToDateExtra2"
+    },
+    "semOutwarehouseDetToDateExtra3" : {
+      "meaning" : "semOutwarehouseDetToDateExtra3"
+    },
+    "semOutwarehouseDetToDateExtra4" : {
+      "meaning" : "semOutwarehouseDetToDateExtra4"
+    },
+    "semOutwarehouseDetToDateExtra5" : {
+      "meaning" : "semOutwarehouseDetToDateExtra5"
+    },
+    "semOutwarehouseDetToDeliveryDate" : {
+      "meaning" : "semOutwarehouseDetToDeliveryDate"
+    },
+    "semOutwarehouseDetToEndTime" : {
+      "meaning" : "semOutwarehouseDetToEndTime"
+    },
+    "semOutwarehouseDetToReceiptDate" : {
+      "meaning" : "semOutwarehouseDetToReceiptDate"
+    },
+    "semOutwarehouseDetToUpdateTime" : {
+      "meaning" : "semOutwarehouseDetToUpdateTime"
+    },
+    "semOutwarehouseDetTotalAmount" : {
+      "meaning" : "半成品出仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "semOutwarehouseDetTotalAmountIncludingTax" : {
+      "meaning" : "半成品出仓明细表总金额（含税）"
+    },
+    "semOutwarehouseDetTotalAmountWithoutTax" : {
+      "meaning" : "半成品出仓明细表总金额（不含税）"
+    },
+    "semOutwarehouseDetUnitCode" : {
+      "meaning" : "半成品出仓明细表单位id"
+    },
+    "semOutwarehouseDetUnitPriceIncludingTax" : {
+      "meaning" : "半成品出仓明细表单价（含税）"
+    },
+    "semOutwarehouseDetUnitPriceWithoutTax" : {
+      "meaning" : "半成品出仓明细表单价（不含税）"
+    },
+    "semOutwarehouseDetUpdateTime" : {
+      "meaning" : "半成品出仓明细表更新时间"
+    },
+    "semOutwarehouseDetUpdater" : {
+      "meaning" : "半成品出仓明细表更新人"
+    },
+    "semOutwarehouseDetUpdaterId" : {
+      "meaning" : "半成品出仓明细表更新人ID"
+    },
+    "semOutwarehouseDetUserCode" : {
+      "meaning" : "半成品出仓明细表智能节点的唯一编码"
+    },
+    "semOutwarehouseDetVarExtra1" : {
+      "meaning" : "半成品出仓明细表扩展1"
+    },
+    "semOutwarehouseDetVarExtra2" : {
+      "meaning" : "半成品出仓明细表扩展2"
+    },
+    "semOutwarehouseDetVarExtra3" : {
+      "meaning" : "半成品出仓明细表扩展3"
+    },
+    "semOutwarehouseDetVarExtra4" : {
+      "meaning" : "半成品出仓明细表扩展4"
+    },
+    "semOutwarehouseDetVarExtra5" : {
+      "meaning" : "半成品出仓明细表扩展5"
+    },
+    "semOutwarehouseDetVersion" : {
+      "meaning" : "半成品出仓明细表版本号"
+    },
+    "semOutwarehouseDetWarehouseSpaceId" : {
+      "meaning" : "半成品出仓明细表仓空间id"
+    }
+  }
+}

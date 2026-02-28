@@ -1,0 +1,756 @@
+{
+      "api_name": "/invo-iss-det/findList",
+      "table_name": "开票登记明细表",
+      "request": {
+        "invoIssDetInvoIssClazz": "INVO_ISS",
+        "invoIssDetClazz": "INVO_ISS_DET"
+      },
+      "mainTabClazz": "INVO_ISS_DET",
+      "response": {
+        "invoIssDetActualTimeRequired": {
+          "meaning": "开票登记明细表实际需时(小时)"
+        },
+        "invoIssDetAdjustmentTimeRequired": {
+          "meaning": "开票登记明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "invoIssDetAmount": {
+          "meaning": "开票登记明细表自动调整金额"
+        },
+        "invoIssDetApplicationId": {
+          "meaning": "开票登记明细表应用ID"
+        },
+        "invoIssDetAuditDate": {
+          "meaning": "开票登记明细表审核时间"
+        },
+        "invoIssDetAuditStatus": {
+          "meaning": "开票登记明细表审核状态"
+        },
+        "invoIssDetAvailableScheduleId": {
+          "meaning": "开票登记明细表可用日程id"
+        },
+        "invoIssDetBeginTime": {
+          "meaning": "开票登记明细表开始时间"
+        },
+        "invoIssDetBizVersion": {
+          "meaning": "开票登记明细表业务自定义版本号"
+        },
+        "invoIssDetBriefName": {
+          "meaning": "开票登记明细表简称"
+        },
+        "invoIssDetBusDivisId": {
+          "meaning": "开票登记明细表事业部id"
+        },
+        "invoIssDetClazz": {
+          "meaning": "开票登记明细表子类 类名（表和类一一对应）"
+        },
+        "invoIssDetClosedReason": {
+          "meaning": "开票登记明细表结案原因"
+        },
+        "invoIssDetClosedStatus": {
+          "meaning": "开票登记明细表结案状态"
+        },
+        "invoIssDetComment": {
+          "meaning": "开票登记明细表评论"
+        },
+        "invoIssDetCompleteQuantity": {
+          "meaning": "开票登记明细表完成数量"
+        },
+        "invoIssDetCompleteStatus": {
+          "meaning": "开票登记明细表完成状态"
+        },
+        "invoIssDetCreateTime": {
+          "meaning": "开票登记明细表创建时间"
+        },
+        "invoIssDetCreator": {
+          "meaning": "开票登记明细表创建人"
+        },
+        "invoIssDetCreatorId": {
+          "meaning": "开票登记明细表创建人ID"
+        },
+        "invoIssDetDateExtra1": {
+          "meaning": "开票登记明细表扩展时间1"
+        },
+        "invoIssDetDateExtra2": {
+          "meaning": "开票登记明细表扩展时间2"
+        },
+        "invoIssDetDateExtra3": {
+          "meaning": "开票登记明细表扩展时间3"
+        },
+        "invoIssDetDateExtra4": {
+          "meaning": "开票登记明细表扩展时间4"
+        },
+        "invoIssDetDateExtra5": {
+          "meaning": "开票登记明细表扩展时间5"
+        },
+        "invoIssDetDefaultType": {
+          "meaning": "开票登记明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "invoIssDetDeliveryDate": {
+          "meaning": "开票登记明细表交货日期"
+        },
+        "invoIssDetDescription": {
+          "meaning": "开票登记明细表描述"
+        },
+        "invoIssDetEndTime": {
+          "meaning": "开票登记明细表结束时间"
+        },
+        "invoIssDetEndTimeRequired": {
+          "meaning": "开票登记明细表最后需时(小时)"
+        },
+        "invoIssDetEngName": {
+          "meaning": "开票登记明细表英文名称"
+        },
+        "invoIssDetEquipmentId": {
+          "meaning": "开票登记明细表设备id"
+        },
+        "invoIssDetExchangeRateId": {
+          "meaning": "开票登记明细表币种汇率id"
+        },
+        "invoIssDetExtension": {
+          "meaning": "开票登记明细表扩展数据"
+        },
+        "invoIssDetExternalState": {
+          "meaning": "开票登记明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invoIssDetFilterClazz": {
+          "meaning": "开票登记明细表冗余字段用于筛选"
+        },
+        "invoIssDetFlags": {
+          "meaning": "开票登记明细表63位标志位"
+        },
+        "invoIssDetFromAuditDate": {
+          "meaning": "invoIssDetFromAuditDate"
+        },
+        "invoIssDetFromBeginTime": {
+          "meaning": "invoIssDetFromBeginTime"
+        },
+        "invoIssDetFromCreateTime": {
+          "meaning": "invoIssDetFromCreateTime"
+        },
+        "invoIssDetFromDateExtra1": {
+          "meaning": "invoIssDetFromDateExtra1"
+        },
+        "invoIssDetFromDateExtra2": {
+          "meaning": "invoIssDetFromDateExtra2"
+        },
+        "invoIssDetFromDateExtra3": {
+          "meaning": "invoIssDetFromDateExtra3"
+        },
+        "invoIssDetFromDateExtra4": {
+          "meaning": "invoIssDetFromDateExtra4"
+        },
+        "invoIssDetFromDateExtra5": {
+          "meaning": "invoIssDetFromDateExtra5"
+        },
+        "invoIssDetFromDeliveryDate": {
+          "meaning": "invoIssDetFromDeliveryDate"
+        },
+        "invoIssDetFromEndTime": {
+          "meaning": "invoIssDetFromEndTime"
+        },
+        "invoIssDetFromReceiptDate": {
+          "meaning": "invoIssDetFromReceiptDate"
+        },
+        "invoIssDetFromUpdateTime": {
+          "meaning": "invoIssDetFromUpdateTime"
+        },
+        "invoIssDetFscType": {
+          "meaning": "开票登记明细表FSC声明"
+        },
+        "invoIssDetGenerativePeople": {
+          "meaning": "开票登记明细表下发人"
+        },
+        "invoIssDetGenerativeState": {
+          "meaning": "开票登记明细表下发状态"
+        },
+        "invoIssDetGroovyScript": {
+          "meaning": "开票登记明细表groovy脚本"
+        },
+        "invoIssDetGropeCode": {
+          "meaning": "开票登记明细表搜索码"
+        },
+        "invoIssDetId": {
+          "meaning": "开票登记明细表PK",
+          "is_primary": true
+        },
+        "invoIssDetInUsed": {
+          "meaning": "开票登记明细表是否被使用"
+        },
+        "invoIssDetInvTypeTaxRateId": {
+          "meaning": "开票登记明细表发票税率id"
+        },
+        "invoIssDetInvoIssActualTimeRequired": {
+          "meaning": "开票登记明细表实际需时(小时)"
+        },
+        "invoIssDetInvoIssAdjustmentTimeRequired": {
+          "meaning": "开票登记明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "invoIssDetInvoIssAmountIncludingTax": {
+          "meaning": "开票登记明细表收款/付款金额(含税)"
+        },
+        "invoIssDetInvoIssApplicationId": {
+          "meaning": "开票登记明细表应用ID"
+        },
+        "invoIssDetInvoIssAuditDate": {
+          "meaning": "开票登记明细表审核时间"
+        },
+        "invoIssDetInvoIssAuditStatus": {
+          "meaning": "开票登记明细表审核状态"
+        },
+        "invoIssDetInvoIssAvailableScheduleId": {
+          "meaning": "开票登记明细表可用日程id"
+        },
+        "invoIssDetInvoIssBeginTime": {
+          "meaning": "开票登记明细表开始时间"
+        },
+        "invoIssDetInvoIssBizVersion": {
+          "meaning": "开票登记明细表业务自定义版本号"
+        },
+        "invoIssDetInvoIssBriefName": {
+          "meaning": "开票登记明细表简称"
+        },
+        "invoIssDetInvoIssBusDivisId": {
+          "meaning": "开票登记明细表事业部id"
+        },
+        "invoIssDetInvoIssClazz": {
+          "meaning": "开票登记明细表子类 类名（表和类一一对应）"
+        },
+        "invoIssDetInvoIssClosedReason": {
+          "meaning": "开票登记明细表结案原因"
+        },
+        "invoIssDetInvoIssClosedStatus": {
+          "meaning": "开票登记明细表结案状态"
+        },
+        "invoIssDetInvoIssComment": {
+          "meaning": "开票登记明细表评论"
+        },
+        "invoIssDetInvoIssCompleteQuantity": {
+          "meaning": "开票登记明细表完成数量"
+        },
+        "invoIssDetInvoIssCompleteStatus": {
+          "meaning": "开票登记明细表完成状态"
+        },
+        "invoIssDetInvoIssCreateTime": {
+          "meaning": "开票登记明细表创建时间"
+        },
+        "invoIssDetInvoIssCreator": {
+          "meaning": "开票登记明细表创建人"
+        },
+        "invoIssDetInvoIssCreatorId": {
+          "meaning": "开票登记明细表创建人ID"
+        },
+        "invoIssDetInvoIssDateExtra1": {
+          "meaning": "开票登记明细表扩展时间1"
+        },
+        "invoIssDetInvoIssDateExtra2": {
+          "meaning": "开票登记明细表扩展时间2"
+        },
+        "invoIssDetInvoIssDateExtra3": {
+          "meaning": "开票登记明细表扩展时间3"
+        },
+        "invoIssDetInvoIssDateExtra4": {
+          "meaning": "开票登记明细表扩展时间4"
+        },
+        "invoIssDetInvoIssDateExtra5": {
+          "meaning": "开票登记明细表扩展时间5"
+        },
+        "invoIssDetInvoIssDefaultType": {
+          "meaning": "开票登记明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "invoIssDetInvoIssDeliveryDate": {
+          "meaning": "开票登记明细表交货日期"
+        },
+        "invoIssDetInvoIssDescription": {
+          "meaning": "开票登记明细表描述"
+        },
+        "invoIssDetInvoIssEndTime": {
+          "meaning": "开票登记明细表结束时间"
+        },
+        "invoIssDetInvoIssEndTimeRequired": {
+          "meaning": "开票登记明细表最后需时(小时)"
+        },
+        "invoIssDetInvoIssEngName": {
+          "meaning": "开票登记明细表英文名称"
+        },
+        "invoIssDetInvoIssEquipmentId": {
+          "meaning": "开票登记明细表设备id"
+        },
+        "invoIssDetInvoIssExchangeRateId": {
+          "meaning": "开票登记明细表币种汇率id"
+        },
+        "invoIssDetInvoIssExtension": {
+          "meaning": "开票登记明细表扩展数据"
+        },
+        "invoIssDetInvoIssExternalState": {
+          "meaning": "开票登记明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invoIssDetInvoIssFilterClazz": {
+          "meaning": "开票登记明细表冗余字段用于筛选"
+        },
+        "invoIssDetInvoIssFlags": {
+          "meaning": "开票登记明细表63位标志位"
+        },
+        "invoIssDetInvoIssFromAuditDate": {
+          "meaning": "invoIssDetInvoIssFromAuditDate"
+        },
+        "invoIssDetInvoIssFromBeginTime": {
+          "meaning": "invoIssDetInvoIssFromBeginTime"
+        },
+        "invoIssDetInvoIssFromCreateTime": {
+          "meaning": "invoIssDetInvoIssFromCreateTime"
+        },
+        "invoIssDetInvoIssFromDateExtra1": {
+          "meaning": "invoIssDetInvoIssFromDateExtra1"
+        },
+        "invoIssDetInvoIssFromDateExtra2": {
+          "meaning": "invoIssDetInvoIssFromDateExtra2"
+        },
+        "invoIssDetInvoIssFromDateExtra3": {
+          "meaning": "invoIssDetInvoIssFromDateExtra3"
+        },
+        "invoIssDetInvoIssFromDateExtra4": {
+          "meaning": "invoIssDetInvoIssFromDateExtra4"
+        },
+        "invoIssDetInvoIssFromDateExtra5": {
+          "meaning": "invoIssDetInvoIssFromDateExtra5"
+        },
+        "invoIssDetInvoIssFromDeliveryDate": {
+          "meaning": "invoIssDetInvoIssFromDeliveryDate"
+        },
+        "invoIssDetInvoIssFromEndTime": {
+          "meaning": "invoIssDetInvoIssFromEndTime"
+        },
+        "invoIssDetInvoIssFromInvoiceBillDate": {
+          "type": "object",
+          "meaning": "invoIssDetInvoIssFromInvoiceBillDate"
+        },
+        "invoIssDetInvoIssFromPaymentDate": {
+          "type": "object",
+          "meaning": "invoIssDetInvoIssFromPaymentDate"
+        },
+        "invoIssDetInvoIssFromReceiptDate": {
+          "meaning": "invoIssDetInvoIssFromReceiptDate"
+        },
+        "invoIssDetInvoIssFromUpdateTime": {
+          "meaning": "invoIssDetInvoIssFromUpdateTime"
+        },
+        "invoIssDetInvoIssFscType": {
+          "meaning": "开票登记明细表FSC声明"
+        },
+        "invoIssDetInvoIssGenerativePeople": {
+          "meaning": "开票登记明细表下发人"
+        },
+        "invoIssDetInvoIssGenerativeState": {
+          "meaning": "开票登记明细表下发状态"
+        },
+        "invoIssDetInvoIssGroovyScript": {
+          "meaning": "开票登记明细表groovy脚本"
+        },
+        "invoIssDetInvoIssGropeCode": {
+          "meaning": "开票登记明细表搜索码"
+        },
+        "invoIssDetInvoIssId": {
+          "meaning": "开票登记明细表PK"
+        },
+        "invoIssDetInvoIssInUsed": {
+          "meaning": "开票登记明细表是否被使用"
+        },
+        "invoIssDetInvoIssInvTypeTaxRateId": {
+          "meaning": "开票登记明细表发票税率id"
+        },
+        "invoIssDetInvoIssInvoiceBillDate": {
+          "type": "object",
+          "meaning": "开票登记明细表发票日期"
+        },
+        "invoIssDetInvoIssInvoiceNo": {
+          "meaning": "开票登记明细表发票号码(手填)"
+        },
+        "invoIssDetInvoIssIsBanned": {
+          "meaning": "开票登记明细表是否被禁用"
+        },
+        "invoIssDetInvoIssIsDeleted": {
+          "meaning": "开票登记明细表是否被删除"
+        },
+        "invoIssDetInvoIssIsLeaf": {
+          "meaning": "开票登记明细表是否叶子节点"
+        },
+        "invoIssDetInvoIssIsMainFlow": {
+          "meaning": "开票登记明细表是否是主流程"
+        },
+        "invoIssDetInvoIssIsManualModificationDate": {
+          "meaning": "开票登记明细表是否手动修改计划生产时间"
+        },
+        "invoIssDetInvoIssIsolation": {
+          "meaning": "开票登记明细表智能节点数据隔离标识"
+        },
+        "invoIssDetInvoIssJsScript": {
+          "meaning": "开票登记明细表js脚本"
+        },
+        "invoIssDetInvoIssMaterialId": {
+          "meaning": "开票登记明细表物料id"
+        },
+        "invoIssDetInvoIssName": {
+          "meaning": "开票登记明细表智能节点名"
+        },
+        "invoIssDetInvoIssNameCodeSearch": {
+          "meaning": "开票登记明细表name、user de模糊搜索"
+        },
+        "invoIssDetInvoIssNumberExtra1": {
+          "meaning": "开票登记明细表扩展数量1"
+        },
+        "invoIssDetInvoIssNumberExtra2": {
+          "meaning": "开票登记明细表扩展数量2"
+        },
+        "invoIssDetInvoIssNumberExtra3": {
+          "meaning": "开票登记明细表扩展数量3"
+        },
+        "invoIssDetInvoIssNumberExtra4": {
+          "meaning": "开票登记明细表扩展数量4"
+        },
+        "invoIssDetInvoIssNumberExtra5": {
+          "meaning": "开票登记明细表扩展数量5"
+        },
+        "invoIssDetInvoIssParentId": {
+          "meaning": "开票登记明细表父节点ID"
+        },
+        "invoIssDetInvoIssPaymentDate": {
+          "type": "object",
+          "meaning": "开票登记明细表付款日期(交易日期)"
+        },
+        "invoIssDetInvoIssPlannedOutputQuantity": {
+          "meaning": "开票登记明细表计划产出数量"
+        },
+        "invoIssDetInvoIssPlannedTimeRequired": {
+          "meaning": "开票登记明细表计划需时(小时)"
+        },
+        "invoIssDetInvoIssPrintTimes": {
+          "meaning": "开票登记明细表打印次数"
+        },
+        "invoIssDetInvoIssPriority": {
+          "meaning": "开票登记明细表优先级"
+        },
+        "invoIssDetInvoIssProcessInstanceId": {
+          "meaning": "开票登记明细表流程实例ID"
+        },
+        "invoIssDetInvoIssProductionProcessesTypeId": {
+          "meaning": "开票登记明细表工序类型ID"
+        },
+        "invoIssDetInvoIssProductionShiftId": {
+          "meaning": "开票登记明细表生产班次ID"
+        },
+        "invoIssDetInvoIssQuantity": {
+          "meaning": "开票登记明细表任务数量"
+        },
+        "invoIssDetInvoIssReceiptDate": {
+          "meaning": "开票登记明细表单据日期"
+        },
+        "invoIssDetInvoIssReceiptType": {
+          "meaning": "开票登记明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "invoIssDetInvoIssRelatedTasksId": {
+          "meaning": "开票登记明细表关联任务id"
+        },
+        "invoIssDetInvoIssSerialNumber": {
+          "meaning": "开票登记明细表顺序号"
+        },
+        "invoIssDetInvoIssSource": {
+          "meaning": "开票登记明细表源"
+        },
+        "invoIssDetInvoIssSourceType": {
+          "meaning": "开票登记明细表来源类型"
+        },
+        "invoIssDetInvoIssState": {
+          "meaning": "开票登记明细表通用状态"
+        },
+        "invoIssDetInvoIssSystemCode": {
+          "meaning": "开票登记明细表系统编码"
+        },
+        "invoIssDetInvoIssTarget": {
+          "meaning": "开票登记明细表目标"
+        },
+        "invoIssDetInvoIssTaskNodeName": {
+          "meaning": "开票登记明细表任务节点名称"
+        },
+        "invoIssDetInvoIssTaxRate": {
+          "meaning": "开票登记明细表税率"
+        },
+        "invoIssDetInvoIssTenantId": {
+          "meaning": "开票登记明细表租户_id"
+        },
+        "invoIssDetInvoIssThirdPartyClass": {
+          "meaning": "开票登记明细表第三方分类"
+        },
+        "invoIssDetInvoIssThirdPartyId": {
+          "meaning": "开票登记明细表第三方系统中的唯一ID"
+        },
+        "invoIssDetInvoIssThirdPartyName": {
+          "meaning": "开票登记明细表第三方名称"
+        },
+        "invoIssDetInvoIssToAuditDate": {
+          "meaning": "invoIssDetInvoIssToAuditDate"
+        },
+        "invoIssDetInvoIssToBeginTime": {
+          "meaning": "invoIssDetInvoIssToBeginTime"
+        },
+        "invoIssDetInvoIssToCreateTime": {
+          "meaning": "invoIssDetInvoIssToCreateTime"
+        },
+        "invoIssDetInvoIssToDateExtra1": {
+          "meaning": "invoIssDetInvoIssToDateExtra1"
+        },
+        "invoIssDetInvoIssToDateExtra2": {
+          "meaning": "invoIssDetInvoIssToDateExtra2"
+        },
+        "invoIssDetInvoIssToDateExtra3": {
+          "meaning": "invoIssDetInvoIssToDateExtra3"
+        },
+        "invoIssDetInvoIssToDateExtra4": {
+          "meaning": "invoIssDetInvoIssToDateExtra4"
+        },
+        "invoIssDetInvoIssToDateExtra5": {
+          "meaning": "invoIssDetInvoIssToDateExtra5"
+        },
+        "invoIssDetInvoIssToDeliveryDate": {
+          "meaning": "invoIssDetInvoIssToDeliveryDate"
+        },
+        "invoIssDetInvoIssToEndTime": {
+          "meaning": "invoIssDetInvoIssToEndTime"
+        },
+        "invoIssDetInvoIssToInvoiceBillDate": {
+          "type": "object",
+          "meaning": "invoIssDetInvoIssToInvoiceBillDate"
+        },
+        "invoIssDetInvoIssToPaymentDate": {
+          "type": "object",
+          "meaning": "invoIssDetInvoIssToPaymentDate"
+        },
+        "invoIssDetInvoIssToReceiptDate": {
+          "meaning": "invoIssDetInvoIssToReceiptDate"
+        },
+        "invoIssDetInvoIssToUpdateTime": {
+          "meaning": "invoIssDetInvoIssToUpdateTime"
+        },
+        "invoIssDetInvoIssUnitCode": {
+          "meaning": "开票登记明细表单位id"
+        },
+        "invoIssDetInvoIssUpdateTime": {
+          "meaning": "开票登记明细表更新时间"
+        },
+        "invoIssDetInvoIssUpdater": {
+          "meaning": "开票登记明细表更新人"
+        },
+        "invoIssDetInvoIssUpdaterId": {
+          "meaning": "开票登记明细表更新人ID"
+        },
+        "invoIssDetInvoIssUserCode": {
+          "meaning": "开票登记明细表智能节点的唯一编码"
+        },
+        "invoIssDetInvoIssVarExtra1": {
+          "meaning": "开票登记明细表扩展1"
+        },
+        "invoIssDetInvoIssVarExtra2": {
+          "meaning": "开票登记明细表扩展2"
+        },
+        "invoIssDetInvoIssVarExtra3": {
+          "meaning": "开票登记明细表扩展3"
+        },
+        "invoIssDetInvoIssVarExtra4": {
+          "meaning": "开票登记明细表扩展4"
+        },
+        "invoIssDetInvoIssVarExtra5": {
+          "meaning": "开票登记明细表扩展5"
+        },
+        "invoIssDetInvoIssVersion": {
+          "meaning": "开票登记明细表版本号"
+        },
+        "invoIssDetInvoiceQuantity": {
+          "meaning": "开票登记明细表开票数量"
+        },
+        "invoIssDetIsBanned": {
+          "meaning": "开票登记明细表是否被禁用"
+        },
+        "invoIssDetIsDeleted": {
+          "meaning": "开票登记明细表是否被删除"
+        },
+        "invoIssDetIsLeaf": {
+          "meaning": "开票登记明细表是否叶子节点"
+        },
+        "invoIssDetIsMainFlow": {
+          "meaning": "开票登记明细表是否是主流程"
+        },
+        "invoIssDetIsManualModificationDate": {
+          "meaning": "开票登记明细表是否手动修改计划生产时间"
+        },
+        "invoIssDetIsolation": {
+          "meaning": "开票登记明细表智能节点数据隔离标识"
+        },
+        "invoIssDetJsScript": {
+          "meaning": "开票登记明细表js脚本"
+        },
+        "invoIssDetLocalAmount": {
+          "meaning": "开票登记明细表本币金额"
+        },
+        "invoIssDetMaterialId": {
+          "meaning": "开票登记明细表物料id"
+        },
+        "invoIssDetName": {
+          "meaning": "开票登记明细表智能节点名"
+        },
+        "invoIssDetNameCodeSearch": {
+          "meaning": "开票登记明细表name、user de模糊搜索"
+        },
+        "invoIssDetNumberExtra1": {
+          "meaning": "开票登记明细表扩展数量1"
+        },
+        "invoIssDetNumberExtra2": {
+          "meaning": "开票登记明细表扩展数量2"
+        },
+        "invoIssDetNumberExtra3": {
+          "meaning": "开票登记明细表扩展数量3"
+        },
+        "invoIssDetNumberExtra4": {
+          "meaning": "开票登记明细表扩展数量4"
+        },
+        "invoIssDetNumberExtra5": {
+          "meaning": "开票登记明细表扩展数量5"
+        },
+        "invoIssDetParentId": {
+          "meaning": "开票登记明细表父节点ID"
+        },
+        "invoIssDetPlannedOutputQuantity": {
+          "meaning": "开票登记明细表计划产出数量"
+        },
+        "invoIssDetPlannedTimeRequired": {
+          "meaning": "开票登记明细表计划需时(小时)"
+        },
+        "invoIssDetPrintTimes": {
+          "meaning": "开票登记明细表打印次数"
+        },
+        "invoIssDetPriority": {
+          "meaning": "开票登记明细表优先级"
+        },
+        "invoIssDetProcessInstanceId": {
+          "meaning": "开票登记明细表流程实例ID"
+        },
+        "invoIssDetProductionProcessesTypeId": {
+          "meaning": "开票登记明细表工序类型ID"
+        },
+        "invoIssDetProductionShiftId": {
+          "meaning": "开票登记明细表生产班次ID"
+        },
+        "invoIssDetQuantity": {
+          "meaning": "开票登记明细表任务数量"
+        },
+        "invoIssDetReceiptDate": {
+          "meaning": "开票登记明细表单据日期"
+        },
+        "invoIssDetReceiptType": {
+          "meaning": "开票登记明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "invoIssDetRelatedTasksId": {
+          "meaning": "开票登记明细表关联任务id"
+        },
+        "invoIssDetSerialNumber": {
+          "meaning": "开票登记明细表顺序号"
+        },
+        "invoIssDetSource": {
+          "meaning": "开票登记明细表源"
+        },
+        "invoIssDetSourceType": {
+          "meaning": "开票登记明细表来源类型"
+        },
+        "invoIssDetState": {
+          "meaning": "开票登记明细表通用状态"
+        },
+        "invoIssDetSystemCode": {
+          "meaning": "开票登记明细表系统编码"
+        },
+        "invoIssDetTarget": {
+          "meaning": "开票登记明细表目标"
+        },
+        "invoIssDetTaskNodeName": {
+          "meaning": "开票登记明细表任务节点名称"
+        },
+        "invoIssDetTenantId": {
+          "meaning": "开票登记明细表租户_id"
+        },
+        "invoIssDetThirdPartyClass": {
+          "meaning": "开票登记明细表第三方分类"
+        },
+        "invoIssDetThirdPartyId": {
+          "meaning": "开票登记明细表第三方系统中的唯一ID"
+        },
+        "invoIssDetThirdPartyName": {
+          "meaning": "开票登记明细表第三方名称"
+        },
+        "invoIssDetToAuditDate": {
+          "meaning": "invoIssDetToAuditDate"
+        },
+        "invoIssDetToBeginTime": {
+          "meaning": "invoIssDetToBeginTime"
+        },
+        "invoIssDetToCreateTime": {
+          "meaning": "invoIssDetToCreateTime"
+        },
+        "invoIssDetToDateExtra1": {
+          "meaning": "invoIssDetToDateExtra1"
+        },
+        "invoIssDetToDateExtra2": {
+          "meaning": "invoIssDetToDateExtra2"
+        },
+        "invoIssDetToDateExtra3": {
+          "meaning": "invoIssDetToDateExtra3"
+        },
+        "invoIssDetToDateExtra4": {
+          "meaning": "invoIssDetToDateExtra4"
+        },
+        "invoIssDetToDateExtra5": {
+          "meaning": "invoIssDetToDateExtra5"
+        },
+        "invoIssDetToDeliveryDate": {
+          "meaning": "invoIssDetToDeliveryDate"
+        },
+        "invoIssDetToEndTime": {
+          "meaning": "invoIssDetToEndTime"
+        },
+        "invoIssDetToReceiptDate": {
+          "meaning": "invoIssDetToReceiptDate"
+        },
+        "invoIssDetToUpdateTime": {
+          "meaning": "invoIssDetToUpdateTime"
+        },
+        "invoIssDetUnitCode": {
+          "meaning": "开票登记明细表单位id"
+        },
+        "invoIssDetUpdateTime": {
+          "meaning": "开票登记明细表更新时间"
+        },
+        "invoIssDetUpdater": {
+          "meaning": "开票登记明细表更新人"
+        },
+        "invoIssDetUpdaterId": {
+          "meaning": "开票登记明细表更新人ID"
+        },
+        "invoIssDetUserCode": {
+          "meaning": "开票登记明细表智能节点的唯一编码"
+        },
+        "invoIssDetVarExtra1": {
+          "meaning": "开票登记明细表扩展1"
+        },
+        "invoIssDetVarExtra2": {
+          "meaning": "开票登记明细表扩展2"
+        },
+        "invoIssDetVarExtra3": {
+          "meaning": "开票登记明细表扩展3"
+        },
+        "invoIssDetVarExtra4": {
+          "meaning": "开票登记明细表扩展4"
+        },
+        "invoIssDetVarExtra5": {
+          "meaning": "开票登记明细表扩展5"
+        },
+        "invoIssDetVersion": {
+          "meaning": "开票登记明细表版本号"
+        }
+      }
+    }

@@ -1,0 +1,239 @@
+{
+      "api_name": "/inv-type/findList",
+      "table_name": "发票类型",
+      "request": {
+        "invTypeClazz": "INVOICE_TYPE"
+      },
+      "mainTabClazz": "INVOICE_TYPE",
+      "response": {
+        "invTypeApplicationId": {
+          "meaning": "发票类型应用ID"
+        },
+        "invTypeAuditDate": {
+          "meaning": "发票类型审核时间"
+        },
+        "invTypeAuditStatus": {
+          "meaning": "发票类型审核状态"
+        },
+        "invTypeBizVersion": {
+          "meaning": "发票类型业务自定义版本号"
+        },
+        "invTypeBriefName": {
+          "meaning": "发票类型简称"
+        },
+        "invTypeBusDivisId": {
+          "meaning": "发票类型事业部id"
+        },
+        "invTypeClazz": {
+          "meaning": "发票类型子类 类名（表和类一一对应）"
+        },
+        "invTypeComment": {
+          "meaning": "发票类型评论"
+        },
+        "invTypeCreateTime": {
+          "meaning": "发票类型创建时间"
+        },
+        "invTypeCreator": {
+          "meaning": "发票类型创建人"
+        },
+        "invTypeCreatorId": {
+          "meaning": "发票类型创建人ID"
+        },
+        "invTypeDateExtra1": {
+          "meaning": "发票类型扩展时间1"
+        },
+        "invTypeDateExtra2": {
+          "meaning": "发票类型扩展时间2"
+        },
+        "invTypeDateExtra3": {
+          "meaning": "发票类型扩展时间3"
+        },
+        "invTypeDateExtra4": {
+          "meaning": "发票类型扩展时间4"
+        },
+        "invTypeDateExtra5": {
+          "meaning": "发票类型扩展时间5"
+        },
+        "invTypeDefaultType": {
+          "meaning": "发票类型智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "invTypeDescription": {
+          "meaning": "发票类型描述"
+        },
+        "invTypeEngName": {
+          "meaning": "发票类型英文名称"
+        },
+        "invTypeExtension": {
+          "meaning": "发票类型扩展数据"
+        },
+        "invTypeExternalState": {
+          "meaning": "发票类型上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invTypeFlags": {
+          "meaning": "发票类型63位标志位"
+        },
+        "invTypeFromAuditDate": {
+          "meaning": "invTypeFromAuditDate"
+        },
+        "invTypeFromCreateTime": {
+          "meaning": "invTypeFromCreateTime"
+        },
+        "invTypeFromDateExtra1": {
+          "meaning": "invTypeFromDateExtra1"
+        },
+        "invTypeFromDateExtra2": {
+          "meaning": "invTypeFromDateExtra2"
+        },
+        "invTypeFromDateExtra3": {
+          "meaning": "invTypeFromDateExtra3"
+        },
+        "invTypeFromDateExtra4": {
+          "meaning": "invTypeFromDateExtra4"
+        },
+        "invTypeFromDateExtra5": {
+          "meaning": "invTypeFromDateExtra5"
+        },
+        "invTypeFromUpdateTime": {
+          "meaning": "invTypeFromUpdateTime"
+        },
+        "invTypeGroovyScript": {
+          "meaning": "发票类型groovy脚本"
+        },
+        "invTypeGropeCode": {
+          "meaning": "发票类型搜索码"
+        },
+        "invTypeId": {
+          "meaning": "发票类型主键ID",
+          "is_primary": true
+        },
+        "invTypeInUsed": {
+          "meaning": "发票类型是否被使用"
+        },
+        "invTypeIsBanned": {
+          "meaning": "发票类型是否被禁用"
+        },
+        "invTypeIsDeleted": {
+          "meaning": "发票类型是否被删除"
+        },
+        "invTypeIsMainFlow": {
+          "meaning": "发票类型是否是主流程"
+        },
+        "invTypeIsUsed": {
+          "meaning": "发票类型是否使用"
+        },
+        "invTypeIsolation": {
+          "meaning": "发票类型智能节点数据隔离标识"
+        },
+        "invTypeJsScript": {
+          "meaning": "发票类型js脚本"
+        },
+        "invTypeName": {
+          "meaning": "发票类型智能节点名"
+        },
+        "invTypeNameCodeSearch": {
+          "meaning": "发票类型name、user_code模糊搜索"
+        },
+        "invTypeNumberExtra1": {
+          "meaning": "发票类型扩展数量1"
+        },
+        "invTypeNumberExtra2": {
+          "meaning": "发票类型扩展数量2"
+        },
+        "invTypeNumberExtra3": {
+          "meaning": "发票类型扩展数量3"
+        },
+        "invTypeNumberExtra4": {
+          "meaning": "发票类型扩展数量4"
+        },
+        "invTypeNumberExtra5": {
+          "meaning": "发票类型扩展数量5"
+        },
+        "invTypeParentClassificationGuid": {
+          "meaning": "invTypeParentClassificationGuid"
+        },
+        "invTypeParentId": {
+          "meaning": "发票类型父节点ID"
+        },
+        "invTypeProcessInstanceId": {
+          "meaning": "发票类型流程实例ID"
+        },
+        "invTypeSerialNumber": {
+          "meaning": "发票类型顺序号"
+        },
+        "invTypeState": {
+          "meaning": "发票类型状态"
+        },
+        "invTypeSystemCode": {
+          "meaning": "发票类型系统编码"
+        },
+        "invTypeTaskNodeName": {
+          "meaning": "发票类型任务节点名称"
+        },
+        "invTypeTenantId": {
+          "meaning": "发票类型租户id"
+        },
+        "invTypeThirdPartyClass": {
+          "meaning": "发票类型第三方分类"
+        },
+        "invTypeThirdPartyId": {
+          "meaning": "发票类型第三方系统中的唯一ID"
+        },
+        "invTypeThirdPartyName": {
+          "meaning": "发票类型第三方名称"
+        },
+        "invTypeToAuditDate": {
+          "meaning": "invTypeToAuditDate"
+        },
+        "invTypeToCreateTime": {
+          "meaning": "invTypeToCreateTime"
+        },
+        "invTypeToDateExtra1": {
+          "meaning": "invTypeToDateExtra1"
+        },
+        "invTypeToDateExtra2": {
+          "meaning": "invTypeToDateExtra2"
+        },
+        "invTypeToDateExtra3": {
+          "meaning": "invTypeToDateExtra3"
+        },
+        "invTypeToDateExtra4": {
+          "meaning": "invTypeToDateExtra4"
+        },
+        "invTypeToDateExtra5": {
+          "meaning": "invTypeToDateExtra5"
+        },
+        "invTypeToUpdateTime": {
+          "meaning": "invTypeToUpdateTime"
+        },
+        "invTypeUpdateTime": {
+          "meaning": "发票类型更新时间"
+        },
+        "invTypeUpdater": {
+          "meaning": "发票类型更新人"
+        },
+        "invTypeUpdaterId": {
+          "meaning": "发票类型更新人ID"
+        },
+        "invTypeUserCode": {
+          "meaning": "发票类型智能节点的唯一编码"
+        },
+        "invTypeVarExtra1": {
+          "meaning": "发票类型扩展1"
+        },
+        "invTypeVarExtra2": {
+          "meaning": "发票类型扩展2"
+        },
+        "invTypeVarExtra3": {
+          "meaning": "发票类型扩展3"
+        },
+        "invTypeVarExtra4": {
+          "meaning": "发票类型扩展4"
+        },
+        "invTypeVarExtra5": {
+          "meaning": "发票类型扩展5"
+        },
+        "invTypeVersion": {
+          "meaning": "发票类型版本号"
+        }
+      }
+    }

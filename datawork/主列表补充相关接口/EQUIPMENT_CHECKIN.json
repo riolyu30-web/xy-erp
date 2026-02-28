@@ -1,0 +1,374 @@
+{
+  "api_name" : "/equipment-checkin/findList",
+  "table_name" : "上机登记表",
+  "request" : {
+    "equipmentCheckinClazz" : "EQUIPMENT_CHECKIN"
+  },
+  "mainTabClazz" : "EQUIPMENT_CHECKIN",
+  "response" : {
+    "equipmentCheckinActualTimeRequired" : {
+      "meaning" : "上机登记表实际需时(小时)"
+    },
+    "equipmentCheckinAdjustmentTimeRequired" : {
+      "meaning" : "上机登记表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "equipmentCheckinApplicationId" : {
+      "meaning" : "上机登记表应用ID"
+    },
+    "equipmentCheckinAuditDate" : {
+      "meaning" : "上机登记表审核时间"
+    },
+    "equipmentCheckinAuditStatus" : {
+      "meaning" : "上机登记表审核状态"
+    },
+    "equipmentCheckinAvailableScheduleId" : {
+      "meaning" : "上机登记表可用日程id"
+    },
+    "equipmentCheckinBeginTime" : {
+      "meaning" : "上机登记表开始时间"
+    },
+    "equipmentCheckinBizVersion" : {
+      "meaning" : "上机登记表业务自定义版本号"
+    },
+    "equipmentCheckinBriefName" : {
+      "meaning" : "上机登记表简称"
+    },
+    "equipmentCheckinBusDivisId" : {
+      "meaning" : "上机登记表事业部id"
+    },
+    "equipmentCheckinClazz" : {
+      "meaning" : "上机登记表子类 类名（表和类一一对应）"
+    },
+    "equipmentCheckinClosedReason" : {
+      "meaning" : "上机登记表结案原因"
+    },
+    "equipmentCheckinClosedStatus" : {
+      "meaning" : "上机登记表结案状态"
+    },
+    "equipmentCheckinComment" : {
+      "meaning" : "上机登记表评论"
+    },
+    "equipmentCheckinCompleteQuantity" : {
+      "meaning" : "上机登记表完成数量"
+    },
+    "equipmentCheckinCompleteStatus" : {
+      "meaning" : "上机登记表完成状态"
+    },
+    "equipmentCheckinCreateTime" : {
+      "meaning" : "上机登记表创建时间"
+    },
+    "equipmentCheckinCreator" : {
+      "meaning" : "上机登记表创建人"
+    },
+    "equipmentCheckinCreatorId" : {
+      "meaning" : "上机登记表创建人ID"
+    },
+    "equipmentCheckinDateExtra1" : {
+      "meaning" : "上机登记表扩展时间1"
+    },
+    "equipmentCheckinDateExtra2" : {
+      "meaning" : "上机登记表扩展时间2"
+    },
+    "equipmentCheckinDateExtra3" : {
+      "meaning" : "上机登记表扩展时间3"
+    },
+    "equipmentCheckinDateExtra4" : {
+      "meaning" : "上机登记表扩展时间4"
+    },
+    "equipmentCheckinDateExtra5" : {
+      "meaning" : "上机登记表扩展时间5"
+    },
+    "equipmentCheckinDefaultType" : {
+      "meaning" : "上机登记表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "equipmentCheckinDeliveryDate" : {
+      "meaning" : "上机登记表交货日期"
+    },
+    "equipmentCheckinDescription" : {
+      "meaning" : "上机登记表描述"
+    },
+    "equipmentCheckinEndTime" : {
+      "meaning" : "上机登记表结束时间"
+    },
+    "equipmentCheckinEndTimeRequired" : {
+      "meaning" : "上机登记表最后需时(小时)"
+    },
+    "equipmentCheckinEngName" : {
+      "meaning" : "上机登记表英文名称"
+    },
+    "equipmentCheckinEquipmentId" : {
+      "meaning" : "上机登记表设备id"
+    },
+    "equipmentCheckinExchangeRateId" : {
+      "meaning" : "上机登记表币种汇率id"
+    },
+    "equipmentCheckinExtension" : {
+      "meaning" : "上机登记表扩展数据"
+    },
+    "equipmentCheckinExternalState" : {
+      "meaning" : "上机登记表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "equipmentCheckinFilterClazz" : {
+      "meaning" : "上机登记表冗余字段用于筛选"
+    },
+    "equipmentCheckinFlags" : {
+      "meaning" : "上机登记表63位标志位"
+    },
+    "equipmentCheckinFromAuditDate" : {
+      "meaning" : "equipmentCheckinFromAuditDate"
+    },
+    "equipmentCheckinFromBeginTime" : {
+      "meaning" : "equipmentCheckinFromBeginTime"
+    },
+    "equipmentCheckinFromCreateTime" : {
+      "meaning" : "equipmentCheckinFromCreateTime"
+    },
+    "equipmentCheckinFromDateExtra1" : {
+      "meaning" : "equipmentCheckinFromDateExtra1"
+    },
+    "equipmentCheckinFromDateExtra2" : {
+      "meaning" : "equipmentCheckinFromDateExtra2"
+    },
+    "equipmentCheckinFromDateExtra3" : {
+      "meaning" : "equipmentCheckinFromDateExtra3"
+    },
+    "equipmentCheckinFromDateExtra4" : {
+      "meaning" : "equipmentCheckinFromDateExtra4"
+    },
+    "equipmentCheckinFromDateExtra5" : {
+      "meaning" : "equipmentCheckinFromDateExtra5"
+    },
+    "equipmentCheckinFromDeliveryDate" : {
+      "meaning" : "equipmentCheckinFromDeliveryDate"
+    },
+    "equipmentCheckinFromEndTime" : {
+      "meaning" : "equipmentCheckinFromEndTime"
+    },
+    "equipmentCheckinFromReceiptDate" : {
+      "meaning" : "equipmentCheckinFromReceiptDate"
+    },
+    "equipmentCheckinFromUpdateTime" : {
+      "meaning" : "equipmentCheckinFromUpdateTime"
+    },
+    "equipmentCheckinFscType" : {
+      "meaning" : "上机登记表FSC声明"
+    },
+    "equipmentCheckinGenerativePeople" : {
+      "meaning" : "上机登记表下发人"
+    },
+    "equipmentCheckinGenerativeState" : {
+      "meaning" : "上机登记表下发状态"
+    },
+    "equipmentCheckinGroovyScript" : {
+      "meaning" : "上机登记表groovy脚本"
+    },
+    "equipmentCheckinGropeCode" : {
+      "meaning" : "上机登记表搜索码"
+    },
+    "equipmentCheckinId" : {
+      "meaning" : "上机登记表主键",
+      "is_primary" : true
+    },
+    "equipmentCheckinInUsed" : {
+      "meaning" : "上机登记表是否被使用"
+    },
+    "equipmentCheckinInvTypeTaxRateId" : {
+      "meaning" : "上机登记表发票税率id"
+    },
+    "equipmentCheckinIsBanned" : {
+      "meaning" : "上机登记表是否被禁用"
+    },
+    "equipmentCheckinIsDeleted" : {
+      "meaning" : "上机登记表是否被删除"
+    },
+    "equipmentCheckinIsLeaf" : {
+      "meaning" : "上机登记表是否叶子节点"
+    },
+    "equipmentCheckinIsMainFlow" : {
+      "meaning" : "上机登记表是否是主流程"
+    },
+    "equipmentCheckinIsManualModificationDate" : {
+      "meaning" : "上机登记表是否手动修改计划生产时间"
+    },
+    "equipmentCheckinIsolation" : {
+      "meaning" : "上机登记表智能节点数据隔离标识"
+    },
+    "equipmentCheckinJsScript" : {
+      "meaning" : "上机登记表js脚本"
+    },
+    "equipmentCheckinMaterialId" : {
+      "meaning" : "上机登记表物料id"
+    },
+    "equipmentCheckinName" : {
+      "meaning" : "上机登记表智能节点名"
+    },
+    "equipmentCheckinNameCodeSearch" : {
+      "meaning" : "上机登记表name、user_code模糊搜索"
+    },
+    "equipmentCheckinNumberExtra1" : {
+      "meaning" : "上机登记表扩展数量1"
+    },
+    "equipmentCheckinNumberExtra2" : {
+      "meaning" : "上机登记表扩展数量2"
+    },
+    "equipmentCheckinNumberExtra3" : {
+      "meaning" : "上机登记表扩展数量3"
+    },
+    "equipmentCheckinNumberExtra4" : {
+      "meaning" : "上机登记表扩展数量4"
+    },
+    "equipmentCheckinNumberExtra5" : {
+      "meaning" : "上机登记表扩展数量5"
+    },
+    "equipmentCheckinParentId" : {
+      "meaning" : "上机登记表父节点ID"
+    },
+    "equipmentCheckinPlannedOutputQuantity" : {
+      "meaning" : "上机登记表计划产出数量"
+    },
+    "equipmentCheckinPlannedTimeRequired" : {
+      "meaning" : "上机登记表计划需时(小时)"
+    },
+    "equipmentCheckinPrintTimes" : {
+      "meaning" : "上机登记表打印次数"
+    },
+    "equipmentCheckinPriority" : {
+      "meaning" : "上机登记表优先级"
+    },
+    "equipmentCheckinProcessInstanceId" : {
+      "meaning" : "上机登记表流程实例ID"
+    },
+    "equipmentCheckinProductionProcessesTypeId" : {
+      "meaning" : "上机登记表工序类型ID"
+    },
+    "equipmentCheckinProductionShiftId" : {
+      "meaning" : "上机登记表生产班次ID"
+    },
+    "equipmentCheckinQuantity" : {
+      "meaning" : "上机登记表任务数量"
+    },
+    "equipmentCheckinReceiptDate" : {
+      "meaning" : "上机登记表单据日期"
+    },
+    "equipmentCheckinReceiptType" : {
+      "meaning" : "上机登记表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "equipmentCheckinRelatedTasksId" : {
+      "meaning" : "上机登记表关联任务id"
+    },
+    "equipmentCheckinSerialNumber" : {
+      "meaning" : "上机登记表顺序号"
+    },
+    "equipmentCheckinShiftId" : {
+      "meaning" : "上机登记表班次id"
+    },
+    "equipmentCheckinSource" : {
+      "meaning" : "上机登记表源"
+    },
+    "equipmentCheckinSourceType" : {
+      "meaning" : "上机登记表来源类型"
+    },
+    "equipmentCheckinStaffId" : {
+      "meaning" : "上机登记表员工id"
+    },
+    "equipmentCheckinState" : {
+      "meaning" : "上机登记表通用状态"
+    },
+    "equipmentCheckinSystemCode" : {
+      "meaning" : "上机登记表系统编码"
+    },
+    "equipmentCheckinTarget" : {
+      "meaning" : "上机登记表目标"
+    },
+    "equipmentCheckinTaskNodeName" : {
+      "meaning" : "上机登记表任务节点名称"
+    },
+    "equipmentCheckinTeamId" : {
+      "meaning" : "上机登记表班组id"
+    },
+    "equipmentCheckinTemporaryEmployee" : {
+      "meaning" : "上机登记表临时员工"
+    },
+    "equipmentCheckinTenantId" : {
+      "meaning" : "上机登记表租户ID"
+    },
+    "equipmentCheckinThirdPartyClass" : {
+      "meaning" : "上机登记表第三方分类"
+    },
+    "equipmentCheckinThirdPartyId" : {
+      "meaning" : "上机登记表第三方系统中的唯一ID"
+    },
+    "equipmentCheckinThirdPartyName" : {
+      "meaning" : "上机登记表第三方名称"
+    },
+    "equipmentCheckinToAuditDate" : {
+      "meaning" : "equipmentCheckinToAuditDate"
+    },
+    "equipmentCheckinToBeginTime" : {
+      "meaning" : "equipmentCheckinToBeginTime"
+    },
+    "equipmentCheckinToCreateTime" : {
+      "meaning" : "equipmentCheckinToCreateTime"
+    },
+    "equipmentCheckinToDateExtra1" : {
+      "meaning" : "equipmentCheckinToDateExtra1"
+    },
+    "equipmentCheckinToDateExtra2" : {
+      "meaning" : "equipmentCheckinToDateExtra2"
+    },
+    "equipmentCheckinToDateExtra3" : {
+      "meaning" : "equipmentCheckinToDateExtra3"
+    },
+    "equipmentCheckinToDateExtra4" : {
+      "meaning" : "equipmentCheckinToDateExtra4"
+    },
+    "equipmentCheckinToDateExtra5" : {
+      "meaning" : "equipmentCheckinToDateExtra5"
+    },
+    "equipmentCheckinToDeliveryDate" : {
+      "meaning" : "equipmentCheckinToDeliveryDate"
+    },
+    "equipmentCheckinToEndTime" : {
+      "meaning" : "equipmentCheckinToEndTime"
+    },
+    "equipmentCheckinToReceiptDate" : {
+      "meaning" : "equipmentCheckinToReceiptDate"
+    },
+    "equipmentCheckinToUpdateTime" : {
+      "meaning" : "equipmentCheckinToUpdateTime"
+    },
+    "equipmentCheckinUnitCode" : {
+      "meaning" : "上机登记表单位id"
+    },
+    "equipmentCheckinUpdateTime" : {
+      "meaning" : "上机登记表更新时间"
+    },
+    "equipmentCheckinUpdater" : {
+      "meaning" : "上机登记表更新人"
+    },
+    "equipmentCheckinUpdaterId" : {
+      "meaning" : "上机登记表更新人ID"
+    },
+    "equipmentCheckinUserCode" : {
+      "meaning" : "上机登记表智能节点的唯一编码"
+    },
+    "equipmentCheckinVarExtra1" : {
+      "meaning" : "上机登记表扩展1"
+    },
+    "equipmentCheckinVarExtra2" : {
+      "meaning" : "上机登记表扩展2"
+    },
+    "equipmentCheckinVarExtra3" : {
+      "meaning" : "上机登记表扩展3"
+    },
+    "equipmentCheckinVarExtra4" : {
+      "meaning" : "上机登记表扩展4"
+    },
+    "equipmentCheckinVarExtra5" : {
+      "meaning" : "上机登记表扩展5"
+    },
+    "equipmentCheckinVersion" : {
+      "meaning" : "上机登记表版本号"
+    }
+  }
+}

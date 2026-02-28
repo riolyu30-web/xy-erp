@@ -1,0 +1,236 @@
+{
+      "api_name": "/customer-level/findList",
+      "table_name": "客户级别表",
+      "request": {
+        "customerLevelClazz": "CUSTOMER_LEVEL"
+      },
+      "mainTabClazz": "CUSTOMER_LEVEL",
+      "response": {
+        "customerLevelApplicationId": {
+          "meaning": "客户级别表应用ID"
+        },
+        "customerLevelAuditDate": {
+          "meaning": "客户级别表审核时间"
+        },
+        "customerLevelAuditStatus": {
+          "meaning": "客户级别表审核状态"
+        },
+        "customerLevelBillingPeriod": {
+          "meaning": "客户级别表账期"
+        },
+        "customerLevelBizVersion": {
+          "meaning": "客户级别表业务自定义版本号"
+        },
+        "customerLevelBriefName": {
+          "meaning": "客户级别表简称"
+        },
+        "customerLevelBusDivisId": {
+          "meaning": "客户级别表事业部id"
+        },
+        "customerLevelClazz": {
+          "meaning": "客户级别表子类 类名（表和类一一对应）"
+        },
+        "customerLevelComment": {
+          "meaning": "客户级别表评论"
+        },
+        "customerLevelCreateTime": {
+          "meaning": "客户级别表创建时间"
+        },
+        "customerLevelCreator": {
+          "meaning": "客户级别表创建人"
+        },
+        "customerLevelCreatorId": {
+          "meaning": "客户级别表创建人ID"
+        },
+        "customerLevelDateExtra1": {
+          "meaning": "客户级别表扩展时间1"
+        },
+        "customerLevelDateExtra2": {
+          "meaning": "客户级别表扩展时间2"
+        },
+        "customerLevelDateExtra3": {
+          "meaning": "客户级别表扩展时间3"
+        },
+        "customerLevelDateExtra4": {
+          "meaning": "客户级别表扩展时间4"
+        },
+        "customerLevelDateExtra5": {
+          "meaning": "客户级别表扩展时间5"
+        },
+        "customerLevelDefaultType": {
+          "meaning": "客户级别表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "customerLevelDescription": {
+          "meaning": "客户级别表描述"
+        },
+        "customerLevelEngName": {
+          "meaning": "客户级别表英文名称"
+        },
+        "customerLevelExtension": {
+          "meaning": "客户级别表扩展数据"
+        },
+        "customerLevelExternalState": {
+          "meaning": "客户级别表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "customerLevelFlags": {
+          "meaning": "客户级别表63位标志位"
+        },
+        "customerLevelFromAuditDate": {
+          "meaning": "customerLevelFromAuditDate"
+        },
+        "customerLevelFromCreateTime": {
+          "meaning": "customerLevelFromCreateTime"
+        },
+        "customerLevelFromDateExtra1": {
+          "meaning": "customerLevelFromDateExtra1"
+        },
+        "customerLevelFromDateExtra2": {
+          "meaning": "customerLevelFromDateExtra2"
+        },
+        "customerLevelFromDateExtra3": {
+          "meaning": "customerLevelFromDateExtra3"
+        },
+        "customerLevelFromDateExtra4": {
+          "meaning": "customerLevelFromDateExtra4"
+        },
+        "customerLevelFromDateExtra5": {
+          "meaning": "customerLevelFromDateExtra5"
+        },
+        "customerLevelFromUpdateTime": {
+          "meaning": "customerLevelFromUpdateTime"
+        },
+        "customerLevelGroovyScript": {
+          "meaning": "客户级别表groovy脚本"
+        },
+        "customerLevelGropeCode": {
+          "meaning": "客户级别表搜索码"
+        },
+        "customerLevelId": {
+          "meaning": "客户级别表PK",
+          "is_primary": true
+        },
+        "customerLevelInUsed": {
+          "meaning": "客户级别表是否被使用"
+        },
+        "customerLevelIsBanned": {
+          "meaning": "客户级别表是否被禁用"
+        },
+        "customerLevelIsDeleted": {
+          "meaning": "客户级别表是否被删除"
+        },
+        "customerLevelIsMainFlow": {
+          "meaning": "客户级别表是否是主流程"
+        },
+        "customerLevelIsolation": {
+          "meaning": "客户级别表智能节点数据隔离标识"
+        },
+        "customerLevelJsScript": {
+          "meaning": "客户级别表js脚本"
+        },
+        "customerLevelName": {
+          "meaning": "客户级别表智能节点名"
+        },
+        "customerLevelNameCodeSearch": {
+          "meaning": "客户级别表name、user_code模糊搜索"
+        },
+        "customerLevelNumberExtra1": {
+          "meaning": "客户级别表扩展数量1"
+        },
+        "customerLevelNumberExtra2": {
+          "meaning": "客户级别表扩展数量2"
+        },
+        "customerLevelNumberExtra3": {
+          "meaning": "客户级别表扩展数量3"
+        },
+        "customerLevelNumberExtra4": {
+          "meaning": "客户级别表扩展数量4"
+        },
+        "customerLevelNumberExtra5": {
+          "meaning": "客户级别表扩展数量5"
+        },
+        "customerLevelParentId": {
+          "meaning": "客户级别表父节点ID"
+        },
+        "customerLevelProcessInstanceId": {
+          "meaning": "客户级别表流程实例ID"
+        },
+        "customerLevelSerialNumber": {
+          "meaning": "客户级别表顺序号"
+        },
+        "customerLevelState": {
+          "meaning": "客户级别表通用状态"
+        },
+        "customerLevelSystemCode": {
+          "meaning": "客户级别表系统编码"
+        },
+        "customerLevelTaskNodeName": {
+          "meaning": "客户级别表任务节点名称"
+        },
+        "customerLevelTenantId": {
+          "meaning": "客户级别表租户_id"
+        },
+        "customerLevelThirdPartyClass": {
+          "meaning": "客户级别表第三方分类"
+        },
+        "customerLevelThirdPartyId": {
+          "meaning": "客户级别表第三方系统中的唯一ID"
+        },
+        "customerLevelThirdPartyName": {
+          "meaning": "客户级别表第三方名称"
+        },
+        "customerLevelToAuditDate": {
+          "meaning": "customerLevelToAuditDate"
+        },
+        "customerLevelToCreateTime": {
+          "meaning": "customerLevelToCreateTime"
+        },
+        "customerLevelToDateExtra1": {
+          "meaning": "customerLevelToDateExtra1"
+        },
+        "customerLevelToDateExtra2": {
+          "meaning": "customerLevelToDateExtra2"
+        },
+        "customerLevelToDateExtra3": {
+          "meaning": "customerLevelToDateExtra3"
+        },
+        "customerLevelToDateExtra4": {
+          "meaning": "customerLevelToDateExtra4"
+        },
+        "customerLevelToDateExtra5": {
+          "meaning": "customerLevelToDateExtra5"
+        },
+        "customerLevelToUpdateTime": {
+          "meaning": "customerLevelToUpdateTime"
+        },
+        "customerLevelUpdateTime": {
+          "meaning": "客户级别表更新时间"
+        },
+        "customerLevelUpdater": {
+          "meaning": "客户级别表更新人"
+        },
+        "customerLevelUpdaterId": {
+          "meaning": "客户级别表更新人ID"
+        },
+        "customerLevelUserCode": {
+          "meaning": "客户级别表智能节点的唯一编码"
+        },
+        "customerLevelVarExtra1": {
+          "meaning": "客户级别表扩展1"
+        },
+        "customerLevelVarExtra2": {
+          "meaning": "客户级别表扩展2"
+        },
+        "customerLevelVarExtra3": {
+          "meaning": "客户级别表扩展3"
+        },
+        "customerLevelVarExtra4": {
+          "meaning": "客户级别表扩展4"
+        },
+        "customerLevelVarExtra5": {
+          "meaning": "客户级别表扩展5"
+        },
+        "customerLevelVersion": {
+          "meaning": "客户级别表版本号"
+        }
+      }
+    }

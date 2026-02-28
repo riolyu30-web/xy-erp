@@ -1,0 +1,765 @@
+{
+  "api_name" : "/mod-inwarehouse-det/findList",
+  "table_name" : "模具入仓明细表",
+  "request" : {
+    "modInwarehouseDetModInwarehouseClazz" : "MOD_INWAREHOUSE",
+    "modInwarehouseDetClazz" : "MOD_INWAREHOUSE_DET"
+  },
+  "mainTabClazz" : "MOD_INWAREHOUSE_DET",
+  "response" : {
+    "modInwarehouseDetActualTimeRequired" : {
+      "meaning" : "模具入仓明细表实际需时(小时)"
+    },
+    "modInwarehouseDetAdjustmentTimeRequired" : {
+      "meaning" : "模具入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modInwarehouseDetApplicationId" : {
+      "meaning" : "模具入仓明细表应用ID"
+    },
+    "modInwarehouseDetAuditDate" : {
+      "meaning" : "模具入仓明细表审核时间"
+    },
+    "modInwarehouseDetAuditStatus" : {
+      "meaning" : "模具入仓明细表审核状态"
+    },
+    "modInwarehouseDetAvailableScheduleId" : {
+      "meaning" : "模具入仓明细表可用日程id"
+    },
+    "modInwarehouseDetBeginTime" : {
+      "meaning" : "模具入仓明细表开始时间"
+    },
+    "modInwarehouseDetBizVersion" : {
+      "meaning" : "模具入仓明细表业务自定义版本号"
+    },
+    "modInwarehouseDetBriefName" : {
+      "meaning" : "模具入仓明细表简称"
+    },
+    "modInwarehouseDetBusDivisId" : {
+      "meaning" : "模具入仓明细表事业部id"
+    },
+    "modInwarehouseDetClazz" : {
+      "meaning" : "模具入仓明细表子类 类名（表和类一一对应）"
+    },
+    "modInwarehouseDetClosedReason" : {
+      "meaning" : "模具入仓明细表结案原因"
+    },
+    "modInwarehouseDetClosedStatus" : {
+      "meaning" : "模具入仓明细表结案状态"
+    },
+    "modInwarehouseDetComment" : {
+      "meaning" : "模具入仓明细表评论"
+    },
+    "modInwarehouseDetCompleteQuantity" : {
+      "meaning" : "模具入仓明细表完成数量"
+    },
+    "modInwarehouseDetCompleteStatus" : {
+      "meaning" : "模具入仓明细表完成状态"
+    },
+    "modInwarehouseDetCreateTime" : {
+      "meaning" : "模具入仓明细表创建时间"
+    },
+    "modInwarehouseDetCreator" : {
+      "meaning" : "模具入仓明细表创建人"
+    },
+    "modInwarehouseDetCreatorId" : {
+      "meaning" : "模具入仓明细表创建人ID"
+    },
+    "modInwarehouseDetDateExtra1" : {
+      "meaning" : "模具入仓明细表扩展时间1"
+    },
+    "modInwarehouseDetDateExtra2" : {
+      "meaning" : "模具入仓明细表扩展时间2"
+    },
+    "modInwarehouseDetDateExtra3" : {
+      "meaning" : "模具入仓明细表扩展时间3"
+    },
+    "modInwarehouseDetDateExtra4" : {
+      "meaning" : "模具入仓明细表扩展时间4"
+    },
+    "modInwarehouseDetDateExtra5" : {
+      "meaning" : "模具入仓明细表扩展时间5"
+    },
+    "modInwarehouseDetDefaultType" : {
+      "meaning" : "模具入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modInwarehouseDetDeliveryDate" : {
+      "meaning" : "模具入仓明细表交货日期"
+    },
+    "modInwarehouseDetDescription" : {
+      "meaning" : "模具入仓明细表描述"
+    },
+    "modInwarehouseDetEndTime" : {
+      "meaning" : "模具入仓明细表结束时间"
+    },
+    "modInwarehouseDetEndTimeRequired" : {
+      "meaning" : "模具入仓明细表最后需时(小时)"
+    },
+    "modInwarehouseDetEngName" : {
+      "meaning" : "模具入仓明细表英文名称"
+    },
+    "modInwarehouseDetEquipmentId" : {
+      "meaning" : "模具入仓明细表设备id"
+    },
+    "modInwarehouseDetExchangeRateId" : {
+      "meaning" : "模具入仓明细表币种汇率id"
+    },
+    "modInwarehouseDetExtension" : {
+      "meaning" : "模具入仓明细表扩展数据"
+    },
+    "modInwarehouseDetExternalState" : {
+      "meaning" : "模具入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modInwarehouseDetFilterClazz" : {
+      "meaning" : "模具入仓明细表冗余字段用于筛选"
+    },
+    "modInwarehouseDetFlags" : {
+      "meaning" : "模具入仓明细表63位标志位"
+    },
+    "modInwarehouseDetFromAuditDate" : {
+      "meaning" : "modInwarehouseDetFromAuditDate"
+    },
+    "modInwarehouseDetFromBeginTime" : {
+      "meaning" : "modInwarehouseDetFromBeginTime"
+    },
+    "modInwarehouseDetFromCreateTime" : {
+      "meaning" : "modInwarehouseDetFromCreateTime"
+    },
+    "modInwarehouseDetFromDateExtra1" : {
+      "meaning" : "modInwarehouseDetFromDateExtra1"
+    },
+    "modInwarehouseDetFromDateExtra2" : {
+      "meaning" : "modInwarehouseDetFromDateExtra2"
+    },
+    "modInwarehouseDetFromDateExtra3" : {
+      "meaning" : "modInwarehouseDetFromDateExtra3"
+    },
+    "modInwarehouseDetFromDateExtra4" : {
+      "meaning" : "modInwarehouseDetFromDateExtra4"
+    },
+    "modInwarehouseDetFromDateExtra5" : {
+      "meaning" : "modInwarehouseDetFromDateExtra5"
+    },
+    "modInwarehouseDetFromDeliveryDate" : {
+      "meaning" : "modInwarehouseDetFromDeliveryDate"
+    },
+    "modInwarehouseDetFromEndTime" : {
+      "meaning" : "modInwarehouseDetFromEndTime"
+    },
+    "modInwarehouseDetFromReceiptDate" : {
+      "meaning" : "modInwarehouseDetFromReceiptDate"
+    },
+    "modInwarehouseDetFromUpdateTime" : {
+      "meaning" : "modInwarehouseDetFromUpdateTime"
+    },
+    "modInwarehouseDetFscType" : {
+      "meaning" : "模具入仓明细表FSC声明"
+    },
+    "modInwarehouseDetGenerativePeople" : {
+      "meaning" : "模具入仓明细表下发人"
+    },
+    "modInwarehouseDetGenerativeState" : {
+      "meaning" : "模具入仓明细表下发状态"
+    },
+    "modInwarehouseDetGoodsId" : {
+      "meaning" : "模具入仓明细表货（包）id"
+    },
+    "modInwarehouseDetGroovyScript" : {
+      "meaning" : "模具入仓明细表groovy脚本"
+    },
+    "modInwarehouseDetGropeCode" : {
+      "meaning" : "模具入仓明细表搜索码"
+    },
+    "modInwarehouseDetId" : {
+      "meaning" : "模具入仓明细表PK",
+      "is_primary" : true
+    },
+    "modInwarehouseDetInUsed" : {
+      "meaning" : "模具入仓明细表是否被使用"
+    },
+    "modInwarehouseDetInvTypeTaxRateId" : {
+      "meaning" : "模具入仓明细表发票税率id"
+    },
+    "modInwarehouseDetIsBanned" : {
+      "meaning" : "模具入仓明细表是否被禁用"
+    },
+    "modInwarehouseDetIsDeleted" : {
+      "meaning" : "模具入仓明细表是否被删除"
+    },
+    "modInwarehouseDetIsLeaf" : {
+      "meaning" : "模具入仓明细表是否叶子节点"
+    },
+    "modInwarehouseDetIsMainFlow" : {
+      "meaning" : "模具入仓明细表是否是主流程"
+    },
+    "modInwarehouseDetIsManualModificationDate" : {
+      "meaning" : "模具入仓明细表是否手动修改计划生产时间"
+    },
+    "modInwarehouseDetIsolation" : {
+      "meaning" : "模具入仓明细表智能节点数据隔离标识"
+    },
+    "modInwarehouseDetJsScript" : {
+      "meaning" : "模具入仓明细表js脚本"
+    },
+    "modInwarehouseDetLocalCurrencyTotalAmount" : {
+      "meaning" : "模具入仓明细表本币总金额"
+    },
+    "modInwarehouseDetLocalCurrencyUnitPrice" : {
+      "meaning" : "模具入仓明细表本币单价"
+    },
+    "modInwarehouseDetMatBatchId" : {
+      "meaning" : "模具入仓明细表物料批次id"
+    },
+    "modInwarehouseDetMaterialId" : {
+      "meaning" : "模具入仓明细表物料id"
+    },
+    "modInwarehouseDetModInwarehouseActualTimeRequired" : {
+      "meaning" : "模具入仓明细表实际需时(小时)"
+    },
+    "modInwarehouseDetModInwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "模具入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modInwarehouseDetModInwarehouseApplicationId" : {
+      "meaning" : "模具入仓明细表应用ID"
+    },
+    "modInwarehouseDetModInwarehouseAuditDate" : {
+      "meaning" : "模具入仓明细表审核时间"
+    },
+    "modInwarehouseDetModInwarehouseAuditStatus" : {
+      "meaning" : "模具入仓明细表审核状态"
+    },
+    "modInwarehouseDetModInwarehouseAvailableScheduleId" : {
+      "meaning" : "模具入仓明细表可用日程id"
+    },
+    "modInwarehouseDetModInwarehouseBeginTime" : {
+      "meaning" : "模具入仓明细表开始时间"
+    },
+    "modInwarehouseDetModInwarehouseBizVersion" : {
+      "meaning" : "模具入仓明细表业务自定义版本号"
+    },
+    "modInwarehouseDetModInwarehouseBriefName" : {
+      "meaning" : "模具入仓明细表简称"
+    },
+    "modInwarehouseDetModInwarehouseBusDivisId" : {
+      "meaning" : "模具入仓明细表事业部id"
+    },
+    "modInwarehouseDetModInwarehouseClazz" : {
+      "meaning" : "模具入仓明细表子类 类名（表和类一一对应）"
+    },
+    "modInwarehouseDetModInwarehouseClosedReason" : {
+      "meaning" : "模具入仓明细表结案原因"
+    },
+    "modInwarehouseDetModInwarehouseClosedStatus" : {
+      "meaning" : "模具入仓明细表结案状态"
+    },
+    "modInwarehouseDetModInwarehouseComment" : {
+      "meaning" : "模具入仓明细表评论"
+    },
+    "modInwarehouseDetModInwarehouseCompleteQuantity" : {
+      "meaning" : "模具入仓明细表完成数量"
+    },
+    "modInwarehouseDetModInwarehouseCompleteStatus" : {
+      "meaning" : "模具入仓明细表完成状态"
+    },
+    "modInwarehouseDetModInwarehouseCreateTime" : {
+      "meaning" : "模具入仓明细表创建时间"
+    },
+    "modInwarehouseDetModInwarehouseCreator" : {
+      "meaning" : "模具入仓明细表创建人"
+    },
+    "modInwarehouseDetModInwarehouseCreatorId" : {
+      "meaning" : "模具入仓明细表创建人ID"
+    },
+    "modInwarehouseDetModInwarehouseDateExtra1" : {
+      "meaning" : "模具入仓明细表扩展时间1"
+    },
+    "modInwarehouseDetModInwarehouseDateExtra2" : {
+      "meaning" : "模具入仓明细表扩展时间2"
+    },
+    "modInwarehouseDetModInwarehouseDateExtra3" : {
+      "meaning" : "模具入仓明细表扩展时间3"
+    },
+    "modInwarehouseDetModInwarehouseDateExtra4" : {
+      "meaning" : "模具入仓明细表扩展时间4"
+    },
+    "modInwarehouseDetModInwarehouseDateExtra5" : {
+      "meaning" : "模具入仓明细表扩展时间5"
+    },
+    "modInwarehouseDetModInwarehouseDefaultType" : {
+      "meaning" : "模具入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modInwarehouseDetModInwarehouseDeliveryDate" : {
+      "meaning" : "模具入仓明细表交货日期"
+    },
+    "modInwarehouseDetModInwarehouseDescription" : {
+      "meaning" : "模具入仓明细表描述"
+    },
+    "modInwarehouseDetModInwarehouseEndTime" : {
+      "meaning" : "模具入仓明细表结束时间"
+    },
+    "modInwarehouseDetModInwarehouseEndTimeRequired" : {
+      "meaning" : "模具入仓明细表最后需时(小时)"
+    },
+    "modInwarehouseDetModInwarehouseEngName" : {
+      "meaning" : "模具入仓明细表英文名称"
+    },
+    "modInwarehouseDetModInwarehouseEquipmentId" : {
+      "meaning" : "模具入仓明细表设备id"
+    },
+    "modInwarehouseDetModInwarehouseExchangeRateId" : {
+      "meaning" : "模具入仓明细表币种汇率id"
+    },
+    "modInwarehouseDetModInwarehouseExtension" : {
+      "meaning" : "模具入仓明细表扩展数据"
+    },
+    "modInwarehouseDetModInwarehouseExternalState" : {
+      "meaning" : "模具入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modInwarehouseDetModInwarehouseFilterClazz" : {
+      "meaning" : "模具入仓明细表冗余字段用于筛选"
+    },
+    "modInwarehouseDetModInwarehouseFlags" : {
+      "meaning" : "模具入仓明细表63位标志位"
+    },
+    "modInwarehouseDetModInwarehouseFromAuditDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromAuditDate"
+    },
+    "modInwarehouseDetModInwarehouseFromBeginTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromBeginTime"
+    },
+    "modInwarehouseDetModInwarehouseFromCreateTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromCreateTime"
+    },
+    "modInwarehouseDetModInwarehouseFromDateExtra1" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDateExtra1"
+    },
+    "modInwarehouseDetModInwarehouseFromDateExtra2" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDateExtra2"
+    },
+    "modInwarehouseDetModInwarehouseFromDateExtra3" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDateExtra3"
+    },
+    "modInwarehouseDetModInwarehouseFromDateExtra4" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDateExtra4"
+    },
+    "modInwarehouseDetModInwarehouseFromDateExtra5" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDateExtra5"
+    },
+    "modInwarehouseDetModInwarehouseFromDeliveryDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromDeliveryDate"
+    },
+    "modInwarehouseDetModInwarehouseFromEndTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromEndTime"
+    },
+    "modInwarehouseDetModInwarehouseFromReceiptDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromReceiptDate"
+    },
+    "modInwarehouseDetModInwarehouseFromUpdateTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseFromUpdateTime"
+    },
+    "modInwarehouseDetModInwarehouseFscType" : {
+      "meaning" : "模具入仓明细表FSC声明"
+    },
+    "modInwarehouseDetModInwarehouseGenerativePeople" : {
+      "meaning" : "模具入仓明细表下发人"
+    },
+    "modInwarehouseDetModInwarehouseGenerativeState" : {
+      "meaning" : "模具入仓明细表下发状态"
+    },
+    "modInwarehouseDetModInwarehouseGroovyScript" : {
+      "meaning" : "模具入仓明细表groovy脚本"
+    },
+    "modInwarehouseDetModInwarehouseGropeCode" : {
+      "meaning" : "模具入仓明细表搜索码"
+    },
+    "modInwarehouseDetModInwarehouseId" : {
+      "meaning" : "模具入仓明细表PK"
+    },
+    "modInwarehouseDetModInwarehouseInUsed" : {
+      "meaning" : "模具入仓明细表是否被使用"
+    },
+    "modInwarehouseDetModInwarehouseInvTypeTaxRateId" : {
+      "meaning" : "模具入仓明细表发票税率id"
+    },
+    "modInwarehouseDetModInwarehouseIsBanned" : {
+      "meaning" : "模具入仓明细表是否被禁用"
+    },
+    "modInwarehouseDetModInwarehouseIsDeleted" : {
+      "meaning" : "模具入仓明细表是否被删除"
+    },
+    "modInwarehouseDetModInwarehouseIsLeaf" : {
+      "meaning" : "模具入仓明细表是否叶子节点"
+    },
+    "modInwarehouseDetModInwarehouseIsMainFlow" : {
+      "meaning" : "模具入仓明细表是否是主流程"
+    },
+    "modInwarehouseDetModInwarehouseIsManualModificationDate" : {
+      "meaning" : "模具入仓明细表是否手动修改计划生产时间"
+    },
+    "modInwarehouseDetModInwarehouseIsolation" : {
+      "meaning" : "模具入仓明细表智能节点数据隔离标识"
+    },
+    "modInwarehouseDetModInwarehouseJsScript" : {
+      "meaning" : "模具入仓明细表js脚本"
+    },
+    "modInwarehouseDetModInwarehouseMaterialId" : {
+      "meaning" : "模具入仓明细表物料id"
+    },
+    "modInwarehouseDetModInwarehouseName" : {
+      "meaning" : "模具入仓明细表智能节点名"
+    },
+    "modInwarehouseDetModInwarehouseNameCodeSearch" : {
+      "meaning" : "模具入仓明细表name、user_code模糊搜索"
+    },
+    "modInwarehouseDetModInwarehouseNumberExtra1" : {
+      "meaning" : "模具入仓明细表扩展数量1"
+    },
+    "modInwarehouseDetModInwarehouseNumberExtra2" : {
+      "meaning" : "模具入仓明细表扩展数量2"
+    },
+    "modInwarehouseDetModInwarehouseNumberExtra3" : {
+      "meaning" : "模具入仓明细表扩展数量3"
+    },
+    "modInwarehouseDetModInwarehouseNumberExtra4" : {
+      "meaning" : "模具入仓明细表扩展数量4"
+    },
+    "modInwarehouseDetModInwarehouseNumberExtra5" : {
+      "meaning" : "模具入仓明细表扩展数量5"
+    },
+    "modInwarehouseDetModInwarehouseParentId" : {
+      "meaning" : "模具入仓明细表父节点ID"
+    },
+    "modInwarehouseDetModInwarehousePlannedOutputQuantity" : {
+      "meaning" : "模具入仓明细表计划产出数量"
+    },
+    "modInwarehouseDetModInwarehousePlannedTimeRequired" : {
+      "meaning" : "模具入仓明细表计划需时(小时)"
+    },
+    "modInwarehouseDetModInwarehousePrintTimes" : {
+      "meaning" : "模具入仓明细表打印次数"
+    },
+    "modInwarehouseDetModInwarehousePriority" : {
+      "meaning" : "模具入仓明细表优先级"
+    },
+    "modInwarehouseDetModInwarehouseProcessInstanceId" : {
+      "meaning" : "模具入仓明细表流程实例ID"
+    },
+    "modInwarehouseDetModInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "模具入仓明细表工序类型ID"
+    },
+    "modInwarehouseDetModInwarehouseProductionShiftId" : {
+      "meaning" : "模具入仓明细表生产班次ID"
+    },
+    "modInwarehouseDetModInwarehouseQuantity" : {
+      "meaning" : "模具入仓明细表任务数量"
+    },
+    "modInwarehouseDetModInwarehouseReceiptDate" : {
+      "meaning" : "模具入仓明细表单据日期"
+    },
+    "modInwarehouseDetModInwarehouseReceiptType" : {
+      "meaning" : "模具入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modInwarehouseDetModInwarehouseRelatedTasksId" : {
+      "meaning" : "模具入仓明细表关联任务id"
+    },
+    "modInwarehouseDetModInwarehouseSerialNumber" : {
+      "meaning" : "模具入仓明细表顺序号"
+    },
+    "modInwarehouseDetModInwarehouseSource" : {
+      "meaning" : "模具入仓明细表源"
+    },
+    "modInwarehouseDetModInwarehouseSourceType" : {
+      "meaning" : "模具入仓明细表来源类型"
+    },
+    "modInwarehouseDetModInwarehouseState" : {
+      "meaning" : "模具入仓明细表通用状态"
+    },
+    "modInwarehouseDetModInwarehouseSystemCode" : {
+      "meaning" : "模具入仓明细表系统编码"
+    },
+    "modInwarehouseDetModInwarehouseTarget" : {
+      "meaning" : "模具入仓明细表目标"
+    },
+    "modInwarehouseDetModInwarehouseTaskNodeName" : {
+      "meaning" : "模具入仓明细表任务节点名称"
+    },
+    "modInwarehouseDetModInwarehouseTaskNodeType" : {
+      "meaning" : "模具入仓明细表任务节点类型"
+    },
+    "modInwarehouseDetModInwarehouseTenantId" : {
+      "meaning" : "模具入仓明细表租户id"
+    },
+    "modInwarehouseDetModInwarehouseThirdPartyClass" : {
+      "meaning" : "模具入仓明细表第三方分类"
+    },
+    "modInwarehouseDetModInwarehouseThirdPartyId" : {
+      "meaning" : "模具入仓明细表第三方系统中的唯一ID"
+    },
+    "modInwarehouseDetModInwarehouseThirdPartyName" : {
+      "meaning" : "模具入仓明细表第三方名称"
+    },
+    "modInwarehouseDetModInwarehouseToAuditDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToAuditDate"
+    },
+    "modInwarehouseDetModInwarehouseToBeginTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToBeginTime"
+    },
+    "modInwarehouseDetModInwarehouseToCreateTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToCreateTime"
+    },
+    "modInwarehouseDetModInwarehouseToDateExtra1" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDateExtra1"
+    },
+    "modInwarehouseDetModInwarehouseToDateExtra2" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDateExtra2"
+    },
+    "modInwarehouseDetModInwarehouseToDateExtra3" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDateExtra3"
+    },
+    "modInwarehouseDetModInwarehouseToDateExtra4" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDateExtra4"
+    },
+    "modInwarehouseDetModInwarehouseToDateExtra5" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDateExtra5"
+    },
+    "modInwarehouseDetModInwarehouseToDeliveryDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToDeliveryDate"
+    },
+    "modInwarehouseDetModInwarehouseToEndTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToEndTime"
+    },
+    "modInwarehouseDetModInwarehouseToReceiptDate" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToReceiptDate"
+    },
+    "modInwarehouseDetModInwarehouseToUpdateTime" : {
+      "meaning" : "modInwarehouseDetModInwarehouseToUpdateTime"
+    },
+    "modInwarehouseDetModInwarehouseUnitCode" : {
+      "meaning" : "模具入仓明细表单位id"
+    },
+    "modInwarehouseDetModInwarehouseUpdateTime" : {
+      "meaning" : "模具入仓明细表更新时间"
+    },
+    "modInwarehouseDetModInwarehouseUpdater" : {
+      "meaning" : "模具入仓明细表更新人"
+    },
+    "modInwarehouseDetModInwarehouseUpdaterId" : {
+      "meaning" : "模具入仓明细表更新人ID"
+    },
+    "modInwarehouseDetModInwarehouseUserCode" : {
+      "meaning" : "模具入仓明细表智能节点的唯一编码"
+    },
+    "modInwarehouseDetModInwarehouseVarExtra1" : {
+      "meaning" : "模具入仓明细表扩展1"
+    },
+    "modInwarehouseDetModInwarehouseVarExtra2" : {
+      "meaning" : "模具入仓明细表扩展2"
+    },
+    "modInwarehouseDetModInwarehouseVarExtra3" : {
+      "meaning" : "模具入仓明细表扩展3"
+    },
+    "modInwarehouseDetModInwarehouseVarExtra4" : {
+      "meaning" : "模具入仓明细表扩展4"
+    },
+    "modInwarehouseDetModInwarehouseVarExtra5" : {
+      "meaning" : "模具入仓明细表扩展5"
+    },
+    "modInwarehouseDetModInwarehouseVersion" : {
+      "meaning" : "模具入仓明细表版本号"
+    },
+    "modInwarehouseDetName" : {
+      "meaning" : "模具入仓明细表智能节点名"
+    },
+    "modInwarehouseDetNameCodeSearch" : {
+      "meaning" : "模具入仓明细表name、user_code模糊搜索"
+    },
+    "modInwarehouseDetNumberExtra1" : {
+      "meaning" : "模具入仓明细表扩展数量1"
+    },
+    "modInwarehouseDetNumberExtra2" : {
+      "meaning" : "模具入仓明细表扩展数量2"
+    },
+    "modInwarehouseDetNumberExtra3" : {
+      "meaning" : "模具入仓明细表扩展数量3"
+    },
+    "modInwarehouseDetNumberExtra4" : {
+      "meaning" : "模具入仓明细表扩展数量4"
+    },
+    "modInwarehouseDetNumberExtra5" : {
+      "meaning" : "模具入仓明细表扩展数量5"
+    },
+    "modInwarehouseDetParentId" : {
+      "meaning" : "模具入仓明细表父节点ID"
+    },
+    "modInwarehouseDetPlannedOutputQuantity" : {
+      "meaning" : "模具入仓明细表计划产出数量"
+    },
+    "modInwarehouseDetPlannedTimeRequired" : {
+      "meaning" : "模具入仓明细表计划需时(小时)"
+    },
+    "modInwarehouseDetPrintTimes" : {
+      "meaning" : "模具入仓明细表打印次数"
+    },
+    "modInwarehouseDetPriority" : {
+      "meaning" : "模具入仓明细表优先级"
+    },
+    "modInwarehouseDetProcessInstanceId" : {
+      "meaning" : "模具入仓明细表流程实例ID"
+    },
+    "modInwarehouseDetProductionProcessesTypeId" : {
+      "meaning" : "模具入仓明细表工序类型ID"
+    },
+    "modInwarehouseDetProductionShiftId" : {
+      "meaning" : "模具入仓明细表生产班次ID"
+    },
+    "modInwarehouseDetQuantity" : {
+      "meaning" : "模具入仓明细表任务数量"
+    },
+    "modInwarehouseDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "模具入仓明细表报价单价（含税）"
+    },
+    "modInwarehouseDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "模具入仓明细表报价单价（不含税）"
+    },
+    "modInwarehouseDetReceiptDate" : {
+      "meaning" : "模具入仓明细表单据日期"
+    },
+    "modInwarehouseDetReceiptType" : {
+      "meaning" : "模具入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modInwarehouseDetRelatedTasksId" : {
+      "meaning" : "模具入仓明细表关联任务id"
+    },
+    "modInwarehouseDetSerialNumber" : {
+      "meaning" : "模具入仓明细表顺序号"
+    },
+    "modInwarehouseDetSettlementTotalAmount" : {
+      "meaning" : "模具入仓明细表结算总金额"
+    },
+    "modInwarehouseDetSettlementUnitPrice" : {
+      "meaning" : "模具入仓明细表结算单价"
+    },
+    "modInwarehouseDetSource" : {
+      "meaning" : "模具入仓明细表源"
+    },
+    "modInwarehouseDetSourceType" : {
+      "meaning" : "模具入仓明细表来源类型"
+    },
+    "modInwarehouseDetState" : {
+      "meaning" : "模具入仓明细表通用状态"
+    },
+    "modInwarehouseDetSystemCode" : {
+      "meaning" : "模具入仓明细表系统编码"
+    },
+    "modInwarehouseDetTarget" : {
+      "meaning" : "模具入仓明细表目标"
+    },
+    "modInwarehouseDetTaskNodeName" : {
+      "meaning" : "模具入仓明细表任务节点名称"
+    },
+    "modInwarehouseDetTaskNodeType" : {
+      "meaning" : "模具入仓明细表任务节点类型"
+    },
+    "modInwarehouseDetTenantId" : {
+      "meaning" : "模具入仓明细表租户id"
+    },
+    "modInwarehouseDetThirdPartyClass" : {
+      "meaning" : "模具入仓明细表第三方分类"
+    },
+    "modInwarehouseDetThirdPartyId" : {
+      "meaning" : "模具入仓明细表第三方系统中的唯一ID"
+    },
+    "modInwarehouseDetThirdPartyName" : {
+      "meaning" : "模具入仓明细表第三方名称"
+    },
+    "modInwarehouseDetToAuditDate" : {
+      "meaning" : "modInwarehouseDetToAuditDate"
+    },
+    "modInwarehouseDetToBeginTime" : {
+      "meaning" : "modInwarehouseDetToBeginTime"
+    },
+    "modInwarehouseDetToCreateTime" : {
+      "meaning" : "modInwarehouseDetToCreateTime"
+    },
+    "modInwarehouseDetToDateExtra1" : {
+      "meaning" : "modInwarehouseDetToDateExtra1"
+    },
+    "modInwarehouseDetToDateExtra2" : {
+      "meaning" : "modInwarehouseDetToDateExtra2"
+    },
+    "modInwarehouseDetToDateExtra3" : {
+      "meaning" : "modInwarehouseDetToDateExtra3"
+    },
+    "modInwarehouseDetToDateExtra4" : {
+      "meaning" : "modInwarehouseDetToDateExtra4"
+    },
+    "modInwarehouseDetToDateExtra5" : {
+      "meaning" : "modInwarehouseDetToDateExtra5"
+    },
+    "modInwarehouseDetToDeliveryDate" : {
+      "meaning" : "modInwarehouseDetToDeliveryDate"
+    },
+    "modInwarehouseDetToEndTime" : {
+      "meaning" : "modInwarehouseDetToEndTime"
+    },
+    "modInwarehouseDetToReceiptDate" : {
+      "meaning" : "modInwarehouseDetToReceiptDate"
+    },
+    "modInwarehouseDetToUpdateTime" : {
+      "meaning" : "modInwarehouseDetToUpdateTime"
+    },
+    "modInwarehouseDetTotalAmount" : {
+      "meaning" : "模具入仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "modInwarehouseDetTotalAmountIncludingTax" : {
+      "meaning" : "模具入仓明细表总金额（含税）"
+    },
+    "modInwarehouseDetTotalAmountWithoutTax" : {
+      "meaning" : "模具入仓明细表总金额（不含税）"
+    },
+    "modInwarehouseDetUnitCode" : {
+      "meaning" : "模具入仓明细表单位id"
+    },
+    "modInwarehouseDetUnitPriceIncludingTax" : {
+      "meaning" : "模具入仓明细表单价（含税）"
+    },
+    "modInwarehouseDetUnitPriceWithoutTax" : {
+      "meaning" : "模具入仓明细表单价（不含税）"
+    },
+    "modInwarehouseDetUpdateTime" : {
+      "meaning" : "模具入仓明细表更新时间"
+    },
+    "modInwarehouseDetUpdater" : {
+      "meaning" : "模具入仓明细表更新人"
+    },
+    "modInwarehouseDetUpdaterId" : {
+      "meaning" : "模具入仓明细表更新人ID"
+    },
+    "modInwarehouseDetUserCode" : {
+      "meaning" : "模具入仓明细表智能节点的唯一编码"
+    },
+    "modInwarehouseDetVarExtra1" : {
+      "meaning" : "模具入仓明细表扩展1"
+    },
+    "modInwarehouseDetVarExtra2" : {
+      "meaning" : "模具入仓明细表扩展2"
+    },
+    "modInwarehouseDetVarExtra3" : {
+      "meaning" : "模具入仓明细表扩展3"
+    },
+    "modInwarehouseDetVarExtra4" : {
+      "meaning" : "模具入仓明细表扩展4"
+    },
+    "modInwarehouseDetVarExtra5" : {
+      "meaning" : "模具入仓明细表扩展5"
+    },
+    "modInwarehouseDetVersion" : {
+      "meaning" : "模具入仓明细表版本号"
+    },
+    "modInwarehouseDetWarehouseSpaceId" : {
+      "meaning" : "模具入仓明细表仓空间id"
+    },
+    "odInwarehouseDetModInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "模具入仓明细表工序类型ID"
+    }
+  }
+}

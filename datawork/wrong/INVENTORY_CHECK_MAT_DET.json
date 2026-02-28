@@ -1,0 +1,777 @@
+{
+  "api_name" : "/inv-check-mat-det/findList",
+  "table_name" : "物料盘点明细表",
+  "request" : {
+    "invCheckMatDetInvCheckMatClazz" : "INVENTORY_CHECK_MAT",
+    "invCheckMatDetClazz" : "INVENTORY_CHECK_MAT_DET"
+  },
+  "mainTabClazz" : "INVENTORY_CHECK_MAT_DET",
+  "response" : {
+    "invCheckMatDetActualTimeRequired" : {
+      "meaning" : "物料盘点明细实际需时(小时)"
+    },
+    "invCheckMatDetAdjustmentTimeRequired" : {
+      "meaning" : "物料盘点明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckMatDetAmountExcTax" : {
+      "meaning" : "物料盘点明细盘点不含税金额（盘点数量*不含税单价）"
+    },
+    "invCheckMatDetAmountIncTax" : {
+      "meaning" : "物料盘点明细盘点含税金额（盘点数量*含税单价）"
+    },
+    "invCheckMatDetApplicationId" : {
+      "meaning" : "物料盘点明细应用ID"
+    },
+    "invCheckMatDetAuditDate" : {
+      "meaning" : "物料盘点明细审核时间"
+    },
+    "invCheckMatDetAuditStatus" : {
+      "meaning" : "物料盘点明细审核状态"
+    },
+    "invCheckMatDetAvailableScheduleId" : {
+      "meaning" : "物料盘点明细可用日程id"
+    },
+    "invCheckMatDetBeginTime" : {
+      "meaning" : "物料盘点明细开始时间"
+    },
+    "invCheckMatDetBizOrderId" : {
+      "meaning" : "物料盘点明细订单id"
+    },
+    "invCheckMatDetBizVersion" : {
+      "meaning" : "物料盘点明细业务自定义版本号"
+    },
+    "invCheckMatDetBriefName" : {
+      "meaning" : "物料盘点明细简称"
+    },
+    "invCheckMatDetBusDivisId" : {
+      "meaning" : "物料盘点明细事业部id"
+    },
+    "invCheckMatDetClazz" : {
+      "meaning" : "物料盘点明细子类 类名（表和类一一对应）"
+    },
+    "invCheckMatDetClosedReason" : {
+      "meaning" : "物料盘点明细结案原因"
+    },
+    "invCheckMatDetClosedStatus" : {
+      "meaning" : "物料盘点明细结案状态"
+    },
+    "invCheckMatDetComment" : {
+      "meaning" : "物料盘点明细评论"
+    },
+    "invCheckMatDetCompleteQuantity" : {
+      "meaning" : "物料盘点明细完成数量"
+    },
+    "invCheckMatDetCompleteStatus" : {
+      "meaning" : "物料盘点明细完成状态"
+    },
+    "invCheckMatDetCreateTime" : {
+      "meaning" : "物料盘点明细创建时间"
+    },
+    "invCheckMatDetCreator" : {
+      "meaning" : "物料盘点明细创建人"
+    },
+    "invCheckMatDetCreatorId" : {
+      "meaning" : "物料盘点明细创建人ID"
+    },
+    "invCheckMatDetDateExtra1" : {
+      "meaning" : "物料盘点明细扩展时间1"
+    },
+    "invCheckMatDetDateExtra2" : {
+      "meaning" : "物料盘点明细扩展时间2"
+    },
+    "invCheckMatDetDateExtra3" : {
+      "meaning" : "物料盘点明细扩展时间3"
+    },
+    "invCheckMatDetDateExtra4" : {
+      "meaning" : "物料盘点明细扩展时间4"
+    },
+    "invCheckMatDetDateExtra5" : {
+      "meaning" : "物料盘点明细扩展时间5"
+    },
+    "invCheckMatDetDefaultType" : {
+      "meaning" : "物料盘点明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckMatDetDeliveryDate" : {
+      "meaning" : "物料盘点明细交货日期"
+    },
+    "invCheckMatDetDescription" : {
+      "meaning" : "物料盘点明细描述"
+    },
+    "invCheckMatDetEndTime" : {
+      "meaning" : "物料盘点明细结束时间"
+    },
+    "invCheckMatDetEndTimeRequired" : {
+      "meaning" : "物料盘点明细最后需时(小时)"
+    },
+    "invCheckMatDetEngName" : {
+      "meaning" : "物料盘点明细英文名称"
+    },
+    "invCheckMatDetEquipmentId" : {
+      "meaning" : "物料盘点明细设备id"
+    },
+    "invCheckMatDetExchangeRateId" : {
+      "meaning" : "物料盘点明细币种汇率id"
+    },
+    "invCheckMatDetExtension" : {
+      "meaning" : "物料盘点明细扩展数据"
+    },
+    "invCheckMatDetExternalState" : {
+      "meaning" : "物料盘点明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckMatDetFilterClazz" : {
+      "meaning" : "物料盘点明细冗余字段用于筛选"
+    },
+    "invCheckMatDetFlags" : {
+      "meaning" : "物料盘点明细63位标志位"
+    },
+    "invCheckMatDetFromAuditDate" : {
+      "meaning" : "invCheckMatDetFromAuditDate"
+    },
+    "invCheckMatDetFromBeginTime" : {
+      "meaning" : "invCheckMatDetFromBeginTime"
+    },
+    "invCheckMatDetFromCreateTime" : {
+      "meaning" : "invCheckMatDetFromCreateTime"
+    },
+    "invCheckMatDetFromDateExtra1" : {
+      "meaning" : "invCheckMatDetFromDateExtra1"
+    },
+    "invCheckMatDetFromDateExtra2" : {
+      "meaning" : "invCheckMatDetFromDateExtra2"
+    },
+    "invCheckMatDetFromDateExtra3" : {
+      "meaning" : "invCheckMatDetFromDateExtra3"
+    },
+    "invCheckMatDetFromDateExtra4" : {
+      "meaning" : "invCheckMatDetFromDateExtra4"
+    },
+    "invCheckMatDetFromDateExtra5" : {
+      "meaning" : "invCheckMatDetFromDateExtra5"
+    },
+    "invCheckMatDetFromDeliveryDate" : {
+      "meaning" : "invCheckMatDetFromDeliveryDate"
+    },
+    "invCheckMatDetFromEndTime" : {
+      "meaning" : "invCheckMatDetFromEndTime"
+    },
+    "invCheckMatDetFromReceiptDate" : {
+      "meaning" : "invCheckMatDetFromReceiptDate"
+    },
+    "invCheckMatDetFromUpdateTime" : {
+      "meaning" : "invCheckMatDetFromUpdateTime"
+    },
+    "invCheckMatDetFscType" : {
+      "meaning" : "物料盘点明细FSC声明"
+    },
+    "invCheckMatDetGenerativePeople" : {
+      "meaning" : "物料盘点明细下发人"
+    },
+    "invCheckMatDetGenerativeState" : {
+      "meaning" : "物料盘点明细下发状态"
+    },
+    "invCheckMatDetGoodsId" : {
+      "meaning" : "物料盘点明细货（包）id"
+    },
+    "invCheckMatDetGroovyScript" : {
+      "meaning" : "物料盘点明细groovy脚本"
+    },
+    "invCheckMatDetGropeCode" : {
+      "meaning" : "物料盘点明细搜索码"
+    },
+    "invCheckMatDetId" : {
+      "meaning" : "物料盘点明细主键ID",
+      "is_primary" : true
+    },
+    "invCheckMatDetInUsed" : {
+      "meaning" : "物料盘点明细是否被使用"
+    },
+    "invCheckMatDetInvCheckMatActualTimeRequired" : {
+      "meaning" : "物料盘点明细实际需时(小时)"
+    },
+    "invCheckMatDetInvCheckMatAdjustmentTimeRequired" : {
+      "meaning" : "物料盘点明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckMatDetInvCheckMatApplicationId" : {
+      "meaning" : "物料盘点明细应用ID"
+    },
+    "invCheckMatDetInvCheckMatAuditDate" : {
+      "meaning" : "物料盘点明细审核时间"
+    },
+    "invCheckMatDetInvCheckMatAuditStatus" : {
+      "meaning" : "物料盘点明细审核状态"
+    },
+    "invCheckMatDetInvCheckMatAvailableScheduleId" : {
+      "meaning" : "物料盘点明细可用日程id"
+    },
+    "invCheckMatDetInvCheckMatBeginTime" : {
+      "meaning" : "物料盘点明细开始时间"
+    },
+    "invCheckMatDetInvCheckMatBizVersion" : {
+      "meaning" : "物料盘点明细业务自定义版本号"
+    },
+    "invCheckMatDetInvCheckMatBriefName" : {
+      "meaning" : "物料盘点明细简称"
+    },
+    "invCheckMatDetInvCheckMatBusDivisId" : {
+      "meaning" : "物料盘点明细事业部id"
+    },
+    "invCheckMatDetInvCheckMatClazz" : {
+      "meaning" : "物料盘点明细子类 类名（表和类一一对应）"
+    },
+    "invCheckMatDetInvCheckMatClosedReason" : {
+      "meaning" : "物料盘点明细结案原因"
+    },
+    "invCheckMatDetInvCheckMatClosedStatus" : {
+      "meaning" : "物料盘点明细结案状态"
+    },
+    "invCheckMatDetInvCheckMatComment" : {
+      "meaning" : "物料盘点明细评论"
+    },
+    "invCheckMatDetInvCheckMatCompleteQuantity" : {
+      "meaning" : "物料盘点明细完成数量"
+    },
+    "invCheckMatDetInvCheckMatCompleteStatus" : {
+      "meaning" : "物料盘点明细完成状态"
+    },
+    "invCheckMatDetInvCheckMatCreateTime" : {
+      "meaning" : "物料盘点明细创建时间"
+    },
+    "invCheckMatDetInvCheckMatCreator" : {
+      "meaning" : "物料盘点明细创建人"
+    },
+    "invCheckMatDetInvCheckMatCreatorId" : {
+      "meaning" : "物料盘点明细创建人ID"
+    },
+    "invCheckMatDetInvCheckMatDateExtra1" : {
+      "meaning" : "物料盘点明细扩展时间1"
+    },
+    "invCheckMatDetInvCheckMatDateExtra2" : {
+      "meaning" : "物料盘点明细扩展时间2"
+    },
+    "invCheckMatDetInvCheckMatDateExtra3" : {
+      "meaning" : "物料盘点明细扩展时间3"
+    },
+    "invCheckMatDetInvCheckMatDateExtra4" : {
+      "meaning" : "物料盘点明细扩展时间4"
+    },
+    "invCheckMatDetInvCheckMatDateExtra5" : {
+      "meaning" : "物料盘点明细扩展时间5"
+    },
+    "invCheckMatDetInvCheckMatDefaultType" : {
+      "meaning" : "物料盘点明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckMatDetInvCheckMatDeliveryDate" : {
+      "meaning" : "物料盘点明细交货日期"
+    },
+    "invCheckMatDetInvCheckMatDescription" : {
+      "meaning" : "物料盘点明细描述"
+    },
+    "invCheckMatDetInvCheckMatEndTime" : {
+      "meaning" : "物料盘点明细结束时间"
+    },
+    "invCheckMatDetInvCheckMatEndTimeRequired" : {
+      "meaning" : "物料盘点明细最后需时(小时)"
+    },
+    "invCheckMatDetInvCheckMatEngName" : {
+      "meaning" : "物料盘点明细英文名称"
+    },
+    "invCheckMatDetInvCheckMatEquipmentId" : {
+      "meaning" : "物料盘点明细设备id"
+    },
+    "invCheckMatDetInvCheckMatExchangeRateId" : {
+      "meaning" : "物料盘点明细币种汇率id"
+    },
+    "invCheckMatDetInvCheckMatExtension" : {
+      "meaning" : "物料盘点明细扩展数据"
+    },
+    "invCheckMatDetInvCheckMatExternalState" : {
+      "meaning" : "物料盘点明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckMatDetInvCheckMatFilterClazz" : {
+      "meaning" : "物料盘点明细冗余字段用于筛选"
+    },
+    "invCheckMatDetInvCheckMatFlags" : {
+      "meaning" : "物料盘点明细63位标志位"
+    },
+    "invCheckMatDetInvCheckMatFromAuditDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromAuditDate"
+    },
+    "invCheckMatDetInvCheckMatFromBeginTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromBeginTime"
+    },
+    "invCheckMatDetInvCheckMatFromCreateTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromCreateTime"
+    },
+    "invCheckMatDetInvCheckMatFromDateExtra1" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDateExtra1"
+    },
+    "invCheckMatDetInvCheckMatFromDateExtra2" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDateExtra2"
+    },
+    "invCheckMatDetInvCheckMatFromDateExtra3" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDateExtra3"
+    },
+    "invCheckMatDetInvCheckMatFromDateExtra4" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDateExtra4"
+    },
+    "invCheckMatDetInvCheckMatFromDateExtra5" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDateExtra5"
+    },
+    "invCheckMatDetInvCheckMatFromDeliveryDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromDeliveryDate"
+    },
+    "invCheckMatDetInvCheckMatFromEndTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromEndTime"
+    },
+    "invCheckMatDetInvCheckMatFromReceiptDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromReceiptDate"
+    },
+    "invCheckMatDetInvCheckMatFromUpdateTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatFromUpdateTime"
+    },
+    "invCheckMatDetInvCheckMatFscType" : {
+      "meaning" : "物料盘点明细FSC声明"
+    },
+    "invCheckMatDetInvCheckMatGenerativePeople" : {
+      "meaning" : "物料盘点明细下发人"
+    },
+    "invCheckMatDetInvCheckMatGenerativeState" : {
+      "meaning" : "物料盘点明细下发状态"
+    },
+    "invCheckMatDetInvCheckMatGroovyScript" : {
+      "meaning" : "物料盘点明细groovy脚本"
+    },
+    "invCheckMatDetInvCheckMatGropeCode" : {
+      "meaning" : "物料盘点明细搜索码"
+    },
+    "invCheckMatDetInvCheckMatId" : {
+      "meaning" : "物料盘点明细pk"
+    },
+    "invCheckMatDetInvCheckMatInUsed" : {
+      "meaning" : "物料盘点明细是否被使用"
+    },
+    "invCheckMatDetInvCheckMatInvTypeTaxRateId" : {
+      "meaning" : "物料盘点明细发票税率id"
+    },
+    "invCheckMatDetInvCheckMatIsBanned" : {
+      "meaning" : "物料盘点明细是否被禁用"
+    },
+    "invCheckMatDetInvCheckMatIsDeleted" : {
+      "meaning" : "物料盘点明细是否被删除"
+    },
+    "invCheckMatDetInvCheckMatIsLeaf" : {
+      "meaning" : "物料盘点明细是否叶子节点"
+    },
+    "invCheckMatDetInvCheckMatIsMainFlow" : {
+      "meaning" : "物料盘点明细是否是主流程"
+    },
+    "invCheckMatDetInvCheckMatIsManualModificationDate" : {
+      "meaning" : "物料盘点明细是否手动修改计划生产时间"
+    },
+    "invCheckMatDetInvCheckMatIsolation" : {
+      "meaning" : "物料盘点明细智能节点数据隔离标识"
+    },
+    "invCheckMatDetInvCheckMatJsScript" : {
+      "meaning" : "物料盘点明细js脚本"
+    },
+    "invCheckMatDetInvCheckMatMaterialId" : {
+      "meaning" : "物料盘点明细物料id"
+    },
+    "invCheckMatDetInvCheckMatName" : {
+      "meaning" : "物料盘点明细智能节点名"
+    },
+    "invCheckMatDetInvCheckMatNameCodeSearch" : {
+      "meaning" : "物料盘点明细name、user_code模糊搜索"
+    },
+    "invCheckMatDetInvCheckMatNumberExtra1" : {
+      "meaning" : "物料盘点明细扩展数量1"
+    },
+    "invCheckMatDetInvCheckMatNumberExtra2" : {
+      "meaning" : "物料盘点明细扩展数量2"
+    },
+    "invCheckMatDetInvCheckMatNumberExtra3" : {
+      "meaning" : "物料盘点明细扩展数量3"
+    },
+    "invCheckMatDetInvCheckMatNumberExtra4" : {
+      "meaning" : "物料盘点明细扩展数量4"
+    },
+    "invCheckMatDetInvCheckMatNumberExtra5" : {
+      "meaning" : "物料盘点明细扩展数量5"
+    },
+    "invCheckMatDetInvCheckMatParentId" : {
+      "meaning" : "物料盘点明细父节点ID"
+    },
+    "invCheckMatDetInvCheckMatPlannedOutputQuantity" : {
+      "meaning" : "物料盘点明细计划产出数量"
+    },
+    "invCheckMatDetInvCheckMatPlannedTimeRequired" : {
+      "meaning" : "物料盘点明细计划需时(小时)"
+    },
+    "invCheckMatDetInvCheckMatPrintTimes" : {
+      "meaning" : "物料盘点明细打印次数"
+    },
+    "invCheckMatDetInvCheckMatPriority" : {
+      "meaning" : "物料盘点明细优先级"
+    },
+    "invCheckMatDetInvCheckMatProcessInstanceId" : {
+      "meaning" : "物料盘点明细流程实例ID"
+    },
+    "invCheckMatDetInvCheckMatProductionProcessesTypeId" : {
+      "meaning" : "物料盘点明细工序类型ID"
+    },
+    "invCheckMatDetInvCheckMatProductionShiftId" : {
+      "meaning" : "物料盘点明细生产班次ID"
+    },
+    "invCheckMatDetInvCheckMatQuantity" : {
+      "meaning" : "物料盘点明细任务数量"
+    },
+    "invCheckMatDetInvCheckMatReceiptDate" : {
+      "meaning" : "物料盘点明细单据日期"
+    },
+    "invCheckMatDetInvCheckMatReceiptType" : {
+      "meaning" : "物料盘点明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckMatDetInvCheckMatRelatedTasksId" : {
+      "meaning" : "物料盘点明细关联任务id"
+    },
+    "invCheckMatDetInvCheckMatSerialNumber" : {
+      "meaning" : "物料盘点明细顺序号"
+    },
+    "invCheckMatDetInvCheckMatSource" : {
+      "meaning" : "物料盘点明细源"
+    },
+    "invCheckMatDetInvCheckMatSourceType" : {
+      "meaning" : "物料盘点明细来源类型"
+    },
+    "invCheckMatDetInvCheckMatState" : {
+      "meaning" : "物料盘点明细通用状态"
+    },
+    "invCheckMatDetInvCheckMatSystemCode" : {
+      "meaning" : "物料盘点明细系统编码"
+    },
+    "invCheckMatDetInvCheckMatTarget" : {
+      "meaning" : "物料盘点明细目标"
+    },
+    "invCheckMatDetInvCheckMatTaskNodeName" : {
+      "meaning" : "物料盘点明细任务节点名称"
+    },
+    "invCheckMatDetInvCheckMatTaskNodeType" : {
+      "meaning" : "物料盘点明细任务节点类型"
+    },
+    "invCheckMatDetInvCheckMatTenantId" : {
+      "meaning" : "物料盘点明细租户id"
+    },
+    "invCheckMatDetInvCheckMatThirdPartyClass" : {
+      "meaning" : "物料盘点明细第三方分类"
+    },
+    "invCheckMatDetInvCheckMatThirdPartyId" : {
+      "meaning" : "物料盘点明细第三方系统中的唯一ID"
+    },
+    "invCheckMatDetInvCheckMatThirdPartyName" : {
+      "meaning" : "物料盘点明细第三方名称"
+    },
+    "invCheckMatDetInvCheckMatToAuditDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatToAuditDate"
+    },
+    "invCheckMatDetInvCheckMatToBeginTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatToBeginTime"
+    },
+    "invCheckMatDetInvCheckMatToCreateTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatToCreateTime"
+    },
+    "invCheckMatDetInvCheckMatToDateExtra1" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDateExtra1"
+    },
+    "invCheckMatDetInvCheckMatToDateExtra2" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDateExtra2"
+    },
+    "invCheckMatDetInvCheckMatToDateExtra3" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDateExtra3"
+    },
+    "invCheckMatDetInvCheckMatToDateExtra4" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDateExtra4"
+    },
+    "invCheckMatDetInvCheckMatToDateExtra5" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDateExtra5"
+    },
+    "invCheckMatDetInvCheckMatToDeliveryDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatToDeliveryDate"
+    },
+    "invCheckMatDetInvCheckMatToEndTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatToEndTime"
+    },
+    "invCheckMatDetInvCheckMatToReceiptDate" : {
+      "meaning" : "invCheckMatDetInvCheckMatToReceiptDate"
+    },
+    "invCheckMatDetInvCheckMatToUpdateTime" : {
+      "meaning" : "invCheckMatDetInvCheckMatToUpdateTime"
+    },
+    "invCheckMatDetInvCheckMatTotalAmountExcludingTax" : {
+      "meaning" : "物料盘点明细总盘点不含税金额"
+    },
+    "invCheckMatDetInvCheckMatTotalAmountIncludingTax" : {
+      "meaning" : "物料盘点明细总盘点含税金额"
+    },
+    "invCheckMatDetInvCheckMatUnitCode" : {
+      "meaning" : "物料盘点明细单位id"
+    },
+    "invCheckMatDetInvCheckMatUpdateTime" : {
+      "meaning" : "物料盘点明细更新时间"
+    },
+    "invCheckMatDetInvCheckMatUpdater" : {
+      "meaning" : "物料盘点明细更新人"
+    },
+    "invCheckMatDetInvCheckMatUpdaterId" : {
+      "meaning" : "物料盘点明细更新人ID"
+    },
+    "invCheckMatDetInvCheckMatUserCode" : {
+      "meaning" : "物料盘点明细智能节点的唯一编码"
+    },
+    "invCheckMatDetInvCheckMatVarExtra1" : {
+      "meaning" : "物料盘点明细扩展1"
+    },
+    "invCheckMatDetInvCheckMatVarExtra2" : {
+      "meaning" : "物料盘点明细扩展2"
+    },
+    "invCheckMatDetInvCheckMatVarExtra3" : {
+      "meaning" : "物料盘点明细扩展3"
+    },
+    "invCheckMatDetInvCheckMatVarExtra4" : {
+      "meaning" : "物料盘点明细扩展4"
+    },
+    "invCheckMatDetInvCheckMatVarExtra5" : {
+      "meaning" : "物料盘点明细扩展5"
+    },
+    "invCheckMatDetInvCheckMatVersion" : {
+      "meaning" : "物料盘点明细版本号"
+    },
+    "invCheckMatDetInvTypeTaxRateId" : {
+      "meaning" : "物料盘点明细发票税率id"
+    },
+    "invCheckMatDetInventoryQuantity" : {
+      "meaning" : "物料盘点明细库存数量"
+    },
+    "invCheckMatDetIsBanned" : {
+      "meaning" : "物料盘点明细是否被禁用"
+    },
+    "invCheckMatDetIsDeleted" : {
+      "meaning" : "物料盘点明细是否被删除"
+    },
+    "invCheckMatDetIsLeaf" : {
+      "meaning" : "物料盘点明细是否叶子节点"
+    },
+    "invCheckMatDetIsMainFlow" : {
+      "meaning" : "物料盘点明细是否是主流程"
+    },
+    "invCheckMatDetIsManualModificationDate" : {
+      "meaning" : "物料盘点明细是否手动修改计划生产时间"
+    },
+    "invCheckMatDetIsolation" : {
+      "meaning" : "物料盘点明细智能节点数据隔离标识"
+    },
+    "invCheckMatDetJsScript" : {
+      "meaning" : "物料盘点明细js脚本"
+    },
+    "invCheckMatDetMatBatchId" : {
+      "meaning" : "物料盘点明细物料批次id"
+    },
+    "invCheckMatDetMaterialId" : {
+      "meaning" : "物料盘点明细物料id"
+    },
+    "invCheckMatDetName" : {
+      "meaning" : "物料盘点明细智能节点名"
+    },
+    "invCheckMatDetNameCodeSearch" : {
+      "meaning" : "物料盘点明细name、user_code模糊搜索"
+    },
+    "invCheckMatDetNumberExtra1" : {
+      "meaning" : "物料盘点明细扩展数量1"
+    },
+    "invCheckMatDetNumberExtra2" : {
+      "meaning" : "物料盘点明细扩展数量2"
+    },
+    "invCheckMatDetNumberExtra3" : {
+      "meaning" : "物料盘点明细扩展数量3"
+    },
+    "invCheckMatDetNumberExtra4" : {
+      "meaning" : "物料盘点明细扩展数量4"
+    },
+    "invCheckMatDetNumberExtra5" : {
+      "meaning" : "物料盘点明细扩展数量5"
+    },
+    "invCheckMatDetParentId" : {
+      "meaning" : "物料盘点明细父节点ID"
+    },
+    "invCheckMatDetPlannedOutputQuantity" : {
+      "meaning" : "物料盘点明细计划产出数量"
+    },
+    "invCheckMatDetPlannedTimeRequired" : {
+      "meaning" : "物料盘点明细计划需时(小时)"
+    },
+    "invCheckMatDetPrintTimes" : {
+      "meaning" : "物料盘点明细打印次数"
+    },
+    "invCheckMatDetPriority" : {
+      "meaning" : "物料盘点明细优先级"
+    },
+    "invCheckMatDetProcessInstanceId" : {
+      "meaning" : "物料盘点明细流程实例ID"
+    },
+    "invCheckMatDetProductionProcessesTypeId" : {
+      "meaning" : "物料盘点明细工序类型ID"
+    },
+    "invCheckMatDetProductionShiftId" : {
+      "meaning" : "物料盘点明细生产班次ID"
+    },
+    "invCheckMatDetQuantity" : {
+      "meaning" : "物料盘点明细任务数量"
+    },
+    "invCheckMatDetQuantityShortage" : {
+      "meaning" : "物料盘点明细盘亏数量"
+    },
+    "invCheckMatDetQuantitySurplus" : {
+      "meaning" : "物料盘点明细盘盈数量"
+    },
+    "invCheckMatDetReceiptDate" : {
+      "meaning" : "物料盘点明细单据日期"
+    },
+    "invCheckMatDetReceiptType" : {
+      "meaning" : "物料盘点明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckMatDetRelatedTasksId" : {
+      "meaning" : "物料盘点明细关联任务id"
+    },
+    "invCheckMatDetSerialNumber" : {
+      "meaning" : "物料盘点明细顺序号"
+    },
+    "invCheckMatDetShortageNumber" : {
+      "meaning" : "物料盘点明细盘亏调整单号"
+    },
+    "invCheckMatDetShortageSituation" : {
+      "meaning" : "物料盘点明细盘亏情况（已开、未开）"
+    },
+    "invCheckMatDetSource" : {
+      "meaning" : "物料盘点明细源"
+    },
+    "invCheckMatDetSourceType" : {
+      "meaning" : "物料盘点明细来源类型"
+    },
+    "invCheckMatDetState" : {
+      "meaning" : "物料盘点明细通用状态"
+    },
+    "invCheckMatDetSurplusNumber" : {
+      "meaning" : "物料盘点明细盘盈调整单号"
+    },
+    "invCheckMatDetSurplusSituation" : {
+      "meaning" : "物料盘点明细盘盈情况（已开、未开）"
+    },
+    "invCheckMatDetSystemCode" : {
+      "meaning" : "物料盘点明细系统编码"
+    },
+    "invCheckMatDetTarget" : {
+      "meaning" : "物料盘点明细目标"
+    },
+    "invCheckMatDetTaskNodeName" : {
+      "meaning" : "物料盘点明细任务节点名称"
+    },
+    "invCheckMatDetTaskNodeType" : {
+      "meaning" : "物料盘点明细任务节点类型"
+    },
+    "invCheckMatDetTenantId" : {
+      "meaning" : "物料盘点明细租户id"
+    },
+    "invCheckMatDetThirdPartyClass" : {
+      "meaning" : "物料盘点明细第三方分类"
+    },
+    "invCheckMatDetThirdPartyId" : {
+      "meaning" : "物料盘点明细第三方系统中的唯一ID"
+    },
+    "invCheckMatDetThirdPartyName" : {
+      "meaning" : "物料盘点明细第三方名称"
+    },
+    "invCheckMatDetToAuditDate" : {
+      "meaning" : "invCheckMatDetToAuditDate"
+    },
+    "invCheckMatDetToBeginTime" : {
+      "meaning" : "invCheckMatDetToBeginTime"
+    },
+    "invCheckMatDetToCreateTime" : {
+      "meaning" : "invCheckMatDetToCreateTime"
+    },
+    "invCheckMatDetToDateExtra1" : {
+      "meaning" : "invCheckMatDetToDateExtra1"
+    },
+    "invCheckMatDetToDateExtra2" : {
+      "meaning" : "invCheckMatDetToDateExtra2"
+    },
+    "invCheckMatDetToDateExtra3" : {
+      "meaning" : "invCheckMatDetToDateExtra3"
+    },
+    "invCheckMatDetToDateExtra4" : {
+      "meaning" : "invCheckMatDetToDateExtra4"
+    },
+    "invCheckMatDetToDateExtra5" : {
+      "meaning" : "invCheckMatDetToDateExtra5"
+    },
+    "invCheckMatDetToDeliveryDate" : {
+      "meaning" : "invCheckMatDetToDeliveryDate"
+    },
+    "invCheckMatDetToEndTime" : {
+      "meaning" : "invCheckMatDetToEndTime"
+    },
+    "invCheckMatDetToReceiptDate" : {
+      "meaning" : "invCheckMatDetToReceiptDate"
+    },
+    "invCheckMatDetToUpdateTime" : {
+      "meaning" : "invCheckMatDetToUpdateTime"
+    },
+    "invCheckMatDetUnitCode" : {
+      "meaning" : "物料盘点明细单位id"
+    },
+    "invCheckMatDetUnitPriceExcTax" : {
+      "meaning" : "物料盘点明细不含税单价"
+    },
+    "invCheckMatDetUnitPriceIncTax" : {
+      "meaning" : "物料盘点明细含税单价"
+    },
+    "invCheckMatDetUpdateTime" : {
+      "meaning" : "物料盘点明细更新时间"
+    },
+    "invCheckMatDetUpdater" : {
+      "meaning" : "物料盘点明细更新人"
+    },
+    "invCheckMatDetUpdaterId" : {
+      "meaning" : "物料盘点明细更新人ID"
+    },
+    "invCheckMatDetUserCode" : {
+      "meaning" : "物料盘点明细智能节点的唯一编码"
+    },
+    "invCheckMatDetVarExtra1" : {
+      "meaning" : "物料盘点明细扩展1"
+    },
+    "invCheckMatDetVarExtra2" : {
+      "meaning" : "物料盘点明细扩展2"
+    },
+    "invCheckMatDetVarExtra3" : {
+      "meaning" : "物料盘点明细扩展3"
+    },
+    "invCheckMatDetVarExtra4" : {
+      "meaning" : "物料盘点明细扩展4"
+    },
+    "invCheckMatDetVarExtra5" : {
+      "meaning" : "物料盘点明细扩展5"
+    },
+    "invCheckMatDetVersion" : {
+      "meaning" : "物料盘点明细版本号"
+    },
+    "invCheckMatDetWarehousePosition" : {
+      "meaning" : "物料盘点明细仓位"
+    },
+    "invCheckMatDetWarehouseSpaceId" : {
+      "meaning" : "物料盘点明细仓空间id"
+    },
+    "invCheckMatDetWorkOrderId" : {
+      "meaning" : "物料盘点明细工单id"
+    }
+  }
+}

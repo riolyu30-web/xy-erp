@@ -1,0 +1,762 @@
+{
+  "api_name" : "/supp-quote-det/findList",
+  "table_name" : "供应商报价明细",
+  "request" : {
+    "suppQuoteDetSuppQuoteClazz" : "SUPP_QUOTE",
+    "suppQuoteDetClazz" : "SUPP_QUOTE_DET"
+  },
+  "mainTabClazz" : "SUPP_QUOTE_DET",
+  "response" : {
+    "suppQuoteDetActualTimeRequired" : {
+      "meaning" : "供应商报价明细实际需时(小时)"
+    },
+    "suppQuoteDetAdjustmentTimeRequired" : {
+      "meaning" : "供应商报价明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "suppQuoteDetApplicationId" : {
+      "meaning" : "供应商报价明细应用ID"
+    },
+    "suppQuoteDetAuditDate" : {
+      "meaning" : "供应商报价明细审核时间"
+    },
+    "suppQuoteDetAuditStatus" : {
+      "meaning" : "供应商报价明细审核状态"
+    },
+    "suppQuoteDetAvailableScheduleId" : {
+      "meaning" : "供应商报价明细可用日程id"
+    },
+    "suppQuoteDetBeginTime" : {
+      "meaning" : "供应商报价明细开始时间"
+    },
+    "suppQuoteDetBizVersion" : {
+      "meaning" : "供应商报价明细业务自定义版本号"
+    },
+    "suppQuoteDetBriefName" : {
+      "meaning" : "供应商报价明细简称"
+    },
+    "suppQuoteDetBusDivisId" : {
+      "meaning" : "供应商报价明细事业部id"
+    },
+    "suppQuoteDetClazz" : {
+      "meaning" : "供应商报价明细子类 类名（表和类一一对应）"
+    },
+    "suppQuoteDetClosedReason" : {
+      "meaning" : "供应商报价明细结案原因"
+    },
+    "suppQuoteDetClosedStatus" : {
+      "meaning" : "供应商报价明细结案状态"
+    },
+    "suppQuoteDetComment" : {
+      "meaning" : "供应商报价明细评论"
+    },
+    "suppQuoteDetCompleteQuantity" : {
+      "meaning" : "供应商报价明细完成数量"
+    },
+    "suppQuoteDetCompleteStatus" : {
+      "meaning" : "供应商报价明细完成状态"
+    },
+    "suppQuoteDetCreateTime" : {
+      "meaning" : "供应商报价明细创建时间"
+    },
+    "suppQuoteDetCreator" : {
+      "meaning" : "供应商报价明细创建人"
+    },
+    "suppQuoteDetCreatorId" : {
+      "meaning" : "供应商报价明细创建人ID"
+    },
+    "suppQuoteDetDateExtra1" : {
+      "meaning" : "供应商报价明细扩展时间1"
+    },
+    "suppQuoteDetDateExtra2" : {
+      "meaning" : "供应商报价明细扩展时间2"
+    },
+    "suppQuoteDetDateExtra3" : {
+      "meaning" : "供应商报价明细扩展时间3"
+    },
+    "suppQuoteDetDateExtra4" : {
+      "meaning" : "供应商报价明细扩展时间4"
+    },
+    "suppQuoteDetDateExtra5" : {
+      "meaning" : "供应商报价明细扩展时间5"
+    },
+    "suppQuoteDetDefaultType" : {
+      "meaning" : "供应商报价明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "suppQuoteDetDeliveryCycle" : {
+      "meaning" : "供应商报价明细交货周期(天)"
+    },
+    "suppQuoteDetDeliveryDate" : {
+      "meaning" : "供应商报价明细交货日期"
+    },
+    "suppQuoteDetDescription" : {
+      "meaning" : "供应商报价明细描述"
+    },
+    "suppQuoteDetDiscountRate" : {
+      "meaning" : "供应商报价明细下浮率"
+    },
+    "suppQuoteDetEndTime" : {
+      "meaning" : "供应商报价明细结束时间"
+    },
+    "suppQuoteDetEndTimeRequired" : {
+      "meaning" : "供应商报价明细最后需时(小时)"
+    },
+    "suppQuoteDetEngName" : {
+      "meaning" : "供应商报价明细英文名称"
+    },
+    "suppQuoteDetEquipmentId" : {
+      "meaning" : "供应商报价明细设备id"
+    },
+    "suppQuoteDetExchangeRateId" : {
+      "meaning" : "供应商报价明细币种汇率id"
+    },
+    "suppQuoteDetExtension" : {
+      "meaning" : "供应商报价明细扩展数据"
+    },
+    "suppQuoteDetExternalState" : {
+      "meaning" : "供应商报价明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "suppQuoteDetFilterClazz" : {
+      "meaning" : "供应商报价明细冗余字段用于筛选"
+    },
+    "suppQuoteDetFlags" : {
+      "meaning" : "供应商报价明细63位标志位"
+    },
+    "suppQuoteDetFromAuditDate" : {
+      "meaning" : "suppQuoteDetFromAuditDate"
+    },
+    "suppQuoteDetFromBeginTime" : {
+      "meaning" : "suppQuoteDetFromBeginTime"
+    },
+    "suppQuoteDetFromCreateTime" : {
+      "meaning" : "suppQuoteDetFromCreateTime"
+    },
+    "suppQuoteDetFromDateExtra1" : {
+      "meaning" : "suppQuoteDetFromDateExtra1"
+    },
+    "suppQuoteDetFromDateExtra2" : {
+      "meaning" : "suppQuoteDetFromDateExtra2"
+    },
+    "suppQuoteDetFromDateExtra3" : {
+      "meaning" : "suppQuoteDetFromDateExtra3"
+    },
+    "suppQuoteDetFromDateExtra4" : {
+      "meaning" : "suppQuoteDetFromDateExtra4"
+    },
+    "suppQuoteDetFromDateExtra5" : {
+      "meaning" : "suppQuoteDetFromDateExtra5"
+    },
+    "suppQuoteDetFromDeliveryDate" : {
+      "meaning" : "suppQuoteDetFromDeliveryDate"
+    },
+    "suppQuoteDetFromEndTime" : {
+      "meaning" : "suppQuoteDetFromEndTime"
+    },
+    "suppQuoteDetFromReceiptDate" : {
+      "meaning" : "suppQuoteDetFromReceiptDate"
+    },
+    "suppQuoteDetFromUpdateTime" : {
+      "meaning" : "suppQuoteDetFromUpdateTime"
+    },
+    "suppQuoteDetFscType" : {
+      "meaning" : "供应商报价明细FSC声明"
+    },
+    "suppQuoteDetGenerativePeople" : {
+      "meaning" : "供应商报价明细下发人"
+    },
+    "suppQuoteDetGenerativeState" : {
+      "meaning" : "供应商报价明细下发状态"
+    },
+    "suppQuoteDetGroovyScript" : {
+      "meaning" : "供应商报价明细groovy脚本"
+    },
+    "suppQuoteDetGropeCode" : {
+      "meaning" : "供应商报价明细搜索码"
+    },
+    "suppQuoteDetHasPriceLimit" : {
+      "meaning" : "供应商报价明细是否限价"
+    },
+    "suppQuoteDetId" : {
+      "meaning" : "供应商报价明细主键ID",
+      "is_primary" : true
+    },
+    "suppQuoteDetInUsed" : {
+      "meaning" : "供应商报价明细是否被使用"
+    },
+    "suppQuoteDetInvTypeTaxRateId" : {
+      "meaning" : "供应商报价明细发票税率id"
+    },
+    "suppQuoteDetIsBanned" : {
+      "meaning" : "供应商报价明细是否被禁用"
+    },
+    "suppQuoteDetIsDeleted" : {
+      "meaning" : "供应商报价明细是否被删除"
+    },
+    "suppQuoteDetIsLeaf" : {
+      "meaning" : "供应商报价明细是否叶子节点"
+    },
+    "suppQuoteDetIsMainFlow" : {
+      "meaning" : "供应商报价明细是否是主流程"
+    },
+    "suppQuoteDetIsManualModificationDate" : {
+      "meaning" : "供应商报价明细是否手动修改计划生产时间"
+    },
+    "suppQuoteDetIsolation" : {
+      "meaning" : "供应商报价明细智能节点数据隔离标识"
+    },
+    "suppQuoteDetItemId" : {
+      "meaning" : "供应商报价明细定价项目id。可以是工序、物料、产品。"
+    },
+    "suppQuoteDetJsScript" : {
+      "meaning" : "供应商报价明细js脚本"
+    },
+    "suppQuoteDetMarkupRate" : {
+      "meaning" : "供应商报价明细上浮率"
+    },
+    "suppQuoteDetMatAlias" : {
+      "meaning" : "供应商报价明细物料别名"
+    },
+    "suppQuoteDetMaterialId" : {
+      "meaning" : "供应商报价明细物料id"
+    },
+    "suppQuoteDetMaxQty" : {
+      "meaning" : "供应商报价明细最大数量"
+    },
+    "suppQuoteDetMaxSupplierQty" : {
+      "meaning" : "供应商报价明细最大供应量"
+    },
+    "suppQuoteDetMinOrderQty" : {
+      "meaning" : "供应商报价明细起订量"
+    },
+    "suppQuoteDetMinPrice" : {
+      "meaning" : "供应商报价明细起步价"
+    },
+    "suppQuoteDetMinQty" : {
+      "meaning" : "供应商报价明细最小数量"
+    },
+    "suppQuoteDetName" : {
+      "meaning" : "供应商报价明细智能节点名"
+    },
+    "suppQuoteDetNameCodeSearch" : {
+      "meaning" : "供应商报价明细name、user_code模糊搜索"
+    },
+    "suppQuoteDetNumberExtra1" : {
+      "meaning" : "供应商报价明细扩展数量1"
+    },
+    "suppQuoteDetNumberExtra2" : {
+      "meaning" : "供应商报价明细扩展数量2"
+    },
+    "suppQuoteDetNumberExtra3" : {
+      "meaning" : "供应商报价明细扩展数量3"
+    },
+    "suppQuoteDetNumberExtra4" : {
+      "meaning" : "供应商报价明细扩展数量4"
+    },
+    "suppQuoteDetNumberExtra5" : {
+      "meaning" : "供应商报价明细扩展数量5"
+    },
+    "suppQuoteDetParentId" : {
+      "meaning" : "供应商报价明细父节点ID"
+    },
+    "suppQuoteDetPlannedOutputQuantity" : {
+      "meaning" : "供应商报价明细计划产出数量"
+    },
+    "suppQuoteDetPlannedTimeRequired" : {
+      "meaning" : "供应商报价明细计划需时(小时)"
+    },
+    "suppQuoteDetPrintTimes" : {
+      "meaning" : "供应商报价明细打印次数"
+    },
+    "suppQuoteDetPriority" : {
+      "meaning" : "供应商报价明细优先级"
+    },
+    "suppQuoteDetProcessInstanceId" : {
+      "meaning" : "供应商报价明细流程实例ID"
+    },
+    "suppQuoteDetProductionProcessesTypeId" : {
+      "meaning" : "供应商报价明细工序类型ID"
+    },
+    "suppQuoteDetProductionShiftId" : {
+      "meaning" : "供应商报价明细生产班次ID"
+    },
+    "suppQuoteDetQuantity" : {
+      "meaning" : "供应商报价明细任务数量"
+    },
+    "suppQuoteDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "供应商报价明细含税报价单价(吨价，平方价，千平方英寸)"
+    },
+    "suppQuoteDetReceiptDate" : {
+      "meaning" : "供应商报价明细单据日期"
+    },
+    "suppQuoteDetReceiptType" : {
+      "meaning" : "供应商报价明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "suppQuoteDetRelatedTasksId" : {
+      "meaning" : "供应商报价明细关联任务id"
+    },
+    "suppQuoteDetSerialNumber" : {
+      "meaning" : "供应商报价明细顺序号"
+    },
+    "suppQuoteDetSource" : {
+      "meaning" : "供应商报价明细源"
+    },
+    "suppQuoteDetSourceType" : {
+      "meaning" : "供应商报价明细来源类型"
+    },
+    "suppQuoteDetState" : {
+      "meaning" : "供应商报价明细通用状态"
+    },
+    "suppQuoteDetSuppQuoteActualTimeRequired" : {
+      "meaning" : "供应商报价明细实际需时(小时)"
+    },
+    "suppQuoteDetSuppQuoteAdjustmentTimeRequired" : {
+      "meaning" : "供应商报价明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "suppQuoteDetSuppQuoteApplicationId" : {
+      "meaning" : "供应商报价明细应用ID"
+    },
+    "suppQuoteDetSuppQuoteAuditDate" : {
+      "meaning" : "供应商报价明细审核时间"
+    },
+    "suppQuoteDetSuppQuoteAuditStatus" : {
+      "meaning" : "供应商报价明细审核状态"
+    },
+    "suppQuoteDetSuppQuoteAvailableScheduleId" : {
+      "meaning" : "供应商报价明细可用日程id"
+    },
+    "suppQuoteDetSuppQuoteBeginTime" : {
+      "meaning" : "供应商报价明细开始时间"
+    },
+    "suppQuoteDetSuppQuoteBizVersion" : {
+      "meaning" : "供应商报价明细业务自定义版本号"
+    },
+    "suppQuoteDetSuppQuoteBriefName" : {
+      "meaning" : "供应商报价明细简称"
+    },
+    "suppQuoteDetSuppQuoteBusDivisId" : {
+      "meaning" : "供应商报价明细事业部id"
+    },
+    "suppQuoteDetSuppQuoteClazz" : {
+      "meaning" : "供应商报价明细子类 类名（表和类一一对应）"
+    },
+    "suppQuoteDetSuppQuoteClosedReason" : {
+      "meaning" : "供应商报价明细结案原因"
+    },
+    "suppQuoteDetSuppQuoteClosedStatus" : {
+      "meaning" : "供应商报价明细结案状态"
+    },
+    "suppQuoteDetSuppQuoteComment" : {
+      "meaning" : "供应商报价明细评论"
+    },
+    "suppQuoteDetSuppQuoteCompleteQuantity" : {
+      "meaning" : "供应商报价明细完成数量"
+    },
+    "suppQuoteDetSuppQuoteCompleteStatus" : {
+      "meaning" : "供应商报价明细完成状态"
+    },
+    "suppQuoteDetSuppQuoteCreateTime" : {
+      "meaning" : "供应商报价明细创建时间"
+    },
+    "suppQuoteDetSuppQuoteCreator" : {
+      "meaning" : "供应商报价明细创建人"
+    },
+    "suppQuoteDetSuppQuoteCreatorId" : {
+      "meaning" : "供应商报价明细创建人ID"
+    },
+    "suppQuoteDetSuppQuoteCurrencyId" : {
+      "meaning" : "供应商报价明细币种id"
+    },
+    "suppQuoteDetSuppQuoteDateExtra1" : {
+      "meaning" : "供应商报价明细扩展时间1"
+    },
+    "suppQuoteDetSuppQuoteDateExtra2" : {
+      "meaning" : "供应商报价明细扩展时间2"
+    },
+    "suppQuoteDetSuppQuoteDateExtra3" : {
+      "meaning" : "供应商报价明细扩展时间3"
+    },
+    "suppQuoteDetSuppQuoteDateExtra4" : {
+      "meaning" : "供应商报价明细扩展时间4"
+    },
+    "suppQuoteDetSuppQuoteDateExtra5" : {
+      "meaning" : "供应商报价明细扩展时间5"
+    },
+    "suppQuoteDetSuppQuoteDefaultType" : {
+      "meaning" : "供应商报价明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "suppQuoteDetSuppQuoteDeliveryDate" : {
+      "meaning" : "供应商报价明细交货日期"
+    },
+    "suppQuoteDetSuppQuoteDescription" : {
+      "meaning" : "供应商报价明细描述"
+    },
+    "suppQuoteDetSuppQuoteEndTime" : {
+      "meaning" : "供应商报价明细结束时间"
+    },
+    "suppQuoteDetSuppQuoteEndTimeRequired" : {
+      "meaning" : "供应商报价明细最后需时(小时)"
+    },
+    "suppQuoteDetSuppQuoteEngName" : {
+      "meaning" : "供应商报价明细英文名称"
+    },
+    "suppQuoteDetSuppQuoteEquipmentId" : {
+      "meaning" : "供应商报价明细设备id"
+    },
+    "suppQuoteDetSuppQuoteExchangeRateId" : {
+      "meaning" : "供应商报价明细币种汇率id"
+    },
+    "suppQuoteDetSuppQuoteExtension" : {
+      "meaning" : "供应商报价明细扩展数据"
+    },
+    "suppQuoteDetSuppQuoteExternalState" : {
+      "meaning" : "供应商报价明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "suppQuoteDetSuppQuoteFilterClazz" : {
+      "meaning" : "供应商报价明细冗余字段用于筛选"
+    },
+    "suppQuoteDetSuppQuoteFlags" : {
+      "meaning" : "供应商报价明细63位标志位"
+    },
+    "suppQuoteDetSuppQuoteFromAuditDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromAuditDate"
+    },
+    "suppQuoteDetSuppQuoteFromBeginTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromBeginTime"
+    },
+    "suppQuoteDetSuppQuoteFromCreateTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromCreateTime"
+    },
+    "suppQuoteDetSuppQuoteFromDateExtra1" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDateExtra1"
+    },
+    "suppQuoteDetSuppQuoteFromDateExtra2" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDateExtra2"
+    },
+    "suppQuoteDetSuppQuoteFromDateExtra3" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDateExtra3"
+    },
+    "suppQuoteDetSuppQuoteFromDateExtra4" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDateExtra4"
+    },
+    "suppQuoteDetSuppQuoteFromDateExtra5" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDateExtra5"
+    },
+    "suppQuoteDetSuppQuoteFromDeliveryDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromDeliveryDate"
+    },
+    "suppQuoteDetSuppQuoteFromEndTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromEndTime"
+    },
+    "suppQuoteDetSuppQuoteFromReceiptDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromReceiptDate"
+    },
+    "suppQuoteDetSuppQuoteFromUpdateTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteFromUpdateTime"
+    },
+    "suppQuoteDetSuppQuoteFscType" : {
+      "meaning" : "供应商报价明细FSC声明"
+    },
+    "suppQuoteDetSuppQuoteGenerativePeople" : {
+      "meaning" : "供应商报价明细下发人"
+    },
+    "suppQuoteDetSuppQuoteGenerativeState" : {
+      "meaning" : "供应商报价明细下发状态"
+    },
+    "suppQuoteDetSuppQuoteGroovyScript" : {
+      "meaning" : "供应商报价明细groovy脚本"
+    },
+    "suppQuoteDetSuppQuoteGropeCode" : {
+      "meaning" : "供应商报价明细搜索码"
+    },
+    "suppQuoteDetSuppQuoteId" : {
+      "meaning" : "供应商报价明细主键ID"
+    },
+    "suppQuoteDetSuppQuoteInUsed" : {
+      "meaning" : "供应商报价明细是否被使用"
+    },
+    "suppQuoteDetSuppQuoteInvTypeTaxRateId" : {
+      "meaning" : "供应商报价明细发票税率id"
+    },
+    "suppQuoteDetSuppQuoteIsBanned" : {
+      "meaning" : "供应商报价明细是否被禁用"
+    },
+    "suppQuoteDetSuppQuoteIsDeleted" : {
+      "meaning" : "供应商报价明细是否被删除"
+    },
+    "suppQuoteDetSuppQuoteIsLeaf" : {
+      "meaning" : "供应商报价明细是否叶子节点"
+    },
+    "suppQuoteDetSuppQuoteIsMainFlow" : {
+      "meaning" : "供应商报价明细是否是主流程"
+    },
+    "suppQuoteDetSuppQuoteIsManualModificationDate" : {
+      "meaning" : "供应商报价明细是否手动修改计划生产时间"
+    },
+    "suppQuoteDetSuppQuoteIsolation" : {
+      "meaning" : "供应商报价明细智能节点数据隔离标识"
+    },
+    "suppQuoteDetSuppQuoteJsScript" : {
+      "meaning" : "供应商报价明细js脚本"
+    },
+    "suppQuoteDetSuppQuoteMaterialId" : {
+      "meaning" : "供应商报价明细物料id"
+    },
+    "suppQuoteDetSuppQuoteName" : {
+      "meaning" : "供应商报价明细智能节点名"
+    },
+    "suppQuoteDetSuppQuoteNameCodeSearch" : {
+      "meaning" : "供应商报价明细name、user_code模糊搜索"
+    },
+    "suppQuoteDetSuppQuoteNumberExtra1" : {
+      "meaning" : "供应商报价明细扩展数量1"
+    },
+    "suppQuoteDetSuppQuoteNumberExtra2" : {
+      "meaning" : "供应商报价明细扩展数量2"
+    },
+    "suppQuoteDetSuppQuoteNumberExtra3" : {
+      "meaning" : "供应商报价明细扩展数量3"
+    },
+    "suppQuoteDetSuppQuoteNumberExtra4" : {
+      "meaning" : "供应商报价明细扩展数量4"
+    },
+    "suppQuoteDetSuppQuoteNumberExtra5" : {
+      "meaning" : "供应商报价明细扩展数量5"
+    },
+    "suppQuoteDetSuppQuoteParentId" : {
+      "meaning" : "供应商报价明细父节点ID"
+    },
+    "suppQuoteDetSuppQuotePartnerId" : {
+      "meaning" : "供应商报价明细合作方id 加工商、供应商、客户"
+    },
+    "suppQuoteDetSuppQuotePlannedOutputQuantity" : {
+      "meaning" : "供应商报价明细计划产出数量"
+    },
+    "suppQuoteDetSuppQuotePlannedTimeRequired" : {
+      "meaning" : "供应商报价明细计划需时(小时)"
+    },
+    "suppQuoteDetSuppQuotePrintTimes" : {
+      "meaning" : "供应商报价明细打印次数"
+    },
+    "suppQuoteDetSuppQuotePriority" : {
+      "meaning" : "供应商报价明细优先级"
+    },
+    "suppQuoteDetSuppQuoteProcessInstanceId" : {
+      "meaning" : "供应商报价明细流程实例ID"
+    },
+    "suppQuoteDetSuppQuoteProductionProcessesTypeId" : {
+      "meaning" : "供应商报价明细工序类型ID"
+    },
+    "suppQuoteDetSuppQuoteProductionShiftId" : {
+      "meaning" : "供应商报价明细生产班次ID"
+    },
+    "suppQuoteDetSuppQuoteQuantity" : {
+      "meaning" : "供应商报价明细任务数量"
+    },
+    "suppQuoteDetSuppQuoteReceiptDate" : {
+      "meaning" : "供应商报价明细单据日期"
+    },
+    "suppQuoteDetSuppQuoteReceiptType" : {
+      "meaning" : "供应商报价明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "suppQuoteDetSuppQuoteRelatedTasksId" : {
+      "meaning" : "供应商报价明细关联任务id"
+    },
+    "suppQuoteDetSuppQuoteSerialNumber" : {
+      "meaning" : "供应商报价明细顺序号"
+    },
+    "suppQuoteDetSuppQuoteSource" : {
+      "meaning" : "供应商报价明细源"
+    },
+    "suppQuoteDetSuppQuoteSourceType" : {
+      "meaning" : "供应商报价明细来源类型"
+    },
+    "suppQuoteDetSuppQuoteState" : {
+      "meaning" : "供应商报价明细通用状态"
+    },
+    "suppQuoteDetSuppQuoteSystemCode" : {
+      "meaning" : "供应商报价明细系统编码"
+    },
+    "suppQuoteDetSuppQuoteTarget" : {
+      "meaning" : "供应商报价明细目标"
+    },
+    "suppQuoteDetSuppQuoteTaskNodeName" : {
+      "meaning" : "供应商报价明细任务节点名称"
+    },
+    "suppQuoteDetSuppQuoteTenantId" : {
+      "meaning" : "供应商报价明细租户ID"
+    },
+    "suppQuoteDetSuppQuoteThirdPartyClass" : {
+      "meaning" : "供应商报价明细第三方分类"
+    },
+    "suppQuoteDetSuppQuoteThirdPartyId" : {
+      "meaning" : "供应商报价明细第三方系统中的唯一ID"
+    },
+    "suppQuoteDetSuppQuoteThirdPartyName" : {
+      "meaning" : "供应商报价明细第三方名称"
+    },
+    "suppQuoteDetSuppQuoteToAuditDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteToAuditDate"
+    },
+    "suppQuoteDetSuppQuoteToBeginTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteToBeginTime"
+    },
+    "suppQuoteDetSuppQuoteToCreateTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteToCreateTime"
+    },
+    "suppQuoteDetSuppQuoteToDateExtra1" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDateExtra1"
+    },
+    "suppQuoteDetSuppQuoteToDateExtra2" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDateExtra2"
+    },
+    "suppQuoteDetSuppQuoteToDateExtra3" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDateExtra3"
+    },
+    "suppQuoteDetSuppQuoteToDateExtra4" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDateExtra4"
+    },
+    "suppQuoteDetSuppQuoteToDateExtra5" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDateExtra5"
+    },
+    "suppQuoteDetSuppQuoteToDeliveryDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteToDeliveryDate"
+    },
+    "suppQuoteDetSuppQuoteToEndTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteToEndTime"
+    },
+    "suppQuoteDetSuppQuoteToReceiptDate" : {
+      "meaning" : "suppQuoteDetSuppQuoteToReceiptDate"
+    },
+    "suppQuoteDetSuppQuoteToUpdateTime" : {
+      "meaning" : "suppQuoteDetSuppQuoteToUpdateTime"
+    },
+    "suppQuoteDetSuppQuoteUnitCode" : {
+      "meaning" : "供应商报价明细单位id"
+    },
+    "suppQuoteDetSuppQuoteUpdateTime" : {
+      "meaning" : "供应商报价明细更新时间"
+    },
+    "suppQuoteDetSuppQuoteUpdater" : {
+      "meaning" : "供应商报价明细更新人"
+    },
+    "suppQuoteDetSuppQuoteUpdaterId" : {
+      "meaning" : "供应商报价明细更新人ID"
+    },
+    "suppQuoteDetSuppQuoteUserCode" : {
+      "meaning" : "供应商报价明细智能节点的唯一编码"
+    },
+    "suppQuoteDetSuppQuoteVarExtra1" : {
+      "meaning" : "供应商报价明细扩展1"
+    },
+    "suppQuoteDetSuppQuoteVarExtra2" : {
+      "meaning" : "供应商报价明细扩展2"
+    },
+    "suppQuoteDetSuppQuoteVarExtra3" : {
+      "meaning" : "供应商报价明细扩展3"
+    },
+    "suppQuoteDetSuppQuoteVarExtra4" : {
+      "meaning" : "供应商报价明细扩展4"
+    },
+    "suppQuoteDetSuppQuoteVarExtra5" : {
+      "meaning" : "供应商报价明细扩展5"
+    },
+    "suppQuoteDetSuppQuoteVersion" : {
+      "meaning" : "供应商报价明细版本号"
+    },
+    "suppQuoteDetSystemCode" : {
+      "meaning" : "供应商报价明细系统编码"
+    },
+    "suppQuoteDetTarget" : {
+      "meaning" : "供应商报价明细目标"
+    },
+    "suppQuoteDetTaskNodeName" : {
+      "meaning" : "供应商报价明细任务节点名称"
+    },
+    "suppQuoteDetTenantId" : {
+      "meaning" : "供应商报价明细租户ID"
+    },
+    "suppQuoteDetThirdPartyClass" : {
+      "meaning" : "供应商报价明细第三方分类"
+    },
+    "suppQuoteDetThirdPartyId" : {
+      "meaning" : "供应商报价明细第三方系统中的唯一ID"
+    },
+    "suppQuoteDetThirdPartyName" : {
+      "meaning" : "供应商报价明细第三方名称"
+    },
+    "suppQuoteDetToAuditDate" : {
+      "meaning" : "suppQuoteDetToAuditDate"
+    },
+    "suppQuoteDetToBeginTime" : {
+      "meaning" : "suppQuoteDetToBeginTime"
+    },
+    "suppQuoteDetToCreateTime" : {
+      "meaning" : "suppQuoteDetToCreateTime"
+    },
+    "suppQuoteDetToDateExtra1" : {
+      "meaning" : "suppQuoteDetToDateExtra1"
+    },
+    "suppQuoteDetToDateExtra2" : {
+      "meaning" : "suppQuoteDetToDateExtra2"
+    },
+    "suppQuoteDetToDateExtra3" : {
+      "meaning" : "suppQuoteDetToDateExtra3"
+    },
+    "suppQuoteDetToDateExtra4" : {
+      "meaning" : "suppQuoteDetToDateExtra4"
+    },
+    "suppQuoteDetToDateExtra5" : {
+      "meaning" : "suppQuoteDetToDateExtra5"
+    },
+    "suppQuoteDetToDeliveryDate" : {
+      "meaning" : "suppQuoteDetToDeliveryDate"
+    },
+    "suppQuoteDetToEndTime" : {
+      "meaning" : "suppQuoteDetToEndTime"
+    },
+    "suppQuoteDetToReceiptDate" : {
+      "meaning" : "suppQuoteDetToReceiptDate"
+    },
+    "suppQuoteDetToUpdateTime" : {
+      "meaning" : "suppQuoteDetToUpdateTime"
+    },
+    "suppQuoteDetUnitCode" : {
+      "meaning" : "供应商报价明细单位id"
+    },
+    "suppQuoteDetUnitId" : {
+      "meaning" : "供应商报价明细计价单位id"
+    },
+    "suppQuoteDetUnitPriceIncludingTax" : {
+      "meaning" : "供应商报价明细含税单价"
+    },
+    "suppQuoteDetUpdateTime" : {
+      "meaning" : "供应商报价明细更新时间"
+    },
+    "suppQuoteDetUpdater" : {
+      "meaning" : "供应商报价明细更新人"
+    },
+    "suppQuoteDetUpdaterId" : {
+      "meaning" : "供应商报价明细更新人ID"
+    },
+    "suppQuoteDetUserCode" : {
+      "meaning" : "供应商报价明细智能节点的唯一编码"
+    },
+    "suppQuoteDetVarExtra1" : {
+      "meaning" : "供应商报价明细扩展1"
+    },
+    "suppQuoteDetVarExtra2" : {
+      "meaning" : "供应商报价明细扩展2"
+    },
+    "suppQuoteDetVarExtra3" : {
+      "meaning" : "供应商报价明细扩展3"
+    },
+    "suppQuoteDetVarExtra4" : {
+      "meaning" : "供应商报价明细扩展4"
+    },
+    "suppQuoteDetVarExtra5" : {
+      "meaning" : "供应商报价明细扩展5"
+    },
+    "suppQuoteDetVersion" : {
+      "meaning" : "供应商报价明细版本号"
+    }
+  }
+}

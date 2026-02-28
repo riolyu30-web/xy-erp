@@ -1,0 +1,699 @@
+{
+      "api_name": "/material-specification-type/findList",
+      "table_name": "物料规格类型表",
+      "request": {
+        "matSpecTypeATMatUnitClazz": "MATERIAL_UNIT",
+        "matSpecTypeClazz": "MATERIAL_SPECIFICATION_TYPE"
+      },
+      "mainTabClazz": "MATERIAL_SPECIFICATION_TYPE",
+      "response": {
+        "matSpecTypeATMatUnitApplicationId": {
+          "meaning": "物料规格类型表应用ID"
+        },
+        "matSpecTypeATMatUnitAuditDate": {
+          "meaning": "matSpecTypeATMatUnitAuditDate"
+        },
+        "matSpecTypeATMatUnitAuditStatus": {
+          "meaning": "物料规格类型表审核状态"
+        },
+        "matSpecTypeATMatUnitBizVersion": {
+          "meaning": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeATMatUnitBriefName": {
+          "meaning": "物料规格类型表简称"
+        },
+        "matSpecTypeATMatUnitBusDivisId": {
+          "meaning": "物料规格类型表事业部id"
+        },
+        "matSpecTypeATMatUnitClazz": {
+          "meaning": "物料规格类型表子类 类名（表和类一一对应）"
+        },
+        "matSpecTypeATMatUnitComment": {
+          "meaning": "物料规格类型表评论"
+        },
+        "matSpecTypeATMatUnitCreateTime": {
+          "meaning": "matSpecTypeATMatUnitCreateTime"
+        },
+        "matSpecTypeATMatUnitCreator": {
+          "meaning": "物料规格类型表创建人"
+        },
+        "matSpecTypeATMatUnitCreatorId": {
+          "meaning": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeATMatUnitDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitDateExtra1"
+        },
+        "matSpecTypeATMatUnitDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitDateExtra2"
+        },
+        "matSpecTypeATMatUnitDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitDateExtra3"
+        },
+        "matSpecTypeATMatUnitDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitDateExtra4"
+        },
+        "matSpecTypeATMatUnitDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitDateExtra5"
+        },
+        "matSpecTypeATMatUnitDefaultType": {
+          "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecTypeATMatUnitDescription": {
+          "meaning": "物料规格类型表描述"
+        },
+        "matSpecTypeATMatUnitEngName": {
+          "meaning": "物料规格类型表英文名称"
+        },
+        "matSpecTypeATMatUnitExtension": {
+          "meaning": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeATMatUnitExternalState": {
+          "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecTypeATMatUnitFlags": {
+          "meaning": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeATMatUnitFromAuditDate": {
+          "meaning": "matSpecTypeATMatUnitFromAuditDate"
+        },
+        "matSpecTypeATMatUnitFromCreateTime": {
+          "meaning": "matSpecTypeATMatUnitFromCreateTime"
+        },
+        "matSpecTypeATMatUnitFromDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitFromDateExtra1"
+        },
+        "matSpecTypeATMatUnitFromDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitFromDateExtra2"
+        },
+        "matSpecTypeATMatUnitFromDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitFromDateExtra3"
+        },
+        "matSpecTypeATMatUnitFromDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitFromDateExtra4"
+        },
+        "matSpecTypeATMatUnitFromDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitFromDateExtra5"
+        },
+        "matSpecTypeATMatUnitFromUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitFromUpdateTime"
+        },
+        "matSpecTypeATMatUnitGroovyScript": {
+          "meaning": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeATMatUnitGropeCode": {
+          "meaning": "物料规格类型表搜索码"
+        },
+        "matSpecTypeATMatUnitId": {
+          "meaning": "matSpecTypeATMatUnitId"
+        },
+        "matSpecTypeATMatUnitInUsed": {
+          "meaning": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeATMatUnitIsBanned": {
+          "meaning": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeATMatUnitIsDeleted": {
+          "meaning": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeATMatUnitIsMainFlow": {
+          "meaning": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeATMatUnitIsolation": {
+          "meaning": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeATMatUnitJsScript": {
+          "meaning": "物料规格类型表js脚本"
+        },
+        "matSpecTypeATMatUnitName": {
+          "meaning": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeATMatUnitNameCodeSearch": {
+          "meaning": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeATMatUnitNumberExtra1": {
+          "meaning": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeATMatUnitNumberExtra2": {
+          "meaning": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeATMatUnitNumberExtra3": {
+          "meaning": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeATMatUnitNumberExtra4": {
+          "meaning": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeATMatUnitNumberExtra5": {
+          "meaning": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeATMatUnitParentId": {
+          "meaning": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeATMatUnitProcessInstanceId": {
+          "meaning": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeATMatUnitSerialNumber": {
+          "meaning": "物料规格类型表顺序号"
+        },
+        "matSpecTypeATMatUnitState": {
+          "meaning": "物料规格类型表通用状态"
+        },
+        "matSpecTypeATMatUnitSystemCode": {
+          "meaning": "物料规格类型表系统编码"
+        },
+        "matSpecTypeATMatUnitTaskNodeName": {
+          "meaning": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeATMatUnitTenantId": {
+          "meaning": "matSpecTypeATMatUnitTenantId"
+        },
+        "matSpecTypeATMatUnitThirdPartyClass": {
+          "meaning": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeATMatUnitThirdPartyId": {
+          "meaning": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeATMatUnitThirdPartyName": {
+          "meaning": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeATMatUnitToAuditDate": {
+          "meaning": "matSpecTypeATMatUnitToAuditDate"
+        },
+        "matSpecTypeATMatUnitToCreateTime": {
+          "meaning": "matSpecTypeATMatUnitToCreateTime"
+        },
+        "matSpecTypeATMatUnitToDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitToDateExtra1"
+        },
+        "matSpecTypeATMatUnitToDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitToDateExtra2"
+        },
+        "matSpecTypeATMatUnitToDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitToDateExtra3"
+        },
+        "matSpecTypeATMatUnitToDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitToDateExtra4"
+        },
+        "matSpecTypeATMatUnitToDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitToDateExtra5"
+        },
+        "matSpecTypeATMatUnitToUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitToUpdateTime"
+        },
+        "matSpecTypeATMatUnitTypeApplicationId": {
+          "meaning": "物料规格类型表应用ID"
+        },
+        "matSpecTypeATMatUnitTypeAuditDate": {
+          "meaning": "matSpecTypeATMatUnitTypeAuditDate"
+        },
+        "matSpecTypeATMatUnitTypeAuditStatus": {
+          "meaning": "物料规格类型表审核状态"
+        },
+        "matSpecTypeATMatUnitTypeBizVersion": {
+          "meaning": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeATMatUnitTypeBriefName": {
+          "meaning": "物料规格类型表简称"
+        },
+        "matSpecTypeATMatUnitTypeBusDivisId": {
+          "meaning": "物料规格类型表事业部id"
+        },
+        "matSpecTypeATMatUnitTypeClazz": {
+          "meaning": "物料规格类型表子类 类名（表和类一一对应）"
+        },
+        "matSpecTypeATMatUnitTypeCode": {
+          "meaning": "物料规格类型表link类型编码(-查询入参-)"
+        },
+        "matSpecTypeATMatUnitTypeCodes": {
+          "meaning": "物料规格类型表类型Code列表(-查询入参-)"
+        },
+        "matSpecTypeATMatUnitTypeComment": {
+          "meaning": "物料规格类型表评论"
+        },
+        "matSpecTypeATMatUnitTypeCreateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeCreateTime"
+        },
+        "matSpecTypeATMatUnitTypeCreator": {
+          "meaning": "物料规格类型表创建人"
+        },
+        "matSpecTypeATMatUnitTypeCreatorId": {
+          "meaning": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitTypeDateExtra1"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitTypeDateExtra2"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitTypeDateExtra3"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitTypeDateExtra4"
+        },
+        "matSpecTypeATMatUnitTypeDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitTypeDateExtra5"
+        },
+        "matSpecTypeATMatUnitTypeDefaultType": {
+          "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecTypeATMatUnitTypeDefaultUnitId": {
+          "meaning": "matSpecTypeATMatUnitTypeDefaultUnitId"
+        },
+        "matSpecTypeATMatUnitTypeDescription": {
+          "meaning": "物料规格类型表描述"
+        },
+        "matSpecTypeATMatUnitTypeEngName": {
+          "meaning": "物料规格类型表英文名称"
+        },
+        "matSpecTypeATMatUnitTypeExtension": {
+          "meaning": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeATMatUnitTypeExternalState": {
+          "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecTypeATMatUnitTypeFlags": {
+          "meaning": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeATMatUnitTypeFromAuditDate": {
+          "meaning": "matSpecTypeATMatUnitTypeFromAuditDate"
+        },
+        "matSpecTypeATMatUnitTypeFromCreateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeFromCreateTime"
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitTypeFromDateExtra1"
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitTypeFromDateExtra2"
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitTypeFromDateExtra3"
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitTypeFromDateExtra4"
+        },
+        "matSpecTypeATMatUnitTypeFromDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitTypeFromDateExtra5"
+        },
+        "matSpecTypeATMatUnitTypeFromUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeFromUpdateTime"
+        },
+        "matSpecTypeATMatUnitTypeGroovyScript": {
+          "meaning": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeATMatUnitTypeGropeCode": {
+          "meaning": "物料规格类型表搜索码"
+        },
+        "matSpecTypeATMatUnitTypeId": {
+          "meaning": "matSpecTypeATMatUnitTypeId"
+        },
+        "matSpecTypeATMatUnitTypeInUsed": {
+          "meaning": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeATMatUnitTypeIsBanned": {
+          "meaning": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeATMatUnitTypeIsDeleted": {
+          "meaning": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeATMatUnitTypeIsMainFlow": {
+          "meaning": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeATMatUnitTypeIsolation": {
+          "meaning": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeATMatUnitTypeJsScript": {
+          "meaning": "物料规格类型表js脚本"
+        },
+        "matSpecTypeATMatUnitTypeName": {
+          "meaning": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeATMatUnitTypeNameCodeSearch": {
+          "meaning": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra1": {
+          "meaning": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra2": {
+          "meaning": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra3": {
+          "meaning": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra4": {
+          "meaning": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeATMatUnitTypeNumberExtra5": {
+          "meaning": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeATMatUnitTypeParentId": {
+          "meaning": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeATMatUnitTypeProcessInstanceId": {
+          "meaning": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeATMatUnitTypeSerialNumber": {
+          "meaning": "物料规格类型表顺序号"
+        },
+        "matSpecTypeATMatUnitTypeState": {
+          "meaning": "物料规格类型表通用状态"
+        },
+        "matSpecTypeATMatUnitTypeSystemCode": {
+          "meaning": "物料规格类型表系统编码"
+        },
+        "matSpecTypeATMatUnitTypeTaskNodeName": {
+          "meaning": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeATMatUnitTypeTenantId": {
+          "meaning": "matSpecTypeATMatUnitTypeTenantId"
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyClass": {
+          "meaning": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyId": {
+          "meaning": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeATMatUnitTypeThirdPartyName": {
+          "meaning": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeATMatUnitTypeToAuditDate": {
+          "meaning": "matSpecTypeATMatUnitTypeToAuditDate"
+        },
+        "matSpecTypeATMatUnitTypeToCreateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeToCreateTime"
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra1": {
+          "meaning": "matSpecTypeATMatUnitTypeToDateExtra1"
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra2": {
+          "meaning": "matSpecTypeATMatUnitTypeToDateExtra2"
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra3": {
+          "meaning": "matSpecTypeATMatUnitTypeToDateExtra3"
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra4": {
+          "meaning": "matSpecTypeATMatUnitTypeToDateExtra4"
+        },
+        "matSpecTypeATMatUnitTypeToDateExtra5": {
+          "meaning": "matSpecTypeATMatUnitTypeToDateExtra5"
+        },
+        "matSpecTypeATMatUnitTypeToUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeToUpdateTime"
+        },
+        "matSpecTypeATMatUnitTypeUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitTypeUpdateTime"
+        },
+        "matSpecTypeATMatUnitTypeUpdater": {
+          "meaning": "物料规格类型表更新人"
+        },
+        "matSpecTypeATMatUnitTypeUpdaterId": {
+          "meaning": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeATMatUnitTypeUserCode": {
+          "meaning": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra1": {
+          "meaning": "物料规格类型表扩展1"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra2": {
+          "meaning": "物料规格类型表扩展2"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra3": {
+          "meaning": "物料规格类型表扩展3"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra4": {
+          "meaning": "物料规格类型表扩展4"
+        },
+        "matSpecTypeATMatUnitTypeVarExtra5": {
+          "meaning": "物料规格类型表扩展5"
+        },
+        "matSpecTypeATMatUnitTypeVersion": {
+          "meaning": "物料规格类型表版本号"
+        },
+        "matSpecTypeATMatUnitUpdateTime": {
+          "meaning": "matSpecTypeATMatUnitUpdateTime"
+        },
+        "matSpecTypeATMatUnitUpdater": {
+          "meaning": "物料规格类型表更新人"
+        },
+        "matSpecTypeATMatUnitUpdaterId": {
+          "meaning": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeATMatUnitUserCode": {
+          "meaning": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeATMatUnitVarExtra1": {
+          "meaning": "物料规格类型表扩展1"
+        },
+        "matSpecTypeATMatUnitVarExtra2": {
+          "meaning": "物料规格类型表扩展2"
+        },
+        "matSpecTypeATMatUnitVarExtra3": {
+          "meaning": "物料规格类型表扩展3"
+        },
+        "matSpecTypeATMatUnitVarExtra4": {
+          "meaning": "物料规格类型表扩展4"
+        },
+        "matSpecTypeATMatUnitVarExtra5": {
+          "meaning": "物料规格类型表扩展5"
+        },
+        "matSpecTypeATMatUnitVersion": {
+          "meaning": "物料规格类型表版本号"
+        },
+        "matSpecTypeApplicationId": {
+          "meaning": "物料规格类型表应用ID"
+        },
+        "matSpecTypeAuditDate": {
+          "meaning": "物料规格类型表审核时间"
+        },
+        "matSpecTypeAuditStatus": {
+          "meaning": "物料规格类型表审核状态"
+        },
+        "matSpecTypeBizVersion": {
+          "meaning": "物料规格类型表业务自定义版本号"
+        },
+        "matSpecTypeBriefName": {
+          "meaning": "物料规格类型表简称"
+        },
+        "matSpecTypeBusDivisId": {
+          "meaning": "物料规格类型表事业部id"
+        },
+        "matSpecTypeClazz": {
+          "meaning": "物料规格类型表子类 类名（表和类一一对应）"
+        },
+        "matSpecTypeComment": {
+          "meaning": "物料规格类型表评论"
+        },
+        "matSpecTypeCreateTime": {
+          "meaning": "物料规格类型表创建时间"
+        },
+        "matSpecTypeCreator": {
+          "meaning": "物料规格类型表创建人"
+        },
+        "matSpecTypeCreatorId": {
+          "meaning": "物料规格类型表创建人ID"
+        },
+        "matSpecTypeDateExtra1": {
+          "meaning": "物料规格类型表扩展时间1"
+        },
+        "matSpecTypeDateExtra2": {
+          "meaning": "物料规格类型表扩展时间2"
+        },
+        "matSpecTypeDateExtra3": {
+          "meaning": "物料规格类型表扩展时间3"
+        },
+        "matSpecTypeDateExtra4": {
+          "meaning": "物料规格类型表扩展时间4"
+        },
+        "matSpecTypeDateExtra5": {
+          "meaning": "物料规格类型表扩展时间5"
+        },
+        "matSpecTypeDefaultType": {
+          "meaning": "物料规格类型表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecTypeDefaultUnitId": {
+          "meaning": "matSpecTypeDefaultUnitId"
+        },
+        "matSpecTypeDefaultValue": {
+          "meaning": "matSpecTypeDefaultValue"
+        },
+        "matSpecTypeDescription": {
+          "meaning": "物料规格类型表描述"
+        },
+        "matSpecTypeEngName": {
+          "meaning": "物料规格类型表英文名称"
+        },
+        "matSpecTypeExtension": {
+          "meaning": "物料规格类型表扩展数据"
+        },
+        "matSpecTypeExternalState": {
+          "meaning": "物料规格类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecTypeFlags": {
+          "meaning": "物料规格类型表63位标志位"
+        },
+        "matSpecTypeFromAuditDate": {
+          "meaning": "matSpecTypeFromAuditDate"
+        },
+        "matSpecTypeFromCreateTime": {
+          "meaning": "matSpecTypeFromCreateTime"
+        },
+        "matSpecTypeFromDateExtra1": {
+          "meaning": "matSpecTypeFromDateExtra1"
+        },
+        "matSpecTypeFromDateExtra2": {
+          "meaning": "matSpecTypeFromDateExtra2"
+        },
+        "matSpecTypeFromDateExtra3": {
+          "meaning": "matSpecTypeFromDateExtra3"
+        },
+        "matSpecTypeFromDateExtra4": {
+          "meaning": "matSpecTypeFromDateExtra4"
+        },
+        "matSpecTypeFromDateExtra5": {
+          "meaning": "matSpecTypeFromDateExtra5"
+        },
+        "matSpecTypeFromUpdateTime": {
+          "meaning": "matSpecTypeFromUpdateTime"
+        },
+        "matSpecTypeGroovyScript": {
+          "meaning": "物料规格类型表groovy脚本"
+        },
+        "matSpecTypeGropeCode": {
+          "meaning": "物料规格类型表搜索码"
+        },
+        "matSpecTypeId": {
+          "meaning": "物料规格类型表主键ID",
+          "is_primary": true
+        },
+        "matSpecTypeInUsed": {
+          "meaning": "物料规格类型表是否被使用"
+        },
+        "matSpecTypeIsBanned": {
+          "meaning": "物料规格类型表是否被禁用"
+        },
+        "matSpecTypeIsDeleted": {
+          "meaning": "物料规格类型表是否被删除"
+        },
+        "matSpecTypeIsMainFlow": {
+          "meaning": "物料规格类型表是否是主流程"
+        },
+        "matSpecTypeIsolation": {
+          "meaning": "物料规格类型表智能节点数据隔离标识"
+        },
+        "matSpecTypeJsScript": {
+          "meaning": "物料规格类型表js脚本"
+        },
+        "matSpecTypeName": {
+          "meaning": "物料规格类型表智能节点名"
+        },
+        "matSpecTypeNameCodeSearch": {
+          "meaning": "物料规格类型表name、user_code模糊搜索"
+        },
+        "matSpecTypeNumberExtra1": {
+          "meaning": "物料规格类型表扩展数量1"
+        },
+        "matSpecTypeNumberExtra2": {
+          "meaning": "物料规格类型表扩展数量2"
+        },
+        "matSpecTypeNumberExtra3": {
+          "meaning": "物料规格类型表扩展数量3"
+        },
+        "matSpecTypeNumberExtra4": {
+          "meaning": "物料规格类型表扩展数量4"
+        },
+        "matSpecTypeNumberExtra5": {
+          "meaning": "物料规格类型表扩展数量5"
+        },
+        "matSpecTypeParentId": {
+          "meaning": "物料规格类型表父节点ID"
+        },
+        "matSpecTypeProcessInstanceId": {
+          "meaning": "物料规格类型表流程实例ID"
+        },
+        "matSpecTypeSerialNumber": {
+          "meaning": "物料规格类型表顺序号"
+        },
+        "matSpecTypeState": {
+          "meaning": "物料规格类型表通用状态"
+        },
+        "matSpecTypeSystemCode": {
+          "meaning": "物料规格类型表系统编码"
+        },
+        "matSpecTypeTaskNodeName": {
+          "meaning": "物料规格类型表任务节点名称"
+        },
+        "matSpecTypeTenantId": {
+          "meaning": "matSpecTypeTenantId"
+        },
+        "matSpecTypeThirdPartyClass": {
+          "meaning": "物料规格类型表第三方分类"
+        },
+        "matSpecTypeThirdPartyId": {
+          "meaning": "物料规格类型表第三方系统中的唯一ID"
+        },
+        "matSpecTypeThirdPartyName": {
+          "meaning": "物料规格类型表第三方名称"
+        },
+        "matSpecTypeToAuditDate": {
+          "meaning": "matSpecTypeToAuditDate"
+        },
+        "matSpecTypeToCreateTime": {
+          "meaning": "matSpecTypeToCreateTime"
+        },
+        "matSpecTypeToDateExtra1": {
+          "meaning": "matSpecTypeToDateExtra1"
+        },
+        "matSpecTypeToDateExtra2": {
+          "meaning": "matSpecTypeToDateExtra2"
+        },
+        "matSpecTypeToDateExtra3": {
+          "meaning": "matSpecTypeToDateExtra3"
+        },
+        "matSpecTypeToDateExtra4": {
+          "meaning": "matSpecTypeToDateExtra4"
+        },
+        "matSpecTypeToDateExtra5": {
+          "meaning": "matSpecTypeToDateExtra5"
+        },
+        "matSpecTypeToUpdateTime": {
+          "meaning": "matSpecTypeToUpdateTime"
+        },
+        "matSpecTypeUnitTypeId": {
+          "meaning": "matSpecTypeUnitTypeId"
+        },
+        "matSpecTypeUpdateTime": {
+          "meaning": "物料规格类型表更新时间"
+        },
+        "matSpecTypeUpdater": {
+          "meaning": "物料规格类型表更新人"
+        },
+        "matSpecTypeUpdaterId": {
+          "meaning": "物料规格类型表更新人ID"
+        },
+        "matSpecTypeUserCode": {
+          "meaning": "物料规格类型表智能节点的唯一编码"
+        },
+        "matSpecTypeValueType": {
+          "meaning": "matSpecTypeValueType"
+        },
+        "matSpecTypeVarExtra1": {
+          "meaning": "物料规格类型表扩展1"
+        },
+        "matSpecTypeVarExtra2": {
+          "meaning": "物料规格类型表扩展2"
+        },
+        "matSpecTypeVarExtra3": {
+          "meaning": "物料规格类型表扩展3"
+        },
+        "matSpecTypeVarExtra4": {
+          "meaning": "物料规格类型表扩展4"
+        },
+        "matSpecTypeVarExtra5": {
+          "meaning": "物料规格类型表扩展5"
+        },
+        "matSpecTypeVersion": {
+          "meaning": "物料规格类型表版本号"
+        }
+      }
+    }

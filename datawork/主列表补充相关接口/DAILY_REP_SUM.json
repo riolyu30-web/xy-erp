@@ -1,0 +1,365 @@
+{
+  "api_name" : "/daily-rep-sum/findList",
+  "table_name" : "日报表",
+  "request" : {
+    "dailyRepSumClazz" : "DAILY_REP_SUM"
+  },
+  "mainTabClazz" : "DAILY_REP_SUM",
+  "response" : {
+    "dailyRepSumActualTimeRequired" : {
+      "meaning" : "日报表实际需时(小时)"
+    },
+    "dailyRepSumAdjustmentTimeRequired" : {
+      "meaning" : "日报表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "dailyRepSumApplicationId" : {
+      "meaning" : "日报表应用ID"
+    },
+    "dailyRepSumAuditDate" : {
+      "meaning" : "日报表审核时间"
+    },
+    "dailyRepSumAuditStatus" : {
+      "meaning" : "日报表审核状态"
+    },
+    "dailyRepSumAvailableScheduleId" : {
+      "meaning" : "日报表可用日程id"
+    },
+    "dailyRepSumBeginTime" : {
+      "meaning" : "日报表开始时间"
+    },
+    "dailyRepSumBizVersion" : {
+      "meaning" : "日报表业务自定义版本号"
+    },
+    "dailyRepSumBriefName" : {
+      "meaning" : "日报表简称"
+    },
+    "dailyRepSumBusDivisId" : {
+      "meaning" : "日报表事业部id"
+    },
+    "dailyRepSumClazz" : {
+      "meaning" : "日报表子类 类名（表和类一一对应）"
+    },
+    "dailyRepSumClosedReason" : {
+      "meaning" : "日报表结案原因"
+    },
+    "dailyRepSumClosedStatus" : {
+      "meaning" : "日报表结案状态"
+    },
+    "dailyRepSumComment" : {
+      "meaning" : "日报表评论"
+    },
+    "dailyRepSumCompleteQuantity" : {
+      "meaning" : "日报表完成数量"
+    },
+    "dailyRepSumCompleteStatus" : {
+      "meaning" : "日报表完成状态"
+    },
+    "dailyRepSumCreateTime" : {
+      "meaning" : "日报表创建时间"
+    },
+    "dailyRepSumCreator" : {
+      "meaning" : "日报表创建人"
+    },
+    "dailyRepSumCreatorId" : {
+      "meaning" : "日报表创建人ID"
+    },
+    "dailyRepSumDateExtra1" : {
+      "meaning" : "日报表扩展时间1"
+    },
+    "dailyRepSumDateExtra2" : {
+      "meaning" : "日报表扩展时间2"
+    },
+    "dailyRepSumDateExtra3" : {
+      "meaning" : "日报表扩展时间3"
+    },
+    "dailyRepSumDateExtra4" : {
+      "meaning" : "日报表扩展时间4"
+    },
+    "dailyRepSumDateExtra5" : {
+      "meaning" : "日报表扩展时间5"
+    },
+    "dailyRepSumDefaultType" : {
+      "meaning" : "日报表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "dailyRepSumDeliveryDate" : {
+      "meaning" : "日报表交货日期"
+    },
+    "dailyRepSumDescription" : {
+      "meaning" : "日报表描述"
+    },
+    "dailyRepSumEndTime" : {
+      "meaning" : "日报表结束时间"
+    },
+    "dailyRepSumEndTimeRequired" : {
+      "meaning" : "日报表最后需时(小时)"
+    },
+    "dailyRepSumEngName" : {
+      "meaning" : "日报表英文名称"
+    },
+    "dailyRepSumEquipmentId" : {
+      "meaning" : "日报表设备id"
+    },
+    "dailyRepSumExchangeRateId" : {
+      "meaning" : "日报表币种汇率id"
+    },
+    "dailyRepSumExtension" : {
+      "meaning" : "日报表扩展数据"
+    },
+    "dailyRepSumExternalState" : {
+      "meaning" : "日报表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "dailyRepSumFilterClazz" : {
+      "meaning" : "日报表冗余字段用于筛选"
+    },
+    "dailyRepSumFlags" : {
+      "meaning" : "日报表63位标志位"
+    },
+    "dailyRepSumFromAuditDate" : {
+      "meaning" : "dailyRepSumFromAuditDate"
+    },
+    "dailyRepSumFromBeginTime" : {
+      "meaning" : "dailyRepSumFromBeginTime"
+    },
+    "dailyRepSumFromCreateTime" : {
+      "meaning" : "dailyRepSumFromCreateTime"
+    },
+    "dailyRepSumFromDateExtra1" : {
+      "meaning" : "dailyRepSumFromDateExtra1"
+    },
+    "dailyRepSumFromDateExtra2" : {
+      "meaning" : "dailyRepSumFromDateExtra2"
+    },
+    "dailyRepSumFromDateExtra3" : {
+      "meaning" : "dailyRepSumFromDateExtra3"
+    },
+    "dailyRepSumFromDateExtra4" : {
+      "meaning" : "dailyRepSumFromDateExtra4"
+    },
+    "dailyRepSumFromDateExtra5" : {
+      "meaning" : "dailyRepSumFromDateExtra5"
+    },
+    "dailyRepSumFromDeliveryDate" : {
+      "meaning" : "dailyRepSumFromDeliveryDate"
+    },
+    "dailyRepSumFromEndTime" : {
+      "meaning" : "dailyRepSumFromEndTime"
+    },
+    "dailyRepSumFromReceiptDate" : {
+      "meaning" : "dailyRepSumFromReceiptDate"
+    },
+    "dailyRepSumFromUpdateTime" : {
+      "meaning" : "dailyRepSumFromUpdateTime"
+    },
+    "dailyRepSumFscType" : {
+      "meaning" : "日报表FSC声明"
+    },
+    "dailyRepSumGenerativePeople" : {
+      "meaning" : "日报表下发人"
+    },
+    "dailyRepSumGenerativeState" : {
+      "meaning" : "日报表下发状态"
+    },
+    "dailyRepSumGroovyScript" : {
+      "meaning" : "日报表groovy脚本"
+    },
+    "dailyRepSumGropeCode" : {
+      "meaning" : "日报表搜索码"
+    },
+    "dailyRepSumId" : {
+      "meaning" : "日报表PK",
+      "is_primary" : true
+    },
+    "dailyRepSumInUsed" : {
+      "meaning" : "日报表是否被使用"
+    },
+    "dailyRepSumInvTypeTaxRateId" : {
+      "meaning" : "日报表发票税率id"
+    },
+    "dailyRepSumIsBalance" : {
+      "meaning" : "日报表是否结转"
+    },
+    "dailyRepSumIsBanned" : {
+      "meaning" : "日报表是否被禁用"
+    },
+    "dailyRepSumIsDeleted" : {
+      "meaning" : "日报表是否被删除"
+    },
+    "dailyRepSumIsLeaf" : {
+      "meaning" : "日报表是否叶子节点"
+    },
+    "dailyRepSumIsMainFlow" : {
+      "meaning" : "日报表是否是主流程"
+    },
+    "dailyRepSumIsManualModificationDate" : {
+      "meaning" : "日报表是否手动修改计划生产时间"
+    },
+    "dailyRepSumIsolation" : {
+      "meaning" : "日报表智能节点数据隔离标识"
+    },
+    "dailyRepSumJsScript" : {
+      "meaning" : "日报表js脚本"
+    },
+    "dailyRepSumMaterialId" : {
+      "meaning" : "日报表物料id"
+    },
+    "dailyRepSumName" : {
+      "meaning" : "日报表智能节点名"
+    },
+    "dailyRepSumNameCodeSearch" : {
+      "meaning" : "日报表name、user_code模糊搜索"
+    },
+    "dailyRepSumNumberExtra1" : {
+      "meaning" : "日报表扩展数量1"
+    },
+    "dailyRepSumNumberExtra2" : {
+      "meaning" : "日报表扩展数量2"
+    },
+    "dailyRepSumNumberExtra3" : {
+      "meaning" : "日报表扩展数量3"
+    },
+    "dailyRepSumNumberExtra4" : {
+      "meaning" : "日报表扩展数量4"
+    },
+    "dailyRepSumNumberExtra5" : {
+      "meaning" : "日报表扩展数量5"
+    },
+    "dailyRepSumParentId" : {
+      "meaning" : "日报表父节点ID"
+    },
+    "dailyRepSumPlannedOutputQuantity" : {
+      "meaning" : "日报表计划产出数量"
+    },
+    "dailyRepSumPlannedTimeRequired" : {
+      "meaning" : "日报表计划需时(小时)"
+    },
+    "dailyRepSumPrintTimes" : {
+      "meaning" : "日报表打印次数"
+    },
+    "dailyRepSumPriority" : {
+      "meaning" : "日报表优先级"
+    },
+    "dailyRepSumProcessInstanceId" : {
+      "meaning" : "日报表流程实例ID"
+    },
+    "dailyRepSumProductionProcessesTypeId" : {
+      "meaning" : "日报表工序类型ID"
+    },
+    "dailyRepSumProductionShiftId" : {
+      "meaning" : "日报表生产班次ID"
+    },
+    "dailyRepSumQuantity" : {
+      "meaning" : "日报表任务数量"
+    },
+    "dailyRepSumReceiptDate" : {
+      "meaning" : "日报表单据日期"
+    },
+    "dailyRepSumReceiptType" : {
+      "meaning" : "日报表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "dailyRepSumRelatedTasksId" : {
+      "meaning" : "日报表关联任务id"
+    },
+    "dailyRepSumSerialNumber" : {
+      "meaning" : "日报表顺序号"
+    },
+    "dailyRepSumSource" : {
+      "meaning" : "日报表源"
+    },
+    "dailyRepSumSourceType" : {
+      "meaning" : "日报表来源类型"
+    },
+    "dailyRepSumState" : {
+      "meaning" : "日报表通用状态"
+    },
+    "dailyRepSumSystemCode" : {
+      "meaning" : "日报表系统编码"
+    },
+    "dailyRepSumTarget" : {
+      "meaning" : "日报表目标"
+    },
+    "dailyRepSumTaskNodeName" : {
+      "meaning" : "日报表任务节点名称"
+    },
+    "dailyRepSumTenantId" : {
+      "meaning" : "日报表租户_id"
+    },
+    "dailyRepSumThirdPartyClass" : {
+      "meaning" : "日报表第三方分类"
+    },
+    "dailyRepSumThirdPartyId" : {
+      "meaning" : "日报表第三方系统中的唯一ID"
+    },
+    "dailyRepSumThirdPartyName" : {
+      "meaning" : "日报表第三方名称"
+    },
+    "dailyRepSumToAuditDate" : {
+      "meaning" : "dailyRepSumToAuditDate"
+    },
+    "dailyRepSumToBeginTime" : {
+      "meaning" : "dailyRepSumToBeginTime"
+    },
+    "dailyRepSumToCreateTime" : {
+      "meaning" : "dailyRepSumToCreateTime"
+    },
+    "dailyRepSumToDateExtra1" : {
+      "meaning" : "dailyRepSumToDateExtra1"
+    },
+    "dailyRepSumToDateExtra2" : {
+      "meaning" : "dailyRepSumToDateExtra2"
+    },
+    "dailyRepSumToDateExtra3" : {
+      "meaning" : "dailyRepSumToDateExtra3"
+    },
+    "dailyRepSumToDateExtra4" : {
+      "meaning" : "dailyRepSumToDateExtra4"
+    },
+    "dailyRepSumToDateExtra5" : {
+      "meaning" : "dailyRepSumToDateExtra5"
+    },
+    "dailyRepSumToDeliveryDate" : {
+      "meaning" : "dailyRepSumToDeliveryDate"
+    },
+    "dailyRepSumToEndTime" : {
+      "meaning" : "dailyRepSumToEndTime"
+    },
+    "dailyRepSumToReceiptDate" : {
+      "meaning" : "dailyRepSumToReceiptDate"
+    },
+    "dailyRepSumToUpdateTime" : {
+      "meaning" : "dailyRepSumToUpdateTime"
+    },
+    "dailyRepSumUnitCode" : {
+      "meaning" : "日报表单位id"
+    },
+    "dailyRepSumUpdateTime" : {
+      "meaning" : "日报表更新时间"
+    },
+    "dailyRepSumUpdater" : {
+      "meaning" : "日报表更新人"
+    },
+    "dailyRepSumUpdaterId" : {
+      "meaning" : "日报表更新人ID"
+    },
+    "dailyRepSumUserCode" : {
+      "meaning" : "日报表智能节点的唯一编码"
+    },
+    "dailyRepSumVarExtra1" : {
+      "meaning" : "日报表扩展1"
+    },
+    "dailyRepSumVarExtra2" : {
+      "meaning" : "日报表扩展2"
+    },
+    "dailyRepSumVarExtra3" : {
+      "meaning" : "日报表扩展3"
+    },
+    "dailyRepSumVarExtra4" : {
+      "meaning" : "日报表扩展4"
+    },
+    "dailyRepSumVarExtra5" : {
+      "meaning" : "日报表扩展5"
+    },
+    "dailyRepSumVersion" : {
+      "meaning" : "日报表版本号"
+    }
+  }
+}

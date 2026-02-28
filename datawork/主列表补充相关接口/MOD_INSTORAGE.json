@@ -1,0 +1,377 @@
+{
+  "api_name" : "/mod-instorage/findList",
+  "table_name" : "模具入库表",
+  "request" : {
+    "modInstorageClazz" : "MOD_INSTORAGE"
+  },
+  "mainTabClazz" : "MOD_INSTORAGE",
+  "response" : {
+    "modInstorageActualTimeRequired" : {
+      "meaning" : "模具入库表实际需时(小时)"
+    },
+    "modInstorageAdjustmentTimeRequired" : {
+      "meaning" : "模具入库表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modInstorageApplicationId" : {
+      "meaning" : "模具入库表应用ID"
+    },
+    "modInstorageAuditDate" : {
+      "meaning" : "模具入库表审核时间"
+    },
+    "modInstorageAuditStatus" : {
+      "meaning" : "模具入库表审核状态"
+    },
+    "modInstorageAvailableScheduleId" : {
+      "meaning" : "模具入库表可用日程id"
+    },
+    "modInstorageBeginTime" : {
+      "meaning" : "模具入库表开始时间"
+    },
+    "modInstorageBizVersion" : {
+      "meaning" : "模具入库表业务自定义版本号"
+    },
+    "modInstorageBriefName" : {
+      "meaning" : "模具入库表简称"
+    },
+    "modInstorageBusDivisId" : {
+      "meaning" : "模具入库表事业部id"
+    },
+    "modInstorageClazz" : {
+      "meaning" : "模具入库表子类 类名（表和类一一对应）"
+    },
+    "modInstorageClosedReason" : {
+      "meaning" : "模具入库表结案原因"
+    },
+    "modInstorageClosedStatus" : {
+      "meaning" : "模具入库表结案状态"
+    },
+    "modInstorageComment" : {
+      "meaning" : "模具入库表评论"
+    },
+    "modInstorageCompleteQuantity" : {
+      "meaning" : "模具入库表完成数量"
+    },
+    "modInstorageCompleteStatus" : {
+      "meaning" : "模具入库表完成状态"
+    },
+    "modInstorageCreateTime" : {
+      "meaning" : "模具入库表创建时间"
+    },
+    "modInstorageCreator" : {
+      "meaning" : "模具入库表创建人"
+    },
+    "modInstorageCreatorId" : {
+      "meaning" : "模具入库表创建人ID"
+    },
+    "modInstorageDateExtra1" : {
+      "meaning" : "模具入库表扩展时间1"
+    },
+    "modInstorageDateExtra2" : {
+      "meaning" : "模具入库表扩展时间2"
+    },
+    "modInstorageDateExtra3" : {
+      "meaning" : "模具入库表扩展时间3"
+    },
+    "modInstorageDateExtra4" : {
+      "meaning" : "模具入库表扩展时间4"
+    },
+    "modInstorageDateExtra5" : {
+      "meaning" : "模具入库表扩展时间5"
+    },
+    "modInstorageDefaultType" : {
+      "meaning" : "模具入库表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modInstorageDeliveryDate" : {
+      "meaning" : "模具入库表交货日期"
+    },
+    "modInstorageDepId" : {
+      "meaning" : "模具入库表部门id"
+    },
+    "modInstorageDescription" : {
+      "meaning" : "模具入库表描述"
+    },
+    "modInstorageEndTime" : {
+      "meaning" : "模具入库表结束时间"
+    },
+    "modInstorageEndTimeRequired" : {
+      "meaning" : "模具入库表最后需时(小时)"
+    },
+    "modInstorageEngName" : {
+      "meaning" : "模具入库表英文名称"
+    },
+    "modInstorageEquipmentId" : {
+      "meaning" : "模具入库表设备id"
+    },
+    "modInstorageExchangeRateId" : {
+      "meaning" : "模具入库表币种汇率id"
+    },
+    "modInstorageExtension" : {
+      "meaning" : "模具入库表扩展数据"
+    },
+    "modInstorageExternalState" : {
+      "meaning" : "模具入库表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modInstorageFilterClazz" : {
+      "meaning" : "模具入库表冗余字段用于筛选"
+    },
+    "modInstorageFlags" : {
+      "meaning" : "模具入库表63位标志位"
+    },
+    "modInstorageFromAuditDate" : {
+      "meaning" : "modInstorageFromAuditDate"
+    },
+    "modInstorageFromBeginTime" : {
+      "meaning" : "modInstorageFromBeginTime"
+    },
+    "modInstorageFromCreateTime" : {
+      "meaning" : "modInstorageFromCreateTime"
+    },
+    "modInstorageFromDateExtra1" : {
+      "meaning" : "modInstorageFromDateExtra1"
+    },
+    "modInstorageFromDateExtra2" : {
+      "meaning" : "modInstorageFromDateExtra2"
+    },
+    "modInstorageFromDateExtra3" : {
+      "meaning" : "modInstorageFromDateExtra3"
+    },
+    "modInstorageFromDateExtra4" : {
+      "meaning" : "modInstorageFromDateExtra4"
+    },
+    "modInstorageFromDateExtra5" : {
+      "meaning" : "modInstorageFromDateExtra5"
+    },
+    "modInstorageFromDeliveryDate" : {
+      "meaning" : "modInstorageFromDeliveryDate"
+    },
+    "modInstorageFromEndTime" : {
+      "meaning" : "modInstorageFromEndTime"
+    },
+    "modInstorageFromReceiptDate" : {
+      "meaning" : "modInstorageFromReceiptDate"
+    },
+    "modInstorageFromUpdateTime" : {
+      "meaning" : "modInstorageFromUpdateTime"
+    },
+    "modInstorageFscType" : {
+      "meaning" : "模具入库表FSC声明"
+    },
+    "modInstorageGenerativePeople" : {
+      "meaning" : "模具入库表下发人"
+    },
+    "modInstorageGenerativeState" : {
+      "meaning" : "模具入库表下发状态"
+    },
+    "modInstorageGroovyScript" : {
+      "meaning" : "模具入库表groovy脚本"
+    },
+    "modInstorageGropeCode" : {
+      "meaning" : "模具入库表搜索码"
+    },
+    "modInstorageId" : {
+      "meaning" : "模具入库表PK",
+      "is_primary" : true
+    },
+    "modInstorageInUsed" : {
+      "meaning" : "模具入库表是否被使用"
+    },
+    "modInstorageInvTypeTaxRateId" : {
+      "meaning" : "模具入库表发票税率id"
+    },
+    "modInstorageIsBanned" : {
+      "meaning" : "模具入库表是否被禁用"
+    },
+    "modInstorageIsDeleted" : {
+      "meaning" : "模具入库表是否被删除"
+    },
+    "modInstorageIsLeaf" : {
+      "meaning" : "模具入库表是否叶子节点"
+    },
+    "modInstorageIsMainFlow" : {
+      "meaning" : "模具入库表是否是主流程"
+    },
+    "modInstorageIsManualModificationDate" : {
+      "meaning" : "模具入库表是否手动修改计划生产时间"
+    },
+    "modInstorageIsolation" : {
+      "meaning" : "模具入库表智能节点数据隔离标识"
+    },
+    "modInstorageJsScript" : {
+      "meaning" : "模具入库表js脚本"
+    },
+    "modInstorageMaterialId" : {
+      "meaning" : "模具入库表物料id"
+    },
+    "modInstorageName" : {
+      "meaning" : "模具入库表智能节点名"
+    },
+    "modInstorageNameCodeSearch" : {
+      "meaning" : "模具入库表name、user_code模糊搜索"
+    },
+    "modInstorageNumberExtra1" : {
+      "meaning" : "模具入库表扩展数量1"
+    },
+    "modInstorageNumberExtra2" : {
+      "meaning" : "模具入库表扩展数量2"
+    },
+    "modInstorageNumberExtra3" : {
+      "meaning" : "模具入库表扩展数量3"
+    },
+    "modInstorageNumberExtra4" : {
+      "meaning" : "模具入库表扩展数量4"
+    },
+    "modInstorageNumberExtra5" : {
+      "meaning" : "模具入库表扩展数量5"
+    },
+    "modInstorageOrgId" : {
+      "meaning" : "模具入库表机构id(客户/供应商)"
+    },
+    "modInstorageParentId" : {
+      "meaning" : "模具入库表父节点ID"
+    },
+    "modInstoragePlannedOutputQuantity" : {
+      "meaning" : "模具入库表计划产出数量"
+    },
+    "modInstoragePlannedTimeRequired" : {
+      "meaning" : "模具入库表计划需时(小时)"
+    },
+    "modInstoragePrintTimes" : {
+      "meaning" : "模具入库表打印次数"
+    },
+    "modInstoragePriority" : {
+      "meaning" : "模具入库表优先级"
+    },
+    "modInstorageProcessInstanceId" : {
+      "meaning" : "模具入库表流程实例ID"
+    },
+    "modInstorageProductionProcessesTypeId" : {
+      "meaning" : "模具入库表工序类型ID"
+    },
+    "modInstorageProductionShiftId" : {
+      "meaning" : "模具入库表生产班次ID"
+    },
+    "modInstorageQuantity" : {
+      "meaning" : "模具入库表任务数量"
+    },
+    "modInstorageReceiptDate" : {
+      "meaning" : "模具入库表单据日期"
+    },
+    "modInstorageReceiptType" : {
+      "meaning" : "模具入库表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modInstorageRelatedTasksId" : {
+      "meaning" : "模具入库表关联任务id"
+    },
+    "modInstorageSerialNumber" : {
+      "meaning" : "模具入库表顺序号"
+    },
+    "modInstorageSettMethod" : {
+      "meaning" : "模具入库表结算方式"
+    },
+    "modInstorageSettOrgId" : {
+      "meaning" : "模具入库表结算机构id(客户/供应商)"
+    },
+    "modInstorageSource" : {
+      "meaning" : "模具入库表源"
+    },
+    "modInstorageSourceType" : {
+      "meaning" : "模具入库表来源类型"
+    },
+    "modInstorageStaffId" : {
+      "meaning" : "模具入库表员工id(入/出库员工)"
+    },
+    "modInstorageState" : {
+      "meaning" : "模具入库表通用状态"
+    },
+    "modInstorageSystemCode" : {
+      "meaning" : "模具入库表系统编码"
+    },
+    "modInstorageTarget" : {
+      "meaning" : "模具入库表目标"
+    },
+    "modInstorageTaskNodeName" : {
+      "meaning" : "模具入库表任务节点名称"
+    },
+    "modInstorageTenantId" : {
+      "meaning" : "模具入库表租户id"
+    },
+    "modInstorageThirdPartyClass" : {
+      "meaning" : "模具入库表第三方分类"
+    },
+    "modInstorageThirdPartyId" : {
+      "meaning" : "模具入库表第三方系统中的唯一ID"
+    },
+    "modInstorageThirdPartyName" : {
+      "meaning" : "模具入库表第三方名称"
+    },
+    "modInstorageToAuditDate" : {
+      "meaning" : "modInstorageToAuditDate"
+    },
+    "modInstorageToBeginTime" : {
+      "meaning" : "modInstorageToBeginTime"
+    },
+    "modInstorageToCreateTime" : {
+      "meaning" : "modInstorageToCreateTime"
+    },
+    "modInstorageToDateExtra1" : {
+      "meaning" : "modInstorageToDateExtra1"
+    },
+    "modInstorageToDateExtra2" : {
+      "meaning" : "modInstorageToDateExtra2"
+    },
+    "modInstorageToDateExtra3" : {
+      "meaning" : "modInstorageToDateExtra3"
+    },
+    "modInstorageToDateExtra4" : {
+      "meaning" : "modInstorageToDateExtra4"
+    },
+    "modInstorageToDateExtra5" : {
+      "meaning" : "modInstorageToDateExtra5"
+    },
+    "modInstorageToDeliveryDate" : {
+      "meaning" : "modInstorageToDeliveryDate"
+    },
+    "modInstorageToEndTime" : {
+      "meaning" : "modInstorageToEndTime"
+    },
+    "modInstorageToReceiptDate" : {
+      "meaning" : "modInstorageToReceiptDate"
+    },
+    "modInstorageToUpdateTime" : {
+      "meaning" : "modInstorageToUpdateTime"
+    },
+    "modInstorageUnitCode" : {
+      "meaning" : "模具入库表单位id"
+    },
+    "modInstorageUpdateTime" : {
+      "meaning" : "模具入库表更新时间"
+    },
+    "modInstorageUpdater" : {
+      "meaning" : "模具入库表更新人"
+    },
+    "modInstorageUpdaterId" : {
+      "meaning" : "模具入库表更新人ID"
+    },
+    "modInstorageUserCode" : {
+      "meaning" : "模具入库表智能节点的唯一编码"
+    },
+    "modInstorageVarExtra1" : {
+      "meaning" : "模具入库表扩展1"
+    },
+    "modInstorageVarExtra2" : {
+      "meaning" : "模具入库表扩展2"
+    },
+    "modInstorageVarExtra3" : {
+      "meaning" : "模具入库表扩展3"
+    },
+    "modInstorageVarExtra4" : {
+      "meaning" : "模具入库表扩展4"
+    },
+    "modInstorageVarExtra5" : {
+      "meaning" : "模具入库表扩展5"
+    },
+    "modInstorageVersion" : {
+      "meaning" : "模具入库表版本号"
+    }
+  }
+}

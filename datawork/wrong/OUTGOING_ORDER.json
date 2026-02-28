@@ -1,0 +1,428 @@
+{
+  "api_name" : "/outgoing-order/findList",
+  "table_name" : "外发订单",
+  "request" : {
+    "outgoingOrderClazz" : "OUTGOING_ORDER"
+  },
+  "mainTabClazz" : "OUTGOING_ORDER",
+  "response" : {
+    "outgoingOrderActualTimeRequired" : {
+      "meaning" : "外发订单实际需时(小时)"
+    },
+    "outgoingOrderAdjustmentTimeRequired" : {
+      "meaning" : "外发订单调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "outgoingOrderApplicationId" : {
+      "meaning" : "外发订单应用ID"
+    },
+    "outgoingOrderAuditDate" : {
+      "meaning" : "外发订单审核时间"
+    },
+    "outgoingOrderAuditStatus" : {
+      "meaning" : "外发订单审核状态"
+    },
+    "outgoingOrderAvailableScheduleId" : {
+      "meaning" : "外发订单可用日程id"
+    },
+    "outgoingOrderBeginTime" : {
+      "meaning" : "外发订单开始时间"
+    },
+    "outgoingOrderBizVersion" : {
+      "meaning" : "外发订单业务自定义版本号"
+    },
+    "outgoingOrderBriefName" : {
+      "meaning" : "外发订单简称"
+    },
+    "outgoingOrderBusDivisId" : {
+      "meaning" : "外发订单事业部id"
+    },
+    "outgoingOrderClazz" : {
+      "meaning" : "外发订单子类 类名（表和类一一对应）"
+    },
+    "outgoingOrderClosedReason" : {
+      "meaning" : "外发订单结案原因"
+    },
+    "outgoingOrderClosedStatus" : {
+      "meaning" : "外发订单结案状态"
+    },
+    "outgoingOrderComment" : {
+      "meaning" : "外发订单评论"
+    },
+    "outgoingOrderCompleteQuantity" : {
+      "meaning" : "外发订单完成数量"
+    },
+    "outgoingOrderCompleteStatus" : {
+      "meaning" : "外发订单完成状态"
+    },
+    "outgoingOrderContName" : {
+      "meaning" : "外发订单联系人姓名"
+    },
+    "outgoingOrderCreateTime" : {
+      "meaning" : "外发订单创建时间"
+    },
+    "outgoingOrderCreator" : {
+      "meaning" : "外发订单创建人"
+    },
+    "outgoingOrderCreatorId" : {
+      "meaning" : "外发订单创建人ID"
+    },
+    "outgoingOrderCur" : {
+      "meaning" : "外发订单币种"
+    },
+    "outgoingOrderCurRate" : {
+      "meaning" : "外发订单汇率"
+    },
+    "outgoingOrderDateExtra1" : {
+      "meaning" : "外发订单扩展时间1"
+    },
+    "outgoingOrderDateExtra2" : {
+      "meaning" : "外发订单扩展时间2"
+    },
+    "outgoingOrderDateExtra3" : {
+      "meaning" : "外发订单扩展时间3"
+    },
+    "outgoingOrderDateExtra4" : {
+      "meaning" : "外发订单扩展时间4"
+    },
+    "outgoingOrderDateExtra5" : {
+      "meaning" : "外发订单扩展时间5"
+    },
+    "outgoingOrderDefaultType" : {
+      "meaning" : "外发订单智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "outgoingOrderDelMethod" : {
+      "meaning" : "外发订单配送方式"
+    },
+    "outgoingOrderDeliveryDate" : {
+      "meaning" : "外发订单交货日期"
+    },
+    "outgoingOrderDelvSup" : {
+      "meaning" : "外发订单送货供应商"
+    },
+    "outgoingOrderDescription" : {
+      "meaning" : "外发订单描述"
+    },
+    "outgoingOrderEndTime" : {
+      "meaning" : "外发订单结束时间"
+    },
+    "outgoingOrderEndTimeRequired" : {
+      "meaning" : "外发订单最后需时(小时)"
+    },
+    "outgoingOrderEngName" : {
+      "meaning" : "外发订单英文名称"
+    },
+    "outgoingOrderEquipmentId" : {
+      "meaning" : "外发订单设备id"
+    },
+    "outgoingOrderExchangeRateId" : {
+      "meaning" : "外发订单币种汇率id"
+    },
+    "outgoingOrderExtension" : {
+      "meaning" : "外发订单扩展数据"
+    },
+    "outgoingOrderExternalState" : {
+      "meaning" : "外发订单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "outgoingOrderFilterClazz" : {
+      "meaning" : "外发订单冗余字段用于筛选"
+    },
+    "outgoingOrderFlags" : {
+      "meaning" : "外发订单63位标志位"
+    },
+    "outgoingOrderFmtDec" : {
+      "meaning" : "外发订单保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+    },
+    "outgoingOrderFromAuditDate" : {
+      "meaning" : "outgoingOrderFromAuditDate"
+    },
+    "outgoingOrderFromBeginTime" : {
+      "meaning" : "outgoingOrderFromBeginTime"
+    },
+    "outgoingOrderFromCreateTime" : {
+      "meaning" : "outgoingOrderFromCreateTime"
+    },
+    "outgoingOrderFromDateExtra1" : {
+      "meaning" : "outgoingOrderFromDateExtra1"
+    },
+    "outgoingOrderFromDateExtra2" : {
+      "meaning" : "outgoingOrderFromDateExtra2"
+    },
+    "outgoingOrderFromDateExtra3" : {
+      "meaning" : "outgoingOrderFromDateExtra3"
+    },
+    "outgoingOrderFromDateExtra4" : {
+      "meaning" : "outgoingOrderFromDateExtra4"
+    },
+    "outgoingOrderFromDateExtra5" : {
+      "meaning" : "outgoingOrderFromDateExtra5"
+    },
+    "outgoingOrderFromDeliveryDate" : {
+      "meaning" : "outgoingOrderFromDeliveryDate"
+    },
+    "outgoingOrderFromEndTime" : {
+      "meaning" : "outgoingOrderFromEndTime"
+    },
+    "outgoingOrderFromReceiptDate" : {
+      "meaning" : "outgoingOrderFromReceiptDate"
+    },
+    "outgoingOrderFromUpdateTime" : {
+      "meaning" : "outgoingOrderFromUpdateTime"
+    },
+    "outgoingOrderFscType" : {
+      "meaning" : "外发订单FSC声明"
+    },
+    "outgoingOrderGenerativePeople" : {
+      "meaning" : "外发订单下发人"
+    },
+    "outgoingOrderGenerativeState" : {
+      "meaning" : "外发订单下发状态"
+    },
+    "outgoingOrderGroovyScript" : {
+      "meaning" : "外发订单groovy脚本"
+    },
+    "outgoingOrderGropeCode" : {
+      "meaning" : "外发订单搜索码"
+    },
+    "outgoingOrderId" : {
+      "meaning" : "外发订单PK",
+      "is_primary" : true
+    },
+    "outgoingOrderInUsed" : {
+      "meaning" : "外发订单是否被使用"
+    },
+    "outgoingOrderInvType" : {
+      "meaning" : "外发订单发票类型id"
+    },
+    "outgoingOrderInvTypeTaxRateId" : {
+      "meaning" : "外发订单发票税率id"
+    },
+    "outgoingOrderIsBanned" : {
+      "meaning" : "外发订单是否被禁用"
+    },
+    "outgoingOrderIsDeleted" : {
+      "meaning" : "外发订单是否被删除"
+    },
+    "outgoingOrderIsLeaf" : {
+      "meaning" : "外发订单是否叶子节点"
+    },
+    "outgoingOrderIsMainFlow" : {
+      "meaning" : "外发订单是否是主流程"
+    },
+    "outgoingOrderIsManualModificationDate" : {
+      "meaning" : "外发订单是否手动修改计划生产时间"
+    },
+    "outgoingOrderIsUrgent" : {
+      "meaning" : "外发订单是否加急"
+    },
+    "outgoingOrderIsolation" : {
+      "meaning" : "外发订单智能节点数据隔离标识"
+    },
+    "outgoingOrderJsScript" : {
+      "meaning" : "外发订单js脚本"
+    },
+    "outgoingOrderLcTotalAmt" : {
+      "meaning" : "外发订单本币总费用(根据币种，外币才显示)，外币不含税"
+    },
+    "outgoingOrderMaterialId" : {
+      "meaning" : "外发订单物料id"
+    },
+    "outgoingOrderName" : {
+      "meaning" : "外发订单智能节点名"
+    },
+    "outgoingOrderNameCodeSearch" : {
+      "meaning" : "外发订单name、user_code模糊搜索"
+    },
+    "outgoingOrderNumberExtra1" : {
+      "meaning" : "外发订单扩展数量1"
+    },
+    "outgoingOrderNumberExtra2" : {
+      "meaning" : "外发订单扩展数量2"
+    },
+    "outgoingOrderNumberExtra3" : {
+      "meaning" : "外发订单扩展数量3"
+    },
+    "outgoingOrderNumberExtra4" : {
+      "meaning" : "外发订单扩展数量4"
+    },
+    "outgoingOrderNumberExtra5" : {
+      "meaning" : "外发订单扩展数量5"
+    },
+    "outgoingOrderPCount" : {
+      "meaning" : "外发订单打印次数"
+    },
+    "outgoingOrderParentId" : {
+      "meaning" : "外发订单父节点ID"
+    },
+    "outgoingOrderPhone" : {
+      "meaning" : "外发订单手机"
+    },
+    "outgoingOrderPlannedOutputQuantity" : {
+      "meaning" : "外发订单计划产出数量"
+    },
+    "outgoingOrderPlannedTimeRequired" : {
+      "meaning" : "外发订单计划需时(小时)"
+    },
+    "outgoingOrderPrintTimes" : {
+      "meaning" : "外发订单打印次数"
+    },
+    "outgoingOrderPriority" : {
+      "meaning" : "外发订单优先级"
+    },
+    "outgoingOrderProcessInstanceId" : {
+      "meaning" : "外发订单流程实例ID"
+    },
+    "outgoingOrderProductionProcessesTypeId" : {
+      "meaning" : "外发订单工序类型ID"
+    },
+    "outgoingOrderProductionShiftId" : {
+      "meaning" : "外发订单生产班次ID"
+    },
+    "outgoingOrderQuantity" : {
+      "meaning" : "外发订单任务数量"
+    },
+    "outgoingOrderReceiptDate" : {
+      "meaning" : "外发订单单据日期"
+    },
+    "outgoingOrderReceiptType" : {
+      "meaning" : "外发订单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "outgoingOrderRelatedTasksId" : {
+      "meaning" : "外发订单关联任务id"
+    },
+    "outgoingOrderSerialNumber" : {
+      "meaning" : "外发订单顺序号"
+    },
+    "outgoingOrderSettleSupId" : {
+      "meaning" : "外发订单结算供应商ID"
+    },
+    "outgoingOrderSource" : {
+      "meaning" : "外发订单源节点id(-查询入参-)"
+    },
+    "outgoingOrderSourceType" : {
+      "meaning" : "外发订单来源类型"
+    },
+    "outgoingOrderState" : {
+      "meaning" : "外发订单通用状态"
+    },
+    "outgoingOrderStlAmtFmt" : {
+      "meaning" : "外发订单结算金额保留小数位(默认2位，可手动变更)"
+    },
+    "outgoingOrderStlFee" : {
+      "meaning" : "外发订单结算费用（默认与含税总金额相等)"
+    },
+    "outgoingOrderStlPriceFmt" : {
+      "meaning" : "外发订单结算单价保留小数位(默认9位，可手动变更)"
+    },
+    "outgoingOrderStlType" : {
+      "meaning" : "外发订单结算类型 SettlementType_id"
+    },
+    "outgoingOrderSupId" : {
+      "meaning" : "外发订单供应商id"
+    },
+    "outgoingOrderSystemCode" : {
+      "meaning" : "外发订单系统编码"
+    },
+    "outgoingOrderTarget" : {
+      "meaning" : "外发订单目标节点id(-查询入参-)"
+    },
+    "outgoingOrderTaskNodeName" : {
+      "meaning" : "外发订单任务节点名称"
+    },
+    "outgoingOrderTaxRt" : {
+      "meaning" : "外发订单税率"
+    },
+    "outgoingOrderTenantId" : {
+      "meaning" : "外发订单租户ID"
+    },
+    "outgoingOrderThirdPartyClass" : {
+      "meaning" : "外发订单第三方分类"
+    },
+    "outgoingOrderThirdPartyId" : {
+      "meaning" : "外发订单第三方系统中的唯一ID"
+    },
+    "outgoingOrderThirdPartyName" : {
+      "meaning" : "外发订单第三方名称"
+    },
+    "outgoingOrderToAuditDate" : {
+      "meaning" : "outgoingOrderToAuditDate"
+    },
+    "outgoingOrderToBeginTime" : {
+      "meaning" : "outgoingOrderToBeginTime"
+    },
+    "outgoingOrderToCreateTime" : {
+      "meaning" : "outgoingOrderToCreateTime"
+    },
+    "outgoingOrderToDateExtra1" : {
+      "meaning" : "outgoingOrderToDateExtra1"
+    },
+    "outgoingOrderToDateExtra2" : {
+      "meaning" : "outgoingOrderToDateExtra2"
+    },
+    "outgoingOrderToDateExtra3" : {
+      "meaning" : "outgoingOrderToDateExtra3"
+    },
+    "outgoingOrderToDateExtra4" : {
+      "meaning" : "outgoingOrderToDateExtra4"
+    },
+    "outgoingOrderToDateExtra5" : {
+      "meaning" : "outgoingOrderToDateExtra5"
+    },
+    "outgoingOrderToDeliveryDate" : {
+      "meaning" : "outgoingOrderToDeliveryDate"
+    },
+    "outgoingOrderToEndTime" : {
+      "meaning" : "outgoingOrderToEndTime"
+    },
+    "outgoingOrderToReceiptDate" : {
+      "meaning" : "outgoingOrderToReceiptDate"
+    },
+    "outgoingOrderToUpdateTime" : {
+      "meaning" : "outgoingOrderToUpdateTime"
+    },
+    "outgoingOrderTotalFeeNt" : {
+      "meaning" : "外发订单总费用(不含税)"
+    },
+    "outgoingOrderTotalVol" : {
+      "meaning" : "外发订单总体积"
+    },
+    "outgoingOrderTotalWithTax" : {
+      "meaning" : "外发订单总费用(含税)"
+    },
+    "outgoingOrderTotalWt" : {
+      "meaning" : "外发订单总重量"
+    },
+    "outgoingOrderUnitCode" : {
+      "meaning" : "外发订单单位id"
+    },
+    "outgoingOrderUpdateTime" : {
+      "meaning" : "外发订单更新时间"
+    },
+    "outgoingOrderUpdater" : {
+      "meaning" : "外发订单更新人"
+    },
+    "outgoingOrderUpdaterId" : {
+      "meaning" : "外发订单更新人ID"
+    },
+    "outgoingOrderUserCode" : {
+      "meaning" : "外发订单智能节点的唯一编码"
+    },
+    "outgoingOrderVarExtra1" : {
+      "meaning" : "外发订单扩展1"
+    },
+    "outgoingOrderVarExtra2" : {
+      "meaning" : "外发订单扩展2"
+    },
+    "outgoingOrderVarExtra3" : {
+      "meaning" : "外发订单扩展3"
+    },
+    "outgoingOrderVarExtra4" : {
+      "meaning" : "外发订单扩展4"
+    },
+    "outgoingOrderVarExtra5" : {
+      "meaning" : "外发订单扩展5"
+    },
+    "outgoingOrderVersion" : {
+      "meaning" : "外发订单版本号"
+    }
+  }
+}

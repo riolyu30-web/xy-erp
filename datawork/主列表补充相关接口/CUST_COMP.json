@@ -1,0 +1,392 @@
+{
+  "api_name" : "/cust-comp/findList",
+  "table_name" : "客户投诉主表",
+  "request" : {
+    "custCompClazz" : "CUST_COMP"
+  },
+  "mainTabClazz" : "CUST_COMP",
+  "response" : {
+    "custCompAccountability" : {
+      "meaning" : "客户投诉主表责任归属(字典：生产责任、客户责任、业助责任、供应商责任、无法判断等)"
+    },
+    "custCompActualTimeRequired" : {
+      "meaning" : "客户投诉主表实际需时(小时)"
+    },
+    "custCompAdjustmentTimeRequired" : {
+      "meaning" : "客户投诉主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "custCompApplicationId" : {
+      "meaning" : "客户投诉主表应用ID"
+    },
+    "custCompAuditDate" : {
+      "meaning" : "客户投诉主表审核时间"
+    },
+    "custCompAuditStatus" : {
+      "meaning" : "客户投诉主表审核状态"
+    },
+    "custCompAvailableScheduleId" : {
+      "meaning" : "客户投诉主表可用日程id"
+    },
+    "custCompBeginTime" : {
+      "meaning" : "客户投诉主表开始时间"
+    },
+    "custCompBizVersion" : {
+      "meaning" : "客户投诉主表业务自定义版本号"
+    },
+    "custCompBriefName" : {
+      "meaning" : "客户投诉主表简称"
+    },
+    "custCompBusDivisId" : {
+      "meaning" : "客户投诉主表事业部id"
+    },
+    "custCompChannelId" : {
+      "meaning" : "客户投诉主表投诉渠道(字典：微信、Email，口头，电话等)，默认微信，渠道guid"
+    },
+    "custCompClazz" : {
+      "meaning" : "客户投诉主表子类 类名（表和类一一对应）"
+    },
+    "custCompClosedReason" : {
+      "meaning" : "客户投诉主表结案原因"
+    },
+    "custCompClosedStatus" : {
+      "meaning" : "客户投诉主表结案状态"
+    },
+    "custCompComment" : {
+      "meaning" : "客户投诉主表评论"
+    },
+    "custCompComplaintsContent" : {
+      "meaning" : "客户投诉主表投诉详细内容(手填)"
+    },
+    "custCompComplaintsReason" : {
+      "meaning" : "客户投诉主表投诉原因(字典：产品质量问题，数量不足)默认产品质量问题"
+    },
+    "custCompCompleteQuantity" : {
+      "meaning" : "客户投诉主表完成数量"
+    },
+    "custCompCompleteStatus" : {
+      "meaning" : "客户投诉主表完成状态"
+    },
+    "custCompCreateTime" : {
+      "meaning" : "客户投诉主表创建时间"
+    },
+    "custCompCreator" : {
+      "meaning" : "客户投诉主表创建人"
+    },
+    "custCompCreatorId" : {
+      "meaning" : "客户投诉主表创建人ID"
+    },
+    "custCompCustomerId" : {
+      "meaning" : "客户投诉主表客户_id"
+    },
+    "custCompDateExtra1" : {
+      "meaning" : "客户投诉主表扩展时间1"
+    },
+    "custCompDateExtra2" : {
+      "meaning" : "客户投诉主表扩展时间2"
+    },
+    "custCompDateExtra3" : {
+      "meaning" : "客户投诉主表扩展时间3"
+    },
+    "custCompDateExtra4" : {
+      "meaning" : "客户投诉主表扩展时间4"
+    },
+    "custCompDateExtra5" : {
+      "meaning" : "客户投诉主表扩展时间5"
+    },
+    "custCompDefaultType" : {
+      "meaning" : "客户投诉主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "custCompDeliveryDate" : {
+      "meaning" : "客户投诉主表交货日期"
+    },
+    "custCompDescription" : {
+      "meaning" : "客户投诉主表描述"
+    },
+    "custCompEndTime" : {
+      "meaning" : "客户投诉主表结束时间"
+    },
+    "custCompEndTimeRequired" : {
+      "meaning" : "客户投诉主表最后需时(小时)"
+    },
+    "custCompEngName" : {
+      "meaning" : "客户投诉主表英文名称"
+    },
+    "custCompEquipmentId" : {
+      "meaning" : "客户投诉主表设备id"
+    },
+    "custCompExchangeRateId" : {
+      "meaning" : "客户投诉主表币种汇率id"
+    },
+    "custCompExtension" : {
+      "meaning" : "客户投诉主表扩展数据"
+    },
+    "custCompExternalState" : {
+      "meaning" : "客户投诉主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "custCompFilterClazz" : {
+      "meaning" : "客户投诉主表冗余字段用于筛选"
+    },
+    "custCompFlags" : {
+      "meaning" : "客户投诉主表63位标志位"
+    },
+    "custCompFromAuditDate" : {
+      "meaning" : "custCompFromAuditDate"
+    },
+    "custCompFromBeginTime" : {
+      "meaning" : "custCompFromBeginTime"
+    },
+    "custCompFromCreateTime" : {
+      "meaning" : "custCompFromCreateTime"
+    },
+    "custCompFromDateExtra1" : {
+      "meaning" : "custCompFromDateExtra1"
+    },
+    "custCompFromDateExtra2" : {
+      "meaning" : "custCompFromDateExtra2"
+    },
+    "custCompFromDateExtra3" : {
+      "meaning" : "custCompFromDateExtra3"
+    },
+    "custCompFromDateExtra4" : {
+      "meaning" : "custCompFromDateExtra4"
+    },
+    "custCompFromDateExtra5" : {
+      "meaning" : "custCompFromDateExtra5"
+    },
+    "custCompFromDeliveryDate" : {
+      "meaning" : "custCompFromDeliveryDate"
+    },
+    "custCompFromEndTime" : {
+      "meaning" : "custCompFromEndTime"
+    },
+    "custCompFromReceiptDate" : {
+      "meaning" : "custCompFromReceiptDate"
+    },
+    "custCompFromUpdateTime" : {
+      "meaning" : "custCompFromUpdateTime"
+    },
+    "custCompFscType" : {
+      "meaning" : "客户投诉主表FSC声明"
+    },
+    "custCompGenerativePeople" : {
+      "meaning" : "客户投诉主表下发人"
+    },
+    "custCompGenerativeState" : {
+      "meaning" : "客户投诉主表下发状态"
+    },
+    "custCompGroovyScript" : {
+      "meaning" : "客户投诉主表groovy脚本"
+    },
+    "custCompGropeCode" : {
+      "meaning" : "客户投诉主表搜索码"
+    },
+    "custCompHandlingMethod" : {
+      "meaning" : "客户投诉主表处理方式(字典：退货、退货退款，仅退款，补货等)，默认退货"
+    },
+    "custCompId" : {
+      "meaning" : "客户投诉主表PK",
+      "is_primary" : true
+    },
+    "custCompInUsed" : {
+      "meaning" : "客户投诉主表是否被使用"
+    },
+    "custCompInvTypeTaxRateId" : {
+      "meaning" : "客户投诉主表发票税率id"
+    },
+    "custCompIsBanned" : {
+      "meaning" : "客户投诉主表是否被禁用"
+    },
+    "custCompIsDeleted" : {
+      "meaning" : "客户投诉主表是否被删除"
+    },
+    "custCompIsLeaf" : {
+      "meaning" : "客户投诉主表是否叶子节点"
+    },
+    "custCompIsMainFlow" : {
+      "meaning" : "客户投诉主表是否是主流程"
+    },
+    "custCompIsManualModificationDate" : {
+      "meaning" : "客户投诉主表是否手动修改计划生产时间"
+    },
+    "custCompIsolation" : {
+      "meaning" : "客户投诉主表智能节点数据隔离标识"
+    },
+    "custCompJsScript" : {
+      "meaning" : "客户投诉主表js脚本"
+    },
+    "custCompMaterialId" : {
+      "meaning" : "客户投诉主表物料id"
+    },
+    "custCompName" : {
+      "meaning" : "客户投诉主表智能节点名"
+    },
+    "custCompNameCodeSearch" : {
+      "meaning" : "客户投诉主表name、user_code模糊搜索"
+    },
+    "custCompNumberExtra1" : {
+      "meaning" : "客户投诉主表扩展数量1"
+    },
+    "custCompNumberExtra2" : {
+      "meaning" : "客户投诉主表扩展数量2"
+    },
+    "custCompNumberExtra3" : {
+      "meaning" : "客户投诉主表扩展数量3"
+    },
+    "custCompNumberExtra4" : {
+      "meaning" : "客户投诉主表扩展数量4"
+    },
+    "custCompNumberExtra5" : {
+      "meaning" : "客户投诉主表扩展数量5"
+    },
+    "custCompParentId" : {
+      "meaning" : "客户投诉主表父节点ID"
+    },
+    "custCompPlannedOutputQuantity" : {
+      "meaning" : "客户投诉主表计划产出数量"
+    },
+    "custCompPlannedTimeRequired" : {
+      "meaning" : "客户投诉主表计划需时(小时)"
+    },
+    "custCompPrintTimes" : {
+      "meaning" : "客户投诉主表打印次数"
+    },
+    "custCompPriority" : {
+      "meaning" : "客户投诉主表优先级"
+    },
+    "custCompProcessInstanceId" : {
+      "meaning" : "客户投诉主表流程实例ID"
+    },
+    "custCompProductionProcessesTypeId" : {
+      "meaning" : "客户投诉主表工序类型ID"
+    },
+    "custCompProductionShiftId" : {
+      "meaning" : "客户投诉主表生产班次ID"
+    },
+    "custCompQuantity" : {
+      "meaning" : "客户投诉主表任务数量"
+    },
+    "custCompReceiptDate" : {
+      "meaning" : "客户投诉主表单据日期"
+    },
+    "custCompReceiptType" : {
+      "meaning" : "客户投诉主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "custCompRelatedTasksId" : {
+      "meaning" : "客户投诉主表关联任务id"
+    },
+    "custCompReplenishmentAddress" : {
+      "meaning" : "客户投诉主表补货详细地址"
+    },
+    "custCompReplenishmentAdministrativeAreaId" : {
+      "meaning" : "客户投诉主表补货行政区域id"
+    },
+    "custCompReturnAddress" : {
+      "meaning" : "客户投诉主表退货详细地址"
+    },
+    "custCompReturnAdministrativeAreaId" : {
+      "meaning" : "客户投诉主表退货行政区域id"
+    },
+    "custCompSerialNumber" : {
+      "meaning" : "客户投诉主表顺序号"
+    },
+    "custCompSource" : {
+      "meaning" : "客户投诉主表源"
+    },
+    "custCompSourceType" : {
+      "meaning" : "客户投诉主表来源类型"
+    },
+    "custCompState" : {
+      "meaning" : "客户投诉主表通用状态"
+    },
+    "custCompSystemCode" : {
+      "meaning" : "客户投诉主表系统编码"
+    },
+    "custCompTarget" : {
+      "meaning" : "客户投诉主表目标"
+    },
+    "custCompTaskNodeName" : {
+      "meaning" : "客户投诉主表任务节点名称"
+    },
+    "custCompTenantId" : {
+      "meaning" : "客户投诉主表租户_guid"
+    },
+    "custCompThirdPartyClass" : {
+      "meaning" : "客户投诉主表第三方分类"
+    },
+    "custCompThirdPartyId" : {
+      "meaning" : "客户投诉主表第三方系统中的唯一ID"
+    },
+    "custCompThirdPartyName" : {
+      "meaning" : "客户投诉主表第三方名称"
+    },
+    "custCompToAuditDate" : {
+      "meaning" : "custCompToAuditDate"
+    },
+    "custCompToBeginTime" : {
+      "meaning" : "custCompToBeginTime"
+    },
+    "custCompToCreateTime" : {
+      "meaning" : "custCompToCreateTime"
+    },
+    "custCompToDateExtra1" : {
+      "meaning" : "custCompToDateExtra1"
+    },
+    "custCompToDateExtra2" : {
+      "meaning" : "custCompToDateExtra2"
+    },
+    "custCompToDateExtra3" : {
+      "meaning" : "custCompToDateExtra3"
+    },
+    "custCompToDateExtra4" : {
+      "meaning" : "custCompToDateExtra4"
+    },
+    "custCompToDateExtra5" : {
+      "meaning" : "custCompToDateExtra5"
+    },
+    "custCompToDeliveryDate" : {
+      "meaning" : "custCompToDeliveryDate"
+    },
+    "custCompToEndTime" : {
+      "meaning" : "custCompToEndTime"
+    },
+    "custCompToReceiptDate" : {
+      "meaning" : "custCompToReceiptDate"
+    },
+    "custCompToUpdateTime" : {
+      "meaning" : "custCompToUpdateTime"
+    },
+    "custCompUnitCode" : {
+      "meaning" : "客户投诉主表单位id"
+    },
+    "custCompUpdateTime" : {
+      "meaning" : "客户投诉主表更新时间"
+    },
+    "custCompUpdater" : {
+      "meaning" : "客户投诉主表更新人"
+    },
+    "custCompUpdaterId" : {
+      "meaning" : "客户投诉主表更新人ID"
+    },
+    "custCompUserCode" : {
+      "meaning" : "客户投诉主表智能节点的唯一编码"
+    },
+    "custCompVarExtra1" : {
+      "meaning" : "客户投诉主表扩展1"
+    },
+    "custCompVarExtra2" : {
+      "meaning" : "客户投诉主表扩展2"
+    },
+    "custCompVarExtra3" : {
+      "meaning" : "客户投诉主表扩展3"
+    },
+    "custCompVarExtra4" : {
+      "meaning" : "客户投诉主表扩展4"
+    },
+    "custCompVarExtra5" : {
+      "meaning" : "客户投诉主表扩展5"
+    },
+    "custCompVersion" : {
+      "meaning" : "客户投诉主表版本号"
+    }
+  }
+}

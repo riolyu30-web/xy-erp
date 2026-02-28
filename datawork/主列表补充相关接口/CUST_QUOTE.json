@@ -1,0 +1,368 @@
+{
+  "api_name" : "/cust-quote/findList",
+  "table_name" : "客户定价表",
+  "request" : {
+    "custQuoteClazz" : "CUST_QUOTE"
+  },
+  "mainTabClazz" : "CUST_QUOTE",
+  "response" : {
+    "custQuoteActualTimeRequired" : {
+      "meaning" : "客户定价表实际需时(小时)"
+    },
+    "custQuoteAdjustmentTimeRequired" : {
+      "meaning" : "客户定价表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "custQuoteApplicationId" : {
+      "meaning" : "客户定价表应用ID"
+    },
+    "custQuoteAuditDate" : {
+      "meaning" : "客户定价表审核时间"
+    },
+    "custQuoteAuditStatus" : {
+      "meaning" : "客户定价表审核状态"
+    },
+    "custQuoteAvailableScheduleId" : {
+      "meaning" : "客户定价表可用日程id"
+    },
+    "custQuoteBeginTime" : {
+      "meaning" : "客户定价表开始时间"
+    },
+    "custQuoteBizVersion" : {
+      "meaning" : "客户定价表业务自定义版本号"
+    },
+    "custQuoteBriefName" : {
+      "meaning" : "客户定价表简称"
+    },
+    "custQuoteBusDivisId" : {
+      "meaning" : "客户定价表事业部id"
+    },
+    "custQuoteClazz" : {
+      "meaning" : "客户定价表子类 类名（表和类一一对应）"
+    },
+    "custQuoteClosedReason" : {
+      "meaning" : "客户定价表结案原因"
+    },
+    "custQuoteClosedStatus" : {
+      "meaning" : "客户定价表结案状态"
+    },
+    "custQuoteComment" : {
+      "meaning" : "客户定价表评论"
+    },
+    "custQuoteCompleteQuantity" : {
+      "meaning" : "客户定价表完成数量"
+    },
+    "custQuoteCompleteStatus" : {
+      "meaning" : "客户定价表完成状态"
+    },
+    "custQuoteCreateTime" : {
+      "meaning" : "客户定价表创建时间"
+    },
+    "custQuoteCreator" : {
+      "meaning" : "客户定价表创建人"
+    },
+    "custQuoteCreatorId" : {
+      "meaning" : "客户定价表创建人ID"
+    },
+    "custQuoteCurrencyId" : {
+      "meaning" : "客户定价表币种id"
+    },
+    "custQuoteDateExtra1" : {
+      "meaning" : "客户定价表扩展时间1"
+    },
+    "custQuoteDateExtra2" : {
+      "meaning" : "客户定价表扩展时间2"
+    },
+    "custQuoteDateExtra3" : {
+      "meaning" : "客户定价表扩展时间3"
+    },
+    "custQuoteDateExtra4" : {
+      "meaning" : "客户定价表扩展时间4"
+    },
+    "custQuoteDateExtra5" : {
+      "meaning" : "客户定价表扩展时间5"
+    },
+    "custQuoteDefaultType" : {
+      "meaning" : "客户定价表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "custQuoteDeliveryDate" : {
+      "meaning" : "客户定价表交货日期"
+    },
+    "custQuoteDescription" : {
+      "meaning" : "客户定价表描述"
+    },
+    "custQuoteEndTime" : {
+      "meaning" : "客户定价表结束时间"
+    },
+    "custQuoteEndTimeRequired" : {
+      "meaning" : "客户定价表最后需时(小时)"
+    },
+    "custQuoteEngName" : {
+      "meaning" : "客户定价表英文名称"
+    },
+    "custQuoteEquipmentId" : {
+      "meaning" : "客户定价表设备id"
+    },
+    "custQuoteExchangeRateId" : {
+      "meaning" : "客户定价表币种汇率id"
+    },
+    "custQuoteExtension" : {
+      "meaning" : "客户定价表扩展数据"
+    },
+    "custQuoteExternalState" : {
+      "meaning" : "客户定价表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "custQuoteFilterClazz" : {
+      "meaning" : "客户定价表冗余字段用于筛选"
+    },
+    "custQuoteFlags" : {
+      "meaning" : "客户定价表63位标志位"
+    },
+    "custQuoteFromAuditDate" : {
+      "meaning" : "custQuoteFromAuditDate"
+    },
+    "custQuoteFromBeginTime" : {
+      "meaning" : "custQuoteFromBeginTime"
+    },
+    "custQuoteFromCreateTime" : {
+      "meaning" : "custQuoteFromCreateTime"
+    },
+    "custQuoteFromDateExtra1" : {
+      "meaning" : "custQuoteFromDateExtra1"
+    },
+    "custQuoteFromDateExtra2" : {
+      "meaning" : "custQuoteFromDateExtra2"
+    },
+    "custQuoteFromDateExtra3" : {
+      "meaning" : "custQuoteFromDateExtra3"
+    },
+    "custQuoteFromDateExtra4" : {
+      "meaning" : "custQuoteFromDateExtra4"
+    },
+    "custQuoteFromDateExtra5" : {
+      "meaning" : "custQuoteFromDateExtra5"
+    },
+    "custQuoteFromDeliveryDate" : {
+      "meaning" : "custQuoteFromDeliveryDate"
+    },
+    "custQuoteFromEndTime" : {
+      "meaning" : "custQuoteFromEndTime"
+    },
+    "custQuoteFromReceiptDate" : {
+      "meaning" : "custQuoteFromReceiptDate"
+    },
+    "custQuoteFromUpdateTime" : {
+      "meaning" : "custQuoteFromUpdateTime"
+    },
+    "custQuoteFscType" : {
+      "meaning" : "客户定价表FSC声明"
+    },
+    "custQuoteGenerativePeople" : {
+      "meaning" : "客户定价表下发人"
+    },
+    "custQuoteGenerativeState" : {
+      "meaning" : "客户定价表下发状态"
+    },
+    "custQuoteGroovyScript" : {
+      "meaning" : "客户定价表groovy脚本"
+    },
+    "custQuoteGropeCode" : {
+      "meaning" : "客户定价表搜索码"
+    },
+    "custQuoteId" : {
+      "meaning" : "客户定价表主键ID",
+      "is_primary" : true
+    },
+    "custQuoteInUsed" : {
+      "meaning" : "客户定价表是否被使用"
+    },
+    "custQuoteInvTypeTaxRateId" : {
+      "meaning" : "客户定价表发票税率id"
+    },
+    "custQuoteIsBanned" : {
+      "meaning" : "客户定价表是否被禁用"
+    },
+    "custQuoteIsDeleted" : {
+      "meaning" : "客户定价表是否被删除"
+    },
+    "custQuoteIsLeaf" : {
+      "meaning" : "客户定价表是否叶子节点"
+    },
+    "custQuoteIsMainFlow" : {
+      "meaning" : "客户定价表是否是主流程"
+    },
+    "custQuoteIsManualModificationDate" : {
+      "meaning" : "客户定价表是否手动修改计划生产时间"
+    },
+    "custQuoteIsolation" : {
+      "meaning" : "客户定价表智能节点数据隔离标识"
+    },
+    "custQuoteJsScript" : {
+      "meaning" : "客户定价表js脚本"
+    },
+    "custQuoteMaterialId" : {
+      "meaning" : "客户定价表物料id"
+    },
+    "custQuoteName" : {
+      "meaning" : "客户定价表智能节点名"
+    },
+    "custQuoteNameCodeSearch" : {
+      "meaning" : "客户定价表name、user_code模糊搜索"
+    },
+    "custQuoteNumberExtra1" : {
+      "meaning" : "客户定价表扩展数量1"
+    },
+    "custQuoteNumberExtra2" : {
+      "meaning" : "客户定价表扩展数量2"
+    },
+    "custQuoteNumberExtra3" : {
+      "meaning" : "客户定价表扩展数量3"
+    },
+    "custQuoteNumberExtra4" : {
+      "meaning" : "客户定价表扩展数量4"
+    },
+    "custQuoteNumberExtra5" : {
+      "meaning" : "客户定价表扩展数量5"
+    },
+    "custQuoteParentId" : {
+      "meaning" : "客户定价表父节点ID"
+    },
+    "custQuotePartnerId" : {
+      "meaning" : "客户定价表合作方id 加工商、供应商、客户"
+    },
+    "custQuotePlannedOutputQuantity" : {
+      "meaning" : "客户定价表计划产出数量"
+    },
+    "custQuotePlannedTimeRequired" : {
+      "meaning" : "客户定价表计划需时(小时)"
+    },
+    "custQuotePrintTimes" : {
+      "meaning" : "客户定价表打印次数"
+    },
+    "custQuotePriority" : {
+      "meaning" : "客户定价表优先级"
+    },
+    "custQuoteProcessInstanceId" : {
+      "meaning" : "客户定价表流程实例ID"
+    },
+    "custQuoteProductionProcessesTypeId" : {
+      "meaning" : "客户定价表工序类型ID"
+    },
+    "custQuoteProductionShiftId" : {
+      "meaning" : "客户定价表生产班次ID"
+    },
+    "custQuoteQuantity" : {
+      "meaning" : "客户定价表任务数量"
+    },
+    "custQuoteReceiptDate" : {
+      "meaning" : "客户定价表单据日期"
+    },
+    "custQuoteReceiptType" : {
+      "meaning" : "客户定价表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "custQuoteRelatedTasksId" : {
+      "meaning" : "客户定价表关联任务id"
+    },
+    "custQuoteSerialNumber" : {
+      "meaning" : "客户定价表顺序号"
+    },
+    "custQuoteSource" : {
+      "meaning" : "客户定价表源"
+    },
+    "custQuoteSourceType" : {
+      "meaning" : "客户定价表来源类型"
+    },
+    "custQuoteState" : {
+      "meaning" : "客户定价表通用状态"
+    },
+    "custQuoteSystemCode" : {
+      "meaning" : "客户定价表系统编码"
+    },
+    "custQuoteTarget" : {
+      "meaning" : "客户定价表目标"
+    },
+    "custQuoteTaskNodeName" : {
+      "meaning" : "客户定价表任务节点名称"
+    },
+    "custQuoteTenantId" : {
+      "meaning" : "客户定价表租户ID"
+    },
+    "custQuoteThirdPartyClass" : {
+      "meaning" : "客户定价表第三方分类"
+    },
+    "custQuoteThirdPartyId" : {
+      "meaning" : "客户定价表第三方系统中的唯一ID"
+    },
+    "custQuoteThirdPartyName" : {
+      "meaning" : "客户定价表第三方名称"
+    },
+    "custQuoteToAuditDate" : {
+      "meaning" : "custQuoteToAuditDate"
+    },
+    "custQuoteToBeginTime" : {
+      "meaning" : "custQuoteToBeginTime"
+    },
+    "custQuoteToCreateTime" : {
+      "meaning" : "custQuoteToCreateTime"
+    },
+    "custQuoteToDateExtra1" : {
+      "meaning" : "custQuoteToDateExtra1"
+    },
+    "custQuoteToDateExtra2" : {
+      "meaning" : "custQuoteToDateExtra2"
+    },
+    "custQuoteToDateExtra3" : {
+      "meaning" : "custQuoteToDateExtra3"
+    },
+    "custQuoteToDateExtra4" : {
+      "meaning" : "custQuoteToDateExtra4"
+    },
+    "custQuoteToDateExtra5" : {
+      "meaning" : "custQuoteToDateExtra5"
+    },
+    "custQuoteToDeliveryDate" : {
+      "meaning" : "custQuoteToDeliveryDate"
+    },
+    "custQuoteToEndTime" : {
+      "meaning" : "custQuoteToEndTime"
+    },
+    "custQuoteToReceiptDate" : {
+      "meaning" : "custQuoteToReceiptDate"
+    },
+    "custQuoteToUpdateTime" : {
+      "meaning" : "custQuoteToUpdateTime"
+    },
+    "custQuoteUnitCode" : {
+      "meaning" : "客户定价表单位id"
+    },
+    "custQuoteUpdateTime" : {
+      "meaning" : "客户定价表更新时间"
+    },
+    "custQuoteUpdater" : {
+      "meaning" : "客户定价表更新人"
+    },
+    "custQuoteUpdaterId" : {
+      "meaning" : "客户定价表更新人ID"
+    },
+    "custQuoteUserCode" : {
+      "meaning" : "客户定价表智能节点的唯一编码"
+    },
+    "custQuoteVarExtra1" : {
+      "meaning" : "客户定价表扩展1"
+    },
+    "custQuoteVarExtra2" : {
+      "meaning" : "客户定价表扩展2"
+    },
+    "custQuoteVarExtra3" : {
+      "meaning" : "客户定价表扩展3"
+    },
+    "custQuoteVarExtra4" : {
+      "meaning" : "客户定价表扩展4"
+    },
+    "custQuoteVarExtra5" : {
+      "meaning" : "客户定价表扩展5"
+    },
+    "custQuoteVersion" : {
+      "meaning" : "客户定价表版本号"
+    }
+  }
+}

@@ -1,0 +1,738 @@
+{
+      "api_name": "/mkt-frt/findList",
+      "table_name": "业务预测表",
+      "request": {
+        "mktFrtDetMktFrtClazz": "MARKET_FORECASTING",
+        "mktFrtDetClazz": "MARKET_FORECASTING_DET"
+      },
+      "mainTabClazz": "MARKET_FORECASTING_DET",
+      "response": {
+        "mktFrtDetActualTimeRequired": {
+          "meaning": "业务预测表实际需时(小时)"
+        },
+        "mktFrtDetAdjustmentTimeRequired": {
+          "meaning": "业务预测表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "mktFrtDetApplicationId": {
+          "meaning": "业务预测表应用ID"
+        },
+        "mktFrtDetAuditDate": {
+          "meaning": "mktFrtDetAuditDate"
+        },
+        "mktFrtDetAuditStatus": {
+          "meaning": "业务预测表审核状态"
+        },
+        "mktFrtDetAvailableScheduleId": {
+          "meaning": "业务预测表可用日程id"
+        },
+        "mktFrtDetBeginTime": {
+          "meaning": "mktFrtDetBeginTime"
+        },
+        "mktFrtDetBizVersion": {
+          "meaning": "业务预测表业务自定义版本号"
+        },
+        "mktFrtDetBriefName": {
+          "meaning": "业务预测表简称"
+        },
+        "mktFrtDetBusDivisId": {
+          "meaning": "业务预测表事业部id"
+        },
+        "mktFrtDetClazz": {
+          "meaning": "业务预测表子类 类名（表和类一一对应）"
+        },
+        "mktFrtDetClosedReason": {
+          "meaning": "业务预测表结案原因"
+        },
+        "mktFrtDetClosedStatus": {
+          "meaning": "业务预测表结案状态"
+        },
+        "mktFrtDetComment": {
+          "meaning": "业务预测表评论"
+        },
+        "mktFrtDetCompleteQuantity": {
+          "meaning": "业务预测表完成数量"
+        },
+        "mktFrtDetCompleteStatus": {
+          "meaning": "业务预测表完成状态"
+        },
+        "mktFrtDetCreateTime": {
+          "meaning": "mktFrtDetCreateTime"
+        },
+        "mktFrtDetCreator": {
+          "meaning": "业务预测表创建人"
+        },
+        "mktFrtDetCreatorId": {
+          "meaning": "业务预测表创建人ID"
+        },
+        "mktFrtDetDateExtra1": {
+          "meaning": "mktFrtDetDateExtra1"
+        },
+        "mktFrtDetDateExtra2": {
+          "meaning": "mktFrtDetDateExtra2"
+        },
+        "mktFrtDetDateExtra3": {
+          "meaning": "mktFrtDetDateExtra3"
+        },
+        "mktFrtDetDateExtra4": {
+          "meaning": "mktFrtDetDateExtra4"
+        },
+        "mktFrtDetDateExtra5": {
+          "meaning": "mktFrtDetDateExtra5"
+        },
+        "mktFrtDetDefaultType": {
+          "meaning": "业务预测表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "mktFrtDetDeliveryDate": {
+          "meaning": "mktFrtDetDeliveryDate"
+        },
+        "mktFrtDetDescription": {
+          "meaning": "业务预测表描述"
+        },
+        "mktFrtDetEndTime": {
+          "meaning": "mktFrtDetEndTime"
+        },
+        "mktFrtDetEndTimeRequired": {
+          "meaning": "业务预测表最后需时(小时)"
+        },
+        "mktFrtDetEngName": {
+          "meaning": "业务预测表英文名称"
+        },
+        "mktFrtDetEquipmentId": {
+          "meaning": "业务预测表设备id"
+        },
+        "mktFrtDetExchangeRateId": {
+          "meaning": "业务预测表币种汇率id"
+        },
+        "mktFrtDetExtension": {
+          "meaning": "业务预测表扩展数据"
+        },
+        "mktFrtDetExternalState": {
+          "meaning": "业务预测表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "mktFrtDetFilterClazz": {
+          "meaning": "业务预测表冗余字段用于筛选"
+        },
+        "mktFrtDetFlags": {
+          "meaning": "业务预测表63位标志位"
+        },
+        "mktFrtDetFromAuditDate": {
+          "meaning": "mktFrtDetFromAuditDate"
+        },
+        "mktFrtDetFromBeginTime": {
+          "meaning": "mktFrtDetFromBeginTime"
+        },
+        "mktFrtDetFromCreateTime": {
+          "meaning": "mktFrtDetFromCreateTime"
+        },
+        "mktFrtDetFromDateExtra1": {
+          "meaning": "mktFrtDetFromDateExtra1"
+        },
+        "mktFrtDetFromDateExtra2": {
+          "meaning": "mktFrtDetFromDateExtra2"
+        },
+        "mktFrtDetFromDateExtra3": {
+          "meaning": "mktFrtDetFromDateExtra3"
+        },
+        "mktFrtDetFromDateExtra4": {
+          "meaning": "mktFrtDetFromDateExtra4"
+        },
+        "mktFrtDetFromDateExtra5": {
+          "meaning": "mktFrtDetFromDateExtra5"
+        },
+        "mktFrtDetFromDeliveryDate": {
+          "meaning": "mktFrtDetFromDeliveryDate"
+        },
+        "mktFrtDetFromEndTime": {
+          "meaning": "mktFrtDetFromEndTime"
+        },
+        "mktFrtDetFromReceiptDate": {
+          "meaning": "mktFrtDetFromReceiptDate"
+        },
+        "mktFrtDetFromUpdateTime": {
+          "meaning": "mktFrtDetFromUpdateTime"
+        },
+        "mktFrtDetFscType": {
+          "meaning": "业务预测表FSC声明"
+        },
+        "mktFrtDetGenerativePeople": {
+          "meaning": "业务预测表下发人"
+        },
+        "mktFrtDetGenerativeState": {
+          "meaning": "业务预测表下发状态"
+        },
+        "mktFrtDetGroovyScript": {
+          "meaning": "业务预测表groovy脚本"
+        },
+        "mktFrtDetGropeCode": {
+          "meaning": "业务预测表搜索码"
+        },
+        "mktFrtDetId": {
+          "meaning": "业务预测表PK",
+          "is_primary": true
+        },
+        "mktFrtDetInUsed": {
+          "meaning": "业务预测表是否被使用"
+        },
+        "mktFrtDetInvTypeTaxRateId": {
+          "meaning": "业务预测表发票税率id"
+        },
+        "mktFrtDetIsBanned": {
+          "meaning": "业务预测表是否被禁用"
+        },
+        "mktFrtDetIsDeleted": {
+          "meaning": "业务预测表是否被删除"
+        },
+        "mktFrtDetIsLeaf": {
+          "meaning": "业务预测表是否叶子节点"
+        },
+        "mktFrtDetIsMainFlow": {
+          "meaning": "业务预测表是否是主流程"
+        },
+        "mktFrtDetIsManualModificationDate": {
+          "meaning": "业务预测表是否手动修改计划生产时间"
+        },
+        "mktFrtDetIsolation": {
+          "meaning": "业务预测表智能节点数据隔离标识"
+        },
+        "mktFrtDetJsScript": {
+          "meaning": "业务预测表js脚本"
+        },
+        "mktFrtDetMaterialId": {
+          "meaning": "业务预测表物料id"
+        },
+        "mktFrtDetMerchantId": {
+          "meaning": "业务预测表客户id"
+        },
+        "mktFrtDetMktFrtActualTimeRequired": {
+          "meaning": "业务预测表实际需时(小时)"
+        },
+        "mktFrtDetMktFrtAdjustmentTimeRequired": {
+          "meaning": "业务预测表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "mktFrtDetMktFrtApplicationId": {
+          "meaning": "业务预测表应用ID"
+        },
+        "mktFrtDetMktFrtAuditDate": {
+          "meaning": "mktFrtDetMktFrtAuditDate"
+        },
+        "mktFrtDetMktFrtAuditStatus": {
+          "meaning": "业务预测表审核状态"
+        },
+        "mktFrtDetMktFrtAvailableScheduleId": {
+          "meaning": "业务预测表可用日程id"
+        },
+        "mktFrtDetMktFrtBeginTime": {
+          "meaning": "mktFrtDetMktFrtBeginTime"
+        },
+        "mktFrtDetMktFrtBizVersion": {
+          "meaning": "业务预测表业务自定义版本号"
+        },
+        "mktFrtDetMktFrtBriefName": {
+          "meaning": "业务预测表简称"
+        },
+        "mktFrtDetMktFrtBusDivisId": {
+          "meaning": "业务预测表事业部id"
+        },
+        "mktFrtDetMktFrtClazz": {
+          "meaning": "业务预测表子类 类名（表和类一一对应）"
+        },
+        "mktFrtDetMktFrtClosedReason": {
+          "meaning": "业务预测表结案原因"
+        },
+        "mktFrtDetMktFrtClosedStatus": {
+          "meaning": "业务预测表结案状态"
+        },
+        "mktFrtDetMktFrtComment": {
+          "meaning": "业务预测表评论"
+        },
+        "mktFrtDetMktFrtCompleteQuantity": {
+          "meaning": "业务预测表完成数量"
+        },
+        "mktFrtDetMktFrtCompleteStatus": {
+          "meaning": "业务预测表完成状态"
+        },
+        "mktFrtDetMktFrtCreateTime": {
+          "meaning": "mktFrtDetMktFrtCreateTime"
+        },
+        "mktFrtDetMktFrtCreator": {
+          "meaning": "业务预测表创建人"
+        },
+        "mktFrtDetMktFrtCreatorId": {
+          "meaning": "业务预测表创建人ID"
+        },
+        "mktFrtDetMktFrtDateExtra1": {
+          "meaning": "mktFrtDetMktFrtDateExtra1"
+        },
+        "mktFrtDetMktFrtDateExtra2": {
+          "meaning": "mktFrtDetMktFrtDateExtra2"
+        },
+        "mktFrtDetMktFrtDateExtra3": {
+          "meaning": "mktFrtDetMktFrtDateExtra3"
+        },
+        "mktFrtDetMktFrtDateExtra4": {
+          "meaning": "mktFrtDetMktFrtDateExtra4"
+        },
+        "mktFrtDetMktFrtDateExtra5": {
+          "meaning": "mktFrtDetMktFrtDateExtra5"
+        },
+        "mktFrtDetMktFrtDefaultType": {
+          "meaning": "业务预测表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "mktFrtDetMktFrtDeliveryDate": {
+          "meaning": "mktFrtDetMktFrtDeliveryDate"
+        },
+        "mktFrtDetMktFrtDescription": {
+          "meaning": "业务预测表描述"
+        },
+        "mktFrtDetMktFrtEndTime": {
+          "meaning": "mktFrtDetMktFrtEndTime"
+        },
+        "mktFrtDetMktFrtEndTimeRequired": {
+          "meaning": "业务预测表最后需时(小时)"
+        },
+        "mktFrtDetMktFrtEngName": {
+          "meaning": "业务预测表英文名称"
+        },
+        "mktFrtDetMktFrtEquipmentId": {
+          "meaning": "业务预测表设备id"
+        },
+        "mktFrtDetMktFrtExchangeRateId": {
+          "meaning": "业务预测表币种汇率id"
+        },
+        "mktFrtDetMktFrtExtension": {
+          "meaning": "业务预测表扩展数据"
+        },
+        "mktFrtDetMktFrtExternalState": {
+          "meaning": "业务预测表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "mktFrtDetMktFrtFilterClazz": {
+          "meaning": "业务预测表冗余字段用于筛选"
+        },
+        "mktFrtDetMktFrtFlags": {
+          "meaning": "业务预测表63位标志位"
+        },
+        "mktFrtDetMktFrtFromAuditDate": {
+          "meaning": "mktFrtDetMktFrtFromAuditDate"
+        },
+        "mktFrtDetMktFrtFromBeginTime": {
+          "meaning": "mktFrtDetMktFrtFromBeginTime"
+        },
+        "mktFrtDetMktFrtFromCreateTime": {
+          "meaning": "mktFrtDetMktFrtFromCreateTime"
+        },
+        "mktFrtDetMktFrtFromDateExtra1": {
+          "meaning": "mktFrtDetMktFrtFromDateExtra1"
+        },
+        "mktFrtDetMktFrtFromDateExtra2": {
+          "meaning": "mktFrtDetMktFrtFromDateExtra2"
+        },
+        "mktFrtDetMktFrtFromDateExtra3": {
+          "meaning": "mktFrtDetMktFrtFromDateExtra3"
+        },
+        "mktFrtDetMktFrtFromDateExtra4": {
+          "meaning": "mktFrtDetMktFrtFromDateExtra4"
+        },
+        "mktFrtDetMktFrtFromDateExtra5": {
+          "meaning": "mktFrtDetMktFrtFromDateExtra5"
+        },
+        "mktFrtDetMktFrtFromDeliveryDate": {
+          "meaning": "mktFrtDetMktFrtFromDeliveryDate"
+        },
+        "mktFrtDetMktFrtFromEndTime": {
+          "meaning": "mktFrtDetMktFrtFromEndTime"
+        },
+        "mktFrtDetMktFrtFromReceiptDate": {
+          "meaning": "mktFrtDetMktFrtFromReceiptDate"
+        },
+        "mktFrtDetMktFrtFromUpdateTime": {
+          "meaning": "mktFrtDetMktFrtFromUpdateTime"
+        },
+        "mktFrtDetMktFrtFscType": {
+          "meaning": "业务预测表FSC声明"
+        },
+        "mktFrtDetMktFrtGenerativePeople": {
+          "meaning": "业务预测表下发人"
+        },
+        "mktFrtDetMktFrtGenerativeState": {
+          "meaning": "业务预测表下发状态"
+        },
+        "mktFrtDetMktFrtGroovyScript": {
+          "meaning": "业务预测表groovy脚本"
+        },
+        "mktFrtDetMktFrtGropeCode": {
+          "meaning": "业务预测表搜索码"
+        },
+        "mktFrtDetMktFrtId": {
+          "meaning": "业务预测表PK"
+        },
+        "mktFrtDetMktFrtInUsed": {
+          "meaning": "业务预测表是否被使用"
+        },
+        "mktFrtDetMktFrtInvTypeTaxRateId": {
+          "meaning": "业务预测表发票税率id"
+        },
+        "mktFrtDetMktFrtIsBanned": {
+          "meaning": "业务预测表是否被禁用"
+        },
+        "mktFrtDetMktFrtIsDeleted": {
+          "meaning": "业务预测表是否被删除"
+        },
+        "mktFrtDetMktFrtIsLeaf": {
+          "meaning": "业务预测表是否叶子节点"
+        },
+        "mktFrtDetMktFrtIsMainFlow": {
+          "meaning": "业务预测表是否是主流程"
+        },
+        "mktFrtDetMktFrtIsManualModificationDate": {
+          "meaning": "业务预测表是否手动修改计划生产时间"
+        },
+        "mktFrtDetMktFrtIsolation": {
+          "meaning": "业务预测表智能节点数据隔离标识"
+        },
+        "mktFrtDetMktFrtJsScript": {
+          "meaning": "业务预测表js脚本"
+        },
+        "mktFrtDetMktFrtMaterialId": {
+          "meaning": "业务预测表物料id"
+        },
+        "mktFrtDetMktFrtMerchantId": {
+          "meaning": "业务预测表客户id"
+        },
+        "mktFrtDetMktFrtName": {
+          "meaning": "业务预测表智能节点名"
+        },
+        "mktFrtDetMktFrtNameCodeSearch": {
+          "meaning": "业务预测表name、user_code模糊搜索"
+        },
+        "mktFrtDetMktFrtNumberExtra1": {
+          "meaning": "业务预测表扩展数量1"
+        },
+        "mktFrtDetMktFrtNumberExtra2": {
+          "meaning": "业务预测表扩展数量2"
+        },
+        "mktFrtDetMktFrtNumberExtra3": {
+          "meaning": "业务预测表扩展数量3"
+        },
+        "mktFrtDetMktFrtNumberExtra4": {
+          "meaning": "业务预测表扩展数量4"
+        },
+        "mktFrtDetMktFrtNumberExtra5": {
+          "meaning": "业务预测表扩展数量5"
+        },
+        "mktFrtDetMktFrtParentId": {
+          "meaning": "业务预测表父节点ID"
+        },
+        "mktFrtDetMktFrtPlannedOutputQuantity": {
+          "meaning": "业务预测表计划产出数量"
+        },
+        "mktFrtDetMktFrtPlannedTimeRequired": {
+          "meaning": "业务预测表计划需时(小时)"
+        },
+        "mktFrtDetMktFrtPrintTimes": {
+          "meaning": "业务预测表打印次数"
+        },
+        "mktFrtDetMktFrtPriority": {
+          "meaning": "业务预测表优先级"
+        },
+        "mktFrtDetMktFrtProcessInstanceId": {
+          "meaning": "业务预测表流程实例ID"
+        },
+        "mktFrtDetMktFrtProductionProcessesTypeId": {
+          "meaning": "业务预测表工序类型ID"
+        },
+        "mktFrtDetMktFrtProductionShiftId": {
+          "meaning": "业务预测表生产班次ID"
+        },
+        "mktFrtDetMktFrtPurchaseForecastingQuantity": {
+          "meaning": "业务预测表已开采购预测状态"
+        },
+        "mktFrtDetMktFrtPurchaseForecastingState": {
+          "meaning": "mktFrtDetMktFrtPurchaseForecastingState"
+        },
+        "mktFrtDetMktFrtQuantity": {
+          "meaning": "业务预测表任务数量"
+        },
+        "mktFrtDetMktFrtReceiptDate": {
+          "meaning": "mktFrtDetMktFrtReceiptDate"
+        },
+        "mktFrtDetMktFrtReceiptType": {
+          "meaning": "业务预测表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "mktFrtDetMktFrtRelatedTasksId": {
+          "meaning": "业务预测表关联任务id"
+        },
+        "mktFrtDetMktFrtSerialNumber": {
+          "meaning": "业务预测表顺序号"
+        },
+        "mktFrtDetMktFrtSeriesId": {
+          "meaning": "业务预测表产品系列id"
+        },
+        "mktFrtDetMktFrtSource": {
+          "meaning": "业务预测表源"
+        },
+        "mktFrtDetMktFrtSourceType": {
+          "meaning": "业务预测表来源类型"
+        },
+        "mktFrtDetMktFrtState": {
+          "meaning": "业务预测表通用状态"
+        },
+        "mktFrtDetMktFrtSystemCode": {
+          "meaning": "业务预测表系统编码"
+        },
+        "mktFrtDetMktFrtTarget": {
+          "meaning": "业务预测表目标"
+        },
+        "mktFrtDetMktFrtTaskNodeName": {
+          "meaning": "业务预测表任务节点名称"
+        },
+        "mktFrtDetMktFrtTenantId": {
+          "meaning": "业务预测表租户id"
+        },
+        "mktFrtDetMktFrtThirdPartyClass": {
+          "meaning": "业务预测表第三方分类"
+        },
+        "mktFrtDetMktFrtThirdPartyId": {
+          "meaning": "业务预测表第三方系统中的唯一ID"
+        },
+        "mktFrtDetMktFrtThirdPartyName": {
+          "meaning": "业务预测表第三方名称"
+        },
+        "mktFrtDetMktFrtToAuditDate": {
+          "meaning": "mktFrtDetMktFrtToAuditDate"
+        },
+        "mktFrtDetMktFrtToBeginTime": {
+          "meaning": "mktFrtDetMktFrtToBeginTime"
+        },
+        "mktFrtDetMktFrtToCreateTime": {
+          "meaning": "mktFrtDetMktFrtToCreateTime"
+        },
+        "mktFrtDetMktFrtToDateExtra1": {
+          "meaning": "mktFrtDetMktFrtToDateExtra1"
+        },
+        "mktFrtDetMktFrtToDateExtra2": {
+          "meaning": "mktFrtDetMktFrtToDateExtra2"
+        },
+        "mktFrtDetMktFrtToDateExtra3": {
+          "meaning": "mktFrtDetMktFrtToDateExtra3"
+        },
+        "mktFrtDetMktFrtToDateExtra4": {
+          "meaning": "mktFrtDetMktFrtToDateExtra4"
+        },
+        "mktFrtDetMktFrtToDateExtra5": {
+          "meaning": "mktFrtDetMktFrtToDateExtra5"
+        },
+        "mktFrtDetMktFrtToDeliveryDate": {
+          "meaning": "mktFrtDetMktFrtToDeliveryDate"
+        },
+        "mktFrtDetMktFrtToEndTime": {
+          "meaning": "mktFrtDetMktFrtToEndTime"
+        },
+        "mktFrtDetMktFrtToReceiptDate": {
+          "meaning": "mktFrtDetMktFrtToReceiptDate"
+        },
+        "mktFrtDetMktFrtToUpdateTime": {
+          "meaning": "mktFrtDetMktFrtToUpdateTime"
+        },
+        "mktFrtDetMktFrtUnitCode": {
+          "meaning": "业务预测表单位id"
+        },
+        "mktFrtDetMktFrtUpdateTime": {
+          "meaning": "mktFrtDetMktFrtUpdateTime"
+        },
+        "mktFrtDetMktFrtUpdater": {
+          "meaning": "业务预测表更新人"
+        },
+        "mktFrtDetMktFrtUpdaterId": {
+          "meaning": "业务预测表更新人ID"
+        },
+        "mktFrtDetMktFrtUserCode": {
+          "meaning": "业务预测表智能节点的唯一编码"
+        },
+        "mktFrtDetMktFrtVarExtra1": {
+          "meaning": "业务预测表扩展1"
+        },
+        "mktFrtDetMktFrtVarExtra2": {
+          "meaning": "业务预测表扩展2"
+        },
+        "mktFrtDetMktFrtVarExtra3": {
+          "meaning": "业务预测表扩展3"
+        },
+        "mktFrtDetMktFrtVarExtra4": {
+          "meaning": "业务预测表扩展4"
+        },
+        "mktFrtDetMktFrtVarExtra5": {
+          "meaning": "业务预测表扩展5"
+        },
+        "mktFrtDetMktFrtVersion": {
+          "meaning": "业务预测表版本号"
+        },
+        "mktFrtDetName": {
+          "meaning": "业务预测表智能节点名"
+        },
+        "mktFrtDetNameCodeSearch": {
+          "meaning": "业务预测表name、user_code模糊搜索"
+        },
+        "mktFrtDetNumberExtra1": {
+          "meaning": "业务预测表扩展数量1"
+        },
+        "mktFrtDetNumberExtra2": {
+          "meaning": "业务预测表扩展数量2"
+        },
+        "mktFrtDetNumberExtra3": {
+          "meaning": "业务预测表扩展数量3"
+        },
+        "mktFrtDetNumberExtra4": {
+          "meaning": "业务预测表扩展数量4"
+        },
+        "mktFrtDetNumberExtra5": {
+          "meaning": "业务预测表扩展数量5"
+        },
+        "mktFrtDetParentId": {
+          "meaning": "业务预测表父节点ID"
+        },
+        "mktFrtDetPlannedOutputQuantity": {
+          "meaning": "业务预测表计划产出数量"
+        },
+        "mktFrtDetPlannedTimeRequired": {
+          "meaning": "业务预测表计划需时(小时)"
+        },
+        "mktFrtDetPrintTimes": {
+          "meaning": "业务预测表打印次数"
+        },
+        "mktFrtDetPriority": {
+          "meaning": "业务预测表优先级"
+        },
+        "mktFrtDetProcessInstanceId": {
+          "meaning": "业务预测表流程实例ID"
+        },
+        "mktFrtDetProductionProcessesTypeId": {
+          "meaning": "业务预测表工序类型ID"
+        },
+        "mktFrtDetProductionShiftId": {
+          "meaning": "业务预测表生产班次ID"
+        },
+        "mktFrtDetPurchaseForecastingQuantity": {
+          "meaning": "业务预测表已开采购预测状态"
+        },
+        "mktFrtDetPurchaseForecastingState": {
+          "meaning": "mktFrtDetPurchaseForecastingState"
+        },
+        "mktFrtDetQuantity": {
+          "meaning": "业务预测表任务数量"
+        },
+        "mktFrtDetReceiptDate": {
+          "meaning": "mktFrtDetReceiptDate"
+        },
+        "mktFrtDetReceiptType": {
+          "meaning": "业务预测表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "mktFrtDetRelatedTasksId": {
+          "meaning": "业务预测表关联任务id"
+        },
+        "mktFrtDetSerialNumber": {
+          "meaning": "业务预测表顺序号"
+        },
+        "mktFrtDetSeriesId": {
+          "meaning": "业务预测表产品系列id"
+        },
+        "mktFrtDetSource": {
+          "meaning": "业务预测表源"
+        },
+        "mktFrtDetSourceType": {
+          "meaning": "业务预测表来源类型"
+        },
+        "mktFrtDetState": {
+          "meaning": "业务预测表通用状态"
+        },
+        "mktFrtDetSystemCode": {
+          "meaning": "业务预测表系统编码"
+        },
+        "mktFrtDetTarget": {
+          "meaning": "业务预测表目标"
+        },
+        "mktFrtDetTaskNodeName": {
+          "meaning": "业务预测表任务节点名称"
+        },
+        "mktFrtDetTenantId": {
+          "meaning": "业务预测表租户id"
+        },
+        "mktFrtDetThirdPartyClass": {
+          "meaning": "业务预测表第三方分类"
+        },
+        "mktFrtDetThirdPartyId": {
+          "meaning": "业务预测表第三方系统中的唯一ID"
+        },
+        "mktFrtDetThirdPartyName": {
+          "meaning": "业务预测表第三方名称"
+        },
+        "mktFrtDetToAuditDate": {
+          "meaning": "mktFrtDetToAuditDate"
+        },
+        "mktFrtDetToBeginTime": {
+          "meaning": "mktFrtDetToBeginTime"
+        },
+        "mktFrtDetToCreateTime": {
+          "meaning": "mktFrtDetToCreateTime"
+        },
+        "mktFrtDetToDateExtra1": {
+          "meaning": "mktFrtDetToDateExtra1"
+        },
+        "mktFrtDetToDateExtra2": {
+          "meaning": "mktFrtDetToDateExtra2"
+        },
+        "mktFrtDetToDateExtra3": {
+          "meaning": "mktFrtDetToDateExtra3"
+        },
+        "mktFrtDetToDateExtra4": {
+          "meaning": "mktFrtDetToDateExtra4"
+        },
+        "mktFrtDetToDateExtra5": {
+          "meaning": "mktFrtDetToDateExtra5"
+        },
+        "mktFrtDetToDeliveryDate": {
+          "meaning": "mktFrtDetToDeliveryDate"
+        },
+        "mktFrtDetToEndTime": {
+          "meaning": "mktFrtDetToEndTime"
+        },
+        "mktFrtDetToReceiptDate": {
+          "meaning": "mktFrtDetToReceiptDate"
+        },
+        "mktFrtDetToUpdateTime": {
+          "meaning": "mktFrtDetToUpdateTime"
+        },
+        "mktFrtDetUnitCode": {
+          "meaning": "业务预测表单位id"
+        },
+        "mktFrtDetUpdateTime": {
+          "meaning": "mktFrtDetUpdateTime"
+        },
+        "mktFrtDetUpdater": {
+          "meaning": "业务预测表更新人"
+        },
+        "mktFrtDetUpdaterId": {
+          "meaning": "业务预测表更新人ID"
+        },
+        "mktFrtDetUserCode": {
+          "meaning": "业务预测表智能节点的唯一编码"
+        },
+        "mktFrtDetVarExtra1": {
+          "meaning": "业务预测表扩展1"
+        },
+        "mktFrtDetVarExtra2": {
+          "meaning": "业务预测表扩展2"
+        },
+        "mktFrtDetVarExtra3": {
+          "meaning": "业务预测表扩展3"
+        },
+        "mktFrtDetVarExtra4": {
+          "meaning": "业务预测表扩展4"
+        },
+        "mktFrtDetVarExtra5": {
+          "meaning": "业务预测表扩展5"
+        },
+        "mktFrtDetVersion": {
+          "meaning": "业务预测表版本号"
+        }
+      }
+    }

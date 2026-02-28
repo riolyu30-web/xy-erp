@@ -1,0 +1,810 @@
+{
+  "api_name" : "/sup-outstorage-det/findList",
+  "table_name" : "辅料出库明细表",
+  "request" : {
+    "supOutstorageDetSupOutstorageClazz" : "SUP_OUTSTORAGE",
+    "supOutstorageDetClazz" : "SUP_OUTSTORAGE_DET"
+  },
+  "mainTabClazz" : "SUP_OUTSTORAGE_DET",
+  "response" : {
+    "supOutstorageDetActualTimeRequired" : {
+      "meaning" : "辅料出库明细表实际需时(小时)"
+    },
+    "supOutstorageDetAdditionalWeight" : {
+      "meaning" : "辅料出库明细表附加重量"
+    },
+    "supOutstorageDetAdjustmentTimeRequired" : {
+      "meaning" : "辅料出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "supOutstorageDetApplicationId" : {
+      "meaning" : "辅料出库明细表应用ID"
+    },
+    "supOutstorageDetAuditDate" : {
+      "meaning" : "辅料出库明细表审核时间"
+    },
+    "supOutstorageDetAuditStatus" : {
+      "meaning" : "辅料出库明细表审核状态"
+    },
+    "supOutstorageDetAvailableScheduleId" : {
+      "meaning" : "辅料出库明细表可用日程id"
+    },
+    "supOutstorageDetBeginTime" : {
+      "meaning" : "辅料出库明细表开始时间"
+    },
+    "supOutstorageDetBizVersion" : {
+      "meaning" : "辅料出库明细表业务自定义版本号"
+    },
+    "supOutstorageDetBriefName" : {
+      "meaning" : "辅料出库明细表简称"
+    },
+    "supOutstorageDetBusDivisId" : {
+      "meaning" : "辅料出库明细表事业部id"
+    },
+    "supOutstorageDetClazz" : {
+      "meaning" : "辅料出库明细表子类 类名（表和类一一对应）"
+    },
+    "supOutstorageDetClosedReason" : {
+      "meaning" : "辅料出库明细表结案原因"
+    },
+    "supOutstorageDetClosedStatus" : {
+      "meaning" : "辅料出库明细表结案状态"
+    },
+    "supOutstorageDetComment" : {
+      "meaning" : "辅料出库明细表评论"
+    },
+    "supOutstorageDetCompleteQuantity" : {
+      "meaning" : "辅料出库明细表完成数量"
+    },
+    "supOutstorageDetCompleteStatus" : {
+      "meaning" : "辅料出库明细表完成状态"
+    },
+    "supOutstorageDetCreateTime" : {
+      "meaning" : "辅料出库明细表创建时间"
+    },
+    "supOutstorageDetCreator" : {
+      "meaning" : "辅料出库明细表创建人"
+    },
+    "supOutstorageDetCreatorId" : {
+      "meaning" : "辅料出库明细表创建人ID"
+    },
+    "supOutstorageDetDateExtra1" : {
+      "meaning" : "辅料出库明细表扩展时间1"
+    },
+    "supOutstorageDetDateExtra2" : {
+      "meaning" : "辅料出库明细表扩展时间2"
+    },
+    "supOutstorageDetDateExtra3" : {
+      "meaning" : "辅料出库明细表扩展时间3"
+    },
+    "supOutstorageDetDateExtra4" : {
+      "meaning" : "辅料出库明细表扩展时间4"
+    },
+    "supOutstorageDetDateExtra5" : {
+      "meaning" : "辅料出库明细表扩展时间5"
+    },
+    "supOutstorageDetDefaultType" : {
+      "meaning" : "辅料出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "supOutstorageDetDeliveryDate" : {
+      "meaning" : "辅料出库明细表交货日期"
+    },
+    "supOutstorageDetDescription" : {
+      "meaning" : "辅料出库明细表描述"
+    },
+    "supOutstorageDetEndTime" : {
+      "meaning" : "辅料出库明细表结束时间"
+    },
+    "supOutstorageDetEndTimeRequired" : {
+      "meaning" : "辅料出库明细表最后需时(小时)"
+    },
+    "supOutstorageDetEngName" : {
+      "meaning" : "辅料出库明细表英文名称"
+    },
+    "supOutstorageDetEquipmentId" : {
+      "meaning" : "辅料出库明细表设备id"
+    },
+    "supOutstorageDetExchangeRateId" : {
+      "meaning" : "辅料出库明细表币种汇率id"
+    },
+    "supOutstorageDetExtension" : {
+      "meaning" : "辅料出库明细表扩展数据"
+    },
+    "supOutstorageDetExternalState" : {
+      "meaning" : "辅料出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "supOutstorageDetFilterClazz" : {
+      "meaning" : "辅料出库明细表冗余字段用于筛选"
+    },
+    "supOutstorageDetFlags" : {
+      "meaning" : "辅料出库明细表63位标志位"
+    },
+    "supOutstorageDetFromAuditDate" : {
+      "meaning" : "supOutstorageDetFromAuditDate"
+    },
+    "supOutstorageDetFromBeginTime" : {
+      "meaning" : "supOutstorageDetFromBeginTime"
+    },
+    "supOutstorageDetFromCreateTime" : {
+      "meaning" : "supOutstorageDetFromCreateTime"
+    },
+    "supOutstorageDetFromDateExtra1" : {
+      "meaning" : "supOutstorageDetFromDateExtra1"
+    },
+    "supOutstorageDetFromDateExtra2" : {
+      "meaning" : "supOutstorageDetFromDateExtra2"
+    },
+    "supOutstorageDetFromDateExtra3" : {
+      "meaning" : "supOutstorageDetFromDateExtra3"
+    },
+    "supOutstorageDetFromDateExtra4" : {
+      "meaning" : "supOutstorageDetFromDateExtra4"
+    },
+    "supOutstorageDetFromDateExtra5" : {
+      "meaning" : "supOutstorageDetFromDateExtra5"
+    },
+    "supOutstorageDetFromDeliveryDate" : {
+      "meaning" : "supOutstorageDetFromDeliveryDate"
+    },
+    "supOutstorageDetFromEndTime" : {
+      "meaning" : "supOutstorageDetFromEndTime"
+    },
+    "supOutstorageDetFromReceiptDate" : {
+      "meaning" : "supOutstorageDetFromReceiptDate"
+    },
+    "supOutstorageDetFromUpdateTime" : {
+      "meaning" : "supOutstorageDetFromUpdateTime"
+    },
+    "supOutstorageDetFscType" : {
+      "meaning" : "辅料出库明细表FSC声明"
+    },
+    "supOutstorageDetGenerativePeople" : {
+      "meaning" : "辅料出库明细表下发人"
+    },
+    "supOutstorageDetGenerativeState" : {
+      "meaning" : "辅料出库明细表下发状态"
+    },
+    "supOutstorageDetGoodsId" : {
+      "meaning" : "辅料出库明细表货（包）id"
+    },
+    "supOutstorageDetGroovyScript" : {
+      "meaning" : "辅料出库明细表groovy脚本"
+    },
+    "supOutstorageDetGropeCode" : {
+      "meaning" : "辅料出库明细表搜索码"
+    },
+    "supOutstorageDetGrossWeightPerBox" : {
+      "meaning" : "辅料出库明细表每箱毛重"
+    },
+    "supOutstorageDetId" : {
+      "meaning" : "辅料出库明细表PK",
+      "is_primary" : true
+    },
+    "supOutstorageDetInUsed" : {
+      "meaning" : "辅料出库明细表是否被使用"
+    },
+    "supOutstorageDetInvTypeTaxRateId" : {
+      "meaning" : "辅料出库明细表发票税率id"
+    },
+    "supOutstorageDetInventoryQuantity" : {
+      "meaning" : "辅料出库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)"
+    },
+    "supOutstorageDetIsBanned" : {
+      "meaning" : "辅料出库明细表是否被禁用"
+    },
+    "supOutstorageDetIsDeleted" : {
+      "meaning" : "辅料出库明细表是否被删除"
+    },
+    "supOutstorageDetIsLeaf" : {
+      "meaning" : "辅料出库明细表是否叶子节点"
+    },
+    "supOutstorageDetIsMainFlow" : {
+      "meaning" : "辅料出库明细表是否是主流程"
+    },
+    "supOutstorageDetIsManualModificationDate" : {
+      "meaning" : "辅料出库明细表是否手动修改计划生产时间"
+    },
+    "supOutstorageDetIsolation" : {
+      "meaning" : "辅料出库明细表智能节点数据隔离标识"
+    },
+    "supOutstorageDetJsScript" : {
+      "meaning" : "辅料出库明细表js脚本"
+    },
+    "supOutstorageDetLocalCurrencyTotalAmount" : {
+      "meaning" : "辅料出库明细表本币总金额"
+    },
+    "supOutstorageDetLocalCurrencyUnitPrice" : {
+      "meaning" : "辅料出库明细表本币单价"
+    },
+    "supOutstorageDetMatBatchId" : {
+      "meaning" : "辅料出库明细表物料批次id"
+    },
+    "supOutstorageDetMaterialId" : {
+      "meaning" : "辅料出库明细表物料id"
+    },
+    "supOutstorageDetName" : {
+      "meaning" : "辅料出库明细表智能节点名"
+    },
+    "supOutstorageDetNameCodeSearch" : {
+      "meaning" : "辅料出库明细表name、user_code模糊搜索"
+    },
+    "supOutstorageDetNetWeightPerBox" : {
+      "meaning" : "辅料出库明细表每箱净重"
+    },
+    "supOutstorageDetNumberExtra1" : {
+      "meaning" : "辅料出库明细表扩展数量1"
+    },
+    "supOutstorageDetNumberExtra2" : {
+      "meaning" : "辅料出库明细表扩展数量2"
+    },
+    "supOutstorageDetNumberExtra3" : {
+      "meaning" : "辅料出库明细表扩展数量3"
+    },
+    "supOutstorageDetNumberExtra4" : {
+      "meaning" : "辅料出库明细表扩展数量4"
+    },
+    "supOutstorageDetNumberExtra5" : {
+      "meaning" : "辅料出库明细表扩展数量5"
+    },
+    "supOutstorageDetOrgId" : {
+      "meaning" : "辅料出库明细表机构id(客户/供应商)"
+    },
+    "supOutstorageDetPackageMatId" : {
+      "meaning" : "辅料出库明细表包装物料id"
+    },
+    "supOutstorageDetParentId" : {
+      "meaning" : "辅料出库明细表父节点ID"
+    },
+    "supOutstorageDetPlannedOutputQuantity" : {
+      "meaning" : "辅料出库明细表计划产出数量"
+    },
+    "supOutstorageDetPlannedTimeRequired" : {
+      "meaning" : "辅料出库明细表计划需时(小时)"
+    },
+    "supOutstorageDetPrintTimes" : {
+      "meaning" : "辅料出库明细表打印次数"
+    },
+    "supOutstorageDetPriority" : {
+      "meaning" : "辅料出库明细表优先级"
+    },
+    "supOutstorageDetProcessInstanceId" : {
+      "meaning" : "辅料出库明细表流程实例ID"
+    },
+    "supOutstorageDetProductionProcessesTypeId" : {
+      "meaning" : "辅料出库明细表工序类型ID"
+    },
+    "supOutstorageDetProductionShiftId" : {
+      "meaning" : "辅料出库明细表生产班次ID"
+    },
+    "supOutstorageDetQuantity" : {
+      "meaning" : "辅料出库明细表任务数量"
+    },
+    "supOutstorageDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "辅料出库明细表报价单价（含税）"
+    },
+    "supOutstorageDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "辅料出库明细表报价单价（不含税）"
+    },
+    "supOutstorageDetReceiptDate" : {
+      "meaning" : "辅料出库明细表单据日期"
+    },
+    "supOutstorageDetReceiptType" : {
+      "meaning" : "辅料出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "supOutstorageDetRelatedTasksId" : {
+      "meaning" : "辅料出库明细表关联任务id"
+    },
+    "supOutstorageDetSerialNumber" : {
+      "meaning" : "辅料出库明细表顺序号"
+    },
+    "supOutstorageDetSettMethod" : {
+      "meaning" : "辅料出库明细表结算方式"
+    },
+    "supOutstorageDetSettOrgId" : {
+      "meaning" : "辅料出库明细表结算机构id(客户/供应商)"
+    },
+    "supOutstorageDetSettlementTotalAmount" : {
+      "meaning" : "辅料出库明细表结算总金额"
+    },
+    "supOutstorageDetSettlementUnitPrice" : {
+      "meaning" : "辅料出库明细表结算单价"
+    },
+    "supOutstorageDetSingleWeight" : {
+      "meaning" : "辅料出库明细表单重kg"
+    },
+    "supOutstorageDetSource" : {
+      "meaning" : "辅料出库明细表源"
+    },
+    "supOutstorageDetSourceType" : {
+      "meaning" : "辅料出库明细表来源类型"
+    },
+    "supOutstorageDetState" : {
+      "meaning" : "辅料出库明细表通用状态"
+    },
+    "supOutstorageDetStorageSpaceId" : {
+      "meaning" : "辅料出库明细表库空间id"
+    },
+    "supOutstorageDetSupOutstorageActualTimeRequired" : {
+      "meaning" : "辅料出库明细表实际需时(小时)"
+    },
+    "supOutstorageDetSupOutstorageAdjustmentTimeRequired" : {
+      "meaning" : "辅料出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "supOutstorageDetSupOutstorageApplicationId" : {
+      "meaning" : "辅料出库明细表应用ID"
+    },
+    "supOutstorageDetSupOutstorageAuditDate" : {
+      "meaning" : "辅料出库明细表审核时间"
+    },
+    "supOutstorageDetSupOutstorageAuditStatus" : {
+      "meaning" : "辅料出库明细表审核状态"
+    },
+    "supOutstorageDetSupOutstorageAvailableScheduleId" : {
+      "meaning" : "辅料出库明细表可用日程id"
+    },
+    "supOutstorageDetSupOutstorageBeginTime" : {
+      "meaning" : "辅料出库明细表开始时间"
+    },
+    "supOutstorageDetSupOutstorageBizVersion" : {
+      "meaning" : "辅料出库明细表业务自定义版本号"
+    },
+    "supOutstorageDetSupOutstorageBriefName" : {
+      "meaning" : "辅料出库明细表简称"
+    },
+    "supOutstorageDetSupOutstorageBusDivisId" : {
+      "meaning" : "辅料出库明细表事业部id"
+    },
+    "supOutstorageDetSupOutstorageClazz" : {
+      "meaning" : "辅料出库明细表子类 类名（表和类一一对应）"
+    },
+    "supOutstorageDetSupOutstorageClosedReason" : {
+      "meaning" : "辅料出库明细表结案原因"
+    },
+    "supOutstorageDetSupOutstorageClosedStatus" : {
+      "meaning" : "辅料出库明细表结案状态"
+    },
+    "supOutstorageDetSupOutstorageComment" : {
+      "meaning" : "辅料出库明细表评论"
+    },
+    "supOutstorageDetSupOutstorageCompleteQuantity" : {
+      "meaning" : "辅料出库明细表完成数量"
+    },
+    "supOutstorageDetSupOutstorageCompleteStatus" : {
+      "meaning" : "辅料出库明细表完成状态"
+    },
+    "supOutstorageDetSupOutstorageCreateTime" : {
+      "meaning" : "辅料出库明细表创建时间"
+    },
+    "supOutstorageDetSupOutstorageCreator" : {
+      "meaning" : "辅料出库明细表创建人"
+    },
+    "supOutstorageDetSupOutstorageCreatorId" : {
+      "meaning" : "辅料出库明细表创建人ID"
+    },
+    "supOutstorageDetSupOutstorageDateExtra1" : {
+      "meaning" : "辅料出库明细表扩展时间1"
+    },
+    "supOutstorageDetSupOutstorageDateExtra2" : {
+      "meaning" : "辅料出库明细表扩展时间2"
+    },
+    "supOutstorageDetSupOutstorageDateExtra3" : {
+      "meaning" : "辅料出库明细表扩展时间3"
+    },
+    "supOutstorageDetSupOutstorageDateExtra4" : {
+      "meaning" : "辅料出库明细表扩展时间4"
+    },
+    "supOutstorageDetSupOutstorageDateExtra5" : {
+      "meaning" : "辅料出库明细表扩展时间5"
+    },
+    "supOutstorageDetSupOutstorageDefaultType" : {
+      "meaning" : "辅料出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "supOutstorageDetSupOutstorageDeliveryDate" : {
+      "meaning" : "辅料出库明细表交货日期"
+    },
+    "supOutstorageDetSupOutstorageDepId" : {
+      "meaning" : "辅料出库明细表部门id"
+    },
+    "supOutstorageDetSupOutstorageDescription" : {
+      "meaning" : "辅料出库明细表描述"
+    },
+    "supOutstorageDetSupOutstorageEndTime" : {
+      "meaning" : "辅料出库明细表结束时间"
+    },
+    "supOutstorageDetSupOutstorageEndTimeRequired" : {
+      "meaning" : "辅料出库明细表最后需时(小时)"
+    },
+    "supOutstorageDetSupOutstorageEngName" : {
+      "meaning" : "辅料出库明细表英文名称"
+    },
+    "supOutstorageDetSupOutstorageEquipmentId" : {
+      "meaning" : "辅料出库明细表设备id"
+    },
+    "supOutstorageDetSupOutstorageExchangeRateId" : {
+      "meaning" : "辅料出库明细表币种汇率id"
+    },
+    "supOutstorageDetSupOutstorageExtension" : {
+      "meaning" : "辅料出库明细表扩展数据"
+    },
+    "supOutstorageDetSupOutstorageExternalState" : {
+      "meaning" : "辅料出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "supOutstorageDetSupOutstorageFilterClazz" : {
+      "meaning" : "辅料出库明细表冗余字段用于筛选"
+    },
+    "supOutstorageDetSupOutstorageFlags" : {
+      "meaning" : "辅料出库明细表63位标志位"
+    },
+    "supOutstorageDetSupOutstorageFromAuditDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromAuditDate"
+    },
+    "supOutstorageDetSupOutstorageFromBeginTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromBeginTime"
+    },
+    "supOutstorageDetSupOutstorageFromCreateTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromCreateTime"
+    },
+    "supOutstorageDetSupOutstorageFromDateExtra1" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDateExtra1"
+    },
+    "supOutstorageDetSupOutstorageFromDateExtra2" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDateExtra2"
+    },
+    "supOutstorageDetSupOutstorageFromDateExtra3" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDateExtra3"
+    },
+    "supOutstorageDetSupOutstorageFromDateExtra4" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDateExtra4"
+    },
+    "supOutstorageDetSupOutstorageFromDateExtra5" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDateExtra5"
+    },
+    "supOutstorageDetSupOutstorageFromDeliveryDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromDeliveryDate"
+    },
+    "supOutstorageDetSupOutstorageFromEndTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromEndTime"
+    },
+    "supOutstorageDetSupOutstorageFromReceiptDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromReceiptDate"
+    },
+    "supOutstorageDetSupOutstorageFromUpdateTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageFromUpdateTime"
+    },
+    "supOutstorageDetSupOutstorageFscType" : {
+      "meaning" : "辅料出库明细表FSC声明"
+    },
+    "supOutstorageDetSupOutstorageGenerativePeople" : {
+      "meaning" : "辅料出库明细表下发人"
+    },
+    "supOutstorageDetSupOutstorageGenerativeState" : {
+      "meaning" : "辅料出库明细表下发状态"
+    },
+    "supOutstorageDetSupOutstorageGroovyScript" : {
+      "meaning" : "辅料出库明细表groovy脚本"
+    },
+    "supOutstorageDetSupOutstorageGropeCode" : {
+      "meaning" : "辅料出库明细表搜索码"
+    },
+    "supOutstorageDetSupOutstorageId" : {
+      "meaning" : "辅料出库明细表PK"
+    },
+    "supOutstorageDetSupOutstorageInUsed" : {
+      "meaning" : "辅料出库明细表是否被使用"
+    },
+    "supOutstorageDetSupOutstorageInvTypeTaxRateId" : {
+      "meaning" : "辅料出库明细表发票税率id"
+    },
+    "supOutstorageDetSupOutstorageIsBanned" : {
+      "meaning" : "辅料出库明细表是否被禁用"
+    },
+    "supOutstorageDetSupOutstorageIsDeleted" : {
+      "meaning" : "辅料出库明细表是否被删除"
+    },
+    "supOutstorageDetSupOutstorageIsLeaf" : {
+      "meaning" : "辅料出库明细表是否叶子节点"
+    },
+    "supOutstorageDetSupOutstorageIsMainFlow" : {
+      "meaning" : "辅料出库明细表是否是主流程"
+    },
+    "supOutstorageDetSupOutstorageIsManualModificationDate" : {
+      "meaning" : "辅料出库明细表是否手动修改计划生产时间"
+    },
+    "supOutstorageDetSupOutstorageIsolation" : {
+      "meaning" : "辅料出库明细表智能节点数据隔离标识"
+    },
+    "supOutstorageDetSupOutstorageJsScript" : {
+      "meaning" : "辅料出库明细表js脚本"
+    },
+    "supOutstorageDetSupOutstorageMaterialId" : {
+      "meaning" : "辅料出库明细表物料id"
+    },
+    "supOutstorageDetSupOutstorageName" : {
+      "meaning" : "辅料出库明细表智能节点名"
+    },
+    "supOutstorageDetSupOutstorageNameCodeSearch" : {
+      "meaning" : "辅料出库明细表name、user_code模糊搜索"
+    },
+    "supOutstorageDetSupOutstorageNumberExtra1" : {
+      "meaning" : "辅料出库明细表扩展数量1"
+    },
+    "supOutstorageDetSupOutstorageNumberExtra2" : {
+      "meaning" : "辅料出库明细表扩展数量2"
+    },
+    "supOutstorageDetSupOutstorageNumberExtra3" : {
+      "meaning" : "辅料出库明细表扩展数量3"
+    },
+    "supOutstorageDetSupOutstorageNumberExtra4" : {
+      "meaning" : "辅料出库明细表扩展数量4"
+    },
+    "supOutstorageDetSupOutstorageNumberExtra5" : {
+      "meaning" : "辅料出库明细表扩展数量5"
+    },
+    "supOutstorageDetSupOutstorageOrgId" : {
+      "meaning" : "辅料出库明细表机构id(客户/供应商)"
+    },
+    "supOutstorageDetSupOutstorageParentId" : {
+      "meaning" : "辅料出库明细表父节点ID"
+    },
+    "supOutstorageDetSupOutstoragePlannedOutputQuantity" : {
+      "meaning" : "辅料出库明细表计划产出数量"
+    },
+    "supOutstorageDetSupOutstoragePlannedTimeRequired" : {
+      "meaning" : "辅料出库明细表计划需时(小时)"
+    },
+    "supOutstorageDetSupOutstoragePrintTimes" : {
+      "meaning" : "辅料出库明细表打印次数"
+    },
+    "supOutstorageDetSupOutstoragePriority" : {
+      "meaning" : "辅料出库明细表优先级"
+    },
+    "supOutstorageDetSupOutstorageProcessInstanceId" : {
+      "meaning" : "辅料出库明细表流程实例ID"
+    },
+    "supOutstorageDetSupOutstorageProductionProcessesTypeId" : {
+      "meaning" : "辅料出库明细表工序类型ID"
+    },
+    "supOutstorageDetSupOutstorageProductionShiftId" : {
+      "meaning" : "辅料出库明细表生产班次ID"
+    },
+    "supOutstorageDetSupOutstorageQuantity" : {
+      "meaning" : "辅料出库明细表任务数量"
+    },
+    "supOutstorageDetSupOutstorageReceiptDate" : {
+      "meaning" : "辅料出库明细表单据日期"
+    },
+    "supOutstorageDetSupOutstorageReceiptType" : {
+      "meaning" : "辅料出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "supOutstorageDetSupOutstorageRelatedTasksId" : {
+      "meaning" : "辅料出库明细表关联任务id"
+    },
+    "supOutstorageDetSupOutstorageSerialNumber" : {
+      "meaning" : "辅料出库明细表顺序号"
+    },
+    "supOutstorageDetSupOutstorageSettMethod" : {
+      "meaning" : "辅料出库明细表结算方式"
+    },
+    "supOutstorageDetSupOutstorageSettOrgId" : {
+      "meaning" : "辅料出库明细表结算机构id(客户/供应商)"
+    },
+    "supOutstorageDetSupOutstorageSource" : {
+      "meaning" : "辅料出库明细表源"
+    },
+    "supOutstorageDetSupOutstorageSourceType" : {
+      "meaning" : "辅料出库明细表来源类型"
+    },
+    "supOutstorageDetSupOutstorageStaffId" : {
+      "meaning" : "辅料出库明细表员工id(入/出库员工)"
+    },
+    "supOutstorageDetSupOutstorageState" : {
+      "meaning" : "辅料出库明细表通用状态"
+    },
+    "supOutstorageDetSupOutstorageSystemCode" : {
+      "meaning" : "辅料出库明细表系统编码"
+    },
+    "supOutstorageDetSupOutstorageTarget" : {
+      "meaning" : "辅料出库明细表目标"
+    },
+    "supOutstorageDetSupOutstorageTaskNodeName" : {
+      "meaning" : "辅料出库明细表任务节点名称"
+    },
+    "supOutstorageDetSupOutstorageTaskNodeType" : {
+      "meaning" : "辅料出库明细表任务节点类型"
+    },
+    "supOutstorageDetSupOutstorageTenantId" : {
+      "meaning" : "辅料出库明细表租户id"
+    },
+    "supOutstorageDetSupOutstorageThirdPartyClass" : {
+      "meaning" : "辅料出库明细表第三方分类"
+    },
+    "supOutstorageDetSupOutstorageThirdPartyId" : {
+      "meaning" : "辅料出库明细表第三方系统中的唯一ID"
+    },
+    "supOutstorageDetSupOutstorageThirdPartyName" : {
+      "meaning" : "辅料出库明细表第三方名称"
+    },
+    "supOutstorageDetSupOutstorageToAuditDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageToAuditDate"
+    },
+    "supOutstorageDetSupOutstorageToBeginTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageToBeginTime"
+    },
+    "supOutstorageDetSupOutstorageToCreateTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageToCreateTime"
+    },
+    "supOutstorageDetSupOutstorageToDateExtra1" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDateExtra1"
+    },
+    "supOutstorageDetSupOutstorageToDateExtra2" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDateExtra2"
+    },
+    "supOutstorageDetSupOutstorageToDateExtra3" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDateExtra3"
+    },
+    "supOutstorageDetSupOutstorageToDateExtra4" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDateExtra4"
+    },
+    "supOutstorageDetSupOutstorageToDateExtra5" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDateExtra5"
+    },
+    "supOutstorageDetSupOutstorageToDeliveryDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageToDeliveryDate"
+    },
+    "supOutstorageDetSupOutstorageToEndTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageToEndTime"
+    },
+    "supOutstorageDetSupOutstorageToReceiptDate" : {
+      "meaning" : "supOutstorageDetSupOutstorageToReceiptDate"
+    },
+    "supOutstorageDetSupOutstorageToUpdateTime" : {
+      "meaning" : "supOutstorageDetSupOutstorageToUpdateTime"
+    },
+    "supOutstorageDetSupOutstorageUnitCode" : {
+      "meaning" : "辅料出库明细表单位id"
+    },
+    "supOutstorageDetSupOutstorageUpdateTime" : {
+      "meaning" : "辅料出库明细表更新时间"
+    },
+    "supOutstorageDetSupOutstorageUpdater" : {
+      "meaning" : "辅料出库明细表更新人"
+    },
+    "supOutstorageDetSupOutstorageUpdaterId" : {
+      "meaning" : "辅料出库明细表更新人ID"
+    },
+    "supOutstorageDetSupOutstorageUserCode" : {
+      "meaning" : "辅料出库明细表智能节点的唯一编码"
+    },
+    "supOutstorageDetSupOutstorageVarExtra1" : {
+      "meaning" : "辅料出库明细表扩展1"
+    },
+    "supOutstorageDetSupOutstorageVarExtra2" : {
+      "meaning" : "辅料出库明细表扩展2"
+    },
+    "supOutstorageDetSupOutstorageVarExtra3" : {
+      "meaning" : "辅料出库明细表扩展3"
+    },
+    "supOutstorageDetSupOutstorageVarExtra4" : {
+      "meaning" : "辅料出库明细表扩展4"
+    },
+    "supOutstorageDetSupOutstorageVarExtra5" : {
+      "meaning" : "辅料出库明细表扩展5"
+    },
+    "supOutstorageDetSupOutstorageVersion" : {
+      "meaning" : "辅料出库明细表版本号"
+    },
+    "supOutstorageDetSystemCode" : {
+      "meaning" : "辅料出库明细表系统编码"
+    },
+    "supOutstorageDetTarget" : {
+      "meaning" : "辅料出库明细表目标"
+    },
+    "supOutstorageDetTaskNodeName" : {
+      "meaning" : "辅料出库明细表任务节点名称"
+    },
+    "supOutstorageDetTaskNodeType" : {
+      "meaning" : "辅料出库明细表任务节点类型"
+    },
+    "supOutstorageDetTenantId" : {
+      "meaning" : "辅料出库明细表租户id"
+    },
+    "supOutstorageDetThirdPartyClass" : {
+      "meaning" : "辅料出库明细表第三方分类"
+    },
+    "supOutstorageDetThirdPartyId" : {
+      "meaning" : "辅料出库明细表第三方系统中的唯一ID"
+    },
+    "supOutstorageDetThirdPartyName" : {
+      "meaning" : "辅料出库明细表第三方名称"
+    },
+    "supOutstorageDetToAuditDate" : {
+      "meaning" : "supOutstorageDetToAuditDate"
+    },
+    "supOutstorageDetToBeginTime" : {
+      "meaning" : "supOutstorageDetToBeginTime"
+    },
+    "supOutstorageDetToCreateTime" : {
+      "meaning" : "supOutstorageDetToCreateTime"
+    },
+    "supOutstorageDetToDateExtra1" : {
+      "meaning" : "supOutstorageDetToDateExtra1"
+    },
+    "supOutstorageDetToDateExtra2" : {
+      "meaning" : "supOutstorageDetToDateExtra2"
+    },
+    "supOutstorageDetToDateExtra3" : {
+      "meaning" : "supOutstorageDetToDateExtra3"
+    },
+    "supOutstorageDetToDateExtra4" : {
+      "meaning" : "supOutstorageDetToDateExtra4"
+    },
+    "supOutstorageDetToDateExtra5" : {
+      "meaning" : "supOutstorageDetToDateExtra5"
+    },
+    "supOutstorageDetToDeliveryDate" : {
+      "meaning" : "supOutstorageDetToDeliveryDate"
+    },
+    "supOutstorageDetToEndTime" : {
+      "meaning" : "supOutstorageDetToEndTime"
+    },
+    "supOutstorageDetToReceiptDate" : {
+      "meaning" : "supOutstorageDetToReceiptDate"
+    },
+    "supOutstorageDetToUpdateTime" : {
+      "meaning" : "supOutstorageDetToUpdateTime"
+    },
+    "supOutstorageDetTotalAmount" : {
+      "meaning" : "辅料出库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "supOutstorageDetTotalAmountIncludingTax" : {
+      "meaning" : "辅料出库明细表总金额（含税）"
+    },
+    "supOutstorageDetTotalAmountWithoutTax" : {
+      "meaning" : "辅料出库明细表总金额（不含税）"
+    },
+    "supOutstorageDetTotalWeightLot" : {
+      "meaning" : "辅料出库明细表合计总重kg"
+    },
+    "supOutstorageDetTrayMatId" : {
+      "meaning" : "辅料出库明细表托盘物料id"
+    },
+    "supOutstorageDetUnitCode" : {
+      "meaning" : "辅料出库明细表单位id"
+    },
+    "supOutstorageDetUnitPriceIncludingTax" : {
+      "meaning" : "辅料出库明细表单价（含税）"
+    },
+    "supOutstorageDetUnitPriceWithoutTax" : {
+      "meaning" : "辅料出库明细表单价（不含税）"
+    },
+    "supOutstorageDetUpdateTime" : {
+      "meaning" : "辅料出库明细表更新时间"
+    },
+    "supOutstorageDetUpdater" : {
+      "meaning" : "辅料出库明细表更新人"
+    },
+    "supOutstorageDetUpdaterId" : {
+      "meaning" : "辅料出库明细表更新人ID"
+    },
+    "supOutstorageDetUserCode" : {
+      "meaning" : "辅料出库明细表智能节点的唯一编码"
+    },
+    "supOutstorageDetVarExtra1" : {
+      "meaning" : "辅料出库明细表扩展1"
+    },
+    "supOutstorageDetVarExtra2" : {
+      "meaning" : "辅料出库明细表扩展2"
+    },
+    "supOutstorageDetVarExtra3" : {
+      "meaning" : "辅料出库明细表扩展3"
+    },
+    "supOutstorageDetVarExtra4" : {
+      "meaning" : "辅料出库明细表扩展4"
+    },
+    "supOutstorageDetVarExtra5" : {
+      "meaning" : "辅料出库明细表扩展5"
+    },
+    "supOutstorageDetVersion" : {
+      "meaning" : "辅料出库明细表版本号"
+    }
+  }
+}

@@ -1,0 +1,368 @@
+{
+      "api_name": "/fcst-proc-log-det/findList",
+      "table_name": "采购预测记录明细表，用于记录采购预测的详细信息",
+      "request": {
+        "fcstProcLogDetClazz": "FCST_PROC_LOG_DET"
+      },
+      "mainTabClazz": "FCST_PROC_LOG_DET",
+      "response": {
+        "fcstProcLogDetActualTimeRequired": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息实际需时(小时)"
+        },
+        "fcstProcLogDetAdjustmentTimeRequired": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "fcstProcLogDetApplicationId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息应用ID"
+        },
+        "fcstProcLogDetAuditDate": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息审核时间"
+        },
+        "fcstProcLogDetAuditStatus": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息审核状态"
+        },
+        "fcstProcLogDetAvailableScheduleId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息可用日程id"
+        },
+        "fcstProcLogDetBeginTime": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息开始时间"
+        },
+        "fcstProcLogDetBizVersion": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息业务自定义版本号"
+        },
+        "fcstProcLogDetBriefName": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息简称"
+        },
+        "fcstProcLogDetBusDivisId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息事业部id"
+        },
+        "fcstProcLogDetClazz": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息子类 类名（表和类一一对应）"
+        },
+        "fcstProcLogDetClosedReason": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息结案原因"
+        },
+        "fcstProcLogDetClosedStatus": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息结案状态"
+        },
+        "fcstProcLogDetComment": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息评论"
+        },
+        "fcstProcLogDetCompleteQuantity": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息完成数量"
+        },
+        "fcstProcLogDetCompleteStatus": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息完成状态"
+        },
+        "fcstProcLogDetCreateTime": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息创建时间"
+        },
+        "fcstProcLogDetCreator": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息创建人"
+        },
+        "fcstProcLogDetCreatorId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息创建人ID"
+        },
+        "fcstProcLogDetDateExtra1": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展时间1"
+        },
+        "fcstProcLogDetDateExtra2": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展时间2"
+        },
+        "fcstProcLogDetDateExtra3": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展时间3"
+        },
+        "fcstProcLogDetDateExtra4": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展时间4"
+        },
+        "fcstProcLogDetDateExtra5": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展时间5"
+        },
+        "fcstProcLogDetDefaultType": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "fcstProcLogDetDeliveryDate": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息交货日期"
+        },
+        "fcstProcLogDetDescription": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息描述"
+        },
+        "fcstProcLogDetDycInv": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息动态库存"
+        },
+        "fcstProcLogDetEndTime": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息结束时间"
+        },
+        "fcstProcLogDetEndTimeRequired": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息最后需时(小时)"
+        },
+        "fcstProcLogDetEngName": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息英文名称"
+        },
+        "fcstProcLogDetEquipmentId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息设备id"
+        },
+        "fcstProcLogDetExchangeRateId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息币种汇率id"
+        },
+        "fcstProcLogDetExtension": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数据"
+        },
+        "fcstProcLogDetExternalState": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "fcstProcLogDetFilterClazz": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息冗余字段用于筛选"
+        },
+        "fcstProcLogDetFlags": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息63位标志位"
+        },
+        "fcstProcLogDetFromAuditDate": {
+          "meaning": "fcstProcLogDetFromAuditDate"
+        },
+        "fcstProcLogDetFromBeginTime": {
+          "meaning": "fcstProcLogDetFromBeginTime"
+        },
+        "fcstProcLogDetFromCreateTime": {
+          "meaning": "fcstProcLogDetFromCreateTime"
+        },
+        "fcstProcLogDetFromDateExtra1": {
+          "meaning": "fcstProcLogDetFromDateExtra1"
+        },
+        "fcstProcLogDetFromDateExtra2": {
+          "meaning": "fcstProcLogDetFromDateExtra2"
+        },
+        "fcstProcLogDetFromDateExtra3": {
+          "meaning": "fcstProcLogDetFromDateExtra3"
+        },
+        "fcstProcLogDetFromDateExtra4": {
+          "meaning": "fcstProcLogDetFromDateExtra4"
+        },
+        "fcstProcLogDetFromDateExtra5": {
+          "meaning": "fcstProcLogDetFromDateExtra5"
+        },
+        "fcstProcLogDetFromDeliveryDate": {
+          "meaning": "fcstProcLogDetFromDeliveryDate"
+        },
+        "fcstProcLogDetFromEndTime": {
+          "meaning": "fcstProcLogDetFromEndTime"
+        },
+        "fcstProcLogDetFromReceiptDate": {
+          "meaning": "fcstProcLogDetFromReceiptDate"
+        },
+        "fcstProcLogDetFromUpdateTime": {
+          "meaning": "fcstProcLogDetFromUpdateTime"
+        },
+        "fcstProcLogDetFscType": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息FSC声明"
+        },
+        "fcstProcLogDetGenerativePeople": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息下发人"
+        },
+        "fcstProcLogDetGenerativeState": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息下发状态"
+        },
+        "fcstProcLogDetGroovyScript": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息groovy脚本"
+        },
+        "fcstProcLogDetGropeCode": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息搜索码"
+        },
+        "fcstProcLogDetId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息主键，唯一标识每条采购预测记录明细",
+          "is_primary": true
+        },
+        "fcstProcLogDetInUsed": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否被使用"
+        },
+        "fcstProcLogDetInvTypeTaxRateId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息发票税率id"
+        },
+        "fcstProcLogDetIsBanned": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否被禁用"
+        },
+        "fcstProcLogDetIsDeleted": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否被删除"
+        },
+        "fcstProcLogDetIsLeaf": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否叶子节点"
+        },
+        "fcstProcLogDetIsMainFlow": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否是主流程"
+        },
+        "fcstProcLogDetIsManualModificationDate": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息是否手动修改计划生产时间"
+        },
+        "fcstProcLogDetIsolation": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息智能节点数据隔离标识"
+        },
+        "fcstProcLogDetJsScript": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息js脚本"
+        },
+        "fcstProcLogDetMaterialId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息物料id"
+        },
+        "fcstProcLogDetName": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息智能节点名"
+        },
+        "fcstProcLogDetNameCodeSearch": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息name、user_code模糊搜索"
+        },
+        "fcstProcLogDetNumberExtra1": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数量1"
+        },
+        "fcstProcLogDetNumberExtra2": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数量2"
+        },
+        "fcstProcLogDetNumberExtra3": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数量3"
+        },
+        "fcstProcLogDetNumberExtra4": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数量4"
+        },
+        "fcstProcLogDetNumberExtra5": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展数量5"
+        },
+        "fcstProcLogDetParentId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息父节点ID"
+        },
+        "fcstProcLogDetPlannedOutputQuantity": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息计划产出数量"
+        },
+        "fcstProcLogDetPlannedTimeRequired": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息计划需时(小时)"
+        },
+        "fcstProcLogDetPrintTimes": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息打印次数"
+        },
+        "fcstProcLogDetPriority": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息优先级"
+        },
+        "fcstProcLogDetProcessInstanceId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息流程实例ID"
+        },
+        "fcstProcLogDetProductionProcessesTypeId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息工序类型ID"
+        },
+        "fcstProcLogDetProductionShiftId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息生产班次ID"
+        },
+        "fcstProcLogDetQuantity": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息任务数量"
+        },
+        "fcstProcLogDetReceiptDate": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息单据日期"
+        },
+        "fcstProcLogDetReceiptType": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "fcstProcLogDetRelatedTasksId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息关联任务id"
+        },
+        "fcstProcLogDetSerialNumber": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息顺序号"
+        },
+        "fcstProcLogDetSource": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息源"
+        },
+        "fcstProcLogDetSourceType": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息来源类型"
+        },
+        "fcstProcLogDetState": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息通用状态"
+        },
+        "fcstProcLogDetSystemCode": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息系统编码"
+        },
+        "fcstProcLogDetTarget": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息目标"
+        },
+        "fcstProcLogDetTaskNodeName": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息任务节点名称"
+        },
+        "fcstProcLogDetTenantId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息租户ID"
+        },
+        "fcstProcLogDetThirdPartyClass": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息第三方分类"
+        },
+        "fcstProcLogDetThirdPartyId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息第三方系统中的唯一ID"
+        },
+        "fcstProcLogDetThirdPartyName": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息第三方名称"
+        },
+        "fcstProcLogDetToAuditDate": {
+          "meaning": "fcstProcLogDetToAuditDate"
+        },
+        "fcstProcLogDetToBeginTime": {
+          "meaning": "fcstProcLogDetToBeginTime"
+        },
+        "fcstProcLogDetToCreateTime": {
+          "meaning": "fcstProcLogDetToCreateTime"
+        },
+        "fcstProcLogDetToDateExtra1": {
+          "meaning": "fcstProcLogDetToDateExtra1"
+        },
+        "fcstProcLogDetToDateExtra2": {
+          "meaning": "fcstProcLogDetToDateExtra2"
+        },
+        "fcstProcLogDetToDateExtra3": {
+          "meaning": "fcstProcLogDetToDateExtra3"
+        },
+        "fcstProcLogDetToDateExtra4": {
+          "meaning": "fcstProcLogDetToDateExtra4"
+        },
+        "fcstProcLogDetToDateExtra5": {
+          "meaning": "fcstProcLogDetToDateExtra5"
+        },
+        "fcstProcLogDetToDeliveryDate": {
+          "meaning": "fcstProcLogDetToDeliveryDate"
+        },
+        "fcstProcLogDetToEndTime": {
+          "meaning": "fcstProcLogDetToEndTime"
+        },
+        "fcstProcLogDetToReceiptDate": {
+          "meaning": "fcstProcLogDetToReceiptDate"
+        },
+        "fcstProcLogDetToUpdateTime": {
+          "meaning": "fcstProcLogDetToUpdateTime"
+        },
+        "fcstProcLogDetUnitCode": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息单位id"
+        },
+        "fcstProcLogDetUpdateTime": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息更新时间"
+        },
+        "fcstProcLogDetUpdater": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息更新人"
+        },
+        "fcstProcLogDetUpdaterId": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息更新人ID"
+        },
+        "fcstProcLogDetUserCode": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息智能节点的唯一编码"
+        },
+        "fcstProcLogDetVarExtra1": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展1"
+        },
+        "fcstProcLogDetVarExtra2": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展2"
+        },
+        "fcstProcLogDetVarExtra3": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展3"
+        },
+        "fcstProcLogDetVarExtra4": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展4"
+        },
+        "fcstProcLogDetVarExtra5": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息扩展5"
+        },
+        "fcstProcLogDetVersion": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息版本号"
+        },
+        "fcstProcLogDetWeek": {
+          "meaning": "采购预测记录明细表，用于记录采购预测的详细信息周数"
+        }
+      }
+    }

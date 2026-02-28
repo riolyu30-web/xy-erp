@@ -1,0 +1,849 @@
+{
+    "api_name" : "/payable-det/findList",
+    "table_name" : "应付账单明细",
+    "request" : {
+      "payableDetPayableClazz" : "PAYABLE",
+      "payableDetClazz" : "PAYABLE_DET"
+    },
+    "mainTabClazz" : "PAYABLE_DET",
+    "response" : {
+      "payableDetActAmount" : {
+        "meaning" : "应付账单明细实收/付金额"
+      },
+      "payableDetActDiffAmount" : {
+        "meaning" : "应付账单明细实收/付差额"
+      },
+      "payableDetActualTimeRequired" : {
+        "meaning" : "应付账单明细实际需时(小时)"
+      },
+      "payableDetAdjustmentTimeRequired" : {
+        "meaning" : "应付账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "payableDetAdvOffAmount" : {
+        "meaning" : "应付账单明细预收/付冲抵金额"
+      },
+      "payableDetAmount" : {
+        "meaning" : "应付账单明细应收金额"
+      },
+      "payableDetApplicationId" : {
+        "meaning" : "应付账单明细应用ID"
+      },
+      "payableDetAuditDate" : {
+        "meaning" : "应付账单明细审核时间"
+      },
+      "payableDetAuditStatus" : {
+        "meaning" : "应付账单明细审核状态"
+      },
+      "payableDetAvailableScheduleId" : {
+        "meaning" : "应付账单明细可用日程id"
+      },
+      "payableDetBeginTime" : {
+        "meaning" : "应付账单明细开始时间"
+      },
+      "payableDetBizVersion" : {
+        "meaning" : "应付账单明细业务自定义版本号"
+      },
+      "payableDetBriefName" : {
+        "meaning" : "应付账单明细简称"
+      },
+      "payableDetBusDivisId" : {
+        "meaning" : "应付账单明细事业部id"
+      },
+      "payableDetClazz" : {
+        "meaning" : "应付账单明细子类 类名（表和类一一对应）"
+      },
+      "payableDetClosedReason" : {
+        "meaning" : "应付账单明细结案原因"
+      },
+      "payableDetClosedStatus" : {
+        "meaning" : "应付账单明细结案状态"
+      },
+      "payableDetComment" : {
+        "meaning" : "应付账单明细评论"
+      },
+      "payableDetCompleteQuantity" : {
+        "meaning" : "应付账单明细完成数量"
+      },
+      "payableDetCompleteStatus" : {
+        "meaning" : "应付账单明细完成状态"
+      },
+      "payableDetCreateTime" : {
+        "meaning" : "应付账单明细创建时间"
+      },
+      "payableDetCreator" : {
+        "meaning" : "应付账单明细创建人"
+      },
+      "payableDetCreatorId" : {
+        "meaning" : "应付账单明细创建人ID"
+      },
+      "payableDetDateExtra1" : {
+        "meaning" : "应付账单明细扩展时间1"
+      },
+      "payableDetDateExtra2" : {
+        "meaning" : "应付账单明细扩展时间2"
+      },
+      "payableDetDateExtra3" : {
+        "meaning" : "应付账单明细扩展时间3"
+      },
+      "payableDetDateExtra4" : {
+        "meaning" : "应付账单明细扩展时间4"
+      },
+      "payableDetDateExtra5" : {
+        "meaning" : "应付账单明细扩展时间5"
+      },
+      "payableDetDefaultType" : {
+        "meaning" : "应付账单明细智能节点主类型 默认类型（类型的system de字段）"
+      },
+      "payableDetDeliveryDate" : {
+        "meaning" : "应付账单明细交货日期"
+      },
+      "payableDetDescription" : {
+        "meaning" : "应付账单明细描述"
+      },
+      "payableDetEndTime" : {
+        "meaning" : "应付账单明细结束时间"
+      },
+      "payableDetEndTimeRequired" : {
+        "meaning" : "应付账单明细最后需时(小时)"
+      },
+      "payableDetEngName" : {
+        "meaning" : "应付账单明细英文名称"
+      },
+      "payableDetEquipmentId" : {
+        "meaning" : "应付账单明细设备id"
+      },
+      "payableDetExchangeRate" : {
+        "meaning" : "应付账单明细汇率"
+      },
+      "payableDetExchangeRateId" : {
+        "meaning" : "应付账单明细币种汇率id"
+      },
+      "payableDetExtension" : {
+        "meaning" : "应付账单明细扩展数据"
+      },
+      "payableDetExternalState" : {
+        "meaning" : "应付账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "payableDetFilterClazz" : {
+        "meaning" : "应付账单明细冗余字段用于筛选"
+      },
+      "payableDetFlags" : {
+        "meaning" : "应付账单明细63位标志位"
+      },
+      "payableDetFromAuditDate" : {
+        "meaning" : "payableDetFromAuditDate"
+      },
+      "payableDetFromBeginTime" : {
+        "meaning" : "payableDetFromBeginTime"
+      },
+      "payableDetFromCreateTime" : {
+        "meaning" : "payableDetFromCreateTime"
+      },
+      "payableDetFromDateExtra1" : {
+        "meaning" : "payableDetFromDateExtra1"
+      },
+      "payableDetFromDateExtra2" : {
+        "meaning" : "payableDetFromDateExtra2"
+      },
+      "payableDetFromDateExtra3" : {
+        "meaning" : "payableDetFromDateExtra3"
+      },
+      "payableDetFromDateExtra4" : {
+        "meaning" : "payableDetFromDateExtra4"
+      },
+      "payableDetFromDateExtra5" : {
+        "meaning" : "payableDetFromDateExtra5"
+      },
+      "payableDetFromDeliveryDate" : {
+        "meaning" : "payableDetFromDeliveryDate"
+      },
+      "payableDetFromEndTime" : {
+        "meaning" : "payableDetFromEndTime"
+      },
+      "payableDetFromReceiptDate" : {
+        "meaning" : "payableDetFromReceiptDate"
+      },
+      "payableDetFromUpdateTime" : {
+        "meaning" : "payableDetFromUpdateTime"
+      },
+      "payableDetFscType" : {
+        "meaning" : "应付账单明细FSC声明"
+      },
+      "payableDetGenerativePeople" : {
+        "meaning" : "应付账单明细下发人"
+      },
+      "payableDetGenerativeState" : {
+        "meaning" : "应付账单明细下发状态"
+      },
+      "payableDetGroovyScript" : {
+        "meaning" : "应付账单明细groovy脚本"
+      },
+      "payableDetGropeCode" : {
+        "meaning" : "应付账单明细搜索码"
+      },
+      "payableDetId" : {
+        "meaning" : "应付账单明细PK",
+        "is_primary" : true
+      },
+      "payableDetInUsed" : {
+        "meaning" : "应付账单明细是否被使用"
+      },
+      "payableDetInvTypeTaxRateId" : {
+        "meaning" : "应付账单明细发票税率id"
+      },
+      "payableDetInvoicedAmount" : {
+        "meaning" : "应付账单明细已开票金额"
+      },
+      "payableDetInvoicedState" : {
+        "meaning" : "应付账单明细开票状态"
+      },
+      "payableDetIsBanned" : {
+        "meaning" : "应付账单明细是否被禁用"
+      },
+      "payableDetIsDeleted" : {
+        "meaning" : "应付账单明细是否被删除"
+      },
+      "payableDetIsLeaf" : {
+        "meaning" : "应付账单明细是否叶子节点"
+      },
+      "payableDetIsMainFlow" : {
+        "meaning" : "应付账单明细是否是主流程"
+      },
+      "payableDetIsManualModificationDate" : {
+        "meaning" : "应付账单明细是否手动修改计划生产时间"
+      },
+      "payableDetIsolation" : {
+        "meaning" : "应付账单明细智能节点数据隔离标识"
+      },
+      "payableDetJsScript" : {
+        "meaning" : "应付账单明细js脚本"
+      },
+      "payableDetLocActAmount" : {
+        "meaning" : "应付账单明细本币实收/付金额"
+      },
+      "payableDetLocActDiffAmount" : {
+        "meaning" : "应付账单明细本币实收/付差额"
+      },
+      "payableDetLocAdvOffAmount" : {
+        "meaning" : "应付账单明细本币预收/付冲抵金额"
+      },
+      "payableDetLocAmount" : {
+        "meaning" : "应付账单明细本币应收/付金额"
+      },
+      "payableDetLocCompleteQuantity" : {
+        "meaning" : "应付账单明细本币完成数量（本币已结算金额）"
+      },
+      "payableDetLocInvoicedAmount" : {
+        "meaning" : "应付账单明细本币已开票金额"
+      },
+      "payableDetLocOffActAmount" : {
+        "meaning" : "应付账单明细本币冲抵后实收/付金额"
+      },
+      "payableDetLocOffActDiffAmount" : {
+        "meaning" : "应付账单明细本币冲抵后实收/付差额"
+      },
+      "payableDetLocOtherExpense" : {
+        "meaning" : "应付账单明细本币其他费用"
+      },
+      "payableDetMaterialId" : {
+        "meaning" : "应付账单明细物料id"
+      },
+      "payableDetName" : {
+        "meaning" : "应付账单明细智能节点名"
+      },
+      "payableDetNameCodeSearch" : {
+        "meaning" : "应付账单明细name、user de模糊搜索"
+      },
+      "payableDetNumberExtra1" : {
+        "meaning" : "应付账单明细扩展数量1"
+      },
+      "payableDetNumberExtra2" : {
+        "meaning" : "应付账单明细扩展数量2"
+      },
+      "payableDetNumberExtra3" : {
+        "meaning" : "应付账单明细扩展数量3"
+      },
+      "payableDetNumberExtra4" : {
+        "meaning" : "应付账单明细扩展数量4"
+      },
+      "payableDetNumberExtra5" : {
+        "meaning" : "应付账单明细扩展数量5"
+      },
+      "payableDetOffActAmount" : {
+        "meaning" : "应付账单明细冲抵后实收/付金额"
+      },
+      "payableDetOffActDiffAmount" : {
+        "meaning" : "应付账单明细冲抵后实收/付差额"
+      },
+      "payableDetOrderId" : {
+        "meaning" : "应付账单明细订单ID"
+      },
+      "payableDetOtherExpense" : {
+        "meaning" : "应付账单明细其他费用"
+      },
+      "payableDetParentId" : {
+        "meaning" : "应付账单明细父节点ID"
+      },
+      "payableDetPayableActualTimeRequired" : {
+        "meaning" : "应付账单明细实际需时(小时)"
+      },
+      "payableDetPayableAdjustmentTimeRequired" : {
+        "meaning" : "应付账单明细调整需时(输入正负数来计算实际需时)(小时)"
+      },
+      "payableDetPayableApplicationId" : {
+        "meaning" : "应付账单明细应用ID"
+      },
+      "payableDetPayableAuditDate" : {
+        "meaning" : "应付账单明细审核时间"
+      },
+      "payableDetPayableAuditStatus" : {
+        "meaning" : "应付账单明细审核状态"
+      },
+      "payableDetPayableAvailableScheduleId" : {
+        "meaning" : "应付账单明细可用日程id"
+      },
+      "payableDetPayableBank" : {
+        "meaning" : "应付账单明细开户行"
+      },
+      "payableDetPayableBankAccount" : {
+        "meaning" : "应付账单明细银行账号"
+      },
+      "payableDetPayableBeginTime" : {
+        "meaning" : "应付账单明细开始时间"
+      },
+      "payableDetPayableBizVersion" : {
+        "meaning" : "应付账单明细业务自定义版本号"
+      },
+      "payableDetPayableBriefName" : {
+        "meaning" : "应付账单明细简称"
+      },
+      "payableDetPayableBusDivisId" : {
+        "meaning" : "应付账单明细事业部id"
+      },
+      "payableDetPayableClazz" : {
+        "meaning" : "应付账单明细子类 类名（表和类一一对应）"
+      },
+      "payableDetPayableClosedReason" : {
+        "meaning" : "应付账单明细结案原因"
+      },
+      "payableDetPayableClosedStatus" : {
+        "meaning" : "应付账单明细结案状态"
+      },
+      "payableDetPayableComment" : {
+        "meaning" : "应付账单明细评论"
+      },
+      "payableDetPayableCompleteQuantity" : {
+        "meaning" : "应付账单明细完成数量"
+      },
+      "payableDetPayableCompleteStatus" : {
+        "meaning" : "应付账单明细完成状态"
+      },
+      "payableDetPayableCorpBank" : {
+        "meaning" : "应付账单明细我司银行"
+      },
+      "payableDetPayableCorpBankAccount" : {
+        "meaning" : "应付账单明细我司银行账号"
+      },
+      "payableDetPayableCreateTime" : {
+        "meaning" : "应付账单明细创建时间"
+      },
+      "payableDetPayableCreator" : {
+        "meaning" : "应付账单明细创建人"
+      },
+      "payableDetPayableCreatorId" : {
+        "meaning" : "应付账单明细创建人ID"
+      },
+      "payableDetPayableCurrency" : {
+        "meaning" : "应付账单明细币种"
+      },
+      "payableDetPayableDateExtra1" : {
+        "meaning" : "应付账单明细扩展时间1"
+      },
+      "payableDetPayableDateExtra2" : {
+        "meaning" : "应付账单明细扩展时间2"
+      },
+      "payableDetPayableDateExtra3" : {
+        "meaning" : "应付账单明细扩展时间3"
+      },
+      "payableDetPayableDateExtra4" : {
+        "meaning" : "应付账单明细扩展时间4"
+      },
+      "payableDetPayableDateExtra5" : {
+        "meaning" : "应付账单明细扩展时间5"
+      },
+      "payableDetPayableDefaultType" : {
+        "meaning" : "应付账单明细智能节点主类型 默认类型（类型的system de字段）"
+      },
+      "payableDetPayableDeliveryDate" : {
+        "meaning" : "应付账单明细交货日期"
+      },
+      "payableDetPayableDescription" : {
+        "meaning" : "应付账单明细描述"
+      },
+      "payableDetPayableEndTime" : {
+        "meaning" : "应付账单明细结束时间"
+      },
+      "payableDetPayableEndTimeRequired" : {
+        "meaning" : "应付账单明细最后需时(小时)"
+      },
+      "payableDetPayableEngName" : {
+        "meaning" : "应付账单明细英文名称"
+      },
+      "payableDetPayableEquipmentId" : {
+        "meaning" : "应付账单明细设备id"
+      },
+      "payableDetPayableExchangeRateId" : {
+        "meaning" : "应付账单明细币种汇率id"
+      },
+      "payableDetPayableExtension" : {
+        "meaning" : "应付账单明细扩展数据"
+      },
+      "payableDetPayableExternalState" : {
+        "meaning" : "应付账单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+      },
+      "payableDetPayableFilterClazz" : {
+        "meaning" : "应付账单明细冗余字段用于筛选"
+      },
+      "payableDetPayableFlags" : {
+        "meaning" : "应付账单明细63位标志位"
+      },
+      "payableDetPayableFromAuditDate" : {
+        "meaning" : "payableDetPayableFromAuditDate"
+      },
+      "payableDetPayableFromBeginTime" : {
+        "meaning" : "payableDetPayableFromBeginTime"
+      },
+      "payableDetPayableFromCreateTime" : {
+        "meaning" : "payableDetPayableFromCreateTime"
+      },
+      "payableDetPayableFromDateExtra1" : {
+        "meaning" : "payableDetPayableFromDateExtra1"
+      },
+      "payableDetPayableFromDateExtra2" : {
+        "meaning" : "payableDetPayableFromDateExtra2"
+      },
+      "payableDetPayableFromDateExtra3" : {
+        "meaning" : "payableDetPayableFromDateExtra3"
+      },
+      "payableDetPayableFromDateExtra4" : {
+        "meaning" : "payableDetPayableFromDateExtra4"
+      },
+      "payableDetPayableFromDateExtra5" : {
+        "meaning" : "payableDetPayableFromDateExtra5"
+      },
+      "payableDetPayableFromDeliveryDate" : {
+        "meaning" : "payableDetPayableFromDeliveryDate"
+      },
+      "payableDetPayableFromEndTime" : {
+        "meaning" : "payableDetPayableFromEndTime"
+      },
+      "payableDetPayableFromReceiptDate" : {
+        "meaning" : "payableDetPayableFromReceiptDate"
+      },
+      "payableDetPayableFromUpdateTime" : {
+        "meaning" : "payableDetPayableFromUpdateTime"
+      },
+      "payableDetPayableFscType" : {
+        "meaning" : "应付账单明细FSC声明"
+      },
+      "payableDetPayableGenerativePeople" : {
+        "meaning" : "应付账单明细下发人"
+      },
+      "payableDetPayableGenerativeState" : {
+        "meaning" : "应付账单明细下发状态"
+      },
+      "payableDetPayableGroovyScript" : {
+        "meaning" : "应付账单明细groovy脚本"
+      },
+      "payableDetPayableGropeCode" : {
+        "meaning" : "应付账单明细搜索码"
+      },
+      "payableDetPayableId" : {
+        "meaning" : "应付账单明细PK"
+      },
+      "payableDetPayableInUsed" : {
+        "meaning" : "应付账单明细是否被使用"
+      },
+      "payableDetPayableInvTypeTaxRateId" : {
+        "meaning" : "应付账单明细发票税率id"
+      },
+      "payableDetPayableIsBanned" : {
+        "meaning" : "应付账单明细是否被禁用"
+      },
+      "payableDetPayableIsDeleted" : {
+        "meaning" : "应付账单明细是否被删除"
+      },
+      "payableDetPayableIsLeaf" : {
+        "meaning" : "应付账单明细是否叶子节点"
+      },
+      "payableDetPayableIsMainFlow" : {
+        "meaning" : "应付账单明细是否是主流程"
+      },
+      "payableDetPayableIsManualModificationDate" : {
+        "meaning" : "应付账单明细是否手动修改计划生产时间"
+      },
+      "payableDetPayableIsolation" : {
+        "meaning" : "应付账单明细智能节点数据隔离标识"
+      },
+      "payableDetPayableJsScript" : {
+        "meaning" : "应付账单明细js脚本"
+      },
+      "payableDetPayableLocCompleteQuantity" : {
+        "meaning" : "应付账单明细本币完成数量（本币已结算金额）"
+      },
+      "payableDetPayableLocTotalActAmount" : {
+        "meaning" : "应付账单明细本币总实收/付金额"
+      },
+      "payableDetPayableLocTotalActDiffAmount" : {
+        "meaning" : "应付账单明细本币总实收/付差额"
+      },
+      "payableDetPayableLocTotalAdvOffAmount" : {
+        "meaning" : "应付账单明细本币总预收/付冲抵金额"
+      },
+      "payableDetPayableLocTotalAmount" : {
+        "meaning" : "应付账单明细本币总应收/付金额"
+      },
+      "payableDetPayableLocTotalInvoicedAmount" : {
+        "meaning" : "应付账单明细本币总开票金额"
+      },
+      "payableDetPayableLocTotalOffActAmount" : {
+        "meaning" : "应付账单明细本币总冲抵后实收/付金额"
+      },
+      "payableDetPayableLocTotalOffActDiffAmount" : {
+        "meaning" : "应付账单明细本币总冲抵后实收/付差额"
+      },
+      "payableDetPayableLocTotalOtherExpense" : {
+        "meaning" : "应付账单明细本币总其他费用"
+      },
+      "payableDetPayableMaterialId" : {
+        "meaning" : "应付账单明细物料id"
+      },
+      "payableDetPayableName" : {
+        "meaning" : "应付账单明细智能节点名"
+      },
+      "payableDetPayableNameCodeSearch" : {
+        "meaning" : "应付账单明细name、user de模糊搜索"
+      },
+      "payableDetPayableNumberExtra1" : {
+        "meaning" : "应付账单明细扩展数量1"
+      },
+      "payableDetPayableNumberExtra2" : {
+        "meaning" : "应付账单明细扩展数量2"
+      },
+      "payableDetPayableNumberExtra3" : {
+        "meaning" : "应付账单明细扩展数量3"
+      },
+      "payableDetPayableNumberExtra4" : {
+        "meaning" : "应付账单明细扩展数量4"
+      },
+      "payableDetPayableNumberExtra5" : {
+        "meaning" : "应付账单明细扩展数量5"
+      },
+      "payableDetPayableParentId" : {
+        "meaning" : "应付账单明细父节点ID"
+      },
+      "payableDetPayablePlannedOutputQuantity" : {
+        "meaning" : "应付账单明细计划产出数量"
+      },
+      "payableDetPayablePlannedTimeRequired" : {
+        "meaning" : "应付账单明细计划需时(小时)"
+      },
+      "payableDetPayablePrintTimes" : {
+        "meaning" : "应付账单明细打印次数"
+      },
+      "payableDetPayablePriority" : {
+        "meaning" : "应付账单明细优先级"
+      },
+      "payableDetPayableProcessInstanceId" : {
+        "meaning" : "应付账单明细流程实例ID"
+      },
+      "payableDetPayableProductionProcessesTypeId" : {
+        "meaning" : "应付账单明细工序类型ID"
+      },
+      "payableDetPayableProductionShiftId" : {
+        "meaning" : "应付账单明细生产班次ID"
+      },
+      "payableDetPayableQuantity" : {
+        "meaning" : "应付账单明细任务数量"
+      },
+      "payableDetPayableReceiptDate" : {
+        "meaning" : "应付账单明细单据日期"
+      },
+      "payableDetPayableReceiptType" : {
+        "meaning" : "应付账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "payableDetPayableRelatedTasksId" : {
+        "meaning" : "应付账单明细关联任务id"
+      },
+      "payableDetPayableSerialNumber" : {
+        "meaning" : "应付账单明细顺序号"
+      },
+      "payableDetPayableSource" : {
+        "meaning" : "应付账单明细源"
+      },
+      "payableDetPayableSourceType" : {
+        "meaning" : "应付账单明细来源类型"
+      },
+      "payableDetPayableState" : {
+        "meaning" : "应付账单明细通用状态"
+      },
+      "payableDetPayableSupplierId" : {
+        "meaning" : "应付账单明细供应商ID"
+      },
+      "payableDetPayableSystemCode" : {
+        "meaning" : "应付账单明细系统编码"
+      },
+      "payableDetPayableTarget" : {
+        "meaning" : "应付账单明细目标"
+      },
+      "payableDetPayableTaskNodeName" : {
+        "meaning" : "应付账单明细任务节点名称"
+      },
+      "payableDetPayableTenantId" : {
+        "meaning" : "应付账单明细租户ID"
+      },
+      "payableDetPayableThirdPartyClass" : {
+        "meaning" : "应付账单明细第三方分类"
+      },
+      "payableDetPayableThirdPartyId" : {
+        "meaning" : "应付账单明细第三方系统中的唯一ID"
+      },
+      "payableDetPayableThirdPartyName" : {
+        "meaning" : "应付账单明细第三方名称"
+      },
+      "payableDetPayableToAuditDate" : {
+        "meaning" : "payableDetPayableToAuditDate"
+      },
+      "payableDetPayableToBeginTime" : {
+        "meaning" : "payableDetPayableToBeginTime"
+      },
+      "payableDetPayableToCreateTime" : {
+        "meaning" : "payableDetPayableToCreateTime"
+      },
+      "payableDetPayableToDateExtra1" : {
+        "meaning" : "payableDetPayableToDateExtra1"
+      },
+      "payableDetPayableToDateExtra2" : {
+        "meaning" : "payableDetPayableToDateExtra2"
+      },
+      "payableDetPayableToDateExtra3" : {
+        "meaning" : "payableDetPayableToDateExtra3"
+      },
+      "payableDetPayableToDateExtra4" : {
+        "meaning" : "payableDetPayableToDateExtra4"
+      },
+      "payableDetPayableToDateExtra5" : {
+        "meaning" : "payableDetPayableToDateExtra5"
+      },
+      "payableDetPayableToDeliveryDate" : {
+        "meaning" : "payableDetPayableToDeliveryDate"
+      },
+      "payableDetPayableToEndTime" : {
+        "meaning" : "payableDetPayableToEndTime"
+      },
+      "payableDetPayableToReceiptDate" : {
+        "meaning" : "payableDetPayableToReceiptDate"
+      },
+      "payableDetPayableToUpdateTime" : {
+        "meaning" : "payableDetPayableToUpdateTime"
+      },
+      "payableDetPayableTotalActAmount" : {
+        "meaning" : "应付账单明细总实收/付金额"
+      },
+      "payableDetPayableTotalActDiffAmount" : {
+        "meaning" : "应付账单明细总实收/付差额"
+      },
+      "payableDetPayableTotalAdvOffAmount" : {
+        "meaning" : "应付账单明细总预收/付冲抵金额"
+      },
+      "payableDetPayableTotalAmount" : {
+        "meaning" : "应付账单明细总应收/付金额"
+      },
+      "payableDetPayableTotalInvoicedAmount" : {
+        "meaning" : "应付账单明细总开票金额"
+      },
+      "payableDetPayableTotalOffActAmount" : {
+        "meaning" : "应付账单明细总冲抵后实收/付金额"
+      },
+      "payableDetPayableTotalOffActDiffAmount" : {
+        "meaning" : "应付账单明细总冲抵后实收/付差额"
+      },
+      "payableDetPayableTotalOtherExpense" : {
+        "meaning" : "应付账单明细总其他费用"
+      },
+      "payableDetPayableUnitCode" : {
+        "meaning" : "应付账单明细单位id"
+      },
+      "payableDetPayableUpdateTime" : {
+        "meaning" : "应付账单明细更新时间"
+      },
+      "payableDetPayableUpdater" : {
+        "meaning" : "应付账单明细更新人"
+      },
+      "payableDetPayableUpdaterId" : {
+        "meaning" : "应付账单明细更新人ID"
+      },
+      "payableDetPayableUserCode" : {
+        "meaning" : "应付账单明细智能节点的唯一编码"
+      },
+      "payableDetPayableVarExtra1" : {
+        "meaning" : "应付账单明细扩展1"
+      },
+      "payableDetPayableVarExtra2" : {
+        "meaning" : "应付账单明细扩展2"
+      },
+      "payableDetPayableVarExtra3" : {
+        "meaning" : "应付账单明细扩展3"
+      },
+      "payableDetPayableVarExtra4" : {
+        "meaning" : "应付账单明细扩展4"
+      },
+      "payableDetPayableVarExtra5" : {
+        "meaning" : "应付账单明细扩展5"
+      },
+      "payableDetPayableVersion" : {
+        "meaning" : "应付账单明细版本号"
+      },
+      "payableDetPlannedOutputQuantity" : {
+        "meaning" : "应付账单明细计划产出数量"
+      },
+      "payableDetPlannedTimeRequired" : {
+        "meaning" : "应付账单明细计划需时(小时)"
+      },
+      "payableDetPrintTimes" : {
+        "meaning" : "应付账单明细打印次数"
+      },
+      "payableDetPriority" : {
+        "meaning" : "应付账单明细优先级"
+      },
+      "payableDetProcessInstanceId" : {
+        "meaning" : "应付账单明细流程实例ID"
+      },
+      "payableDetProductionProcessesTypeId" : {
+        "meaning" : "应付账单明细工序类型ID"
+      },
+      "payableDetProductionShiftId" : {
+        "meaning" : "应付账单明细生产班次ID"
+      },
+      "payableDetQuantity" : {
+        "meaning" : "应付账单明细任务数量"
+      },
+      "payableDetReceiptDate" : {
+        "meaning" : "应付账单明细单据日期"
+      },
+      "payableDetReceiptType" : {
+        "meaning" : "应付账单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+      },
+      "payableDetRelatedTasksId" : {
+        "meaning" : "应付账单明细关联任务id"
+      },
+      "payableDetSerialNumber" : {
+        "meaning" : "应付账单明细顺序号"
+      },
+      "payableDetSettleAmount" : {
+        "meaning" : "应付账单明细结算金额"
+      },
+      "payableDetSource" : {
+        "meaning" : "应付账单明细源"
+      },
+      "payableDetSourceType" : {
+        "meaning" : "应付账单明细来源类型"
+      },
+      "payableDetState" : {
+        "meaning" : "应付账单明细通用状态"
+      },
+      "payableDetSystemCode" : {
+        "meaning" : "应付账单明细系统编码"
+      },
+      "payableDetTarget" : {
+        "meaning" : "应付账单明细目标"
+      },
+      "payableDetTaskNodeName" : {
+        "meaning" : "应付账单明细任务节点名称"
+      },
+      "payableDetTenantId" : {
+        "meaning" : "应付账单明细租户ID"
+      },
+      "payableDetThirdPartyClass" : {
+        "meaning" : "应付账单明细第三方分类"
+      },
+      "payableDetThirdPartyId" : {
+        "meaning" : "应付账单明细第三方系统中的唯一ID"
+      },
+      "payableDetThirdPartyName" : {
+        "meaning" : "应付账单明细第三方名称"
+      },
+      "payableDetToAuditDate" : {
+        "meaning" : "payableDetToAuditDate"
+      },
+      "payableDetToBeginTime" : {
+        "meaning" : "payableDetToBeginTime"
+      },
+      "payableDetToCreateTime" : {
+        "meaning" : "payableDetToCreateTime"
+      },
+      "payableDetToDateExtra1" : {
+        "meaning" : "payableDetToDateExtra1"
+      },
+      "payableDetToDateExtra2" : {
+        "meaning" : "payableDetToDateExtra2"
+      },
+      "payableDetToDateExtra3" : {
+        "meaning" : "payableDetToDateExtra3"
+      },
+      "payableDetToDateExtra4" : {
+        "meaning" : "payableDetToDateExtra4"
+      },
+      "payableDetToDateExtra5" : {
+        "meaning" : "payableDetToDateExtra5"
+      },
+      "payableDetToDeliveryDate" : {
+        "meaning" : "payableDetToDeliveryDate"
+      },
+      "payableDetToEndTime" : {
+        "meaning" : "payableDetToEndTime"
+      },
+      "payableDetToReceiptDate" : {
+        "meaning" : "payableDetToReceiptDate"
+      },
+      "payableDetToUpdateTime" : {
+        "meaning" : "payableDetToUpdateTime"
+      },
+      "payableDetUnitCode" : {
+        "meaning" : "应付账单明细单位id"
+      },
+      "payableDetUpdateTime" : {
+        "meaning" : "应付账单明细更新时间"
+      },
+      "payableDetUpdater" : {
+        "meaning" : "应付账单明细更新人"
+      },
+      "payableDetUpdaterId" : {
+        "meaning" : "应付账单明细更新人ID"
+      },
+      "payableDetUserCode" : {
+        "meaning" : "应付账单明细智能节点的唯一编码"
+      },
+      "payableDetVarExtra1" : {
+        "meaning" : "应付账单明细扩展1"
+      },
+      "payableDetVarExtra2" : {
+        "meaning" : "应付账单明细扩展2"
+      },
+      "payableDetVarExtra3" : {
+        "meaning" : "应付账单明细扩展3"
+      },
+      "payableDetVarExtra4" : {
+        "meaning" : "应付账单明细扩展4"
+      },
+      "payableDetVarExtra5" : {
+        "meaning" : "应付账单明细扩展5"
+      },
+      "payableDetVersion" : {
+        "meaning" : "应付账单明细版本号"
+      },
+      "payableDetWorkOrderId" : {
+        "meaning" : "应付账单明细工单ID"
+      }
+    }
+  }

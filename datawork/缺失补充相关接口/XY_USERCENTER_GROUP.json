@@ -1,0 +1,272 @@
+{
+  "api_name" : "/group/findList",
+  "table_name" : "用户组",
+  "request" : {
+    "groupClazz" : "XY_USERCENTER_GROUP"
+  },
+  "mainTabClazz" : "XY_USERCENTER_GROUP",
+  "response" : {
+    "groupApplicationId" : {
+      "meaning" : "用户组应用ID"
+    },
+    "groupAuditDate" : {
+      "meaning" : "用户组审核时间"
+    },
+    "groupAuditStatus" : {
+      "meaning" : "用户组审核状态"
+    },
+    "groupBizVersion" : {
+      "meaning" : "用户组业务自定义版本号"
+    },
+    "groupBriefName" : {
+      "meaning" : "用户组简称"
+    },
+    "groupBusDivisId" : {
+      "meaning" : "用户组事业部id"
+    },
+    "groupClazz" : {
+      "meaning" : "用户组子类 类名（表和类一一对应）"
+    },
+    "groupComment" : {
+      "meaning" : "用户组评论"
+    },
+    "groupContactName" : {
+      "meaning" : "用户组联系人名称"
+    },
+    "groupCreateTime" : {
+      "meaning" : "用户组创建时间"
+    },
+    "groupCreator" : {
+      "meaning" : "用户组创建人"
+    },
+    "groupCreatorId" : {
+      "meaning" : "用户组创建人ID"
+    },
+    "groupDateExtra1" : {
+      "meaning" : "用户组扩展时间1"
+    },
+    "groupDateExtra2" : {
+      "meaning" : "用户组扩展时间2"
+    },
+    "groupDateExtra3" : {
+      "meaning" : "用户组扩展时间3"
+    },
+    "groupDateExtra4" : {
+      "meaning" : "用户组扩展时间4"
+    },
+    "groupDateExtra5" : {
+      "meaning" : "用户组扩展时间5"
+    },
+    "groupDefaultFlag" : {
+      "meaning" : "用户组默认标识"
+    },
+    "groupDefaultType" : {
+      "meaning" : "用户组智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "groupDescription" : {
+      "meaning" : "用户组描述"
+    },
+    "groupEmail" : {
+      "meaning" : "用户组邮箱"
+    },
+    "groupEngName" : {
+      "meaning" : "用户组英文名称"
+    },
+    "groupExtension" : {
+      "meaning" : "用户组扩展数据"
+    },
+    "groupExternalState" : {
+      "meaning" : "用户组上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "groupFaxNo" : {
+      "meaning" : "用户组传真号"
+    },
+    "groupFlags" : {
+      "meaning" : "用户组63位标志位"
+    },
+    "groupFromAuditDate" : {
+      "meaning" : "groupFromAuditDate"
+    },
+    "groupFromCreateTime" : {
+      "meaning" : "groupFromCreateTime"
+    },
+    "groupFromDateExtra1" : {
+      "meaning" : "groupFromDateExtra1"
+    },
+    "groupFromDateExtra2" : {
+      "meaning" : "groupFromDateExtra2"
+    },
+    "groupFromDateExtra3" : {
+      "meaning" : "groupFromDateExtra3"
+    },
+    "groupFromDateExtra4" : {
+      "meaning" : "groupFromDateExtra4"
+    },
+    "groupFromDateExtra5" : {
+      "meaning" : "groupFromDateExtra5"
+    },
+    "groupFromUpdateTime" : {
+      "meaning" : "groupFromUpdateTime"
+    },
+    "groupGroovyScript" : {
+      "meaning" : "用户组groovy脚本"
+    },
+    "groupGropeCode" : {
+      "meaning" : "用户组搜索码"
+    },
+    "groupId" : {
+      "meaning" : "用户组ID",
+      "is_primary" : true
+    },
+    "groupInUsed" : {
+      "meaning" : "用户组是否被使用"
+    },
+    "groupIsBanned" : {
+      "meaning" : "用户组是否被禁用"
+    },
+    "groupIsDeleted" : {
+      "meaning" : "用户组是否被删除"
+    },
+    "groupIsMainFlow" : {
+      "meaning" : "用户组是否是主流程"
+    },
+    "groupIsolation" : {
+      "meaning" : "用户组智能节点数据隔离标识"
+    },
+    "groupJsScript" : {
+      "meaning" : "用户组js脚本"
+    },
+    "groupLocationAddress" : {
+      "meaning" : "用户组所在地址"
+    },
+    "groupMobile" : {
+      "meaning" : "用户组手机号"
+    },
+    "groupName" : {
+      "meaning" : "用户组智能节点名"
+    },
+    "groupNameCodeSearch" : {
+      "meaning" : "用户组name、user_code模糊搜索"
+    },
+    "groupNumberExtra1" : {
+      "meaning" : "用户组扩展数量1"
+    },
+    "groupNumberExtra2" : {
+      "meaning" : "用户组扩展数量2"
+    },
+    "groupNumberExtra3" : {
+      "meaning" : "用户组扩展数量3"
+    },
+    "groupNumberExtra4" : {
+      "meaning" : "用户组扩展数量4"
+    },
+    "groupNumberExtra5" : {
+      "meaning" : "用户组扩展数量5"
+    },
+    "groupParentId" : {
+      "meaning" : "用户组父节点ID"
+    },
+    "groupPostcode" : {
+      "meaning" : "用户组邮政编码"
+    },
+    "groupProcessInstanceId" : {
+      "meaning" : "用户组流程实例ID"
+    },
+    "groupQq" : {
+      "meaning" : "用户组QQ"
+    },
+    "groupSerialNumber" : {
+      "meaning" : "用户组顺序号"
+    },
+    "groupShortName" : {
+      "meaning" : "用户组简称名称"
+    },
+    "groupState" : {
+      "meaning" : "用户组通用状态"
+    },
+    "groupSystemCode" : {
+      "meaning" : "用户组系统编码"
+    },
+    "groupTaskNodeName" : {
+      "meaning" : "用户组任务节点名称"
+    },
+    "groupTaskNodeType" : {
+      "meaning" : "用户组任务节点类型"
+    },
+    "groupTelephone" : {
+      "meaning" : "用户组电话"
+    },
+    "groupTenantId" : {
+      "meaning" : "用户组租户ID"
+    },
+    "groupThirdPartyClass" : {
+      "meaning" : "用户组第三方分类"
+    },
+    "groupThirdPartyId" : {
+      "meaning" : "用户组第三方系统中的唯一ID"
+    },
+    "groupThirdPartyName" : {
+      "meaning" : "用户组第三方名称"
+    },
+    "groupToAuditDate" : {
+      "meaning" : "groupToAuditDate"
+    },
+    "groupToCreateTime" : {
+      "meaning" : "groupToCreateTime"
+    },
+    "groupToDateExtra1" : {
+      "meaning" : "groupToDateExtra1"
+    },
+    "groupToDateExtra2" : {
+      "meaning" : "groupToDateExtra2"
+    },
+    "groupToDateExtra3" : {
+      "meaning" : "groupToDateExtra3"
+    },
+    "groupToDateExtra4" : {
+      "meaning" : "groupToDateExtra4"
+    },
+    "groupToDateExtra5" : {
+      "meaning" : "groupToDateExtra5"
+    },
+    "groupToUpdateTime" : {
+      "meaning" : "groupToUpdateTime"
+    },
+    "groupUpdateTime" : {
+      "meaning" : "用户组更新时间"
+    },
+    "groupUpdater" : {
+      "meaning" : "用户组更新人"
+    },
+    "groupUpdaterId" : {
+      "meaning" : "用户组更新人ID"
+    },
+    "groupUserCode" : {
+      "meaning" : "用户组智能节点的唯一编码"
+    },
+    "groupVarExtra1" : {
+      "meaning" : "用户组扩展1"
+    },
+    "groupVarExtra2" : {
+      "meaning" : "用户组扩展2"
+    },
+    "groupVarExtra3" : {
+      "meaning" : "用户组扩展3"
+    },
+    "groupVarExtra4" : {
+      "meaning" : "用户组扩展4"
+    },
+    "groupVarExtra5" : {
+      "meaning" : "用户组扩展5"
+    },
+    "groupVersion" : {
+      "meaning" : "用户组版本号"
+    },
+    "groupWebAddress" : {
+      "meaning" : "用户组网址"
+    },
+    "groupWechatNumber" : {
+      "meaning" : "用户组微信号"
+    }
+  }
+}

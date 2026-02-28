@@ -1,0 +1,810 @@
+{
+      "api_name": "/mat-ret-det/findList",
+      "table_name": "物料退货明细",
+      "request": {
+        "matRetDetMatRetClazz": "MAT_RET",
+        "matRetDetClazz": "MAT_RET_DET"
+      },
+      "mainTabClazz": "MAT_RET_DET",
+      "response": {
+        "matRetDetActMaterialId": {
+          "meaning": "matRetDetActMaterialId"
+        },
+        "matRetDetActQuantity": {
+          "meaning": "matRetDetActQuantity"
+        },
+        "matRetDetActualTimeRequired": {
+          "meaning": "物料退货明细实际需时(小时)"
+        },
+        "matRetDetAdjustmentTimeRequired": {
+          "meaning": "物料退货明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "matRetDetApplicationId": {
+          "meaning": "物料退货明细应用ID"
+        },
+        "matRetDetAuditDate": {
+          "meaning": "物料退货明细审核时间"
+        },
+        "matRetDetAuditStatus": {
+          "meaning": "物料退货明细审核状态"
+        },
+        "matRetDetAvailableScheduleId": {
+          "meaning": "物料退货明细可用日程id"
+        },
+        "matRetDetBeginTime": {
+          "meaning": "物料退货明细开始时间"
+        },
+        "matRetDetBizVersion": {
+          "meaning": "物料退货明细业务自定义版本号"
+        },
+        "matRetDetBriefName": {
+          "meaning": "物料退货明细简称"
+        },
+        "matRetDetBusDivisId": {
+          "meaning": "物料退货明细事业部id"
+        },
+        "matRetDetClazz": {
+          "meaning": "物料退货明细子类 类名（表和类一一对应）"
+        },
+        "matRetDetClosedReason": {
+          "meaning": "物料退货明细结案原因"
+        },
+        "matRetDetClosedStatus": {
+          "meaning": "物料退货明细结案状态"
+        },
+        "matRetDetComment": {
+          "meaning": "物料退货明细评论"
+        },
+        "matRetDetCompleteQuantity": {
+          "meaning": "物料退货明细完成数量"
+        },
+        "matRetDetCompleteStatus": {
+          "meaning": "物料退货明细完成状态"
+        },
+        "matRetDetCostSchemeId": {
+          "meaning": "物料退货明细计费方案id"
+        },
+        "matRetDetCreateTime": {
+          "meaning": "物料退货明细创建时间"
+        },
+        "matRetDetCreator": {
+          "meaning": "物料退货明细创建人"
+        },
+        "matRetDetCreatorId": {
+          "meaning": "物料退货明细创建人ID"
+        },
+        "matRetDetDateExtra1": {
+          "meaning": "物料退货明细扩展时间1"
+        },
+        "matRetDetDateExtra2": {
+          "meaning": "物料退货明细扩展时间2"
+        },
+        "matRetDetDateExtra3": {
+          "meaning": "物料退货明细扩展时间3"
+        },
+        "matRetDetDateExtra4": {
+          "meaning": "物料退货明细扩展时间4"
+        },
+        "matRetDetDateExtra5": {
+          "meaning": "物料退货明细扩展时间5"
+        },
+        "matRetDetDefaultType": {
+          "meaning": "物料退货明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matRetDetDeliveryDate": {
+          "meaning": "物料退货明细交货日期"
+        },
+        "matRetDetDescription": {
+          "meaning": "物料退货明细描述"
+        },
+        "matRetDetEndTime": {
+          "meaning": "物料退货明细结束时间"
+        },
+        "matRetDetEndTimeRequired": {
+          "meaning": "物料退货明细最后需时(小时)"
+        },
+        "matRetDetEngName": {
+          "meaning": "物料退货明细英文名称"
+        },
+        "matRetDetEquipmentId": {
+          "meaning": "物料退货明细设备id"
+        },
+        "matRetDetExchangeRateId": {
+          "meaning": "物料退货明细币种汇率id"
+        },
+        "matRetDetExtension": {
+          "meaning": "物料退货明细扩展数据"
+        },
+        "matRetDetExternalState": {
+          "meaning": "物料退货明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matRetDetFilterClazz": {
+          "meaning": "物料退货明细冗余字段用于筛选"
+        },
+        "matRetDetFlags": {
+          "meaning": "物料退货明细63位标志位"
+        },
+        "matRetDetFromAuditDate": {
+          "meaning": "matRetDetFromAuditDate"
+        },
+        "matRetDetFromBeginTime": {
+          "meaning": "matRetDetFromBeginTime"
+        },
+        "matRetDetFromCreateTime": {
+          "meaning": "matRetDetFromCreateTime"
+        },
+        "matRetDetFromDateExtra1": {
+          "meaning": "matRetDetFromDateExtra1"
+        },
+        "matRetDetFromDateExtra2": {
+          "meaning": "matRetDetFromDateExtra2"
+        },
+        "matRetDetFromDateExtra3": {
+          "meaning": "matRetDetFromDateExtra3"
+        },
+        "matRetDetFromDateExtra4": {
+          "meaning": "matRetDetFromDateExtra4"
+        },
+        "matRetDetFromDateExtra5": {
+          "meaning": "matRetDetFromDateExtra5"
+        },
+        "matRetDetFromDeliveryDate": {
+          "meaning": "matRetDetFromDeliveryDate"
+        },
+        "matRetDetFromEndTime": {
+          "meaning": "matRetDetFromEndTime"
+        },
+        "matRetDetFromReceiptDate": {
+          "meaning": "matRetDetFromReceiptDate"
+        },
+        "matRetDetFromUpdateTime": {
+          "meaning": "matRetDetFromUpdateTime"
+        },
+        "matRetDetFscType": {
+          "meaning": "物料退货明细FSC声明"
+        },
+        "matRetDetGenerativePeople": {
+          "meaning": "物料退货明细下发人"
+        },
+        "matRetDetGenerativeState": {
+          "meaning": "物料退货明细下发状态"
+        },
+        "matRetDetGoodsId": {
+          "meaning": "物料退货明细货（包）id"
+        },
+        "matRetDetGroovyScript": {
+          "meaning": "物料退货明细groovy脚本"
+        },
+        "matRetDetGropeCode": {
+          "meaning": "物料退货明细搜索码"
+        },
+        "matRetDetHandlingMethod": {
+          "meaning": "物料退货明细处理方式(字典：1物料入库/2成品入库/3半成品入库等)"
+        },
+        "matRetDetId": {
+          "meaning": "物料退货明细PK",
+          "is_primary": true
+        },
+        "matRetDetInUsed": {
+          "meaning": "物料退货明细是否被使用"
+        },
+        "matRetDetInvTypeTaxRateId": {
+          "meaning": "物料退货明细发票税率id"
+        },
+        "matRetDetIsBanned": {
+          "meaning": "物料退货明细是否被禁用"
+        },
+        "matRetDetIsDeleted": {
+          "meaning": "物料退货明细是否被删除"
+        },
+        "matRetDetIsLeaf": {
+          "meaning": "物料退货明细是否叶子节点"
+        },
+        "matRetDetIsMainFlow": {
+          "meaning": "物料退货明细是否是主流程"
+        },
+        "matRetDetIsManualModificationDate": {
+          "meaning": "物料退货明细是否手动修改计划生产时间"
+        },
+        "matRetDetIsolation": {
+          "meaning": "物料退货明细智能节点数据隔离标识"
+        },
+        "matRetDetJsScript": {
+          "meaning": "物料退货明细js脚本"
+        },
+        "matRetDetLocalCurrencyTotalAmount": {
+          "meaning": "物料退货明细本币金额"
+        },
+        "matRetDetLocalCurrencyUnitPrice": {
+          "meaning": "物料退货明细本币单价(根据币种，外币才显示)，外币不含税"
+        },
+        "matRetDetMatBatchId": {
+          "meaning": "物料退货明细物料批次id"
+        },
+        "matRetDetMatRetActualTimeRequired": {
+          "meaning": "物料退货明细实际需时(小时)"
+        },
+        "matRetDetMatRetAdjustmentTimeRequired": {
+          "meaning": "物料退货明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "matRetDetMatRetApplicationId": {
+          "meaning": "物料退货明细应用ID"
+        },
+        "matRetDetMatRetAuditDate": {
+          "meaning": "物料退货明细审核时间"
+        },
+        "matRetDetMatRetAuditStatus": {
+          "meaning": "物料退货明细审核状态"
+        },
+        "matRetDetMatRetAvailableScheduleId": {
+          "meaning": "物料退货明细可用日程id"
+        },
+        "matRetDetMatRetBeginTime": {
+          "meaning": "物料退货明细开始时间"
+        },
+        "matRetDetMatRetBizVersion": {
+          "meaning": "物料退货明细业务自定义版本号"
+        },
+        "matRetDetMatRetBriefName": {
+          "meaning": "物料退货明细简称"
+        },
+        "matRetDetMatRetBusDivisId": {
+          "meaning": "物料退货明细事业部id"
+        },
+        "matRetDetMatRetClazz": {
+          "meaning": "物料退货明细子类 类名（表和类一一对应）"
+        },
+        "matRetDetMatRetClosedReason": {
+          "meaning": "物料退货明细结案原因"
+        },
+        "matRetDetMatRetClosedStatus": {
+          "meaning": "物料退货明细结案状态"
+        },
+        "matRetDetMatRetComment": {
+          "meaning": "物料退货明细评论"
+        },
+        "matRetDetMatRetCompleteQuantity": {
+          "meaning": "物料退货明细完成数量"
+        },
+        "matRetDetMatRetCompleteStatus": {
+          "meaning": "物料退货明细完成状态"
+        },
+        "matRetDetMatRetCreateTime": {
+          "meaning": "物料退货明细创建时间"
+        },
+        "matRetDetMatRetCreator": {
+          "meaning": "物料退货明细创建人"
+        },
+        "matRetDetMatRetCreatorId": {
+          "meaning": "物料退货明细创建人ID"
+        },
+        "matRetDetMatRetCurrency": {
+          "meaning": "物料退货明细币种"
+        },
+        "matRetDetMatRetDateExtra1": {
+          "meaning": "物料退货明细扩展时间1"
+        },
+        "matRetDetMatRetDateExtra2": {
+          "meaning": "物料退货明细扩展时间2"
+        },
+        "matRetDetMatRetDateExtra3": {
+          "meaning": "物料退货明细扩展时间3"
+        },
+        "matRetDetMatRetDateExtra4": {
+          "meaning": "物料退货明细扩展时间4"
+        },
+        "matRetDetMatRetDateExtra5": {
+          "meaning": "物料退货明细扩展时间5"
+        },
+        "matRetDetMatRetDecimalMethod": {
+          "meaning": "物料退货明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+        },
+        "matRetDetMatRetDefaultType": {
+          "meaning": "物料退货明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matRetDetMatRetDeliveryDate": {
+          "meaning": "物料退货明细交货日期"
+        },
+        "matRetDetMatRetDescription": {
+          "meaning": "物料退货明细描述"
+        },
+        "matRetDetMatRetEndTime": {
+          "meaning": "物料退货明细结束时间"
+        },
+        "matRetDetMatRetEndTimeRequired": {
+          "meaning": "物料退货明细最后需时(小时)"
+        },
+        "matRetDetMatRetEngName": {
+          "meaning": "物料退货明细英文名称"
+        },
+        "matRetDetMatRetEquipmentId": {
+          "meaning": "物料退货明细设备id"
+        },
+        "matRetDetMatRetExchangeRateId": {
+          "meaning": "物料退货明细币种汇率id"
+        },
+        "matRetDetMatRetExtension": {
+          "meaning": "物料退货明细扩展数据"
+        },
+        "matRetDetMatRetExternalState": {
+          "meaning": "物料退货明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matRetDetMatRetFilterClazz": {
+          "meaning": "物料退货明细冗余字段用于筛选"
+        },
+        "matRetDetMatRetFlags": {
+          "meaning": "物料退货明细63位标志位"
+        },
+        "matRetDetMatRetFromAuditDate": {
+          "meaning": "matRetDetMatRetFromAuditDate"
+        },
+        "matRetDetMatRetFromBeginTime": {
+          "meaning": "matRetDetMatRetFromBeginTime"
+        },
+        "matRetDetMatRetFromCreateTime": {
+          "meaning": "matRetDetMatRetFromCreateTime"
+        },
+        "matRetDetMatRetFromDateExtra1": {
+          "meaning": "matRetDetMatRetFromDateExtra1"
+        },
+        "matRetDetMatRetFromDateExtra2": {
+          "meaning": "matRetDetMatRetFromDateExtra2"
+        },
+        "matRetDetMatRetFromDateExtra3": {
+          "meaning": "matRetDetMatRetFromDateExtra3"
+        },
+        "matRetDetMatRetFromDateExtra4": {
+          "meaning": "matRetDetMatRetFromDateExtra4"
+        },
+        "matRetDetMatRetFromDateExtra5": {
+          "meaning": "matRetDetMatRetFromDateExtra5"
+        },
+        "matRetDetMatRetFromDeliveryDate": {
+          "meaning": "matRetDetMatRetFromDeliveryDate"
+        },
+        "matRetDetMatRetFromEndTime": {
+          "meaning": "matRetDetMatRetFromEndTime"
+        },
+        "matRetDetMatRetFromReceiptDate": {
+          "meaning": "matRetDetMatRetFromReceiptDate"
+        },
+        "matRetDetMatRetFromUpdateTime": {
+          "meaning": "matRetDetMatRetFromUpdateTime"
+        },
+        "matRetDetMatRetFscType": {
+          "meaning": "物料退货明细FSC声明"
+        },
+        "matRetDetMatRetGenerativePeople": {
+          "meaning": "物料退货明细下发人"
+        },
+        "matRetDetMatRetGenerativeState": {
+          "meaning": "物料退货明细下发状态"
+        },
+        "matRetDetMatRetGroovyScript": {
+          "meaning": "物料退货明细groovy脚本"
+        },
+        "matRetDetMatRetGropeCode": {
+          "meaning": "物料退货明细搜索码"
+        },
+        "matRetDetMatRetId": {
+          "meaning": "物料退货明细PK"
+        },
+        "matRetDetMatRetInUsed": {
+          "meaning": "物料退货明细是否被使用"
+        },
+        "matRetDetMatRetInvTypeTaxRateId": {
+          "meaning": "物料退货明细发票税率id"
+        },
+        "matRetDetMatRetIsBanned": {
+          "meaning": "物料退货明细是否被禁用"
+        },
+        "matRetDetMatRetIsDeleted": {
+          "meaning": "物料退货明细是否被删除"
+        },
+        "matRetDetMatRetIsLeaf": {
+          "meaning": "物料退货明细是否叶子节点"
+        },
+        "matRetDetMatRetIsMainFlow": {
+          "meaning": "物料退货明细是否是主流程"
+        },
+        "matRetDetMatRetIsManualModificationDate": {
+          "meaning": "物料退货明细是否手动修改计划生产时间"
+        },
+        "matRetDetMatRetIsolation": {
+          "meaning": "物料退货明细智能节点数据隔离标识"
+        },
+        "matRetDetMatRetJsScript": {
+          "meaning": "物料退货明细js脚本"
+        },
+        "matRetDetMatRetMaterialId": {
+          "meaning": "物料退货明细物料id"
+        },
+        "matRetDetMatRetName": {
+          "meaning": "物料退货明细智能节点名"
+        },
+        "matRetDetMatRetNameCodeSearch": {
+          "meaning": "物料退货明细name、user_code模糊搜索"
+        },
+        "matRetDetMatRetNumberExtra1": {
+          "meaning": "物料退货明细扩展数量1"
+        },
+        "matRetDetMatRetNumberExtra2": {
+          "meaning": "物料退货明细扩展数量2"
+        },
+        "matRetDetMatRetNumberExtra3": {
+          "meaning": "物料退货明细扩展数量3"
+        },
+        "matRetDetMatRetNumberExtra4": {
+          "meaning": "物料退货明细扩展数量4"
+        },
+        "matRetDetMatRetNumberExtra5": {
+          "meaning": "物料退货明细扩展数量5"
+        },
+        "matRetDetMatRetParentId": {
+          "meaning": "物料退货明细父节点ID"
+        },
+        "matRetDetMatRetPlannedOutputQuantity": {
+          "meaning": "物料退货明细计划产出数量"
+        },
+        "matRetDetMatRetPlannedTimeRequired": {
+          "meaning": "物料退货明细计划需时(小时)"
+        },
+        "matRetDetMatRetPrintTimes": {
+          "meaning": "物料退货明细打印次数"
+        },
+        "matRetDetMatRetPriority": {
+          "meaning": "物料退货明细优先级"
+        },
+        "matRetDetMatRetProcessInstanceId": {
+          "meaning": "物料退货明细流程实例ID"
+        },
+        "matRetDetMatRetProductionProcessesTypeId": {
+          "meaning": "物料退货明细工序类型ID"
+        },
+        "matRetDetMatRetProductionShiftId": {
+          "meaning": "物料退货明细生产班次ID"
+        },
+        "matRetDetMatRetQuantity": {
+          "meaning": "物料退货明细任务数量"
+        },
+        "matRetDetMatRetReceiptDate": {
+          "meaning": "物料退货明细单据日期"
+        },
+        "matRetDetMatRetReceiptType": {
+          "meaning": "物料退货明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "matRetDetMatRetRelatedTasksId": {
+          "meaning": "物料退货明细关联任务id"
+        },
+        "matRetDetMatRetReturnAddress": {
+          "meaning": "物料退货明细退货地址"
+        },
+        "matRetDetMatRetReturnReason": {
+          "meaning": "物料退货明细退货原因"
+        },
+        "matRetDetMatRetReturnStaffId": {
+          "meaning": "物料退货明细退货人"
+        },
+        "matRetDetMatRetReturnStaffIds": {
+          "meaning": "物料退货明细退货人(-查询入参-)"
+        },
+        "matRetDetMatRetSerialNumber": {
+          "meaning": "物料退货明细顺序号"
+        },
+        "matRetDetMatRetSetInvTyp": {
+          "meaning": "物料退货明细发票类型"
+        },
+        "matRetDetMatRetSetMethod": {
+          "meaning": "物料退货明细结算方式"
+        },
+        "matRetDetMatRetSettlementSupplierId": {
+          "meaning": "物料退货明细结算供应商"
+        },
+        "matRetDetMatRetSource": {
+          "meaning": "物料退货明细源"
+        },
+        "matRetDetMatRetSourceType": {
+          "meaning": "物料退货明细来源类型"
+        },
+        "matRetDetMatRetState": {
+          "meaning": "物料退货明细通用状态"
+        },
+        "matRetDetMatRetSupCntPer": {
+          "meaning": "物料退货明细供应商联系人"
+        },
+        "matRetDetMatRetSupTel": {
+          "meaning": "物料退货明细联系人电话号码"
+        },
+        "matRetDetMatRetSupplierId": {
+          "meaning": "物料退货明细供应商"
+        },
+        "matRetDetMatRetSystemCode": {
+          "meaning": "物料退货明细系统编码"
+        },
+        "matRetDetMatRetTarget": {
+          "meaning": "物料退货明细目标"
+        },
+        "matRetDetMatRetTaskNodeName": {
+          "meaning": "物料退货明细任务节点名称"
+        },
+        "matRetDetMatRetTenantId": {
+          "meaning": "物料退货明细租户_id"
+        },
+        "matRetDetMatRetThirdPartyClass": {
+          "meaning": "物料退货明细第三方分类"
+        },
+        "matRetDetMatRetThirdPartyId": {
+          "meaning": "物料退货明细第三方系统中的唯一ID"
+        },
+        "matRetDetMatRetThirdPartyName": {
+          "meaning": "物料退货明细第三方名称"
+        },
+        "matRetDetMatRetToAuditDate": {
+          "meaning": "matRetDetMatRetToAuditDate"
+        },
+        "matRetDetMatRetToBeginTime": {
+          "meaning": "matRetDetMatRetToBeginTime"
+        },
+        "matRetDetMatRetToCreateTime": {
+          "meaning": "matRetDetMatRetToCreateTime"
+        },
+        "matRetDetMatRetToDateExtra1": {
+          "meaning": "matRetDetMatRetToDateExtra1"
+        },
+        "matRetDetMatRetToDateExtra2": {
+          "meaning": "matRetDetMatRetToDateExtra2"
+        },
+        "matRetDetMatRetToDateExtra3": {
+          "meaning": "matRetDetMatRetToDateExtra3"
+        },
+        "matRetDetMatRetToDateExtra4": {
+          "meaning": "matRetDetMatRetToDateExtra4"
+        },
+        "matRetDetMatRetToDateExtra5": {
+          "meaning": "matRetDetMatRetToDateExtra5"
+        },
+        "matRetDetMatRetToDeliveryDate": {
+          "meaning": "matRetDetMatRetToDeliveryDate"
+        },
+        "matRetDetMatRetToEndTime": {
+          "meaning": "matRetDetMatRetToEndTime"
+        },
+        "matRetDetMatRetToReceiptDate": {
+          "meaning": "matRetDetMatRetToReceiptDate"
+        },
+        "matRetDetMatRetToUpdateTime": {
+          "meaning": "matRetDetMatRetToUpdateTime"
+        },
+        "matRetDetMatRetTotalAmountKeepDecimalPlace": {
+          "meaning": "物料退货明细金额保留小数位(默认2位，可手动变更)"
+        },
+        "matRetDetMatRetUnitCode": {
+          "meaning": "物料退货明细单位id"
+        },
+        "matRetDetMatRetUnitPriceKeepDecimalPlace": {
+          "meaning": "物料退货明细单价保留小数位(默认9位，可手动变更)"
+        },
+        "matRetDetMatRetUpdateTime": {
+          "meaning": "物料退货明细更新时间"
+        },
+        "matRetDetMatRetUpdater": {
+          "meaning": "物料退货明细更新人"
+        },
+        "matRetDetMatRetUpdaterId": {
+          "meaning": "物料退货明细更新人ID"
+        },
+        "matRetDetMatRetUserCode": {
+          "meaning": "物料退货明细智能节点的唯一编码"
+        },
+        "matRetDetMatRetVarExtra1": {
+          "meaning": "物料退货明细扩展1"
+        },
+        "matRetDetMatRetVarExtra2": {
+          "meaning": "物料退货明细扩展2"
+        },
+        "matRetDetMatRetVarExtra3": {
+          "meaning": "物料退货明细扩展3"
+        },
+        "matRetDetMatRetVarExtra4": {
+          "meaning": "物料退货明细扩展4"
+        },
+        "matRetDetMatRetVarExtra5": {
+          "meaning": "物料退货明细扩展5"
+        },
+        "matRetDetMatRetVersion": {
+          "meaning": "物料退货明细版本号"
+        },
+        "matRetDetMaterialId": {
+          "meaning": "物料退货明细物料id"
+        },
+        "matRetDetName": {
+          "meaning": "物料退货明细智能节点名"
+        },
+        "matRetDetNameCodeSearch": {
+          "meaning": "物料退货明细name、user_code模糊搜索"
+        },
+        "matRetDetNumberExtra1": {
+          "meaning": "物料退货明细扩展数量1"
+        },
+        "matRetDetNumberExtra2": {
+          "meaning": "物料退货明细扩展数量2"
+        },
+        "matRetDetNumberExtra3": {
+          "meaning": "物料退货明细扩展数量3"
+        },
+        "matRetDetNumberExtra4": {
+          "meaning": "物料退货明细扩展数量4"
+        },
+        "matRetDetNumberExtra5": {
+          "meaning": "物料退货明细扩展数量5"
+        },
+        "matRetDetParentId": {
+          "meaning": "物料退货明细父节点ID"
+        },
+        "matRetDetPlannedOutputQuantity": {
+          "meaning": "物料退货明细计划产出数量"
+        },
+        "matRetDetPlannedTimeRequired": {
+          "meaning": "物料退货明细计划需时(小时)"
+        },
+        "matRetDetPrintTimes": {
+          "meaning": "物料退货明细打印次数"
+        },
+        "matRetDetPriority": {
+          "meaning": "物料退货明细优先级"
+        },
+        "matRetDetProcessInstanceId": {
+          "meaning": "物料退货明细流程实例ID"
+        },
+        "matRetDetProductionProcessesTypeId": {
+          "meaning": "物料退货明细工序类型ID"
+        },
+        "matRetDetProductionShiftId": {
+          "meaning": "物料退货明细生产班次ID"
+        },
+        "matRetDetQuantity": {
+          "meaning": "物料退货明细任务数量"
+        },
+        "matRetDetQuotationUnitPriceIncludingTax": {
+          "meaning": "物料退货明细含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "matRetDetQuotationUnitPriceWithoutTax": {
+          "meaning": "物料退货明细不含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "matRetDetReceiptDate": {
+          "meaning": "物料退货明细单据日期"
+        },
+        "matRetDetReceiptType": {
+          "meaning": "物料退货明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "matRetDetRelatedTasksId": {
+          "meaning": "物料退货明细关联任务id"
+        },
+        "matRetDetSerialNumber": {
+          "meaning": "物料退货明细顺序号"
+        },
+        "matRetDetSettlementTotalAmount": {
+          "meaning": "物料退货明细结算金额（默认与含税总金额相等），写入库存价格字段"
+        },
+        "matRetDetSettlementUnitPrice": {
+          "meaning": "物料退货明细结算单价（默认与含税单价相等），写入库存价格字段"
+        },
+        "matRetDetSource": {
+          "meaning": "物料退货明细源"
+        },
+        "matRetDetSourceType": {
+          "meaning": "物料退货明细来源类型"
+        },
+        "matRetDetState": {
+          "meaning": "物料退货明细通用状态"
+        },
+        "matRetDetStatedQuantity": {
+          "meaning": "物料退货明细已对账数量"
+        },
+        "matRetDetStatedStatus": {
+          "meaning": "物料退货明细已对账状态"
+        },
+        "matRetDetSystemCode": {
+          "meaning": "物料退货明细系统编码"
+        },
+        "matRetDetTarget": {
+          "meaning": "物料退货明细目标"
+        },
+        "matRetDetTaskNodeName": {
+          "meaning": "物料退货明细任务节点名称"
+        },
+        "matRetDetTenantId": {
+          "meaning": "物料退货明细租户_id"
+        },
+        "matRetDetThirdPartyClass": {
+          "meaning": "物料退货明细第三方分类"
+        },
+        "matRetDetThirdPartyId": {
+          "meaning": "物料退货明细第三方系统中的唯一ID"
+        },
+        "matRetDetThirdPartyName": {
+          "meaning": "物料退货明细第三方名称"
+        },
+        "matRetDetToAuditDate": {
+          "meaning": "matRetDetToAuditDate"
+        },
+        "matRetDetToBeginTime": {
+          "meaning": "matRetDetToBeginTime"
+        },
+        "matRetDetToCreateTime": {
+          "meaning": "matRetDetToCreateTime"
+        },
+        "matRetDetToDateExtra1": {
+          "meaning": "matRetDetToDateExtra1"
+        },
+        "matRetDetToDateExtra2": {
+          "meaning": "matRetDetToDateExtra2"
+        },
+        "matRetDetToDateExtra3": {
+          "meaning": "matRetDetToDateExtra3"
+        },
+        "matRetDetToDateExtra4": {
+          "meaning": "matRetDetToDateExtra4"
+        },
+        "matRetDetToDateExtra5": {
+          "meaning": "matRetDetToDateExtra5"
+        },
+        "matRetDetToDeliveryDate": {
+          "meaning": "matRetDetToDeliveryDate"
+        },
+        "matRetDetToEndTime": {
+          "meaning": "matRetDetToEndTime"
+        },
+        "matRetDetToReceiptDate": {
+          "meaning": "matRetDetToReceiptDate"
+        },
+        "matRetDetToUpdateTime": {
+          "meaning": "matRetDetToUpdateTime"
+        },
+        "matRetDetTotalAmountIncludingTax": {
+          "meaning": "物料退货明细含税总金额"
+        },
+        "matRetDetTotalAmountWithoutTax": {
+          "meaning": "物料退货明细不含税总金额"
+        },
+        "matRetDetUnitCode": {
+          "meaning": "物料退货明细单位id"
+        },
+        "matRetDetUnitPriceIncludingTax": {
+          "meaning": "物料退货明细含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "matRetDetUnitPriceWithoutTax": {
+          "meaning": "物料退货明细不含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "matRetDetUpdateTime": {
+          "meaning": "物料退货明细更新时间"
+        },
+        "matRetDetUpdater": {
+          "meaning": "物料退货明细更新人"
+        },
+        "matRetDetUpdaterId": {
+          "meaning": "物料退货明细更新人ID"
+        },
+        "matRetDetUserCode": {
+          "meaning": "物料退货明细智能节点的唯一编码"
+        },
+        "matRetDetVarExtra1": {
+          "meaning": "物料退货明细扩展1"
+        },
+        "matRetDetVarExtra2": {
+          "meaning": "物料退货明细扩展2"
+        },
+        "matRetDetVarExtra3": {
+          "meaning": "物料退货明细扩展3"
+        },
+        "matRetDetVarExtra4": {
+          "meaning": "物料退货明细扩展4"
+        },
+        "matRetDetVarExtra5": {
+          "meaning": "物料退货明细扩展5"
+        },
+        "matRetDetVersion": {
+          "meaning": "物料退货明细版本号"
+        }
+      }
+    }

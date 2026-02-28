@@ -1,0 +1,443 @@
+{
+  "api_name" : "/order-notice/findList",
+  "table_name" : "订单通知单",
+  "request" : {
+    "orderNoticeClazz" : "ORDER_NOTICE"
+  },
+  "mainTabClazz" : "ORDER_NOTICE",
+  "response" : {
+    "orderNoticeActualTimeRequired" : {
+      "meaning" : "订单通知单实际需时(小时)"
+    },
+    "orderNoticeAdjustmentTimeRequired" : {
+      "meaning" : "订单通知单调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "orderNoticeAppearRequ" : {
+      "meaning" : "订单通知单产品结构下外观要求"
+    },
+    "orderNoticeApplicationId" : {
+      "meaning" : "订单通知单应用ID"
+    },
+    "orderNoticeAuditDate" : {
+      "meaning" : "订单通知单审核时间"
+    },
+    "orderNoticeAuditStatus" : {
+      "meaning" : "订单通知单审核状态"
+    },
+    "orderNoticeAvailableScheduleId" : {
+      "meaning" : "订单通知单可用日程id"
+    },
+    "orderNoticeBeginTime" : {
+      "meaning" : "订单通知单开始时间"
+    },
+    "orderNoticeBizVersion" : {
+      "meaning" : "订单通知单业务自定义版本号"
+    },
+    "orderNoticeBriefName" : {
+      "meaning" : "订单通知单简称"
+    },
+    "orderNoticeBusDivisId" : {
+      "meaning" : "订单通知单事业部id"
+    },
+    "orderNoticeClazz" : {
+      "meaning" : "订单通知单子类 类名（表和类一一对应）"
+    },
+    "orderNoticeClosedReason" : {
+      "meaning" : "订单通知单结案原因"
+    },
+    "orderNoticeClosedStatus" : {
+      "meaning" : "订单通知单结案状态"
+    },
+    "orderNoticeComment" : {
+      "meaning" : "订单通知单评论"
+    },
+    "orderNoticeCompleteQuantity" : {
+      "meaning" : "订单通知单完成数量"
+    },
+    "orderNoticeCompleteStatus" : {
+      "meaning" : "订单通知单完成状态"
+    },
+    "orderNoticeContName" : {
+      "meaning" : "订单通知单联系人姓名"
+    },
+    "orderNoticeCreateTime" : {
+      "meaning" : "订单通知单创建时间"
+    },
+    "orderNoticeCreator" : {
+      "meaning" : "订单通知单创建人"
+    },
+    "orderNoticeCreatorId" : {
+      "meaning" : "订单通知单创建人ID"
+    },
+    "orderNoticeCur" : {
+      "meaning" : "订单通知单币种"
+    },
+    "orderNoticeCurRate" : {
+      "meaning" : "订单通知单汇率"
+    },
+    "orderNoticeCustId" : {
+      "meaning" : "订单通知单客户id"
+    },
+    "orderNoticeDateExtra1" : {
+      "meaning" : "订单通知单扩展时间1"
+    },
+    "orderNoticeDateExtra2" : {
+      "meaning" : "订单通知单扩展时间2"
+    },
+    "orderNoticeDateExtra3" : {
+      "meaning" : "订单通知单扩展时间3"
+    },
+    "orderNoticeDateExtra4" : {
+      "meaning" : "订单通知单扩展时间4"
+    },
+    "orderNoticeDateExtra5" : {
+      "meaning" : "订单通知单扩展时间5"
+    },
+    "orderNoticeDefaultType" : {
+      "meaning" : "订单通知单智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "orderNoticeDelMethod" : {
+      "meaning" : "订单通知单配送方式"
+    },
+    "orderNoticeDeliveryDate" : {
+      "meaning" : "订单通知单交货日期"
+    },
+    "orderNoticeDescription" : {
+      "meaning" : "订单通知单描述"
+    },
+    "orderNoticeEndTime" : {
+      "meaning" : "订单通知单结束时间"
+    },
+    "orderNoticeEndTimeRequired" : {
+      "meaning" : "订单通知单最后需时(小时)"
+    },
+    "orderNoticeEngName" : {
+      "meaning" : "订单通知单英文名称"
+    },
+    "orderNoticeEquipmentId" : {
+      "meaning" : "订单通知单设备id"
+    },
+    "orderNoticeExchangeRateId" : {
+      "meaning" : "订单通知单币种汇率id"
+    },
+    "orderNoticeExtension" : {
+      "meaning" : "订单通知单扩展数据"
+    },
+    "orderNoticeExternalState" : {
+      "meaning" : "订单通知单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "orderNoticeFilterClazz" : {
+      "meaning" : "订单通知单冗余字段用于筛选"
+    },
+    "orderNoticeFlags" : {
+      "meaning" : "订单通知单63位标志位"
+    },
+    "orderNoticeFmtDec" : {
+      "meaning" : "订单通知单保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+    },
+    "orderNoticeFromAuditDate" : {
+      "meaning" : "orderNoticeFromAuditDate"
+    },
+    "orderNoticeFromBeginTime" : {
+      "meaning" : "orderNoticeFromBeginTime"
+    },
+    "orderNoticeFromCreateTime" : {
+      "meaning" : "orderNoticeFromCreateTime"
+    },
+    "orderNoticeFromDateExtra1" : {
+      "meaning" : "orderNoticeFromDateExtra1"
+    },
+    "orderNoticeFromDateExtra2" : {
+      "meaning" : "orderNoticeFromDateExtra2"
+    },
+    "orderNoticeFromDateExtra3" : {
+      "meaning" : "orderNoticeFromDateExtra3"
+    },
+    "orderNoticeFromDateExtra4" : {
+      "meaning" : "orderNoticeFromDateExtra4"
+    },
+    "orderNoticeFromDateExtra5" : {
+      "meaning" : "orderNoticeFromDateExtra5"
+    },
+    "orderNoticeFromDeliveryDate" : {
+      "meaning" : "orderNoticeFromDeliveryDate"
+    },
+    "orderNoticeFromEndTime" : {
+      "meaning" : "orderNoticeFromEndTime"
+    },
+    "orderNoticeFromReceiptDate" : {
+      "meaning" : "orderNoticeFromReceiptDate"
+    },
+    "orderNoticeFromUpdateTime" : {
+      "meaning" : "orderNoticeFromUpdateTime"
+    },
+    "orderNoticeFscType" : {
+      "meaning" : "订单通知单FSC声明"
+    },
+    "orderNoticeGenerativePeople" : {
+      "meaning" : "订单通知单下发人"
+    },
+    "orderNoticeGenerativeState" : {
+      "meaning" : "订单通知单下发状态"
+    },
+    "orderNoticeGroovyScript" : {
+      "meaning" : "订单通知单groovy脚本"
+    },
+    "orderNoticeGropeCode" : {
+      "meaning" : "订单通知单搜索码"
+    },
+    "orderNoticeHandleMethod" : {
+      "meaning" : "订单通知单处理方式"
+    },
+    "orderNoticeId" : {
+      "meaning" : "订单通知单PK",
+      "is_primary" : true
+    },
+    "orderNoticeInUsed" : {
+      "meaning" : "订单通知单是否被使用"
+    },
+    "orderNoticeInvType" : {
+      "meaning" : "订单通知单发票类型id"
+    },
+    "orderNoticeInvTypeTaxRateId" : {
+      "meaning" : "订单通知单发票税率id"
+    },
+    "orderNoticeIsBanned" : {
+      "meaning" : "订单通知单是否被禁用"
+    },
+    "orderNoticeIsDeleted" : {
+      "meaning" : "订单通知单是否被删除"
+    },
+    "orderNoticeIsLeaf" : {
+      "meaning" : "订单通知单是否叶子节点"
+    },
+    "orderNoticeIsMainFlow" : {
+      "meaning" : "订单通知单是否是主流程"
+    },
+    "orderNoticeIsManualModificationDate" : {
+      "meaning" : "订单通知单是否手动修改计划生产时间"
+    },
+    "orderNoticeIsUrgent" : {
+      "meaning" : "订单通知单是否加急"
+    },
+    "orderNoticeIsolation" : {
+      "meaning" : "订单通知单智能节点数据隔离标识"
+    },
+    "orderNoticeJsScript" : {
+      "meaning" : "订单通知单js脚本"
+    },
+    "orderNoticeLcTotalAmt" : {
+      "meaning" : "订单通知单本币总费用(根据币种，外币才显示)，外币不含税"
+    },
+    "orderNoticeMaterialId" : {
+      "meaning" : "订单通知单物料id"
+    },
+    "orderNoticeName" : {
+      "meaning" : "订单通知单智能节点名"
+    },
+    "orderNoticeNameCodeSearch" : {
+      "meaning" : "订单通知单name、user_code模糊搜索"
+    },
+    "orderNoticeNumberExtra1" : {
+      "meaning" : "订单通知单扩展数量1"
+    },
+    "orderNoticeNumberExtra2" : {
+      "meaning" : "订单通知单扩展数量2"
+    },
+    "orderNoticeNumberExtra3" : {
+      "meaning" : "订单通知单扩展数量3"
+    },
+    "orderNoticeNumberExtra4" : {
+      "meaning" : "订单通知单扩展数量4"
+    },
+    "orderNoticeNumberExtra5" : {
+      "meaning" : "订单通知单扩展数量5"
+    },
+    "orderNoticePCount" : {
+      "meaning" : "订单通知单打印次数"
+    },
+    "orderNoticeParentId" : {
+      "meaning" : "订单通知单父节点ID"
+    },
+    "orderNoticePhone" : {
+      "meaning" : "订单通知单手机"
+    },
+    "orderNoticePlannedOutputQuantity" : {
+      "meaning" : "订单通知单计划产出数量"
+    },
+    "orderNoticePlannedTimeRequired" : {
+      "meaning" : "订单通知单计划需时(小时)"
+    },
+    "orderNoticePrintTimes" : {
+      "meaning" : "订单通知单打印次数"
+    },
+    "orderNoticePriority" : {
+      "meaning" : "订单通知单优先级"
+    },
+    "orderNoticeProCode" : {
+      "meaning" : "订单通知单项目编码"
+    },
+    "orderNoticeProName" : {
+      "meaning" : "订单通知单项目名称"
+    },
+    "orderNoticeProcessInstanceId" : {
+      "meaning" : "订单通知单流程实例ID"
+    },
+    "orderNoticeProductionProcessesTypeId" : {
+      "meaning" : "订单通知单工序类型ID"
+    },
+    "orderNoticeProductionShiftId" : {
+      "meaning" : "订单通知单生产班次ID"
+    },
+    "orderNoticeQuantity" : {
+      "meaning" : "订单通知单任务数量"
+    },
+    "orderNoticeReason" : {
+      "meaning" : "订单通知单打样原因"
+    },
+    "orderNoticeReasonDesc" : {
+      "meaning" : "订单通知单研发原因描述"
+    },
+    "orderNoticeReceiptDate" : {
+      "meaning" : "订单通知单单据日期"
+    },
+    "orderNoticeReceiptType" : {
+      "meaning" : "订单通知单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "orderNoticeRelatedTasksId" : {
+      "meaning" : "订单通知单关联任务id"
+    },
+    "orderNoticeSerialNumber" : {
+      "meaning" : "订单通知单顺序号"
+    },
+    "orderNoticeSource" : {
+      "meaning" : "订单通知单源"
+    },
+    "orderNoticeSourceType" : {
+      "meaning" : "订单通知单来源类型"
+    },
+    "orderNoticeState" : {
+      "meaning" : "订单通知单通用状态"
+    },
+    "orderNoticeStlAmtFmt" : {
+      "meaning" : "订单通知单结算金额保留小数位(默认2位，可手动变更)"
+    },
+    "orderNoticeStlFee" : {
+      "meaning" : "订单通知单结算费用（默认与含税总金额相等)"
+    },
+    "orderNoticeStlPriceFmt" : {
+      "meaning" : "订单通知单结算单价保留小数位(默认9位，可手动变更)"
+    },
+    "orderNoticeStlType" : {
+      "meaning" : "订单通知单结算类型 SettlementType_id"
+    },
+    "orderNoticeSystemCode" : {
+      "meaning" : "订单通知单系统编码"
+    },
+    "orderNoticeTarget" : {
+      "meaning" : "订单通知单目标"
+    },
+    "orderNoticeTaskNodeName" : {
+      "meaning" : "订单通知单任务节点名称"
+    },
+    "orderNoticeTaxRt" : {
+      "meaning" : "订单通知单税率"
+    },
+    "orderNoticeTechParam" : {
+      "meaning" : "订单通知单产品关键参数与技术指标"
+    },
+    "orderNoticeTenantId" : {
+      "meaning" : "订单通知单租户_guid"
+    },
+    "orderNoticeThirdPartyClass" : {
+      "meaning" : "订单通知单第三方分类"
+    },
+    "orderNoticeThirdPartyId" : {
+      "meaning" : "订单通知单第三方系统中的唯一ID"
+    },
+    "orderNoticeThirdPartyName" : {
+      "meaning" : "订单通知单第三方名称"
+    },
+    "orderNoticeToAuditDate" : {
+      "meaning" : "orderNoticeToAuditDate"
+    },
+    "orderNoticeToBeginTime" : {
+      "meaning" : "orderNoticeToBeginTime"
+    },
+    "orderNoticeToCreateTime" : {
+      "meaning" : "orderNoticeToCreateTime"
+    },
+    "orderNoticeToDateExtra1" : {
+      "meaning" : "orderNoticeToDateExtra1"
+    },
+    "orderNoticeToDateExtra2" : {
+      "meaning" : "orderNoticeToDateExtra2"
+    },
+    "orderNoticeToDateExtra3" : {
+      "meaning" : "orderNoticeToDateExtra3"
+    },
+    "orderNoticeToDateExtra4" : {
+      "meaning" : "orderNoticeToDateExtra4"
+    },
+    "orderNoticeToDateExtra5" : {
+      "meaning" : "orderNoticeToDateExtra5"
+    },
+    "orderNoticeToDeliveryDate" : {
+      "meaning" : "orderNoticeToDeliveryDate"
+    },
+    "orderNoticeToEndTime" : {
+      "meaning" : "orderNoticeToEndTime"
+    },
+    "orderNoticeToReceiptDate" : {
+      "meaning" : "orderNoticeToReceiptDate"
+    },
+    "orderNoticeToUpdateTime" : {
+      "meaning" : "orderNoticeToUpdateTime"
+    },
+    "orderNoticeTotalFeeNt" : {
+      "meaning" : "订单通知单总费用(不含税)"
+    },
+    "orderNoticeTotalVol" : {
+      "meaning" : "订单通知单总体积"
+    },
+    "orderNoticeTotalWithTax" : {
+      "meaning" : "订单通知单总费用(含税)"
+    },
+    "orderNoticeTotalWt" : {
+      "meaning" : "订单通知单总重量"
+    },
+    "orderNoticeUnitCode" : {
+      "meaning" : "订单通知单单位id"
+    },
+    "orderNoticeUpdateTime" : {
+      "meaning" : "订单通知单更新时间"
+    },
+    "orderNoticeUpdater" : {
+      "meaning" : "订单通知单更新人"
+    },
+    "orderNoticeUpdaterId" : {
+      "meaning" : "订单通知单更新人ID"
+    },
+    "orderNoticeUserCode" : {
+      "meaning" : "订单通知单智能节点的唯一编码"
+    },
+    "orderNoticeVarExtra1" : {
+      "meaning" : "订单通知单扩展1"
+    },
+    "orderNoticeVarExtra2" : {
+      "meaning" : "订单通知单扩展2"
+    },
+    "orderNoticeVarExtra3" : {
+      "meaning" : "订单通知单扩展3"
+    },
+    "orderNoticeVarExtra4" : {
+      "meaning" : "订单通知单扩展4"
+    },
+    "orderNoticeVarExtra5" : {
+      "meaning" : "订单通知单扩展5"
+    },
+    "orderNoticeVersion" : {
+      "meaning" : "订单通知单版本号"
+    }
+  }
+}

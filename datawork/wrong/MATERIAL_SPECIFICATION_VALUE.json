@@ -1,0 +1,705 @@
+{
+      "api_name": "/material-specification-value/findList",
+      "table_name": "规格表",
+      "request": {
+        "matSpecValueATMatUnitClazz": "MATERIAL_UNIT",
+        "matSpecValueClazz": "MATERIAL_SPECIFICATION_VALUE"
+      },
+      "mainTabClazz": "MATERIAL_SPECIFICATION_VALUE",
+      "response": {
+        "matSpecValueATMatSpecTypeApplicationId": {
+          "meaning": "规格表应用ID"
+        },
+        "matSpecValueATMatSpecTypeAuditDate": {
+          "meaning": "matSpecValueATMatSpecTypeAuditDate"
+        },
+        "matSpecValueATMatSpecTypeAuditStatus": {
+          "meaning": "规格表审核状态"
+        },
+        "matSpecValueATMatSpecTypeBizVersion": {
+          "meaning": "规格表业务自定义版本号"
+        },
+        "matSpecValueATMatSpecTypeBriefName": {
+          "meaning": "规格表简称"
+        },
+        "matSpecValueATMatSpecTypeBusDivisId": {
+          "meaning": "规格表事业部id"
+        },
+        "matSpecValueATMatSpecTypeClazz": {
+          "meaning": "规格表子类 类名（表和类一一对应）"
+        },
+        "matSpecValueATMatSpecTypeComment": {
+          "meaning": "规格表评论"
+        },
+        "matSpecValueATMatSpecTypeCreateTime": {
+          "meaning": "matSpecValueATMatSpecTypeCreateTime"
+        },
+        "matSpecValueATMatSpecTypeCreator": {
+          "meaning": "规格表创建人"
+        },
+        "matSpecValueATMatSpecTypeCreatorId": {
+          "meaning": "规格表创建人ID"
+        },
+        "matSpecValueATMatSpecTypeDateExtra1": {
+          "meaning": "matSpecValueATMatSpecTypeDateExtra1"
+        },
+        "matSpecValueATMatSpecTypeDateExtra2": {
+          "meaning": "matSpecValueATMatSpecTypeDateExtra2"
+        },
+        "matSpecValueATMatSpecTypeDateExtra3": {
+          "meaning": "matSpecValueATMatSpecTypeDateExtra3"
+        },
+        "matSpecValueATMatSpecTypeDateExtra4": {
+          "meaning": "matSpecValueATMatSpecTypeDateExtra4"
+        },
+        "matSpecValueATMatSpecTypeDateExtra5": {
+          "meaning": "matSpecValueATMatSpecTypeDateExtra5"
+        },
+        "matSpecValueATMatSpecTypeDefaultType": {
+          "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecValueATMatSpecTypeDefaultUnitId": {
+          "meaning": "matSpecValueATMatSpecTypeDefaultUnitId"
+        },
+        "matSpecValueATMatSpecTypeDefaultValue": {
+          "meaning": "matSpecValueATMatSpecTypeDefaultValue"
+        },
+        "matSpecValueATMatSpecTypeDescription": {
+          "meaning": "规格表描述"
+        },
+        "matSpecValueATMatSpecTypeEngName": {
+          "meaning": "规格表英文名称"
+        },
+        "matSpecValueATMatSpecTypeExtension": {
+          "meaning": "规格表扩展数据"
+        },
+        "matSpecValueATMatSpecTypeExternalState": {
+          "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecValueATMatSpecTypeFlags": {
+          "meaning": "规格表63位标志位"
+        },
+        "matSpecValueATMatSpecTypeFromAuditDate": {
+          "meaning": "matSpecValueATMatSpecTypeFromAuditDate"
+        },
+        "matSpecValueATMatSpecTypeFromCreateTime": {
+          "meaning": "matSpecValueATMatSpecTypeFromCreateTime"
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra1": {
+          "meaning": "matSpecValueATMatSpecTypeFromDateExtra1"
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra2": {
+          "meaning": "matSpecValueATMatSpecTypeFromDateExtra2"
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra3": {
+          "meaning": "matSpecValueATMatSpecTypeFromDateExtra3"
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra4": {
+          "meaning": "matSpecValueATMatSpecTypeFromDateExtra4"
+        },
+        "matSpecValueATMatSpecTypeFromDateExtra5": {
+          "meaning": "matSpecValueATMatSpecTypeFromDateExtra5"
+        },
+        "matSpecValueATMatSpecTypeFromUpdateTime": {
+          "meaning": "matSpecValueATMatSpecTypeFromUpdateTime"
+        },
+        "matSpecValueATMatSpecTypeGroovyScript": {
+          "meaning": "规格表groovy脚本"
+        },
+        "matSpecValueATMatSpecTypeGropeCode": {
+          "meaning": "规格表搜索码"
+        },
+        "matSpecValueATMatSpecTypeId": {
+          "meaning": "matSpecValueATMatSpecTypeId"
+        },
+        "matSpecValueATMatSpecTypeInUsed": {
+          "meaning": "规格表是否被使用"
+        },
+        "matSpecValueATMatSpecTypeIsBanned": {
+          "meaning": "规格表是否被禁用"
+        },
+        "matSpecValueATMatSpecTypeIsDeleted": {
+          "meaning": "规格表是否被删除"
+        },
+        "matSpecValueATMatSpecTypeIsMainFlow": {
+          "meaning": "规格表是否是主流程"
+        },
+        "matSpecValueATMatSpecTypeIsolation": {
+          "meaning": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueATMatSpecTypeJsScript": {
+          "meaning": "规格表js脚本"
+        },
+        "matSpecValueATMatSpecTypeName": {
+          "meaning": "规格表智能节点名"
+        },
+        "matSpecValueATMatSpecTypeNameCodeSearch": {
+          "meaning": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra1": {
+          "meaning": "规格表扩展数量1"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra2": {
+          "meaning": "规格表扩展数量2"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra3": {
+          "meaning": "规格表扩展数量3"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra4": {
+          "meaning": "规格表扩展数量4"
+        },
+        "matSpecValueATMatSpecTypeNumberExtra5": {
+          "meaning": "规格表扩展数量5"
+        },
+        "matSpecValueATMatSpecTypeParentId": {
+          "meaning": "规格表父节点ID"
+        },
+        "matSpecValueATMatSpecTypeProcessInstanceId": {
+          "meaning": "规格表流程实例ID"
+        },
+        "matSpecValueATMatSpecTypeSerialNumber": {
+          "meaning": "规格表顺序号"
+        },
+        "matSpecValueATMatSpecTypeState": {
+          "meaning": "规格表通用状态"
+        },
+        "matSpecValueATMatSpecTypeSystemCode": {
+          "meaning": "规格表系统编码"
+        },
+        "matSpecValueATMatSpecTypeTaskNodeName": {
+          "meaning": "规格表任务节点名称"
+        },
+        "matSpecValueATMatSpecTypeTenantId": {
+          "meaning": "matSpecValueATMatSpecTypeTenantId"
+        },
+        "matSpecValueATMatSpecTypeThirdPartyClass": {
+          "meaning": "规格表第三方分类"
+        },
+        "matSpecValueATMatSpecTypeThirdPartyId": {
+          "meaning": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueATMatSpecTypeThirdPartyName": {
+          "meaning": "规格表第三方名称"
+        },
+        "matSpecValueATMatSpecTypeToAuditDate": {
+          "meaning": "matSpecValueATMatSpecTypeToAuditDate"
+        },
+        "matSpecValueATMatSpecTypeToCreateTime": {
+          "meaning": "matSpecValueATMatSpecTypeToCreateTime"
+        },
+        "matSpecValueATMatSpecTypeToDateExtra1": {
+          "meaning": "matSpecValueATMatSpecTypeToDateExtra1"
+        },
+        "matSpecValueATMatSpecTypeToDateExtra2": {
+          "meaning": "matSpecValueATMatSpecTypeToDateExtra2"
+        },
+        "matSpecValueATMatSpecTypeToDateExtra3": {
+          "meaning": "matSpecValueATMatSpecTypeToDateExtra3"
+        },
+        "matSpecValueATMatSpecTypeToDateExtra4": {
+          "meaning": "matSpecValueATMatSpecTypeToDateExtra4"
+        },
+        "matSpecValueATMatSpecTypeToDateExtra5": {
+          "meaning": "matSpecValueATMatSpecTypeToDateExtra5"
+        },
+        "matSpecValueATMatSpecTypeToUpdateTime": {
+          "meaning": "matSpecValueATMatSpecTypeToUpdateTime"
+        },
+        "matSpecValueATMatSpecTypeUnitTypeId": {
+          "meaning": "matSpecValueATMatSpecTypeUnitTypeId"
+        },
+        "matSpecValueATMatSpecTypeUpdateTime": {
+          "meaning": "matSpecValueATMatSpecTypeUpdateTime"
+        },
+        "matSpecValueATMatSpecTypeUpdater": {
+          "meaning": "规格表更新人"
+        },
+        "matSpecValueATMatSpecTypeUpdaterId": {
+          "meaning": "规格表更新人ID"
+        },
+        "matSpecValueATMatSpecTypeUserCode": {
+          "meaning": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueATMatSpecTypeValueType": {
+          "meaning": "matSpecValueATMatSpecTypeValueType"
+        },
+        "matSpecValueATMatSpecTypeVarExtra1": {
+          "meaning": "规格表扩展1"
+        },
+        "matSpecValueATMatSpecTypeVarExtra2": {
+          "meaning": "规格表扩展2"
+        },
+        "matSpecValueATMatSpecTypeVarExtra3": {
+          "meaning": "规格表扩展3"
+        },
+        "matSpecValueATMatSpecTypeVarExtra4": {
+          "meaning": "规格表扩展4"
+        },
+        "matSpecValueATMatSpecTypeVarExtra5": {
+          "meaning": "规格表扩展5"
+        },
+        "matSpecValueATMatSpecTypeVersion": {
+          "meaning": "规格表版本号"
+        },
+        "matSpecValueATMatUnitApplicationId": {
+          "meaning": "规格表应用ID"
+        },
+        "matSpecValueATMatUnitAuditDate": {
+          "meaning": "matSpecValueATMatUnitAuditDate"
+        },
+        "matSpecValueATMatUnitAuditStatus": {
+          "meaning": "规格表审核状态"
+        },
+        "matSpecValueATMatUnitBizVersion": {
+          "meaning": "规格表业务自定义版本号"
+        },
+        "matSpecValueATMatUnitBriefName": {
+          "meaning": "规格表简称"
+        },
+        "matSpecValueATMatUnitBusDivisId": {
+          "meaning": "规格表事业部id"
+        },
+        "matSpecValueATMatUnitClazz": {
+          "meaning": "规格表子类 类名（表和类一一对应）"
+        },
+        "matSpecValueATMatUnitComment": {
+          "meaning": "规格表评论"
+        },
+        "matSpecValueATMatUnitCreateTime": {
+          "meaning": "matSpecValueATMatUnitCreateTime"
+        },
+        "matSpecValueATMatUnitCreator": {
+          "meaning": "规格表创建人"
+        },
+        "matSpecValueATMatUnitCreatorId": {
+          "meaning": "规格表创建人ID"
+        },
+        "matSpecValueATMatUnitDateExtra1": {
+          "meaning": "matSpecValueATMatUnitDateExtra1"
+        },
+        "matSpecValueATMatUnitDateExtra2": {
+          "meaning": "matSpecValueATMatUnitDateExtra2"
+        },
+        "matSpecValueATMatUnitDateExtra3": {
+          "meaning": "matSpecValueATMatUnitDateExtra3"
+        },
+        "matSpecValueATMatUnitDateExtra4": {
+          "meaning": "matSpecValueATMatUnitDateExtra4"
+        },
+        "matSpecValueATMatUnitDateExtra5": {
+          "meaning": "matSpecValueATMatUnitDateExtra5"
+        },
+        "matSpecValueATMatUnitDefaultType": {
+          "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecValueATMatUnitDescription": {
+          "meaning": "规格表描述"
+        },
+        "matSpecValueATMatUnitEngName": {
+          "meaning": "规格表英文名称"
+        },
+        "matSpecValueATMatUnitExtension": {
+          "meaning": "规格表扩展数据"
+        },
+        "matSpecValueATMatUnitExternalState": {
+          "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecValueATMatUnitFlags": {
+          "meaning": "规格表63位标志位"
+        },
+        "matSpecValueATMatUnitFromAuditDate": {
+          "meaning": "matSpecValueATMatUnitFromAuditDate"
+        },
+        "matSpecValueATMatUnitFromCreateTime": {
+          "meaning": "matSpecValueATMatUnitFromCreateTime"
+        },
+        "matSpecValueATMatUnitFromDateExtra1": {
+          "meaning": "matSpecValueATMatUnitFromDateExtra1"
+        },
+        "matSpecValueATMatUnitFromDateExtra2": {
+          "meaning": "matSpecValueATMatUnitFromDateExtra2"
+        },
+        "matSpecValueATMatUnitFromDateExtra3": {
+          "meaning": "matSpecValueATMatUnitFromDateExtra3"
+        },
+        "matSpecValueATMatUnitFromDateExtra4": {
+          "meaning": "matSpecValueATMatUnitFromDateExtra4"
+        },
+        "matSpecValueATMatUnitFromDateExtra5": {
+          "meaning": "matSpecValueATMatUnitFromDateExtra5"
+        },
+        "matSpecValueATMatUnitFromUpdateTime": {
+          "meaning": "matSpecValueATMatUnitFromUpdateTime"
+        },
+        "matSpecValueATMatUnitGroovyScript": {
+          "meaning": "规格表groovy脚本"
+        },
+        "matSpecValueATMatUnitGropeCode": {
+          "meaning": "规格表搜索码"
+        },
+        "matSpecValueATMatUnitId": {
+          "meaning": "matSpecValueATMatUnitId"
+        },
+        "matSpecValueATMatUnitInUsed": {
+          "meaning": "规格表是否被使用"
+        },
+        "matSpecValueATMatUnitIsBanned": {
+          "meaning": "规格表是否被禁用"
+        },
+        "matSpecValueATMatUnitIsDeleted": {
+          "meaning": "规格表是否被删除"
+        },
+        "matSpecValueATMatUnitIsMainFlow": {
+          "meaning": "规格表是否是主流程"
+        },
+        "matSpecValueATMatUnitIsolation": {
+          "meaning": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueATMatUnitJsScript": {
+          "meaning": "规格表js脚本"
+        },
+        "matSpecValueATMatUnitName": {
+          "meaning": "规格表智能节点名"
+        },
+        "matSpecValueATMatUnitNameCodeSearch": {
+          "meaning": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueATMatUnitNumberExtra1": {
+          "meaning": "规格表扩展数量1"
+        },
+        "matSpecValueATMatUnitNumberExtra2": {
+          "meaning": "规格表扩展数量2"
+        },
+        "matSpecValueATMatUnitNumberExtra3": {
+          "meaning": "规格表扩展数量3"
+        },
+        "matSpecValueATMatUnitNumberExtra4": {
+          "meaning": "规格表扩展数量4"
+        },
+        "matSpecValueATMatUnitNumberExtra5": {
+          "meaning": "规格表扩展数量5"
+        },
+        "matSpecValueATMatUnitParentId": {
+          "meaning": "规格表父节点ID"
+        },
+        "matSpecValueATMatUnitProcessInstanceId": {
+          "meaning": "规格表流程实例ID"
+        },
+        "matSpecValueATMatUnitSerialNumber": {
+          "meaning": "规格表顺序号"
+        },
+        "matSpecValueATMatUnitState": {
+          "meaning": "规格表通用状态"
+        },
+        "matSpecValueATMatUnitSystemCode": {
+          "meaning": "规格表系统编码"
+        },
+        "matSpecValueATMatUnitTaskNodeName": {
+          "meaning": "规格表任务节点名称"
+        },
+        "matSpecValueATMatUnitTenantId": {
+          "meaning": "matSpecValueATMatUnitTenantId"
+        },
+        "matSpecValueATMatUnitThirdPartyClass": {
+          "meaning": "规格表第三方分类"
+        },
+        "matSpecValueATMatUnitThirdPartyId": {
+          "meaning": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueATMatUnitThirdPartyName": {
+          "meaning": "规格表第三方名称"
+        },
+        "matSpecValueATMatUnitToAuditDate": {
+          "meaning": "matSpecValueATMatUnitToAuditDate"
+        },
+        "matSpecValueATMatUnitToCreateTime": {
+          "meaning": "matSpecValueATMatUnitToCreateTime"
+        },
+        "matSpecValueATMatUnitToDateExtra1": {
+          "meaning": "matSpecValueATMatUnitToDateExtra1"
+        },
+        "matSpecValueATMatUnitToDateExtra2": {
+          "meaning": "matSpecValueATMatUnitToDateExtra2"
+        },
+        "matSpecValueATMatUnitToDateExtra3": {
+          "meaning": "matSpecValueATMatUnitToDateExtra3"
+        },
+        "matSpecValueATMatUnitToDateExtra4": {
+          "meaning": "matSpecValueATMatUnitToDateExtra4"
+        },
+        "matSpecValueATMatUnitToDateExtra5": {
+          "meaning": "matSpecValueATMatUnitToDateExtra5"
+        },
+        "matSpecValueATMatUnitToUpdateTime": {
+          "meaning": "matSpecValueATMatUnitToUpdateTime"
+        },
+        "matSpecValueATMatUnitUpdateTime": {
+          "meaning": "matSpecValueATMatUnitUpdateTime"
+        },
+        "matSpecValueATMatUnitUpdater": {
+          "meaning": "规格表更新人"
+        },
+        "matSpecValueATMatUnitUpdaterId": {
+          "meaning": "规格表更新人ID"
+        },
+        "matSpecValueATMatUnitUserCode": {
+          "meaning": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueATMatUnitVarExtra1": {
+          "meaning": "规格表扩展1"
+        },
+        "matSpecValueATMatUnitVarExtra2": {
+          "meaning": "规格表扩展2"
+        },
+        "matSpecValueATMatUnitVarExtra3": {
+          "meaning": "规格表扩展3"
+        },
+        "matSpecValueATMatUnitVarExtra4": {
+          "meaning": "规格表扩展4"
+        },
+        "matSpecValueATMatUnitVarExtra5": {
+          "meaning": "规格表扩展5"
+        },
+        "matSpecValueATMatUnitVersion": {
+          "meaning": "规格表版本号"
+        },
+        "matSpecValueApplicationId": {
+          "meaning": "规格表应用ID"
+        },
+        "matSpecValueAuditDate": {
+          "meaning": "规格表审核时间"
+        },
+        "matSpecValueAuditStatus": {
+          "meaning": "规格表审核状态"
+        },
+        "matSpecValueBizVersion": {
+          "meaning": "规格表业务自定义版本号"
+        },
+        "matSpecValueBriefName": {
+          "meaning": "规格表简称"
+        },
+        "matSpecValueBusDivisId": {
+          "meaning": "规格表事业部id"
+        },
+        "matSpecValueClazz": {
+          "meaning": "规格表子类 类名（表和类一一对应）"
+        },
+        "matSpecValueComment": {
+          "meaning": "规格表评论"
+        },
+        "matSpecValueCreateTime": {
+          "meaning": "规格表创建时间"
+        },
+        "matSpecValueCreator": {
+          "meaning": "规格表创建人"
+        },
+        "matSpecValueCreatorId": {
+          "meaning": "规格表创建人ID"
+        },
+        "matSpecValueDateExtra1": {
+          "meaning": "规格表扩展时间1"
+        },
+        "matSpecValueDateExtra2": {
+          "meaning": "规格表扩展时间2"
+        },
+        "matSpecValueDateExtra3": {
+          "meaning": "规格表扩展时间3"
+        },
+        "matSpecValueDateExtra4": {
+          "meaning": "规格表扩展时间4"
+        },
+        "matSpecValueDateExtra5": {
+          "meaning": "规格表扩展时间5"
+        },
+        "matSpecValueDefaultType": {
+          "meaning": "规格表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matSpecValueDescription": {
+          "meaning": "规格表描述"
+        },
+        "matSpecValueEngName": {
+          "meaning": "规格表英文名称"
+        },
+        "matSpecValueExtension": {
+          "meaning": "规格表扩展数据"
+        },
+        "matSpecValueExternalState": {
+          "meaning": "规格表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matSpecValueFlags": {
+          "meaning": "规格表63位标志位"
+        },
+        "matSpecValueFromAuditDate": {
+          "meaning": "matSpecValueFromAuditDate"
+        },
+        "matSpecValueFromCreateTime": {
+          "meaning": "matSpecValueFromCreateTime"
+        },
+        "matSpecValueFromDateExtra1": {
+          "meaning": "matSpecValueFromDateExtra1"
+        },
+        "matSpecValueFromDateExtra2": {
+          "meaning": "matSpecValueFromDateExtra2"
+        },
+        "matSpecValueFromDateExtra3": {
+          "meaning": "matSpecValueFromDateExtra3"
+        },
+        "matSpecValueFromDateExtra4": {
+          "meaning": "matSpecValueFromDateExtra4"
+        },
+        "matSpecValueFromDateExtra5": {
+          "meaning": "matSpecValueFromDateExtra5"
+        },
+        "matSpecValueFromUpdateTime": {
+          "meaning": "matSpecValueFromUpdateTime"
+        },
+        "matSpecValueGroovyScript": {
+          "meaning": "规格表groovy脚本"
+        },
+        "matSpecValueGropeCode": {
+          "meaning": "规格表搜索码"
+        },
+        "matSpecValueId": {
+          "meaning": "规格表主键ID",
+          "is_primary": true
+        },
+        "matSpecValueInUsed": {
+          "meaning": "规格表是否被使用"
+        },
+        "matSpecValueIsBanned": {
+          "meaning": "规格表是否被禁用"
+        },
+        "matSpecValueIsDeleted": {
+          "meaning": "规格表是否被删除"
+        },
+        "matSpecValueIsMainFlow": {
+          "meaning": "规格表是否是主流程"
+        },
+        "matSpecValueIsParent": {
+          "meaning": "matSpecValueIsParent"
+        },
+        "matSpecValueIsStatisticsSpecificationType": {
+          "meaning": "matSpecValueIsStatisticsSpecificationType"
+        },
+        "matSpecValueIsolation": {
+          "meaning": "规格表智能节点数据隔离标识"
+        },
+        "matSpecValueJsScript": {
+          "meaning": "规格表js脚本"
+        },
+        "matSpecValueMaterialId": {
+          "meaning": "matSpecValueMaterialId"
+        },
+        "matSpecValueName": {
+          "meaning": "规格表智能节点名"
+        },
+        "matSpecValueNameCodeSearch": {
+          "meaning": "规格表name、user_code模糊搜索"
+        },
+        "matSpecValueNumberExtra1": {
+          "meaning": "规格表扩展数量1"
+        },
+        "matSpecValueNumberExtra2": {
+          "meaning": "规格表扩展数量2"
+        },
+        "matSpecValueNumberExtra3": {
+          "meaning": "规格表扩展数量3"
+        },
+        "matSpecValueNumberExtra4": {
+          "meaning": "规格表扩展数量4"
+        },
+        "matSpecValueNumberExtra5": {
+          "meaning": "规格表扩展数量5"
+        },
+        "matSpecValueParentId": {
+          "meaning": "规格表父节点ID"
+        },
+        "matSpecValueProcessInstanceId": {
+          "meaning": "规格表流程实例ID"
+        },
+        "matSpecValueSerialNumber": {
+          "meaning": "规格表顺序号"
+        },
+        "matSpecValueSpecificationTypeId": {
+          "meaning": "matSpecValueSpecificationTypeId"
+        },
+        "matSpecValueState": {
+          "meaning": "规格表通用状态"
+        },
+        "matSpecValueSystemCode": {
+          "meaning": "规格表系统编码"
+        },
+        "matSpecValueTaskNodeName": {
+          "meaning": "规格表任务节点名称"
+        },
+        "matSpecValueTenantId": {
+          "meaning": "matSpecValueTenantId"
+        },
+        "matSpecValueThirdPartyClass": {
+          "meaning": "规格表第三方分类"
+        },
+        "matSpecValueThirdPartyId": {
+          "meaning": "规格表第三方系统中的唯一ID"
+        },
+        "matSpecValueThirdPartyName": {
+          "meaning": "规格表第三方名称"
+        },
+        "matSpecValueToAuditDate": {
+          "meaning": "matSpecValueToAuditDate"
+        },
+        "matSpecValueToCreateTime": {
+          "meaning": "matSpecValueToCreateTime"
+        },
+        "matSpecValueToDateExtra1": {
+          "meaning": "matSpecValueToDateExtra1"
+        },
+        "matSpecValueToDateExtra2": {
+          "meaning": "matSpecValueToDateExtra2"
+        },
+        "matSpecValueToDateExtra3": {
+          "meaning": "matSpecValueToDateExtra3"
+        },
+        "matSpecValueToDateExtra4": {
+          "meaning": "matSpecValueToDateExtra4"
+        },
+        "matSpecValueToDateExtra5": {
+          "meaning": "matSpecValueToDateExtra5"
+        },
+        "matSpecValueToUpdateTime": {
+          "meaning": "matSpecValueToUpdateTime"
+        },
+        "matSpecValueUnitId": {
+          "meaning": "matSpecValueUnitId"
+        },
+        "matSpecValueUpdateTime": {
+          "meaning": "规格表更新时间"
+        },
+        "matSpecValueUpdater": {
+          "meaning": "规格表更新人"
+        },
+        "matSpecValueUpdaterId": {
+          "meaning": "规格表更新人ID"
+        },
+        "matSpecValueUserCode": {
+          "meaning": "规格表智能节点的唯一编码"
+        },
+        "matSpecValueVarExtra1": {
+          "meaning": "规格表扩展1"
+        },
+        "matSpecValueVarExtra2": {
+          "meaning": "规格表扩展2"
+        },
+        "matSpecValueVarExtra3": {
+          "meaning": "规格表扩展3"
+        },
+        "matSpecValueVarExtra4": {
+          "meaning": "规格表扩展4"
+        },
+        "matSpecValueVarExtra5": {
+          "meaning": "规格表扩展5"
+        },
+        "matSpecValueVersion": {
+          "meaning": "规格表版本号"
+        }
+      }
+    }

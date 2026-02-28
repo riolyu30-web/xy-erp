@@ -1,0 +1,374 @@
+{
+  "api_name" : "/mat-out-apy/findList",
+  "table_name" : "物料出库申请",
+  "request" : {
+    "matOutApyClazz" : "MAT_OUT_APY"
+  },
+  "mainTabClazz" : "MAT_OUT_APY",
+  "response" : {
+    "matOutApyActualTimeRequired" : {
+      "meaning" : "物料出库申请实际需时(小时)"
+    },
+    "matOutApyAdjustmentTimeRequired" : {
+      "meaning" : "物料出库申请调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matOutApyApplicationId" : {
+      "meaning" : "物料出库申请应用ID"
+    },
+    "matOutApyApplyReason" : {
+      "meaning" : "物料出库申请申请原因"
+    },
+    "matOutApyAuditDate" : {
+      "meaning" : "物料出库申请审核时间"
+    },
+    "matOutApyAuditStatus" : {
+      "meaning" : "物料出库申请审核状态"
+    },
+    "matOutApyAvailableScheduleId" : {
+      "meaning" : "物料出库申请可用日程id"
+    },
+    "matOutApyBeginTime" : {
+      "meaning" : "物料出库申请开始时间"
+    },
+    "matOutApyBizVersion" : {
+      "meaning" : "物料出库申请业务自定义版本号"
+    },
+    "matOutApyBriefName" : {
+      "meaning" : "物料出库申请简称"
+    },
+    "matOutApyBusDivisId" : {
+      "meaning" : "物料出库申请事业部id"
+    },
+    "matOutApyClazz" : {
+      "meaning" : "物料出库申请子类 类名（表和类一一对应）"
+    },
+    "matOutApyClosedReason" : {
+      "meaning" : "物料出库申请结案原因"
+    },
+    "matOutApyClosedStatus" : {
+      "meaning" : "物料出库申请结案状态"
+    },
+    "matOutApyComment" : {
+      "meaning" : "物料出库申请评论"
+    },
+    "matOutApyCompleteQuantity" : {
+      "meaning" : "物料出库申请完成数量"
+    },
+    "matOutApyCompleteStatus" : {
+      "meaning" : "物料出库申请完成状态"
+    },
+    "matOutApyCreateTime" : {
+      "meaning" : "物料出库申请创建时间"
+    },
+    "matOutApyCreator" : {
+      "meaning" : "物料出库申请创建人"
+    },
+    "matOutApyCreatorId" : {
+      "meaning" : "物料出库申请创建人ID"
+    },
+    "matOutApyDateExtra1" : {
+      "meaning" : "物料出库申请扩展时间1"
+    },
+    "matOutApyDateExtra2" : {
+      "meaning" : "物料出库申请扩展时间2"
+    },
+    "matOutApyDateExtra3" : {
+      "meaning" : "物料出库申请扩展时间3"
+    },
+    "matOutApyDateExtra4" : {
+      "meaning" : "物料出库申请扩展时间4"
+    },
+    "matOutApyDateExtra5" : {
+      "meaning" : "物料出库申请扩展时间5"
+    },
+    "matOutApyDefaultType" : {
+      "meaning" : "物料出库申请智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matOutApyDeliveryDate" : {
+      "meaning" : "物料出库申请交货日期"
+    },
+    "matOutApyDescription" : {
+      "meaning" : "物料出库申请描述"
+    },
+    "matOutApyEndTime" : {
+      "meaning" : "物料出库申请结束时间"
+    },
+    "matOutApyEndTimeRequired" : {
+      "meaning" : "物料出库申请最后需时(小时)"
+    },
+    "matOutApyEngName" : {
+      "meaning" : "物料出库申请英文名称"
+    },
+    "matOutApyEquipmentId" : {
+      "meaning" : "物料出库申请设备id"
+    },
+    "matOutApyExchangeRateId" : {
+      "meaning" : "物料出库申请币种汇率id"
+    },
+    "matOutApyExtension" : {
+      "meaning" : "物料出库申请扩展数据"
+    },
+    "matOutApyExternalState" : {
+      "meaning" : "物料出库申请上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matOutApyFilterClazz" : {
+      "meaning" : "物料出库申请冗余字段用于筛选"
+    },
+    "matOutApyFlags" : {
+      "meaning" : "物料出库申请63位标志位"
+    },
+    "matOutApyFromAuditDate" : {
+      "meaning" : "matOutApyFromAuditDate"
+    },
+    "matOutApyFromBeginTime" : {
+      "meaning" : "matOutApyFromBeginTime"
+    },
+    "matOutApyFromCreateTime" : {
+      "meaning" : "matOutApyFromCreateTime"
+    },
+    "matOutApyFromDateExtra1" : {
+      "meaning" : "matOutApyFromDateExtra1"
+    },
+    "matOutApyFromDateExtra2" : {
+      "meaning" : "matOutApyFromDateExtra2"
+    },
+    "matOutApyFromDateExtra3" : {
+      "meaning" : "matOutApyFromDateExtra3"
+    },
+    "matOutApyFromDateExtra4" : {
+      "meaning" : "matOutApyFromDateExtra4"
+    },
+    "matOutApyFromDateExtra5" : {
+      "meaning" : "matOutApyFromDateExtra5"
+    },
+    "matOutApyFromDeliveryDate" : {
+      "meaning" : "matOutApyFromDeliveryDate"
+    },
+    "matOutApyFromEndTime" : {
+      "meaning" : "matOutApyFromEndTime"
+    },
+    "matOutApyFromReceiptDate" : {
+      "meaning" : "matOutApyFromReceiptDate"
+    },
+    "matOutApyFromUpdateTime" : {
+      "meaning" : "matOutApyFromUpdateTime"
+    },
+    "matOutApyFscType" : {
+      "meaning" : "物料出库申请FSC声明"
+    },
+    "matOutApyGenerativePeople" : {
+      "meaning" : "物料出库申请下发人"
+    },
+    "matOutApyGenerativeState" : {
+      "meaning" : "物料出库申请下发状态"
+    },
+    "matOutApyGroovyScript" : {
+      "meaning" : "物料出库申请groovy脚本"
+    },
+    "matOutApyGropeCode" : {
+      "meaning" : "物料出库申请搜索码"
+    },
+    "matOutApyId" : {
+      "meaning" : "物料出库申请主键id",
+      "is_primary" : true
+    },
+    "matOutApyInUsed" : {
+      "meaning" : "物料出库申请是否被使用"
+    },
+    "matOutApyInvTypeTaxRateId" : {
+      "meaning" : "物料出库申请发票税率id"
+    },
+    "matOutApyIsBanned" : {
+      "meaning" : "物料出库申请是否被禁用"
+    },
+    "matOutApyIsDeleted" : {
+      "meaning" : "物料出库申请是否被删除"
+    },
+    "matOutApyIsLeaf" : {
+      "meaning" : "物料出库申请是否叶子节点"
+    },
+    "matOutApyIsMainFlow" : {
+      "meaning" : "物料出库申请是否是主流程"
+    },
+    "matOutApyIsManualModificationDate" : {
+      "meaning" : "物料出库申请是否手动修改计划生产时间"
+    },
+    "matOutApyIsolation" : {
+      "meaning" : "物料出库申请智能节点数据隔离标识"
+    },
+    "matOutApyJsScript" : {
+      "meaning" : "物料出库申请js脚本"
+    },
+    "matOutApyMaterialId" : {
+      "meaning" : "物料出库申请物料id"
+    },
+    "matOutApyName" : {
+      "meaning" : "物料出库申请智能节点名"
+    },
+    "matOutApyNameCodeSearch" : {
+      "meaning" : "物料出库申请name、user_code模糊搜索"
+    },
+    "matOutApyNumberExtra1" : {
+      "meaning" : "物料出库申请扩展数量1"
+    },
+    "matOutApyNumberExtra2" : {
+      "meaning" : "物料出库申请扩展数量2"
+    },
+    "matOutApyNumberExtra3" : {
+      "meaning" : "物料出库申请扩展数量3"
+    },
+    "matOutApyNumberExtra4" : {
+      "meaning" : "物料出库申请扩展数量4"
+    },
+    "matOutApyNumberExtra5" : {
+      "meaning" : "物料出库申请扩展数量5"
+    },
+    "matOutApyParentId" : {
+      "meaning" : "物料出库申请父节点ID"
+    },
+    "matOutApyPlannedOutputQuantity" : {
+      "meaning" : "物料出库申请计划产出数量"
+    },
+    "matOutApyPlannedTimeRequired" : {
+      "meaning" : "物料出库申请计划需时(小时)"
+    },
+    "matOutApyPrintTimes" : {
+      "meaning" : "物料出库申请打印次数"
+    },
+    "matOutApyPriority" : {
+      "meaning" : "物料出库申请优先级"
+    },
+    "matOutApyProcessInstanceId" : {
+      "meaning" : "物料出库申请流程实例ID"
+    },
+    "matOutApyProductionProcessesTypeId" : {
+      "meaning" : "物料出库申请工序类型ID"
+    },
+    "matOutApyProductionShiftId" : {
+      "meaning" : "物料出库申请生产班次ID"
+    },
+    "matOutApyQuantity" : {
+      "meaning" : "物料出库申请任务数量"
+    },
+    "matOutApyReceiptDate" : {
+      "meaning" : "物料出库申请单据日期"
+    },
+    "matOutApyReceiptType" : {
+      "meaning" : "物料出库申请单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matOutApyRelatedTasksId" : {
+      "meaning" : "物料出库申请关联任务id"
+    },
+    "matOutApyRequisitionDepartId" : {
+      "meaning" : "物料出库申请领料部门id"
+    },
+    "matOutApyRequisitionStaffId" : {
+      "meaning" : "物料出库申请领料人id"
+    },
+    "matOutApySerialNumber" : {
+      "meaning" : "物料出库申请顺序号"
+    },
+    "matOutApySource" : {
+      "meaning" : "物料出库申请源"
+    },
+    "matOutApySourceType" : {
+      "meaning" : "物料出库申请来源类型"
+    },
+    "matOutApyState" : {
+      "meaning" : "物料出库申请通用状态"
+    },
+    "matOutApySystemCode" : {
+      "meaning" : "物料出库申请系统编码"
+    },
+    "matOutApyTarget" : {
+      "meaning" : "物料出库申请目标"
+    },
+    "matOutApyTaskNodeName" : {
+      "meaning" : "物料出库申请任务节点名称"
+    },
+    "matOutApyTeamId" : {
+      "meaning" : "物料出库申请班组id"
+    },
+    "matOutApyTenantId" : {
+      "meaning" : "物料出库申请租户id"
+    },
+    "matOutApyThirdPartyClass" : {
+      "meaning" : "物料出库申请第三方分类"
+    },
+    "matOutApyThirdPartyId" : {
+      "meaning" : "物料出库申请第三方系统中的唯一ID"
+    },
+    "matOutApyThirdPartyName" : {
+      "meaning" : "物料出库申请第三方名称"
+    },
+    "matOutApyToAuditDate" : {
+      "meaning" : "matOutApyToAuditDate"
+    },
+    "matOutApyToBeginTime" : {
+      "meaning" : "matOutApyToBeginTime"
+    },
+    "matOutApyToCreateTime" : {
+      "meaning" : "matOutApyToCreateTime"
+    },
+    "matOutApyToDateExtra1" : {
+      "meaning" : "matOutApyToDateExtra1"
+    },
+    "matOutApyToDateExtra2" : {
+      "meaning" : "matOutApyToDateExtra2"
+    },
+    "matOutApyToDateExtra3" : {
+      "meaning" : "matOutApyToDateExtra3"
+    },
+    "matOutApyToDateExtra4" : {
+      "meaning" : "matOutApyToDateExtra4"
+    },
+    "matOutApyToDateExtra5" : {
+      "meaning" : "matOutApyToDateExtra5"
+    },
+    "matOutApyToDeliveryDate" : {
+      "meaning" : "matOutApyToDeliveryDate"
+    },
+    "matOutApyToEndTime" : {
+      "meaning" : "matOutApyToEndTime"
+    },
+    "matOutApyToReceiptDate" : {
+      "meaning" : "matOutApyToReceiptDate"
+    },
+    "matOutApyToUpdateTime" : {
+      "meaning" : "matOutApyToUpdateTime"
+    },
+    "matOutApyUnitCode" : {
+      "meaning" : "物料出库申请单位id"
+    },
+    "matOutApyUpdateTime" : {
+      "meaning" : "物料出库申请更新时间"
+    },
+    "matOutApyUpdater" : {
+      "meaning" : "物料出库申请更新人"
+    },
+    "matOutApyUpdaterId" : {
+      "meaning" : "物料出库申请更新人ID"
+    },
+    "matOutApyUserCode" : {
+      "meaning" : "物料出库申请智能节点的唯一编码"
+    },
+    "matOutApyVarExtra1" : {
+      "meaning" : "物料出库申请扩展1"
+    },
+    "matOutApyVarExtra2" : {
+      "meaning" : "物料出库申请扩展2"
+    },
+    "matOutApyVarExtra3" : {
+      "meaning" : "物料出库申请扩展3"
+    },
+    "matOutApyVarExtra4" : {
+      "meaning" : "物料出库申请扩展4"
+    },
+    "matOutApyVarExtra5" : {
+      "meaning" : "物料出库申请扩展5"
+    },
+    "matOutApyVersion" : {
+      "meaning" : "物料出库申请版本号"
+    }
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "api_name" : "/warehouse-proof-det/findList",
+  "table_name" : "仓凭证明细表（仓单明细表）",
+  "request" : {
+    "warehouseProofDetClazz" : "WAREHOUSE_PROOF_DET"
+  },
+  "mainTabClazz" : "WAREHOUSE_PROOF_DET",
+  "response" : {
+    "warehouseProofDetActualTimeRequired" : {
+      "meaning" : "仓凭证明细表（仓单明细表）实际需时(小时)"
+    },
+    "warehouseProofDetAdjustmentTimeRequired" : {
+      "meaning" : "仓凭证明细表（仓单明细表）调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "warehouseProofDetApplicationId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）应用ID"
+    },
+    "warehouseProofDetAuditDate" : {
+      "meaning" : "仓凭证明细表（仓单明细表）审核时间"
+    },
+    "warehouseProofDetAuditStatus" : {
+      "meaning" : "仓凭证明细表（仓单明细表）审核状态"
+    },
+    "warehouseProofDetAvailableScheduleId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）可用日程id"
+    },
+    "warehouseProofDetBeginTime" : {
+      "meaning" : "仓凭证明细表（仓单明细表）开始时间"
+    },
+    "warehouseProofDetBizVersion" : {
+      "meaning" : "仓凭证明细表（仓单明细表）业务自定义版本号"
+    },
+    "warehouseProofDetBriefName" : {
+      "meaning" : "仓凭证明细表（仓单明细表）简称"
+    },
+    "warehouseProofDetBusDivisId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）事业部id"
+    },
+    "warehouseProofDetClazz" : {
+      "meaning" : "仓凭证明细表（仓单明细表）子类 类名（表和类一一对应）"
+    },
+    "warehouseProofDetClosedReason" : {
+      "meaning" : "仓凭证明细表（仓单明细表）结案原因"
+    },
+    "warehouseProofDetClosedStatus" : {
+      "meaning" : "仓凭证明细表（仓单明细表）结案状态"
+    },
+    "warehouseProofDetComment" : {
+      "meaning" : "仓凭证明细表（仓单明细表）评论"
+    },
+    "warehouseProofDetCompleteQuantity" : {
+      "meaning" : "仓凭证明细表（仓单明细表）完成数量"
+    },
+    "warehouseProofDetCompleteStatus" : {
+      "meaning" : "仓凭证明细表（仓单明细表）完成状态"
+    },
+    "warehouseProofDetCreateTime" : {
+      "meaning" : "仓凭证明细表（仓单明细表）创建时间"
+    },
+    "warehouseProofDetCreator" : {
+      "meaning" : "仓凭证明细表（仓单明细表）创建人"
+    },
+    "warehouseProofDetCreatorId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）创建人ID"
+    },
+    "warehouseProofDetDateExtra1" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展时间1"
+    },
+    "warehouseProofDetDateExtra2" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展时间2"
+    },
+    "warehouseProofDetDateExtra3" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展时间3"
+    },
+    "warehouseProofDetDateExtra4" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展时间4"
+    },
+    "warehouseProofDetDateExtra5" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展时间5"
+    },
+    "warehouseProofDetDefaultType" : {
+      "meaning" : "仓凭证明细表（仓单明细表）智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "warehouseProofDetDeliveryDate" : {
+      "meaning" : "仓凭证明细表（仓单明细表）交货日期"
+    },
+    "warehouseProofDetDescription" : {
+      "meaning" : "仓凭证明细表（仓单明细表）描述"
+    },
+    "warehouseProofDetEndTime" : {
+      "meaning" : "仓凭证明细表（仓单明细表）结束时间"
+    },
+    "warehouseProofDetEndTimeRequired" : {
+      "meaning" : "仓凭证明细表（仓单明细表）最后需时(小时)"
+    },
+    "warehouseProofDetEngName" : {
+      "meaning" : "仓凭证明细表（仓单明细表）英文名称"
+    },
+    "warehouseProofDetEquipmentId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）设备id"
+    },
+    "warehouseProofDetExchangeRateId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）币种汇率id"
+    },
+    "warehouseProofDetExtension" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数据"
+    },
+    "warehouseProofDetExternalState" : {
+      "meaning" : "仓凭证明细表（仓单明细表）上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "warehouseProofDetFilterClazz" : {
+      "meaning" : "仓凭证明细表（仓单明细表）冗余字段用于筛选"
+    },
+    "warehouseProofDetFlags" : {
+      "meaning" : "仓凭证明细表（仓单明细表）63位标志位"
+    },
+    "warehouseProofDetFromAuditDate" : {
+      "meaning" : "warehouseProofDetFromAuditDate"
+    },
+    "warehouseProofDetFromBeginTime" : {
+      "meaning" : "warehouseProofDetFromBeginTime"
+    },
+    "warehouseProofDetFromCreateTime" : {
+      "meaning" : "warehouseProofDetFromCreateTime"
+    },
+    "warehouseProofDetFromDateExtra1" : {
+      "meaning" : "warehouseProofDetFromDateExtra1"
+    },
+    "warehouseProofDetFromDateExtra2" : {
+      "meaning" : "warehouseProofDetFromDateExtra2"
+    },
+    "warehouseProofDetFromDateExtra3" : {
+      "meaning" : "warehouseProofDetFromDateExtra3"
+    },
+    "warehouseProofDetFromDateExtra4" : {
+      "meaning" : "warehouseProofDetFromDateExtra4"
+    },
+    "warehouseProofDetFromDateExtra5" : {
+      "meaning" : "warehouseProofDetFromDateExtra5"
+    },
+    "warehouseProofDetFromDeliveryDate" : {
+      "meaning" : "warehouseProofDetFromDeliveryDate"
+    },
+    "warehouseProofDetFromEndTime" : {
+      "meaning" : "warehouseProofDetFromEndTime"
+    },
+    "warehouseProofDetFromReceiptDate" : {
+      "meaning" : "warehouseProofDetFromReceiptDate"
+    },
+    "warehouseProofDetFromUpdateTime" : {
+      "meaning" : "warehouseProofDetFromUpdateTime"
+    },
+    "warehouseProofDetFscType" : {
+      "meaning" : "仓凭证明细表（仓单明细表）FSC声明"
+    },
+    "warehouseProofDetGenerativePeople" : {
+      "meaning" : "仓凭证明细表（仓单明细表）下发人"
+    },
+    "warehouseProofDetGenerativeState" : {
+      "meaning" : "仓凭证明细表（仓单明细表）下发状态"
+    },
+    "warehouseProofDetGoodsId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）货（包）id"
+    },
+    "warehouseProofDetGroovyScript" : {
+      "meaning" : "仓凭证明细表（仓单明细表）groovy脚本"
+    },
+    "warehouseProofDetGropeCode" : {
+      "meaning" : "仓凭证明细表（仓单明细表）搜索码"
+    },
+    "warehouseProofDetId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）pk",
+      "is_primary" : true
+    },
+    "warehouseProofDetInUsed" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否被使用"
+    },
+    "warehouseProofDetInvTypeTaxRateId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）发票税率id"
+    },
+    "warehouseProofDetIsBanned" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否被禁用"
+    },
+    "warehouseProofDetIsDeleted" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否被删除"
+    },
+    "warehouseProofDetIsLeaf" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否叶子节点"
+    },
+    "warehouseProofDetIsMainFlow" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否是主流程"
+    },
+    "warehouseProofDetIsManualModificationDate" : {
+      "meaning" : "仓凭证明细表（仓单明细表）是否手动修改计划生产时间"
+    },
+    "warehouseProofDetIsolation" : {
+      "meaning" : "仓凭证明细表（仓单明细表）智能节点数据隔离标识"
+    },
+    "warehouseProofDetJsScript" : {
+      "meaning" : "仓凭证明细表（仓单明细表）js脚本"
+    },
+    "warehouseProofDetLocalCurrencyTotalAmount" : {
+      "meaning" : "仓凭证明细表（仓单明细表）本币总金额"
+    },
+    "warehouseProofDetLocalCurrencyUnitPrice" : {
+      "meaning" : "仓凭证明细表（仓单明细表）本币单价"
+    },
+    "warehouseProofDetMatBatchId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）物料批次id"
+    },
+    "warehouseProofDetMaterialId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）物料id"
+    },
+    "warehouseProofDetName" : {
+      "meaning" : "仓凭证明细表（仓单明细表）智能节点名"
+    },
+    "warehouseProofDetNameCodeSearch" : {
+      "meaning" : "仓凭证明细表（仓单明细表）name、user_code模糊搜索"
+    },
+    "warehouseProofDetNumberExtra1" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数量1"
+    },
+    "warehouseProofDetNumberExtra2" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数量2"
+    },
+    "warehouseProofDetNumberExtra3" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数量3"
+    },
+    "warehouseProofDetNumberExtra4" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数量4"
+    },
+    "warehouseProofDetNumberExtra5" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展数量5"
+    },
+    "warehouseProofDetParentId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）父节点ID"
+    },
+    "warehouseProofDetPlannedOutputQuantity" : {
+      "meaning" : "仓凭证明细表（仓单明细表）计划产出数量"
+    },
+    "warehouseProofDetPlannedTimeRequired" : {
+      "meaning" : "仓凭证明细表（仓单明细表）计划需时(小时)"
+    },
+    "warehouseProofDetPrintTimes" : {
+      "meaning" : "仓凭证明细表（仓单明细表）打印次数"
+    },
+    "warehouseProofDetPriority" : {
+      "meaning" : "仓凭证明细表（仓单明细表）优先级"
+    },
+    "warehouseProofDetProcessInstanceId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）流程实例ID"
+    },
+    "warehouseProofDetProductionProcessesTypeId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）工序类型ID"
+    },
+    "warehouseProofDetProductionShiftId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）生产班次ID"
+    },
+    "warehouseProofDetQuantity" : {
+      "meaning" : "仓凭证明细表（仓单明细表）任务数量"
+    },
+    "warehouseProofDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）报价单价（含税）"
+    },
+    "warehouseProofDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）报价单价（不含税）"
+    },
+    "warehouseProofDetReceiptDate" : {
+      "meaning" : "仓凭证明细表（仓单明细表）单据日期"
+    },
+    "warehouseProofDetReceiptType" : {
+      "meaning" : "仓凭证明细表（仓单明细表）单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "warehouseProofDetRelatedTasksId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）关联任务id"
+    },
+    "warehouseProofDetSerialNumber" : {
+      "meaning" : "仓凭证明细表（仓单明细表）顺序号"
+    },
+    "warehouseProofDetSettlementTotalAmount" : {
+      "meaning" : "仓凭证明细表（仓单明细表）结算总金额"
+    },
+    "warehouseProofDetSettlementUnitPrice" : {
+      "meaning" : "仓凭证明细表（仓单明细表）结算单价"
+    },
+    "warehouseProofDetSource" : {
+      "meaning" : "仓凭证明细表（仓单明细表）源"
+    },
+    "warehouseProofDetSourceType" : {
+      "meaning" : "仓凭证明细表（仓单明细表）来源类型"
+    },
+    "warehouseProofDetState" : {
+      "meaning" : "仓凭证明细表（仓单明细表）通用状态"
+    },
+    "warehouseProofDetSystemCode" : {
+      "meaning" : "仓凭证明细表（仓单明细表）系统编码"
+    },
+    "warehouseProofDetTarget" : {
+      "meaning" : "仓凭证明细表（仓单明细表）目标"
+    },
+    "warehouseProofDetTaskNodeName" : {
+      "meaning" : "仓凭证明细表（仓单明细表）任务节点名称"
+    },
+    "warehouseProofDetTaskNodeType" : {
+      "meaning" : "仓凭证明细表（仓单明细表）任务节点类型"
+    },
+    "warehouseProofDetTenantId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）租户id"
+    },
+    "warehouseProofDetThirdPartyClass" : {
+      "meaning" : "仓凭证明细表（仓单明细表）第三方分类"
+    },
+    "warehouseProofDetThirdPartyId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）第三方系统中的唯一ID"
+    },
+    "warehouseProofDetThirdPartyName" : {
+      "meaning" : "仓凭证明细表（仓单明细表）第三方名称"
+    },
+    "warehouseProofDetToAuditDate" : {
+      "meaning" : "warehouseProofDetToAuditDate"
+    },
+    "warehouseProofDetToBeginTime" : {
+      "meaning" : "warehouseProofDetToBeginTime"
+    },
+    "warehouseProofDetToCreateTime" : {
+      "meaning" : "warehouseProofDetToCreateTime"
+    },
+    "warehouseProofDetToDateExtra1" : {
+      "meaning" : "warehouseProofDetToDateExtra1"
+    },
+    "warehouseProofDetToDateExtra2" : {
+      "meaning" : "warehouseProofDetToDateExtra2"
+    },
+    "warehouseProofDetToDateExtra3" : {
+      "meaning" : "warehouseProofDetToDateExtra3"
+    },
+    "warehouseProofDetToDateExtra4" : {
+      "meaning" : "warehouseProofDetToDateExtra4"
+    },
+    "warehouseProofDetToDateExtra5" : {
+      "meaning" : "warehouseProofDetToDateExtra5"
+    },
+    "warehouseProofDetToDeliveryDate" : {
+      "meaning" : "warehouseProofDetToDeliveryDate"
+    },
+    "warehouseProofDetToEndTime" : {
+      "meaning" : "warehouseProofDetToEndTime"
+    },
+    "warehouseProofDetToReceiptDate" : {
+      "meaning" : "warehouseProofDetToReceiptDate"
+    },
+    "warehouseProofDetToUpdateTime" : {
+      "meaning" : "warehouseProofDetToUpdateTime"
+    },
+    "warehouseProofDetTotalAmount" : {
+      "meaning" : "仓凭证明细表（仓单明细表）总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "warehouseProofDetTotalAmountIncludingTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）总金额（含税）"
+    },
+    "warehouseProofDetTotalAmountWithoutTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）总金额（不含税）"
+    },
+    "warehouseProofDetUnitCode" : {
+      "meaning" : "仓凭证明细表（仓单明细表）单位id"
+    },
+    "warehouseProofDetUnitPriceIncludingTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）单价（含税）"
+    },
+    "warehouseProofDetUnitPriceWithoutTax" : {
+      "meaning" : "仓凭证明细表（仓单明细表）单价（不含税）"
+    },
+    "warehouseProofDetUpdateTime" : {
+      "meaning" : "仓凭证明细表（仓单明细表）更新时间"
+    },
+    "warehouseProofDetUpdater" : {
+      "meaning" : "仓凭证明细表（仓单明细表）更新人"
+    },
+    "warehouseProofDetUpdaterId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）更新人ID"
+    },
+    "warehouseProofDetUserCode" : {
+      "meaning" : "仓凭证明细表（仓单明细表）智能节点的唯一编码"
+    },
+    "warehouseProofDetVarExtra1" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展1"
+    },
+    "warehouseProofDetVarExtra2" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展2"
+    },
+    "warehouseProofDetVarExtra3" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展3"
+    },
+    "warehouseProofDetVarExtra4" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展4"
+    },
+    "warehouseProofDetVarExtra5" : {
+      "meaning" : "仓凭证明细表（仓单明细表）扩展5"
+    },
+    "warehouseProofDetVersion" : {
+      "meaning" : "仓凭证明细表（仓单明细表）版本号"
+    },
+    "warehouseProofDetWarehouseSpaceId" : {
+      "meaning" : "仓凭证明细表（仓单明细表）仓空间id"
+    }
+  }
+}

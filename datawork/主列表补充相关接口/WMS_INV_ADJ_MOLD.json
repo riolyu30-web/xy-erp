@@ -1,0 +1,368 @@
+{
+  "api_name" : "/wms-inv-adj-mold/findList",
+  "table_name" : "模具盘点调整主表:",
+  "request" : {
+    "wmsInvAdjMoldClazz" : "WMS_INV_ADJ_MOLD"
+  },
+  "mainTabClazz" : "WMS_INV_ADJ_MOLD",
+  "response" : {
+    "wmsInvAdjMoldActualTimeRequired" : {
+      "meaning" : "模具盘点调整主表:实际需时(小时)"
+    },
+    "wmsInvAdjMoldAdjustmentTimeRequired" : {
+      "meaning" : "模具盘点调整主表:调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvAdjMoldApplicationId" : {
+      "meaning" : "模具盘点调整主表:应用ID"
+    },
+    "wmsInvAdjMoldAuditDate" : {
+      "meaning" : "模具盘点调整主表:审核时间"
+    },
+    "wmsInvAdjMoldAuditStatus" : {
+      "meaning" : "模具盘点调整主表:审核状态"
+    },
+    "wmsInvAdjMoldAvailableScheduleId" : {
+      "meaning" : "模具盘点调整主表:可用日程id"
+    },
+    "wmsInvAdjMoldBeginTime" : {
+      "meaning" : "模具盘点调整主表:开始时间"
+    },
+    "wmsInvAdjMoldBizVersion" : {
+      "meaning" : "模具盘点调整主表:业务自定义版本号"
+    },
+    "wmsInvAdjMoldBriefName" : {
+      "meaning" : "模具盘点调整主表:简称"
+    },
+    "wmsInvAdjMoldBusDivisId" : {
+      "meaning" : "模具盘点调整主表:事业部id"
+    },
+    "wmsInvAdjMoldClazz" : {
+      "meaning" : "模具盘点调整主表:子类 类名（表和类一一对应）"
+    },
+    "wmsInvAdjMoldClosedReason" : {
+      "meaning" : "模具盘点调整主表:结案原因"
+    },
+    "wmsInvAdjMoldClosedStatus" : {
+      "meaning" : "模具盘点调整主表:结案状态"
+    },
+    "wmsInvAdjMoldComment" : {
+      "meaning" : "模具盘点调整主表:评论"
+    },
+    "wmsInvAdjMoldCompleteQuantity" : {
+      "meaning" : "模具盘点调整主表:完成数量"
+    },
+    "wmsInvAdjMoldCompleteStatus" : {
+      "meaning" : "模具盘点调整主表:完成状态"
+    },
+    "wmsInvAdjMoldCreateTime" : {
+      "meaning" : "模具盘点调整主表:创建时间"
+    },
+    "wmsInvAdjMoldCreator" : {
+      "meaning" : "模具盘点调整主表:创建人"
+    },
+    "wmsInvAdjMoldCreatorId" : {
+      "meaning" : "模具盘点调整主表:创建人ID"
+    },
+    "wmsInvAdjMoldDateExtra1" : {
+      "meaning" : "模具盘点调整主表:扩展时间1"
+    },
+    "wmsInvAdjMoldDateExtra2" : {
+      "meaning" : "模具盘点调整主表:扩展时间2"
+    },
+    "wmsInvAdjMoldDateExtra3" : {
+      "meaning" : "模具盘点调整主表:扩展时间3"
+    },
+    "wmsInvAdjMoldDateExtra4" : {
+      "meaning" : "模具盘点调整主表:扩展时间4"
+    },
+    "wmsInvAdjMoldDateExtra5" : {
+      "meaning" : "模具盘点调整主表:扩展时间5"
+    },
+    "wmsInvAdjMoldDefaultType" : {
+      "meaning" : "模具盘点调整主表:智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvAdjMoldDeliveryDate" : {
+      "meaning" : "模具盘点调整主表:交货日期"
+    },
+    "wmsInvAdjMoldDescription" : {
+      "meaning" : "模具盘点调整主表:描述"
+    },
+    "wmsInvAdjMoldEndTime" : {
+      "meaning" : "模具盘点调整主表:结束时间"
+    },
+    "wmsInvAdjMoldEndTimeRequired" : {
+      "meaning" : "模具盘点调整主表:最后需时(小时)"
+    },
+    "wmsInvAdjMoldEngName" : {
+      "meaning" : "模具盘点调整主表:英文名称"
+    },
+    "wmsInvAdjMoldEquipmentId" : {
+      "meaning" : "模具盘点调整主表:设备id"
+    },
+    "wmsInvAdjMoldExchangeRateId" : {
+      "meaning" : "模具盘点调整主表:币种汇率id"
+    },
+    "wmsInvAdjMoldExtension" : {
+      "meaning" : "模具盘点调整主表:扩展数据"
+    },
+    "wmsInvAdjMoldExternalState" : {
+      "meaning" : "模具盘点调整主表:上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvAdjMoldFilterClazz" : {
+      "meaning" : "模具盘点调整主表:冗余字段用于筛选"
+    },
+    "wmsInvAdjMoldFlags" : {
+      "meaning" : "模具盘点调整主表:63位标志位"
+    },
+    "wmsInvAdjMoldFromAuditDate" : {
+      "meaning" : "wmsInvAdjMoldFromAuditDate"
+    },
+    "wmsInvAdjMoldFromBeginTime" : {
+      "meaning" : "wmsInvAdjMoldFromBeginTime"
+    },
+    "wmsInvAdjMoldFromCreateTime" : {
+      "meaning" : "wmsInvAdjMoldFromCreateTime"
+    },
+    "wmsInvAdjMoldFromDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldFromDateExtra1"
+    },
+    "wmsInvAdjMoldFromDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldFromDateExtra2"
+    },
+    "wmsInvAdjMoldFromDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldFromDateExtra3"
+    },
+    "wmsInvAdjMoldFromDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldFromDateExtra4"
+    },
+    "wmsInvAdjMoldFromDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldFromDateExtra5"
+    },
+    "wmsInvAdjMoldFromDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldFromDeliveryDate"
+    },
+    "wmsInvAdjMoldFromEndTime" : {
+      "meaning" : "wmsInvAdjMoldFromEndTime"
+    },
+    "wmsInvAdjMoldFromReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldFromReceiptDate"
+    },
+    "wmsInvAdjMoldFromUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldFromUpdateTime"
+    },
+    "wmsInvAdjMoldFscType" : {
+      "meaning" : "模具盘点调整主表:FSC声明"
+    },
+    "wmsInvAdjMoldGenerativePeople" : {
+      "meaning" : "模具盘点调整主表:下发人"
+    },
+    "wmsInvAdjMoldGenerativeState" : {
+      "meaning" : "模具盘点调整主表:下发状态"
+    },
+    "wmsInvAdjMoldGroovyScript" : {
+      "meaning" : "模具盘点调整主表:groovy脚本"
+    },
+    "wmsInvAdjMoldGropeCode" : {
+      "meaning" : "模具盘点调整主表:搜索码"
+    },
+    "wmsInvAdjMoldId" : {
+      "meaning" : "模具盘点调整主表:Pk",
+      "is_primary" : true
+    },
+    "wmsInvAdjMoldInUsed" : {
+      "meaning" : "模具盘点调整主表:是否被使用"
+    },
+    "wmsInvAdjMoldInvTypeTaxRateId" : {
+      "meaning" : "模具盘点调整主表:发票税率id"
+    },
+    "wmsInvAdjMoldIsBanned" : {
+      "meaning" : "模具盘点调整主表:是否被禁用"
+    },
+    "wmsInvAdjMoldIsDeleted" : {
+      "meaning" : "模具盘点调整主表:是否被删除"
+    },
+    "wmsInvAdjMoldIsLeaf" : {
+      "meaning" : "模具盘点调整主表:是否叶子节点"
+    },
+    "wmsInvAdjMoldIsMainFlow" : {
+      "meaning" : "模具盘点调整主表:是否是主流程"
+    },
+    "wmsInvAdjMoldIsManualModificationDate" : {
+      "meaning" : "模具盘点调整主表:是否手动修改计划生产时间"
+    },
+    "wmsInvAdjMoldIsolation" : {
+      "meaning" : "模具盘点调整主表:智能节点数据隔离标识"
+    },
+    "wmsInvAdjMoldJsScript" : {
+      "meaning" : "模具盘点调整主表:js脚本"
+    },
+    "wmsInvAdjMoldMaterialId" : {
+      "meaning" : "模具盘点调整主表:物料id"
+    },
+    "wmsInvAdjMoldName" : {
+      "meaning" : "模具盘点调整主表:智能节点名"
+    },
+    "wmsInvAdjMoldNameCodeSearch" : {
+      "meaning" : "模具盘点调整主表:name、user_code模糊搜索"
+    },
+    "wmsInvAdjMoldNumberExtra1" : {
+      "meaning" : "模具盘点调整主表:扩展数量1"
+    },
+    "wmsInvAdjMoldNumberExtra2" : {
+      "meaning" : "模具盘点调整主表:扩展数量2"
+    },
+    "wmsInvAdjMoldNumberExtra3" : {
+      "meaning" : "模具盘点调整主表:扩展数量3"
+    },
+    "wmsInvAdjMoldNumberExtra4" : {
+      "meaning" : "模具盘点调整主表:扩展数量4"
+    },
+    "wmsInvAdjMoldNumberExtra5" : {
+      "meaning" : "模具盘点调整主表:扩展数量5"
+    },
+    "wmsInvAdjMoldParentId" : {
+      "meaning" : "模具盘点调整主表:父节点ID"
+    },
+    "wmsInvAdjMoldPlannedOutputQuantity" : {
+      "meaning" : "模具盘点调整主表:计划产出数量"
+    },
+    "wmsInvAdjMoldPlannedTimeRequired" : {
+      "meaning" : "模具盘点调整主表:计划需时(小时)"
+    },
+    "wmsInvAdjMoldPrintTimes" : {
+      "meaning" : "模具盘点调整主表:打印次数"
+    },
+    "wmsInvAdjMoldPriority" : {
+      "meaning" : "模具盘点调整主表:优先级"
+    },
+    "wmsInvAdjMoldProcessInstanceId" : {
+      "meaning" : "模具盘点调整主表:流程实例ID"
+    },
+    "wmsInvAdjMoldProductionProcessesTypeId" : {
+      "meaning" : "模具盘点调整主表:工序类型ID"
+    },
+    "wmsInvAdjMoldProductionShiftId" : {
+      "meaning" : "模具盘点调整主表:生产班次ID"
+    },
+    "wmsInvAdjMoldQuantity" : {
+      "meaning" : "模具盘点调整主表:任务数量"
+    },
+    "wmsInvAdjMoldReceiptDate" : {
+      "meaning" : "模具盘点调整主表:单据日期"
+    },
+    "wmsInvAdjMoldReceiptType" : {
+      "meaning" : "模具盘点调整主表:单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvAdjMoldRelatedTasksId" : {
+      "meaning" : "模具盘点调整主表:关联任务id"
+    },
+    "wmsInvAdjMoldSerialNumber" : {
+      "meaning" : "模具盘点调整主表:顺序号"
+    },
+    "wmsInvAdjMoldSource" : {
+      "meaning" : "模具盘点调整主表:源"
+    },
+    "wmsInvAdjMoldSourceType" : {
+      "meaning" : "模具盘点调整主表:来源类型"
+    },
+    "wmsInvAdjMoldState" : {
+      "meaning" : "模具盘点调整主表:通用状态"
+    },
+    "wmsInvAdjMoldSystemCode" : {
+      "meaning" : "模具盘点调整主表:系统编码"
+    },
+    "wmsInvAdjMoldTarget" : {
+      "meaning" : "模具盘点调整主表:目标"
+    },
+    "wmsInvAdjMoldTaskNodeName" : {
+      "meaning" : "模具盘点调整主表:任务节点名称"
+    },
+    "wmsInvAdjMoldTenantId" : {
+      "meaning" : "模具盘点调整主表:租户ID"
+    },
+    "wmsInvAdjMoldThirdPartyClass" : {
+      "meaning" : "模具盘点调整主表:第三方分类"
+    },
+    "wmsInvAdjMoldThirdPartyId" : {
+      "meaning" : "模具盘点调整主表:第三方系统中的唯一ID"
+    },
+    "wmsInvAdjMoldThirdPartyName" : {
+      "meaning" : "模具盘点调整主表:第三方名称"
+    },
+    "wmsInvAdjMoldToAuditDate" : {
+      "meaning" : "wmsInvAdjMoldToAuditDate"
+    },
+    "wmsInvAdjMoldToBeginTime" : {
+      "meaning" : "wmsInvAdjMoldToBeginTime"
+    },
+    "wmsInvAdjMoldToCreateTime" : {
+      "meaning" : "wmsInvAdjMoldToCreateTime"
+    },
+    "wmsInvAdjMoldToDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldToDateExtra1"
+    },
+    "wmsInvAdjMoldToDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldToDateExtra2"
+    },
+    "wmsInvAdjMoldToDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldToDateExtra3"
+    },
+    "wmsInvAdjMoldToDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldToDateExtra4"
+    },
+    "wmsInvAdjMoldToDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldToDateExtra5"
+    },
+    "wmsInvAdjMoldToDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldToDeliveryDate"
+    },
+    "wmsInvAdjMoldToEndTime" : {
+      "meaning" : "wmsInvAdjMoldToEndTime"
+    },
+    "wmsInvAdjMoldToReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldToReceiptDate"
+    },
+    "wmsInvAdjMoldToUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldToUpdateTime"
+    },
+    "wmsInvAdjMoldTotalAmountExcludingTax" : {
+      "meaning" : "模具盘点调整主表:总盘点不含税金额"
+    },
+    "wmsInvAdjMoldTotalAmountIncludingTax" : {
+      "meaning" : "模具盘点调整主表:总盘点含税金额"
+    },
+    "wmsInvAdjMoldUnitCode" : {
+      "meaning" : "模具盘点调整主表:单位id"
+    },
+    "wmsInvAdjMoldUpdateTime" : {
+      "meaning" : "模具盘点调整主表:更新时间"
+    },
+    "wmsInvAdjMoldUpdater" : {
+      "meaning" : "模具盘点调整主表:更新人"
+    },
+    "wmsInvAdjMoldUpdaterId" : {
+      "meaning" : "模具盘点调整主表:更新人ID"
+    },
+    "wmsInvAdjMoldUserCode" : {
+      "meaning" : "模具盘点调整主表:智能节点的唯一编码"
+    },
+    "wmsInvAdjMoldVarExtra1" : {
+      "meaning" : "模具盘点调整主表:扩展1"
+    },
+    "wmsInvAdjMoldVarExtra2" : {
+      "meaning" : "模具盘点调整主表:扩展2"
+    },
+    "wmsInvAdjMoldVarExtra3" : {
+      "meaning" : "模具盘点调整主表:扩展3"
+    },
+    "wmsInvAdjMoldVarExtra4" : {
+      "meaning" : "模具盘点调整主表:扩展4"
+    },
+    "wmsInvAdjMoldVarExtra5" : {
+      "meaning" : "模具盘点调整主表:扩展5"
+    },
+    "wmsInvAdjMoldVersion" : {
+      "meaning" : "模具盘点调整主表:版本号"
+    }
+  }
+}

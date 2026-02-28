@@ -1,0 +1,425 @@
+{
+  "api_name" : "/prfma-invo/findList",
+  "table_name" : "形式发票管理主表",
+  "request" : {
+    "prfmaInvoClazz" : "PRFMA_INVO"
+  },
+  "mainTabClazz" : "PRFMA_INVO",
+  "response" : {
+    "prfmaInvoActualTimeRequired" : {
+      "meaning" : "形式发票管理主表实际需时(小时)"
+    },
+    "prfmaInvoAdjustmentTimeRequired" : {
+      "meaning" : "形式发票管理主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "prfmaInvoApplicationId" : {
+      "meaning" : "形式发票管理主表应用ID"
+    },
+    "prfmaInvoArrivalPort" : {
+      "meaning" : "形式发票管理主表到达港口"
+    },
+    "prfmaInvoAuditDate" : {
+      "meaning" : "形式发票管理主表审核时间"
+    },
+    "prfmaInvoAuditStatus" : {
+      "meaning" : "形式发票管理主表审核状态"
+    },
+    "prfmaInvoAvailableScheduleId" : {
+      "meaning" : "形式发票管理主表可用日程id"
+    },
+    "prfmaInvoBeginTime" : {
+      "meaning" : "形式发票管理主表开始时间"
+    },
+    "prfmaInvoBizVersion" : {
+      "meaning" : "形式发票管理主表业务自定义版本号"
+    },
+    "prfmaInvoBriefName" : {
+      "meaning" : "形式发票管理主表简称"
+    },
+    "prfmaInvoBusDivisId" : {
+      "meaning" : "形式发票管理主表事业部id"
+    },
+    "prfmaInvoClazz" : {
+      "meaning" : "形式发票管理主表子类 类名（表和类一一对应）"
+    },
+    "prfmaInvoClosedReason" : {
+      "meaning" : "形式发票管理主表结案原因"
+    },
+    "prfmaInvoClosedStatus" : {
+      "meaning" : "形式发票管理主表结案状态"
+    },
+    "prfmaInvoComment" : {
+      "meaning" : "形式发票管理主表评论"
+    },
+    "prfmaInvoCompanyAddress" : {
+      "meaning" : "形式发票管理主表公司详细地址"
+    },
+    "prfmaInvoCompanyAreaId" : {
+      "meaning" : "形式发票管理主表公司行政区域_id"
+    },
+    "prfmaInvoCompleteQuantity" : {
+      "meaning" : "形式发票管理主表完成数量"
+    },
+    "prfmaInvoCompleteStatus" : {
+      "meaning" : "形式发票管理主表完成状态"
+    },
+    "prfmaInvoCreateTime" : {
+      "meaning" : "形式发票管理主表创建时间"
+    },
+    "prfmaInvoCreator" : {
+      "meaning" : "形式发票管理主表创建人"
+    },
+    "prfmaInvoCreatorId" : {
+      "meaning" : "形式发票管理主表创建人ID"
+    },
+    "prfmaInvoCustomerAddress" : {
+      "meaning" : "形式发票管理主表客户详细地址"
+    },
+    "prfmaInvoCustomerAreaId" : {
+      "meaning" : "形式发票管理主表客户行政区域_id"
+    },
+    "prfmaInvoCustomerId" : {
+      "meaning" : "形式发票管理主表客户_id"
+    },
+    "prfmaInvoDateExtra1" : {
+      "meaning" : "形式发票管理主表扩展时间1"
+    },
+    "prfmaInvoDateExtra2" : {
+      "meaning" : "形式发票管理主表扩展时间2"
+    },
+    "prfmaInvoDateExtra3" : {
+      "meaning" : "形式发票管理主表扩展时间3"
+    },
+    "prfmaInvoDateExtra4" : {
+      "meaning" : "形式发票管理主表扩展时间4"
+    },
+    "prfmaInvoDateExtra5" : {
+      "meaning" : "形式发票管理主表扩展时间5"
+    },
+    "prfmaInvoDefaultType" : {
+      "meaning" : "形式发票管理主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "prfmaInvoDeliveryDate" : {
+      "meaning" : "形式发票管理主表交货日期"
+    },
+    "prfmaInvoDeparturePort" : {
+      "meaning" : "形式发票管理主表出发港口"
+    },
+    "prfmaInvoDescription" : {
+      "meaning" : "形式发票管理主表描述"
+    },
+    "prfmaInvoEndTime" : {
+      "meaning" : "形式发票管理主表结束时间"
+    },
+    "prfmaInvoEndTimeRequired" : {
+      "meaning" : "形式发票管理主表最后需时(小时)"
+    },
+    "prfmaInvoEngName" : {
+      "meaning" : "形式发票管理主表英文名称"
+    },
+    "prfmaInvoEquipmentId" : {
+      "meaning" : "形式发票管理主表设备id"
+    },
+    "prfmaInvoEstimatedTimeOfArrival" : {
+      "type" : "object",
+      "meaning" : "形式发票管理主表ETA(船舶预抵港时间)"
+    },
+    "prfmaInvoEstimatedTimeOfDeparture" : {
+      "type" : "object",
+      "meaning" : "形式发票管理主表ETD(船舶预离港时间)"
+    },
+    "prfmaInvoExchangeRateId" : {
+      "meaning" : "形式发票管理主表币种汇率id"
+    },
+    "prfmaInvoExtension" : {
+      "meaning" : "形式发票管理主表扩展数据"
+    },
+    "prfmaInvoExternalState" : {
+      "meaning" : "形式发票管理主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "prfmaInvoFilterClazz" : {
+      "meaning" : "形式发票管理主表冗余字段用于筛选"
+    },
+    "prfmaInvoFlags" : {
+      "meaning" : "形式发票管理主表63位标志位"
+    },
+    "prfmaInvoFromAuditDate" : {
+      "meaning" : "prfmaInvoFromAuditDate"
+    },
+    "prfmaInvoFromBeginTime" : {
+      "meaning" : "prfmaInvoFromBeginTime"
+    },
+    "prfmaInvoFromCreateTime" : {
+      "meaning" : "prfmaInvoFromCreateTime"
+    },
+    "prfmaInvoFromDateExtra1" : {
+      "meaning" : "prfmaInvoFromDateExtra1"
+    },
+    "prfmaInvoFromDateExtra2" : {
+      "meaning" : "prfmaInvoFromDateExtra2"
+    },
+    "prfmaInvoFromDateExtra3" : {
+      "meaning" : "prfmaInvoFromDateExtra3"
+    },
+    "prfmaInvoFromDateExtra4" : {
+      "meaning" : "prfmaInvoFromDateExtra4"
+    },
+    "prfmaInvoFromDateExtra5" : {
+      "meaning" : "prfmaInvoFromDateExtra5"
+    },
+    "prfmaInvoFromDeliveryDate" : {
+      "meaning" : "prfmaInvoFromDeliveryDate"
+    },
+    "prfmaInvoFromEndTime" : {
+      "meaning" : "prfmaInvoFromEndTime"
+    },
+    "prfmaInvoFromEstimatedTimeOfArrival" : {
+      "type" : "object",
+      "meaning" : "prfmaInvoFromEstimatedTimeOfArrival"
+    },
+    "prfmaInvoFromEstimatedTimeOfDeparture" : {
+      "type" : "object",
+      "meaning" : "prfmaInvoFromEstimatedTimeOfDeparture"
+    },
+    "prfmaInvoFromReceiptDate" : {
+      "meaning" : "prfmaInvoFromReceiptDate"
+    },
+    "prfmaInvoFromUpdateTime" : {
+      "meaning" : "prfmaInvoFromUpdateTime"
+    },
+    "prfmaInvoFscType" : {
+      "meaning" : "形式发票管理主表FSC声明"
+    },
+    "prfmaInvoGenerativePeople" : {
+      "meaning" : "形式发票管理主表下发人"
+    },
+    "prfmaInvoGenerativeState" : {
+      "meaning" : "形式发票管理主表下发状态"
+    },
+    "prfmaInvoGroovyScript" : {
+      "meaning" : "形式发票管理主表groovy脚本"
+    },
+    "prfmaInvoGropeCode" : {
+      "meaning" : "形式发票管理主表搜索码"
+    },
+    "prfmaInvoId" : {
+      "meaning" : "形式发票管理主表PK",
+      "is_primary" : true
+    },
+    "prfmaInvoInUsed" : {
+      "meaning" : "形式发票管理主表是否被使用"
+    },
+    "prfmaInvoInvTypeTaxRateId" : {
+      "meaning" : "形式发票管理主表发票税率id"
+    },
+    "prfmaInvoIsBanned" : {
+      "meaning" : "形式发票管理主表是否被禁用"
+    },
+    "prfmaInvoIsDeleted" : {
+      "meaning" : "形式发票管理主表是否被删除"
+    },
+    "prfmaInvoIsLeaf" : {
+      "meaning" : "形式发票管理主表是否叶子节点"
+    },
+    "prfmaInvoIsMainFlow" : {
+      "meaning" : "形式发票管理主表是否是主流程"
+    },
+    "prfmaInvoIsManualModificationDate" : {
+      "meaning" : "形式发票管理主表是否手动修改计划生产时间"
+    },
+    "prfmaInvoIsolation" : {
+      "meaning" : "形式发票管理主表智能节点数据隔离标识"
+    },
+    "prfmaInvoJsScript" : {
+      "meaning" : "形式发票管理主表js脚本"
+    },
+    "prfmaInvoMaterialId" : {
+      "meaning" : "形式发票管理主表物料id"
+    },
+    "prfmaInvoName" : {
+      "meaning" : "形式发票管理主表智能节点名"
+    },
+    "prfmaInvoNameCodeSearch" : {
+      "meaning" : "形式发票管理主表name、user_code模糊搜索"
+    },
+    "prfmaInvoNumberExtra1" : {
+      "meaning" : "形式发票管理主表扩展数量1"
+    },
+    "prfmaInvoNumberExtra2" : {
+      "meaning" : "形式发票管理主表扩展数量2"
+    },
+    "prfmaInvoNumberExtra3" : {
+      "meaning" : "形式发票管理主表扩展数量3"
+    },
+    "prfmaInvoNumberExtra4" : {
+      "meaning" : "形式发票管理主表扩展数量4"
+    },
+    "prfmaInvoNumberExtra5" : {
+      "meaning" : "形式发票管理主表扩展数量5"
+    },
+    "prfmaInvoParentId" : {
+      "meaning" : "形式发票管理主表父节点ID"
+    },
+    "prfmaInvoPaymentTerms" : {
+      "meaning" : "形式发票管理主表付款条件"
+    },
+    "prfmaInvoPlannedOutputQuantity" : {
+      "meaning" : "形式发票管理主表计划产出数量"
+    },
+    "prfmaInvoPlannedTimeRequired" : {
+      "meaning" : "形式发票管理主表计划需时(小时)"
+    },
+    "prfmaInvoPrintTimes" : {
+      "meaning" : "形式发票管理主表打印次数"
+    },
+    "prfmaInvoPriority" : {
+      "meaning" : "形式发票管理主表优先级"
+    },
+    "prfmaInvoProcessInstanceId" : {
+      "meaning" : "形式发票管理主表流程实例ID"
+    },
+    "prfmaInvoProductionProcessesTypeId" : {
+      "meaning" : "形式发票管理主表工序类型ID"
+    },
+    "prfmaInvoProductionShiftId" : {
+      "meaning" : "形式发票管理主表生产班次ID"
+    },
+    "prfmaInvoQuantity" : {
+      "meaning" : "形式发票管理主表任务数量"
+    },
+    "prfmaInvoReceiptDate" : {
+      "meaning" : "形式发票管理主表单据日期"
+    },
+    "prfmaInvoReceiptType" : {
+      "meaning" : "形式发票管理主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "prfmaInvoRelatedTasksId" : {
+      "meaning" : "形式发票管理主表关联任务id"
+    },
+    "prfmaInvoSerialNumber" : {
+      "meaning" : "形式发票管理主表顺序号"
+    },
+    "prfmaInvoShippingAddress" : {
+      "meaning" : "形式发票管理主表送货详细地址"
+    },
+    "prfmaInvoShippingAreaId" : {
+      "meaning" : "形式发票管理主表送货行政区域_id"
+    },
+    "prfmaInvoSource" : {
+      "meaning" : "形式发票管理主表源"
+    },
+    "prfmaInvoSourceType" : {
+      "meaning" : "形式发票管理主表来源类型"
+    },
+    "prfmaInvoState" : {
+      "meaning" : "形式发票管理主表通用状态"
+    },
+    "prfmaInvoSystemCode" : {
+      "meaning" : "形式发票管理主表系统编码"
+    },
+    "prfmaInvoTarget" : {
+      "meaning" : "形式发票管理主表目标"
+    },
+    "prfmaInvoTaskNodeName" : {
+      "meaning" : "形式发票管理主表任务节点名称"
+    },
+    "prfmaInvoTenantId" : {
+      "meaning" : "形式发票管理主表租户_id"
+    },
+    "prfmaInvoThirdPartyClass" : {
+      "meaning" : "形式发票管理主表第三方分类"
+    },
+    "prfmaInvoThirdPartyId" : {
+      "meaning" : "形式发票管理主表第三方系统中的唯一ID"
+    },
+    "prfmaInvoThirdPartyName" : {
+      "meaning" : "形式发票管理主表第三方名称"
+    },
+    "prfmaInvoToAuditDate" : {
+      "meaning" : "prfmaInvoToAuditDate"
+    },
+    "prfmaInvoToBeginTime" : {
+      "meaning" : "prfmaInvoToBeginTime"
+    },
+    "prfmaInvoToCreateTime" : {
+      "meaning" : "prfmaInvoToCreateTime"
+    },
+    "prfmaInvoToDateExtra1" : {
+      "meaning" : "prfmaInvoToDateExtra1"
+    },
+    "prfmaInvoToDateExtra2" : {
+      "meaning" : "prfmaInvoToDateExtra2"
+    },
+    "prfmaInvoToDateExtra3" : {
+      "meaning" : "prfmaInvoToDateExtra3"
+    },
+    "prfmaInvoToDateExtra4" : {
+      "meaning" : "prfmaInvoToDateExtra4"
+    },
+    "prfmaInvoToDateExtra5" : {
+      "meaning" : "prfmaInvoToDateExtra5"
+    },
+    "prfmaInvoToDeliveryDate" : {
+      "meaning" : "prfmaInvoToDeliveryDate"
+    },
+    "prfmaInvoToEndTime" : {
+      "meaning" : "prfmaInvoToEndTime"
+    },
+    "prfmaInvoToEstimatedTimeOfArrival" : {
+      "type" : "object",
+      "meaning" : "prfmaInvoToEstimatedTimeOfArrival"
+    },
+    "prfmaInvoToEstimatedTimeOfDeparture" : {
+      "type" : "object",
+      "meaning" : "prfmaInvoToEstimatedTimeOfDeparture"
+    },
+    "prfmaInvoToReceiptDate" : {
+      "meaning" : "prfmaInvoToReceiptDate"
+    },
+    "prfmaInvoToUpdateTime" : {
+      "meaning" : "prfmaInvoToUpdateTime"
+    },
+    "prfmaInvoTradeTerms" : {
+      "meaning" : "形式发票管理主表贸易条款"
+    },
+    "prfmaInvoUnitCode" : {
+      "meaning" : "形式发票管理主表单位id"
+    },
+    "prfmaInvoUpdateTime" : {
+      "meaning" : "形式发票管理主表更新时间"
+    },
+    "prfmaInvoUpdater" : {
+      "meaning" : "形式发票管理主表更新人"
+    },
+    "prfmaInvoUpdaterId" : {
+      "meaning" : "形式发票管理主表更新人ID"
+    },
+    "prfmaInvoUserCode" : {
+      "meaning" : "形式发票管理主表智能节点的唯一编码"
+    },
+    "prfmaInvoVarExtra1" : {
+      "meaning" : "形式发票管理主表扩展1"
+    },
+    "prfmaInvoVarExtra2" : {
+      "meaning" : "形式发票管理主表扩展2"
+    },
+    "prfmaInvoVarExtra3" : {
+      "meaning" : "形式发票管理主表扩展3"
+    },
+    "prfmaInvoVarExtra4" : {
+      "meaning" : "形式发票管理主表扩展4"
+    },
+    "prfmaInvoVarExtra5" : {
+      "meaning" : "形式发票管理主表扩展5"
+    },
+    "prfmaInvoVersion" : {
+      "meaning" : "形式发票管理主表版本号"
+    },
+    "prfmaInvoVesselName" : {
+      "meaning" : "形式发票管理主表船名"
+    },
+    "prfmaInvoVoyage" : {
+      "meaning" : "形式发票管理主表航次"
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "api_name" : "/contract/findList",
+  "table_name" : "合同主表",
+  "request" : {
+    "contractClazz" : "CONTRACT"
+  },
+  "mainTabClazz" : "CONTRACT",
+  "response" : {
+    "contractActualTimeRequired" : {
+      "meaning" : "合同主表实际需时(小时)"
+    },
+    "contractAdjustmentTimeRequired" : {
+      "meaning" : "合同主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "contractApplicationId" : {
+      "meaning" : "合同主表应用ID"
+    },
+    "contractAuditDate" : {
+      "meaning" : "合同主表审核时间"
+    },
+    "contractAuditStatus" : {
+      "meaning" : "合同主表审核状态"
+    },
+    "contractAvailableScheduleId" : {
+      "meaning" : "合同主表可用日程id"
+    },
+    "contractBeginTime" : {
+      "meaning" : "合同主表开始时间"
+    },
+    "contractBizVersion" : {
+      "meaning" : "合同主表业务自定义版本号"
+    },
+    "contractBriefName" : {
+      "meaning" : "合同主表简称"
+    },
+    "contractBusDivisId" : {
+      "meaning" : "合同主表事业部id"
+    },
+    "contractClazz" : {
+      "meaning" : "合同主表子类 类名（表和类一一对应）"
+    },
+    "contractClosedReason" : {
+      "meaning" : "合同主表结案原因"
+    },
+    "contractClosedStatus" : {
+      "meaning" : "合同主表结案状态"
+    },
+    "contractComment" : {
+      "meaning" : "合同主表评论"
+    },
+    "contractCompleteQuantity" : {
+      "meaning" : "合同主表完成数量"
+    },
+    "contractCompleteStatus" : {
+      "meaning" : "合同主表完成状态"
+    },
+    "contractContractTemplateId" : {
+      "meaning" : "合同主表合同模板id"
+    },
+    "contractCreateTime" : {
+      "meaning" : "合同主表创建时间"
+    },
+    "contractCreator" : {
+      "meaning" : "合同主表创建人"
+    },
+    "contractCreatorId" : {
+      "meaning" : "合同主表创建人ID"
+    },
+    "contractCurrencyExchangeRateId" : {
+      "meaning" : "contractCurrencyExchangeRateId"
+    },
+    "contractDateExtra1" : {
+      "meaning" : "合同主表扩展时间1"
+    },
+    "contractDateExtra2" : {
+      "meaning" : "合同主表扩展时间2"
+    },
+    "contractDateExtra3" : {
+      "meaning" : "合同主表扩展时间3"
+    },
+    "contractDateExtra4" : {
+      "meaning" : "合同主表扩展时间4"
+    },
+    "contractDateExtra5" : {
+      "meaning" : "合同主表扩展时间5"
+    },
+    "contractDecimalMethod" : {
+      "meaning" : "合同主表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+    },
+    "contractDefaultType" : {
+      "meaning" : "合同主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "contractDeliveryDate" : {
+      "meaning" : "合同主表交货日期"
+    },
+    "contractDeliveryMethod" : {
+      "meaning" : "合同主表配送方式"
+    },
+    "contractDescription" : {
+      "meaning" : "合同主表描述"
+    },
+    "contractDetailDto" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "contractDetailDto"
+    },
+    "contractEndTime" : {
+      "meaning" : "合同主表结束时间"
+    },
+    "contractEndTimeRequired" : {
+      "meaning" : "合同主表最后需时(小时)"
+    },
+    "contractEngName" : {
+      "meaning" : "合同主表英文名称"
+    },
+    "contractEquipmentId" : {
+      "meaning" : "合同主表设备id"
+    },
+    "contractExchangeRateId" : {
+      "meaning" : "合同主表币种汇率id"
+    },
+    "contractExtension" : {
+      "meaning" : "合同主表扩展数据"
+    },
+    "contractExternalState" : {
+      "meaning" : "合同主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "contractFileDto" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "contractFileDto"
+    },
+    "contractFilterClazz" : {
+      "meaning" : "合同主表冗余字段用于筛选"
+    },
+    "contractFlags" : {
+      "meaning" : "合同主表63位标志位"
+    },
+    "contractFromAuditDate" : {
+      "meaning" : "contractFromAuditDate"
+    },
+    "contractFromBeginTime" : {
+      "meaning" : "contractFromBeginTime"
+    },
+    "contractFromCreateTime" : {
+      "meaning" : "contractFromCreateTime"
+    },
+    "contractFromDateExtra1" : {
+      "meaning" : "contractFromDateExtra1"
+    },
+    "contractFromDateExtra2" : {
+      "meaning" : "contractFromDateExtra2"
+    },
+    "contractFromDateExtra3" : {
+      "meaning" : "contractFromDateExtra3"
+    },
+    "contractFromDateExtra4" : {
+      "meaning" : "contractFromDateExtra4"
+    },
+    "contractFromDateExtra5" : {
+      "meaning" : "contractFromDateExtra5"
+    },
+    "contractFromDeliveryDate" : {
+      "meaning" : "contractFromDeliveryDate"
+    },
+    "contractFromEndTime" : {
+      "meaning" : "contractFromEndTime"
+    },
+    "contractFromReceiptDate" : {
+      "meaning" : "contractFromReceiptDate"
+    },
+    "contractFromUpdateTime" : {
+      "meaning" : "contractFromUpdateTime"
+    },
+    "contractFscType" : {
+      "meaning" : "合同主表FSC声明"
+    },
+    "contractGenerativePeople" : {
+      "meaning" : "合同主表下发人"
+    },
+    "contractGenerativeState" : {
+      "meaning" : "合同主表下发状态"
+    },
+    "contractGroovyScript" : {
+      "meaning" : "合同主表groovy脚本"
+    },
+    "contractGropeCode" : {
+      "meaning" : "合同主表搜索码"
+    },
+    "contractId" : {
+      "meaning" : "合同主表PK",
+      "is_primary" : true
+    },
+    "contractImgDto" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "contractImgDto"
+    },
+    "contractInUsed" : {
+      "meaning" : "合同主表是否被使用"
+    },
+    "contractInvTypeTaxRateId" : {
+      "meaning" : "合同主表发票税率id"
+    },
+    "contractInvoiceTypeTaxRateId" : {
+      "meaning" : "合同主表税率"
+    },
+    "contractIsBanned" : {
+      "meaning" : "合同主表是否被禁用"
+    },
+    "contractIsDeleted" : {
+      "meaning" : "合同主表是否被删除"
+    },
+    "contractIsLeaf" : {
+      "meaning" : "合同主表是否叶子节点"
+    },
+    "contractIsMainFlow" : {
+      "meaning" : "合同主表是否是主流程"
+    },
+    "contractIsManualModificationDate" : {
+      "meaning" : "合同主表是否手动修改计划生产时间"
+    },
+    "contractIsolation" : {
+      "meaning" : "合同主表智能节点数据隔离标识"
+    },
+    "contractJsScript" : {
+      "meaning" : "合同主表js脚本"
+    },
+    "contractLocalCurrencyTotalAmount" : {
+      "meaning" : "合同主表本币不含税金额(根据币种，外币才显示)，外币不含税"
+    },
+    "contractMaterialId" : {
+      "meaning" : "合同主表物料id"
+    },
+    "contractName" : {
+      "meaning" : "合同主表智能节点名"
+    },
+    "contractNameCodeSearch" : {
+      "meaning" : "合同主表name、user_code模糊搜索"
+    },
+    "contractNumberExtra1" : {
+      "meaning" : "合同主表扩展数量1"
+    },
+    "contractNumberExtra2" : {
+      "meaning" : "合同主表扩展数量2"
+    },
+    "contractNumberExtra3" : {
+      "meaning" : "合同主表扩展数量3"
+    },
+    "contractNumberExtra4" : {
+      "meaning" : "合同主表扩展数量4"
+    },
+    "contractNumberExtra5" : {
+      "meaning" : "合同主表扩展数量5"
+    },
+    "contractParentId" : {
+      "meaning" : "合同主表父节点ID"
+    },
+    "contractPartyAAddress" : {
+      "meaning" : "合同主表甲方详细地址"
+    },
+    "contractPartyAAdministrativeAreaId" : {
+      "meaning" : "合同主表甲方行政区域id"
+    },
+    "contractPartyABankAccount" : {
+      "meaning" : "合同主表甲方银行账户"
+    },
+    "contractPartyAContact" : {
+      "meaning" : "合同主表甲方联系方式"
+    },
+    "contractPartyAHead" : {
+      "meaning" : "合同主表甲方负责人"
+    },
+    "contractPartyAId" : {
+      "meaning" : "合同主表甲方id"
+    },
+    "contractPartyAIdentificationNumber" : {
+      "meaning" : "合同主表甲方标识号(如企业税号、身份证号)"
+    },
+    "contractPartyAOpeningBank" : {
+      "meaning" : "合同主表甲方开户行"
+    },
+    "contractPartyBAddress" : {
+      "meaning" : "合同主表乙方详细地址"
+    },
+    "contractPartyBAdministrativeAreaId" : {
+      "meaning" : "合同主表乙方行政区域id"
+    },
+    "contractPartyBBankAccount" : {
+      "meaning" : "合同主表乙方银行账户"
+    },
+    "contractPartyBContact" : {
+      "meaning" : "合同主表乙方联系方式"
+    },
+    "contractPartyBHead" : {
+      "meaning" : "合同主表乙方负责人"
+    },
+    "contractPartyBId" : {
+      "meaning" : "合同主表乙方id"
+    },
+    "contractPartyBIdentificationNumber" : {
+      "meaning" : "合同主表乙方标识号(如企业税号、身份证号)"
+    },
+    "contractPartyBOpeningBank" : {
+      "meaning" : "合同主表乙方开户行"
+    },
+    "contractPlannedOutputQuantity" : {
+      "meaning" : "合同主表计划产出数量"
+    },
+    "contractPlannedTimeRequired" : {
+      "meaning" : "合同主表计划需时(小时)"
+    },
+    "contractPrintTimes" : {
+      "meaning" : "合同主表打印次数"
+    },
+    "contractPriority" : {
+      "meaning" : "合同主表优先级"
+    },
+    "contractProcessInstanceId" : {
+      "meaning" : "合同主表流程实例ID"
+    },
+    "contractProductionProcessesTypeId" : {
+      "meaning" : "合同主表工序类型ID"
+    },
+    "contractProductionShiftId" : {
+      "meaning" : "合同主表生产班次ID"
+    },
+    "contractQuantity" : {
+      "meaning" : "合同主表任务数量"
+    },
+    "contractReceiptDate" : {
+      "meaning" : "合同主表单据日期"
+    },
+    "contractReceiptType" : {
+      "meaning" : "合同主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "contractRelatedTasksId" : {
+      "meaning" : "合同主表关联任务id"
+    },
+    "contractSerialNumber" : {
+      "meaning" : "合同主表顺序号"
+    },
+    "contractSettlementTotalAmount" : {
+      "meaning" : "合同主表含税已结算金额（默认与含税总金额相等），写入库存价格字段"
+    },
+    "contractSettlementTotalAmountKeepDecimalPlace" : {
+      "meaning" : "合同主表结算金额保留小数位(默认2位，可手动变更)"
+    },
+    "contractSettlementTypeId" : {
+      "meaning" : "合同主表结算方式"
+    },
+    "contractSettlementUnitPriceKeepDecimalPlace" : {
+      "meaning" : "合同主表结算单价保留小数位(默认9位，可手动变更)"
+    },
+    "contractSource" : {
+      "meaning" : "合同主表源"
+    },
+    "contractSourceType" : {
+      "meaning" : "合同主表来源类型"
+    },
+    "contractState" : {
+      "meaning" : "合同主表通用状态"
+    },
+    "contractStatementMode" : {
+      "meaning" : "合同主表对账方式"
+    },
+    "contractSystemCode" : {
+      "meaning" : "合同主表系统编码"
+    },
+    "contractTarget" : {
+      "meaning" : "合同主表目标"
+    },
+    "contractTaskNodeName" : {
+      "meaning" : "合同主表任务节点名称"
+    },
+    "contractTenantId" : {
+      "meaning" : "合同主表租户id"
+    },
+    "contractThirdPartyClass" : {
+      "meaning" : "合同主表第三方分类"
+    },
+    "contractThirdPartyId" : {
+      "meaning" : "合同主表第三方系统中的唯一ID"
+    },
+    "contractThirdPartyName" : {
+      "meaning" : "合同主表第三方名称"
+    },
+    "contractToAuditDate" : {
+      "meaning" : "contractToAuditDate"
+    },
+    "contractToBeginTime" : {
+      "meaning" : "contractToBeginTime"
+    },
+    "contractToCreateTime" : {
+      "meaning" : "contractToCreateTime"
+    },
+    "contractToDateExtra1" : {
+      "meaning" : "contractToDateExtra1"
+    },
+    "contractToDateExtra2" : {
+      "meaning" : "contractToDateExtra2"
+    },
+    "contractToDateExtra3" : {
+      "meaning" : "contractToDateExtra3"
+    },
+    "contractToDateExtra4" : {
+      "meaning" : "contractToDateExtra4"
+    },
+    "contractToDateExtra5" : {
+      "meaning" : "contractToDateExtra5"
+    },
+    "contractToDeliveryDate" : {
+      "meaning" : "contractToDeliveryDate"
+    },
+    "contractToEndTime" : {
+      "meaning" : "contractToEndTime"
+    },
+    "contractToReceiptDate" : {
+      "meaning" : "contractToReceiptDate"
+    },
+    "contractToUpdateTime" : {
+      "meaning" : "contractToUpdateTime"
+    },
+    "contractTotalAmountIncludingTax" : {
+      "meaning" : "合同主表含税总金额"
+    },
+    "contractTotalAmountWithoutTax" : {
+      "meaning" : "合同主表不含税总金额"
+    },
+    "contractUnitCode" : {
+      "meaning" : "合同主表单位id"
+    },
+    "contractUpdateTime" : {
+      "meaning" : "合同主表更新时间"
+    },
+    "contractUpdater" : {
+      "meaning" : "合同主表更新人"
+    },
+    "contractUpdaterId" : {
+      "meaning" : "合同主表更新人ID"
+    },
+    "contractUserCode" : {
+      "meaning" : "合同主表智能节点的唯一编码"
+    },
+    "contractVarExtra1" : {
+      "meaning" : "合同主表扩展1"
+    },
+    "contractVarExtra2" : {
+      "meaning" : "合同主表扩展2"
+    },
+    "contractVarExtra3" : {
+      "meaning" : "合同主表扩展3"
+    },
+    "contractVarExtra4" : {
+      "meaning" : "合同主表扩展4"
+    },
+    "contractVarExtra5" : {
+      "meaning" : "合同主表扩展5"
+    },
+    "contractVersion" : {
+      "meaning" : "合同主表版本号"
+    }
+  }
+}

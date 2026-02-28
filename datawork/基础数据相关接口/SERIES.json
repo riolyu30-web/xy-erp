@@ -1,0 +1,918 @@
+{
+      "api_name": "/series/findList",
+      "table_name": "产品系列",
+      "request": {
+        "seriesMatClazz": "MATERIAL",
+        "seriesClazz": "SERIES"
+      },
+      "mainTabClazz": "SERIES",
+      "response": {
+        "seriesATCustomerAccountPeriod": {
+          "meaning": "产品系列账期"
+        },
+        "seriesATCustomerApplicationId": {
+          "meaning": "产品系列应用ID"
+        },
+        "seriesATCustomerAuditDate": {
+          "meaning": "seriesATCustomerAuditDate"
+        },
+        "seriesATCustomerAuditStatus": {
+          "meaning": "产品系列审核状态"
+        },
+        "seriesATCustomerAvatarUrl": {
+          "meaning": "产品系列头像URL"
+        },
+        "seriesATCustomerBankAccountId": {
+          "meaning": "产品系列默认银行账户ID"
+        },
+        "seriesATCustomerBizVersion": {
+          "meaning": "产品系列业务自定义版本号"
+        },
+        "seriesATCustomerBriefName": {
+          "meaning": "产品系列简称"
+        },
+        "seriesATCustomerBusDivisId": {
+          "meaning": "产品系列事业部id"
+        },
+        "seriesATCustomerBusinessScope": {
+          "meaning": "产品系列经营范围"
+        },
+        "seriesATCustomerCiphertext": {
+          "meaning": "产品系列密文"
+        },
+        "seriesATCustomerClassificationId": {
+          "meaning": "产品系列客户分类"
+        },
+        "seriesATCustomerClazz": {
+          "meaning": "产品系列子类 类名（表和类一一对应）"
+        },
+        "seriesATCustomerComment": {
+          "meaning": "产品系列评论"
+        },
+        "seriesATCustomerCreateTime": {
+          "meaning": "seriesATCustomerCreateTime"
+        },
+        "seriesATCustomerCreator": {
+          "meaning": "产品系列创建人"
+        },
+        "seriesATCustomerCreatorId": {
+          "meaning": "产品系列创建人ID"
+        },
+        "seriesATCustomerCreditLimit": {
+          "meaning": "产品系列信用限额"
+        },
+        "seriesATCustomerCurrencyId": {
+          "meaning": "产品系列默认币种ID"
+        },
+        "seriesATCustomerDateExtra1": {
+          "meaning": "seriesATCustomerDateExtra1"
+        },
+        "seriesATCustomerDateExtra2": {
+          "meaning": "seriesATCustomerDateExtra2"
+        },
+        "seriesATCustomerDateExtra3": {
+          "meaning": "seriesATCustomerDateExtra3"
+        },
+        "seriesATCustomerDateExtra4": {
+          "meaning": "seriesATCustomerDateExtra4"
+        },
+        "seriesATCustomerDateExtra5": {
+          "meaning": "seriesATCustomerDateExtra5"
+        },
+        "seriesATCustomerDefaultDeliveryType": {
+          "meaning": "产品系列默认送货类型"
+        },
+        "seriesATCustomerDefaultInvoiceTypeTaxRateId": {
+          "meaning": "产品系列默认发票类型税率"
+        },
+        "seriesATCustomerDefaultSettlementType": {
+          "meaning": "产品系列默认结算类型"
+        },
+        "seriesATCustomerDefaultType": {
+          "meaning": "产品系列智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "seriesATCustomerDeliveryUnitPriceAcquisitionMethod": {
+          "meaning": "产品系列销货单价获取方式（1、按订单产品单价，2、按最新产品报价)"
+        },
+        "seriesATCustomerDescription": {
+          "meaning": "产品系列描述"
+        },
+        "seriesATCustomerEmail": {
+          "meaning": "产品系列邮箱"
+        },
+        "seriesATCustomerEngName": {
+          "meaning": "产品系列英文名称"
+        },
+        "seriesATCustomerEnglishName": {
+          "meaning": "产品系列英文名称"
+        },
+        "seriesATCustomerEnterpriseTaxIdentificationNumber": {
+          "meaning": "产品系列企业税号"
+        },
+        "seriesATCustomerExceedSettleAccountsDays": {
+          "meaning": "产品系列超结账天数"
+        },
+        "seriesATCustomerExtension": {
+          "meaning": "产品系列扩展数据"
+        },
+        "seriesATCustomerExternalState": {
+          "meaning": "产品系列上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "seriesATCustomerFaxNo": {
+          "meaning": "产品系列传真号"
+        },
+        "seriesATCustomerFlags": {
+          "meaning": "产品系列63位标志位"
+        },
+        "seriesATCustomerFromAuditDate": {
+          "meaning": "seriesATCustomerFromAuditDate"
+        },
+        "seriesATCustomerFromCreateTime": {
+          "meaning": "seriesATCustomerFromCreateTime"
+        },
+        "seriesATCustomerFromDateExtra1": {
+          "meaning": "seriesATCustomerFromDateExtra1"
+        },
+        "seriesATCustomerFromDateExtra2": {
+          "meaning": "seriesATCustomerFromDateExtra2"
+        },
+        "seriesATCustomerFromDateExtra3": {
+          "meaning": "seriesATCustomerFromDateExtra3"
+        },
+        "seriesATCustomerFromDateExtra4": {
+          "meaning": "seriesATCustomerFromDateExtra4"
+        },
+        "seriesATCustomerFromDateExtra5": {
+          "meaning": "seriesATCustomerFromDateExtra5"
+        },
+        "seriesATCustomerFromLastLoginTime": {
+          "meaning": "seriesATCustomerFromLastLoginTime"
+        },
+        "seriesATCustomerFromRegistrationDate": {
+          "meaning": "seriesATCustomerFromRegistrationDate"
+        },
+        "seriesATCustomerFromUpdateTime": {
+          "meaning": "seriesATCustomerFromUpdateTime"
+        },
+        "seriesATCustomerGroovyScript": {
+          "meaning": "产品系列groovy脚本"
+        },
+        "seriesATCustomerGropeCode": {
+          "meaning": "产品系列搜索码"
+        },
+        "seriesATCustomerId": {
+          "meaning": "产品系列Pk"
+        },
+        "seriesATCustomerIdentification": {
+          "meaning": "产品系列身份识别"
+        },
+        "seriesATCustomerInUsed": {
+          "meaning": "产品系列是否被使用"
+        },
+        "seriesATCustomerIsBanned": {
+          "meaning": "产品系列是否被禁用"
+        },
+        "seriesATCustomerIsDeleted": {
+          "meaning": "产品系列是否被删除"
+        },
+        "seriesATCustomerIsMainFlow": {
+          "meaning": "产品系列是否是主流程"
+        },
+        "seriesATCustomerIsolation": {
+          "meaning": "产品系列智能节点数据隔离标识"
+        },
+        "seriesATCustomerJsScript": {
+          "meaning": "产品系列js脚本"
+        },
+        "seriesATCustomerLastLoginLogId": {
+          "meaning": "产品系列最后登录日志ID"
+        },
+        "seriesATCustomerLastLoginTime": {
+          "meaning": "seriesATCustomerLastLoginTime"
+        },
+        "seriesATCustomerLegalId": {
+          "meaning": "产品系列法人ID"
+        },
+        "seriesATCustomerLegalName": {
+          "meaning": "产品系列法人名称"
+        },
+        "seriesATCustomerLevel": {
+          "meaning": "产品系列客户级别"
+        },
+        "seriesATCustomerLocationAddress": {
+          "meaning": "产品系列所在地址"
+        },
+        "seriesATCustomerLocationCity": {
+          "meaning": "产品系列所在市"
+        },
+        "seriesATCustomerLocationDistrict": {
+          "meaning": "产品系列所在区域"
+        },
+        "seriesATCustomerLocationProvince": {
+          "meaning": "产品系列所在省"
+        },
+        "seriesATCustomerLoginCount": {
+          "meaning": "产品系列登录次数"
+        },
+        "seriesATCustomerMobile": {
+          "meaning": "产品系列手机号"
+        },
+        "seriesATCustomerName": {
+          "meaning": "产品系列智能节点名"
+        },
+        "seriesATCustomerNameCodeSearch": {
+          "meaning": "产品系列name、user_code模糊搜索"
+        },
+        "seriesATCustomerNationality": {
+          "meaning": "产品系列国家"
+        },
+        "seriesATCustomerNumberExtra1": {
+          "meaning": "产品系列扩展数量1"
+        },
+        "seriesATCustomerNumberExtra2": {
+          "meaning": "产品系列扩展数量2"
+        },
+        "seriesATCustomerNumberExtra3": {
+          "meaning": "产品系列扩展数量3"
+        },
+        "seriesATCustomerNumberExtra4": {
+          "meaning": "产品系列扩展数量4"
+        },
+        "seriesATCustomerNumberExtra5": {
+          "meaning": "产品系列扩展数量5"
+        },
+        "seriesATCustomerParentId": {
+          "meaning": "产品系列父节点ID"
+        },
+        "seriesATCustomerPostcode": {
+          "meaning": "产品系列邮政编码"
+        },
+        "seriesATCustomerProcessInstanceId": {
+          "meaning": "产品系列流程实例ID"
+        },
+        "seriesATCustomerReconciliationDate": {
+          "meaning": "产品系列结账日"
+        },
+        "seriesATCustomerRegistrantId": {
+          "meaning": "产品系列注册人ID"
+        },
+        "seriesATCustomerRegistrantName": {
+          "meaning": "产品系列注册人名称"
+        },
+        "seriesATCustomerRegistrationAddress": {
+          "meaning": "产品系列注册地址"
+        },
+        "seriesATCustomerRegistrationCapital": {
+          "meaning": "产品系列注册资金"
+        },
+        "seriesATCustomerRegistrationCity": {
+          "meaning": "产品系列注册所在市"
+        },
+        "seriesATCustomerRegistrationDate": {
+          "meaning": "seriesATCustomerRegistrationDate"
+        },
+        "seriesATCustomerRegistrationDistrict": {
+          "meaning": "产品系列注册所在区域"
+        },
+        "seriesATCustomerRegistrationProvince": {
+          "meaning": "产品系列注册所在省"
+        },
+        "seriesATCustomerSequenceNumber": {
+          "meaning": "seriesATCustomerSequenceNumber"
+        },
+        "seriesATCustomerSerialNumber": {
+          "meaning": "产品系列顺序号"
+        },
+        "seriesATCustomerShortName": {
+          "meaning": "产品系列简称名称"
+        },
+        "seriesATCustomerSomeoneAddressId": {
+          "meaning": "产品系列默认地址ID"
+        },
+        "seriesATCustomerSomeoneCertificateId": {
+          "meaning": "产品系列默认证书ID"
+        },
+        "seriesATCustomerSomeoneContactId": {
+          "meaning": "产品系列默认联系人ID"
+        },
+        "seriesATCustomerSourceTenantId": {
+          "meaning": "产品系列来源租户ID"
+        },
+        "seriesATCustomerState": {
+          "meaning": "产品系列通用状态"
+        },
+        "seriesATCustomerSystemCode": {
+          "meaning": "产品系列系统编码"
+        },
+        "seriesATCustomerTaskNodeName": {
+          "meaning": "产品系列任务节点名称"
+        },
+        "seriesATCustomerTelephone": {
+          "meaning": "产品系列电话"
+        },
+        "seriesATCustomerTenantId": {
+          "meaning": "产品系列租户ID"
+        },
+        "seriesATCustomerThirdPartyClass": {
+          "meaning": "产品系列第三方分类"
+        },
+        "seriesATCustomerThirdPartyId": {
+          "meaning": "产品系列第三方系统中的唯一ID"
+        },
+        "seriesATCustomerThirdPartyName": {
+          "meaning": "产品系列第三方名称"
+        },
+        "seriesATCustomerToAuditDate": {
+          "meaning": "seriesATCustomerToAuditDate"
+        },
+        "seriesATCustomerToCreateTime": {
+          "meaning": "seriesATCustomerToCreateTime"
+        },
+        "seriesATCustomerToDateExtra1": {
+          "meaning": "seriesATCustomerToDateExtra1"
+        },
+        "seriesATCustomerToDateExtra2": {
+          "meaning": "seriesATCustomerToDateExtra2"
+        },
+        "seriesATCustomerToDateExtra3": {
+          "meaning": "seriesATCustomerToDateExtra3"
+        },
+        "seriesATCustomerToDateExtra4": {
+          "meaning": "seriesATCustomerToDateExtra4"
+        },
+        "seriesATCustomerToDateExtra5": {
+          "meaning": "seriesATCustomerToDateExtra5"
+        },
+        "seriesATCustomerToLastLoginTime": {
+          "meaning": "seriesATCustomerToLastLoginTime"
+        },
+        "seriesATCustomerToRegistrationDate": {
+          "meaning": "seriesATCustomerToRegistrationDate"
+        },
+        "seriesATCustomerToUpdateTime": {
+          "meaning": "seriesATCustomerToUpdateTime"
+        },
+        "seriesATCustomerUpdateTime": {
+          "meaning": "seriesATCustomerUpdateTime"
+        },
+        "seriesATCustomerUpdater": {
+          "meaning": "产品系列更新人"
+        },
+        "seriesATCustomerUpdaterId": {
+          "meaning": "产品系列更新人ID"
+        },
+        "seriesATCustomerUserCode": {
+          "meaning": "产品系列智能节点的唯一编码"
+        },
+        "seriesATCustomerVarExtra1": {
+          "meaning": "产品系列扩展1"
+        },
+        "seriesATCustomerVarExtra2": {
+          "meaning": "产品系列扩展2"
+        },
+        "seriesATCustomerVarExtra3": {
+          "meaning": "产品系列扩展3"
+        },
+        "seriesATCustomerVarExtra4": {
+          "meaning": "产品系列扩展4"
+        },
+        "seriesATCustomerVarExtra5": {
+          "meaning": "产品系列扩展5"
+        },
+        "seriesATCustomerVersion": {
+          "meaning": "产品系列版本号"
+        },
+        "seriesATCustomerWebsite": {
+          "meaning": "产品系列网址"
+        },
+        "seriesApplicationId": {
+          "meaning": "产品系列应用ID"
+        },
+        "seriesAuditDate": {
+          "meaning": "产品系列审核时间"
+        },
+        "seriesAuditStatus": {
+          "meaning": "产品系列审核状态"
+        },
+        "seriesBizVersion": {
+          "meaning": "产品系列业务自定义版本号"
+        },
+        "seriesBriefName": {
+          "meaning": "产品系列简称"
+        },
+        "seriesBusDivisId": {
+          "meaning": "产品系列事业部id"
+        },
+        "seriesClazz": {
+          "meaning": "产品系列子类 类名（表和类一一对应）"
+        },
+        "seriesComment": {
+          "meaning": "产品系列评论"
+        },
+        "seriesCreateTime": {
+          "meaning": "产品系列创建时间"
+        },
+        "seriesCreator": {
+          "meaning": "产品系列创建人"
+        },
+        "seriesCreatorId": {
+          "meaning": "产品系列创建人ID"
+        },
+        "seriesDateExtra1": {
+          "meaning": "产品系列扩展时间1"
+        },
+        "seriesDateExtra2": {
+          "meaning": "产品系列扩展时间2"
+        },
+        "seriesDateExtra3": {
+          "meaning": "产品系列扩展时间3"
+        },
+        "seriesDateExtra4": {
+          "meaning": "产品系列扩展时间4"
+        },
+        "seriesDateExtra5": {
+          "meaning": "产品系列扩展时间5"
+        },
+        "seriesDefaultType": {
+          "meaning": "产品系列智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "seriesDescription": {
+          "meaning": "产品系列描述"
+        },
+        "seriesEngName": {
+          "meaning": "产品系列英文名称"
+        },
+        "seriesExtension": {
+          "meaning": "产品系列扩展数据"
+        },
+        "seriesExternalState": {
+          "meaning": "产品系列上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "seriesFlags": {
+          "meaning": "产品系列63位标志位"
+        },
+        "seriesFromAuditDate": {
+          "meaning": "seriesFromAuditDate"
+        },
+        "seriesFromCreateTime": {
+          "meaning": "seriesFromCreateTime"
+        },
+        "seriesFromDateExtra1": {
+          "meaning": "seriesFromDateExtra1"
+        },
+        "seriesFromDateExtra2": {
+          "meaning": "seriesFromDateExtra2"
+        },
+        "seriesFromDateExtra3": {
+          "meaning": "seriesFromDateExtra3"
+        },
+        "seriesFromDateExtra4": {
+          "meaning": "seriesFromDateExtra4"
+        },
+        "seriesFromDateExtra5": {
+          "meaning": "seriesFromDateExtra5"
+        },
+        "seriesFromUpdateTime": {
+          "meaning": "seriesFromUpdateTime"
+        },
+        "seriesGroovyScript": {
+          "meaning": "产品系列groovy脚本"
+        },
+        "seriesGropeCode": {
+          "meaning": "产品系列搜索码"
+        },
+        "seriesId": {
+          "meaning": "产品系列PK",
+          "is_primary": true
+        },
+        "seriesInUsed": {
+          "meaning": "产品系列是否被使用"
+        },
+        "seriesIsBanned": {
+          "meaning": "产品系列是否被禁用"
+        },
+        "seriesIsDeleted": {
+          "meaning": "产品系列是否被删除"
+        },
+        "seriesIsMainFlow": {
+          "meaning": "产品系列是否是主流程"
+        },
+        "seriesIsolation": {
+          "meaning": "产品系列智能节点数据隔离标识"
+        },
+        "seriesJsScript": {
+          "meaning": "产品系列js脚本"
+        },
+        "seriesMatApplicationId": {
+          "meaning": "产品系列应用ID"
+        },
+        "seriesMatAuditDate": {
+          "meaning": "产品系列审核时间"
+        },
+        "seriesMatAuditStatus": {
+          "meaning": "产品系列审核状态"
+        },
+        "seriesMatBizVersion": {
+          "meaning": "产品系列业务自定义版本号"
+        },
+        "seriesMatBriefName": {
+          "meaning": "产品系列简称"
+        },
+        "seriesMatBusDivId": {
+          "meaning": "seriesMatBusDivId"
+        },
+        "seriesMatBusDivisId": {
+          "meaning": "产品系列事业部id"
+        },
+        "seriesMatClazz": {
+          "meaning": "产品系列子类 类名（表和类一一对应）"
+        },
+        "seriesMatComment": {
+          "meaning": "产品系列评论"
+        },
+        "seriesMatCreateTime": {
+          "meaning": "产品系列创建时间"
+        },
+        "seriesMatCreator": {
+          "meaning": "产品系列创建人"
+        },
+        "seriesMatCreatorId": {
+          "meaning": "产品系列创建人ID"
+        },
+        "seriesMatDateExtra1": {
+          "meaning": "产品系列扩展时间1"
+        },
+        "seriesMatDateExtra2": {
+          "meaning": "产品系列扩展时间2"
+        },
+        "seriesMatDateExtra3": {
+          "meaning": "产品系列扩展时间3"
+        },
+        "seriesMatDateExtra4": {
+          "meaning": "产品系列扩展时间4"
+        },
+        "seriesMatDateExtra5": {
+          "meaning": "产品系列扩展时间5"
+        },
+        "seriesMatDeclType": {
+          "meaning": "seriesMatDeclType"
+        },
+        "seriesMatDefaultStatisticsSpecificationTypeId": {
+          "meaning": "seriesMatDefaultStatisticsSpecificationTypeId"
+        },
+        "seriesMatDefaultType": {
+          "meaning": "产品系列智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "seriesMatDescription": {
+          "meaning": "产品系列描述"
+        },
+        "seriesMatEngName": {
+          "meaning": "产品系列英文名称"
+        },
+        "seriesMatExtension": {
+          "meaning": "产品系列扩展数据"
+        },
+        "seriesMatExternalState": {
+          "meaning": "产品系列上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "seriesMatFinClass": {
+          "meaning": "seriesMatFinClass"
+        },
+        "seriesMatFinGenLedClass": {
+          "meaning": "seriesMatFinGenLedClass"
+        },
+        "seriesMatFinGenLedCode": {
+          "meaning": "seriesMatFinGenLedCode"
+        },
+        "seriesMatFinancialAccount": {
+          "meaning": "seriesMatFinancialAccount"
+        },
+        "seriesMatFlags": {
+          "meaning": "产品系列63位标志位"
+        },
+        "seriesMatFromAuditDate": {
+          "meaning": "seriesMatFromAuditDate"
+        },
+        "seriesMatFromCreateTime": {
+          "meaning": "seriesMatFromCreateTime"
+        },
+        "seriesMatFromDateExtra1": {
+          "meaning": "seriesMatFromDateExtra1"
+        },
+        "seriesMatFromDateExtra2": {
+          "meaning": "seriesMatFromDateExtra2"
+        },
+        "seriesMatFromDateExtra3": {
+          "meaning": "seriesMatFromDateExtra3"
+        },
+        "seriesMatFromDateExtra4": {
+          "meaning": "seriesMatFromDateExtra4"
+        },
+        "seriesMatFromDateExtra5": {
+          "meaning": "seriesMatFromDateExtra5"
+        },
+        "seriesMatFromUpdateTime": {
+          "meaning": "seriesMatFromUpdateTime"
+        },
+        "seriesMatFscDeclarationId": {
+          "meaning": "seriesMatFscDeclarationId"
+        },
+        "seriesMatFscId": {
+          "meaning": "seriesMatFscId"
+        },
+        "seriesMatGroovyScript": {
+          "meaning": "产品系列groovy脚本"
+        },
+        "seriesMatGropeCode": {
+          "meaning": "产品系列搜索码"
+        },
+        "seriesMatId": {
+          "meaning": "产品系列主键ID"
+        },
+        "seriesMatInUsed": {
+          "meaning": "产品系列是否被使用"
+        },
+        "seriesMatInactiveCallDays": {
+          "meaning": "seriesMatInactiveCallDays"
+        },
+        "seriesMatInactiveDays": {
+          "meaning": "seriesMatInactiveDays"
+        },
+        "seriesMatIsBanned": {
+          "meaning": "产品系列是否被禁用"
+        },
+        "seriesMatIsDeleted": {
+          "meaning": "产品系列是否被删除"
+        },
+        "seriesMatIsMainFlow": {
+          "meaning": "产品系列是否是主流程"
+        },
+        "seriesMatIsMatClassification": {
+          "meaning": "seriesMatIsMatClassification"
+        },
+        "seriesMatIsolation": {
+          "meaning": "产品系列智能节点数据隔离标识"
+        },
+        "seriesMatJsScript": {
+          "meaning": "产品系列js脚本"
+        },
+        "seriesMatMaxInventory": {
+          "meaning": "seriesMatMaxInventory"
+        },
+        "seriesMatMinInventory": {
+          "meaning": "seriesMatMinInventory"
+        },
+        "seriesMatName": {
+          "meaning": "产品系列智能节点名"
+        },
+        "seriesMatNameCodeSearch": {
+          "meaning": "产品系列name、user_code模糊搜索"
+        },
+        "seriesMatNumberExtra1": {
+          "meaning": "产品系列扩展数量1"
+        },
+        "seriesMatNumberExtra2": {
+          "meaning": "产品系列扩展数量2"
+        },
+        "seriesMatNumberExtra3": {
+          "meaning": "产品系列扩展数量3"
+        },
+        "seriesMatNumberExtra4": {
+          "meaning": "产品系列扩展数量4"
+        },
+        "seriesMatNumberExtra5": {
+          "meaning": "产品系列扩展数量5"
+        },
+        "seriesMatOrigin": {
+          "meaning": "seriesMatOrigin"
+        },
+        "seriesMatOverPurchasePercent": {
+          "meaning": "seriesMatOverPurchasePercent"
+        },
+        "seriesMatParentId": {
+          "meaning": "产品系列父节点ID"
+        },
+        "seriesMatPlaceOfOrigin": {
+          "meaning": "seriesMatPlaceOfOrigin"
+        },
+        "seriesMatProcessInstanceId": {
+          "meaning": "产品系列流程实例ID"
+        },
+        "seriesMatProductGroup": {
+          "meaning": "seriesMatProductGroup"
+        },
+        "seriesMatPurCycle": {
+          "meaning": "seriesMatPurCycle"
+        },
+        "seriesMatPurMatCont": {
+          "meaning": "seriesMatPurMatCont"
+        },
+        "seriesMatSearchCode": {
+          "meaning": "seriesMatSearchCode"
+        },
+        "seriesMatSerialNumber": {
+          "meaning": "产品系列顺序号"
+        },
+        "seriesMatShelfLife": {
+          "meaning": "seriesMatShelfLife"
+        },
+        "seriesMatStandardCostsIncludingTax": {
+          "meaning": "seriesMatStandardCostsIncludingTax"
+        },
+        "seriesMatStandardCostsWithoutTax": {
+          "meaning": "seriesMatStandardCostsWithoutTax"
+        },
+        "seriesMatState": {
+          "meaning": "产品系列通用状态"
+        },
+        "seriesMatSystemCode": {
+          "meaning": "产品系列系统编码"
+        },
+        "seriesMatTaskNodeName": {
+          "meaning": "产品系列任务节点名称"
+        },
+        "seriesMatTenantId": {
+          "meaning": "seriesMatTenantId"
+        },
+        "seriesMatThirdPartyClass": {
+          "meaning": "产品系列第三方分类"
+        },
+        "seriesMatThirdPartyId": {
+          "meaning": "产品系列第三方系统中的唯一ID"
+        },
+        "seriesMatThirdPartyName": {
+          "meaning": "产品系列第三方名称"
+        },
+        "seriesMatToAuditDate": {
+          "meaning": "seriesMatToAuditDate"
+        },
+        "seriesMatToCreateTime": {
+          "meaning": "seriesMatToCreateTime"
+        },
+        "seriesMatToDateExtra1": {
+          "meaning": "seriesMatToDateExtra1"
+        },
+        "seriesMatToDateExtra2": {
+          "meaning": "seriesMatToDateExtra2"
+        },
+        "seriesMatToDateExtra3": {
+          "meaning": "seriesMatToDateExtra3"
+        },
+        "seriesMatToDateExtra4": {
+          "meaning": "seriesMatToDateExtra4"
+        },
+        "seriesMatToDateExtra5": {
+          "meaning": "seriesMatToDateExtra5"
+        },
+        "seriesMatToUpdateTime": {
+          "meaning": "seriesMatToUpdateTime"
+        },
+        "seriesMatUpdateTime": {
+          "meaning": "产品系列更新时间"
+        },
+        "seriesMatUpdater": {
+          "meaning": "产品系列更新人"
+        },
+        "seriesMatUpdaterId": {
+          "meaning": "产品系列更新人ID"
+        },
+        "seriesMatUserCode": {
+          "meaning": "产品系列智能节点的唯一编码"
+        },
+        "seriesMatVarExtra1": {
+          "meaning": "产品系列扩展1"
+        },
+        "seriesMatVarExtra2": {
+          "meaning": "产品系列扩展2"
+        },
+        "seriesMatVarExtra3": {
+          "meaning": "产品系列扩展3"
+        },
+        "seriesMatVarExtra4": {
+          "meaning": "产品系列扩展4"
+        },
+        "seriesMatVarExtra5": {
+          "meaning": "产品系列扩展5"
+        },
+        "seriesMatVersion": {
+          "meaning": "产品系列版本号"
+        },
+        "seriesMatWarehouseSpaceId": {
+          "meaning": "seriesMatWarehouseSpaceId"
+        },
+        "seriesMaterialId": {
+          "meaning": "产品系列物料id"
+        },
+        "seriesMaterialIds": {
+          "meaning": "产品系列物料id列表(-查询入参-)"
+        },
+        "seriesMerchantId": {
+          "meaning": "产品系列客户guid"
+        },
+        "seriesName": {
+          "meaning": "产品系列智能节点名"
+        },
+        "seriesNameCodeSearch": {
+          "meaning": "产品系列name、user_code模糊搜索"
+        },
+        "seriesNumberExtra1": {
+          "meaning": "产品系列扩展数量1"
+        },
+        "seriesNumberExtra2": {
+          "meaning": "产品系列扩展数量2"
+        },
+        "seriesNumberExtra3": {
+          "meaning": "产品系列扩展数量3"
+        },
+        "seriesNumberExtra4": {
+          "meaning": "产品系列扩展数量4"
+        },
+        "seriesNumberExtra5": {
+          "meaning": "产品系列扩展数量5"
+        },
+        "seriesParentId": {
+          "meaning": "产品系列父节点ID"
+        },
+        "seriesProcessInstanceId": {
+          "meaning": "产品系列流程实例ID"
+        },
+        "seriesSerialNumber": {
+          "meaning": "产品系列顺序号"
+        },
+        "seriesState": {
+          "meaning": "产品系列通用状态"
+        },
+        "seriesSystemCode": {
+          "meaning": "产品系列系统编码"
+        },
+        "seriesTaskNodeName": {
+          "meaning": "产品系列任务节点名称"
+        },
+        "seriesTenantId": {
+          "meaning": "产品系列租户id"
+        },
+        "seriesThirdPartyClass": {
+          "meaning": "产品系列第三方分类"
+        },
+        "seriesThirdPartyId": {
+          "meaning": "产品系列第三方系统中的唯一ID"
+        },
+        "seriesThirdPartyName": {
+          "meaning": "产品系列第三方名称"
+        },
+        "seriesToAuditDate": {
+          "meaning": "seriesToAuditDate"
+        },
+        "seriesToCreateTime": {
+          "meaning": "seriesToCreateTime"
+        },
+        "seriesToDateExtra1": {
+          "meaning": "seriesToDateExtra1"
+        },
+        "seriesToDateExtra2": {
+          "meaning": "seriesToDateExtra2"
+        },
+        "seriesToDateExtra3": {
+          "meaning": "seriesToDateExtra3"
+        },
+        "seriesToDateExtra4": {
+          "meaning": "seriesToDateExtra4"
+        },
+        "seriesToDateExtra5": {
+          "meaning": "seriesToDateExtra5"
+        },
+        "seriesToUpdateTime": {
+          "meaning": "seriesToUpdateTime"
+        },
+        "seriesUpdateTime": {
+          "meaning": "产品系列更新时间"
+        },
+        "seriesUpdater": {
+          "meaning": "产品系列更新人"
+        },
+        "seriesUpdaterId": {
+          "meaning": "产品系列更新人ID"
+        },
+        "seriesUserCode": {
+          "meaning": "产品系列智能节点的唯一编码"
+        },
+        "seriesVarExtra1": {
+          "meaning": "产品系列扩展1"
+        },
+        "seriesVarExtra2": {
+          "meaning": "产品系列扩展2"
+        },
+        "seriesVarExtra3": {
+          "meaning": "产品系列扩展3"
+        },
+        "seriesVarExtra4": {
+          "meaning": "产品系列扩展4"
+        },
+        "seriesVarExtra5": {
+          "meaning": "产品系列扩展5"
+        },
+        "seriesVersion": {
+          "meaning": "产品系列版本号"
+        }
+      }
+    }

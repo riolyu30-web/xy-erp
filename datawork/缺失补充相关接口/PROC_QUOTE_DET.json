@@ -1,0 +1,759 @@
+{
+  "api_name" : "/proc-quote-det/findList",
+  "table_name" : "加工商报价明细",
+  "request" : {
+    "procQuoteDetProcQuoteClazz" : "PROC_QUOTE",
+    "procQuoteDetClazz" : "PROC_QUOTE_DET"
+  },
+  "mainTabClazz" : "PROC_QUOTE_DET",
+  "response" : {
+    "procQuoteDetActualTimeRequired" : {
+      "meaning" : "加工商报价明细实际需时(小时)"
+    },
+    "procQuoteDetAdjustmentTimeRequired" : {
+      "meaning" : "加工商报价明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "procQuoteDetApplicationId" : {
+      "meaning" : "加工商报价明细应用ID"
+    },
+    "procQuoteDetAuditDate" : {
+      "meaning" : "加工商报价明细审核时间"
+    },
+    "procQuoteDetAuditStatus" : {
+      "meaning" : "加工商报价明细审核状态"
+    },
+    "procQuoteDetAvailableScheduleId" : {
+      "meaning" : "加工商报价明细可用日程id"
+    },
+    "procQuoteDetBeginTime" : {
+      "meaning" : "加工商报价明细开始时间"
+    },
+    "procQuoteDetBizVersion" : {
+      "meaning" : "加工商报价明细业务自定义版本号"
+    },
+    "procQuoteDetBriefName" : {
+      "meaning" : "加工商报价明细简称"
+    },
+    "procQuoteDetBusDivisId" : {
+      "meaning" : "加工商报价明细事业部id"
+    },
+    "procQuoteDetClazz" : {
+      "meaning" : "加工商报价明细子类 类名（表和类一一对应）"
+    },
+    "procQuoteDetClosedReason" : {
+      "meaning" : "加工商报价明细结案原因"
+    },
+    "procQuoteDetClosedStatus" : {
+      "meaning" : "加工商报价明细结案状态"
+    },
+    "procQuoteDetComment" : {
+      "meaning" : "加工商报价明细评论"
+    },
+    "procQuoteDetCompleteQuantity" : {
+      "meaning" : "加工商报价明细完成数量"
+    },
+    "procQuoteDetCompleteStatus" : {
+      "meaning" : "加工商报价明细完成状态"
+    },
+    "procQuoteDetCreateTime" : {
+      "meaning" : "加工商报价明细创建时间"
+    },
+    "procQuoteDetCreator" : {
+      "meaning" : "加工商报价明细创建人"
+    },
+    "procQuoteDetCreatorId" : {
+      "meaning" : "加工商报价明细创建人ID"
+    },
+    "procQuoteDetDateExtra1" : {
+      "meaning" : "加工商报价明细扩展时间1"
+    },
+    "procQuoteDetDateExtra2" : {
+      "meaning" : "加工商报价明细扩展时间2"
+    },
+    "procQuoteDetDateExtra3" : {
+      "meaning" : "加工商报价明细扩展时间3"
+    },
+    "procQuoteDetDateExtra4" : {
+      "meaning" : "加工商报价明细扩展时间4"
+    },
+    "procQuoteDetDateExtra5" : {
+      "meaning" : "加工商报价明细扩展时间5"
+    },
+    "procQuoteDetDefaultType" : {
+      "meaning" : "加工商报价明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "procQuoteDetDeliveryDate" : {
+      "meaning" : "加工商报价明细交货日期"
+    },
+    "procQuoteDetDescription" : {
+      "meaning" : "加工商报价明细描述"
+    },
+    "procQuoteDetDiscountRate" : {
+      "meaning" : "加工商报价明细下浮率"
+    },
+    "procQuoteDetEndTime" : {
+      "meaning" : "加工商报价明细结束时间"
+    },
+    "procQuoteDetEndTimeRequired" : {
+      "meaning" : "加工商报价明细最后需时(小时)"
+    },
+    "procQuoteDetEngName" : {
+      "meaning" : "加工商报价明细英文名称"
+    },
+    "procQuoteDetEquipmentId" : {
+      "meaning" : "加工商报价明细设备id"
+    },
+    "procQuoteDetExchangeRateId" : {
+      "meaning" : "加工商报价明细币种汇率id"
+    },
+    "procQuoteDetExtension" : {
+      "meaning" : "加工商报价明细扩展数据"
+    },
+    "procQuoteDetExternalState" : {
+      "meaning" : "加工商报价明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "procQuoteDetFilterClazz" : {
+      "meaning" : "加工商报价明细冗余字段用于筛选"
+    },
+    "procQuoteDetFlags" : {
+      "meaning" : "加工商报价明细63位标志位"
+    },
+    "procQuoteDetFromAuditDate" : {
+      "meaning" : "procQuoteDetFromAuditDate"
+    },
+    "procQuoteDetFromBeginTime" : {
+      "meaning" : "procQuoteDetFromBeginTime"
+    },
+    "procQuoteDetFromCreateTime" : {
+      "meaning" : "procQuoteDetFromCreateTime"
+    },
+    "procQuoteDetFromDateExtra1" : {
+      "meaning" : "procQuoteDetFromDateExtra1"
+    },
+    "procQuoteDetFromDateExtra2" : {
+      "meaning" : "procQuoteDetFromDateExtra2"
+    },
+    "procQuoteDetFromDateExtra3" : {
+      "meaning" : "procQuoteDetFromDateExtra3"
+    },
+    "procQuoteDetFromDateExtra4" : {
+      "meaning" : "procQuoteDetFromDateExtra4"
+    },
+    "procQuoteDetFromDateExtra5" : {
+      "meaning" : "procQuoteDetFromDateExtra5"
+    },
+    "procQuoteDetFromDeliveryDate" : {
+      "meaning" : "procQuoteDetFromDeliveryDate"
+    },
+    "procQuoteDetFromEndTime" : {
+      "meaning" : "procQuoteDetFromEndTime"
+    },
+    "procQuoteDetFromReceiptDate" : {
+      "meaning" : "procQuoteDetFromReceiptDate"
+    },
+    "procQuoteDetFromUpdateTime" : {
+      "meaning" : "procQuoteDetFromUpdateTime"
+    },
+    "procQuoteDetFscType" : {
+      "meaning" : "加工商报价明细FSC声明"
+    },
+    "procQuoteDetGenerativePeople" : {
+      "meaning" : "加工商报价明细下发人"
+    },
+    "procQuoteDetGenerativeState" : {
+      "meaning" : "加工商报价明细下发状态"
+    },
+    "procQuoteDetGroovyScript" : {
+      "meaning" : "加工商报价明细groovy脚本"
+    },
+    "procQuoteDetGropeCode" : {
+      "meaning" : "加工商报价明细搜索码"
+    },
+    "procQuoteDetHasPriceLimit" : {
+      "meaning" : "加工商报价明细是否限价"
+    },
+    "procQuoteDetId" : {
+      "meaning" : "加工商报价明细主键ID",
+      "is_primary" : true
+    },
+    "procQuoteDetInUsed" : {
+      "meaning" : "加工商报价明细是否被使用"
+    },
+    "procQuoteDetInvTypeTaxRateId" : {
+      "meaning" : "加工商报价明细发票税率id"
+    },
+    "procQuoteDetIsBanned" : {
+      "meaning" : "加工商报价明细是否被禁用"
+    },
+    "procQuoteDetIsDeleted" : {
+      "meaning" : "加工商报价明细是否被删除"
+    },
+    "procQuoteDetIsLeaf" : {
+      "meaning" : "加工商报价明细是否叶子节点"
+    },
+    "procQuoteDetIsMainFlow" : {
+      "meaning" : "加工商报价明细是否是主流程"
+    },
+    "procQuoteDetIsManualModificationDate" : {
+      "meaning" : "加工商报价明细是否手动修改计划生产时间"
+    },
+    "procQuoteDetIsolation" : {
+      "meaning" : "加工商报价明细智能节点数据隔离标识"
+    },
+    "procQuoteDetItemId" : {
+      "meaning" : "加工商报价明细定价项目id。可以是工序、物料、产品。"
+    },
+    "procQuoteDetJsScript" : {
+      "meaning" : "加工商报价明细js脚本"
+    },
+    "procQuoteDetMarkupRate" : {
+      "meaning" : "加工商报价明细上浮率"
+    },
+    "procQuoteDetMaterialId" : {
+      "meaning" : "加工商报价明细物料id"
+    },
+    "procQuoteDetMaxQty" : {
+      "meaning" : "加工商报价明细最大数量"
+    },
+    "procQuoteDetMinOrderQty" : {
+      "meaning" : "加工商报价明细起订量"
+    },
+    "procQuoteDetMinPrice" : {
+      "meaning" : "加工商报价明细起步价"
+    },
+    "procQuoteDetMinQty" : {
+      "meaning" : "加工商报价明细最小数量"
+    },
+    "procQuoteDetName" : {
+      "meaning" : "加工商报价明细智能节点名"
+    },
+    "procQuoteDetNameCodeSearch" : {
+      "meaning" : "加工商报价明细name、user_code模糊搜索"
+    },
+    "procQuoteDetNumberExtra1" : {
+      "meaning" : "加工商报价明细扩展数量1"
+    },
+    "procQuoteDetNumberExtra2" : {
+      "meaning" : "加工商报价明细扩展数量2"
+    },
+    "procQuoteDetNumberExtra3" : {
+      "meaning" : "加工商报价明细扩展数量3"
+    },
+    "procQuoteDetNumberExtra4" : {
+      "meaning" : "加工商报价明细扩展数量4"
+    },
+    "procQuoteDetNumberExtra5" : {
+      "meaning" : "加工商报价明细扩展数量5"
+    },
+    "procQuoteDetParentId" : {
+      "meaning" : "加工商报价明细父节点ID"
+    },
+    "procQuoteDetPlannedOutputQuantity" : {
+      "meaning" : "加工商报价明细计划产出数量"
+    },
+    "procQuoteDetPlannedTimeRequired" : {
+      "meaning" : "加工商报价明细计划需时(小时)"
+    },
+    "procQuoteDetPrintTimes" : {
+      "meaning" : "加工商报价明细打印次数"
+    },
+    "procQuoteDetPriority" : {
+      "meaning" : "加工商报价明细优先级"
+    },
+    "procQuoteDetProcQuoteActualTimeRequired" : {
+      "meaning" : "加工商报价明细实际需时(小时)"
+    },
+    "procQuoteDetProcQuoteAdjustmentTimeRequired" : {
+      "meaning" : "加工商报价明细调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "procQuoteDetProcQuoteApplicationId" : {
+      "meaning" : "加工商报价明细应用ID"
+    },
+    "procQuoteDetProcQuoteAuditDate" : {
+      "meaning" : "加工商报价明细审核时间"
+    },
+    "procQuoteDetProcQuoteAuditStatus" : {
+      "meaning" : "加工商报价明细审核状态"
+    },
+    "procQuoteDetProcQuoteAvailableScheduleId" : {
+      "meaning" : "加工商报价明细可用日程id"
+    },
+    "procQuoteDetProcQuoteBeginTime" : {
+      "meaning" : "加工商报价明细开始时间"
+    },
+    "procQuoteDetProcQuoteBizVersion" : {
+      "meaning" : "加工商报价明细业务自定义版本号"
+    },
+    "procQuoteDetProcQuoteBriefName" : {
+      "meaning" : "加工商报价明细简称"
+    },
+    "procQuoteDetProcQuoteBusDivisId" : {
+      "meaning" : "加工商报价明细事业部id"
+    },
+    "procQuoteDetProcQuoteClazz" : {
+      "meaning" : "加工商报价明细子类 类名（表和类一一对应）"
+    },
+    "procQuoteDetProcQuoteClosedReason" : {
+      "meaning" : "加工商报价明细结案原因"
+    },
+    "procQuoteDetProcQuoteClosedStatus" : {
+      "meaning" : "加工商报价明细结案状态"
+    },
+    "procQuoteDetProcQuoteComment" : {
+      "meaning" : "加工商报价明细评论"
+    },
+    "procQuoteDetProcQuoteCompleteQuantity" : {
+      "meaning" : "加工商报价明细完成数量"
+    },
+    "procQuoteDetProcQuoteCompleteStatus" : {
+      "meaning" : "加工商报价明细完成状态"
+    },
+    "procQuoteDetProcQuoteCreateTime" : {
+      "meaning" : "加工商报价明细创建时间"
+    },
+    "procQuoteDetProcQuoteCreator" : {
+      "meaning" : "加工商报价明细创建人"
+    },
+    "procQuoteDetProcQuoteCreatorId" : {
+      "meaning" : "加工商报价明细创建人ID"
+    },
+    "procQuoteDetProcQuoteCurrencyId" : {
+      "meaning" : "加工商报价明细币种id"
+    },
+    "procQuoteDetProcQuoteDateExtra1" : {
+      "meaning" : "加工商报价明细扩展时间1"
+    },
+    "procQuoteDetProcQuoteDateExtra2" : {
+      "meaning" : "加工商报价明细扩展时间2"
+    },
+    "procQuoteDetProcQuoteDateExtra3" : {
+      "meaning" : "加工商报价明细扩展时间3"
+    },
+    "procQuoteDetProcQuoteDateExtra4" : {
+      "meaning" : "加工商报价明细扩展时间4"
+    },
+    "procQuoteDetProcQuoteDateExtra5" : {
+      "meaning" : "加工商报价明细扩展时间5"
+    },
+    "procQuoteDetProcQuoteDefaultType" : {
+      "meaning" : "加工商报价明细智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "procQuoteDetProcQuoteDeliveryDate" : {
+      "meaning" : "加工商报价明细交货日期"
+    },
+    "procQuoteDetProcQuoteDescription" : {
+      "meaning" : "加工商报价明细描述"
+    },
+    "procQuoteDetProcQuoteEndTime" : {
+      "meaning" : "加工商报价明细结束时间"
+    },
+    "procQuoteDetProcQuoteEndTimeRequired" : {
+      "meaning" : "加工商报价明细最后需时(小时)"
+    },
+    "procQuoteDetProcQuoteEngName" : {
+      "meaning" : "加工商报价明细英文名称"
+    },
+    "procQuoteDetProcQuoteEquipmentId" : {
+      "meaning" : "加工商报价明细设备id"
+    },
+    "procQuoteDetProcQuoteExchangeRateId" : {
+      "meaning" : "加工商报价明细币种汇率id"
+    },
+    "procQuoteDetProcQuoteExtension" : {
+      "meaning" : "加工商报价明细扩展数据"
+    },
+    "procQuoteDetProcQuoteExternalState" : {
+      "meaning" : "加工商报价明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "procQuoteDetProcQuoteFilterClazz" : {
+      "meaning" : "加工商报价明细冗余字段用于筛选"
+    },
+    "procQuoteDetProcQuoteFlags" : {
+      "meaning" : "加工商报价明细63位标志位"
+    },
+    "procQuoteDetProcQuoteFromAuditDate" : {
+      "meaning" : "procQuoteDetProcQuoteFromAuditDate"
+    },
+    "procQuoteDetProcQuoteFromBeginTime" : {
+      "meaning" : "procQuoteDetProcQuoteFromBeginTime"
+    },
+    "procQuoteDetProcQuoteFromCreateTime" : {
+      "meaning" : "procQuoteDetProcQuoteFromCreateTime"
+    },
+    "procQuoteDetProcQuoteFromDateExtra1" : {
+      "meaning" : "procQuoteDetProcQuoteFromDateExtra1"
+    },
+    "procQuoteDetProcQuoteFromDateExtra2" : {
+      "meaning" : "procQuoteDetProcQuoteFromDateExtra2"
+    },
+    "procQuoteDetProcQuoteFromDateExtra3" : {
+      "meaning" : "procQuoteDetProcQuoteFromDateExtra3"
+    },
+    "procQuoteDetProcQuoteFromDateExtra4" : {
+      "meaning" : "procQuoteDetProcQuoteFromDateExtra4"
+    },
+    "procQuoteDetProcQuoteFromDateExtra5" : {
+      "meaning" : "procQuoteDetProcQuoteFromDateExtra5"
+    },
+    "procQuoteDetProcQuoteFromDeliveryDate" : {
+      "meaning" : "procQuoteDetProcQuoteFromDeliveryDate"
+    },
+    "procQuoteDetProcQuoteFromEndTime" : {
+      "meaning" : "procQuoteDetProcQuoteFromEndTime"
+    },
+    "procQuoteDetProcQuoteFromReceiptDate" : {
+      "meaning" : "procQuoteDetProcQuoteFromReceiptDate"
+    },
+    "procQuoteDetProcQuoteFromUpdateTime" : {
+      "meaning" : "procQuoteDetProcQuoteFromUpdateTime"
+    },
+    "procQuoteDetProcQuoteFscType" : {
+      "meaning" : "加工商报价明细FSC声明"
+    },
+    "procQuoteDetProcQuoteGenerativePeople" : {
+      "meaning" : "加工商报价明细下发人"
+    },
+    "procQuoteDetProcQuoteGenerativeState" : {
+      "meaning" : "加工商报价明细下发状态"
+    },
+    "procQuoteDetProcQuoteGroovyScript" : {
+      "meaning" : "加工商报价明细groovy脚本"
+    },
+    "procQuoteDetProcQuoteGropeCode" : {
+      "meaning" : "加工商报价明细搜索码"
+    },
+    "procQuoteDetProcQuoteId" : {
+      "meaning" : "加工商报价明细主键ID"
+    },
+    "procQuoteDetProcQuoteInUsed" : {
+      "meaning" : "加工商报价明细是否被使用"
+    },
+    "procQuoteDetProcQuoteInvTypeTaxRateId" : {
+      "meaning" : "加工商报价明细发票税率id"
+    },
+    "procQuoteDetProcQuoteIsBanned" : {
+      "meaning" : "加工商报价明细是否被禁用"
+    },
+    "procQuoteDetProcQuoteIsDeleted" : {
+      "meaning" : "加工商报价明细是否被删除"
+    },
+    "procQuoteDetProcQuoteIsLeaf" : {
+      "meaning" : "加工商报价明细是否叶子节点"
+    },
+    "procQuoteDetProcQuoteIsMainFlow" : {
+      "meaning" : "加工商报价明细是否是主流程"
+    },
+    "procQuoteDetProcQuoteIsManualModificationDate" : {
+      "meaning" : "加工商报价明细是否手动修改计划生产时间"
+    },
+    "procQuoteDetProcQuoteIsolation" : {
+      "meaning" : "加工商报价明细智能节点数据隔离标识"
+    },
+    "procQuoteDetProcQuoteJsScript" : {
+      "meaning" : "加工商报价明细js脚本"
+    },
+    "procQuoteDetProcQuoteMaterialId" : {
+      "meaning" : "加工商报价明细物料id"
+    },
+    "procQuoteDetProcQuoteName" : {
+      "meaning" : "加工商报价明细智能节点名"
+    },
+    "procQuoteDetProcQuoteNameCodeSearch" : {
+      "meaning" : "加工商报价明细name、user_code模糊搜索"
+    },
+    "procQuoteDetProcQuoteNumberExtra1" : {
+      "meaning" : "加工商报价明细扩展数量1"
+    },
+    "procQuoteDetProcQuoteNumberExtra2" : {
+      "meaning" : "加工商报价明细扩展数量2"
+    },
+    "procQuoteDetProcQuoteNumberExtra3" : {
+      "meaning" : "加工商报价明细扩展数量3"
+    },
+    "procQuoteDetProcQuoteNumberExtra4" : {
+      "meaning" : "加工商报价明细扩展数量4"
+    },
+    "procQuoteDetProcQuoteNumberExtra5" : {
+      "meaning" : "加工商报价明细扩展数量5"
+    },
+    "procQuoteDetProcQuoteParentId" : {
+      "meaning" : "加工商报价明细父节点ID"
+    },
+    "procQuoteDetProcQuotePartnerId" : {
+      "meaning" : "加工商报价明细合作方id 加工商、供应商、客户"
+    },
+    "procQuoteDetProcQuotePlannedOutputQuantity" : {
+      "meaning" : "加工商报价明细计划产出数量"
+    },
+    "procQuoteDetProcQuotePlannedTimeRequired" : {
+      "meaning" : "加工商报价明细计划需时(小时)"
+    },
+    "procQuoteDetProcQuotePrintTimes" : {
+      "meaning" : "加工商报价明细打印次数"
+    },
+    "procQuoteDetProcQuotePriority" : {
+      "meaning" : "加工商报价明细优先级"
+    },
+    "procQuoteDetProcQuoteProcessInstanceId" : {
+      "meaning" : "加工商报价明细流程实例ID"
+    },
+    "procQuoteDetProcQuoteProductionProcessesTypeId" : {
+      "meaning" : "加工商报价明细工序类型ID"
+    },
+    "procQuoteDetProcQuoteProductionShiftId" : {
+      "meaning" : "加工商报价明细生产班次ID"
+    },
+    "procQuoteDetProcQuoteQuantity" : {
+      "meaning" : "加工商报价明细任务数量"
+    },
+    "procQuoteDetProcQuoteReceiptDate" : {
+      "meaning" : "加工商报价明细单据日期"
+    },
+    "procQuoteDetProcQuoteReceiptType" : {
+      "meaning" : "加工商报价明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "procQuoteDetProcQuoteRelatedTasksId" : {
+      "meaning" : "加工商报价明细关联任务id"
+    },
+    "procQuoteDetProcQuoteSerialNumber" : {
+      "meaning" : "加工商报价明细顺序号"
+    },
+    "procQuoteDetProcQuoteSource" : {
+      "meaning" : "加工商报价明细源"
+    },
+    "procQuoteDetProcQuoteSourceType" : {
+      "meaning" : "加工商报价明细来源类型"
+    },
+    "procQuoteDetProcQuoteState" : {
+      "meaning" : "加工商报价明细通用状态"
+    },
+    "procQuoteDetProcQuoteSystemCode" : {
+      "meaning" : "加工商报价明细系统编码"
+    },
+    "procQuoteDetProcQuoteTarget" : {
+      "meaning" : "加工商报价明细目标"
+    },
+    "procQuoteDetProcQuoteTaskNodeName" : {
+      "meaning" : "加工商报价明细任务节点名称"
+    },
+    "procQuoteDetProcQuoteTaskNodeType" : {
+      "meaning" : "加工商报价明细任务节点类型"
+    },
+    "procQuoteDetProcQuoteTenantId" : {
+      "meaning" : "加工商报价明细租户ID"
+    },
+    "procQuoteDetProcQuoteThirdPartyClass" : {
+      "meaning" : "加工商报价明细第三方分类"
+    },
+    "procQuoteDetProcQuoteThirdPartyId" : {
+      "meaning" : "加工商报价明细第三方系统中的唯一ID"
+    },
+    "procQuoteDetProcQuoteThirdPartyName" : {
+      "meaning" : "加工商报价明细第三方名称"
+    },
+    "procQuoteDetProcQuoteToAuditDate" : {
+      "meaning" : "procQuoteDetProcQuoteToAuditDate"
+    },
+    "procQuoteDetProcQuoteToBeginTime" : {
+      "meaning" : "procQuoteDetProcQuoteToBeginTime"
+    },
+    "procQuoteDetProcQuoteToCreateTime" : {
+      "meaning" : "procQuoteDetProcQuoteToCreateTime"
+    },
+    "procQuoteDetProcQuoteToDateExtra1" : {
+      "meaning" : "procQuoteDetProcQuoteToDateExtra1"
+    },
+    "procQuoteDetProcQuoteToDateExtra2" : {
+      "meaning" : "procQuoteDetProcQuoteToDateExtra2"
+    },
+    "procQuoteDetProcQuoteToDateExtra3" : {
+      "meaning" : "procQuoteDetProcQuoteToDateExtra3"
+    },
+    "procQuoteDetProcQuoteToDateExtra4" : {
+      "meaning" : "procQuoteDetProcQuoteToDateExtra4"
+    },
+    "procQuoteDetProcQuoteToDateExtra5" : {
+      "meaning" : "procQuoteDetProcQuoteToDateExtra5"
+    },
+    "procQuoteDetProcQuoteToDeliveryDate" : {
+      "meaning" : "procQuoteDetProcQuoteToDeliveryDate"
+    },
+    "procQuoteDetProcQuoteToEndTime" : {
+      "meaning" : "procQuoteDetProcQuoteToEndTime"
+    },
+    "procQuoteDetProcQuoteToReceiptDate" : {
+      "meaning" : "procQuoteDetProcQuoteToReceiptDate"
+    },
+    "procQuoteDetProcQuoteToUpdateTime" : {
+      "meaning" : "procQuoteDetProcQuoteToUpdateTime"
+    },
+    "procQuoteDetProcQuoteUnitCode" : {
+      "meaning" : "加工商报价明细单位id"
+    },
+    "procQuoteDetProcQuoteUpdateTime" : {
+      "meaning" : "加工商报价明细更新时间"
+    },
+    "procQuoteDetProcQuoteUpdater" : {
+      "meaning" : "加工商报价明细更新人"
+    },
+    "procQuoteDetProcQuoteUpdaterId" : {
+      "meaning" : "加工商报价明细更新人ID"
+    },
+    "procQuoteDetProcQuoteUserCode" : {
+      "meaning" : "加工商报价明细智能节点的唯一编码"
+    },
+    "procQuoteDetProcQuoteVarExtra1" : {
+      "meaning" : "加工商报价明细扩展1"
+    },
+    "procQuoteDetProcQuoteVarExtra2" : {
+      "meaning" : "加工商报价明细扩展2"
+    },
+    "procQuoteDetProcQuoteVarExtra3" : {
+      "meaning" : "加工商报价明细扩展3"
+    },
+    "procQuoteDetProcQuoteVarExtra4" : {
+      "meaning" : "加工商报价明细扩展4"
+    },
+    "procQuoteDetProcQuoteVarExtra5" : {
+      "meaning" : "加工商报价明细扩展5"
+    },
+    "procQuoteDetProcQuoteVersion" : {
+      "meaning" : "加工商报价明细版本号"
+    },
+    "procQuoteDetProcessInstanceId" : {
+      "meaning" : "加工商报价明细流程实例ID"
+    },
+    "procQuoteDetProductionProcessesTypeId" : {
+      "meaning" : "加工商报价明细工序类型ID"
+    },
+    "procQuoteDetProductionShiftId" : {
+      "meaning" : "加工商报价明细生产班次ID"
+    },
+    "procQuoteDetQuantity" : {
+      "meaning" : "加工商报价明细任务数量"
+    },
+    "procQuoteDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "加工商报价明细含税报价单价(吨价，平方价，千平方英寸)"
+    },
+    "procQuoteDetReceiptDate" : {
+      "meaning" : "加工商报价明细单据日期"
+    },
+    "procQuoteDetReceiptType" : {
+      "meaning" : "加工商报价明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "procQuoteDetRelatedTasksId" : {
+      "meaning" : "加工商报价明细关联任务id"
+    },
+    "procQuoteDetSerialNumber" : {
+      "meaning" : "加工商报价明细顺序号"
+    },
+    "procQuoteDetSource" : {
+      "meaning" : "加工商报价明细源"
+    },
+    "procQuoteDetSourceType" : {
+      "meaning" : "加工商报价明细来源类型"
+    },
+    "procQuoteDetState" : {
+      "meaning" : "加工商报价明细通用状态"
+    },
+    "procQuoteDetSystemCode" : {
+      "meaning" : "加工商报价明细系统编码"
+    },
+    "procQuoteDetTarget" : {
+      "meaning" : "加工商报价明细目标"
+    },
+    "procQuoteDetTaskNodeName" : {
+      "meaning" : "加工商报价明细任务节点名称"
+    },
+    "procQuoteDetTaskNodeType" : {
+      "meaning" : "加工商报价明细任务节点类型"
+    },
+    "procQuoteDetTenantId" : {
+      "meaning" : "加工商报价明细租户ID"
+    },
+    "procQuoteDetThirdPartyClass" : {
+      "meaning" : "加工商报价明细第三方分类"
+    },
+    "procQuoteDetThirdPartyId" : {
+      "meaning" : "加工商报价明细第三方系统中的唯一ID"
+    },
+    "procQuoteDetThirdPartyName" : {
+      "meaning" : "加工商报价明细第三方名称"
+    },
+    "procQuoteDetToAuditDate" : {
+      "meaning" : "procQuoteDetToAuditDate"
+    },
+    "procQuoteDetToBeginTime" : {
+      "meaning" : "procQuoteDetToBeginTime"
+    },
+    "procQuoteDetToCreateTime" : {
+      "meaning" : "procQuoteDetToCreateTime"
+    },
+    "procQuoteDetToDateExtra1" : {
+      "meaning" : "procQuoteDetToDateExtra1"
+    },
+    "procQuoteDetToDateExtra2" : {
+      "meaning" : "procQuoteDetToDateExtra2"
+    },
+    "procQuoteDetToDateExtra3" : {
+      "meaning" : "procQuoteDetToDateExtra3"
+    },
+    "procQuoteDetToDateExtra4" : {
+      "meaning" : "procQuoteDetToDateExtra4"
+    },
+    "procQuoteDetToDateExtra5" : {
+      "meaning" : "procQuoteDetToDateExtra5"
+    },
+    "procQuoteDetToDeliveryDate" : {
+      "meaning" : "procQuoteDetToDeliveryDate"
+    },
+    "procQuoteDetToEndTime" : {
+      "meaning" : "procQuoteDetToEndTime"
+    },
+    "procQuoteDetToReceiptDate" : {
+      "meaning" : "procQuoteDetToReceiptDate"
+    },
+    "procQuoteDetToUpdateTime" : {
+      "meaning" : "procQuoteDetToUpdateTime"
+    },
+    "procQuoteDetUnitCode" : {
+      "meaning" : "加工商报价明细单位id"
+    },
+    "procQuoteDetUnitId" : {
+      "meaning" : "加工商报价明细计价单位id"
+    },
+    "procQuoteDetUnitPriceIncludingTax" : {
+      "meaning" : "加工商报价明细含税单价"
+    },
+    "procQuoteDetUpdateTime" : {
+      "meaning" : "加工商报价明细更新时间"
+    },
+    "procQuoteDetUpdater" : {
+      "meaning" : "加工商报价明细更新人"
+    },
+    "procQuoteDetUpdaterId" : {
+      "meaning" : "加工商报价明细更新人ID"
+    },
+    "procQuoteDetUserCode" : {
+      "meaning" : "加工商报价明细智能节点的唯一编码"
+    },
+    "procQuoteDetVarExtra1" : {
+      "meaning" : "加工商报价明细扩展1"
+    },
+    "procQuoteDetVarExtra2" : {
+      "meaning" : "加工商报价明细扩展2"
+    },
+    "procQuoteDetVarExtra3" : {
+      "meaning" : "加工商报价明细扩展3"
+    },
+    "procQuoteDetVarExtra4" : {
+      "meaning" : "加工商报价明细扩展4"
+    },
+    "procQuoteDetVarExtra5" : {
+      "meaning" : "加工商报价明细扩展5"
+    },
+    "procQuoteDetVersion" : {
+      "meaning" : "加工商报价明细版本号"
+    }
+  }
+}

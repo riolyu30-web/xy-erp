@@ -1,0 +1,452 @@
+{
+      "api_name": "/equ/findList",
+      "table_name": "设备表",
+      "request": {
+        "equClazz": "EQUIPMENT"
+      },
+      "mainTabClazz": "EQUIPMENT",
+      "response": {
+        "equAccDep": {
+          "meaning": "设备表累计折旧"
+        },
+        "equApplicationId": {
+          "meaning": "设备表应用ID"
+        },
+        "equArrivalDate": {
+          "type": "object",
+          "meaning": "equArrivalDate"
+        },
+        "equAssetStaffId": {
+          "meaning": "设备表资产负责人"
+        },
+        "equAuditDate": {
+          "meaning": "设备表审核时间"
+        },
+        "equAuditStatus": {
+          "meaning": "设备表审核状态"
+        },
+        "equBatchQuantity": {
+          "meaning": "equBatchQuantity"
+        },
+        "equBizVersion": {
+          "meaning": "设备表业务自定义版本号"
+        },
+        "equBrand": {
+          "meaning": "设备表品牌"
+        },
+        "equBriefName": {
+          "meaning": "设备表简称"
+        },
+        "equBusDivisId": {
+          "meaning": "设备表事业部id"
+        },
+        "equCheckTime": {
+          "meaning": "设备表校机时间"
+        },
+        "equClazz": {
+          "meaning": "设备表子类 类名（表和类一一对应）"
+        },
+        "equComment": {
+          "meaning": "设备表评论"
+        },
+        "equCreateTime": {
+          "meaning": "设备表创建时间"
+        },
+        "equCreator": {
+          "meaning": "设备表创建人"
+        },
+        "equCreatorId": {
+          "meaning": "设备表创建人ID"
+        },
+        "equCurrencyId": {
+          "meaning": "设备表币种_id"
+        },
+        "equCustBatchNo": {
+          "meaning": "equCustBatchNo"
+        },
+        "equDailyProductionCapacity": {
+          "meaning": "设备表每日产能(小时)"
+        },
+        "equDateExtra1": {
+          "meaning": "设备表扩展时间1"
+        },
+        "equDateExtra2": {
+          "meaning": "设备表扩展时间2"
+        },
+        "equDateExtra3": {
+          "meaning": "设备表扩展时间3"
+        },
+        "equDateExtra4": {
+          "meaning": "设备表扩展时间4"
+        },
+        "equDateExtra5": {
+          "meaning": "设备表扩展时间5"
+        },
+        "equDefaultType": {
+          "meaning": "设备表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "equDepartId": {
+          "meaning": "设备表部门id"
+        },
+        "equDescription": {
+          "meaning": "设备表描述"
+        },
+        "equEngName": {
+          "meaning": "设备表英文名称"
+        },
+        "equExtension": {
+          "meaning": "设备表扩展数据"
+        },
+        "equExternalState": {
+          "meaning": "设备表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "equFlags": {
+          "meaning": "设备表63位标志位"
+        },
+        "equFromArrivalDate": {
+          "type": "object",
+          "meaning": "equFromArrivalDate"
+        },
+        "equFromAuditDate": {
+          "meaning": "equFromAuditDate"
+        },
+        "equFromCheckTime": {
+          "meaning": "equFromCheckTime"
+        },
+        "equFromCreateTime": {
+          "meaning": "equFromCreateTime"
+        },
+        "equFromDateExtra1": {
+          "meaning": "equFromDateExtra1"
+        },
+        "equFromDateExtra2": {
+          "meaning": "equFromDateExtra2"
+        },
+        "equFromDateExtra3": {
+          "meaning": "equFromDateExtra3"
+        },
+        "equFromDateExtra4": {
+          "meaning": "equFromDateExtra4"
+        },
+        "equFromDateExtra5": {
+          "meaning": "equFromDateExtra5"
+        },
+        "equFromGoLiveDate": {
+          "meaning": "equFromGoLiveDate"
+        },
+        "equFromMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "equFromMaterialDateOfManufacture"
+        },
+        "equFromMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "equFromMaterialPeriodOfValidity"
+        },
+        "equFromPurDate": {
+          "meaning": "equFromPurDate"
+        },
+        "equFromRelSupDate": {
+          "meaning": "equFromRelSupDate"
+        },
+        "equFromUpdateTime": {
+          "meaning": "equFromUpdateTime"
+        },
+        "equFromWarrantyEndDate": {
+          "meaning": "equFromWarrantyEndDate"
+        },
+        "equGoLiveDate": {
+          "meaning": "设备表启用日期"
+        },
+        "equGroovyScript": {
+          "meaning": "设备表groovy脚本"
+        },
+        "equGropeCode": {
+          "meaning": "设备表搜索码"
+        },
+        "equId": {
+          "meaning": "设备表主键ID",
+          "is_primary": true
+        },
+        "equInUsed": {
+          "meaning": "设备表是否被使用"
+        },
+        "equInternalBarcode": {
+          "meaning": "设备表内部条码"
+        },
+        "equIsBanned": {
+          "meaning": "设备表是否被禁用"
+        },
+        "equIsDeleted": {
+          "meaning": "设备表是否被删除"
+        },
+        "equIsItAutomaticallySplit": {
+          "meaning": "equIsItAutomaticallySplit"
+        },
+        "equIsMainFlow": {
+          "meaning": "设备表是否是主流程"
+        },
+        "equIsParallelProduction": {
+          "meaning": "设备表是否并行生产"
+        },
+        "equIsProductionEquipment": {
+          "meaning": "设备表是否生产设备"
+        },
+        "equIsolation": {
+          "meaning": "设备表智能节点数据隔离标识"
+        },
+        "equJsScript": {
+          "meaning": "设备表js脚本"
+        },
+        "equManufacturer": {
+          "meaning": "设备表制造商"
+        },
+        "equMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "equMaterialDateOfManufacture"
+        },
+        "equMaterialId": {
+          "meaning": "equMaterialId"
+        },
+        "equMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "equMaterialPeriodOfValidity"
+        },
+        "equMaxProcessLength": {
+          "meaning": "设备表最大加工长"
+        },
+        "equMaxProcessWidth": {
+          "meaning": "设备表最大加工宽"
+        },
+        "equMaxUsageCount": {
+          "meaning": "设备表最大使用次数"
+        },
+        "equMinProcessLength": {
+          "meaning": "设备表最小加工长"
+        },
+        "equMinProcessWidth": {
+          "meaning": "设备表最小加工宽"
+        },
+        "equName": {
+          "meaning": "设备表智能节点名"
+        },
+        "equNameCodeSearch": {
+          "meaning": "设备表name、user_code模糊搜索"
+        },
+        "equNetValue": {
+          "meaning": "设备表设备净值"
+        },
+        "equNumberExtra1": {
+          "meaning": "设备表扩展数量1"
+        },
+        "equNumberExtra2": {
+          "meaning": "设备表扩展数量2"
+        },
+        "equNumberExtra3": {
+          "meaning": "设备表扩展数量3"
+        },
+        "equNumberExtra4": {
+          "meaning": "设备表扩展数量4"
+        },
+        "equNumberExtra5": {
+          "meaning": "设备表扩展数量5"
+        },
+        "equOrderCostIncludingTax": {
+          "meaning": "equOrderCostIncludingTax"
+        },
+        "equOrderCostWithoutTax": {
+          "meaning": "equOrderCostWithoutTax"
+        },
+        "equOrganizationId": {
+          "meaning": "equOrganizationId"
+        },
+        "equOrigin": {
+          "meaning": "设备表产地"
+        },
+        "equOtherExternalCostsTax": {
+          "meaning": "equOtherExternalCostsTax"
+        },
+        "equParentId": {
+          "meaning": "设备表父节点ID"
+        },
+        "equProcessInstanceId": {
+          "meaning": "设备表流程实例ID"
+        },
+        "equProdBatchNo": {
+          "meaning": "equProdBatchNo"
+        },
+        "equProductionCost": {
+          "meaning": "equProductionCost"
+        },
+        "equPurDate": {
+          "meaning": "设备表采购日期"
+        },
+        "equPurchaseCostIncludingTax": {
+          "meaning": "equPurchaseCostIncludingTax"
+        },
+        "equPurchaseCostWithoutTax": {
+          "meaning": "equPurchaseCostWithoutTax"
+        },
+        "equPurchasePriceIncludingTax": {
+          "meaning": "equPurchasePriceIncludingTax"
+        },
+        "equPurchasePriceWithoutTax": {
+          "meaning": "equPurchasePriceWithoutTax"
+        },
+        "equRelSupDate": {
+          "meaning": "设备表解除监管日期"
+        },
+        "equRunStatus": {
+          "meaning": "设备表运行状态"
+        },
+        "equRunTime": {
+          "meaning": "设备表每日运行时长(小时)"
+        },
+        "equSerialNumber": {
+          "meaning": "设备表顺序号"
+        },
+        "equSettlementCostIncludingTax": {
+          "meaning": "equSettlementCostIncludingTax"
+        },
+        "equSettlementCostWithoutTax": {
+          "meaning": "equSettlementCostWithoutTax"
+        },
+        "equShelfLifeDays": {
+          "meaning": "设备表保质期(天)"
+        },
+        "equStartupFee": {
+          "meaning": "设备表开机费"
+        },
+        "equState": {
+          "meaning": "设备表通用状态"
+        },
+        "equStorageCost": {
+          "meaning": "equStorageCost"
+        },
+        "equSupBatBarcode": {
+          "meaning": "设备表供应商批次条码"
+        },
+        "equSystemCode": {
+          "meaning": "设备表系统编码"
+        },
+        "equTaskNodeName": {
+          "meaning": "设备表任务节点名称"
+        },
+        "equTenantId": {
+          "meaning": "equTenantId"
+        },
+        "equThirdPartyClass": {
+          "meaning": "设备表第三方分类"
+        },
+        "equThirdPartyId": {
+          "meaning": "设备表第三方系统中的唯一ID"
+        },
+        "equThirdPartyName": {
+          "meaning": "设备表第三方名称"
+        },
+        "equToArrivalDate": {
+          "type": "object",
+          "meaning": "equToArrivalDate"
+        },
+        "equToAuditDate": {
+          "meaning": "equToAuditDate"
+        },
+        "equToCheckTime": {
+          "meaning": "equToCheckTime"
+        },
+        "equToCreateTime": {
+          "meaning": "equToCreateTime"
+        },
+        "equToDateExtra1": {
+          "meaning": "equToDateExtra1"
+        },
+        "equToDateExtra2": {
+          "meaning": "equToDateExtra2"
+        },
+        "equToDateExtra3": {
+          "meaning": "equToDateExtra3"
+        },
+        "equToDateExtra4": {
+          "meaning": "equToDateExtra4"
+        },
+        "equToDateExtra5": {
+          "meaning": "equToDateExtra5"
+        },
+        "equToGoLiveDate": {
+          "meaning": "equToGoLiveDate"
+        },
+        "equToMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "equToMaterialDateOfManufacture"
+        },
+        "equToMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "equToMaterialPeriodOfValidity"
+        },
+        "equToPurDate": {
+          "meaning": "equToPurDate"
+        },
+        "equToRelSupDate": {
+          "meaning": "equToRelSupDate"
+        },
+        "equToUpdateTime": {
+          "meaning": "equToUpdateTime"
+        },
+        "equToWarrantyEndDate": {
+          "meaning": "equToWarrantyEndDate"
+        },
+        "equTransportCostIncludingTax": {
+          "meaning": "equTransportCostIncludingTax"
+        },
+        "equTransportCostWithoutTax": {
+          "meaning": "equTransportCostWithoutTax"
+        },
+        "equUpdateTime": {
+          "meaning": "设备表更新时间"
+        },
+        "equUpdater": {
+          "meaning": "设备表更新人"
+        },
+        "equUpdaterId": {
+          "meaning": "设备表更新人ID"
+        },
+        "equUsageCount": {
+          "meaning": "设备表已使用次数"
+        },
+        "equUsageRate": {
+          "meaning": "设备表使用率"
+        },
+        "equUserCode": {
+          "meaning": "设备表智能节点的唯一编码"
+        },
+        "equVarExtra1": {
+          "meaning": "设备表扩展1"
+        },
+        "equVarExtra2": {
+          "meaning": "设备表扩展2"
+        },
+        "equVarExtra3": {
+          "meaning": "设备表扩展3"
+        },
+        "equVarExtra4": {
+          "meaning": "设备表扩展4"
+        },
+        "equVarExtra5": {
+          "meaning": "设备表扩展5"
+        },
+        "equVersion": {
+          "meaning": "设备表版本号"
+        },
+        "equWarehouseSpaceId": {
+          "meaning": "设备表空间_id(摆放在那个位置)"
+        },
+        "equWarrantyEndDate": {
+          "meaning": "设备表保修截止日期"
+        },
+        "equWealthSharingCostTax": {
+          "meaning": "equWealthSharingCostTax"
+        },
+        "equWoBatchNo": {
+          "meaning": "equWoBatchNo"
+        }
+      }
+    }

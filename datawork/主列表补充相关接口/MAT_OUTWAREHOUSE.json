@@ -1,0 +1,362 @@
+{
+  "api_name" : "/mat-outwarehouse/findList",
+  "table_name" : "物料出仓表",
+  "request" : {
+    "matOutwarehouseClazz" : "MAT_OUTWAREHOUSE"
+  },
+  "mainTabClazz" : "MAT_OUTWAREHOUSE",
+  "response" : {
+    "matOutwarehouseActualTimeRequired" : {
+      "meaning" : "物料出仓表实际需时(小时)"
+    },
+    "matOutwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "物料出仓表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matOutwarehouseApplicationId" : {
+      "meaning" : "物料出仓表应用ID"
+    },
+    "matOutwarehouseAuditDate" : {
+      "meaning" : "物料出仓表审核时间"
+    },
+    "matOutwarehouseAuditStatus" : {
+      "meaning" : "物料出仓表审核状态"
+    },
+    "matOutwarehouseAvailableScheduleId" : {
+      "meaning" : "物料出仓表可用日程id"
+    },
+    "matOutwarehouseBeginTime" : {
+      "meaning" : "物料出仓表开始时间"
+    },
+    "matOutwarehouseBizVersion" : {
+      "meaning" : "物料出仓表业务自定义版本号"
+    },
+    "matOutwarehouseBriefName" : {
+      "meaning" : "物料出仓表简称"
+    },
+    "matOutwarehouseBusDivisId" : {
+      "meaning" : "物料出仓表事业部id"
+    },
+    "matOutwarehouseClazz" : {
+      "meaning" : "物料出仓表子类 类名（表和类一一对应）"
+    },
+    "matOutwarehouseClosedReason" : {
+      "meaning" : "物料出仓表结案原因"
+    },
+    "matOutwarehouseClosedStatus" : {
+      "meaning" : "物料出仓表结案状态"
+    },
+    "matOutwarehouseComment" : {
+      "meaning" : "物料出仓表评论"
+    },
+    "matOutwarehouseCompleteQuantity" : {
+      "meaning" : "物料出仓表完成数量"
+    },
+    "matOutwarehouseCompleteStatus" : {
+      "meaning" : "物料出仓表完成状态"
+    },
+    "matOutwarehouseCreateTime" : {
+      "meaning" : "物料出仓表创建时间"
+    },
+    "matOutwarehouseCreator" : {
+      "meaning" : "物料出仓表创建人"
+    },
+    "matOutwarehouseCreatorId" : {
+      "meaning" : "物料出仓表创建人ID"
+    },
+    "matOutwarehouseDateExtra1" : {
+      "meaning" : "物料出仓表扩展时间1"
+    },
+    "matOutwarehouseDateExtra2" : {
+      "meaning" : "物料出仓表扩展时间2"
+    },
+    "matOutwarehouseDateExtra3" : {
+      "meaning" : "物料出仓表扩展时间3"
+    },
+    "matOutwarehouseDateExtra4" : {
+      "meaning" : "物料出仓表扩展时间4"
+    },
+    "matOutwarehouseDateExtra5" : {
+      "meaning" : "物料出仓表扩展时间5"
+    },
+    "matOutwarehouseDefaultType" : {
+      "meaning" : "物料出仓表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matOutwarehouseDeliveryDate" : {
+      "meaning" : "物料出仓表交货日期"
+    },
+    "matOutwarehouseDescription" : {
+      "meaning" : "物料出仓表描述"
+    },
+    "matOutwarehouseEndTime" : {
+      "meaning" : "物料出仓表结束时间"
+    },
+    "matOutwarehouseEndTimeRequired" : {
+      "meaning" : "物料出仓表最后需时(小时)"
+    },
+    "matOutwarehouseEngName" : {
+      "meaning" : "物料出仓表英文名称"
+    },
+    "matOutwarehouseEquipmentId" : {
+      "meaning" : "物料出仓表设备id"
+    },
+    "matOutwarehouseExchangeRateId" : {
+      "meaning" : "物料出仓表币种汇率id"
+    },
+    "matOutwarehouseExtension" : {
+      "meaning" : "物料出仓表扩展数据"
+    },
+    "matOutwarehouseExternalState" : {
+      "meaning" : "物料出仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matOutwarehouseFilterClazz" : {
+      "meaning" : "物料出仓表冗余字段用于筛选"
+    },
+    "matOutwarehouseFlags" : {
+      "meaning" : "物料出仓表63位标志位"
+    },
+    "matOutwarehouseFromAuditDate" : {
+      "meaning" : "matOutwarehouseFromAuditDate"
+    },
+    "matOutwarehouseFromBeginTime" : {
+      "meaning" : "matOutwarehouseFromBeginTime"
+    },
+    "matOutwarehouseFromCreateTime" : {
+      "meaning" : "matOutwarehouseFromCreateTime"
+    },
+    "matOutwarehouseFromDateExtra1" : {
+      "meaning" : "matOutwarehouseFromDateExtra1"
+    },
+    "matOutwarehouseFromDateExtra2" : {
+      "meaning" : "matOutwarehouseFromDateExtra2"
+    },
+    "matOutwarehouseFromDateExtra3" : {
+      "meaning" : "matOutwarehouseFromDateExtra3"
+    },
+    "matOutwarehouseFromDateExtra4" : {
+      "meaning" : "matOutwarehouseFromDateExtra4"
+    },
+    "matOutwarehouseFromDateExtra5" : {
+      "meaning" : "matOutwarehouseFromDateExtra5"
+    },
+    "matOutwarehouseFromDeliveryDate" : {
+      "meaning" : "matOutwarehouseFromDeliveryDate"
+    },
+    "matOutwarehouseFromEndTime" : {
+      "meaning" : "matOutwarehouseFromEndTime"
+    },
+    "matOutwarehouseFromReceiptDate" : {
+      "meaning" : "matOutwarehouseFromReceiptDate"
+    },
+    "matOutwarehouseFromUpdateTime" : {
+      "meaning" : "matOutwarehouseFromUpdateTime"
+    },
+    "matOutwarehouseFscType" : {
+      "meaning" : "物料出仓表FSC声明"
+    },
+    "matOutwarehouseGenerativePeople" : {
+      "meaning" : "物料出仓表下发人"
+    },
+    "matOutwarehouseGenerativeState" : {
+      "meaning" : "物料出仓表下发状态"
+    },
+    "matOutwarehouseGroovyScript" : {
+      "meaning" : "物料出仓表groovy脚本"
+    },
+    "matOutwarehouseGropeCode" : {
+      "meaning" : "物料出仓表搜索码"
+    },
+    "matOutwarehouseId" : {
+      "meaning" : "物料出仓表PK",
+      "is_primary" : true
+    },
+    "matOutwarehouseInUsed" : {
+      "meaning" : "物料出仓表是否被使用"
+    },
+    "matOutwarehouseInvTypeTaxRateId" : {
+      "meaning" : "物料出仓表发票税率id"
+    },
+    "matOutwarehouseIsBanned" : {
+      "meaning" : "物料出仓表是否被禁用"
+    },
+    "matOutwarehouseIsDeleted" : {
+      "meaning" : "物料出仓表是否被删除"
+    },
+    "matOutwarehouseIsLeaf" : {
+      "meaning" : "物料出仓表是否叶子节点"
+    },
+    "matOutwarehouseIsMainFlow" : {
+      "meaning" : "物料出仓表是否是主流程"
+    },
+    "matOutwarehouseIsManualModificationDate" : {
+      "meaning" : "物料出仓表是否手动修改计划生产时间"
+    },
+    "matOutwarehouseIsolation" : {
+      "meaning" : "物料出仓表智能节点数据隔离标识"
+    },
+    "matOutwarehouseJsScript" : {
+      "meaning" : "物料出仓表js脚本"
+    },
+    "matOutwarehouseMaterialId" : {
+      "meaning" : "物料出仓表物料id"
+    },
+    "matOutwarehouseName" : {
+      "meaning" : "物料出仓表智能节点名"
+    },
+    "matOutwarehouseNameCodeSearch" : {
+      "meaning" : "物料出仓表name、user_code模糊搜索"
+    },
+    "matOutwarehouseNumberExtra1" : {
+      "meaning" : "物料出仓表扩展数量1"
+    },
+    "matOutwarehouseNumberExtra2" : {
+      "meaning" : "物料出仓表扩展数量2"
+    },
+    "matOutwarehouseNumberExtra3" : {
+      "meaning" : "物料出仓表扩展数量3"
+    },
+    "matOutwarehouseNumberExtra4" : {
+      "meaning" : "物料出仓表扩展数量4"
+    },
+    "matOutwarehouseNumberExtra5" : {
+      "meaning" : "物料出仓表扩展数量5"
+    },
+    "matOutwarehouseParentId" : {
+      "meaning" : "物料出仓表父节点ID"
+    },
+    "matOutwarehousePlannedOutputQuantity" : {
+      "meaning" : "物料出仓表计划产出数量"
+    },
+    "matOutwarehousePlannedTimeRequired" : {
+      "meaning" : "物料出仓表计划需时(小时)"
+    },
+    "matOutwarehousePrintTimes" : {
+      "meaning" : "物料出仓表打印次数"
+    },
+    "matOutwarehousePriority" : {
+      "meaning" : "物料出仓表优先级"
+    },
+    "matOutwarehouseProcessInstanceId" : {
+      "meaning" : "物料出仓表流程实例ID"
+    },
+    "matOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "物料出仓表工序类型ID"
+    },
+    "matOutwarehouseProductionShiftId" : {
+      "meaning" : "物料出仓表生产班次ID"
+    },
+    "matOutwarehouseQuantity" : {
+      "meaning" : "物料出仓表任务数量"
+    },
+    "matOutwarehouseReceiptDate" : {
+      "meaning" : "物料出仓表单据日期"
+    },
+    "matOutwarehouseReceiptType" : {
+      "meaning" : "物料出仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matOutwarehouseRelatedTasksId" : {
+      "meaning" : "物料出仓表关联任务id"
+    },
+    "matOutwarehouseSerialNumber" : {
+      "meaning" : "物料出仓表顺序号"
+    },
+    "matOutwarehouseSource" : {
+      "meaning" : "物料出仓表源"
+    },
+    "matOutwarehouseSourceType" : {
+      "meaning" : "物料出仓表来源类型"
+    },
+    "matOutwarehouseState" : {
+      "meaning" : "物料出仓表通用状态"
+    },
+    "matOutwarehouseSystemCode" : {
+      "meaning" : "物料出仓表系统编码"
+    },
+    "matOutwarehouseTarget" : {
+      "meaning" : "物料出仓表目标"
+    },
+    "matOutwarehouseTaskNodeName" : {
+      "meaning" : "物料出仓表任务节点名称"
+    },
+    "matOutwarehouseTenantId" : {
+      "meaning" : "物料出仓表租户id"
+    },
+    "matOutwarehouseThirdPartyClass" : {
+      "meaning" : "物料出仓表第三方分类"
+    },
+    "matOutwarehouseThirdPartyId" : {
+      "meaning" : "物料出仓表第三方系统中的唯一ID"
+    },
+    "matOutwarehouseThirdPartyName" : {
+      "meaning" : "物料出仓表第三方名称"
+    },
+    "matOutwarehouseToAuditDate" : {
+      "meaning" : "matOutwarehouseToAuditDate"
+    },
+    "matOutwarehouseToBeginTime" : {
+      "meaning" : "matOutwarehouseToBeginTime"
+    },
+    "matOutwarehouseToCreateTime" : {
+      "meaning" : "matOutwarehouseToCreateTime"
+    },
+    "matOutwarehouseToDateExtra1" : {
+      "meaning" : "matOutwarehouseToDateExtra1"
+    },
+    "matOutwarehouseToDateExtra2" : {
+      "meaning" : "matOutwarehouseToDateExtra2"
+    },
+    "matOutwarehouseToDateExtra3" : {
+      "meaning" : "matOutwarehouseToDateExtra3"
+    },
+    "matOutwarehouseToDateExtra4" : {
+      "meaning" : "matOutwarehouseToDateExtra4"
+    },
+    "matOutwarehouseToDateExtra5" : {
+      "meaning" : "matOutwarehouseToDateExtra5"
+    },
+    "matOutwarehouseToDeliveryDate" : {
+      "meaning" : "matOutwarehouseToDeliveryDate"
+    },
+    "matOutwarehouseToEndTime" : {
+      "meaning" : "matOutwarehouseToEndTime"
+    },
+    "matOutwarehouseToReceiptDate" : {
+      "meaning" : "matOutwarehouseToReceiptDate"
+    },
+    "matOutwarehouseToUpdateTime" : {
+      "meaning" : "matOutwarehouseToUpdateTime"
+    },
+    "matOutwarehouseUnitCode" : {
+      "meaning" : "物料出仓表单位id"
+    },
+    "matOutwarehouseUpdateTime" : {
+      "meaning" : "物料出仓表更新时间"
+    },
+    "matOutwarehouseUpdater" : {
+      "meaning" : "物料出仓表更新人"
+    },
+    "matOutwarehouseUpdaterId" : {
+      "meaning" : "物料出仓表更新人ID"
+    },
+    "matOutwarehouseUserCode" : {
+      "meaning" : "物料出仓表智能节点的唯一编码"
+    },
+    "matOutwarehouseVarExtra1" : {
+      "meaning" : "物料出仓表扩展1"
+    },
+    "matOutwarehouseVarExtra2" : {
+      "meaning" : "物料出仓表扩展2"
+    },
+    "matOutwarehouseVarExtra3" : {
+      "meaning" : "物料出仓表扩展3"
+    },
+    "matOutwarehouseVarExtra4" : {
+      "meaning" : "物料出仓表扩展4"
+    },
+    "matOutwarehouseVarExtra5" : {
+      "meaning" : "物料出仓表扩展5"
+    },
+    "matOutwarehouseVersion" : {
+      "meaning" : "物料出仓表版本号"
+    }
+  }
+}

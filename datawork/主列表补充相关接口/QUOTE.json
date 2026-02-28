@@ -1,0 +1,368 @@
+{
+  "api_name" : "/quote/findList",
+  "table_name" : "报价单",
+  "request" : {
+    "quoteClazz" : "QUOTE"
+  },
+  "mainTabClazz" : "QUOTE",
+  "response" : {
+    "quoteActualTimeRequired" : {
+      "meaning" : "报价单实际需时(小时)"
+    },
+    "quoteAdjustmentTimeRequired" : {
+      "meaning" : "报价单调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "quoteApplicationId" : {
+      "meaning" : "报价单应用ID"
+    },
+    "quoteAuditDate" : {
+      "meaning" : "报价单审核时间"
+    },
+    "quoteAuditStatus" : {
+      "meaning" : "报价单审核状态"
+    },
+    "quoteAvailableScheduleId" : {
+      "meaning" : "报价单可用日程id"
+    },
+    "quoteBeginTime" : {
+      "meaning" : "报价单开始时间"
+    },
+    "quoteBizVersion" : {
+      "meaning" : "报价单业务自定义版本号"
+    },
+    "quoteBriefName" : {
+      "meaning" : "报价单简称"
+    },
+    "quoteBusDivisId" : {
+      "meaning" : "报价单事业部id"
+    },
+    "quoteClazz" : {
+      "meaning" : "报价单子类 类名（表和类一一对应）"
+    },
+    "quoteClosedReason" : {
+      "meaning" : "报价单结案原因"
+    },
+    "quoteClosedStatus" : {
+      "meaning" : "报价单结案状态"
+    },
+    "quoteComment" : {
+      "meaning" : "报价单评论"
+    },
+    "quoteCompleteQuantity" : {
+      "meaning" : "报价单完成数量"
+    },
+    "quoteCompleteStatus" : {
+      "meaning" : "报价单完成状态"
+    },
+    "quoteCreateTime" : {
+      "meaning" : "报价单创建时间"
+    },
+    "quoteCreator" : {
+      "meaning" : "报价单创建人"
+    },
+    "quoteCreatorId" : {
+      "meaning" : "报价单创建人ID"
+    },
+    "quoteCurrencyId" : {
+      "meaning" : "报价单币种id"
+    },
+    "quoteDateExtra1" : {
+      "meaning" : "报价单扩展时间1"
+    },
+    "quoteDateExtra2" : {
+      "meaning" : "报价单扩展时间2"
+    },
+    "quoteDateExtra3" : {
+      "meaning" : "报价单扩展时间3"
+    },
+    "quoteDateExtra4" : {
+      "meaning" : "报价单扩展时间4"
+    },
+    "quoteDateExtra5" : {
+      "meaning" : "报价单扩展时间5"
+    },
+    "quoteDefaultType" : {
+      "meaning" : "报价单智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "quoteDeliveryDate" : {
+      "meaning" : "报价单交货日期"
+    },
+    "quoteDescription" : {
+      "meaning" : "报价单描述"
+    },
+    "quoteEndTime" : {
+      "meaning" : "报价单结束时间"
+    },
+    "quoteEndTimeRequired" : {
+      "meaning" : "报价单最后需时(小时)"
+    },
+    "quoteEngName" : {
+      "meaning" : "报价单英文名称"
+    },
+    "quoteEquipmentId" : {
+      "meaning" : "报价单设备id"
+    },
+    "quoteExchangeRateId" : {
+      "meaning" : "报价单币种汇率id"
+    },
+    "quoteExtension" : {
+      "meaning" : "报价单扩展数据"
+    },
+    "quoteExternalState" : {
+      "meaning" : "报价单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "quoteFilterClazz" : {
+      "meaning" : "报价单冗余字段用于筛选"
+    },
+    "quoteFlags" : {
+      "meaning" : "报价单63位标志位"
+    },
+    "quoteFromAuditDate" : {
+      "meaning" : "quoteFromAuditDate"
+    },
+    "quoteFromBeginTime" : {
+      "meaning" : "quoteFromBeginTime"
+    },
+    "quoteFromCreateTime" : {
+      "meaning" : "quoteFromCreateTime"
+    },
+    "quoteFromDateExtra1" : {
+      "meaning" : "quoteFromDateExtra1"
+    },
+    "quoteFromDateExtra2" : {
+      "meaning" : "quoteFromDateExtra2"
+    },
+    "quoteFromDateExtra3" : {
+      "meaning" : "quoteFromDateExtra3"
+    },
+    "quoteFromDateExtra4" : {
+      "meaning" : "quoteFromDateExtra4"
+    },
+    "quoteFromDateExtra5" : {
+      "meaning" : "quoteFromDateExtra5"
+    },
+    "quoteFromDeliveryDate" : {
+      "meaning" : "quoteFromDeliveryDate"
+    },
+    "quoteFromEndTime" : {
+      "meaning" : "quoteFromEndTime"
+    },
+    "quoteFromReceiptDate" : {
+      "meaning" : "quoteFromReceiptDate"
+    },
+    "quoteFromUpdateTime" : {
+      "meaning" : "quoteFromUpdateTime"
+    },
+    "quoteFscType" : {
+      "meaning" : "报价单FSC声明"
+    },
+    "quoteGenerativePeople" : {
+      "meaning" : "报价单下发人"
+    },
+    "quoteGenerativeState" : {
+      "meaning" : "报价单下发状态"
+    },
+    "quoteGroovyScript" : {
+      "meaning" : "报价单groovy脚本"
+    },
+    "quoteGropeCode" : {
+      "meaning" : "报价单搜索码"
+    },
+    "quoteId" : {
+      "meaning" : "报价单主键ID",
+      "is_primary" : true
+    },
+    "quoteInUsed" : {
+      "meaning" : "报价单是否被使用"
+    },
+    "quoteInvTypeTaxRateId" : {
+      "meaning" : "报价单发票税率id"
+    },
+    "quoteIsBanned" : {
+      "meaning" : "报价单是否被禁用"
+    },
+    "quoteIsDeleted" : {
+      "meaning" : "报价单是否被删除"
+    },
+    "quoteIsLeaf" : {
+      "meaning" : "报价单是否叶子节点"
+    },
+    "quoteIsMainFlow" : {
+      "meaning" : "报价单是否是主流程"
+    },
+    "quoteIsManualModificationDate" : {
+      "meaning" : "报价单是否手动修改计划生产时间"
+    },
+    "quoteIsolation" : {
+      "meaning" : "报价单智能节点数据隔离标识"
+    },
+    "quoteJsScript" : {
+      "meaning" : "报价单js脚本"
+    },
+    "quoteMaterialId" : {
+      "meaning" : "报价单物料id"
+    },
+    "quoteName" : {
+      "meaning" : "报价单智能节点名"
+    },
+    "quoteNameCodeSearch" : {
+      "meaning" : "报价单name、user_code模糊搜索"
+    },
+    "quoteNumberExtra1" : {
+      "meaning" : "报价单扩展数量1"
+    },
+    "quoteNumberExtra2" : {
+      "meaning" : "报价单扩展数量2"
+    },
+    "quoteNumberExtra3" : {
+      "meaning" : "报价单扩展数量3"
+    },
+    "quoteNumberExtra4" : {
+      "meaning" : "报价单扩展数量4"
+    },
+    "quoteNumberExtra5" : {
+      "meaning" : "报价单扩展数量5"
+    },
+    "quoteParentId" : {
+      "meaning" : "报价单父节点ID"
+    },
+    "quotePartnerId" : {
+      "meaning" : "报价单合作方id 加工商、供应商、客户"
+    },
+    "quotePlannedOutputQuantity" : {
+      "meaning" : "报价单计划产出数量"
+    },
+    "quotePlannedTimeRequired" : {
+      "meaning" : "报价单计划需时(小时)"
+    },
+    "quotePrintTimes" : {
+      "meaning" : "报价单打印次数"
+    },
+    "quotePriority" : {
+      "meaning" : "报价单优先级"
+    },
+    "quoteProcessInstanceId" : {
+      "meaning" : "报价单流程实例ID"
+    },
+    "quoteProductionProcessesTypeId" : {
+      "meaning" : "报价单工序类型ID"
+    },
+    "quoteProductionShiftId" : {
+      "meaning" : "报价单生产班次ID"
+    },
+    "quoteQuantity" : {
+      "meaning" : "报价单任务数量"
+    },
+    "quoteReceiptDate" : {
+      "meaning" : "报价单单据日期"
+    },
+    "quoteReceiptType" : {
+      "meaning" : "报价单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "quoteRelatedTasksId" : {
+      "meaning" : "报价单关联任务id"
+    },
+    "quoteSerialNumber" : {
+      "meaning" : "报价单顺序号"
+    },
+    "quoteSource" : {
+      "meaning" : "报价单源"
+    },
+    "quoteSourceType" : {
+      "meaning" : "报价单来源类型"
+    },
+    "quoteState" : {
+      "meaning" : "报价单通用状态"
+    },
+    "quoteSystemCode" : {
+      "meaning" : "报价单系统编码"
+    },
+    "quoteTarget" : {
+      "meaning" : "报价单目标"
+    },
+    "quoteTaskNodeName" : {
+      "meaning" : "报价单任务节点名称"
+    },
+    "quoteTenantId" : {
+      "meaning" : "报价单租户ID"
+    },
+    "quoteThirdPartyClass" : {
+      "meaning" : "报价单第三方分类"
+    },
+    "quoteThirdPartyId" : {
+      "meaning" : "报价单第三方系统中的唯一ID"
+    },
+    "quoteThirdPartyName" : {
+      "meaning" : "报价单第三方名称"
+    },
+    "quoteToAuditDate" : {
+      "meaning" : "quoteToAuditDate"
+    },
+    "quoteToBeginTime" : {
+      "meaning" : "quoteToBeginTime"
+    },
+    "quoteToCreateTime" : {
+      "meaning" : "quoteToCreateTime"
+    },
+    "quoteToDateExtra1" : {
+      "meaning" : "quoteToDateExtra1"
+    },
+    "quoteToDateExtra2" : {
+      "meaning" : "quoteToDateExtra2"
+    },
+    "quoteToDateExtra3" : {
+      "meaning" : "quoteToDateExtra3"
+    },
+    "quoteToDateExtra4" : {
+      "meaning" : "quoteToDateExtra4"
+    },
+    "quoteToDateExtra5" : {
+      "meaning" : "quoteToDateExtra5"
+    },
+    "quoteToDeliveryDate" : {
+      "meaning" : "quoteToDeliveryDate"
+    },
+    "quoteToEndTime" : {
+      "meaning" : "quoteToEndTime"
+    },
+    "quoteToReceiptDate" : {
+      "meaning" : "quoteToReceiptDate"
+    },
+    "quoteToUpdateTime" : {
+      "meaning" : "quoteToUpdateTime"
+    },
+    "quoteUnitCode" : {
+      "meaning" : "报价单单位id"
+    },
+    "quoteUpdateTime" : {
+      "meaning" : "报价单更新时间"
+    },
+    "quoteUpdater" : {
+      "meaning" : "报价单更新人"
+    },
+    "quoteUpdaterId" : {
+      "meaning" : "报价单更新人ID"
+    },
+    "quoteUserCode" : {
+      "meaning" : "报价单智能节点的唯一编码"
+    },
+    "quoteVarExtra1" : {
+      "meaning" : "报价单扩展1"
+    },
+    "quoteVarExtra2" : {
+      "meaning" : "报价单扩展2"
+    },
+    "quoteVarExtra3" : {
+      "meaning" : "报价单扩展3"
+    },
+    "quoteVarExtra4" : {
+      "meaning" : "报价单扩展4"
+    },
+    "quoteVarExtra5" : {
+      "meaning" : "报价单扩展5"
+    },
+    "quoteVersion" : {
+      "meaning" : "报价单版本号"
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+      "api_name": "/fsc/findList",
+      "table_name": "FSC声明管理",
+      "request": {
+        "fscClazz": "FSC"
+      },
+      "mainTabClazz": "FSC",
+      "response": {
+        "fscApplicationId": {
+          "meaning": "FSC声明管理应用ID"
+        },
+        "fscAuditDate": {
+          "meaning": "FSC声明管理审核时间"
+        },
+        "fscAuditStatus": {
+          "meaning": "FSC声明管理审核状态"
+        },
+        "fscBizVersion": {
+          "meaning": "FSC声明管理业务自定义版本号"
+        },
+        "fscBriefName": {
+          "meaning": "FSC声明管理简称"
+        },
+        "fscBusDivisId": {
+          "meaning": "FSC声明管理事业部id"
+        },
+        "fscClazz": {
+          "meaning": "FSC声明管理子类 类名（表和类一一对应）"
+        },
+        "fscComment": {
+          "meaning": "FSC声明管理评论"
+        },
+        "fscCreateTime": {
+          "meaning": "FSC声明管理创建时间"
+        },
+        "fscCreator": {
+          "meaning": "FSC声明管理创建人"
+        },
+        "fscCreatorId": {
+          "meaning": "FSC声明管理创建人ID"
+        },
+        "fscDateExtra1": {
+          "meaning": "FSC声明管理扩展时间1"
+        },
+        "fscDateExtra2": {
+          "meaning": "FSC声明管理扩展时间2"
+        },
+        "fscDateExtra3": {
+          "meaning": "FSC声明管理扩展时间3"
+        },
+        "fscDateExtra4": {
+          "meaning": "FSC声明管理扩展时间4"
+        },
+        "fscDateExtra5": {
+          "meaning": "FSC声明管理扩展时间5"
+        },
+        "fscDefaultType": {
+          "meaning": "FSC声明管理智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "fscDescription": {
+          "meaning": "FSC声明管理描述"
+        },
+        "fscEngName": {
+          "meaning": "FSC声明管理英文名称"
+        },
+        "fscExtension": {
+          "meaning": "FSC声明管理扩展数据"
+        },
+        "fscExternalState": {
+          "meaning": "FSC声明管理上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "fscFlags": {
+          "meaning": "FSC声明管理63位标志位"
+        },
+        "fscFromAuditDate": {
+          "meaning": "fscFromAuditDate"
+        },
+        "fscFromCreateTime": {
+          "meaning": "fscFromCreateTime"
+        },
+        "fscFromDateExtra1": {
+          "meaning": "fscFromDateExtra1"
+        },
+        "fscFromDateExtra2": {
+          "meaning": "fscFromDateExtra2"
+        },
+        "fscFromDateExtra3": {
+          "meaning": "fscFromDateExtra3"
+        },
+        "fscFromDateExtra4": {
+          "meaning": "fscFromDateExtra4"
+        },
+        "fscFromDateExtra5": {
+          "meaning": "fscFromDateExtra5"
+        },
+        "fscFromUpdateTime": {
+          "meaning": "fscFromUpdateTime"
+        },
+        "fscGroovyScript": {
+          "meaning": "FSC声明管理groovy脚本"
+        },
+        "fscGropeCode": {
+          "meaning": "FSC声明管理搜索码"
+        },
+        "fscId": {
+          "meaning": "FSC声明管理pk",
+          "is_primary": true
+        },
+        "fscInUsed": {
+          "meaning": "FSC声明管理是否被使用"
+        },
+        "fscIsBanned": {
+          "meaning": "FSC声明管理是否被禁用"
+        },
+        "fscIsDeleted": {
+          "meaning": "FSC声明管理是否被删除"
+        },
+        "fscIsMainFlow": {
+          "meaning": "FSC声明管理是否是主流程"
+        },
+        "fscIsolation": {
+          "meaning": "FSC声明管理智能节点数据隔离标识"
+        },
+        "fscJsScript": {
+          "meaning": "FSC声明管理js脚本"
+        },
+        "fscName": {
+          "meaning": "FSC声明管理智能节点名"
+        },
+        "fscNameCodeSearch": {
+          "meaning": "FSC声明管理name、user_code模糊搜索"
+        },
+        "fscNumberExtra1": {
+          "meaning": "FSC声明管理扩展数量1"
+        },
+        "fscNumberExtra2": {
+          "meaning": "FSC声明管理扩展数量2"
+        },
+        "fscNumberExtra3": {
+          "meaning": "FSC声明管理扩展数量3"
+        },
+        "fscNumberExtra4": {
+          "meaning": "FSC声明管理扩展数量4"
+        },
+        "fscNumberExtra5": {
+          "meaning": "FSC声明管理扩展数量5"
+        },
+        "fscParentId": {
+          "meaning": "FSC声明管理父节点ID"
+        },
+        "fscProcessInstanceId": {
+          "meaning": "FSC声明管理流程实例ID"
+        },
+        "fscSerialNumber": {
+          "meaning": "FSC声明管理顺序号"
+        },
+        "fscState": {
+          "meaning": "FSC声明管理通用状态"
+        },
+        "fscSystemCode": {
+          "meaning": "FSC声明管理系统编码"
+        },
+        "fscTaskNodeName": {
+          "meaning": "FSC声明管理任务节点名称"
+        },
+        "fscTenantId": {
+          "meaning": "FSC声明管理租户ID"
+        },
+        "fscThirdPartyClass": {
+          "meaning": "FSC声明管理第三方分类"
+        },
+        "fscThirdPartyId": {
+          "meaning": "FSC声明管理第三方系统中的唯一ID"
+        },
+        "fscThirdPartyName": {
+          "meaning": "FSC声明管理第三方名称"
+        },
+        "fscToAuditDate": {
+          "meaning": "fscToAuditDate"
+        },
+        "fscToCreateTime": {
+          "meaning": "fscToCreateTime"
+        },
+        "fscToDateExtra1": {
+          "meaning": "fscToDateExtra1"
+        },
+        "fscToDateExtra2": {
+          "meaning": "fscToDateExtra2"
+        },
+        "fscToDateExtra3": {
+          "meaning": "fscToDateExtra3"
+        },
+        "fscToDateExtra4": {
+          "meaning": "fscToDateExtra4"
+        },
+        "fscToDateExtra5": {
+          "meaning": "fscToDateExtra5"
+        },
+        "fscToUpdateTime": {
+          "meaning": "fscToUpdateTime"
+        },
+        "fscUpdateTime": {
+          "meaning": "FSC声明管理更新时间"
+        },
+        "fscUpdater": {
+          "meaning": "FSC声明管理更新人"
+        },
+        "fscUpdaterId": {
+          "meaning": "FSC声明管理更新人ID"
+        },
+        "fscUserCode": {
+          "meaning": "FSC声明管理智能节点的唯一编码"
+        },
+        "fscVarExtra1": {
+          "meaning": "FSC声明管理扩展1"
+        },
+        "fscVarExtra2": {
+          "meaning": "FSC声明管理扩展2"
+        },
+        "fscVarExtra3": {
+          "meaning": "FSC声明管理扩展3"
+        },
+        "fscVarExtra4": {
+          "meaning": "FSC声明管理扩展4"
+        },
+        "fscVarExtra5": {
+          "meaning": "FSC声明管理扩展5"
+        },
+        "fscVersion": {
+          "meaning": "FSC声明管理版本号"
+        }
+      }
+    }

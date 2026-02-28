@@ -1,0 +1,768 @@
+{
+  "api_name" : "/fin-outwarehouse-det/findList",
+  "table_name" : "成品出仓明细表",
+  "request" : {
+    "finOutwarehouseDetFinOutwarehouseClazz" : "FIN_OUTWAREHOUSE",
+    "finOutwarehouseDetClazz" : "FIN_OUTWAREHOUSE_DET"
+  },
+  "mainTabClazz" : "FIN_OUTWAREHOUSE_DET",
+  "response" : {
+    "NOutwarehouseDetFinOutwarehouseIsManualModificationDate" : {
+      "meaning" : "成品出仓明细表是否手动修改计划生产时间"
+    },
+    "finOutwarehouseDetActualTimeRequired" : {
+      "meaning" : "成品出仓明细表实际需时(小时)"
+    },
+    "finOutwarehouseDetAdjustmentTimeRequired" : {
+      "meaning" : "成品出仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "finOutwarehouseDetApplicationId" : {
+      "meaning" : "成品出仓明细表应用ID"
+    },
+    "finOutwarehouseDetAuditDate" : {
+      "meaning" : "成品出仓明细表审核时间"
+    },
+    "finOutwarehouseDetAuditStatus" : {
+      "meaning" : "成品出仓明细表审核状态"
+    },
+    "finOutwarehouseDetAvailableScheduleId" : {
+      "meaning" : "成品出仓明细表可用日程id"
+    },
+    "finOutwarehouseDetBeginTime" : {
+      "meaning" : "成品出仓明细表开始时间"
+    },
+    "finOutwarehouseDetBizVersion" : {
+      "meaning" : "成品出仓明细表业务自定义版本号"
+    },
+    "finOutwarehouseDetBriefName" : {
+      "meaning" : "成品出仓明细表简称"
+    },
+    "finOutwarehouseDetBusDivisId" : {
+      "meaning" : "成品出仓明细表事业部id"
+    },
+    "finOutwarehouseDetClazz" : {
+      "meaning" : "成品出仓明细表子类 类名（表和类一一对应）"
+    },
+    "finOutwarehouseDetClosedReason" : {
+      "meaning" : "成品出仓明细表结案原因"
+    },
+    "finOutwarehouseDetClosedStatus" : {
+      "meaning" : "成品出仓明细表结案状态"
+    },
+    "finOutwarehouseDetComment" : {
+      "meaning" : "成品出仓明细表评论"
+    },
+    "finOutwarehouseDetCompleteQuantity" : {
+      "meaning" : "成品出仓明细表完成数量"
+    },
+    "finOutwarehouseDetCompleteStatus" : {
+      "meaning" : "成品出仓明细表完成状态"
+    },
+    "finOutwarehouseDetCreateTime" : {
+      "meaning" : "成品出仓明细表创建时间"
+    },
+    "finOutwarehouseDetCreator" : {
+      "meaning" : "成品出仓明细表创建人"
+    },
+    "finOutwarehouseDetCreatorId" : {
+      "meaning" : "成品出仓明细表创建人ID"
+    },
+    "finOutwarehouseDetDateExtra1" : {
+      "meaning" : "成品出仓明细表扩展时间1"
+    },
+    "finOutwarehouseDetDateExtra2" : {
+      "meaning" : "成品出仓明细表扩展时间2"
+    },
+    "finOutwarehouseDetDateExtra3" : {
+      "meaning" : "成品出仓明细表扩展时间3"
+    },
+    "finOutwarehouseDetDateExtra4" : {
+      "meaning" : "成品出仓明细表扩展时间4"
+    },
+    "finOutwarehouseDetDateExtra5" : {
+      "meaning" : "成品出仓明细表扩展时间5"
+    },
+    "finOutwarehouseDetDefaultType" : {
+      "meaning" : "成品出仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "finOutwarehouseDetDeliveryDate" : {
+      "meaning" : "成品出仓明细表交货日期"
+    },
+    "finOutwarehouseDetDescription" : {
+      "meaning" : "成品出仓明细表描述"
+    },
+    "finOutwarehouseDetEndTime" : {
+      "meaning" : "成品出仓明细表结束时间"
+    },
+    "finOutwarehouseDetEndTimeRequired" : {
+      "meaning" : "成品出仓明细表最后需时(小时)"
+    },
+    "finOutwarehouseDetEngName" : {
+      "meaning" : "成品出仓明细表英文名称"
+    },
+    "finOutwarehouseDetEquipmentId" : {
+      "meaning" : "成品出仓明细表设备id"
+    },
+    "finOutwarehouseDetExchangeRateId" : {
+      "meaning" : "成品出仓明细表币种汇率id"
+    },
+    "finOutwarehouseDetExtension" : {
+      "meaning" : "成品出仓明细表扩展数据"
+    },
+    "finOutwarehouseDetExternalState" : {
+      "meaning" : "成品出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "finOutwarehouseDetFilterClazz" : {
+      "meaning" : "成品出仓明细表冗余字段用于筛选"
+    },
+    "finOutwarehouseDetFinOutwarehouseActualTimeRequired" : {
+      "meaning" : "成品出仓明细表实际需时(小时)"
+    },
+    "finOutwarehouseDetFinOutwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "成品出仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "finOutwarehouseDetFinOutwarehouseApplicationId" : {
+      "meaning" : "成品出仓明细表应用ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseAuditDate" : {
+      "meaning" : "成品出仓明细表审核时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseAuditStatus" : {
+      "meaning" : "成品出仓明细表审核状态"
+    },
+    "finOutwarehouseDetFinOutwarehouseAvailableScheduleId" : {
+      "meaning" : "成品出仓明细表可用日程id"
+    },
+    "finOutwarehouseDetFinOutwarehouseBeginTime" : {
+      "meaning" : "成品出仓明细表开始时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseBizVersion" : {
+      "meaning" : "成品出仓明细表业务自定义版本号"
+    },
+    "finOutwarehouseDetFinOutwarehouseBriefName" : {
+      "meaning" : "成品出仓明细表简称"
+    },
+    "finOutwarehouseDetFinOutwarehouseBusDivisId" : {
+      "meaning" : "成品出仓明细表事业部id"
+    },
+    "finOutwarehouseDetFinOutwarehouseClazz" : {
+      "meaning" : "成品出仓明细表子类 类名（表和类一一对应）"
+    },
+    "finOutwarehouseDetFinOutwarehouseClosedReason" : {
+      "meaning" : "成品出仓明细表结案原因"
+    },
+    "finOutwarehouseDetFinOutwarehouseClosedStatus" : {
+      "meaning" : "成品出仓明细表结案状态"
+    },
+    "finOutwarehouseDetFinOutwarehouseComment" : {
+      "meaning" : "成品出仓明细表评论"
+    },
+    "finOutwarehouseDetFinOutwarehouseCompleteQuantity" : {
+      "meaning" : "成品出仓明细表完成数量"
+    },
+    "finOutwarehouseDetFinOutwarehouseCompleteStatus" : {
+      "meaning" : "成品出仓明细表完成状态"
+    },
+    "finOutwarehouseDetFinOutwarehouseCreateTime" : {
+      "meaning" : "成品出仓明细表创建时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseCreator" : {
+      "meaning" : "成品出仓明细表创建人"
+    },
+    "finOutwarehouseDetFinOutwarehouseCreatorId" : {
+      "meaning" : "成品出仓明细表创建人ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseDateExtra1" : {
+      "meaning" : "成品出仓明细表扩展时间1"
+    },
+    "finOutwarehouseDetFinOutwarehouseDateExtra2" : {
+      "meaning" : "成品出仓明细表扩展时间2"
+    },
+    "finOutwarehouseDetFinOutwarehouseDateExtra3" : {
+      "meaning" : "成品出仓明细表扩展时间3"
+    },
+    "finOutwarehouseDetFinOutwarehouseDateExtra4" : {
+      "meaning" : "成品出仓明细表扩展时间4"
+    },
+    "finOutwarehouseDetFinOutwarehouseDateExtra5" : {
+      "meaning" : "成品出仓明细表扩展时间5"
+    },
+    "finOutwarehouseDetFinOutwarehouseDefaultType" : {
+      "meaning" : "成品出仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "finOutwarehouseDetFinOutwarehouseDeliveryDate" : {
+      "meaning" : "成品出仓明细表交货日期"
+    },
+    "finOutwarehouseDetFinOutwarehouseDescription" : {
+      "meaning" : "成品出仓明细表描述"
+    },
+    "finOutwarehouseDetFinOutwarehouseEndTime" : {
+      "meaning" : "成品出仓明细表结束时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseEndTimeRequired" : {
+      "meaning" : "成品出仓明细表最后需时(小时)"
+    },
+    "finOutwarehouseDetFinOutwarehouseEngName" : {
+      "meaning" : "成品出仓明细表英文名称"
+    },
+    "finOutwarehouseDetFinOutwarehouseEquipmentId" : {
+      "meaning" : "成品出仓明细表设备id"
+    },
+    "finOutwarehouseDetFinOutwarehouseExchangeRateId" : {
+      "meaning" : "成品出仓明细表币种汇率id"
+    },
+    "finOutwarehouseDetFinOutwarehouseExtension" : {
+      "meaning" : "成品出仓明细表扩展数据"
+    },
+    "finOutwarehouseDetFinOutwarehouseExternalState" : {
+      "meaning" : "成品出仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "finOutwarehouseDetFinOutwarehouseFilterClazz" : {
+      "meaning" : "成品出仓明细表冗余字段用于筛选"
+    },
+    "finOutwarehouseDetFinOutwarehouseFlags" : {
+      "meaning" : "成品出仓明细表63位标志位"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromAuditDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromAuditDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromBeginTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromBeginTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromCreateTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromCreateTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDateExtra1" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDateExtra1"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDateExtra2" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDateExtra2"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDateExtra3" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDateExtra3"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDateExtra4" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDateExtra4"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDateExtra5" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDateExtra5"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromDeliveryDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromDeliveryDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromEndTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromEndTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromReceiptDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromReceiptDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseFromUpdateTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseFromUpdateTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseFscType" : {
+      "meaning" : "成品出仓明细表FSC声明"
+    },
+    "finOutwarehouseDetFinOutwarehouseGenerativePeople" : {
+      "meaning" : "成品出仓明细表下发人"
+    },
+    "finOutwarehouseDetFinOutwarehouseGenerativeState" : {
+      "meaning" : "成品出仓明细表下发状态"
+    },
+    "finOutwarehouseDetFinOutwarehouseGroovyScript" : {
+      "meaning" : "成品出仓明细表groovy脚本"
+    },
+    "finOutwarehouseDetFinOutwarehouseGropeCode" : {
+      "meaning" : "成品出仓明细表搜索码"
+    },
+    "finOutwarehouseDetFinOutwarehouseId" : {
+      "meaning" : "成品出仓明细表PK"
+    },
+    "finOutwarehouseDetFinOutwarehouseInUsed" : {
+      "meaning" : "成品出仓明细表是否被使用"
+    },
+    "finOutwarehouseDetFinOutwarehouseInvTypeTaxRateId" : {
+      "meaning" : "成品出仓明细表发票税率id"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsBanned" : {
+      "meaning" : "成品出仓明细表是否被禁用"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsDeleted" : {
+      "meaning" : "成品出仓明细表是否被删除"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsLeaf" : {
+      "meaning" : "成品出仓明细表是否叶子节点"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsMainFlow" : {
+      "meaning" : "成品出仓明细表是否是主流程"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsManualModificationDate" : {
+      "meaning" : "成品出仓明细表是否手动修改计划生产时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseIsolation" : {
+      "meaning" : "成品出仓明细表智能节点数据隔离标识"
+    },
+    "finOutwarehouseDetFinOutwarehouseJsScript" : {
+      "meaning" : "成品出仓明细表js脚本"
+    },
+    "finOutwarehouseDetFinOutwarehouseMaterialId" : {
+      "meaning" : "成品出仓明细表物料id"
+    },
+    "finOutwarehouseDetFinOutwarehouseName" : {
+      "meaning" : "成品出仓明细表智能节点名"
+    },
+    "finOutwarehouseDetFinOutwarehouseNameCodeSearch" : {
+      "meaning" : "成品出仓明细表name、user_code模糊搜索"
+    },
+    "finOutwarehouseDetFinOutwarehouseNumberExtra1" : {
+      "meaning" : "成品出仓明细表扩展数量1"
+    },
+    "finOutwarehouseDetFinOutwarehouseNumberExtra2" : {
+      "meaning" : "成品出仓明细表扩展数量2"
+    },
+    "finOutwarehouseDetFinOutwarehouseNumberExtra3" : {
+      "meaning" : "成品出仓明细表扩展数量3"
+    },
+    "finOutwarehouseDetFinOutwarehouseNumberExtra4" : {
+      "meaning" : "成品出仓明细表扩展数量4"
+    },
+    "finOutwarehouseDetFinOutwarehouseNumberExtra5" : {
+      "meaning" : "成品出仓明细表扩展数量5"
+    },
+    "finOutwarehouseDetFinOutwarehouseParentId" : {
+      "meaning" : "成品出仓明细表父节点ID"
+    },
+    "finOutwarehouseDetFinOutwarehousePlannedOutputQuantity" : {
+      "meaning" : "成品出仓明细表计划产出数量"
+    },
+    "finOutwarehouseDetFinOutwarehousePlannedTimeRequired" : {
+      "meaning" : "成品出仓明细表计划需时(小时)"
+    },
+    "finOutwarehouseDetFinOutwarehousePrintTimes" : {
+      "meaning" : "成品出仓明细表打印次数"
+    },
+    "finOutwarehouseDetFinOutwarehousePriority" : {
+      "meaning" : "成品出仓明细表优先级"
+    },
+    "finOutwarehouseDetFinOutwarehouseProcessInstanceId" : {
+      "meaning" : "成品出仓明细表流程实例ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "成品出仓明细表工序类型ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseProductionShiftId" : {
+      "meaning" : "成品出仓明细表生产班次ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseQuantity" : {
+      "meaning" : "成品出仓明细表任务数量"
+    },
+    "finOutwarehouseDetFinOutwarehouseReceiptDate" : {
+      "meaning" : "成品出仓明细表单据日期"
+    },
+    "finOutwarehouseDetFinOutwarehouseReceiptType" : {
+      "meaning" : "成品出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "finOutwarehouseDetFinOutwarehouseRelatedTasksId" : {
+      "meaning" : "成品出仓明细表关联任务id"
+    },
+    "finOutwarehouseDetFinOutwarehouseSerialNumber" : {
+      "meaning" : "成品出仓明细表顺序号"
+    },
+    "finOutwarehouseDetFinOutwarehouseSource" : {
+      "meaning" : "成品出仓明细表源"
+    },
+    "finOutwarehouseDetFinOutwarehouseSourceType" : {
+      "meaning" : "成品出仓明细表来源类型"
+    },
+    "finOutwarehouseDetFinOutwarehouseState" : {
+      "meaning" : "成品出仓明细表通用状态"
+    },
+    "finOutwarehouseDetFinOutwarehouseSystemCode" : {
+      "meaning" : "成品出仓明细表系统编码"
+    },
+    "finOutwarehouseDetFinOutwarehouseTarget" : {
+      "meaning" : "成品出仓明细表目标"
+    },
+    "finOutwarehouseDetFinOutwarehouseTaskNodeName" : {
+      "meaning" : "成品出仓明细表任务节点名称"
+    },
+    "finOutwarehouseDetFinOutwarehouseTaskNodeType" : {
+      "meaning" : "成品出仓明细表任务节点类型"
+    },
+    "finOutwarehouseDetFinOutwarehouseTenantId" : {
+      "meaning" : "成品出仓明细表租户id"
+    },
+    "finOutwarehouseDetFinOutwarehouseThirdPartyClass" : {
+      "meaning" : "成品出仓明细表第三方分类"
+    },
+    "finOutwarehouseDetFinOutwarehouseThirdPartyId" : {
+      "meaning" : "成品出仓明细表第三方系统中的唯一ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseThirdPartyName" : {
+      "meaning" : "成品出仓明细表第三方名称"
+    },
+    "finOutwarehouseDetFinOutwarehouseToAuditDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToAuditDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseToBeginTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToBeginTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseToCreateTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToCreateTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDateExtra1" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDateExtra1"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDateExtra2" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDateExtra2"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDateExtra3" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDateExtra3"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDateExtra4" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDateExtra4"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDateExtra5" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDateExtra5"
+    },
+    "finOutwarehouseDetFinOutwarehouseToDeliveryDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToDeliveryDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseToEndTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToEndTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseToReceiptDate" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToReceiptDate"
+    },
+    "finOutwarehouseDetFinOutwarehouseToUpdateTime" : {
+      "meaning" : "finOutwarehouseDetFinOutwarehouseToUpdateTime"
+    },
+    "finOutwarehouseDetFinOutwarehouseUnitCode" : {
+      "meaning" : "成品出仓明细表单位id"
+    },
+    "finOutwarehouseDetFinOutwarehouseUpdateTime" : {
+      "meaning" : "成品出仓明细表更新时间"
+    },
+    "finOutwarehouseDetFinOutwarehouseUpdater" : {
+      "meaning" : "成品出仓明细表更新人"
+    },
+    "finOutwarehouseDetFinOutwarehouseUpdaterId" : {
+      "meaning" : "成品出仓明细表更新人ID"
+    },
+    "finOutwarehouseDetFinOutwarehouseUserCode" : {
+      "meaning" : "成品出仓明细表智能节点的唯一编码"
+    },
+    "finOutwarehouseDetFinOutwarehouseVarExtra1" : {
+      "meaning" : "成品出仓明细表扩展1"
+    },
+    "finOutwarehouseDetFinOutwarehouseVarExtra2" : {
+      "meaning" : "成品出仓明细表扩展2"
+    },
+    "finOutwarehouseDetFinOutwarehouseVarExtra3" : {
+      "meaning" : "成品出仓明细表扩展3"
+    },
+    "finOutwarehouseDetFinOutwarehouseVarExtra4" : {
+      "meaning" : "成品出仓明细表扩展4"
+    },
+    "finOutwarehouseDetFinOutwarehouseVarExtra5" : {
+      "meaning" : "成品出仓明细表扩展5"
+    },
+    "finOutwarehouseDetFinOutwarehouseVersion" : {
+      "meaning" : "成品出仓明细表版本号"
+    },
+    "finOutwarehouseDetFlags" : {
+      "meaning" : "成品出仓明细表63位标志位"
+    },
+    "finOutwarehouseDetFromAuditDate" : {
+      "meaning" : "finOutwarehouseDetFromAuditDate"
+    },
+    "finOutwarehouseDetFromBeginTime" : {
+      "meaning" : "finOutwarehouseDetFromBeginTime"
+    },
+    "finOutwarehouseDetFromCreateTime" : {
+      "meaning" : "finOutwarehouseDetFromCreateTime"
+    },
+    "finOutwarehouseDetFromDateExtra1" : {
+      "meaning" : "finOutwarehouseDetFromDateExtra1"
+    },
+    "finOutwarehouseDetFromDateExtra2" : {
+      "meaning" : "finOutwarehouseDetFromDateExtra2"
+    },
+    "finOutwarehouseDetFromDateExtra3" : {
+      "meaning" : "finOutwarehouseDetFromDateExtra3"
+    },
+    "finOutwarehouseDetFromDateExtra4" : {
+      "meaning" : "finOutwarehouseDetFromDateExtra4"
+    },
+    "finOutwarehouseDetFromDateExtra5" : {
+      "meaning" : "finOutwarehouseDetFromDateExtra5"
+    },
+    "finOutwarehouseDetFromDeliveryDate" : {
+      "meaning" : "finOutwarehouseDetFromDeliveryDate"
+    },
+    "finOutwarehouseDetFromEndTime" : {
+      "meaning" : "finOutwarehouseDetFromEndTime"
+    },
+    "finOutwarehouseDetFromReceiptDate" : {
+      "meaning" : "finOutwarehouseDetFromReceiptDate"
+    },
+    "finOutwarehouseDetFromUpdateTime" : {
+      "meaning" : "finOutwarehouseDetFromUpdateTime"
+    },
+    "finOutwarehouseDetFscType" : {
+      "meaning" : "成品出仓明细表FSC声明"
+    },
+    "finOutwarehouseDetGenerativePeople" : {
+      "meaning" : "成品出仓明细表下发人"
+    },
+    "finOutwarehouseDetGenerativeState" : {
+      "meaning" : "成品出仓明细表下发状态"
+    },
+    "finOutwarehouseDetGoodsId" : {
+      "meaning" : "成品出仓明细表货（包）id"
+    },
+    "finOutwarehouseDetGroovyScript" : {
+      "meaning" : "成品出仓明细表groovy脚本"
+    },
+    "finOutwarehouseDetGropeCode" : {
+      "meaning" : "成品出仓明细表搜索码"
+    },
+    "finOutwarehouseDetId" : {
+      "meaning" : "成品出仓明细表PK",
+      "is_primary" : true
+    },
+    "finOutwarehouseDetInUsed" : {
+      "meaning" : "成品出仓明细表是否被使用"
+    },
+    "finOutwarehouseDetInvTypeTaxRateId" : {
+      "meaning" : "成品出仓明细表发票税率id"
+    },
+    "finOutwarehouseDetIsBanned" : {
+      "meaning" : "成品出仓明细表是否被禁用"
+    },
+    "finOutwarehouseDetIsDeleted" : {
+      "meaning" : "成品出仓明细表是否被删除"
+    },
+    "finOutwarehouseDetIsLeaf" : {
+      "meaning" : "成品出仓明细表是否叶子节点"
+    },
+    "finOutwarehouseDetIsMainFlow" : {
+      "meaning" : "成品出仓明细表是否是主流程"
+    },
+    "finOutwarehouseDetIsManualModificationDate" : {
+      "meaning" : "成品出仓明细表是否手动修改计划生产时间"
+    },
+    "finOutwarehouseDetIsolation" : {
+      "meaning" : "成品出仓明细表智能节点数据隔离标识"
+    },
+    "finOutwarehouseDetJsScript" : {
+      "meaning" : "成品出仓明细表js脚本"
+    },
+    "finOutwarehouseDetLocalCurrencyTotalAmount" : {
+      "meaning" : "成品出仓明细表本币总金额"
+    },
+    "finOutwarehouseDetLocalCurrencyUnitPrice" : {
+      "meaning" : "成品出仓明细表本币单价"
+    },
+    "finOutwarehouseDetMatBatchId" : {
+      "meaning" : "成品出仓明细表物料批次id"
+    },
+    "finOutwarehouseDetMaterialId" : {
+      "meaning" : "成品出仓明细表物料id"
+    },
+    "finOutwarehouseDetName" : {
+      "meaning" : "成品出仓明细表智能节点名"
+    },
+    "finOutwarehouseDetNameCodeSearch" : {
+      "meaning" : "成品出仓明细表name、user_code模糊搜索"
+    },
+    "finOutwarehouseDetNumberExtra1" : {
+      "meaning" : "成品出仓明细表扩展数量1"
+    },
+    "finOutwarehouseDetNumberExtra2" : {
+      "meaning" : "成品出仓明细表扩展数量2"
+    },
+    "finOutwarehouseDetNumberExtra3" : {
+      "meaning" : "成品出仓明细表扩展数量3"
+    },
+    "finOutwarehouseDetNumberExtra4" : {
+      "meaning" : "成品出仓明细表扩展数量4"
+    },
+    "finOutwarehouseDetNumberExtra5" : {
+      "meaning" : "成品出仓明细表扩展数量5"
+    },
+    "finOutwarehouseDetParentId" : {
+      "meaning" : "成品出仓明细表父节点ID"
+    },
+    "finOutwarehouseDetPlannedOutputQuantity" : {
+      "meaning" : "成品出仓明细表计划产出数量"
+    },
+    "finOutwarehouseDetPlannedTimeRequired" : {
+      "meaning" : "成品出仓明细表计划需时(小时)"
+    },
+    "finOutwarehouseDetPrintTimes" : {
+      "meaning" : "成品出仓明细表打印次数"
+    },
+    "finOutwarehouseDetPriority" : {
+      "meaning" : "成品出仓明细表优先级"
+    },
+    "finOutwarehouseDetProcessInstanceId" : {
+      "meaning" : "成品出仓明细表流程实例ID"
+    },
+    "finOutwarehouseDetProductionProcessesTypeId" : {
+      "meaning" : "成品出仓明细表工序类型ID"
+    },
+    "finOutwarehouseDetProductionShiftId" : {
+      "meaning" : "成品出仓明细表生产班次ID"
+    },
+    "finOutwarehouseDetQuantity" : {
+      "meaning" : "成品出仓明细表任务数量"
+    },
+    "finOutwarehouseDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "成品出仓明细表报价单价（含税）"
+    },
+    "finOutwarehouseDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "成品出仓明细表报价单价（不含税）"
+    },
+    "finOutwarehouseDetReceiptDate" : {
+      "meaning" : "成品出仓明细表单据日期"
+    },
+    "finOutwarehouseDetReceiptType" : {
+      "meaning" : "成品出仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "finOutwarehouseDetRelatedTasksId" : {
+      "meaning" : "成品出仓明细表关联任务id"
+    },
+    "finOutwarehouseDetSerialNumber" : {
+      "meaning" : "成品出仓明细表顺序号"
+    },
+    "finOutwarehouseDetSettlementTotalAmount" : {
+      "meaning" : "成品出仓明细表结算总金额"
+    },
+    "finOutwarehouseDetSettlementUnitPrice" : {
+      "meaning" : "成品出仓明细表结算单价"
+    },
+    "finOutwarehouseDetSource" : {
+      "meaning" : "成品出仓明细表源"
+    },
+    "finOutwarehouseDetSourceType" : {
+      "meaning" : "成品出仓明细表来源类型"
+    },
+    "finOutwarehouseDetState" : {
+      "meaning" : "成品出仓明细表通用状态"
+    },
+    "finOutwarehouseDetSystemCode" : {
+      "meaning" : "成品出仓明细表系统编码"
+    },
+    "finOutwarehouseDetTarget" : {
+      "meaning" : "成品出仓明细表目标"
+    },
+    "finOutwarehouseDetTaskNodeName" : {
+      "meaning" : "成品出仓明细表任务节点名称"
+    },
+    "finOutwarehouseDetTaskNodeType" : {
+      "meaning" : "成品出仓明细表任务节点类型"
+    },
+    "finOutwarehouseDetTenantId" : {
+      "meaning" : "成品出仓明细表租户id"
+    },
+    "finOutwarehouseDetThirdPartyClass" : {
+      "meaning" : "成品出仓明细表第三方分类"
+    },
+    "finOutwarehouseDetThirdPartyId" : {
+      "meaning" : "成品出仓明细表第三方系统中的唯一ID"
+    },
+    "finOutwarehouseDetThirdPartyName" : {
+      "meaning" : "成品出仓明细表第三方名称"
+    },
+    "finOutwarehouseDetToAuditDate" : {
+      "meaning" : "finOutwarehouseDetToAuditDate"
+    },
+    "finOutwarehouseDetToBeginTime" : {
+      "meaning" : "finOutwarehouseDetToBeginTime"
+    },
+    "finOutwarehouseDetToCreateTime" : {
+      "meaning" : "finOutwarehouseDetToCreateTime"
+    },
+    "finOutwarehouseDetToDateExtra1" : {
+      "meaning" : "finOutwarehouseDetToDateExtra1"
+    },
+    "finOutwarehouseDetToDateExtra2" : {
+      "meaning" : "finOutwarehouseDetToDateExtra2"
+    },
+    "finOutwarehouseDetToDateExtra3" : {
+      "meaning" : "finOutwarehouseDetToDateExtra3"
+    },
+    "finOutwarehouseDetToDateExtra4" : {
+      "meaning" : "finOutwarehouseDetToDateExtra4"
+    },
+    "finOutwarehouseDetToDateExtra5" : {
+      "meaning" : "finOutwarehouseDetToDateExtra5"
+    },
+    "finOutwarehouseDetToDeliveryDate" : {
+      "meaning" : "finOutwarehouseDetToDeliveryDate"
+    },
+    "finOutwarehouseDetToEndTime" : {
+      "meaning" : "finOutwarehouseDetToEndTime"
+    },
+    "finOutwarehouseDetToReceiptDate" : {
+      "meaning" : "finOutwarehouseDetToReceiptDate"
+    },
+    "finOutwarehouseDetToUpdateTime" : {
+      "meaning" : "finOutwarehouseDetToUpdateTime"
+    },
+    "finOutwarehouseDetTotalAmount" : {
+      "meaning" : "成品出仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "finOutwarehouseDetTotalAmountIncludingTax" : {
+      "meaning" : "成品出仓明细表总金额（含税）"
+    },
+    "finOutwarehouseDetTotalAmountWithoutTax" : {
+      "meaning" : "成品出仓明细表总金额（不含税）"
+    },
+    "finOutwarehouseDetUnitCode" : {
+      "meaning" : "成品出仓明细表单位id"
+    },
+    "finOutwarehouseDetUnitPriceIncludingTax" : {
+      "meaning" : "成品出仓明细表单价（含税）"
+    },
+    "finOutwarehouseDetUnitPriceWithoutTax" : {
+      "meaning" : "成品出仓明细表单价（不含税）"
+    },
+    "finOutwarehouseDetUpdateTime" : {
+      "meaning" : "成品出仓明细表更新时间"
+    },
+    "finOutwarehouseDetUpdater" : {
+      "meaning" : "成品出仓明细表更新人"
+    },
+    "finOutwarehouseDetUpdaterId" : {
+      "meaning" : "成品出仓明细表更新人ID"
+    },
+    "finOutwarehouseDetUserCode" : {
+      "meaning" : "成品出仓明细表智能节点的唯一编码"
+    },
+    "finOutwarehouseDetVarExtra1" : {
+      "meaning" : "成品出仓明细表扩展1"
+    },
+    "finOutwarehouseDetVarExtra2" : {
+      "meaning" : "成品出仓明细表扩展2"
+    },
+    "finOutwarehouseDetVarExtra3" : {
+      "meaning" : "成品出仓明细表扩展3"
+    },
+    "finOutwarehouseDetVarExtra4" : {
+      "meaning" : "成品出仓明细表扩展4"
+    },
+    "finOutwarehouseDetVarExtra5" : {
+      "meaning" : "成品出仓明细表扩展5"
+    },
+    "finOutwarehouseDetVersion" : {
+      "meaning" : "成品出仓明细表版本号"
+    },
+    "finOutwarehouseDetWarehouseSpaceId" : {
+      "meaning" : "成品出仓明细表仓空间id"
+    },
+    "outwarehouseDetFinOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "成品出仓明细表工序类型ID"
+    }
+  }
+}

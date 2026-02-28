@@ -1,0 +1,825 @@
+{
+  "api_name" : "/sem-instorage-det/findList",
+  "table_name" : "半成品入库明细表",
+  "request" : {
+    "semInstorageDetSemInstorageClazz" : "SEM_INSTORAGE",
+    "semInstorageDetClazz" : "SEM_INSTORAGE_DET"
+  },
+  "mainTabClazz" : "SEM_INSTORAGE_DET",
+  "response" : {
+    "semInstorageDetActualTimeRequired" : {
+      "meaning" : "半成品入库明细表实际需时(小时)"
+    },
+    "semInstorageDetAdditionalWeight" : {
+      "meaning" : "半成品入库明细表附加重量"
+    },
+    "semInstorageDetAdjustmentTimeRequired" : {
+      "meaning" : "半成品入库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "semInstorageDetApplicationId" : {
+      "meaning" : "半成品入库明细表应用ID"
+    },
+    "semInstorageDetAuditDate" : {
+      "meaning" : "半成品入库明细表审核时间"
+    },
+    "semInstorageDetAuditStatus" : {
+      "meaning" : "半成品入库明细表审核状态"
+    },
+    "semInstorageDetAvailableScheduleId" : {
+      "meaning" : "半成品入库明细表可用日程id"
+    },
+    "semInstorageDetBeginTime" : {
+      "meaning" : "半成品入库明细表开始时间"
+    },
+    "semInstorageDetBizVersion" : {
+      "meaning" : "半成品入库明细表业务自定义版本号"
+    },
+    "semInstorageDetBriefName" : {
+      "meaning" : "半成品入库明细表简称"
+    },
+    "semInstorageDetBusDivisId" : {
+      "meaning" : "半成品入库明细表事业部id"
+    },
+    "semInstorageDetClazz" : {
+      "meaning" : "半成品入库明细表子类 类名（表和类一一对应）"
+    },
+    "semInstorageDetClosedReason" : {
+      "meaning" : "半成品入库明细表结案原因"
+    },
+    "semInstorageDetClosedStatus" : {
+      "meaning" : "半成品入库明细表结案状态"
+    },
+    "semInstorageDetComment" : {
+      "meaning" : "半成品入库明细表评论"
+    },
+    "semInstorageDetCompleteQuantity" : {
+      "meaning" : "半成品入库明细表完成数量"
+    },
+    "semInstorageDetCompleteStatus" : {
+      "meaning" : "半成品入库明细表完成状态"
+    },
+    "semInstorageDetCreateTime" : {
+      "meaning" : "半成品入库明细表创建时间"
+    },
+    "semInstorageDetCreator" : {
+      "meaning" : "半成品入库明细表创建人"
+    },
+    "semInstorageDetCreatorId" : {
+      "meaning" : "半成品入库明细表创建人ID"
+    },
+    "semInstorageDetCustomerId" : {
+      "meaning" : "半成品入库明细表客户id"
+    },
+    "semInstorageDetDateExtra1" : {
+      "meaning" : "半成品入库明细表扩展时间1"
+    },
+    "semInstorageDetDateExtra2" : {
+      "meaning" : "半成品入库明细表扩展时间2"
+    },
+    "semInstorageDetDateExtra3" : {
+      "meaning" : "半成品入库明细表扩展时间3"
+    },
+    "semInstorageDetDateExtra4" : {
+      "meaning" : "半成品入库明细表扩展时间4"
+    },
+    "semInstorageDetDateExtra5" : {
+      "meaning" : "半成品入库明细表扩展时间5"
+    },
+    "semInstorageDetDefaultType" : {
+      "meaning" : "半成品入库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "semInstorageDetDeliveryDate" : {
+      "meaning" : "半成品入库明细表交货日期"
+    },
+    "semInstorageDetDescription" : {
+      "meaning" : "半成品入库明细表描述"
+    },
+    "semInstorageDetEndTime" : {
+      "meaning" : "半成品入库明细表结束时间"
+    },
+    "semInstorageDetEndTimeRequired" : {
+      "meaning" : "半成品入库明细表最后需时(小时)"
+    },
+    "semInstorageDetEngName" : {
+      "meaning" : "半成品入库明细表英文名称"
+    },
+    "semInstorageDetEquipmentId" : {
+      "meaning" : "半成品入库明细表设备id"
+    },
+    "semInstorageDetExchangeRateId" : {
+      "meaning" : "半成品入库明细表币种汇率id"
+    },
+    "semInstorageDetExtension" : {
+      "meaning" : "半成品入库明细表扩展数据"
+    },
+    "semInstorageDetExternalState" : {
+      "meaning" : "半成品入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "semInstorageDetFilterClazz" : {
+      "meaning" : "半成品入库明细表冗余字段用于筛选"
+    },
+    "semInstorageDetFlags" : {
+      "meaning" : "半成品入库明细表63位标志位"
+    },
+    "semInstorageDetFromAuditDate" : {
+      "meaning" : "semInstorageDetFromAuditDate"
+    },
+    "semInstorageDetFromBeginTime" : {
+      "meaning" : "semInstorageDetFromBeginTime"
+    },
+    "semInstorageDetFromCreateTime" : {
+      "meaning" : "semInstorageDetFromCreateTime"
+    },
+    "semInstorageDetFromDateExtra1" : {
+      "meaning" : "semInstorageDetFromDateExtra1"
+    },
+    "semInstorageDetFromDateExtra2" : {
+      "meaning" : "semInstorageDetFromDateExtra2"
+    },
+    "semInstorageDetFromDateExtra3" : {
+      "meaning" : "semInstorageDetFromDateExtra3"
+    },
+    "semInstorageDetFromDateExtra4" : {
+      "meaning" : "semInstorageDetFromDateExtra4"
+    },
+    "semInstorageDetFromDateExtra5" : {
+      "meaning" : "semInstorageDetFromDateExtra5"
+    },
+    "semInstorageDetFromDeliveryDate" : {
+      "meaning" : "semInstorageDetFromDeliveryDate"
+    },
+    "semInstorageDetFromEndTime" : {
+      "meaning" : "semInstorageDetFromEndTime"
+    },
+    "semInstorageDetFromReceiptDate" : {
+      "meaning" : "semInstorageDetFromReceiptDate"
+    },
+    "semInstorageDetFromUpdateTime" : {
+      "meaning" : "semInstorageDetFromUpdateTime"
+    },
+    "semInstorageDetFscType" : {
+      "meaning" : "半成品入库明细表FSC声明"
+    },
+    "semInstorageDetGenerativePeople" : {
+      "meaning" : "半成品入库明细表下发人"
+    },
+    "semInstorageDetGenerativeState" : {
+      "meaning" : "半成品入库明细表下发状态"
+    },
+    "semInstorageDetGoodsId" : {
+      "meaning" : "半成品入库明细表货（包）id"
+    },
+    "semInstorageDetGroovyScript" : {
+      "meaning" : "半成品入库明细表groovy脚本"
+    },
+    "semInstorageDetGropeCode" : {
+      "meaning" : "半成品入库明细表搜索码"
+    },
+    "semInstorageDetGrossWeightPerBox" : {
+      "meaning" : "半成品入库明细表每箱毛重"
+    },
+    "semInstorageDetId" : {
+      "meaning" : "半成品入库明细表PK",
+      "is_primary" : true
+    },
+    "semInstorageDetInUsed" : {
+      "meaning" : "半成品入库明细表是否被使用"
+    },
+    "semInstorageDetInvTypeTaxRateId" : {
+      "meaning" : "半成品入库明细表发票税率id"
+    },
+    "semInstorageDetInventoryQuantity" : {
+      "meaning" : "半成品入库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)"
+    },
+    "semInstorageDetIpqcQuantity" : {
+      "meaning" : "半成品入库明细表已开IPQC的数量"
+    },
+    "semInstorageDetIpqcStatus" : {
+      "meaning" : "半成品入库明细表已开IPQC的状态"
+    },
+    "semInstorageDetIsBanned" : {
+      "meaning" : "半成品入库明细表是否被禁用"
+    },
+    "semInstorageDetIsDeleted" : {
+      "meaning" : "半成品入库明细表是否被删除"
+    },
+    "semInstorageDetIsLeaf" : {
+      "meaning" : "半成品入库明细表是否叶子节点"
+    },
+    "semInstorageDetIsMainFlow" : {
+      "meaning" : "半成品入库明细表是否是主流程"
+    },
+    "semInstorageDetIsManualModificationDate" : {
+      "meaning" : "半成品入库明细表是否手动修改计划生产时间"
+    },
+    "semInstorageDetIsolation" : {
+      "meaning" : "半成品入库明细表智能节点数据隔离标识"
+    },
+    "semInstorageDetJsScript" : {
+      "meaning" : "半成品入库明细表js脚本"
+    },
+    "semInstorageDetLocalCurrencyTotalAmount" : {
+      "meaning" : "半成品入库明细表本币总金额"
+    },
+    "semInstorageDetLocalCurrencyUnitPrice" : {
+      "meaning" : "半成品入库明细表本币单价"
+    },
+    "semInstorageDetMatBatchId" : {
+      "meaning" : "半成品入库明细表物料批次id"
+    },
+    "semInstorageDetMaterialId" : {
+      "meaning" : "半成品入库明细表物料id"
+    },
+    "semInstorageDetName" : {
+      "meaning" : "半成品入库明细表智能节点名"
+    },
+    "semInstorageDetNameCodeSearch" : {
+      "meaning" : "半成品入库明细表name、user_code模糊搜索"
+    },
+    "semInstorageDetNetWeightPerBox" : {
+      "meaning" : "半成品入库明细表每箱净重"
+    },
+    "semInstorageDetNumberExtra1" : {
+      "meaning" : "半成品入库明细表扩展数量1"
+    },
+    "semInstorageDetNumberExtra2" : {
+      "meaning" : "半成品入库明细表扩展数量2"
+    },
+    "semInstorageDetNumberExtra3" : {
+      "meaning" : "半成品入库明细表扩展数量3"
+    },
+    "semInstorageDetNumberExtra4" : {
+      "meaning" : "半成品入库明细表扩展数量4"
+    },
+    "semInstorageDetNumberExtra5" : {
+      "meaning" : "半成品入库明细表扩展数量5"
+    },
+    "semInstorageDetOrgId" : {
+      "meaning" : "半成品入库明细表机构id(客户/供应商)"
+    },
+    "semInstorageDetPackageMatId" : {
+      "meaning" : "半成品入库明细表包装物料id"
+    },
+    "semInstorageDetParentId" : {
+      "meaning" : "半成品入库明细表父节点ID"
+    },
+    "semInstorageDetPlannedOutputQuantity" : {
+      "meaning" : "半成品入库明细表计划产出数量"
+    },
+    "semInstorageDetPlannedTimeRequired" : {
+      "meaning" : "半成品入库明细表计划需时(小时)"
+    },
+    "semInstorageDetPrintTimes" : {
+      "meaning" : "半成品入库明细表打印次数"
+    },
+    "semInstorageDetPriority" : {
+      "meaning" : "半成品入库明细表优先级"
+    },
+    "semInstorageDetProcessInstanceId" : {
+      "meaning" : "半成品入库明细表流程实例ID"
+    },
+    "semInstorageDetProductionProcessesTypeId" : {
+      "meaning" : "半成品入库明细表工序类型ID"
+    },
+    "semInstorageDetProductionShiftId" : {
+      "meaning" : "半成品入库明细表生产班次ID"
+    },
+    "semInstorageDetQuantity" : {
+      "meaning" : "半成品入库明细表任务数量"
+    },
+    "semInstorageDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "半成品入库明细表报价单价（含税）"
+    },
+    "semInstorageDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "半成品入库明细表报价单价（不含税）"
+    },
+    "semInstorageDetReceiptDate" : {
+      "meaning" : "半成品入库明细表单据日期"
+    },
+    "semInstorageDetReceiptType" : {
+      "meaning" : "半成品入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "semInstorageDetRelatedTasksId" : {
+      "meaning" : "半成品入库明细表关联任务id"
+    },
+    "semInstorageDetSemInstorageActualTimeRequired" : {
+      "meaning" : "半成品入库明细表实际需时(小时)"
+    },
+    "semInstorageDetSemInstorageAdjustmentTimeRequired" : {
+      "meaning" : "半成品入库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "semInstorageDetSemInstorageApplicationId" : {
+      "meaning" : "半成品入库明细表应用ID"
+    },
+    "semInstorageDetSemInstorageAuditDate" : {
+      "meaning" : "半成品入库明细表审核时间"
+    },
+    "semInstorageDetSemInstorageAuditStatus" : {
+      "meaning" : "半成品入库明细表审核状态"
+    },
+    "semInstorageDetSemInstorageAvailableScheduleId" : {
+      "meaning" : "半成品入库明细表可用日程id"
+    },
+    "semInstorageDetSemInstorageBeginTime" : {
+      "meaning" : "半成品入库明细表开始时间"
+    },
+    "semInstorageDetSemInstorageBizVersion" : {
+      "meaning" : "半成品入库明细表业务自定义版本号"
+    },
+    "semInstorageDetSemInstorageBriefName" : {
+      "meaning" : "半成品入库明细表简称"
+    },
+    "semInstorageDetSemInstorageBusDivisId" : {
+      "meaning" : "半成品入库明细表事业部id"
+    },
+    "semInstorageDetSemInstorageClazz" : {
+      "meaning" : "半成品入库明细表子类 类名（表和类一一对应）"
+    },
+    "semInstorageDetSemInstorageClosedReason" : {
+      "meaning" : "半成品入库明细表结案原因"
+    },
+    "semInstorageDetSemInstorageClosedStatus" : {
+      "meaning" : "半成品入库明细表结案状态"
+    },
+    "semInstorageDetSemInstorageComment" : {
+      "meaning" : "半成品入库明细表评论"
+    },
+    "semInstorageDetSemInstorageCompleteQuantity" : {
+      "meaning" : "半成品入库明细表完成数量"
+    },
+    "semInstorageDetSemInstorageCompleteStatus" : {
+      "meaning" : "半成品入库明细表完成状态"
+    },
+    "semInstorageDetSemInstorageCreateTime" : {
+      "meaning" : "半成品入库明细表创建时间"
+    },
+    "semInstorageDetSemInstorageCreator" : {
+      "meaning" : "半成品入库明细表创建人"
+    },
+    "semInstorageDetSemInstorageCreatorId" : {
+      "meaning" : "半成品入库明细表创建人ID"
+    },
+    "semInstorageDetSemInstorageDateExtra1" : {
+      "meaning" : "半成品入库明细表扩展时间1"
+    },
+    "semInstorageDetSemInstorageDateExtra2" : {
+      "meaning" : "半成品入库明细表扩展时间2"
+    },
+    "semInstorageDetSemInstorageDateExtra3" : {
+      "meaning" : "半成品入库明细表扩展时间3"
+    },
+    "semInstorageDetSemInstorageDateExtra4" : {
+      "meaning" : "半成品入库明细表扩展时间4"
+    },
+    "semInstorageDetSemInstorageDateExtra5" : {
+      "meaning" : "半成品入库明细表扩展时间5"
+    },
+    "semInstorageDetSemInstorageDefaultType" : {
+      "meaning" : "半成品入库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "semInstorageDetSemInstorageDeliveryDate" : {
+      "meaning" : "半成品入库明细表交货日期"
+    },
+    "semInstorageDetSemInstorageDepId" : {
+      "meaning" : "半成品入库明细表部门id"
+    },
+    "semInstorageDetSemInstorageDepartmentId" : {
+      "meaning" : "半成品入库明细表部门ID"
+    },
+    "semInstorageDetSemInstorageDescription" : {
+      "meaning" : "半成品入库明细表描述"
+    },
+    "semInstorageDetSemInstorageEndTime" : {
+      "meaning" : "半成品入库明细表结束时间"
+    },
+    "semInstorageDetSemInstorageEndTimeRequired" : {
+      "meaning" : "半成品入库明细表最后需时(小时)"
+    },
+    "semInstorageDetSemInstorageEngName" : {
+      "meaning" : "半成品入库明细表英文名称"
+    },
+    "semInstorageDetSemInstorageEquipmentId" : {
+      "meaning" : "半成品入库明细表设备id"
+    },
+    "semInstorageDetSemInstorageExchangeRateId" : {
+      "meaning" : "半成品入库明细表币种汇率id"
+    },
+    "semInstorageDetSemInstorageExtension" : {
+      "meaning" : "半成品入库明细表扩展数据"
+    },
+    "semInstorageDetSemInstorageExternalState" : {
+      "meaning" : "半成品入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "semInstorageDetSemInstorageFilterClazz" : {
+      "meaning" : "半成品入库明细表冗余字段用于筛选"
+    },
+    "semInstorageDetSemInstorageFlags" : {
+      "meaning" : "半成品入库明细表63位标志位"
+    },
+    "semInstorageDetSemInstorageFromAuditDate" : {
+      "meaning" : "semInstorageDetSemInstorageFromAuditDate"
+    },
+    "semInstorageDetSemInstorageFromBeginTime" : {
+      "meaning" : "semInstorageDetSemInstorageFromBeginTime"
+    },
+    "semInstorageDetSemInstorageFromCreateTime" : {
+      "meaning" : "semInstorageDetSemInstorageFromCreateTime"
+    },
+    "semInstorageDetSemInstorageFromDateExtra1" : {
+      "meaning" : "semInstorageDetSemInstorageFromDateExtra1"
+    },
+    "semInstorageDetSemInstorageFromDateExtra2" : {
+      "meaning" : "semInstorageDetSemInstorageFromDateExtra2"
+    },
+    "semInstorageDetSemInstorageFromDateExtra3" : {
+      "meaning" : "semInstorageDetSemInstorageFromDateExtra3"
+    },
+    "semInstorageDetSemInstorageFromDateExtra4" : {
+      "meaning" : "semInstorageDetSemInstorageFromDateExtra4"
+    },
+    "semInstorageDetSemInstorageFromDateExtra5" : {
+      "meaning" : "semInstorageDetSemInstorageFromDateExtra5"
+    },
+    "semInstorageDetSemInstorageFromDeliveryDate" : {
+      "meaning" : "semInstorageDetSemInstorageFromDeliveryDate"
+    },
+    "semInstorageDetSemInstorageFromEndTime" : {
+      "meaning" : "semInstorageDetSemInstorageFromEndTime"
+    },
+    "semInstorageDetSemInstorageFromReceiptDate" : {
+      "meaning" : "semInstorageDetSemInstorageFromReceiptDate"
+    },
+    "semInstorageDetSemInstorageFromUpdateTime" : {
+      "meaning" : "semInstorageDetSemInstorageFromUpdateTime"
+    },
+    "semInstorageDetSemInstorageFscType" : {
+      "meaning" : "半成品入库明细表FSC声明"
+    },
+    "semInstorageDetSemInstorageGenerativePeople" : {
+      "meaning" : "半成品入库明细表下发人"
+    },
+    "semInstorageDetSemInstorageGenerativeState" : {
+      "meaning" : "半成品入库明细表下发状态"
+    },
+    "semInstorageDetSemInstorageGroovyScript" : {
+      "meaning" : "半成品入库明细表groovy脚本"
+    },
+    "semInstorageDetSemInstorageGropeCode" : {
+      "meaning" : "半成品入库明细表搜索码"
+    },
+    "semInstorageDetSemInstorageId" : {
+      "meaning" : "半成品入库明细表PK"
+    },
+    "semInstorageDetSemInstorageInUsed" : {
+      "meaning" : "半成品入库明细表是否被使用"
+    },
+    "semInstorageDetSemInstorageInvTypeTaxRateId" : {
+      "meaning" : "半成品入库明细表发票税率id"
+    },
+    "semInstorageDetSemInstorageIsBanned" : {
+      "meaning" : "半成品入库明细表是否被禁用"
+    },
+    "semInstorageDetSemInstorageIsDeleted" : {
+      "meaning" : "半成品入库明细表是否被删除"
+    },
+    "semInstorageDetSemInstorageIsLeaf" : {
+      "meaning" : "半成品入库明细表是否叶子节点"
+    },
+    "semInstorageDetSemInstorageIsMainFlow" : {
+      "meaning" : "半成品入库明细表是否是主流程"
+    },
+    "semInstorageDetSemInstorageIsManualModificationDate" : {
+      "meaning" : "半成品入库明细表是否手动修改计划生产时间"
+    },
+    "semInstorageDetSemInstorageIsolation" : {
+      "meaning" : "半成品入库明细表智能节点数据隔离标识"
+    },
+    "semInstorageDetSemInstorageJsScript" : {
+      "meaning" : "半成品入库明细表js脚本"
+    },
+    "semInstorageDetSemInstorageMaterialId" : {
+      "meaning" : "半成品入库明细表物料id"
+    },
+    "semInstorageDetSemInstorageName" : {
+      "meaning" : "半成品入库明细表智能节点名"
+    },
+    "semInstorageDetSemInstorageNameCodeSearch" : {
+      "meaning" : "半成品入库明细表name、user_code模糊搜索"
+    },
+    "semInstorageDetSemInstorageNumberExtra1" : {
+      "meaning" : "半成品入库明细表扩展数量1"
+    },
+    "semInstorageDetSemInstorageNumberExtra2" : {
+      "meaning" : "半成品入库明细表扩展数量2"
+    },
+    "semInstorageDetSemInstorageNumberExtra3" : {
+      "meaning" : "半成品入库明细表扩展数量3"
+    },
+    "semInstorageDetSemInstorageNumberExtra4" : {
+      "meaning" : "半成品入库明细表扩展数量4"
+    },
+    "semInstorageDetSemInstorageNumberExtra5" : {
+      "meaning" : "半成品入库明细表扩展数量5"
+    },
+    "semInstorageDetSemInstorageOrgId" : {
+      "meaning" : "半成品入库明细表机构id(客户/供应商)"
+    },
+    "semInstorageDetSemInstorageParentId" : {
+      "meaning" : "半成品入库明细表父节点ID"
+    },
+    "semInstorageDetSemInstoragePlannedOutputQuantity" : {
+      "meaning" : "半成品入库明细表计划产出数量"
+    },
+    "semInstorageDetSemInstoragePlannedTimeRequired" : {
+      "meaning" : "半成品入库明细表计划需时(小时)"
+    },
+    "semInstorageDetSemInstoragePrintTimes" : {
+      "meaning" : "半成品入库明细表打印次数"
+    },
+    "semInstorageDetSemInstoragePriority" : {
+      "meaning" : "半成品入库明细表优先级"
+    },
+    "semInstorageDetSemInstorageProcessInstanceId" : {
+      "meaning" : "半成品入库明细表流程实例ID"
+    },
+    "semInstorageDetSemInstorageProductionProcessesTypeId" : {
+      "meaning" : "半成品入库明细表工序类型ID"
+    },
+    "semInstorageDetSemInstorageProductionShiftId" : {
+      "meaning" : "半成品入库明细表生产班次ID"
+    },
+    "semInstorageDetSemInstorageQuantity" : {
+      "meaning" : "半成品入库明细表任务数量"
+    },
+    "semInstorageDetSemInstorageReceiptDate" : {
+      "meaning" : "半成品入库明细表单据日期"
+    },
+    "semInstorageDetSemInstorageReceiptType" : {
+      "meaning" : "半成品入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "semInstorageDetSemInstorageRelatedTasksId" : {
+      "meaning" : "半成品入库明细表关联任务id"
+    },
+    "semInstorageDetSemInstorageSerialNumber" : {
+      "meaning" : "半成品入库明细表顺序号"
+    },
+    "semInstorageDetSemInstorageSettMethod" : {
+      "meaning" : "半成品入库明细表结算方式"
+    },
+    "semInstorageDetSemInstorageSettOrgId" : {
+      "meaning" : "半成品入库明细表结算机构id(客户/供应商)"
+    },
+    "semInstorageDetSemInstorageSource" : {
+      "meaning" : "半成品入库明细表源"
+    },
+    "semInstorageDetSemInstorageSourceType" : {
+      "meaning" : "半成品入库明细表来源类型"
+    },
+    "semInstorageDetSemInstorageStaffId" : {
+      "meaning" : "半成品入库明细表员工id(入/出库员工)"
+    },
+    "semInstorageDetSemInstorageState" : {
+      "meaning" : "半成品入库明细表通用状态"
+    },
+    "semInstorageDetSemInstorageSystemCode" : {
+      "meaning" : "半成品入库明细表系统编码"
+    },
+    "semInstorageDetSemInstorageTarget" : {
+      "meaning" : "半成品入库明细表目标"
+    },
+    "semInstorageDetSemInstorageTaskNodeName" : {
+      "meaning" : "半成品入库明细表任务节点名称"
+    },
+    "semInstorageDetSemInstorageTaskNodeType" : {
+      "meaning" : "半成品入库明细表任务节点类型"
+    },
+    "semInstorageDetSemInstorageTenantId" : {
+      "meaning" : "半成品入库明细表租户id"
+    },
+    "semInstorageDetSemInstorageThirdPartyClass" : {
+      "meaning" : "半成品入库明细表第三方分类"
+    },
+    "semInstorageDetSemInstorageThirdPartyId" : {
+      "meaning" : "半成品入库明细表第三方系统中的唯一ID"
+    },
+    "semInstorageDetSemInstorageThirdPartyName" : {
+      "meaning" : "半成品入库明细表第三方名称"
+    },
+    "semInstorageDetSemInstorageToAuditDate" : {
+      "meaning" : "semInstorageDetSemInstorageToAuditDate"
+    },
+    "semInstorageDetSemInstorageToBeginTime" : {
+      "meaning" : "semInstorageDetSemInstorageToBeginTime"
+    },
+    "semInstorageDetSemInstorageToCreateTime" : {
+      "meaning" : "semInstorageDetSemInstorageToCreateTime"
+    },
+    "semInstorageDetSemInstorageToDateExtra1" : {
+      "meaning" : "semInstorageDetSemInstorageToDateExtra1"
+    },
+    "semInstorageDetSemInstorageToDateExtra2" : {
+      "meaning" : "semInstorageDetSemInstorageToDateExtra2"
+    },
+    "semInstorageDetSemInstorageToDateExtra3" : {
+      "meaning" : "semInstorageDetSemInstorageToDateExtra3"
+    },
+    "semInstorageDetSemInstorageToDateExtra4" : {
+      "meaning" : "semInstorageDetSemInstorageToDateExtra4"
+    },
+    "semInstorageDetSemInstorageToDateExtra5" : {
+      "meaning" : "semInstorageDetSemInstorageToDateExtra5"
+    },
+    "semInstorageDetSemInstorageToDeliveryDate" : {
+      "meaning" : "semInstorageDetSemInstorageToDeliveryDate"
+    },
+    "semInstorageDetSemInstorageToEndTime" : {
+      "meaning" : "semInstorageDetSemInstorageToEndTime"
+    },
+    "semInstorageDetSemInstorageToReceiptDate" : {
+      "meaning" : "semInstorageDetSemInstorageToReceiptDate"
+    },
+    "semInstorageDetSemInstorageToUpdateTime" : {
+      "meaning" : "semInstorageDetSemInstorageToUpdateTime"
+    },
+    "semInstorageDetSemInstorageUnitCode" : {
+      "meaning" : "半成品入库明细表单位id"
+    },
+    "semInstorageDetSemInstorageUpdateTime" : {
+      "meaning" : "半成品入库明细表更新时间"
+    },
+    "semInstorageDetSemInstorageUpdater" : {
+      "meaning" : "半成品入库明细表更新人"
+    },
+    "semInstorageDetSemInstorageUpdaterId" : {
+      "meaning" : "半成品入库明细表更新人ID"
+    },
+    "semInstorageDetSemInstorageUserCode" : {
+      "meaning" : "半成品入库明细表智能节点的唯一编码"
+    },
+    "semInstorageDetSemInstorageVarExtra1" : {
+      "meaning" : "半成品入库明细表扩展1"
+    },
+    "semInstorageDetSemInstorageVarExtra2" : {
+      "meaning" : "半成品入库明细表扩展2"
+    },
+    "semInstorageDetSemInstorageVarExtra3" : {
+      "meaning" : "半成品入库明细表扩展3"
+    },
+    "semInstorageDetSemInstorageVarExtra4" : {
+      "meaning" : "半成品入库明细表扩展4"
+    },
+    "semInstorageDetSemInstorageVarExtra5" : {
+      "meaning" : "半成品入库明细表扩展5"
+    },
+    "semInstorageDetSemInstorageVersion" : {
+      "meaning" : "半成品入库明细表版本号"
+    },
+    "semInstorageDetSerialNumber" : {
+      "meaning" : "半成品入库明细表顺序号"
+    },
+    "semInstorageDetSettMethod" : {
+      "meaning" : "半成品入库明细表结算方式"
+    },
+    "semInstorageDetSettOrgId" : {
+      "meaning" : "半成品入库明细表结算机构id(客户/供应商)"
+    },
+    "semInstorageDetSettlementTotalAmount" : {
+      "meaning" : "半成品入库明细表结算总金额"
+    },
+    "semInstorageDetSettlementUnitPrice" : {
+      "meaning" : "半成品入库明细表结算单价"
+    },
+    "semInstorageDetSingleWeight" : {
+      "meaning" : "半成品入库明细表单重kg"
+    },
+    "semInstorageDetSource" : {
+      "meaning" : "半成品入库明细表源"
+    },
+    "semInstorageDetSourceType" : {
+      "meaning" : "半成品入库明细表来源类型"
+    },
+    "semInstorageDetState" : {
+      "meaning" : "半成品入库明细表通用状态"
+    },
+    "semInstorageDetStorageSpaceId" : {
+      "meaning" : "半成品入库明细表库空间id"
+    },
+    "semInstorageDetSystemCode" : {
+      "meaning" : "半成品入库明细表系统编码"
+    },
+    "semInstorageDetTarget" : {
+      "meaning" : "半成品入库明细表目标"
+    },
+    "semInstorageDetTaskNodeName" : {
+      "meaning" : "半成品入库明细表任务节点名称"
+    },
+    "semInstorageDetTaskNodeType" : {
+      "meaning" : "半成品入库明细表任务节点类型"
+    },
+    "semInstorageDetTeamId" : {
+      "meaning" : "半成品入库明细表班组id"
+    },
+    "semInstorageDetTenantId" : {
+      "meaning" : "半成品入库明细表租户id"
+    },
+    "semInstorageDetThirdPartyClass" : {
+      "meaning" : "半成品入库明细表第三方分类"
+    },
+    "semInstorageDetThirdPartyId" : {
+      "meaning" : "半成品入库明细表第三方系统中的唯一ID"
+    },
+    "semInstorageDetThirdPartyName" : {
+      "meaning" : "半成品入库明细表第三方名称"
+    },
+    "semInstorageDetToAuditDate" : {
+      "meaning" : "semInstorageDetToAuditDate"
+    },
+    "semInstorageDetToBeginTime" : {
+      "meaning" : "semInstorageDetToBeginTime"
+    },
+    "semInstorageDetToCreateTime" : {
+      "meaning" : "semInstorageDetToCreateTime"
+    },
+    "semInstorageDetToDateExtra1" : {
+      "meaning" : "semInstorageDetToDateExtra1"
+    },
+    "semInstorageDetToDateExtra2" : {
+      "meaning" : "semInstorageDetToDateExtra2"
+    },
+    "semInstorageDetToDateExtra3" : {
+      "meaning" : "semInstorageDetToDateExtra3"
+    },
+    "semInstorageDetToDateExtra4" : {
+      "meaning" : "semInstorageDetToDateExtra4"
+    },
+    "semInstorageDetToDateExtra5" : {
+      "meaning" : "semInstorageDetToDateExtra5"
+    },
+    "semInstorageDetToDeliveryDate" : {
+      "meaning" : "semInstorageDetToDeliveryDate"
+    },
+    "semInstorageDetToEndTime" : {
+      "meaning" : "semInstorageDetToEndTime"
+    },
+    "semInstorageDetToReceiptDate" : {
+      "meaning" : "semInstorageDetToReceiptDate"
+    },
+    "semInstorageDetToUpdateTime" : {
+      "meaning" : "semInstorageDetToUpdateTime"
+    },
+    "semInstorageDetTotalAmount" : {
+      "meaning" : "半成品入库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "semInstorageDetTotalAmountIncludingTax" : {
+      "meaning" : "半成品入库明细表总金额（含税）"
+    },
+    "semInstorageDetTotalAmountWithoutTax" : {
+      "meaning" : "半成品入库明细表总金额（不含税）"
+    },
+    "semInstorageDetTotalWeightLot" : {
+      "meaning" : "半成品入库明细表合计总重kg"
+    },
+    "semInstorageDetTrayMatId" : {
+      "meaning" : "半成品入库明细表托盘物料id"
+    },
+    "semInstorageDetUnitCode" : {
+      "meaning" : "半成品入库明细表单位id"
+    },
+    "semInstorageDetUnitPriceIncludingTax" : {
+      "meaning" : "半成品入库明细表单价（含税）"
+    },
+    "semInstorageDetUnitPriceWithoutTax" : {
+      "meaning" : "半成品入库明细表单价（不含税）"
+    },
+    "semInstorageDetUpdateTime" : {
+      "meaning" : "半成品入库明细表更新时间"
+    },
+    "semInstorageDetUpdater" : {
+      "meaning" : "半成品入库明细表更新人"
+    },
+    "semInstorageDetUpdaterId" : {
+      "meaning" : "半成品入库明细表更新人ID"
+    },
+    "semInstorageDetUserCode" : {
+      "meaning" : "半成品入库明细表智能节点的唯一编码"
+    },
+    "semInstorageDetVarExtra1" : {
+      "meaning" : "半成品入库明细表扩展1"
+    },
+    "semInstorageDetVarExtra2" : {
+      "meaning" : "半成品入库明细表扩展2"
+    },
+    "semInstorageDetVarExtra3" : {
+      "meaning" : "半成品入库明细表扩展3"
+    },
+    "semInstorageDetVarExtra4" : {
+      "meaning" : "半成品入库明细表扩展4"
+    },
+    "semInstorageDetVarExtra5" : {
+      "meaning" : "半成品入库明细表扩展5"
+    },
+    "semInstorageDetVersion" : {
+      "meaning" : "半成品入库明细表版本号"
+    }
+  }
+}

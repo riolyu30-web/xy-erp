@@ -1,0 +1,233 @@
+{
+  "api_name" : "/type/findList",
+  "table_name" : "元数据 类型表",
+  "request" : { },
+  "response" : {
+    "typeApplicationId" : {
+      "meaning" : "元数据 类型表应用ID"
+    },
+    "typeAuditDate" : {
+      "meaning" : "元数据 类型表审核时间"
+    },
+    "typeAuditStatus" : {
+      "meaning" : "元数据 类型表审核状态"
+    },
+    "typeBizVersion" : {
+      "meaning" : "元数据 类型表业务自定义版本号"
+    },
+    "typeBriefName" : {
+      "meaning" : "元数据 类型表简称"
+    },
+    "typeBusDivisId" : {
+      "meaning" : "元数据 类型表事业部id"
+    },
+    "typeClazz" : {
+      "meaning" : "元数据 类型表子类 类名（表和类一一对应）"
+    },
+    "typeComment" : {
+      "meaning" : "元数据 类型表评论"
+    },
+    "typeCreateTime" : {
+      "meaning" : "元数据 类型表创建时间"
+    },
+    "typeCreator" : {
+      "meaning" : "元数据 类型表创建人"
+    },
+    "typeCreatorId" : {
+      "meaning" : "元数据 类型表创建人ID"
+    },
+    "typeDateExtra1" : {
+      "meaning" : "元数据 类型表扩展时间1"
+    },
+    "typeDateExtra2" : {
+      "meaning" : "元数据 类型表扩展时间2"
+    },
+    "typeDateExtra3" : {
+      "meaning" : "元数据 类型表扩展时间3"
+    },
+    "typeDateExtra4" : {
+      "meaning" : "元数据 类型表扩展时间4"
+    },
+    "typeDateExtra5" : {
+      "meaning" : "元数据 类型表扩展时间5"
+    },
+    "typeDefaultType" : {
+      "meaning" : "元数据 类型表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "typeDescription" : {
+      "meaning" : "元数据 类型表描述"
+    },
+    "typeEngName" : {
+      "meaning" : "元数据 类型表英文名称"
+    },
+    "typeExtension" : {
+      "meaning" : "元数据 类型表扩展数据"
+    },
+    "typeExternalState" : {
+      "meaning" : "元数据 类型表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "typeFlags" : {
+      "meaning" : "元数据 类型表63位标志位"
+    },
+    "typeFromAuditDate" : {
+      "meaning" : "typeFromAuditDate"
+    },
+    "typeFromCreateTime" : {
+      "meaning" : "typeFromCreateTime"
+    },
+    "typeFromDateExtra1" : {
+      "meaning" : "typeFromDateExtra1"
+    },
+    "typeFromDateExtra2" : {
+      "meaning" : "typeFromDateExtra2"
+    },
+    "typeFromDateExtra3" : {
+      "meaning" : "typeFromDateExtra3"
+    },
+    "typeFromDateExtra4" : {
+      "meaning" : "typeFromDateExtra4"
+    },
+    "typeFromDateExtra5" : {
+      "meaning" : "typeFromDateExtra5"
+    },
+    "typeFromUpdateTime" : {
+      "meaning" : "typeFromUpdateTime"
+    },
+    "typeGroovyScript" : {
+      "meaning" : "元数据 类型表groovy脚本"
+    },
+    "typeGropeCode" : {
+      "meaning" : "元数据 类型表搜索码"
+    },
+    "typeId" : {
+      "meaning" : "元数据 类型表pk",
+      "is_primary" : true
+    },
+    "typeInUsed" : {
+      "meaning" : "元数据 类型表是否被使用"
+    },
+    "typeIsBanned" : {
+      "meaning" : "元数据 类型表是否被禁用"
+    },
+    "typeIsDeleted" : {
+      "meaning" : "元数据 类型表是否被删除"
+    },
+    "typeIsMainFlow" : {
+      "meaning" : "元数据 类型表是否是主流程"
+    },
+    "typeIsolation" : {
+      "meaning" : "元数据 类型表智能节点数据隔离标识"
+    },
+    "typeJsScript" : {
+      "meaning" : "元数据 类型表js脚本"
+    },
+    "typeName" : {
+      "meaning" : "元数据 类型表智能节点名"
+    },
+    "typeNameCodeSearch" : {
+      "meaning" : "元数据 类型表name、user_code模糊搜索"
+    },
+    "typeNumberExtra1" : {
+      "meaning" : "元数据 类型表扩展数量1"
+    },
+    "typeNumberExtra2" : {
+      "meaning" : "元数据 类型表扩展数量2"
+    },
+    "typeNumberExtra3" : {
+      "meaning" : "元数据 类型表扩展数量3"
+    },
+    "typeNumberExtra4" : {
+      "meaning" : "元数据 类型表扩展数量4"
+    },
+    "typeNumberExtra5" : {
+      "meaning" : "元数据 类型表扩展数量5"
+    },
+    "typeParentId" : {
+      "meaning" : "元数据 类型表父节点ID"
+    },
+    "typeProcessInstanceId" : {
+      "meaning" : "元数据 类型表流程实例ID"
+    },
+    "typeSearchCode" : {
+      "meaning" : "元数据 类型表搜索码"
+    },
+    "typeSerialNumber" : {
+      "meaning" : "元数据 类型表顺序号"
+    },
+    "typeState" : {
+      "meaning" : "元数据 类型表通用状态"
+    },
+    "typeSystemCode" : {
+      "meaning" : "元数据 类型表系统编码"
+    },
+    "typeTaskNodeName" : {
+      "meaning" : "元数据 类型表任务节点名称"
+    },
+    "typeTaskNodeType" : {
+      "meaning" : "元数据 类型表任务节点类型"
+    },
+    "typeThirdPartyClass" : {
+      "meaning" : "元数据 类型表第三方分类"
+    },
+    "typeThirdPartyId" : {
+      "meaning" : "元数据 类型表第三方系统中的唯一ID"
+    },
+    "typeThirdPartyName" : {
+      "meaning" : "元数据 类型表第三方名称"
+    },
+    "typeToAuditDate" : {
+      "meaning" : "typeToAuditDate"
+    },
+    "typeToCreateTime" : {
+      "meaning" : "typeToCreateTime"
+    },
+    "typeToDateExtra1" : {
+      "meaning" : "typeToDateExtra1"
+    },
+    "typeToDateExtra2" : {
+      "meaning" : "typeToDateExtra2"
+    },
+    "typeToDateExtra3" : {
+      "meaning" : "typeToDateExtra3"
+    },
+    "typeToDateExtra4" : {
+      "meaning" : "typeToDateExtra4"
+    },
+    "typeToDateExtra5" : {
+      "meaning" : "typeToDateExtra5"
+    },
+    "typeToUpdateTime" : {
+      "meaning" : "typeToUpdateTime"
+    },
+    "typeUpdateTime" : {
+      "meaning" : "元数据 类型表更新时间"
+    },
+    "typeUpdater" : {
+      "meaning" : "元数据 类型表更新人"
+    },
+    "typeUpdaterId" : {
+      "meaning" : "元数据 类型表更新人ID"
+    },
+    "typeUserCode" : {
+      "meaning" : "元数据 类型表智能节点的唯一编码"
+    },
+    "typeVarExtra1" : {
+      "meaning" : "元数据 类型表扩展1"
+    },
+    "typeVarExtra2" : {
+      "meaning" : "元数据 类型表扩展2"
+    },
+    "typeVarExtra3" : {
+      "meaning" : "元数据 类型表扩展3"
+    },
+    "typeVarExtra4" : {
+      "meaning" : "元数据 类型表扩展4"
+    },
+    "typeVarExtra5" : {
+      "meaning" : "元数据 类型表扩展5"
+    },
+    "typeVersion" : {
+      "meaning" : "元数据 类型表版本号"
+    }
+  }
+}

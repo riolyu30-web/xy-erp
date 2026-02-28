@@ -1,0 +1,392 @@
+{
+  "api_name" : "/supp-adv-pay/findList",
+  "table_name" : "供应商预付款",
+  "request" : {
+    "suppAdvPayClazz" : "SUPP_ADV_PAY"
+  },
+  "mainTabClazz" : "SUPP_ADV_PAY",
+  "response" : {
+    "suppAdvPayAcctHolderName" : {
+      "meaning" : "供应商预付款账号持有人"
+    },
+    "suppAdvPayActualTimeRequired" : {
+      "meaning" : "供应商预付款实际需时(小时)"
+    },
+    "suppAdvPayAdjustmentTimeRequired" : {
+      "meaning" : "供应商预付款调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "suppAdvPayApplicationId" : {
+      "meaning" : "供应商预付款应用ID"
+    },
+    "suppAdvPayAuditDate" : {
+      "meaning" : "供应商预付款审核时间"
+    },
+    "suppAdvPayAuditStatus" : {
+      "meaning" : "供应商预付款审核状态"
+    },
+    "suppAdvPayAvailableScheduleId" : {
+      "meaning" : "供应商预付款可用日程id"
+    },
+    "suppAdvPayBankAcctNum" : {
+      "meaning" : "供应商预付款银行账号"
+    },
+    "suppAdvPayBankBranchInfo" : {
+      "meaning" : "供应商预付款开户支行信息"
+    },
+    "suppAdvPayBankName" : {
+      "meaning" : "供应商预付款银行名称"
+    },
+    "suppAdvPayBeginTime" : {
+      "meaning" : "供应商预付款开始时间"
+    },
+    "suppAdvPayBizVersion" : {
+      "meaning" : "供应商预付款业务自定义版本号"
+    },
+    "suppAdvPayBriefName" : {
+      "meaning" : "供应商预付款简称"
+    },
+    "suppAdvPayBusDivisId" : {
+      "meaning" : "供应商预付款事业部id"
+    },
+    "suppAdvPayClazz" : {
+      "meaning" : "供应商预付款子类 类名（表和类一一对应）"
+    },
+    "suppAdvPayClosedReason" : {
+      "meaning" : "供应商预付款结案原因"
+    },
+    "suppAdvPayClosedStatus" : {
+      "meaning" : "供应商预付款结案状态"
+    },
+    "suppAdvPayComment" : {
+      "meaning" : "供应商预付款评论"
+    },
+    "suppAdvPayCompleteQuantity" : {
+      "meaning" : "供应商预付款完成数量"
+    },
+    "suppAdvPayCompleteStatus" : {
+      "meaning" : "供应商预付款完成状态"
+    },
+    "suppAdvPayCreateTime" : {
+      "meaning" : "供应商预付款创建时间"
+    },
+    "suppAdvPayCreator" : {
+      "meaning" : "供应商预付款创建人"
+    },
+    "suppAdvPayCreatorId" : {
+      "meaning" : "供应商预付款创建人ID"
+    },
+    "suppAdvPayCurrency" : {
+      "meaning" : "供应商预付款币种"
+    },
+    "suppAdvPayDateExtra1" : {
+      "meaning" : "供应商预付款扩展时间1"
+    },
+    "suppAdvPayDateExtra2" : {
+      "meaning" : "供应商预付款扩展时间2"
+    },
+    "suppAdvPayDateExtra3" : {
+      "meaning" : "供应商预付款扩展时间3"
+    },
+    "suppAdvPayDateExtra4" : {
+      "meaning" : "供应商预付款扩展时间4"
+    },
+    "suppAdvPayDateExtra5" : {
+      "meaning" : "供应商预付款扩展时间5"
+    },
+    "suppAdvPayDefaultType" : {
+      "meaning" : "供应商预付款智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "suppAdvPayDeliveryDate" : {
+      "meaning" : "供应商预付款交货日期"
+    },
+    "suppAdvPayDescription" : {
+      "meaning" : "供应商预付款描述"
+    },
+    "suppAdvPayEndTime" : {
+      "meaning" : "供应商预付款结束时间"
+    },
+    "suppAdvPayEndTimeRequired" : {
+      "meaning" : "供应商预付款最后需时(小时)"
+    },
+    "suppAdvPayEngName" : {
+      "meaning" : "供应商预付款英文名称"
+    },
+    "suppAdvPayEquipmentId" : {
+      "meaning" : "供应商预付款设备id"
+    },
+    "suppAdvPayExchangeRateId" : {
+      "meaning" : "供应商预付款币种汇率id"
+    },
+    "suppAdvPayExtension" : {
+      "meaning" : "供应商预付款扩展数据"
+    },
+    "suppAdvPayExternalState" : {
+      "meaning" : "供应商预付款上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "suppAdvPayFilterClazz" : {
+      "meaning" : "供应商预付款冗余字段用于筛选"
+    },
+    "suppAdvPayFlags" : {
+      "meaning" : "供应商预付款63位标志位"
+    },
+    "suppAdvPayFromAuditDate" : {
+      "meaning" : "suppAdvPayFromAuditDate"
+    },
+    "suppAdvPayFromBeginTime" : {
+      "meaning" : "suppAdvPayFromBeginTime"
+    },
+    "suppAdvPayFromCreateTime" : {
+      "meaning" : "suppAdvPayFromCreateTime"
+    },
+    "suppAdvPayFromDateExtra1" : {
+      "meaning" : "suppAdvPayFromDateExtra1"
+    },
+    "suppAdvPayFromDateExtra2" : {
+      "meaning" : "suppAdvPayFromDateExtra2"
+    },
+    "suppAdvPayFromDateExtra3" : {
+      "meaning" : "suppAdvPayFromDateExtra3"
+    },
+    "suppAdvPayFromDateExtra4" : {
+      "meaning" : "suppAdvPayFromDateExtra4"
+    },
+    "suppAdvPayFromDateExtra5" : {
+      "meaning" : "suppAdvPayFromDateExtra5"
+    },
+    "suppAdvPayFromDeliveryDate" : {
+      "meaning" : "suppAdvPayFromDeliveryDate"
+    },
+    "suppAdvPayFromEndTime" : {
+      "meaning" : "suppAdvPayFromEndTime"
+    },
+    "suppAdvPayFromReceiptDate" : {
+      "meaning" : "suppAdvPayFromReceiptDate"
+    },
+    "suppAdvPayFromUpdateTime" : {
+      "meaning" : "suppAdvPayFromUpdateTime"
+    },
+    "suppAdvPayFscType" : {
+      "meaning" : "供应商预付款FSC声明"
+    },
+    "suppAdvPayGenerativePeople" : {
+      "meaning" : "供应商预付款下发人"
+    },
+    "suppAdvPayGenerativeState" : {
+      "meaning" : "供应商预付款下发状态"
+    },
+    "suppAdvPayGroovyScript" : {
+      "meaning" : "供应商预付款groovy脚本"
+    },
+    "suppAdvPayGropeCode" : {
+      "meaning" : "供应商预付款搜索码"
+    },
+    "suppAdvPayId" : {
+      "meaning" : "供应商预付款PK",
+      "is_primary" : true
+    },
+    "suppAdvPayInUsed" : {
+      "meaning" : "供应商预付款是否被使用"
+    },
+    "suppAdvPayInvTypeTaxRateId" : {
+      "meaning" : "供应商预付款发票税率id"
+    },
+    "suppAdvPayIsBanned" : {
+      "meaning" : "供应商预付款是否被禁用"
+    },
+    "suppAdvPayIsDeleted" : {
+      "meaning" : "供应商预付款是否被删除"
+    },
+    "suppAdvPayIsLeaf" : {
+      "meaning" : "供应商预付款是否叶子节点"
+    },
+    "suppAdvPayIsMainFlow" : {
+      "meaning" : "供应商预付款是否是主流程"
+    },
+    "suppAdvPayIsManualModificationDate" : {
+      "meaning" : "供应商预付款是否手动修改计划生产时间"
+    },
+    "suppAdvPayIsolation" : {
+      "meaning" : "供应商预付款智能节点数据隔离标识"
+    },
+    "suppAdvPayJsScript" : {
+      "meaning" : "供应商预付款js脚本"
+    },
+    "suppAdvPayLocCompleteQuantity" : {
+      "meaning" : "供应商预付款本币完成数量（本币总已转应收/付金额）"
+    },
+    "suppAdvPayLocTotalAmount" : {
+      "meaning" : "供应商预付款本币总预收/付金额"
+    },
+    "suppAdvPayMaterialId" : {
+      "meaning" : "供应商预付款物料id"
+    },
+    "suppAdvPayName" : {
+      "meaning" : "供应商预付款智能节点名"
+    },
+    "suppAdvPayNameCodeSearch" : {
+      "meaning" : "供应商预付款name、user_code模糊搜索"
+    },
+    "suppAdvPayNumberExtra1" : {
+      "meaning" : "供应商预付款扩展数量1"
+    },
+    "suppAdvPayNumberExtra2" : {
+      "meaning" : "供应商预付款扩展数量2"
+    },
+    "suppAdvPayNumberExtra3" : {
+      "meaning" : "供应商预付款扩展数量3"
+    },
+    "suppAdvPayNumberExtra4" : {
+      "meaning" : "供应商预付款扩展数量4"
+    },
+    "suppAdvPayNumberExtra5" : {
+      "meaning" : "供应商预付款扩展数量5"
+    },
+    "suppAdvPayParentId" : {
+      "meaning" : "供应商预付款父节点ID"
+    },
+    "suppAdvPayPlannedOutputQuantity" : {
+      "meaning" : "供应商预付款计划产出数量"
+    },
+    "suppAdvPayPlannedTimeRequired" : {
+      "meaning" : "供应商预付款计划需时(小时)"
+    },
+    "suppAdvPayPrintTimes" : {
+      "meaning" : "供应商预付款打印次数"
+    },
+    "suppAdvPayPriority" : {
+      "meaning" : "供应商预付款优先级"
+    },
+    "suppAdvPayProcessInstanceId" : {
+      "meaning" : "供应商预付款流程实例ID"
+    },
+    "suppAdvPayProductionProcessesTypeId" : {
+      "meaning" : "供应商预付款工序类型ID"
+    },
+    "suppAdvPayProductionShiftId" : {
+      "meaning" : "供应商预付款生产班次ID"
+    },
+    "suppAdvPayQuantity" : {
+      "meaning" : "供应商预付款任务数量"
+    },
+    "suppAdvPayReceiptDate" : {
+      "meaning" : "供应商预付款单据日期"
+    },
+    "suppAdvPayReceiptType" : {
+      "meaning" : "供应商预付款单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "suppAdvPayRelatedTasksId" : {
+      "meaning" : "供应商预付款关联任务id"
+    },
+    "suppAdvPaySerialNumber" : {
+      "meaning" : "供应商预付款顺序号"
+    },
+    "suppAdvPaySource" : {
+      "meaning" : "供应商预付款源"
+    },
+    "suppAdvPaySourceType" : {
+      "meaning" : "供应商预付款来源类型"
+    },
+    "suppAdvPayStaffId" : {
+      "meaning" : "供应商预付款经手人（员工id）"
+    },
+    "suppAdvPayState" : {
+      "meaning" : "供应商预付款通用状态"
+    },
+    "suppAdvPaySupplierId" : {
+      "meaning" : "供应商预付款供应商ID"
+    },
+    "suppAdvPaySystemCode" : {
+      "meaning" : "供应商预付款系统编码"
+    },
+    "suppAdvPayTarget" : {
+      "meaning" : "供应商预付款目标"
+    },
+    "suppAdvPayTaskNodeName" : {
+      "meaning" : "供应商预付款任务节点名称"
+    },
+    "suppAdvPayTenantId" : {
+      "meaning" : "供应商预付款租户ID"
+    },
+    "suppAdvPayThirdPartyClass" : {
+      "meaning" : "供应商预付款第三方分类"
+    },
+    "suppAdvPayThirdPartyId" : {
+      "meaning" : "供应商预付款第三方系统中的唯一ID"
+    },
+    "suppAdvPayThirdPartyName" : {
+      "meaning" : "供应商预付款第三方名称"
+    },
+    "suppAdvPayToAuditDate" : {
+      "meaning" : "suppAdvPayToAuditDate"
+    },
+    "suppAdvPayToBeginTime" : {
+      "meaning" : "suppAdvPayToBeginTime"
+    },
+    "suppAdvPayToCreateTime" : {
+      "meaning" : "suppAdvPayToCreateTime"
+    },
+    "suppAdvPayToDateExtra1" : {
+      "meaning" : "suppAdvPayToDateExtra1"
+    },
+    "suppAdvPayToDateExtra2" : {
+      "meaning" : "suppAdvPayToDateExtra2"
+    },
+    "suppAdvPayToDateExtra3" : {
+      "meaning" : "suppAdvPayToDateExtra3"
+    },
+    "suppAdvPayToDateExtra4" : {
+      "meaning" : "suppAdvPayToDateExtra4"
+    },
+    "suppAdvPayToDateExtra5" : {
+      "meaning" : "suppAdvPayToDateExtra5"
+    },
+    "suppAdvPayToDeliveryDate" : {
+      "meaning" : "suppAdvPayToDeliveryDate"
+    },
+    "suppAdvPayToEndTime" : {
+      "meaning" : "suppAdvPayToEndTime"
+    },
+    "suppAdvPayToReceiptDate" : {
+      "meaning" : "suppAdvPayToReceiptDate"
+    },
+    "suppAdvPayToUpdateTime" : {
+      "meaning" : "suppAdvPayToUpdateTime"
+    },
+    "suppAdvPayTotalAmount" : {
+      "meaning" : "供应商预付款总预收/付金额"
+    },
+    "suppAdvPayUnitCode" : {
+      "meaning" : "供应商预付款单位id"
+    },
+    "suppAdvPayUpdateTime" : {
+      "meaning" : "供应商预付款更新时间"
+    },
+    "suppAdvPayUpdater" : {
+      "meaning" : "供应商预付款更新人"
+    },
+    "suppAdvPayUpdaterId" : {
+      "meaning" : "供应商预付款更新人ID"
+    },
+    "suppAdvPayUserCode" : {
+      "meaning" : "供应商预付款智能节点的唯一编码"
+    },
+    "suppAdvPayVarExtra1" : {
+      "meaning" : "供应商预付款扩展1"
+    },
+    "suppAdvPayVarExtra2" : {
+      "meaning" : "供应商预付款扩展2"
+    },
+    "suppAdvPayVarExtra3" : {
+      "meaning" : "供应商预付款扩展3"
+    },
+    "suppAdvPayVarExtra4" : {
+      "meaning" : "供应商预付款扩展4"
+    },
+    "suppAdvPayVarExtra5" : {
+      "meaning" : "供应商预付款扩展5"
+    },
+    "suppAdvPayVersion" : {
+      "meaning" : "供应商预付款版本号"
+    }
+  }
+}

@@ -1,0 +1,765 @@
+{
+  "api_name" : "/sup-inwarehouse-det/findList",
+  "table_name" : "辅料入仓明细表",
+  "request" : {
+    "supInwarehouseDetSupInwarehouseClazz" : "SUP_INWAREHOUSE",
+    "supInwarehouseDetClazz" : "SUP_INWAREHOUSE_DET"
+  },
+  "mainTabClazz" : "SUP_INWAREHOUSE_DET",
+  "response" : {
+    "supInwarehouseDetActualTimeRequired" : {
+      "meaning" : "辅料入仓明细表实际需时(小时)"
+    },
+    "supInwarehouseDetAdjustmentTimeRequired" : {
+      "meaning" : "辅料入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "supInwarehouseDetApplicationId" : {
+      "meaning" : "辅料入仓明细表应用ID"
+    },
+    "supInwarehouseDetAuditDate" : {
+      "meaning" : "辅料入仓明细表审核时间"
+    },
+    "supInwarehouseDetAuditStatus" : {
+      "meaning" : "辅料入仓明细表审核状态"
+    },
+    "supInwarehouseDetAvailableScheduleId" : {
+      "meaning" : "辅料入仓明细表可用日程id"
+    },
+    "supInwarehouseDetBeginTime" : {
+      "meaning" : "辅料入仓明细表开始时间"
+    },
+    "supInwarehouseDetBizVersion" : {
+      "meaning" : "辅料入仓明细表业务自定义版本号"
+    },
+    "supInwarehouseDetBriefName" : {
+      "meaning" : "辅料入仓明细表简称"
+    },
+    "supInwarehouseDetBusDivisId" : {
+      "meaning" : "辅料入仓明细表事业部id"
+    },
+    "supInwarehouseDetClazz" : {
+      "meaning" : "辅料入仓明细表子类 类名（表和类一一对应）"
+    },
+    "supInwarehouseDetClosedReason" : {
+      "meaning" : "辅料入仓明细表结案原因"
+    },
+    "supInwarehouseDetClosedStatus" : {
+      "meaning" : "辅料入仓明细表结案状态"
+    },
+    "supInwarehouseDetComment" : {
+      "meaning" : "辅料入仓明细表评论"
+    },
+    "supInwarehouseDetCompleteQuantity" : {
+      "meaning" : "辅料入仓明细表完成数量"
+    },
+    "supInwarehouseDetCompleteStatus" : {
+      "meaning" : "辅料入仓明细表完成状态"
+    },
+    "supInwarehouseDetCreateTime" : {
+      "meaning" : "辅料入仓明细表创建时间"
+    },
+    "supInwarehouseDetCreator" : {
+      "meaning" : "辅料入仓明细表创建人"
+    },
+    "supInwarehouseDetCreatorId" : {
+      "meaning" : "辅料入仓明细表创建人ID"
+    },
+    "supInwarehouseDetDateExtra1" : {
+      "meaning" : "辅料入仓明细表扩展时间1"
+    },
+    "supInwarehouseDetDateExtra2" : {
+      "meaning" : "辅料入仓明细表扩展时间2"
+    },
+    "supInwarehouseDetDateExtra3" : {
+      "meaning" : "辅料入仓明细表扩展时间3"
+    },
+    "supInwarehouseDetDateExtra4" : {
+      "meaning" : "辅料入仓明细表扩展时间4"
+    },
+    "supInwarehouseDetDateExtra5" : {
+      "meaning" : "辅料入仓明细表扩展时间5"
+    },
+    "supInwarehouseDetDefaultType" : {
+      "meaning" : "辅料入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "supInwarehouseDetDeliveryDate" : {
+      "meaning" : "辅料入仓明细表交货日期"
+    },
+    "supInwarehouseDetDescription" : {
+      "meaning" : "辅料入仓明细表描述"
+    },
+    "supInwarehouseDetEndTime" : {
+      "meaning" : "辅料入仓明细表结束时间"
+    },
+    "supInwarehouseDetEndTimeRequired" : {
+      "meaning" : "辅料入仓明细表最后需时(小时)"
+    },
+    "supInwarehouseDetEngName" : {
+      "meaning" : "辅料入仓明细表英文名称"
+    },
+    "supInwarehouseDetEquipmentId" : {
+      "meaning" : "辅料入仓明细表设备id"
+    },
+    "supInwarehouseDetExchangeRateId" : {
+      "meaning" : "辅料入仓明细表币种汇率id"
+    },
+    "supInwarehouseDetExtension" : {
+      "meaning" : "辅料入仓明细表扩展数据"
+    },
+    "supInwarehouseDetExternalState" : {
+      "meaning" : "辅料入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "supInwarehouseDetFilterClazz" : {
+      "meaning" : "辅料入仓明细表冗余字段用于筛选"
+    },
+    "supInwarehouseDetFlags" : {
+      "meaning" : "辅料入仓明细表63位标志位"
+    },
+    "supInwarehouseDetFromAuditDate" : {
+      "meaning" : "supInwarehouseDetFromAuditDate"
+    },
+    "supInwarehouseDetFromBeginTime" : {
+      "meaning" : "supInwarehouseDetFromBeginTime"
+    },
+    "supInwarehouseDetFromCreateTime" : {
+      "meaning" : "supInwarehouseDetFromCreateTime"
+    },
+    "supInwarehouseDetFromDateExtra1" : {
+      "meaning" : "supInwarehouseDetFromDateExtra1"
+    },
+    "supInwarehouseDetFromDateExtra2" : {
+      "meaning" : "supInwarehouseDetFromDateExtra2"
+    },
+    "supInwarehouseDetFromDateExtra3" : {
+      "meaning" : "supInwarehouseDetFromDateExtra3"
+    },
+    "supInwarehouseDetFromDateExtra4" : {
+      "meaning" : "supInwarehouseDetFromDateExtra4"
+    },
+    "supInwarehouseDetFromDateExtra5" : {
+      "meaning" : "supInwarehouseDetFromDateExtra5"
+    },
+    "supInwarehouseDetFromDeliveryDate" : {
+      "meaning" : "supInwarehouseDetFromDeliveryDate"
+    },
+    "supInwarehouseDetFromEndTime" : {
+      "meaning" : "supInwarehouseDetFromEndTime"
+    },
+    "supInwarehouseDetFromReceiptDate" : {
+      "meaning" : "supInwarehouseDetFromReceiptDate"
+    },
+    "supInwarehouseDetFromUpdateTime" : {
+      "meaning" : "supInwarehouseDetFromUpdateTime"
+    },
+    "supInwarehouseDetFscType" : {
+      "meaning" : "辅料入仓明细表FSC声明"
+    },
+    "supInwarehouseDetGenerativePeople" : {
+      "meaning" : "辅料入仓明细表下发人"
+    },
+    "supInwarehouseDetGenerativeState" : {
+      "meaning" : "辅料入仓明细表下发状态"
+    },
+    "supInwarehouseDetGoodsId" : {
+      "meaning" : "辅料入仓明细表货（包）id"
+    },
+    "supInwarehouseDetGroovyScript" : {
+      "meaning" : "辅料入仓明细表groovy脚本"
+    },
+    "supInwarehouseDetGropeCode" : {
+      "meaning" : "辅料入仓明细表搜索码"
+    },
+    "supInwarehouseDetId" : {
+      "meaning" : "辅料入仓明细表PK",
+      "is_primary" : true
+    },
+    "supInwarehouseDetInUsed" : {
+      "meaning" : "辅料入仓明细表是否被使用"
+    },
+    "supInwarehouseDetInvTypeTaxRateId" : {
+      "meaning" : "辅料入仓明细表发票税率id"
+    },
+    "supInwarehouseDetIsBanned" : {
+      "meaning" : "辅料入仓明细表是否被禁用"
+    },
+    "supInwarehouseDetIsDeleted" : {
+      "meaning" : "辅料入仓明细表是否被删除"
+    },
+    "supInwarehouseDetIsLeaf" : {
+      "meaning" : "辅料入仓明细表是否叶子节点"
+    },
+    "supInwarehouseDetIsMainFlow" : {
+      "meaning" : "辅料入仓明细表是否是主流程"
+    },
+    "supInwarehouseDetIsManualModificationDate" : {
+      "meaning" : "辅料入仓明细表是否手动修改计划生产时间"
+    },
+    "supInwarehouseDetIsolation" : {
+      "meaning" : "辅料入仓明细表智能节点数据隔离标识"
+    },
+    "supInwarehouseDetJsScript" : {
+      "meaning" : "辅料入仓明细表js脚本"
+    },
+    "supInwarehouseDetLocalCurrencyTotalAmount" : {
+      "meaning" : "辅料入仓明细表本币总金额"
+    },
+    "supInwarehouseDetLocalCurrencyUnitPrice" : {
+      "meaning" : "辅料入仓明细表本币单价"
+    },
+    "supInwarehouseDetMatBatchId" : {
+      "meaning" : "辅料入仓明细表物料批次id"
+    },
+    "supInwarehouseDetMaterialId" : {
+      "meaning" : "辅料入仓明细表物料id"
+    },
+    "supInwarehouseDetName" : {
+      "meaning" : "辅料入仓明细表智能节点名"
+    },
+    "supInwarehouseDetNameCodeSearch" : {
+      "meaning" : "辅料入仓明细表name、user_code模糊搜索"
+    },
+    "supInwarehouseDetNumberExtra1" : {
+      "meaning" : "辅料入仓明细表扩展数量1"
+    },
+    "supInwarehouseDetNumberExtra2" : {
+      "meaning" : "辅料入仓明细表扩展数量2"
+    },
+    "supInwarehouseDetNumberExtra3" : {
+      "meaning" : "辅料入仓明细表扩展数量3"
+    },
+    "supInwarehouseDetNumberExtra4" : {
+      "meaning" : "辅料入仓明细表扩展数量4"
+    },
+    "supInwarehouseDetNumberExtra5" : {
+      "meaning" : "辅料入仓明细表扩展数量5"
+    },
+    "supInwarehouseDetParentId" : {
+      "meaning" : "辅料入仓明细表父节点ID"
+    },
+    "supInwarehouseDetPlannedOutputQuantity" : {
+      "meaning" : "辅料入仓明细表计划产出数量"
+    },
+    "supInwarehouseDetPlannedTimeRequired" : {
+      "meaning" : "辅料入仓明细表计划需时(小时)"
+    },
+    "supInwarehouseDetPrintTimes" : {
+      "meaning" : "辅料入仓明细表打印次数"
+    },
+    "supInwarehouseDetPriority" : {
+      "meaning" : "辅料入仓明细表优先级"
+    },
+    "supInwarehouseDetProcessInstanceId" : {
+      "meaning" : "辅料入仓明细表流程实例ID"
+    },
+    "supInwarehouseDetProductionProcessesTypeId" : {
+      "meaning" : "辅料入仓明细表工序类型ID"
+    },
+    "supInwarehouseDetProductionShiftId" : {
+      "meaning" : "辅料入仓明细表生产班次ID"
+    },
+    "supInwarehouseDetQuantity" : {
+      "meaning" : "辅料入仓明细表任务数量"
+    },
+    "supInwarehouseDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "辅料入仓明细表报价单价（含税）"
+    },
+    "supInwarehouseDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "辅料入仓明细表报价单价（不含税）"
+    },
+    "supInwarehouseDetReceiptDate" : {
+      "meaning" : "辅料入仓明细表单据日期"
+    },
+    "supInwarehouseDetReceiptType" : {
+      "meaning" : "辅料入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "supInwarehouseDetRelatedTasksId" : {
+      "meaning" : "辅料入仓明细表关联任务id"
+    },
+    "supInwarehouseDetSerialNumber" : {
+      "meaning" : "辅料入仓明细表顺序号"
+    },
+    "supInwarehouseDetSettlementTotalAmount" : {
+      "meaning" : "辅料入仓明细表结算总金额"
+    },
+    "supInwarehouseDetSettlementUnitPrice" : {
+      "meaning" : "辅料入仓明细表结算单价"
+    },
+    "supInwarehouseDetSource" : {
+      "meaning" : "辅料入仓明细表源"
+    },
+    "supInwarehouseDetSourceType" : {
+      "meaning" : "辅料入仓明细表来源类型"
+    },
+    "supInwarehouseDetState" : {
+      "meaning" : "辅料入仓明细表通用状态"
+    },
+    "supInwarehouseDetSupInwarehouseActualTimeRequired" : {
+      "meaning" : "辅料入仓明细表实际需时(小时)"
+    },
+    "supInwarehouseDetSupInwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "辅料入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "supInwarehouseDetSupInwarehouseApplicationId" : {
+      "meaning" : "辅料入仓明细表应用ID"
+    },
+    "supInwarehouseDetSupInwarehouseAuditDate" : {
+      "meaning" : "辅料入仓明细表审核时间"
+    },
+    "supInwarehouseDetSupInwarehouseAuditStatus" : {
+      "meaning" : "辅料入仓明细表审核状态"
+    },
+    "supInwarehouseDetSupInwarehouseAvailableScheduleId" : {
+      "meaning" : "辅料入仓明细表可用日程id"
+    },
+    "supInwarehouseDetSupInwarehouseBeginTime" : {
+      "meaning" : "辅料入仓明细表开始时间"
+    },
+    "supInwarehouseDetSupInwarehouseBizVersion" : {
+      "meaning" : "辅料入仓明细表业务自定义版本号"
+    },
+    "supInwarehouseDetSupInwarehouseBriefName" : {
+      "meaning" : "辅料入仓明细表简称"
+    },
+    "supInwarehouseDetSupInwarehouseBusDivisId" : {
+      "meaning" : "辅料入仓明细表事业部id"
+    },
+    "supInwarehouseDetSupInwarehouseClazz" : {
+      "meaning" : "辅料入仓明细表子类 类名（表和类一一对应）"
+    },
+    "supInwarehouseDetSupInwarehouseClosedReason" : {
+      "meaning" : "辅料入仓明细表结案原因"
+    },
+    "supInwarehouseDetSupInwarehouseClosedStatus" : {
+      "meaning" : "辅料入仓明细表结案状态"
+    },
+    "supInwarehouseDetSupInwarehouseComment" : {
+      "meaning" : "辅料入仓明细表评论"
+    },
+    "supInwarehouseDetSupInwarehouseCompleteQuantity" : {
+      "meaning" : "辅料入仓明细表完成数量"
+    },
+    "supInwarehouseDetSupInwarehouseCompleteStatus" : {
+      "meaning" : "辅料入仓明细表完成状态"
+    },
+    "supInwarehouseDetSupInwarehouseCreateTime" : {
+      "meaning" : "辅料入仓明细表创建时间"
+    },
+    "supInwarehouseDetSupInwarehouseCreator" : {
+      "meaning" : "辅料入仓明细表创建人"
+    },
+    "supInwarehouseDetSupInwarehouseCreatorId" : {
+      "meaning" : "辅料入仓明细表创建人ID"
+    },
+    "supInwarehouseDetSupInwarehouseDateExtra1" : {
+      "meaning" : "辅料入仓明细表扩展时间1"
+    },
+    "supInwarehouseDetSupInwarehouseDateExtra2" : {
+      "meaning" : "辅料入仓明细表扩展时间2"
+    },
+    "supInwarehouseDetSupInwarehouseDateExtra3" : {
+      "meaning" : "辅料入仓明细表扩展时间3"
+    },
+    "supInwarehouseDetSupInwarehouseDateExtra4" : {
+      "meaning" : "辅料入仓明细表扩展时间4"
+    },
+    "supInwarehouseDetSupInwarehouseDateExtra5" : {
+      "meaning" : "辅料入仓明细表扩展时间5"
+    },
+    "supInwarehouseDetSupInwarehouseDefaultType" : {
+      "meaning" : "辅料入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "supInwarehouseDetSupInwarehouseDeliveryDate" : {
+      "meaning" : "辅料入仓明细表交货日期"
+    },
+    "supInwarehouseDetSupInwarehouseDescription" : {
+      "meaning" : "辅料入仓明细表描述"
+    },
+    "supInwarehouseDetSupInwarehouseEndTime" : {
+      "meaning" : "辅料入仓明细表结束时间"
+    },
+    "supInwarehouseDetSupInwarehouseEndTimeRequired" : {
+      "meaning" : "辅料入仓明细表最后需时(小时)"
+    },
+    "supInwarehouseDetSupInwarehouseEngName" : {
+      "meaning" : "辅料入仓明细表英文名称"
+    },
+    "supInwarehouseDetSupInwarehouseEquipmentId" : {
+      "meaning" : "辅料入仓明细表设备id"
+    },
+    "supInwarehouseDetSupInwarehouseExchangeRateId" : {
+      "meaning" : "辅料入仓明细表币种汇率id"
+    },
+    "supInwarehouseDetSupInwarehouseExtension" : {
+      "meaning" : "辅料入仓明细表扩展数据"
+    },
+    "supInwarehouseDetSupInwarehouseExternalState" : {
+      "meaning" : "辅料入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "supInwarehouseDetSupInwarehouseFilterClazz" : {
+      "meaning" : "辅料入仓明细表冗余字段用于筛选"
+    },
+    "supInwarehouseDetSupInwarehouseFlags" : {
+      "meaning" : "辅料入仓明细表63位标志位"
+    },
+    "supInwarehouseDetSupInwarehouseFromAuditDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromAuditDate"
+    },
+    "supInwarehouseDetSupInwarehouseFromBeginTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromBeginTime"
+    },
+    "supInwarehouseDetSupInwarehouseFromCreateTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromCreateTime"
+    },
+    "supInwarehouseDetSupInwarehouseFromDateExtra1" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDateExtra1"
+    },
+    "supInwarehouseDetSupInwarehouseFromDateExtra2" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDateExtra2"
+    },
+    "supInwarehouseDetSupInwarehouseFromDateExtra3" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDateExtra3"
+    },
+    "supInwarehouseDetSupInwarehouseFromDateExtra4" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDateExtra4"
+    },
+    "supInwarehouseDetSupInwarehouseFromDateExtra5" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDateExtra5"
+    },
+    "supInwarehouseDetSupInwarehouseFromDeliveryDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromDeliveryDate"
+    },
+    "supInwarehouseDetSupInwarehouseFromEndTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromEndTime"
+    },
+    "supInwarehouseDetSupInwarehouseFromReceiptDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromReceiptDate"
+    },
+    "supInwarehouseDetSupInwarehouseFromUpdateTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseFromUpdateTime"
+    },
+    "supInwarehouseDetSupInwarehouseFscType" : {
+      "meaning" : "辅料入仓明细表FSC声明"
+    },
+    "supInwarehouseDetSupInwarehouseGenerativePeople" : {
+      "meaning" : "辅料入仓明细表下发人"
+    },
+    "supInwarehouseDetSupInwarehouseGenerativeState" : {
+      "meaning" : "辅料入仓明细表下发状态"
+    },
+    "supInwarehouseDetSupInwarehouseGroovyScript" : {
+      "meaning" : "辅料入仓明细表groovy脚本"
+    },
+    "supInwarehouseDetSupInwarehouseGropeCode" : {
+      "meaning" : "辅料入仓明细表搜索码"
+    },
+    "supInwarehouseDetSupInwarehouseId" : {
+      "meaning" : "辅料入仓明细表PK"
+    },
+    "supInwarehouseDetSupInwarehouseInUsed" : {
+      "meaning" : "辅料入仓明细表是否被使用"
+    },
+    "supInwarehouseDetSupInwarehouseInvTypeTaxRateId" : {
+      "meaning" : "辅料入仓明细表发票税率id"
+    },
+    "supInwarehouseDetSupInwarehouseIsBanned" : {
+      "meaning" : "辅料入仓明细表是否被禁用"
+    },
+    "supInwarehouseDetSupInwarehouseIsDeleted" : {
+      "meaning" : "辅料入仓明细表是否被删除"
+    },
+    "supInwarehouseDetSupInwarehouseIsLeaf" : {
+      "meaning" : "辅料入仓明细表是否叶子节点"
+    },
+    "supInwarehouseDetSupInwarehouseIsMainFlow" : {
+      "meaning" : "辅料入仓明细表是否是主流程"
+    },
+    "supInwarehouseDetSupInwarehouseIsManualModificationDate" : {
+      "meaning" : "辅料入仓明细表是否手动修改计划生产时间"
+    },
+    "supInwarehouseDetSupInwarehouseIsolation" : {
+      "meaning" : "辅料入仓明细表智能节点数据隔离标识"
+    },
+    "supInwarehouseDetSupInwarehouseJsScript" : {
+      "meaning" : "辅料入仓明细表js脚本"
+    },
+    "supInwarehouseDetSupInwarehouseMaterialId" : {
+      "meaning" : "辅料入仓明细表物料id"
+    },
+    "supInwarehouseDetSupInwarehouseName" : {
+      "meaning" : "辅料入仓明细表智能节点名"
+    },
+    "supInwarehouseDetSupInwarehouseNameCodeSearch" : {
+      "meaning" : "辅料入仓明细表name、user_code模糊搜索"
+    },
+    "supInwarehouseDetSupInwarehouseNumberExtra1" : {
+      "meaning" : "辅料入仓明细表扩展数量1"
+    },
+    "supInwarehouseDetSupInwarehouseNumberExtra2" : {
+      "meaning" : "辅料入仓明细表扩展数量2"
+    },
+    "supInwarehouseDetSupInwarehouseNumberExtra3" : {
+      "meaning" : "辅料入仓明细表扩展数量3"
+    },
+    "supInwarehouseDetSupInwarehouseNumberExtra4" : {
+      "meaning" : "辅料入仓明细表扩展数量4"
+    },
+    "supInwarehouseDetSupInwarehouseNumberExtra5" : {
+      "meaning" : "辅料入仓明细表扩展数量5"
+    },
+    "supInwarehouseDetSupInwarehouseParentId" : {
+      "meaning" : "辅料入仓明细表父节点ID"
+    },
+    "supInwarehouseDetSupInwarehousePlannedOutputQuantity" : {
+      "meaning" : "辅料入仓明细表计划产出数量"
+    },
+    "supInwarehouseDetSupInwarehousePlannedTimeRequired" : {
+      "meaning" : "辅料入仓明细表计划需时(小时)"
+    },
+    "supInwarehouseDetSupInwarehousePrintTimes" : {
+      "meaning" : "辅料入仓明细表打印次数"
+    },
+    "supInwarehouseDetSupInwarehousePriority" : {
+      "meaning" : "辅料入仓明细表优先级"
+    },
+    "supInwarehouseDetSupInwarehouseProcessInstanceId" : {
+      "meaning" : "辅料入仓明细表流程实例ID"
+    },
+    "supInwarehouseDetSupInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "辅料入仓明细表工序类型ID"
+    },
+    "supInwarehouseDetSupInwarehouseProductionShiftId" : {
+      "meaning" : "辅料入仓明细表生产班次ID"
+    },
+    "supInwarehouseDetSupInwarehouseQuantity" : {
+      "meaning" : "辅料入仓明细表任务数量"
+    },
+    "supInwarehouseDetSupInwarehouseReceiptDate" : {
+      "meaning" : "辅料入仓明细表单据日期"
+    },
+    "supInwarehouseDetSupInwarehouseReceiptType" : {
+      "meaning" : "辅料入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "supInwarehouseDetSupInwarehouseRelatedTasksId" : {
+      "meaning" : "辅料入仓明细表关联任务id"
+    },
+    "supInwarehouseDetSupInwarehouseSerialNumber" : {
+      "meaning" : "辅料入仓明细表顺序号"
+    },
+    "supInwarehouseDetSupInwarehouseSource" : {
+      "meaning" : "辅料入仓明细表源"
+    },
+    "supInwarehouseDetSupInwarehouseSourceType" : {
+      "meaning" : "辅料入仓明细表来源类型"
+    },
+    "supInwarehouseDetSupInwarehouseState" : {
+      "meaning" : "辅料入仓明细表通用状态"
+    },
+    "supInwarehouseDetSupInwarehouseSystemCode" : {
+      "meaning" : "辅料入仓明细表系统编码"
+    },
+    "supInwarehouseDetSupInwarehouseTarget" : {
+      "meaning" : "辅料入仓明细表目标"
+    },
+    "supInwarehouseDetSupInwarehouseTaskNodeName" : {
+      "meaning" : "辅料入仓明细表任务节点名称"
+    },
+    "supInwarehouseDetSupInwarehouseTaskNodeType" : {
+      "meaning" : "辅料入仓明细表任务节点类型"
+    },
+    "supInwarehouseDetSupInwarehouseTenantId" : {
+      "meaning" : "辅料入仓明细表租户id"
+    },
+    "supInwarehouseDetSupInwarehouseThirdPartyClass" : {
+      "meaning" : "辅料入仓明细表第三方分类"
+    },
+    "supInwarehouseDetSupInwarehouseThirdPartyId" : {
+      "meaning" : "辅料入仓明细表第三方系统中的唯一ID"
+    },
+    "supInwarehouseDetSupInwarehouseThirdPartyName" : {
+      "meaning" : "辅料入仓明细表第三方名称"
+    },
+    "supInwarehouseDetSupInwarehouseToAuditDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToAuditDate"
+    },
+    "supInwarehouseDetSupInwarehouseToBeginTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToBeginTime"
+    },
+    "supInwarehouseDetSupInwarehouseToCreateTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToCreateTime"
+    },
+    "supInwarehouseDetSupInwarehouseToDateExtra1" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDateExtra1"
+    },
+    "supInwarehouseDetSupInwarehouseToDateExtra2" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDateExtra2"
+    },
+    "supInwarehouseDetSupInwarehouseToDateExtra3" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDateExtra3"
+    },
+    "supInwarehouseDetSupInwarehouseToDateExtra4" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDateExtra4"
+    },
+    "supInwarehouseDetSupInwarehouseToDateExtra5" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDateExtra5"
+    },
+    "supInwarehouseDetSupInwarehouseToDeliveryDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToDeliveryDate"
+    },
+    "supInwarehouseDetSupInwarehouseToEndTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToEndTime"
+    },
+    "supInwarehouseDetSupInwarehouseToReceiptDate" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToReceiptDate"
+    },
+    "supInwarehouseDetSupInwarehouseToUpdateTime" : {
+      "meaning" : "supInwarehouseDetSupInwarehouseToUpdateTime"
+    },
+    "supInwarehouseDetSupInwarehouseUnitCode" : {
+      "meaning" : "辅料入仓明细表单位id"
+    },
+    "supInwarehouseDetSupInwarehouseUpdateTime" : {
+      "meaning" : "辅料入仓明细表更新时间"
+    },
+    "supInwarehouseDetSupInwarehouseUpdater" : {
+      "meaning" : "辅料入仓明细表更新人"
+    },
+    "supInwarehouseDetSupInwarehouseUpdaterId" : {
+      "meaning" : "辅料入仓明细表更新人ID"
+    },
+    "supInwarehouseDetSupInwarehouseUserCode" : {
+      "meaning" : "辅料入仓明细表智能节点的唯一编码"
+    },
+    "supInwarehouseDetSupInwarehouseVarExtra1" : {
+      "meaning" : "辅料入仓明细表扩展1"
+    },
+    "supInwarehouseDetSupInwarehouseVarExtra2" : {
+      "meaning" : "辅料入仓明细表扩展2"
+    },
+    "supInwarehouseDetSupInwarehouseVarExtra3" : {
+      "meaning" : "辅料入仓明细表扩展3"
+    },
+    "supInwarehouseDetSupInwarehouseVarExtra4" : {
+      "meaning" : "辅料入仓明细表扩展4"
+    },
+    "supInwarehouseDetSupInwarehouseVarExtra5" : {
+      "meaning" : "辅料入仓明细表扩展5"
+    },
+    "supInwarehouseDetSupInwarehouseVersion" : {
+      "meaning" : "辅料入仓明细表版本号"
+    },
+    "supInwarehouseDetSystemCode" : {
+      "meaning" : "辅料入仓明细表系统编码"
+    },
+    "supInwarehouseDetTarget" : {
+      "meaning" : "辅料入仓明细表目标"
+    },
+    "supInwarehouseDetTaskNodeName" : {
+      "meaning" : "辅料入仓明细表任务节点名称"
+    },
+    "supInwarehouseDetTaskNodeType" : {
+      "meaning" : "辅料入仓明细表任务节点类型"
+    },
+    "supInwarehouseDetTenantId" : {
+      "meaning" : "辅料入仓明细表租户id"
+    },
+    "supInwarehouseDetThirdPartyClass" : {
+      "meaning" : "辅料入仓明细表第三方分类"
+    },
+    "supInwarehouseDetThirdPartyId" : {
+      "meaning" : "辅料入仓明细表第三方系统中的唯一ID"
+    },
+    "supInwarehouseDetThirdPartyName" : {
+      "meaning" : "辅料入仓明细表第三方名称"
+    },
+    "supInwarehouseDetToAuditDate" : {
+      "meaning" : "supInwarehouseDetToAuditDate"
+    },
+    "supInwarehouseDetToBeginTime" : {
+      "meaning" : "supInwarehouseDetToBeginTime"
+    },
+    "supInwarehouseDetToCreateTime" : {
+      "meaning" : "supInwarehouseDetToCreateTime"
+    },
+    "supInwarehouseDetToDateExtra1" : {
+      "meaning" : "supInwarehouseDetToDateExtra1"
+    },
+    "supInwarehouseDetToDateExtra2" : {
+      "meaning" : "supInwarehouseDetToDateExtra2"
+    },
+    "supInwarehouseDetToDateExtra3" : {
+      "meaning" : "supInwarehouseDetToDateExtra3"
+    },
+    "supInwarehouseDetToDateExtra4" : {
+      "meaning" : "supInwarehouseDetToDateExtra4"
+    },
+    "supInwarehouseDetToDateExtra5" : {
+      "meaning" : "supInwarehouseDetToDateExtra5"
+    },
+    "supInwarehouseDetToDeliveryDate" : {
+      "meaning" : "supInwarehouseDetToDeliveryDate"
+    },
+    "supInwarehouseDetToEndTime" : {
+      "meaning" : "supInwarehouseDetToEndTime"
+    },
+    "supInwarehouseDetToReceiptDate" : {
+      "meaning" : "supInwarehouseDetToReceiptDate"
+    },
+    "supInwarehouseDetToUpdateTime" : {
+      "meaning" : "supInwarehouseDetToUpdateTime"
+    },
+    "supInwarehouseDetTotalAmount" : {
+      "meaning" : "辅料入仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "supInwarehouseDetTotalAmountIncludingTax" : {
+      "meaning" : "辅料入仓明细表总金额（含税）"
+    },
+    "supInwarehouseDetTotalAmountWithoutTax" : {
+      "meaning" : "辅料入仓明细表总金额（不含税）"
+    },
+    "supInwarehouseDetUnitCode" : {
+      "meaning" : "辅料入仓明细表单位id"
+    },
+    "supInwarehouseDetUnitPriceIncludingTax" : {
+      "meaning" : "辅料入仓明细表单价（含税）"
+    },
+    "supInwarehouseDetUnitPriceWithoutTax" : {
+      "meaning" : "辅料入仓明细表单价（不含税）"
+    },
+    "supInwarehouseDetUpdateTime" : {
+      "meaning" : "辅料入仓明细表更新时间"
+    },
+    "supInwarehouseDetUpdater" : {
+      "meaning" : "辅料入仓明细表更新人"
+    },
+    "supInwarehouseDetUpdaterId" : {
+      "meaning" : "辅料入仓明细表更新人ID"
+    },
+    "supInwarehouseDetUserCode" : {
+      "meaning" : "辅料入仓明细表智能节点的唯一编码"
+    },
+    "supInwarehouseDetVarExtra1" : {
+      "meaning" : "辅料入仓明细表扩展1"
+    },
+    "supInwarehouseDetVarExtra2" : {
+      "meaning" : "辅料入仓明细表扩展2"
+    },
+    "supInwarehouseDetVarExtra3" : {
+      "meaning" : "辅料入仓明细表扩展3"
+    },
+    "supInwarehouseDetVarExtra4" : {
+      "meaning" : "辅料入仓明细表扩展4"
+    },
+    "supInwarehouseDetVarExtra5" : {
+      "meaning" : "辅料入仓明细表扩展5"
+    },
+    "supInwarehouseDetVersion" : {
+      "meaning" : "辅料入仓明细表版本号"
+    },
+    "supInwarehouseDetWarehouseSpaceId" : {
+      "meaning" : "辅料入仓明细表仓空间id"
+    },
+    "upInwarehouseDetSupInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "辅料入仓明细表工序类型ID"
+    }
+  }
+}

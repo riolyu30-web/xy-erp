@@ -1,0 +1,723 @@
+{
+      "api_name": "/prod-prces-apply-det/findList",
+      "table_name": "生产加工申请明细",
+      "request": {
+        "prodPrcesApplyDetProdPrcesApplyClazz": "PROD_PRCES_APPLY",
+        "prodPrcesApplyDetClazz": "PROD_PRCES_APPLY_DET"
+      },
+      "mainTabClazz": "PROD_PRCES_APPLY_DET",
+      "response": {
+        "DPrcesApplyDetProdPrcesApplyProductionProcessesTypeId": {
+          "meaning": "生产加工申请明细工序类型ID"
+        },
+        "odPrcesApplyDetProdPrcesApplyIsManualModificationDate": {
+          "meaning": "生产加工申请明细是否手动修改计划生产时间"
+        },
+        "prodPrcesApplyDetActualTimeRequired": {
+          "meaning": "生产加工申请明细实际需时(小时)"
+        },
+        "prodPrcesApplyDetAdjustmentTimeRequired": {
+          "meaning": "生产加工申请明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prodPrcesApplyDetApplicationId": {
+          "meaning": "生产加工申请明细应用ID"
+        },
+        "prodPrcesApplyDetAuditDate": {
+          "meaning": "生产加工申请明细审核时间"
+        },
+        "prodPrcesApplyDetAuditStatus": {
+          "meaning": "生产加工申请明细审核状态"
+        },
+        "prodPrcesApplyDetAvailableScheduleId": {
+          "meaning": "生产加工申请明细可用日程id"
+        },
+        "prodPrcesApplyDetBeginTime": {
+          "meaning": "生产加工申请明细开始时间"
+        },
+        "prodPrcesApplyDetBizVersion": {
+          "meaning": "生产加工申请明细业务自定义版本号"
+        },
+        "prodPrcesApplyDetBriefName": {
+          "meaning": "生产加工申请明细简称"
+        },
+        "prodPrcesApplyDetBusDivisId": {
+          "meaning": "生产加工申请明细事业部id"
+        },
+        "prodPrcesApplyDetClazz": {
+          "meaning": "生产加工申请明细子类 类名（表和类一一对应）"
+        },
+        "prodPrcesApplyDetClosedReason": {
+          "meaning": "生产加工申请明细结案原因"
+        },
+        "prodPrcesApplyDetClosedStatus": {
+          "meaning": "生产加工申请明细结案状态"
+        },
+        "prodPrcesApplyDetComment": {
+          "meaning": "生产加工申请明细评论"
+        },
+        "prodPrcesApplyDetCompleteQuantity": {
+          "meaning": "生产加工申请明细完成数量"
+        },
+        "prodPrcesApplyDetCompleteStatus": {
+          "meaning": "生产加工申请明细完成状态"
+        },
+        "prodPrcesApplyDetCreateTime": {
+          "meaning": "生产加工申请明细创建时间"
+        },
+        "prodPrcesApplyDetCreator": {
+          "meaning": "生产加工申请明细创建人"
+        },
+        "prodPrcesApplyDetCreatorId": {
+          "meaning": "生产加工申请明细创建人ID"
+        },
+        "prodPrcesApplyDetDateExtra1": {
+          "meaning": "生产加工申请明细扩展时间1"
+        },
+        "prodPrcesApplyDetDateExtra2": {
+          "meaning": "生产加工申请明细扩展时间2"
+        },
+        "prodPrcesApplyDetDateExtra3": {
+          "meaning": "生产加工申请明细扩展时间3"
+        },
+        "prodPrcesApplyDetDateExtra4": {
+          "meaning": "生产加工申请明细扩展时间4"
+        },
+        "prodPrcesApplyDetDateExtra5": {
+          "meaning": "生产加工申请明细扩展时间5"
+        },
+        "prodPrcesApplyDetDefaultType": {
+          "meaning": "生产加工申请明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "prodPrcesApplyDetDeliveryDate": {
+          "meaning": "生产加工申请明细交货日期"
+        },
+        "prodPrcesApplyDetDescription": {
+          "meaning": "生产加工申请明细描述"
+        },
+        "prodPrcesApplyDetEndTime": {
+          "meaning": "生产加工申请明细结束时间"
+        },
+        "prodPrcesApplyDetEndTimeRequired": {
+          "meaning": "生产加工申请明细最后需时(小时)"
+        },
+        "prodPrcesApplyDetEngName": {
+          "meaning": "生产加工申请明细英文名称"
+        },
+        "prodPrcesApplyDetEquipmentId": {
+          "meaning": "生产加工申请明细设备id"
+        },
+        "prodPrcesApplyDetExchangeRateId": {
+          "meaning": "生产加工申请明细币种汇率id"
+        },
+        "prodPrcesApplyDetExtension": {
+          "meaning": "生产加工申请明细扩展数据"
+        },
+        "prodPrcesApplyDetExternalState": {
+          "meaning": "生产加工申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prodPrcesApplyDetFilterClazz": {
+          "meaning": "生产加工申请明细冗余字段用于筛选"
+        },
+        "prodPrcesApplyDetFlags": {
+          "meaning": "生产加工申请明细63位标志位"
+        },
+        "prodPrcesApplyDetFromAuditDate": {
+          "meaning": "prodPrcesApplyDetFromAuditDate"
+        },
+        "prodPrcesApplyDetFromBeginTime": {
+          "meaning": "prodPrcesApplyDetFromBeginTime"
+        },
+        "prodPrcesApplyDetFromCreateTime": {
+          "meaning": "prodPrcesApplyDetFromCreateTime"
+        },
+        "prodPrcesApplyDetFromDateExtra1": {
+          "meaning": "prodPrcesApplyDetFromDateExtra1"
+        },
+        "prodPrcesApplyDetFromDateExtra2": {
+          "meaning": "prodPrcesApplyDetFromDateExtra2"
+        },
+        "prodPrcesApplyDetFromDateExtra3": {
+          "meaning": "prodPrcesApplyDetFromDateExtra3"
+        },
+        "prodPrcesApplyDetFromDateExtra4": {
+          "meaning": "prodPrcesApplyDetFromDateExtra4"
+        },
+        "prodPrcesApplyDetFromDateExtra5": {
+          "meaning": "prodPrcesApplyDetFromDateExtra5"
+        },
+        "prodPrcesApplyDetFromDeliveryDate": {
+          "meaning": "prodPrcesApplyDetFromDeliveryDate"
+        },
+        "prodPrcesApplyDetFromEndTime": {
+          "meaning": "prodPrcesApplyDetFromEndTime"
+        },
+        "prodPrcesApplyDetFromReceiptDate": {
+          "meaning": "prodPrcesApplyDetFromReceiptDate"
+        },
+        "prodPrcesApplyDetFromUpdateTime": {
+          "meaning": "prodPrcesApplyDetFromUpdateTime"
+        },
+        "prodPrcesApplyDetFscType": {
+          "meaning": "生产加工申请明细FSC声明"
+        },
+        "prodPrcesApplyDetGenerativePeople": {
+          "meaning": "生产加工申请明细下发人"
+        },
+        "prodPrcesApplyDetGenerativeState": {
+          "meaning": "生产加工申请明细下发状态"
+        },
+        "prodPrcesApplyDetGroovyScript": {
+          "meaning": "生产加工申请明细groovy脚本"
+        },
+        "prodPrcesApplyDetGropeCode": {
+          "meaning": "生产加工申请明细搜索码"
+        },
+        "prodPrcesApplyDetId": {
+          "meaning": "生产加工申请明细PK",
+          "is_primary": true
+        },
+        "prodPrcesApplyDetInUsed": {
+          "meaning": "生产加工申请明细是否被使用"
+        },
+        "prodPrcesApplyDetInvTypeTaxRateId": {
+          "meaning": "生产加工申请明细发票税率id"
+        },
+        "prodPrcesApplyDetIsBanned": {
+          "meaning": "生产加工申请明细是否被禁用"
+        },
+        "prodPrcesApplyDetIsDeleted": {
+          "meaning": "生产加工申请明细是否被删除"
+        },
+        "prodPrcesApplyDetIsLeaf": {
+          "meaning": "生产加工申请明细是否叶子节点"
+        },
+        "prodPrcesApplyDetIsMainFlow": {
+          "meaning": "生产加工申请明细是否是主流程"
+        },
+        "prodPrcesApplyDetIsManualModificationDate": {
+          "meaning": "生产加工申请明细是否手动修改计划生产时间"
+        },
+        "prodPrcesApplyDetIsolation": {
+          "meaning": "生产加工申请明细智能节点数据隔离标识"
+        },
+        "prodPrcesApplyDetJsScript": {
+          "meaning": "生产加工申请明细js脚本"
+        },
+        "prodPrcesApplyDetMaterialId": {
+          "meaning": "生产加工申请明细物料id"
+        },
+        "prodPrcesApplyDetName": {
+          "meaning": "生产加工申请明细智能节点名"
+        },
+        "prodPrcesApplyDetNameCodeSearch": {
+          "meaning": "生产加工申请明细name、user_code模糊搜索"
+        },
+        "prodPrcesApplyDetNumberExtra1": {
+          "meaning": "生产加工申请明细扩展数量1"
+        },
+        "prodPrcesApplyDetNumberExtra2": {
+          "meaning": "生产加工申请明细扩展数量2"
+        },
+        "prodPrcesApplyDetNumberExtra3": {
+          "meaning": "生产加工申请明细扩展数量3"
+        },
+        "prodPrcesApplyDetNumberExtra4": {
+          "meaning": "生产加工申请明细扩展数量4"
+        },
+        "prodPrcesApplyDetNumberExtra5": {
+          "meaning": "生产加工申请明细扩展数量5"
+        },
+        "prodPrcesApplyDetParentId": {
+          "meaning": "生产加工申请明细父节点ID"
+        },
+        "prodPrcesApplyDetPlannedOutputQuantity": {
+          "meaning": "生产加工申请明细计划产出数量"
+        },
+        "prodPrcesApplyDetPlannedTimeRequired": {
+          "meaning": "生产加工申请明细计划需时(小时)"
+        },
+        "prodPrcesApplyDetPrintTimes": {
+          "meaning": "生产加工申请明细打印次数"
+        },
+        "prodPrcesApplyDetPriority": {
+          "meaning": "生产加工申请明细优先级"
+        },
+        "prodPrcesApplyDetProcessInstanceId": {
+          "meaning": "生产加工申请明细流程实例ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyActualTimeRequired": {
+          "meaning": "生产加工申请明细实际需时(小时)"
+        },
+        "prodPrcesApplyDetProdPrcesApplyAdjustmentTimeRequired": {
+          "meaning": "生产加工申请明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prodPrcesApplyDetProdPrcesApplyApplicationId": {
+          "meaning": "生产加工申请明细应用ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyAuditDate": {
+          "meaning": "生产加工申请明细审核时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyAuditStatus": {
+          "meaning": "生产加工申请明细审核状态"
+        },
+        "prodPrcesApplyDetProdPrcesApplyAvailableScheduleId": {
+          "meaning": "生产加工申请明细可用日程id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyBeginTime": {
+          "meaning": "生产加工申请明细开始时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyBizVersion": {
+          "meaning": "生产加工申请明细业务自定义版本号"
+        },
+        "prodPrcesApplyDetProdPrcesApplyBriefName": {
+          "meaning": "生产加工申请明细简称"
+        },
+        "prodPrcesApplyDetProdPrcesApplyBusDivisId": {
+          "meaning": "生产加工申请明细事业部id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyClazz": {
+          "meaning": "生产加工申请明细子类 类名（表和类一一对应）"
+        },
+        "prodPrcesApplyDetProdPrcesApplyClosedReason": {
+          "meaning": "生产加工申请明细结案原因"
+        },
+        "prodPrcesApplyDetProdPrcesApplyClosedStatus": {
+          "meaning": "生产加工申请明细结案状态"
+        },
+        "prodPrcesApplyDetProdPrcesApplyComment": {
+          "meaning": "生产加工申请明细评论"
+        },
+        "prodPrcesApplyDetProdPrcesApplyCompleteQuantity": {
+          "meaning": "生产加工申请明细完成数量"
+        },
+        "prodPrcesApplyDetProdPrcesApplyCompleteStatus": {
+          "meaning": "生产加工申请明细完成状态"
+        },
+        "prodPrcesApplyDetProdPrcesApplyCreateTime": {
+          "meaning": "生产加工申请明细创建时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyCreator": {
+          "meaning": "生产加工申请明细创建人"
+        },
+        "prodPrcesApplyDetProdPrcesApplyCreatorId": {
+          "meaning": "生产加工申请明细创建人ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDateExtra1": {
+          "meaning": "生产加工申请明细扩展时间1"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDateExtra2": {
+          "meaning": "生产加工申请明细扩展时间2"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDateExtra3": {
+          "meaning": "生产加工申请明细扩展时间3"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDateExtra4": {
+          "meaning": "生产加工申请明细扩展时间4"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDateExtra5": {
+          "meaning": "生产加工申请明细扩展时间5"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDefaultType": {
+          "meaning": "生产加工申请明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDeliveryDate": {
+          "meaning": "生产加工申请明细交货日期"
+        },
+        "prodPrcesApplyDetProdPrcesApplyDescription": {
+          "meaning": "生产加工申请明细描述"
+        },
+        "prodPrcesApplyDetProdPrcesApplyEndTime": {
+          "meaning": "生产加工申请明细结束时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyEndTimeRequired": {
+          "meaning": "生产加工申请明细最后需时(小时)"
+        },
+        "prodPrcesApplyDetProdPrcesApplyEngName": {
+          "meaning": "生产加工申请明细英文名称"
+        },
+        "prodPrcesApplyDetProdPrcesApplyEquipmentId": {
+          "meaning": "生产加工申请明细设备id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyExchangeRateId": {
+          "meaning": "生产加工申请明细币种汇率id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyExtension": {
+          "meaning": "生产加工申请明细扩展数据"
+        },
+        "prodPrcesApplyDetProdPrcesApplyExternalState": {
+          "meaning": "生产加工申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFilterClazz": {
+          "meaning": "生产加工申请明细冗余字段用于筛选"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFlags": {
+          "meaning": "生产加工申请明细63位标志位"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromAuditDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromAuditDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromBeginTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromBeginTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromCreateTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromCreateTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDateExtra1": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDateExtra1"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDateExtra2": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDateExtra2"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDateExtra3": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDateExtra3"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDateExtra4": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDateExtra4"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDateExtra5": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDateExtra5"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromDeliveryDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromDeliveryDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromEndTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromEndTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromReceiptDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromReceiptDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFromUpdateTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyFromUpdateTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyFscType": {
+          "meaning": "生产加工申请明细FSC声明"
+        },
+        "prodPrcesApplyDetProdPrcesApplyGenerativePeople": {
+          "meaning": "生产加工申请明细下发人"
+        },
+        "prodPrcesApplyDetProdPrcesApplyGenerativeState": {
+          "meaning": "生产加工申请明细下发状态"
+        },
+        "prodPrcesApplyDetProdPrcesApplyGroovyScript": {
+          "meaning": "生产加工申请明细groovy脚本"
+        },
+        "prodPrcesApplyDetProdPrcesApplyGropeCode": {
+          "meaning": "生产加工申请明细搜索码"
+        },
+        "prodPrcesApplyDetProdPrcesApplyId": {
+          "meaning": "生产加工申请明细PK"
+        },
+        "prodPrcesApplyDetProdPrcesApplyInUsed": {
+          "meaning": "生产加工申请明细是否被使用"
+        },
+        "prodPrcesApplyDetProdPrcesApplyInvTypeTaxRateId": {
+          "meaning": "生产加工申请明细发票税率id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsBanned": {
+          "meaning": "生产加工申请明细是否被禁用"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsDeleted": {
+          "meaning": "生产加工申请明细是否被删除"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsLeaf": {
+          "meaning": "生产加工申请明细是否叶子节点"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsMainFlow": {
+          "meaning": "生产加工申请明细是否是主流程"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsManualModificationDate": {
+          "meaning": "生产加工申请明细是否手动修改计划生产时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyIsolation": {
+          "meaning": "生产加工申请明细智能节点数据隔离标识"
+        },
+        "prodPrcesApplyDetProdPrcesApplyJsScript": {
+          "meaning": "生产加工申请明细js脚本"
+        },
+        "prodPrcesApplyDetProdPrcesApplyMaterialId": {
+          "meaning": "生产加工申请明细物料id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyName": {
+          "meaning": "生产加工申请明细智能节点名"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNameCodeSearch": {
+          "meaning": "生产加工申请明细name、user_code模糊搜索"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNumberExtra1": {
+          "meaning": "生产加工申请明细扩展数量1"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNumberExtra2": {
+          "meaning": "生产加工申请明细扩展数量2"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNumberExtra3": {
+          "meaning": "生产加工申请明细扩展数量3"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNumberExtra4": {
+          "meaning": "生产加工申请明细扩展数量4"
+        },
+        "prodPrcesApplyDetProdPrcesApplyNumberExtra5": {
+          "meaning": "生产加工申请明细扩展数量5"
+        },
+        "prodPrcesApplyDetProdPrcesApplyParentId": {
+          "meaning": "生产加工申请明细父节点ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyPlannedOutputQuantity": {
+          "meaning": "生产加工申请明细计划产出数量"
+        },
+        "prodPrcesApplyDetProdPrcesApplyPlannedTimeRequired": {
+          "meaning": "生产加工申请明细计划需时(小时)"
+        },
+        "prodPrcesApplyDetProdPrcesApplyPrintTimes": {
+          "meaning": "生产加工申请明细打印次数"
+        },
+        "prodPrcesApplyDetProdPrcesApplyPriority": {
+          "meaning": "生产加工申请明细优先级"
+        },
+        "prodPrcesApplyDetProdPrcesApplyProcessInstanceId": {
+          "meaning": "生产加工申请明细流程实例ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyProductionProcessesTypeId": {
+          "meaning": "生产加工申请明细工序类型ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyProductionShiftId": {
+          "meaning": "生产加工申请明细生产班次ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyQuantity": {
+          "meaning": "生产加工申请明细任务数量"
+        },
+        "prodPrcesApplyDetProdPrcesApplyReason": {
+          "meaning": "生产加工申请明细申请原因"
+        },
+        "prodPrcesApplyDetProdPrcesApplyReceiptDate": {
+          "meaning": "生产加工申请明细单据日期"
+        },
+        "prodPrcesApplyDetProdPrcesApplyReceiptType": {
+          "meaning": "生产加工申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prodPrcesApplyDetProdPrcesApplyRelatedTasksId": {
+          "meaning": "生产加工申请明细关联任务id"
+        },
+        "prodPrcesApplyDetProdPrcesApplySerialNumber": {
+          "meaning": "生产加工申请明细顺序号"
+        },
+        "prodPrcesApplyDetProdPrcesApplySource": {
+          "meaning": "生产加工申请明细源"
+        },
+        "prodPrcesApplyDetProdPrcesApplySourceType": {
+          "meaning": "生产加工申请明细来源类型"
+        },
+        "prodPrcesApplyDetProdPrcesApplyState": {
+          "meaning": "生产加工申请明细通用状态"
+        },
+        "prodPrcesApplyDetProdPrcesApplySystemCode": {
+          "meaning": "生产加工申请明细系统编码"
+        },
+        "prodPrcesApplyDetProdPrcesApplyTarget": {
+          "meaning": "生产加工申请明细目标"
+        },
+        "prodPrcesApplyDetProdPrcesApplyTaskNodeName": {
+          "meaning": "生产加工申请明细任务节点名称"
+        },
+        "prodPrcesApplyDetProdPrcesApplyTenantId": {
+          "meaning": "生产加工申请明细租户_id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyThirdPartyClass": {
+          "meaning": "生产加工申请明细第三方分类"
+        },
+        "prodPrcesApplyDetProdPrcesApplyThirdPartyId": {
+          "meaning": "生产加工申请明细第三方系统中的唯一ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyThirdPartyName": {
+          "meaning": "生产加工申请明细第三方名称"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToAuditDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToAuditDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToBeginTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToBeginTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToCreateTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToCreateTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDateExtra1": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDateExtra1"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDateExtra2": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDateExtra2"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDateExtra3": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDateExtra3"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDateExtra4": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDateExtra4"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDateExtra5": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDateExtra5"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToDeliveryDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToDeliveryDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToEndTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToEndTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToReceiptDate": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToReceiptDate"
+        },
+        "prodPrcesApplyDetProdPrcesApplyToUpdateTime": {
+          "meaning": "prodPrcesApplyDetProdPrcesApplyToUpdateTime"
+        },
+        "prodPrcesApplyDetProdPrcesApplyUnitCode": {
+          "meaning": "生产加工申请明细单位id"
+        },
+        "prodPrcesApplyDetProdPrcesApplyUpdateTime": {
+          "meaning": "生产加工申请明细更新时间"
+        },
+        "prodPrcesApplyDetProdPrcesApplyUpdater": {
+          "meaning": "生产加工申请明细更新人"
+        },
+        "prodPrcesApplyDetProdPrcesApplyUpdaterId": {
+          "meaning": "生产加工申请明细更新人ID"
+        },
+        "prodPrcesApplyDetProdPrcesApplyUserCode": {
+          "meaning": "生产加工申请明细智能节点的唯一编码"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVarExtra1": {
+          "meaning": "生产加工申请明细扩展1"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVarExtra2": {
+          "meaning": "生产加工申请明细扩展2"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVarExtra3": {
+          "meaning": "生产加工申请明细扩展3"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVarExtra4": {
+          "meaning": "生产加工申请明细扩展4"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVarExtra5": {
+          "meaning": "生产加工申请明细扩展5"
+        },
+        "prodPrcesApplyDetProdPrcesApplyVersion": {
+          "meaning": "生产加工申请明细版本号"
+        },
+        "prodPrcesApplyDetProductionProcessesTypeId": {
+          "meaning": "生产加工申请明细工序类型ID"
+        },
+        "prodPrcesApplyDetProductionShiftId": {
+          "meaning": "生产加工申请明细生产班次ID"
+        },
+        "prodPrcesApplyDetQuantity": {
+          "meaning": "生产加工申请明细任务数量"
+        },
+        "prodPrcesApplyDetReceiptDate": {
+          "meaning": "生产加工申请明细单据日期"
+        },
+        "prodPrcesApplyDetReceiptType": {
+          "meaning": "生产加工申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prodPrcesApplyDetRelatedTasksId": {
+          "meaning": "生产加工申请明细关联任务id"
+        },
+        "prodPrcesApplyDetSerialNumber": {
+          "meaning": "生产加工申请明细顺序号"
+        },
+        "prodPrcesApplyDetSource": {
+          "meaning": "生产加工申请明细源"
+        },
+        "prodPrcesApplyDetSourceType": {
+          "meaning": "生产加工申请明细来源类型"
+        },
+        "prodPrcesApplyDetState": {
+          "meaning": "生产加工申请明细通用状态"
+        },
+        "prodPrcesApplyDetSystemCode": {
+          "meaning": "生产加工申请明细系统编码"
+        },
+        "prodPrcesApplyDetTarget": {
+          "meaning": "生产加工申请明细目标"
+        },
+        "prodPrcesApplyDetTaskNodeName": {
+          "meaning": "生产加工申请明细任务节点名称"
+        },
+        "prodPrcesApplyDetTenantId": {
+          "meaning": "生产加工申请明细租户_id"
+        },
+        "prodPrcesApplyDetThirdPartyClass": {
+          "meaning": "生产加工申请明细第三方分类"
+        },
+        "prodPrcesApplyDetThirdPartyId": {
+          "meaning": "生产加工申请明细第三方系统中的唯一ID"
+        },
+        "prodPrcesApplyDetThirdPartyName": {
+          "meaning": "生产加工申请明细第三方名称"
+        },
+        "prodPrcesApplyDetToAuditDate": {
+          "meaning": "prodPrcesApplyDetToAuditDate"
+        },
+        "prodPrcesApplyDetToBeginTime": {
+          "meaning": "prodPrcesApplyDetToBeginTime"
+        },
+        "prodPrcesApplyDetToCreateTime": {
+          "meaning": "prodPrcesApplyDetToCreateTime"
+        },
+        "prodPrcesApplyDetToDateExtra1": {
+          "meaning": "prodPrcesApplyDetToDateExtra1"
+        },
+        "prodPrcesApplyDetToDateExtra2": {
+          "meaning": "prodPrcesApplyDetToDateExtra2"
+        },
+        "prodPrcesApplyDetToDateExtra3": {
+          "meaning": "prodPrcesApplyDetToDateExtra3"
+        },
+        "prodPrcesApplyDetToDateExtra4": {
+          "meaning": "prodPrcesApplyDetToDateExtra4"
+        },
+        "prodPrcesApplyDetToDateExtra5": {
+          "meaning": "prodPrcesApplyDetToDateExtra5"
+        },
+        "prodPrcesApplyDetToDeliveryDate": {
+          "meaning": "prodPrcesApplyDetToDeliveryDate"
+        },
+        "prodPrcesApplyDetToEndTime": {
+          "meaning": "prodPrcesApplyDetToEndTime"
+        },
+        "prodPrcesApplyDetToReceiptDate": {
+          "meaning": "prodPrcesApplyDetToReceiptDate"
+        },
+        "prodPrcesApplyDetToUpdateTime": {
+          "meaning": "prodPrcesApplyDetToUpdateTime"
+        },
+        "prodPrcesApplyDetUnitCode": {
+          "meaning": "生产加工申请明细单位id"
+        },
+        "prodPrcesApplyDetUpdateTime": {
+          "meaning": "生产加工申请明细更新时间"
+        },
+        "prodPrcesApplyDetUpdater": {
+          "meaning": "生产加工申请明细更新人"
+        },
+        "prodPrcesApplyDetUpdaterId": {
+          "meaning": "生产加工申请明细更新人ID"
+        },
+        "prodPrcesApplyDetUserCode": {
+          "meaning": "生产加工申请明细智能节点的唯一编码"
+        },
+        "prodPrcesApplyDetVarExtra1": {
+          "meaning": "生产加工申请明细扩展1"
+        },
+        "prodPrcesApplyDetVarExtra2": {
+          "meaning": "生产加工申请明细扩展2"
+        },
+        "prodPrcesApplyDetVarExtra3": {
+          "meaning": "生产加工申请明细扩展3"
+        },
+        "prodPrcesApplyDetVarExtra4": {
+          "meaning": "生产加工申请明细扩展4"
+        },
+        "prodPrcesApplyDetVarExtra5": {
+          "meaning": "生产加工申请明细扩展5"
+        },
+        "prodPrcesApplyDetVersion": {
+          "meaning": "生产加工申请明细版本号"
+        }
+      }
+    }

@@ -1,0 +1,374 @@
+{
+  "api_name" : "/pur-requ/findList",
+  "table_name" : "采购申请主表",
+  "request" : {
+    "purRequClazz" : "PURCHASE_REQUISITION"
+  },
+  "mainTabClazz" : "PURCHASE_REQUISITION",
+  "response" : {
+    "purRequActualTimeRequired" : {
+      "meaning" : "采购申请主表实际需时(小时)"
+    },
+    "purRequAdjustmentTimeRequired" : {
+      "meaning" : "采购申请主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "purRequApplicationId" : {
+      "meaning" : "采购申请主表应用ID"
+    },
+    "purRequAuditDate" : {
+      "meaning" : "采购申请主表审核时间"
+    },
+    "purRequAuditStatus" : {
+      "meaning" : "采购申请主表审核状态"
+    },
+    "purRequAvailableScheduleId" : {
+      "meaning" : "采购申请主表可用日程id"
+    },
+    "purRequBeginTime" : {
+      "meaning" : "采购申请主表开始时间"
+    },
+    "purRequBizVersion" : {
+      "meaning" : "采购申请主表业务自定义版本号"
+    },
+    "purRequBriefName" : {
+      "meaning" : "采购申请主表简称"
+    },
+    "purRequBusDivisId" : {
+      "meaning" : "采购申请主表事业部id"
+    },
+    "purRequClazz" : {
+      "meaning" : "采购申请主表子类 类名（表和类一一对应）"
+    },
+    "purRequClosedReason" : {
+      "meaning" : "采购申请主表结案原因"
+    },
+    "purRequClosedStatus" : {
+      "meaning" : "采购申请主表结案状态"
+    },
+    "purRequComment" : {
+      "meaning" : "采购申请主表评论"
+    },
+    "purRequCompleteQuantity" : {
+      "meaning" : "采购申请主表完成数量"
+    },
+    "purRequCompleteStatus" : {
+      "meaning" : "采购申请主表完成状态"
+    },
+    "purRequCreateTime" : {
+      "meaning" : "采购申请主表创建时间"
+    },
+    "purRequCreator" : {
+      "meaning" : "采购申请主表创建人"
+    },
+    "purRequCreatorId" : {
+      "meaning" : "采购申请主表创建人ID"
+    },
+    "purRequDateExtra1" : {
+      "meaning" : "采购申请主表扩展时间1"
+    },
+    "purRequDateExtra2" : {
+      "meaning" : "采购申请主表扩展时间2"
+    },
+    "purRequDateExtra3" : {
+      "meaning" : "采购申请主表扩展时间3"
+    },
+    "purRequDateExtra4" : {
+      "meaning" : "采购申请主表扩展时间4"
+    },
+    "purRequDateExtra5" : {
+      "meaning" : "采购申请主表扩展时间5"
+    },
+    "purRequDefaultType" : {
+      "meaning" : "采购申请主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "purRequDeliveryDate" : {
+      "meaning" : "采购申请主表交货日期"
+    },
+    "purRequDescription" : {
+      "meaning" : "采购申请主表描述"
+    },
+    "purRequEndTime" : {
+      "meaning" : "采购申请主表结束时间"
+    },
+    "purRequEndTimeRequired" : {
+      "meaning" : "采购申请主表最后需时(小时)"
+    },
+    "purRequEngName" : {
+      "meaning" : "采购申请主表英文名称"
+    },
+    "purRequEquipmentId" : {
+      "meaning" : "采购申请主表设备id"
+    },
+    "purRequExchangeRateId" : {
+      "meaning" : "采购申请主表币种汇率id"
+    },
+    "purRequExtension" : {
+      "meaning" : "采购申请主表扩展数据"
+    },
+    "purRequExternalState" : {
+      "meaning" : "采购申请主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "purRequFilterClazz" : {
+      "meaning" : "采购申请主表冗余字段用于筛选"
+    },
+    "purRequFlags" : {
+      "meaning" : "采购申请主表63位标志位"
+    },
+    "purRequFromAuditDate" : {
+      "meaning" : "purRequFromAuditDate"
+    },
+    "purRequFromBeginTime" : {
+      "meaning" : "purRequFromBeginTime"
+    },
+    "purRequFromCreateTime" : {
+      "meaning" : "purRequFromCreateTime"
+    },
+    "purRequFromDateExtra1" : {
+      "meaning" : "purRequFromDateExtra1"
+    },
+    "purRequFromDateExtra2" : {
+      "meaning" : "purRequFromDateExtra2"
+    },
+    "purRequFromDateExtra3" : {
+      "meaning" : "purRequFromDateExtra3"
+    },
+    "purRequFromDateExtra4" : {
+      "meaning" : "purRequFromDateExtra4"
+    },
+    "purRequFromDateExtra5" : {
+      "meaning" : "purRequFromDateExtra5"
+    },
+    "purRequFromDeliveryDate" : {
+      "meaning" : "purRequFromDeliveryDate"
+    },
+    "purRequFromEndTime" : {
+      "meaning" : "purRequFromEndTime"
+    },
+    "purRequFromReceiptDate" : {
+      "meaning" : "purRequFromReceiptDate"
+    },
+    "purRequFromUpdateTime" : {
+      "meaning" : "purRequFromUpdateTime"
+    },
+    "purRequFscType" : {
+      "meaning" : "采购申请主表FSC声明"
+    },
+    "purRequGenerativePeople" : {
+      "meaning" : "采购申请主表下发人"
+    },
+    "purRequGenerativeState" : {
+      "meaning" : "采购申请主表下发状态"
+    },
+    "purRequGroovyScript" : {
+      "meaning" : "采购申请主表groovy脚本"
+    },
+    "purRequGropeCode" : {
+      "meaning" : "采购申请主表搜索码"
+    },
+    "purRequId" : {
+      "meaning" : "采购申请主表PK",
+      "is_primary" : true
+    },
+    "purRequInUsed" : {
+      "meaning" : "采购申请主表是否被使用"
+    },
+    "purRequInvTypeTaxRateId" : {
+      "meaning" : "采购申请主表发票税率id"
+    },
+    "purRequIsBanned" : {
+      "meaning" : "采购申请主表是否被禁用"
+    },
+    "purRequIsDeleted" : {
+      "meaning" : "采购申请主表是否被删除"
+    },
+    "purRequIsLeaf" : {
+      "meaning" : "采购申请主表是否叶子节点"
+    },
+    "purRequIsMainFlow" : {
+      "meaning" : "采购申请主表是否是主流程"
+    },
+    "purRequIsManualModificationDate" : {
+      "meaning" : "采购申请主表是否手动修改计划生产时间"
+    },
+    "purRequIsolation" : {
+      "meaning" : "采购申请主表智能节点数据隔离标识"
+    },
+    "purRequJsScript" : {
+      "meaning" : "采购申请主表js脚本"
+    },
+    "purRequMaterialId" : {
+      "meaning" : "采购申请主表物料id"
+    },
+    "purRequName" : {
+      "meaning" : "采购申请主表智能节点名"
+    },
+    "purRequNameCodeSearch" : {
+      "meaning" : "采购申请主表name、user_code模糊搜索"
+    },
+    "purRequNumberExtra1" : {
+      "meaning" : "采购申请主表扩展数量1"
+    },
+    "purRequNumberExtra2" : {
+      "meaning" : "采购申请主表扩展数量2"
+    },
+    "purRequNumberExtra3" : {
+      "meaning" : "采购申请主表扩展数量3"
+    },
+    "purRequNumberExtra4" : {
+      "meaning" : "采购申请主表扩展数量4"
+    },
+    "purRequNumberExtra5" : {
+      "meaning" : "采购申请主表扩展数量5"
+    },
+    "purRequParentId" : {
+      "meaning" : "采购申请主表父节点ID"
+    },
+    "purRequPlannedOutputQuantity" : {
+      "meaning" : "采购申请主表计划产出数量"
+    },
+    "purRequPlannedTimeRequired" : {
+      "meaning" : "采购申请主表计划需时(小时)"
+    },
+    "purRequPrintTimes" : {
+      "meaning" : "采购申请主表打印次数"
+    },
+    "purRequPriority" : {
+      "meaning" : "采购申请主表优先级"
+    },
+    "purRequProcessInstanceId" : {
+      "meaning" : "采购申请主表流程实例ID"
+    },
+    "purRequProductionProcessesTypeId" : {
+      "meaning" : "采购申请主表工序类型ID"
+    },
+    "purRequProductionShiftId" : {
+      "meaning" : "采购申请主表生产班次ID"
+    },
+    "purRequPurchaseOrderQuantity" : {
+      "meaning" : "采购申请主表已开采购订单数量"
+    },
+    "purRequPurchaseOrderState" : {
+      "meaning" : "采购申请主表已开采购订单状态"
+    },
+    "purRequQuantity" : {
+      "meaning" : "采购申请主表任务数量"
+    },
+    "purRequReceiptDate" : {
+      "meaning" : "采购申请主表单据日期"
+    },
+    "purRequReceiptType" : {
+      "meaning" : "采购申请主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "purRequRelatedTasksId" : {
+      "meaning" : "采购申请主表关联任务id"
+    },
+    "purRequSerialNumber" : {
+      "meaning" : "采购申请主表顺序号"
+    },
+    "purRequSource" : {
+      "meaning" : "采购申请主表源"
+    },
+    "purRequSourceType" : {
+      "meaning" : "采购申请主表来源类型"
+    },
+    "purRequState" : {
+      "meaning" : "采购申请主表通用状态"
+    },
+    "purRequSystemCode" : {
+      "meaning" : "采购申请主表系统编码"
+    },
+    "purRequTarget" : {
+      "meaning" : "采购申请主表目标"
+    },
+    "purRequTaskNodeName" : {
+      "meaning" : "采购申请主表任务节点名称"
+    },
+    "purRequTenantId" : {
+      "meaning" : "采购申请主表租户id"
+    },
+    "purRequThirdPartyClass" : {
+      "meaning" : "采购申请主表第三方分类"
+    },
+    "purRequThirdPartyId" : {
+      "meaning" : "采购申请主表第三方系统中的唯一ID"
+    },
+    "purRequThirdPartyName" : {
+      "meaning" : "采购申请主表第三方名称"
+    },
+    "purRequToAuditDate" : {
+      "meaning" : "purRequToAuditDate"
+    },
+    "purRequToBeginTime" : {
+      "meaning" : "purRequToBeginTime"
+    },
+    "purRequToCreateTime" : {
+      "meaning" : "purRequToCreateTime"
+    },
+    "purRequToDateExtra1" : {
+      "meaning" : "purRequToDateExtra1"
+    },
+    "purRequToDateExtra2" : {
+      "meaning" : "purRequToDateExtra2"
+    },
+    "purRequToDateExtra3" : {
+      "meaning" : "purRequToDateExtra3"
+    },
+    "purRequToDateExtra4" : {
+      "meaning" : "purRequToDateExtra4"
+    },
+    "purRequToDateExtra5" : {
+      "meaning" : "purRequToDateExtra5"
+    },
+    "purRequToDeliveryDate" : {
+      "meaning" : "purRequToDeliveryDate"
+    },
+    "purRequToEndTime" : {
+      "meaning" : "purRequToEndTime"
+    },
+    "purRequToReceiptDate" : {
+      "meaning" : "purRequToReceiptDate"
+    },
+    "purRequToUpdateTime" : {
+      "meaning" : "purRequToUpdateTime"
+    },
+    "purRequUnitCode" : {
+      "meaning" : "采购申请主表单位id"
+    },
+    "purRequUpdateTime" : {
+      "meaning" : "采购申请主表更新时间"
+    },
+    "purRequUpdater" : {
+      "meaning" : "采购申请主表更新人"
+    },
+    "purRequUpdaterId" : {
+      "meaning" : "采购申请主表更新人ID"
+    },
+    "purRequUserCode" : {
+      "meaning" : "采购申请主表智能节点的唯一编码"
+    },
+    "purRequVarExtra1" : {
+      "meaning" : "采购申请主表扩展1"
+    },
+    "purRequVarExtra2" : {
+      "meaning" : "采购申请主表扩展2"
+    },
+    "purRequVarExtra3" : {
+      "meaning" : "采购申请主表扩展3"
+    },
+    "purRequVarExtra4" : {
+      "meaning" : "采购申请主表扩展4"
+    },
+    "purRequVarExtra5" : {
+      "meaning" : "采购申请主表扩展5"
+    },
+    "purRequVersion" : {
+      "meaning" : "采购申请主表版本号"
+    },
+    "purchaseRequisitionList" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "purchaseRequisitionList"
+    }
+  }
+}

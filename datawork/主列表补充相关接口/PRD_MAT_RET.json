@@ -1,0 +1,380 @@
+{
+  "api_name" : "/prd-mat-ret/findList",
+  "table_name" : "生产退料主表",
+  "request" : {
+    "prdMatRetClazz" : "PRD_MAT_RET"
+  },
+  "mainTabClazz" : "PRD_MAT_RET",
+  "response" : {
+    "prdMatRetActualTimeRequired" : {
+      "meaning" : "生产退料主表实际需时(小时)"
+    },
+    "prdMatRetAdjustmentTimeRequired" : {
+      "meaning" : "生产退料主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "prdMatRetApplicationId" : {
+      "meaning" : "生产退料主表应用ID"
+    },
+    "prdMatRetAuditDate" : {
+      "meaning" : "生产退料主表审核时间"
+    },
+    "prdMatRetAuditStatus" : {
+      "meaning" : "生产退料主表审核状态"
+    },
+    "prdMatRetAvailableScheduleId" : {
+      "meaning" : "生产退料主表可用日程id"
+    },
+    "prdMatRetBeginTime" : {
+      "meaning" : "生产退料主表开始时间"
+    },
+    "prdMatRetBizVersion" : {
+      "meaning" : "生产退料主表业务自定义版本号"
+    },
+    "prdMatRetBriefName" : {
+      "meaning" : "生产退料主表简称"
+    },
+    "prdMatRetBusDivisId" : {
+      "meaning" : "生产退料主表事业部id"
+    },
+    "prdMatRetClazz" : {
+      "meaning" : "生产退料主表子类 类名（表和类一一对应）"
+    },
+    "prdMatRetClosedReason" : {
+      "meaning" : "生产退料主表结案原因"
+    },
+    "prdMatRetClosedStatus" : {
+      "meaning" : "生产退料主表结案状态"
+    },
+    "prdMatRetComment" : {
+      "meaning" : "生产退料主表评论"
+    },
+    "prdMatRetCompleteQuantity" : {
+      "meaning" : "生产退料主表完成数量"
+    },
+    "prdMatRetCompleteStatus" : {
+      "meaning" : "生产退料主表完成状态"
+    },
+    "prdMatRetCreateTime" : {
+      "meaning" : "生产退料主表创建时间"
+    },
+    "prdMatRetCreator" : {
+      "meaning" : "生产退料主表创建人"
+    },
+    "prdMatRetCreatorId" : {
+      "meaning" : "生产退料主表创建人ID"
+    },
+    "prdMatRetDateExtra1" : {
+      "meaning" : "生产退料主表扩展时间1"
+    },
+    "prdMatRetDateExtra2" : {
+      "meaning" : "生产退料主表扩展时间2"
+    },
+    "prdMatRetDateExtra3" : {
+      "meaning" : "生产退料主表扩展时间3"
+    },
+    "prdMatRetDateExtra4" : {
+      "meaning" : "生产退料主表扩展时间4"
+    },
+    "prdMatRetDateExtra5" : {
+      "meaning" : "生产退料主表扩展时间5"
+    },
+    "prdMatRetDefaultType" : {
+      "meaning" : "生产退料主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "prdMatRetDeliveryDate" : {
+      "meaning" : "生产退料主表交货日期"
+    },
+    "prdMatRetDescription" : {
+      "meaning" : "生产退料主表描述"
+    },
+    "prdMatRetDetList" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "prdMatRetDetList"
+    },
+    "prdMatRetEndTime" : {
+      "meaning" : "生产退料主表结束时间"
+    },
+    "prdMatRetEndTimeRequired" : {
+      "meaning" : "生产退料主表最后需时(小时)"
+    },
+    "prdMatRetEngName" : {
+      "meaning" : "生产退料主表英文名称"
+    },
+    "prdMatRetEquipmentId" : {
+      "meaning" : "生产退料主表设备id"
+    },
+    "prdMatRetExchangeRateId" : {
+      "meaning" : "生产退料主表币种汇率id"
+    },
+    "prdMatRetExtension" : {
+      "meaning" : "生产退料主表扩展数据"
+    },
+    "prdMatRetExternalState" : {
+      "meaning" : "生产退料主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "prdMatRetFilterClazz" : {
+      "meaning" : "生产退料主表冗余字段用于筛选"
+    },
+    "prdMatRetFlags" : {
+      "meaning" : "生产退料主表63位标志位"
+    },
+    "prdMatRetFromAuditDate" : {
+      "meaning" : "prdMatRetFromAuditDate"
+    },
+    "prdMatRetFromBeginTime" : {
+      "meaning" : "prdMatRetFromBeginTime"
+    },
+    "prdMatRetFromCreateTime" : {
+      "meaning" : "prdMatRetFromCreateTime"
+    },
+    "prdMatRetFromDateExtra1" : {
+      "meaning" : "prdMatRetFromDateExtra1"
+    },
+    "prdMatRetFromDateExtra2" : {
+      "meaning" : "prdMatRetFromDateExtra2"
+    },
+    "prdMatRetFromDateExtra3" : {
+      "meaning" : "prdMatRetFromDateExtra3"
+    },
+    "prdMatRetFromDateExtra4" : {
+      "meaning" : "prdMatRetFromDateExtra4"
+    },
+    "prdMatRetFromDateExtra5" : {
+      "meaning" : "prdMatRetFromDateExtra5"
+    },
+    "prdMatRetFromDeliveryDate" : {
+      "meaning" : "prdMatRetFromDeliveryDate"
+    },
+    "prdMatRetFromEndTime" : {
+      "meaning" : "prdMatRetFromEndTime"
+    },
+    "prdMatRetFromReceiptDate" : {
+      "meaning" : "prdMatRetFromReceiptDate"
+    },
+    "prdMatRetFromUpdateTime" : {
+      "meaning" : "prdMatRetFromUpdateTime"
+    },
+    "prdMatRetFscType" : {
+      "meaning" : "生产退料主表FSC声明"
+    },
+    "prdMatRetGenerativePeople" : {
+      "meaning" : "生产退料主表下发人"
+    },
+    "prdMatRetGenerativeState" : {
+      "meaning" : "生产退料主表下发状态"
+    },
+    "prdMatRetGroovyScript" : {
+      "meaning" : "生产退料主表groovy脚本"
+    },
+    "prdMatRetGropeCode" : {
+      "meaning" : "生产退料主表搜索码"
+    },
+    "prdMatRetId" : {
+      "meaning" : "生产退料主表PK",
+      "is_primary" : true
+    },
+    "prdMatRetInUsed" : {
+      "meaning" : "生产退料主表是否被使用"
+    },
+    "prdMatRetInvTypeTaxRateId" : {
+      "meaning" : "生产退料主表发票税率id"
+    },
+    "prdMatRetIsBanned" : {
+      "meaning" : "生产退料主表是否被禁用"
+    },
+    "prdMatRetIsDeleted" : {
+      "meaning" : "生产退料主表是否被删除"
+    },
+    "prdMatRetIsLeaf" : {
+      "meaning" : "生产退料主表是否叶子节点"
+    },
+    "prdMatRetIsMainFlow" : {
+      "meaning" : "生产退料主表是否是主流程"
+    },
+    "prdMatRetIsManualModificationDate" : {
+      "meaning" : "生产退料主表是否手动修改计划生产时间"
+    },
+    "prdMatRetIsolation" : {
+      "meaning" : "生产退料主表智能节点数据隔离标识"
+    },
+    "prdMatRetJsScript" : {
+      "meaning" : "生产退料主表js脚本"
+    },
+    "prdMatRetMaterialId" : {
+      "meaning" : "生产退料主表物料id"
+    },
+    "prdMatRetName" : {
+      "meaning" : "生产退料主表智能节点名"
+    },
+    "prdMatRetNameCodeSearch" : {
+      "meaning" : "生产退料主表name、user_code模糊搜索"
+    },
+    "prdMatRetNumberExtra1" : {
+      "meaning" : "生产退料主表扩展数量1"
+    },
+    "prdMatRetNumberExtra2" : {
+      "meaning" : "生产退料主表扩展数量2"
+    },
+    "prdMatRetNumberExtra3" : {
+      "meaning" : "生产退料主表扩展数量3"
+    },
+    "prdMatRetNumberExtra4" : {
+      "meaning" : "生产退料主表扩展数量4"
+    },
+    "prdMatRetNumberExtra5" : {
+      "meaning" : "生产退料主表扩展数量5"
+    },
+    "prdMatRetParentId" : {
+      "meaning" : "生产退料主表父节点ID"
+    },
+    "prdMatRetPlannedOutputQuantity" : {
+      "meaning" : "生产退料主表计划产出数量"
+    },
+    "prdMatRetPlannedTimeRequired" : {
+      "meaning" : "生产退料主表计划需时(小时)"
+    },
+    "prdMatRetPrintTimes" : {
+      "meaning" : "生产退料主表打印次数"
+    },
+    "prdMatRetPriority" : {
+      "meaning" : "生产退料主表优先级"
+    },
+    "prdMatRetProcessInstanceId" : {
+      "meaning" : "生产退料主表流程实例ID"
+    },
+    "prdMatRetProductionProcessesTypeId" : {
+      "meaning" : "生产退料主表工序类型ID"
+    },
+    "prdMatRetProductionShiftId" : {
+      "meaning" : "生产退料主表生产班次ID"
+    },
+    "prdMatRetQuantity" : {
+      "meaning" : "生产退料主表任务数量"
+    },
+    "prdMatRetReceiptDate" : {
+      "meaning" : "生产退料主表单据日期"
+    },
+    "prdMatRetReceiptType" : {
+      "meaning" : "生产退料主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "prdMatRetRelatedTasksId" : {
+      "meaning" : "生产退料主表关联任务id"
+    },
+    "prdMatRetReturnDepartId" : {
+      "meaning" : "生产退料主表退料部门id"
+    },
+    "prdMatRetReturnReason" : {
+      "meaning" : "生产退料主表退料原因"
+    },
+    "prdMatRetReturnStaffId" : {
+      "meaning" : "生产退料主表退料人id"
+    },
+    "prdMatRetSerialNumber" : {
+      "meaning" : "生产退料主表顺序号"
+    },
+    "prdMatRetSource" : {
+      "meaning" : "生产退料主表源"
+    },
+    "prdMatRetSourceType" : {
+      "meaning" : "生产退料主表来源类型"
+    },
+    "prdMatRetState" : {
+      "meaning" : "生产退料主表通用状态"
+    },
+    "prdMatRetSystemCode" : {
+      "meaning" : "生产退料主表系统编码"
+    },
+    "prdMatRetTarget" : {
+      "meaning" : "生产退料主表目标"
+    },
+    "prdMatRetTaskNodeName" : {
+      "meaning" : "生产退料主表任务节点名称"
+    },
+    "prdMatRetTeamId" : {
+      "meaning" : "生产退料主表班组id"
+    },
+    "prdMatRetTenantId" : {
+      "meaning" : "生产退料主表租户_id"
+    },
+    "prdMatRetThirdPartyClass" : {
+      "meaning" : "生产退料主表第三方分类"
+    },
+    "prdMatRetThirdPartyId" : {
+      "meaning" : "生产退料主表第三方系统中的唯一ID"
+    },
+    "prdMatRetThirdPartyName" : {
+      "meaning" : "生产退料主表第三方名称"
+    },
+    "prdMatRetToAuditDate" : {
+      "meaning" : "prdMatRetToAuditDate"
+    },
+    "prdMatRetToBeginTime" : {
+      "meaning" : "prdMatRetToBeginTime"
+    },
+    "prdMatRetToCreateTime" : {
+      "meaning" : "prdMatRetToCreateTime"
+    },
+    "prdMatRetToDateExtra1" : {
+      "meaning" : "prdMatRetToDateExtra1"
+    },
+    "prdMatRetToDateExtra2" : {
+      "meaning" : "prdMatRetToDateExtra2"
+    },
+    "prdMatRetToDateExtra3" : {
+      "meaning" : "prdMatRetToDateExtra3"
+    },
+    "prdMatRetToDateExtra4" : {
+      "meaning" : "prdMatRetToDateExtra4"
+    },
+    "prdMatRetToDateExtra5" : {
+      "meaning" : "prdMatRetToDateExtra5"
+    },
+    "prdMatRetToDeliveryDate" : {
+      "meaning" : "prdMatRetToDeliveryDate"
+    },
+    "prdMatRetToEndTime" : {
+      "meaning" : "prdMatRetToEndTime"
+    },
+    "prdMatRetToReceiptDate" : {
+      "meaning" : "prdMatRetToReceiptDate"
+    },
+    "prdMatRetToUpdateTime" : {
+      "meaning" : "prdMatRetToUpdateTime"
+    },
+    "prdMatRetUnitCode" : {
+      "meaning" : "生产退料主表单位id"
+    },
+    "prdMatRetUpdateTime" : {
+      "meaning" : "生产退料主表更新时间"
+    },
+    "prdMatRetUpdater" : {
+      "meaning" : "生产退料主表更新人"
+    },
+    "prdMatRetUpdaterId" : {
+      "meaning" : "生产退料主表更新人ID"
+    },
+    "prdMatRetUserCode" : {
+      "meaning" : "生产退料主表智能节点的唯一编码"
+    },
+    "prdMatRetVarExtra1" : {
+      "meaning" : "生产退料主表扩展1"
+    },
+    "prdMatRetVarExtra2" : {
+      "meaning" : "生产退料主表扩展2"
+    },
+    "prdMatRetVarExtra3" : {
+      "meaning" : "生产退料主表扩展3"
+    },
+    "prdMatRetVarExtra4" : {
+      "meaning" : "生产退料主表扩展4"
+    },
+    "prdMatRetVarExtra5" : {
+      "meaning" : "生产退料主表扩展5"
+    },
+    "prdMatRetVersion" : {
+      "meaning" : "生产退料主表版本号"
+    }
+  }
+}

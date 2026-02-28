@@ -1,0 +1,362 @@
+{
+  "api_name" : "/mod-outwarehouse/findList",
+  "table_name" : "模具出仓表",
+  "request" : {
+    "modOutwarehouseClazz" : "MOD_OUTWAREHOUSE"
+  },
+  "mainTabClazz" : "MOD_OUTWAREHOUSE",
+  "response" : {
+    "modOutwarehouseActualTimeRequired" : {
+      "meaning" : "模具出仓表实际需时(小时)"
+    },
+    "modOutwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "模具出仓表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modOutwarehouseApplicationId" : {
+      "meaning" : "模具出仓表应用ID"
+    },
+    "modOutwarehouseAuditDate" : {
+      "meaning" : "模具出仓表审核时间"
+    },
+    "modOutwarehouseAuditStatus" : {
+      "meaning" : "模具出仓表审核状态"
+    },
+    "modOutwarehouseAvailableScheduleId" : {
+      "meaning" : "模具出仓表可用日程id"
+    },
+    "modOutwarehouseBeginTime" : {
+      "meaning" : "模具出仓表开始时间"
+    },
+    "modOutwarehouseBizVersion" : {
+      "meaning" : "模具出仓表业务自定义版本号"
+    },
+    "modOutwarehouseBriefName" : {
+      "meaning" : "模具出仓表简称"
+    },
+    "modOutwarehouseBusDivisId" : {
+      "meaning" : "模具出仓表事业部id"
+    },
+    "modOutwarehouseClazz" : {
+      "meaning" : "模具出仓表子类 类名（表和类一一对应）"
+    },
+    "modOutwarehouseClosedReason" : {
+      "meaning" : "模具出仓表结案原因"
+    },
+    "modOutwarehouseClosedStatus" : {
+      "meaning" : "模具出仓表结案状态"
+    },
+    "modOutwarehouseComment" : {
+      "meaning" : "模具出仓表评论"
+    },
+    "modOutwarehouseCompleteQuantity" : {
+      "meaning" : "模具出仓表完成数量"
+    },
+    "modOutwarehouseCompleteStatus" : {
+      "meaning" : "模具出仓表完成状态"
+    },
+    "modOutwarehouseCreateTime" : {
+      "meaning" : "模具出仓表创建时间"
+    },
+    "modOutwarehouseCreator" : {
+      "meaning" : "模具出仓表创建人"
+    },
+    "modOutwarehouseCreatorId" : {
+      "meaning" : "模具出仓表创建人ID"
+    },
+    "modOutwarehouseDateExtra1" : {
+      "meaning" : "模具出仓表扩展时间1"
+    },
+    "modOutwarehouseDateExtra2" : {
+      "meaning" : "模具出仓表扩展时间2"
+    },
+    "modOutwarehouseDateExtra3" : {
+      "meaning" : "模具出仓表扩展时间3"
+    },
+    "modOutwarehouseDateExtra4" : {
+      "meaning" : "模具出仓表扩展时间4"
+    },
+    "modOutwarehouseDateExtra5" : {
+      "meaning" : "模具出仓表扩展时间5"
+    },
+    "modOutwarehouseDefaultType" : {
+      "meaning" : "模具出仓表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modOutwarehouseDeliveryDate" : {
+      "meaning" : "模具出仓表交货日期"
+    },
+    "modOutwarehouseDescription" : {
+      "meaning" : "模具出仓表描述"
+    },
+    "modOutwarehouseEndTime" : {
+      "meaning" : "模具出仓表结束时间"
+    },
+    "modOutwarehouseEndTimeRequired" : {
+      "meaning" : "模具出仓表最后需时(小时)"
+    },
+    "modOutwarehouseEngName" : {
+      "meaning" : "模具出仓表英文名称"
+    },
+    "modOutwarehouseEquipmentId" : {
+      "meaning" : "模具出仓表设备id"
+    },
+    "modOutwarehouseExchangeRateId" : {
+      "meaning" : "模具出仓表币种汇率id"
+    },
+    "modOutwarehouseExtension" : {
+      "meaning" : "模具出仓表扩展数据"
+    },
+    "modOutwarehouseExternalState" : {
+      "meaning" : "模具出仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modOutwarehouseFilterClazz" : {
+      "meaning" : "模具出仓表冗余字段用于筛选"
+    },
+    "modOutwarehouseFlags" : {
+      "meaning" : "模具出仓表63位标志位"
+    },
+    "modOutwarehouseFromAuditDate" : {
+      "meaning" : "modOutwarehouseFromAuditDate"
+    },
+    "modOutwarehouseFromBeginTime" : {
+      "meaning" : "modOutwarehouseFromBeginTime"
+    },
+    "modOutwarehouseFromCreateTime" : {
+      "meaning" : "modOutwarehouseFromCreateTime"
+    },
+    "modOutwarehouseFromDateExtra1" : {
+      "meaning" : "modOutwarehouseFromDateExtra1"
+    },
+    "modOutwarehouseFromDateExtra2" : {
+      "meaning" : "modOutwarehouseFromDateExtra2"
+    },
+    "modOutwarehouseFromDateExtra3" : {
+      "meaning" : "modOutwarehouseFromDateExtra3"
+    },
+    "modOutwarehouseFromDateExtra4" : {
+      "meaning" : "modOutwarehouseFromDateExtra4"
+    },
+    "modOutwarehouseFromDateExtra5" : {
+      "meaning" : "modOutwarehouseFromDateExtra5"
+    },
+    "modOutwarehouseFromDeliveryDate" : {
+      "meaning" : "modOutwarehouseFromDeliveryDate"
+    },
+    "modOutwarehouseFromEndTime" : {
+      "meaning" : "modOutwarehouseFromEndTime"
+    },
+    "modOutwarehouseFromReceiptDate" : {
+      "meaning" : "modOutwarehouseFromReceiptDate"
+    },
+    "modOutwarehouseFromUpdateTime" : {
+      "meaning" : "modOutwarehouseFromUpdateTime"
+    },
+    "modOutwarehouseFscType" : {
+      "meaning" : "模具出仓表FSC声明"
+    },
+    "modOutwarehouseGenerativePeople" : {
+      "meaning" : "模具出仓表下发人"
+    },
+    "modOutwarehouseGenerativeState" : {
+      "meaning" : "模具出仓表下发状态"
+    },
+    "modOutwarehouseGroovyScript" : {
+      "meaning" : "模具出仓表groovy脚本"
+    },
+    "modOutwarehouseGropeCode" : {
+      "meaning" : "模具出仓表搜索码"
+    },
+    "modOutwarehouseId" : {
+      "meaning" : "模具出仓表PK",
+      "is_primary" : true
+    },
+    "modOutwarehouseInUsed" : {
+      "meaning" : "模具出仓表是否被使用"
+    },
+    "modOutwarehouseInvTypeTaxRateId" : {
+      "meaning" : "模具出仓表发票税率id"
+    },
+    "modOutwarehouseIsBanned" : {
+      "meaning" : "模具出仓表是否被禁用"
+    },
+    "modOutwarehouseIsDeleted" : {
+      "meaning" : "模具出仓表是否被删除"
+    },
+    "modOutwarehouseIsLeaf" : {
+      "meaning" : "模具出仓表是否叶子节点"
+    },
+    "modOutwarehouseIsMainFlow" : {
+      "meaning" : "模具出仓表是否是主流程"
+    },
+    "modOutwarehouseIsManualModificationDate" : {
+      "meaning" : "模具出仓表是否手动修改计划生产时间"
+    },
+    "modOutwarehouseIsolation" : {
+      "meaning" : "模具出仓表智能节点数据隔离标识"
+    },
+    "modOutwarehouseJsScript" : {
+      "meaning" : "模具出仓表js脚本"
+    },
+    "modOutwarehouseMaterialId" : {
+      "meaning" : "模具出仓表物料id"
+    },
+    "modOutwarehouseName" : {
+      "meaning" : "模具出仓表智能节点名"
+    },
+    "modOutwarehouseNameCodeSearch" : {
+      "meaning" : "模具出仓表name、user_code模糊搜索"
+    },
+    "modOutwarehouseNumberExtra1" : {
+      "meaning" : "模具出仓表扩展数量1"
+    },
+    "modOutwarehouseNumberExtra2" : {
+      "meaning" : "模具出仓表扩展数量2"
+    },
+    "modOutwarehouseNumberExtra3" : {
+      "meaning" : "模具出仓表扩展数量3"
+    },
+    "modOutwarehouseNumberExtra4" : {
+      "meaning" : "模具出仓表扩展数量4"
+    },
+    "modOutwarehouseNumberExtra5" : {
+      "meaning" : "模具出仓表扩展数量5"
+    },
+    "modOutwarehouseParentId" : {
+      "meaning" : "模具出仓表父节点ID"
+    },
+    "modOutwarehousePlannedOutputQuantity" : {
+      "meaning" : "模具出仓表计划产出数量"
+    },
+    "modOutwarehousePlannedTimeRequired" : {
+      "meaning" : "模具出仓表计划需时(小时)"
+    },
+    "modOutwarehousePrintTimes" : {
+      "meaning" : "模具出仓表打印次数"
+    },
+    "modOutwarehousePriority" : {
+      "meaning" : "模具出仓表优先级"
+    },
+    "modOutwarehouseProcessInstanceId" : {
+      "meaning" : "模具出仓表流程实例ID"
+    },
+    "modOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "模具出仓表工序类型ID"
+    },
+    "modOutwarehouseProductionShiftId" : {
+      "meaning" : "模具出仓表生产班次ID"
+    },
+    "modOutwarehouseQuantity" : {
+      "meaning" : "模具出仓表任务数量"
+    },
+    "modOutwarehouseReceiptDate" : {
+      "meaning" : "模具出仓表单据日期"
+    },
+    "modOutwarehouseReceiptType" : {
+      "meaning" : "模具出仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modOutwarehouseRelatedTasksId" : {
+      "meaning" : "模具出仓表关联任务id"
+    },
+    "modOutwarehouseSerialNumber" : {
+      "meaning" : "模具出仓表顺序号"
+    },
+    "modOutwarehouseSource" : {
+      "meaning" : "模具出仓表源"
+    },
+    "modOutwarehouseSourceType" : {
+      "meaning" : "模具出仓表来源类型"
+    },
+    "modOutwarehouseState" : {
+      "meaning" : "模具出仓表通用状态"
+    },
+    "modOutwarehouseSystemCode" : {
+      "meaning" : "模具出仓表系统编码"
+    },
+    "modOutwarehouseTarget" : {
+      "meaning" : "模具出仓表目标"
+    },
+    "modOutwarehouseTaskNodeName" : {
+      "meaning" : "模具出仓表任务节点名称"
+    },
+    "modOutwarehouseTenantId" : {
+      "meaning" : "模具出仓表租户id"
+    },
+    "modOutwarehouseThirdPartyClass" : {
+      "meaning" : "模具出仓表第三方分类"
+    },
+    "modOutwarehouseThirdPartyId" : {
+      "meaning" : "模具出仓表第三方系统中的唯一ID"
+    },
+    "modOutwarehouseThirdPartyName" : {
+      "meaning" : "模具出仓表第三方名称"
+    },
+    "modOutwarehouseToAuditDate" : {
+      "meaning" : "modOutwarehouseToAuditDate"
+    },
+    "modOutwarehouseToBeginTime" : {
+      "meaning" : "modOutwarehouseToBeginTime"
+    },
+    "modOutwarehouseToCreateTime" : {
+      "meaning" : "modOutwarehouseToCreateTime"
+    },
+    "modOutwarehouseToDateExtra1" : {
+      "meaning" : "modOutwarehouseToDateExtra1"
+    },
+    "modOutwarehouseToDateExtra2" : {
+      "meaning" : "modOutwarehouseToDateExtra2"
+    },
+    "modOutwarehouseToDateExtra3" : {
+      "meaning" : "modOutwarehouseToDateExtra3"
+    },
+    "modOutwarehouseToDateExtra4" : {
+      "meaning" : "modOutwarehouseToDateExtra4"
+    },
+    "modOutwarehouseToDateExtra5" : {
+      "meaning" : "modOutwarehouseToDateExtra5"
+    },
+    "modOutwarehouseToDeliveryDate" : {
+      "meaning" : "modOutwarehouseToDeliveryDate"
+    },
+    "modOutwarehouseToEndTime" : {
+      "meaning" : "modOutwarehouseToEndTime"
+    },
+    "modOutwarehouseToReceiptDate" : {
+      "meaning" : "modOutwarehouseToReceiptDate"
+    },
+    "modOutwarehouseToUpdateTime" : {
+      "meaning" : "modOutwarehouseToUpdateTime"
+    },
+    "modOutwarehouseUnitCode" : {
+      "meaning" : "模具出仓表单位id"
+    },
+    "modOutwarehouseUpdateTime" : {
+      "meaning" : "模具出仓表更新时间"
+    },
+    "modOutwarehouseUpdater" : {
+      "meaning" : "模具出仓表更新人"
+    },
+    "modOutwarehouseUpdaterId" : {
+      "meaning" : "模具出仓表更新人ID"
+    },
+    "modOutwarehouseUserCode" : {
+      "meaning" : "模具出仓表智能节点的唯一编码"
+    },
+    "modOutwarehouseVarExtra1" : {
+      "meaning" : "模具出仓表扩展1"
+    },
+    "modOutwarehouseVarExtra2" : {
+      "meaning" : "模具出仓表扩展2"
+    },
+    "modOutwarehouseVarExtra3" : {
+      "meaning" : "模具出仓表扩展3"
+    },
+    "modOutwarehouseVarExtra4" : {
+      "meaning" : "模具出仓表扩展4"
+    },
+    "modOutwarehouseVarExtra5" : {
+      "meaning" : "模具出仓表扩展5"
+    },
+    "modOutwarehouseVersion" : {
+      "meaning" : "模具出仓表版本号"
+    }
+  }
+}

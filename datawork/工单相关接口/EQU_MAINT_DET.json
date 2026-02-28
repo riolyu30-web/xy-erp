@@ -1,0 +1,867 @@
+{
+      "api_name": "/equ-maint-det/findList",
+      "table_name": "设备保养数据明细表",
+      "request": {
+        "equMaintDetEquMaintClazz": "EQU_MAINT",
+        "equMaintDetClazz": "EQU_MAINT_DET"
+      },
+      "mainTabClazz": "EQU_MAINT_DET",
+      "response": {
+        "equMaintDetActualTimeRequired": {
+          "meaning": "设备保养数据明细表实际需时(小时)"
+        },
+        "equMaintDetAdjustmentTimeRequired": {
+          "meaning": "设备保养数据明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "equMaintDetApplicationId": {
+          "meaning": "设备保养数据明细表应用ID"
+        },
+        "equMaintDetAssetRelatId": {
+          "meaning": "设备保养数据明细表关联资产id"
+        },
+        "equMaintDetAuditDate": {
+          "meaning": "设备保养数据明细表审核时间"
+        },
+        "equMaintDetAuditStatus": {
+          "meaning": "设备保养数据明细表审核状态"
+        },
+        "equMaintDetAvailableScheduleId": {
+          "meaning": "设备保养数据明细表可用日程id"
+        },
+        "equMaintDetBeginTime": {
+          "meaning": "设备保养数据明细表开始时间"
+        },
+        "equMaintDetBizVersion": {
+          "meaning": "设备保养数据明细表业务自定义版本号"
+        },
+        "equMaintDetBriefName": {
+          "meaning": "设备保养数据明细表简称"
+        },
+        "equMaintDetBusDivisId": {
+          "meaning": "设备保养数据明细表事业部id"
+        },
+        "equMaintDetClazz": {
+          "meaning": "设备保养数据明细表子类 类名（表和类一一对应）"
+        },
+        "equMaintDetClosedReason": {
+          "meaning": "设备保养数据明细表结案原因"
+        },
+        "equMaintDetClosedStatus": {
+          "meaning": "设备保养数据明细表结案状态"
+        },
+        "equMaintDetComment": {
+          "meaning": "设备保养数据明细表评论"
+        },
+        "equMaintDetCompleteQuantity": {
+          "meaning": "设备保养数据明细表完成数量"
+        },
+        "equMaintDetCompleteStatus": {
+          "meaning": "设备保养数据明细表完成状态"
+        },
+        "equMaintDetCreateTime": {
+          "meaning": "设备保养数据明细表创建时间"
+        },
+        "equMaintDetCreator": {
+          "meaning": "设备保养数据明细表创建人"
+        },
+        "equMaintDetCreatorId": {
+          "meaning": "设备保养数据明细表创建人ID"
+        },
+        "equMaintDetCumIpqcQuantity": {
+          "meaning": "设备保养数据明细表累计质检数量"
+        },
+        "equMaintDetCumIpqcStatus": {
+          "meaning": "设备保养数据明细表累计质检状态"
+        },
+        "equMaintDetCumulHndovrQuantity": {
+          "meaning": "设备保养数据明细表累计交出数量"
+        },
+        "equMaintDetDailyRepQuantity": {
+          "meaning": "设备保养数据明细表日报表已开数量"
+        },
+        "equMaintDetDailyRepStatus": {
+          "meaning": "设备保养数据明细表日报表已开状态"
+        },
+        "equMaintDetDateExtra1": {
+          "meaning": "设备保养数据明细表扩展时间1"
+        },
+        "equMaintDetDateExtra2": {
+          "meaning": "设备保养数据明细表扩展时间2"
+        },
+        "equMaintDetDateExtra3": {
+          "meaning": "设备保养数据明细表扩展时间3"
+        },
+        "equMaintDetDateExtra4": {
+          "meaning": "设备保养数据明细表扩展时间4"
+        },
+        "equMaintDetDateExtra5": {
+          "meaning": "设备保养数据明细表扩展时间5"
+        },
+        "equMaintDetDefaultType": {
+          "meaning": "设备保养数据明细表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "equMaintDetDeliveryDate": {
+          "meaning": "设备保养数据明细表交货日期"
+        },
+        "equMaintDetDescription": {
+          "meaning": "设备保养数据明细表描述"
+        },
+        "equMaintDetEndTime": {
+          "meaning": "设备保养数据明细表结束时间"
+        },
+        "equMaintDetEndTimeRequired": {
+          "meaning": "设备保养数据明细表最后需时(小时)"
+        },
+        "equMaintDetEngName": {
+          "meaning": "设备保养数据明细表英文名称"
+        },
+        "equMaintDetEquMaintActualTimeRequired": {
+          "meaning": "设备保养数据明细表实际需时(小时)"
+        },
+        "equMaintDetEquMaintAdjustmentTimeRequired": {
+          "meaning": "设备保养数据明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "equMaintDetEquMaintApplicationId": {
+          "meaning": "设备保养数据明细表应用ID"
+        },
+        "equMaintDetEquMaintAssetRelatId": {
+          "meaning": "设备保养数据明细表关联资产id"
+        },
+        "equMaintDetEquMaintAuditDate": {
+          "meaning": "设备保养数据明细表审核时间"
+        },
+        "equMaintDetEquMaintAuditStatus": {
+          "meaning": "设备保养数据明细表审核状态"
+        },
+        "equMaintDetEquMaintAvailableScheduleId": {
+          "meaning": "设备保养数据明细表可用日程id"
+        },
+        "equMaintDetEquMaintBeginTime": {
+          "meaning": "设备保养数据明细表开始时间"
+        },
+        "equMaintDetEquMaintBizVersion": {
+          "meaning": "设备保养数据明细表业务自定义版本号"
+        },
+        "equMaintDetEquMaintBriefName": {
+          "meaning": "设备保养数据明细表简称"
+        },
+        "equMaintDetEquMaintBusDivisId": {
+          "meaning": "设备保养数据明细表事业部id"
+        },
+        "equMaintDetEquMaintClazz": {
+          "meaning": "设备保养数据明细表子类 类名（表和类一一对应）"
+        },
+        "equMaintDetEquMaintClosedReason": {
+          "meaning": "设备保养数据明细表结案原因"
+        },
+        "equMaintDetEquMaintClosedStatus": {
+          "meaning": "设备保养数据明细表结案状态"
+        },
+        "equMaintDetEquMaintComment": {
+          "meaning": "设备保养数据明细表评论"
+        },
+        "equMaintDetEquMaintCompleteQuantity": {
+          "meaning": "设备保养数据明细表完成数量"
+        },
+        "equMaintDetEquMaintCompleteStatus": {
+          "meaning": "设备保养数据明细表完成状态"
+        },
+        "equMaintDetEquMaintCreateTime": {
+          "meaning": "设备保养数据明细表创建时间"
+        },
+        "equMaintDetEquMaintCreator": {
+          "meaning": "设备保养数据明细表创建人"
+        },
+        "equMaintDetEquMaintCreatorId": {
+          "meaning": "设备保养数据明细表创建人ID"
+        },
+        "equMaintDetEquMaintCumIpqcQuantity": {
+          "meaning": "设备保养数据明细表累计质检数量"
+        },
+        "equMaintDetEquMaintCumIpqcStatus": {
+          "meaning": "设备保养数据明细表累计质检状态"
+        },
+        "equMaintDetEquMaintCumulHndovrQuantity": {
+          "meaning": "设备保养数据明细表累计交出数量"
+        },
+        "equMaintDetEquMaintDailyRepQuantity": {
+          "meaning": "设备保养数据明细表日报表已开数量"
+        },
+        "equMaintDetEquMaintDailyRepStatus": {
+          "meaning": "设备保养数据明细表日报表已开状态"
+        },
+        "equMaintDetEquMaintDateExtra1": {
+          "meaning": "设备保养数据明细表扩展时间1"
+        },
+        "equMaintDetEquMaintDateExtra2": {
+          "meaning": "设备保养数据明细表扩展时间2"
+        },
+        "equMaintDetEquMaintDateExtra3": {
+          "meaning": "设备保养数据明细表扩展时间3"
+        },
+        "equMaintDetEquMaintDateExtra4": {
+          "meaning": "设备保养数据明细表扩展时间4"
+        },
+        "equMaintDetEquMaintDateExtra5": {
+          "meaning": "设备保养数据明细表扩展时间5"
+        },
+        "equMaintDetEquMaintDefaultType": {
+          "meaning": "设备保养数据明细表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "equMaintDetEquMaintDeliveryDate": {
+          "meaning": "设备保养数据明细表交货日期"
+        },
+        "equMaintDetEquMaintDescription": {
+          "meaning": "设备保养数据明细表描述"
+        },
+        "equMaintDetEquMaintEndTime": {
+          "meaning": "设备保养数据明细表结束时间"
+        },
+        "equMaintDetEquMaintEndTimeRequired": {
+          "meaning": "设备保养数据明细表最后需时(小时)"
+        },
+        "equMaintDetEquMaintEngName": {
+          "meaning": "设备保养数据明细表英文名称"
+        },
+        "equMaintDetEquMaintEquipmentId": {
+          "meaning": "设备保养数据明细表设备id"
+        },
+        "equMaintDetEquMaintExchangeRateId": {
+          "meaning": "设备保养数据明细表币种汇率id"
+        },
+        "equMaintDetEquMaintExtension": {
+          "meaning": "设备保养数据明细表扩展数据"
+        },
+        "equMaintDetEquMaintExternalState": {
+          "meaning": "设备保养数据明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "equMaintDetEquMaintFilterClazz": {
+          "meaning": "设备保养数据明细表冗余字段用于筛选"
+        },
+        "equMaintDetEquMaintFlags": {
+          "meaning": "设备保养数据明细表63位标志位"
+        },
+        "equMaintDetEquMaintFromAuditDate": {
+          "meaning": "equMaintDetEquMaintFromAuditDate"
+        },
+        "equMaintDetEquMaintFromBeginTime": {
+          "meaning": "equMaintDetEquMaintFromBeginTime"
+        },
+        "equMaintDetEquMaintFromCreateTime": {
+          "meaning": "equMaintDetEquMaintFromCreateTime"
+        },
+        "equMaintDetEquMaintFromDateExtra1": {
+          "meaning": "equMaintDetEquMaintFromDateExtra1"
+        },
+        "equMaintDetEquMaintFromDateExtra2": {
+          "meaning": "equMaintDetEquMaintFromDateExtra2"
+        },
+        "equMaintDetEquMaintFromDateExtra3": {
+          "meaning": "equMaintDetEquMaintFromDateExtra3"
+        },
+        "equMaintDetEquMaintFromDateExtra4": {
+          "meaning": "equMaintDetEquMaintFromDateExtra4"
+        },
+        "equMaintDetEquMaintFromDateExtra5": {
+          "meaning": "equMaintDetEquMaintFromDateExtra5"
+        },
+        "equMaintDetEquMaintFromDeliveryDate": {
+          "meaning": "equMaintDetEquMaintFromDeliveryDate"
+        },
+        "equMaintDetEquMaintFromEndTime": {
+          "meaning": "equMaintDetEquMaintFromEndTime"
+        },
+        "equMaintDetEquMaintFromGenerativeTime": {
+          "meaning": "equMaintDetEquMaintFromGenerativeTime"
+        },
+        "equMaintDetEquMaintFromPlanEndTime": {
+          "meaning": "equMaintDetEquMaintFromPlanEndTime"
+        },
+        "equMaintDetEquMaintFromPlanStartTime": {
+          "meaning": "equMaintDetEquMaintFromPlanStartTime"
+        },
+        "equMaintDetEquMaintFromPretEndTime": {
+          "meaning": "equMaintDetEquMaintFromPretEndTime"
+        },
+        "equMaintDetEquMaintFromPretStartTime": {
+          "meaning": "equMaintDetEquMaintFromPretStartTime"
+        },
+        "equMaintDetEquMaintFromReceiptDate": {
+          "meaning": "equMaintDetEquMaintFromReceiptDate"
+        },
+        "equMaintDetEquMaintFromUpdateTime": {
+          "meaning": "equMaintDetEquMaintFromUpdateTime"
+        },
+        "equMaintDetEquMaintFscType": {
+          "meaning": "设备保养数据明细表FSC声明"
+        },
+        "equMaintDetEquMaintGenerativePeople": {
+          "meaning": "设备保养数据明细表下发人"
+        },
+        "equMaintDetEquMaintGenerativeState": {
+          "meaning": "设备保养数据明细表下发状态"
+        },
+        "equMaintDetEquMaintGenerativeTime": {
+          "meaning": "设备保养数据明细表下发时间"
+        },
+        "equMaintDetEquMaintGroovyScript": {
+          "meaning": "设备保养数据明细表groovy脚本"
+        },
+        "equMaintDetEquMaintGropeCode": {
+          "meaning": "设备保养数据明细表搜索码"
+        },
+        "equMaintDetEquMaintId": {
+          "meaning": "设备保养数据明细表PK"
+        },
+        "equMaintDetEquMaintInUsed": {
+          "meaning": "设备保养数据明细表是否被使用"
+        },
+        "equMaintDetEquMaintInterval": {
+          "meaning": "设备保养数据明细表保养周期(日，周，月，年)"
+        },
+        "equMaintDetEquMaintIntervalContent": {
+          "meaning": "设备保养数据明细表保养周期内容(1天，2周，2月，1年)，用于推算出下次保养时间"
+        },
+        "equMaintDetEquMaintInvTypeTaxRateId": {
+          "meaning": "设备保养数据明细表发票税率id"
+        },
+        "equMaintDetEquMaintIsBanned": {
+          "meaning": "设备保养数据明细表是否被禁用"
+        },
+        "equMaintDetEquMaintIsDeleted": {
+          "meaning": "设备保养数据明细表是否被删除"
+        },
+        "equMaintDetEquMaintIsLeaf": {
+          "meaning": "设备保养数据明细表是否叶子节点"
+        },
+        "equMaintDetEquMaintIsMainFlow": {
+          "meaning": "设备保养数据明细表是否是主流程"
+        },
+        "equMaintDetEquMaintIsManualModificationDate": {
+          "meaning": "设备保养数据明细表是否手动修改计划生产时间"
+        },
+        "equMaintDetEquMaintIsolation": {
+          "meaning": "设备保养数据明细表智能节点数据隔离标识"
+        },
+        "equMaintDetEquMaintJsScript": {
+          "meaning": "设备保养数据明细表js脚本"
+        },
+        "equMaintDetEquMaintMaterialId": {
+          "meaning": "设备保养数据明细表物料id"
+        },
+        "equMaintDetEquMaintName": {
+          "meaning": "设备保养数据明细表智能节点名"
+        },
+        "equMaintDetEquMaintNameCodeSearch": {
+          "meaning": "设备保养数据明细表name、user_code模糊搜索"
+        },
+        "equMaintDetEquMaintNumberExtra1": {
+          "meaning": "设备保养数据明细表扩展数量1"
+        },
+        "equMaintDetEquMaintNumberExtra2": {
+          "meaning": "设备保养数据明细表扩展数量2"
+        },
+        "equMaintDetEquMaintNumberExtra3": {
+          "meaning": "设备保养数据明细表扩展数量3"
+        },
+        "equMaintDetEquMaintNumberExtra4": {
+          "meaning": "设备保养数据明细表扩展数量4"
+        },
+        "equMaintDetEquMaintNumberExtra5": {
+          "meaning": "设备保养数据明细表扩展数量5"
+        },
+        "equMaintDetEquMaintParentId": {
+          "meaning": "设备保养数据明细表父节点ID"
+        },
+        "equMaintDetEquMaintPlanEndTime": {
+          "meaning": "设备保养数据明细表计划开始时间"
+        },
+        "equMaintDetEquMaintPlanStartTime": {
+          "meaning": "设备保养数据明细表计划开始时间"
+        },
+        "equMaintDetEquMaintPlannedOutputQuantity": {
+          "meaning": "设备保养数据明细表计划产出数量"
+        },
+        "equMaintDetEquMaintPlannedTimeRequired": {
+          "meaning": "设备保养数据明细表计划需时(小时)"
+        },
+        "equMaintDetEquMaintPretEndTime": {
+          "meaning": "设备保养数据明细表预估结束时间"
+        },
+        "equMaintDetEquMaintPretStartTime": {
+          "meaning": "设备保养数据明细表预估开始时间"
+        },
+        "equMaintDetEquMaintPrintTimes": {
+          "meaning": "设备保养数据明细表打印次数"
+        },
+        "equMaintDetEquMaintPriority": {
+          "meaning": "设备保养数据明细表优先级"
+        },
+        "equMaintDetEquMaintProcessInstanceId": {
+          "meaning": "设备保养数据明细表流程实例ID"
+        },
+        "equMaintDetEquMaintProductionProcessesTypeId": {
+          "meaning": "设备保养数据明细表工序类型ID"
+        },
+        "equMaintDetEquMaintProductionShiftId": {
+          "meaning": "设备保养数据明细表生产班次ID"
+        },
+        "equMaintDetEquMaintQuantity": {
+          "meaning": "设备保养数据明细表任务数量"
+        },
+        "equMaintDetEquMaintReason": {
+          "meaning": "设备保养数据明细表保养原因"
+        },
+        "equMaintDetEquMaintReceiptDate": {
+          "meaning": "设备保养数据明细表单据日期"
+        },
+        "equMaintDetEquMaintReceiptType": {
+          "meaning": "设备保养数据明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "equMaintDetEquMaintRelatedTasksId": {
+          "meaning": "设备保养数据明细表关联任务id"
+        },
+        "equMaintDetEquMaintSerialNumber": {
+          "meaning": "设备保养数据明细表顺序号"
+        },
+        "equMaintDetEquMaintSource": {
+          "meaning": "设备保养数据明细表源"
+        },
+        "equMaintDetEquMaintSourceType": {
+          "meaning": "设备保养数据明细表来源类型"
+        },
+        "equMaintDetEquMaintState": {
+          "meaning": "设备保养数据明细表通用状态"
+        },
+        "equMaintDetEquMaintStatus": {
+          "meaning": "设备保养数据明细表任务状态"
+        },
+        "equMaintDetEquMaintSystemCode": {
+          "meaning": "设备保养数据明细表系统编码"
+        },
+        "equMaintDetEquMaintTarget": {
+          "meaning": "设备保养数据明细表目标"
+        },
+        "equMaintDetEquMaintTaskMesId": {
+          "meaning": "设备保养数据明细表数采网关自增长id"
+        },
+        "equMaintDetEquMaintTaskNodeName": {
+          "meaning": "设备保养数据明细表任务节点名称"
+        },
+        "equMaintDetEquMaintTenantId": {
+          "meaning": "设备保养数据明细表租户_id"
+        },
+        "equMaintDetEquMaintThirdPartyClass": {
+          "meaning": "设备保养数据明细表第三方分类"
+        },
+        "equMaintDetEquMaintThirdPartyId": {
+          "meaning": "设备保养数据明细表第三方系统中的唯一ID"
+        },
+        "equMaintDetEquMaintThirdPartyName": {
+          "meaning": "设备保养数据明细表第三方名称"
+        },
+        "equMaintDetEquMaintToAuditDate": {
+          "meaning": "equMaintDetEquMaintToAuditDate"
+        },
+        "equMaintDetEquMaintToBeginTime": {
+          "meaning": "equMaintDetEquMaintToBeginTime"
+        },
+        "equMaintDetEquMaintToCreateTime": {
+          "meaning": "equMaintDetEquMaintToCreateTime"
+        },
+        "equMaintDetEquMaintToDateExtra1": {
+          "meaning": "equMaintDetEquMaintToDateExtra1"
+        },
+        "equMaintDetEquMaintToDateExtra2": {
+          "meaning": "equMaintDetEquMaintToDateExtra2"
+        },
+        "equMaintDetEquMaintToDateExtra3": {
+          "meaning": "equMaintDetEquMaintToDateExtra3"
+        },
+        "equMaintDetEquMaintToDateExtra4": {
+          "meaning": "equMaintDetEquMaintToDateExtra4"
+        },
+        "equMaintDetEquMaintToDateExtra5": {
+          "meaning": "equMaintDetEquMaintToDateExtra5"
+        },
+        "equMaintDetEquMaintToDeliveryDate": {
+          "meaning": "equMaintDetEquMaintToDeliveryDate"
+        },
+        "equMaintDetEquMaintToEndTime": {
+          "meaning": "equMaintDetEquMaintToEndTime"
+        },
+        "equMaintDetEquMaintToGenerativeTime": {
+          "meaning": "equMaintDetEquMaintToGenerativeTime"
+        },
+        "equMaintDetEquMaintToPlanEndTime": {
+          "meaning": "equMaintDetEquMaintToPlanEndTime"
+        },
+        "equMaintDetEquMaintToPlanStartTime": {
+          "meaning": "equMaintDetEquMaintToPlanStartTime"
+        },
+        "equMaintDetEquMaintToPretEndTime": {
+          "meaning": "equMaintDetEquMaintToPretEndTime"
+        },
+        "equMaintDetEquMaintToPretStartTime": {
+          "meaning": "equMaintDetEquMaintToPretStartTime"
+        },
+        "equMaintDetEquMaintToReceiptDate": {
+          "meaning": "equMaintDetEquMaintToReceiptDate"
+        },
+        "equMaintDetEquMaintToUpdateTime": {
+          "meaning": "equMaintDetEquMaintToUpdateTime"
+        },
+        "equMaintDetEquMaintUnitCode": {
+          "meaning": "设备保养数据明细表单位id"
+        },
+        "equMaintDetEquMaintUpdateTime": {
+          "meaning": "设备保养数据明细表更新时间"
+        },
+        "equMaintDetEquMaintUpdater": {
+          "meaning": "设备保养数据明细表更新人"
+        },
+        "equMaintDetEquMaintUpdaterId": {
+          "meaning": "设备保养数据明细表更新人ID"
+        },
+        "equMaintDetEquMaintUserCode": {
+          "meaning": "设备保养数据明细表智能节点的唯一编码"
+        },
+        "equMaintDetEquMaintVarExtra1": {
+          "meaning": "设备保养数据明细表扩展1"
+        },
+        "equMaintDetEquMaintVarExtra2": {
+          "meaning": "设备保养数据明细表扩展2"
+        },
+        "equMaintDetEquMaintVarExtra3": {
+          "meaning": "设备保养数据明细表扩展3"
+        },
+        "equMaintDetEquMaintVarExtra4": {
+          "meaning": "设备保养数据明细表扩展4"
+        },
+        "equMaintDetEquMaintVarExtra5": {
+          "meaning": "设备保养数据明细表扩展5"
+        },
+        "equMaintDetEquMaintVersion": {
+          "meaning": "设备保养数据明细表版本号"
+        },
+        "equMaintDetEquipmentId": {
+          "meaning": "设备保养数据明细表设备id"
+        },
+        "equMaintDetExchangeRateId": {
+          "meaning": "设备保养数据明细表币种汇率id"
+        },
+        "equMaintDetExtension": {
+          "meaning": "设备保养数据明细表扩展数据"
+        },
+        "equMaintDetExternalState": {
+          "meaning": "设备保养数据明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "equMaintDetFilterClazz": {
+          "meaning": "设备保养数据明细表冗余字段用于筛选"
+        },
+        "equMaintDetFlags": {
+          "meaning": "设备保养数据明细表63位标志位"
+        },
+        "equMaintDetFromAuditDate": {
+          "meaning": "equMaintDetFromAuditDate"
+        },
+        "equMaintDetFromBeginTime": {
+          "meaning": "equMaintDetFromBeginTime"
+        },
+        "equMaintDetFromCreateTime": {
+          "meaning": "equMaintDetFromCreateTime"
+        },
+        "equMaintDetFromDateExtra1": {
+          "meaning": "equMaintDetFromDateExtra1"
+        },
+        "equMaintDetFromDateExtra2": {
+          "meaning": "equMaintDetFromDateExtra2"
+        },
+        "equMaintDetFromDateExtra3": {
+          "meaning": "equMaintDetFromDateExtra3"
+        },
+        "equMaintDetFromDateExtra4": {
+          "meaning": "equMaintDetFromDateExtra4"
+        },
+        "equMaintDetFromDateExtra5": {
+          "meaning": "equMaintDetFromDateExtra5"
+        },
+        "equMaintDetFromDeliveryDate": {
+          "meaning": "equMaintDetFromDeliveryDate"
+        },
+        "equMaintDetFromEndTime": {
+          "meaning": "equMaintDetFromEndTime"
+        },
+        "equMaintDetFromGenerativeTime": {
+          "meaning": "equMaintDetFromGenerativeTime"
+        },
+        "equMaintDetFromPlanEndTime": {
+          "meaning": "equMaintDetFromPlanEndTime"
+        },
+        "equMaintDetFromPlanStartTime": {
+          "meaning": "equMaintDetFromPlanStartTime"
+        },
+        "equMaintDetFromPretEndTime": {
+          "meaning": "equMaintDetFromPretEndTime"
+        },
+        "equMaintDetFromPretStartTime": {
+          "meaning": "equMaintDetFromPretStartTime"
+        },
+        "equMaintDetFromReceiptDate": {
+          "meaning": "equMaintDetFromReceiptDate"
+        },
+        "equMaintDetFromUpdateTime": {
+          "meaning": "equMaintDetFromUpdateTime"
+        },
+        "equMaintDetFscType": {
+          "meaning": "设备保养数据明细表FSC声明"
+        },
+        "equMaintDetGenerativePeople": {
+          "meaning": "设备保养数据明细表下发人"
+        },
+        "equMaintDetGenerativeState": {
+          "meaning": "设备保养数据明细表下发状态"
+        },
+        "equMaintDetGenerativeTime": {
+          "meaning": "设备保养数据明细表下发时间"
+        },
+        "equMaintDetGroovyScript": {
+          "meaning": "设备保养数据明细表groovy脚本"
+        },
+        "equMaintDetGropeCode": {
+          "meaning": "设备保养数据明细表搜索码"
+        },
+        "equMaintDetId": {
+          "meaning": "设备保养数据明细表PK",
+          "is_primary": true
+        },
+        "equMaintDetInUsed": {
+          "meaning": "设备保养数据明细表是否被使用"
+        },
+        "equMaintDetInvTypeTaxRateId": {
+          "meaning": "设备保养数据明细表发票税率id"
+        },
+        "equMaintDetIsBanned": {
+          "meaning": "设备保养数据明细表是否被禁用"
+        },
+        "equMaintDetIsDeleted": {
+          "meaning": "设备保养数据明细表是否被删除"
+        },
+        "equMaintDetIsLeaf": {
+          "meaning": "设备保养数据明细表是否叶子节点"
+        },
+        "equMaintDetIsMainFlow": {
+          "meaning": "设备保养数据明细表是否是主流程"
+        },
+        "equMaintDetIsManualModificationDate": {
+          "meaning": "设备保养数据明细表是否手动修改计划生产时间"
+        },
+        "equMaintDetIsolation": {
+          "meaning": "设备保养数据明细表智能节点数据隔离标识"
+        },
+        "equMaintDetJsScript": {
+          "meaning": "设备保养数据明细表js脚本"
+        },
+        "equMaintDetMaintItemId": {
+          "meaning": "设备保养数据明细表保养项目_id"
+        },
+        "equMaintDetMaintResult": {
+          "meaning": "设备保养数据明细表保养项目结果"
+        },
+        "equMaintDetMaterialId": {
+          "meaning": "设备保养数据明细表物料id"
+        },
+        "equMaintDetName": {
+          "meaning": "设备保养数据明细表智能节点名"
+        },
+        "equMaintDetNameCodeSearch": {
+          "meaning": "设备保养数据明细表name、user_code模糊搜索"
+        },
+        "equMaintDetNumberExtra1": {
+          "meaning": "设备保养数据明细表扩展数量1"
+        },
+        "equMaintDetNumberExtra2": {
+          "meaning": "设备保养数据明细表扩展数量2"
+        },
+        "equMaintDetNumberExtra3": {
+          "meaning": "设备保养数据明细表扩展数量3"
+        },
+        "equMaintDetNumberExtra4": {
+          "meaning": "设备保养数据明细表扩展数量4"
+        },
+        "equMaintDetNumberExtra5": {
+          "meaning": "设备保养数据明细表扩展数量5"
+        },
+        "equMaintDetParentId": {
+          "meaning": "设备保养数据明细表父节点ID"
+        },
+        "equMaintDetPlanEndTime": {
+          "meaning": "设备保养数据明细表计划开始时间"
+        },
+        "equMaintDetPlanStartTime": {
+          "meaning": "设备保养数据明细表计划开始时间"
+        },
+        "equMaintDetPlannedOutputQuantity": {
+          "meaning": "设备保养数据明细表计划产出数量"
+        },
+        "equMaintDetPlannedTimeRequired": {
+          "meaning": "设备保养数据明细表计划需时(小时)"
+        },
+        "equMaintDetPretEndTime": {
+          "meaning": "设备保养数据明细表预估结束时间"
+        },
+        "equMaintDetPretStartTime": {
+          "meaning": "设备保养数据明细表预估开始时间"
+        },
+        "equMaintDetPrintTimes": {
+          "meaning": "设备保养数据明细表打印次数"
+        },
+        "equMaintDetPriority": {
+          "meaning": "设备保养数据明细表优先级"
+        },
+        "equMaintDetProcessInstanceId": {
+          "meaning": "设备保养数据明细表流程实例ID"
+        },
+        "equMaintDetProductionProcessesTypeId": {
+          "meaning": "设备保养数据明细表工序类型ID"
+        },
+        "equMaintDetProductionShiftId": {
+          "meaning": "设备保养数据明细表生产班次ID"
+        },
+        "equMaintDetQuantity": {
+          "meaning": "设备保养数据明细表任务数量"
+        },
+        "equMaintDetReceiptDate": {
+          "meaning": "设备保养数据明细表单据日期"
+        },
+        "equMaintDetReceiptType": {
+          "meaning": "设备保养数据明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "equMaintDetRelatedTasksId": {
+          "meaning": "设备保养数据明细表关联任务id"
+        },
+        "equMaintDetSerialNumber": {
+          "meaning": "设备保养数据明细表顺序号"
+        },
+        "equMaintDetSource": {
+          "meaning": "设备保养数据明细表源"
+        },
+        "equMaintDetSourceType": {
+          "meaning": "设备保养数据明细表来源类型"
+        },
+        "equMaintDetState": {
+          "meaning": "设备保养数据明细表通用状态"
+        },
+        "equMaintDetStatus": {
+          "meaning": "设备保养数据明细表任务状态"
+        },
+        "equMaintDetSystemCode": {
+          "meaning": "设备保养数据明细表系统编码"
+        },
+        "equMaintDetTarget": {
+          "meaning": "设备保养数据明细表目标"
+        },
+        "equMaintDetTaskMesId": {
+          "meaning": "设备保养数据明细表数采网关自增长id"
+        },
+        "equMaintDetTaskNodeName": {
+          "meaning": "设备保养数据明细表任务节点名称"
+        },
+        "equMaintDetTenantId": {
+          "meaning": "设备保养数据明细表租户_id"
+        },
+        "equMaintDetThirdPartyClass": {
+          "meaning": "设备保养数据明细表第三方分类"
+        },
+        "equMaintDetThirdPartyId": {
+          "meaning": "设备保养数据明细表第三方系统中的唯一ID"
+        },
+        "equMaintDetThirdPartyName": {
+          "meaning": "设备保养数据明细表第三方名称"
+        },
+        "equMaintDetToAuditDate": {
+          "meaning": "equMaintDetToAuditDate"
+        },
+        "equMaintDetToBeginTime": {
+          "meaning": "equMaintDetToBeginTime"
+        },
+        "equMaintDetToCreateTime": {
+          "meaning": "equMaintDetToCreateTime"
+        },
+        "equMaintDetToDateExtra1": {
+          "meaning": "equMaintDetToDateExtra1"
+        },
+        "equMaintDetToDateExtra2": {
+          "meaning": "equMaintDetToDateExtra2"
+        },
+        "equMaintDetToDateExtra3": {
+          "meaning": "equMaintDetToDateExtra3"
+        },
+        "equMaintDetToDateExtra4": {
+          "meaning": "equMaintDetToDateExtra4"
+        },
+        "equMaintDetToDateExtra5": {
+          "meaning": "equMaintDetToDateExtra5"
+        },
+        "equMaintDetToDeliveryDate": {
+          "meaning": "equMaintDetToDeliveryDate"
+        },
+        "equMaintDetToEndTime": {
+          "meaning": "equMaintDetToEndTime"
+        },
+        "equMaintDetToGenerativeTime": {
+          "meaning": "equMaintDetToGenerativeTime"
+        },
+        "equMaintDetToPlanEndTime": {
+          "meaning": "equMaintDetToPlanEndTime"
+        },
+        "equMaintDetToPlanStartTime": {
+          "meaning": "equMaintDetToPlanStartTime"
+        },
+        "equMaintDetToPretEndTime": {
+          "meaning": "equMaintDetToPretEndTime"
+        },
+        "equMaintDetToPretStartTime": {
+          "meaning": "equMaintDetToPretStartTime"
+        },
+        "equMaintDetToReceiptDate": {
+          "meaning": "equMaintDetToReceiptDate"
+        },
+        "equMaintDetToUpdateTime": {
+          "meaning": "equMaintDetToUpdateTime"
+        },
+        "equMaintDetUnitCode": {
+          "meaning": "设备保养数据明细表单位id"
+        },
+        "equMaintDetUpdateTime": {
+          "meaning": "设备保养数据明细表更新时间"
+        },
+        "equMaintDetUpdater": {
+          "meaning": "设备保养数据明细表更新人"
+        },
+        "equMaintDetUpdaterId": {
+          "meaning": "设备保养数据明细表更新人ID"
+        },
+        "equMaintDetUserCode": {
+          "meaning": "设备保养数据明细表智能节点的唯一编码"
+        },
+        "equMaintDetVarExtra1": {
+          "meaning": "设备保养数据明细表扩展1"
+        },
+        "equMaintDetVarExtra2": {
+          "meaning": "设备保养数据明细表扩展2"
+        },
+        "equMaintDetVarExtra3": {
+          "meaning": "设备保养数据明细表扩展3"
+        },
+        "equMaintDetVarExtra4": {
+          "meaning": "设备保养数据明细表扩展4"
+        },
+        "equMaintDetVarExtra5": {
+          "meaning": "设备保养数据明细表扩展5"
+        },
+        "equMaintDetVersion": {
+          "meaning": "设备保养数据明细表版本号"
+        }
+      }
+    }

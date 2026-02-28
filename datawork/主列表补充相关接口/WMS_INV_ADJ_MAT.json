@@ -1,0 +1,368 @@
+{
+  "api_name" : "/wms-inv-adj-mat/findList",
+  "table_name" : "物料盘点调整主表",
+  "request" : {
+    "wmsInvAdjMatClazz" : "WMS_INV_ADJ_MAT"
+  },
+  "mainTabClazz" : "WMS_INV_ADJ_MAT",
+  "response" : {
+    "wmsInvAdjMatActualTimeRequired" : {
+      "meaning" : "物料盘点调整主表实际需时(小时)"
+    },
+    "wmsInvAdjMatAdjustmentTimeRequired" : {
+      "meaning" : "物料盘点调整主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvAdjMatApplicationId" : {
+      "meaning" : "物料盘点调整主表应用ID"
+    },
+    "wmsInvAdjMatAuditDate" : {
+      "meaning" : "物料盘点调整主表审核时间"
+    },
+    "wmsInvAdjMatAuditStatus" : {
+      "meaning" : "物料盘点调整主表审核状态"
+    },
+    "wmsInvAdjMatAvailableScheduleId" : {
+      "meaning" : "物料盘点调整主表可用日程id"
+    },
+    "wmsInvAdjMatBeginTime" : {
+      "meaning" : "物料盘点调整主表开始时间"
+    },
+    "wmsInvAdjMatBizVersion" : {
+      "meaning" : "物料盘点调整主表业务自定义版本号"
+    },
+    "wmsInvAdjMatBriefName" : {
+      "meaning" : "物料盘点调整主表简称"
+    },
+    "wmsInvAdjMatBusDivisId" : {
+      "meaning" : "物料盘点调整主表事业部id"
+    },
+    "wmsInvAdjMatClazz" : {
+      "meaning" : "物料盘点调整主表子类 类名（表和类一一对应）"
+    },
+    "wmsInvAdjMatClosedReason" : {
+      "meaning" : "物料盘点调整主表结案原因"
+    },
+    "wmsInvAdjMatClosedStatus" : {
+      "meaning" : "物料盘点调整主表结案状态"
+    },
+    "wmsInvAdjMatComment" : {
+      "meaning" : "物料盘点调整主表评论"
+    },
+    "wmsInvAdjMatCompleteQuantity" : {
+      "meaning" : "物料盘点调整主表完成数量"
+    },
+    "wmsInvAdjMatCompleteStatus" : {
+      "meaning" : "物料盘点调整主表完成状态"
+    },
+    "wmsInvAdjMatCreateTime" : {
+      "meaning" : "物料盘点调整主表创建时间"
+    },
+    "wmsInvAdjMatCreator" : {
+      "meaning" : "物料盘点调整主表创建人"
+    },
+    "wmsInvAdjMatCreatorId" : {
+      "meaning" : "物料盘点调整主表创建人ID"
+    },
+    "wmsInvAdjMatDateExtra1" : {
+      "meaning" : "物料盘点调整主表扩展时间1"
+    },
+    "wmsInvAdjMatDateExtra2" : {
+      "meaning" : "物料盘点调整主表扩展时间2"
+    },
+    "wmsInvAdjMatDateExtra3" : {
+      "meaning" : "物料盘点调整主表扩展时间3"
+    },
+    "wmsInvAdjMatDateExtra4" : {
+      "meaning" : "物料盘点调整主表扩展时间4"
+    },
+    "wmsInvAdjMatDateExtra5" : {
+      "meaning" : "物料盘点调整主表扩展时间5"
+    },
+    "wmsInvAdjMatDefaultType" : {
+      "meaning" : "物料盘点调整主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvAdjMatDeliveryDate" : {
+      "meaning" : "物料盘点调整主表交货日期"
+    },
+    "wmsInvAdjMatDescription" : {
+      "meaning" : "物料盘点调整主表描述"
+    },
+    "wmsInvAdjMatEndTime" : {
+      "meaning" : "物料盘点调整主表结束时间"
+    },
+    "wmsInvAdjMatEndTimeRequired" : {
+      "meaning" : "物料盘点调整主表最后需时(小时)"
+    },
+    "wmsInvAdjMatEngName" : {
+      "meaning" : "物料盘点调整主表英文名称"
+    },
+    "wmsInvAdjMatEquipmentId" : {
+      "meaning" : "物料盘点调整主表设备id"
+    },
+    "wmsInvAdjMatExchangeRateId" : {
+      "meaning" : "物料盘点调整主表币种汇率id"
+    },
+    "wmsInvAdjMatExtension" : {
+      "meaning" : "物料盘点调整主表扩展数据"
+    },
+    "wmsInvAdjMatExternalState" : {
+      "meaning" : "物料盘点调整主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvAdjMatFilterClazz" : {
+      "meaning" : "物料盘点调整主表冗余字段用于筛选"
+    },
+    "wmsInvAdjMatFlags" : {
+      "meaning" : "物料盘点调整主表63位标志位"
+    },
+    "wmsInvAdjMatFromAuditDate" : {
+      "meaning" : "wmsInvAdjMatFromAuditDate"
+    },
+    "wmsInvAdjMatFromBeginTime" : {
+      "meaning" : "wmsInvAdjMatFromBeginTime"
+    },
+    "wmsInvAdjMatFromCreateTime" : {
+      "meaning" : "wmsInvAdjMatFromCreateTime"
+    },
+    "wmsInvAdjMatFromDateExtra1" : {
+      "meaning" : "wmsInvAdjMatFromDateExtra1"
+    },
+    "wmsInvAdjMatFromDateExtra2" : {
+      "meaning" : "wmsInvAdjMatFromDateExtra2"
+    },
+    "wmsInvAdjMatFromDateExtra3" : {
+      "meaning" : "wmsInvAdjMatFromDateExtra3"
+    },
+    "wmsInvAdjMatFromDateExtra4" : {
+      "meaning" : "wmsInvAdjMatFromDateExtra4"
+    },
+    "wmsInvAdjMatFromDateExtra5" : {
+      "meaning" : "wmsInvAdjMatFromDateExtra5"
+    },
+    "wmsInvAdjMatFromDeliveryDate" : {
+      "meaning" : "wmsInvAdjMatFromDeliveryDate"
+    },
+    "wmsInvAdjMatFromEndTime" : {
+      "meaning" : "wmsInvAdjMatFromEndTime"
+    },
+    "wmsInvAdjMatFromReceiptDate" : {
+      "meaning" : "wmsInvAdjMatFromReceiptDate"
+    },
+    "wmsInvAdjMatFromUpdateTime" : {
+      "meaning" : "wmsInvAdjMatFromUpdateTime"
+    },
+    "wmsInvAdjMatFscType" : {
+      "meaning" : "物料盘点调整主表FSC声明"
+    },
+    "wmsInvAdjMatGenerativePeople" : {
+      "meaning" : "物料盘点调整主表下发人"
+    },
+    "wmsInvAdjMatGenerativeState" : {
+      "meaning" : "物料盘点调整主表下发状态"
+    },
+    "wmsInvAdjMatGroovyScript" : {
+      "meaning" : "物料盘点调整主表groovy脚本"
+    },
+    "wmsInvAdjMatGropeCode" : {
+      "meaning" : "物料盘点调整主表搜索码"
+    },
+    "wmsInvAdjMatId" : {
+      "meaning" : "物料盘点调整主表Pk",
+      "is_primary" : true
+    },
+    "wmsInvAdjMatInUsed" : {
+      "meaning" : "物料盘点调整主表是否被使用"
+    },
+    "wmsInvAdjMatInvTypeTaxRateId" : {
+      "meaning" : "物料盘点调整主表发票税率id"
+    },
+    "wmsInvAdjMatIsBanned" : {
+      "meaning" : "物料盘点调整主表是否被禁用"
+    },
+    "wmsInvAdjMatIsDeleted" : {
+      "meaning" : "物料盘点调整主表是否被删除"
+    },
+    "wmsInvAdjMatIsLeaf" : {
+      "meaning" : "物料盘点调整主表是否叶子节点"
+    },
+    "wmsInvAdjMatIsMainFlow" : {
+      "meaning" : "物料盘点调整主表是否是主流程"
+    },
+    "wmsInvAdjMatIsManualModificationDate" : {
+      "meaning" : "物料盘点调整主表是否手动修改计划生产时间"
+    },
+    "wmsInvAdjMatIsolation" : {
+      "meaning" : "物料盘点调整主表智能节点数据隔离标识"
+    },
+    "wmsInvAdjMatJsScript" : {
+      "meaning" : "物料盘点调整主表js脚本"
+    },
+    "wmsInvAdjMatMaterialId" : {
+      "meaning" : "物料盘点调整主表物料id"
+    },
+    "wmsInvAdjMatName" : {
+      "meaning" : "物料盘点调整主表智能节点名"
+    },
+    "wmsInvAdjMatNameCodeSearch" : {
+      "meaning" : "物料盘点调整主表name、user_code模糊搜索"
+    },
+    "wmsInvAdjMatNumberExtra1" : {
+      "meaning" : "物料盘点调整主表扩展数量1"
+    },
+    "wmsInvAdjMatNumberExtra2" : {
+      "meaning" : "物料盘点调整主表扩展数量2"
+    },
+    "wmsInvAdjMatNumberExtra3" : {
+      "meaning" : "物料盘点调整主表扩展数量3"
+    },
+    "wmsInvAdjMatNumberExtra4" : {
+      "meaning" : "物料盘点调整主表扩展数量4"
+    },
+    "wmsInvAdjMatNumberExtra5" : {
+      "meaning" : "物料盘点调整主表扩展数量5"
+    },
+    "wmsInvAdjMatParentId" : {
+      "meaning" : "物料盘点调整主表父节点ID"
+    },
+    "wmsInvAdjMatPlannedOutputQuantity" : {
+      "meaning" : "物料盘点调整主表计划产出数量"
+    },
+    "wmsInvAdjMatPlannedTimeRequired" : {
+      "meaning" : "物料盘点调整主表计划需时(小时)"
+    },
+    "wmsInvAdjMatPrintTimes" : {
+      "meaning" : "物料盘点调整主表打印次数"
+    },
+    "wmsInvAdjMatPriority" : {
+      "meaning" : "物料盘点调整主表优先级"
+    },
+    "wmsInvAdjMatProcessInstanceId" : {
+      "meaning" : "物料盘点调整主表流程实例ID"
+    },
+    "wmsInvAdjMatProductionProcessesTypeId" : {
+      "meaning" : "物料盘点调整主表工序类型ID"
+    },
+    "wmsInvAdjMatProductionShiftId" : {
+      "meaning" : "物料盘点调整主表生产班次ID"
+    },
+    "wmsInvAdjMatQuantity" : {
+      "meaning" : "物料盘点调整主表任务数量"
+    },
+    "wmsInvAdjMatReceiptDate" : {
+      "meaning" : "物料盘点调整主表单据日期"
+    },
+    "wmsInvAdjMatReceiptType" : {
+      "meaning" : "物料盘点调整主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvAdjMatRelatedTasksId" : {
+      "meaning" : "物料盘点调整主表关联任务id"
+    },
+    "wmsInvAdjMatSerialNumber" : {
+      "meaning" : "物料盘点调整主表顺序号"
+    },
+    "wmsInvAdjMatSource" : {
+      "meaning" : "物料盘点调整主表源"
+    },
+    "wmsInvAdjMatSourceType" : {
+      "meaning" : "物料盘点调整主表来源类型"
+    },
+    "wmsInvAdjMatState" : {
+      "meaning" : "物料盘点调整主表通用状态"
+    },
+    "wmsInvAdjMatSystemCode" : {
+      "meaning" : "物料盘点调整主表系统编码"
+    },
+    "wmsInvAdjMatTarget" : {
+      "meaning" : "物料盘点调整主表目标"
+    },
+    "wmsInvAdjMatTaskNodeName" : {
+      "meaning" : "物料盘点调整主表任务节点名称"
+    },
+    "wmsInvAdjMatTenantId" : {
+      "meaning" : "物料盘点调整主表租户ID"
+    },
+    "wmsInvAdjMatThirdPartyClass" : {
+      "meaning" : "物料盘点调整主表第三方分类"
+    },
+    "wmsInvAdjMatThirdPartyId" : {
+      "meaning" : "物料盘点调整主表第三方系统中的唯一ID"
+    },
+    "wmsInvAdjMatThirdPartyName" : {
+      "meaning" : "物料盘点调整主表第三方名称"
+    },
+    "wmsInvAdjMatToAuditDate" : {
+      "meaning" : "wmsInvAdjMatToAuditDate"
+    },
+    "wmsInvAdjMatToBeginTime" : {
+      "meaning" : "wmsInvAdjMatToBeginTime"
+    },
+    "wmsInvAdjMatToCreateTime" : {
+      "meaning" : "wmsInvAdjMatToCreateTime"
+    },
+    "wmsInvAdjMatToDateExtra1" : {
+      "meaning" : "wmsInvAdjMatToDateExtra1"
+    },
+    "wmsInvAdjMatToDateExtra2" : {
+      "meaning" : "wmsInvAdjMatToDateExtra2"
+    },
+    "wmsInvAdjMatToDateExtra3" : {
+      "meaning" : "wmsInvAdjMatToDateExtra3"
+    },
+    "wmsInvAdjMatToDateExtra4" : {
+      "meaning" : "wmsInvAdjMatToDateExtra4"
+    },
+    "wmsInvAdjMatToDateExtra5" : {
+      "meaning" : "wmsInvAdjMatToDateExtra5"
+    },
+    "wmsInvAdjMatToDeliveryDate" : {
+      "meaning" : "wmsInvAdjMatToDeliveryDate"
+    },
+    "wmsInvAdjMatToEndTime" : {
+      "meaning" : "wmsInvAdjMatToEndTime"
+    },
+    "wmsInvAdjMatToReceiptDate" : {
+      "meaning" : "wmsInvAdjMatToReceiptDate"
+    },
+    "wmsInvAdjMatToUpdateTime" : {
+      "meaning" : "wmsInvAdjMatToUpdateTime"
+    },
+    "wmsInvAdjMatTotalAmountExcludingTax" : {
+      "meaning" : "物料盘点调整主表总盘点不含税金额"
+    },
+    "wmsInvAdjMatTotalAmountIncludingTax" : {
+      "meaning" : "物料盘点调整主表总盘点含税金额"
+    },
+    "wmsInvAdjMatUnitCode" : {
+      "meaning" : "物料盘点调整主表单位id"
+    },
+    "wmsInvAdjMatUpdateTime" : {
+      "meaning" : "物料盘点调整主表更新时间"
+    },
+    "wmsInvAdjMatUpdater" : {
+      "meaning" : "物料盘点调整主表更新人"
+    },
+    "wmsInvAdjMatUpdaterId" : {
+      "meaning" : "物料盘点调整主表更新人ID"
+    },
+    "wmsInvAdjMatUserCode" : {
+      "meaning" : "物料盘点调整主表智能节点的唯一编码"
+    },
+    "wmsInvAdjMatVarExtra1" : {
+      "meaning" : "物料盘点调整主表扩展1"
+    },
+    "wmsInvAdjMatVarExtra2" : {
+      "meaning" : "物料盘点调整主表扩展2"
+    },
+    "wmsInvAdjMatVarExtra3" : {
+      "meaning" : "物料盘点调整主表扩展3"
+    },
+    "wmsInvAdjMatVarExtra4" : {
+      "meaning" : "物料盘点调整主表扩展4"
+    },
+    "wmsInvAdjMatVarExtra5" : {
+      "meaning" : "物料盘点调整主表扩展5"
+    },
+    "wmsInvAdjMatVersion" : {
+      "meaning" : "物料盘点调整主表版本号"
+    }
+  }
+}

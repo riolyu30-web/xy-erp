@@ -1,0 +1,365 @@
+{
+  "api_name" : "/trans-pack-list/findList",
+  "table_name" : "装舱单",
+  "request" : {
+    "transPackListClazz" : "TRANS_PACK_LIST"
+  },
+  "mainTabClazz" : "TRANS_PACK_LIST",
+  "response" : {
+    "transPackListActualTimeRequired" : {
+      "meaning" : "装舱单实际需时(小时)"
+    },
+    "transPackListAdjustmentTimeRequired" : {
+      "meaning" : "装舱单调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "transPackListApplicationId" : {
+      "meaning" : "装舱单应用ID"
+    },
+    "transPackListAuditDate" : {
+      "meaning" : "装舱单审核时间"
+    },
+    "transPackListAuditStatus" : {
+      "meaning" : "装舱单审核状态"
+    },
+    "transPackListAvailableScheduleId" : {
+      "meaning" : "装舱单可用日程id"
+    },
+    "transPackListBeginTime" : {
+      "meaning" : "装舱单开始时间"
+    },
+    "transPackListBizVersion" : {
+      "meaning" : "装舱单业务自定义版本号"
+    },
+    "transPackListBriefName" : {
+      "meaning" : "装舱单简称"
+    },
+    "transPackListBusDivisId" : {
+      "meaning" : "装舱单事业部id"
+    },
+    "transPackListClazz" : {
+      "meaning" : "装舱单子类 类名（表和类一一对应）"
+    },
+    "transPackListClosedReason" : {
+      "meaning" : "装舱单结案原因"
+    },
+    "transPackListClosedStatus" : {
+      "meaning" : "装舱单结案状态"
+    },
+    "transPackListComment" : {
+      "meaning" : "装舱单评论"
+    },
+    "transPackListCompleteQuantity" : {
+      "meaning" : "装舱单完成数量"
+    },
+    "transPackListCompleteStatus" : {
+      "meaning" : "装舱单完成状态"
+    },
+    "transPackListCreateTime" : {
+      "meaning" : "装舱单创建时间"
+    },
+    "transPackListCreator" : {
+      "meaning" : "装舱单创建人"
+    },
+    "transPackListCreatorId" : {
+      "meaning" : "装舱单创建人ID"
+    },
+    "transPackListCusId" : {
+      "meaning" : "装舱单客户_guid"
+    },
+    "transPackListDateExtra1" : {
+      "meaning" : "装舱单扩展时间1"
+    },
+    "transPackListDateExtra2" : {
+      "meaning" : "装舱单扩展时间2"
+    },
+    "transPackListDateExtra3" : {
+      "meaning" : "装舱单扩展时间3"
+    },
+    "transPackListDateExtra4" : {
+      "meaning" : "装舱单扩展时间4"
+    },
+    "transPackListDateExtra5" : {
+      "meaning" : "装舱单扩展时间5"
+    },
+    "transPackListDefaultType" : {
+      "meaning" : "装舱单智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "transPackListDeliveryDate" : {
+      "meaning" : "装舱单交货日期"
+    },
+    "transPackListDescription" : {
+      "meaning" : "装舱单描述"
+    },
+    "transPackListEndTime" : {
+      "meaning" : "装舱单结束时间"
+    },
+    "transPackListEndTimeRequired" : {
+      "meaning" : "装舱单最后需时(小时)"
+    },
+    "transPackListEngName" : {
+      "meaning" : "装舱单英文名称"
+    },
+    "transPackListEquipmentId" : {
+      "meaning" : "装舱单设备id"
+    },
+    "transPackListExchangeRateId" : {
+      "meaning" : "装舱单币种汇率id"
+    },
+    "transPackListExtension" : {
+      "meaning" : "装舱单扩展数据"
+    },
+    "transPackListExternalState" : {
+      "meaning" : "装舱单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "transPackListFilterClazz" : {
+      "meaning" : "装舱单冗余字段用于筛选"
+    },
+    "transPackListFlags" : {
+      "meaning" : "装舱单63位标志位"
+    },
+    "transPackListFromAuditDate" : {
+      "meaning" : "transPackListFromAuditDate"
+    },
+    "transPackListFromBeginTime" : {
+      "meaning" : "transPackListFromBeginTime"
+    },
+    "transPackListFromCreateTime" : {
+      "meaning" : "transPackListFromCreateTime"
+    },
+    "transPackListFromDateExtra1" : {
+      "meaning" : "transPackListFromDateExtra1"
+    },
+    "transPackListFromDateExtra2" : {
+      "meaning" : "transPackListFromDateExtra2"
+    },
+    "transPackListFromDateExtra3" : {
+      "meaning" : "transPackListFromDateExtra3"
+    },
+    "transPackListFromDateExtra4" : {
+      "meaning" : "transPackListFromDateExtra4"
+    },
+    "transPackListFromDateExtra5" : {
+      "meaning" : "transPackListFromDateExtra5"
+    },
+    "transPackListFromDeliveryDate" : {
+      "meaning" : "transPackListFromDeliveryDate"
+    },
+    "transPackListFromEndTime" : {
+      "meaning" : "transPackListFromEndTime"
+    },
+    "transPackListFromReceiptDate" : {
+      "meaning" : "transPackListFromReceiptDate"
+    },
+    "transPackListFromUpdateTime" : {
+      "meaning" : "transPackListFromUpdateTime"
+    },
+    "transPackListFscType" : {
+      "meaning" : "装舱单FSC声明"
+    },
+    "transPackListGenerativePeople" : {
+      "meaning" : "装舱单下发人"
+    },
+    "transPackListGenerativeState" : {
+      "meaning" : "装舱单下发状态"
+    },
+    "transPackListGroovyScript" : {
+      "meaning" : "装舱单groovy脚本"
+    },
+    "transPackListGropeCode" : {
+      "meaning" : "装舱单搜索码"
+    },
+    "transPackListId" : {
+      "meaning" : "装舱单PK",
+      "is_primary" : true
+    },
+    "transPackListInUsed" : {
+      "meaning" : "装舱单是否被使用"
+    },
+    "transPackListInvTypeTaxRateId" : {
+      "meaning" : "装舱单发票税率id"
+    },
+    "transPackListIsBanned" : {
+      "meaning" : "装舱单是否被禁用"
+    },
+    "transPackListIsDeleted" : {
+      "meaning" : "装舱单是否被删除"
+    },
+    "transPackListIsLeaf" : {
+      "meaning" : "装舱单是否叶子节点"
+    },
+    "transPackListIsMainFlow" : {
+      "meaning" : "装舱单是否是主流程"
+    },
+    "transPackListIsManualModificationDate" : {
+      "meaning" : "装舱单是否手动修改计划生产时间"
+    },
+    "transPackListIsolation" : {
+      "meaning" : "装舱单智能节点数据隔离标识"
+    },
+    "transPackListJsScript" : {
+      "meaning" : "装舱单js脚本"
+    },
+    "transPackListMaterialId" : {
+      "meaning" : "装舱单物料id"
+    },
+    "transPackListName" : {
+      "meaning" : "装舱单智能节点名"
+    },
+    "transPackListNameCodeSearch" : {
+      "meaning" : "装舱单name、user_code模糊搜索"
+    },
+    "transPackListNumberExtra1" : {
+      "meaning" : "装舱单扩展数量1"
+    },
+    "transPackListNumberExtra2" : {
+      "meaning" : "装舱单扩展数量2"
+    },
+    "transPackListNumberExtra3" : {
+      "meaning" : "装舱单扩展数量3"
+    },
+    "transPackListNumberExtra4" : {
+      "meaning" : "装舱单扩展数量4"
+    },
+    "transPackListNumberExtra5" : {
+      "meaning" : "装舱单扩展数量5"
+    },
+    "transPackListParentId" : {
+      "meaning" : "装舱单父节点ID"
+    },
+    "transPackListPlannedOutputQuantity" : {
+      "meaning" : "装舱单计划产出数量"
+    },
+    "transPackListPlannedTimeRequired" : {
+      "meaning" : "装舱单计划需时(小时)"
+    },
+    "transPackListPrintTimes" : {
+      "meaning" : "装舱单打印次数"
+    },
+    "transPackListPriority" : {
+      "meaning" : "装舱单优先级"
+    },
+    "transPackListProcessInstanceId" : {
+      "meaning" : "装舱单流程实例ID"
+    },
+    "transPackListProductionProcessesTypeId" : {
+      "meaning" : "装舱单工序类型ID"
+    },
+    "transPackListProductionShiftId" : {
+      "meaning" : "装舱单生产班次ID"
+    },
+    "transPackListQuantity" : {
+      "meaning" : "装舱单任务数量"
+    },
+    "transPackListReceiptDate" : {
+      "meaning" : "装舱单单据日期"
+    },
+    "transPackListReceiptType" : {
+      "meaning" : "装舱单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "transPackListRelatedTasksId" : {
+      "meaning" : "装舱单关联任务id"
+    },
+    "transPackListSerialNumber" : {
+      "meaning" : "装舱单顺序号"
+    },
+    "transPackListSource" : {
+      "meaning" : "装舱单源"
+    },
+    "transPackListSourceType" : {
+      "meaning" : "装舱单来源类型"
+    },
+    "transPackListState" : {
+      "meaning" : "装舱单通用状态"
+    },
+    "transPackListSystemCode" : {
+      "meaning" : "装舱单系统编码"
+    },
+    "transPackListTarget" : {
+      "meaning" : "装舱单目标"
+    },
+    "transPackListTaskNodeName" : {
+      "meaning" : "装舱单任务节点名称"
+    },
+    "transPackListTenantId" : {
+      "meaning" : "装舱单租户ID"
+    },
+    "transPackListThirdPartyClass" : {
+      "meaning" : "装舱单第三方分类"
+    },
+    "transPackListThirdPartyId" : {
+      "meaning" : "装舱单第三方系统中的唯一ID"
+    },
+    "transPackListThirdPartyName" : {
+      "meaning" : "装舱单第三方名称"
+    },
+    "transPackListToAuditDate" : {
+      "meaning" : "transPackListToAuditDate"
+    },
+    "transPackListToBeginTime" : {
+      "meaning" : "transPackListToBeginTime"
+    },
+    "transPackListToCreateTime" : {
+      "meaning" : "transPackListToCreateTime"
+    },
+    "transPackListToDateExtra1" : {
+      "meaning" : "transPackListToDateExtra1"
+    },
+    "transPackListToDateExtra2" : {
+      "meaning" : "transPackListToDateExtra2"
+    },
+    "transPackListToDateExtra3" : {
+      "meaning" : "transPackListToDateExtra3"
+    },
+    "transPackListToDateExtra4" : {
+      "meaning" : "transPackListToDateExtra4"
+    },
+    "transPackListToDateExtra5" : {
+      "meaning" : "transPackListToDateExtra5"
+    },
+    "transPackListToDeliveryDate" : {
+      "meaning" : "transPackListToDeliveryDate"
+    },
+    "transPackListToEndTime" : {
+      "meaning" : "transPackListToEndTime"
+    },
+    "transPackListToReceiptDate" : {
+      "meaning" : "transPackListToReceiptDate"
+    },
+    "transPackListToUpdateTime" : {
+      "meaning" : "transPackListToUpdateTime"
+    },
+    "transPackListUnitCode" : {
+      "meaning" : "装舱单单位id"
+    },
+    "transPackListUpdateTime" : {
+      "meaning" : "装舱单更新时间"
+    },
+    "transPackListUpdater" : {
+      "meaning" : "装舱单更新人"
+    },
+    "transPackListUpdaterId" : {
+      "meaning" : "装舱单更新人ID"
+    },
+    "transPackListUserCode" : {
+      "meaning" : "装舱单智能节点的唯一编码"
+    },
+    "transPackListVarExtra1" : {
+      "meaning" : "装舱单扩展1"
+    },
+    "transPackListVarExtra2" : {
+      "meaning" : "装舱单扩展2"
+    },
+    "transPackListVarExtra3" : {
+      "meaning" : "装舱单扩展3"
+    },
+    "transPackListVarExtra4" : {
+      "meaning" : "装舱单扩展4"
+    },
+    "transPackListVarExtra5" : {
+      "meaning" : "装舱单扩展5"
+    },
+    "transPackListVersion" : {
+      "meaning" : "装舱单版本号"
+    }
+  }
+}

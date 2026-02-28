@@ -7,6 +7,9 @@ if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
 from fastmcp import FastMCP  # 导入FastMCP框架
 import json  # 导入JSON库
+import random # 导入random库 用于生成随机数
+import string # 导入string库 用于处理字符串
+from datetime import datetime, timedelta # 导入datetime库 用于处理日期和时间
 from services.llm_manager import dashscope_chat_json
 from neo4j import GraphDatabase
 
@@ -14,6 +17,129 @@ neo4j_mcp = FastMCP(name="neo4j")  # 创建计算服务MCP实例
 
 from dotenv import load_dotenv # 导入 dotenv 库
 load_dotenv() # 加载根目录下的 .env 文件
+
+# 预定义的物料列表
+MATERIAL_LIST = [
+    "300克玖龙粉灰卡787*1092", "250克玖龙粉灰卡889*1194", "金枫300克粉灰卡FSC787*1092",
+    "理文170克白牛咭787*1092", "金枫300克粉灰卡889*1194", "海龙250克粉灰卡889*1194",
+    "2075水性光油", "PMS Warm Grey 1U（水墨）", "PMS 2757U( BLUE )（水墨）",
+    "PMS 072U（水墨）", "东洋四色 红", "100037824包装箱344*328*182",
+    "100037821包装箱516*368*351", "300534749包装箱天盖982*523*97", "3882-03 右保护卡包装箱551*348*330"
+]
+
+# 预定义的姓氏和名字列表
+SURNAMES = ["赵", "钱", "孙", "李", "周", "吴", "郑", "王", "冯", "陈", "褚", "卫", "蒋", "沈", "韩", "杨"]
+GIVEN_NAMES = ["伟", "芳", "娜", "秀英", "敏", "静", "丽", "强", "磊", "军", "洋", "勇", "艳", "杰", "娟"]
+
+def generate_random_string(length=8):
+    """生成指定长度的随机字符串（大写字母和数字）"""
+    # 定义字符集为大写字母和数字
+    letters_and_digits = string.ascii_uppercase + string.digits
+    # 从字符集中随机选择指定长度的字符并拼接成字符串
+    return ''.join(random.choice(letters_and_digits) for i in range(length))
+
+def generate_random_name():
+    """随机生成一个中文姓名"""
+    # 从预定义的姓氏列表中随机选择一个姓氏
+    surname = random.choice(SURNAMES)
+    # 从预定义的名字列表中随机选择1到2个字作为名字
+    given_name = "".join(random.choices(GIVEN_NAMES, k=random.randint(1, 2)))
+    # 拼接姓和名，返回完整的姓名
+    return f"{surname}{given_name}"
+
+def generate_random_number(digits: int):
+    """生成指定位数的随机数字字符串"""
+    # 检查位数是否为正数
+    if digits <= 0:
+        # 如果不是，则返回空字符串
+        return ""
+    # 从'0123456789'中随机选择指定位数的字符并拼接成字符串
+    return "".join(random.choices(string.digits, k=digits))
+
+def generate_random_material():
+    """从预定义的列表中随机选择一个物料"""
+    # 从全局物料列表中随机选择一个元素并返回
+    return random.choice(MATERIAL_LIST)
+
+
+
+
+def generate_random_company_name():
+    """随机生成一个公司名称，格式如 'X**公司' 或 'Y**厂'"""
+    # 定义公司名称后缀列表
+    suffixes = ["公司", "厂", "集团", "实业", "科技"]
+    # 从 GIVEN_NAMES 列表中随机选择一个字作为公司名前缀
+    prefix = random.choice(GIVEN_NAMES)
+    # 从后缀列表中随机选择一个后缀
+    suffix = random.choice(suffixes)
+    # 按照 "前缀**后缀" 的格式拼接并返回公司名
+    return f"{prefix}**{suffix}"
+
+# 用于存储不同前缀的当前计数值
+CODE_COUNTERS = {}
+
+def generate_sequential_code(prefix: str, length: int = 8):
+    """
+    生成带固定前缀和自增序列号的编码
+    :param prefix: 编码前缀 (e.g., "XY")
+    :param length: 数字部分的长度，不足会补零
+    """
+    # 如果前缀是第一次出现，则在计数器字典中初始化为0
+    if prefix not in CODE_COUNTERS:
+        CODE_COUNTERS[prefix] = 0
+    
+    # 将对应前缀的计数器加1
+    CODE_COUNTERS[prefix] += 1
+    
+    # 获取当前的计数值
+    current_number = CODE_COUNTERS[prefix]
+    
+    # 将数字格式化为指定长度的字符串，不足部分在左侧补零
+    # 例如，数字为1，长度为8，则格式化为 "00000001"
+    formatted_number = str(current_number).zfill(length)
+    
+    # 拼接前缀和格式化后的数字，返回最终的编码
+    return f"{prefix}{formatted_number}"
+
+
+def generate_random_datetime(start_date_str=None, end_date_str=None):
+    """
+    在指定时间范围内生成一个随机的日期和时间
+    :param start_date_str: 开始日期字符串 (e.g., "2026-01-01 00:00:00")
+    :param end_date_str: 结束日期字符串 (e.g., "2026-12-31 23:59:59")
+    :return: 格式化后的随机日期时间字符串
+    """
+    # 定义日期时间格式
+    date_format = "%Y-%m-%d %H:%M:%S"
+    
+    # 如果未提供开始日期，则默认为2026年的第一天
+    if start_date_str is None:
+        start_date = datetime(2026, 1, 1)
+    else:
+        # 将开始日期字符串解析为datetime对象
+        start_date = datetime.strptime(start_date_str, date_format)
+        
+    # 如果未提供结束日期，则默认为2026年的最后一天
+    if end_date_str is None:
+        end_date = datetime(2026, 12, 31, 23, 59, 59)
+    else:
+        # 将结束日期字符串解析为datetime对象
+        end_date = datetime.strptime(end_date_str, date_format)
+    
+    # 计算时间范围的总秒数
+    time_delta = end_date - start_date
+    total_seconds = int(time_delta.total_seconds())
+    
+    # 生成一个随机的秒数
+    random_seconds = random.randint(0, total_seconds)
+    
+    # 计算随机的日期时间
+    random_date = start_date + timedelta(seconds=random_seconds)
+    
+    # 将随机日期时间格式化为指定的字符串格式并返回
+    return random_date.strftime(date_format)
+
+
 # Neo4j 配置 (请根据你的实际情况修改)
 NEO4J_URI = os.getenv("NEO4J_URI", "neo4j://127.0.0.1:7687")
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
@@ -342,12 +468,66 @@ def find_data_by_path(path: str):
             return {"message": merged_results}            
         return {"error": "未找到数据"}            
 
-            
-if __name__ == "__main__":
 
+# 定义一个更新节点属性的函数
+def update_node_properties(clazz: str, match_properties: dict, update_properties: dict):
+    """
+    根据匹配条件更新节点属性
+    :param clazz: 节点标签 (e.g., "BUSINESS_ORDER_DETAIL")
+    :param match_properties: 用于查找节点的属性字典 (e.g., {"bizOrderNo": "SO202311280001"})
+    :param update_properties: 要更新的属性字典 (e.g., {"bizOrderDetailAuditStatus": "AUDITED"})
+    """
+    # 检查匹配属性字典是否为空
+    if not match_properties:
+        # 如果为空，则返回错误信息，因为无法定位要更新的节点
+        return {"error": "match_properties cannot be empty."}
+
+    # 使用配置的URI、用户名和密码创建Neo4j数据库驱动实例
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    # 创建一个数据库会话，使用'with'确保会话在使用后自动关闭
+    with driver.session() as session:
+        # 为每个匹配属性生成一个Cypher WHERE子句部分
+        where_clauses = [f"n.{key} = ${key}" for key in match_properties.keys()]
+        # 将所有WHERE子句用'AND'连接成一个完整的WHERE条件字符串
+        where_statement = " AND ".join(where_clauses)
+
+        # 使用f-string构建完整的Cypher查询语句
+        query = f"""
+        MATCH (n:`{clazz}`)
+        WHERE {where_statement}
+        SET n += $update_props
+        RETURN n
+        """
+        
+        # 将匹配属性和更新属性解包合并到一个新的字典中，作为查询参数
+        parameters = {**match_properties, "update_props": update_properties}
+        
+        # 在控制台打印将要执行的Cypher查询语句，便于调试
+        print(f"Executing query: {query}")
+        # 在控制台打印传递给查询的参数，便于调试
+        print(f"With parameters: {parameters}")
+
+        # 执行带参数的Cypher查询
+        result = session.run(query, parameters)
+        # 从查询结果中提取所有被更新的节点记录
+        updated_nodes = [record['n'] for record in result]
+
+        # 检查是否有节点被更新
+        if updated_nodes:
+            # 如果有，返回一个包含成功消息和更新后节点数据的字典
+            return {"success": f"Updated {len(updated_nodes)} nodes.", "updated_nodes": [dict(node) for node in updated_nodes]}
+        # 如果没有节点被更新
+        else:
+            # 返回一个表示没有找到匹配节点的消息
+            return {"message": "No nodes found matching the criteria."}
+
+
+def testcase1():
     result = find_relation_path_logic(["bizOrderDetailAuditStatus", "contractDetailBriefName","prdRetDetBusDivisId"])
     print(json.dumps(result, ensure_ascii=False, indent=4))
 
+
+def testcase2():
     result = {
     "CONTRACT_DETAIL-ORDER_NOTICE_DET-BUSINESS_ORDER_DETAIL-PRD_O_APY_DET-PRD_SAL_DET-PRD_RET_DET": "合同明细-订单通知单明细-业务订单明细-成品出库申请明细-成品 销货明细表-成品退货明细表",        
     "CONTRACT_DETAIL-BUSINESS_ORDER_DETAIL-PRD_O_APY_DET-TRANS_PLAN_DET-PRD_SAL_DET-PRD_RET_DET": "合同明细-业务订单明细-成品出库申请明细-厂车运输计划明细-成品 销货明细表-成品退货明细表",        
@@ -393,4 +573,179 @@ if __name__ == "__main__":
             for i, props in enumerate(merged_results):
                 print(f"--- 路径 {i+1} 合并属性 ---")
                 #print(json.dumps(props, ensure_ascii=False, indent=4))
+
+
+def testcase3():
+    result = select_one("BUSINESS_ORDER_DETAIL")
+    print(json.dumps(result, ensure_ascii=False, indent=4))
+
+
+def testcase4():
+    """
+    测试更新节点属性的功能
+    """
+    # 定义要匹配的节点标签
+    clazz = "MAT_ARR_DET"
+    # 定义用于定位节点的属性条件
+    match_props = {"matArrDetMatArrSettlementSupplierId": "8a36a61f7b474051a4eda710460c2303"}
+    # 定义需要更新的属性及其新值
+    update_props = {"matArrDetActMaterialId": "AUDITED"}
+    # 调用更新函数
+    result = update_node_properties(clazz, match_props, update_props)
+    # 打印更新结果，使用JSON格式化输出，确保中文字符正常显示
+    print(json.dumps(result, ensure_ascii=False, indent=4))
+
+
+def update_node_with_random_value_by_property(clazz: str, property_name: str, random_type: str, **kwargs):
+    """
+    根据节点标签和属性名查找节点，并为该属性赋予指定的随机类型值
+    :param clazz: 节点标签
+    :param property_name: 需要更新的属性名
+    :param random_type: 随机值类型 (e.g., "string", "name", "number", "material", "company_name", "sequential_code")
+    :param kwargs: 传递给随机值生成函数的可选参数 (e.g., length=10, prefix="AB")
+    """
+    # 使用配置的URI、用户名和密码创建Neo4j数据库驱动实例
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    # 创建一个数据库会话，使用'with'确保会话在使用后自动关闭
+    with driver.session() as session:
+        # 构建Cypher查询，查找所有具有指定标签的节点
+        query_find = f"MATCH (n:`{clazz}`) RETURN n"
+        # 执行查找查询
+        nodes_to_update = session.run(query_find)
+        
+        # 初始化一个列表，用于存储更新后的节点数据
+        updated_nodes_data = []
+        # 遍历查询结果中的每个节点
+        for record in nodes_to_update:
+            # 获取节点对象
+            node = record['n']
+            
+            # 根据 random_type 选择不同的随机值生成方法
+            new_value = None
+            if random_type == "string":
+                # 如果随机类型是 "string"，调用 generate_random_string 函数
+                new_value = generate_random_string(**kwargs)
+            elif random_type == "name":
+                # 如果随机类型是 "name"，调用 generate_random_name 函数
+                new_value = generate_random_name()
+            elif random_type == "number":
+                # 如果随机类型是 "number"，调用 generate_random_number 函数
+                new_value = generate_random_number(**kwargs)
+            elif random_type == "material":
+                # 如果随机类型是 "material"，调用 generate_random_material 函数
+                new_value = generate_random_material()
+            elif random_type == "company_name":
+                # 如果随机类型是 "company_name"，调用 generate_random_company_name 函数
+                new_value = generate_random_company_name()
+            elif random_type == "datetime":
+                # 如果随机类型是 "datetime"，调用 generate_random_datetime 函数
+                new_value = generate_random_datetime(**kwargs)
+            elif random_type == "sequential_code":
+                # 如果随机类型是 "sequential_code"，调用 generate_sequential_code 函数
+                new_value = generate_sequential_code(**kwargs)
+            else:
+                # 如果 random_type 无效，则跳过当前节点的更新
+                continue
+
+            # 构建更新查询，使用节点ID来精确定位并设置新属性值
+            query_update = f"""
+            MATCH (n)
+            WHERE elementId(n) = $node_id
+            SET n.{property_name} = $new_value
+            RETURN n
+            """
+            # 执行更新查询，并传递节点ID和新值作为参数
+            result = session.run(query_update, node_id=node.element_id, new_value=new_value)
+            # 获取更新后的节点记录
+            updated_node_record = result.single()
+            # 如果成功更新，则将更新后的节点属性字典添加到列表中
+            if updated_node_record:
+                updated_nodes_data.append(dict(updated_node_record['n']))
+        
+        # 返回包含所有更新后节点数据的字典
+        return {"updated_nodes": updated_nodes_data}
+
+
+def run_update_node_property_task(clazz: str, property_to_update: str, random_type: str, **kwargs):
+    """
+    封装节点属性更新任务，调用底层函数并打印结果
+    :param clazz: 节点标签
+    :param property_to_update: 需要更新的属性名
+    :param random_type: 随机值类型
+    :param kwargs: 传递给随机值生成函数的可选参数
+    """
+    # 打印将要执行的任务信息
+    print(f"执行更新任务: 节点='{clazz}', 属性='{property_to_update}', 类型='{random_type}', 参数={kwargs}")
+    # 调用核心函数执行更新
+    result = update_node_with_random_value_by_property(clazz, property_to_update, random_type, **kwargs)
+    # 打印操作结果
+    print(json.dumps(result, ensure_ascii=False, indent=4))
+
+
+def testcase5():
+    """
+    测试为节点属性赋予随机值的功能（使用封装函数）
+    """
+    # 定义要操作的节点标签
+    clazz = "PROCUREMENT_ORDER_DETAIL"
+    # 定义要更新的属性名
+    property_to_update = "procOrderDetProcOrderUserCode"
+    
+    # 使用新封装的函数来执行更新任务
+    # 示例1: 生成10位随机字符串
+    run_update_node_property_task(clazz, property_to_update, "string", length=10)
+    
+    # 示例2: 生成两位随机数 (取消注释即可运行)
+    # run_update_node_property_task(clazz, "procOrderDetProcOrderQuantity", "number", digits=2)
+    
+    # 示例3: 生成指定前缀的序列号 (取消注释即可运行)
+    # run_update_node_property_task(clazz, property_to_update, "sequential_code", prefix="PO")
+    
+    # 示例4: 生成指定范围的随机日期 (取消注释即可运行)
+    # run_update_node_property_task(clazz, "procOrderDetRequiredDate", "datetime", start_date_str="2026-03-01 00:00:00", end_date_str="2026-03-31 23:59:59")
+
+    run_update_node_property_task("")
+
+
+
+def testcase6():
+    """
+    测试新添加的随机数据生成函数
+    """
+    # 生成并打印一个随机姓名
+    random_name = generate_random_name()
+    print(f"随机姓名: {random_name}")
+
+    # 生成并打印一个10位的随机数字
+    random_number = generate_random_number(10)
+    print(f"10位随机数字: {random_number}")
+
+    # 生成并打印一个随机物料
+    random_material = generate_random_material()
+    print(f"随机物料: {random_material}")
+
+    # 生成并打印一个随机公司名
+    random_company_name = generate_random_company_name()
+    print(f"随机公司名: {random_company_name}")
+
+    # 生成并打印连续的编码号
+    print("--- 生成连续编码 ---")
+    print(f"第1个XY编码: {generate_sequential_code('XY')}")
+    print(f"第2个XY编码: {generate_sequential_code('XY')}")
+    print(f"第1个AB编码: {generate_sequential_code('AB')}")
+    print(f"第3个XY编码: {generate_sequential_code('XY')}")
+
+    # 生成并打印随机日期时间
+    print("--- 生成随机日期时间 ---")
+    print(f"默认范围内的随机时间: {generate_random_datetime()}")
+    start = "2026-02-01 00:00:00"
+    end = "2026-02-28 23:59:59"
+    print(f"指定范围 ({start} 到 {end}) 内的随机时间: {generate_random_datetime(start, end)}")
+
+
+if __name__ == "__main__":
+    testcase5()
+
+
+
 

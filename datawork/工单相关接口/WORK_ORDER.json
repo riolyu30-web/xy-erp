@@ -1,0 +1,404 @@
+{
+      "api_name": "/work-order/findList",
+      "table_name": "工单表",
+      "request": {
+        "workOrderClazz": "WORK_ORDER"
+      },
+      "mainTabClazz": "WORK_ORDER",
+      "response": {
+        "workOrderActualTimeRequired": {
+          "meaning": "工单表实际需时(小时)"
+        },
+        "workOrderAdjustmentTimeRequired": {
+          "meaning": "工单表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "workOrderApplicationId": {
+          "meaning": "工单表应用ID"
+        },
+        "workOrderAuditDate": {
+          "meaning": "工单表审核时间"
+        },
+        "workOrderAuditStatus": {
+          "meaning": "工单表审核状态"
+        },
+        "workOrderAvailableScheduleId": {
+          "meaning": "工单表可用日程id"
+        },
+        "workOrderBeginTime": {
+          "meaning": "工单表开始时间"
+        },
+        "workOrderBizVersion": {
+          "meaning": "工单表业务自定义版本号"
+        },
+        "workOrderBoardArea": {
+          "meaning": "工单表纸板面积"
+        },
+        "workOrderBriefName": {
+          "meaning": "工单表简称"
+        },
+        "workOrderBusDivisId": {
+          "meaning": "工单表事业部id"
+        },
+        "workOrderCartonArea": {
+          "meaning": "工单表纸箱面积"
+        },
+        "workOrderCategory": {
+          "meaning": "工单表分类"
+        },
+        "workOrderClazz": {
+          "meaning": "工单表子类 类名（表和类一一对应）"
+        },
+        "workOrderClosedReason": {
+          "meaning": "工单表结案原因"
+        },
+        "workOrderClosedStatus": {
+          "meaning": "工单表结案状态"
+        },
+        "workOrderComment": {
+          "meaning": "工单表评论"
+        },
+        "workOrderCompanyBelonging": {
+          "meaning": "工单表公司归属"
+        },
+        "workOrderCompleteQuantity": {
+          "meaning": "工单表完成数量"
+        },
+        "workOrderCompleteStatus": {
+          "meaning": "工单表完成状态"
+        },
+        "workOrderCorrugatedPaperName": {
+          "meaning": "工单表纸质"
+        },
+        "workOrderCreateTime": {
+          "meaning": "工单表创建时间"
+        },
+        "workOrderCreator": {
+          "meaning": "工单表创建人"
+        },
+        "workOrderCreatorId": {
+          "meaning": "工单表创建人ID"
+        },
+        "workOrderDateExtra1": {
+          "meaning": "工单表扩展时间1"
+        },
+        "workOrderDateExtra2": {
+          "meaning": "工单表扩展时间2"
+        },
+        "workOrderDateExtra3": {
+          "meaning": "工单表扩展时间3"
+        },
+        "workOrderDateExtra4": {
+          "meaning": "工单表扩展时间4"
+        },
+        "workOrderDateExtra5": {
+          "meaning": "工单表扩展时间5"
+        },
+        "workOrderDefaultType": {
+          "meaning": "工单表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "workOrderDeliveryDate": {
+          "meaning": "工单表交货日期"
+        },
+        "workOrderDemoCode": {
+          "meaning": "工单表木样编码"
+        },
+        "workOrderDemoHandle": {
+          "meaning": "工单表木样处理"
+        },
+        "workOrderDescription": {
+          "meaning": "工单表描述"
+        },
+        "workOrderEndTime": {
+          "meaning": "工单表结束时间"
+        },
+        "workOrderEndTimeRequired": {
+          "meaning": "工单表最后需时(小时)"
+        },
+        "workOrderEngName": {
+          "meaning": "工单表英文名称"
+        },
+        "workOrderEquipmentId": {
+          "meaning": "工单表设备id"
+        },
+        "workOrderExchangeRateId": {
+          "meaning": "工单表币种汇率id"
+        },
+        "workOrderExtendNumber": {
+          "meaning": "工单表拓展单号(瓦楞单号)"
+        },
+        "workOrderExtension": {
+          "meaning": "工单表扩展数据"
+        },
+        "workOrderExternalState": {
+          "meaning": "工单表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "workOrderFilmHandle": {
+          "meaning": "工单表菲林处理"
+        },
+        "workOrderFilterClazz": {
+          "meaning": "工单表冗余字段用于筛选"
+        },
+        "workOrderFlags": {
+          "meaning": "工单表63位标志位"
+        },
+        "workOrderFromAuditDate": {
+          "meaning": "workOrderFromAuditDate"
+        },
+        "workOrderFromBeginTime": {
+          "meaning": "workOrderFromBeginTime"
+        },
+        "workOrderFromCreateTime": {
+          "meaning": "workOrderFromCreateTime"
+        },
+        "workOrderFromDateExtra1": {
+          "meaning": "workOrderFromDateExtra1"
+        },
+        "workOrderFromDateExtra2": {
+          "meaning": "workOrderFromDateExtra2"
+        },
+        "workOrderFromDateExtra3": {
+          "meaning": "workOrderFromDateExtra3"
+        },
+        "workOrderFromDateExtra4": {
+          "meaning": "workOrderFromDateExtra4"
+        },
+        "workOrderFromDateExtra5": {
+          "meaning": "workOrderFromDateExtra5"
+        },
+        "workOrderFromDeliveryDate": {
+          "meaning": "workOrderFromDeliveryDate"
+        },
+        "workOrderFromEndTime": {
+          "meaning": "workOrderFromEndTime"
+        },
+        "workOrderFromReceiptDate": {
+          "meaning": "workOrderFromReceiptDate"
+        },
+        "workOrderFromUpdateTime": {
+          "meaning": "workOrderFromUpdateTime"
+        },
+        "workOrderFscType": {
+          "meaning": "工单表FSC声明"
+        },
+        "workOrderGenerativePeople": {
+          "meaning": "工单表下发人"
+        },
+        "workOrderGenerativeState": {
+          "meaning": "工单表下发状态"
+        },
+        "workOrderGroovyScript": {
+          "meaning": "工单表groovy脚本"
+        },
+        "workOrderGropeCode": {
+          "meaning": "工单表搜索码"
+        },
+        "workOrderId": {
+          "meaning": "工单表主键ID",
+          "is_primary": true
+        },
+        "workOrderInUsed": {
+          "meaning": "工单表是否被使用"
+        },
+        "workOrderInvTypeTaxRateId": {
+          "meaning": "工单表发票税率id"
+        },
+        "workOrderIsBanned": {
+          "meaning": "工单表是否被禁用"
+        },
+        "workOrderIsDeleted": {
+          "meaning": "工单表是否被删除"
+        },
+        "workOrderIsLeaf": {
+          "meaning": "工单表是否叶子节点"
+        },
+        "workOrderIsMainFlow": {
+          "meaning": "工单表是否是主流程"
+        },
+        "workOrderIsManualModificationDate": {
+          "meaning": "工单表是否手动修改计划生产时间"
+        },
+        "workOrderIsolation": {
+          "meaning": "工单表智能节点数据隔离标识"
+        },
+        "workOrderJit": {
+          "meaning": "工单表jit"
+        },
+        "workOrderJsScript": {
+          "meaning": "工单表js脚本"
+        },
+        "workOrderMaterialId": {
+          "meaning": "工单表物料id"
+        },
+        "workOrderName": {
+          "meaning": "工单表智能节点名"
+        },
+        "workOrderNameCodeSearch": {
+          "meaning": "工单表name、user_code模糊搜索"
+        },
+        "workOrderNumberExtra1": {
+          "meaning": "工单表扩展数量1"
+        },
+        "workOrderNumberExtra2": {
+          "meaning": "工单表扩展数量2"
+        },
+        "workOrderNumberExtra3": {
+          "meaning": "工单表扩展数量3"
+        },
+        "workOrderNumberExtra4": {
+          "meaning": "工单表扩展数量4"
+        },
+        "workOrderNumberExtra5": {
+          "meaning": "工单表扩展数量5"
+        },
+        "workOrderParentId": {
+          "meaning": "工单表父节点ID"
+        },
+        "workOrderPlannedOutputQuantity": {
+          "meaning": "工单表计划产出数量"
+        },
+        "workOrderPlannedTimeRequired": {
+          "meaning": "工单表计划需时(小时)"
+        },
+        "workOrderPrintTimes": {
+          "meaning": "工单表打印次数"
+        },
+        "workOrderPriority": {
+          "meaning": "工单表优先级"
+        },
+        "workOrderProcessInstanceId": {
+          "meaning": "工单表流程实例ID"
+        },
+        "workOrderProductionProcessesTypeId": {
+          "meaning": "工单表工序类型ID"
+        },
+        "workOrderProductionShiftId": {
+          "meaning": "工单表生产班次ID"
+        },
+        "workOrderQuantity": {
+          "meaning": "工单表任务数量"
+        },
+        "workOrderReceiptDate": {
+          "meaning": "工单表单据日期"
+        },
+        "workOrderReceiptType": {
+          "meaning": "工单表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "workOrderRelatedTasksId": {
+          "meaning": "工单表关联任务id"
+        },
+        "workOrderSchedulingStatus": {
+          "meaning": "工单表排程状态"
+        },
+        "workOrderSerialNumber": {
+          "meaning": "工单表顺序号"
+        },
+        "workOrderSource": {
+          "meaning": "工单表源"
+        },
+        "workOrderSourceType": {
+          "meaning": "工单表来源类型"
+        },
+        "workOrderState": {
+          "meaning": "工单表通用状态"
+        },
+        "workOrderStatus": {
+          "meaning": "工单表工单状态"
+        },
+        "workOrderSystemCode": {
+          "meaning": "工单表系统编码"
+        },
+        "workOrderTarget": {
+          "meaning": "工单表目标"
+        },
+        "workOrderTaskNodeName": {
+          "meaning": "工单表任务节点名称"
+        },
+        "workOrderTenantId": {
+          "meaning": "工单表租户_id"
+        },
+        "workOrderThirdPartyClass": {
+          "meaning": "工单表第三方分类"
+        },
+        "workOrderThirdPartyId": {
+          "meaning": "工单表第三方系统中的唯一ID"
+        },
+        "workOrderThirdPartyName": {
+          "meaning": "工单表第三方名称"
+        },
+        "workOrderToAuditDate": {
+          "meaning": "workOrderToAuditDate"
+        },
+        "workOrderToBeginTime": {
+          "meaning": "workOrderToBeginTime"
+        },
+        "workOrderToCreateTime": {
+          "meaning": "workOrderToCreateTime"
+        },
+        "workOrderToDateExtra1": {
+          "meaning": "workOrderToDateExtra1"
+        },
+        "workOrderToDateExtra2": {
+          "meaning": "workOrderToDateExtra2"
+        },
+        "workOrderToDateExtra3": {
+          "meaning": "workOrderToDateExtra3"
+        },
+        "workOrderToDateExtra4": {
+          "meaning": "workOrderToDateExtra4"
+        },
+        "workOrderToDateExtra5": {
+          "meaning": "workOrderToDateExtra5"
+        },
+        "workOrderToDeliveryDate": {
+          "meaning": "workOrderToDeliveryDate"
+        },
+        "workOrderToEndTime": {
+          "meaning": "workOrderToEndTime"
+        },
+        "workOrderToReceiptDate": {
+          "meaning": "workOrderToReceiptDate"
+        },
+        "workOrderToUpdateTime": {
+          "meaning": "workOrderToUpdateTime"
+        },
+        "workOrderType": {
+          "meaning": "工单表工单类型"
+        },
+        "workOrderUnitCode": {
+          "meaning": "工单表单位id"
+        },
+        "workOrderUpdateTime": {
+          "meaning": "工单表更新时间"
+        },
+        "workOrderUpdater": {
+          "meaning": "工单表更新人"
+        },
+        "workOrderUpdaterId": {
+          "meaning": "工单表更新人ID"
+        },
+        "workOrderUserCode": {
+          "meaning": "工单表智能节点的唯一编码"
+        },
+        "workOrderVarExtra1": {
+          "meaning": "工单表扩展1"
+        },
+        "workOrderVarExtra2": {
+          "meaning": "工单表扩展2"
+        },
+        "workOrderVarExtra3": {
+          "meaning": "工单表扩展3"
+        },
+        "workOrderVarExtra4": {
+          "meaning": "工单表扩展4"
+        },
+        "workOrderVarExtra5": {
+          "meaning": "工单表扩展5"
+        },
+        "workOrderVersion": {
+          "meaning": "工单表版本号"
+        },
+        "workOrderVersionNumber": {
+          "meaning": "工单表版本号"
+        }
+      }
+    }

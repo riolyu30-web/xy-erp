@@ -1,0 +1,416 @@
+{
+  "api_name" : "/inv-check-proof-det/findList",
+  "table_name" : "盘点明细表",
+  "request" : {
+    "invCheckProofDetClazz" : "INVENTORY_CHECK_PROOF_DET"
+  },
+  "mainTabClazz" : "INVENTORY_CHECK_PROOF_DET",
+  "response" : {
+    "invCheckProofDetActualTimeRequired" : {
+      "meaning" : "盘点明细表实际需时(小时)"
+    },
+    "invCheckProofDetAdjustmentTimeRequired" : {
+      "meaning" : "盘点明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckProofDetAmountExcTax" : {
+      "meaning" : "盘点明细表盘点不含税金额（盘点数量*不含税单价）"
+    },
+    "invCheckProofDetAmountIncTax" : {
+      "meaning" : "盘点明细表盘点含税金额（盘点数量*含税单价）"
+    },
+    "invCheckProofDetApplicationId" : {
+      "meaning" : "盘点明细表应用ID"
+    },
+    "invCheckProofDetAuditDate" : {
+      "meaning" : "盘点明细表审核时间"
+    },
+    "invCheckProofDetAuditStatus" : {
+      "meaning" : "盘点明细表审核状态"
+    },
+    "invCheckProofDetAvailableScheduleId" : {
+      "meaning" : "盘点明细表可用日程id"
+    },
+    "invCheckProofDetBeginTime" : {
+      "meaning" : "盘点明细表开始时间"
+    },
+    "invCheckProofDetBizOrderId" : {
+      "meaning" : "盘点明细表订单id"
+    },
+    "invCheckProofDetBizVersion" : {
+      "meaning" : "盘点明细表业务自定义版本号"
+    },
+    "invCheckProofDetBriefName" : {
+      "meaning" : "盘点明细表简称"
+    },
+    "invCheckProofDetBusDivisId" : {
+      "meaning" : "盘点明细表事业部id"
+    },
+    "invCheckProofDetClazz" : {
+      "meaning" : "盘点明细表子类 类名（表和类一一对应）"
+    },
+    "invCheckProofDetClosedReason" : {
+      "meaning" : "盘点明细表结案原因"
+    },
+    "invCheckProofDetClosedStatus" : {
+      "meaning" : "盘点明细表结案状态"
+    },
+    "invCheckProofDetComment" : {
+      "meaning" : "盘点明细表评论"
+    },
+    "invCheckProofDetCompleteQuantity" : {
+      "meaning" : "盘点明细表完成数量"
+    },
+    "invCheckProofDetCompleteStatus" : {
+      "meaning" : "盘点明细表完成状态"
+    },
+    "invCheckProofDetCreateTime" : {
+      "meaning" : "盘点明细表创建时间"
+    },
+    "invCheckProofDetCreator" : {
+      "meaning" : "盘点明细表创建人"
+    },
+    "invCheckProofDetCreatorId" : {
+      "meaning" : "盘点明细表创建人ID"
+    },
+    "invCheckProofDetDateExtra1" : {
+      "meaning" : "盘点明细表扩展时间1"
+    },
+    "invCheckProofDetDateExtra2" : {
+      "meaning" : "盘点明细表扩展时间2"
+    },
+    "invCheckProofDetDateExtra3" : {
+      "meaning" : "盘点明细表扩展时间3"
+    },
+    "invCheckProofDetDateExtra4" : {
+      "meaning" : "盘点明细表扩展时间4"
+    },
+    "invCheckProofDetDateExtra5" : {
+      "meaning" : "盘点明细表扩展时间5"
+    },
+    "invCheckProofDetDefaultType" : {
+      "meaning" : "盘点明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckProofDetDeliveryDate" : {
+      "meaning" : "盘点明细表交货日期"
+    },
+    "invCheckProofDetDescription" : {
+      "meaning" : "盘点明细表描述"
+    },
+    "invCheckProofDetEndTime" : {
+      "meaning" : "盘点明细表结束时间"
+    },
+    "invCheckProofDetEndTimeRequired" : {
+      "meaning" : "盘点明细表最后需时(小时)"
+    },
+    "invCheckProofDetEngName" : {
+      "meaning" : "盘点明细表英文名称"
+    },
+    "invCheckProofDetEquipmentId" : {
+      "meaning" : "盘点明细表设备id"
+    },
+    "invCheckProofDetExchangeRateId" : {
+      "meaning" : "盘点明细表币种汇率id"
+    },
+    "invCheckProofDetExtension" : {
+      "meaning" : "盘点明细表扩展数据"
+    },
+    "invCheckProofDetExternalState" : {
+      "meaning" : "盘点明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckProofDetFilterClazz" : {
+      "meaning" : "盘点明细表冗余字段用于筛选"
+    },
+    "invCheckProofDetFlags" : {
+      "meaning" : "盘点明细表63位标志位"
+    },
+    "invCheckProofDetFromAuditDate" : {
+      "meaning" : "invCheckProofDetFromAuditDate"
+    },
+    "invCheckProofDetFromBeginTime" : {
+      "meaning" : "invCheckProofDetFromBeginTime"
+    },
+    "invCheckProofDetFromCreateTime" : {
+      "meaning" : "invCheckProofDetFromCreateTime"
+    },
+    "invCheckProofDetFromDateExtra1" : {
+      "meaning" : "invCheckProofDetFromDateExtra1"
+    },
+    "invCheckProofDetFromDateExtra2" : {
+      "meaning" : "invCheckProofDetFromDateExtra2"
+    },
+    "invCheckProofDetFromDateExtra3" : {
+      "meaning" : "invCheckProofDetFromDateExtra3"
+    },
+    "invCheckProofDetFromDateExtra4" : {
+      "meaning" : "invCheckProofDetFromDateExtra4"
+    },
+    "invCheckProofDetFromDateExtra5" : {
+      "meaning" : "invCheckProofDetFromDateExtra5"
+    },
+    "invCheckProofDetFromDeliveryDate" : {
+      "meaning" : "invCheckProofDetFromDeliveryDate"
+    },
+    "invCheckProofDetFromEndTime" : {
+      "meaning" : "invCheckProofDetFromEndTime"
+    },
+    "invCheckProofDetFromReceiptDate" : {
+      "meaning" : "invCheckProofDetFromReceiptDate"
+    },
+    "invCheckProofDetFromUpdateTime" : {
+      "meaning" : "invCheckProofDetFromUpdateTime"
+    },
+    "invCheckProofDetFscType" : {
+      "meaning" : "盘点明细表FSC声明"
+    },
+    "invCheckProofDetGenerativePeople" : {
+      "meaning" : "盘点明细表下发人"
+    },
+    "invCheckProofDetGenerativeState" : {
+      "meaning" : "盘点明细表下发状态"
+    },
+    "invCheckProofDetGoodsId" : {
+      "meaning" : "盘点明细表货（包）id"
+    },
+    "invCheckProofDetGroovyScript" : {
+      "meaning" : "盘点明细表groovy脚本"
+    },
+    "invCheckProofDetGropeCode" : {
+      "meaning" : "盘点明细表搜索码"
+    },
+    "invCheckProofDetId" : {
+      "meaning" : "盘点明细表主键ID",
+      "is_primary" : true
+    },
+    "invCheckProofDetInUsed" : {
+      "meaning" : "盘点明细表是否被使用"
+    },
+    "invCheckProofDetInvTypeTaxRateId" : {
+      "meaning" : "盘点明细表发票税率id"
+    },
+    "invCheckProofDetInventoryQuantity" : {
+      "meaning" : "盘点明细表库存数量"
+    },
+    "invCheckProofDetIsBanned" : {
+      "meaning" : "盘点明细表是否被禁用"
+    },
+    "invCheckProofDetIsDeleted" : {
+      "meaning" : "盘点明细表是否被删除"
+    },
+    "invCheckProofDetIsLeaf" : {
+      "meaning" : "盘点明细表是否叶子节点"
+    },
+    "invCheckProofDetIsMainFlow" : {
+      "meaning" : "盘点明细表是否是主流程"
+    },
+    "invCheckProofDetIsManualModificationDate" : {
+      "meaning" : "盘点明细表是否手动修改计划生产时间"
+    },
+    "invCheckProofDetIsolation" : {
+      "meaning" : "盘点明细表智能节点数据隔离标识"
+    },
+    "invCheckProofDetJsScript" : {
+      "meaning" : "盘点明细表js脚本"
+    },
+    "invCheckProofDetMatBatchId" : {
+      "meaning" : "盘点明细表物料批次id"
+    },
+    "invCheckProofDetMaterialId" : {
+      "meaning" : "盘点明细表物料id"
+    },
+    "invCheckProofDetName" : {
+      "meaning" : "盘点明细表智能节点名"
+    },
+    "invCheckProofDetNameCodeSearch" : {
+      "meaning" : "盘点明细表name、user_code模糊搜索"
+    },
+    "invCheckProofDetNumberExtra1" : {
+      "meaning" : "盘点明细表扩展数量1"
+    },
+    "invCheckProofDetNumberExtra2" : {
+      "meaning" : "盘点明细表扩展数量2"
+    },
+    "invCheckProofDetNumberExtra3" : {
+      "meaning" : "盘点明细表扩展数量3"
+    },
+    "invCheckProofDetNumberExtra4" : {
+      "meaning" : "盘点明细表扩展数量4"
+    },
+    "invCheckProofDetNumberExtra5" : {
+      "meaning" : "盘点明细表扩展数量5"
+    },
+    "invCheckProofDetParentId" : {
+      "meaning" : "盘点明细表父节点ID"
+    },
+    "invCheckProofDetPlannedOutputQuantity" : {
+      "meaning" : "盘点明细表计划产出数量"
+    },
+    "invCheckProofDetPlannedTimeRequired" : {
+      "meaning" : "盘点明细表计划需时(小时)"
+    },
+    "invCheckProofDetPrintTimes" : {
+      "meaning" : "盘点明细表打印次数"
+    },
+    "invCheckProofDetPriority" : {
+      "meaning" : "盘点明细表优先级"
+    },
+    "invCheckProofDetProcessInstanceId" : {
+      "meaning" : "盘点明细表流程实例ID"
+    },
+    "invCheckProofDetProductionProcessesTypeId" : {
+      "meaning" : "盘点明细表工序类型ID"
+    },
+    "invCheckProofDetProductionShiftId" : {
+      "meaning" : "盘点明细表生产班次ID"
+    },
+    "invCheckProofDetQuantity" : {
+      "meaning" : "盘点明细表任务数量"
+    },
+    "invCheckProofDetQuantityShortage" : {
+      "meaning" : "盘点明细表盘亏数量"
+    },
+    "invCheckProofDetQuantitySurplus" : {
+      "meaning" : "盘点明细表盘盈数量"
+    },
+    "invCheckProofDetReceiptDate" : {
+      "meaning" : "盘点明细表单据日期"
+    },
+    "invCheckProofDetReceiptType" : {
+      "meaning" : "盘点明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckProofDetRelatedTasksId" : {
+      "meaning" : "盘点明细表关联任务id"
+    },
+    "invCheckProofDetSerialNumber" : {
+      "meaning" : "盘点明细表顺序号"
+    },
+    "invCheckProofDetShortageNumber" : {
+      "meaning" : "盘点明细表盘亏调整单号"
+    },
+    "invCheckProofDetShortageSituation" : {
+      "meaning" : "盘点明细表盘亏情况（已开、未开）"
+    },
+    "invCheckProofDetSource" : {
+      "meaning" : "盘点明细表源"
+    },
+    "invCheckProofDetSourceType" : {
+      "meaning" : "盘点明细表来源类型"
+    },
+    "invCheckProofDetState" : {
+      "meaning" : "盘点明细表通用状态"
+    },
+    "invCheckProofDetSurplusNumber" : {
+      "meaning" : "盘点明细表盘盈调整单号"
+    },
+    "invCheckProofDetSurplusSituation" : {
+      "meaning" : "盘点明细表盘盈情况（已开、未开）"
+    },
+    "invCheckProofDetSystemCode" : {
+      "meaning" : "盘点明细表系统编码"
+    },
+    "invCheckProofDetTarget" : {
+      "meaning" : "盘点明细表目标"
+    },
+    "invCheckProofDetTaskNodeName" : {
+      "meaning" : "盘点明细表任务节点名称"
+    },
+    "invCheckProofDetTaskNodeType" : {
+      "meaning" : "盘点明细表任务节点类型"
+    },
+    "invCheckProofDetTenantId" : {
+      "meaning" : "盘点明细表租户id"
+    },
+    "invCheckProofDetThirdPartyClass" : {
+      "meaning" : "盘点明细表第三方分类"
+    },
+    "invCheckProofDetThirdPartyId" : {
+      "meaning" : "盘点明细表第三方系统中的唯一ID"
+    },
+    "invCheckProofDetThirdPartyName" : {
+      "meaning" : "盘点明细表第三方名称"
+    },
+    "invCheckProofDetToAuditDate" : {
+      "meaning" : "invCheckProofDetToAuditDate"
+    },
+    "invCheckProofDetToBeginTime" : {
+      "meaning" : "invCheckProofDetToBeginTime"
+    },
+    "invCheckProofDetToCreateTime" : {
+      "meaning" : "invCheckProofDetToCreateTime"
+    },
+    "invCheckProofDetToDateExtra1" : {
+      "meaning" : "invCheckProofDetToDateExtra1"
+    },
+    "invCheckProofDetToDateExtra2" : {
+      "meaning" : "invCheckProofDetToDateExtra2"
+    },
+    "invCheckProofDetToDateExtra3" : {
+      "meaning" : "invCheckProofDetToDateExtra3"
+    },
+    "invCheckProofDetToDateExtra4" : {
+      "meaning" : "invCheckProofDetToDateExtra4"
+    },
+    "invCheckProofDetToDateExtra5" : {
+      "meaning" : "invCheckProofDetToDateExtra5"
+    },
+    "invCheckProofDetToDeliveryDate" : {
+      "meaning" : "invCheckProofDetToDeliveryDate"
+    },
+    "invCheckProofDetToEndTime" : {
+      "meaning" : "invCheckProofDetToEndTime"
+    },
+    "invCheckProofDetToReceiptDate" : {
+      "meaning" : "invCheckProofDetToReceiptDate"
+    },
+    "invCheckProofDetToUpdateTime" : {
+      "meaning" : "invCheckProofDetToUpdateTime"
+    },
+    "invCheckProofDetUnitCode" : {
+      "meaning" : "盘点明细表单位id"
+    },
+    "invCheckProofDetUnitPriceExcTax" : {
+      "meaning" : "盘点明细表不含税单价"
+    },
+    "invCheckProofDetUnitPriceIncTax" : {
+      "meaning" : "盘点明细表含税单价"
+    },
+    "invCheckProofDetUpdateTime" : {
+      "meaning" : "盘点明细表更新时间"
+    },
+    "invCheckProofDetUpdater" : {
+      "meaning" : "盘点明细表更新人"
+    },
+    "invCheckProofDetUpdaterId" : {
+      "meaning" : "盘点明细表更新人ID"
+    },
+    "invCheckProofDetUserCode" : {
+      "meaning" : "盘点明细表智能节点的唯一编码"
+    },
+    "invCheckProofDetVarExtra1" : {
+      "meaning" : "盘点明细表扩展1"
+    },
+    "invCheckProofDetVarExtra2" : {
+      "meaning" : "盘点明细表扩展2"
+    },
+    "invCheckProofDetVarExtra3" : {
+      "meaning" : "盘点明细表扩展3"
+    },
+    "invCheckProofDetVarExtra4" : {
+      "meaning" : "盘点明细表扩展4"
+    },
+    "invCheckProofDetVarExtra5" : {
+      "meaning" : "盘点明细表扩展5"
+    },
+    "invCheckProofDetVersion" : {
+      "meaning" : "盘点明细表版本号"
+    },
+    "invCheckProofDetWarehousePosition" : {
+      "meaning" : "盘点明细表仓位"
+    },
+    "invCheckProofDetWarehouseSpaceId" : {
+      "meaning" : "盘点明细表仓空间id"
+    },
+    "invCheckProofDetWorkOrderId" : {
+      "meaning" : "盘点明细表工单id"
+    }
+  }
+}

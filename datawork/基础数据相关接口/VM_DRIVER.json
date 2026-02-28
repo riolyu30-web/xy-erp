@@ -1,0 +1,507 @@
+{
+      "api_name": "/vm-driver/findList",
+      "table_name": "车辆司机/搬运工",
+      "request": {
+        "vmDriverVmClazz": "VM",
+        "vmDriverClazz": "VM_DRIVER"
+      },
+      "mainTabClazz": "VM_DRIVER",
+      "response": {
+        "vmDriverApplicationId": {
+          "meaning": "车辆司机/搬运工应用ID"
+        },
+        "vmDriverAuditDate": {
+          "meaning": "车辆司机/搬运工审核时间"
+        },
+        "vmDriverAuditStatus": {
+          "meaning": "车辆司机/搬运工审核状态"
+        },
+        "vmDriverBizVersion": {
+          "meaning": "车辆司机/搬运工业务自定义版本号"
+        },
+        "vmDriverBriefName": {
+          "meaning": "车辆司机/搬运工简称"
+        },
+        "vmDriverBusDivisId": {
+          "meaning": "车辆司机/搬运工事业部id"
+        },
+        "vmDriverClazz": {
+          "meaning": "车辆司机/搬运工子类 类名（表和类一一对应）"
+        },
+        "vmDriverComment": {
+          "meaning": "车辆司机/搬运工评论"
+        },
+        "vmDriverCreateTime": {
+          "meaning": "车辆司机/搬运工创建时间"
+        },
+        "vmDriverCreator": {
+          "meaning": "车辆司机/搬运工创建人"
+        },
+        "vmDriverCreatorId": {
+          "meaning": "车辆司机/搬运工创建人ID"
+        },
+        "vmDriverDateExtra1": {
+          "meaning": "车辆司机/搬运工扩展时间1"
+        },
+        "vmDriverDateExtra2": {
+          "meaning": "车辆司机/搬运工扩展时间2"
+        },
+        "vmDriverDateExtra3": {
+          "meaning": "车辆司机/搬运工扩展时间3"
+        },
+        "vmDriverDateExtra4": {
+          "meaning": "车辆司机/搬运工扩展时间4"
+        },
+        "vmDriverDateExtra5": {
+          "meaning": "车辆司机/搬运工扩展时间5"
+        },
+        "vmDriverDefaultType": {
+          "meaning": "车辆司机/搬运工智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "vmDriverDescription": {
+          "meaning": "车辆司机/搬运工描述"
+        },
+        "vmDriverDuty": {
+          "meaning": "车辆司机/搬运工职责（1司机，2搬运工）"
+        },
+        "vmDriverEngName": {
+          "meaning": "车辆司机/搬运工英文名称"
+        },
+        "vmDriverExtension": {
+          "meaning": "车辆司机/搬运工扩展数据"
+        },
+        "vmDriverExternalState": {
+          "meaning": "车辆司机/搬运工上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "vmDriverFlags": {
+          "meaning": "车辆司机/搬运工63位标志位"
+        },
+        "vmDriverFromAuditDate": {
+          "meaning": "vmDriverFromAuditDate"
+        },
+        "vmDriverFromCreateTime": {
+          "meaning": "vmDriverFromCreateTime"
+        },
+        "vmDriverFromDateExtra1": {
+          "meaning": "vmDriverFromDateExtra1"
+        },
+        "vmDriverFromDateExtra2": {
+          "meaning": "vmDriverFromDateExtra2"
+        },
+        "vmDriverFromDateExtra3": {
+          "meaning": "vmDriverFromDateExtra3"
+        },
+        "vmDriverFromDateExtra4": {
+          "meaning": "vmDriverFromDateExtra4"
+        },
+        "vmDriverFromDateExtra5": {
+          "meaning": "vmDriverFromDateExtra5"
+        },
+        "vmDriverFromUpdateTime": {
+          "meaning": "vmDriverFromUpdateTime"
+        },
+        "vmDriverGroovyScript": {
+          "meaning": "车辆司机/搬运工groovy脚本"
+        },
+        "vmDriverGropeCode": {
+          "meaning": "车辆司机/搬运工搜索码"
+        },
+        "vmDriverId": {
+          "meaning": "车辆司机/搬运工id",
+          "is_primary": true
+        },
+        "vmDriverInUsed": {
+          "meaning": "车辆司机/搬运工是否被使用"
+        },
+        "vmDriverIsBanned": {
+          "meaning": "车辆司机/搬运工是否被禁用"
+        },
+        "vmDriverIsDefault": {
+          "meaning": "车辆司机/搬运工是否默认"
+        },
+        "vmDriverIsDeleted": {
+          "meaning": "车辆司机/搬运工是否被删除"
+        },
+        "vmDriverIsMainFlow": {
+          "meaning": "车辆司机/搬运工是否是主流程"
+        },
+        "vmDriverIsolation": {
+          "meaning": "车辆司机/搬运工智能节点数据隔离标识"
+        },
+        "vmDriverJsScript": {
+          "meaning": "车辆司机/搬运工js脚本"
+        },
+        "vmDriverName": {
+          "meaning": "车辆司机/搬运工智能节点名"
+        },
+        "vmDriverNameCodeSearch": {
+          "meaning": "车辆司机/搬运工name、user_code模糊搜索"
+        },
+        "vmDriverNumberExtra1": {
+          "meaning": "车辆司机/搬运工扩展数量1"
+        },
+        "vmDriverNumberExtra2": {
+          "meaning": "车辆司机/搬运工扩展数量2"
+        },
+        "vmDriverNumberExtra3": {
+          "meaning": "车辆司机/搬运工扩展数量3"
+        },
+        "vmDriverNumberExtra4": {
+          "meaning": "车辆司机/搬运工扩展数量4"
+        },
+        "vmDriverNumberExtra5": {
+          "meaning": "车辆司机/搬运工扩展数量5"
+        },
+        "vmDriverParentId": {
+          "meaning": "车辆司机/搬运工父节点ID"
+        },
+        "vmDriverProcessInstanceId": {
+          "meaning": "车辆司机/搬运工流程实例ID"
+        },
+        "vmDriverSerialNumber": {
+          "meaning": "车辆司机/搬运工顺序号"
+        },
+        "vmDriverStaffGuid": {
+          "meaning": "车辆司机/搬运工员工id"
+        },
+        "vmDriverState": {
+          "meaning": "车辆司机/搬运工通用状态"
+        },
+        "vmDriverSystemCode": {
+          "meaning": "车辆司机/搬运工系统编码"
+        },
+        "vmDriverTaskNodeName": {
+          "meaning": "车辆司机/搬运工任务节点名称"
+        },
+        "vmDriverThirdPartyClass": {
+          "meaning": "车辆司机/搬运工第三方分类"
+        },
+        "vmDriverThirdPartyId": {
+          "meaning": "车辆司机/搬运工第三方系统中的唯一ID"
+        },
+        "vmDriverThirdPartyName": {
+          "meaning": "车辆司机/搬运工第三方名称"
+        },
+        "vmDriverToAuditDate": {
+          "meaning": "vmDriverToAuditDate"
+        },
+        "vmDriverToCreateTime": {
+          "meaning": "vmDriverToCreateTime"
+        },
+        "vmDriverToDateExtra1": {
+          "meaning": "vmDriverToDateExtra1"
+        },
+        "vmDriverToDateExtra2": {
+          "meaning": "vmDriverToDateExtra2"
+        },
+        "vmDriverToDateExtra3": {
+          "meaning": "vmDriverToDateExtra3"
+        },
+        "vmDriverToDateExtra4": {
+          "meaning": "vmDriverToDateExtra4"
+        },
+        "vmDriverToDateExtra5": {
+          "meaning": "vmDriverToDateExtra5"
+        },
+        "vmDriverToUpdateTime": {
+          "meaning": "vmDriverToUpdateTime"
+        },
+        "vmDriverUpdateTime": {
+          "meaning": "车辆司机/搬运工更新时间"
+        },
+        "vmDriverUpdater": {
+          "meaning": "车辆司机/搬运工更新人"
+        },
+        "vmDriverUpdaterId": {
+          "meaning": "车辆司机/搬运工更新人ID"
+        },
+        "vmDriverUserCode": {
+          "meaning": "车辆司机/搬运工智能节点的唯一编码"
+        },
+        "vmDriverVarExtra1": {
+          "meaning": "车辆司机/搬运工扩展1"
+        },
+        "vmDriverVarExtra2": {
+          "meaning": "车辆司机/搬运工扩展2"
+        },
+        "vmDriverVarExtra3": {
+          "meaning": "车辆司机/搬运工扩展3"
+        },
+        "vmDriverVarExtra4": {
+          "meaning": "车辆司机/搬运工扩展4"
+        },
+        "vmDriverVarExtra5": {
+          "meaning": "车辆司机/搬运工扩展5"
+        },
+        "vmDriverVersion": {
+          "meaning": "车辆司机/搬运工版本号"
+        },
+        "vmDriverVmApplicationId": {
+          "meaning": "车辆司机/搬运工应用ID"
+        },
+        "vmDriverVmApprovedLoad": {
+          "meaning": "车辆司机/搬运工核定载重(吨)"
+        },
+        "vmDriverVmApprovedVolume": {
+          "meaning": "车辆司机/搬运工核定体积（立方米）"
+        },
+        "vmDriverVmAuditDate": {
+          "meaning": "车辆司机/搬运工审核时间"
+        },
+        "vmDriverVmAuditStatus": {
+          "meaning": "车辆司机/搬运工审核状态"
+        },
+        "vmDriverVmBizVersion": {
+          "meaning": "车辆司机/搬运工业务自定义版本号"
+        },
+        "vmDriverVmBrand": {
+          "meaning": "车辆司机/搬运工品牌"
+        },
+        "vmDriverVmBriefName": {
+          "meaning": "车辆司机/搬运工简称"
+        },
+        "vmDriverVmBusDivisId": {
+          "meaning": "车辆司机/搬运工事业部id"
+        },
+        "vmDriverVmClazz": {
+          "meaning": "车辆司机/搬运工子类 类名（表和类一一对应）"
+        },
+        "vmDriverVmComment": {
+          "meaning": "车辆司机/搬运工评论"
+        },
+        "vmDriverVmConditionLevel": {
+          "meaning": "车辆司机/搬运工新旧程度"
+        },
+        "vmDriverVmCreateTime": {
+          "meaning": "车辆司机/搬运工创建时间"
+        },
+        "vmDriverVmCreator": {
+          "meaning": "车辆司机/搬运工创建人"
+        },
+        "vmDriverVmCreatorId": {
+          "meaning": "车辆司机/搬运工创建人ID"
+        },
+        "vmDriverVmDateExtra1": {
+          "meaning": "车辆司机/搬运工扩展时间1"
+        },
+        "vmDriverVmDateExtra2": {
+          "meaning": "车辆司机/搬运工扩展时间2"
+        },
+        "vmDriverVmDateExtra3": {
+          "meaning": "车辆司机/搬运工扩展时间3"
+        },
+        "vmDriverVmDateExtra4": {
+          "meaning": "车辆司机/搬运工扩展时间4"
+        },
+        "vmDriverVmDateExtra5": {
+          "meaning": "车辆司机/搬运工扩展时间5"
+        },
+        "vmDriverVmDefaultType": {
+          "meaning": "车辆司机/搬运工智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "vmDriverVmDescription": {
+          "meaning": "车辆司机/搬运工描述"
+        },
+        "vmDriverVmEngName": {
+          "meaning": "车辆司机/搬运工英文名称"
+        },
+        "vmDriverVmEngineNo": {
+          "meaning": "车辆司机/搬运工发动机号"
+        },
+        "vmDriverVmExtension": {
+          "meaning": "车辆司机/搬运工扩展数据"
+        },
+        "vmDriverVmExternalState": {
+          "meaning": "车辆司机/搬运工上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "vmDriverVmFlags": {
+          "meaning": "车辆司机/搬运工63位标志位"
+        },
+        "vmDriverVmFromAuditDate": {
+          "meaning": "vmDriverVmFromAuditDate"
+        },
+        "vmDriverVmFromCreateTime": {
+          "meaning": "vmDriverVmFromCreateTime"
+        },
+        "vmDriverVmFromDateExtra1": {
+          "meaning": "vmDriverVmFromDateExtra1"
+        },
+        "vmDriverVmFromDateExtra2": {
+          "meaning": "vmDriverVmFromDateExtra2"
+        },
+        "vmDriverVmFromDateExtra3": {
+          "meaning": "vmDriverVmFromDateExtra3"
+        },
+        "vmDriverVmFromDateExtra4": {
+          "meaning": "vmDriverVmFromDateExtra4"
+        },
+        "vmDriverVmFromDateExtra5": {
+          "meaning": "vmDriverVmFromDateExtra5"
+        },
+        "vmDriverVmFromUpdateTime": {
+          "meaning": "vmDriverVmFromUpdateTime"
+        },
+        "vmDriverVmGroovyScript": {
+          "meaning": "车辆司机/搬运工groovy脚本"
+        },
+        "vmDriverVmGropeCode": {
+          "meaning": "车辆司机/搬运工搜索码"
+        },
+        "vmDriverVmId": {
+          "meaning": "车辆司机/搬运工车辆id"
+        },
+        "vmDriverVmInUsed": {
+          "meaning": "车辆司机/搬运工是否被使用"
+        },
+        "vmDriverVmIsBanned": {
+          "meaning": "车辆司机/搬运工是否被禁用"
+        },
+        "vmDriverVmIsDeleted": {
+          "meaning": "车辆司机/搬运工是否被删除"
+        },
+        "vmDriverVmIsMainFlow": {
+          "meaning": "车辆司机/搬运工是否是主流程"
+        },
+        "vmDriverVmIsUsed": {
+          "meaning": "车辆司机/搬运工已被使用(0未使用，1已使用)"
+        },
+        "vmDriverVmIsolation": {
+          "meaning": "车辆司机/搬运工智能节点数据隔离标识"
+        },
+        "vmDriverVmJsScript": {
+          "meaning": "车辆司机/搬运工js脚本"
+        },
+        "vmDriverVmMileageUnitPrice": {
+          "meaning": "车辆司机/搬运工里程单价"
+        },
+        "vmDriverVmModel": {
+          "meaning": "车辆司机/搬运工型号"
+        },
+        "vmDriverVmName": {
+          "meaning": "车辆司机/搬运工智能节点名"
+        },
+        "vmDriverVmNameCodeSearch": {
+          "meaning": "车辆司机/搬运工name、user_code模糊搜索"
+        },
+        "vmDriverVmNumberExtra1": {
+          "meaning": "车辆司机/搬运工扩展数量1"
+        },
+        "vmDriverVmNumberExtra2": {
+          "meaning": "车辆司机/搬运工扩展数量2"
+        },
+        "vmDriverVmNumberExtra3": {
+          "meaning": "车辆司机/搬运工扩展数量3"
+        },
+        "vmDriverVmNumberExtra4": {
+          "meaning": "车辆司机/搬运工扩展数量4"
+        },
+        "vmDriverVmNumberExtra5": {
+          "meaning": "车辆司机/搬运工扩展数量5"
+        },
+        "vmDriverVmParentId": {
+          "meaning": "车辆司机/搬运工父节点ID"
+        },
+        "vmDriverVmPlateNo": {
+          "meaning": "车辆司机/搬运工车牌号码"
+        },
+        "vmDriverVmProcessInstanceId": {
+          "meaning": "车辆司机/搬运工流程实例ID"
+        },
+        "vmDriverVmRepairStatus": {
+          "meaning": "车辆司机/搬运工维修状态"
+        },
+        "vmDriverVmSerialNumber": {
+          "meaning": "车辆司机/搬运工顺序号"
+        },
+        "vmDriverVmStartingExpenses": {
+          "meaning": "车辆司机/搬运工起步费用"
+        },
+        "vmDriverVmState": {
+          "meaning": "车辆司机/搬运工通用状态"
+        },
+        "vmDriverVmSystemCode": {
+          "meaning": "车辆司机/搬运工系统编码"
+        },
+        "vmDriverVmTaskNodeName": {
+          "meaning": "车辆司机/搬运工任务节点名称"
+        },
+        "vmDriverVmThirdPartyClass": {
+          "meaning": "车辆司机/搬运工第三方分类"
+        },
+        "vmDriverVmThirdPartyId": {
+          "meaning": "车辆司机/搬运工第三方系统中的唯一ID"
+        },
+        "vmDriverVmThirdPartyName": {
+          "meaning": "车辆司机/搬运工第三方名称"
+        },
+        "vmDriverVmToAuditDate": {
+          "meaning": "vmDriverVmToAuditDate"
+        },
+        "vmDriverVmToCreateTime": {
+          "meaning": "vmDriverVmToCreateTime"
+        },
+        "vmDriverVmToDateExtra1": {
+          "meaning": "vmDriverVmToDateExtra1"
+        },
+        "vmDriverVmToDateExtra2": {
+          "meaning": "vmDriverVmToDateExtra2"
+        },
+        "vmDriverVmToDateExtra3": {
+          "meaning": "vmDriverVmToDateExtra3"
+        },
+        "vmDriverVmToDateExtra4": {
+          "meaning": "vmDriverVmToDateExtra4"
+        },
+        "vmDriverVmToDateExtra5": {
+          "meaning": "vmDriverVmToDateExtra5"
+        },
+        "vmDriverVmToUpdateTime": {
+          "meaning": "vmDriverVmToUpdateTime"
+        },
+        "vmDriverVmUpdateTime": {
+          "meaning": "车辆司机/搬运工更新时间"
+        },
+        "vmDriverVmUpdater": {
+          "meaning": "车辆司机/搬运工更新人"
+        },
+        "vmDriverVmUpdaterId": {
+          "meaning": "车辆司机/搬运工更新人ID"
+        },
+        "vmDriverVmUserCode": {
+          "meaning": "车辆司机/搬运工智能节点的唯一编码"
+        },
+        "vmDriverVmVarExtra1": {
+          "meaning": "车辆司机/搬运工扩展1"
+        },
+        "vmDriverVmVarExtra2": {
+          "meaning": "车辆司机/搬运工扩展2"
+        },
+        "vmDriverVmVarExtra3": {
+          "meaning": "车辆司机/搬运工扩展3"
+        },
+        "vmDriverVmVarExtra4": {
+          "meaning": "车辆司机/搬运工扩展4"
+        },
+        "vmDriverVmVarExtra5": {
+          "meaning": "车辆司机/搬运工扩展5"
+        },
+        "vmDriverVmVehicleColor": {
+          "meaning": "车辆司机/搬运工车辆颜色"
+        },
+        "vmDriverVmVehicleHeight": {
+          "meaning": "车辆司机/搬运工车高(米)"
+        },
+        "vmDriverVmVehicleLength": {
+          "meaning": "车辆司机/搬运工车长(米)"
+        },
+        "vmDriverVmVehicleWidth": {
+          "meaning": "车辆司机/搬运工车宽(米)"
+        },
+        "vmDriverVmVersion": {
+          "meaning": "车辆司机/搬运工版本号"
+        },
+        "vmDriverVmVin": {
+          "meaning": "车辆司机/搬运工车架号"
+        }
+      }
+    }

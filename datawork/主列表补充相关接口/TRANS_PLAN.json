@@ -1,0 +1,374 @@
+{
+  "api_name" : "/trans-plan/findList",
+  "table_name" : "厂车运输计划",
+  "request" : {
+    "transPlanClazz" : "TRANS_PLAN"
+  },
+  "mainTabClazz" : "TRANS_PLAN",
+  "response" : {
+    "transPlanActualTimeRequired" : {
+      "meaning" : "厂车运输计划实际需时(小时)"
+    },
+    "transPlanAdjustmentTimeRequired" : {
+      "meaning" : "厂车运输计划调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "transPlanApplicationId" : {
+      "meaning" : "厂车运输计划应用ID"
+    },
+    "transPlanAuditDate" : {
+      "meaning" : "厂车运输计划审核时间"
+    },
+    "transPlanAuditStatus" : {
+      "meaning" : "厂车运输计划审核状态"
+    },
+    "transPlanAvailableScheduleId" : {
+      "meaning" : "厂车运输计划可用日程id"
+    },
+    "transPlanBeginTime" : {
+      "meaning" : "厂车运输计划开始时间"
+    },
+    "transPlanBizVersion" : {
+      "meaning" : "厂车运输计划业务自定义版本号"
+    },
+    "transPlanBriefName" : {
+      "meaning" : "厂车运输计划简称"
+    },
+    "transPlanBusDivisId" : {
+      "meaning" : "厂车运输计划事业部id"
+    },
+    "transPlanClazz" : {
+      "meaning" : "厂车运输计划子类 类名（表和类一一对应）"
+    },
+    "transPlanClosedReason" : {
+      "meaning" : "厂车运输计划结案原因"
+    },
+    "transPlanClosedStatus" : {
+      "meaning" : "厂车运输计划结案状态"
+    },
+    "transPlanComment" : {
+      "meaning" : "厂车运输计划评论"
+    },
+    "transPlanCompleteQuantity" : {
+      "meaning" : "厂车运输计划完成数量"
+    },
+    "transPlanCompleteStatus" : {
+      "meaning" : "厂车运输计划完成状态"
+    },
+    "transPlanCreateTime" : {
+      "meaning" : "厂车运输计划创建时间"
+    },
+    "transPlanCreator" : {
+      "meaning" : "厂车运输计划创建人"
+    },
+    "transPlanCreatorId" : {
+      "meaning" : "厂车运输计划创建人ID"
+    },
+    "transPlanDateExtra1" : {
+      "meaning" : "厂车运输计划扩展时间1"
+    },
+    "transPlanDateExtra2" : {
+      "meaning" : "厂车运输计划扩展时间2"
+    },
+    "transPlanDateExtra3" : {
+      "meaning" : "厂车运输计划扩展时间3"
+    },
+    "transPlanDateExtra4" : {
+      "meaning" : "厂车运输计划扩展时间4"
+    },
+    "transPlanDateExtra5" : {
+      "meaning" : "厂车运输计划扩展时间5"
+    },
+    "transPlanDefaultType" : {
+      "meaning" : "厂车运输计划智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "transPlanDeliveryDate" : {
+      "meaning" : "厂车运输计划交货日期"
+    },
+    "transPlanDescription" : {
+      "meaning" : "厂车运输计划描述"
+    },
+    "transPlanDetDTOS" : {
+      "items" : {
+        "type" : "object"
+      },
+      "meaning" : "transPlanDetDTOS"
+    },
+    "transPlanEndTime" : {
+      "meaning" : "厂车运输计划结束时间"
+    },
+    "transPlanEndTimeRequired" : {
+      "meaning" : "厂车运输计划最后需时(小时)"
+    },
+    "transPlanEngName" : {
+      "meaning" : "厂车运输计划英文名称"
+    },
+    "transPlanEquipmentId" : {
+      "meaning" : "厂车运输计划设备id"
+    },
+    "transPlanExchangeRateId" : {
+      "meaning" : "厂车运输计划币种汇率id"
+    },
+    "transPlanExtension" : {
+      "meaning" : "厂车运输计划扩展数据"
+    },
+    "transPlanExternalState" : {
+      "meaning" : "厂车运输计划上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "transPlanFilterClazz" : {
+      "meaning" : "厂车运输计划冗余字段用于筛选"
+    },
+    "transPlanFlags" : {
+      "meaning" : "厂车运输计划63位标志位"
+    },
+    "transPlanFromAuditDate" : {
+      "meaning" : "transPlanFromAuditDate"
+    },
+    "transPlanFromBeginTime" : {
+      "meaning" : "transPlanFromBeginTime"
+    },
+    "transPlanFromCreateTime" : {
+      "meaning" : "transPlanFromCreateTime"
+    },
+    "transPlanFromDateExtra1" : {
+      "meaning" : "transPlanFromDateExtra1"
+    },
+    "transPlanFromDateExtra2" : {
+      "meaning" : "transPlanFromDateExtra2"
+    },
+    "transPlanFromDateExtra3" : {
+      "meaning" : "transPlanFromDateExtra3"
+    },
+    "transPlanFromDateExtra4" : {
+      "meaning" : "transPlanFromDateExtra4"
+    },
+    "transPlanFromDateExtra5" : {
+      "meaning" : "transPlanFromDateExtra5"
+    },
+    "transPlanFromDeliveryDate" : {
+      "meaning" : "transPlanFromDeliveryDate"
+    },
+    "transPlanFromEndTime" : {
+      "meaning" : "transPlanFromEndTime"
+    },
+    "transPlanFromReceiptDate" : {
+      "meaning" : "transPlanFromReceiptDate"
+    },
+    "transPlanFromUpdateTime" : {
+      "meaning" : "transPlanFromUpdateTime"
+    },
+    "transPlanFscType" : {
+      "meaning" : "厂车运输计划FSC声明"
+    },
+    "transPlanGenerativePeople" : {
+      "meaning" : "厂车运输计划下发人"
+    },
+    "transPlanGenerativeState" : {
+      "meaning" : "厂车运输计划下发状态"
+    },
+    "transPlanGroovyScript" : {
+      "meaning" : "厂车运输计划groovy脚本"
+    },
+    "transPlanGropeCode" : {
+      "meaning" : "厂车运输计划搜索码"
+    },
+    "transPlanId" : {
+      "meaning" : "厂车运输计划PK",
+      "is_primary" : true
+    },
+    "transPlanInUsed" : {
+      "meaning" : "厂车运输计划是否被使用"
+    },
+    "transPlanInvTypeTaxRateId" : {
+      "meaning" : "厂车运输计划发票税率id"
+    },
+    "transPlanIsBanned" : {
+      "meaning" : "厂车运输计划是否被禁用"
+    },
+    "transPlanIsDeleted" : {
+      "meaning" : "厂车运输计划是否被删除"
+    },
+    "transPlanIsLeaf" : {
+      "meaning" : "厂车运输计划是否叶子节点"
+    },
+    "transPlanIsMainFlow" : {
+      "meaning" : "厂车运输计划是否是主流程"
+    },
+    "transPlanIsManualModificationDate" : {
+      "meaning" : "厂车运输计划是否手动修改计划生产时间"
+    },
+    "transPlanIsolation" : {
+      "meaning" : "厂车运输计划智能节点数据隔离标识"
+    },
+    "transPlanJsScript" : {
+      "meaning" : "厂车运输计划js脚本"
+    },
+    "transPlanMaterialId" : {
+      "meaning" : "厂车运输计划物料id"
+    },
+    "transPlanName" : {
+      "meaning" : "厂车运输计划智能节点名"
+    },
+    "transPlanNameCodeSearch" : {
+      "meaning" : "厂车运输计划name、user_code模糊搜索"
+    },
+    "transPlanNumberExtra1" : {
+      "meaning" : "厂车运输计划扩展数量1"
+    },
+    "transPlanNumberExtra2" : {
+      "meaning" : "厂车运输计划扩展数量2"
+    },
+    "transPlanNumberExtra3" : {
+      "meaning" : "厂车运输计划扩展数量3"
+    },
+    "transPlanNumberExtra4" : {
+      "meaning" : "厂车运输计划扩展数量4"
+    },
+    "transPlanNumberExtra5" : {
+      "meaning" : "厂车运输计划扩展数量5"
+    },
+    "transPlanParentId" : {
+      "meaning" : "厂车运输计划父节点ID"
+    },
+    "transPlanPlannedOutputQuantity" : {
+      "meaning" : "厂车运输计划计划产出数量"
+    },
+    "transPlanPlannedTimeRequired" : {
+      "meaning" : "厂车运输计划计划需时(小时)"
+    },
+    "transPlanPrintTimes" : {
+      "meaning" : "厂车运输计划打印次数"
+    },
+    "transPlanPriority" : {
+      "meaning" : "厂车运输计划优先级"
+    },
+    "transPlanProcessInstanceId" : {
+      "meaning" : "厂车运输计划流程实例ID"
+    },
+    "transPlanProductionProcessesTypeId" : {
+      "meaning" : "厂车运输计划工序类型ID"
+    },
+    "transPlanProductionShiftId" : {
+      "meaning" : "厂车运输计划生产班次ID"
+    },
+    "transPlanQuantity" : {
+      "meaning" : "厂车运输计划任务数量"
+    },
+    "transPlanReceiptDate" : {
+      "meaning" : "厂车运输计划单据日期"
+    },
+    "transPlanReceiptType" : {
+      "meaning" : "厂车运输计划单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "transPlanRelatedTasksId" : {
+      "meaning" : "厂车运输计划关联任务id"
+    },
+    "transPlanSerialNumber" : {
+      "meaning" : "厂车运输计划顺序号"
+    },
+    "transPlanSource" : {
+      "meaning" : "厂车运输计划源"
+    },
+    "transPlanSourceType" : {
+      "meaning" : "厂车运输计划来源类型"
+    },
+    "transPlanState" : {
+      "meaning" : "厂车运输计划通用状态"
+    },
+    "transPlanSystemCode" : {
+      "meaning" : "厂车运输计划系统编码"
+    },
+    "transPlanTarget" : {
+      "meaning" : "厂车运输计划目标"
+    },
+    "transPlanTaskNodeName" : {
+      "meaning" : "厂车运输计划任务节点名称"
+    },
+    "transPlanTenantId" : {
+      "meaning" : "厂车运输计划租户_id"
+    },
+    "transPlanThirdPartyClass" : {
+      "meaning" : "厂车运输计划第三方分类"
+    },
+    "transPlanThirdPartyId" : {
+      "meaning" : "厂车运输计划第三方系统中的唯一ID"
+    },
+    "transPlanThirdPartyName" : {
+      "meaning" : "厂车运输计划第三方名称"
+    },
+    "transPlanToAuditDate" : {
+      "meaning" : "transPlanToAuditDate"
+    },
+    "transPlanToBeginTime" : {
+      "meaning" : "transPlanToBeginTime"
+    },
+    "transPlanToCreateTime" : {
+      "meaning" : "transPlanToCreateTime"
+    },
+    "transPlanToDateExtra1" : {
+      "meaning" : "transPlanToDateExtra1"
+    },
+    "transPlanToDateExtra2" : {
+      "meaning" : "transPlanToDateExtra2"
+    },
+    "transPlanToDateExtra3" : {
+      "meaning" : "transPlanToDateExtra3"
+    },
+    "transPlanToDateExtra4" : {
+      "meaning" : "transPlanToDateExtra4"
+    },
+    "transPlanToDateExtra5" : {
+      "meaning" : "transPlanToDateExtra5"
+    },
+    "transPlanToDeliveryDate" : {
+      "meaning" : "transPlanToDeliveryDate"
+    },
+    "transPlanToEndTime" : {
+      "meaning" : "transPlanToEndTime"
+    },
+    "transPlanToReceiptDate" : {
+      "meaning" : "transPlanToReceiptDate"
+    },
+    "transPlanToUpdateTime" : {
+      "meaning" : "transPlanToUpdateTime"
+    },
+    "transPlanUnitCode" : {
+      "meaning" : "厂车运输计划单位id"
+    },
+    "transPlanUpdateTime" : {
+      "meaning" : "厂车运输计划更新时间"
+    },
+    "transPlanUpdater" : {
+      "meaning" : "厂车运输计划更新人"
+    },
+    "transPlanUpdaterId" : {
+      "meaning" : "厂车运输计划更新人ID"
+    },
+    "transPlanUserCode" : {
+      "meaning" : "厂车运输计划智能节点的唯一编码"
+    },
+    "transPlanVarExtra1" : {
+      "meaning" : "厂车运输计划扩展1"
+    },
+    "transPlanVarExtra2" : {
+      "meaning" : "厂车运输计划扩展2"
+    },
+    "transPlanVarExtra3" : {
+      "meaning" : "厂车运输计划扩展3"
+    },
+    "transPlanVarExtra4" : {
+      "meaning" : "厂车运输计划扩展4"
+    },
+    "transPlanVarExtra5" : {
+      "meaning" : "厂车运输计划扩展5"
+    },
+    "transPlanVehicleBatch" : {
+      "meaning" : "厂车运输计划车次"
+    },
+    "transPlanVehicleId" : {
+      "meaning" : "厂车运输计划车辆id(厂车、商务时需要选择)"
+    },
+    "transPlanVersion" : {
+      "meaning" : "厂车运输计划版本号"
+    }
+  }
+}

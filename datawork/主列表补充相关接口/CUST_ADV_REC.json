@@ -1,0 +1,392 @@
+{
+  "api_name" : "/cust-adv-rec/findList",
+  "table_name" : "客户预收款",
+  "request" : {
+    "custAdvRecClazz" : "CUST_ADV_REC"
+  },
+  "mainTabClazz" : "CUST_ADV_REC",
+  "response" : {
+    "custAdvRecAcctHolderName" : {
+      "meaning" : "客户预收款账号持有人"
+    },
+    "custAdvRecActualTimeRequired" : {
+      "meaning" : "客户预收款实际需时(小时)"
+    },
+    "custAdvRecAdjustmentTimeRequired" : {
+      "meaning" : "客户预收款调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "custAdvRecApplicationId" : {
+      "meaning" : "客户预收款应用ID"
+    },
+    "custAdvRecAuditDate" : {
+      "meaning" : "客户预收款审核时间"
+    },
+    "custAdvRecAuditStatus" : {
+      "meaning" : "客户预收款审核状态"
+    },
+    "custAdvRecAvailableScheduleId" : {
+      "meaning" : "客户预收款可用日程id"
+    },
+    "custAdvRecBankAcctNum" : {
+      "meaning" : "客户预收款银行账号"
+    },
+    "custAdvRecBankBranchInfo" : {
+      "meaning" : "客户预收款开户支行信息"
+    },
+    "custAdvRecBankName" : {
+      "meaning" : "客户预收款银行名称"
+    },
+    "custAdvRecBeginTime" : {
+      "meaning" : "客户预收款开始时间"
+    },
+    "custAdvRecBizVersion" : {
+      "meaning" : "客户预收款业务自定义版本号"
+    },
+    "custAdvRecBriefName" : {
+      "meaning" : "客户预收款简称"
+    },
+    "custAdvRecBusDivisId" : {
+      "meaning" : "客户预收款事业部id"
+    },
+    "custAdvRecClazz" : {
+      "meaning" : "客户预收款子类 类名（表和类一一对应）"
+    },
+    "custAdvRecClosedReason" : {
+      "meaning" : "客户预收款结案原因"
+    },
+    "custAdvRecClosedStatus" : {
+      "meaning" : "客户预收款结案状态"
+    },
+    "custAdvRecComment" : {
+      "meaning" : "客户预收款评论"
+    },
+    "custAdvRecCompleteQuantity" : {
+      "meaning" : "客户预收款完成数量"
+    },
+    "custAdvRecCompleteStatus" : {
+      "meaning" : "客户预收款完成状态"
+    },
+    "custAdvRecCreateTime" : {
+      "meaning" : "客户预收款创建时间"
+    },
+    "custAdvRecCreator" : {
+      "meaning" : "客户预收款创建人"
+    },
+    "custAdvRecCreatorId" : {
+      "meaning" : "客户预收款创建人ID"
+    },
+    "custAdvRecCurrency" : {
+      "meaning" : "客户预收款币种"
+    },
+    "custAdvRecCustomerId" : {
+      "meaning" : "客户预收款客户ID"
+    },
+    "custAdvRecDateExtra1" : {
+      "meaning" : "客户预收款扩展时间1"
+    },
+    "custAdvRecDateExtra2" : {
+      "meaning" : "客户预收款扩展时间2"
+    },
+    "custAdvRecDateExtra3" : {
+      "meaning" : "客户预收款扩展时间3"
+    },
+    "custAdvRecDateExtra4" : {
+      "meaning" : "客户预收款扩展时间4"
+    },
+    "custAdvRecDateExtra5" : {
+      "meaning" : "客户预收款扩展时间5"
+    },
+    "custAdvRecDefaultType" : {
+      "meaning" : "客户预收款智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "custAdvRecDeliveryDate" : {
+      "meaning" : "客户预收款交货日期"
+    },
+    "custAdvRecDescription" : {
+      "meaning" : "客户预收款描述"
+    },
+    "custAdvRecEndTime" : {
+      "meaning" : "客户预收款结束时间"
+    },
+    "custAdvRecEndTimeRequired" : {
+      "meaning" : "客户预收款最后需时(小时)"
+    },
+    "custAdvRecEngName" : {
+      "meaning" : "客户预收款英文名称"
+    },
+    "custAdvRecEquipmentId" : {
+      "meaning" : "客户预收款设备id"
+    },
+    "custAdvRecExchangeRateId" : {
+      "meaning" : "客户预收款币种汇率id"
+    },
+    "custAdvRecExtension" : {
+      "meaning" : "客户预收款扩展数据"
+    },
+    "custAdvRecExternalState" : {
+      "meaning" : "客户预收款上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "custAdvRecFilterClazz" : {
+      "meaning" : "客户预收款冗余字段用于筛选"
+    },
+    "custAdvRecFlags" : {
+      "meaning" : "客户预收款63位标志位"
+    },
+    "custAdvRecFromAuditDate" : {
+      "meaning" : "custAdvRecFromAuditDate"
+    },
+    "custAdvRecFromBeginTime" : {
+      "meaning" : "custAdvRecFromBeginTime"
+    },
+    "custAdvRecFromCreateTime" : {
+      "meaning" : "custAdvRecFromCreateTime"
+    },
+    "custAdvRecFromDateExtra1" : {
+      "meaning" : "custAdvRecFromDateExtra1"
+    },
+    "custAdvRecFromDateExtra2" : {
+      "meaning" : "custAdvRecFromDateExtra2"
+    },
+    "custAdvRecFromDateExtra3" : {
+      "meaning" : "custAdvRecFromDateExtra3"
+    },
+    "custAdvRecFromDateExtra4" : {
+      "meaning" : "custAdvRecFromDateExtra4"
+    },
+    "custAdvRecFromDateExtra5" : {
+      "meaning" : "custAdvRecFromDateExtra5"
+    },
+    "custAdvRecFromDeliveryDate" : {
+      "meaning" : "custAdvRecFromDeliveryDate"
+    },
+    "custAdvRecFromEndTime" : {
+      "meaning" : "custAdvRecFromEndTime"
+    },
+    "custAdvRecFromReceiptDate" : {
+      "meaning" : "custAdvRecFromReceiptDate"
+    },
+    "custAdvRecFromUpdateTime" : {
+      "meaning" : "custAdvRecFromUpdateTime"
+    },
+    "custAdvRecFscType" : {
+      "meaning" : "客户预收款FSC声明"
+    },
+    "custAdvRecGenerativePeople" : {
+      "meaning" : "客户预收款下发人"
+    },
+    "custAdvRecGenerativeState" : {
+      "meaning" : "客户预收款下发状态"
+    },
+    "custAdvRecGroovyScript" : {
+      "meaning" : "客户预收款groovy脚本"
+    },
+    "custAdvRecGropeCode" : {
+      "meaning" : "客户预收款搜索码"
+    },
+    "custAdvRecId" : {
+      "meaning" : "客户预收款PK",
+      "is_primary" : true
+    },
+    "custAdvRecInUsed" : {
+      "meaning" : "客户预收款是否被使用"
+    },
+    "custAdvRecInvTypeTaxRateId" : {
+      "meaning" : "客户预收款发票税率id"
+    },
+    "custAdvRecIsBanned" : {
+      "meaning" : "客户预收款是否被禁用"
+    },
+    "custAdvRecIsDeleted" : {
+      "meaning" : "客户预收款是否被删除"
+    },
+    "custAdvRecIsLeaf" : {
+      "meaning" : "客户预收款是否叶子节点"
+    },
+    "custAdvRecIsMainFlow" : {
+      "meaning" : "客户预收款是否是主流程"
+    },
+    "custAdvRecIsManualModificationDate" : {
+      "meaning" : "客户预收款是否手动修改计划生产时间"
+    },
+    "custAdvRecIsolation" : {
+      "meaning" : "客户预收款智能节点数据隔离标识"
+    },
+    "custAdvRecJsScript" : {
+      "meaning" : "客户预收款js脚本"
+    },
+    "custAdvRecLocCompleteQuantity" : {
+      "meaning" : "客户预收款本币完成数量（本币总已转应收/付金额）"
+    },
+    "custAdvRecLocTotalAmount" : {
+      "meaning" : "客户预收款本币总预收/付金额"
+    },
+    "custAdvRecMaterialId" : {
+      "meaning" : "客户预收款物料id"
+    },
+    "custAdvRecName" : {
+      "meaning" : "客户预收款智能节点名"
+    },
+    "custAdvRecNameCodeSearch" : {
+      "meaning" : "客户预收款name、user_code模糊搜索"
+    },
+    "custAdvRecNumberExtra1" : {
+      "meaning" : "客户预收款扩展数量1"
+    },
+    "custAdvRecNumberExtra2" : {
+      "meaning" : "客户预收款扩展数量2"
+    },
+    "custAdvRecNumberExtra3" : {
+      "meaning" : "客户预收款扩展数量3"
+    },
+    "custAdvRecNumberExtra4" : {
+      "meaning" : "客户预收款扩展数量4"
+    },
+    "custAdvRecNumberExtra5" : {
+      "meaning" : "客户预收款扩展数量5"
+    },
+    "custAdvRecParentId" : {
+      "meaning" : "客户预收款父节点ID"
+    },
+    "custAdvRecPlannedOutputQuantity" : {
+      "meaning" : "客户预收款计划产出数量"
+    },
+    "custAdvRecPlannedTimeRequired" : {
+      "meaning" : "客户预收款计划需时(小时)"
+    },
+    "custAdvRecPrintTimes" : {
+      "meaning" : "客户预收款打印次数"
+    },
+    "custAdvRecPriority" : {
+      "meaning" : "客户预收款优先级"
+    },
+    "custAdvRecProcessInstanceId" : {
+      "meaning" : "客户预收款流程实例ID"
+    },
+    "custAdvRecProductionProcessesTypeId" : {
+      "meaning" : "客户预收款工序类型ID"
+    },
+    "custAdvRecProductionShiftId" : {
+      "meaning" : "客户预收款生产班次ID"
+    },
+    "custAdvRecQuantity" : {
+      "meaning" : "客户预收款任务数量"
+    },
+    "custAdvRecReceiptDate" : {
+      "meaning" : "客户预收款单据日期"
+    },
+    "custAdvRecReceiptType" : {
+      "meaning" : "客户预收款单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "custAdvRecRelatedTasksId" : {
+      "meaning" : "客户预收款关联任务id"
+    },
+    "custAdvRecSerialNumber" : {
+      "meaning" : "客户预收款顺序号"
+    },
+    "custAdvRecSource" : {
+      "meaning" : "客户预收款源"
+    },
+    "custAdvRecSourceType" : {
+      "meaning" : "客户预收款来源类型"
+    },
+    "custAdvRecStaffId" : {
+      "meaning" : "客户预收款经手人（员工id）"
+    },
+    "custAdvRecState" : {
+      "meaning" : "客户预收款通用状态"
+    },
+    "custAdvRecSystemCode" : {
+      "meaning" : "客户预收款系统编码"
+    },
+    "custAdvRecTarget" : {
+      "meaning" : "客户预收款目标"
+    },
+    "custAdvRecTaskNodeName" : {
+      "meaning" : "客户预收款任务节点名称"
+    },
+    "custAdvRecTenantId" : {
+      "meaning" : "客户预收款租户ID"
+    },
+    "custAdvRecThirdPartyClass" : {
+      "meaning" : "客户预收款第三方分类"
+    },
+    "custAdvRecThirdPartyId" : {
+      "meaning" : "客户预收款第三方系统中的唯一ID"
+    },
+    "custAdvRecThirdPartyName" : {
+      "meaning" : "客户预收款第三方名称"
+    },
+    "custAdvRecToAuditDate" : {
+      "meaning" : "custAdvRecToAuditDate"
+    },
+    "custAdvRecToBeginTime" : {
+      "meaning" : "custAdvRecToBeginTime"
+    },
+    "custAdvRecToCreateTime" : {
+      "meaning" : "custAdvRecToCreateTime"
+    },
+    "custAdvRecToDateExtra1" : {
+      "meaning" : "custAdvRecToDateExtra1"
+    },
+    "custAdvRecToDateExtra2" : {
+      "meaning" : "custAdvRecToDateExtra2"
+    },
+    "custAdvRecToDateExtra3" : {
+      "meaning" : "custAdvRecToDateExtra3"
+    },
+    "custAdvRecToDateExtra4" : {
+      "meaning" : "custAdvRecToDateExtra4"
+    },
+    "custAdvRecToDateExtra5" : {
+      "meaning" : "custAdvRecToDateExtra5"
+    },
+    "custAdvRecToDeliveryDate" : {
+      "meaning" : "custAdvRecToDeliveryDate"
+    },
+    "custAdvRecToEndTime" : {
+      "meaning" : "custAdvRecToEndTime"
+    },
+    "custAdvRecToReceiptDate" : {
+      "meaning" : "custAdvRecToReceiptDate"
+    },
+    "custAdvRecToUpdateTime" : {
+      "meaning" : "custAdvRecToUpdateTime"
+    },
+    "custAdvRecTotalAmount" : {
+      "meaning" : "客户预收款总预收/付金额"
+    },
+    "custAdvRecUnitCode" : {
+      "meaning" : "客户预收款单位id"
+    },
+    "custAdvRecUpdateTime" : {
+      "meaning" : "客户预收款更新时间"
+    },
+    "custAdvRecUpdater" : {
+      "meaning" : "客户预收款更新人"
+    },
+    "custAdvRecUpdaterId" : {
+      "meaning" : "客户预收款更新人ID"
+    },
+    "custAdvRecUserCode" : {
+      "meaning" : "客户预收款智能节点的唯一编码"
+    },
+    "custAdvRecVarExtra1" : {
+      "meaning" : "客户预收款扩展1"
+    },
+    "custAdvRecVarExtra2" : {
+      "meaning" : "客户预收款扩展2"
+    },
+    "custAdvRecVarExtra3" : {
+      "meaning" : "客户预收款扩展3"
+    },
+    "custAdvRecVarExtra4" : {
+      "meaning" : "客户预收款扩展4"
+    },
+    "custAdvRecVarExtra5" : {
+      "meaning" : "客户预收款扩展5"
+    },
+    "custAdvRecVersion" : {
+      "meaning" : "客户预收款版本号"
+    }
+  }
+}

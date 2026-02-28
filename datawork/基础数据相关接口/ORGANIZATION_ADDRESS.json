@@ -1,0 +1,483 @@
+{
+      "api_name": "/organization-address/findList",
+      "table_name": "机构地址表",
+      "request": {
+        "organizationAddressAreaClazz": "AREA",
+        "organizationAddressClazz": "ORGANIZATION_ADDRESS"
+      },
+      "mainTabClazz": "ORGANIZATION_ADDRESS",
+      "response": {
+        "organizationAddressAddress": {
+          "meaning": "机构地址表详细地址"
+        },
+        "organizationAddressAddressUnion": {
+          "meaning": "organizationAddressAddressUnion"
+        },
+        "organizationAddressAdministrativeAreaId": {
+          "meaning": "机构地址表行政区域_id"
+        },
+        "organizationAddressApplicationId": {
+          "meaning": "机构地址表应用ID"
+        },
+        "organizationAddressAreaApplicationId": {
+          "meaning": "机构地址表应用ID"
+        },
+        "organizationAddressAreaAuditDate": {
+          "meaning": "机构地址表审核时间"
+        },
+        "organizationAddressAreaAuditStatus": {
+          "meaning": "机构地址表审核状态"
+        },
+        "organizationAddressAreaBizVersion": {
+          "meaning": "机构地址表业务自定义版本号"
+        },
+        "organizationAddressAreaBriefName": {
+          "meaning": "机构地址表简称"
+        },
+        "organizationAddressAreaBusDivisId": {
+          "meaning": "机构地址表事业部id"
+        },
+        "organizationAddressAreaClazz": {
+          "meaning": "机构地址表子类 类名（表和类一一对应）"
+        },
+        "organizationAddressAreaComment": {
+          "meaning": "机构地址表评论"
+        },
+        "organizationAddressAreaCreateTime": {
+          "meaning": "机构地址表创建时间"
+        },
+        "organizationAddressAreaCreator": {
+          "meaning": "机构地址表创建人"
+        },
+        "organizationAddressAreaCreatorId": {
+          "meaning": "机构地址表创建人ID"
+        },
+        "organizationAddressAreaDateExtra1": {
+          "meaning": "机构地址表扩展时间1"
+        },
+        "organizationAddressAreaDateExtra2": {
+          "meaning": "机构地址表扩展时间2"
+        },
+        "organizationAddressAreaDateExtra3": {
+          "meaning": "机构地址表扩展时间3"
+        },
+        "organizationAddressAreaDateExtra4": {
+          "meaning": "机构地址表扩展时间4"
+        },
+        "organizationAddressAreaDateExtra5": {
+          "meaning": "机构地址表扩展时间5"
+        },
+        "organizationAddressAreaDefaultType": {
+          "meaning": "机构地址表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "organizationAddressAreaDescription": {
+          "meaning": "机构地址表描述"
+        },
+        "organizationAddressAreaEngName": {
+          "meaning": "机构地址表英文名称"
+        },
+        "organizationAddressAreaExtension": {
+          "meaning": "机构地址表扩展数据"
+        },
+        "organizationAddressAreaExternalState": {
+          "meaning": "机构地址表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "organizationAddressAreaFlags": {
+          "meaning": "机构地址表63位标志位"
+        },
+        "organizationAddressAreaFromAuditDate": {
+          "meaning": "organizationAddressAreaFromAuditDate"
+        },
+        "organizationAddressAreaFromCreateTime": {
+          "meaning": "organizationAddressAreaFromCreateTime"
+        },
+        "organizationAddressAreaFromDateExtra1": {
+          "meaning": "organizationAddressAreaFromDateExtra1"
+        },
+        "organizationAddressAreaFromDateExtra2": {
+          "meaning": "organizationAddressAreaFromDateExtra2"
+        },
+        "organizationAddressAreaFromDateExtra3": {
+          "meaning": "organizationAddressAreaFromDateExtra3"
+        },
+        "organizationAddressAreaFromDateExtra4": {
+          "meaning": "organizationAddressAreaFromDateExtra4"
+        },
+        "organizationAddressAreaFromDateExtra5": {
+          "meaning": "organizationAddressAreaFromDateExtra5"
+        },
+        "organizationAddressAreaFromUpdateTime": {
+          "meaning": "organizationAddressAreaFromUpdateTime"
+        },
+        "organizationAddressAreaGroovyScript": {
+          "meaning": "机构地址表groovy脚本"
+        },
+        "organizationAddressAreaGropeCode": {
+          "meaning": "机构地址表搜索码"
+        },
+        "organizationAddressAreaId": {
+          "meaning": "机构地址表主键ID"
+        },
+        "organizationAddressAreaInUsed": {
+          "meaning": "机构地址表是否被使用"
+        },
+        "organizationAddressAreaIsBanned": {
+          "meaning": "机构地址表是否被禁用"
+        },
+        "organizationAddressAreaIsDeleted": {
+          "meaning": "机构地址表是否被删除"
+        },
+        "organizationAddressAreaIsMainFlow": {
+          "meaning": "机构地址表是否是主流程"
+        },
+        "organizationAddressAreaIsUsed": {
+          "meaning": "机构地址表已被使用(0未使用，1已使用)"
+        },
+        "organizationAddressAreaIsolation": {
+          "meaning": "机构地址表智能节点数据隔离标识"
+        },
+        "organizationAddressAreaJsScript": {
+          "meaning": "机构地址表js脚本"
+        },
+        "organizationAddressAreaLevel": {
+          "meaning": "机构地址表层级"
+        },
+        "organizationAddressAreaName": {
+          "meaning": "机构地址表智能节点名"
+        },
+        "organizationAddressAreaNameCodeSearch": {
+          "meaning": "机构地址表name、user_code模糊搜索"
+        },
+        "organizationAddressAreaNumberExtra1": {
+          "meaning": "机构地址表扩展数量1"
+        },
+        "organizationAddressAreaNumberExtra2": {
+          "meaning": "机构地址表扩展数量2"
+        },
+        "organizationAddressAreaNumberExtra3": {
+          "meaning": "机构地址表扩展数量3"
+        },
+        "organizationAddressAreaNumberExtra4": {
+          "meaning": "机构地址表扩展数量4"
+        },
+        "organizationAddressAreaNumberExtra5": {
+          "meaning": "机构地址表扩展数量5"
+        },
+        "organizationAddressAreaParentId": {
+          "meaning": "机构地址表父节点ID"
+        },
+        "organizationAddressAreaPostCode": {
+          "meaning": "机构地址表邮政编码"
+        },
+        "organizationAddressAreaProcessInstanceId": {
+          "meaning": "机构地址表流程实例ID"
+        },
+        "organizationAddressAreaSerialNumber": {
+          "meaning": "机构地址表顺序号"
+        },
+        "organizationAddressAreaState": {
+          "meaning": "机构地址表通用状态"
+        },
+        "organizationAddressAreaSystemCode": {
+          "meaning": "机构地址表系统编码"
+        },
+        "organizationAddressAreaTaskNodeName": {
+          "meaning": "机构地址表任务节点名称"
+        },
+        "organizationAddressAreaTenantId": {
+          "meaning": "机构地址表租户ID"
+        },
+        "organizationAddressAreaThirdPartyClass": {
+          "meaning": "机构地址表第三方分类"
+        },
+        "organizationAddressAreaThirdPartyId": {
+          "meaning": "机构地址表第三方系统中的唯一ID"
+        },
+        "organizationAddressAreaThirdPartyName": {
+          "meaning": "机构地址表第三方名称"
+        },
+        "organizationAddressAreaToAuditDate": {
+          "meaning": "organizationAddressAreaToAuditDate"
+        },
+        "organizationAddressAreaToCreateTime": {
+          "meaning": "organizationAddressAreaToCreateTime"
+        },
+        "organizationAddressAreaToDateExtra1": {
+          "meaning": "organizationAddressAreaToDateExtra1"
+        },
+        "organizationAddressAreaToDateExtra2": {
+          "meaning": "organizationAddressAreaToDateExtra2"
+        },
+        "organizationAddressAreaToDateExtra3": {
+          "meaning": "organizationAddressAreaToDateExtra3"
+        },
+        "organizationAddressAreaToDateExtra4": {
+          "meaning": "organizationAddressAreaToDateExtra4"
+        },
+        "organizationAddressAreaToDateExtra5": {
+          "meaning": "organizationAddressAreaToDateExtra5"
+        },
+        "organizationAddressAreaToUpdateTime": {
+          "meaning": "organizationAddressAreaToUpdateTime"
+        },
+        "organizationAddressAreaUpdateTime": {
+          "meaning": "机构地址表更新时间"
+        },
+        "organizationAddressAreaUpdater": {
+          "meaning": "机构地址表更新人"
+        },
+        "organizationAddressAreaUpdaterId": {
+          "meaning": "机构地址表更新人ID"
+        },
+        "organizationAddressAreaUserCode": {
+          "meaning": "机构地址表智能节点的唯一编码"
+        },
+        "organizationAddressAreaVarExtra1": {
+          "meaning": "机构地址表扩展1"
+        },
+        "organizationAddressAreaVarExtra2": {
+          "meaning": "机构地址表扩展2"
+        },
+        "organizationAddressAreaVarExtra3": {
+          "meaning": "机构地址表扩展3"
+        },
+        "organizationAddressAreaVarExtra4": {
+          "meaning": "机构地址表扩展4"
+        },
+        "organizationAddressAreaVarExtra5": {
+          "meaning": "机构地址表扩展5"
+        },
+        "organizationAddressAreaVersion": {
+          "meaning": "机构地址表版本号"
+        },
+        "organizationAddressAuditDate": {
+          "meaning": "机构地址表审核时间"
+        },
+        "organizationAddressAuditStatus": {
+          "meaning": "机构地址表审核状态"
+        },
+        "organizationAddressBizVersion": {
+          "meaning": "机构地址表业务自定义版本号"
+        },
+        "organizationAddressBriefName": {
+          "meaning": "机构地址表简称"
+        },
+        "organizationAddressBusDivisId": {
+          "meaning": "机构地址表事业部id"
+        },
+        "organizationAddressClazz": {
+          "meaning": "机构地址表子类 类名（表和类一一对应）"
+        },
+        "organizationAddressComment": {
+          "meaning": "机构地址表评论"
+        },
+        "organizationAddressCreateTime": {
+          "meaning": "机构地址表创建时间"
+        },
+        "organizationAddressCreator": {
+          "meaning": "机构地址表创建人"
+        },
+        "organizationAddressCreatorId": {
+          "meaning": "机构地址表创建人ID"
+        },
+        "organizationAddressDateExtra1": {
+          "meaning": "机构地址表扩展时间1"
+        },
+        "organizationAddressDateExtra2": {
+          "meaning": "机构地址表扩展时间2"
+        },
+        "organizationAddressDateExtra3": {
+          "meaning": "机构地址表扩展时间3"
+        },
+        "organizationAddressDateExtra4": {
+          "meaning": "机构地址表扩展时间4"
+        },
+        "organizationAddressDateExtra5": {
+          "meaning": "机构地址表扩展时间5"
+        },
+        "organizationAddressDefaultType": {
+          "meaning": "机构地址表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "organizationAddressDescription": {
+          "meaning": "机构地址表描述"
+        },
+        "organizationAddressEngName": {
+          "meaning": "机构地址表英文名称"
+        },
+        "organizationAddressExtension": {
+          "meaning": "机构地址表扩展数据"
+        },
+        "organizationAddressExternalState": {
+          "meaning": "机构地址表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "organizationAddressFlags": {
+          "meaning": "机构地址表63位标志位"
+        },
+        "organizationAddressFromAuditDate": {
+          "meaning": "organizationAddressFromAuditDate"
+        },
+        "organizationAddressFromCreateTime": {
+          "meaning": "organizationAddressFromCreateTime"
+        },
+        "organizationAddressFromDateExtra1": {
+          "meaning": "organizationAddressFromDateExtra1"
+        },
+        "organizationAddressFromDateExtra2": {
+          "meaning": "organizationAddressFromDateExtra2"
+        },
+        "organizationAddressFromDateExtra3": {
+          "meaning": "organizationAddressFromDateExtra3"
+        },
+        "organizationAddressFromDateExtra4": {
+          "meaning": "organizationAddressFromDateExtra4"
+        },
+        "organizationAddressFromDateExtra5": {
+          "meaning": "organizationAddressFromDateExtra5"
+        },
+        "organizationAddressFromUpdateTime": {
+          "meaning": "organizationAddressFromUpdateTime"
+        },
+        "organizationAddressGroovyScript": {
+          "meaning": "机构地址表groovy脚本"
+        },
+        "organizationAddressGropeCode": {
+          "meaning": "机构地址表搜索码"
+        },
+        "organizationAddressId": {
+          "meaning": "机构地址表PK",
+          "is_primary": true
+        },
+        "organizationAddressInUsed": {
+          "meaning": "机构地址表是否被使用"
+        },
+        "organizationAddressIsBanned": {
+          "meaning": "机构地址表是否被禁用"
+        },
+        "organizationAddressIsDefault": {
+          "meaning": "机构地址表是否默认，只允许默认一个"
+        },
+        "organizationAddressIsDeleted": {
+          "meaning": "机构地址表是否被删除"
+        },
+        "organizationAddressIsMainFlow": {
+          "meaning": "机构地址表是否是主流程"
+        },
+        "organizationAddressIsolation": {
+          "meaning": "机构地址表智能节点数据隔离标识"
+        },
+        "organizationAddressJsScript": {
+          "meaning": "机构地址表js脚本"
+        },
+        "organizationAddressName": {
+          "meaning": "机构地址表智能节点名"
+        },
+        "organizationAddressNameCodeSearch": {
+          "meaning": "机构地址表name、user_code模糊搜索"
+        },
+        "organizationAddressNumberExtra1": {
+          "meaning": "机构地址表扩展数量1"
+        },
+        "organizationAddressNumberExtra2": {
+          "meaning": "机构地址表扩展数量2"
+        },
+        "organizationAddressNumberExtra3": {
+          "meaning": "机构地址表扩展数量3"
+        },
+        "organizationAddressNumberExtra4": {
+          "meaning": "机构地址表扩展数量4"
+        },
+        "organizationAddressNumberExtra5": {
+          "meaning": "机构地址表扩展数量5"
+        },
+        "organizationAddressOrganizationId": {
+          "meaning": "机构地址表机构id"
+        },
+        "organizationAddressParentId": {
+          "meaning": "机构地址表父节点ID"
+        },
+        "organizationAddressPlaceName": {
+          "meaning": "机构地址表场所名称"
+        },
+        "organizationAddressProcessInstanceId": {
+          "meaning": "机构地址表流程实例ID"
+        },
+        "organizationAddressSerialNumber": {
+          "meaning": "机构地址表顺序号"
+        },
+        "organizationAddressState": {
+          "meaning": "机构地址表通用状态"
+        },
+        "organizationAddressSystemCode": {
+          "meaning": "机构地址表系统编码"
+        },
+        "organizationAddressTaskNodeName": {
+          "meaning": "机构地址表任务节点名称"
+        },
+        "organizationAddressTenantId": {
+          "meaning": "机构地址表租户_id"
+        },
+        "organizationAddressThirdPartyClass": {
+          "meaning": "机构地址表第三方分类"
+        },
+        "organizationAddressThirdPartyId": {
+          "meaning": "机构地址表第三方系统中的唯一ID"
+        },
+        "organizationAddressThirdPartyName": {
+          "meaning": "机构地址表第三方名称"
+        },
+        "organizationAddressToAuditDate": {
+          "meaning": "organizationAddressToAuditDate"
+        },
+        "organizationAddressToCreateTime": {
+          "meaning": "organizationAddressToCreateTime"
+        },
+        "organizationAddressToDateExtra1": {
+          "meaning": "organizationAddressToDateExtra1"
+        },
+        "organizationAddressToDateExtra2": {
+          "meaning": "organizationAddressToDateExtra2"
+        },
+        "organizationAddressToDateExtra3": {
+          "meaning": "organizationAddressToDateExtra3"
+        },
+        "organizationAddressToDateExtra4": {
+          "meaning": "organizationAddressToDateExtra4"
+        },
+        "organizationAddressToDateExtra5": {
+          "meaning": "organizationAddressToDateExtra5"
+        },
+        "organizationAddressToUpdateTime": {
+          "meaning": "organizationAddressToUpdateTime"
+        },
+        "organizationAddressUpdateTime": {
+          "meaning": "机构地址表更新时间"
+        },
+        "organizationAddressUpdater": {
+          "meaning": "机构地址表更新人"
+        },
+        "organizationAddressUpdaterId": {
+          "meaning": "机构地址表更新人ID"
+        },
+        "organizationAddressUserCode": {
+          "meaning": "机构地址表智能节点的唯一编码"
+        },
+        "organizationAddressVarExtra1": {
+          "meaning": "机构地址表扩展1"
+        },
+        "organizationAddressVarExtra2": {
+          "meaning": "机构地址表扩展2"
+        },
+        "organizationAddressVarExtra3": {
+          "meaning": "机构地址表扩展3"
+        },
+        "organizationAddressVarExtra4": {
+          "meaning": "机构地址表扩展4"
+        },
+        "organizationAddressVarExtra5": {
+          "meaning": "机构地址表扩展5"
+        },
+        "organizationAddressVersion": {
+          "meaning": "机构地址表版本号"
+        }
+      }
+    }

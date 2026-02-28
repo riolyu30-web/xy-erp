@@ -1,0 +1,434 @@
+{
+  "api_name" : "/equ-maint-work/findList",
+  "table_name" : "设备保养工单表",
+  "request" : {
+    "equMaintWorkClazz" : "EQU_MAINT_WORK"
+  },
+  "mainTabClazz" : "EQU_MAINT_WORK",
+  "response" : {
+    "equMaintWorkActualTimeRequired" : {
+      "meaning" : "设备保养工单表实际需时(小时)"
+    },
+    "equMaintWorkAdjustmentTimeRequired" : {
+      "meaning" : "设备保养工单表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "equMaintWorkApplicationId" : {
+      "meaning" : "设备保养工单表应用ID"
+    },
+    "equMaintWorkAssetRelatId" : {
+      "meaning" : "设备保养工单表关联资产id"
+    },
+    "equMaintWorkAuditDate" : {
+      "meaning" : "设备保养工单表审核时间"
+    },
+    "equMaintWorkAuditStatus" : {
+      "meaning" : "设备保养工单表审核状态"
+    },
+    "equMaintWorkAvailableScheduleId" : {
+      "meaning" : "设备保养工单表可用日程id"
+    },
+    "equMaintWorkBeginTime" : {
+      "meaning" : "设备保养工单表开始时间"
+    },
+    "equMaintWorkBizVersion" : {
+      "meaning" : "设备保养工单表业务自定义版本号"
+    },
+    "equMaintWorkBriefName" : {
+      "meaning" : "设备保养工单表简称"
+    },
+    "equMaintWorkBusDivisId" : {
+      "meaning" : "设备保养工单表事业部id"
+    },
+    "equMaintWorkClazz" : {
+      "meaning" : "设备保养工单表子类 类名（表和类一一对应）"
+    },
+    "equMaintWorkClosedReason" : {
+      "meaning" : "设备保养工单表结案原因"
+    },
+    "equMaintWorkClosedStatus" : {
+      "meaning" : "设备保养工单表结案状态"
+    },
+    "equMaintWorkComment" : {
+      "meaning" : "设备保养工单表评论"
+    },
+    "equMaintWorkCompleteQuantity" : {
+      "meaning" : "设备保养工单表完成数量"
+    },
+    "equMaintWorkCompleteStatus" : {
+      "meaning" : "设备保养工单表完成状态"
+    },
+    "equMaintWorkCreateTime" : {
+      "meaning" : "设备保养工单表创建时间"
+    },
+    "equMaintWorkCreator" : {
+      "meaning" : "设备保养工单表创建人"
+    },
+    "equMaintWorkCreatorId" : {
+      "meaning" : "设备保养工单表创建人ID"
+    },
+    "equMaintWorkCumIpqcQuantity" : {
+      "meaning" : "设备保养工单表累计质检数量"
+    },
+    "equMaintWorkCumIpqcStatus" : {
+      "meaning" : "设备保养工单表累计质检状态"
+    },
+    "equMaintWorkCumulHndovrQuantity" : {
+      "meaning" : "设备保养工单表累计交出数量"
+    },
+    "equMaintWorkDailyRepQuantity" : {
+      "meaning" : "设备保养工单表日报表已开数量"
+    },
+    "equMaintWorkDailyRepStatus" : {
+      "meaning" : "设备保养工单表日报表已开状态"
+    },
+    "equMaintWorkDateExtra1" : {
+      "meaning" : "设备保养工单表扩展时间1"
+    },
+    "equMaintWorkDateExtra2" : {
+      "meaning" : "设备保养工单表扩展时间2"
+    },
+    "equMaintWorkDateExtra3" : {
+      "meaning" : "设备保养工单表扩展时间3"
+    },
+    "equMaintWorkDateExtra4" : {
+      "meaning" : "设备保养工单表扩展时间4"
+    },
+    "equMaintWorkDateExtra5" : {
+      "meaning" : "设备保养工单表扩展时间5"
+    },
+    "equMaintWorkDefaultType" : {
+      "meaning" : "设备保养工单表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "equMaintWorkDeliveryDate" : {
+      "meaning" : "设备保养工单表交货日期"
+    },
+    "equMaintWorkDescription" : {
+      "meaning" : "设备保养工单表描述"
+    },
+    "equMaintWorkEndTime" : {
+      "meaning" : "设备保养工单表结束时间"
+    },
+    "equMaintWorkEndTimeRequired" : {
+      "meaning" : "设备保养工单表最后需时(小时)"
+    },
+    "equMaintWorkEngName" : {
+      "meaning" : "设备保养工单表英文名称"
+    },
+    "equMaintWorkEquipmentId" : {
+      "meaning" : "设备保养工单表设备id"
+    },
+    "equMaintWorkExchangeRateId" : {
+      "meaning" : "设备保养工单表币种汇率id"
+    },
+    "equMaintWorkExtension" : {
+      "meaning" : "设备保养工单表扩展数据"
+    },
+    "equMaintWorkExternalState" : {
+      "meaning" : "设备保养工单表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "equMaintWorkFilterClazz" : {
+      "meaning" : "设备保养工单表冗余字段用于筛选"
+    },
+    "equMaintWorkFlags" : {
+      "meaning" : "设备保养工单表63位标志位"
+    },
+    "equMaintWorkFromAuditDate" : {
+      "meaning" : "equMaintWorkFromAuditDate"
+    },
+    "equMaintWorkFromBeginTime" : {
+      "meaning" : "equMaintWorkFromBeginTime"
+    },
+    "equMaintWorkFromCreateTime" : {
+      "meaning" : "equMaintWorkFromCreateTime"
+    },
+    "equMaintWorkFromDateExtra1" : {
+      "meaning" : "equMaintWorkFromDateExtra1"
+    },
+    "equMaintWorkFromDateExtra2" : {
+      "meaning" : "equMaintWorkFromDateExtra2"
+    },
+    "equMaintWorkFromDateExtra3" : {
+      "meaning" : "equMaintWorkFromDateExtra3"
+    },
+    "equMaintWorkFromDateExtra4" : {
+      "meaning" : "equMaintWorkFromDateExtra4"
+    },
+    "equMaintWorkFromDateExtra5" : {
+      "meaning" : "equMaintWorkFromDateExtra5"
+    },
+    "equMaintWorkFromDeliveryDate" : {
+      "meaning" : "equMaintWorkFromDeliveryDate"
+    },
+    "equMaintWorkFromEndTime" : {
+      "meaning" : "equMaintWorkFromEndTime"
+    },
+    "equMaintWorkFromGenerativeTime" : {
+      "meaning" : "equMaintWorkFromGenerativeTime"
+    },
+    "equMaintWorkFromPlanEndTime" : {
+      "meaning" : "equMaintWorkFromPlanEndTime"
+    },
+    "equMaintWorkFromPlanStartTime" : {
+      "meaning" : "equMaintWorkFromPlanStartTime"
+    },
+    "equMaintWorkFromPretEndTime" : {
+      "meaning" : "equMaintWorkFromPretEndTime"
+    },
+    "equMaintWorkFromPretStartTime" : {
+      "meaning" : "equMaintWorkFromPretStartTime"
+    },
+    "equMaintWorkFromReceiptDate" : {
+      "meaning" : "equMaintWorkFromReceiptDate"
+    },
+    "equMaintWorkFromUpdateTime" : {
+      "meaning" : "equMaintWorkFromUpdateTime"
+    },
+    "equMaintWorkFscType" : {
+      "meaning" : "设备保养工单表FSC声明"
+    },
+    "equMaintWorkGenerativePeople" : {
+      "meaning" : "设备保养工单表下发人"
+    },
+    "equMaintWorkGenerativeState" : {
+      "meaning" : "设备保养工单表下发状态"
+    },
+    "equMaintWorkGenerativeTime" : {
+      "meaning" : "设备保养工单表下发时间"
+    },
+    "equMaintWorkGroovyScript" : {
+      "meaning" : "设备保养工单表groovy脚本"
+    },
+    "equMaintWorkGropeCode" : {
+      "meaning" : "设备保养工单表搜索码"
+    },
+    "equMaintWorkId" : {
+      "meaning" : "设备保养工单表PK",
+      "is_primary" : true
+    },
+    "equMaintWorkInUsed" : {
+      "meaning" : "设备保养工单表是否被使用"
+    },
+    "equMaintWorkInvTypeTaxRateId" : {
+      "meaning" : "设备保养工单表发票税率id"
+    },
+    "equMaintWorkIsBanned" : {
+      "meaning" : "设备保养工单表是否被禁用"
+    },
+    "equMaintWorkIsDeleted" : {
+      "meaning" : "设备保养工单表是否被删除"
+    },
+    "equMaintWorkIsLeaf" : {
+      "meaning" : "设备保养工单表是否叶子节点"
+    },
+    "equMaintWorkIsMainFlow" : {
+      "meaning" : "设备保养工单表是否是主流程"
+    },
+    "equMaintWorkIsManualModificationDate" : {
+      "meaning" : "设备保养工单表是否手动修改计划生产时间"
+    },
+    "equMaintWorkIsolation" : {
+      "meaning" : "设备保养工单表智能节点数据隔离标识"
+    },
+    "equMaintWorkJsScript" : {
+      "meaning" : "设备保养工单表js脚本"
+    },
+    "equMaintWorkMaintPeopleId" : {
+      "meaning" : "设备保养工单表保养人id"
+    },
+    "equMaintWorkMaterialId" : {
+      "meaning" : "设备保养工单表物料id"
+    },
+    "equMaintWorkName" : {
+      "meaning" : "设备保养工单表智能节点名"
+    },
+    "equMaintWorkNameCodeSearch" : {
+      "meaning" : "设备保养工单表name、user_code模糊搜索"
+    },
+    "equMaintWorkNumberExtra1" : {
+      "meaning" : "设备保养工单表扩展数量1"
+    },
+    "equMaintWorkNumberExtra2" : {
+      "meaning" : "设备保养工单表扩展数量2"
+    },
+    "equMaintWorkNumberExtra3" : {
+      "meaning" : "设备保养工单表扩展数量3"
+    },
+    "equMaintWorkNumberExtra4" : {
+      "meaning" : "设备保养工单表扩展数量4"
+    },
+    "equMaintWorkNumberExtra5" : {
+      "meaning" : "设备保养工单表扩展数量5"
+    },
+    "equMaintWorkParentId" : {
+      "meaning" : "设备保养工单表父节点ID"
+    },
+    "equMaintWorkPlanEndTime" : {
+      "meaning" : "设备保养工单表计划开始时间"
+    },
+    "equMaintWorkPlanStartTime" : {
+      "meaning" : "设备保养工单表计划开始时间"
+    },
+    "equMaintWorkPlannedOutputQuantity" : {
+      "meaning" : "设备保养工单表计划产出数量"
+    },
+    "equMaintWorkPlannedTimeRequired" : {
+      "meaning" : "设备保养工单表计划需时(小时)"
+    },
+    "equMaintWorkPretEndTime" : {
+      "meaning" : "设备保养工单表预估结束时间"
+    },
+    "equMaintWorkPretStartTime" : {
+      "meaning" : "设备保养工单表预估开始时间"
+    },
+    "equMaintWorkPrintTimes" : {
+      "meaning" : "设备保养工单表打印次数"
+    },
+    "equMaintWorkPriority" : {
+      "meaning" : "设备保养工单表优先级"
+    },
+    "equMaintWorkProcessInstanceId" : {
+      "meaning" : "设备保养工单表流程实例ID"
+    },
+    "equMaintWorkProductionProcessesTypeId" : {
+      "meaning" : "设备保养工单表工序类型ID"
+    },
+    "equMaintWorkProductionShiftId" : {
+      "meaning" : "设备保养工单表生产班次ID"
+    },
+    "equMaintWorkQuantity" : {
+      "meaning" : "设备保养工单表任务数量"
+    },
+    "equMaintWorkReceiptDate" : {
+      "meaning" : "设备保养工单表单据日期"
+    },
+    "equMaintWorkReceiptType" : {
+      "meaning" : "设备保养工单表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "equMaintWorkRelatedTasksId" : {
+      "meaning" : "设备保养工单表关联任务id"
+    },
+    "equMaintWorkSerialNumber" : {
+      "meaning" : "设备保养工单表顺序号"
+    },
+    "equMaintWorkSource" : {
+      "meaning" : "设备保养工单表源"
+    },
+    "equMaintWorkSourceType" : {
+      "meaning" : "设备保养工单表来源类型"
+    },
+    "equMaintWorkState" : {
+      "meaning" : "设备保养工单表通用状态"
+    },
+    "equMaintWorkStatus" : {
+      "meaning" : "设备保养工单表任务状态"
+    },
+    "equMaintWorkSystemCode" : {
+      "meaning" : "设备保养工单表系统编码"
+    },
+    "equMaintWorkTarget" : {
+      "meaning" : "设备保养工单表目标"
+    },
+    "equMaintWorkTaskMesId" : {
+      "meaning" : "设备保养工单表数采网关自增长id"
+    },
+    "equMaintWorkTaskNodeName" : {
+      "meaning" : "设备保养工单表任务节点名称"
+    },
+    "equMaintWorkTenantId" : {
+      "meaning" : "设备保养工单表租户_id"
+    },
+    "equMaintWorkThirdPartyClass" : {
+      "meaning" : "设备保养工单表第三方分类"
+    },
+    "equMaintWorkThirdPartyId" : {
+      "meaning" : "设备保养工单表第三方系统中的唯一ID"
+    },
+    "equMaintWorkThirdPartyName" : {
+      "meaning" : "设备保养工单表第三方名称"
+    },
+    "equMaintWorkToAuditDate" : {
+      "meaning" : "equMaintWorkToAuditDate"
+    },
+    "equMaintWorkToBeginTime" : {
+      "meaning" : "equMaintWorkToBeginTime"
+    },
+    "equMaintWorkToCreateTime" : {
+      "meaning" : "equMaintWorkToCreateTime"
+    },
+    "equMaintWorkToDateExtra1" : {
+      "meaning" : "equMaintWorkToDateExtra1"
+    },
+    "equMaintWorkToDateExtra2" : {
+      "meaning" : "equMaintWorkToDateExtra2"
+    },
+    "equMaintWorkToDateExtra3" : {
+      "meaning" : "equMaintWorkToDateExtra3"
+    },
+    "equMaintWorkToDateExtra4" : {
+      "meaning" : "equMaintWorkToDateExtra4"
+    },
+    "equMaintWorkToDateExtra5" : {
+      "meaning" : "equMaintWorkToDateExtra5"
+    },
+    "equMaintWorkToDeliveryDate" : {
+      "meaning" : "equMaintWorkToDeliveryDate"
+    },
+    "equMaintWorkToEndTime" : {
+      "meaning" : "equMaintWorkToEndTime"
+    },
+    "equMaintWorkToGenerativeTime" : {
+      "meaning" : "equMaintWorkToGenerativeTime"
+    },
+    "equMaintWorkToPlanEndTime" : {
+      "meaning" : "equMaintWorkToPlanEndTime"
+    },
+    "equMaintWorkToPlanStartTime" : {
+      "meaning" : "equMaintWorkToPlanStartTime"
+    },
+    "equMaintWorkToPretEndTime" : {
+      "meaning" : "equMaintWorkToPretEndTime"
+    },
+    "equMaintWorkToPretStartTime" : {
+      "meaning" : "equMaintWorkToPretStartTime"
+    },
+    "equMaintWorkToReceiptDate" : {
+      "meaning" : "equMaintWorkToReceiptDate"
+    },
+    "equMaintWorkToUpdateTime" : {
+      "meaning" : "equMaintWorkToUpdateTime"
+    },
+    "equMaintWorkUnitCode" : {
+      "meaning" : "设备保养工单表单位id"
+    },
+    "equMaintWorkUpdateTime" : {
+      "meaning" : "设备保养工单表更新时间"
+    },
+    "equMaintWorkUpdater" : {
+      "meaning" : "设备保养工单表更新人"
+    },
+    "equMaintWorkUpdaterId" : {
+      "meaning" : "设备保养工单表更新人ID"
+    },
+    "equMaintWorkUserCode" : {
+      "meaning" : "设备保养工单表智能节点的唯一编码"
+    },
+    "equMaintWorkVarExtra1" : {
+      "meaning" : "设备保养工单表扩展1"
+    },
+    "equMaintWorkVarExtra2" : {
+      "meaning" : "设备保养工单表扩展2"
+    },
+    "equMaintWorkVarExtra3" : {
+      "meaning" : "设备保养工单表扩展3"
+    },
+    "equMaintWorkVarExtra4" : {
+      "meaning" : "设备保养工单表扩展4"
+    },
+    "equMaintWorkVarExtra5" : {
+      "meaning" : "设备保养工单表扩展5"
+    },
+    "equMaintWorkVersion" : {
+      "meaning" : "设备保养工单表版本号"
+    }
+  }
+}

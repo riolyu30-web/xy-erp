@@ -19,6 +19,7 @@ load_dotenv()  # 加载.env文件中的环境变量
 # 从环境变量获取配置
 BASE_URL = os.getenv("BASE_URL", "http://192.168.0.156:28002")  # 获取基础URL
 
+
 def get_data(url: str, data: dict, access_token: str, params: dict = None,host_name:str = BASE_URL,data_label:str = "data") -> dict:
         url = f"{host_name}{url}?access_token={access_token}"
         print(url)

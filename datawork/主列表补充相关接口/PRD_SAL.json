@@ -1,0 +1,485 @@
+{
+  "api_name" : "/prd-sal/findList",
+  "table_name" : "成品销货主表",
+  "request" : {
+    "prdSalClazz" : "PRD_SAL"
+  },
+  "mainTabClazz" : "PRD_SAL",
+  "response" : {
+    "prdSalActualTimeRequired" : {
+      "meaning" : "成品销货主表实际需时(小时)"
+    },
+    "prdSalAdjustmentTimeRequired" : {
+      "meaning" : "成品销货主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "prdSalApplicationId" : {
+      "meaning" : "成品销货主表应用ID"
+    },
+    "prdSalAuditDate" : {
+      "meaning" : "成品销货主表审核时间"
+    },
+    "prdSalAuditStatus" : {
+      "meaning" : "成品销货主表审核状态"
+    },
+    "prdSalAvailableScheduleId" : {
+      "meaning" : "成品销货主表可用日程id"
+    },
+    "prdSalBeginTime" : {
+      "meaning" : "成品销货主表开始时间"
+    },
+    "prdSalBizVersion" : {
+      "meaning" : "成品销货主表业务自定义版本号"
+    },
+    "prdSalBriefName" : {
+      "meaning" : "成品销货主表简称"
+    },
+    "prdSalBusDivisId" : {
+      "meaning" : "成品销货主表事业部id"
+    },
+    "prdSalClazz" : {
+      "meaning" : "成品销货主表子类 类名（表和类一一对应）"
+    },
+    "prdSalClosedReason" : {
+      "meaning" : "成品销货主表结案原因"
+    },
+    "prdSalClosedStatus" : {
+      "meaning" : "成品销货主表结案状态"
+    },
+    "prdSalComment" : {
+      "meaning" : "成品销货主表评论"
+    },
+    "prdSalCompleteQuantity" : {
+      "meaning" : "成品销货主表完成数量"
+    },
+    "prdSalCompleteStatus" : {
+      "meaning" : "成品销货主表完成状态"
+    },
+    "prdSalConsigneeName" : {
+      "meaning" : "成品销货主表收货单位名称"
+    },
+    "prdSalCreateTime" : {
+      "meaning" : "成品销货主表创建时间"
+    },
+    "prdSalCreator" : {
+      "meaning" : "成品销货主表创建人"
+    },
+    "prdSalCreatorId" : {
+      "meaning" : "成品销货主表创建人ID"
+    },
+    "prdSalCustContact" : {
+      "meaning" : "成品销货主表收货人(客户联系人)"
+    },
+    "prdSalCustContactCellPhone" : {
+      "meaning" : "成品销货主表手机号(客户联系人手机号)"
+    },
+    "prdSalCustContactPhone" : {
+      "meaning" : "成品销货主表电话(客户联系人电话)"
+    },
+    "prdSalCustDeclarationNumber" : {
+      "meaning" : "成品销货主表报关号"
+    },
+    "prdSalCustDeliverAddress" : {
+      "meaning" : "成品销货主表送货地址(客户送货地址)"
+    },
+    "prdSalCustServiceDepartmentSignTime" : {
+      "type" : "object",
+      "meaning" : "成品销货主表客服部签收时间"
+    },
+    "prdSalCustomerOrSupplierId" : {
+      "meaning" : "成品销货主表供应商/客户"
+    },
+    "prdSalDateExtra1" : {
+      "meaning" : "成品销货主表扩展时间1"
+    },
+    "prdSalDateExtra2" : {
+      "meaning" : "成品销货主表扩展时间2"
+    },
+    "prdSalDateExtra3" : {
+      "meaning" : "成品销货主表扩展时间3"
+    },
+    "prdSalDateExtra4" : {
+      "meaning" : "成品销货主表扩展时间4"
+    },
+    "prdSalDateExtra5" : {
+      "meaning" : "成品销货主表扩展时间5"
+    },
+    "prdSalDefaultType" : {
+      "meaning" : "成品销货主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "prdSalDeliveryDate" : {
+      "meaning" : "成品销货主表交货日期"
+    },
+    "prdSalDescription" : {
+      "meaning" : "成品销货主表描述"
+    },
+    "prdSalDocMar" : {
+      "meaning" : "成品销货主表单据标示"
+    },
+    "prdSalDriverName" : {
+      "meaning" : "成品销货主表司机"
+    },
+    "prdSalDriverPhone" : {
+      "meaning" : "成品销货主表电话(司机电话)"
+    },
+    "prdSalEndTime" : {
+      "meaning" : "成品销货主表结束时间"
+    },
+    "prdSalEndTimeRequired" : {
+      "meaning" : "成品销货主表最后需时(小时)"
+    },
+    "prdSalEngName" : {
+      "meaning" : "成品销货主表英文名称"
+    },
+    "prdSalEquipmentId" : {
+      "meaning" : "成品销货主表设备id"
+    },
+    "prdSalExchangeRateId" : {
+      "meaning" : "成品销货主表币种汇率id"
+    },
+    "prdSalExtension" : {
+      "meaning" : "成品销货主表扩展数据"
+    },
+    "prdSalExternalState" : {
+      "meaning" : "成品销货主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "prdSalFilterClazz" : {
+      "meaning" : "成品销货主表冗余字段用于筛选"
+    },
+    "prdSalFirstOddNumber" : {
+      "meaning" : "成品销货主表首单号"
+    },
+    "prdSalFlags" : {
+      "meaning" : "成品销货主表63位标志位"
+    },
+    "prdSalFromAuditDate" : {
+      "meaning" : "prdSalFromAuditDate"
+    },
+    "prdSalFromBeginTime" : {
+      "meaning" : "prdSalFromBeginTime"
+    },
+    "prdSalFromCreateTime" : {
+      "meaning" : "prdSalFromCreateTime"
+    },
+    "prdSalFromCustServiceDepartmentSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalFromCustServiceDepartmentSignTime"
+    },
+    "prdSalFromDateExtra1" : {
+      "meaning" : "prdSalFromDateExtra1"
+    },
+    "prdSalFromDateExtra2" : {
+      "meaning" : "prdSalFromDateExtra2"
+    },
+    "prdSalFromDateExtra3" : {
+      "meaning" : "prdSalFromDateExtra3"
+    },
+    "prdSalFromDateExtra4" : {
+      "meaning" : "prdSalFromDateExtra4"
+    },
+    "prdSalFromDateExtra5" : {
+      "meaning" : "prdSalFromDateExtra5"
+    },
+    "prdSalFromDeliveryDate" : {
+      "meaning" : "prdSalFromDeliveryDate"
+    },
+    "prdSalFromEndTime" : {
+      "meaning" : "prdSalFromEndTime"
+    },
+    "prdSalFromLoadCompletionTime" : {
+      "type" : "object",
+      "meaning" : "prdSalFromLoadCompletionTime"
+    },
+    "prdSalFromLoadStartTime" : {
+      "type" : "object",
+      "meaning" : "prdSalFromLoadStartTime"
+    },
+    "prdSalFromMainlandFinanceSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalFromMainlandFinanceSignTime"
+    },
+    "prdSalFromMinistryOfTransportSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalFromMinistryOfTransportSignTime"
+    },
+    "prdSalFromReceiptDate" : {
+      "meaning" : "prdSalFromReceiptDate"
+    },
+    "prdSalFromUpdateTime" : {
+      "meaning" : "prdSalFromUpdateTime"
+    },
+    "prdSalFscType" : {
+      "meaning" : "成品销货主表FSC声明"
+    },
+    "prdSalGenerativePeople" : {
+      "meaning" : "成品销货主表下发人"
+    },
+    "prdSalGenerativeState" : {
+      "meaning" : "成品销货主表下发状态"
+    },
+    "prdSalGroovyScript" : {
+      "meaning" : "成品销货主表groovy脚本"
+    },
+    "prdSalGropeCode" : {
+      "meaning" : "成品销货主表搜索码"
+    },
+    "prdSalId" : {
+      "meaning" : "成品销货主表PK",
+      "is_primary" : true
+    },
+    "prdSalInUsed" : {
+      "meaning" : "成品销货主表是否被使用"
+    },
+    "prdSalInvTypeTaxRateId" : {
+      "meaning" : "成品销货主表发票税率id"
+    },
+    "prdSalIsBanned" : {
+      "meaning" : "成品销货主表是否被禁用"
+    },
+    "prdSalIsDeleted" : {
+      "meaning" : "成品销货主表是否被删除"
+    },
+    "prdSalIsLeaf" : {
+      "meaning" : "成品销货主表是否叶子节点"
+    },
+    "prdSalIsMainFlow" : {
+      "meaning" : "成品销货主表是否是主流程"
+    },
+    "prdSalIsManualModificationDate" : {
+      "meaning" : "成品销货主表是否手动修改计划生产时间"
+    },
+    "prdSalIsolation" : {
+      "meaning" : "成品销货主表智能节点数据隔离标识"
+    },
+    "prdSalJsScript" : {
+      "meaning" : "成品销货主表js脚本"
+    },
+    "prdSalLicensePlate" : {
+      "meaning" : "成品销货主表车牌"
+    },
+    "prdSalLoadCompletionTime" : {
+      "type" : "object",
+      "meaning" : "成品销货主表装车完成时间"
+    },
+    "prdSalLoadStartTime" : {
+      "type" : "object",
+      "meaning" : "成品销货主表装车开始时间"
+    },
+    "prdSalLoadSupervisor" : {
+      "meaning" : "成品销货主表装车负责人_id"
+    },
+    "prdSalMainlandFinanceSignTime" : {
+      "type" : "object",
+      "meaning" : "成品销货主表大陆财务签收时间"
+    },
+    "prdSalMaterialId" : {
+      "meaning" : "成品销货主表物料id"
+    },
+    "prdSalMinistryOfTransportSignTime" : {
+      "type" : "object",
+      "meaning" : "成品销货主表运输部签收时间"
+    },
+    "prdSalName" : {
+      "meaning" : "成品销货主表智能节点名"
+    },
+    "prdSalNameCodeSearch" : {
+      "meaning" : "成品销货主表name、user_code模糊搜索"
+    },
+    "prdSalNumberExtra1" : {
+      "meaning" : "成品销货主表扩展数量1"
+    },
+    "prdSalNumberExtra2" : {
+      "meaning" : "成品销货主表扩展数量2"
+    },
+    "prdSalNumberExtra3" : {
+      "meaning" : "成品销货主表扩展数量3"
+    },
+    "prdSalNumberExtra4" : {
+      "meaning" : "成品销货主表扩展数量4"
+    },
+    "prdSalNumberExtra5" : {
+      "meaning" : "成品销货主表扩展数量5"
+    },
+    "prdSalParentId" : {
+      "meaning" : "成品销货主表父节点ID"
+    },
+    "prdSalPersonHandlingTransactionId" : {
+      "meaning" : "成品销货主表经手人(员工)id"
+    },
+    "prdSalPlannedOutputQuantity" : {
+      "meaning" : "成品销货主表计划产出数量"
+    },
+    "prdSalPlannedTimeRequired" : {
+      "meaning" : "成品销货主表计划需时(小时)"
+    },
+    "prdSalPrintTimes" : {
+      "meaning" : "成品销货主表打印次数"
+    },
+    "prdSalPriority" : {
+      "meaning" : "成品销货主表优先级"
+    },
+    "prdSalProcessInstanceId" : {
+      "meaning" : "成品销货主表流程实例ID"
+    },
+    "prdSalProductionProcessesTypeId" : {
+      "meaning" : "成品销货主表工序类型ID"
+    },
+    "prdSalProductionShiftId" : {
+      "meaning" : "成品销货主表生产班次ID"
+    },
+    "prdSalQuantity" : {
+      "meaning" : "成品销货主表任务数量"
+    },
+    "prdSalReceiptCustomerOrSupplierId" : {
+      "meaning" : "成品销货主表收货客户/供应商id"
+    },
+    "prdSalReceiptDate" : {
+      "meaning" : "成品销货主表单据日期"
+    },
+    "prdSalReceiptType" : {
+      "meaning" : "成品销货主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "prdSalRelatedTasksId" : {
+      "meaning" : "成品销货主表关联任务id"
+    },
+    "prdSalSerialNumber" : {
+      "meaning" : "成品销货主表顺序号"
+    },
+    "prdSalSettleAccountId" : {
+      "meaning" : "成品销货主表结算客户_id"
+    },
+    "prdSalSettleAccountMode" : {
+      "meaning" : "成品销货主表结算方式"
+    },
+    "prdSalSettlementCustomerOrSupplierId" : {
+      "meaning" : "成品销货主表结算供应商/客户"
+    },
+    "prdSalSource" : {
+      "meaning" : "成品销货主表源"
+    },
+    "prdSalSourceOddNumber" : {
+      "meaning" : "成品销货主表源单号"
+    },
+    "prdSalSourceType" : {
+      "meaning" : "成品销货主表来源类型"
+    },
+    "prdSalState" : {
+      "meaning" : "成品销货主表通用状态"
+    },
+    "prdSalSystemCode" : {
+      "meaning" : "成品销货主表系统编码"
+    },
+    "prdSalTarget" : {
+      "meaning" : "成品销货主表目标"
+    },
+    "prdSalTaskNodeName" : {
+      "meaning" : "成品销货主表任务节点名称"
+    },
+    "prdSalTenantId" : {
+      "meaning" : "成品销货主表租户_id"
+    },
+    "prdSalThirdPartyClass" : {
+      "meaning" : "成品销货主表第三方分类"
+    },
+    "prdSalThirdPartyId" : {
+      "meaning" : "成品销货主表第三方系统中的唯一ID"
+    },
+    "prdSalThirdPartyName" : {
+      "meaning" : "成品销货主表第三方名称"
+    },
+    "prdSalToAuditDate" : {
+      "meaning" : "prdSalToAuditDate"
+    },
+    "prdSalToBeginTime" : {
+      "meaning" : "prdSalToBeginTime"
+    },
+    "prdSalToCreateTime" : {
+      "meaning" : "prdSalToCreateTime"
+    },
+    "prdSalToCustServiceDepartmentSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalToCustServiceDepartmentSignTime"
+    },
+    "prdSalToDateExtra1" : {
+      "meaning" : "prdSalToDateExtra1"
+    },
+    "prdSalToDateExtra2" : {
+      "meaning" : "prdSalToDateExtra2"
+    },
+    "prdSalToDateExtra3" : {
+      "meaning" : "prdSalToDateExtra3"
+    },
+    "prdSalToDateExtra4" : {
+      "meaning" : "prdSalToDateExtra4"
+    },
+    "prdSalToDateExtra5" : {
+      "meaning" : "prdSalToDateExtra5"
+    },
+    "prdSalToDeliveryDate" : {
+      "meaning" : "prdSalToDeliveryDate"
+    },
+    "prdSalToEndTime" : {
+      "meaning" : "prdSalToEndTime"
+    },
+    "prdSalToLoadCompletionTime" : {
+      "type" : "object",
+      "meaning" : "prdSalToLoadCompletionTime"
+    },
+    "prdSalToLoadStartTime" : {
+      "type" : "object",
+      "meaning" : "prdSalToLoadStartTime"
+    },
+    "prdSalToMainlandFinanceSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalToMainlandFinanceSignTime"
+    },
+    "prdSalToMinistryOfTransportSignTime" : {
+      "type" : "object",
+      "meaning" : "prdSalToMinistryOfTransportSignTime"
+    },
+    "prdSalToReceiptDate" : {
+      "meaning" : "prdSalToReceiptDate"
+    },
+    "prdSalToUpdateTime" : {
+      "meaning" : "prdSalToUpdateTime"
+    },
+    "prdSalType" : {
+      "meaning" : "成品销货主表类型"
+    },
+    "prdSalUnderBond" : {
+      "meaning" : "成品销货主表保税"
+    },
+    "prdSalUnitCode" : {
+      "meaning" : "成品销货主表单位id"
+    },
+    "prdSalUpdateTime" : {
+      "meaning" : "成品销货主表更新时间"
+    },
+    "prdSalUpdater" : {
+      "meaning" : "成品销货主表更新人"
+    },
+    "prdSalUpdaterId" : {
+      "meaning" : "成品销货主表更新人ID"
+    },
+    "prdSalUserCode" : {
+      "meaning" : "成品销货主表智能节点的唯一编码"
+    },
+    "prdSalVarExtra1" : {
+      "meaning" : "成品销货主表扩展1"
+    },
+    "prdSalVarExtra2" : {
+      "meaning" : "成品销货主表扩展2"
+    },
+    "prdSalVarExtra3" : {
+      "meaning" : "成品销货主表扩展3"
+    },
+    "prdSalVarExtra4" : {
+      "meaning" : "成品销货主表扩展4"
+    },
+    "prdSalVarExtra5" : {
+      "meaning" : "成品销货主表扩展5"
+    },
+    "prdSalVersion" : {
+      "meaning" : "成品销货主表版本号"
+    }
+  }
+}

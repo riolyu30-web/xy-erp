@@ -1,0 +1,753 @@
+{
+      "api_name": "/invo-rec-det/findList",
+      "table_name": "收票登记明细表",
+      "request": {
+        "invoRecDetInvoRecClazz": "INVO_REC",
+        "invoRecDetClazz": "INVO_REC_DET"
+      },
+      "mainTabClazz": "INVO_REC_DET",
+      "response": {
+        "invoRecDetActualTimeRequired": {
+          "meaning": "收票登记明细表实际需时(小时)"
+        },
+        "invoRecDetAdjustmentTimeRequired": {
+          "meaning": "收票登记明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "invoRecDetAmount": {
+          "meaning": "收票登记明细表自动调整金额"
+        },
+        "invoRecDetApplicationId": {
+          "meaning": "收票登记明细表应用ID"
+        },
+        "invoRecDetAuditDate": {
+          "meaning": "收票登记明细表审核时间"
+        },
+        "invoRecDetAuditStatus": {
+          "meaning": "收票登记明细表审核状态"
+        },
+        "invoRecDetAvailableScheduleId": {
+          "meaning": "收票登记明细表可用日程id"
+        },
+        "invoRecDetBeginTime": {
+          "meaning": "收票登记明细表开始时间"
+        },
+        "invoRecDetBizVersion": {
+          "meaning": "收票登记明细表业务自定义版本号"
+        },
+        "invoRecDetBriefName": {
+          "meaning": "收票登记明细表简称"
+        },
+        "invoRecDetBusDivisId": {
+          "meaning": "收票登记明细表事业部id"
+        },
+        "invoRecDetClazz": {
+          "meaning": "收票登记明细表子类 类名（表和类一一对应）"
+        },
+        "invoRecDetClosedReason": {
+          "meaning": "收票登记明细表结案原因"
+        },
+        "invoRecDetClosedStatus": {
+          "meaning": "收票登记明细表结案状态"
+        },
+        "invoRecDetComment": {
+          "meaning": "收票登记明细表评论"
+        },
+        "invoRecDetCompleteQuantity": {
+          "meaning": "收票登记明细表完成数量"
+        },
+        "invoRecDetCompleteStatus": {
+          "meaning": "收票登记明细表完成状态"
+        },
+        "invoRecDetCreateTime": {
+          "meaning": "收票登记明细表创建时间"
+        },
+        "invoRecDetCreator": {
+          "meaning": "收票登记明细表创建人"
+        },
+        "invoRecDetCreatorId": {
+          "meaning": "收票登记明细表创建人ID"
+        },
+        "invoRecDetDateExtra1": {
+          "meaning": "收票登记明细表扩展时间1"
+        },
+        "invoRecDetDateExtra2": {
+          "meaning": "收票登记明细表扩展时间2"
+        },
+        "invoRecDetDateExtra3": {
+          "meaning": "收票登记明细表扩展时间3"
+        },
+        "invoRecDetDateExtra4": {
+          "meaning": "收票登记明细表扩展时间4"
+        },
+        "invoRecDetDateExtra5": {
+          "meaning": "收票登记明细表扩展时间5"
+        },
+        "invoRecDetDefaultType": {
+          "meaning": "收票登记明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "invoRecDetDeliveryDate": {
+          "meaning": "收票登记明细表交货日期"
+        },
+        "invoRecDetDescription": {
+          "meaning": "收票登记明细表描述"
+        },
+        "invoRecDetEndTime": {
+          "meaning": "收票登记明细表结束时间"
+        },
+        "invoRecDetEndTimeRequired": {
+          "meaning": "收票登记明细表最后需时(小时)"
+        },
+        "invoRecDetEngName": {
+          "meaning": "收票登记明细表英文名称"
+        },
+        "invoRecDetEquipmentId": {
+          "meaning": "收票登记明细表设备id"
+        },
+        "invoRecDetExchangeRateId": {
+          "meaning": "收票登记明细表币种汇率id"
+        },
+        "invoRecDetExtension": {
+          "meaning": "收票登记明细表扩展数据"
+        },
+        "invoRecDetExternalState": {
+          "meaning": "收票登记明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invoRecDetFilterClazz": {
+          "meaning": "收票登记明细表冗余字段用于筛选"
+        },
+        "invoRecDetFlags": {
+          "meaning": "收票登记明细表63位标志位"
+        },
+        "invoRecDetFromAuditDate": {
+          "meaning": "invoRecDetFromAuditDate"
+        },
+        "invoRecDetFromBeginTime": {
+          "meaning": "invoRecDetFromBeginTime"
+        },
+        "invoRecDetFromCreateTime": {
+          "meaning": "invoRecDetFromCreateTime"
+        },
+        "invoRecDetFromDateExtra1": {
+          "meaning": "invoRecDetFromDateExtra1"
+        },
+        "invoRecDetFromDateExtra2": {
+          "meaning": "invoRecDetFromDateExtra2"
+        },
+        "invoRecDetFromDateExtra3": {
+          "meaning": "invoRecDetFromDateExtra3"
+        },
+        "invoRecDetFromDateExtra4": {
+          "meaning": "invoRecDetFromDateExtra4"
+        },
+        "invoRecDetFromDateExtra5": {
+          "meaning": "invoRecDetFromDateExtra5"
+        },
+        "invoRecDetFromDeliveryDate": {
+          "meaning": "invoRecDetFromDeliveryDate"
+        },
+        "invoRecDetFromEndTime": {
+          "meaning": "invoRecDetFromEndTime"
+        },
+        "invoRecDetFromReceiptDate": {
+          "meaning": "invoRecDetFromReceiptDate"
+        },
+        "invoRecDetFromUpdateTime": {
+          "meaning": "invoRecDetFromUpdateTime"
+        },
+        "invoRecDetFscType": {
+          "meaning": "收票登记明细表FSC声明"
+        },
+        "invoRecDetGenerativePeople": {
+          "meaning": "收票登记明细表下发人"
+        },
+        "invoRecDetGenerativeState": {
+          "meaning": "收票登记明细表下发状态"
+        },
+        "invoRecDetGroovyScript": {
+          "meaning": "收票登记明细表groovy脚本"
+        },
+        "invoRecDetGropeCode": {
+          "meaning": "收票登记明细表搜索码"
+        },
+        "invoRecDetId": {
+          "meaning": "收票登记明细表PK",
+          "is_primary": true
+        },
+        "invoRecDetInUsed": {
+          "meaning": "收票登记明细表是否被使用"
+        },
+        "invoRecDetInvTypeTaxRateId": {
+          "meaning": "收票登记明细表发票税率id"
+        },
+        "invoRecDetInvoRecActualTimeRequired": {
+          "meaning": "收票登记明细表实际需时(小时)"
+        },
+        "invoRecDetInvoRecAdjustmentTimeRequired": {
+          "meaning": "收票登记明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "invoRecDetInvoRecAmountIncludingTax": {
+          "meaning": "收票登记明细表收款/付款金额(含税)"
+        },
+        "invoRecDetInvoRecApplicationId": {
+          "meaning": "收票登记明细表应用ID"
+        },
+        "invoRecDetInvoRecAuditDate": {
+          "meaning": "收票登记明细表审核时间"
+        },
+        "invoRecDetInvoRecAuditStatus": {
+          "meaning": "收票登记明细表审核状态"
+        },
+        "invoRecDetInvoRecAvailableScheduleId": {
+          "meaning": "收票登记明细表可用日程id"
+        },
+        "invoRecDetInvoRecBeginTime": {
+          "meaning": "收票登记明细表开始时间"
+        },
+        "invoRecDetInvoRecBizVersion": {
+          "meaning": "收票登记明细表业务自定义版本号"
+        },
+        "invoRecDetInvoRecBriefName": {
+          "meaning": "收票登记明细表简称"
+        },
+        "invoRecDetInvoRecBusDivisId": {
+          "meaning": "收票登记明细表事业部id"
+        },
+        "invoRecDetInvoRecClazz": {
+          "meaning": "收票登记明细表子类 类名（表和类一一对应）"
+        },
+        "invoRecDetInvoRecClosedReason": {
+          "meaning": "收票登记明细表结案原因"
+        },
+        "invoRecDetInvoRecClosedStatus": {
+          "meaning": "收票登记明细表结案状态"
+        },
+        "invoRecDetInvoRecComment": {
+          "meaning": "收票登记明细表评论"
+        },
+        "invoRecDetInvoRecCompleteQuantity": {
+          "meaning": "收票登记明细表完成数量"
+        },
+        "invoRecDetInvoRecCompleteStatus": {
+          "meaning": "收票登记明细表完成状态"
+        },
+        "invoRecDetInvoRecCreateTime": {
+          "meaning": "收票登记明细表创建时间"
+        },
+        "invoRecDetInvoRecCreator": {
+          "meaning": "收票登记明细表创建人"
+        },
+        "invoRecDetInvoRecCreatorId": {
+          "meaning": "收票登记明细表创建人ID"
+        },
+        "invoRecDetInvoRecDateExtra1": {
+          "meaning": "收票登记明细表扩展时间1"
+        },
+        "invoRecDetInvoRecDateExtra2": {
+          "meaning": "收票登记明细表扩展时间2"
+        },
+        "invoRecDetInvoRecDateExtra3": {
+          "meaning": "收票登记明细表扩展时间3"
+        },
+        "invoRecDetInvoRecDateExtra4": {
+          "meaning": "收票登记明细表扩展时间4"
+        },
+        "invoRecDetInvoRecDateExtra5": {
+          "meaning": "收票登记明细表扩展时间5"
+        },
+        "invoRecDetInvoRecDefaultType": {
+          "meaning": "收票登记明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "invoRecDetInvoRecDeliveryDate": {
+          "meaning": "收票登记明细表交货日期"
+        },
+        "invoRecDetInvoRecDescription": {
+          "meaning": "收票登记明细表描述"
+        },
+        "invoRecDetInvoRecEndTime": {
+          "meaning": "收票登记明细表结束时间"
+        },
+        "invoRecDetInvoRecEndTimeRequired": {
+          "meaning": "收票登记明细表最后需时(小时)"
+        },
+        "invoRecDetInvoRecEngName": {
+          "meaning": "收票登记明细表英文名称"
+        },
+        "invoRecDetInvoRecEquipmentId": {
+          "meaning": "收票登记明细表设备id"
+        },
+        "invoRecDetInvoRecExchangeRateId": {
+          "meaning": "收票登记明细表币种汇率id"
+        },
+        "invoRecDetInvoRecExtension": {
+          "meaning": "收票登记明细表扩展数据"
+        },
+        "invoRecDetInvoRecExternalState": {
+          "meaning": "收票登记明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invoRecDetInvoRecFilterClazz": {
+          "meaning": "收票登记明细表冗余字段用于筛选"
+        },
+        "invoRecDetInvoRecFlags": {
+          "meaning": "收票登记明细表63位标志位"
+        },
+        "invoRecDetInvoRecFromAuditDate": {
+          "meaning": "invoRecDetInvoRecFromAuditDate"
+        },
+        "invoRecDetInvoRecFromBeginTime": {
+          "meaning": "invoRecDetInvoRecFromBeginTime"
+        },
+        "invoRecDetInvoRecFromCreateTime": {
+          "meaning": "invoRecDetInvoRecFromCreateTime"
+        },
+        "invoRecDetInvoRecFromDateExtra1": {
+          "meaning": "invoRecDetInvoRecFromDateExtra1"
+        },
+        "invoRecDetInvoRecFromDateExtra2": {
+          "meaning": "invoRecDetInvoRecFromDateExtra2"
+        },
+        "invoRecDetInvoRecFromDateExtra3": {
+          "meaning": "invoRecDetInvoRecFromDateExtra3"
+        },
+        "invoRecDetInvoRecFromDateExtra4": {
+          "meaning": "invoRecDetInvoRecFromDateExtra4"
+        },
+        "invoRecDetInvoRecFromDateExtra5": {
+          "meaning": "invoRecDetInvoRecFromDateExtra5"
+        },
+        "invoRecDetInvoRecFromDeliveryDate": {
+          "meaning": "invoRecDetInvoRecFromDeliveryDate"
+        },
+        "invoRecDetInvoRecFromEndTime": {
+          "meaning": "invoRecDetInvoRecFromEndTime"
+        },
+        "invoRecDetInvoRecFromInvoiceBillDate": {
+          "type": "object",
+          "meaning": "invoRecDetInvoRecFromInvoiceBillDate"
+        },
+        "invoRecDetInvoRecFromPaymentDate": {
+          "type": "object",
+          "meaning": "invoRecDetInvoRecFromPaymentDate"
+        },
+        "invoRecDetInvoRecFromReceiptDate": {
+          "meaning": "invoRecDetInvoRecFromReceiptDate"
+        },
+        "invoRecDetInvoRecFromUpdateTime": {
+          "meaning": "invoRecDetInvoRecFromUpdateTime"
+        },
+        "invoRecDetInvoRecFscType": {
+          "meaning": "收票登记明细表FSC声明"
+        },
+        "invoRecDetInvoRecGenerativePeople": {
+          "meaning": "收票登记明细表下发人"
+        },
+        "invoRecDetInvoRecGenerativeState": {
+          "meaning": "收票登记明细表下发状态"
+        },
+        "invoRecDetInvoRecGroovyScript": {
+          "meaning": "收票登记明细表groovy脚本"
+        },
+        "invoRecDetInvoRecGropeCode": {
+          "meaning": "收票登记明细表搜索码"
+        },
+        "invoRecDetInvoRecId": {
+          "meaning": "收票登记明细表PK"
+        },
+        "invoRecDetInvoRecInUsed": {
+          "meaning": "收票登记明细表是否被使用"
+        },
+        "invoRecDetInvoRecInvTypeTaxRateId": {
+          "meaning": "收票登记明细表发票税率id"
+        },
+        "invoRecDetInvoRecInvoiceBillDate": {
+          "type": "object",
+          "meaning": "收票登记明细表收票日期"
+        },
+        "invoRecDetInvoRecInvoiceNo": {
+          "meaning": "收票登记明细表发票号码(手填)"
+        },
+        "invoRecDetInvoRecIsBanned": {
+          "meaning": "收票登记明细表是否被禁用"
+        },
+        "invoRecDetInvoRecIsDeleted": {
+          "meaning": "收票登记明细表是否被删除"
+        },
+        "invoRecDetInvoRecIsLeaf": {
+          "meaning": "收票登记明细表是否叶子节点"
+        },
+        "invoRecDetInvoRecIsMainFlow": {
+          "meaning": "收票登记明细表是否是主流程"
+        },
+        "invoRecDetInvoRecIsManualModificationDate": {
+          "meaning": "收票登记明细表是否手动修改计划生产时间"
+        },
+        "invoRecDetInvoRecIsolation": {
+          "meaning": "收票登记明细表智能节点数据隔离标识"
+        },
+        "invoRecDetInvoRecJsScript": {
+          "meaning": "收票登记明细表js脚本"
+        },
+        "invoRecDetInvoRecMaterialId": {
+          "meaning": "收票登记明细表物料id"
+        },
+        "invoRecDetInvoRecName": {
+          "meaning": "收票登记明细表智能节点名"
+        },
+        "invoRecDetInvoRecNameCodeSearch": {
+          "meaning": "收票登记明细表name、user de模糊搜索"
+        },
+        "invoRecDetInvoRecNumberExtra1": {
+          "meaning": "收票登记明细表扩展数量1"
+        },
+        "invoRecDetInvoRecNumberExtra2": {
+          "meaning": "收票登记明细表扩展数量2"
+        },
+        "invoRecDetInvoRecNumberExtra3": {
+          "meaning": "收票登记明细表扩展数量3"
+        },
+        "invoRecDetInvoRecNumberExtra4": {
+          "meaning": "收票登记明细表扩展数量4"
+        },
+        "invoRecDetInvoRecNumberExtra5": {
+          "meaning": "收票登记明细表扩展数量5"
+        },
+        "invoRecDetInvoRecParentId": {
+          "meaning": "收票登记明细表父节点ID"
+        },
+        "invoRecDetInvoRecPaymentDate": {
+          "type": "object",
+          "meaning": "收票登记明细表付款日期(交易日期)"
+        },
+        "invoRecDetInvoRecPlannedOutputQuantity": {
+          "meaning": "收票登记明细表计划产出数量"
+        },
+        "invoRecDetInvoRecPlannedTimeRequired": {
+          "meaning": "收票登记明细表计划需时(小时)"
+        },
+        "invoRecDetInvoRecPrintTimes": {
+          "meaning": "收票登记明细表打印次数"
+        },
+        "invoRecDetInvoRecPriority": {
+          "meaning": "收票登记明细表优先级"
+        },
+        "invoRecDetInvoRecProcessInstanceId": {
+          "meaning": "收票登记明细表流程实例ID"
+        },
+        "invoRecDetInvoRecProductionProcessesTypeId": {
+          "meaning": "收票登记明细表工序类型ID"
+        },
+        "invoRecDetInvoRecProductionShiftId": {
+          "meaning": "收票登记明细表生产班次ID"
+        },
+        "invoRecDetInvoRecQuantity": {
+          "meaning": "收票登记明细表任务数量"
+        },
+        "invoRecDetInvoRecReceiptDate": {
+          "meaning": "收票登记明细表单据日期"
+        },
+        "invoRecDetInvoRecReceiptType": {
+          "meaning": "收票登记明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "invoRecDetInvoRecRelatedTasksId": {
+          "meaning": "收票登记明细表关联任务id"
+        },
+        "invoRecDetInvoRecSerialNumber": {
+          "meaning": "收票登记明细表顺序号"
+        },
+        "invoRecDetInvoRecSource": {
+          "meaning": "收票登记明细表源"
+        },
+        "invoRecDetInvoRecSourceType": {
+          "meaning": "收票登记明细表来源类型"
+        },
+        "invoRecDetInvoRecState": {
+          "meaning": "收票登记明细表通用状态"
+        },
+        "invoRecDetInvoRecSystemCode": {
+          "meaning": "收票登记明细表系统编码"
+        },
+        "invoRecDetInvoRecTarget": {
+          "meaning": "收票登记明细表目标"
+        },
+        "invoRecDetInvoRecTaskNodeName": {
+          "meaning": "收票登记明细表任务节点名称"
+        },
+        "invoRecDetInvoRecTaxRate": {
+          "meaning": "收票登记明细表税率"
+        },
+        "invoRecDetInvoRecTenantId": {
+          "meaning": "收票登记明细表租户_id"
+        },
+        "invoRecDetInvoRecThirdPartyClass": {
+          "meaning": "收票登记明细表第三方分类"
+        },
+        "invoRecDetInvoRecThirdPartyId": {
+          "meaning": "收票登记明细表第三方系统中的唯一ID"
+        },
+        "invoRecDetInvoRecThirdPartyName": {
+          "meaning": "收票登记明细表第三方名称"
+        },
+        "invoRecDetInvoRecToAuditDate": {
+          "meaning": "invoRecDetInvoRecToAuditDate"
+        },
+        "invoRecDetInvoRecToBeginTime": {
+          "meaning": "invoRecDetInvoRecToBeginTime"
+        },
+        "invoRecDetInvoRecToCreateTime": {
+          "meaning": "invoRecDetInvoRecToCreateTime"
+        },
+        "invoRecDetInvoRecToDateExtra1": {
+          "meaning": "invoRecDetInvoRecToDateExtra1"
+        },
+        "invoRecDetInvoRecToDateExtra2": {
+          "meaning": "invoRecDetInvoRecToDateExtra2"
+        },
+        "invoRecDetInvoRecToDateExtra3": {
+          "meaning": "invoRecDetInvoRecToDateExtra3"
+        },
+        "invoRecDetInvoRecToDateExtra4": {
+          "meaning": "invoRecDetInvoRecToDateExtra4"
+        },
+        "invoRecDetInvoRecToDateExtra5": {
+          "meaning": "invoRecDetInvoRecToDateExtra5"
+        },
+        "invoRecDetInvoRecToDeliveryDate": {
+          "meaning": "invoRecDetInvoRecToDeliveryDate"
+        },
+        "invoRecDetInvoRecToEndTime": {
+          "meaning": "invoRecDetInvoRecToEndTime"
+        },
+        "invoRecDetInvoRecToInvoiceBillDate": {
+          "type": "object",
+          "meaning": "invoRecDetInvoRecToInvoiceBillDate"
+        },
+        "invoRecDetInvoRecToPaymentDate": {
+          "type": "object",
+          "meaning": "invoRecDetInvoRecToPaymentDate"
+        },
+        "invoRecDetInvoRecToReceiptDate": {
+          "meaning": "invoRecDetInvoRecToReceiptDate"
+        },
+        "invoRecDetInvoRecToUpdateTime": {
+          "meaning": "invoRecDetInvoRecToUpdateTime"
+        },
+        "invoRecDetInvoRecUnitCode": {
+          "meaning": "收票登记明细表单位id"
+        },
+        "invoRecDetInvoRecUpdateTime": {
+          "meaning": "收票登记明细表更新时间"
+        },
+        "invoRecDetInvoRecUpdater": {
+          "meaning": "收票登记明细表更新人"
+        },
+        "invoRecDetInvoRecUpdaterId": {
+          "meaning": "收票登记明细表更新人ID"
+        },
+        "invoRecDetInvoRecUserCode": {
+          "meaning": "收票登记明细表智能节点的唯一编码"
+        },
+        "invoRecDetInvoRecVarExtra1": {
+          "meaning": "收票登记明细表扩展1"
+        },
+        "invoRecDetInvoRecVarExtra2": {
+          "meaning": "收票登记明细表扩展2"
+        },
+        "invoRecDetInvoRecVarExtra3": {
+          "meaning": "收票登记明细表扩展3"
+        },
+        "invoRecDetInvoRecVarExtra4": {
+          "meaning": "收票登记明细表扩展4"
+        },
+        "invoRecDetInvoRecVarExtra5": {
+          "meaning": "收票登记明细表扩展5"
+        },
+        "invoRecDetInvoRecVersion": {
+          "meaning": "收票登记明细表版本号"
+        },
+        "invoRecDetInvoiceQuantity": {
+          "meaning": "收票登记明细表收票数量"
+        },
+        "invoRecDetIsBanned": {
+          "meaning": "收票登记明细表是否被禁用"
+        },
+        "invoRecDetIsDeleted": {
+          "meaning": "收票登记明细表是否被删除"
+        },
+        "invoRecDetIsLeaf": {
+          "meaning": "收票登记明细表是否叶子节点"
+        },
+        "invoRecDetIsMainFlow": {
+          "meaning": "收票登记明细表是否是主流程"
+        },
+        "invoRecDetIsManualModificationDate": {
+          "meaning": "收票登记明细表是否手动修改计划生产时间"
+        },
+        "invoRecDetIsolation": {
+          "meaning": "收票登记明细表智能节点数据隔离标识"
+        },
+        "invoRecDetJsScript": {
+          "meaning": "收票登记明细表js脚本"
+        },
+        "invoRecDetMaterialId": {
+          "meaning": "收票登记明细表物料id"
+        },
+        "invoRecDetName": {
+          "meaning": "收票登记明细表智能节点名"
+        },
+        "invoRecDetNameCodeSearch": {
+          "meaning": "收票登记明细表name、user de模糊搜索"
+        },
+        "invoRecDetNumberExtra1": {
+          "meaning": "收票登记明细表扩展数量1"
+        },
+        "invoRecDetNumberExtra2": {
+          "meaning": "收票登记明细表扩展数量2"
+        },
+        "invoRecDetNumberExtra3": {
+          "meaning": "收票登记明细表扩展数量3"
+        },
+        "invoRecDetNumberExtra4": {
+          "meaning": "收票登记明细表扩展数量4"
+        },
+        "invoRecDetNumberExtra5": {
+          "meaning": "收票登记明细表扩展数量5"
+        },
+        "invoRecDetParentId": {
+          "meaning": "收票登记明细表父节点ID"
+        },
+        "invoRecDetPlannedOutputQuantity": {
+          "meaning": "收票登记明细表计划产出数量"
+        },
+        "invoRecDetPlannedTimeRequired": {
+          "meaning": "收票登记明细表计划需时(小时)"
+        },
+        "invoRecDetPrintTimes": {
+          "meaning": "收票登记明细表打印次数"
+        },
+        "invoRecDetPriority": {
+          "meaning": "收票登记明细表优先级"
+        },
+        "invoRecDetProcessInstanceId": {
+          "meaning": "收票登记明细表流程实例ID"
+        },
+        "invoRecDetProductionProcessesTypeId": {
+          "meaning": "收票登记明细表工序类型ID"
+        },
+        "invoRecDetProductionShiftId": {
+          "meaning": "收票登记明细表生产班次ID"
+        },
+        "invoRecDetQuantity": {
+          "meaning": "收票登记明细表任务数量"
+        },
+        "invoRecDetReceiptDate": {
+          "meaning": "收票登记明细表单据日期"
+        },
+        "invoRecDetReceiptType": {
+          "meaning": "收票登记明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "invoRecDetRelatedTasksId": {
+          "meaning": "收票登记明细表关联任务id"
+        },
+        "invoRecDetSerialNumber": {
+          "meaning": "收票登记明细表顺序号"
+        },
+        "invoRecDetSource": {
+          "meaning": "收票登记明细表源"
+        },
+        "invoRecDetSourceType": {
+          "meaning": "收票登记明细表来源类型"
+        },
+        "invoRecDetState": {
+          "meaning": "收票登记明细表通用状态"
+        },
+        "invoRecDetSystemCode": {
+          "meaning": "收票登记明细表系统编码"
+        },
+        "invoRecDetTarget": {
+          "meaning": "收票登记明细表目标"
+        },
+        "invoRecDetTaskNodeName": {
+          "meaning": "收票登记明细表任务节点名称"
+        },
+        "invoRecDetTenantId": {
+          "meaning": "收票登记明细表租户_id"
+        },
+        "invoRecDetThirdPartyClass": {
+          "meaning": "收票登记明细表第三方分类"
+        },
+        "invoRecDetThirdPartyId": {
+          "meaning": "收票登记明细表第三方系统中的唯一ID"
+        },
+        "invoRecDetThirdPartyName": {
+          "meaning": "收票登记明细表第三方名称"
+        },
+        "invoRecDetToAuditDate": {
+          "meaning": "invoRecDetToAuditDate"
+        },
+        "invoRecDetToBeginTime": {
+          "meaning": "invoRecDetToBeginTime"
+        },
+        "invoRecDetToCreateTime": {
+          "meaning": "invoRecDetToCreateTime"
+        },
+        "invoRecDetToDateExtra1": {
+          "meaning": "invoRecDetToDateExtra1"
+        },
+        "invoRecDetToDateExtra2": {
+          "meaning": "invoRecDetToDateExtra2"
+        },
+        "invoRecDetToDateExtra3": {
+          "meaning": "invoRecDetToDateExtra3"
+        },
+        "invoRecDetToDateExtra4": {
+          "meaning": "invoRecDetToDateExtra4"
+        },
+        "invoRecDetToDateExtra5": {
+          "meaning": "invoRecDetToDateExtra5"
+        },
+        "invoRecDetToDeliveryDate": {
+          "meaning": "invoRecDetToDeliveryDate"
+        },
+        "invoRecDetToEndTime": {
+          "meaning": "invoRecDetToEndTime"
+        },
+        "invoRecDetToReceiptDate": {
+          "meaning": "invoRecDetToReceiptDate"
+        },
+        "invoRecDetToUpdateTime": {
+          "meaning": "invoRecDetToUpdateTime"
+        },
+        "invoRecDetUnitCode": {
+          "meaning": "收票登记明细表单位id"
+        },
+        "invoRecDetUpdateTime": {
+          "meaning": "收票登记明细表更新时间"
+        },
+        "invoRecDetUpdater": {
+          "meaning": "收票登记明细表更新人"
+        },
+        "invoRecDetUpdaterId": {
+          "meaning": "收票登记明细表更新人ID"
+        },
+        "invoRecDetUserCode": {
+          "meaning": "收票登记明细表智能节点的唯一编码"
+        },
+        "invoRecDetVarExtra1": {
+          "meaning": "收票登记明细表扩展1"
+        },
+        "invoRecDetVarExtra2": {
+          "meaning": "收票登记明细表扩展2"
+        },
+        "invoRecDetVarExtra3": {
+          "meaning": "收票登记明细表扩展3"
+        },
+        "invoRecDetVarExtra4": {
+          "meaning": "收票登记明细表扩展4"
+        },
+        "invoRecDetVarExtra5": {
+          "meaning": "收票登记明细表扩展5"
+        },
+        "invoRecDetVersion": {
+          "meaning": "收票登记明细表版本号"
+        }
+      }
+    }

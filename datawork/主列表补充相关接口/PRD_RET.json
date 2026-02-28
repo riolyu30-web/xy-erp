@@ -1,0 +1,395 @@
+{
+  "api_name" : "/prd-ret/findList",
+  "table_name" : "成品退货主表",
+  "request" : {
+    "prdRetClazz" : "PRD_RET"
+  },
+  "mainTabClazz" : "PRD_RET",
+  "response" : {
+    "prdRetActualTimeRequired" : {
+      "meaning" : "成品退货主表实际需时(小时)"
+    },
+    "prdRetAdjustmentTimeRequired" : {
+      "meaning" : "成品退货主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "prdRetApplicationId" : {
+      "meaning" : "成品退货主表应用ID"
+    },
+    "prdRetAuditDate" : {
+      "meaning" : "成品退货主表审核时间"
+    },
+    "prdRetAuditStatus" : {
+      "meaning" : "成品退货主表审核状态"
+    },
+    "prdRetAvailableScheduleId" : {
+      "meaning" : "成品退货主表可用日程id"
+    },
+    "prdRetBeginTime" : {
+      "meaning" : "成品退货主表开始时间"
+    },
+    "prdRetBizVersion" : {
+      "meaning" : "成品退货主表业务自定义版本号"
+    },
+    "prdRetBriefName" : {
+      "meaning" : "成品退货主表简称"
+    },
+    "prdRetBusDivisId" : {
+      "meaning" : "成品退货主表事业部id"
+    },
+    "prdRetClazz" : {
+      "meaning" : "成品退货主表子类 类名（表和类一一对应）"
+    },
+    "prdRetClosedReason" : {
+      "meaning" : "成品退货主表结案原因"
+    },
+    "prdRetClosedStatus" : {
+      "meaning" : "成品退货主表结案状态"
+    },
+    "prdRetComment" : {
+      "meaning" : "成品退货主表评论"
+    },
+    "prdRetCompleteQuantity" : {
+      "meaning" : "成品退货主表完成数量"
+    },
+    "prdRetCompleteStatus" : {
+      "meaning" : "成品退货主表完成状态"
+    },
+    "prdRetConsignee" : {
+      "meaning" : "成品退货主表收货人"
+    },
+    "prdRetConsigneeCellPhone" : {
+      "meaning" : "成品退货主表收货人手机"
+    },
+    "prdRetConsigneePhone" : {
+      "meaning" : "成品退货主表收货人电话"
+    },
+    "prdRetCreateTime" : {
+      "meaning" : "成品退货主表创建时间"
+    },
+    "prdRetCreator" : {
+      "meaning" : "成品退货主表创建人"
+    },
+    "prdRetCreatorId" : {
+      "meaning" : "成品退货主表创建人ID"
+    },
+    "prdRetCustomerId" : {
+      "meaning" : "成品退货主表客户id"
+    },
+    "prdRetDateExtra1" : {
+      "meaning" : "成品退货主表扩展时间1"
+    },
+    "prdRetDateExtra2" : {
+      "meaning" : "成品退货主表扩展时间2"
+    },
+    "prdRetDateExtra3" : {
+      "meaning" : "成品退货主表扩展时间3"
+    },
+    "prdRetDateExtra4" : {
+      "meaning" : "成品退货主表扩展时间4"
+    },
+    "prdRetDateExtra5" : {
+      "meaning" : "成品退货主表扩展时间5"
+    },
+    "prdRetDecimalMethod" : {
+      "meaning" : "成品退货主表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+    },
+    "prdRetDefaultType" : {
+      "meaning" : "成品退货主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "prdRetDeliveryAddress" : {
+      "meaning" : "成品退货主表送货地址"
+    },
+    "prdRetDeliveryDate" : {
+      "meaning" : "成品退货主表交货日期"
+    },
+    "prdRetDescription" : {
+      "meaning" : "成品退货主表描述"
+    },
+    "prdRetEndTime" : {
+      "meaning" : "成品退货主表结束时间"
+    },
+    "prdRetEndTimeRequired" : {
+      "meaning" : "成品退货主表最后需时(小时)"
+    },
+    "prdRetEngName" : {
+      "meaning" : "成品退货主表英文名称"
+    },
+    "prdRetEquipmentId" : {
+      "meaning" : "成品退货主表设备id"
+    },
+    "prdRetExchangeRateId" : {
+      "meaning" : "成品退货主表币种汇率id"
+    },
+    "prdRetExtension" : {
+      "meaning" : "成品退货主表扩展数据"
+    },
+    "prdRetExternalState" : {
+      "meaning" : "成品退货主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "prdRetFilterClazz" : {
+      "meaning" : "成品退货主表冗余字段用于筛选"
+    },
+    "prdRetFlags" : {
+      "meaning" : "成品退货主表63位标志位"
+    },
+    "prdRetFromAuditDate" : {
+      "meaning" : "prdRetFromAuditDate"
+    },
+    "prdRetFromBeginTime" : {
+      "meaning" : "prdRetFromBeginTime"
+    },
+    "prdRetFromCreateTime" : {
+      "meaning" : "prdRetFromCreateTime"
+    },
+    "prdRetFromDateExtra1" : {
+      "meaning" : "prdRetFromDateExtra1"
+    },
+    "prdRetFromDateExtra2" : {
+      "meaning" : "prdRetFromDateExtra2"
+    },
+    "prdRetFromDateExtra3" : {
+      "meaning" : "prdRetFromDateExtra3"
+    },
+    "prdRetFromDateExtra4" : {
+      "meaning" : "prdRetFromDateExtra4"
+    },
+    "prdRetFromDateExtra5" : {
+      "meaning" : "prdRetFromDateExtra5"
+    },
+    "prdRetFromDeliveryDate" : {
+      "meaning" : "prdRetFromDeliveryDate"
+    },
+    "prdRetFromEndTime" : {
+      "meaning" : "prdRetFromEndTime"
+    },
+    "prdRetFromReceiptDate" : {
+      "meaning" : "prdRetFromReceiptDate"
+    },
+    "prdRetFromUpdateTime" : {
+      "meaning" : "prdRetFromUpdateTime"
+    },
+    "prdRetFscType" : {
+      "meaning" : "成品退货主表FSC声明"
+    },
+    "prdRetGenerativePeople" : {
+      "meaning" : "成品退货主表下发人"
+    },
+    "prdRetGenerativeState" : {
+      "meaning" : "成品退货主表下发状态"
+    },
+    "prdRetGroovyScript" : {
+      "meaning" : "成品退货主表groovy脚本"
+    },
+    "prdRetGropeCode" : {
+      "meaning" : "成品退货主表搜索码"
+    },
+    "prdRetHandlerStaffId" : {
+      "meaning" : "成品退货主表经手人id"
+    },
+    "prdRetId" : {
+      "meaning" : "成品退货主表PK",
+      "is_primary" : true
+    },
+    "prdRetInUsed" : {
+      "meaning" : "成品退货主表是否被使用"
+    },
+    "prdRetInvTypeTaxRateId" : {
+      "meaning" : "成品退货主表发票税率id"
+    },
+    "prdRetIsBanned" : {
+      "meaning" : "成品退货主表是否被禁用"
+    },
+    "prdRetIsDeleted" : {
+      "meaning" : "成品退货主表是否被删除"
+    },
+    "prdRetIsLeaf" : {
+      "meaning" : "成品退货主表是否叶子节点"
+    },
+    "prdRetIsMainFlow" : {
+      "meaning" : "成品退货主表是否是主流程"
+    },
+    "prdRetIsManualModificationDate" : {
+      "meaning" : "成品退货主表是否手动修改计划生产时间"
+    },
+    "prdRetIsolation" : {
+      "meaning" : "成品退货主表智能节点数据隔离标识"
+    },
+    "prdRetJsScript" : {
+      "meaning" : "成品退货主表js脚本"
+    },
+    "prdRetMaterialId" : {
+      "meaning" : "成品退货主表物料id"
+    },
+    "prdRetName" : {
+      "meaning" : "成品退货主表智能节点名"
+    },
+    "prdRetNameCodeSearch" : {
+      "meaning" : "成品退货主表name、user_code模糊搜索"
+    },
+    "prdRetNumberExtra1" : {
+      "meaning" : "成品退货主表扩展数量1"
+    },
+    "prdRetNumberExtra2" : {
+      "meaning" : "成品退货主表扩展数量2"
+    },
+    "prdRetNumberExtra3" : {
+      "meaning" : "成品退货主表扩展数量3"
+    },
+    "prdRetNumberExtra4" : {
+      "meaning" : "成品退货主表扩展数量4"
+    },
+    "prdRetNumberExtra5" : {
+      "meaning" : "成品退货主表扩展数量5"
+    },
+    "prdRetParentId" : {
+      "meaning" : "成品退货主表父节点ID"
+    },
+    "prdRetPlannedOutputQuantity" : {
+      "meaning" : "成品退货主表计划产出数量"
+    },
+    "prdRetPlannedTimeRequired" : {
+      "meaning" : "成品退货主表计划需时(小时)"
+    },
+    "prdRetPrintTimes" : {
+      "meaning" : "成品退货主表打印次数"
+    },
+    "prdRetPriority" : {
+      "meaning" : "成品退货主表优先级"
+    },
+    "prdRetProcessInstanceId" : {
+      "meaning" : "成品退货主表流程实例ID"
+    },
+    "prdRetProductionProcessesTypeId" : {
+      "meaning" : "成品退货主表工序类型ID"
+    },
+    "prdRetProductionShiftId" : {
+      "meaning" : "成品退货主表生产班次ID"
+    },
+    "prdRetQuantity" : {
+      "meaning" : "成品退货主表任务数量"
+    },
+    "prdRetReason" : {
+      "meaning" : "成品退货主表原因"
+    },
+    "prdRetReceiptDate" : {
+      "meaning" : "成品退货主表单据日期"
+    },
+    "prdRetReceiptType" : {
+      "meaning" : "成品退货主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "prdRetRelatedTasksId" : {
+      "meaning" : "成品退货主表关联任务id"
+    },
+    "prdRetSerialNumber" : {
+      "meaning" : "成品退货主表顺序号"
+    },
+    "prdRetSettlementTotalAmountKeepDecimalPlace" : {
+      "meaning" : "成品退货主表结算金额保留小数位(默认2位，可手动变更)"
+    },
+    "prdRetSettlementUnitPriceKeepDecimalPlace" : {
+      "meaning" : "成品退货主表结算单价保留小数位(默认9位，可手动变更)"
+    },
+    "prdRetSource" : {
+      "meaning" : "成品退货主表源"
+    },
+    "prdRetSourceType" : {
+      "meaning" : "成品退货主表来源类型"
+    },
+    "prdRetState" : {
+      "meaning" : "成品退货主表通用状态"
+    },
+    "prdRetSystemCode" : {
+      "meaning" : "成品退货主表系统编码"
+    },
+    "prdRetTarget" : {
+      "meaning" : "成品退货主表目标"
+    },
+    "prdRetTaskNodeName" : {
+      "meaning" : "成品退货主表任务节点名称"
+    },
+    "prdRetTenantId" : {
+      "meaning" : "成品退货主表租户_id"
+    },
+    "prdRetThirdPartyClass" : {
+      "meaning" : "成品退货主表第三方分类"
+    },
+    "prdRetThirdPartyId" : {
+      "meaning" : "成品退货主表第三方系统中的唯一ID"
+    },
+    "prdRetThirdPartyName" : {
+      "meaning" : "成品退货主表第三方名称"
+    },
+    "prdRetToAuditDate" : {
+      "meaning" : "prdRetToAuditDate"
+    },
+    "prdRetToBeginTime" : {
+      "meaning" : "prdRetToBeginTime"
+    },
+    "prdRetToCreateTime" : {
+      "meaning" : "prdRetToCreateTime"
+    },
+    "prdRetToDateExtra1" : {
+      "meaning" : "prdRetToDateExtra1"
+    },
+    "prdRetToDateExtra2" : {
+      "meaning" : "prdRetToDateExtra2"
+    },
+    "prdRetToDateExtra3" : {
+      "meaning" : "prdRetToDateExtra3"
+    },
+    "prdRetToDateExtra4" : {
+      "meaning" : "prdRetToDateExtra4"
+    },
+    "prdRetToDateExtra5" : {
+      "meaning" : "prdRetToDateExtra5"
+    },
+    "prdRetToDeliveryDate" : {
+      "meaning" : "prdRetToDeliveryDate"
+    },
+    "prdRetToEndTime" : {
+      "meaning" : "prdRetToEndTime"
+    },
+    "prdRetToReceiptDate" : {
+      "meaning" : "prdRetToReceiptDate"
+    },
+    "prdRetToUpdateTime" : {
+      "meaning" : "prdRetToUpdateTime"
+    },
+    "prdRetTransCompany" : {
+      "meaning" : "成品退货主表运输公司"
+    },
+    "prdRetUnitCode" : {
+      "meaning" : "成品退货主表单位id"
+    },
+    "prdRetUpdateTime" : {
+      "meaning" : "成品退货主表更新时间"
+    },
+    "prdRetUpdater" : {
+      "meaning" : "成品退货主表更新人"
+    },
+    "prdRetUpdaterId" : {
+      "meaning" : "成品退货主表更新人ID"
+    },
+    "prdRetUserCode" : {
+      "meaning" : "成品退货主表智能节点的唯一编码"
+    },
+    "prdRetVarExtra1" : {
+      "meaning" : "成品退货主表扩展1"
+    },
+    "prdRetVarExtra2" : {
+      "meaning" : "成品退货主表扩展2"
+    },
+    "prdRetVarExtra3" : {
+      "meaning" : "成品退货主表扩展3"
+    },
+    "prdRetVarExtra4" : {
+      "meaning" : "成品退货主表扩展4"
+    },
+    "prdRetVarExtra5" : {
+      "meaning" : "成品退货主表扩展5"
+    },
+    "prdRetVersion" : {
+      "meaning" : "成品退货主表版本号"
+    }
+  }
+}

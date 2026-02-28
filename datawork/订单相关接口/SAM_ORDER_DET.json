@@ -1,0 +1,966 @@
+{
+      "api_name": "/sam-order-det/findList",
+      "table_name": "打样订单明细",
+      "request": {
+        "samOrderDetSamOrderClazz": "SAM_ORDER",
+        "samOrderDetClazz": "SAM_ORDER_DET"
+      },
+      "mainTabClazz": "SAM_ORDER_DET",
+      "response": {
+        "samOrderDetActualTimeRequired": {
+          "meaning": "打样订单明细实际需时(小时)"
+        },
+        "samOrderDetAddress": {
+          "meaning": "打样订单明细详细地址"
+        },
+        "samOrderDetAdjustmentTimeRequired": {
+          "meaning": "打样订单明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "samOrderDetApplicationId": {
+          "meaning": "打样订单明细应用ID"
+        },
+        "samOrderDetAreaId": {
+          "meaning": "打样订单明细行政区域id"
+        },
+        "samOrderDetAssignStatus": {
+          "meaning": "打样订单明细指派状态"
+        },
+        "samOrderDetAuditDate": {
+          "meaning": "打样订单明细审核时间"
+        },
+        "samOrderDetAuditStatus": {
+          "meaning": "打样订单明细审核状态"
+        },
+        "samOrderDetAvailableScheduleId": {
+          "meaning": "打样订单明细可用日程id"
+        },
+        "samOrderDetBeginTime": {
+          "meaning": "打样订单明细开始时间"
+        },
+        "samOrderDetBizVersion": {
+          "meaning": "打样订单明细业务自定义版本号"
+        },
+        "samOrderDetBriefName": {
+          "meaning": "打样订单明细简称"
+        },
+        "samOrderDetBusDivisId": {
+          "meaning": "打样订单明细事业部id"
+        },
+        "samOrderDetClazz": {
+          "meaning": "打样订单明细子类 类名（表和类一一对应）"
+        },
+        "samOrderDetClosedReason": {
+          "meaning": "打样订单明细结案原因"
+        },
+        "samOrderDetClosedStatus": {
+          "meaning": "打样订单明细结案状态"
+        },
+        "samOrderDetComment": {
+          "meaning": "打样订单明细评论"
+        },
+        "samOrderDetCompleteQuantity": {
+          "meaning": "打样订单明细完成数量"
+        },
+        "samOrderDetCompleteStatus": {
+          "meaning": "打样订单明细完成状态"
+        },
+        "samOrderDetCostSchemeId": {
+          "meaning": "samOrderDetCostSchemeId"
+        },
+        "samOrderDetCreateTime": {
+          "meaning": "打样订单明细创建时间"
+        },
+        "samOrderDetCreator": {
+          "meaning": "打样订单明细创建人"
+        },
+        "samOrderDetCreatorId": {
+          "meaning": "打样订单明细创建人ID"
+        },
+        "samOrderDetDateExtra1": {
+          "meaning": "打样订单明细扩展时间1"
+        },
+        "samOrderDetDateExtra2": {
+          "meaning": "打样订单明细扩展时间2"
+        },
+        "samOrderDetDateExtra3": {
+          "meaning": "打样订单明细扩展时间3"
+        },
+        "samOrderDetDateExtra4": {
+          "meaning": "打样订单明细扩展时间4"
+        },
+        "samOrderDetDateExtra5": {
+          "meaning": "打样订单明细扩展时间5"
+        },
+        "samOrderDetDds": {
+          "meaning": "打样订单明细欧盟零毁林法案-dds编号"
+        },
+        "samOrderDetDefaultType": {
+          "meaning": "打样订单明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "samOrderDetDeliveryDate": {
+          "meaning": "打样订单明细交货日期"
+        },
+        "samOrderDetDeliveryTypeId": {
+          "meaning": "打样订单明细送货类型"
+        },
+        "samOrderDetDescription": {
+          "meaning": "打样订单明细描述"
+        },
+        "samOrderDetEndTime": {
+          "meaning": "打样订单明细结束时间"
+        },
+        "samOrderDetEndTimeRequired": {
+          "meaning": "打样订单明细最后需时(小时)"
+        },
+        "samOrderDetEngName": {
+          "meaning": "打样订单明细英文名称"
+        },
+        "samOrderDetEquipmentId": {
+          "meaning": "打样订单明细设备id"
+        },
+        "samOrderDetExchangeRateId": {
+          "meaning": "打样订单明细币种汇率id"
+        },
+        "samOrderDetExpProcessId": {
+          "meaning": "打样订单明细经验工序id"
+        },
+        "samOrderDetExpectedDate": {
+          "type": "object",
+          "meaning": "打样订单明细预计交期"
+        },
+        "samOrderDetExtMatBarcode": {
+          "meaning": "打样订单明细外部物料条码(BarCode)"
+        },
+        "samOrderDetExtMatCode": {
+          "meaning": "打样订单明细外部物料编码(例客户产品编码)"
+        },
+        "samOrderDetExtMatName": {
+          "meaning": "打样订单明细外部物料名称(例客户产品名称)"
+        },
+        "samOrderDetExtension": {
+          "meaning": "打样订单明细扩展数据"
+        },
+        "samOrderDetExternalNo": {
+          "meaning": "打样订单明细外部单号(例客户PO，采购送货单号)"
+        },
+        "samOrderDetExternalState": {
+          "meaning": "打样订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "samOrderDetFilterClazz": {
+          "meaning": "打样订单明细冗余字段用于筛选"
+        },
+        "samOrderDetFlags": {
+          "meaning": "打样订单明细63位标志位"
+        },
+        "samOrderDetFromAuditDate": {
+          "meaning": "samOrderDetFromAuditDate"
+        },
+        "samOrderDetFromBeginTime": {
+          "meaning": "samOrderDetFromBeginTime"
+        },
+        "samOrderDetFromCreateTime": {
+          "meaning": "samOrderDetFromCreateTime"
+        },
+        "samOrderDetFromDateExtra1": {
+          "meaning": "samOrderDetFromDateExtra1"
+        },
+        "samOrderDetFromDateExtra2": {
+          "meaning": "samOrderDetFromDateExtra2"
+        },
+        "samOrderDetFromDateExtra3": {
+          "meaning": "samOrderDetFromDateExtra3"
+        },
+        "samOrderDetFromDateExtra4": {
+          "meaning": "samOrderDetFromDateExtra4"
+        },
+        "samOrderDetFromDateExtra5": {
+          "meaning": "samOrderDetFromDateExtra5"
+        },
+        "samOrderDetFromDeliveryDate": {
+          "meaning": "samOrderDetFromDeliveryDate"
+        },
+        "samOrderDetFromEndTime": {
+          "meaning": "samOrderDetFromEndTime"
+        },
+        "samOrderDetFromExpectedDate": {
+          "type": "object",
+          "meaning": "samOrderDetFromExpectedDate"
+        },
+        "samOrderDetFromReceiptDate": {
+          "meaning": "samOrderDetFromReceiptDate"
+        },
+        "samOrderDetFromUpdateTime": {
+          "meaning": "samOrderDetFromUpdateTime"
+        },
+        "samOrderDetFscType": {
+          "meaning": "打样订单明细FSC声明"
+        },
+        "samOrderDetGenerativePeople": {
+          "meaning": "打样订单明细下发人"
+        },
+        "samOrderDetGenerativeState": {
+          "meaning": "打样订单明细下发状态"
+        },
+        "samOrderDetGiftQty": {
+          "meaning": "打样订单明细赠品数量"
+        },
+        "samOrderDetGroovyScript": {
+          "meaning": "打样订单明细groovy脚本"
+        },
+        "samOrderDetGropeCode": {
+          "meaning": "打样订单明细搜索码"
+        },
+        "samOrderDetId": {
+          "meaning": "打样订单明细pk",
+          "is_primary": true
+        },
+        "samOrderDetInUsed": {
+          "meaning": "打样订单明细是否被使用"
+        },
+        "samOrderDetInvTypeTaxRateId": {
+          "meaning": "打样订单明细发票税率id"
+        },
+        "samOrderDetInvoRecIssQuantity": {
+          "meaning": "打样订单明细开/收票数量"
+        },
+        "samOrderDetInvoRecIssStatus": {
+          "meaning": "打样订单明细开/收票状态"
+        },
+        "samOrderDetIsBanned": {
+          "meaning": "打样订单明细是否被禁用"
+        },
+        "samOrderDetIsDeleted": {
+          "meaning": "打样订单明细是否被删除"
+        },
+        "samOrderDetIsLeaf": {
+          "meaning": "打样订单明细是否叶子节点"
+        },
+        "samOrderDetIsMainFlow": {
+          "meaning": "打样订单明细是否是主流程"
+        },
+        "samOrderDetIsManualModificationDate": {
+          "meaning": "打样订单明细是否手动修改计划生产时间"
+        },
+        "samOrderDetIsolation": {
+          "meaning": "打样订单明细智能节点数据隔离标识"
+        },
+        "samOrderDetJsScript": {
+          "meaning": "打样订单明细js脚本"
+        },
+        "samOrderDetLastWorkCode": {
+          "meaning": "打样订单明细产品最新工单号"
+        },
+        "samOrderDetLocUnitPrice": {
+          "meaning": "打样订单明细本币单价(根据币种，外币才显示)，外币不含税"
+        },
+        "samOrderDetLocalAmount": {
+          "meaning": "打样订单明细本币金额(根据币种，外币才显示)，外币不含税"
+        },
+        "samOrderDetLossQty": {
+          "meaning": "打样订单明细损耗"
+        },
+        "samOrderDetMatCat": {
+          "meaning": "打样订单明细物料分类ID"
+        },
+        "samOrderDetMaterialId": {
+          "meaning": "打样订单明细物料id"
+        },
+        "samOrderDetName": {
+          "meaning": "打样订单明细智能节点名"
+        },
+        "samOrderDetNameCodeSearch": {
+          "meaning": "打样订单明细name、user_code模糊搜索"
+        },
+        "samOrderDetNumberExtra1": {
+          "meaning": "打样订单明细扩展数量1"
+        },
+        "samOrderDetNumberExtra2": {
+          "meaning": "打样订单明细扩展数量2"
+        },
+        "samOrderDetNumberExtra3": {
+          "meaning": "打样订单明细扩展数量3"
+        },
+        "samOrderDetNumberExtra4": {
+          "meaning": "打样订单明细扩展数量4"
+        },
+        "samOrderDetNumberExtra5": {
+          "meaning": "打样订单明细扩展数量5"
+        },
+        "samOrderDetParentId": {
+          "meaning": "打样订单明细父节点ID"
+        },
+        "samOrderDetPlannedOutputQuantity": {
+          "meaning": "打样订单明细计划产出数量"
+        },
+        "samOrderDetPlannedTimeRequired": {
+          "meaning": "打样订单明细计划需时(小时)"
+        },
+        "samOrderDetPrdOApyGiftQuantity": {
+          "meaning": "打样订单明细成品出库申请赠品完成数量"
+        },
+        "samOrderDetPrdOApyGiftStatus": {
+          "meaning": "打样订单明细成品出库申请赠品完成状态"
+        },
+        "samOrderDetPrdOApyQuantity": {
+          "meaning": "打样订单明细成品出库申请数量"
+        },
+        "samOrderDetPrdOApySpareQuantity": {
+          "meaning": "打样订单明细成品出库申请备品完成数量"
+        },
+        "samOrderDetPrdOApySpareStatus": {
+          "meaning": "打样订单明细成品出库申请备品完成状态"
+        },
+        "samOrderDetPrdOApyStatus": {
+          "meaning": "打样订单明细成品出库申请完成状态"
+        },
+        "samOrderDetPrdRetQuantity": {
+          "meaning": "打样订单明细成品退货数量"
+        },
+        "samOrderDetPrdRetSpareQuantity": {
+          "meaning": "打样订单明细成品备品退货数量"
+        },
+        "samOrderDetPrdRetSpareStatus": {
+          "meaning": "打样订单明细成品退货备品完成状态"
+        },
+        "samOrderDetPrdRetStatus": {
+          "meaning": "打样订单明细成品退货完成状态"
+        },
+        "samOrderDetPrintTimes": {
+          "meaning": "打样订单明细打印次数"
+        },
+        "samOrderDetPriority": {
+          "meaning": "打样订单明细优先级"
+        },
+        "samOrderDetProCode": {
+          "meaning": "打样订单明细项目编码"
+        },
+        "samOrderDetProName": {
+          "meaning": "打样订单明细项目名称"
+        },
+        "samOrderDetProcessInstanceId": {
+          "meaning": "打样订单明细流程实例ID"
+        },
+        "samOrderDetProdCntrId": {
+          "meaning": "打样订单明细生产中心id"
+        },
+        "samOrderDetProductionProcessesTypeId": {
+          "meaning": "打样订单明细工序类型ID"
+        },
+        "samOrderDetProductionShiftId": {
+          "meaning": "打样订单明细生产班次ID"
+        },
+        "samOrderDetProp": {
+          "meaning": "打样订单明细比例"
+        },
+        "samOrderDetPurchasedQuantity": {
+          "meaning": "打样订单明细已采购数量（采购申请反写）"
+        },
+        "samOrderDetPurchasedStatus": {
+          "meaning": "打样订单明细已采购状态（采购申请反写）"
+        },
+        "samOrderDetQuantity": {
+          "meaning": "打样订单明细任务数量"
+        },
+        "samOrderDetQuoteQty": {
+          "meaning": "打样订单明细报价数量"
+        },
+        "samOrderDetRecPaySettleQuantity": {
+          "meaning": "打样订单明细应收/付结算数量"
+        },
+        "samOrderDetRecPaySettleStatus": {
+          "meaning": "打样订单明细应收/付结算状态"
+        },
+        "samOrderDetReceiptDate": {
+          "meaning": "打样订单明细单据日期"
+        },
+        "samOrderDetReceiptType": {
+          "meaning": "打样订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "samOrderDetRelatedTasksId": {
+          "meaning": "打样订单明细关联任务id"
+        },
+        "samOrderDetReorderCode": {
+          "meaning": "打样订单明细翻单订单号"
+        },
+        "samOrderDetSamOrderActualTimeRequired": {
+          "meaning": "打样订单明细实际需时(小时)"
+        },
+        "samOrderDetSamOrderAdjustmentTimeRequired": {
+          "meaning": "打样订单明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "samOrderDetSamOrderApplicationId": {
+          "meaning": "打样订单明细应用ID"
+        },
+        "samOrderDetSamOrderAuditDate": {
+          "meaning": "打样订单明细审核时间"
+        },
+        "samOrderDetSamOrderAuditStatus": {
+          "meaning": "打样订单明细审核状态"
+        },
+        "samOrderDetSamOrderAvailableScheduleId": {
+          "meaning": "打样订单明细可用日程id"
+        },
+        "samOrderDetSamOrderBeginTime": {
+          "meaning": "打样订单明细开始时间"
+        },
+        "samOrderDetSamOrderBizVersion": {
+          "meaning": "打样订单明细业务自定义版本号"
+        },
+        "samOrderDetSamOrderBriefName": {
+          "meaning": "打样订单明细简称"
+        },
+        "samOrderDetSamOrderBusDivisId": {
+          "meaning": "打样订单明细事业部id"
+        },
+        "samOrderDetSamOrderClazz": {
+          "meaning": "打样订单明细子类 类名（表和类一一对应）"
+        },
+        "samOrderDetSamOrderClosedReason": {
+          "meaning": "打样订单明细结案原因"
+        },
+        "samOrderDetSamOrderClosedStatus": {
+          "meaning": "打样订单明细结案状态"
+        },
+        "samOrderDetSamOrderComment": {
+          "meaning": "打样订单明细评论"
+        },
+        "samOrderDetSamOrderCompleteQuantity": {
+          "meaning": "打样订单明细完成数量"
+        },
+        "samOrderDetSamOrderCompleteStatus": {
+          "meaning": "打样订单明细完成状态"
+        },
+        "samOrderDetSamOrderContName": {
+          "meaning": "打样订单明细联系人姓名"
+        },
+        "samOrderDetSamOrderCreateTime": {
+          "meaning": "打样订单明细创建时间"
+        },
+        "samOrderDetSamOrderCreator": {
+          "meaning": "打样订单明细创建人"
+        },
+        "samOrderDetSamOrderCreatorId": {
+          "meaning": "打样订单明细创建人ID"
+        },
+        "samOrderDetSamOrderCur": {
+          "meaning": "打样订单明细币种"
+        },
+        "samOrderDetSamOrderCurRate": {
+          "meaning": "打样订单明细汇率"
+        },
+        "samOrderDetSamOrderCustId": {
+          "meaning": "打样订单明细客户id"
+        },
+        "samOrderDetSamOrderDateExtra1": {
+          "meaning": "打样订单明细扩展时间1"
+        },
+        "samOrderDetSamOrderDateExtra2": {
+          "meaning": "打样订单明细扩展时间2"
+        },
+        "samOrderDetSamOrderDateExtra3": {
+          "meaning": "打样订单明细扩展时间3"
+        },
+        "samOrderDetSamOrderDateExtra4": {
+          "meaning": "打样订单明细扩展时间4"
+        },
+        "samOrderDetSamOrderDateExtra5": {
+          "meaning": "打样订单明细扩展时间5"
+        },
+        "samOrderDetSamOrderDefaultType": {
+          "meaning": "打样订单明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "samOrderDetSamOrderDelMethod": {
+          "meaning": "打样订单明细配送方式"
+        },
+        "samOrderDetSamOrderDeliveryDate": {
+          "meaning": "打样订单明细交货日期"
+        },
+        "samOrderDetSamOrderDelvCust": {
+          "meaning": "打样订单明细送货客户"
+        },
+        "samOrderDetSamOrderDescription": {
+          "meaning": "打样订单明细描述"
+        },
+        "samOrderDetSamOrderEndTime": {
+          "meaning": "打样订单明细结束时间"
+        },
+        "samOrderDetSamOrderEndTimeRequired": {
+          "meaning": "打样订单明细最后需时(小时)"
+        },
+        "samOrderDetSamOrderEngName": {
+          "meaning": "打样订单明细英文名称"
+        },
+        "samOrderDetSamOrderEquipmentId": {
+          "meaning": "打样订单明细设备id"
+        },
+        "samOrderDetSamOrderExchangeRateId": {
+          "meaning": "打样订单明细币种汇率id"
+        },
+        "samOrderDetSamOrderExtension": {
+          "meaning": "打样订单明细扩展数据"
+        },
+        "samOrderDetSamOrderExternalState": {
+          "meaning": "打样订单明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "samOrderDetSamOrderFilterClazz": {
+          "meaning": "打样订单明细冗余字段用于筛选"
+        },
+        "samOrderDetSamOrderFlags": {
+          "meaning": "打样订单明细63位标志位"
+        },
+        "samOrderDetSamOrderFmtDec": {
+          "meaning": "打样订单明细保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+        },
+        "samOrderDetSamOrderFromAuditDate": {
+          "meaning": "samOrderDetSamOrderFromAuditDate"
+        },
+        "samOrderDetSamOrderFromBeginTime": {
+          "meaning": "samOrderDetSamOrderFromBeginTime"
+        },
+        "samOrderDetSamOrderFromCreateTime": {
+          "meaning": "samOrderDetSamOrderFromCreateTime"
+        },
+        "samOrderDetSamOrderFromDateExtra1": {
+          "meaning": "samOrderDetSamOrderFromDateExtra1"
+        },
+        "samOrderDetSamOrderFromDateExtra2": {
+          "meaning": "samOrderDetSamOrderFromDateExtra2"
+        },
+        "samOrderDetSamOrderFromDateExtra3": {
+          "meaning": "samOrderDetSamOrderFromDateExtra3"
+        },
+        "samOrderDetSamOrderFromDateExtra4": {
+          "meaning": "samOrderDetSamOrderFromDateExtra4"
+        },
+        "samOrderDetSamOrderFromDateExtra5": {
+          "meaning": "samOrderDetSamOrderFromDateExtra5"
+        },
+        "samOrderDetSamOrderFromDeliveryDate": {
+          "meaning": "samOrderDetSamOrderFromDeliveryDate"
+        },
+        "samOrderDetSamOrderFromEndTime": {
+          "meaning": "samOrderDetSamOrderFromEndTime"
+        },
+        "samOrderDetSamOrderFromReceiptDate": {
+          "meaning": "samOrderDetSamOrderFromReceiptDate"
+        },
+        "samOrderDetSamOrderFromUpdateTime": {
+          "meaning": "samOrderDetSamOrderFromUpdateTime"
+        },
+        "samOrderDetSamOrderFscType": {
+          "meaning": "打样订单明细FSC声明"
+        },
+        "samOrderDetSamOrderGenerativePeople": {
+          "meaning": "打样订单明细下发人"
+        },
+        "samOrderDetSamOrderGenerativeState": {
+          "meaning": "打样订单明细下发状态"
+        },
+        "samOrderDetSamOrderGroovyScript": {
+          "meaning": "打样订单明细groovy脚本"
+        },
+        "samOrderDetSamOrderGropeCode": {
+          "meaning": "打样订单明细搜索码"
+        },
+        "samOrderDetSamOrderId": {
+          "meaning": "打样订单明细pk"
+        },
+        "samOrderDetSamOrderInUsed": {
+          "meaning": "打样订单明细是否被使用"
+        },
+        "samOrderDetSamOrderInvType": {
+          "meaning": "打样订单明细发票类型id"
+        },
+        "samOrderDetSamOrderInvTypeTaxRateId": {
+          "meaning": "打样订单明细发票税率id"
+        },
+        "samOrderDetSamOrderIsBanned": {
+          "meaning": "打样订单明细是否被禁用"
+        },
+        "samOrderDetSamOrderIsDeleted": {
+          "meaning": "打样订单明细是否被删除"
+        },
+        "samOrderDetSamOrderIsLeaf": {
+          "meaning": "打样订单明细是否叶子节点"
+        },
+        "samOrderDetSamOrderIsMainFlow": {
+          "meaning": "打样订单明细是否是主流程"
+        },
+        "samOrderDetSamOrderIsManualModificationDate": {
+          "meaning": "打样订单明细是否手动修改计划生产时间"
+        },
+        "samOrderDetSamOrderIsUrgent": {
+          "meaning": "打样订单明细是否加急"
+        },
+        "samOrderDetSamOrderIsolation": {
+          "meaning": "打样订单明细智能节点数据隔离标识"
+        },
+        "samOrderDetSamOrderJsScript": {
+          "meaning": "打样订单明细js脚本"
+        },
+        "samOrderDetSamOrderLcTotalAmt": {
+          "meaning": "打样订单明细本币总费用(根据币种，外币才显示)，外币不含税"
+        },
+        "samOrderDetSamOrderMaterialId": {
+          "meaning": "打样订单明细物料id"
+        },
+        "samOrderDetSamOrderName": {
+          "meaning": "打样订单明细智能节点名"
+        },
+        "samOrderDetSamOrderNameCodeSearch": {
+          "meaning": "打样订单明细name、user_code模糊搜索"
+        },
+        "samOrderDetSamOrderNumberExtra1": {
+          "meaning": "打样订单明细扩展数量1"
+        },
+        "samOrderDetSamOrderNumberExtra2": {
+          "meaning": "打样订单明细扩展数量2"
+        },
+        "samOrderDetSamOrderNumberExtra3": {
+          "meaning": "打样订单明细扩展数量3"
+        },
+        "samOrderDetSamOrderNumberExtra4": {
+          "meaning": "打样订单明细扩展数量4"
+        },
+        "samOrderDetSamOrderNumberExtra5": {
+          "meaning": "打样订单明细扩展数量5"
+        },
+        "samOrderDetSamOrderPCount": {
+          "meaning": "打样订单明细打印次数"
+        },
+        "samOrderDetSamOrderParentId": {
+          "meaning": "打样订单明细父节点ID"
+        },
+        "samOrderDetSamOrderPhone": {
+          "meaning": "打样订单明细手机"
+        },
+        "samOrderDetSamOrderPlannedOutputQuantity": {
+          "meaning": "打样订单明细计划产出数量"
+        },
+        "samOrderDetSamOrderPlannedTimeRequired": {
+          "meaning": "打样订单明细计划需时(小时)"
+        },
+        "samOrderDetSamOrderPrintTimes": {
+          "meaning": "打样订单明细打印次数"
+        },
+        "samOrderDetSamOrderPriority": {
+          "meaning": "打样订单明细优先级"
+        },
+        "samOrderDetSamOrderProcessInstanceId": {
+          "meaning": "打样订单明细流程实例ID"
+        },
+        "samOrderDetSamOrderProductionProcessesTypeId": {
+          "meaning": "打样订单明细工序类型ID"
+        },
+        "samOrderDetSamOrderProductionShiftId": {
+          "meaning": "打样订单明细生产班次ID"
+        },
+        "samOrderDetSamOrderQuantity": {
+          "meaning": "打样订单明细任务数量"
+        },
+        "samOrderDetSamOrderReceiptDate": {
+          "meaning": "打样订单明细单据日期"
+        },
+        "samOrderDetSamOrderReceiptType": {
+          "meaning": "打样订单明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "samOrderDetSamOrderRelatedTasksId": {
+          "meaning": "打样订单明细关联任务id"
+        },
+        "samOrderDetSamOrderSerialNumber": {
+          "meaning": "打样订单明细顺序号"
+        },
+        "samOrderDetSamOrderSettleCustId": {
+          "meaning": "打样订单明细结算客户ID"
+        },
+        "samOrderDetSamOrderSource": {
+          "meaning": "打样订单明细源"
+        },
+        "samOrderDetSamOrderSourceType": {
+          "meaning": "打样订单明细来源类型"
+        },
+        "samOrderDetSamOrderState": {
+          "meaning": "打样订单明细通用状态"
+        },
+        "samOrderDetSamOrderStlAmtFmt": {
+          "meaning": "打样订单明细结算金额保留小数位(默认2位，可手动变更)"
+        },
+        "samOrderDetSamOrderStlFee": {
+          "meaning": "打样订单明细结算费用（默认与含税总金额相等)"
+        },
+        "samOrderDetSamOrderStlPriceFmt": {
+          "meaning": "打样订单明细结算单价保留小数位(默认9位，可手动变更)"
+        },
+        "samOrderDetSamOrderStlType": {
+          "meaning": "打样订单明细结算类型 SettlementType_id"
+        },
+        "samOrderDetSamOrderSystemCode": {
+          "meaning": "打样订单明细系统编码"
+        },
+        "samOrderDetSamOrderTarget": {
+          "meaning": "打样订单明细目标"
+        },
+        "samOrderDetSamOrderTaskNodeName": {
+          "meaning": "打样订单明细任务节点名称"
+        },
+        "samOrderDetSamOrderTaxRt": {
+          "meaning": "打样订单明细税率"
+        },
+        "samOrderDetSamOrderTenantId": {
+          "meaning": "打样订单明细租户ID"
+        },
+        "samOrderDetSamOrderThirdPartyClass": {
+          "meaning": "打样订单明细第三方分类"
+        },
+        "samOrderDetSamOrderThirdPartyId": {
+          "meaning": "打样订单明细第三方系统中的唯一ID"
+        },
+        "samOrderDetSamOrderThirdPartyName": {
+          "meaning": "打样订单明细第三方名称"
+        },
+        "samOrderDetSamOrderToAuditDate": {
+          "meaning": "samOrderDetSamOrderToAuditDate"
+        },
+        "samOrderDetSamOrderToBeginTime": {
+          "meaning": "samOrderDetSamOrderToBeginTime"
+        },
+        "samOrderDetSamOrderToCreateTime": {
+          "meaning": "samOrderDetSamOrderToCreateTime"
+        },
+        "samOrderDetSamOrderToDateExtra1": {
+          "meaning": "samOrderDetSamOrderToDateExtra1"
+        },
+        "samOrderDetSamOrderToDateExtra2": {
+          "meaning": "samOrderDetSamOrderToDateExtra2"
+        },
+        "samOrderDetSamOrderToDateExtra3": {
+          "meaning": "samOrderDetSamOrderToDateExtra3"
+        },
+        "samOrderDetSamOrderToDateExtra4": {
+          "meaning": "samOrderDetSamOrderToDateExtra4"
+        },
+        "samOrderDetSamOrderToDateExtra5": {
+          "meaning": "samOrderDetSamOrderToDateExtra5"
+        },
+        "samOrderDetSamOrderToDeliveryDate": {
+          "meaning": "samOrderDetSamOrderToDeliveryDate"
+        },
+        "samOrderDetSamOrderToEndTime": {
+          "meaning": "samOrderDetSamOrderToEndTime"
+        },
+        "samOrderDetSamOrderToReceiptDate": {
+          "meaning": "samOrderDetSamOrderToReceiptDate"
+        },
+        "samOrderDetSamOrderToUpdateTime": {
+          "meaning": "samOrderDetSamOrderToUpdateTime"
+        },
+        "samOrderDetSamOrderTotalFeeNt": {
+          "meaning": "打样订单明细总费用(不含税)"
+        },
+        "samOrderDetSamOrderTotalVol": {
+          "meaning": "打样订单明细总体积"
+        },
+        "samOrderDetSamOrderTotalWithTax": {
+          "meaning": "打样订单明细总费用(含税)"
+        },
+        "samOrderDetSamOrderTotalWt": {
+          "meaning": "打样订单明细总重量"
+        },
+        "samOrderDetSamOrderUnitCode": {
+          "meaning": "打样订单明细单位id"
+        },
+        "samOrderDetSamOrderUpdateTime": {
+          "meaning": "打样订单明细更新时间"
+        },
+        "samOrderDetSamOrderUpdater": {
+          "meaning": "打样订单明细更新人"
+        },
+        "samOrderDetSamOrderUpdaterId": {
+          "meaning": "打样订单明细更新人ID"
+        },
+        "samOrderDetSamOrderUserCode": {
+          "meaning": "打样订单明细智能节点的唯一编码"
+        },
+        "samOrderDetSamOrderVarExtra1": {
+          "meaning": "打样订单明细扩展1"
+        },
+        "samOrderDetSamOrderVarExtra2": {
+          "meaning": "打样订单明细扩展2"
+        },
+        "samOrderDetSamOrderVarExtra3": {
+          "meaning": "打样订单明细扩展3"
+        },
+        "samOrderDetSamOrderVarExtra4": {
+          "meaning": "打样订单明细扩展4"
+        },
+        "samOrderDetSamOrderVarExtra5": {
+          "meaning": "打样订单明细扩展5"
+        },
+        "samOrderDetSamOrderVersion": {
+          "meaning": "打样订单明细版本号"
+        },
+        "samOrderDetSerialNumber": {
+          "meaning": "打样订单明细顺序号"
+        },
+        "samOrderDetSettleAmount": {
+          "meaning": "打样订单明细结算金额（默认与含税总金额相等），写入库存价格字段"
+        },
+        "samOrderDetSettlePrice": {
+          "meaning": "打样订单明细结算单价（默认与含税单价相等），写入库存价格字段"
+        },
+        "samOrderDetSettleTotalAmount": {
+          "meaning": "打样订单明细结算金额（默认与含税总金额相等），写入库存价格字段"
+        },
+        "samOrderDetSource": {
+          "meaning": "打样订单明细源"
+        },
+        "samOrderDetSourceType": {
+          "meaning": "打样订单明细来源类型"
+        },
+        "samOrderDetSpareQty": {
+          "meaning": "打样订单明细备用数量"
+        },
+        "samOrderDetState": {
+          "meaning": "打样订单明细通用状态"
+        },
+        "samOrderDetStatesInboundOrders": {
+          "meaning": "打样订单明细订单入库状态"
+        },
+        "samOrderDetStockQty": {
+          "meaning": "打样订单明细备库存数量"
+        },
+        "samOrderDetSumQty": {
+          "meaning": "打样订单明细总数量"
+        },
+        "samOrderDetSystemCode": {
+          "meaning": "打样订单明细系统编码"
+        },
+        "samOrderDetTarget": {
+          "meaning": "打样订单明细目标"
+        },
+        "samOrderDetTaskNodeName": {
+          "meaning": "打样订单明细任务节点名称"
+        },
+        "samOrderDetTaxExclPrice": {
+          "meaning": "打样订单明细不含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "samOrderDetTaxExclTotal": {
+          "meaning": "打样订单明细不含税总金额"
+        },
+        "samOrderDetTaxExclUnitPrice": {
+          "meaning": "打样订单明细不含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "samOrderDetTaxInclPrice": {
+          "meaning": "打样订单明细含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "samOrderDetTaxInclTotal": {
+          "meaning": "打样订单明细含税总金额"
+        },
+        "samOrderDetTenantId": {
+          "meaning": "打样订单明细租户ID"
+        },
+        "samOrderDetTerminalCode": {
+          "meaning": "打样订单明细终端编码"
+        },
+        "samOrderDetTerminalCustId": {
+          "meaning": "打样订单明细终端客户id"
+        },
+        "samOrderDetThirdPartyClass": {
+          "meaning": "打样订单明细第三方分类"
+        },
+        "samOrderDetThirdPartyId": {
+          "meaning": "打样订单明细第三方系统中的唯一ID"
+        },
+        "samOrderDetThirdPartyName": {
+          "meaning": "打样订单明细第三方名称"
+        },
+        "samOrderDetToAuditDate": {
+          "meaning": "samOrderDetToAuditDate"
+        },
+        "samOrderDetToBeginTime": {
+          "meaning": "samOrderDetToBeginTime"
+        },
+        "samOrderDetToCreateTime": {
+          "meaning": "samOrderDetToCreateTime"
+        },
+        "samOrderDetToDateExtra1": {
+          "meaning": "samOrderDetToDateExtra1"
+        },
+        "samOrderDetToDateExtra2": {
+          "meaning": "samOrderDetToDateExtra2"
+        },
+        "samOrderDetToDateExtra3": {
+          "meaning": "samOrderDetToDateExtra3"
+        },
+        "samOrderDetToDateExtra4": {
+          "meaning": "samOrderDetToDateExtra4"
+        },
+        "samOrderDetToDateExtra5": {
+          "meaning": "samOrderDetToDateExtra5"
+        },
+        "samOrderDetToDeliveryDate": {
+          "meaning": "samOrderDetToDeliveryDate"
+        },
+        "samOrderDetToEndTime": {
+          "meaning": "samOrderDetToEndTime"
+        },
+        "samOrderDetToExpectedDate": {
+          "type": "object",
+          "meaning": "samOrderDetToExpectedDate"
+        },
+        "samOrderDetToReceiptDate": {
+          "meaning": "samOrderDetToReceiptDate"
+        },
+        "samOrderDetToUpdateTime": {
+          "meaning": "samOrderDetToUpdateTime"
+        },
+        "samOrderDetTotalInboundOrders": {
+          "meaning": "打样订单明细订单累计入库数量"
+        },
+        "samOrderDetUnitCode": {
+          "meaning": "打样订单明细单位id"
+        },
+        "samOrderDetUnitPriceTax": {
+          "meaning": "打样订单明细含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "samOrderDetUpdateTime": {
+          "meaning": "打样订单明细更新时间"
+        },
+        "samOrderDetUpdater": {
+          "meaning": "打样订单明细更新人"
+        },
+        "samOrderDetUpdaterId": {
+          "meaning": "打样订单明细更新人ID"
+        },
+        "samOrderDetUsedQty": {
+          "meaning": "打样订单明细使用库存数量"
+        },
+        "samOrderDetUserCode": {
+          "meaning": "打样订单明细智能节点的唯一编码"
+        },
+        "samOrderDetVarExtra1": {
+          "meaning": "打样订单明细扩展1"
+        },
+        "samOrderDetVarExtra2": {
+          "meaning": "打样订单明细扩展2"
+        },
+        "samOrderDetVarExtra3": {
+          "meaning": "打样订单明细扩展3"
+        },
+        "samOrderDetVarExtra4": {
+          "meaning": "打样订单明细扩展4"
+        },
+        "samOrderDetVarExtra5": {
+          "meaning": "打样订单明细扩展5"
+        },
+        "samOrderDetVersion": {
+          "meaning": "打样订单明细版本号"
+        },
+        "samOrderDetWorkOrderQuantity": {
+          "meaning": "打样订单明细已开单数量"
+        },
+        "samOrderDetWorkOrderStatus": {
+          "meaning": "打样订单明细已开单状态"
+        }
+      }
+    }

@@ -1,0 +1,365 @@
+{
+      "api_name": "/fcst-po-det/findList",
+      "table_name": "fcst po 明细",
+      "request": {
+        "fcstPoDetClazz": "FCST_PO_DET"
+      },
+      "mainTabClazz": "FCST_PO_DET",
+      "response": {
+        "fcstPoDetActualTimeRequired": {
+          "meaning": "fcst po 明细实际需时(小时)"
+        },
+        "fcstPoDetAdjustmentTimeRequired": {
+          "meaning": "fcst po 明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "fcstPoDetApplicationId": {
+          "meaning": "fcst po 明细应用ID"
+        },
+        "fcstPoDetAuditDate": {
+          "meaning": "fcst po 明细审核时间"
+        },
+        "fcstPoDetAuditStatus": {
+          "meaning": "fcst po 明细审核状态"
+        },
+        "fcstPoDetAvailableScheduleId": {
+          "meaning": "fcst po 明细可用日程id"
+        },
+        "fcstPoDetBeginTime": {
+          "meaning": "fcst po 明细开始时间"
+        },
+        "fcstPoDetBizVersion": {
+          "meaning": "fcst po 明细业务自定义版本号"
+        },
+        "fcstPoDetBriefName": {
+          "meaning": "fcst po 明细简称"
+        },
+        "fcstPoDetBusDivisId": {
+          "meaning": "fcst po 明细事业部id"
+        },
+        "fcstPoDetClazz": {
+          "meaning": "fcst po 明细子类 类名（表和类一一对应）"
+        },
+        "fcstPoDetClosedReason": {
+          "meaning": "fcst po 明细结案原因"
+        },
+        "fcstPoDetClosedStatus": {
+          "meaning": "fcst po 明细结案状态"
+        },
+        "fcstPoDetComment": {
+          "meaning": "fcst po 明细评论"
+        },
+        "fcstPoDetCompleteQuantity": {
+          "meaning": "fcst po 明细完成数量"
+        },
+        "fcstPoDetCompleteStatus": {
+          "meaning": "fcst po 明细完成状态"
+        },
+        "fcstPoDetCreateTime": {
+          "meaning": "fcst po 明细创建时间"
+        },
+        "fcstPoDetCreator": {
+          "meaning": "fcst po 明细创建人"
+        },
+        "fcstPoDetCreatorId": {
+          "meaning": "fcst po 明细创建人ID"
+        },
+        "fcstPoDetDateExtra1": {
+          "meaning": "fcst po 明细扩展时间1"
+        },
+        "fcstPoDetDateExtra2": {
+          "meaning": "fcst po 明细扩展时间2"
+        },
+        "fcstPoDetDateExtra3": {
+          "meaning": "fcst po 明细扩展时间3"
+        },
+        "fcstPoDetDateExtra4": {
+          "meaning": "fcst po 明细扩展时间4"
+        },
+        "fcstPoDetDateExtra5": {
+          "meaning": "fcst po 明细扩展时间5"
+        },
+        "fcstPoDetDefaultType": {
+          "meaning": "fcst po 明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "fcstPoDetDeliveryDate": {
+          "meaning": "fcst po 明细交货日期"
+        },
+        "fcstPoDetDescription": {
+          "meaning": "fcst po 明细描述"
+        },
+        "fcstPoDetEndTime": {
+          "meaning": "fcst po 明细结束时间"
+        },
+        "fcstPoDetEndTimeRequired": {
+          "meaning": "fcst po 明细最后需时(小时)"
+        },
+        "fcstPoDetEngName": {
+          "meaning": "fcst po 明细英文名称"
+        },
+        "fcstPoDetEquipmentId": {
+          "meaning": "fcst po 明细设备id"
+        },
+        "fcstPoDetExchangeRateId": {
+          "meaning": "fcst po 明细币种汇率id"
+        },
+        "fcstPoDetExtension": {
+          "meaning": "fcst po 明细扩展数据"
+        },
+        "fcstPoDetExternalState": {
+          "meaning": "fcst po 明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "fcstPoDetFilterClazz": {
+          "meaning": "fcst po 明细冗余字段用于筛选"
+        },
+        "fcstPoDetFlags": {
+          "meaning": "fcst po 明细63位标志位"
+        },
+        "fcstPoDetFromAuditDate": {
+          "meaning": "fcstPoDetFromAuditDate"
+        },
+        "fcstPoDetFromBeginTime": {
+          "meaning": "fcstPoDetFromBeginTime"
+        },
+        "fcstPoDetFromCreateTime": {
+          "meaning": "fcstPoDetFromCreateTime"
+        },
+        "fcstPoDetFromDateExtra1": {
+          "meaning": "fcstPoDetFromDateExtra1"
+        },
+        "fcstPoDetFromDateExtra2": {
+          "meaning": "fcstPoDetFromDateExtra2"
+        },
+        "fcstPoDetFromDateExtra3": {
+          "meaning": "fcstPoDetFromDateExtra3"
+        },
+        "fcstPoDetFromDateExtra4": {
+          "meaning": "fcstPoDetFromDateExtra4"
+        },
+        "fcstPoDetFromDateExtra5": {
+          "meaning": "fcstPoDetFromDateExtra5"
+        },
+        "fcstPoDetFromDeliveryDate": {
+          "meaning": "fcstPoDetFromDeliveryDate"
+        },
+        "fcstPoDetFromEndTime": {
+          "meaning": "fcstPoDetFromEndTime"
+        },
+        "fcstPoDetFromReceiptDate": {
+          "meaning": "fcstPoDetFromReceiptDate"
+        },
+        "fcstPoDetFromUpdateTime": {
+          "meaning": "fcstPoDetFromUpdateTime"
+        },
+        "fcstPoDetFscType": {
+          "meaning": "fcst po 明细FSC声明"
+        },
+        "fcstPoDetGenerativePeople": {
+          "meaning": "fcst po 明细下发人"
+        },
+        "fcstPoDetGenerativeState": {
+          "meaning": "fcst po 明细下发状态"
+        },
+        "fcstPoDetGroovyScript": {
+          "meaning": "fcst po 明细groovy脚本"
+        },
+        "fcstPoDetGropeCode": {
+          "meaning": "fcst po 明细搜索码"
+        },
+        "fcstPoDetId": {
+          "meaning": "fcst po 明细pk",
+          "is_primary": true
+        },
+        "fcstPoDetInUsed": {
+          "meaning": "fcst po 明细是否被使用"
+        },
+        "fcstPoDetInvTypeTaxRateId": {
+          "meaning": "fcst po 明细发票税率id"
+        },
+        "fcstPoDetIsBanned": {
+          "meaning": "fcst po 明细是否被禁用"
+        },
+        "fcstPoDetIsDeleted": {
+          "meaning": "fcst po 明细是否被删除"
+        },
+        "fcstPoDetIsLeaf": {
+          "meaning": "fcst po 明细是否叶子节点"
+        },
+        "fcstPoDetIsMainFlow": {
+          "meaning": "fcst po 明细是否是主流程"
+        },
+        "fcstPoDetIsManualModificationDate": {
+          "meaning": "fcst po 明细是否手动修改计划生产时间"
+        },
+        "fcstPoDetIsolation": {
+          "meaning": "fcst po 明细智能节点数据隔离标识"
+        },
+        "fcstPoDetJsScript": {
+          "meaning": "fcst po 明细js脚本"
+        },
+        "fcstPoDetMaterialId": {
+          "meaning": "fcst po 明细物料id"
+        },
+        "fcstPoDetName": {
+          "meaning": "fcst po 明细智能节点名"
+        },
+        "fcstPoDetNameCodeSearch": {
+          "meaning": "fcst po 明细name、user_code模糊搜索"
+        },
+        "fcstPoDetNumberExtra1": {
+          "meaning": "fcst po 明细扩展数量1"
+        },
+        "fcstPoDetNumberExtra2": {
+          "meaning": "fcst po 明细扩展数量2"
+        },
+        "fcstPoDetNumberExtra3": {
+          "meaning": "fcst po 明细扩展数量3"
+        },
+        "fcstPoDetNumberExtra4": {
+          "meaning": "fcst po 明细扩展数量4"
+        },
+        "fcstPoDetNumberExtra5": {
+          "meaning": "fcst po 明细扩展数量5"
+        },
+        "fcstPoDetParentId": {
+          "meaning": "fcst po 明细父节点ID"
+        },
+        "fcstPoDetPlannedOutputQuantity": {
+          "meaning": "fcst po 明细计划产出数量"
+        },
+        "fcstPoDetPlannedTimeRequired": {
+          "meaning": "fcst po 明细计划需时(小时)"
+        },
+        "fcstPoDetPrintTimes": {
+          "meaning": "fcst po 明细打印次数"
+        },
+        "fcstPoDetPriority": {
+          "meaning": "fcst po 明细优先级"
+        },
+        "fcstPoDetProcessInstanceId": {
+          "meaning": "fcst po 明细流程实例ID"
+        },
+        "fcstPoDetProductionProcessesTypeId": {
+          "meaning": "fcst po 明细工序类型ID"
+        },
+        "fcstPoDetProductionShiftId": {
+          "meaning": "fcst po 明细生产班次ID"
+        },
+        "fcstPoDetQuantity": {
+          "meaning": "fcst po 明细任务数量"
+        },
+        "fcstPoDetReceiptDate": {
+          "meaning": "fcst po 明细单据日期"
+        },
+        "fcstPoDetReceiptType": {
+          "meaning": "fcst po 明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "fcstPoDetRelatedTasksId": {
+          "meaning": "fcst po 明细关联任务id"
+        },
+        "fcstPoDetSerialNumber": {
+          "meaning": "fcst po 明细顺序号"
+        },
+        "fcstPoDetSource": {
+          "meaning": "fcst po 明细源"
+        },
+        "fcstPoDetSourceType": {
+          "meaning": "fcst po 明细来源类型"
+        },
+        "fcstPoDetState": {
+          "meaning": "fcst po 明细通用状态"
+        },
+        "fcstPoDetSystemCode": {
+          "meaning": "fcst po 明细系统编码"
+        },
+        "fcstPoDetTarget": {
+          "meaning": "fcst po 明细目标"
+        },
+        "fcstPoDetTaskNodeName": {
+          "meaning": "fcst po 明细任务节点名称"
+        },
+        "fcstPoDetTenantId": {
+          "meaning": "fcst po 明细租户ID"
+        },
+        "fcstPoDetThirdPartyClass": {
+          "meaning": "fcst po 明细第三方分类"
+        },
+        "fcstPoDetThirdPartyId": {
+          "meaning": "fcst po 明细第三方系统中的唯一ID"
+        },
+        "fcstPoDetThirdPartyName": {
+          "meaning": "fcst po 明细第三方名称"
+        },
+        "fcstPoDetToAuditDate": {
+          "meaning": "fcstPoDetToAuditDate"
+        },
+        "fcstPoDetToBeginTime": {
+          "meaning": "fcstPoDetToBeginTime"
+        },
+        "fcstPoDetToCreateTime": {
+          "meaning": "fcstPoDetToCreateTime"
+        },
+        "fcstPoDetToDateExtra1": {
+          "meaning": "fcstPoDetToDateExtra1"
+        },
+        "fcstPoDetToDateExtra2": {
+          "meaning": "fcstPoDetToDateExtra2"
+        },
+        "fcstPoDetToDateExtra3": {
+          "meaning": "fcstPoDetToDateExtra3"
+        },
+        "fcstPoDetToDateExtra4": {
+          "meaning": "fcstPoDetToDateExtra4"
+        },
+        "fcstPoDetToDateExtra5": {
+          "meaning": "fcstPoDetToDateExtra5"
+        },
+        "fcstPoDetToDeliveryDate": {
+          "meaning": "fcstPoDetToDeliveryDate"
+        },
+        "fcstPoDetToEndTime": {
+          "meaning": "fcstPoDetToEndTime"
+        },
+        "fcstPoDetToReceiptDate": {
+          "meaning": "fcstPoDetToReceiptDate"
+        },
+        "fcstPoDetToUpdateTime": {
+          "meaning": "fcstPoDetToUpdateTime"
+        },
+        "fcstPoDetUnitCode": {
+          "meaning": "fcst po 明细单位id"
+        },
+        "fcstPoDetUpdateTime": {
+          "meaning": "fcst po 明细更新时间"
+        },
+        "fcstPoDetUpdater": {
+          "meaning": "fcst po 明细更新人"
+        },
+        "fcstPoDetUpdaterId": {
+          "meaning": "fcst po 明细更新人ID"
+        },
+        "fcstPoDetUserCode": {
+          "meaning": "fcst po 明细智能节点的唯一编码"
+        },
+        "fcstPoDetVarExtra1": {
+          "meaning": "fcst po 明细扩展1"
+        },
+        "fcstPoDetVarExtra2": {
+          "meaning": "fcst po 明细扩展2"
+        },
+        "fcstPoDetVarExtra3": {
+          "meaning": "fcst po 明细扩展3"
+        },
+        "fcstPoDetVarExtra4": {
+          "meaning": "fcst po 明细扩展4"
+        },
+        "fcstPoDetVarExtra5": {
+          "meaning": "fcst po 明细扩展5"
+        },
+        "fcstPoDetVersion": {
+          "meaning": "fcst po 明细版本号"
+        },
+        "fcstPoDetWeek": {
+          "meaning": "fcst po 明细周数"
+        }
+      }
+    }

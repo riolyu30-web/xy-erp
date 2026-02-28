@@ -1,0 +1,233 @@
+{
+      "api_name": "/project/findList",
+      "table_name": "项目表",
+      "request": {
+        "projectClazz": "PROJECT"
+      },
+      "mainTabClazz": "PROJECT",
+      "response": {
+        "projectApplicationId": {
+          "meaning": "项目表应用ID"
+        },
+        "projectAuditDate": {
+          "meaning": "项目表审核时间"
+        },
+        "projectAuditStatus": {
+          "meaning": "项目表审核状态"
+        },
+        "projectBizVersion": {
+          "meaning": "项目表业务自定义版本号"
+        },
+        "projectBriefName": {
+          "meaning": "项目表简称"
+        },
+        "projectBusDivisId": {
+          "meaning": "项目表事业部id"
+        },
+        "projectClazz": {
+          "meaning": "项目表子类 类名（表和类一一对应）"
+        },
+        "projectComment": {
+          "meaning": "项目表评论"
+        },
+        "projectCreateTime": {
+          "meaning": "项目表创建时间"
+        },
+        "projectCreator": {
+          "meaning": "项目表创建人"
+        },
+        "projectCreatorId": {
+          "meaning": "项目表创建人ID"
+        },
+        "projectDateExtra1": {
+          "meaning": "项目表扩展时间1"
+        },
+        "projectDateExtra2": {
+          "meaning": "项目表扩展时间2"
+        },
+        "projectDateExtra3": {
+          "meaning": "项目表扩展时间3"
+        },
+        "projectDateExtra4": {
+          "meaning": "项目表扩展时间4"
+        },
+        "projectDateExtra5": {
+          "meaning": "项目表扩展时间5"
+        },
+        "projectDefaultType": {
+          "meaning": "项目表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "projectDescription": {
+          "meaning": "项目表描述"
+        },
+        "projectEngName": {
+          "meaning": "项目表英文名称"
+        },
+        "projectExtension": {
+          "meaning": "项目表扩展数据"
+        },
+        "projectExternalState": {
+          "meaning": "项目表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "projectFlags": {
+          "meaning": "项目表63位标志位"
+        },
+        "projectFromAuditDate": {
+          "meaning": "projectFromAuditDate"
+        },
+        "projectFromCreateTime": {
+          "meaning": "projectFromCreateTime"
+        },
+        "projectFromDateExtra1": {
+          "meaning": "projectFromDateExtra1"
+        },
+        "projectFromDateExtra2": {
+          "meaning": "projectFromDateExtra2"
+        },
+        "projectFromDateExtra3": {
+          "meaning": "projectFromDateExtra3"
+        },
+        "projectFromDateExtra4": {
+          "meaning": "projectFromDateExtra4"
+        },
+        "projectFromDateExtra5": {
+          "meaning": "projectFromDateExtra5"
+        },
+        "projectFromUpdateTime": {
+          "meaning": "projectFromUpdateTime"
+        },
+        "projectGroovyScript": {
+          "meaning": "项目表groovy脚本"
+        },
+        "projectGropeCode": {
+          "meaning": "项目表搜索码"
+        },
+        "projectId": {
+          "meaning": "项目表pk",
+          "is_primary": true
+        },
+        "projectInUsed": {
+          "meaning": "项目表是否被使用"
+        },
+        "projectIsBanned": {
+          "meaning": "项目表是否被禁用"
+        },
+        "projectIsDeleted": {
+          "meaning": "项目表是否被删除"
+        },
+        "projectIsMainFlow": {
+          "meaning": "项目表是否是主流程"
+        },
+        "projectIsolation": {
+          "meaning": "项目表智能节点数据隔离标识"
+        },
+        "projectJsScript": {
+          "meaning": "项目表js脚本"
+        },
+        "projectName": {
+          "meaning": "项目表智能节点名"
+        },
+        "projectNameCodeSearch": {
+          "meaning": "项目表name、user_code模糊搜索"
+        },
+        "projectNumberExtra1": {
+          "meaning": "项目表扩展数量1"
+        },
+        "projectNumberExtra2": {
+          "meaning": "项目表扩展数量2"
+        },
+        "projectNumberExtra3": {
+          "meaning": "项目表扩展数量3"
+        },
+        "projectNumberExtra4": {
+          "meaning": "项目表扩展数量4"
+        },
+        "projectNumberExtra5": {
+          "meaning": "项目表扩展数量5"
+        },
+        "projectParentId": {
+          "meaning": "项目表父节点ID"
+        },
+        "projectProcessInstanceId": {
+          "meaning": "项目表流程实例ID"
+        },
+        "projectSerialNumber": {
+          "meaning": "项目表顺序号"
+        },
+        "projectState": {
+          "meaning": "项目表通用状态"
+        },
+        "projectSystemCode": {
+          "meaning": "项目表系统编码"
+        },
+        "projectTaskNodeName": {
+          "meaning": "项目表任务节点名称"
+        },
+        "projectTenantId": {
+          "meaning": "项目表租户id"
+        },
+        "projectThirdPartyClass": {
+          "meaning": "项目表第三方分类"
+        },
+        "projectThirdPartyId": {
+          "meaning": "项目表第三方系统中的唯一ID"
+        },
+        "projectThirdPartyName": {
+          "meaning": "项目表第三方名称"
+        },
+        "projectToAuditDate": {
+          "meaning": "projectToAuditDate"
+        },
+        "projectToCreateTime": {
+          "meaning": "projectToCreateTime"
+        },
+        "projectToDateExtra1": {
+          "meaning": "projectToDateExtra1"
+        },
+        "projectToDateExtra2": {
+          "meaning": "projectToDateExtra2"
+        },
+        "projectToDateExtra3": {
+          "meaning": "projectToDateExtra3"
+        },
+        "projectToDateExtra4": {
+          "meaning": "projectToDateExtra4"
+        },
+        "projectToDateExtra5": {
+          "meaning": "projectToDateExtra5"
+        },
+        "projectToUpdateTime": {
+          "meaning": "projectToUpdateTime"
+        },
+        "projectUpdateTime": {
+          "meaning": "项目表更新时间"
+        },
+        "projectUpdater": {
+          "meaning": "项目表更新人"
+        },
+        "projectUpdaterId": {
+          "meaning": "项目表更新人ID"
+        },
+        "projectUserCode": {
+          "meaning": "项目表智能节点的唯一编码"
+        },
+        "projectVarExtra1": {
+          "meaning": "项目表扩展1"
+        },
+        "projectVarExtra2": {
+          "meaning": "项目表扩展2"
+        },
+        "projectVarExtra3": {
+          "meaning": "项目表扩展3"
+        },
+        "projectVarExtra4": {
+          "meaning": "项目表扩展4"
+        },
+        "projectVarExtra5": {
+          "meaning": "项目表扩展5"
+        },
+        "projectVersion": {
+          "meaning": "项目表版本号"
+        }
+      }
+    }

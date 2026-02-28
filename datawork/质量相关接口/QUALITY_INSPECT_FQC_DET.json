@@ -1,0 +1,795 @@
+{
+      "api_name": "/quality-inspect-fqc-det/findList",
+      "table_name": "FQC明细",
+      "request": {
+        "qualityInspectFqcDetQualityInspectFqcClazz": "QUALITY_INSPECT_FQC",
+        "qualityInspectFqcDetClazz": "QUALITY_INSPECT_FQC_DET"
+      },
+      "mainTabClazz": "QUALITY_INSPECT_FQC_DET",
+      "response": {
+        "alityInspectFqcDetQualityInspectFqcAvailableScheduleId": {
+          "meaning": "FQC明细可用日程id"
+        },
+        "alityInspectFqcDetQualityInspectFqcPlannedTimeRequired": {
+          "meaning": "FQC明细计划需时(小时)"
+        },
+        "inspectFqcDetQualityInspectFqcIsManualModificationDate": {
+          "meaning": "FQC明细是否手动修改计划生产时间"
+        },
+        "ityInspectFqcDetQualityInspectFqcPlannedOutputQuantity": {
+          "meaning": "FQC明细计划产出数量"
+        },
+        "nspectFqcDetQualityInspectFqcProductionProcessesTypeId": {
+          "meaning": "FQC明细工序类型ID"
+        },
+        "qualityInspectFqcDetAcceptQty": {
+          "meaning": "FQC明细接受数量"
+        },
+        "qualityInspectFqcDetActualTimeRequired": {
+          "meaning": "FQC明细实际需时(小时)"
+        },
+        "qualityInspectFqcDetAdjustmentTimeRequired": {
+          "meaning": "FQC明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "qualityInspectFqcDetApplicationId": {
+          "meaning": "FQC明细应用ID"
+        },
+        "qualityInspectFqcDetAqlLevelId": {
+          "meaning": "FQC明细AQL检查等级id"
+        },
+        "qualityInspectFqcDetAuditDate": {
+          "meaning": "FQC明细审核时间"
+        },
+        "qualityInspectFqcDetAuditStatus": {
+          "meaning": "FQC明细审核状态"
+        },
+        "qualityInspectFqcDetAvailableScheduleId": {
+          "meaning": "FQC明细可用日程id"
+        },
+        "qualityInspectFqcDetBasis": {
+          "meaning": "FQC明细质检依据"
+        },
+        "qualityInspectFqcDetBeginTime": {
+          "meaning": "FQC明细开始时间"
+        },
+        "qualityInspectFqcDetBizVersion": {
+          "meaning": "FQC明细业务自定义版本号"
+        },
+        "qualityInspectFqcDetBriefName": {
+          "meaning": "FQC明细简称"
+        },
+        "qualityInspectFqcDetBusDivisId": {
+          "meaning": "FQC明细事业部id"
+        },
+        "qualityInspectFqcDetCheckQuantity": {
+          "meaning": "FQC明细检验数量"
+        },
+        "qualityInspectFqcDetCheckStanId": {
+          "meaning": "FQC明细质量检验标准id"
+        },
+        "qualityInspectFqcDetClazz": {
+          "meaning": "FQC明细子类 类名（表和类一一对应）"
+        },
+        "qualityInspectFqcDetClosedReason": {
+          "meaning": "FQC明细结案原因"
+        },
+        "qualityInspectFqcDetClosedStatus": {
+          "meaning": "FQC明细结案状态"
+        },
+        "qualityInspectFqcDetComment": {
+          "meaning": "FQC明细评论"
+        },
+        "qualityInspectFqcDetCompleteQuantity": {
+          "meaning": "FQC明细完成数量"
+        },
+        "qualityInspectFqcDetCompleteStatus": {
+          "meaning": "FQC明细完成状态"
+        },
+        "qualityInspectFqcDetCreateTime": {
+          "meaning": "FQC明细创建时间"
+        },
+        "qualityInspectFqcDetCreator": {
+          "meaning": "FQC明细创建人"
+        },
+        "qualityInspectFqcDetCreatorId": {
+          "meaning": "FQC明细创建人ID"
+        },
+        "qualityInspectFqcDetDateExtra1": {
+          "meaning": "FQC明细扩展时间1"
+        },
+        "qualityInspectFqcDetDateExtra2": {
+          "meaning": "FQC明细扩展时间2"
+        },
+        "qualityInspectFqcDetDateExtra3": {
+          "meaning": "FQC明细扩展时间3"
+        },
+        "qualityInspectFqcDetDateExtra4": {
+          "meaning": "FQC明细扩展时间4"
+        },
+        "qualityInspectFqcDetDateExtra5": {
+          "meaning": "FQC明细扩展时间5"
+        },
+        "qualityInspectFqcDetDefaultType": {
+          "meaning": "FQC明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "qualityInspectFqcDetDefectTotalQty": {
+          "meaning": "FQC明细缺陷总数"
+        },
+        "qualityInspectFqcDetDeliveryDate": {
+          "meaning": "FQC明细交货日期"
+        },
+        "qualityInspectFqcDetDescription": {
+          "meaning": "FQC明细描述"
+        },
+        "qualityInspectFqcDetDutyDept": {
+          "meaning": "FQC明细责任部门"
+        },
+        "qualityInspectFqcDetDutyDeptId": {
+          "meaning": "FQC明细责任部门id"
+        },
+        "qualityInspectFqcDetDutyUser": {
+          "meaning": "FQC明细责任人"
+        },
+        "qualityInspectFqcDetEndTime": {
+          "meaning": "FQC明细结束时间"
+        },
+        "qualityInspectFqcDetEndTimeRequired": {
+          "meaning": "FQC明细最后需时(小时)"
+        },
+        "qualityInspectFqcDetEngName": {
+          "meaning": "FQC明细英文名称"
+        },
+        "qualityInspectFqcDetEquipmentId": {
+          "meaning": "FQC明细设备id"
+        },
+        "qualityInspectFqcDetExchangeRateId": {
+          "meaning": "FQC明细币种汇率id"
+        },
+        "qualityInspectFqcDetExtension": {
+          "meaning": "FQC明细扩展数据"
+        },
+        "qualityInspectFqcDetExternalState": {
+          "meaning": "FQC明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "qualityInspectFqcDetFilterClazz": {
+          "meaning": "FQC明细冗余字段用于筛选"
+        },
+        "qualityInspectFqcDetFinishTime": {
+          "meaning": "FQC明细来源值"
+        },
+        "qualityInspectFqcDetFlags": {
+          "meaning": "FQC明细63位标志位"
+        },
+        "qualityInspectFqcDetFromAuditDate": {
+          "meaning": "qualityInspectFqcDetFromAuditDate"
+        },
+        "qualityInspectFqcDetFromBeginTime": {
+          "meaning": "qualityInspectFqcDetFromBeginTime"
+        },
+        "qualityInspectFqcDetFromCreateTime": {
+          "meaning": "qualityInspectFqcDetFromCreateTime"
+        },
+        "qualityInspectFqcDetFromDateExtra1": {
+          "meaning": "qualityInspectFqcDetFromDateExtra1"
+        },
+        "qualityInspectFqcDetFromDateExtra2": {
+          "meaning": "qualityInspectFqcDetFromDateExtra2"
+        },
+        "qualityInspectFqcDetFromDateExtra3": {
+          "meaning": "qualityInspectFqcDetFromDateExtra3"
+        },
+        "qualityInspectFqcDetFromDateExtra4": {
+          "meaning": "qualityInspectFqcDetFromDateExtra4"
+        },
+        "qualityInspectFqcDetFromDateExtra5": {
+          "meaning": "qualityInspectFqcDetFromDateExtra5"
+        },
+        "qualityInspectFqcDetFromDeliveryDate": {
+          "meaning": "qualityInspectFqcDetFromDeliveryDate"
+        },
+        "qualityInspectFqcDetFromEndTime": {
+          "meaning": "qualityInspectFqcDetFromEndTime"
+        },
+        "qualityInspectFqcDetFromFinishTime": {
+          "meaning": "qualityInspectFqcDetFromFinishTime"
+        },
+        "qualityInspectFqcDetFromReceiptDate": {
+          "meaning": "qualityInspectFqcDetFromReceiptDate"
+        },
+        "qualityInspectFqcDetFromUpdateTime": {
+          "meaning": "qualityInspectFqcDetFromUpdateTime"
+        },
+        "qualityInspectFqcDetFscType": {
+          "meaning": "FQC明细FSC声明"
+        },
+        "qualityInspectFqcDetGenerativePeople": {
+          "meaning": "FQC明细下发人"
+        },
+        "qualityInspectFqcDetGenerativeState": {
+          "meaning": "FQC明细下发状态"
+        },
+        "qualityInspectFqcDetGroovyScript": {
+          "meaning": "FQC明细groovy脚本"
+        },
+        "qualityInspectFqcDetGropeCode": {
+          "meaning": "FQC明细搜索码"
+        },
+        "qualityInspectFqcDetHandlingMethod": {
+          "meaning": "FQC明细处理方式"
+        },
+        "qualityInspectFqcDetId": {
+          "meaning": "FQC明细PK",
+          "is_primary": true
+        },
+        "qualityInspectFqcDetInUsed": {
+          "meaning": "FQC明细是否被使用"
+        },
+        "qualityInspectFqcDetInspectorId": {
+          "meaning": "FQC明细质检员id"
+        },
+        "qualityInspectFqcDetInvTypeTaxRateId": {
+          "meaning": "FQC明细发票税率id"
+        },
+        "qualityInspectFqcDetIsBanned": {
+          "meaning": "FQC明细是否被禁用"
+        },
+        "qualityInspectFqcDetIsDeleted": {
+          "meaning": "FQC明细是否被删除"
+        },
+        "qualityInspectFqcDetIsLeaf": {
+          "meaning": "FQC明细是否叶子节点"
+        },
+        "qualityInspectFqcDetIsMainFlow": {
+          "meaning": "FQC明细是否是主流程"
+        },
+        "qualityInspectFqcDetIsManualModificationDate": {
+          "meaning": "FQC明细是否手动修改计划生产时间"
+        },
+        "qualityInspectFqcDetIsolation": {
+          "meaning": "FQC明细智能节点数据隔离标识"
+        },
+        "qualityInspectFqcDetJsScript": {
+          "meaning": "FQC明细js脚本"
+        },
+        "qualityInspectFqcDetMaterialId": {
+          "meaning": "FQC明细物料id"
+        },
+        "qualityInspectFqcDetName": {
+          "meaning": "FQC明细智能节点名"
+        },
+        "qualityInspectFqcDetNameCodeSearch": {
+          "meaning": "FQC明细name、user_code模糊搜索"
+        },
+        "qualityInspectFqcDetNumberExtra1": {
+          "meaning": "FQC明细扩展数量1"
+        },
+        "qualityInspectFqcDetNumberExtra2": {
+          "meaning": "FQC明细扩展数量2"
+        },
+        "qualityInspectFqcDetNumberExtra3": {
+          "meaning": "FQC明细扩展数量3"
+        },
+        "qualityInspectFqcDetNumberExtra4": {
+          "meaning": "FQC明细扩展数量4"
+        },
+        "qualityInspectFqcDetNumberExtra5": {
+          "meaning": "FQC明细扩展数量5"
+        },
+        "qualityInspectFqcDetParentId": {
+          "meaning": "FQC明细父节点ID"
+        },
+        "qualityInspectFqcDetPlannedOutputQuantity": {
+          "meaning": "FQC明细计划产出数量"
+        },
+        "qualityInspectFqcDetPlannedTimeRequired": {
+          "meaning": "FQC明细计划需时(小时)"
+        },
+        "qualityInspectFqcDetPrintTimes": {
+          "meaning": "FQC明细打印次数"
+        },
+        "qualityInspectFqcDetPriority": {
+          "meaning": "FQC明细优先级"
+        },
+        "qualityInspectFqcDetProcessInstanceId": {
+          "meaning": "FQC明细流程实例ID"
+        },
+        "qualityInspectFqcDetProductionProcessesTypeId": {
+          "meaning": "FQC明细工序类型ID"
+        },
+        "qualityInspectFqcDetProductionShiftId": {
+          "meaning": "FQC明细生产班次ID"
+        },
+        "qualityInspectFqcDetQualifiedQuantity": {
+          "meaning": "FQC明细合格数量"
+        },
+        "qualityInspectFqcDetQualityInspectFqcActualTimeRequired": {
+          "meaning": "FQC明细实际需时(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcAdjustmentTimeRequired": {
+          "meaning": "FQC明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcApplicationId": {
+          "meaning": "FQC明细应用ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcAuditDate": {
+          "meaning": "FQC明细审核时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcAuditStatus": {
+          "meaning": "FQC明细审核状态"
+        },
+        "qualityInspectFqcDetQualityInspectFqcAvailableScheduleId": {
+          "meaning": "FQC明细可用日程id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcBeginTime": {
+          "meaning": "FQC明细开始时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcBizVersion": {
+          "meaning": "FQC明细业务自定义版本号"
+        },
+        "qualityInspectFqcDetQualityInspectFqcBriefName": {
+          "meaning": "FQC明细简称"
+        },
+        "qualityInspectFqcDetQualityInspectFqcBusDivisId": {
+          "meaning": "FQC明细事业部id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcClazz": {
+          "meaning": "FQC明细子类 类名（表和类一一对应）"
+        },
+        "qualityInspectFqcDetQualityInspectFqcClosedReason": {
+          "meaning": "FQC明细结案原因"
+        },
+        "qualityInspectFqcDetQualityInspectFqcClosedStatus": {
+          "meaning": "FQC明细结案状态"
+        },
+        "qualityInspectFqcDetQualityInspectFqcComment": {
+          "meaning": "FQC明细评论"
+        },
+        "qualityInspectFqcDetQualityInspectFqcCompleteQuantity": {
+          "meaning": "FQC明细完成数量"
+        },
+        "qualityInspectFqcDetQualityInspectFqcCompleteStatus": {
+          "meaning": "FQC明细完成状态"
+        },
+        "qualityInspectFqcDetQualityInspectFqcCreateTime": {
+          "meaning": "FQC明细创建时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcCreator": {
+          "meaning": "FQC明细创建人"
+        },
+        "qualityInspectFqcDetQualityInspectFqcCreatorId": {
+          "meaning": "FQC明细创建人ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDateExtra1": {
+          "meaning": "FQC明细扩展时间1"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDateExtra2": {
+          "meaning": "FQC明细扩展时间2"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDateExtra3": {
+          "meaning": "FQC明细扩展时间3"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDateExtra4": {
+          "meaning": "FQC明细扩展时间4"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDateExtra5": {
+          "meaning": "FQC明细扩展时间5"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDefaultType": {
+          "meaning": "FQC明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDeliveryDate": {
+          "meaning": "FQC明细交货日期"
+        },
+        "qualityInspectFqcDetQualityInspectFqcDescription": {
+          "meaning": "FQC明细描述"
+        },
+        "qualityInspectFqcDetQualityInspectFqcEndTime": {
+          "meaning": "FQC明细结束时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcEndTimeRequired": {
+          "meaning": "FQC明细最后需时(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcEngName": {
+          "meaning": "FQC明细英文名称"
+        },
+        "qualityInspectFqcDetQualityInspectFqcEquipmentId": {
+          "meaning": "FQC明细设备id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcExchangeRateId": {
+          "meaning": "FQC明细币种汇率id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcExtension": {
+          "meaning": "FQC明细扩展数据"
+        },
+        "qualityInspectFqcDetQualityInspectFqcExternalState": {
+          "meaning": "FQC明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFilterClazz": {
+          "meaning": "FQC明细冗余字段用于筛选"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFlags": {
+          "meaning": "FQC明细63位标志位"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromAuditDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromAuditDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromBeginTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromBeginTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromCreateTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromCreateTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDateExtra1": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDateExtra1"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDateExtra2": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDateExtra2"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDateExtra3": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDateExtra3"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDateExtra4": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDateExtra4"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDateExtra5": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDateExtra5"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromDeliveryDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromDeliveryDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromEndTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromEndTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromReceiptDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromReceiptDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFromUpdateTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcFromUpdateTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcFscType": {
+          "meaning": "FQC明细FSC声明"
+        },
+        "qualityInspectFqcDetQualityInspectFqcGenerativePeople": {
+          "meaning": "FQC明细下发人"
+        },
+        "qualityInspectFqcDetQualityInspectFqcGenerativeState": {
+          "meaning": "FQC明细下发状态"
+        },
+        "qualityInspectFqcDetQualityInspectFqcGroovyScript": {
+          "meaning": "FQC明细groovy脚本"
+        },
+        "qualityInspectFqcDetQualityInspectFqcGropeCode": {
+          "meaning": "FQC明细搜索码"
+        },
+        "qualityInspectFqcDetQualityInspectFqcId": {
+          "meaning": "FQC明细PK"
+        },
+        "qualityInspectFqcDetQualityInspectFqcInUsed": {
+          "meaning": "FQC明细是否被使用"
+        },
+        "qualityInspectFqcDetQualityInspectFqcInvTypeTaxRateId": {
+          "meaning": "FQC明细发票税率id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsBanned": {
+          "meaning": "FQC明细是否被禁用"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsDeleted": {
+          "meaning": "FQC明细是否被删除"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsLeaf": {
+          "meaning": "FQC明细是否叶子节点"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsMainFlow": {
+          "meaning": "FQC明细是否是主流程"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsManualModificationDate": {
+          "meaning": "FQC明细是否手动修改计划生产时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcIsolation": {
+          "meaning": "FQC明细智能节点数据隔离标识"
+        },
+        "qualityInspectFqcDetQualityInspectFqcJsScript": {
+          "meaning": "FQC明细js脚本"
+        },
+        "qualityInspectFqcDetQualityInspectFqcMaterialId": {
+          "meaning": "FQC明细物料id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcName": {
+          "meaning": "FQC明细智能节点名"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNameCodeSearch": {
+          "meaning": "FQC明细name、user_code模糊搜索"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNumberExtra1": {
+          "meaning": "FQC明细扩展数量1"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNumberExtra2": {
+          "meaning": "FQC明细扩展数量2"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNumberExtra3": {
+          "meaning": "FQC明细扩展数量3"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNumberExtra4": {
+          "meaning": "FQC明细扩展数量4"
+        },
+        "qualityInspectFqcDetQualityInspectFqcNumberExtra5": {
+          "meaning": "FQC明细扩展数量5"
+        },
+        "qualityInspectFqcDetQualityInspectFqcParentId": {
+          "meaning": "FQC明细父节点ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcPlannedOutputQuantity": {
+          "meaning": "FQC明细计划产出数量"
+        },
+        "qualityInspectFqcDetQualityInspectFqcPlannedTimeRequired": {
+          "meaning": "FQC明细计划需时(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcPrintTimes": {
+          "meaning": "FQC明细打印次数"
+        },
+        "qualityInspectFqcDetQualityInspectFqcPriority": {
+          "meaning": "FQC明细优先级"
+        },
+        "qualityInspectFqcDetQualityInspectFqcProcessInstanceId": {
+          "meaning": "FQC明细流程实例ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcProductionProcessesTypeId": {
+          "meaning": "FQC明细工序类型ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcProductionShiftId": {
+          "meaning": "FQC明细生产班次ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcQuantity": {
+          "meaning": "FQC明细任务数量"
+        },
+        "qualityInspectFqcDetQualityInspectFqcReceiptDate": {
+          "meaning": "FQC明细单据日期"
+        },
+        "qualityInspectFqcDetQualityInspectFqcReceiptType": {
+          "meaning": "FQC明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "qualityInspectFqcDetQualityInspectFqcRelatedTasksId": {
+          "meaning": "FQC明细关联任务id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcSerialNumber": {
+          "meaning": "FQC明细顺序号"
+        },
+        "qualityInspectFqcDetQualityInspectFqcSource": {
+          "meaning": "FQC明细源"
+        },
+        "qualityInspectFqcDetQualityInspectFqcSourceType": {
+          "meaning": "FQC明细来源类型"
+        },
+        "qualityInspectFqcDetQualityInspectFqcState": {
+          "meaning": "FQC明细通用状态"
+        },
+        "qualityInspectFqcDetQualityInspectFqcSystemCode": {
+          "meaning": "FQC明细系统编码"
+        },
+        "qualityInspectFqcDetQualityInspectFqcTarget": {
+          "meaning": "FQC明细目标"
+        },
+        "qualityInspectFqcDetQualityInspectFqcTaskNodeName": {
+          "meaning": "FQC明细任务节点名称"
+        },
+        "qualityInspectFqcDetQualityInspectFqcTenantId": {
+          "meaning": "FQC明细租户_id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcThirdPartyClass": {
+          "meaning": "FQC明细第三方分类"
+        },
+        "qualityInspectFqcDetQualityInspectFqcThirdPartyId": {
+          "meaning": "FQC明细第三方系统中的唯一ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcThirdPartyName": {
+          "meaning": "FQC明细第三方名称"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToAuditDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToAuditDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToBeginTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToBeginTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToCreateTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToCreateTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDateExtra1": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDateExtra1"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDateExtra2": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDateExtra2"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDateExtra3": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDateExtra3"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDateExtra4": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDateExtra4"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDateExtra5": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDateExtra5"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToDeliveryDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToDeliveryDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToEndTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToEndTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToReceiptDate": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToReceiptDate"
+        },
+        "qualityInspectFqcDetQualityInspectFqcToUpdateTime": {
+          "meaning": "qualityInspectFqcDetQualityInspectFqcToUpdateTime"
+        },
+        "qualityInspectFqcDetQualityInspectFqcUnitCode": {
+          "meaning": "FQC明细单位id"
+        },
+        "qualityInspectFqcDetQualityInspectFqcUpdateTime": {
+          "meaning": "FQC明细更新时间"
+        },
+        "qualityInspectFqcDetQualityInspectFqcUpdater": {
+          "meaning": "FQC明细更新人"
+        },
+        "qualityInspectFqcDetQualityInspectFqcUpdaterId": {
+          "meaning": "FQC明细更新人ID"
+        },
+        "qualityInspectFqcDetQualityInspectFqcUserCode": {
+          "meaning": "FQC明细智能节点的唯一编码"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVarExtra1": {
+          "meaning": "FQC明细扩展1"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVarExtra2": {
+          "meaning": "FQC明细扩展2"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVarExtra3": {
+          "meaning": "FQC明细扩展3"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVarExtra4": {
+          "meaning": "FQC明细扩展4"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVarExtra5": {
+          "meaning": "FQC明细扩展5"
+        },
+        "qualityInspectFqcDetQualityInspectFqcVersion": {
+          "meaning": "FQC明细版本号"
+        },
+        "qualityInspectFqcDetQuantity": {
+          "meaning": "FQC明细任务数量"
+        },
+        "qualityInspectFqcDetReceiptDate": {
+          "meaning": "FQC明细单据日期"
+        },
+        "qualityInspectFqcDetReceiptType": {
+          "meaning": "FQC明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "qualityInspectFqcDetRelatedTasksId": {
+          "meaning": "FQC明细关联任务id"
+        },
+        "qualityInspectFqcDetResults": {
+          "meaning": "FQC明细质检检验结果(1合格，2不合格)"
+        },
+        "qualityInspectFqcDetSerialNumber": {
+          "meaning": "FQC明细顺序号"
+        },
+        "qualityInspectFqcDetSource": {
+          "meaning": "FQC明细源"
+        },
+        "qualityInspectFqcDetSourceType": {
+          "meaning": "FQC明细来源类型"
+        },
+        "qualityInspectFqcDetState": {
+          "meaning": "FQC明细通用状态"
+        },
+        "qualityInspectFqcDetSupervisorEmployee": {
+          "meaning": "FQC明细主管员工"
+        },
+        "qualityInspectFqcDetSystemCode": {
+          "meaning": "FQC明细系统编码"
+        },
+        "qualityInspectFqcDetTarget": {
+          "meaning": "FQC明细目标"
+        },
+        "qualityInspectFqcDetTaskNodeName": {
+          "meaning": "FQC明细任务节点名称"
+        },
+        "qualityInspectFqcDetTenantId": {
+          "meaning": "FQC明细租户_id"
+        },
+        "qualityInspectFqcDetThirdPartyClass": {
+          "meaning": "FQC明细第三方分类"
+        },
+        "qualityInspectFqcDetThirdPartyId": {
+          "meaning": "FQC明细第三方系统中的唯一ID"
+        },
+        "qualityInspectFqcDetThirdPartyName": {
+          "meaning": "FQC明细第三方名称"
+        },
+        "qualityInspectFqcDetToAuditDate": {
+          "meaning": "qualityInspectFqcDetToAuditDate"
+        },
+        "qualityInspectFqcDetToBeginTime": {
+          "meaning": "qualityInspectFqcDetToBeginTime"
+        },
+        "qualityInspectFqcDetToCreateTime": {
+          "meaning": "qualityInspectFqcDetToCreateTime"
+        },
+        "qualityInspectFqcDetToDateExtra1": {
+          "meaning": "qualityInspectFqcDetToDateExtra1"
+        },
+        "qualityInspectFqcDetToDateExtra2": {
+          "meaning": "qualityInspectFqcDetToDateExtra2"
+        },
+        "qualityInspectFqcDetToDateExtra3": {
+          "meaning": "qualityInspectFqcDetToDateExtra3"
+        },
+        "qualityInspectFqcDetToDateExtra4": {
+          "meaning": "qualityInspectFqcDetToDateExtra4"
+        },
+        "qualityInspectFqcDetToDateExtra5": {
+          "meaning": "qualityInspectFqcDetToDateExtra5"
+        },
+        "qualityInspectFqcDetToDeliveryDate": {
+          "meaning": "qualityInspectFqcDetToDeliveryDate"
+        },
+        "qualityInspectFqcDetToEndTime": {
+          "meaning": "qualityInspectFqcDetToEndTime"
+        },
+        "qualityInspectFqcDetToFinishTime": {
+          "meaning": "qualityInspectFqcDetToFinishTime"
+        },
+        "qualityInspectFqcDetToReceiptDate": {
+          "meaning": "qualityInspectFqcDetToReceiptDate"
+        },
+        "qualityInspectFqcDetToUpdateTime": {
+          "meaning": "qualityInspectFqcDetToUpdateTime"
+        },
+        "qualityInspectFqcDetUnitCode": {
+          "meaning": "FQC明细单位id"
+        },
+        "qualityInspectFqcDetUnitId": {
+          "meaning": "FQC明细物料质检单位id"
+        },
+        "qualityInspectFqcDetUnqualifiedQuantity": {
+          "meaning": "FQC明细不合格数量"
+        },
+        "qualityInspectFqcDetUpdateTime": {
+          "meaning": "FQC明细更新时间"
+        },
+        "qualityInspectFqcDetUpdater": {
+          "meaning": "FQC明细更新人"
+        },
+        "qualityInspectFqcDetUpdaterId": {
+          "meaning": "FQC明细更新人ID"
+        },
+        "qualityInspectFqcDetUserCode": {
+          "meaning": "FQC明细智能节点的唯一编码"
+        },
+        "qualityInspectFqcDetVarExtra1": {
+          "meaning": "FQC明细扩展1"
+        },
+        "qualityInspectFqcDetVarExtra2": {
+          "meaning": "FQC明细扩展2"
+        },
+        "qualityInspectFqcDetVarExtra3": {
+          "meaning": "FQC明细扩展3"
+        },
+        "qualityInspectFqcDetVarExtra4": {
+          "meaning": "FQC明细扩展4"
+        },
+        "qualityInspectFqcDetVarExtra5": {
+          "meaning": "FQC明细扩展5"
+        },
+        "qualityInspectFqcDetVersion": {
+          "meaning": "FQC明细版本号"
+        },
+        "qualityInspectFqcDetQualityInspectFqcAdjustmentTimeRequired": {
+          "meaning": "FQC明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcActualTimeRequired": {
+          "meaning": "FQC明细实际需时(小时)"
+        },
+        "qualityInspectFqcDetQualityInspectFqcInvTypeTaxRateId": {
+          "meaning": "FQC明细发票税率id"
+        }
+      }
+    }

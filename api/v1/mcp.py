@@ -47,7 +47,8 @@ async def verify_mcp_response(item: McpVerify, current_user: dict = Depends(get_
             raise HTTPException(status_code=404, detail="No data returned from the API.")
 
         first_item = data[0]
-        print(first_item)
+        # 格式化打印 first_item 对象，缩进为 4 个空格，允许非 ASCII 字符
+        print(json.dumps(first_item, indent=4, ensure_ascii=False))
         response_keys = item.response.keys()
 
         # 4. 校验字段

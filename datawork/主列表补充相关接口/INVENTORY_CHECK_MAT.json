@@ -1,0 +1,368 @@
+{
+  "api_name" : "/inv-check-mat/findList",
+  "table_name" : "物料盘点主表",
+  "request" : {
+    "invCheckMatClazz" : "INVENTORY_CHECK_MAT"
+  },
+  "mainTabClazz" : "INVENTORY_CHECK_MAT",
+  "response" : {
+    "invCheckMatActualTimeRequired" : {
+      "meaning" : "InventoryCheckMatDTO对象实际需时(小时)"
+    },
+    "invCheckMatAdjustmentTimeRequired" : {
+      "meaning" : "InventoryCheckMatDTO对象调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckMatApplicationId" : {
+      "meaning" : "InventoryCheckMatDTO对象应用ID"
+    },
+    "invCheckMatAuditDate" : {
+      "meaning" : "InventoryCheckMatDTO对象审核时间"
+    },
+    "invCheckMatAuditStatus" : {
+      "meaning" : "InventoryCheckMatDTO对象审核状态"
+    },
+    "invCheckMatAvailableScheduleId" : {
+      "meaning" : "InventoryCheckMatDTO对象可用日程id"
+    },
+    "invCheckMatBeginTime" : {
+      "meaning" : "InventoryCheckMatDTO对象开始时间"
+    },
+    "invCheckMatBizVersion" : {
+      "meaning" : "InventoryCheckMatDTO对象业务自定义版本号"
+    },
+    "invCheckMatBriefName" : {
+      "meaning" : "InventoryCheckMatDTO对象简称"
+    },
+    "invCheckMatBusDivisId" : {
+      "meaning" : "InventoryCheckMatDTO对象事业部id"
+    },
+    "invCheckMatClazz" : {
+      "meaning" : "InventoryCheckMatDTO对象子类 类名（表和类一一对应）"
+    },
+    "invCheckMatClosedReason" : {
+      "meaning" : "InventoryCheckMatDTO对象结案原因"
+    },
+    "invCheckMatClosedStatus" : {
+      "meaning" : "InventoryCheckMatDTO对象结案状态"
+    },
+    "invCheckMatComment" : {
+      "meaning" : "InventoryCheckMatDTO对象评论"
+    },
+    "invCheckMatCompleteQuantity" : {
+      "meaning" : "InventoryCheckMatDTO对象完成数量"
+    },
+    "invCheckMatCompleteStatus" : {
+      "meaning" : "InventoryCheckMatDTO对象完成状态"
+    },
+    "invCheckMatCreateTime" : {
+      "meaning" : "InventoryCheckMatDTO对象创建时间"
+    },
+    "invCheckMatCreator" : {
+      "meaning" : "InventoryCheckMatDTO对象创建人"
+    },
+    "invCheckMatCreatorId" : {
+      "meaning" : "InventoryCheckMatDTO对象创建人ID"
+    },
+    "invCheckMatDateExtra1" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展时间1"
+    },
+    "invCheckMatDateExtra2" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展时间2"
+    },
+    "invCheckMatDateExtra3" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展时间3"
+    },
+    "invCheckMatDateExtra4" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展时间4"
+    },
+    "invCheckMatDateExtra5" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展时间5"
+    },
+    "invCheckMatDefaultType" : {
+      "meaning" : "InventoryCheckMatDTO对象智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckMatDeliveryDate" : {
+      "meaning" : "InventoryCheckMatDTO对象交货日期"
+    },
+    "invCheckMatDescription" : {
+      "meaning" : "InventoryCheckMatDTO对象描述"
+    },
+    "invCheckMatEndTime" : {
+      "meaning" : "InventoryCheckMatDTO对象结束时间"
+    },
+    "invCheckMatEndTimeRequired" : {
+      "meaning" : "InventoryCheckMatDTO对象最后需时(小时)"
+    },
+    "invCheckMatEngName" : {
+      "meaning" : "InventoryCheckMatDTO对象英文名称"
+    },
+    "invCheckMatEquipmentId" : {
+      "meaning" : "InventoryCheckMatDTO对象设备id"
+    },
+    "invCheckMatExchangeRateId" : {
+      "meaning" : "InventoryCheckMatDTO对象币种汇率id"
+    },
+    "invCheckMatExtension" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数据"
+    },
+    "invCheckMatExternalState" : {
+      "meaning" : "InventoryCheckMatDTO对象上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckMatFilterClazz" : {
+      "meaning" : "InventoryCheckMatDTO对象冗余字段用于筛选"
+    },
+    "invCheckMatFlags" : {
+      "meaning" : "InventoryCheckMatDTO对象63位标志位"
+    },
+    "invCheckMatFromAuditDate" : {
+      "meaning" : "invCheckMatFromAuditDate"
+    },
+    "invCheckMatFromBeginTime" : {
+      "meaning" : "invCheckMatFromBeginTime"
+    },
+    "invCheckMatFromCreateTime" : {
+      "meaning" : "invCheckMatFromCreateTime"
+    },
+    "invCheckMatFromDateExtra1" : {
+      "meaning" : "invCheckMatFromDateExtra1"
+    },
+    "invCheckMatFromDateExtra2" : {
+      "meaning" : "invCheckMatFromDateExtra2"
+    },
+    "invCheckMatFromDateExtra3" : {
+      "meaning" : "invCheckMatFromDateExtra3"
+    },
+    "invCheckMatFromDateExtra4" : {
+      "meaning" : "invCheckMatFromDateExtra4"
+    },
+    "invCheckMatFromDateExtra5" : {
+      "meaning" : "invCheckMatFromDateExtra5"
+    },
+    "invCheckMatFromDeliveryDate" : {
+      "meaning" : "invCheckMatFromDeliveryDate"
+    },
+    "invCheckMatFromEndTime" : {
+      "meaning" : "invCheckMatFromEndTime"
+    },
+    "invCheckMatFromReceiptDate" : {
+      "meaning" : "invCheckMatFromReceiptDate"
+    },
+    "invCheckMatFromUpdateTime" : {
+      "meaning" : "invCheckMatFromUpdateTime"
+    },
+    "invCheckMatFscType" : {
+      "meaning" : "InventoryCheckMatDTO对象FSC声明"
+    },
+    "invCheckMatGenerativePeople" : {
+      "meaning" : "InventoryCheckMatDTO对象下发人"
+    },
+    "invCheckMatGenerativeState" : {
+      "meaning" : "InventoryCheckMatDTO对象下发状态"
+    },
+    "invCheckMatGroovyScript" : {
+      "meaning" : "InventoryCheckMatDTO对象groovy脚本"
+    },
+    "invCheckMatGropeCode" : {
+      "meaning" : "InventoryCheckMatDTO对象搜索码"
+    },
+    "invCheckMatId" : {
+      "meaning" : "InventoryCheckMatDTO对象pk",
+      "is_primary" : true
+    },
+    "invCheckMatInUsed" : {
+      "meaning" : "InventoryCheckMatDTO对象是否被使用"
+    },
+    "invCheckMatInvTypeTaxRateId" : {
+      "meaning" : "InventoryCheckMatDTO对象发票税率id"
+    },
+    "invCheckMatIsBanned" : {
+      "meaning" : "InventoryCheckMatDTO对象是否被禁用"
+    },
+    "invCheckMatIsDeleted" : {
+      "meaning" : "InventoryCheckMatDTO对象是否被删除"
+    },
+    "invCheckMatIsLeaf" : {
+      "meaning" : "InventoryCheckMatDTO对象是否叶子节点"
+    },
+    "invCheckMatIsMainFlow" : {
+      "meaning" : "InventoryCheckMatDTO对象是否是主流程"
+    },
+    "invCheckMatIsManualModificationDate" : {
+      "meaning" : "InventoryCheckMatDTO对象是否手动修改计划生产时间"
+    },
+    "invCheckMatIsolation" : {
+      "meaning" : "InventoryCheckMatDTO对象智能节点数据隔离标识"
+    },
+    "invCheckMatJsScript" : {
+      "meaning" : "InventoryCheckMatDTO对象js脚本"
+    },
+    "invCheckMatMaterialId" : {
+      "meaning" : "InventoryCheckMatDTO对象物料id"
+    },
+    "invCheckMatName" : {
+      "meaning" : "InventoryCheckMatDTO对象智能节点名"
+    },
+    "invCheckMatNameCodeSearch" : {
+      "meaning" : "InventoryCheckMatDTO对象name、user_code模糊搜索"
+    },
+    "invCheckMatNumberExtra1" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数量1"
+    },
+    "invCheckMatNumberExtra2" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数量2"
+    },
+    "invCheckMatNumberExtra3" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数量3"
+    },
+    "invCheckMatNumberExtra4" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数量4"
+    },
+    "invCheckMatNumberExtra5" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展数量5"
+    },
+    "invCheckMatParentId" : {
+      "meaning" : "InventoryCheckMatDTO对象父节点ID"
+    },
+    "invCheckMatPlannedOutputQuantity" : {
+      "meaning" : "InventoryCheckMatDTO对象计划产出数量"
+    },
+    "invCheckMatPlannedTimeRequired" : {
+      "meaning" : "InventoryCheckMatDTO对象计划需时(小时)"
+    },
+    "invCheckMatPrintTimes" : {
+      "meaning" : "InventoryCheckMatDTO对象打印次数"
+    },
+    "invCheckMatPriority" : {
+      "meaning" : "InventoryCheckMatDTO对象优先级"
+    },
+    "invCheckMatProcessInstanceId" : {
+      "meaning" : "InventoryCheckMatDTO对象流程实例ID"
+    },
+    "invCheckMatProductionProcessesTypeId" : {
+      "meaning" : "InventoryCheckMatDTO对象工序类型ID"
+    },
+    "invCheckMatProductionShiftId" : {
+      "meaning" : "InventoryCheckMatDTO对象生产班次ID"
+    },
+    "invCheckMatQuantity" : {
+      "meaning" : "InventoryCheckMatDTO对象任务数量"
+    },
+    "invCheckMatReceiptDate" : {
+      "meaning" : "InventoryCheckMatDTO对象单据日期"
+    },
+    "invCheckMatReceiptType" : {
+      "meaning" : "InventoryCheckMatDTO对象单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckMatRelatedTasksId" : {
+      "meaning" : "InventoryCheckMatDTO对象关联任务id"
+    },
+    "invCheckMatSerialNumber" : {
+      "meaning" : "InventoryCheckMatDTO对象顺序号"
+    },
+    "invCheckMatSource" : {
+      "meaning" : "InventoryCheckMatDTO对象源"
+    },
+    "invCheckMatSourceType" : {
+      "meaning" : "InventoryCheckMatDTO对象来源类型"
+    },
+    "invCheckMatState" : {
+      "meaning" : "InventoryCheckMatDTO对象通用状态"
+    },
+    "invCheckMatSystemCode" : {
+      "meaning" : "InventoryCheckMatDTO对象系统编码"
+    },
+    "invCheckMatTarget" : {
+      "meaning" : "InventoryCheckMatDTO对象目标"
+    },
+    "invCheckMatTaskNodeName" : {
+      "meaning" : "InventoryCheckMatDTO对象任务节点名称"
+    },
+    "invCheckMatTenantId" : {
+      "meaning" : "InventoryCheckMatDTO对象租户id"
+    },
+    "invCheckMatThirdPartyClass" : {
+      "meaning" : "InventoryCheckMatDTO对象第三方分类"
+    },
+    "invCheckMatThirdPartyId" : {
+      "meaning" : "InventoryCheckMatDTO对象第三方系统中的唯一ID"
+    },
+    "invCheckMatThirdPartyName" : {
+      "meaning" : "InventoryCheckMatDTO对象第三方名称"
+    },
+    "invCheckMatToAuditDate" : {
+      "meaning" : "invCheckMatToAuditDate"
+    },
+    "invCheckMatToBeginTime" : {
+      "meaning" : "invCheckMatToBeginTime"
+    },
+    "invCheckMatToCreateTime" : {
+      "meaning" : "invCheckMatToCreateTime"
+    },
+    "invCheckMatToDateExtra1" : {
+      "meaning" : "invCheckMatToDateExtra1"
+    },
+    "invCheckMatToDateExtra2" : {
+      "meaning" : "invCheckMatToDateExtra2"
+    },
+    "invCheckMatToDateExtra3" : {
+      "meaning" : "invCheckMatToDateExtra3"
+    },
+    "invCheckMatToDateExtra4" : {
+      "meaning" : "invCheckMatToDateExtra4"
+    },
+    "invCheckMatToDateExtra5" : {
+      "meaning" : "invCheckMatToDateExtra5"
+    },
+    "invCheckMatToDeliveryDate" : {
+      "meaning" : "invCheckMatToDeliveryDate"
+    },
+    "invCheckMatToEndTime" : {
+      "meaning" : "invCheckMatToEndTime"
+    },
+    "invCheckMatToReceiptDate" : {
+      "meaning" : "invCheckMatToReceiptDate"
+    },
+    "invCheckMatToUpdateTime" : {
+      "meaning" : "invCheckMatToUpdateTime"
+    },
+    "invCheckMatTotalAmountExcludingTax" : {
+      "meaning" : "InventoryCheckMatDTO对象总盘点不含税金额"
+    },
+    "invCheckMatTotalAmountIncludingTax" : {
+      "meaning" : "InventoryCheckMatDTO对象总盘点含税金额"
+    },
+    "invCheckMatUnitCode" : {
+      "meaning" : "InventoryCheckMatDTO对象单位id"
+    },
+    "invCheckMatUpdateTime" : {
+      "meaning" : "InventoryCheckMatDTO对象更新时间"
+    },
+    "invCheckMatUpdater" : {
+      "meaning" : "InventoryCheckMatDTO对象更新人"
+    },
+    "invCheckMatUpdaterId" : {
+      "meaning" : "InventoryCheckMatDTO对象更新人ID"
+    },
+    "invCheckMatUserCode" : {
+      "meaning" : "InventoryCheckMatDTO对象智能节点的唯一编码"
+    },
+    "invCheckMatVarExtra1" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展1"
+    },
+    "invCheckMatVarExtra2" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展2"
+    },
+    "invCheckMatVarExtra3" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展3"
+    },
+    "invCheckMatVarExtra4" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展4"
+    },
+    "invCheckMatVarExtra5" : {
+      "meaning" : "InventoryCheckMatDTO对象扩展5"
+    },
+    "invCheckMatVersion" : {
+      "meaning" : "InventoryCheckMatDTO对象版本号"
+    }
+  }
+}

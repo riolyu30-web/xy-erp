@@ -1,0 +1,810 @@
+{
+  "api_name" : "/mod-outstorage-det/findList",
+  "table_name" : "模具出库明细表",
+  "request" : {
+    "modOutstorageDetModOutstorageClazz" : "MOD_OUTSTORAGE",
+    "modOutstorageDetClazz" : "MOD_OUTSTORAGE_DET"
+  },
+  "mainTabClazz" : "MOD_OUTSTORAGE_DET",
+  "response" : {
+    "modOutstorageDetActualTimeRequired" : {
+      "meaning" : "模具出库明细表实际需时(小时)"
+    },
+    "modOutstorageDetAdditionalWeight" : {
+      "meaning" : "模具出库明细表附加重量"
+    },
+    "modOutstorageDetAdjustmentTimeRequired" : {
+      "meaning" : "模具出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modOutstorageDetApplicationId" : {
+      "meaning" : "模具出库明细表应用ID"
+    },
+    "modOutstorageDetAuditDate" : {
+      "meaning" : "模具出库明细表审核时间"
+    },
+    "modOutstorageDetAuditStatus" : {
+      "meaning" : "模具出库明细表审核状态"
+    },
+    "modOutstorageDetAvailableScheduleId" : {
+      "meaning" : "模具出库明细表可用日程id"
+    },
+    "modOutstorageDetBeginTime" : {
+      "meaning" : "模具出库明细表开始时间"
+    },
+    "modOutstorageDetBizVersion" : {
+      "meaning" : "模具出库明细表业务自定义版本号"
+    },
+    "modOutstorageDetBriefName" : {
+      "meaning" : "模具出库明细表简称"
+    },
+    "modOutstorageDetBusDivisId" : {
+      "meaning" : "模具出库明细表事业部id"
+    },
+    "modOutstorageDetClazz" : {
+      "meaning" : "模具出库明细表子类 类名（表和类一一对应）"
+    },
+    "modOutstorageDetClosedReason" : {
+      "meaning" : "模具出库明细表结案原因"
+    },
+    "modOutstorageDetClosedStatus" : {
+      "meaning" : "模具出库明细表结案状态"
+    },
+    "modOutstorageDetComment" : {
+      "meaning" : "模具出库明细表评论"
+    },
+    "modOutstorageDetCompleteQuantity" : {
+      "meaning" : "模具出库明细表完成数量"
+    },
+    "modOutstorageDetCompleteStatus" : {
+      "meaning" : "模具出库明细表完成状态"
+    },
+    "modOutstorageDetCreateTime" : {
+      "meaning" : "模具出库明细表创建时间"
+    },
+    "modOutstorageDetCreator" : {
+      "meaning" : "模具出库明细表创建人"
+    },
+    "modOutstorageDetCreatorId" : {
+      "meaning" : "模具出库明细表创建人ID"
+    },
+    "modOutstorageDetDateExtra1" : {
+      "meaning" : "模具出库明细表扩展时间1"
+    },
+    "modOutstorageDetDateExtra2" : {
+      "meaning" : "模具出库明细表扩展时间2"
+    },
+    "modOutstorageDetDateExtra3" : {
+      "meaning" : "模具出库明细表扩展时间3"
+    },
+    "modOutstorageDetDateExtra4" : {
+      "meaning" : "模具出库明细表扩展时间4"
+    },
+    "modOutstorageDetDateExtra5" : {
+      "meaning" : "模具出库明细表扩展时间5"
+    },
+    "modOutstorageDetDefaultType" : {
+      "meaning" : "模具出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modOutstorageDetDeliveryDate" : {
+      "meaning" : "模具出库明细表交货日期"
+    },
+    "modOutstorageDetDescription" : {
+      "meaning" : "模具出库明细表描述"
+    },
+    "modOutstorageDetEndTime" : {
+      "meaning" : "模具出库明细表结束时间"
+    },
+    "modOutstorageDetEndTimeRequired" : {
+      "meaning" : "模具出库明细表最后需时(小时)"
+    },
+    "modOutstorageDetEngName" : {
+      "meaning" : "模具出库明细表英文名称"
+    },
+    "modOutstorageDetEquipmentId" : {
+      "meaning" : "模具出库明细表设备id"
+    },
+    "modOutstorageDetExchangeRateId" : {
+      "meaning" : "模具出库明细表币种汇率id"
+    },
+    "modOutstorageDetExtension" : {
+      "meaning" : "模具出库明细表扩展数据"
+    },
+    "modOutstorageDetExternalState" : {
+      "meaning" : "模具出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modOutstorageDetFilterClazz" : {
+      "meaning" : "模具出库明细表冗余字段用于筛选"
+    },
+    "modOutstorageDetFlags" : {
+      "meaning" : "模具出库明细表63位标志位"
+    },
+    "modOutstorageDetFromAuditDate" : {
+      "meaning" : "modOutstorageDetFromAuditDate"
+    },
+    "modOutstorageDetFromBeginTime" : {
+      "meaning" : "modOutstorageDetFromBeginTime"
+    },
+    "modOutstorageDetFromCreateTime" : {
+      "meaning" : "modOutstorageDetFromCreateTime"
+    },
+    "modOutstorageDetFromDateExtra1" : {
+      "meaning" : "modOutstorageDetFromDateExtra1"
+    },
+    "modOutstorageDetFromDateExtra2" : {
+      "meaning" : "modOutstorageDetFromDateExtra2"
+    },
+    "modOutstorageDetFromDateExtra3" : {
+      "meaning" : "modOutstorageDetFromDateExtra3"
+    },
+    "modOutstorageDetFromDateExtra4" : {
+      "meaning" : "modOutstorageDetFromDateExtra4"
+    },
+    "modOutstorageDetFromDateExtra5" : {
+      "meaning" : "modOutstorageDetFromDateExtra5"
+    },
+    "modOutstorageDetFromDeliveryDate" : {
+      "meaning" : "modOutstorageDetFromDeliveryDate"
+    },
+    "modOutstorageDetFromEndTime" : {
+      "meaning" : "modOutstorageDetFromEndTime"
+    },
+    "modOutstorageDetFromReceiptDate" : {
+      "meaning" : "modOutstorageDetFromReceiptDate"
+    },
+    "modOutstorageDetFromUpdateTime" : {
+      "meaning" : "modOutstorageDetFromUpdateTime"
+    },
+    "modOutstorageDetFscType" : {
+      "meaning" : "模具出库明细表FSC声明"
+    },
+    "modOutstorageDetGenerativePeople" : {
+      "meaning" : "模具出库明细表下发人"
+    },
+    "modOutstorageDetGenerativeState" : {
+      "meaning" : "模具出库明细表下发状态"
+    },
+    "modOutstorageDetGoodsId" : {
+      "meaning" : "模具出库明细表货（包）id"
+    },
+    "modOutstorageDetGroovyScript" : {
+      "meaning" : "模具出库明细表groovy脚本"
+    },
+    "modOutstorageDetGropeCode" : {
+      "meaning" : "模具出库明细表搜索码"
+    },
+    "modOutstorageDetGrossWeightPerBox" : {
+      "meaning" : "模具出库明细表每箱毛重"
+    },
+    "modOutstorageDetId" : {
+      "meaning" : "模具出库明细表PK",
+      "is_primary" : true
+    },
+    "modOutstorageDetInUsed" : {
+      "meaning" : "模具出库明细表是否被使用"
+    },
+    "modOutstorageDetInvTypeTaxRateId" : {
+      "meaning" : "模具出库明细表发票税率id"
+    },
+    "modOutstorageDetInventoryQuantity" : {
+      "meaning" : "模具出库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)"
+    },
+    "modOutstorageDetIsBanned" : {
+      "meaning" : "模具出库明细表是否被禁用"
+    },
+    "modOutstorageDetIsDeleted" : {
+      "meaning" : "模具出库明细表是否被删除"
+    },
+    "modOutstorageDetIsLeaf" : {
+      "meaning" : "模具出库明细表是否叶子节点"
+    },
+    "modOutstorageDetIsMainFlow" : {
+      "meaning" : "模具出库明细表是否是主流程"
+    },
+    "modOutstorageDetIsManualModificationDate" : {
+      "meaning" : "模具出库明细表是否手动修改计划生产时间"
+    },
+    "modOutstorageDetIsolation" : {
+      "meaning" : "模具出库明细表智能节点数据隔离标识"
+    },
+    "modOutstorageDetJsScript" : {
+      "meaning" : "模具出库明细表js脚本"
+    },
+    "modOutstorageDetLocalCurrencyTotalAmount" : {
+      "meaning" : "模具出库明细表本币总金额"
+    },
+    "modOutstorageDetLocalCurrencyUnitPrice" : {
+      "meaning" : "模具出库明细表本币单价"
+    },
+    "modOutstorageDetMatBatchId" : {
+      "meaning" : "模具出库明细表物料批次id"
+    },
+    "modOutstorageDetMaterialId" : {
+      "meaning" : "模具出库明细表物料id"
+    },
+    "modOutstorageDetModOutstorageActualTimeRequired" : {
+      "meaning" : "模具出库明细表实际需时(小时)"
+    },
+    "modOutstorageDetModOutstorageAdjustmentTimeRequired" : {
+      "meaning" : "模具出库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "modOutstorageDetModOutstorageApplicationId" : {
+      "meaning" : "模具出库明细表应用ID"
+    },
+    "modOutstorageDetModOutstorageAuditDate" : {
+      "meaning" : "模具出库明细表审核时间"
+    },
+    "modOutstorageDetModOutstorageAuditStatus" : {
+      "meaning" : "模具出库明细表审核状态"
+    },
+    "modOutstorageDetModOutstorageAvailableScheduleId" : {
+      "meaning" : "模具出库明细表可用日程id"
+    },
+    "modOutstorageDetModOutstorageBeginTime" : {
+      "meaning" : "模具出库明细表开始时间"
+    },
+    "modOutstorageDetModOutstorageBizVersion" : {
+      "meaning" : "模具出库明细表业务自定义版本号"
+    },
+    "modOutstorageDetModOutstorageBriefName" : {
+      "meaning" : "模具出库明细表简称"
+    },
+    "modOutstorageDetModOutstorageBusDivisId" : {
+      "meaning" : "模具出库明细表事业部id"
+    },
+    "modOutstorageDetModOutstorageClazz" : {
+      "meaning" : "模具出库明细表子类 类名（表和类一一对应）"
+    },
+    "modOutstorageDetModOutstorageClosedReason" : {
+      "meaning" : "模具出库明细表结案原因"
+    },
+    "modOutstorageDetModOutstorageClosedStatus" : {
+      "meaning" : "模具出库明细表结案状态"
+    },
+    "modOutstorageDetModOutstorageComment" : {
+      "meaning" : "模具出库明细表评论"
+    },
+    "modOutstorageDetModOutstorageCompleteQuantity" : {
+      "meaning" : "模具出库明细表完成数量"
+    },
+    "modOutstorageDetModOutstorageCompleteStatus" : {
+      "meaning" : "模具出库明细表完成状态"
+    },
+    "modOutstorageDetModOutstorageCreateTime" : {
+      "meaning" : "模具出库明细表创建时间"
+    },
+    "modOutstorageDetModOutstorageCreator" : {
+      "meaning" : "模具出库明细表创建人"
+    },
+    "modOutstorageDetModOutstorageCreatorId" : {
+      "meaning" : "模具出库明细表创建人ID"
+    },
+    "modOutstorageDetModOutstorageDateExtra1" : {
+      "meaning" : "模具出库明细表扩展时间1"
+    },
+    "modOutstorageDetModOutstorageDateExtra2" : {
+      "meaning" : "模具出库明细表扩展时间2"
+    },
+    "modOutstorageDetModOutstorageDateExtra3" : {
+      "meaning" : "模具出库明细表扩展时间3"
+    },
+    "modOutstorageDetModOutstorageDateExtra4" : {
+      "meaning" : "模具出库明细表扩展时间4"
+    },
+    "modOutstorageDetModOutstorageDateExtra5" : {
+      "meaning" : "模具出库明细表扩展时间5"
+    },
+    "modOutstorageDetModOutstorageDefaultType" : {
+      "meaning" : "模具出库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "modOutstorageDetModOutstorageDeliveryDate" : {
+      "meaning" : "模具出库明细表交货日期"
+    },
+    "modOutstorageDetModOutstorageDepId" : {
+      "meaning" : "模具出库明细表部门id"
+    },
+    "modOutstorageDetModOutstorageDescription" : {
+      "meaning" : "模具出库明细表描述"
+    },
+    "modOutstorageDetModOutstorageEndTime" : {
+      "meaning" : "模具出库明细表结束时间"
+    },
+    "modOutstorageDetModOutstorageEndTimeRequired" : {
+      "meaning" : "模具出库明细表最后需时(小时)"
+    },
+    "modOutstorageDetModOutstorageEngName" : {
+      "meaning" : "模具出库明细表英文名称"
+    },
+    "modOutstorageDetModOutstorageEquipmentId" : {
+      "meaning" : "模具出库明细表设备id"
+    },
+    "modOutstorageDetModOutstorageExchangeRateId" : {
+      "meaning" : "模具出库明细表币种汇率id"
+    },
+    "modOutstorageDetModOutstorageExtension" : {
+      "meaning" : "模具出库明细表扩展数据"
+    },
+    "modOutstorageDetModOutstorageExternalState" : {
+      "meaning" : "模具出库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "modOutstorageDetModOutstorageFilterClazz" : {
+      "meaning" : "模具出库明细表冗余字段用于筛选"
+    },
+    "modOutstorageDetModOutstorageFlags" : {
+      "meaning" : "模具出库明细表63位标志位"
+    },
+    "modOutstorageDetModOutstorageFromAuditDate" : {
+      "meaning" : "modOutstorageDetModOutstorageFromAuditDate"
+    },
+    "modOutstorageDetModOutstorageFromBeginTime" : {
+      "meaning" : "modOutstorageDetModOutstorageFromBeginTime"
+    },
+    "modOutstorageDetModOutstorageFromCreateTime" : {
+      "meaning" : "modOutstorageDetModOutstorageFromCreateTime"
+    },
+    "modOutstorageDetModOutstorageFromDateExtra1" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDateExtra1"
+    },
+    "modOutstorageDetModOutstorageFromDateExtra2" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDateExtra2"
+    },
+    "modOutstorageDetModOutstorageFromDateExtra3" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDateExtra3"
+    },
+    "modOutstorageDetModOutstorageFromDateExtra4" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDateExtra4"
+    },
+    "modOutstorageDetModOutstorageFromDateExtra5" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDateExtra5"
+    },
+    "modOutstorageDetModOutstorageFromDeliveryDate" : {
+      "meaning" : "modOutstorageDetModOutstorageFromDeliveryDate"
+    },
+    "modOutstorageDetModOutstorageFromEndTime" : {
+      "meaning" : "modOutstorageDetModOutstorageFromEndTime"
+    },
+    "modOutstorageDetModOutstorageFromReceiptDate" : {
+      "meaning" : "modOutstorageDetModOutstorageFromReceiptDate"
+    },
+    "modOutstorageDetModOutstorageFromUpdateTime" : {
+      "meaning" : "modOutstorageDetModOutstorageFromUpdateTime"
+    },
+    "modOutstorageDetModOutstorageFscType" : {
+      "meaning" : "模具出库明细表FSC声明"
+    },
+    "modOutstorageDetModOutstorageGenerativePeople" : {
+      "meaning" : "模具出库明细表下发人"
+    },
+    "modOutstorageDetModOutstorageGenerativeState" : {
+      "meaning" : "模具出库明细表下发状态"
+    },
+    "modOutstorageDetModOutstorageGroovyScript" : {
+      "meaning" : "模具出库明细表groovy脚本"
+    },
+    "modOutstorageDetModOutstorageGropeCode" : {
+      "meaning" : "模具出库明细表搜索码"
+    },
+    "modOutstorageDetModOutstorageId" : {
+      "meaning" : "模具出库明细表PK"
+    },
+    "modOutstorageDetModOutstorageInUsed" : {
+      "meaning" : "模具出库明细表是否被使用"
+    },
+    "modOutstorageDetModOutstorageInvTypeTaxRateId" : {
+      "meaning" : "模具出库明细表发票税率id"
+    },
+    "modOutstorageDetModOutstorageIsBanned" : {
+      "meaning" : "模具出库明细表是否被禁用"
+    },
+    "modOutstorageDetModOutstorageIsDeleted" : {
+      "meaning" : "模具出库明细表是否被删除"
+    },
+    "modOutstorageDetModOutstorageIsLeaf" : {
+      "meaning" : "模具出库明细表是否叶子节点"
+    },
+    "modOutstorageDetModOutstorageIsMainFlow" : {
+      "meaning" : "模具出库明细表是否是主流程"
+    },
+    "modOutstorageDetModOutstorageIsManualModificationDate" : {
+      "meaning" : "模具出库明细表是否手动修改计划生产时间"
+    },
+    "modOutstorageDetModOutstorageIsolation" : {
+      "meaning" : "模具出库明细表智能节点数据隔离标识"
+    },
+    "modOutstorageDetModOutstorageJsScript" : {
+      "meaning" : "模具出库明细表js脚本"
+    },
+    "modOutstorageDetModOutstorageMaterialId" : {
+      "meaning" : "模具出库明细表物料id"
+    },
+    "modOutstorageDetModOutstorageName" : {
+      "meaning" : "模具出库明细表智能节点名"
+    },
+    "modOutstorageDetModOutstorageNameCodeSearch" : {
+      "meaning" : "模具出库明细表name、user_code模糊搜索"
+    },
+    "modOutstorageDetModOutstorageNumberExtra1" : {
+      "meaning" : "模具出库明细表扩展数量1"
+    },
+    "modOutstorageDetModOutstorageNumberExtra2" : {
+      "meaning" : "模具出库明细表扩展数量2"
+    },
+    "modOutstorageDetModOutstorageNumberExtra3" : {
+      "meaning" : "模具出库明细表扩展数量3"
+    },
+    "modOutstorageDetModOutstorageNumberExtra4" : {
+      "meaning" : "模具出库明细表扩展数量4"
+    },
+    "modOutstorageDetModOutstorageNumberExtra5" : {
+      "meaning" : "模具出库明细表扩展数量5"
+    },
+    "modOutstorageDetModOutstorageOrgId" : {
+      "meaning" : "模具出库明细表机构id(客户/供应商)"
+    },
+    "modOutstorageDetModOutstorageParentId" : {
+      "meaning" : "模具出库明细表父节点ID"
+    },
+    "modOutstorageDetModOutstoragePlannedOutputQuantity" : {
+      "meaning" : "模具出库明细表计划产出数量"
+    },
+    "modOutstorageDetModOutstoragePlannedTimeRequired" : {
+      "meaning" : "模具出库明细表计划需时(小时)"
+    },
+    "modOutstorageDetModOutstoragePrintTimes" : {
+      "meaning" : "模具出库明细表打印次数"
+    },
+    "modOutstorageDetModOutstoragePriority" : {
+      "meaning" : "模具出库明细表优先级"
+    },
+    "modOutstorageDetModOutstorageProcessInstanceId" : {
+      "meaning" : "模具出库明细表流程实例ID"
+    },
+    "modOutstorageDetModOutstorageProductionProcessesTypeId" : {
+      "meaning" : "模具出库明细表工序类型ID"
+    },
+    "modOutstorageDetModOutstorageProductionShiftId" : {
+      "meaning" : "模具出库明细表生产班次ID"
+    },
+    "modOutstorageDetModOutstorageQuantity" : {
+      "meaning" : "模具出库明细表任务数量"
+    },
+    "modOutstorageDetModOutstorageReceiptDate" : {
+      "meaning" : "模具出库明细表单据日期"
+    },
+    "modOutstorageDetModOutstorageReceiptType" : {
+      "meaning" : "模具出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modOutstorageDetModOutstorageRelatedTasksId" : {
+      "meaning" : "模具出库明细表关联任务id"
+    },
+    "modOutstorageDetModOutstorageSerialNumber" : {
+      "meaning" : "模具出库明细表顺序号"
+    },
+    "modOutstorageDetModOutstorageSettMethod" : {
+      "meaning" : "模具出库明细表结算方式"
+    },
+    "modOutstorageDetModOutstorageSettOrgId" : {
+      "meaning" : "模具出库明细表结算机构id(客户/供应商)"
+    },
+    "modOutstorageDetModOutstorageSource" : {
+      "meaning" : "模具出库明细表源"
+    },
+    "modOutstorageDetModOutstorageSourceType" : {
+      "meaning" : "模具出库明细表来源类型"
+    },
+    "modOutstorageDetModOutstorageStaffId" : {
+      "meaning" : "模具出库明细表员工id(入/出库员工)"
+    },
+    "modOutstorageDetModOutstorageState" : {
+      "meaning" : "模具出库明细表通用状态"
+    },
+    "modOutstorageDetModOutstorageSystemCode" : {
+      "meaning" : "模具出库明细表系统编码"
+    },
+    "modOutstorageDetModOutstorageTarget" : {
+      "meaning" : "模具出库明细表目标"
+    },
+    "modOutstorageDetModOutstorageTaskNodeName" : {
+      "meaning" : "模具出库明细表任务节点名称"
+    },
+    "modOutstorageDetModOutstorageTaskNodeType" : {
+      "meaning" : "模具出库明细表任务节点类型"
+    },
+    "modOutstorageDetModOutstorageTenantId" : {
+      "meaning" : "模具出库明细表租户id"
+    },
+    "modOutstorageDetModOutstorageThirdPartyClass" : {
+      "meaning" : "模具出库明细表第三方分类"
+    },
+    "modOutstorageDetModOutstorageThirdPartyId" : {
+      "meaning" : "模具出库明细表第三方系统中的唯一ID"
+    },
+    "modOutstorageDetModOutstorageThirdPartyName" : {
+      "meaning" : "模具出库明细表第三方名称"
+    },
+    "modOutstorageDetModOutstorageToAuditDate" : {
+      "meaning" : "modOutstorageDetModOutstorageToAuditDate"
+    },
+    "modOutstorageDetModOutstorageToBeginTime" : {
+      "meaning" : "modOutstorageDetModOutstorageToBeginTime"
+    },
+    "modOutstorageDetModOutstorageToCreateTime" : {
+      "meaning" : "modOutstorageDetModOutstorageToCreateTime"
+    },
+    "modOutstorageDetModOutstorageToDateExtra1" : {
+      "meaning" : "modOutstorageDetModOutstorageToDateExtra1"
+    },
+    "modOutstorageDetModOutstorageToDateExtra2" : {
+      "meaning" : "modOutstorageDetModOutstorageToDateExtra2"
+    },
+    "modOutstorageDetModOutstorageToDateExtra3" : {
+      "meaning" : "modOutstorageDetModOutstorageToDateExtra3"
+    },
+    "modOutstorageDetModOutstorageToDateExtra4" : {
+      "meaning" : "modOutstorageDetModOutstorageToDateExtra4"
+    },
+    "modOutstorageDetModOutstorageToDateExtra5" : {
+      "meaning" : "modOutstorageDetModOutstorageToDateExtra5"
+    },
+    "modOutstorageDetModOutstorageToDeliveryDate" : {
+      "meaning" : "modOutstorageDetModOutstorageToDeliveryDate"
+    },
+    "modOutstorageDetModOutstorageToEndTime" : {
+      "meaning" : "modOutstorageDetModOutstorageToEndTime"
+    },
+    "modOutstorageDetModOutstorageToReceiptDate" : {
+      "meaning" : "modOutstorageDetModOutstorageToReceiptDate"
+    },
+    "modOutstorageDetModOutstorageToUpdateTime" : {
+      "meaning" : "modOutstorageDetModOutstorageToUpdateTime"
+    },
+    "modOutstorageDetModOutstorageUnitCode" : {
+      "meaning" : "模具出库明细表单位id"
+    },
+    "modOutstorageDetModOutstorageUpdateTime" : {
+      "meaning" : "模具出库明细表更新时间"
+    },
+    "modOutstorageDetModOutstorageUpdater" : {
+      "meaning" : "模具出库明细表更新人"
+    },
+    "modOutstorageDetModOutstorageUpdaterId" : {
+      "meaning" : "模具出库明细表更新人ID"
+    },
+    "modOutstorageDetModOutstorageUserCode" : {
+      "meaning" : "模具出库明细表智能节点的唯一编码"
+    },
+    "modOutstorageDetModOutstorageVarExtra1" : {
+      "meaning" : "模具出库明细表扩展1"
+    },
+    "modOutstorageDetModOutstorageVarExtra2" : {
+      "meaning" : "模具出库明细表扩展2"
+    },
+    "modOutstorageDetModOutstorageVarExtra3" : {
+      "meaning" : "模具出库明细表扩展3"
+    },
+    "modOutstorageDetModOutstorageVarExtra4" : {
+      "meaning" : "模具出库明细表扩展4"
+    },
+    "modOutstorageDetModOutstorageVarExtra5" : {
+      "meaning" : "模具出库明细表扩展5"
+    },
+    "modOutstorageDetModOutstorageVersion" : {
+      "meaning" : "模具出库明细表版本号"
+    },
+    "modOutstorageDetName" : {
+      "meaning" : "模具出库明细表智能节点名"
+    },
+    "modOutstorageDetNameCodeSearch" : {
+      "meaning" : "模具出库明细表name、user_code模糊搜索"
+    },
+    "modOutstorageDetNetWeightPerBox" : {
+      "meaning" : "模具出库明细表每箱净重"
+    },
+    "modOutstorageDetNumberExtra1" : {
+      "meaning" : "模具出库明细表扩展数量1"
+    },
+    "modOutstorageDetNumberExtra2" : {
+      "meaning" : "模具出库明细表扩展数量2"
+    },
+    "modOutstorageDetNumberExtra3" : {
+      "meaning" : "模具出库明细表扩展数量3"
+    },
+    "modOutstorageDetNumberExtra4" : {
+      "meaning" : "模具出库明细表扩展数量4"
+    },
+    "modOutstorageDetNumberExtra5" : {
+      "meaning" : "模具出库明细表扩展数量5"
+    },
+    "modOutstorageDetOrgId" : {
+      "meaning" : "模具出库明细表机构id(客户/供应商)"
+    },
+    "modOutstorageDetPackageMatId" : {
+      "meaning" : "模具出库明细表包装物料id"
+    },
+    "modOutstorageDetParentId" : {
+      "meaning" : "模具出库明细表父节点ID"
+    },
+    "modOutstorageDetPlannedOutputQuantity" : {
+      "meaning" : "模具出库明细表计划产出数量"
+    },
+    "modOutstorageDetPlannedTimeRequired" : {
+      "meaning" : "模具出库明细表计划需时(小时)"
+    },
+    "modOutstorageDetPrintTimes" : {
+      "meaning" : "模具出库明细表打印次数"
+    },
+    "modOutstorageDetPriority" : {
+      "meaning" : "模具出库明细表优先级"
+    },
+    "modOutstorageDetProcessInstanceId" : {
+      "meaning" : "模具出库明细表流程实例ID"
+    },
+    "modOutstorageDetProductionProcessesTypeId" : {
+      "meaning" : "模具出库明细表工序类型ID"
+    },
+    "modOutstorageDetProductionShiftId" : {
+      "meaning" : "模具出库明细表生产班次ID"
+    },
+    "modOutstorageDetQuantity" : {
+      "meaning" : "模具出库明细表任务数量"
+    },
+    "modOutstorageDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "模具出库明细表报价单价（含税）"
+    },
+    "modOutstorageDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "模具出库明细表报价单价（不含税）"
+    },
+    "modOutstorageDetReceiptDate" : {
+      "meaning" : "模具出库明细表单据日期"
+    },
+    "modOutstorageDetReceiptType" : {
+      "meaning" : "模具出库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "modOutstorageDetRelatedTasksId" : {
+      "meaning" : "模具出库明细表关联任务id"
+    },
+    "modOutstorageDetSerialNumber" : {
+      "meaning" : "模具出库明细表顺序号"
+    },
+    "modOutstorageDetSettMethod" : {
+      "meaning" : "模具出库明细表结算方式"
+    },
+    "modOutstorageDetSettOrgId" : {
+      "meaning" : "模具出库明细表结算机构id(客户/供应商)"
+    },
+    "modOutstorageDetSettlementTotalAmount" : {
+      "meaning" : "模具出库明细表结算总金额"
+    },
+    "modOutstorageDetSettlementUnitPrice" : {
+      "meaning" : "模具出库明细表结算单价"
+    },
+    "modOutstorageDetSingleWeight" : {
+      "meaning" : "模具出库明细表单重kg"
+    },
+    "modOutstorageDetSource" : {
+      "meaning" : "模具出库明细表源"
+    },
+    "modOutstorageDetSourceType" : {
+      "meaning" : "模具出库明细表来源类型"
+    },
+    "modOutstorageDetState" : {
+      "meaning" : "模具出库明细表通用状态"
+    },
+    "modOutstorageDetStorageSpaceId" : {
+      "meaning" : "模具出库明细表库空间id"
+    },
+    "modOutstorageDetSystemCode" : {
+      "meaning" : "模具出库明细表系统编码"
+    },
+    "modOutstorageDetTarget" : {
+      "meaning" : "模具出库明细表目标"
+    },
+    "modOutstorageDetTaskNodeName" : {
+      "meaning" : "模具出库明细表任务节点名称"
+    },
+    "modOutstorageDetTaskNodeType" : {
+      "meaning" : "模具出库明细表任务节点类型"
+    },
+    "modOutstorageDetTenantId" : {
+      "meaning" : "模具出库明细表租户id"
+    },
+    "modOutstorageDetThirdPartyClass" : {
+      "meaning" : "模具出库明细表第三方分类"
+    },
+    "modOutstorageDetThirdPartyId" : {
+      "meaning" : "模具出库明细表第三方系统中的唯一ID"
+    },
+    "modOutstorageDetThirdPartyName" : {
+      "meaning" : "模具出库明细表第三方名称"
+    },
+    "modOutstorageDetToAuditDate" : {
+      "meaning" : "modOutstorageDetToAuditDate"
+    },
+    "modOutstorageDetToBeginTime" : {
+      "meaning" : "modOutstorageDetToBeginTime"
+    },
+    "modOutstorageDetToCreateTime" : {
+      "meaning" : "modOutstorageDetToCreateTime"
+    },
+    "modOutstorageDetToDateExtra1" : {
+      "meaning" : "modOutstorageDetToDateExtra1"
+    },
+    "modOutstorageDetToDateExtra2" : {
+      "meaning" : "modOutstorageDetToDateExtra2"
+    },
+    "modOutstorageDetToDateExtra3" : {
+      "meaning" : "modOutstorageDetToDateExtra3"
+    },
+    "modOutstorageDetToDateExtra4" : {
+      "meaning" : "modOutstorageDetToDateExtra4"
+    },
+    "modOutstorageDetToDateExtra5" : {
+      "meaning" : "modOutstorageDetToDateExtra5"
+    },
+    "modOutstorageDetToDeliveryDate" : {
+      "meaning" : "modOutstorageDetToDeliveryDate"
+    },
+    "modOutstorageDetToEndTime" : {
+      "meaning" : "modOutstorageDetToEndTime"
+    },
+    "modOutstorageDetToReceiptDate" : {
+      "meaning" : "modOutstorageDetToReceiptDate"
+    },
+    "modOutstorageDetToUpdateTime" : {
+      "meaning" : "modOutstorageDetToUpdateTime"
+    },
+    "modOutstorageDetTotalAmount" : {
+      "meaning" : "模具出库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "modOutstorageDetTotalAmountIncludingTax" : {
+      "meaning" : "模具出库明细表总金额（含税）"
+    },
+    "modOutstorageDetTotalAmountWithoutTax" : {
+      "meaning" : "模具出库明细表总金额（不含税）"
+    },
+    "modOutstorageDetTotalWeightLot" : {
+      "meaning" : "模具出库明细表合计总重kg"
+    },
+    "modOutstorageDetTrayMatId" : {
+      "meaning" : "模具出库明细表托盘物料id"
+    },
+    "modOutstorageDetUnitCode" : {
+      "meaning" : "模具出库明细表单位id"
+    },
+    "modOutstorageDetUnitPriceIncludingTax" : {
+      "meaning" : "模具出库明细表单价（含税）"
+    },
+    "modOutstorageDetUnitPriceWithoutTax" : {
+      "meaning" : "模具出库明细表单价（不含税）"
+    },
+    "modOutstorageDetUpdateTime" : {
+      "meaning" : "模具出库明细表更新时间"
+    },
+    "modOutstorageDetUpdater" : {
+      "meaning" : "模具出库明细表更新人"
+    },
+    "modOutstorageDetUpdaterId" : {
+      "meaning" : "模具出库明细表更新人ID"
+    },
+    "modOutstorageDetUserCode" : {
+      "meaning" : "模具出库明细表智能节点的唯一编码"
+    },
+    "modOutstorageDetVarExtra1" : {
+      "meaning" : "模具出库明细表扩展1"
+    },
+    "modOutstorageDetVarExtra2" : {
+      "meaning" : "模具出库明细表扩展2"
+    },
+    "modOutstorageDetVarExtra3" : {
+      "meaning" : "模具出库明细表扩展3"
+    },
+    "modOutstorageDetVarExtra4" : {
+      "meaning" : "模具出库明细表扩展4"
+    },
+    "modOutstorageDetVarExtra5" : {
+      "meaning" : "模具出库明细表扩展5"
+    },
+    "modOutstorageDetVersion" : {
+      "meaning" : "模具出库明细表版本号"
+    }
+  }
+}

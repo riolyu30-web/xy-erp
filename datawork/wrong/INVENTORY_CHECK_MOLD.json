@@ -1,0 +1,368 @@
+{
+  "api_name" : "/inv-check-mold/findList",
+  "table_name" : "模具盘点主表",
+  "request" : {
+    "invCheckMoldClazz" : "INVENTORY_CHECK_MOLD"
+  },
+  "mainTabClazz" : "INVENTORY_CHECK_MOLD",
+  "response" : {
+    "invCheckMoldActualTimeRequired" : {
+      "meaning" : "模具盘点主表实际需时(小时)"
+    },
+    "invCheckMoldAdjustmentTimeRequired" : {
+      "meaning" : "模具盘点主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckMoldApplicationId" : {
+      "meaning" : "模具盘点主表应用ID"
+    },
+    "invCheckMoldAuditDate" : {
+      "meaning" : "模具盘点主表审核时间"
+    },
+    "invCheckMoldAuditStatus" : {
+      "meaning" : "模具盘点主表审核状态"
+    },
+    "invCheckMoldAvailableScheduleId" : {
+      "meaning" : "模具盘点主表可用日程id"
+    },
+    "invCheckMoldBeginTime" : {
+      "meaning" : "模具盘点主表开始时间"
+    },
+    "invCheckMoldBizVersion" : {
+      "meaning" : "模具盘点主表业务自定义版本号"
+    },
+    "invCheckMoldBriefName" : {
+      "meaning" : "模具盘点主表简称"
+    },
+    "invCheckMoldBusDivisId" : {
+      "meaning" : "模具盘点主表事业部id"
+    },
+    "invCheckMoldClazz" : {
+      "meaning" : "模具盘点主表子类 类名（表和类一一对应）"
+    },
+    "invCheckMoldClosedReason" : {
+      "meaning" : "模具盘点主表结案原因"
+    },
+    "invCheckMoldClosedStatus" : {
+      "meaning" : "模具盘点主表结案状态"
+    },
+    "invCheckMoldComment" : {
+      "meaning" : "模具盘点主表评论"
+    },
+    "invCheckMoldCompleteQuantity" : {
+      "meaning" : "模具盘点主表完成数量"
+    },
+    "invCheckMoldCompleteStatus" : {
+      "meaning" : "模具盘点主表完成状态"
+    },
+    "invCheckMoldCreateTime" : {
+      "meaning" : "模具盘点主表创建时间"
+    },
+    "invCheckMoldCreator" : {
+      "meaning" : "模具盘点主表创建人"
+    },
+    "invCheckMoldCreatorId" : {
+      "meaning" : "模具盘点主表创建人ID"
+    },
+    "invCheckMoldDateExtra1" : {
+      "meaning" : "模具盘点主表扩展时间1"
+    },
+    "invCheckMoldDateExtra2" : {
+      "meaning" : "模具盘点主表扩展时间2"
+    },
+    "invCheckMoldDateExtra3" : {
+      "meaning" : "模具盘点主表扩展时间3"
+    },
+    "invCheckMoldDateExtra4" : {
+      "meaning" : "模具盘点主表扩展时间4"
+    },
+    "invCheckMoldDateExtra5" : {
+      "meaning" : "模具盘点主表扩展时间5"
+    },
+    "invCheckMoldDefaultType" : {
+      "meaning" : "模具盘点主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckMoldDeliveryDate" : {
+      "meaning" : "模具盘点主表交货日期"
+    },
+    "invCheckMoldDescription" : {
+      "meaning" : "模具盘点主表描述"
+    },
+    "invCheckMoldEndTime" : {
+      "meaning" : "模具盘点主表结束时间"
+    },
+    "invCheckMoldEndTimeRequired" : {
+      "meaning" : "模具盘点主表最后需时(小时)"
+    },
+    "invCheckMoldEngName" : {
+      "meaning" : "模具盘点主表英文名称"
+    },
+    "invCheckMoldEquipmentId" : {
+      "meaning" : "模具盘点主表设备id"
+    },
+    "invCheckMoldExchangeRateId" : {
+      "meaning" : "模具盘点主表币种汇率id"
+    },
+    "invCheckMoldExtension" : {
+      "meaning" : "模具盘点主表扩展数据"
+    },
+    "invCheckMoldExternalState" : {
+      "meaning" : "模具盘点主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckMoldFilterClazz" : {
+      "meaning" : "模具盘点主表冗余字段用于筛选"
+    },
+    "invCheckMoldFlags" : {
+      "meaning" : "模具盘点主表63位标志位"
+    },
+    "invCheckMoldFromAuditDate" : {
+      "meaning" : "invCheckMoldFromAuditDate"
+    },
+    "invCheckMoldFromBeginTime" : {
+      "meaning" : "invCheckMoldFromBeginTime"
+    },
+    "invCheckMoldFromCreateTime" : {
+      "meaning" : "invCheckMoldFromCreateTime"
+    },
+    "invCheckMoldFromDateExtra1" : {
+      "meaning" : "invCheckMoldFromDateExtra1"
+    },
+    "invCheckMoldFromDateExtra2" : {
+      "meaning" : "invCheckMoldFromDateExtra2"
+    },
+    "invCheckMoldFromDateExtra3" : {
+      "meaning" : "invCheckMoldFromDateExtra3"
+    },
+    "invCheckMoldFromDateExtra4" : {
+      "meaning" : "invCheckMoldFromDateExtra4"
+    },
+    "invCheckMoldFromDateExtra5" : {
+      "meaning" : "invCheckMoldFromDateExtra5"
+    },
+    "invCheckMoldFromDeliveryDate" : {
+      "meaning" : "invCheckMoldFromDeliveryDate"
+    },
+    "invCheckMoldFromEndTime" : {
+      "meaning" : "invCheckMoldFromEndTime"
+    },
+    "invCheckMoldFromReceiptDate" : {
+      "meaning" : "invCheckMoldFromReceiptDate"
+    },
+    "invCheckMoldFromUpdateTime" : {
+      "meaning" : "invCheckMoldFromUpdateTime"
+    },
+    "invCheckMoldFscType" : {
+      "meaning" : "模具盘点主表FSC声明"
+    },
+    "invCheckMoldGenerativePeople" : {
+      "meaning" : "模具盘点主表下发人"
+    },
+    "invCheckMoldGenerativeState" : {
+      "meaning" : "模具盘点主表下发状态"
+    },
+    "invCheckMoldGroovyScript" : {
+      "meaning" : "模具盘点主表groovy脚本"
+    },
+    "invCheckMoldGropeCode" : {
+      "meaning" : "模具盘点主表搜索码"
+    },
+    "invCheckMoldId" : {
+      "meaning" : "模具盘点主表pk",
+      "is_primary" : true
+    },
+    "invCheckMoldInUsed" : {
+      "meaning" : "模具盘点主表是否被使用"
+    },
+    "invCheckMoldInvTypeTaxRateId" : {
+      "meaning" : "模具盘点主表发票税率id"
+    },
+    "invCheckMoldIsBanned" : {
+      "meaning" : "模具盘点主表是否被禁用"
+    },
+    "invCheckMoldIsDeleted" : {
+      "meaning" : "模具盘点主表是否被删除"
+    },
+    "invCheckMoldIsLeaf" : {
+      "meaning" : "模具盘点主表是否叶子节点"
+    },
+    "invCheckMoldIsMainFlow" : {
+      "meaning" : "模具盘点主表是否是主流程"
+    },
+    "invCheckMoldIsManualModificationDate" : {
+      "meaning" : "模具盘点主表是否手动修改计划生产时间"
+    },
+    "invCheckMoldIsolation" : {
+      "meaning" : "模具盘点主表智能节点数据隔离标识"
+    },
+    "invCheckMoldJsScript" : {
+      "meaning" : "模具盘点主表js脚本"
+    },
+    "invCheckMoldMaterialId" : {
+      "meaning" : "模具盘点主表物料id"
+    },
+    "invCheckMoldName" : {
+      "meaning" : "模具盘点主表智能节点名"
+    },
+    "invCheckMoldNameCodeSearch" : {
+      "meaning" : "模具盘点主表name、user_code模糊搜索"
+    },
+    "invCheckMoldNumberExtra1" : {
+      "meaning" : "模具盘点主表扩展数量1"
+    },
+    "invCheckMoldNumberExtra2" : {
+      "meaning" : "模具盘点主表扩展数量2"
+    },
+    "invCheckMoldNumberExtra3" : {
+      "meaning" : "模具盘点主表扩展数量3"
+    },
+    "invCheckMoldNumberExtra4" : {
+      "meaning" : "模具盘点主表扩展数量4"
+    },
+    "invCheckMoldNumberExtra5" : {
+      "meaning" : "模具盘点主表扩展数量5"
+    },
+    "invCheckMoldParentId" : {
+      "meaning" : "模具盘点主表父节点ID"
+    },
+    "invCheckMoldPlannedOutputQuantity" : {
+      "meaning" : "模具盘点主表计划产出数量"
+    },
+    "invCheckMoldPlannedTimeRequired" : {
+      "meaning" : "模具盘点主表计划需时(小时)"
+    },
+    "invCheckMoldPrintTimes" : {
+      "meaning" : "模具盘点主表打印次数"
+    },
+    "invCheckMoldPriority" : {
+      "meaning" : "模具盘点主表优先级"
+    },
+    "invCheckMoldProcessInstanceId" : {
+      "meaning" : "模具盘点主表流程实例ID"
+    },
+    "invCheckMoldProductionProcessesTypeId" : {
+      "meaning" : "模具盘点主表工序类型ID"
+    },
+    "invCheckMoldProductionShiftId" : {
+      "meaning" : "模具盘点主表生产班次ID"
+    },
+    "invCheckMoldQuantity" : {
+      "meaning" : "模具盘点主表任务数量"
+    },
+    "invCheckMoldReceiptDate" : {
+      "meaning" : "模具盘点主表单据日期"
+    },
+    "invCheckMoldReceiptType" : {
+      "meaning" : "模具盘点主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckMoldRelatedTasksId" : {
+      "meaning" : "模具盘点主表关联任务id"
+    },
+    "invCheckMoldSerialNumber" : {
+      "meaning" : "模具盘点主表顺序号"
+    },
+    "invCheckMoldSource" : {
+      "meaning" : "模具盘点主表源"
+    },
+    "invCheckMoldSourceType" : {
+      "meaning" : "模具盘点主表来源类型"
+    },
+    "invCheckMoldState" : {
+      "meaning" : "模具盘点主表通用状态"
+    },
+    "invCheckMoldSystemCode" : {
+      "meaning" : "模具盘点主表系统编码"
+    },
+    "invCheckMoldTarget" : {
+      "meaning" : "模具盘点主表目标"
+    },
+    "invCheckMoldTaskNodeName" : {
+      "meaning" : "模具盘点主表任务节点名称"
+    },
+    "invCheckMoldTenantId" : {
+      "meaning" : "模具盘点主表租户id"
+    },
+    "invCheckMoldThirdPartyClass" : {
+      "meaning" : "模具盘点主表第三方分类"
+    },
+    "invCheckMoldThirdPartyId" : {
+      "meaning" : "模具盘点主表第三方系统中的唯一ID"
+    },
+    "invCheckMoldThirdPartyName" : {
+      "meaning" : "模具盘点主表第三方名称"
+    },
+    "invCheckMoldToAuditDate" : {
+      "meaning" : "invCheckMoldToAuditDate"
+    },
+    "invCheckMoldToBeginTime" : {
+      "meaning" : "invCheckMoldToBeginTime"
+    },
+    "invCheckMoldToCreateTime" : {
+      "meaning" : "invCheckMoldToCreateTime"
+    },
+    "invCheckMoldToDateExtra1" : {
+      "meaning" : "invCheckMoldToDateExtra1"
+    },
+    "invCheckMoldToDateExtra2" : {
+      "meaning" : "invCheckMoldToDateExtra2"
+    },
+    "invCheckMoldToDateExtra3" : {
+      "meaning" : "invCheckMoldToDateExtra3"
+    },
+    "invCheckMoldToDateExtra4" : {
+      "meaning" : "invCheckMoldToDateExtra4"
+    },
+    "invCheckMoldToDateExtra5" : {
+      "meaning" : "invCheckMoldToDateExtra5"
+    },
+    "invCheckMoldToDeliveryDate" : {
+      "meaning" : "invCheckMoldToDeliveryDate"
+    },
+    "invCheckMoldToEndTime" : {
+      "meaning" : "invCheckMoldToEndTime"
+    },
+    "invCheckMoldToReceiptDate" : {
+      "meaning" : "invCheckMoldToReceiptDate"
+    },
+    "invCheckMoldToUpdateTime" : {
+      "meaning" : "invCheckMoldToUpdateTime"
+    },
+    "invCheckMoldTotalAmountExcludingTax" : {
+      "meaning" : "模具盘点主表总盘点不含税金额"
+    },
+    "invCheckMoldTotalAmountIncludingTax" : {
+      "meaning" : "模具盘点主表总盘点含税金额"
+    },
+    "invCheckMoldUnitCode" : {
+      "meaning" : "模具盘点主表单位id"
+    },
+    "invCheckMoldUpdateTime" : {
+      "meaning" : "模具盘点主表更新时间"
+    },
+    "invCheckMoldUpdater" : {
+      "meaning" : "模具盘点主表更新人"
+    },
+    "invCheckMoldUpdaterId" : {
+      "meaning" : "模具盘点主表更新人ID"
+    },
+    "invCheckMoldUserCode" : {
+      "meaning" : "模具盘点主表智能节点的唯一编码"
+    },
+    "invCheckMoldVarExtra1" : {
+      "meaning" : "模具盘点主表扩展1"
+    },
+    "invCheckMoldVarExtra2" : {
+      "meaning" : "模具盘点主表扩展2"
+    },
+    "invCheckMoldVarExtra3" : {
+      "meaning" : "模具盘点主表扩展3"
+    },
+    "invCheckMoldVarExtra4" : {
+      "meaning" : "模具盘点主表扩展4"
+    },
+    "invCheckMoldVarExtra5" : {
+      "meaning" : "模具盘点主表扩展5"
+    },
+    "invCheckMoldVersion" : {
+      "meaning" : "模具盘点主表版本号"
+    }
+  }
+}

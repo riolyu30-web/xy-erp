@@ -1,0 +1,374 @@
+ {
+      "api_name": "/equipment-checkin-member/findList",
+      "table_name": "生产上机登记成员表",
+      "request": {
+        "equipmentCheckinMemberClazz": "EQUIPMENT_CHECKIN_MEMBER"
+      },
+      "mainTabClazz": "EQUIPMENT_CHECKIN_MEMBER",
+      "response": {
+        "equipmentCheckinMemberActualTimeRequired": {
+          "meaning": "生产上机登记成员表实际需时(小时)"
+        },
+        "equipmentCheckinMemberAdjustmentTimeRequired": {
+          "meaning": "生产上机登记成员表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "equipmentCheckinMemberApplicationId": {
+          "meaning": "生产上机登记成员表应用ID"
+        },
+        "equipmentCheckinMemberAuditDate": {
+          "meaning": "生产上机登记成员表审核时间"
+        },
+        "equipmentCheckinMemberAuditStatus": {
+          "meaning": "生产上机登记成员表审核状态"
+        },
+        "equipmentCheckinMemberAvailableScheduleId": {
+          "meaning": "生产上机登记成员表可用日程id"
+        },
+        "equipmentCheckinMemberBeginTime": {
+          "meaning": "生产上机登记成员表开始时间"
+        },
+        "equipmentCheckinMemberBizVersion": {
+          "meaning": "生产上机登记成员表业务自定义版本号"
+        },
+        "equipmentCheckinMemberBriefName": {
+          "meaning": "生产上机登记成员表简称"
+        },
+        "equipmentCheckinMemberBusDivisId": {
+          "meaning": "生产上机登记成员表事业部id"
+        },
+        "equipmentCheckinMemberClazz": {
+          "meaning": "生产上机登记成员表子类 类名（表和类一一对应）"
+        },
+        "equipmentCheckinMemberClosedReason": {
+          "meaning": "生产上机登记成员表结案原因"
+        },
+        "equipmentCheckinMemberClosedStatus": {
+          "meaning": "生产上机登记成员表结案状态"
+        },
+        "equipmentCheckinMemberComment": {
+          "meaning": "生产上机登记成员表评论"
+        },
+        "equipmentCheckinMemberCompleteQuantity": {
+          "meaning": "生产上机登记成员表完成数量"
+        },
+        "equipmentCheckinMemberCompleteStatus": {
+          "meaning": "生产上机登记成员表完成状态"
+        },
+        "equipmentCheckinMemberCreateTime": {
+          "meaning": "生产上机登记成员表创建时间"
+        },
+        "equipmentCheckinMemberCreator": {
+          "meaning": "生产上机登记成员表创建人"
+        },
+        "equipmentCheckinMemberCreatorId": {
+          "meaning": "生产上机登记成员表创建人ID"
+        },
+        "equipmentCheckinMemberDateExtra1": {
+          "meaning": "生产上机登记成员表扩展时间1"
+        },
+        "equipmentCheckinMemberDateExtra2": {
+          "meaning": "生产上机登记成员表扩展时间2"
+        },
+        "equipmentCheckinMemberDateExtra3": {
+          "meaning": "生产上机登记成员表扩展时间3"
+        },
+        "equipmentCheckinMemberDateExtra4": {
+          "meaning": "生产上机登记成员表扩展时间4"
+        },
+        "equipmentCheckinMemberDateExtra5": {
+          "meaning": "生产上机登记成员表扩展时间5"
+        },
+        "equipmentCheckinMemberDefaultType": {
+          "meaning": "生产上机登记成员表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "equipmentCheckinMemberDeliveryDate": {
+          "meaning": "生产上机登记成员表交货日期"
+        },
+        "equipmentCheckinMemberDescription": {
+          "meaning": "生产上机登记成员表描述"
+        },
+        "equipmentCheckinMemberEndTime": {
+          "meaning": "生产上机登记成员表结束时间"
+        },
+        "equipmentCheckinMemberEndTimeRequired": {
+          "meaning": "生产上机登记成员表最后需时(小时)"
+        },
+        "equipmentCheckinMemberEngName": {
+          "meaning": "生产上机登记成员表英文名称"
+        },
+        "equipmentCheckinMemberEquipmentCheckinId": {
+          "meaning": "生产上机登记成员表登记表_id"
+        },
+        "equipmentCheckinMemberEquipmentId": {
+          "meaning": "生产上机登记成员表设备id"
+        },
+        "equipmentCheckinMemberExchangeRateId": {
+          "meaning": "生产上机登记成员表币种汇率id"
+        },
+        "equipmentCheckinMemberExtension": {
+          "meaning": "生产上机登记成员表扩展数据"
+        },
+        "equipmentCheckinMemberExternalState": {
+          "meaning": "生产上机登记成员表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "equipmentCheckinMemberFilterClazz": {
+          "meaning": "生产上机登记成员表冗余字段用于筛选"
+        },
+        "equipmentCheckinMemberFlags": {
+          "meaning": "生产上机登记成员表63位标志位"
+        },
+        "equipmentCheckinMemberFromAuditDate": {
+          "meaning": "equipmentCheckinMemberFromAuditDate"
+        },
+        "equipmentCheckinMemberFromBeginTime": {
+          "meaning": "equipmentCheckinMemberFromBeginTime"
+        },
+        "equipmentCheckinMemberFromCreateTime": {
+          "meaning": "equipmentCheckinMemberFromCreateTime"
+        },
+        "equipmentCheckinMemberFromDateExtra1": {
+          "meaning": "equipmentCheckinMemberFromDateExtra1"
+        },
+        "equipmentCheckinMemberFromDateExtra2": {
+          "meaning": "equipmentCheckinMemberFromDateExtra2"
+        },
+        "equipmentCheckinMemberFromDateExtra3": {
+          "meaning": "equipmentCheckinMemberFromDateExtra3"
+        },
+        "equipmentCheckinMemberFromDateExtra4": {
+          "meaning": "equipmentCheckinMemberFromDateExtra4"
+        },
+        "equipmentCheckinMemberFromDateExtra5": {
+          "meaning": "equipmentCheckinMemberFromDateExtra5"
+        },
+        "equipmentCheckinMemberFromDeliveryDate": {
+          "meaning": "equipmentCheckinMemberFromDeliveryDate"
+        },
+        "equipmentCheckinMemberFromEndTime": {
+          "meaning": "equipmentCheckinMemberFromEndTime"
+        },
+        "equipmentCheckinMemberFromReceiptDate": {
+          "meaning": "equipmentCheckinMemberFromReceiptDate"
+        },
+        "equipmentCheckinMemberFromUpdateTime": {
+          "meaning": "equipmentCheckinMemberFromUpdateTime"
+        },
+        "equipmentCheckinMemberFscType": {
+          "meaning": "生产上机登记成员表FSC声明"
+        },
+        "equipmentCheckinMemberGenerativePeople": {
+          "meaning": "生产上机登记成员表下发人"
+        },
+        "equipmentCheckinMemberGenerativeState": {
+          "meaning": "生产上机登记成员表下发状态"
+        },
+        "equipmentCheckinMemberGroovyScript": {
+          "meaning": "生产上机登记成员表groovy脚本"
+        },
+        "equipmentCheckinMemberGropeCode": {
+          "meaning": "生产上机登记成员表搜索码"
+        },
+        "equipmentCheckinMemberId": {
+          "meaning": "生产上机登记成员表PK",
+          "is_primary": true
+        },
+        "equipmentCheckinMemberInUsed": {
+          "meaning": "生产上机登记成员表是否被使用"
+        },
+        "equipmentCheckinMemberInvTypeTaxRateId": {
+          "meaning": "生产上机登记成员表发票税率id"
+        },
+        "equipmentCheckinMemberIsBanned": {
+          "meaning": "生产上机登记成员表是否被禁用"
+        },
+        "equipmentCheckinMemberIsDeleted": {
+          "meaning": "生产上机登记成员表是否被删除"
+        },
+        "equipmentCheckinMemberIsLeaf": {
+          "meaning": "生产上机登记成员表是否叶子节点"
+        },
+        "equipmentCheckinMemberIsMainFlow": {
+          "meaning": "生产上机登记成员表是否是主流程"
+        },
+        "equipmentCheckinMemberIsManualModificationDate": {
+          "meaning": "生产上机登记成员表是否手动修改计划生产时间"
+        },
+        "equipmentCheckinMemberIsolation": {
+          "meaning": "生产上机登记成员表智能节点数据隔离标识"
+        },
+        "equipmentCheckinMemberJsScript": {
+          "meaning": "生产上机登记成员表js脚本"
+        },
+        "equipmentCheckinMemberLevel": {
+          "meaning": "生产上机登记成员表等级"
+        },
+        "equipmentCheckinMemberMaterialId": {
+          "meaning": "生产上机登记成员表物料id"
+        },
+        "equipmentCheckinMemberName": {
+          "meaning": "生产上机登记成员表智能节点名"
+        },
+        "equipmentCheckinMemberNameCodeSearch": {
+          "meaning": "生产上机登记成员表name、user_code模糊搜索"
+        },
+        "equipmentCheckinMemberNumberExtra1": {
+          "meaning": "生产上机登记成员表扩展数量1"
+        },
+        "equipmentCheckinMemberNumberExtra2": {
+          "meaning": "生产上机登记成员表扩展数量2"
+        },
+        "equipmentCheckinMemberNumberExtra3": {
+          "meaning": "生产上机登记成员表扩展数量3"
+        },
+        "equipmentCheckinMemberNumberExtra4": {
+          "meaning": "生产上机登记成员表扩展数量4"
+        },
+        "equipmentCheckinMemberNumberExtra5": {
+          "meaning": "生产上机登记成员表扩展数量5"
+        },
+        "equipmentCheckinMemberParentId": {
+          "meaning": "生产上机登记成员表父节点ID"
+        },
+        "equipmentCheckinMemberPlannedOutputQuantity": {
+          "meaning": "生产上机登记成员表计划产出数量"
+        },
+        "equipmentCheckinMemberPlannedTimeRequired": {
+          "meaning": "生产上机登记成员表计划需时(小时)"
+        },
+        "equipmentCheckinMemberPrintTimes": {
+          "meaning": "生产上机登记成员表打印次数"
+        },
+        "equipmentCheckinMemberPriority": {
+          "meaning": "生产上机登记成员表优先级"
+        },
+        "equipmentCheckinMemberProcessInstanceId": {
+          "meaning": "生产上机登记成员表流程实例ID"
+        },
+        "equipmentCheckinMemberProductionProcessesTypeId": {
+          "meaning": "生产上机登记成员表工序类型ID"
+        },
+        "equipmentCheckinMemberProductionShiftId": {
+          "meaning": "生产上机登记成员表生产班次ID"
+        },
+        "equipmentCheckinMemberQuantity": {
+          "meaning": "生产上机登记成员表任务数量"
+        },
+        "equipmentCheckinMemberReceiptDate": {
+          "meaning": "生产上机登记成员表单据日期"
+        },
+        "equipmentCheckinMemberReceiptType": {
+          "meaning": "生产上机登记成员表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "equipmentCheckinMemberRelatedTasksId": {
+          "meaning": "生产上机登记成员表关联任务id"
+        },
+        "equipmentCheckinMemberSerialNumber": {
+          "meaning": "生产上机登记成员表顺序号"
+        },
+        "equipmentCheckinMemberSource": {
+          "meaning": "生产上机登记成员表源"
+        },
+        "equipmentCheckinMemberSourceType": {
+          "meaning": "生产上机登记成员表来源类型"
+        },
+        "equipmentCheckinMemberStaffId": {
+          "meaning": "生产上机登记成员表员工_id"
+        },
+        "equipmentCheckinMemberState": {
+          "meaning": "生产上机登记成员表通用状态"
+        },
+        "equipmentCheckinMemberSystemCode": {
+          "meaning": "生产上机登记成员表系统编码"
+        },
+        "equipmentCheckinMemberTarget": {
+          "meaning": "生产上机登记成员表目标"
+        },
+        "equipmentCheckinMemberTaskNodeName": {
+          "meaning": "生产上机登记成员表任务节点名称"
+        },
+        "equipmentCheckinMemberTeamId": {
+          "meaning": "生产上机登记成员表班组_id"
+        },
+        "equipmentCheckinMemberTenantId": {
+          "meaning": "生产上机登记成员表租户_id"
+        },
+        "equipmentCheckinMemberThirdPartyClass": {
+          "meaning": "生产上机登记成员表第三方分类"
+        },
+        "equipmentCheckinMemberThirdPartyId": {
+          "meaning": "生产上机登记成员表第三方系统中的唯一ID"
+        },
+        "equipmentCheckinMemberThirdPartyName": {
+          "meaning": "生产上机登记成员表第三方名称"
+        },
+        "equipmentCheckinMemberToAuditDate": {
+          "meaning": "equipmentCheckinMemberToAuditDate"
+        },
+        "equipmentCheckinMemberToBeginTime": {
+          "meaning": "equipmentCheckinMemberToBeginTime"
+        },
+        "equipmentCheckinMemberToCreateTime": {
+          "meaning": "equipmentCheckinMemberToCreateTime"
+        },
+        "equipmentCheckinMemberToDateExtra1": {
+          "meaning": "equipmentCheckinMemberToDateExtra1"
+        },
+        "equipmentCheckinMemberToDateExtra2": {
+          "meaning": "equipmentCheckinMemberToDateExtra2"
+        },
+        "equipmentCheckinMemberToDateExtra3": {
+          "meaning": "equipmentCheckinMemberToDateExtra3"
+        },
+        "equipmentCheckinMemberToDateExtra4": {
+          "meaning": "equipmentCheckinMemberToDateExtra4"
+        },
+        "equipmentCheckinMemberToDateExtra5": {
+          "meaning": "equipmentCheckinMemberToDateExtra5"
+        },
+        "equipmentCheckinMemberToDeliveryDate": {
+          "meaning": "equipmentCheckinMemberToDeliveryDate"
+        },
+        "equipmentCheckinMemberToEndTime": {
+          "meaning": "equipmentCheckinMemberToEndTime"
+        },
+        "equipmentCheckinMemberToReceiptDate": {
+          "meaning": "equipmentCheckinMemberToReceiptDate"
+        },
+        "equipmentCheckinMemberToUpdateTime": {
+          "meaning": "equipmentCheckinMemberToUpdateTime"
+        },
+        "equipmentCheckinMemberUnitCode": {
+          "meaning": "生产上机登记成员表单位id"
+        },
+        "equipmentCheckinMemberUpdateTime": {
+          "meaning": "生产上机登记成员表更新时间"
+        },
+        "equipmentCheckinMemberUpdater": {
+          "meaning": "生产上机登记成员表更新人"
+        },
+        "equipmentCheckinMemberUpdaterId": {
+          "meaning": "生产上机登记成员表更新人ID"
+        },
+        "equipmentCheckinMemberUserCode": {
+          "meaning": "生产上机登记成员表智能节点的唯一编码"
+        },
+        "equipmentCheckinMemberVarExtra1": {
+          "meaning": "生产上机登记成员表扩展1"
+        },
+        "equipmentCheckinMemberVarExtra2": {
+          "meaning": "生产上机登记成员表扩展2"
+        },
+        "equipmentCheckinMemberVarExtra3": {
+          "meaning": "生产上机登记成员表扩展3"
+        },
+        "equipmentCheckinMemberVarExtra4": {
+          "meaning": "生产上机登记成员表扩展4"
+        },
+        "equipmentCheckinMemberVarExtra5": {
+          "meaning": "生产上机登记成员表扩展5"
+        },
+        "equipmentCheckinMemberVersion": {
+          "meaning": "生产上机登记成员表版本号"
+        }
+      }
+    }

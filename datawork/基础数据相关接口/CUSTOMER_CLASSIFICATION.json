@@ -1,0 +1,230 @@
+{
+      "api_name": "/customer-classification/findList",
+      "table_name": "客户分类",
+      "request": {
+        "customerClassificationClazz": "CUSTOMER_CLASSIFICATION"
+      },
+      "mainTabClazz": "CUSTOMER_CLASSIFICATION",
+      "response": {
+        "customerClassificationApplicationId": {
+          "meaning": "客户分类应用ID"
+        },
+        "customerClassificationAuditDate": {
+          "meaning": "客户分类审核时间"
+        },
+        "customerClassificationAuditStatus": {
+          "meaning": "客户分类审核状态"
+        },
+        "customerClassificationBizVersion": {
+          "meaning": "客户分类业务自定义版本号"
+        },
+        "customerClassificationBriefName": {
+          "meaning": "客户分类简称"
+        },
+        "customerClassificationBusDivisId": {
+          "meaning": "客户分类事业部id"
+        },
+        "customerClassificationClazz": {
+          "meaning": "客户分类子类 类名（表和类一一对应）"
+        },
+        "customerClassificationComment": {
+          "meaning": "客户分类评论"
+        },
+        "customerClassificationCreateTime": {
+          "meaning": "客户分类创建时间"
+        },
+        "customerClassificationCreator": {
+          "meaning": "客户分类创建人"
+        },
+        "customerClassificationCreatorId": {
+          "meaning": "客户分类创建人ID"
+        },
+        "customerClassificationDateExtra1": {
+          "meaning": "客户分类扩展时间1"
+        },
+        "customerClassificationDateExtra2": {
+          "meaning": "客户分类扩展时间2"
+        },
+        "customerClassificationDateExtra3": {
+          "meaning": "客户分类扩展时间3"
+        },
+        "customerClassificationDateExtra4": {
+          "meaning": "客户分类扩展时间4"
+        },
+        "customerClassificationDateExtra5": {
+          "meaning": "客户分类扩展时间5"
+        },
+        "customerClassificationDefaultType": {
+          "meaning": "客户分类智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "customerClassificationDescription": {
+          "meaning": "客户分类描述"
+        },
+        "customerClassificationEngName": {
+          "meaning": "客户分类英文名称"
+        },
+        "customerClassificationExtension": {
+          "meaning": "客户分类扩展数据"
+        },
+        "customerClassificationExternalState": {
+          "meaning": "客户分类上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "customerClassificationFlags": {
+          "meaning": "客户分类63位标志位"
+        },
+        "customerClassificationFromAuditDate": {
+          "meaning": "customerClassificationFromAuditDate"
+        },
+        "customerClassificationFromCreateTime": {
+          "meaning": "customerClassificationFromCreateTime"
+        },
+        "customerClassificationFromDateExtra1": {
+          "meaning": "customerClassificationFromDateExtra1"
+        },
+        "customerClassificationFromDateExtra2": {
+          "meaning": "customerClassificationFromDateExtra2"
+        },
+        "customerClassificationFromDateExtra3": {
+          "meaning": "customerClassificationFromDateExtra3"
+        },
+        "customerClassificationFromDateExtra4": {
+          "meaning": "customerClassificationFromDateExtra4"
+        },
+        "customerClassificationFromDateExtra5": {
+          "meaning": "customerClassificationFromDateExtra5"
+        },
+        "customerClassificationFromUpdateTime": {
+          "meaning": "customerClassificationFromUpdateTime"
+        },
+        "customerClassificationGroovyScript": {
+          "meaning": "客户分类groovy脚本"
+        },
+        "customerClassificationGropeCode": {
+          "meaning": "客户分类搜索码"
+        },
+        "customerClassificationId": {
+          "meaning": "客户分类id\t",
+          "is_primary": true
+        },
+        "customerClassificationInUsed": {
+          "meaning": "客户分类是否被使用"
+        },
+        "customerClassificationIsBanned": {
+          "meaning": "客户分类是否被禁用"
+        },
+        "customerClassificationIsDeleted": {
+          "meaning": "客户分类是否被删除"
+        },
+        "customerClassificationIsMainFlow": {
+          "meaning": "客户分类是否是主流程"
+        },
+        "customerClassificationIsolation": {
+          "meaning": "客户分类智能节点数据隔离标识"
+        },
+        "customerClassificationJsScript": {
+          "meaning": "客户分类js脚本"
+        },
+        "customerClassificationName": {
+          "meaning": "客户分类智能节点名"
+        },
+        "customerClassificationNameCodeSearch": {
+          "meaning": "客户分类name、user_code模糊搜索"
+        },
+        "customerClassificationNumberExtra1": {
+          "meaning": "客户分类扩展数量1"
+        },
+        "customerClassificationNumberExtra2": {
+          "meaning": "客户分类扩展数量2"
+        },
+        "customerClassificationNumberExtra3": {
+          "meaning": "客户分类扩展数量3"
+        },
+        "customerClassificationNumberExtra4": {
+          "meaning": "客户分类扩展数量4"
+        },
+        "customerClassificationNumberExtra5": {
+          "meaning": "客户分类扩展数量5"
+        },
+        "customerClassificationParentId": {
+          "meaning": "客户分类父节点ID"
+        },
+        "customerClassificationProcessInstanceId": {
+          "meaning": "客户分类流程实例ID"
+        },
+        "customerClassificationSerialNumber": {
+          "meaning": "客户分类顺序号"
+        },
+        "customerClassificationState": {
+          "meaning": "客户分类通用状态"
+        },
+        "customerClassificationSystemCode": {
+          "meaning": "客户分类系统编码"
+        },
+        "customerClassificationTaskNodeName": {
+          "meaning": "客户分类任务节点名称"
+        },
+        "customerClassificationThirdPartyClass": {
+          "meaning": "客户分类第三方分类"
+        },
+        "customerClassificationThirdPartyId": {
+          "meaning": "客户分类第三方系统中的唯一ID"
+        },
+        "customerClassificationThirdPartyName": {
+          "meaning": "客户分类第三方名称"
+        },
+        "customerClassificationToAuditDate": {
+          "meaning": "customerClassificationToAuditDate"
+        },
+        "customerClassificationToCreateTime": {
+          "meaning": "customerClassificationToCreateTime"
+        },
+        "customerClassificationToDateExtra1": {
+          "meaning": "customerClassificationToDateExtra1"
+        },
+        "customerClassificationToDateExtra2": {
+          "meaning": "customerClassificationToDateExtra2"
+        },
+        "customerClassificationToDateExtra3": {
+          "meaning": "customerClassificationToDateExtra3"
+        },
+        "customerClassificationToDateExtra4": {
+          "meaning": "customerClassificationToDateExtra4"
+        },
+        "customerClassificationToDateExtra5": {
+          "meaning": "customerClassificationToDateExtra5"
+        },
+        "customerClassificationToUpdateTime": {
+          "meaning": "customerClassificationToUpdateTime"
+        },
+        "customerClassificationUpdateTime": {
+          "meaning": "客户分类更新时间"
+        },
+        "customerClassificationUpdater": {
+          "meaning": "客户分类更新人"
+        },
+        "customerClassificationUpdaterId": {
+          "meaning": "客户分类更新人ID"
+        },
+        "customerClassificationUserCode": {
+          "meaning": "客户分类智能节点的唯一编码"
+        },
+        "customerClassificationVarExtra1": {
+          "meaning": "客户分类扩展1"
+        },
+        "customerClassificationVarExtra2": {
+          "meaning": "客户分类扩展2"
+        },
+        "customerClassificationVarExtra3": {
+          "meaning": "客户分类扩展3"
+        },
+        "customerClassificationVarExtra4": {
+          "meaning": "客户分类扩展4"
+        },
+        "customerClassificationVarExtra5": {
+          "meaning": "客户分类扩展5"
+        },
+        "customerClassificationVersion": {
+          "meaning": "客户分类版本号"
+        }
+      }
+    }

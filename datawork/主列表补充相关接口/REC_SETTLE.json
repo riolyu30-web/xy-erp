@@ -1,0 +1,413 @@
+{
+  "api_name" : "/rec-settle/findList",
+  "table_name" : "应收结算",
+  "request" : {
+    "recSettleClazz" : "REC_SETTLE"
+  },
+  "mainTabClazz" : "REC_SETTLE",
+  "response" : {
+    "recSettleAcctHolderName" : {
+      "meaning" : "应收结算账号持有人"
+    },
+    "recSettleActualTimeRequired" : {
+      "meaning" : "应收结算实际需时(小时)"
+    },
+    "recSettleAdjustmentTimeRequired" : {
+      "meaning" : "应收结算调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "recSettleApplicationId" : {
+      "meaning" : "应收结算应用ID"
+    },
+    "recSettleAuditDate" : {
+      "meaning" : "应收结算审核时间"
+    },
+    "recSettleAuditStatus" : {
+      "meaning" : "应收结算审核状态"
+    },
+    "recSettleAvailableScheduleId" : {
+      "meaning" : "应收结算可用日程id"
+    },
+    "recSettleBankAcctNum" : {
+      "meaning" : "应收结算银行账号"
+    },
+    "recSettleBankBranchInfo" : {
+      "meaning" : "应收结算开户支行信息"
+    },
+    "recSettleBankName" : {
+      "meaning" : "应收结算银行名称"
+    },
+    "recSettleBeginTime" : {
+      "meaning" : "应收结算开始时间"
+    },
+    "recSettleBizVersion" : {
+      "meaning" : "应收结算业务自定义版本号"
+    },
+    "recSettleBriefName" : {
+      "meaning" : "应收结算简称"
+    },
+    "recSettleBusDivisId" : {
+      "meaning" : "应收结算事业部id"
+    },
+    "recSettleClazz" : {
+      "meaning" : "应收结算子类 类名（表和类一一对应）"
+    },
+    "recSettleClosedReason" : {
+      "meaning" : "应收结算结案原因"
+    },
+    "recSettleClosedStatus" : {
+      "meaning" : "应收结算结案状态"
+    },
+    "recSettleComment" : {
+      "meaning" : "应收结算评论"
+    },
+    "recSettleCompleteQuantity" : {
+      "meaning" : "应收结算完成数量"
+    },
+    "recSettleCompleteStatus" : {
+      "meaning" : "应收结算完成状态"
+    },
+    "recSettleCreateTime" : {
+      "meaning" : "应收结算创建时间"
+    },
+    "recSettleCreator" : {
+      "meaning" : "应收结算创建人"
+    },
+    "recSettleCreatorId" : {
+      "meaning" : "应收结算创建人ID"
+    },
+    "recSettleCurrency" : {
+      "meaning" : "应收结算币种"
+    },
+    "recSettleCustomerId" : {
+      "meaning" : "应收结算客户ID"
+    },
+    "recSettleDateExtra1" : {
+      "meaning" : "应收结算扩展时间1"
+    },
+    "recSettleDateExtra2" : {
+      "meaning" : "应收结算扩展时间2"
+    },
+    "recSettleDateExtra3" : {
+      "meaning" : "应收结算扩展时间3"
+    },
+    "recSettleDateExtra4" : {
+      "meaning" : "应收结算扩展时间4"
+    },
+    "recSettleDateExtra5" : {
+      "meaning" : "应收结算扩展时间5"
+    },
+    "recSettleDefaultType" : {
+      "meaning" : "应收结算智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "recSettleDeliveryDate" : {
+      "meaning" : "应收结算交货日期"
+    },
+    "recSettleDescription" : {
+      "meaning" : "应收结算描述"
+    },
+    "recSettleEndTime" : {
+      "meaning" : "应收结算结束时间"
+    },
+    "recSettleEndTimeRequired" : {
+      "meaning" : "应收结算最后需时(小时)"
+    },
+    "recSettleEngName" : {
+      "meaning" : "应收结算英文名称"
+    },
+    "recSettleEquipmentId" : {
+      "meaning" : "应收结算设备id"
+    },
+    "recSettleExchangeRateId" : {
+      "meaning" : "应收结算币种汇率id"
+    },
+    "recSettleExtension" : {
+      "meaning" : "应收结算扩展数据"
+    },
+    "recSettleExternalState" : {
+      "meaning" : "应收结算上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "recSettleFilterClazz" : {
+      "meaning" : "应收结算冗余字段用于筛选"
+    },
+    "recSettleFlags" : {
+      "meaning" : "应收结算63位标志位"
+    },
+    "recSettleFromAuditDate" : {
+      "meaning" : "recSettleFromAuditDate"
+    },
+    "recSettleFromBeginTime" : {
+      "meaning" : "recSettleFromBeginTime"
+    },
+    "recSettleFromCreateTime" : {
+      "meaning" : "recSettleFromCreateTime"
+    },
+    "recSettleFromDateExtra1" : {
+      "meaning" : "recSettleFromDateExtra1"
+    },
+    "recSettleFromDateExtra2" : {
+      "meaning" : "recSettleFromDateExtra2"
+    },
+    "recSettleFromDateExtra3" : {
+      "meaning" : "recSettleFromDateExtra3"
+    },
+    "recSettleFromDateExtra4" : {
+      "meaning" : "recSettleFromDateExtra4"
+    },
+    "recSettleFromDateExtra5" : {
+      "meaning" : "recSettleFromDateExtra5"
+    },
+    "recSettleFromDeliveryDate" : {
+      "meaning" : "recSettleFromDeliveryDate"
+    },
+    "recSettleFromEndTime" : {
+      "meaning" : "recSettleFromEndTime"
+    },
+    "recSettleFromReceiptDate" : {
+      "meaning" : "recSettleFromReceiptDate"
+    },
+    "recSettleFromUpdateTime" : {
+      "meaning" : "recSettleFromUpdateTime"
+    },
+    "recSettleFscType" : {
+      "meaning" : "应收结算FSC声明"
+    },
+    "recSettleGenerativePeople" : {
+      "meaning" : "应收结算下发人"
+    },
+    "recSettleGenerativeState" : {
+      "meaning" : "应收结算下发状态"
+    },
+    "recSettleGroovyScript" : {
+      "meaning" : "应收结算groovy脚本"
+    },
+    "recSettleGropeCode" : {
+      "meaning" : "应收结算搜索码"
+    },
+    "recSettleId" : {
+      "meaning" : "应收结算PK",
+      "is_primary" : true
+    },
+    "recSettleInUsed" : {
+      "meaning" : "应收结算是否被使用"
+    },
+    "recSettleInvTypeTaxRateId" : {
+      "meaning" : "应收结算发票税率id"
+    },
+    "recSettleIsBanned" : {
+      "meaning" : "应收结算是否被禁用"
+    },
+    "recSettleIsDeleted" : {
+      "meaning" : "应收结算是否被删除"
+    },
+    "recSettleIsLeaf" : {
+      "meaning" : "应收结算是否叶子节点"
+    },
+    "recSettleIsMainFlow" : {
+      "meaning" : "应收结算是否是主流程"
+    },
+    "recSettleIsManualModificationDate" : {
+      "meaning" : "应收结算是否手动修改计划生产时间"
+    },
+    "recSettleIsolation" : {
+      "meaning" : "应收结算智能节点数据隔离标识"
+    },
+    "recSettleJsScript" : {
+      "meaning" : "应收结算js脚本"
+    },
+    "recSettleLocTotalActAmount" : {
+      "meaning" : "应收结算本币总实际结算金额"
+    },
+    "recSettleLocTotalActDiffAmount" : {
+      "meaning" : "应收结算本币总实际结算差额"
+    },
+    "recSettleLocTotalAmount" : {
+      "meaning" : "应收结算本币总结算金额"
+    },
+    "recSettleLocTotalInvoicedAmount" : {
+      "meaning" : "应收结算本币总开票金额"
+    },
+    "recSettleLocTotalOtherExpense" : {
+      "meaning" : "应收结算本币总其他费用"
+    },
+    "recSettleMaterialId" : {
+      "meaning" : "应收结算物料id"
+    },
+    "recSettleName" : {
+      "meaning" : "应收结算智能节点名"
+    },
+    "recSettleNameCodeSearch" : {
+      "meaning" : "应收结算name、user_code模糊搜索"
+    },
+    "recSettleNumberExtra1" : {
+      "meaning" : "应收结算扩展数量1"
+    },
+    "recSettleNumberExtra2" : {
+      "meaning" : "应收结算扩展数量2"
+    },
+    "recSettleNumberExtra3" : {
+      "meaning" : "应收结算扩展数量3"
+    },
+    "recSettleNumberExtra4" : {
+      "meaning" : "应收结算扩展数量4"
+    },
+    "recSettleNumberExtra5" : {
+      "meaning" : "应收结算扩展数量5"
+    },
+    "recSettleParentId" : {
+      "meaning" : "应收结算父节点ID"
+    },
+    "recSettlePlannedOutputQuantity" : {
+      "meaning" : "应收结算计划产出数量"
+    },
+    "recSettlePlannedTimeRequired" : {
+      "meaning" : "应收结算计划需时(小时)"
+    },
+    "recSettlePrintTimes" : {
+      "meaning" : "应收结算打印次数"
+    },
+    "recSettlePriority" : {
+      "meaning" : "应收结算优先级"
+    },
+    "recSettleProcessInstanceId" : {
+      "meaning" : "应收结算流程实例ID"
+    },
+    "recSettleProductionProcessesTypeId" : {
+      "meaning" : "应收结算工序类型ID"
+    },
+    "recSettleProductionShiftId" : {
+      "meaning" : "应收结算生产班次ID"
+    },
+    "recSettleQuantity" : {
+      "meaning" : "应收结算任务数量"
+    },
+    "recSettleReceiptDate" : {
+      "meaning" : "应收结算单据日期"
+    },
+    "recSettleReceiptType" : {
+      "meaning" : "应收结算单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "recSettleRelatedTasksId" : {
+      "meaning" : "应收结算关联任务id"
+    },
+    "recSettleSerialNumber" : {
+      "meaning" : "应收结算顺序号"
+    },
+    "recSettleSettleAmount" : {
+      "meaning" : "应收结算结算金额"
+    },
+    "recSettleSource" : {
+      "meaning" : "应收结算源"
+    },
+    "recSettleSourceType" : {
+      "meaning" : "应收结算来源类型"
+    },
+    "recSettleState" : {
+      "meaning" : "应收结算通用状态"
+    },
+    "recSettleSystemCode" : {
+      "meaning" : "应收结算系统编码"
+    },
+    "recSettleTarget" : {
+      "meaning" : "应收结算目标"
+    },
+    "recSettleTaskNodeName" : {
+      "meaning" : "应收结算任务节点名称"
+    },
+    "recSettleTenantId" : {
+      "meaning" : "应收结算租户ID"
+    },
+    "recSettleThirdPartyClass" : {
+      "meaning" : "应收结算第三方分类"
+    },
+    "recSettleThirdPartyId" : {
+      "meaning" : "应收结算第三方系统中的唯一ID"
+    },
+    "recSettleThirdPartyName" : {
+      "meaning" : "应收结算第三方名称"
+    },
+    "recSettleToAuditDate" : {
+      "meaning" : "recSettleToAuditDate"
+    },
+    "recSettleToBeginTime" : {
+      "meaning" : "recSettleToBeginTime"
+    },
+    "recSettleToCreateTime" : {
+      "meaning" : "recSettleToCreateTime"
+    },
+    "recSettleToDateExtra1" : {
+      "meaning" : "recSettleToDateExtra1"
+    },
+    "recSettleToDateExtra2" : {
+      "meaning" : "recSettleToDateExtra2"
+    },
+    "recSettleToDateExtra3" : {
+      "meaning" : "recSettleToDateExtra3"
+    },
+    "recSettleToDateExtra4" : {
+      "meaning" : "recSettleToDateExtra4"
+    },
+    "recSettleToDateExtra5" : {
+      "meaning" : "recSettleToDateExtra5"
+    },
+    "recSettleToDeliveryDate" : {
+      "meaning" : "recSettleToDeliveryDate"
+    },
+    "recSettleToEndTime" : {
+      "meaning" : "recSettleToEndTime"
+    },
+    "recSettleToReceiptDate" : {
+      "meaning" : "recSettleToReceiptDate"
+    },
+    "recSettleToUpdateTime" : {
+      "meaning" : "recSettleToUpdateTime"
+    },
+    "recSettleTotalActAmount" : {
+      "meaning" : "应收结算实际结算金额"
+    },
+    "recSettleTotalActDiffAmount" : {
+      "meaning" : "应收结算总实际结算差额"
+    },
+    "recSettleTotalAmount" : {
+      "meaning" : "应收结算总结算金额"
+    },
+    "recSettleTotalInvoicedAmount" : {
+      "meaning" : "应收结算总开票金额"
+    },
+    "recSettleTotalOtherExpense" : {
+      "meaning" : "应收结算总其他费用"
+    },
+    "recSettleUnitCode" : {
+      "meaning" : "应收结算单位id"
+    },
+    "recSettleUpdateTime" : {
+      "meaning" : "应收结算更新时间"
+    },
+    "recSettleUpdater" : {
+      "meaning" : "应收结算更新人"
+    },
+    "recSettleUpdaterId" : {
+      "meaning" : "应收结算更新人ID"
+    },
+    "recSettleUserCode" : {
+      "meaning" : "应收结算智能节点的唯一编码"
+    },
+    "recSettleVarExtra1" : {
+      "meaning" : "应收结算扩展1"
+    },
+    "recSettleVarExtra2" : {
+      "meaning" : "应收结算扩展2"
+    },
+    "recSettleVarExtra3" : {
+      "meaning" : "应收结算扩展3"
+    },
+    "recSettleVarExtra4" : {
+      "meaning" : "应收结算扩展4"
+    },
+    "recSettleVarExtra5" : {
+      "meaning" : "应收结算扩展5"
+    },
+    "recSettleVersion" : {
+      "meaning" : "应收结算版本号"
+    }
+  }
+}

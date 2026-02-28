@@ -1,0 +1,239 @@
+{
+      "api_name": "/corr/findList",
+      "table_name": "楞别",
+      "request": {
+        "corrClazz": "CORR"
+      },
+      "mainTabClazz": "CORR",
+      "response": {
+        "corrApplicationId": {
+          "meaning": "楞别应用ID"
+        },
+        "corrAuditDate": {
+          "meaning": "楞别审核时间"
+        },
+        "corrAuditStatus": {
+          "meaning": "楞别审核状态"
+        },
+        "corrBizVersion": {
+          "meaning": "楞别业务自定义版本号"
+        },
+        "corrBriefName": {
+          "meaning": "楞别简称"
+        },
+        "corrBusDivisId": {
+          "meaning": "楞别事业部id"
+        },
+        "corrClazz": {
+          "meaning": "楞别子类 类名（表和类一一对应）"
+        },
+        "corrComment": {
+          "meaning": "楞别评论"
+        },
+        "corrCreateTime": {
+          "meaning": "楞别创建时间"
+        },
+        "corrCreator": {
+          "meaning": "楞别创建人"
+        },
+        "corrCreatorId": {
+          "meaning": "楞别创建人ID"
+        },
+        "corrDateExtra1": {
+          "meaning": "楞别扩展时间1"
+        },
+        "corrDateExtra2": {
+          "meaning": "楞别扩展时间2"
+        },
+        "corrDateExtra3": {
+          "meaning": "楞别扩展时间3"
+        },
+        "corrDateExtra4": {
+          "meaning": "楞别扩展时间4"
+        },
+        "corrDateExtra5": {
+          "meaning": "楞别扩展时间5"
+        },
+        "corrDefaultType": {
+          "meaning": "楞别智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "corrDescription": {
+          "meaning": "楞别描述"
+        },
+        "corrEngName": {
+          "meaning": "楞别英文名称"
+        },
+        "corrExtension": {
+          "meaning": "楞别扩展数据"
+        },
+        "corrExternalState": {
+          "meaning": "楞别上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "corrFlags": {
+          "meaning": "楞别63位标志位"
+        },
+        "corrFromAuditDate": {
+          "meaning": "corrFromAuditDate"
+        },
+        "corrFromCreateTime": {
+          "meaning": "corrFromCreateTime"
+        },
+        "corrFromDateExtra1": {
+          "meaning": "corrFromDateExtra1"
+        },
+        "corrFromDateExtra2": {
+          "meaning": "corrFromDateExtra2"
+        },
+        "corrFromDateExtra3": {
+          "meaning": "corrFromDateExtra3"
+        },
+        "corrFromDateExtra4": {
+          "meaning": "corrFromDateExtra4"
+        },
+        "corrFromDateExtra5": {
+          "meaning": "corrFromDateExtra5"
+        },
+        "corrFromUpdateTime": {
+          "meaning": "corrFromUpdateTime"
+        },
+        "corrGroovyScript": {
+          "meaning": "楞别groovy脚本"
+        },
+        "corrGropeCode": {
+          "meaning": "楞别搜索码"
+        },
+        "corrId": {
+          "meaning": "楞别PK",
+          "is_primary": true
+        },
+        "corrInUsed": {
+          "meaning": "楞别是否被使用"
+        },
+        "corrIsBanned": {
+          "meaning": "楞别是否被禁用"
+        },
+        "corrIsDeleted": {
+          "meaning": "楞别是否被删除"
+        },
+        "corrIsMainFlow": {
+          "meaning": "楞别是否是主流程"
+        },
+        "corrIsolation": {
+          "meaning": "楞别智能节点数据隔离标识"
+        },
+        "corrJsScript": {
+          "meaning": "楞别js脚本"
+        },
+        "corrName": {
+          "meaning": "楞别智能节点名"
+        },
+        "corrNameCodeSearch": {
+          "meaning": "楞别name、user_code模糊搜索"
+        },
+        "corrNumberExtra1": {
+          "meaning": "楞别扩展数量1"
+        },
+        "corrNumberExtra2": {
+          "meaning": "楞别扩展数量2"
+        },
+        "corrNumberExtra3": {
+          "meaning": "楞别扩展数量3"
+        },
+        "corrNumberExtra4": {
+          "meaning": "楞别扩展数量4"
+        },
+        "corrNumberExtra5": {
+          "meaning": "楞别扩展数量5"
+        },
+        "corrPaperUsageRate": {
+          "meaning": "楞别用纸率"
+        },
+        "corrParentId": {
+          "meaning": "楞别父节点ID"
+        },
+        "corrProcessInstanceId": {
+          "meaning": "楞别流程实例ID"
+        },
+        "corrSerialNumber": {
+          "meaning": "楞别顺序号"
+        },
+        "corrState": {
+          "meaning": "楞别通用状态"
+        },
+        "corrSystemCode": {
+          "meaning": "楞别系统编码"
+        },
+        "corrTaskNodeName": {
+          "meaning": "楞别任务节点名称"
+        },
+        "corrTenantId": {
+          "meaning": "楞别租户id"
+        },
+        "corrThickness": {
+          "meaning": "楞别厚度"
+        },
+        "corrThirdPartyClass": {
+          "meaning": "楞别第三方分类"
+        },
+        "corrThirdPartyId": {
+          "meaning": "楞别第三方系统中的唯一ID"
+        },
+        "corrThirdPartyName": {
+          "meaning": "楞别第三方名称"
+        },
+        "corrToAuditDate": {
+          "meaning": "corrToAuditDate"
+        },
+        "corrToCreateTime": {
+          "meaning": "corrToCreateTime"
+        },
+        "corrToDateExtra1": {
+          "meaning": "corrToDateExtra1"
+        },
+        "corrToDateExtra2": {
+          "meaning": "corrToDateExtra2"
+        },
+        "corrToDateExtra3": {
+          "meaning": "corrToDateExtra3"
+        },
+        "corrToDateExtra4": {
+          "meaning": "corrToDateExtra4"
+        },
+        "corrToDateExtra5": {
+          "meaning": "corrToDateExtra5"
+        },
+        "corrToUpdateTime": {
+          "meaning": "corrToUpdateTime"
+        },
+        "corrUpdateTime": {
+          "meaning": "楞别更新时间"
+        },
+        "corrUpdater": {
+          "meaning": "楞别更新人"
+        },
+        "corrUpdaterId": {
+          "meaning": "楞别更新人ID"
+        },
+        "corrUserCode": {
+          "meaning": "楞别智能节点的唯一编码"
+        },
+        "corrVarExtra1": {
+          "meaning": "楞别扩展1"
+        },
+        "corrVarExtra2": {
+          "meaning": "楞别扩展2"
+        },
+        "corrVarExtra3": {
+          "meaning": "楞别扩展3"
+        },
+        "corrVarExtra4": {
+          "meaning": "楞别扩展4"
+        },
+        "corrVarExtra5": {
+          "meaning": "楞别扩展5"
+        },
+        "corrVersion": {
+          "meaning": "楞别版本号"
+        }
+      }
+    }

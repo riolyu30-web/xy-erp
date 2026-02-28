@@ -1,0 +1,395 @@
+{
+  "api_name" : "/wms-inv-adj-proof-det/findList",
+  "table_name" : " 盘点调整明细主表",
+  "request" : {
+    "wmsInvAdjProofDetClazz" : "WMS_INV_ADJ_PROOF_DET"
+  },
+  "mainTabClazz" : "WMS_INV_ADJ_PROOF_DET",
+  "response" : {
+    "wmsInvAdjProofDetActualTimeRequired" : {
+      "meaning" : " 盘点调整明细主表实际需时(小时)"
+    },
+    "wmsInvAdjProofDetAdjAmountExcludingTax" : {
+      "meaning" : " 盘点调整明细主表不含税金额（数量*不含税单价）"
+    },
+    "wmsInvAdjProofDetAdjAmountIncludingTax" : {
+      "meaning" : " 盘点调整明细主表含税金额（盘点数量*含税单价）"
+    },
+    "wmsInvAdjProofDetAdjSource" : {
+      "meaning" : " 盘点调整明细主表调整来源"
+    },
+    "wmsInvAdjProofDetAdjustmentTimeRequired" : {
+      "meaning" : " 盘点调整明细主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvAdjProofDetApplicationId" : {
+      "meaning" : " 盘点调整明细主表应用ID"
+    },
+    "wmsInvAdjProofDetAuditDate" : {
+      "meaning" : " 盘点调整明细主表审核时间"
+    },
+    "wmsInvAdjProofDetAuditStatus" : {
+      "meaning" : " 盘点调整明细主表审核状态"
+    },
+    "wmsInvAdjProofDetAvailableScheduleId" : {
+      "meaning" : " 盘点调整明细主表可用日程id"
+    },
+    "wmsInvAdjProofDetBeginTime" : {
+      "meaning" : " 盘点调整明细主表开始时间"
+    },
+    "wmsInvAdjProofDetBizOrderId" : {
+      "meaning" : " 盘点调整明细主表订单id"
+    },
+    "wmsInvAdjProofDetBizVersion" : {
+      "meaning" : " 盘点调整明细主表业务自定义版本号"
+    },
+    "wmsInvAdjProofDetBriefName" : {
+      "meaning" : " 盘点调整明细主表简称"
+    },
+    "wmsInvAdjProofDetBusDivisId" : {
+      "meaning" : " 盘点调整明细主表事业部id"
+    },
+    "wmsInvAdjProofDetClazz" : {
+      "meaning" : " 盘点调整明细主表子类 类名（表和类一一对应）"
+    },
+    "wmsInvAdjProofDetClosedReason" : {
+      "meaning" : " 盘点调整明细主表结案原因"
+    },
+    "wmsInvAdjProofDetClosedStatus" : {
+      "meaning" : " 盘点调整明细主表结案状态"
+    },
+    "wmsInvAdjProofDetComment" : {
+      "meaning" : " 盘点调整明细主表评论"
+    },
+    "wmsInvAdjProofDetCompleteQuantity" : {
+      "meaning" : " 盘点调整明细主表完成数量"
+    },
+    "wmsInvAdjProofDetCompleteStatus" : {
+      "meaning" : " 盘点调整明细主表完成状态"
+    },
+    "wmsInvAdjProofDetCreateTime" : {
+      "meaning" : " 盘点调整明细主表创建时间"
+    },
+    "wmsInvAdjProofDetCreator" : {
+      "meaning" : " 盘点调整明细主表创建人"
+    },
+    "wmsInvAdjProofDetCreatorId" : {
+      "meaning" : " 盘点调整明细主表创建人ID"
+    },
+    "wmsInvAdjProofDetDateExtra1" : {
+      "meaning" : " 盘点调整明细主表扩展时间1"
+    },
+    "wmsInvAdjProofDetDateExtra2" : {
+      "meaning" : " 盘点调整明细主表扩展时间2"
+    },
+    "wmsInvAdjProofDetDateExtra3" : {
+      "meaning" : " 盘点调整明细主表扩展时间3"
+    },
+    "wmsInvAdjProofDetDateExtra4" : {
+      "meaning" : " 盘点调整明细主表扩展时间4"
+    },
+    "wmsInvAdjProofDetDateExtra5" : {
+      "meaning" : " 盘点调整明细主表扩展时间5"
+    },
+    "wmsInvAdjProofDetDefaultType" : {
+      "meaning" : " 盘点调整明细主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvAdjProofDetDeliveryDate" : {
+      "meaning" : " 盘点调整明细主表交货日期"
+    },
+    "wmsInvAdjProofDetDescription" : {
+      "meaning" : " 盘点调整明细主表描述"
+    },
+    "wmsInvAdjProofDetEndTime" : {
+      "meaning" : " 盘点调整明细主表结束时间"
+    },
+    "wmsInvAdjProofDetEndTimeRequired" : {
+      "meaning" : " 盘点调整明细主表最后需时(小时)"
+    },
+    "wmsInvAdjProofDetEngName" : {
+      "meaning" : " 盘点调整明细主表英文名称"
+    },
+    "wmsInvAdjProofDetEquipmentId" : {
+      "meaning" : " 盘点调整明细主表设备id"
+    },
+    "wmsInvAdjProofDetExchangeRateId" : {
+      "meaning" : " 盘点调整明细主表币种汇率id"
+    },
+    "wmsInvAdjProofDetExtension" : {
+      "meaning" : " 盘点调整明细主表扩展数据"
+    },
+    "wmsInvAdjProofDetExternalState" : {
+      "meaning" : " 盘点调整明细主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvAdjProofDetFilterClazz" : {
+      "meaning" : " 盘点调整明细主表冗余字段用于筛选"
+    },
+    "wmsInvAdjProofDetFlags" : {
+      "meaning" : " 盘点调整明细主表63位标志位"
+    },
+    "wmsInvAdjProofDetFromAuditDate" : {
+      "meaning" : "wmsInvAdjProofDetFromAuditDate"
+    },
+    "wmsInvAdjProofDetFromBeginTime" : {
+      "meaning" : "wmsInvAdjProofDetFromBeginTime"
+    },
+    "wmsInvAdjProofDetFromCreateTime" : {
+      "meaning" : "wmsInvAdjProofDetFromCreateTime"
+    },
+    "wmsInvAdjProofDetFromDateExtra1" : {
+      "meaning" : "wmsInvAdjProofDetFromDateExtra1"
+    },
+    "wmsInvAdjProofDetFromDateExtra2" : {
+      "meaning" : "wmsInvAdjProofDetFromDateExtra2"
+    },
+    "wmsInvAdjProofDetFromDateExtra3" : {
+      "meaning" : "wmsInvAdjProofDetFromDateExtra3"
+    },
+    "wmsInvAdjProofDetFromDateExtra4" : {
+      "meaning" : "wmsInvAdjProofDetFromDateExtra4"
+    },
+    "wmsInvAdjProofDetFromDateExtra5" : {
+      "meaning" : "wmsInvAdjProofDetFromDateExtra5"
+    },
+    "wmsInvAdjProofDetFromDeliveryDate" : {
+      "meaning" : "wmsInvAdjProofDetFromDeliveryDate"
+    },
+    "wmsInvAdjProofDetFromEndTime" : {
+      "meaning" : "wmsInvAdjProofDetFromEndTime"
+    },
+    "wmsInvAdjProofDetFromReceiptDate" : {
+      "meaning" : "wmsInvAdjProofDetFromReceiptDate"
+    },
+    "wmsInvAdjProofDetFromUpdateTime" : {
+      "meaning" : "wmsInvAdjProofDetFromUpdateTime"
+    },
+    "wmsInvAdjProofDetFscType" : {
+      "meaning" : " 盘点调整明细主表FSC声明"
+    },
+    "wmsInvAdjProofDetGenerativePeople" : {
+      "meaning" : " 盘点调整明细主表下发人"
+    },
+    "wmsInvAdjProofDetGenerativeState" : {
+      "meaning" : " 盘点调整明细主表下发状态"
+    },
+    "wmsInvAdjProofDetGoodsId" : {
+      "meaning" : " 盘点调整明细主表货（包）id"
+    },
+    "wmsInvAdjProofDetGroovyScript" : {
+      "meaning" : " 盘点调整明细主表groovy脚本"
+    },
+    "wmsInvAdjProofDetGropeCode" : {
+      "meaning" : " 盘点调整明细主表搜索码"
+    },
+    "wmsInvAdjProofDetId" : {
+      "meaning" : " 盘点调整明细主表Pk",
+      "is_primary" : true
+    },
+    "wmsInvAdjProofDetInUsed" : {
+      "meaning" : " 盘点调整明细主表是否被使用"
+    },
+    "wmsInvAdjProofDetInvTypeTaxRateId" : {
+      "meaning" : " 盘点调整明细主表发票税率id"
+    },
+    "wmsInvAdjProofDetIsBanned" : {
+      "meaning" : " 盘点调整明细主表是否被禁用"
+    },
+    "wmsInvAdjProofDetIsDeleted" : {
+      "meaning" : " 盘点调整明细主表是否被删除"
+    },
+    "wmsInvAdjProofDetIsLeaf" : {
+      "meaning" : " 盘点调整明细主表是否叶子节点"
+    },
+    "wmsInvAdjProofDetIsMainFlow" : {
+      "meaning" : " 盘点调整明细主表是否是主流程"
+    },
+    "wmsInvAdjProofDetIsManualModificationDate" : {
+      "meaning" : " 盘点调整明细主表是否手动修改计划生产时间"
+    },
+    "wmsInvAdjProofDetIsolation" : {
+      "meaning" : " 盘点调整明细主表智能节点数据隔离标识"
+    },
+    "wmsInvAdjProofDetJsScript" : {
+      "meaning" : " 盘点调整明细主表js脚本"
+    },
+    "wmsInvAdjProofDetMatBatchId" : {
+      "meaning" : " 盘点调整明细主表物料批次id"
+    },
+    "wmsInvAdjProofDetMaterialId" : {
+      "meaning" : " 盘点调整明细主表物料id"
+    },
+    "wmsInvAdjProofDetName" : {
+      "meaning" : " 盘点调整明细主表智能节点名"
+    },
+    "wmsInvAdjProofDetNameCodeSearch" : {
+      "meaning" : " 盘点调整明细主表name、user_code模糊搜索"
+    },
+    "wmsInvAdjProofDetNumberExtra1" : {
+      "meaning" : " 盘点调整明细主表扩展数量1"
+    },
+    "wmsInvAdjProofDetNumberExtra2" : {
+      "meaning" : " 盘点调整明细主表扩展数量2"
+    },
+    "wmsInvAdjProofDetNumberExtra3" : {
+      "meaning" : " 盘点调整明细主表扩展数量3"
+    },
+    "wmsInvAdjProofDetNumberExtra4" : {
+      "meaning" : " 盘点调整明细主表扩展数量4"
+    },
+    "wmsInvAdjProofDetNumberExtra5" : {
+      "meaning" : " 盘点调整明细主表扩展数量5"
+    },
+    "wmsInvAdjProofDetParentId" : {
+      "meaning" : " 盘点调整明细主表父节点ID"
+    },
+    "wmsInvAdjProofDetPlannedOutputQuantity" : {
+      "meaning" : " 盘点调整明细主表计划产出数量"
+    },
+    "wmsInvAdjProofDetPlannedTimeRequired" : {
+      "meaning" : " 盘点调整明细主表计划需时(小时)"
+    },
+    "wmsInvAdjProofDetPosition" : {
+      "meaning" : " 盘点调整明细主表仓位"
+    },
+    "wmsInvAdjProofDetPrintTimes" : {
+      "meaning" : " 盘点调整明细主表打印次数"
+    },
+    "wmsInvAdjProofDetPriority" : {
+      "meaning" : " 盘点调整明细主表优先级"
+    },
+    "wmsInvAdjProofDetProcessInstanceId" : {
+      "meaning" : " 盘点调整明细主表流程实例ID"
+    },
+    "wmsInvAdjProofDetProductionProcessesTypeId" : {
+      "meaning" : " 盘点调整明细主表工序类型ID"
+    },
+    "wmsInvAdjProofDetProductionShiftId" : {
+      "meaning" : " 盘点调整明细主表生产班次ID"
+    },
+    "wmsInvAdjProofDetQuantity" : {
+      "meaning" : " 盘点调整明细主表数量"
+    },
+    "wmsInvAdjProofDetReceiptDate" : {
+      "meaning" : " 盘点调整明细主表单据日期"
+    },
+    "wmsInvAdjProofDetReceiptType" : {
+      "meaning" : " 盘点调整明细主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvAdjProofDetRelatedTasksId" : {
+      "meaning" : " 盘点调整明细主表关联任务id"
+    },
+    "wmsInvAdjProofDetSerialNumber" : {
+      "meaning" : " 盘点调整明细主表顺序号"
+    },
+    "wmsInvAdjProofDetSource" : {
+      "meaning" : " 盘点调整明细主表源"
+    },
+    "wmsInvAdjProofDetSourceType" : {
+      "meaning" : " 盘点调整明细主表来源类型"
+    },
+    "wmsInvAdjProofDetState" : {
+      "meaning" : " 盘点调整明细主表通用状态"
+    },
+    "wmsInvAdjProofDetSystemCode" : {
+      "meaning" : " 盘点调整明细主表系统编码"
+    },
+    "wmsInvAdjProofDetTarget" : {
+      "meaning" : " 盘点调整明细主表目标"
+    },
+    "wmsInvAdjProofDetTaskNodeName" : {
+      "meaning" : " 盘点调整明细主表任务节点名称"
+    },
+    "wmsInvAdjProofDetTaskNodeType" : {
+      "meaning" : " 盘点调整明细主表任务节点类型"
+    },
+    "wmsInvAdjProofDetTenantId" : {
+      "meaning" : " 盘点调整明细主表租户id"
+    },
+    "wmsInvAdjProofDetThirdPartyClass" : {
+      "meaning" : " 盘点调整明细主表第三方分类"
+    },
+    "wmsInvAdjProofDetThirdPartyId" : {
+      "meaning" : " 盘点调整明细主表第三方系统中的唯一ID"
+    },
+    "wmsInvAdjProofDetThirdPartyName" : {
+      "meaning" : " 盘点调整明细主表第三方名称"
+    },
+    "wmsInvAdjProofDetToAuditDate" : {
+      "meaning" : "wmsInvAdjProofDetToAuditDate"
+    },
+    "wmsInvAdjProofDetToBeginTime" : {
+      "meaning" : "wmsInvAdjProofDetToBeginTime"
+    },
+    "wmsInvAdjProofDetToCreateTime" : {
+      "meaning" : "wmsInvAdjProofDetToCreateTime"
+    },
+    "wmsInvAdjProofDetToDateExtra1" : {
+      "meaning" : "wmsInvAdjProofDetToDateExtra1"
+    },
+    "wmsInvAdjProofDetToDateExtra2" : {
+      "meaning" : "wmsInvAdjProofDetToDateExtra2"
+    },
+    "wmsInvAdjProofDetToDateExtra3" : {
+      "meaning" : "wmsInvAdjProofDetToDateExtra3"
+    },
+    "wmsInvAdjProofDetToDateExtra4" : {
+      "meaning" : "wmsInvAdjProofDetToDateExtra4"
+    },
+    "wmsInvAdjProofDetToDateExtra5" : {
+      "meaning" : "wmsInvAdjProofDetToDateExtra5"
+    },
+    "wmsInvAdjProofDetToDeliveryDate" : {
+      "meaning" : "wmsInvAdjProofDetToDeliveryDate"
+    },
+    "wmsInvAdjProofDetToEndTime" : {
+      "meaning" : "wmsInvAdjProofDetToEndTime"
+    },
+    "wmsInvAdjProofDetToReceiptDate" : {
+      "meaning" : "wmsInvAdjProofDetToReceiptDate"
+    },
+    "wmsInvAdjProofDetToUpdateTime" : {
+      "meaning" : "wmsInvAdjProofDetToUpdateTime"
+    },
+    "wmsInvAdjProofDetUnitCode" : {
+      "meaning" : " 盘点调整明细主表单位id"
+    },
+    "wmsInvAdjProofDetUnitPriceExcludingTax" : {
+      "meaning" : " 盘点调整明细主表不含税单价"
+    },
+    "wmsInvAdjProofDetUnitPriceIncludingTax" : {
+      "meaning" : " 盘点调整明细主表含税单价"
+    },
+    "wmsInvAdjProofDetUpdateTime" : {
+      "meaning" : " 盘点调整明细主表更新时间"
+    },
+    "wmsInvAdjProofDetUpdater" : {
+      "meaning" : " 盘点调整明细主表更新人"
+    },
+    "wmsInvAdjProofDetUpdaterId" : {
+      "meaning" : " 盘点调整明细主表更新人ID"
+    },
+    "wmsInvAdjProofDetUserCode" : {
+      "meaning" : " 盘点调整明细主表智能节点的唯一编码"
+    },
+    "wmsInvAdjProofDetVarExtra1" : {
+      "meaning" : " 盘点调整明细主表扩展1"
+    },
+    "wmsInvAdjProofDetVarExtra2" : {
+      "meaning" : " 盘点调整明细主表扩展2"
+    },
+    "wmsInvAdjProofDetVarExtra3" : {
+      "meaning" : " 盘点调整明细主表扩展3"
+    },
+    "wmsInvAdjProofDetVarExtra4" : {
+      "meaning" : " 盘点调整明细主表扩展4"
+    },
+    "wmsInvAdjProofDetVarExtra5" : {
+      "meaning" : " 盘点调整明细主表扩展5"
+    },
+    "wmsInvAdjProofDetVersion" : {
+      "meaning" : " 盘点调整明细主表版本号"
+    },
+    "wmsInvAdjProofDetWorkOrderId" : {
+      "meaning" : " 盘点调整明细主表工单id"
+    }
+  }
+}

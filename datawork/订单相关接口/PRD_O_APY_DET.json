@@ -1,0 +1,795 @@
+{
+      "api_name": "/prd-oapy-det/findList",
+      "table_name": "成品出库申请明细",
+      "request": {
+        "prdOApyDetPrdOApyClazz": "PRD_O_APY",
+        "prdOApyDetClazz": "PRD_O_APY_DET"
+      },
+      "mainTabClazz": "PRD_O_APY_DET",
+      "response": {
+        "prdOApyDetActualTimeRequired": {
+          "meaning": "成品出库申请明细实际需时(小时)"
+        },
+        "prdOApyDetAdjustmentTimeRequired": {
+          "meaning": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prdOApyDetApplicationId": {
+          "meaning": "成品出库申请明细应用ID"
+        },
+        "prdOApyDetAuditDate": {
+          "meaning": "成品出库申请明细审核时间"
+        },
+        "prdOApyDetAuditStatus": {
+          "meaning": "成品出库申请明细审核状态"
+        },
+        "prdOApyDetAvailableScheduleId": {
+          "meaning": "成品出库申请明细可用日程id"
+        },
+        "prdOApyDetBeginTime": {
+          "meaning": "成品出库申请明细开始时间"
+        },
+        "prdOApyDetBizVersion": {
+          "meaning": "成品出库申请明细业务自定义版本号"
+        },
+        "prdOApyDetBriefName": {
+          "meaning": "成品出库申请明细简称"
+        },
+        "prdOApyDetBusDivisId": {
+          "meaning": "成品出库申请明细事业部id"
+        },
+        "prdOApyDetClazz": {
+          "meaning": "成品出库申请明细子类 类名（表和类一一对应）"
+        },
+        "prdOApyDetClosedReason": {
+          "meaning": "成品出库申请明细结案原因"
+        },
+        "prdOApyDetClosedStatus": {
+          "meaning": "成品出库申请明细结案状态"
+        },
+        "prdOApyDetComment": {
+          "meaning": "成品出库申请明细评论"
+        },
+        "prdOApyDetCompleteQuantity": {
+          "meaning": "成品出库申请明细完成数量"
+        },
+        "prdOApyDetCompleteStatus": {
+          "meaning": "成品出库申请明细完成状态"
+        },
+        "prdOApyDetConsigneeName": {
+          "meaning": "成品出库申请明细收货单位名称"
+        },
+        "prdOApyDetCreateTime": {
+          "meaning": "成品出库申请明细创建时间"
+        },
+        "prdOApyDetCreator": {
+          "meaning": "成品出库申请明细创建人"
+        },
+        "prdOApyDetCreatorId": {
+          "meaning": "成品出库申请明细创建人ID"
+        },
+        "prdOApyDetCustContact": {
+          "meaning": "成品出库申请明细收货人(客户联系人)"
+        },
+        "prdOApyDetCustContactCellPhone": {
+          "meaning": "成品出库申请明细手机号(客户联系人手机号)"
+        },
+        "prdOApyDetCustContactPhone": {
+          "meaning": "成品出库申请明细电话(客户联系人电话)"
+        },
+        "prdOApyDetCustDeliverAddress": {
+          "meaning": "成品出库申请明细送货地址(客户送货地址)"
+        },
+        "prdOApyDetCustomerId": {
+          "meaning": "成品出库申请明细客户id"
+        },
+        "prdOApyDetDateExtra1": {
+          "meaning": "成品出库申请明细扩展时间1"
+        },
+        "prdOApyDetDateExtra2": {
+          "meaning": "成品出库申请明细扩展时间2"
+        },
+        "prdOApyDetDateExtra3": {
+          "meaning": "成品出库申请明细扩展时间3"
+        },
+        "prdOApyDetDateExtra4": {
+          "meaning": "成品出库申请明细扩展时间4"
+        },
+        "prdOApyDetDateExtra5": {
+          "meaning": "成品出库申请明细扩展时间5"
+        },
+        "prdOApyDetDefaultType": {
+          "meaning": "成品出库申请明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "prdOApyDetDeliveryDate": {
+          "meaning": "成品出库申请明细交货日期"
+        },
+        "prdOApyDetDescription": {
+          "meaning": "成品出库申请明细描述"
+        },
+        "prdOApyDetEndTime": {
+          "meaning": "成品出库申请明细结束时间"
+        },
+        "prdOApyDetEndTimeRequired": {
+          "meaning": "成品出库申请明细最后需时(小时)"
+        },
+        "prdOApyDetEngName": {
+          "meaning": "成品出库申请明细英文名称"
+        },
+        "prdOApyDetEquipmentId": {
+          "meaning": "成品出库申请明细设备id"
+        },
+        "prdOApyDetExchangeRateId": {
+          "meaning": "成品出库申请明细币种汇率id"
+        },
+        "prdOApyDetExtension": {
+          "meaning": "成品出库申请明细扩展数据"
+        },
+        "prdOApyDetExternalState": {
+          "meaning": "成品出库申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prdOApyDetFilterClazz": {
+          "meaning": "成品出库申请明细冗余字段用于筛选"
+        },
+        "prdOApyDetFlags": {
+          "meaning": "成品出库申请明细63位标志位"
+        },
+        "prdOApyDetFromAuditDate": {
+          "meaning": "prdOApyDetFromAuditDate"
+        },
+        "prdOApyDetFromBeginTime": {
+          "meaning": "prdOApyDetFromBeginTime"
+        },
+        "prdOApyDetFromCreateTime": {
+          "meaning": "prdOApyDetFromCreateTime"
+        },
+        "prdOApyDetFromDateExtra1": {
+          "meaning": "prdOApyDetFromDateExtra1"
+        },
+        "prdOApyDetFromDateExtra2": {
+          "meaning": "prdOApyDetFromDateExtra2"
+        },
+        "prdOApyDetFromDateExtra3": {
+          "meaning": "prdOApyDetFromDateExtra3"
+        },
+        "prdOApyDetFromDateExtra4": {
+          "meaning": "prdOApyDetFromDateExtra4"
+        },
+        "prdOApyDetFromDateExtra5": {
+          "meaning": "prdOApyDetFromDateExtra5"
+        },
+        "prdOApyDetFromDeliveryDate": {
+          "meaning": "prdOApyDetFromDeliveryDate"
+        },
+        "prdOApyDetFromEndTime": {
+          "meaning": "prdOApyDetFromEndTime"
+        },
+        "prdOApyDetFromReceiptDate": {
+          "meaning": "prdOApyDetFromReceiptDate"
+        },
+        "prdOApyDetFromUpdateTime": {
+          "meaning": "prdOApyDetFromUpdateTime"
+        },
+        "prdOApyDetFscType": {
+          "meaning": "成品出库申请明细FSC声明"
+        },
+        "prdOApyDetGenerativePeople": {
+          "meaning": "成品出库申请明细下发人"
+        },
+        "prdOApyDetGenerativeState": {
+          "meaning": "成品出库申请明细下发状态"
+        },
+        "prdOApyDetGiftQuantity": {
+          "meaning": "成品出库申请明细赠品数量"
+        },
+        "prdOApyDetGroovyScript": {
+          "meaning": "成品出库申请明细groovy脚本"
+        },
+        "prdOApyDetGropeCode": {
+          "meaning": "成品出库申请明细搜索码"
+        },
+        "prdOApyDetId": {
+          "meaning": "成品出库申请明细PK",
+          "is_primary": true
+        },
+        "prdOApyDetInUsed": {
+          "meaning": "成品出库申请明细是否被使用"
+        },
+        "prdOApyDetInvTypeTaxRateId": {
+          "meaning": "成品出库申请明细发票税率id"
+        },
+        "prdOApyDetIsBanned": {
+          "meaning": "成品出库申请明细是否被禁用"
+        },
+        "prdOApyDetIsDeleted": {
+          "meaning": "成品出库申请明细是否被删除"
+        },
+        "prdOApyDetIsLeaf": {
+          "meaning": "成品出库申请明细是否叶子节点"
+        },
+        "prdOApyDetIsMainFlow": {
+          "meaning": "成品出库申请明细是否是主流程"
+        },
+        "prdOApyDetIsManualModificationDate": {
+          "meaning": "成品出库申请明细是否手动修改计划生产时间"
+        },
+        "prdOApyDetIsolation": {
+          "meaning": "成品出库申请明细智能节点数据隔离标识"
+        },
+        "prdOApyDetJsScript": {
+          "meaning": "成品出库申请明细js脚本"
+        },
+        "prdOApyDetLocCurTotalAmount": {
+          "meaning": "成品出库申请明细本币金额"
+        },
+        "prdOApyDetLocCurUnitPrice": {
+          "meaning": "成品出库申请明细本币单价"
+        },
+        "prdOApyDetMaterialId": {
+          "meaning": "成品出库申请明细物料id"
+        },
+        "prdOApyDetName": {
+          "meaning": "成品出库申请明细智能节点名"
+        },
+        "prdOApyDetNameCodeSearch": {
+          "meaning": "成品出库申请明细name、user_code模糊搜索"
+        },
+        "prdOApyDetNumberExtra1": {
+          "meaning": "成品出库申请明细扩展数量1"
+        },
+        "prdOApyDetNumberExtra2": {
+          "meaning": "成品出库申请明细扩展数量2"
+        },
+        "prdOApyDetNumberExtra3": {
+          "meaning": "成品出库申请明细扩展数量3"
+        },
+        "prdOApyDetNumberExtra4": {
+          "meaning": "成品出库申请明细扩展数量4"
+        },
+        "prdOApyDetNumberExtra5": {
+          "meaning": "成品出库申请明细扩展数量5"
+        },
+        "prdOApyDetOqcQuantity": {
+          "meaning": "成品出库申请明细已开OQC的数量"
+        },
+        "prdOApyDetOqcStatus": {
+          "meaning": "成品出库申请明细已开OQC的状态"
+        },
+        "prdOApyDetParentId": {
+          "meaning": "成品出库申请明细父节点ID"
+        },
+        "prdOApyDetPlannedOutputQuantity": {
+          "meaning": "成品出库申请明细计划产出数量"
+        },
+        "prdOApyDetPlannedTimeRequired": {
+          "meaning": "成品出库申请明细计划需时(小时)"
+        },
+        "prdOApyDetPrdOApyActualTimeRequired": {
+          "meaning": "成品出库申请明细实际需时(小时)"
+        },
+        "prdOApyDetPrdOApyAdjustmentTimeRequired": {
+          "meaning": "成品出库申请明细调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prdOApyDetPrdOApyApplicationId": {
+          "meaning": "成品出库申请明细应用ID"
+        },
+        "prdOApyDetPrdOApyAuditDate": {
+          "meaning": "成品出库申请明细审核时间"
+        },
+        "prdOApyDetPrdOApyAuditStatus": {
+          "meaning": "成品出库申请明细审核状态"
+        },
+        "prdOApyDetPrdOApyAvailableScheduleId": {
+          "meaning": "成品出库申请明细可用日程id"
+        },
+        "prdOApyDetPrdOApyBeginTime": {
+          "meaning": "成品出库申请明细开始时间"
+        },
+        "prdOApyDetPrdOApyBizVersion": {
+          "meaning": "成品出库申请明细业务自定义版本号"
+        },
+        "prdOApyDetPrdOApyBriefName": {
+          "meaning": "成品出库申请明细简称"
+        },
+        "prdOApyDetPrdOApyBusDivisId": {
+          "meaning": "成品出库申请明细事业部id"
+        },
+        "prdOApyDetPrdOApyClazz": {
+          "meaning": "成品出库申请明细子类 类名（表和类一一对应）"
+        },
+        "prdOApyDetPrdOApyClosedReason": {
+          "meaning": "成品出库申请明细结案原因"
+        },
+        "prdOApyDetPrdOApyClosedStatus": {
+          "meaning": "成品出库申请明细结案状态"
+        },
+        "prdOApyDetPrdOApyComment": {
+          "meaning": "成品出库申请明细评论"
+        },
+        "prdOApyDetPrdOApyCompleteQuantity": {
+          "meaning": "成品出库申请明细完成数量"
+        },
+        "prdOApyDetPrdOApyCompleteStatus": {
+          "meaning": "成品出库申请明细完成状态"
+        },
+        "prdOApyDetPrdOApyCreateTime": {
+          "meaning": "成品出库申请明细创建时间"
+        },
+        "prdOApyDetPrdOApyCreator": {
+          "meaning": "成品出库申请明细创建人"
+        },
+        "prdOApyDetPrdOApyCreatorId": {
+          "meaning": "成品出库申请明细创建人ID"
+        },
+        "prdOApyDetPrdOApyDateExtra1": {
+          "meaning": "成品出库申请明细扩展时间1"
+        },
+        "prdOApyDetPrdOApyDateExtra2": {
+          "meaning": "成品出库申请明细扩展时间2"
+        },
+        "prdOApyDetPrdOApyDateExtra3": {
+          "meaning": "成品出库申请明细扩展时间3"
+        },
+        "prdOApyDetPrdOApyDateExtra4": {
+          "meaning": "成品出库申请明细扩展时间4"
+        },
+        "prdOApyDetPrdOApyDateExtra5": {
+          "meaning": "成品出库申请明细扩展时间5"
+        },
+        "prdOApyDetPrdOApyDefaultType": {
+          "meaning": "成品出库申请明细智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "prdOApyDetPrdOApyDeliveryDate": {
+          "meaning": "成品出库申请明细交货日期"
+        },
+        "prdOApyDetPrdOApyDescription": {
+          "meaning": "成品出库申请明细描述"
+        },
+        "prdOApyDetPrdOApyEndTime": {
+          "meaning": "成品出库申请明细结束时间"
+        },
+        "prdOApyDetPrdOApyEndTimeRequired": {
+          "meaning": "成品出库申请明细最后需时(小时)"
+        },
+        "prdOApyDetPrdOApyEngName": {
+          "meaning": "成品出库申请明细英文名称"
+        },
+        "prdOApyDetPrdOApyEquipmentId": {
+          "meaning": "成品出库申请明细设备id"
+        },
+        "prdOApyDetPrdOApyExchangeRateId": {
+          "meaning": "成品出库申请明细币种汇率id"
+        },
+        "prdOApyDetPrdOApyExtension": {
+          "meaning": "成品出库申请明细扩展数据"
+        },
+        "prdOApyDetPrdOApyExternalState": {
+          "meaning": "成品出库申请明细上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prdOApyDetPrdOApyFilterClazz": {
+          "meaning": "成品出库申请明细冗余字段用于筛选"
+        },
+        "prdOApyDetPrdOApyFlags": {
+          "meaning": "成品出库申请明细63位标志位"
+        },
+        "prdOApyDetPrdOApyFromAuditDate": {
+          "meaning": "prdOApyDetPrdOApyFromAuditDate"
+        },
+        "prdOApyDetPrdOApyFromBeginTime": {
+          "meaning": "prdOApyDetPrdOApyFromBeginTime"
+        },
+        "prdOApyDetPrdOApyFromCreateTime": {
+          "meaning": "prdOApyDetPrdOApyFromCreateTime"
+        },
+        "prdOApyDetPrdOApyFromDateExtra1": {
+          "meaning": "prdOApyDetPrdOApyFromDateExtra1"
+        },
+        "prdOApyDetPrdOApyFromDateExtra2": {
+          "meaning": "prdOApyDetPrdOApyFromDateExtra2"
+        },
+        "prdOApyDetPrdOApyFromDateExtra3": {
+          "meaning": "prdOApyDetPrdOApyFromDateExtra3"
+        },
+        "prdOApyDetPrdOApyFromDateExtra4": {
+          "meaning": "prdOApyDetPrdOApyFromDateExtra4"
+        },
+        "prdOApyDetPrdOApyFromDateExtra5": {
+          "meaning": "prdOApyDetPrdOApyFromDateExtra5"
+        },
+        "prdOApyDetPrdOApyFromDeliveryDate": {
+          "meaning": "prdOApyDetPrdOApyFromDeliveryDate"
+        },
+        "prdOApyDetPrdOApyFromEndTime": {
+          "meaning": "prdOApyDetPrdOApyFromEndTime"
+        },
+        "prdOApyDetPrdOApyFromReceiptDate": {
+          "meaning": "prdOApyDetPrdOApyFromReceiptDate"
+        },
+        "prdOApyDetPrdOApyFromUpdateTime": {
+          "meaning": "prdOApyDetPrdOApyFromUpdateTime"
+        },
+        "prdOApyDetPrdOApyFscType": {
+          "meaning": "成品出库申请明细FSC声明"
+        },
+        "prdOApyDetPrdOApyGenerativePeople": {
+          "meaning": "成品出库申请明细下发人"
+        },
+        "prdOApyDetPrdOApyGenerativeState": {
+          "meaning": "成品出库申请明细下发状态"
+        },
+        "prdOApyDetPrdOApyGroovyScript": {
+          "meaning": "成品出库申请明细groovy脚本"
+        },
+        "prdOApyDetPrdOApyGropeCode": {
+          "meaning": "成品出库申请明细搜索码"
+        },
+        "prdOApyDetPrdOApyId": {
+          "meaning": "成品出库申请明细PK"
+        },
+        "prdOApyDetPrdOApyInUsed": {
+          "meaning": "成品出库申请明细是否被使用"
+        },
+        "prdOApyDetPrdOApyInvTypeTaxRateId": {
+          "meaning": "成品出库申请明细发票税率id"
+        },
+        "prdOApyDetPrdOApyIsBanned": {
+          "meaning": "成品出库申请明细是否被禁用"
+        },
+        "prdOApyDetPrdOApyIsDeleted": {
+          "meaning": "成品出库申请明细是否被删除"
+        },
+        "prdOApyDetPrdOApyIsLeaf": {
+          "meaning": "成品出库申请明细是否叶子节点"
+        },
+        "prdOApyDetPrdOApyIsMainFlow": {
+          "meaning": "成品出库申请明细是否是主流程"
+        },
+        "prdOApyDetPrdOApyIsManualModificationDate": {
+          "meaning": "成品出库申请明细是否手动修改计划生产时间"
+        },
+        "prdOApyDetPrdOApyIsolation": {
+          "meaning": "成品出库申请明细智能节点数据隔离标识"
+        },
+        "prdOApyDetPrdOApyJsScript": {
+          "meaning": "成品出库申请明细js脚本"
+        },
+        "prdOApyDetPrdOApyMaterialId": {
+          "meaning": "成品出库申请明细物料id"
+        },
+        "prdOApyDetPrdOApyName": {
+          "meaning": "成品出库申请明细智能节点名"
+        },
+        "prdOApyDetPrdOApyNameCodeSearch": {
+          "meaning": "成品出库申请明细name、user_code模糊搜索"
+        },
+        "prdOApyDetPrdOApyNumberExtra1": {
+          "meaning": "成品出库申请明细扩展数量1"
+        },
+        "prdOApyDetPrdOApyNumberExtra2": {
+          "meaning": "成品出库申请明细扩展数量2"
+        },
+        "prdOApyDetPrdOApyNumberExtra3": {
+          "meaning": "成品出库申请明细扩展数量3"
+        },
+        "prdOApyDetPrdOApyNumberExtra4": {
+          "meaning": "成品出库申请明细扩展数量4"
+        },
+        "prdOApyDetPrdOApyNumberExtra5": {
+          "meaning": "成品出库申请明细扩展数量5"
+        },
+        "prdOApyDetPrdOApyParentId": {
+          "meaning": "成品出库申请明细父节点ID"
+        },
+        "prdOApyDetPrdOApyPlannedOutputQuantity": {
+          "meaning": "成品出库申请明细计划产出数量"
+        },
+        "prdOApyDetPrdOApyPlannedTimeRequired": {
+          "meaning": "成品出库申请明细计划需时(小时)"
+        },
+        "prdOApyDetPrdOApyPrintTimes": {
+          "meaning": "成品出库申请明细打印次数"
+        },
+        "prdOApyDetPrdOApyPriority": {
+          "meaning": "成品出库申请明细优先级"
+        },
+        "prdOApyDetPrdOApyProcessInstanceId": {
+          "meaning": "成品出库申请明细流程实例ID"
+        },
+        "prdOApyDetPrdOApyProductionProcessesTypeId": {
+          "meaning": "成品出库申请明细工序类型ID"
+        },
+        "prdOApyDetPrdOApyProductionShiftId": {
+          "meaning": "成品出库申请明细生产班次ID"
+        },
+        "prdOApyDetPrdOApyQuantity": {
+          "meaning": "成品出库申请明细任务数量"
+        },
+        "prdOApyDetPrdOApyReason": {
+          "meaning": "成品出库申请明细原因"
+        },
+        "prdOApyDetPrdOApyReceiptDate": {
+          "meaning": "成品出库申请明细单据日期"
+        },
+        "prdOApyDetPrdOApyReceiptType": {
+          "meaning": "成品出库申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prdOApyDetPrdOApyRelatedTasksId": {
+          "meaning": "成品出库申请明细关联任务id"
+        },
+        "prdOApyDetPrdOApySerialNumber": {
+          "meaning": "成品出库申请明细顺序号"
+        },
+        "prdOApyDetPrdOApySource": {
+          "meaning": "成品出库申请明细源"
+        },
+        "prdOApyDetPrdOApySourceType": {
+          "meaning": "成品出库申请明细来源类型"
+        },
+        "prdOApyDetPrdOApyState": {
+          "meaning": "成品出库申请明细通用状态"
+        },
+        "prdOApyDetPrdOApySystemCode": {
+          "meaning": "成品出库申请明细系统编码"
+        },
+        "prdOApyDetPrdOApyTarget": {
+          "meaning": "成品出库申请明细目标"
+        },
+        "prdOApyDetPrdOApyTaskNodeName": {
+          "meaning": "成品出库申请明细任务节点名称"
+        },
+        "prdOApyDetPrdOApyTenantId": {
+          "meaning": "成品出库申请明细租户_id"
+        },
+        "prdOApyDetPrdOApyThirdPartyClass": {
+          "meaning": "成品出库申请明细第三方分类"
+        },
+        "prdOApyDetPrdOApyThirdPartyId": {
+          "meaning": "成品出库申请明细第三方系统中的唯一ID"
+        },
+        "prdOApyDetPrdOApyThirdPartyName": {
+          "meaning": "成品出库申请明细第三方名称"
+        },
+        "prdOApyDetPrdOApyToAuditDate": {
+          "meaning": "prdOApyDetPrdOApyToAuditDate"
+        },
+        "prdOApyDetPrdOApyToBeginTime": {
+          "meaning": "prdOApyDetPrdOApyToBeginTime"
+        },
+        "prdOApyDetPrdOApyToCreateTime": {
+          "meaning": "prdOApyDetPrdOApyToCreateTime"
+        },
+        "prdOApyDetPrdOApyToDateExtra1": {
+          "meaning": "prdOApyDetPrdOApyToDateExtra1"
+        },
+        "prdOApyDetPrdOApyToDateExtra2": {
+          "meaning": "prdOApyDetPrdOApyToDateExtra2"
+        },
+        "prdOApyDetPrdOApyToDateExtra3": {
+          "meaning": "prdOApyDetPrdOApyToDateExtra3"
+        },
+        "prdOApyDetPrdOApyToDateExtra4": {
+          "meaning": "prdOApyDetPrdOApyToDateExtra4"
+        },
+        "prdOApyDetPrdOApyToDateExtra5": {
+          "meaning": "prdOApyDetPrdOApyToDateExtra5"
+        },
+        "prdOApyDetPrdOApyToDeliveryDate": {
+          "meaning": "prdOApyDetPrdOApyToDeliveryDate"
+        },
+        "prdOApyDetPrdOApyToEndTime": {
+          "meaning": "prdOApyDetPrdOApyToEndTime"
+        },
+        "prdOApyDetPrdOApyToReceiptDate": {
+          "meaning": "prdOApyDetPrdOApyToReceiptDate"
+        },
+        "prdOApyDetPrdOApyToUpdateTime": {
+          "meaning": "prdOApyDetPrdOApyToUpdateTime"
+        },
+        "prdOApyDetPrdOApyUnitCode": {
+          "meaning": "成品出库申请明细单位id"
+        },
+        "prdOApyDetPrdOApyUpdateTime": {
+          "meaning": "成品出库申请明细更新时间"
+        },
+        "prdOApyDetPrdOApyUpdater": {
+          "meaning": "成品出库申请明细更新人"
+        },
+        "prdOApyDetPrdOApyUpdaterId": {
+          "meaning": "成品出库申请明细更新人ID"
+        },
+        "prdOApyDetPrdOApyUserCode": {
+          "meaning": "成品出库申请明细智能节点的唯一编码"
+        },
+        "prdOApyDetPrdOApyVarExtra1": {
+          "meaning": "成品出库申请明细扩展1"
+        },
+        "prdOApyDetPrdOApyVarExtra2": {
+          "meaning": "成品出库申请明细扩展2"
+        },
+        "prdOApyDetPrdOApyVarExtra3": {
+          "meaning": "成品出库申请明细扩展3"
+        },
+        "prdOApyDetPrdOApyVarExtra4": {
+          "meaning": "成品出库申请明细扩展4"
+        },
+        "prdOApyDetPrdOApyVarExtra5": {
+          "meaning": "成品出库申请明细扩展5"
+        },
+        "prdOApyDetPrdOApyVersion": {
+          "meaning": "成品出库申请明细版本号"
+        },
+        "prdOApyDetPrdSalGiftQuantity": {
+          "meaning": "成品出库申请明细成品销货赠品完成数量"
+        },
+        "prdOApyDetPrdSalGiftStatus": {
+          "meaning": "成品出库申请明细成品销货赠品完成状态"
+        },
+        "prdOApyDetPrdSalQuantity": {
+          "meaning": "成品出库申请明细成品销货完成数量"
+        },
+        "prdOApyDetPrdSalSpareQuantity": {
+          "meaning": "成品出库申请明细成品销货备品完成数量"
+        },
+        "prdOApyDetPrdSalSpareStatus": {
+          "meaning": "成品出库申请明细成品销货备品完成状态"
+        },
+        "prdOApyDetPrdSalStatus": {
+          "meaning": "成品出库申请明细成品销货完成状态"
+        },
+        "prdOApyDetPrintTimes": {
+          "meaning": "成品出库申请明细打印次数"
+        },
+        "prdOApyDetPriority": {
+          "meaning": "成品出库申请明细优先级"
+        },
+        "prdOApyDetProcessInstanceId": {
+          "meaning": "成品出库申请明细流程实例ID"
+        },
+        "prdOApyDetProductionProcessesTypeId": {
+          "meaning": "成品出库申请明细工序类型ID"
+        },
+        "prdOApyDetProductionShiftId": {
+          "meaning": "成品出库申请明细生产班次ID"
+        },
+        "prdOApyDetQuantity": {
+          "meaning": "成品出库申请明细任务数量"
+        },
+        "prdOApyDetReceiptCustomerId": {
+          "meaning": "成品出库申请明细送货客户id"
+        },
+        "prdOApyDetReceiptDate": {
+          "meaning": "成品出库申请明细单据日期"
+        },
+        "prdOApyDetReceiptType": {
+          "meaning": "成品出库申请明细单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prdOApyDetRelatedTasksId": {
+          "meaning": "成品出库申请明细关联任务id"
+        },
+        "prdOApyDetSerialNumber": {
+          "meaning": "成品出库申请明细顺序号"
+        },
+        "prdOApyDetSettlementCustomerId": {
+          "meaning": "成品出库申请明细结算客户id"
+        },
+        "prdOApyDetSource": {
+          "meaning": "成品出库申请明细源"
+        },
+        "prdOApyDetSourceType": {
+          "meaning": "成品出库申请明细来源类型"
+        },
+        "prdOApyDetSpareQuantity": {
+          "meaning": "成品出库申请明细备品数量"
+        },
+        "prdOApyDetState": {
+          "meaning": "成品出库申请明细通用状态"
+        },
+        "prdOApyDetSystemCode": {
+          "meaning": "成品出库申请明细系统编码"
+        },
+        "prdOApyDetTarget": {
+          "meaning": "成品出库申请明细目标"
+        },
+        "prdOApyDetTaskNodeName": {
+          "meaning": "成品出库申请明细任务节点名称"
+        },
+        "prdOApyDetTenantId": {
+          "meaning": "成品出库申请明细租户_id"
+        },
+        "prdOApyDetThirdPartyClass": {
+          "meaning": "成品出库申请明细第三方分类"
+        },
+        "prdOApyDetThirdPartyId": {
+          "meaning": "成品出库申请明细第三方系统中的唯一ID"
+        },
+        "prdOApyDetThirdPartyName": {
+          "meaning": "成品出库申请明细第三方名称"
+        },
+        "prdOApyDetToAuditDate": {
+          "meaning": "prdOApyDetToAuditDate"
+        },
+        "prdOApyDetToBeginTime": {
+          "meaning": "prdOApyDetToBeginTime"
+        },
+        "prdOApyDetToCreateTime": {
+          "meaning": "prdOApyDetToCreateTime"
+        },
+        "prdOApyDetToDateExtra1": {
+          "meaning": "prdOApyDetToDateExtra1"
+        },
+        "prdOApyDetToDateExtra2": {
+          "meaning": "prdOApyDetToDateExtra2"
+        },
+        "prdOApyDetToDateExtra3": {
+          "meaning": "prdOApyDetToDateExtra3"
+        },
+        "prdOApyDetToDateExtra4": {
+          "meaning": "prdOApyDetToDateExtra4"
+        },
+        "prdOApyDetToDateExtra5": {
+          "meaning": "prdOApyDetToDateExtra5"
+        },
+        "prdOApyDetToDeliveryDate": {
+          "meaning": "prdOApyDetToDeliveryDate"
+        },
+        "prdOApyDetToEndTime": {
+          "meaning": "prdOApyDetToEndTime"
+        },
+        "prdOApyDetToReceiptDate": {
+          "meaning": "prdOApyDetToReceiptDate"
+        },
+        "prdOApyDetToUpdateTime": {
+          "meaning": "prdOApyDetToUpdateTime"
+        },
+        "prdOApyDetTotalAmountInTax": {
+          "meaning": "成品出库申请明细含税金额"
+        },
+        "prdOApyDetTotalAmountWitTax": {
+          "meaning": "成品出库申请明细不含税金额"
+        },
+        "prdOApyDetTransPlanQuantity": {
+          "meaning": "成品出库申请明细运输计划完成数量"
+        },
+        "prdOApyDetTransPlanStatus": {
+          "meaning": "成品出库申请明细运输计划完成状态"
+        },
+        "prdOApyDetUnitCode": {
+          "meaning": "成品出库申请明细单位id"
+        },
+        "prdOApyDetUnitPriceInTax": {
+          "meaning": "成品出库申请明细含税单价"
+        },
+        "prdOApyDetUnitPriceWitTax": {
+          "meaning": "成品出库申请明细不含税单价"
+        },
+        "prdOApyDetUpdateTime": {
+          "meaning": "成品出库申请明细更新时间"
+        },
+        "prdOApyDetUpdater": {
+          "meaning": "成品出库申请明细更新人"
+        },
+        "prdOApyDetUpdaterId": {
+          "meaning": "成品出库申请明细更新人ID"
+        },
+        "prdOApyDetUserCode": {
+          "meaning": "成品出库申请明细智能节点的唯一编码"
+        },
+        "prdOApyDetVarExtra1": {
+          "meaning": "成品出库申请明细扩展1"
+        },
+        "prdOApyDetVarExtra2": {
+          "meaning": "成品出库申请明细扩展2"
+        },
+        "prdOApyDetVarExtra3": {
+          "meaning": "成品出库申请明细扩展3"
+        },
+        "prdOApyDetVarExtra4": {
+          "meaning": "成品出库申请明细扩展4"
+        },
+        "prdOApyDetVarExtra5": {
+          "meaning": "成品出库申请明细扩展5"
+        },
+        "prdOApyDetVersion": {
+          "meaning": "成品出库申请明细版本号"
+        }
+      }
+    }

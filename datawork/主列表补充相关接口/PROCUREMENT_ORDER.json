@@ -1,0 +1,427 @@
+{
+  "api_name" : "/procurement-order/findList",
+  "table_name" : "采购订单",
+  "request" : {
+    "procOrderClazz" : "PROCUREMENT_ORDER"
+  },
+  "mainTabClazz" : "PROCUREMENT_ORDER",
+  "response" : {
+    "procOrderActualTimeRequired" : {
+      "meaning" : "采购订单实际需时(小时)"
+    },
+    "procOrderAdjustmentTimeRequired" : {
+      "meaning" : "采购订单调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "procOrderApplicationId" : {
+      "meaning" : "采购订单应用ID"
+    },
+    "procOrderAuditDate" : {
+      "meaning" : "procOrderAuditDate"
+    },
+    "procOrderAuditStatus" : {
+      "meaning" : "采购订单审核状态"
+    },
+    "procOrderAvailableScheduleId" : {
+      "meaning" : "采购订单可用日程id"
+    },
+    "procOrderBeginTime" : {
+      "meaning" : "procOrderBeginTime"
+    },
+    "procOrderBizVersion" : {
+      "meaning" : "采购订单业务自定义版本号"
+    },
+    "procOrderBriefName" : {
+      "meaning" : "采购订单简称"
+    },
+    "procOrderBusDivisId" : {
+      "meaning" : "采购订单事业部id"
+    },
+    "procOrderClazz" : {
+      "meaning" : "采购订单子类 类名（表和类一一对应）"
+    },
+    "procOrderClosedReason" : {
+      "meaning" : "采购订单结案原因"
+    },
+    "procOrderClosedStatus" : {
+      "meaning" : "采购订单结案状态"
+    },
+    "procOrderComment" : {
+      "meaning" : "采购订单评论"
+    },
+    "procOrderCompleteQuantity" : {
+      "meaning" : "采购订单完成数量"
+    },
+    "procOrderCompleteStatus" : {
+      "meaning" : "采购订单完成状态"
+    },
+    "procOrderContName" : {
+      "meaning" : "采购订单联系人姓名"
+    },
+    "procOrderCreateTime" : {
+      "meaning" : "procOrderCreateTime"
+    },
+    "procOrderCreator" : {
+      "meaning" : "采购订单创建人"
+    },
+    "procOrderCreatorId" : {
+      "meaning" : "采购订单创建人ID"
+    },
+    "procOrderCur" : {
+      "meaning" : "采购订单币种"
+    },
+    "procOrderCurRate" : {
+      "meaning" : "采购订单汇率"
+    },
+    "procOrderDateExtra1" : {
+      "meaning" : "procOrderDateExtra1"
+    },
+    "procOrderDateExtra2" : {
+      "meaning" : "procOrderDateExtra2"
+    },
+    "procOrderDateExtra3" : {
+      "meaning" : "procOrderDateExtra3"
+    },
+    "procOrderDateExtra4" : {
+      "meaning" : "procOrderDateExtra4"
+    },
+    "procOrderDateExtra5" : {
+      "meaning" : "procOrderDateExtra5"
+    },
+    "procOrderDefaultType" : {
+      "meaning" : "采购订单智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "procOrderDelMethod" : {
+      "meaning" : "采购订单配送方式"
+    },
+    "procOrderDeliveryDate" : {
+      "meaning" : "procOrderDeliveryDate"
+    },
+    "procOrderDelvSup" : {
+      "meaning" : "采购订单送货供应商"
+    },
+    "procOrderDescription" : {
+      "meaning" : "采购订单描述"
+    },
+    "procOrderEndTime" : {
+      "meaning" : "procOrderEndTime"
+    },
+    "procOrderEndTimeRequired" : {
+      "meaning" : "采购订单最后需时(小时)"
+    },
+    "procOrderEngName" : {
+      "meaning" : "采购订单英文名称"
+    },
+    "procOrderEquipmentId" : {
+      "meaning" : "采购订单设备id"
+    },
+    "procOrderExchangeRateId" : {
+      "meaning" : "采购订单币种汇率id"
+    },
+    "procOrderExtension" : {
+      "meaning" : "采购订单扩展数据"
+    },
+    "procOrderExternalState" : {
+      "meaning" : "采购订单上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "procOrderFilterClazz" : {
+      "meaning" : "采购订单冗余字段用于筛选"
+    },
+    "procOrderFlags" : {
+      "meaning" : "采购订单63位标志位"
+    },
+    "procOrderFmtDec" : {
+      "meaning" : "采购订单保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+    },
+    "procOrderFromAuditDate" : {
+      "meaning" : "procOrderFromAuditDate"
+    },
+    "procOrderFromBeginTime" : {
+      "meaning" : "procOrderFromBeginTime"
+    },
+    "procOrderFromCreateTime" : {
+      "meaning" : "procOrderFromCreateTime"
+    },
+    "procOrderFromDateExtra1" : {
+      "meaning" : "procOrderFromDateExtra1"
+    },
+    "procOrderFromDateExtra2" : {
+      "meaning" : "procOrderFromDateExtra2"
+    },
+    "procOrderFromDateExtra3" : {
+      "meaning" : "procOrderFromDateExtra3"
+    },
+    "procOrderFromDateExtra4" : {
+      "meaning" : "procOrderFromDateExtra4"
+    },
+    "procOrderFromDateExtra5" : {
+      "meaning" : "procOrderFromDateExtra5"
+    },
+    "procOrderFromDeliveryDate" : {
+      "meaning" : "procOrderFromDeliveryDate"
+    },
+    "procOrderFromEndTime" : {
+      "meaning" : "procOrderFromEndTime"
+    },
+    "procOrderFromReceiptDate" : {
+      "meaning" : "procOrderFromReceiptDate"
+    },
+    "procOrderFromUpdateTime" : {
+      "meaning" : "procOrderFromUpdateTime"
+    },
+    "procOrderFscType" : {
+      "meaning" : "采购订单FSC声明"
+    },
+    "procOrderGenerativePeople" : {
+      "meaning" : "采购订单下发人"
+    },
+    "procOrderGenerativeState" : {
+      "meaning" : "采购订单下发状态"
+    },
+    "procOrderGroovyScript" : {
+      "meaning" : "采购订单groovy脚本"
+    },
+    "procOrderGropeCode" : {
+      "meaning" : "采购订单搜索码"
+    },
+    "procOrderId" : {
+      "meaning" : "采购订单PK"
+    },
+    "procOrderInUsed" : {
+      "meaning" : "采购订单是否被使用"
+    },
+    "procOrderInvType" : {
+      "meaning" : "采购订单发票类型id"
+    },
+    "procOrderInvTypeTaxRateId" : {
+      "meaning" : "采购订单发票税率id"
+    },
+    "procOrderIsBanned" : {
+      "meaning" : "采购订单是否被禁用"
+    },
+    "procOrderIsDeleted" : {
+      "meaning" : "采购订单是否被删除"
+    },
+    "procOrderIsLeaf" : {
+      "meaning" : "采购订单是否叶子节点"
+    },
+    "procOrderIsMainFlow" : {
+      "meaning" : "采购订单是否是主流程"
+    },
+    "procOrderIsManualModificationDate" : {
+      "meaning" : "采购订单是否手动修改计划生产时间"
+    },
+    "procOrderIsUrgent" : {
+      "meaning" : "采购订单是否加急"
+    },
+    "procOrderIsolation" : {
+      "meaning" : "采购订单智能节点数据隔离标识"
+    },
+    "procOrderJsScript" : {
+      "meaning" : "采购订单js脚本"
+    },
+    "procOrderLcTotalAmt" : {
+      "meaning" : "采购订单本币总费用(根据币种，外币才显示)，外币不含税"
+    },
+    "procOrderMaterialId" : {
+      "meaning" : "采购订单物料id"
+    },
+    "procOrderName" : {
+      "meaning" : "采购订单智能节点名"
+    },
+    "procOrderNameCodeSearch" : {
+      "meaning" : "采购订单name、user_code模糊搜索"
+    },
+    "procOrderNumberExtra1" : {
+      "meaning" : "采购订单扩展数量1"
+    },
+    "procOrderNumberExtra2" : {
+      "meaning" : "采购订单扩展数量2"
+    },
+    "procOrderNumberExtra3" : {
+      "meaning" : "采购订单扩展数量3"
+    },
+    "procOrderNumberExtra4" : {
+      "meaning" : "采购订单扩展数量4"
+    },
+    "procOrderNumberExtra5" : {
+      "meaning" : "采购订单扩展数量5"
+    },
+    "procOrderPCount" : {
+      "meaning" : "采购订单打印次数"
+    },
+    "procOrderParentId" : {
+      "meaning" : "采购订单父节点ID"
+    },
+    "procOrderPhone" : {
+      "meaning" : "采购订单手机"
+    },
+    "procOrderPlannedOutputQuantity" : {
+      "meaning" : "采购订单计划产出数量"
+    },
+    "procOrderPlannedTimeRequired" : {
+      "meaning" : "采购订单计划需时(小时)"
+    },
+    "procOrderPrintTimes" : {
+      "meaning" : "采购订单打印次数"
+    },
+    "procOrderPriority" : {
+      "meaning" : "采购订单优先级"
+    },
+    "procOrderProcessInstanceId" : {
+      "meaning" : "采购订单流程实例ID"
+    },
+    "procOrderProductionProcessesTypeId" : {
+      "meaning" : "采购订单工序类型ID"
+    },
+    "procOrderProductionShiftId" : {
+      "meaning" : "采购订单生产班次ID"
+    },
+    "procOrderQuantity" : {
+      "meaning" : "采购订单任务数量"
+    },
+    "procOrderReceiptDate" : {
+      "meaning" : "procOrderReceiptDate"
+    },
+    "procOrderReceiptType" : {
+      "meaning" : "采购订单单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "procOrderRelatedTasksId" : {
+      "meaning" : "采购订单关联任务id"
+    },
+    "procOrderSerialNumber" : {
+      "meaning" : "采购订单顺序号"
+    },
+    "procOrderSettleSupId" : {
+      "meaning" : "采购订单结算供应商ID"
+    },
+    "procOrderSource" : {
+      "meaning" : "采购订单源节点id(-查询入参-)"
+    },
+    "procOrderSourceType" : {
+      "meaning" : "采购订单来源类型"
+    },
+    "procOrderState" : {
+      "meaning" : "采购订单通用状态"
+    },
+    "procOrderStlAmtFmt" : {
+      "meaning" : "采购订单结算金额保留小数位(默认2位，可手动变更)"
+    },
+    "procOrderStlFee" : {
+      "meaning" : "采购订单结算费用（默认与含税总金额相等)"
+    },
+    "procOrderStlPriceFmt" : {
+      "meaning" : "采购订单结算单价保留小数位(默认9位，可手动变更)"
+    },
+    "procOrderStlType" : {
+      "meaning" : "采购订单结算类型 SettlementType_id"
+    },
+    "procOrderSupId" : {
+      "meaning" : "采购订单供应商id"
+    },
+    "procOrderSystemCode" : {
+      "meaning" : "采购订单系统编码"
+    },
+    "procOrderTarget" : {
+      "meaning" : "采购订单目标节点id(-查询入参-)"
+    },
+    "procOrderTaskNodeName" : {
+      "meaning" : "采购订单任务节点名称"
+    },
+    "procOrderTaxRt" : {
+      "meaning" : "采购订单税率"
+    },
+    "procOrderTenantId" : {
+      "meaning" : "采购订单租户ID"
+    },
+    "procOrderThirdPartyClass" : {
+      "meaning" : "采购订单第三方分类"
+    },
+    "procOrderThirdPartyId" : {
+      "meaning" : "采购订单第三方系统中的唯一ID"
+    },
+    "procOrderThirdPartyName" : {
+      "meaning" : "采购订单第三方名称"
+    },
+    "procOrderToAuditDate" : {
+      "meaning" : "procOrderToAuditDate"
+    },
+    "procOrderToBeginTime" : {
+      "meaning" : "procOrderToBeginTime"
+    },
+    "procOrderToCreateTime" : {
+      "meaning" : "procOrderToCreateTime"
+    },
+    "procOrderToDateExtra1" : {
+      "meaning" : "procOrderToDateExtra1"
+    },
+    "procOrderToDateExtra2" : {
+      "meaning" : "procOrderToDateExtra2"
+    },
+    "procOrderToDateExtra3" : {
+      "meaning" : "procOrderToDateExtra3"
+    },
+    "procOrderToDateExtra4" : {
+      "meaning" : "procOrderToDateExtra4"
+    },
+    "procOrderToDateExtra5" : {
+      "meaning" : "procOrderToDateExtra5"
+    },
+    "procOrderToDeliveryDate" : {
+      "meaning" : "procOrderToDeliveryDate"
+    },
+    "procOrderToEndTime" : {
+      "meaning" : "procOrderToEndTime"
+    },
+    "procOrderToReceiptDate" : {
+      "meaning" : "procOrderToReceiptDate"
+    },
+    "procOrderToUpdateTime" : {
+      "meaning" : "procOrderToUpdateTime"
+    },
+    "procOrderTotalFeeNt" : {
+      "meaning" : "采购订单总费用(不含税)"
+    },
+    "procOrderTotalVol" : {
+      "meaning" : "采购订单总体积"
+    },
+    "procOrderTotalWithTax" : {
+      "meaning" : "采购订单总费用(含税)"
+    },
+    "procOrderTotalWt" : {
+      "meaning" : "采购订单总重量"
+    },
+    "procOrderUnitCode" : {
+      "meaning" : "采购订单单位id"
+    },
+    "procOrderUpdateTime" : {
+      "meaning" : "procOrderUpdateTime"
+    },
+    "procOrderUpdater" : {
+      "meaning" : "采购订单更新人"
+    },
+    "procOrderUpdaterId" : {
+      "meaning" : "采购订单更新人ID"
+    },
+    "procOrderUserCode" : {
+      "meaning" : "采购订单智能节点的唯一编码"
+    },
+    "procOrderVarExtra1" : {
+      "meaning" : "采购订单扩展1"
+    },
+    "procOrderVarExtra2" : {
+      "meaning" : "采购订单扩展2"
+    },
+    "procOrderVarExtra3" : {
+      "meaning" : "采购订单扩展3"
+    },
+    "procOrderVarExtra4" : {
+      "meaning" : "采购订单扩展4"
+    },
+    "procOrderVarExtra5" : {
+      "meaning" : "采购订单扩展5"
+    },
+    "procOrderVersion" : {
+      "meaning" : "采购订单版本号"
+    }
+  }
+}

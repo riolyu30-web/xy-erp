@@ -1,0 +1,810 @@
+{
+  "api_name" : "/fin-instorage-det/findList",
+  "table_name" : "成品入库明细表",
+  "request" : {
+    "finInstorageDetFinInstorageClazz" : "FIN_INSTORAGE",
+    "finInstorageDetClazz" : "FIN_INSTORAGE_DET"
+  },
+  "mainTabClazz" : "FIN_INSTORAGE_DET",
+  "response" : {
+    "finInstorageDetActualTimeRequired" : {
+      "meaning" : "成品入库明细表实际需时(小时)"
+    },
+    "finInstorageDetAdditionalWeight" : {
+      "meaning" : "成品入库明细表附加重量"
+    },
+    "finInstorageDetAdjustmentTimeRequired" : {
+      "meaning" : "成品入库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "finInstorageDetApplicationId" : {
+      "meaning" : "成品入库明细表应用ID"
+    },
+    "finInstorageDetAuditDate" : {
+      "meaning" : "成品入库明细表审核时间"
+    },
+    "finInstorageDetAuditStatus" : {
+      "meaning" : "成品入库明细表审核状态"
+    },
+    "finInstorageDetAvailableScheduleId" : {
+      "meaning" : "成品入库明细表可用日程id"
+    },
+    "finInstorageDetBeginTime" : {
+      "meaning" : "成品入库明细表开始时间"
+    },
+    "finInstorageDetBizVersion" : {
+      "meaning" : "成品入库明细表业务自定义版本号"
+    },
+    "finInstorageDetBriefName" : {
+      "meaning" : "成品入库明细表简称"
+    },
+    "finInstorageDetBusDivisId" : {
+      "meaning" : "成品入库明细表事业部id"
+    },
+    "finInstorageDetClazz" : {
+      "meaning" : "成品入库明细表子类 类名（表和类一一对应）"
+    },
+    "finInstorageDetClosedReason" : {
+      "meaning" : "成品入库明细表结案原因"
+    },
+    "finInstorageDetClosedStatus" : {
+      "meaning" : "成品入库明细表结案状态"
+    },
+    "finInstorageDetComment" : {
+      "meaning" : "成品入库明细表评论"
+    },
+    "finInstorageDetCompleteQuantity" : {
+      "meaning" : "成品入库明细表完成数量"
+    },
+    "finInstorageDetCompleteStatus" : {
+      "meaning" : "成品入库明细表完成状态"
+    },
+    "finInstorageDetCreateTime" : {
+      "meaning" : "成品入库明细表创建时间"
+    },
+    "finInstorageDetCreator" : {
+      "meaning" : "成品入库明细表创建人"
+    },
+    "finInstorageDetCreatorId" : {
+      "meaning" : "成品入库明细表创建人ID"
+    },
+    "finInstorageDetDateExtra1" : {
+      "meaning" : "成品入库明细表扩展时间1"
+    },
+    "finInstorageDetDateExtra2" : {
+      "meaning" : "成品入库明细表扩展时间2"
+    },
+    "finInstorageDetDateExtra3" : {
+      "meaning" : "成品入库明细表扩展时间3"
+    },
+    "finInstorageDetDateExtra4" : {
+      "meaning" : "成品入库明细表扩展时间4"
+    },
+    "finInstorageDetDateExtra5" : {
+      "meaning" : "成品入库明细表扩展时间5"
+    },
+    "finInstorageDetDefaultType" : {
+      "meaning" : "成品入库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "finInstorageDetDeliveryDate" : {
+      "meaning" : "成品入库明细表交货日期"
+    },
+    "finInstorageDetDescription" : {
+      "meaning" : "成品入库明细表描述"
+    },
+    "finInstorageDetEndTime" : {
+      "meaning" : "成品入库明细表结束时间"
+    },
+    "finInstorageDetEndTimeRequired" : {
+      "meaning" : "成品入库明细表最后需时(小时)"
+    },
+    "finInstorageDetEngName" : {
+      "meaning" : "成品入库明细表英文名称"
+    },
+    "finInstorageDetEquipmentId" : {
+      "meaning" : "成品入库明细表设备id"
+    },
+    "finInstorageDetExchangeRateId" : {
+      "meaning" : "成品入库明细表币种汇率id"
+    },
+    "finInstorageDetExtension" : {
+      "meaning" : "成品入库明细表扩展数据"
+    },
+    "finInstorageDetExternalState" : {
+      "meaning" : "成品入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "finInstorageDetFilterClazz" : {
+      "meaning" : "成品入库明细表冗余字段用于筛选"
+    },
+    "finInstorageDetFinInstorageActualTimeRequired" : {
+      "meaning" : "成品入库明细表实际需时(小时)"
+    },
+    "finInstorageDetFinInstorageAdjustmentTimeRequired" : {
+      "meaning" : "成品入库明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "finInstorageDetFinInstorageApplicationId" : {
+      "meaning" : "成品入库明细表应用ID"
+    },
+    "finInstorageDetFinInstorageAuditDate" : {
+      "meaning" : "成品入库明细表审核时间"
+    },
+    "finInstorageDetFinInstorageAuditStatus" : {
+      "meaning" : "成品入库明细表审核状态"
+    },
+    "finInstorageDetFinInstorageAvailableScheduleId" : {
+      "meaning" : "成品入库明细表可用日程id"
+    },
+    "finInstorageDetFinInstorageBeginTime" : {
+      "meaning" : "成品入库明细表开始时间"
+    },
+    "finInstorageDetFinInstorageBizVersion" : {
+      "meaning" : "成品入库明细表业务自定义版本号"
+    },
+    "finInstorageDetFinInstorageBriefName" : {
+      "meaning" : "成品入库明细表简称"
+    },
+    "finInstorageDetFinInstorageBusDivisId" : {
+      "meaning" : "成品入库明细表事业部id"
+    },
+    "finInstorageDetFinInstorageClazz" : {
+      "meaning" : "成品入库明细表子类 类名（表和类一一对应）"
+    },
+    "finInstorageDetFinInstorageClosedReason" : {
+      "meaning" : "成品入库明细表结案原因"
+    },
+    "finInstorageDetFinInstorageClosedStatus" : {
+      "meaning" : "成品入库明细表结案状态"
+    },
+    "finInstorageDetFinInstorageComment" : {
+      "meaning" : "成品入库明细表评论"
+    },
+    "finInstorageDetFinInstorageCompleteQuantity" : {
+      "meaning" : "成品入库明细表完成数量"
+    },
+    "finInstorageDetFinInstorageCompleteStatus" : {
+      "meaning" : "成品入库明细表完成状态"
+    },
+    "finInstorageDetFinInstorageCreateTime" : {
+      "meaning" : "成品入库明细表创建时间"
+    },
+    "finInstorageDetFinInstorageCreator" : {
+      "meaning" : "成品入库明细表创建人"
+    },
+    "finInstorageDetFinInstorageCreatorId" : {
+      "meaning" : "成品入库明细表创建人ID"
+    },
+    "finInstorageDetFinInstorageDateExtra1" : {
+      "meaning" : "成品入库明细表扩展时间1"
+    },
+    "finInstorageDetFinInstorageDateExtra2" : {
+      "meaning" : "成品入库明细表扩展时间2"
+    },
+    "finInstorageDetFinInstorageDateExtra3" : {
+      "meaning" : "成品入库明细表扩展时间3"
+    },
+    "finInstorageDetFinInstorageDateExtra4" : {
+      "meaning" : "成品入库明细表扩展时间4"
+    },
+    "finInstorageDetFinInstorageDateExtra5" : {
+      "meaning" : "成品入库明细表扩展时间5"
+    },
+    "finInstorageDetFinInstorageDefaultType" : {
+      "meaning" : "成品入库明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "finInstorageDetFinInstorageDeliveryDate" : {
+      "meaning" : "成品入库明细表交货日期"
+    },
+    "finInstorageDetFinInstorageDepId" : {
+      "meaning" : "成品入库明细表部门id"
+    },
+    "finInstorageDetFinInstorageDescription" : {
+      "meaning" : "成品入库明细表描述"
+    },
+    "finInstorageDetFinInstorageEndTime" : {
+      "meaning" : "成品入库明细表结束时间"
+    },
+    "finInstorageDetFinInstorageEndTimeRequired" : {
+      "meaning" : "成品入库明细表最后需时(小时)"
+    },
+    "finInstorageDetFinInstorageEngName" : {
+      "meaning" : "成品入库明细表英文名称"
+    },
+    "finInstorageDetFinInstorageEquipmentId" : {
+      "meaning" : "成品入库明细表设备id"
+    },
+    "finInstorageDetFinInstorageExchangeRateId" : {
+      "meaning" : "成品入库明细表币种汇率id"
+    },
+    "finInstorageDetFinInstorageExtension" : {
+      "meaning" : "成品入库明细表扩展数据"
+    },
+    "finInstorageDetFinInstorageExternalState" : {
+      "meaning" : "成品入库明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "finInstorageDetFinInstorageFilterClazz" : {
+      "meaning" : "成品入库明细表冗余字段用于筛选"
+    },
+    "finInstorageDetFinInstorageFlags" : {
+      "meaning" : "成品入库明细表63位标志位"
+    },
+    "finInstorageDetFinInstorageFromAuditDate" : {
+      "meaning" : "finInstorageDetFinInstorageFromAuditDate"
+    },
+    "finInstorageDetFinInstorageFromBeginTime" : {
+      "meaning" : "finInstorageDetFinInstorageFromBeginTime"
+    },
+    "finInstorageDetFinInstorageFromCreateTime" : {
+      "meaning" : "finInstorageDetFinInstorageFromCreateTime"
+    },
+    "finInstorageDetFinInstorageFromDateExtra1" : {
+      "meaning" : "finInstorageDetFinInstorageFromDateExtra1"
+    },
+    "finInstorageDetFinInstorageFromDateExtra2" : {
+      "meaning" : "finInstorageDetFinInstorageFromDateExtra2"
+    },
+    "finInstorageDetFinInstorageFromDateExtra3" : {
+      "meaning" : "finInstorageDetFinInstorageFromDateExtra3"
+    },
+    "finInstorageDetFinInstorageFromDateExtra4" : {
+      "meaning" : "finInstorageDetFinInstorageFromDateExtra4"
+    },
+    "finInstorageDetFinInstorageFromDateExtra5" : {
+      "meaning" : "finInstorageDetFinInstorageFromDateExtra5"
+    },
+    "finInstorageDetFinInstorageFromDeliveryDate" : {
+      "meaning" : "finInstorageDetFinInstorageFromDeliveryDate"
+    },
+    "finInstorageDetFinInstorageFromEndTime" : {
+      "meaning" : "finInstorageDetFinInstorageFromEndTime"
+    },
+    "finInstorageDetFinInstorageFromReceiptDate" : {
+      "meaning" : "finInstorageDetFinInstorageFromReceiptDate"
+    },
+    "finInstorageDetFinInstorageFromUpdateTime" : {
+      "meaning" : "finInstorageDetFinInstorageFromUpdateTime"
+    },
+    "finInstorageDetFinInstorageFscType" : {
+      "meaning" : "成品入库明细表FSC声明"
+    },
+    "finInstorageDetFinInstorageGenerativePeople" : {
+      "meaning" : "成品入库明细表下发人"
+    },
+    "finInstorageDetFinInstorageGenerativeState" : {
+      "meaning" : "成品入库明细表下发状态"
+    },
+    "finInstorageDetFinInstorageGroovyScript" : {
+      "meaning" : "成品入库明细表groovy脚本"
+    },
+    "finInstorageDetFinInstorageGropeCode" : {
+      "meaning" : "成品入库明细表搜索码"
+    },
+    "finInstorageDetFinInstorageId" : {
+      "meaning" : "成品入库明细表PK"
+    },
+    "finInstorageDetFinInstorageInUsed" : {
+      "meaning" : "成品入库明细表是否被使用"
+    },
+    "finInstorageDetFinInstorageInvTypeTaxRateId" : {
+      "meaning" : "成品入库明细表发票税率id"
+    },
+    "finInstorageDetFinInstorageIsBanned" : {
+      "meaning" : "成品入库明细表是否被禁用"
+    },
+    "finInstorageDetFinInstorageIsDeleted" : {
+      "meaning" : "成品入库明细表是否被删除"
+    },
+    "finInstorageDetFinInstorageIsLeaf" : {
+      "meaning" : "成品入库明细表是否叶子节点"
+    },
+    "finInstorageDetFinInstorageIsMainFlow" : {
+      "meaning" : "成品入库明细表是否是主流程"
+    },
+    "finInstorageDetFinInstorageIsManualModificationDate" : {
+      "meaning" : "成品入库明细表是否手动修改计划生产时间"
+    },
+    "finInstorageDetFinInstorageIsolation" : {
+      "meaning" : "成品入库明细表智能节点数据隔离标识"
+    },
+    "finInstorageDetFinInstorageJsScript" : {
+      "meaning" : "成品入库明细表js脚本"
+    },
+    "finInstorageDetFinInstorageMaterialId" : {
+      "meaning" : "成品入库明细表物料id"
+    },
+    "finInstorageDetFinInstorageName" : {
+      "meaning" : "成品入库明细表智能节点名"
+    },
+    "finInstorageDetFinInstorageNameCodeSearch" : {
+      "meaning" : "成品入库明细表name、user_code模糊搜索"
+    },
+    "finInstorageDetFinInstorageNumberExtra1" : {
+      "meaning" : "成品入库明细表扩展数量1"
+    },
+    "finInstorageDetFinInstorageNumberExtra2" : {
+      "meaning" : "成品入库明细表扩展数量2"
+    },
+    "finInstorageDetFinInstorageNumberExtra3" : {
+      "meaning" : "成品入库明细表扩展数量3"
+    },
+    "finInstorageDetFinInstorageNumberExtra4" : {
+      "meaning" : "成品入库明细表扩展数量4"
+    },
+    "finInstorageDetFinInstorageNumberExtra5" : {
+      "meaning" : "成品入库明细表扩展数量5"
+    },
+    "finInstorageDetFinInstorageOrgId" : {
+      "meaning" : "成品入库明细表机构id(客户/供应商)"
+    },
+    "finInstorageDetFinInstorageParentId" : {
+      "meaning" : "成品入库明细表父节点ID"
+    },
+    "finInstorageDetFinInstoragePlannedOutputQuantity" : {
+      "meaning" : "成品入库明细表计划产出数量"
+    },
+    "finInstorageDetFinInstoragePlannedTimeRequired" : {
+      "meaning" : "成品入库明细表计划需时(小时)"
+    },
+    "finInstorageDetFinInstoragePrintTimes" : {
+      "meaning" : "成品入库明细表打印次数"
+    },
+    "finInstorageDetFinInstoragePriority" : {
+      "meaning" : "成品入库明细表优先级"
+    },
+    "finInstorageDetFinInstorageProcessInstanceId" : {
+      "meaning" : "成品入库明细表流程实例ID"
+    },
+    "finInstorageDetFinInstorageProductionProcessesTypeId" : {
+      "meaning" : "成品入库明细表工序类型ID"
+    },
+    "finInstorageDetFinInstorageProductionShiftId" : {
+      "meaning" : "成品入库明细表生产班次ID"
+    },
+    "finInstorageDetFinInstorageQuantity" : {
+      "meaning" : "成品入库明细表任务数量"
+    },
+    "finInstorageDetFinInstorageReceiptDate" : {
+      "meaning" : "成品入库明细表单据日期"
+    },
+    "finInstorageDetFinInstorageReceiptType" : {
+      "meaning" : "成品入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "finInstorageDetFinInstorageRelatedTasksId" : {
+      "meaning" : "成品入库明细表关联任务id"
+    },
+    "finInstorageDetFinInstorageSerialNumber" : {
+      "meaning" : "成品入库明细表顺序号"
+    },
+    "finInstorageDetFinInstorageSettMethod" : {
+      "meaning" : "成品入库明细表结算方式"
+    },
+    "finInstorageDetFinInstorageSettOrgId" : {
+      "meaning" : "成品入库明细表结算机构id(客户/供应商)"
+    },
+    "finInstorageDetFinInstorageSource" : {
+      "meaning" : "成品入库明细表源"
+    },
+    "finInstorageDetFinInstorageSourceType" : {
+      "meaning" : "成品入库明细表来源类型"
+    },
+    "finInstorageDetFinInstorageStaffId" : {
+      "meaning" : "成品入库明细表员工id(入/出库员工)"
+    },
+    "finInstorageDetFinInstorageState" : {
+      "meaning" : "成品入库明细表通用状态"
+    },
+    "finInstorageDetFinInstorageSystemCode" : {
+      "meaning" : "成品入库明细表系统编码"
+    },
+    "finInstorageDetFinInstorageTarget" : {
+      "meaning" : "成品入库明细表目标"
+    },
+    "finInstorageDetFinInstorageTaskNodeName" : {
+      "meaning" : "成品入库明细表任务节点名称"
+    },
+    "finInstorageDetFinInstorageTaskNodeType" : {
+      "meaning" : "成品入库明细表任务节点类型"
+    },
+    "finInstorageDetFinInstorageTenantId" : {
+      "meaning" : "成品入库明细表租户id"
+    },
+    "finInstorageDetFinInstorageThirdPartyClass" : {
+      "meaning" : "成品入库明细表第三方分类"
+    },
+    "finInstorageDetFinInstorageThirdPartyId" : {
+      "meaning" : "成品入库明细表第三方系统中的唯一ID"
+    },
+    "finInstorageDetFinInstorageThirdPartyName" : {
+      "meaning" : "成品入库明细表第三方名称"
+    },
+    "finInstorageDetFinInstorageToAuditDate" : {
+      "meaning" : "finInstorageDetFinInstorageToAuditDate"
+    },
+    "finInstorageDetFinInstorageToBeginTime" : {
+      "meaning" : "finInstorageDetFinInstorageToBeginTime"
+    },
+    "finInstorageDetFinInstorageToCreateTime" : {
+      "meaning" : "finInstorageDetFinInstorageToCreateTime"
+    },
+    "finInstorageDetFinInstorageToDateExtra1" : {
+      "meaning" : "finInstorageDetFinInstorageToDateExtra1"
+    },
+    "finInstorageDetFinInstorageToDateExtra2" : {
+      "meaning" : "finInstorageDetFinInstorageToDateExtra2"
+    },
+    "finInstorageDetFinInstorageToDateExtra3" : {
+      "meaning" : "finInstorageDetFinInstorageToDateExtra3"
+    },
+    "finInstorageDetFinInstorageToDateExtra4" : {
+      "meaning" : "finInstorageDetFinInstorageToDateExtra4"
+    },
+    "finInstorageDetFinInstorageToDateExtra5" : {
+      "meaning" : "finInstorageDetFinInstorageToDateExtra5"
+    },
+    "finInstorageDetFinInstorageToDeliveryDate" : {
+      "meaning" : "finInstorageDetFinInstorageToDeliveryDate"
+    },
+    "finInstorageDetFinInstorageToEndTime" : {
+      "meaning" : "finInstorageDetFinInstorageToEndTime"
+    },
+    "finInstorageDetFinInstorageToReceiptDate" : {
+      "meaning" : "finInstorageDetFinInstorageToReceiptDate"
+    },
+    "finInstorageDetFinInstorageToUpdateTime" : {
+      "meaning" : "finInstorageDetFinInstorageToUpdateTime"
+    },
+    "finInstorageDetFinInstorageUnitCode" : {
+      "meaning" : "成品入库明细表单位id"
+    },
+    "finInstorageDetFinInstorageUpdateTime" : {
+      "meaning" : "成品入库明细表更新时间"
+    },
+    "finInstorageDetFinInstorageUpdater" : {
+      "meaning" : "成品入库明细表更新人"
+    },
+    "finInstorageDetFinInstorageUpdaterId" : {
+      "meaning" : "成品入库明细表更新人ID"
+    },
+    "finInstorageDetFinInstorageUserCode" : {
+      "meaning" : "成品入库明细表智能节点的唯一编码"
+    },
+    "finInstorageDetFinInstorageVarExtra1" : {
+      "meaning" : "成品入库明细表扩展1"
+    },
+    "finInstorageDetFinInstorageVarExtra2" : {
+      "meaning" : "成品入库明细表扩展2"
+    },
+    "finInstorageDetFinInstorageVarExtra3" : {
+      "meaning" : "成品入库明细表扩展3"
+    },
+    "finInstorageDetFinInstorageVarExtra4" : {
+      "meaning" : "成品入库明细表扩展4"
+    },
+    "finInstorageDetFinInstorageVarExtra5" : {
+      "meaning" : "成品入库明细表扩展5"
+    },
+    "finInstorageDetFinInstorageVersion" : {
+      "meaning" : "成品入库明细表版本号"
+    },
+    "finInstorageDetFlags" : {
+      "meaning" : "成品入库明细表63位标志位"
+    },
+    "finInstorageDetFromAuditDate" : {
+      "meaning" : "finInstorageDetFromAuditDate"
+    },
+    "finInstorageDetFromBeginTime" : {
+      "meaning" : "finInstorageDetFromBeginTime"
+    },
+    "finInstorageDetFromCreateTime" : {
+      "meaning" : "finInstorageDetFromCreateTime"
+    },
+    "finInstorageDetFromDateExtra1" : {
+      "meaning" : "finInstorageDetFromDateExtra1"
+    },
+    "finInstorageDetFromDateExtra2" : {
+      "meaning" : "finInstorageDetFromDateExtra2"
+    },
+    "finInstorageDetFromDateExtra3" : {
+      "meaning" : "finInstorageDetFromDateExtra3"
+    },
+    "finInstorageDetFromDateExtra4" : {
+      "meaning" : "finInstorageDetFromDateExtra4"
+    },
+    "finInstorageDetFromDateExtra5" : {
+      "meaning" : "finInstorageDetFromDateExtra5"
+    },
+    "finInstorageDetFromDeliveryDate" : {
+      "meaning" : "finInstorageDetFromDeliveryDate"
+    },
+    "finInstorageDetFromEndTime" : {
+      "meaning" : "finInstorageDetFromEndTime"
+    },
+    "finInstorageDetFromReceiptDate" : {
+      "meaning" : "finInstorageDetFromReceiptDate"
+    },
+    "finInstorageDetFromUpdateTime" : {
+      "meaning" : "finInstorageDetFromUpdateTime"
+    },
+    "finInstorageDetFscType" : {
+      "meaning" : "成品入库明细表FSC声明"
+    },
+    "finInstorageDetGenerativePeople" : {
+      "meaning" : "成品入库明细表下发人"
+    },
+    "finInstorageDetGenerativeState" : {
+      "meaning" : "成品入库明细表下发状态"
+    },
+    "finInstorageDetGoodsId" : {
+      "meaning" : "成品入库明细表货（包）id"
+    },
+    "finInstorageDetGroovyScript" : {
+      "meaning" : "成品入库明细表groovy脚本"
+    },
+    "finInstorageDetGropeCode" : {
+      "meaning" : "成品入库明细表搜索码"
+    },
+    "finInstorageDetGrossWeightPerBox" : {
+      "meaning" : "成品入库明细表每箱毛重"
+    },
+    "finInstorageDetId" : {
+      "meaning" : "成品入库明细表PK",
+      "is_primary" : true
+    },
+    "finInstorageDetInUsed" : {
+      "meaning" : "成品入库明细表是否被使用"
+    },
+    "finInstorageDetInvTypeTaxRateId" : {
+      "meaning" : "成品入库明细表发票税率id"
+    },
+    "finInstorageDetInventoryQuantity" : {
+      "meaning" : "成品入库明细表库存数量(当单据触发时，记录当前库存数量，库存数量流水)"
+    },
+    "finInstorageDetIsBanned" : {
+      "meaning" : "成品入库明细表是否被禁用"
+    },
+    "finInstorageDetIsDeleted" : {
+      "meaning" : "成品入库明细表是否被删除"
+    },
+    "finInstorageDetIsLeaf" : {
+      "meaning" : "成品入库明细表是否叶子节点"
+    },
+    "finInstorageDetIsMainFlow" : {
+      "meaning" : "成品入库明细表是否是主流程"
+    },
+    "finInstorageDetIsManualModificationDate" : {
+      "meaning" : "成品入库明细表是否手动修改计划生产时间"
+    },
+    "finInstorageDetIsolation" : {
+      "meaning" : "成品入库明细表智能节点数据隔离标识"
+    },
+    "finInstorageDetJsScript" : {
+      "meaning" : "成品入库明细表js脚本"
+    },
+    "finInstorageDetLocalCurrencyTotalAmount" : {
+      "meaning" : "成品入库明细表本币总金额"
+    },
+    "finInstorageDetLocalCurrencyUnitPrice" : {
+      "meaning" : "成品入库明细表本币单价"
+    },
+    "finInstorageDetMatBatchId" : {
+      "meaning" : "成品入库明细表物料批次id"
+    },
+    "finInstorageDetMaterialId" : {
+      "meaning" : "成品入库明细表物料id"
+    },
+    "finInstorageDetName" : {
+      "meaning" : "成品入库明细表智能节点名"
+    },
+    "finInstorageDetNameCodeSearch" : {
+      "meaning" : "成品入库明细表name、user_code模糊搜索"
+    },
+    "finInstorageDetNetWeightPerBox" : {
+      "meaning" : "成品入库明细表每箱净重"
+    },
+    "finInstorageDetNumberExtra1" : {
+      "meaning" : "成品入库明细表扩展数量1"
+    },
+    "finInstorageDetNumberExtra2" : {
+      "meaning" : "成品入库明细表扩展数量2"
+    },
+    "finInstorageDetNumberExtra3" : {
+      "meaning" : "成品入库明细表扩展数量3"
+    },
+    "finInstorageDetNumberExtra4" : {
+      "meaning" : "成品入库明细表扩展数量4"
+    },
+    "finInstorageDetNumberExtra5" : {
+      "meaning" : "成品入库明细表扩展数量5"
+    },
+    "finInstorageDetOrgId" : {
+      "meaning" : "成品入库明细表机构id(客户/供应商)"
+    },
+    "finInstorageDetPackageMatId" : {
+      "meaning" : "成品入库明细表包装物料id"
+    },
+    "finInstorageDetParentId" : {
+      "meaning" : "成品入库明细表父节点ID"
+    },
+    "finInstorageDetPlannedOutputQuantity" : {
+      "meaning" : "成品入库明细表计划产出数量"
+    },
+    "finInstorageDetPlannedTimeRequired" : {
+      "meaning" : "成品入库明细表计划需时(小时)"
+    },
+    "finInstorageDetPrintTimes" : {
+      "meaning" : "成品入库明细表打印次数"
+    },
+    "finInstorageDetPriority" : {
+      "meaning" : "成品入库明细表优先级"
+    },
+    "finInstorageDetProcessInstanceId" : {
+      "meaning" : "成品入库明细表流程实例ID"
+    },
+    "finInstorageDetProductionProcessesTypeId" : {
+      "meaning" : "成品入库明细表工序类型ID"
+    },
+    "finInstorageDetProductionShiftId" : {
+      "meaning" : "成品入库明细表生产班次ID"
+    },
+    "finInstorageDetQuantity" : {
+      "meaning" : "成品入库明细表任务数量"
+    },
+    "finInstorageDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "成品入库明细表报价单价（含税）"
+    },
+    "finInstorageDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "成品入库明细表报价单价（不含税）"
+    },
+    "finInstorageDetReceiptDate" : {
+      "meaning" : "成品入库明细表单据日期"
+    },
+    "finInstorageDetReceiptType" : {
+      "meaning" : "成品入库明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "finInstorageDetRelatedTasksId" : {
+      "meaning" : "成品入库明细表关联任务id"
+    },
+    "finInstorageDetSerialNumber" : {
+      "meaning" : "成品入库明细表顺序号"
+    },
+    "finInstorageDetSettMethod" : {
+      "meaning" : "成品入库明细表结算方式"
+    },
+    "finInstorageDetSettOrgId" : {
+      "meaning" : "成品入库明细表结算机构id(客户/供应商)"
+    },
+    "finInstorageDetSettlementTotalAmount" : {
+      "meaning" : "成品入库明细表结算总金额"
+    },
+    "finInstorageDetSettlementUnitPrice" : {
+      "meaning" : "成品入库明细表结算单价"
+    },
+    "finInstorageDetSingleWeight" : {
+      "meaning" : "成品入库明细表单重kg"
+    },
+    "finInstorageDetSource" : {
+      "meaning" : "成品入库明细表源"
+    },
+    "finInstorageDetSourceType" : {
+      "meaning" : "成品入库明细表来源类型"
+    },
+    "finInstorageDetState" : {
+      "meaning" : "成品入库明细表通用状态"
+    },
+    "finInstorageDetStorageSpaceId" : {
+      "meaning" : "成品入库明细表库空间id"
+    },
+    "finInstorageDetSystemCode" : {
+      "meaning" : "成品入库明细表系统编码"
+    },
+    "finInstorageDetTarget" : {
+      "meaning" : "成品入库明细表目标"
+    },
+    "finInstorageDetTaskNodeName" : {
+      "meaning" : "成品入库明细表任务节点名称"
+    },
+    "finInstorageDetTaskNodeType" : {
+      "meaning" : "成品入库明细表任务节点类型"
+    },
+    "finInstorageDetTenantId" : {
+      "meaning" : "成品入库明细表租户id"
+    },
+    "finInstorageDetThirdPartyClass" : {
+      "meaning" : "成品入库明细表第三方分类"
+    },
+    "finInstorageDetThirdPartyId" : {
+      "meaning" : "成品入库明细表第三方系统中的唯一ID"
+    },
+    "finInstorageDetThirdPartyName" : {
+      "meaning" : "成品入库明细表第三方名称"
+    },
+    "finInstorageDetToAuditDate" : {
+      "meaning" : "finInstorageDetToAuditDate"
+    },
+    "finInstorageDetToBeginTime" : {
+      "meaning" : "finInstorageDetToBeginTime"
+    },
+    "finInstorageDetToCreateTime" : {
+      "meaning" : "finInstorageDetToCreateTime"
+    },
+    "finInstorageDetToDateExtra1" : {
+      "meaning" : "finInstorageDetToDateExtra1"
+    },
+    "finInstorageDetToDateExtra2" : {
+      "meaning" : "finInstorageDetToDateExtra2"
+    },
+    "finInstorageDetToDateExtra3" : {
+      "meaning" : "finInstorageDetToDateExtra3"
+    },
+    "finInstorageDetToDateExtra4" : {
+      "meaning" : "finInstorageDetToDateExtra4"
+    },
+    "finInstorageDetToDateExtra5" : {
+      "meaning" : "finInstorageDetToDateExtra5"
+    },
+    "finInstorageDetToDeliveryDate" : {
+      "meaning" : "finInstorageDetToDeliveryDate"
+    },
+    "finInstorageDetToEndTime" : {
+      "meaning" : "finInstorageDetToEndTime"
+    },
+    "finInstorageDetToReceiptDate" : {
+      "meaning" : "finInstorageDetToReceiptDate"
+    },
+    "finInstorageDetToUpdateTime" : {
+      "meaning" : "finInstorageDetToUpdateTime"
+    },
+    "finInstorageDetTotalAmount" : {
+      "meaning" : "成品入库明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "finInstorageDetTotalAmountIncludingTax" : {
+      "meaning" : "成品入库明细表总金额（含税）"
+    },
+    "finInstorageDetTotalAmountWithoutTax" : {
+      "meaning" : "成品入库明细表总金额（不含税）"
+    },
+    "finInstorageDetTotalWeightLot" : {
+      "meaning" : "成品入库明细表合计总重kg"
+    },
+    "finInstorageDetTrayMatId" : {
+      "meaning" : "成品入库明细表托盘物料id"
+    },
+    "finInstorageDetUnitCode" : {
+      "meaning" : "成品入库明细表单位id"
+    },
+    "finInstorageDetUnitPriceIncludingTax" : {
+      "meaning" : "成品入库明细表单价（含税）"
+    },
+    "finInstorageDetUnitPriceWithoutTax" : {
+      "meaning" : "成品入库明细表单价（不含税）"
+    },
+    "finInstorageDetUpdateTime" : {
+      "meaning" : "成品入库明细表更新时间"
+    },
+    "finInstorageDetUpdater" : {
+      "meaning" : "成品入库明细表更新人"
+    },
+    "finInstorageDetUpdaterId" : {
+      "meaning" : "成品入库明细表更新人ID"
+    },
+    "finInstorageDetUserCode" : {
+      "meaning" : "成品入库明细表智能节点的唯一编码"
+    },
+    "finInstorageDetVarExtra1" : {
+      "meaning" : "成品入库明细表扩展1"
+    },
+    "finInstorageDetVarExtra2" : {
+      "meaning" : "成品入库明细表扩展2"
+    },
+    "finInstorageDetVarExtra3" : {
+      "meaning" : "成品入库明细表扩展3"
+    },
+    "finInstorageDetVarExtra4" : {
+      "meaning" : "成品入库明细表扩展4"
+    },
+    "finInstorageDetVarExtra5" : {
+      "meaning" : "成品入库明细表扩展5"
+    },
+    "finInstorageDetVersion" : {
+      "meaning" : "成品入库明细表版本号"
+    }
+  }
+}

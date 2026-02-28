@@ -1,0 +1,260 @@
+{
+      "api_name": "/inv-type-tax-rate/findList",
+      "table_name": "发票类型税率表",
+      "request": {
+        "invTypeTaxRateClazz": "INV_TYPE_TAX_RATE"
+      },
+      "mainTabClazz": "INV_TYPE_TAX_RATE",
+      "response": {
+        "invTypeTaxRateApplicationId": {
+          "meaning": "发票类型税率表应用ID"
+        },
+        "invTypeTaxRateAuditDate": {
+          "meaning": "发票类型税率表审核时间"
+        },
+        "invTypeTaxRateAuditStatus": {
+          "meaning": "发票类型税率表审核状态"
+        },
+        "invTypeTaxRateBizVersion": {
+          "meaning": "发票类型税率表业务自定义版本号"
+        },
+        "invTypeTaxRateBriefName": {
+          "meaning": "发票类型税率表简称"
+        },
+        "invTypeTaxRateBusDivisId": {
+          "meaning": "发票类型税率表事业部id"
+        },
+        "invTypeTaxRateClazz": {
+          "meaning": "发票类型税率表子类 类名（表和类一一对应）"
+        },
+        "invTypeTaxRateComment": {
+          "meaning": "发票类型税率表评论"
+        },
+        "invTypeTaxRateCreateTime": {
+          "meaning": "发票类型税率表创建时间"
+        },
+        "invTypeTaxRateCreator": {
+          "meaning": "发票类型税率表创建人"
+        },
+        "invTypeTaxRateCreatorId": {
+          "meaning": "发票类型税率表创建人ID"
+        },
+        "invTypeTaxRateDateExtra1": {
+          "meaning": "发票类型税率表扩展时间1"
+        },
+        "invTypeTaxRateDateExtra2": {
+          "meaning": "发票类型税率表扩展时间2"
+        },
+        "invTypeTaxRateDateExtra3": {
+          "meaning": "发票类型税率表扩展时间3"
+        },
+        "invTypeTaxRateDateExtra4": {
+          "meaning": "发票类型税率表扩展时间4"
+        },
+        "invTypeTaxRateDateExtra5": {
+          "meaning": "发票类型税率表扩展时间5"
+        },
+        "invTypeTaxRateDefaultType": {
+          "meaning": "发票类型税率表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "invTypeTaxRateDescription": {
+          "meaning": "发票类型税率表描述"
+        },
+        "invTypeTaxRateEffectiveEndTime": {
+          "meaning": "发票类型税率表有效结束时间"
+        },
+        "invTypeTaxRateEffectiveStartTime": {
+          "meaning": "发票类型税率表有效开始时间"
+        },
+        "invTypeTaxRateEngName": {
+          "meaning": "发票类型税率表英文名称"
+        },
+        "invTypeTaxRateExtension": {
+          "meaning": "发票类型税率表扩展数据"
+        },
+        "invTypeTaxRateExternalState": {
+          "meaning": "发票类型税率表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "invTypeTaxRateFlags": {
+          "meaning": "发票类型税率表63位标志位"
+        },
+        "invTypeTaxRateFromAuditDate": {
+          "meaning": "invTypeTaxRateFromAuditDate"
+        },
+        "invTypeTaxRateFromCreateTime": {
+          "meaning": "invTypeTaxRateFromCreateTime"
+        },
+        "invTypeTaxRateFromDateExtra1": {
+          "meaning": "invTypeTaxRateFromDateExtra1"
+        },
+        "invTypeTaxRateFromDateExtra2": {
+          "meaning": "invTypeTaxRateFromDateExtra2"
+        },
+        "invTypeTaxRateFromDateExtra3": {
+          "meaning": "invTypeTaxRateFromDateExtra3"
+        },
+        "invTypeTaxRateFromDateExtra4": {
+          "meaning": "invTypeTaxRateFromDateExtra4"
+        },
+        "invTypeTaxRateFromDateExtra5": {
+          "meaning": "invTypeTaxRateFromDateExtra5"
+        },
+        "invTypeTaxRateFromEffectiveEndTime": {
+          "meaning": "invTypeTaxRateFromEffectiveEndTime"
+        },
+        "invTypeTaxRateFromEffectiveStartTime": {
+          "meaning": "invTypeTaxRateFromEffectiveStartTime"
+        },
+        "invTypeTaxRateFromUpdateTime": {
+          "meaning": "invTypeTaxRateFromUpdateTime"
+        },
+        "invTypeTaxRateGroovyScript": {
+          "meaning": "发票类型税率表groovy脚本"
+        },
+        "invTypeTaxRateGropeCode": {
+          "meaning": "发票类型税率表搜索码"
+        },
+        "invTypeTaxRateId": {
+          "meaning": "发票类型税率表pk",
+          "is_primary": true
+        },
+        "invTypeTaxRateInUsed": {
+          "meaning": "发票类型税率表是否被使用"
+        },
+        "invTypeTaxRateInvType": {
+          "meaning": "发票类型税率表发票类型id"
+        },
+        "invTypeTaxRateIsBanned": {
+          "meaning": "发票类型税率表是否被禁用"
+        },
+        "invTypeTaxRateIsDeleted": {
+          "meaning": "发票类型税率表是否被删除"
+        },
+        "invTypeTaxRateIsMainFlow": {
+          "meaning": "发票类型税率表是否是主流程"
+        },
+        "invTypeTaxRateIsUsed": {
+          "meaning": "发票类型税率表是否使用 （0-未使用；1-使用）"
+        },
+        "invTypeTaxRateIsolation": {
+          "meaning": "发票类型税率表智能节点数据隔离标识"
+        },
+        "invTypeTaxRateJsScript": {
+          "meaning": "发票类型税率表js脚本"
+        },
+        "invTypeTaxRateName": {
+          "meaning": "发票类型税率表智能节点名"
+        },
+        "invTypeTaxRateNameCodeSearch": {
+          "meaning": "发票类型税率表name、user_code模糊搜索"
+        },
+        "invTypeTaxRateNumberExtra1": {
+          "meaning": "发票类型税率表扩展数量1"
+        },
+        "invTypeTaxRateNumberExtra2": {
+          "meaning": "发票类型税率表扩展数量2"
+        },
+        "invTypeTaxRateNumberExtra3": {
+          "meaning": "发票类型税率表扩展数量3"
+        },
+        "invTypeTaxRateNumberExtra4": {
+          "meaning": "发票类型税率表扩展数量4"
+        },
+        "invTypeTaxRateNumberExtra5": {
+          "meaning": "发票类型税率表扩展数量5"
+        },
+        "invTypeTaxRateParentId": {
+          "meaning": "发票类型税率表父节点ID"
+        },
+        "invTypeTaxRateProcessInstanceId": {
+          "meaning": "发票类型税率表流程实例ID"
+        },
+        "invTypeTaxRateSerialNumber": {
+          "meaning": "发票类型税率表顺序号"
+        },
+        "invTypeTaxRateState": {
+          "meaning": "发票类型税率表状态(0停用，1启用)"
+        },
+        "invTypeTaxRateSystemCode": {
+          "meaning": "发票类型税率表系统编码"
+        },
+        "invTypeTaxRateTaskNodeName": {
+          "meaning": "发票类型税率表任务节点名称"
+        },
+        "invTypeTaxRateTaxRate": {
+          "meaning": "发票类型税率表税率"
+        },
+        "invTypeTaxRateTenantId": {
+          "meaning": "发票类型税率表租户id"
+        },
+        "invTypeTaxRateThirdPartyClass": {
+          "meaning": "发票类型税率表第三方分类"
+        },
+        "invTypeTaxRateThirdPartyId": {
+          "meaning": "发票类型税率表第三方系统中的唯一ID"
+        },
+        "invTypeTaxRateThirdPartyName": {
+          "meaning": "发票类型税率表第三方名称"
+        },
+        "invTypeTaxRateToAuditDate": {
+          "meaning": "invTypeTaxRateToAuditDate"
+        },
+        "invTypeTaxRateToCreateTime": {
+          "meaning": "invTypeTaxRateToCreateTime"
+        },
+        "invTypeTaxRateToDateExtra1": {
+          "meaning": "invTypeTaxRateToDateExtra1"
+        },
+        "invTypeTaxRateToDateExtra2": {
+          "meaning": "invTypeTaxRateToDateExtra2"
+        },
+        "invTypeTaxRateToDateExtra3": {
+          "meaning": "invTypeTaxRateToDateExtra3"
+        },
+        "invTypeTaxRateToDateExtra4": {
+          "meaning": "invTypeTaxRateToDateExtra4"
+        },
+        "invTypeTaxRateToDateExtra5": {
+          "meaning": "invTypeTaxRateToDateExtra5"
+        },
+        "invTypeTaxRateToEffectiveEndTime": {
+          "meaning": "invTypeTaxRateToEffectiveEndTime"
+        },
+        "invTypeTaxRateToEffectiveStartTime": {
+          "meaning": "invTypeTaxRateToEffectiveStartTime"
+        },
+        "invTypeTaxRateToUpdateTime": {
+          "meaning": "invTypeTaxRateToUpdateTime"
+        },
+        "invTypeTaxRateUpdateTime": {
+          "meaning": "发票类型税率表更新时间"
+        },
+        "invTypeTaxRateUpdater": {
+          "meaning": "发票类型税率表更新人"
+        },
+        "invTypeTaxRateUpdaterId": {
+          "meaning": "发票类型税率表更新人ID"
+        },
+        "invTypeTaxRateUserCode": {
+          "meaning": "发票类型税率表智能节点的唯一编码"
+        },
+        "invTypeTaxRateVarExtra1": {
+          "meaning": "发票类型税率表扩展1"
+        },
+        "invTypeTaxRateVarExtra2": {
+          "meaning": "发票类型税率表扩展2"
+        },
+        "invTypeTaxRateVarExtra3": {
+          "meaning": "发票类型税率表扩展3"
+        },
+        "invTypeTaxRateVarExtra4": {
+          "meaning": "发票类型税率表扩展4"
+        },
+        "invTypeTaxRateVarExtra5": {
+          "meaning": "发票类型税率表扩展5"
+        },
+        "invTypeTaxRateVersion": {
+          "meaning": "发票类型税率表版本号"
+        }
+      }
+    }

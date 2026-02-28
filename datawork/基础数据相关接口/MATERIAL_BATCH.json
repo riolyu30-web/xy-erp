@@ -1,0 +1,641 @@
+{
+      "api_name": "/material-batch/findList",
+      "table_name": "物料批次",
+      "request": {
+        "matBatchClazz": "MATERIAL_BATCH"
+      },
+      "mainTabClazz": "MATERIAL_BATCH",
+      "response": {
+        "matBatchATMatApplicationId": {
+          "meaning": "物料批次应用ID"
+        },
+        "matBatchATMatAuditDate": {
+          "meaning": "matBatchATMatAuditDate"
+        },
+        "matBatchATMatAuditStatus": {
+          "meaning": "物料批次审核状态"
+        },
+        "matBatchATMatBizVersion": {
+          "meaning": "物料批次业务自定义版本号"
+        },
+        "matBatchATMatBriefName": {
+          "meaning": "物料批次简称"
+        },
+        "matBatchATMatBusDivId": {
+          "meaning": "matBatchATMatBusDivId"
+        },
+        "matBatchATMatBusDivisId": {
+          "meaning": "物料批次事业部id"
+        },
+        "matBatchATMatClazz": {
+          "meaning": "物料批次子类 类名（表和类一一对应）"
+        },
+        "matBatchATMatComment": {
+          "meaning": "物料批次评论"
+        },
+        "matBatchATMatCreateTime": {
+          "meaning": "matBatchATMatCreateTime"
+        },
+        "matBatchATMatCreator": {
+          "meaning": "物料批次创建人"
+        },
+        "matBatchATMatCreatorId": {
+          "meaning": "物料批次创建人ID"
+        },
+        "matBatchATMatDateExtra1": {
+          "meaning": "matBatchATMatDateExtra1"
+        },
+        "matBatchATMatDateExtra2": {
+          "meaning": "matBatchATMatDateExtra2"
+        },
+        "matBatchATMatDateExtra3": {
+          "meaning": "matBatchATMatDateExtra3"
+        },
+        "matBatchATMatDateExtra4": {
+          "meaning": "matBatchATMatDateExtra4"
+        },
+        "matBatchATMatDateExtra5": {
+          "meaning": "matBatchATMatDateExtra5"
+        },
+        "matBatchATMatDeclType": {
+          "meaning": "matBatchATMatDeclType"
+        },
+        "matBatchATMatDefaultStatisticsSpecificationTypeId": {
+          "meaning": "matBatchATMatDefaultStatisticsSpecificationTypeId"
+        },
+        "matBatchATMatDefaultType": {
+          "meaning": "物料批次智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matBatchATMatDescription": {
+          "meaning": "物料批次描述"
+        },
+        "matBatchATMatEngName": {
+          "meaning": "物料批次英文名称"
+        },
+        "matBatchATMatExtension": {
+          "meaning": "物料批次扩展数据"
+        },
+        "matBatchATMatExternalState": {
+          "meaning": "物料批次上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matBatchATMatFinClass": {
+          "meaning": "matBatchATMatFinClass"
+        },
+        "matBatchATMatFinGenLedClass": {
+          "meaning": "matBatchATMatFinGenLedClass"
+        },
+        "matBatchATMatFinGenLedCode": {
+          "meaning": "matBatchATMatFinGenLedCode"
+        },
+        "matBatchATMatFinancialAccount": {
+          "meaning": "matBatchATMatFinancialAccount"
+        },
+        "matBatchATMatFlags": {
+          "meaning": "物料批次63位标志位"
+        },
+        "matBatchATMatFromAuditDate": {
+          "meaning": "matBatchATMatFromAuditDate"
+        },
+        "matBatchATMatFromCreateTime": {
+          "meaning": "matBatchATMatFromCreateTime"
+        },
+        "matBatchATMatFromDateExtra1": {
+          "meaning": "matBatchATMatFromDateExtra1"
+        },
+        "matBatchATMatFromDateExtra2": {
+          "meaning": "matBatchATMatFromDateExtra2"
+        },
+        "matBatchATMatFromDateExtra3": {
+          "meaning": "matBatchATMatFromDateExtra3"
+        },
+        "matBatchATMatFromDateExtra4": {
+          "meaning": "matBatchATMatFromDateExtra4"
+        },
+        "matBatchATMatFromDateExtra5": {
+          "meaning": "matBatchATMatFromDateExtra5"
+        },
+        "matBatchATMatFromUpdateTime": {
+          "meaning": "matBatchATMatFromUpdateTime"
+        },
+        "matBatchATMatFscDeclarationId": {
+          "meaning": "matBatchATMatFscDeclarationId"
+        },
+        "matBatchATMatFscId": {
+          "meaning": "matBatchATMatFscId"
+        },
+        "matBatchATMatGroovyScript": {
+          "meaning": "物料批次groovy脚本"
+        },
+        "matBatchATMatGropeCode": {
+          "meaning": "物料批次搜索码"
+        },
+        "matBatchATMatId": {
+          "meaning": "matBatchATMatId"
+        },
+        "matBatchATMatInUsed": {
+          "meaning": "物料批次是否被使用"
+        },
+        "matBatchATMatInactiveCallDays": {
+          "meaning": "matBatchATMatInactiveCallDays"
+        },
+        "matBatchATMatInactiveDays": {
+          "meaning": "matBatchATMatInactiveDays"
+        },
+        "matBatchATMatIsBanned": {
+          "meaning": "物料批次是否被禁用"
+        },
+        "matBatchATMatIsDeleted": {
+          "meaning": "物料批次是否被删除"
+        },
+        "matBatchATMatIsMainFlow": {
+          "meaning": "物料批次是否是主流程"
+        },
+        "matBatchATMatIsMatClassification": {
+          "meaning": "matBatchATMatIsMatClassification"
+        },
+        "matBatchATMatIsolation": {
+          "meaning": "物料批次智能节点数据隔离标识"
+        },
+        "matBatchATMatJsScript": {
+          "meaning": "物料批次js脚本"
+        },
+        "matBatchATMatMaxInventory": {
+          "meaning": "matBatchATMatMaxInventory"
+        },
+        "matBatchATMatMinInventory": {
+          "meaning": "matBatchATMatMinInventory"
+        },
+        "matBatchATMatName": {
+          "meaning": "物料批次智能节点名"
+        },
+        "matBatchATMatNameCodeSearch": {
+          "meaning": "物料批次name、user_code模糊搜索"
+        },
+        "matBatchATMatNumberExtra1": {
+          "meaning": "物料批次扩展数量1"
+        },
+        "matBatchATMatNumberExtra2": {
+          "meaning": "物料批次扩展数量2"
+        },
+        "matBatchATMatNumberExtra3": {
+          "meaning": "物料批次扩展数量3"
+        },
+        "matBatchATMatNumberExtra4": {
+          "meaning": "物料批次扩展数量4"
+        },
+        "matBatchATMatNumberExtra5": {
+          "meaning": "物料批次扩展数量5"
+        },
+        "matBatchATMatOrigin": {
+          "meaning": "matBatchATMatOrigin"
+        },
+        "matBatchATMatOverPurchasePercent": {
+          "meaning": "matBatchATMatOverPurchasePercent"
+        },
+        "matBatchATMatParentId": {
+          "meaning": "物料批次父节点ID"
+        },
+        "matBatchATMatPlaceOfOrigin": {
+          "meaning": "matBatchATMatPlaceOfOrigin"
+        },
+        "matBatchATMatProcessInstanceId": {
+          "meaning": "物料批次流程实例ID"
+        },
+        "matBatchATMatProductGroup": {
+          "meaning": "matBatchATMatProductGroup"
+        },
+        "matBatchATMatPurCycle": {
+          "meaning": "matBatchATMatPurCycle"
+        },
+        "matBatchATMatPurMatCont": {
+          "meaning": "matBatchATMatPurMatCont"
+        },
+        "matBatchATMatSearchCode": {
+          "meaning": "matBatchATMatSearchCode"
+        },
+        "matBatchATMatSerialNumber": {
+          "meaning": "物料批次顺序号"
+        },
+        "matBatchATMatShelfLife": {
+          "meaning": "matBatchATMatShelfLife"
+        },
+        "matBatchATMatStandardCostsIncludingTax": {
+          "meaning": "matBatchATMatStandardCostsIncludingTax"
+        },
+        "matBatchATMatStandardCostsWithoutTax": {
+          "meaning": "matBatchATMatStandardCostsWithoutTax"
+        },
+        "matBatchATMatState": {
+          "meaning": "物料批次通用状态"
+        },
+        "matBatchATMatSystemCode": {
+          "meaning": "物料批次系统编码"
+        },
+        "matBatchATMatTaskNodeName": {
+          "meaning": "物料批次任务节点名称"
+        },
+        "matBatchATMatTenantId": {
+          "meaning": "matBatchATMatTenantId"
+        },
+        "matBatchATMatThirdPartyClass": {
+          "meaning": "物料批次第三方分类"
+        },
+        "matBatchATMatThirdPartyId": {
+          "meaning": "物料批次第三方系统中的唯一ID"
+        },
+        "matBatchATMatThirdPartyName": {
+          "meaning": "物料批次第三方名称"
+        },
+        "matBatchATMatToAuditDate": {
+          "meaning": "matBatchATMatToAuditDate"
+        },
+        "matBatchATMatToCreateTime": {
+          "meaning": "matBatchATMatToCreateTime"
+        },
+        "matBatchATMatToDateExtra1": {
+          "meaning": "matBatchATMatToDateExtra1"
+        },
+        "matBatchATMatToDateExtra2": {
+          "meaning": "matBatchATMatToDateExtra2"
+        },
+        "matBatchATMatToDateExtra3": {
+          "meaning": "matBatchATMatToDateExtra3"
+        },
+        "matBatchATMatToDateExtra4": {
+          "meaning": "matBatchATMatToDateExtra4"
+        },
+        "matBatchATMatToDateExtra5": {
+          "meaning": "matBatchATMatToDateExtra5"
+        },
+        "matBatchATMatToUpdateTime": {
+          "meaning": "matBatchATMatToUpdateTime"
+        },
+        "matBatchATMatUpdateTime": {
+          "meaning": "matBatchATMatUpdateTime"
+        },
+        "matBatchATMatUpdater": {
+          "meaning": "物料批次更新人"
+        },
+        "matBatchATMatUpdaterId": {
+          "meaning": "物料批次更新人ID"
+        },
+        "matBatchATMatUserCode": {
+          "meaning": "物料批次智能节点的唯一编码"
+        },
+        "matBatchATMatVarExtra1": {
+          "meaning": "物料批次扩展1"
+        },
+        "matBatchATMatVarExtra2": {
+          "meaning": "物料批次扩展2"
+        },
+        "matBatchATMatVarExtra3": {
+          "meaning": "物料批次扩展3"
+        },
+        "matBatchATMatVarExtra4": {
+          "meaning": "物料批次扩展4"
+        },
+        "matBatchATMatVarExtra5": {
+          "meaning": "物料批次扩展5"
+        },
+        "matBatchATMatVersion": {
+          "meaning": "物料批次版本号"
+        },
+        "matBatchATMatWarehouseSpaceId": {
+          "meaning": "matBatchATMatWarehouseSpaceId"
+        },
+        "matBatchApplicationId": {
+          "meaning": "物料批次应用ID"
+        },
+        "matBatchArrivalDate": {
+          "type": "object",
+          "meaning": "matBatchArrivalDate"
+        },
+        "matBatchAuditDate": {
+          "meaning": "物料批次审核时间"
+        },
+        "matBatchAuditStatus": {
+          "meaning": "物料批次审核状态"
+        },
+        "matBatchBatchQuantity": {
+          "meaning": "matBatchBatchQuantity"
+        },
+        "matBatchBizVersion": {
+          "meaning": "物料批次业务自定义版本号"
+        },
+        "matBatchBriefName": {
+          "meaning": "物料批次简称"
+        },
+        "matBatchBusDivisId": {
+          "meaning": "物料批次事业部id"
+        },
+        "matBatchClazz": {
+          "meaning": "物料批次子类 类名（表和类一一对应）"
+        },
+        "matBatchComment": {
+          "meaning": "物料批次评论"
+        },
+        "matBatchCreateTime": {
+          "meaning": "物料批次创建时间"
+        },
+        "matBatchCreator": {
+          "meaning": "物料批次创建人"
+        },
+        "matBatchCreatorId": {
+          "meaning": "物料批次创建人ID"
+        },
+        "matBatchCustBatchNo": {
+          "meaning": "matBatchCustBatchNo"
+        },
+        "matBatchDateExtra1": {
+          "meaning": "物料批次扩展时间1"
+        },
+        "matBatchDateExtra2": {
+          "meaning": "物料批次扩展时间2"
+        },
+        "matBatchDateExtra3": {
+          "meaning": "物料批次扩展时间3"
+        },
+        "matBatchDateExtra4": {
+          "meaning": "物料批次扩展时间4"
+        },
+        "matBatchDateExtra5": {
+          "meaning": "物料批次扩展时间5"
+        },
+        "matBatchDefaultType": {
+          "meaning": "物料批次智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matBatchDescription": {
+          "meaning": "物料批次描述"
+        },
+        "matBatchEngName": {
+          "meaning": "物料批次英文名称"
+        },
+        "matBatchExtension": {
+          "meaning": "物料批次扩展数据"
+        },
+        "matBatchExternalState": {
+          "meaning": "物料批次上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matBatchFlags": {
+          "meaning": "物料批次63位标志位"
+        },
+        "matBatchFromArrivalDate": {
+          "type": "object",
+          "meaning": "matBatchFromArrivalDate"
+        },
+        "matBatchFromAuditDate": {
+          "meaning": "matBatchFromAuditDate"
+        },
+        "matBatchFromCreateTime": {
+          "meaning": "matBatchFromCreateTime"
+        },
+        "matBatchFromDateExtra1": {
+          "meaning": "matBatchFromDateExtra1"
+        },
+        "matBatchFromDateExtra2": {
+          "meaning": "matBatchFromDateExtra2"
+        },
+        "matBatchFromDateExtra3": {
+          "meaning": "matBatchFromDateExtra3"
+        },
+        "matBatchFromDateExtra4": {
+          "meaning": "matBatchFromDateExtra4"
+        },
+        "matBatchFromDateExtra5": {
+          "meaning": "matBatchFromDateExtra5"
+        },
+        "matBatchFromMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "matBatchFromMaterialDateOfManufacture"
+        },
+        "matBatchFromMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "matBatchFromMaterialPeriodOfValidity"
+        },
+        "matBatchFromUpdateTime": {
+          "meaning": "matBatchFromUpdateTime"
+        },
+        "matBatchGroovyScript": {
+          "meaning": "物料批次groovy脚本"
+        },
+        "matBatchGropeCode": {
+          "meaning": "物料批次搜索码"
+        },
+        "matBatchId": {
+          "meaning": "物料批次主键ID",
+          "is_primary": true
+        },
+        "matBatchInUsed": {
+          "meaning": "物料批次是否被使用"
+        },
+        "matBatchInternalBarcode": {
+          "meaning": "物料批次内部条码"
+        },
+        "matBatchIsBanned": {
+          "meaning": "物料批次是否被禁用"
+        },
+        "matBatchIsDeleted": {
+          "meaning": "物料批次是否被删除"
+        },
+        "matBatchIsMainFlow": {
+          "meaning": "物料批次是否是主流程"
+        },
+        "matBatchIsolation": {
+          "meaning": "物料批次智能节点数据隔离标识"
+        },
+        "matBatchJsScript": {
+          "meaning": "物料批次js脚本"
+        },
+        "matBatchMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "matBatchMaterialDateOfManufacture"
+        },
+        "matBatchMaterialId": {
+          "meaning": "matBatchMaterialId"
+        },
+        "matBatchMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "matBatchMaterialPeriodOfValidity"
+        },
+        "matBatchMaxUsageCount": {
+          "meaning": "物料批次最大使用次数"
+        },
+        "matBatchName": {
+          "meaning": "物料批次智能节点名"
+        },
+        "matBatchNameCodeSearch": {
+          "meaning": "物料批次name、user_code模糊搜索"
+        },
+        "matBatchNumberExtra1": {
+          "meaning": "物料批次扩展数量1"
+        },
+        "matBatchNumberExtra2": {
+          "meaning": "物料批次扩展数量2"
+        },
+        "matBatchNumberExtra3": {
+          "meaning": "物料批次扩展数量3"
+        },
+        "matBatchNumberExtra4": {
+          "meaning": "物料批次扩展数量4"
+        },
+        "matBatchNumberExtra5": {
+          "meaning": "物料批次扩展数量5"
+        },
+        "matBatchOrderCostIncludingTax": {
+          "meaning": "matBatchOrderCostIncludingTax"
+        },
+        "matBatchOrderCostWithoutTax": {
+          "meaning": "matBatchOrderCostWithoutTax"
+        },
+        "matBatchOrganizationId": {
+          "meaning": "matBatchOrganizationId"
+        },
+        "matBatchOtherExternalCostsTax": {
+          "meaning": "matBatchOtherExternalCostsTax"
+        },
+        "matBatchParentId": {
+          "meaning": "物料批次父节点ID"
+        },
+        "matBatchProcessInstanceId": {
+          "meaning": "物料批次流程实例ID"
+        },
+        "matBatchProdBatchNo": {
+          "meaning": "matBatchProdBatchNo"
+        },
+        "matBatchProductionCost": {
+          "meaning": "matBatchProductionCost"
+        },
+        "matBatchPurchaseCostIncludingTax": {
+          "meaning": "matBatchPurchaseCostIncludingTax"
+        },
+        "matBatchPurchaseCostWithoutTax": {
+          "meaning": "matBatchPurchaseCostWithoutTax"
+        },
+        "matBatchPurchasePriceIncludingTax": {
+          "meaning": "matBatchPurchasePriceIncludingTax"
+        },
+        "matBatchPurchasePriceWithoutTax": {
+          "meaning": "matBatchPurchasePriceWithoutTax"
+        },
+        "matBatchSerialNumber": {
+          "meaning": "物料批次顺序号"
+        },
+        "matBatchSettlementCostIncludingTax": {
+          "meaning": "matBatchSettlementCostIncludingTax"
+        },
+        "matBatchSettlementCostWithoutTax": {
+          "meaning": "matBatchSettlementCostWithoutTax"
+        },
+        "matBatchShelfLifeDays": {
+          "meaning": "物料批次保质期(天)"
+        },
+        "matBatchState": {
+          "meaning": "物料批次通用状态"
+        },
+        "matBatchStorageCost": {
+          "meaning": "matBatchStorageCost"
+        },
+        "matBatchSupBatBarcode": {
+          "meaning": "物料批次供应商批次条码"
+        },
+        "matBatchSystemCode": {
+          "meaning": "物料批次系统编码"
+        },
+        "matBatchTaskNodeName": {
+          "meaning": "物料批次任务节点名称"
+        },
+        "matBatchTenantId": {
+          "meaning": "matBatchTenantId"
+        },
+        "matBatchThirdPartyClass": {
+          "meaning": "物料批次第三方分类"
+        },
+        "matBatchThirdPartyId": {
+          "meaning": "物料批次第三方系统中的唯一ID"
+        },
+        "matBatchThirdPartyName": {
+          "meaning": "物料批次第三方名称"
+        },
+        "matBatchToArrivalDate": {
+          "type": "object",
+          "meaning": "matBatchToArrivalDate"
+        },
+        "matBatchToAuditDate": {
+          "meaning": "matBatchToAuditDate"
+        },
+        "matBatchToCreateTime": {
+          "meaning": "matBatchToCreateTime"
+        },
+        "matBatchToDateExtra1": {
+          "meaning": "matBatchToDateExtra1"
+        },
+        "matBatchToDateExtra2": {
+          "meaning": "matBatchToDateExtra2"
+        },
+        "matBatchToDateExtra3": {
+          "meaning": "matBatchToDateExtra3"
+        },
+        "matBatchToDateExtra4": {
+          "meaning": "matBatchToDateExtra4"
+        },
+        "matBatchToDateExtra5": {
+          "meaning": "matBatchToDateExtra5"
+        },
+        "matBatchToMaterialDateOfManufacture": {
+          "type": "object",
+          "meaning": "matBatchToMaterialDateOfManufacture"
+        },
+        "matBatchToMaterialPeriodOfValidity": {
+          "type": "object",
+          "meaning": "matBatchToMaterialPeriodOfValidity"
+        },
+        "matBatchToUpdateTime": {
+          "meaning": "matBatchToUpdateTime"
+        },
+        "matBatchTransportCostIncludingTax": {
+          "meaning": "matBatchTransportCostIncludingTax"
+        },
+        "matBatchTransportCostWithoutTax": {
+          "meaning": "matBatchTransportCostWithoutTax"
+        },
+        "matBatchUpdateTime": {
+          "meaning": "物料批次更新时间"
+        },
+        "matBatchUpdater": {
+          "meaning": "物料批次更新人"
+        },
+        "matBatchUpdaterId": {
+          "meaning": "物料批次更新人ID"
+        },
+        "matBatchUsageCount": {
+          "meaning": "物料批次已使用次数"
+        },
+        "matBatchUserCode": {
+          "meaning": "物料批次智能节点的唯一编码"
+        },
+        "matBatchVarExtra1": {
+          "meaning": "物料批次扩展1"
+        },
+        "matBatchVarExtra2": {
+          "meaning": "物料批次扩展2"
+        },
+        "matBatchVarExtra3": {
+          "meaning": "物料批次扩展3"
+        },
+        "matBatchVarExtra4": {
+          "meaning": "物料批次扩展4"
+        },
+        "matBatchVarExtra5": {
+          "meaning": "物料批次扩展5"
+        },
+        "matBatchVersion": {
+          "meaning": "物料批次版本号"
+        },
+        "matBatchWealthSharingCostTax": {
+          "meaning": "matBatchWealthSharingCostTax"
+        },
+        "matBatchWoBatchNo": {
+          "meaning": "matBatchWoBatchNo"
+        }
+      }
+    }

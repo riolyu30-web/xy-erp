@@ -1,0 +1,245 @@
+{
+      "api_name": "/organization-follow-up-staff/findList",
+      "table_name": "机构跟进人员",
+      "request": {
+        "organizationFollowUpStaffClazz": "ORGANIZATION_FOLLOW_UP_STAFF"
+      },
+      "mainTabClazz": "ORGANIZATION_FOLLOW_UP_STAFF",
+      "response": {
+        "organizationFollowUpStaffApplicationId": {
+          "meaning": "机构跟进人员应用ID"
+        },
+        "organizationFollowUpStaffAuditDate": {
+          "meaning": "机构跟进人员审核时间"
+        },
+        "organizationFollowUpStaffAuditStatus": {
+          "meaning": "机构跟进人员审核状态"
+        },
+        "organizationFollowUpStaffBizVersion": {
+          "meaning": "机构跟进人员业务自定义版本号"
+        },
+        "organizationFollowUpStaffBriefName": {
+          "meaning": "机构跟进人员简称"
+        },
+        "organizationFollowUpStaffBusDivisId": {
+          "meaning": "机构跟进人员事业部id"
+        },
+        "organizationFollowUpStaffClazz": {
+          "meaning": "机构跟进人员子类 类名（表和类一一对应）"
+        },
+        "organizationFollowUpStaffComment": {
+          "meaning": "机构跟进人员评论"
+        },
+        "organizationFollowUpStaffCreateTime": {
+          "meaning": "机构跟进人员创建时间"
+        },
+        "organizationFollowUpStaffCreator": {
+          "meaning": "机构跟进人员创建人"
+        },
+        "organizationFollowUpStaffCreatorId": {
+          "meaning": "机构跟进人员创建人ID"
+        },
+        "organizationFollowUpStaffDateExtra1": {
+          "meaning": "机构跟进人员扩展时间1"
+        },
+        "organizationFollowUpStaffDateExtra2": {
+          "meaning": "机构跟进人员扩展时间2"
+        },
+        "organizationFollowUpStaffDateExtra3": {
+          "meaning": "机构跟进人员扩展时间3"
+        },
+        "organizationFollowUpStaffDateExtra4": {
+          "meaning": "机构跟进人员扩展时间4"
+        },
+        "organizationFollowUpStaffDateExtra5": {
+          "meaning": "机构跟进人员扩展时间5"
+        },
+        "organizationFollowUpStaffDefaultType": {
+          "meaning": "机构跟进人员智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "organizationFollowUpStaffDescription": {
+          "meaning": "机构跟进人员描述"
+        },
+        "organizationFollowUpStaffEngName": {
+          "meaning": "机构跟进人员英文名称"
+        },
+        "organizationFollowUpStaffExtension": {
+          "meaning": "机构跟进人员扩展数据"
+        },
+        "organizationFollowUpStaffExternalState": {
+          "meaning": "机构跟进人员上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "organizationFollowUpStaffFlags": {
+          "meaning": "机构跟进人员63位标志位"
+        },
+        "organizationFollowUpStaffFollowUpStaffType": {
+          "meaning": "机构跟进人员跟进人员类型(1跟单员2业务员)"
+        },
+        "organizationFollowUpStaffFromAuditDate": {
+          "meaning": "organizationFollowUpStaffFromAuditDate"
+        },
+        "organizationFollowUpStaffFromCreateTime": {
+          "meaning": "organizationFollowUpStaffFromCreateTime"
+        },
+        "organizationFollowUpStaffFromDateExtra1": {
+          "meaning": "organizationFollowUpStaffFromDateExtra1"
+        },
+        "organizationFollowUpStaffFromDateExtra2": {
+          "meaning": "organizationFollowUpStaffFromDateExtra2"
+        },
+        "organizationFollowUpStaffFromDateExtra3": {
+          "meaning": "organizationFollowUpStaffFromDateExtra3"
+        },
+        "organizationFollowUpStaffFromDateExtra4": {
+          "meaning": "organizationFollowUpStaffFromDateExtra4"
+        },
+        "organizationFollowUpStaffFromDateExtra5": {
+          "meaning": "organizationFollowUpStaffFromDateExtra5"
+        },
+        "organizationFollowUpStaffFromUpdateTime": {
+          "meaning": "organizationFollowUpStaffFromUpdateTime"
+        },
+        "organizationFollowUpStaffGroovyScript": {
+          "meaning": "机构跟进人员groovy脚本"
+        },
+        "organizationFollowUpStaffGropeCode": {
+          "meaning": "机构跟进人员搜索码"
+        },
+        "organizationFollowUpStaffId": {
+          "meaning": "机构跟进人员PK",
+          "is_primary": true
+        },
+        "organizationFollowUpStaffInUsed": {
+          "meaning": "机构跟进人员是否被使用"
+        },
+        "organizationFollowUpStaffIsBanned": {
+          "meaning": "机构跟进人员是否被禁用"
+        },
+        "organizationFollowUpStaffIsDefault": {
+          "meaning": "机构跟进人员是否默认,默认false"
+        },
+        "organizationFollowUpStaffIsDeleted": {
+          "meaning": "机构跟进人员是否被删除"
+        },
+        "organizationFollowUpStaffIsMainFlow": {
+          "meaning": "机构跟进人员是否是主流程"
+        },
+        "organizationFollowUpStaffIsolation": {
+          "meaning": "机构跟进人员智能节点数据隔离标识"
+        },
+        "organizationFollowUpStaffJsScript": {
+          "meaning": "机构跟进人员js脚本"
+        },
+        "organizationFollowUpStaffName": {
+          "meaning": "机构跟进人员智能节点名"
+        },
+        "organizationFollowUpStaffNameCodeSearch": {
+          "meaning": "机构跟进人员name、user_code模糊搜索"
+        },
+        "organizationFollowUpStaffNumberExtra1": {
+          "meaning": "机构跟进人员扩展数量1"
+        },
+        "organizationFollowUpStaffNumberExtra2": {
+          "meaning": "机构跟进人员扩展数量2"
+        },
+        "organizationFollowUpStaffNumberExtra3": {
+          "meaning": "机构跟进人员扩展数量3"
+        },
+        "organizationFollowUpStaffNumberExtra4": {
+          "meaning": "机构跟进人员扩展数量4"
+        },
+        "organizationFollowUpStaffNumberExtra5": {
+          "meaning": "机构跟进人员扩展数量5"
+        },
+        "organizationFollowUpStaffOrganizationId": {
+          "meaning": "机构跟进人员机构_id"
+        },
+        "organizationFollowUpStaffParentId": {
+          "meaning": "机构跟进人员父节点ID"
+        },
+        "organizationFollowUpStaffProcessInstanceId": {
+          "meaning": "机构跟进人员流程实例ID"
+        },
+        "organizationFollowUpStaffSerialNumber": {
+          "meaning": "机构跟进人员顺序号"
+        },
+        "organizationFollowUpStaffStaffId": {
+          "meaning": "机构跟进人员业务员名字(取员工资料_id)"
+        },
+        "organizationFollowUpStaffState": {
+          "meaning": "机构跟进人员通用状态"
+        },
+        "organizationFollowUpStaffSystemCode": {
+          "meaning": "机构跟进人员系统编码"
+        },
+        "organizationFollowUpStaffTaskNodeName": {
+          "meaning": "机构跟进人员任务节点名称"
+        },
+        "organizationFollowUpStaffTenantId": {
+          "meaning": "机构跟进人员租户_id"
+        },
+        "organizationFollowUpStaffThirdPartyClass": {
+          "meaning": "机构跟进人员第三方分类"
+        },
+        "organizationFollowUpStaffThirdPartyId": {
+          "meaning": "机构跟进人员第三方系统中的唯一ID"
+        },
+        "organizationFollowUpStaffThirdPartyName": {
+          "meaning": "机构跟进人员第三方名称"
+        },
+        "organizationFollowUpStaffToAuditDate": {
+          "meaning": "organizationFollowUpStaffToAuditDate"
+        },
+        "organizationFollowUpStaffToCreateTime": {
+          "meaning": "organizationFollowUpStaffToCreateTime"
+        },
+        "organizationFollowUpStaffToDateExtra1": {
+          "meaning": "organizationFollowUpStaffToDateExtra1"
+        },
+        "organizationFollowUpStaffToDateExtra2": {
+          "meaning": "organizationFollowUpStaffToDateExtra2"
+        },
+        "organizationFollowUpStaffToDateExtra3": {
+          "meaning": "organizationFollowUpStaffToDateExtra3"
+        },
+        "organizationFollowUpStaffToDateExtra4": {
+          "meaning": "organizationFollowUpStaffToDateExtra4"
+        },
+        "organizationFollowUpStaffToDateExtra5": {
+          "meaning": "organizationFollowUpStaffToDateExtra5"
+        },
+        "organizationFollowUpStaffToUpdateTime": {
+          "meaning": "organizationFollowUpStaffToUpdateTime"
+        },
+        "organizationFollowUpStaffUpdateTime": {
+          "meaning": "机构跟进人员更新时间"
+        },
+        "organizationFollowUpStaffUpdater": {
+          "meaning": "机构跟进人员更新人"
+        },
+        "organizationFollowUpStaffUpdaterId": {
+          "meaning": "机构跟进人员更新人ID"
+        },
+        "organizationFollowUpStaffUserCode": {
+          "meaning": "机构跟进人员智能节点的唯一编码"
+        },
+        "organizationFollowUpStaffVarExtra1": {
+          "meaning": "机构跟进人员扩展1"
+        },
+        "organizationFollowUpStaffVarExtra2": {
+          "meaning": "机构跟进人员扩展2"
+        },
+        "organizationFollowUpStaffVarExtra3": {
+          "meaning": "机构跟进人员扩展3"
+        },
+        "organizationFollowUpStaffVarExtra4": {
+          "meaning": "机构跟进人员扩展4"
+        },
+        "organizationFollowUpStaffVarExtra5": {
+          "meaning": "机构跟进人员扩展5"
+        },
+        "organizationFollowUpStaffVersion": {
+          "meaning": "机构跟进人员版本号"
+        }
+      }
+    }

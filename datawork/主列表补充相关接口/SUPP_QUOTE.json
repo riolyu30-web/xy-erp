@@ -1,0 +1,368 @@
+{
+  "api_name" : "/supp-quote/findList",
+  "table_name" : "供应商报价",
+  "request" : {
+    "suppQuoteClazz" : "SUPP_QUOTE"
+  },
+  "mainTabClazz" : "SUPP_QUOTE",
+  "response" : {
+    "suppQuoteActualTimeRequired" : {
+      "meaning" : "供应商报价实际需时(小时)"
+    },
+    "suppQuoteAdjustmentTimeRequired" : {
+      "meaning" : "供应商报价调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "suppQuoteApplicationId" : {
+      "meaning" : "供应商报价应用ID"
+    },
+    "suppQuoteAuditDate" : {
+      "meaning" : "供应商报价审核时间"
+    },
+    "suppQuoteAuditStatus" : {
+      "meaning" : "供应商报价审核状态"
+    },
+    "suppQuoteAvailableScheduleId" : {
+      "meaning" : "供应商报价可用日程id"
+    },
+    "suppQuoteBeginTime" : {
+      "meaning" : "供应商报价开始时间"
+    },
+    "suppQuoteBizVersion" : {
+      "meaning" : "供应商报价业务自定义版本号"
+    },
+    "suppQuoteBriefName" : {
+      "meaning" : "供应商报价简称"
+    },
+    "suppQuoteBusDivisId" : {
+      "meaning" : "供应商报价事业部id"
+    },
+    "suppQuoteClazz" : {
+      "meaning" : "供应商报价子类 类名（表和类一一对应）"
+    },
+    "suppQuoteClosedReason" : {
+      "meaning" : "供应商报价结案原因"
+    },
+    "suppQuoteClosedStatus" : {
+      "meaning" : "供应商报价结案状态"
+    },
+    "suppQuoteComment" : {
+      "meaning" : "供应商报价评论"
+    },
+    "suppQuoteCompleteQuantity" : {
+      "meaning" : "供应商报价完成数量"
+    },
+    "suppQuoteCompleteStatus" : {
+      "meaning" : "供应商报价完成状态"
+    },
+    "suppQuoteCreateTime" : {
+      "meaning" : "供应商报价创建时间"
+    },
+    "suppQuoteCreator" : {
+      "meaning" : "供应商报价创建人"
+    },
+    "suppQuoteCreatorId" : {
+      "meaning" : "供应商报价创建人ID"
+    },
+    "suppQuoteCurrencyId" : {
+      "meaning" : "供应商报价币种id"
+    },
+    "suppQuoteDateExtra1" : {
+      "meaning" : "供应商报价扩展时间1"
+    },
+    "suppQuoteDateExtra2" : {
+      "meaning" : "供应商报价扩展时间2"
+    },
+    "suppQuoteDateExtra3" : {
+      "meaning" : "供应商报价扩展时间3"
+    },
+    "suppQuoteDateExtra4" : {
+      "meaning" : "供应商报价扩展时间4"
+    },
+    "suppQuoteDateExtra5" : {
+      "meaning" : "供应商报价扩展时间5"
+    },
+    "suppQuoteDefaultType" : {
+      "meaning" : "供应商报价智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "suppQuoteDeliveryDate" : {
+      "meaning" : "供应商报价交货日期"
+    },
+    "suppQuoteDescription" : {
+      "meaning" : "供应商报价描述"
+    },
+    "suppQuoteEndTime" : {
+      "meaning" : "供应商报价结束时间"
+    },
+    "suppQuoteEndTimeRequired" : {
+      "meaning" : "供应商报价最后需时(小时)"
+    },
+    "suppQuoteEngName" : {
+      "meaning" : "供应商报价英文名称"
+    },
+    "suppQuoteEquipmentId" : {
+      "meaning" : "供应商报价设备id"
+    },
+    "suppQuoteExchangeRateId" : {
+      "meaning" : "供应商报价币种汇率id"
+    },
+    "suppQuoteExtension" : {
+      "meaning" : "供应商报价扩展数据"
+    },
+    "suppQuoteExternalState" : {
+      "meaning" : "供应商报价上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "suppQuoteFilterClazz" : {
+      "meaning" : "供应商报价冗余字段用于筛选"
+    },
+    "suppQuoteFlags" : {
+      "meaning" : "供应商报价63位标志位"
+    },
+    "suppQuoteFromAuditDate" : {
+      "meaning" : "suppQuoteFromAuditDate"
+    },
+    "suppQuoteFromBeginTime" : {
+      "meaning" : "suppQuoteFromBeginTime"
+    },
+    "suppQuoteFromCreateTime" : {
+      "meaning" : "suppQuoteFromCreateTime"
+    },
+    "suppQuoteFromDateExtra1" : {
+      "meaning" : "suppQuoteFromDateExtra1"
+    },
+    "suppQuoteFromDateExtra2" : {
+      "meaning" : "suppQuoteFromDateExtra2"
+    },
+    "suppQuoteFromDateExtra3" : {
+      "meaning" : "suppQuoteFromDateExtra3"
+    },
+    "suppQuoteFromDateExtra4" : {
+      "meaning" : "suppQuoteFromDateExtra4"
+    },
+    "suppQuoteFromDateExtra5" : {
+      "meaning" : "suppQuoteFromDateExtra5"
+    },
+    "suppQuoteFromDeliveryDate" : {
+      "meaning" : "suppQuoteFromDeliveryDate"
+    },
+    "suppQuoteFromEndTime" : {
+      "meaning" : "suppQuoteFromEndTime"
+    },
+    "suppQuoteFromReceiptDate" : {
+      "meaning" : "suppQuoteFromReceiptDate"
+    },
+    "suppQuoteFromUpdateTime" : {
+      "meaning" : "suppQuoteFromUpdateTime"
+    },
+    "suppQuoteFscType" : {
+      "meaning" : "供应商报价FSC声明"
+    },
+    "suppQuoteGenerativePeople" : {
+      "meaning" : "供应商报价下发人"
+    },
+    "suppQuoteGenerativeState" : {
+      "meaning" : "供应商报价下发状态"
+    },
+    "suppQuoteGroovyScript" : {
+      "meaning" : "供应商报价groovy脚本"
+    },
+    "suppQuoteGropeCode" : {
+      "meaning" : "供应商报价搜索码"
+    },
+    "suppQuoteId" : {
+      "meaning" : "供应商报价主键ID",
+      "is_primary" : true
+    },
+    "suppQuoteInUsed" : {
+      "meaning" : "供应商报价是否被使用"
+    },
+    "suppQuoteInvTypeTaxRateId" : {
+      "meaning" : "供应商报价发票税率id"
+    },
+    "suppQuoteIsBanned" : {
+      "meaning" : "供应商报价是否被禁用"
+    },
+    "suppQuoteIsDeleted" : {
+      "meaning" : "供应商报价是否被删除"
+    },
+    "suppQuoteIsLeaf" : {
+      "meaning" : "供应商报价是否叶子节点"
+    },
+    "suppQuoteIsMainFlow" : {
+      "meaning" : "供应商报价是否是主流程"
+    },
+    "suppQuoteIsManualModificationDate" : {
+      "meaning" : "供应商报价是否手动修改计划生产时间"
+    },
+    "suppQuoteIsolation" : {
+      "meaning" : "供应商报价智能节点数据隔离标识"
+    },
+    "suppQuoteJsScript" : {
+      "meaning" : "供应商报价js脚本"
+    },
+    "suppQuoteMaterialId" : {
+      "meaning" : "供应商报价物料id"
+    },
+    "suppQuoteName" : {
+      "meaning" : "供应商报价智能节点名"
+    },
+    "suppQuoteNameCodeSearch" : {
+      "meaning" : "供应商报价name、user_code模糊搜索"
+    },
+    "suppQuoteNumberExtra1" : {
+      "meaning" : "供应商报价扩展数量1"
+    },
+    "suppQuoteNumberExtra2" : {
+      "meaning" : "供应商报价扩展数量2"
+    },
+    "suppQuoteNumberExtra3" : {
+      "meaning" : "供应商报价扩展数量3"
+    },
+    "suppQuoteNumberExtra4" : {
+      "meaning" : "供应商报价扩展数量4"
+    },
+    "suppQuoteNumberExtra5" : {
+      "meaning" : "供应商报价扩展数量5"
+    },
+    "suppQuoteParentId" : {
+      "meaning" : "供应商报价父节点ID"
+    },
+    "suppQuotePartnerId" : {
+      "meaning" : "供应商报价合作方id 加工商、供应商、客户"
+    },
+    "suppQuotePlannedOutputQuantity" : {
+      "meaning" : "供应商报价计划产出数量"
+    },
+    "suppQuotePlannedTimeRequired" : {
+      "meaning" : "供应商报价计划需时(小时)"
+    },
+    "suppQuotePrintTimes" : {
+      "meaning" : "供应商报价打印次数"
+    },
+    "suppQuotePriority" : {
+      "meaning" : "供应商报价优先级"
+    },
+    "suppQuoteProcessInstanceId" : {
+      "meaning" : "供应商报价流程实例ID"
+    },
+    "suppQuoteProductionProcessesTypeId" : {
+      "meaning" : "供应商报价工序类型ID"
+    },
+    "suppQuoteProductionShiftId" : {
+      "meaning" : "供应商报价生产班次ID"
+    },
+    "suppQuoteQuantity" : {
+      "meaning" : "供应商报价任务数量"
+    },
+    "suppQuoteReceiptDate" : {
+      "meaning" : "供应商报价单据日期"
+    },
+    "suppQuoteReceiptType" : {
+      "meaning" : "供应商报价单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "suppQuoteRelatedTasksId" : {
+      "meaning" : "供应商报价关联任务id"
+    },
+    "suppQuoteSerialNumber" : {
+      "meaning" : "供应商报价顺序号"
+    },
+    "suppQuoteSource" : {
+      "meaning" : "供应商报价源"
+    },
+    "suppQuoteSourceType" : {
+      "meaning" : "供应商报价来源类型"
+    },
+    "suppQuoteState" : {
+      "meaning" : "供应商报价通用状态"
+    },
+    "suppQuoteSystemCode" : {
+      "meaning" : "供应商报价系统编码"
+    },
+    "suppQuoteTarget" : {
+      "meaning" : "供应商报价目标"
+    },
+    "suppQuoteTaskNodeName" : {
+      "meaning" : "供应商报价任务节点名称"
+    },
+    "suppQuoteTenantId" : {
+      "meaning" : "供应商报价租户ID"
+    },
+    "suppQuoteThirdPartyClass" : {
+      "meaning" : "供应商报价第三方分类"
+    },
+    "suppQuoteThirdPartyId" : {
+      "meaning" : "供应商报价第三方系统中的唯一ID"
+    },
+    "suppQuoteThirdPartyName" : {
+      "meaning" : "供应商报价第三方名称"
+    },
+    "suppQuoteToAuditDate" : {
+      "meaning" : "suppQuoteToAuditDate"
+    },
+    "suppQuoteToBeginTime" : {
+      "meaning" : "suppQuoteToBeginTime"
+    },
+    "suppQuoteToCreateTime" : {
+      "meaning" : "suppQuoteToCreateTime"
+    },
+    "suppQuoteToDateExtra1" : {
+      "meaning" : "suppQuoteToDateExtra1"
+    },
+    "suppQuoteToDateExtra2" : {
+      "meaning" : "suppQuoteToDateExtra2"
+    },
+    "suppQuoteToDateExtra3" : {
+      "meaning" : "suppQuoteToDateExtra3"
+    },
+    "suppQuoteToDateExtra4" : {
+      "meaning" : "suppQuoteToDateExtra4"
+    },
+    "suppQuoteToDateExtra5" : {
+      "meaning" : "suppQuoteToDateExtra5"
+    },
+    "suppQuoteToDeliveryDate" : {
+      "meaning" : "suppQuoteToDeliveryDate"
+    },
+    "suppQuoteToEndTime" : {
+      "meaning" : "suppQuoteToEndTime"
+    },
+    "suppQuoteToReceiptDate" : {
+      "meaning" : "suppQuoteToReceiptDate"
+    },
+    "suppQuoteToUpdateTime" : {
+      "meaning" : "suppQuoteToUpdateTime"
+    },
+    "suppQuoteUnitCode" : {
+      "meaning" : "供应商报价单位id"
+    },
+    "suppQuoteUpdateTime" : {
+      "meaning" : "供应商报价更新时间"
+    },
+    "suppQuoteUpdater" : {
+      "meaning" : "供应商报价更新人"
+    },
+    "suppQuoteUpdaterId" : {
+      "meaning" : "供应商报价更新人ID"
+    },
+    "suppQuoteUserCode" : {
+      "meaning" : "供应商报价智能节点的唯一编码"
+    },
+    "suppQuoteVarExtra1" : {
+      "meaning" : "供应商报价扩展1"
+    },
+    "suppQuoteVarExtra2" : {
+      "meaning" : "供应商报价扩展2"
+    },
+    "suppQuoteVarExtra3" : {
+      "meaning" : "供应商报价扩展3"
+    },
+    "suppQuoteVarExtra4" : {
+      "meaning" : "供应商报价扩展4"
+    },
+    "suppQuoteVarExtra5" : {
+      "meaning" : "供应商报价扩展5"
+    },
+    "suppQuoteVersion" : {
+      "meaning" : "供应商报价版本号"
+    }
+  }
+}

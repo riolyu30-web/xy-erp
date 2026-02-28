@@ -1,0 +1,413 @@
+{
+  "api_name" : "/pay-settle/findList",
+  "table_name" : "应付结算",
+  "request" : {
+    "paySettleClazz" : "PAY_SETTLE"
+  },
+  "mainTabClazz" : "PAY_SETTLE",
+  "response" : {
+    "paySettleAcctHolderName" : {
+      "meaning" : "应付结算账号持有人"
+    },
+    "paySettleActualTimeRequired" : {
+      "meaning" : "应付结算实际需时(小时)"
+    },
+    "paySettleAdjustmentTimeRequired" : {
+      "meaning" : "应付结算调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "paySettleApplicationId" : {
+      "meaning" : "应付结算应用ID"
+    },
+    "paySettleAuditDate" : {
+      "meaning" : "应付结算审核时间"
+    },
+    "paySettleAuditStatus" : {
+      "meaning" : "应付结算审核状态"
+    },
+    "paySettleAvailableScheduleId" : {
+      "meaning" : "应付结算可用日程id"
+    },
+    "paySettleBankAcctNum" : {
+      "meaning" : "应付结算银行账号"
+    },
+    "paySettleBankBranchInfo" : {
+      "meaning" : "应付结算开户支行信息"
+    },
+    "paySettleBankName" : {
+      "meaning" : "应付结算银行名称"
+    },
+    "paySettleBeginTime" : {
+      "meaning" : "应付结算开始时间"
+    },
+    "paySettleBizVersion" : {
+      "meaning" : "应付结算业务自定义版本号"
+    },
+    "paySettleBriefName" : {
+      "meaning" : "应付结算简称"
+    },
+    "paySettleBusDivisId" : {
+      "meaning" : "应付结算事业部id"
+    },
+    "paySettleClazz" : {
+      "meaning" : "应付结算子类 类名（表和类一一对应）"
+    },
+    "paySettleClosedReason" : {
+      "meaning" : "应付结算结案原因"
+    },
+    "paySettleClosedStatus" : {
+      "meaning" : "应付结算结案状态"
+    },
+    "paySettleComment" : {
+      "meaning" : "应付结算评论"
+    },
+    "paySettleCompleteQuantity" : {
+      "meaning" : "应付结算完成数量"
+    },
+    "paySettleCompleteStatus" : {
+      "meaning" : "应付结算完成状态"
+    },
+    "paySettleCreateTime" : {
+      "meaning" : "应付结算创建时间"
+    },
+    "paySettleCreator" : {
+      "meaning" : "应付结算创建人"
+    },
+    "paySettleCreatorId" : {
+      "meaning" : "应付结算创建人ID"
+    },
+    "paySettleCurrency" : {
+      "meaning" : "应付结算币种"
+    },
+    "paySettleDateExtra1" : {
+      "meaning" : "应付结算扩展时间1"
+    },
+    "paySettleDateExtra2" : {
+      "meaning" : "应付结算扩展时间2"
+    },
+    "paySettleDateExtra3" : {
+      "meaning" : "应付结算扩展时间3"
+    },
+    "paySettleDateExtra4" : {
+      "meaning" : "应付结算扩展时间4"
+    },
+    "paySettleDateExtra5" : {
+      "meaning" : "应付结算扩展时间5"
+    },
+    "paySettleDefaultType" : {
+      "meaning" : "应付结算智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "paySettleDeliveryDate" : {
+      "meaning" : "应付结算交货日期"
+    },
+    "paySettleDescription" : {
+      "meaning" : "应付结算描述"
+    },
+    "paySettleEndTime" : {
+      "meaning" : "应付结算结束时间"
+    },
+    "paySettleEndTimeRequired" : {
+      "meaning" : "应付结算最后需时(小时)"
+    },
+    "paySettleEngName" : {
+      "meaning" : "应付结算英文名称"
+    },
+    "paySettleEquipmentId" : {
+      "meaning" : "应付结算设备id"
+    },
+    "paySettleExchangeRateId" : {
+      "meaning" : "应付结算币种汇率id"
+    },
+    "paySettleExtension" : {
+      "meaning" : "应付结算扩展数据"
+    },
+    "paySettleExternalState" : {
+      "meaning" : "应付结算上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "paySettleFilterClazz" : {
+      "meaning" : "应付结算冗余字段用于筛选"
+    },
+    "paySettleFlags" : {
+      "meaning" : "应付结算63位标志位"
+    },
+    "paySettleFromAuditDate" : {
+      "meaning" : "paySettleFromAuditDate"
+    },
+    "paySettleFromBeginTime" : {
+      "meaning" : "paySettleFromBeginTime"
+    },
+    "paySettleFromCreateTime" : {
+      "meaning" : "paySettleFromCreateTime"
+    },
+    "paySettleFromDateExtra1" : {
+      "meaning" : "paySettleFromDateExtra1"
+    },
+    "paySettleFromDateExtra2" : {
+      "meaning" : "paySettleFromDateExtra2"
+    },
+    "paySettleFromDateExtra3" : {
+      "meaning" : "paySettleFromDateExtra3"
+    },
+    "paySettleFromDateExtra4" : {
+      "meaning" : "paySettleFromDateExtra4"
+    },
+    "paySettleFromDateExtra5" : {
+      "meaning" : "paySettleFromDateExtra5"
+    },
+    "paySettleFromDeliveryDate" : {
+      "meaning" : "paySettleFromDeliveryDate"
+    },
+    "paySettleFromEndTime" : {
+      "meaning" : "paySettleFromEndTime"
+    },
+    "paySettleFromReceiptDate" : {
+      "meaning" : "paySettleFromReceiptDate"
+    },
+    "paySettleFromUpdateTime" : {
+      "meaning" : "paySettleFromUpdateTime"
+    },
+    "paySettleFscType" : {
+      "meaning" : "应付结算FSC声明"
+    },
+    "paySettleGenerativePeople" : {
+      "meaning" : "应付结算下发人"
+    },
+    "paySettleGenerativeState" : {
+      "meaning" : "应付结算下发状态"
+    },
+    "paySettleGroovyScript" : {
+      "meaning" : "应付结算groovy脚本"
+    },
+    "paySettleGropeCode" : {
+      "meaning" : "应付结算搜索码"
+    },
+    "paySettleId" : {
+      "meaning" : "应付结算PK",
+      "is_primary" : true
+    },
+    "paySettleInUsed" : {
+      "meaning" : "应付结算是否被使用"
+    },
+    "paySettleInvTypeTaxRateId" : {
+      "meaning" : "应付结算发票税率id"
+    },
+    "paySettleIsBanned" : {
+      "meaning" : "应付结算是否被禁用"
+    },
+    "paySettleIsDeleted" : {
+      "meaning" : "应付结算是否被删除"
+    },
+    "paySettleIsLeaf" : {
+      "meaning" : "应付结算是否叶子节点"
+    },
+    "paySettleIsMainFlow" : {
+      "meaning" : "应付结算是否是主流程"
+    },
+    "paySettleIsManualModificationDate" : {
+      "meaning" : "应付结算是否手动修改计划生产时间"
+    },
+    "paySettleIsolation" : {
+      "meaning" : "应付结算智能节点数据隔离标识"
+    },
+    "paySettleJsScript" : {
+      "meaning" : "应付结算js脚本"
+    },
+    "paySettleLocTotalActAmount" : {
+      "meaning" : "应付结算本币总实际结算金额"
+    },
+    "paySettleLocTotalActDiffAmount" : {
+      "meaning" : "应付结算本币总实际结算差额"
+    },
+    "paySettleLocTotalAmount" : {
+      "meaning" : "应付结算本币总结算金额"
+    },
+    "paySettleLocTotalInvoicedAmount" : {
+      "meaning" : "应付结算本币总开票金额"
+    },
+    "paySettleLocTotalOtherExpense" : {
+      "meaning" : "应付结算本币总其他费用"
+    },
+    "paySettleMaterialId" : {
+      "meaning" : "应付结算物料id"
+    },
+    "paySettleName" : {
+      "meaning" : "应付结算智能节点名"
+    },
+    "paySettleNameCodeSearch" : {
+      "meaning" : "应付结算name、user_code模糊搜索"
+    },
+    "paySettleNumberExtra1" : {
+      "meaning" : "应付结算扩展数量1"
+    },
+    "paySettleNumberExtra2" : {
+      "meaning" : "应付结算扩展数量2"
+    },
+    "paySettleNumberExtra3" : {
+      "meaning" : "应付结算扩展数量3"
+    },
+    "paySettleNumberExtra4" : {
+      "meaning" : "应付结算扩展数量4"
+    },
+    "paySettleNumberExtra5" : {
+      "meaning" : "应付结算扩展数量5"
+    },
+    "paySettleParentId" : {
+      "meaning" : "应付结算父节点ID"
+    },
+    "paySettlePlannedOutputQuantity" : {
+      "meaning" : "应付结算计划产出数量"
+    },
+    "paySettlePlannedTimeRequired" : {
+      "meaning" : "应付结算计划需时(小时)"
+    },
+    "paySettlePrintTimes" : {
+      "meaning" : "应付结算打印次数"
+    },
+    "paySettlePriority" : {
+      "meaning" : "应付结算优先级"
+    },
+    "paySettleProcessInstanceId" : {
+      "meaning" : "应付结算流程实例ID"
+    },
+    "paySettleProductionProcessesTypeId" : {
+      "meaning" : "应付结算工序类型ID"
+    },
+    "paySettleProductionShiftId" : {
+      "meaning" : "应付结算生产班次ID"
+    },
+    "paySettleQuantity" : {
+      "meaning" : "应付结算任务数量"
+    },
+    "paySettleReceiptDate" : {
+      "meaning" : "应付结算单据日期"
+    },
+    "paySettleReceiptType" : {
+      "meaning" : "应付结算单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "paySettleRelatedTasksId" : {
+      "meaning" : "应付结算关联任务id"
+    },
+    "paySettleSerialNumber" : {
+      "meaning" : "应付结算顺序号"
+    },
+    "paySettleSettleAmount" : {
+      "meaning" : "应付结算结算金额"
+    },
+    "paySettleSource" : {
+      "meaning" : "应付结算源"
+    },
+    "paySettleSourceType" : {
+      "meaning" : "应付结算来源类型"
+    },
+    "paySettleState" : {
+      "meaning" : "应付结算通用状态"
+    },
+    "paySettleSupplierId" : {
+      "meaning" : "应付结算供应商ID"
+    },
+    "paySettleSystemCode" : {
+      "meaning" : "应付结算系统编码"
+    },
+    "paySettleTarget" : {
+      "meaning" : "应付结算目标"
+    },
+    "paySettleTaskNodeName" : {
+      "meaning" : "应付结算任务节点名称"
+    },
+    "paySettleTenantId" : {
+      "meaning" : "应付结算租户ID"
+    },
+    "paySettleThirdPartyClass" : {
+      "meaning" : "应付结算第三方分类"
+    },
+    "paySettleThirdPartyId" : {
+      "meaning" : "应付结算第三方系统中的唯一ID"
+    },
+    "paySettleThirdPartyName" : {
+      "meaning" : "应付结算第三方名称"
+    },
+    "paySettleToAuditDate" : {
+      "meaning" : "paySettleToAuditDate"
+    },
+    "paySettleToBeginTime" : {
+      "meaning" : "paySettleToBeginTime"
+    },
+    "paySettleToCreateTime" : {
+      "meaning" : "paySettleToCreateTime"
+    },
+    "paySettleToDateExtra1" : {
+      "meaning" : "paySettleToDateExtra1"
+    },
+    "paySettleToDateExtra2" : {
+      "meaning" : "paySettleToDateExtra2"
+    },
+    "paySettleToDateExtra3" : {
+      "meaning" : "paySettleToDateExtra3"
+    },
+    "paySettleToDateExtra4" : {
+      "meaning" : "paySettleToDateExtra4"
+    },
+    "paySettleToDateExtra5" : {
+      "meaning" : "paySettleToDateExtra5"
+    },
+    "paySettleToDeliveryDate" : {
+      "meaning" : "paySettleToDeliveryDate"
+    },
+    "paySettleToEndTime" : {
+      "meaning" : "paySettleToEndTime"
+    },
+    "paySettleToReceiptDate" : {
+      "meaning" : "paySettleToReceiptDate"
+    },
+    "paySettleToUpdateTime" : {
+      "meaning" : "paySettleToUpdateTime"
+    },
+    "paySettleTotalActAmount" : {
+      "meaning" : "应付结算实际结算金额"
+    },
+    "paySettleTotalActDiffAmount" : {
+      "meaning" : "应付结算总实际结算差额"
+    },
+    "paySettleTotalAmount" : {
+      "meaning" : "应付结算总结算金额"
+    },
+    "paySettleTotalInvoicedAmount" : {
+      "meaning" : "应付结算总开票金额"
+    },
+    "paySettleTotalOtherExpense" : {
+      "meaning" : "应付结算总其他费用"
+    },
+    "paySettleUnitCode" : {
+      "meaning" : "应付结算单位id"
+    },
+    "paySettleUpdateTime" : {
+      "meaning" : "应付结算更新时间"
+    },
+    "paySettleUpdater" : {
+      "meaning" : "应付结算更新人"
+    },
+    "paySettleUpdaterId" : {
+      "meaning" : "应付结算更新人ID"
+    },
+    "paySettleUserCode" : {
+      "meaning" : "应付结算智能节点的唯一编码"
+    },
+    "paySettleVarExtra1" : {
+      "meaning" : "应付结算扩展1"
+    },
+    "paySettleVarExtra2" : {
+      "meaning" : "应付结算扩展2"
+    },
+    "paySettleVarExtra3" : {
+      "meaning" : "应付结算扩展3"
+    },
+    "paySettleVarExtra4" : {
+      "meaning" : "应付结算扩展4"
+    },
+    "paySettleVarExtra5" : {
+      "meaning" : "应付结算扩展5"
+    },
+    "paySettleVersion" : {
+      "meaning" : "应付结算版本号"
+    }
+  }
+}

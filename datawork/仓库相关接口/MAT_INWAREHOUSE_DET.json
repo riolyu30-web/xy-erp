@@ -1,0 +1,771 @@
+{
+  "api_name" : "/mat-inwarehouse-det/findList",
+  "table_name" : "物料入仓明细表",
+  "request" : {
+    "matInwarehouseDetMatInwarehouseClazz" : "MAT_INWAREHOUSE",
+    "matInwarehouseDetClazz" : "MAT_INWAREHOUSE_DET"
+  },
+  "mainTabClazz" : "MAT_INWAREHOUSE_DET",
+  "response" : {
+    "atInwarehouseDetMatInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "物料入仓明细表工序类型ID"
+    },
+    "matInwarehouseDetActualTimeRequired" : {
+      "meaning" : "物料入仓明细表实际需时(小时)"
+    },
+    "matInwarehouseDetAdjustmentTimeRequired" : {
+      "meaning" : "物料入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matInwarehouseDetApplicationId" : {
+      "meaning" : "物料入仓明细表应用ID"
+    },
+    "matInwarehouseDetAuditDate" : {
+      "meaning" : "物料入仓明细表审核时间"
+    },
+    "matInwarehouseDetAuditStatus" : {
+      "meaning" : "物料入仓明细表审核状态"
+    },
+    "matInwarehouseDetAvailableScheduleId" : {
+      "meaning" : "物料入仓明细表可用日程id"
+    },
+    "matInwarehouseDetBeginTime" : {
+      "meaning" : "物料入仓明细表开始时间"
+    },
+    "matInwarehouseDetBizVersion" : {
+      "meaning" : "物料入仓明细表业务自定义版本号"
+    },
+    "matInwarehouseDetBriefName" : {
+      "meaning" : "物料入仓明细表简称"
+    },
+    "matInwarehouseDetBusDivisId" : {
+      "meaning" : "物料入仓明细表事业部id"
+    },
+    "matInwarehouseDetClazz" : {
+      "meaning" : "物料入仓明细表子类 类名（表和类一一对应）"
+    },
+    "matInwarehouseDetClosedReason" : {
+      "meaning" : "物料入仓明细表结案原因"
+    },
+    "matInwarehouseDetClosedStatus" : {
+      "meaning" : "物料入仓明细表结案状态"
+    },
+    "matInwarehouseDetComment" : {
+      "meaning" : "物料入仓明细表评论"
+    },
+    "matInwarehouseDetCompleteQuantity" : {
+      "meaning" : "物料入仓明细表完成数量"
+    },
+    "matInwarehouseDetCompleteStatus" : {
+      "meaning" : "物料入仓明细表完成状态"
+    },
+    "matInwarehouseDetCreateTime" : {
+      "meaning" : "物料入仓明细表创建时间"
+    },
+    "matInwarehouseDetCreator" : {
+      "meaning" : "物料入仓明细表创建人"
+    },
+    "matInwarehouseDetCreatorId" : {
+      "meaning" : "物料入仓明细表创建人ID"
+    },
+    "matInwarehouseDetDateExtra1" : {
+      "meaning" : "物料入仓明细表扩展时间1"
+    },
+    "matInwarehouseDetDateExtra2" : {
+      "meaning" : "物料入仓明细表扩展时间2"
+    },
+    "matInwarehouseDetDateExtra3" : {
+      "meaning" : "物料入仓明细表扩展时间3"
+    },
+    "matInwarehouseDetDateExtra4" : {
+      "meaning" : "物料入仓明细表扩展时间4"
+    },
+    "matInwarehouseDetDateExtra5" : {
+      "meaning" : "物料入仓明细表扩展时间5"
+    },
+    "matInwarehouseDetDefaultType" : {
+      "meaning" : "物料入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matInwarehouseDetDeliveryDate" : {
+      "meaning" : "物料入仓明细表交货日期"
+    },
+    "matInwarehouseDetDescription" : {
+      "meaning" : "物料入仓明细表描述"
+    },
+    "matInwarehouseDetEndTime" : {
+      "meaning" : "物料入仓明细表结束时间"
+    },
+    "matInwarehouseDetEndTimeRequired" : {
+      "meaning" : "物料入仓明细表最后需时(小时)"
+    },
+    "matInwarehouseDetEngName" : {
+      "meaning" : "物料入仓明细表英文名称"
+    },
+    "matInwarehouseDetEquipmentId" : {
+      "meaning" : "物料入仓明细表设备id"
+    },
+    "matInwarehouseDetExchangeRateId" : {
+      "meaning" : "物料入仓明细表币种汇率id"
+    },
+    "matInwarehouseDetExtension" : {
+      "meaning" : "物料入仓明细表扩展数据"
+    },
+    "matInwarehouseDetExternalState" : {
+      "meaning" : "物料入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matInwarehouseDetFilterClazz" : {
+      "meaning" : "物料入仓明细表冗余字段用于筛选"
+    },
+    "matInwarehouseDetFlags" : {
+      "meaning" : "物料入仓明细表63位标志位"
+    },
+    "matInwarehouseDetFromAuditDate" : {
+      "meaning" : "matInwarehouseDetFromAuditDate"
+    },
+    "matInwarehouseDetFromBeginTime" : {
+      "meaning" : "matInwarehouseDetFromBeginTime"
+    },
+    "matInwarehouseDetFromCreateTime" : {
+      "meaning" : "matInwarehouseDetFromCreateTime"
+    },
+    "matInwarehouseDetFromDateExtra1" : {
+      "meaning" : "matInwarehouseDetFromDateExtra1"
+    },
+    "matInwarehouseDetFromDateExtra2" : {
+      "meaning" : "matInwarehouseDetFromDateExtra2"
+    },
+    "matInwarehouseDetFromDateExtra3" : {
+      "meaning" : "matInwarehouseDetFromDateExtra3"
+    },
+    "matInwarehouseDetFromDateExtra4" : {
+      "meaning" : "matInwarehouseDetFromDateExtra4"
+    },
+    "matInwarehouseDetFromDateExtra5" : {
+      "meaning" : "matInwarehouseDetFromDateExtra5"
+    },
+    "matInwarehouseDetFromDeliveryDate" : {
+      "meaning" : "matInwarehouseDetFromDeliveryDate"
+    },
+    "matInwarehouseDetFromEndTime" : {
+      "meaning" : "matInwarehouseDetFromEndTime"
+    },
+    "matInwarehouseDetFromReceiptDate" : {
+      "meaning" : "matInwarehouseDetFromReceiptDate"
+    },
+    "matInwarehouseDetFromUpdateTime" : {
+      "meaning" : "matInwarehouseDetFromUpdateTime"
+    },
+    "matInwarehouseDetFscType" : {
+      "meaning" : "物料入仓明细表FSC声明"
+    },
+    "matInwarehouseDetGenerativePeople" : {
+      "meaning" : "物料入仓明细表下发人"
+    },
+    "matInwarehouseDetGenerativeState" : {
+      "meaning" : "物料入仓明细表下发状态"
+    },
+    "matInwarehouseDetGoodsId" : {
+      "meaning" : "物料入仓明细表货（包）id"
+    },
+    "matInwarehouseDetGroovyScript" : {
+      "meaning" : "物料入仓明细表groovy脚本"
+    },
+    "matInwarehouseDetGropeCode" : {
+      "meaning" : "物料入仓明细表搜索码"
+    },
+    "matInwarehouseDetId" : {
+      "meaning" : "物料入仓明细表PK",
+      "is_primary" : true
+    },
+    "matInwarehouseDetInUsed" : {
+      "meaning" : "物料入仓明细表是否被使用"
+    },
+    "matInwarehouseDetInvTypeTaxRateId" : {
+      "meaning" : "物料入仓明细表发票税率id"
+    },
+    "matInwarehouseDetIqcQuantity" : {
+      "meaning" : "物料入仓明细表已开IQC的数量"
+    },
+    "matInwarehouseDetIqcStatus" : {
+      "meaning" : "物料入仓明细表已开IQC的状态"
+    },
+    "matInwarehouseDetIsBanned" : {
+      "meaning" : "物料入仓明细表是否被禁用"
+    },
+    "matInwarehouseDetIsDeleted" : {
+      "meaning" : "物料入仓明细表是否被删除"
+    },
+    "matInwarehouseDetIsLeaf" : {
+      "meaning" : "物料入仓明细表是否叶子节点"
+    },
+    "matInwarehouseDetIsMainFlow" : {
+      "meaning" : "物料入仓明细表是否是主流程"
+    },
+    "matInwarehouseDetIsManualModificationDate" : {
+      "meaning" : "物料入仓明细表是否手动修改计划生产时间"
+    },
+    "matInwarehouseDetIsolation" : {
+      "meaning" : "物料入仓明细表智能节点数据隔离标识"
+    },
+    "matInwarehouseDetJsScript" : {
+      "meaning" : "物料入仓明细表js脚本"
+    },
+    "matInwarehouseDetLocalCurrencyTotalAmount" : {
+      "meaning" : "物料入仓明细表本币总金额"
+    },
+    "matInwarehouseDetLocalCurrencyUnitPrice" : {
+      "meaning" : "物料入仓明细表本币单价"
+    },
+    "matInwarehouseDetMatBatchId" : {
+      "meaning" : "物料入仓明细表物料批次id"
+    },
+    "matInwarehouseDetMatInwarehouseActualTimeRequired" : {
+      "meaning" : "物料入仓明细表实际需时(小时)"
+    },
+    "matInwarehouseDetMatInwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "物料入仓明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "matInwarehouseDetMatInwarehouseApplicationId" : {
+      "meaning" : "物料入仓明细表应用ID"
+    },
+    "matInwarehouseDetMatInwarehouseAuditDate" : {
+      "meaning" : "物料入仓明细表审核时间"
+    },
+    "matInwarehouseDetMatInwarehouseAuditStatus" : {
+      "meaning" : "物料入仓明细表审核状态"
+    },
+    "matInwarehouseDetMatInwarehouseAvailableScheduleId" : {
+      "meaning" : "物料入仓明细表可用日程id"
+    },
+    "matInwarehouseDetMatInwarehouseBeginTime" : {
+      "meaning" : "物料入仓明细表开始时间"
+    },
+    "matInwarehouseDetMatInwarehouseBizVersion" : {
+      "meaning" : "物料入仓明细表业务自定义版本号"
+    },
+    "matInwarehouseDetMatInwarehouseBriefName" : {
+      "meaning" : "物料入仓明细表简称"
+    },
+    "matInwarehouseDetMatInwarehouseBusDivisId" : {
+      "meaning" : "物料入仓明细表事业部id"
+    },
+    "matInwarehouseDetMatInwarehouseClazz" : {
+      "meaning" : "物料入仓明细表子类 类名（表和类一一对应）"
+    },
+    "matInwarehouseDetMatInwarehouseClosedReason" : {
+      "meaning" : "物料入仓明细表结案原因"
+    },
+    "matInwarehouseDetMatInwarehouseClosedStatus" : {
+      "meaning" : "物料入仓明细表结案状态"
+    },
+    "matInwarehouseDetMatInwarehouseComment" : {
+      "meaning" : "物料入仓明细表评论"
+    },
+    "matInwarehouseDetMatInwarehouseCompleteQuantity" : {
+      "meaning" : "物料入仓明细表完成数量"
+    },
+    "matInwarehouseDetMatInwarehouseCompleteStatus" : {
+      "meaning" : "物料入仓明细表完成状态"
+    },
+    "matInwarehouseDetMatInwarehouseCreateTime" : {
+      "meaning" : "物料入仓明细表创建时间"
+    },
+    "matInwarehouseDetMatInwarehouseCreator" : {
+      "meaning" : "物料入仓明细表创建人"
+    },
+    "matInwarehouseDetMatInwarehouseCreatorId" : {
+      "meaning" : "物料入仓明细表创建人ID"
+    },
+    "matInwarehouseDetMatInwarehouseDateExtra1" : {
+      "meaning" : "物料入仓明细表扩展时间1"
+    },
+    "matInwarehouseDetMatInwarehouseDateExtra2" : {
+      "meaning" : "物料入仓明细表扩展时间2"
+    },
+    "matInwarehouseDetMatInwarehouseDateExtra3" : {
+      "meaning" : "物料入仓明细表扩展时间3"
+    },
+    "matInwarehouseDetMatInwarehouseDateExtra4" : {
+      "meaning" : "物料入仓明细表扩展时间4"
+    },
+    "matInwarehouseDetMatInwarehouseDateExtra5" : {
+      "meaning" : "物料入仓明细表扩展时间5"
+    },
+    "matInwarehouseDetMatInwarehouseDefaultType" : {
+      "meaning" : "物料入仓明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "matInwarehouseDetMatInwarehouseDeliveryDate" : {
+      "meaning" : "物料入仓明细表交货日期"
+    },
+    "matInwarehouseDetMatInwarehouseDescription" : {
+      "meaning" : "物料入仓明细表描述"
+    },
+    "matInwarehouseDetMatInwarehouseEndTime" : {
+      "meaning" : "物料入仓明细表结束时间"
+    },
+    "matInwarehouseDetMatInwarehouseEndTimeRequired" : {
+      "meaning" : "物料入仓明细表最后需时(小时)"
+    },
+    "matInwarehouseDetMatInwarehouseEngName" : {
+      "meaning" : "物料入仓明细表英文名称"
+    },
+    "matInwarehouseDetMatInwarehouseEquipmentId" : {
+      "meaning" : "物料入仓明细表设备id"
+    },
+    "matInwarehouseDetMatInwarehouseExchangeRateId" : {
+      "meaning" : "物料入仓明细表币种汇率id"
+    },
+    "matInwarehouseDetMatInwarehouseExtension" : {
+      "meaning" : "物料入仓明细表扩展数据"
+    },
+    "matInwarehouseDetMatInwarehouseExternalState" : {
+      "meaning" : "物料入仓明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "matInwarehouseDetMatInwarehouseFilterClazz" : {
+      "meaning" : "物料入仓明细表冗余字段用于筛选"
+    },
+    "matInwarehouseDetMatInwarehouseFlags" : {
+      "meaning" : "物料入仓明细表63位标志位"
+    },
+    "matInwarehouseDetMatInwarehouseFromAuditDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromAuditDate"
+    },
+    "matInwarehouseDetMatInwarehouseFromBeginTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromBeginTime"
+    },
+    "matInwarehouseDetMatInwarehouseFromCreateTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromCreateTime"
+    },
+    "matInwarehouseDetMatInwarehouseFromDateExtra1" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDateExtra1"
+    },
+    "matInwarehouseDetMatInwarehouseFromDateExtra2" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDateExtra2"
+    },
+    "matInwarehouseDetMatInwarehouseFromDateExtra3" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDateExtra3"
+    },
+    "matInwarehouseDetMatInwarehouseFromDateExtra4" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDateExtra4"
+    },
+    "matInwarehouseDetMatInwarehouseFromDateExtra5" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDateExtra5"
+    },
+    "matInwarehouseDetMatInwarehouseFromDeliveryDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromDeliveryDate"
+    },
+    "matInwarehouseDetMatInwarehouseFromEndTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromEndTime"
+    },
+    "matInwarehouseDetMatInwarehouseFromReceiptDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromReceiptDate"
+    },
+    "matInwarehouseDetMatInwarehouseFromUpdateTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseFromUpdateTime"
+    },
+    "matInwarehouseDetMatInwarehouseFscType" : {
+      "meaning" : "物料入仓明细表FSC声明"
+    },
+    "matInwarehouseDetMatInwarehouseGenerativePeople" : {
+      "meaning" : "物料入仓明细表下发人"
+    },
+    "matInwarehouseDetMatInwarehouseGenerativeState" : {
+      "meaning" : "物料入仓明细表下发状态"
+    },
+    "matInwarehouseDetMatInwarehouseGroovyScript" : {
+      "meaning" : "物料入仓明细表groovy脚本"
+    },
+    "matInwarehouseDetMatInwarehouseGropeCode" : {
+      "meaning" : "物料入仓明细表搜索码"
+    },
+    "matInwarehouseDetMatInwarehouseId" : {
+      "meaning" : "物料入仓明细表PK"
+    },
+    "matInwarehouseDetMatInwarehouseInUsed" : {
+      "meaning" : "物料入仓明细表是否被使用"
+    },
+    "matInwarehouseDetMatInwarehouseInvTypeTaxRateId" : {
+      "meaning" : "物料入仓明细表发票税率id"
+    },
+    "matInwarehouseDetMatInwarehouseIsBanned" : {
+      "meaning" : "物料入仓明细表是否被禁用"
+    },
+    "matInwarehouseDetMatInwarehouseIsDeleted" : {
+      "meaning" : "物料入仓明细表是否被删除"
+    },
+    "matInwarehouseDetMatInwarehouseIsLeaf" : {
+      "meaning" : "物料入仓明细表是否叶子节点"
+    },
+    "matInwarehouseDetMatInwarehouseIsMainFlow" : {
+      "meaning" : "物料入仓明细表是否是主流程"
+    },
+    "matInwarehouseDetMatInwarehouseIsManualModificationDate" : {
+      "meaning" : "物料入仓明细表是否手动修改计划生产时间"
+    },
+    "matInwarehouseDetMatInwarehouseIsolation" : {
+      "meaning" : "物料入仓明细表智能节点数据隔离标识"
+    },
+    "matInwarehouseDetMatInwarehouseJsScript" : {
+      "meaning" : "物料入仓明细表js脚本"
+    },
+    "matInwarehouseDetMatInwarehouseMaterialId" : {
+      "meaning" : "物料入仓明细表物料id"
+    },
+    "matInwarehouseDetMatInwarehouseName" : {
+      "meaning" : "物料入仓明细表智能节点名"
+    },
+    "matInwarehouseDetMatInwarehouseNameCodeSearch" : {
+      "meaning" : "物料入仓明细表name、user_code模糊搜索"
+    },
+    "matInwarehouseDetMatInwarehouseNumberExtra1" : {
+      "meaning" : "物料入仓明细表扩展数量1"
+    },
+    "matInwarehouseDetMatInwarehouseNumberExtra2" : {
+      "meaning" : "物料入仓明细表扩展数量2"
+    },
+    "matInwarehouseDetMatInwarehouseNumberExtra3" : {
+      "meaning" : "物料入仓明细表扩展数量3"
+    },
+    "matInwarehouseDetMatInwarehouseNumberExtra4" : {
+      "meaning" : "物料入仓明细表扩展数量4"
+    },
+    "matInwarehouseDetMatInwarehouseNumberExtra5" : {
+      "meaning" : "物料入仓明细表扩展数量5"
+    },
+    "matInwarehouseDetMatInwarehouseParentId" : {
+      "meaning" : "物料入仓明细表父节点ID"
+    },
+    "matInwarehouseDetMatInwarehousePlannedOutputQuantity" : {
+      "meaning" : "物料入仓明细表计划产出数量"
+    },
+    "matInwarehouseDetMatInwarehousePlannedTimeRequired" : {
+      "meaning" : "物料入仓明细表计划需时(小时)"
+    },
+    "matInwarehouseDetMatInwarehousePrintTimes" : {
+      "meaning" : "物料入仓明细表打印次数"
+    },
+    "matInwarehouseDetMatInwarehousePriority" : {
+      "meaning" : "物料入仓明细表优先级"
+    },
+    "matInwarehouseDetMatInwarehouseProcessInstanceId" : {
+      "meaning" : "物料入仓明细表流程实例ID"
+    },
+    "matInwarehouseDetMatInwarehouseProductionProcessesTypeId" : {
+      "meaning" : "物料入仓明细表工序类型ID"
+    },
+    "matInwarehouseDetMatInwarehouseProductionShiftId" : {
+      "meaning" : "物料入仓明细表生产班次ID"
+    },
+    "matInwarehouseDetMatInwarehouseQuantity" : {
+      "meaning" : "物料入仓明细表任务数量"
+    },
+    "matInwarehouseDetMatInwarehouseReceiptDate" : {
+      "meaning" : "物料入仓明细表单据日期"
+    },
+    "matInwarehouseDetMatInwarehouseReceiptType" : {
+      "meaning" : "物料入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matInwarehouseDetMatInwarehouseRelatedTasksId" : {
+      "meaning" : "物料入仓明细表关联任务id"
+    },
+    "matInwarehouseDetMatInwarehouseSerialNumber" : {
+      "meaning" : "物料入仓明细表顺序号"
+    },
+    "matInwarehouseDetMatInwarehouseSource" : {
+      "meaning" : "物料入仓明细表源"
+    },
+    "matInwarehouseDetMatInwarehouseSourceType" : {
+      "meaning" : "物料入仓明细表来源类型"
+    },
+    "matInwarehouseDetMatInwarehouseState" : {
+      "meaning" : "物料入仓明细表通用状态"
+    },
+    "matInwarehouseDetMatInwarehouseSystemCode" : {
+      "meaning" : "物料入仓明细表系统编码"
+    },
+    "matInwarehouseDetMatInwarehouseTarget" : {
+      "meaning" : "物料入仓明细表目标"
+    },
+    "matInwarehouseDetMatInwarehouseTaskNodeName" : {
+      "meaning" : "物料入仓明细表任务节点名称"
+    },
+    "matInwarehouseDetMatInwarehouseTaskNodeType" : {
+      "meaning" : "物料入仓明细表任务节点类型"
+    },
+    "matInwarehouseDetMatInwarehouseTenantId" : {
+      "meaning" : "物料入仓明细表租户id"
+    },
+    "matInwarehouseDetMatInwarehouseThirdPartyClass" : {
+      "meaning" : "物料入仓明细表第三方分类"
+    },
+    "matInwarehouseDetMatInwarehouseThirdPartyId" : {
+      "meaning" : "物料入仓明细表第三方系统中的唯一ID"
+    },
+    "matInwarehouseDetMatInwarehouseThirdPartyName" : {
+      "meaning" : "物料入仓明细表第三方名称"
+    },
+    "matInwarehouseDetMatInwarehouseToAuditDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToAuditDate"
+    },
+    "matInwarehouseDetMatInwarehouseToBeginTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToBeginTime"
+    },
+    "matInwarehouseDetMatInwarehouseToCreateTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToCreateTime"
+    },
+    "matInwarehouseDetMatInwarehouseToDateExtra1" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDateExtra1"
+    },
+    "matInwarehouseDetMatInwarehouseToDateExtra2" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDateExtra2"
+    },
+    "matInwarehouseDetMatInwarehouseToDateExtra3" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDateExtra3"
+    },
+    "matInwarehouseDetMatInwarehouseToDateExtra4" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDateExtra4"
+    },
+    "matInwarehouseDetMatInwarehouseToDateExtra5" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDateExtra5"
+    },
+    "matInwarehouseDetMatInwarehouseToDeliveryDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToDeliveryDate"
+    },
+    "matInwarehouseDetMatInwarehouseToEndTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToEndTime"
+    },
+    "matInwarehouseDetMatInwarehouseToReceiptDate" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToReceiptDate"
+    },
+    "matInwarehouseDetMatInwarehouseToUpdateTime" : {
+      "meaning" : "matInwarehouseDetMatInwarehouseToUpdateTime"
+    },
+    "matInwarehouseDetMatInwarehouseUnitCode" : {
+      "meaning" : "物料入仓明细表单位id"
+    },
+    "matInwarehouseDetMatInwarehouseUpdateTime" : {
+      "meaning" : "物料入仓明细表更新时间"
+    },
+    "matInwarehouseDetMatInwarehouseUpdater" : {
+      "meaning" : "物料入仓明细表更新人"
+    },
+    "matInwarehouseDetMatInwarehouseUpdaterId" : {
+      "meaning" : "物料入仓明细表更新人ID"
+    },
+    "matInwarehouseDetMatInwarehouseUserCode" : {
+      "meaning" : "物料入仓明细表智能节点的唯一编码"
+    },
+    "matInwarehouseDetMatInwarehouseVarExtra1" : {
+      "meaning" : "物料入仓明细表扩展1"
+    },
+    "matInwarehouseDetMatInwarehouseVarExtra2" : {
+      "meaning" : "物料入仓明细表扩展2"
+    },
+    "matInwarehouseDetMatInwarehouseVarExtra3" : {
+      "meaning" : "物料入仓明细表扩展3"
+    },
+    "matInwarehouseDetMatInwarehouseVarExtra4" : {
+      "meaning" : "物料入仓明细表扩展4"
+    },
+    "matInwarehouseDetMatInwarehouseVarExtra5" : {
+      "meaning" : "物料入仓明细表扩展5"
+    },
+    "matInwarehouseDetMatInwarehouseVersion" : {
+      "meaning" : "物料入仓明细表版本号"
+    },
+    "matInwarehouseDetMaterialId" : {
+      "meaning" : "物料入仓明细表物料id"
+    },
+    "matInwarehouseDetName" : {
+      "meaning" : "物料入仓明细表智能节点名"
+    },
+    "matInwarehouseDetNameCodeSearch" : {
+      "meaning" : "物料入仓明细表name、user_code模糊搜索"
+    },
+    "matInwarehouseDetNumberExtra1" : {
+      "meaning" : "物料入仓明细表扩展数量1"
+    },
+    "matInwarehouseDetNumberExtra2" : {
+      "meaning" : "物料入仓明细表扩展数量2"
+    },
+    "matInwarehouseDetNumberExtra3" : {
+      "meaning" : "物料入仓明细表扩展数量3"
+    },
+    "matInwarehouseDetNumberExtra4" : {
+      "meaning" : "物料入仓明细表扩展数量4"
+    },
+    "matInwarehouseDetNumberExtra5" : {
+      "meaning" : "物料入仓明细表扩展数量5"
+    },
+    "matInwarehouseDetParentId" : {
+      "meaning" : "物料入仓明细表父节点ID"
+    },
+    "matInwarehouseDetPlannedOutputQuantity" : {
+      "meaning" : "物料入仓明细表计划产出数量"
+    },
+    "matInwarehouseDetPlannedTimeRequired" : {
+      "meaning" : "物料入仓明细表计划需时(小时)"
+    },
+    "matInwarehouseDetPrintTimes" : {
+      "meaning" : "物料入仓明细表打印次数"
+    },
+    "matInwarehouseDetPriority" : {
+      "meaning" : "物料入仓明细表优先级"
+    },
+    "matInwarehouseDetProcessInstanceId" : {
+      "meaning" : "物料入仓明细表流程实例ID"
+    },
+    "matInwarehouseDetProductionProcessesTypeId" : {
+      "meaning" : "物料入仓明细表工序类型ID"
+    },
+    "matInwarehouseDetProductionShiftId" : {
+      "meaning" : "物料入仓明细表生产班次ID"
+    },
+    "matInwarehouseDetQuantity" : {
+      "meaning" : "物料入仓明细表任务数量"
+    },
+    "matInwarehouseDetQuotationUnitPriceIncludingTax" : {
+      "meaning" : "物料入仓明细表报价单价（含税）"
+    },
+    "matInwarehouseDetQuotationUnitPriceWithoutTax" : {
+      "meaning" : "物料入仓明细表报价单价（不含税）"
+    },
+    "matInwarehouseDetReceiptDate" : {
+      "meaning" : "物料入仓明细表单据日期"
+    },
+    "matInwarehouseDetReceiptType" : {
+      "meaning" : "物料入仓明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "matInwarehouseDetRelatedTasksId" : {
+      "meaning" : "物料入仓明细表关联任务id"
+    },
+    "matInwarehouseDetSerialNumber" : {
+      "meaning" : "物料入仓明细表顺序号"
+    },
+    "matInwarehouseDetSettlementTotalAmount" : {
+      "meaning" : "物料入仓明细表结算总金额"
+    },
+    "matInwarehouseDetSettlementUnitPrice" : {
+      "meaning" : "物料入仓明细表结算单价"
+    },
+    "matInwarehouseDetSource" : {
+      "meaning" : "物料入仓明细表源"
+    },
+    "matInwarehouseDetSourceType" : {
+      "meaning" : "物料入仓明细表来源类型"
+    },
+    "matInwarehouseDetState" : {
+      "meaning" : "物料入仓明细表通用状态"
+    },
+    "matInwarehouseDetSystemCode" : {
+      "meaning" : "物料入仓明细表系统编码"
+    },
+    "matInwarehouseDetTarget" : {
+      "meaning" : "物料入仓明细表目标"
+    },
+    "matInwarehouseDetTaskNodeName" : {
+      "meaning" : "物料入仓明细表任务节点名称"
+    },
+    "matInwarehouseDetTaskNodeType" : {
+      "meaning" : "物料入仓明细表任务节点类型"
+    },
+    "matInwarehouseDetTenantId" : {
+      "meaning" : "物料入仓明细表租户id"
+    },
+    "matInwarehouseDetThirdPartyClass" : {
+      "meaning" : "物料入仓明细表第三方分类"
+    },
+    "matInwarehouseDetThirdPartyId" : {
+      "meaning" : "物料入仓明细表第三方系统中的唯一ID"
+    },
+    "matInwarehouseDetThirdPartyName" : {
+      "meaning" : "物料入仓明细表第三方名称"
+    },
+    "matInwarehouseDetToAuditDate" : {
+      "meaning" : "matInwarehouseDetToAuditDate"
+    },
+    "matInwarehouseDetToBeginTime" : {
+      "meaning" : "matInwarehouseDetToBeginTime"
+    },
+    "matInwarehouseDetToCreateTime" : {
+      "meaning" : "matInwarehouseDetToCreateTime"
+    },
+    "matInwarehouseDetToDateExtra1" : {
+      "meaning" : "matInwarehouseDetToDateExtra1"
+    },
+    "matInwarehouseDetToDateExtra2" : {
+      "meaning" : "matInwarehouseDetToDateExtra2"
+    },
+    "matInwarehouseDetToDateExtra3" : {
+      "meaning" : "matInwarehouseDetToDateExtra3"
+    },
+    "matInwarehouseDetToDateExtra4" : {
+      "meaning" : "matInwarehouseDetToDateExtra4"
+    },
+    "matInwarehouseDetToDateExtra5" : {
+      "meaning" : "matInwarehouseDetToDateExtra5"
+    },
+    "matInwarehouseDetToDeliveryDate" : {
+      "meaning" : "matInwarehouseDetToDeliveryDate"
+    },
+    "matInwarehouseDetToEndTime" : {
+      "meaning" : "matInwarehouseDetToEndTime"
+    },
+    "matInwarehouseDetToReceiptDate" : {
+      "meaning" : "matInwarehouseDetToReceiptDate"
+    },
+    "matInwarehouseDetToUpdateTime" : {
+      "meaning" : "matInwarehouseDetToUpdateTime"
+    },
+    "matInwarehouseDetTotalAmount" : {
+      "meaning" : "物料入仓明细表总金额(不含税)，汇总批次的总价值，不用理会单价。原则：总价值不会变化"
+    },
+    "matInwarehouseDetTotalAmountIncludingTax" : {
+      "meaning" : "物料入仓明细表总金额（含税）"
+    },
+    "matInwarehouseDetTotalAmountWithoutTax" : {
+      "meaning" : "物料入仓明细表总金额（不含税）"
+    },
+    "matInwarehouseDetUnitCode" : {
+      "meaning" : "物料入仓明细表单位id"
+    },
+    "matInwarehouseDetUnitPriceIncludingTax" : {
+      "meaning" : "物料入仓明细表单价（含税）"
+    },
+    "matInwarehouseDetUnitPriceWithoutTax" : {
+      "meaning" : "物料入仓明细表单价（不含税）"
+    },
+    "matInwarehouseDetUpdateTime" : {
+      "meaning" : "物料入仓明细表更新时间"
+    },
+    "matInwarehouseDetUpdater" : {
+      "meaning" : "物料入仓明细表更新人"
+    },
+    "matInwarehouseDetUpdaterId" : {
+      "meaning" : "物料入仓明细表更新人ID"
+    },
+    "matInwarehouseDetUserCode" : {
+      "meaning" : "物料入仓明细表智能节点的唯一编码"
+    },
+    "matInwarehouseDetVarExtra1" : {
+      "meaning" : "物料入仓明细表扩展1"
+    },
+    "matInwarehouseDetVarExtra2" : {
+      "meaning" : "物料入仓明细表扩展2"
+    },
+    "matInwarehouseDetVarExtra3" : {
+      "meaning" : "物料入仓明细表扩展3"
+    },
+    "matInwarehouseDetVarExtra4" : {
+      "meaning" : "物料入仓明细表扩展4"
+    },
+    "matInwarehouseDetVarExtra5" : {
+      "meaning" : "物料入仓明细表扩展5"
+    },
+    "matInwarehouseDetVersion" : {
+      "meaning" : "物料入仓明细表版本号"
+    },
+    "matInwarehouseDetWarehouseSpaceId" : {
+      "meaning" : "物料入仓明细表仓空间id"
+    }
+  }
+}

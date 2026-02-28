@@ -1,0 +1,235 @@
+{
+      "api_name": "/material-unit-type/findList",
+      "table_name": "单位类型",
+      "request": {
+        "matUnitTypeClazz": "MATERIAL_UNIT_TYPE"
+      },
+      "mainTabClazz": "MATERIAL_UNIT_TYPE",
+      "response": {
+        "matUnitTypeApplicationId": {
+          "meaning": "单位类型应用ID"
+        },
+        "matUnitTypeAuditDate": {
+          "meaning": "matUnitTypeAuditDate"
+        },
+        "matUnitTypeAuditStatus": {
+          "meaning": "单位类型审核状态"
+        },
+        "matUnitTypeBizVersion": {
+          "meaning": "单位类型业务自定义版本号"
+        },
+        "matUnitTypeBriefName": {
+          "meaning": "单位类型简称"
+        },
+        "matUnitTypeBusDivisId": {
+          "meaning": "单位类型事业部id"
+        },
+        "matUnitTypeClazz": {
+          "meaning": "单位类型子类 类名（表和类一一对应）"
+        },
+        "matUnitTypeComment": {
+          "meaning": "单位类型评论"
+        },
+        "matUnitTypeCreateTime": {
+          "meaning": "matUnitTypeCreateTime"
+        },
+        "matUnitTypeCreator": {
+          "meaning": "单位类型创建人"
+        },
+        "matUnitTypeCreatorId": {
+          "meaning": "单位类型创建人ID"
+        },
+        "matUnitTypeDateExtra1": {
+          "meaning": "matUnitTypeDateExtra1"
+        },
+        "matUnitTypeDateExtra2": {
+          "meaning": "matUnitTypeDateExtra2"
+        },
+        "matUnitTypeDateExtra3": {
+          "meaning": "matUnitTypeDateExtra3"
+        },
+        "matUnitTypeDateExtra4": {
+          "meaning": "matUnitTypeDateExtra4"
+        },
+        "matUnitTypeDateExtra5": {
+          "meaning": "matUnitTypeDateExtra5"
+        },
+        "matUnitTypeDefaultType": {
+          "meaning": "单位类型智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matUnitTypeDefaultUnitId": {
+          "meaning": "matUnitTypeDefaultUnitId"
+        },
+        "matUnitTypeDescription": {
+          "meaning": "单位类型描述"
+        },
+        "matUnitTypeEngName": {
+          "meaning": "单位类型英文名称"
+        },
+        "matUnitTypeExtension": {
+          "meaning": "单位类型扩展数据"
+        },
+        "matUnitTypeExternalState": {
+          "meaning": "单位类型上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matUnitTypeFlags": {
+          "meaning": "单位类型63位标志位"
+        },
+        "matUnitTypeFromAuditDate": {
+          "meaning": "matUnitTypeFromAuditDate"
+        },
+        "matUnitTypeFromCreateTime": {
+          "meaning": "matUnitTypeFromCreateTime"
+        },
+        "matUnitTypeFromDateExtra1": {
+          "meaning": "matUnitTypeFromDateExtra1"
+        },
+        "matUnitTypeFromDateExtra2": {
+          "meaning": "matUnitTypeFromDateExtra2"
+        },
+        "matUnitTypeFromDateExtra3": {
+          "meaning": "matUnitTypeFromDateExtra3"
+        },
+        "matUnitTypeFromDateExtra4": {
+          "meaning": "matUnitTypeFromDateExtra4"
+        },
+        "matUnitTypeFromDateExtra5": {
+          "meaning": "matUnitTypeFromDateExtra5"
+        },
+        "matUnitTypeFromUpdateTime": {
+          "meaning": "matUnitTypeFromUpdateTime"
+        },
+        "matUnitTypeGroovyScript": {
+          "meaning": "单位类型groovy脚本"
+        },
+        "matUnitTypeGropeCode": {
+          "meaning": "单位类型搜索码"
+        },
+        "matUnitTypeId": {
+          "meaning": "matUnitTypeId"
+        },
+        "matUnitTypeInUsed": {
+          "meaning": "单位类型是否被使用"
+        },
+        "matUnitTypeIsBanned": {
+          "meaning": "单位类型是否被禁用"
+        },
+        "matUnitTypeIsDeleted": {
+          "meaning": "单位类型是否被删除"
+        },
+        "matUnitTypeIsMainFlow": {
+          "meaning": "单位类型是否是主流程"
+        },
+        "matUnitTypeIsolation": {
+          "meaning": "单位类型智能节点数据隔离标识"
+        },
+        "matUnitTypeJsScript": {
+          "meaning": "单位类型js脚本"
+        },
+        "matUnitTypeName": {
+          "meaning": "单位类型智能节点名"
+        },
+        "matUnitTypeNameCodeSearch": {
+          "meaning": "单位类型name、user_code模糊搜索"
+        },
+        "matUnitTypeNumberExtra1": {
+          "meaning": "单位类型扩展数量1"
+        },
+        "matUnitTypeNumberExtra2": {
+          "meaning": "单位类型扩展数量2"
+        },
+        "matUnitTypeNumberExtra3": {
+          "meaning": "单位类型扩展数量3"
+        },
+        "matUnitTypeNumberExtra4": {
+          "meaning": "单位类型扩展数量4"
+        },
+        "matUnitTypeNumberExtra5": {
+          "meaning": "单位类型扩展数量5"
+        },
+        "matUnitTypeParentId": {
+          "meaning": "单位类型父节点ID"
+        },
+        "matUnitTypeProcessInstanceId": {
+          "meaning": "单位类型流程实例ID"
+        },
+        "matUnitTypeSerialNumber": {
+          "meaning": "单位类型顺序号"
+        },
+        "matUnitTypeState": {
+          "meaning": "单位类型通用状态"
+        },
+        "matUnitTypeSystemCode": {
+          "meaning": "单位类型系统编码"
+        },
+        "matUnitTypeTaskNodeName": {
+          "meaning": "单位类型任务节点名称"
+        },
+        "matUnitTypeTenantId": {
+          "meaning": "matUnitTypeTenantId"
+        },
+        "matUnitTypeThirdPartyClass": {
+          "meaning": "单位类型第三方分类"
+        },
+        "matUnitTypeThirdPartyId": {
+          "meaning": "单位类型第三方系统中的唯一ID"
+        },
+        "matUnitTypeThirdPartyName": {
+          "meaning": "单位类型第三方名称"
+        },
+        "matUnitTypeToAuditDate": {
+          "meaning": "matUnitTypeToAuditDate"
+        },
+        "matUnitTypeToCreateTime": {
+          "meaning": "matUnitTypeToCreateTime"
+        },
+        "matUnitTypeToDateExtra1": {
+          "meaning": "matUnitTypeToDateExtra1"
+        },
+        "matUnitTypeToDateExtra2": {
+          "meaning": "matUnitTypeToDateExtra2"
+        },
+        "matUnitTypeToDateExtra3": {
+          "meaning": "matUnitTypeToDateExtra3"
+        },
+        "matUnitTypeToDateExtra4": {
+          "meaning": "matUnitTypeToDateExtra4"
+        },
+        "matUnitTypeToDateExtra5": {
+          "meaning": "matUnitTypeToDateExtra5"
+        },
+        "matUnitTypeToUpdateTime": {
+          "meaning": "matUnitTypeToUpdateTime"
+        },
+        "matUnitTypeUpdateTime": {
+          "meaning": "matUnitTypeUpdateTime"
+        },
+        "matUnitTypeUpdater": {
+          "meaning": "单位类型更新人"
+        },
+        "matUnitTypeUpdaterId": {
+          "meaning": "单位类型更新人ID"
+        },
+        "matUnitTypeUserCode": {
+          "meaning": "单位类型智能节点的唯一编码"
+        },
+        "matUnitTypeVarExtra1": {
+          "meaning": "单位类型扩展1"
+        },
+        "matUnitTypeVarExtra2": {
+          "meaning": "单位类型扩展2"
+        },
+        "matUnitTypeVarExtra3": {
+          "meaning": "单位类型扩展3"
+        },
+        "matUnitTypeVarExtra4": {
+          "meaning": "单位类型扩展4"
+        },
+        "matUnitTypeVarExtra5": {
+          "meaning": "单位类型扩展5"
+        },
+        "matUnitTypeVersion": {
+          "meaning": "单位类型版本号"
+        }
+      }
+    }

@@ -1,0 +1,377 @@
+{
+  "api_name" : "/fin-outstorage/findList",
+  "table_name" : "成品出库表",
+  "request" : {
+    "finOutstorageClazz" : "FIN_OUTSTORAGE"
+  },
+  "mainTabClazz" : "FIN_OUTSTORAGE",
+  "response" : {
+    "finOutstorageActualTimeRequired" : {
+      "meaning" : "成品出库表实际需时(小时)"
+    },
+    "finOutstorageAdjustmentTimeRequired" : {
+      "meaning" : "成品出库表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "finOutstorageApplicationId" : {
+      "meaning" : "成品出库表应用ID"
+    },
+    "finOutstorageAuditDate" : {
+      "meaning" : "成品出库表审核时间"
+    },
+    "finOutstorageAuditStatus" : {
+      "meaning" : "成品出库表审核状态"
+    },
+    "finOutstorageAvailableScheduleId" : {
+      "meaning" : "成品出库表可用日程id"
+    },
+    "finOutstorageBeginTime" : {
+      "meaning" : "成品出库表开始时间"
+    },
+    "finOutstorageBizVersion" : {
+      "meaning" : "成品出库表业务自定义版本号"
+    },
+    "finOutstorageBriefName" : {
+      "meaning" : "成品出库表简称"
+    },
+    "finOutstorageBusDivisId" : {
+      "meaning" : "成品出库表事业部id"
+    },
+    "finOutstorageClazz" : {
+      "meaning" : "成品出库表子类 类名（表和类一一对应）"
+    },
+    "finOutstorageClosedReason" : {
+      "meaning" : "成品出库表结案原因"
+    },
+    "finOutstorageClosedStatus" : {
+      "meaning" : "成品出库表结案状态"
+    },
+    "finOutstorageComment" : {
+      "meaning" : "成品出库表评论"
+    },
+    "finOutstorageCompleteQuantity" : {
+      "meaning" : "成品出库表完成数量"
+    },
+    "finOutstorageCompleteStatus" : {
+      "meaning" : "成品出库表完成状态"
+    },
+    "finOutstorageCreateTime" : {
+      "meaning" : "成品出库表创建时间"
+    },
+    "finOutstorageCreator" : {
+      "meaning" : "成品出库表创建人"
+    },
+    "finOutstorageCreatorId" : {
+      "meaning" : "成品出库表创建人ID"
+    },
+    "finOutstorageDateExtra1" : {
+      "meaning" : "成品出库表扩展时间1"
+    },
+    "finOutstorageDateExtra2" : {
+      "meaning" : "成品出库表扩展时间2"
+    },
+    "finOutstorageDateExtra3" : {
+      "meaning" : "成品出库表扩展时间3"
+    },
+    "finOutstorageDateExtra4" : {
+      "meaning" : "成品出库表扩展时间4"
+    },
+    "finOutstorageDateExtra5" : {
+      "meaning" : "成品出库表扩展时间5"
+    },
+    "finOutstorageDefaultType" : {
+      "meaning" : "成品出库表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "finOutstorageDeliveryDate" : {
+      "meaning" : "成品出库表交货日期"
+    },
+    "finOutstorageDepId" : {
+      "meaning" : "成品出库表部门id"
+    },
+    "finOutstorageDescription" : {
+      "meaning" : "成品出库表描述"
+    },
+    "finOutstorageEndTime" : {
+      "meaning" : "成品出库表结束时间"
+    },
+    "finOutstorageEndTimeRequired" : {
+      "meaning" : "成品出库表最后需时(小时)"
+    },
+    "finOutstorageEngName" : {
+      "meaning" : "成品出库表英文名称"
+    },
+    "finOutstorageEquipmentId" : {
+      "meaning" : "成品出库表设备id"
+    },
+    "finOutstorageExchangeRateId" : {
+      "meaning" : "成品出库表币种汇率id"
+    },
+    "finOutstorageExtension" : {
+      "meaning" : "成品出库表扩展数据"
+    },
+    "finOutstorageExternalState" : {
+      "meaning" : "成品出库表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "finOutstorageFilterClazz" : {
+      "meaning" : "成品出库表冗余字段用于筛选"
+    },
+    "finOutstorageFlags" : {
+      "meaning" : "成品出库表63位标志位"
+    },
+    "finOutstorageFromAuditDate" : {
+      "meaning" : "finOutstorageFromAuditDate"
+    },
+    "finOutstorageFromBeginTime" : {
+      "meaning" : "finOutstorageFromBeginTime"
+    },
+    "finOutstorageFromCreateTime" : {
+      "meaning" : "finOutstorageFromCreateTime"
+    },
+    "finOutstorageFromDateExtra1" : {
+      "meaning" : "finOutstorageFromDateExtra1"
+    },
+    "finOutstorageFromDateExtra2" : {
+      "meaning" : "finOutstorageFromDateExtra2"
+    },
+    "finOutstorageFromDateExtra3" : {
+      "meaning" : "finOutstorageFromDateExtra3"
+    },
+    "finOutstorageFromDateExtra4" : {
+      "meaning" : "finOutstorageFromDateExtra4"
+    },
+    "finOutstorageFromDateExtra5" : {
+      "meaning" : "finOutstorageFromDateExtra5"
+    },
+    "finOutstorageFromDeliveryDate" : {
+      "meaning" : "finOutstorageFromDeliveryDate"
+    },
+    "finOutstorageFromEndTime" : {
+      "meaning" : "finOutstorageFromEndTime"
+    },
+    "finOutstorageFromReceiptDate" : {
+      "meaning" : "finOutstorageFromReceiptDate"
+    },
+    "finOutstorageFromUpdateTime" : {
+      "meaning" : "finOutstorageFromUpdateTime"
+    },
+    "finOutstorageFscType" : {
+      "meaning" : "成品出库表FSC声明"
+    },
+    "finOutstorageGenerativePeople" : {
+      "meaning" : "成品出库表下发人"
+    },
+    "finOutstorageGenerativeState" : {
+      "meaning" : "成品出库表下发状态"
+    },
+    "finOutstorageGroovyScript" : {
+      "meaning" : "成品出库表groovy脚本"
+    },
+    "finOutstorageGropeCode" : {
+      "meaning" : "成品出库表搜索码"
+    },
+    "finOutstorageId" : {
+      "meaning" : "成品出库表PK",
+      "is_primary" : true
+    },
+    "finOutstorageInUsed" : {
+      "meaning" : "成品出库表是否被使用"
+    },
+    "finOutstorageInvTypeTaxRateId" : {
+      "meaning" : "成品出库表发票税率id"
+    },
+    "finOutstorageIsBanned" : {
+      "meaning" : "成品出库表是否被禁用"
+    },
+    "finOutstorageIsDeleted" : {
+      "meaning" : "成品出库表是否被删除"
+    },
+    "finOutstorageIsLeaf" : {
+      "meaning" : "成品出库表是否叶子节点"
+    },
+    "finOutstorageIsMainFlow" : {
+      "meaning" : "成品出库表是否是主流程"
+    },
+    "finOutstorageIsManualModificationDate" : {
+      "meaning" : "成品出库表是否手动修改计划生产时间"
+    },
+    "finOutstorageIsolation" : {
+      "meaning" : "成品出库表智能节点数据隔离标识"
+    },
+    "finOutstorageJsScript" : {
+      "meaning" : "成品出库表js脚本"
+    },
+    "finOutstorageMaterialId" : {
+      "meaning" : "成品出库表物料id"
+    },
+    "finOutstorageName" : {
+      "meaning" : "成品出库表智能节点名"
+    },
+    "finOutstorageNameCodeSearch" : {
+      "meaning" : "成品出库表name、user_code模糊搜索"
+    },
+    "finOutstorageNumberExtra1" : {
+      "meaning" : "成品出库表扩展数量1"
+    },
+    "finOutstorageNumberExtra2" : {
+      "meaning" : "成品出库表扩展数量2"
+    },
+    "finOutstorageNumberExtra3" : {
+      "meaning" : "成品出库表扩展数量3"
+    },
+    "finOutstorageNumberExtra4" : {
+      "meaning" : "成品出库表扩展数量4"
+    },
+    "finOutstorageNumberExtra5" : {
+      "meaning" : "成品出库表扩展数量5"
+    },
+    "finOutstorageOrgId" : {
+      "meaning" : "成品出库表机构id(客户/供应商)"
+    },
+    "finOutstorageParentId" : {
+      "meaning" : "成品出库表父节点ID"
+    },
+    "finOutstoragePlannedOutputQuantity" : {
+      "meaning" : "成品出库表计划产出数量"
+    },
+    "finOutstoragePlannedTimeRequired" : {
+      "meaning" : "成品出库表计划需时(小时)"
+    },
+    "finOutstoragePrintTimes" : {
+      "meaning" : "成品出库表打印次数"
+    },
+    "finOutstoragePriority" : {
+      "meaning" : "成品出库表优先级"
+    },
+    "finOutstorageProcessInstanceId" : {
+      "meaning" : "成品出库表流程实例ID"
+    },
+    "finOutstorageProductionProcessesTypeId" : {
+      "meaning" : "成品出库表工序类型ID"
+    },
+    "finOutstorageProductionShiftId" : {
+      "meaning" : "成品出库表生产班次ID"
+    },
+    "finOutstorageQuantity" : {
+      "meaning" : "成品出库表任务数量"
+    },
+    "finOutstorageReceiptDate" : {
+      "meaning" : "成品出库表单据日期"
+    },
+    "finOutstorageReceiptType" : {
+      "meaning" : "成品出库表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "finOutstorageRelatedTasksId" : {
+      "meaning" : "成品出库表关联任务id"
+    },
+    "finOutstorageSerialNumber" : {
+      "meaning" : "成品出库表顺序号"
+    },
+    "finOutstorageSettMethod" : {
+      "meaning" : "成品出库表结算方式"
+    },
+    "finOutstorageSettOrgId" : {
+      "meaning" : "成品出库表结算机构id(客户/供应商)"
+    },
+    "finOutstorageSource" : {
+      "meaning" : "成品出库表源"
+    },
+    "finOutstorageSourceType" : {
+      "meaning" : "成品出库表来源类型"
+    },
+    "finOutstorageStaffId" : {
+      "meaning" : "成品出库表员工id(入/出库员工)"
+    },
+    "finOutstorageState" : {
+      "meaning" : "成品出库表通用状态"
+    },
+    "finOutstorageSystemCode" : {
+      "meaning" : "成品出库表系统编码"
+    },
+    "finOutstorageTarget" : {
+      "meaning" : "成品出库表目标"
+    },
+    "finOutstorageTaskNodeName" : {
+      "meaning" : "成品出库表任务节点名称"
+    },
+    "finOutstorageTenantId" : {
+      "meaning" : "成品出库表租户id"
+    },
+    "finOutstorageThirdPartyClass" : {
+      "meaning" : "成品出库表第三方分类"
+    },
+    "finOutstorageThirdPartyId" : {
+      "meaning" : "成品出库表第三方系统中的唯一ID"
+    },
+    "finOutstorageThirdPartyName" : {
+      "meaning" : "成品出库表第三方名称"
+    },
+    "finOutstorageToAuditDate" : {
+      "meaning" : "finOutstorageToAuditDate"
+    },
+    "finOutstorageToBeginTime" : {
+      "meaning" : "finOutstorageToBeginTime"
+    },
+    "finOutstorageToCreateTime" : {
+      "meaning" : "finOutstorageToCreateTime"
+    },
+    "finOutstorageToDateExtra1" : {
+      "meaning" : "finOutstorageToDateExtra1"
+    },
+    "finOutstorageToDateExtra2" : {
+      "meaning" : "finOutstorageToDateExtra2"
+    },
+    "finOutstorageToDateExtra3" : {
+      "meaning" : "finOutstorageToDateExtra3"
+    },
+    "finOutstorageToDateExtra4" : {
+      "meaning" : "finOutstorageToDateExtra4"
+    },
+    "finOutstorageToDateExtra5" : {
+      "meaning" : "finOutstorageToDateExtra5"
+    },
+    "finOutstorageToDeliveryDate" : {
+      "meaning" : "finOutstorageToDeliveryDate"
+    },
+    "finOutstorageToEndTime" : {
+      "meaning" : "finOutstorageToEndTime"
+    },
+    "finOutstorageToReceiptDate" : {
+      "meaning" : "finOutstorageToReceiptDate"
+    },
+    "finOutstorageToUpdateTime" : {
+      "meaning" : "finOutstorageToUpdateTime"
+    },
+    "finOutstorageUnitCode" : {
+      "meaning" : "成品出库表单位id"
+    },
+    "finOutstorageUpdateTime" : {
+      "meaning" : "成品出库表更新时间"
+    },
+    "finOutstorageUpdater" : {
+      "meaning" : "成品出库表更新人"
+    },
+    "finOutstorageUpdaterId" : {
+      "meaning" : "成品出库表更新人ID"
+    },
+    "finOutstorageUserCode" : {
+      "meaning" : "成品出库表智能节点的唯一编码"
+    },
+    "finOutstorageVarExtra1" : {
+      "meaning" : "成品出库表扩展1"
+    },
+    "finOutstorageVarExtra2" : {
+      "meaning" : "成品出库表扩展2"
+    },
+    "finOutstorageVarExtra3" : {
+      "meaning" : "成品出库表扩展3"
+    },
+    "finOutstorageVarExtra4" : {
+      "meaning" : "成品出库表扩展4"
+    },
+    "finOutstorageVarExtra5" : {
+      "meaning" : "成品出库表扩展5"
+    },
+    "finOutstorageVersion" : {
+      "meaning" : "成品出库表版本号"
+    }
+  }
+}

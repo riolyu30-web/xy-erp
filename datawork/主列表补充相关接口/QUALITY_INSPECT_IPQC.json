@@ -1,0 +1,365 @@
+{
+  "api_name" : "/quality-inspect-ipqc/findList",
+  "table_name" : "IPQC",
+  "request" : {
+    "qualityInspectIpqcClazz" : "QUALITY_INSPECT_IPQC"
+  },
+  "mainTabClazz" : "QUALITY_INSPECT_IPQC",
+  "response" : {
+    "qualityInspectIpqcActualTimeRequired" : {
+      "meaning" : "IPQC实际需时(小时)"
+    },
+    "qualityInspectIpqcAdjustmentTimeRequired" : {
+      "meaning" : "IPQC调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "qualityInspectIpqcApplicationId" : {
+      "meaning" : "IPQC应用ID"
+    },
+    "qualityInspectIpqcAuditDate" : {
+      "meaning" : "IPQC审核时间"
+    },
+    "qualityInspectIpqcAuditStatus" : {
+      "meaning" : "IPQC审核状态"
+    },
+    "qualityInspectIpqcAvailableScheduleId" : {
+      "meaning" : "IPQC可用日程id"
+    },
+    "qualityInspectIpqcBeginTime" : {
+      "meaning" : "IPQC开始时间"
+    },
+    "qualityInspectIpqcBizVersion" : {
+      "meaning" : "IPQC业务自定义版本号"
+    },
+    "qualityInspectIpqcBriefName" : {
+      "meaning" : "IPQC简称"
+    },
+    "qualityInspectIpqcBusDivisId" : {
+      "meaning" : "IPQC事业部id"
+    },
+    "qualityInspectIpqcClazz" : {
+      "meaning" : "IPQC子类 类名（表和类一一对应）"
+    },
+    "qualityInspectIpqcClosedReason" : {
+      "meaning" : "IPQC结案原因"
+    },
+    "qualityInspectIpqcClosedStatus" : {
+      "meaning" : "IPQC结案状态"
+    },
+    "qualityInspectIpqcComment" : {
+      "meaning" : "IPQC评论"
+    },
+    "qualityInspectIpqcCompleteQuantity" : {
+      "meaning" : "IPQC完成数量"
+    },
+    "qualityInspectIpqcCompleteStatus" : {
+      "meaning" : "IPQC完成状态"
+    },
+    "qualityInspectIpqcCreateTime" : {
+      "meaning" : "IPQC创建时间"
+    },
+    "qualityInspectIpqcCreator" : {
+      "meaning" : "IPQC创建人"
+    },
+    "qualityInspectIpqcCreatorId" : {
+      "meaning" : "IPQC创建人ID"
+    },
+    "qualityInspectIpqcDateExtra1" : {
+      "meaning" : "IPQC扩展时间1"
+    },
+    "qualityInspectIpqcDateExtra2" : {
+      "meaning" : "IPQC扩展时间2"
+    },
+    "qualityInspectIpqcDateExtra3" : {
+      "meaning" : "IPQC扩展时间3"
+    },
+    "qualityInspectIpqcDateExtra4" : {
+      "meaning" : "IPQC扩展时间4"
+    },
+    "qualityInspectIpqcDateExtra5" : {
+      "meaning" : "IPQC扩展时间5"
+    },
+    "qualityInspectIpqcDefaultType" : {
+      "meaning" : "IPQC智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "qualityInspectIpqcDeliveryDate" : {
+      "meaning" : "IPQC交货日期"
+    },
+    "qualityInspectIpqcDescription" : {
+      "meaning" : "IPQC描述"
+    },
+    "qualityInspectIpqcEndTime" : {
+      "meaning" : "IPQC结束时间"
+    },
+    "qualityInspectIpqcEndTimeRequired" : {
+      "meaning" : "IPQC最后需时(小时)"
+    },
+    "qualityInspectIpqcEngName" : {
+      "meaning" : "IPQC英文名称"
+    },
+    "qualityInspectIpqcEquipmentId" : {
+      "meaning" : "IPQC设备id"
+    },
+    "qualityInspectIpqcExchangeRateId" : {
+      "meaning" : "IPQC币种汇率id"
+    },
+    "qualityInspectIpqcExtension" : {
+      "meaning" : "IPQC扩展数据"
+    },
+    "qualityInspectIpqcExternalState" : {
+      "meaning" : "IPQC上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "qualityInspectIpqcFilterClazz" : {
+      "meaning" : "IPQC冗余字段用于筛选"
+    },
+    "qualityInspectIpqcFlags" : {
+      "meaning" : "IPQC63位标志位"
+    },
+    "qualityInspectIpqcFromAuditDate" : {
+      "meaning" : "qualityInspectIpqcFromAuditDate"
+    },
+    "qualityInspectIpqcFromBeginTime" : {
+      "meaning" : "qualityInspectIpqcFromBeginTime"
+    },
+    "qualityInspectIpqcFromCreateTime" : {
+      "meaning" : "qualityInspectIpqcFromCreateTime"
+    },
+    "qualityInspectIpqcFromDateExtra1" : {
+      "meaning" : "qualityInspectIpqcFromDateExtra1"
+    },
+    "qualityInspectIpqcFromDateExtra2" : {
+      "meaning" : "qualityInspectIpqcFromDateExtra2"
+    },
+    "qualityInspectIpqcFromDateExtra3" : {
+      "meaning" : "qualityInspectIpqcFromDateExtra3"
+    },
+    "qualityInspectIpqcFromDateExtra4" : {
+      "meaning" : "qualityInspectIpqcFromDateExtra4"
+    },
+    "qualityInspectIpqcFromDateExtra5" : {
+      "meaning" : "qualityInspectIpqcFromDateExtra5"
+    },
+    "qualityInspectIpqcFromDeliveryDate" : {
+      "meaning" : "qualityInspectIpqcFromDeliveryDate"
+    },
+    "qualityInspectIpqcFromEndTime" : {
+      "meaning" : "qualityInspectIpqcFromEndTime"
+    },
+    "qualityInspectIpqcFromReceiptDate" : {
+      "meaning" : "qualityInspectIpqcFromReceiptDate"
+    },
+    "qualityInspectIpqcFromUpdateTime" : {
+      "meaning" : "qualityInspectIpqcFromUpdateTime"
+    },
+    "qualityInspectIpqcFscType" : {
+      "meaning" : "IPQCFSC声明"
+    },
+    "qualityInspectIpqcGenerativePeople" : {
+      "meaning" : "IPQC下发人"
+    },
+    "qualityInspectIpqcGenerativeState" : {
+      "meaning" : "IPQC下发状态"
+    },
+    "qualityInspectIpqcGroovyScript" : {
+      "meaning" : "IPQCgroovy脚本"
+    },
+    "qualityInspectIpqcGropeCode" : {
+      "meaning" : "IPQC搜索码"
+    },
+    "qualityInspectIpqcId" : {
+      "meaning" : "IPQCPK",
+      "is_primary" : true
+    },
+    "qualityInspectIpqcInUsed" : {
+      "meaning" : "IPQC是否被使用"
+    },
+    "qualityInspectIpqcInvTypeTaxRateId" : {
+      "meaning" : "IPQC发票税率id"
+    },
+    "qualityInspectIpqcIsBanned" : {
+      "meaning" : "IPQC是否被禁用"
+    },
+    "qualityInspectIpqcIsDeleted" : {
+      "meaning" : "IPQC是否被删除"
+    },
+    "qualityInspectIpqcIsLeaf" : {
+      "meaning" : "IPQC是否叶子节点"
+    },
+    "qualityInspectIpqcIsMainFlow" : {
+      "meaning" : "IPQC是否是主流程"
+    },
+    "qualityInspectIpqcIsManualModificationDate" : {
+      "meaning" : "IPQC是否手动修改计划生产时间"
+    },
+    "qualityInspectIpqcIsolation" : {
+      "meaning" : "IPQC智能节点数据隔离标识"
+    },
+    "qualityInspectIpqcJsScript" : {
+      "meaning" : "IPQCjs脚本"
+    },
+    "qualityInspectIpqcMaterialId" : {
+      "meaning" : "IPQC物料id"
+    },
+    "qualityInspectIpqcName" : {
+      "meaning" : "IPQC智能节点名"
+    },
+    "qualityInspectIpqcNameCodeSearch" : {
+      "meaning" : "IPQCname、user_code模糊搜索"
+    },
+    "qualityInspectIpqcNumberExtra1" : {
+      "meaning" : "IPQC扩展数量1"
+    },
+    "qualityInspectIpqcNumberExtra2" : {
+      "meaning" : "IPQC扩展数量2"
+    },
+    "qualityInspectIpqcNumberExtra3" : {
+      "meaning" : "IPQC扩展数量3"
+    },
+    "qualityInspectIpqcNumberExtra4" : {
+      "meaning" : "IPQC扩展数量4"
+    },
+    "qualityInspectIpqcNumberExtra5" : {
+      "meaning" : "IPQC扩展数量5"
+    },
+    "qualityInspectIpqcParentId" : {
+      "meaning" : "IPQC父节点ID"
+    },
+    "qualityInspectIpqcPlannedOutputQuantity" : {
+      "meaning" : "IPQC计划产出数量"
+    },
+    "qualityInspectIpqcPlannedTimeRequired" : {
+      "meaning" : "IPQC计划需时(小时)"
+    },
+    "qualityInspectIpqcPrcesTypeId" : {
+      "meaning" : "IPQC工序id"
+    },
+    "qualityInspectIpqcPrintTimes" : {
+      "meaning" : "IPQC打印次数"
+    },
+    "qualityInspectIpqcPriority" : {
+      "meaning" : "IPQC优先级"
+    },
+    "qualityInspectIpqcProcessInstanceId" : {
+      "meaning" : "IPQC流程实例ID"
+    },
+    "qualityInspectIpqcProductionProcessesTypeId" : {
+      "meaning" : "IPQC工序类型ID"
+    },
+    "qualityInspectIpqcProductionShiftId" : {
+      "meaning" : "IPQC生产班次ID"
+    },
+    "qualityInspectIpqcQuantity" : {
+      "meaning" : "IPQC任务数量"
+    },
+    "qualityInspectIpqcReceiptDate" : {
+      "meaning" : "IPQC单据日期"
+    },
+    "qualityInspectIpqcReceiptType" : {
+      "meaning" : "IPQC单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "qualityInspectIpqcRelatedTasksId" : {
+      "meaning" : "IPQC关联任务id"
+    },
+    "qualityInspectIpqcSerialNumber" : {
+      "meaning" : "IPQC顺序号"
+    },
+    "qualityInspectIpqcSource" : {
+      "meaning" : "IPQC源"
+    },
+    "qualityInspectIpqcSourceType" : {
+      "meaning" : "IPQC来源类型"
+    },
+    "qualityInspectIpqcState" : {
+      "meaning" : "IPQC通用状态"
+    },
+    "qualityInspectIpqcSystemCode" : {
+      "meaning" : "IPQC系统编码"
+    },
+    "qualityInspectIpqcTarget" : {
+      "meaning" : "IPQC目标"
+    },
+    "qualityInspectIpqcTaskNodeName" : {
+      "meaning" : "IPQC任务节点名称"
+    },
+    "qualityInspectIpqcTenantId" : {
+      "meaning" : "IPQC租户_id"
+    },
+    "qualityInspectIpqcThirdPartyClass" : {
+      "meaning" : "IPQC第三方分类"
+    },
+    "qualityInspectIpqcThirdPartyId" : {
+      "meaning" : "IPQC第三方系统中的唯一ID"
+    },
+    "qualityInspectIpqcThirdPartyName" : {
+      "meaning" : "IPQC第三方名称"
+    },
+    "qualityInspectIpqcToAuditDate" : {
+      "meaning" : "qualityInspectIpqcToAuditDate"
+    },
+    "qualityInspectIpqcToBeginTime" : {
+      "meaning" : "qualityInspectIpqcToBeginTime"
+    },
+    "qualityInspectIpqcToCreateTime" : {
+      "meaning" : "qualityInspectIpqcToCreateTime"
+    },
+    "qualityInspectIpqcToDateExtra1" : {
+      "meaning" : "qualityInspectIpqcToDateExtra1"
+    },
+    "qualityInspectIpqcToDateExtra2" : {
+      "meaning" : "qualityInspectIpqcToDateExtra2"
+    },
+    "qualityInspectIpqcToDateExtra3" : {
+      "meaning" : "qualityInspectIpqcToDateExtra3"
+    },
+    "qualityInspectIpqcToDateExtra4" : {
+      "meaning" : "qualityInspectIpqcToDateExtra4"
+    },
+    "qualityInspectIpqcToDateExtra5" : {
+      "meaning" : "qualityInspectIpqcToDateExtra5"
+    },
+    "qualityInspectIpqcToDeliveryDate" : {
+      "meaning" : "qualityInspectIpqcToDeliveryDate"
+    },
+    "qualityInspectIpqcToEndTime" : {
+      "meaning" : "qualityInspectIpqcToEndTime"
+    },
+    "qualityInspectIpqcToReceiptDate" : {
+      "meaning" : "qualityInspectIpqcToReceiptDate"
+    },
+    "qualityInspectIpqcToUpdateTime" : {
+      "meaning" : "qualityInspectIpqcToUpdateTime"
+    },
+    "qualityInspectIpqcUnitCode" : {
+      "meaning" : "IPQC单位id"
+    },
+    "qualityInspectIpqcUpdateTime" : {
+      "meaning" : "IPQC更新时间"
+    },
+    "qualityInspectIpqcUpdater" : {
+      "meaning" : "IPQC更新人"
+    },
+    "qualityInspectIpqcUpdaterId" : {
+      "meaning" : "IPQC更新人ID"
+    },
+    "qualityInspectIpqcUserCode" : {
+      "meaning" : "IPQC智能节点的唯一编码"
+    },
+    "qualityInspectIpqcVarExtra1" : {
+      "meaning" : "IPQC扩展1"
+    },
+    "qualityInspectIpqcVarExtra2" : {
+      "meaning" : "IPQC扩展2"
+    },
+    "qualityInspectIpqcVarExtra3" : {
+      "meaning" : "IPQC扩展3"
+    },
+    "qualityInspectIpqcVarExtra4" : {
+      "meaning" : "IPQC扩展4"
+    },
+    "qualityInspectIpqcVarExtra5" : {
+      "meaning" : "IPQC扩展5"
+    },
+    "qualityInspectIpqcVersion" : {
+      "meaning" : "IPQC版本号"
+    }
+  }
+}

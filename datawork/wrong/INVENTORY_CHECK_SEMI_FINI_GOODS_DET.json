@@ -1,0 +1,1098 @@
+{
+  "api_name" : "/inv-check-semi-fini-goods-det/findList",
+  "table_name" : "半成品盘点明细表",
+  "request" : {
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsClazz" : "INVENTORY_CHECK_SEMI_FINI_GOODS",
+    "invCheckSemiFiniGoodsDetClazz" : "INVENTORY_CHECK_SEMI_FINI_GOODS_DET"
+  },
+  "mainTabClazz" : "INVENTORY_CHECK_SEMI_FINI_GOODS_DET",
+  "response" : {
+    "IFiniGoodsDetInvCheckSemiFiniGoodsActualTimeRequired" : {
+      "meaning" : "半成品盘点明实际需时(小时)"
+    },
+    "IFiniGoodsDetInvCheckSemiFiniGoodsInvTypeTaxRateId" : {
+      "meaning" : "半成品盘点明发票税率id"
+    },
+    "KSemiFiniGoodsDetInvCheckSemiFiniGoodsCompleteStatus" : {
+      "meaning" : "半成品盘点明完成状态"
+    },
+    "KSemiFiniGoodsDetInvCheckSemiFiniGoodsFromAuditDate" : {
+      "meaning" : "KSemiFiniGoodsDetInvCheckSemiFiniGoodsFromAuditDate"
+    },
+    "KSemiFiniGoodsDetInvCheckSemiFiniGoodsFromBeginTime" : {
+      "meaning" : "KSemiFiniGoodsDetInvCheckSemiFiniGoodsFromBeginTime"
+    },
+    "KSemiFiniGoodsDetInvCheckSemiFiniGoodsToReceiptDate" : {
+      "meaning" : "KSemiFiniGoodsDetInvCheckSemiFiniGoodsToReceiptDate"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsExtension" : {
+      "meaning" : "半成品盘点明扩展数据"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsBanned" : {
+      "meaning" : "半成品盘点明是否被禁用"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsolation" : {
+      "meaning" : "半成品盘点明智能节点数据隔离标识"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsJsScript" : {
+      "meaning" : "半成品盘点明js脚本"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsParentId" : {
+      "meaning" : "半成品盘点明父节点ID"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTenantId" : {
+      "meaning" : "半成品盘点明租户id"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUnitCode" : {
+      "meaning" : "半成品盘点明单位id"
+    },
+    "VCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUserCode" : {
+      "meaning" : "半成品盘点明智能节点的唯一编码"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsAuditDate" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsAuditDate"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsBeginTime" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsBeginTime"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsBizVersion" : {
+      "meaning" : "半成品盘点明业务自定义版本号"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsBriefName" : {
+      "meaning" : "半成品盘点明简称"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsCreateTime" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsCreateTime"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsCreatorId" : {
+      "meaning" : "半成品盘点明创建人ID"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra1" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra1"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra2" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra2"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra3" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra3"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra4" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra4"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra5" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra5"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsDescription" : {
+      "meaning" : "半成品盘点明描述"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsGropeCode" : {
+      "meaning" : "半成品盘点明搜索码"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsIsDeleted" : {
+      "meaning" : "半成品盘点明是否被删除"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsMaterialId" : {
+      "meaning" : "半成品盘点明物料id"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsPrintTimes" : {
+      "meaning" : "半成品盘点明打印次数"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsSourceType" : {
+      "meaning" : "半成品盘点明来源类型"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsSystemCode" : {
+      "meaning" : "半成品盘点明系统编码"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsToEndTime" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsToEndTime"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdateTime" : {
+      "meaning" : "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdateTime"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdaterId" : {
+      "meaning" : "半成品盘点明更新人ID"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra1" : {
+      "meaning" : "半成品盘点明扩展1"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra2" : {
+      "meaning" : "半成品盘点明扩展2"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra3" : {
+      "meaning" : "半成品盘点明扩展3"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra4" : {
+      "meaning" : "半成品盘点明扩展4"
+    },
+    "checkSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra5" : {
+      "meaning" : "半成品盘点明扩展5"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsApplicationId" : {
+      "meaning" : "半成品盘点明应用ID"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsExternalState" : {
+      "meaning" : "半成品盘点明上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsTaskNodeName" : {
+      "meaning" : "半成品盘点明任务节点名称"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsTaskNodeType" : {
+      "meaning" : "半成品盘点明任务节点类型"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyId" : {
+      "meaning" : "半成品盘点明第三方系统中的唯一ID"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToCreateTime" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToCreateTime"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra1" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra1"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra2" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra2"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra3" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra3"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra4" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra4"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra5" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra5"
+    },
+    "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToUpdateTime" : {
+      "meaning" : "ckSemiFiniGoodsDetInvCheckSemiFiniGoodsToUpdateTime"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsClosedReason" : {
+      "meaning" : "半成品盘点明结案原因"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsClosedStatus" : {
+      "meaning" : "半成品盘点明结案状态"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsDeliveryDate" : {
+      "meaning" : "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsDeliveryDate"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromEndTime" : {
+      "meaning" : "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromEndTime"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsGroovyScript" : {
+      "meaning" : "半成品盘点明groovy脚本"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra1" : {
+      "meaning" : "半成品盘点明扩展数量1"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra2" : {
+      "meaning" : "半成品盘点明扩展数量2"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra3" : {
+      "meaning" : "半成品盘点明扩展数量3"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra4" : {
+      "meaning" : "半成品盘点明扩展数量4"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra5" : {
+      "meaning" : "半成品盘点明扩展数量5"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsSerialNumber" : {
+      "meaning" : "半成品盘点明顺序号"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsToAuditDate" : {
+      "meaning" : "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsToAuditDate"
+    },
+    "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsToBeginTime" : {
+      "meaning" : "eckSemiFiniGoodsDetInvCheckSemiFiniGoodsToBeginTime"
+    },
+    "emiFiniGoodsDetInvCheckSemiFiniGoodsFromDeliveryDate" : {
+      "meaning" : "emiFiniGoodsDetInvCheckSemiFiniGoodsFromDeliveryDate"
+    },
+    "finiGoodsDetInvCheckSemiFiniGoodsAvailableScheduleId" : {
+      "meaning" : "半成品盘点明可用日程id"
+    },
+    "finiGoodsDetInvCheckSemiFiniGoodsPlannedTimeRequired" : {
+      "meaning" : "半成品盘点明计划需时(小时)"
+    },
+    "goodsDetInvCheckSemiFiniGoodsIsManualModificationDate" : {
+      "meaning" : "半成品盘点明是否手动修改计划生产时间"
+    },
+    "goodsDetInvCheckSemiFiniGoodsTotalAmountExcludingTax" : {
+      "meaning" : "半成品盘点明总盘点不含税金额"
+    },
+    "goodsDetInvCheckSemiFiniGoodsTotalAmountIncludingTax" : {
+      "meaning" : "半成品盘点明总盘点含税金额"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsAuditStatus" : {
+      "meaning" : "半成品盘点明审核状态"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsBusDivisId" : {
+      "meaning" : "半成品盘点明事业部id"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsDefaultType" : {
+      "meaning" : "半成品盘点明智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsEquipmentId" : {
+      "meaning" : "半成品盘点明设备id"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsFilterClazz" : {
+      "meaning" : "半成品盘点明冗余字段用于筛选"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsMainFlow" : {
+      "meaning" : "半成品盘点明是否是主流程"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsReceiptDate" : {
+      "meaning" : "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsReceiptDate"
+    },
+    "heckSemiFiniGoodsDetInvCheckSemiFiniGoodsReceiptType" : {
+      "meaning" : "半成品盘点明单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "iniGoodsDetInvCheckSemiFiniGoodsPlannedOutputQuantity" : {
+      "meaning" : "半成品盘点明计划产出数量"
+    },
+    "invCheckSemiFiniGoodsDetActualTimeRequired" : {
+      "meaning" : "半成品盘点明实际需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetAdjustmentTimeRequired" : {
+      "meaning" : "半成品盘点明调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckSemiFiniGoodsDetAmountExcTax" : {
+      "meaning" : "半成品盘点明盘点不含税金额（盘点数量*不含税单价）"
+    },
+    "invCheckSemiFiniGoodsDetAmountIncTax" : {
+      "meaning" : "半成品盘点明盘点含税金额（盘点数量*含税单价）"
+    },
+    "invCheckSemiFiniGoodsDetApplicationId" : {
+      "meaning" : "半成品盘点明应用ID"
+    },
+    "invCheckSemiFiniGoodsDetAuditDate" : {
+      "meaning" : "半成品盘点明审核时间"
+    },
+    "invCheckSemiFiniGoodsDetAuditStatus" : {
+      "meaning" : "半成品盘点明审核状态"
+    },
+    "invCheckSemiFiniGoodsDetAvailableScheduleId" : {
+      "meaning" : "半成品盘点明可用日程id"
+    },
+    "invCheckSemiFiniGoodsDetBeginTime" : {
+      "meaning" : "半成品盘点明开始时间"
+    },
+    "invCheckSemiFiniGoodsDetBizOrderId" : {
+      "meaning" : "半成品盘点明订单id"
+    },
+    "invCheckSemiFiniGoodsDetBizVersion" : {
+      "meaning" : "半成品盘点明业务自定义版本号"
+    },
+    "invCheckSemiFiniGoodsDetBriefName" : {
+      "meaning" : "半成品盘点明简称"
+    },
+    "invCheckSemiFiniGoodsDetBusDivisId" : {
+      "meaning" : "半成品盘点明事业部id"
+    },
+    "invCheckSemiFiniGoodsDetClazz" : {
+      "meaning" : "半成品盘点明子类 类名（表和类一一对应）"
+    },
+    "invCheckSemiFiniGoodsDetClosedReason" : {
+      "meaning" : "半成品盘点明结案原因"
+    },
+    "invCheckSemiFiniGoodsDetClosedStatus" : {
+      "meaning" : "半成品盘点明结案状态"
+    },
+    "invCheckSemiFiniGoodsDetComment" : {
+      "meaning" : "半成品盘点明评论"
+    },
+    "invCheckSemiFiniGoodsDetCompleteQuantity" : {
+      "meaning" : "半成品盘点明完成数量"
+    },
+    "invCheckSemiFiniGoodsDetCompleteStatus" : {
+      "meaning" : "半成品盘点明完成状态"
+    },
+    "invCheckSemiFiniGoodsDetCreateTime" : {
+      "meaning" : "半成品盘点明创建时间"
+    },
+    "invCheckSemiFiniGoodsDetCreator" : {
+      "meaning" : "半成品盘点明创建人"
+    },
+    "invCheckSemiFiniGoodsDetCreatorId" : {
+      "meaning" : "半成品盘点明创建人ID"
+    },
+    "invCheckSemiFiniGoodsDetDateExtra1" : {
+      "meaning" : "半成品盘点明扩展时间1"
+    },
+    "invCheckSemiFiniGoodsDetDateExtra2" : {
+      "meaning" : "半成品盘点明扩展时间2"
+    },
+    "invCheckSemiFiniGoodsDetDateExtra3" : {
+      "meaning" : "半成品盘点明扩展时间3"
+    },
+    "invCheckSemiFiniGoodsDetDateExtra4" : {
+      "meaning" : "半成品盘点明扩展时间4"
+    },
+    "invCheckSemiFiniGoodsDetDateExtra5" : {
+      "meaning" : "半成品盘点明扩展时间5"
+    },
+    "invCheckSemiFiniGoodsDetDefaultType" : {
+      "meaning" : "半成品盘点明智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckSemiFiniGoodsDetDeliveryDate" : {
+      "meaning" : "半成品盘点明交货日期"
+    },
+    "invCheckSemiFiniGoodsDetDescription" : {
+      "meaning" : "半成品盘点明描述"
+    },
+    "invCheckSemiFiniGoodsDetEndTime" : {
+      "meaning" : "半成品盘点明结束时间"
+    },
+    "invCheckSemiFiniGoodsDetEndTimeRequired" : {
+      "meaning" : "半成品盘点明最后需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetEngName" : {
+      "meaning" : "半成品盘点明英文名称"
+    },
+    "invCheckSemiFiniGoodsDetEquipmentId" : {
+      "meaning" : "半成品盘点明设备id"
+    },
+    "invCheckSemiFiniGoodsDetExchangeRateId" : {
+      "meaning" : "半成品盘点明币种汇率id"
+    },
+    "invCheckSemiFiniGoodsDetExtension" : {
+      "meaning" : "半成品盘点明扩展数据"
+    },
+    "invCheckSemiFiniGoodsDetExternalState" : {
+      "meaning" : "半成品盘点明上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckSemiFiniGoodsDetFilterClazz" : {
+      "meaning" : "半成品盘点明冗余字段用于筛选"
+    },
+    "invCheckSemiFiniGoodsDetFlags" : {
+      "meaning" : "半成品盘点明63位标志位"
+    },
+    "invCheckSemiFiniGoodsDetFromAuditDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromAuditDate"
+    },
+    "invCheckSemiFiniGoodsDetFromBeginTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromBeginTime"
+    },
+    "invCheckSemiFiniGoodsDetFromCreateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromCreateTime"
+    },
+    "invCheckSemiFiniGoodsDetFromDateExtra1" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDateExtra1"
+    },
+    "invCheckSemiFiniGoodsDetFromDateExtra2" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDateExtra2"
+    },
+    "invCheckSemiFiniGoodsDetFromDateExtra3" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDateExtra3"
+    },
+    "invCheckSemiFiniGoodsDetFromDateExtra4" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDateExtra4"
+    },
+    "invCheckSemiFiniGoodsDetFromDateExtra5" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDateExtra5"
+    },
+    "invCheckSemiFiniGoodsDetFromDeliveryDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromDeliveryDate"
+    },
+    "invCheckSemiFiniGoodsDetFromEndTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromEndTime"
+    },
+    "invCheckSemiFiniGoodsDetFromReceiptDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromReceiptDate"
+    },
+    "invCheckSemiFiniGoodsDetFromUpdateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetFromUpdateTime"
+    },
+    "invCheckSemiFiniGoodsDetFscType" : {
+      "meaning" : "半成品盘点明FSC声明"
+    },
+    "invCheckSemiFiniGoodsDetGenerativePeople" : {
+      "meaning" : "半成品盘点明下发人"
+    },
+    "invCheckSemiFiniGoodsDetGenerativeState" : {
+      "meaning" : "半成品盘点明下发状态"
+    },
+    "invCheckSemiFiniGoodsDetGoodsId" : {
+      "meaning" : "半成品盘点明货（包）id"
+    },
+    "invCheckSemiFiniGoodsDetGroovyScript" : {
+      "meaning" : "半成品盘点明groovy脚本"
+    },
+    "invCheckSemiFiniGoodsDetGropeCode" : {
+      "meaning" : "半成品盘点明搜索码"
+    },
+    "invCheckSemiFiniGoodsDetId" : {
+      "meaning" : "半成品盘点明主键ID",
+      "is_primary" : true
+    },
+    "invCheckSemiFiniGoodsDetInUsed" : {
+      "meaning" : "半成品盘点明是否被使用"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsActualTimeRequired" : {
+      "meaning" : "半成品盘点明实际需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsAdjustmentTimeRequired" : {
+      "meaning" : "半成品盘点明调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsApplicationId" : {
+      "meaning" : "半成品盘点明应用ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsAuditDate" : {
+      "meaning" : "半成品盘点明审核时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsAuditStatus" : {
+      "meaning" : "半成品盘点明审核状态"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsAvailableScheduleId" : {
+      "meaning" : "半成品盘点明可用日程id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsBeginTime" : {
+      "meaning" : "半成品盘点明开始时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsBizVersion" : {
+      "meaning" : "半成品盘点明业务自定义版本号"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsBriefName" : {
+      "meaning" : "半成品盘点明简称"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsBusDivisId" : {
+      "meaning" : "半成品盘点明事业部id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsClazz" : {
+      "meaning" : "半成品盘点明子类 类名（表和类一一对应）"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsClosedReason" : {
+      "meaning" : "半成品盘点明结案原因"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsClosedStatus" : {
+      "meaning" : "半成品盘点明结案状态"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsComment" : {
+      "meaning" : "半成品盘点明评论"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsCompleteQuantity" : {
+      "meaning" : "半成品盘点明完成数量"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsCompleteStatus" : {
+      "meaning" : "半成品盘点明完成状态"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsCreateTime" : {
+      "meaning" : "半成品盘点明创建时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsCreator" : {
+      "meaning" : "半成品盘点明创建人"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsCreatorId" : {
+      "meaning" : "半成品盘点明创建人ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra1" : {
+      "meaning" : "半成品盘点明扩展时间1"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra2" : {
+      "meaning" : "半成品盘点明扩展时间2"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra3" : {
+      "meaning" : "半成品盘点明扩展时间3"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra4" : {
+      "meaning" : "半成品盘点明扩展时间4"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDateExtra5" : {
+      "meaning" : "半成品盘点明扩展时间5"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDefaultType" : {
+      "meaning" : "半成品盘点明智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDeliveryDate" : {
+      "meaning" : "半成品盘点明交货日期"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsDescription" : {
+      "meaning" : "半成品盘点明描述"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEndTime" : {
+      "meaning" : "半成品盘点明结束时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEndTimeRequired" : {
+      "meaning" : "半成品盘点明最后需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEngName" : {
+      "meaning" : "半成品盘点明英文名称"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEquipmentId" : {
+      "meaning" : "半成品盘点明设备id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsExchangeRateId" : {
+      "meaning" : "半成品盘点明币种汇率id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsExtension" : {
+      "meaning" : "半成品盘点明扩展数据"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsExternalState" : {
+      "meaning" : "半成品盘点明上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFilterClazz" : {
+      "meaning" : "半成品盘点明冗余字段用于筛选"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFlags" : {
+      "meaning" : "半成品盘点明63位标志位"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromAuditDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromAuditDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromBeginTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromBeginTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromCreateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromCreateTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra1" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra1"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra2" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra2"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra3" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra3"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra4" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra4"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra5" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra5"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDeliveryDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromDeliveryDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromEndTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromEndTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromReceiptDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromReceiptDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromUpdateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFromUpdateTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFscType" : {
+      "meaning" : "半成品盘点明FSC声明"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsGenerativePeople" : {
+      "meaning" : "半成品盘点明下发人"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsGenerativeState" : {
+      "meaning" : "半成品盘点明下发状态"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsGroovyScript" : {
+      "meaning" : "半成品盘点明groovy脚本"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsGropeCode" : {
+      "meaning" : "半成品盘点明搜索码"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsId" : {
+      "meaning" : "半成品盘点明pk"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsInUsed" : {
+      "meaning" : "半成品盘点明是否被使用"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsInvTypeTaxRateId" : {
+      "meaning" : "半成品盘点明发票税率id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsBanned" : {
+      "meaning" : "半成品盘点明是否被禁用"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsDeleted" : {
+      "meaning" : "半成品盘点明是否被删除"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsLeaf" : {
+      "meaning" : "半成品盘点明是否叶子节点"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsMainFlow" : {
+      "meaning" : "半成品盘点明是否是主流程"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsManualModificationDate" : {
+      "meaning" : "半成品盘点明是否手动修改计划生产时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsIsolation" : {
+      "meaning" : "半成品盘点明智能节点数据隔离标识"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsJsScript" : {
+      "meaning" : "半成品盘点明js脚本"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsMaterialId" : {
+      "meaning" : "半成品盘点明物料id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsName" : {
+      "meaning" : "半成品盘点明智能节点名"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNameCodeSearch" : {
+      "meaning" : "半成品盘点明name、user_code模糊搜索"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra1" : {
+      "meaning" : "半成品盘点明扩展数量1"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra2" : {
+      "meaning" : "半成品盘点明扩展数量2"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra3" : {
+      "meaning" : "半成品盘点明扩展数量3"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra4" : {
+      "meaning" : "半成品盘点明扩展数量4"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsNumberExtra5" : {
+      "meaning" : "半成品盘点明扩展数量5"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsParentId" : {
+      "meaning" : "半成品盘点明父节点ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsPlannedOutputQuantity" : {
+      "meaning" : "半成品盘点明计划产出数量"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsPlannedTimeRequired" : {
+      "meaning" : "半成品盘点明计划需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsPrintTimes" : {
+      "meaning" : "半成品盘点明打印次数"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsPriority" : {
+      "meaning" : "半成品盘点明优先级"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsProcessInstanceId" : {
+      "meaning" : "半成品盘点明流程实例ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsProductionProcessesTypeId" : {
+      "meaning" : "半成品盘点明工序类型ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsProductionShiftId" : {
+      "meaning" : "半成品盘点明生产班次ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsQuantity" : {
+      "meaning" : "半成品盘点明任务数量"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsReceiptDate" : {
+      "meaning" : "半成品盘点明单据日期"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsReceiptType" : {
+      "meaning" : "半成品盘点明单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsRelatedTasksId" : {
+      "meaning" : "半成品盘点明关联任务id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsSerialNumber" : {
+      "meaning" : "半成品盘点明顺序号"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsSource" : {
+      "meaning" : "半成品盘点明源"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsSourceType" : {
+      "meaning" : "半成品盘点明来源类型"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsState" : {
+      "meaning" : "半成品盘点明通用状态"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsSystemCode" : {
+      "meaning" : "半成品盘点明系统编码"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTarget" : {
+      "meaning" : "半成品盘点明目标"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTaskNodeName" : {
+      "meaning" : "半成品盘点明任务节点名称"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTaskNodeType" : {
+      "meaning" : "半成品盘点明任务节点类型"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTenantId" : {
+      "meaning" : "半成品盘点明租户id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyClass" : {
+      "meaning" : "半成品盘点明第三方分类"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyId" : {
+      "meaning" : "半成品盘点明第三方系统中的唯一ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyName" : {
+      "meaning" : "半成品盘点明第三方名称"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToAuditDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToAuditDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToBeginTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToBeginTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToCreateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToCreateTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra1" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra1"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra2" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra2"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra3" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra3"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra4" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra4"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra5" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDateExtra5"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDeliveryDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToDeliveryDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToEndTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToEndTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToReceiptDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToReceiptDate"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToUpdateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsToUpdateTime"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTotalAmountExcludingTax" : {
+      "meaning" : "半成品盘点明总盘点不含税金额"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsTotalAmountIncludingTax" : {
+      "meaning" : "半成品盘点明总盘点含税金额"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUnitCode" : {
+      "meaning" : "半成品盘点明单位id"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdateTime" : {
+      "meaning" : "半成品盘点明更新时间"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdater" : {
+      "meaning" : "半成品盘点明更新人"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUpdaterId" : {
+      "meaning" : "半成品盘点明更新人ID"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsUserCode" : {
+      "meaning" : "半成品盘点明智能节点的唯一编码"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra1" : {
+      "meaning" : "半成品盘点明扩展1"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra2" : {
+      "meaning" : "半成品盘点明扩展2"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra3" : {
+      "meaning" : "半成品盘点明扩展3"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra4" : {
+      "meaning" : "半成品盘点明扩展4"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVarExtra5" : {
+      "meaning" : "半成品盘点明扩展5"
+    },
+    "invCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsVersion" : {
+      "meaning" : "半成品盘点明版本号"
+    },
+    "invCheckSemiFiniGoodsDetInvTypeTaxRateId" : {
+      "meaning" : "半成品盘点明发票税率id"
+    },
+    "invCheckSemiFiniGoodsDetInventoryQuantity" : {
+      "meaning" : "半成品盘点明库存数量"
+    },
+    "invCheckSemiFiniGoodsDetIsBanned" : {
+      "meaning" : "半成品盘点明是否被禁用"
+    },
+    "invCheckSemiFiniGoodsDetIsDeleted" : {
+      "meaning" : "半成品盘点明是否被删除"
+    },
+    "invCheckSemiFiniGoodsDetIsLeaf" : {
+      "meaning" : "半成品盘点明是否叶子节点"
+    },
+    "invCheckSemiFiniGoodsDetIsMainFlow" : {
+      "meaning" : "半成品盘点明是否是主流程"
+    },
+    "invCheckSemiFiniGoodsDetIsManualModificationDate" : {
+      "meaning" : "半成品盘点明是否手动修改计划生产时间"
+    },
+    "invCheckSemiFiniGoodsDetIsolation" : {
+      "meaning" : "半成品盘点明智能节点数据隔离标识"
+    },
+    "invCheckSemiFiniGoodsDetJsScript" : {
+      "meaning" : "半成品盘点明js脚本"
+    },
+    "invCheckSemiFiniGoodsDetMatBatchId" : {
+      "meaning" : "半成品盘点明物料批次id"
+    },
+    "invCheckSemiFiniGoodsDetMaterialId" : {
+      "meaning" : "半成品盘点明物料id"
+    },
+    "invCheckSemiFiniGoodsDetName" : {
+      "meaning" : "半成品盘点明智能节点名"
+    },
+    "invCheckSemiFiniGoodsDetNameCodeSearch" : {
+      "meaning" : "半成品盘点明name、user_code模糊搜索"
+    },
+    "invCheckSemiFiniGoodsDetNumberExtra1" : {
+      "meaning" : "半成品盘点明扩展数量1"
+    },
+    "invCheckSemiFiniGoodsDetNumberExtra2" : {
+      "meaning" : "半成品盘点明扩展数量2"
+    },
+    "invCheckSemiFiniGoodsDetNumberExtra3" : {
+      "meaning" : "半成品盘点明扩展数量3"
+    },
+    "invCheckSemiFiniGoodsDetNumberExtra4" : {
+      "meaning" : "半成品盘点明扩展数量4"
+    },
+    "invCheckSemiFiniGoodsDetNumberExtra5" : {
+      "meaning" : "半成品盘点明扩展数量5"
+    },
+    "invCheckSemiFiniGoodsDetParentId" : {
+      "meaning" : "半成品盘点明父节点ID"
+    },
+    "invCheckSemiFiniGoodsDetPlannedOutputQuantity" : {
+      "meaning" : "半成品盘点明计划产出数量"
+    },
+    "invCheckSemiFiniGoodsDetPlannedTimeRequired" : {
+      "meaning" : "半成品盘点明计划需时(小时)"
+    },
+    "invCheckSemiFiniGoodsDetPrintTimes" : {
+      "meaning" : "半成品盘点明打印次数"
+    },
+    "invCheckSemiFiniGoodsDetPriority" : {
+      "meaning" : "半成品盘点明优先级"
+    },
+    "invCheckSemiFiniGoodsDetProcessInstanceId" : {
+      "meaning" : "半成品盘点明流程实例ID"
+    },
+    "invCheckSemiFiniGoodsDetProductionProcessesTypeId" : {
+      "meaning" : "半成品盘点明工序类型ID"
+    },
+    "invCheckSemiFiniGoodsDetProductionShiftId" : {
+      "meaning" : "半成品盘点明生产班次ID"
+    },
+    "invCheckSemiFiniGoodsDetQuantity" : {
+      "meaning" : "半成品盘点明任务数量"
+    },
+    "invCheckSemiFiniGoodsDetQuantityShortage" : {
+      "meaning" : "半成品盘点明盘亏数量"
+    },
+    "invCheckSemiFiniGoodsDetQuantitySurplus" : {
+      "meaning" : "半成品盘点明盘盈数量"
+    },
+    "invCheckSemiFiniGoodsDetReceiptDate" : {
+      "meaning" : "半成品盘点明单据日期"
+    },
+    "invCheckSemiFiniGoodsDetReceiptType" : {
+      "meaning" : "半成品盘点明单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "invCheckSemiFiniGoodsDetRelatedTasksId" : {
+      "meaning" : "半成品盘点明关联任务id"
+    },
+    "invCheckSemiFiniGoodsDetSerialNumber" : {
+      "meaning" : "半成品盘点明顺序号"
+    },
+    "invCheckSemiFiniGoodsDetShortageNumber" : {
+      "meaning" : "半成品盘点明盘亏调整单号"
+    },
+    "invCheckSemiFiniGoodsDetShortageSituation" : {
+      "meaning" : "半成品盘点明盘亏情况（已开、未开）"
+    },
+    "invCheckSemiFiniGoodsDetSource" : {
+      "meaning" : "半成品盘点明源"
+    },
+    "invCheckSemiFiniGoodsDetSourceType" : {
+      "meaning" : "半成品盘点明来源类型"
+    },
+    "invCheckSemiFiniGoodsDetState" : {
+      "meaning" : "半成品盘点明通用状态"
+    },
+    "invCheckSemiFiniGoodsDetSurplusNumber" : {
+      "meaning" : "半成品盘点明盘盈调整单号"
+    },
+    "invCheckSemiFiniGoodsDetSurplusSituation" : {
+      "meaning" : "半成品盘点明盘盈情况（已开、未开）"
+    },
+    "invCheckSemiFiniGoodsDetSystemCode" : {
+      "meaning" : "半成品盘点明系统编码"
+    },
+    "invCheckSemiFiniGoodsDetTarget" : {
+      "meaning" : "半成品盘点明目标"
+    },
+    "invCheckSemiFiniGoodsDetTaskNodeName" : {
+      "meaning" : "半成品盘点明任务节点名称"
+    },
+    "invCheckSemiFiniGoodsDetTaskNodeType" : {
+      "meaning" : "半成品盘点明任务节点类型"
+    },
+    "invCheckSemiFiniGoodsDetTenantId" : {
+      "meaning" : "半成品盘点明租户id"
+    },
+    "invCheckSemiFiniGoodsDetThirdPartyClass" : {
+      "meaning" : "半成品盘点明第三方分类"
+    },
+    "invCheckSemiFiniGoodsDetThirdPartyId" : {
+      "meaning" : "半成品盘点明第三方系统中的唯一ID"
+    },
+    "invCheckSemiFiniGoodsDetThirdPartyName" : {
+      "meaning" : "半成品盘点明第三方名称"
+    },
+    "invCheckSemiFiniGoodsDetToAuditDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToAuditDate"
+    },
+    "invCheckSemiFiniGoodsDetToBeginTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToBeginTime"
+    },
+    "invCheckSemiFiniGoodsDetToCreateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToCreateTime"
+    },
+    "invCheckSemiFiniGoodsDetToDateExtra1" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDateExtra1"
+    },
+    "invCheckSemiFiniGoodsDetToDateExtra2" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDateExtra2"
+    },
+    "invCheckSemiFiniGoodsDetToDateExtra3" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDateExtra3"
+    },
+    "invCheckSemiFiniGoodsDetToDateExtra4" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDateExtra4"
+    },
+    "invCheckSemiFiniGoodsDetToDateExtra5" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDateExtra5"
+    },
+    "invCheckSemiFiniGoodsDetToDeliveryDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToDeliveryDate"
+    },
+    "invCheckSemiFiniGoodsDetToEndTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToEndTime"
+    },
+    "invCheckSemiFiniGoodsDetToReceiptDate" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToReceiptDate"
+    },
+    "invCheckSemiFiniGoodsDetToUpdateTime" : {
+      "meaning" : "invCheckSemiFiniGoodsDetToUpdateTime"
+    },
+    "invCheckSemiFiniGoodsDetUnitCode" : {
+      "meaning" : "半成品盘点明单位id"
+    },
+    "invCheckSemiFiniGoodsDetUnitPriceExcTax" : {
+      "meaning" : "半成品盘点明不含税单价"
+    },
+    "invCheckSemiFiniGoodsDetUnitPriceIncTax" : {
+      "meaning" : "半成品盘点明含税单价"
+    },
+    "invCheckSemiFiniGoodsDetUpdateTime" : {
+      "meaning" : "半成品盘点明更新时间"
+    },
+    "invCheckSemiFiniGoodsDetUpdater" : {
+      "meaning" : "半成品盘点明更新人"
+    },
+    "invCheckSemiFiniGoodsDetUpdaterId" : {
+      "meaning" : "半成品盘点明更新人ID"
+    },
+    "invCheckSemiFiniGoodsDetUserCode" : {
+      "meaning" : "半成品盘点明智能节点的唯一编码"
+    },
+    "invCheckSemiFiniGoodsDetVarExtra1" : {
+      "meaning" : "半成品盘点明扩展1"
+    },
+    "invCheckSemiFiniGoodsDetVarExtra2" : {
+      "meaning" : "半成品盘点明扩展2"
+    },
+    "invCheckSemiFiniGoodsDetVarExtra3" : {
+      "meaning" : "半成品盘点明扩展3"
+    },
+    "invCheckSemiFiniGoodsDetVarExtra4" : {
+      "meaning" : "半成品盘点明扩展4"
+    },
+    "invCheckSemiFiniGoodsDetVarExtra5" : {
+      "meaning" : "半成品盘点明扩展5"
+    },
+    "invCheckSemiFiniGoodsDetVersion" : {
+      "meaning" : "半成品盘点明版本号"
+    },
+    "invCheckSemiFiniGoodsDetWarehousePosition" : {
+      "meaning" : "半成品盘点明仓位"
+    },
+    "invCheckSemiFiniGoodsDetWarehouseSpaceId" : {
+      "meaning" : "半成品盘点明仓空间id"
+    },
+    "invCheckSemiFiniGoodsDetWorkOrderId" : {
+      "meaning" : "半成品盘点明工单id"
+    },
+    "miFiniGoodsDetInvCheckSemiFiniGoodsProcessInstanceId" : {
+      "meaning" : "半成品盘点明流程实例ID"
+    },
+    "miFiniGoodsDetInvCheckSemiFiniGoodsProductionShiftId" : {
+      "meaning" : "半成品盘点明生产班次ID"
+    },
+    "niGoodsDetInvCheckSemiFiniGoodsAdjustmentTimeRequired" : {
+      "meaning" : "半成品盘点明调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEndTime" : {
+      "meaning" : "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEndTime"
+    },
+    "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsEngName" : {
+      "meaning" : "半成品盘点明英文名称"
+    },
+    "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsFscType" : {
+      "meaning" : "半成品盘点明FSC声明"
+    },
+    "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsPriority" : {
+      "meaning" : "半成品盘点明优先级"
+    },
+    "nvCheckSemiFiniGoodsDetInvCheckSemiFiniGoodsQuantity" : {
+      "meaning" : "半成品盘点明任务数量"
+    },
+    "oodsDetInvCheckSemiFiniGoodsProductionProcessesTypeId" : {
+      "meaning" : "半成品盘点明工序类型ID"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsCompleteQuantity" : {
+      "meaning" : "半成品盘点明完成数量"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsEndTimeRequired" : {
+      "meaning" : "半成品盘点明最后需时(小时)"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsExchangeRateId" : {
+      "meaning" : "半成品盘点明币种汇率id"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromCreateTime" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromCreateTime"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra1" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra1"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra2" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra2"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra3" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra3"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra4" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra4"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra5" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromDateExtra5"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromReceiptDate" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromReceiptDate"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsFromUpdateTime" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsFromUpdateTime"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsGenerativePeople" : {
+      "meaning" : "半成品盘点明下发人"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsGenerativeState" : {
+      "meaning" : "半成品盘点明下发状态"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsNameCodeSearch" : {
+      "meaning" : "半成品盘点明name、user_code模糊搜索"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsRelatedTasksId" : {
+      "meaning" : "半成品盘点明关联任务id"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyClass" : {
+      "meaning" : "半成品盘点明第三方分类"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsThirdPartyName" : {
+      "meaning" : "半成品盘点明第三方名称"
+    },
+    "semiFiniGoodsDetInvCheckSemiFiniGoodsToDeliveryDate" : {
+      "meaning" : "semiFiniGoodsDetInvCheckSemiFiniGoodsToDeliveryDate"
+    }
+  }
+}

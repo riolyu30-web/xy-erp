@@ -1,0 +1,768 @@
+{
+  "api_name" : "/wms-inv-adj-mold-det/findList",
+  "table_name" : "模具盘点调整明细表",
+  "request" : {
+    "wmsInvAdjMoldDetWmsInvAdjMoldClazz" : "WMS_INV_ADJ_MOLD",
+    "wmsInvAdjMoldDetClazz" : "WMS_INV_ADJ_MOLD_DET"
+  },
+  "mainTabClazz" : "WMS_INV_ADJ_MOLD_DET",
+  "response" : {
+    "SInvAdjMoldDetWmsInvAdjMoldIsManualModificationDate" : {
+      "meaning" : "模具盘点调整明细表是否手动修改计划生产时间"
+    },
+    "invAdjMoldDetWmsInvAdjMoldProductionProcessesTypeId" : {
+      "meaning" : "模具盘点调整明细表工序类型ID"
+    },
+    "msInvAdjMoldDetWmsInvAdjMoldTotalAmountExcludingTax" : {
+      "meaning" : "模具盘点调整明细表总盘点不含税金额"
+    },
+    "msInvAdjMoldDetWmsInvAdjMoldTotalAmountIncludingTax" : {
+      "meaning" : "模具盘点调整明细表总盘点含税金额"
+    },
+    "wmsInvAdjMoldDetActualTimeRequired" : {
+      "meaning" : "模具盘点调整明细表实际需时(小时)"
+    },
+    "wmsInvAdjMoldDetAdjAmountExcludingTax" : {
+      "meaning" : "模具盘点调整明细表不含税金额（数量*不含税单价）"
+    },
+    "wmsInvAdjMoldDetAdjAmountIncludingTax" : {
+      "meaning" : "模具盘点调整明细表含税金额（盘点数量*含税单价）"
+    },
+    "wmsInvAdjMoldDetAdjSource" : {
+      "meaning" : "模具盘点调整明细表调整来源"
+    },
+    "wmsInvAdjMoldDetAdjustmentTimeRequired" : {
+      "meaning" : "模具盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvAdjMoldDetApplicationId" : {
+      "meaning" : "模具盘点调整明细表应用ID"
+    },
+    "wmsInvAdjMoldDetAuditDate" : {
+      "meaning" : "模具盘点调整明细表审核时间"
+    },
+    "wmsInvAdjMoldDetAuditStatus" : {
+      "meaning" : "模具盘点调整明细表审核状态"
+    },
+    "wmsInvAdjMoldDetAvailableScheduleId" : {
+      "meaning" : "模具盘点调整明细表可用日程id"
+    },
+    "wmsInvAdjMoldDetBeginTime" : {
+      "meaning" : "模具盘点调整明细表开始时间"
+    },
+    "wmsInvAdjMoldDetBizOrderId" : {
+      "meaning" : "模具盘点调整明细表订单id"
+    },
+    "wmsInvAdjMoldDetBizVersion" : {
+      "meaning" : "模具盘点调整明细表业务自定义版本号"
+    },
+    "wmsInvAdjMoldDetBriefName" : {
+      "meaning" : "模具盘点调整明细表简称"
+    },
+    "wmsInvAdjMoldDetBusDivisId" : {
+      "meaning" : "模具盘点调整明细表事业部id"
+    },
+    "wmsInvAdjMoldDetClazz" : {
+      "meaning" : "模具盘点调整明细表子类 类名（表和类一一对应）"
+    },
+    "wmsInvAdjMoldDetClosedReason" : {
+      "meaning" : "模具盘点调整明细表结案原因"
+    },
+    "wmsInvAdjMoldDetClosedStatus" : {
+      "meaning" : "模具盘点调整明细表结案状态"
+    },
+    "wmsInvAdjMoldDetComment" : {
+      "meaning" : "模具盘点调整明细表评论"
+    },
+    "wmsInvAdjMoldDetCompleteQuantity" : {
+      "meaning" : "模具盘点调整明细表完成数量"
+    },
+    "wmsInvAdjMoldDetCompleteStatus" : {
+      "meaning" : "模具盘点调整明细表完成状态"
+    },
+    "wmsInvAdjMoldDetCreateTime" : {
+      "meaning" : "模具盘点调整明细表创建时间"
+    },
+    "wmsInvAdjMoldDetCreator" : {
+      "meaning" : "模具盘点调整明细表创建人"
+    },
+    "wmsInvAdjMoldDetCreatorId" : {
+      "meaning" : "模具盘点调整明细表创建人ID"
+    },
+    "wmsInvAdjMoldDetDateExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展时间1"
+    },
+    "wmsInvAdjMoldDetDateExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展时间2"
+    },
+    "wmsInvAdjMoldDetDateExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展时间3"
+    },
+    "wmsInvAdjMoldDetDateExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展时间4"
+    },
+    "wmsInvAdjMoldDetDateExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展时间5"
+    },
+    "wmsInvAdjMoldDetDefaultType" : {
+      "meaning" : "模具盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvAdjMoldDetDeliveryDate" : {
+      "meaning" : "模具盘点调整明细表交货日期"
+    },
+    "wmsInvAdjMoldDetDescription" : {
+      "meaning" : "模具盘点调整明细表描述"
+    },
+    "wmsInvAdjMoldDetEndTime" : {
+      "meaning" : "模具盘点调整明细表结束时间"
+    },
+    "wmsInvAdjMoldDetEndTimeRequired" : {
+      "meaning" : "模具盘点调整明细表最后需时(小时)"
+    },
+    "wmsInvAdjMoldDetEngName" : {
+      "meaning" : "模具盘点调整明细表英文名称"
+    },
+    "wmsInvAdjMoldDetEquipmentId" : {
+      "meaning" : "模具盘点调整明细表设备id"
+    },
+    "wmsInvAdjMoldDetExchangeRateId" : {
+      "meaning" : "模具盘点调整明细表币种汇率id"
+    },
+    "wmsInvAdjMoldDetExtension" : {
+      "meaning" : "模具盘点调整明细表扩展数据"
+    },
+    "wmsInvAdjMoldDetExternalState" : {
+      "meaning" : "模具盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvAdjMoldDetFilterClazz" : {
+      "meaning" : "模具盘点调整明细表冗余字段用于筛选"
+    },
+    "wmsInvAdjMoldDetFlags" : {
+      "meaning" : "模具盘点调整明细表63位标志位"
+    },
+    "wmsInvAdjMoldDetFromAuditDate" : {
+      "meaning" : "wmsInvAdjMoldDetFromAuditDate"
+    },
+    "wmsInvAdjMoldDetFromBeginTime" : {
+      "meaning" : "wmsInvAdjMoldDetFromBeginTime"
+    },
+    "wmsInvAdjMoldDetFromCreateTime" : {
+      "meaning" : "wmsInvAdjMoldDetFromCreateTime"
+    },
+    "wmsInvAdjMoldDetFromDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldDetFromDateExtra1"
+    },
+    "wmsInvAdjMoldDetFromDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldDetFromDateExtra2"
+    },
+    "wmsInvAdjMoldDetFromDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldDetFromDateExtra3"
+    },
+    "wmsInvAdjMoldDetFromDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldDetFromDateExtra4"
+    },
+    "wmsInvAdjMoldDetFromDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldDetFromDateExtra5"
+    },
+    "wmsInvAdjMoldDetFromDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldDetFromDeliveryDate"
+    },
+    "wmsInvAdjMoldDetFromEndTime" : {
+      "meaning" : "wmsInvAdjMoldDetFromEndTime"
+    },
+    "wmsInvAdjMoldDetFromReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldDetFromReceiptDate"
+    },
+    "wmsInvAdjMoldDetFromUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldDetFromUpdateTime"
+    },
+    "wmsInvAdjMoldDetFscType" : {
+      "meaning" : "模具盘点调整明细表FSC声明"
+    },
+    "wmsInvAdjMoldDetGenerativePeople" : {
+      "meaning" : "模具盘点调整明细表下发人"
+    },
+    "wmsInvAdjMoldDetGenerativeState" : {
+      "meaning" : "模具盘点调整明细表下发状态"
+    },
+    "wmsInvAdjMoldDetGoodsId" : {
+      "meaning" : "模具盘点调整明细表货（包）id"
+    },
+    "wmsInvAdjMoldDetGroovyScript" : {
+      "meaning" : "模具盘点调整明细表groovy脚本"
+    },
+    "wmsInvAdjMoldDetGropeCode" : {
+      "meaning" : "模具盘点调整明细表搜索码"
+    },
+    "wmsInvAdjMoldDetId" : {
+      "meaning" : "模具盘点调整明细表pk",
+      "is_primary" : true
+    },
+    "wmsInvAdjMoldDetInUsed" : {
+      "meaning" : "模具盘点调整明细表是否被使用"
+    },
+    "wmsInvAdjMoldDetInvTypeTaxRateId" : {
+      "meaning" : "模具盘点调整明细表发票税率id"
+    },
+    "wmsInvAdjMoldDetIsBanned" : {
+      "meaning" : "模具盘点调整明细表是否被禁用"
+    },
+    "wmsInvAdjMoldDetIsDeleted" : {
+      "meaning" : "模具盘点调整明细表是否被删除"
+    },
+    "wmsInvAdjMoldDetIsLeaf" : {
+      "meaning" : "模具盘点调整明细表是否叶子节点"
+    },
+    "wmsInvAdjMoldDetIsMainFlow" : {
+      "meaning" : "模具盘点调整明细表是否是主流程"
+    },
+    "wmsInvAdjMoldDetIsManualModificationDate" : {
+      "meaning" : "模具盘点调整明细表是否手动修改计划生产时间"
+    },
+    "wmsInvAdjMoldDetIsolation" : {
+      "meaning" : "模具盘点调整明细表智能节点数据隔离标识"
+    },
+    "wmsInvAdjMoldDetJsScript" : {
+      "meaning" : "模具盘点调整明细表js脚本"
+    },
+    "wmsInvAdjMoldDetMatBatchId" : {
+      "meaning" : "模具盘点调整明细表物料批次id"
+    },
+    "wmsInvAdjMoldDetMaterialId" : {
+      "meaning" : "模具盘点调整明细表物料id"
+    },
+    "wmsInvAdjMoldDetName" : {
+      "meaning" : "模具盘点调整明细表智能节点名"
+    },
+    "wmsInvAdjMoldDetNameCodeSearch" : {
+      "meaning" : "模具盘点调整明细表name、user_code模糊搜索"
+    },
+    "wmsInvAdjMoldDetNumberExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展数量1"
+    },
+    "wmsInvAdjMoldDetNumberExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展数量2"
+    },
+    "wmsInvAdjMoldDetNumberExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展数量3"
+    },
+    "wmsInvAdjMoldDetNumberExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展数量4"
+    },
+    "wmsInvAdjMoldDetNumberExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展数量5"
+    },
+    "wmsInvAdjMoldDetParentId" : {
+      "meaning" : "模具盘点调整明细表父节点ID"
+    },
+    "wmsInvAdjMoldDetPlannedOutputQuantity" : {
+      "meaning" : "模具盘点调整明细表计划产出数量"
+    },
+    "wmsInvAdjMoldDetPlannedTimeRequired" : {
+      "meaning" : "模具盘点调整明细表计划需时(小时)"
+    },
+    "wmsInvAdjMoldDetPosition" : {
+      "meaning" : "模具盘点调整明细表仓位"
+    },
+    "wmsInvAdjMoldDetPrintTimes" : {
+      "meaning" : "模具盘点调整明细表打印次数"
+    },
+    "wmsInvAdjMoldDetPriority" : {
+      "meaning" : "模具盘点调整明细表优先级"
+    },
+    "wmsInvAdjMoldDetProcessInstanceId" : {
+      "meaning" : "模具盘点调整明细表流程实例ID"
+    },
+    "wmsInvAdjMoldDetProductionProcessesTypeId" : {
+      "meaning" : "模具盘点调整明细表工序类型ID"
+    },
+    "wmsInvAdjMoldDetProductionShiftId" : {
+      "meaning" : "模具盘点调整明细表生产班次ID"
+    },
+    "wmsInvAdjMoldDetQuantity" : {
+      "meaning" : "模具盘点调整明细表任务数量"
+    },
+    "wmsInvAdjMoldDetReceiptDate" : {
+      "meaning" : "模具盘点调整明细表单据日期"
+    },
+    "wmsInvAdjMoldDetReceiptType" : {
+      "meaning" : "模具盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvAdjMoldDetRelatedTasksId" : {
+      "meaning" : "模具盘点调整明细表关联任务id"
+    },
+    "wmsInvAdjMoldDetSerialNumber" : {
+      "meaning" : "模具盘点调整明细表顺序号"
+    },
+    "wmsInvAdjMoldDetSource" : {
+      "meaning" : "模具盘点调整明细表源"
+    },
+    "wmsInvAdjMoldDetSourceType" : {
+      "meaning" : "模具盘点调整明细表来源类型"
+    },
+    "wmsInvAdjMoldDetState" : {
+      "meaning" : "模具盘点调整明细表通用状态"
+    },
+    "wmsInvAdjMoldDetSystemCode" : {
+      "meaning" : "模具盘点调整明细表系统编码"
+    },
+    "wmsInvAdjMoldDetTarget" : {
+      "meaning" : "模具盘点调整明细表目标"
+    },
+    "wmsInvAdjMoldDetTaskNodeName" : {
+      "meaning" : "模具盘点调整明细表任务节点名称"
+    },
+    "wmsInvAdjMoldDetTaskNodeType" : {
+      "meaning" : "模具盘点调整明细表任务节点类型"
+    },
+    "wmsInvAdjMoldDetTenantId" : {
+      "meaning" : "模具盘点调整明细表租户ID"
+    },
+    "wmsInvAdjMoldDetThirdPartyClass" : {
+      "meaning" : "模具盘点调整明细表第三方分类"
+    },
+    "wmsInvAdjMoldDetThirdPartyId" : {
+      "meaning" : "模具盘点调整明细表第三方系统中的唯一ID"
+    },
+    "wmsInvAdjMoldDetThirdPartyName" : {
+      "meaning" : "模具盘点调整明细表第三方名称"
+    },
+    "wmsInvAdjMoldDetToAuditDate" : {
+      "meaning" : "wmsInvAdjMoldDetToAuditDate"
+    },
+    "wmsInvAdjMoldDetToBeginTime" : {
+      "meaning" : "wmsInvAdjMoldDetToBeginTime"
+    },
+    "wmsInvAdjMoldDetToCreateTime" : {
+      "meaning" : "wmsInvAdjMoldDetToCreateTime"
+    },
+    "wmsInvAdjMoldDetToDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldDetToDateExtra1"
+    },
+    "wmsInvAdjMoldDetToDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldDetToDateExtra2"
+    },
+    "wmsInvAdjMoldDetToDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldDetToDateExtra3"
+    },
+    "wmsInvAdjMoldDetToDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldDetToDateExtra4"
+    },
+    "wmsInvAdjMoldDetToDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldDetToDateExtra5"
+    },
+    "wmsInvAdjMoldDetToDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldDetToDeliveryDate"
+    },
+    "wmsInvAdjMoldDetToEndTime" : {
+      "meaning" : "wmsInvAdjMoldDetToEndTime"
+    },
+    "wmsInvAdjMoldDetToReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldDetToReceiptDate"
+    },
+    "wmsInvAdjMoldDetToUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldDetToUpdateTime"
+    },
+    "wmsInvAdjMoldDetUnitCode" : {
+      "meaning" : "模具盘点调整明细表单位id"
+    },
+    "wmsInvAdjMoldDetUnitPriceExcludingTax" : {
+      "meaning" : "模具盘点调整明细表不含税单价"
+    },
+    "wmsInvAdjMoldDetUnitPriceIncludingTax" : {
+      "meaning" : "模具盘点调整明细表含税单价"
+    },
+    "wmsInvAdjMoldDetUpdateTime" : {
+      "meaning" : "模具盘点调整明细表更新时间"
+    },
+    "wmsInvAdjMoldDetUpdater" : {
+      "meaning" : "模具盘点调整明细表更新人"
+    },
+    "wmsInvAdjMoldDetUpdaterId" : {
+      "meaning" : "模具盘点调整明细表更新人ID"
+    },
+    "wmsInvAdjMoldDetUserCode" : {
+      "meaning" : "模具盘点调整明细表智能节点的唯一编码"
+    },
+    "wmsInvAdjMoldDetVarExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展1"
+    },
+    "wmsInvAdjMoldDetVarExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展2"
+    },
+    "wmsInvAdjMoldDetVarExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展3"
+    },
+    "wmsInvAdjMoldDetVarExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展4"
+    },
+    "wmsInvAdjMoldDetVarExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展5"
+    },
+    "wmsInvAdjMoldDetVersion" : {
+      "meaning" : "模具盘点调整明细表版本号"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldActualTimeRequired" : {
+      "meaning" : "模具盘点调整明细表实际需时(小时)"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldAdjustmentTimeRequired" : {
+      "meaning" : "模具盘点调整明细表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldApplicationId" : {
+      "meaning" : "模具盘点调整明细表应用ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldAuditDate" : {
+      "meaning" : "模具盘点调整明细表审核时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldAuditStatus" : {
+      "meaning" : "模具盘点调整明细表审核状态"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldAvailableScheduleId" : {
+      "meaning" : "模具盘点调整明细表可用日程id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldBeginTime" : {
+      "meaning" : "模具盘点调整明细表开始时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldBizVersion" : {
+      "meaning" : "模具盘点调整明细表业务自定义版本号"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldBriefName" : {
+      "meaning" : "模具盘点调整明细表简称"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldBusDivisId" : {
+      "meaning" : "模具盘点调整明细表事业部id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldClazz" : {
+      "meaning" : "模具盘点调整明细表子类 类名（表和类一一对应）"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldClosedReason" : {
+      "meaning" : "模具盘点调整明细表结案原因"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldClosedStatus" : {
+      "meaning" : "模具盘点调整明细表结案状态"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldComment" : {
+      "meaning" : "模具盘点调整明细表评论"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldCompleteQuantity" : {
+      "meaning" : "模具盘点调整明细表完成数量"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldCompleteStatus" : {
+      "meaning" : "模具盘点调整明细表完成状态"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldCreateTime" : {
+      "meaning" : "模具盘点调整明细表创建时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldCreator" : {
+      "meaning" : "模具盘点调整明细表创建人"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldCreatorId" : {
+      "meaning" : "模具盘点调整明细表创建人ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDateExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展时间1"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDateExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展时间2"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDateExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展时间3"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDateExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展时间4"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDateExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展时间5"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDefaultType" : {
+      "meaning" : "模具盘点调整明细表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDeliveryDate" : {
+      "meaning" : "模具盘点调整明细表交货日期"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldDescription" : {
+      "meaning" : "模具盘点调整明细表描述"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldEndTime" : {
+      "meaning" : "模具盘点调整明细表结束时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldEndTimeRequired" : {
+      "meaning" : "模具盘点调整明细表最后需时(小时)"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldEngName" : {
+      "meaning" : "模具盘点调整明细表英文名称"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldEquipmentId" : {
+      "meaning" : "模具盘点调整明细表设备id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldExchangeRateId" : {
+      "meaning" : "模具盘点调整明细表币种汇率id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldExtension" : {
+      "meaning" : "模具盘点调整明细表扩展数据"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldExternalState" : {
+      "meaning" : "模具盘点调整明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFilterClazz" : {
+      "meaning" : "模具盘点调整明细表冗余字段用于筛选"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFlags" : {
+      "meaning" : "模具盘点调整明细表63位标志位"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromAuditDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromAuditDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromBeginTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromBeginTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromCreateTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromCreateTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra1"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra2"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra3"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra4"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDateExtra5"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromDeliveryDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromEndTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromEndTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromReceiptDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFromUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldFromUpdateTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldFscType" : {
+      "meaning" : "模具盘点调整明细表FSC声明"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldGenerativePeople" : {
+      "meaning" : "模具盘点调整明细表下发人"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldGenerativeState" : {
+      "meaning" : "模具盘点调整明细表下发状态"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldGroovyScript" : {
+      "meaning" : "模具盘点调整明细表groovy脚本"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldGropeCode" : {
+      "meaning" : "模具盘点调整明细表搜索码"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldId" : {
+      "meaning" : "模具盘点调整明细表Pk"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldInUsed" : {
+      "meaning" : "模具盘点调整明细表是否被使用"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldInvTypeTaxRateId" : {
+      "meaning" : "模具盘点调整明细表发票税率id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsBanned" : {
+      "meaning" : "模具盘点调整明细表是否被禁用"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsDeleted" : {
+      "meaning" : "模具盘点调整明细表是否被删除"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsLeaf" : {
+      "meaning" : "模具盘点调整明细表是否叶子节点"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsMainFlow" : {
+      "meaning" : "模具盘点调整明细表是否是主流程"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsManualModificationDate" : {
+      "meaning" : "模具盘点调整明细表是否手动修改计划生产时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldIsolation" : {
+      "meaning" : "模具盘点调整明细表智能节点数据隔离标识"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldJsScript" : {
+      "meaning" : "模具盘点调整明细表js脚本"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldMaterialId" : {
+      "meaning" : "模具盘点调整明细表物料id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldName" : {
+      "meaning" : "模具盘点调整明细表智能节点名"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNameCodeSearch" : {
+      "meaning" : "模具盘点调整明细表name、user_code模糊搜索"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNumberExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展数量1"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNumberExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展数量2"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNumberExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展数量3"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNumberExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展数量4"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldNumberExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展数量5"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldParentId" : {
+      "meaning" : "模具盘点调整明细表父节点ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldPlannedOutputQuantity" : {
+      "meaning" : "模具盘点调整明细表计划产出数量"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldPlannedTimeRequired" : {
+      "meaning" : "模具盘点调整明细表计划需时(小时)"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldPrintTimes" : {
+      "meaning" : "模具盘点调整明细表打印次数"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldPriority" : {
+      "meaning" : "模具盘点调整明细表优先级"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldProcessInstanceId" : {
+      "meaning" : "模具盘点调整明细表流程实例ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldProductionProcessesTypeId" : {
+      "meaning" : "模具盘点调整明细表工序类型ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldProductionShiftId" : {
+      "meaning" : "模具盘点调整明细表生产班次ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldQuantity" : {
+      "meaning" : "模具盘点调整明细表任务数量"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldReceiptDate" : {
+      "meaning" : "模具盘点调整明细表单据日期"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldReceiptType" : {
+      "meaning" : "模具盘点调整明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldRelatedTasksId" : {
+      "meaning" : "模具盘点调整明细表关联任务id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldSerialNumber" : {
+      "meaning" : "模具盘点调整明细表顺序号"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldSource" : {
+      "meaning" : "模具盘点调整明细表源"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldSourceType" : {
+      "meaning" : "模具盘点调整明细表来源类型"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldState" : {
+      "meaning" : "模具盘点调整明细表通用状态"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldSystemCode" : {
+      "meaning" : "模具盘点调整明细表系统编码"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTarget" : {
+      "meaning" : "模具盘点调整明细表目标"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTaskNodeName" : {
+      "meaning" : "模具盘点调整明细表任务节点名称"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTaskNodeType" : {
+      "meaning" : "模具盘点调整明细表任务节点类型"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTenantId" : {
+      "meaning" : "模具盘点调整明细表租户ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldThirdPartyClass" : {
+      "meaning" : "模具盘点调整明细表第三方分类"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldThirdPartyId" : {
+      "meaning" : "模具盘点调整明细表第三方系统中的唯一ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldThirdPartyName" : {
+      "meaning" : "模具盘点调整明细表第三方名称"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToAuditDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToAuditDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToBeginTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToBeginTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToCreateTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToCreateTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra1" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra1"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra2" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra2"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra3" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra3"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra4" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra4"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra5" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDateExtra5"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToDeliveryDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToDeliveryDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToEndTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToEndTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToReceiptDate" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToReceiptDate"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldToUpdateTime" : {
+      "meaning" : "wmsInvAdjMoldDetWmsInvAdjMoldToUpdateTime"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTotalAmountExcludingTax" : {
+      "meaning" : "模具盘点调整明细表总盘点不含税金额"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldTotalAmountIncludingTax" : {
+      "meaning" : "模具盘点调整明细表总盘点含税金额"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldUnitCode" : {
+      "meaning" : "模具盘点调整明细表单位id"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldUpdateTime" : {
+      "meaning" : "模具盘点调整明细表更新时间"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldUpdater" : {
+      "meaning" : "模具盘点调整明细表更新人"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldUpdaterId" : {
+      "meaning" : "模具盘点调整明细表更新人ID"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldUserCode" : {
+      "meaning" : "模具盘点调整明细表智能节点的唯一编码"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVarExtra1" : {
+      "meaning" : "模具盘点调整明细表扩展1"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVarExtra2" : {
+      "meaning" : "模具盘点调整明细表扩展2"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVarExtra3" : {
+      "meaning" : "模具盘点调整明细表扩展3"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVarExtra4" : {
+      "meaning" : "模具盘点调整明细表扩展4"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVarExtra5" : {
+      "meaning" : "模具盘点调整明细表扩展5"
+    },
+    "wmsInvAdjMoldDetWmsInvAdjMoldVersion" : {
+      "meaning" : "模具盘点调整明细表版本号"
+    },
+    "wmsInvAdjMoldDetWorkOrderId" : {
+      "meaning" : "模具盘点调整明细表工单id"
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "api_name" : "/sup-outwarehouse/findList",
+  "table_name" : "辅料出仓表",
+  "request" : {
+    "supOutwarehouseClazz" : "SUP_OUTWAREHOUSE"
+  },
+  "mainTabClazz" : "SUP_OUTWAREHOUSE",
+  "response" : {
+    "supOutwarehouseActualTimeRequired" : {
+      "meaning" : "辅料出仓表实际需时(小时)"
+    },
+    "supOutwarehouseAdjustmentTimeRequired" : {
+      "meaning" : "辅料出仓表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "supOutwarehouseApplicationId" : {
+      "meaning" : "辅料出仓表应用ID"
+    },
+    "supOutwarehouseAuditDate" : {
+      "meaning" : "辅料出仓表审核时间"
+    },
+    "supOutwarehouseAuditStatus" : {
+      "meaning" : "辅料出仓表审核状态"
+    },
+    "supOutwarehouseAvailableScheduleId" : {
+      "meaning" : "辅料出仓表可用日程id"
+    },
+    "supOutwarehouseBeginTime" : {
+      "meaning" : "辅料出仓表开始时间"
+    },
+    "supOutwarehouseBizVersion" : {
+      "meaning" : "辅料出仓表业务自定义版本号"
+    },
+    "supOutwarehouseBriefName" : {
+      "meaning" : "辅料出仓表简称"
+    },
+    "supOutwarehouseBusDivisId" : {
+      "meaning" : "辅料出仓表事业部id"
+    },
+    "supOutwarehouseClazz" : {
+      "meaning" : "辅料出仓表子类 类名（表和类一一对应）"
+    },
+    "supOutwarehouseClosedReason" : {
+      "meaning" : "辅料出仓表结案原因"
+    },
+    "supOutwarehouseClosedStatus" : {
+      "meaning" : "辅料出仓表结案状态"
+    },
+    "supOutwarehouseComment" : {
+      "meaning" : "辅料出仓表评论"
+    },
+    "supOutwarehouseCompleteQuantity" : {
+      "meaning" : "辅料出仓表完成数量"
+    },
+    "supOutwarehouseCompleteStatus" : {
+      "meaning" : "辅料出仓表完成状态"
+    },
+    "supOutwarehouseCreateTime" : {
+      "meaning" : "辅料出仓表创建时间"
+    },
+    "supOutwarehouseCreator" : {
+      "meaning" : "辅料出仓表创建人"
+    },
+    "supOutwarehouseCreatorId" : {
+      "meaning" : "辅料出仓表创建人ID"
+    },
+    "supOutwarehouseDateExtra1" : {
+      "meaning" : "辅料出仓表扩展时间1"
+    },
+    "supOutwarehouseDateExtra2" : {
+      "meaning" : "辅料出仓表扩展时间2"
+    },
+    "supOutwarehouseDateExtra3" : {
+      "meaning" : "辅料出仓表扩展时间3"
+    },
+    "supOutwarehouseDateExtra4" : {
+      "meaning" : "辅料出仓表扩展时间4"
+    },
+    "supOutwarehouseDateExtra5" : {
+      "meaning" : "辅料出仓表扩展时间5"
+    },
+    "supOutwarehouseDefaultType" : {
+      "meaning" : "辅料出仓表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "supOutwarehouseDeliveryDate" : {
+      "meaning" : "辅料出仓表交货日期"
+    },
+    "supOutwarehouseDescription" : {
+      "meaning" : "辅料出仓表描述"
+    },
+    "supOutwarehouseEndTime" : {
+      "meaning" : "辅料出仓表结束时间"
+    },
+    "supOutwarehouseEndTimeRequired" : {
+      "meaning" : "辅料出仓表最后需时(小时)"
+    },
+    "supOutwarehouseEngName" : {
+      "meaning" : "辅料出仓表英文名称"
+    },
+    "supOutwarehouseEquipmentId" : {
+      "meaning" : "辅料出仓表设备id"
+    },
+    "supOutwarehouseExchangeRateId" : {
+      "meaning" : "辅料出仓表币种汇率id"
+    },
+    "supOutwarehouseExtension" : {
+      "meaning" : "辅料出仓表扩展数据"
+    },
+    "supOutwarehouseExternalState" : {
+      "meaning" : "辅料出仓表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "supOutwarehouseFilterClazz" : {
+      "meaning" : "辅料出仓表冗余字段用于筛选"
+    },
+    "supOutwarehouseFlags" : {
+      "meaning" : "辅料出仓表63位标志位"
+    },
+    "supOutwarehouseFromAuditDate" : {
+      "meaning" : "supOutwarehouseFromAuditDate"
+    },
+    "supOutwarehouseFromBeginTime" : {
+      "meaning" : "supOutwarehouseFromBeginTime"
+    },
+    "supOutwarehouseFromCreateTime" : {
+      "meaning" : "supOutwarehouseFromCreateTime"
+    },
+    "supOutwarehouseFromDateExtra1" : {
+      "meaning" : "supOutwarehouseFromDateExtra1"
+    },
+    "supOutwarehouseFromDateExtra2" : {
+      "meaning" : "supOutwarehouseFromDateExtra2"
+    },
+    "supOutwarehouseFromDateExtra3" : {
+      "meaning" : "supOutwarehouseFromDateExtra3"
+    },
+    "supOutwarehouseFromDateExtra4" : {
+      "meaning" : "supOutwarehouseFromDateExtra4"
+    },
+    "supOutwarehouseFromDateExtra5" : {
+      "meaning" : "supOutwarehouseFromDateExtra5"
+    },
+    "supOutwarehouseFromDeliveryDate" : {
+      "meaning" : "supOutwarehouseFromDeliveryDate"
+    },
+    "supOutwarehouseFromEndTime" : {
+      "meaning" : "supOutwarehouseFromEndTime"
+    },
+    "supOutwarehouseFromReceiptDate" : {
+      "meaning" : "supOutwarehouseFromReceiptDate"
+    },
+    "supOutwarehouseFromUpdateTime" : {
+      "meaning" : "supOutwarehouseFromUpdateTime"
+    },
+    "supOutwarehouseFscType" : {
+      "meaning" : "辅料出仓表FSC声明"
+    },
+    "supOutwarehouseGenerativePeople" : {
+      "meaning" : "辅料出仓表下发人"
+    },
+    "supOutwarehouseGenerativeState" : {
+      "meaning" : "辅料出仓表下发状态"
+    },
+    "supOutwarehouseGroovyScript" : {
+      "meaning" : "辅料出仓表groovy脚本"
+    },
+    "supOutwarehouseGropeCode" : {
+      "meaning" : "辅料出仓表搜索码"
+    },
+    "supOutwarehouseId" : {
+      "meaning" : "辅料出仓表PK",
+      "is_primary" : true
+    },
+    "supOutwarehouseInUsed" : {
+      "meaning" : "辅料出仓表是否被使用"
+    },
+    "supOutwarehouseInvTypeTaxRateId" : {
+      "meaning" : "辅料出仓表发票税率id"
+    },
+    "supOutwarehouseIsBanned" : {
+      "meaning" : "辅料出仓表是否被禁用"
+    },
+    "supOutwarehouseIsDeleted" : {
+      "meaning" : "辅料出仓表是否被删除"
+    },
+    "supOutwarehouseIsLeaf" : {
+      "meaning" : "辅料出仓表是否叶子节点"
+    },
+    "supOutwarehouseIsMainFlow" : {
+      "meaning" : "辅料出仓表是否是主流程"
+    },
+    "supOutwarehouseIsManualModificationDate" : {
+      "meaning" : "辅料出仓表是否手动修改计划生产时间"
+    },
+    "supOutwarehouseIsolation" : {
+      "meaning" : "辅料出仓表智能节点数据隔离标识"
+    },
+    "supOutwarehouseJsScript" : {
+      "meaning" : "辅料出仓表js脚本"
+    },
+    "supOutwarehouseMaterialId" : {
+      "meaning" : "辅料出仓表物料id"
+    },
+    "supOutwarehouseName" : {
+      "meaning" : "辅料出仓表智能节点名"
+    },
+    "supOutwarehouseNameCodeSearch" : {
+      "meaning" : "辅料出仓表name、user_code模糊搜索"
+    },
+    "supOutwarehouseNumberExtra1" : {
+      "meaning" : "辅料出仓表扩展数量1"
+    },
+    "supOutwarehouseNumberExtra2" : {
+      "meaning" : "辅料出仓表扩展数量2"
+    },
+    "supOutwarehouseNumberExtra3" : {
+      "meaning" : "辅料出仓表扩展数量3"
+    },
+    "supOutwarehouseNumberExtra4" : {
+      "meaning" : "辅料出仓表扩展数量4"
+    },
+    "supOutwarehouseNumberExtra5" : {
+      "meaning" : "辅料出仓表扩展数量5"
+    },
+    "supOutwarehouseParentId" : {
+      "meaning" : "辅料出仓表父节点ID"
+    },
+    "supOutwarehousePlannedOutputQuantity" : {
+      "meaning" : "辅料出仓表计划产出数量"
+    },
+    "supOutwarehousePlannedTimeRequired" : {
+      "meaning" : "辅料出仓表计划需时(小时)"
+    },
+    "supOutwarehousePrintTimes" : {
+      "meaning" : "辅料出仓表打印次数"
+    },
+    "supOutwarehousePriority" : {
+      "meaning" : "辅料出仓表优先级"
+    },
+    "supOutwarehouseProcessInstanceId" : {
+      "meaning" : "辅料出仓表流程实例ID"
+    },
+    "supOutwarehouseProductionProcessesTypeId" : {
+      "meaning" : "辅料出仓表工序类型ID"
+    },
+    "supOutwarehouseProductionShiftId" : {
+      "meaning" : "辅料出仓表生产班次ID"
+    },
+    "supOutwarehouseQuantity" : {
+      "meaning" : "辅料出仓表任务数量"
+    },
+    "supOutwarehouseReceiptDate" : {
+      "meaning" : "辅料出仓表单据日期"
+    },
+    "supOutwarehouseReceiptType" : {
+      "meaning" : "辅料出仓表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "supOutwarehouseRelatedTasksId" : {
+      "meaning" : "辅料出仓表关联任务id"
+    },
+    "supOutwarehouseSerialNumber" : {
+      "meaning" : "辅料出仓表顺序号"
+    },
+    "supOutwarehouseSource" : {
+      "meaning" : "辅料出仓表源"
+    },
+    "supOutwarehouseSourceType" : {
+      "meaning" : "辅料出仓表来源类型"
+    },
+    "supOutwarehouseState" : {
+      "meaning" : "辅料出仓表通用状态"
+    },
+    "supOutwarehouseSystemCode" : {
+      "meaning" : "辅料出仓表系统编码"
+    },
+    "supOutwarehouseTarget" : {
+      "meaning" : "辅料出仓表目标"
+    },
+    "supOutwarehouseTaskNodeName" : {
+      "meaning" : "辅料出仓表任务节点名称"
+    },
+    "supOutwarehouseTenantId" : {
+      "meaning" : "辅料出仓表租户id"
+    },
+    "supOutwarehouseThirdPartyClass" : {
+      "meaning" : "辅料出仓表第三方分类"
+    },
+    "supOutwarehouseThirdPartyId" : {
+      "meaning" : "辅料出仓表第三方系统中的唯一ID"
+    },
+    "supOutwarehouseThirdPartyName" : {
+      "meaning" : "辅料出仓表第三方名称"
+    },
+    "supOutwarehouseToAuditDate" : {
+      "meaning" : "supOutwarehouseToAuditDate"
+    },
+    "supOutwarehouseToBeginTime" : {
+      "meaning" : "supOutwarehouseToBeginTime"
+    },
+    "supOutwarehouseToCreateTime" : {
+      "meaning" : "supOutwarehouseToCreateTime"
+    },
+    "supOutwarehouseToDateExtra1" : {
+      "meaning" : "supOutwarehouseToDateExtra1"
+    },
+    "supOutwarehouseToDateExtra2" : {
+      "meaning" : "supOutwarehouseToDateExtra2"
+    },
+    "supOutwarehouseToDateExtra3" : {
+      "meaning" : "supOutwarehouseToDateExtra3"
+    },
+    "supOutwarehouseToDateExtra4" : {
+      "meaning" : "supOutwarehouseToDateExtra4"
+    },
+    "supOutwarehouseToDateExtra5" : {
+      "meaning" : "supOutwarehouseToDateExtra5"
+    },
+    "supOutwarehouseToDeliveryDate" : {
+      "meaning" : "supOutwarehouseToDeliveryDate"
+    },
+    "supOutwarehouseToEndTime" : {
+      "meaning" : "supOutwarehouseToEndTime"
+    },
+    "supOutwarehouseToReceiptDate" : {
+      "meaning" : "supOutwarehouseToReceiptDate"
+    },
+    "supOutwarehouseToUpdateTime" : {
+      "meaning" : "supOutwarehouseToUpdateTime"
+    },
+    "supOutwarehouseUnitCode" : {
+      "meaning" : "辅料出仓表单位id"
+    },
+    "supOutwarehouseUpdateTime" : {
+      "meaning" : "辅料出仓表更新时间"
+    },
+    "supOutwarehouseUpdater" : {
+      "meaning" : "辅料出仓表更新人"
+    },
+    "supOutwarehouseUpdaterId" : {
+      "meaning" : "辅料出仓表更新人ID"
+    },
+    "supOutwarehouseUserCode" : {
+      "meaning" : "辅料出仓表智能节点的唯一编码"
+    },
+    "supOutwarehouseVarExtra1" : {
+      "meaning" : "辅料出仓表扩展1"
+    },
+    "supOutwarehouseVarExtra2" : {
+      "meaning" : "辅料出仓表扩展2"
+    },
+    "supOutwarehouseVarExtra3" : {
+      "meaning" : "辅料出仓表扩展3"
+    },
+    "supOutwarehouseVarExtra4" : {
+      "meaning" : "辅料出仓表扩展4"
+    },
+    "supOutwarehouseVarExtra5" : {
+      "meaning" : "辅料出仓表扩展5"
+    },
+    "supOutwarehouseVersion" : {
+      "meaning" : "辅料出仓表版本号"
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+      "api_name": "/prfma-invo-det/findList",
+      "table_name": "形式发票明细表",
+      "request": {
+        "prfmaInvoDetPrfmaInvoClazz": "PRFMA_INVO",
+        "prfmaInvoDetClazz": "PRFMA_INVO_DET"
+      },
+      "mainTabClazz": "PRFMA_INVO_DET",
+      "response": {
+        "prfmaInvoDetActualTimeRequired": {
+          "meaning": "形式发票明细表实际需时(小时)"
+        },
+        "prfmaInvoDetAdjustmentTimeRequired": {
+          "meaning": "形式发票明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prfmaInvoDetApplicationId": {
+          "meaning": "形式发票明细表应用ID"
+        },
+        "prfmaInvoDetAuditDate": {
+          "meaning": "形式发票明细表审核时间"
+        },
+        "prfmaInvoDetAuditStatus": {
+          "meaning": "形式发票明细表审核状态"
+        },
+        "prfmaInvoDetAvailableScheduleId": {
+          "meaning": "形式发票明细表可用日程id"
+        },
+        "prfmaInvoDetBeginTime": {
+          "meaning": "形式发票明细表开始时间"
+        },
+        "prfmaInvoDetBizVersion": {
+          "meaning": "形式发票明细表业务自定义版本号"
+        },
+        "prfmaInvoDetBriefName": {
+          "meaning": "形式发票明细表简称"
+        },
+        "prfmaInvoDetBusDivisId": {
+          "meaning": "形式发票明细表事业部id"
+        },
+        "prfmaInvoDetClazz": {
+          "meaning": "形式发票明细表子类 类名（表和类一一对应）"
+        },
+        "prfmaInvoDetClosedReason": {
+          "meaning": "形式发票明细表结案原因"
+        },
+        "prfmaInvoDetClosedStatus": {
+          "meaning": "形式发票明细表结案状态"
+        },
+        "prfmaInvoDetComment": {
+          "meaning": "形式发票明细表评论"
+        },
+        "prfmaInvoDetCompleteQuantity": {
+          "meaning": "形式发票明细表完成数量"
+        },
+        "prfmaInvoDetCompleteStatus": {
+          "meaning": "形式发票明细表完成状态"
+        },
+        "prfmaInvoDetCreateTime": {
+          "meaning": "形式发票明细表创建时间"
+        },
+        "prfmaInvoDetCreator": {
+          "meaning": "形式发票明细表创建人"
+        },
+        "prfmaInvoDetCreatorId": {
+          "meaning": "形式发票明细表创建人ID"
+        },
+        "prfmaInvoDetDateExtra1": {
+          "meaning": "形式发票明细表扩展时间1"
+        },
+        "prfmaInvoDetDateExtra2": {
+          "meaning": "形式发票明细表扩展时间2"
+        },
+        "prfmaInvoDetDateExtra3": {
+          "meaning": "形式发票明细表扩展时间3"
+        },
+        "prfmaInvoDetDateExtra4": {
+          "meaning": "形式发票明细表扩展时间4"
+        },
+        "prfmaInvoDetDateExtra5": {
+          "meaning": "形式发票明细表扩展时间5"
+        },
+        "prfmaInvoDetDefaultType": {
+          "meaning": "形式发票明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "prfmaInvoDetDeliveryDate": {
+          "meaning": "形式发票明细表交货日期"
+        },
+        "prfmaInvoDetDescription": {
+          "meaning": "形式发票明细表描述"
+        },
+        "prfmaInvoDetEndTime": {
+          "meaning": "形式发票明细表结束时间"
+        },
+        "prfmaInvoDetEndTimeRequired": {
+          "meaning": "形式发票明细表最后需时(小时)"
+        },
+        "prfmaInvoDetEngName": {
+          "meaning": "形式发票明细表英文名称"
+        },
+        "prfmaInvoDetEquipmentId": {
+          "meaning": "形式发票明细表设备id"
+        },
+        "prfmaInvoDetExchangeRateId": {
+          "meaning": "形式发票明细表币种汇率id"
+        },
+        "prfmaInvoDetExtension": {
+          "meaning": "形式发票明细表扩展数据"
+        },
+        "prfmaInvoDetExternalState": {
+          "meaning": "形式发票明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prfmaInvoDetFilterClazz": {
+          "meaning": "形式发票明细表冗余字段用于筛选"
+        },
+        "prfmaInvoDetFlags": {
+          "meaning": "形式发票明细表63位标志位"
+        },
+        "prfmaInvoDetFromAuditDate": {
+          "meaning": "prfmaInvoDetFromAuditDate"
+        },
+        "prfmaInvoDetFromBeginTime": {
+          "meaning": "prfmaInvoDetFromBeginTime"
+        },
+        "prfmaInvoDetFromCreateTime": {
+          "meaning": "prfmaInvoDetFromCreateTime"
+        },
+        "prfmaInvoDetFromDateExtra1": {
+          "meaning": "prfmaInvoDetFromDateExtra1"
+        },
+        "prfmaInvoDetFromDateExtra2": {
+          "meaning": "prfmaInvoDetFromDateExtra2"
+        },
+        "prfmaInvoDetFromDateExtra3": {
+          "meaning": "prfmaInvoDetFromDateExtra3"
+        },
+        "prfmaInvoDetFromDateExtra4": {
+          "meaning": "prfmaInvoDetFromDateExtra4"
+        },
+        "prfmaInvoDetFromDateExtra5": {
+          "meaning": "prfmaInvoDetFromDateExtra5"
+        },
+        "prfmaInvoDetFromDeliveryDate": {
+          "meaning": "prfmaInvoDetFromDeliveryDate"
+        },
+        "prfmaInvoDetFromEndTime": {
+          "meaning": "prfmaInvoDetFromEndTime"
+        },
+        "prfmaInvoDetFromReceiptDate": {
+          "meaning": "prfmaInvoDetFromReceiptDate"
+        },
+        "prfmaInvoDetFromUpdateTime": {
+          "meaning": "prfmaInvoDetFromUpdateTime"
+        },
+        "prfmaInvoDetFscType": {
+          "meaning": "形式发票明细表FSC声明"
+        },
+        "prfmaInvoDetGenerativePeople": {
+          "meaning": "形式发票明细表下发人"
+        },
+        "prfmaInvoDetGenerativeState": {
+          "meaning": "形式发票明细表下发状态"
+        },
+        "prfmaInvoDetGroovyScript": {
+          "meaning": "形式发票明细表groovy脚本"
+        },
+        "prfmaInvoDetGropeCode": {
+          "meaning": "形式发票明细表搜索码"
+        },
+        "prfmaInvoDetId": {
+          "meaning": "形式发票明细表PK",
+          "is_primary": true
+        },
+        "prfmaInvoDetInUsed": {
+          "meaning": "形式发票明细表是否被使用"
+        },
+        "prfmaInvoDetInvTypeTaxRateId": {
+          "meaning": "形式发票明细表发票税率id"
+        },
+        "prfmaInvoDetIsBanned": {
+          "meaning": "形式发票明细表是否被禁用"
+        },
+        "prfmaInvoDetIsDeleted": {
+          "meaning": "形式发票明细表是否被删除"
+        },
+        "prfmaInvoDetIsLeaf": {
+          "meaning": "形式发票明细表是否叶子节点"
+        },
+        "prfmaInvoDetIsMainFlow": {
+          "meaning": "形式发票明细表是否是主流程"
+        },
+        "prfmaInvoDetIsManualModificationDate": {
+          "meaning": "形式发票明细表是否手动修改计划生产时间"
+        },
+        "prfmaInvoDetIsolation": {
+          "meaning": "形式发票明细表智能节点数据隔离标识"
+        },
+        "prfmaInvoDetJsScript": {
+          "meaning": "形式发票明细表js脚本"
+        },
+        "prfmaInvoDetMaterialId": {
+          "meaning": "形式发票明细表物料id"
+        },
+        "prfmaInvoDetName": {
+          "meaning": "形式发票明细表智能节点名"
+        },
+        "prfmaInvoDetNameCodeSearch": {
+          "meaning": "形式发票明细表name、user de模糊搜索"
+        },
+        "prfmaInvoDetNumberExtra1": {
+          "meaning": "形式发票明细表扩展数量1"
+        },
+        "prfmaInvoDetNumberExtra2": {
+          "meaning": "形式发票明细表扩展数量2"
+        },
+        "prfmaInvoDetNumberExtra3": {
+          "meaning": "形式发票明细表扩展数量3"
+        },
+        "prfmaInvoDetNumberExtra4": {
+          "meaning": "形式发票明细表扩展数量4"
+        },
+        "prfmaInvoDetNumberExtra5": {
+          "meaning": "形式发票明细表扩展数量5"
+        },
+        "prfmaInvoDetParentId": {
+          "meaning": "形式发票明细表父节点ID"
+        },
+        "prfmaInvoDetPlannedOutputQuantity": {
+          "meaning": "形式发票明细表计划产出数量"
+        },
+        "prfmaInvoDetPlannedTimeRequired": {
+          "meaning": "形式发票明细表计划需时(小时)"
+        },
+        "prfmaInvoDetPrfmaInvoActualTimeRequired": {
+          "meaning": "形式发票明细表实际需时(小时)"
+        },
+        "prfmaInvoDetPrfmaInvoAdjustmentTimeRequired": {
+          "meaning": "形式发票明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "prfmaInvoDetPrfmaInvoApplicationId": {
+          "meaning": "形式发票明细表应用ID"
+        },
+        "prfmaInvoDetPrfmaInvoArrivalPort": {
+          "meaning": "形式发票明细表到达港口"
+        },
+        "prfmaInvoDetPrfmaInvoAuditDate": {
+          "meaning": "形式发票明细表审核时间"
+        },
+        "prfmaInvoDetPrfmaInvoAuditStatus": {
+          "meaning": "形式发票明细表审核状态"
+        },
+        "prfmaInvoDetPrfmaInvoAvailableScheduleId": {
+          "meaning": "形式发票明细表可用日程id"
+        },
+        "prfmaInvoDetPrfmaInvoBeginTime": {
+          "meaning": "形式发票明细表开始时间"
+        },
+        "prfmaInvoDetPrfmaInvoBizVersion": {
+          "meaning": "形式发票明细表业务自定义版本号"
+        },
+        "prfmaInvoDetPrfmaInvoBriefName": {
+          "meaning": "形式发票明细表简称"
+        },
+        "prfmaInvoDetPrfmaInvoBusDivisId": {
+          "meaning": "形式发票明细表事业部id"
+        },
+        "prfmaInvoDetPrfmaInvoClazz": {
+          "meaning": "形式发票明细表子类 类名（表和类一一对应）"
+        },
+        "prfmaInvoDetPrfmaInvoClosedReason": {
+          "meaning": "形式发票明细表结案原因"
+        },
+        "prfmaInvoDetPrfmaInvoClosedStatus": {
+          "meaning": "形式发票明细表结案状态"
+        },
+        "prfmaInvoDetPrfmaInvoComment": {
+          "meaning": "形式发票明细表评论"
+        },
+        "prfmaInvoDetPrfmaInvoCompanyAddress": {
+          "meaning": "形式发票明细表公司详细地址"
+        },
+        "prfmaInvoDetPrfmaInvoCompanyAreaId": {
+          "meaning": "形式发票明细表公司行政区域_id"
+        },
+        "prfmaInvoDetPrfmaInvoCompleteQuantity": {
+          "meaning": "形式发票明细表完成数量"
+        },
+        "prfmaInvoDetPrfmaInvoCompleteStatus": {
+          "meaning": "形式发票明细表完成状态"
+        },
+        "prfmaInvoDetPrfmaInvoCreateTime": {
+          "meaning": "形式发票明细表创建时间"
+        },
+        "prfmaInvoDetPrfmaInvoCreator": {
+          "meaning": "形式发票明细表创建人"
+        },
+        "prfmaInvoDetPrfmaInvoCreatorId": {
+          "meaning": "形式发票明细表创建人ID"
+        },
+        "prfmaInvoDetPrfmaInvoCustomerAddress": {
+          "meaning": "形式发票明细表客户详细地址"
+        },
+        "prfmaInvoDetPrfmaInvoCustomerAreaId": {
+          "meaning": "形式发票明细表客户行政区域_id"
+        },
+        "prfmaInvoDetPrfmaInvoCustomerId": {
+          "meaning": "形式发票明细表客户_id"
+        },
+        "prfmaInvoDetPrfmaInvoDateExtra1": {
+          "meaning": "形式发票明细表扩展时间1"
+        },
+        "prfmaInvoDetPrfmaInvoDateExtra2": {
+          "meaning": "形式发票明细表扩展时间2"
+        },
+        "prfmaInvoDetPrfmaInvoDateExtra3": {
+          "meaning": "形式发票明细表扩展时间3"
+        },
+        "prfmaInvoDetPrfmaInvoDateExtra4": {
+          "meaning": "形式发票明细表扩展时间4"
+        },
+        "prfmaInvoDetPrfmaInvoDateExtra5": {
+          "meaning": "形式发票明细表扩展时间5"
+        },
+        "prfmaInvoDetPrfmaInvoDefaultType": {
+          "meaning": "形式发票明细表智能节点主类型 默认类型（类型的system de字段）"
+        },
+        "prfmaInvoDetPrfmaInvoDeliveryDate": {
+          "meaning": "形式发票明细表交货日期"
+        },
+        "prfmaInvoDetPrfmaInvoDeparturePort": {
+          "meaning": "形式发票明细表出发港口"
+        },
+        "prfmaInvoDetPrfmaInvoDescription": {
+          "meaning": "形式发票明细表描述"
+        },
+        "prfmaInvoDetPrfmaInvoEndTime": {
+          "meaning": "形式发票明细表结束时间"
+        },
+        "prfmaInvoDetPrfmaInvoEndTimeRequired": {
+          "meaning": "形式发票明细表最后需时(小时)"
+        },
+        "prfmaInvoDetPrfmaInvoEngName": {
+          "meaning": "形式发票明细表英文名称"
+        },
+        "prfmaInvoDetPrfmaInvoEquipmentId": {
+          "meaning": "形式发票明细表设备id"
+        },
+        "prfmaInvoDetPrfmaInvoEstimatedTimeOfArrival": {
+          "type": "object",
+          "meaning": "形式发票明细表ETA(船舶预抵港时间)"
+        },
+        "prfmaInvoDetPrfmaInvoEstimatedTimeOfDeparture": {
+          "type": "object",
+          "meaning": "形式发票明细表ETD(船舶预离港时间)"
+        },
+        "prfmaInvoDetPrfmaInvoExchangeRateId": {
+          "meaning": "形式发票明细表币种汇率id"
+        },
+        "prfmaInvoDetPrfmaInvoExtension": {
+          "meaning": "形式发票明细表扩展数据"
+        },
+        "prfmaInvoDetPrfmaInvoExternalState": {
+          "meaning": "形式发票明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prfmaInvoDetPrfmaInvoFilterClazz": {
+          "meaning": "形式发票明细表冗余字段用于筛选"
+        },
+        "prfmaInvoDetPrfmaInvoFlags": {
+          "meaning": "形式发票明细表63位标志位"
+        },
+        "prfmaInvoDetPrfmaInvoFromAuditDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromAuditDate"
+        },
+        "prfmaInvoDetPrfmaInvoFromBeginTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromBeginTime"
+        },
+        "prfmaInvoDetPrfmaInvoFromCreateTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromCreateTime"
+        },
+        "prfmaInvoDetPrfmaInvoFromDateExtra1": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDateExtra1"
+        },
+        "prfmaInvoDetPrfmaInvoFromDateExtra2": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDateExtra2"
+        },
+        "prfmaInvoDetPrfmaInvoFromDateExtra3": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDateExtra3"
+        },
+        "prfmaInvoDetPrfmaInvoFromDateExtra4": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDateExtra4"
+        },
+        "prfmaInvoDetPrfmaInvoFromDateExtra5": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDateExtra5"
+        },
+        "prfmaInvoDetPrfmaInvoFromDeliveryDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromDeliveryDate"
+        },
+        "prfmaInvoDetPrfmaInvoFromEndTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromEndTime"
+        },
+        "prfmaInvoDetPrfmaInvoFromEstimatedTimeOfArrival": {
+          "type": "object",
+          "meaning": "prfmaInvoDetPrfmaInvoFromEstimatedTimeOfArrival"
+        },
+        "prfmaInvoDetPrfmaInvoFromEstimatedTimeOfDeparture": {
+          "type": "object",
+          "meaning": "prfmaInvoDetPrfmaInvoFromEstimatedTimeOfDeparture"
+        },
+        "prfmaInvoDetPrfmaInvoFromReceiptDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromReceiptDate"
+        },
+        "prfmaInvoDetPrfmaInvoFromUpdateTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoFromUpdateTime"
+        },
+        "prfmaInvoDetPrfmaInvoFscType": {
+          "meaning": "形式发票明细表FSC声明"
+        },
+        "prfmaInvoDetPrfmaInvoGenerativePeople": {
+          "meaning": "形式发票明细表下发人"
+        },
+        "prfmaInvoDetPrfmaInvoGenerativeState": {
+          "meaning": "形式发票明细表下发状态"
+        },
+        "prfmaInvoDetPrfmaInvoGroovyScript": {
+          "meaning": "形式发票明细表groovy脚本"
+        },
+        "prfmaInvoDetPrfmaInvoGropeCode": {
+          "meaning": "形式发票明细表搜索码"
+        },
+        "prfmaInvoDetPrfmaInvoId": {
+          "meaning": "形式发票明细表PK"
+        },
+        "prfmaInvoDetPrfmaInvoInUsed": {
+          "meaning": "形式发票明细表是否被使用"
+        },
+        "prfmaInvoDetPrfmaInvoInvTypeTaxRateId": {
+          "meaning": "形式发票明细表发票税率id"
+        },
+        "prfmaInvoDetPrfmaInvoIsBanned": {
+          "meaning": "形式发票明细表是否被禁用"
+        },
+        "prfmaInvoDetPrfmaInvoIsDeleted": {
+          "meaning": "形式发票明细表是否被删除"
+        },
+        "prfmaInvoDetPrfmaInvoIsLeaf": {
+          "meaning": "形式发票明细表是否叶子节点"
+        },
+        "prfmaInvoDetPrfmaInvoIsMainFlow": {
+          "meaning": "形式发票明细表是否是主流程"
+        },
+        "prfmaInvoDetPrfmaInvoIsManualModificationDate": {
+          "meaning": "形式发票明细表是否手动修改计划生产时间"
+        },
+        "prfmaInvoDetPrfmaInvoIsolation": {
+          "meaning": "形式发票明细表智能节点数据隔离标识"
+        },
+        "prfmaInvoDetPrfmaInvoJsScript": {
+          "meaning": "形式发票明细表js脚本"
+        },
+        "prfmaInvoDetPrfmaInvoMaterialId": {
+          "meaning": "形式发票明细表物料id"
+        },
+        "prfmaInvoDetPrfmaInvoName": {
+          "meaning": "形式发票明细表智能节点名"
+        },
+        "prfmaInvoDetPrfmaInvoNameCodeSearch": {
+          "meaning": "形式发票明细表name、user de模糊搜索"
+        },
+        "prfmaInvoDetPrfmaInvoNumberExtra1": {
+          "meaning": "形式发票明细表扩展数量1"
+        },
+        "prfmaInvoDetPrfmaInvoNumberExtra2": {
+          "meaning": "形式发票明细表扩展数量2"
+        },
+        "prfmaInvoDetPrfmaInvoNumberExtra3": {
+          "meaning": "形式发票明细表扩展数量3"
+        },
+        "prfmaInvoDetPrfmaInvoNumberExtra4": {
+          "meaning": "形式发票明细表扩展数量4"
+        },
+        "prfmaInvoDetPrfmaInvoNumberExtra5": {
+          "meaning": "形式发票明细表扩展数量5"
+        },
+        "prfmaInvoDetPrfmaInvoParentId": {
+          "meaning": "形式发票明细表父节点ID"
+        },
+        "prfmaInvoDetPrfmaInvoPaymentTerms": {
+          "meaning": "形式发票明细表付款条件"
+        },
+        "prfmaInvoDetPrfmaInvoPlannedOutputQuantity": {
+          "meaning": "形式发票明细表计划产出数量"
+        },
+        "prfmaInvoDetPrfmaInvoPlannedTimeRequired": {
+          "meaning": "形式发票明细表计划需时(小时)"
+        },
+        "prfmaInvoDetPrfmaInvoPrintTimes": {
+          "meaning": "形式发票明细表打印次数"
+        },
+        "prfmaInvoDetPrfmaInvoPriority": {
+          "meaning": "形式发票明细表优先级"
+        },
+        "prfmaInvoDetPrfmaInvoProcessInstanceId": {
+          "meaning": "形式发票明细表流程实例ID"
+        },
+        "prfmaInvoDetPrfmaInvoProductionProcessesTypeId": {
+          "meaning": "形式发票明细表工序类型ID"
+        },
+        "prfmaInvoDetPrfmaInvoProductionShiftId": {
+          "meaning": "形式发票明细表生产班次ID"
+        },
+        "prfmaInvoDetPrfmaInvoQuantity": {
+          "meaning": "形式发票明细表任务数量"
+        },
+        "prfmaInvoDetPrfmaInvoReceiptDate": {
+          "meaning": "形式发票明细表单据日期"
+        },
+        "prfmaInvoDetPrfmaInvoReceiptType": {
+          "meaning": "形式发票明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prfmaInvoDetPrfmaInvoRelatedTasksId": {
+          "meaning": "形式发票明细表关联任务id"
+        },
+        "prfmaInvoDetPrfmaInvoSerialNumber": {
+          "meaning": "形式发票明细表顺序号"
+        },
+        "prfmaInvoDetPrfmaInvoShippingAddress": {
+          "meaning": "形式发票明细表送货详细地址"
+        },
+        "prfmaInvoDetPrfmaInvoShippingAreaId": {
+          "meaning": "形式发票明细表送货行政区域_id"
+        },
+        "prfmaInvoDetPrfmaInvoSource": {
+          "meaning": "形式发票明细表源"
+        },
+        "prfmaInvoDetPrfmaInvoSourceType": {
+          "meaning": "形式发票明细表来源类型"
+        },
+        "prfmaInvoDetPrfmaInvoState": {
+          "meaning": "形式发票明细表通用状态"
+        },
+        "prfmaInvoDetPrfmaInvoSystemCode": {
+          "meaning": "形式发票明细表系统编码"
+        },
+        "prfmaInvoDetPrfmaInvoTarget": {
+          "meaning": "形式发票明细表目标"
+        },
+        "prfmaInvoDetPrfmaInvoTaskNodeName": {
+          "meaning": "形式发票明细表任务节点名称"
+        },
+        "prfmaInvoDetPrfmaInvoTenantId": {
+          "meaning": "形式发票明细表租户_id"
+        },
+        "prfmaInvoDetPrfmaInvoThirdPartyClass": {
+          "meaning": "形式发票明细表第三方分类"
+        },
+        "prfmaInvoDetPrfmaInvoThirdPartyId": {
+          "meaning": "形式发票明细表第三方系统中的唯一ID"
+        },
+        "prfmaInvoDetPrfmaInvoThirdPartyName": {
+          "meaning": "形式发票明细表第三方名称"
+        },
+        "prfmaInvoDetPrfmaInvoToAuditDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoToAuditDate"
+        },
+        "prfmaInvoDetPrfmaInvoToBeginTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoToBeginTime"
+        },
+        "prfmaInvoDetPrfmaInvoToCreateTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoToCreateTime"
+        },
+        "prfmaInvoDetPrfmaInvoToDateExtra1": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDateExtra1"
+        },
+        "prfmaInvoDetPrfmaInvoToDateExtra2": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDateExtra2"
+        },
+        "prfmaInvoDetPrfmaInvoToDateExtra3": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDateExtra3"
+        },
+        "prfmaInvoDetPrfmaInvoToDateExtra4": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDateExtra4"
+        },
+        "prfmaInvoDetPrfmaInvoToDateExtra5": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDateExtra5"
+        },
+        "prfmaInvoDetPrfmaInvoToDeliveryDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoToDeliveryDate"
+        },
+        "prfmaInvoDetPrfmaInvoToEndTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoToEndTime"
+        },
+        "prfmaInvoDetPrfmaInvoToEstimatedTimeOfArrival": {
+          "type": "object",
+          "meaning": "prfmaInvoDetPrfmaInvoToEstimatedTimeOfArrival"
+        },
+        "prfmaInvoDetPrfmaInvoToEstimatedTimeOfDeparture": {
+          "type": "object",
+          "meaning": "prfmaInvoDetPrfmaInvoToEstimatedTimeOfDeparture"
+        },
+        "prfmaInvoDetPrfmaInvoToReceiptDate": {
+          "meaning": "prfmaInvoDetPrfmaInvoToReceiptDate"
+        },
+        "prfmaInvoDetPrfmaInvoToUpdateTime": {
+          "meaning": "prfmaInvoDetPrfmaInvoToUpdateTime"
+        },
+        "prfmaInvoDetPrfmaInvoTradeTerms": {
+          "meaning": "形式发票明细表贸易条款"
+        },
+        "prfmaInvoDetPrfmaInvoUnitCode": {
+          "meaning": "形式发票明细表单位id"
+        },
+        "prfmaInvoDetPrfmaInvoUpdateTime": {
+          "meaning": "形式发票明细表更新时间"
+        },
+        "prfmaInvoDetPrfmaInvoUpdater": {
+          "meaning": "形式发票明细表更新人"
+        },
+        "prfmaInvoDetPrfmaInvoUpdaterId": {
+          "meaning": "形式发票明细表更新人ID"
+        },
+        "prfmaInvoDetPrfmaInvoUserCode": {
+          "meaning": "形式发票明细表智能节点的唯一编码"
+        },
+        "prfmaInvoDetPrfmaInvoVarExtra1": {
+          "meaning": "形式发票明细表扩展1"
+        },
+        "prfmaInvoDetPrfmaInvoVarExtra2": {
+          "meaning": "形式发票明细表扩展2"
+        },
+        "prfmaInvoDetPrfmaInvoVarExtra3": {
+          "meaning": "形式发票明细表扩展3"
+        },
+        "prfmaInvoDetPrfmaInvoVarExtra4": {
+          "meaning": "形式发票明细表扩展4"
+        },
+        "prfmaInvoDetPrfmaInvoVarExtra5": {
+          "meaning": "形式发票明细表扩展5"
+        },
+        "prfmaInvoDetPrfmaInvoVersion": {
+          "meaning": "形式发票明细表版本号"
+        },
+        "prfmaInvoDetPrfmaInvoVesselName": {
+          "meaning": "形式发票明细表船名"
+        },
+        "prfmaInvoDetPrfmaInvoVoyage": {
+          "meaning": "形式发票明细表航次"
+        },
+        "prfmaInvoDetPrintTimes": {
+          "meaning": "形式发票明细表打印次数"
+        },
+        "prfmaInvoDetPriority": {
+          "meaning": "形式发票明细表优先级"
+        },
+        "prfmaInvoDetProcessInstanceId": {
+          "meaning": "形式发票明细表流程实例ID"
+        },
+        "prfmaInvoDetProductionProcessesTypeId": {
+          "meaning": "形式发票明细表工序类型ID"
+        },
+        "prfmaInvoDetProductionShiftId": {
+          "meaning": "形式发票明细表生产班次ID"
+        },
+        "prfmaInvoDetQuantity": {
+          "meaning": "形式发票明细表任务数量"
+        },
+        "prfmaInvoDetReceiptDate": {
+          "meaning": "形式发票明细表单据日期"
+        },
+        "prfmaInvoDetReceiptType": {
+          "meaning": "形式发票明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "prfmaInvoDetRelatedTasksId": {
+          "meaning": "形式发票明细表关联任务id"
+        },
+        "prfmaInvoDetSerialNumber": {
+          "meaning": "形式发票明细表顺序号"
+        },
+        "prfmaInvoDetSource": {
+          "meaning": "形式发票明细表源"
+        },
+        "prfmaInvoDetSourceType": {
+          "meaning": "形式发票明细表来源类型"
+        },
+        "prfmaInvoDetState": {
+          "meaning": "形式发票明细表通用状态"
+        },
+        "prfmaInvoDetSystemCode": {
+          "meaning": "形式发票明细表系统编码"
+        },
+        "prfmaInvoDetTarget": {
+          "meaning": "形式发票明细表目标"
+        },
+        "prfmaInvoDetTaskNodeName": {
+          "meaning": "形式发票明细表任务节点名称"
+        },
+        "prfmaInvoDetTenantId": {
+          "meaning": "形式发票明细表租户_id"
+        },
+        "prfmaInvoDetThirdPartyClass": {
+          "meaning": "形式发票明细表第三方分类"
+        },
+        "prfmaInvoDetThirdPartyId": {
+          "meaning": "形式发票明细表第三方系统中的唯一ID"
+        },
+        "prfmaInvoDetThirdPartyName": {
+          "meaning": "形式发票明细表第三方名称"
+        },
+        "prfmaInvoDetToAuditDate": {
+          "meaning": "prfmaInvoDetToAuditDate"
+        },
+        "prfmaInvoDetToBeginTime": {
+          "meaning": "prfmaInvoDetToBeginTime"
+        },
+        "prfmaInvoDetToCreateTime": {
+          "meaning": "prfmaInvoDetToCreateTime"
+        },
+        "prfmaInvoDetToDateExtra1": {
+          "meaning": "prfmaInvoDetToDateExtra1"
+        },
+        "prfmaInvoDetToDateExtra2": {
+          "meaning": "prfmaInvoDetToDateExtra2"
+        },
+        "prfmaInvoDetToDateExtra3": {
+          "meaning": "prfmaInvoDetToDateExtra3"
+        },
+        "prfmaInvoDetToDateExtra4": {
+          "meaning": "prfmaInvoDetToDateExtra4"
+        },
+        "prfmaInvoDetToDateExtra5": {
+          "meaning": "prfmaInvoDetToDateExtra5"
+        },
+        "prfmaInvoDetToDeliveryDate": {
+          "meaning": "prfmaInvoDetToDeliveryDate"
+        },
+        "prfmaInvoDetToEndTime": {
+          "meaning": "prfmaInvoDetToEndTime"
+        },
+        "prfmaInvoDetToReceiptDate": {
+          "meaning": "prfmaInvoDetToReceiptDate"
+        },
+        "prfmaInvoDetToUpdateTime": {
+          "meaning": "prfmaInvoDetToUpdateTime"
+        },
+        "prfmaInvoDetTotalAmount": {
+          "meaning": "形式发票明细表金额"
+        },
+        "prfmaInvoDetUnitCode": {
+          "meaning": "形式发票明细表单位id"
+        },
+        "prfmaInvoDetUnitPrice": {
+          "meaning": "形式发票明细表单价"
+        },
+        "prfmaInvoDetUpdateTime": {
+          "meaning": "形式发票明细表更新时间"
+        },
+        "prfmaInvoDetUpdater": {
+          "meaning": "形式发票明细表更新人"
+        },
+        "prfmaInvoDetUpdaterId": {
+          "meaning": "形式发票明细表更新人ID"
+        },
+        "prfmaInvoDetUserCode": {
+          "meaning": "形式发票明细表智能节点的唯一编码"
+        },
+        "prfmaInvoDetVarExtra1": {
+          "meaning": "形式发票明细表扩展1"
+        },
+        "prfmaInvoDetVarExtra2": {
+          "meaning": "形式发票明细表扩展2"
+        },
+        "prfmaInvoDetVarExtra3": {
+          "meaning": "形式发票明细表扩展3"
+        },
+        "prfmaInvoDetVarExtra4": {
+          "meaning": "形式发票明细表扩展4"
+        },
+        "prfmaInvoDetVarExtra5": {
+          "meaning": "形式发票明细表扩展5"
+        },
+        "prfmaInvoDetVersion": {
+          "meaning": "形式发票明细表版本号"
+        }
+      }
+    }

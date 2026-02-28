@@ -1,0 +1,365 @@
+{
+  "api_name" : "/prd-iapy/findList",
+  "table_name" : "成品入库通知主表",
+  "request" : {
+    "prdIApyClazz" : "PRD_I_APY"
+  },
+  "mainTabClazz" : "PRD_I_APY",
+  "response" : {
+    "prdIApyActualTimeRequired" : {
+      "meaning" : "成品入库通知主表实际需时(小时)"
+    },
+    "prdIApyAdjustmentTimeRequired" : {
+      "meaning" : "成品入库通知主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "prdIApyApplicationId" : {
+      "meaning" : "成品入库通知主表应用ID"
+    },
+    "prdIApyAuditDate" : {
+      "meaning" : "成品入库通知主表审核时间"
+    },
+    "prdIApyAuditStatus" : {
+      "meaning" : "成品入库通知主表审核状态"
+    },
+    "prdIApyAvailableScheduleId" : {
+      "meaning" : "成品入库通知主表可用日程id"
+    },
+    "prdIApyBeginTime" : {
+      "meaning" : "成品入库通知主表开始时间"
+    },
+    "prdIApyBizVersion" : {
+      "meaning" : "成品入库通知主表业务自定义版本号"
+    },
+    "prdIApyBriefName" : {
+      "meaning" : "成品入库通知主表简称"
+    },
+    "prdIApyBusDivisId" : {
+      "meaning" : "成品入库通知主表事业部id"
+    },
+    "prdIApyClazz" : {
+      "meaning" : "成品入库通知主表子类 类名（表和类一一对应）"
+    },
+    "prdIApyClosedReason" : {
+      "meaning" : "成品入库通知主表结案原因"
+    },
+    "prdIApyClosedStatus" : {
+      "meaning" : "成品入库通知主表结案状态"
+    },
+    "prdIApyComment" : {
+      "meaning" : "成品入库通知主表评论"
+    },
+    "prdIApyCompleteQuantity" : {
+      "meaning" : "成品入库通知主表完成数量"
+    },
+    "prdIApyCompleteStatus" : {
+      "meaning" : "成品入库通知主表完成状态"
+    },
+    "prdIApyCreateTime" : {
+      "meaning" : "成品入库通知主表创建时间"
+    },
+    "prdIApyCreator" : {
+      "meaning" : "成品入库通知主表创建人"
+    },
+    "prdIApyCreatorId" : {
+      "meaning" : "成品入库通知主表创建人ID"
+    },
+    "prdIApyDateExtra1" : {
+      "meaning" : "成品入库通知主表扩展时间1"
+    },
+    "prdIApyDateExtra2" : {
+      "meaning" : "成品入库通知主表扩展时间2"
+    },
+    "prdIApyDateExtra3" : {
+      "meaning" : "成品入库通知主表扩展时间3"
+    },
+    "prdIApyDateExtra4" : {
+      "meaning" : "成品入库通知主表扩展时间4"
+    },
+    "prdIApyDateExtra5" : {
+      "meaning" : "成品入库通知主表扩展时间5"
+    },
+    "prdIApyDefaultType" : {
+      "meaning" : "成品入库通知主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "prdIApyDeliveryDate" : {
+      "meaning" : "成品入库通知主表交货日期"
+    },
+    "prdIApyDescription" : {
+      "meaning" : "成品入库通知主表描述"
+    },
+    "prdIApyEndTime" : {
+      "meaning" : "成品入库通知主表结束时间"
+    },
+    "prdIApyEndTimeRequired" : {
+      "meaning" : "成品入库通知主表最后需时(小时)"
+    },
+    "prdIApyEngName" : {
+      "meaning" : "成品入库通知主表英文名称"
+    },
+    "prdIApyEquipmentId" : {
+      "meaning" : "成品入库通知主表设备id"
+    },
+    "prdIApyExchangeRateId" : {
+      "meaning" : "成品入库通知主表币种汇率id"
+    },
+    "prdIApyExtension" : {
+      "meaning" : "成品入库通知主表扩展数据"
+    },
+    "prdIApyExternalState" : {
+      "meaning" : "成品入库通知主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "prdIApyFilterClazz" : {
+      "meaning" : "成品入库通知主表冗余字段用于筛选"
+    },
+    "prdIApyFlags" : {
+      "meaning" : "成品入库通知主表63位标志位"
+    },
+    "prdIApyFromAuditDate" : {
+      "meaning" : "prdIApyFromAuditDate"
+    },
+    "prdIApyFromBeginTime" : {
+      "meaning" : "prdIApyFromBeginTime"
+    },
+    "prdIApyFromCreateTime" : {
+      "meaning" : "prdIApyFromCreateTime"
+    },
+    "prdIApyFromDateExtra1" : {
+      "meaning" : "prdIApyFromDateExtra1"
+    },
+    "prdIApyFromDateExtra2" : {
+      "meaning" : "prdIApyFromDateExtra2"
+    },
+    "prdIApyFromDateExtra3" : {
+      "meaning" : "prdIApyFromDateExtra3"
+    },
+    "prdIApyFromDateExtra4" : {
+      "meaning" : "prdIApyFromDateExtra4"
+    },
+    "prdIApyFromDateExtra5" : {
+      "meaning" : "prdIApyFromDateExtra5"
+    },
+    "prdIApyFromDeliveryDate" : {
+      "meaning" : "prdIApyFromDeliveryDate"
+    },
+    "prdIApyFromEndTime" : {
+      "meaning" : "prdIApyFromEndTime"
+    },
+    "prdIApyFromReceiptDate" : {
+      "meaning" : "prdIApyFromReceiptDate"
+    },
+    "prdIApyFromUpdateTime" : {
+      "meaning" : "prdIApyFromUpdateTime"
+    },
+    "prdIApyFscType" : {
+      "meaning" : "成品入库通知主表FSC声明"
+    },
+    "prdIApyGenerativePeople" : {
+      "meaning" : "成品入库通知主表下发人"
+    },
+    "prdIApyGenerativeState" : {
+      "meaning" : "成品入库通知主表下发状态"
+    },
+    "prdIApyGroovyScript" : {
+      "meaning" : "成品入库通知主表groovy脚本"
+    },
+    "prdIApyGropeCode" : {
+      "meaning" : "成品入库通知主表搜索码"
+    },
+    "prdIApyId" : {
+      "meaning" : "成品入库通知主表主键id",
+      "is_primary" : true
+    },
+    "prdIApyInUsed" : {
+      "meaning" : "成品入库通知主表是否被使用"
+    },
+    "prdIApyIncomingDepartment" : {
+      "meaning" : "成品入库通知主表来货部门id"
+    },
+    "prdIApyInvTypeTaxRateId" : {
+      "meaning" : "成品入库通知主表发票税率id"
+    },
+    "prdIApyIsBanned" : {
+      "meaning" : "成品入库通知主表是否被禁用"
+    },
+    "prdIApyIsDeleted" : {
+      "meaning" : "成品入库通知主表是否被删除"
+    },
+    "prdIApyIsLeaf" : {
+      "meaning" : "成品入库通知主表是否叶子节点"
+    },
+    "prdIApyIsMainFlow" : {
+      "meaning" : "成品入库通知主表是否是主流程"
+    },
+    "prdIApyIsManualModificationDate" : {
+      "meaning" : "成品入库通知主表是否手动修改计划生产时间"
+    },
+    "prdIApyIsolation" : {
+      "meaning" : "成品入库通知主表智能节点数据隔离标识"
+    },
+    "prdIApyJsScript" : {
+      "meaning" : "成品入库通知主表js脚本"
+    },
+    "prdIApyMaterialId" : {
+      "meaning" : "成品入库通知主表物料id"
+    },
+    "prdIApyName" : {
+      "meaning" : "成品入库通知主表智能节点名"
+    },
+    "prdIApyNameCodeSearch" : {
+      "meaning" : "成品入库通知主表name、user_code模糊搜索"
+    },
+    "prdIApyNumberExtra1" : {
+      "meaning" : "成品入库通知主表扩展数量1"
+    },
+    "prdIApyNumberExtra2" : {
+      "meaning" : "成品入库通知主表扩展数量2"
+    },
+    "prdIApyNumberExtra3" : {
+      "meaning" : "成品入库通知主表扩展数量3"
+    },
+    "prdIApyNumberExtra4" : {
+      "meaning" : "成品入库通知主表扩展数量4"
+    },
+    "prdIApyNumberExtra5" : {
+      "meaning" : "成品入库通知主表扩展数量5"
+    },
+    "prdIApyParentId" : {
+      "meaning" : "成品入库通知主表父节点ID"
+    },
+    "prdIApyPlannedOutputQuantity" : {
+      "meaning" : "成品入库通知主表计划产出数量"
+    },
+    "prdIApyPlannedTimeRequired" : {
+      "meaning" : "成品入库通知主表计划需时(小时)"
+    },
+    "prdIApyPrintTimes" : {
+      "meaning" : "成品入库通知主表打印次数"
+    },
+    "prdIApyPriority" : {
+      "meaning" : "成品入库通知主表优先级"
+    },
+    "prdIApyProcessInstanceId" : {
+      "meaning" : "成品入库通知主表流程实例ID"
+    },
+    "prdIApyProductionProcessesTypeId" : {
+      "meaning" : "成品入库通知主表工序类型ID"
+    },
+    "prdIApyProductionShiftId" : {
+      "meaning" : "成品入库通知主表生产班次ID"
+    },
+    "prdIApyQuantity" : {
+      "meaning" : "成品入库通知主表任务数量"
+    },
+    "prdIApyReceiptDate" : {
+      "meaning" : "成品入库通知主表单据日期"
+    },
+    "prdIApyReceiptType" : {
+      "meaning" : "成品入库通知主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "prdIApyRelatedTasksId" : {
+      "meaning" : "成品入库通知主表关联任务id"
+    },
+    "prdIApySerialNumber" : {
+      "meaning" : "成品入库通知主表顺序号"
+    },
+    "prdIApySource" : {
+      "meaning" : "成品入库通知主表源"
+    },
+    "prdIApySourceType" : {
+      "meaning" : "成品入库通知主表来源类型"
+    },
+    "prdIApyState" : {
+      "meaning" : "成品入库通知主表通用状态"
+    },
+    "prdIApySystemCode" : {
+      "meaning" : "成品入库通知主表系统编码"
+    },
+    "prdIApyTarget" : {
+      "meaning" : "成品入库通知主表目标"
+    },
+    "prdIApyTaskNodeName" : {
+      "meaning" : "成品入库通知主表任务节点名称"
+    },
+    "prdIApyTenantId" : {
+      "meaning" : "成品入库通知主表租户id"
+    },
+    "prdIApyThirdPartyClass" : {
+      "meaning" : "成品入库通知主表第三方分类"
+    },
+    "prdIApyThirdPartyId" : {
+      "meaning" : "成品入库通知主表第三方系统中的唯一ID"
+    },
+    "prdIApyThirdPartyName" : {
+      "meaning" : "成品入库通知主表第三方名称"
+    },
+    "prdIApyToAuditDate" : {
+      "meaning" : "prdIApyToAuditDate"
+    },
+    "prdIApyToBeginTime" : {
+      "meaning" : "prdIApyToBeginTime"
+    },
+    "prdIApyToCreateTime" : {
+      "meaning" : "prdIApyToCreateTime"
+    },
+    "prdIApyToDateExtra1" : {
+      "meaning" : "prdIApyToDateExtra1"
+    },
+    "prdIApyToDateExtra2" : {
+      "meaning" : "prdIApyToDateExtra2"
+    },
+    "prdIApyToDateExtra3" : {
+      "meaning" : "prdIApyToDateExtra3"
+    },
+    "prdIApyToDateExtra4" : {
+      "meaning" : "prdIApyToDateExtra4"
+    },
+    "prdIApyToDateExtra5" : {
+      "meaning" : "prdIApyToDateExtra5"
+    },
+    "prdIApyToDeliveryDate" : {
+      "meaning" : "prdIApyToDeliveryDate"
+    },
+    "prdIApyToEndTime" : {
+      "meaning" : "prdIApyToEndTime"
+    },
+    "prdIApyToReceiptDate" : {
+      "meaning" : "prdIApyToReceiptDate"
+    },
+    "prdIApyToUpdateTime" : {
+      "meaning" : "prdIApyToUpdateTime"
+    },
+    "prdIApyUnitCode" : {
+      "meaning" : "成品入库通知主表单位id"
+    },
+    "prdIApyUpdateTime" : {
+      "meaning" : "成品入库通知主表更新时间"
+    },
+    "prdIApyUpdater" : {
+      "meaning" : "成品入库通知主表更新人"
+    },
+    "prdIApyUpdaterId" : {
+      "meaning" : "成品入库通知主表更新人ID"
+    },
+    "prdIApyUserCode" : {
+      "meaning" : "成品入库通知主表智能节点的唯一编码"
+    },
+    "prdIApyVarExtra1" : {
+      "meaning" : "成品入库通知主表扩展1"
+    },
+    "prdIApyVarExtra2" : {
+      "meaning" : "成品入库通知主表扩展2"
+    },
+    "prdIApyVarExtra3" : {
+      "meaning" : "成品入库通知主表扩展3"
+    },
+    "prdIApyVarExtra4" : {
+      "meaning" : "成品入库通知主表扩展4"
+    },
+    "prdIApyVarExtra5" : {
+      "meaning" : "成品入库通知主表扩展5"
+    },
+    "prdIApyVersion" : {
+      "meaning" : "成品入库通知主表版本号"
+    }
+  }
+}

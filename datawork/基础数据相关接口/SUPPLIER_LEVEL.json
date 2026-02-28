@@ -1,0 +1,236 @@
+{
+      "api_name": "/supplier-level/findList",
+      "table_name": "供应商级别表",
+      "request": {
+        "supplierLevelClazz": "SUPPLIER_LEVEL"
+      },
+      "mainTabClazz": "SUPPLIER_LEVEL",
+      "response": {
+        "supplierLevelApplicationId": {
+          "meaning": "供应商级别表应用ID"
+        },
+        "supplierLevelAuditDate": {
+          "meaning": "供应商级别表审核时间"
+        },
+        "supplierLevelAuditStatus": {
+          "meaning": "供应商级别表审核状态"
+        },
+        "supplierLevelBillingPeriod": {
+          "meaning": "供应商级别表账期"
+        },
+        "supplierLevelBizVersion": {
+          "meaning": "供应商级别表业务自定义版本号"
+        },
+        "supplierLevelBriefName": {
+          "meaning": "供应商级别表简称"
+        },
+        "supplierLevelBusDivisId": {
+          "meaning": "供应商级别表事业部id"
+        },
+        "supplierLevelClazz": {
+          "meaning": "供应商级别表子类 类名（表和类一一对应）"
+        },
+        "supplierLevelComment": {
+          "meaning": "供应商级别表评论"
+        },
+        "supplierLevelCreateTime": {
+          "meaning": "供应商级别表创建时间"
+        },
+        "supplierLevelCreator": {
+          "meaning": "供应商级别表创建人"
+        },
+        "supplierLevelCreatorId": {
+          "meaning": "供应商级别表创建人ID"
+        },
+        "supplierLevelDateExtra1": {
+          "meaning": "供应商级别表扩展时间1"
+        },
+        "supplierLevelDateExtra2": {
+          "meaning": "供应商级别表扩展时间2"
+        },
+        "supplierLevelDateExtra3": {
+          "meaning": "供应商级别表扩展时间3"
+        },
+        "supplierLevelDateExtra4": {
+          "meaning": "供应商级别表扩展时间4"
+        },
+        "supplierLevelDateExtra5": {
+          "meaning": "供应商级别表扩展时间5"
+        },
+        "supplierLevelDefaultType": {
+          "meaning": "供应商级别表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "supplierLevelDescription": {
+          "meaning": "供应商级别表描述"
+        },
+        "supplierLevelEngName": {
+          "meaning": "供应商级别表英文名称"
+        },
+        "supplierLevelExtension": {
+          "meaning": "供应商级别表扩展数据"
+        },
+        "supplierLevelExternalState": {
+          "meaning": "供应商级别表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "supplierLevelFlags": {
+          "meaning": "供应商级别表63位标志位"
+        },
+        "supplierLevelFromAuditDate": {
+          "meaning": "supplierLevelFromAuditDate"
+        },
+        "supplierLevelFromCreateTime": {
+          "meaning": "supplierLevelFromCreateTime"
+        },
+        "supplierLevelFromDateExtra1": {
+          "meaning": "supplierLevelFromDateExtra1"
+        },
+        "supplierLevelFromDateExtra2": {
+          "meaning": "supplierLevelFromDateExtra2"
+        },
+        "supplierLevelFromDateExtra3": {
+          "meaning": "supplierLevelFromDateExtra3"
+        },
+        "supplierLevelFromDateExtra4": {
+          "meaning": "supplierLevelFromDateExtra4"
+        },
+        "supplierLevelFromDateExtra5": {
+          "meaning": "supplierLevelFromDateExtra5"
+        },
+        "supplierLevelFromUpdateTime": {
+          "meaning": "supplierLevelFromUpdateTime"
+        },
+        "supplierLevelGroovyScript": {
+          "meaning": "供应商级别表groovy脚本"
+        },
+        "supplierLevelGropeCode": {
+          "meaning": "供应商级别表搜索码"
+        },
+        "supplierLevelId": {
+          "meaning": "供应商级别表PK",
+          "is_primary": true
+        },
+        "supplierLevelInUsed": {
+          "meaning": "供应商级别表是否被使用"
+        },
+        "supplierLevelIsBanned": {
+          "meaning": "供应商级别表是否被禁用"
+        },
+        "supplierLevelIsDeleted": {
+          "meaning": "供应商级别表是否被删除"
+        },
+        "supplierLevelIsMainFlow": {
+          "meaning": "供应商级别表是否是主流程"
+        },
+        "supplierLevelIsolation": {
+          "meaning": "供应商级别表智能节点数据隔离标识"
+        },
+        "supplierLevelJsScript": {
+          "meaning": "供应商级别表js脚本"
+        },
+        "supplierLevelName": {
+          "meaning": "供应商级别表智能节点名"
+        },
+        "supplierLevelNameCodeSearch": {
+          "meaning": "供应商级别表name、user_code模糊搜索"
+        },
+        "supplierLevelNumberExtra1": {
+          "meaning": "供应商级别表扩展数量1"
+        },
+        "supplierLevelNumberExtra2": {
+          "meaning": "供应商级别表扩展数量2"
+        },
+        "supplierLevelNumberExtra3": {
+          "meaning": "供应商级别表扩展数量3"
+        },
+        "supplierLevelNumberExtra4": {
+          "meaning": "供应商级别表扩展数量4"
+        },
+        "supplierLevelNumberExtra5": {
+          "meaning": "供应商级别表扩展数量5"
+        },
+        "supplierLevelParentId": {
+          "meaning": "供应商级别表父节点ID"
+        },
+        "supplierLevelProcessInstanceId": {
+          "meaning": "供应商级别表流程实例ID"
+        },
+        "supplierLevelSerialNumber": {
+          "meaning": "供应商级别表顺序号"
+        },
+        "supplierLevelState": {
+          "meaning": "供应商级别表通用状态"
+        },
+        "supplierLevelSystemCode": {
+          "meaning": "供应商级别表系统编码"
+        },
+        "supplierLevelTaskNodeName": {
+          "meaning": "供应商级别表任务节点名称"
+        },
+        "supplierLevelTenantId": {
+          "meaning": "供应商级别表租户_id"
+        },
+        "supplierLevelThirdPartyClass": {
+          "meaning": "供应商级别表第三方分类"
+        },
+        "supplierLevelThirdPartyId": {
+          "meaning": "供应商级别表第三方系统中的唯一ID"
+        },
+        "supplierLevelThirdPartyName": {
+          "meaning": "供应商级别表第三方名称"
+        },
+        "supplierLevelToAuditDate": {
+          "meaning": "supplierLevelToAuditDate"
+        },
+        "supplierLevelToCreateTime": {
+          "meaning": "supplierLevelToCreateTime"
+        },
+        "supplierLevelToDateExtra1": {
+          "meaning": "supplierLevelToDateExtra1"
+        },
+        "supplierLevelToDateExtra2": {
+          "meaning": "supplierLevelToDateExtra2"
+        },
+        "supplierLevelToDateExtra3": {
+          "meaning": "supplierLevelToDateExtra3"
+        },
+        "supplierLevelToDateExtra4": {
+          "meaning": "supplierLevelToDateExtra4"
+        },
+        "supplierLevelToDateExtra5": {
+          "meaning": "supplierLevelToDateExtra5"
+        },
+        "supplierLevelToUpdateTime": {
+          "meaning": "supplierLevelToUpdateTime"
+        },
+        "supplierLevelUpdateTime": {
+          "meaning": "供应商级别表更新时间"
+        },
+        "supplierLevelUpdater": {
+          "meaning": "供应商级别表更新人"
+        },
+        "supplierLevelUpdaterId": {
+          "meaning": "供应商级别表更新人ID"
+        },
+        "supplierLevelUserCode": {
+          "meaning": "供应商级别表智能节点的唯一编码"
+        },
+        "supplierLevelVarExtra1": {
+          "meaning": "供应商级别表扩展1"
+        },
+        "supplierLevelVarExtra2": {
+          "meaning": "供应商级别表扩展2"
+        },
+        "supplierLevelVarExtra3": {
+          "meaning": "供应商级别表扩展3"
+        },
+        "supplierLevelVarExtra4": {
+          "meaning": "供应商级别表扩展4"
+        },
+        "supplierLevelVarExtra5": {
+          "meaning": "供应商级别表扩展5"
+        },
+        "supplierLevelVersion": {
+          "meaning": "供应商级别表版本号"
+        }
+      }
+    }

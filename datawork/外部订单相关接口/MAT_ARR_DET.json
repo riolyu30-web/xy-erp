@@ -1,0 +1,867 @@
+{
+      "api_name": "/mat-arr-det/mainAndDetail/findList",
+      "table_name": "物料到货明细表",
+      "request": {
+        "matArrDetMatArrClazz": "MAT_ARR",
+        "matArrDetClazz": "MAT_ARR_DET"
+      },
+      "mainTabClazz": "MAT_ARR_DET",
+      "response": {
+        "matArrDetActMaterialId": {
+          "meaning": "物料到货明细表实际到货物料"
+        },
+        "matArrDetActQuantity": {
+          "meaning": "物料到货明细表实际到货数量"
+        },
+        "matArrDetActualTimeRequired": {
+          "meaning": "物料到货明细表实际需时(小时)"
+        },
+        "matArrDetAdjustmentTimeRequired": {
+          "meaning": "物料到货明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "matArrDetApplicationId": {
+          "meaning": "物料到货明细表应用ID"
+        },
+        "matArrDetArrcntCnt": {
+          "meaning": "物料到货明细表到货批次记录数"
+        },
+        "matArrDetAuditDate": {
+          "meaning": "物料到货明细表审核时间"
+        },
+        "matArrDetAuditStatus": {
+          "meaning": "物料到货明细表审核状态"
+        },
+        "matArrDetAvailableScheduleId": {
+          "meaning": "物料到货明细表可用日程id"
+        },
+        "matArrDetBeginTime": {
+          "meaning": "物料到货明细表开始时间"
+        },
+        "matArrDetBizVersion": {
+          "meaning": "物料到货明细表业务自定义版本号"
+        },
+        "matArrDetBriefName": {
+          "meaning": "物料到货明细表简称"
+        },
+        "matArrDetBusDivisId": {
+          "meaning": "物料到货明细表事业部id"
+        },
+        "matArrDetClazz": {
+          "meaning": "物料到货明细表子类 类名（表和类一一对应）"
+        },
+        "matArrDetClosedReason": {
+          "meaning": "物料到货明细表结案原因"
+        },
+        "matArrDetClosedStatus": {
+          "meaning": "物料到货明细表结案状态"
+        },
+        "matArrDetComment": {
+          "meaning": "物料到货明细表评论"
+        },
+        "matArrDetCompleteQuantity": {
+          "meaning": "物料到货明细表完成数量"
+        },
+        "matArrDetCompleteStatus": {
+          "meaning": "物料到货明细表完成状态"
+        },
+        "matArrDetCostSchemeId": {
+          "meaning": "物料到货明细表计费方案id"
+        },
+        "matArrDetCreateTime": {
+          "meaning": "物料到货明细表创建时间"
+        },
+        "matArrDetCreator": {
+          "meaning": "物料到货明细表创建人"
+        },
+        "matArrDetCreatorId": {
+          "meaning": "物料到货明细表创建人ID"
+        },
+        "matArrDetDateExtra1": {
+          "meaning": "物料到货明细表扩展时间1"
+        },
+        "matArrDetDateExtra2": {
+          "meaning": "物料到货明细表扩展时间2"
+        },
+        "matArrDetDateExtra3": {
+          "meaning": "物料到货明细表扩展时间3"
+        },
+        "matArrDetDateExtra4": {
+          "meaning": "物料到货明细表扩展时间4"
+        },
+        "matArrDetDateExtra5": {
+          "meaning": "物料到货明细表扩展时间5"
+        },
+        "matArrDetDefaultType": {
+          "meaning": "物料到货明细表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matArrDetDeliveryDate": {
+          "meaning": "物料到货明细表交货日期"
+        },
+        "matArrDetDescription": {
+          "meaning": "物料到货明细表描述"
+        },
+        "matArrDetEndTime": {
+          "meaning": "物料到货明细表结束时间"
+        },
+        "matArrDetEndTimeRequired": {
+          "meaning": "物料到货明细表最后需时(小时)"
+        },
+        "matArrDetEngName": {
+          "meaning": "物料到货明细表英文名称"
+        },
+        "matArrDetEquipmentId": {
+          "meaning": "物料到货明细表设备id"
+        },
+        "matArrDetExchangeRateId": {
+          "meaning": "物料到货明细表币种汇率id"
+        },
+        "matArrDetExtension": {
+          "meaning": "物料到货明细表扩展数据"
+        },
+        "matArrDetExternalState": {
+          "meaning": "物料到货明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matArrDetFilterClazz": {
+          "meaning": "物料到货明细表冗余字段用于筛选"
+        },
+        "matArrDetFlags": {
+          "meaning": "物料到货明细表63位标志位"
+        },
+        "matArrDetFromAuditDate": {
+          "meaning": "matArrDetFromAuditDate"
+        },
+        "matArrDetFromBeginTime": {
+          "meaning": "matArrDetFromBeginTime"
+        },
+        "matArrDetFromCreateTime": {
+          "meaning": "matArrDetFromCreateTime"
+        },
+        "matArrDetFromDateExtra1": {
+          "meaning": "matArrDetFromDateExtra1"
+        },
+        "matArrDetFromDateExtra2": {
+          "meaning": "matArrDetFromDateExtra2"
+        },
+        "matArrDetFromDateExtra3": {
+          "meaning": "matArrDetFromDateExtra3"
+        },
+        "matArrDetFromDateExtra4": {
+          "meaning": "matArrDetFromDateExtra4"
+        },
+        "matArrDetFromDateExtra5": {
+          "meaning": "matArrDetFromDateExtra5"
+        },
+        "matArrDetFromDeliveryDate": {
+          "meaning": "matArrDetFromDeliveryDate"
+        },
+        "matArrDetFromEndTime": {
+          "meaning": "matArrDetFromEndTime"
+        },
+        "matArrDetFromReceiptDate": {
+          "meaning": "matArrDetFromReceiptDate"
+        },
+        "matArrDetFromUpdateTime": {
+          "meaning": "matArrDetFromUpdateTime"
+        },
+        "matArrDetFscType": {
+          "meaning": "物料到货明细表FSC声明"
+        },
+        "matArrDetGenerativePeople": {
+          "meaning": "物料到货明细表下发人"
+        },
+        "matArrDetGenerativeState": {
+          "meaning": "物料到货明细表下发状态"
+        },
+        "matArrDetGoodsId": {
+          "meaning": "物料到货明细表货（包）id"
+        },
+        "matArrDetGroovyScript": {
+          "meaning": "物料到货明细表groovy脚本"
+        },
+        "matArrDetGropeCode": {
+          "meaning": "物料到货明细表搜索码"
+        },
+        "matArrDetHandlingMethod": {
+          "meaning": "物料到货明细表处理方式(字典：1物料入库/2成品入库/3半成品入库等)"
+        },
+        "matArrDetId": {
+          "meaning": "物料到货明细表PK",
+          "is_primary": true
+        },
+        "matArrDetInUsed": {
+          "meaning": "物料到货明细表是否被使用"
+        },
+        "matArrDetInvTypeTaxRateId": {
+          "meaning": "物料到货明细表发票税率id"
+        },
+        "matArrDetIqcQuantity": {
+          "meaning": "物料到货明细表已开IQC的数量"
+        },
+        "matArrDetIqcStatus": {
+          "meaning": "物料到货明细表已开IQC的状态"
+        },
+        "matArrDetIsBanned": {
+          "meaning": "物料到货明细表是否被禁用"
+        },
+        "matArrDetIsDeleted": {
+          "meaning": "物料到货明细表是否被删除"
+        },
+        "matArrDetIsLeaf": {
+          "meaning": "物料到货明细表是否叶子节点"
+        },
+        "matArrDetIsMainFlow": {
+          "meaning": "物料到货明细表是否是主流程"
+        },
+        "matArrDetIsManualModificationDate": {
+          "meaning": "物料到货明细表是否手动修改计划生产时间"
+        },
+        "matArrDetIsolation": {
+          "meaning": "物料到货明细表智能节点数据隔离标识"
+        },
+        "matArrDetJsScript": {
+          "meaning": "物料到货明细表js脚本"
+        },
+        "matArrDetLocalCurrencyTotalAmount": {
+          "meaning": "物料到货明细表本币金额"
+        },
+        "matArrDetLocalCurrencyUnitPrice": {
+          "meaning": "物料到货明细表本币单价(根据币种，外币才显示)，外币不含税"
+        },
+        "matArrDetMatArrActualTimeRequired": {
+          "meaning": "物料到货明细表实际需时(小时)"
+        },
+        "matArrDetMatArrAdjustmentTimeRequired": {
+          "meaning": "物料到货明细表调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "matArrDetMatArrApplicationId": {
+          "meaning": "物料到货明细表应用ID"
+        },
+        "matArrDetMatArrAuditDate": {
+          "meaning": "物料到货明细表审核时间"
+        },
+        "matArrDetMatArrAuditStatus": {
+          "meaning": "物料到货明细表审核状态"
+        },
+        "matArrDetMatArrAvailableScheduleId": {
+          "meaning": "物料到货明细表可用日程id"
+        },
+        "matArrDetMatArrBeginTime": {
+          "meaning": "物料到货明细表开始时间"
+        },
+        "matArrDetMatArrBizVersion": {
+          "meaning": "物料到货明细表业务自定义版本号"
+        },
+        "matArrDetMatArrBriefName": {
+          "meaning": "物料到货明细表简称"
+        },
+        "matArrDetMatArrBusDivisId": {
+          "meaning": "物料到货明细表事业部id"
+        },
+        "matArrDetMatArrClazz": {
+          "meaning": "物料到货明细表子类 类名（表和类一一对应）"
+        },
+        "matArrDetMatArrClosedReason": {
+          "meaning": "物料到货明细表结案原因"
+        },
+        "matArrDetMatArrClosedStatus": {
+          "meaning": "物料到货明细表结案状态"
+        },
+        "matArrDetMatArrCneeAddr": {
+          "meaning": "物料到货明细表收货地址"
+        },
+        "matArrDetMatArrCneeDate": {
+          "meaning": "物料到货明细表收货日期"
+        },
+        "matArrDetMatArrCneeName": {
+          "meaning": "物料到货明细表收货人"
+        },
+        "matArrDetMatArrComment": {
+          "meaning": "物料到货明细表评论"
+        },
+        "matArrDetMatArrCompleteQuantity": {
+          "meaning": "物料到货明细表完成数量"
+        },
+        "matArrDetMatArrCompleteStatus": {
+          "meaning": "物料到货明细表完成状态"
+        },
+        "matArrDetMatArrCreateTime": {
+          "meaning": "物料到货明细表创建时间"
+        },
+        "matArrDetMatArrCreator": {
+          "meaning": "物料到货明细表创建人"
+        },
+        "matArrDetMatArrCreatorId": {
+          "meaning": "物料到货明细表创建人ID"
+        },
+        "matArrDetMatArrCurrency": {
+          "meaning": "物料到货明细表币种"
+        },
+        "matArrDetMatArrCurrencyExchangeRate": {
+          "meaning": "物料到货明细表汇率"
+        },
+        "matArrDetMatArrCurrencyExchangeRateId": {
+          "meaning": "物料到货明细表汇率id"
+        },
+        "matArrDetMatArrCurrencyId": {
+          "meaning": "物料到货明细表币种id"
+        },
+        "matArrDetMatArrDateExtra1": {
+          "meaning": "物料到货明细表扩展时间1"
+        },
+        "matArrDetMatArrDateExtra2": {
+          "meaning": "物料到货明细表扩展时间2"
+        },
+        "matArrDetMatArrDateExtra3": {
+          "meaning": "物料到货明细表扩展时间3"
+        },
+        "matArrDetMatArrDateExtra4": {
+          "meaning": "物料到货明细表扩展时间4"
+        },
+        "matArrDetMatArrDateExtra5": {
+          "meaning": "物料到货明细表扩展时间5"
+        },
+        "matArrDetMatArrDecimalMethod": {
+          "meaning": "物料到货明细表保留小数位方法(1四舍五入，2有小数进位，默认四舍五入)"
+        },
+        "matArrDetMatArrDefaultType": {
+          "meaning": "物料到货明细表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "matArrDetMatArrDelOrdNum": {
+          "meaning": "物料到货明细表送货单号"
+        },
+        "matArrDetMatArrDeliveryDate": {
+          "meaning": "物料到货明细表交货日期"
+        },
+        "matArrDetMatArrDescription": {
+          "meaning": "物料到货明细表描述"
+        },
+        "matArrDetMatArrEndTime": {
+          "meaning": "物料到货明细表结束时间"
+        },
+        "matArrDetMatArrEndTimeRequired": {
+          "meaning": "物料到货明细表最后需时(小时)"
+        },
+        "matArrDetMatArrEngName": {
+          "meaning": "物料到货明细表英文名称"
+        },
+        "matArrDetMatArrEquipmentId": {
+          "meaning": "物料到货明细表设备id"
+        },
+        "matArrDetMatArrExchangeRateId": {
+          "meaning": "物料到货明细表币种汇率id"
+        },
+        "matArrDetMatArrExtension": {
+          "meaning": "物料到货明细表扩展数据"
+        },
+        "matArrDetMatArrExternalState": {
+          "meaning": "物料到货明细表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "matArrDetMatArrFilterClazz": {
+          "meaning": "物料到货明细表冗余字段用于筛选"
+        },
+        "matArrDetMatArrFlags": {
+          "meaning": "物料到货明细表63位标志位"
+        },
+        "matArrDetMatArrFromAuditDate": {
+          "meaning": "matArrDetMatArrFromAuditDate"
+        },
+        "matArrDetMatArrFromBeginTime": {
+          "meaning": "matArrDetMatArrFromBeginTime"
+        },
+        "matArrDetMatArrFromCneeDate": {
+          "meaning": "matArrDetMatArrFromCneeDate"
+        },
+        "matArrDetMatArrFromCreateTime": {
+          "meaning": "matArrDetMatArrFromCreateTime"
+        },
+        "matArrDetMatArrFromDateExtra1": {
+          "meaning": "matArrDetMatArrFromDateExtra1"
+        },
+        "matArrDetMatArrFromDateExtra2": {
+          "meaning": "matArrDetMatArrFromDateExtra2"
+        },
+        "matArrDetMatArrFromDateExtra3": {
+          "meaning": "matArrDetMatArrFromDateExtra3"
+        },
+        "matArrDetMatArrFromDateExtra4": {
+          "meaning": "matArrDetMatArrFromDateExtra4"
+        },
+        "matArrDetMatArrFromDateExtra5": {
+          "meaning": "matArrDetMatArrFromDateExtra5"
+        },
+        "matArrDetMatArrFromDeliveryDate": {
+          "meaning": "matArrDetMatArrFromDeliveryDate"
+        },
+        "matArrDetMatArrFromEndTime": {
+          "meaning": "matArrDetMatArrFromEndTime"
+        },
+        "matArrDetMatArrFromReceiptDate": {
+          "meaning": "matArrDetMatArrFromReceiptDate"
+        },
+        "matArrDetMatArrFromUpdateTime": {
+          "meaning": "matArrDetMatArrFromUpdateTime"
+        },
+        "matArrDetMatArrFscType": {
+          "meaning": "物料到货明细表FSC声明"
+        },
+        "matArrDetMatArrGenerativePeople": {
+          "meaning": "物料到货明细表下发人"
+        },
+        "matArrDetMatArrGenerativeState": {
+          "meaning": "物料到货明细表下发状态"
+        },
+        "matArrDetMatArrGroovyScript": {
+          "meaning": "物料到货明细表groovy脚本"
+        },
+        "matArrDetMatArrGropeCode": {
+          "meaning": "物料到货明细表搜索码"
+        },
+        "matArrDetMatArrId": {
+          "meaning": "物料到货明细表PK"
+        },
+        "matArrDetMatArrInUsed": {
+          "meaning": "物料到货明细表是否被使用"
+        },
+        "matArrDetMatArrInvTypeTaxRateId": {
+          "meaning": "物料到货明细表发票税率id"
+        },
+        "matArrDetMatArrInvoiceTypeTaxRate": {
+          "meaning": "物料到货明细表税率"
+        },
+        "matArrDetMatArrInvoiceTypeTaxRateId": {
+          "meaning": "物料到货明细表税率id"
+        },
+        "matArrDetMatArrIsBanned": {
+          "meaning": "物料到货明细表是否被禁用"
+        },
+        "matArrDetMatArrIsDeleted": {
+          "meaning": "物料到货明细表是否被删除"
+        },
+        "matArrDetMatArrIsLeaf": {
+          "meaning": "物料到货明细表是否叶子节点"
+        },
+        "matArrDetMatArrIsMainFlow": {
+          "meaning": "物料到货明细表是否是主流程"
+        },
+        "matArrDetMatArrIsManualModificationDate": {
+          "meaning": "物料到货明细表是否手动修改计划生产时间"
+        },
+        "matArrDetMatArrIsolation": {
+          "meaning": "物料到货明细表智能节点数据隔离标识"
+        },
+        "matArrDetMatArrJsScript": {
+          "meaning": "物料到货明细表js脚本"
+        },
+        "matArrDetMatArrMaterialId": {
+          "meaning": "物料到货明细表物料id"
+        },
+        "matArrDetMatArrName": {
+          "meaning": "物料到货明细表智能节点名"
+        },
+        "matArrDetMatArrNameCodeSearch": {
+          "meaning": "物料到货明细表name、user_code模糊搜索"
+        },
+        "matArrDetMatArrNumberExtra1": {
+          "meaning": "物料到货明细表扩展数量1"
+        },
+        "matArrDetMatArrNumberExtra2": {
+          "meaning": "物料到货明细表扩展数量2"
+        },
+        "matArrDetMatArrNumberExtra3": {
+          "meaning": "物料到货明细表扩展数量3"
+        },
+        "matArrDetMatArrNumberExtra4": {
+          "meaning": "物料到货明细表扩展数量4"
+        },
+        "matArrDetMatArrNumberExtra5": {
+          "meaning": "物料到货明细表扩展数量5"
+        },
+        "matArrDetMatArrParentId": {
+          "meaning": "物料到货明细表父节点ID"
+        },
+        "matArrDetMatArrPlannedOutputQuantity": {
+          "meaning": "物料到货明细表计划产出数量"
+        },
+        "matArrDetMatArrPlannedTimeRequired": {
+          "meaning": "物料到货明细表计划需时(小时)"
+        },
+        "matArrDetMatArrPrintTimes": {
+          "meaning": "物料到货明细表打印次数"
+        },
+        "matArrDetMatArrPriority": {
+          "meaning": "物料到货明细表优先级"
+        },
+        "matArrDetMatArrProcessInstanceId": {
+          "meaning": "物料到货明细表流程实例ID"
+        },
+        "matArrDetMatArrProductionProcessesTypeId": {
+          "meaning": "物料到货明细表工序类型ID"
+        },
+        "matArrDetMatArrProductionShiftId": {
+          "meaning": "物料到货明细表生产班次ID"
+        },
+        "matArrDetMatArrQuantity": {
+          "meaning": "物料到货明细表任务数量"
+        },
+        "matArrDetMatArrReceiptDate": {
+          "meaning": "物料到货明细表单据日期"
+        },
+        "matArrDetMatArrReceiptSupplierId": {
+          "meaning": "物料到货明细表收货供应商id"
+        },
+        "matArrDetMatArrReceiptType": {
+          "meaning": "物料到货明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "matArrDetMatArrRelatedTasksId": {
+          "meaning": "物料到货明细表关联任务id"
+        },
+        "matArrDetMatArrSerialNumber": {
+          "meaning": "物料到货明细表顺序号"
+        },
+        "matArrDetMatArrSetInvTyp": {
+          "meaning": "物料到货明细表结算发票类型"
+        },
+        "matArrDetMatArrSetMethod": {
+          "meaning": "物料到货明细表结算方式"
+        },
+        "matArrDetMatArrSettlementSupplierId": {
+          "meaning": "物料到货明细表结算供应商"
+        },
+        "matArrDetMatArrSettlementTotalAmountKeepDecimalPlace": {
+          "meaning": "物料到货明细表结算金额保留小数位(默认2位，可手动变更)"
+        },
+        "matArrDetMatArrSettlementUnitPriceKeepDecimalPlace": {
+          "meaning": "物料到货明细表结算单价保留小数位(默认9位，可手动变更)"
+        },
+        "matArrDetMatArrSource": {
+          "meaning": "物料到货明细表源"
+        },
+        "matArrDetMatArrSourceType": {
+          "meaning": "物料到货明细表来源类型"
+        },
+        "matArrDetMatArrState": {
+          "meaning": "物料到货明细表通用状态"
+        },
+        "matArrDetMatArrSupCntPer": {
+          "meaning": "物料到货明细表供应商联系人"
+        },
+        "matArrDetMatArrSupTel": {
+          "meaning": "物料到货明细表供应商电话"
+        },
+        "matArrDetMatArrSupplierId": {
+          "meaning": "物料到货明细表供应商id"
+        },
+        "matArrDetMatArrSystemCode": {
+          "meaning": "物料到货明细表系统编码"
+        },
+        "matArrDetMatArrTarget": {
+          "meaning": "物料到货明细表目标"
+        },
+        "matArrDetMatArrTaskNodeName": {
+          "meaning": "物料到货明细表任务节点名称"
+        },
+        "matArrDetMatArrTenantId": {
+          "meaning": "物料到货明细表租户_id"
+        },
+        "matArrDetMatArrThirdPartyClass": {
+          "meaning": "物料到货明细表第三方分类"
+        },
+        "matArrDetMatArrThirdPartyId": {
+          "meaning": "物料到货明细表第三方系统中的唯一ID"
+        },
+        "matArrDetMatArrThirdPartyName": {
+          "meaning": "物料到货明细表第三方名称"
+        },
+        "matArrDetMatArrToAuditDate": {
+          "meaning": "matArrDetMatArrToAuditDate"
+        },
+        "matArrDetMatArrToBeginTime": {
+          "meaning": "matArrDetMatArrToBeginTime"
+        },
+        "matArrDetMatArrToCneeDate": {
+          "meaning": "matArrDetMatArrToCneeDate"
+        },
+        "matArrDetMatArrToCreateTime": {
+          "meaning": "matArrDetMatArrToCreateTime"
+        },
+        "matArrDetMatArrToDateExtra1": {
+          "meaning": "matArrDetMatArrToDateExtra1"
+        },
+        "matArrDetMatArrToDateExtra2": {
+          "meaning": "matArrDetMatArrToDateExtra2"
+        },
+        "matArrDetMatArrToDateExtra3": {
+          "meaning": "matArrDetMatArrToDateExtra3"
+        },
+        "matArrDetMatArrToDateExtra4": {
+          "meaning": "matArrDetMatArrToDateExtra4"
+        },
+        "matArrDetMatArrToDateExtra5": {
+          "meaning": "matArrDetMatArrToDateExtra5"
+        },
+        "matArrDetMatArrToDeliveryDate": {
+          "meaning": "matArrDetMatArrToDeliveryDate"
+        },
+        "matArrDetMatArrToEndTime": {
+          "meaning": "matArrDetMatArrToEndTime"
+        },
+        "matArrDetMatArrToReceiptDate": {
+          "meaning": "matArrDetMatArrToReceiptDate"
+        },
+        "matArrDetMatArrToUpdateTime": {
+          "meaning": "matArrDetMatArrToUpdateTime"
+        },
+        "matArrDetMatArrUnitCode": {
+          "meaning": "物料到货明细表单位id"
+        },
+        "matArrDetMatArrUpdateTime": {
+          "meaning": "物料到货明细表更新时间"
+        },
+        "matArrDetMatArrUpdater": {
+          "meaning": "物料到货明细表更新人"
+        },
+        "matArrDetMatArrUpdaterId": {
+          "meaning": "物料到货明细表更新人ID"
+        },
+        "matArrDetMatArrUserCode": {
+          "meaning": "物料到货明细表智能节点的唯一编码"
+        },
+        "matArrDetMatArrVarExtra1": {
+          "meaning": "物料到货明细表扩展1"
+        },
+        "matArrDetMatArrVarExtra2": {
+          "meaning": "物料到货明细表扩展2"
+        },
+        "matArrDetMatArrVarExtra3": {
+          "meaning": "物料到货明细表扩展3"
+        },
+        "matArrDetMatArrVarExtra4": {
+          "meaning": "物料到货明细表扩展4"
+        },
+        "matArrDetMatArrVarExtra5": {
+          "meaning": "物料到货明细表扩展5"
+        },
+        "matArrDetMatArrVersion": {
+          "meaning": "物料到货明细表版本号"
+        },
+        "matArrDetMatBatchId": {
+          "meaning": "物料到货明细表物料批次id"
+        },
+        "matArrDetMaterialId": {
+          "meaning": "物料到货明细表物料id"
+        },
+        "matArrDetMoq": {
+          "meaning": "物料到货明细表moq"
+        },
+        "matArrDetName": {
+          "meaning": "物料到货明细表智能节点名"
+        },
+        "matArrDetNameCodeSearch": {
+          "meaning": "物料到货明细表name、user_code模糊搜索"
+        },
+        "matArrDetNumberExtra1": {
+          "meaning": "物料到货明细表扩展数量1"
+        },
+        "matArrDetNumberExtra2": {
+          "meaning": "物料到货明细表扩展数量2"
+        },
+        "matArrDetNumberExtra3": {
+          "meaning": "物料到货明细表扩展数量3"
+        },
+        "matArrDetNumberExtra4": {
+          "meaning": "物料到货明细表扩展数量4"
+        },
+        "matArrDetNumberExtra5": {
+          "meaning": "物料到货明细表扩展数量5"
+        },
+        "matArrDetParentId": {
+          "meaning": "物料到货明细表父节点ID"
+        },
+        "matArrDetPlannedOutputQuantity": {
+          "meaning": "物料到货明细表计划产出数量"
+        },
+        "matArrDetPlannedTimeRequired": {
+          "meaning": "物料到货明细表计划需时(小时)"
+        },
+        "matArrDetPrintTimes": {
+          "meaning": "物料到货明细表打印次数"
+        },
+        "matArrDetPriority": {
+          "meaning": "物料到货明细表优先级"
+        },
+        "matArrDetProcessInstanceId": {
+          "meaning": "物料到货明细表流程实例ID"
+        },
+        "matArrDetProductionProcessesTypeId": {
+          "meaning": "物料到货明细表工序类型ID"
+        },
+        "matArrDetProductionShiftId": {
+          "meaning": "物料到货明细表生产班次ID"
+        },
+        "matArrDetQuantity": {
+          "meaning": "物料到货明细表任务数量"
+        },
+        "matArrDetQuotationUnitPriceIncludingTax": {
+          "meaning": "物料到货明细表含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "matArrDetQuotationUnitPriceWithoutTax": {
+          "meaning": "物料到货明细表不含税报价单价(吨价，平方价，千平方英寸)"
+        },
+        "matArrDetReceiptDate": {
+          "meaning": "物料到货明细表单据日期"
+        },
+        "matArrDetReceiptType": {
+          "meaning": "物料到货明细表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "matArrDetRelatedTasksId": {
+          "meaning": "物料到货明细表关联任务id"
+        },
+        "matArrDetRetCmpQuantity": {
+          "meaning": "物料到货明细表退货完成数量"
+        },
+        "matArrDetRetCmpStatus": {
+          "meaning": "物料到货明细表退货完成状态"
+        },
+        "matArrDetRetQuantity": {
+          "meaning": "物料到货明细表退货数量"
+        },
+        "matArrDetRetStatus": {
+          "meaning": "物料到货明细表退货状态"
+        },
+        "matArrDetSerialNumber": {
+          "meaning": "物料到货明细表顺序号"
+        },
+        "matArrDetSettlementTotalAmount": {
+          "meaning": "物料到货明细表结算金额（默认与含税总金额相等），写入库存价格字段"
+        },
+        "matArrDetSettlementUnitPrice": {
+          "meaning": "物料到货明细表结算单价（默认与含税单价相等），写入库存价格字段"
+        },
+        "matArrDetSource": {
+          "meaning": "物料到货明细表源"
+        },
+        "matArrDetSourceType": {
+          "meaning": "物料到货明细表来源类型"
+        },
+        "matArrDetSparePartsCount": {
+          "meaning": "物料到货明细表备品数"
+        },
+        "matArrDetState": {
+          "meaning": "物料到货明细表通用状态"
+        },
+        "matArrDetStatedQuantity": {
+          "meaning": "物料到货明细表已对账数量"
+        },
+        "matArrDetStatedStatus": {
+          "meaning": "物料到货明细表已对账状态"
+        },
+        "matArrDetSystemCode": {
+          "meaning": "物料到货明细表系统编码"
+        },
+        "matArrDetTarget": {
+          "meaning": "物料到货明细表目标"
+        },
+        "matArrDetTaskNodeName": {
+          "meaning": "物料到货明细表任务节点名称"
+        },
+        "matArrDetTenantId": {
+          "meaning": "物料到货明细表租户_id"
+        },
+        "matArrDetThirdPartyClass": {
+          "meaning": "物料到货明细表第三方分类"
+        },
+        "matArrDetThirdPartyId": {
+          "meaning": "物料到货明细表第三方系统中的唯一ID"
+        },
+        "matArrDetThirdPartyName": {
+          "meaning": "物料到货明细表第三方名称"
+        },
+        "matArrDetToAuditDate": {
+          "meaning": "matArrDetToAuditDate"
+        },
+        "matArrDetToBeginTime": {
+          "meaning": "matArrDetToBeginTime"
+        },
+        "matArrDetToCreateTime": {
+          "meaning": "matArrDetToCreateTime"
+        },
+        "matArrDetToDateExtra1": {
+          "meaning": "matArrDetToDateExtra1"
+        },
+        "matArrDetToDateExtra2": {
+          "meaning": "matArrDetToDateExtra2"
+        },
+        "matArrDetToDateExtra3": {
+          "meaning": "matArrDetToDateExtra3"
+        },
+        "matArrDetToDateExtra4": {
+          "meaning": "matArrDetToDateExtra4"
+        },
+        "matArrDetToDateExtra5": {
+          "meaning": "matArrDetToDateExtra5"
+        },
+        "matArrDetToDeliveryDate": {
+          "meaning": "matArrDetToDeliveryDate"
+        },
+        "matArrDetToEndTime": {
+          "meaning": "matArrDetToEndTime"
+        },
+        "matArrDetToReceiptDate": {
+          "meaning": "matArrDetToReceiptDate"
+        },
+        "matArrDetToUpdateTime": {
+          "meaning": "matArrDetToUpdateTime"
+        },
+        "matArrDetTotTaxAmt": {
+          "meaning": "物料到货明细表总含税金额"
+        },
+        "matArrDetTotalAmountIncludingTax": {
+          "meaning": "物料到货明细表含税总金额"
+        },
+        "matArrDetTotalAmountWithoutTax": {
+          "meaning": "物料到货明细表不含税总金额"
+        },
+        "matArrDetUnitCode": {
+          "meaning": "物料到货明细表单位id"
+        },
+        "matArrDetUnitPriceIncludingTax": {
+          "meaning": "物料到货明细表含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "matArrDetUnitPriceWithoutTax": {
+          "meaning": "物料到货明细表不含税单价(默认隐藏，根据计费方案转换计算得出)"
+        },
+        "matArrDetUpdateTime": {
+          "meaning": "物料到货明细表更新时间"
+        },
+        "matArrDetUpdater": {
+          "meaning": "物料到货明细表更新人"
+        },
+        "matArrDetUpdaterId": {
+          "meaning": "物料到货明细表更新人ID"
+        },
+        "matArrDetUserCode": {
+          "meaning": "物料到货明细表智能节点的唯一编码"
+        },
+        "matArrDetVarExtra1": {
+          "meaning": "物料到货明细表扩展1"
+        },
+        "matArrDetVarExtra2": {
+          "meaning": "物料到货明细表扩展2"
+        },
+        "matArrDetVarExtra3": {
+          "meaning": "物料到货明细表扩展3"
+        },
+        "matArrDetVarExtra4": {
+          "meaning": "物料到货明细表扩展4"
+        },
+        "matArrDetVarExtra5": {
+          "meaning": "物料到货明细表扩展5"
+        },
+        "matArrDetVersion": {
+          "meaning": "物料到货明细表版本号"
+        },
+        "matArrDetWt_diff": {
+          "meaning": "物料到货明细表重量差额"
+        }
+      }
+    }

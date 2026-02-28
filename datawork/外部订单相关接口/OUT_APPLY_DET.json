@@ -1,0 +1,759 @@
+{
+      "api_name": "/out-apply-det/findList",
+      "table_name": "外发申请明细",
+      "request": {
+        "outApplyDetOutApplyClazz": "OUT_APPLY",
+        "outApplyDetClazz": "OUT_APPLY_DET"
+      },
+      "mainTabClazz": "OUT_APPLY_DET",
+      "response": {
+        "outApplyDetActualTimeRequired": {
+          "meaning": "OutApplyDetDTO对象实际需时(小时)"
+        },
+        "outApplyDetAdjustmentTimeRequired": {
+          "meaning": "OutApplyDetDTO对象调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "outApplyDetAnswerReceivedQat": {
+          "meaning": "OutApplyDetDTO对象应收货数量"
+        },
+        "outApplyDetApplicationId": {
+          "meaning": "OutApplyDetDTO对象应用ID"
+        },
+        "outApplyDetAssemblyName": {
+          "meaning": "OutApplyDetDTO对象部件名称"
+        },
+        "outApplyDetAuditDate": {
+          "meaning": "OutApplyDetDTO对象审核时间"
+        },
+        "outApplyDetAuditStatus": {
+          "meaning": "OutApplyDetDTO对象审核状态"
+        },
+        "outApplyDetAvailableScheduleId": {
+          "meaning": "OutApplyDetDTO对象可用日程id"
+        },
+        "outApplyDetBeginTime": {
+          "meaning": "OutApplyDetDTO对象开始时间"
+        },
+        "outApplyDetBizVersion": {
+          "meaning": "OutApplyDetDTO对象业务自定义版本号"
+        },
+        "outApplyDetBriefName": {
+          "meaning": "OutApplyDetDTO对象简称"
+        },
+        "outApplyDetBusDivisId": {
+          "meaning": "OutApplyDetDTO对象事业部id"
+        },
+        "outApplyDetClazz": {
+          "meaning": "OutApplyDetDTO对象子类 类名（表和类一一对应）"
+        },
+        "outApplyDetClosedReason": {
+          "meaning": "OutApplyDetDTO对象结案原因"
+        },
+        "outApplyDetClosedStatus": {
+          "meaning": "OutApplyDetDTO对象结案状态"
+        },
+        "outApplyDetComment": {
+          "meaning": "OutApplyDetDTO对象评论"
+        },
+        "outApplyDetCompleteQuantity": {
+          "meaning": "OutApplyDetDTO对象完成数量"
+        },
+        "outApplyDetCompleteStatus": {
+          "meaning": "OutApplyDetDTO对象完成状态"
+        },
+        "outApplyDetCreateTime": {
+          "meaning": "OutApplyDetDTO对象创建时间"
+        },
+        "outApplyDetCreator": {
+          "meaning": "OutApplyDetDTO对象创建人"
+        },
+        "outApplyDetCreatorId": {
+          "meaning": "OutApplyDetDTO对象创建人ID"
+        },
+        "outApplyDetDateExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展时间1"
+        },
+        "outApplyDetDateExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展时间2"
+        },
+        "outApplyDetDateExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展时间3"
+        },
+        "outApplyDetDateExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展时间4"
+        },
+        "outApplyDetDateExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展时间5"
+        },
+        "outApplyDetDefaultType": {
+          "meaning": "OutApplyDetDTO对象智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "outApplyDetDeliveryDate": {
+          "meaning": "OutApplyDetDTO对象交货日期"
+        },
+        "outApplyDetDescription": {
+          "meaning": "OutApplyDetDTO对象描述"
+        },
+        "outApplyDetEndTime": {
+          "meaning": "OutApplyDetDTO对象结束时间"
+        },
+        "outApplyDetEndTimeRequired": {
+          "meaning": "OutApplyDetDTO对象最后需时(小时)"
+        },
+        "outApplyDetEngName": {
+          "meaning": "OutApplyDetDTO对象英文名称"
+        },
+        "outApplyDetEquipmentId": {
+          "meaning": "OutApplyDetDTO对象设备id"
+        },
+        "outApplyDetExchangeRateId": {
+          "meaning": "OutApplyDetDTO对象币种汇率id"
+        },
+        "outApplyDetExtension": {
+          "meaning": "OutApplyDetDTO对象扩展数据"
+        },
+        "outApplyDetExternalState": {
+          "meaning": "OutApplyDetDTO对象上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "outApplyDetFilterClazz": {
+          "meaning": "OutApplyDetDTO对象冗余字段用于筛选"
+        },
+        "outApplyDetFlags": {
+          "meaning": "OutApplyDetDTO对象63位标志位"
+        },
+        "outApplyDetFromAuditDate": {
+          "meaning": "outApplyDetFromAuditDate"
+        },
+        "outApplyDetFromBeginTime": {
+          "meaning": "outApplyDetFromBeginTime"
+        },
+        "outApplyDetFromCreateTime": {
+          "meaning": "outApplyDetFromCreateTime"
+        },
+        "outApplyDetFromDateExtra1": {
+          "meaning": "outApplyDetFromDateExtra1"
+        },
+        "outApplyDetFromDateExtra2": {
+          "meaning": "outApplyDetFromDateExtra2"
+        },
+        "outApplyDetFromDateExtra3": {
+          "meaning": "outApplyDetFromDateExtra3"
+        },
+        "outApplyDetFromDateExtra4": {
+          "meaning": "outApplyDetFromDateExtra4"
+        },
+        "outApplyDetFromDateExtra5": {
+          "meaning": "outApplyDetFromDateExtra5"
+        },
+        "outApplyDetFromDeliveryDate": {
+          "meaning": "outApplyDetFromDeliveryDate"
+        },
+        "outApplyDetFromEndTime": {
+          "meaning": "outApplyDetFromEndTime"
+        },
+        "outApplyDetFromReceiptDate": {
+          "meaning": "outApplyDetFromReceiptDate"
+        },
+        "outApplyDetFromReqDate": {
+          "type": "object",
+          "meaning": "outApplyDetFromReqDate"
+        },
+        "outApplyDetFromUpdateTime": {
+          "meaning": "outApplyDetFromUpdateTime"
+        },
+        "outApplyDetFscType": {
+          "meaning": "OutApplyDetDTO对象FSC声明"
+        },
+        "outApplyDetGenerativePeople": {
+          "meaning": "OutApplyDetDTO对象下发人"
+        },
+        "outApplyDetGenerativeState": {
+          "meaning": "OutApplyDetDTO对象下发状态"
+        },
+        "outApplyDetGroovyScript": {
+          "meaning": "OutApplyDetDTO对象groovy脚本"
+        },
+        "outApplyDetGropeCode": {
+          "meaning": "OutApplyDetDTO对象搜索码"
+        },
+        "outApplyDetId": {
+          "meaning": "OutApplyDetDTO对象主键ID",
+          "is_primary": true
+        },
+        "outApplyDetInUsed": {
+          "meaning": "OutApplyDetDTO对象是否被使用"
+        },
+        "outApplyDetInvTypeTaxRateId": {
+          "meaning": "OutApplyDetDTO对象发票税率id"
+        },
+        "outApplyDetIsBanned": {
+          "meaning": "OutApplyDetDTO对象是否被禁用"
+        },
+        "outApplyDetIsDeleted": {
+          "meaning": "OutApplyDetDTO对象是否被删除"
+        },
+        "outApplyDetIsLeaf": {
+          "meaning": "OutApplyDetDTO对象是否叶子节点"
+        },
+        "outApplyDetIsMainFlow": {
+          "meaning": "OutApplyDetDTO对象是否是主流程"
+        },
+        "outApplyDetIsManualModificationDate": {
+          "meaning": "OutApplyDetDTO对象是否手动修改计划生产时间"
+        },
+        "outApplyDetIsolation": {
+          "meaning": "OutApplyDetDTO对象智能节点数据隔离标识"
+        },
+        "outApplyDetJsScript": {
+          "meaning": "OutApplyDetDTO对象js脚本"
+        },
+        "outApplyDetLossQat": {
+          "meaning": "OutApplyDetDTO对象损耗数量"
+        },
+        "outApplyDetMaterialId": {
+          "meaning": "OutApplyDetDTO对象物料id"
+        },
+        "outApplyDetName": {
+          "meaning": "OutApplyDetDTO对象智能节点名"
+        },
+        "outApplyDetNameCodeSearch": {
+          "meaning": "OutApplyDetDTO对象name、user_code模糊搜索"
+        },
+        "outApplyDetNumberExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展数量1"
+        },
+        "outApplyDetNumberExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展数量2"
+        },
+        "outApplyDetNumberExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展数量3"
+        },
+        "outApplyDetNumberExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展数量4"
+        },
+        "outApplyDetNumberExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展数量5"
+        },
+        "outApplyDetOutApplyActualTimeRequired": {
+          "meaning": "OutApplyDetDTO对象实际需时(小时)"
+        },
+        "outApplyDetOutApplyAdjustmentTimeRequired": {
+          "meaning": "OutApplyDetDTO对象调整需时(输入正负数来计算实际需时)(小时)"
+        },
+        "outApplyDetOutApplyApplicationId": {
+          "meaning": "OutApplyDetDTO对象应用ID"
+        },
+        "outApplyDetOutApplyAuditDate": {
+          "meaning": "OutApplyDetDTO对象审核时间"
+        },
+        "outApplyDetOutApplyAuditStatus": {
+          "meaning": "OutApplyDetDTO对象审核状态"
+        },
+        "outApplyDetOutApplyAvailableScheduleId": {
+          "meaning": "OutApplyDetDTO对象可用日程id"
+        },
+        "outApplyDetOutApplyBeginTime": {
+          "meaning": "OutApplyDetDTO对象开始时间"
+        },
+        "outApplyDetOutApplyBizVersion": {
+          "meaning": "OutApplyDetDTO对象业务自定义版本号"
+        },
+        "outApplyDetOutApplyBriefName": {
+          "meaning": "OutApplyDetDTO对象简称"
+        },
+        "outApplyDetOutApplyBusDivisId": {
+          "meaning": "OutApplyDetDTO对象事业部id"
+        },
+        "outApplyDetOutApplyClazz": {
+          "meaning": "OutApplyDetDTO对象子类 类名（表和类一一对应）"
+        },
+        "outApplyDetOutApplyClosedReason": {
+          "meaning": "OutApplyDetDTO对象结案原因"
+        },
+        "outApplyDetOutApplyClosedStatus": {
+          "meaning": "OutApplyDetDTO对象结案状态"
+        },
+        "outApplyDetOutApplyComment": {
+          "meaning": "OutApplyDetDTO对象评论"
+        },
+        "outApplyDetOutApplyCompleteQuantity": {
+          "meaning": "OutApplyDetDTO对象完成数量"
+        },
+        "outApplyDetOutApplyCompleteStatus": {
+          "meaning": "OutApplyDetDTO对象完成状态"
+        },
+        "outApplyDetOutApplyCreateTime": {
+          "meaning": "OutApplyDetDTO对象创建时间"
+        },
+        "outApplyDetOutApplyCreator": {
+          "meaning": "OutApplyDetDTO对象创建人"
+        },
+        "outApplyDetOutApplyCreatorId": {
+          "meaning": "OutApplyDetDTO对象创建人ID"
+        },
+        "outApplyDetOutApplyDateExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展时间1"
+        },
+        "outApplyDetOutApplyDateExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展时间2"
+        },
+        "outApplyDetOutApplyDateExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展时间3"
+        },
+        "outApplyDetOutApplyDateExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展时间4"
+        },
+        "outApplyDetOutApplyDateExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展时间5"
+        },
+        "outApplyDetOutApplyDefaultType": {
+          "meaning": "OutApplyDetDTO对象智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "outApplyDetOutApplyDeliveryDate": {
+          "meaning": "OutApplyDetDTO对象交货日期"
+        },
+        "outApplyDetOutApplyDescription": {
+          "meaning": "OutApplyDetDTO对象描述"
+        },
+        "outApplyDetOutApplyEndTime": {
+          "meaning": "OutApplyDetDTO对象结束时间"
+        },
+        "outApplyDetOutApplyEndTimeRequired": {
+          "meaning": "OutApplyDetDTO对象最后需时(小时)"
+        },
+        "outApplyDetOutApplyEngName": {
+          "meaning": "OutApplyDetDTO对象英文名称"
+        },
+        "outApplyDetOutApplyEquipmentId": {
+          "meaning": "OutApplyDetDTO对象设备id"
+        },
+        "outApplyDetOutApplyExchangeRateId": {
+          "meaning": "OutApplyDetDTO对象币种汇率id"
+        },
+        "outApplyDetOutApplyExtension": {
+          "meaning": "OutApplyDetDTO对象扩展数据"
+        },
+        "outApplyDetOutApplyExternalState": {
+          "meaning": "OutApplyDetDTO对象上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "outApplyDetOutApplyFilterClazz": {
+          "meaning": "OutApplyDetDTO对象冗余字段用于筛选"
+        },
+        "outApplyDetOutApplyFlags": {
+          "meaning": "OutApplyDetDTO对象63位标志位"
+        },
+        "outApplyDetOutApplyFromAuditDate": {
+          "meaning": "outApplyDetOutApplyFromAuditDate"
+        },
+        "outApplyDetOutApplyFromBeginTime": {
+          "meaning": "outApplyDetOutApplyFromBeginTime"
+        },
+        "outApplyDetOutApplyFromCreateTime": {
+          "meaning": "outApplyDetOutApplyFromCreateTime"
+        },
+        "outApplyDetOutApplyFromDateExtra1": {
+          "meaning": "outApplyDetOutApplyFromDateExtra1"
+        },
+        "outApplyDetOutApplyFromDateExtra2": {
+          "meaning": "outApplyDetOutApplyFromDateExtra2"
+        },
+        "outApplyDetOutApplyFromDateExtra3": {
+          "meaning": "outApplyDetOutApplyFromDateExtra3"
+        },
+        "outApplyDetOutApplyFromDateExtra4": {
+          "meaning": "outApplyDetOutApplyFromDateExtra4"
+        },
+        "outApplyDetOutApplyFromDateExtra5": {
+          "meaning": "outApplyDetOutApplyFromDateExtra5"
+        },
+        "outApplyDetOutApplyFromDeliveryDate": {
+          "meaning": "outApplyDetOutApplyFromDeliveryDate"
+        },
+        "outApplyDetOutApplyFromEndTime": {
+          "meaning": "outApplyDetOutApplyFromEndTime"
+        },
+        "outApplyDetOutApplyFromReceiptDate": {
+          "meaning": "outApplyDetOutApplyFromReceiptDate"
+        },
+        "outApplyDetOutApplyFromUpdateTime": {
+          "meaning": "outApplyDetOutApplyFromUpdateTime"
+        },
+        "outApplyDetOutApplyFscType": {
+          "meaning": "OutApplyDetDTO对象FSC声明"
+        },
+        "outApplyDetOutApplyGenerativePeople": {
+          "meaning": "OutApplyDetDTO对象下发人"
+        },
+        "outApplyDetOutApplyGenerativeState": {
+          "meaning": "OutApplyDetDTO对象下发状态"
+        },
+        "outApplyDetOutApplyGroovyScript": {
+          "meaning": "OutApplyDetDTO对象groovy脚本"
+        },
+        "outApplyDetOutApplyGropeCode": {
+          "meaning": "OutApplyDetDTO对象搜索码"
+        },
+        "outApplyDetOutApplyId": {
+          "meaning": "OutApplyDetDTO对象主键ID"
+        },
+        "outApplyDetOutApplyInUsed": {
+          "meaning": "OutApplyDetDTO对象是否被使用"
+        },
+        "outApplyDetOutApplyInvTypeTaxRateId": {
+          "meaning": "OutApplyDetDTO对象发票税率id"
+        },
+        "outApplyDetOutApplyIsBanned": {
+          "meaning": "OutApplyDetDTO对象是否被禁用"
+        },
+        "outApplyDetOutApplyIsDeleted": {
+          "meaning": "OutApplyDetDTO对象是否被删除"
+        },
+        "outApplyDetOutApplyIsLeaf": {
+          "meaning": "OutApplyDetDTO对象是否叶子节点"
+        },
+        "outApplyDetOutApplyIsMainFlow": {
+          "meaning": "OutApplyDetDTO对象是否是主流程"
+        },
+        "outApplyDetOutApplyIsManualModificationDate": {
+          "meaning": "OutApplyDetDTO对象是否手动修改计划生产时间"
+        },
+        "outApplyDetOutApplyIsolation": {
+          "meaning": "OutApplyDetDTO对象智能节点数据隔离标识"
+        },
+        "outApplyDetOutApplyJsScript": {
+          "meaning": "OutApplyDetDTO对象js脚本"
+        },
+        "outApplyDetOutApplyMaterialId": {
+          "meaning": "OutApplyDetDTO对象物料id"
+        },
+        "outApplyDetOutApplyName": {
+          "meaning": "OutApplyDetDTO对象智能节点名"
+        },
+        "outApplyDetOutApplyNameCodeSearch": {
+          "meaning": "OutApplyDetDTO对象name、user_code模糊搜索"
+        },
+        "outApplyDetOutApplyNumberExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展数量1"
+        },
+        "outApplyDetOutApplyNumberExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展数量2"
+        },
+        "outApplyDetOutApplyNumberExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展数量3"
+        },
+        "outApplyDetOutApplyNumberExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展数量4"
+        },
+        "outApplyDetOutApplyNumberExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展数量5"
+        },
+        "outApplyDetOutApplyParentId": {
+          "meaning": "OutApplyDetDTO对象父节点ID"
+        },
+        "outApplyDetOutApplyPlannedOutputQuantity": {
+          "meaning": "OutApplyDetDTO对象计划产出数量"
+        },
+        "outApplyDetOutApplyPlannedTimeRequired": {
+          "meaning": "OutApplyDetDTO对象计划需时(小时)"
+        },
+        "outApplyDetOutApplyPrintTimes": {
+          "meaning": "OutApplyDetDTO对象打印次数"
+        },
+        "outApplyDetOutApplyPriority": {
+          "meaning": "OutApplyDetDTO对象优先级"
+        },
+        "outApplyDetOutApplyProcessInstanceId": {
+          "meaning": "OutApplyDetDTO对象流程实例ID"
+        },
+        "outApplyDetOutApplyProductionProcessesTypeId": {
+          "meaning": "OutApplyDetDTO对象工序类型ID"
+        },
+        "outApplyDetOutApplyProductionShiftId": {
+          "meaning": "OutApplyDetDTO对象生产班次ID"
+        },
+        "outApplyDetOutApplyQuantity": {
+          "meaning": "OutApplyDetDTO对象任务数量"
+        },
+        "outApplyDetOutApplyReceiptDate": {
+          "meaning": "OutApplyDetDTO对象单据日期"
+        },
+        "outApplyDetOutApplyReceiptType": {
+          "meaning": "OutApplyDetDTO对象单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "outApplyDetOutApplyRelatedTasksId": {
+          "meaning": "OutApplyDetDTO对象关联任务id"
+        },
+        "outApplyDetOutApplySerialNumber": {
+          "meaning": "OutApplyDetDTO对象顺序号"
+        },
+        "outApplyDetOutApplySource": {
+          "meaning": "OutApplyDetDTO对象源"
+        },
+        "outApplyDetOutApplySourceType": {
+          "meaning": "OutApplyDetDTO对象来源类型"
+        },
+        "outApplyDetOutApplyState": {
+          "meaning": "OutApplyDetDTO对象通用状态"
+        },
+        "outApplyDetOutApplySystemCode": {
+          "meaning": "OutApplyDetDTO对象系统编码"
+        },
+        "outApplyDetOutApplyTarget": {
+          "meaning": "OutApplyDetDTO对象目标"
+        },
+        "outApplyDetOutApplyTaskNodeName": {
+          "meaning": "OutApplyDetDTO对象任务节点名称"
+        },
+        "outApplyDetOutApplyTenantId": {
+          "meaning": "OutApplyDetDTO对象租户ID"
+        },
+        "outApplyDetOutApplyThirdPartyClass": {
+          "meaning": "OutApplyDetDTO对象第三方分类"
+        },
+        "outApplyDetOutApplyThirdPartyId": {
+          "meaning": "OutApplyDetDTO对象第三方系统中的唯一ID"
+        },
+        "outApplyDetOutApplyThirdPartyName": {
+          "meaning": "OutApplyDetDTO对象第三方名称"
+        },
+        "outApplyDetOutApplyToAuditDate": {
+          "meaning": "outApplyDetOutApplyToAuditDate"
+        },
+        "outApplyDetOutApplyToBeginTime": {
+          "meaning": "outApplyDetOutApplyToBeginTime"
+        },
+        "outApplyDetOutApplyToCreateTime": {
+          "meaning": "outApplyDetOutApplyToCreateTime"
+        },
+        "outApplyDetOutApplyToDateExtra1": {
+          "meaning": "outApplyDetOutApplyToDateExtra1"
+        },
+        "outApplyDetOutApplyToDateExtra2": {
+          "meaning": "outApplyDetOutApplyToDateExtra2"
+        },
+        "outApplyDetOutApplyToDateExtra3": {
+          "meaning": "outApplyDetOutApplyToDateExtra3"
+        },
+        "outApplyDetOutApplyToDateExtra4": {
+          "meaning": "outApplyDetOutApplyToDateExtra4"
+        },
+        "outApplyDetOutApplyToDateExtra5": {
+          "meaning": "outApplyDetOutApplyToDateExtra5"
+        },
+        "outApplyDetOutApplyToDeliveryDate": {
+          "meaning": "outApplyDetOutApplyToDeliveryDate"
+        },
+        "outApplyDetOutApplyToEndTime": {
+          "meaning": "outApplyDetOutApplyToEndTime"
+        },
+        "outApplyDetOutApplyToReceiptDate": {
+          "meaning": "outApplyDetOutApplyToReceiptDate"
+        },
+        "outApplyDetOutApplyToUpdateTime": {
+          "meaning": "outApplyDetOutApplyToUpdateTime"
+        },
+        "outApplyDetOutApplyUnitCode": {
+          "meaning": "OutApplyDetDTO对象单位id"
+        },
+        "outApplyDetOutApplyUpdateTime": {
+          "meaning": "OutApplyDetDTO对象更新时间"
+        },
+        "outApplyDetOutApplyUpdater": {
+          "meaning": "OutApplyDetDTO对象更新人"
+        },
+        "outApplyDetOutApplyUpdaterId": {
+          "meaning": "OutApplyDetDTO对象更新人ID"
+        },
+        "outApplyDetOutApplyUserCode": {
+          "meaning": "OutApplyDetDTO对象智能节点的唯一编码"
+        },
+        "outApplyDetOutApplyVarExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展1"
+        },
+        "outApplyDetOutApplyVarExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展2"
+        },
+        "outApplyDetOutApplyVarExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展3"
+        },
+        "outApplyDetOutApplyVarExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展4"
+        },
+        "outApplyDetOutApplyVarExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展5"
+        },
+        "outApplyDetOutApplyVersion": {
+          "meaning": "OutApplyDetDTO对象版本号"
+        },
+        "outApplyDetOutRatio": {
+          "meaning": "OutApplyDetDTO对象产出比"
+        },
+        "outApplyDetParentId": {
+          "meaning": "OutApplyDetDTO对象父节点ID"
+        },
+        "outApplyDetPlannedOutputQuantity": {
+          "meaning": "OutApplyDetDTO对象计划产出数量"
+        },
+        "outApplyDetPlannedTimeRequired": {
+          "meaning": "OutApplyDetDTO对象计划需时(小时)"
+        },
+        "outApplyDetPrintTimes": {
+          "meaning": "OutApplyDetDTO对象打印次数"
+        },
+        "outApplyDetPriority": {
+          "meaning": "OutApplyDetDTO对象优先级"
+        },
+        "outApplyDetProcessInstanceId": {
+          "meaning": "OutApplyDetDTO对象流程实例ID"
+        },
+        "outApplyDetProcessName": {
+          "meaning": "OutApplyDetDTO对象工序名称"
+        },
+        "outApplyDetProcessParameters": {
+          "meaning": "OutApplyDetDTO对象工序参数"
+        },
+        "outApplyDetProductName": {
+          "meaning": "OutApplyDetDTO对象产品名称"
+        },
+        "outApplyDetProductionProcDescrip": {
+          "meaning": "OutApplyDetDTO对象工艺描述"
+        },
+        "outApplyDetProductionProcessesTypeId": {
+          "meaning": "OutApplyDetDTO对象工序类型ID"
+        },
+        "outApplyDetProductionShiftId": {
+          "meaning": "OutApplyDetDTO对象生产班次ID"
+        },
+        "outApplyDetQuantity": {
+          "meaning": "OutApplyDetDTO对象任务数量"
+        },
+        "outApplyDetReceiptDate": {
+          "meaning": "OutApplyDetDTO对象单据日期"
+        },
+        "outApplyDetReceiptType": {
+          "meaning": "OutApplyDetDTO对象单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+        },
+        "outApplyDetReceivedQat": {
+          "meaning": "OutApplyDetDTO对象收货数量"
+        },
+        "outApplyDetRelatedTasksId": {
+          "meaning": "OutApplyDetDTO对象关联任务id"
+        },
+        "outApplyDetReqDate": {
+          "type": "object",
+          "meaning": "OutApplyDetDTO对象要求交期"
+        },
+        "outApplyDetSerialNumber": {
+          "meaning": "OutApplyDetDTO对象顺序号"
+        },
+        "outApplyDetSource": {
+          "meaning": "OutApplyDetDTO对象源"
+        },
+        "outApplyDetSourceType": {
+          "meaning": "OutApplyDetDTO对象来源类型"
+        },
+        "outApplyDetState": {
+          "meaning": "OutApplyDetDTO对象通用状态"
+        },
+        "outApplyDetSystemCode": {
+          "meaning": "OutApplyDetDTO对象系统编码"
+        },
+        "outApplyDetTarget": {
+          "meaning": "OutApplyDetDTO对象目标"
+        },
+        "outApplyDetTaskNodeName": {
+          "meaning": "OutApplyDetDTO对象任务节点名称"
+        },
+        "outApplyDetTenantId": {
+          "meaning": "OutApplyDetDTO对象租户ID"
+        },
+        "outApplyDetThirdPartyClass": {
+          "meaning": "OutApplyDetDTO对象第三方分类"
+        },
+        "outApplyDetThirdPartyId": {
+          "meaning": "OutApplyDetDTO对象第三方系统中的唯一ID"
+        },
+        "outApplyDetThirdPartyName": {
+          "meaning": "OutApplyDetDTO对象第三方名称"
+        },
+        "outApplyDetToAuditDate": {
+          "meaning": "outApplyDetToAuditDate"
+        },
+        "outApplyDetToBeginTime": {
+          "meaning": "outApplyDetToBeginTime"
+        },
+        "outApplyDetToCreateTime": {
+          "meaning": "outApplyDetToCreateTime"
+        },
+        "outApplyDetToDateExtra1": {
+          "meaning": "outApplyDetToDateExtra1"
+        },
+        "outApplyDetToDateExtra2": {
+          "meaning": "outApplyDetToDateExtra2"
+        },
+        "outApplyDetToDateExtra3": {
+          "meaning": "outApplyDetToDateExtra3"
+        },
+        "outApplyDetToDateExtra4": {
+          "meaning": "outApplyDetToDateExtra4"
+        },
+        "outApplyDetToDateExtra5": {
+          "meaning": "outApplyDetToDateExtra5"
+        },
+        "outApplyDetToDeliveryDate": {
+          "meaning": "outApplyDetToDeliveryDate"
+        },
+        "outApplyDetToEndTime": {
+          "meaning": "outApplyDetToEndTime"
+        },
+        "outApplyDetToReceiptDate": {
+          "meaning": "outApplyDetToReceiptDate"
+        },
+        "outApplyDetToReqDate": {
+          "type": "object",
+          "meaning": "outApplyDetToReqDate"
+        },
+        "outApplyDetToUpdateTime": {
+          "meaning": "outApplyDetToUpdateTime"
+        },
+        "outApplyDetTotalQat": {
+          "meaning": "OutApplyDetDTO对象外发总数"
+        },
+        "outApplyDetUnitCode": {
+          "meaning": "OutApplyDetDTO对象单位id"
+        },
+        "outApplyDetUpdateTime": {
+          "meaning": "OutApplyDetDTO对象更新时间"
+        },
+        "outApplyDetUpdater": {
+          "meaning": "OutApplyDetDTO对象更新人"
+        },
+        "outApplyDetUpdaterId": {
+          "meaning": "OutApplyDetDTO对象更新人ID"
+        },
+        "outApplyDetUserCode": {
+          "meaning": "OutApplyDetDTO对象智能节点的唯一编码"
+        },
+        "outApplyDetVarExtra1": {
+          "meaning": "OutApplyDetDTO对象扩展1"
+        },
+        "outApplyDetVarExtra2": {
+          "meaning": "OutApplyDetDTO对象扩展2"
+        },
+        "outApplyDetVarExtra3": {
+          "meaning": "OutApplyDetDTO对象扩展3"
+        },
+        "outApplyDetVarExtra4": {
+          "meaning": "OutApplyDetDTO对象扩展4"
+        },
+        "outApplyDetVarExtra5": {
+          "meaning": "OutApplyDetDTO对象扩展5"
+        },
+        "outApplyDetVersion": {
+          "meaning": "OutApplyDetDTO对象版本号"
+        },
+        "outApplyDetWorkorderCode": {
+          "meaning": "OutApplyDetDTO对象工单号"
+        }
+      }
+    }

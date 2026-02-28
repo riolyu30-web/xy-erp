@@ -1,0 +1,236 @@
+{
+      "api_name": "/processes-type/findList",
+      "table_name": "工序类型",
+      "request": {
+        "prcesTypeClazz": "PROCESSES_TYPE"
+      },
+      "mainTabClazz": "PROCESSES_TYPE",
+      "response": {
+        "prcesTypeApplicationId": {
+          "meaning": "工序类型应用ID"
+        },
+        "prcesTypeAuditDate": {
+          "meaning": "工序类型审核时间"
+        },
+        "prcesTypeAuditStatus": {
+          "meaning": "工序类型审核状态"
+        },
+        "prcesTypeBizVersion": {
+          "meaning": "工序类型业务自定义版本号"
+        },
+        "prcesTypeBriefName": {
+          "meaning": "工序类型简称"
+        },
+        "prcesTypeBusDivisId": {
+          "meaning": "工序类型事业部id"
+        },
+        "prcesTypeClazz": {
+          "meaning": "工序类型子类 类名（表和类一一对应）"
+        },
+        "prcesTypeComment": {
+          "meaning": "工序类型评论"
+        },
+        "prcesTypeCreateTime": {
+          "meaning": "工序类型创建时间"
+        },
+        "prcesTypeCreator": {
+          "meaning": "工序类型创建人"
+        },
+        "prcesTypeCreatorId": {
+          "meaning": "工序类型创建人ID"
+        },
+        "prcesTypeDateExtra1": {
+          "meaning": "工序类型扩展时间1"
+        },
+        "prcesTypeDateExtra2": {
+          "meaning": "工序类型扩展时间2"
+        },
+        "prcesTypeDateExtra3": {
+          "meaning": "工序类型扩展时间3"
+        },
+        "prcesTypeDateExtra4": {
+          "meaning": "工序类型扩展时间4"
+        },
+        "prcesTypeDateExtra5": {
+          "meaning": "工序类型扩展时间5"
+        },
+        "prcesTypeDefaultType": {
+          "meaning": "工序类型智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "prcesTypeDescription": {
+          "meaning": "工序类型描述"
+        },
+        "prcesTypeEngName": {
+          "meaning": "工序类型英文名称"
+        },
+        "prcesTypeExtension": {
+          "meaning": "工序类型扩展数据"
+        },
+        "prcesTypeExternalState": {
+          "meaning": "工序类型上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "prcesTypeFlags": {
+          "meaning": "工序类型63位标志位"
+        },
+        "prcesTypeFromAuditDate": {
+          "meaning": "prcesTypeFromAuditDate"
+        },
+        "prcesTypeFromCreateTime": {
+          "meaning": "prcesTypeFromCreateTime"
+        },
+        "prcesTypeFromDateExtra1": {
+          "meaning": "prcesTypeFromDateExtra1"
+        },
+        "prcesTypeFromDateExtra2": {
+          "meaning": "prcesTypeFromDateExtra2"
+        },
+        "prcesTypeFromDateExtra3": {
+          "meaning": "prcesTypeFromDateExtra3"
+        },
+        "prcesTypeFromDateExtra4": {
+          "meaning": "prcesTypeFromDateExtra4"
+        },
+        "prcesTypeFromDateExtra5": {
+          "meaning": "prcesTypeFromDateExtra5"
+        },
+        "prcesTypeFromUpdateTime": {
+          "meaning": "prcesTypeFromUpdateTime"
+        },
+        "prcesTypeGroovyScript": {
+          "meaning": "工序类型groovy脚本"
+        },
+        "prcesTypeGropeCode": {
+          "meaning": "工序类型搜索码"
+        },
+        "prcesTypeId": {
+          "meaning": "工序类型主键ID",
+          "is_primary": true
+        },
+        "prcesTypeInUsed": {
+          "meaning": "工序类型是否被使用"
+        },
+        "prcesTypeIsBanned": {
+          "meaning": "工序类型是否被禁用"
+        },
+        "prcesTypeIsDeleted": {
+          "meaning": "工序类型是否被删除"
+        },
+        "prcesTypeIsMainFlow": {
+          "meaning": "工序类型是否是主流程"
+        },
+        "prcesTypeIsolation": {
+          "meaning": "工序类型智能节点数据隔离标识"
+        },
+        "prcesTypeJsScript": {
+          "meaning": "工序类型js脚本"
+        },
+        "prcesTypeName": {
+          "meaning": "工序类型智能节点名"
+        },
+        "prcesTypeNameCodeSearch": {
+          "meaning": "工序类型name、user_code模糊搜索"
+        },
+        "prcesTypeNumberExtra1": {
+          "meaning": "工序类型扩展数量1"
+        },
+        "prcesTypeNumberExtra2": {
+          "meaning": "工序类型扩展数量2"
+        },
+        "prcesTypeNumberExtra3": {
+          "meaning": "工序类型扩展数量3"
+        },
+        "prcesTypeNumberExtra4": {
+          "meaning": "工序类型扩展数量4"
+        },
+        "prcesTypeNumberExtra5": {
+          "meaning": "工序类型扩展数量5"
+        },
+        "prcesTypeParentId": {
+          "meaning": "工序类型父节点ID"
+        },
+        "prcesTypeProcessInstanceId": {
+          "meaning": "工序类型流程实例ID"
+        },
+        "prcesTypeSerialNumber": {
+          "meaning": "工序类型顺序号"
+        },
+        "prcesTypeStandardCost": {
+          "meaning": "prcesTypeStandardCost"
+        },
+        "prcesTypeState": {
+          "meaning": "工序类型通用状态"
+        },
+        "prcesTypeSystemCode": {
+          "meaning": "工序类型系统编码"
+        },
+        "prcesTypeTaskNodeName": {
+          "meaning": "工序类型任务节点名称"
+        },
+        "prcesTypeTenantId": {
+          "meaning": "prcesTypeTenantId"
+        },
+        "prcesTypeThirdPartyClass": {
+          "meaning": "工序类型第三方分类"
+        },
+        "prcesTypeThirdPartyId": {
+          "meaning": "工序类型第三方系统中的唯一ID"
+        },
+        "prcesTypeThirdPartyName": {
+          "meaning": "工序类型第三方名称"
+        },
+        "prcesTypeToAuditDate": {
+          "meaning": "prcesTypeToAuditDate"
+        },
+        "prcesTypeToCreateTime": {
+          "meaning": "prcesTypeToCreateTime"
+        },
+        "prcesTypeToDateExtra1": {
+          "meaning": "prcesTypeToDateExtra1"
+        },
+        "prcesTypeToDateExtra2": {
+          "meaning": "prcesTypeToDateExtra2"
+        },
+        "prcesTypeToDateExtra3": {
+          "meaning": "prcesTypeToDateExtra3"
+        },
+        "prcesTypeToDateExtra4": {
+          "meaning": "prcesTypeToDateExtra4"
+        },
+        "prcesTypeToDateExtra5": {
+          "meaning": "prcesTypeToDateExtra5"
+        },
+        "prcesTypeToUpdateTime": {
+          "meaning": "prcesTypeToUpdateTime"
+        },
+        "prcesTypeUpdateTime": {
+          "meaning": "工序类型更新时间"
+        },
+        "prcesTypeUpdater": {
+          "meaning": "工序类型更新人"
+        },
+        "prcesTypeUpdaterId": {
+          "meaning": "工序类型更新人ID"
+        },
+        "prcesTypeUserCode": {
+          "meaning": "工序类型智能节点的唯一编码"
+        },
+        "prcesTypeVarExtra1": {
+          "meaning": "工序类型扩展1"
+        },
+        "prcesTypeVarExtra2": {
+          "meaning": "工序类型扩展2"
+        },
+        "prcesTypeVarExtra3": {
+          "meaning": "工序类型扩展3"
+        },
+        "prcesTypeVarExtra4": {
+          "meaning": "工序类型扩展4"
+        },
+        "prcesTypeVarExtra5": {
+          "meaning": "工序类型扩展5"
+        },
+        "prcesTypeVersion": {
+          "meaning": "工序类型版本号"
+        }
+      }
+    }

@@ -1,0 +1,245 @@
+{
+      "api_name": "/comment/findList",
+      "table_name": "评论表",
+      "request": {
+        "commentClazz": "COMMENT"
+      },
+      "mainTabClazz": "COMMENT",
+      "response": {
+        "commentApplicationId": {
+          "meaning": "评论表应用ID"
+        },
+        "commentAuditDate": {
+          "meaning": "评论表审核时间"
+        },
+        "commentAuditStatus": {
+          "meaning": "评论表审核状态"
+        },
+        "commentBizVersion": {
+          "meaning": "评论表业务自定义版本号"
+        },
+        "commentBriefName": {
+          "meaning": "评论表简称"
+        },
+        "commentBusDivisId": {
+          "meaning": "评论表事业部id"
+        },
+        "commentClazz": {
+          "meaning": "评论表子类 类名（表和类一一对应）"
+        },
+        "commentComment": {
+          "meaning": "评论表评论"
+        },
+        "commentContent": {
+          "meaning": "评论表评论内容"
+        },
+        "commentCreateTime": {
+          "meaning": "评论表创建时间"
+        },
+        "commentCreator": {
+          "meaning": "评论表创建人"
+        },
+        "commentCreatorId": {
+          "meaning": "评论表创建人ID"
+        },
+        "commentDateExtra1": {
+          "meaning": "评论表扩展时间1"
+        },
+        "commentDateExtra2": {
+          "meaning": "评论表扩展时间2"
+        },
+        "commentDateExtra3": {
+          "meaning": "评论表扩展时间3"
+        },
+        "commentDateExtra4": {
+          "meaning": "评论表扩展时间4"
+        },
+        "commentDateExtra5": {
+          "meaning": "评论表扩展时间5"
+        },
+        "commentDefaultType": {
+          "meaning": "评论表智能节点主类型 默认类型（类型的system_code字段）"
+        },
+        "commentDescription": {
+          "meaning": "评论表描述"
+        },
+        "commentEngName": {
+          "meaning": "评论表英文名称"
+        },
+        "commentExtension": {
+          "meaning": "评论表扩展数据"
+        },
+        "commentExternalState": {
+          "meaning": "评论表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+        },
+        "commentFlags": {
+          "meaning": "评论表63位标志位"
+        },
+        "commentFromAuditDate": {
+          "meaning": "commentFromAuditDate"
+        },
+        "commentFromCreateTime": {
+          "meaning": "commentFromCreateTime"
+        },
+        "commentFromDateExtra1": {
+          "meaning": "commentFromDateExtra1"
+        },
+        "commentFromDateExtra2": {
+          "meaning": "commentFromDateExtra2"
+        },
+        "commentFromDateExtra3": {
+          "meaning": "commentFromDateExtra3"
+        },
+        "commentFromDateExtra4": {
+          "meaning": "commentFromDateExtra4"
+        },
+        "commentFromDateExtra5": {
+          "meaning": "commentFromDateExtra5"
+        },
+        "commentFromUpdateTime": {
+          "meaning": "commentFromUpdateTime"
+        },
+        "commentGroovyScript": {
+          "meaning": "评论表groovy脚本"
+        },
+        "commentGropeCode": {
+          "meaning": "评论表搜索码"
+        },
+        "commentId": {
+          "meaning": "评论表pk",
+          "is_primary": true
+        },
+        "commentInUsed": {
+          "meaning": "评论表是否被使用"
+        },
+        "commentIsBanned": {
+          "meaning": "评论表是否被禁用"
+        },
+        "commentIsDeleted": {
+          "meaning": "评论表是否被删除"
+        },
+        "commentIsMainFlow": {
+          "meaning": "评论表是否是主流程"
+        },
+        "commentIsolation": {
+          "meaning": "评论表智能节点数据隔离标识"
+        },
+        "commentJsScript": {
+          "meaning": "评论表js脚本"
+        },
+        "commentName": {
+          "meaning": "评论表智能节点名"
+        },
+        "commentNameCodeSearch": {
+          "meaning": "评论表name、user_code模糊搜索"
+        },
+        "commentNumberExtra1": {
+          "meaning": "评论表扩展数量1"
+        },
+        "commentNumberExtra2": {
+          "meaning": "评论表扩展数量2"
+        },
+        "commentNumberExtra3": {
+          "meaning": "评论表扩展数量3"
+        },
+        "commentNumberExtra4": {
+          "meaning": "评论表扩展数量4"
+        },
+        "commentNumberExtra5": {
+          "meaning": "评论表扩展数量5"
+        },
+        "commentParentId": {
+          "meaning": "评论表父节点ID"
+        },
+        "commentProcessInstanceId": {
+          "meaning": "评论表流程实例ID"
+        },
+        "commentRootId": {
+          "meaning": "评论表根评论id"
+        },
+        "commentSerialNumber": {
+          "meaning": "评论表顺序号"
+        },
+        "commentSessionId": {
+          "meaning": "评论表关联会话"
+        },
+        "commentSomeoneId": {
+          "meaning": "评论表评论人id"
+        },
+        "commentState": {
+          "meaning": "评论表通用状态"
+        },
+        "commentSystemCode": {
+          "meaning": "评论表系统编码"
+        },
+        "commentTaskNodeName": {
+          "meaning": "评论表任务节点名称"
+        },
+        "commentTenantId": {
+          "meaning": "评论表租户_id"
+        },
+        "commentThirdPartyClass": {
+          "meaning": "评论表第三方分类"
+        },
+        "commentThirdPartyId": {
+          "meaning": "评论表第三方系统中的唯一ID"
+        },
+        "commentThirdPartyName": {
+          "meaning": "评论表第三方名称"
+        },
+        "commentToAuditDate": {
+          "meaning": "commentToAuditDate"
+        },
+        "commentToCreateTime": {
+          "meaning": "commentToCreateTime"
+        },
+        "commentToDateExtra1": {
+          "meaning": "commentToDateExtra1"
+        },
+        "commentToDateExtra2": {
+          "meaning": "commentToDateExtra2"
+        },
+        "commentToDateExtra3": {
+          "meaning": "commentToDateExtra3"
+        },
+        "commentToDateExtra4": {
+          "meaning": "commentToDateExtra4"
+        },
+        "commentToDateExtra5": {
+          "meaning": "commentToDateExtra5"
+        },
+        "commentToUpdateTime": {
+          "meaning": "commentToUpdateTime"
+        },
+        "commentUpdateTime": {
+          "meaning": "评论表更新时间"
+        },
+        "commentUpdater": {
+          "meaning": "评论表更新人"
+        },
+        "commentUpdaterId": {
+          "meaning": "评论表更新人ID"
+        },
+        "commentUserCode": {
+          "meaning": "评论表智能节点的唯一编码"
+        },
+        "commentVarExtra1": {
+          "meaning": "评论表扩展1"
+        },
+        "commentVarExtra2": {
+          "meaning": "评论表扩展2"
+        },
+        "commentVarExtra3": {
+          "meaning": "评论表扩展3"
+        },
+        "commentVarExtra4": {
+          "meaning": "评论表扩展4"
+        },
+        "commentVarExtra5": {
+          "meaning": "评论表扩展5"
+        },
+        "commentVersion": {
+          "meaning": "评论表版本号"
+        }
+      }
+    }

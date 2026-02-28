@@ -1,0 +1,257 @@
+{
+  "api_name" : "/warehouse-space/findList",
+  "table_name" : "仓空间表",
+  "request" : {
+    "warehouseSpaceClazz" : "WAREHOUSE_SPACE"
+  },
+  "mainTabClazz" : "WAREHOUSE_SPACE",
+  "response" : {
+    "warehouseSpaceApplicationId" : {
+      "meaning" : "仓空间表应用ID"
+    },
+    "warehouseSpaceAuditDate" : {
+      "meaning" : "仓空间表审核时间"
+    },
+    "warehouseSpaceAuditStatus" : {
+      "meaning" : "仓空间表审核状态"
+    },
+    "warehouseSpaceBizVersion" : {
+      "meaning" : "仓空间表业务自定义版本号"
+    },
+    "warehouseSpaceBriefName" : {
+      "meaning" : "仓空间表简称"
+    },
+    "warehouseSpaceBusDivisId" : {
+      "meaning" : "仓空间表事业部id"
+    },
+    "warehouseSpaceClazz" : {
+      "meaning" : "仓空间表子类 类名（表和类一一对应）"
+    },
+    "warehouseSpaceComment" : {
+      "meaning" : "仓空间表评论"
+    },
+    "warehouseSpaceCreateTime" : {
+      "meaning" : "仓空间表创建时间"
+    },
+    "warehouseSpaceCreator" : {
+      "meaning" : "仓空间表创建人"
+    },
+    "warehouseSpaceCreatorId" : {
+      "meaning" : "仓空间表创建人ID"
+    },
+    "warehouseSpaceDateExtra1" : {
+      "meaning" : "仓空间表扩展时间1"
+    },
+    "warehouseSpaceDateExtra2" : {
+      "meaning" : "仓空间表扩展时间2"
+    },
+    "warehouseSpaceDateExtra3" : {
+      "meaning" : "仓空间表扩展时间3"
+    },
+    "warehouseSpaceDateExtra4" : {
+      "meaning" : "仓空间表扩展时间4"
+    },
+    "warehouseSpaceDateExtra5" : {
+      "meaning" : "仓空间表扩展时间5"
+    },
+    "warehouseSpaceDefaultType" : {
+      "meaning" : "仓空间表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "warehouseSpaceDescription" : {
+      "meaning" : "仓空间表描述"
+    },
+    "warehouseSpaceDimensionUnitCode" : {
+      "meaning" : "仓空间表长宽高单位编码"
+    },
+    "warehouseSpaceEngName" : {
+      "meaning" : "仓空间表英文名称"
+    },
+    "warehouseSpaceExtension" : {
+      "meaning" : "仓空间表扩展数据"
+    },
+    "warehouseSpaceExternalState" : {
+      "meaning" : "仓空间表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "warehouseSpaceFlags" : {
+      "meaning" : "仓空间表63位标志位"
+    },
+    "warehouseSpaceFromAuditDate" : {
+      "meaning" : "warehouseSpaceFromAuditDate"
+    },
+    "warehouseSpaceFromCreateTime" : {
+      "meaning" : "warehouseSpaceFromCreateTime"
+    },
+    "warehouseSpaceFromDateExtra1" : {
+      "meaning" : "warehouseSpaceFromDateExtra1"
+    },
+    "warehouseSpaceFromDateExtra2" : {
+      "meaning" : "warehouseSpaceFromDateExtra2"
+    },
+    "warehouseSpaceFromDateExtra3" : {
+      "meaning" : "warehouseSpaceFromDateExtra3"
+    },
+    "warehouseSpaceFromDateExtra4" : {
+      "meaning" : "warehouseSpaceFromDateExtra4"
+    },
+    "warehouseSpaceFromDateExtra5" : {
+      "meaning" : "warehouseSpaceFromDateExtra5"
+    },
+    "warehouseSpaceFromUpdateTime" : {
+      "meaning" : "warehouseSpaceFromUpdateTime"
+    },
+    "warehouseSpaceGroovyScript" : {
+      "meaning" : "仓空间表groovy脚本"
+    },
+    "warehouseSpaceGropeCode" : {
+      "meaning" : "仓空间表搜索码"
+    },
+    "warehouseSpaceHeight" : {
+      "meaning" : "仓空间表高度"
+    },
+    "warehouseSpaceId" : {
+      "meaning" : "仓空间表pk",
+      "is_primary" : true
+    },
+    "warehouseSpaceInUsed" : {
+      "meaning" : "仓空间表是否被使用"
+    },
+    "warehouseSpaceIsBanned" : {
+      "meaning" : "仓空间表是否被禁用"
+    },
+    "warehouseSpaceIsDeleted" : {
+      "meaning" : "仓空间表是否被删除"
+    },
+    "warehouseSpaceIsMainFlow" : {
+      "meaning" : "仓空间表是否是主流程"
+    },
+    "warehouseSpaceIsolation" : {
+      "meaning" : "仓空间表智能节点数据隔离标识"
+    },
+    "warehouseSpaceJsScript" : {
+      "meaning" : "仓空间表js脚本"
+    },
+    "warehouseSpaceLength" : {
+      "meaning" : "仓空间表长度"
+    },
+    "warehouseSpaceLevel" : {
+      "meaning" : "仓空间表层级"
+    },
+    "warehouseSpaceLoadCapacity" : {
+      "meaning" : "仓空间表承重"
+    },
+    "warehouseSpaceLoadCapacityUnitCode" : {
+      "meaning" : "仓空间表承重单位编码"
+    },
+    "warehouseSpaceName" : {
+      "meaning" : "仓空间表智能节点名"
+    },
+    "warehouseSpaceNameCodeSearch" : {
+      "meaning" : "仓空间表name、user_code模糊搜索"
+    },
+    "warehouseSpaceNumberExtra1" : {
+      "meaning" : "仓空间表扩展数量1"
+    },
+    "warehouseSpaceNumberExtra2" : {
+      "meaning" : "仓空间表扩展数量2"
+    },
+    "warehouseSpaceNumberExtra3" : {
+      "meaning" : "仓空间表扩展数量3"
+    },
+    "warehouseSpaceNumberExtra4" : {
+      "meaning" : "仓空间表扩展数量4"
+    },
+    "warehouseSpaceNumberExtra5" : {
+      "meaning" : "仓空间表扩展数量5"
+    },
+    "warehouseSpaceParentId" : {
+      "meaning" : "仓空间表父节点ID"
+    },
+    "warehouseSpaceProcessInstanceId" : {
+      "meaning" : "仓空间表流程实例ID"
+    },
+    "warehouseSpaceSerialNumber" : {
+      "meaning" : "仓空间表顺序号"
+    },
+    "warehouseSpaceState" : {
+      "meaning" : "仓空间表通用状态"
+    },
+    "warehouseSpaceSupBatBarcode" : {
+      "meaning" : "仓空间表供应商批次条码（包需要）"
+    },
+    "warehouseSpaceSystemCode" : {
+      "meaning" : "仓空间表系统编码"
+    },
+    "warehouseSpaceTaskNodeName" : {
+      "meaning" : "仓空间表任务节点名称"
+    },
+    "warehouseSpaceTenantId" : {
+      "meaning" : "仓空间表租户id"
+    },
+    "warehouseSpaceThirdPartyClass" : {
+      "meaning" : "仓空间表第三方分类"
+    },
+    "warehouseSpaceThirdPartyId" : {
+      "meaning" : "仓空间表第三方系统中的唯一ID"
+    },
+    "warehouseSpaceThirdPartyName" : {
+      "meaning" : "仓空间表第三方名称"
+    },
+    "warehouseSpaceToAuditDate" : {
+      "meaning" : "warehouseSpaceToAuditDate"
+    },
+    "warehouseSpaceToCreateTime" : {
+      "meaning" : "warehouseSpaceToCreateTime"
+    },
+    "warehouseSpaceToDateExtra1" : {
+      "meaning" : "warehouseSpaceToDateExtra1"
+    },
+    "warehouseSpaceToDateExtra2" : {
+      "meaning" : "warehouseSpaceToDateExtra2"
+    },
+    "warehouseSpaceToDateExtra3" : {
+      "meaning" : "warehouseSpaceToDateExtra3"
+    },
+    "warehouseSpaceToDateExtra4" : {
+      "meaning" : "warehouseSpaceToDateExtra4"
+    },
+    "warehouseSpaceToDateExtra5" : {
+      "meaning" : "warehouseSpaceToDateExtra5"
+    },
+    "warehouseSpaceToUpdateTime" : {
+      "meaning" : "warehouseSpaceToUpdateTime"
+    },
+    "warehouseSpaceUpdateTime" : {
+      "meaning" : "仓空间表更新时间"
+    },
+    "warehouseSpaceUpdater" : {
+      "meaning" : "仓空间表更新人"
+    },
+    "warehouseSpaceUpdaterId" : {
+      "meaning" : "仓空间表更新人ID"
+    },
+    "warehouseSpaceUserCode" : {
+      "meaning" : "仓空间表智能节点的唯一编码"
+    },
+    "warehouseSpaceVarExtra1" : {
+      "meaning" : "仓空间表扩展1"
+    },
+    "warehouseSpaceVarExtra2" : {
+      "meaning" : "仓空间表扩展2"
+    },
+    "warehouseSpaceVarExtra3" : {
+      "meaning" : "仓空间表扩展3"
+    },
+    "warehouseSpaceVarExtra4" : {
+      "meaning" : "仓空间表扩展4"
+    },
+    "warehouseSpaceVarExtra5" : {
+      "meaning" : "仓空间表扩展5"
+    },
+    "warehouseSpaceVersion" : {
+      "meaning" : "仓空间表版本号"
+    },
+    "warehouseSpaceWidth" : {
+      "meaning" : "仓空间表宽度"
+    }
+  }
+}

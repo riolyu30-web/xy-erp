@@ -1,0 +1,362 @@
+{
+  "api_name" : "/out-apply/findList",
+  "table_name" : "外发申请主表",
+  "request" : {
+    "outApplyClazz" : "OUT_APPLY"
+  },
+  "mainTabClazz" : "OUT_APPLY",
+  "response" : {
+    "outApplyActualTimeRequired" : {
+      "meaning" : "外发申请主表实际需时(小时)"
+    },
+    "outApplyAdjustmentTimeRequired" : {
+      "meaning" : "外发申请主表调整需时(输入正负数来计算实际需时)(小时)"
+    },
+    "outApplyApplicationId" : {
+      "meaning" : "外发申请主表应用ID"
+    },
+    "outApplyAuditDate" : {
+      "meaning" : "外发申请主表审核时间"
+    },
+    "outApplyAuditStatus" : {
+      "meaning" : "外发申请主表审核状态"
+    },
+    "outApplyAvailableScheduleId" : {
+      "meaning" : "外发申请主表可用日程id"
+    },
+    "outApplyBeginTime" : {
+      "meaning" : "外发申请主表开始时间"
+    },
+    "outApplyBizVersion" : {
+      "meaning" : "外发申请主表业务自定义版本号"
+    },
+    "outApplyBriefName" : {
+      "meaning" : "外发申请主表简称"
+    },
+    "outApplyBusDivisId" : {
+      "meaning" : "外发申请主表事业部id"
+    },
+    "outApplyClazz" : {
+      "meaning" : "外发申请主表子类 类名（表和类一一对应）"
+    },
+    "outApplyClosedReason" : {
+      "meaning" : "外发申请主表结案原因"
+    },
+    "outApplyClosedStatus" : {
+      "meaning" : "外发申请主表结案状态"
+    },
+    "outApplyComment" : {
+      "meaning" : "外发申请主表评论"
+    },
+    "outApplyCompleteQuantity" : {
+      "meaning" : "外发申请主表完成数量"
+    },
+    "outApplyCompleteStatus" : {
+      "meaning" : "外发申请主表完成状态"
+    },
+    "outApplyCreateTime" : {
+      "meaning" : "外发申请主表创建时间"
+    },
+    "outApplyCreator" : {
+      "meaning" : "外发申请主表创建人"
+    },
+    "outApplyCreatorId" : {
+      "meaning" : "外发申请主表创建人ID"
+    },
+    "outApplyDateExtra1" : {
+      "meaning" : "外发申请主表扩展时间1"
+    },
+    "outApplyDateExtra2" : {
+      "meaning" : "外发申请主表扩展时间2"
+    },
+    "outApplyDateExtra3" : {
+      "meaning" : "外发申请主表扩展时间3"
+    },
+    "outApplyDateExtra4" : {
+      "meaning" : "外发申请主表扩展时间4"
+    },
+    "outApplyDateExtra5" : {
+      "meaning" : "外发申请主表扩展时间5"
+    },
+    "outApplyDefaultType" : {
+      "meaning" : "外发申请主表智能节点主类型 默认类型（类型的system_code字段）"
+    },
+    "outApplyDeliveryDate" : {
+      "meaning" : "外发申请主表交货日期"
+    },
+    "outApplyDescription" : {
+      "meaning" : "外发申请主表描述"
+    },
+    "outApplyEndTime" : {
+      "meaning" : "外发申请主表结束时间"
+    },
+    "outApplyEndTimeRequired" : {
+      "meaning" : "外发申请主表最后需时(小时)"
+    },
+    "outApplyEngName" : {
+      "meaning" : "外发申请主表英文名称"
+    },
+    "outApplyEquipmentId" : {
+      "meaning" : "外发申请主表设备id"
+    },
+    "outApplyExchangeRateId" : {
+      "meaning" : "外发申请主表币种汇率id"
+    },
+    "outApplyExtension" : {
+      "meaning" : "外发申请主表扩展数据"
+    },
+    "outApplyExternalState" : {
+      "meaning" : "外发申请主表上流程状态位。0-未开始；1-进行中；2-异常；3-结束；4-中止；5-关闭"
+    },
+    "outApplyFilterClazz" : {
+      "meaning" : "外发申请主表冗余字段用于筛选"
+    },
+    "outApplyFlags" : {
+      "meaning" : "外发申请主表63位标志位"
+    },
+    "outApplyFromAuditDate" : {
+      "meaning" : "outApplyFromAuditDate"
+    },
+    "outApplyFromBeginTime" : {
+      "meaning" : "outApplyFromBeginTime"
+    },
+    "outApplyFromCreateTime" : {
+      "meaning" : "outApplyFromCreateTime"
+    },
+    "outApplyFromDateExtra1" : {
+      "meaning" : "outApplyFromDateExtra1"
+    },
+    "outApplyFromDateExtra2" : {
+      "meaning" : "outApplyFromDateExtra2"
+    },
+    "outApplyFromDateExtra3" : {
+      "meaning" : "outApplyFromDateExtra3"
+    },
+    "outApplyFromDateExtra4" : {
+      "meaning" : "outApplyFromDateExtra4"
+    },
+    "outApplyFromDateExtra5" : {
+      "meaning" : "outApplyFromDateExtra5"
+    },
+    "outApplyFromDeliveryDate" : {
+      "meaning" : "outApplyFromDeliveryDate"
+    },
+    "outApplyFromEndTime" : {
+      "meaning" : "outApplyFromEndTime"
+    },
+    "outApplyFromReceiptDate" : {
+      "meaning" : "outApplyFromReceiptDate"
+    },
+    "outApplyFromUpdateTime" : {
+      "meaning" : "outApplyFromUpdateTime"
+    },
+    "outApplyFscType" : {
+      "meaning" : "外发申请主表FSC声明"
+    },
+    "outApplyGenerativePeople" : {
+      "meaning" : "外发申请主表下发人"
+    },
+    "outApplyGenerativeState" : {
+      "meaning" : "外发申请主表下发状态"
+    },
+    "outApplyGroovyScript" : {
+      "meaning" : "外发申请主表groovy脚本"
+    },
+    "outApplyGropeCode" : {
+      "meaning" : "外发申请主表搜索码"
+    },
+    "outApplyId" : {
+      "meaning" : "外发申请主表主键ID",
+      "is_primary" : true
+    },
+    "outApplyInUsed" : {
+      "meaning" : "外发申请主表是否被使用"
+    },
+    "outApplyInvTypeTaxRateId" : {
+      "meaning" : "外发申请主表发票税率id"
+    },
+    "outApplyIsBanned" : {
+      "meaning" : "外发申请主表是否被禁用"
+    },
+    "outApplyIsDeleted" : {
+      "meaning" : "外发申请主表是否被删除"
+    },
+    "outApplyIsLeaf" : {
+      "meaning" : "外发申请主表是否叶子节点"
+    },
+    "outApplyIsMainFlow" : {
+      "meaning" : "外发申请主表是否是主流程"
+    },
+    "outApplyIsManualModificationDate" : {
+      "meaning" : "外发申请主表是否手动修改计划生产时间"
+    },
+    "outApplyIsolation" : {
+      "meaning" : "外发申请主表智能节点数据隔离标识"
+    },
+    "outApplyJsScript" : {
+      "meaning" : "外发申请主表js脚本"
+    },
+    "outApplyMaterialId" : {
+      "meaning" : "外发申请主表物料id"
+    },
+    "outApplyName" : {
+      "meaning" : "外发申请主表智能节点名"
+    },
+    "outApplyNameCodeSearch" : {
+      "meaning" : "外发申请主表name、user_code模糊搜索"
+    },
+    "outApplyNumberExtra1" : {
+      "meaning" : "外发申请主表扩展数量1"
+    },
+    "outApplyNumberExtra2" : {
+      "meaning" : "外发申请主表扩展数量2"
+    },
+    "outApplyNumberExtra3" : {
+      "meaning" : "外发申请主表扩展数量3"
+    },
+    "outApplyNumberExtra4" : {
+      "meaning" : "外发申请主表扩展数量4"
+    },
+    "outApplyNumberExtra5" : {
+      "meaning" : "外发申请主表扩展数量5"
+    },
+    "outApplyParentId" : {
+      "meaning" : "外发申请主表父节点ID"
+    },
+    "outApplyPlannedOutputQuantity" : {
+      "meaning" : "外发申请主表计划产出数量"
+    },
+    "outApplyPlannedTimeRequired" : {
+      "meaning" : "外发申请主表计划需时(小时)"
+    },
+    "outApplyPrintTimes" : {
+      "meaning" : "外发申请主表打印次数"
+    },
+    "outApplyPriority" : {
+      "meaning" : "外发申请主表优先级"
+    },
+    "outApplyProcessInstanceId" : {
+      "meaning" : "外发申请主表流程实例ID"
+    },
+    "outApplyProductionProcessesTypeId" : {
+      "meaning" : "外发申请主表工序类型ID"
+    },
+    "outApplyProductionShiftId" : {
+      "meaning" : "外发申请主表生产班次ID"
+    },
+    "outApplyQuantity" : {
+      "meaning" : "外发申请主表任务数量"
+    },
+    "outApplyReceiptDate" : {
+      "meaning" : "外发申请主表单据日期"
+    },
+    "outApplyReceiptType" : {
+      "meaning" : "外发申请主表单据类型（一个常量值，与node里的defaultTypeId不一样，推荐使用字典）"
+    },
+    "outApplyRelatedTasksId" : {
+      "meaning" : "外发申请主表关联任务id"
+    },
+    "outApplySerialNumber" : {
+      "meaning" : "外发申请主表顺序号"
+    },
+    "outApplySource" : {
+      "meaning" : "外发申请主表源"
+    },
+    "outApplySourceType" : {
+      "meaning" : "外发申请主表来源类型"
+    },
+    "outApplyState" : {
+      "meaning" : "外发申请主表通用状态"
+    },
+    "outApplySystemCode" : {
+      "meaning" : "外发申请主表系统编码"
+    },
+    "outApplyTarget" : {
+      "meaning" : "外发申请主表目标"
+    },
+    "outApplyTaskNodeName" : {
+      "meaning" : "外发申请主表任务节点名称"
+    },
+    "outApplyTenantId" : {
+      "meaning" : "外发申请主表租户ID"
+    },
+    "outApplyThirdPartyClass" : {
+      "meaning" : "外发申请主表第三方分类"
+    },
+    "outApplyThirdPartyId" : {
+      "meaning" : "外发申请主表第三方系统中的唯一ID"
+    },
+    "outApplyThirdPartyName" : {
+      "meaning" : "外发申请主表第三方名称"
+    },
+    "outApplyToAuditDate" : {
+      "meaning" : "outApplyToAuditDate"
+    },
+    "outApplyToBeginTime" : {
+      "meaning" : "outApplyToBeginTime"
+    },
+    "outApplyToCreateTime" : {
+      "meaning" : "outApplyToCreateTime"
+    },
+    "outApplyToDateExtra1" : {
+      "meaning" : "outApplyToDateExtra1"
+    },
+    "outApplyToDateExtra2" : {
+      "meaning" : "outApplyToDateExtra2"
+    },
+    "outApplyToDateExtra3" : {
+      "meaning" : "outApplyToDateExtra3"
+    },
+    "outApplyToDateExtra4" : {
+      "meaning" : "outApplyToDateExtra4"
+    },
+    "outApplyToDateExtra5" : {
+      "meaning" : "outApplyToDateExtra5"
+    },
+    "outApplyToDeliveryDate" : {
+      "meaning" : "outApplyToDeliveryDate"
+    },
+    "outApplyToEndTime" : {
+      "meaning" : "outApplyToEndTime"
+    },
+    "outApplyToReceiptDate" : {
+      "meaning" : "outApplyToReceiptDate"
+    },
+    "outApplyToUpdateTime" : {
+      "meaning" : "outApplyToUpdateTime"
+    },
+    "outApplyUnitCode" : {
+      "meaning" : "外发申请主表单位id"
+    },
+    "outApplyUpdateTime" : {
+      "meaning" : "外发申请主表更新时间"
+    },
+    "outApplyUpdater" : {
+      "meaning" : "外发申请主表更新人"
+    },
+    "outApplyUpdaterId" : {
+      "meaning" : "外发申请主表更新人ID"
+    },
+    "outApplyUserCode" : {
+      "meaning" : "外发申请主表智能节点的唯一编码"
+    },
+    "outApplyVarExtra1" : {
+      "meaning" : "外发申请主表扩展1"
+    },
+    "outApplyVarExtra2" : {
+      "meaning" : "外发申请主表扩展2"
+    },
+    "outApplyVarExtra3" : {
+      "meaning" : "外发申请主表扩展3"
+    },
+    "outApplyVarExtra4" : {
+      "meaning" : "外发申请主表扩展4"
+    },
+    "outApplyVarExtra5" : {
+      "meaning" : "外发申请主表扩展5"
+    },
+    "outApplyVersion" : {
+      "meaning" : "外发申请主表版本号"
+    }
+  }
+}

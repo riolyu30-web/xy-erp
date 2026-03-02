@@ -12,6 +12,8 @@ def REC_SETTLE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /rec-settle-det/findList
     """
+    # 当前方法名
+    function_name = "REC_SETTLE_DET"
     # 构建请求URL
     url = "/rec-settle-det/findList"  # API地址
     recSettleDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -210,12 +212,14 @@ def REC_SETTLE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("应收结算明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("应收结算明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def PAY_SETTLE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /pay-settle-det/findList
     """
+    # 当前方法名
+    function_name = "PAY_SETTLE_DET"
     # 构建请求URL
     url = "/pay-settle-det/findList"  # API地址
     paySettleDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -398,12 +402,14 @@ def PAY_SETTLE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("应付结算明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("应付结算明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def RECEIVABLE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /receivable-det/findList
     """
+    # 当前方法名
+    function_name = "RECEIVABLE_DET"
     # 构建请求URL
     url = "/receivable-det/findList"  # API地址
     receivableDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -662,12 +668,14 @@ def RECEIVABLE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("应收账单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("应收账单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def PAYABLE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /payable-det/findList
     """
+    # 当前方法名
+    function_name = "PAYABLE_DET"
     # 构建请求URL
     url = "/payable-det/findList"  # API地址
     payableDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -862,7 +870,7 @@ def PAYABLE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("应付账单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("应付账单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

@@ -524,7 +524,7 @@
                         }
                     },
                     "name": "业务订单明细",
-                    "function_name": "biz_order_detail",
+                    "function_name": "BUSINESS_ORDER_DETAIL",
                     "prefix": "业务订单明细",
                     "remark": "获取销售订单",
                     "filter": [
@@ -801,7 +801,7 @@
                         }
                     },
                     "name": "成品出库申请明细",
-                    "function_name": "prd_oapy_det",
+                    "function_name": "PRD_O_APY_DET",
                     "remark": "获取送货通知",
                     "prefix": "成品出库申请明细",
                     "filter": [
@@ -1141,7 +1141,7 @@
                         }
                     },
                     "name": "成品销货明细表",
-                    "function_name": "prd_sal_det",
+                    "function_name": "PRD_SAL_DET",
                     "remark": "获取送货单",
                     "prefix": "成品销货明细表",
                     "filter": [

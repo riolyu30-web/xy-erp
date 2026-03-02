@@ -12,6 +12,8 @@ def CUST_COMP_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /cust-comp-det/findList
     """
+    # 当前方法名
+    function_name = "CUST_COMP_DET"
     # 构建请求URL
     url = "/cust-comp-det/findList"  # API地址
     custCompDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -98,12 +100,14 @@ def CUST_COMP_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("客户投诉明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("客户投诉明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def QUALITY_INSPECT_IQC_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /quality-inspect-iqc-det/findList
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_IQC_DET"
     # 构建请求URL
     url = "/quality-inspect-iqc-det/findList"  # API地址
     qualityInspectIqcDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -210,12 +214,14 @@ def QUALITY_INSPECT_IQC_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("IQC明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("IQC明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def QUALITY_INSPECT_IPQC_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /quality-inspect-ipqc-det/findList
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_IPQC_DET"
     # 构建请求URL
     url = "/quality-inspect-ipqc-det/findList"  # API地址
     qualityInspectIpqcDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -366,12 +372,14 @@ def QUALITY_INSPECT_IPQC_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("IPQC明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("IPQC明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def QUALITY_INSPECT_OQC_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /quality-inspect-oqc-det/findList
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_OQC_DET"
     # 构建请求URL
     url = "/quality-inspect-oqc-det/findList"  # API地址
     qualityInspectOqcDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -534,12 +542,14 @@ def QUALITY_INSPECT_OQC_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("OQC明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("OQC明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def QUALITY_INSPECT_FQC_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /quality-inspect-fqc-det/findList
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_FQC_DET"
     # 构建请求URL
     url = "/quality-inspect-fqc-det/findList"  # API地址
     qualityInspectFqcDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -718,7 +728,7 @@ def QUALITY_INSPECT_FQC_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("FQC明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("FQC明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

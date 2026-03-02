@@ -21,6 +21,8 @@ def PURCHASE_REQUISITION_DETAIL(access_token: str,purRequDetFromCreateTime:str=N
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PURCHASE_REQUISITION_DETAIL"
     # 构建请求URL
     url = "/pur-requ-det/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def PURCHASE_REQUISITION_DETAIL(access_token: str,purRequDetFromCreateTime:str=N
         
         "purRequDetToCreateTime": purRequDetToCreateTime,  # 动态参数
         
+        "key": "PURCHASE_REQUISITION_DETAIL",
+        "from": purRequDetFromCreateTime,
+        "to": purRequDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -137,7 +142,7 @@ def PURCHASE_REQUISITION_DETAIL(access_token: str,purRequDetFromCreateTime:str=N
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("采购申请明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("采购申请明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=None,procOrderDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -155,6 +160,8 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PROCUREMENT_ORDER_DETAIL"
     # 构建请求URL
     url = "/procurement-order-detail/findList"  # API地址
     # 构建请求体数据
@@ -169,6 +176,9 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         
         "procOrderDetToCreateTime": procOrderDetToCreateTime,  # 动态参数
         
+        "key": "PROCUREMENT_ORDER_DETAIL",
+        "from": procOrderDetFromCreateTime,
+        "to": procOrderDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -379,7 +389,7 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("采购订单明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("采购订单明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def MAT_INSTORAGE_DET(access_token: str,matInstorageDetFromCreateTime:str=None,matInstorageDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -397,6 +407,8 @@ def MAT_INSTORAGE_DET(access_token: str,matInstorageDetFromCreateTime:str=None,m
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "MAT_INSTORAGE_DET"
     # 构建请求URL
     url = "/mat-instorage-det/findList"  # API地址
     # 构建请求体数据
@@ -411,6 +423,9 @@ def MAT_INSTORAGE_DET(access_token: str,matInstorageDetFromCreateTime:str=None,m
         
         "matInstorageDetToCreateTime": matInstorageDetToCreateTime,  # 动态参数
         
+        "key": "MAT_INSTORAGE_DET",
+        "from": matInstorageDetFromCreateTime,
+        "to": matInstorageDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -593,7 +608,7 @@ def MAT_INSTORAGE_DET(access_token: str,matInstorageDetFromCreateTime:str=None,m
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("物料入库明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("物料入库明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def SUPP_STATEMENT_DET(access_token: str,suppStatementDetFromCreateTime:str=None,suppStatementDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -611,6 +626,8 @@ def SUPP_STATEMENT_DET(access_token: str,suppStatementDetFromCreateTime:str=None
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "SUPP_STATEMENT_DET"
     # 构建请求URL
     url = "/supp-statement-det/findList"  # API地址
     # 构建请求体数据
@@ -625,6 +642,9 @@ def SUPP_STATEMENT_DET(access_token: str,suppStatementDetFromCreateTime:str=None
         
         "suppStatementDetToCreateTime": suppStatementDetToCreateTime,  # 动态参数
         
+        "key": "SUPP_STATEMENT_DET",
+        "from": suppStatementDetFromCreateTime,
+        "to": suppStatementDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -767,7 +787,7 @@ def SUPP_STATEMENT_DET(access_token: str,suppStatementDetFromCreateTime:str=None
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("供应商对账单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("供应商对账单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -785,6 +805,8 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "INVO_ISS_DET"
     # 构建请求URL
     url = "/invo-iss-det/findList"  # API地址
     # 构建请求体数据
@@ -799,6 +821,9 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         
         "invoIssDetToCreateTime": invoIssDetToCreateTime,  # 动态参数
         
+        "key": "INVO_ISS_DET",
+        "from": invoIssDetFromCreateTime,
+        "to": invoIssDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -917,7 +942,7 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("开票登记明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("开票登记明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
@@ -931,6 +956,8 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "XY_USERCENTER_ORGANIZATION"
     # 构建请求URL
     url = "/supplier/findList"  # API地址
     # 构建请求体数据
@@ -939,6 +966,9 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         "supplierClazz": "XY_USERCENTER_ORGANIZATION",  # 固定参数
         
         
+        "key": "XY_USERCENTER_ORGANIZATION",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -1001,7 +1031,7 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("供应商表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("供应商表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @purchase_mcp.tool()  # 注册工具
 def MATERIAL(access_token: str) -> str:  # 定义工具函数
@@ -1015,6 +1045,8 @@ def MATERIAL(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "MATERIAL"
     # 构建请求URL
     url = "/material/findList"  # API地址
     # 构建请求体数据
@@ -1023,6 +1055,9 @@ def MATERIAL(access_token: str) -> str:  # 定义工具函数
         "matClazz": "MATERIAL",  # 固定参数
         
         
+        "key": "MATERIAL",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -1053,4 +1088,4 @@ def MATERIAL(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("物料表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("物料表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

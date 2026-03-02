@@ -12,6 +12,8 @@ def find_all_staff_test(access_token: str):  # 定义测试函数
     """
     测试 /staff/findList
     """
+    # 当前方法名
+    function_name = "find_all_staff"
     # 构建请求URL
     url = "/staff/findList"  # API地址
 
@@ -52,12 +54,14 @@ def find_all_staff_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("员工表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("员工表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def find_department_test(access_token: str):  # 定义测试函数
     """
     测试 /group/findList
     """
+    # 当前方法名
+    function_name = "find_department"
     # 构建请求URL
     url = "/group/findList"  # API地址
 
@@ -90,12 +94,14 @@ def find_department_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("部门表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("部门表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def find_role_test(access_token: str):  # 定义测试函数
     """
     测试 /role/findList
     """
+    # 当前方法名
+    function_name = "find_role"
     # 构建请求URL
     url = "/role/findList"  # API地址
 
@@ -128,7 +134,7 @@ def find_role_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("岗位表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("岗位表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

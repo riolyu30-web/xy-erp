@@ -8,10 +8,12 @@ from services.tool import fetch_data  # 导入工具函数
 import json # 导入json模块
 
 
-def biz_order_detail_test(access_token: str):  # 定义测试函数
+def BUSINESS_ORDER_DETAIL_test(access_token: str):  # 定义测试函数
     """
     测试 /biz-order-detail/findList
     """
+    # 当前方法名
+    function_name = "BUSINESS_ORDER_DETAIL"
     # 构建请求URL
     url = "/biz-order-detail/findList"  # API地址
     bizOrderDetailFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -218,12 +220,14 @@ def biz_order_detail_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("业务订单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("业务订单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
-def prd_oapy_det_test(access_token: str):  # 定义测试函数
+def PRD_O_APY_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /prd-oapy-det/findList
     """
+    # 当前方法名
+    function_name = "PRD_O_APY_DET"
     # 构建请求URL
     url = "/prd-oapy-det/findList"  # API地址
     prdOApyDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -454,12 +458,14 @@ def prd_oapy_det_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("成品出库申请明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("成品出库申请明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
-def prd_sal_det_test(access_token: str):  # 定义测试函数
+def PRD_SAL_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /prd-sal-det/findList
     """
+    # 当前方法名
+    function_name = "PRD_SAL_DET"
     # 构建请求URL
     url = "/prd-sal-det/findList"  # API地址
     prdSalDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -738,12 +744,14 @@ def prd_sal_det_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("成品销货明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("成品销货明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def PRD_RET_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /prd-ret-det/findList
     """
+    # 当前方法名
+    function_name = "PRD_RET_DET"
     # 构建请求URL
     url = "/prd-ret-det/findList"  # API地址
     prdRetDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -938,12 +946,14 @@ def PRD_RET_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("成品退货明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("成品退货明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def CUST_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /cust-statement-det/findList
     """
+    # 当前方法名
+    function_name = "CUST_STATEMENT_DET"
     # 构建请求URL
     url = "/cust-statement-det/findList"  # API地址
     custStatementDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -1106,12 +1116,14 @@ def CUST_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("客户对账单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("客户对账单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def INVO_ISS_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /invo-iss-det/findList
     """
+    # 当前方法名
+    function_name = "INVO_ISS_DET"
     # 构建请求URL
     url = "/invo-iss-det/findList"  # API地址
     invoIssDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -1254,21 +1266,21 @@ def INVO_ISS_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("开票登记明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("开票登记明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":
     access_token = auth_login()  # 获取访问令牌
     
-    #biz_order_detail_test(access_token)  # 调用测试函数
+    BUSINESS_ORDER_DETAIL_test(access_token)  # 调用测试函数
     
-    prd_oapy_det_test(access_token)  # 调用测试函数
+    PRD_O_APY_DET_test(access_token)  # 调用测试函数
     
-    #prd_sal_det_test(access_token)  # 调用测试函数
+    PRD_SAL_DET_test(access_token)  # 调用测试函数
     
-    #PRD_RET_DET_test(access_token)  # 调用测试函数
+    PRD_RET_DET_test(access_token)  # 调用测试函数
     
-    #CUST_STATEMENT_DET_test(access_token)  # 调用测试函数
+    CUST_STATEMENT_DET_test(access_token)  # 调用测试函数
     
-    #INVO_ISS_DET_test(access_token)  # 调用测试函数
+    INVO_ISS_DET_test(access_token)  # 调用测试函数
     

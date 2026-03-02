@@ -21,6 +21,8 @@ def CUST_COMP_DET(access_token: str,custCompDetFromCreateTime:str=None,custCompD
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "CUST_COMP_DET"
     # 构建请求URL
     url = "/cust-comp-det/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def CUST_COMP_DET(access_token: str,custCompDetFromCreateTime:str=None,custCompD
         
         "custCompDetToCreateTime": custCompDetToCreateTime,  # 动态参数
         
+        "key": "CUST_COMP_DET",
+        "from": custCompDetFromCreateTime,
+        "to": custCompDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -101,7 +106,7 @@ def CUST_COMP_DET(access_token: str,custCompDetFromCreateTime:str=None,custCompD
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("客户投诉明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("客户投诉明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @quality_mcp.tool()  # 注册工具
 def QUALITY_INSPECT_IQC_DET(access_token: str,qualityInspectIqcDetFromCreateTime:str=None,qualityInspectIqcDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -119,6 +124,8 @@ def QUALITY_INSPECT_IQC_DET(access_token: str,qualityInspectIqcDetFromCreateTime
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_IQC_DET"
     # 构建请求URL
     url = "/quality-inspect-iqc-det/findList"  # API地址
     # 构建请求体数据
@@ -133,6 +140,9 @@ def QUALITY_INSPECT_IQC_DET(access_token: str,qualityInspectIqcDetFromCreateTime
         
         "qualityInspectIqcDetToCreateTime": qualityInspectIqcDetToCreateTime,  # 动态参数
         
+        "key": "QUALITY_INSPECT_IQC_DET",
+        "from": qualityInspectIqcDetFromCreateTime,
+        "to": qualityInspectIqcDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -219,7 +229,7 @@ def QUALITY_INSPECT_IQC_DET(access_token: str,qualityInspectIqcDetFromCreateTime
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("IQC明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("IQC明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @quality_mcp.tool()  # 注册工具
 def QUALITY_INSPECT_IPQC_DET(access_token: str,qualityInspectIpqcDetFromCreateTime:str=None,qualityInspectIpqcDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -237,6 +247,8 @@ def QUALITY_INSPECT_IPQC_DET(access_token: str,qualityInspectIpqcDetFromCreateTi
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_IPQC_DET"
     # 构建请求URL
     url = "/quality-inspect-ipqc-det/findList"  # API地址
     # 构建请求体数据
@@ -251,6 +263,9 @@ def QUALITY_INSPECT_IPQC_DET(access_token: str,qualityInspectIpqcDetFromCreateTi
         
         "qualityInspectIpqcDetToCreateTime": qualityInspectIpqcDetToCreateTime,  # 动态参数
         
+        "key": "QUALITY_INSPECT_IPQC_DET",
+        "from": qualityInspectIpqcDetFromCreateTime,
+        "to": qualityInspectIpqcDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -381,7 +396,7 @@ def QUALITY_INSPECT_IPQC_DET(access_token: str,qualityInspectIpqcDetFromCreateTi
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("IPQC明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("IPQC明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @quality_mcp.tool()  # 注册工具
 def QUALITY_INSPECT_OQC_DET(access_token: str,qualityInspectOqcDetFromCreateTime:str=None,qualityInspectOqcDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -399,6 +414,8 @@ def QUALITY_INSPECT_OQC_DET(access_token: str,qualityInspectOqcDetFromCreateTime
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_OQC_DET"
     # 构建请求URL
     url = "/quality-inspect-oqc-det/findList"  # API地址
     # 构建请求体数据
@@ -413,6 +430,9 @@ def QUALITY_INSPECT_OQC_DET(access_token: str,qualityInspectOqcDetFromCreateTime
         
         "qualityInspectOqcDetToCreateTime": qualityInspectOqcDetToCreateTime,  # 动态参数
         
+        "key": "QUALITY_INSPECT_OQC_DET",
+        "from": qualityInspectOqcDetFromCreateTime,
+        "to": qualityInspectOqcDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -555,7 +575,7 @@ def QUALITY_INSPECT_OQC_DET(access_token: str,qualityInspectOqcDetFromCreateTime
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("OQC明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("OQC明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @quality_mcp.tool()  # 注册工具
 def QUALITY_INSPECT_FQC_DET(access_token: str,qualityInspectFqcDetFromCreateTime:str=None,qualityInspectFqcDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -573,6 +593,8 @@ def QUALITY_INSPECT_FQC_DET(access_token: str,qualityInspectFqcDetFromCreateTime
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "QUALITY_INSPECT_FQC_DET"
     # 构建请求URL
     url = "/quality-inspect-fqc-det/findList"  # API地址
     # 构建请求体数据
@@ -587,6 +609,9 @@ def QUALITY_INSPECT_FQC_DET(access_token: str,qualityInspectFqcDetFromCreateTime
         
         "qualityInspectFqcDetToCreateTime": qualityInspectFqcDetToCreateTime,  # 动态参数
         
+        "key": "QUALITY_INSPECT_FQC_DET",
+        "from": qualityInspectFqcDetFromCreateTime,
+        "to": qualityInspectFqcDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -745,4 +770,4 @@ def QUALITY_INSPECT_FQC_DET(access_token: str,qualityInspectFqcDetFromCreateTime
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("FQC明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("FQC明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

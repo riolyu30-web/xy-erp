@@ -21,6 +21,8 @@ def PROD_PRCES_APPLY_DET(access_token: str,prodPrcesApplyDetFromCreateTime:str=N
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PROD_PRCES_APPLY_DET"
     # 构建请求URL
     url = "/prod-prces-apply-det/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def PROD_PRCES_APPLY_DET(access_token: str,prodPrcesApplyDetFromCreateTime:str=N
         
         "prodPrcesApplyDetToCreateTime": prodPrcesApplyDetToCreateTime,  # 动态参数
         
+        "key": "PROD_PRCES_APPLY_DET",
+        "from": prodPrcesApplyDetFromCreateTime,
+        "to": prodPrcesApplyDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -145,7 +150,7 @@ def PROD_PRCES_APPLY_DET(access_token: str,prodPrcesApplyDetFromCreateTime:str=N
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("生产加工申请明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("生产加工申请明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @work_mcp.tool()  # 注册工具
 def MAT_OUT_APY_DET(access_token: str,matOutApyDetFromCreateTime:str=None,matOutApyDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -163,6 +168,8 @@ def MAT_OUT_APY_DET(access_token: str,matOutApyDetFromCreateTime:str=None,matOut
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "MAT_OUT_APY_DET"
     # 构建请求URL
     url = "/mat-out-apy-det/findList"  # API地址
     # 构建请求体数据
@@ -177,6 +184,9 @@ def MAT_OUT_APY_DET(access_token: str,matOutApyDetFromCreateTime:str=None,matOut
         
         "matOutApyDetToCreateTime": matOutApyDetToCreateTime,  # 动态参数
         
+        "key": "MAT_OUT_APY_DET",
+        "from": matOutApyDetFromCreateTime,
+        "to": matOutApyDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -271,7 +281,7 @@ def MAT_OUT_APY_DET(access_token: str,matOutApyDetFromCreateTime:str=None,matOut
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("物料出库申请明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("物料出库申请明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @work_mcp.tool()  # 注册工具
 def SAM_ORDER_NOTICE_DET(access_token: str,samOrderNoticeDetFromCreateTime:str=None,samOrderNoticeDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -289,6 +299,8 @@ def SAM_ORDER_NOTICE_DET(access_token: str,samOrderNoticeDetFromCreateTime:str=N
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "SAM_ORDER_NOTICE_DET"
     # 构建请求URL
     url = "/sam-order-notice-det/findList"  # API地址
     # 构建请求体数据
@@ -303,6 +315,9 @@ def SAM_ORDER_NOTICE_DET(access_token: str,samOrderNoticeDetFromCreateTime:str=N
         
         "samOrderNoticeDetToCreateTime": samOrderNoticeDetToCreateTime,  # 动态参数
         
+        "key": "SAM_ORDER_NOTICE_DET",
+        "from": samOrderNoticeDetFromCreateTime,
+        "to": samOrderNoticeDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -409,7 +424,7 @@ def SAM_ORDER_NOTICE_DET(access_token: str,samOrderNoticeDetFromCreateTime:str=N
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("打样通知单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("打样通知单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @work_mcp.tool()  # 注册工具
 def PROCESSES_TYPE(access_token: str) -> str:  # 定义工具函数
@@ -423,6 +438,8 @@ def PROCESSES_TYPE(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PROCESSES_TYPE"
     # 构建请求URL
     url = "/processes-type/findList"  # API地址
     # 构建请求体数据
@@ -431,6 +448,9 @@ def PROCESSES_TYPE(access_token: str) -> str:  # 定义工具函数
         "prcesTypeClazz": "PROCESSES_TYPE",  # 固定参数
         
         
+        "key": "PROCESSES_TYPE",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -461,7 +481,7 @@ def PROCESSES_TYPE(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("工序类型", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("工序类型", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @work_mcp.tool()  # 注册工具
 def EQUIPMENT(access_token: str) -> str:  # 定义工具函数
@@ -475,6 +495,8 @@ def EQUIPMENT(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "EQUIPMENT"
     # 构建请求URL
     url = "/equ/findList"  # API地址
     # 构建请求体数据
@@ -483,6 +505,9 @@ def EQUIPMENT(access_token: str) -> str:  # 定义工具函数
         "equClazz": "EQUIPMENT",  # 固定参数
         
         
+        "key": "EQUIPMENT",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -581,4 +606,4 @@ def EQUIPMENT(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("设备表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("设备表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

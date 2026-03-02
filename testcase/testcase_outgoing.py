@@ -12,6 +12,8 @@ def OUTGOING_ORDER_DETAIL_test(access_token: str):  # 定义测试函数
     """
     测试 /outgoing-order-detail/findList
     """
+    # 当前方法名
+    function_name = "OUTGOING_ORDER_DETAIL"
     # 构建请求URL
     url = "/outgoing-order-detail/findList"  # API地址
     outgoingOrderDetailFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -282,12 +284,14 @@ def OUTGOING_ORDER_DETAIL_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("外发订单明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("外发订单明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def MAT_ARR_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /mat-arr-det/mainAndDetail/findList
     """
+    # 当前方法名
+    function_name = "MAT_ARR_DET"
     # 构建请求URL
     url = "/mat-arr-det/mainAndDetail/findList"  # API地址
     matArrDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -510,12 +514,14 @@ def MAT_ARR_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("物料到货明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("物料到货明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def MANU_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /manu-statement-det/findList
     """
+    # 当前方法名
+    function_name = "MANU_STATEMENT_DET"
     # 构建请求URL
     url = "/manu-statement-det/findList"  # API地址
     manuStatementDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -714,12 +720,14 @@ def MANU_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("加工商对账单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("加工商对账单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def XY_USERCENTER_ORGANIZATION_test(access_token: str):  # 定义测试函数
     """
     测试 /supplier/findList
     """
+    # 当前方法名
+    function_name = "XY_USERCENTER_ORGANIZATION"
     # 构建请求URL
     url = "/supplier/findList"  # API地址
 
@@ -810,7 +818,7 @@ def XY_USERCENTER_ORGANIZATION_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("供应商表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("供应商表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

@@ -21,6 +21,8 @@ def REC_SETTLE_DET(access_token: str,recSettleDetFromCreateTime:str=None,recSett
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "REC_SETTLE_DET"
     # 构建请求URL
     url = "/rec-settle-det/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def REC_SETTLE_DET(access_token: str,recSettleDetFromCreateTime:str=None,recSett
         
         "recSettleDetToCreateTime": recSettleDetToCreateTime,  # 动态参数
         
+        "key": "REC_SETTLE_DET",
+        "from": recSettleDetFromCreateTime,
+        "to": recSettleDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -213,7 +218,7 @@ def REC_SETTLE_DET(access_token: str,recSettleDetFromCreateTime:str=None,recSett
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("应收结算明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("应收结算明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @pay_mcp.tool()  # 注册工具
 def PAY_SETTLE_DET(access_token: str,paySettleDetFromCreateTime:str=None,paySettleDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -231,6 +236,8 @@ def PAY_SETTLE_DET(access_token: str,paySettleDetFromCreateTime:str=None,paySett
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PAY_SETTLE_DET"
     # 构建请求URL
     url = "/pay-settle-det/findList"  # API地址
     # 构建请求体数据
@@ -245,6 +252,9 @@ def PAY_SETTLE_DET(access_token: str,paySettleDetFromCreateTime:str=None,paySett
         
         "paySettleDetToCreateTime": paySettleDetToCreateTime,  # 动态参数
         
+        "key": "PAY_SETTLE_DET",
+        "from": paySettleDetFromCreateTime,
+        "to": paySettleDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -407,7 +417,7 @@ def PAY_SETTLE_DET(access_token: str,paySettleDetFromCreateTime:str=None,paySett
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("应付结算明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("应付结算明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @pay_mcp.tool()  # 注册工具
 def RECEIVABLE_DET(access_token: str,receivableDetFromCreateTime:str=None,receivableDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -425,6 +435,8 @@ def RECEIVABLE_DET(access_token: str,receivableDetFromCreateTime:str=None,receiv
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "RECEIVABLE_DET"
     # 构建请求URL
     url = "/receivable-det/findList"  # API地址
     # 构建请求体数据
@@ -439,6 +451,9 @@ def RECEIVABLE_DET(access_token: str,receivableDetFromCreateTime:str=None,receiv
         
         "receivableDetToCreateTime": receivableDetToCreateTime,  # 动态参数
         
+        "key": "RECEIVABLE_DET",
+        "from": receivableDetFromCreateTime,
+        "to": receivableDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -677,7 +692,7 @@ def RECEIVABLE_DET(access_token: str,receivableDetFromCreateTime:str=None,receiv
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("应收账单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("应收账单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @pay_mcp.tool()  # 注册工具
 def PAYABLE_DET(access_token: str,payableDetFromCreateTime:str=None,payableDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -695,6 +710,8 @@ def PAYABLE_DET(access_token: str,payableDetFromCreateTime:str=None,payableDetTo
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PAYABLE_DET"
     # 构建请求URL
     url = "/payable-det/findList"  # API地址
     # 构建请求体数据
@@ -709,6 +726,9 @@ def PAYABLE_DET(access_token: str,payableDetFromCreateTime:str=None,payableDetTo
         
         "payableDetToCreateTime": payableDetToCreateTime,  # 动态参数
         
+        "key": "PAYABLE_DET",
+        "from": payableDetFromCreateTime,
+        "to": payableDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -883,4 +903,4 @@ def PAYABLE_DET(access_token: str,payableDetFromCreateTime:str=None,payableDetTo
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("应付账单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("应付账单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

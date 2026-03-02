@@ -12,6 +12,8 @@ def PROD_PRCES_APPLY_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /prod-prces-apply-det/findList
     """
+    # 当前方法名
+    function_name = "PROD_PRCES_APPLY_DET"
     # 构建请求URL
     url = "/prod-prces-apply-det/findList"  # API地址
     prodPrcesApplyDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -142,12 +144,14 @@ def PROD_PRCES_APPLY_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("生产加工申请明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("生产加工申请明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def MAT_OUT_APY_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /mat-out-apy-det/findList
     """
+    # 当前方法名
+    function_name = "MAT_OUT_APY_DET"
     # 构建请求URL
     url = "/mat-out-apy-det/findList"  # API地址
     matOutApyDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -262,12 +266,14 @@ def MAT_OUT_APY_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("物料出库申请明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("物料出库申请明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def SAM_ORDER_NOTICE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /sam-order-notice-det/findList
     """
+    # 当前方法名
+    function_name = "SAM_ORDER_NOTICE_DET"
     # 构建请求URL
     url = "/sam-order-notice-det/findList"  # API地址
     samOrderNoticeDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -394,12 +400,14 @@ def SAM_ORDER_NOTICE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("打样通知单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("打样通知单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def PROCESSES_TYPE_test(access_token: str):  # 定义测试函数
     """
     测试 /processes-type/findList
     """
+    # 当前方法名
+    function_name = "PROCESSES_TYPE"
     # 构建请求URL
     url = "/processes-type/findList"  # API地址
 
@@ -442,12 +450,14 @@ def PROCESSES_TYPE_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("工序类型", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("工序类型", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def EQUIPMENT_test(access_token: str):  # 定义测试函数
     """
     测试 /equ/findList
     """
+    # 当前方法名
+    function_name = "EQUIPMENT"
     # 构建请求URL
     url = "/equ/findList"  # API地址
 
@@ -558,7 +568,7 @@ def EQUIPMENT_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("设备表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("设备表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

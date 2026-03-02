@@ -9,6 +9,7 @@ import os  # 导入操作系统模块
 from qiniu import Auth, put_file, put_data  # 导入七牛云SDK
 import base64  # 导入base64模块
 from services.supabase_manager import SupabaseManager  
+from services.neo4j_service import find_nodes_by_time_range  
 import requests  # 导入requests模块用于HTTP请求
 import json  # 导入json模块用于处理JSON数据
 from services.cache import cache_save  # 导入缓存服务
@@ -60,11 +61,15 @@ def fetch_data(api_name:str, url: str, data: dict, access_token: str, filtered_f
         dict: 包含过滤后数据的响应对象，数据格式为CSV字符串
     """
     try:
-
-        data_list = get_data(url, data, access_token, params,host_name,data_label)
+        if url.startswith("/"):
+            data_list = get_data(url, data, access_token, params,host_name,data_label)
+        else:
+            print("find_nodes_by_time_range")
+            data_list = find_nodes_by_time_range(url, data["key"], data["from"], data["to"])
+        
         if not data_list:
             return {"error": "没有数据"}
-        #print(json.dumps(data_list[0], ensure_ascii=False))
+        print(json.dumps(data_list[0], ensure_ascii=False))
         # 仅保留指定字段
         filtered_list = []
         for item in data_list:

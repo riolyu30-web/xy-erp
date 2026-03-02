@@ -6,7 +6,7 @@ order_mcp = FastMCP(name="order")  # 创建计算服务MCP实例
 
 
 @order_mcp.tool()  # 注册工具
-def biz_order_detail(access_token: str,bizOrderDetailFromCreateTime:str=None,bizOrderDetailToCreateTime:str=None) -> str:  # 定义工具函数
+def BUSINESS_ORDER_DETAIL(access_token: str,bizOrderDetailFromCreateTime:str=None,bizOrderDetailToCreateTime:str=None) -> str:  # 定义工具函数
     """
     业务订单明细，获取销售订单
     
@@ -21,6 +21,8 @@ def biz_order_detail(access_token: str,bizOrderDetailFromCreateTime:str=None,biz
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "BUSINESS_ORDER_DETAIL"
     # 构建请求URL
     url = "/biz-order-detail/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def biz_order_detail(access_token: str,bizOrderDetailFromCreateTime:str=None,biz
         
         "bizOrderDetailToCreateTime": bizOrderDetailToCreateTime,  # 动态参数
         
+        "key": "bizOrderDetailBizOrderBeginTime",
+        "from": bizOrderDetailFromCreateTime,
+        "to": bizOrderDetailToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -221,10 +226,10 @@ def biz_order_detail(access_token: str,bizOrderDetailFromCreateTime:str=None,biz
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("业务订单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("业务订单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @order_mcp.tool()  # 注册工具
-def prd_oapy_det(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetToCreateTime:str=None) -> str:  # 定义工具函数
+def PRD_O_APY_DET(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetToCreateTime:str=None) -> str:  # 定义工具函数
     """
     成品出库申请明细，获取送货通知
     
@@ -239,6 +244,8 @@ def prd_oapy_det(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetT
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PRD_O_APY_DET"
     # 构建请求URL
     url = "/prd-oapy-det/findList"  # API地址
     # 构建请求体数据
@@ -253,6 +260,9 @@ def prd_oapy_det(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetT
         
         "prdOApyDetToCreateTime": prdOApyDetToCreateTime,  # 动态参数
         
+        "key": "prdOApyDetBeginTime",
+        "from": prdOApyDetFromCreateTime,
+        "to": prdOApyDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -463,10 +473,10 @@ def prd_oapy_det(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDetT
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("成品出库申请明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("成品出库申请明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @order_mcp.tool()  # 注册工具
-def prd_sal_det(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCreateTime:str=None) -> str:  # 定义工具函数
+def PRD_SAL_DET(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCreateTime:str=None) -> str:  # 定义工具函数
     """
     成品销货明细表，获取送货单
     
@@ -481,6 +491,8 @@ def prd_sal_det(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCr
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PRD_SAL_DET"
     # 构建请求URL
     url = "/prd-sal-det/findList"  # API地址
     # 构建请求体数据
@@ -495,6 +507,9 @@ def prd_sal_det(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCr
         
         "prdSalDetToCreateTime": prdSalDetToCreateTime,  # 动态参数
         
+        "key": "prdSalDetBeginTime",
+        "from": prdSalDetFromCreateTime,
+        "to": prdSalDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -753,7 +768,7 @@ def prd_sal_det(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCr
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("成品销货明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("成品销货明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @order_mcp.tool()  # 注册工具
 def PRD_RET_DET(access_token: str,prdRetDetFromCreateTime:str=None,prdRetDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -771,6 +786,8 @@ def PRD_RET_DET(access_token: str,prdRetDetFromCreateTime:str=None,prdRetDetToCr
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "PRD_RET_DET"
     # 构建请求URL
     url = "/prd-ret-det/findList"  # API地址
     # 构建请求体数据
@@ -785,6 +802,9 @@ def PRD_RET_DET(access_token: str,prdRetDetFromCreateTime:str=None,prdRetDetToCr
         
         "prdRetDetToCreateTime": prdRetDetToCreateTime,  # 动态参数
         
+        "key": "prdRetDetBeginTime",
+        "from": prdRetDetFromCreateTime,
+        "to": prdRetDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -959,7 +979,7 @@ def PRD_RET_DET(access_token: str,prdRetDetFromCreateTime:str=None,prdRetDetToCr
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("成品退货明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("成品退货明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @order_mcp.tool()  # 注册工具
 def CUST_STATEMENT_DET(access_token: str,custStatementDetFromCreateTime:str=None,custStatementDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -977,6 +997,8 @@ def CUST_STATEMENT_DET(access_token: str,custStatementDetFromCreateTime:str=None
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "CUST_STATEMENT_DET"
     # 构建请求URL
     url = "/cust-statement-det/findList"  # API地址
     # 构建请求体数据
@@ -991,6 +1013,9 @@ def CUST_STATEMENT_DET(access_token: str,custStatementDetFromCreateTime:str=None
         
         "custStatementDetToCreateTime": custStatementDetToCreateTime,  # 动态参数
         
+        "key": "custStatementDetAuditDate",
+        "from": custStatementDetFromCreateTime,
+        "to": custStatementDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -1133,7 +1158,7 @@ def CUST_STATEMENT_DET(access_token: str,custStatementDetFromCreateTime:str=None
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("客户对账单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("客户对账单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @order_mcp.tool()  # 注册工具
 def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -1151,6 +1176,8 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "INVO_ISS_DET"
     # 构建请求URL
     url = "/invo-iss-det/findList"  # API地址
     # 构建请求体数据
@@ -1165,6 +1192,9 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         
         "invoIssDetToCreateTime": invoIssDetToCreateTime,  # 动态参数
         
+        "key": "invoIssDetBeginTime",
+        "from": invoIssDetFromCreateTime,
+        "to": invoIssDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -1287,4 +1317,4 @@ def INVO_ISS_DET(access_token: str,invoIssDetFromCreateTime:str=None,invoIssDetT
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("开票登记明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("开票登记明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

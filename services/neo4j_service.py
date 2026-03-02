@@ -504,6 +504,61 @@ def update_node_properties(clazz: str, match_properties: dict, update_properties
         
         # 在控制台打印将要执行的Cypher查询语句，便于调试
         print(f"Executing query: {query}")
+
+
+# 根据时间范围查找节点的函数
+def find_nodes_by_time_range(clazz: str, attribute: str, start_time: str, end_time: str) -> list:
+    """
+    根据时间范围查找节点
+    :param clazz: 节点标签
+    :param attribute: 用于时间范围过滤的属性名
+    :param start_time: 开始时间 (e.g., "2026-01-01 00:00:00")
+    :param end_time: 结束时间 (e.g., "2026-12-31 23:59:59")
+    """
+    # 使用配置的URI、用户名和密码创建Neo4j数据库驱动实例
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    # 创建一个数据库会话，使用'with'确保会话在使用后自动关闭
+    with driver.session() as session:
+        # 如果开始时间或结束时间为空，则不进行时间过滤
+        if not start_time or not end_time:
+            query = f"""
+            MATCH (n:`{clazz}`)
+            RETURN n
+            LIMIT 300
+            """
+            parameters = {}
+        else:
+            # 构建Cypher查询语句，用于匹配指定标签的节点，并根据时间属性进行过滤
+            query = f"""
+                MATCH (n:`{clazz}`) 
+                WHERE n.{attribute} >= "{start_time}" AND n.{attribute} <= "{end_time}" 
+                RETURN n
+                """
+            # 定义查询参数，防止Cypher注入
+            parameters = {"start_time": start_time, "end_time": end_time}
+        
+        # 在控制台打印将要执行的Cypher查询语句和参数，便于调试
+        print(f"Executing query: {query} with parameters: {parameters}")
+        # 执行查询
+        result = session.run(query, parameters)
+        
+        # 将结果转换为列表
+        records = list(result)
+        
+        # 如果查询到记录
+        if records:
+            # 创建一个空列表，用于存放格式化后的结果
+            formatted_results = []
+            # 遍历每一条记录
+            for record in records:
+                # 获取记录中的节点对象
+                node = record['n']
+                # 将节点的属性字典添加到结果列表中
+                formatted_results.append(dict(node))
+            # 返回包含结果列表的消息字典
+            return formatted_results
+        # 如果没有找到数据，返回一个包含空列表的消息字典
+        return []
         # 在控制台打印传递给查询的参数，便于调试
         print(f"With parameters: {parameters}")
 
@@ -674,26 +729,16 @@ def run_update_node_property_task(clazz: str, property_to_update: str, random_ty
     :param random_type: 随机值类型
     :param kwargs: 传递给随机值生成函数的可选参数
     """
-    # 打印将要执行的任务信息
-    print(f"执行更新任务: 节点='{clazz}', 属性='{property_to_update}', 类型='{random_type}', 参数={kwargs}")
     # 调用核心函数执行更新
     result = update_node_with_random_value_by_property(clazz, property_to_update, random_type, **kwargs)
-    # 打印操作结果
-    print(json.dumps(result, ensure_ascii=False, indent=4))
+    # 打印将要执行的任务信息
+    print(f"执行更新任务: 节点='{clazz}', 属性='{property_to_update}', 类型='{random_type}', 参数={kwargs}")
 
 
 def testcase5():
     """
     测试为节点属性赋予随机值的功能（使用封装函数）
     """
-    # 定义要操作的节点标签
-    clazz = "PROCUREMENT_ORDER_DETAIL"
-    # 定义要更新的属性名
-    property_to_update = "procOrderDetProcOrderUserCode"
-    
-    # 使用新封装的函数来执行更新任务
-    # 示例1: 生成10位随机字符串
-    run_update_node_property_task(clazz, property_to_update, "string", length=10)
     
     # 示例2: 生成两位随机数 (取消注释即可运行)
     # run_update_node_property_task(clazz, "procOrderDetProcOrderQuantity", "number", digits=2)
@@ -704,43 +749,16 @@ def testcase5():
     # 示例4: 生成指定范围的随机日期 (取消注释即可运行)
     # run_update_node_property_task(clazz, "procOrderDetRequiredDate", "datetime", start_date_str="2026-03-01 00:00:00", end_date_str="2026-03-31 23:59:59")
 
-    run_update_node_property_task("")
+    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderUserCode", "string", length=10)
+    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExternalNo", "string", length=10)
+    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatName", "material")
+    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderQuantity", "number", digits=2)
+    #run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetCompleteQuantity", "number", digits=1)
+    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderDeliveryDate", "datetime", start_date_str="2026-01-01 00:00:00", end_date_str="2026-01-15 23:59:59")
+    run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetPrdOApyReceiptDate", "datetime", start_date_str="2026-01-01 00:00:00", end_date_str="2026-02-01 23:59:59")
+    #run_update_node_property_task("PRD_RET_DET", "prdRetDetPrdRetReceiptDate", "datetime", start_date_str="2026-02-01 00:00:00", end_date_str="2026-02-15 23:59:59")    
+    #run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "number", digits=1)
 
-
-
-def testcase6():
-    """
-    测试新添加的随机数据生成函数
-    """
-    # 生成并打印一个随机姓名
-    random_name = generate_random_name()
-    print(f"随机姓名: {random_name}")
-
-    # 生成并打印一个10位的随机数字
-    random_number = generate_random_number(10)
-    print(f"10位随机数字: {random_number}")
-
-    # 生成并打印一个随机物料
-    random_material = generate_random_material()
-    print(f"随机物料: {random_material}")
-
-    # 生成并打印一个随机公司名
-    random_company_name = generate_random_company_name()
-    print(f"随机公司名: {random_company_name}")
-
-    # 生成并打印连续的编码号
-    print("--- 生成连续编码 ---")
-    print(f"第1个XY编码: {generate_sequential_code('XY')}")
-    print(f"第2个XY编码: {generate_sequential_code('XY')}")
-    print(f"第1个AB编码: {generate_sequential_code('AB')}")
-    print(f"第3个XY编码: {generate_sequential_code('XY')}")
-
-    # 生成并打印随机日期时间
-    print("--- 生成随机日期时间 ---")
-    print(f"默认范围内的随机时间: {generate_random_datetime()}")
-    start = "2026-02-01 00:00:00"
-    end = "2026-02-28 23:59:59"
-    print(f"指定范围 ({start} 到 {end}) 内的随机时间: {generate_random_datetime(start, end)}")
 
 
 if __name__ == "__main__":

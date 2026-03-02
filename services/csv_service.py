@@ -27,7 +27,7 @@ def get_data(token: str) -> dict:
             elif count == 0:
                 return {"error": "结果数据为空"}  # 返回错误信息
             else:
-                return "\n".join(lines)  # 返回有效数据样本
+                return {"data": "\n".join(lines)}  # 返回有效数据样本
         else:
             return {"sample": "\n".join(lines[:5]),"tips":"仅返回前5条数据做参考,请执行数据运算后查看"}  # 5条有效字段数据样本
 
@@ -135,19 +135,19 @@ def sort_data(token: str, column_name: str, ascending: bool = True) -> dict:
     """
     data_list = cache_load(token)  # 从缓存加载数据           
     if not data_list:  # 检查数据是否存在   
-        return "error"  # 返回错误信息
+        return {"error": "数据不存在，可能是缓存过期"}  # 返回错误信息
     df = tool.csv_to_pd(data_list)  # 将CSV字符串转换为DataFrame
     result_df = tool.sort_data(df, column_name, ascending)  # 执行排序
     if result_df is not None:  # 检查结果是否有效
         csv_result = tool.pd_to_csv(result_df)  # 将DataFrame转换为CSV字符串
         key = "排序结果_" + token
         cache_save(key, csv_result)  # 缓存保存结果
-        return key
-    return "error"  # 返回错误信息
+        return {"success": key}
+    return {"error": "排序失败"}  # 返回错误信息
 
 
 @csv_mcp.tool()
-def filter_data(token: str, selected_column_list: str) -> str:
+def filter_data(token: str, selected_column_list: str) -> dict:
     """
     选择保留的列名过滤CSV数据，仅保留指定列，以便更直观
     Args:
@@ -169,7 +169,7 @@ def filter_data(token: str, selected_column_list: str) -> str:
     return {"error":"过滤数据失败,请尝试其他接口"}  # 返回错误信息  
 
 @csv_mcp.tool()
-def merge_data(token_left: str, token_right: str,key_left: str,key_right: str) -> str:
+def merge_data(token_left: str, token_right: str,key_left: str,key_right: str) -> dict:
     """
     合并两个表的数据，用于多维度交叉分析
     Args:

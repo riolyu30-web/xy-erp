@@ -21,6 +21,8 @@ def OUTGOING_ORDER_DETAIL(access_token: str,outgoingOrderDetailFromCreateTime:st
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "OUTGOING_ORDER_DETAIL"
     # 构建请求URL
     url = "/outgoing-order-detail/findList"  # API地址
     # 构建请求体数据
@@ -35,6 +37,9 @@ def OUTGOING_ORDER_DETAIL(access_token: str,outgoingOrderDetailFromCreateTime:st
         
         "outgoingOrderDetailToCreateTime": outgoingOrderDetailToCreateTime,  # 动态参数
         
+        "key": "OUTGOING_ORDER_DETAIL",
+        "from": outgoingOrderDetailFromCreateTime,
+        "to": outgoingOrderDetailToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -285,7 +290,7 @@ def OUTGOING_ORDER_DETAIL(access_token: str,outgoingOrderDetailFromCreateTime:st
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("外发订单明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("外发订单明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @outgoing_mcp.tool()  # 注册工具
 def MAT_ARR_DET(access_token: str,matArrDetFromCreateTime:str=None,matArrDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -303,6 +308,8 @@ def MAT_ARR_DET(access_token: str,matArrDetFromCreateTime:str=None,matArrDetToCr
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "MAT_ARR_DET"
     # 构建请求URL
     url = "/mat-arr-det/mainAndDetail/findList"  # API地址
     # 构建请求体数据
@@ -317,6 +324,9 @@ def MAT_ARR_DET(access_token: str,matArrDetFromCreateTime:str=None,matArrDetToCr
         
         "matArrDetToCreateTime": matArrDetToCreateTime,  # 动态参数
         
+        "key": "MAT_ARR_DET",
+        "from": matArrDetFromCreateTime,
+        "to": matArrDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -519,7 +529,7 @@ def MAT_ARR_DET(access_token: str,matArrDetFromCreateTime:str=None,matArrDetToCr
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("物料到货明细表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("物料到货明细表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @outgoing_mcp.tool()  # 注册工具
 def MANU_STATEMENT_DET(access_token: str,manuStatementDetFromCreateTime:str=None,manuStatementDetToCreateTime:str=None) -> str:  # 定义工具函数
@@ -537,6 +547,8 @@ def MANU_STATEMENT_DET(access_token: str,manuStatementDetFromCreateTime:str=None
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "MANU_STATEMENT_DET"
     # 构建请求URL
     url = "/manu-statement-det/findList"  # API地址
     # 构建请求体数据
@@ -551,6 +563,9 @@ def MANU_STATEMENT_DET(access_token: str,manuStatementDetFromCreateTime:str=None
         
         "manuStatementDetToCreateTime": manuStatementDetToCreateTime,  # 动态参数
         
+        "key": "MANU_STATEMENT_DET",
+        "from": manuStatementDetFromCreateTime,
+        "to": manuStatementDetToCreateTime,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -729,7 +744,7 @@ def MANU_STATEMENT_DET(access_token: str,manuStatementDetFromCreateTime:str=None
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("加工商对账单明细", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("加工商对账单明细", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @outgoing_mcp.tool()  # 注册工具
 def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
@@ -743,6 +758,8 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "XY_USERCENTER_ORGANIZATION"
     # 构建请求URL
     url = "/supplier/findList"  # API地址
     # 构建请求体数据
@@ -751,6 +768,9 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         "supplierClazz": "XY_USERCENTER_ORGANIZATION",  # 固定参数
         
         
+        "key": "XY_USERCENTER_ORGANIZATION",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -829,4 +849,4 @@ def XY_USERCENTER_ORGANIZATION(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("供应商表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("供应商表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

@@ -19,6 +19,8 @@ def find_all_staff(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "find_all_staff"
     # 构建请求URL
     url = "/staff/findList"  # API地址
     # 构建请求体数据
@@ -29,6 +31,9 @@ def find_all_staff(access_token: str) -> str:  # 定义工具函数
         "groupDefaultType": "TEAM",  # 固定参数
         
         
+        "key": "find_all_staff",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -55,7 +60,7 @@ def find_all_staff(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("员工表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("员工表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @admin_mcp.tool()  # 注册工具
 def find_department(access_token: str) -> str:  # 定义工具函数
@@ -71,6 +76,8 @@ def find_department(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "find_department"
     # 构建请求URL
     url = "/group/findList"  # API地址
     # 构建请求体数据
@@ -81,6 +88,9 @@ def find_department(access_token: str) -> str:  # 定义工具函数
         "groupDefaultType": "DEPARTMENT",  # 固定参数
         
         
+        "key": "find_department",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -99,7 +109,7 @@ def find_department(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("部门表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("部门表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  
 
 @admin_mcp.tool()  # 注册工具
 def find_role(access_token: str) -> str:  # 定义工具函数
@@ -113,6 +123,8 @@ def find_role(access_token: str) -> str:  # 定义工具函数
         成功返回：表访问令牌，有效字段说明，样本数据
         失败返回：错误原因
     """
+    # 当前方法名
+    function_name = "find_role"
     # 构建请求URL
     url = "/role/findList"  # API地址
     # 构建请求体数据
@@ -123,6 +135,9 @@ def find_role(access_token: str) -> str:  # 定义工具函数
         "roleDefaultType": "POST",  # 固定参数
         
         
+        "key": "find_role",
+        "from": None,
+        "to": None,
         
     }  # 数据字典结束
     # 定义需要保留的字段列表
@@ -141,4 +156,4 @@ def find_role(access_token: str) -> str:  # 定义工具函数
         
     }  # 含义字典结束
     # 调用通用工具方法获取并过滤数据
-    return fetch_data("岗位表", url, data, access_token, filtered_fields, meaning_list)  # 返回数据  
+    return fetch_data("岗位表", function_name, data, access_token, filtered_fields, meaning_list)  # 返回数据  

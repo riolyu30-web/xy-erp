@@ -12,6 +12,8 @@ def PURCHASE_REQUISITION_DETAIL_test(access_token: str):  # 定义测试函数
     """
     测试 /pur-requ-det/findList
     """
+    # 当前方法名
+    function_name = "PURCHASE_REQUISITION_DETAIL"
     # 构建请求URL
     url = "/pur-requ-det/findList"  # API地址
     purRequDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -134,12 +136,14 @@ def PURCHASE_REQUISITION_DETAIL_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("采购申请明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("采购申请明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def PROCUREMENT_ORDER_DETAIL_test(access_token: str):  # 定义测试函数
     """
     测试 /procurement-order-detail/findList
     """
+    # 当前方法名
+    function_name = "PROCUREMENT_ORDER_DETAIL"
     # 构建请求URL
     url = "/procurement-order-detail/findList"  # API地址
     procOrderDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -370,12 +374,14 @@ def PROCUREMENT_ORDER_DETAIL_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("采购订单明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("采购订单明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def MAT_INSTORAGE_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /mat-instorage-det/findList
     """
+    # 当前方法名
+    function_name = "MAT_INSTORAGE_DET"
     # 构建请求URL
     url = "/mat-instorage-det/findList"  # API地址
     matInstorageDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -578,12 +584,14 @@ def MAT_INSTORAGE_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("物料入库明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("物料入库明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def SUPP_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /supp-statement-det/findList
     """
+    # 当前方法名
+    function_name = "SUPP_STATEMENT_DET"
     # 构建请求URL
     url = "/supp-statement-det/findList"  # API地址
     suppStatementDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -746,12 +754,14 @@ def SUPP_STATEMENT_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("供应商对账单明细", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("供应商对账单明细", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def INVO_ISS_DET_test(access_token: str):  # 定义测试函数
     """
     测试 /invo-iss-det/findList
     """
+    # 当前方法名
+    function_name = "INVO_ISS_DET"
     # 构建请求URL
     url = "/invo-iss-det/findList"  # API地址
     invoIssDetFromCreateTime = (datetime.now() - timedelta(days=30)).strftime("YYYY-%m-DD %H:%M:%S")
@@ -890,12 +900,14 @@ def INVO_ISS_DET_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("开票登记明细表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("开票登记明细表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def XY_USERCENTER_ORGANIZATION_test(access_token: str):  # 定义测试函数
     """
     测试 /supplier/findList
     """
+    # 当前方法名
+    function_name = "XY_USERCENTER_ORGANIZATION"
     # 构建请求URL
     url = "/supplier/findList"  # API地址
 
@@ -970,12 +982,14 @@ def XY_USERCENTER_ORGANIZATION_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("供应商表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("供应商表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def MATERIAL_test(access_token: str):  # 定义测试函数
     """
     测试 /material/findList
     """
+    # 当前方法名
+    function_name = "MATERIAL"
     # 构建请求URL
     url = "/material/findList"  # API地址
 
@@ -1018,7 +1032,7 @@ def MATERIAL_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("物料表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("物料表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

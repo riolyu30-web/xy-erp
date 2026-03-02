@@ -12,6 +12,8 @@ def find_client_test(access_token: str):  # 定义测试函数
     """
     测试 /client/findList
     """
+    # 当前方法名
+    function_name = "find_client"
     # 构建请求URL
     url = "/client/findList"  # API地址
     customerId = None # 需要用户提供默认值
@@ -63,12 +65,14 @@ def find_client_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("客户表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("客户表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def find_contract_test(access_token: str):  # 定义测试函数
     """
     测试 /contract-detail/findList
     """
+    # 当前方法名
+    function_name = "find_contract"
     # 构建请求URL
     url = "/contract-detail/findList"  # API地址
 
@@ -117,12 +121,14 @@ def find_contract_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("合同表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("合同表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def find_biz_order_test(access_token: str):  # 定义测试函数
     """
     测试 /biz-order-detail/findList
     """
+    # 当前方法名
+    function_name = "find_biz_order"
     # 构建请求URL
     url = "/biz-order-detail/findList"  # API地址
 
@@ -183,12 +189,14 @@ def find_biz_order_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("订单表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("订单表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 def get_source_test(access_token: str):  # 定义测试函数
     """
     测试 /proof/linkFindList
     """
+    # 当前方法名
+    function_name = "get_source"
     # 构建请求URL
     url = "/proof/linkFindList"  # API地址
 
@@ -237,7 +245,7 @@ def get_source_test(access_token: str):  # 定义测试函数
     }  # 含义字典结束
 
     # 调用通用工具方法获取并过滤数据
-    fetch_data("关联表", url, data, access_token, filtered_fields, meaning_list, debug_mode=True)
+    fetch_data("关联表", function_name, data, access_token, filtered_fields, meaning_list, debug_mode=True)
 
 
 if __name__ == "__main__":

@@ -20,8 +20,8 @@ def login() -> str:
     Raises:
         Exception: 当登录失败时抛出异常
     """
-    # return local_login()
-    return auth_login()
+    return local_login()
+    #return auth_login()
 
 
 def local_login() -> str:
@@ -87,5 +87,5 @@ def auth_login() -> str:
 
 
 if __name__ == "__main__":
-    access_token = auth_login()
+    access_token = local_login()
     print(access_token)

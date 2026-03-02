@@ -18,14 +18,14 @@ from services.work_service import work_mcp
 
 mcp = FastMCP("xy-erp-mcp") # 实例化FastMCP
 
-mcp.mount(admin_mcp, prefix="admin")
+#mcp.mount(admin_mcp, prefix="admin")
 mcp.mount(auth_mcp, prefix="auth")
-mcp.mount(business_mcp, prefix="business")
+#mcp.mount(business_mcp, prefix="business")
 mcp.mount(calcu_mcp, prefix="calcu")
 mcp.mount(chart_mcp, prefix="chart")
 mcp.mount(csv_mcp, prefix="csv")
-mcp.mount(finance_mcp, prefix="finance")
-mcp.mount(neo4j_mcp, prefix="neo4j")
+#mcp.mount(finance_mcp, prefix="finance")
+#mcp.mount(neo4j_mcp, prefix="neo4j")
 mcp.mount(order_mcp, prefix="order")
 mcp.mount(outgoing_mcp, prefix="outgoing")
 mcp.mount(pay_mcp, prefix="pay")

@@ -21,9 +21,7 @@ load_dotenv() # 加载根目录下的 .env 文件
 # 预定义的物料列表
 MATERIAL_LIST = [
     "300克玖龙粉灰卡787*1092", "250克玖龙粉灰卡889*1194", "金枫300克粉灰卡FSC787*1092",
-    "理文170克白牛咭787*1092", "金枫300克粉灰卡889*1194", "海龙250克粉灰卡889*1194",
-    "2075水性光油", "PMS Warm Grey 1U（水墨）", "PMS 2757U( BLUE )（水墨）",
-    "PMS 072U（水墨）", "东洋四色 红", "100037824包装箱344*328*182",
+    "理文170克白牛咭787*1092", "金枫300克粉灰卡889*1194", "海龙250克粉灰卡889*1194", "100037824包装箱344*328*182",
     "100037821包装箱516*368*351", "300534749包装箱天盖982*523*97", "3882-03 右保护卡包装箱551*348*330"
 ]
 
@@ -100,6 +98,16 @@ def generate_random_number(digits: int):
     
     # 拼接第一位和剩下的数字，并返回结果
     return f"{first_digit}{remaining_digits}"
+
+def generate_random_quantity():
+    """随机生成一个两位数（10-99）或0"""
+    # 随机决定是生成两位数还是0
+    if random.choice([True, False]):
+        # 生成一个10到99之间的随机整数
+        return random.randint(10, 99)
+    else:
+        # 返回0
+        return 0
 
 def generate_random_material():
     """从预定义的列表中随机选择一个物料"""
@@ -730,7 +738,10 @@ def update_node_with_random_value_by_property(clazz: str, property_name: str, ra
                 new_value = generate_sequential_code(**kwargs)
             elif random_type == "product":
                 # 如果随机类型是 "product"，调用 generate_random_product 函数
-                new_value = generate_random_product_name()            
+                new_value = generate_random_product_name()     
+            elif random_type == "quantity":
+                # 如果随机类型是 "quantity"，调用 generate_random_quantity 函数
+                new_value = generate_random_quantity()
             else:
                 # 如果 random_type 无效，则跳过当前节点的更新
                 continue
@@ -788,7 +799,7 @@ def testcase5():
     run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatCode", "sequential_code", prefix="PO",length=3)
     run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatName", "product")
     run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderQuantity", "number", digits=4)
-    run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "number", digits=1)
+    run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "number", digits=2)
     #run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetCompleteQuantity", "number", digits=1)
     run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderReceiptDate", "datetime", start_date_str="2026-01-20 00:00:00", end_date_str="2026-02-01 23:59:59")
     run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderDeliveryDate", "datetime", start_date_str="2026-01-20 00:00:00", end_date_str="2026-02-01 23:59:59")
@@ -797,11 +808,24 @@ def testcase5():
     run_update_node_property_task("PRD_RET_DET", "prdRetDetPrdRetReceiptDate", "datetime", start_date_str="2026-02-07 00:00:00", end_date_str="2026-02-15 23:59:59")    
 
 
+def testcase6():
+    """
+    测试为节点属性赋予随机值的功能（使用封装函数）
+    """
+    #run_update_node_property_task("MAT_RET_DET", "matRetDetMatRetQuantity", "number", digits=1)
+    #run_update_node_property_task("MAT_RET_DET", "matArrDetActQuantity", "number", digits=4)
+    run_update_node_property_task("MAT_ARR_DET", "matArrDetActMaterialId", "material")
 
+def testcase7():
+    """
+    测试为节点属性赋予随机值的功能（使用封装函数）
+    """
+    run_update_node_property_task("PROCUREMENT_ORDER_DETAIL", "procOrderDetProcOrderUserCode", "sequential_code", prefix="CG",length=3)
+    run_update_node_property_task("MAT_ARR_DET", "matArrDetActQuantity","number", digits=4)
 
 if __name__ == "__main__":
-    testcase5()
-
+    run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "quantity")
+    run_update_node_property_task("MAT_RET_DET", "matRetDetMatRetQuantity", "quantity")
 
 
 

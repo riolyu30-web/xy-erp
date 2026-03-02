@@ -140,6 +140,33 @@ def generate_sequential_code(prefix: str, length: int = 3):
     return f"{prefix}10000{random_number}"
 
 
+def update_json_with_codes(json_path: str, prop_name: str):
+    """
+    读取JSON文件，并将指定属性的值替换为使用 generate_sequential_code 生成的新编码。
+
+    :param json_path: JSON文件的路径.
+    :param prop_name: 需要更新其值的属性名.
+    """
+    try: # 开始异常处理块
+        with open(json_path, 'r', encoding='utf-8') as f: # 以只读模式打开指定的JSON文件，使用UTF-8编码
+            data = json.load(f) # 从文件中加载JSON数据并解析为Python对象
+
+        if isinstance(data, list): # 检查加载的数据是否是一个列表
+            for item in data: # 遍历列表中的每一个项目
+                if isinstance(item, dict) and prop_name in item: # 检查项目是否是一个字典，并且包含指定的属性名
+                    prefix = prop_name[:2].upper() # 截取属性名的前两个字符并转换为大写，作为前缀
+                    item[prop_name] = generate_sequential_code(prefix) # 调用函数生成新的序列号，并更新当前项目的属性值
+        
+        with open(json_path, 'w', encoding='utf-8') as f: # 以写入模式打开同一个JSON文件，准备写回数据
+            json.dump(data, f, ensure_ascii=False, indent=4) # 将更新后的Python对象序列化为JSON格式并写入文件，保持中文字符并美化格式
+            
+        return {"status": "success", "message": f"Successfully updated {json_path}"} # 操作成功，返回一个包含成功状态和消息的字典
+    except FileNotFoundError: # 捕获文件未找到的异常
+        return {"status": "error", "message": f"File not found: {json_path}"} # 返回一个包含错误状态和文件未找到消息的字典
+    except Exception as e: # 捕获所有其他类型的异常
+        return {"status": "error", "message": str(e)} # 返回一个包含错误状态和异常信息的字典
+
+
 def generate_random_datetime(start_date_str=None, end_date_str=None):
     """
     在指定时间范围内生成一个随机的日期和时间
@@ -823,9 +850,75 @@ def testcase7():
     run_update_node_property_task("PROCUREMENT_ORDER_DETAIL", "procOrderDetProcOrderUserCode", "sequential_code", prefix="CG",length=3)
     run_update_node_property_task("MAT_ARR_DET", "matArrDetActQuantity","number", digits=4)
 
+
+
+
+def create_nodes_from_json(clazz, json_file_path, primary_key=None):
+    """
+    从JSON文件读取数据并在Neo4j中创建或合并节点。
+
+    :param clazz: 节点的标签(Label)
+    :param json_file_path: 包含节点数据的JSON文件路径
+    :param primary_key: 用于MERGE操作的唯一键属性。如果提供，则使用MERGE；否则，使用CREATE。
+    """
+    # 检查JSON文件是否存在
+    if not os.path.exists(json_file_path):
+        print(f"错误: 文件 '{json_file_path}' 不存在。")
+        return
+
+    # 读取并解析JSON文件
+    try:
+        with open(json_file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except json.JSONDecodeError:
+        print(f"错误: 文件 '{json_file_path}' 不是有效的JSON格式。")
+        return
+    except Exception as e:
+        print(f"读取文件时发生错误: {e}")
+        return
+
+    # 确保JSON数据是一个列表
+    if not isinstance(data, list):
+        print("错误: JSON文件的顶层结构必须是一个数组/列表。")
+        return
+
+    # 连接到Neo4j数据库
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    with driver.session() as session:
+        # 遍历列表中的每个对象并创建节点
+        for properties in data:
+            if isinstance(properties, dict):
+                if primary_key:
+                    # 如果提供了主键，则使用MERGE语句，避免重复创建
+                    primary_key_value = properties.get(primary_key)
+                    if primary_key_value is None:
+                        print(f"警告: 跳过记录，因为缺少主键 '{primary_key}': {properties}")
+                        continue
+                    
+                    # MERGE会查找节点，如果不存在则创建，如果存在则更新
+                    query = (
+                        f"MERGE (n:{clazz} {{ {primary_key}: $primary_key_value }}) "
+                        f"ON CREATE SET n = $props "
+                        f"ON MATCH SET n = $props"
+                    )
+                    session.run(query, primary_key_value=primary_key_value, props=properties)
+                    print(f"成功合并标签为 '{clazz}' 的节点，主键: {primary_key}='{primary_key_value}'")
+                else:
+                    # 否则，使用原始的CREATE语句
+                    query = f"CREATE (n:{clazz} $props)"
+                    session.run(query, props=properties)
+                    print(f"成功创建标签为 '{clazz}' 的节点，属性: {properties}")
+
 if __name__ == "__main__":
-    run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "quantity")
-    run_update_node_property_task("MAT_RET_DET", "matRetDetMatRetQuantity", "quantity")
-
-
-
+    # run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "quantity")
+    # run_update_node_property_task("MAT_RET_DET", "matRetDetMatRetQuantity", "quantity")
+    # 调用函数时，传入主键字段名 "bizOrderDetailId"
+    #create_nodes_from_json("OUTGOING_ORDER_DETAIL", r"c:\Users\吕生\Desktop\json_edit\外发订单.json", primary_key="outgoingOrderDetailId")
+    #create_nodes_from_json("MAT_OUT_APY_DET", r"c:\Users\吕生\Desktop\json_edit\物料出库申请.json", primary_key="matOutApyDetId")
+    #create_nodes_from_json("MAT_ARR_DET", r"c:\Users\吕生\Desktop\json_edit\物料到货.json", primary_key="matArrDetId")        
+    #create_nodes_from_json("MAT_INSTORAGE_DET", r"c:\Users\吕生\Desktop\json_edit\物料入库.json", primary_key="matInstorageDetId")  
+    #create_nodes_from_json("SUPP_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\供应商对账单.json", primary_key="suppStatementDetId")  
+    #create_nodes_from_json("MANU_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\加工商对账单.json", primary_key="manuStatementDetId")
+    #create_nodes_from_json("CUST_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\客户对账单.json", primary_key="custStatementDetId")
+    #create_nodes_from_json("PROCUREMENT_ORDER_DETAIL", r"c:\Users\吕生\Desktop\json_edit\采购订单.json", primary_key="procOrderDetId")
+    pass

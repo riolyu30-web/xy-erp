@@ -37,7 +37,7 @@ def PURCHASE_REQUISITION_DETAIL(access_token: str,purRequDetFromCreateTime:str=N
         
         "purRequDetToCreateTime": purRequDetToCreateTime,  # 动态参数
         
-        "key": "PURCHASE_REQUISITION_DETAIL",
+        "key": "purRequDetAuditDate",
         "from": purRequDetFromCreateTime,
         "to": purRequDetToCreateTime,
         
@@ -176,7 +176,7 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         
         "procOrderDetToCreateTime": procOrderDetToCreateTime,  # 动态参数
         
-        "key": "PROCUREMENT_ORDER_DETAIL",
+        "key": "procOrderDetReceiptDate",
         "from": procOrderDetFromCreateTime,
         "to": procOrderDetToCreateTime,
         
@@ -186,6 +186,8 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         
         "procOrderDetActualTimeRequired": {"name": "采购订单明细表实际需时"},  # 字段映射
         
+        "procOrderDetReceiptDate": {"name": "采购订单明细表交货日期"}, 
+
         "procOrderDetAdjustmentTimeRequired": {"name": "采购订单明细表调整需时"},  # 字段映射
         
         "procOrderDetAreaId": {"name": "采购订单明细表行政区域id"},  # 字段映射
@@ -290,6 +292,8 @@ def PROCUREMENT_ORDER_DETAIL(access_token: str,procOrderDetFromCreateTime:str=No
         "采购订单明细表实际需时": "采购订单明细表实际需时(小时)",  # 字段含义
         
         "采购订单明细表调整需时": "采购订单明细表调整需时(输入正负数来计算实际需时)(小时)",  # 字段含义
+
+        "采购订单明细表交货日期": "采购订单明细表交货日期",  # 字段含义
         
         "采购订单明细表行政区域id": "采购订单明细表行政区域id",  # 字段含义
         
@@ -423,7 +427,7 @@ def MAT_INSTORAGE_DET(access_token: str,matInstorageDetFromCreateTime:str=None,m
         
         "matInstorageDetToCreateTime": matInstorageDetToCreateTime,  # 动态参数
         
-        "key": "MAT_INSTORAGE_DET",
+        "key": "matInstorageDetDeliveryDate",
         "from": matInstorageDetFromCreateTime,
         "to": matInstorageDetToCreateTime,
         
@@ -642,7 +646,7 @@ def SUPP_STATEMENT_DET(access_token: str,suppStatementDetFromCreateTime:str=None
         
         "suppStatementDetToCreateTime": suppStatementDetToCreateTime,  # 动态参数
         
-        "key": "SUPP_STATEMENT_DET",
+        "key": "suppStatementDetDeliveryDate",
         "from": suppStatementDetFromCreateTime,
         "to": suppStatementDetToCreateTime,
         

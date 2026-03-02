@@ -37,7 +37,7 @@ def BUSINESS_ORDER_DETAIL(access_token: str,bizOrderDetailFromCreateTime:str=Non
         
         "bizOrderDetailToCreateTime": bizOrderDetailToCreateTime,  # 动态参数
         
-        "key": "bizOrderDetailBizOrderBeginTime",
+        "key": "bizOrderDetailAuditDate",
         "from": bizOrderDetailFromCreateTime,
         "to": bizOrderDetailToCreateTime,
         
@@ -260,7 +260,7 @@ def PRD_O_APY_DET(access_token: str,prdOApyDetFromCreateTime:str=None,prdOApyDet
         
         "prdOApyDetToCreateTime": prdOApyDetToCreateTime,  # 动态参数
         
-        "key": "prdOApyDetBeginTime",
+        "key": "prdOApyDetPrdOApyCreateTime",
         "from": prdOApyDetFromCreateTime,
         "to": prdOApyDetToCreateTime,
         
@@ -507,7 +507,7 @@ def PRD_SAL_DET(access_token: str,prdSalDetFromCreateTime:str=None,prdSalDetToCr
         
         "prdSalDetToCreateTime": prdSalDetToCreateTime,  # 动态参数
         
-        "key": "prdSalDetBeginTime",
+        "key": "prdSalDetPrdSalCreateTime",
         "from": prdSalDetFromCreateTime,
         "to": prdSalDetToCreateTime,
         

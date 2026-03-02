@@ -184,7 +184,7 @@ def MAT_OUT_APY_DET(access_token: str,matOutApyDetFromCreateTime:str=None,matOut
         
         "matOutApyDetToCreateTime": matOutApyDetToCreateTime,  # 动态参数
         
-        "key": "MAT_OUT_APY_DET",
+        "key": "matOutApyDetAuditDate",
         "from": matOutApyDetFromCreateTime,
         "to": matOutApyDetToCreateTime,
         

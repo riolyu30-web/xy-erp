@@ -37,7 +37,7 @@ def OUTGOING_ORDER_DETAIL(access_token: str,outgoingOrderDetailFromCreateTime:st
         
         "outgoingOrderDetailToCreateTime": outgoingOrderDetailToCreateTime,  # 动态参数
         
-        "key": "OUTGOING_ORDER_DETAIL",
+        "key": "outgoingOrderDetailBeginTime",
         "from": outgoingOrderDetailFromCreateTime,
         "to": outgoingOrderDetailToCreateTime,
         
@@ -324,7 +324,7 @@ def MAT_ARR_DET(access_token: str,matArrDetFromCreateTime:str=None,matArrDetToCr
         
         "matArrDetToCreateTime": matArrDetToCreateTime,  # 动态参数
         
-        "key": "MAT_ARR_DET",
+        "key": "matArrDetAuditDate",
         "from": matArrDetFromCreateTime,
         "to": matArrDetToCreateTime,
         
@@ -563,7 +563,7 @@ def MANU_STATEMENT_DET(access_token: str,manuStatementDetFromCreateTime:str=None
         
         "manuStatementDetToCreateTime": manuStatementDetToCreateTime,  # 动态参数
         
-        "key": "MANU_STATEMENT_DET",
+        "key": "manuStatementDetDeliveryDate",
         "from": manuStatementDetFromCreateTime,
         "to": manuStatementDetToCreateTime,
         

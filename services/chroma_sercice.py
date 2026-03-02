@@ -6,7 +6,12 @@ from services.llm_manager import dashscope_chat_json
 # 注意：此脚本现在使用客户端-服务器模式，需要一个正在运行的 ChromaDB 实例。
 # 您可以使用 Docker 启动一个： docker run -p 8000:8000 chromadb/chroma
 # chroma run --port 8008 --host 0.0.0.0 --path ./chroma_data
-CHROMA_PORT = 8008
+
+from dotenv import load_dotenv # 导入 dotenv 库
+load_dotenv() # 加载根目录下的 .env 文件
+CHROMA_PORT = int(os.getenv("CHROMA_PORT", "8008"))
+CHROMA_HOST = os.getenv("CHROMA_HOST", "localhost")
+CHROMA_NAME = os.getenv("CHROMA_NAME", "scheme")
 
 # --- 数据处理和模型加载 (与 hnsw_tool.py 相同) ---
 
@@ -51,7 +56,7 @@ def get_model():
 # --- ChromaDB 操作 ---
 
 # 3. 构建或更新 ChromaDB 集合
-def build_chroma_collection(model, data_list, host='localhost', port=CHROMA_PORT, collection_name="scheme"):  # 定义构建集合的函数
+def build_chroma_collection(model, data_list, host=CHROMA_HOST, port=CHROMA_PORT, collection_name=CHROMA_NAME):  # 定义构建集合的函数
     if not data_list:  # 检查数据列表是否为空
         print("没有数据可用于构建集合。")  # 打印提示
         return  # 提前退出
@@ -92,7 +97,7 @@ def build_chroma_collection(model, data_list, host='localhost', port=CHROMA_PORT
     print("集合构建/更新完成。")  # 所有批次处理完成后打印最终提示
 
 # 4. 从 ChromaDB 查询相似字段
-def search_similar_field_chroma(model, query_text, k=3, host='localhost', port=CHROMA_PORT, collection_name="scheme"):  # 定义查询函数
+def search_similar_field_chroma(model, query_text, k=3, host=CHROMA_HOST, port=CHROMA_PORT, collection_name=CHROMA_NAME):  # 定义查询函数
     if model is None:  # 检查模型是否可用
         print("模型未加载，无法执行查询。")  # 打印提示
         return []  # 返回空列表
@@ -126,7 +131,7 @@ def search_similar_field_chroma(model, query_text, k=3, host='localhost', port=C
             })  # 结束结果字典构建
     return formatted_results  # 返回格式化后的结果列表
 
-def search_similar_fields_in_batch(model, fields, k=100, host='localhost', port=CHROMA_PORT, collection_name="scheme"):
+def search_similar_fields_in_batch(model, fields, k=100, host=CHROMA_HOST, port=CHROMA_PORT, collection_name=CHROMA_NAME):
     """
     接收一个字段数组，为每个字段查询相似结果，并返回一个字典。
     """
@@ -269,7 +274,7 @@ def search_similar_fields_in_batch(model, fields, k=100, host='localhost', port=
 
 
 # 5. 根据指定的 clazz 和 field 查找相似字段
-def get_similar_fields(model, clazz, field, k=3, host='localhost', port=CHROMA_PORT, collection_name="scheme"):
+def get_similar_fields(model, clazz, field, k=3, host=CHROMA_HOST, port=CHROMA_PORT, collection_name=CHROMA_NAME):
     """
     通过指定的 clazz 和 field，找到其对应的描述，并以此为基础查询最相似的其他字段。
     """
@@ -345,6 +350,6 @@ def search_similar_field(user_query:str):
 
 # --- 主程序执行入口 ---
 if __name__ == "__main__":  # 确保以下代码只在直接运行此脚本时执行
-    build_chroma()
-    #search()
+    #build_chroma()
+    search()
 

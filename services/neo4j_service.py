@@ -31,6 +31,40 @@ MATERIAL_LIST = [
 SURNAMES = ["赵", "钱", "孙", "李", "周", "吴", "郑", "王", "冯", "陈", "褚", "卫", "蒋", "沈", "韩", "杨"]
 GIVEN_NAMES = ["伟", "芳", "娜", "秀英", "敏", "静", "丽", "强", "磊", "军", "洋", "勇", "艳", "杰", "娟"]
 
+# 预定义的产品名称列表
+PRODUCT_NAMES = [
+    "TM-FY2526 SK-II Vday Dressup M礼盒", "JD-FY2526 SK-II Vday Dressup M礼盒", 
+    "JD POP-FY2526 SK-II Vday Dressup M礼盒", "VIP-FY2526 SK-II Vday Dressup M礼盒", 
+    "DY-FY2526 SK-II Vday Dressup M礼盒", "DS-FY2526 SK-II Vday Dressup M礼盒(DS)", 
+    "Zurich Heart Rate monitor心率仪外盒", "Zurich Heart Rate monitor心率仪内卡", 
+    "Zurich Heart Rate monitor心率仪使用指南", "Zurich Heart Rate monitor心率仪内盒", 
+    "Zurich Heart Rate monitor心率仪说明书", "爱唯110ml玫瑰花瓣精华液(升级版） 专用E坑内托", 
+    "爱唯110ml玫瑰花瓣精华液(升级版） 专用E坑内托", "JESS名后 110ml玫瑰花瓣精华液（2026新版）专用彩盒", 
+    "JESS名后 110ml玫瑰花瓣精华液（2026新版）专用彩盒", "FSC13026337 HCG卡1T包装盒(135x70x25mm)350g单铜过光胶屈臣氏PHFV03", 
+    "FSC13026338 HCG条1包装盒(125x60x21mm)350g单铜过光胶屈臣氏MYFV06", "FSC13026339 HCG卡1T包装盒(135x70x25mm)350g单铜过光胶屈臣氏MYFV06", 
+    "FSC13026340 HCG笔1T包装盒(195x55x23mm)350g单铜过光胶屈臣氏MYFV06", "2026年新年贺卡（三福）（V1.0）", 
+    "26年新年贺卡（V1.0）-渠道通用", "26年新年贺卡（V1.0）-WOW COLOUR", 
+    "2026京东新年礼盒贺卡（V1.0）", "Core Coeur Iconique 14pcs Lid 2025 心型盒盖", 
+    "2025 14pcs heart box-Base 心形盒底", "5 ply heart shape candy pad 威化纸", 
+    "25 3x8 BASE 地盒", "GTR 8PCS Candy Pad 25 威化纸", 
+    "LID - GOLD 2025 8PCS Asia 金色天盖", "LID - ALL DARK CHOCOLATE 2025 8PCS Asia 黑巧克力天盖", 
+    "LID - ALL MILK CHOCOLATE 2020 8PCS Asia 牛奶巧克力天盖", "Gold 2025 15pcs Candy Pad-威化纸", 
+    "FSC13026336 HCG笔1T包装盒(195x55x23mm)350g单铜过光胶屈臣氏PHFV03", "FSC13026328 HCG笔1T包装盒(195x55x23mm)350g单铜过光胶屈臣氏THFV07", 
+    "FSC13026327 HCG卡1T包装盒(135x70x25mm)350g单铜过光胶屈臣氏THFV07", "FSC13026335 LH笔5T包装盒(195x60x60mm)350g单铜过光胶屈臣氏PHFV03", 
+    "睡前舒缓型儿童护眼贴10片包装盒(新版)", "成人护眼贴润目舒缓型纸盒（10片装）", 
+    "时代萱妍赋活舒缓精华霜50g-彩盒", "时代萱妍赋活舒缓精华霜50g-内托", 
+    "植物医生 100ml青蒿舒缓祛痘调理乳（调整版）专用彩盒", "植物医生100ML青蒿舒缓祛痘调理乳专用E坑内托", 
+    "植物医生120ml青蒿舒缓祛痘调理水专用彩盒", "植物医生120ml青蒿舒缓祛痘调理水专用E坑内托", 
+    "植物医生120g青蒿净澈清肌洁面乳专用彩盒", "DR PLANT雪莲水感透亮凝露120ml-彩盒(一物一码)(2025B)", 
+    "DR PLANT雪莲水感透亮精华乳100ml-彩盒(一物一码)(2025B)", "DR PLANT雪莲水感透亮精华液40ml-彩盒(一物一码)(2025B)", 
+    "DR PLANT雪莲水感透亮精华霜50g-彩盒(一物一码)(2025B)", "DR PLANT 紫灵芝多效驻颜提拉面膜20ml+20ml-彩盒（2024B)", 
+    "DR PLANT 紫灵芝多效驻颜提拉面膜20ml+20ml-内卡"
+]
+
+def generate_random_product_name():
+    """从预定义的列表中随机选择一个产品名称"""
+    return random.choice(PRODUCT_NAMES)
+
 def generate_random_string(length=8):
     """生成指定长度的随机字符串（大写字母和数字）"""
     # 定义字符集为大写字母和数字
@@ -48,20 +82,29 @@ def generate_random_name():
     return f"{surname}{given_name}"
 
 def generate_random_number(digits: int):
-    """生成指定位数的随机数字字符串"""
+    """生成指定位数的随机数字字符串，确保多位数时不以0开头"""
     # 检查位数是否为正数
     if digits <= 0:
-        # 如果不是，则返回空字符串
+        # 如果位数不合法，则返回空字符串
         return ""
-    # 从'0123456789'中随机选择指定位数的字符并拼接成字符串
-    return "".join(random.choices(string.digits, k=digits))
+    
+    # 如果只有一位，可以为0
+    if digits == 1:
+        # 从 '0' 到 '9' 中随机选择一个数字
+        return random.choice(string.digits)
+
+    # 对于多位数，第一位从 '1' 到 '9' 中随机选择
+    first_digit = random.choice('123456789')
+    # 剩下的位数从 '0' 到 '9' 中随机选择
+    remaining_digits = "".join(random.choices(string.digits, k=digits - 1))
+    
+    # 拼接第一位和剩下的数字，并返回结果
+    return f"{first_digit}{remaining_digits}"
 
 def generate_random_material():
     """从预定义的列表中随机选择一个物料"""
     # 从全局物料列表中随机选择一个元素并返回
     return random.choice(MATERIAL_LIST)
-
-
 
 
 def generate_random_company_name():
@@ -75,31 +118,18 @@ def generate_random_company_name():
     # 按照 "前缀**后缀" 的格式拼接并返回公司名
     return f"{prefix}**{suffix}"
 
-# 用于存储不同前缀的当前计数值
-CODE_COUNTERS = {}
 
-def generate_sequential_code(prefix: str, length: int = 8):
+def generate_sequential_code(prefix: str, length: int = 3):
     """
-    生成带固定前缀和自增序列号的编码
+    生成带固定前缀和随机序列号的编码
     :param prefix: 编码前缀 (e.g., "XY")
-    :param length: 数字部分的长度，不足会补零
+    :param length: 数字部分的长度
     """
-    # 如果前缀是第一次出现，则在计数器字典中初始化为0
-    if prefix not in CODE_COUNTERS:
-        CODE_COUNTERS[prefix] = 0
+    # 生成指定长度的随机数字字符串
+    random_number = ''.join(random.choices(string.digits, k=length))
     
-    # 将对应前缀的计数器加1
-    CODE_COUNTERS[prefix] += 1
-    
-    # 获取当前的计数值
-    current_number = CODE_COUNTERS[prefix]
-    
-    # 将数字格式化为指定长度的字符串，不足部分在左侧补零
-    # 例如，数字为1，长度为8，则格式化为 "00000001"
-    formatted_number = str(current_number).zfill(length)
-    
-    # 拼接前缀和格式化后的数字，返回最终的编码
-    return f"{prefix}{formatted_number}"
+    # 拼接前缀和随机数字，返回最终的编码
+    return f"{prefix}10000{random_number}"
 
 
 def generate_random_datetime(start_date_str=None, end_date_str=None):
@@ -698,6 +728,9 @@ def update_node_with_random_value_by_property(clazz: str, property_name: str, ra
             elif random_type == "sequential_code":
                 # 如果随机类型是 "sequential_code"，调用 generate_sequential_code 函数
                 new_value = generate_sequential_code(**kwargs)
+            elif random_type == "product":
+                # 如果随机类型是 "product"，调用 generate_random_product 函数
+                new_value = generate_random_product_name()            
             else:
                 # 如果 random_type 无效，则跳过当前节点的更新
                 continue
@@ -749,15 +782,20 @@ def testcase5():
     # 示例4: 生成指定范围的随机日期 (取消注释即可运行)
     # run_update_node_property_task(clazz, "procOrderDetRequiredDate", "datetime", start_date_str="2026-03-01 00:00:00", end_date_str="2026-03-31 23:59:59")
 
-    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderUserCode", "string", length=10)
-    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExternalNo", "string", length=10)
-    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatName", "material")
-    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderQuantity", "number", digits=2)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderUserCode", "sequential_code", prefix="BO",length=3)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExternalNo", "sequential_code", prefix="PO",length=3)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExternalNo", "string", length=8)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatCode", "sequential_code", prefix="PO",length=3)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailExtMatName", "product")
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderQuantity", "number", digits=4)
+    run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "number", digits=1)
     #run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetCompleteQuantity", "number", digits=1)
-    #run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderDeliveryDate", "datetime", start_date_str="2026-01-01 00:00:00", end_date_str="2026-01-15 23:59:59")
-    run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetPrdOApyReceiptDate", "datetime", start_date_str="2026-01-01 00:00:00", end_date_str="2026-02-01 23:59:59")
-    #run_update_node_property_task("PRD_RET_DET", "prdRetDetPrdRetReceiptDate", "datetime", start_date_str="2026-02-01 00:00:00", end_date_str="2026-02-15 23:59:59")    
-    #run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "number", digits=1)
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderReceiptDate", "datetime", start_date_str="2026-01-20 00:00:00", end_date_str="2026-02-01 23:59:59")
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderDeliveryDate", "datetime", start_date_str="2026-01-20 00:00:00", end_date_str="2026-02-01 23:59:59")
+    run_update_node_property_task("BUSINESS_ORDER_DETAIL", "bizOrderDetailBizOrderDeliveryDate", "datetime", start_date_str="2026-02-05 00:00:00", end_date_str="2026-02-07 23:59:59")
+    run_update_node_property_task("PRD_O_APY_DET", "prdOApyDetPrdOApyReceiptDate", "datetime", start_date_str="2026-02-01 00:00:00", end_date_str="2026-02-05 23:59:59")
+    run_update_node_property_task("PRD_RET_DET", "prdRetDetPrdRetReceiptDate", "datetime", start_date_str="2026-02-07 00:00:00", end_date_str="2026-02-15 23:59:59")    
+
 
 
 

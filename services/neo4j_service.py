@@ -12,6 +12,8 @@ import string # 导入string库 用于处理字符串
 from datetime import datetime, timedelta # 导入datetime库 用于处理日期和时间
 from services.llm_manager import dashscope_chat_json
 from neo4j import GraphDatabase
+import pandas as pd
+
 
 neo4j_mcp = FastMCP(name="neo4j")  # 创建计算服务MCP实例
 
@@ -452,6 +454,41 @@ def select_list(clazz_list: list[str]):
         # 目标: MATCH p = (n0:`A`)-[*1..4]-(n1:`B`)-[*1..4]-(n2:`C`) RETURN p
         
         parts = []
+
+
+def process_excel_header(input_excel_path: str, output_excel_path: str, mapping_json_path: str):
+    """
+    根据映射文件，将Excel文件的表头从 excel_header 替换为 mcp_field_key，并另存为新文件。
+
+    :param input_excel_path: 输入的Excel文件路径。
+    :param output_excel_path: 输出的Excel文件路径。
+    :param mapping_json_path: 包含映射关系的JSON文件路径。
+    """
+    try:
+        # 1. 加载Excel文件
+        df = pd.read_excel(input_excel_path)
+
+        # 2. 加载JSON映射数据
+        with open(mapping_json_path, 'r', encoding='utf-8') as f:
+            mapping_data = json.load(f)
+        
+        # 3. 创建映射字典
+        header_mapping = {
+            item["excel_header"]: item["mcp_field_key"]
+            for item in mapping_data.get("mapping", [])
+        }
+
+        # 4. 重命名列
+        df.rename(columns=header_mapping, inplace=True)
+
+        # 5. 保存到新的Excel文件
+        df.to_excel(output_excel_path, index=False)
+
+        return {"status": "success", "message": f"Successfully processed and saved to {output_excel_path}"}
+    except FileNotFoundError:
+        return {"status": "error", "message": f"File not found: {input_excel_path} or {mapping_json_path}"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
         for i, clazz in enumerate(clazz_list):
             parts.append(f"(n{i}:`{clazz}`)")
             
@@ -850,7 +887,56 @@ def testcase7():
     run_update_node_property_task("PROCUREMENT_ORDER_DETAIL", "procOrderDetProcOrderUserCode", "sequential_code", prefix="CG",length=3)
     run_update_node_property_task("MAT_ARR_DET", "matArrDetActQuantity","number", digits=4)
 
+def create_nodes_from_excel(clazz, excel_file_path, primary_key=None):
+    """
+    从Excel文件批量创建或更新节点。
 
+    :param clazz: 节点的标签 (e.g., "BIZ_ORDER_DETAIL")
+    :param excel_file_path: 包含节点数据的Excel文件路径
+    :param primary_key: 用于MERGE操作的主键字段名 (e.g., "bizOrderDetailId")
+    """
+    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+    
+    with driver.session() as session:
+        try:
+            # 使用pandas读取Excel文件
+            df = pd.read_excel(excel_file_path)
+            # 将NaN替换为None，以便后续处理
+            df = df.where(pd.notnull(df), None)
+            # 将DataFrame转换为字典列表
+            data = df.to_dict(orient='records')
+
+            if not isinstance(data, list):
+                print("Excel文件内容无法转换为列表")
+                return
+
+            for item in data:
+                # 过滤掉值为None或null的属性
+                properties = {k: v for k, v in item.items() if v is not None}
+                
+                # 如果提供了主键，使用MERGE，否则使用CREATE
+                if primary_key and primary_key in properties:
+                    primary_key_value = properties[primary_key]
+                    # 构建MERGE查询
+                    query = (
+                        f"MERGE (n:{clazz} {{`{primary_key}`: $primary_key_value}}) "
+                        "SET n += $props"
+                    )
+                    parameters = {"primary_key_value": primary_key_value, "props": properties}
+                else:
+                    # 构建CREATE查询
+                    query = f"CREATE (n:{clazz}) SET n = $props"
+                    parameters = {"props": properties}
+
+                # 在事务中执行查询
+                session.execute_write(lambda tx: tx.run(query, **parameters))
+            
+            print(f"成功从 {excel_file_path} 创建/更新了 {len(data)} 个 {clazz} 节点")
+
+        except FileNotFoundError:
+            print(f"错误: 文件未找到 {excel_file_path}")
+        except Exception as e:
+            print(f"处理文件时发生错误: {e}")
 
 
 def create_nodes_from_json(clazz, json_file_path, primary_key=None):
@@ -909,6 +995,9 @@ def create_nodes_from_json(clazz, json_file_path, primary_key=None):
                     session.run(query, props=properties)
                     print(f"成功创建标签为 '{clazz}' 的节点，属性: {properties}")
 
+
+
+
 if __name__ == "__main__":
     # run_update_node_property_task("PRD_RET_DET", "prdRetDetTotalQuantity", "quantity")
     # run_update_node_property_task("MAT_RET_DET", "matRetDetMatRetQuantity", "quantity")
@@ -920,5 +1009,6 @@ if __name__ == "__main__":
     #create_nodes_from_json("SUPP_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\供应商对账单.json", primary_key="suppStatementDetId")  
     #create_nodes_from_json("MANU_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\加工商对账单.json", primary_key="manuStatementDetId")
     #create_nodes_from_json("CUST_STATEMENT_DET", r"c:\Users\吕生\Desktop\json_edit\客户对账单.json", primary_key="custStatementDetId")
-    #create_nodes_from_json("PROCUREMENT_ORDER_DETAIL", r"c:\Users\吕生\Desktop\json_edit\采购订单.json", primary_key="procOrderDetId")
+    create_nodes_from_excel("BUSINESS_ORDER_DETAIL", r"c:\Users\吕生\Desktop\订单2.xlsx", primary_key="bizOrderDetailBizOrderId")
+    #process_excel_header(r"c:\Users\吕生\Desktop\订单1.xlsx",r"c:\Users\吕生\Desktop\订单2.xlsx",r"c:\Users\吕生\Desktop\订单表头映射.json")
     pass
